@@ -2,25 +2,27 @@
 
 Select <column(s)> by column names.
 
-![column names](flight-colnames.png)
 
 
-## Example
 
-### Basic
+**Example**
+
+## Basic
 
 **Syntax**
 select(```<column(s)>```,...)  
+
 **Example**
 
-### Drop
+
+## Drop
 
 **Syntax**
 select(-```<column(s)>```,...)  
 
 **Example**
 
-### starts_with
+## starts_with
 
 **Syntax**
 select(starts_with(```<text>```, ignore.case = ```<logical>```))  
@@ -28,14 +30,14 @@ select(starts_with(```<text>```, ignore.case = ```<logical>```))
 
 **Example**
 
-### ends_with
+## ends_with
 
 **Syntax**
 select(ends_with(```<text>```, ignore.case = ```<logical>```)) 
 
 **Example**
 
-### contains
+## contains
 
 **Syntax**
 select(contains(```<text>```, ignore.case = ```<logical>```))  
@@ -43,7 +45,7 @@ select(contains(```<text>```, ignore.case = ```<logical>```))
 
 **Example**
 
-### matches
+## matches
 
 **Syntax**
 select(matches(```<text>```, ignore.case = ```<logical>```))  
@@ -51,7 +53,7 @@ select(matches(```<text>```, ignore.case = ```<logical>```))
 
 **Example**
 
-### num_range
+## num_range
 
 **Syntax**
 select(num_range(```<text>```, ```<start_num>:<end_num>```))  
@@ -59,7 +61,7 @@ select(num_range(```<text>```, ```<start_num>:<end_num>```))
 
 **Example**
 
-### one_of
+## one_of
 
 **Syntax**
 select(one_of(```<text1>```, ```<text2>```, ...))  
@@ -68,7 +70,7 @@ select(one_of(```<text1>```, ```<text2>```, ...))
 
 **Example**
 
-### everything
+## everything
 
 **Syntax**
 select(```<column>```, everything())  
