@@ -3,8 +3,6 @@
 Select <column(s)> by column names.
 
 
-
-
 **Example**
 
 ## Basic
@@ -14,6 +12,9 @@ select(```<column(s)>```,...)
 
 **Example**
 
+```
+select(-CARRIER_DELAY, -WEATHER_DELAY, -`NA`)
+```
 
 ## Drop
 
@@ -22,6 +23,10 @@ select(-```<column(s)>```,...)
 
 **Example**
 
+```
+
+```
+
 ## starts_with
 
 **Syntax**
@@ -29,6 +34,8 @@ select(starts_with(```<text>```, ignore.case = ```<logical>```))
 
 
 **Example**
+
+
 
 ## ends_with
 
