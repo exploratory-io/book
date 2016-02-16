@@ -1,4 +1,4 @@
-My Awesome Book
-=======
+Tutorial
+========
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Exploratory supports variety of data sources and data transformation / analysis. This is a tutorial that walk you through what you can do with your data. If you have any question please contact ...
