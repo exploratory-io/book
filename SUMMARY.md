@@ -1,6 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
+* [Tutorials](tutorials.md)
+   * [Analyze Flight Data](tutorials/flight.md)
+   * [Analyze Github Data](tutorials/github.md)
 * [Data Import](data_import.md)
    * [CSV / Delimited](import/delimited.md)
    * [Excel](import/excel.md)
@@ -43,6 +46,14 @@
    * [Expand](tidyr/)
    * [Nest](tidyr/)
    * [Unnest](tidyr/)
-   
+* [Custom Data](customdata.md)
+   * [Web Scraping]()
+   * [Yahoo Japan Finance]()
+   * [US Census]()
+   * [Japan e-stat]()
+   * [Github]()
+   * [Twitter]()
+   * [Google Analytics]()
+   * [ProPublica]()
 
 
