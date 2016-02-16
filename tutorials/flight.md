@@ -118,7 +118,7 @@ filter(rank(ARR_DELAY) <= 10)
 
 
 
-But looks like the result is actually the best 10, not the worst 10, because the less the arrival time means the earlier the flights actually had arrived in this context, so basically we want to flip the order. To do that, you can use ‘desc()’ function just like you’d do with SQL. 
+But looks like the result is actually the best 10, not the worst 10, because the less the arrival time means the earlier the flights actually had arrived in this context, so basically we want to flip the order. To do that, you can use ‘desc()’ function just like you’d do with SQL.
 
 
 ```
@@ -126,21 +126,21 @@ filter(rank(desc(ARR_DELAY)) <= 10)
 ```
 
 
-Now these are the worst 10 flights in January 2014. I see a lot of American Airlines there, interesting. 
+Now these are the worst 10 flights in January 2014. I see a lot of American Airlines there, interesting.
 
-But, what if you want to see the worst 10 flights for each airline carrier, instead of the overall worst 10 ? Yes, as you saw before, all you need to do is to add group_by clause before this filter clause. 
+But, what if you want to see the worst 10 flights for each airline carrier, instead of the overall worst 10? Yes, as you saw before, all you need to do is to add group_by clause before this filter clause.
 
 ```
 filter(rank(desc(ARR_DELAY)) <= 10)
 ```
 
 
-To make it easier to see if the result really reflects the command, let’s try to see only the worst 1 for each carrier. 
+To make it easier to see if the result really reflects the command, let’s try to see only the worst 1 for each carrier.
 
 ```
 filter(rank(desc(ARR_DELAY)) <= 1)
 ```
 
-Looks like it’s doing what we would expect. And we can see American Airline is the worst of the worst. ;)
+Looks like it’s doing what we would expect. And we can see American Airline is the worst of the worst.;)
 
 As you see, with dplyr not only can you filter the data with aggregate or window functions, but also you can assemble them flexibly to answer your analysis question without disturbing the way you would ask the question. Hope this post has demonstrated you the power of dplyr.
