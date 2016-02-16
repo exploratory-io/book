@@ -22,4 +22,21 @@ Group by a dynamically generated value of 'FIRSTNAME + LASTNAME'
 ```
 group_by(FIRSTNAME + LASTNAME)  
 ```
+
+# Ungroup
+
+Ungroup existing grouping  
+
+**Syntax**  
+
+ungroup()  
+
+
+**Example**  
+
+Ungroup the existing groups.
+
+```
+ungroup()  
+```
  
