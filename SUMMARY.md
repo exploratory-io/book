@@ -9,6 +9,7 @@
    * [Excel](import/excel.md)
    * [SPSS/SAS/STATA](import/spss.md)
    * [Table / Fixed Width](import/table.md)
+   * [Web Log File](import/log.md)
    * [R data file (RDS)](import/rds.md)
    * [JSON](import/json.md)
 * [Data Transformation](data_transform.md)
