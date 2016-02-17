@@ -45,7 +45,7 @@
    * [Spread](tidyr/spread.md)
    * [Separate](tidyr/separate.md)
    * [Unite](tidyr/unite.md)
-   * [Extract Number](tidyr/extract_num.md)
+   * [Extract Number](tidyr/extractnum.md)
    * [Fill](tidyr/fill.md)
    * [Complete](tidyr/complete.md)
    * [Expand](tidyr/expand.md)
