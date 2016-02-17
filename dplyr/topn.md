@@ -4,8 +4,8 @@ Select the top n entries based on a given measure in each group.
 
 **Syntax**  
 
-top_n(```<number>```, ```<column_num>```)  
-top_n(```<number>```, desc(```<column_num>```))
+- top_n(```<number>```, ```<column_num>```)  
+- top_n(```<number>```, desc(```<column_num>```))
 
 **Arguments**  
 
