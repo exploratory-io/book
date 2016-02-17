@@ -85,59 +85,47 @@ _Returns 1, 2, 3, 3, 3_
 
 ## cummin
 
-**Summary**  
 Returns the cumulative minima.
 
 **Syntax**  
 cummin(```<column_num>```)
-
-**Arguments**
-
-**Return Value**  
-Numeric  
 
 **Example**  
 // X = [1, 2, 3, 2, 1] (// x = c(1,2,3,2,1) in R)  
 cummin(X)  
 _Returns 1, 1, 1, 1, 1_  
 
-**Tags**  
-cumulative minima  
-
 
 ## cumprod
 
-**Summary**  
 Returns the cumulative products.
 
 **Syntax**  
+
 cumprod(```<column_num>```)
 
-**Arguments**
-
-**Return Value**  
-Numeric  
-
 **Example**  
+
 // X = [1, 2, 3, 2, 1] (// x = c(1,2,3,2,1) in R)  
+```
 cumprod(X)  
+```
 _Returns 1, 2, 6, 12, 12_  
 
 
 ## cummean
 
-**Summary**  
 Returns the cumulative mean (average).
 
 **Syntax**  
+
 cummean(```<column_num>```)
 
-**Arguments**
-
-**Return Value**  
-Numeric   
-
 **Example**  
+
 // X = [1, 2, 3, 2, 1] (// X = c(1,2,3,2,1) in R)  
+
+```
 cummean(X)  
+```
 _Returns 1, 3, 6, 8, 9_  
