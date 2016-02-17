@@ -37,11 +37,11 @@
    * [Top N](dplyr/topn.md)
    * [Aggregate Functions](dplyr/aggregate.md)
    * [Window Functions](dplyr/window.md)
-      * [Rank](dplyr/rank.md)
-      * [Cumulative](dplyr/cumulative.md)
-      * [Bucket / Tile](dplyr/ntile.md)
-      * [Rolling](dplyr/rolling.md)
-   * [Gather (Un-Pivot)](tidyr/gather.md)
+       * [Rank](dplyr/rank.md)
+       * [Cumulative](dplyr/cumulative.md)
+       * [Bucket / Tile](dplyr/ntile.md)
+       * [Rolling](dplyr/rolling.md)
+   * [Gather (Un-Pivot)](tidyr/gathermd.md)
    * [Spread](tidyr/spread.md)
    * [Separate](tidyr/separate.md)
    * [Unite](tidyr/unite.md)
@@ -59,5 +59,4 @@
    * [Twitter](customdata/twitter.md)
    * [Google Analytics](customdata/ganalytics.md)
    * [ProPublica](customdata/propublica.md)
-
 
