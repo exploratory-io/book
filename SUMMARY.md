@@ -41,7 +41,7 @@
        * [Cumulative](dplyr/cumulative.md)
        * [Bucket / Tile](dplyr/ntile.md)
        * [Rolling](dplyr/rolling.md)
-   * [Gather (Un-Pivot)](tidyr/gathermd.md)
+   * [Gather (Un-Pivot)](tidyr/gather.md)
    * [Spread](tidyr/spread.md)
    * [Separate](tidyr/separate.md)
    * [Unite](tidyr/unite.md)
