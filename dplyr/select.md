@@ -106,9 +106,10 @@ select(matches(```<text>```, ignore.case = ```<logical>```))
 
 **Example**
 
+Select only columns whose names contains digits (regular expression)
+
 ```
 select(matches("[:digit:]+", ignore.case = TRUE))  
-_Select only columns whose names contains digits (regular expression)
 ```
 
 ## num_range
