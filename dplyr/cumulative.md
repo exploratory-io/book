@@ -76,11 +76,12 @@ cummax(```<column_num>```)
 
 **Example**  
 // X = c(1,2,3,2,1)  
-cummax(X)  
-_Returns 1, 2, 3, 3, 3_  
 
-**Tags**  
-cumulative maxima
+```
+cummax(X)  
+```
+
+_Returns 1, 2, 3, 3, 3_  
 
 ## cummin
 
