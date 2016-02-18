@@ -4,7 +4,7 @@
 * [Tutorials](tutorials.md)
    * [Analyze Flight Data](tutorials/flight.md)
    * [Analyze Github Data](tutorials/github.md)
-   * [Analyze Github Data Part 2](tutorials/github.md)
+   * [Analyze Github Data Part 2](tutorials/github2.md)
 * [Data Import](data_import.md)
    * [CSV / Delimited](import/delimited.md)
    * [Excel](import/excel.md)
