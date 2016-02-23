@@ -8,7 +8,7 @@ Data download
 
 
 
-## Bind Rows / Union  
+## Combine data frames with Bind Rows / Union  
 
 ```
 bind_rows(airline_delay_2014_12)
@@ -23,6 +23,11 @@ select(FL_DATE, CARRIER, ORIGIN, ORIGIN_CITY_NAME, ORIGIN_STATE_ABR, DEP_DELAY, 
 
 ## Date operation - Weekday  
 
+```
+mutate(weekday = wday(FL_DATE, label=TRUE))
+```
+
+![flight-weekday](flight-weekday.png)
 
 
 ## Summarize (Aggregate)
@@ -45,8 +50,17 @@ If you want to find out how many states each carriers are flying out from you ca
 summarize(count = n(), number_of_states = n_distinct(ORIGIN_STATE_ABR))
 ```
 
+Calculate Ratio
+
+```
+mutate(ratio = count / sum(count))
+```
+
+![](flight-ratio.png)  
 
 ## Filter Data
+
+### Basic Filtering
 
 Now, let’s say you want to see only United Airline (UA) data. You can run something like below.
 
@@ -86,31 +100,8 @@ filter(!CARRIER %in% c(“UA”, “AA”))
 Notice that there is the exclamation mark at the beginning of the condition inside the filter clause. This is a very handy ‘function’ that basically flips whatever the condition after. So the result above doesn’t include ‘UA’ nor ‘AA’.
 
 
-## Filtering out NA values
 
-Now, let’s go back to the original data again. 
-
-
-When you look closer you’d notice that there are some NA values in ARR_DELAY column. You can get rid of them easily with ‘is.na()’ function, which return TRUE if the value is NA and FALSE otherwise. 
-
-```
-filter(is.na(ARR_DELAY))
-```
-
-
-Oops, it looks like all the values in ARR_DELAY are NA, which is opposite of what I hoped. Well, as you saw already we can now try the ‘!’ (exclamation mark) function as below. 
-
-```
-filter(!is.na(ARR_DELAY))
-```
-
-
-
-This is how you can work with NA values in terms of filtering the data. So far so good, it’s pretty simple. 
-
-
-
-## Filtering with Aggregate functions
+### Filtering with Aggregate functions
 
 Now, let’s spice it up a little bit. 
 
@@ -149,7 +140,7 @@ summarize(average = mean(ARR_DELAY, na.rm = TRUE))
 As you see the average arrival delay time for carrier ‘EV’ is about 19.69 minutes. Now when you look at the previous result of the filtering, you can see that the arrival delay times are all greater than 19.69. 
 
 
-## Filtering with Window functions
+## Filtering with Top N functions
 
 Let’s say you want to see the worst 10 flights in terms of the arrival delay time. You can do this with two different ways. First, let's do a very simple one using top_n() function. It's pretty straightforward to use this.
 
@@ -188,7 +179,7 @@ filter(min_rank(desc(ARR_DELAY)) <= 10)
 
 These are the worst 10 flights in January 2014. I see 7 out of those 10 flights are American Airlines, interesting.
 
-### Rank within each group  
+### Filtering with Window Function - Rank
 
 Now, what if you want to see the worst 10 flights for each airline carrier, instead of the overall worst 10? Yes, as you saw before, all you need to do is to add group_by clause before this filter clause.
 
@@ -222,7 +213,3 @@ Now, these two abbreviation of the carrier names are not clear. Fortunately, the
 ```
 left_join(carrier_code, by=c("CARRIER" = "code"))
 ```
-
-
-
-##
