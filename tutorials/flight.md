@@ -67,7 +67,7 @@ Click 'Run' button, and you'll get a result like below.
 You can see the same number of the columns - 26 columns - but now the number of the rows has increased to 469,968 rows. And when you look at DAY_OF_MONTH column its data range starts from 1 to 31.
 
 
-## Select Columns
+## Select or Drop columns
 
 There are many ways to select only the columns you want for your analysis. Let's try some of them.
 
@@ -166,7 +166,7 @@ This will give you something like below. You can see there are 39 US States AA (
 ![](images/flight-summarize2.png)  
 
 
-### Calculate Ratio
+### Calculate the proportion (percentage / ratio)
 
 For the count values, let's say you also want to know the proportion (percentage) of the flights for each carrier against the total number. You can do this by, first, calculating the total of these count values and using that to divide each of the count value. Let's add 'mutate' command and type something like below.
 
