@@ -2,7 +2,8 @@
 
 * [Introduction](README.md)
 * [Tutorials](tutorials.md)
-   * [Analyze Flight Data](tutorials/flight.md)
+   * [Analyze Flight Data - part 1](tutorials/flight.md)
+   * [Analyze Flight Data - part 2](tutorials/flight2.md)
    * [Analyze Github Data](tutorials/github.md)
    * [Analyze Yelp JSON Data](tutorials/yelp.md)
    * [Analyze Yahoo Finance Time Series Data](tutorials/yahoo.md)
