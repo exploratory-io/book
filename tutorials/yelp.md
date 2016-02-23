@@ -8,7 +8,13 @@ Can we use that data to see the difference between the states ?
 Explain the auto data type mapping
 
 - drop hours, attribute columns
+
+## Text operation - String Detect
+
 - mutate with str_detect - restaurants
+
+## Unnest  
+
 - unnest(categories)
 - filter - != restaurant
 

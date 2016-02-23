@@ -1,6 +1,6 @@
 # Analyze Flight Data
 
-## Import Flight Delay data
+## Download Flight Delay sample data
 
 Data download  
 
@@ -50,7 +50,7 @@ If you want to find out how many states each carriers are flying out from you ca
 summarize(count = n(), number_of_states = n_distinct(ORIGIN_STATE_ABR))
 ```
 
-Calculate Ratio
+## Calculate Ratio
 
 ```
 mutate(ratio = count / sum(count))
