@@ -2,19 +2,25 @@
 
 ## Download Flight Delay sample data
 
-You can download these three sample data before you start this tutorial.
+We're going to use the following three data files for this tutorial. You can download them by clicking on them.
 
 - Airline delay part 1
 - Airline delay part 2
 - Airline carrier code
 
+## Create a new project  
+
+After you open Exploratory app, create a new project.
+
+![](images/flight-create-project.png)
 
 
-### Import  
-
-After you open Exploratory, create a new project.
+## Import sample data
 
 Inside the project, you can click a plus '+' icon next to 'Data Frame' text in the left side pane to import 'Airline delay part1'.
+
+![](images/flight-add-data-frame.png)
+
 
 You can see the first 10 rows of the data from the file you're importing.
 
@@ -39,7 +45,7 @@ After the import, go back to Airline delay data part1 and let's start analyzing 
 
 First, let's combine the current data frame 'airline_delay_part1' with the other data frame 'airline_delay_part2'. You can click plus '+' icon under 'Transformation Command' text, and select 'Bind Rows' from the dropdown menu.
 
-![](images/flight-bind-row-menu.png)
+![](images/flight-bind-row-menu_s.png)
 
 
 Once the command is set in the transformation command input box, you'll see a dropdown that suggests two possible data frames. Hit 'Return' key or Click on it to select 'airline_delay_part2'. The command look like the below.
