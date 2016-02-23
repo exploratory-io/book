@@ -21,8 +21,7 @@ Inside the project, you can click a plus '+' icon next to 'Data Frame' text in t
 
 ![](images/flight-add-data-frame.png)
 
-
-You can see the first 10 rows of the data from the file you're importing.
+Aftr you select a file 'airline_delay_part1.csv'and hit OK, You'll see the first 10 rows of the data you're importing.
 
 ![](images/flight-data-import.png)
 
