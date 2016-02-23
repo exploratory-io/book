@@ -99,7 +99,7 @@ mutate(weekday = wday(FL_DATE)
 ```
 when you hit 'Run' button and scroll down to the bottom of the page you'll see something like below.
 
-![](images/flight-mutate-wday.png)  
+![](images/flight-mutate-wday_s.png)  
 
 You'll notice that the data is number between 1 and 7. This is because wday() function gives you integer values from 1 to 7 starting, 1 is Monday. Instead of the number, you can get the name of each day by adding an extra argument to the 'wday()' function like below.
 
@@ -109,7 +109,7 @@ mutate(weekday = wday(FL_DATE, label=TRUE))
 
 This would give you what you would expect for week days.
 
-![](images/flight-mutate-wday2.png)  
+![](images/flight-mutate-wday2_s.png)  
 
 One cool thing about this is that the result data type is something called 'ordered factor', which means that when you want to sort on this column it would respect the order of the weekdays starting from Sunday and end at Saturday. You can quick check this by going to Chart view.
 
