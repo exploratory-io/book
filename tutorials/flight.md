@@ -1,4 +1,4 @@
-# Analyze Flight Data
+# Analyze Flight Data - part 1
 
 ## Download Flight Delay sample data
 
@@ -43,7 +43,7 @@ After the import, go back to Airline delay data part1 and let's start analyzing 
 ![](images/flight-select-data-frame.png)
 
 
-## Combine multiple data frames - bind_rows
+## Combine multiple data frames - Bind rows  
 
 First, let's combine the current data frame 'airline_delay_part1' with the other data frame 'airline_delay_part2'. You can click plus '+' button, and select 'Bind Rows' from the dropdown menu.
 
@@ -130,7 +130,7 @@ One cool thing about this is that the result data type is something called 'orde
 ![](images/flight-mutate-wday-chart.png)  
 
 
-## Summarize (Aggregate)
+## Summarize (Aggregate) - Count rows and Count uniques
 
 Let's find out how many flights for each carrier. To do this, let's go to Table view and see the result better.
 
@@ -179,6 +179,8 @@ This will give you the result like below. You can see AA has 9.37 % of the fligh
 ![](images/flight-summarize3.png)
 
 
+### Update existing grouping setting
+
 Now, let's say you want to see the most common US States that each carrier is flying from. This means we want to change the grouping setting that we have done at a few steps before. You can do this easily with Exploratory. Click 'Grouping' step at the right hand side 'Transformation Steps' pane to go back to this particular step.
 
 ![](images/flight-summarize4_1.png)
@@ -201,7 +203,10 @@ Within an each bar, which is representing each carrier, you can see the ratio ba
 
 ![](images/flight-summarize5.png)
 
-Now, let's do one last but really cool calculation. Some people call this 'Window' function.
+
+### Window Function - Rank
+
+Now, let's do one last thing. This is a pretty cool and strong calculation. Some people call this 'Window' function.
 
 Let's say you want to see the ranking number for each state within each carrier based on the 'count' numbers that are the numbers of the flights. To do this, you can use 'min_rank()' function to return the ranking number. You can update the existing mutate() command like below.
 
