@@ -1,12 +1,23 @@
 # Analyze Flight Data - part 1
 
+**Data Transformation and Analysis operations you can find in this tutorial**
+
+- Column Selection - select()
+- Combining multiple data frames - bind_rows()
+- Creating Calculation / Expression - mutate()
+- Date data transformation - wday()
+- Grouping - group_by()
+- Aggregation - summarize()
+- Filtering - filter()
+
+
 ## Download Flight Delay sample data
 
 We're going to use the following three data files for this tutorial. You can download them by clicking on them.
 
-- Airline delay part 1
-- Airline delay part 2
-- Airline carrier code
+- Airline delay part 1 (link is still under development)
+- Airline delay part 2 (link is still under development)
+- Airline carrier code (link is still under development)
 
 ## Create a new project  
 
@@ -21,7 +32,7 @@ Inside the project, you can click a plus '+' icon next to 'Data Frame' text in t
 
 ![](images/flight-add-data-frame.png)
 
-Aftr you select the file from the file picker dialog and hit OK, you'll see the first 10 rows of the data you're importing.
+After you select the file from the file picker dialog and hit OK, you'll see the first 10 rows of the data you're importing.
 
 ![](images/flight-data-import.png)
 
@@ -66,6 +77,13 @@ Click 'Run' button, and you'll get a result like below.
 
 You can see the same number of the columns - 26 columns - but now the number of the rows has increased to 469,968 rows. And when you look at DAY_OF_MONTH column its data range starts from 1 to 31.
 
+## Join - Left, Anti, Inner Joins
+
+Now, these two abbreviation of the carrier names are not clear. Fortunately, there is a lookup data so that we can join them together. First, let's import this carrier abbreviation data.
+
+```
+left_join(carrier_code, by=c("CARRIER" = "code"))
+```
 
 ## Select or Drop columns
 
