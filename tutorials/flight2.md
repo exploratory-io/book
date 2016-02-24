@@ -141,6 +141,8 @@ If you click on 'Source' step in the right hand side 'Transformation Steps' pane
 ![](images/flight-filter-aggregate3.png)
 
 
+## Filtering with aggregate values inside each group
+
 Now, what if you want to see the flights whose arrival delay times are greater than the average of each airline carrier, instead of the overall average ? In this case, all you need to do is to add ‘group_by’ clause before the filter step.
 
 So, select the 'Source step in the right hand side of Transformation Step pane, and click a plus '+' button. This will insert a step between the 'Source' step and the 'Filter' step. And now, type the following command to do the grouping.
@@ -226,4 +228,4 @@ Once you hit 'Run' button, you can see the result showing the worst 10 flights f
 
 
 
-As you have seen, with Exploratory, not only can you filter the data with aggregate or window functions, but also you can assemble them flexibly to answer your analysis question without disturbing the way you would ask the question. 
+As you have seen, with Exploratory, not only can you filter the data with aggregate or window functions, but also you can assemble them flexibly to answer your analysis question without disturbing the way you would ask the question.
