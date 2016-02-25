@@ -2,20 +2,25 @@
 
 **Before you start**
 
-In this tutorial, we are going to . Because you can do many interesting ways of filtering the data with Exploratory we wanted to dedicate one whole tutorial to focus on data filtering. If you haven't finished the part 1, we'd recommend you take a look to get your hands on with the basics of the data analysis with Exploratory. You just want to know how to filter ? Ok, then please proceed with this tutorial. ;) But, you still need to import the sample data before you start. Take a look at the part 1 for the initial data download section and get the data first, and come back.
+Because you can do many interesting ways of filtering the data with Exploratory we wanted to dedicate one whole tutorial to focus on just data filtering. If you haven't finished the part 1, we'd recommend you take a look to get your hands on with the basics of the data analysis with Exploratory.
 
 **Data Transformation and Analysis operations you can find in this tutorial**
 
 - Basic Filtering - filter()
-- Filtering with Aggregated Functions - filter(), group_by()
-- Filtering with Window Functions - filter(), rank()
-- Filtering with Top N - top_n()
 - Filtering out NA values - filter(), is.na()
+- Filtering with Date functions - str_detect()
+- Filtering with Date functions - wday(), between()
+- Filtering with Aggregated functions - group_by()
+- Filtering with Window functions - rank()
+- Filtering with Top N - top_n()
+
 
 
 ## Import sample data
 
-We are going to create a new data frame by importing the same CSV file, 'airline_delay_part1.csv', we used in the part 1 tutorial.
+We are going to create a new data frame by importing the same CSV file, 'airline_delay_part1.csv', we used in the part 1 tutorial. If you haven't downloaded it yet, you can download from the link below.
+
+- Airline delay part 1 (link is still under development)
 
 Inside the same project or a new project, you can click a plus '+' icon next to 'Data Frame' text in the left side pane to import 'airline_delay_part1.csv'.
 
@@ -119,7 +124,7 @@ The result would be the same as above.
 
 ## Filtering with Date Function
 
-Let's filter to keep only the flights which flew the dates greater than January 5th, 2015.
+Let's filter to keep only the flights which flew on the dates greater than January 5th, 2015.
 
 ```
 filter(FL_DATE  >= as.Date("2015-01-05") & FL_DATE <= as.Date("2015-01-10"))
@@ -145,19 +150,23 @@ filter(between(FL_DATE, as.Date("2015-01-05"), as.Date("2015-01-10")))
 
 ![](images/flight-filter-date3.png)
 
-Now, what if you want to keep only for weekday (Monday to Friday) ? You can use ```wday()``` function, which would return numbers between 1 and 7 starting from Sunday as 1, inside the filter. To make this visually easy to understand, let's create a new column with ```wday()``` function.
+Now, what if you want to keep only for weekday (Monday to Friday) ? You can use ```wday()``` function, which would return numbers between 1 and 7 starting from Sunday as 1, inside the filter. To make this visually easy to understand, let's create a new column with ```wday()``` function first.
 
 ```
 mutate(weekday = wday(FL_DATE, label=TRUE))
 ```
 
-You can add ```label``` argument and set it ```TRUE``` to ```wday``` so that it will return the weekday as text such as 'Mon', 'Tue', and so on.
+You can add ```label``` argument and set it to ```TRUE``` inside ```wday()``` function so that it will return the weekday as text such as 'Mon', 'Tue', and so on.
 
-Now, you can type the following. The ```wday(FL_DATE)``` part converts the date data to weekday numbers first, and the ```filter()``` command is testing if the numbers are NOT 1 (Sunday) or 7 (Saturday) with the exclamation, which reverse the condition after, and the '%in%' operator.
+![](images/flight-filter-weekday.png)
+
+Now, you can type the following.
 
 ```
 filter(!wday(FL_DATE) %in% c(1, 7))
 ```
+
+The above ```filter()``` command is testing if the numbers returned by ```wday(FL_DATE)``` function are NOT 1 (Sunday) or 7 (Saturday) with the exclamation, which reverse the condition after.
 
 Once you hit 'Run' button, you can see only Monday to Friday in the 'weekday' column.
 
@@ -168,7 +177,7 @@ Once you hit 'Run' button, you can see only Monday to Friday in the 'weekday' co
 
 Now, let’s spice it up a little bit. 
 
-What if you want to see only the flights whose arrival delay time (ARR_DELAY) is greater than the overall average ? First, let’s look at the average time quickly. Remove the previous 'Filter' step and add a new step by clicking on the plus '+' button.
+What if you want to see only the flights whose arrival delay time (ARR_DELAY) is greater than the overall average ? First, let’s look at the average time quickly. Remove any steps created previously, and add a new step by clicking on the plus '+' button.
 
 And type the following command to calculate an overall average value of ARR_DELAY.
 
@@ -176,25 +185,26 @@ And type the following command to calculate an overall average value of ARR_DELA
  summarize(average = mean(ARR_DELAY, na.rm = TRUE))
 ```
 
+Note that you need to set ```na.rm``` argument to be ```TRUE```. This will remove any NA values before doing the calculation. If this is not set TRUE then it will return NA when there is NA values in the data. 
+
 To see the result better you want to go to Table view.
 
 ![](images/flight-filter-aggregate.png)
 
-It’s about 12.55 minutes. So we want to keep only the flights whose arrival delay time is greater than the overall average time. To do this, you can actually directly do the average calculation inside the filter clause. 
+It’s about 12.55 minutes. So we want to keep only the flights whose arrival delay time is greater than the overall average time. You can actually do this average calculation directly inside the ```filter()``` operation. 
 
 First, delete the ```summarize()``` command we just run. Then, start typing ```filter()``` operation like below.
 
 ```
 filter(ARR_DELAY > mean(ARR_DELAY, na.rm = TRUE))
 ```
-
 Note that you need to set ```na.rm``` argument to be ```TRUE```. This will remove any NA values before doing the calculation. If this is not set TRUE then it will return NA when there is NA values in the data. 
 
-Hit 'Run' button, then you will see ARR_DELAY column is showing the values between 13 mins and 1444 mins.  
+Hit 'Run' button, then you will see ARR_DELAY column is showing the values between 13 mins and 1,444 mins.  
 
 ![](images/flight-filter-aggregate2.png)
 
-If you click on 'Source' step in the right hand side 'Transformation Steps' pane, you can see it used to show the values between -74 mins and 1444 mins.
+If you click on 'Source' step in the right hand side 'Steps' pane, you can find that it used to show the values between -74 mins and 1444 mins.
 
 ![](images/flight-filter-aggregate3.png)
 
@@ -203,7 +213,12 @@ If you click on 'Source' step in the right hand side 'Transformation Steps' pane
 
 Now, what if you want to see the flights whose arrival delay times are greater than the average of each airline carrier, instead of the overall average ? In this case, all you need to do is to add ‘group_by’ clause before the filter step.
 
-So, select the 'Source step in the right hand side of Transformation Step pane, and click a plus '+' button. This will insert a step between the 'Source' step and the 'Filter' step. And now, type the following command to do the grouping.
+Select 'Source' step in the right hand side of 'Step' pane, and click a plus '+' button to add a new step right after 'Source' step. This will insert a step between the 'Source' step and the 'Filter' step.
+
+![](images/flight-filter-add-new-step.png)
+
+
+And now, type the following command in this new step to do the grouping.
 
 ```
 group_by(CARRIER)
@@ -214,6 +229,16 @@ Hit 'Run' button. This is going to make the underlying data frame to be grouped 
 But, when you click on the 'Filter' step, the result contains only the data whose arrival delay time is greater than each carrier's average delay time, which varies depending on each carrier.   
 
 ![](images/flight-filter-aggregate4.png)
+
+You can see this in Chart view with Scatter plot assigning CARRIER to X-Axis and ARR_DELAY to Y-Axis.
+
+When you click on 'Grouping' step.
+
+![](images/flight-filter-aggregate-before.png)
+
+And, when you click on 'Filter' step.
+
+![](images/flight-filter-aggregate-after.png)
 
 It’s this simple!
 
