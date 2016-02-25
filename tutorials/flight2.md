@@ -96,14 +96,56 @@ This flips the effect of whatever the condition after. You can hit 'Run' button 
 
 ![](images/flight-filter5.png)
 
-
-
 ## Filtering with String Function
+
+str_detect
+
 
 ## Filtering with Date Function
 
-between()
-now() - weeks(4)
+Let's filter to keep only the flights which flew the dates greater than January 5th, 2015.
+
+```
+filter(FL_DATE  >= as.Date("2015-01-05") & FL_DATE <= as.Date("2015-01-10"))
+```
+
+Once you hit 'Run' button, you'll notice FL_DATE data values are now only between '2015-01-05' and '2015-01-15'
+
+![](images/flight-date1.png)
+
+If you want to set the date range you can do it two ways. The first one is the most obvious, you can simply add another condition with '&'.
+
+```
+filter(FL_DATE  >= as.Date("2015-01-05") & FL_DATE <= as.Date("2015-01-10"))
+```
+
+![](images/flight-date2.png)
+
+But, you can use ```between()``` function instead to make it more clean.
+
+```
+filter(between(FL_DATE, as.Date("2015-01-05"), as.Date("2015-01-10")))
+```
+
+![](images/flight-date3.png)
+
+Now, what if you want to keep only for weekday (Monday to Friday) ? You can use ```wday()``` function, which would return numbers between 1 and 7 starting from Sunday as 1, inside the filter. To make this visually easy to understand, let's create a new column with ```wday()``` function.
+
+```
+mutate(weekday = wday(FL_DATE, label=TRUE))
+```
+
+You can add ```label``` argument and set it ```TRUE``` to ```wday``` so that it will return the weekday as text such as 'Mon', 'Tue', and so on.
+
+Now, you can type the following. The ```wday(FL_DATE)``` part converts the date data to weekday numbers first, and the ```filter()``` command is testing if the numbers are NOT 1 (Sunday) or 7 (Saturday) with the exclamation, which reverse the condition after, and the '%in%' operator.
+
+```
+filter(!wday(FL_DATE) %in% c(1, 7))
+```
+
+Once you hit 'Run' button, you can see only Monday to Friday in the 'weekday' column.
+
+![](images/flight-date5.png)
 
 
 ## Filtering with Aggregate functions

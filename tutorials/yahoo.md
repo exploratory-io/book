@@ -7,6 +7,8 @@
 
 ## Group By
 
+## Date Filter
+now() - weeks(4)
 
 ## Summarize
 

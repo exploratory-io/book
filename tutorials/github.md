@@ -18,5 +18,7 @@ Based on the information from the past, I want to see how we can manage to close
 
 We want to show only the open issues that are targeted for our 1st release.
 
+## Date Filter
+now() - weeks(4)
 
 ## Calculate time interval between Created_At and Closed_At for each issue  
