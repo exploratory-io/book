@@ -111,7 +111,7 @@ filter(FL_DATE  >= as.Date("2015-01-05") & FL_DATE <= as.Date("2015-01-10"))
 
 Once you hit 'Run' button, you'll notice FL_DATE data values are now only between '2015-01-05' and '2015-01-15'
 
-![](images/flight-date1.png)
+![](images/flight-filter-date1.png)
 
 If you want to set the date range you can do it two ways. The first one is the most obvious, you can simply add another condition with '&'.
 
@@ -119,7 +119,7 @@ If you want to set the date range you can do it two ways. The first one is the m
 filter(FL_DATE  >= as.Date("2015-01-05") & FL_DATE <= as.Date("2015-01-10"))
 ```
 
-![](images/flight-date2.png)
+![](images/flight-filter-date2.png)
 
 But, you can use ```between()``` function instead to make it more clean.
 
@@ -127,7 +127,7 @@ But, you can use ```between()``` function instead to make it more clean.
 filter(between(FL_DATE, as.Date("2015-01-05"), as.Date("2015-01-10")))
 ```
 
-![](images/flight-date3.png)
+![](images/flight-filter-date3.png)
 
 Now, what if you want to keep only for weekday (Monday to Friday) ? You can use ```wday()``` function, which would return numbers between 1 and 7 starting from Sunday as 1, inside the filter. To make this visually easy to understand, let's create a new column with ```wday()``` function.
 
@@ -145,7 +145,7 @@ filter(!wday(FL_DATE) %in% c(1, 7))
 
 Once you hit 'Run' button, you can see only Monday to Friday in the 'weekday' column.
 
-![](images/flight-date5.png)
+![](images/flight-filter-date5.png)
 
 
 ## Filtering with Aggregate functions
