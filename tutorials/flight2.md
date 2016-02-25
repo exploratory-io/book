@@ -245,11 +245,15 @@ It’s this simple!
 
 ## Filtering with Top N functions
 
-Let’s say you want to see the worst 10 flights in terms of the arrival delay time. You can do this with two different ways. First, let's do a very simple one using top_n() function.
+Let’s say you want to see the worst 10 flights in terms of the arrival delay time. You can do this with two different ways. Let's start with a very simple one using top_n() function.
 
-When you go to Summary view, you can see NA values for ARR_DELAY column. So you want to filter them out first by using ```is.na()``` function with an exclamation mark '!' at the beginning.
+First, remove 'Filter' step we have created previously but keep 'Grouping' step. And add a new step by clicking on the plus '+' button.
 
-Let's remove the existing 'Filter' step first and add a new step where you can start typing the below.
+In Summary view, you can see NA values for ARR_DELAY column.
+
+![](images/flight-filter-remove-na.png)
+
+Remove them by using ```is.na()``` function with an exclamation mark ```!``` at the beginning inside ```filter()``` function.
 
 ```
 filter(!is.na(ARR_DELAY))
@@ -267,21 +271,16 @@ Now, you can add a new step by clicking on the plus '+' button and start typing 
 top_n(10, ARR_DELAY)
 ```
 
-Once you hit 'Run' button, you will see the top 10 flights per each carrier based on ARR_DELAY values. whose arrival delay time are the biggest 10. You can see the total number of the rows is 140, which is equal to the number of the carriers (14) multiply 10.
+Once you hit 'Run' button, you will see the top 10 flights per each carrier based on ARR_DELAY values. whose arrival delay time are the biggest 10. You can see the total number of the rows is 140, which is equal to the number of the carriers (14) multiplied by 10.
 
 ![](images/flight-filter-top10_1.png)
 
-You can add Select step to select only CARRIER and ARR_DELAY columns to see the result easier.
-
-```
-select(CARRIER, ARR_DELAY)
-```
 
 You can see this result better in Chart view. Click Chart button, and select 'Scatter' chart type, assign CARRIER to X-Axis and ARR_DELAY to Y-Axis.
 
 ![](images/flight-filter-top10_chart.png)
 
-If you want to see the opposite order, which means in this case it would keep the 10 flights from the smallest arrival delay time.
+If you want to see the opposite order, which means you want to keep the 10 flights from the smallest arrival delay time per each of the carriers, you can use ```desc()``` function like below.
 
 ```
 top_n(10, desc(ARR_DELAY))
@@ -299,7 +298,7 @@ Once you hit 'Run' button, you can see the result in Chart view like below.
 
 ![](images/flight-filter-rank-chart.png)
 
-But looks like the result is actually the best 10, not the worst 10, because the less the arrival time means the earlier the flights actually had arrived in this context. Given all the numbers are actually negative that means they have arrived earlier than expected. So, basically we want to flip the order. To do that, you can use ‘desc()’ function like below.
+But looks like the result is actually the best 10, not the worst 10, because the less the arrival time means the earlier the flights actually had arrived in this context. So, let's flip the order with ‘desc()’ function like below.
 
 ```
 filter(min_rank(desc(ARR_DELAY)) <= 10)
@@ -311,4 +310,4 @@ Once you hit 'Run' button, you can see the result showing the worst 10 flights f
 
 
 
-As you have seen, with Exploratory, not only can you filter the data with aggregate or window functions, but also you can assemble them flexibly to answer your analysis question without disturbing the way you would ask the question.
+As you have seen, with Exploratory, not only can you filter the data with various type of functions like string, date, aggregate, window functions, etc, but also you can assemble them flexibly to answer your analysis question without disturbing the way you would ask the question.
