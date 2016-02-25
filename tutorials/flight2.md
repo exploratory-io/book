@@ -98,7 +98,23 @@ This flips the effect of whatever the condition after. You can hit 'Run' button 
 
 ## Filtering with String Function
 
-str_detect
+Let's try to filter to keep only the flights that flew from airports in 'Miami'. There is a column 'ORIGIN_CITY_NAME' that has the city information so we can use ```str_detect()```, which returns TRUE or FALSE based on whether a given text is in the data or not, and find a text 'Miami'.
+
+```
+filter(str_detect(ORIGIN_CITY_NAME, "Miami"))
+```
+
+Once you hit 'Run' button then you'll see only 'Miami, FL' related data.
+
+![](images/flight-filter-str.png)
+
+Now, sometimes you might have the data with mixed cases like 'Miami' and 'miami'. In that case, you can use ```str_to_lower()``` function to make all the text data to be lowercase first before finding the matching text like below.
+
+```
+filter(str_detect(str_to_lower(ORIGIN_CITY_NAME), "miami"))
+```
+
+The result would be the same as above.
 
 
 ## Filtering with Date Function
