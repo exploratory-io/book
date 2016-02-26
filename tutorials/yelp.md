@@ -8,7 +8,7 @@ JSON data handling
 - Working with the list data type / nested (array) data
 - Counting number of the values inside the list
 - Extracting Nth value from the nested data
-- Concatenate values from the nested data 
+- Concatenate values from the nested data
 - Finding text patterns inside the nested data
 - Unnesting (flatten) the nested data
 
@@ -40,9 +40,10 @@ After you select the file from the file picker dialog and hit OK, you'll see the
 
 Since it's showing up appropriately, you can keep the parameters as default and click 'Import' button.
 
-You can see a brief summary of the data in Summary view. It shows 105 columns and 61,184 rows at the top.
+## Summary View
 
-Explain the auto data type mapping
+You can see a brief summary of the data in Summary view. It shows 105 columns and 61,184 rows at the top. The data has been automatically inspected behind the scene and each column is registered an appropriate data type so that columns like 'ame', 'city', etc, are 'character' type, columns like 'review_count' are 'integer', and so on.
+
 
 You can also see some of the columns' sneak peak view. For example, you can see the most frequently appeared businesses like 'Starbucks', 'McDonald's', etc, in name column quickly.
 
@@ -50,7 +51,7 @@ You can also see some of the columns' sneak peak view. For example, you can see 
 
 ## Select (or Drop) columns
 
-Let's remove unnecessary columns for our analysis.
+Let's remove unnecessary columns for our analysis. You can use a minus '-' function to drop columns and use convenient functions like ```starts_with()``` to match the column names with certain characters so that you can drop them all together.
 
 ```
 select(-starts_with("hours"), -starts_with("attribute"))
@@ -122,7 +123,7 @@ Now you can see all the neighborhood names are extracted and the column 'neighbo
 
 ## Find (Search) values inside List (Nested column)
 
-Let's say you want to know how many restaurants there are in this dat.
+Let's say you want to know how many restaurants there are in this data.
 
 You would notice that 'categories' column is 'List' data type, which means each row of the data contain more than one value. We call it 'nested data'. In this case, each business (row) has multiple categories tagged. For example, 'Verizon Wireless' has categories like 'Shopping', 'Home Services', 'Internet Service Providers', etc.
 
