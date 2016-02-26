@@ -19,7 +19,7 @@ We're going to use Yelp business review sample data that was published by Yelp. 
 
 - [Yelp business review data](https://www.dropbox.com/s/3h7vjgktoprheyg/yelp_academic_dataset_business.json?dl=0)
 
-The data is about businesses on Yelp in the selected areas. You can find information about each business such as their opening hours, type of the business, location, average review start rating, etc. Here's a sample of the raw data for one business.
+The data is about businesses on Yelp in the selected areas. You can find information about each business such as their opening hours, type of the business, location, average review star rating, etc. Here's a sample of the raw data for one business.
 
 ```
 {
@@ -94,9 +94,9 @@ The data is about businesses on Yelp in the selected areas. You can find informa
 }
 ```
 
-As often with JSON data, the data is hierarchically structured. For example, 'hours' node has two levels, one is about the day of the week and another is about the opening hours within each day of the week. With Exploratory, These hierarchical structures will be flatten out at the data import time so that the lowest level of the element will have its own column. In this case, 'hours.Saturday.open' will have its own column, 'hours.Saturday.close' will have its own column, and so on.
+As often with JSON data, the data is hierarchically structured. For example, 'hours' node has two levels, one is about the day of the week and another is about the opening hours within each day of the week. With Exploratory, these hierarchical structures will be flatten out at the data import time so that the lowest level of the element will have its own column. In this case, 'hours.Saturday.open' will have its own column, 'hours.Saturday.close' will have its own column, and so on.
 
-Another common characteristic of JSON you can observe with this data is something called 'Array'. You can see, for example, 'categories' and 'neighborhoods' have multiple values inside the square brackets. The way these data is stored will be preserved after importing data, but they are registered as List data type and we call them 'Nested' data, which mean it contains multiple values in a single list or sometimes in a data frame. These 'Nested' data can be always 'Un-Nested' with ```unnest()``` function, which we'll talk about later in this tutorial.
+Another common characteristic of JSON data you can observe with this data as well is something called 'Array'. You can see, for example, 'categories' and 'neighborhoods' have multiple values inside the square brackets. With Exploratory, the way these data is stored will be preserved after importing data, but they are registered as List data type and we call them 'Nested' data, which mean it contains multiple values in a single list or sometimes in a data frame. These 'Nested' data can be 'Un-Nested' with ```unnest()``` function later, which we'll talk about later in this tutorial.
 
 
 ## Create a new project  
@@ -339,4 +339,4 @@ Finally, you can go to the last step by clicking on it, and go to Chart view and
 
 ![](images/yelp-ratio-shopping.png)
 
-With Exploratory, not only can you easily work with the nested structural nature of JSON data, but also you can flexibly assemble your analysis to answer your questions in a simple and intuitive way. 
+With Exploratory, not only can you easily work with the nested structural nature of JSON data, but also you can flexibly assemble your analysis to answer your questions in a simple and intuitive way.
