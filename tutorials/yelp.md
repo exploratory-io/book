@@ -2,15 +2,14 @@
 
 ### What you are going to learn
 
-JSON data handling
-
+Analyzing JSON data by:
 
 - Working with the list data type / nested (array) data
 - Counting number of the values inside the list
 - Extracting Nth value from the nested data
 - Concatenate values from the nested data
 - Finding text patterns inside the nested data
-- Unnesting (flatten) the nested data
+- Un-nesting (flatten) the nested data
 
 
 
@@ -61,7 +60,7 @@ Once you run this command, you will get only 13 columns. Very simple. ;)
 
 ## Count number of the members inside List (Nested) data
 
-There is a column called 'neighborhoods', people on Yelp give (or tag) each business with the neighborhood names they think appropriate. It is a List data type, which means each row of the data contain more than one value. We call it 'nested data'.
+There is a column called 'neighborhoods'. People on Yelp give (or tag) each business with the neighborhood names they think appropriate. It is a List data type, which means each row of the data contain more than one value. We call it 'nested data'.
 
 Let's find out how many neighborhoods people are tagging to each business. You can use ```list_n()``` function to count the members (values) inside this list data.
 
