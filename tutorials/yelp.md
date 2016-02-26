@@ -1,13 +1,18 @@
+# Analyze Yelp Business Review JSON Data
 
 ### What you are going to learn
 
 JSON data handling
 
-- unnest
-- string detection - working with List
-- extract values from the nested data directly
-- concatenate values from the array
-- count number of the values inside the array
+
+- Working with the list data type / nested (array) data
+- Counting number of the values inside the list
+- Extracting Nth value from the nested data
+- Concatenate values from the nested data 
+- Finding text patterns inside the nested data
+- Unnesting (flatten) the nested data
+
+
 
 ## Yelp business review sample data
 
@@ -52,6 +57,67 @@ select(-starts_with("hours"), -starts_with("attribute"))
 ```
 
 Once you run this command, you will get only 13 columns. Very simple. ;)
+
+## Count number of the members inside List (Nested) data
+
+There is a column called 'neighborhoods', people on Yelp give (or tag) each business with the neighborhood names they think appropriate. It is a List data type, which means each row of the data contain more than one value. We call it 'nested data'.
+
+Let's find out how many neighborhoods people are tagging to each business. You can use ```list_n()``` function to count the members (values) inside this list data.
+
+```
+mutate(neighborhood_counts = list_n(neighborhoods))
+```
+
+When you run this command you can see the number of the neighborhoods are varied between 0 and 3.
+
+![](images/yelp-neighborhood-counts.png)
+
+Let's find out what percentage does each count number of the neighborhood represent. Since the summary view gives you a histogram for numeric and date data type column and a bar chart for text data type column, the easiest way to do this is to convert the 'integer' data type to 'character' data type by wrapping the existing ```list_n() ``` function with ```as.character()``` like below.  
+
+```
+mutate(neighborhood_counts = as.character(list_n(neighborhoods)))
+```
+
+ When you run this command you'll see 52 businesses have 3 tags, but most of the businesses are either no tag or 1 tag of the neighborhood name.
+
+![](images/yelp-neighborhood-counts2.png)
+
+
+## Extract an Nth value from List (Nested) data
+
+Let's say you want to extract the Nth value in the nested data so that each row of the business will have one neighborhood data assigned. You can use ```list_extract()``` function to extract a value at Nth position inside the nested data like below.
+
+```
+mutate(neighborhood_name = list_extract(neighborhoods, 1))
+```
+
+When you run this command you can see the top neighborhood names
+
+![](images/yelp-neighborhood-name.png)
+
+You might want to go to Table view to see this result better by clicking on Table button.
+
+![](images/yelp-neighborhood-name2.png)
+
+## Extract all the values from List (Nested) data and concatenate
+
+But, we know there are some businesses that have more than just one neighborhood assigned. Let's try to get all the values out and concatenate them by ',' by using ```list_concat()``` function.  
+
+```
+mutate(neighborhood_name = list_concat(neighborhoods))
+```
+
+The ```list_concat()``` function uses comma ',' as the separator as default. You can change this by adding ```sep``` argument if you like. You can go to Table view to see the result better.
+
+Let's sort the data to list from the ones with the most neighborhoods using ```arrange()``` command.
+
+```
+arrange(desc(neighborhood_counts))
+```
+
+Now you can see all the neighborhood names are extracted and the column 'neighborhood_name' is 'character' data type.
+
+![](images/yelp-neighborhood-name2.png)
 
 
 ## Find (Search) values inside List (Nested column)
