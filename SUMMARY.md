@@ -6,7 +6,7 @@
    * [Analyze Flight Data - part 2](tutorials/flight2.md)
    * [Analyze Github Data](tutorials/github.md)
    * [Analyze Yelp JSON Data](tutorials/yelp.md)
-   * [Analyze Yahoo Finance Time Series Data](tutorials/yahoo.md)
+   * [Analyze Time Series Data - Yahoo Finance ](tutorials/yahoo.md)
 * [Data Import](data_import.md)
    * [CSV / Delimited](import/delimited.md)
    * [Excel](import/excel.md)
