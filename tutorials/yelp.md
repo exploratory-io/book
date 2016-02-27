@@ -339,4 +339,158 @@ Finally, you can go to the last step by clicking on it, and go to Chart view and
 
 ![](images/yelp-ratio-shopping.png)
 
+
+# Import Yelp Checkin data and Join with Business Review Data
+
+The above analysis is interesting, but the problem is we treated every restaurant type business equally when we evaluated what type of the restaurants are the most common for each state. But what if there are only two restaurants in this area, and one of them is Mexican restaurant that takes 200 customers every day and the other is Italian restaurant that takes only 10 customers a day ? Obviously, we can tell intuitively Mexican restaurant category is a lot more popular in this area.  Wouldn't that be great if we can have an information that can be used to measure each business popularity and give different weights to the restaurants based on that information ? This way, we can have a better sense of what type of restaurants are really popular for each state.
+
+Luckily, there is another data set called 'Yelp Academic Dataset Checkin', which has an information about how many people had checked in to each business at various time ranges. So we can bring in this data and join this to the previous data 'Yelp Business Review' data set and see how the result will look like.
+
+It is another JSON data and the data inside the file looks like the below.
+
+```
+{
+  "checkin_info": {
+    "17-6": 1,
+    "15-3": 1,
+    "15-2": 1,
+    "15-5": 12,
+    "15-4": 2,
+    "15-6": 11,
+    "18-4": 3,
+    "18-5": 7,
+    "18-6": 2,
+    "16-6": 4,
+    "14-6": 1,
+    "0-5": 1,
+    "19-4": 9,
+    "19-0": 1,
+    "19-2": 1,
+    "13-6": 2,
+    "14-5": 1,
+    "20-5": 1,
+    "20-4": 2,
+    "16-2": 1,
+    "16-3": 6,
+    "17-5": 10,
+    "17-4": 4,
+    "17-3": 4,
+    "17-2": 1,
+    "16-4": 14,
+    "16-5": 2,
+    "21-4": 2
+  },
+  "type": "checkin",
+  "business_id": "tv8cS4aaA1VDaInYgggb6g"
+}
+```
+
+This is a snippet of the data that extracted one row of the data for one business. You would notice that there is a bunch of key-value pairs like ```"17-6": 1``` inside ```checkin_info``` node for each ```business id```. It shows how many people explicitly indicated that they had came by to this particular businesses at a given time range.
+
+This 'key-value' part of the data is very common with JSON data format, and it could be a bit tricky to deal with. But with Exploratory, it's pretty straightforward and simple. Let's start.  
+
+## Import sample data
+
+Inside the project, you can click a plus '+' icon next to 'Data Frame' text in the left side pane to import 'yelp_academic_dataset_business.json'.
+
+
+
+After you select the file from the file picker dialog and hit OK, you'll see the first 10 rows of the data you're importing. Click 'Import' button.
+
+![](images/yelp-checkins-data-import.png)
+
+
+## Summary view
+
+There are 170 columns and 45,166 rows. There are so many columns because all the key-value pairs inside 'checkin_info' node are now flattened out to become columns.
+
+![](images/yelp-checkins.png)
+
+## Gather the 'checkin_info' columns
+
+In this particular analysis, rather than caring about what time people had checked in to each business, what we want to know is how many people had checked in to each business as total. This will be enough to give us a sense of the popularity for each business. To do, let's bring these 168 ```checkin_info``` columns into a **tidy** format. (Link to tidy data) Tidy data is something follows the rules below according to Codd’s 3rd normal form.
+
+- Each variable forms a column.
+- Each observation forms a row.
+- Each type of observational unit forms a table.
+
+If you want to know more about the tidy data, we'd highly recommend you take a look at [this paper](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf) written by Hadley Wickham.
+
+Basically what we want to do is to bring all these ```checkin_info``` columns into two columns, one for the ```key``` and another is for the ```value```. The ```key``` column will hold the information of the time range (e.g. '10-5') and the ```value``` column will hold the number of the checkins. Once this is done, then it's easy to sum up all the 'checkins' that is now presented in a single column.
+
+We can use ```gather()``` command to bring those columns into the two columns like below.
+
+```
+gather(checkin_time, checkin_counts, starts_with("checkin"), na.rm=TRUE, convert=TRUE)
+```
+You can set a name for the ```key``` column and a name for the ```value``` column, then set the range of the columns that you want to bring in. In this case, all the columns that we want to bring in starts their names with 'checkin' text so we can use ```starts_with()``` function. And there are many NA values in those 168 columns and we don't really care about those time ranges with NA we can drop them. The last ```convert``` argument makes it to set appropriate data types for those newly created columns.
+
+Once you hit 'Run', now you can see only 4 columns, but the total number of rows has increased to be about 1.6 millions. You can also see the data types are appropriately mapped as 'character' for the ```key``` column and 'integer' for the ```value``` column.
+
+![](images/yelp-checkins-gather2.png)
+
+You might want to see the result in Table view better.
+
+![](images/yelp-checkins-gather3.png)
+
+
+## Summarize values
+
+Now, let's count the total number of the 'checkins' for each restaurant. To do, we want to set the grouping level to 'business_id' first like below.
+
+```
+group_by(business_id)
+```
+After you hit 'Run' button, we can run ```summarize()``` command with ```sum()``` function like below.
+
+```
+summarize(total_checkin_counts = sum(checkin_counts))
+```
+
+Once you hit 'Run' button you would notice that the range of the number of the checkins are from 3 to 62,646. And as we have removed NA values at the 'gather()' step, let's not forget some of the restaurants might not have the checkins at all.
+
+![](images/yelp-checkins-summarize.png)
+
+Now, this data is ready to get joined to the 'yelp_academic_dataset_business' data frame.
+
+## join
+
+Go to 'yelp_academic_dataset_business' data frame, and join with the 'yelp_academic_dataset_checkin' data frame at right after the 2nd step of 'Select'. Once you click 'Select' at the right hand side, hit '+' (plus) button, then type ```left_join()``` command like below.
+
+```
+left_join(yelp_academic_dataset_checkin)
+```
+
+Once you hit 'Run' button, you can see the 'total_checkin_counts' column has now been added to this data frame.
+
+![](images/yelp-join2.png)
+
+You would notice that about 26% of the businesses have NA values, which means they don't have any checkin numbers.
+
+
+## Keep only the businesses with enough checkins.
+
+Once we get the number of the checkin information we can use this to filter the data so that we can keep only the businesses with enough checkins. Let's do something like below, which is to keep the businesses whose checkin numbers are in the 25 percentile meaning the top 75%.
+
+```
+filter(total_checkin_counts  > quantile(total_checkin_counts, .25, na.rm=TRUE))
+```
+
+Once you hit 'Run', you can see the total number of the rows are 33,010 and the range of the 'total_checkin_counts' are between 13 and 62646.
+
+![](images/yelp-percentile.png)
+
+## Find the final result
+
+Simply, click the last step 'Mutate'.
+
+You can see the top restaurant categories.
+
+![](images/yelp-checkins-summarized.png)
+
+And when you go to Chart view, you can observe some patterns. You could tell the first seven states are US States even without looking at the label! ;)
+
+![](images/yelp-checkins-summarized-chart.png)
+
+
 With Exploratory, not only can you easily work with the nested structural nature of JSON data, but also you can flexibly assemble your analysis to answer your questions in a simple and intuitive way.
