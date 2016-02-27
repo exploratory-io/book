@@ -10,6 +10,8 @@ Analyzing JSON data by:
 - Concatenate values from the nested data
 - Finding text patterns inside the nested data
 - Un-nesting (flatten) the nested data
+- Working with Key-Value pair data 
+- Join two data sets
 
 
 
