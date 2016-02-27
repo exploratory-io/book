@@ -280,6 +280,8 @@ Let's go to Chart view to visualize this result, and assign 'state' to X-Axis, '
 
 ![](images/yelp-state-category-chart.png)
 
+## Filter to keep only Top 10 restaurants for each State
+
 But there are too many categories that it almost doesn't make much of the sense. Let’s get only the top 10 for each state by using ```top_n()``` function. To do this, first, we need to set the grouping level to 'state' with ```group_by()``` function like below.
 
 ```
@@ -305,39 +307,6 @@ mutate(ratio = count / sum(count))
 Now you can see some sort of the trend. States from AZ to WI are showing some similar trend while States from BW to MLN are somewhat similar. Also, you can see some states are very diversified, but some others are not.
 
 ![](images/yelp-ratio-chart.png)
-
-
-## Update a particular analysis step in the middle
-
-We have seen what types of the restaurants are in the data and how they're different among the states. But how about other categories like 'Shopping' ? Let's say we want to know what type of the business tagged with 'Shopping' and how those are different among the states.
-
-We can do this just by updating the step where we filtered to keep only 'Restaurant' related categories. Click 'Filter' at the third step and replace 'Restaurant' with 'Shopping'.
-
-```
-filter(str_detect(categories, "Shopping"))
-```
-
-Once you hit 'Run' button, you will see different set of the businesses like 'Walgreen', 'Walmart', 'Cvs', etc, under 'name' column.
-
-![](images/yelp-shopping-category.png)
-
-Now, you can just click 'Unnest' step to unnest all the categories.
-
-![](images/yelp-shopping-unnest.png)
-
-As you would imagine, the most frequent categories is 'Shopping', so let's update 'Filter' step right after the 'Unnest' step by replacing 'Restaurant' with 'Shopping'
-
-```
-filter(categories != "Shopping")
-```
-
-Once you hit 'Run' button you can see 'Fashion', 'Home & Garden', 'Woman's Clothing', etc, under 'categories' column
-
-![](images/yelp-shopping-unnest2.png)
-
-Finally, you can go to the last step by clicking on it, and go to Chart view and see the trend. For example, you can see that 'EDH, 'NV', 'PA' states have more 'Accessories' type businesses than the other states.
-
-![](images/yelp-ratio-shopping.png)
 
 
 # Import Yelp Checkin data and Join with Business Review Data
