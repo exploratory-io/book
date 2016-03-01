@@ -28,3 +28,21 @@ Join with AIRPORT data set using DEST column from the original data set and CODE
 ```
 inner_join(AIRPORT, by = c("DEST" = "CODE")  
 ```
+
+
+Now, just for a sake of understanding of what are the other join types, we can try ```inner_join()``` and ```full_join()``` commands.
+
+First, ```inner_join()``` command.
+
+```
+inner_join(carrier_lookup, by=c("CARRIER" = "code"))
+```
+
+
+![](images/flight-inner-join.png)
+
+```
+full_join(carrier_lookup, by=c("CARRIER" = "code"))
+```
+
+![](images/flight-full-join.png)

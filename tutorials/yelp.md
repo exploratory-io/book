@@ -10,7 +10,7 @@ Analyzing JSON data by:
 - Concatenate values from the nested data
 - Finding text patterns inside the nested data
 - Un-nesting (flatten) the nested data
-- Working with Key-Value pair data 
+- Working with Key-Value pair data
 - Join two data sets
 
 
@@ -379,9 +379,11 @@ Once the data is imported, you can find that there are 170 columns and 45,166 ro
 
 ## Gather the 'checkin_info' columns
 
-In this particular analysis, we are not really concerned about what time people had checked in to each business, rather we want to know how many people had checked in to each business as total. This will be enough to give us a sense of the popularity for each business. To do, let's bring these 168 ```checkin_info``` columns into two columns, one for the ```key``` and another is for the ```value```. The ```key``` column will hold the information of the time range (e.g. '10-5') and the ```value``` column will hold the number of the checkins. Once this is done, then it will be much easier to sum up all the 'checkins' count numbers for each restaurant.
+In this particular analysis, we are not really concerned about what time people had checked in to each business, rather we want to know how many people had checked in to each business as total. This will be enough to give us a sense of the popularity for each business.
 
-We can use ```gather()``` command to do this magic, which is to bring those columns into the two columns like below.
+To be able to calculate the total numbers, we want to bring these 168 ```checkin_info``` columns into two columns, one for the ```key``` and another is for the ```value```. The ```key``` column will hold the information of the time range (e.g. '10-5') and the ```value``` column will hold the number of the checkins. Once this is done, then it will be much easier to sum up all the 'checkins' count numbers for each restaurant.
+
+We can use ```gather()``` command to do this magic, which is to bring those columns into the two columns, like below.
 
 ```
 gather(checkin_time, checkin_counts, starts_with("checkin"), na.rm=TRUE, convert=TRUE)
@@ -400,7 +402,7 @@ You might want to see the result in Table view better.
 
 ## Summarize total checkins for each restaurant
 
-Now, let's count the total number of the 'checkins' for each restaurant. First, we want to set the grouping level to 'business_id' first like below.
+Now, let's count the total number of the 'checkins' for each restaurant. First, we want to set the grouping level to 'business_id' like below.
 
 ```
 group_by(business_id)
@@ -419,17 +421,17 @@ Now, this data is ready to get joined to the 'yelp_academic_dataset_business' da
 
 ## Join Business Review and Checkin data frames together
 
-Go to 'yelp_academic_dataset_business' data frame first.
+Go to 'yelp_academic_dataset_business' data frame by clicking on it first.
 
-Now, we want to join with the 'yelp_academic_dataset_checkin' data frame, but not at the end, rather we want to do the 'join' at right before start filtering information at the 3rd step. You can insert a new step by simply clicking on the 2nd step of 'Select' at the right hand side, and hit '+' (plus) button. Now, you can add ```left_join()``` command like below.
+Now, we want to join with the 'yelp_academic_dataset_checkin' data frame we have just prepared. But rather than doing the 'join' at the end, we want to do the 'join' at right before start filtering information at the 3rd step. You can insert a new step by simply clicking on the 2nd step of 'Select' at the right hand side, and hit '+' (plus) button. Now, you can add ```left_join()``` command like below.
 
 ```
 left_join(yelp_academic_dataset_checkin)
 ```
 
-In this case, both data frames happen to have the same column name as the join key column so you don't need to set the key column information.
+In this case, both data frames happen to have the same column name as the join key column so you don't need to set the key column information explicitly.
 
-Once you hit 'Run' button, you can see the 'total_checkin_counts' column has been just added to this data frame.
+Once you hit 'Run' button, you can see the 'total_checkin_counts' column has been just added to this data frame at the end.
 
 ![](images/yelp-join2.png)
 
