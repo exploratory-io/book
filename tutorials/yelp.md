@@ -11,7 +11,7 @@ Analyzing JSON data by:
 - Finding text patterns inside the nested data
 - Un-nesting (flatten) the nested data
 - Working with Key-Value pair data
-- Join two data sets
+- Join two data frames
 
 
 
@@ -315,7 +315,7 @@ Now you can see some sort of the trend. States from AZ to WI are showing some si
 
 The above analysis is interesting, but the problem is that we treated every business equally when we evaluated what restaurant types are the most common for each state. But let's think about this super simplified scenario for a second. There are only two restaurants in this particular area, and one of them is Mexican restaurant that takes 200 customers every day and the other is Italian restaurant that takes only 10 customers a day ? Obviously, we can tell intuitively Mexican restaurant type is a lot more popular in this area. So it could have been better if we had an information about the popularity for each restaurant and gave different weights to the restaurants based on that information. This way, we can have a better sense of what type of restaurants are really popular for each state.
 
-Luckily, there is another data set called 'Yelp Academic Dataset Checkin' - [downlod link](https://www.dropbox.com/s/m2075kntzzs8kma/yelp_academic_dataset_checkin.json?dl=0), which has an information about how many people had checked-in to each business at various time ranges. We can bring in this data and join this to the previous data frame 'yelp_academic_dataset_business', and see how the result will look different.
+Luckily, there is another data called 'Yelp Academic Dataset Checkin' - [downlod link](https://www.dropbox.com/s/m2075kntzzs8kma/yelp_academic_dataset_checkin.json?dl=0), which has an information about how many people had checked-in to each business at various time ranges. We can bring in this data and join this to the previous data frame 'yelp_academic_dataset_business', and see how the result will look different.
 
 This 'Yelp Academic DataSet Checkin' data is also in JSON format and it looks like below.
 

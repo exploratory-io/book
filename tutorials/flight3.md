@@ -102,7 +102,7 @@ Probably, it's easier to see it rather than reading it, so let's run the command
 left_join(carrier_lookup, by=c("CARRIER" = "code"))
 ```
 
-Using ```by``` argument you can assign the columns from each data frame you want to use to match the two data sets. Make sure you need to use ```c()``` to set that information as above. If you happen to have the data sets that you need to use two pairs of columns to match, you can have those two pairs inside the ```c()``` and have them separated by ',' (comma).
+Using ```by``` argument you can assign the columns from each data frame you want to use to match the two data frames. Make sure you need to use ```c()``` to set that information as above. If you happen to have the data frames that you need to use two pairs of columns to match, you can have those two pairs inside the ```c()``` and have them separated by ',' (comma).
 
 Once you hit 'Run' you see the lookup table is successfully joined by adding a new column 'name' at the end.  
 
@@ -114,7 +114,7 @@ However, you would notice that there is a small fraction of the data that didn't
 anti_join(carrier_lookup, by=c("CARRIER" = "code"))
 ```
 
-The ```anti_join()``` operation finds and keeps the rows from the original data set that don't match with anything from the target data set. You can see 'VX' is the carrier that doesn't have a match in the lookup data.
+The ```anti_join()``` operation finds and keeps the rows from the original data frame that don't match with anything from the target data frame. You can see 'VX' is the carrier that doesn't have a match in the lookup data.
 
 ![](images/flight-join2.png)
 
@@ -124,7 +124,7 @@ http://www.airfarewatchdog.com/pages/3799702/airline-letter-codes/
 
 ![](images/flight-airlinewatchdog.png)
 
-The data table on this page has 'VX', which is 'Virgin Airline' so we can use this. Let's scrape that and import so that we can add this data set to our 'carrier_lookup' data set.
+The data table on this page has 'VX', which is 'Virgin Airline' so we can use this. Let's scrape that and import so that we can add this data frame to our 'carrier_lookup' data frame.
 
 Before, going to the next step, let's make sure we change the join back to 'left_join' instead of 'anti_join'
 
@@ -169,7 +169,7 @@ First, let's rename the column names to make them easier to recognize.
 rename(code = X1, name = X2)
 ```
 
-And, this time we care about only 'VX' from this data set, so let's filter to keep only 'VX' data. This way, we can later use ```union()``` command to add this lookup data to the other lookup data.
+And, this time we care about only 'VX' from this data frame, so let's filter to keep only 'VX' data. This way, we can later use ```union()``` command to add this lookup data to the other lookup data.
 
 ```
 filter(code  == "VX")
@@ -240,4 +240,4 @@ Once you hit 'Run' button, you can see that there are three carriers, 'EV', 'MQ'
 
 ![](images/flight-setdiff.png)
 
-That means, either of the data sets is not complete by itself to satisfy the 'airline_delay_2015_1' data, and this is why we were better off combining the two data sets with ```union()``` command before the join.
+That means, either of the data frames is not complete by itself to satisfy the 'airline_delay_2015_1' data, and this is why we were better off combining the two data frames with ```union()``` command before the join.
