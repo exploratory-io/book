@@ -130,7 +130,7 @@ Let's filter to keep only the flights which flew on the dates greater than Janua
 filter(FL_DATE  >= as.Date("2015-01-05") & FL_DATE <= as.Date("2015-01-10"))
 ```
 
-Once you hit 'Run' button, you'll notice FL_DATE data values are now only between '2015-01-05' and '2015-01-15'
+Once you hit 'Run' button, you'll notice FL_DATE data values are now only between '2015-01-05' and '2015-01-10'
 
 ![](images/flight-filter-date1.png)
 

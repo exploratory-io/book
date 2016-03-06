@@ -68,7 +68,7 @@ Once the command is set in the transformation command input box, you'll see a dr
  Hit 'Return' key or click on 'airline_delay_part2' to select 'airline_delay_part2'. The command look like the below.
 
 ```
-bind_rows(airline_delay_2014_12)
+bind_rows(airline_delay_part2)
 ```
 
 Click 'Run' button, and you'll get a result like below.
@@ -120,7 +120,7 @@ There is a column called 'FL_DATE', which is Date data type and has the flight d
 Click the plus '+' button, select 'Mutate' operation, and start typing something like below.  
 
 ```
-mutate(weekday = wday(FL_DATE)
+mutate(weekday = wday(FL_DATE))
 ```
 when you hit 'Run' button and scroll down to the bottom of the page you'll see a new column created called 'weekday'.
 

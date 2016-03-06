@@ -210,7 +210,7 @@ Now there is no NA value under 'name' column, which means that all the carriers 
 
 ## Find what could have been missing if we used only the 2nd lookup ?
 
-Now, you might be wondering why didn't we use just the 2nd lookup data instead of having the 1st one merged with a part of the 2nd lookup data. The reason we didn't do it is because we knew even the 2nd data was alone not enough. We can take a look at the data to quickly prove this. Basically, we can compare the carrier codes from the two lookup data frames.
+Now, you might be wondering why didn't we use just the 2nd lookup data instead of having the 1st one merged with a part of the 2nd lookup data. The reason we didn't do it is because we knew even the 2nd data alone was not enough. We can take a look at the data to quickly prove this. Basically, we can compare the carrier codes from the two lookup data frames.
 
 First, go to the 2nd lookup 'carrier_lookup2' data frame and select only the 'code' column.
 
@@ -230,7 +230,7 @@ select(code)
 
 ![](images/flight-lookup1-code-column.png)
 
-Now, use ```setiff()``` command to find what's in the 1st lookup data but not in the 2nd lookup data.
+Now, use ```setdiff()``` command to find what's in the 1st lookup data but not in the 2nd lookup data.
 
 ```
 setdiff(carrier_lookup2)
