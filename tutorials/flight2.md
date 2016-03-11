@@ -127,7 +127,7 @@ The result would be the same as above.
 Let's filter to keep only the flights which flew on the dates greater than January 5th, 2015.
 
 ```
-filter(FL_DATE  >= as.Date("2015-01-05") & FL_DATE <= as.Date("2015-01-10"))
+filter(FL_DATE  >= as.Date("2015-01-05"))
 ```
 
 Once you hit 'Run' button, you'll notice FL_DATE data values are now only between '2015-01-05' and '2015-01-10'

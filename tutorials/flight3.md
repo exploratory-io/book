@@ -1,6 +1,6 @@
 # Analyze Flight Data Part 3 - Data Join / Blending
 
-### What you are going to learn:
+### What you are going to learn
 
 - Scraping data from web pages
 - Joining (Blending) with other data frames - left join, anti join, inner join
