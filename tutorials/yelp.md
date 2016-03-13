@@ -284,31 +284,30 @@ Let's go to Chart view to visualize this result, and assign 'state' to X-Axis, '
 
 ## Filter to keep only Top 10 restaurants for each State
 
-But there are too many categories that it almost doesn't make much of the sense. Let’s get only the top 10 for each state by using ```top_n()``` function. To do this, first, we need to set the grouping level to 'state' with ```group_by()``` function like below.
+But there are too many categories that it almost doesn't make much of a sense by just looking at the chart. Ideally, what we want to do is to get the top 10 categories for each state based on the 'count' value and put all other categories (non-top 10 categories) into a group called 'Others'.
+
+We can use ```min_rank()``` function to get the rank for each category within each state, then create a new column to have either the original value from 'categories' column or 'Others' depending on whether its rank value is in the top 10 or not.
+
 
 ```
-group_by(state)
+mutate(ranking = min_rank(desc(count)), category = ifelse(ranking  <= 10, categories, "Others"))
 ```
 
-Then, type ```top_n()``` function like below.
+Notice that we are creating 'ranking' column by using ```min_rank()``` function and using the value right away within ```ifelse()``` function. This is a beauty of the dplyr command. ```ifelse()``` is testing whether the ranking value is less than 10 or not, if TRUE then use the value from 'categories' column, otherwise set 'Others' as the value.
 
-```
-top_n(10, count)
-```
+Once you run the command above, now you'll see much better views. You'll notice, for example, that Chinese restaurants are pretty common in Nevada (NV) but not in other states.
 
-Once you run the command above, now you'll see much better views. You'll notice, for example, that Chinese restaurants are pretty common all across different states but not with Arizona (AZ).
+![](images/yelp-state-category-top10-others.png)
 
-![](images/yelp-state-category-top10.png)
-
-But still, it's hard to see and compare among States because some bars are very tall but some bars are too small to see inside the bar. So let's get the percentage (ratio) of each category within each state so that we can compare the trend among States easier. To do this, you can use ```sum()``` function to calculate the total for each group (State) and divide each category count by this total number inside ```mutate()``` command.
+But still, it's hard to see and compare among States because some bars are too small to see inside the bar. So let's get the percentage (ratio) of each category within each state so that we can compare the trend among States easier. To do this, you can use ```sum()``` function to calculate the total for each group (State) and divide each category count by this total number inside ```mutate()``` command. We can do this by adding this calculation inside the existing 'Mutate' step, but for the sake of a better readability, we'll create a new step with ```mutate()``` function like below.
 
 ```
 mutate(ratio = count / sum(count))
 ```
 
-Now you can see some sort of the trend. States from AZ to WI are showing some similar trend while States from BW to MLN are somewhat similar. Also, you can see some states are very diversified, but some others are not.
+With this new view, we can see that actually Chinese restaurants are actually more common in many US states other than Arizona (AZ)!
 
-![](images/yelp-ratio-chart.png)
+![](images/yelp-ratio-chart2.png)
 
 
 # Import Yelp Checkin data and Join with Business Review Data
