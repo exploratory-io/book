@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Tutorials](tutorials.md)
+* [Tutorials](tutorials/intro.md)
    * [Analyze Flight Data Part 1 - Basic](tutorials/flight.md)
    * [Analyze Flight Data Part 2 - Filter](tutorials/flight2.md)
    * [Analyze Flight Data Part 3 - Join](tutorials/flight3.md)
