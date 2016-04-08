@@ -3,7 +3,7 @@
 For the detail, take a look at this page.
 https://developers.google.com/analytics/solutions/r-google-analytics#query
 
-## Get Client ID and Client Secrete
+## 1. Get Client ID and Client Secrete
 
 Go to [Google Developers Console](https://console.developers.google.com/project)
 
@@ -41,7 +41,7 @@ Now, you get Client ID and Client Secret.
 
 ![](images/google-analytics-api-setting8.png)
 
-## Get Table ID (View ID)
+## 2. Get Table ID (View ID)
 
 Go to [Google Analytics web page](https://analytics.google.com).
 
@@ -59,7 +59,7 @@ Now you can find View ID.
 You'll need to use this id for 'Table ID' parameter.
 
 
-## Decide which Dimensions and Measures you need for Google Analytics data
+## 3. Decide which Dimensions and Measures you need for Google Analytics data
 
 You can use [Google Analytics Query Explorer tool](https://ga-dev-tools.appspot.com/query-explorer/) to find the dimensions and measures you would be interesting.
 
@@ -72,7 +72,7 @@ You can use [Google Analytics Query Explorer tool](https://ga-dev-tools.appspot.
 Take a look at [Query Parameter reference page](https://developers.google.com/analytics/devguides/reporting/core/v3/reference) for the detail about the query parameters.
 
 
-## Write R custom script
+## 4. Write R custom script
 
 ```
 require(RGoogleAnalytics)
