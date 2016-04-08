@@ -64,5 +64,5 @@
    * [Japan e-stat](customdata/estat.md)
    * [Github](customdata/github.md)
    * [Twitter](customdata/twitter.md)
-   * [Google Analytics](customdata/ganalytics.md)
+   * [Google Analytics](customdata/google-analytics.md)
    * [ProPublica](customdata/propublica.md)
