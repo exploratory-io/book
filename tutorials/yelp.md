@@ -19,7 +19,7 @@ Analyzing JSON data by:
 
 We're going to use Yelp business review sample data that was published by Yelp. You can download it from the link below.
 
-- [Yelp business review data](https://www.dropbox.com/s/3h7vjgktoprheyg/yelp_academic_dataset_business.json?dl=0)
+- [Yelp business review data](https://www.dropbox.com/s/gd1k41y9gbpfwq3/yelp_academic_dataset_business.json?dl=0)
 
 The data is about businesses on Yelp in the selected areas. You can find information about each business such as their opening hours, type of the business, location, average review star rating, etc. Here's a sample of the raw data for one business.
 
@@ -314,7 +314,7 @@ With this new view, we can see that actually Chinese restaurants are actually mo
 
 The above analysis is interesting, but the problem is that we treated every business equally when we evaluated what restaurant types are the most common for each state. But let's think about this super simplified scenario for a second. There are only two restaurants in this particular area, and one of them is Mexican restaurant that takes 200 customers every day and the other is Italian restaurant that takes only 10 customers a day ? Obviously, we can tell intuitively Mexican restaurant type is a lot more popular in this area. So it could have been better if we had an information about the popularity for each restaurant and gave different weights to the restaurants based on that information. This way, we can have a better sense of what type of restaurants are really popular for each state.
 
-Luckily, there is another data called 'Yelp Academic Dataset Checkin' - [downlod link](https://www.dropbox.com/s/m2075kntzzs8kma/yelp_academic_dataset_checkin.json?dl=0), which has an information about how many people had checked-in to each business at various time ranges. We can bring in this data and join this to the previous data frame 'yelp_academic_dataset_business', and see how the result will look different.
+Luckily, there is another data called 'Yelp Academic Dataset Checkin' - [downlod link](https://www.dropbox.com/s/ve3ska89muqs2x0/yelp_academic_dataset_checkin.json?dl=0), which has an information about how many people had checked-in to each business at various time ranges. We can bring in this data and join this to the previous data frame 'yelp_academic_dataset_business', and see how the result will look different.
 
 This 'Yelp Academic DataSet Checkin' data is also in JSON format and it looks like below.
 
@@ -363,7 +363,7 @@ This 'key-value' part of the data is very common with JSON data format, and it c
 
 First, download the yelp checkin data from the link below.
 
-- [yelp_academic_dataset_checkin](https://www.dropbox.com/s/m2075kntzzs8kma/yelp_academic_dataset_checkin.json?dl=0)
+- [yelp_academic_dataset_checkin](https://www.dropbox.com/s/ve3ska89muqs2x0/yelp_academic_dataset_checkin.json?dl=0)
 
 Inside the project, you can click a plus '+' icon next to 'Data Frame' text in the left side pane to import 'yelp_academic_dataset_checkin.json'.
 

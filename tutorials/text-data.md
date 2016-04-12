@@ -8,6 +8,8 @@ Extracting and Manipulating Text Data by:
 - Extracting and Replacing text
 - Using Basic Regular Expression
 - Separate a text into two columns
+- Separate comma separated text into multiple rows
+- Bring all the text from multiple rows into one row
 - Joining with another data
 
 # Data
