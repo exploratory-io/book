@@ -6,6 +6,12 @@ Extracting and Manipulating Text Data by:
 
 - Scraping text data from Web
 - Extracting and Replacing text
+- Detecting a pattern of text - str_detect, starts_with, ends_with
+str_detect("New York on 1/1.", "^New")  
+_returns TRUE because there is "New" text at the beginning of the data._  
+str_detect("New York on 1/1.", "New$")  
+_returns TRUE because there is no "New" text at the end of the data._  
+
 - Using Basic Regular Expression
 - Separate a text into two columns
 - Separate comma separated text into multiple rows
