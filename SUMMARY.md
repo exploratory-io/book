@@ -24,7 +24,7 @@
       * [Mongo DB](import/mongodb.md)
       * [Google Analytics](import/google-analytics.md)
       * [Google Spreadsheet](import/google-sheet.md)
-      * [Google Spreadsheet](import/github.md)
+      * [Github Issues](import/github.md)
 * [Data Transformation](data_transform.md)
    * [Select](dplyr/select.md)
    * [Rename](dplyr/rename.md)
