@@ -1,4 +1,4 @@
-# Google Spreadsheet Data Import 
+# Google Spreadsheet Data Import
 
 ## Get Google Spreadsheet Name and Tab Name
 
@@ -10,7 +10,7 @@ Go to [Google Spreadsheet page](https://docs.google.com/spreadsheets) and find o
 
 - Select 'Import Remote Data' from Add Data Frames dropdown
 
-![](images/google-sheet2.png)
+![](images/import-remote-data.png)
 
 - Click 'Google Sheets'
 
