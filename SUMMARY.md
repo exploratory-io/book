@@ -6,7 +6,7 @@
    * [Analyze Flight Data Part 2 - Filter](tutorials/flight2.md)
    * [Analyze Flight Data Part 3 - Join](tutorials/flight3.md)
    * [Analyze Flight Data Part 4 - Statistical analysis](tutorials/flight4.md)
-   * [Analyze Yelp JSON Data](tutorials/yelp.md)
+   * [Working with JSON Data](tutorials/yelp.md)
    * [Working with Text Data](tutorials/text-data.md)
    * [Analyze Github Data]
    * [Analyze Time Series Data - Yahoo Finance]
