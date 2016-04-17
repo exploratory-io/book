@@ -2,10 +2,10 @@
 
 * [Introduction](README.md)
 * [Tutorials](tutorials/intro.md)
-   * [Analyze Flight Data Part 1 - Basic](tutorials/flight.md)
-   * [Analyze Flight Data Part 2 - Filter](tutorials/flight2.md)
-   * [Analyze Flight Data Part 3 - Join](tutorials/flight3.md)
-   * [Analyze Flight Data Part 4 - Statistical analysis](tutorials/flight4.md)
+   * [Analyze Data - Basic](tutorials/flight.md)
+   * [Filtering Data in Many Ways](tutorials/flight2.md)
+   * [Joining and Merging Data](tutorials/flight3.md)
+   * [Statistical Data Analysis](tutorials/flight4.md)
    * [Working with JSON Data](tutorials/yelp.md)
    * [Working with Text Data](tutorials/text-data.md)
    * [Analyze Github Data]

@@ -2,8 +2,6 @@
 
 ### What you are going to learn
 
-Working with Text Data by:
-
 - Scraping text data from Web
 - Extract only numeric value from text
 - Parse text and convert it to Date / Time data type

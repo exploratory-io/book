@@ -44,37 +44,21 @@ You can see the two letters code and the carrier name mapping. Instead of manual
 
 To scrape the data and import, you can create a new data frame by selecting 'Write custom R script' from the dropdown menu under '+' sign right next to 'Data Frames' text in lefthand side pane.
 
-![](images/flight-data-import-menu.png)
+![](images/scrape-web-data-menu.png)
 
-In the dialog, give it a name like 'carrier_lookup' and type the following R script.
+In the dialog, give it a name like 'carrier_lookup' and type the URL below into URL input field.
 
-```
-## Load 'rvest' package for web scraping
-library(rvest)
+http://aspmhelp.faa.gov/index.php/ASQP:_Carrier_Codes_and_Names
 
-## Read the web page and store into faa_mapping_html object.
-faa_mapping_html <- read_html("http://aspmhelp.faa.gov/index.php/ASQP:_Carrier_Codes_and_Names")
+And click 'Preview' button.
 
-## Set "table" element name as a node that we're interested inside the html, and load the content of the table with html_table() function. ''%>%'' is a chain operator that pass the data from the one before to the one after. '<-' is an assignment operator that store the result from the one after to the one before.
-faa_mapping <- faa_mapping_html %>%
-  html_node("table") %>%
-  html_table()
+![](images/flight-carrier-code.png)
 
-## Return 'faa_mapping' object that stores the result above.
-faa_mapping
-```
-
-The web page we're dealing with is pretty simple this time, hence the script above is also pretty simple. But 'rvest' package is much more capable than this. If you're interested in more here's an [official document](https://cran.r-project.org/web/packages/rvest/rvest.pdf).
-
-Let's hit 'Preview' button and see the result.
-
-![](images/flight-custom-data-carrier.png)
-
-The result looks exactly what we wanted, so hit 'Import' button.
+The preview data looks good. Hit 'Import' button to import this data into Exploratory.
 
 You can see 14 rows of the data that has just been imported.
 
-![](images/flight-custom-carrier.png)
+![](images/flight-carrier-code2.png)
 
 ### Clean up
 
@@ -84,19 +68,23 @@ Let's do a few clean up. First, let's rename the column names to be something th
 rename(code = `IATA Carrier Code`, name = `Carrier Name`)
 ```
 
-We don't really need a column that holds three letters abbreviation for this exercise, so let's drop that.
+![](images/flight-carrier-code3.png)
 
-```
-select(-`ICAO Carrier Code`)
-```
+We don't really need a column that holds three letters abbreviation for this exercise, so let's drop 'ICAO Carrier Code' column. You can select 'Select()' operation from the menu after you click '+' button, select '-' from the suggested list that would show up immediately after you select 'Select' operation, then select 'ICAO Carrier Code' from the next suggested list.
+
+![](images/flight-carrier-code3.png)
+
+
 
 That's it, let's go back to the main data frame 'airline_delay_2015_1'.
 
 ## Join the lookup data
 
-Let's join with the lookup data that we just prepared in the previous steps. We can use ```left_join()``` command to do a type of join called 'Left Join', which would try to find any matching data from the target data (right side) for the original data rows (left side) and leave any rows that can't find the matching data from the target with NA values.
+Now we can join this new data to the original 'flight' data with ```left_join()``` command.
 
-Probably, it's easier to see it rather than reading it, so let's run the command below.  
+Go back to 'airline_delay_2015_1' data frame.
+
+Select 'Left Join' operation from the '+' button menu, and select 'carrier_lookup' data frame inside the 'left_join()' command, select 'c()' function from the suggested list, then select 'CARRIER' column first, then 'code' column from the suggested list.
 
 ```
 left_join(carrier_lookup, by=c("CARRIER" = "code"))
@@ -118,7 +106,7 @@ The ```anti_join()``` operation finds and keeps the rows from the original data 
 
 ![](images/flight-join2.png)
 
-Now, when we google-ed again, we have found the following web site.
+With another google search, we have found the following web site that lists the carrier code and name mapping.
 
 http://www.airfarewatchdog.com/pages/3799702/airline-letter-codes/
 
@@ -138,25 +126,21 @@ If you're interested in other types of Join, take a look at our [Join document p
 
 To scrape the data and import, you want to do basically the same thing as you did before. Create a new data frame by selecting 'Write custom R script' from the dropdown menu under '+' sign right next to 'Data Frames' text in lefthand side pane.
 
-![](images/flight-data-import-menu.png)
+![](images/scrape-web-data-menu.png)
 
-In the dialog, give it a name like 'carrier_lookup2' and type the following R script.
+In the dialog, give it a name like 'carrier_lookup2' and type the URL below into URL input field.
 
-```
-library(rvest)
+http://www.airfarewatchdog.com/pages/3799702/airline-letter-codes/
 
-airline_code_html <- read_html("http://www.airfarewatchdog.com/pages/3799702/airline-letter-codes/")
+And click 'Preview' button.
 
-airline_code <- airline_code_html %>%
-  html_node("table") %>%
-  html_table()
-```
+![](images/flight-carrier-code5.png)
 
-Hit 'Preview' button to preview the data.
+The preview data looks good. Hit 'Import' button to import this data into Exploratory.
 
-![](images/flight-carrier-lookup2.png)
+You can see 95 rows of the data that has just been imported.
 
-And, hit 'Import' button.
+![](images/flight-carrier-code6.png)
 
 
 ### Clean up the data
@@ -169,25 +153,39 @@ First, let's rename the column names to make them easier to recognize.
 rename(code = X1, name = X2)
 ```
 
-And, this time we care about only 'VX' from this data frame, so let's filter to keep only 'VX' data. This way, we can later use ```union()``` command to add this lookup data to the other lookup data.
+![](images/flight-carrier-code7.png)
 
-```
-filter(code  == "VX")
-```
-
-![](images/flight-carrier-lookup-vx.png)
 
 ## Combine the two lookup data frames with Union operation
 
-Now, let's combine the two lookup data frames. Go back to the original 'carrier_lookup' data frame. We can use ```union()``` command to combine the two lookup data frames.
+Now, we can merge (combine) the two carrier code lookup data frames by using 'union()' command.
 
-```
-union(carrier_lookup2)
-```
+Select 'Union' from '+' button menu.
 
-Once you hit 'Run', you can see the one row of the data from 'carrier_lookup2' has been added and the number of the rows are 15 now.
+![](images/flight-carrier-code8.png)
 
-![](images/flight-lookup-union.png)
+Select 'carrier_lookup2' data frame from the suggested list, and hit 'Run' button.
+
+Now you can see the two data sets are merged together now.
+
+![](images/flight-carrier-code9.png)
+
+But, when you look closer to 'code' column in Summary view there seems to be duplicated entries. That's because some of the carrier codes existing in both data frames and they are simply added together. We can make this to keep only the unique ones by deleting any 'duplicated' entries by using 'distinct()' command.
+
+Select 'Distinct' operation from '+' button menu.
+
+![](images/flight-carrier-code10.png)
+
+Select only 'code' column.
+
+![](images/flight-carrier-code11.png)
+
+You could have not selected any column inside 'distinct()' function, in which case it would have evaluate whether each row is duplicated or not by using the values from all the columns, in this case both 'code' and 'name' columns. In this data set, the carrier names are slightly different between the two data frames, so we are using only 'code' column values to evaluate the uniqueness.
+
+Once you hit 'Run' button, you will see 'Unique' metric is showing 98 in 'code' column and the total rows is also showing 98 rows, so all the values are unique now.
+
+![](images/flight-carrier-code12.png)
+
 
 ## Review the main data
 
@@ -206,38 +204,3 @@ This is because Exploratory keeps track the underlying change on all the related
 Now there is no NA value under 'name' column, which means that all the carriers are mapped and they have corresponding names.
 
 ![](images/flight-carrier-mapped.png)
-
-
-## Find what could have been missing if we used only the 2nd lookup ?
-
-Now, you might be wondering why didn't we use just the 2nd lookup data instead of having the 1st one merged with a part of the 2nd lookup data. The reason we didn't do it is because we knew even the 2nd data alone was not enough. We can take a look at the data to quickly prove this. Basically, we can compare the carrier codes from the two lookup data frames.
-
-First, go to the 2nd lookup 'carrier_lookup2' data frame and select only the 'code' column.
-
-```
-select(code)
-```
-
-There are 95 carriers.
-
-![](images/flight-lookup2-code-column.png)
-
-Then, go to the 1st look up 'carrier_lookup' data frame and select only the 'code' column.
-
-```
-select(code)
-```
-
-![](images/flight-lookup1-code-column.png)
-
-Now, use ```setdiff()``` command to find what's in the 1st lookup data but not in the 2nd lookup data.
-
-```
-setdiff(carrier_lookup2)
-```
-
-Once you hit 'Run' button, you can see that there are three carriers, 'EV', 'MQ', and 'OO' that exist only in this 1st lookup data, but not in the 2nd lookup data.
-
-![](images/flight-setdiff.png)
-
-That means, either of the data frames is not complete by itself to satisfy the 'airline_delay_2015_1' data, and this is why we were better off combining the two data frames with ```union()``` command before the join.
