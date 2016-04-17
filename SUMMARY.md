@@ -7,10 +7,10 @@
    * [Analyze Flight Data Part 3 - Join](tutorials/flight3.md)
    * [Analyze Flight Data Part 4 - Statistical analysis](tutorials/flight4.md)
    * [Analyze Yelp JSON Data](tutorials/yelp.md)
+   * [Working with Text Data](tutorials/text-data.md)
    * [Analyze Github Data]
    * [Analyze Time Series Data - Yahoo Finance]
    * [Analyze Log file with URL Data]
-   * [Working with Text Data]
 * [Data Import](data_import.md)
    * [Local Text Files](local-data.md)
       * [CSV / Delimited](import/delimited.md)
