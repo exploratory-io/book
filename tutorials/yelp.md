@@ -1,8 +1,6 @@
-# Analyze Yelp Business Review JSON Data
+# Working with Yelp Business Review JSON Data
 
 ### What you are going to learn
-
-Analyzing JSON data by:
 
 - Working with the list data type / nested (array) data
 - Counting number of the values inside the list
