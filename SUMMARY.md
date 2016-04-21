@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Tutorials](tutorials/intro.md)
+* [Tutorials (English)](tutorials/intro.md)
    * [Analyze Data - Basic](tutorials/flight.md)
    * [Filtering Data in Many Ways](tutorials/flight2.md)
    * [Joining and Merging Data](tutorials/flight3.md)
@@ -12,8 +12,8 @@
    * [Analyze Time Series Data - Yahoo Finance]
    * [Analyze Log file with URL Data]
 * [Tutorials (Japanese)](tutorials/intro_ja.md)
-      * [Analyze Data - Basic](tutorials/flight_ja.md)
-      * [Analyze Github Data](tutorials/github_ja.md)
+   * [Analyze Data - Basic](tutorials/flight_ja.md)
+   * [Analyze Github Data](tutorials/github_ja.md)
 * [Data Import](data_import.md)
    * [Local Text Files](local-data.md)
       * [CSV / Delimited](import/delimited.md)
