@@ -5,7 +5,7 @@
 
 
 いまここには、86カラムがあります。
-![Alt text](./cc70fc82bcae1d47cda47de4b6850a01.png)
+![Alt text](images_ja/cc70fc82bcae1d47cda47de4b6850a01.png)
 
 
 
@@ -18,8 +18,8 @@
 
     rename(pr_key = pull_request.url)
 
-![Alt text](./b553986691e7738ce0f0266f42d0337f.png)
-![Alt text](./d03e4b81747f64db89bf344a0ac0f6e1.png)
+![Alt text](images_ja/b553986691e7738ce0f0266f42d0337f.png)
+![Alt text](images_ja/d03e4b81747f64db89bf344a0ac0f6e1.png)
 
 
 
@@ -29,7 +29,7 @@
 
 これで、元々が86カラムだったのに対して、38カラムになりました。
 
-![Alt text](./ee682d503dbe76636fff41ff55ecea8f.png)
+![Alt text](images_ja/ee682d503dbe76636fff41ff55ecea8f.png)
 
 
 
@@ -37,7 +37,7 @@
 
 私たちは、また、userやassigneeやmilestoneという名前で始まるたくさんのカラムを確認することができますね。
 
-![Alt text](./398c99fa16b805031c20c2e582576b2e.png)
+![Alt text](images_ja/398c99fa16b805031c20c2e582576b2e.png)
 
 
 
@@ -51,7 +51,7 @@
            developer = assignee.login,
            release = milestone.title)
 
-![Alt text](./0f0528a035045fe9e159147c32b4335e.png)
+![Alt text](images_ja/0f0528a035045fe9e159147c32b4335e.png)
 
 
 
@@ -65,7 +65,7 @@
 
 これでたった14カラムだけになりましたね。
 
-![Alt text](./9446879c74823765565b0d23a6c58029.png)
+![Alt text](images_ja/9446879c74823765565b0d23a6c58029.png)
 
 
 ###データタイプをTextカラムからDateカラムに変えよう
@@ -76,7 +76,7 @@ created_atカラムやclosed_atカラムを利用すれば、 issueを閉じる�
 
     select(created_at, closed_at)
 
-![Alt text](./962eedc1df194cd7d44f623d3664bf8c.png)
+![Alt text](images_ja/962eedc1df194cd7d44f623d3664bf8c.png)
 
 
 
@@ -90,7 +90,7 @@ created_atカラムやclosed_atカラムを利用すれば、 issueを閉じる�
 
 同じように見えるかもしれませんが、これで私たちは、データタイプがcharacterではなくPOSIXctとして表示されているデータを見ることができるようになりました。
 
-![Alt text](./4ca15a1e03dbc8f27f6abe6d30c1dbf7.png)
+![Alt text](images_ja/4ca15a1e03dbc8f27f6abe6d30c1dbf7.png)
 
 
 
@@ -98,7 +98,7 @@ created_atカラムやclosed_atカラムを利用すれば、 issueを閉じる�
 
 私たちは、このプロジェクトにおいて平均してissuesを閉じるのにどれくらいの時間がかかるかを計算しようと思っています。だから、すでにclosedになっているissuesだけに集中して見てみましょう。stateというissuesの状態を表したカラムがあります。 見てみると、openとclosedのどちらの値も入っていますね。
 
-![Alt text](./e7a21e306b46a085abef91af09efe92c.png)
+![Alt text](images_ja/e7a21e306b46a085abef91af09efe92c.png)
 
 
 だから、stateの値が、closedになっているものだけfilterをかけましょう。
@@ -107,7 +107,7 @@ created_atカラムやclosed_atカラムを利用すれば、 issueを閉じる�
 
 これで1680rowsになりましたね。
 
-![Alt text](./50f9cb6b11cb011f71f923ad126248e5.png)
+![Alt text](images_ja/50f9cb6b11cb011f71f923ad126248e5.png)
 
 
 
@@ -118,13 +118,13 @@ issueが閉じられた日付を表すclosed_atカラムの日付からissueが�
     mutate(age = closed_at - created_at)
     select(number, age)
 
-![Alt text](./a5d9d33cb5c499b4d3058593fced5da8.png)
+![Alt text](images_ja/a5d9d33cb5c499b4d3058593fced5da8.png)
 
 この計算された値のデータタイプは、difftimeになっています。そして、単位が分として表示されています。私たちは下記のように、as.numeric()関数を使うことによって、データタイプをdifftimeからnumericに、そして、unitsで指定することによって単位を分から日に変えることができます。
 
     mutate(age = as.numeric(closed_at - created_at, units = "days"))
 
-![Alt text](./781bada2f0dfef90abcf36123a4adf4d.png)
+![Alt text](images_ja/781bada2f0dfef90abcf36123a4adf4d.png)
 
 
 
@@ -136,14 +136,14 @@ issuesを閉じるのにかかった平均の時間を計算したいと思い�
 
     summarize(age_average = mean(age))
 
- ![Alt text](./5dc098428c96037567a2855b6ae5013a.png)
+ ![Alt text](images_ja/5dc098428c96037567a2855b6ae5013a.png)
 
 
 それぞれの開発者別の平均時間はどうなっているんでしょう？　summarize()コマンドの前にgroup_by()コマンドを加えると見ることができます。
 
     group_by(developer)
 
-![Alt text](./1faa10f180a0383ae9a54eef29e94bf5.png)
+![Alt text](images_ja/1faa10f180a0383ae9a54eef29e94bf5.png)
 
 
 Hadleyさんはissuesを閉じるのに約128日かかってますね。でも、私の記憶が正しければ、いくつかのissuesはずっと閉じられなかったはずです。ご存知のように、このデータは、IssuesとPull Requestsの両方を含んでいるんでしたね。なので、Pull Requestのissuesだけに集中して見てみましょう。
@@ -156,18 +156,17 @@ issueがIssuesかPull Requestsのものかを区別するために、わかり�
     filter(state == "closed" & !is.na(pr_key))
 
 
-![Alt text](./15426137bcf119fb0dc9366ddbbbdf9e.png)
+![Alt text](images_ja/15426137bcf119fb0dc9366ddbbbdf9e.png)
 
 
 これでHadleyがissuesを閉じるのにかかっている平均時間は 61.86 daysに減りましたね。でも、developer カラムのNA値がなにを意味してるのか不思議ではないでしょうか？　そこで、 NA値を含めていくつのissuesがそれぞれのdevelopersに割り当てられているのか計算してみましょう。
 
     summarize(age_average = mean(age), counts = n())
 
-![Alt text](./8e8937008d4b374d2d9ba534e9b6633b.png)
+![Alt text](images_ja/8e8937008d4b374d2d9ba534e9b6633b.png)
 
 
 
 あれ？pull requestsのほとんどは、特定の開発者に割り当てられていたわけではなかったということですね。私は、pull requestsのほとんどがhadleyかromainfrancoisによって閉じられたと確信しています。だから、少なくとも私たちが分析してきたやり方では、このプロジェクトのissuesやpull requestsを閉じるのにかかった平均の日付を出すことはできませんでした。しかし、このようにして、私たちはプロジェクトの開発の分析を行うことができました。あなたも、自分のプロジェクトの開発を分析してみませんか？
 
 参考：https://medium.com/learn-dplyr/analyzing-issue-data-with-github-rest-api-63945017dedc#.5mzzt8gxd
-
