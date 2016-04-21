@@ -11,6 +11,9 @@
    * [Analyze Github Data]
    * [Analyze Time Series Data - Yahoo Finance]
    * [Analyze Log file with URL Data]
+* [Tutorials (Japanese)](tutorials/intro_ja.md)
+      * [Analyze Data - Basic](tutorials/flight_ja.md)
+      * [Analyze Github Data](tutorials/github_ja.md)
 * [Data Import](data_import.md)
    * [Local Text Files](local-data.md)
       * [CSV / Delimited](import/delimited.md)
