@@ -12,7 +12,7 @@
 
 ## Download Flight Delay sample data
 
-We're going to use the following three data files for this tutorial. You can download them by clicking on them.
+We're going to use the following file for this tutorial. You can download it from [here](](http://download.exploratory.io/data/airline_delay_2016_01.csv)).
 
 - [Flight delay 2016 January data](http://download.exploratory.io/data/airline_delay_2016_01.csv)
 
@@ -279,4 +279,4 @@ As you have seen, by using the combination of group_by(), summarize(), and mutat
 
 This is just the basic, and there are much more to explore. Try other tutorials or start play around with your own data. If you have any question please feel free to contact support@exploratory.io .
 
-Happy Data Wrangling! 
+Happy Data Wrangling!

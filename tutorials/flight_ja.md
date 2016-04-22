@@ -2,12 +2,12 @@
 
 ####この章であなたが学ぶこと：
 
-カラムを選ぶ - select()関数
-新しいカラムを作る- mutate()関数
-データタイプを変更する - wday()関数
-データをグルーピングする- group_by()関数
-データを統合する - summarize()関数
-データをフィルタリングする - filter()関数
+- 特定の列を選ぶ - select()
+- 計算結果をもとに新しい列を作る- mutate()
+- 曜日の値を抽出する - wday()
+- データをグルーピングする- group_by()
+- データを集計する - summarize()
+- データをフィルターする - filter()
 
 ####フライトの遅延データをダウンロードしよう
 
@@ -25,9 +25,10 @@ Exploratoryを開いたら、まず新しいプロジェクトを作りましょ
 ####サンプルデータをインポートしよう
 
 Data Frameの横にある＋アイコンを押すとairline_delay_part1.csvをインポートすることができます。
+
 ![Alt text](images_ja/getting-started2 _ja.png)
 
-ファイルを開くダイアログボックスからファイルを選んだ後に、 OKボタンを押すと、あなたがインポートしたデータの10つの行をこのように確認することができます。
+ファイルを開くダイアログボックスからファイルを選んだ後に、 OKボタンを押すと、あなたがインポートしたデータをこのように確認することができます。
 
 ![Alt text](images_ja/flight-data-import_ja.png)
 
@@ -63,6 +64,3 @@ First, let's drop 'FL_NUM' column'. Click the plus '+' icon and select 'Select' 
 ![Alt text](images_ja/flight-select_ja.png)
 
 ![Alt text](images_ja/flight-select-starts-with.png)
-
-
-
