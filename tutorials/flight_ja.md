@@ -33,12 +33,15 @@ Data Frameの横にある＋アイコンを押すとairline_delay_part1.csvを�
 
 データはうまく表示されているので、そのままImportボタンをクリックします。
 
-####Summary data view
+####サマリーデータ画面
+
+いったんデータをインポートすると、サマリー画面で、データの概要を見ることができます。上に25カラムと445,827行があると表示されています。また、他のカラムものぞき見することもできます。例えば、CARRIERカラムではもっとも頻繁に出てくる航空会社を見ることができます。
+
 
 ![Alt text](images_ja/flight-summary_ja.png)
 
 
-And, when you scroll down you can see ARR_DELAY column having NA values and its data range quickly.
+スクロールしていくと、NA値を持ったARR_DELAYカラムを見つけることができますね。
 
 ![Alt text](images_ja/flight-summary2_ja.png)
 

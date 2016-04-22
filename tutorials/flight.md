@@ -16,7 +16,7 @@ We're going to use the following three data files for this tutorial. You can dow
 
 - [Flight delay 2016 January data](http://download.exploratory.io/data/airline_delay_2016_01.csv)
 
-## Create a new project  
+## Create a new project
 
 Once you start Exploratory app, create a new project to start.
 
@@ -70,7 +70,7 @@ Now FL_NUM column is gone.
 
 ![](images/flight-select.png)
 
-. You can either update the existing 'select' command or add a new 'select' step. Here, let's update the existing 'select' step to be something like below.
+You can either update the existing 'select' command or add a new 'select' step. Here, let's update the existing 'select' step to be something like below.
 
 Let's try removing the columns whose names start with "ORIGIN". You can use one of the convenient functions you can use inside select() function called 'starts_with()'. Inside the 'Select' command you can start typing ',' (comma) and select '-' from the suggested list to remove, then select ```starts_with()``` function from the suggested list.
 
@@ -91,7 +91,7 @@ select(-FL_NUM, -starts_with("ORIGIN"))
 The syntax suggestion should list only the relevant operators, functions, and column names for you to pick as you type.
 
 
-## Date operation - Weekday  
+## Date operation - Weekday
 
 You can add custom calculations or expressions to add new columns easily.
 
@@ -99,7 +99,7 @@ There is a column called 'FL_DATE', which is Date data type and has the flight d
 
 Click the plus '+' button, select 'Mutate' operation.
 
-![](images/flight-mutate.png)  
+![](images/flight-mutate.png)
 
 And, start typing something like below.  Basically, this is creating a new column called 'weekday' and using ```wday()``` function to return week days from 'FL_DATE' column data.
 
@@ -109,7 +109,7 @@ mutate(weekday = wday(FL_DATE))
 
 when you hit 'Run' button and scroll down to the bottom of the page you'll see a new column created called 'weekday'.
 
-![](images/flight-weekday.png)  
+![](images/flight-weekday.png)
 
 You'll notice, though, that the data is shown as number between 1 and 7. This is because ```wday()``` function gives you integer values from 1 to 7 starting 1 for Monday. Instead of the number, you can get the name of each day like 'Monday' by adding an extra argument called ```label``` to ```wday()``` function like below.
 
@@ -119,38 +119,38 @@ mutate(weekday = wday(FL_DATE, label=TRUE))
 
 This would give you what you would expect for week days like below.
 
-![](images/flight-mutate-wday2_s.png)  
+![](images/flight-mutate-wday2_s.png)
 
 One cool thing about this is that the result data type is something called 'ordered factor', which means that when you want to sort on this column it would respect the order of the weekdays starting from Sunday and ending at Saturday. You can quickly check this out by going to Chart view and assign this column 'weekday' to X-Axis. Make sure you uncheck the 'Sort' check box next to Y-Axis to disable Y-Axis level sorting.
 
-![](images/flight-weekday-chart.png)  
+![](images/flight-weekday-chart.png)
 
 
 ## Summarize (Aggregate) - Count rows and Count uniques
 
 Let's find out how many flights per each carrier there are in this data. To do this, let's go to Table view and see the result better.
 
-![](images/flight-table-view.png)  
+![](images/flight-table-view.png)
 
 Click the plus '+' button to add group_by() command.
 
-![](images/flight-group-by.png)  
+![](images/flight-group-by.png)
 
 And, select 'CARRIER' column from the suggested list.
 
-![](images/flight-group-by-carrier.png)  
+![](images/flight-group-by-carrier.png)
 
 And, hit 'Run' button.
 
 You would notice now that it is showing '12 Groups' in the data summary information area above the table. You can click on it to see which column(s) is set for the grouping.
 
-![](images/flight-group-by-carrier2.png)  
+![](images/flight-group-by-carrier2.png)
 
 Once the grouping level is set, let's get the aggregated calculation. We can use ```summarize()``` command to aggregate values and ```n()``` function inside the ```summarize()``` command to count how many records for each 'CARRIER'.
 
 Select 'Summarize' command under '+' button.
 
-![](images/flight-summarize-menu.png)  
+![](images/flight-summarize-menu.png)
 
 Start typing something like below.
 
@@ -160,17 +160,17 @@ summarize(count = n())
 
 You would notice you will get a list of the suggested aggregate functions list right after typing '=' like below.
 
-![](images/flight-summarize-agg-function.png)  
+![](images/flight-summarize-agg-function.png)
 
 The suggested list always gives you the most appropriate functions based on the context. In this case, these are the functions that can be used inside ```summarize()``` command.
 
 Once you hit 'Run' button you'll see only two columns, one is for the grouping column and the other is for this aggregated value column 'count'.
 
-![](images/flight-summarize2.png)  
+![](images/flight-summarize2.png)
 
 Now, let's say you want to find out how many states each carriers are flying into. You can use ```n_distinct()``` function to count unique values of 'DEST_STATE_ABR' column inside the same ```summarize``` command like below.
 
-![](images/flight-summarize3.png)  
+![](images/flight-summarize3.png)
 
 This will give you something like below. You can see AA (American Airline) is flying out from into 43 States while Hawaiian Airline is flying into only 8 States.
 
@@ -279,4 +279,4 @@ As you have seen, by using the combination of group_by(), summarize(), and mutat
 
 This is just the basic, and there are much more to explore. Try other tutorials or start play around with your own data. If you have any question please feel free to contact support@exploratory.io .
 
-Happy Data Wrangling! 
+Happy Data Wrangling!
