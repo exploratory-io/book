@@ -19,27 +19,28 @@
 
 Exploratoryを開いたら、まず新しいプロジェクトを作りましょう。
 
-![Alt text](./getting-started1_ ja.png)
+![Alt text](images_ja/getting-started1_ ja.png)
+
 
 ####サンプルデータをインポートしよう
 
 Data Frameの横にある＋アイコンを押すとairline_delay_part1.csvをインポートすることができます。
-![Alt text](./getting-started2 _ja.png)
+![Alt text](images_ja/getting-started2 _ja.png)
 
 ファイルを開くダイアログボックスからファイルを選んだ後に、 OKボタンを押すと、あなたがインポートしたデータの10つの行をこのように確認することができます。
 
-![Alt text](./flight-data-import_ja.png)
+![Alt text](images_ja/flight-data-import_ja.png)
 
 データはうまく表示されているので、そのままImportボタンをクリックします。
 
 ####Summary data view
 
-![Alt text](./flight-summary_ja.png)
+![Alt text](images_ja/flight-summary_ja.png)
 
 
 And, when you scroll down you can see ARR_DELAY column having NA values and its data range quickly.
 
-![Alt text](./flight-summary2_ja.png)
+![Alt text](images_ja/flight-summary2_ja.png)
 
 
 ####カラムを選ぶか取り除こう
@@ -49,23 +50,19 @@ There are many ways to select only the columns you want for your analysis. Let's
 First, let's drop 'FL_NUM' column'. Click the plus '+' icon and select 'Select' from the dropdown menu.
 
 
-![Alt text](./flight-select_ja.png)
+![Alt text](images_ja/flight-select_ja.png)
 
-![Alt text](./flight-select-suggestion_ja.png)
+![Alt text](images_ja/flight-select-suggestion_ja.png)
 
-![Alt text](./flight-select-suggestion2_ja.png)
-
-
-
-![Alt text](./flight-select-run_ja.png)
-
-![Alt text](./flight-select_ja.png)
-
-![Alt text](./flight-select-starts-with.png)
+![Alt text](images_ja/flight-select-suggestion2_ja.png)
 
 
-book/tutorials/images/flight-select-starts-with2.png
 
+![Alt text](images_ja/flight-select-run_ja.png)
+
+![Alt text](images_ja/flight-select_ja.png)
+
+![Alt text](images_ja/flight-select-starts-with.png)
 
 
 
