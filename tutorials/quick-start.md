@@ -1,4 +1,4 @@
-# Quick Start guide
+# Quick Start Guide
 
 ## Create a project
 
@@ -50,7 +50,7 @@ Assign 'sponsor_affiliation' column to X-Axis.
 
 You can see Bernie Sanders and Hillary Clinton are the top 2 TV Ad sponsor affiliated candidates.
 
-## Transform
+## Transform Data
 
 Go back to Summary view.
 
@@ -111,15 +111,13 @@ Now you can see three new columns being created.
 
 ![](images/quick-start23.png)
 
-## Visualize
-
 Go to Chart view and assign the new column 'state' to X-Axis.
 
 ![](images/quick-start24.png)
 
 You can see Iowa (IA) has the most TV advertisements and has almost twice as much as the second (MA).
 
-## Create a Note
+## Create a Note and Publish 
 
 Click '+' icon next to 'Notes'.
 
