@@ -6,13 +6,13 @@
 - Flatten the nested data with 'unnest' command
 - Extracting values from List (array) data
 - Visualize data with Map
-- Detect and remove outliers with R statistical functions 
+- Detect and remove outliers with R statistical functions
 
 ### Data for this tutorial
 
 This tutorial is based on the MongoDB's standard example database called 'restaurants' collection. If you don't have the data you might want to import it to your MongoDB quickly by downloading the data from [MongoDB website](https://docs.mongodb.org/getting-started/shell/import-data/).
 
-- [MongoDB Import Example Dataset](https://docs.mongodb.org/getting-started/shell/import-data/)
+- [MongoDB Example Dataset Import Instruction](https://docs.mongodb.org/getting-started/shell/import-data/)
 
 ## Import data from Mongo DB
 
@@ -40,7 +40,8 @@ Type the following your Mongo DB connection related parameter values.
 - Collection name
 - Username
 - Password
-- Query
+- Query - you can leave this as default unless you know the specific query.
+- Flatten - you can leave this as default for most of the cases.
 
 ![](images/mongo2.png)
 
@@ -56,17 +57,17 @@ You will see the data showing up in Summary view!
 
 ![](images/mongo4.png)
 
-## Unnest nested data
+## Unnest nested data column
 
 When you look at 'grades' column you will notice that it is a List data type column.
 
-![](images/mongo6.png)
+![](images/mongo4_1.png)
 
-When you go to Table view you can quickly see more data inside this column. It has each restaurant's grade and score per each date.
+When you go to Table view you can quickly see the detail data inside this column. It has each restaurant's grade and score per each date.
 
 ![](images/mongo5.png)
 
-This is basically a table inside the cell (or row). So what we want to do is to unnest this column so that each column - grade, score, date - inside this nested table will become columns of the main data frame. You can achieve this very quickly with 'unnest()' command.
+This is basically a table inside the cell (or row). So what we want to do is to unnest this column so that each column - grade, score, date - inside this nested table will become columns of its own and each row will become its own row. You can Do this very quickly with 'unnest()' command.
 
 Select 'Unnest' operation from '+' dropdown menu.
 
@@ -74,7 +75,7 @@ Select 'Unnest' operation from '+' dropdown menu.
 
 Select 'grade' column from the suggested list and click 'Run' button.
 
-![](images/mongo7.png)
+![](images/mongo7_1.png)
 
 You will notice there are 3 new columns - date, grade, score - added in the table view.
 
@@ -96,7 +97,7 @@ Once you hit 'Run' button, now you will see 'address.coord' column along with th
 
 ![](images/mongo12.png)
 
-This 'address.coord' column looks like it's holding Longitude and Latitude values. If we use 'unnest' command for this column, this will create two rows, one for the first value and another is for the second value. But what we want is to have these two values to have their own columns as Longitude and Latitude columns so that we can use those values to do some analysis or to visualize the data.
+This 'address.coord' column looks like it's holding Longitude and Latitude values. If we use 'unnest' command for this column, this will create two rows, one for the first value and another is for the second value. But what we really want is to have these two values to have their own columns as Longitude and Latitude columns so that we can use those values to do analysis or to visualize the data easier.
 
 There are a few ways to do this, but let's look at probably the most simple way.
 
@@ -137,29 +138,29 @@ And type 1 as position after comma like below.
 mutate(longitude = list_extract(address.coord, 1))
 ```
 
-Create another column inside the same 'mutate()' command like below.
+Add another column inside the same 'mutate()' command to extract 'latitude' value like below. Make sure you set 2 as the position number.
 
 ```
 mutate(longitude = list_extract(address.coord, 1), latitude = list_extract(address.coord, 2))
 ```
 
-And hit 'Run' button, you will see two new columns called 'longitude' and 'latitude' created.
+Hit 'Run' button, you will see two new columns called 'longitude' and 'latitude' created.
 
 ![](images/mongo22.png)
 
 ## Visualize data
 
-Now we have enough data, let's visualize it to understand it even better.
+Now we have enough data, let's visualize it to understand better.
 
 Go to Chart view and select 'Map' as Chart type, assign 'longitude' column to Longitude and 'latitude' column to 'Latitude'.
 
 ![](images/mongo23.png)
 
-But, by looking at 'borough' column in Summary view, we know these restaurants are all in New York.
+The result looks strange. By looking at 'borough' column in Summary view, we know these restaurants are supposed to be all in New York City.
 
 ![](images/mongo24.png)
 
-So it's a bit weird to see those dots displayed all over the world. Let's assign 'borough' column to Color in Map view.
+So it's a bit weird to see those circles displayed all over the world. Let's assign 'borough' column to Color in Map view.
 
 ![](images/mongo25.png)
 
@@ -169,11 +170,11 @@ As you zoom in you will notice that the most data points are actually concentrat
 
 This means, there are some restaurants that have incorrect geo location data.
 
-## Detect and Filter Outliers
+## Detect and Filter Outliers using Stats functions
 
 There are many ways to filter out those incorrect data. Here, let's try to detect those as 'outliers' so that we can filter them out easily.
 
-In order to calculate the outlier values, we want to first calculate the interquartile range, which is the range between 1st quartile (25 percentile) and 3rd quartile (75 percentile). Once we get the interquartile range value then we can decide a threshold value such as 1.5 and multiply that to both 1st and 3rd quartile values in order to get 'upper range' and 'lower range'. So the calculation is something like this. In R, there are functions called 'iqr' for calculating the interquartile range and 'quartile' for calculating the quartile or percentile. So the calculation will look something like below.
+In order to calculate the outlier values, we want to first calculate the interquartile range, which is the range between 1st quartile (25 percentile) and 3rd quartile (75 percentile). Once we get the interquartile range value then we can decide a threshold value such as 1.5 and multiply that to both 1st and 3rd quartile values in order to get 'upper range' and 'lower range'. In R, there is 'iqr' function for calculating the interquartile range and 'quartile' function for calculating the quartile or percentile. So the calculation will look something like below.
 
 ```
 upper_range = iqr(latitude) * 1.5 + quartile(latitude, .75)
@@ -182,13 +183,13 @@ lower_range = quartile(latitude, .25) - iqr(latitude) * 1.5
 
 Once we get these numbers then we can test if each value of 'latitude' column is within this range or outside of this range.
 
-Let's do this step by step with Exploratory.
+Let's do this step by step within Exploratory.
 
 ### Calculate Upper Range for Latitude
 
-Let's go to Table view.
+Let's go to Table view to see the calculated result at each step better.
 
-Click '+' button, and type something like below into the command input.
+Click '+' button to add a new transformation step, and type something like below into the command input.
 
 ```
 mutate(upper_range = IQR(latitude, na.rm=TRUE) * 1.5 + quantile(latitude, 0.75, na.rm=TRUE))
@@ -206,7 +207,7 @@ mutate(lower_range = quantile(latitude, 0.75, na.rm=TRUE) - IQR(latitude, na.rm=
 
 ![](images/mongo-lower-range.png)
 
-### Evaluate if Latitude value is in the range
+### Evaluate if Latitude value is between upper and lower range values
 
 Now, we can evaluate to see each 'latitude' column value is between the upper_range and the lower_range values.
 
@@ -216,15 +217,15 @@ Click '+' button, and type something like below into the command input.
 mutate(within_range = latitude < upper_range & latitude > lower_range)
 ```
 
-The command above will return TRUE if the condition is satisfied, which means a given values is greater than the 'lower_range' value and it's less than 'upper_range' value.
+The command above will return TRUE if the condition is satisfied, which means a given values is between the 'lower_range' value and the 'upper_range' value.
 
 ![](images/mongo-range-test.png)
 
-Now, go back to Chart view and assign this new within_range column to Color.
+Now, go back to Chart view and assign this new 'within_range' column to Color.
 
 ![](images/mongo-range2.png)
 
-Looks like the threshold value we set, which was 1.5, was mild. So let's update the value to something like 3.5 so that we can differentiate only the extreme values.
+Looks like the threshold value we set, which was 1.5, was too mild. So let's update the value to something like 3.5 so that we can differentiate only the extreme values.
 
 Before going back to the previous steps to update, click 'Pin' button to fix the chart (map) to the last step.
 
@@ -238,7 +239,7 @@ Now, zoom in to New York city and you will see all the dots inside the city are 
 
 ![](images/mongo-range5.png)
 
-Once the currently set threshold value, which is 3.5, seems to be working ok, then we can add a new step to filter out the extreme values like below.
+Now that the outlier threshold value setting seems to be working ok, let's add a new step to filter out the extreme values like below.
 
 ```
 filter(within_range)
