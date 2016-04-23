@@ -29,6 +29,7 @@
       * [Google Analytics](import/google-analytics.md)
       * [Google Spreadsheet](import/google-sheet.md)
       * [Github Issues](import/github.md)
+   * [Web Page Table Scraping](import/web-scraping.md)
 * [Data Transformation](data_transform.md)
    * [Select](dplyr/select.md)
    * [Rename](dplyr/rename.md)

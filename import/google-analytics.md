@@ -36,7 +36,6 @@ Now you can find View ID.
 ![](images/google-analytics-tableid4.png)
 
 
-
 ### Select Dimensions and Measures
 
 You can select a list of Dimensions and Measures that you want to see data for from the dropdown list.
