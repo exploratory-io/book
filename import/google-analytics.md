@@ -1,17 +1,28 @@
 # Google Analytics Data
 
-You need to have a few information before you start adding Google Analytics data in Exploratory.
+## 1. Select 'Import Remote Data' from Add New Data Frame menu.
 
-- View ID
-- Dimensions
-- Metrics
+![](images/import-remote-data.png)
 
-## Obtain information for Google Analytics parameters
+Click Google Analytics
 
+![](images/google-analytics-setting1.png)
 
-### 1. Get Table ID (View ID)
+## 2. Set Parameters
 
-You need this information to identify which of your Google Analytics monitoring web sites you want to use. You can get this information from Google Analytics page.
+### Data Frame name
+
+Type a data frame name.
+
+![](images/google-analytics-setting2.png)
+
+### Select View ID
+
+You can select which View data you want to see from the dropdown list.
+
+![]()
+
+If you are not sure about the view name or view ID you can find this information from Google Analytics page.
 
 Go to [Google Analytics web page](https://analytics.google.com), and go to Admin page.
 
@@ -26,43 +37,20 @@ Now you can find View ID.
 
 
 
-### 2. Decide which Dimensions and Measures you need for Google Analytics data
+### Select Dimensions and Measures
 
-You can use [Google Analytics Query Explorer tool](https://ga-dev-tools.appspot.com/query-explorer/) to find the dimensions and measures you would be interested.
+You can select a list of Dimensions and Measures that you want to see data for from the dropdown list.
 
-They are something like this.
-
-**Dimensions**  
-ga:dateHour, ga:pagePath, ga:pageTitle, ga:source, ga:country, ga:operatingSystem, ga:referralPath
-
-**Metrics**  
-ga:users, ga:uniquePageviews,ga:pageviews  
+You might want to take a look at [Query Parameter reference page](https://developers.google.com/analytics/devguides/reporting/core/v3/reference) for more detail on Dimension and Measures. Also, [Google Analytics Query Explorer tool page](https://ga-dev-tools.appspot.com/query-explorer/) is helpful for you to explore different parameters that Google Analytics support.
 
 Google Analytics Query Explorer
 
 ![](images/google-query-explorer.png)
 
-![](images/google-query-explorer2.png)
+### Set Last N days
 
-Take a look at [Query Parameter reference page](https://developers.google.com/analytics/devguides/reporting/core/v3/reference) for the detail about the query parameters.
+The default is set to 30, which means it will extract the last 30 days. You can update this based on your needs.
 
-## Import Google Analytics data
+## 3. Preview and Import
 
-Select 'Import Remote Data' from Add New Data Frame menu.
-
-![](images/import-remote-data.png)
-
-Click Google Analytics
-
-![](images/google-analytics-setting1.png)
-
-Type Data Frame name, and type the following parameters.
-
-- View ID
-- Dimensions
-- Metrics
-- Last N days (Default is 30)
-
-![](images/google-analytics-setting2.png)
-
-Click Preview button to see the data back from Google Analytics. If it looks ok, then you can click 'Import' to import the data into Exploratory. 
+Click Preview button to see the data back from Google Analytics. If it looks ok, then you can click 'Import' to import the data into Exploratory.

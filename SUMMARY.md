@@ -7,6 +7,7 @@
    * [Joining and Merging Data](tutorials/flight3.md)
    * [Statistical Data Analysis](tutorials/flight4.md)
    * [Working with JSON Data](tutorials/yelp.md)
+   * [Working with MongoDB Data](tutorials/mongo.md)
    * [Working with Text Data](tutorials/text-data.md)
    * [Analyze Github Data]
    * [Analyze Time Series Data - Yahoo Finance]
