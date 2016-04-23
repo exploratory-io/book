@@ -43,6 +43,8 @@ Type the following your Mongo DB connection related parameter values.
 - Query - you can leave this as default unless you know the specific query.
 - Flatten - you can leave this as default for most of the cases.
 
+Note: We support the connection with username and password. If you are working with locally installed MongoDB and don't have username and password then please create them in order for Exploratory to be able to access to it. We will support the connection without username/password soon.
+
 ![](images/mongo2.png)
 
 ### 3. Preview and Import
