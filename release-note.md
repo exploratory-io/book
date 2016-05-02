@@ -7,18 +7,20 @@
 - Data Wrangling Command Auto Builder
 - Text Analytics: Text stemming
 - Text Analytics: TF-IDF scoring
-- Text Analytics: SVD, PCA support
 - Text Analytics: Text Match
-- Clustering: K-Means support 
+- Clustering: K-Means support
+- Dimensionality reduction functions SVD / PCA support
 - MySQL database support
 - Fast Data Parsing functions (readr)
 
 ### Enhancements
 
-- Google Analytics: Re-authenticate support
-- Google Spreadsheet: Re-authenticate support
+- Google Analytics: View ID dropdown menu picker support
+- Google Analytics: Switch Account support
+- Google Spreadsheet: Switch Account support
 - Google Spreadsheet: Added File import parameters
-- Google Spreadsheet: Spreadsheet name dropdown support
+- Google Spreadsheet: Spreadsheet name dropdown menu picker support
+- Chart: Text Label field support for Map and Scatterplot
 
 ### Bug fixes
 - JSON import: Updating with a different file doesn't replace the original one in Preview UI
