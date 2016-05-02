@@ -2,16 +2,15 @@
 
 ## R 1.3.0
 
+Released on 5/2/2016
+
 ### New Features
 
 - Data Wrangling Command Auto Builder
-- Text Analytics: Text stemming
-- Text Analytics: TF-IDF scoring
-- Text Analytics: Text Match
-- Clustering: K-Means support
-- Dimensionality reduction functions SVD / PCA support
 - MySQL database support
-- Fast Data Parsing functions (readr)
+- Fast Data Parsing functions (readr) support
+- Time data type support with parse_time (readr) function
+- Text clean up function - str_clean - support 
 
 ### Enhancements
 
