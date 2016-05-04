@@ -50,29 +50,23 @@ And, when you scroll down you can see ARR_DELAY column having NA values and its 
 
 There are many ways to select only the columns you want for your analysis. Let's try some of them.
 
-First, let's drop 'FL_NUM' column'. Click the plus '+' icon and select 'Select' from the dropdown menu.
+First, let's drop 'FL_NUM' column'. Click the down arrow icon next to 'FL_NUM' column name and select 'Delete'.
 
-![](images/flight-select.png)
+![](images/flight-basic2.png)
 
-Once the 'select' command is typed you'll be suggested a list of the relevant functions and columns, and you'll notice the 1st choice as minus '-', which you can use to drop columns. Hit enter to select it.
+You will see 'select()' command generated in the command input area. This is one of the dplyr - a grammar of data wrangling - commands in R and can be used to either keep or delete columns. As you can see there is a minus '-' in front of the column name 'FL_NUM', which means to delete the column.
 
-![](images/flight-select-suggestion.png)
+![](images/flight-basic3.png)
 
-Now, immediately after, you'll be suggested a list of the columns, select FL_NUM.
-
-![](images/flight-select-suggestion2.png)
-
-Once the column is selected click 'Run' button.
-
-![](images/flight-select-run.png)
+Hit 'Run' button.
 
 Now FL_NUM column is gone.
 
-![](images/flight-select.png)
+![](images/flight-basic4.png)
 
-You can either update the existing 'select' command or add a new 'select' step. Here, let's update the existing 'select' step to be something like below.
+Let's remove other columns. There are columns whose names start with "ORIGIN", and you can delete them all together by using one of the convenient functions called 'starts_with()' inside the 'Select' command.
 
-Let's try removing the columns whose names start with "ORIGIN". You can use one of the convenient functions you can use inside select() function called 'starts_with()'. Inside the 'Select' command you can start typing ',' (comma) and select '-' from the suggested list to remove, then select ```starts_with()``` function from the suggested list.
+Type ',' (comma) right after '-FL_NUM', select '-' from the suggested list, then select ```starts_with()``` function from the suggested list.
 
 ![](images/flight-select-starts-with.png)
 
@@ -88,7 +82,7 @@ The final command would be something like below.
 select(-FL_NUM, -starts_with("ORIGIN"))
 ```
 
-The syntax suggestion should list only the relevant operators, functions, and column names for you to pick as you type.
+The syntax suggestion list gives you only the relevant operators, functions, and column names depending on where you are inside each command or function.
 
 
 ## Date operation - Weekday
@@ -97,29 +91,21 @@ You can add custom calculations or expressions to add new columns easily.
 
 There is a column called 'FL_DATE', which is Date data type and has the flight date information. Let's say you want to extract weekday (e.g. Monday, Tuesday, etc.) information out of this data. You can use one of the date related functions called ```wday()```.
 
-Click the plus '+' button, select 'Mutate' operation.
+Select 'Extract' and 'Day of week' from the column header dropdown menu.
 
-![](images/flight-mutate.png)
+![](images/flight-basic5.png)
 
-And, start typing something like below.  Basically, this is creating a new column called 'weekday' and using ```wday()``` function to return week days from 'FL_DATE' column data.
+As you can see in the syntax help that shows up right underneath the command input area, there are a few options to get different results.
 
-```
-mutate(weekday = wday(FL_DATE))
-```
+![](images/flight-basic6.png)
 
-when you hit 'Run' button and scroll down to the bottom of the page you'll see a new column created called 'weekday'.
+In this case, we can go with the default so hit 'Run' button. When you scroll down to the bottom of the page you'll see a new column called 'FL_DATE_wday'.
 
-![](images/flight-weekday.png)
+![](images/flight-basic7.png)
 
-You'll notice, though, that the data is shown as number between 1 and 7. This is because ```wday()``` function gives you integer values from 1 to 7 starting 1 for Monday. Instead of the number, you can get the name of each day like 'Monday' by adding an extra argument called ```label``` to ```wday()``` function like below.
+You can update the column name by typing 'weekday' instead of 'FL_DATE_wday' inside the 'mutate()' command, and hit 'Run' button.
 
-```
-mutate(weekday = wday(FL_DATE, label=TRUE))
-```
-
-This would give you what you would expect for week days like below.
-
-![](images/flight-mutate-wday2_s.png)
+![](images/flight-basic8.png)
 
 One cool thing about this is that the result data type is something called 'ordered factor', which means that when you want to sort on this column it would respect the order of the weekdays starting from Sunday and ending at Saturday. You can quickly check this out by going to Chart view and assign this column 'weekday' to X-Axis. Make sure you uncheck the 'Sort' check box next to Y-Axis to disable Y-Axis level sorting.
 
@@ -132,13 +118,9 @@ Let's find out how many flights per each carrier there are in this data. To do t
 
 ![](images/flight-table-view.png)
 
-Click the plus '+' button to add group_by() command.
+Click the downward arrow icon next to 'CARRIER' column name and select '' the plus '+' button to add group_by() command.
 
-![](images/flight-group-by.png)
-
-And, select 'CARRIER' column from the suggested list.
-
-![](images/flight-group-by-carrier.png)
+![](images/flight-basic9.png)
 
 And, hit 'Run' button.
 
@@ -146,33 +128,25 @@ You would notice now that it is showing '12 Groups' in the data summary informat
 
 ![](images/flight-group-by-carrier2.png)
 
-Once the grouping level is set, let's get the aggregated calculation. We can use ```summarize()``` command to aggregate values and ```n()``` function inside the ```summarize()``` command to count how many records for each 'CARRIER'.
+Once the grouping level is set, let's get the aggregated calculation.
 
-Select 'Summarize' command under '+' button.
+Click the dropdown menu on any column and select 'n'.
 
-![](images/flight-summarize-menu.png)
+![](images/flight-basic10.png)
 
-Start typing something like below.
+'n()' function is basically a count function that counts all the rows for each group.
 
-```
-summarize(count = n())
-```
+Update the column name to be created to be 'counts', then hit 'Run' button.
 
-You would notice you will get a list of the suggested aggregate functions list right after typing '=' like below.
+![](images/flight-basic11.png)
 
-![](images/flight-summarize-agg-function.png)
+You should see only two columns, one is for the grouping column and the other is for this aggregated value column 'counts'.
 
-The suggested list always gives you the most appropriate functions based on the context. In this case, these are the functions that can be used inside ```summarize()``` command.
+Now, let's say you want to find out how many states each carriers are flying to. You can use ```n_distinct()``` function to count unique values of 'DEST_STATE_ABR' column inside the same ```summarize``` command like below.
 
-Once you hit 'Run' button you'll see only two columns, one is for the grouping column and the other is for this aggregated value column 'count'.
+![](images/flight-basic12.png)
 
-![](images/flight-summarize2.png)
-
-Now, let's say you want to find out how many states each carriers are flying into. You can use ```n_distinct()``` function to count unique values of 'DEST_STATE_ABR' column inside the same ```summarize``` command like below.
-
-![](images/flight-summarize3.png)
-
-This will give you something like below. You can see AA (American Airline) is flying out from into 43 States while Hawaiian Airline is flying into only 8 States.
+You can see AA (American Airline) is flying to 43 States while Hawaiian Airline is flying to only 8 States.
 
 The final command is something like below.
 
@@ -183,65 +157,85 @@ summarize(count = n(), number_of_states = n_distinct(DEST_STATE_ABR))
 
 ### Calculate the proportion (percentage / ratio)
 
-For the newly created 'count' column values, let's say you also want to know the proportion (percentage) of the values against the total number. You can use ```sum()``` function to calculate the total and use the result to divide each of the count values. You can do this operation with ```mutate()``` command, which would simply create a new column for doing such calculation. Note that ```summarize()``` would calculate values in an aggregated fashion meaning the result of the ```summarize``` operation will be less number of rows, while ```mutate``` operation doesn't aggregate, instead the result of the operation will keep the same number of the original rows.
+For the newly created 'counts' column values,
+Let's say you also want to know the proportion (percentage) of the 'counts' values against the total counts. You can use ```sum()``` function to calculate the total and use the result to divide each of the 'counts' values. You can do this operation with ```mutate()``` command, which would simply create a new column for doing such calculation for each row. Note that ```summarize()``` would calculate values in an aggregated fashion meaning the result of the ```summarize``` operation will be less number of rows, while ```mutate``` operation doesn't aggregate, instead the result of the operation will keep the same number of the original rows.
 
-Select 'Mutate' from the '+' button.
+Select 'Create an expression' from the dropdown menu next to 'count' column name.
 
-![](images/flight-mutate1.png)
+![](images/flight-basic13.png)
 
-Type 'ratio' as a new column name and type '='.
+You will be suggested for a list of the columns and functions, select 'counts' column.
 
-You will be suggested for a list of the columns and functions, select 'count' column.
+![](images/flight-basic14.png)
 
-Once 'count' column is selected, you will see a list of the operators you can use to create a calculation. Select '/' (division) operator.
+Typing a space right after 'counts', you will see a list of the operators you can use to create a calculation. Select '/' (division) operator.
 
-![](images/flight-mutate2.png)
+![](images/flight-basic15.png)
 
-And, type 'sum(count)' by selecting the function and column from the suggested list, and hit 'Run' button.
+Click 'Open Function Selector' menu at the bottom of the suggestion list.
 
-![](images/flight-mutate3.png)
+![](images/flight-basic16.png)
+
+Select 'Aggregate' from the category dropdown and select 'sum' function, and either double click on the function name or click on 'Insert Function' button at the top.
+
+![](images/flight-basic17.png)
+
+Select 'counts' column from the suggested list.
+
+![](images/flight-basic18.png)
+
+Change the column name to be created to 'ratio', and hit 'Run' button.
+
+![](images/flight-basic19.png)
 
 You can see AA has 16.95 % of the all flights in this data.
 
 
 ### Update existing grouping setting
 
-Now, let's say you want to see which US States each carrier is flying into and how many flights there are for each of States. You can do this very easily by clicking on the 'Grouping' step at the right hand side to go back to this particular step.
+Now, let's say you want to see which US States each carrier is flying to and how many flights there are for each of States. You can do this very easily by clicking on the 'Grouping' step at the right hand side to go back to this particular step.
 
-![](images/flight-grouping.png)
+![](images/flight-basic20.png)
+
 
 And, update the existing command to add DEST_STATE_ABR column right after CARRIER column, and hit 'Run' button.
 
-![](images/flight-grouping2.png)
+![](images/flight-basic21.png)
 
 You would notice that the number of the groups is 384 groups and the grouping levels are set to 'CARRIER' and 'DEST_STATE_ABR'.
 
+![](images/flight-basic22.png)
+
 Now, click the last step 'Mutate' in the right hand side.
 
-![](images/flight-mutate4.png)
+![](images/flight-basic23.png)
 
 You would notice that there are now 384 rows instead of the 14 rows like before.
 
-This is because now each carrier has rows for all the States it's flying into. And the aggregated calculations like 'count', 'number_of_states', 'ratio' are re-calculated automatically based on the previous grouping setting with ```group_by()``` function. The 'ratio' column is now showing the ratio against each carrier group instead of the entire total. You can go to Chart view to see what's happening visually.
+This is because now each carrier has rows for all the States it's flying to. And the aggregated calculations like 'count', 'number_of_states', 'ratio' have been just re-calculated automatically when you clicked on the 'Mutate' step to reflect the change with 'Grouping' step. The 'ratio' column is now showing the ratio against each carrier group instead of the entire total. You can visualize this to understand it better in Chart view.
 
-Within an each bar, which is representing each carrier, you can see the ratio based on the number of flights for each US States.
+Each bar is representing each carrier, and you can see the ratio of US States within each carrier.
 
-![](images/flight-ratio-chart.png)
+![](images/flight-basic24.png)
 
 
 ### Window Function - Rank
 
 Now, let's do one last thing. This is a pretty cool and strong capability. Some people call this 'Window' function.
 
-Let's say you want to see the ranking number for each state within each carrier based on the 'count' numbers. To do this, you can use 'min_rank()' function to return the ranking number. You can update the existing mutate() command like below.
+Let's say you want to see the ranking numbers for each state within each carrier based on the 'counts' values. To do this, you can use 'min_rank()' function to return the ranking number. You can either update the existing mutate() command like below.
 
 ```
 mutate(ratio = count / sum(count) * 100, rank = min_rank(count))
 ```
 
+Or, simply select 'min_rank' function from the dropdown menu of 'count' column header in Table view.
+
+![](images/flight-basic25.png)
+
 After you hit 'Run' button you'll get something like below.
 
-![](images/flight-rank.png)
+![](images/flight-basic26.png)
 
 But, the generated rank values are based on the ascending order (small number to big number). In this case, we want to consider that the bigger the 'count' number is the smaller the ranking number should be. So you can use 'desc' function to wrap around 'count' column to make the order reversed like below.
 
@@ -251,29 +245,35 @@ mutate(ratio = count / sum(count) * 100, rank = min_rank(desc(count)))
 
 After you hit 'Run' button you'll get something like below. You can see FL (Florida) is the 2nd and CA (California) is the 4th for American Airline carrier.
 
-![](images/flight-rank2.png)
+![](images/flight-basic27.png)
 
-There are a few variations of the ranking functions, and 'min_rank()' is one of them. You might want to go to Chart view to understand this visually.
+There is another similar ranking function called 'dense_rank', we can quickly see the difference between them by using Chart. But before going to Chart view, let's filter to keep only 'DL' (Delata Airline) carrier.
 
-Click on Chart button to go to Chart view. Add a new transformation step with ```filter()``` command to make this simple. You can type something like below to keep only the data for a carrier 'DL' (Delta Airline).
+Select '==' (equal to) operator under 'Filter' operation from the dropdown menu of 'CARRIER' column header.
 
-```
-filter(CARRIER  == "DL")
-```
+![](images/flight-basic28.png)
 
-Now, assign 'rank' column to both X-Axis and Y-Axis, and 'ORIGIN_STATE_ABR' column to Color.
+Select 'DL' from the dropdown menu in the command input area.
 
-![](images/flight-rank3.png)
+![](images/flight-basic29.png)
+
+Once you hit 'Run' button, then go to Chart view.
+
+Assign 'rank' column to both X-Axis and Y-Axis, and 'DEST_STATE_ABR' column to Color.
 
 As you see, the rank 26th has two states 'AL' and 'OR' because they have the equal 'count' values. In this case 'min_rank()' function keeps the next rank vacant, that is the 27th, and resume the next rank from the 28th. If you don't want to have this vacant ranks, then you can use 'dense_rank()' instead.
 
+![](images/flight-basic30.png)
+
 Before going back to the previous 'Mutate' step, click 'Pin' button to keep the chart pinned down to this 'Filter' step.
 
-![](images/flight-chart-pin.png)
+![](images/flight-basic31.png)
 
 Then, go to the 'Mutate' step and replace ```min_rank()``` with ```dense_rank()```, and hit 'Run' button. You will see a chart view like below. Now there is no vacant rank number.
 
-![](images/flight-rank4.png)
+![](images/flight-basic32.png)
+
+## Conclusion  
 
 As you have seen, by using the combination of group_by(), summarize(), and mutate() flexibly you can do many amazing things quickly with Exploratory.
 
