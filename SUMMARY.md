@@ -4,7 +4,6 @@
 * [Tutorials (English)](tutorials/intro.md)
    * [Quick Start Guide](tutorials/quick-start.md)
    * [Analyze Data - Basic](tutorials/flight.md)
-   * [Filtering Data in Many Ways](tutorials/flight2.md)
    * [Joining and Merging Data](tutorials/flight3.md)
    * [Statistical Data Analysis](tutorials/flight4.md)
    * [Working with JSON Data](tutorials/yelp.md)
