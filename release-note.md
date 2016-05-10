@@ -1,5 +1,59 @@
 # Release Note
 
+## R 1.4.0
+
+Released on 5/9/2016
+
+### New Features
+
+- Support Correlation calculation with Base R (stats pkg) cor() function.
+
+   ```
+   calc_cor(ARR_DELAY, DPE_DELAY, DISTANCE)
+
+   > This will produce correlation values for each pair.
+   ```
+
+- Text Matching function - str_count_all  
+  Note that this is not from 'stringr' package.
+
+   ```
+   str_count_all("I ate banana, apple, and peach yesterday, and banana, peach today.", patterns=c("apple", "banana"), remove.zero=TRUE)   
+
+   > Returns a list column of data frames with 'apple' and 'banana' columns.
+   ```
+
+- Twitter Search Data Support
+- Added Heatmap and Contour chart types
+
+
+### Enhancements
+- Clustering function improvement  
+  Now you can specify which columns to use for building the clustering with Base R (stats pkg) kmeans() function.
+
+   ```
+   do_kmeans(ARR_DELAY, DEP_DELAY, DISTANCE, groups = 5)
+   ```
+- Scatter plot: the circle sizes are now scaled better based on the values assigned to Size shelf
+- Local data types are organized and presented better in Data Import Dialog
+- Syntax Suggestion: Now it supports mutate_each / summarize_each functions with funs() for the syntax suggestion and help.
+- Syntax Help: the help text and table are formatted much better now.
+- Command builder menu for the following data types are supported. : difftime, interval, time, period
+- Hot Key support - 'Return (Enter)' key can be used instead of clicking on OK button (e.g. Login UI, Create a new project dialog, etc)
+- Table: You can click rows to highlight now.
+- Chart: Line chart used to be starting from the minimal value on Y-axis, but now it starts from 0 just like Bar chart.
+
+### Bug fixes
+- Can't create a new project or open an existing project in some conditions.
+- Can't create a new project when Microsoft R Open is installed.
+- Throwing an error when importing data after having a problem creating projects.
+- Couldn't start the app on some Mac PCs.
+- Selecting text in Command Input Area was unstable, now it’s much better.
+- Column names with backticks were not highlight-ed in Command Input Area.
+- 'Get Data' button will show Table view instead of Raw data for Text files.
+- Suggestion list doesn't show up after manually typing minus '-'.
+
+
 ## R 1.3.0
 
 Released on 5/2/2016
@@ -10,7 +64,7 @@ Released on 5/2/2016
 - MySQL database support
 - Fast Data Parsing functions (readr) support
 - Time data type support with parse_time (readr) function
-- Text clean up function - str_clean - support 
+- Text clean up function - str_clean - support
 
 ### Enhancements
 
