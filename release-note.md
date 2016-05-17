@@ -1,5 +1,32 @@
 # Release Note
 
+## R 1.4.1
+
+Released on 5/16/2016
+
+### New Features
+
+- Introducing the broom package's tidy / glance / augment functions as data wrangling grammar
+- Support 'model' and 'source data' type columns so that you can build models with functions like do_lm, do_glm, do_kmeans, and store them inside the data frame. This makes it possible to call broom's tidy functions to access the models' statistical summary information or augment their scored data with the original data columns.
+
+### Enhancements
+
+- Installer: It checks if Git is installed under /usr/bin and /usr/local/bin. Unless it's older than 2.0 it won't try to install or upgrade. Please check FAQ page for the detail on the version check logic and requirements for both R and Git.
+- Installer: It will install required R packages into Exploratory's repository location, instead of into the R's system location.
+- Chart: Heatmap / Contour - introducing an option to choose whether NA as NA or zero.
+- Chart: You can add margin (space) at X-axis and Y-axis so that text label can be showing up better.
+- Improvements for model building and inspection for Linear Regression (lm), K-means clustering (kmeans), and Generalized Linear Regression (glm).
+- Table: You can select # of rows to display in the table. The options are 200 (default), 500, 1000.
+- Excel Data: It shows a dropdown list so that you can select a sheet name instead of needing to type the name.
+- Text File (Delimited / CSV) Data: You can select ".csv", ".text", ".txt", ".tsv", ".tab" file types in File picker now.
+
+### Bug fixes
+
+- R Script Data - couldn't click Enter key to add a new line.
+- Table: Row highlight (gray color band) was staying even refreshing table view - Done
+- Syntax Suggestion: Instead of select minus '-' from the suggested list, when you typed minus ‘-’ in select() command it didn't show a suggested list of the columns.
+
+
 ## R 1.4.0
 
 Released on 5/9/2016
@@ -28,6 +55,7 @@ Released on 5/9/2016
 
 
 ### Enhancements
+
 - Clustering function improvement  
   Now you can specify which columns to use for building the clustering with Base R (stats pkg) kmeans() function.
 
@@ -44,6 +72,7 @@ Released on 5/9/2016
 - Chart: Line chart used to be starting from the minimal value on Y-axis, but now it starts from 0 just like Bar chart.
 
 ### Bug fixes
+
 - Can't create a new project or open an existing project in some conditions.
 - Can't create a new project when Microsoft R Open is installed.
 - Throwing an error when importing data after having a problem creating projects.
