@@ -2,11 +2,11 @@
 
 ## How can I report issues, bugs, or enhancement requests ?
 
-Please feel free to contact support@exploratory.io with any question! We would love to hear any feedback!  
+Please feel free to contact [support@exploratory.io](mailto:support@exploratory.io) with any question! We would love to hear any feedback!  
 
 ## What is the best way to keep myself updated with the news ?
 
-Please follow @kanaugust at Twitter or subscribe our blog: http://blog.exploratory.io .
+Please follow [@KanAugust](https://twitter.com/KanAugust) at Twitter or subscribe our blog: http://blog.exploratory.io .
 
 ## Is Mac OS X supported ?
 
