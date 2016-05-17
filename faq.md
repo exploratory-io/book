@@ -1,3 +1,5 @@
+# FAQ - Frequently Asked Questions
+
 ## How can I report issues, bugs, or enhancement requests ?
 
 Please feel free to contact support@exploratory.io with any question! We would love to hear any feedback!  
