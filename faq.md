@@ -36,6 +36,12 @@ No. we check the R version that is installed on your pc, but as long as it is 3.
 
 Please download Exploratory Desktop by simply clicking on Download button on the download page. It will install R 3.3 as part of the initial setup. You will be asked to enter your Mac OS admin username and password, this is because R installation would require the system administrator's privilege. We don't capture this information, it's completely done by R installer itself.
 
+## I have installed R with Homebrew on Mac OS X, does that work ?
+
+Unfortunately the configuration of R installed with Homebrew is not supported currently. Exploratory Desktop requires a set of R packages to make your data wrangling and analysis more efficient from the day one. To install those packages we use the binary versions of the packages, which assume that R is installed with the standard installer with '.pkg' from CRAN. If you would like to use Exploratory Desktop, the workaround is to uninstall R with Homebrew with the command below, then restart Exploratory Desktop, which will install R 3.3 with the standard installer from CRAN.
+
+```> brew uninstall r ```
+
 ## What version of R is required ?
 
 - R 3.2.0 or greater for Exploratory Desktop for R (rstats) 3.2 version.
@@ -56,3 +62,11 @@ The recent version of Exploratory Desktop (1.4.1 or later) installs them into Ex
 ## Can I add my preferred R packages ?
 
 We have a plan to support this. If you have such requirement please contact support@exploratory.io . We would love to hear your requirement and discuss how to make it possible.
+
+## I have very sensitive data. Where my data is stored ?
+
+Once you import your data into Exploratory it stays inside Exploratory Desktop's repository that is located on your PC, under ~/.exploratory. Your data stays on your PC and never leave your PC.
+
+## Can I change my username ?
+
+We are not currently supporting it, but we will in future release. If you need it to be changed now, please contact support@exploratory.io, we can manually change it at the server for you.

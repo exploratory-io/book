@@ -1,5 +1,25 @@
 # Release Note
 
+## R 1.4.2
+
+Released on
+
+### New Features
+
+tidytext
+ip address to country
+
+
+### Enhancements
+
+- Chart: Support continuous values (numeric data type) for Color for Scatterplot
+
+- Now the generated R script include R data source script content 
+
+### Bug fixes
+
+
+
 ## R 1.4.1
 
 Released on 5/16/2016
