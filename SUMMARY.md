@@ -67,3 +67,5 @@
    * [Complete](tidyr/complete.md)
    * [Expand](tidyr/expand.md)
    * [Nest](tidyr/nest.md)
+ * [Setup](setup.md)
+   * [How to disable McAfee virus scan](howto/stopmcafee.md)
