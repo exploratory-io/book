@@ -1,23 +1,32 @@
 # Release Note
 
+
 ## R 1.4.2
 
-Released on
+Released on 5/24/2016
 
 ### New Features
 
-tidytext
-ip address to country
+- Text data wrangling with the tidytext package, which makes it easy to work with text data in a tidy format.
+
+  With this tidytext package introduction, we are introducing unnest_tokens and pair_counts functions from the tidytext package as data frame level functions and get_sentiment and get_stopwords functions from the exploratory package as mutate / filter level functions.
+
+- Introducing 'ip_to_country' function from the rgeolocate package to convert from IP addresses to country names.
+- Introducing 'countrycode' function from the countrycode package to map among all the combinations of country names and country codes including ISO2 and ISO3 letters and numbers.
+- Introducing 'calc_cor_cat' function from the exploratory package to calculate correlations between all the combinations of category column values based on a tidy data. There is also another function 'calc_cor_var', which calculate correlations between all the combinations of a given set of columns (variables).
+- Introducing a new chart type 'Choropleth - Map' which would visualize the data based on either US State names or World country names.
 
 
 ### Enhancements
 
-- Chart: Support continuous values (numeric data type) for Color for Scatterplot
-
-- Now the generated R script include R data source script content 
+- Chart: Support continuous values (numeric data type) for Color for Scatterplot chart.
+- Now the generated R script include R script when the data is 'R Script as Data'
+- Table: Now it can show all the columns even when there are more than 100 columns.
+- Support the syntax suggestion for building formula for lm() and glm() functions.
 
 ### Bug fixes
 
+- REST API Data Source: Now it can bring all the elements even when there are more than 50 items.
 
 
 ## R 1.4.1
