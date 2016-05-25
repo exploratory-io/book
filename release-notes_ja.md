@@ -7,7 +7,7 @@ Released on 5/16/2016
 ### 新機能
 
 - データ分析のためのbroomパッケージのtidy, glance, augment関数が導入されました。
-- 自分でdo_lm, do_glm, do_kmeansのような関数を使ってモデルを作ったり、データフレームの中にそのモデルを保存できるようにするための、モデルやソースデータタイプカラムのサポートをしました。This makes it possible to call broom's tidy functions to access the models' statistical summary information or augment their scored data with the original data columns.
+- 自分でdo_lm, do_glm, do_kmeansのような関数を使ってモデルを作ったり、データフレームの中にそのモデルを保存できるようにするための、モデルやソースデータタイプカラムのサポートをしました。これで、モデルの統計的なデータの概要の情報にアクセスするためにbroomの関数を呼ぶことや、元のデータカラムと共にデータを増やすこともできるようになりました。
 
 ### 改善
 
@@ -33,7 +33,7 @@ Released on 5/9/2016
 
 ### 新機能
 
-- Rのstatsパッケージであるcor()関数に基づいたCorrelation計算のサポート
+- Rのstatsパッケージであるcor()関数に基づいたCorrelation計算のサポートをしました。
 
    ```
    calc_cor(ARR_DELAY, DPE_DELAY, DISTANCE)
@@ -41,7 +41,7 @@ Released on 5/9/2016
    > This will produce correlation values for each pair.
    ```
 
-- Text Matching関数 - str_count_all
+- 文字列一致関数 - str_count_all
   ただし、これは、stringrパッケージからではありません。
 
    ```
@@ -75,7 +75,7 @@ Released on 5/9/2016
 
 - 稀に、新しいプロジェクトを作ったり、既存のプロジェクトを開けなかった問題を修正しました。
 - Microsoft Rがインストールされているときに、新しいプロジェクトが作れなかった問題を修正しました。
-- Throwing an error when importing data after having a problem creating projects.
+- プロジェクトを作っるときに問題があったあと、データをインポートしようとするとエラーが生じる問題を修正しました。
 - いくかのMac PCでアプリケーションを起動できない問題を修正しました。
 - コマンド入力エリアでテキストを選ぶ動作の安定性が増しました。
 - バッククォートを持ったカラム名もコマンド入力エリアでハイライトされるようになりました。
@@ -89,7 +89,7 @@ Released on 5/2/2016
 
 ### 新機能
 
-- データ分析コマンド自動生成機能が実装されました。
+- データ分析のためにコマンドビルダーが実装されました。
 - MySQLデータベースをサポートしました。
 - Fast Data Parsing functions (readr) をサポートしました。
 - parse_time (readr) 関数によるTime dataタイプをサポートしました。
