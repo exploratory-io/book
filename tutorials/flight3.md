@@ -10,7 +10,7 @@
 
 We are going to create a new data frame by importing the following CSV file below.
 
-- [airline_delay_2015_01](https://www.dropbox.com/s/fpmqzjan5us91yg/airline_delay_2015_01.csv?dl=0)
+- [airline_delay_2015_01](https://www.dropbox.com/s/iz3fibz91liwct9/airline_delay_2015_01.csv?dl=0)
 
 Inside the same project or a new project, you can click a plus '+' icon next to 'Data Frame' text in the left side pane and select 'Import Local Data' menu.
 
@@ -42,19 +42,21 @@ You can see the two letters code and the carrier name mapping. Instead of manual
 
 ### Scrape and Import
 
-To scrape the data and import, you can create a new data frame by selecting 'Write custom R script' from the dropdown menu under '+' sign right next to 'Data Frames' text in lefthand side pane.
+To scrape the data and import, you can select 'Import Remote Data' from the dropdown menu under '+' sign right next to 'Data Frames' text in lefthand side pane,
 
 ![](images/scrape-web-data-menu.png)
 
-In the dialog, give it a name like 'carrier_lookup' and type the URL below into URL input field.
+and select 'Scrape Web Page' menu.
+
+In the opened dialog, give it a name like 'carrier_lookup' and type the URL below into URL input field.
 
 http://aspmhelp.faa.gov/index.php/ASQP:_Carrier_Codes_and_Names
 
-And click 'Preview' button.
+And click 'Get Data' button.
 
 ![](images/flight-carrier-code.png)
 
-The preview data looks good. Hit 'Import' button to import this data into Exploratory.
+The preview data looks good. Hit 'Save' button to import this data into Exploratory.
 
 You can see 14 rows of the data that has just been imported.
 
@@ -124,7 +126,9 @@ If you're interested in other types of Join, take a look at our [Join document p
 
 ## Scrape another data from Web
 
-To scrape the data and import, you want to do basically the same thing as you did before. Create a new data frame by selecting 'Write custom R script' from the dropdown menu under '+' sign right next to 'Data Frames' text in lefthand side pane.
+In the opened dialog, give it a name like 'carrier_lookup' and type the URL below into URL input field.
+
+To scrape the data and import, you want to do basically the same thing as you did before. You can select 'Import Remote Data' from the dropdown menu under '+' sign right next to 'Data Frames' text in lefthand side pane, and select 'Scrape Web Page' menu.
 
 ![](images/scrape-web-data-menu.png)
 
@@ -132,11 +136,11 @@ In the dialog, give it a name like 'carrier_lookup2' and type the URL below into
 
 http://www.airfarewatchdog.com/pages/3799702/airline-letter-codes/
 
-And click 'Preview' button.
+And click 'Get Data' button.
 
 ![](images/flight-carrier-code5.png)
 
-The preview data looks good. Hit 'Import' button to import this data into Exploratory.
+The preview data looks good. Hit 'Save' button to import this data into Exploratory.
 
 You can see 95 rows of the data that has just been imported.
 
