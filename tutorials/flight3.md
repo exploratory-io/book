@@ -10,7 +10,7 @@
 
 We are going to create a new data frame by importing the following CSV file below.
 
-- [airline_delay_2015_01](https://www.dropbox.com/s/iz3fibz91liwct9/airline_delay_2015_01.csv?dl=0)
+- [airline_delay_2015_01](http://download.exploratory.io/data/airline_delay_2015_01.csv)
 
 Inside the same project or a new project, you can click a plus '+' icon next to 'Data Frame' text in the left side pane and select 'Import Local Data' menu.
 
