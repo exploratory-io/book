@@ -3,7 +3,7 @@
 
 ## R 1.4.2
 
-Released on 5/24/2016
+Released on 5/26/2016
 
 ### New Features
 
