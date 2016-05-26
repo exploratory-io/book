@@ -1,5 +1,29 @@
 # リリースノート
 
+## R 1.4.2
+
+Released on 5/26/2016
+
+### 新機能
+
+- テキストデータ分析のためのtidytextパッケージが導入されました。これによって、テキストデータをtidyに扱うことができるようになりました。また、このtidytextパッケージの導入により、tidytextパッケージのunnest_tokens関数とpair_counts関数がデータフレームレベルの関数として、また、exploratoryパッケージからget_sentiment関数とget_stopwords関数がフィルターレベルの関数として使えるようになりました。
+- rgeolocateパッケージから'ip_to_country'関数が導入されました。これによって、IPアドレスから国名への変換ができるようになりました。
+- countrycodeパッケージから'countrycode'関数が導入されました。これにより、国名、2文字、3文字、または3桁の国名コード間の変換ができるようになりました。
+- exploratoryパッケージから'calc_cor_cat'関数が導入されました。これにより、tidy形式になっているすべての列の値に対しての相関を計算できるようになりました。また、データフレームの指定された全ての列に対する相関を計算する'calc_cor_var'関数も同時に導入されました。
+- 新たなチャートのタイプとして、世界地図およびアメリカ州地図の階級区分図(Choropleth Map)が追加されました。
+
+### 改善
+
+- チャートの散布図(Scatterplot)において、数値型の列を色に指定できるようになりました。
+- 'R Script as Data'データソースで使われているデータ生成のためのRスクリプトの部分が、自動生成されるRスクリプトに含まれるようになりました。
+- テーブル表示で100列以上のデータを表示できるようになりました。
+- lm関数やglm関数の書式をサポートする機能が追加されました。
+
+### バグ修正
+
+- REST APIデータソースおよびJSONデータソースのインポート画面において、サブフォルダに50個以上の列が表示できるようになりました。
+
+
 ## R 1.4.1
 
 Released on 5/16/2016
@@ -7,7 +31,7 @@ Released on 5/16/2016
 ### 新機能
 
 - データ分析のためのbroomパッケージのtidy, glance, augment関数が導入されました。
-- 自分でdo_lm, do_glm, do_kmeansのような関数を使ってモデルを作ったり、データフレームの中にそのモデルを保存できるようにするための、モデルやソースデータタイプカラムのサポートをしました。This makes it possible to call broom's tidy functions to access the models' statistical summary information or augment their scored data with the original data columns.
+- 自分でdo_lm, do_glm, do_kmeansのような関数を使ってモデルを作ったり、データフレームの中にそのモデルを保存できるようにするための、モデルやソースデータタイプカラムのサポートをしました。これで、モデルの統計的なデータの概要の情報にアクセスするためにbroomの関数を呼ぶことや、元のデータカラムと共にデータを増やすこともできるようになりました。
 
 ### 改善
 
@@ -33,7 +57,7 @@ Released on 5/9/2016
 
 ### 新機能
 
-- Rのstatsパッケージであるcor()関数に基づいたCorrelation計算のサポート
+- Rのstatsパッケージであるcor()関数に基づいたCorrelation計算のサポートをしました。
 
    ```
    calc_cor(ARR_DELAY, DPE_DELAY, DISTANCE)
@@ -41,7 +65,7 @@ Released on 5/9/2016
    > This will produce correlation values for each pair.
    ```
 
-- Text Matching関数 - str_count_all
+- 文字列一致関数 - str_count_all
   ただし、これは、stringrパッケージからではありません。
 
    ```
@@ -75,7 +99,7 @@ Released on 5/9/2016
 
 - 稀に、新しいプロジェクトを作ったり、既存のプロジェクトを開けなかった問題を修正しました。
 - Microsoft Rがインストールされているときに、新しいプロジェクトが作れなかった問題を修正しました。
-- Throwing an error when importing data after having a problem creating projects.
+- プロジェクトを作っるときに問題があったあと、データをインポートしようとするとエラーが生じる問題を修正しました。
 - いくかのMac PCでアプリケーションを起動できない問題を修正しました。
 - コマンド入力エリアでテキストを選ぶ動作の安定性が増しました。
 - バッククォートを持ったカラム名もコマンド入力エリアでハイライトされるようになりました。
@@ -89,7 +113,7 @@ Released on 5/2/2016
 
 ### 新機能
 
-- データ分析コマンド自動生成機能が実装されました。
+- データ分析のためにコマンドビルダーが実装されました。
 - MySQLデータベースをサポートしました。
 - Fast Data Parsing functions (readr) をサポートしました。
 - parse_time (readr) 関数によるTime dataタイプをサポートしました。
