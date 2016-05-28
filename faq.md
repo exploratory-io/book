@@ -20,7 +20,33 @@ We are working on it to support Windows 10 and 8 first. Can't promise you an exa
 
 We have a plan to support Linux platform as well.
 
-## Why are you asking my password for OS X ?
+## I'm having a network connection issue, what should I do?
+
+Exploratory Desktop requires an internet connection for authenticating the users and downloading the required software like Git and R if you don't have them installed yet. As long as the initial setup is done you can still work with offline mode. If you are offline
+
+If you use a proxy server to connect to the internet, set your proxy server information in ‘userconf.json’ file, which can be found at ‘~/.exploratory’ for Mac OS X or ‘<your_user_home_folder>/.exploratory’ for Windows, as follows.
+
+**Set a proxy server:**
+
+```
+{
+   "user": "dummy1",
+   "http_proxy": "http://<hostname>:<port>"
+}
+```
+
+**Set a proxy server with username and password:**
+
+```
+{
+   "user": "dummy1",
+   "http_proxy": "http://<username>:<password>@<hostname>:<port>"
+}
+```
+
+Once the proxy server information is set, save the file and restart Exploratory Desktop. If you still encounter the network issue please contact at support@exploratory.io .
+
+## Why are you asking my password for OS X at the initial installation time?
 
 If you don't have R and/or Git previously installed you will be asked to enter your Mac OS admin username and password. This is because R and Git installation require the system administrator's privilege. We don't see or capture this information, it's completely done by R and Git installers and that's outside of Exploratory. ;)
 
@@ -40,7 +66,9 @@ Please download Exploratory Desktop by simply clicking on Download button on the
 
 Unfortunately the configuration of R installed with Homebrew is not supported currently. Exploratory Desktop requires a set of R packages to make your data wrangling and analysis more efficient from the day one. To install those packages we use the binary versions of the packages, which assume that R is installed with the standard installer with '.pkg' from CRAN. If you would like to use Exploratory Desktop, the workaround is to uninstall R with Homebrew with the command below, then restart Exploratory Desktop, which will install R 3.3 with the standard installer from CRAN.
 
-```> brew uninstall r ```
+```
+> brew uninstall r
+```
 
 ## What version of R is required ?
 
