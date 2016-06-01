@@ -22,25 +22,19 @@ We have a plan to support Linux platform as well.
 
 ## I'm having a network connection issue, what should I do?
 
-Exploratory Desktop requires an internet connection for authenticating the users and downloading the required software like Git and R if you don't have them installed yet. As long as the initial setup is done you can still work with offline mode. If you are offline
+Exploratory Desktop requires an internet connection for authenticating the users and downloading the required software like Git and R if you don't have them installed yet. Note that as long as the initial setup is done you can still work with offline mode.
 
-If you use a proxy server to connect to the internet, set your proxy server information in ‘userconf.json’ file, which can be found at ‘~/.exploratory’ for Mac OS X or ‘<your_user_home_folder>/.exploratory’ for Windows, as follows.
+If you use a proxy server to connect to the internet, as default it automatically tries to detect the proxy server and connect through the server. This should work for most of the times, but if your proxy server requires username and password then you need to set them in a configuration file 'userconf.json', which can be found at ‘~/.exploratory’ for Mac OS X or ‘<your_user_home_folder>/.exploratory’ for Windows as follows.
 
 **Set a proxy server:**
 
 ```
 {
-   "user": "dummy1",
-   "http_proxy": "http://<hostname>:<port>"
-}
-```
-
-**Set a proxy server with username and password:**
-
-```
-{
-   "user": "dummy1",
-   "http_proxy": "http://<username>:<password>@<hostname>:<port>"
+   "user": "dummy",
+   "server":"<your_proxy_server>",
+      "port":<port_number>,
+      "user":"<username>",
+      "password":"<password>"
 }
 ```
 
