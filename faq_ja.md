@@ -35,16 +35,12 @@ Exploratoryは、ユーザーの認証を行ったり、もしあなたがまだ
 ```
 {
    "user": "dummy1",
-   "http_proxy": "http://<hostname>:<port>"
-}
-```
-
-**Set a proxy server with username and password:**
-
-```
-{
-   "user": "dummy1",
-   "http_proxy": "http://<username>:<password>@<hostname>:<port>"
+   "proxy": {
+     "server": "<your_proxy_server>",
+     "port": <port_number>,
+     "user": "<username>",
+     "password": "<password>"
+   }
 }
 ```
 
