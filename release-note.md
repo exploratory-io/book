@@ -1,5 +1,22 @@
 # Release Note
 
+## R 1.4.3
+
+Released on 5/26/2016
+
+### Enhancements
+
+- Support a custom folder location for installing R packages other than the default of the Exploratory Desktop's repository.
+- Proxy server support for authentication, downloading required software, and R connections. It now detects it automatically. When it requires username / password, users can add them into a configuration file. See [FAQ](https://exploratory.io/faq) for the detail.
+- CSV / Delimited Files Import: Supports non-American number formatted data with the new parameter setting for decimal and thousand marks.
+
+### Bug fixes
+
+- Get stuck with white screen or loading UI after the initial launch of the app.
+- Can't open a project when my home directory path had a space.
+- Chart: Can't assign non-ASCII characters in the column names to X/Y-Axis, Color.
+- Chart: Boxplot doesn't render when the column assinged to X-Axis has NAs.
+
 
 ## R 1.4.2
 
