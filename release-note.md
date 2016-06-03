@@ -1,5 +1,27 @@
 # Release Note
 
+## R 1.4.5
+
+Released on 6/2/2016
+
+### Enhancements
+
+- Support a dropdown selection to select a data frame for RDS data import.
+- Added 'Get Data' button for JSON data import dialog so that you can reload the file easily.
+
+
+### Bug fixes
+
+- The data doesn't get refreshed even after re-selecting the local data file with a same name.
+- Chart: Data Popup - the color values are shown duplicated.
+
+## R 1.4.4
+
+### Bug fixes
+
+- The download of R and Git didn't start for Windows 7.
+
+
 ## R 1.4.3
 
 Released on 5/26/2016
