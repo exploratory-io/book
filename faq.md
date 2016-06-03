@@ -66,6 +66,10 @@ Unfortunately the configuration of R installed with Homebrew is not supported cu
 > brew uninstall r
 ```
 
+## I'm on Windows and getting error stating "Could not install R" or "Could not install Git".
+
+If you change the installation path for R and Git during the installation you will see these errors. We support only the default location for the installation of R and Git for now. Please restart Exploratory Desktop app and you will be asked to install them again. This time, please select the default location. We are working on supporting the different location in the next release though. 
+
 ## What version of R is required ?
 
 - R 3.2.0 or greater for Exploratory Desktop for R (rstats) 3.2 version.
