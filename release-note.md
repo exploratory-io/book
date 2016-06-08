@@ -2,7 +2,7 @@
 
 ## R 1.4.6
 
-Released on 6/2/2016
+Released on 6/6/2016
 
 ### Enhancements
 
@@ -13,7 +13,7 @@ Released on 6/2/2016
 
 ### Bug fixes
 
-- Deleted projects don't disappear untile restarting the app 
+- Deleted projects don't disappear untile restarting the app
 
 ## R 1.4.5
 
