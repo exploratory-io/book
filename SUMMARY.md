@@ -69,3 +69,4 @@
    * [Nest](tidyr/nest.md)
 * [Setup](setup.md)
    * [How to disable McAfee virus scan](howto/stopmcafee.md)
+* [Keyboard shortcuts](shortcut.md)
