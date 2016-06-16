@@ -48,7 +48,9 @@ If you don't have R and/or Git previously installed you will be asked to enter y
 
 ## I have already installed R (rstats) 3.2 installed and don't want to upgrade to 3.3 right now.
 
-Good news! We have prepared one variation of Exploratory Desktop for Mac for R 3.2. Please click 'Are you R 3.2 users?' link right below the download button on the download page. This will make the download button to download Exploratory Desktop for R 3.2. This version will check your R version, and as long as it is 3.2.0 or greater then it won't install any R.
+We have prepared one variation of Exploratory Desktop for Mac and Windows for R 3.2. Please click 'Are you R 3.2 users?' link right below the download button on the download page. This will make the download button to download Exploratory Desktop for R 3.2. This version will check your R version, and as long as it is 3.2.0 or greater then it won't install any R.
+
+Update: The latest version of Exploratory Desktop requires R 3.3. If you would like to try the latest you need to upgrade your R to 3.3 version. If you need to stay with R 3.2 for some circumstances you can try Exploratory Desktop 1.4.6.
 
 ## I have already installed R (rstats) 3.3, are you going to install another R ?
 
