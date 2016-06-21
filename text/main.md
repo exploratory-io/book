@@ -87,11 +87,7 @@ _Reducing the number of the dimensions (keywords) to 2 and returning the 'varian
 |             1|  3.534991|
 |             2|  2.697623|
 
-**Tags**   
-vectorize, reduced dimension
 
-**Category**   
-vectorize, dimension
 
 ## build_lm
 
@@ -124,11 +120,7 @@ Data frame
 build_lm(ARR_DELAY ~ DEP_DELAY + DISTANCE)    
 _Returns a column of lm model which predicts ARR_DELAY from DEP_DELAY and DISTANCE. It also returns a column of original data. You can use augment(.model, .source.data), tidy(.model) and glance(.model) to see information in those models._
 
-**Tags**   
-Linear Regression Model, coefficients, correlation
 
-**Category**   
-Model
 
 ## build_glm
 
@@ -164,11 +156,7 @@ build_glm(```<formula>```, keep.source=```<logical>```, family = ```binomial|gau
 build_glm(ARR_DELAY ~ DEP_DELAY + DISTANCE)   
 _Returns a column of glm model which predicts ARR_DELAY from DEP_DELAY and DISTANCE. It also returns a column of original data. You can use augment(.model, .source.data), tidy(.model) and glance(.model) to see information in those models._
 
-**Tags**   
-Generalized Linear Regression Model, coefficients, correlation
 
-**Category**   
-Model
 
 ## build_kmeans.cols
 
@@ -211,11 +199,7 @@ _Builds a K-means clustering model selecting all the columns other than 'locatio
 |Bea      | 18.00000| 10.00000| 27.00000|1        |
 |Bor      | 18.14896| 10.64896| 20.64896|1        |
 
-**Tags**   
-Clustering, Segmentation
 
-**Category**   
-Model
 
 ## build_kmeans.kv
 
@@ -271,12 +255,6 @@ _Builds a K-means clustering model selecting 'location' as the subject to cluste
 |Bor      | 1901|     10.64896|        1|
 |Bor      | 1902|     20.64896|        1|
 
-**Tags**   
-Clustering, Segmentation
-
-**Category**   
-Model
-
 
 ## str_clean
 
@@ -296,11 +274,7 @@ Character
 str_clean(" Exploratory ..io ")   
 _returns "Exploratory.io"._
 
-**Tags**   
-white space, trim, clean, scrub
 
-**Category**   
-Text
 
 ## str_count_all
 
@@ -322,11 +296,7 @@ List of data frame
 str_count_all("I ate banana, apple, and peach yesterday, and banana, peach today.", patterns=c("apple", "banana"), remove.zero=TRUE)   
 _Returns a list column of data frames with 'apple' and 'banana' columns._
 
-**Tags**   
-count, regex
 
-**Category**   
-Text
 
 ## get_stopwords
 
@@ -347,8 +317,6 @@ Character
 get_stopwords()   
 _Return a list of the stop words like "a", "the", "and"._
 
-**Tags**  
-Text
 
 ## get_sentiment
 
@@ -372,11 +340,7 @@ _Return "positive"._
 get_sentiment("bad", lexicon="AFINN")   
 _Return -3._
 
-**Tags**  
-Text
 
-**Category**
-Text  
 
 ## stem_word
 
@@ -397,11 +361,7 @@ Character
 stem_word(c("stand","stands", "cheerful", "cheering"))   
 _Return c("stand","stand","cheer","cheer")._
 
-**Tags**  
-Text
 
-**Category**
-Text  
 
 ## is_stopword
 
@@ -422,10 +382,7 @@ Logical
 is_stopword(c("a", "and", "stopword", "the"))
 _Return c(TRUE, TRUE, FALSE, TRUE)._
 
-**Tags**   
 
-**Category**   
-Text
 
 ## is_alphabet
 
@@ -443,11 +400,6 @@ Data frame
 **Example**   
 is_alphabet(c("1", "132", "32MB", "hello"))
 _Return c(FALSE, FALSE, FALSE, TRUE)._
-
-**Tags**   
-
-**Category**   
-Text
 
 
 
@@ -483,11 +435,6 @@ _After:_
 |PDF_with_File |California Transparency in Supply Chains Act of 2010\nMitsuwa Marketplace is committed to conducting its business... |
 
 
-**Tags**  
-pdf, parse, text
-
-**Category**   
-Text
 
 
 ## do_tokenize
@@ -546,11 +493,7 @@ _Original data:_
 |Second |she has just left.        |
 |Second |she will be off tomorrow. |
 
-**Tags**  
-Text
 
-**Category**  
-Data frame operation
 
 ## do_tfidf
 
@@ -602,11 +545,7 @@ _Original data:_
 |           2|is     |             1|             2| 0.0000000|
 |           2|which  |             1|             1| 0.2310491|
 
-**Tags**  
-Text
 
-**Category**  
-Data frame operation
 
 ## do_ngram
 
@@ -677,11 +616,6 @@ _Original data:_
 |            2|            2|will_tomorrow |
 |            2|            2|come_tomorrow |
 
-**Tags**  
-Text
-
-**Category**  
-Data frame operation
 
 ## do_cosine_sim.kv
 
@@ -728,9 +662,3 @@ _Original data:_
 |Emily       |John        | 0.8595770|
 |John        |Lisa        | 0.1671574|
 |John        |Emily       | 0.8595770|
-
-
-**Tags**   
-
-**Category**   
-Data frame operation

@@ -40,11 +40,6 @@ _Original data:_
 |Bor         |Als         | 0.9680283|
 |Bor         |Bea         | 0.9508014|
 
-**Tags**   
-Statistics, Similarity   
-
-**Category**
-data frame operation
 
 
 ## do_cor.kv
@@ -92,11 +87,6 @@ _Original data:_
 |Bor         |Als         | 0.9680283|
 |Bor         |Bea         | 0.9508014|
 
-**Tags**   
-Statistics, Similarity   
-
-**Category**
-data frame operation
 
 ## do_dist.kv
 
@@ -150,10 +140,7 @@ _Original data:_
 |Bor         |Als         |  32.532238|
 |Bor         |Bea         |   6.385847|
 
-**Tags**   
 
-**Category**   
-data frame operation
 
 ## do_dist.cols
 
@@ -201,10 +188,6 @@ _Original data:_
 |Bor         |Als         |  32.532238|
 |Bor         |Bea         |   6.385847|
 
-**Tags**   
-
-**Category**   
-data frame operation
 
 ## do_cosine_sim.kv
 
@@ -251,9 +234,3 @@ _Original data:_
 |Emily       |John        | 0.8595770|
 |John        |Lisa        | 0.1671574|
 |John        |Emily       | 0.8595770|
-
-
-**Tags**   
-
-**Category**   
-Data frame operation

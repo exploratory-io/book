@@ -14,9 +14,3 @@ Character
 **Example**  
 ip_to_country("133.43.96.45")   
 _returns "Japan"._
-
-**Tags**  
-Geo
-
-**Category**   
-Text, Geo
