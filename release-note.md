@@ -1,15 +1,39 @@
 # Release Note
 
+## R 1.5.2
+
+### Enhancements
+
+- Updated all the machine learning functions spec, including text mining, statistical functions, to make them consistent. 
+
+### Bug fixes
+
+- It was not showing an appropriate errors in Table / Chart views when invalid functions are used in the steps.
+- 'build_kmeans.kv' command was not augmenting the cluster IDs appropriately on top of the original data.
+
+## R 1.5.1
+
+### Enhancements
+
+- Added a support of showing Text label on Scatterplot.
+
+### Bug fixes
+
+- JSON files are not showing up appropriately in the file picker for Windows.
+- Chart sharing is not fully working on Facebook.
+- Chart embedding's iframe code doesn't have appropriate height and width attribute setting.
+
+
 ## R 1.5.0
 
 Released on 6/15/2016
 
 ### New Features
 
-- Chart Publish / Share - Now you can publish charts directly from inside the data frame without creating a note. The hosted chart will have an unique URL and can be shared with the URL or embedded into your web pages or blog (e.g. Wordpress) with the automatically generated code. Also, you can share the chart URL on other mediums like Twitter, Slack, etc, and the chart images will be automatically shown up.
-- Branch - You can create one or more branches inside the data frame to quickly experiment different analysis paths. All the branches inside a single data frame can share the common data transformation and analysis path in a main branch while they can have their own different analysis paths. Being able to run multiple experiments by creating multiple branches inside the data frames will enhance the flexibility and efficiency of your exploratory data analysis. Data dependency among the branches and among the transformation steps are managed by Exploratory's DAG engine to keep all the data cache intact.
-- Text Analytics - We have added a set of the text mining related functions that are designed to work better with 'tidy' data form. By employing these functions, you can quickly tokenize text, remove stop words, stem words, construct n-grams, calculate TF-IDF and document similarity, reduce dimensions with SVD, and building document clustering models. [Tutorials]()
-- Short Cut Keys
+- Chart Sharing and Embedding - Now you can publish charts directly from inside the data frame without creating a note. The hosted chart will have an unique URL and can be shared with the URL or embedded into your web pages or blog (e.g. Wordpress) with the automatically generated code. Also, you can share the chart URL on other mediums like Twitter, Facebook, Slack, etc, and the chart images will be automatically shown up. [Blog post]()
+- Branch - You can create one or more branches inside the data frame to quickly experiment different analysis paths. All the branches inside a single data frame can share the common data transformation and analysis path in a main branch while they can have their own different analysis paths. Being able to run multiple experiments by creating multiple branches inside the data frames will enhance the flexibility and efficiency of your exploratory data analysis. Data dependency among the branches and among the transformation steps are managed by Exploratory's DAG engine to keep all the data cache intact. [Blog post](https://blog.exploratory.io/introducing-branch-for-running-multiple-experiments-quickly-84352ce245b6#.150aissqr)
+- Text Analytics - We have added a set of the text mining related functions that are designed to work better with 'tidy' data form. By employing these functions, you can quickly tokenize text, remove stop words, stem words, construct n-grams, calculate TF-IDF and document similarity, reduce dimensions with SVD, and building document clustering models.
+- Added [Short Cut Keys](http://docs.exploratory.io/shortcut.html) for the command input.
 
 ### Enhancements
 
