@@ -10,7 +10,7 @@ Select 'Import Remote Data' from Add New Data Frame menu.
 
 Click PostgreSQL to select.
 
-![](images/mysql.png)
+![](images/postgres.png)
 
 ## 2. Set Parameters
 
@@ -26,12 +26,12 @@ Type the following your PostgreSQL DB connection related parameter values.
 - Number of Rows
 - Query
 
-![](images/mysql2.png)
+![](images/postgres2.png)
 
 ## 3. Preview and Import
 
 Click Preview button to see the data back from your PostgreSQL db.
 
-![](images/mysq2.png)
+![](images/postgres3.png)
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
