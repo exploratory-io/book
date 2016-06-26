@@ -1,5 +1,35 @@
 # Release Note
 
+## R 1.6.0
+
+Released on 6/27/2016
+
+### New Features
+
+Data Share
+
+New remote data support - Redshift, PostgreSQL
+
+Custom R package installation
+
+
+get_sentiment
+This will replace the existing get_sentiment function. The existing one is renamed to as 'word_to_sentiment'.
+
+
+### Enhancements
+
+tidyr package update
+dplyr package update
+
+### Bug fixes
+
+Branch - chart - can't open
+Chart - can't open when a referenced column is not available after some updates in the previous steps
+
+Generated R script doesn't have all the required package names loading 
+
+
 ## R 1.5.2
 
 Released on 6/20/2016

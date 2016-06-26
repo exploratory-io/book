@@ -1,14 +1,14 @@
-# MySQL Data Import
+# PostgreSQL Database Data Import
 
-You can quickly import data from your MySQL Database into Exploratory.
+You can quickly import data from your PostgreSQL Database into Exploratory.
 
-## 1. Open MySQL Import dialog
+## 1. Open PostgreSQL Import dialog
 
 Select 'Import Remote Data' from Add New Data Frame menu.
 
 ![](images/import-remote-data.png)
 
-Click MySQL DB to select.
+Click PostgreSQL to select.
 
 ![](images/mysql.png)
 
@@ -16,7 +16,7 @@ Click MySQL DB to select.
 
 Type your new data frame name
 
-Type the following your MySQL DB connection related parameter values.
+Type the following your PostgreSQL DB connection related parameter values.
 
 - Host name
 - Port number
@@ -30,7 +30,7 @@ Type the following your MySQL DB connection related parameter values.
 
 ## 3. Preview and Import
 
-Click Preview button to see the data back from your MySQL db.
+Click Preview button to see the data back from your PostgreSQL db.
 
 ![](images/mysq2.png)
 
