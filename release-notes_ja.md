@@ -1,5 +1,63 @@
 # リリースノート
 
+## R 1.6.0
+
+Released on 6/27/2016
+
+### New Features
+
+データシェア機能を実装しました。
+
+New remote data support - Redshift, PostgreSQL
+
+Custom R package installation
+
+
+get_sentiment
+This will replace the existing get_sentiment function. The existing one is renamed to as 'word_to_sentiment'.
+
+
+### Enhancements
+
+- tidyrパッケージの更新をしました。
+- dplyrパッケージの更新をしました。
+
+### Bug fixes
+
+- ブランチでチャートを開けなかった問題を修正しました。
+- stepsチャート画面で、以前のステップでいくつかの更新があった後に、定規柱が利用できなかったときに、チャートを開けなかった問題を取得しました。
+
+
+Generated R script doesn't have all the required package names loading
+
+
+## R 1.5.2
+
+Released on 6/20/2016
+
+### Enhancements
+
+- 一貫性を持たせるために、テキストマイニングや統計的な関数を含むすべての機械学習関数のスペックを更新しました。
+
+### Bug fixes
+
+- 無効な関数がステップで使われたとき、テーブルやチャートにエラーが反映されていなかった問題を修正しました。
+- 'build_kmeans.kv'コマンドは、元のデータの上では、クラスタIDを正確に引数にとっていなかった問題を修正しました。
+
+## R 1.5.1
+
+Released on 6/19/2016
+
+### Enhancements
+
+- Scatterplotにテキストラベル表示を追加しました。
+
+### Bug fixes
+
+- JSONファイルが、Windowsのファイルピッカーに正確に表示されていなかった問題を修正しました。
+- チャートシェア機能が、Facebookでうまくいっていなかった問題を修正しました。
+- Chart埋め込みのiframeコードが適切な高さと幅を持っていなかった問題を修正しました。
+
 ## R 1.5.0
 
 Released on 6/15/2016
