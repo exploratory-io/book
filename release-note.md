@@ -2,32 +2,33 @@
 
 ## R 1.6.0
 
-Released on 6/27/2016
+Released on 6/28/2016
 
 ### New Features
 
-Data Share
+- Data Share - Now you can publish and share your data at any step of the data transformation pipeline (right hand side) with a click of a button. The shared data can be downloaded and imported into your project along with the data transformation steps so that you can understand how the data was prepared and you can modify or add your own steps. This would make it easier for you to collaborate with your team members through data.  
 
-New remote data support - Redshift, PostgreSQL
+- New remote data support - Redshift, PostgreSQL - Now you can write SQL queries to extract data from these two data sources, much like MySQL.
 
-Custom R package installation
-
-
-get_sentiment
-This will replace the existing get_sentiment function. The existing one is renamed to as 'word_to_sentiment'.
+- Custom R package installation - Finally, you can install your preferred R packages from the main windows inside Exploratory Desktop. In this release, the installed packages will be automatically loaded when you open the projects. In future release. you will be able to control this at each project level. ;)
 
 
 ### Enhancements
 
-tidyr package update
-dplyr package update
+- get_sentiment has been refactored so that it can return the sentiment for a given sentence, not just word. The old version of 'get_sentiment' functionality is now provided through 'word_to_sentiment' function.
+
+- tidyr is upgraded to v0.5.1. The biggest new addition with this upgrade is 'separate_rows' function, which separates delimited words into rows. [Detail](https://github.com/hadley/tidyr/releases)
+
+- dplyr is upgraded to v0.5.0. There are many enhancements and new functions with this release. Here's the [detail](https://github.com/hadley/dplyr/releases).
+
+- R script generation - Now the generated R script contains all the core R packages and '.libPaths' command to set the library path to Exploratory repository. This will make it a lot easier to reproduce the transformation steps outside of Exploratory Desktop, such as R console, RStudio, etc.
 
 ### Bug fixes
 
 Branch - chart - can't open
 Chart - can't open when a referenced column is not available after some updates in the previous steps
 
-Generated R script doesn't have all the required package names loading 
+Generated R script doesn't have all the required package names loading
 
 
 ## R 1.5.2
