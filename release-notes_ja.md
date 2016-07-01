@@ -2,34 +2,32 @@
 
 ## R 1.6.0
 
-Released on 6/27/2016
+Released on 6/28/2016
 
 ### New Features
 
-データシェア機能を実装しました。
+- 右側にあるデータ分析ステップのボタン１つで、データの公開をできることになりました。公開されたデータは、ユーザが、どうやってデータ分析がされたかを理解したり、ステップを修正したり加えたりできるように、ダウンロードや分析ステップと一緒にプロジェクトにインポートすることもできます。この機能があれば、ユーザがデータを通して、チームメンバーと共同作業をするのが簡単になります。
 
-New remote data support - Redshift, PostgreSQL
+- リモートデータインポート機能が、データを引き出すために新しくRedshiftとPostgreSQLに対応しました。MySQLのように、この2つのデータソースからもSQLクエリを書くことができます。
 
-Custom R package installation
-
-
-get_sentiment
-This will replace the existing get_sentiment function. The existing one is renamed to as 'word_to_sentiment'.
+- カスタムで、Rパッケージがインストールできるようになりました。ついに、Exploratoryの中に、ユーザーの好みのRパッケージをインストールできることになりました。インストールされたパッケージは、プロジェクトを開いたときに、自動的に読み込まれます。将来的には、それぞれのプロジェクトレベルで好みのパッケージのインストールができるようになります。
 
 
 ### Enhancements
 
-- tidyrパッケージの更新をしました。
-- dplyrパッケージの更新をしました。
+- get_sentimentは、単語だけでなく、文章でも、sentimentを返せるように、リファクタリングされました。'get_sentiment'関数の古バージョンは、'word_to_sentiment'関数という名前になりました。
+
+- tidyrのバージョンが0.5.1にアップグレードされました。このアップグレードによって、'separate_rows'関数が加えられました。区切られた単語を行に分けることができます。詳しくは、[こちら](https://github.com/hadley/tidyr/releases)からどうぞ
+
+- dplyrのバージョンが、v0.5.0にアップグレードされました。今回のアップグレードでは、たくさんの改善や新しい関数が加えられました。詳しくは、[こちら](https://github.com/hadley/dplyr/releases)からどうぞ
+
+- Rスクリプト生成機能を実装しました。生成されたRスクリプトは、すべてコアなRのパッケージと、ライブラリのパスをExploratoryレポジトリに設定するために、'.libPaths'コマンドを含んでいます。これによって、R consoleやRStudioなど、Exploratory以外のプロダクトで、データ分析ステップを再現することが簡単になりました。
 
 ### Bug fixes
 
 - ブランチでチャートを開けなかった問題を修正しました。
 - stepsチャート画面で、以前のステップでいくつかの更新があった後に、定規柱が利用できなかったときに、チャートを開けなかった問題を取得しました。
-
-
-Generated R script doesn't have all the required package names loading
-
+- 生成されたRスクリプトが、必要な、パッケージ名を持っていなかった問題を修正しました。
 
 ## R 1.5.2
 
