@@ -6,30 +6,29 @@ Released on 6/28/2016
 
 ### New Features
 
-- Data Share - Now you can publish and share your data at any step of the data transformation pipeline (right hand side) with a click of a button. The shared data can be downloaded and imported into your project along with the data transformation steps so that you can understand how the data was prepared and you can modify or add your own steps. This would make it easier for you to collaborate with your team members through data.  
+- Data Share - Now you can publish and share your data at any step of the data transformation pipeline (right hand side) with a click of a button through Exploratory.io. The published data can be downloaded and imported into your project along with the data transformation steps so that others can understand how the data was prepared, can reproduce the data with all the steps, and can modify or add their own steps. This would make it easier for you to collaborate with your team members through data.  
 
-- New remote data support - Redshift, PostgreSQL - Now you can write SQL queries to extract data from these two data sources, much like MySQL.
+- New remote data support - Redshift, PostgreSQL - Now you can write SQL queries to extract data from these two data sources, much like existing MySQL / MongoDB options.
 
-- Custom R package installation - Finally, you can install your preferred R packages from the main windows inside Exploratory Desktop. In this release, the installed packages will be automatically loaded when you open the projects. In future release. you will be able to control this at each project level. ;)
+- Custom R package installation - Finally, you can install your preferred R packages inside Exploratory Desktop. In this release, the installed packages will be automatically loaded when you open the projects. In future release. you will be able to control this at each project level. Also, only CRAN repository is supported for this release, but Github support will be coming shortly.
 
 
 ### Enhancements
 
-- get_sentiment has been refactored so that it can return the sentiment for a given sentence, not just word. The old version of 'get_sentiment' functionality is now provided through 'word_to_sentiment' function.
+- 'get_sentiment' function has been refactored so that now it can return the sentiment for sentences, not just per word. The old version of 'get_sentiment' functionality is now provided through 'word_to_sentiment' function. The new 'get_sentiment' function uses [sentimentr](https://github.com/trinker/sentimentr) package internally, which provides a super fast sentiment scoring capability at the sentence level.
 
-- tidyr is upgraded to v0.5.1. The biggest new addition with this upgrade is 'separate_rows' function, which separates delimited words into rows. [Detail](https://github.com/hadley/tidyr/releases)
+- tidyr is upgraded to v0.5.1. The biggest new addition with this upgrade is 'separate_rows' function, which would separate delimited words into rows. [Detail](https://github.com/hadley/tidyr/releases)
 
-- dplyr is upgraded to v0.5.0. There are many enhancements and new functions with this release. Here's the [detail](https://github.com/hadley/dplyr/releases).
+- dplyr is upgraded to v0.5.0. There are many enhancements and new functions with this release. Here's the [detail](https://github.com/hadley/dplyr/releases). Note that 'distinct' function has been updated to keep only the specified columns and this might break your transformation steps. You can bring those dropped columns back with '.keep_all=TRUE' argument. Also, now column names with multibyte characters is supported in 'mutate' command. Great news for users in East Asia!
 
-- R script generation - Now the generated R script contains all the core R packages and '.libPaths' command to set the library path to Exploratory repository. This will make it a lot easier to reproduce the transformation steps outside of Exploratory Desktop, such as R console, RStudio, etc.
+- Reproducible! with R script generation - Now the generated R script contains all the core R packages with 'library' commands and '.libPaths' command to set the library path to Exploratory repository. This will make it a lot easier to reproduce the transformation steps outside of Exploratory Desktop, such as R console, RStudio, etc.
+
 
 ### Bug fixes
 
-Branch - chart - can't open
-Chart - can't open when a referenced column is not available after some updates in the previous steps
-
-Generated R script doesn't have all the required package names loading
-
+- Chart - Now you can open Chart view even when an referenced column is not available after some updates in the previous steps.
+- Column names with Multibyte characters can be processed correctly with mutate / summarize commands now.
+- Now it shows up to 300 columns and 1000 rows in Table view correctly even when there are a lot more columns in the data frame.
 
 ## R 1.5.2
 
