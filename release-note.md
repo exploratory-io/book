@@ -1,8 +1,21 @@
 # Release Note
 
+## R 1.6.1
+
+Released on 7/5/2016
+
+### Enhancements
+
+- Syntax suggestion supports new functions from dplyr 0.5 now.
+
+### Bug fixes
+
+- libPaths command in the generated R script is correctly escaped for Windows.
+- User added R packages will be added into the generated R script with library command.
+
 ## R 1.6.0
 
-Released on 6/28/2016
+Released on 7/1/2016
 
 ### New Features
 
