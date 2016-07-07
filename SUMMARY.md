@@ -24,6 +24,8 @@
    * [Remote Data](remote-date.md)
       * [MongoDB](import/mongodb.md)
       * [MySQL DB](import/mysql.md)
+      * [Amazon Redshift](import/redshift.md)
+      * [PostgreSQL](import/postgresql.md)
       * [Google Analytics](import/google-analytics.md)
       * [Google Spreadsheet](import/google-sheet.md)
       * [Github Issues](import/github.md)
