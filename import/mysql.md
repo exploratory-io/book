@@ -32,6 +32,6 @@ Type the following your MySQL DB connection related parameter values.
 
 Click Preview button to see the data back from your MySQL db.
 
-![](images/mysq2.png)
+![](images/mysql2.png)
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
