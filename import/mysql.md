@@ -36,7 +36,7 @@ Click Preview button to see the data back from your MySQL db.
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
 
-## 4. AWS Security Group Setup
+## 4. AWS Security Group Setup (Only for Amazon RDS)
 
 ![](images/redshift4.png)
 
