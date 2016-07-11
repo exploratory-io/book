@@ -9,9 +9,10 @@
    * [Working with JSON Data](tutorials/yelp.md)
    * [Working with MongoDB Data](tutorials/mongo.md)
    * [Working with Text Data](tutorials/text-data.md)
+   * [Text Analysis / Text Mining](tutorials/text-analysis.md)
+   * [Analyze Log file with URL Data](tutorials/log-url.md)
    * [Analyze Github Data]
    * [Analyze Time Series Data - Yahoo Finance]
-   * [Analyze Log file with URL Data]
 * [Data Import](data_import.md)
    * [Local Text Files](local-data.md)
       * [CSV / Delimited](import/delimited.md)
