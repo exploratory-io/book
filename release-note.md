@@ -1,5 +1,27 @@
 # Release Note
 
+## R 1.7.0
+
+Released on 7/18/2016
+
+### New Features
+
+- Chart sharing with Data - You can publish and share your chart with Data and Steps. This will make it easier for others to see how the data for the chart was prepared.
+- Remote database connection - You can create 'connections', which has a set of the connection parameters, for your databased so that you can simply select it when you access to the databases instead of entering the connection information every time.
+- Custom R functions and variables with R Script - You can create R scripts where you can define your own R functions attache the script for your projects so that you can call the functions from the data wrangling steps. This can be used for defining your own variables.
+- Selective R package loading per project - You can select which R packages to load at the project level.
+- Custom Variable support for SQL query - You can use your own variables, which can be defined in R scripts, as part of your SQL queries.
+
+### Enhancements
+
+- Histogram - # of buckets support - You can change the # of the buckets for Histogram chart.
+- Google Analytics - Page-nation - be able to extract more than 10K rows.
+- Re-design for Data Import dialog - We have Re-designed the data import dialogs. This is especially better for SQL query based data with much bigger text input area for writing SQL query.
+- Encoding support for Web Scraping - You can select the character set encoding for scraping data from web pages.
+
+### Bug fixes
+
+
 ## R 1.6.1
 
 Released on 7/5/2016

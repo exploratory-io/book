@@ -1,31 +1,37 @@
 # Data Import
 
-Exploratory supports three types of data import.
-
-- Local files
-- Remote data
-- Web page table scraping
-
 ## Local file import
 
 * CSV - Comma Separated Files
 * TSV - Tab Separated Files
 * Delimited Files
 * Excel
-* SPSS / SAS / STATA
-* RDS - R data file
+* Statistical Files - SPSS / SAS / STATA
+* R Data Files - RDS, RData
 * JSON
 
-## Remote data import
+## Databases
 
 * Amazon Redshift
-* Amazon DynamoDB
+* PostgreSQL
+* HP Vertica 
+* MySQL
+* MariaDB
+* Google BigQuery
 * MongoDB
+
+## Cloud Apps
+
 * Google Analytics
 * Google Spreadsheet
+* Twitter
 * Github Issues
 
+## Others
 
-## Web page table scraping
+* REST APIs / Remote JSON
+* Web Page Scraping
 
-Currently, Exploratory supports most of the html table data, but it's not perfect given a nature of various html table types.
+## Custom Data with R Script
+
+You can create your own custom data sources by writing R Script or using R packages like quantmod for financial data, gtrend for Google Trend, Rfacebook,
