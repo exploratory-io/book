@@ -17,7 +17,7 @@ Released on 7/18/2016
 - Histogram - # of buckets support - You can change the # of the buckets for Histogram chart.
 - Google Analytics - Page-nation - be able to extract more than 10K rows.
 - Re-design for Data Import dialog - We have Re-designed the data import dialogs. This is especially better for SQL query based data with much bigger text input area for writing SQL query.
-- Encoding support for Web Scraping - You can select the character set encoding for scraping data from web pages.
+- Encoding support for Web Scraping - It will automatically detect an appropriate encoding, but this is heuristic, you can override this by selecting the right one from the list. 
 
 ### Bug fixes
 
