@@ -2,42 +2,36 @@
 
 You can quickly import data from your MySQL Database into Exploratory.
 
-## 1. Open MySQL Import dialog
+## 1. Create a Connection to use
+
+Create a connection following [this instruction](connection.html).
+
+## 2. Open MySQL Import dialog
 
 Select 'Import Remote Data' from Add New Data Frame menu.
 
 ![](images/import-remote-data.png)
 
-Click MySQL DB to select.
+Click MySQL.
 
 ![](images/mysql.png)
 
-## 2. Set Parameters
+## 3. Choose connection
 
-Type your new data frame name
+1. Put data frame name.
 
-Type the following your MySQL DB connection related parameter values.
+2. Select connection from left dialog box.
 
-- Host name
-- Port number
-- Database name
-- Username
-- Password
-- Number of Rows
-- Query
+3. Write a query in the input field.
 
-![](images/mysql2.png)
+4. Click "Get Data" button. Then you will see the preview of the data.
 
-## 3. Preview and Import
+5. Click "Save" button to import.
 
-Click Preview button to see the data back from your MySQL db.
-
-![](images/mysql2.png)
-
-If it looks ok, then you can click 'Import' to import the data into Exploratory.
+![](images/mysql-connection.png)
 
 ## 4. AWS Security Group Setup (Only for Amazon RDS)
 
-![](images/mysql3.png)
+![](images/aws-security-group.png)
 
 If you are using Amazon RDS as your MySQL database, and encounter a database connection error, please go to AWS console and make sure you added your client PC's IP address to your DB Security Group associated with the MySQL database instance.
