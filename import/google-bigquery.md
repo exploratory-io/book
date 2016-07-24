@@ -12,7 +12,7 @@
 
 ## 2. Authentication with Google OAuth
 
-Select an account you want to use for your Google Spreadsheet and click 'Allow' button to allow Exploratory to extract your Google Spreadsheet data based on the parameters you are going to set up in the next step.
+Select an account you want to use for your Google BigQuery and click 'Allow' button to allow Exploratory to extract your Google BigQuery data based on the parameters you are going to set up in the next step.
 
 ![](images/google-big-query-oauth.png)
 
