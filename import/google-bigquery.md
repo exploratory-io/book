@@ -43,7 +43,7 @@ If your query is against huge table, it’s probably a good idea to create a a n
 - Type new table name 
 - Click Save button
 
-To confirm new table, click refresh icon on left hand side dataset tree
+To confirm if new table is created on Google BigQuery, click refresh icon on left hand side dataset tree
 
 ![](images/google-big-query-tree-refresh.png)
  
