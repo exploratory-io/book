@@ -47,7 +47,7 @@ To confirm new table, click refresh icon on left hand side dataset tree
 
 ![](images/google-big-query-tree-refresh.png)
  
-And onece refresh is done, you can see newly created table on the tree
+And once refresh is done, you can see newly created table on the tree
 
 ![](images/google-big-query-tree-refresh-after.png)
 
