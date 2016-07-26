@@ -29,6 +29,7 @@
       * [PostgreSQL](import/postgresql.md)
       * [Google Analytics](import/google-analytics.md)
       * [Google Spreadsheet](import/google-sheet.md)
+      * [Google BigQuery](import/google-bigquery.md)
       * [Github Issues](import/github.md)
       * [Twitter](import/twitter.md)
    * [Web Page Scraping](import/web-scraping.md)
