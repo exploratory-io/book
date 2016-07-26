@@ -2,7 +2,7 @@
 
 ## 1. Before you start
 
-To use Google BigQuery Data with Exploratory Desktop, you need to create a project on Google Cloud Platform and a dataset on Google BigQuery.
+To use Google BigQuery with Exploratory Desktop, you need to create a project on Google Cloud Platform and a dataset on Google BigQuery.
 
 ### Create a project for Google BigQuery
 
@@ -12,11 +12,11 @@ To use Google BigQuery Data with Exploratory Desktop, you need to create a proje
 
 ![](images/create-google-bq-billing-project.png)
 
-- Select a name and project ID, and click "Create"
+- Select a Project name and click "Create" button
 
 ![](images/create-google-bq-dialog.png)
 
-- Make sure that you enable BigQuery API for you Project by clicking "API Manager" menu under Google Cloud Platform
+- Make sure that you enable BigQuery API for you Project by clicking "Enable and manager APIs " menu under Use Google APIs section
 
 ![](images/google-bq-enable-api.png)
 
@@ -24,11 +24,11 @@ To use Google BigQuery Data with Exploratory Desktop, you need to create a proje
 
 - Open [Google BigQuery Web ui](https://bigquery.cloud.google.com/)
 
-- Click down arrow icon next to your project name
+- Click down arrow icon next to your project name and select "Create new dataset" menu.
 
 ![](images/google-bq-create-dataset-menu.png)
 
-- Enter dataset id and Click OK button
+- Enter Dataset id and Click "OK" button
 
 ![](images/google-bq-create-dataset-dialog.png) 
 
