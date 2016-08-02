@@ -1,5 +1,16 @@
 # Release Note
 
+## R 1.9.0
+
+### New Features
+
+### Enhancements
+
+- Double clicking on column name and function name can show a suggested list and selecting a value from the list will replace the existing token smoothly. 
+
+### Bug fixes
+
+
 ## R 1.8.0
 
 Released on 7/29/2016

@@ -39,11 +39,24 @@ Once the data is imported you can see a brief summary of the data in Summary vie
 
 ![](images/quick-start5.png)
 
+## Visualize data
+
+You can go to Chart view, and assign FL_DATE column to X-Axis and switch the aggregation level to Day.
+
+![](images/quick-start28.png)
+
+And, you can assign 'ARR_DELAY' column to Y-Axis and switch the aggregation function to Average instead of Sum.
+
+![](images/quick-start29.png)
+
+You can also switch the chart type to Boxplot or others to explore data visually.
+
+![](images/quick-start30.png)
 
 
 ## Remove NA values
 
-When you scroll down you can see ARR_DELAY column having NA values and its data range quickly.
+Going back to Summary view and scrolling down the page you will notice that ARR_DELAY column has NA values.
 
 ![](images/quick-start6.png)
 
@@ -51,14 +64,17 @@ You can remove NAs by selecting 'Remove NA' from the column dropdown menu.
 
 ![](images/quick-start7.png)
 
-What you see in the command input box is one of the Data Wrangling Grammar - dplyr - based R commands, that is automatically generated. (This could be your first R command if you are not R user, congrats!)
+This would produce one of the dplyr commands 'filter'. 'is.na' function inside the 'filter' command evaluates if a given value is NA or not. '!' (exclamation) mark reverses the effect of the function after. Combining all of them together, it will keep only the rows whose 'ARR_DELAY' column values are not NA. (If you are not R user, this could be your first R command, congrats!)
 
 ![](images/quick-start8.png)
 
 You can update the command or simply click Run button as is.
 
 Once you run it, you see NA values from ARR_DELAY column are gone.
+
 ![](images/quick-start9.png)
+
+
 
 ## Extract Weekday information from Date data
 
@@ -82,62 +98,38 @@ You can always see Syntax Help by having the cursor inside the function if you a
 
 ## Visualize data
 
-You can quickly visualize the data by going to Chart view by clicking Chart menu.
+You can quickly visualize the data again by going back to Chart view.
 
-![](images/quick-start16.png)
+Assign the new column 'FL_DATE_wday' to X-Axis and 'ARR_DELAY' to Y-Axis, and switch the aggregation function to 'Average.'
 
-You can assign the new column 'FL_DATE_wday' to X-Axis.
-
-![](images/quick-start14.png)
+![](images/quick-start32.png)
 
 The default is showing each of the week day in the week day order. You can also sort based on the Y-Axis values by clicking on 'Sort' check box.
 
-![](images/quick-start15.png)
+![](images/quick-start33.png)
 
-Additionally you can assign CARRIER column to Color.
+You can switch the chart type to Heatmap and assign 'CARRIER' to Y-Axis, 'ARR_DELAY' to Color, and switch the aggregation function to 'Average'
 
-![](images/quick-start17.png)
+![](images/quick-start34.png)
 
-## Create a Note and Publish
+## Share Chart
 
-Click '+' icon next to 'Notes'.
+Now, you can share the chart quickly. Click on 'Share' button.
 
-![](images/quick-start18.png)
+![](images/quick-start31.png)
 
-Type a name for the note.
+Type for Title and click 'Share' button.
 
-![](images/quick-start19.png)
+![](images/quick-start35.png)
 
-Start writing your notes. You can format the text by selecting the sentence or words.
+Once it's published, click 'View Shared Chart'
 
-![](images/quick-start20.png)
+![](images/quick-start36.png)
 
-Every time you click on a new line you will see '+' button showing up at the left side.
+You can see your chart is shared at exploratory.io.
 
-![](images/quick-start21.png)
+![](images/quick-start37.png)
 
-You can click on it and click 'Chart' icon.
+You can also click on Data tab and see how the data was prepared.
 
-![](images/quick-start22.png)
-
-Select a chart you want to include in your note, and click 'OK' button.
-
-![](images/quick-start23.png)
-
-You can see the chart being added to the note.
-
-![](images/quick-start24.png)
-
-Once you are ready, you can publish your note to share by clicking on 'Publish' button.
-
-![](images/quick-start25.png)
-
-Click 'Publish' button inside the dialog.
-
-You can either copy and paste the URL or simply click 'View Published note' to open a web browser to see the published note.
-
-![](images/quick-start26.png)
-
-Now you will see your published note in a web browser.
-
-![](images/quick-start27.png)
+![](images/quick-start38.png)
