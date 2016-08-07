@@ -1,0 +1,188 @@
+## Create a Note and Publish
+
+Click '+' icon next to 'Notes'.
+
+![](images/quick-start18.png)
+
+Type a name for the note.
+
+![](images/quick-start19.png)
+
+Start writing your notes. You can format the text by selecting the sentence or words.
+
+![](images/quick-start20.png)
+
+Every time you click on a new line you will see '+' button showing up at the left side.
+
+![](images/quick-start21.png)
+
+You can click on it and click 'Chart' icon.
+
+![](images/quick-start22.png)
+
+Select a chart you want to include in your note, and click 'OK' button.
+
+![](images/quick-start23.png)
+
+You can see the chart being added to the note.
+
+![](images/quick-start24.png)
+
+Once you are ready, you can publish your note to share by clicking on 'Publish' button.
+
+![](images/quick-start25.png)
+
+Click 'Publish' button inside the dialog.
+
+You can either copy and paste the URL or simply click 'View Published note' to open a web browser to see the published note.
+
+![](images/quick-start26.png)
+
+Now you will see your published note in a web browser.
+
+![](images/quick-start27.png)
+
+
+
+## lookup
+
+**Summary**
+Assign value(s) to each of the corresponding keys.
+
+**Syntax**
+lookup(```<column>```, kv = ```<list>```, keep = ```<logical>```)
+
+**Arguments**
+
+* kv - list of the key and value pairs. This is where you can set your own data mapping definition as key-value pairs.
+* keep - The default is TRUE. Set whether keep the original values or assign NA for the values that are not presented in the given key-value pairs.
+
+**Return Value**
+Character
+
+**Example**
+mutate(name = lookup(ID, c("4755" = "Rakuten", "2432" = "DeNA")))
+_Return values based on the given key-value pairs. If no match then it defaults to the original values._
+
+|ID | Name |
+|---|------|
+|4716 | 4716 |
+|4755 | Rakuten |
+|2432 | DeNA |
+
+mutate(name = lookup(ID, c("4755" = "Rakuten", "2432" = "DeNA"), keep = FALSE))
+_Return values based on the map specified in the value_pair. If no match then it returns NA._
+
+|ID | Name |
+|---|------|
+|4716 | NA |
+|4755 | Rakuten |
+|2432 | DeNA |
+
+**Tags**
+lookup, map, assign, alternate
+
+**Category**
+Lookup
+
+## set_to_vec
+
+**Summary**
+Create binary vector. Its length is the number of unique values in the column and its elements become TRUE if it contains the element.
+
+**Syntax**
+set_to_vec(```<column_list>```, sparse =  ```<logical>```)
+
+**Arguments**
+
+* sparse - The default value is FALSE. Set TRUE when the output becomes sparse vector. This will save the memory usage by not keeping FALSE values.
+
+**Return Value**
+list of numeric vector
+
+**Example**
+
+set_to_vec(companies, sparse=FALSE)
+_Return sparse vector whose length is the number of unique values in companies column. An index represent one company and if the row contains the company, it becomes TRUE. Otherwise FALSE_.
+
+From
+
+|ID | Companies |
+|---|-----------|
+|1 | c("Explorato.io", "Google") |
+|2 | c("Facebook", "Google") |
+|3 | "Explorato.io" |
+
+To
+
+|ID | Companies |
+|---|-----------|
+|1 | c(TRUE, TRUE, FALSE) |
+|2 | c(FALSE, TRUE, TRUE) |
+|3 | c(TRUE, FALSE, FALSE) |
+
+**Tags**
+vectorize, logical
+
+**Category**
+Vectorize
+
+
+Map country code
+ - Name -> ISO2 Letters
+ - Name -> ISO2 Numbers
+ - Name -> ISO3 Letters
+ - Name -> ISO3 Numbers
+
+ - ISO2 Letters -> Name
+ - ISO2 Letters -> ISO2 Numbers
+ - ISO2 Letters -> ISO3 Letters
+ - ISO2 Letters -> ISO3 Numbers
+
+ - ISO2 Numbers -> Name
+ - ISO2 Numbers -> ISO2 Letters
+ - ISO2 Numbers -> ISO3 Letters
+ - ISO2 Numbers -> ISO3 Numbers
+
+ - ISO3 Letters -> Name
+ - ISO3 Letters -> ISO2 Letters
+ - ISO3 Letters -> ISO2 Numbers
+ - ISO3 Letters -> ISO3 Numbers
+
+ - ISO3 Numbers -> Name
+ - ISO3 Numbers -> ISO2 Letters
+ - ISO3 Numbers -> ISO2 Numbers
+ - ISO3 Numbers -> ISO3 Letters
+
+ - From Name to...
+ - From ISO2 Letters to...
+ - From ISO2 Numbers to...
+ - From ISO3 Letters to...
+ - From ISO3 Numbers to...
+
+
+Mapping data -- Top Level for character and numeric data type
+ - From Country Name to...
+ -> mutate(<column_new> = countrycode(<column>), "country.name", )
+ - From ISO 2 Letters to...
+ -> mutate(<column_new> = countrycode(<column>), "iso2c", )
+ - From ISO 2 Numbers to...
+ -> mutate(<column_new> = countrycode(<column>), "iso2n", )
+ - From ISO 3 Letters to...
+ -> mutate(<column_new> = countrycode(<column>), "iso3c", )
+ - From ISO 3 Numbers to...
+ -> mutate(<column_new> = countrycode(<column>), "iso3n", )
+ - From IP address to Country
+ -> mutate(<column_new> = ip_to_country(<column>))
+
+ - From US State Long to Short
+ - From US State Short to Long
+ - From Country Name to Longitude / Latitude
+
+
+List
+country.name - Name
+iso2c - ISO 2 Letters
+iso2n - ISO 2 Numbers
+iso3c - ISO 3 Letters
+iso3n - ISO 3 Letters

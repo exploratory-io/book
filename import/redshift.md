@@ -2,7 +2,18 @@
 
 You can quickly import data from your Amazon Redshift Database into Exploratory.
 
-## 1. Open Redshift Import dialog
+## 1. Create a connection for Amazon Redshift database
+
+First, you want to create a connection for Amazon Redshift database.
+
+![](images/redshift-3-1.png)
+
+After filling the database information, click ‘Test Connection’ button to make sure the information is correct, before you save it.
+
+![](images/redshift-2-1.png)
+
+
+## 2. Open Redshift Import dialog
 
 Select 'Import Remote Data' from Add New Data Frame menu.
 
@@ -12,21 +23,6 @@ Click Redshift to select.
 
 ![](images/redshift.png)
 
-## 2. Set Parameters
-
-Type your new data frame name
-
-Type the following your Redshift DB connection related parameter values.
-
-- Host name
-- Port number
-- Database name
-- Username
-- Password
-- Number of Rows
-- Query
-
-![](images/redshift2.png)
 
 ## 3. Preview and Import
 
@@ -36,7 +32,45 @@ Click Preview button to see the data back from your Redshift db.
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
 
-## 4. AWS Security Group Setup
+## 4. Querying Random Sample Data
+
+You might want to take a random sample of the data that would be reasonable size for your analysis.
+
+You can use [md5](http://docs.aws.amazon.com/redshift/latest/dg/r_MD5.html) function to get random number generated and use it like below to get the random sample of the data.
+
+```
+SELECT *
+   FROM airline_2016_01
+   ORDER BY md5('randomSeed' || flight_num)
+   LIMIT 100000
+```
+
+## 5. Using Variables in SQL
+
+First, define a variable in R script file.
+
+```
+cutoff_date <- "\'2016-01-15\'"
+```
+
+Note that the ‘\’ (backslash) symbols are used to escape the single quotes, which are required to be used for characters in SQL queries.
+
+Second, load the R script file.
+
+![](images/variable-1.png)
+
+![](images/variable-2.png)
+
+Finally, you can use @{} to surround a variable name inside the query like below.
+
+```
+select *
+from airline_2016_01
+where fl_date > @{cutoff_date}
+```
+
+
+## 6. AWS Security Group Setup
 
 ![](images/redshift4.png)
 
