@@ -4,9 +4,11 @@
 
 ### New Features
 
+- Pivot Table
+
 ### Enhancements
 
-- Double clicking on column name and function name can show a suggested list and selecting a value from the list will replace the existing token smoothly. 
+- Google Analytics - Goal
 
 ### Bug fixes
 

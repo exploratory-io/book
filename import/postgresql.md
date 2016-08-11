@@ -54,3 +54,5 @@ select *
 from airline_2016_01
 where fl_date > @{cutoff_date}
 ```
+
+Here's a [blog post](https://blog.exploratory.io/using-variables-in-sql-query-2740924d9f20#.bdcn5v68x) for more detail.

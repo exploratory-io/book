@@ -2,6 +2,8 @@
 
 You can quickly import data from your Amazon Redshift Database into Exploratory.
 
+Here is a [blog post](https://blog.exploratory.io/exploratory-data-analysis-for-amazon-redshift-with-r-dplyr-9a14441020eb#.aqcbfa6h8) introducing this support in detail.
+
 ## 1. Create a connection for Amazon Redshift database
 
 First, you want to create a connection for Amazon Redshift database.
@@ -69,6 +71,7 @@ from airline_2016_01
 where fl_date > @{cutoff_date}
 ```
 
+Here's a [blog post](https://blog.exploratory.io/using-variables-in-sql-query-2740924d9f20#.bdcn5v68x) for more detail. 
 
 ## 6. AWS Security Group Setup
 

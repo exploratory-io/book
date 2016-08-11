@@ -11,58 +11,58 @@
 
 We are going to create a new data frame by importing the following CSV file below.
 
-- [airline_delay_2015_01](https://www.dropbox.com/s/iz3fibz91liwct9/airline_delay_2015_01.csv?dl=0)
+- [airline_delay_2016_01](https://www.dropbox.com/s/x2g3qgo28syxhcl/airline_delay_2016_01.csv?dl=0)
 
 Inside the same project or a new project, you can click a plus '+' icon next to 'Data Frame' text in the left side pane and select 'Import Local Data' menu.
 
 ![](images/data-import.png)
 
-Select 'airline_delay_2015_01.csv' in the file picker dialog and hit 'OK' button. You will see the first 10 rows of the data you're importing.
+Select 'airline_delay_2016_01.csv' in the file picker dialog and hit 'OK' button. You will see the first 10 rows of the data you're importing.
 
 ![](images/data-import2.png)
 
 Keep the parameters as default and click 'Import' button.
 
-You can see a brief summary of the data in Summary view. It shows 26 columns and 469,968 rows at the top.
+You can see a quick summary of the data in Summary view. It shows 26 columns and 469,968 rows at the top.
 
 ![](images/flight-stats1.png)
 
-When you look at CARRIER column you can see carriers like 'WN' and "DL" have more data than the others in this data set. And there are 14 unique CARRIER values.
-
-![](images/flight-stats2.png)
-
-When you look at ARR_DELAY column, you can see the summary information about how many minutes each flight got delayed for their arrival time. For example, you can see the range of the delay time is between -82 minutes and 1,971 minutes. And this column has NAs for 13,004 rows. Given that's only 2.77% of the entire data set, let's remove these NA values first before doing any analysis.
+For example, when you look at CARRIER column you can see carriers like 'WN' and "AA" have more data than the others in this data set. And there are 12 unique CARRIER values.
 
 ## Remove NA values
 
-You can use ```is.na()``` function, which would identify the NA values, and use  ```!``` (exclamation mark) function, which would reverse the effect of the function after, inside ```filter()``` command like below.
+When you look closer at ARR_DELAY column you would notice there are some NA values. You can quickly remove them by selecting 'Drop NA' from the column header menu.
+
+![](images/flight-stats2.png)
+
+This will build a command like below.
 
 ```
 filter(!is.na(ARR_DELAY))
 ```
 
-So, basically the above command is trying to find 'Not NA' values and keep only those.
+. ```is.na()``` function returns TRUE when a given value is NA, and ```!``` (exclamation mark) function reverses the effect of the function after. When combining these two it will return TRUE when a given values is NOT NA.
 
-Once you hit 'Run' button, you should see that the red color bar, which used to represented NAs, is now gone.
+Once you hit 'Run' button, you no longer see the red color bar.
 
 ![](images/flight-stats3.png)
 
 
-## Use plots to explore data visually
+## Use Charts to explore data visually
 
 Let's go to Chart view and explore the data quickly. First, let's take a look at the average arrival delay time (ARR_DELAY) per each airline carrier (CARRIER). We can keep the chart type to be 'Bar' as default, and assign CARRIER to X-axis and ARR_DELAY to Y-axis. Also, let's change the 'aggregation' type from the default 'SUM' to 'AVE (Average)'.
 
 ![](images/flight-stats8.png)
 
-Now, these summarized values are interesting, but they can be distorted by extreme values, so let's use Boxplot to see the distribution of ARR_DELAY values per CARRIER.
+Now, these summarized values are interesting, but they can be easily distorted by any extreme values, so let's use Boxplot to see the distribution of ARR_DELAY values per CARRIER.
 
 Change the chart type to 'Boxplot'.
 
 ![](images/flight-stats7.png)
 
-This chart has excluded extreme values (outliers) already, and now you can see carriers like 'HA' have smaller range while carriers like 'MQ' have a lot wider range.
+Now you can see carriers like 'HA' have smaller range while carriers like 'NK' have a lot wider range.
 
-Now let's find out if there is any correlation between ARR_TIME (Arrival time) and DEP_TIME (Departure time). First, we can use 'Scatterplot' to see it visually.
+Now let's find out if there is any correlation between ARR_TIME (Arrival time) and DEP_TIME (Departure time). First, we can use 'Scatter' chart to see it visually.
 
 ![](images/flight-stats9.png)
 
@@ -90,13 +90,13 @@ Once you run the command you'll get something like below.
 
 ![](images/flight-stats12.png)
 
-The correlation coefficient value is 0.938. But this is for the whole data set. What if we want to know the correlation coefficient for each airline carrier (CARRIER) ? We can use ```group_by()``` command to set the grouping level to 'CARRIER' before we run this ```summarize()``` command.
+The correlation coefficient value is 0.9405. But this is for the whole data set. What if we want to know the correlation coefficient for each airline carrier (CARRIER) ? We can group the data by CARRIER by using ```group_by()``` command right before the ```summarize()``` command.
 
 To do this, you can select (click) the previous step of 'Filter', then hit '+' (Plus) button to insert a new transformation step right before this 'Summarize' step.
 
 ![](images/flight-stats13.png)
 
-Then, select 'Grouping' from the list and select 'CARRIER' from the suggested list. The command should look like below.  
+Then, start typing something like below.
 
 ```
 group_by(CARRIER)
@@ -106,7 +106,7 @@ Hit 'Run' button to run the command, then click on 'Summarize' step at the right
 
 ![](images/flight-stats14.png)
 
-This will give you the correlation coefficient values for each airline carrier. Now, you can go back to Chart view, set the chart type to 'Bar', and assign 'CARRIER' to X-axis and 'correlation' to Y-axis.
+This will give you the correlation coefficient value for each airline carrier. Now, you can go back to Chart view, set the chart type to 'Bar', and assign 'CARRIER' to X-axis and 'correlation' to Y-axis.
 
 ![](images/flight-stats15.png)
 
@@ -115,7 +115,7 @@ You can compare the correlation coefficients by CARRIER visually now.
 
 ## Perform Linear Regression analysis with lm
 
-To make this one step further, why don't we build a Linear Regression model and find out if there is any linear relationship between the arrival time delay and the departure time delay.
+Let's build a Linear Regression model to understand more about the relationship between the arrival delay time and the departure delay time.
 
 First, let's go back to Table view.
 
@@ -123,49 +123,60 @@ Remove the 'Summarize' step by clicking on 'Trash' icon at the right hand side c
 
 ![](images/flight-stats16.png)
 
-And, add a new step by clicking on '+' (Plus) button. And select 'Select' command from the list and select only 'ARR_DELAY' and 'DEP_DELAY' columns like below.
+Select Build Model / Linear Regression from ARR_DELAY column's column header menu.
 
-```
-select(ARR_DELAY, DEP_DELAY)
-```
+![](images/flight-stats17_1.png)
+
+And, start typing 'DEP_DELAY'
 
 ![](images/flight-stats17.png)
 
-Once you hit 'Run' button, you can see not only 'ARR_DELAY' and 'DEP_DELAY' columns, but also 'CARRIER' column. This is because 'CARRIER' column has been set as a grouping key with 'group_by()' command above.
+This will eventually build a command like below.
 
-Now, click '+' (Plus) button and select 'Liner Regression' or start typing 'do_lm' in the command input.
-
-
-Select 'ARR_DELAY' from the suggested list because we want to test whether we can predict 'ARR_DELAY' values based on the presented columns, in this case they are CARRIER and  DEP_DELAY, in a linear fashion.
+```
+build_lm(ARR_DELAY ~ DEP_DELAY, keep.source = FALSE)
+```
 
 Hit 'Run' button.
 
 ![](images/flight-stats18.png)
 
-The command above has just built a linear regression model using R's ```lm()``` function to predict 'ARR_DELAY' values with all the other columns values in the data frame, in this case they are 'DEP_DELAY' and 'CARRIER'. You can see the predicted values (fitted values), the residuals (the distance between the actual 'ARR_DELAY' values and the predicted values), and others.
-
-With this, you can go to Chart view and visualize these data. For example, you can visualize the residuals by assigning '.fitted' column to X-axis and '.resid' column to Y-axis.
+The command above has just built a linear regression model using R's ```lm()``` function and store the model inside the data frame. Because of the 'Grouping' step before there are multiple models being built per each CARRIER. You can mouse over on the model column to see the summary information of each model quickly.
 
 ![](images/flight-stats19.png)
 
-What if we want to see the coefficient information of this linear regression model ? You can add an additional argument to the ```do_lm()``` command to get such information. Let's go back to Table view.
-
-And add ```type = "tidy"``` inside ```do_lm()``` command like below.
-
-```
-do_lm(ARR_DELAY, type="tidy")
-```
-
-![](images/flight-stats20.png)
-
-This will give you the coefficient information of the model for each CARRIER. Now, if you change the argument value to be "glance" and hit 'Run' button,
+Let's say you want to compare R squared values among the carriers. You can select 'Extract summary info (model level)' from the column header menu like below.
 
 ![](images/flight-stats21.png)
 
-Now, you can see the information like 'R squared', 'AIC', etc, for each CARRIER.
+One you hit 'Run' button you will see all the summary information for all the carriers are in the table.
+
+![](images/flight-stats22.png)
+
+With this, you can go to Chart view and visualize these data. For example, you can compare the R squared values among the carriers with Bar chart like below.
+
+![](images/flight-stats23.png)
+
+What if you want to see the residuals, which are the differences between the actual values and the model fitted (or predicted) values? You can actually quickly extract these data by selecting 'Extract model data' at 'Linear Regression' step like below.
+
+![](images/flight-stats24.png)
+
+Once you hit 'Run' button you now see the model data in the table.
+
+![](images/flight-stats25.png)
+
+You can go to Chart view and compare the residuals and fitted values, for example, like below.  
+
+![](images/flight-stats26.png)
+
 
 
 ## Perform Clustering analysis with kmeans
+
+Let's build a clustering model and segment the data based on ARR_DELAY and DEP_DELAY.
+
+
+
 
 Out of these flights data, can we segment them into small number of groups and find what makes them similar within each group ?
 
