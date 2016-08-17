@@ -4,14 +4,19 @@
 
 ### New Features
 
-- Pivot Table
+- Pivot Table - You can now use Pivot Table to summarize data quickly and spot patterns and trends by using color. Here is a [blog post](https://blog.exploratory.io/introducing-pivot-table-1c9c949fd2d6#.z8dwtwbx9) introducing Pivot Table.
 
 ### Enhancements
 
-- Google Analytics - Goal
+- Google Analytics - Goal Data Support - Now you can bring Goals related data by selecting the related dimensions and measures. This is useful to understand and analyze 'conversion funnel'.
+- Highlight data frame names, which are joined to the currently selected data frame, in the left hand side pane.
+- Chart - it supports multiple color palettes when categorical columns (e.g. character) are assigned to Color. Also, you can customize the color palette using hex codes. 
+- It shows the number of the returned data rows in Data Import dialog.
 
 ### Bug fixes
 
+- Now you can import large data file even for Windows. Before this fix, it was throwing an error when trying to import large size data that was bigger than 2 GB, only for Windows.
+- Error validation for Branch name conflict used to close Branch name entry pop-up. Now it shows the error but you can still update the name in the same dialog.
 
 ## R 1.8.0
 
