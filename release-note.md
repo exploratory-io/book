@@ -2,6 +2,8 @@
 
 ## R 1.9.0
 
+Released on 8/16/2016
+
 ### New Features
 
 - Pivot Table - You can now use Pivot Table to summarize data quickly and spot patterns and trends by using color. Here is a [blog post](https://blog.exploratory.io/introducing-pivot-table-1c9c949fd2d6#.z8dwtwbx9) introducing Pivot Table.
