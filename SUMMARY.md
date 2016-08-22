@@ -30,7 +30,7 @@
    * [Pin](chart/pin.md)
    * [Custom Color](chart/color.md)
 * [Pivot](pivot.md)
-* [Branch](branch.md)
+* [Branch](branch/branch.md)
 * [R Package Install](r_package.md)
 * [Custom R Script](r_script.md)
 * [Data Transformation](data_transform.md)
