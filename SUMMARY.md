@@ -12,7 +12,7 @@
    * [Text Analysis / Text Mining](tutorials/text-analysis.md)
    * [Analyze Log file with URL Data](tutorials/log-url.md)
    * [Analyze Github Data]
-   * [Analyze Time Series Data - Yahoo Finance]
+   * [Time Series Data Analysis]
 * [Data Import](data_import.md)
    * [Local Text Files](local-data.md)
       * [CSV / Delimited](import/delimited.md)

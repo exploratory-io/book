@@ -1,5 +1,22 @@
 # Release Note
 
+## R 1.9.1
+
+Released on 8/23/2016
+
+### New Features
+
+- Window Function support for Chart
+
+### Enhancements
+
+- Chart - Custom color palette support for Numeric Data
+- Chart - Map - continuous color scaling support
+
+### Bug fixes
+
+
+
 ## R 1.9.0
 
 Released on 8/16/2016
