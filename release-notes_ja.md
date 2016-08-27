@@ -22,7 +22,7 @@ Released on 8/26/2016
 
 ### Bug fixes
 
-- Data in Legend was not respecting the sorting order that is set as Factor column. (Ordered Factor)
+- レジェンドポジションにあるデータが、Factor列としてセットされていたときに、順番をソートできなかった問題を修正しました。
 
 ## R 1.9.0
 
