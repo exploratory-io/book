@@ -1,20 +1,28 @@
 # Release Note
 
-## R 1.9.1
+## R 1.10
 
-Released on 8/23/2016
+Released on 8/26/2016
 
 ### New Features
 
-- Window Function support for Chart
+- The following window calculations are quickly accessible as part of Bar, Line, Area charts.
+  - Running Total / Cumulative
+  - % of Total
+  - Difference from
+  - % Difference from
+  - Moving (Rolling) calculations) 
 
 ### Enhancements
 
-- Chart - Custom color palette support for Numeric Data
-- Chart - Map - continuous color scaling support
+- Chart - Now all the layout related configurations (e.g. Title, Margin, Legend position, etc.) are managed in a single place, which can be invoked by clicking on 'Layout' button.  
+- Chart - You can set the Legend position (right, left, top, bottom)
+- Chart - Area chart is stacked as default, which would give you a much better visual representation of the data.
+- Pivot Table - You can click on the column header to sort the data. This sorting also work on the shared Pivot Table at exploratory.io as well.
 
 ### Bug fixes
 
+- Data in Legend was not respecting the sorting order that is set as Factor column. (Ordered Factor)
 
 
 ## R 1.9.0
