@@ -1,5 +1,29 @@
 # リリースノート
 
+## R 1.10
+
+Released on 8/26/2016
+
+### New Features
+
+- 以下のWindow関数がBar, Line, Areaチャートから選択できるようになりました。
+  - Running Total / Cumulative
+  - % of Total
+  - Difference from
+  - % Difference from
+  - Moving (Rolling) calculations)
+
+### Enhancements
+
+- Title, Margin, Legendポジションのようなチャートのすべてのレイアウトが、レイアウトボタンからまとめて設定できるようになりました。
+- チャートのレジェンドポジションを右や、左や上や下に設定できるようになりました。
+- エリアチャートがデフォルトで、より良いデータビジュアライゼーションを提供するstackedになるようになりました。
+- Pivotテーブルで、データをソートするために、列をクリックできるようになりました。このソートは、exploratory.ioで公開されているPivotテーブルでもうまく動きます。
+
+### Bug fixes
+
+- Data in Legend was not respecting the sorting order that is set as Factor column. (Ordered Factor)
+
 ## R 1.9.0
 
 ### New Features
