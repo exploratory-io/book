@@ -6,16 +6,16 @@ Released on 8/26/2016
 
 ### New Features
 
-- 以下のWindow関数がBar, Line, Areaチャートから選択できるようになりました。
+- 以下のWindow関数がBar, Line, Areaチャートから直接使えるようになりました。
   - Running Total / Cumulative
   - % of Total
   - Difference from
   - % Difference from
-  - Moving (Rolling) calculations)
+  - Moving (Rolling) calculations - 移動平均等
 
 ### Enhancements
 
-- Title, Margin, Legendポジションのようなチャートのすべてのレイアウトが、レイアウトボタンからまとめて設定できるようになりました。
+- Title, Margin, Legendポジションのようなチャートのレイアウトに関する設定が、レイアウトボタンからまとめてできるようになりました
 - チャートのレジェンドポジションを右や、左や上や下に設定できるようになりました。
 - エリアチャートがデフォルトで、より良いデータビジュアライゼーションを提供するstackedになるようになりました。
 - Pivotテーブルで、データをソートするために、列をクリックできるようになりました。このソートは、exploratory.ioで公開されているPivotテーブルでもうまく動きます。
