@@ -15,6 +15,7 @@
 * [Data Import](data_import.md)
    * [Local Data Files]()
    * [Remote Data]()
+      * [Create Connection](import/connection.md)
       * [MongoDB](import/mongodb.md)
       * [MySQL DB](import/mysql.md)
       * [Amazon Redshift](import/redshift.md)
