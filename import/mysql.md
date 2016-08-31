@@ -4,7 +4,7 @@ You can quickly import data from your MySQL Database into Exploratory.
 
 ## 1. Create a Connection to use
 
-Create a connection following [this instruction](connection.html).
+Create a connection following [this instruction](connection.md).
 
 ## 2. Open MySQL Import dialog
 
@@ -55,7 +55,7 @@ from airline_2016_01
 where fl_date > @{cutoff_date}
 ```
 
-Here's a [blog post](https://blog.exploratory.io/using-variables-in-sql-query-2740924d9f20#.bdcn5v68x) for more detail. 
+Here's a [blog post](https://blog.exploratory.io/using-variables-in-sql-query-2740924d9f20#.bdcn5v68x) for more detail.
 
 ## 5. AWS Security Group Setup (Only for Amazon RDS)
 
