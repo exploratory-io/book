@@ -114,7 +114,7 @@ We have a plan to support this. If you have such requirement please contact supp
 
 ## I have very sensitive data. Where my data is stored ?
 
-Once you import your data into Exploratory it stays inside Exploratory Desktop's repository that is located on your PC, under ~/.exploratory. Your data stays on your PC and never leave your PC.
+Once you import your data into Exploratory it stays inside Exploratory Desktop's repository that is located on your PC, under ~/.exploratory. Your data stays on your PC and never leave your PC unless you share it in Public mode. 
 
 ## Can I change my username ?
 
