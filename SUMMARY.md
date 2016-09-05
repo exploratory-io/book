@@ -11,7 +11,7 @@
    * [Working with Text Data](tutorials/text-data.md)
    * [Text Analysis / Text Mining](tutorials/text-analysis.md)
    * [Analyze Log file with URL Data](tutorials/log-url.md)
-   * [Time Series Data Analysis]
+   * [Time Series Data Analysis](tutorials/time-series.md)
 * [Data Import](data_import.md)
    * [Local Data Files]()
    * [Remote Data]()

@@ -1,5 +1,28 @@
 # Release Note
 
+## R 1.11
+
+Released on 9/7/2016
+
+### Enhancements
+
+- Pivot Table - Support Text / Numeric for Row - this will make the sorting better
+- Chart: Multiple Y-Axis support
+- Chart: Sorting
+
+
+## R 1.10.1
+
+Released on 8/29/2016
+
+### Enhancements
+
+- Support SSL for MongoDB connection
+
+### Bug fixes
+
+- You don't need to enter username/password for MongoDB when they are not set, typical for the local MongoDB setup scenario.
+
 ## R 1.10
 
 Released on 8/26/2016
@@ -11,7 +34,7 @@ Released on 8/26/2016
   - % of Total
   - Difference from
   - % Difference from
-  - Moving (Rolling) calculations) 
+  - Moving (Rolling) calculations)
 
 ### Enhancements
 
