@@ -34,7 +34,7 @@ After you select the file from the file picker dialog and hit OK, you'll see the
 ![](images/flight-data-import.png)
 
 
-Since the data is showing up ok, you can keep the parameters as default and click 'Import' button.
+Since the data is showing up ok, you can keep the parameters as default and click 'Save' button.
 
 ## Summary data view
 
@@ -273,7 +273,7 @@ Then, go to the 'Mutate' step and replace ```min_rank()``` with ```dense_rank()`
 
 ![](images/flight-basic32.png)
 
-## Conclusion  
+## Conclusion
 
 As you have seen, by using the combination of group_by(), summarize(), and mutate() flexibly you can do many amazing things quickly with Exploratory.
 
