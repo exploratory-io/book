@@ -10,7 +10,7 @@ We're going to use the following file for this tutorial. You can download it fro
 
 Once you start Exploratory app, create a new project to start.
 
-![](images/getting-started1.png)
+![](images/getting-started0.png)
 
 Type a project name and click 'Create' button.
 
@@ -26,12 +26,12 @@ Select 'Import Local Data'.
 
 ![](images/quick-start4.png)
 
-After you select the file from the file picker dialog and hit OK, you'll see the first 10 rows of the data you're importing.
+After you select the file from the file picker dialog and hit OK, you'll see the first 50 rows of the data you're importing.
 
 ![](images/flight-data-import.png)
 
 
-Since the data is showing up ok, you can keep the parameters as default and click 'Import' button.
+Since the data is showing up ok, you can keep the parameters as default and click 'Save' button.
 
 ## Summary data view
 
@@ -88,17 +88,21 @@ Click the dropdown menu from FL_DATE column header area, select 'Extract' and 'D
 
 ![](images/quick-start11.png)
 
-Once you click 'Run' button you will see that a new column is create at the end and it has week days.
+Type FL_DATE_wday in New Column Name.
 
 ![](images/quick-start12.png)
 
-You can always see Syntax Help by having the cursor inside the function if you are interested in.
+Once you click 'Run' button you will see that a new column is create at the end and it has week days.
+
+![](images/quick-start12.5.png)
+
+You can always see Syntax Help by clicking Doc inside the function if you are interested in.
 
 ![](images/quick-start13.png)
 
 ## Visualize data
 
-You can quickly visualize the data again by going back to Chart view.
+You can quickly visualize the data again by going back to Viz view.
 
 Assign the new column 'FL_DATE_wday' to X-Axis and 'ARR_DELAY' to Y-Axis, and switch the aggregation function to 'Average.'
 
