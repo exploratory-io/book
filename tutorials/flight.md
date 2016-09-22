@@ -34,11 +34,11 @@ After you select the file from the file picker dialog and hit OK, you'll see the
 ![](images/flight-data-import.png)
 
 
-Since the data is showing up ok, you can keep the parameters as default and click 'Import' button.
+Since the data is showing up ok, you can keep the parameters as default and click 'Save' button.
 
 ## Summary data view
 
-Once the data is imported you can see a brief summary of the data in Summary view. It shows 25 columns and 445,827 rows at the top, and you can also see some of the columns' sneak peak view. For example, you can see the most frequently appeared airline carriers in CARRIER column.
+Once the data is imported you can see a brief summary of the data in Summary view. It shows 26 columns and 445,827 rows at the top, and you can also see some of the columns' sneak peak view. For example, you can see the most frequently appeared airline carriers in CARRIER column.
 
 ![](images/flight-summary.png)
 
@@ -66,15 +66,17 @@ Now FL_NUM column is gone.
 
 Let's remove other columns. There are columns whose names start with "ORIGIN", and you can delete them all together by using one of the convenient functions called 'starts_with()' inside the 'Select' command.
 
-Type ',' (comma) right after '-FL_NUM', select '-' from the suggested list, then select ```starts_with()``` function from the suggested list.
+Press '+' right after '-FL_NUM', press 'Function' from the dialog.
 
 ![](images/flight-select-starts-with.png)
 
-Inside this ```starts_with()``` function, type "ORIGIN", and  hit 'Run' button.
+Then select Exclude and  ```starts_with()``` function from the Function Type. Inside this ```starts_with()``` function, type "ORIGIN" in Matching Text, and  hit 'Run' button.
 
 ![](images/flight-select-starts-with2.png)
 
 Now those columns whose names starting with "ORIGIN" are all gone!
+
+![](images/flight-select-starts-with3.png)
 
 The final command would be something like below.
 
@@ -95,7 +97,7 @@ Select 'Extract' and 'Day of week' from the column header dropdown menu.
 
 ![](images/flight-basic5.png)
 
-As you can see in the syntax help that shows up right underneath the command input area, there are a few options to get different results.
+Type FL_DATE_wday in New Column Name. As you can see in the syntax help that shows up right the dialog when you click Doc inside the function, there are a few options to get different results.
 
 ![](images/flight-basic6.png)
 
@@ -107,7 +109,7 @@ You can update the column name by typing 'weekday' instead of 'FL_DATE_wday' ins
 
 ![](images/flight-basic8.png)
 
-One cool thing about this is that the result data type is something called 'ordered factor', which means that when you want to sort on this column it would respect the order of the weekdays starting from Sunday and ending at Saturday. You can quickly check this out by going to Chart view and assign this column 'weekday' to X-Axis. Make sure you uncheck the 'Sort' check box next to Y-Axis to disable Y-Axis level sorting.
+One cool thing about this is that the result data type is something called 'ordered factor', which means that when you want to sort on this column it would respect the order of the weekdays starting from Sunday and ending at Saturday. You can quickly check this out by going to Viz view and assign this column 'weekday' to X-Axis. Make sure you uncheck the 'Sort' check box next to Sort-Axis to disable Y-Axis level sorting.
 
 ![](images/flight-weekday-chart.png)
 
@@ -273,7 +275,7 @@ Then, go to the 'Mutate' step and replace ```min_rank()``` with ```dense_rank()`
 
 ![](images/flight-basic32.png)
 
-## Conclusion  
+## Conclusion
 
 As you have seen, by using the combination of group_by(), summarize(), and mutate() flexibly you can do many amazing things quickly with Exploratory.
 
