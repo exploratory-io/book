@@ -273,7 +273,7 @@ Then, go to the 'Mutate' step and replace ```min_rank()``` with ```dense_rank()`
 
 ![](images/flight-basic32.png)
 
-## Conclusion  
+## Conclusion
 
 As you have seen, by using the combination of group_by(), summarize(), and mutate() flexibly you can do many amazing things quickly with Exploratory.
 

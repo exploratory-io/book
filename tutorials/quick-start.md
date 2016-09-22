@@ -136,4 +136,4 @@ You can see your chart is shared at exploratory.io.
 
 You can also click on Data tab and see how the data was prepared.
 
-![](images/quick-start38.png)
+![](images/git.png)
