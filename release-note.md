@@ -1,14 +1,27 @@
 # Release Note
 
-## R 1.11
+## R 2.0
 
-Released on 9/7/2016
+Released on 9/21/2016
+
+## New Features
+
+- UI Assistant for dplyr - grammar based data wrangling and analysis commands
+- Support sharing of Chart and Data in a private mode.
+- Association Rules (arules) - using 'arules' package to calculate the association rules.
 
 ### Enhancements
 
-- Pivot Table - Support Text / Numeric for Row - this will make the sorting better
-- Chart: Multiple Y-Axis support
-- Chart: Sorting
+- Pivot Table - Support of switching between Text / Numeric for Row - this will make the sorting better.
+- Chart: Multiple Y-Axis support - You can now add more than one column to Y-Axis.
+- Chart: Sorting for Bar chart - You can now control which Y-Axis column to use for the sorting and the order of the sorting between Ascending and Descending.
+- Note: Pivot support - Now you can embed Pivot Table inside Note.
+- URL related functions - Standardize the interface for URL text data wrangling related functions.
+
+
+### Bug fixes
+
+- Google BigQuery - Show more than 50 data tables
 
 
 ## R 1.10.1

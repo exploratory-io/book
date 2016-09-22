@@ -54,7 +54,7 @@ In the event that Exploratory takes action to suspend or terminate an account, w
 
 Exploratory reserves the right at any time and from time to time to modify or discontinue, temporarily or permanently, the Product and Service (or any part thereof) with or without notice.
 
-Prices of all Services, including but not limited to monthly subscription plan fees to the Service, are subject to change upon 30 days notice from us. Such notice may be provided at any time by posting the changes to the Exploratory Site (github.com) or the Service itself.
+Prices of all Services, including but not limited to monthly subscription plan fees to the Service, are subject to change upon 30 days notice from us. Such notice may be provided at any time by posting the changes to the Exploratory Site (exploratory.io) or the Service itself.
 
 Exploratory shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.
 
@@ -101,4 +101,3 @@ The failure of Exploratory to exercise or enforce any right or provision of the 
 Questions about the Terms of Service should be sent to support@exploratory.io.
 
 Map data copyright OpenStreetMap contributors and licensed under the Open Data Commons Open Database License. Map design and imagery subject to the MapBox Terms of Service.
-
