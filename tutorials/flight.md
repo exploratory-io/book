@@ -136,9 +136,17 @@ count(CARRIER, wt = n(), sort = TRUE)
 ### Calculate the proportion (percentage / ratio)
 
 For the newly created 'counts' column values,
-Let's say you also want to know the proportion (percentage) of the 'counts' values against the total counts. You can click the gear icon next to ‘Y Axis’. This will open ‘Window (Table) Calculation’ dialog and select ‘% of Total’ from the list.
+Let's say you also want to know the proportion (percentage) of the 'counts' values against the total counts. You can click the gear icon next to ‘Y Axis’.
 
+![](images/flight-carrier-ratio1.png)
 
+This will open ‘Window (Table) Calculation’ dialog and select ‘% of Total’ from the list.
+
+![](images/flight-carrier-ratio2.png)
+
+Now we can visualize the rate.
+
+![](images/flight-carrier-ratio3.png)
 
 You can see AA has 16.95 % of the all flights in this data.
 
