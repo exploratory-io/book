@@ -2,11 +2,11 @@
 
 ## How can I report issues, bugs, or enhancement requests ?
 
-Please feel free to contact [support@exploratory.io](mailto:support@exploratory.io) with any question! We would love to hear any feedback!  
+We have a [community page](https://community.exploratory.io) where our users post questions/suggestions and report issues. If you need an immediate help feel free to contact [support@exploratory.io](mailto:support@exploratory.io).
 
 ## What is the best way to keep myself updated with the news ?
 
-Please follow [@KanAugust](https://twitter.com/KanAugust) at Twitter or subscribe our blog: http://blog.exploratory.io .
+Please follow [@ExploratoryData](https://twitter.com/ExploratoryData) at Twitter or subscribe our blog: http://blog.exploratory.io .
 
 ## Is Mac OS X supported ?
 
@@ -18,7 +18,7 @@ We are working on it to support Windows 10 and 8 first. Can't promise you an exa
 
 ## Is Linux supported ?
 
-We have a plan to support Linux platform as well.
+We have a plan to support Linux platform as well. Please contact at [support@exploratory.io](mailto:support@exploratory.io)
 
 ## I'm having a network connection issue, what should I do?
 
@@ -102,7 +102,7 @@ Git version requirement is loosened recently and the latest Exploratory Desktop 
 
 ## What R packages are you installing and why ?
 
-Exploratory Desktop uses a number of amazing R packages, most of which are coming from 'Hadleyverse' - a set of R packages to make your data wrangling and analysis more effective and fun. You can see a list of the R packages to be installed in the initial setup UI by clicking a blue text 'See a list of software and libraries to be installed.' or select 'View Licenses' from Toolbar menu / Help. These are the packages that we use to make your data access and data analysis more effective.
+Exploratory Desktop uses a number of amazing R packages, most of which are coming from 'tidyverse' - a set of R packages to make your data wrangling and analysis more effective and fun. You can see a list of the R packages to be installed in the initial setup UI by clicking a blue text 'See a list of software and libraries to be installed.' or select 'View Licenses' from Toolbar menu / Help. These are the packages that we use to make your data access and data analysis more effective.
 
 ## Where are you installing R packages ?
 
@@ -110,11 +110,11 @@ The recent version of Exploratory Desktop (1.4.1 or later) installs them into Ex
 
 ## Can I add my preferred R packages ?
 
-We have a plan to support this. If you have such requirement please contact support@exploratory.io . We would love to hear your requirement and discuss how to make it possible.
+Yes! Here's an [introduction](https://blog.exploratory.io/installing-r-packages-from-cran-in-exploratory-desktop-36eae50cffb0#.u2iee7i5j) on how to install and use R packages from CRAN.
 
 ## I have very sensitive data. Where my data is stored ?
 
-Once you import your data into Exploratory it stays inside Exploratory Desktop's repository that is located on your PC, under ~/.exploratory. Your data stays on your PC and never leave your PC unless you share it in Public mode. 
+Once you import your data into Exploratory it stays inside Exploratory Desktop's repository. If you are working with private and sensitive data we'd recommend you consider to subscribe Personal plan. See [this page](https://exploratory.io/pricing) for more information.
 
 ## Can I change my username ?
 
