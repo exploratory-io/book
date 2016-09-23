@@ -114,112 +114,64 @@ One cool thing about this is that the result data type is something called 'orde
 ![](images/flight-weekday-chart.png)
 
 
-## Summarize (Aggregate) - Count rows and Count uniques
+## Count rows and Count uniques
 
 Let's find out how many flights per each carrier there are in this data. To do this, let's go to Table view and see the result better.
 
 ![](images/flight-table-view.png)
 
-Click the downward arrow icon next to 'CARRIER' column name and select '' the plus '+' button to add group_by() command.
+We want to count many flights per each carrier by using the ‘count’ command below. You can construct this command from the column header menu. Click on ‘Count’.
 
-![](images/flight-basic9.png)
+![](images/flight-carrier-count.png)
 
-And, hit 'Run' button.
-
-You would notice now that it is showing '12 Groups' in the data summary information area above the table. You can click on it to see which column(s) is set for the grouping.
-
-![](images/flight-group-by-carrier2.png)
-
-Once the grouping level is set, let's get the aggregated calculation.
-
-Click the dropdown menu on any column and select 'n'.
-
-![](images/flight-basic10.png)
-
-'n()' function is basically a count function that counts all the rows for each group.
-
-Update the column name to be created to be 'counts', then hit 'Run' button.
-
-![](images/flight-basic11.png)
-
-You should see only two columns, one is for the grouping column and the other is for this aggregated value column 'counts'.
-
-Now, let's say you want to find out how many states each carriers are flying to. You can use ```n_distinct()``` function to count unique values of 'DEST_STATE_ABR' column inside the same ```summarize``` command like below.
-
-![](images/flight-basic12.png)
-
-You can see AA (American Airline) is flying to 43 States while Hawaiian Airline is flying to only 8 States.
-
-The final command is something like below.
+Here is the final command we want to run.
 
 ```
-summarize(count = n(), number_of_states = n_distinct(DEST_STATE_ABR))
+count(CARRIER, wt = n(), sort = TRUE)
 ```
+
+![](images/flight-carrier-count2.png)
 
 
 ### Calculate the proportion (percentage / ratio)
 
 For the newly created 'counts' column values,
-Let's say you also want to know the proportion (percentage) of the 'counts' values against the total counts. You can use ```sum()``` function to calculate the total and use the result to divide each of the 'counts' values. You can do this operation with ```mutate()``` command, which would simply create a new column for doing such calculation for each row. Note that ```summarize()``` would calculate values in an aggregated fashion meaning the result of the ```summarize``` operation will be less number of rows, while ```mutate``` operation doesn't aggregate, instead the result of the operation will keep the same number of the original rows.
+Let's say you also want to know the proportion (percentage) of the 'counts' values against the total counts. You can click the gear icon next to ‘Y Axis’.
 
-Select 'Create an expression' from the dropdown menu next to 'count' column name.
+![](images/flight-carrier-ratio1.png)
 
-![](images/flight-basic13.png)
+This will open ‘Window (Table) Calculation’ dialog and select ‘% of Total’ from the list.
 
-You will be suggested for a list of the columns and functions, select 'counts' column.
+![](images/flight-carrier-ratio2.png)
 
-![](images/flight-basic14.png)
+Now we can visualize the rate.
 
-Typing a space right after 'counts', you will see a list of the operators you can use to create a calculation. Select '/' (division) operator.
-
-![](images/flight-basic15.png)
-
-Click 'Open Function Selector' menu at the bottom of the suggestion list.
-
-![](images/flight-basic16.png)
-
-Select 'Aggregate' from the category dropdown and select 'sum' function, and either double click on the function name or click on 'Insert Function' button at the top.
-
-![](images/flight-basic17.png)
-
-Select 'counts' column from the suggested list.
-
-![](images/flight-basic18.png)
-
-Change the column name to be created to 'ratio', and hit 'Run' button.
-
-![](images/flight-basic19.png)
+![](images/flight-carrier-ratio3.png)
 
 You can see AA has 16.95 % of the all flights in this data.
 
 
-### Update existing grouping setting
+### Update existing Count setting
 
-Now, let's say you want to see which US States each carrier is flying to and how many flights there are for each of States. You can do this very easily by clicking on the 'Grouping' step at the right hand side to go back to this particular step.
+Now, let's say you want to see which US States each carrier is flying to and how many flights there are for each of States. You can do this very easily by clicking on the 'Count' step at the right hand side to go back to this particular step.
 
-![](images/flight-basic20.png)
+![](images/flight-update-count1.png)
 
+And, update the existing command to add DEST_STATE_ABR column right after CARRIER column.
 
-And, update the existing command to add DEST_STATE_ABR column right after CARRIER column, and hit 'Run' button.
+![](images/flight-update-count2.png)
 
-![](images/flight-basic21.png)
+Hit 'Run' button.
 
-You would notice that the number of the groups is 384 groups and the grouping levels are set to 'CARRIER' and 'DEST_STATE_ABR'.
-
-![](images/flight-basic22.png)
-
-Now, click the last step 'Mutate' in the right hand side.
-
-![](images/flight-basic23.png)
+![](images/flight-update-count3.png)
 
 You would notice that there are now 384 rows instead of the 14 rows like before.
 
-This is because now each carrier has rows for all the States it's flying to. And the aggregated calculations like 'count', 'number_of_states', 'ratio' have been just re-calculated automatically when you clicked on the 'Mutate' step to reflect the change with 'Grouping' step. The 'ratio' column is now showing the ratio against each carrier group instead of the entire total. You can visualize this to understand it better in Chart view.
+You can visualize this to understand it better in Chart view.
 
 Each bar is representing each carrier, and you can see the ratio of US States within each carrier.
 
-![](images/flight-basic24.png)
-
+![](images/flight-update-count4.png)
 
 ### Window Function - Rank
 
