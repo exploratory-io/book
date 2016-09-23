@@ -151,33 +151,27 @@ Now we can visualize the rate.
 You can see AA has 16.95 % of the all flights in this data.
 
 
-### Update existing grouping setting
+### Update existing Count setting
 
-Now, let's say you want to see which US States each carrier is flying to and how many flights there are for each of States. You can do this very easily by clicking on the 'Grouping' step at the right hand side to go back to this particular step.
+Now, let's say you want to see which US States each carrier is flying to and how many flights there are for each of States. You can do this very easily by clicking on the 'Count' step at the right hand side to go back to this particular step.
 
-![](images/flight-basic20.png)
+![](images/flight-update-count1.png)
 
+And, update the existing command to add DEST_STATE_ABR column right after CARRIER column.
 
-And, update the existing command to add DEST_STATE_ABR column right after CARRIER column, and hit 'Run' button.
+![](images/flight-update-count2.png)
 
-![](images/flight-basic21.png)
+Hit 'Run' button.
 
-You would notice that the number of the groups is 384 groups and the grouping levels are set to 'CARRIER' and 'DEST_STATE_ABR'.
-
-![](images/flight-basic22.png)
-
-Now, click the last step 'Mutate' in the right hand side.
-
-![](images/flight-basic23.png)
+![](images/flight-update-count3.png)
 
 You would notice that there are now 384 rows instead of the 14 rows like before.
 
-This is because now each carrier has rows for all the States it's flying to. And the aggregated calculations like 'count', 'number_of_states', 'ratio' have been just re-calculated automatically when you clicked on the 'Mutate' step to reflect the change with 'Grouping' step. The 'ratio' column is now showing the ratio against each carrier group instead of the entire total. You can visualize this to understand it better in Chart view.
+You can visualize this to understand it better in Chart view.
 
 Each bar is representing each carrier, and you can see the ratio of US States within each carrier.
 
-![](images/flight-basic24.png)
-
+![](images/flight-update-count4.png)
 
 ### Window Function - Rank
 
