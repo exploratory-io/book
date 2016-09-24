@@ -2,7 +2,7 @@
 
 ## Download Flight Delay sample data
 
-We're going to use the following file for this tutorial. You can download it from the link below. 
+We're going to use the following file for this tutorial. You can download it from the link below.
 
 - [Flight delay 2016 January data](http://download.exploratory.io/data/airline_delay_2016_01.csv)
 
@@ -10,7 +10,7 @@ We're going to use the following file for this tutorial. You can download it fro
 
 Once you start Exploratory app, create a new project to start.
 
-![](images/getting-started0.png)
+![](images/getting-started1.png)
 
 Type a project name and click 'Create' button.
 
