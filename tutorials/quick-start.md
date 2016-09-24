@@ -2,7 +2,7 @@
 
 ## Download Flight Delay sample data
 
-We're going to use the following file for this tutorial. You can download it from [here](http://download.exploratory.io/data/airline_delay_2016_01.csv).
+We're going to use the following file for this tutorial. You can download it from the link below. 
 
 - [Flight delay 2016 January data](http://download.exploratory.io/data/airline_delay_2016_01.csv)
 
