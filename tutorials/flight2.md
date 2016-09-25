@@ -15,29 +15,32 @@ Because you can do many interesting ways of filtering the data with Exploratory 
 - Filtering with Top N - top_n()
 
 
+## Download Flight Delay sample data
+
+We're going to use the following file for this tutorial. You can download it from the link below.  
+
+- [Flight delay 2016 January data](http://download.exploratory.io/data/airline_delay_2016_01.csv)
+
+## Create a new project
+
+Once you start Exploratory app, create a new project to start, if you haven't.
+
+![](images/getting-started1.png)
+
 
 ## Import sample data
 
-We are going to create a new data frame by importing the same CSV file, 'airline_delay_part1.csv', we used in the part 1 tutorial. If you haven't downloaded it yet, you can download from the link below.
+Inside the project, you can click a plus '+' icon next to 'Data Frame' text in the left side pane to import 'airline_delay_2016_01.csv'.
 
-- Airline delay part 1 (link is still under development)
+![](images/getting-started2.png)
 
-Inside the same project or a new project, you can click a plus '+' icon next to 'Data Frame' text in the left side pane to import 'airline_delay_part1.csv'.
-
-![](images/flight-add-data-frame.png)
-
-After you select the file from the file picker dialog and hit OK, you'll see the first 10 rows of the data you're importing.
+After you select the file from the file picker dialog and hit OK, you'll see the preview data.
 
 ![](images/flight-data-import.png)
 
 
-Keep the parameters as default and click 'Import' button.
+Since the data is showing up ok, you can keep the parameters as default and click 'Save' button.
 
-You can see a brief summary of the data in Summary view. It shows 26 columns and 234,634 rows at the top.
-
-![](images/flight-summary.png)
-
-Ok, let's begin.
 
 ## Basic Filtering
 
