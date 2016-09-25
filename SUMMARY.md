@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Tutorials (English)](tutorials/intro.md)
    * [Quick Start Guide](tutorials/quick-start.md)
-   * [Analyze Data - Basic](tutorials/flight.md)
+   * [Data Wrangling / Analysis Grammar - Basic](tutorials/flight.md)
    * [Joining and Merging Data](tutorials/flight3.md)
    * [Statistical Data Analysis](tutorials/flight4.md)
    * [Working with JSON Data](tutorials/yelp.md)
