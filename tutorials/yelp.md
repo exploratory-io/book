@@ -2,12 +2,13 @@
 
 ### What you are going to learn
 
+- Selecting / Removing columns
 - Working with the list data type / nested (array) data
 - Counting number of the values inside the list
 - Extracting Nth value from the nested data
-- Concatenate values from the nested data
 - Finding text patterns inside the nested data
 - Un-nesting (flatten) the nested data
+- Analyzing with Summarize, Top 10, and Window Calculation operations
 
 
 ## About Yelp business review sample JSON data
@@ -91,27 +92,28 @@ The data is about businesses on Yelp in the selected areas. You can find informa
 }
 ```
 
-As often with JSON data, the data is hierarchically structured. For example, 'hours' node has two levels, one is about the day of the week and another is about the opening hours within each day of the week. With Exploratory, these hierarchical structures will be flatten out at the data import time so that the lowest level of the element will have its own column. In this case, 'hours.Saturday.open' will have its own column, 'hours.Saturday.close' will have its own column, and so on.
+As often with JSON data, the data is hierarchically structured. For example, 'hours' node has two levels. With Exploratory, the hierarchically structured data will be flatten out at the data import time so that the lowest level of the element will have its own column. For example, 'hours.Saturday.open' will have its own column.
 
-Another common characteristic of JSON data you can observe with this data as well is something called 'Array'. You can see, for example, 'categories' and 'neighborhoods' have multiple values inside the square brackets. With Exploratory, the way these data is stored will be preserved after importing data, but they are registered as List data type and we call them 'Nested' data, which mean it contains multiple values in a single list or sometimes in a data frame. These 'Nested' data can be 'Un-Nested' with ```unnest()``` function later, which we'll talk about later in this tutorial.
+Another common characteristic of JSON data is something called 'Array'. For example, 'categories' and 'neighborhoods' have multiple values inside the square brackets. With Exploratory, the way these data is stored will be preserved even after importing the data as 'List' data type. But this 'Nested' data can be 'Un-Nested' with ```unnest``` operation quickly as you will see in this tutorial.
 
 
-## Create a new project  
+## Create a new project
 
-After you open Exploratory app, create a new project.
+Once you start Exploratory app, create a new project to start, if you haven't.
 
-![](images/flight-create-project.png)
+![](images/getting-started1.png)
+
 
 
 ## Import sample data
 
 Inside the project, you can click a plus '+' icon next to 'Data Frame' text in the left side pane to import 'yelp_academic_dataset_business.json'.
 
-
-
-After you select the file from the file picker dialog and hit OK, you'll see the first 10 rows of the data you're importing. Click 'Import' button leaving the default parameter setting.
+After you select the file from the file picker dialog and hit OK, you'll see the first 200 rows of the data in Preview.
 
 ![](images/yelp-data-import.png)
+
+Click 'Save' button to import.
 
 
 
@@ -172,11 +174,11 @@ Click 'Run'
 
 You can see the number of the neighborhoods tagged with businesses are varied between 0 and 3.
 
-Let's find out what percentage does each number (0, 1, 2, 3) represent. Since the summary view gives you a histogram for each numeric and date data type column and a bar chart for each text data type column, the easiest way to do this is to convert the 'integer' data type to 'character' data type by wrapping the result of the ```list_n() ``` function with ```as.character()``` like below.  
+Let's find out the percentage of each of the numbers (0, 1, 2, 3). Since the summary view gives you a histogram for each numeric data type column and a bar chart for each text data type column, the easiest way to do this is to convert the 'integer' data type to 'character' data type by wrapping the result of the ```list_n() ``` function with ```as.character()``` like below.  
 
 ![](images/yelp-list-count3.png)
 
- When you run this command you'll see 52 businesses have 3 tags, but most of the businesses are either no tag or 1 tag of the neighborhood name.
+ When you run this command you'll see only 52 businesses have 3 tags, but most of the businesses are either no tag or 1 tag of the neighborhood name.
 
  ![](images/yelp-list-count4.png)
 
@@ -200,9 +202,9 @@ You would notice that 'categories' column is 'List' data type, which means each 
 
 ![](images/yelp-business-category.png)
 
-This type of the data structure (Array) is very common with JSON. With Exploratory, you can access to values inside of this nested data easily.
+You can access to these values inside of this nested data easily.
 
-First, let's create a new column that would have TRUE if 'categories' values include 'Restaurant', otherwise FALSE, by using ```str_detect()``` function, which would return TRUE if it detects a given a text pattern.
+First, let's create a new column that would have TRUE if one of the 'categories' values is 'Restaurant', otherwise FALSE, by using ```str_detect()``` function, which would return TRUE if it detects a given a text pattern.
 
 ![](images/yelp-list-detect.png)
 
@@ -247,8 +249,9 @@ Go to Chart view to see all the categories by assigning 'categories' to X-Axis.
 
 ![](images/yelp-unnest5.png)
 
+You can drag your mouse cursor on the chart to zoom in.
 
-![](images/yelp-unnest5.png)
+![](images/yelp-unnest5-1.png)
 
 
 ## Filter to keep only Top 10 restaurants for each State
@@ -289,7 +292,7 @@ Now, you can create a new Viz by clicking 'Add New' and select 'Bar' as Viz type
 
 If you want to see the percentage of each category for each state, you can use Window Calculation. Click a menu icon next to Y-Axis, select 'Window Calculation', and select '% of Total' from the list.
 
-![](images/yelp-summarize7.png)
+![](images/yelp-summarize8.png)
 
 
 With Exploratory, not only can you easily work with the nested and key-value nature of JSON data, but also you can flexibly assemble your analysis to answer your questions in a simple and intuitive way.
