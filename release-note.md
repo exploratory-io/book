@@ -2,6 +2,8 @@
 
 ## R 2.1
 
+Released on 9/29/2016
+
 ### Enhancements
 
 - Database Tables List in Data Import Editor: You can see a list of database tables for Amazon Redshift, PostgreSQL, MySQL, Amazon Aurora database, and click to paste the table name into SQL Editor.
@@ -18,6 +20,7 @@ Add Include and Exclude option for slice
    * bimonth and halfyear support for unit argument
    * add quarter function
    * add as_datetime
+- “Cmd+ Enter” shortcut key support for running command when you are in Expression Editor (e.g. Mutate). You can always click "Enter" key in any dialog though. 
 
 ### Bug Fixes
 
