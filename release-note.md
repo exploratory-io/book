@@ -1,5 +1,33 @@
 # Release Note
 
+## R 2.1
+
+### Enhancements
+
+- Database Tables List in Data Import Editor: You can see a list of database tables for Amazon Redshift, PostgreSQL, MySQL, Amazon Aurora database, and click to paste the table name into SQL Editor.
+- Chart: You can now pick from wide range of the color palettes even for Scatter, Cholopleth, Map, Heatmap, and Contour. Also, you can customize the color palette when it's categorical (text column).
+- Chart: Scatter: when you assign a numeric column to Color, you can set it to 'As Numeric' for treating as Continuous or 'As Text' for treating it as Categorical.
+- UI update for Association Rules (Market Basket Analysis).
+Add Include and Exclude option for slice
+- Add "not start with" and “not end with” in filter for character columns
+- Uptaken lubridate 1.6.0
+   * add yq function
+   * add parse_date_time in reference
+   * add as_datetime function
+   * remove parse_datetime and parse_date in readr package from reference
+   * bimonth and halfyear support for unit argument
+   * add quarter function
+   * add as_datetime
+
+### Bug Fixes
+
+- Non-Latin1 characters are now handled correctly on Windows. Also, you can enter Non-Latin1 characters in commands like Mutate, Filter, etc, as well.
+- Duration type is now supported in Summary view.
+- In slice command, start and end wasn’t with braces correctly (ex. 2 as start and n()-1 as end, it was 2:n()-1 which was equal to 1:(n()-1) but now, it generates 2:(n()-1))
+- In command builder “Day, Month, Year, Hour, Minute, Second” should have generated “dmy_hms” but it generated “ymd_hms” function
+- In command builder “Concatenate items" is now “Convert to text” and generates “list_to_text”, not “list_concat”
+
+
 ## R 2.0
 
 Released on 9/21/2016
