@@ -8,7 +8,7 @@ Released on 9/29/2016
 
 - Database Tables List in Data Import Editor: You can see a list of database tables for Amazon Redshift, PostgreSQL, MySQL, Amazon Aurora database, and click to paste the table name into SQL Editor.
 - Chart: You can now pick from wide range of the color palettes even for Scatter, Cholopleth, Map, Heatmap, and Contour. Also, you can customize the color palette when it's categorical (text column).
-- Chart: Scatter: when you assign a numeric column to Color, you can set it to 'As Numeric' for treating as Continuous or 'As Text' for treating it as Categorical.
+- Chart: When you assign a numeric column to Color for Scatter and Map, you can set it to 'As Numeric' for treating as Continuous or 'As Text' for treating it as Categorical.
 - UI update for Association Rules (Market Basket Analysis).
 Add Include and Exclude option for slice
 - Add "not start with" and “not end with” in filter for character columns
@@ -20,7 +20,7 @@ Add Include and Exclude option for slice
    * bimonth and halfyear support for unit argument
    * add quarter function
    * add as_datetime
-- “Cmd+ Enter” shortcut key support for running command when you are in Expression Editor (e.g. Mutate). You can always click "Enter" key in any dialog though. 
+- “Cmd+ Enter” shortcut key support for running command when you are in Expression Editor (e.g. Mutate). You can always click "Enter" key in any dialog though.
 
 ### Bug Fixes
 
