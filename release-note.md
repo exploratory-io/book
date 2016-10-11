@@ -2,12 +2,37 @@
 
 ## R 2.2
 
+Released on 10/13/2016
+
+### New Features
+
+- Multiple Steps - Copy, Cut, Delete, Hide
+
+- Download as CSV
+
+- Slack Share with Private
+
+### Enhancements
+
+- Chart: Expanded View - You can now expand the chart view area by clicking an expand button at the right hand side top.
+- Copying Data Frame - You can copy an existing data frame along with the branches and the visualizations.
+- MongoDB - Authentication DB support - Added authSource parameter support.
+- Filter operation - Added “is stopword” and “is alphabet” to the operator.
+- Changed the icon for Showing/Hiding the left hand side tree. (List of data frames area.)
+- Added 'list_concat' function to either merge multiple list columns or concatenate multiple rows with 'collapse' argument. If you want to convert the list values as text then you can use 'list_to_text' function.
+
+### Bug Fixes
+
+
+
+## R 2.2
+
 Released on 10/10/2016
 
 ### New Features
 
 - Small Multiples - It is a series of charts each of which shows only a slice of the entire data with the same scale and axes. You can create Small Multiple by assigning a column to 'Repeat By'.
-- Ne4J Graph Database support with Data Import Dialog. Now you can write Cypher query to extract data from Neo4j database.
+- Neo4J Graph Database support with Data Import Dialog. Now you can write Cypher query to extract data from Neo4j database.
 
 ### Enhancements
 
