@@ -1,5 +1,60 @@
 # リリースノート
 
+## R 2.2
+
+Released on 10/10/2016
+
+### New Features
+
+- Small multiple(小さい多数の)チャートを作ることができるようになりました。Repeat Byに列を指定することによって、複数のチャートが繰り返されます。
+- Neo4jのグラフデータベースのデータインポート機能をサポートしました。これで、Neo4JのグラフデータベースからCypherクエリを書いてデータを抽出することができるようになりました。
+
+### Enhancements
+
+- 右側の上のボタンを押して、チャート画面を拡大できるようになりました。
+- データフレームをコピーできるようになりました。ブランチとビジュアライゼーションといっしょに既存のデータフレームをコピーできます。
+- MongoDBのAuthenticationで、authSourceパラメータをサポートしました。
+- フィルタリングの操作のときに、is stopwordやis alphabetが演算子に加えられました。
+- 左側のデータフレームの一覧ページを隠したり、表示させたりするボタンのアイコンを変えました。
+- 複数のlist列や行をを結合するために、list_concat関数を加えました。さらに、listの値をテキストに変えるには、list_to_text関数が使えます。
+
+### Bug Fixes
+
+- Windows用のコマンドのUIのスタイルを修正しました。
+
+
+## R 2.1
+
+Released on 9/29/2016
+
+### Enhancements
+
+- データベース用のデータベーステーブルの一覧を見ることができるようになりました。そして、テーブルの名前をSQLにクリックして、ペーストできるようになりました。
+- Scatter、Cholopleth、Map, Heatmap,Contourのチャートタイプでも、カラー・パレットから色を選ぶことができるようになりました。また、テキスト列のときにも、カラー・パレットをカスタマイズすることができます。
+- ScatterとMapのチャートタイプで、numericタイプの列をColorに指定したとき、Continuousでも扱えるように、列をAs Numericに設定することやCategoricalでも扱えるようにAs Textに設定できます。
+- Association Rules(Market Basket Analysis)のUIを更新しました。
+- slice関数に、IncludeとExcludeオプションを加えました。
+- character列をフィルタリングするときに、"not start with"や“not end with”オプションを加えました。
+- lubridateパッケージを1.6.0にアップデートしました。
+   * yq関数が加わえられました。
+   * リファレンスで、parse_date_timeが加えられました
+   * as_datetime関数が加えられました。
+   * リファレンスから、readrパッケージで、parse_datetimeやparse_dateが除去されました。
+   * bimonthとhalfyearがunit引数をサポートしました。
+   * quarter関数が加えられました。
+   * as_datetimeが加えられました。
+- 入力画面にいるときに、ショートカットキー（Cmd+ Enter）を使って、コマンドを走らせることができるようになりました。ダイアログ内では、常にEnterキーを使うことができます。
+
+### Bug Fixes
+
+- Non-Latin1もWindowsでうまく表示されるようになりました。また、Non-Latin1文字に対しても、 MutateやFilterのようなコマンドを使えるようになりました。
+- サマリー画面で、Duration typeがサポートされました。
+- sliceコマンドで、startとend関数が正確になりました。(startが2で、endがn()-1になっていました。そして、2:n()-1と1:(n()-1が等しくなっていました。しかし、今は、2:(n()-1)になっています。)
+- コマンドビルダーで、“Day, Month, Year, Hour, Minute, Second”のとき、ymd_hms関数が入力されていましたが、dmy_hms関数が入力されるようになりました。)
+- コマンドビルダーで、“Concatenate items"が“list_concat”を入力するようになっていたのが、“Concatenate items"や“Convert to text”が入力されるようになりました。
+
+
+
 ## R 2.0
 
 Released on 9/21/2016
