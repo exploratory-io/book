@@ -14,12 +14,8 @@ Released on 10/13/2016
 
 ### Enhancements
 
-- Chart: Expanded View - You can now expand the chart view area by clicking an expand button at the right hand side top.
-- Copying Data Frame - You can copy an existing data frame along with the branches and the visualizations.
-- MongoDB - Authentication DB support - Added authSource parameter support.
-- Filter operation - Added “is stopword” and “is alphabet” to the operator.
-- Changed the icon for Showing/Hiding the left hand side tree. (List of data frames area.)
-- Added 'list_concat' function to either merge multiple list columns or concatenate multiple rows with 'collapse' argument. If you want to convert the list values as text then you can use 'list_to_text' function.
+- Small Multiple: Add Date Aggregation level support
+- CSV Export: Added an option to select the separators. 
 
 ### Bug Fixes
 

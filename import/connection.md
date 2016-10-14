@@ -6,7 +6,7 @@ You can register database connection configuration.
 
 Open your configuration dropdown and click "Connection" there.
 
-![](images/connection-open.png)
+![](images/connection-open1.png)
 
 Click "Add" to create a new connection or "Edit" to modify existing connection.
 
