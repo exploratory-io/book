@@ -2,25 +2,25 @@
 
 You can quickly import data from your PostgreSQL Database into Exploratory.
 
-## 1. Create a connection for Amazon Redshift database
+## 1. Create a connection for PostgreSQL database
 
-First, you want to create a connection for Amazon Redshift database.
+First, you want to create a connection for PostgreSQL database.
 
-![](images/redshift-3-1.png)
+![](images/postgres-connection.png)
 
 After filling the database information, click ‘Test Connection’ button to make sure the information is correct, before you save it.
 
-![](images/redshift-2-1.png)
+![](images/postgres-connection-test.png)
 
 ## 2. Open PostgreSQL Import dialog
 
-Select 'Import Remote Data' from Add New Data Frame menu.
+Select 'Import Database Data' from Add New Data Frame menu.
 
-![](images/import-remote-data.png)
+![](images/import-database.png)
 
 Click PostgreSQL to select.
 
-![](images/postgres.png)
+![](images/postgres-dialog.png)
 
 
 ## 3. Preview and Import
