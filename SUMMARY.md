@@ -26,6 +26,7 @@
       * [Google BigQuery](import/google-bigquery.md)
       * [Github Issues](import/github.md)
       * [Twitter Search](import/twitter.md)      
+      * [Twitter Search](import/twitter_timeline.md)      
       * [Web Page Scraping](import/web-scraping.md)
    * [Write R Script as Data](import/r-script-data.md)
 * [Chart](chart.md)
