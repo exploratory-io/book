@@ -1,6 +1,6 @@
 # Import Twitter Search API data
 
-You can query and extract Twitter's tweet data. It uses [Twitter's Search API](https://dev.twitter.com/rest/public/search) through TwitteR package internally.
+You can query and extract Twitter's tweet data. It uses [Twitter's Search API](https://dev.twitter.com/rest/public/search) through twitteR package internally.
 
 # Input parameters
 
