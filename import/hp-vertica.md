@@ -1,33 +1,33 @@
-# PostgreSQL Database Data Import
+# HP Vertica Database Data Import
 
-You can quickly import data from your PostgreSQL Database into Exploratory.
+You can quickly import data from your HP Vertica Database into Exploratory.
 
-## 1. Create a connection for PostgreSQL database
+## 1. Create a connection for HP Vertica database
 
-First, you want to create a connection for PostgreSQL database.
+First, you want to create a connection for HP Vertica database.
 
 ![](images/connection.png)
 
 After filling the database information, click ‘Test Connection’ button to make sure the information is correct, before you save it.
 
-![](images/postgres-connection-test.png)
+![](images/hp-vertica-connection-test.png)
 
-## 2. Open PostgreSQL Import dialog
+## 2. Open HP Vertica Import dialog
 
 Select 'Import Database Data' from Add New Data Frame menu.
 
 ![](images/import-database.png)
 
-Click PostgreSQL to select.
+Click HP Vertica to select.
 
-![](images/postgres-dialog.png)
+![](images/hp-vertica-dialog.png)
 
 
 ## 3. Preview and Import
 
-Click Preview button to see the data back from your PostgreSQL db.
+Click "Get Data" button to see the data back from your HP Vertica db.
 
-![](images/postgres3.png)
+![](images/hp-vertica-preview.png)
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
 
