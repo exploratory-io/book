@@ -331,7 +331,7 @@ Released on 6/6/2016
 - Support 'Refresh' feature for local data types. Now you can click 'Refresh' link text at the top of Step to refresh even for the local file data type.
 - Support a custom install location for R and Git for Windows
 - Command builder for Tokenize Text, Get Sentiment. Now you can build commands for tokenizing the text data or score sentiments for the tokenized text from the column header dropdown menu.
-- Local Mongo db support without username and password
+- Local MongoDB support without username and password
 
 ### Bug fixes
 

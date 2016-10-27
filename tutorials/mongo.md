@@ -4,7 +4,7 @@ Working with MongoDB can be challenging due to the nature of NoSQL database, whi
 
 ### What you are going to learn
 
-- Importing data from Mongo DB
+- Importing data from MongoDB
 - Flatten the nested data with 'unnest' command
 - Extracting Geo coordinate values from List (array) data
 - Visualize data with Map
@@ -16,17 +16,17 @@ This tutorial is based on the MongoDB's standard example database called 'restau
 
 - [MongoDB Example Dataset Import Instruction](https://docs.mongodb.org/getting-started/shell/import-data/)
 
-## Import data from Mongo DB
+## Import data from MongoDB
 
-You can quickly import data from your Mongo DB into Exploratory.
+You can quickly import data from your MongoDB into Exploratory.
 
-### 1. Open Mongo DB Import dialog
+### 1. Open MongoDB Import dialog
 
 Select 'Import Remote Data' from Add New Data Frame menu.
 
 ![](images/import-remote-data.png)
 
-Click Mongo DB to select.
+Click MongoDB to select.
 
 ![](images/mongo1.png)
 
@@ -34,7 +34,7 @@ Click Mongo DB to select.
 
 Type your new data frame name
 
-Type the following your Mongo DB connection related parameter values.
+Type the following your MongoDB connection related parameter values.
 
 - Host name
 - Port number
@@ -51,7 +51,7 @@ Note: We support the connection with username and password. If you are working w
 
 ### 3. Preview and Import
 
-Click Preview button to see the data back from your Mongo DB.
+Click Preview button to see the data back from your MongoDB.
 
 ![](images/mongo3.png)
 
