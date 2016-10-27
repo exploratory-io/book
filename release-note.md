@@ -1,24 +1,48 @@
 # Release Note
 
-## R 2.2
+## R 2.3
 
-Released on 10/13/2016
+Released on 10/26/2016
 
 ### New Features
 
-- Multiple Steps - Copy, Cut, Delete, Hide
-
-- Download as CSV
-
-- Slack Share with Private
+- Data Wrangling Steps - You can now copy, cut, delete, and disable one or multiple steps together. This would be useful when you want to move steps within the same data wrangling chain or move between data frames and branches. Also, by disabling one or multiple steps you can temporally ignore the steps while you can still keep them just in case you might need them later.
 
 ### Enhancements
 
-- Small Multiple: Add Date Aggregation level support
-- CSV Export: Added an option to select the separators. 
+- Small Multiple - Added Date Aggregation level support
+- Small Multiple - Now you can have Boxplot in Small Multiple.
+- Small Multiple - Added a parameter whether synchronize the values on X-Axis among the charts or not.
+- Bar / Line / Area Charts - You can now show the values in the plot area.
+- CSV Export: Added an option to select the separators.
+- Performance improvements - Chart / Pivot - Sampling data
+- Performance improvements - Data Import Dialog - It queries only 100 rows as default, which makes the iteration for testing out various queries much faster and more interactive.
+- Performance improvements - Google BigQuery - Now you can download the data via Google Cloud Storage. We have observed the performance improved from 40 minutes to 6 minutes or so for importing 1.5 GB data with our typical internet speed.
+- Data Import Dialog - You can now select which columns to import.
+- New Data Source: HP Vertica, Google Trend, Twitter Timeine.
+- MongoDB - Added a support for Fields (Projection), Sorting. Skip, and Limit (number of documents).
+- Data Wrangling Commands - Added remove_empty_rows, remove_empty_columns, clean_names (clean column names) functions from 'janitor' package.
+- Chart: Support configuring the number of decimal digits inside the chart.
+- Bar, Line, Area Charts: Showing Y values on Chart.
+- Line chart: fill blank as NA, 0, Previous, or Next values.
+- Chart: Added a property to show/hide function names (e.g. SUM) in Legend.
+- Share: You can now download csv data file on the chart / data shared pages.
+- OAuth Data Sources: You can cancel when you happen to close the OAuth web browser window without authorizing.  
+
 
 ### Bug Fixes
 
+- Small Multiple - Chart size didn't fit into a window
+- Small Multiple - The charts were not sorted when it was Scatterplot.
+- Small Multiple - Scatter used to start from 0 for X/Y, now it's automatically scaled.
+- Line chart - it was drawing lines even including the points where there is no data.
+- Line chart - it was not starting from 0.
+- Cholopleth - For US State map, changed the default to ISO2 letters.
+- Scatterplot - Use a random seed when needing to sample data.
+- Chart: Respect Ordered Factor's level for sorting even when the data is numeric.
+- Note: Small Multiple was overflowing.
+- Table: Header and body were misaligned when adding a new transformation step on Windows.
+- Share dialog didn't show up correctly from desktop's 'Add or remove user' link
 
 
 ## R 2.2
