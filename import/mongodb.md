@@ -1,43 +1,36 @@
-# Mongo DB Data Import
+# MongoDB Data Import
 
-You can quickly import data from your Mongo DB into Exploratory.
+You can quickly import data from your MongoDB into Exploratory.
 
-## 1. Open Mongo DB Import dialog
+## 1. Create a Connection to use
 
-Select 'Import Remote Data' from Add New Data Frame menu.
+Create a connection following [this instruction](connection.html).
 
-![](images/import-remote-data.png)
+## 2. Open MongoDB Import dialog
 
-Click Mongo DB to select.
+Select 'Import Database Data' from Add New Data Frame menu.
 
-![](images/mongo1.png)
+![](images/import-database-data.png)
 
-## 2. Set Parameters
+Click MongoDB to select.
 
-Type your new data frame name
+![](images/mongo8.png)
 
-Type the following your Mongo DB connection related parameter values.
+## 3. Preview the data
 
-- Host name
-- Port number
-- Database name
-- Collection name
-- Username
-- Password
-- Query
+1. Put the data frame name at 'Name'.
+2. Select connection from left dialog box.
+3. Select collection from left dialog box. Then you will see the preview of the data.
+4. Modify 'Query', 'Fields', 'Sort', 'Limit', 'Skip' and 'Flatten' to customize your query. Click "Get Data" button to update the preview of the data.
 
-Note: We support the connection with username and password. If you are working with locally installed MongoDB and don't have username and password then please create them in order for Exploratory to be able to access to it. We will support the connection without username/password soon. 
+![](images/mongo7.png)
 
-![](images/mongo2.png)
+## 4. Import
 
-## 3. Preview and Import
-
-Click Preview button to see the data back from your Mongo DB.
-
-![](images/mongo3.png)
+You can choose which columns to import by checking the checkboxes in the header of the preview data table. 
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
 
 You will see the data showing up in Summary view!
 
-![](images/mongo4.png)
+![](images/mongo11.png)
