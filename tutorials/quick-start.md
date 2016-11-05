@@ -126,27 +126,27 @@ Now, we can cluster the data based on the two column values.
 
 Select 'Build K-means Clustering model' menu under 'Others' button.
 
-![](images/quick-start41.png)
+![](images/quick-start-41.png)
 
 In the dialog, select 'Variable Columns' tab so that you can select the columns that you want to build the clustering model based on.
 
-![](images/quick-start42.png)
+![](images/quick-start-42.png)
 
 And, scroll down to find 'Number of Clusters' parameter and set it to 5. You can set it to any number to experiment.
 
-![](images/quick-start44.png)
+![](images/quick-start-44.png)
 
 Once you hit 'Run' button, then it applies 'K-means' algorithm and score the clustering id for each row with a column name called 'cluster'. You can assign this newly generated column to Color for the chart.
 
-![](images/quick-start45.png)
+![](images/quick-start-45.png)
 
 Since the clustering values are discrete, you can change the data attribute from Numeric to Text.
 
-![](images/quick-start46.png)
+![](images/quick-start-46.png)
 
 Now you can see the data is clustered into 5 groups clearly.
 
-![](images/quick-start47.png)
+![](images/quick-start-47.png)
 
 
 ## Share Chart
@@ -181,24 +181,24 @@ Finally, you can create your analysis report by creating Note.
 
 Click 'Plus' button next to 'Note'.
 
-![](images/quick-start48.png)
+![](images/quick-start-48.png)
 
 Type a name in the pop-up and click 'Create' button.
 
 This is a Rich Text Editor, so you can write anything you like.
 
-![](images/quick-start49.png)
+![](images/quick-start-49.png)
 
 Highlighting the text will prompt you a formatting menu.
 
-![](images/quick-start52.png)
+![](images/quick-start-52.png)
 
 Every time you hit Enter key you will find 'Plus' button at the beginning of each line. By clicking on this 'Plus' button you will see a chart icon.
 
-![](images/quick-start50.png)
+![](images/quick-start-50.png)
 
 You can click this to get a Chart picker dialog. You can simply select one of them and hit 'OK' button to insert the chart into the note.
 
-![](images/quick-start51.png)
+![](images/quick-start-51.png)
 
 Once you finish writing the report, you can either publish it so that you can share by URL or save it in a HTML or PDF document.
