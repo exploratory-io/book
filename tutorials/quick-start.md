@@ -114,6 +114,41 @@ There are many chart types, we would encourage you try them out by yourself. For
 
 ![](images/quick-start34.png)
 
+## Cluster (Segment) Data
+
+You can cluster the data into a set of groups by using 'K-means' algorithm, which is one of the most popular clustering algorithm.
+
+First, let's visualize the departure delay and arrival delay times by using Scatterplot.
+
+![](images/quick-start40.png)
+
+Now, we can cluster the data based on the two column values.
+
+Select 'Build K-means Clustering model' menu under 'Others' button.
+
+![](images/quick-start41.png)
+
+In the dialog, select 'Variable Columns' tab so that you can select the columns that you want to build the clustering model based on.
+
+![](images/quick-start42.png)
+
+And, scroll down to find 'Number of Clusters' parameter and set it to 5. You can set it to any number to experiment.
+
+![](images/quick-start44.png)
+
+Once you hit 'Run' button, then it applies 'K-means' algorithm and score the clustering id for each row with a column name called 'cluster'. You can assign this newly generated column to Color for the chart.
+
+![](images/quick-start45.png)
+
+Since the clustering values are discrete, you can change the data attribute from Numeric to Text.
+
+![](images/quick-start46.png)
+
+Now you can see the data is clustered into 5 groups clearly.
+
+![](images/quick-start47.png)
+
+
 ## Share Chart
 
 Once you find an interesting insight you might want to share it with others. Or, you might want to collaborate with others to transform analyze the data better. This is when you want to share your Chart or Data. You can simply click 'Share' button.
@@ -139,3 +174,31 @@ You can also click on Data tab and see how the data was prepared.
 Now, your co-workers or friends can download this chart and data in a format of EDF (Exploratory Data Format). You can try it for yourself. Once it's downloaded then you can import from ''
 
 ![](images/quick-start39.png)
+
+## Create Note
+
+Finally, you can create your analysis report by creating Note.
+
+Click 'Plus' button next to 'Note'.
+
+![](images/quick-start48.png)
+
+Type a name in the pop-up and click 'Create' button.
+
+This is a Rich Text Editor, so you can write anything you like.
+
+![](images/quick-start49.png)
+
+Highlighting the text will prompt you a formatting menu.
+
+![](images/quick-start52.png)
+
+Every time you hit Enter key you will find 'Plus' button at the beginning of each line. By clicking on this 'Plus' button you will see a chart icon.
+
+![](images/quick-start50.png)
+
+You can click this to get a Chart picker dialog. You can simply select one of them and hit 'OK' button to insert the chart into the note.
+
+![](images/quick-start51.png)
+
+Once you finish writing the report, you can either publish it so that you can share by URL or save it in a HTML or PDF document.

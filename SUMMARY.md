@@ -37,6 +37,7 @@
 * [Chart](chart.md)
    * [Pin](chart/pin.md)
    * [Custom Color](chart/color.md)
+* [Note](note.md)
 * [Pivot](pivot.md)
 * [Branch](branch/branch.md)
 * [R Package Install](r_package.md)
