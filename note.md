@@ -24,4 +24,4 @@ You can click this to get a Chart picker dialog. You can simply select one of th
 
 ![](tutorials/images/quick-start-51.png)
 
-Once you finish writing the report, you can either publish it so that you can share by URL or save it in a HTML or PDF document.
+Once you finish writing the report, you can either publish it so that you can share by URL or save it in a HTML document.
