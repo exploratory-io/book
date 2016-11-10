@@ -1,5 +1,30 @@
 # Release Note
 
+## R 2.4
+
+Released on 11/10/2016
+
+### New Features
+
+- Analysis Step Persistent Data Cache - You can set a particular step(s) to keep the data cache across the sessions so that it won’t run the operation unless you explicitly request. This would be useful when you have a step that would take a long time to complete.
+- Saving Note in HTML - Now you can save it in HTML format.
+- Sharing with URL - You can generate an unique URL to allow anyone with the URL to open Data, Chart, or Note you have published regardless whether he / she has an account at Exploratory or not.
+
+### Enhancements
+
+- Note - You can publish and share your Note in a private mode.
+- Twitter Search / Timeline - Added a Text Sentiment Score option.
+- Google Analytics - Hour of Day column is now automatically converted to POSIXct as default.
+- Opening Chart dialog in Note is much faster now.
+- Chart - The order in Legend is not synced with the order in the plot area.
+
+### Bug Fixes
+
+- DB connection information was not reflected in the generated R script.
+- Bar chart didn't show up with Repeat By when the data size was large.
+- Chart - Removed unnecessary zero values displayed on the plot area when showing the values.
+- Small Multiple Chart - Bar chart with '% of Total' window calculation was broken.
+
 ## R 2.3
 
 Released on 10/26/2016
@@ -331,7 +356,7 @@ Released on 6/6/2016
 - Support 'Refresh' feature for local data types. Now you can click 'Refresh' link text at the top of Step to refresh even for the local file data type.
 - Support a custom install location for R and Git for Windows
 - Command builder for Tokenize Text, Get Sentiment. Now you can build commands for tokenizing the text data or score sentiments for the tokenized text from the column header dropdown menu.
-- Local MongoDB support without username and password
+- Local Mongo db support without username and password
 
 ### Bug fixes
 
