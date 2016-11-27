@@ -14,7 +14,7 @@ Yes! We have certified El Capitan and Yosemite officially, but Mavericks should 
 
 ## Is Windows supported ?
 
-We are working on it to support Windows 10 and 8 first. Can't promise you an exact date but should be coming soon. We'll send you an email once that's become available, so please stay tuned!
+Yes! 
 
 ## Is Linux supported ?
 
