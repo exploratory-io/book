@@ -18,7 +18,7 @@ Select 'Import Database Data' from Add New Data Frame menu.
 
 ![](images/import-database.png)
 
-Click HP Vertica to select.
+Click Neo4j to select.
 
 ![](images/neo4j-dialog.png)
 
