@@ -1,5 +1,36 @@
 # Release Note
 
+# R 2.5
+
+Released on 12/1/2016
+
+### New Features
+
+- Data Source: Remote Files - You can point to remote files (e.g. CSV, Excel, etc.) and import the data. This makes it easier to refresh the data by simply clicking on 'Refresh' button at the top of the data transformation steps (right hand side).
+- Data Source: Presto - You can now query against your Big Data with Presto.
+- Map: GeoJSON Support - You can bring your own GeoJSON and visualize your geospatial semantic data easily and flexibly.
+- MongoDB - Aggregate support - You can build the stage based aggregation pipeline in MongoDB Data Import dialog.
+
+### Enhancements
+
+- MongoDB: Support MongoDB Shell format - Now you can write your queries in MongoDB Shell's JS format as well as in the original strict JSON format.
+- Google BigQuery: Standard SQL support
+- Support both Auto Run vs. Manual Run modes - You can choose whether you want to run the command automatically or manually in each dialog.
+- We have added new R functions, statecode and countycode, to make the US States and Counties data mapping easier.
+- UI support for 'get_dupes' function from 'janitor' R package.
+- Note: We have introduced a dropdown list for Data Frames in Chart Selection dialog in Note, to make the chart selection easier and faster.
+- Redesigned UI for Analytics (Correlation, Distance, K-means Clustering, Cosine Similarity) and Text Analysis commands.
+
+
+### Bug Fixes
+
+- Fixed google analytics View ID update issue.
+- Fixed overflow issue on error icon on transform list
+- Fixed an issue that when you change existing "select" command while "Add New" token exists it fails
+- MongoDB: Changed to show error when no collection is selected.
+- Fixed unwanted viz refresh issue when a viz, data share button is clicked.
+
+
 ## R 2.4
 
 Released on 11/10/2016
