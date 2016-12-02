@@ -1,6 +1,6 @@
 # Release Note
 
-# R 2.5
+## R 2.5
 
 Released on 12/1/2016
 
@@ -24,7 +24,7 @@ Released on 12/1/2016
 
 ### Bug Fixes
 
-- Fixed an issue that the command editor behaves incorrectly when you copied a command with multiple lines into the command editor. 
+- Fixed an issue that the command editor behaves incorrectly when you copied a command with multiple lines into the command editor.
 - Fixed google analytics View ID update issue.
 - Fixed overflow issue on error icon on transform list
 - Fixed an issue that when you change existing "select" command while "Add New" token exists it fails
