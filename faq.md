@@ -8,17 +8,29 @@ We have a [community page](https://community.exploratory.io) where our users pos
 
 Please follow [@ExploratoryData](https://twitter.com/ExploratoryData) at Twitter or subscribe our blog: http://blog.exploratory.io .
 
-## Is Mac OS X supported ?
+## What platforms are supported?
 
-Yes! We have certified El Capitan and Yosemite officially, but Mavericks should work as well.
+There are MacOS and Windows versions available on our download page. We also have a beta version for Linux Ubuntu. [Link](https://community.exploratory.io/t/exploratory-v2-5-for-linux-is-available/266)
 
-## Is Windows supported ?
+## Is there a server version of Exploratory Desktop?
 
-Yes! 
+Yes! We have a docker image of Exploratory Web Server and Exploratory Collaboration Server.
 
-## Is Linux supported ?
+**Exploratory Web Server** is a server version of Exploratory Desktop. Users can access to Exploratory through Web Browsers. This would be great when you need to work with large data sets that won't fit into your PC's memory or you have your organization's policy that prohibits an access to the data sources from your PC directly.
 
-We have a plan to support Linux platform as well. Please contact at [support@exploratory.io](mailto:support@exploratory.io)
+**Exploratory Collaboration Server** is a server version of Exploratory.io that you can install on your server or cloud services like AWS EC2. You can share your data, charts, and notes through this collaboration server inside your firewall.
+
+Both them are available through our support. Please contact support@exploratory.io.
+
+## Is there licensing or pricing information available?
+
+Yes, here is [the pricing page](https://exploratory.io/pricing).
+
+Also, here are the direct links to:
+
+- [End User License Agreement](https://exploratory.io/eula)
+- [Terms & Conditions](https://exploratory.io/terms)
+
 
 ## I'm having a network connection issue, what should I do?
 
@@ -93,8 +105,7 @@ This will install the R packages to the specified location. After that, you shou
 
 ## What version of R is required ?
 
-- R 3.2.0 or greater for Exploratory Desktop for R (rstats) 3.2 version.
-- R 3.3.0 or greater for Exploratory Desktop for R (rstats) 3.3 version.
+R 3.3.0 or greater.
 
 ## What version of Git is required ?
 
@@ -114,7 +125,7 @@ Yes! Here's an [introduction](https://blog.exploratory.io/installing-r-packages-
 
 ## I have very sensitive data. Where my data is stored ?
 
-Once you import your data into Exploratory it stays inside Exploratory Desktop's repository. If you are working with private and sensitive data we'd recommend you consider to subscribe Personal plan. See [this page](https://exploratory.io/pricing) for more information.
+Once you import your data into Exploratory it stays inside Exploratory Desktop's repository. If you are working with private and sensitive data we'd recommend you consider to subscribe Personal plan so that you can share your data and insights with others in a private mode. See [this page](https://exploratory.io/pricing) for more information.
 
 ## Can I change my username ?
 
