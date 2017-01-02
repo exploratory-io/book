@@ -1,5 +1,26 @@
 # Release Note
 
+## R 2.6
+
+Released on
+
+### New Features  
+
+- Error Bars
+- Table component in Viz view - This is useful when you want to embed table data inside Note.
+- Model Building and Evaluation
+
+### Enhancements
+
+- Chart Color - New Color Palettes
+- Chart Color - users can choose from different color palettes even when a columns is not assigned to Color.
+- Proxy Server configuration through UI
+- Stop words
+- Added 'convert_to_NA' function
+- Added 'excel_numeric_to_date'
+- Support Ordered Factor for Color - Map / Scatterplot
+
+
 ## R 2.5
 
 Released on 12/1/2016
