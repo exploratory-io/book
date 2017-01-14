@@ -25,6 +25,7 @@
       * [PostgreSQL](import/postgresql.md)
       * [HP Vertica](import/hp-vertica.md)
       * [Neo4j](import/neo4j.md)
+      * [ODBC](import/odbc.md)
    * [Remote Data]()
       * [Github Issues](import/github.md)
       * [Web Page Scraping](import/web-scraping.md)
