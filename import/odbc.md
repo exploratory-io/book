@@ -10,7 +10,7 @@ First, you want to create a connection for ODBC DSN.
 
 After filling the ODBC DSN information, click ‘Test Connection’ button to make sure the information is correct, before you save it.
 
-![](images/postgres-connection-test.png)
+![](images/odbc_connection.png)
 
 ## 2. Open ODBC Import dialog
 
@@ -20,7 +20,7 @@ Select 'Import Database Data' from Add New Data Frame menu.
 
 Click ODBC to select.
 
-![](images/postgres-dialog.png)
+![](images/select_odbc_datasource.png)
 
 
 ## 3. Preview and Import
