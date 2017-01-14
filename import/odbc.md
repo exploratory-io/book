@@ -27,6 +27,6 @@ Click ODBC to select.
 
 Click Preview button to see the data from your ODBC database connection.
 
-![](images/postgres3.png)
+![](images/odbc_preview.png)
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
