@@ -6,7 +6,7 @@ You can quickly import data from your ODBC Database Connection into Exploratory.
 
 First, you want to create a connection for ODBC DSN.
 
-![](images/odbc_connection.png)
+![](images/connection.png)
 
 After filling the ODBC DSN information, click ‘Test Connection’ button to make sure the information is correct, before you save it.
 
@@ -16,7 +16,7 @@ After filling the ODBC DSN information, click ‘Test Connection’ button to ma
 
 Select 'Import Database Data' from Add New Data Frame menu.
 
-![](images/select_odbc_datasource.png)
+![](images/import-database.png)
 
 Click ODBC to select.
 
