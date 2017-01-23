@@ -1,24 +1,106 @@
 # Release Note
 
-## R 2.6
+## R 3.0
 
-Released on
+Released on 1/23/2017
 
 ### New Features  
 
-- Error Bars
-- Table component in Viz view - This is useful when you want to embed table data inside Note.
-- Model Building and Evaluation
+- Added Model Building and Evaluation for Linear Regression, GLM, Logistic Regression, K-means Clustering.
+- Added 'Multiple Columns Selection' for both Table and Summary views, which will show context sensitive data wrangling menus.
+- Added 'ODBC' data source type.
+- Added new Viz type - Error Bars,
+- Added Table under Viz tab - you can sort a column and show bars to help comparing the values easier.
 
 ### Enhancements
 
-- Chart Color - New Color Palettes
-- Chart Color - users can choose from different color palettes even when a columns is not assigned to Color.
+#### Chart ####
+
+- Chart Color - Added New Color Palettes
+- Chart Color - Default color switch - Users can now choose different color palettes even when a columns is not assigned to Color.
+- Chart - Added support for font size for X / Y Axis tick labels and Legend.
+- Chart - Added support for show / hide grid lines.
+- Chart - Added support for log scale for Bar, Line, Area, Scatterplot.
+- Chart - Save as PNG / SVG.
+- Chart - Performance improvements for Chart rendering at exploratory.io cloud server and collaboration server.
+
+#### Pivot ####
+
+- Pivot Table - Added '% of Total' support. Users can set a direction for calculating the percentage.
+- Pivot Table - Switched the Color formatting logic from 'equal group' to 'equal length'.
+- Pivot Table - Added Column based color formatting along with the existing Row and All.
+
 - Proxy Server configuration through UI
-- Stop words
-- Added 'convert_to_NA' function
-- Added 'excel_numeric_to_date'
-- Support Ordered Factor for Color - Map / Scatterplot
+
+#### Map ####
+
+- Show sample values from GeoJSON file's properties.
+- Added '# of Rows' for Color as default.
+
+
+#### Data Wrangling ####
+
+- Added new data wrangling operations with the column header menu. - Move to, Gather, Unite, Analytics, etc.
+- Added 'Ungroup' command shortcut under # of Groups indicator dropdown.
+- Stop words - Support Multiple languages.
+  * Danish
+  * Dutch
+  * English
+  * Finnish
+  * French
+  * German
+  * Hungarian
+  * Italian
+  * Japanese
+  * Norwegian
+  * Portuguese
+  * Russian
+  * Spanish
+  * Swedish
+- Added 'convert_to_NA' function as UI command.
+- Added 'excel_numeric_to_date'.
+- Added 'row_as_header' function.
+- Added 'normalize' function, which is a wrapper for 'scales' function but returns a numeric vector, not a matrix.
+- Added 'Ordered Factor' Support for Color - Map / Scatterplot.
+- Added 'Rename' support for Data Frame.
+- Support a better special characters handling for Data Frame name.
+- Added a better handling of 'space' or other special characters for data frame names. It now replaces them with underscore '\_'.
+- Added a support for 'space' for new column names with data wrangling.
+- Added 'Rename' support for Note.
+- Added 'Duplicate' support for Note.
+- Thumbnail image generation support for Map. You can see the Thumbnail images for Map when Note is saved locally and also published at exploratory.io.
+- Note: Improved the experience around the chart embedding in Note.
+- Note: Improved the performance for creating new Note or opening existing one.
+- Windows build is now signed with an appropriate certificate.
+
+- CSV Data Import - Made UTF-8 a fallback encoding for ASCII. This will make the data loading with CSV better.
+- Added 'Update' button to upgrade user installed R packages.
+
+- Show Scrollbar always.
+- Improved R script editor formatting in 'Import by Writing R Script' dialog.
+
+
+### Bug Fixes
+
+Fix issue that unfinished token is not removed when a user clicks OK button on Command UI Dialog
+Fix issue that updating source step does not refresh pinned viz.
+[Refresh Icon] Fix issue that there is a lag between refresh icon click and actual spin icon shows up timing
+
+- UI freeze caused by GeoJSON Map
+- Ordered factor support for Map / Scatter
+- Fixed for Delete First Viz causes Empty Screen
+
+- 0 was not showing up in Column of Pivot.
+- Logical column values (TRUE / FALSE / NA) were not correctly sorted.
+- Can't select a column inside Filter dialog for Existing one in Branch
+- Command Line Mode: Flickering after executing the command
+- Chart: Not refreshed when clicking on Refresh button and when it's pinned
+- Strip semicolon at the end of SQL to avoid syntax error (Released as 2.5.1.5)
+- Avoid parsing and recomposing of SQL to work around replacing of double quoted column name with single quoted string on PostgreSQL (Released as 2.5.1.5)
+- Fix issue that do_tokenize regex option is not saved
+- Reorder the sections inside the generated R scripts.
+- Note: Pivot Table column headers were not showing up.
+
 
 
 ## R 2.5

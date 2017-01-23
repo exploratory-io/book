@@ -1,6 +1,6 @@
 # End User License Agreement
 
-This End-User License Agreement (EULA) is a legal agreement between you (either as an individual or on behalf of an entity) and Exploratory, Inc. regarding your use of Exploratory's desktop applications, including Exploratory Desktop, Exploratory for Mac, and Exploratory for Windows and associated documentation (the "Software") and your use of the Exploratory.io web site (the "Service"). IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS EULA, DO NOT INSTALL, USE OR COPY THE SOFTWARE.
+This End-User License Agreement (EULA) is a legal agreement between you (either as an individual or on behalf of an entity) and Exploratory, Inc. regarding your use of Exploratory's applications, including Exploratory Desktop, Exploratory for Mac, and Exploratory for Windows, Exploratory Collaboration Server, Exploratory Web Server, and associated documentation (the "Software") and your use of the Exploratory.io web site (the "Service"). IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS EULA, DO NOT INSTALL, USE OR COPY THE SOFTWARE.
 
 ## Summary
 
@@ -17,12 +17,42 @@ By downloading, installing, using, or copying the Software, you accept and agree
 
 This EULA entitles you to install as many copies of the Software as you want, and use the Software for any lawful purpose consistent with this EULA. However, your login may only be used by one person - i.e., a single login may not be shared by multiple people. Your license to use the Software is expressly conditioned upon your agreement to all of the terms of this EULA. Exploratory reserves all other rights not granted by this EULA.
 
+Products are made available on a limited license or access basis, and no ownership right is conveyed to Licensee, irrespective of the use of terms such as "purchase" or "sale". Exploratory has and retains all right, title and interest, including all intellectual property rights, in and to the Products any and all related or underlying technology, and any modifications or derivative works of the foregoing created by or for Exploratory, including without limitation as they may incorporate Feedback (as defined below).
+
+### Purchasing through resellers
+
+This EULA applies whether you purchase an Exploratory Subscription directly from Exploratory, Inc. or through resellers. If you purchase through a reseller, the Exploratory Subscription details shall be as stated in the Subscription Confirmation issued by a reseller to Licensee, and the reseller is responsible for the accuracy of any such Subscription Confirmation. Resellers are not authorized to make any promises or commitments on Exploratory's behalf, and Exploratory, Inc. is not bound by any obligations to Licensee other than as specified in this Agreement.
+
 ## The Restrictions
 
 1. When using the Software you must use it in a manner that complies with the applicable laws in the jurisdiction(s) in which you use the Software.
 2. You may not sell, resell, rent, lease or exchange the Software for anything of value.
-3. You may redistribute the software, but it must include this EULA and you may not repackage or bundle the Software with any other software.
-4. You may not remove or alter any proprietary notices or marks on the Software.
+3. You may not reverse-engineer, decompile, disassemble, modify, or translate the Product, or make any attempt to discover the source code of the Product.
+4. You may redistribute the software, but it must include this EULA and you may not repackage or bundle the Software with any other software.
+5. You may not remove or alter any proprietary notices or marks on the Software.
+
+## The Fees
+
+You must pay Exploratory Subscription fees in accordance with the Exploratory Terms of Purchase or reseller's terms of purchase, whichever is applicable. If you fail to make the timely payment of Exploratory Subscription fees, this Agreement will be terminated and you may not use Products.
+
+## The Feedback
+
+You have no obligation to provide us with ideas, suggestions, or proposals ("Feedback"). However, if you submit Feedback to us, then you grant us a nonexclusive, worldwide, royalty-free license that is sub-licensable and transferable, to make, use, sell, have made, offer to sell, import, reproduce, publicly display, distribute, modify, and publicly perform the Feedback in any manner without any obligation, royalty or restriction based on intellectual property rights or otherwise.
+
+## The Subscription Trial
+
+Subject to the terms of this Agreement, you are granted a one-time right to install and use Exploratory for evaluation purposes without charge for a period of thirty (30) days from the date of the activation, unless otherwise specified ("Evaluation Period"). Your use of Exploratory during Evaluation Period shall be limited to the internal evaluation of Exploratory for the sole purpose of determining whether it meets your requirements and whether you desire to continue using it.
+
+You may withdraw from using Product at your sole discretion anytime before expiration of Evaluation Period. Upon expiration of Evaluation Period, your right to continue to use Exploratory will terminate, unless your purchases a Subscription to the Exploratory products and services. The product contains a feature that will automatically disable the product upon expiration of Evaluation Period.
+
+## TEMPORARY SUSPENSION FOR NON-PAYMENT
+
+13.1. JetBrains reserves the right to suspend Licensee's access to JetBrains' Products in the event that Licensee fails to make payment for its subscription.
+
+13.2. If JetBrains suspends Licensee's access to JetBrains' Products for non-payment according to the provision 13.1., Licensee must pay all past due amounts in order to restore its access to JetBrains' Products.
+
+13.3. Licensee hereby agrees that JetBrains is entitled to charge Licensee for the time period during which Licensee has access to JetBrains Products until Licensee or JetBrains terminates or suspends Licensee's subscription in accordance with this Agreement.
+
 
 ## Privacy Notices
 
@@ -38,7 +68,7 @@ To the extent there is conflict between the license terms covering the Open-Sour
 
 The Software and all worldwide copyrights, trade secrets, and other intellectual property rights therein are the exclusive property of Exploratory. Exploratory reserves all rights in and to the Software not expressly granted to you in this EULA.
 
-The names Exploratory, Exploratory Desktop, Exploratory for Mac, Exploratory for Windows, and related Exploratory logos and/or stylized names are trademarks of Exploratory. You agree not to display or use these trademarks in any manner without Exploratory's prior, written permission.
+The names Exploratory, Exploratory Desktop, Exploratory for Mac, Exploratory for Windows, Exploratory Collaboration Server, Exploratory Web Server, and related Exploratory logos and/or stylized names are trademarks of Exploratory. You agree not to display or use these trademarks in any manner without Exploratory's prior, written permission.
 
 ## Disclaimers and Limitations on Liability
 

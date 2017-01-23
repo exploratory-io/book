@@ -40,7 +40,7 @@ Downgrading your Service may cause the loss of Content, features, or capacity of
 
 ## C. Cancellation and Termination
 
-You are solely responsible for properly canceling your account. An email or phone request to cancel your account is not considered cancellation. You can cancel your account at any time by clicking on the Account link in the global navigation bar at the top of the screen. The Account screen provides a simple no questions asked cancellation link.
+You are solely responsible for properly canceling your account. An email or phone request to cancel your account is not considered cancellation. You can cancel your account at any time by clicking on Settings link in the account menu at the right hand side top of the screen. The Account screen provides a simple no questions asked cancellation link.
 
 All of your Content will be immediately deleted from the Service upon cancellation. This information can not be recovered once your account is cancelled.
 
@@ -50,7 +50,15 @@ Exploratory, in its sole discretion, has the right to suspend or terminate your 
 
 In the event that Exploratory takes action to suspend or terminate an account, we will make a reasonable effort to provide the affected account owner with a copy of their account contents upon request, unless the account was suspended or terminated due to unlawful conduct.
 
-## D. Modifications to the Service and Prices
+## D. Temporary Suspension for non-payment
+
+Exploratory reserves the right to suspend your access to Exploratory' Products in the event that you fail to make payment for its subscription.
+
+If Exploratory suspends your access to Exploratory' Products for non-payment, you must pay all past due amounts in order to restore its access to Exploratory' Products.
+
+You hereby agree that Exploratory is entitled to charge you for the time period during which you have access to Exploratory Products until you or Exploratory terminates or suspends your subscription in accordance with this agreement.
+
+## E. Modifications to the Service and Prices
 
 Exploratory reserves the right at any time and from time to time to modify or discontinue, temporarily or permanently, the Product and Service (or any part thereof) with or without notice.
 
@@ -58,7 +66,7 @@ Prices of all Services, including but not limited to monthly subscription plan f
 
 Exploratory shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.
 
-## E. Copyright and Content Ownership
+## F. Copyright and Content Ownership
 
 We claim no intellectual property rights over the material you provide to the Service. Your profile and materials uploaded remain yours. However, by setting your Charts, Data, and Notes to be viewed publicly, you agree to allow others to view your Content. By setting your projects to be viewed publicly, you agree to allow others to view and fork your projects.
 
@@ -68,7 +76,7 @@ You shall defend Exploratory against any claim, demand, suit or proceeding made 
 
 The look and feel of the Service is copyright © Exploratory, Inc. All rights reserved. You may not duplicate, copy, or reuse any portion of the HTML/CSS, Javascript, or visual design elements or concepts without express written permission from Exploratory.
 
-## F. General Conditions
+## G. General Conditions
 
 Your use of the Service is at your sole risk. The service is provided on an "as is" and "as available" basis.
 

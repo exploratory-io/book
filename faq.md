@@ -2,7 +2,7 @@
 
 ## How can I report issues, bugs, or enhancement requests ?
 
-We have a [community page](https://community.exploratory.io) where our users post questions/suggestions and report issues. If you need an immediate help feel free to contact [support@exploratory.io](mailto:support@exploratory.io).
+We have a [community page](https://community.exploratory.io) to raise any questions and suggestions or report product issues. If you need an immediate help feel free to contact [support@exploratory.io](mailto:support@exploratory.io).
 
 ## What is the best way to keep myself updated with the news ?
 
@@ -10,11 +10,11 @@ Please follow [@ExploratoryData](https://twitter.com/ExploratoryData) at Twitter
 
 ## What platforms are supported?
 
-There are MacOS and Windows versions available on our download page. We also have a beta version for Linux Ubuntu. [Link](https://community.exploratory.io/t/exploratory-v2-5-for-linux-is-available/266)
+There are MacOS and Windows versions available at our download page. We also have a beta version for Linux Ubuntu. [Link](https://community.exploratory.io/t/exploratory-v2-5-for-linux-is-available/266)
 
 ## Is there a server version of Exploratory Desktop?
 
-Yes! We have a docker image of Exploratory Web Server and Exploratory Collaboration Server.
+Yes! We have a docker image of Exploratory Web Server and Exploratory Collaboration Server for beta.
 
 **Exploratory Web Server** is a server version of Exploratory Desktop. Users can access to Exploratory through Web Browsers. This would be great when you need to work with large data sets that won't fit into your PC's memory or you have your organization's policy that prohibits an access to the data sources from your PC directly.
 
@@ -34,7 +34,7 @@ Also, here are the direct links to:
 
 ## I'm having a network connection issue, what should I do?
 
-Exploratory Desktop requires an internet connection for authenticating the users, downloading the required software like Git and R if you don't have them installed yet, accessing to remote data sources like Google Analytics, Web Scraping, and publishing Note. Note that you can still work with offline mode with offline data as long as the initial setup is done.
+Exploratory Desktop requires an internet connection for authenticating the users, downloading the required software like Git and R if you don't have them installed yet, accessing to remote data sources like Google Analytics, Web Scraping, and sharing Data, Chart, and Note.
 
 If you use a proxy server to connect to the internet, as default it automatically tries to detect the proxy server and connect through the server. This should work for most of the times, but with certain scenarios it might not. In such cases you can manually add your proxy server information to a configuration file 'userconf.json', which can be found at ‘~/.exploratory’ for Mac OS X or ‘<your_user_home_folder>/.exploratory’ for Windows as follows. Here's an example.
 
@@ -56,17 +56,11 @@ Once the proxy server information is set, save the file and restart Exploratory 
 
 ## Why are you asking my password for OS X at the initial installation time?
 
-If you don't have R and/or Git previously installed you will be asked to enter your Mac OS admin username and password. This is because R and Git installation require the system administrator's privilege. We don't see or capture this information, it's completely done by R and Git installers and that's outside of Exploratory. ;)
-
-## I have already installed R (rstats) 3.2 installed and don't want to upgrade to 3.3 right now.
-
-We have prepared one variation of Exploratory Desktop for Mac and Windows for R 3.2. Please click 'Are you R 3.2 users?' link right below the download button on the download page. This will make the download button to download Exploratory Desktop for R 3.2. This version will check your R version, and as long as it is 3.2.0 or greater then it won't install any R.
-
-Update: The latest version of Exploratory Desktop requires R 3.3. If you would like to try the latest you need to upgrade your R to 3.3 version. If you need to stay with R 3.2 for some circumstances you can try Exploratory Desktop 1.4.6.
+If you don't have R and/or Git previously installed you will be asked to enter your Mac OS admin username and password. This is because R and Git installation requires the system administrator's privilege. We don't see or capture this information, it's completely done by R and Git installers and that's outside of Exploratory. ;)
 
 ## I have already installed R (rstats) 3.3, are you going to install another R ?
 
-No. we check the R version that is installed on your pc, but as long as it is 3.3.0 or grater then Exploratory will use that one, without installing any R.
+No. we check the R version that is installed on your pc, but as long as it is 3.3.1 or grater then Exploratory will use that one, without installing another R.
 
 ## I don't have R installed, what are you going to do ?
 
@@ -105,11 +99,11 @@ This will install the R packages to the specified location. After that, you shou
 
 ## What version of R is required ?
 
-R 3.3.0 or greater.
+R 3.3.1 or greater.
 
 ## What version of Git is required ?
 
-Git version requirement is loosened recently and the latest Exploratory Desktop requires only Git 2.0.0 or greater. Unless it detects an older version of Git it won't try to install Git. Exploratory Desktop assumes that Git is installed under /usr/bin or /usr/local/bin, so for any reason if your Git is installed somewhere else then it might try to install Git because it thinks that Git is not there. If that's the case and you don't want another Git to be installed please contact support@exploratory.io .
+The latest Exploratory Desktop requires Git 2.0.0 or greater. Unless it detects an older version of Git it won't try to install Git. Exploratory Desktop assumes that Git is installed under /usr/bin or /usr/local/bin, so for any reason if your Git is installed somewhere else then it might try to install Git because it thinks that Git is not there. If that's the case and you don't want another Git to be installed please contact support@exploratory.io .
 
 ## What R packages are you installing and why ?
 
@@ -117,7 +111,7 @@ Exploratory Desktop uses a number of amazing R packages, most of which are comin
 
 ## Where are you installing R packages ?
 
-The recent version of Exploratory Desktop (1.4.1 or later) installs them into Exploratory's repository, which is different from the regular R installation location. This is to avoid any conflict with your own R environment.
+Exploratory Desktop installs them into Exploratory's repository, which is different from the regular R installation location. This is to avoid any conflict with your own R environment.
 
 ## Can I add my preferred R packages ?
 
@@ -125,8 +119,8 @@ Yes! Here's an [introduction](https://blog.exploratory.io/installing-r-packages-
 
 ## I have very sensitive data. Where my data is stored ?
 
-Once you import your data into Exploratory it stays inside Exploratory Desktop's repository. If you are working with private and sensitive data we'd recommend you consider to subscribe Personal plan so that you can share your data and insights with others in a private mode. See [this page](https://exploratory.io/pricing) for more information.
+Once you import your data into Exploratory it stays inside Exploratory Desktop's repository which is located on your PC. And the data never leave your PC unless you explicitly publish (share) it.
 
 ## Can I change my username ?
 
-We are not currently supporting it, but we will in future release. If you need it to be changed now, please contact support@exploratory.io, we can manually change it at the server for you.
+We are not currently supporting it, but we will in future releases. If you need it to be changed now, please contact support@exploratory.io, we can manually change it at the server for you.
