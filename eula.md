@@ -45,15 +45,6 @@ Subject to the terms of this Agreement, you are granted a one-time right to inst
 
 You may withdraw from using Product at your sole discretion anytime before expiration of Evaluation Period. Upon expiration of Evaluation Period, your right to continue to use Exploratory will terminate, unless your purchases a Subscription to the Exploratory products and services. The product contains a feature that will automatically disable the product upon expiration of Evaluation Period.
 
-## TEMPORARY SUSPENSION FOR NON-PAYMENT
-
-13.1. JetBrains reserves the right to suspend Licensee's access to JetBrains' Products in the event that Licensee fails to make payment for its subscription.
-
-13.2. If JetBrains suspends Licensee's access to JetBrains' Products for non-payment according to the provision 13.1., Licensee must pay all past due amounts in order to restore its access to JetBrains' Products.
-
-13.3. Licensee hereby agrees that JetBrains is entitled to charge Licensee for the time period during which Licensee has access to JetBrains Products until Licensee or JetBrains terminates or suspends Licensee's subscription in accordance with this Agreement.
-
-
 ## Privacy Notices
 
 The Software automatically communicates with Exploratory servers for authenticating your user account.
@@ -80,7 +71,7 @@ Exploratory reserves the right at any time and from time to time to modify or di
 
 ## Miscellanea
 
-1. If you configure the Software to work with one or more accounts on the Exploratory.io website, your use of the Software will also be governed by the Exploratory.io website Terms of Service.
+1. If you configure the Software to work with one or more accounts on the Exploratory.io website, your use of the Software will also be governed by the Exploratory.io website [Terms of Service](https://exploratory.io/terms).
 2. The failure of Exploratory to exercise or enforce any right or provision of this EULA shall not constitute a waiver of such right or provision.
 3. This EULA constitutes the entire agreement between you and Exploratory and governs your use of the Software, superseding any prior agreements between you and Exploratory (including, but not limited to, any prior versions of the EULA).
 4. You agree that this EULA and your use of the Software are governed under California law and any dispute related to the Software must be brought in a tribunal of competent jurisdiction located in or near San Francisco, California.

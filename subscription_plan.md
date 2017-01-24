@@ -1,13 +1,18 @@
-For Business and Organizations
+# For Business and Organizations
 
-Legal entities, including companies and organizations (both for-profit and non-profit), requiring the software for general commercial use qualify for the Commercial Toolbox Subscription plans. A legal entity may use the software under Commercial Toolbox Subscription on any computer, operating system, and by any developer within a legal entity, provided that the total number of concurrent users never exceeds the number of subscriptions purchased by that legal entity.
+Legal entities, including companies and organizations (both for-profit and non-profit), requiring the software for general commercial use qualify for the Business Subscription plan. A legal entity may use the software under Business Subscription on any computer, operating system, and only by a named user.
 
-For Individual Developers
+For complete details, please check our [End User License Agreement](https://exploratory.io/eula) and [Terms & Service](https://exploratory.io/terms).
 
-If you, as an individual, are purchasing Toolbox Subscription using your own funds, then the Personal Toolbox Subscription plans are right for you.
+# For Individual Analysts
 
-Personal Toolbox Subscriptions cannot be purchased by companies in any way or form, nor can a company reimburse an individual for a subscription he/she purchased. However, an individual may use Personal Toolbox Subscription that he/she privately purchased on any hardware, including company hardware.
+If you, as an individual, are purchasing Exploratory Subscription using your own funds, then the Individual Subscription plans are right for you.
 
-For Education and Open Source
+Individual Subscriptions cannot be purchased by companies in any way or form, nor can a company reimburse an individual for a subscription he/she purchased. However, an individual may use Individual Subscription that he/she privately purchased on any hardware, including company hardware.
 
-Students, teachers, academic institutions and non-commercial open source software projects qualify for the 1-year complimentary subscriptions allowing them to use the fully-functional versions of software for non-commercial purposes. For the complimentary subscription terms, check the subscription comparison matrix.
+For complete details, please check our [End User License Agreement](https://exploratory.io/eula) and [Terms & Service](https://exploratory.io/terms).
+
+
+# For Education and Open Data
+
+Students, teachers, academic institutions and open data projects qualify for the 1-year complimentary subscriptions (Community Edition) allowing them to use the fully-functional versions of Exploratory desktop.
