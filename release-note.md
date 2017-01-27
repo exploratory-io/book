@@ -1,5 +1,14 @@
 # Release Note
 
+## R 3.0.1
+
+Released on 1/25/2017
+
+### Bug Fixes
+
+- Getting error pop-up dialog consistently in Viz view after updating or deleting existing steps. 
+
+
 ## R 3.0
 
 Released on 1/24/2017
