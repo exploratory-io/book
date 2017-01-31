@@ -1,12 +1,22 @@
 # Release Note
 
+## R 3.0.2
+
+Released on 1/26/2017
+
+### Bug Fixes
+
+- Couldn't assign a new connection after importing projects from another environment.
+- Data Frame list is not up-to-date when opening Join dialog for the first time. 
+
 ## R 3.0.1
 
 Released on 1/25/2017
 
 ### Bug Fixes
 
-- Getting error pop-up dialog consistently in Viz view after updating or deleting existing steps. 
+- Multi-byte characters (including Japanese) were not handled properly in Import by Writing R Script dialog UI.
+- Getting error pop-up dialog consistently in Viz view after updating or deleting existing steps.
 
 
 ## R 3.0
