@@ -1,5 +1,7 @@
 # Release Note
 
+## R 3.1
+
 Released on 2/8/2017
 
 ### New Features  
@@ -37,7 +39,7 @@ Released on 2/8/2017
 - Chart: Fill with NA and Same Column assigned to Color and Repeat By produces a blank
 - Chart: Un-sync is not working with Line and Scatter Charts with Small Multiple.
 - Chart: Table Viz doesn’t show up when there is a list column
-- Disabling / enabling step did not fresh pinned Chart. 
+- Disabling / enabling step did not fresh pinned Chart.
 
 ## R 3.0.2
 
