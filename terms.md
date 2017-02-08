@@ -10,7 +10,7 @@ Violation of any of the terms below will result in the termination of your Accou
 
 You must be a human. Accounts registered by "bots" or other automated methods are not permitted.
 
-You must provide your name, a valid email address, and any other information requested in order to complete the signup process.
+You must provide your name, a valid email address, and any other information requested in order to complete the signup process. Any registration information that you provide to us via your Exploratory account must be accurate, current and complete. You are responsible for maintaining your information always current so that we may send notices, statements and other information to you by email or through your Exploratory Account. You are responsible for all actions taken through your accounts.
 
 Your login may only be used by one person - i.e., a single login may not be shared by multiple people.
 
@@ -21,6 +21,18 @@ You are responsible for all Content posted and activity that occurs under your a
 One person or legal entity may not maintain more than one free account.
 
 You may not use the Service for any illegal or unauthorized purpose. You must not, in the use of the Service, violate any laws in your jurisdiction (including but not limited to copyright or trademark laws).
+
+### Community Edition for Teacher and Student
+
+For the purpose of this Agreement, a student is an individual who is enrolled at a recognized tertiary educational institution (university or college) that grants degrees requiring not less than the equivalent of two years of full-time study, and upon request by Exploratory, Inc. is able to provide proof of such enrollment. For the purpose of this Agreement, a teacher is an individual who conducts lectures and/or seminars at a recognized tertiary educational institution (university or college), and upon request by Exploratory, Inc. is able to provide proof of such involvement.
+
+### Community Edition for Open Data Projects
+
+- You have to be a project lead or a core member of the project.
+- Your Open Data project is in active development for a minimum of 3 months.
+- You are committed to publish high quality data analysis contents in a form of either Data, Chart, or Note, publicly at [Exploratory](https://exploratory.io) on a regular basis at least once in a month.
+- You have a blog or website for your project updates including your shared contents at [Exploratory](https://exploratory.io).
+- Exploratory reserves the right to decline your qualification for Community edition any time if you are not satisfying the above criteria. 
 
 ## B. Payment, Refunds, Upgrading and Downgrading Terms
 
@@ -80,7 +92,7 @@ The look and feel of the Service is copyright © Exploratory, Inc. All rights re
 
 Your use of the Service is at your sole risk. The service is provided on an "as is" and "as available" basis.
 
-Support for Exploratory services is only available in English, via community, email or phone depending on the your subscribed plan.
+Support for Exploratory services is only available in English and Japanese, via community, email or phone depending on the your subscribed plan.
 
 You understand that Exploratory uses third-party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Service.
 

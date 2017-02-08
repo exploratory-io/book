@@ -1,16 +1,77 @@
 # Release Note
 
-## R 3.0
+## R 3.1
 
-Released on 1/23/2017
+Released on 2/8/2017
 
 ### New Features  
 
-- Added Model Building and Evaluation for Linear Regression, GLM, Logistic Regression, K-means Clustering.
-- Added 'Multiple Columns Selection' for both Table and Summary views, which will show context sensitive data wrangling menus.
+- Added Survival Analysis with Survival Curve and Cox Regression Model.
+- Added Multinomial Logistic Regression support.
+- Scatter - Support showing 'circle' to show the range for the dots.
+- Scatter - Support showing trend lines with lm, loess, and gam.
+- Scatter - Support Error Bar.
+- Line Chart - Support 'Range' to show confidence interval range.
+- R Script Editor
+
+
+### Enhancements
+
+- Added anonymize function from 'anonymizer' package to anonymize given text.
+- Added 'forcats' package to make it easier to work with factor data type.
+- Column names in Data Transformation Steps are now highlighted.
+- Support 'cancellation' for database connection testing.
+- Pivot: Show an assigned column name at the top for Column.
+- Scatter - support the circle size even when a column is not assigned.
+- Performance improvements around Data Frames and Steps navigation.
+- Added a command menu for converting 'difftime' data to numeric.
+
+### Bug Fixes
+
+- Added an error check to show error message at the app launch time.
+- Added a recovery mechanism so that users will be able to open their projects even when the chart definition files have been broken.
+- 'statecode' function now supports DC - District of Columbia mapping.
+- Insert Step menu is not available on branch.
+- Column selection in Logistic Regression form is partially hidden.
+- Error Dialog popups when there is an error on a new step (and step is not saved yet) and try to move to different tab.
+- Changing pinned step status from disable to enable did not refresh viz.
+- Bar chart was not respecting the levels set in Factor columns.
+- Chart: Fill with NA and Same Column assigned to Color and Repeat By produces a blank
+- Chart: Un-sync is not working with Line and Scatter Charts with Small Multiple.
+- Chart: Table Viz doesn’t show up when there is a list column
+- Disabling / enabling step did not fresh pinned Chart.
+
+
+## R 3.0.2
+
+Released on 1/26/2017
+
+### Bug Fixes
+
+- Couldn't assign a new connection after importing projects from another environment.
+- Data Frame list is not up-to-date when opening Join dialog for the first time.
+
+## R 3.0.1
+
+Released on 1/25/2017
+
+### Bug Fixes
+
+- Multi-byte characters (including Japanese) were not handled properly in Import by Writing R Script dialog UI.
+- Getting error pop-up dialog consistently in Viz view after updating or deleting existing steps.
+
+
+## R 3.0
+
+Released on 1/24/2017
+
+### New Features  
+
+- Added Model Building and Evaluation for Linear Regression, GLM, Logistic Regression.
+- Added 'Multiple Columns Selection' for both Table and Summary views, which will show context sensitive data wrangling commands menus.
 - Added 'ODBC' data source type.
-- Added new Viz type - Error Bars,
-- Added Table under Viz tab - you can sort a column and show bars to help comparing the values easier.
+- Added Error Bar as a new visualization type.
+- Added Table as a new visualization type. You can sort a column and show bars to help comparing the values easier.
 
 ### Enhancements
 
@@ -19,10 +80,11 @@ Released on 1/23/2017
 - Chart Color - Added New Color Palettes
 - Chart Color - Default color switch - Users can now choose different color palettes even when a columns is not assigned to Color.
 - Chart - Added support for font size for X / Y Axis tick labels and Legend.
-- Chart - Added support for show / hide grid lines.
-- Chart - Added support for log scale for Bar, Line, Area, Scatterplot.
-- Chart - Save as PNG / SVG.
+- Chart - Added support for show / hide grid lines and zero lines.
+- Chart - Save as PNG / SVG with transparent background color.
 - Chart - Performance improvements for Chart rendering at exploratory.io cloud server and collaboration server.
+- Chart - Added 'Ordered Factor' Support for Color - Map / Scatterplot.
+- Chart - Log Axis scale support for Bar and Scatter charts.
 
 #### Pivot ####
 
@@ -30,18 +92,17 @@ Released on 1/23/2017
 - Pivot Table - Switched the Color formatting logic from 'equal group' to 'equal length'.
 - Pivot Table - Added Column based color formatting along with the existing Row and All.
 
-- Proxy Server configuration through UI
 
 #### Map ####
 
-- Show sample values from GeoJSON file's properties.
-- Added '# of Rows' for Color as default.
+- Show sample values from GeoJSON file's properties in GeoJSON setup dialog UI.
+- Added '# of Rows' for Color.
 
 
 #### Data Wrangling ####
 
 - Added new data wrangling operations with the column header menu. - Move to, Gather, Unite, Analytics, etc.
-- Added 'Ungroup' command shortcut under # of Groups indicator dropdown.
+- Added 'Ungroup' command shortcut under '# of Groups' indicator dropdown.
 - Stop words - Support Multiple languages.
   * Danish
   * Dutch
@@ -58,38 +119,39 @@ Released on 1/23/2017
   * Spanish
   * Swedish
 - Added 'convert_to_NA' function as UI command.
-- Added 'excel_numeric_to_date'.
-- Added 'row_as_header' function.
+- Added 'excel_numeric_to_date' and 'unixtime_to_date' functions to convert numerical values to date / time.
+- Added 'row_as_header' function to make one of the rows as column header.
 - Added 'normalize' function, which is a wrapper for 'scales' function but returns a numeric vector, not a matrix.
-- Added 'Ordered Factor' Support for Color - Map / Scatterplot.
-- Added 'Rename' support for Data Frame.
-- Support a better special characters handling for Data Frame name.
-- Added a better handling of 'space' or other special characters for data frame names. It now replaces them with underscore '\_'.
-- Added a support for 'space' for new column names with data wrangling.
-- Added 'Rename' support for Note.
-- Added 'Duplicate' support for Note.
-- Thumbnail image generation support for Map. You can see the Thumbnail images for Map when Note is saved locally and also published at exploratory.io.
+
+## Note ##
+
 - Note: Improved the experience around the chart embedding in Note.
 - Note: Improved the performance for creating new Note or opening existing one.
-- Windows build is now signed with an appropriate certificate.
+- Note: Support renaming Note name.
 
+## Others ##
+
+- Support renaming Data Frame name.
+- Added a better handling of 'space' or other special characters for data frame names. It now replaces them with underscore '\_'.
+- Added a support for 'space' for new column names with data wrangling.
+- Added 'Duplicate' support for Note.
+- Thumbnail image generation support for Map. You can see the Thumbnail images for Map when Note is saved locally and also published at exploratory.io.
 - CSV Data Import - Made UTF-8 a fallback encoding for ASCII. This will make the data loading with CSV better.
 - Added 'Update' button to upgrade user installed R packages.
-
-- Show Scrollbar always.
-- Improved R script editor formatting in 'Import by Writing R Script' dialog.
-
+- Show Scrollbar always (Mac). Also, users can choose whether showing the scroll bar or not in the configuration dialog.
+- Improved the text formatting in 'Import by Writing R Script' dialog.
+- Added Proxy Server configuration through UI
+- Windows Installation failed to download git and/or R if install path contains space in it.
+- Windows build is now signed with an appropriate certificate.
+- R package install - Use backup CRAN clone when installing additional R package fails.
 
 ### Bug Fixes
 
-Fix issue that unfinished token is not removed when a user clicks OK button on Command UI Dialog
-Fix issue that updating source step does not refresh pinned viz.
-[Refresh Icon] Fix issue that there is a lag between refresh icon click and actual spin icon shows up timing
-
-- UI freeze caused by GeoJSON Map
-- Ordered factor support for Map / Scatter
+- Unfinished token was not removed when a user clicks OK button on Command UI Dialog
+- Updating source step does not refresh pinned viz.
+- There is a lag between refresh icon click and actual spin icon shows up timing
+- UI freeze was caused by GeoJSON Map
 - Fixed for Delete First Viz causes Empty Screen
-
 - 0 was not showing up in Column of Pivot.
 - Logical column values (TRUE / FALSE / NA) were not correctly sorted.
 - Can't select a column inside Filter dialog for Existing one in Branch
@@ -97,9 +159,10 @@ Fix issue that updating source step does not refresh pinned viz.
 - Chart: Not refreshed when clicking on Refresh button and when it's pinned
 - Strip semicolon at the end of SQL to avoid syntax error (Released as 2.5.1.5)
 - Avoid parsing and recomposing of SQL to work around replacing of double quoted column name with single quoted string on PostgreSQL (Released as 2.5.1.5)
-- Fix issue that do_tokenize regex option is not saved
+- do_tokenize regex option was not saved
 - Reorder the sections inside the generated R scripts.
 - Note: Pivot Table column headers were not showing up.
+- Fixed Viz not rendered with “Adding New Transformation” card selected case.
 
 
 
