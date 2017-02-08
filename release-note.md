@@ -1,5 +1,44 @@
 # Release Note
 
+Released on 2/8/2017
+
+### New Features  
+
+- Added Survival Analysis with Survival Curve and Cox Regression Model.
+- Added Multinomial Logistic Regression support.
+- Scatter - Support showing 'circle' to show the range for the dots.
+- Scatter - Support showing trend lines with lm, loess, and gam.
+- Scatter - Support Error Bar.
+- Line Chart - Support 'Range' to show confidence interval range.
+- R Script Editor
+
+
+### Enhancements
+
+- Added anonymize function from 'anonymizer' package to anonymize given text.
+- Added 'forcats' package to make it easier to work with factor data type.
+- Column names in Data Transformation Steps are now highlighted.
+- Support 'cancellation' for database connection testing.
+- Pivot: Show an assigned column name at the top for Column.
+- Scatter - support the circle size even when a column is not assigned.
+- Performance improvements around Data Frames and Steps navigation.
+- Added a command menu for converting 'difftime' data to numeric.
+
+### Bug Fixes
+
+- Added an error check to show error message at the app launch time.
+- Added a recovery mechanism so that users will be able to open their projects even when the chart definition files have been broken.
+- 'statecode' function now supports DC - District of Columbia mapping.
+- Insert Step menu is not available on branch.
+- Column selection in Logistic Regression form is partially hidden.
+- Error Dialog popups when there is an error on a new step (and step is not saved yet) and try to move to different tab.
+- Changing pinned step status from disable to enable did not refresh viz.
+- Bar chart was not respecting the levels set in Factor columns.
+- Chart: Fill with NA and Same Column assigned to Color and Repeat By produces a blank
+- Chart: Un-sync is not working with Line and Scatter Charts with Small Multiple.
+- Chart: Table Viz doesn’t show up when there is a list column
+- Disabling / enabling step did not fresh pinned Chart. 
+
 ## R 3.0.2
 
 Released on 1/26/2017
@@ -7,7 +46,7 @@ Released on 1/26/2017
 ### Bug Fixes
 
 - Couldn't assign a new connection after importing projects from another environment.
-- Data Frame list is not up-to-date when opening Join dialog for the first time. 
+- Data Frame list is not up-to-date when opening Join dialog for the first time.
 
 ## R 3.0.1
 
