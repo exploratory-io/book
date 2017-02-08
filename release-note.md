@@ -41,6 +41,7 @@ Released on 2/8/2017
 - Chart: Table Viz doesn’t show up when there is a list column
 - Disabling / enabling step did not fresh pinned Chart.
 
+
 ## R 3.0.2
 
 Released on 1/26/2017
