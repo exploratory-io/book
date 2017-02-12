@@ -148,7 +148,15 @@ then you can have dedicated query input field on right hand side of the import D
 
 ### inputParameters
 
-`inputParameters` is an array of parameter passed to the `function` (i.e in this case, `riem_measures`) and these are renered as input fields on Data Import Dialog. Each parameter can have following Attributes
+`inputParameters` is an array of parameter passed to the `function` (i.e in this case, `riem_measures`) and these are rendered as input fields on Data Import Dialog. Parameters order matters so make sure to set input parameters in a way that underly R function expects. For example, if your R function has arguments station, start_date, and end_date then you need to define your inputParameters in this order.(i.e station, start_date, and end_date). If you want to define parameter order in a different way, you need to write wrapper function in library.r file and then do a parameter mapping there like below and set the wrapper function name (`riem_measures_wrapper`) to `function` attribute.
+
+```
+riem_measures_wrapper <- function(start_date, end_date, station){
+  riem_measures(station = station, start_date = start_date, end_date = end_date)  
+}
+```
+
+ Each parameter can have following Attributes
 
 - name
 - displayName
