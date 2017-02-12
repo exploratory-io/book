@@ -28,40 +28,40 @@ This is how your Plugin Definition Meta File (`plugin.json`) looks like. The fil
 
 ```
 {
-"name": "riem_measures",
-"displayName": "riem measures",
-"iconURL" : "lib/images/plugin.png",
-"helpURL" :  "http://ropensci.github.io/riem/",
-"rPackageDependencies": ["riem"],
-"function": "riem_measures",
-"rSourceFile" : "plugin.r",
-"hasQueryField" : false,
-"inputParameters": [
-     {
-       "name": "station",
-       "displayName":"Station",
-       "colSpan" : 5,
-       "dataType": "text",
-       "defaultValue" : "",
-       "required" : true
-     },
-     {
-       "name": "date_start",
-       "displayName":"Date Start",
-       "colSpan" : 5,
-       "dataType": "text",
-       "defaultValue" : "",
-       "required" : true
-     },
-     {
-       "name": "date_end",
-       "displayName":"Date End",
-       "colSpan" : 5,
-       "dataType": "text",
-       "defaultValue" : "",
-       "required" : true
-     }
-   ]
+  "name": "riem_measures",
+  "displayName": "riem measures",
+  "iconURL" : "lib/images/plugin.png",
+  "helpURL" :  "http://ropensci.github.io/riem/",
+  "rPackageDependencies": ["riem"],
+  "function": "riem_measures",
+  "rSourceFile" : "plugin.r",
+  "hasQueryField" : false,
+  "inputParameters": [
+    {
+      "name": "station",
+      "displayName":"Station",
+      "colSpan" : 5,
+      "dataType": "text",
+      "defaultValue" : "",
+      "required" : true
+    },
+    {
+      "name": "date_start",
+      "displayName":"Date Start",
+      "colSpan" : 5,
+      "dataType": "text",
+      "defaultValue" : "",
+      "required" : true
+    },
+    {
+      "name": "date_end",
+      "displayName":"Date End",
+      "colSpan" : 5,
+      "dataType": "text",
+      "defaultValue" : "",
+      "required" : true
+    }
+  ]
 }
 ```
 
@@ -134,13 +134,13 @@ For example, if you define following in your `plugin.json`
 ``` 
 "hasQueryField" : true,
 "inputParameters": [
-     {
-       "name" : "query",
-       "displayName":"Query",
-       "dataType":"text",
-       "defaultValue" : "",
-       "required" : true
-     },
+  {
+    "name" : "query",
+    "displayName":"Query",
+    "dataType":"text",
+    "defaultValue" : "",
+    "required" : true
+  },
 ```
 then you can have dedicated query input field on right hand side of the import Dialog.
 
@@ -200,23 +200,23 @@ For example, if you want to create a time range List of Values, you can create i
 
 ```
 {
-      "name": "time_range",
-      "displayName": "Time Range",
-      "dataType": "select",
-      "itemDataType" : "text",
-      "options": [
-        {"label":"Last 5 Years", "value":"5y"},
-        {"label":"Last 1 Hour", "value":"1h"},
-        {"label":"Last 4 Hours", "value":"4h"},
-        {"label":"Last 1 Day", "value":"1d"},
-        {"label":"Last 7 Day", "value":"7d"},
-        {"label":"Last 30 Days", "value":"30d"},
-        {"label":"Last 90 Days", "value":"90d"},
-        {"label":"Last 12 Months", "value":"1y"},
-        {"label":"From 2004", "value":"all"}
-      ],
-      "defaultValue" : "5y"
-    }
+  "name": "time_range",
+  "displayName": "Time Range",
+  "dataType": "select",
+  "itemDataType" : "text",
+  "options": [
+    {"label":"Last 5 Years", "value":"5y"},
+    {"label":"Last 1 Hour", "value":"1h"},
+    {"label":"Last 4 Hours", "value":"4h"},
+    {"label":"Last 1 Day", "value":"1d"},
+    {"label":"Last 7 Day", "value":"7d"},
+    {"label":"Last 30 Days", "value":"30d"},
+    {"label":"Last 90 Days", "value":"90d"},
+    {"label":"Last 12 Months", "value":"1y"},
+    {"label":"From 2004", "value":"all"}
+  ],
+  "defaultValue" : "5y"
+}
 ```  
 ##### number
 
