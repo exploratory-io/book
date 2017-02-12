@@ -67,17 +67,31 @@ This is how your Plugin Definition Meta File (`plugin.json`) looks like. The fil
 
 ### Attributes
 
-#### name
+#### name (required)
 
 `name` attribute holds Name of the plugin. in this case `riem_measurs`, please make sure to use your directory name for this `name` attribute. 
 
-#### displayName
+#### displayName (required)
 
 `displayName` attribute is used for Display Name on Data Source Picker Dialog and Import Data Dialog.
 
-#### iconURL
+#### iconURL (required)
 
-`iconURL` holds icon image file URL for your plugin. Other than default plugin icon (`lib/images/plugin.png`), currently it only supports external URL. If you use external URL, make sure to set
+`iconURL` holds icon image file URL for your plugin. currently it only supports external URL.
+
+For example:
+ 
+```
+   "iconURL" : "http://xmllondon.com/images/sparqlThumb.png",
+```
+
+If you do not have an icon, please use below for default lego like block icon.
+
+```
+   "iconURL" : "lib/images/plugin.png",
+```
+
+If you use external URL, make sure to set
 `iconWidh` and `iconHeight` to 32px to fit icon in the UI.
 
 ```
@@ -85,23 +99,33 @@ This is how your Plugin Definition Meta File (`plugin.json`) looks like. The fil
 "iconHeight" : "32px"
 ```
 
-#### helpURL
+#### helpURL (required)
 
-`helpURL` holds URL for your plugin help page. Help Link is put on Import Dialog Header
+`helpURL` holds URL for your plugin help page. Help Link is put on Import Dialog Header.
+if you do not have one, you can set default exploratory doc link like below:
 
-#### rPackageDependencies
+```
+"helpURL" :  "http://docs.exploratory.io/",
+```
 
-`rPackageDependencies` is an array of package names that the plugin depends.
+#### rPackageDependencies (required)
 
-#### function
+`rPackageDependencies` is an array of package names that the plugin depends. If your plugin does not depends on any package,
+leave it as empty array like below:
+
+```
+"rPackageDependencies": ["riem"],
+```
+
+#### function (required)
 
 `function` holds R function name that the plugin calls to get a data. The R function must return data frame as output. In this example, you'll call `riem_measures` from riem package.
 
-#### rSourceFile
+#### rSourceFile (required)
 
 `rSourceFile` holds a name of R script file that the plugin depends. Let's use `plugin.r` for this example.
 
-### hasQueryField
+#### hasQueryField (optional)
 
 If you want to have a dedicated query input field that has much space for your query string, Set `hasQueryField` as `true` and add a parameter whose `name` is `query` and `dataType` is text.
 
@@ -134,19 +158,19 @@ then you can have dedicated query input field on right hand side of the import D
 - defaultValue
 - required
 
-#### name
+#### name (required)
 
 `name` of the input parameter. 
 
-#### displayName
+#### displayName (required)
 
 `displayName` attribute is used for Display Name on Data Source Picker Dialog and Import Data Dialog.
 
-#### colSpan
+#### colSpan (required)
 
 `colSpan` attribute holds width of the input parameter on UI. Please use 5 for now.
 
-#### dataType
+#### dataType (required)
 
 `dataType` attribute holds a type of the input parameter. Supported types are:
 
@@ -164,8 +188,7 @@ if you use `text`, it becomes input field that accepts characters.
 ##### select
 
 This is useful when you want to create a static List of Values.
-For example, if you want to create a time range List of Values, you can create it by specifying `options` and `itemDataType` like below.
-if your option value is text, `itemDataType` should be set as `text`. If your option value is number, `itemDataType` should be number. 
+For example, if you want to create a time range List of Values, you can create it by specifying `options` and `itemDataType` like below. `options` an array of selector options and each option needs to have `label` and `value` attributes.If your option value is text, `itemDataType` should be set as `text`. If your option value is number, `itemDataType` should be number. Date is not supported for `itemDataType` for now.
 
 ```
 {
@@ -201,7 +224,9 @@ If the parameter needs default value, you can set it through `defaultValue` attr
 
 #### required
 
-If you want to make the parameter as mandatory parameter, set this `required` attribute as `true`.
+If you want to make a parameter as mandatory parameter, set the `required` attribute as `true`. By setting this to `true`, you can force users to enter values for these parameters and if a user clicks `Get Data` button without filling these parameters, he/she gets following error on Import Dialog.
+
+![](import/images/plugin_input_field_validation.png)
 
 ## Create plugin R script file.
 
@@ -214,7 +239,7 @@ library(riem)
 
 ## How to use
 
-So once you created your custom plugin, you can test it by selecting `Import by User Defined Plugin`
+So once you created your custom plugin, you can test it by selecting `Import by User Defined Plugin` after clicking `+ (plus)` icon next to `Data Frames`.
 
 ![](import/images/import_by_user_defined_plugin.png)
 
@@ -223,6 +248,6 @@ And from User Defined Plugin Picker, select your plugin
 
 ![](import/images/user_defined_plugin_picker.png)
 
-This will open a Data Import Dialog
+This will open a Data Import Dialog. And your input parameters should be displayed on left handside of the Import Dialog.
 
 ![](import/images/data_import_diloag_with_user_defined_plugin.png)
