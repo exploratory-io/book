@@ -35,6 +35,7 @@ This is how your Plugin Definition Meta File (`plugin.json`) looks like. The fil
 "rPackageDependencies": ["riem"],
 "function": "riem_measures",
 "rSourceFile" : "plugin.r",
+"hasQueryField" : false,
 "inputParameters": [
      {
        "name": "station",
@@ -99,6 +100,27 @@ This is how your Plugin Definition Meta File (`plugin.json`) looks like. The fil
 #### rSourceFile
 
 `rSourceFile` holds a name of R script file that the plugin depends. Let's use `plugin.r` for this example.
+
+### hasQueryField
+
+If you want to have a dedicated query input field that has much space for your query string, Set `hasQueryField` as `true` and add a parameter whose `name` is `query` and `dataType` is text.
+
+For example, if you define following in your `plugin.json`
+
+``` 
+"hasQueryField" : true,
+"inputParameters": [
+     {
+       "name" : "query",
+       "displayName":"Query",
+       "dataType":"text",
+       "defaultValue" : "",
+       "required" : true
+     },
+```
+then you can have dedicated query input field on right hand side of the import Dialog.
+
+![](import/images/plugin_with_query_field.png)
 
 ### inputParameters
 
