@@ -226,7 +226,7 @@ If you want to make a parameter as mandatory parameter, set the `required` attri
 
 ## Create plugin R script file.
 
-If your plugin simply passes input parameter values from UI to the R function defined in `function` attribute, you don't need to define a new function in the R script. (i.e. all you need is create a single line `library(riem)` file and save it as `plugin.r`)
+If your plugin simply passes input parameter values from UI to an existing R function pointed by `function` attribute, you don't need to define a new function in the R script. (i.e. all you need is create a single line `library(riem)` file and save it as `plugin.r`)
 However, if you plugin needs some pre-processing and/or post-processing along with some function call from a R package, then you need to write some R script in `plugin.r`.
 
 ```
