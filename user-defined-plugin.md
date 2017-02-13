@@ -184,7 +184,7 @@ If you use `text`, it becomes input field that accepts characters.
 ##### select
 
 This is useful when you want to create a static List of Values.
-For example, if you want to create a time range List of Values, you can create it by specifying `options` and `itemDataType` like below. `options` is an array of selector options and each option needs to have `label` and `value` attributes.If your option value is text, `itemDataType` should be set as `text`. If your option value is number, `itemDataType` should be number. Date is not supported for `itemDataType` for now.
+For example, if you want to create a time range List of Values, you can create it by specifying `options` and `itemDataType` like below. `options` is an array of selector options and each option needs to have `label` and `value` attributes. If your option value is text, `itemDataType` should be set as `text`. If your option value is number, `itemDataType` should be number. Date is not supported for `itemDataType` for now.
 
 ```
 {
