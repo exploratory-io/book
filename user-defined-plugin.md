@@ -4,7 +4,7 @@ Exploratory provides a framework with which developers can create their own data
 
 ## Plugin Structure
 
-A User defined plugin consists of JSON format plugin definition meta file (`plugin.json`) and R script file (`plugin.r`).
+A user-defined plugin consists of JSON format plugin definition meta file (`plugin.json`) and R script file (`plugin.r`).
 These two files need to be stored inside `~/.exploratory/plugins` directory as follows.
 
 `~/.exploratory/plugins/<plugin_name>/plugin.json`
@@ -14,13 +14,13 @@ These two files need to be stored inside `~/.exploratory/plugins` directory as f
 
 ## Create Plugin directory
 
-So let's say you want to create a plugin that uses `riem_measures` function from [riem](https://github.com/ropensci/riem) R package to get ASOS data via the Iowa Environment Mesonet. Then first you want to to create a directory called `riem_measures`. NOTE: The directory name is the plugin name and should be unique among user-defined plugins.
+So let's say you want to create a plugin that uses `riem_measures` function from [riem](https://github.com/ropensci/riem) R package to get ASOS data via the Iowa Environment Mesonet. Then first you want to to create a directory called `my_riem_measures`. NOTE: The directory name is the plugin name and should be unique among user-defined plugins.
 
 So on Mac, you can do:
 
 `$ cd ~/.exploratory/plugins`
 
-`$ mkdir riem_measures`
+`$ mkdir my_riem_measures`
 
 ## Create Plugin Definition Meta File.
 
@@ -28,7 +28,7 @@ This is how your Plugin Definition Meta File (`plugin.json`) looks like. The fil
 
 ```
 {
-  "name": "riem_measures",
+  "name": "my_riem_measures",
   "displayName": "riem measures",
   "iconURL" : "lib/images/plugin.png",
   "helpURL" :  "http://ropensci.github.io/riem/",
@@ -40,7 +40,6 @@ This is how your Plugin Definition Meta File (`plugin.json`) looks like. The fil
     {
       "name": "station",
       "displayName":"Station",
-      "colSpan" : 5,
       "dataType": "text",
       "defaultValue" : "",
       "required" : true
@@ -48,7 +47,6 @@ This is how your Plugin Definition Meta File (`plugin.json`) looks like. The fil
     {
       "name": "date_start",
       "displayName":"Date Start",
-      "colSpan" : 5,
       "dataType": "text",
       "defaultValue" : "",
       "required" : true
@@ -56,7 +54,6 @@ This is how your Plugin Definition Meta File (`plugin.json`) looks like. The fil
     {
       "name": "date_end",
       "displayName":"Date End",
-      "colSpan" : 5,
       "dataType": "text",
       "defaultValue" : "",
       "required" : true
@@ -69,7 +66,7 @@ This is how your Plugin Definition Meta File (`plugin.json`) looks like. The fil
 
 #### name (required)
 
-`name` attribute holds Name of the plugin. in this case `riem_measurs`, please make sure to use your directory name for this `name` attribute. 
+`name` attribute holds Name of the plugin. in this case `my_riem_measures`, please make sure to use your directory name for this `name` attribute. 
 
 #### displayName (required)
 
@@ -85,33 +82,27 @@ For example:
    "iconURL" : "http://xmllondon.com/images/sparqlThumb.png",
 ```
 
-If you do not have an icon, please use below for default lego like block icon.
+If you do not have an icon default lego like block icon is used instead.
+
+If you use external URL, `iconWidth` and `iconHeight` are set to 32px by default to fit icon in the UI. If you want to change it for some reason, you can change these by specifying following attributes.
 
 ```
-   "iconURL" : "lib/images/plugin.png",
-```
-
-If you use external URL, make sure to set
-`iconWidh` and `iconHeight` to 32px to fit icon in the UI.
-
-```
-"iconWidth" : "32px",
+"iconWidth" : "64px",
 "iconHeight" : "32px"
 ```
 
 #### helpURL (required)
 
 `helpURL` holds URL for your plugin help page. Help Link is put on Import Dialog Header.
-if you do not have one, you can set default exploratory doc link like below:
+If you do not have one, you can set default exploratory doc link like below:
 
 ```
 "helpURL" :  "http://docs.exploratory.io/",
 ```
 
-#### rPackageDependencies (required)
+#### rPackageDependencies (optional)
 
-`rPackageDependencies` is an array of package names that the plugin depends. If your plugin does not depends on any package,
-leave it as empty array like below:
+`rPackageDependencies` is an array of package names that the plugin depends. For example, if you plugin depends on `riem` you need to set it like below: 
 
 ```
 "rPackageDependencies": ["riem"],
@@ -119,11 +110,11 @@ leave it as empty array like below:
 
 #### function (required)
 
-`function` holds R function name that the plugin calls to get a data. The R function must return data frame as output. In this example, you'll call `riem_measures` from riem package.
+`function` holds R function name that the plugin calls to get data. The R function must return data frame as output. In this example, you'll call `riem_measures` from riem package.
 
 #### rSourceFile (required)
 
-`rSourceFile` holds a name of R script file that the plugin depends. Let's use `plugin.r` for this example.
+`rSourceFile` holds the name of R script file that the plugin depends. Let's use `plugin.r` for this example.
 
 #### hasQueryField (optional)
 
@@ -148,7 +139,7 @@ then you can have dedicated query input field on right hand side of the import D
 
 ### inputParameters
 
-`inputParameters` is an array of parameter passed to the `function` (i.e in this case, `riem_measures`) and these are rendered as input fields on Data Import Dialog. Parameters order matters so make sure to set input parameters in a way that underly R function expects. For example, if your R function has arguments station, start_date, and end_date then you need to define your inputParameters in this order.(i.e station, start_date, and end_date). If you want to define parameter order in a different way, you need to write wrapper function in library.r file and then do a parameter mapping there like below and set the wrapper function name (`riem_measures_wrapper`) to `function` attribute.
+`inputParameters` is an array of parameters passed to the `function` (i.e in this case, `riem_measures`) and these are rendered as input fields on Data Import Dialog. Parameters order matters so make sure to set input parameters in a way that underly R function expects. For example, if your R function has arguments station, start_date, and end_date then you need to define your inputParameters in this order.(i.e station, start_date, and end_date). If you want to define parameter order in a different way, you need to write wrapper function in library.r file and then do a parameter mapping there like below and set the wrapper function name (`riem_measures_wrapper`) to `function` attribute.
 
 ```
 riem_measures_wrapper <- function(start_date, end_date, station){
@@ -172,11 +163,8 @@ riem_measures_wrapper <- function(start_date, end_date, station){
 
 #### displayName (required)
 
-`displayName` attribute is used for Display Name on Data Source Picker Dialog and Import Data Dialog.
+`displayName` attribute is used for Parameter Display Name on Import Data Dialog.
 
-#### colSpan (required)
-
-`colSpan` attribute holds width of the input parameter on UI. Please use 5 for now.
 
 #### dataType (required)
 
@@ -191,12 +179,12 @@ We do not support Date type parameter for now.
 
 ##### text
 
-if you use `text`, it becomes input field that accepts characters.
+If you use `text`, it becomes input field that accepts characters.
 
 ##### select
 
 This is useful when you want to create a static List of Values.
-For example, if you want to create a time range List of Values, you can create it by specifying `options` and `itemDataType` like below. `options` an array of selector options and each option needs to have `label` and `value` attributes.If your option value is text, `itemDataType` should be set as `text`. If your option value is number, `itemDataType` should be number. Date is not supported for `itemDataType` for now.
+For example, if you want to create a time range List of Values, you can create it by specifying `options` and `itemDataType` like below. `options` is an array of selector options and each option needs to have `label` and `value` attributes.If your option value is text, `itemDataType` should be set as `text`. If your option value is number, `itemDataType` should be number. Date is not supported for `itemDataType` for now.
 
 ```
 {
@@ -238,7 +226,7 @@ If you want to make a parameter as mandatory parameter, set the `required` attri
 
 ## Create plugin R script file.
 
-If your plugin simply passes input parameter values from UI to the R function defined in `function` attribute, you can stub the R script. (i.e. all you need is create a single line `library(riem)` file and save it as `plugin.r`)
+If your plugin simply passes input parameter values from UI to the R function defined in `function` attribute, you don't need to define a new function in the R script. (i.e. all you need is create a single line `library(riem)` file and save it as `plugin.r`)
 However, if you plugin needs some pre-processing and/or post-processing along with some function call from a R package, then you need to write some R script in `plugin.r`.
 
 ```
@@ -256,6 +244,6 @@ And from User Defined Plugin Picker, select your plugin
 
 ![](import/images/user_defined_plugin_picker.png)
 
-This will open a Data Import Dialog. And your input parameters should be displayed on left handside of the Import Dialog.
+This will open a Data Import Dialog. And your input parameters should be displayed on left-hand side of the Import Dialog.
 
 ![](import/images/data_import_diloag_with_user_defined_plugin.png)
