@@ -32,7 +32,20 @@ For the purpose of this Agreement, a student is an individual who is enrolled at
 - Your Open Data project is in active development for a minimum of 3 months.
 - You are committed to publish high quality data analysis contents in a form of either Data, Chart, or Note, publicly at [Exploratory](https://exploratory.io) on a regular basis at least once in a month.
 - You have a blog or website for your project updates including your shared contents at [Exploratory](https://exploratory.io).
-- Exploratory reserves the right to decline your qualification for Community edition any time if you are not satisfying the above criteria. 
+- Exploratory reserves the right to decline your qualification for Community edition any time if you are not satisfying the above criteria.
+
+### Community Edition for Journalists
+
+- You have to be a journalist or working for journalists, and you are currently being employed by media organizations.
+- You are actively publishing your works on their media outlets such as web sites.
+- Exploratory reserves the right to decline your qualification for Community edition any time if you are not satisfying the above criteria.
+
+### Business Edition for Startups
+
+To be qualified for Startup discount:
+- You have to be a founder or employee of the startup which has incorporated less than three years ago and number of the total employees should not exceed more than 50.
+- You provide a valid company's name and URL.
+- Exploratory reserves the right to decline your qualification for Startup plan any time if you are not satisfying the above criteria.
 
 ## B. Payment, Refunds, Upgrading and Downgrading Terms
 

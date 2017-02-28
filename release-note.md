@@ -4,8 +4,9 @@
 
 Released on 2/27/2017
 
-### New Features  
+- [Announcement blog post](https://blog.exploratory.io/exploratory-v3-2-released-da940b794043#.in318rz68)
 
+### New Features  
 
 - Added Anomaly Detection algorithm with 'AnomalyDetection' package.
 - Added XGBoost (Extreme Gradient Boosting) model with 'xgboost' package.
