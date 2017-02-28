@@ -1,5 +1,49 @@
 # Release Note
 
+## R 3.2
+
+Released on 2/27/2017
+
+### New Features  
+
+
+- Added Anomaly Detection algorithm with 'AnomalyDetection' package.
+- Added XGBoost (Extreme Gradient Boosting) model with 'xgboost' package.
+- Added Random Forest model with 'RandomForest' package.
+- Added Chi Squared Test.
+- Added Simulation for Survival Model.
+- Support Custom Color Palette with Color Picker.
+- Custom Data Source Plugin - Users can create their own data source plugins with UIs.
+- Added Heatmap on Map.
+- Support Horizontal mode for Bar chart.
+- Shows thumbnail images of the charts included in each data frame when users place the mouse over.
+- Added a 'pivot' function - you can use this function to create 'two-way', 'contingency', or literally 'pivot' table.
+
+### Enhancements
+
+- Support Confidence Intervals for Trend Lines.
+- Data Frame / Branch UI re-organization.
+- Column header menu now adds an operation as an extra token within existing step if it's a same type of operation for Mutate, Summarize, Group By, Select, Rename, Arrange (Sort).
+- Select UI dialog now inherits the previous selection of Include or Exclude.
+- Google Spreadsheet - It shows a list of the worksheet names you can select from.
+- Map: It memorizes the position/zoom where you left the map last time, and restores it when you view it inside Viz/Note.
+- Duplicate as Data Frame - you can select a step in either main or branch data frame and promote it as a data frame with the steps.
+- Duplicate Branch with Charts.
+- Now you can install your favorite R packages from your local file system.  
+- Export Data with Steps as EDF (Exploratory Data Format) and save it to the local file system.
+- Generated R Script now supports cases where data frames are joined and / or merged.
+- Pivot Table Viz: Support Text Wrap and Responsive Column Width.
+- Pivot Table Viz: Support Show / Hide the value column.
+- Support no username / password for ODBC connections.
+- Disabled step should be skipped in reproducible script
+
+
+### Bug Fixes
+
+- Transform Input UI: Error message is not shown
+- [EDF Import] Error Handle when importing EDF has error
+
+
 ## R 3.1
 
 Released on 2/8/2017
