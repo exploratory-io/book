@@ -1,10 +1,42 @@
-# Quick Start Guide
+# Getting Started Guide
+
+This is a getting started guide that walks you through how to get around with Exploratory Desktop. The main ares to be covered are:
+
+* Create a new project and import data
+* Inspect Data with Summary view
+* Transform Data (Data Wrangling)
+  * Parse Character data and **Convert to Date**
+  * **Extract Day of Week** information from Date
+  * **Separate a column** into multiple columns
+  * Work with **NA (Missing Values)**
+  * **Join** with another Data Set
+* Visualize Data
+  * Map
+  * Pivot Table
+  * Line Chart
+  * Boxplot Chart
+  * Scatter Chart
+  * Trend Line
+  * K-means Clustering
+* Share Charts in **Reproducible** Way
+* Create **Note** to Share insights
+
 
 ## Download Flight Delay sample data
 
-We're going to use the following file for this tutorial. You can download it from the link below.
+In this tutorial, we're going to use US flight delay data for August, 2016, which tracks all the domestic flights that flew in the month for:
+
+* How much they were late or early for the departure / arrival delay times.
+* Where they left from and arrive to.
+* How long or far they were flying for each flight trip.
+
+US flight delay data:
+
+You can download the sample data CSV file from the link below.
 
 - [Flight delay 2016 August data](http://download.exploratory.io/data/airline_delay_2016_08.csv)
+
+Let's start!
 
 ## Create a new project
 
@@ -48,7 +80,7 @@ You can click 'Summary' tab and quickly see the summary information of the data 
 ![](images/quick-start-5.png)
 
 
-## Data Wrangling (Data Transformation)
+## Transform Data (Data Wrangling)
 
 In this Data Wrangling section, we are going to cover the following common data transformation tasks:
 
@@ -56,8 +88,9 @@ In this Data Wrangling section, we are going to cover the following common data 
 * Extract Day of Week information from Date
 * Separate a column into multiple columns
 * Remove NA (Missing Values)
+* Join with Airport Location Data Set
 
-### Parse character data and convert to Date
+### Parse Character data and Convert to Date
 
 As you can see below, FL_DATE column seems to contain date data but it's registered as 'character' data type.
 
@@ -118,7 +151,7 @@ Lastly, you would also notice that there is a new step called 'Mutate' being add
 This is the exact R command that actually run behind the scene. As you perform more data wrangling operations you will see more 'Steps' added here.
 
 
-### Extract Day of Week information from Date
+### Extract 'Day of Week' from Date
 
 Let's do one more operation within the same 'Mutate' step.
 
@@ -180,7 +213,7 @@ You can click on 'Mutate' step or 'Separate' step to see the data before and aft
 
 ![](images/quick-start-20_1.png)
 
-### Remove NA (Missing Values)
+### Work with NA (Missing Values)
 
 When you look at DEP_DELAY column in Summary view, you would notice that there is a slight red part in the green bar, which is located at the middle of the column tile.
 
@@ -241,12 +274,13 @@ You can also check Summary view and see that only 0.75% of the data was not mapp
 
 ## Visualize data
 
-There are many ways to visualize data with various chart types. In this exercise, let's take a look at a few of them to explore and have a better understanding of the data.
+There are many ways to visualize data with various chart types in Exploratory. In this exercise, let's take a look at a few of them to explore the data.
 
-* Pivot Table - Understand which state and day pairs have more flights than the others.
-* Line Chart - Understand Departure Delay Time Trend in August.
-* Boxplot Chart - Understand which airline carriers have more departure delay times than the others.
-* Scatter Chart - Understand correlations between Arrival Delay and Departure Delay times.
+* **Map** - Understand where the flights are leaving from.
+* **Pivot Table** - Understand which state and day pairs have more flights than the others.
+* **Line Chart** - Understand the trend of the departure delay times in August.
+* **Boxplot Chart** - Understand how bad the flights can be delayed by each carrier.
+* **Scatter Chart** - Understand correlations between Arrival Delay and Departure Delay times.
 
 ### Map
 
