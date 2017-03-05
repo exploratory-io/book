@@ -8,9 +8,12 @@ Released on 3/14/2017
 
 ### Enhancements
 
-- Chart: Support Copy 
+- Chart: Support Copy
+-
 
 ### Bug Fixes
+
+## R 3.2.2
 
 
 

@@ -1,6 +1,8 @@
 # Getting Started Guide
 
-This is a getting started guide that walks you through how to get around with Exploratory Desktop. The main ares to be covered are:
+Duration (Time to finish) : About 60 minutes
+
+This is a getting started guide that walks you through how to get around with Exploratory Desktop by performing exploratory data analysis on US flight delay data. The main areas to be covered are:
 
 * Create a new project and import data
 * Inspect Data with Summary view
@@ -16,25 +18,25 @@ This is a getting started guide that walks you through how to get around with Ex
   * Line Chart
   * Boxplot Chart
   * Scatter Chart
-  * Trend Line
+  * Trend Line with Linear Regression Model and General Additive Model
   * K-means Clustering
+* Reproduce Data Wrangling and Analysis for Next Month Data
 * Share Charts in **Reproducible** Way
 * Create **Note** to Share insights
 
+If you have any questions while you go through the steps, feel free to ask by sending emails to support@exploratory.io or sending messages in the chart window on [our web site](https://exploratory.io).
 
 ## Download Flight Delay sample data
 
 In this tutorial, we're going to use US flight delay data for August, 2016, which tracks all the domestic flights that flew in the month for:
 
 * How much they were late or early for the departure / arrival delay times.
-* Where they left from and arrive to.
+* Where they left from and arrive at.
 * How long or far they were flying for each flight trip.
-
-US flight delay data:
 
 You can download the sample data CSV file from the link below.
 
-- [Flight delay 2016 August data](http://download.exploratory.io/data/airline_delay_2016_08.csv)
+- [Flight delay 2016 August data](http://download2.exploratory.io/data/airline_delay_2016_08.csv)
 
 Let's start!
 
@@ -50,15 +52,11 @@ Type a project name and click 'Create' button.
 
 ## Import sample data
 
-Inside the project, you can click a plus '+' button next to 'Data Frame' text in the left side pane to import 'airline_delay_2016_08.csv'.
-
-![](images/quick-start3.png)
-
-Select 'Import File Data'.
+Inside the project, you can click on '+' (plus) button next to 'Data Frame' text in the left side pane, and select 'Import File Data' from the dropdown list.
 
 ![](images/quick-start-1.png)
 
-After you have selected the file, you'll see the first 50 rows from the file displayed in the preview table.
+After you have selected the file 'airline_delay_2016-08', you'll see the first 50 rows from the file displayed in the preview table.
 
 ![](images/quick-start-2.png)
 
@@ -148,14 +146,14 @@ Lastly, you would also notice that there is a new step called 'Mutate' being add
 
 ![](images/quick-start-12.png)
 
-This is the exact R command that actually run behind the scene. As you perform more data wrangling operations you will see more 'Steps' added here.
+This is the exact R command that actually runs behind the scene. As you perform more data wrangling operations, you will see more 'Steps' added here.
 
 
 ### Extract 'Day of Week' from Date
 
 Let's do one more operation within the same 'Mutate' step.
 
-Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day of Week (e.g. Sunday, Monday, etc.)'. You can select 'Extract' -> 'Day of Week' from the column header menu.
+Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day of Week (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day of Week' from the column header menu.
 
 ![](images/quick-start-14.png)
 
@@ -175,7 +173,7 @@ When you scroll down to the bottom, you can see the new column 'day_of_week' bei
 
 ![](images/quick-start-16.png)
 
-It shows the bars starting from 'Sun', 'Mon', 'Tue', etc., instead of starting from the highest frequent value, in this case that is 'Mon'. This is because this column is created as 'factor' data type, which is a special data type in R to make it easier to work with categorical variables (columns) by embedding a 'sorting order' information inside the column. This is actually perfect for the 'order' sensitive data like Day of Week. If you want to ignore such order though, you can simply select 'Change Data Type' -> 'Convert to Character' from the column header menu, which would convert the 'factor' data column to a 'character' data column.
+It shows the bars starting from 'Sun', 'Mon', 'Tue', etc., instead of starting from the highest frequent value, in this case that is 'Mon'. This is because this column is created as a 'factor' data type column, which is a special data type in R to make it easier to work with categorical variables (columns) by embedding a 'sorting order' information inside the column. This is actually perfect for the 'order' sensitive data like Day of Week. If you want to ignore such order though, you can simply select 'Change Data Type' -> 'Convert to Character' from the column header menu, which would convert the 'factor' data type column to a 'character' data type column.
 
 ![](images/quick-start-16_1.png)
 
@@ -185,17 +183,17 @@ In this exercise, we'll keep as is.
 
 ## Separate a column into multiple columns
 
-Let's take a look how you can separate a column into multiple columns.
+Let's take a look at how you can separate a column into multiple columns.
 
 Here, ORIGIN_CITY_NAME column contains both city names and US State names.
 
 ![](images/quick-start-17.png)
 
-Let's say you want to see which US States have the most flights  leaving from. You want to extract only the US State part of the text in this column.
+Let's say you want to see which US States the most flights departed from. You want to extract only the US State part of the text in this column.
 
-For this, you can simply separate this column by setting a separating character, in this case that is a 'comma'. To make this operation easier to see, let's go to Table view first.
+For this, you can simply separate this column by setting a separating character, in this case that is a 'comma', into two columns, one for city names and another for US state names. To make this operation easier to see, let's go to Table view first.
 
-Then, select 'Separate' -> 'Separate to Columns by' -> 'Comma(,)' from the column header menu.
+Then, select 'ORIGIN_CITY_NAME column, and select 'Separate' -> 'Separate to Columns by' -> 'Comma(,)' from the column header menu.
 
 ![](images/quick-start-18.png)
 
@@ -209,17 +207,17 @@ Once the command is run, you will find two new columns being created, one has th
 
 Also, you would notice that there is a new step just being added at the right hand side.
 
-You can click on 'Mutate' step or 'Separate' step to see the data before and after the command is run.
+You can click on 'Mutate' step to see the data before this operation.
 
 ![](images/quick-start-20_1.png)
 
 ### Work with NA (Missing Values)
 
-When you look at DEP_DELAY column in Summary view, you would notice that there is a slight red part in the green bar, which is located at the middle of the column tile.
+When you look at DEP_DELAY column in Summary view, you would notice that there is a slight red color in the green bar.
 
 ![](images/quick-start-21.png)
 
-This red bar indicates the ratio of the data that is NA. You can see that 1.32% of the data is NA. There are many ways to handle NA values and you can do them easily in Exploratory, but here let's try removing them with 'filter' command operation.
+This red bar indicates the ratio of the data that is NA in this column. You can see that 1.32% of the data is NA. There are many ways to handle NA values, but here, let's try removing them with 'filter' command operation.
 
 Select 'Filter' -> 'is not NA' from the column header menu.
 
@@ -229,37 +227,58 @@ This will open 'Filter' dialog with 'is not NA' operator being already selected.
 
 ![](images/quick-start-24.png)
 
-If you are interested, you can click on the operator dropdown to see many other operators that are supported out-of-the-box. If you are familiar with R and want to extend, you can always go to 'Custom' tab and start typing the 'filter' condition the way you like.
+If you are interested, you can click on the operator dropdown to see many other data type specific operators that are supported out-of-the-box. If you are familiar with R and want to extend, you can always go to 'Custom' tab and start typing your 'filter' conditions the way you like.
 
 ![](images/quick-start-23.png)
 
-Anyway, you want to simply click on Run button here.
-
-You will see that NA is gone now.
+Anyway, you want to simply click on Run button here. You will see that NA is gone now.
 
 ![](images/quick-start-25.png)
 
 ### Join with Airport Location Data Set
 
-In order to understand where these flights are flying from, we can import another data set that has a mapping between airport codes and the geo location codes (longitude / latitude), and join it with this flight delay data. Finally, we can visualize the airport locations with the geo location data.
+Let's say we want to visualize where these airports are located on Map. We have airport codes in the data, but there is no geo location codes (longitude and latitude) associated with the airports. So, what we can do here is, first, find a mapping table that maps between the airport codes and the geo location codes.
 
-First, download the following CSV file that has the mapping.
+You can find such mapping table easily on the web, but here is one we have published as EDF (Exploratory Data Format) file so that you can import to your Exploratory in a reproducible way.
 
-* [us-air-port-code.csv](https://download.exploratory.io/data/us-air-port-code.csv)
+* [Mapping Table for Airport Codes and Geo Location Codes](https://exploratory.io/data/kanaugust/0814311708280782)
 
-And, import it into Exploratory. You can select 'Import File Data' from the dropdown menu next to 'Data Frames'.
+Once you download and import it into your Exploratory, then we can use this mapping table data to assign the geo location codes for each airport code in the 'airline_delay_2016-08' data frame. Basically, it's similar to what you would do with 'vlookup' in Excel or with 'join' operation in SQL or typcical BI tools.
 
-![](images/quick-start-101.png)
+In Exploratory, you can use one of the 'join' commands called 'left_join', which would join two data frames by adding columns from 'target' data frame by matching 'key' column values from both data frames. It looks something like below.
+
+![](images/quick-start-join.png)
+
+
+Anyway, let's go to the above linked page and download the EDF file.
+
+![](images/quick-start-join2.png)
+
+Then, import the EDF file into Exploratory. You can select 'Import Exploratory Data' from 'Add Data Frame' dropdown list.
+
+![](images/quick-start-join3.png)
 
 The data looks like below after the import.
 
 ![](images/quick-start-100.png)
 
-Now, go back to the original data frame and select 'Join' from 'Add' button menu.
+Notice that there are a few steps at the right hand side. These are the steps that were used to prepare this 'us-air-port-code' data frame before. You can add more steps or delete these steps if you like, but we'll keep these as is for this exercise.
 
-![](images/quick-start-102.png)
+Also, you can see a column called 'Code', this is the key column we are going to use to join with 'airline_delay_2016-08' data frame.
 
-In the opened 'Join' dialog, select a data frame 'us-air-port-code' for Target Data Frame, and select 'ORIGIN' column for Current Column and 'Code' for Target Column.
+![](images/quick-start-100_1.png)
+
+Now, go back to 'airline_delay_2016_08' data frame.  
+
+![](images/quick-start-100_2.png)
+
+There is a column called 'ORIGIN', which has the airport codes for the airports from which the flights departed. And this is the column we are going to use to map with the 'us-air-port-code' data frame.
+
+Select 'Join' from 'Add' button menu.
+
+![](images/quick-start-100_3.png)
+
+In the opened 'Join' dialog, select a data frame 'us-air-port-code' for Target Data Frame, and select 'ORIGIN' column for Current Column and 'Code' for Target Column as key columns to join.
 
 ![](images/quick-start-103.png)
 
@@ -267,24 +286,26 @@ Once the command is run, you will see new columns from the target data frame 'us
 
 ![](images/quick-start-104.png)
 
-You can also check Summary view and see that only 0.75% of the data was not mapped.
+In this tutorial, we have used only 'left_join', but there are other types of 'join'. If you are interested, take a look at these two post for more details.
 
-![](images/quick-start-105.png)
+* [Introduction to Join — Bring extra columns from the target in Exploratory](https://blog.exploratory.io/introduction-to-join-bring-extra-columns-from-the-target-in-exploratory-1ec585ec2cf1#.u003r2k1m)
+* [Introduction to Join — filtering data based on the target data in Exploratory](https://blog.exploratory.io/introduction-to-join-filtering-data-based-on-the-target-data-in-exploratory-eedbd7b39d0a#.fudvfqpdm)
 
+Anyway, we have gotten enough data by now, let's start explore the data with visualization to understand this US flight delay data better.
 
 ## Visualize data
 
-There are many ways to visualize data with various chart types in Exploratory. In this exercise, let's take a look at a few of them to explore the data.
+There are many ways to visualize data with various chart types in Exploratory. In this exercise, let's use the following chart types to explore the data.
 
 * **Map** - Understand where the flights are leaving from.
 * **Pivot Table** - Understand which state and day pairs have more flights than the others.
 * **Line Chart** - Understand the trend of the departure delay times in August.
-* **Boxplot Chart** - Understand how bad the flights can be delayed by each carrier.
+* **Boxplot Chart** - Understand how bad the flights delayed by each carrier.
 * **Scatter Chart** - Understand correlations between Arrival Delay and Departure Delay times.
 
-### Map
+### Map with Geocodes (Longitude and Latitude)
 
-First, let's take a look at where these flights are leaving from.
+First, let's take a look at where these flights departed from.
 
 Go to Viz view, and select 'Map - Long / Lat' chart type.
 
@@ -294,21 +315,33 @@ This will automatically pick up 'Longitude' and 'Latitude' columns and show all 
 
 ![](images/quick-start-107.png)
 
-And assign 'city' column to label. The values of this column will show up at the right hand side top of the chart when mouse over on any circle.
+You can assign 'Name' column to label, which will make the values of this column show up at the right hand side top of the chart when you move your mouse over on any circle.
 
 ![](images/quick-start-108.png)
 
 You can use mouse, track pad, or the buttons at the left hand side top of the map to zoom in or pan.
 
+You can change the background style from 'Layout Configuration' menu.
+
+![](images/quick-start-108_1.png)
+
+For example, you can select 'Dark' type to get black color theme.
+
+![](images/quick-start-108_2.png)
+
+You can change the color palette by clicking on 'Gear' icon next to 'Color'.
+![](images/quick-start-108_3.png)
+
+
 ### Pivot Table
 
 Let's use Pivot table to understand which state and day pairs have more flights than the others.
 
-Select Pivot Table, and assign 'state' column to Row and 'day_of_week' column to Column. You can keep the default value of 'Number of Rows' for Value.
+Select Pivot Table, and assign 'state' column to Row and 'day_of_week' column to Column. You can keep Value to the default value, which would count 'Number of Rows' for each group.
 
 ![](images/quick-start-27.png)
 
-Notice that the column values are sorted as 'Sun', 'Mon', 'Tue', etc. by respecting the natural order of days of the week, while the row values (US States) are sorted alphabetically. This is because, as you saw before, 'day_of_week' column is 'factor' data type and has the sorting order information embedded in, and  Pivot table and other chart types respect the sorting order information when sorting the data.
+Notice that the column values are sorted as 'Sun', 'Mon', 'Tue', etc. by respecting the natural order of days of the week. This is because, as you have seen previously, 'day_of_week' column is 'factor' data type and has the sorting order information embedded in, and  Pivot table and other chart types respect the sorting order information when sorting the data.
 
 
 You can use Color to visualize the data. Select 'All' from the dropdown.
@@ -319,13 +352,13 @@ You can show the values as '% of Total' instead of the raw numbers. Click on 'Ge
 
 ![](images/quick-start-29.png)
 
-The default setting calculates the '% of Total' as a percentage of the all the values in Pivot table. But you might want to see the percentage of each US state or each Day of Week. For example, you can change the 'Direction' setting to 'Row' to see which day of the week have more flights than the other days for each state.
+The default setting calculates the '% of Total' as a percentage of all the values in Pivot table. But you might want to see the percentage of each US state or each Day of Week. For example, you can change the 'Direction' setting to 'Row' to make it easier to see which day of the week have more flights than the other days for each state.
 
 ![](images/quick-start-30.png)
 
 We can see that most of the states have more flights between Monday and Wednesday. And Saturday is the lowest for most of the states.
 
-You can click on 'Sat' to sort the data based on the values in this column. This would give you an idea of which states have higher percentage of the flights on Saturday.
+You can click on 'Sat' to sort the data based on the values in this column. It turned out VI (US Virgin Islands) has more flights on Saturday than any other days of week, unlike any other US States. This is probably because more people go there for vacation than for business.
 
 ![](images/quick-start-31.png)
 
@@ -333,11 +366,11 @@ You can click on 'Sat' to sort the data based on the values in this column. This
 
 Let's take a look at the trend of the flight departure delay times during this time period of August, 2016.
 
-Select 'Line' chart and assign 'FL_DATE' column to X-Axis. The default data aggregation level for Date data is 'Year', but you can change it to 'Day' to see the daily trend.
+Select 'Line' chart and assign 'FL_DATE' column to X-Axis. Since 'FL_DATE' column is Date data type, you can select a date level (e.g. Year, Month, Day) to aggregate the data. For example, you can set it to 'Day' to aggregate the data by day, instead of the default 'Year'.
 
 ![](images/quick-start-32.png)
 
-Now, assign 'DEP_DELAY' column to Y-Axis to see the trend of the flight departure delay time. The default data aggregation function is set to 'sum', but you can change this to something like 'Average'.
+Now, assign 'DEP_DELAY' column to Y-Axis to see the trend of the flight departure delay time. The default data aggregation function is set to 'Sum', but you can change this to something like 'Average'.
 
 ![](images/quick-start-33.png)
 
@@ -359,18 +392,21 @@ You can also use Drag and Drop gesture to select an area to zoom in.
 
 You can double click on any part on the chart to get back to the original zoom level.
 
-Now, let's take a look at how the departure delay times were getting accumulated by each carrier as the time progresses, by using one of the Window Calculation types called 'Cumulative Sum'.
+Now, let's take a look at how the departure delay times were getting accumulated by each carrier as the time progresses, by using one of the embedded Window Calculation types called 'Cumulative Sum' (or Running Total).
 
 Click on the property icon and select Window Calculation from the list.
 
 ![](images/quick-start-38.png)
 
-Select 'Cumulative' for Calculation Type, and 'Sum' for 'Summarize Values using'.
+Select 'Cumulative' and 'Sum' from the lists.
 
 
 ![](images/quick-start-39.png)
 
-We can see that Delta Airline (DL) has accumulated large amount of the departure delay time based on the average. It looks that something happened in that particular week. Also, we can see that some airlines like Hawaiian (HA) and Alaska (AS) are consistently very low departure delay times, which means that their flights got sometimes delayed but those were rather exceptions, unlike the other carriers where the delays are observed as normal events.
+We can see that Delta Airline (DL) has accumulated large amount of the departure delay times. It looks that something must have happened in that particular week. Well, it turned out that there was a global computer system outage for Delta on August 8th, 2016, which caused large-scale cancellations and took a few days before getting back to normal schedule. [News from CNN.](http://money.cnn.com/2016/08/08/news/companies/delta-system-outage-flights/)
+
+
+Also, we can see that some airlines like Hawaiian (HA) and Alaska (AS) are consistently very low departure delay times, which means that their flights got sometimes delayed but those were rather exceptions, unlike the other carriers where the delays are observed as normal trends.
 
 ## Boxplot
 
@@ -385,18 +421,18 @@ You can drag the mouse to select the time range between August 7th and 14th to z
 
 ![](images/quick-start-42.png)
 
-We can see that many of Delta (DL) airline flights were delayed significantly on August 8th, 9th, and 10th.
+We can see that many of Delta (DL) airline flights were delayed significantly on August 8th, 9th, and 10th. As we have seen above, this is due to the Delta's computer system outage happened on August 8th. The system came back online on the same day, but we can see that it took them for a few days to get most of the flights back on schedule.
 
 Now, we can switch X-Axis to CARRIER column and see the data distribution of the departure delay time for each carrier.
 
 ![](images/quick-start-43.png)
 
-The default setting removes the outlier values, but you can bring them back by checking 'Include Outlier' checkbox.
+The default setting removes the outlier values, which are extremely high or low values compared to most of the data. You can bring them back by checking 'Include Outlier' checkbox.
 
 ![](images/quick-start-44.png)
 
 
-Now, let's say we want to know how bad the delayed flights can be. We can filter the data to keep only the worst 100 flights based on the delay time for each carrier.
+Now, let's say we want to know how bad the delayed flights were focusing on the worst 100 flights based on the delay time for each carrier.
 
 Click 'Add' button, and select 'Keep Only' -> 'Top N'.
 
@@ -410,9 +446,11 @@ The chart is showing the worst 100 flights now.
 
 ![](images/quick-start-47.png)
 
-But this worst 100 flights are based on all the flights from all the carriers. What we wanted to see was the worst 100 flights per each carrier, not for all. We can actually achieve this easily by using 'group_by' command to group the data frame before applying the 'Top N' command.
+But this worst 100 flights are based on all the flights from all the carriers. This is why we don't see the carriers like HA (Hawaiian), WN (Southwest), etc.
 
-One thing though, before adding 'group_by' step, let's click on 'Pin' button at the right hand side top.
+What we wanted to see was the worst 100 flights per each carrier, not for all. We can actually achieve this easily by using 'group_by' command to group the data frame before applying the 'Top N' command.
+
+Before adding 'group_by' step, let's click on 'Pin' button at the right hand side top of the chart area.
 
 ![](images/quick-start-48.png)
 
@@ -421,6 +459,8 @@ This will make the chart always reference to the data generated by this 'Top N /
 Now, click on 'Filter' step right before 'Top N / Bottom N' step at the right hand side.
 
 ![](images/quick-start-49.png)
+
+Notice that the chart is still showing the result of 'Top N', not the result of this 'Filter' step.
 
 Select 'Group By' from 'Add' button menu.
 
@@ -431,7 +471,7 @@ Select 'CARRIER' from the column list.
 
 ![](images/quick-start-51.png)
 
-This will automatically update the chart and now you can see it is showing the range of the delay times for the worst 100 flights by carrier.
+This will automatically update the chart. It is now showing the range of the delay times for the worst 100 flights for each carrier.
 
 ![](images/quick-start-52.png)
 
@@ -439,18 +479,17 @@ Notice that the step that is currently selected at the right hand side is still 
 
 ### Scatterplot
 
-Now, let's see how the departure delay time and the arrival delay time are correlated. Another word, if a flight delayed for its departure time, will it delay for the arrival time as well?
+Now, let's see how the departure delay time and the arrival delay time are correlated. Another word, did the flights that delayed for the departure time also delayed for the arrival time? If so, were there any correlation between those two delayed times?
 
-To explore such correlation, we don't need the last two steps of 'Group By' and 'Top N / Bottom N' we added previously. We would rather evaluate the entire data. So for this analysis, we can create something called 'branch' and create a 'branched' data frame from the step before, which is 'Group By'.  
+To investigate such correlation, we don't need the last two steps of 'Group By' and 'Top N / Bottom N' we added previously because we would rather evaluate the entire data. So for this analysis, instead of deleting these two steps, we can create something called 'branch' data frame off from the step before 'Group By' step. This way, we can create two data frames with two different data wrangling paths while sharing the common part of the data wrangling steps.
 
 Select 'Filter' step at the right hand side.
 
-
-![](images/quick-start-56.png)
+![](images/quick-start-57.png)
 
 Select 'Create Branch' from the action menu.
 
-![](images/quick-start-57.png)
+![](images/quick-start-56.png)
 
 Type a name for a new 'branch' data frame name, such as 'correlation', and click 'Create' button.
 
@@ -464,7 +503,7 @@ Also, you would notice that the steps at the right hand side are grayed out.
 
 ![](images/quick-start-60.png)
 
-These are the steps that are managed in the main data frame. This 'correlation' data frame inherits the result of these steps from the main data frame.
+These are the steps that are managed in the main data frame 'airline_delay_2016-08'. This 'correlation' data frame inherits the result of these steps from the main data frame.
 
 Now, we can go to Viz view and select 'Scatter' as the chart type, assign 'DEP_DELAY' to X-Axis and 'ARR_DELAY' to Y-Axis.
 
@@ -482,7 +521,7 @@ You can adjust 'Repeat By' properties to see all the charts better.
 
 For example, we can select '4' for the number of the charts for each row, check 'Fit All the Charts in Viz Area' checkbox, and un-check 'Sync Scales Among Charts' to not synchronize the scales for X and Y axes among the charts.
 
-We can see that some carriers like 'AA' and 'DL' are showing much more clear 'linear' correlations compared to others like 'F9' and 'HA'. We can see how linear the correlations are between the two measures for each carrier easier by showing Trend Line.
+We can see that some carriers like 'AA' and 'DL' are showing much more clear 'linear' correlations compared to others like 'F9' and 'HA'. We can see this even better by showing Trend Line.
 
 Select 'Trend Line' from Y-Axis property menu.
 
@@ -508,7 +547,7 @@ In the opened dialog 'Cluster with K-means', select 'DEP_DELAY' and 'ARR_DELAY' 
 
 ![](images/quick-start-70.png)
 
-You can see what has just happened better in Table view. Scroll to the very right, you will notice that there is a new column called 'cluster' which has the cluster id for each row (flight).
+You can see what has just happened better in Table view. Scroll to the very right, and you will notice that there is a new column called 'cluster' which has the cluster id for each row (flight).
 
 ![](images/quick-start-72.png)
 
@@ -520,13 +559,15 @@ Now, as you notice though, the clustering calculation was done against the entir
 
 ![](images/quick-start-87.png)
 
-Let's say we want to cluster the data for each carrier, meaning we want to see 5 clustered groups for each carrier. This can be done by grouping the data frame before calculating the cluster IDs.
+Let's say we want to cluster the data for each carrier, meaning we want to see 5 clustered groups for each carrier. This can be done by grouping the data frame before calculating the cluster IDs. This is very similar to what you have done with 'Top N' operation before.
 
-Select 'Filter' step, which is gray colored because it's coming from the main data frame.
+First, make sure that you 'Pin' the chart before going to the next step.
+
+Then, select 'Filter' step, which is gray colored because it's coming from the main data frame.
 
 ![](images/quick-start-86.png)
 
-Select 'Group By' from 'Add' button menu.
+Select 'Group By' from 'Add' button menu to add this grouping step.
 
 ![](images/quick-start-88.png)
 
@@ -546,7 +587,69 @@ Unlike 'Linear Regression', which is to build linear regression models assuming 
 
 If you are not sure about this, no worry, Think of Linear Regression is a way for drawing a linear line and Polynomial is a way for drawing a smooth line / curve.
 
-As you can see the above, the polynomial smooth curves tend to look more like linear lines as the delay times become larger. This means that it's easier to predict how many minutes the arrival time will be delayed if we know how many minutes the departure time was delayed beforehand. However, there are a few exceptions like F9, HA, etc.
+As you can see the above, the polynomial smooth curves tend to look more like linear lines as the delay times become larger. This means that it's easier to predict how late the arrival time will be if we know how late the departure time was beforehand, although there are a few exceptions like F9, HA, etc.
+
+## Reproduce Analysis Works
+
+Now, let's say you have just received a new flight delay data set for the next month, September, and want to run the same data transformation and analysis you have done before. There are two simple ways to do this.
+
+For this exercise, first, download the September data set from this link.
+
+* [Flight delay 2016 September data](http://download2.exploratory.io/data/airline_delay_2016-09.csv)
+
+And here's how.
+
+### Duplicate Data Frame and Switch Source Data
+
+The simplest way to do this is to duplicate the current data frame and save it as a different name.
+
+![](images/quick-start-rep7.png)
+
+Check 'Include Viz' checkbox to copy all the charts along, and type a data frame name.
+
+![](images/quick-start-rep8.png)
+
+Once it's copied, then go to the new data frame, switch the data source by clicking on 'Gear' icon.
+
+![](images/quick-start-rep9.png)
+
+Click 'Change File' button and select the above CSV file 'airline_delay-2016-09.csv', and click 'Update' button at the bottom.
+
+![](images/quick-start-rep10.png)
+
+You will see that all the data transformation steps are automatically applied to this new data set. And when you go to Viz tab, you can see the same chart setting for September data. In this month, we can see that 'F9' is the carrier that accumulated much larger departure delay times than the others!
+
+![](images/quick-start-rep11.png)
+
+The advantage of this option is that you can keep not only the data wrangling steps but also all the charts inside the data frame. The downside of this option is that you end up copying all the steps and branches together, so you will need to clean up after the duplication. And this is way you might want to consider the next option.
+
+### Copy Steps from One Data Frame to Another
+
+Import the above CSV file as a new data frame.
+
+![](images/quick-start-rep1.png)
+
+Go back to the original data frame 'airline_delay_2016-08', and click on 'Select' button at the top of the steps at the right hand side.
+
+![](images/quick-start-rep2.png)
+
+Select the steps you want to copy, in the picture below, I'm copying only from 'Mutate' step to 'Left Join' steps, but you can copy all the steps as well. And, select 'Copy Steps' from 'Action' button dropdown list.
+
+![](images/quick-start-rep3.png)
+
+Then, go back to the new data frame 'airline_delay_2016-09'.
+
+![](images/quick-start-rep4.png)
+
+And select 'Paste Steps' from the action menu at 'Source' step at the right hand side.
+
+![](images/quick-start-rep5.png)
+
+This will add those copied steps to this data frame so that you will end up getting the data that has applied all the data transformation operations.
+
+![](images/quick-start-rep6.png)
+
+Very simple!
 
 
 ## Share Chart
@@ -573,7 +676,7 @@ Clicking on the link will take you to the published page with 'Share' dialog ope
 
 ![](images/quick-start-77.png)
 
-By clicking on 'Enable' link, you can allow anyone with this uniquely generated URL to open this chart page.
+By clicking on 'Enable' link, you can allow anyone with this uniquely generated URL to open this chart page. Note that, in case you have shared it publicly, then you can simply copy the page URL and share it with others, without needing to enable this unique URL.
 
 ![](images/quick-start-78.png)
 
@@ -598,13 +701,15 @@ This is a Rich Text Editor, so you can write anything you like. Highlighting the
 
 ![](images/quick-start-83.png)
 
-Every time you hit Enter key to start a new line, you will see 'Plus' button at the beginning the line. By clicking on the button you will see a chart icon.
+Every time you hit Enter key to start a new line, you will see 'Plus' button at the beginning of the line.
 
-![](images/quick-start-50.png)
+![](images/quick-start-83_1.png)
 
-You can click this to get a Chart picker dialog.
+By clicking on the button you will see a chart icon.
 
-Select a data frame where the chart were created, select the chart, and click 'OK' button.
+![](images/quick-start-83_2.png)
+
+You can click this to get a Chart picker dialog. Select a data frame where the chart were created, select the chart, and click 'OK' button.
 
 ![](images/quick-start-82.png)
 
