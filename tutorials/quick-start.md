@@ -13,14 +13,13 @@ This is a getting started guide that walks you through how to get around with Ex
   * Work with **NA (Missing Values)**
   * **Join** with another Data Set
 * Visualize Data
-  * Map
-  * Pivot Table
-  * Line Chart
-  * Boxplot Chart
-  * Scatter Chart
-  * Trend Line with Linear Regression Model and General Additive Model
-  * K-means Clustering
-* Reproduce Data Wrangling and Analysis for Next Month Data
+  * Map with **Geocodes**
+  * Pivot Table with **Percent Total**
+  * Line Chart with **Window Calculation**
+  * Boxplot Chart with **Grouped Top 100**
+  * Scatter Chart with **Trend Lines** (Linear Regression Model and General Additive Model)
+  * **K-means Clustering**
+* **Reproduce** Data Wrangling and Analysis for Next Month Data
 * Share Charts in **Reproducible** Way
 * Create **Note** to Share insights
 
@@ -98,7 +97,7 @@ In general, Exploratory registers the data type for each column appropriately wi
 
 ![](images/quick-start-7.png)
 
-You wanted to choose 'Year, Month, Day' because the original data was formatted in that particular order. (e.g. 2016 Aug. 05) Note that the order of the date component is the only thing that matters here. Another word, the separating characters or if the month name is full name (August) vs. short name (Aug) doesn't matter. It's that simple!
+You wanted to choose 'Year, Month, Day' because the original data was formatted in that particular order. (e.g. 2016 Aug. 05) Note that the order of the date component is the only thing that matters here. In other words, the separating characters or if the month name is full name (August) vs. short name (Aug) doesn't matter. It's that simple!
 
 Anyway, you will see 'Mutate (Create Calculation)' dialog being opened with the following function already set.
 
@@ -110,7 +109,7 @@ ymd(FL_DATE)
 
 This 'ymd' function is one of the date / time parsing functions from R package called 'lubridate', which parses the incoming data with an assumption that the data is presented in an order of Year, Month, and Day, and convert to 'Date' data type appropriately.
 
-Note that, 'Date' is a data type for date data that doesn't contain Time information. What about Time? Well, there is another data type called, 'POSIXct', which can hold both Date and Time information.
+Note that, 'Date' is a data type for date data that includes only Date information, such as Year, Month, and Day. What about Time, such as hours, minutes, and seconds? Well, there is another data type called, 'POSIXct', which can hold both Date and Time information.
 
 You can see more details about the function by clicking on 'Show (or Hide) Doc' button.
 
@@ -173,11 +172,11 @@ When you scroll down to the bottom, you can see the new column 'day_of_week' bei
 
 ![](images/quick-start-16.png)
 
-It shows the bars starting from 'Sun', 'Mon', 'Tue', etc., instead of starting from the highest frequent value, in this case that is 'Mon'. This is because this column is created as a 'factor' data type column, which is a special data type in R to make it easier to work with categorical variables (columns) by embedding a 'sorting order' information inside the column. This is actually perfect for the 'order' sensitive data like Day of Week. If you want to ignore such order though, you can simply select 'Change Data Type' -> 'Convert to Character' from the column header menu, which would convert the 'factor' data type column to a 'character' data type column.
+It shows the bars starting from 'Sun', 'Mon', 'Tue', etc., instead of starting from the most frequent value, in this case that is 'Mon'. This is because this column is created as a 'factor' data type column, which is a special data type in R to make it easier to work with categorical variables (columns) by embedding a 'sorting order' information inside the column. This is actually perfect for the 'order' sensitive data like Day of Week. If you want to ignore such order though, you can simply select 'Change Data Type' -> 'Convert to Character' from the column header menu, which would convert the 'factor' data type column to a 'character' data type column.
 
 ![](images/quick-start-16_1.png)
 
-In this exercise, we'll keep as is.
+In this exercise, we'll keep it as is.
 
 
 
@@ -227,7 +226,7 @@ This will open 'Filter' dialog with 'is not NA' operator being already selected.
 
 ![](images/quick-start-24.png)
 
-If you are interested, you can click on the operator dropdown to see many other data type specific operators that are supported out-of-the-box. If you are familiar with R and want to extend, you can always go to 'Custom' tab and start typing your 'filter' conditions the way you like.
+If you are interested, you can click on the operator dropdown to see many other data type specific operators that are supported out-of-the-box. If you are familiar with R and want to customize it further, you can always go to 'Custom' tab and start typing your 'filter' conditions the way you like.
 
 ![](images/quick-start-23.png)
 
@@ -291,7 +290,7 @@ In this tutorial, we have used only 'left_join', but there are other types of 'j
 * [Introduction to Join — Bring extra columns from the target in Exploratory](https://blog.exploratory.io/introduction-to-join-bring-extra-columns-from-the-target-in-exploratory-1ec585ec2cf1#.u003r2k1m)
 * [Introduction to Join — filtering data based on the target data in Exploratory](https://blog.exploratory.io/introduction-to-join-filtering-data-based-on-the-target-data-in-exploratory-eedbd7b39d0a#.fudvfqpdm)
 
-Anyway, we have gotten enough data by now, let's start explore the data with visualization to understand this US flight delay data better.
+Anyway, we have gotten enough data by now, let's start exploring the data with visualization to understand this US flight delay data better.
 
 ## Visualize data
 
@@ -479,7 +478,7 @@ Notice that the step that is currently selected at the right hand side is still 
 
 ### Scatterplot
 
-Now, let's see how the departure delay time and the arrival delay time are correlated. Another word, did the flights that delayed for the departure time also delayed for the arrival time? If so, were there any correlation between those two delayed times?
+Now, how the departure delay time and the arrival delay time are correlated? In other words, did the flights that delayed for the departure time also delayed for the arrival time? If so, were there any correlation between those two delayed times?
 
 To investigate such correlation, we don't need the last two steps of 'Group By' and 'Top N / Bottom N' we added previously because we would rather evaluate the entire data. So for this analysis, instead of deleting these two steps, we can create something called 'branch' data frame off from the step before 'Group By' step. This way, we can create two data frames with two different data wrangling paths while sharing the common part of the data wrangling steps.
 
@@ -535,7 +534,7 @@ Again, the dots that represent the flights are nicely on the linear trend lines 
 
 ### K-means Clustering
 
-Now as you might have noticed though, most of the data are gathered around 0 for both the departure and the arrival delays. Maybe the linear relationship might be different depends on the range of the delay times.
+Now as you might have noticed though, most of the data are gathered around 0 for both the departure and the arrival delays. And the linear relationship between the two measures could be different depends on the range of the delay times.
 
 So we can group the flights based on the arrival and departure delay times. If you want to group the data automatically based on the two or more measures, you can use one of the clustering algorithms called 'K-means'.
 
@@ -593,13 +592,16 @@ As you can see the above, the polynomial smooth curves tend to look more like li
 
 Now, let's say you have just received a new flight delay data set for the next month, September, and want to run the same data transformation and analysis you have done before. There are two simple ways to do this.
 
+1. Duplicate Data Frame and Switch Source Data
+2. Copy Steps from One Data Frame to Another
+
 For this exercise, first, download the September data set from this link.
 
 * [Flight delay 2016 September data](http://download2.exploratory.io/data/airline_delay_2016-09.csv)
 
 And here's how.
 
-### Duplicate Data Frame and Switch Source Data
+### 1. Duplicate Data Frame and Switch Source Data
 
 The simplest way to do this is to duplicate the current data frame and save it as a different name.
 
@@ -621,9 +623,9 @@ You will see that all the data transformation steps are automatically applied to
 
 ![](images/quick-start-rep11.png)
 
-The advantage of this option is that you can keep not only the data wrangling steps but also all the charts inside the data frame. The downside of this option is that you end up copying all the steps and branches together, so you will need to clean up after the duplication. And this is way you might want to consider the next option.
+The advantage of this option is that you can keep not only the data wrangling steps but also all the charts inside the data frame. The downside of this option is that you end up copying all the steps and branches together, so you will need to clean up after the duplication. And this is why you might want to consider the next option.
 
-### Copy Steps from One Data Frame to Another
+### 2. Copy Steps from One Data Frame to Another
 
 Import the above CSV file as a new data frame.
 
@@ -645,7 +647,7 @@ And select 'Paste Steps' from the action menu at 'Source' step at the right hand
 
 ![](images/quick-start-rep5.png)
 
-This will add those copied steps to this data frame so that you will end up getting the data that has applied all the data transformation operations.
+This will add those copied steps to this data frame so that you will end up getting the data that has all the data transformation operations applied.
 
 ![](images/quick-start-rep6.png)
 
@@ -718,4 +720,4 @@ Once you finish writing the report, you can either publish it so that you can sh
 
 ![](images/quick-start-84.png)
 
-Lastly, you can click Refresh button to refresh all the charts that are in the Note. This will reload the data from the underlying data sources like databases, files, etc. for the charts.
+Lastly, you can click Refresh button to refresh all the charts that are in the Note. This will reload the data from the underlying data sources like databases, files, etc. for each chart.
