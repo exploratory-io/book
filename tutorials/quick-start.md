@@ -24,7 +24,7 @@ This is a getting started guide that walks you through how to get around with Ex
 * Share Charts in **Reproducible** Way
 * Create **Note** to Share insights
 
-If you have any questions while you go through the steps, feel free to ask by sending emails to support@exploratory.io or sending messages in the chart window on [our web site](https://exploratory.io).
+If you have any questions while you go through the steps, feel free to ask by sending emails to support@exploratory.io or sending messages in the chat window on [our web site](https://exploratory.io).
 
 ## Download Flight Delay sample data
 
