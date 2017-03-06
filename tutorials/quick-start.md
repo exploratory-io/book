@@ -56,7 +56,7 @@ Inside the project, you can click on '+' (plus) button next to 'Data Frame' text
 
 ![](images/quick-start-1.png)
 
-After you have selected the file 'airline_delay_2016-08', you'll see the first 50 rows from the file displayed in the preview table.
+After you have selected the file 'airline_delay_2016_08', you'll see the first 50 rows from the file displayed in the preview table.
 
 ![](images/quick-start-2.png)
 
