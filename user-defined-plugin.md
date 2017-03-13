@@ -289,7 +289,7 @@ So as an example, let's create an data source extension with [tidyquant](https:/
 Go to your exploratory folder and create a directory called `tidyquant_example`
 
 ```
-cd ~/.exploratory
+cd ~/.exploratory/plugins
 mkdir tidyquant_example
 ```
 
@@ -337,11 +337,11 @@ With text editor, create a `plugin.json` with following content
 }
 ```
 
-and place the `plugin.json` file to `~/.exploratory/tidyquant_example` like this.
+and place the `plugin.json` file to `~/.exploratory/plugins/tidyquant_example` like this.
 
 ```
-$ cp plugin.json  ~/.exploratory/tidyquant_example
-$ cd ~/.exploratory/tidyquant_example
+$ cp plugin.json  ~/.exploratory/plugins/tidyquant_example
+$ cd ~/.exploratory/plugins/tidyquant_example
 $ pwd
 /Users/<your_home_dir>/.exploratory/plugins/tidyquant_example
 $ tidyquant ls
@@ -364,12 +364,12 @@ execute_tidyquant <- function(stocks = "AAPL,GOOG,MSFT,AMZN", from = "2006-01-01
 }
 ```
 
-And place the `plugin.r` to  `~/.exploratory/tidyquant_example/scripts` like this.
+And place the `plugin.r` to  `~/.exploratory/plugins/tidyquant_example/scripts` like this.
 
 ```
-$ mkdir ~/.exploratory/tidyquant_example/scripts
-$ cp plugin.r  ~/.exploratory/tidyquant_example/scripts
-$ cd ~/.exploratory/tidyquant_example/scripts
+$ mkdir ~/.exploratory/plugins/tidyquant_example/scripts
+$ cp plugin.r  ~/.exploratory/plugins/tidyquant_example/scripts
+$ cd ~/.exploratory/plugins/tidyquant_example/scripts
 $ pwd
 /Users/<your_home_dir>/.exploratory/plugins/tidyquant_example/scripts
 $ tidyquant ls
