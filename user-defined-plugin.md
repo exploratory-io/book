@@ -4,12 +4,12 @@ Exploratory provides a framework with which developers can create their own data
 
 ## Data Source Extension Structure
 
-A user-defined data source extension consists of JSON format extension definition meta file (`plugin.json`) and R script file (`plugin.r`).
-These two files need to be stored inside `~/.exploratory/plugins` directory as follows.
+A user-defined data source extension consists of JSON format extension definition meta file (`extension.json`) and R script file (`extension.r`).
+These two files need to be stored inside `~/.exploratory/extensions/datasources/` directory as follows.
 
-`~/.exploratory/plugins/<extension_name>/plugin.json`
+`~/.exploratory/extensions/datasources/<extension_name>/extension.json`
 
-`~/.exploratory/plugins/<extension_name>/scripts/plugin.r`
+`~/.exploratory/extensions/datasources/<extension_name>/scripts/extension.r`
  
 
 ## Create Data Source Extension directory
@@ -18,13 +18,13 @@ So let's say you want to create a data source extension that uses `riem_measures
 
 So on Mac, you can do:
 
-`$ cd ~/.exploratory/plugins`
+`$ cd ~/.exploratory/extensions/datasources`
 
 `$ mkdir my_riem_measures`
 
 ## Create Data Source Extension Definition Meta File.
 
-This is how your Data Source Extension Definition Meta File (`plugin.json`) looks like. The file must be in valid JSON format.
+This is how your Data Source Extension Definition Meta File (`extension.json`) looks like. The file must be in valid JSON format.
 
 ```
 {
@@ -34,7 +34,7 @@ This is how your Data Source Extension Definition Meta File (`plugin.json`) look
   "helpURL" :  "http://ropensci.github.io/riem/",
   "rPackageDependencies": ["riem"],
   "function": "riem_measures",
-  "rSourceFile" : "plugin.r",
+  "rSourceFile" : "extension.r",
   "hasQueryField" : false,
   "version" : "0,1",
   "inputParameters": [
@@ -115,13 +115,13 @@ If you do not have one, you can set default exploratory doc link like below:
 
 #### rSourceFile (required)
 
-`rSourceFile` holds the name of R script file that the data source extension depends. Let's use `plugin.r` for this example.
+`rSourceFile` holds the name of R script file that the data source extension depends. Let's use `extension.r` for this example.
 
 #### hasQueryField (optional)
 
 If you want to have a dedicated query input field that has much space for your query string, Set `hasQueryField` as `true` and add a parameter whose `name` is `query` and `dataType` is text.
 
-For example, if you define following in your `plugin.json`
+For example, if you define following in your `extension.json`
 
 ``` 
 "hasQueryField" : true,
@@ -258,8 +258,8 @@ If you want to make a parameter as mandatory parameter, set the `required` attri
 
 ## Create data source extension R script file.
 
-If your data source extension simply passes input parameter values from UI to an existing R function pointed by `function` attribute, you don't need to define a new function in the R script. (i.e. all you need is create a single line `library(riem)` file and save it as `plugin.r`)
-However, if you data source extension needs some pre-processing and/or post-processing along with some function call from a R package, then you need to write some R script in `plugin.r`.
+If your data source extension simply passes input parameter values from UI to an existing R function pointed by `function` attribute, you don't need to define a new function in the R script. (i.e. all you need is create a single line `library(riem)` file and save it as `extension.r`)
+However, if you data source extension needs some pre-processing and/or post-processing along with some function call from a R package, then you need to write some R script in `extension.r`.
 
 ```
 library(riem)
@@ -289,13 +289,13 @@ So as an example, let's create an data source extension with [tidyquant](https:/
 Go to your exploratory folder and create a directory called `tidyquant_example`
 
 ```
-cd ~/.exploratory/plugins
+cd ~/.exploratory/extensions/datasources
 mkdir tidyquant_example
 ```
 
 ### Create data source extension definition json file
 
-With text editor, create a `plugin.json` with following content
+With text editor, create a `extension.json` with following content
 
 ```
 {
@@ -305,7 +305,7 @@ With text editor, create a `plugin.json` with following content
 "helpURL" :  "https://github.com/mdancho84/tidyquant",
 "function": "execute_tidyquant",
 "rPackageDependencies": ["tidyquant"],
-"rSourceFile" : "plugin.r",
+"rSourceFile" : "extension.r",
 "version":"0.1",
 "inputParameters": [
      {
@@ -337,20 +337,20 @@ With text editor, create a `plugin.json` with following content
 }
 ```
 
-and place the `plugin.json` file to `~/.exploratory/plugins/tidyquant_example` like this.
+and place the `extension.json` file to `~/.exploratory/extensions/datasources/tidyquant_example` like this.
 
 ```
-$ cp plugin.json  ~/.exploratory/plugins/tidyquant_example
-$ cd ~/.exploratory/plugins/tidyquant_example
+$ cp extension.json  ~/.exploratory/extensions/datasources/tidyquant_example
+$ cd ~/.exploratory/extensions/datasources/tidyquant_example
 $ pwd
-/Users/<your_home_dir>/.exploratory/plugins/tidyquant_example
-$ tidyquant ls
-plugin.json
+/Users/<your_home_dir>/.exploratory/extensions/datasources/tidyquant_example
+$ ls
+extension.json
 ```
 
 ### Create data source extension R script
 
-Create a `plugin.r` with following content
+Create a `extension.r` with following content
 
 ```
 execute_tidyquant <- function(stocks = "AAPL,GOOG,MSFT,AMZN", from = "2006-01-01") {
@@ -364,16 +364,16 @@ execute_tidyquant <- function(stocks = "AAPL,GOOG,MSFT,AMZN", from = "2006-01-01
 }
 ```
 
-And place the `plugin.r` to  `~/.exploratory/plugins/tidyquant_example/scripts` like this.
+And place the `extension.r` to  `~/.exploratory/extensions/datasources/tidyquant_example/scripts` like this.
 
 ```
-$ mkdir ~/.exploratory/plugins/tidyquant_example/scripts
-$ cp plugin.r  ~/.exploratory/plugins/tidyquant_example/scripts
-$ cd ~/.exploratory/plugins/tidyquant_example/scripts
+$ mkdir ~/.exploratory/extensions/datasources/tidyquant_example/scripts
+$ cp extension.r  ~/.exploratory/extensions/datasources/tidyquant_example/scripts
+$ cd ~/.exploratory/extensions/datasources/tidyquant_example/scripts
 $ pwd
-/Users/<your_home_dir>/.exploratory/plugins/tidyquant_example/scripts
+/Users/<your_home_dir>/.exploratory/extensions/datasources/tidyquant_example/scripts
 $ tidyquant ls
-plugin.r
+extension.r
 ```
 ### Use it
 
