@@ -32,7 +32,7 @@ This is how your Data Source Extension Definition Meta File (`extension.json`) l
   "displayName": "riem measures",
   "iconURL" : "lib/images/plugin.png",
   "helpURL" :  "http://ropensci.github.io/riem/",
-  "rPackageDependencies": ["riem"],
+  "packages": [{"name": "riem", "version" : "0.1.1"}],
   "function": "riem_measures",
   "rSourceFile" : "extension.r",
   "hasQueryField" : false,
@@ -101,12 +101,12 @@ If you do not have one, you can set default exploratory doc link like below:
 "helpURL" :  "http://docs.exploratory.io/",
 ```
 
-#### rPackageDependencies (optional)
+#### packages (optional)
 
-`rPackageDependencies` is an array of package names that the data source extension depends. For example, if you data source extension depends on `riem` you need to set it like below: 
+`packages` is an array of package name and version pairs that the data source extension depends. For example, if you data source extension depends on `riem` you need to set it like below: 
 
 ```
-"rPackageDependencies": ["riem"],
+"rPackageDependencies": [{"name" : "riem", "version" : "0.1.1"}],
 ```
 
 #### function (required)
@@ -304,7 +304,7 @@ With text editor, create a `extension.json` with following content
 "iconURL" : "https://raw.githubusercontent.com/mdancho84/tidyquant/master/img/tidyquant-logo.png",
 "helpURL" :  "https://github.com/mdancho84/tidyquant",
 "function": "execute_tidyquant",
-"rPackageDependencies": ["tidyquant"],
+"packages": [{"name" : "tidyquant", "version" : "0.4.0"}],
 "rSourceFile" : "extension.r",
 "version":"0.1",
 "inputParameters": [
