@@ -43,7 +43,7 @@
 * [Branch](branch/branch.md)
 * [R Package Install](r_package.md)
 * [Custom R Script](r_script.md)
-* [Custom Data Source with Plugin Framework](user-defined-plugin.md)
+* [Custom Data Source with Data Source Extension Framework](user-defined-plugin.md)
 * [Setup](setup.md)
    * [How to disable McAfee virus scan](howto/stopmcafee.md)
 * [Keyboard shortcuts](shortcut.md)
