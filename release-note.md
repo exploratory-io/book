@@ -1,20 +1,52 @@
 # Release Note
 
-## R 3.3
 
-Released on 3/14/2017
+## R 3.2.3
 
-### New Features
+Released on 3/13/2017
 
 ### Enhancements
 
-- Chart: Support Copy
--
+- Added Chat window to ask Questions to Team Exploratory directly.
 
 ### Bug Fixes
 
+- countrycode function was showing an error when trying to produce 'country.name' as outputs.
+- Couldn't import Statistic data files (SAS, SPSS, STATA).
+- Branch names are not showing up in 'Merge (Set Operation)' dialog.
+- Fixed R packages installation issues at setup time.
+- Needed to pick up quanteda fix about library() error that is not yet released on CRAN.
+
 ## R 3.2.2
 
+Released on 3/7/2017
+
+### Bug Fixes
+
+- Fixed issue that building XGBoost model fails with "R error: Error: invalid response (expecting SEXP).
+- Fixed typo missclassification -> misclassification in xgboost functions.
+- Modified time aggregation of do_anomaly_detection from round_date to floor_date.
+- Not to show error dialog at Viz if it is coming from invalid DAG step.
+- Added a support of taking care of a broken user configuration file.
+
+## R 3.2.1
+
+Released on 3/3/2017
+
+### Enhancements
+
+- Support 'Save as EDF' for Charts.
+- Table view: Keep the current table position before / after running commands.
+- Added 'Copy Chart'.
+- Shows the thumbnail images when mouse over on the chart tabs.
+- build_kmeans now returns cluster labels as factor instead of as integer.
+- build_kmeans works now supports grouped data frames.
+
+
+### Bug Fixes
+
+- Fixed an issue that step command was executed when deleting an empty “Add New..” token.
+- Fixed an issue that Pivot with Color By with 'Row' option was showing an empty screen.
 
 
 ## R 3.2
