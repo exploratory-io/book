@@ -5,11 +5,13 @@ Exploratory provides a framework with which developers can create their own data
 ## Data Source Extension Structure
 
 A user-defined data source extension consists of JSON format extension definition meta file (`extension.json`) and R script file (`extension.r`).
-These two files need to be stored inside `~/.exploratory/extensions/datasources/` directory as follows.
+These two files need to be stored inside a zip file as follows.
 
-`~/.exploratory/extensions/datasources/<extension_name>/extension.json`
+File name: `<extension_name>.zip`
 
-`~/.exploratory/extensions/datasources/<extension_name>/scripts/extension.r`
+Content of the zip file:
+`<extension_name>/extension.json`
+`<extension_name>/scripts/extension.r`
  
 
 ## Create Data Source Extension directory
@@ -18,9 +20,13 @@ So let's say you want to create a data source extension that uses `riem_measures
 
 So on Mac, you can do:
 
-`$ cd ~/.exploratory/extensions/datasources`
+```
+$ mkdir my_riem_measures
+$ mkdir my_riem_measures/scripts
+# Create and edit my_riem_measures/extension.json and my_riem_measures/scritps/extension.r
+$ zip -r my_riem_measures.zip my_riem_measures
+```
 
-`$ mkdir my_riem_measures`
 
 ## Create Data Source Extension Definition Meta File.
 
@@ -314,9 +320,21 @@ However, if you data source extension needs some pre-processing and/or post-proc
 library(riem)
 ```
 
+## How to install
+
+Once you created your data source extension zip file, you can install it into Exploratory.
+
+From Projects page, click "Extensions" menu. Extensions dialog will open.
+
+On the pane on on the left, under "Data Source" menu, click "Add New".
+
+Click "Add from Local". A file picker will open.
+
+Select your extension zip file in the file picker and click "Open". Your extension will be installed.
+
 ## How to use
 
-So once you created your data source extension, you can test it by selecting `Import Extension Data` after clicking `+ (plus)` icon next to `Data Frames`.
+After installing your data source extension, you can test it by selecting `Import Extension Data` after clicking `+ (plus)` icon next to `Data Frames`.
 
 ![](import/images/import_by_user_defined_plugin.png)
 
@@ -329,16 +347,21 @@ This will open a Data Import Dialog. And your input parameters should be display
 
 ![](import/images/data_import_diloag_with_user_defined_plugin.png)
 
+## How to update
+
+To update an installed extension with a new version of your extension zip file, just repeat the above install steps. The old extension will be overwritten by the new one.
+
+If you want to keep multiple versions of your extension for experimental purpose, please give each version separate names (e.g. my_riem_measures_1, my_riem_measures_2), so that they don't overwrite each other.
+
 ## Example
 
 So as an example, let's create an data source extension with [tidyquant](https://github.com/mdancho84/tidyquant) R package to get Stocks data.
 
 ### Create a data extension folder
 
-Go to your exploratory folder and create a directory called `tidyquant_example`
+Create a directory called `tidyquant_example`
 
 ```
-cd ~/.exploratory/extensions/datasources
 mkdir tidyquant_example
 ```
 
@@ -386,14 +409,11 @@ With text editor, create a `extension.json` with following content
 }
 ```
 
-and place the `extension.json` file to `~/.exploratory/extensions/datasources/tidyquant_example` like this.
+and place the `extension.json` file under `tidyquant_example` directory.
 
 ```
-$ cp extension.json  ~/.exploratory/extensions/datasources/tidyquant_example
-$ cd ~/.exploratory/extensions/datasources/tidyquant_example
-$ pwd
-/Users/<your_home_dir>/.exploratory/extensions/datasources/tidyquant_example
-$ ls
+$ cp extension.json  tidyquant_example/
+$ ls tidyquant_example
 extension.json
 ```
 
@@ -413,20 +433,26 @@ execute_tidyquant <- function(stocks = "AAPL,GOOG,MSFT,AMZN", from = "2006-01-01
 }
 ```
 
-And place the `extension.r` to  `~/.exploratory/extensions/datasources/tidyquant_example/scripts` like this.
+And place the `extension.r` under  `tidyquant_example/scripts` like this.
 
 ```
-$ mkdir ~/.exploratory/extensions/datasources/tidyquant_example/scripts
-$ cp extension.r  ~/.exploratory/extensions/datasources/tidyquant_example/scripts
-$ cd ~/.exploratory/extensions/datasources/tidyquant_example/scripts
-$ pwd
-/Users/<your_home_dir>/.exploratory/extensions/datasources/tidyquant_example/scripts
-$ tidyquant ls
+$ mkdir tidyquant_example/scripts
+$ cp extension.r tidyquant_example/scripts
+$ ls tidyquant_example/scripts
 extension.r
 ```
+
+Then create extension zip file as follows.
+
+```
+$ zip -r tidyquant_example.zip tidyquant_example
+$ ls
+tidyquant_example.zip
+```
+
 ### Use it
 
-You can test it by selecting `Import Extension Data` after clicking `+ (plus)` icon next to `Data Frames`. Now you should be able to see your data source extension `Stocks Data Wity tidyquant (example)`
+After installing the extension zip you created, you can test it by selecting `Import Extension Data` after clicking `+ (plus)` icon next to `Data Frames`. Now you should be able to see your data source extension `Stocks Data Wity tidyquant (example)`
 
 ![](import/images/data_source_extension_picker.png)
 
