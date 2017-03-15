@@ -36,27 +36,25 @@ This is how your Data Source Extension Definition Meta File (`extension.json`) l
   "function": "riem_measures",
   "rSourceFile" : "extension.r",
   "hasQueryField" : false,
-  "version" : "0,1",
+  "version" : "0.1",
   "inputParameters": [
     {
       "name": "station",
       "displayName":"Station",
       "dataType": "text",
-      "defaultValue" : "",
+      "defaultValue" : "SFO",
       "required" : true
     },
     {
       "name": "date_start",
       "displayName":"Date Start",
       "dataType": "text",
-      "defaultValue" : "",
       "required" : true
     },
     {
       "name": "date_end",
       "displayName":"Date End",
       "dataType": "text",
-      "defaultValue" : "",
       "required" : true
     }
   ]
@@ -144,12 +142,32 @@ Version of your data source extension.
 
 ### inputParameters
 
-`inputParameters` is an array of parameters passed to the `function` (i.e in this case, `riem_measures`) and these are rendered as input fields on Data Import Dialog. Parameters order matters so make sure to set input parameters in a way that underlying R function expects. For example, if your R function has arguments station, start_date, and end_date then you need to define your inputParameters in this order.(i.e station, start_date, and end_date). If you want to define parameter order in a different way, you need to write wrapper function in library.r file and then do a parameter mapping there like below and set the wrapper function name (`riem_measures_wrapper`) to `function` attribute.
+`inputParameters` is an array of parameters passed to the `function` (i.e in this case, `riem_measures`) and these are rendered as input fields on Data Import Dialog. By default, parameters order matters so make sure to set input parameters in a way that underlying R function expects. For example, if your R function has arguments station, start_date, and end_date then you need to define your inputParameters in this order.(i.e station, start_date, and end_date). If you want to define parameter order in a different way, you need to write wrapper function in library.r file and then do a parameter mapping there like below and set the wrapper function name (`riem_measures_wrapper`) to `function` attribute.
 
 ```
 riem_measures_wrapper <- function(start_date, end_date, station){
   riem_measures(station = station, start_date = start_date, end_date = end_date)  
 }
+```
+
+Or if you prefer named parameter, you can set `withName` as true. By setting ture, this argument is used with its name as key in R function. For example, if you have `withSentiment` parameter and set `withName` as true,
+
+```
+{
+  "name": "withSentiment",
+  "withName": true,
+  "displayName":"Score Sentiment",
+  "dataType": "boolean",
+  "defaultValue" : false,
+  "required" : false
+}
+```
+
+Then final R script would look like this.
+
+
+```
+exploratory::getTwitterTimeline(..., withSentiment = TRUE)
 ```
 
  Each parameter can have following Attributes
@@ -160,6 +178,9 @@ riem_measures_wrapper <- function(start_date, end_date, station){
 - dataType
 - showLabel
 - defaultValue
+- withName
+- isStringArray
+- placeholder
 - required
 
 #### name (required)
@@ -190,7 +211,7 @@ If you use `text`, it becomes input field that accepts characters.
 ##### select
 
 This is useful when you want to create a static single value selector.
-For example, if you want to create a time range selector, you can create it by specifying `options` and `itemDataType` like below. `options` is an array of selector options and each option needs to have `label` and `value` attributes. If your option value is text, `itemDataType` should be set as `text`. If your option value is number, `itemDataType` should be number. Date is not supported for `itemDataType` for now. To set default selection, you can set your default value to `defaultValue` attribute.
+For example, if you want to create a time range selector, you can create it by specifying `options` and `itemDataType` like below. `options` is an array of selector options and each option needs to have `label` and `value` attributes. If your option value is text, `itemDataType` should be set as `text`. If your option value is number, `itemDataType` should be number. Date is not supported for `itemDataType` for now. To set default selection, you can set your default value to `defaultValue` attribute.  If you want to pass `NULL` to underlying R function, set `value` as `null` in your JSON file. 
 
 ```
 {
@@ -249,6 +270,34 @@ If you use `boolean`, you can define a list of values with two values (i.e. true
 #### defaultValue
 
 If the parameter needs default value, you can set it through `defaultValue` attribute.
+
+#### withName
+
+Set `true` if you want to make this argument as "named" parameter. See inputParameter for details.
+
+#### isStringArray
+
+If you want to support `c("a", "b", "c")` R Vector parameter, you an set `isStringArray` as true. In this case, user enters comma(,) separated values in a input field and Data Source Extension Framework convert it to `c("a", "b", "c")` fashion.
+
+```
+{
+    "name": "keywords",
+    "displayName":"Keywords",
+    "dataType":"text",
+    "defaultValue" : "",
+    "isStringArray": true,
+    "placeholder" : "Use \",\" for multiple entries",
+    "required" : true
+},
+```
+
+#### placeholder
+
+If you want to set some description in the input field, you can use `placeholder` attribute. For example, if you want your user to type in multiple values with comma(,) separated way, then you can define `placeholder` attribute to the input  parameter.
+
+```
+  "placeholder" : "Use \",\" for multiple entries",
+```
 
 #### required
 
