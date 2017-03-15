@@ -324,13 +324,13 @@ library(riem)
 
 Once you created your data source extension zip file, you can install it into Exploratory.
 
-From Projects page, click "Extensions" menu. Extensions dialog will open.
+- From Projects page, click "Extensions" menu. Extensions dialog will open.
 
-On the pane on on the left, under "Data Source" menu, click "Add New".
+- On the pane on on the left, under "Data Source" menu, click "Add New".
 
-Click "Add from Local". A file picker will open.
+- Click "Add from Local". A file picker will open.
 
-Select your extension zip file in the file picker and click "Open". Your extension will be installed.
+- Select your extension zip file in the file picker and click "Open". Your extension will be installed.
 
 ## How to use
 
