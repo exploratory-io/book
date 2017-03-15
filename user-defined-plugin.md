@@ -142,7 +142,7 @@ Version of your data source extension.
 
 ### inputParameters
 
-`inputParameters` is an array of parameters passed to the `function` (i.e in this case, `riem_measures`) and these are rendered as input fields on Data Import Dialog. By default, parameters order matters so make sure to set input parameters in a way that underlying R function expects. For example, if your R function has arguments station, start_date, and end_date then you need to define your inputParameters in this order.(i.e station, start_date, and end_date). If you want to define parameter order in a different way, you need to write wrapper function in library.r file and then do a parameter mapping there like below and set the wrapper function name (`riem_measures_wrapper`) to `function` attribute.
+`inputParameters` is an array of parameters passed to the `function` (i.e in this case, `riem_measures`) and these are rendered as input fields on Data Import Dialog. Parameter order usually matters. Make sure to set input parameters in a way that underlying R function expects. For example, if your R function has arguments station, start_date, and end_date then you need to define your inputParameters in this order.(i.e station, start_date, and end_date). If you want to define parameter order in a different way, you need to write wrapper function in library.r file and then do a parameter mapping there like below and set the wrapper function name (`riem_measures_wrapper`) to `function` attribute.
 
 ```
 riem_measures_wrapper <- function(start_date, end_date, station){
@@ -277,7 +277,7 @@ Set `true` if you want to make this argument as "named" parameter. See inputPara
 
 #### isStringArray
 
-If you want to support `c("a", "b", "c")` R Vector parameter, you an set `isStringArray` as true. In this case, user enters comma(,) separated values in a input field and Data Source Extension Framework convert it to `c("a", "b", "c")` fashion.
+If you want to support R character vector parameters like c("a", "b", "c"), you can set `isStringArray` as true. In this case, user enters comma(,) separated values in a input field and Data Source Extension Framework convert it to `c("a", "b", "c")` fashion.
 
 ```
 {
