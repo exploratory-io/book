@@ -365,13 +365,23 @@ $ zip -r tidyquant_example.zip tidyquant_example
 
 Once you created your data source extension zip file, you can install it into Exploratory through UI.
 
-- From Projects page, click "Extensions" menu. Extensions dialog will open.
+Open Projects page
 
-- On the pane on on the left, under "Data Source" menu, click "Add New".
+![](images/extensions_menu_on_projects.png)
 
-- Click "Add from Local". A file picker will open.
+Click "Extensions" menu. Extensions dialog will open.
 
-- Select your extension zip file in the file picker and click "Open". Your extension will be installed.
+![](images/add_new_menu_on_extensions.png)
+
+On the pane on on the left, under "Data Source" menu, click "Add New".
+
+![](images/add_from_local.png)
+
+Click "Add from Local". A file picker will open. Select your extension zip file in the file picker and click "Open".
+
+![](images/datasource_extension_install_done.png)
+
+Your extension is installed.
 
 ## How to use
 
