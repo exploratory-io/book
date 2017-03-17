@@ -16,8 +16,8 @@ Content of the zip file:
 Data Source Extensions can be installed in Exploratory though UI, enabling Exploratory access to the additional data sources.
  
 Here are examples of Data Source Extension.
-XXXX
-XXXX
+- [tidyquant Data Source](https://download2.exploratory.io/datasources/tidyquant.zip) (Financial Data)
+- [riem_measures Data Source](https://download2.exploratory.io/datasources/riem_measures.zip) (Weather Data)
 
 ## How to create Data Source Extension
 
