@@ -1,5 +1,39 @@
 # Release Note
 
+## R 3.3
+
+Released on 3/14/2017
+
+### New Features
+
+- Time Series Forecasting with Prophet
+- Extension Gallery
+- UI for Creating Bin / Buckets
+
+### Enhancements
+
+mongolite 1.0
+https://cran.r-project.org/web/packages/mongolite/index.html
+
+- Chart: Support Copy
+- Chart: Histogram - Color Support
+- Chat integration - now you can ask questions within the desktop app.
+- Pivot Sorting support
+- XGBoost - categorical column support
+- XGBoost - More metrics for Summary view
+- K-means - categorical column support
+- K-means in Mutate
+- Chart: Small Multiple: show title and title font size for y axis for small multiple case
+- Line Chart: Y-axis : Include 0 or not option
+
+- Impute NA
+- UI for Recode
+- UI for country / state / county code mapping
+
+
+### Bug Fixes
+
+full path for R -e on Mac
 
 ## R 3.2.3
 

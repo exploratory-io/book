@@ -597,7 +597,7 @@ Now, let's say you have just received a new flight delay data set for the next m
 
 For this exercise, first, download the September data set from this link.
 
-* [Flight delay 2016 September data](http://download2.exploratory.io/data/airline_delay_2016-09.csv)
+* [Flight delay 2016 September data](http://download2.exploratory.io/data/airline-delay-2016-09.csv)
 
 And here's how.
 
