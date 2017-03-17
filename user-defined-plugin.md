@@ -34,7 +34,7 @@ $ mkdir tidyquant_example
 $ mkdir tidyquant_example/scripts
 ```
 
-### Create data source extension R script
+### Create Data Source Extension R script
 
 Create a `extension.r` with following content. This is defining a function `execute_tidyquant`, which gets stock prices data through `tq_get` function of `tidyquant` package.
 
@@ -59,7 +59,7 @@ extension.r
 ```
 
 
-### Create Data Source Extension Definition File.
+### Create Data Source Extension Definition File
 
 This is how your Data Source Extension Definition File (`extension.json`) looks like. The file must be in valid JSON format.
 
@@ -381,15 +381,9 @@ After installing your data source extension, you can test it by selecting `Impor
 
 And from Data Source Extensions Picker, select your data source extension.
 
-
 ![](import/images/user_defined_plugin_picker.png)
 
-This will open a Data Import Dialog. And your input parameters should be displayed on left-hand side of the Import Dialog.
-
-![](import/images/data_import_diloag_with_user_defined_plugin.png)
-
-
-After installing the extension zip you created, you can test it by selecting `Import Extension Data` after clicking `+ (plus)` icon next to `Data Frames`. Now you should be able to see your data source extension `Stocks Data Wity tidyquant (example)`
+Now you should be able to see your data source extension `Stocks Data Wity tidyquant (example)`
 
 ![](import/images/data_source_extension_picker.png)
 
