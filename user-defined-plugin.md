@@ -95,7 +95,6 @@ This is how your Data Source Extension Definition File (`extension.json`) looks 
        "name": "from",
        "displayName":"Date From",
        "dataType": "text",
-       "defaultValue" : "",
        "defaultValue" : "2016-01-01",
        "required" : true
     }
@@ -365,23 +364,29 @@ $ zip -r tidyquant_example.zip tidyquant_example
 
 Once you created your data source extension zip file, you can install it into Exploratory through UI.
 
-- From Projects page, click "Extensions" menu. Extensions dialog will open.
+Open Projects page
 
-- On the pane on on the left, under "Data Source" menu, click "Add New".
+![](images/extensions_menu_on_projects.png)
 
-- Click "Add from Local". A file picker will open.
+Click "Extensions" menu. Extensions dialog will open.
 
-- Select your extension zip file in the file picker and click "Open". Your extension will be installed.
+![](images/add_new_menu_on_extensions.png)
+
+On the pane on on the left, under "Data Source" menu, click "Add New".
+
+![](images/add_from_local.png)
+
+Click "Add from Local". A file picker will open. Select your extension zip file in the file picker and click "Open".
+
+![](images/datasource_extension_install_done.png)
+
+Your extension is installed.
 
 ## How to use
 
 After installing your data source extension, you can test it by selecting `Import Extension Data` after clicking `+ (plus)` icon next to `Data Frames`.
 
 ![](import/images/import_by_user_defined_plugin.png)
-
-And from Data Source Extensions Picker, select your data source extension.
-
-![](import/images/user_defined_plugin_picker.png)
 
 Now you should be able to see your data source extension `Stocks Data Wity tidyquant (example)`
 
