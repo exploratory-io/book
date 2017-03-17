@@ -95,7 +95,6 @@ This is how your Data Source Extension Definition File (`extension.json`) looks 
        "name": "from",
        "displayName":"Date From",
        "dataType": "text",
-       "defaultValue" : "",
        "defaultValue" : "2016-01-01",
        "required" : true
     }
@@ -388,10 +387,6 @@ Your extension is installed.
 After installing your data source extension, you can test it by selecting `Import Extension Data` after clicking `+ (plus)` icon next to `Data Frames`.
 
 ![](import/images/import_by_user_defined_plugin.png)
-
-And from Data Source Extensions Picker, select your data source extension.
-
-![](import/images/user_defined_plugin_picker.png)
 
 Now you should be able to see your data source extension `Stocks Data Wity tidyquant (example)`
 
