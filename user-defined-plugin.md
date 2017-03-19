@@ -40,8 +40,6 @@ Create a `extension.r` with following content. This is defining a function `exec
 
 ```
 execute_tidyquant <- function(stocks = "AAPL,GOOG,MSFT,AMZN", from = "2006-01-01") {
-  library(tidyquant)
-  library(stringr)
   stockList <- stringr::str_split(stocks,",")
   result <- sapply(stockList, function(stock){
     list(stock = tidyquant::tq_get(stock, get = "stock.prices", from = from))
@@ -49,8 +47,10 @@ execute_tidyquant <- function(stocks = "AAPL,GOOG,MSFT,AMZN", from = "2006-01-01
   final <- do.call("rbind", result)
 }
 ```
+To access functions of an additional R package (in this case, `tq_get` function of `tidyquant`), use explicit namespace like `tidyquant::tq_get`.
+This makes sure that your function gets access to the package function when used inside Exploratory.
 
-And place the `extension.r` under  `tidyquant_example/scripts`.
+Place the `extension.r` under `tidyquant_example/scripts`.
 
 ```
 $ cp extension.r tidyquant_example/scripts
@@ -152,10 +152,10 @@ If you do not have one, you can set default exploratory doc link like below:
 
 ##### packages (optional)
 
-`packages` is an array of package name and version pairs that the data source extension depends. For example, if you data source extension depends on `riem` you need to set it like below: 
+`packages` is an array of package name and version pairs that the data source extension depends. For example, if you data source extension depends on `tidyquant` you need to set it like below: 
 
 ```
-"rPackageDependencies": [{"name" : "riem", "version" : "0.1.1"}],
+"rPackageDependencies": [{"name" : "tidyquant", "version" : "0.4.0"}],
 ```
 
 ##### function (required)
@@ -388,7 +388,7 @@ After installing your data source extension, you can test it by selecting `Impor
 
 ![](import/images/import_by_user_defined_plugin.png)
 
-Now you should be able to see your data source extension `Stocks Data Wity tidyquant (example)`
+Now you should be able to see your data source extension `Stocks Data With tidyquant (example)`
 
 ![](import/images/data_source_extension_picker.png)
 
