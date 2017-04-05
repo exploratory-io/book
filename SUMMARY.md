@@ -44,6 +44,7 @@
 * [R Package Install](r_package.md)
 * [Custom R Script](r_script.md)
 * [Custom Data Source with Data Source Extension Framework](user-defined-plugin.md)
+* [Custom Model Function](user-defined-model-function.md)
 * [Setup](setup.md)
    * [How to disable McAfee virus scan](howto/stopmcafee.md)
 * [Keyboard shortcuts](shortcut.md)
