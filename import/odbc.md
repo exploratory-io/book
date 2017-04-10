@@ -6,10 +6,10 @@ You can quickly import data from your ODBC Database Connection into Exploratory.
 
 First, set up ODBC DSN for the database you want to connect Exploratory to. Following are instructions to create ODBC DSN for some of the types of databases we verified that they work.
 
-* [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-mac/339) (from Exploratory for Mac)
-* [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-windows/341) (from Exploratory for Windows)
+* [Oracle](https://community.exploratory.io/t/connecting-to-oracle-database-through-odbc-from-windows-with-oracle-instance-client/499) (from Exploratory for Windows)
 * [Oracle](https://community.exploratory.io/t/connecting-to-oracle-database-through-odbc-from-mac/347) (from Exploratory for Mac)
-* [Oracle](https://community.exploratory.io/t/connecting-to-oracle-database-through-odbc-from-windows/348) (from Exploratory for Windows)
+* [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-windows/341) (from Exploratory for Windows)
+* [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-mac/339) (from Exploratory for Mac)
 
 ## 2. Register the ODBC DSN Connection to Exploratory
 
