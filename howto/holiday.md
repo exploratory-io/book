@@ -1,6 +1,6 @@
-# How to Set Holiday to Prophet
+# How to Set Holidays Data for Time Series Forecast
 
-In this page, I will introduce how to set holidays for prophet, which is a function for forecasting.
+In this page, I will introduce how to set holidays data for time series forecasting.
 
 ## Import Holiday Data
 We provide a data extension to get bank holidays, so let's import data from it.
@@ -18,13 +18,13 @@ If you import the data, it will be like this.
 ![](images/holiday_data.png)
 
 ## Set Up Data Format
-Prophet expect the name of the date column to be "ds", so let's rename it.
+do_prophet, which is the function for time series forecast, expect the name of the date column to be "ds", so let's rename it.
 
 ![](images/holiday_rename.png)
 
 And it also need "holiday" column, so let's create it.
 ![](images/holiday_column.png)
 
-## Use from Prophet
-Then, you can choose this data frame from prophet and the dates in the data frame are recognized as holidays.
+## Use it from Time Series Forecast
+Then, you can choose this data frame from Time Series Forecast dialog and the dates in the data frame are recognized as holidays.
 ![](images/holiday_command.png)
