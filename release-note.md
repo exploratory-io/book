@@ -2,13 +2,20 @@
 
 ## R 3.3
 
-Released on 3/14/2017
+Released on 3/31/2017
 
 ### New Features
 
+- Scheduling at Exploratory.io
+- My Insight Page
 - Time Series Forecasting with Prophet
-- Extension Gallery
-- UI for Creating Bin / Buckets
+- Extension Gallery for GeoJSON Map
+- Extension Gallery for Data Source
+- Extension Gallery for Insight Template
+- UI for Creating Buckets
+- UI for Mapping Data
+- Search Project and Data Frame at Project Page
+
 
 ### Enhancements
 
@@ -17,23 +24,24 @@ https://cran.r-project.org/web/packages/mongolite/index.html
 
 - Chart: Support Copy
 - Chart: Histogram - Color Support
-- Chat integration - now you can ask questions within the desktop app.
+- Chat with Exploratory Support Team - Now you can ask questions within the desktop app.
 - Pivot Sorting support
-- XGBoost - categorical column support
+- XGBoost - Categorical column support
 - XGBoost - More metrics for Summary view
-- K-means - categorical column support
-- K-means in Mutate
+- New function: K-means at a column level.
+- New function: Impute NA
 - Chart: Small Multiple: show title and title font size for y axis for small multiple case
 - Line Chart: Y-axis : Include 0 or not option
-
-- Impute NA
-- UI for Recode
-- UI for country / state / county code mapping
+- OAuth as Connection - Global OAuth Management - Now you don't need to see the OAuth screen for creating every new data frame with Google Analytics, Google Sheet, Twitter.
+- Predict: Now you can apply a model to another data frame.
+- Support large document data for tokenize / count pair functions.
+- Performance Improvements for Database Data Import Dialogs including ODBC, PostgreSQL, Amazon Redshift, MongoDB, MySQL.
 
 
 ### Bug Fixes
 
-full path for R -e on Mac
+- full path for R -e on Mac
+- ODBC Connection for Oracle
 
 ## R 3.2.3
 

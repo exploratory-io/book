@@ -4,24 +4,29 @@ You can quickly create your analysis report by creating Note.
 
 Click 'Plus' button next to 'Note'.
 
-![](tutorials/images/quick-start-48.png)
+![](images/quick-start-80.png)
 
 Type a name in the pop-up and click 'Create' button.
 
-This is a Rich Text Editor, so you can write anything you like.
+This is a Rich Text Editor, so you can write anything you like. Highlighting the text will prompt you a formatting menu.
 
-![](tutorials/images/quick-start-49.png)
+![](images/quick-start-83.png)
 
-Highlighting the text will prompt you a formatting menu.
+Every time you hit Enter key to start a new line, you will see 'Plus' button at the beginning of the line.
 
-![](tutorials/images/quick-start-52.png)
+![](images/quick-start-83_1.png)
 
-Every time you hit Enter key you will find 'Plus' button at the beginning of each line. By clicking on this 'Plus' button you will see a chart icon.
+By clicking on the button you will see a chart icon.
 
-![](tutorials/images/quick-start-50.png)
+![](images/quick-start-83_2.png)
 
-You can click this to get a Chart picker dialog. You can simply select one of them and hit 'OK' button to insert the chart into the note.
+You can click this to get a Chart picker dialog. Select a data frame where the chart were created, select the chart, and click 'OK' button.
 
-![](tutorials/images/quick-start-51.png)
+![](images/quick-start-82.png)
+
 
 Once you finish writing the report, you can either publish it so that you can share by URL or save it in a HTML document.
+
+![](images/quick-start-84.png)
+
+Lastly, you can click Refresh button to refresh all the charts that are in the Note. This will reload the data from the underlying data sources like databases, files, etc. for each chart.
