@@ -34,6 +34,8 @@
       * [Google Trends](import/google-trends.md)
       * [Twitter Search](import/twitter.md)      
       * [Twitter Timeline](import/twitter-timeline.md)      
+      * [Stripe](import/stripe.md)
+      * [MailChimp](import/mailchimp.md)
    * [Write R Script as Data](import/r-script-data.md)
 * [Chart](chart.md)
    * [Pin](chart/pin.md)
