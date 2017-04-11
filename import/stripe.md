@@ -1,4 +1,4 @@
-# Import Stripe API data
+# Import Stripe API Data
 
 You can get data from Stripe API. Access REST API by OAuth. The document of the API is [here](https://stripe.com/docs/api).
 

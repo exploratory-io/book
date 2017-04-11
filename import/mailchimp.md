@@ -1,4 +1,4 @@
-# Import MailChimp API data
+# Import MailChimp API Data
 
 You can get data from MailChimp API. Access REST API by OAuth. The document of the API is [here](https://developer.mailchimp.com/documentation/mailchimp/).
 
