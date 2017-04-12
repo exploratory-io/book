@@ -16,25 +16,28 @@ Released on 4/12/2017
 - UI for Mapping Data
 - Search Project and Data Frame at Project Page
 - OAuth as Connection - Global OAuth Management - Now you don't need to see the OAuth screen for creating every new data frame with Google Analytics, Google Sheet, Twitter.
-
+- Chat with Exploratory Support Team - Now you can ask questions within the desktop app.
 
 ### Enhancements
 
 - Chart: Support Copy
 - Chart: Histogram - Color Support
-- Chat with Exploratory Support Team - Now you can ask questions within the desktop app.
+- Chart: Auto-detect column names in chart range setting
+- Chart: Small Multiple: show title and title font size for y axis for small multiple case
+- Chart: Added 'Y-axis : Include 0 or not' property for Line chart
+- Chart: Error Bar: Support ‘Direction’ for Color like Bar chart
+- Table view: Keep the current table position before / after running commands
 - Pivot Table: Sorting support
 - Build Model: Support Custom Entry for Formula
 - XGBoost - Categorical column support
 - XGBoost - More metrics for Summary view
 - New function: K-means at a column level.
 - New function: Impute NA
-- Chart: Small Multiple: show title and title font size for y axis for small multiple case
-- Line Chart: Y-axis : Include 0 or not option
 - Prediction: Now you can apply the machine learning model to another data frame other than the training and the test data sets.
 - Support large document data for tokenize / count pair functions.
 - Performance Improvements for Database Data Import Dialogs including ODBC, PostgreSQL, Amazon Redshift, MySQL.
 - Introducing a way to configure the repository location.
+- Support copying long text in a cell from table view. (Cell detail comes up by click instead of hover)
 
 ### Bug Fixes
 
@@ -46,6 +49,14 @@ Released on 4/12/2017
 - Google Sheet: Worksheet Name is not automatically refreshed based on Sheet name selection
 - When an edf was exported from branch, the branch was lost when imported
 - Log File Import fails with Error : `guess_max` must be a positive integer
+- Chart: Y-Axis Shouldn’t be able to be deleted when there is only one left
+- chart: bars on chart edges are chopped in multi-y, small multiple case
+- Chart: map doesn’t remember the zoom level
+- chart: color order in the custom color palette is applied in an opposite way for the legend
+- chart: show NA as one of categories in repeat by and color
+- Chart: Error dialog shows up with bar chart with huge number of unique values at X-Axis
+- The 21st rows in Table view is not shown up fully
+
 
 ## R 3.2.3
 
