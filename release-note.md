@@ -2,46 +2,50 @@
 
 ## R 3.3
 
-Released on 3/31/2017
+Released on 4/12/2017
 
 ### New Features
 
-- Scheduling at Exploratory.io
-- My Insight Page
+- Scheduling Insights at Exploratory.io
+- My Insight Page - Single place for al your insights.
 - Time Series Forecasting with Prophet
-- Extension Gallery for GeoJSON Map
-- Extension Gallery for Data Source
-- Extension Gallery for Insight Template
+- GeoJSON Map Extensions UI
+- Data Source Extensions UI
+- Insight Template Extensions UI
 - UI for Creating Buckets
 - UI for Mapping Data
 - Search Project and Data Frame at Project Page
+- OAuth as Connection - Global OAuth Management - Now you don't need to see the OAuth screen for creating every new data frame with Google Analytics, Google Sheet, Twitter.
 
 
 ### Enhancements
 
-mongolite 1.0
-https://cran.r-project.org/web/packages/mongolite/index.html
-
 - Chart: Support Copy
 - Chart: Histogram - Color Support
 - Chat with Exploratory Support Team - Now you can ask questions within the desktop app.
-- Pivot Sorting support
+- Pivot Table: Sorting support
+- Build Model: Support Custom Entry for Formula
 - XGBoost - Categorical column support
 - XGBoost - More metrics for Summary view
 - New function: K-means at a column level.
 - New function: Impute NA
 - Chart: Small Multiple: show title and title font size for y axis for small multiple case
 - Line Chart: Y-axis : Include 0 or not option
-- OAuth as Connection - Global OAuth Management - Now you don't need to see the OAuth screen for creating every new data frame with Google Analytics, Google Sheet, Twitter.
-- Predict: Now you can apply a model to another data frame.
+- Prediction: Now you can apply the machine learning model to another data frame other than the training and the test data sets.
 - Support large document data for tokenize / count pair functions.
-- Performance Improvements for Database Data Import Dialogs including ODBC, PostgreSQL, Amazon Redshift, MongoDB, MySQL.
-
+- Performance Improvements for Database Data Import Dialogs including ODBC, PostgreSQL, Amazon Redshift, MySQL.
+- Introducing a way to configure the repository location.
 
 ### Bug Fixes
 
-- full path for R -e on Mac
-- ODBC Connection for Oracle
+- Getting an empty screen when launching the app.
+- Didn't get any response or got an error for testing ODBC Connection for Oracle database.
+- Viz Tab order was not honored in copied Data Frame
+- ‘name of null’ error is raised while grouping by categorical variables in Viz view
+- Google Analytics: Dimensions and Metrics List of Values disappears when try to grab scrollbar on Windows.
+- Google Sheet: Worksheet Name is not automatically refreshed based on Sheet name selection
+- When an edf was exported from branch, the branch was lost when imported
+- Log File Import fails with Error : `guess_max` must be a positive integer
 
 ## R 3.2.3
 
