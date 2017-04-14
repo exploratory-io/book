@@ -1,5 +1,13 @@
 # Release Note
 
+## R 3.3.0.2
+
+Released on 4/14/2017
+
+### Bug Fixes
+
+- Fixed issue that SPARQL data source extension fails loading data with error : "Error: package 'RCurl' could not be loaded"
+
 ## R 3.3
 
 Released on 4/12/2017
