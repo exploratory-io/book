@@ -1,8 +1,8 @@
 # Import Stripe API Data
 
-You can get data from Stripe API. Access REST API by OAuth. The document of the API is [here](https://stripe.com/docs/api).
+You can get your payment data from Stripe quickly. Take a look at this [blog post](https://blog.exploratory.io/importing-stripe-payment-data-visualize-and-schedule-with-exploratory-3b1422a9cf8b) for the details.
 
 # Input parameters
 
-* Data Type - Type of data to get from the API.
-* Start Date - Filter data created later than this. The default is to get all data.
+* Data Type - Select a type of Stripe data set.
+* Start Date - Set a 'starting date'. It will extract the data whose transaction dates are after this date. The default is to get all data.
