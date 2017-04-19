@@ -4,19 +4,48 @@
 
 - Select 'Import Remote Data' from Add Data Frames dropdown
 
-![](images/import-remote-data.png)
+![](images/import-cloud-apps-data.png)
 
 - Click 'Google Sheets'
 
-![](images/google-sheet3.png)
+![](images/google-sheet-setting1.png)
 
-## 2. Authentication with Google OAuth
+## 2. OAuth for Google Sheets
 
-Select an account you want to use for your Google Spreadsheet and click 'Allow' button to allow Exploratory to extract your Google Spreadsheet data based on the parameters you are going to set up in the next step.
+If this is your first time to create a Google Sheets Data Source, you want to create a new connection for Google Sheets. Click "create" link on Import Dialog.
 
-![](images/google-analytics-oauth.png)
+![](images/google-sheets-import1.png)
 
-![](images/google-spreadsheet.png)
+This will opens up Connection Dialog.
+
+![](images/connection-dialog.png)
+
+And click "Add" button.
+
+![](images/connection-list-gs.png)
+
+And Select "Google Analytics". Then Click OK on the popup.
+
+![](images/google-sheets-authorize.png)
+
+Select your google account that you want to use.
+
+![](images/google-account-select.png)
+
+And you will see Authorized message.
+
+![](images/authorized-browser.png)
+
+Go back to Exploratory and click "Refresh" button. And you will see small dialog message changes like below.
+
+![](images/google-sheets-connection-created.png)
+
+So click Close. Then close Connection List Dialog too. 
+
+![](images/google-sheets-connection-list-close.png)
+
+And now ready to select parameters.
+
 
 ## 3. Set Parameters
 
@@ -28,7 +57,7 @@ Select an account you want to use for your Google Spreadsheet and click 'Allow' 
 
 - Set parameters for how to read the data.
 
-![](images/google-spreadsheet2.png)
+![](images/google-sheets-import.png)
 
 ## 4. Preview and Import
 
