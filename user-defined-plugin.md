@@ -18,6 +18,7 @@ Data Source Extensions can be installed in Exploratory though UI, enabling Explo
 Here are examples of Data Source Extension.
 - [tidyquant Data Source](https://download2.exploratory.io/datasources/tidyquant.zip) (Financial Data)
 - [riem_measures Data Source](https://download2.exploratory.io/datasources/riem_measures.zip) (Weather Data)
+- [SPARQL Data Source](https://download2.exploratory.io/datasources/sparql.zip) ([RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) Data)
 
 ## How to create Data Source Extension
 
@@ -401,4 +402,3 @@ And now you should be able to get Stock Data like this.
 To update an installed extension with a new version of your extension zip file, just repeat the above install steps. The old extension will be overwritten by the new one.
 
 If you want to keep multiple versions of your extension for experimental purpose, please give each version separate names (e.g. my_riem_measures_1, my_riem_measures_2), so that they don't overwrite each other.
-

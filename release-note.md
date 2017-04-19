@@ -1,39 +1,70 @@
 # Release Note
 
-## R 3.3
+## R 3.3.0.2
 
-Released on 3/14/2017
-
-### New Features
-
-- Time Series Forecasting with Prophet
-- Extension Gallery
-- UI for Creating Bin / Buckets
-
-### Enhancements
-
-mongolite 1.0
-https://cran.r-project.org/web/packages/mongolite/index.html
-
-- Chart: Support Copy
-- Chart: Histogram - Color Support
-- Chat integration - now you can ask questions within the desktop app.
-- Pivot Sorting support
-- XGBoost - categorical column support
-- XGBoost - More metrics for Summary view
-- K-means - categorical column support
-- K-means in Mutate
-- Chart: Small Multiple: show title and title font size for y axis for small multiple case
-- Line Chart: Y-axis : Include 0 or not option
-
-- Impute NA
-- UI for Recode
-- UI for country / state / county code mapping
-
+Released on 4/14/2017
 
 ### Bug Fixes
 
-full path for R -e on Mac
+- Fixed issue that SPARQL data source extension fails loading data with error : "Error: package 'RCurl' could not be loaded"
+
+## R 3.3
+
+Released on 4/12/2017
+
+### New Features
+
+- Scheduling Insights at Exploratory.io
+- My Insight Page - Single place for al your insights.
+- Time Series Forecasting with Prophet
+- GeoJSON Map Extensions UI
+- Data Source Extensions UI
+- Insight Template Extensions UI
+- UI for Creating Buckets
+- UI for Mapping Data
+- Search Project and Data Frame at Project Page
+- OAuth as Connection - Global OAuth Management - Now you don't need to see the OAuth screen for creating every new data frame with Google Analytics, Google Sheet, Twitter.
+- Chat with Exploratory Support Team - Now you can ask questions within the desktop app.
+
+### Enhancements
+
+- Chart: Support Copy
+- Chart: Histogram - Color Support
+- Chart: Auto-detect column names in chart range setting
+- Chart: Small Multiple: show title and title font size for y axis for small multiple case
+- Chart: Added 'Y-axis : Include 0 or not' property for Line chart
+- Chart: Error Bar: Support ‘Direction’ for Color like Bar chart
+- Table view: Keep the current table position before / after running commands
+- Pivot Table: Sorting support
+- Build Model: Support Custom Entry for Formula
+- XGBoost - Categorical column support
+- XGBoost - More metrics for Summary view
+- New function: K-means at a column level.
+- New function: Impute NA
+- Prediction: Now you can apply the machine learning model to another data frame other than the training and the test data sets.
+- Support large document data for tokenize / count pair functions.
+- Performance Improvements for Database Data Import Dialogs including ODBC, PostgreSQL, Amazon Redshift, MySQL.
+- Introducing a way to configure the repository location.
+- Support copying long text in a cell from table view. (Cell detail comes up by click instead of hover)
+
+### Bug Fixes
+
+- Getting an empty screen when launching the app.
+- Didn't get any response or got an error for testing ODBC Connection for Oracle database.
+- Viz Tab order was not honored in copied Data Frame
+- ‘name of null’ error is raised while grouping by categorical variables in Viz view
+- Google Analytics: Dimensions and Metrics List of Values disappears when try to grab scrollbar on Windows.
+- Google Sheet: Worksheet Name is not automatically refreshed based on Sheet name selection
+- When an edf was exported from branch, the branch was lost when imported
+- Log File Import fails with Error : `guess_max` must be a positive integer
+- Chart: Y-Axis Shouldn’t be able to be deleted when there is only one left
+- chart: bars on chart edges are chopped in multi-y, small multiple case
+- Chart: map doesn’t remember the zoom level
+- chart: color order in the custom color palette is applied in an opposite way for the legend
+- chart: show NA as one of categories in repeat by and color
+- Chart: Error dialog shows up with bar chart with huge number of unique values at X-Axis
+- The 21st rows in Table view is not shown up fully
+
 
 ## R 3.2.3
 
