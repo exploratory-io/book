@@ -1,10 +1,18 @@
 # FAQ - Frequently Asked Questions
 
-## How can I report issues, bugs, or enhancement requests ?
+## I have very sensitive data. Is my data safe?
+
+Any data you import into Exploratory Desktop always stays on your PC and never leave unless you explicitly publish (share) it to Exploratory Cloud (exploratory.io).
+
+## Where exactly my data is stored after importing?
+
+All the data you import into Exploratory Desktop is saved as a binary form (R's Rdata format) inside your repository, which is located under '<your_home_directory>/.exploratory' on your PC.
+
+## How can I report issues, bugs, or enhancement requests?
 
 We have a [community page](https://community.exploratory.io) to raise any questions and suggestions or report product issues. If you need an immediate help feel free to contact [support@exploratory.io](mailto:support@exploratory.io).
 
-## What is the best way to keep myself updated with the news ?
+## What is the best way to keep myself updated with the news?
 
 Please follow [@ExploratoryData](https://twitter.com/ExploratoryData) at Twitter or subscribe our blog: http://blog.exploratory.io .
 
@@ -101,26 +109,22 @@ This will install the R packages to the specified location. After that, you shou
 
 R 3.3.1 or greater.
 
-## What version of Git is required ?
+## What version of Git is required?
 
 The latest Exploratory Desktop requires Git 2.0.0 or greater. Unless it detects an older version of Git it won't try to install Git. Exploratory Desktop assumes that Git is installed under /usr/bin or /usr/local/bin, so for any reason if your Git is installed somewhere else then it might try to install Git because it thinks that Git is not there. If that's the case and you don't want another Git to be installed please contact support@exploratory.io .
 
-## What R packages are you installing and why ?
+## What R packages are you installing and why?
 
 Exploratory Desktop uses a number of amazing R packages, most of which are coming from 'tidyverse' - a set of R packages to make your data wrangling and analysis more effective and fun. You can see a list of the R packages to be installed in the initial setup UI by clicking a blue text 'See a list of software and libraries to be installed.' or select 'View Licenses' from Toolbar menu / Help. These are the packages that we use to make your data access and data analysis more effective.
 
-## Where are you installing R packages ?
+## Where are you installing R packages?
 
 Exploratory Desktop installs them into Exploratory's repository, which is different from the regular R installation location. This is to avoid any conflict with your own R environment.
 
-## Can I add my preferred R packages ?
+## Can I add my preferred R packages?
 
 Yes! Here's an [introduction](https://blog.exploratory.io/installing-r-packages-from-cran-in-exploratory-desktop-36eae50cffb0#.u2iee7i5j) on how to install and use R packages from CRAN.
 
-## I have very sensitive data. Where my data is stored ?
-
-Once you import your data into Exploratory it stays inside Exploratory Desktop's repository which is located on your PC. And the data never leave your PC unless you explicitly publish (share) it.
-
-## Can I change my username ?
+## Can I change my username?
 
 We are not currently supporting it, but we will in future releases. If you need it to be changed now, please contact support@exploratory.io, we can manually change it at the server for you.
