@@ -126,7 +126,7 @@ Data privacy laws or regulations in your home country may differ from those in t
 
 Exploratory is committed to protecting the security of your information and takes reasonable precautions to protect it.
 
-We use industry standard encryption to protect your data in transit. This is commonly referred to as transport layer security (“TLS”) or secure socket layer (“SSL”) technology. However, internet data transmissions, cannot be guaranteed to be 100% secure, and we cannot ensure the security of information during its transmission between you and us. Accordingly, you acknowledge that when you transport such information, you do so at your own risk. 
+We use industry standard encryption to protect your data in transit. This is commonly referred to as transport layer security (“TLS”) or secure socket layer (“SSL”) technology. However, internet data transmissions, cannot be guaranteed to be 100% secure, and we cannot ensure the security of information during its transmission between you and us. Accordingly, you acknowledge that when you transport such information, you do so at your own risk.
 
 If Exploratory learns of a security system breach, we may attempt to notify you and provide information on protective steps, if available, through the email address that you have provided to us or by posting a notice on our web site and/or via other communication platforms. Depending on where you live, you may have a legal right to receive such notices in writing.
 
