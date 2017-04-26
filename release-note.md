@@ -1,6 +1,31 @@
 # Release Note
 
-## R 3.3.0.2
+## v 3.4
+
+Released on 4/27/2017
+
+### New Features
+
+- Export to Google Sheet - You can directly export data into Google Sheet.
+- Export to Clipboard - You can copy the data to the clipboard so that you can paste it to other applications like Excel, Numbers, Email, Text Editor, etc.
+
+### Enhancements
+
+- Introduced Export and Publish buttons at the top level. You can export data or save charts from Export button. And you can publish your data or charts to share or schedule.
+- Moved 'Reload' button to the top, next to the data frame name, and renamed it to 'Re-import'. It's also showing the last imported time.
+- MongoDB - Uptaken 'mongolite' 1.2.
+- MongoDB - Introduced a connection pool. This will make your query performance a bit faster since it won't need to create a connection every time you run the query while you are in the MongoDB data import dialog.
+- MongoDB - Introduced 'Big Integer as Character' option to bring the data values as character instead of as double.
+- MailChimp -
+- Stripe -
+- Chart - Introduced 'Layout' button which will open the layout configuration dialog. This used to be accessed from 'More' button.
+
+
+### Bug Fixes
+
+
+
+## v 3.3.0.2
 
 Released on 4/14/2017
 
@@ -8,7 +33,7 @@ Released on 4/14/2017
 
 - Fixed issue that SPARQL data source extension fails loading data with error : "Error: package 'RCurl' could not be loaded"
 
-## R 3.3
+## v 3.3
 
 Released on 4/12/2017
 
@@ -66,7 +91,7 @@ Released on 4/12/2017
 - The 21st rows in Table view is not shown up fully
 
 
-## R 3.2.3
+## v 3.2.3
 
 Released on 3/13/2017
 
@@ -82,7 +107,7 @@ Released on 3/13/2017
 - Fixed R packages installation issues at setup time.
 - Needed to pick up quanteda fix about library() error that is not yet released on CRAN.
 
-## R 3.2.2
+## v 3.2.2
 
 Released on 3/7/2017
 
@@ -94,7 +119,7 @@ Released on 3/7/2017
 - Not to show error dialog at Viz if it is coming from invalid DAG step.
 - Added a support of taking care of a broken user configuration file.
 
-## R 3.2.1
+## v 3.2.1
 
 Released on 3/3/2017
 
@@ -114,7 +139,7 @@ Released on 3/3/2017
 - Fixed an issue that Pivot with Color By with 'Row' option was showing an empty screen.
 
 
-## R 3.2
+## v 3.2
 
 Released on 2/27/2017
 
@@ -159,7 +184,7 @@ Released on 2/27/2017
 - [EDF Import] Error Handle when importing EDF has error
 
 
-## R 3.1
+## v 3.1
 
 Released on 2/8/2017
 
@@ -201,7 +226,7 @@ Released on 2/8/2017
 - Disabling / enabling step did not fresh pinned Chart.
 
 
-## R 3.0.2
+## v 3.0.2
 
 Released on 1/26/2017
 
@@ -210,7 +235,7 @@ Released on 1/26/2017
 - Couldn't assign a new connection after importing projects from another environment.
 - Data Frame list is not up-to-date when opening Join dialog for the first time.
 
-## R 3.0.1
+## v 3.0.1
 
 Released on 1/25/2017
 
@@ -220,7 +245,7 @@ Released on 1/25/2017
 - Getting error pop-up dialog consistently in Viz view after updating or deleting existing steps.
 
 
-## R 3.0
+## v 3.0
 
 Released on 1/24/2017
 
@@ -325,7 +350,7 @@ Released on 1/24/2017
 
 
 
-## R 2.5
+## v 2.5
 
 Released on 12/1/2016
 
@@ -357,7 +382,7 @@ Released on 12/1/2016
 - Fixed unwanted viz refresh issue when a viz, data share button is clicked.
 
 
-## R 2.4
+## v 2.4
 
 Released on 11/10/2016
 
@@ -382,7 +407,7 @@ Released on 11/10/2016
 - Chart - Removed unnecessary zero values displayed on the plot area when showing the values.
 - Small Multiple Chart - Bar chart with '% of Total' window calculation was broken.
 
-## R 2.3
+## v 2.3
 
 Released on 10/26/2016
 
@@ -427,7 +452,7 @@ Released on 10/26/2016
 - Share dialog didn't show up correctly from desktop's 'Add or remove user' link
 
 
-## R 2.2
+## v 2.2
 
 Released on 10/10/2016
 
@@ -450,7 +475,7 @@ Released on 10/10/2016
 - Fixed the command UI style for Windows.
 
 
-## R 2.1
+## v 2.1
 
 Released on 9/29/2016
 
@@ -481,7 +506,7 @@ Add Include and Exclude option for slice
 - In command builder “Concatenate items" is now “Convert to text” and generates “list_to_text”, not “list_concat”
 
 
-## R 2.0
+## v 2.0
 
 Released on 9/21/2016
 
@@ -505,7 +530,7 @@ Released on 9/21/2016
 - Google BigQuery - Show more than 50 data tables
 
 
-## R 1.10.1
+## v 1.10.1
 
 Released on 8/29/2016
 
@@ -517,7 +542,7 @@ Released on 8/29/2016
 
 - You don't need to enter username/password for MongoDB when they are not set, typical for the local MongoDB setup scenario.
 
-## R 1.10
+## v 1.10
 
 Released on 8/26/2016
 
@@ -542,7 +567,7 @@ Released on 8/26/2016
 - Data in Legend was not respecting the sorting order that is set as Factor column. (Ordered Factor)
 
 
-## R 1.9.0
+## v 1.9.0
 
 Released on 8/16/2016
 
@@ -562,7 +587,7 @@ Released on 8/16/2016
 - Now you can import large data file even for Windows. Before this fix, it was throwing an error when trying to import large size data that was bigger than 2 GB, only for Windows.
 - Error validation for Branch name conflict used to close Branch name entry pop-up. Now it shows the error but you can still update the name in the same dialog.
 
-## R 1.8.0
+## v 1.8.0
 
 Released on 7/29/2016
 
@@ -584,7 +609,7 @@ MongoDB: Added help text for query
 - You can download EDF (Exploratory Data File) with Multibyte characters now.
 - Now the data frame names are sorted by mix case (upper and lower cases) in the left hand side.
 
-## R 1.7.0
+## v 1.7.0
 
 Released on 7/18/2016
 
@@ -609,7 +634,7 @@ Released on 7/18/2016
 
 
 
-## R 1.6.1
+## v 1.6.1
 
 Released on 7/5/2016
 
@@ -622,7 +647,7 @@ Released on 7/5/2016
 - libPaths command in the generated R script is correctly escaped for Windows.
 - User added R packages will be added into the generated R script with library command.
 
-## R 1.6.0
+## v 1.6.0
 
 Released on 7/1/2016
 
@@ -652,7 +677,7 @@ Released on 7/1/2016
 - Column names with Multibyte characters can be processed correctly with mutate / summarize commands now.
 - Now it shows up to 300 columns and 1000 rows in Table view correctly even when there are a lot more columns in the data frame.
 
-## R 1.5.2
+## v 1.5.2
 
 Released on 6/20/2016
 
@@ -665,7 +690,7 @@ Released on 6/20/2016
 - It was not showing an appropriate errors in Table / Chart views when invalid functions are used in the steps.
 - 'build_kmeans.kv' command was not augmenting the cluster IDs appropriately on top of the original data.
 
-## R 1.5.1
+## v 1.5.1
 
 Released on 6/19/2016
 
@@ -680,7 +705,7 @@ Released on 6/19/2016
 - Chart embedding's iframe code doesn't have appropriate height and width attribute setting.
 
 
-## R 1.5.0
+## v 1.5.0
 
 Released on 6/16/2016
 
@@ -704,7 +729,7 @@ Released on 6/16/2016
 - Had an error for publishing Note with many charts or Heatmap.
 
 
-## R 1.4.6
+## v 1.4.6
 
 Released on 6/6/2016
 
@@ -719,7 +744,7 @@ Released on 6/6/2016
 
 - Deleted projects don't disappear untile restarting the app
 
-## R 1.4.5
+## v 1.4.5
 
 Released on 6/2/2016
 
@@ -734,7 +759,7 @@ Released on 6/2/2016
 - The data doesn't get refreshed even after re-selecting the local data file with a same name.
 - Chart: Data Popup - the color values are shown duplicated.
 
-## R 1.4.4
+## v 1.4.4
 
 Released on 5/30/2016
 
@@ -743,7 +768,7 @@ Released on 5/30/2016
 - The download of R and Git didn't start for Windows 7.
 
 
-## R 1.4.3
+## v 1.4.3
 
 Released on 5/26/2016
 
@@ -761,7 +786,7 @@ Released on 5/26/2016
 - Chart: Boxplot doesn't render when the column assinged to X-Axis has NAs.
 
 
-## R 1.4.2
+## v 1.4.2
 
 Released on 5/26/2016
 
@@ -789,7 +814,7 @@ Released on 5/26/2016
 - REST API Data Source: Now it can bring all the elements even when there are more than 50 items.
 
 
-## R 1.4.1
+## v 1.4.1
 
 Released on 5/16/2016
 
@@ -816,7 +841,7 @@ Released on 5/16/2016
 - Syntax Suggestion: Instead of select minus '-' from the suggested list, when you typed minus ‘-’ in select() command it didn't show a suggested list of the columns.
 
 
-## R 1.4.0
+## v 1.4.0
 
 Released on 5/9/2016
 
@@ -872,7 +897,7 @@ Released on 5/9/2016
 - Suggestion list doesn't show up after manually typing minus '-'.
 
 
-## R 1.3.0
+## v 1.3.0
 
 Released on 5/2/2016
 
@@ -897,7 +922,7 @@ Released on 5/2/2016
 - JSON import: Updating with a different file doesn't replace the original one in Preview UI
 
 
-## R 1.2.2
+## v 1.2.2
 
 Released on 4/26/2016
 
@@ -916,7 +941,7 @@ Released on 4/26/2016
 - Support login to Exploratory Desktop with Email address, not just username
 - Map: Taking color assignment off causes no data to be displayed in Map.
 
-## R 1.2.1
+## v 1.2.1
 
 Released on 4/18/2016
 
@@ -935,7 +960,7 @@ Released on 4/18/2016
 
 
 
-## R 1.2.0
+## v 1.2.0
 
 Released on 4/11/2016
 
