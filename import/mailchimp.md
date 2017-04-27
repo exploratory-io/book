@@ -1,8 +1,9 @@
 # Import MailChimp API Data
 
-You can get data from MailChimp API. Access REST API by OAuth. The document of the API is [here](https://developer.mailchimp.com/documentation/mailchimp/).
+You can get your payment data from MailChimp quickly. You can take a look at this [official API  document](https://developer.mailchimp.com/documentation/mailchimp/).
 
 # Input parameters
 
-* Data Type - Type of data to get from the API.
-* Start Date - Filter data created later than this. The default is to get all data.
+* Data Type - Select a type of MailChimp data set.
+* Date Range - Select a type of date filtering. If you choose "After This Date", you can indicate explicit date like "2015-11-03" in "Value for Date Range". If you choose "Last N ~", you can indicate a positive integer in "Value for Date Range" and the data is filtered by the number and the time unit in the option.
+* Value for Date Range - If this is empty, all data is imported. If "Date Range" is "After This Date", this should be explicit date like "2015-11-03". If "Date Range" is "Last N ~", this should be a positive integer.
