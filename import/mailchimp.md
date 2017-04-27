@@ -1,6 +1,6 @@
 # Import MailChimp API Data
 
-You can get your mailing list data from MailChimp quickly. You can take a look at this [official API  document](https://developer.mailchimp.com/documentation/mailchimp/).
+You can get your MailChimp related data quickly.
 
 # Input parameters
 
