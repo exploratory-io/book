@@ -2,11 +2,33 @@
 
 ## I have very sensitive data. Is my data safe?
 
-Any data you import into Exploratory Desktop always stays on your PC and never leave unless you explicitly publish (share) it to Exploratory Cloud (exploratory.io).
+Any data you import into Exploratory Desktop always stays on your PC and never leave your PC unless you explicitly publish (share) it to Exploratory Cloud (exploratory.io). If you decided to publish the data to Exploratory Cloud for sharing or scheduling, you can share it in a private way so that so that only you and others you have invited can view it. The data is also stored in encrypted. Please take a look at our [Privacy Policy](https://exploratory.io/privacy/) for more details.
 
 ## Where exactly my data is stored after importing?
 
 All the data you import into Exploratory Desktop is saved as a binary form (R's Rdata format) inside your repository, which is located under '<your_home_directory>/.exploratory' on your PC.
+
+## What happens when I change my subscription plan periods between Yearly and Monthly?
+
+If you change the subscription plan period from Monthly to Yearly, the plan will start from the date you update through the next 12 month periods. If you change it from Yearly to Monthly, then we’ll refund you the amount for the months that have not been used yet.
+
+## What happens when I upgrade or downgrade my subscription plan between Starter, Personal and Pro?
+
+If you are on Monthly plan, then you will be charged with the new price from the next month. If you are on Yearly plan, then we will refund you for the difference when you downgrade, say from Pro to Personal, or we will charge you an extra for the difference when you upgrade, say from Personal to Pro.
+
+## How can I cancel my plan?
+
+You can cancel the plan anytime from your account page with just a click of a button. If you have subscribed Yearly subscription plan, then we will refund you for the amount of the remaining months.
+
+## How can I share my insights with others privately?
+
+You can invite others to view your insights (Data, Chart, or Note) privately by email addresses. They will receive an invitation email, and they can click the link to open your insights at Exploratory Cloud. If they don’t have the accounts created yet, they will be asked to create free accounts before opening your insights. They don’t need to subscribe any plan as long as they just want to view the shared insights. If they like to use Exploratory Desktop to customize the insights or create new ones, then they will need to subscribe one of the plans at this point.
+
+## How many users can I share my insights (Chart / Data / Note)?
+
+If you like to share only the named users, which means they will need to have their accounts created at Exploratory Cloud and sign in first, you can share as many users as your plan supports. If you like to share with anybody without asking them to create the accounts, then you could share a uniquely generated URL for each insight with them. This is a convenient way to share with a mass audience, though this means anybody happens to have this URL can open the insights. There is no limitation of how many people can access to your insights with this URL share option.
+
+You can also share your insights publicly with a unlimited number of people regardless of the plan you subscribe.
 
 ## How can I report issues, bugs, or enhancement requests?
 
@@ -18,7 +40,7 @@ Please follow [@ExploratoryData](https://twitter.com/ExploratoryData) at Twitter
 
 ## What platforms are supported?
 
-There are MacOS and Windows versions available at our download page. We also have a beta version for Linux Ubuntu. [Link](https://community.exploratory.io/t/exploratory-v2-5-for-linux-is-available/266)
+There are MacOS and Windows versions available at our download page.
 
 ## Is there a server version of Exploratory Desktop?
 
@@ -38,41 +60,30 @@ Also, here are the direct links to:
 
 - [End User License Agreement](https://exploratory.io/eula)
 - [Terms & Conditions](https://exploratory.io/terms)
+- [Privacy Statement](https://exploratory.io/privacy)
 
 
 ## I'm having a network connection issue, what should I do?
 
 Exploratory Desktop requires an internet connection for authenticating the users, downloading the required software like Git and R if you don't have them installed yet, accessing to remote data sources like Google Analytics, Web Scraping, and sharing Data, Chart, and Note.
 
-If you use a proxy server to connect to the internet, as default it automatically tries to detect the proxy server and connect through the server. This should work for most of the times, but with certain scenarios it might not. In such cases you can manually add your proxy server information to a configuration file 'userconf.json', which can be found at ‘~/.exploratory’ for Mac OS X or ‘<your_user_home_folder>/.exploratory’ for Windows as follows. Here's an example.
+If you use a proxy server at your organizations to connect to the internet, as default it automatically tries to detect the proxy server and connect through the server. This should work for most of the times, but unfortunately it doesn't sometimes. In such cases you can manually add your proxy server information in Configuration dialog UI.
 
-**Set a proxy server:**
+![](images/proxy-config.png)
 
-```
-{
-   "user": "dummy1",
-   "proxy": {
-     "server": "<your_proxy_server>",
-     "port": <port_number>,
-     "user": "<username>",
-     "password": "<password>"
-   }
-}
-```
-
-Once the proxy server information is set, save the file and restart Exploratory Desktop. If you still encounter the network issue please contact at support@exploratory.io .
+If you are still having the network issue please contact at support@exploratory.io .
 
 ## Why are you asking my password for OS X at the initial installation time?
 
 If you don't have R and/or Git previously installed you will be asked to enter your Mac OS admin username and password. This is because R and Git installation requires the system administrator's privilege. We don't see or capture this information, it's completely done by R and Git installers and that's outside of Exploratory. ;)
 
-## I have already installed R (rstats) 3.3, are you going to install another R ?
+## I have already installed R (rstats) 3.4, are you going to install another R ?
 
-No. we check the R version that is installed on your pc, but as long as it is 3.3.1 or grater then Exploratory will use that one, without installing another R.
+No. we check the R version that is installed on your pc, but as long as it is 3.4 or grater then Exploratory will use that one, without installing another R.
 
 ## I don't have R installed, what are you going to do ?
 
-Please download Exploratory Desktop by simply clicking on Download button on the download page. It will install R 3.3 as part of the initial setup. You will be asked to enter your Mac OS admin username and password, this is because R installation would require the system administrator's privilege. We don't capture this information, it's completely done by R installer itself.
+Just download Exploratory Desktop by simply clicking on Download button on the download page. It will install R 3.4 as part of the initial setup. For Mac, you will be asked to enter your Mac OS admin username and password, this is because R installation would require the system administrator's privilege. We don't capture this information, it's completely done by R installer itself. For Windows, you need to perform this initial step with a user account with Admin privilege.
 
 ## I have installed R with Homebrew on Mac OS X, does that work ?
 
@@ -105,21 +116,17 @@ Your userconf.json should look something like the following.
 
 This will install the R packages to the specified location. After that, you should be able to open the project. Otherwise, please contact support@exploratory.io .
 
-## What version of R is required ?
-
-R 3.3.1 or greater.
-
 ## What version of Git is required?
 
 The latest Exploratory Desktop requires Git 2.0.0 or greater. Unless it detects an older version of Git it won't try to install Git. Exploratory Desktop assumes that Git is installed under /usr/bin or /usr/local/bin, so for any reason if your Git is installed somewhere else then it might try to install Git because it thinks that Git is not there. If that's the case and you don't want another Git to be installed please contact support@exploratory.io .
 
 ## What R packages are you installing and why?
 
-Exploratory Desktop uses a number of amazing R packages, most of which are coming from 'tidyverse' - a set of R packages to make your data wrangling and analysis more effective and fun. You can see a list of the R packages to be installed in the initial setup UI by clicking a blue text 'See a list of software and libraries to be installed.' or select 'View Licenses' from Toolbar menu / Help. These are the packages that we use to make your data access and data analysis more effective.
+Exploratory Desktop uses a number of amazing R packages, most of which are coming from '[tidyverse](http://tidyverse.org/)' - a set of R packages to make your data wrangling and analysis more effective and fun. You can see a list of the R packages to be installed in the initial setup UI by clicking a blue text 'See a list of software and libraries to be installed.' or select 'View Licenses' from Toolbar menu / Help. These are the packages that we use to make your data access and data analysis more effective.
 
 ## Where are you installing R packages?
 
-Exploratory Desktop installs them into Exploratory's repository, which is different from the regular R installation location. This is to avoid any conflict with your own R environment.
+Exploratory Desktop installs them into Exploratory's repository, which is different from the regular R installation location. This is to avoid any conflict with your own R environment if you happen to have.
 
 ## Can I add my preferred R packages?
 
