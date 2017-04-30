@@ -6,10 +6,10 @@ Released on 4/29/2017
 
 ### Bug Fixes
 
-- Chart - Character becoming as Date automatically for Boxplot X-Axis
+- Chart - Character data type has become Date automatically for Boxplot X-Axis
 - Excel Data Source - Not all rows are imported after clicking Save button.
 - Export to Clipboard - Exported character data is quoted by double quote when pasted to Numbers on Mac.
-- Summary View - Bars in specific factor tiles are not sorted by the factor level, but by the frequency.
+- Summary View - Bars for Factor columns are not sorted appropriately by the factor level when there are more than 300 levels.
 - Time Series Forecasting - Specifying Strength of Holiday Effect results in an error.
 
 ## v 3.4
