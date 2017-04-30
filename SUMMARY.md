@@ -27,6 +27,7 @@
       * [Neo4j](import/neo4j.md)
       * [ODBC](import/odbc.md)
    * [Remote Data]()
+      * [Create Connection](import/oauth_connection.md)
       * [Github Issues](import/github.md)
       * [Web Page Scraping](import/web-scraping.md)
       * [Google Analytics](import/google-analytics.md)

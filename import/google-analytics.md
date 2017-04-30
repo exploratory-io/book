@@ -1,32 +1,27 @@
 # Google Analytics Data
 
-## 1. Select 'Import Remote Data' from Add New Data Frame menu.
+## 1. Select Google Analytics Data Menu
+- Select 'Import Cloud Apps Data' from Add New Data Frame menu.
 
-![](images/import-remote-data.png)
+![](images/import-cloudapps.png)
 
 Click Google Analytics
 
-![](images/google-analytics-setting1.png)
+![](images/google-analytics-select.png)
 
 ## 2. OAuth Setting
 
-Select an account you want to use for your Google Analytics data and click 'Allow' button to allow Exploratory to extract your Google Analytics data based on the parameters you are going to set up in the next step.
-
-![](images/google-analytics-oauth.png)
-
+Create a connection following [this instruction](oauth-connection.html).
 
 ## 3. Set Parameters
 
 - Type a data frame name.
 - Select View ID from the dropdown menu.
-- Set Last N days
+- Set Last N days. The default is set to 30, which means it will extract the last 30 days. You can update this based on your needs.
 - Select Dimensions and Metrics from the dropdown menu.
-
+- Set Paginate Query if the result is 10000 rows (max for one api access) and want to get more data.
 
 ![](images/google-analytics-setting.png)
-
-
-The default is set to 30, which means it will extract the last 30 days. You can update this based on your needs.
 
 ## 4. Preview and Import
 

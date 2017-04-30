@@ -8,15 +8,15 @@ Create a connection following [this instruction](connection.html).
 
 ## 2. Open MySQL Import dialog
 
-Select 'Import Remote Data' from Add New Data Frame menu.
+Select 'Import Database Data' from Add New Data Frame menu.
 
-![](images/import-remote-data.png)
+![](images/import-db.png)
 
 Click MySQL.
 
 ![](images/mysql.png)
 
-## 3. Choose connection
+## 3. Import
 
 1. Put data frame name.
 
@@ -24,28 +24,28 @@ Click MySQL.
 
 3. Write a query in the input field.
 
-4. Click "Get Data" button. Then you will see the preview of the data.
+4. Click "Preview" button. Then you will see the preview of the data.
 
-5. Click "Save" button to import.
+5. Click "Import" button.
 
-![](images/mysql-connection.png)
+![](images/mysql-import.png)
 
 
 ## 4. Using Variables in SQL
 
-First, define a variable in R script file.
+First, create a custom R script.
+
+![](images/add_script.png)
+
+Second, define a variable in the R script and save.
+
+![](images/set_variables.png)
 
 ```
 cutoff_date <- "\'2016-01-15\'"
 ```
 
 Note that the ‘\’ (backslash) symbols are used to escape the single quotes, which are required to be used for characters in SQL queries.
-
-Second, load the R script file.
-
-![](images/variable-1.png)
-
-![](images/variable-2.png)
 
 Finally, you can use @{} to surround a variable name inside the query like below.
 
