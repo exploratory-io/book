@@ -10,6 +10,7 @@ Released on 4/29/2017
 - Excel Data Source - Not all rows are imported after clicking Save button.
 - Export to Clipboard - Exported character data is quoted by double quote when pasted to Numbers on Mac.
 - Summary View - Bars in specific factor tiles are not sorted by the factor level, but by the frequency.
+- Time Series Forecasting - Specifying Strength of Holiday Effect results in an error.
 
 ## v 3.4
 
