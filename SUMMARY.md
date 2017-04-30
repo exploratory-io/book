@@ -92,7 +92,7 @@
    * [Save as Exploratory Data]()
    * [Share/Schedule]()
 * [Statistics]()
-   * [Correlation](stats/cor.md)
+   * [Correlation](stats/correlation.md)
    * [Distance](stats/dist.md)
    * [Cosine Similarity](stats/sim.md)
    * [SVD](stats/svd.md)

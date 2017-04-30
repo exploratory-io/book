@@ -25,3 +25,7 @@ You can assign your preferred color to Bar, Line, and Area charts.
 
 1. Click the gear icon next to 'Color' label text and select 'Custom' from Color Palette dropdown menu.
 2. Type your preferred color in hex-code and use comma to separate the values.
+
+Take a look at this post for more details.
+
+* [Custom Color Palettes and Color Picker](https://blog.exploratory.io/exploratory-v3-2-released-da940b794043)

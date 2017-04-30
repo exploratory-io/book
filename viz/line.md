@@ -1,5 +1,7 @@
 # Line Chart
 
+![](images/line.png)
+
 ## Column Assignments
 
 * X-Axis - Assign a column you want to show at X-Axis. If it's a Date / Time column assigned, you can select the aggregation level such as Month, Week, Day, etc.
@@ -17,9 +19,9 @@ You can select from one of the following marker types. The default is 'Line'.
 * Circle
 * Bar
 
-![](images/marker.md)
+![](images/marker.png)
 
 ## Range
 
-<take stuff from here> 
+<take stuff from here>
 https://blog.exploratory.io/exploratory-v3-1-released-62e7a2974d4b
