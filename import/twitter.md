@@ -1,6 +1,8 @@
 # Import Twitter Search API data
 
-You can query and extract Twitter's tweet data. It uses [Twitter's Search API](https://dev.twitter.com/rest/public/search) through twitteR package internally.
+You can query and extract Twitter's tweet data.
+
+* [Quick Video: How to Query and Extract Twitter Data](https://exploratory.io/tutorial#querying-extracting-twitter-data)
 
 # Input parameters
 
@@ -14,4 +16,4 @@ You can query and extract Twitter's tweet data. It uses [Twitter's Search API](h
 You can find the search query syntax from [Twitter's Search API page](https://dev.twitter.com/rest/public/search).
 
 
-Note that due to the Twitter Search API’s restriction, the data is supposed to be only for 7 days period, even though it returns 10 days of the data in most cases.
+Note that due to the Twitter Search API’s restriction, the data is supposed to be only for 7 days period, though it returns 10 days of the data in most cases.
