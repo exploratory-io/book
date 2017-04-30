@@ -1,5 +1,8 @@
 # Analyzing text data (Text Mining)
 
+* [Introduction to Text Analytics in Exploratory](https://blog.exploratory.io/introduction-to-text-analytics-in-exploratory-b82e709c8ffd)
+
+
 Here is a 5 parts series of "How you can analyze text data utilizing the techniques / algorithms like TF-IDF, Cosine Similarity, Clustering, Dimensionality Reduction with Exploratory."
 
 * [Demystifying Text Analytics part1 — Preparing Document and Term Data for Text Mining in R](https://blog.exploratory.io/demystifying-text-analytics-preparing-document-and-term-data-for-text-mining-in-r-4f858feb4b77#.ie4u81lpb)

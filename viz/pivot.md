@@ -5,3 +5,8 @@ Pivot Table makes it super easy to not only summarize (aggregate) data but also 
 We have written a blog post that walk you through what you can do with Pivot Table and how.
 
 * [Introducing Pivot Table](https://blog.exploratory.io/introducing-pivot-table-1c9c949fd2d6#.vxc6ndj8u)
+
+
+## % (Percent) of Total
+
+https://blog.exploratory.io/exploratory-v3-0-released-ace2a16e7d91

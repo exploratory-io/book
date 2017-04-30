@@ -1,5 +1,17 @@
 # Release Note
 
+## v 3.4.1
+
+Released on 4/29/2017
+
+### Bug Fixes
+
+- Chart - Character becoming as Date automatically for Boxplot X-Axis
+- Excel Data Source - Not all rows are imported after clicking Save button.
+- Export to Clipboard - Exported character data is quoted by double quote when pasted to Numbers on Mac.
+- Summary View - Bars in specific factor tiles are not sorted by the factor level, but by the frequency.
+- Time Series Forecasting - Specifying Strength of Holiday Effect results in an error.
+
 ## v 3.4
 
 Released on 4/27/2017
@@ -11,18 +23,29 @@ Released on 4/27/2017
 
 ### Enhancements
 
+- Improved stability of the database connections by checking validity of the connection.
 - Introduced Export and Publish buttons at the top level. You can export data or save charts from Export button. And you can publish your data or charts to share or schedule.
 - Moved 'Reload' button to the top, next to the data frame name, and renamed it to 'Re-import'. It's also showing the last imported time.
-- MongoDB - Uptaken 'mongolite' 1.2.
+- MongoDB - Upgraded the underlying library of 'mongolite' to 1.2 for a better performance.
 - MongoDB - Introduced a connection pool. This will make your query performance a bit faster since it won't need to create a connection every time you run the query while you are in the MongoDB data import dialog.
 - MongoDB - Introduced 'Big Integer as Character' option to bring the data values as character instead of as double.
-- MailChimp -
-- Stripe -
+- MailChimp - Added "Date Range" options to get last N days/weeks/months/years
+- MailChimp - Added “Members” and “Subscriber Activities” for "Data Type"
+- Stripe - Added "Date Range" options to get last N days/weeks/months/years
 - Chart - Introduced 'Layout' button which will open the layout configuration dialog. This used to be accessed from 'More' button.
+- Chart: Table Viz - URL link support in Table
+- Chart: Map now remembers zoom level and location on each move/zoom action
+- Chart: "more" tab: now even if there are many vizs, tabs do not wrap to next line.
+- Model: XGBoost: Added 'na.action' parameter for model training.
+- Model: XGBoost: Added sparse model support. Sparse model is used when it’s indicated by a parameter or when there are categorical variables.
+- Project Search - Added the chart names and data source names to the search index.
 
 
 ### Bug Fixes
 
+- MongoDB - Typing 'null' was ignored or showing error sometimes.
+- Twitter: non-ASCII characters in Search was not returning appropriate results.
+- PostgreSQL / Redshift - Database connections were not accessible due to the connection pool timeout.
 
 
 ## v 3.3.0.2

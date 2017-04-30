@@ -1,6 +1,15 @@
 # Data Import
 
-## Local file import
+1. Import Data
+
+2. Update Data Import Setting
+
+3. Re-Import (Re-load) Data
+
+
+
+
+## File import
 
 * CSV - Comma Separated Files
 * TSV - Tab Separated Files
@@ -14,7 +23,7 @@
 
 * Amazon Redshift
 * PostgreSQL
-* HP Vertica 
+* HP Vertica
 * MySQL
 * MariaDB
 * Google BigQuery
