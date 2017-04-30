@@ -4,18 +4,27 @@
 
 It detects anomaly in time series data frame. It employs an algorithm referred to as Seasonal Hybrid ESD (S-H-ESD), which can detect both global as well as local anomalies in the time series data by taking seasonality and trend into account. It’s built by a team at Twitter for their use on monitoring their traffics
 
-### Underlying R Package
+## Step-by-Step Tutorial with Access Log data.
 
-* [AnomalyDetection](https://github.com/twitter/AnomalyDetection)
+* [
+Introduction to Anomaly Detection in R with Exploratory](https://blog.exploratory.io/introduction-to-anomaly-detection-in-r-with-exploratory-a0507d40385d)
 
 
-## How to use? 
 
-### How to Access
+## How to Access?
 
 ![](images/anomaly1.png)
 
+## How to Configure?
+
+![](images/anomaly2.png)
+
 ### Column Selection
+
+* Date / Time Column - Select a Date or POSIXct data type column that holds date / time information.
+  * Aggregation Level - Select date / time level such as Month, Week, Day, etc. to aggregate the data.
+* Value Column - Select either 'Number of Rows' or a numeric column for which you want to detect anomalies.
+  * Aggregation Function - Select an aggregate function such as 'sum', 'mean', etc. to aggregate the values.
 
 
 ### Parameters
@@ -39,7 +48,19 @@ It detects anomaly in time series data frame. It employs an algorithm referred t
 * longterm (Optional) - The default is FALSE. This should be TRUE if the time span is longer than a month.
 * piecewise_median_period_weeks (Optional) - The default is 2. The size of piecewise median time window (span of seasons). The unit is weeks.
 
-## Step-by-Step Tutorial with Access Log data.
+## How to Read the Result?
 
-* [
-Introduction to Anomaly Detection in R with Exploratory](https://blog.exploratory.io/introduction-to-anomaly-detection-in-r-with-exploratory-a0507d40385d)
+![](images/anomaly3.png)
+
+* Date / Time Column
+* Value Column
+* pos_anomaly - Returns TRUE if anomaly is detected in the positive detection for each row.
+* pos_value - Anomaly values in the positive direction.
+* neg_anomaly - Returns TRUE if anomaly is detected in the negative detection for each row. 
+* neg_value - Anomaly values in the negative direction.
+* expected_value - The values that the model would have expected based on the underlying trend.
+
+
+### Underlying R Package
+
+* [AnomalyDetection](https://github.com/twitter/AnomalyDetection)

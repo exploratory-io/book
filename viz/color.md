@@ -1,14 +1,10 @@
 # Setting Color for Chart
 
-You can assign a column to Color for most of the visualization types. We have written a [blog post](https://blog.exploratory.io/how-to-customize-the-color-palette-and-the-order-in-legend-3d780b567a9b#.tnmbhs2rh) as a reference. 
+You can assign a column to Color for most of the visualization types. We have written a [blog post](https://blog.exploratory.io/how-to-customize-the-color-palette-and-the-order-in-legend-3d780b567a9b#.tnmbhs2rh) as a reference.
 
 ## Stack or Group Bar chart
 
 For Bar chart, you can assign a column with discrete values (text column) to Color and make it a Stack or Group bar chart.
-
-Switch between Stack Bar and Group Bar Charts.
-
-![](images/color-2.png)
 
 ## Multi-Series Line chart
 
