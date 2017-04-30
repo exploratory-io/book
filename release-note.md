@@ -1,5 +1,16 @@
 # Release Note
 
+## v 3.4.1
+
+Released on 4/29/2017
+
+### Bug Fixes
+
+- Chart - Character becoming as Date automatically for Boxplot X-Axis
+- Excel Data Source - Not all rows are imported after clicking Save button.
+- Export to Clipboard - Exported character data is quoted by double quote when pasted to Numbers on Mac.
+- Summary View - Bars in specific factor tiles are not sorted by the factor level, but by the frequency.
+
 ## v 3.4
 
 Released on 4/27/2017
