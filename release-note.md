@@ -1,5 +1,20 @@
 # Release Note
 
+## v 3.4.2
+
+Released on 5/7/2017
+
+### New Features
+
+
+
+### Enhancements
+
+Show ‘%’ on value text such as axis tick label, balloon text, and value text on plot area if chart is based on percentage. It fixes #5718.
+
+### Bug Fixes
+
+
 ## v 3.4.1
 
 Released on 4/29/2017

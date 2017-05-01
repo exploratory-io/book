@@ -20,6 +20,10 @@ If you are on Monthly plan, then you will be charged with the new price from the
 
 You can cancel the plan anytime from your account page with just a click of a button. If you have subscribed Yearly subscription plan, then we will refund you for the amount of the remaining months.
 
+## I'm currently a student at my school, but I have mistakenly started a trial for non Community plan. How can I fix?
+
+You can cancel the plan first, then click ‘Upgrade’ button at your account page. You will see ‘Community’ option available this time, and you can select it and fill the forms to apply for Community plan. 
+
 ## How can I share my insights with others privately?
 
 You can invite others to view your insights (Data, Chart, or Note) privately by email addresses. They will receive an invitation email, and they can click the link to open your insights at Exploratory Cloud. If they don’t have the accounts created yet, they will be asked to create free accounts before opening your insights. They don’t need to subscribe any plan as long as they just want to view the shared insights. If they like to use Exploratory Desktop to customize the insights or create new ones, then they will need to subscribe one of the plans at this point.
