@@ -10,7 +10,7 @@ Click '+' button next to 'Data Frames' and select 'Import File Data'.
 
 If you import R File (RDATA, RDS) File on your desktop or laptop, make sure Local tab is selected. If you import a file from remote server like Amazon S3, Dropbox, etc make sure Remote tab is selected. Click 'R File (RDATA, RDS)'
 
-![](images/csv-select.png)
+![](images/rfile-select.png)
 
 ## 2. Select File.
 If you select local, file picker shows up so select a file to import.
@@ -19,9 +19,9 @@ If you select local, file picker shows up so select a file to import.
 ![](images/local-file-picker-rfile.png)
 
 ### 2.2 Remote File
-if you select remote, small dialog shows up so enter a URL for the file.
+if you select remote, small dialog shows up so enter a URL for the file. And select File Type, either RData for Single R Data(RDS), from pulldown list. 
 
-![](images/import-remote-csv-url.png)
+![](images/import-remote-rfile-url.png)
 
 
 ## 3. Input parameters
