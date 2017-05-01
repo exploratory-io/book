@@ -17,9 +17,17 @@ Click HP Vertica to select.
 ![](images/hp-vertica-dialog.png)
 
 
-## 3. Preview and Import
+## 3. Import
 
-Click "Preview" button to see the data back from your HP Vertica db.
+1. Put data frame name.
+
+2. Select connection from left dialog box.
+
+3. Write a query in the input field.
+
+4. Click "Preview" button. Then you will see the preview of the data.
+
+5. Click "Import" button.
 
 ![](images/hp-vertica-preview.png)
 
