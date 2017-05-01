@@ -8,7 +8,7 @@ Click '+' button next to 'Data Frames' and select 'Import File Data'.
 
 ![](images/import-file-data.png)
 
-If you import Stats (SAS / SPSS / STAT) File on your desktop or laptop, make sure Local tab is selected. If you import a file from remote server like Amazon S3, Dropbox, etc make sure Remote tab is selected. Click 'Text File (CSV, delimited)'
+If you import Stats (SAS / SPSS / STAT) File on your desktop or laptop, make sure Local tab is selected. If you import a file from remote server like Amazon S3, Dropbox, etc make sure Remote tab is selected. Click 'Stats File (SPSS, SAS, STATA)'
 
 ![](images/stats-select.png)
 
@@ -33,4 +33,4 @@ There is no parameter on the import dialog.
 
 ## 4. Preview and Import
 
-Click Preview button to see the data in Stats (SAS / SPSS / STAT) File. You can limit number of rows for the preview by selecting number from pulldown list on the preview table. If it looks ok, then you can click 'Import' to import the whole Stats (SAS / SPSS / STAT) data into Exploratory.
+Click Preview button to see the data in Stats (SAS / SPSS / STAT) File. If it looks ok, then you can click 'Import' to import the whole Stats (SAS / SPSS / STAT) data into Exploratory.

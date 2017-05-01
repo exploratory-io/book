@@ -8,7 +8,7 @@ Click '+' button next to 'Data Frames' and select 'Import File Data'.
 
 ![](images/import-file-data.png)
 
-If you import Log File on your desktop or laptop, make sure Local tab is selected. If you import a file from remote server like Amazon S3, Dropbox, etc make sure Remote tab is selected. Click 'Text File (CSV, delimited)'
+If you import Log File on your desktop or laptop, make sure Local tab is selected. If you import a file from remote server like Amazon S3, Dropbox, etc make sure Remote tab is selected. Click 'Log File'
 
 ![](images/log-select.png)
 
