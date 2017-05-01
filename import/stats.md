@@ -31,6 +31,10 @@ There is no parameter on the import dialog.
 ![](images/import-stats-dialog.png)
 
 
-## 4. Preview and Import
+## 4. Column Selection
+
+On top of input parameters, you can also use checkboxes on the preview table to include/exclude columns. if you uncheck the checkboxes on the columns, these columns are excluded when you save the data. 
+
+## 5. Preview and Import
 
 Click Preview button to see the data in Stats (SAS / SPSS / STAT) File. If it looks ok, then you can click 'Import' to import the whole Stats (SAS / SPSS / STAT) data into Exploratory.
