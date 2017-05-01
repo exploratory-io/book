@@ -29,7 +29,7 @@ Click HP Vertica to select.
 
 5. Click "Import" button.
 
-![](images/hp-vertica-preview.png)
+![](images/import-hp-vertica-dialog.png)
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
 
