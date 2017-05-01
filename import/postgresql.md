@@ -21,7 +21,7 @@ Click PostgreSQL to select.
 
 Click Preview button to see the data back from your PostgreSQL db.
 
-![](images/postgres3.png)
+![](images/import-postgres-dialog.png)
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
 
