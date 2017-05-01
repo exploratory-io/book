@@ -28,6 +28,8 @@ Click MongoDB to select.
 
 You can use Input Parameters to fine tune your query result.
 
+See [An Introduction to MongoDB Query for Beginners](https://blog.exploratory.io/an-introduction-to-mongodb-query-for-beginners-bd463319aa4c) for each Input Parameter details.
+
 #### 3.1.1 Input Parameters
 
 * Query - You can set the filtering condition.
@@ -39,9 +41,8 @@ You can use Input Parameters to fine tune your query result.
 
 ![](images/import-mongo-agg-dialog.png)
 
-The aggregation pipeline has an internal optimization phase that provides improved performance for certain sequences of operators. For details, see (Aggregation Pipeline Optimization)[https://docs.mongodb.com/manual/core/aggregation-pipeline-optimization/]
+The aggregation pipeline has an internal optimization phase that provides improved performance for certain sequences of operators. For details, see [Aggregation Pipeline Optimization](https://docs.mongodb.com/manual/core/aggregation-pipeline-optimization/)
 
-See [An Introduction to MongoDB Query for Beginners](https://blog.exploratory.io/an-introduction-to-mongodb-query-for-beginners-bd463319aa4c) for each Input Parameter details.
 
 ## 4. Import
 
