@@ -2,7 +2,23 @@
 
 You can get your MailChimp related data quickly.
 
-# Input parameters
+## 1. Select Stripe Data Menu
+
+- Select 'Import Cloud Apps Data' from Add Data Frames dropdown
+
+![](images/import-cloudapps.png)
+
+- Click 'MailChimp'
+
+![](images/mailchimp-select.png)
+
+## 2. OAuth Setting
+
+Create a connection following [this instruction](https://blog.exploratory.io/how-to-setup-oauth-cloud-apps-connections-in-exploratory-a5c20d18e7c7).
+
+## 3. Input parameters
+
+Set these parameters.
 
 * Data Type - Select a type of MailChimp data set.
   * Members - Get members and all of their associated details.
@@ -21,3 +37,9 @@ You can get your MailChimp related data quickly.
   * Template Folders - Get all folders used to organize templates.
 * Date Range - Select a type of date filtering. If you choose 'After This Date', you can indicate explicit date like '2015-11-03' in 'Value for Date Range'. If you choose 'Last N ~', you can indicate a positive integer in 'Value for Date Range' and data is filtered by the number with the time unit in the option.
 * Value for Date Range - If this is empty, all data is imported. If 'Date Range' is 'After This Date', this should be explicit date like '2015-11-03'. If 'Date Range' is 'Last N ~', this should be a positive integer.
+
+
+
+## 4. Preview and Import
+
+Click Preview button to see the data back from MailChimp. If it looks ok, then you can click 'Import' to import the data into Exploratory.

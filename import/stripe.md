@@ -2,7 +2,23 @@
 
 You can get your payment data from Stripe quickly. Take a look at this [blog post](https://blog.exploratory.io/importing-stripe-payment-data-visualize-and-schedule-with-exploratory-3b1422a9cf8b) for the details.
 
-# Input parameters
+## 1. Select Stripe Data Menu
+
+- Select 'Import Cloud Apps Data' from Add Data Frames dropdown
+
+![](images/import-cloudapps.png)
+
+- Click 'Stripe'
+
+![](images/stripe-select.png)
+
+## 2. OAuth Setting
+
+Create a connection following [this instruction](https://blog.exploratory.io/how-to-setup-oauth-cloud-apps-connections-in-exploratory-a5c20d18e7c7).
+
+# 3. Input parameters
+
+Set these parameters.
 
 * Data Type - Select a type of Stripe data set.
   * Balance History - Returns a list of transactions that have contributed to the Stripe account balance (e.g., charges, transfers, and so forth).
@@ -17,3 +33,8 @@ You can get your payment data from Stripe quickly. Take a look at this [blog pos
   * Subscriptions - Returns a list of subscriptions that have not been canceled. Subscriptions allow you to charge a customer's card on a recurring basis. A subscription ties a customer to a particular plan you've created.
 * Date Range - Select a type of date filtering. If you choose 'After This Date', you can indicate explicit date like '2015-11-03' in 'Value for Date Range'. If you choose 'Last N ~', you can indicate a positive integer in 'Value for Date Range' and the data is filtered by the number with the time unit in the option.
 * Value for Date Range - If this is empty, all data is imported. If 'Date Range' is 'After This Date', this should be explicit date like '2015-11-03'. If 'Date Range' is 'Last N ~', this should be a positive integer.
+
+
+## 4. Preview and Import
+
+Click Preview button to see the data back from Stripe. If it looks ok, then you can click 'Import' to import the data into Exploratory.
