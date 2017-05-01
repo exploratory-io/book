@@ -14,23 +14,29 @@ Click '+' button next to 'Data Frames' and select 'Import Database Data'.
 
 Click MongoDB to select.
 
-![](images/mongo8.png)
+![](images/select-mongo.png)
 
-## 3. Preview the data
+## 3. Preview Data
+
+![](images/import-mongo-dialog.png)
+
 
 1. Put the data frame name at 'Name'.
 2. Select connection from left dialog box.
-3. Select collection from left dialog box. Then you will see the preview of the data.
-4. Modify 'Query', 'Fields', 'Sort', 'Limit', 'Skip' and 'Flatten' to customize your query. Click "Get Data" button to update the preview of the data.
+3. Select collection from left dialog box. Then you will see the preview of the data. 
 
-![](images/mongo7.png)
+You can use Input Parameters to fine tune your query result.
+
+### 3.1 Input Parameters
+
+* Query - You can set the filtering condition.
+* Fields - You can select the columns (or fields) by either keeping them or excluding them explicitly.
+* Sort - You can use this to set the sorting rules.
+* Limit - 100 by default, which means it will query only the first 100 rows (documents) of the data. You can change this to other values and eventually you want to set it to ‘All’ once you finalize your queries and are ready for importing the data into Exploratory.
+
+See [An Introduction to MongoDB Query for Beginners](https://blog.exploratory.io/an-introduction-to-mongodb-query-for-beginners-bd463319aa4c) for each Input Parameter details.
 
 ## 4. Import
 
-You can choose which columns to import by checking the checkboxes in the header of the preview data table.
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
-
-You will see the data showing up in Summary view!
-
-![](images/mongo11.png)
