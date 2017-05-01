@@ -12,7 +12,7 @@
 
 ## 2. OAuth Setting
 
-Create a connection following [this instruction](oauth-connection.html).
+Create a connection following [this instruction](https://blog.exploratory.io/how-to-setup-oauth-cloud-apps-connections-in-exploratory-a5c20d18e7c7).
 
 ## 3. Set Parameters
 

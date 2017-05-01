@@ -10,7 +10,7 @@ Create a connection following [this instruction](connection.html).
 
 Select 'Import Database Data' from Add New Data Frame menu.
 
-![](images/import-database.png)
+![](images/import-db.png)
 
 Click HP Vertica to select.
 
