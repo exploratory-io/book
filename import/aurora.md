@@ -14,7 +14,7 @@ Create a connection following [this instruction](connection.html).
 
 ## 3. Open Aurora Import dialog
 
-Select 'Import Database Data' from Add New Data Frame menu.
+Click '+' button next to 'Data Frames' and select 'Import Database Data'.
 
 ![](images/import-db.png)
 
