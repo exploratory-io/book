@@ -34,7 +34,7 @@ Click Amazon Aurora.
 
 5. Click "Save" button to import.
 
-![](images/aurora-connection.png)
+![](images/aurora-import.png)
 
 ## 5. Using Variables in SQL
 
