@@ -11,7 +11,7 @@ Click Google Analytics
 
 ## 2. OAuth Setting
 
-Create a connection following [this instruction](oauth-connection.html).
+Create a connection following [this instruction](https://blog.exploratory.io/how-to-setup-oauth-cloud-apps-connections-in-exploratory-a5c20d18e7c7).
 
 ## 3. Set Parameters
 
@@ -19,7 +19,7 @@ Create a connection following [this instruction](oauth-connection.html).
 - Select View ID from the dropdown menu.
 - Set Last N days. The default is set to 30, which means it will extract the last 30 days. You can update this based on your needs.
 - Select Dimensions and Metrics from the dropdown menu.
-- Set Paginate Query if the result is 10000 rows (max for one api access) and want to get more data.
+- Set Paginate Query to Yes if the result is 10000 rows (max for one api access) and want to get more data.
 
 ![](images/google-analytics-setting.png)
 

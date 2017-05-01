@@ -30,7 +30,7 @@ Click Amazon Aurora.
 
 3. Write a query in the input field.
 
-4. Click "Get Data" button. Then you will see the preview of the data.
+4. Click "Preview" button. Then you will see the preview of the data.
 
 5. Click "Save" button to import.
 
