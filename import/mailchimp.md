@@ -2,7 +2,7 @@
 
 You can get your MailChimp related data quickly.
 
-## 1. Select Stripe Data Menu
+## 1. Select MailChimp Data Menu
 
 - Select 'Import Cloud Apps Data' from Add Data Frames dropdown
 
