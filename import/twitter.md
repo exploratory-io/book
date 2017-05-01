@@ -7,11 +7,11 @@ You can query and extract Twitter's tweet data.
 
 ## 1. Select Twitter Search Data Menu
 
-- Select 'Import Cloud Apps Data' from Add Data Frames dropdown
+Click '+' button next to 'Data Frames' and select 'Import Cloud Apps Data'.
 
 ![](images/import-cloudapps.png)
 
-- Click 'Twitter Search'
+Click 'Twitter Search'
 
 ![](images/twitter-select.png)
 

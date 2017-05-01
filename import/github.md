@@ -4,7 +4,7 @@ For Basic Authentication, you can simply type your Github username and password.
 
 ### Steps
 
-Select 'Import Cloud Apps Data' from Add New Data Frame menu.
+Click '+' button next to 'Data Frames' and select 'Import Cloud Apps Data'.
 
 ![](images/import-cloudapps.png)
 

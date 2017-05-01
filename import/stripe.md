@@ -4,11 +4,11 @@ You can get your payment data from Stripe quickly. Take a look at this [blog pos
 
 ## 1. Select Stripe Data Menu
 
-- Select 'Import Cloud Apps Data' from Add Data Frames dropdown
+Click '+' button next to 'Data Frames' and select 'Import Cloud Apps Data'.
 
 ![](images/import-cloudapps.png)
 
-- Click 'Stripe'
+Click 'Stripe'
 
 ![](images/stripe-select.png)
 

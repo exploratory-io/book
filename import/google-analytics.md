@@ -1,7 +1,8 @@
 # Google Analytics Data
 
 ## 1. Select Google Analytics Data Menu
-- Select 'Import Cloud Apps Data' from Add New Data Frame menu.
+
+Click '+' button next to 'Data Frames' and select 'Import Cloud Apps Data'.
 
 ![](images/import-cloudapps.png)
 

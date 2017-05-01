@@ -4,11 +4,11 @@ You can get your MailChimp related data quickly.
 
 ## 1. Select MailChimp Data Menu
 
-- Select 'Import Cloud Apps Data' from Add Data Frames dropdown
+Click '+' button next to 'Data Frames' and select 'Import Cloud Apps Data'.
 
 ![](images/import-cloudapps.png)
 
-- Click 'MailChimp'
+Click 'MailChimp'
 
 ![](images/mailchimp-select.png)
 

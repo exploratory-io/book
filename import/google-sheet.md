@@ -2,11 +2,11 @@
 
 ## 1. Select Google Spreadsheet Data Menu
 
-- Select 'Import Cloud Apps Data' from Add Data Frames dropdown
+Click '+' button next to 'Data Frames' and select 'Import Cloud Apps Data'.
 
 ![](images/import-cloudapps.png)
 
-- Click 'Google Sheets'
+Click 'Google Sheets'
 
 ![](images/select-google-sheet.png)
 
