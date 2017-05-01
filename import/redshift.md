@@ -23,7 +23,7 @@ Click Redshift to select.
 
 Click Preview button to see the data back from your Redshift db.
 
-![](images/redshift3.png)
+![](images/import-redshift-dialog.png)
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
 
@@ -71,3 +71,7 @@ Here's a [blog post](https://blog.exploratory.io/using-variables-in-sql-query-27
 ![](images/redshift4.png)
 
 If you encounter a database connection error, please go to AWS console and make sure you added your client PC's IP address to your Security Group (both Inbound and Outbound) associated with the Redshift cluster.
+
+## 7. Exploratory Data Analysis for Amazon Redshift with R & dplyr
+
+Here is the link to the blog post [Exploratory Data Analysis for Amazon Redshift with R & dplyr](https://blog.exploratory.io/exploratory-data-analysis-for-amazon-redshift-with-r-dplyr-9a14441020eb)
