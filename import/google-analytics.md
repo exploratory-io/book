@@ -1,18 +1,48 @@
 # Google Analytics Data
 
-## 1. Select 'Import Remote Data' from Add New Data Frame menu.
+## 1. Select 'Import Cloud Apps Data' from Add New Data Frame menu.
 
-![](images/import-remote-data.png)
+![](images/import-cloud-apps-data.png)
 
 Click Google Analytics
 
 ![](images/google-analytics-setting1.png)
 
-## 2. OAuth Setting
+## 2. OAuth for Google Analytics
 
-Select an account you want to use for your Google Analytics data and click 'Allow' button to allow Exploratory to extract your Google Analytics data based on the parameters you are going to set up in the next step.
+If this is your first time to create a Google Analytics Data Source, you want to create a new connection for Google Analytics. Click "create" link on Import Dialog.
 
-![](images/google-analytics-oauth.png)
+![](images/google-analytics-import1.png)
+
+This will opens up Connection Dialog.
+
+![](images/connection-dialog.png)
+
+And click "Add" button.
+
+![](images/connection-list.png)
+
+And Select "Google Analytics". Then Click OK on the popup.
+
+![](images/google-analytics-authorize.png)
+
+Select your google account that you want to use.
+
+![](images/google-account-select.png)
+
+And you will see Authorized message.
+
+![](images/authorized-browser.png)
+
+Go back to Exploratory and click "Refresh" button. And you will see small dialog message changes like below.
+
+![](images/google-analytics-connection-created.png)
+
+So click Close. And now View ID is filled automatically. So close Connection list dialog too.
+
+![](images/google-analytics-viewid-filled.png)
+
+And now ready to select parameters.
 
 
 ## 3. Set Parameters
@@ -23,7 +53,7 @@ Select an account you want to use for your Google Analytics data and click 'Allo
 - Select Dimensions and Metrics from the dropdown menu.
 
 
-![](images/google-analytics-setting.png)
+![](images/google-analytics-params.png)
 
 
 The default is set to 30, which means it will extract the last 30 days. You can update this based on your needs.
