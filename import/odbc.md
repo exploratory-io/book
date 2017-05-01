@@ -11,21 +11,15 @@ First, set up ODBC DSN for the database you want to connect Exploratory to. Foll
 * [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-windows/341) (from Exploratory for Windows)
 * [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-mac/339) (from Exploratory for Mac)
 
-## 2. Register the ODBC DSN Connection to Exploratory
+## 2. Create a Connection to use
 
-Create a connection for ODBC DSN.
-
-![](images/connection.png)
-
-After filling the ODBC DSN information, click ‘Test Connection’ button to make sure the information is correct, before you save it.
-
-![](images/odbc_connection.png)
+Create a connection following [this instruction](connection.html).
 
 ## 3. Open ODBC Import dialog
 
-Select 'Import Database Data' from Add New Data Frame menu.
+Click '+' button next to 'Data Frames' and select 'Import Database Data'.
 
-![](images/import-database.png)
+![](images/import-db.png)
 
 Click ODBC to select.
 

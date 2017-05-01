@@ -1,4 +1,4 @@
-# Connection
+# Database Connection
 
 You can register database connection configuration.
 
@@ -6,11 +6,15 @@ You can register database connection configuration.
 
 Open your configuration dropdown and click "Connection" there.
 
-![](images/connection-open1.png)
+![](images/project_dropdown.png)
 
 Click "Add" to create a new connection or "Edit" to modify existing connection.
 
 ![](images/connection-edit.png)
+
+Choose the type of data source.
+
+![](images/connection-choose.png)
 
 ## 2. Set parameters
 
@@ -35,4 +39,4 @@ You will see the connection from the dialog.
 
 You can choose those registered connection from Remote Data Frame Import dialog.
 
-![](images/import-remote-data.png)
+![](images/import-db.png)

@@ -30,17 +30,17 @@ To use Google BigQuery with Exploratory Desktop, you need to create a project on
 
 - Enter Dataset id and Click "OK" button
 
-![](images/google-bq-create-dataset-dialog.png) 
+![](images/google-bq-create-dataset-dialog.png)
 
 ## 2. Select Google BigQuery Data Menu
 
-- Select 'Import Remote Data' from Add Data Frames dropdown
+- Select 'Import Database Data' from Add Data Frames dropdown
 
-![](images/import-remote-data-menu.png)
+![](images/import-db.png)
 
 - Click 'Google BigQuery'
 
-![](images/google-big-query-menu.png)
+![](images/import-db-sources.png)
 
 ## 3. Authentication with Google OAuth
 
@@ -64,7 +64,7 @@ Select an account you want to use for your Google BigQuery and click 'Allow' but
 
 ![](images/google-big-query-preview.png)
 
-### 4.2 Save query result as a new table on Google BigQuery 
+### 4.2 Save query result as a new table on Google BigQuery
 
 If your query is against huge table, it’s probably a good idea to create a a new table containing just the data you want to use for further analysis to minimize the cost. To do this, after getting preview data click Save As Table button.
 
@@ -72,9 +72,9 @@ If your query is against huge table, it’s probably a good idea to create a a n
 
 - Select Project from pulldown menu
 - Select Dataset from pulldown menu
-- Type new table name 
+- Type new table name
 - Click Save button
- 
+
 Exploratory Desktop checks list of tables after you saved a table and once check is done, you can see newly created table on the tree
 
 ![](images/google-big-query-tree-refresh-after.png)

@@ -8,7 +8,7 @@ Create a connection following [this instruction](connection.html).
 
 ## 2. Open MongoDB Import dialog
 
-Select 'Import Database Data' from Add New Data Frame menu.
+Click '+' button next to 'Data Frames' and select 'Import Database Data'.
 
 ![](images/import-database-data.png)
 
@@ -27,7 +27,7 @@ Click MongoDB to select.
 
 ## 4. Import
 
-You can choose which columns to import by checking the checkboxes in the header of the preview data table. 
+You can choose which columns to import by checking the checkboxes in the header of the preview data table.
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
 

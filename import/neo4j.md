@@ -2,19 +2,13 @@
 
 You can quickly import data from your Neo4j Database into Exploratory.
 
-## 1. Create a connection for Neo4j database
+## 1. Create a Connection to use
 
-First, you want to create a connection for Neo4j database.
-
-![](images/connection.png)
-
-After filling the database information, click ‘Test Connection’ button to make sure the information is correct, before you save it.
-
-![](images/neo4j-connection-test.png)
+Create a connection following [this instruction](connection.html).
 
 ## 2. Open Neo4j  Import dialog
 
-Select 'Import Database Data' from Add New Data Frame menu.
+Click '+' button next to 'Data Frames' and select 'Import Database Data'.
 
 ![](images/import-database.png)
 
@@ -25,7 +19,7 @@ Click Neo4j to select.
 
 ## 3. Preview and Import
 
-Click "Get Data" button to see the data back from your Neo4j database.
+Click "Preview" button to see the data back from your Neo4j database.
 
 ![](images/neo4j-preview.png)
 

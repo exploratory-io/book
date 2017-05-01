@@ -2,21 +2,17 @@
 
 ## 1. Select Google Spreadsheet Data Menu
 
-- Select 'Import Remote Data' from Add Data Frames dropdown
+Click '+' button next to 'Data Frames' and select 'Import Cloud Apps Data'.
 
-![](images/import-remote-data.png)
+![](images/import-cloudapps.png)
 
-- Click 'Google Sheets'
+Click 'Google Sheets'
 
-![](images/google-sheet3.png)
+![](images/select-google-sheet.png)
 
-## 2. Authentication with Google OAuth
+## 2. OAuth Setting
 
-Select an account you want to use for your Google Spreadsheet and click 'Allow' button to allow Exploratory to extract your Google Spreadsheet data based on the parameters you are going to set up in the next step.
-
-![](images/google-analytics-oauth.png)
-
-![](images/google-spreadsheet.png)
+Create a connection following [this instruction](https://blog.exploratory.io/how-to-setup-oauth-cloud-apps-connections-in-exploratory-a5c20d18e7c7).
 
 ## 3. Set Parameters
 
@@ -24,11 +20,11 @@ Select an account you want to use for your Google Spreadsheet and click 'Allow' 
 
 - Select Google Spreadsheet name from the dropdown menu
 
-- Type Worksheet name or its index number (e.g. 1, 2, etc.)
+- Select Worksheet name from the dropdown menu
 
 - Set parameters for how to read the data.
 
-![](images/google-spreadsheet2.png)
+![](images/import_gs_data.png)
 
 ## 4. Preview and Import
 
