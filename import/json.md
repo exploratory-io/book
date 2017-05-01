@@ -37,7 +37,7 @@ On the left hand side, you an see JSON Tree and you can select red table icon fo
 
 ## 4. Preview and Import
 
-Select red table node on the tree (or Click Get Data button) to see the data in JSON File (or REST API). If it looks ok, then you can click 'Import' to import the whole JSON data into Exploratory.
+Select red table node on the tree (or Click Get Data button) to see the data in JSON File (or REST API). If it looks ok, then you can click 'Import' to import the JSON data into Exploratory.
 
 ## 5. More details about JSON
 
