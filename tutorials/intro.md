@@ -6,7 +6,7 @@ To help you become most productive for working with any data and gaining deep in
 
 # Quick Start Guide
 
-* [Quick Start Guide](https://docs.exploratory.io/tutorials/quick-start.md)
+* [Quick Start Guide](quick-start.html)
 
 # Data Source Type
 
