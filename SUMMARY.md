@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Tutorials (English)](tutorials/intro.md)
+   * [Getting Started Guide](tutorials/quick-start.md)
 * [Tutorials (Japanese)](tutorials/intro_ja.md)   
 * [Data Import](data_import.md)
    * [File Data]()
