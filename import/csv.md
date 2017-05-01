@@ -8,7 +8,7 @@ Click '+' button next to 'Data Frames' and select 'Import File Data'.
 
 ![](images/import-file-data.png)
 
-If you import your local file, make sure Local tab is selected, and then Click 'Text File (CSV, delimited)'
+If you import CSV / Delimited File on your desktop or laptop, make sure Local tab is selected. If you import a file from remote server like Amazon S3, Dropbox, etc make sure Remote tab is selected. Click 'Text File (CSV, delimited)'
 
 ![](images/csv-select.png)
 
