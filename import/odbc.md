@@ -19,11 +19,11 @@ Create a connection following [this instruction](connection.html).
 
 Select 'Import Database Data' from Add New Data Frame menu.
 
-![](images/import-database.png)
+![](images/import-db.png)
 
 Click ODBC to select.
 
-![](images/select_odbAc_datasource.png)
+![](images/select_odbc_datasource.png)
 
 
 ## 4. Preview and Import
