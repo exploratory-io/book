@@ -34,6 +34,10 @@ Set these parameters.
 
 * Number of rows to skip - Number of lines to skip before reading data.
 
-## 4. Preview and Import
+## 4. Column Selection
+
+On top of input parameters, you can also use checkboxes on the preview table to include/exclude columns. if you uncheck the checkboxes on the columns, these columns are excluded when you save the data. 
+
+## 5. Preview and Import
 
 Click Preview button to see the data in Log File. You can limit number of rows for the preview by selecting number from pulldown list on the preview table. If it looks ok, then you can click 'Import' to import Log data into Exploratory.

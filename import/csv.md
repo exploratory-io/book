@@ -44,7 +44,10 @@ If TRUE, the first row of the input will be used as the column names, and will n
 * Comment Character - A string used to identify comments. Any text after the comment characters will be silently ignored.
 * Trim White Space - Should leading and trailing whitespace be trimmed from each field before parsing it?
 
+## 4. Column Selection
 
-## 4. Preview and Import
+On top of input parameters, you can also use checkboxes on the preview table to include/exclude columns. if you uncheck the checkboxes on the columns, these columns are excluded when you save the data. 
+
+## 5. Preview and Import
 
 Click Preview button to see the data in CSV / Delimited File. You can limit number of rows for the preview by selecting number from pulldown list on the preview table. If it looks ok, then you can click 'Import' to import the whole CSV / Delimited data into Exploratory.

@@ -35,7 +35,11 @@ Select node on JSON Tree.
 On the left hand side, you an see JSON Tree and you can select red table icon for importing data.
 
 
-## 4. Preview and Import
+## 4. Column Selection
+
+On top of input parameters, you can also use checkboxes on the preview table to include/exclude columns. if you uncheck the checkboxes on the columns, these columns are excluded when you save the data. 
+
+## 5. Preview and Import
 
 Select red table node on the tree (or Click Get Data button) to see the data in JSON File (or REST API). If it looks ok, then you can click 'Import' to import the JSON data into Exploratory.
 
