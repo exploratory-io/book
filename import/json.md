@@ -2,7 +2,7 @@
 
 You can import both local and remote JSON File Data quickly.
 
-## 1. Select CSV / Delimited File Data Menu
+## 1. Select JSON File Data Menu
 
 Click '+' button next to 'Data Frames' and select 'Import File Data'.
 
@@ -19,7 +19,7 @@ If you select local, file picker shows up so select a file to import.
 ![](images/local-file-picker-json.png)
 
 ### 2.2 Remote File
-if you select remote, small dialog shows up so enter a URL for the file.
+if you select remote, small dialog shows up so enter a URL for the file. Enter either json file URL or REST API endpoint URL that returns JSON as response.
 
 ![](images/import-remote-json-url.png)
 

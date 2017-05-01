@@ -36,7 +36,7 @@ No Input Parameters for RDS
 
 ![](images/import-rda-dialog.png)
 
-Set these parameters.
+Set one parameter.
 
 * Data Frame - Since RDA file can have multiple data frames in it, please select a Data Frame that you want to import 
 
