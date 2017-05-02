@@ -9,7 +9,7 @@ Linear regression model is a statistical model with an assumption that linear re
 There are two ways to access. One is to access from 'Add' (Plus) button.
 
 ![](images/lm_add.png)
-inear regression model is a statistical model with an assumption that linear relationships are there between explanatory variable and predictor variables.
+
 Another way is to access from a column header menu from a numeric column.
 
 ![](images/lm_cols.png)
@@ -39,9 +39,9 @@ You can split the data into training and test to evaluate the performance of the
 
 ### Parameters
 
-* A Vector to Subset Data (Optional) - "subset" parameter of lm function
-* Weight Vector (Optional) - "weights" parameter of lm function
-* How to treat NA? (Optional) - "na.action" parameter of lm function. The default is "na.fail". This changes the behaviour of NA data. Can be one of the following.
+* A Vector to Subset Data (Optional) - "subset" parameter of lm function.
+* Weight Vector (Optional) - "weights" parameter of lm function.
+* How to treat NA? (Optional) - "na.action" parameter of lm. function. The default is "na.fail". This changes the behaviour of NA data. Can be one of the following.
   * "na.omit"
   * "na.fail"
   * "na.exclude"
@@ -54,7 +54,7 @@ You can split the data into training and test to evaluate the performance of the
 * Return Model Matrix X (Optional) - "x" parameter of lm function.
 * Return Model Matrix Y (Optional) - "y" parameter of lm function.
 * Return QR Decomposition (Optional) -  "qr" parameter of lm function. The default is TRUE. If qr should be returned.
-* Allow Singular Fit -  "singular.ok" of lm parameter of lm function.The default is TRUE. Whether only one observation fitting should be accepted.
+* Allow Singular Fit -  "singular.ok" of lm parameter of lm function. The default is TRUE. Whether only one observation fitting should be accepted.
 * Offset (Optional) - "offset" of lm parameter of lm function. Already known components for linear predictors during fitting.
 
 Take a look at the [reference document](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/lm.html) for the 'lm' function from base R for more details on the parameters.
