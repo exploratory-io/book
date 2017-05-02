@@ -1,6 +1,5 @@
 # Contour Chart
 
-![](images/bar.png)
 
 
 ## Layout Configuration

@@ -30,15 +30,11 @@ The Percent of Total calculates the ratio of values in each group.
 
 ![](images/winfunc-ptotal-color.png)
 
-
 There are following 2 Direction options available. Default is `Color`.
 
 * Color - Calculate the ratio bewteen color groups. The total percentages on each X value will be 100%.  
-
 * X - Calculate the ratio between X values. The total of each color value will be 100%. For example, in following chart, total percentatge of blue bars is 100%, and the same for other colors. 
 ![](images/winfunc-ptotal-x.png)
-
-
 
 
 ### Difference From 
@@ -47,12 +43,9 @@ The Difference From calculates the difference from the specified position. There
 
 * First - Calculate the difference from the very first value. The first value will be always 0. 
 ![](images/winfunc-difffrom-first.png)
-
 * Last - Calculate the difference from the very last value. The last value will be always 0.
 ![](images/winfunc-difffrom-last.png)
-
 * previous - Calculate the difference from the previous value. 
-
 * Next - Calculate the difference from the next value. 
 
 
@@ -62,18 +55,14 @@ The Percent (%) Difference From calculates the difference ratio from the specifi
 
 * First - Calculate the difference from the very first value. The first value should be always 0. 
 ![](images/winfunc-pdifffrom-first.png)
-
 * Last - Calculate the difference from the very last value. The last value should be always 0.
-
 * previous - Calculate the difference from the previous value. 
-
 * Next - Calculate the difference from the next value. 
 
 
 ### Moving Calculation 
 
 The Moving Calculation calculates values by summarizing the data points in the window (range) around each data point. 
-
 
 ![](images/winfunc-moving-ave.png)
 
