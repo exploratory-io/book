@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Cluster rows based on columns.
+Cluster data by K-means algorithm. It assigns labels to data, so that similar data will be in same labels.
 
 ## How to Access?
 
