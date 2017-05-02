@@ -1,9 +1,8 @@
-# Line Chart
+# Area Chart
 
-![](images/line.png)
+![](images/bar.png)
 
 ## Column Assignments
-
 
 * X-Axis - Assign a column you want to show at X-Axis. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc. If you assign a Number column, you can choose either `As Number` to treat values as continuous values or `As Text` to treat values as categorical values.  
 * Y-Axis - Assign a column you want to show at Y-Axis. If it's a Numeric column assigned, you can set the aggregation function such as `Sum`, `Mean (Average)`, etc. to aggregate the values. You can also assign a Window Calculation from the Y-Axis properties. Look at [Window Calculation](window-calc.md) section for details.  
@@ -14,28 +13,6 @@
 You can assign multiple columns to Y-Axis. Take a look at [Multiple Y-Axis](multi-y.md) section for more details.
 
 
-## Marker Type
-
-You can select one of marker types from the `Marker` menu of Y-Axis properties. Take a look at [Multiple Y-Axis](multi-y.md) section for more details.
-
-
-## Range
-
-If you have upper and lower limit values for the values on Y-Axis such as confidence intervals, you can show them as ranges in the same chart. You can assign them at the `Range` menu of Y-Axis properties.
-
-
-Columns for upper and lower values will be automatically picked and assigned if you have one of following column pairs in the same data frame. 
-
-* `(Y-Axis Column Name)_high` and `(Y-Axis Column Name)_low`
-* `(Y-Axis Column Name).high` and `(Y-Axis Column Name).low`
-* `(Y-Axis Column Name)_upper` and `(Y-Axis Column Name)_lower`
-* `(Y-Axis Column Name).upper` and `(Y-Axis Column Name).lower`
-* `(Y-Axis Column Name)_higher` and `(Y-Axis Column Name)_lower`
-* `(Y-Axis Column Name).higher` and `(Y-Axis Column Name).lower`
-* `conf_high` and `conf_low`
-* `conf.high` and `conf.low`
-
-![](images/range.png)
 
 ## Layout Configuration
 
