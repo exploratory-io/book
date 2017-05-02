@@ -12,6 +12,8 @@ Released on 5/1/2017
 
 - SQL errors on database data sources are not properly shown and following error is displayed. `Error in if (conn) {: argument is not interpretable as logical`
 - Factor values on Summary View overflows.
+- Variable replacement in SQL by `@{<expression>}` is not working.
+- In Time Series Forecasting, meaningless weekly seasonality is returned even when aggregation level is larger than week.
 
 
 ## v 3.4.1
