@@ -61,6 +61,6 @@ Take a look at the [reference document](https://stat.ethz.ch/R-manual/R-devel/li
 
 ## Step-by-step
 
-Here's a step-by-step tutorial guide on how to run correlation algorithm to calculate the correlation among either multiple columns or categories in Exploratory.
+Here's a step-by-step tutorial guide on how you can build, predict and evaluate linear regression model.
 
 * [Introduction to Linear Regression Model in Exploratory](https://blog.exploratory.io/introduction-to-linear-regression-model-in-exploratory-a46e90d62f7d)
