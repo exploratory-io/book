@@ -6,9 +6,38 @@ You can assign a column to Color for most of the visualization types. We have wr
 
 For Bar chart, you can assign a column with discrete values (text column) to Color and make it a Stack or Group bar chart.
 
+
+![](images/bar-stacked.png)
+
+
+The default is Stacked. You can switch it to Grouped bar chart from Bar Style option.
+
+
+![](images/bar-grouped.png)
+
+
+
 ## Multi-Series Line chart
 
 For Line chart, you can assign a column with discrete values (text column) to make it a multiple series line chart.
+
+
+## Grouped Boxplot chart 
+
+For the boxplot chart, you can assign a column with discrete values (text column) to make it grouped boxplot chart.
+
+![](images/boxplot.png)
+
+
+## Scatter chart 
+
+For the boxplot chart, you can assign a column with discrete values (text column) to make it grouped boxplot chart.
+
+![](images/boxplot.png)
+
+
+
+
 
 ## Switch the color palette
 
