@@ -2,17 +2,16 @@
 
 ## v 3.4.2
 
-Released on 5/7/2017
-
-### New Features
-
-
+Released on 5/1/2017
 
 ### Enhancements
 
-Show ‘%’ on value text such as axis tick label, balloon text, and value text on plot area if chart is based on percentage. It fixes #5718.
+- Show ‘%’ on value text such as axis tick label, balloon text, and value text on plot area if chart is based on percentage.
 
 ### Bug Fixes
+
+- SQL errors on database data sources are not properly shown and following error is displayed. `Error in if (conn) {: argument is not interpretable as logical`
+- Factor values on Summary View overflows.
 
 
 ## v 3.4.1
