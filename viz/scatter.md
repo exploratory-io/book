@@ -29,15 +29,14 @@ If you check the `Show on plot` option, the column values directly come up in th
 
 You can assign multiple columns to Y-Axis. Take a look at [Multiple Y-Axis](multi-y.md) section for more details.
 
-## Trend Line and Confidence Interval
+## Trend Line
 
-<take stuff from here>
-https://blog.exploratory.io/exploratory-v3-1-released-62e7a2974d4b
-https://blog.exploratory.io/exploratory-v3-2-released-da940b794043
+Take a look at [Trend Line](trend-line.md) section for more details.
+
 
 ## Range
 
-https://blog.exploratory.io/exploratory-v3-1-released-62e7a2974d4b
+Take a look at [Range](range.md) section for more details.
 
 ## Circle for Color 
 
