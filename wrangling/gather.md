@@ -1,10 +1,23 @@
 # Gather (Unpivot)
 
+Takes multiple columns and collapses into key-value pairs, duplicating all other columns as needed.
+
 ## How to Access This Feature
+
+## From + (plus) Button
+![](images/command-gather-df-menu.png)
 * Click "+" button and select "Gather".
+
+### From Column Menu
+![](images/command-gather-column-menu.png)
+
 * You can also select columns to gather first, and then select "Gather (Unpivot)" from the column menu of one of the selected columns.
 
 ## Gather (Unpivot) Columns into Key/Value Column Pair
+
+![](images/gather.png)
+
+
 1. Select Columns to Gather
   * Select "Include" or "Exclude" depending on whether you are specifying the columns to gather or the columns not to gather.
   * Select the rule for specifying the columns.
