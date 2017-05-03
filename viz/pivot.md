@@ -10,3 +10,8 @@ We have written a blog post that walk you through what you can do with Pivot Tab
 ## % (Percent) of Total
 
 https://blog.exploratory.io/exploratory-v3-0-released-ace2a16e7d91
+
+
+## Layout Configuration
+
+Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
