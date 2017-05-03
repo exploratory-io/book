@@ -1,5 +1,7 @@
 # Impute NA
 
+Impute NA by average / median values, manually entered values, or predicted values. It will build a linear regression model for the prediction.
+
 ## How to Access This Feature
 
 ![](images/command-impute-na-menu.png)
