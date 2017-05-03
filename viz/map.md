@@ -51,3 +51,8 @@ The example below, I’m using ISO standard country codes found in the data and 
 Here's how you can create your own GeoJSON files from existing ESRI Shapefile or other formats using R.
 
 * [Creating GeoJSON out of Shapefile in R](https://blog.exploratory.io/creating-geojson-out-of-shapefile-in-r-40bc0005857d)
+
+
+## Layout Configuration
+
+Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 

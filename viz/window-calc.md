@@ -1,6 +1,6 @@
 # Window (Table) Calculation 
 
-The Window calculation is available on Bar, Line and Area charts. You can set the window calculation from the Y-Axis properties.  
+The Window Calculation is available on Bar, Line and Area charts. You can set the Window Calculation from the Y-Axis properties.  
 
 ![](images/winfunc-toggle.png)
 
@@ -11,11 +11,11 @@ Following 5 Calculation Types are available.
 
 ### Cumulative (Running Total)
 
-The Cumulative calculation calculates the current value based on the  previous values for each group. 
+The "Cumulative" calculation calculates the current value based on the previous values in each group. 
 
 ![](images/winfunc-cum-viz.png)
 
-There are following 5 options available how to summarize values. The default value is `Sum`.
+There are following options available for summarize values. The default value is `Sum`.
 
 * Sum 
 * Mean (Average)
@@ -26,7 +26,7 @@ There are following 5 options available how to summarize values. The default val
 
 ### Percent (%) of Total
 
-The Percent of Total calculates the ratio of values in each group. 
+The "Percent of Total" calculates the ratio of values in each group. 
 
 ![](images/winfunc-ptotal-color.png)
 
@@ -39,7 +39,7 @@ There are following 2 Direction options available. Default is `Color`.
 
 ### Difference From 
 
-The Difference From calculates the difference from the specified position. There are following 4 options where you compare the different from. Default is `First`.
+The "Difference From" calculates the difference from the specified position. There are following 4 options where you compare the different from. Default is `First`.
 
 * First - Calculate the difference from the very first value. The first value will be always 0. 
 ![](images/winfunc-difffrom-first.png)
@@ -51,7 +51,7 @@ The Difference From calculates the difference from the specified position. There
 
 ### Percent (%) Difference From 
 
-The Percent (%) Difference From calculates the difference ratio from the specified position. There are following 4 options where you compare the different from. Default is `First`.
+The "Percent (%) Difference From" calculates the difference ratio from the specified position. There are following 4 options where you compare the different from. Default is `First`.
 
 * First - Calculate the difference from the very first value. The first value should be always 0. 
 ![](images/winfunc-pdifffrom-first.png)
@@ -62,7 +62,7 @@ The Percent (%) Difference From calculates the difference ratio from the specifi
 
 ### Moving Calculation 
 
-The Moving Calculation calculates values by summarizing the data points in the window (range) around each data point. 
+The "Moving Calculation" calculates values by summarizing the data points in the window (range) around each data point. 
 
 ![](images/winfunc-moving-ave.png)
 
