@@ -1,10 +1,10 @@
-# Spread (Pivot)
+# Spread
 
 ## How to Access This Feature
-* Click "+" button and select "Spread (Pivot)".
-* You can also select two columns for key/value first, and then select "Spread (Pivot)" from the column menu of one of the selected columns.
+* Click "+" button and select "Spread".
+* You can also select two columns for key/value first, and then select "Spread" from the column menu of one of the selected columns.
 
-## Spread (Pivot) a Key/Value Column Pair across Multiple Columns
+## Spread a Key/Value Column Pair across Multiple Columns
 1. Select Columns to Spread
   * Select Key/Value Columns from "Key Column"/"Value Column" dropdown.
 2. Specify parameters in the "Parameters" section.
