@@ -46,5 +46,7 @@ Following is the list of output columns.
 Here is an example of line chart created from the output data. As time goes by, the probability of survival goes down getting closer to 0.
 ![](images/survival_curve_viz.png)
 
+Here is another example with group_by applied to the input data. By applying group_by on "country" column, survival curve for each country is drawn here.
+![](images/survival_curve_group_viz.png)
 ## Reference
-https://blog.exploratory.io/introduction-to-survival-analysis-part-1-survival-curve-9364ea642114
+[Introduction to Survival Analysis Part 1— Survival Curve](https://blog.exploratory.io/introduction-to-survival-analysis-part-1-survival-curve-9364ea642114)
