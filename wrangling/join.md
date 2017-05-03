@@ -1,6 +1,17 @@
 # Join Data
 
+## How to Access This Feature
+
+### From + (plus) Button
+![](images/command-join-df-menu.png)
+
+### From Column Menu
+
+![](images/command-join-column-menu.png)
+
 ## Join to Add Columns
+
+![](images/join.png)
 
 * Left Join
 * Right Join
