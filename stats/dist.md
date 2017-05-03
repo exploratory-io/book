@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Calculate distances of each of the pairs of the variables or subjects. This can be used to find similarities too. The closer the distance, the more similar they are.
+Calculate distances of each of the pairs of the variables or categories. This can be used to find similarities too. The closer the distance, the more similar they are.
 
 ## How to Access?
 
