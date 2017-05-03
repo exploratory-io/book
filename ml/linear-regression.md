@@ -59,6 +59,36 @@ You can split the data into training and test to evaluate the performance of the
 
 Take a look at the [reference document](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/lm.html) for the 'lm' function from base R for more details on the parameters.
 
+## How to Read Summary
+
+![](images/lm_summary.png)
+
+Once you run it, you will see summary info like this.
+
+### Summary of Fit
+
+* R Square - The percent of variance explained by the model.
+* R Square Adj - R Square adjusted based on the degrees of freedom.
+* Root Mean Square Error - The square root of the estimated residual variance.
+* F Ratio - F-statistic.
+* P Value - p-value from the F test, describing whether the full regression is significant.
+* DF - Degrees of freedom used by the coefficients.
+* Log Likelihood - The data's log-likelihood under the model.
+* AIC - The Akaike Information Criterion.
+* BIC - The Bayesian Information Criterion.
+* Deviance - Deviance.
+* Residual DF - Residual degrees of freedom.
+
+### Parameter Estimates
+
+* Term - The term in the linear model being estimated and tested.
+* Estimate - The estimated coefficient.
+* Std Error - The standard error from the linear model.
+* t Ratio - t-statistic.
+* P Value - Two sided p-value.
+* Conf Low - Lower bound of 95% confidence interval.
+* Conf High - Upper bound of confidence interval.
+
 ## Step-by-step
 
 Here's a step-by-step tutorial guide on how you can build, predict and evaluate linear regression model.

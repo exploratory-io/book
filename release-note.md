@@ -22,7 +22,8 @@ Released on 5/1/2017
 - Factor values on Summary View overflows.
 - Variable replacement in SQL by `@{<expression>}` is not working.
 - In Time Series Forecasting, meaningless weekly seasonality is returned even when aggregation level is larger than week.
-
+- Number of bars is incorrect for date data in Summary View 
+- Bar order should be 'TRUE', 'FALSE', 'NA' for logical data in Summary View. 
 
 ## v 3.4.1
 
