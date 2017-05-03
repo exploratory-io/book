@@ -37,15 +37,15 @@ After "Run Time Series Forecast" dialog is opened, follow the steps below to cal
 5. Specify the number of time period for which you want to forecast the value of interest in "Forecasting Time Period" text field.
 
 6. (Optional) Specify additional parameters in "Parameters" section.
-  * Capacity (Cap) Value or Data Frame
+  * Capacity (Cap) Value or Data Frame - Possibly achievable maximum value. Can be numbers like market size, or some kind of theoretical limit.
   * Strength of Seasonality
-  * Return Yearly Seasonality
-  * Return Weekly Seasonality
+  * Return Yearly Seasonality - Take yearly seasonality into account while forecasting.
+  * Return Weekly Seasonality - Take weekly seasonality into account while forecasting.
   * Number of Potential Changepoints
   * Flexibility of Automatic Changepoint Selection
   * Potential Changepoints
   * Strength of Holiday Effect
-  * Data Frame for Holidays
+  * Data Frame for Holidays - [Holiday definition data frame](https://docs.exploratory.io/howto/holiday.html)
   * MCMC Samples for Full Bayesian Inference
   * Width of Uncertainty Intervals
   * Number of Simulations for Uncertainty Intervals
@@ -53,6 +53,29 @@ After "Run Time Series Forecast" dialog is opened, follow the steps below to cal
 7. Click "Run" button.
 
 ## Output Data
+The output data comes with the following in addition to the input data.
+* Rows for forecasted data with future date values
+* Additional Columns about forecasted values
+  * forecasted_value - The forecasted value.
+  * forecasted_value_high - Upper bound of forecasted value
+  * forecasted_value_low - Lower bound of forecasted value
+  * trend
+  * trend_high
+  * trend_low
+  * seasonal
+  * seasonal_low
+  * seasonal_high
+  * yearly
+  * yearly_high
+  * yearly_low
+  * weekly
+  * weekly_high
+  * weekly_low
+  * cap_model
+  * cap_forecast
+
+Here is an example of line chart created from the output data. DEP_DELAY (blue line) is the input value column. Note that orange line for the forecasted_value goes into future beyond the end of the blue line.
+
 ![](images/forecast_viz.png)
 
 
