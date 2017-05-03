@@ -1,5 +1,13 @@
 # Release Note
 
+## v 3.4.2.1
+
+Released on 5/2/2017
+
+### Bug Fixes
+
+- In Time Series Forecasting, forecast result degrades to linear trend line without seasonality taken into account.
+
 ## v 3.4.2
 
 Released on 5/1/2017

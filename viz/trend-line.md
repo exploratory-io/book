@@ -1,6 +1,6 @@
 # Trend Line
 
-You can draw Trend or Smooth Lines in a scatter chart by selecting one of Trend Line types in the `Trend Line Setting` dialog. 
+Trend Line feature is available for Scatter charts. You can draw Trend or Smooth Lines by selecting one of Trend Line types in the Trend Line Setting dialog. 
 
 ![](images/trend-dialog.png)
 
