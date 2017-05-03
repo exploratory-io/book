@@ -1,5 +1,7 @@
 # Arrange (Sort)
 
+Sort rows by given column(s)
+
 ## How to Access This Feature
 
 ### From + (plus) Button
@@ -7,7 +9,7 @@
 
 * Click "+" button and select "Arrange (Sort)".
 
-### From column menu
+### From Column Menu
 
 ![](images/command-arrange-column-menu.png)
 

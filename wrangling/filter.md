@@ -1,7 +1,16 @@
 # Filter
+Return rows with matching conditions
 
 ## How to Access This Feature
+
+### From + (plus) Button
+![](images/command-filter-df-menu.png)
+
 * Click "+" button and select "Filter".
+
+### From Column Menu
+![](images/command-filter-column-menu.png)
+
 * You can also select "Filter" from column menu of the column to apply filtering, and then select its submenu to choose the type of filtering.
 
 ## Filter by Selecting Filtering Rule from UI
