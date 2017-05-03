@@ -39,9 +39,15 @@ There are many ways to select columns. You can choose
 
 #### Column Selection
 
-![](images/skv_figures.png)
+Category, dimension and measure are like this.
 
-Category column is a column that has categories which you want to cluster. Internally, the values in the columns are expanded to a matrix like the figure above. Then, cluster numbers are assigned to each row (category) based on how similar the measures are.
+![](images/skv_origin.png)
+
+Category column is a column that has categories which you want to cluster. They are parameterized by measures with the dimensions.
+
+![](images/skv_expand.png)
+
+In this case, cluster airline carriers are clustered. Internally, the values in the columns are expanded to a matrix like the figure above. Then, cluster numbers are assigned to each row (category) based on how similar the values are.
 
 If there are duplicated values or missing values for a cell, they will be aggregated by "Aggregate with" or filled by "Fill with".
 
