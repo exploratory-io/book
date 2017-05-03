@@ -1,4 +1,4 @@
-# T-test
+# F-test
 
 ## Introduction
 
@@ -35,4 +35,4 @@ You can access from 'Add' (Plus) button.
   * "na.pass"
   * NULL
 
-Take a look at the [reference document](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/var.test.html) for the 't.test' function from base R for more details on the parameters.
+Take a look at the [reference document](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/var.test.html) for the 'var.test' function from base R for more details on the parameters.
