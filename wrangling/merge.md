@@ -1,5 +1,17 @@
 # Merge Multiple Data Frames
 
+Merge two data frames by common columns or row names, or do other versions of database _join_ operations
+
+## How to Access This Feature
+
+![](images/command-merge-df-menu.png)
+
+* Click "+" button and select "Merge".
+
+## Merge data frames from UI
+
+![](images/merge.png)
+
 * bind_rows
 * union
 * intersect

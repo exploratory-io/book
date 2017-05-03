@@ -1,10 +1,20 @@
 # Separate
+Separates a column with delimited values into multiple columns
 
 ## How to Access This Feature
+
+### From + (plus) Button
+![](images/command-separate-df-menu.png)
 * Click "+" button and select "Separate".
+
+### From Column Menu
+![](images/command-separate-column-menu.png)
 * You can also select "Separate" from the column menu of the column to separate.
 
 ## Separate a Column with a Separating Text into Multiple Columns
+
+![](images/separate.png)
+
 1. Select column to separate from "Column to Separate" dropdown.
 2. Specify separating text by selecting one from "Separate by" dropdown.
 3. Specify names of resulting new columns, separated by comma, in "New Column Names" text field.
