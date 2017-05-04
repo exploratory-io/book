@@ -115,5 +115,6 @@
 * [Custom Model Function](user-defined-model-function.md)
 * [Setup](setup.md)
    * [How to disable McAfee virus scan](howto/stopmcafee.md)
+   * [How to change directory for user data  from default .exploratory](howto/change_exploratory_home.md)
    * [How to Set Holidays Data for Time Series Forecast](howto/holiday.md)
 * [Keyboard shortcuts](shortcut.md)
