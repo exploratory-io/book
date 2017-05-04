@@ -66,8 +66,8 @@
    * [Data Type Conversion](wrangling/type-convert.md)
    * [Row as header](wrangling/row_as_header.md)
    * [Convert to NA](wrangling/convert_to_na.md)
-   
-   
+
+
 * [Visualization](chart.md)
    * [Bar](viz/bar.md)
    * [Line](viz/line.md)
@@ -117,7 +117,7 @@
    * [Cox Regression](ml/cox-regression.md)
    * [Market Basket](ml/arules.md)
    * [Evaluate Prediction](ml/evaluate.md)
-   
+
 * [Text Mining](ml/text-mining.md)
 * [Note](note.md)
 * [Branch](branch/branch.md)
@@ -126,6 +126,6 @@
 * [Custom Model Function](user-defined-model-function.md)
 * [Setup](setup.md)
    * [How to disable McAfee virus scan](howto/stopmcafee.md)
-   * [How to change directory for user data  from default .exploratory](howto/change_exploratory_home.md)
+   * [How to change directory for user data  from default .exploratory](howto/set_exploratory_home.md)
    * [How to Set Holidays Data for Time Series Forecast](howto/holiday.md)
 * [Keyboard shortcuts](shortcut.md)
