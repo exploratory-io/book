@@ -21,7 +21,7 @@ You can access from 'Add' (Plus) button.
 
 ### Parameters
 
-* The default is "two.sided". What kind of alternative hypothesis to be used. This can be
+* Type of Alternative Hypothesis (Optional) - The default is "two.sided". What kind of alternative hypothesis to be used. This can be
   * "two.sided"
   * "less"
   * "greater"
