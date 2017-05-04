@@ -17,11 +17,11 @@ You can access from 'Add' (Plus) button.
 ![](images/t_test_data_select.png)
 
 * Value Column - Numeric column whose means should be calculated.
-* Group Column (Optional) - Label column of 2 groups. Without this argument, one sample test, which compares mean with "mu" value, will be executed.
+* Group Column (Optional) - Label column of 2 groups. Without this argument, one sample test, which compares mean with "True Effect Size" value, will be executed.
 
 ### Parameters
 
-* The default is "two.sided". What kind of alternative hypothesis to be used. This can be
+* Type of Alternative Hypothesis (Optional) - The default is "two.sided". What kind of alternative hypothesis to be used. This can be
   * "two.sided"
   * "less"
   * "greater"
