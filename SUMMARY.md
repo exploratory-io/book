@@ -120,6 +120,7 @@
 
 * [Text Mining](ml/text-mining.md)
 * [Note](note.md)
+* [Steps (Right-hand side)](steps.md)
 * [Branch](branch/branch.md)
 * [R Package Install](r_package.md)
 * [Custom R Script](r_script.md)
