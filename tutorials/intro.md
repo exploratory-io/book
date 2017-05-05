@@ -10,7 +10,7 @@ To help you become most productive for working with any data and gaining deep in
 
 # Data Source Type
 
-## Working with MongoDB Data
+## MongoDB Data
 
 Working with MongoDB can be challenging due to the nature of NoSQL database, which is highly optimized for capturing the data but not for querying or analyzing the data. Unlike relational database or tabular data, the data is often hierarchical and nested and contains the array type of data. With Exploratory, not only can you extract the data from MongoDB quickly, but also you can make such non-tidy (not tabular / not normalized) data to tidy format based on your needs and apply statistical analysis easily. This tutorial walk you through the steps.
 
@@ -18,32 +18,32 @@ Working with MongoDB can be challenging due to the nature of NoSQL database, whi
 * [An Introduction to MongoDB Query for Beginners](https://blog.exploratory.io/an-introduction-to-mongodb-query-for-beginners-bd463319aa4c)
 
 
-## Working with JSON Data
+## JSON Data
 
 * [Working with JSON Data](tutorials/yelp.md)
 
-## Working with Amazon Redshift Database Data
+## Amazon Redshift Database
 
 * [Exploratory Data Analysis for Amazon Redshift DB Data in Exploratory](https://blog.exploratory.io/exploratory-data-analysis-for-amazon-redshift-with-r-dplyr-9a14441020eb)
 
-## Working with Web Scraping Data
+## Web Scraping
 
 * [Scraping Table Data from Web Sites](https://vimeo.com/195862546)
 
-## Working with Access Log Data
+## Access Log Data
 
 * [Analyze Log file with URL Data](tutorials/log-url.md)
 
-## Working with Stripe Data
+## Stripe Data
 
 * [Importing Stripe Payment Data, Visualize, and Schedule with Exploratory](https://blog.exploratory.io/importing-stripe-payment-data-visualize-and-schedule-with-exploratory-3b1422a9cf8b)
 * [Analyzing MRR (Monthly Recurring Revenue) using Stripe Data in R and Exploratory](https://blog.exploratory.io/analyzing-mrr-monthly-recurring-revenue-using-stripe-data-in-r-and-exploratory-ea434d4aed6)
 * [Forecasting MRR for Next 12 Months with Stripe Data & Prophet in Exploratory](https://blog.exploratory.io/forecasting-mrr-for-next-12-months-with-stripe-data-prophet-in-exploratory-3ccb5e3f9d70)
 
-## Working with MailChimp Data
+## MailChimp Data
 
 
-## Working with Google Analytics Data
+## Google Analytics Data
 
 * [Analyzing User Conversion Funnel Data from Google Analytics with dplyr](https://blog.exploratory.io/analyzing-user-conversion-funnel-with-google-analytics-data-ddeed14ce26f)
 * []()

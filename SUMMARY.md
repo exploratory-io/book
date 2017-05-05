@@ -37,6 +37,7 @@
    * [Data Source Extension](import/extensions.md)
    * [Create Custom Data Source](import/user-defined-plugin.md)
 * [Data Transformation](chart.md)
+   * [Command Line mode for faster and more flexible data interaction in Exploratory](wrangling/command-mode.md)
    * [Select / Remove Columns](wrangling/select.md)
    * [Create New Calculation](wrangling/mutate.md)
    * [Summarize (Aggregate)](wrangling/summarize.md)
@@ -120,6 +121,7 @@
 
 * [Text Mining](ml/text-mining.md)
 * [Note](note.md)
+* [Steps (Right-hand side)](steps.md)
 * [Branch](branch/branch.md)
 * [R Package Install](r_package.md)
 * [Custom R Script](r_script.md)

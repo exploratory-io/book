@@ -1,5 +1,26 @@
 # Release Note
 
+## v 3.4.3
+
+Released on 5/2/2017
+
+### Enhancements
+
+- Document overhaul - We have updated the documents (https://docs.exploratory.io/) to cover all the features of Exploratory Desktop. Some of the pages are still going through updates, but you can see what's there at the high level including Data Import, Data Wrangling Commands, Visualization, and Machine Learning / Statistics. Also, you can search the document to find your interested topics easily.
+- Summary View - We have brought Summary View as the default view for the data frames again.
+- Each Data Frame now remembers the last-visited view among Summary, Table, and Viz views so that it will show you the last visited when opening the same data frames.
+- Performance improvement of Table View when there are many columns
+- Added “Anonymize Text” column menu
+- Added “Concatenate Text” column menu
+- Added property checkboxes to show/hide title text on a chart
+
+
+### Bug Fixes
+
+- In MongoDB data source dialog, the logical values (true/false) are not matching. MongoDB uses them in lowercase but the table is showing them in uppercase.
+- You get an error message dialog showing up when there is no data from the previous step.
+
+
 ## v 3.4.2.1
 
 Released on 5/2/2017
@@ -22,8 +43,8 @@ Released on 5/1/2017
 - Factor values on Summary View overflows.
 - Variable replacement in SQL by `@{<expression>}` is not working.
 - In Time Series Forecasting, meaningless weekly seasonality is returned even when aggregation level is larger than week.
-- Number of bars is incorrect for date data in Summary View 
-- Bar order should be 'TRUE', 'FALSE', 'NA' for logical data in Summary View. 
+- Number of bars is incorrect for date data in Summary View
+- Bar order should be 'TRUE', 'FALSE', 'NA' for logical data in Summary View.
 
 ## v 3.4.1
 

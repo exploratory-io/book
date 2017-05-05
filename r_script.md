@@ -57,3 +57,5 @@ Then you can enter the function in the command line.
 Here is a blog post that walk you through how to register the R script and use the functions.
 
 * [Adding Custom R Scripts to Extend Exploratory Desktop](https://blog.exploratory.io/adding-custom-r-scripts-to-extend-exploratory-desktop-a054832b9562#.68ny44np1)
+
+* [Calculating distances between two locations with geosphere package](https://blog.exploratory.io/calculating-distances-between-two-geo-coded-locations-358e65fcafae)

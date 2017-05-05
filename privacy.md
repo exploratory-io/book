@@ -1,6 +1,6 @@
 # Exploratory Privacy Statement
 
-Effective date: April 25, 2017
+Effective date: May 11, 2017
 
 Thanks for entrusting Exploratory with your data, your projects, and your personal information. Holding onto your private information is a serious responsibility, and we want you to know how we're handling it.
 
@@ -88,7 +88,7 @@ Similarly, projects on Exploratory may include publicly available Personal Infor
 
 #### Cookies
 
-Exploratory uses cookies to make interactions with our service easy and meaningful. We use cookies (and similar technologies, like HTML5 localStorage) to keep you logged in, remember your preferences, and provide information for future development of Exploratory.
+Exploratory website uses cookies to make interactions with our service easy and meaningful. We use cookies (and similar technologies, like HTML5 localStorage) to keep you logged in, remember your preferences, and provide information for future development of Exploratory.
 
 A cookie is a small piece of text that our web server stores on your computer or mobile device, which your browser sends to us when you return to our site. Cookies do not necessarily identify you if you are merely visiting Exploratory; however, a cookie may store a unique identifier for each logged in user. The cookies Exploratory sets are essential for the operation of the website, or are used for performance or functionality. By using our website, you agree that we can place these types of cookies on your computer or device.
 
