@@ -4,4 +4,6 @@ You might want to use your own R functions as part of your data wrangling steps.
 
 *  [Adding Custom R Scripts to Extend Exploratory Desktop](https://blog.exploratory.io/adding-custom-r-scripts-to-extend-exploratory-desktop-a054832b9562#.68ny44np1)
 
+* [Calculating distances between two locations with geosphere package](https://blog.exploratory.io/calculating-distances-between-two-geo-coded-locations-358e65fcafae)
+
 If you want to write your own R functions to extract data please refer to [Write R Script for Data](import/r-script-data.md).
