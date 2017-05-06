@@ -1,23 +1,38 @@
 # Release Note
 
-## v 3.4.3
+## v 3.4.4
 
-Released on 5/2/2017
+Released on 5/6/2017
 
 ### Enhancements
 
 - Document overhaul - We have updated the documents (https://docs.exploratory.io/) to cover all the features of Exploratory Desktop. Some of the pages are still going through updates, but you can see what's there at the high level including Data Import, Data Wrangling Commands, Visualization, and Machine Learning / Statistics. Also, you can search the document to find your interested topics easily.
-- Summary View - We have brought Summary View as the default view for the data frames again.
-- Each Data Frame now remembers the last-visited view among Summary, Table, and Viz views so that it will show you the last visited when opening the same data frames.
-- Performance improvement of Table View when there are many columns
-- Added “Anonymize Text” column menu
-- Added “Concatenate Text” column menu
-- Added property checkboxes to show/hide title text on a chart
-
+- Summary View - We have brought Summary View back as the default view for the data frames again!
+- Each Data Frame now remembers the last-opened view of either Summary, Table, or Viz view so that it will show you the last opened view when you open the same data frames.
+- Chart: Set larger png/svg export default size for the chart export.
+- Chart: add show title properties.
+- Performance improvement of Table View when there are many columns.
+- Performance improvement when deleting a Data Frame.
 
 ### Bug Fixes
 
 - In MongoDB data source dialog, the logical values (true/false) are not matching. MongoDB uses them in lowercase but the table is showing them in uppercase.
+- Chart: Fix for the small multiple scroll issue
+- Chart: Fix issue with no data. (check nrow before running query)
+
+
+## v 3.4.3
+
+Released on 5/4/2017
+
+### Enhancements
+
+- Added “Anonymize Text” column menu
+- Added “Concatenate Text” column menu
+- Added property checkboxes to show/hide title text on a chart
+
+### Bug Fixes
+
 - You get an error message dialog showing up when there is no data from the previous step.
 
 

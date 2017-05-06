@@ -4,6 +4,12 @@
 * [Tutorials (English)](tutorials/intro.md)
    * [Getting Started Guide](tutorials/quick-start.md)
 * [Tutorials (Japanese)](tutorials/intro_ja.md)   
+
+* [Product Features]
+  * [Note](note.md)
+  * [Steps (Right-hand side)](steps.md)
+  * [Branch](branch/branch.md)
+
 * [Data Import](data_import.md)
    * [File Data]()
       * [CSV / Delimited File](import/csv.md)
@@ -95,6 +101,8 @@
    * [Save as PNG/SVG](viz/save.md)
    * [Save as Exploratory Data File](viz/save-as-edf.md)
    * [Share/Schedule](viz/schedule.md)
+
+
 * [Statistics]()
    * [Correlation](stats/correlation.md)
    * [Distance](stats/dist.md)
@@ -104,6 +112,8 @@
    * [T-test](stats/t-test.md)
    * [F-test](stats/f-test.md)
    * [Chi-square test](stats/chi-test.md)
+
+
 * [Machine Learning]()
    * [Linear Regression](ml/linear-regression.md)
    * [Logistic Regression](ml/logistic-regression.md)
@@ -119,13 +129,14 @@
    * [Market Basket](ml/arules.md)
    * [Evaluate Prediction](ml/evaluate.md)
 
-* [Text Mining](ml/text-mining.md)
-* [Note](note.md)
-* [Steps (Right-hand side)](steps.md)
-* [Branch](branch/branch.md)
-* [R Package Install](r_package.md)
-* [Custom R Script](r_script.md)
-* [Custom Model Function](user-defined-model-function.md)
+* [Text Analysis]
+   * [Text Mining](ml/text-mining.md)
+
+* [Extend with R]
+   * [R Package Install](r_package.md)
+   * [Custom R Script](r_script.md)
+   * [Custom Model Function](user-defined-model-function.md)
+
 * [Setup](setup.md)
    * [How to disable McAfee virus scan](howto/stopmcafee.md)
    * [How to change directory for user data  from default .exploratory](howto/set_exploratory_home.md)
