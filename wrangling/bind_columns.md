@@ -8,7 +8,7 @@ Bind multiple data frames by column.
 
 * Click "+" button and select "Other" - > "Bind ..." -> "Columns"
 
-## Bind multiple data frames by row
+## Bind multiple data frames by Column
 
 ![](images/bind_columns.png)
 

@@ -8,7 +8,7 @@ Convert specific values to NA.
 
 * Click "+" button and select "Other" - > "Convert ... to NA for All Columns"
 
-## Bind multiple data frames by row
+## Convert Values to NA for All Columns
 
 ![](images/convert_to_na.png)
 
