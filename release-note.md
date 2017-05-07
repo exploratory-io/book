@@ -4,6 +4,10 @@
 
 Released on 5/6/2017
 
+### Enhancements
+
+- Added "Convert to Local Timezone" menu to POSIXct columns.
+
 ### Bug Fixes
 
 - Transform Step - bind_cols: Fix issue that Error Dialog popups when a bind_cols transform step is clicked on right hand side list.
