@@ -1,5 +1,14 @@
 # Release Note
 
+## v 3.4.4.1
+
+Released on 5/6/2017
+
+### Bug Fixes
+
+- Transform Step - bind_cols: Fix issue that Error Dialog popups when a bind_cols transform step is clicked on right hand side list.
+- Transform Step - custom command: Fix issue that unwanted data source file path info is displayed for a custom command step. 
+
 ## v 3.4.4
 
 Released on 5/6/2017
