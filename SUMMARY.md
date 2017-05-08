@@ -5,7 +5,7 @@
    * [Getting Started Guide](tutorials/quick-start.md)
 * [Tutorials (Japanese)](tutorials/intro_ja.md)   
 
-* [Product Features]
+* [Product Features]()
   * [Note](note.md)
   * [Steps (Right-hand side)](steps.md)
   * [Branch](branch/branch.md)
@@ -129,10 +129,10 @@
    * [Market Basket](ml/arules.md)
    * [Evaluate Prediction](ml/evaluate.md)
 
-* [Text Analysis]
+* [Text Analysis]()
    * [Text Mining](ml/text-mining.md)
 
-* [Extend with R]
+* [Extend with R]()
    * [R Package Install](r_package.md)
    * [Custom R Script](r_script.md)
    * [Custom Model Function](user-defined-model-function.md)
