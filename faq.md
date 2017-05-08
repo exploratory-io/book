@@ -22,7 +22,7 @@ You can cancel the plan anytime from your account page with just a click of a bu
 
 ## I'm currently a student at my school, but I have mistakenly started a trial for non Community plan. How can I fix?
 
-You can cancel the plan first, then click ‘Upgrade’ button at your account page. You will see ‘Community’ option available this time, and you can select it and fill the forms to apply for Community plan. 
+You can cancel the plan first, then click ‘Upgrade’ button at your account page. You will see ‘Community’ option available this time, and you can select it and fill the forms to apply for Community plan.
 
 ## How can I share my insights with others privately?
 
@@ -91,7 +91,7 @@ Just download Exploratory Desktop by simply clicking on Download button on the d
 
 ## I have installed R with Homebrew on Mac OS X, does that work ?
 
-Unfortunately the configuration of R installed with Homebrew is not supported currently. Exploratory Desktop requires a set of R packages to make your data wrangling and analysis more efficient from the day one. To install those packages we use the binary versions of the packages, which assume that R is installed with the standard installer with '.pkg' from CRAN. If you would like to use Exploratory Desktop, the workaround is to uninstall R with Homebrew with the command below, then restart Exploratory Desktop, which will install R 3.3 with the standard installer from CRAN.
+Unfortunately the configuration of R installed with Homebrew is not supported currently. Exploratory Desktop requires a set of R packages to make your data wrangling and analysis more efficient from the day one. To install those packages we use the binary versions of the packages, which assume that R is installed with the standard installer with '.pkg' from CRAN. If you would like to use Exploratory Desktop, the workaround is to uninstall R with Homebrew with the command below, then restart Exploratory Desktop, which will install R 3.4 with the standard installer from CRAN.
 
 ```
 > brew uninstall r
@@ -139,3 +139,7 @@ Yes! Here's an [introduction](https://blog.exploratory.io/installing-r-packages-
 ## Can I change my username?
 
 We are not currently supporting it, but we will in future releases. If you need it to be changed now, please contact support@exploratory.io, we can manually change it at the server for you.
+
+## Can I change the location of the repository?
+
+Yes. Here's an [instruction](https://docs.exploratory.io/howto/set_exploratory_home.html) on how to do that.
