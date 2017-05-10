@@ -1,8 +1,32 @@
 # Release Note
 
+## v 3.4.5
+
+### New Features
+
+- Pivot Data Export - Now you can export the data presented in the Pivot Table view as CSV.  
+
+### Enhancements
+
+- Google Sheets Data Export - Now you can overwrite the existing sheet data instead of creating a new sheet.
+- Data Re-Import - Now you can reload the data for all the data frames, which are referenced from the current data frames, from the corresponding data sources.
+- Added new aggregation function menus for 'na_count' and 'na_pct'.
+- Added a link on the embedded Viz in Note so that you can navigate to the Viz in data frame directly.
+- Filter - Now you can also type the (filter dialog) honor user entered value even if it does not match LOV
+Note export code refactoring
+- Updated the wording around 'Create Bucket'. Now we call it 'Category' to simplify.
+- Add additional functions (min/max/mean/median) for Window Calculation of  “Difference from”/“% Difference from” for the column header menu and chart.
+
+### Bug Fixes
+
+- Showing a blank chart area when opening a data frame whose default view is set to non-first chart tabs.
+- Logical data values (TRUE/FALSE) are not sorted correctly inside the legend for Charts.
+- Viz title footer is not shown correctly for Pivot Table in Note.
+
+
 ## v 3.4.4.1
 
-Released on 5/6/2017
+Released on 5/7/2017
 
 ### Enhancements
 
@@ -11,7 +35,7 @@ Released on 5/6/2017
 ### Bug Fixes
 
 - Transform Step - bind_cols: Fix issue that Error Dialog popups when a bind_cols transform step is clicked on right hand side list.
-- Transform Step - custom command: Fix issue that unwanted data source file path info is displayed for a custom command step. 
+- Transform Step - custom command: Fix issue that unwanted data source file path info is displayed for a custom command step.
 
 ## v 3.4.4
 
