@@ -1,5 +1,12 @@
 # Release Note
 
+## v 3.4.5.1
+
+### Bug Fixes
+
+- Error about 'zoo' package when running Time Series Forecast.
+- Error about 'growth' parameter when running Time Series Forecast.
+
 ## v 3.4.5
 
 ### New Features
