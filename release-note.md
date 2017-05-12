@@ -1,5 +1,11 @@
 # Release Note
 
+## v 3.4.5.2 (Windows Only)
+
+### Bug Fixes
+
+- Cannot open/create projects.
+
 ## v 3.4.5.1
 
 ### Bug Fixes
