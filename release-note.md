@@ -4,14 +4,15 @@
 
 ### Bug Fixes
 
-- Cannot open/create projects.
+- Cannot open projects on Windows with an error message "Retry failed...".
+- Cannot create a new project on Windows with loading icon.
 
 ## v 3.4.5.1
 
 ### Bug Fixes
 
-- Error about 'zoo' package when running Time Series Forecast.
-- Error about 'growth' parameter when running Time Series Forecast.
+- Failed to run Time Series Forecast due to the 'zoo' package not installed.
+- Failed to run Time Series Forecast when the existing command with 'growth' parameter.
 
 ## v 3.4.5
 
@@ -33,7 +34,7 @@ Note export code refactoring
 ### Bug Fixes
 
 - Showing a blank chart area when opening a data frame whose default view is set to non-first chart tabs.
-- Logical data values (TRUE/FALSE) are not sorted correctly inside the legend for Charts.
+- Logical data values (TRUE/FALSE) are not sorted correctly inside the legend for Map-GeoJSON.
 - Viz title footer is not shown correctly for Pivot Table in Note.
 
 
@@ -47,8 +48,8 @@ Released on 5/7/2017
 
 ### Bug Fixes
 
-- Transform Step - bind_cols: Fix issue that Error Dialog popups when a bind_cols transform step is clicked on right hand side list.
-- Transform Step - custom command: Fix issue that unwanted data source file path info is displayed for a custom command step.
+- Transformation Step - bind_cols: Error Dialog popups when a bind_cols transform step is clicked on right hand side list.
+- Transformation Step - Custom command: Data source file path info is displayed for custom command steps.
 
 ## v 3.4.4
 
@@ -67,8 +68,8 @@ Released on 5/6/2017
 ### Bug Fixes
 
 - In MongoDB data source dialog, the logical values (true/false) are not matching. MongoDB uses them in lowercase but the table is showing them in uppercase.
-- Chart: Fix for the small multiple scroll issue
-- Chart: Fix issue with no data. (check nrow before running query)
+- Chart: Cannot scroll Small Multiple chart when it overflows.
+- Chart: It throws an error when the previous step of the transformation has no data.
 
 
 ## v 3.4.3
@@ -80,10 +81,6 @@ Released on 5/4/2017
 - Added “Anonymize Text” column menu
 - Added “Concatenate Text” column menu
 - Added property checkboxes to show/hide title text on a chart
-
-### Bug Fixes
-
-- You get an error message dialog showing up when there is no data from the previous step.
 
 
 ## v 3.4.2.1
@@ -104,11 +101,11 @@ Released on 5/1/2017
 
 ### Bug Fixes
 
-- SQL errors on database data sources are not properly shown and following error is displayed. `Error in if (conn) {: argument is not interpretable as logical`
-- Factor values on Summary View overflows.
+- Irrelevant error message "Error in if (conn) {: argument is not interpretable as logical" is showing up when there is an error in SQL query.
+- Factor values on Summary View overflows outside of the tile area.
 - Variable replacement in SQL by `@{<expression>}` is not working.
 - In Time Series Forecasting, meaningless weekly seasonality is returned even when aggregation level is larger than week.
-- Number of bars is incorrect for date data in Summary View
+- Only one bar is showing up for Date/POSIXct data in Summary View
 - Bar order should be 'TRUE', 'FALSE', 'NA' for logical data in Summary View.
 
 ## v 3.4.1
@@ -122,6 +119,7 @@ Released on 4/29/2017
 - Export to Clipboard - Exported character data is quoted by double quote when pasted to Numbers on Mac.
 - Summary View - Bars for Factor columns are not sorted appropriately by the factor level when there are more than 300 levels.
 - Time Series Forecasting - Specifying Strength of Holiday Effect results in an error.
+
 
 ## v 3.4
 
