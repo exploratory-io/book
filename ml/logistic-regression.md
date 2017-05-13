@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Logistic regression model is a statistical model that fits to a explanatory variable that follows binary (0 or 1) distribution with linear predictors.
+Logistic regression model is a statistical model that fits to an explanatory variable that follows binary (0 or 1) distribution with linear predictors.
 
 ## How to Access?
 
