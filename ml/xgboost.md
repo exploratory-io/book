@@ -61,12 +61,6 @@ You can split the data into training and test to evaluate the performance of the
   * "dart"
 * Weight Column (Optional) - The default is NULL. A column with weight for each data.
 * Number of Early Stopping Rounds (Optional) - The default is NULL. The number of iterations to stop after the performance doesn't improve.
-* How to treat NA? (Optional) - The default is "Omit". This changes the behaviour of NA data. Can be one of the following.
-  * Omit
-  * Fail
-  * Exclude
-  * Pass
-  * Null
 * Max Depth (Optional)
 * Minimum Child Weight (Optional)
 * Gamma (Optional)
@@ -74,6 +68,23 @@ You can split the data into training and test to evaluate the performance of the
 * Column Sample by Tree (Optional)
 * Learning Rate (Optional)
 * Evaluation Metrics (Optional)
+
+#### How to Read Summary
+
+![](images/xgb_regression_summary.png)
+
+##### Summary of Fit
+
+* Number of Iteration - Number of training iteration
+* Root Mean Square Error - Root mean square error to training data.
+* Mean Absolute Error - Mean absolute to training data.
+
+##### Feature Importance
+
+* Feature - Name of the feature.
+* Importance - Improvement in accuracy for predicting the outcome by the feature.
+* Coverage - The ratio of the data covered by the feature.
+* Frequency - How many times each feature is used in all generated trees for training the model in a relative quantity scale.
 
 ### Binary Classification
 
@@ -95,12 +106,6 @@ You can split the data into training and test to evaluate the performance of the
   * "dart"
 * Weight Column (Optional) - The default is NULL. A column with weight for each data.
 * Number of Early Stopping Rounds (Optional) - The default is NULL. The number of iterations to stop after the performance doesn't improve.
-* How to treat NA? (Optional) - The default is "Omit". This changes the behaviour of NA data. Can be one of the following.
-  * Omit
-  * Fail
-  * Exclude
-  * Pass
-  * Null
 * Max Depth (Optional)
 * Minimum Child Weight (Optional)
 * Gamma (Optional)
@@ -108,6 +113,24 @@ You can split the data into training and test to evaluate the performance of the
 * Column Sample by Tree (Optional)
 * Learning Rate (Optional)
 * Evaluation Metrics (Optional)
+
+#### How to Read Summary
+
+![](images/xgb_binary_summary.png)
+
+##### Summary of Fit
+
+* Number of Iteration - Number of training iteration
+* AUC - Area under curve score to training data.
+* Misclassification Rate - Ratio of wrong classification to training data.
+* Negative Log Likelihood - Negative log likelihood score to training data.
+
+##### Feature Importance
+
+* Feature - Name of the feature.
+* Importance - Improvement in accuracy for predicting the outcome by the feature.
+* Coverage - The ratio of the data covered by the feature.
+* Frequency - How many times each feature is used in all generated trees for training the model in a relative quantity scale.
 
 ### Multiclass Classification
 
@@ -131,12 +154,6 @@ You can split the data into training and test to evaluate the performance of the
   * "dart"
 * Weight Column (Optional) - The default is NULL. A column with weight for each data.
 * Number of Early Stopping Rounds (Optional) - The default is NULL. The number of iterations to stop after the performance doesn't improve.
-* How to treat NA? (Optional) - The default is "Omit". This changes the behaviour of NA data. Can be one of the following.
-  * Omit
-  * Fail
-  * Exclude
-  * Pass
-  * Null
 * Max Depth (Optional)
 * Minimum Child Weight (Optional)
 * Gamma (Optional)
@@ -147,9 +164,20 @@ You can split the data into training and test to evaluate the performance of the
 
 ### How to Read Summary
 
-* Mean of Mean Square Error - Mean of mean square errors vector.
-* Mean of R Square - Mean of pseudo R-squared.
+![](images/xgb_multi_summary.png)
 
+##### Summary of Fit
+
+* Number of Iteration - Number of training iteration.
+* Misclassification Rate - Ratio of wrong classification to training data.
+* Multiclass Logloss - Negative log likelihood score to training data.
+
+##### Feature Importance
+
+* Feature - Name of the feature.
+* Importance - Improvement in accuracy for predicting the outcome by the feature.
+* Coverage - The ratio of the data covered by the feature.
+* Frequency - How many times each feature is used in all generated trees for training the model in a relative quantity scale.
 
 ## Step-by-step
 
