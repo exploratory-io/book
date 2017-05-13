@@ -44,48 +44,140 @@ You can split the data into training and test to evaluate the performance of the
 #### Parameters
 
 * Use Validation Data	(Optional) - You can set data randomly selected to use as validation data set to watch the performance of the model against data that is not used for learning process. It prevents overfitting.
-* output_type (Optional) - The default is "linear". What distribution the target variable follows. This can be
+* How to treat NA? (Optional) - "na.action" parameter of glm. function. The default is "na.pass". This changes the behaviour of NA data. Can be one of the following.
+  * "na.pass"
+  * "na.omit"
+  * "na.fail"
+* Use Sparse Matrix (Optional) - If TRUE, it uses sparse matrix internally. This is memory efficient when the data becomes sparse, which means it has a lot of zero values. You can set this implicitly but as default, sparse matrix is used when categorical values are used because the model matrix is often sparse in such case.
+* Type of Output (Optional) - The default is "linear". What distribution the target variable follows. This can be
   * "linear"
   * "logistic"
   * "gamma"
   * "tweedie"
-* nrounds (Optional) - The default is 10. Max number of iterations for training.
-* booster (Optional) - The default is "gbtree". Distribution that the target variable follows. This can be
+* Max Number of Iterations (Optional) - The default is 10. Max number of iterations for training.
+* Booster Type (Optional) - The default is "gbtree". Distribution that the target variable follows. This can be
   * "gbtree"
   * "gblinear"
   * "dart"
-* eval_metric (Optional) - The default is "rmse" for linear and logistic, "gamma-nloglik" for gamma and "tweedie-nloglik" for tweedie output type. Evaluation metrics to optimize by training.
-  * "rmse" - Root mean square error
-  * "mae" - Mean absolute error
-  * "gamma-nloglik" - Negative log likelihood for gamma distribution
-  * "gamma-deviance" - Residual deviance for gamma distribution
-* weight (Optional) - The default is NULL. A column with weight for each data.
-* early_stopping_rounds (Optional) - The default is NULL. The number of iterations to stop after the performance doesn't improve.
-* How to treat NA? (Optional) - The default is "Omit". This changes the behaviour of NA data. Can be one of the following.
-  * Omit
-  * Fail
-  * Exclude
-  * Pass
-  * Null
-* Number of Trees	(Optional) - The default is 500. Number of trees to grow.
-* Number of Variables to Sample (Optional) - The default is 1/3 of number of variables. Number of variables randomly sampled as candidates at each split.
-* Sample with Replacement (Optional) - The default is TRUE. Whether sampling is done with replacement.
-* Variable for Stratified Sampling (Optional) - A (factor) variable that is used for stratified sampling.
-* Size of Sample to Draw (Optional) - Size of sample to draw.
-* Minimum Size of Terminal Nodes (Optional) - The default is 5. Minimum size of terminal nodes.
-* Assess Importance (Optional) - The default is FALSE. Whether importance of predictors is assessed.
-* Compute Casewise Importance (Optional) - The default is FALSE. Whether casewise importance measure is computed.
-* Measure Proximity (Optional) - The default is FALSE. Whether proximity measure among the rows is calculated.
-* Proximity on Out-of-Bag Data (Optional) - The default is same as "Measure Proximity". Whether proximity is calculated only on "out-of-bag" data.
-* Keep Forest (Optional) - The default is TRUE. Whether the forest is retained in the output object.
-* Perform Bias Correction (Optional) - The default is FALSE. If bias correction for regression is performed.
-* Keep In-Bag (Optional) - The default is FALSE. Whether an n by ntree matrix be returned that keeps track of which samples are “in-bag” in which trees.
+* Weight Column (Optional) - The default is NULL. A column with weight for each data.
+* Number of Early Stopping Rounds (Optional) - The default is NULL. The number of iterations to stop after the performance doesn't improve.
+* Max Depth (Optional)
+* Minimum Child Weight (Optional)
+* Gamma (Optional)
+* Subsample (Optional)
+* Column Sample by Tree (Optional)
+* Learning Rate (Optional)
+* Evaluation Metrics (Optional)
+
+#### How to Read Summary
+
+![](images/xgb_regression_summary.png)
+
+##### Summary of Fit
+
+* Number of Iteration - Number of training iteration
+* Root Mean Square Error - Root mean square error to training data.
+* Mean Absolute Error - Mean absolute to training data.
+
+##### Feature Importance
+
+* Feature - Name of the feature.
+* Importance - Improvement in accuracy for predicting the outcome by the feature.
+* Coverage - The ratio of the data covered by the feature.
+* Frequency - How many times each feature is used in all generated trees for training the model in a relative quantity scale.
+
+### Binary Classification
+
+#### Parameters
+
+* Use Validation Data	(Optional) - You can set data randomly selected to use as validation data set to watch the performance of the model against data that is not used for learning process. It prevents overfitting.
+* How to treat NA? (Optional) - "na.action" parameter of glm. function. The default is "na.pass". This changes the behaviour of NA data. Can be one of the following.
+  * "na.pass"
+  * "na.omit"
+  * "na.fail"
+* Use Sparse Matrix (Optional) - If TRUE, it uses sparse matrix internally. This is memory efficient when the data becomes sparse, which means it has a lot of zero values. You can set this implicitly but as default, sparse matrix is used when categorical values are used because the model matrix is often sparse in such case.
+* Type of Output (Optional) - The default is "softprob". What distribution the target variable follows. This can be
+  * "softprob"
+  * "softmax"
+* Max Number of Iterations (Optional) - The default is 10. Max number of iterations for training.
+* Booster Type (Optional) - The default is "gbtree". Distribution that the target variable follows. This can be
+  * "gbtree"
+  * "gblinear"
+  * "dart"
+* Weight Column (Optional) - The default is NULL. A column with weight for each data.
+* Number of Early Stopping Rounds (Optional) - The default is NULL. The number of iterations to stop after the performance doesn't improve.
+* Max Depth (Optional)
+* Minimum Child Weight (Optional)
+* Gamma (Optional)
+* Subsample (Optional)
+* Column Sample by Tree (Optional)
+* Learning Rate (Optional)
+* Evaluation Metrics (Optional)
+
+#### How to Read Summary
+
+![](images/xgb_binary_summary.png)
+
+##### Summary of Fit
+
+* Number of Iteration - Number of training iteration
+* AUC - Area under curve score to training data.
+* Misclassification Rate - Ratio of wrong classification to training data.
+* Negative Log Likelihood - Negative log likelihood score to training data.
+
+##### Feature Importance
+
+* Feature - Name of the feature.
+* Importance - Improvement in accuracy for predicting the outcome by the feature.
+* Coverage - The ratio of the data covered by the feature.
+* Frequency - How many times each feature is used in all generated trees for training the model in a relative quantity scale.
+
+### Multiclass Classification
+
+#### Parameters
+
+* Use Validation Data	(Optional) - You can set data randomly selected to use as validation data set to watch the performance of the model against data that is not used for learning process. It prevents overfitting.
+* How to treat NA? (Optional) - "na.action" parameter of glm. function. The default is "na.pass". This changes the behaviour of NA data. Can be one of the following.
+  * "na.pass"
+  * "na.omit"
+  * "na.fail"
+* Use Sparse Matrix (Optional) - If TRUE, it uses sparse matrix internally. This is memory efficient when the data becomes sparse, which means it has a lot of zero values. You can set this implicitly but as default, sparse matrix is used when categorical values are used because the model matrix is often sparse in such case.
+* Type of Output (Optional) - The default is "linear". What distribution the target variable follows. This can be
+  * "linear"
+  * "logistic"
+  * "gamma"
+  * "tweedie"
+* Max Number of Iterations (Optional) - The default is 10. Max number of iterations for training.
+* Booster Type (Optional) - The default is "gbtree". Distribution that the target variable follows. This can be
+  * "gbtree"
+  * "gblinear"
+  * "dart"
+* Weight Column (Optional) - The default is NULL. A column with weight for each data.
+* Number of Early Stopping Rounds (Optional) - The default is NULL. The number of iterations to stop after the performance doesn't improve.
+* Max Depth (Optional)
+* Minimum Child Weight (Optional)
+* Gamma (Optional)
+* Subsample (Optional)
+* Column Sample by Tree (Optional)
+* Learning Rate (Optional)
+* Evaluation Metrics (Optional)
 
 ### How to Read Summary
 
-* Mean of Mean Square Error - Mean of mean square errors vector.
-* Mean of R Square - Mean of pseudo R-squared.
+![](images/xgb_multi_summary.png)
 
+##### Summary of Fit
+
+* Number of Iteration - Number of training iteration.
+* Misclassification Rate - Ratio of wrong classification to training data.
+* Multiclass Logloss - Negative log likelihood score to training data.
+
+##### Feature Importance
+
+* Feature - Name of the feature.
+* Importance - Improvement in accuracy for predicting the outcome by the feature.
+* Coverage - The ratio of the data covered by the feature.
+* Frequency - How many times each feature is used in all generated trees for training the model in a relative quantity scale.
 
 ## Step-by-step
 
