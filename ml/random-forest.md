@@ -66,8 +66,17 @@ You can split the data into training and test to evaluate the performance of the
 
 #### How to Read Summary
 
+![](images/rf_regression_summary.png)
+
+##### Summary of Fit
+
 * Mean of Mean Square Error - Mean of mean square errors vector.
 * Mean of R Square - Mean of pseudo R-squared.
+
+##### Feature Importance
+
+* Term - The term in the linear model being estimated and tested.
+* Mean Decrease in Mean Square Error - Mean of square error decrease by the term.
 
 ### Binary Classification
 
