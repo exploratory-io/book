@@ -5,4 +5,4 @@ Removes all columns from a data frame that are composed entirely of NA values.
 
 ### From + (plus) Button
 ![](images/command-remove-empty-cols.png)
-* Click "+" button and select "Others... -> Remove Empty Rows / Columns -> Rows".
+* Click "+" button and select "Group By".
