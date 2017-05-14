@@ -73,6 +73,7 @@
    * [Data Type Conversion](wrangling/type-convert.md)
    * [Row as header](wrangling/row_as_header.md)
    * [Convert to NA](wrangling/convert_to_na.md)
+   * [Ungroup](wrangling/ungroup.md)
 
 
 * [Visualization](chart.md)
