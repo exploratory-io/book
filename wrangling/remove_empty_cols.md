@@ -1,0 +1,8 @@
+# Remove Empty Cols
+Removes all columns from a data frame that are composed entirely of NA values.
+
+## How to Access This Feature
+
+### From + (plus) Button
+![](images/command-remove-empty-cols.png)
+* Click "+" button and select "Others... -> Remove Empty Rows / Columns -> Rows".
