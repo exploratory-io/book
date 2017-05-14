@@ -1,11 +1,13 @@
 # Release Note
 
-## v 3.4.5.2 (Windows Only)
+## v 3.4.5.2
 
 ### Bug Fixes
 
-- Cannot open projects on Windows with an error message "Retry failed...".
-- Cannot create a new project on Windows with loading icon.
+- Cannot open projects on Windows with an error message "Retry failed...". (Windows Only)
+- Cannot create a new project on Windows with loading icon. (Windows Only)
+- Cannot open the custom color picker dialog. (Mac only) 
+
 
 ## v 3.4.5.1
 
