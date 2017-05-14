@@ -76,7 +76,7 @@
    * [Ungroup](wrangling/ungroup.md)
    * [Remove Empty Rows](wrangling/remove_empty_rows.md)
    * [Remove Empty Columns](wrangling/remove_empty_cols.md)
-
+   * [Clean Column Names](wrangling/clean_names.md)
 
 * [Visualization](chart.md)
    * [Bar](viz/bar.md)
