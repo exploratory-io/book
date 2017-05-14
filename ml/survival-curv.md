@@ -11,7 +11,7 @@ Input data should be a survival data. Each row should represent one observation 
 * You can also select "Run Analytics ..." from column menu of the survival time column, and then select "Calculate Survival Curve" submenu to open "Calculate Survival Curve" dialog.
 
 ## Calculate Survival Curve
-After "Calculate Survival Curve" dialog is opened, follow the steps below to calculate forecast data.
+After "Calculate Survival Curve" dialog is opened, follow the steps below to calculate survival curve.
 
 ![](images/survival_curve_dialog.png)
 
