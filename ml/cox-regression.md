@@ -46,6 +46,40 @@ After "Build Survival Model (Cox Regression)" dialog is opened, follow the steps
   * Max Iterations for Outer Loop
 6. Click "Run" button.
 
+## How to Read Model Summary
+After building Survival Model, following Model Summary shows up.
+
+![](images/coxph_summary.png)
+
+### Summary of Fit
+
+* Number of Rows - Number of training data rows.
+* Number of Events - Number of events (deaths) that happened in the training survival data.
+* Likelihood Ratio Test - Test result number for how well the model fits the training data. The larger the better. See Reference.
+* Likelihood Ratio Test P Value - P value calculated from Likelihood Ratio Test result. Can be interpreted as possibility of the model being only as good as a model with no predictor (null model).
+* Score Test - Another test result number for how well the model fits the training data.
+* Score Test P Value - P value calculated from Score Test result
+* Wald Test - Another test result number for how well the model fits the training data.
+* Wald Test P Value - P value calculated from Wald Test result.
+* R Square - Pseudo R-squeared. See Reference.
+* R Square Max - Maximum for the pseudo R-squared. See Reference.
+* Concordance - How well the order of the survival times of the subjects in training data corresponds with order of the hazards of the subjects predicted by the model.
+* Std Error Concordance - Standard error of the concordance when it is viewed as a random variable.
+* Log Likelihood - Likelihood of the model producing the result that is same as the training data, on log scale
+* AIC - Akaike information criterion
+* BIC - Bayesian information criterion
+
+### Parameter Estimates
+* Term - Name of a predictor
+* Estimate - Fitted coefficient for the predictor
+* Std Error - Standard error of "Estimates" when it is viewed as a random variable.
+* t Ratio - "Estimate" divided by "Std Error". Indicator of whether the estimate is statistically significantly different from zero.
+* P Value - Can be interpreted as the probability of the predictor being totally irrelevant.
+* Conf Low - Lower limit of confidence interval for "Estimate"
+* Conf High - Upper limit of confidence interval for "Estimate"
+* Hazard Ratio - If this predictor goes up by one unit mount, hazard of the event (death) in a unit time goes up by this ratio.
 
 ## Reference
 * [Introduction to Survival Analysis Part 2 — Survival Model (Cox Regression)](https://blog.exploratory.io/introduction-to-survival-analysis-part-2-survival-model-cox-regression-47a170eacf5d)
+* [HOW ARE THE LIKELIHOOD RATIO, WALD, AND LAGRANGE MULTIPLIER (SCORE) TESTS DIFFERENT AND/OR SIMILAR?](http://stats.idre.ucla.edu/other/mult-pkg/faq/general/faqhow-are-the-likelihood-ratio-wald-and-lagrange-multiplier-score-tests-different-andor-similar/)
+* [WHAT ARE PSEUDO R-SQUAREDS?](http://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-what-are-pseudo-r-squareds/)
