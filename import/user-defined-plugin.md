@@ -385,7 +385,7 @@ After installing your data source extension, you can test it by selecting `Impor
 
 ![](images/import_by_user_defined_plugin.png)
 
-Now you should be able to see your data source extension `Stocks Data With tidyquant (example)`
+Now you should be able to see your data source extension `Historical Stock Prices`
 
 ![](images/data_source_extension_picker.png)
 
