@@ -5,7 +5,7 @@
 これは、米国の航空機の発着遅延データの探索的なデータ分析を行うことで、Exploratory デスクトップを使いこなす方法を紹介する入門ガイドです。対象となる主な分野は次のとおりです。
 
 * 新しいプロジェクトを作成してデータをインポートする
-* 要約ビューでデータを検査する
+* サマリ(要約)ビューでデータを検査する
 * データの変換（データラングリング）
   * 文字データの解析と**日付への変換**
   * 日付から**曜日の情報を抽出**する
@@ -15,7 +15,7 @@
 * データの可視化
   * **ジオコードを使用した**地図
   * **パーセント合計**を使用したピボットテーブル
-  * **表計算(Window Calculation)**を使用したラインチャート
+  * **表計算**(Window Calculation)を使用したラインチャート
   * **グループ毎のトップ100**を使用した箱ひげ図
   * **トレンドライン**を使った散布図 (線形回帰モデルと一般化加法モデル)
   * **k平均クラスタリング**
@@ -27,7 +27,7 @@
 
 ![](images/chat-inside-app.png)
 
-また、support@exploratory.ioまでe-mailを送ってください。
+または、support@exploratory.ioまでe-mailを送ってください。
 
 ## 航空機の離発着遅延サンプルデータのダウンロード
 
@@ -75,7 +75,7 @@ Exploratory デスクトップを起動し、まず新しいプロジェクト�
 
 ##サマリ・ビューでデータを検査する
 
-[サマリ]タブをクリックすると、要約ビューでデータの要約情報をすばやく確認できます。たとえば、CARRIER列には12のユニークな航空会社があり、そのうち7つが最高から最低のバーチャートとしてリストされています。
+[サマリ]タブをクリックすると、サマリ(要約)ビューでデータの要約情報をすばやく確認できます。たとえば、CARRIER列には12のユニークな航空会社があり、そのうち7つが最高頻出から最低頻出のバーチャートとしてリストされています。
 
 ![](images/quick-start-5.png)
 
@@ -96,7 +96,7 @@ Exploratory デスクトップを起動し、まず新しいプロジェクト�
 
 ![](images/quick-start-6.png)
 
-Exploratoryは、通常インポート時の元のデータに基づいてヒューリスティックな推測で各列のデータ型を適切に割り当てます。しかし、元のデータがフォーマットされているために意図した通りに動作しないことがあります。その場合は、インポート後にデータを簡単かつ柔軟に変換することができます。この場合、列ヘッダーメニューから「データ型の変更」→「日付/時刻への変換」→「年、月、日」を選択することができます。
+Exploratoryは、通常インポート時の元のデータに基づいてヒューリスティック(発見的)な推測で各列のデータ型を適切に割り当てます。しかし、元のデータがフォーマットされているために意図した通りに動作しないことがあります。その場合は、インポート後にデータを簡単かつ柔軟に変換することができます。この場合、列ヘッダーメニューから「データ型の変更」->「日付/時刻への変換」->「年、月、日」を選択することができます。
 
 ![](images/quick-start-7.png)
 
@@ -117,23 +117,23 @@ ymd(FL_DATE)
 
 ![](images/quick-start-9.png)
 
-また、「Function List」ボタンをクリックすると、他のR機能がすべて表示されます。
+また、「関数一覧」ボタンをクリックすると、すぐに利用可能なR関数がすべて表示されます。
 
 ともあれ、[実行]ボタンをクリックしてコマンドを実行することができます。
 
-'FL_DATE'列がDateに変換されていることが表示されるようになりました
+'FL_DATE'列がDateに変換されて表示されるようになりました
 
 ![](images/quick-start-11.png)
 
-これは、データがタイムラインに沿ってどのように分布しているかを視覚化するヒストグラムチャートを示しています。また、期間は2016-08-01から2016-08-31までであることがわかります。
+これは、データがタイムラインに沿ってどのように分布しているかを視覚化するヒストグラムを表示しています。また、期間は2016-08-01から2016-08-31までであることがわかります。
 
 また、上部に2つの色のついた箱（紫色と緑色）があることに気づくと思います。
 
 ![](images/quick-start-13.png)
 
-紫色の箱は、どのコマンドが使用されたかを示します。この場合、 ``` mutate```です。 `` mutate``コマンドはExcelの式に相当し、新しい計算を作成して実行します。 'select'、 'summarize'、 'filter'などのコマンドを後で見るようになるので、ここで困惑しても心配はありません。
+紫色の箱は、どのコマンドが使用されたかを示します。この場合、 ``` mutate```です。 `` mutate``コマンドはExcelの式に相当し、新しい計算を作成して実行します。 'select'、 'summarize'、 'filter'などのコマンドを後で触れるので、ご心配なく。
 
-今、緑色のボックスには、以下が表示されます。
+今、緑色のボックスには、以下が表示されています。
 
 ```
 FL_DATE = ymd(FL_DATE)
@@ -161,561 +161,562 @@ FL_DATE列が 'Date'データ型であるため、 'Day of Week（日、月な�
 
 ![](images/quick-start-14_1.png)
 
-これは、前回と同じように元の列を上書きするのではなく、 ```wday(FL_DATE、label = TRUE)```という計算で新しい列を作成することを意味します。
+これは、前回のように元の列を上書きするのではなく、 ```wday(FL_DATE、label = TRUE)```という計算で新しい列を作成することを意味します。
 
 新しい列名として「day_of_week」と入力し、「実行」ボタンを押します。
+
 ![](images/quick-start-15.png)
 
 下にスクロールすると、作成されている新しい列 'day_of_week'が表示されます。
 
 ![](images/quick-start-16.png)
 
-ここでは、バーは最も頻度の高い値、この場合「Mon」、から開始するのではなく、「Sun」、「Mon」、「Tue」などで始まっています。これは、この列が 'factor'データ型列として作成されるためです。これは、列内に「並べ替え順」情報を埋め込むことで、カテゴリ変数（列）を扱いやすくするための特殊なデータ型です。これは実際には、曜日のような「順序」に意味のあるデータには完璧です。しかし、そのような順序を無視したい場合は、'factor'データ型列を 'character'データ型列に変換する列ヘッダーメニューから 'Change Data Type'  - > 'Convert to Character'を選択するだけです。
+ここでは、バーは最も頻度の高い値、この場合「Mon」から開始するのではなく、「Sun」、「Mon」、「Tue」などで始まっています。これは、この列が 'factor'データ型列として作成されるためです。これは、列内に「並べ替え順」情報を埋め込むことで、カテゴリ変数（列）を扱いやすくするための特殊なデータ型です。これは実際には、曜日のような「順序」に意味のあるデータには完璧です。しかし、そのような順序を無視したい場合は、'factor'データ型列を '文字'データ型列に変換する列ヘッダーメニューから 'データタイプの変換' - > '文字に変換'を選択するだけです。
 
 ![](images/quick-start-16_1.png)
 
-In this exercise, we'll keep it as is.
+この練習では、そのままにしておきます。
 
+##列を複数の列に分ける
 
+列を複数の列に分割する方法を見てみましょう。
 
-## Separate a column into multiple columns
-
-Let's take a look at how you can separate a column into multiple columns.
-
-Here, ORIGIN_CITY_NAME column contains both city names and US State names.
+ORIGIN_CITY_NAME列には、米国の都市名と州名が含まれています。
 
 ![](images/quick-start-17.png)
 
-Let's say you want to see which US States the most flights departed from. You want to extract only the US State part of the text in this column.
+米国のどの州から最も飛行機が離陸したのかを見たいとしましょう。この列のテキストの中から州のみを抽出したいとします。
 
-For this, you can simply separate this column by setting a separating character, in this case that is a 'comma', into two columns, one for city names and another for US state names. To make this operation easier to see, let's go to Table view first.
+区切り文字（この場合はカンマ）を設定することで、この列を2つの列に分けることができます。1つは都市名、もう1つは州名です。この操作を見やすくするために、最初にテーブルビューに移動してみましょう。
 
-Then, select 'ORIGIN_CITY_NAME column, and select 'Separate' -> 'Separate to Columns by' -> 'Comma(,)' from the column header menu.
+次に、'ORIGIN_CITY_NAME列を選択し、列見出しメニューから'分割' ->'...で列に分割' -> 'コンマ(,)'を選択します。
 
 ![](images/quick-start-18.png)
 
-In the opened 'Separate' dialog, type column names for the new columns to be created. In this case, 'city' and 'state'
+開いている[分割]ダイアログで、作成する新しい列の列名を入力します。この場合、「都市」と「州」です。
 
 ![](images/quick-start-19.png)
 
-Once the command is run, you will find two new columns being created, one has the city names and another has the US State names.
+コマンドが実行されると、2つの新しい列が作成されます。1つは都市名、もう1つは州名です。
 
 ![](images/quick-start-20.png)
 
-Also, you would notice that there is a new step just being added at the right hand side.
+そして新しいステップが右側に追加されます。
 
-You can click on 'Mutate' step to see the data before this operation.
+[Mutate]ステップをクリックして、この[分割]の操作を行う前のデータを表示することができます。
 
 ![](images/quick-start-20_1.png)
 
-### Work with NA (Missing Values)
+### 欠損値を扱う
 
-When you look at DEP_DELAY column in Summary view, you would notice that there is a slight red color in the green bar.
+サマリビューでDEP_DELAY列を見ると、緑色のバーにわずかな赤色が表示されていることがわかります。
 
 ![](images/quick-start-21.png)
 
-This red bar indicates the ratio of the data that is NA in this column. You can see that 1.32% of the data is NA. There are many ways to handle NA values, but here, let's try removing them with 'filter' command operation.
+この赤いバーは、この列の欠損値であるデータの比率を示します。データの1.32％が欠損値であることがわかります。 欠損値を扱う方法はたくさんありますが、ここでは 'フィルタ'コマンド操作でそれらを削除してみましょう。
 
-Select 'Filter' -> 'is not NA' from the column header menu.
+列見出しメニューから[フィルタ]  -> [欠損値でない]を選択します。
 
 ![](images/quick-start-22.png)
 
-This will open 'Filter' dialog with 'is not NA' operator being already selected.
+これにより、'欠損値でない'演算子が既に選択されている 'フィルタ'ダイアログが開きます。
 
 ![](images/quick-start-24.png)
 
-If you are interested, you can click on the operator dropdown to see many other data type specific operators that are supported out-of-the-box. If you are familiar with R and want to customize it further, you can always go to 'Custom' tab and start typing your 'filter' conditions the way you like.
+興味のある場合は、演算子のドロップダウンをクリックすると、そのデータ型でサポートされる他の多くの演算子が表示されます。 Rに精通しており、それをさらにカスタマイズしたい場合は、いつでも[カスタム]タブに移動して、好きなように'フィルタ'条件を入力することができます。
 
 ![](images/quick-start-23.png)
 
-Anyway, you want to simply click on Run button here. You will see that NA is gone now.
+ここでRunボタンをクリックすると、欠損値が除外されたことがわかります。
 
 ![](images/quick-start-25.png)
 
-### Join with Airport Location Data Set
+### 空港の所在地データセットとの結合
 
-Let's say we want to visualize where these airports are located on Map. We have airport codes in the data, but there is no geo location codes (longitude and latitude) associated with the airports. So, what we can do here is, first, find a mapping table that maps between the airport codes and the geo location codes.
+これらの空港がある場所を地図上に視覚化したいとします。データに空港コードが含まれていますが、空港に関連付けられている地理的位置コード（経度と緯度）はありません。そこで、私たちができるのは、まず、空港コードと地理的位置コードをマッピングするマッピングテーブルを見つけることです。
 
-You can find such mapping table easily on the web, but here is one we have published as EDF (Exploratory Data Format) file so that you can import to your Exploratory in a reproducible way.
+このようなマッピングテーブルはWeb上で簡単に見つけることができますが、ここではEDF（Exploratory Data Format）ファイルとして公開しているため、再現性のある方法でExploratoryにインポートできます。
 
 * [Mapping Table for Airport Codes and Geo Location Codes](https://exploratory.io/data/kanaugust/0814311708280782)
 
-Once you download and import it into your Exploratory, then we can use this mapping table data to assign the geo location codes for each airport code in the 'airline_delay_2016-08' data frame. Basically, it's similar to what you would do with 'vlookup' in Excel or with 'join' operation in SQL or typical BI tools.
+Exploratoryにダウンロードしてインポートすると、このマッピングテーブルのデータを使用して、「airline_delay_2016-08」データフレーム内の各空港コードのジオロケーションコードを割り当てることができます。基本的には、Excelでの「vlookup」や、SQLや一般的なBIツールでの「結合」操作の場合と似ています。
 
-In Exploratory, you can use one of the 'join' commands called 'left_join', which would join two data frames by adding columns from 'target' data frame by matching 'key' column values from both data frames. It looks something like below.
+Exploratoryでは、'left_join'という'結合'コマンドの1つを使用できます。これは、両方のデータフレームの'キー'カラム値を一致させることによって、'ターゲット'データフレームからカラムを追加して2つのデータフレームを結合します。それは以下のようになります。
 
 ![](images/quick-start-join.png)
 
-
-Anyway, let's go to the above linked page and download the EDF file.
+では、上記のリンク先のページに移動し、EDFファイルをダウンロードしてみましょう。
 
 ![](images/quick-start-join2.png)
 
-Then, import the EDF file into Exploratory. You can select 'Import Exploratory Data' from 'Add Data Frame' dropdown list.
+次に、EDFファイルをExploratoryにインポートします。 [データフレームを追加]ドロップダウンリストから[Exploratory Dataのインポート]を選択することができます。
 
 ![](images/quick-start-join3.png)
 
-The data looks like below after the import.
+インポート後のデータは次のようになります。
 
 ![](images/quick-start-100.png)
 
-Notice that there are a few steps at the right hand side. These are the steps that were used to prepare this 'us-air-port-code' data frame before. You can add more steps or delete these steps if you like, but we'll keep these as is for this exercise.
+右側にいくつかのステップがあることに注目してください。これは、この 'us-air-port-code'データフレームを準備するために使用されたステップです。必要に応じてステップを追加したり、これらのステップを削除したりすることができますが、この演習ではこれをそのまま使用します。
 
-Also, you can see a column called 'Code', this is the key column we are going to use to join with 'airline_delay_2016-08' data frame.
+また、Codeという列が表示されます。これは、「airline_delay_2016-08」データフレームとの結合に使用するキー列です。
 
 ![](images/quick-start-100_1.png)
 
-Now, go back to 'airline_delay_2016_08' data frame.  
+さて、「airline_delay_2016_08」データフレームに戻ります。
 
 ![](images/quick-start-100_2.png)
 
-There is a column called 'ORIGIN', which has the airport codes for the airports from which the flights departed. And this is the column we are going to use to map with the 'us-air-port-code' data frame.
+ORIGINという列があります。この列には、飛行機が出発した空港の空港コードがあります。そして、これは、「us-air-port-code」データフレームでマップするために使用する列です。
 
-Select 'Join' from 'Add' button menu.
+[追加]ボタンメニューから[結合]を選択します。
 
 ![](images/quick-start-100_3.png)
 
-In the opened 'Join' dialog, select a data frame 'us-air-port-code' for Target Data Frame, and select 'ORIGIN' column for Current Column and 'Code' for Target Column as key columns to join.
+「結合」ダイアログで、「ターゲットデータフレーム」のデータフレーム「us-air-port-code」を選択し、「ORIGIN」列を「現在の列」に、「Code」を「ターゲット列」をキー列として選択します。
 
 ![](images/quick-start-103.png)
 
-Once the command is run, you will see new columns from the target data frame 'us-air-port-code' being added at the end.
+コマンドが実行されると、ターゲットデータフレーム 'us-air-port-code'の新しい列が最後に追加されます。
 
 ![](images/quick-start-104.png)
 
-In this tutorial, we have used only 'left_join', but there are other types of 'join'. If you are interested, take a look at these two post for more details.
+このチュートリアルでは、left_joinのみを使用しましたが、他のタイプの '結合'もあります。興味のある方は、これら2つの記事をご覧ください。
 
-* [Introduction to Join — Bring extra columns from the target in Exploratory](https://blog.exploratory.io/introduction-to-join-bring-extra-columns-from-the-target-in-exploratory-1ec585ec2cf1#.u003r2k1m)
-* [Introduction to Join — filtering data based on the target data in Exploratory](https://blog.exploratory.io/introduction-to-join-filtering-data-based-on-the-target-data-in-exploratory-eedbd7b39d0a#.fudvfqpdm)
+* [Introduction to Join — Bring extra columns from the target in Exploratory (英語)](https://blog.exploratory.io/introduction-to-join-bring-extra-columns-from-the-target-in-exploratory-1ec585ec2cf1#.u003r2k1m)
+* [Introduction to Join — filtering data based on the target data in Exploratory (英語)](https://blog.exploratory.io/introduction-to-join-filtering-data-based-on-the-target-data-in-exploratory-eedbd7b39d0a#.fudvfqpdm)
 
-Anyway, we have gotten enough data by now, let's start exploring the data with visualization to understand this US flight delay data better.
+ともあれ、十分なデータが得られました。この米国の飛行遅延データをよりよく理解するために、可視化してデータを探索してみましょう。
 
-## Visualize data
+## データの可視化
 
-There are many ways to visualize data with various chart types in Exploratory. In this exercise, let's use the following chart types to explore the data.
+Exploratoryでは、さまざまな種類のチャートを使用してデータを視覚化する方法がたくさんあります。この演習では、次のグラフタイプを使用してデータを探索します。
 
-* **Map** - Understand where the flights are leaving from.
-* **Pivot Table** - Understand which state and day pairs have more flights than the others.
-* **Line Chart** - Understand the trend of the departure delay times in August.
-* **Boxplot Chart** - Understand how bad the flights delayed by each carrier.
-* **Scatter Chart** - Understand correlations between Arrival Delay and Departure Delay times.
+* **地図** - フライトがどこから出発するのかを理解する。
+* **ピボットテーブル** - どの州と日にちの組み合わせの便が他の組み合わせより多いかを理解する。
+* **折れ線グラフ** - 8月の出発遅延時間の傾向を理解する。
+* **箱ひげ図** - 各航空会社による便の遅延の程度をを理解する。
+* **散布図** - 到着遅延と出発遅延時間の間の相関を理解する
 
-### Map with Geocodes (Longitude and Latitude)
+### ジオコードを使用した地図（経度と緯度）
 
-First, let's take a look at where these flights departed from.
+まず、これらの飛行機がどこから出発したかを見てみましょう。
 
-Go to Viz view, and select 'Map - Long / Lat' chart type.
+Vizビューに移動し、'地図 - 経度 / 緯度'チャートタイプを選択します。
+
 
 ![](images/quick-start-106.png)
 
-This will automatically pick up 'Longitude' and 'Latitude' columns and show all the airport locations on the map.
+これにより、自動的に「経度」と「緯度」の列が表示され、マップ上のすべての空港の位置が表示されます。
 
 ![](images/quick-start-107.png)
 
-You can assign 'Name' column to label, which will make the values of this column show up at the right hand side top of the chart when you move your mouse over on any circle.
+ラベルに「名前」列を割り当てることができます。これにより、マウスを任意の円上に置いたときに、この列の値がグラフの右端上方に表示されます。
 
 ![](images/quick-start-108.png)
 
-You can use mouse, track pad, or the buttons at the left hand side top of the map to zoom in or pan.
+マウス、トラックパッド、またはマップの左側の上部にあるボタンを使用して、ズームインまたはパンすることができます。
 
-You can change the background style from 'Layout Configuration' menu.
+レイアウト設定メニューから背景スタイルを変更することができます。
 
 ![](images/quick-start-108_1.png)
 
-For example, you can select 'Dark' type to get black color theme.
+たとえば、「黒」タイプを選択すると、黒色のテーマを取得できます。
 
 ![](images/quick-start-108_2.png)
 
-You can change the color palette by clicking on 'Gear' icon next to 'Color'.
+「カラー」の横にある「ギア」アイコンをクリックすると、カラーパレットを変更できます。
+
 ![](images/quick-start-108_3.png)
 
 
-### Pivot Table
+### ピボットテーブル
 
-Let's use Pivot table to understand which state and day pairs have more flights than the others.
+ピボットテーブルを使用して、どの州と曜日のペアの便が他のものより多いかを理解しましょう。
 
-Select Pivot Table, and assign 'state' column to Row and 'day_of_week' column to Column. You can keep Value to the default value, which would count 'Number of Rows' for each group.
+ピボットテーブルを選択し、行に 'state'列を、列に 'day_of_week'列を割り当てます。 Valueをデフォルト値にしておきます。これは、各グループの行数をカウントします。
 
 ![](images/quick-start-27.png)
 
-Notice that the column values are sorted as 'Sun', 'Mon', 'Tue', etc. by respecting the natural order of days of the week. This is because, as you have seen previously, 'day_of_week' column is 'factor' data type and has the sorting order information embedded in, and  Pivot table and other chart types respect the sorting order information when sorting the data.
+列の値は、曜日の自然順序を尊重して、「Sun」、「Mon」、「Tue」などのようにソートされています。これは、以前に見たように 'day_of_week'列は'factor'データ型で、ソート順情報が埋め込まれているため、ピボットテーブルなどのグラフはデータのソート時にソート順情報を尊重するためです。
 
 
-You can use Color to visualize the data. Select 'All' from the dropdown.
+色を使用してデータを視覚化することができます。ドロップダウンから[すべて]を選択します。
 
 ![](images/quick-start-28.png)
 
-You can show the values as '% of Total' instead of the raw numbers. Click on 'Gear' icon next to 'Value' and select '% of Total' from the calculation type dropdown.
+生の数字の代わりに、 '合計の割合'として値を表示することができます。 「値」の横にある「歯車」アイコンをクリックし、計算タイプのドロップダウンから「合計の割合」を選択します。
 
 ![](images/quick-start-29.png)
 
-The default setting calculates the '% of Total' as a percentage of all the values in Pivot table. But you might want to see the percentage of each US state or each Day of Week. For example, you can change the 'Direction' setting to 'Row' to make it easier to see which day of the week have more flights than the other days for each state.
+デフォルト設定では、 '合計の割合'がピボットテーブルのすべての値のパーセンテージとして計算されます。しかし、各州または各曜日の割合を見たいかもしれません。たとえば、「方向」の設定を「行」に変更すると、どの曜日に他の曜日よりも多くの便があるか見やすくなります。
 
 ![](images/quick-start-30.png)
 
-We can see that most of the states have more flights between Monday and Wednesday. And Saturday is the lowest for most of the states.
+ほとんどの州では、月曜日から水曜日までに便が集中しています。土曜日はほとんどの州にとって割合が最低です。
 
-You can click on 'Sat' to sort the data based on the values in this column. It turned out VI (US Virgin Islands) has more flights on Saturday than any other days of week, unlike any other US States. This is probably because more people go there for vacation than for business.
+この列の値に基づいてデータをソートするには、[Sat]列をクリックします。 VI（米領バージン諸島）は、他の州と違って、土曜日に他の日よりも多くの便を運航していることが判明しました。これはおそらく、より多くの人々がビジネスよりも休暇のためにそこに行くからです。
 
 ![](images/quick-start-31.png)
 
-### Line Chart / Time Series
+### 折れ線グラフ / 時系列
 
-Let's take a look at the trend of the flight departure delay times during this time period of August, 2016.
+2016年8月の期間の飛行出発遅延時間の傾向を見てみましょう。
 
-Select 'Line' chart and assign 'FL_DATE' column to X-Axis. Since 'FL_DATE' column is Date data type, you can select a date level (e.g. Year, Month, Day) to aggregate the data. For example, you can set it to 'Day' to aggregate the data by day, instead of the default 'Year'.
+「線」グラフを選択し、「FL_DATE」列をX軸に割り当てます。'FL_DATE'列は日付データ型なので、データの集計に日付レベル（年、月、日など）を選択できます。たとえば、デフォルトの「年」の代わりに、データを「日」に設定してデータを集計することができます。
 
 ![](images/quick-start-32.png)
 
-Now, assign 'DEP_DELAY' column to Y-Axis to see the trend of the flight departure delay time. The default data aggregation function is set to 'Sum', but you can change this to something like 'Average'.
+ここで、Y軸に 'DEP_DELAY'列を割り当てて、飛行出発遅延時間の傾向を確認します。デフォルトのデータ集計関数は '合計'に設定されていますが、これを '平均'のように変更することができます。
+
 
 ![](images/quick-start-33.png)
 
-You can assign 'CARRIER' column to Color to see the trend by each airline carrier.
+色に「CARRIER」列を割り当てて、各航空会社の傾向を確認することができます。
 
 ![](images/quick-start-34.png)
 
-You can click on any of the values in Legend to show or hide the lines inside the chart.
+凡例の任意の値をクリックすると、グラフ内の線を表示または非表示にすることができます。
 
 ![](images/quick-start-35.png)
 
-Double click on any part on the chart area, this will re-adjust the chart scales to show the currently available values in the most effective way.
+グラフ領域の任意の部分をダブルクリックすると、現在有効な値を最も効果的に表示するためにグラフのスケールが再調整されます。
 
 ![](images/quick-start-36.png)
 
-You can also use Drag and Drop gesture to select an area to zoom in.
+ドラッグアンドドロップジェスチャを使用して、ズームインする領域を選択することもできます。
 
 ![](images/quick-start-37.png)
 
-You can double click on any part on the chart to get back to the original zoom level.
+チャート上の任意の部分をダブルクリックすると、元のズームレベルに戻ることができます。
 
-Now, let's take a look at how the departure delay times were getting accumulated by each carrier as the time progresses, by using one of the embedded Window Calculation types called 'Cumulative Sum' (or Running Total).
+次に、チャートに組み込まれている、累積合計（またはランニングトータル)と呼ばれる表計算(Window Calculation)タイプの1つを使用して、出発時間遅延が各航空会社によって累積される様子を見てみましょう。
 
-Click on the property icon and select Window Calculation from the list.
+プロパティアイコンをクリックし、リストから表計算(Window Calculation)を選択します。
 
 ![](images/quick-start-38.png)
 
-Select 'Cumulative' and 'Sum' from the lists.
+リストから「累積」と「合計」を選択します。
 
 
 ![](images/quick-start-39.png)
 
-We can see that Delta Airline (DL) has accumulated large amount of the departure delay times. It looks that something must have happened in that particular week. Well, it turned out that there was a global computer system outage for Delta on August 8th, 2016, which caused large-scale cancellations and took a few days before getting back to normal schedule. [News from CNN.](http://money.cnn.com/2016/08/08/news/companies/delta-system-outage-flights/)
+デルタ航空（DL）が出発遅延時間を大量に蓄積していることがわかります。その特定の週には何かが起こったに違いないと思われます。 2016年8月8日にデルタのグローバルコンピュータシステムの停止があり、大規模なキャンセルが発生し、通常のスケジュールに戻るまでに数日かかったことが判明しました。 [News from CNN.(英語)](http://money.cnn.com/2016/08/08/news/companies/delta-system-outage-flights/)
 
 
-Also, we can see that some airlines like Hawaiian (HA) and Alaska (AS) are consistently very low departure delay times, which means that their flights got sometimes delayed but those were rather exceptions, unlike the other carriers where the delays are observed as normal trends.
+遅延が通常の傾向として観測される他の航空会社とは異なり、ハワイアン（HA）やアラスカ（AS）のような一部の航空会社は一貫して非常に低い出発遅延時間であることがわかります。稀に遅れることがあってもそれはこれの航空会社にとっては例外的な出来事です。
 
-## Boxplot
+## 箱ひげ図
 
-Let's dig in a little bit more on the departure delay time. We can change the chart type to Boxplot, which would show the data distribution of the departure delay times for each carrier by each day.
+出発の遅延時間についてもう少し詳しく調べてみましょう。チャートタイプを箱ひげ図に変更すると、各航空会社の出発遅延時間のデータ分布がそれぞれの日に対して表示されます。
 
 ![](images/quick-start-40.png)
 
-You can drag the mouse to select the time range between August 7th and 14th to zoom in.
+マウスをドラッグして8月7日から14日の時間範囲を選択してズームインすることができます。
 
 ![](images/quick-start-41.png)
 
 
 ![](images/quick-start-42.png)
 
-We can see that many of Delta (DL) airline flights were delayed significantly on August 8th, 9th, and 10th. As we have seen above, this is due to the Delta's computer system outage happened on August 8th. The system came back online on the same day, but we can see that it took them for a few days to get most of the flights back on schedule.
+多くのデルタ（DL）航空便が8月8日、9日、10日に大幅に遅れていることがわかります。上記のように、これはデルタのコンピュータシステムの停止が8月8日に起こったためです。システムは同日にオンラインに戻りましたが、ほとんどのフライトをスケジュール通りに戻すには数日かかっていました。
 
-Now, we can switch X-Axis to CARRIER column and see the data distribution of the departure delay time for each carrier.
+ここで、X軸をCARRIER列に切り替えて、各航空会社の出発遅延時間のデータ分布を見ることができます。
 
 ![](images/quick-start-43.png)
 
-The default setting removes the outlier values, which are extremely high or low values compared to most of the data. You can bring them back by checking 'Include Outlier' checkbox.
+デフォルト設定では、大部分のデータと比較して極端に高い値または低い値である異常値が取り除かれます。 「異常値を含む」チェックボックスをオンにすると、それらを戻すことができます。
 
 ![](images/quick-start-44.png)
 
+さて、遅延時間に基づいた各航空会社毎のワースト100便に注目して、どれだけひどく遅れたのかを知りたいとします。
 
-Now, let's say we want to know how bad the delayed flights were focusing on the worst 100 flights based on the delay time for each carrier.
-
-Click 'Add' button, and select 'Keep Only' -> 'Top N'.
+[追加]ボタンをクリックし、[これだけを残す]  -> [上位N]を選択します。
 
 ![](images/quick-start-45.png)
 
-Type 100 and select 'DEP_DELAY' column, and click 'Run' button.
+100を入力し、'DEP_DELAY'列を選択し、'実行'ボタンをクリックします。
 
 ![](images/quick-start-46.png)
 
-The chart is showing the worst 100 flights now.
+チャートはワースト100便を示しています。
 
 ![](images/quick-start-47.png)
 
-But this worst 100 flights are based on all the flights from all the carriers. This is why we don't see the carriers like HA (Hawaiian), WN (Southwest), etc.
+しかし、このワースト100のフライトは、すべての航空会社からのすべてのフライトに基づいています。このため、HA（ハワイアン）、WN（サウスウェスト）などの航空会社は見られません。
 
-What we wanted to see was the worst 100 flights per each carrier, not for all. We can actually achieve this easily by using 'group_by' command to group the data frame before applying the 'Top N' command.
+我々が見たいのは、すべての航空会社ではなく、各航空会社ごとにワースト100便でした。 'top N'コマンドを適用する前に 'group_by'コマンドを使用してデータフレームをグループ化することで、実際にこれを簡単に達成できます。
 
-Before adding 'group_by' step, let's click on 'Pin' button at the right hand side top of the chart area.
+'group_by'ステップを追加する前に、チャート領域の右上にある 'Pin'ボタンをクリックしましょう。
 
 ![](images/quick-start-48.png)
 
-This will make the chart always reference to the data generated by this 'Top N / Bottom N' step.
+これにより、チャートは常にこの「上位N / 下位 N」ステップで生成されたデータを参照します。
 
-Now, click on 'Filter' step right before 'Top N / Bottom N' step at the right hand side.
+ここで、右側の「上位N / 下位N」ステップの直前の「フィルタ」ステップをクリックします。
 
 ![](images/quick-start-49.png)
 
-Notice that the chart is still showing the result of 'Top N', not the result of this 'Filter' step.
+グラフにはこの「フィルタ」ステップの結果ではなく、「上位N」の結果が表示されていることに注意してください。
 
-Select 'Group By' from 'Add' button menu.
+「追加」ボタンメニューから「グループ化」を選択します。
 
 ![](images/quick-start-50.png)
 
 
-Select 'CARRIER' from the column list.
+列リストから「CARRIER」を選択します。
 
 ![](images/quick-start-51.png)
 
-This will automatically update the chart. It is now showing the range of the delay times for the worst 100 flights for each carrier.
+これにより、チャートが自動的に更新されます。ここでは、航空会社毎にワースト100便の遅延時間の範囲を示しています。
 
 ![](images/quick-start-52.png)
 
-Notice that the step that is currently selected at the right hand side is still 'Group By', but the data shown in the chart is the result that has applied 'Top N / Bottom N' step.  This is what 'Pin' button can do for you!
+現在右側で選択されているステップはまだ「グループ化」ですが、チャートに表示されるデータは「上位N / 下位N」ステップを適用した結果です。これは「ピン」ボタンのおかげです！
 
-### Scatterplot
+### 散布図
 
-Now, how the departure delay time and the arrival delay time are correlated? In other words, did the flights that delayed for the departure time also delayed for the arrival time? If so, were there any correlation between those two delayed times?
+ここで、出発遅延時間と到着遅延時間はどのように相関しているでしょうか？言い換えれば、出発時間に遅れたフライトはまた到着時間に遅れたのでしょうか？もしそうなら、それらの2つの遅延時間の間に相関関係はあるのでしょうか？
 
-To investigate such correlation, we don't need the last two steps of 'Group By' and 'Top N / Bottom N' we added previously because we would rather evaluate the entire data. So for this analysis, instead of deleting these two steps, we can create something called 'branch' data frame off from the step before 'Group By' step. This way, we can create two data frames with two different data wrangling paths while sharing the common part of the data wrangling steps.
+このような相関関係を調べるために、前に追加した「グループ化」と「上位N / 下位N」の最後の2つのステップは必要ありません。これはデータ全体を評価するためです。この分析のために、これらの2つのステップを削除する代わりに、'グループ化'ステップの前のステップから 'ブランチ'データフレームを作成することができます。このようにして、共通するデータラングリングの処理を共有しつつ、2つの異なるデータラングリングの経路を持つ2つのデータフレームを作成することができます。
 
-Select 'Filter' step at the right hand side.
+右側の「フィルタ」ステップを選択します。
 
 ![](images/quick-start-57.png)
 
-Select 'Create Branch' from the action menu.
+アクションメニューから「ブランチを作成」を選択します。
 
 ![](images/quick-start-56.png)
 
-Type a name for a new 'branch' data frame name, such as 'correlation', and click 'Create' button.
+新しい「ブランチ」データフレーム名の名前（「correlation」など）を入力し、「作成」ボタンをクリックします。
 
 ![](images/quick-start-58.png)
 
-You would notice that there is a new data frame called 'correlation' created underneath the main data frame 'airline_delay-2016-08'.
+メインデータフレーム 'airline_delay-2016-08'の下に作成された「correlation」という新しいデータフレームがあることに気づくでしょう。
 
 ![](images/quick-start-59.png)
 
-Also, you would notice that the steps at the right hand side are grayed out.
+また、右側のステップがグレー表示されていることがわかります。
 
 ![](images/quick-start-60.png)
 
-These are the steps that are managed in the main data frame 'airline_delay_2016-08'. This 'correlation' data frame inherits the result of these steps from the main data frame.
+これらは、メインデータフレーム 'airline_delay_2016-08'で管理されるステップです。この「correlation」データフレームは、メインデータフレームからこれらのステップの結果を継承します。
 
-Now, we can go to Viz view and select 'Scatter' as the chart type, assign 'DEP_DELAY' to X-Axis and 'ARR_DELAY' to Y-Axis.
+今度はVizビューに行き、チャートタイプとして '散布図'を選択し、X軸に 'DEP_DELAY'、Y軸に 'ARR_DELAY'を割り当てます。
 
 ![](images/quick-start-61.png)
 
-There seems to be some degree of 'linear' correlation between the two measures.
+2つの数値情報の間には、ある程度の「線形」相関があるようです。
 
-We can see how the correlations look like for each carrier by assigning 'CARRIER' column to 'Repeat By'.
+「CARRIER」列を「繰り返し」に割り当てることで、各航空会社の相関関係がどうあるかを見ることができます。
 
 ![](images/quick-start-64.png)
 
-You can adjust 'Repeat By' properties to see all the charts better.
+「繰り返し」プロパティを調整して、すべてのグラフをより見やすく表示できます。
 
 ![](images/quick-start-66.png)
 
-For example, we can select '4' for the number of the charts for each row, check 'Fit All the Charts in Viz Area' checkbox, and un-check 'Sync Scales Among Charts' to not synchronize the scales for X and Y axes among the charts.
+たとえば、各行のチャート数を「4」に設定し、「Vizエリア内のすべてのチャートを合わせる」チェックボックスをオンにし、「チャート間でスケールを同期」をオフにして、チャート間でX軸とY軸のスケールを同期させないようにできます。
 
-We can see that some carriers like 'AA' and 'DL' are showing much more clear 'linear' correlations compared to others like 'F9' and 'HA'. We can see this even better by showing Trend Line.
+「AA」や「DL」のような航空会社の中には、「F9」や「HA」といった他の航空会社と比べてはるかに明確な「線形」相関が示されていることがわかります。 トレンドラインを表示することで、これをさらによく見ることができます。
 
-Select 'Trend Line' from Y-Axis property menu.
+Y軸のプロパティメニューから「トレンドライン」を選択します。
 
 ![](images/quick-start-67.png)
 
-Select 'Linear Regression' to use Linear Regression model to calculate the trend line, and select 'Data Range for Each Group' for 'Line Length' so that the trend lines will be drawn only for the data range of each carrier.
+線形回帰モデルを使用してトレンドラインを計算するには '線形回帰'を選択し、各航空会社のデータ範囲についてのみトレンドラインが描画されるように '各グループのデータ範囲'を '線の長さ'として選択します。
 
 ![](images/quick-start-68.png)
 
-Again, the dots that represent the flights are nicely on the linear trend lines for some carriers like 'AA', 'NK', but not so much for 'F9', 'VX'.
+フライトを表す点は、 'AA'、'NK'などの一部の航空会社では線形トレンドライン上にうまく収まりますが、'F9'や'VX'ではそれほどではありません。
 
-### K-means Clustering
+### k平均クラスタリング
 
-Now as you might have noticed though, most of the data are gathered around 0 for both the departure and the arrival delays. And the linear relationship between the two measures could be different depends on the range of the delay times.
+お気づきかもしれませんが、ほとんどのデータは出発遅延と到着遅延の両方で原点0の周りに集められます。そして、2つのメジャー(数値情報を持つ列)の線形関係は、遅延時間の範囲によって異なる可能性があります。
 
-So we can group the flights based on the arrival and departure delay times. If you want to group the data automatically based on the two or more measures, you can use one of the clustering algorithms called 'K-means'.
+したがって、到着と出発の遅延時間に基づいてフライトをグループ化することができます。 2つ以上のメジャー(数値情報を持つ列)に基づいてデータを自動的にグループ化する場合は、「K平均」と呼ばれるクラスタリングアルゴリズムの1つを使用できます。
 
-Select 'Run Analytics' -> 'Cluster with 'K-means'.
+'分析を実行する'  -> 'K平均法でクラスタリング'を選択します。
 
 ![](images/quick-start-69.png)
 
-In the opened dialog 'Cluster with K-means', select 'DEP_DELAY' and 'ARR_DELAY' columns under 'Select Columns' section, and set '5' as the number of the clusters it will create, and click 'Run' button.
+
+開かれたダイアログ「K平均法でクラスタリング」で、「列を選択」セクションの「DEP_DELAY」列と「ARR_DELAY」列を選択し、作成するクラスタの数として「5」を設定し、「実行」ボタンをクリックします。
 
 ![](images/quick-start-70.png)
 
-You can see what has just happened better in Table view. Scroll to the very right, and you will notice that there is a new column called 'cluster' which has the cluster id for each row (flight).
+テーブル・ビューに行くと、今何が起こったのかを見ることができます。右側にスクロールすると、各行（フライト）にクラスターIDを持つ「cluster」という新しい列が追加されたことがわかります。
 
 ![](images/quick-start-72.png)
 
-Now, go back to Viz view, and assign this 'cluster' column to Color.
+さて、Vizビューに戻り、この 'cluster'列を色に割り当てます。
 
 ![](images/quick-start-85.png)
 
-Now, as you notice though, the clustering calculation was done against the entire data set. If you remove 'CARRIER' from Repeat By, then you can see how the 5 clustered groups look like.
+お気付きのように、クラスタリング計算はデータセット全体に対して行われました。「繰り返し」から 'CARRIER'を取り除くと、クラスタ化された5つのグループの外観を確認できます。
 
 ![](images/quick-start-87.png)
 
-Let's say we want to cluster the data for each carrier, meaning we want to see 5 clustered groups for each carrier. This can be done by grouping the data frame before calculating the cluster IDs. This is very similar to what you have done with 'Top N' operation before.
+航空会社毎にデータをクラスタ化したいとしましょう。つまり、航空会社毎に5つのクラスタ化されたグループを作りたいということです。これは、クラスタIDを計算する前にデータフレームをグループ化することによって実行できます。これは前の「トップN」操作で行ったことと非常によく似ています。
 
-First, make sure that you 'Pin' the chart before going to the next step.
+まず、次のステップに進む前に、チャートを「ピン」していることを確認してください。
 
-Then, select 'Filter' step, which is gray colored because it's coming from the main data frame.
+次に、[フィルタ]ステップを選択します。このステップは、メインデータフレームから派生したものであるため、灰色の色をしています。
 
 ![](images/quick-start-86.png)
 
-Select 'Group By' from 'Add' button menu to add this grouping step.
+このグループ化ステップを追加するには、[追加]ボタンメニューから[グループ化]を選択します。
 
 ![](images/quick-start-88.png)
 
-And, select 'CARRIER' column.
+そして、「CARRIER」列を選択します。
 
 ![](images/quick-start-89.png)
 
-This will automatically run the next step of 'K-means Clustering' because the currently displayed chart is 'Pinned' to the step.
+現在表示されているグラフがステップに「ピン」されているため、これは自動的に次のステップ「K平均クラスタリング」を実行します。
 
 ![](images/quick-start-90.png)
 
-Lastly, we can show Trend Line. This time, we can try 'Polynomial (GAM)' as Type and select 'Data Range for Each Group'.
+最後に、トレンドラインを表示することができます。今回は、タイプとして「多項式（GAM）」を、線の長さとして「各グループのデータ範囲」を選択します。
 
 ![](images/quick-start-91.png)
 
-Unlike 'Linear Regression', which is to build linear regression models assuming it can draw a linear line to express the correlation between a given pair of two measures, 'Polynomial (GAM)' is to build general additive models assuming that it can draw a smooth curve between a given pair of two measures by optimizing for the 'local fitting' or for each divided subsection of a given data.
+与えられた2つのメジャー(数値情報を持つ列)間の相関を表す直線を描くことができる、線形回帰モデルを構築する「線形回帰」に対し、「多項式（GAM）」は「ローカルフィッティング」または所与のデータの分割された部分に最適化して、与えられた２つのメジャー(数値情報を持つ列)間に滑らかなカーブを描くことができる一般化加法モデルを作成します。
 
-If you are not sure about this, no worry, Think of Linear Regression is a way for drawing a linear line and Polynomial is a way for drawing a smooth line / curve.
+簡単に言えば、線形回帰は直線を描く方法であり、多項式は滑らかな線/曲線を描く方法です。
 
-As you can see the above, the polynomial smooth curves tend to look more like linear lines as the delay times become larger. This means that it's easier to predict how late the arrival time will be if we know how late the departure time was beforehand, although there are a few exceptions like F9, HA, etc.
+上記を見ると分かるように、多項式の滑らかな曲線は、遅延時間が大きくなるにつれて直線的な線のように見える傾向があります。これは、F9、HAなどのいくつかの例外がありますが、出発時刻がどれくらい遅いかを事前に知っていれば、到着時刻がどのくらい遅くなるかを予測する方が簡単であることを意味します。
 
-## Reproduce Analysis Works
+## 分析作業を再現する
 
-Now, let's say you have just received a new flight delay data set for the next month, September, and want to run the same data transformation and analysis you have done before. There are two simple ways to do this.
+今度は、9月の翌月の新しい飛行遅延データセットを受け取ったばかりで、前に行ったのと同じデータ変換と解析を実行したいとします。これを行うには2つの簡単な方法があります。
 
-1. Duplicate Data Frame and Switch Source Data
-2. Copy Steps from One Data Frame to Another
+1.データフレームを複製しソースデータを入れ替える
 
-For this exercise, first, download the September data set from this link.
+2.データフレームから別のデータフレームへステップをコピーする
+
+この演習では、まず、このリンクから9月のデータセットをダウンロードしてください。
 
 * [Flight delay 2016 September data](http://download2.exploratory.io/data/airline-delay-2016-09.csv)
 
-And here's how.
+そして以下が手順です。
 
-### 1. Duplicate Data Frame and Switch Source Data
+### 1. データフレームを複製しソースデータを入れ替える
 
-The simplest way to do this is to duplicate the current data frame and save it as a different name.
+これを行う最も簡単な方法は、現在のデータフレームを複製し、別の名前で保存することです。
 
 ![](images/quick-start-rep7.png)
 
-Check 'Include Viz' checkbox to copy all the charts along, and type a data frame name.
+[Vizを含む]チェックボックスをオンにして、すべてのチャートをコピーし、データフレーム名を入力します。
 
 ![](images/quick-start-rep8.png)
 
-Once it's copied, then go to the new data frame, switch the data source by clicking on 'Gear' icon.
+コピーが完了したら、新しいデータフレームに移動し、[歯車]アイコンをクリックしてデータソースを切り替えます。
 
 ![](images/quick-start-rep9.png)
 
-Click 'Change File' button and select the above CSV file 'airline_delay-2016-09.csv', and click 'Update' button at the bottom.
+[ファイルの変更]ボタンをクリックし、上記のCSVファイル 'airline_delay-2016-09.csv'を選択し、下部にある[更新]ボタンをクリックします
 
 ![](images/quick-start-rep10.png)
 
-You will see that all the data transformation steps are automatically applied to this new data set. And when you go to Viz tab, you can see the same chart setting for September data. In this month, we can see that 'F9' is the carrier that accumulated much larger departure delay times than the others!
+すべてのデータ変換ステップがこの新しいデータセットに自動的に適用されることがわかります。 Vizタブに移動すると、9月のデータと同じグラフ設定が表示されます。今月は、「F9」が他のものよりもずっと大きな出発遅延時間を積み上げた航空会社であることがわかります！
 
 ![](images/quick-start-rep11.png)
 
-The advantage of this option is that you can keep not only the data wrangling steps but also all the charts inside the data frame. The downside of this option is that you end up copying all the steps and branches together, so you will need to clean up after the duplication. And this is why you might want to consider the next option.
+このオプションの利点は、データラングリングのステップだけでなく、データフレーム内のすべてのチャートも保持できることです。このオプションの欠点は、すべてのステップとブランチを一緒にコピーすることになるため、複製後にクリーンアップする必要があることです。そして、これがあなたが次の選択肢を検討したい理由です。
 
-### 2. Copy Steps from One Data Frame to Another
+### 2. データフレームから別のデータフレームへステップをコピーする
 
-Import the above CSV file as a new data frame.
+上記のCSVファイルを新しいデータフレームとしてインポートします。
 
 ![](images/quick-start-rep1.png)
 
-Go back to the original data frame 'airline_delay_2016-08', and click on 'Select' button at the top of the steps at the right hand side.
+元のデータフレーム「airline_delay_2016-08」に戻り、右側のステップの上部にある「選択」ボタンをクリックします。
 
 ![](images/quick-start-rep2.png)
 
-Select the steps you want to copy, in the picture below, I'm copying only from 'Mutate' step to 'Left Join' steps, but you can copy all the steps as well. And, select 'Copy Steps' from 'Action' button dropdown list.
+コピーするステップを選択します。下の図では、「Mutate」ステップから「Left Join」のステップまでのみコピーしていますが、すべてのステップもコピーできます。「アクション」ボタンのドロップダウンリストから「コピーステップ」を選択します。
 
 ![](images/quick-start-rep3.png)
 
-Then, go back to the new data frame 'airline_delay_2016-09'.
+その後、新しいデータフレーム 'airline_delay_2016-09'に戻ります。
 
 ![](images/quick-start-rep4.png)
 
-And select 'Paste Steps' from the action menu at 'Source' step at the right hand side.
+右側の「ソース」ステップのアクションメニューから「ペーストステップ」を選択します。
 
 ![](images/quick-start-rep5.png)
 
-This will add those copied steps to this data frame so that you will end up getting the data that has all the data transformation operations applied.
+これにより、これらのコピーされたステップがこのデータフレームに追加され、すべてのデータ変換操作が適用されたデータが取得されます。
 
 ![](images/quick-start-rep6.png)
 
-Very simple!
+とてもシンプルですね！
 
+## チャートをシェア
 
-## Share Chart
+興味深い洞察を見つけたら、他の人と共有したいかもしれません。 Exploratoryを使用すると、グラフだけでなく、データラングリングの手順をチャートと簡単に共有できるため、他の人が簡単に作業を再現できるようになります。
 
-Once you find an interesting insight you might want to share it with others. With Exploratory, you can easily share not just the chart, but also the data wrangling steps along with the chart so that others will be able to reproduce your work easily.
-
-Select 'Share Viz' under 'More' button.
+[More]ボタンの下の[Share Viz]を選択します。
 
 ![](images/quick-start-74.png)
 
-Fill in Title and Description.
+タイトルと説明を入力します。
 
 ![](images/quick-start-75.png)
 
-Select 'Private', if you like to share it privately.
+プライベートで共有する場合は、[プライベート]を選択します。
 
-And, click 'Share' button.
+そして、[共有]ボタンをクリックします。
 
-Once it's published, you will see 'Add or more users' link.
+公開されると、[新規またはユーザーを追加]リンクが表示されます。
 
 ![](images/quick-start-76.png)
 
-Clicking on the link will take you to the published page with 'Share' dialog opened.
+リンクをクリックすると、[共有]ダイアログが開いた状態で公開されたページに移動します。
 
 ![](images/quick-start-77.png)
 
-By clicking on 'Enable' link, you can allow anyone with this uniquely generated URL to open this chart page. Note that, in case you have shared it publicly, then you can simply copy the page URL and share it with others, without needing to enable this unique URL.
+[有効にする]リンクをクリックすると、この一意に生成されたURLを持つ誰でもこのチャートページを開くことができるようになります。パブリックとして公開して共有している場合は、この一意のURLを有効にすることなく、ページのURLをコピーして他のユーザーと共有することができます。
 
 ![](images/quick-start-78.png)
 
-On the published chart page, you or others you shared with can click 'Download' button and select 'Download EDF' to download the chart in a reproducible format.
+公開されたチャートページで、あなた、または共有された他のユーザーは、[ダウンロード]ボタンをクリックし[EDFをダウンロード]を選択すると、再現可能な形式でチャートをダウンロードできます。
 
 ![](images/quick-start-79.png)
 
-This means, others can import the downloaded EDF file into their Exploratory and will see not only the chart but also all the data wrangling steps to produce the chart data.
+これは、他のユーザーがダウンロードされたEDFファイルをExploratoryにインポートすることができ、チャートだけでなく、チャートデータを生成するためのすべてのデータラングリングの手順も見ることができることを意味します。
 
 
-## Create Note
+## ノートを作成する
 
-Finally, you can create your analysis report by creating Note.
+最後に、ノートを作成して分析レポートを作成することができます。
 
-Click 'Plus' button next to 'Note'.
+「ノート」の横にある「プラス」ボタンをクリックします。
 
 ![](images/quick-start-80.png)
 
-Type a name in the pop-up and click 'Create' button.
+ポップアップに名前を入力し、[作成]ボタンをクリックします。
 
-This is a Rich Text Editor, so you can write anything you like. Highlighting the text will prompt you a formatting menu.
+これはリッチテキストエディタなので、好きなものを書くことができます。テキストを強調表示すると、書式設定メニューが表示されます。
 
 ![](images/quick-start-83.png)
 
-Every time you hit Enter key to start a new line, you will see 'Plus' button at the beginning of the line.
+Enterキーを押して新しい行を開始するたびに、行頭に「Plus」ボタンが表示されます。
 
 ![](images/quick-start-83_1.png)
 
-By clicking on the button you will see a chart icon.
+ボタンをクリックすると、チャートアイコンが表示されます。
 
 ![](images/quick-start-83_2.png)
 
-You can click this to get a Chart picker dialog. Select a data frame where the chart were created, select the chart, and click 'OK' button.
+これをクリックすると、チャート選択ダイアログが表示されます。グラフが作成されたデータフレームを選択し、グラフを選択して[OK]ボタンをクリックします。
 
 ![](images/quick-start-82.png)
 
 
-Once you finish writing the report, you can either publish it so that you can share by URL or save it in a HTML document.
+レポートの作成が終了したら、URLで共有したり、HTMLドキュメントに保存したりすることができます。
 
 ![](images/quick-start-84.png)
 
-Lastly, you can click Refresh button to refresh all the charts that are in the Note. This will reload the data from the underlying data sources like databases, files, etc. for each chart.
+最後に、[更新]ボタンをクリックして、ノート内のすべてのグラフを更新することができます。これにより、各グラフのデータベース、ファイルなどの基礎となるデータソースからデータがリロードされます。
