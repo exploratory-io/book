@@ -4,7 +4,7 @@
 * [Tutorials (English)](tutorials/intro.md)
    * [Getting Started Guide](tutorials/quick-start.md)
 * [Tutorials (Japanese)](tutorials/intro_ja.md)   
-
+   * [Getting Started Guide (Japanese)](tutorials/quick-start_ja.md)
 * [Product Features]()
   * [Note](note.md)
   * [Steps (Right-hand side)](steps.md)
