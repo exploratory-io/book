@@ -130,7 +130,10 @@
    * [Survival Curve](ml/survival-curv.md)
    * [Cox Regression](ml/cox-regression.md)
    * [Market Basket](ml/arules.md)
-   * [Evaluate Prediction](ml/evaluate.md)
+   * [Evaluate Prediction - Regression](ml/evaluate_regression.md)
+   * [Evaluate Prediction - Binary](ml/evaluate_binary.md)
+   * [Calculate ROC](ml/do_roc.md)
+   * [Evaluate Prediction - Multiclass](ml/evaluate_multi.md)
 
 * [Text Analysis]()
    * [Text Mining](ml/text-mining.md)
