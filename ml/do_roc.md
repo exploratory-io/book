@@ -9,7 +9,7 @@ There are two ways to access. One is to access from 'Add' (Plus) button.
 ![](images/do_roc_add.png)
 
 Another way is to access from a column header menu.
-![](images/co_roc_col.png)
+![](images/do_roc_col.png)
 
 ## How to Use?
 
