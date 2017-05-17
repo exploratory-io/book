@@ -10,7 +10,7 @@ There are two ways to access. One is to access from 'Add' (Plus) button.
 
 ![](images/do_tfidf_param.png)
 
-* Select a column as document id - Set a grouping column for a set of the tokens. In most of the cases this would be a document id column.
+* Select a column as document id - A column considered as document id. If you run [do_tokenize](./do_tokenize.md) beforehand, this can be document_id.
 * Select a column that has tokenized text - Set a column that has tokens. This is "token" column if it's tokenized by [do_tokenize](./do_tokenize.md) function.
 * TF Weight (Optional) - The default is "raw".
   * "raw" is count of a term in a document.
