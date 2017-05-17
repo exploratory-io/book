@@ -1,9 +1,9 @@
-# Calculate tf-idf
+# Calculate TF-IDF
 
 ## How to Access This Feature
 
 ### From + (plus) Button
-There are two ways to access. One is to access from 'Add' (Plus) button.
+You can access it from 'Add' (Plus) button. "Text Mining..." -> "Calculate TF-IDF".
 ![](images/do_tfidf_add.png)
 
 ## How to Use?
