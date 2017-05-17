@@ -134,6 +134,9 @@
    * [Evaluate Prediction - Binary](ml/evaluate_binary.md)
    * [Calculate ROC](ml/do_roc.md)
    * [Evaluate Prediction - Multiclass](ml/evaluate_multi.md)
+   * [Extract Summary of Fit](ml/model_stats.md)
+   * [Extract Parameter Estimates](ml/model_coef.md)
+   * [Run ANOVA Test](ml/model_anova.md)
 
 * [Text Analysis](ml/text-mining.md)
    * [Tokenize Text](ml/do_tokenize.md)
