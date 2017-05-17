@@ -135,8 +135,11 @@
    * [Calculate ROC](ml/do_roc.md)
    * [Evaluate Prediction - Multiclass](ml/evaluate_multi.md)
 
-* [Text Analysis]()
-   * [Text Mining](ml/text-mining.md)
+* [Text Analysis](ml/text-mining.md)
+   * [Tokenize Text](ml/do_tokenize.md)
+   * [Create N-gram Tokens](ml/do_ngram.md)
+   * [Calculate tf-idf](ml/do_tfidf.md)
+   * [Count Text Pairs](ml/pair_count.md)
 
 * [Extend with R]()
    * [R Package Install](r_package.md)
