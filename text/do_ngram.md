@@ -1,9 +1,9 @@
-(# Create N-gram Tokens
+# Create N-gram Tokens
 
 ## How to Access This Feature
 
 ### From + (plus) Button
-You can access it from 'Add' (Plus) button. "Text Mining..." -> "Tokenize Text".
+You can access it from 'Add' (Plus) button. "Text Mining..." -> "Create N-Gram Tokens".
 ![](images/do_ngram_add.png)
 
 ## How to Use?

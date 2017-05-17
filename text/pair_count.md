@@ -5,7 +5,7 @@
 Count pairs of tokens that appear simultaneously within a document.
 
 ### From + (plus) Button
-There are two ways to access. One is to access from 'Add' (Plus) button.
+You can access it from 'Add' (Plus) button. "Text Mining..." -> "Count Text Pairs".
 ![](images/pair_count_add.png)
 
 ## How to Use?
