@@ -138,11 +138,11 @@
    * [Extract Parameter Estimates](ml/model_coef.md)
    * [Run ANOVA Test](ml/model_anova.md)
 
-* [Text Analysis](ml/text-mining.md)
-   * [Tokenize Text](ml/do_tokenize.md)
-   * [Create N-gram Tokens](ml/do_ngram.md)
-   * [Calculate tf-idf](ml/do_tfidf.md)
-   * [Count Text Pairs](ml/pair_count.md)
+* [Text Analysis](text/main.md)
+   * [Tokenize Text](text/do_tokenize.md)
+   * [Create N-gram Tokens](text/do_ngram.md)
+   * [Calculate tf-idf](text/do_tfidf.md)
+   * [Count Text Pairs](text/pair_count.md)
 
 * [Extend with R]()
    * [R Package Install](r_package.md)
