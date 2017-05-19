@@ -75,6 +75,7 @@
    * [Row as header](wrangling/row_as_header.md)
    * [Convert to NA](wrangling/convert_to_na.md)
    * [Ungroup](wrangling/ungroup.md)
+   * [Unnest](wrangling/unnest.md)
    * [Remove Empty Rows](wrangling/remove_empty_rows.md)
    * [Remove Empty Columns](wrangling/remove_empty_cols.md)
    * [Clean Column Names](wrangling/clean_names.md)
