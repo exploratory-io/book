@@ -3,12 +3,13 @@
 * [Introduction](README.md)
 * [Tutorials (English)](tutorials/intro.md)
    * [Getting Started Guide](tutorials/quick-start.md)
-* [Tutorials (Japanese)](tutorials/intro_ja.md)   
-   * [Getting Started Guide (Japanese)](tutorials/quick-start_ja.md)
+* [Tutorials (日本語)](tutorials/intro_ja.md)   
+   * [Getting Started Guide　(日本語)](tutorials/quick-start_ja.md)
 * [Product Features]()
   * [Note](note.md)
   * [Steps (Right-hand side)](steps.md)
   * [Branch](branch/branch.md)
+
 
 * [Data Import](data_import.md)
    * [File Data]()
@@ -77,6 +78,7 @@
    * [Remove Empty Rows](wrangling/remove_empty_rows.md)
    * [Remove Empty Columns](wrangling/remove_empty_cols.md)
    * [Clean Column Names](wrangling/clean_names.md)
+
 
 * [Visualization](chart.md)
    * [Bar](viz/bar.md)
