@@ -1,5 +1,13 @@
 # Release Note
 
+## v 3.4.6.0
+
+- Install fails with an error message "Failed to install R packages. This happens sometimes due to 'Real Time Virus Scan' or other reasons.". (Windows only)
+- Displaying Summary View fails with an error message "Error in hist.default(x, plot = FALSE) : invalid number of 'breaks'".
+
+### Bug Fixes
+
+
 ## v 3.4.5.2
 
 ### Bug Fixes
