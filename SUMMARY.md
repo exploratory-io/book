@@ -139,7 +139,7 @@
    * [Evaluate Prediction - Multiclass](ml/evaluate_multi.md)
    * [Prediction](ml/prediction.md)
    * [Prediction - Binary Classification](ml/prediction_binary.md)
-   * [Prediction - Survival Model (Cox Regression)](ml/prediction_coxph.md)
+   * [Prediction - Survival Model](ml/prediction_coxph.md)
    * [Simulate Survival Curve](ml/prediction_survfit.md)
    * [Extract Summary of Fit](ml/model_stats.md)
    * [Extract Parameter Estimates](ml/model_coef.md)
