@@ -3,7 +3,7 @@
 Simulate Survival Curve for a cohort with Survival Model.
 
 ## Input Data
-Input is [Survival Model Data Frame](./cox-regression.html).
+Before simulating Survival Curve, you need to create Survival Model (Cox Regression) following [this instruction](./cox-regression.html).
 
 ## How to Access This Feature
 
