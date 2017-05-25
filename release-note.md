@@ -4,6 +4,8 @@
 
 ### Bug Fixes
 
+Released on 5/20/2017
+
 - Install fails with an error message "Failed to install R packages. This happens sometimes due to 'Real Time Virus Scan' or other reasons.". (Windows only)
 - Displaying Summary View fails with an error message "Error in hist.default(x, plot = FALSE) : invalid number of 'breaks'".
 
@@ -12,6 +14,8 @@
 
 ### Bug Fixes
 
+Released on 5/11/2017
+
 - Cannot open projects on Windows with an error message "Retry failed...". (Windows Only)
 - Cannot create a new project on Windows with loading icon. (Windows Only)
 - Cannot open the custom color picker dialog. (Mac only) 
@@ -19,12 +23,16 @@
 
 ## v 3.4.5.1
 
+Released on 5/11/2017
+
 ### Bug Fixes
 
 - Failed to run Time Series Forecast due to the 'zoo' package not installed.
 - Failed to run Time Series Forecast when the existing command with 'growth' parameter.
 
 ## v 3.4.5
+
+Released on 5/9/2017
 
 ### New Features
 
