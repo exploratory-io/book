@@ -1,5 +1,46 @@
 # Release Note
 
+## v 3.5
+
+Released on 6/1/2017
+
+### New Features
+
+- Annotation
+- Causal Impact
+- UI translation - Japanese
+
+### Enhancements
+
+- Separate command - Fixed width position support
+- Pivot Table - Color / Group
+- Pivot Table - Multiple Measures
+- Line Chart - you can control the line width now.
+- Chart: Error Bar - Support Standard Deviasion
+- Performance improvements - Overall
+
+- SVD UI refresh
+- Pivot Data Export: Support setting delimiters.
+- Export Data: JSON output support
+- Installer improvements
+Chart: show '%' on axis labels, in balloons, values on plot area for % based chart
+GSheet Export: Support Overriding Existing Sheet
+Data Import Dialog Preview Table: Show # of Columns
+- Recode UI supports numeric data type columns now.
+arrange() by multiple column select
+
+
+### Bug Fixes
+
+- Map GeoJSON - The min number in the legend was not reflecting the actual data.
+- Tokenize Text - Regular Expression as the separator was not producing appropriate results.
+- Target data frame is not showing up in the list in Join dialog when the last step is not selected.
+Pivot should return a better message when the result of previous step is empty
+Summary: POSIXct shows only 1 bar in histogram
+Projects are not displayed in project list
+Tokenize: Regular Expression option is not working
+Floating point numbers are not showing up correctly
+
 ## v 3.4.6.0
 
 ### Bug Fixes
@@ -12,18 +53,21 @@ Released on 5/20/2017
 
 ## v 3.4.5.2
 
+Released on 5/18/2017
+
 ### Bug Fixes
 
 Released on 5/11/2017
 
 - Cannot open projects on Windows with an error message "Retry failed...". (Windows Only)
 - Cannot create a new project on Windows with loading icon. (Windows Only)
-- Cannot open the custom color picker dialog. (Mac only) 
+- Cannot open the custom color picker dialog. (Mac only)
 
 
 ## v 3.4.5.1
 
-Released on 5/11/2017
+
+Released on 5/16/2017
 
 ### Bug Fixes
 
@@ -32,7 +76,8 @@ Released on 5/11/2017
 
 ## v 3.4.5
 
-Released on 5/9/2017
+
+Released on 5/14/2017
 
 ### New Features
 
