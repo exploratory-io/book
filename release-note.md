@@ -1,5 +1,47 @@
 # Release Note
 
+## v 3.5
+
+Released on 6/5/2017
+
+[Release announcement blog post](https://blog.exploratory.io/exploratory-v3-5-released-ac37f05b89a)
+
+### New Features
+
+- Annotation for Steps
+- Causal Impact Analysis
+- UI translation - Japanese
+
+### Enhancements
+
+- Performance improvements - Overall
+- Separate command - Fixed width position support
+- Pivot Table - Row with Group Level support for Color Scale and ''% of Total' calculation
+- Pivot Table - Multiple Measures support - You can add multiple columns to Value.
+- Line Chart - You can control the line width now.
+- Chart: Error Bar - Standard Deviation support.
+- SVD UI refresh
+- Pivot Data Export: Support setting delimiters.
+- Export Data: JSON output support
+- Installer improvements
+- Chart: show '%' on axis labels, in balloons, values on plot area for % based chart
+- Google Sheet Export: Support Overriding Existing Sheet
+- Data Import Dialog Preview Table - It now shows the number of the columns along with rows.
+- Recode UI - It now supports numeric data type columns.
+- Arrange (Sorting) - You can select multiple columns and select 'Arrange' from the column header menu.
+
+
+### Bug Fixes
+
+- Map GeoJSON - The min number in the legend was not reflecting the actual data.
+- Tokenize Text - Regular Expression as the separator was not producing appropriate results.
+- Target data frame is not showing up in the list in Join dialog when the last step is not selected.
+- Pivot should return a better message when the result of previous step is empty
+- Summary: POSIXct shows only 1 bar in histogram
+- Projects are not displayed in project list when there is an underlying error with the package validation.
+- Floating point numbers are not showing up correctly
+
+
 ## v 3.4.6.0
 
 ### Bug Fixes
@@ -12,18 +54,21 @@ Released on 5/20/2017
 
 ## v 3.4.5.2
 
+Released on 5/18/2017
+
 ### Bug Fixes
 
 Released on 5/11/2017
 
 - Cannot open projects on Windows with an error message "Retry failed...". (Windows Only)
 - Cannot create a new project on Windows with loading icon. (Windows Only)
-- Cannot open the custom color picker dialog. (Mac only) 
+- Cannot open the custom color picker dialog. (Mac only)
 
 
 ## v 3.4.5.1
 
-Released on 5/11/2017
+
+Released on 5/16/2017
 
 ### Bug Fixes
 
@@ -32,7 +77,8 @@ Released on 5/11/2017
 
 ## v 3.4.5
 
-Released on 5/9/2017
+
+Released on 5/14/2017
 
 ### New Features
 
