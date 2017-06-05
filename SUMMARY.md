@@ -133,6 +133,7 @@
    * [Survival Curve](ml/survival-curv.md)
    * [Survival Model (Cox Regression)](ml/cox-regression.md)
    * [Market Basket](ml/arules.md)
+   * [Marketing Impact](ml/causal_impact.md)
    * [Evaluate Prediction - Regression](ml/evaluate_regression.md)
    * [Evaluate Prediction - Binary](ml/evaluate_binary.md)
    * [Calculate ROC](ml/do_roc.md)
