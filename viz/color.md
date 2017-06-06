@@ -21,20 +21,39 @@ The default is Stacked. You can switch it to Grouped bar chart from Bar Style op
 
 For Line chart, you can assign a column with discrete values (text column) to make it a multiple series line chart.
 
+## Multi-Series Area chart
+
+For Area chart, you can assign a column with discrete values (text column) to make it a multiple series area chart.
+
 
 ## Grouped Boxplot chart 
 
 For the boxplot chart, you can assign a column with discrete values (text column) to make it grouped boxplot chart.
 
-![](images/boxplot.png)
+## Histogram
 
+For the histograom, you can assign a column with discrete values (text column) to make it grouped histogram chart.
 
 ## Scatter chart 
 
-For the boxplot chart, you can assign a column with discrete values (text column) to make it grouped boxplot chart.
+For the scatter chart, you can assign a column with either discrete values (text column) to make it a grouped chart or continuous values (number column) to make it a grouped chart by value buckets. 
 
-![](images/boxplot.png)
 
+## Map (Long/Lat) 
+
+For the Map (Long/Lat), you can assign a column with either discrete values (text column) to make it a grouped chart or continuous values (number column) to make it a grouped chart by value buckets.
+
+## Map (GeoJSON)
+
+For the Map (GeoJSON), you can assign a column with either discrete values (text column) to make it a grouped chart  or continuous values (number column) to make it a grouped chart by value buckets. 
+
+## Heatmap 
+
+For the Heatmap, you can assign a column with continuous values (number column). 
+
+## Contour
+
+For the Contour chart, you can assign a column with either discrete values (text column) or continuous values (number column) 
 
 
 
@@ -50,11 +69,22 @@ You can switch the color palette for Bar, Line, and Area charts.
 
 ## Customize the color palette
 
-You can assign your preferred color to Bar, Line, and Area charts.
+You can create your own color palettes for discrete values. You can use it on Bar, Line, Area, Boxplot, Map and other charts that accept a column with discrete values at color. Here is how to build your own color palettes.
 
-1. Click the gear icon next to 'Color' label text and select 'Custom' from Color Palette dropdown menu.
-2. Type your preferred color in hex-code and use comma to separate the values.
+* Click the gear icon next to 'Color' label text and select 'Custom' from Color Palette dropdown.
+* Click "Edit" right next to the "Custom Color Palette" to open the Color Palette dialog. 
 
-Take a look at this post for more details.
+![](images/build_palette1.png)
 
-* [Custom Color Palettes and Color Picker](https://blog.exploratory.io/exploratory-v3-2-released-da940b794043)
+
+* Click "Add" button to add a new Color Palette. It opens up a Color Palette Builder dialog
+
+![](images/build_palette2.png)
+
+* Click "Add" to add a color to the Color Palette. Click the box to change the color. Once you finish, set a Display Name for this Color Palette and click "Add" button to add this Color Palette to the system.
+
+![](images/build_palette3.png)
+
+* Make sure your palette is added to the system. 
+
+![](images/build_palette4.png)
