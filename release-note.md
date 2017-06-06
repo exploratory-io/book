@@ -42,7 +42,7 @@ Released on 6/5/2017
 - Floating point numbers are not showing up correctly
 - Transform Step - When a branch is deleted, it was not removed from the branch list of the Transform Step from which the deleted branch was starting.
 - When a join target data frame was renamed, steps after the join step kept old data before rename, and was not automatically refreshed by further updates in the join target data frame.
-- Cannot build a Survival Model with an error message "object 'Ccoxmart' not found"
+- Cannot build a Survival Model with an error message "object 'Ccoxmart' not found". (Windows Only)
 
 
 ## v 3.4.6.0
