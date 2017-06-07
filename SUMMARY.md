@@ -108,6 +108,16 @@
    * [Save as Exploratory Data File](viz/save-as-edf.md)
    * [Share/Schedule](viz/schedule.md)
 
+* [Export]()
+   * [Correlation](stats/correlation.md)
+   * [Distance](stats/dist.md)
+   * [Cosine Similarity](stats/sim.md)
+   * [SVD](stats/svd.md)
+
+* [Share]()
+  * [Chart](export/chart.md)
+  * [Data](export/data.md)
+
 
 * [Statistics]()
    * [Correlation](stats/correlation.md)
