@@ -13,5 +13,5 @@ You can access it from column menu of list columns.
 
 * Column - List column to unnest.
 * Drop other list columns (Optional) - The default is TRUE. Set whether the other list column(s) to be dropped or not.
-* Column Name Separator (Optional) - If this is used, it creates a new column of list keys, giving a unique identifer. This is most useful if the list column is named.
-* List Key Column Name (Optional) - If this is used, the names of unnested data frame columns are combined with list keys separated by the text.
+* Column Name Separator (Optional) - If this is used, the names of unnested data frame columns are combined with list keys separated by the text.
+* List Key Column Name (Optional) - If this is used, it creates a new column of list keys, giving a unique identifer. This is most useful if the list column is named.
