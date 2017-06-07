@@ -134,7 +134,7 @@
    * [Linear Regression](ml/linear-regression.md)
    * [Logistic Regression](ml/logistic-regression.md)
    * [GLM](ml/glm.md)
-   * [Multinomial Logistic Regression](ml/multinom.md)
+   * [Multinomial Logistic Regression](ml/multinomial-regression.md)
    * [K-means Clustering](ml/kmeans.md)
    * [Random Forest](ml/random-forest.md)
    * [XGBoost](ml/xgboost.md)
