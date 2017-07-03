@@ -1,5 +1,23 @@
 # Release Note
 
+## v 3.5.0.2
+
+Released on 6/9/2017
+
+### Bug Fixes
+
+- Transformation Step - "Copy as Data Frame" menu is not visible when on a Branch.
+- Heatmap/Contour - Margin options do not show up.
+- Boxplot - X axis labels do not show up with "Repeat by".
+- Market Impact Analysis fails with various errors such as "Error in parse(test = x, keep.source = FALSE)", when market column has values with special characters or starts with number.
+
+## v 3.5.0.1
+
+Released on 6/6/2017
+
+### Bug Fixes
+- Typos in UI labels.
+
 ## v 3.5
 
 Released on 6/5/2017

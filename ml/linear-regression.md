@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Linear regression model is a statistical model with an assumption that linear relationships are there between explanatory variable and predictor variables.
+Linear regression model is a statistical model with an assumption that linear relationships are there between explanatory variable and a response variable.
 
 ## How to Access?
 
