@@ -108,6 +108,16 @@
    * [Save as Exploratory Data File](viz/save-as-edf.md)
    * [Share/Schedule](viz/schedule.md)
 
+* [Export]()
+   * [Correlation](stats/correlation.md)
+   * [Distance](stats/dist.md)
+   * [Cosine Similarity](stats/sim.md)
+   * [SVD](stats/svd.md)
+
+* [Share]()
+  * [Chart](export/chart.md)
+  * [Data](export/data.md)
+
 
 * [Statistics]()
    * [Correlation](stats/correlation.md)
@@ -124,7 +134,7 @@
    * [Linear Regression](ml/linear-regression.md)
    * [Logistic Regression](ml/logistic-regression.md)
    * [GLM](ml/glm.md)
-   * [Multinomial Logistic Regression](ml/multinom.md)
+   * [Multinomial Logistic Regression](ml/multinomial-regression.md)
    * [K-means Clustering](ml/kmeans.md)
    * [Random Forest](ml/random-forest.md)
    * [XGBoost](ml/xgboost.md)
@@ -133,6 +143,7 @@
    * [Survival Curve](ml/survival-curv.md)
    * [Survival Model (Cox Regression)](ml/cox-regression.md)
    * [Market Basket](ml/arules.md)
+   * [Marketing Impact](ml/causal_impact.md)
    * [Evaluate Prediction - Regression](ml/evaluate_regression.md)
    * [Evaluate Prediction - Binary](ml/evaluate_binary.md)
    * [Calculate ROC](ml/do_roc.md)

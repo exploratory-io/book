@@ -8,10 +8,29 @@ Released on 8/5/2017
 
 ### Enhancements
 
-- Pivot - Grand Total support 
+- Pivot - Grand Total support
 
 ### Bug Fixes
 
+
+
+## v 3.5.0.2
+
+Released on 6/9/2017
+
+### Bug Fixes
+
+- Transformation Step - "Copy as Data Frame" menu is not visible when on a Branch.
+- Heatmap/Contour - Margin options do not show up.
+- Boxplot - X axis labels do not show up with "Repeat by".
+- Market Impact Analysis fails with various errors such as "Error in parse(test = x, keep.source = FALSE)", when market column has values with special characters or starts with number.
+
+## v 3.5.0.1
+
+Released on 6/6/2017
+
+### Bug Fixes
+- Typos in UI labels.
 
 ## v 3.5
 
@@ -31,8 +50,10 @@ Released on 6/5/2017
 - Separate command - Fixed width position support
 - Pivot Table - Row with Group Level support for Color Scale and ''% of Total' calculation
 - Pivot Table - Multiple Measures support - You can add multiple columns to Value.
-- Line Chart - You can control the line width now.
+- Line Chart - You can control the line width and circle size now.
 - Chart: Error Bar - Standard Deviation support.
+- Map GeoJSON - Extra label column support
+- Chart Tab - Larger thumbnail images on hover
 - SVD UI refresh
 - Pivot Data Export: Support setting delimiters.
 - Export Data: JSON output support
@@ -43,7 +64,6 @@ Released on 6/5/2017
 - Recode UI - It now supports numeric data type columns.
 - Arrange (Sorting) - You can select multiple columns and select 'Arrange' from the column header menu.
 
-
 ### Bug Fixes
 
 - Map GeoJSON - The min number in the legend was not reflecting the actual data.
@@ -52,7 +72,11 @@ Released on 6/5/2017
 - Pivot should return a better message when the result of previous step is empty
 - Summary: POSIXct shows only 1 bar in histogram
 - Projects are not displayed in project list when there is an underlying error with the package validation.
-- Floating point numbers are not showing up correctly
+- Table View - Floating point numbers are not showing up correctly
+- Transform Step - When a branch is deleted, it was not removed from the branch list of the Transform Step from which the deleted branch was starting.
+- When a join target data frame was renamed, steps after the join step kept old data before rename, and was not automatically refreshed by further updates in the join target data frame.
+- Cannot build a Survival Model with an error message "object 'Ccoxmart' not found". (Windows Only)
+- Note - Exported chart image is blurry
 
 
 ## v 3.4.6.0
