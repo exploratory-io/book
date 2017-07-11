@@ -32,7 +32,7 @@ Working with MongoDB can be challenging due to the nature of NoSQL database, whi
 
 ## Access Log Data
 
-* [Analyze Log file with URL Data](tutorials/log-url.md)
+* [Analyze Log file with URL Data](log-url.md)
 
 ## Stripe Data
 
