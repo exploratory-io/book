@@ -1,5 +1,18 @@
 # Release Note
 
+## v 3.6
+
+Released on 8/5/2017
+
+### New Features
+
+### Enhancements
+
+- Pivot - Grand Total support 
+
+### Bug Fixes
+
+
 ## v 3.5
 
 Released on 6/5/2017
