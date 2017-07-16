@@ -42,6 +42,7 @@
    * [Write R Script as Data](import/r-script-data.md)
    * [Web Page Scraping](import/web-scraping.md)
    * [Data Source Extension](import/extensions.md)
+     * [Weather Data](import/riem_measures.md)
    * [Create Custom Data Source](import/user-defined-plugin.md)
 * [Data Transformation](chart.md)
    * [Command Line mode for faster and more flexible data interaction in Exploratory](wrangling/command-mode.md)
