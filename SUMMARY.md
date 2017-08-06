@@ -115,10 +115,10 @@
    * [Cosine Similarity](stats/sim.md)
    * [SVD](stats/svd.md)
 
-* [Share]()
-  * [Chart](export/chart.md)
-  * [Data](export/data.md)
-
+* [Share](share/shae.md)
+  * [Chart](share/chart.md)
+  * [Data](share/data.md)
+  * [Note](share/note.md)
 
 * [Statistics]()
    * [Correlation](stats/correlation.md)
