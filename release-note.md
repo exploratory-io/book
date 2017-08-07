@@ -20,9 +20,11 @@ Released on 8/7/2017
 - Pivot: Supported Grand Total calculation.
 - Pivot: Added property configurations for Column/Row header labels.
 - Pivot: Supported column header sorting.
+
 #### Data Source
 - Google Analytics: Supported Goal Metrics on from Goal 1 to Goal 5.
 - Excel Data Source Dialog: Added "Guess Data Type" parameter
+
 #### Analytics Functions 
 - do_t.test function: Means columns in the output data frame was ambiguous about which column was for which input group. Now output is with columns named after the input group it is associated to. 
 - do_anomaly_detect function: "longterm" argument is now automatically picked for best result without the need to set it explicitly.
