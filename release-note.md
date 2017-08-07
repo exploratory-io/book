@@ -1,17 +1,54 @@
 # Release Note
 
-## v 3.6
+## v 4.0
 
-Released on 8/5/2017
+Released on 8/7/2017
 
 ### New Features
 
+- Analytics UI
+- Markdown Editor for Note
+- A/B Testing with Bayesian Statistics
+- New Source Step Editing
+- Data Source Extension Updates - Weather, Stock
+
 ### Enhancements
 
-- Pivot - Grand Total support
+- Google Analytics: Supported Goal Metrics on from Goal 1 to Goal 5.
+- Excel Data Source Dialog: Added "Guess Data Type" parameter
+- Chart: Pivot: Supported Grand Total calculation.
+- Chart: Supported “Sync Scale” options for X and Y separately.
+- Chart: Added "Month Name", "Week Day" functions for Date data type.
+- Pivot: Added property configurations for Column/Row header labels.
+- Pivot: Supported column header sorting.
+- do_t.test function: Means columns in the output data frame was ambiguous about which column was for which input group. Now output is with columns named after the input group it is associated to. 
+- do_anomaly_detect function: "longterm" argument is now automatically picked for best result without the need to set it explicitly.
 
 ### Bug Fixes
-
+- If you assign factor to color in geoJSON, the default metrics was "count", but changed it to more appropriate "first".
+- Chart: Histogram color was not in TRUE, FALSE order if logical was assigned.
+- Added easy-to-understand warning or description at chart pin.
+- Note refresh did not refresh chart data.
+- Join Dialog: "no variable to join" error was shown when it should not.
+- Chart: Scatter Plot errored out if column assigned to color becomes unavailable.
+- Chart: Margin option was not showing in Heatmap/Contour.
+- Chart: Window function label was incorrectly shown on Scatter Plot
+- Chart: X axis tick labels did not show in Boxplot with Repeat By.
+- Chart: Map: Legend was missing in the exported PNG file.
+- Pivot: Exported pivot data did not support multiple measures.
+- Chart configuration was lost when it fails to refresh joined data frame.
+- Note: When exported to HTML(svg), Chart did not show scrollbar, and was truncated instead.
+- MongoDB: Connection failed if password contained special characters.
+- Command UI: UI was broken after toggling Auto Run checkbox.
+- Command UI: Duplicated green token was showing up when Auto Run checkbox was off.
+- Database Data Source Dialog: "Another R process running" error was raised when "Update" button was clicked.
+- Data Connection Dialog: For OAuth connections, Connection Dialog was wrongly closed when coming back from browser after giving permissions.
+- Database Data Source Dialog: Columns were not listed under the left hand side tree if the table did not have data.
+- impute_na function did not work with factor.
+- Anomaly detection with non-UTC time zone data did not work.
+- group_by with Japanese column name did not work.
+- row_as_header applied to factor column did not work.
+- Project export on windows did not work when user’s home directory name contained space character.
 
 
 ## v 3.5.0.2
