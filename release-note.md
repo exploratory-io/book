@@ -1,5 +1,19 @@
 # Release Note
 
+## v 4.0.1
+
+Released on 8/8/2017
+
+### Bug Fixes
+
+- Markdown Note: Analytics Chart insertion button did not work.
+- Markdown Note: Fonts used were not consistent.
+- Markdown Note: Preview was broken occasionally after inserting Chart from Analytics page.
+- Markdown Note: When a Note is exported as Word document, table in it was broken.
+- Survival Analysis Vew: Y-axis value of Retention Rate chart was wrong.
+- Cohort Analysis View: Time aggregation level of By-Time Chart was always set to Month regardless of configuration.
+- Time Series Forecasting View: Time aggregation level of Forcasted Chart was wrong when it was set to Month or Quarter.
+
 ## v 4.0
 
 Released on 8/7/2017
