@@ -57,31 +57,31 @@ Google Analyticsには上の例であげたiOSのデバイス(`gaid::-17`)の他
 
 |ID         | 説明                                    |
 |-----------|----------------------------------------|
-| gaid::-1  | All Users                              |
-| gaid::-2  | New Users                              |
-| gaid::-3  | Returning Users                        |
-| gaid::-4  | Paid Traffic                           |
-| gaid::-5  | Organic Traffic                        |
-| gaid::-6  | Search Traffic                         |
-| gaid::-7  | Direct Traffic                         |
-| gaid::-8  | Referral Traffic                       |
-| gaid::-9  | Sessions with Conversions              |
-| gaid::-10 | Sessions with Transactions             |
-| gaid::-11 | Mobile and Tablet Traffic              |
+| gaid::-1  | 全てのユーザー　　　　　　　　　　|
+| gaid::-2  | 新規ユーザー                  |
+| gaid::-3  | 戻ってきたユーザー       |
+| gaid::-4  | ペイドトラッフィク          |
+| gaid::-5  | オーガニックトラフィック  |
+| gaid::-6  | 検索トラフィック          |
+| gaid::-7  | 直接のトラフィック        |
+| gaid::-8  | 参照トラフィック |
+| gaid::-9  | コンバージョンに至ったセッション |
+| gaid::-10 | 取引のあったセッション |
+| gaid::-11 | モバイルとタブレットのトラフィック           |
 | gaid::-12 | Non-bounce Sessions                    |
-| gaid::-13 | Tablet Traffic                         |
-| gaid::-14 | Mobile Traffic                         |
-| gaid::-15 | Tablet and Desktop Traffic             |
-| gaid::-16 | Android Traffic                        |
-| gaid::-17 | iOS Traffic                            |
-| gaid::-18 | Other Traffic (Neither iOS nor Android)|
-| gaid::-19 | Bounced Sessions                       |
-| gaid::-100| Single Session Users                   |
-| gaid::-101| Multi-session Users                    |
-| gaid::-102| Converters                             |
-| gaid::-103| Non-Converters                         |
-| gaid::-104| Made a Purchase                        |
-| gaid::-105| Performed Site Search                  |
+| gaid::-13 | タブレットのトラフィック                   |
+| gaid::-14 | モバイルのトラフィック                     |
+| gaid::-15 | タブレットとデスクトップのトラフィック        |
+| gaid::-16 | アンドロイドのトラフィック                  |
+| gaid::-17 | iOSのトラフィック           |
+| gaid::-18 | その他のトラフィック(iOSでもアンドロイドでもない)|
+| gaid::-19 | 直帰したセッション                       |
+| gaid::-100| シングルセッションユーザー                  |
+| gaid::-101| マルチセッションユーザー                   |
+| gaid::-102| コンバーター(Converters)              |
+| gaid::-103| ノンコンバーター (Non-Converters)                         |
+| gaid::-104| 購入に至った                        |
+| gaid::-105| サイトで検索を行った   |
 
 
 #### 動的なセグメント
