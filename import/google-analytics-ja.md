@@ -87,13 +87,16 @@ Google Analyticsには上の例であげたiOSのデバイス(`gaid::-17`)の他
 #### 動的なセグメント
 事前定義のセグメントでは要件を満たさない場合、動的にセグメントを定義してパラメタに渡すこともできます。
 
-例えば、「東京からSafariブラウザでアクセスしたユーザー」に絞り込みたい場合は
+例えば、「東京からSafariブラウザでアクセスしたセッション」に絞り込みたい場合は
 
-`users::condition::ga:region==Tokyo;ga:browser==Safari`
+`sessions::condition::ga:region==Tokyo;ga:browser==Safari`
 
 というセグメントをパラメタに指定します。
 
-セグメントはいくつかの構成要素からなります。まず`users::`の部分はユーザーに対する絞り込みであることを意味します。もしセッションに対する絞り込みをする場合は、この代わりに`sessions::`を指定します。
+![](images/ga-custom-segment.png)
+
+
+セグメントはいくつかの構成要素からなります。まず`sessions::`の部分はセッションに対する絞り込みであることを意味します。もしユーザーに対する絞り込みをする場合は、この代わりに`users::`を指定します。
 
 ２つ目の`condition::`は条件を使ったセグメントであることを意味します。`condition::`以外には後述する`sequences::`を使うことができます。
 
@@ -117,8 +120,8 @@ Google Analyticsには上の例であげたiOSのデバイス(`gaid::-17`)の他
 |<= |より小さいか等しい|ga:hour<=12|ディメンション、指標|
 |> |より大きい|ga:pageview>100|ディメンション、指標|
 |>= |より大きいか等しい|ga:pageview>=100|ディメンション、指標|
-|<>|間 (範囲はA_Bのように指定)| ga:pageview<>1_200|ディメンション、指標|
-|[]|どれか (候補は&#124;で区切る)|ga:city[]Meguro&#124;Shibuya&#124;Ebisu |ディメンション|
+|<>|間 (範囲はminValue_maxValueのように指定)| ga:pageview<>1_200|ディメンション、指標|
+|[]|どれか (候補は&#124;で区切る、最大10候補まで)|ga:city[]Meguro&#124;Shibuya&#124;Ebisu |ディメンション|
 |=@|含む|ga:keyword=@exploratory|ディメンション|
 |!@|含まない|ga:keywaord!@AI|ディメンション|
 |=~|正規表現に適合|ga:keywaord=~machine|ディメンション|
