@@ -131,17 +131,19 @@ Google Analyticsには上の例であげたiOSのデバイス(`gaid::-17`)の他
 
 ##### シーケンス(sequences)
 
-シーケンスは、ユーザー行動のステップ(順番)を、条件指定で絞り込むことのできるセグメントです。例えば、「最初にデスクトップでアクセスして、そして次にタブレット端末からアクセスしたユーザー」に絞り込みたい場合は、`users::sequence::ga:deviceCategory==desktop;->>ga:deviceCategory==tablet`のように記述します。先ほどの例とは異なり、セグメントの２番目が`sequence::`になっていることに注意してください。
+シーケンスは、ユーザー行動のステップ(順番)を、条件指定で絞り込むことのできるセグメントです。例えば、「最初にデスクトップでアクセスして、その後タブレット端末からアクセスしたユーザー」に絞り込みたい場合は、`users::sequence::ga:deviceCategory==desktop;->>ga:deviceCategory==tablet`のように記述します。先ほどの例とは異なり、セグメントの２番目が`sequence::`になっていることに注意してください。
 
 ここでは順番が２つあり、1つ目が`ga:deviceCategory==desktop`ということで、「最初にデスクトップでアクセスした」という条件を表していて、２つ目の`ga:deviceCategory==tablet`がその後タブレット端末でアクセスしたことを意味しています。そしてこの２つが`;->>`(その後)という演算子で繋がっているのがわかります。
 
 この順序の接続ルールには２つのタイプがあります。
 
-- 次のステップ (`;->>`)
+- その後のステップ (`;->>`)
 - 直後のステップ (`;->`)
 
 「次のステップ」の方が順番の接続判定がゆるく、上の例でいうとデスクトップでアクセスしたあとに、スマフォでアクセスして、その後タブレットでアクセスした場合も考慮されます。しかしながら、「直後のステップ」を選んだ場合は、間にスマフォでアクセスしたケースは絞り込んだ際に外されます。
 
 ちなみに、各ステップでは複数の条件を持つことができます。例えば、「初めにデスクトップでOSがWindowsでアクセスして、次にモバイル端末でOSがアンドロイドのものからアクセスした」というセグメントは以下のように記述できます。
 
-`users::sequence::ga:deviceCategory==desktop;ga:operatingSystem==Windows->>ga:deviceCategory==mobile;ga:operatingSystem==Android`
+`users::sequence::ga:deviceCategory==desktop;ga:operatingSystem==Windows;->>ga:deviceCategory==mobile;ga:operatingSystem==Android`
+
+セグメントの詳細については[セグメントについて(日本語)](https://support.google.com/analytics/answer/3123951?hl=ja)や[Core Reporting API - Segments(英語)](https://developers.google.com/analytics/devguides/reporting/core/v3/segments)を参照してください。
