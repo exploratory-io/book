@@ -124,7 +124,7 @@ In this example, it uses `==`, which means `Equal`, and `!=`, which means `Not E
 
 
 ##### Sequences
-Sequences is useful when you want to filter data by sequence of user actions(steps). For example, if you want to filter data to users who "Access with Desktop at first, followed by access from Tablet", you can define a segment like this.`users::sequence::ga:deviceCategory==desktop;->>ga:deviceCategory==tablet`. Unlike the previous example, now you can see the second element is`sequence::`.
+Sequences are useful when you want to filter data by sequence of user actions(steps). For example, if you want to filter data to users who "Access with Desktop at first, followed by access from Tablet", you can define a segment like this.`users::sequence::ga:deviceCategory==desktop;->>ga:deviceCategory==tablet`. Unlike the previous example, now you can see the second element is`sequence::`.
 
 With this example, there are two sequences. The first one is `ga:deviceCategory==desktop` which means "At first, access was made with Desktop". And the second one is `ga:deviceCategory==tablet` which means access was made with tablet. These two sequences are connected with `;->>` operator which means `followed by`.
 
