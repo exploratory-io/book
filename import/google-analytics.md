@@ -47,7 +47,7 @@ Segments are useful when you want to filter Google Analytics data and extract me
 There are two ways to use Segments. The first option is select `id` of the predefined Segments. And the second option is define a segment dynamically and pass it to the Segments parameter.
 
 #### Use segment by specifying ID
-For example, if you want to see users who access your site with iOS device, you can pass `gaid::-17` to Segment parameter.
+For example, if you want to see users who access your site with iOS device, you can pass `gaid::-17` to the Segments parameter like below.
 
 ![](images/segment-ios-example-en.png)
 
@@ -82,9 +82,9 @@ Other than the iOS device (`gaid::-17`), there are following predefined segments
 | gaid::-105| Performed Site Search  |
 
 #### Dynamic Segments
-If you want to perform more complex filter than predefined segments, you can dynamically define segment and pass that to Segment parameter.
+If you want to perform more complex filter than predefined segments, you can dynamically define segment and pass that to the Segments parameter.
 
-##### conditions
+##### Conditions
 For example, if you want to filter the data to "Session coming from Tokyo with Safari browser", you can define following segment.
 
 `sessions::condition::ga:region==Tokyo;ga:browser==Safari`
@@ -95,7 +95,7 @@ and pass that to Segments parameter.
 
 A Segment consists of couple of elements. The `sessions::` part means the segment is applied to sessions. if you want to apply the segment to users (it could cross multiple sessions), you need to specifiy `users::` instead.
 
-The second element `condition::` means it uses condition to filter data. Other than `condition::`, you can use `sequences::`, which will be explained in the next section.
+The second element `condition::` means it uses condition to filter data. Other than `condition::`, you can use `sequence::`, which will be explained in the next section.
 
 And the next element `ga:region==Tokyo;ga:browser==Safari` is the place where filtering condition details are defined. In this example, it consists of following two conditions:
 
