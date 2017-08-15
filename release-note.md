@@ -1,5 +1,17 @@
 # Release Note
 
+## v 4.0.2
+
+Released on 8/16/2017
+
+### Enhancements
+
+- A/B Test - Support Repeat By. 
+
+### Bug Fixes
+
+
+
 ## v 4.0.1
 
 Released on 8/8/2017
@@ -17,6 +29,8 @@ Released on 8/8/2017
 ## v 4.0
 
 Released on 8/7/2017
+
+[Release announcement blog post](https://blog.exploratory.io/exploratory-v4-0-released-8abfb1afdb07)
 
 ### New Features
 
@@ -39,8 +53,8 @@ Released on 8/7/2017
 - Google Analytics: Supported Goal Metrics on from Goal 1 to Goal 5.
 - Excel Data Source Dialog: Added "Guess Data Type" parameter
 
-#### Analytics Functions 
-- do_t.test function: Means columns in the output data frame was ambiguous about which column was for which input group. Now output is with columns named after the input group it is associated to. 
+#### Analytics Functions
+- do_t.test function: Means columns in the output data frame was ambiguous about which column was for which input group. Now output is with columns named after the input group it is associated to.
 - do_anomaly_detect function: "longterm" argument is now automatically picked for best result without the need to set it explicitly.
 
 ### Bug Fixes
