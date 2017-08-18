@@ -66,7 +66,7 @@ After you have selected the file 'airline_delay_2016_08', you'll see the first 5
 
 You can keep all the parameters as is for this exercise, and simply click 'Save' button.
 
-You should see the imported Flight data in Table view like below.
+You should see the imported Flight data in Summary View like below.
 
 ![](images/quick-start-3.png)
 
@@ -152,11 +152,11 @@ Lastly, you would also notice that there is a new step called 'Mutate' being add
 This is the exact R command that actually runs behind the scene. As you perform more data wrangling operations, you will see more 'Steps' added here.
 
 
-### Extract 'Day of Week' from Date
+### Extract 'Day Name' from Date
 
 Let's do one more operation within the same 'Mutate' step.
 
-Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day of Week (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day of Week' from the column header menu.
+Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day Name (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day Name (e.g Mon)' from the column header menu.
 
 ![](images/quick-start-14.png)
 
@@ -164,7 +164,7 @@ In the opened 'Mutate' dialog, notice that 'Create New Column' tab is selected t
 
 ![](images/quick-start-14_1.png)
 
-This means, it will create a new column with the calculation ```wday(FL_DATE, label = TRUE)```, instead of overriding the original column like the last time.
+This means, it will create a new column with the calculation ```wday(FL_DATE, label = TRUE, abbr = TRUE)```, instead of overriding the original column like the last time.
 
 Type 'day_of_week' for the new column name, and hit 'Run' button.
 
@@ -261,7 +261,13 @@ Then, import the EDF file into Exploratory. You can select 'Import Exploratory D
 
 ![](images/quick-start-join3.png)
 
+And select 'Exploratory (.edf)'
+
+![](images/quick-start-join3_1.png)
+
 The data looks like below after the import.
+
+
 
 ![](images/quick-start-100.png)
 
@@ -535,6 +541,30 @@ Select 'Linear Regression' to use Linear Regression model to calculate the trend
 ![](images/quick-start-68.png)
 
 Again, the dots that represent the flights are nicely on the linear trend lines for some carriers like 'AA', 'NK', but not so much for 'F9', 'VX'.
+
+### Variable Importance
+
+So now let's consider what really characterizes the Carrier. We can use Variable Importance Analytics UI to answer this question.
+
+In this flight data, we have many variables such as ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc. So we'll check how each variable contributes to characterize Carrier. To do this analysis, Go to Analytics Tab, and select 'Variable Importance' from Analytics Type pulldown list.
+
+![](images/quick-start-analytics-variable-importance-1.png)
+
+Then select 'CARRIER' for 'What to Predict' pulldown list.
+
+![](images/quick-start-analytics-variable-importance-2.png)
+
+Click 'Variable Columns', and it will open up Column Selection Dialog. Click 'All' check box then scroll to right and exclude 'CANCELLATION_CODE' since most of the value is NA.
+
+![](images/quick-start-analytics-variable-importance-3.png)
+
+And click Run button.
+
+![](images/quick-start-analytics-variable-importance-4.png)
+
+And now we know that FL_NUM and DISTANCE variables are top two variable that characterizes Carrier.
+
+![](images/quick-start-analytics-variable-importance-5.png)
 
 ### K-means Clustering
 
