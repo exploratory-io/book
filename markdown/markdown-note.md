@@ -475,8 +475,3 @@ After you select a Chart and Click OK, following Exploratory Code block is inser
 And when you click Run, this code block is converted to Exploratory Analytics Viz like below.
 
 ![](images/exploratory-analytics-in-md.png "Chart Select Dialog")
-
-
----
-
-License: [CC-BY](https://creativecommons.org/licenses/by/3.0/)
