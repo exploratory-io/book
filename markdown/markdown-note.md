@@ -6,13 +6,15 @@ Exploratory R Markdown basics.
 [Lists](#lists)  
 [Links](#links)  
 [Images](#images)  
-[Code and Syntax Highlighting](#code)  
+[Code](#code)  
 [Tables](#tables)  
 [Blockquotes](#blockquotes)  
 [Inline HTML](#html)  
 [Horizontal Rule](#hr)  
 [Line Breaks](#lines)  
-[YouTube Videos](#videos)  
+[Tabbed Sections](#tabbedsections)
+[Exploratory Charts](#charts)
+[Exploratory Analytics](#analytics)
 
 <a name="headers"/>
 
@@ -395,7 +397,7 @@ This line is also begins a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
 
-<a name="videos"/>
+<a name="tabbedsections"/>
 
 ## Tabbed Sections
 
@@ -426,6 +428,7 @@ You can also specify two additional attributes to control the appearance and beh
 ```
 ![](images/tabbedsection.png "Tabbed Section")
 
+<a name="charts"/>
 
 ## Exploratory Charts
 
@@ -448,6 +451,8 @@ After you select a Chart and Click OK, following Exploratory Code block is inser
 And when you click Run, this code block is converted to Exploratory Chart like below.
 
 ![](images/exploratory-chart-in-md.png "Chart Select Dialog")
+
+<a name="analytics"/>
 
 ## Exploratory Analytics Viz
 
