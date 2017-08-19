@@ -1,5 +1,7 @@
 Exploratory R Markdown basics.
 
+From Version 4.0, Exploratory supports Markdown note and this document explains some of the basic Markdown syntax.
+
 ##### Table of Contents  
 [Headers](#headers)  
 [Emphasis](#emphasis)  
@@ -124,13 +126,13 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 There are two ways to create links.
 
 ```no-highlight
-[I'm an inline-style link](https://www.exploratory.io)
+[I'm an inline-style link](https://exploratory.io)
 
-[I'm an inline-style link with title](https://www.exploratory.io "Exploratory's Homepage")
+[I'm an inline-style link with title](https://exploratory.io "Exploratory's Homepage")
 
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](../../SUMMARY.md)
+[I'm a relative reference to a repository file](../../index.html)
 
 [You can use numbers for reference-style link definitions][1]
 
@@ -153,7 +155,7 @@ Some text to show that the reference links can follow later.
 
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](../../SUMMARY.md)
+[I'm a relative reference to a repository file](../../index.html)
 
 [You can use numbers for reference-style link definitions][1]
 
