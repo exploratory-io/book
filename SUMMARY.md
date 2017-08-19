@@ -6,7 +6,7 @@
 * [Tutorials (日本語)](tutorials/intro_ja.md)   
    * [Getting Started Guide　(日本語)](tutorials/quick-start_ja.md)
 * [Product Features]()
-  * [Note](note.md)
+  * [Note](markdown/markdown-note.md)
   * [Steps (Right-hand side)](steps.md)
   * [Branch](branch/branch.md)
 
