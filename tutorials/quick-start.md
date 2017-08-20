@@ -544,7 +544,7 @@ Again, the dots that represent the flights are nicely on the linear trend lines 
 
 ### Variable Importance
 
-In this flight data, we have many variables such as ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc. But which variables are the most useful to characterize the carrier. In other words, which columns are the most useful to predicting the carriers? To answer this question, you can use Variable Importance Analytics feature which is introduced in V4.0. 
+In this flight data, we have many variables such as ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc. But which variables are the most useful to characterize the carrier? In other words, which columns are the most useful to predicting the carriers? To answer this question, you can use Variable Importance Analytics feature which is introduced in V4.0. 
 
 First, click Analytics Tab and select 'Variable Importance' from Analytics Type pulldown list.
 
@@ -562,7 +562,7 @@ And click Run button.
 
 ![](images/quick-start-analytics-variable-importance-4.png)
 
-Now we know that FL_NUM and DISTANCE variables are the top two useful variables to predict carriers.
+Now we know that FL_NUM and DISTANCE are the top two useful variables to characterize (or predict) carriers.
 
 ![](images/quick-start-analytics-variable-importance-5.png)
 
