@@ -574,12 +574,12 @@ And if you click "Prediction Matrix", you can see the chances of making errors s
 
 ![](images/quick-start-analytics-variable-importance-7.png)
 
-Now Let's check these two carriers EV and OO with boxplot using the FL_NUM column.
+Now Let's switch view from Analytics to Viz and check these two carriers EV and OO with boxplot using the FL_NUM column.
 To do so, click Viz tab and create a boxplot by selecting CARRIER as X Axis and FL_BUM as Y-AXIS. And you'll get the chart like this.
 
 ![](images/quick-start-analytics-variable-importance-8.png)
 
-And the chart clearly shows that carrier EV and OO are sitting on the top of the chart while other carriers are sitting on bottom. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we observed for Variable Importance Analytics. As you can see here, with "Variable Importance Analytics" feature, you can find these patterns easily and quickly without manually iterating many times. 
+And the chart clearly shows that carrier EV and OO are sitting on the top of the chart while other carriers are sitting on bottom. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we observed for Variable Importance Analytics. As you can see here, with "Variable Importance Analytics" feature, you can find these patterns easily and quickly without manually iterating each column as Y Axis on the boxplo. 
 
 
 ### K-means Clustering
