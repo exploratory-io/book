@@ -544,9 +544,9 @@ Again, the dots that represent the flights are nicely on the linear trend lines 
 
 ### Variable Importance
 
-So now let's consider what really characterizes the Carrier. We can use Variable Importance Analytics UI to answer this question.
+In this flight data, we have many variables such as ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc. But which variables are the most useful to characterize the carrier. In other words, which columns are the most useful to predicting the carriers? To answer this question, you can use Variable Importance Analytics feature which is introduced in V4.0. 
 
-In this flight data, we have many variables such as ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc. So we'll check how each variable contributes to characterize Carrier. To do this analysis, Go to Analytics Tab, and select 'Variable Importance' from Analytics Type pulldown list.
+First, click Analytics Tab and select 'Variable Importance' from Analytics Type pulldown list.
 
 ![](images/quick-start-analytics-variable-importance-1.png)
 
@@ -554,7 +554,7 @@ Then select 'CARRIER' for 'What to Predict' pulldown list.
 
 ![](images/quick-start-analytics-variable-importance-2.png)
 
-Click 'Variable Columns', and it will open up Column Selection Dialog. Click 'All' check box then scroll to right and exclude 'CANCELLATION_CODE' since most of the value is NA.
+Click 'Variable Columns', and it will open up Column Selection Dialog. Click 'All' check box then scroll to the right and exclude 'CANCELLATION_CODE' since most of the value in CANCELLATION_CODE column is NA.
 
 ![](images/quick-start-analytics-variable-importance-3.png)
 
@@ -562,9 +562,25 @@ And click Run button.
 
 ![](images/quick-start-analytics-variable-importance-4.png)
 
-And now we know that FL_NUM and DISTANCE variables are top two variable that characterizes Carrier.
+Now we know that FL_NUM and DISTANCE variables are the top two useful variables to predict carriers.
 
 ![](images/quick-start-analytics-variable-importance-5.png)
+
+If you click "Model Quality" link, you can see these variables predict carrier OO and EV very well.  
+
+![](images/quick-start-analytics-variable-importance-6.png)
+
+And if you click "Prediction Matrix", you can see the chances of making errors such as predicting a carrier as EV where the actual carrier is something else (like DL) is really low. And the same applies to carrier OO.   
+
+![](images/quick-start-analytics-variable-importance-7.png)
+
+Now Let's check these two carriers EV and OO with boxplot using the FL_NUM column.
+To do so, click Viz tab and create a boxplot by selecting CARRIER as X Axis and FL_BUM as Y-AXIS. And you'll get the chart like this.
+
+![](images/quick-start-analytics-variable-importance-8.png)
+
+And the chart clearly shows that carrier EV and OO are sitting on the top of the chart while other carriers are sitting on bottom. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we observed for Variable Importance Analytics. As you can see here, with "Variable Importance Analytics" feature, you can find these patterns easily and quickly without manually iterating many times. 
+
 
 ### K-means Clustering
 
