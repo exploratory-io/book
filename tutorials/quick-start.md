@@ -66,7 +66,7 @@ After you have selected the file 'airline_delay_2016_08', you'll see the first 5
 
 You can keep all the parameters as is for this exercise, and simply click 'Save' button.
 
-You should see the imported Flight data in Table view like below.
+You should see the imported Flight data in Summary View like below.
 
 ![](images/quick-start-3.png)
 
@@ -152,11 +152,11 @@ Lastly, you would also notice that there is a new step called 'Mutate' being add
 This is the exact R command that actually runs behind the scene. As you perform more data wrangling operations, you will see more 'Steps' added here.
 
 
-### Extract 'Day of Week' from Date
+### Extract 'Day Name' from Date
 
 Let's do one more operation within the same 'Mutate' step.
 
-Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day of Week (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day of Week' from the column header menu.
+Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day Name (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day Name (e.g Mon)' from the column header menu.
 
 ![](images/quick-start-14.png)
 
@@ -164,7 +164,7 @@ In the opened 'Mutate' dialog, notice that 'Create New Column' tab is selected t
 
 ![](images/quick-start-14_1.png)
 
-This means, it will create a new column with the calculation ```wday(FL_DATE, label = TRUE)```, instead of overriding the original column like the last time.
+This means, it will create a new column with the calculation ```wday(FL_DATE, label = TRUE, abbr = TRUE)```, instead of overriding the original column like the last time.
 
 Type 'day_of_week' for the new column name, and hit 'Run' button.
 
@@ -261,7 +261,13 @@ Then, import the EDF file into Exploratory. You can select 'Import Exploratory D
 
 ![](images/quick-start-join3.png)
 
+And select 'Exploratory (.edf)'
+
+![](images/quick-start-join3_1.png)
+
 The data looks like below after the import.
+
+
 
 ![](images/quick-start-100.png)
 
@@ -535,6 +541,46 @@ Select 'Linear Regression' to use Linear Regression model to calculate the trend
 ![](images/quick-start-68.png)
 
 Again, the dots that represent the flights are nicely on the linear trend lines for some carriers like 'AA', 'NK', but not so much for 'F9', 'VX'.
+
+### Variable Importance
+
+In this flight data, we have many variables such as ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc. But which variables are the most useful to characterize the carrier? In other words, which columns are the most useful to predicting the carriers? To answer this question, you can use Variable Importance Analytics feature which is introduced in V4.0. 
+
+First, click Analytics Tab and select 'Variable Importance' from Analytics Type pulldown list.
+
+![](images/quick-start-analytics-variable-importance-1.png)
+
+Then select 'CARRIER' for 'What to Predict' pulldown list.
+
+![](images/quick-start-analytics-variable-importance-2.png)
+
+Click 'Variable Columns', and it will open up Column Selection Dialog. Click 'All' check box then scroll to the right and exclude 'CANCELLATION_CODE' since most of the value in CANCELLATION_CODE column is NA.
+
+![](images/quick-start-analytics-variable-importance-3.png)
+
+And click Run button.
+
+![](images/quick-start-analytics-variable-importance-4.png)
+
+Now we know that FL_NUM and DISTANCE are the top two useful variables to characterize (or predict) carriers.
+
+![](images/quick-start-analytics-variable-importance-5.png)
+
+If you click "Model Quality" link, you can see these variables predict carrier OO and EV very well.  
+
+![](images/quick-start-analytics-variable-importance-6.png)
+
+And if you click "Prediction Matrix", you can see the chances of making errors such as predicting a carrier as EV where the actual carrier is something else (like DL) is really low. And the same applies to carrier OO.   
+
+![](images/quick-start-analytics-variable-importance-7.png)
+
+Now Let's switch view from Analytics to Viz and check these two carriers EV and OO with boxplot using the FL_NUM column.
+To do so, click Viz tab and create a boxplot by selecting CARRIER as X Axis and FL_BUM as Y-AXIS. And you'll get the chart like this.
+
+![](images/quick-start-analytics-variable-importance-8.png)
+
+And the chart clearly shows that carrier EV and OO are sitting on the top of the chart while other carriers are sitting on bottom. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we observed for Variable Importance Analytics. As you can see here, with "Variable Importance Analytics" feature, you can find these patterns easily and quickly without manually iterating each column as Y Axis on the boxplo. 
+
 
 ### K-means Clustering
 
