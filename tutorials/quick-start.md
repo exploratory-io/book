@@ -257,7 +257,7 @@ Anyway, let's go to the above linked page and download the EDF file.
 
 ![](images/quick-start-join2.png)
 
-Then, import the EDF file into Exploratory. You can select 'Import Exploratory Data' from 'Add Data Frame' dropdown list.
+Then, import the EDF file into Exploratory. You can select 'Import File Data' from 'Add Data Frame' dropdown list.
 
 ![](images/quick-start-join3.png)
 
@@ -283,7 +283,7 @@ Now, go back to 'airline_delay_2016_08' data frame.
 
 There is a column called 'ORIGIN', which has the airport codes for the airports from which the flights departed. And this is the column we are going to use to map with the 'us-air-port-code' data frame.
 
-Select 'Join' from 'Add' button menu.
+Select 'Join' from ORIGIN column menu.
 
 ![](images/quick-start-100_3.png)
 

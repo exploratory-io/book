@@ -211,25 +211,25 @@ Mutateステップをクリックして、この「分割」の操作を行う�
 
 サマリビューでDEP_DELAY列を見ると、緑色のバーにわずかな赤色が表示されていることがわかります。
 
-![](images/quick-start-21.png)
+![](images/quick-start-21-ja.png)
 
 この赤いバーは、この列の欠損値であるデータの比率を示します。データの1.32％が欠損値であることがわかります。 欠損値を扱う方法はたくさんありますが、ここでは フィルタコマンド操作でそれらを削除してみましょう。
 
 列見出しメニューから「フィルタ」 -> 「欠損値でない」を選択します。
 
-![](images/quick-start-22.png)
+![](images/quick-start-22-ja.png)
 
 これにより、「欠損値でない」演算子が既に選択されている フィルタダイアログが開きます。
 
-![](images/quick-start-24.png)
+![](images/quick-start-24-ja.png)
 
 興味のある場合は、演算子のドロップダウンをクリックすると、そのデータ型でサポートされる他の多くの演算子が表示されます。 Rに精通しており、それをさらにカスタマイズしたい場合は、いつでも「カスタム」タブに移動して、好きなようにフィルタ条件を入力することができます。
 
-![](images/quick-start-23.png)
+![](images/quick-start-23-ja.png)
 
 ここで「実行」ボタンをクリックすると、欠損値が除外されたことがわかります。
 
-![](images/quick-start-25.png)
+![](images/quick-start-25-ja.png)
 
 ### 空港の所在地データセットとの結合
 
@@ -249,37 +249,41 @@ Exploratoryでは、`left_join`という結合コマンドの1つを使用でき
 
 ![](images/quick-start-join2.png)
 
-次に、EDFファイルをExploratoryにインポートします。 「データフレームを追加」ドロップダウンリストから「Exploratory Dataのインポート」を選択することができます。
+次に、EDFファイルをExploratoryにインポートします。 「データフレームを追加」ドロップダウンリストから「ファイルデータをインポート」を選択します。
 
-![](images/quick-start-join3.png)
+![](images/quick-start-join3-ja.png)
+
+そして、「Exploratory (.edf)」を選択します。
+
+![](images/quick-start-join3_1-ja.png)
 
 インポート後のデータは次のようになります。
 
-![](images/quick-start-100.png)
+![](images/quick-start-100-ja.png)
 
 右側にいくつかのステップがあることに注目してください。これは、この 「us-air-port-code」データフレームを準備するために使用されたステップです。必要に応じてステップを追加したり、これらのステップを削除したりすることができますが、この演習ではこれをそのまま使用します。
 
 また、Codeという列が表示されます。これは、「airline_delay_2016-08」データフレームとの結合に使用するキー列です。
 
-![](images/quick-start-100_1.png)
+![](images/quick-start-100_1-ja.png)
 
 さて、「airline_delay_2016_08」データフレームに戻ります。
 
-![](images/quick-start-100_2.png)
+![](images/quick-start-100_2-ja.png)
 
 ORIGINという列があります。この列には、飛行機が出発した空港の空港コードがあります。そして、これは、「us-air-port-code」データフレームでマップするために使用する列です。
 
-「追加」ボタンメニューから「結合」を選択します。
+ORIGINのカラムメニューから「結合」を選択します。
 
-![](images/quick-start-100_3.png)
+![](images/quick-start-100_3-ja.png)
 
 「結合」ダイアログで、「ターゲットデータフレーム」のデータフレーム「us-air-port-code」を選択し、「ORIGIN」列を「現在の列」に、「Code」を「ターゲット列」をキー列として選択します。
 
-![](images/quick-start-103.png)
+![](images/quick-start-103-ja.png)
 
 コマンドが実行されると、ターゲットデータフレーム 「us-air-port-code」の新しい列が最後に追加されます。
 
-![](images/quick-start-104.png)
+![](images/quick-start-104-ja.png)
 
 このチュートリアルでは、`left_join`のみを使用しましたが、他のタイプの結合もあります。興味のある方は、これら2つの記事をご覧ください。
 
