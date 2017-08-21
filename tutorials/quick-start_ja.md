@@ -369,28 +369,28 @@ Vizビューに移動し、「地図 - 経度 / 緯度」チャートタイプ�
 
 「線」グラフを選択し、「FL_DATE」列をX軸に割り当てます。'FL_DATE'列は日付データ型なので、データの集計に日付レベル（年、月、日など）を選択できます。たとえば、デフォルトの「年」の代わりに、データを「日」に設定してデータを集計することができます。
 
-![](images/quick-start-32.png)
+![](images/quick-start-32-ja.png)
 
 ここで、Y軸に DEP_DELAY列を割り当てて、飛行出発遅延時間の傾向を確認します。デフォルトのデータ集計関数は 「合計」に設定されていますが、これを '平均'のように変更することができます。
 
 
-![](images/quick-start-33.png)
+![](images/quick-start-33-ja.png)
 
 色に「CARRIER」列を割り当てて、各航空会社の傾向を確認することができます。
 
-![](images/quick-start-34.png)
+![](images/quick-start-34-ja.png)
 
 凡例の任意の値をクリックすると、グラフ内の線を表示または非表示にすることができます。
 
-![](images/quick-start-35.png)
+![](images/quick-start-35-ja.png)
 
 グラフ領域の任意の部分をダブルクリックすると、現在有効な値を最も効果的に表示するためにグラフのスケールが再調整されます。
 
-![](images/quick-start-36.png)
+![](images/quick-start-36-ja.png)
 
 ドラッグアンドドロップジェスチャを使用して、ズームインする領域を選択することもできます。
 
-![](images/quick-start-37.png)
+![](images/quick-start-37-ja.png)
 
 チャート上の任意の部分をダブルクリックすると、元のズームレベルに戻ることができます。
 
@@ -398,12 +398,12 @@ Vizビューに移動し、「地図 - 経度 / 緯度」チャートタイプ�
 
 プロパティアイコンをクリックし、リストから表計算(Window Calculation)を選択します。
 
-![](images/quick-start-38.png)
+![](images/quick-start-38-ja.png)
 
 リストから「累積」と「合計」を選択します。
 
 
-![](images/quick-start-39.png)
+![](images/quick-start-39-ja.png)
 
 デルタ航空（DL）が出発遅延時間を大量に蓄積していることがわかります。その特定の週には何かが起こったに違いないと思われます。 2016年8月8日にデルタのグローバルコンピュータシステムの停止があり、大規模なキャンセルが発生し、通常のスケジュールに戻るまでに数日かかったことが判明しました。 [News from CNN.(英語)](http://money.cnn.com/2016/08/08/news/companies/delta-system-outage-flights/)
 
