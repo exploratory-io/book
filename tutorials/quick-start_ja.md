@@ -309,29 +309,29 @@ Exploratoryでは、さまざまな種類のチャートを使用してデータ
 Vizビューに移動し、「地図 - 経度 / 緯度」チャートタイプを選択します。
 
 
-![](images/quick-start-106.png)
+![](images/quick-start-106-ja.png)
 
 これにより、自動的に「経度」と「緯度」の列が表示され、マップ上のすべての空港の位置が表示されます。
 
-![](images/quick-start-107.png)
+![](images/quick-start-107-ja.png)
 
 ラベルに「名前」列を割り当てることができます。これにより、マウスを任意の円上に置いたときに、この列の値がグラフの右端上方に表示されます。
 
-![](images/quick-start-108.png)
+![](images/quick-start-108-ja.png)
 
 マウス、トラックパッド、またはマップの左側の上部にあるボタンを使用して、ズームインまたはパンすることができます。
 
 レイアウト設定メニューから背景スタイルを変更することができます。
 
-![](images/quick-start-108_1.png)
+![](images/quick-start-108_1-ja.png)
 
 たとえば、「黒」タイプを選択すると、黒色のテーマを取得できます。
 
-![](images/quick-start-108_2.png)
+![](images/quick-start-108_2-ja.png)
 
 「カラー」の横にある「歯車」アイコンをクリックすると、カラーパレットを変更できます。
 
-![](images/quick-start-108_3.png)
+![](images/quick-start-108_3-ja.png)
 
 
 ### ピボットテーブル
