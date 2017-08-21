@@ -6,7 +6,7 @@
 * [Tutorials (日本語)](tutorials/intro_ja.md)   
    * [Getting Started Guide　(日本語)](tutorials/quick-start_ja.md)
 * [Product Features]()
-  * [Note](note.md)
+  * [Note](markdown/markdown-note.md)
   * [Steps (Right-hand side)](steps.md)
   * [Branch](branch/branch.md)
 
@@ -45,7 +45,9 @@
    * [Data Source Extension](import/extensions.md)
      * [Weather Data](import/riem_measures.md)
    * [Create Custom Data Source](import/user-defined-plugin.md)
-* [Data Transformation](chart.md)
+
+
+* [Data Wrangling](chart.md)
    * [Command Line mode for faster and more flexible data interaction in Exploratory](wrangling/command-mode.md)
    * [Select / Remove Columns](wrangling/select.md)
    * [Create New Calculation](wrangling/mutate.md)
@@ -109,6 +111,20 @@
    * [Save as PNG/SVG](viz/save.md)
    * [Save as Exploratory Data File](viz/save-as-edf.md)
    * [Share/Schedule](viz/schedule.md)
+
+
+* [Analytics](analytics.md)
+   * [A/B Test](analytics/ab_test.md)
+   * [Anomaly Detection](analytics/anomaly.md)
+   * [Cohort Analysis](analytics/cohort.md)
+   * [Correlation by Column](analytics/correlation_column.md)
+   * [Correlation by Category](analytics/correlation_category.md)
+   * [Similarity](analytics/similarity.md)
+   * [Survival Analysis](analytics/survival.md)
+   * [Time Series Forecasting](analytics/forecasting.md)
+   * [Variable Importance](analytics/var_importance.md)
+   * [Variable Importance with Time](analytics/var_importance_time.md)
+
 
 * [Export]()
    * [Correlation](stats/correlation.md)
