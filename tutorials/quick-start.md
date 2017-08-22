@@ -18,7 +18,6 @@ This is a getting started guide that walks you through how to get around with Ex
   * Line Chart with **Window Calculation**
   * Boxplot Chart with **Grouped Top 100**
   * Scatter Chart with **Trend Lines** (Linear Regression Model and General Additive Model)
-  * **K-means Clustering**
 * Use **Machine Learning** Algorithm
   * **Variable Importance** with Random Forest
 * **Reproduce** Data Wrangling and Analysis for Next Month Data
