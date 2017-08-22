@@ -19,6 +19,8 @@ This is a getting started guide that walks you through how to get around with Ex
   * Boxplot Chart with **Grouped Top 100**
   * Scatter Chart with **Trend Lines** (Linear Regression Model and General Additive Model)
   * **K-means Clustering**
+* Use **Machine Learning** Algorithm
+  * **Variable Importance** with Random Forest
 * **Reproduce** Data Wrangling and Analysis for Next Month Data
 * Share Charts in **Reproducible** Way
 * Create **Note** to Share insights
@@ -542,9 +544,15 @@ Select 'Linear Regression' to use Linear Regression model to calculate the trend
 
 Again, the dots that represent the flights are nicely on the linear trend lines for some carriers like 'AA', 'NK', but not so much for 'F9', 'VX'.
 
-### Variable Importance
+## Use Machine Learning Algorithm to Gain Deep Insights
 
-In this flight data, we have many variables such as ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc. But which variables are the most useful to characterize the carrier? In other words, which columns are the most useful to predicting the carriers? To answer this question, you can use Variable Importance Analytics feature which is introduced in V4.0.
+### Variable Importance with Random Forest
+
+Visualization is great when you can recognize the patterns and trends with your eyes. But most often than not, things are not that simple.
+
+For example, out of all these columns (or variables) like FL_DATE, ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc, which are the most useful to characterize the carrier? In other words, if we don't have CARRIER column, can we still predict which carrier is for any given row of the flight data?
+
+You can answer to this type of questions by using Machine Learning or Statistical algorithms. In Exploratory, you can use 'Variable Importance' feature under Analytics view. This internally uses Random Forest algorithm and help you find which columns are more influential in terms of predicting the outcome that you are interested.
 
 First, click Analytics Tab and select 'Variable Importance' from Analytics Type pulldown list.
 
@@ -574,69 +582,14 @@ And if you click "Prediction Matrix", you can see the chances of making errors s
 
 ![](images/quick-start-analytics-variable-importance-7.png)
 
-Now Let's switch view from Analytics to Viz and check these two carriers EV and OO with boxplot using the FL_NUM column.
-To do so, click Viz tab and create a boxplot by selecting CARRIER as X Axis and FL_NUM as Y-AXIS. And you'll get the chart like this.
+To confirm this, you can go back to Viz view and create a boxplot by selecting CARRIER as X Axis and FL_NUM as Y-AXIS. And you'll get the chart like this.
 
 ![](images/quick-start-analytics-variable-importance-8.png)
 
-And the chart clearly shows that carrier EV and OO are sitting on the top of the chart while other carriers are sitting on bottom. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we observed for Variable Importance Analytics. As you can see here, with "Variable Importance Analytics" feature, you can find these patterns easily and quickly without manually iterating each column as Y Axis on the boxplot.
+You can see that the range of the FL_NUM values for carrier EV and OO are much higher than the ones for the others. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we have observed for Variable Importance Analytics previously.
 
+As you can see here, by using Machine Learning and Statistical algorithms, you can find patterns and trends from your data easily and quickly.
 
-### K-means Clustering
-
-Now as you might have noticed though, most of the data are gathered around 0 for both the departure and the arrival delays. And the linear relationship between the two measures could be different depends on the range of the delay times.
-
-So we can group the flights based on the arrival and departure delay times. If you want to group the data automatically based on the two or more measures, you can use one of the clustering algorithms called 'K-means'.
-
-Select 'Run Analytics' -> 'Cluster with 'K-means'.
-
-![](images/quick-start-69.png)
-
-In the opened dialog 'Cluster with K-means', select 'DEP_DELAY' and 'ARR_DELAY' columns under 'Select Columns' section, and set '5' as the number of the clusters it will create, and click 'Run' button.
-
-![](images/quick-start-70.png)
-
-You can see what has just happened better in Table view. Scroll to the very right, and you will notice that there is a new column called 'cluster' which has the cluster id for each row (flight).
-
-![](images/quick-start-72.png)
-
-Now, go back to Viz view, and assign this 'cluster' column to Color.
-
-![](images/quick-start-85.png)
-
-Now, as you notice though, the clustering calculation was done against the entire data set. If you remove 'CARRIER' from Repeat By, then you can see how the 5 clustered groups look like.
-
-![](images/quick-start-87.png)
-
-Let's say we want to cluster the data for each carrier, meaning we want to see 5 clustered groups for each carrier. This can be done by grouping the data frame before calculating the cluster IDs. This is very similar to what you have done with 'Top N' operation before.
-
-First, make sure that you 'Pin' the chart before going to the next step.
-
-Then, select 'Filter' step, which is gray colored because it's coming from the main data frame.
-
-![](images/quick-start-86.png)
-
-Select 'Group By' from 'Add' button menu to add this grouping step.
-
-![](images/quick-start-88.png)
-
-And, select 'CARRIER' column.
-
-![](images/quick-start-89.png)
-
-This will automatically run the next step of 'K-means Clustering' because the currently displayed chart is 'Pinned' to the step.
-
-![](images/quick-start-90.png)
-
-Lastly, we can show Trend Line. This time, we can try 'Polynomial (GAM)' as Type and select 'Data Range for Each Group'.
-
-![](images/quick-start-91.png)
-
-Unlike 'Linear Regression', which is to build linear regression models assuming it can draw a linear line to express the correlation between a given pair of two measures, 'Polynomial (GAM)' is to build general additive models assuming that it can draw a smooth curve between a given pair of two measures by optimizing for the 'local fitting' or for each divided subsection of a given data.
-
-If you are not sure about this, no worry, Think of Linear Regression is a way for drawing a linear line and Polynomial is a way for drawing a smooth line / curve.
-
-As you can see the above, the polynomial smooth curves tend to look more like linear lines as the delay times become larger. This means that it's easier to predict how late the arrival time will be if we know how late the departure time was beforehand, although there are a few exceptions like F9, HA, etc.
 
 ## Reproduce Analysis Works
 
