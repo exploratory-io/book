@@ -1,22 +1,29 @@
-Exploratory R Markdown basics.
+# A Guide for Writing Note with Markdown Editor
 
-From Version 4.0, Exploratory supports Markdown note and this document explains some of the basic Markdown syntax.
+You can use Simple Markdown Editor to write notes to communicate your insights with others easily. This guide shows  how you can use it.
 
 ##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-[Lists](#lists)  
-[Links](#links)  
-[Images](#images)  
-[Code](#code)  
-[Tables](#tables)  
-[Blockquotes](#blockquotes)  
-[Inline HTML](#html)  
-[Horizontal Rule](#hr)  
-[Line Breaks](#lines)  
-[Tabbed Sections](#tabbedsections)
-[Exploratory Charts](#charts)
-[Exploratory Analytics](#analytics)
+
+* Basic Markdown formatting  
+  * [Headers](#headers)  
+  * [Emphasis](#emphasis)  
+  * [Lists](#lists)  
+  * [Links](#links)  
+  * [Images](#images)  
+  * [Code](#code)  
+  * [Tables](#tables)  
+  * [Blockquotes](#blockquotes)  
+  * [Inline HTML](#html)  
+  * [Horizontal Rule](#hr)  
+  * [Line Breaks](#lines)  
+  * [Tabbed Sections](#tabbedsections)  
+* [Charts from Visualization View](#charts)  
+* [Charts from Analytics](#analytics)　　
+* [R Script - Code Block](#rcodeblock)
+* [R Script - Inline](#rinline)
+* [Explort to HTML/Word]()
+* [Publish and Share]()
+
 
 <a name="headers"/>
 
@@ -86,7 +93,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ```no-highlight
 1. First ordered list item
 2. Another item
-⋅⋅* Unordered sub-list. 
+⋅⋅* Unordered sub-list.
 1. Actual numbers don't matter, just that it's a number
 ⋅⋅1. Ordered sub-list
 4. And another item.
@@ -104,7 +111,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 1. First ordered list item
 2. Another item
-  * Unordered sub-list. 
+  * Unordered sub-list.
 1. Actual numbers don't matter, just that it's a number
   1. Ordered sub-list
 4. And another item.
@@ -138,8 +145,8 @@ There are two ways to create links.
 
 Or leave it empty and use the [link text itself].
 
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://exploratory.io or <http://exploratory.io> and sometimes 
+URLs and URLs in angle brackets will automatically get turned into links.
+http://exploratory.io or <http://exploratory.io> and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
@@ -161,8 +168,8 @@ Some text to show that the reference links can follow later.
 
 Or leave it empty and use the [link text itself].
 
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://exploratory.io or <http://exploratory.io> and sometimes 
+URLs and URLs in angle brackets will automatically get turned into links.
+http://exploratory.io or <http://exploratory.io> and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
@@ -178,10 +185,10 @@ Some text to show that the reference links can follow later.
 ```no-highlight
 Here's our logo (hover to see the title text):
 
-Inline-style: 
+Inline-style:
 ![alt text](file://Users/exploratory/images/logo_top.png "Logo Title Text 1")
 
-Reference-style: 
+Reference-style:
 ![alt text][logo]
 
 [logo]: file://Users/exploratory/images/logo_top.png "Logo Title Text 2"
@@ -189,10 +196,10 @@ Reference-style:
 
 Here's our logo (hover to see the title text):
 
-Inline-style: 
+Inline-style:
 ![alt text](images/logo_top.png "Logo Title Text 1")
 
-Reference-style: 
+Reference-style:
 ![alt text][logo]
 
 [logo]: images/logo_top.png "Logo Title Text 2"
@@ -201,7 +208,7 @@ Reference-style:
 
 ## Code
 
-Code blocks are part of the Markdown spec and Exploratory uses R Markdown's pygments for syntax highlighting. 
+Code blocks are part of the Markdown spec and Exploratory uses R Markdown's pygments for syntax highlighting.
 
 ```no-highlight
 `r now()` is the best time to learn Inline R codes that have `back-ticks around` it.
@@ -214,9 +221,9 @@ Blocks of code are either fenced by lines with three back-ticks <code>```</code>
 <pre lang="no-highlight"><code>```{r}
 summary(mtcars)
 ```
- 
+
 ```
-No language indicated, so no syntax highlighting. 
+No language indicated, so no syntax highlighting.
 But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
 ```
 </code></pre>
@@ -251,7 +258,7 @@ summary(mtcars)
 
 
 ```
-No language indicated, so no syntax highlighting in. 
+No language indicated, so no syntax highlighting in.
 But let's throw in a <b>tag</b>.
 ```
 
@@ -272,7 +279,7 @@ Colons can be used to align columns.
 | zebra stripes | are neat      |    $1 |
 
 There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
+The outer pipes (|) are optional, and you don't need to make the
 raw Markdown line up prettily. You can also use inline Markdown.
 
 Markdown | Less | Pretty
@@ -306,7 +313,7 @@ Markdown | Less | Pretty
 
 Quote break.
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
 ```
 
 > Blockquotes are very handy in email to emulate reply text.
@@ -314,13 +321,13 @@ Quote break.
 
 Quote break.
 
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
 
 <a name="html"/>
 
 ## Inline HTML
 
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well. 
+You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 
 ```no-highlight
 <dl>
@@ -378,7 +385,7 @@ Underscores
 
 ## Line Breaks
 
-My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend. 
+My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend.
 
 Here are some things to try out:
 
