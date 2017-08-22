@@ -257,7 +257,7 @@ Anyway, let's go to the above linked page and download the EDF file.
 
 ![](images/quick-start-join2.png)
 
-Then, import the EDF file into Exploratory. You can select 'Import Exploratory Data' from 'Add Data Frame' dropdown list.
+Then, import the EDF file into Exploratory. You can select 'Import File Data' from 'Add Data Frame' dropdown list.
 
 ![](images/quick-start-join3.png)
 
@@ -283,7 +283,7 @@ Now, go back to 'airline_delay_2016_08' data frame.
 
 There is a column called 'ORIGIN', which has the airport codes for the airports from which the flights departed. And this is the column we are going to use to map with the 'us-air-port-code' data frame.
 
-Select 'Join' from 'Add' button menu.
+Select 'Join' from ORIGIN column menu.
 
 ![](images/quick-start-100_3.png)
 
@@ -575,11 +575,11 @@ And if you click "Prediction Matrix", you can see the chances of making errors s
 ![](images/quick-start-analytics-variable-importance-7.png)
 
 Now Let's switch view from Analytics to Viz and check these two carriers EV and OO with boxplot using the FL_NUM column.
-To do so, click Viz tab and create a boxplot by selecting CARRIER as X Axis and FL_BUM as Y-AXIS. And you'll get the chart like this.
+To do so, click Viz tab and create a boxplot by selecting CARRIER as X Axis and FL_NUM as Y-AXIS. And you'll get the chart like this.
 
 ![](images/quick-start-analytics-variable-importance-8.png)
 
-And the chart clearly shows that carrier EV and OO are sitting on the top of the chart while other carriers are sitting on bottom. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we observed for Variable Importance Analytics. As you can see here, with "Variable Importance Analytics" feature, you can find these patterns easily and quickly without manually iterating each column as Y Axis on the boxplo.
+And the chart clearly shows that carrier EV and OO are sitting on the top of the chart while other carriers are sitting on bottom. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we observed for Variable Importance Analytics. As you can see here, with "Variable Importance Analytics" feature, you can find these patterns easily and quickly without manually iterating each column as Y Axis on the boxplot.
 
 
 ### K-means Clustering
