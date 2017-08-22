@@ -534,6 +534,44 @@ Y軸のプロパティメニューから「トレンドライン」を選択し�
 
 フライトを表す点は、 「AA」、「NK」などの一部の航空会社では線形トレンドライン上にうまく収まりますが、「F9」や「VX」ではそれほどではありません。
 
+### 変数重要度
+
+この航空機の発着延滞データには、ARR_DELAY, DEP_DELAY, FL_NUM, DISTANCE等々多くの変数があります。この中で一体どの変数が航空会社を特徴付けるのに役に立つのでしょうか？別の言い方をすれば、どの列が航空会社を予測するのに役に立つのでしょうか？この質問に答えるのに、V4.0から導入された変数重要度の機能を使うことができます。
+
+まず、アナリティクスタブをクリックし、そしてアナリティクスタイプのプルダウンリストから「変数重要度」を選びます。
+
+![](images/quick-start-analytics-variable-importance-1.png)
+
+次に予測対象の列で'CARRIER'をリストから選びます。
+
+![](images/quick-start-analytics-variable-importance-2.png)
+
+「予測対象の列」をクリックし、そして列選択のダイアログで「全て」をチェックします。 右の方にスクロールし、'CANCELLATION_CODE'のチェックを外します。これはこのCANCELLATION_CODE列の値の多くが欠損値だからです。
+
+![](images/quick-start-analytics-variable-importance-3.png)
+
+そして「実行」ボタンをクリックします。
+
+![](images/quick-start-analytics-variable-importance-4.png)
+
+この結果を見ると、FL_NUMとDISTANCEが、航空会社を特徴付ける(または予測するのに)役に立つ上位２つの変数であることが分かりました。
+
+![](images/quick-start-analytics-variable-importance-5.png)
+
+"Model Quality"のリンクをクリックすると、この２つの変数が「OO」と「EV」の航空会社をとてもよく説明していることが読み取れます。
+
+![](images/quick-start-analytics-variable-importance-6.png)
+
+そして、"Prediction Matrix"をクリックすると, 航空会社が別であるのにも関わらず(例えばDL)、EVと誤って予測してしまう確率はかなり低いことが分かります。また同じことが「OO」という航空会社についても言えます。
+
+![](images/quick-start-analytics-variable-importance-7.png)
+
+さて、アナリティクスビューからVizビューに移動し、EVとOOという２つの航空会社を、FL_NUM列を用いて箱ひげ図の中で確認してみましょう。そのためには、Vizタブをクリックし、X軸にCARRIER列、Y軸にFL_NUM列を割り当てます。すると以下のようなチャートができます。
+
+![](images/quick-start-analytics-variable-importance-8.png)
+
+このチャートを見ると、EVとOOという航空会社のデータはチャートの上の方にあり、他の航空会社のデータはチャートの下の方にあるのが見て取れます。このことは、先ほど変数重要度の"Model quality"と"Prediction Matrix"で確認した結果と合致します。ここで学んだように、変数重要度の機能を使うと、boxplotのチャートでそれぞれの列をY軸に何度も当てはめることをしなくても、こうしたパターンを簡単に素早く知ることができます。
+
 ### k平均クラスタリング
 
 お気づきかもしれませんが、ほとんどのデータは出発遅延と到着遅延の両方で原点0の周りに集められます。そして、2つのメジャー(数値情報を持つ列)の線形関係は、遅延時間の範囲によって異なる可能性があります。
