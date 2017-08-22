@@ -544,7 +544,7 @@ Again, the dots that represent the flights are nicely on the linear trend lines 
 
 ### Variable Importance
 
-In this flight data, we have many variables such as ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc. But which variables are the most useful to characterize the carrier? In other words, which columns are the most useful to predicting the carriers? To answer this question, you can use Variable Importance Analytics feature which is introduced in V4.0. 
+In this flight data, we have many variables such as ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc. But which variables are the most useful to characterize the carrier? In other words, which columns are the most useful to predicting the carriers? To answer this question, you can use Variable Importance Analytics feature which is introduced in V4.0.
 
 First, click Analytics Tab and select 'Variable Importance' from Analytics Type pulldown list.
 
@@ -579,7 +579,7 @@ To do so, click Viz tab and create a boxplot by selecting CARRIER as X Axis and 
 
 ![](images/quick-start-analytics-variable-importance-8.png)
 
-And the chart clearly shows that carrier EV and OO are sitting on the top of the chart while other carriers are sitting on bottom. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we observed for Variable Importance Analytics. As you can see here, with "Variable Importance Analytics" feature, you can find these patterns easily and quickly without manually iterating each column as Y Axis on the boxplo. 
+And the chart clearly shows that carrier EV and OO are sitting on the top of the chart while other carriers are sitting on bottom. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we observed for Variable Importance Analytics. As you can see here, with "Variable Importance Analytics" feature, you can find these patterns easily and quickly without manually iterating each column as Y Axis on the boxplo.
 
 
 ### K-means Clustering
@@ -739,9 +739,9 @@ On the published chart page, you or others you shared with can click 'Download' 
 This means, others can import the downloaded EDF file into their Exploratory and will see not only the chart but also all the data wrangling steps to produce the chart data.
 
 
-## Create Note
+## Create Note with Simple Markdown Editor
 
-Finally, you can create your analysis report by creating Note.
+Once you find insights from your data analysis, you want to communicate it with others by authoring, publishing, and sharing Notes. In this section, let's quickly take a look at how you can do such in Exploratory.
 
 Click 'Plus' button next to 'Note'.
 
@@ -749,25 +749,80 @@ Click 'Plus' button next to 'Note'.
 
 Type a name in the pop-up and click 'Create' button.
 
-This is a Rich Text Editor, so you can write anything you like. Highlighting the text will prompt you a formatting menu.
+You will see Markdown editor and you can write anything you like following the markdown syntax.
 
-![](images/quick-start-83.png)
+![](images/quick-start-markdown_1.png)
 
-Every time you hit Enter key to start a new line, you will see 'Plus' button at the beginning of the line.
+If you want to know more details about the markdown syntax, you can check our [Exploratory Markdown help page](https://docs.exploratory.io/markdown/markdown-note.html).   
 
-![](images/quick-start-83_1.png)
+You can also use the icons in the toolbar to format the text or insert images if you're not familiar with Markdown syntax.
 
-By clicking on the button you will see a chart icon.
-
-![](images/quick-start-83_2.png)
-
-You can click this to get a Chart picker dialog. Select a data frame where the chart were created, select the chart, and click 'OK' button.
-
-![](images/quick-start-82.png)
+![](images/quick-start-markdown_4.png)
 
 
-Once you finish writing the report, you can either publish it so that you can share by URL or save it in a HTML document.
+### Preview the formatting output
 
-![](images/quick-start-84.png)
+You can preview the markdown formatting (e.g. Header text, images, bullet points, etc.) style by clicking on one of the preview buttons in the toolbar.
 
-Lastly, you can click Refresh button to refresh all the charts that are in the Note. This will reload the data from the underlying data sources like databases, files, etc. for each chart.
+![](images/quick-start-markdown_5.png)
+
+### Insert Charts from Visualization or Analytics View
+
+You can insert the charts you have created at the previous steps for the flight data by clicking on Chart icon in the toolbar.
+
+![](images/quick-start-markdown_10.png)
+
+This will open Chart selection dialog.
+
+![](images/quick-start-markdown_6.png)
+
+By selecting the chart in the dialog and clicking on 'OK' button, it will insert a code to embed the chart.
+
+![](images/quick-start-markdown_7.png)
+
+You can quickly preview how the note would look like with the embedded chart by clicking on Run button at the top.
+
+![](images/quick-start-markdown_8.png)
+
+You can see the note output in 'Run' mode.
+
+![](images/quick-start-markdown_9.png)
+
+
+### Insert R Code
+
+If you are familiar with R programming language, then you can write R script with your favorite R packages like [ggplot2](http://ggplot2.tidyverse.org) to present your data as well.
+
+![](images/quick-start-markdown_11.png)
+
+Example ggplot2 code:
+
+```
+
+suppressPackageStartupMessages(library(ggplot2))
+ggplot(airline_delay_2016_09, aes(FL_NUM, color = CARRIER_NAME)) +
+  geom_density()
+
+
+```
+
+You can click on Run button at the top to execute the R code and generate the output.
+
+![](images/quick-start-markdown_12.png)
+
+
+Lastly, you can click Re-Import button at the top to re-import the data from the original data sources for all the data frames that are used in this Note, and refresh all the charts. This is much more convenient than going back to each data frame and re-import the data one by one.
+
+![](images/quick-start-markdown_13.png)
+
+You can do a lot more with Markdown Editor, take a look at [Exploratory's markdown help page](https://docs.exploratory.io/markdown/markdown-note.html) for more details.
+
+----
+
+Congratulations! You have finished the tutorial. Now you know how to use Exploratory to start taking advantage of the latest and greatest of the technological advancements in Data Science and start finding much deeper insights from your data quickly!
+
+If you have any questions, feel free to contact [Team Exploratory](mailto:support@exploratory.io).
+
+Cheers!
+
+Team Exploratory
