@@ -18,7 +18,8 @@ This is a getting started guide that walks you through how to get around with Ex
   * Line Chart with **Window Calculation**
   * Boxplot Chart with **Grouped Top 100**
   * Scatter Chart with **Trend Lines** (Linear Regression Model and General Additive Model)
-  * **K-means Clustering**
+* Use **Machine Learning** Algorithm
+  * **Variable Importance** with Random Forest
 * **Reproduce** Data Wrangling and Analysis for Next Month Data
 * Share Charts in **Reproducible** Way
 * Create **Note** to Share insights
@@ -66,7 +67,7 @@ After you have selected the file 'airline_delay_2016_08', you'll see the first 5
 
 You can keep all the parameters as is for this exercise, and simply click 'Save' button.
 
-You should see the imported Flight data in Table view like below.
+You should see the imported Flight data in Summary View like below.
 
 ![](images/quick-start-3.png)
 
@@ -152,11 +153,11 @@ Lastly, you would also notice that there is a new step called 'Mutate' being add
 This is the exact R command that actually runs behind the scene. As you perform more data wrangling operations, you will see more 'Steps' added here.
 
 
-### Extract 'Day of Week' from Date
+### Extract 'Day Name' from Date
 
 Let's do one more operation within the same 'Mutate' step.
 
-Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day of Week (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day of Week' from the column header menu.
+Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day Name (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day Name (e.g Mon)' from the column header menu.
 
 ![](images/quick-start-14.png)
 
@@ -164,7 +165,7 @@ In the opened 'Mutate' dialog, notice that 'Create New Column' tab is selected t
 
 ![](images/quick-start-14_1.png)
 
-This means, it will create a new column with the calculation ```wday(FL_DATE, label = TRUE)```, instead of overriding the original column like the last time.
+This means, it will create a new column with the calculation ```wday(FL_DATE, label = TRUE, abbr = TRUE)```, instead of overriding the original column like the last time.
 
 Type 'day_of_week' for the new column name, and hit 'Run' button.
 
@@ -257,11 +258,17 @@ Anyway, let's go to the above linked page and download the EDF file.
 
 ![](images/quick-start-join2.png)
 
-Then, import the EDF file into Exploratory. You can select 'Import Exploratory Data' from 'Add Data Frame' dropdown list.
+Then, import the EDF file into Exploratory. You can select 'Import File Data' from 'Add Data Frame' dropdown list.
 
 ![](images/quick-start-join3.png)
 
+And select 'Exploratory (.edf)'
+
+![](images/quick-start-join3_1.png)
+
 The data looks like below after the import.
+
+
 
 ![](images/quick-start-100.png)
 
@@ -277,7 +284,7 @@ Now, go back to 'airline_delay_2016_08' data frame.
 
 There is a column called 'ORIGIN', which has the airport codes for the airports from which the flights departed. And this is the column we are going to use to map with the 'us-air-port-code' data frame.
 
-Select 'Join' from 'Add' button menu.
+Select 'Join' from ORIGIN column menu.
 
 ![](images/quick-start-100_3.png)
 
@@ -536,61 +543,52 @@ Select 'Linear Regression' to use Linear Regression model to calculate the trend
 
 Again, the dots that represent the flights are nicely on the linear trend lines for some carriers like 'AA', 'NK', but not so much for 'F9', 'VX'.
 
-### K-means Clustering
+## Use Machine Learning Algorithm to Gain Deep Insights
 
-Now as you might have noticed though, most of the data are gathered around 0 for both the departure and the arrival delays. And the linear relationship between the two measures could be different depends on the range of the delay times.
+### Variable Importance with Random Forest
 
-So we can group the flights based on the arrival and departure delay times. If you want to group the data automatically based on the two or more measures, you can use one of the clustering algorithms called 'K-means'.
+Visualization is great when you can recognize the patterns and trends with your eyes. But most often than not, things are not that simple.
 
-Select 'Run Analytics' -> 'Cluster with 'K-means'.
+For example, out of all these columns (or variables) like FL_DATE, ARR_DELAY, DEP_DELAY, FL_MUM, DISTANCE, etc, which are the most useful to characterize the carrier? In other words, if we don't have CARRIER column, can we still predict which carrier is for any given row of the flight data?
 
-![](images/quick-start-69.png)
+You can answer to this type of questions by using Machine Learning or Statistical algorithms. In Exploratory, you can use 'Variable Importance' feature under Analytics view. This internally uses Random Forest algorithm and help you find which columns are more influential in terms of predicting the outcome that you are interested.
 
-In the opened dialog 'Cluster with K-means', select 'DEP_DELAY' and 'ARR_DELAY' columns under 'Select Columns' section, and set '5' as the number of the clusters it will create, and click 'Run' button.
+First, click Analytics Tab and select 'Variable Importance' from Analytics Type pulldown list.
 
-![](images/quick-start-70.png)
+![](images/quick-start-analytics-variable-importance-1.png)
 
-You can see what has just happened better in Table view. Scroll to the very right, and you will notice that there is a new column called 'cluster' which has the cluster id for each row (flight).
+Then select 'CARRIER' for 'What to Predict' pulldown list.
 
-![](images/quick-start-72.png)
+![](images/quick-start-analytics-variable-importance-2.png)
 
-Now, go back to Viz view, and assign this 'cluster' column to Color.
+Click 'Variable Columns', and it will open up Column Selection Dialog. Click 'All' check box then scroll to the right and exclude 'CANCELLATION_CODE' since most of the value in CANCELLATION_CODE column is NA.
 
-![](images/quick-start-85.png)
+![](images/quick-start-analytics-variable-importance-3.png)
 
-Now, as you notice though, the clustering calculation was done against the entire data set. If you remove 'CARRIER' from Repeat By, then you can see how the 5 clustered groups look like.
+And click Run button.
 
-![](images/quick-start-87.png)
+![](images/quick-start-analytics-variable-importance-4.png)
 
-Let's say we want to cluster the data for each carrier, meaning we want to see 5 clustered groups for each carrier. This can be done by grouping the data frame before calculating the cluster IDs. This is very similar to what you have done with 'Top N' operation before.
+Now we know that FL_NUM and DISTANCE are the top two useful variables to characterize (or predict) carriers.
 
-First, make sure that you 'Pin' the chart before going to the next step.
+![](images/quick-start-analytics-variable-importance-5.png)
 
-Then, select 'Filter' step, which is gray colored because it's coming from the main data frame.
+If you click "Model Quality" link, you can see these variables predict carrier OO and EV very well.  
 
-![](images/quick-start-86.png)
+![](images/quick-start-analytics-variable-importance-6.png)
 
-Select 'Group By' from 'Add' button menu to add this grouping step.
+And if you click "Prediction Matrix", you can see the chances of making errors such as predicting a carrier as EV where the actual carrier is something else (like DL) is really low. And the same applies to carrier OO.   
 
-![](images/quick-start-88.png)
+![](images/quick-start-analytics-variable-importance-7.png)
 
-And, select 'CARRIER' column.
+To confirm this, you can go back to Viz view and create a boxplot by selecting CARRIER as X Axis and FL_NUM as Y-AXIS. And you'll get the chart like this.
 
-![](images/quick-start-89.png)
+![](images/quick-start-analytics-variable-importance-8.png)
 
-This will automatically run the next step of 'K-means Clustering' because the currently displayed chart is 'Pinned' to the step.
+You can see that the range of the FL_NUM values for carrier EV and OO are much higher than the ones for the others. This pattern precisely aligns with the results of "Model quality" and "Prediction Matrix" we have observed for Variable Importance Analytics previously.
 
-![](images/quick-start-90.png)
+As you can see here, by using Machine Learning and Statistical algorithms, you can find patterns and trends from your data easily and quickly.
 
-Lastly, we can show Trend Line. This time, we can try 'Polynomial (GAM)' as Type and select 'Data Range for Each Group'.
-
-![](images/quick-start-91.png)
-
-Unlike 'Linear Regression', which is to build linear regression models assuming it can draw a linear line to express the correlation between a given pair of two measures, 'Polynomial (GAM)' is to build general additive models assuming that it can draw a smooth curve between a given pair of two measures by optimizing for the 'local fitting' or for each divided subsection of a given data.
-
-If you are not sure about this, no worry, Think of Linear Regression is a way for drawing a linear line and Polynomial is a way for drawing a smooth line / curve.
-
-As you can see the above, the polynomial smooth curves tend to look more like linear lines as the delay times become larger. This means that it's easier to predict how late the arrival time will be if we know how late the departure time was beforehand, although there are a few exceptions like F9, HA, etc.
 
 ## Reproduce Analysis Works
 
@@ -693,9 +691,9 @@ On the published chart page, you or others you shared with can click 'Download' 
 This means, others can import the downloaded EDF file into their Exploratory and will see not only the chart but also all the data wrangling steps to produce the chart data.
 
 
-## Create Note
+## Create Note with Simple Markdown Editor
 
-Finally, you can create your analysis report by creating Note.
+Once you find insights from your data analysis, you want to communicate it with others by authoring, publishing, and sharing Notes. In this section, let's quickly take a look at how you can do such in Exploratory.
 
 Click 'Plus' button next to 'Note'.
 
@@ -703,25 +701,80 @@ Click 'Plus' button next to 'Note'.
 
 Type a name in the pop-up and click 'Create' button.
 
-This is a Rich Text Editor, so you can write anything you like. Highlighting the text will prompt you a formatting menu.
+You will see Markdown editor and you can write anything you like following the markdown syntax.
 
-![](images/quick-start-83.png)
+![](images/quick-start-markdown_1.png)
 
-Every time you hit Enter key to start a new line, you will see 'Plus' button at the beginning of the line.
+If you want to know more details about the markdown syntax, you can check our [Exploratory Markdown help page](https://docs.exploratory.io/markdown/markdown-note.html).   
 
-![](images/quick-start-83_1.png)
+You can also use the icons in the toolbar to format the text or insert images if you're not familiar with Markdown syntax.
 
-By clicking on the button you will see a chart icon.
-
-![](images/quick-start-83_2.png)
-
-You can click this to get a Chart picker dialog. Select a data frame where the chart were created, select the chart, and click 'OK' button.
-
-![](images/quick-start-82.png)
+![](images/quick-start-markdown_4.png)
 
 
-Once you finish writing the report, you can either publish it so that you can share by URL or save it in a HTML document.
+### Preview the formatting output
 
-![](images/quick-start-84.png)
+You can preview the markdown formatting (e.g. Header text, images, bullet points, etc.) style by clicking on one of the preview buttons in the toolbar.
 
-Lastly, you can click Refresh button to refresh all the charts that are in the Note. This will reload the data from the underlying data sources like databases, files, etc. for each chart.
+![](images/quick-start-markdown_5.png)
+
+### Insert Charts from Visualization or Analytics View
+
+You can insert the charts you have created at the previous steps for the flight data by clicking on Chart icon in the toolbar.
+
+![](images/quick-start-markdown_10.png)
+
+This will open Chart selection dialog.
+
+![](images/quick-start-markdown_6.png)
+
+By selecting the chart in the dialog and clicking on 'OK' button, it will insert a code to embed the chart.
+
+![](images/quick-start-markdown_7.png)
+
+You can quickly preview how the note would look like with the embedded chart by clicking on Run button at the top.
+
+![](images/quick-start-markdown_8.png)
+
+You can see the note output in 'Run' mode.
+
+![](images/quick-start-markdown_9.png)
+
+
+### Insert R Code
+
+If you are familiar with R programming language, then you can write R script with your favorite R packages like [ggplot2](http://ggplot2.tidyverse.org) to present your data as well.
+
+![](images/quick-start-markdown_11.png)
+
+Example ggplot2 code:
+
+```
+
+suppressPackageStartupMessages(library(ggplot2))
+ggplot(airline_delay_2016_09, aes(FL_NUM, color = CARRIER_NAME)) +
+  geom_density()
+
+
+```
+
+You can click on Run button at the top to execute the R code and generate the output.
+
+![](images/quick-start-markdown_12.png)
+
+
+Lastly, you can click Re-Import button at the top to re-import the data from the original data sources for all the data frames that are used in this Note, and refresh all the charts. This is much more convenient than going back to each data frame and re-import the data one by one.
+
+![](images/quick-start-markdown_13.png)
+
+You can do a lot more with Markdown Editor, take a look at [Exploratory's markdown help page](https://docs.exploratory.io/markdown/markdown-note.html) for more details.
+
+----
+
+Congratulations! You have finished the tutorial. Now you know how to use Exploratory to start taking advantage of the latest and greatest of the technological advancements in Data Science and start finding much deeper insights from your data quickly!
+
+If you have any questions, feel free to contact [Team Exploratory](mailto:support@exploratory.io).
+
+Cheers!
+
+Team Exploratory
