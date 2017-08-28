@@ -2,14 +2,57 @@
 
 ## v 4.0.2
 
-Released on 8/16/2017
+Released on 8/27/2017
 
 ### Enhancements
 
-- A/B Test - Support Repeat By. 
+#### Analytics View
 
-### Bug Fixes
+- Support Repeat-By with A/B Test Analytics View.
+- Renewed Viz Property Dialog for finer control of viz.
+- Added Survival Table View to Survival Analysis
+- End Time of Survival Analysis View and Feature Importance with Time View now defaults to today, if not specified.
+- Japanese Translation on some Analytics Views. (Cohort Analysis, Survival Analysis, and Feature Importance with Time.)
 
+#### Rmarkdown Note
+
+- Mobile support for RMarkdown Note shared on server, and exported as HTML.
+- Charts in RMarkdown exported as HTML now loads incrementally.
+- Support ggplot out.width="full"
+- Added R code block tool button.
+- Added "Open in Browser" button
+- Now table to display data frame in R code block is with pages.
+
+#### Others
+
+- Support Google Analytics Content Experiment dimensions
+- Scatter/Map: Now you can specify data sample size to plot.
+- Added add_row Command Menu
+- Annotation text is now embedded as comment in generated R Script.
+
+### Bug fixes
+
+- Improved error message when there was non-existent local image file link in RMarkdown Note.
+- After restarting R, chart rendering in RMarkdown failed.
+- SIGPIPE error occasionally happened when rendeting RMarkdown Note.
+- Rendering of Analytics Chart embedded in RMarkdown occasionally failed.
+- Embedded R script in RMarkdown Note referencing Exploratory Data Frame occasionally failed rendering.
+- Change made in Analytics View was not immediately reflected to Chart embedded in RMarkdown Note.
+- Markdown Note: Viz table with single column railsed error: "TypeError: data[1].forEach is not a function"
+- Heatmap-Map was broken in markdown note exported as HTML.
+- When new Analytics is created along with existing Analytics, changes in existing Analytics was not saved.
+- In Excel Data Source Dialog, long file path name overflowed in the screen.
+- Correlation Analytics View: Diagonal pixels in heatmap was wrongly displayed with value 0.
+- When JSON data import is canceled, spin icon did not stop correctly.
+- Analytics View: "Underlying data has changed" message was not correctly displayed after pin, unpin and adding new step.
+- Variable Importance Analytics View: Improved performance especially when there are many rows and many categorical predictors.
+- Heatmap: If categorical data for X/Y axis happens to consist of only number characters, heatmap is not displayed.
+- Adding and then removing all Analytics or Rmarkdown on a project created before version 4.0 caused inability to add new Analytics/Rmarkdown again.
+- When data for analytics viz which was embeded in Rmarkdown was updated and updated viz was displayed on Rmarkdown, viz on original analytics view page was not updated accordingly.
+- Dialog for renaming a script did not show up when menu is clicked.
+- Pivot Table: Could not specify Number of Rows as a 2nd measure of a Pivot Table.
+- GeoJson Map: Color was not displayed when GeoJson key property was automatically selected by default.
+- Scatter Plot: When X axis is a categorical data, its order was not honored when Color By column was specified.
 
 
 ## v 4.0.1
