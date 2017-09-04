@@ -511,7 +511,7 @@ And the result would look like this.
 
 <pre><code>
 I have analyzed the **September** flight delay data on  `r format(today(), "%A, %B, %d, %Y")`. The data size is `r format(nrow(airline_delay_2016_09), big.mark=",")` rows. 
-</pre></code>
+</code></pre>
 
 This inline code becomes like this.
 
