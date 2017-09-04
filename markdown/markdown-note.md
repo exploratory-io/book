@@ -13,19 +13,17 @@ You can use Simple Markdown Editor to write notes to communicate your insights w
   * [Code](#code)  
   * [Tables](#tables)  
   * [Blockquotes](#blockquotes)  
-  * [Inline HTML](#inlinehtml)  
-  * [Horizontal Rule](#hr)  
-  * [Line Breaks](#lines)  
-  * [Tabbed Sections](#tabbedsections)  
-* [Charts from Visualization View](#charts)  
-* [Charts from Analytics](#analytics)　　
-* [R Script - Code Block](#rcodeblock)
-* [R Script - Inline](#rinline)
-* [Export to HTML/Word](#exportto)
-* [Publish and Share](#publishandshare)
+  * [Inline HTML](#inline-html)  
+  * [Horizontal Rule](#horizontal-rule)  
+  * [Line Breaks](#line-breaks)  
+  * [Tabbed Sections](#tabbed-sections)  
+* [Charts from Visualization View](#exploratory-charts)  
+* [Charts from Analytics](#exploratory-analytics-viz)　　
+* [R Script - Code Block](#r-script-code-block)
+* [R Script - Inline](#r-script-inline)
+* [Export to HTML/Word](#export-to-htmlword)
+* [Publish and Share](#publish-and-share)
 
-
-<a name="headers"></a>
 
 ## Headers
 
@@ -61,8 +59,6 @@ Alt-H1
 Alt-H2
 ------
 
-<a name="emphasis"></a>
-
 ## Emphasis
 
 ```no-highlight
@@ -82,9 +78,6 @@ Strong emphasis, aka bold, with **asterisks** or __underscores__.
 Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
-
-
-<a name="lists"></a>
 
 ## Lists
 
@@ -125,8 +118,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
-
-<a name="links"></a>
 
 ## Links
 
@@ -178,7 +169,6 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
-<a name="images"></a>
 
 ## Images
 
@@ -204,7 +194,6 @@ Reference-style:
 
 [logo]: images/logo_top.png "Logo Title Text 2"
 
-<a name="code"></a>
 
 ## Code
 
@@ -263,8 +252,6 @@ But let's throw in a <b>tag</b>.
 ```
 
 
-<a name="tables"></a>
-
 ## Tables
 
 They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
@@ -303,8 +290,6 @@ Markdown | Less | Pretty
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 
-<a name="blockquotes"></a>
-
 ## Blockquotes
 
 ```no-highlight
@@ -323,7 +308,6 @@ Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
 
-<a name="inlinehtml"></a>
 
 ## Inline HTML
 
@@ -347,7 +331,6 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
-<a name="hr"></a>
 
 ## Horizontal Rule
 
@@ -381,7 +364,6 @@ ___
 
 Underscores
 
-<a name="lines"></a>
 
 ## Line Breaks
 
@@ -405,8 +387,6 @@ This line is separated from the one above by two newlines, so it will be a *sepa
 This line is also begins a separate paragraph, but...  
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
-
-<a name="tabbedsections"></a>
 
 ## Tabbed Sections
 
@@ -437,8 +417,6 @@ You can also specify two additional attributes to control the appearance and beh
 ```
 ![](images/tabbedsection.png "Tabbed Section")
 
-<a name="charts"></a>
-
 ## Exploratory Charts
 
 On Exploratory Desktop, You can select Exploratory Charts when you writing Markdown note. Click Chart Icon on Toolbar.
@@ -461,7 +439,6 @@ And when you click Run, this code block is converted to Exploratory Chart like b
 
 ![](images/exploratory-chart-in-md.png "Chart Select Dialog")
 
-<a name="analytics"></a>
 
 ## Exploratory Analytics Viz
 
@@ -490,7 +467,9 @@ And when you click Run, this code block is converted to Exploratory Analytics Vi
 ## R Script - Code block
 
 Here is some example of R code block.
+
 <pre><code>
+
 ![](/Users/kannishida/Dropbox/Documents/Analytics/blog/airplane-at-airport-cropped.jpeg)
 
 # Flight Analysis Report 
@@ -522,13 +501,11 @@ ggplot(airline_delay_2016_09, aes(FL_NUM, color = CARRIER_NAME)) +
   geom_density()
 
 ```
-</pre></code>
+</code></pre>
 
 And the result would look like this.
 
 ![](images/code-block-example.png "Code Block example")
-
-<a name="rinline"></a>
 
 ## R Script - Inline
 
@@ -541,9 +518,6 @@ This inline code becomes like this.
 ```
 I have analyzed the September flight delay data on Monday, September, 04, 2017. The data size is 1,000 rows.
 ```
-
-
-<a name="exportto"></a>
 
 ## Export to HTML/Word
 
