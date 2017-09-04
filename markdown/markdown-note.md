@@ -22,7 +22,7 @@ You can use Simple Markdown Editor to write notes to communicate your insights w
 * [R Script - Code Block](#rcodeblock)
 * [R Script - Inline](#rinline)
 * [Export to HTML/Word](#exportto)
-* [Publish and Share]()
+* [Publish and Share](#publishandshare)
 
 
 <a name="headers"></a>
@@ -484,6 +484,64 @@ After you select a Chart and Click OK, following Exploratory Code block is inser
 And when you click Run, this code block is converted to Exploratory Analytics Viz like below.
 
 ![](images/exploratory-analytics-in-md.png "Chart Select Dialog")
+
+<a name="rcodeblock"></a>
+
+## R Script - Code block
+
+Here is some example of R code block.
+<pre><code>
+![](/Users/kannishida/Dropbox/Documents/Analytics/blog/airplane-at-airport-cropped.jpeg)
+
+# Flight Analysis Report 
+
+I have analyzed the **September** flight delay data on  `r format(today(), "%A, %B, %d, %Y")`. The data size is `r format(nrow(airline_delay_2016_09), big.mark=",")` rows. 
+
+* Which Carriers had more departure delays? 
+* How the trend of the flight delay times? 
+* Which US States are similar in terms of the delay times? 
+
+## Which Carriers had more departure delays? 
+
+```{exploratory}
+/airline_delay_2016-08/viz/1
+```
+
+## Useful Information to Identify Carriers
+
+
+```{exploratory}
+/airline_delay_2016_09/analytics/2/1
+```
+
+## Distribution of the number of the flights
+
+```{r echo=FALSE, cache = TRUE}
+suppressPackageStartupMessages(library(ggplot2))
+ggplot(airline_delay_2016_09, aes(FL_NUM, color = CARRIER_NAME)) +
+  geom_density()
+
+```
+</pre></code>
+
+And the result would look like this.
+
+![](images/code-block-example.png "Code Block example")
+
+<a name="rinline"></a>
+
+## R Script - Inline
+
+<pre><code>
+I have analyzed the **September** flight delay data on  `r format(today(), "%A, %B, %d, %Y")`. The data size is `r format(nrow(airline_delay_2016_09), big.mark=",")` rows. 
+</pre></code>
+
+This inline code becomes like this.
+
+```
+I have analyzed the September flight delay data on Monday, September, 04, 2017. The data size is 1,000 rows.
+```
+
 
 <a name="exportto"></a>
 
