@@ -22,7 +22,7 @@ You can use Simple Markdown Editor to write notes to communicate your insights w
 * [R Script - Code Block](#rcodeblock)
 * [R Script - Inline](#rinline)
 * [Export to HTML/Word](#exportto)
-* [Publish and Share]()
+* [Publish and Share](#publishandshare)
 
 
 <a name="headers"></a>
