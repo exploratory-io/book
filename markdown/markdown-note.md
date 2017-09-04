@@ -13,7 +13,7 @@ You can use Simple Markdown Editor to write notes to communicate your insights w
   * [Code](#code)  
   * [Tables](#tables)  
   * [Blockquotes](#blockquotes)  
-  * [Inline HTML](#html)  
+  * [Inline HTML](#inlinehtml)  
   * [Horizontal Rule](#hr)  
   * [Line Breaks](#lines)  
   * [Tabbed Sections](#tabbedsections)  
@@ -21,11 +21,11 @@ You can use Simple Markdown Editor to write notes to communicate your insights w
 * [Charts from Analytics](#analytics)　　
 * [R Script - Code Block](#rcodeblock)
 * [R Script - Inline](#rinline)
-* [Explort to HTML/Word]()
+* [Export to HTML/Word](#exportto)
 * [Publish and Share]()
 
 
-<a name="headers"/>
+<a name="headers"></a>
 
 ## Headers
 
@@ -61,7 +61,7 @@ Alt-H1
 Alt-H2
 ------
 
-<a name="emphasis"/>
+<a name="emphasis"></a>
 
 ## Emphasis
 
@@ -84,7 +84,7 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 
-<a name="lists"/>
+<a name="lists"></a>
 
 ## Lists
 
@@ -126,7 +126,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 - Or minuses
 + Or pluses
 
-<a name="links"/>
+<a name="links"></a>
 
 ## Links
 
@@ -178,7 +178,7 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
-<a name="images"/>
+<a name="images"></a>
 
 ## Images
 
@@ -204,7 +204,7 @@ Reference-style:
 
 [logo]: images/logo_top.png "Logo Title Text 2"
 
-<a name="code"/>
+<a name="code"></a>
 
 ## Code
 
@@ -263,7 +263,7 @@ But let's throw in a <b>tag</b>.
 ```
 
 
-<a name="tables"/>
+<a name="tables"></a>
 
 ## Tables
 
@@ -303,7 +303,7 @@ Markdown | Less | Pretty
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 
-<a name="blockquotes"/>
+<a name="blockquotes"></a>
 
 ## Blockquotes
 
@@ -323,7 +323,7 @@ Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
 
-<a name="html"/>
+<a name="inlinehtml"></a>
 
 ## Inline HTML
 
@@ -347,7 +347,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
-<a name="hr"/>
+<a name="hr"></a>
 
 ## Horizontal Rule
 
@@ -381,7 +381,7 @@ ___
 
 Underscores
 
-<a name="lines"/>
+<a name="lines"></a>
 
 ## Line Breaks
 
@@ -406,7 +406,7 @@ This line is also begins a separate paragraph, but...
 This line is only separated by a single newline, so it's a separate line in the *same paragraph*.
 
 
-<a name="tabbedsections"/>
+<a name="tabbedsections"></a>
 
 ## Tabbed Sections
 
@@ -437,7 +437,7 @@ You can also specify two additional attributes to control the appearance and beh
 ```
 ![](images/tabbedsection.png "Tabbed Section")
 
-<a name="charts"/>
+<a name="charts"></a>
 
 ## Exploratory Charts
 
@@ -461,7 +461,7 @@ And when you click Run, this code block is converted to Exploratory Chart like b
 
 ![](images/exploratory-chart-in-md.png "Chart Select Dialog")
 
-<a name="analytics"/>
+<a name="analytics"></a>
 
 ## Exploratory Analytics Viz
 
@@ -484,3 +484,26 @@ After you select a Chart and Click OK, following Exploratory Code block is inser
 And when you click Run, this code block is converted to Exploratory Analytics Viz like below.
 
 ![](images/exploratory-analytics-in-md.png "Chart Select Dialog")
+
+<a name="exportto"></a>
+
+## Export to HTML/Word
+
+![](images/export-as-html.png "Export to HTML")
+
+To Export output as HTML, click Export button and select `Export as HTML`.
+Then you'll have two options, `Without PNG` and `With PNG`. If you want to share the HTML on Dropbox or other places where javascript execute is not supported, you might want to select `with PNG` so that charts are rendered as images. Otherwise, select `Without PNG` so that you can share the charts with full interactivity and can reduce the output file size.
+
+To Export as Word Document, click Export button and select `Export as Word Document`.
+
+<a name="publishandshare"></a>
+
+## Publish and Share
+
+To publish and share your Markdown Note, click Share button.
+
+![](images/markdown-share.png "Share Markdown Note")
+
+And on the Share dialog, check 'Private' if you want to privately share the Markdown Note and Click `Share` button.
+
+![](images/markdown-share-scope.png "Export to HTML")
