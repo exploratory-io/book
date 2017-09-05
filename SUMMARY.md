@@ -77,7 +77,6 @@
    * [Work with Categories](wrangling/categories.md)
    * [Data Type Conversion](wrangling/type-convert.md)
    * [Row as header](wrangling/row_as_header.md)
-   * [Convert to NA](wrangling/convert_to_na.md)
    * [Ungroup](wrangling/ungroup.md)
    * [Unnest](wrangling/unnest.md)
    * [Remove Empty Rows](wrangling/remove_empty_rows.md)
