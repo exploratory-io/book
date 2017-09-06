@@ -6,7 +6,7 @@ With past data as training data, it creates a model that predicts future value f
 Input data should be a time series data. Each row should represent one observation (e.g. one row per date/time). It should have following columns.
 
   * Date - A Date or POSIXct column when the observation was made.
-  * Some measure value - Numeric column that stored observed value.
+  * Some measure value - Numeric column that stores observed value.
 
 
 ## How to Use This Feature
