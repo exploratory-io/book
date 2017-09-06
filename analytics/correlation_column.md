@@ -5,7 +5,7 @@ Calculates Correlation by Column.
 ## Input Data
 Input data should contain numeric columns.
 
-  * Variable Columns - Numeric columns that you want to calculate correlation.
+  * Variable Columns - Numeric columns in which you want to see correlation.
 
 ## How to Use This Feature
 1. Click Analytics View tab.
