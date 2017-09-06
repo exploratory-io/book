@@ -471,11 +471,11 @@ Vizビューに移動し、「地図 - 経度 / 緯度」チャートタイプ�
 
 列リストから「CARRIER」を選択します。
 
-![](images/quick-start-51.png)
+![](images/quick-start-51-ja.png)
 
 これにより、チャートが自動的に更新されます。ここでは、航空会社毎にワースト100便の遅延時間の範囲を示しています。
 
-![](images/quick-start-52.png)
+![](images/quick-start-52-ja.png)
 
 現在右側で選択されているステップはまだ「グループ化」ですが、チャートに表示されるデータは「上位N / 下位N」ステップを適用した結果です。これは「ピン」ボタンのおかげです！
 
@@ -487,39 +487,39 @@ Vizビューに移動し、「地図 - 経度 / 緯度」チャートタイプ�
 
 右側の「フィルタ」ステップを選択します。
 
-![](images/quick-start-57.png)
+![](images/quick-start-57-ja.png)
 
 アクションメニューから「ブランチを作成」を選択します。
 
-![](images/quick-start-56.png)
+![](images/quick-start-56-ja.png)
 
 新しい「ブランチ」データフレーム名の名前（「correlation」など）を入力し、「作成」ボタンをクリックします。
 
-![](images/quick-start-58.png)
+![](images/quick-start-58-ja.png)
 
 メインデータフレーム 「airline_delay-2016-08」の下に作成された「correlation」という新しいデータフレームがあることに気づくでしょう。
 
-![](images/quick-start-59.png)
+![](images/quick-start-59-ja.png)
 
 また、右側のステップがグレー表示されていることがわかります。
 
-![](images/quick-start-60.png)
+![](images/quick-start-60-ja.png)
 
 これらは、メインデータフレーム 「airline_delay_2016-08」で管理されるステップです。この「correlation」データフレームは、メインデータフレームからこれらのステップの結果を継承します。
 
 今度はVizビューに行き、チャートタイプとして 「散布図」を選択し、X軸に 「DEP_DELAY」、Y軸に 「ARR_DELAY」を割り当てます。
 
-![](images/quick-start-61.png)
+![](images/quick-start-61-ja.png)
 
 2つの数値情報の間には、ある程度の「線形」相関があるようです。
 
 「CARRIER」列を「繰り返し」に割り当てることで、各航空会社の相関関係がどうあるかを見ることができます。
 
-![](images/quick-start-64.png)
+![](images/quick-start-64-ja.png)
 
 「繰り返し」プロパティを調整して、すべてのグラフをより見やすく表示できます。
 
-![](images/quick-start-66.png)
+![](images/quick-start-66-ja.png)
 
 たとえば、各行のチャート数を「4」に設定し、「Vizエリア内のすべてのチャートを合わせる」チェックボックスをオンにし、「チャート間でスケールを同期」をオフにして、チャート間でX軸とY軸のスケールを同期させないようにできます。
 
@@ -527,11 +527,11 @@ Vizビューに移動し、「地図 - 経度 / 緯度」チャートタイプ�
 
 Y軸のプロパティメニューから「トレンドライン」を選択します。
 
-![](images/quick-start-67.png)
+![](images/quick-start-67-ja.png)
 
 線形回帰モデルを使用してトレンドラインを計算するには 「線形回帰」を選択し、各航空会社のデータ範囲についてのみトレンドラインが描画されるように 「各グループのデータ範囲」を 「線の長さ」として選択します。
 
-![](images/quick-start-68.png)
+![](images/quick-start-68-ja.png)
 
 フライトを表す点は、 「AA」、「NK」などの一部の航空会社では線形トレンドライン上にうまく収まりますが、「F9」や「VX」ではそれほどではありません。
 
