@@ -16,8 +16,8 @@ Input data should contain numeric columns.
 
 ![](images/cor_by_column_selection_dialog.png)
 
-10. Click Run button to run the analytics.
-11. Select view type (explained below) by clicking view type link to see each type of generated visualization.
+6. Click Run button to run the analytics.
+7. Select view type (explained below) by clicking view type link to see each type of generated visualization.
 
 ### "Correlation Matrix" View
 "Correlation Matrix" View displays correlation with Heatmap. Red color means it has positive correlation and Blue color means it has negative correlation. The darker the color, the stronger the correlation.
@@ -32,4 +32,4 @@ Input data should contain numeric columns.
 ### "Negative Correlations" View
 "Negative Correlations" View displays the negative correlation value for column pair.You can click Column Header for Correlation to sort the data by Correlation value.
 
-![](images/cor_by_colun_negative.png)
+![](images/cor_by_column_negative.png)
