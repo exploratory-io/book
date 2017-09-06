@@ -3,7 +3,7 @@
 With past data as training data, it creates a model that predicts future value for a specific date and plot the predicted values on a Time Series Chart.
 
 ## Input Data
-Input data should be a time series data. Each row should represent one observation (e.g. one row per date/time). It should have following columns.
+Input data should be a time series data. Each row should represent one observation with date/time. It should have following columns.
 
   * Date - A Date or POSIXct column when the observation was made.
   * Some measure value - Numeric column that stores observed value.
