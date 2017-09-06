@@ -1,11 +1,11 @@
 # Correlation by Column
 
-Calculates Correlation by Column.
+Calculates Correlations among columns.
 
 ## Input Data
 Input data should contain numeric columns.
 
-  * Variable Columns - Numeric columns in which you want to see correlation.
+  * Variable Columns - Numeric columns among which correlations are calculated.
 
 ## How to Use This Feature
 1. Click Analytics View tab.
