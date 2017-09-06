@@ -1,0 +1,57 @@
+# Survival Analysis
+Calculates Survival Curve (Kaplan-Meier estimator) from start time, end time, and survival status.
+
+## Input Data
+Input data should be a survival data. Each row should represent one observation (e.g. one user of a subscription service). It should have following columns.
+
+(Note that this analytics calculates survival time from Start Time and End time, rather than taking numeric survival time as input.)
+  * Start Time - A Date or POSIXct column with the beginning of the observation of the subject.
+  * End Time - A Date or POSIXct column with the end of the observation of the subject.
+  * Event Status - A boolean or binary numeric value (can take value of 1 or 0) column with whether the event of interest (death) happened. When this column is true or 1, it means the event of interest happened to the subject at the End Time. If it is false or 0, it means we know that the event had not happened to the subject at least until the End Time, but we don't know what happened or will happen to the subject after that point.
+  * Other columns to group observations - Optionally, if there are other columns that groups subjects, they can be used to draw separate survival curves for each group, for comparison between groups.
+
+
+## How to Use This Feature
+1. Click Analytics View tab.
+2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.
+3. Select "Survival Analysis" for Analytics Type.
+4. Select Start Time column with "Start Time" column selector.
+5. Select End Time column with "End Time" column selector.
+6. Select unit of time (Day, Week...) with "Period By" dropdown.
+7. Select Event Status column with "Event Status" column selector.
+8. (Optional) Select a column to group subjects with "Color By" column selector. For each group, a survival curve with a different color will be drawn in a same chart.
+9. (Optional) Select a column to group subjects with "Repeat By" column selector. For each group, a separate small chart will be displayed.
+10. Click Run button to run the analytics.
+11. Select view type (explained below) by clicking view type link to see each type of generated visualization.
+
+### "Survival Curve" View
+"Survival Curve" View displays how the subjects survives (without experiencing event/death) as time goes by with a line chart.
+This example is with Color By.
+![](images/survival_curve.png)
+
+This example is with Repeat By in addition to Color By.
+![](images/survival_curve_with_repeat.png)
+
+### "With Confidence Range" View
+"With Confidence Range" View displays the survival curve with confidence interval. It is estimated that 95% of the time, the survival rate will fall between the upper bound and lower bound of the bands around the lines.
+![](images/survival_curve_with_confint.png)
+
+### "Survival Table" View
+"Survival Table" View displays how the subjects survives as time goes by with a table with color.
+![](images/survival_table.png)
+
+### "Data" View
+"Data" View displays raw data for the survival curve.
+![](images/survival_data.png)
+
+#### Output Data
+Following is the list of columns in the raw survival curve data displayed in the "Data" View.
+* Group Columns - If Color By or Repeat By is specified, the columns appears in the output data frame. Survival curve data rows for each group comes with corresponding group column values.
+* time - Survival time. This column should be used as X-axis when drawing survival carve in line chart.
+* n_risk - The number of subjects that were surviving at the time.
+* n_event - Out of n_risk, to how many of the subjects the event occurred at the time.
+* n_censor - Out of n_risk, how many of the subjects we lost track of at the time.
+* estimate - Estimated survival probability at the time. This column should be used as Y-axis when drawing survival carve in line chart.
+* std_error - Standard error of the estimated survival probability value.
+* conf_high - Upper bound of the confidence interval for the estimated survival probability value.
+* conf_low - Upper bound of the confidence interval for the estimated survival probability value.
