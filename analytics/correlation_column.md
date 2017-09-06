@@ -20,16 +20,16 @@ Input data should contain numeric columns.
 7. Select view type (explained below) by clicking view type link to see each type of generated visualization.
 
 ### "Correlation Matrix" View
-"Correlation Matrix" View displays correlation with Heatmap. Red color means it has positive correlation and Blue color means it has negative correlation. The darker the color, the stronger the correlation.
+"Correlation Matrix" View displays correlations with Heatmap. Red color means it has positive correlation and Blue color means it has negative correlation. The darker the color, the stronger the correlation.
 
 ![](images/cor_by_column_matrix.png)
 
 ### "Positive Correlations" View
-"Positive Correlations" View displays the positive correlation value for column pair.You can click Column Header for Correlation to sort the data by Correlation value.
+"Positive Correlations" View displays the positive correlation value for column pair. You can click Column Header for Correlation to sort the data by Correlation value.
 
 ![](images/cor_by_column_positive.png)
 
 ### "Negative Correlations" View
-"Negative Correlations" View displays the negative correlation value for column pair.You can click Column Header for Correlation to sort the data by Correlation value.
+"Negative Correlations" View displays the negative correlation value for column pair. You can click Column Header for Correlation to sort the data by Correlation value.
 
 ![](images/cor_by_column_negative.png)

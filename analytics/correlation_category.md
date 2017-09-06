@@ -1,12 +1,12 @@
 # Correlation by Category
 
-Calculates Correlation by Category.
+Calculates correlations among groups defined by a category column.
 
 ## Input Data
 Input data should contain categorical columns and numeric columns.
 
-  * Category Column - Categorical column that you want to see correlation.
-  * Measured By Column - key column to aggregate measure.
+  * Category Column - Categorical column that defines the groups among which correlations are calculated.
+  * Measured By Column - Column that defines dimension to calculate correlation. For each group, measure is aggregated for each value of this column, forming a vector that represents the group. Then, correlations are calculated among these vectors. If Date/POSIXct column is specified, measure is aggregated for each period of time (day, week, etc.) that is specified.
   * Measure Column - Numeric column that is used to calculate correlation.
 
 ## How to Use This Feature
@@ -20,16 +20,16 @@ Input data should contain categorical columns and numeric columns.
 8. Select view type (explained below) by clicking view type link to see each type of generated visualization.
 
 ### "Correlation Matrix" View
-"Correlation Matrix" View displays correlation with Heatmap. Red color means it has positive correlation and Blue color means it has negative correlation. The darker the color, the stronger the correlation.
+"Correlation Matrix" View displays correlations with Heatmap. Red color means it has positive correlation and Blue color means it has negative correlation. The darker the color, the stronger the correlation.
 
 ![](images/cor_by_category_matrix.png)
 
 ### "Positive Correlations" View
-"Positive Correlations" View displays the positive correlation value for column pair.You can click Column Header for Correlation to sort the data by Correlation value.
+"Positive Correlations" View displays the positive correlation value for each value pair. You can click Column Header for Correlation to sort the data by Correlation value.
 
 ![](images/cor_by_category_positive.png)
 
 ### "Negative Correlations" View
-"Negative Correlations" View displays the negative correlation value for column pair.You can click Column Header for Correlation to sort the data by Correlation value.
+"Negative Correlations" View displays the negative correlation value for each value pair. You can click Column Header for Correlation to sort the data by Correlation value.
 
 ![](images/cor_by_category_negative.png)
