@@ -41,7 +41,19 @@ Input data should contain at least one categorical or numeric column for "What t
 - Precision - (also called positive predictive value) is the fraction of relevant instances among the retrieved instances.
 - Recall -  (also known as sensitivity) is the fraction of relevant instances that have been retrieved over the total amount of relevant instances.
 
+
 ![](images/var_importance_model_quality.png)
+
+If the What to Predict column is numeric column, you will see
+
+
+- Root Mean Square errors - The Root Mean Square Error (RMSE) (also called the root mean square deviation, RMSD) is a frequently used measure of the difference between values predicted by a model and the values actually observed from the environment that is being modeled.
+
+- R Squared - A statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression. 1 (100%) indicates that the model explains all the variability of the response data around its mean.
+
+
+![](images/var_importance_table_numeric.png)
+
 
 ### "Prediction Matrix" View
 "Prediction Matrix" View displays a matrix where each column represents the instances in a predicted class while each row represents the instances in an actual class. It makes it easy to see how well the model is classifying the two classes. The darker the color, the higher the percentage value.
