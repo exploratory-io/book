@@ -31,7 +31,7 @@ Input data should be a survival data. Each row should represent one observation 
 ![](images/var_importance_with_time_impact.png)
 
 ### "High Confidence" View
-"High Confidence" View displays the variables whose both confidence interval edges are more than 1 (or less than 1). With this thresh hold, we can see only variables that have clear impact on the event.
+"High Confidence" View displays the variables whose both confidence interval edges are more than 1 (or less than 1). With this threshold, we can see only variables that have clear impact on the event.
 
 ![](images/var_importance_with_time_high_confidence.png)
 

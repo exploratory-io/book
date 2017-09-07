@@ -36,8 +36,8 @@ Input data should contain at least one categorical or numeric column for "What t
 "Model Quality" View displays the quality of the model created for this Variable Importance Analytics. Each row shows the model performance from the point whether the Class (i.e. Value in What to Predict column) prediction was correct or not if What to Predict is categorical column.
 
 - F Score - A measure of Test Accuracy. The score ranges between 0 and 1 and Higher is better.  It's harmonic mean of precision and recall.
-- Accuracy Rate - Another measure of Test Accuracy, which is calculated as `(Total True Positive + total True Negative) / Total Popluation.`
-- Misclassification Rate - A rate the model fails to classify the correct value. (i.e. 1- Accuracy rate)
+- Accuracy Rate - Another measure of Test Accuracy, which is calculated as `(Total True Positive + total True Negative) / Total Population.`
+- Misclassification Rate - The rate the model fails to classify correctly. (i.e. 1 - Accuracy Rate)
 - Precision - (also called positive predictive value) is the fraction of relevant instances among the retrieved instances.
 - Recall -  (also known as sensitivity) is the fraction of relevant instances that have been retrieved over the total amount of relevant instances.
 
