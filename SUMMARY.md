@@ -1,14 +1,23 @@
 # Summary
 
 * [Introduction](README.md)
+
+
 * [Tutorials (English)](tutorials/intro.md)
    * [Getting Started Guide](tutorials/quick-start.md)
 * [Tutorials (日本語)](tutorials/intro_ja.md)   
    * [Getting Started Guide　(日本語)](tutorials/quick-start_ja.md)
+
+
 * [Product Features]()
   * [Note](markdown/markdown-note.md)
   * [Steps (Right-hand side)](steps.md)
   * [Branch](branch/branch.md)
+  * [Export](export/export.md)
+  * [Share](share/shae.md)
+    * [Chart](share/chart.md)
+    * [Data](share/data.md)
+    * [Note](share/note.md)
 
 
 * [Data Import](data_import.md)
@@ -125,16 +134,8 @@
    * [Variable Importance with Time](analytics/var_importance_time.md)
 
 
-* [Export]()
-   * [Correlation](stats/correlation.md)
-   * [Distance](stats/dist.md)
-   * [Cosine Similarity](stats/sim.md)
-   * [SVD](stats/svd.md)
 
-* [Share](share/shae.md)
-  * [Chart](share/chart.md)
-  * [Data](share/data.md)
-  * [Note](share/note.md)
+
 
 * [Statistics]()
    * [Correlation](stats/correlation.md)
@@ -179,13 +180,17 @@
    * [Calculate tf-idf](text/do_tfidf.md)
    * [Count Text Pairs](text/pair_count.md)
 
+
 * [Extend with R]()
    * [R Package Install](r_package.md)
    * [Custom R Script](r_script.md)
    * [Custom Model Function](user-defined-model-function.md)
 
+
 * [Setup](setup.md)
    * [Disable McAfee virus scan](howto/stopmcafee.md)
    * [Change Repository Location](howto/set_exploratory_home.md)
    * [Holidays Data for Forecast](howto/holiday.md)
+
+
 * [Keyboard shortcuts](shortcut.md)
