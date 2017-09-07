@@ -25,11 +25,11 @@ Input data should contain numeric columns.
 ![](images/cor_by_column_matrix.png)
 
 ### "Positive Correlations" View
-"Positive Correlations" View displays the positive correlation value for column pair. You can click Column Header for Correlation to sort the data by Correlation value.
+"Positive Correlations" View displays the most positive 100 correlations. You can click Column Header for Correlation to sort the data by Correlation value.
 
 ![](images/cor_by_column_positive.png)
 
 ### "Negative Correlations" View
-"Negative Correlations" View displays the negative correlation value for column pair. You can click Column Header for Correlation to sort the data by Correlation value.
+"Negative Correlations" View displays the most negative 100 correlations. You can click Column Header for Correlation to sort the data by Correlation value.
 
 ![](images/cor_by_column_negative.png)
