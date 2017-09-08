@@ -63,7 +63,7 @@ This example is with Repeat By.
 
 ## R Package
 
-The `Cohort Analysis` uses [`Exploratory`](https://github.com/exploratory-io/exploratory_func) R Package under the hood.
+The `Cohort Analysis` uses [`exploratory`](https://github.com/exploratory-io/exploratory_func) R Package under the hood.
 
 ## Exploratory R Package
 

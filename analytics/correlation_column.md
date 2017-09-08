@@ -36,7 +36,7 @@ Input data should contain numeric columns.
 
 ## R Package
 
-The `Correlation by Column` uses [`stats`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/cor.html) R Package under the hood.
+The `Correlation by Column` uses `cor` function from  [`stats`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/cor.html) R Package under the hood.
 
 ## Exploratory R Package
 

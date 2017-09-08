@@ -51,7 +51,7 @@ Following is the list of columns in the "Similar Pairs" view.
 
 ## R Package
 
-The `Similarity` uses [`stats`](https://cran.rstudio.com/web/packages/prophet/index.html) R Package under the hood.
+The `Similarity` uses `dist` function from  [`stats`](https://cran.rstudio.com/web/packages/prophet/index.html) R Package under the hood.
 
 ## Exploratory R Package
 

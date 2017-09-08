@@ -36,7 +36,7 @@ Input data should contain categorical columns and numeric columns.
 
 ## R Package
 
-The `Correlation by Category` uses [`stats`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/cor.html) R Package under the hood.
+The `Correlation by Category` uses `cor` function from  [`stats`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/cor.html) R Package under the hood.
 
 ## Exploratory R Package
 
