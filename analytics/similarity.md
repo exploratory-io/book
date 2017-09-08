@@ -48,3 +48,11 @@ Following is the list of columns in the "Similar Pairs" view.
 * [category column name].x Category items for category pairs.  
 * [category column name].y Category items for category pairs.  
 * Distance - Distance between those 2 categories. The smaller, the similar.
+
+## R Package
+
+The `Similarity` uses [`stats`](https://cran.rstudio.com/web/packages/prophet/index.html) R Package under the hood.
+
+## Exploratory R Package
+
+For details about Similarity usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/pairwise.R)

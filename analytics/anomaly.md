@@ -28,3 +28,11 @@ Input data should be a time series data. Each row should represent one observati
 "Anomaly Data" View displays actual anomaly values in table format. You can check if the anomaly is for positive (or negative), value of positive (or negative) anomaly and expected value.
 
 ![](images/anomaly-data.png)
+
+## R Package
+
+The `Anomaly Detection` uses [`AnomalyDetection`](https://github.com/twitter/AnomalyDetection) R Package under the hood.
+
+## Exploratory R Package
+
+For details about Anomaly Detection usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/anomaly_detection.R)

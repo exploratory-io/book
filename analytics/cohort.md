@@ -60,3 +60,11 @@ This example is with Repeat By.
 
 This example is with Repeat By.
 ![](images/cohort_pbyperiodtable_gby.png)
+
+## R Package
+
+The `Cohort Analysis` uses [`Exploratory`](https://github.com/exploratory-io/exploratory_func) R Package under the hood.
+
+## Exploratory R Package
+
+For details about Cohort Analysis in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/do_retention_cohort.R)

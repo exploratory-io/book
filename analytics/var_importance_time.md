@@ -54,3 +54,12 @@ Input data should be a survival data. Each row should represent one observation 
 
 
 ![](images/var_importance_with_time_data.png)
+
+
+## R Package
+
+The `Variable Importance with Time` uses [`survival`](https://cran.r-project.org/web/packages/survival/index.html) R Package under the hood.
+
+## Exploratory R Package
+
+For details about Variable Importance with Time usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/build_coxph.R)

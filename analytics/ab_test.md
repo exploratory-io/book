@@ -66,3 +66,11 @@ This example is with Repeat By.
 
 This example is with Repeat By. 
 ![](images/ab_prior_repeatby.png)
+
+## R Package
+
+The `A/B Test - Bayesian` uses [`bayesAB`](https://cran.r-project.org/web/packages/bayesAB/index.html) R Package under the hood.
+
+## Exploratory R Package
+
+For details about bayesAB usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/do_bayes_ab.R)

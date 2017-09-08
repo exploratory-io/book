@@ -33,3 +33,11 @@ Input data should contain numeric columns.
 "Negative Correlations" View displays the most negative 100 correlations. You can click Column Header for Correlation to sort the data by Correlation value.
 
 ![](images/cor_by_column_negative.png)
+
+## R Package
+
+The `Correlation by Column` uses [`stats`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/cor.html) R Package under the hood.
+
+## Exploratory R Package
+
+For details about Cohort Analysis in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/stats_wrapper.R)
