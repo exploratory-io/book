@@ -73,4 +73,4 @@ The `A/B Test - Bayesian` uses [`bayesAB`](https://cran.r-project.org/web/packag
 
 ## Exploratory R Package
 
-For details about bayesAB usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/do_bayes_ab.R)
+For details about `bayesAB` usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/do_bayes_ab.R)
