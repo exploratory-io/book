@@ -28,3 +28,11 @@ Input data should be a time series data. Each row should represent one observati
 "Trend" View displays actual values (blue line),  forecasted values (orange line) and trend line(green line).
 
 ![](images/timeseries_forcasting_trend.png)
+
+## R Package
+
+The `Time Series Forecasting` uses [`prophet`](https://cran.rstudio.com/web/packages/prophet/index.html) R Package under the hood.
+
+## Exploratory R Package
+
+For details about `prophet` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/prophet.R)

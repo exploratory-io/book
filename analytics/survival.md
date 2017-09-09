@@ -55,3 +55,11 @@ Following is the list of columns in the raw survival curve data displayed in the
 * std_error - Standard error of the estimated survival probability value.
 * conf_high - Upper bound of the confidence interval for the estimated survival probability value.
 * conf_low - Upper bound of the confidence interval for the estimated survival probability value.
+
+## R Package
+
+The `Survival Analysis` uses [`survival`](https://cran.r-project.org/web/packages/survival/index.html) R Package under the hood.
+
+## Exploratory R Package
+
+For details about `survival` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/broom_wrapper.R)
