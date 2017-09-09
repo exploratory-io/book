@@ -35,4 +35,4 @@ The `Anomaly Detection` uses [`AnomalyDetection`](https://github.com/twitter/Ano
 
 ## Exploratory R Package
 
-For details about AnomalyDetection usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/anomaly_detection.R)
+For details about AnomalyDetection usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/anomaly_detection.R)

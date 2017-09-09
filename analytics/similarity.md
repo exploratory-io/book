@@ -55,4 +55,4 @@ The `Similarity` uses `dist` function from  [`stats`](https://cran.rstudio.com/w
 
 ## Exploratory R Package
 
-For details about `stats` usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/pairwise.R)
+For details about `stats` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/pairwise.R)

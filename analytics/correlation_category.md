@@ -40,4 +40,4 @@ The `Correlation by Category` uses `cor` function from  [`stats`](https://stat.e
 
 ## Exploratory R Package
 
-For details about `stats` usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/stats_wrapper.R)
+For details about `stats` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/stats_wrapper.R)

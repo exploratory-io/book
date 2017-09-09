@@ -66,4 +66,4 @@ The `Variable Importance` uses [`randomForest`](https://cran.r-project.org/web/p
 
 ## Exploratory R Package
 
-For details about `randomForest` usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/randomForest_tidiers.R)
+For details about `randomForest` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/randomForest_tidiers.R)

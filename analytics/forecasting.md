@@ -35,4 +35,4 @@ The `Time Series Forecasting` uses [`prophet`](https://cran.rstudio.com/web/pack
 
 ## Exploratory R Package
 
-For details about `prophet` usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/prophet.R)
+For details about `prophet` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/prophet.R)

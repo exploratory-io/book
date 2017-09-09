@@ -67,4 +67,4 @@ The `Cohort Analysis` uses [`exploratory`](https://github.com/exploratory-io/exp
 
 ## Exploratory R Package
 
-For details about Cohort Analysis in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/do_retention_cohort.R)
+For details about Cohort Analysis in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/do_retention_cohort.R)

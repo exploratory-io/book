@@ -62,4 +62,4 @@ The `Variable Importance with Time` uses [`survival`](https://cran.r-project.org
 
 ## Exploratory R Package
 
-For details about `survival` usage in Exploratory R Package, please refer the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/build_coxph.R)
+For details about `survival` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/build_coxph.R)
