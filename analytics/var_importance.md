@@ -59,3 +59,11 @@ If the What to Predict column is numeric column, you will see
 "Prediction Matrix" View displays a matrix where each column represents the instances in a predicted class while each row represents the instances in an actual class. It makes it easy to see how well the model is classifying the two classes. The darker the color, the higher the percentage value.
 
 ![](images/var_importance_prediction_matrix.png)
+
+## R Package
+
+The `Variable Importance` uses [`randomForest`](https://cran.r-project.org/web/packages/randomForest/index.html) R Package under the hood.
+
+## Exploratory R Package
+
+For details about `randomForest` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/randomForest_tidiers.R)
