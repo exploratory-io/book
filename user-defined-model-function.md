@@ -40,7 +40,7 @@ We need to install e1071 package to do so.
 
 There are many R packages with model building functions in this format, which you can make use of as they are, just like e1071.
 
-The package you need may or may not be installed already. Packages already installed can be checked from project list view.
+The package you need may or may not be installed already as part of installation of Exploratory. Packages already installed can be checked from project list view.
 
 ![](import/images/installed_packages.png)
 
