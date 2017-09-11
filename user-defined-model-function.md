@@ -81,7 +81,11 @@ tidy.svm <- function(x, ...){
 }
 ```
 
-Please note that **x** is the model object and these functions are expected to return a **data frame**. Usually, glance returns one row data frame with statistical values and tidy returns data frame with multiple rows, but it is just a conventional rule.
+Here are some explanation on the code above.
+
+- **x** is the model object and these functions are expected to return a **data frame**.
+- Usually, glance returns one row data frame with statistical values and tidy returns data frame with multiple rows, but it is just a conventional rule.
+- `...` argument is necessary to avoid errors even if you don't really need extra arguments.
 
 ## Apply Model Function to a Data Frame
 
