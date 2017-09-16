@@ -191,6 +191,7 @@
    * [Disable McAfee virus scan](howto/stopmcafee.md)
    * [Change Repository Location](howto/set_exploratory_home.md)
    * [Holidays Data for Forecast](howto/holiday.md)
+   * [Possible Reasons for Install Error](howto/install_errors.md)
 
 
 * [Keyboard shortcuts](shortcut.md)
