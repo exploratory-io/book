@@ -1,5 +1,14 @@
 # Release Note
 
+## v 4.0.3
+
+Released on 9/16/2017
+
+### Bug fixes
+
+- R installed on a drive other than C was not recognized at installation of Exploratory. (Windows Only)
+- Switching between multiple RMarkdown Notes sometimes mixed up the note contents.
+
 ## v 4.0.2
 
 Released on 8/27/2017
