@@ -48,9 +48,9 @@ You can export your data to the Google Sheets.
 
 #### Export Steps as R Script
 
-You can export your reproducible steps as an R Script file. 
+You can export your reproducible steps as an R Script file.
 
-
+If you want to create an environment on a different machine (Windows or Mac) where you want to run this exported R script as a standalone, you can follow the instruction in [this document](https://exploratory.io/note/hideaki/6838376453273360). 
 
 
 ## Chart Options
