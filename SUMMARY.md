@@ -194,5 +194,7 @@
    * [Holidays Data for Forecast](howto/holiday.md)
    * [Possible Reasons for Install Error](howto/install_errors.md)
 
+* [Diagnostics]()
+   * [Log file for debugging](debug_log.md)
 
 * [Keyboard shortcuts](shortcut.md)
