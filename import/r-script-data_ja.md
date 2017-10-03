@@ -17,3 +17,5 @@ Rスクリプトを使ってデータを取得する、簡単に試せる例を�
 * [SparklyrでExploratoryからSparkに接続してみる (SQL編)](https://exploratory.io/note/2ac8ae888097/2569131745987096?cb=1506281323040)
 
 * [SparklyrでExploratoryからSparkに接続してみる (dplyr編)](https://exploratory.io/note/2ac8ae888097/0305916276166750?cb=1506281306518)
+
+* [Accessing SQLite with RSQLite and Querying with dplyr in R Script(英語)](https://exploratory.io/note/2ac8ae888097/6847080671738131)
