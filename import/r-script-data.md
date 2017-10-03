@@ -16,3 +16,5 @@ Here's a quick and simple example of how you can write R script as Data.
 * [How to access to your Spark from Exploratory with sparklyr (SQL version)](https://exploratory.io/note/2ac8ae888097/8385836660075252?cb=1506646442109)
 
 * [Querying Spark Data with dplyr in Exploratory](https://exploratory.io/note/2ac8ae888097/9658701904142809?cb=1506646883371)
+
+* [Accessing SQLite with RSQLite and Querying with dplyr in R Script](https://exploratory.io/note/2ac8ae888097/6847080671738131)
