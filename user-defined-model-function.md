@@ -131,3 +131,8 @@ augment.svm <- function(x, data = NULL, newdata = NULL, ...) {
 The result looks like this.
 
 ![](import/images/prediction_result.png)
+
+
+## Examples
+
+- [Using H2O Powered Machine Learning Algorithms in R & Exploratory](https://exploratory.io/note/hideaki/1286757676531471)
