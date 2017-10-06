@@ -136,3 +136,4 @@ The result looks like this.
 ## Examples
 
 - [Using H2O Powered Machine Learning Algorithms in R & Exploratory](https://exploratory.io/note/hideaki/1286757676531471)
+- [Using forecast (auto.arima) in Exploratory](https://exploratory.io/note/hideaki/4704304894566822)
