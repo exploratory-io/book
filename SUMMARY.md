@@ -50,6 +50,7 @@
       * [Stripe](import/stripe.md)
       * [MailChimp](import/mailchimp.md)
    * [Write R Script as Data](import/r-script-data.md)
+   * [Write R Script as Data (日本語)](import/r-script-data_ja.md)
    * [Web Page Scraping](import/web-scraping.md)
    * [Data Source Extension](import/extensions.md)
      * [Weather Data](import/riem_measures.md)
@@ -193,5 +194,7 @@
    * [Holidays Data for Forecast](howto/holiday.md)
    * [Possible Reasons for Install Error](howto/install_errors.md)
 
+* [Diagnostics]()
+   * [Log file for debugging](debug_log.md)
 
 * [Keyboard shortcuts](shortcut.md)

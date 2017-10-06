@@ -10,3 +10,11 @@ You can write an R script to get data. For example, you might want to use R pack
 Here's a quick and simple example of how you can write R script as Data.
 
 * [Introduction to tidyquant - Stock Market Data Analysis](https://blog.exploratory.io/introduction-to-tidyquant-quantitative-financial-analysis-for-tidyverse-habitats-e5f72a023ce2)
+
+* [Using dplyr to query databases directly instead of using SQL](https://exploratory.io/note/2ac8ae888097/4608293349858884?cb=1506647866244)
+
+* [How to access to your Spark from Exploratory with sparklyr (SQL version)](https://exploratory.io/note/2ac8ae888097/8385836660075252?cb=1506646442109)
+
+* [Querying Spark Data with dplyr in Exploratory](https://exploratory.io/note/2ac8ae888097/9658701904142809?cb=1506646883371)
+
+* [Accessing SQLite with RSQLite and Querying with dplyr in R Script](https://exploratory.io/note/2ac8ae888097/6847080671738131)
