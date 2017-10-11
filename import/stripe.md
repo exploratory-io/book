@@ -16,7 +16,7 @@ Click 'Stripe'
 
 Create a connection following [this instruction](https://blog.exploratory.io/how-to-setup-oauth-cloud-apps-connections-in-exploratory-a5c20d18e7c7).
 
-# 3. Input parameters
+## 3. Input parameters
 
 Set these parameters.
 
@@ -35,6 +35,10 @@ Set these parameters.
 * Value for Date Range - If this is empty, all data is imported. If 'Date Range' is 'After This Date', this should be explicit date like '2015-11-03'. If 'Date Range' is 'Last N ~', this should be a positive integer.
 
 
-## 4. Preview and Import
+## 4. <a name="custom_query"></a>Custom Query String
+
+Coming Soon!
+
+## 5. Preview and Import
 
 Click Preview button to see the data back from Stripe. If it looks ok, then you can click 'Import' to import the data into Exploratory.
