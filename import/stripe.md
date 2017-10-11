@@ -35,7 +35,7 @@ Set these parameters.
 * Value for Date Range - If this is empty, all data is imported. If 'Date Range' is 'After This Date', this should be explicit date like '2015-11-03'. If 'Date Range' is 'Last N ~', this should be a positive integer.
 
 
-## 4. <a name="custom_query"></a>Custom Query String
+## <a name="custom_query"></a>4. Custom Query String
 
 Coming Soon!
 
