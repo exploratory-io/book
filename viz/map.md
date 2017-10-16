@@ -17,6 +17,9 @@ When you have tons of location data points being displayed as dots on Map, it’
 ## Map with GeoJSON / Shape
 
 You can create your own GeoJSON map or install existing GeoJSON map extensions to show your geographical data on Map.
+Take a look at this quick post for more details.
+
+* [How to use GeoJSON Map](https://exploratory.io/note/kei/6949005180287436)
 
 ### How to Use GeoJSON Map?
 
