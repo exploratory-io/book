@@ -40,6 +40,7 @@
       * [HP Vertica](import/hp-vertica.md)
       * [Neo4j](import/neo4j.md)
       * [ODBC](import/odbc.md)
+      * [Dremio](import/dremio.md)     
    * [Cloud Apps Data]()
       * [Create Connection](import/connection-cloud-apps.md)
       * [Github Issues](import/github.md)
