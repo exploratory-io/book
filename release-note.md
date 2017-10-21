@@ -1,5 +1,97 @@
 # Release Note
 
+## v 4.1
+
+Released on 10/21/2017
+
+### Enhancements
+
+#### Rmarkdown Note
+
+- Presentation Slide
+- TOC support
+- Remote Image support
+- Image file drag and drop.
+- Image embedded inside Table
+- Embedding Youtube Video.
+- Embedding Twitter Card.
+- Performance improvement.
+- Rmarkdown Note now remembers previous cursor position when reopened.
+- Support for Code Folding.
+- Shows more granular messages on what Exploratory is working on while processing Rmarkdown Note.
+- Support for description text for published Note.
+
+#### Chart
+
+- Filtering Data is supported inside Charts.
+- Chart Data is now exportable as CSV, Excel, JSON, and to the clipboard.
+- "Number of Not NA" and "% of Not NA" are added to the list of Chart Column Functions.
+- Scatter: Support for connecting dots with line.
+- Length of Trend Line is now adjusted for actually plotted sampled data points for better visualization, while the Trend Line itself is calculated from entire data for accuracy.
+
+#### Analytics View
+
+- Regression Analytics View is added.
+- Analytics View data is now exportable as CSV, Excel, JSON, and to the clipboard.
+- Time Series Forecast: "Data" view, where data is exportable, is added.
+- More granular messages on what Exploratory is working on is shown while Analytics View is running.
+
+#### Data Source
+
+- Connection to Dremio 
+- Connection to SQL Server
+- Renewed SQL Editor UI.
+- Renewed R Script Data Source Editor UI.
+- Google Analytics: Support for E-Commerse dimensions/metrics.
+- Stripe: Support for Query String to filter query with specific conditions.
+- More detailed schema information is visible for Amazon Redshift, PostgreSQL, and MySQL.
+
+#### Data Wrangling
+
+- Step Data is now exportable as Excel file, in addition to previously supported CSV, Excel, JSON.
+
+#### Collaboration
+
+- Tag support at publishing Note, Chart, and Data to exploratory.io.
+
+#### Others
+
+- Project Search now looks at note/script names while finding projects.
+- Script Editor: Indent Guides is added.
+- We now use Hack font for code editors.
+
+
+### Bug fixes 
+- Custom R package install did not have Cancel link while running.
+- OAuth Connection disappeared from UI when it was expired or revoked.
+- Project List: Sort by Name did not work.
+- Test data ratio was not correct when a model was created by custom command.
+- Specifying numeric NA String (for example -9999) for Excel did not work.
+- Adding remote image link in Rmarkdown Note raised error : "pandoc document conversion failed with error 67"
+- Export or project with a name that starts with multibyte character failed.
+- Exported R script did not have type_convert() function unlike how it is treated inside Exploratory, which in some cases caused errors when the exported script is run.
+- Data exported from Pivot Table was filtered and not complete.
+- Command UI did not show list of columns when previous step was disabled.
+- SQL suggested in PostgreSQL data source dialog did not have necessary double quotes.
+- "Predict on Test Data" menu was disabled for a Custom Model.
+- Long-Lat Map: Legend was not showing up when there was NA in the data.
+- Errors were raised sporacically : "Bounds are not valid" 
+- Having a missing local image file link stopped whole Rmarkdown Note rendering. 
+- Analytics: Chart setting was not saved when showing/hiding left-hand side Data Frame tree area.
+- Thumbnail image was not added/updated when sharing a Chart.
+- Adding new entry with + (Plus) button failed on "Replace Existing with New Values" dialog.
+- No spin icon was shown when switching between Analytics Viz tab was taking time.
+- Last Import timestamp was not updated when "All Referenced Data Frames" option was selected on a branch.
+- Order of Small Multiple was not respecting the factor order of Repeat By column.
+- Error was raised when importing an Excel file with sheets with multibyte names.
+- Windows: Installation failed when home directory name included multibyte characters.
+- Coping image from Safari or Edge to Rmarkdown Note generated invalid markdown image link syntax.
+- Clicking link in Note in Run mode opened a window with the link content, but did not open a web browser. Now we open a web browser.
+- Copied viz did not have thumbnail image when published
+- When an empty Data Frame was fed to Pivot Table, error about "euc2utf8" function was shown.
+- Histogram: Feeding data with Inf (infinity) or -Inf (negative infinity) raised error about "summarize_impl" function.
+
+
 ## v 4.0.3
 
 Released on 9/16/2017
