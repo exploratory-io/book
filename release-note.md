@@ -62,6 +62,7 @@ Released on 10/21/2017
 
 
 ### Bug fixes 
+- Data export from pivot table did not work if a column was assigned to multiple places in the pivot table.
 - Custom R package install did not have Cancel link while running.
 - OAuth Connection disappeared from UI when it was expired or revoked.
 - Project List: Sort by Name did not work.
