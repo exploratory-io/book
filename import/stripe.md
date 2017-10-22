@@ -41,9 +41,93 @@ To filter Stripe data, you can pass query string as `field=value` fashion. For e
 
 `currency=jpy&amount[gt]=100000`
 
-In here [gt] means greater than. As you'd guess there are other operator available for your query string.
+In here `[gt]` is called child argument and `gt` means greater than. As you'd guess there are other operator available for child argument per column. For example, as for amount column, following child arguments are available.
 
 - gt (Greater Than) 
+- gte (Grater Than or Equal To)
+- lt (Less Than)
+- lte (Less Than or Equal To)
+
+
+Here is the list of available child arguments per resource/column
+
+### Balance
+
+#### available_on
+
+- gt (Greater Than)
+- gte (Grater Than or Equal To)
+- lt (Less Than)
+- lte (Less Than or Equal To)
+ 
+#### created
+
+- gt (Greater Than)
+- gte (Grater Than or Equal To)
+- lt (Less Than)
+- lte (Less Than or Equal To)
+
+### Charges
+
+#### created
+
+- gt (Greater Than)
+- gte (Grater Than or Equal To)
+- lt (Less Than)
+- lte (Less Than or Equal To)
+
+#### source
+
+- object (available options are `all`, `alipay_account`, `bank_account`, `bitcoin_receiver`, or `card`)
+
+### Customers
+
+#### created
+
+- gt (Greater Than)
+- gte (Grater Than or Equal To)
+- lt (Less Than)
+- lte (Less Than or Equal To)
+
+### Disputes
+
+#### created
+
+- gt (Greater Than)
+- gte (Grater Than or Equal To)
+- lt (Less Than)
+- lte (Less Than or Equal To)
+
+### Events
+
+#### created
+
+- gt (Greater Than)
+- gte (Grater Than or Equal To)
+- lt (Less Than)
+- lte (Less Than or Equal To)
+
+### File Uploads
+
+#### created
+
+- gt (Greater Than)
+- gte (Grater Than or Equal To)
+- lt (Less Than)
+- lte (Less Than or Equal To)
+
+### Payouts
+
+#### arrival_date
+
+- gt (Greater Than)
+- gte (Grater Than or Equal To)
+- lt (Less Than)
+- lte (Less Than or Equal To)
+
+#### created
+
+- gt (Greater Than)
 - gte (Grater Than or Equal To)
 - lt (Less Than)
 - lte (Less Than or Equal To)
