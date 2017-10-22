@@ -1,5 +1,13 @@
 # Release Note
 
+## v 4.1.0.1
+
+Released on 10/22/2017
+
+### Bug fixes 
+- Creating a new GeoJSON map raised error.  
+
+
 ## v 4.1
 
 Released on 10/21/2017
