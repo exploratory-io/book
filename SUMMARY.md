@@ -129,12 +129,13 @@
    * [Cohort Analysis](analytics/cohort.md)
    * [Correlation by Column](analytics/correlation_column.md)
    * [Correlation by Category](analytics/correlation_category.md)
+   * [Regression Analysis](analytics/regression.md) 
    * [Similarity](analytics/similarity.md)
    * [Survival Analysis](analytics/survival.md)
    * [Time Series Forecasting](analytics/forecasting.md)
    * [Variable Importance](analytics/var_importance.md)
    * [Variable Importance with Time](analytics/var_importance_time.md)
-
+   
 
 
 
