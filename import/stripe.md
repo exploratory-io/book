@@ -48,6 +48,7 @@ In here [gt] means greater than. As you'd guess there are other operator availab
 - lt (Less Than)
 - lte (Less Than or Equal To)
 
+NOTE: Not all columns are available for query string. Please refer Stripe [API Doc](https://stripe.com/docs/api/node) for supported columns for each resource. For example, you can check [Charges](https://stripe.com/docs/api/node#charges) if you want to query against Charge.
 
 ## 5. Preview and Import
 
