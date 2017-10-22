@@ -37,7 +37,17 @@ Set these parameters.
 
 ## <a name="custom_query"></a>4. Custom Query String
 
-Coming Soon!
+To filter Stripe data, you can pass query string as `field=value` fashion. For example, if you want to filter `charges` data whose currency is jpy, you can set `currency=jpy` in this field. You can also set multiple conditions by concatenating condition with `&`. Let's say you want to fetch charges data whose currency is jpy and amount greater than 100,000, you can set following as your query string.
+
+`currency=jpy&amount[gt]=100000`
+
+In here [gt] means greater than. As you'd guess there are other operator available for your query string.
+
+- gt (Greater Than) 
+- gte (Grater Than or Equal To)
+- lt (Less Than)
+- lte (Less Than or Equal To)
+
 
 ## 5. Preview and Import
 
