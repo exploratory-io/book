@@ -43,6 +43,20 @@ Set these parameters.
 If TRUE, the first row of the input will be used as the column names, and will not be included in the data frame. If FALSE, column names will be generated automatically: X1, X2, X3 etc.
 * Comment Character - A string used to identify comments. Any text after the comment characters will be silently ignored.
 * Trim White Space - Should leading and trailing whitespace be trimmed from each field before parsing it?
+* Column Types - you can override column type by passing column name and data type pair with ` columnName = 'type'` syntax.
+For Example, if `value` column is detected as integer but you want to import it as double, you can set `value = 'd'`. (d is for double). If you want to override multiple column types, you can do so by separating each pair with comma(,) like this. ` key = 'i', value = 'd'` 
+
+Supported data types for overrides are:
+
+- c (character)
+- i (integer)
+- n (number)
+- d (double)
+- l (logical)
+- D (date)
+- T (Date time)
+- t (time)
+
 
 ## 4. Column Selection
 
