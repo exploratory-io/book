@@ -5,6 +5,7 @@ You can use Simple Markdown Editor to create Presentation Slides to communicate 
 ##### Table of Contents  
 
 * Basic Markdown formatting  
+  * [Slide Separators](#slide-separators)  
   * [Headers](#headers)  
   * [Emphasis](#emphasis)  
   * [Lists](#lists)  
@@ -21,6 +22,16 @@ You can use Simple Markdown Editor to create Presentation Slides to communicate 
 * [R Script - Code Block](#r-script-code-block)
 * [R Script - Inline](#r-script-inline)
 * [Publish and Share](#publish-and-share)
+
+
+## Slide Separators
+
+Three dashes inserts the slide separators. 
+
+```no-highlight
+---
+```
+
 
 
 ## Headers
@@ -391,46 +402,43 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 On Exploratory Desktop, You can select Exploratory Charts when you create Presentation Slides. Click Chart Icon on Toolbar.
 
-![](images/exploratory-chart.png "Exploratory Chart")
+![](images/slide-insert-chart.png)
 
 This will open up Chart Selector Dialog like this.
 
-![](images/select-exploratory-chart.png "Exploratory Chart Select Dialog")
+![](images/slide-insert-chart-dialog.png)
 
 After you select a Chart and Click OK, following Exploratory Code block is inserted into your Markdown content. Syntax is `/<dataframe_name>/<type>/<index>`
 
 <pre><code>
 ```{exploratory}
-/user_login_for_cohort_survival/viz/1
+/flight_delay/viz/3
 ```
 </code></pre>
 
 And when you click Run, this code block is converted to Exploratory Chart like below.
 
-![](images/exploratory-chart-in-md.png "Chart Select Dialog")
+![](images/slide-insert-chart-preview.png)
 
 
 ## Exploratory Analytics Viz
 
 On Exploratory Desktop, You can select Exploratory Analytics Viz when you writing Presentation Slides. Click Analytics Icon on Toolbar.
 
-![](images/exploratory-analytics.png "Exploratory Chart")
+![](images/slide-insert-analytics.png)
 
 This will open up Chart Selector Dialog like this.
 
-![](images/select-exploratory-analytics.png "Exploratory Chart Select Dialog")
+![](images/slide-insert-analytics-dialog.png)
 
 After you select a Chart and Click OK, following Exploratory Code block is inserted into your Markdown content. Syntax is `/<dataframe_name>/<type>/<index>`
 
 <pre><code>
 ```{exploratory}
-/airline_2013_6/analytics/1/1
+/airline_delay_2016_09/analytics/1/4
 ```
 </code></pre>
 
-And when you click Run, this code block is converted to Exploratory Analytics Viz like below.
-
-![](images/exploratory-analytics-in-md.png "Chart Select Dialog")
 
 <a name="rcodeblock"></a>
 
