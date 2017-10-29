@@ -11,6 +11,7 @@
 
 * [Product Features]()
   * [Note](markdown/markdown-note.md)
+  * [Presentation Slides](markdown/markdown-slide.md)
   * [Steps (Right-hand side)](steps.md)
   * [Branch](branch/branch.md)
   * [Export](export/export.md)
