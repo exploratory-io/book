@@ -1,5 +1,39 @@
 # Release Note
 
+## v 4.1.0.2
+
+Released on 10/28/2017
+
+### Enhancements
+
+- Added "Convert to Logical" menu to numeric column menu.
+- CSV File Data Source: You can now specify column data type when automatic guess is not correct.
+- Scatter Plot: Now calculation of trend line uses actually displayed sampled data for its calculation for better performance.
+
+### Bug fixes 
+
+- Cursor position in Custom Command text area became inaccurate as the command got longer.
+- Tiles on Summary View became unselectable under certain conditions.
+- Result of subtraction was displayed with sequence of 9s, as in 0.999999999999.
+- Create Bins Dialog was broken when displayed under certain conditions.
+- MathJax expression was not displayed.
+- Regression Analysis View threw error when variable name had spaces in it.
+- Rmarkdown Note: Viz was not displayed when the dataframe it is on has a name with special characters.
+- Viz Filter on a Date column did not work.
+- Viz Filter on a difftime column raised error when filtering result had zero rows.
+- Regression Analysis now pre-filters Inf/-Inf instead of throwing error.
+- Variable Importance View: Confusion Matrix with a logical prediction target column was shown with FALSE row/column before TRUE row/column.
+- Tables in Regression Analysis View showed numbers with only 4 digits precision. Now we show numbers in 10 digits precision.
+- Plus button menu was cut off when left-hand side object tree was hidden.
+- Survival Analysis View: Parts of Survival Curve was missing when displayed with both Colors and Repeat By.
+- A/B Test View: Parts of Posterior Curves were missing when displayed with both Colors and Repeat By.
+- Line Chart: Parts of lines were missing when both Color and Repeat By columns were specified.
+- Scatter Chart: Trend line was not drawn at all when data included infinite values. Now infinite values are pre-filtered as outliers and then trendline is drawn.
+- Timeline Forecast View: Yearly seasonality was applied for data shorter than one year by default, resulting in unreasonable forecast.
+- Exported R script for File Data Sources such as CSV Data Source wrongly had type_convert step in it.
+- Pivot Table: Right-hand side control column disappeared under certain conditions.
+
+
 ## v 4.1.0.1
 
 Released on 10/22/2017
