@@ -21,8 +21,8 @@ If you want to install R packages that are not on CRAN, then you can install the
 
 Example:
 ```
-.libPaths("~/.exploratory/R/3.3")
-install.packages("../exploratory_0.3.6.8.tgz", repos = NULL, type="source”)
+.libPaths("~/.exploratory/R/3.4")
+install.packages("./h2o_3.14.0.3.tar.gz", repos = NULL)
 ```
 
 If you want to use the functions from this custom R package as part of the command line then you want to add a custom R Script file that contains ‘library’ call so that your custom R package will be loaded. Please refer to [this blog post](https://blog.exploratory.io/adding-custom-r-scripts-to-extend-exploratory-desktop-a054832b9562#.68ny44np1) for how to add R Script to the projects.
