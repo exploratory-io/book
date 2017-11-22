@@ -199,5 +199,6 @@
 
 * [Diagnostics]()
    * [Log file for debugging](debug_log.md)
+   * [Check version of Exploratory Desktop](version_check.md)
 
 * [Keyboard shortcuts](shortcut.md)
