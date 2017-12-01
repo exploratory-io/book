@@ -133,6 +133,8 @@ Released on 10/21/2017
 - Copied viz did not have thumbnail image when published
 - When an empty Data Frame was fed to Pivot Table, error about "euc2utf8" function was shown.
 - Histogram: Feeding data with Inf (infinity) or -Inf (negative infinity) raised error about "summarize_impl" function.
+- Building Random Forest model with training data that has NAs raised error.
+- Making prediction on new data failed with some models including Random Forest.
 
 
 ## v 4.0.3

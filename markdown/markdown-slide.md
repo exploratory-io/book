@@ -1,6 +1,6 @@
 # A Guide for Creating Presentation Slides with Markdown Editor
 
-You can use Simple Markdown Editor to create Presentation Slides to communicate your insights with others easily. This guide shows  how you can use it.
+You can use Simple Markdown Editor to create Presentation Slides to communicate your insights with others easily. This guide shows how you can use it.
 
 ##### Table of Contents  
 
@@ -23,6 +23,8 @@ You can use Simple Markdown Editor to create Presentation Slides to communicate 
 * [R Script - Inline](#r-script-inline)
 * [Publish and Share](#publish-and-share)
 
+You can also look at following article for details.
+* [Creating Presentation Slides Directly Inside Exploratory](https://exploratory.io/note/kei/9285503110951652). 
 
 ## Slide Separators
 
