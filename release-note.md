@@ -1,5 +1,14 @@
 # Release Note
 
+## v 4.1.0.3 (Windows Only)
+
+Released on 12/13/2017
+
+### Bug fixes 
+- Installation failed when R 3.4.3 is selected as the version of R for Exploratory to work with. (Windows Only)
+- Custom R package install with local package file did not work for some packages. (Windows Only)
+
+
 ## v 4.1.0.2
 
 Released on 10/28/2017
