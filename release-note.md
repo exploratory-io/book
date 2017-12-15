@@ -1,5 +1,13 @@
 # Release Note
 
+## v 4.1.0.4 (Mac Only)
+
+Released on 12/15/2017
+
+### Bug fixes 
+- Could not connect to Dremio after installing Dremio ODBC Driver 1.3.14.1043. (Mac Only)
+
+
 ## v 4.1.0.3 (Windows Only)
 
 Released on 12/13/2017
