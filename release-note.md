@@ -1,4 +1,120 @@
 # Release Note
+## v 4.2
+
+Released on 1/3/2018
+
+[Release announcement blog post](https://blog.exploratory.io/exploratory-v4-2-released-dashboard-new-analytics-new-charts-and-more-ee5d8aab1adc)
+
+### Enhancements
+
+#### Communication/Reporting
+- Introduced Dashboard 
+- Change History dialog with capability to revert Note/Slides/Dashboard to any one of older status.
+- Note/Slide: Added Information Dialog from where you can see list of Vizs and Analytics used in the Note/Slides.
+- Note/Slide: Chart Selection Dialog now remembers the lastly selected Data Frame.
+
+#### Chart
+- Added Pie/Ring chart.
+- Added Bubble chart.
+- Added Single Value as a chart so that it can be displayed on Dashboard.
+- Show Detail menus on charts, with which you can take a deeper look at the portion of the data the part of the chart represents.
+- Keep Only / Exclude menu on charts, with which you can create a viz filter.
+- Added new Window Function (cumulative sum ratio, % of max, % of min, % of first, % of last, % of mean, and % of median)
+- Duali y-axis for Bar, Scatter, and Line Chart.
+- Viz Filter with custom command.
+- Reference Line for Bar, Line, and Scatter Chart.
+- Added "% of TRUE" and "% of FALSE" to Column Menu for logical data type columns.
+- Pivot Table: Supported Sorting within Group.
+- Line Chart: Made data range and incremental value configurable for y Axis.
+- Line Chart: Trend Line Support.
+
+#### Analytics View
+- Added Analytics View for Princepal Component Analysis.
+- Variable Importance: Added Effects Viz. It visualizes how the important parameters affect the target value making use of edarf package.
+- Variable Importance: Added "Fix Imbalanced Data" option to binary classification case. It balances data with majority class and minority class with SMOTE algorithm, for better binary classification result.
+- Variable Importance: Made sample size adjustable
+- Variable Importance: For classification, model prediction quality as a whole as well is shown as per-class quality.
+- Variable Importance: AUC is shown as additional model metrics in case of binary classification.
+- Variable Importance with Time: Made sample size adjustable
+- Regression Analysis: Added Logistic Regression support. 
+- Regression Analysis: Added "Fix Imbalanced Data" option to Logistic Regression. It balances data with majority class and minority class with SMOTE algorithm, for better binary classification result.
+- Regression Analysis: Made sample size adjustable
+- Anomaly Detection: Added support for more aggregation functions such as number of unique values within each time period.
+- Anomaly Detection: Added "Anomaly with Expected" view, where extected values are shown alongside the anomalies.
+- Time Series Forecast Analytics View: Added support for more aggregation functions such as number of unique values within each time period.
+- Overall robustness improvement on all Analytics Views.
+
+#### Data Source:
+- Added Raw Lines Data Source to read entire line as one column.
+- Added a slide switch to switch between Sample Data mode, which is for faster calculation in Exploratory Data Analysis phase, and regular mode.
+- Google BigQuery: Now you can schedule processing of data from Big Query at exploratory.io server.
+- Added Enter-key shortcut for saving data.
+
+#### Data Wrangling:
+- Added fill command, which fills NA data with previous/next non-NA value.
+- Added exp_balance command, which fixes imbalanced data with SMOTE algorithm.
+- Custom Label Field for Manual Method in Create Bin (Categories) Dialog
+- Added "Convert to Integer" menu to Column Header Menu for numeric columns.
+- Added Multi Column Operations (mutate_at/mutate_if) to Multi-select Column Header Menu.
+- Now you can reorder Transformation Steps by Drag-and-Drop.
+- New Date Filter options, such as half-year, bi-month, previous period, etc.
+- Supported in, and not-in operator in Filter Step for numeric columns.
+- Now we save custom command even when it results in error, so that you can keep editing it to iteratively fix it.
+- Now we save a step that returns no data as a valid step.
+
+
+### Bug Fixes
+
+#### Chart
+- Clicking window function link opened a wrong dialog.
+- Error Bar: Window Calculation type stayed "none", even if it is applied.
+- The bubble (pop-over) is not showing up when mouse over.
+- Window Calculation was not applied if result was sorted.
+- Scatter Plot raised errors with following message. : "Error at : VizView.updateViz  : Error: Error in mutate_impl(.data, dots)"
+- Pivot Table: Unique values estimation was incorrect and showed false alarm.
+- Histogram: When with facets, bucketing was not done for each facet.
+- Stacked Bar Chart with Repeat By without X-axis column was broken
+- Map - Long/lat: Error when trying to add "Size" parameter.
+- GeoJSON Map raised error if you used "sum".
+- Histogram: When used on difftime column, error is raised.
+- Viz Filter: If Column Data Type was changed from Character to Factor filter became disabled.
+- Mouse over bubble tip was showing the wrong values
+- Scatter: disable text sort on x and y if scatter lines by label case
+
+#### Data Source
+- RScript Data Source: Last line in the editor was not fully visible.
+- Dremio: Default port and server (localhost) was not set in the form.
+- Dremio: After Test Connection is canceled R process was remaining, preventing other operations.
+
+#### Data Wrangling
+- mutate command string was truncated if the same number was repeatedly entered.
+- Step message was not showing when moving from a data content tab to another tab
+- After re-import data, table Data did not get refreshed
+- Syntax suggestion: Column name was suggested inappropirately when cursor was in a quoted position.
+- Table/Summary/Viz View: When error happened, previous data was shown. We now show a blank pane in such cases.
+- Summary View: Content inside was not automatically resized.
+- Branch root link did not get updated right after deleting the step.
+- Refresh All was not refreshing all Data Sources when the Viz to refresh was pinned on a step.
+- Disabled step was not distinguishable when in branch
+- Rename command: Tab character inadvertetly added at the end of new column caused error.
+- Duplicated Data Frame, Note, Script was not highlighted correctly.
+- R Script Editor: Cursor position shifted incorrectly.
+- R Script Data Source: Not very helpful "error code 3" error was raised when there was syntax error.
+- Filter Command: Delete icon disappeared when changing the operator.
+- Create Bin Dialog: Infinite loading icon remains, when the dialog was opened.
+
+#### Analytics View
+- Analytics Viz display was broken when left-hand-side object tree pane was collapsed/expanded.
+- Anomaly Detection with time unit of minute or second raised error.
+
+#### Communication/Reporting
+- Vizs in Note was not calculating data from the last step of data frames correctly.
+- Trying to share data which was originally imported via edf raised error.
+
+#### Others
+- Installation screen did not fit in the default window size. (Windows Only)
+- Supported Cancel for local package install on Windows
+
 
 ## v 4.1.0.4 (Mac Only)
 
