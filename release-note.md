@@ -6,7 +6,7 @@ Released on 1/23/2018
 
 ### Bug Fixes 
 
-- It was possible to overwrite catalog data for existing data source step with newly created data source. It would later cause errors with message "Error: It looks like the data frame file is broken and cannot open it.".
+- It was possible to overwrite catalog data for existing data source step with newly created data source step. It would later cause errors with message "Error: It looks like the data frame file is broken and cannot open it.".
 
 
 ## v 4.2.0.1
@@ -23,7 +23,7 @@ Released on 1/23/2018
 #### Chart
 
 - When month extracted from Date column was set to x-axis, and Repeat By was applied, chart was broken with wrong x-axis values.
-- Bar Chart: Applying "% of Total" function on y-axis showed wrong values when drawing a chart with single bar by mean of not specifying x-axis column.
+- Bar Chart: Applying "% of Total" function on y-axis showed wrong values when drawing a chart with single bar by means of not specifying x-axis column.
 - Line Chart: X-axis range became wider than necessary, when Repeat By column was specified.
 - Scatter Plot: When the column for the first y-axis of multiple y-axes was unset, an error was raised with message "Cannot read property 'isNumeric' of null at eval".
 - Single Value: When the number to show is 0, an error was raised with message "Cannot read property 'slice' of undefined".
@@ -36,7 +36,7 @@ Released on 1/23/2018
 
 #### Data Source
 
-- ODBC connection without username did not work.
+- ODBC connection without user name did not work.
 
 
 ## v 4.2
