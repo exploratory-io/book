@@ -6,37 +6,33 @@ Released on 1/23/2018
 
 ### Bug Fixes 
 
-- It was possible to overwrite existing data source step with new one with the same name, which would cause later error with message "Error: It looks like the data frame file is broken and cannot open it.".
+- It was possible to overwrite catalog data for existing data source step with newly created data source. It would later cause errors with message "Error: It looks like the data frame file is broken and cannot open it.".
 
 
 ## v 4.2.0.1
 
 Released on 1/23/2018
 
-### Enhancements
-
-- GeoJSON data download became cancelable when it is taking long time.
-
-
 ### Bug Fixes 
 
 #### Installer
 
-- Configuring to use existing R was not working.
+- Making use of existing R was not working.
 - Installer now detects old .NET Framework on Windows 7, which would cause login to fail.
 
 #### Chart
 
-- When month of Date column is set to x-axis, and Repeat By is applied, chart is broken with wrong x-axis values.
-- Bar Chart: % of total showed wrong % values when drawing a single bar without x-axis column.
-- Line Chart: x-axis range became wider than necessary when with Repeat By.
-- Scatter Plot: When column for first y-axis is unset, dialog with error message "Cannot read property 'isNumeric' of null at eval" pops up.
-- Single Value: When the number to show is 0, dialog with error message "Cannot read property 'slice' of undefined".
-- Pivot Table: Unsetting a value column from multi-value setting popped up a dialog with error message "Error at : VizView.generateViz  : TypeError: Cannot read property 'func' of null".
+- When month extracted from Date column was set to x-axis, and Repeat By was applied, chart was broken with wrong x-axis values.
+- Bar Chart: Applying "% of Total" function on y-axis showed wrong values when drawing a chart with single bar by mean of not specifying x-axis column.
+- Line Chart: X-axis range became wider than necessary, when Repeat By column was specified.
+- Scatter Plot: When the column for the first y-axis of multiple y-axes was unset, an error was raised with message "Cannot read property 'isNumeric' of null at eval".
+- Single Value: When the number to show is 0, an error was raised with message "Cannot read property 'slice' of undefined".
+- Pivot Table: When one of existing multiple value columns was unset, an error was raised with message "Error at : VizView.generateViz  : TypeError: Cannot read property 'func' of null".
+- GeoJSON data download was not cancelable.
 
 #### Data Wrangling
 
-- It was possible to drag/drop a branch step into main branch steps, which should have been disallowed.
+- It was possible to drag/drop a branch step into among main branch steps, which should have been disallowed.
 
 #### Data Source
 
