@@ -23,6 +23,7 @@ Released on 1/23/2018
 #### Installer
 
 - Configuring to use existing R was not working.
+- Installer now detects old .NET Framework on Windows 7, which would cause login to fail.
 
 #### Chart
 
