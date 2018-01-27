@@ -20,7 +20,7 @@ Working with MongoDB can be challenging due to the nature of NoSQL database, whi
 
 ## JSON Data
 
-* [Working with JSON Data](yelp.md)
+* [Working with JSON Data](https://blog.exploratory.io/analyzing-json-data-by-taking-advantage-of-the-structure-in-r-1e0508e30117)
 
 ## Amazon Redshift Database
 
