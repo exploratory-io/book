@@ -1,10 +1,19 @@
 # Release Note
 
+## v 4.2.0.3 (Windows Only)
+
+Released on 1/28/2018
+
+### Bug Fixes
+
+- When updating imported data from PostgreSQL/Redshift, multibyte characters were garbled on Windows.
+
+
 ## v 4.2.0.2
 
 Released on 1/23/2018
 
-### Bug Fixes 
+### Bug Fixes
 
 - It was possible to overwrite catalog data for existing data source step with newly created data source step. It would later cause errors with message "Error: It looks like the data frame file is broken and cannot open it.".
 
@@ -13,7 +22,7 @@ Released on 1/23/2018
 
 Released on 1/23/2018
 
-### Bug Fixes 
+### Bug Fixes
 
 #### Installer
 
