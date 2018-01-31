@@ -196,7 +196,7 @@
    * [Change Repository Location](howto/set_exploratory_home.md)
    * [Holidays Data for Forecast](howto/holiday.md)
    * [Possible Reasons for Install Error](howto/install_errors.md)
-   * [Upgrade Microsoft .NET Framework](howto/update_dot_net.md)
+   * [Upgrade Microsoft .NET Framework](howto/upgrade_dot_net.md)
 
 * [Diagnostics]()
    * [Log file for debugging](debug_log.md)
