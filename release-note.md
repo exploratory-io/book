@@ -1,5 +1,15 @@
 # Release Note
 
+## v 4.2.0.4 (Windows Only)
+
+Released on 1/30/2018
+
+### Bug Fixes
+
+- PostgreSQL connection with SSL was not working.
+- Blank screen was shown at start up on Windows 7 when .NET framework was not installed.
+
+
 ## v 4.2.0.3 (Windows Only)
 
 Released on 1/28/2018
