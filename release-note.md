@@ -6,8 +6,8 @@ Released on 2/3/2018
 
 ### Bug Fixes
 
-- R temporary Directories that look like %HOME%/AppData/Local/Temp/RtmpXXXX (XXXX are alphabets or numbers) were left without cleaned up, consuming disk space.
-- NW.js temporary Directories that look like %HOME%/AppData/Local/Temp/nwXXXX_XXXX (XXXX are numbers) were left without cleaned up, consuming disk space. (In this relase, the directories are still left, but they are empty so that it will not consume disk space. We will keep looking into solutions to remove those directories cleanly.)
+- R temporary Directories that look like %HOME%/AppData/Local/Temp/RtmpXXXX (XXXX are alphabets or numbers.) were left without cleaned up, consuming disk space.
+- NW.js temporary Directories that look like %HOME%/AppData/Local/Temp/nwXXXX_XXXX (XXXX are numbers.) were left without cleaned up, consuming disk space. (In this relase, the directories are still left, but they are empty so that it will not consume disk space. We will keep looking into solutions to remove those directories cleanly.)
 
 
 ## v 4.2.0.4 (Windows Only)
