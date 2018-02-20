@@ -63,7 +63,7 @@ Working with MongoDB can be challenging due to the nature of NoSQL database, whi
 # Analytics / Machine Learning
 
 * [An Introduction to Time Series Forecasting in Exploratory](https://blog.exploratory.io/an-introduction-to-time-series-forecasting-with-prophet-package-in-exploratory-129ed0c12112)
-* [Text Analysis / Text Mining]((tutorials/text-analysis.md))
+* [Text Analysis / Text Mining](tutorials/text-analysis.md)
 * [An Introduction to Linear Regression Model in Exploratory](https://blog.exploratory.io/introduction-to-linear-regression-model-in-exploratory-a46e90d62f7d)
 * [A Quick Introduction to Logistic Regression in Exploratory](https://blog.exploratory.io/quick-introduction-to-logistic-regression-in-exploratory-fdcf321e2d7d)
 * [An Introduction to K-means Clustering in Exploratory](https://blog.exploratory.io/introduction-to-k-means-clustering-in-exploratory-8352650f1185)
