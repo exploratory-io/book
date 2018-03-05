@@ -2,11 +2,15 @@
 
 ## v 4.2.0.6 (Windows Only)
 
+Released on 2/19/2018
+
 ### Bug Fix
 - Exploratory did not start up for the second time inside a firewall that silently ignores outgoing connection.
 
 
 ## v 4.2.0.2.1 (Mac Only)
+
+Released on 2/19/2018
 
 ### Bug Fix
 - Exploratory did not start up for the second time inside a firewall that silently ignores outgoing connection.
