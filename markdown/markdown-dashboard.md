@@ -87,16 +87,30 @@ Enter name and click `Update`
 
 ## Add Viz to Existing Row
 
-You can insert up to 4 Vizs to a row.  To do so click green plus button on right hand side of the row then select viz.
+You can insert up to 4 Vizs to a row.  To do so click green plus button on right hand side of the row then select `Viz`.
 
 ![](images/dashboard-add-viz-to-row.png "Add viz to Row")
 
 From Choose Viz Dialog, click a Viz to insert and click `OK`.
 
-![](images/dashboard-viz-chooser.png "Choose viz")
+![](images/dashboard-viz-chooser-extra.png "Choose viz")
 
 
 ![](images/dashboard-config-dialog-multi-viz.png "Multiple Viz on a row")
+
+
+## Add Analytics to Existing Row
+
+Click green plus button on right hand side of the row then select `Analytics`.
+
+![](images/dashboard-add-analytics-to-row.png "Add Analytics to Row")
+
+From Choose Analytics Dialog, click an Analytics to insert and click `OK`.
+
+![](images/dashboard-analytics-chooser-extra.png "Choose viz")
+
+
+![](images/dashboard-config-dialog-multi-analytics.png "Multiple Viz on a row")
 
 
 ## Run Dashboard
@@ -112,11 +126,11 @@ If you want to re-order charts, you can do it by drag and drop chart chart on Da
 So if you want to move `Viz 5` from second row to first row.
 ![](images/dashbord-reorder-before.png "Drag and Drop to re-order")
 
-You can drag `Viz 5` from second row and drop it to first row. 
+You can drag `Gestation Weeks - Histogram` from the first row and drop it to the middle of the second row. 
 
 ![](images/dashboard-dnd-reorder.png "Drag and Drop to re-order")
 
-And `Viz 5` is moved to the first row.
+And `Gestation Weeks - Histogram` is moved to the first row.
 
 ![](images/dashboard-reorder-after.png "Drag and Drop to re-order")
 
