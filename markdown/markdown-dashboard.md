@@ -11,8 +11,9 @@ You can use Dashboard Configuration Dialog to create a Dashboard and share the D
   * [Insert Viz](#insert-viz)  
   * [Insert Anaytics](#insert-analytics)  
   * [Insert Single Value](#insert-single-value)  
-  * [Update Viz Title](#update-viz-title)  
+  * [Update Viz Title](#update-viz-title)
   * [Add Viz to Existing Row](#add-viz-to-existing-row)
+  * [Add Analytics to Existing Row](#add-analytics-to-existing-row)
   * [Run Dashboard](#run-dashboard)
   * [Re-order Vizs](#re-order-vizs)
   * [Switch Viz to Another Viz](#switch-viz-to-another-viz)
@@ -39,7 +40,7 @@ To insert Viz and Analytics to dashboard, click `Configure` button.
 
 ## Set Number of rows
 
-For now you can set up to 4 rows on Dashboard. To do so, select # of rows from pulldown list.
+For now you can set up to 4 rows on Dashboard. To do so, select Number of rows from pulldown list.
 
 ![](images/dashboard-set-num-rows.png "Set # of rows")
 
@@ -87,16 +88,30 @@ Enter name and click `Update`
 
 ## Add Viz to Existing Row
 
-You can insert up to 4 Vizs to a row.  To do so click green plus button on right hand side of the row then select viz.
+You can insert up to 4 Vizs to a row.  To do so click green plus button on right hand side of the row then select `Viz`.
 
 ![](images/dashboard-add-viz-to-row.png "Add viz to Row")
 
 From Choose Viz Dialog, click a Viz to insert and click `OK`.
 
-![](images/dashboard-viz-chooser.png "Choose viz")
+![](images/dashboard-viz-chooser-extra.png "Choose viz")
 
 
 ![](images/dashboard-config-dialog-multi-viz.png "Multiple Viz on a row")
+
+
+## Add Analytics to Existing Row
+
+Click green plus button on right hand side of the row then select `Analytics`.
+
+![](images/dashboard-add-analytics-to-row.png "Add Analytics to Row")
+
+From Choose Analytics Dialog, click an Analytics to insert and click `OK`.
+
+![](images/dashboard-analytics-chooser-extra.png "Choose viz")
+
+
+![](images/dashboard-config-dialog-multi-analytics.png "Multiple Viz on a row")
 
 
 ## Run Dashboard
@@ -109,28 +124,28 @@ After you configure your Dashboard, click `OK` button on configuration dialog.
 
 If you want to re-order charts, you can do it by drag and drop chart chart on Dashboard Configuration Dialog.
 
-So if you want to move `Viz 5` from second row to first row.
+So if you want to move `Gestation Weeks - Histogram` from the first row to second row.
 ![](images/dashbord-reorder-before.png "Drag and Drop to re-order")
 
-You can drag `Viz 5` from second row and drop it to first row. 
+You can drag `Gestation Weeks - Histogram` from the first row and drop it to the middle of the second row. 
 
 ![](images/dashboard-dnd-reorder.png "Drag and Drop to re-order")
 
-And `Viz 5` is moved to the first row.
+And `Gestation Weeks - Histogram` is moved to the first row.
 
 ![](images/dashboard-reorder-after.png "Drag and Drop to re-order")
 
 ## Switch Viz to Another Viz
 
-For example, if you want to switch Viz on the second row to something else, click `Edit` Button. 
+For example, if you want to switch Viz `Mother Age Distribution by Mother Race` on the second row to something else, click `Edit` Button. 
 
 ![](images/dashboard-switch-viz.png "Edit")
 
-Then From Choose Viz Dialog, click a Viz that you want to use instead of existing Viz and click `OK` button.
+Then from Choose Viz Dialog, click a Viz that you want to use instead of the existing Viz and click `OK` button.
 
 ![](images/dashboard-select-another-viz.png "Select Another Viz")
 
-Then the Viz on the second row is switched to the new one.
+The Viz on the second row is switched to the new one.
 
 ![](images/dashboard-viz-switched.png "Viz is Switched")
 
