@@ -111,7 +111,7 @@ If you want to re-order charts, you can do it by drag and drop chart chart on Da
 So if you want to move `Viz 5` from second row to first row.
 ![](images/dashbord-reorder-before.png "Drag and Drop to re-order")
 
-You can drag `Viz 5` from second row to first row. 
+You can drag `Viz 5` from second row and drop it to first row. 
 
 ![](images/dashboard-dnd-reorder.png "Drag and Drop to re-order")
 
