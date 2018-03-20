@@ -6,13 +6,13 @@ You can use Dashboard Configuration Dialog to create a Dashboard and share the D
 
 * Basic Operation  
   * [Create a new Dashboard](#create-a-new-dashboard)  
-  * [Open Configuration Dialog](#open-cofiguration-dialog)  
+  * [Open Configuration Dialog](#open-configuration-dialog)  
   * [Set Number of Rows](#set-number-of-rows)  
   * [Insert Viz](#insert-viz)  
   * [Insert Anaytics](#insert-analytics)  
   * [Insert Single Value](#insert-single-value)  
-  * [Change Viz Title](#change-viz-title)  
-  * [Add Viz to Existing Row](#add-viz-to-exiting-row)
+  * [Update Viz Title](#update-viz-title)  
+  * [Add Viz to Existing Row](#add-viz-to-existing-row)
   * [Run Dashboard](#run-dashboard)
   * [Re-order Vizs](#re-order-vizs)
   * [Switch Viz to Another Viz](#switch-viz-to-another-viz)
@@ -75,7 +75,7 @@ From Choose Select Viz Dialog, click Single Value to insert
 
 ![](images/dashboard-singlevalue-chooser.png "Choose Single Value")
 
-## Change Viz Title
+## Update Viz Title
 
 Mouse over the title of the name and click `Edit` icon. 
 ![](images/dashboard-change-name.png "Edit Name")
