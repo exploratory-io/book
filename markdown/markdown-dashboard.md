@@ -11,8 +11,9 @@ You can use Dashboard Configuration Dialog to create a Dashboard and share the D
   * [Insert Viz](#insert-viz)  
   * [Insert Anaytics](#insert-analytics)  
   * [Insert Single Value](#insert-single-value)  
-  * [Update Viz Title](#update-viz-title)  
+  * [Update Viz Title](#update-viz-title)
   * [Add Viz to Existing Row](#add-viz-to-existing-row)
+  * [Add Analytics to Existing Row](#add-analytics-to-existing-row)
   * [Run Dashboard](#run-dashboard)
   * [Re-order Vizs](#re-order-vizs)
   * [Switch Viz to Another Viz](#switch-viz-to-another-viz)
@@ -39,7 +40,7 @@ To insert Viz and Analytics to dashboard, click `Configure` button.
 
 ## Set Number of rows
 
-For now you can set up to 4 rows on Dashboard. To do so, select # of rows from pulldown list.
+For now you can set up to 4 rows on Dashboard. To do so, select Number of rows from pulldown list.
 
 ![](images/dashboard-set-num-rows.png "Set # of rows")
 
@@ -123,7 +124,7 @@ After you configure your Dashboard, click `OK` button on configuration dialog.
 
 If you want to re-order charts, you can do it by drag and drop chart chart on Dashboard Configuration Dialog.
 
-So if you want to move `Viz 5` from second row to first row.
+So if you want to move `Gestation Weeks - Histogram` from the first row to second row.
 ![](images/dashbord-reorder-before.png "Drag and Drop to re-order")
 
 You can drag `Gestation Weeks - Histogram` from the first row and drop it to the middle of the second row. 
@@ -136,15 +137,15 @@ And `Gestation Weeks - Histogram` is moved to the first row.
 
 ## Switch Viz to Another Viz
 
-For example, if you want to switch Viz on the second row to something else, click `Edit` Button. 
+For example, if you want to switch Viz `Mother Age Distribution by Mother Race` on the second row to something else, click `Edit` Button. 
 
 ![](images/dashboard-switch-viz.png "Edit")
 
-Then From Choose Viz Dialog, click a Viz that you want to use instead of existing Viz and click `OK` button.
+Then from Choose Viz Dialog, click a Viz that you want to use instead of the existing Viz and click `OK` button.
 
 ![](images/dashboard-select-another-viz.png "Select Another Viz")
 
-Then the Viz on the second row is switched to the new one.
+The Viz on the second row is switched to the new one.
 
 ![](images/dashboard-viz-switched.png "Viz is Switched")
 
