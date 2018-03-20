@@ -6,17 +6,18 @@ You can use Dashboard Configuration Dialog to create a Dashboard and share the D
 
 * Basic Operation  
   * [Create a new Dashboard](#create-a-new-dashboard)  
-  * [Open Configuration Dialog](#open-cofiguration-dialog)  
+  * [Open Configuration Dialog](#open-configuration-dialog)  
   * [Set Number of Rows](#set-number-of-rows)  
   * [Insert Viz](#insert-viz)  
   * [Insert Anaytics](#insert-analytics)  
   * [Insert Single Value](#insert-single-value)  
-  * [Change Viz Title](#change-viz-title)  
-  * [Add Viz to Existing Row](#add-viz-to-exiting-row)
+  * [Update Viz Title](#update-viz-title)  
+  * [Add Viz to Existing Row](#add-viz-to-existing-row)
   * [Run Dashboard](#run-dashboard)
   * [Re-order Vizs](#re-order-vizs)
   * [Switch Viz to Another Viz](#switch-viz-to-another-viz)
   * [Delete Viz](#delete-viz)
+  * [Open Viz with Viz View](#open-viz-with-viz-view)  
 * [Export to HTML](#export-to-html)
 * [Publish and Share](#publish-and-share)
 
@@ -75,7 +76,7 @@ From Choose Select Viz Dialog, click Single Value to insert
 
 ![](images/dashboard-singlevalue-chooser.png "Choose Single Value")
 
-## Change Viz Title
+## Update Viz Title
 
 Mouse over the title of the name and click `Edit` icon. 
 ![](images/dashboard-change-name.png "Edit Name")
@@ -111,17 +112,17 @@ If you want to re-order charts, you can do it by drag and drop chart chart on Da
 So if you want to move `Viz 5` from second row to first row.
 ![](images/dashbord-reorder-before.png "Drag and Drop to re-order")
 
-You can drag `Viz 5` from second row to first row. 
+You can drag `Viz 5` from second row and drop it to first row. 
 
 ![](images/dashboard-dnd-reorder.png "Drag and Drop to re-order")
 
-And `Viz 5` is moved to first row.
+And `Viz 5` is moved to the first row.
 
 ![](images/dashboard-reorder-after.png "Drag and Drop to re-order")
 
 ## Switch Viz to Another Viz
 
-For example, if you want to switch Viz on the second row, Click `Edit` Button. 
+For example, if you want to switch Viz on the second row to something else, click `Edit` Button. 
 
 ![](images/dashboard-switch-viz.png "Edit")
 
@@ -139,6 +140,16 @@ Then the Viz on the second row is switched to the new one.
 To delete viz from the dashboard, click `Delete` Button 
 
 ![](images/delete-viz-from-dashboard.png "Delete Viz From Dashboard")
+
+## Open Viz with Viz View
+
+To Open the Viz with `Viz View` to change Viz Configuration (like Color, Repeat by, etc), click `Open` button. 
+
+![](images/dashboard-open-viz.png "Open Viz with Viz View")
+
+And this will navigate you to Viz View with the Viz selected.
+
+![](images/dashboard-viz-with-viz-view.png "Viz selected on Viz View")
 
 
 ## Export to HTML
