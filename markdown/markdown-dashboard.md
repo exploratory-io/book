@@ -17,6 +17,7 @@ You can use Dashboard Configuration Dialog to create a Dashboard and share the D
   * [Re-order Vizs](#re-order-vizs)
   * [Switch Viz to Another Viz](#switch-viz-to-another-viz)
   * [Delete Viz](#delete-viz)
+  * [Open Viz with Viz View](#open-viz-with-viz-view)  
 * [Export to HTML](#export-to-html)
 * [Publish and Share](#publish-and-share)
 
@@ -115,13 +116,13 @@ You can drag `Viz 5` from second row and drop it to first row.
 
 ![](images/dashboard-dnd-reorder.png "Drag and Drop to re-order")
 
-And `Viz 5` is moved to first row.
+And `Viz 5` is moved to the first row.
 
 ![](images/dashboard-reorder-after.png "Drag and Drop to re-order")
 
 ## Switch Viz to Another Viz
 
-For example, if you want to switch Viz on the second row, Click `Edit` Button. 
+For example, if you want to switch Viz on the second row to something else, click `Edit` Button. 
 
 ![](images/dashboard-switch-viz.png "Edit")
 
@@ -139,6 +140,16 @@ Then the Viz on the second row is switched to the new one.
 To delete viz from the dashboard, click `Delete` Button 
 
 ![](images/delete-viz-from-dashboard.png "Delete Viz From Dashboard")
+
+## Open Viz with Viz View
+
+To Open the Viz with `Viz View` to change Viz Configuration (like Color, Repeat by, etc), click `Open` button. 
+
+![](images/dashboard-open-viz.png "Open Viz with Viz View")
+
+And this will navigate you to Viz View with the Viz selected.
+
+![](images/dashboard-viz-with-viz-view.png "Viz selected on Viz View")
 
 
 ## Export to HTML
