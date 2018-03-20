@@ -179,6 +179,6 @@ To publish and share your Dashboard, click `Publish` button.
 
 ![](images/publish-dashboard.png "Share Dashboard")
 
-And on the Share dialog, check 'Private' if you want to privately share the Dashboard and Click `Share` button.
+And on the Share dialog, check 'Private' if you want to privately share the Dashboard and Click `Publish` button.
 
 ![](images/dashboard-share-scope.png "Export to HTML")
