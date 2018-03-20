@@ -131,7 +131,7 @@ You can drag `Gestation Weeks - Histogram` from the first row and drop it to the
 
 ![](images/dashboard-dnd-reorder.png "Drag and Drop to re-order")
 
-And `Gestation Weeks - Histogram` is moved to the first row.
+And `Gestation Weeks - Histogram` is moved to the second row.
 
 ![](images/dashboard-reorder-after.png "Drag and Drop to re-order")
 
