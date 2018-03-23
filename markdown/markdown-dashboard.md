@@ -122,7 +122,7 @@ After you configure your Dashboard, click `OK` button on configuration dialog.
 
 ## Re-order Vizs
 
-If you want to re-order charts, you can do it by drag and drop chart chart on Dashboard Configuration Dialog.
+If you want to re-order charts, you can do it by drag and drop chart on Dashboard Configuration Dialog.
 
 So if you want to move `Gestation Weeks - Histogram` from the first row to second row.
 ![](images/dashbord-reorder-before.png "Drag and Drop to re-order")
