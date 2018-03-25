@@ -1,5 +1,150 @@
 # Release Note
 
+## v 4.3
+
+Released on 3/25/2018
+
+### Enhancements
+
+#### Communication/Reporting
+- Dashboard Configuration by Drag and Drop
+
+#### Chart
+- Correlation/Coefficient information is added in the trend line hover tooltip.
+- Scatter Plot / Bubble Chart : Now legend for color is shown when the column is numeric as well as when it is categorical.
+- Single Value: Supported custom message for no record case.
+- Supported Range (Confidence Interval, Standard Deviation, etc.) for Reference Line .
+- Added "Set 0 to Center" option to continuous color option.
+- Scatter Plot: Added date functions on X/Y Axis.
+- Added integer conversion functions (As Integer, As integer by 10) to the numeric functions in Charts. 
+- Added First / Last options to Reference Line. 
+- Supported line width in Trend Line. 
+- Row ID column support in Long-Lat Map and Bubble chart.
+- Ratio type support in Error Bar chart.
+- Aggregate function name is now shown as part of column name in Pivot table.
+- Added a column sorting option to ignore/honor row groups in Pivot table
+- Pivot Table: Supported row total.
+- Added 2000 and 3000 rows options to viz table
+- Supported column search by name on Column Selectors.
+
+#### Analytics View
+- Added Chi-Square Test Analytics View.
+- Added T-test Analytics View.
+- Added ANOVA Analytics View.
+- Added Normality Test Analytics View.
+- Added "Dinstance by Column" Analytics View.
+- Added Analytics property dialog for finer control on how each analytics is run.
+- Linear Regression : Y=0 reference line in Coefficients chart.
+- Distance : Exposed a property for color circle on/off to Similarity Map
+- Made P-Value thresholds adjustable.
+- Correlation/Distance : Exposed a property for whether to show full matrix or only the lower triangle.
+- Added "High Confidence" tab to Linear/Logistic/Cox Regression Analytics View.
+- Survival Analysis : Log Rank Test is added.
+- Supported Filters in Analytics View.
+- Time Series Forecast : Yearly/Weekly Seasonality Tabs are added.
+- Supported logical columns for Correlation/Distance by Column Analytics Views.
+- Now, random seed can be set in Variable Importance (Random Forest), Linear/Logistic Regression, Cox Regression Analytics View.
+- Supported column search by name on Column Selectors.
+
+#### Data Source
+- Supported connection to multiple mongodb hosts of a replica set. 
+
+#### Data Wrangling
+- On Summary View and Table View, column names which are used in the right hand-side step that is currently selected are now highlighted.
+- Supported Binary (Two Classes) in Create Bins (Category) Dialog
+- Supported "Remove Text" and "Remove Text (All)" as Text Column Operation
+- Supported column search by name on Column Selectors.
+
+#### Others
+- Supported multiple steps selection without explicity changing to edit mode
+- Project can be duplicated now.
+- Summary View: Added Standard Deviation as a metric on numeric column.
+
+
+### Bug Fixes
+
+#### Communication/Reporting
+- Chart did not show in the center of the slide in 16:9 mode.
+- Markdown metadata json file could become very large in size.
+- Exported html file name for dashboard and slides were "note.html". Now it is renamed to "dashboard.html" or "slides.html".
+- Short Cut Key for inserting a link on RMarkdown Note was setting text range in the wrong place
+
+#### Chart
+- Show detail showed nothing in Scatter chart.
+- Showing the trend line hover tooltip was hard.
+- "Number of unique values" warning were shown where it should not, if the current data frame was grouped. 
+- Table title was not aligned to the center of the table.
+- Reference line was showing partially.
+- Reference line did not show in the first chart if you use color from repeat by in some cases.
+- Reference line was not bound to y2 axis.
+- Extra spaces were there on both side of the Bar chart in Repeat By case.
+- Legend did not show if multiple y axes have same configuration in Bar chart.
+- Histogram errored out if you use a column including Inf/-Inf and custom bucket.
+- Sample size was not shown in Bubble chart.
+- Circles in legend were not even in Scatter and Bubble charts.
+- Reference line support in Histogram.
+- Bar chart reference line broke if you assign TXT function on the numeric column assigned to X Axis.
+- Bundled popular geojson maps.
+- X/Y axis order was broken if categorical columns were assigned to x/y in Scatter chart.
+- Trend Line data range for all group should be calculated within each repeatby.
+- Handle a column assigned to color as a group by column in Bubble chart.
+- Sort did not work on logical column in Table.
+- y2 axis did not show correctly on horizontal Dual-Y Bar chart.
+- Chart legend did not honor the factor order.
+- Circles did not show correctly in Scatter chart.
+- Viz "Show detail" dialog showed empty or not filtered data for some cases
+- Chart filter showed internal function names.
+- Unwanted space pushed viz down even after error message for step cleared.
+- Longer column name pushed value to the right on Viz Show Details Dialog.
+- Incorrect Unique value warning was raised on Viz View even if the number of unique value is very low.
+
+#### Analytics View
+- Anomaly Detection Analytics View: With Repeat By, titles for each facet was missing.
+- Maximum row numbers of tables in Analytics View was too small. (The maximum is changed to 1000.)
+- Allow only logical for survival event status column
+- Hitting "Enter" key on Multi Column Selection Dialog does not work
+- Analytics View does not work properly when "Adding New Step" exists on right hand side step list
+- On Analytics View, not all the variable names are visible unless you open the Multi Column Dialog
+- On Analytics View, Multi Column Selection Dialog shows empty data
+- On Analytics View, Multi Column Selection Dialog does not allow users to select more than 300 columns
+- Regression Analysis : Error was thrown when there were no significant coefficient
+- Clicking Non-existent Yearly/Weekly tab triggered unnecessary spin icon rendering on Prophet Analytics
+- Label did not show up on Similarity Map on Distance by Category under certain conditions.
+- Thumbnail for last opened tab was not captured.
+- Thumbnail for other viz was not displayed when a last selected viz is pivot or table.
+- Distance by Category: Error was thrown when Category column name had space in it.
+- Analytics View: Coefficents Scatter plots in Linear/Logistic/Cox Regression Analytics was not correctly sorted by the values of coefficients.
+
+#### Data Source
+- Column Data Type guessing was skipped when updating existing Data Frame
+- For MongoDB, default data frame name should be collection name instead of "dataframe"
+- Switching connection on Update Dialog does not work
+- Cannot get schema info from Amazon Redshift
+- On CSV Import Dialog, default value for Trim White Space parameter was not "Yes"
+
+#### Data Wrangling
+- Inf/-Inf was shown as NA on Table view
+- Error was raised for filter command when there was incomplete token
+- On filter dialog, it was not possible to select values from list of values when window height was small
+- Unwanted default name "dataframe" was automatically set when data frame name was not specified on Create Data Frame Dialog
+- List Of Values were not reflecting the previous operation inside the same Mutate
+- Max width was not set dynamically for a token inside data wrangling step.
+- stem_word function threw error.
+- SIGPIPE error was occasionally thrown.
+- Reset button was not working as expected on Command UI
+- Error was not displayed even if a custom command uses invalid statement
+- Drag and drop Branch Lists caused corrupted transformation steps
+- Expression generated by Column Header menus for operations like "% Difference from" was missing * 100 to make the result in percent.
+
+#### Others
+- Process remained after shutdown on windows7
+- Non-ascii user first/last name was not shown on desktop.
+- When copying a dataframe, Analytics was not copied along with it 
+- Data Refresh on Server : Error "error code 3" was thrown when dataframe name started with _
+- Edf export did not work after cancelling R
+- Exploratory Desktop did not start up when there is existing Rserve process
+
+
 ## v 4.2.0.6 (Windows Only)
 
 Released on 2/19/2018
@@ -105,7 +250,7 @@ Released on 1/3/2018
 - Show Detail menus on charts, with which you can take a deeper look at the portion of the data the part of the chart represents.
 - Keep Only / Exclude menu on charts, with which you can create a viz filter.
 - Added new Window Function (cumulative sum ratio, % of max, % of min, % of first, % of last, % of mean, and % of median)
-- Duali y-axis for Bar, Scatter, and Line Chart.
+- Dual y-axis for Bar, Scatter, and Line Chart.
 - Viz Filter with custom command.
 - Reference Line for Bar, Line, and Scatter Chart.
 - Added "% of TRUE" and "% of FALSE" to Column Menu for logical data type columns.
