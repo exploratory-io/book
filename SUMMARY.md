@@ -10,6 +10,7 @@
 
 
 * [Product Features]()
+  * [Dashboard](markdown/markdown-dashboard.md)]
   * [Note](markdown/markdown-note.md)
   * [Presentation Slides](markdown/markdown-slide.md)
   * [Steps (Right-hand side)](steps.md)
