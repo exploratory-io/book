@@ -57,6 +57,7 @@ ORDER BY DESC(?time)
 ```
 
 You can find a list of SPARQL query example in [this site](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples)
+As for SPARQL syntax, please refer [this site](https://www.w3.org/TR/sparql11-overview/)
 
 ## Import
 
