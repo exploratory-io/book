@@ -23,7 +23,7 @@ You can limit the range of time with explicit dates like '2015-11-03' with these
 
 ## 2. Import
 
-Once you concirmed the query result, click `Import` button to import the data as a data frame in Exploratory.
+Once you concirmed the result, click `Import` button to import the data as a data frame in Exploratory.
 ![](images/reim_import.png)
 
 ## 3. Output
