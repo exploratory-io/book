@@ -2,20 +2,19 @@
 
 Allows to get data with SPARQL which is a RDF query language and protocol produced by the W3C RDF Data Access Working Group (DAWG)
 
-## Parameters
+## 1. Parameters
 
-### Endpoint
+### 1.1 Endpoint
 
 You can find list of SPARQL endpoint from [this site](https://www.w3.org/wiki/SparqlEndpoints).
-
-1. Copy an endpoint URL of the area where you want to get data and paste it to endpint Input Field.
+Copy an endpoint URL of the area where you want to get data and paste it to endpint Input Field.
 
 For example, if you want to get data from [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) you can use `https://query.wikidata.org/sparql` as your Endpoint URL.
 
 ![](images/SPARQL_endpoint.png)
 
 
-### Query
+### 1.2 Query
 
 You can write a SPARQL Query in Query field.
 For example, if you want to query Academy award data, you can write a query like this.
@@ -59,7 +58,7 @@ ORDER BY DESC(?time)
 You can find a list of SPARQL query example in [this site](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples)
 As for SPARQL syntax, please refer [this site](https://www.w3.org/TR/sparql11-overview/)
 
-## Import
+## 2. Import
 
 Once you concirmed the query result, click `Import` button to import the data as a data frame in Exploratory.
 ![](images/SPARQL_import.png)
