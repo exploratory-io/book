@@ -2,9 +2,9 @@
 
 Allows to get weather data from Automated Surface Observing System (ASOS) stations (airports) in the whole world thanks to the Iowa Environment Mesonet website.
 
-## Parameters
+## 1. Parameters
 
-### Station ID
+### 1.1 Station ID
 
 You can find Station ID from [this site](https://mesonet.agron.iastate.edu/request/download.phtml?network=CA_ASOS).
 
@@ -17,11 +17,16 @@ Then type it to Station ID.
 
 ![](images/riem_station_input.png)
 
-### Date Start / Date End
+### 1.2 Date Start / Date End
 
 You can limit the range of time with explicit dates like '2015-11-03' with these parameters.
 
-## Output
+## 2. Import
+
+Once you concirmed the query result, click `Import` button to import the data as a data frame in Exploratory.
+![](images/reim_import.png)
+
+## 3. Output
 
 * station - three or four character site identifier
 * valid - timestamp of the observation (UTC)
