@@ -58,5 +58,8 @@ ORDER BY DESC(?time)
 
 You can find a list of SPARQL query example in [this site](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples)
 
-## Output
+## Import
+
+Once you concirmed the query result, click `Import` button to import the data as a data frame in Exploratory.
+![](images/SPARQL_import.png)
 
