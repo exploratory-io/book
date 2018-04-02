@@ -27,7 +27,7 @@ For example, if you wanto to get a Gold data from London A.M Fixing, you can use
 
 #### Economic Data
 
-https://blog.quandl.com/api-for-economic-data
+There is a [blog post](https://blog.quandl.com/api-for-economic-data)
 
 For Economic Data, Qunadl Code consists of `{PUBLISHER}/{COUNTRY}_{INDICATOR}` fashion. 
 
