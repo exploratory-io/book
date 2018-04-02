@@ -56,7 +56,8 @@
    * [Write R Script as Data (日本語)](import/r-script-data_ja.md)
    * [Web Page Scraping](import/web-scraping.md)
    * [Data Source Extension](import/extensions.md)
-     * [SPARQL](import/SPARQL.md) 
+     * [SPARQL](import/SPARQL.md)
+     * [Quandl](import/quandl.md)
      * [Weather Data](import/riem_measures.md)
    * [Create Custom Data Source](import/user-defined-plugin.md)
 
