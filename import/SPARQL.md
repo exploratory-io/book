@@ -6,8 +6,9 @@ Allows to get data with SPARQL which is a RDF query language and protocol produc
 
 ### 1.1 Endpoint
 
-You can find list of SPARQL endpoint from [this site](https://www.w3.org/wiki/SparqlEndpoints).
-Copy an endpoint URL of the area where you want to get data and paste it to endpint Input Field.
+You can find list of SPARQL endpoint examples from [this site](https://www.w3.org/wiki/SparqlEndpoints).
+
+From the list, copy an endpoint URL and paste it to endpoint Input Field. Or type in your endpoint URL.
 
 For example, if you want to get data from [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) you can use `https://query.wikidata.org/sparql` as your Endpoint URL.
 
@@ -56,6 +57,7 @@ ORDER BY DESC(?time)
 ```
 
 You can find a list of SPARQL query example in [this site](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples)
+
 As for SPARQL syntax, please refer [this site](https://www.w3.org/TR/sparql11-overview/)
 
 ## 2. Import

@@ -1,6 +1,6 @@
 # Quandl Data Import
 
-Allows to get data around stocks, commodity, macroeconomic statisitcs, fix rates etc from Quandl, which delivers financial, economic and alternative data to over 250,000 people worldwide.
+Allows to get data Financial Data from [Quandl](https://www.quandl.com), which delivers financial, economic and alternative data to over 250,000 people worldwide.
 
 
 ## 1. Parameters
@@ -80,3 +80,9 @@ Then after you get your API key, please set the API Key to the new Input Field o
 
 Once you concirmed the query result, click `Import` button to import the data as a data frame in Exploratory.
 ![](images/quandl_wide.png)
+
+## 3. Reference
+
+See [Getting Bitcoin Data and Visualizing in 3 Steps](https://blog.exploratory.io/getting-bitcoin-data-and-visualizing-in-3-steps-fd2bba78084f) for Bitcoin Data.
+
+
