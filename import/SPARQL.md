@@ -62,6 +62,6 @@ As for SPARQL syntax, please refer [this site](https://www.w3.org/TR/sparql11-ov
 
 ## 2. Import
 
-Once you concirmed the query result, click `Import` button to import the data as a data frame in Exploratory.
+Once you confirmed the query result, click `Import` button to import the data as a data frame in Exploratory.
 ![](images/SPARQL_import.png)
 
