@@ -78,7 +78,7 @@ Then after you get your API key, please set the API Key to the new Input Field o
 
 ## 2. Import
 
-Once you concirmed the query result, click `Import` button to import the data as a data frame in Exploratory.
+Once you confirmed the query result, click `Import` button to import the data as a data frame in Exploratory.
 ![](images/quandl_wide.png)
 
 ## 3. Reference
