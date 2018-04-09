@@ -8,25 +8,31 @@ EXPLORATORY_HOME環境変数を設定することによって、ホームディ�
 
 ## WindowsでEXPLORATORY_HOMEを設定する方法
 
-1. Create a new directory for repository. Let's say we created "C:\exploratory" here as an example.
+1. レポジトリ用の新規のディレクトリを作成します。ここでは例として"C:\exploratory"を作ってみます。
 
-2. Start typing "environment" into Windows's search box, and you will see search result that says "Edit environment variables for your account". Click to open it.
+2. ウィンドウズの検索ボックスで"環境"と入力します。すると、検索結果に"システム環境変数の編集"が出てくるので、これをクリックしてオープンします。
 
-  ![](images/exploratory_home_win_1.png)
+  ![](images/exploratory_home_win_1-ja.png)
 
-3. "Environment Variables" dialog opens.
+3. "システムのプロパティ"ダイアログが開きます。
 
-  ![](images/exploratory_home_win_2.png)
+  ![](images/exploratory_home_win_2-1-ja.png)
 
-4. Click "New..." to create a new environment variable.
+  環境変数ボタンをクリック。
 
-  ![](images/exploratory_home_win_3.png)
+4. "環境変数"ダイアログが開きます。
 
-5. Set "EXPLORATORY_HOME" to Variable name, "C:\exploratory" to Variable value. Click "OK".
+  ![](images/exploratory_home_win_2-ja.png)
 
-  ![](images/exploratory_home_win_4.png)
+4. システム環境変数のセクションで"新規(W)..."をクリックして新規に環境変数を作成します。
 
-6. As you can see, EXPLORATORY_HOME variable is set.
+  ![](images/exploratory_home_win_3-ja.png)
+
+5. 変数名に"EXPLORATORY_HOME"を設定し、値に"C:\exploratory"を設定してOKをクリックします。
+
+  ![](images/exploratory_home_win_4-ja.png)
+
+6. スクリーンショットにあるように, EXPLORATORY_HOME 変数がセットされました。
 
 7. Logout from Windows, and Log back in.
 
