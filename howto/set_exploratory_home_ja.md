@@ -45,7 +45,7 @@ EXPLORATORY_HOME環境変数を設定することによって、ホームディ�
 sudo mkdir /exploratory
 ```
 
-2. Exploratoryがそのディレクトに読み書きできるように、ディレクトの所有者を設定します。ここでは例としてMac OSのユーザー名がjohnであるとします。
+2. Exploratoryがそのディレクトリに読み書きできるように、ディレクトリの所有者を設定します。ここでは例としてMac OSのユーザー名がjohnであるとします。
 ```
 sudo chown john /exploratory
 ```
