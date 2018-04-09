@@ -5,7 +5,7 @@
 Released on 4/8/2018
 
 ### Bug Fix
-- Install failed if the path specified in EXPLORATORY_HOME has multibyte characters in it.
+- Install failed if the path specified in EXPLORATORY_HOME environment variable had multibyte characters in it.
 
 ## v 4.3
 
