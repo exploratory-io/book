@@ -34,23 +34,23 @@ EXPLORATORY_HOME環境変数を設定することによって、ホームディ�
 
 6. スクリーンショットにあるように, EXPLORATORY_HOME 変数がセットされました。
 
-7. Logout from Windows, and Log back in.
+7. ウィンドウズから一旦ログアウトして、再度ログインし直します。.
 
-8. Install Exploratory by clicking Exploratory.exe. As Exploratory is installed, it uses "C:\exploratory" directory instead of .exploratory directory under home directory.
+8. Exploratory.exeをダブルクリックしてExploratoryデスクトップをインストールします。Exploratoryデスクトップがインストールされると、今度はホームディレクトリの下の.exploratoryではなく、先ほど指定した"C:\exploratory"がレポジトリの場所として使われるようになります。.
 
-## Steps to set up EXPLORATORY_HOME environment variable on Mac
+## MacでEXPLORATORY_HOME環境変数を設定する方法
 
-1. Open a shell and create a new directory for repository. Let's say we create "/exploratory" here as an example.
+1. ターミナルを起動し、レポジトリ用の新規のディレクトリを作成します。ここでは例として"/exploratory"を作成することにします。
 ```
 sudo mkdir /exploratory
 ```
 
-2. Set ownership of the directory so that Exploratory run by you can read/write in the directory. Let's say your Mac OS username is john here.
+2. Exploratoryがそのディレクトに読み書きできるように、ディレクトの所有者を設定します。ここでは例としてMac OSのユーザー名がjohnであるとします。
 ```
 sudo chown john /exploratory
 ```
 
-3. Create `environment.plist` under `~/Library/LaunchAgents/` with the following content. (Replace "/exploratory" with the directory you are using for repository.)
+3. `~/Library/LaunchAgents/` の下に `environment.plist` というファイルを以下の内容で作成します。("/exploratory" の部分を実際に使うディレクトリ名に置き換えてください。)
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -72,6 +72,6 @@ sudo chown john /exploratory
 </plist>
 ```
 
-4. Logout and Log back in to your Mac OS. This will enable EXPLORATORY_HOME environment variable we set at the previous step.
+4. 一旦Macからログアウトして、再度ログインします。これによって前のステップで定義したEXPLORATORY_HOME 環境変数が有効になります。
 
-5. Start Exploratory, and it will start using /exploratory as the repository.
+5. Exploratoryデスクトップを起動すると、"/exploratory"が新たにレポジトリとして使われるようになります。
