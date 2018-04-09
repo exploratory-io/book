@@ -197,6 +197,7 @@
 * [Setup](setup.md)
    * [Disable McAfee virus scan](howto/stopmcafee.md)
    * [Change Repository Location](howto/set_exploratory_home.md)
+   * [リポジトリの場所の設定](howto/set_exploratory_home_ja.md)
    * [Holidays Data for Forecast](howto/holiday.md)
    * [Possible Reasons for Install Error](howto/install_errors.md)
    * [Upgrade Microsoft .NET Framework](howto/upgrade_dot_net.md)
