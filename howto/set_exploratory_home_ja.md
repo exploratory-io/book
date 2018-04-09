@@ -18,7 +18,7 @@ EXPLORATORY_HOME環境変数を設定することによって、ホームディ�
 
   ![](images/exploratory_home_win_2-1-ja.png)
 
-  環境変数ボタンをクリック。
+  環境変数ボタンをクリックします。
 
 4. "環境変数"ダイアログが開きます。
 
