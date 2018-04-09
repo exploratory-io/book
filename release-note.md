@@ -1,5 +1,12 @@
 # Release Note
 
+## v 4.3.0.1 (Windows Only)
+
+Released on 4/8/2018
+
+### Bug Fix
+- Install failed if the path specified in EXPLORATORY_HOME has multibyte characters in it.
+
 ## v 4.3
 
 Released on 3/25/2018
