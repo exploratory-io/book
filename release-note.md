@@ -1,11 +1,20 @@
 # Release Note
 
+## v 4.3.0.2 (Windows Only)
+
+Released on 4/18/2018
+
+### Bug Fix
+- Installation of additional maps hanged.
+
+
 ## v 4.3.0.1 (Windows Only)
 
 Released on 4/8/2018
 
 ### Bug Fix
 - Install failed if the path specified in EXPLORATORY_HOME environment variable had multibyte characters in it.
+
 
 ## v 4.3
 
