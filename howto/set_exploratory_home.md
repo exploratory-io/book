@@ -1,9 +1,18 @@
 # Change Repository Location
 
-Exploratory creates its repository in .exploratory directory under user's home directory.
-The .exploratory directory is created at installation, but we have seen cases where this fails when the home directory includes space character or non-ascii character.
-If you are having issue in installation and your home directory name includes space or non-ascii character, setting the repository directory to some other directory without space/non-ascii character may work around the isuue.
-By setting EXPLORATORY_HOME environment variable, Exploraotry uses the specified directory as the place for repository instead of .exploratory directory under home directory.
+## Default Location of Repository
+
+At installation, Exploratory creates a repository, which is the directory where user info or projects are stored.
+By default, .exploratory directory under home directory is created and used as the repository.
+On Windows, if home directory name includes multibyte characters, Exploratory tries to create "/exploratory" directory instead, and uses it as the repository.
+
+## On Windows, what if home directory has multibyte character, and there is not enough privilege to create "/exploratory"?
+
+On Windows, if home directory has multibyte characters, and there is not enough privilege to create "/exploratory" or create files/directories under it,
+creation of repository would fail, which would cause failure of installation.
+In such case, installation failure can be worked around by specifying some other directory with a path that does not have multibyte character, which you also have enough privilege to create files/directories under.
+You can do so by setting EXPLORATORY_HOME environment variable.
+When EXPLORATORY_HOME environment variable is set, Exploraotry uses the specified directory as the location for the repository instead of .exploratory directory or "/exploratory" directory.
 
 ## Steps to set up EXPLORATORY_HOME environment variable on Windows
 
