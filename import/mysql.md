@@ -6,6 +6,8 @@ You can quickly import data from your MySQL Database into Exploratory.
 
 Create a connection following [this instruction](connection.html).
 
+* Whether the connection is SSL or not is automatically detected.
+
 ## 2. Open MySQL Import dialog
 
 Click '+' button next to 'Data Frames' and select 'Import Database Data'.

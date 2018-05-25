@@ -12,6 +12,8 @@ Make sure you added your client PC's IP address to your DB Security Group associ
 
 Create a connection following [this instruction](connection.html).
 
+* Whether the connection is SSL or not is automatically detected.
+
 ## 3. Open Aurora Import dialog
 
 Click '+' button next to 'Data Frames' and select 'Import Database Data'.
