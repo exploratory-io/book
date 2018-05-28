@@ -465,9 +465,7 @@ And when you click Run, this code block is converted to Exploratory Analytics Vi
 
 ![](images/exploratory-analytics-in-md.png "Chart Select Dialog")
 
-<a name="rcodeblock"></a>
-
-
+<a name="r-script-code-block"></a>
 
 ## R Script - Code block
 
@@ -488,6 +486,7 @@ ggplot(airline, aes(FL_NUM, color = CARRIER)) +
 And the result would look like this.
 
 ![](images/note-r-codeblock1.png "Code Block example")
+
 
 
 ### Hide R Code in the Output
@@ -530,6 +529,7 @@ ggplot(airline, aes(FL_NUM, color = CARRIER)) +
 
 
 
+<a name="r-script-inline"></a>
 
 ## R Script - Inline
 
@@ -543,6 +543,7 @@ This inline code becomes like this.
 I have analyzed the September flight delay data on Monday, September, 04, 2017. The data size is 1,000 rows.
 ```
 
+<a name="export-to-htmlword"></a>
 ## Export to HTML/Word/EDF
 
 ![](images/export-as-html.png "Export to HTML")
