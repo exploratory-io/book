@@ -19,9 +19,9 @@ You can use Simple Markdown Editor to write notes to communicate your insights w
   * [Tabbed Sections](#tabbed-sections)  
 * [Charts from Visualization View](#exploratory-charts)  
 * [Charts from Analytics](#exploratory-analytics-viz)　　
-* [R Script - Code Block](#r-script-code-block)
-* [R Script - Inline](#r-script-inline)
-* [Export to HTML/Word](#export-to-htmlword)
+* [R Script - Code Block](#rscriptcodeblock)
+* [R Script - Inline](#rscriptinline)
+* [Export to HTML/Word](#exporttohtmlword)
 * [Publish and Share](#publish-and-share)
 
 
@@ -515,7 +515,7 @@ ggplot(airline, aes(FL_NUM, color = CARRIER)) +
 </code></pre>
 
 
-# Set a Canvas Size for Graphical Outputs
+### Set a Canvas Size for Graphical Outputs
 
 You can set the canvas size for the graphical output by setting “fig.height” and “fig.width” parameters. The unit is inch. Default is fig.height=5 and fig.width=7.
 
