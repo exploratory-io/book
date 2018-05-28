@@ -19,9 +19,9 @@ You can use Simple Markdown Editor to write notes to communicate your insights w
   * [Tabbed Sections](#tabbed-sections)  
 * [Charts from Visualization View](#exploratory-charts)  
 * [Charts from Analytics](#exploratory-analytics-viz)　　
-* [R Script - Code Block](#rscriptcodeblock)
-* [R Script - Inline](#rscriptinline)
-* [Export to HTML/Word](#exporttohtmlword)
+* [R Script - Code Block](#r-script---code-block)
+* [R Script - Inline](#r-script---inline)
+* [Export to HTML/Word](#export-to-htmlwordedf)
 * [Publish and Share](#publish-and-share)
 
 
@@ -465,7 +465,6 @@ And when you click Run, this code block is converted to Exploratory Analytics Vi
 
 ![](images/exploratory-analytics-in-md.png "Chart Select Dialog")
 
-<a name="rscriptcodeblock"></a>
 
 ## R Script - Code block
 
@@ -529,7 +528,6 @@ ggplot(airline, aes(FL_NUM, color = CARRIER)) +
 
 
 
-<a name="rscriptinline"></a>
 
 ## R Script - Inline
 
@@ -543,7 +541,6 @@ This inline code becomes like this.
 I have analyzed the September flight delay data on Monday, September, 04, 2017. The data size is 1,000 rows.
 ```
 
-<a name="exporttohtmlword"></a>
 ## Export to HTML/Word/EDF
 
 ![](images/export-as-html.png "Export to HTML")
@@ -555,7 +552,6 @@ To Export the output as a Word Document, click Export button and select `Export 
 To Export the output as an EDF(Exploratory Data Format) file, click Export button and select `Export as EDF`. EDF file includes not only the final data output but also the data wrangling steps to reproduce the data. This means that you can import it in another project and all the steps that would produce the data will be reproduced and shown at the right hand side. This would be useful when others want to not only see the data but also want to understand how the data wrangling has been done and want to update the steps.
 
 
-<a name="publishandshare"></a>
 
 ## Publish and Share
 
