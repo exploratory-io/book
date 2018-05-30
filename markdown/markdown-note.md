@@ -430,17 +430,58 @@ This will open up Chart Selector Dialog like this.
 
 ![](images/select-exploratory-chart.png "Exploratory Chart Select Dialog")
 
-After you select a Chart and Click OK, following Exploratory Code block is inserted into your Markdown content. Syntax is `/<dataframe_name>/<type>/<index>`
+After you select a Chart and Click OK, following Exploratory Code block is inserted into your Markdown content. Syntax is `/<dataframe_name>/<type>/<id>`
 
 <pre><code>
 ```{exploratory}
-/user_login_for_cohort_survival/viz/1
+/user_login_for_cohort_survival/viz/Flight-Analysis-1
 ```
 </code></pre>
 
 And when you click Run, this code block is converted to Exploratory Chart like below.
 
 ![](images/exploratory-chart-in-md.png "Chart Select Dialog")
+
+
+
+
+
+### Customize Width
+
+By default, the system sets the document area width to the chart width. 
+You can customize the width by `width` property. You can set the width in following ways.
+
+* width="500px"
+* width="500"  (Same as "500px")
+* width="90%"  (90% of the screen width)
+* width="full" (Same as the 100% of the screen width)
+
+Example:
+<pre><code>
+```{exploratory width="full"}
+/user_login_for_cohort_survival/viz/Flight-Analysis-1
+```
+</code></pre>
+
+
+### Customize Height
+
+By default, the system calcualtes the chart height automatically based  
+on the chart width and screen size. You can customize the height by `height` parameter. 
+You can set the width in following ways.
+
+* width="500px"
+* width="500"  (Same as "500px")
+* width="90%"  (90% of the screen width)
+* width="full" (Same as the 100% of the screen width)
+
+Example:
+<pre><code>
+```{exploratory height="350px"}
+/user_login_for_cohort_survival/viz/Flight-Analysis-1
+```
+</code></pre>
+
 
 
 ## Exploratory Analytics Viz
@@ -453,17 +494,58 @@ This will open up Chart Selector Dialog like this.
 
 ![](images/select-exploratory-analytics.png "Exploratory Chart Select Dialog")
 
-After you select a Chart and Click OK, following Exploratory Code block is inserted into your Markdown content. Syntax is `/<dataframe_name>/<type>/<index>`
+After you select a Chart and Click OK, following Exploratory Code block is inserted into your Markdown content. Syntax is `/<dataframe_name>/<type>/<analytics name>/<index>`
 
 <pre><code>
 ```{exploratory}
-/airline_2013_6/analytics/1/1
+/airline_2013_6/analytics/L/1
 ```
 </code></pre>
 
 And when you click Run, this code block is converted to Exploratory Analytics Viz like below.
 
 ![](images/exploratory-analytics-in-md.png "Chart Select Dialog")
+
+
+
+
+### Customize Width
+
+By default, the system sets the document area width to the chart width. 
+You can customize the width by `width` property. You can set the width in following ways.
+
+* width="500px"
+* width="500"  (Same as "500px")
+* width="90%"  (90% of the screen width)
+* width="full" (Same as the 100% of the screen width)
+
+Example:
+<pre><code>
+```{exploratory width="full"}
+/user_login_for_cohort_survival/viz/Flight-Analysis-1
+```
+</code></pre>
+
+
+### Customize Height
+
+By default, the system calcualtes the chart height automatically based  
+on the chart width and screen size. You can customize the height by `height` parameter. 
+You can set the width in following ways.
+
+* width="500px"
+* width="500"  (Same as "500px")
+* width="90%"  (90% of the screen width)
+* width="full" (Same as the 100% of the screen width)
+
+Example:
+<pre><code>
+```{exploratory height="350px"}
+/user_login_for_cohort_survival/viz/Flight-Analysis-1
+```
+</code></pre>
+
+
 
 
 ## R Script - Code block
