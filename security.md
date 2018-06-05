@@ -64,7 +64,7 @@ We have full time security staff to help identify and prevent new attack vectors
 
 ## Credit Card Security
 
-We hand off credit card processing to Stripe. They power online transactions for thousands of business and SaaS platforms and comply with PCI standards in the storage and handling of credit card information.
+We hand off credit card processing to [Stripe](https://stripe.com). They power online transactions for thousands of business and SaaS platforms and comply with PCI standards in the storage and handling of credit card information.
 
 ## Need to Report a Security Vulnerability?
 
