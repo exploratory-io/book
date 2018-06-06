@@ -4,6 +4,10 @@ You can query and extract Twitter's tweet data.
 
 * [Quick Video: How to Query and Extract Twitter Data](https://exploratory.io/tutorial#querying-extracting-twitter-data)
 
+Note that due to the Twitter Search API’s restriction, the data is supposed to be only for the last 7 days, though it usually returns 6 to 9 days of the data in most cases.
+
+Number of tweets returned will often be less than what was specified by the user. This can happen because (a) the search query did not return many results (the search pool is already thinned out from the population of tweets to begin with), (b) because user hitting rate limit for a given token, or (c) of recent activity (either more tweets, which affect pagination in returned results or deletion of tweets).
+
 
 ## 1. Select Twitter Search Data Menu
 
@@ -22,33 +26,14 @@ Create a connection following [this instruction](oauth-connection.html).
 ## 3. Input parameters
 
 * Max # of tweets - Set max number of the tweets to return.
-* Language - Set a language code if you want to limit the tweets to search.
+* Language - Set a language code if you want to limit the tweets to certain languages. The code is [ISO 639-1 alpha-2](https://en.wikipedia.org/wiki/ISO_639-1).
 * Last N Days - Set number of the past days for the search data.
 * Search Text - Type text to search.
 
-## 4. Preview and Import
-
-Click Preview button to see the data back from Twitter. If it looks ok, then you can click 'Import' to import the data into Exploratory.
-
-## Appendix
-
-
-### How to build search query?
-
-
-You can find the search query syntax from [Twitter's Search API page](https://dev.twitter.com/rest/public/search).
-
-
-Note that due to the Twitter Search API’s restriction, the data is supposed to be only for 7 days period, though it returns 10 days of the data in most cases.
-
-
-### Standard Search Operators
-
-From [Twitter's Search Tweets](https://developer.twitter.com/en/docs/tweets/search/guides/standard-operators). Please visit the page for more detail information. 
-
+Here's a list of the examples of how you can query tweets.
 
 | Operator	 | Finds Tweets... |
-| ---------- |:----------------| 
+| ---------- |:----------------|
 | watching now |	containing both “watching” and “now”. This is the default operator.|
 | “happy hour” |	containing the exact phrase “happy hour”. |
 | love OR hate |	containing either “love” or “hate” (or both). |
@@ -74,3 +59,9 @@ From [Twitter's Search Tweets](https://developer.twitter.com/en/docs/tweets/sear
 | flight :( |	containing “flight” and with a negative attitude. |
 | traffic ?	 | containing “traffic” and asking a question.|
 
+For more details, please visit [Twitter's Tweets Search page](https://developer.twitter.com/en/docs/tweets/search/guides/standard-operators).
+
+
+## 4. Preview and Import
+
+Click Preview button to see the data back from Twitter. If it looks ok, then you can click 'Import' to import the data into Exploratory.
