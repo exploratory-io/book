@@ -7,7 +7,7 @@
 
 * X-Axis - Assign a column you want to show at X-Axis. If it is a date / time column assigned, the axis will be automatically in time series. If it is a number based column, the axis will be for the continuous values. If it is a text based column, the axis will be for discrete values. 
 * Y-Axis - Assign a column you want to show at Y-Axis. The assigned column is handled in the same way as X-Axis.  
-* Z-Axis - Assign a column you want to show at Z-Axis. By assigning Z-Axis, the chart becomes 3D Scatter chart. The assigned column is handled in the same way as X-Axis. Note Z-Axis is disabled on Windows platform because 3D Scatter chart is currently not supported on Windows. 
+* Z-Axis - Assign a column you want to show at Z-Axis. By assigning Z-Axis, the chart becomes 3D Scatter chart. The assigned column is handled in the same way as X-Axis. Note that on Windows with some hardware and driver, 3D scatter chart may not work. In that case, you can install [DirectX 9 redistributable](http://www.microsoft.com/en-us/download/details.aspx?id=8109) to make it work. 
 ![](images/3d-scatter.png)
 * Size - Assign a column you want to apply the size on each circle. You can assign a number based column only. 
 * Color - Take a look at [Color](color.md) section for more details.
@@ -43,3 +43,4 @@ Following circle types are available.
 ## Layout Configuration
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
+
