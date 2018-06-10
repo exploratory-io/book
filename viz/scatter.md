@@ -44,3 +44,6 @@ Following circle types are available.
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
 
+## Note about 3D Scatter on Windows
+
+On Windows with some hardware and driver, 3D scatter chart may not work. In that case, you can install [DirectX 9 redistributable](http://www.microsoft.com/en-us/download/details.aspx?id=8109) to make it work. 
