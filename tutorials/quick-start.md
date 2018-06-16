@@ -324,13 +324,13 @@ This will automatically pick up 'Longitude' and 'Latitude' columns and show all 
 
 ![](images/quick-start-107.png)
 
-You can assign 'Name' column to label, which will make the values of this column show up at the right hand side top of the chart when you move your mouse over on any circle.
+You can assign 'City' column to label, which will make the values of this column show up at the right hand side top of the chart when you move your mouse over on any circle.
 
 ![](images/quick-start-108.png)
 
 You can use mouse, track pad, or the buttons at the left hand side top of the map to zoom in or pan.
 
-You can change the background style from 'Layout Configuration' menu.
+You can change the background style from 'Property' menu.
 
 ![](images/quick-start-108_1.png)
 
