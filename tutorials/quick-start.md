@@ -353,7 +353,7 @@ Select Pivot Table, and assign 'state' column to Row and 'day_of_week' column to
 Notice that the column values are sorted as 'Sun', 'Mon', 'Tue', etc. by respecting the natural order of days of the week. This is because, as you have seen previously, 'day_of_week' column is 'factor' data type and has the sorting order information embedded in, and  Pivot table and other chart types respect the sorting order information when sorting the data.
 
 
-You can use Color to visualize the data. Select 'All' from the dropdown.
+You can use Color to visualize the data. Select 'All (Down then Across)' from the dropdown.
 
 ![](images/quick-start-28.png)
 
