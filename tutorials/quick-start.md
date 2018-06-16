@@ -682,14 +682,13 @@ If you are familiar with R programming language, then you can write R script wit
 
 Example ggplot2 code:
 
-```
-
+````
+```{r echo=FALSE, cache=TRUE}
 suppressPackageStartupMessages(library(ggplot2))
 ggplot(airline_delay_2016_09, aes(FL_NUM, color = CARRIER_NAME)) +
   geom_density()
-
-
 ```
+````
 
 You can click on Run button at the top to execute the R code and generate the output.
 
