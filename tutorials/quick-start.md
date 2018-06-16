@@ -152,11 +152,11 @@ Lastly, you would also notice that there is a new step called 'Mutate' being add
 This is the exact R command that actually runs behind the scene. As you perform more data wrangling operations, you will see more 'Steps' added here.
 
 
-### Extract 'Day Name' from Date
+### Extract 'Day of Week Name' from Date
 
 Let's do one more operation within the same 'Mutate' step.
 
-Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day Name (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day Name (e.g Mon)' from the column header menu.
+Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day of Week Name (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day of Week Name (e.g Mon)' from the column header menu.
 
 ![](images/quick-start-14.png)
 
