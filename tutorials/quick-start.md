@@ -471,7 +471,7 @@ Now, click on 'Filter' step right before 'Top N / Bottom N' step at the right ha
 
 Notice that the chart is still showing the result of 'Top N', not the result of this 'Filter' step.
 
-Select 'Group By' from 'Add' button menu.
+Select 'Group By' from 'Plus (+)' button menu.
 
 ![](images/quick-start-50.png)
 
