@@ -543,37 +543,37 @@ Y軸のプロパティメニューから「トレンドライン」を選択し�
 
 まず、アナリティクスタブをクリックし、そしてアナリティクスタイプのプルダウンリストから「変数重要度」を選びます。
 
-![](images/quick-start-analytics-variable-importance-1.png)
+![](images/quick-start-analytics-variable-importance-1-ja.png)
 
-次に予測対象の列で'CARRIER'をリストから選びます。
+次に目的変数の列で'CARRIER'をリストから選びます。
 
-![](images/quick-start-analytics-variable-importance-2.png)
+![](images/quick-start-analytics-variable-importance-2-ja.png)
 
-「予測対象の列」をクリックし、そして列選択のダイアログで「全て」をチェックします。 右の方にスクロールし、'CANCELLATION_CODE'のチェックを外します。これはこのCANCELLATION_CODE列の値の多くが欠損値だからです。
+「予測変数」をクリックし、そして列選択のダイアログで「全て」をチェックします。 右の方にスクロールし、'CANCELLATION_CODE'のチェックを外します。これはこのCANCELLATION_CODE列の値の多くが欠損値だからです。
 
-![](images/quick-start-analytics-variable-importance-3.png)
+![](images/quick-start-analytics-variable-importance-3-ja.png)
 
 そして「実行」ボタンをクリックします。
 
-![](images/quick-start-analytics-variable-importance-4.png)
+![](images/quick-start-analytics-variable-importance-4-ja.png)
 
 この結果を見ると、FL_NUMとDISTANCEが、航空会社を特徴付ける(または予測するのに)役に立つ上位２つの変数であることが分かりました。
 
-![](images/quick-start-analytics-variable-importance-5.png)
+![](images/quick-start-analytics-variable-importance-5-ja.png)
 
-"Model Quality"のリンクをクリックすると、この２つの変数が「OO」と「EV」の航空会社をとてもよく説明していることが読み取れます。
+「分類ごとのサマリ」のリンクをクリックすると、この２つの変数が「EV」と「OO」の航空会社をとてもよく説明していることが読み取れます。
 
-![](images/quick-start-analytics-variable-importance-6.png)
+![](images/quick-start-analytics-variable-importance-6-ja.png)
 
-そして、"Prediction Matrix"をクリックすると, 航空会社が別であるのにも関わらず(例えばDL)、EVと誤って予測してしまう確率はかなり低いことが分かります。また同じことが「OO」という航空会社についても言えます。
+そして、「分類表」をクリックすると, 航空会社が別であるのにも関わらず(例えばDL)、EVと誤って予測してしまう確率はかなり低いことが分かります。また同じことが「OO」という航空会社についても言えます。
 
-![](images/quick-start-analytics-variable-importance-7.png)
+![](images/quick-start-analytics-variable-importance-7-ja.png)
 
 さて、この結果を確認するために、Vizビューに移動します。そしてCARRIERをX軸に、FL_NUM列をY軸に割り当てて、箱ひげ図を作ります。すると以下のようなチャートができます。
 
-![](images/quick-start-analytics-variable-importance-8.png)
+![](images/quick-start-analytics-variable-importance-8-ja.png)
 
-このチャートを見ると、EVとOOという航空会社のデータの範囲は他の航空会社のものよりもはるかに上の方にあることが分かります。このことは、先ほど変数重要度の"Model quality"と"Prediction Matrix"で確認した結果と合致します。
+このチャートを見ると、EVとOOという航空会社のデータの範囲は他の航空会社のものよりもはるかに上の方にあることが分かります。このことは、先ほど変数重要度の「分類ごとのサマリ」と「分類表」で確認した結果と合致します。
 
 ここで学んだように、機械学習と統計のアルゴリズムを使うことで、こうしたパターンやトレンドを簡単に素早く知ることができます。
 
@@ -601,15 +601,15 @@ Y軸のプロパティメニューから「トレンドライン」を選択し�
 
 リンクをクリックすると、「シェア」ダイアログが開いた状態で公開されたページに移動します。
 
-![](images/quick-start-77.png)
+![](images/quick-start-77-ja.png)
 
 「有効にする」リンクをクリックすると、この一意に生成されたURLを持つ誰でもこのチャートページを開くことができるようになります。パブリックとして公開して共有している場合は、この一意のURLを有効にすることなく、ページのURLをコピーして他のユーザーと共有することができます。
 
-![](images/quick-start-78.png)
+![](images/quick-start-78-ja.png)
 
 公開されたチャートページで、あなた、または共有された他のユーザーは、「ダウンロード」ボタンをクリックし「EDFをダウンロード」を選択すると、再現可能な形式でチャートをダウンロードできます。
 
-![](images/quick-start-79.png)
+![](images/quick-start-79-ja.png)
 
 これは、他のユーザーがダウンロードされたEDFファイルをExploratoryにインポートすることができ、チャートだけでなく、チャートデータを生成するためのすべてのデータ・ラングリングの手順も見ることができることを意味します。
 
