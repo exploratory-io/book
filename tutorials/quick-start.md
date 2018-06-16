@@ -556,11 +556,11 @@ First, click Analytics Tab and select 'Variable Importance' from Analytics Type 
 
 ![](images/quick-start-analytics-variable-importance-1.png)
 
-Then select 'CARRIER' for 'What to Predict' pulldown list.
+Then select 'CARRIER' for 'Target Variable' pulldown list.
 
 ![](images/quick-start-analytics-variable-importance-2.png)
 
-Click 'Variable Columns', and it will open up Column Selection Dialog. Click 'All' check box then scroll to the right and exclude 'CANCELLATION_CODE' since most of the value in CANCELLATION_CODE column is NA.
+Click 'Predictor Columns', and it will open up Column Selection Dialog. Click 'All' check box then scroll to the right and exclude 'CANCELLATION_CODE' since most of the value in CANCELLATION_CODE column is NA. Once you uncheck the CANCELLATION_CODE column, 'All' checkbox is automatically off.
 
 ![](images/quick-start-analytics-variable-importance-3.png)
 
@@ -572,11 +572,11 @@ Now we know that FL_NUM and DISTANCE are the top two useful variables to charact
 
 ![](images/quick-start-analytics-variable-importance-5.png)
 
-If you click "Model Quality" link, you can see these variables predict carrier OO and EV very well.  
+If you click "Summary by Class" link, you can see these variables predict carrier EV and OO very well.  
 
 ![](images/quick-start-analytics-variable-importance-6.png)
 
-And if you click "Prediction Matrix", you can see the chances of making errors such as predicting a carrier as EV where the actual carrier is something else (like DL) is really low. And the same applies to carrier OO.   
+And if you click "Classification Table", you can see the chances of making errors such as predicting a carrier as EV where the actual carrier is something else (like DL) is really low. And the same applies to carrier OO.   
 
 ![](images/quick-start-analytics-variable-importance-7.png)
 
