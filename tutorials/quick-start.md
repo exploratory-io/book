@@ -257,7 +257,7 @@ Anyway, let's go to the above linked page and download the EDF file.
 
 ![](images/quick-start-join2.png)
 
-Then, import the EDF file into Exploratory. You can select 'Import File Data' from 'Add Data Frame' dropdown list.
+Then, import the EDF file into Exploratory. You can select 'File Data' from 'Add Data Frame' dropdown list.
 
 ![](images/quick-start-join3.png)
 
