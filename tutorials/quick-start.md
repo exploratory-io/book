@@ -152,11 +152,11 @@ Lastly, you would also notice that there is a new step called 'Mutate' being add
 This is the exact R command that actually runs behind the scene. As you perform more data wrangling operations, you will see more 'Steps' added here.
 
 
-### Extract 'Day Name' from Date
+### Extract 'Day of Week Name' from Date
 
 Let's do one more operation within the same 'Mutate' step.
 
-Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day Name (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day Name (e.g Mon)' from the column header menu.
+Now that FL_DATE column is 'Date' data type, we can extract date component information like 'Day of Week Name (e.g. Sun, Mon, etc.)'. You can select 'Extract' -> 'Day of Week Name (e.g Mon)' from the column header menu.
 
 ![](images/quick-start-14.png)
 
@@ -257,7 +257,7 @@ Anyway, let's go to the above linked page and download the EDF file.
 
 ![](images/quick-start-join2.png)
 
-Then, import the EDF file into Exploratory. You can select 'Import File Data' from 'Add Data Frame' dropdown list.
+Then, import the EDF file into Exploratory. You can select 'File Data' from 'Add Data Frame' dropdown list.
 
 ![](images/quick-start-join3.png)
 
@@ -324,13 +324,13 @@ This will automatically pick up 'Longitude' and 'Latitude' columns and show all 
 
 ![](images/quick-start-107.png)
 
-You can assign 'Name' column to label, which will make the values of this column show up at the right hand side top of the chart when you move your mouse over on any circle.
+You can assign 'City' column to label, which will make the values of this column show up at the right hand side top of the chart when you move your mouse over on any circle.
 
 ![](images/quick-start-108.png)
 
 You can use mouse, track pad, or the buttons at the left hand side top of the map to zoom in or pan.
 
-You can change the background style from 'Layout Configuration' menu.
+You can change the background style from 'Property' menu.
 
 ![](images/quick-start-108_1.png)
 
