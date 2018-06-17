@@ -40,7 +40,7 @@ To use Google BigQuery with Exploratory Desktop, you need to create a project on
 
 - Click 'Google BigQuery'
 
-![](images/import-db-sources.png)
+![](images/import-db-sources-big-query.png)
 
 ## 3. Authentication with Google OAuth
 
@@ -64,25 +64,6 @@ Select an account you want to use for your Google BigQuery and click 'Allow' but
 
 ![](images/google-big-query-preview.png)
 
-### 4.2 Save query result as a new table on Google BigQuery
-
-If your query is against huge table, it’s probably a good idea to create a a new table containing just the data you want to use for further analysis to minimize the cost. To do this, after getting preview data click Save As Table button.
-
-![](images/google-big-query-saveas-dialog.png)
-
-- Select Project from pulldown menu
-- Select Dataset from pulldown menu
-- Type new table name
-- Click Save button
-
-Exploratory Desktop checks list of tables after you saved a table and once check is done, you can see newly created table on the tree
-
-![](images/google-big-query-tree-refresh-after.png)
-
-Once new table is created, you can query against the table.
-
-![](images/google-big-query-after-saveas.png)
-
 
 ## 5. Standard SQL
 
@@ -101,6 +82,22 @@ Standard SQL has several advantages over legacy SQL, including:
 * COUNT(DISTINCT \<expr\>) is exact and scalable, providing the accuracy of EXACT_COUNT_DISTINCT without its limitations
 * Automatic predicate push-down through JOINs
 * Complex JOIN predicates, including arbitrary expressions
+
+### 5.1 Composability using WITH clauses and SQL functions
+
+Now you can use `WITH` clause which enables extraction or reuse of named subqueries. For example:
+
+```sql
+WITH SUBQ AS (
+  SELECT score FROM UNNEST([50, 60, 40, 50]) AS score
+)
+SELECT score / (SELECT SUM(score) FROM SUBQ) AS weighted_score
+FROM SUBQ;
+```
+
+![](images/google-big-query-with.png)
+
+
 
 For Migration from legacy SQL, Please refer [Migrating to Standard SQL](https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql)
 
