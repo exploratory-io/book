@@ -84,7 +84,27 @@ Once new table is created, you can query against the table.
 ![](images/google-big-query-after-saveas.png)
 
 
-## 5. Import
+## 5. Standard SQL
+
+You can now use Standard SQL by clicking "Standard SQL Mode" checkbox. 
+
+![](images/google-big-query-standard-sql.png)
+
+BigQuery standard SQL is compliant with the SQL 2011 standard and has extensions that support querying nested and repeated data.
+
+Standard SQL has several advantages over legacy SQL, including:
+
+* Composability using WITH clauses and SQL functions
+* Subqueries in the SELECT list and WHERE clause
+* Correlated subqueries
+* ARRAY and STRUCT data types
+* COUNT(DISTINCT \<expr\>) is exact and scalable, providing the accuracy of EXACT_COUNT_DISTINCT without its limitations
+* Automatic predicate push-down through JOINs
+* Complex JOIN predicates, including arbitrary expressions
+
+For Migration from legacy SQL, Please refer [Migrating to Standard SQL](https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql)
+
+## 6. Import
 
 Click 'Import' button
 
