@@ -83,6 +83,22 @@ Standard SQL has several advantages over legacy SQL, including:
 * Automatic predicate push-down through JOINs
 * Complex JOIN predicates, including arbitrary expressions
 
+### 5.1 Composability using WITH clauses and SQL functions
+
+Now you can use `WITH` clause which enables extraction or reuse of named subqueries. For example:
+
+```sql
+WITH SUBQ AS (
+  SELECT score FROM UNNEST([50, 60, 40, 50]) AS score
+)
+SELECT score / (SELECT SUM(score) FROM SUBQ) AS weighted_score
+FROM SUBQ;
+```
+
+![](images/google-big-query-with.png)
+
+
+
 For Migration from legacy SQL, Please refer [Migrating to Standard SQL](https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql)
 
 ## 6. Import
