@@ -7,7 +7,7 @@ Released on 6/23/2018
 ### Enhancements
 
 #### Data Source
-- Support event related dimensions/segments for Google Analytics
+- Support event related dimensions and measures for Google Analytics
 
 
 ### Bug Fix
