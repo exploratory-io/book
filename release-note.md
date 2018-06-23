@@ -9,16 +9,18 @@ Released on 6/23/2018
 #### Data Source
 - Support event related dimensions and measures for Google Analytics
 
+#### Chart
+- Expose a property for the max number of cells
 
 ### Bug Fix
 
 #### Chart
-- Chart: Spin icon stays forever after clicking show detail 
-- Pivot: Expose a property for the max number of cells
-- Viz and Analytics Tab disappears after drag and drop
+- Spin icon stays forever after clicking show detail
+- Tab disappears after drag and drop
 
 #### Analytics View
 - Analytics Tab order switches unexpectedly
+- Tab disappears after drag and drop
 
 #### Data Source
 - Database Data Source Icons are disabled when offline.
@@ -26,8 +28,8 @@ Released on 6/23/2018
 #### Data Wrangling
 
 - Aggregate function list should align with that of Viz 
-- Clean Names: resulting column names change for the existing rename steps.
-- Windows: Cannot create a Select step for Japanese column name
+- Clean Names create different cleaned column names from previous verison.
+- Cannot create a Select step for Japanese column name on Windows.
 
 ## v4.4.0.1
 
@@ -36,7 +38,7 @@ Released on 6/19/2018
 ### Bug Fix
 
 #### Communication/Reporting
-- Document broken when you re-order viz/analytics Tabs.
+- Document is broken after you re-order chart/analytics Tabs.
 
 ## v4.4.0.0
 
@@ -56,7 +58,7 @@ Released on 6/12/2018
 #### Chart
 - Support Tab drag and drop re-order.
 - Support auto margin.
-- Chart: Add option for chart export image size.
+- Support option for chart export image size.
 - Show NA value in gray color on Number.
 - Support  % Format for Single Value.
 - Support Columns Selection for Table.
@@ -64,11 +66,10 @@ Released on 6/12/2018
 - Support "Other Group" for Repeat By.
 - Support "Other Group" for Color
 
-
 #### Analytics View
 - Support Tab drag and drop re-order.
-- AB test update
-- Chi-square Test pivot table update
+- AB test update.
+- Chi-square Test pivot table update.
 - Add "Normalize Measures" option to Distance by Category.
 - Time series forecasting analytics view enhancements.
 
@@ -81,7 +82,7 @@ Released on 6/12/2018
 - Allow schedule of Custom R Script data source.
 
 #### Data Wrangling
-- Table view pagination support.
+- Support pagination for Table view.
 - Suggest windows specific locale values on syntax prediction on windows.
 - Support "% of ..." column menu.
 - Support separate/separate_rows by @.
