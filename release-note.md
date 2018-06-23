@@ -7,28 +7,28 @@ Released on 6/22/2018
 ### Enhancements
 
 #### Data Source
-- Support event related dimensions and measures for Google Analytics
+- Support event related dimensions and measures for Google Analytics.
 
 #### Chart
-- Expose a property for the max number of cells
+- Expose a property for the max number of cells.
 
 ### Bug Fix
 
 #### Chart
-- Spin icon stays forever after clicking show detail
-- Tab disappears after drag and drop
+- Spin icon stays forever after clicking show detail.
+- Tab disappears after drag and drop.
 
 #### Analytics View
-- Analytics Tab order switches unexpectedly
-- Tab disappears after drag and drop
+- Analytics Tab order switches unexpectedly.
+- Tab disappears after drag and drop.
 
 #### Data Source
 - Database Data Source Icons are disabled when offline.
 
 #### Data Wrangling
 
-- Aggregate function list should align with that of Viz 
-- Clean Names create different cleaned column names from previous verison.
+- Aggregate function list should align with that of Viz. 
+- Clean Names create different cleaned column names from previous version.
 - Cannot create a Select step for Japanese column name on Windows.
 
 ## v4.4.0.1
@@ -38,7 +38,7 @@ Released on 6/19/2018
 ### Bug Fix
 
 #### Communication/Reporting
-- Document is broken after you re-order chart/analytics Tabs.
+- Document is broken after re-ordering chart/analytics Tabs on Viz/Analytics views.
 
 ## v4.4.0.0
 
@@ -56,22 +56,22 @@ Released on 6/12/2018
 - Support opening Markdown Editor/Viewer in a new window.
 
 #### Chart
-- Support Tab drag and drop re-order.
+- Support Tab re-order by drag and drop.
 - Support auto margin.
 - Support option for chart export image size.
 - Show NA value in gray color on Number.
 - Support  % Format for Single Value.
 - Support Columns Selection for Table.
-- Support Adding charts from summary view.
+- Support creating charts from Summary View.
 - Support "Other Group" for Repeat By.
 - Support "Other Group" for Color
 
 #### Analytics View
-- Support Tab drag and drop re-order.
-- AB test update.
-- Chi-square Test pivot table update.
+- Support Tab re-order by drag and drop.
+- AB test inputs fields are aligned with Chi-square test.
+- Chi-square Test pivot table shows values in percentage.
 - Add "Normalize Measures" option to Distance by Category.
-- Time series forecasting analytics view enhancements.
+- Time series forecasting analytics view supports sub-daily time units, displays change points and their slope changes on Trend view, and test mode.
 
 #### Data Source
 - Twitter Data Source shows more query results and include/exclude retweets parameter is added.
