@@ -76,7 +76,7 @@ Released on 6/12/2018
 #### Data Source
 - Twitter Data Source shows more query results and include/exclude retweets parameter is added.
 - Support all 20 goals for Google Analytics.
-- Support executing Google BigQuery query without needing a data set.
+- Support executing Google BigQuery query without needing a data set and introduce "Standard SQL Mode" parameter on Import Dialog.
 - Support CSV data export encoding as part of User Configuration.
 - Support Mongo js query evaluation in R.
 - Allow schedule of Custom R Script data source.
@@ -429,7 +429,7 @@ Released on 1/3/2018
 - Regression Analysis: Added "Fix Imbalanced Data" option to Logistic Regression. It balances data with majority class and minority class with SMOTE algorithm, for better binary classification result.
 - Regression Analysis: Made sample size adjustable
 - Anomaly Detection: Added support for more aggregation functions such as number of unique values within each time period.
-- Anomaly Detection: Added "Anomaly with Expected" view, where extected values are shown alongside the anomalies.
+- Anomaly Detection: Added "Anomaly with Expected" view, where expected values are shown alongside the anomalies.
 - Time Series Forecast Analytics View: Added support for more aggregation functions such as number of unique values within each time period.
 - Overall robustness improvement on all Analytics Views.
 
