@@ -2,7 +2,7 @@
 
 ## v4.4.0.2
 
-Released on 6/23/2018
+Released on 6/22/2018
 
 ### Enhancements
 
