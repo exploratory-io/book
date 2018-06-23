@@ -62,7 +62,8 @@ Released on 6/12/2018
 - Show NA value in gray color on Number.
 - Support  % Format for Single Value.
 - Support Columns Selection for Table.
-- Support creating charts from Summary View.
+- Support One Click Chart Creation from Summary View.
+- Support One Click Chart Insert to Dashboard.
 - Support "Other Group" for Repeat By.
 - Support "Other Group" for Color
 
