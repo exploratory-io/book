@@ -1,5 +1,147 @@
 # Release Note
 
+## v4.4.0.2
+
+Released on 6/23/2018
+
+### Enhancements
+
+#### Data Source
+- Support event related dimensions/segments for Google Analytics
+
+
+### Bug Fix
+
+#### Chart
+- Chart: Spin icon stays forever after clicking show detail 
+- Pivot: Expose a property for the max number of cells
+- Viz and Analytics Tab disappears after drag and drop
+
+#### Analytics View
+- Analytics Tab order switches unexpectedly
+
+#### Data Source
+- Database Data Source Icons are disabled when offline.
+
+#### Data Wrangling
+
+- Aggregate function list should align with that of Viz 
+- Clean Names: resulting column names change for the existing rename steps.
+- Windows: Cannot create a Select step for Japanese column name
+
+## v4.4.0.1
+
+Released on 6/19/2018
+
+### Bug Fix
+
+#### Communication/Reporting
+- Document broken when you re-order viz/analytics Tabs.
+
+## v4.4.0.0
+
+Released on 6/12/2018
+
+### Enhancements
+
+#### Communication/Reporting
+- Keep the width/height ratio when width is set to full.
+- Dashboard: Need to change the path to something more meaningful rather than index id.
+- Dashboard: Single Value should use a display name for caption.
+- Support human readable object id.
+- Support Text wrap in the table.
+- Support Note EDF export and import.
+- Support opening Markdown Editor/Viewer in a new window.
+
+#### Chart
+- Support Tab drag and drop re-order.
+- Support auto margin.
+- Chart: Add option for chart export image size.
+- Show NA value in gray color on Number.
+- Support  % Format for Single Value.
+- Support Columns Selection for Table.
+- Support Adding charts from summary view.
+- Support "Other Group" for Repeat By.
+- Support "Other Group" for Color
+
+
+#### Analytics View
+- Support Tab drag and drop re-order.
+- AB test update
+- Chi-square Test pivot table update
+- Add "Normalize Measures" option to Distance by Category.
+- Time series forecasting analytics view enhancements.
+
+#### Data Source
+- Twitter Data Source shows more query results and include/exclude retweets parameter is added.
+- Support all 20 goals for Google Analytics.
+- Support executing Google BigQuery query without needing a data set.
+- Support CSV data export encoding as part of User Configuration.
+- Support Mongo js query evaluation in R.
+- Allow schedule of Custom R Script data source.
+
+#### Data Wrangling
+- Table view pagination support.
+- Suggest windows specific locale values on syntax prediction on windows.
+- Support "% of ..." column menu.
+- Support separate/separate_rows by @.
+- Support option to save resulting column as factor on Create Bin Dialog.
+- Update clean_names and add remove_empty from the latest janitor package.
+- Support showing column/groups with color for Group-by step on Summary View and Table View.
+
+#### Others
+- R 3.5 support on Mac first installment
+
+### Bug Fix
+
+#### Communication/Reporting
+- Number: style corrupted in a mobile view.
+- Right hand side preview content is not refreshed when opening a different note.
+- Republish note creates a duplicate entry on the server side.
+- Note Editor is scrolled down when screenshot is pasted.
+- Opening Document on new Window takes times.
+- Note Editor scroll position is reset after refreshing the preview 
+
+#### Chart
+- Move to another data frame and opening Viz under more shows wrong pin step.
+- Setting constant reference line on y2 axis with bar marker in line chart gives error.
+- Line Y axis range doesn't work if the y column is logical.
+- Z-axis misses the axis scale property.
+- Scatter repeats the same data if categorical on y axis.
+- Line chart doesn't render correctly with Month Name on x.
+- Cumulative sum shows incorrect in stack bar chart.
+- There is no way to know the column names when they are long.
+- Histogram: Need a better handling for Hours/Minutes/Days.
+- # of TRUE should be the default function for Logical Data Type.
+- Table should show true/false in uppercase.
+- TypeError: Cannot read property 'isNumeric' of null is raised.
+- fct_lump fails if numeric column with numeric data types specified.
+- Map Install takes forever on windows.
+- Bar errors out if you switch it from geojson.
+- Histogram errors out because of the invalid validation.
+- Pivot errors out with multi measure and within group color by option
+- Repeatby order is incorrect 
+
+#### Analytics View
+- Move edarf out of preprocessor to make exported result in sync with what is displayed
+- Analytics data cache miss at data export.
+- Saving Thumbnail shows where it shouldn't show.
+
+
+#### Data Source
+- Updating Data Source executes redundant query.
+- Show more detailed error message on connection dialog.
+- PostgreSQL: List data cannot be imported
+
+
+#### Data Wrangling
+- Handle sequence of backslashes in making json response from Rserve safe to parse.
+- Object validation is missing when you rename a data frame.
+- On K-means dialog non-numeric columns is not disabled
+- On Mutate Dialog, Function List position is incorrect.
+
+#### Others
+
 ## v 4.3.0.2 (Windows Only)
 
 Released on 4/18/2018
