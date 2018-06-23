@@ -89,6 +89,7 @@ Released on 6/12/2018
 - Support option to save resulting column as factor on Create Bin Dialog.
 - Update clean_names and add remove_empty from the latest janitor package.
 - Support showing column/groups with color for Group-by step on Summary View and Table View.
+- Introduce a plus button on Table Header for Table View and a new column can be added to the summarize step by clicking the button.
 
 #### Others
 - R 3.5 support on Mac first installment
