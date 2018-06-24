@@ -38,7 +38,7 @@ Released on 6/19/2018
 ### Bug Fix
 
 #### Communication/Reporting
-- Document is broken after re-ordering chart/analytics Tabs on Viz/Analytics views.
+- Document was broken after re-ordering chart/analytics Tabs on Viz/Analytics views.
 
 ## v4.4.0.0
 
@@ -47,27 +47,28 @@ Released on 6/12/2018
 ### Enhancements
 
 #### Communication/Reporting
-- Keep the width/height ratio when width is set to full.
-- Dashboard: Number should use a display name for a caption.
-- Support human readable path.
-- Support text wrap in the table.
+- Width/height ratio is kept when width is set to full.
+- Dashboard: Path shows more meaningful text rather than index id.
+- Dashboard: Single Value uses a display name for caption.
+- Support human readable object id.
+- Support Text wrap in the table.
 - Support Note EDF export and import.
 - Support opening Markdown Editor/Viewer in a new window.
 
 #### Chart
-- Support tab re-order by drag and drop.
+- Support Tab re-order by drag and drop.
 - Support auto margin.
 - Support option for chart export image size.
 - Show NA value in gray color on Number.
 - Support  % format for Number.
 - Support columns selection in Table.
-- Support one click chart creation from Summary View.
-- Support one click chart insert to Dashboard.
+- Support One Click Chart Creation from Summary View.
+- Support One Click Chart Insert to Dashboard.
 - Support "Other Group" for Repeat By.
 - Support "Other Group" for Color
 
 #### Analytics View
-- Support tab re-order by drag and drop.
+- Support Tab re-order by drag and drop.
 - AB test inputs fields are aligned with Chi-square test.
 - Chi-square Test pivot table shows values in percentage.
 - Add "Normalize Measures" option to Distance by Category.
@@ -83,7 +84,7 @@ Released on 6/12/2018
 
 #### Data Wrangling
 - Support pagination in Table view.
-- Suggest Windows specific locale values on syntax prediction on Windows.
+- Suggest windows specific locale values on syntax prediction on windows.
 - Support "% of ..." column menu.
 - Support separate/separate_rows by @.
 - Support an option to save resulting columns as factor columns on Create Bin Dialog.
@@ -97,31 +98,32 @@ Released on 6/12/2018
 ### Bug Fix
 
 #### Communication/Reporting
-- Right hand side preview content is not refreshed when opening a different note.
-- Republish note creates a duplicate entry on the server side.
-- Note Editor is scrolled down when screenshot is pasted.
-- Note Editor scroll position is reset after refreshing the preview.
+- Number: style was corrupted in a mobile view.
+- Right hand side preview content was not refreshed when opening a different note.
+- Republish note created a duplicate entry on the server side.
+- Note Editor was scrolled down when screenshot is pasted.
+- Opening Document on new Window took times.
+- Note Editor scroll position was reset after refreshing the preview 
 
 #### Chart
-- Number: style corrupted in a mobile view.
-- Move to another data frame and opening Viz under more shows wrong pin step.
-- Setting constant reference line on y2 axis with bar marker in line chart gives error.
-- Line Y axis range doesn't work if the y column is logical.
-- Z-axis misses the axis scale property.
-- Scatter repeats the same data if categorical on y axis.
-- Line chart doesn't render correctly with Month Name on x.
-- Cumulative sum shows incorrect in stack bar chart.
-- Chart Control: There is no way to know the column names when they are long.
+- Move to another data frame and opening Viz under more showed wrong pin step.
+- Setting constant reference line on y2 axis with bar marker in line chart gave error.
+- Line Y axis range didn't work if the y column is logical.
+- Z-axis missed the axis scale property.
+- Scatter repeated the same data if categorical on y axis.
+- Line chart didn't render correctly with Month Name on x.
+- Cumulative sum was incorrectly shown in stack bar chart.
+- There was no way to know the column names when they are long.
 - Histogram: Need a better handling for Hours/Minutes/Days.
-- # of TRUE should be the default function for a column with a logical data type.
-- Table should show true/false in uppercase.
-- TypeError: Cannot read property 'isNumeric' of null is raised.
-- Create Other Group fails if a numeric column with a numeric data type.
-- Map Install takes forever on Windows.
-- Bar errors out if you switch it from geojson.
-- Histogram errors out because of the invalid validation.
-- Pivot errors out with multi measure and within group color by option.
-- Repeat By order is incorrect.
+- # of TRUE was not the default function for Logical Data Type.
+- Table didn't show true/false in uppercase.
+- TypeError: Cannot read property 'isNumeric' of null was raised.
+- fct_lump failed if numeric column with numeric data types specified.
+- Map Install took forever on windows.
+- Bar raised error if you switch it from Map - Area.
+- Histogram raised error because of the invalid validation.
+- Pivot raised error with multi measure and within group color by option
+- Repeat-by order was incorrect 
 
 #### Analytics View
 - Move edarf out of preprocessor to make exported result in sync with what is displayed.
@@ -130,16 +132,16 @@ Released on 6/12/2018
 
 
 #### Data Source
-- Updating data source executes redundant queries.
-- Show more detailed error message on Connection dialog.
-- PostgreSQL: List data cannot be imported.
+- Updating Data Source executed redundant query.
+- Detailed error message was not displayed on connection dialog.
+- PostgreSQL: List data could not be imported
 
 
 #### Data Wrangling
-- Handle sequence of backslashes in making json response from Rserve safe to parse.
-- Object validation is missing when you rename a data frame.
-- On K-means dialog, non-numeric columns is not disabled.
-- On Mutate Dialog, the function list position is incorrect.
+- Sequence of backslashes was not handled well when parsing result safely from RServe.
+- Object validation was missing when you rename a data frame.
+- On K-means dialog non-numeric columns were not disabled
+- On Mutate Dialog, Function List position was incorrect.
 
 #### Others
 
