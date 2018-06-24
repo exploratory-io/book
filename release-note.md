@@ -72,7 +72,9 @@ Released on 6/12/2018
 - AB test inputs fields are aligned with Chi-square test.
 - Chi-square Test pivot table shows values in percentage.
 - Add "Normalize Measures" option to Distance by Category.
-- Time Series Forecasting Analytics View supports sub-daily time units, displays change points and their slope changes on Trend view, and test mode.
+- Time Series Forecasting: Support sub-daily time units (hour, minute, and second).
+- Time Series Forecasting: Change points and their slope changes are displayed on Trend view.
+- Time Series Forecasting: Test Mode, where model performance is measured with test data, is added.
 
 #### Data Source
 - Twitter Data Source shows more query results and include/exclude retweets parameter is added.
@@ -93,7 +95,7 @@ Released on 6/12/2018
 - Introduce a plus button on Table Header for Table View and a new column can be added to the summarize step by clicking the button.
 
 #### Others
-- R 3.5 support on Mac first installment.
+- R 3.5 support.
 
 ### Bug Fix
 
@@ -126,10 +128,8 @@ Released on 6/12/2018
 - Repeat-by order was incorrect 
 
 #### Analytics View
-- Move edarf out of preprocessor to make exported result in sync with what is displayed.
-- Analytics data cache miss at data export.
-- Saving Thumbnail shows where it shouldn't show.
-
+- Exported data from Analytics View did not match with what was displayed in some cases.
+- "Saving Thumbnail" message shows up where it shouldn’t.
 
 #### Data Source
 - Updating Data Source executed redundant query.
