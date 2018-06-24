@@ -48,27 +48,26 @@ Released on 6/12/2018
 
 #### Communication/Reporting
 - Keep the width/height ratio when width is set to full.
-- Dashboard: Need to change the path to something more meaningful rather than index id.
-- Dashboard: Single Value should use a display name for caption.
-- Support human readable object id.
-- Support Text wrap in the table.
+- Dashboard: Number should use a display name for a caption.
+- Support human readable path.
+- Support text wrap in the table.
 - Support Note EDF export and import.
 - Support opening Markdown Editor/Viewer in a new window.
 
 #### Chart
-- Support Tab re-order by drag and drop.
+- Support tab re-order by drag and drop.
 - Support auto margin.
 - Support option for chart export image size.
 - Show NA value in gray color on Number.
-- Support  % Format for Single Value.
-- Support Columns Selection for Table.
-- Support One Click Chart Creation from Summary View.
-- Support One Click Chart Insert to Dashboard.
+- Support  % format for Number.
+- Support columns selection in Table.
+- Support one click chart creation from Summary View.
+- Support one click chart insert to Dashboard.
 - Support "Other Group" for Repeat By.
 - Support "Other Group" for Color
 
 #### Analytics View
-- Support Tab re-order by drag and drop.
+- Support tab re-order by drag and drop.
 - AB test inputs fields are aligned with Chi-square test.
 - Chi-square Test pivot table shows values in percentage.
 - Add "Normalize Measures" option to Distance by Category.
@@ -77,35 +76,34 @@ Released on 6/12/2018
 #### Data Source
 - Twitter Data Source shows more query results and include/exclude retweets parameter is added.
 - Support all 20 goals for Google Analytics.
-- Support executing Google BigQuery query without needing a data set and introduce "Standard SQL Mode" parameter on Import Dialog.
-- Support CSV data export encoding as part of User Configuration.
+- Support executing Google BigQuery query without needing a data set and introduce "Standard SQL Mode" parameter in Import Dialog.
+- Support CSV data export encoding as a part of the user configuration.
 - Support Mongo js query evaluation in R.
-- Allow schedule of Custom R Script data source.
+- Support scheduling chart/data/note with custom R script data source(s).
 
 #### Data Wrangling
-- Support pagination for Table view.
-- Suggest windows specific locale values on syntax prediction on windows.
+- Support pagination in Table view.
+- Suggest Windows specific locale values on syntax prediction on Windows.
 - Support "% of ..." column menu.
 - Support separate/separate_rows by @.
-- Support option to save resulting column as factor on Create Bin Dialog.
+- Support an option to save resulting columns as factor columns on Create Bin Dialog.
 - Update clean_names and add remove_empty from the latest janitor package.
 - Support showing column/groups with color for Group-by step on Summary View and Table View.
 - Introduce a plus button on Table Header for Table View and a new column can be added to the summarize step by clicking the button.
 
 #### Others
-- R 3.5 support on Mac first installment
+- R 3.5 support on Mac first installment.
 
 ### Bug Fix
 
 #### Communication/Reporting
-- Number: style corrupted in a mobile view.
 - Right hand side preview content is not refreshed when opening a different note.
 - Republish note creates a duplicate entry on the server side.
 - Note Editor is scrolled down when screenshot is pasted.
-- Opening Document on new Window takes times.
-- Note Editor scroll position is reset after refreshing the preview 
+- Note Editor scroll position is reset after refreshing the preview.
 
 #### Chart
+- Number: style corrupted in a mobile view.
 - Move to another data frame and opening Viz under more shows wrong pin step.
 - Setting constant reference line on y2 axis with bar marker in line chart gives error.
 - Line Y axis range doesn't work if the y column is logical.
@@ -113,35 +111,35 @@ Released on 6/12/2018
 - Scatter repeats the same data if categorical on y axis.
 - Line chart doesn't render correctly with Month Name on x.
 - Cumulative sum shows incorrect in stack bar chart.
-- There is no way to know the column names when they are long.
+- Chart Control: There is no way to know the column names when they are long.
 - Histogram: Need a better handling for Hours/Minutes/Days.
-- # of TRUE should be the default function for Logical Data Type.
+- # of TRUE should be the default function for a column with a logical data type.
 - Table should show true/false in uppercase.
 - TypeError: Cannot read property 'isNumeric' of null is raised.
-- fct_lump fails if numeric column with numeric data types specified.
-- Map Install takes forever on windows.
+- Create Other Group fails if a numeric column with a numeric data type.
+- Map Install takes forever on Windows.
 - Bar errors out if you switch it from geojson.
 - Histogram errors out because of the invalid validation.
-- Pivot errors out with multi measure and within group color by option
-- Repeatby order is incorrect 
+- Pivot errors out with multi measure and within group color by option.
+- Repeat By order is incorrect.
 
 #### Analytics View
-- Move edarf out of preprocessor to make exported result in sync with what is displayed
+- Move edarf out of preprocessor to make exported result in sync with what is displayed.
 - Analytics data cache miss at data export.
 - Saving Thumbnail shows where it shouldn't show.
 
 
 #### Data Source
-- Updating Data Source executes redundant query.
-- Show more detailed error message on connection dialog.
-- PostgreSQL: List data cannot be imported
+- Updating data source executes redundant queries.
+- Show more detailed error message on Connection dialog.
+- PostgreSQL: List data cannot be imported.
 
 
 #### Data Wrangling
 - Handle sequence of backslashes in making json response from Rserve safe to parse.
 - Object validation is missing when you rename a data frame.
-- On K-means dialog non-numeric columns is not disabled
-- On Mutate Dialog, Function List position is incorrect.
+- On K-means dialog, non-numeric columns is not disabled.
+- On Mutate Dialog, the function list position is incorrect.
 
 #### Others
 
