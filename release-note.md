@@ -15,21 +15,21 @@ Released on 6/22/2018
 ### Bug Fix
 
 #### Chart
-- Spin icon stays forever after clicking show detail.
-- Tab disappears after drag and drop.
+- Spin icon stayed forever after clicking show detail.
+- Tab disappeared after drag and drop.
 
 #### Analytics View
-- Analytics Tab order switches unexpectedly.
-- Tab disappears after drag and drop.
+- Analytics Tab order switched unexpectedly.
+- Tab disappeared after drag and drop.
 
 #### Data Source
-- Database Data Source Icons are disabled when offline.
+- Database Data Source Icons were disabled when offline.
 
 #### Data Wrangling
 
 - Aggregate function list should align with that of Viz. 
-- Clean Names create different cleaned column names from previous version.
-- Cannot create a Select step for Japanese column name on Windows.
+- Clean Names created different cleaned column names from previous versions.
+- Could not create a Select step for Japanese column name on Windows.
 
 ## v4.4.0.1
 
@@ -72,7 +72,7 @@ Released on 6/12/2018
 - AB test inputs fields are aligned with Chi-square test.
 - Chi-square Test pivot table shows values in percentage.
 - Add "Normalize Measures" option to Distance by Category.
-- Time series forecasting analytics view supports sub-daily time units, displays change points and their slope changes on Trend view, and test mode.
+- Time Series Forecasting Analytics View supports sub-daily time units, displays change points and their slope changes on Trend view, and test mode.
 
 #### Data Source
 - Twitter Data Source shows more query results and include/exclude retweets parameter is added.
