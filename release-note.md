@@ -117,7 +117,7 @@ Released on 6/12/2018
 - Cumulative sum was incorrectly shown in stack bar chart.
 - There was no way to know the column names when they are long.
 - Histogram: Need a better handling for Hours/Minutes/Days.
-- # of TRUE was not the default function for Logical Data Type.
+- Number of TRUE was not the default function for Logical Data Type.
 - Table didn't show true/false in uppercase.
 - TypeError: Cannot read property 'isNumeric' of null was raised.
 - fct_lump failed if numeric column with numeric data types specified.
