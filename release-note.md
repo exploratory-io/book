@@ -1,5 +1,150 @@
 # Release Note
 
+## v4.4.0.2
+
+Released on 6/22/2018
+
+### Enhancements
+
+#### Data Source
+- Support event related dimensions and measures for Google Analytics.
+
+#### Chart
+- Expose a property for the max number of cells.
+
+### Bug Fix
+
+#### Chart
+- Spin icon stayed forever after clicking show detail.
+- Tab disappeared after drag and drop.
+
+#### Analytics View
+- Analytics Tab order switched unexpectedly.
+- Tab disappeared after drag and drop.
+
+#### Data Source
+- Database Data Source Icons were disabled when offline.
+
+#### Data Wrangling
+
+- Aggregate function list should align with that of Viz. 
+- Clean Names created different cleaned column names from previous versions.
+- Could not create a Select step for Japanese column name on Windows.
+
+## v4.4.0.1
+
+Released on 6/19/2018
+
+### Bug Fix
+
+#### Communication/Reporting
+- Document was broken after re-ordering chart/analytics Tabs on Viz/Analytics views.
+
+## v4.4.0.0
+
+Released on 6/12/2018
+
+### Enhancements
+
+#### Communication/Reporting
+- Width/height ratio is kept when width is set to full.
+- Dashboard: Path shows more meaningful text rather than index id.
+- Dashboard: Single Value uses a display name for caption.
+- Support human readable object id.
+- Support Text wrap in the table.
+- Support Note EDF export and import.
+- Support opening Markdown Editor/Viewer in a new window.
+
+#### Chart
+- Support Tab re-order by drag and drop.
+- Support auto margin.
+- Support option for chart export image size.
+- Show NA value in gray color on Number.
+- Support  % format for Number.
+- Support columns selection in Table.
+- Support One Click Chart Creation from Summary View.
+- Support One Click Chart Insert to Dashboard.
+- Support "Other Group" for Repeat By.
+- Support "Other Group" for Color
+
+#### Analytics View
+- Support Tab re-order by drag and drop.
+- AB test inputs fields are aligned with Chi-square test.
+- Chi-square Test pivot table shows values in percentage.
+- Add "Normalize Measures" option to Distance by Category.
+- Time Series Forecasting: Support sub-daily time units (hour, minute, and second).
+- Time Series Forecasting: Change points and their slope changes are displayed on Trend view.
+- Time Series Forecasting: Test Mode, where model performance is measured with test data, is added.
+
+#### Data Source
+- Twitter Data Source shows more query results and include/exclude retweets parameter is added.
+- Support all 20 goals for Google Analytics.
+- Support executing Google BigQuery query without needing a data set and introduce "Standard SQL Mode" parameter in Import Dialog.
+- Support CSV data export encoding as a part of the user configuration.
+- Support Mongo js query evaluation in R.
+- Support scheduling chart/data/note with custom R script data source(s).
+
+#### Data Wrangling
+- Support pagination in Table view.
+- Suggest windows specific locale values on syntax prediction on windows.
+- Support "% of ..." column menu.
+- Support separate/separate_rows by @.
+- Support an option to save resulting columns as factor columns on Create Bin Dialog.
+- Update clean_names and add remove_empty from the latest janitor package.
+- Support showing column/groups with color for Group-by step on Summary View and Table View.
+- Introduce a plus button on Table Header for Table View and a new column can be added to the summarize step by clicking the button.
+
+#### Others
+- R 3.5 support.
+
+### Bug Fix
+
+#### Communication/Reporting
+- Number: style was corrupted in a mobile view.
+- Right hand side preview content was not refreshed when opening a different note.
+- Republish note created a duplicate entry on the server side.
+- Note Editor was scrolled down when screenshot is pasted.
+- Opening Document on new Window took times.
+- Note Editor scroll position was reset after refreshing the preview 
+
+#### Chart
+- Move to another data frame and opening Viz under more showed wrong pin step.
+- Setting constant reference line on y2 axis with bar marker in line chart gave error.
+- Line Y axis range didn't work if the y column is logical.
+- Z-axis missed the axis scale property.
+- Scatter repeated the same data if categorical on y axis.
+- Line chart didn't render correctly with Month Name on x.
+- Cumulative sum was incorrectly shown in stack bar chart.
+- There was no way to know the column names when they are long.
+- Histogram: Need a better handling for Hours/Minutes/Days.
+- # of TRUE was not the default function for Logical Data Type.
+- Table didn't show true/false in uppercase.
+- TypeError: Cannot read property 'isNumeric' of null was raised.
+- fct_lump failed if numeric column with numeric data types specified.
+- Map Install took forever on windows.
+- Bar raised error if you switch it from Map - Area.
+- Histogram raised error because of the invalid validation.
+- Pivot raised error with multi measure and within group color by option
+- Repeat-by order was incorrect 
+
+#### Analytics View
+- Exported data from Analytics View did not match with what was displayed in some cases.
+- "Saving Thumbnail" message shows up where it shouldn’t.
+
+#### Data Source
+- Updating Data Source executed redundant query.
+- Detailed error message was not displayed on connection dialog.
+- PostgreSQL: List data could not be imported
+
+
+#### Data Wrangling
+- Sequence of backslashes was not handled well when parsing result safely from RServe.
+- Object validation was missing when you rename a data frame.
+- On K-means dialog non-numeric columns were not disabled
+- On Mutate Dialog, Function List position was incorrect.
+
+#### Others
+
 ## v 4.3.0.2 (Windows Only)
 
 Released on 4/18/2018
@@ -286,7 +431,7 @@ Released on 1/3/2018
 - Regression Analysis: Added "Fix Imbalanced Data" option to Logistic Regression. It balances data with majority class and minority class with SMOTE algorithm, for better binary classification result.
 - Regression Analysis: Made sample size adjustable
 - Anomaly Detection: Added support for more aggregation functions such as number of unique values within each time period.
-- Anomaly Detection: Added "Anomaly with Expected" view, where extected values are shown alongside the anomalies.
+- Anomaly Detection: Added "Anomaly with Expected" view, where expected values are shown alongside the anomalies.
 - Time Series Forecast Analytics View: Added support for more aggregation functions such as number of unique values within each time period.
 - Overall robustness improvement on all Analytics Views.
 
