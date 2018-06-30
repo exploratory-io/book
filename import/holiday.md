@@ -1,6 +1,6 @@
 # Holiday Data Import
 
-Allows to get holiday calendar for New York Stock Exchange, bank holidays in London,  holiday calendar for NERC, the North American Reliability Council,a holiday calendar for the Toronto Stock Exchange, and  holiday calendar for Zurich.
+Allows to get holiday calendar for New York Stock Exchange, bank holidays in London, holiday calendar for NERC, the North American Reliability Council,a holiday calendar for the Toronto Stock Exchange, and holiday calendar for Zurich.
 
 
 ## 1. Parameters
