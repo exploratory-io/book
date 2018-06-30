@@ -8,7 +8,7 @@ Allows to get holiday calendar for New York Stock Exchange, bank holidays in Lon
 ### 1.1 Type
 
 
-You can select either of followings to get holiday calendar.
+You can select either of followings to get a holiday calendar.
 
 - New Yor Stock Exchange
 - London Bank Holiday
@@ -30,6 +30,11 @@ End year that you want to get holiday calendar
 
 Once you confirmed the query result, click `Import` button to import the data as a data frame in Exploratory.
 ![](images/holiday_import.png)
+
+## 3. Output
+
+* year - Year of the holiday in Integer Data Type.
+* date - Date of the holiday in Date Data Type.
 
 
 
