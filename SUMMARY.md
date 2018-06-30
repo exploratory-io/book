@@ -63,6 +63,7 @@
      * [Quandl](import/quandl.md)
      * [Weather Data](import/riem_measures.md)
      * [Holiday](import/holiday.md)
+     * [RSS Data](import/tidyrss.md)
    * [Create Custom Data Source](import/user-defined-plugin.md)
 
 
