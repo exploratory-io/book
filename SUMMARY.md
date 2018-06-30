@@ -61,6 +61,7 @@
    * [Data Source Extension](import/extensions.md)
      * [SPARQL](import/SPARQL.md)
      * [Quandl](import/quandl.md)
+     * [Historical Stock Prices Data](import/tidyquant.md)
      * [Weather Data](import/riem_measures.md)
      * [Holiday](import/holiday.md)
      * [RSS Data](import/tidyrss.md)
