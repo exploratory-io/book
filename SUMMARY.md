@@ -62,6 +62,7 @@
      * [SPARQL](import/SPARQL.md)
      * [Quandl](import/quandl.md)
      * [Weather Data](import/riem_measures.md)
+     * [Holiday](import/holiday.md)
    * [Create Custom Data Source](import/user-defined-plugin.md)
 
 
