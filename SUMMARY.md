@@ -43,7 +43,6 @@
       * [MongoDB](import/mongodb.md)
       * [PostgreSQL](import/postgresql.md)
       * [HP Vertica](import/hp-vertica.md)
-      * [Neo4j](import/neo4j.md)
       * [ODBC](import/odbc.md)
       * [Dremio](import/dremio.md)     
    * [Cloud Apps Data]()
