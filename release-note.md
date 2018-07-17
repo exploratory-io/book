@@ -1,5 +1,47 @@
 # Release Note
 
+## v4.4.0.3
+
+Released on 7/15/2018
+
+### Bug Fix
+
+#### Data Wrangling
+
+- Couldn't rename the data frame names to the ones that were used before.
+- We have moved 'Copy As New Data Frame' menu to under Export button. This used to be under the action menu of each step (right hand side).
+- Selecting Window Calculation menus from the column header men didn't populate the correct parameters when multiple columns were selected.
+- In Custom Command Input mode, various internal data frame names were suggested when typing a part of the data frame names.
+- do_tokenize function was throwing an error when giving a column with space.
+- 'Remove Empty Rows / Columns' menu was missing from the Plus button menu.
+
+#### Chart
+
+- Chart: Error Bar was showing an error out if only Y-Axis is assigned a column.
+
+#### Analytics
+
+- Adding new Analytics tabs made the tab order broken, which caused some of the tabs not accessible.
+- Analytics level Filter area was too small regardless of the currently available area size.
+- Prophet: range of x-axis of Yearly Seasonality was too short when the time unit was hour
+- Weekly Seasonality was wrongly disabled with sub-daily time unit like hour was used.
+
+
+#### Notes
+
+- Clicking on Refresh button was saving the changes when editing in the Separate Window with Side by Side mode.
+- Publishing Note is not generating the latest output after editing in the Separate Window with Side by Side mode.
+
+#### Dashboard  
+
+- Clicking 'Open Viz' button didn't open the corresponding Viz.
+- Clicking on Re-import Data button broke the underlying data frames when the source data files were not accessible.
+- Wrong Dashboard names were showing up in the projects.
+- Dashboard Editor becomes disabled even after closing the Separate Window
+- Title text didn't change when switching to another Dashboard.
+
+
+
 ## v4.4.0.2
 
 Released on 6/22/2018
@@ -27,7 +69,7 @@ Released on 6/22/2018
 
 #### Data Wrangling
 
-- Aggregate function list should align with that of Viz. 
+- Aggregate function list should align with that of Viz.
 - Clean Names created different cleaned column names from previous versions.
 - Could not create a Select step for Japanese column name on Windows.
 
@@ -37,7 +79,8 @@ Released on 6/19/2018
 
 ### Bug Fix
 
-#### Communication/Reporting
+#### Dashboard/Notes/Slides
+
 - Document was broken after re-ordering chart/analytics Tabs on Viz/Analytics views.
 
 ## v4.4.0.0
@@ -46,7 +89,8 @@ Released on 6/12/2018
 
 ### Enhancements
 
-#### Communication/Reporting
+#### Dashboard/Notes/Slides
+
 - Width/height ratio is kept when width is set to full.
 - Dashboard: Path shows more meaningful text rather than index id.
 - Dashboard: Single Value uses a display name for caption.
@@ -56,6 +100,7 @@ Released on 6/12/2018
 - Support opening Markdown Editor/Viewer in a new window.
 
 #### Chart
+
 - Support Tab re-order by drag and drop.
 - Support auto margin.
 - Support option for chart export image size.
@@ -68,6 +113,7 @@ Released on 6/12/2018
 - Support "Other Group" for Color
 
 #### Analytics View
+
 - Support Tab re-order by drag and drop.
 - AB test inputs fields are aligned with Chi-square test.
 - Chi-square Test pivot table shows values in percentage.
@@ -77,6 +123,7 @@ Released on 6/12/2018
 - Time Series Forecasting: Test Mode, where model performance is measured with test data, is added.
 
 #### Data Source
+
 - Twitter Data Source shows more query results and include/exclude retweets parameter is added.
 - Support all 20 goals for Google Analytics.
 - Support executing Google BigQuery query without needing a data set and introduce "Standard SQL Mode" parameter in Import Dialog.
@@ -85,6 +132,7 @@ Released on 6/12/2018
 - Support scheduling chart/data/note with custom R script data source(s).
 
 #### Data Wrangling
+
 - Support pagination in Table view.
 - Suggest windows specific locale values on syntax prediction on windows.
 - Support "% of ..." column menu.
@@ -99,15 +147,17 @@ Released on 6/12/2018
 
 ### Bug Fix
 
-#### Communication/Reporting
+#### Reporting
+
 - Number: style was corrupted in a mobile view.
 - Right hand side preview content was not refreshed when opening a different note.
 - Republish note created a duplicate entry on the server side.
 - Note Editor was scrolled down when screenshot is pasted.
 - Opening Document on new Window took times.
-- Note Editor scroll position was reset after refreshing the preview 
+- Note Editor scroll position was reset after refreshing the preview
 
 #### Chart
+
 - Move to another data frame and opening Viz under more showed wrong pin step.
 - Setting constant reference line on y2 axis with bar marker in line chart gave error.
 - Line Y axis range didn't work if the y column is logical.
@@ -125,7 +175,7 @@ Released on 6/12/2018
 - Bar raised error if you switch it from Map - Area.
 - Histogram raised error because of the invalid validation.
 - Pivot raised error with multi measure and within group color by option
-- Repeat-by order was incorrect 
+- Repeat-by order was incorrect
 
 #### Analytics View
 - Exported data from Analytics View did not match with what was displayed in some cases.
@@ -177,9 +227,9 @@ Released on 3/25/2018
 - Supported Range (Confidence Interval, Standard Deviation, etc.) for Reference Line .
 - Added "Set 0 to Center" option to continuous color option.
 - Scatter Plot: Added date functions on X/Y Axis.
-- Added integer conversion functions (As Integer, As integer by 10) to the numeric functions in Charts. 
-- Added First / Last options to Reference Line. 
-- Supported line width in Trend Line. 
+- Added integer conversion functions (As Integer, As integer by 10) to the numeric functions in Charts.
+- Added First / Last options to Reference Line.
+- Supported line width in Trend Line.
 - Row ID column support in Long-Lat Map and Bubble chart.
 - Ratio type support in Error Bar chart.
 - Aggregate function name is now shown as part of column name in Pivot table.
@@ -208,7 +258,7 @@ Released on 3/25/2018
 - Supported column search by name on Column Selectors.
 
 #### Data Source
-- Supported connection to multiple mongodb hosts of a replica set. 
+- Supported connection to multiple mongodb hosts of a replica set.
 
 #### Data Wrangling
 - On Summary View and Table View, column names which are used in the right hand-side step that is currently selected are now highlighted.
@@ -233,7 +283,7 @@ Released on 3/25/2018
 #### Chart
 - Show detail showed nothing in Scatter chart.
 - Showing the trend line hover tooltip was hard.
-- "Number of unique values" warning were shown where it should not, if the current data frame was grouped. 
+- "Number of unique values" warning were shown where it should not, if the current data frame was grouped.
 - Table title was not aligned to the center of the table.
 - Reference line was showing partially.
 - Reference line did not show in the first chart if you use color from repeat by in some cases.
@@ -300,7 +350,7 @@ Released on 3/25/2018
 #### Others
 - Process remained after shutdown on windows7
 - Non-ascii user first/last name was not shown on desktop.
-- When copying a dataframe, Analytics was not copied along with it 
+- When copying a dataframe, Analytics was not copied along with it
 - Data Refresh on Server : Error "error code 3" was thrown when dataframe name started with _
 - Edf export did not work after cancelling R
 - Exploratory Desktop did not start up when there is existing Rserve process
@@ -399,7 +449,7 @@ Released on 1/3/2018
 ### Enhancements
 
 #### Communication/Reporting
-- Introduced Dashboard 
+- Introduced Dashboard
 - Change History dialog with capability to revert Note/Slides/Dashboard to any one of older status.
 - Note/Slide: Added Information Dialog from where you can see list of Vizs and Analytics used in the Note/Slides.
 - Note/Slide: Chart Selection Dialog now remembers the lastly selected Data Frame.
@@ -427,7 +477,7 @@ Released on 1/3/2018
 - Variable Importance: For classification, model prediction quality as a whole as well is shown as per-class quality.
 - Variable Importance: AUC is shown as additional model metrics in case of binary classification.
 - Variable Importance with Time: Made sample size adjustable
-- Regression Analysis: Added Logistic Regression support. 
+- Regression Analysis: Added Logistic Regression support.
 - Regression Analysis: Added "Fix Imbalanced Data" option to Logistic Regression. It balances data with majority class and minority class with SMOTE algorithm, for better binary classification result.
 - Regression Analysis: Made sample size adjustable
 - Anomaly Detection: Added support for more aggregation functions such as number of unique values within each time period.
@@ -511,7 +561,7 @@ Released on 1/3/2018
 
 Released on 12/15/2017
 
-### Bug fixes 
+### Bug fixes
 - Could not connect to Dremio after installing Dremio ODBC Driver 1.3.14.1043. (Mac Only)
 
 
@@ -519,7 +569,7 @@ Released on 12/15/2017
 
 Released on 12/13/2017
 
-### Bug fixes 
+### Bug fixes
 - Installation failed when R 3.4.3 is selected as the version of R for Exploratory to work with. (Windows Only)
 - Custom R package install with local package file did not work for some packages. (Windows Only)
 
@@ -534,7 +584,7 @@ Released on 10/28/2017
 - CSV File Data Source: You can now specify column data type when automatic guess is not correct.
 - Scatter Plot: Now calculation of trend line uses actually displayed sampled data for its calculation for better performance.
 
-### Bug fixes 
+### Bug fixes
 
 - Cursor position in Custom Command text area became inaccurate as the command got longer.
 - Tiles on Summary View became unselectable under certain conditions.
@@ -562,7 +612,7 @@ Released on 10/28/2017
 
 Released on 10/22/2017
 
-### Bug fixes 
+### Bug fixes
 - Creating a new GeoJSON map raised error.  
 
 
@@ -604,7 +654,7 @@ Released on 10/21/2017
 
 #### Data Source
 
-- Connection to Dremio 
+- Connection to Dremio
 - Connection to SQL Server
 - Renewed SQL Editor UI.
 - Renewed R Script Data Source Editor UI.
@@ -627,7 +677,7 @@ Released on 10/21/2017
 - We now use Hack font for code editors.
 
 
-### Bug fixes 
+### Bug fixes
 - Data export from pivot table did not work if a column was assigned to multiple places in the pivot table.
 - Custom R package install did not have Cancel link while running.
 - OAuth Connection disappeared from UI when it was expired or revoked.
@@ -642,8 +692,8 @@ Released on 10/21/2017
 - SQL suggested in PostgreSQL data source dialog did not have necessary double quotes.
 - "Predict on Test Data" menu was disabled for a Custom Model.
 - Long-Lat Map: Legend was not showing up when there was NA in the data.
-- Errors were raised sporacically : "Bounds are not valid" 
-- Having a missing local image file link stopped whole Rmarkdown Note rendering. 
+- Errors were raised sporacically : "Bounds are not valid"
+- Having a missing local image file link stopped whole Rmarkdown Note rendering.
 - Analytics: Chart setting was not saved when showing/hiding left-hand side Data Frame tree area.
 - Thumbnail image was not added/updated when sharing a Chart.
 - Adding new entry with + (Plus) button failed on "Replace Existing with New Values" dialog.
