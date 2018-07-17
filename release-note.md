@@ -52,7 +52,7 @@ Released on 6/22/2018
 - Support event related dimensions and measures for Google Analytics.
 
 #### Chart
-- Expose a property for the max number of cells.
+- Support a property for the max number of rows in Pivot Table.
 
 ### Bug Fix
 
