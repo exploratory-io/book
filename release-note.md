@@ -13,7 +13,9 @@ Released on 7/31/2018
 - Remove an underscore "(\_)" letter at the beginning of the data frame names that were added after sanitizing non-ASCII characters from the data frame names.
 - Join Dialog: Target data frame list shows data frames from previously opened project when this step was invalid.
 - CSV download for the published data was not working when the data frame name was ending with "data"
-
+- Variable Importance under Analytics View error-ed when the predictor column names starting with full-width number.
+- Window Calculation (% Difference) with Multiple Column Headers Menu didn't set the appropriate properties in the 'Mutate At' dialog. 
+- Viz table failed to show when one of the columns was Interval data type.
 
 ## v4.4.0.3
 
