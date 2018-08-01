@@ -1,5 +1,20 @@
 # Release Note
 
+## v4.4.0.4
+
+Released on 7/31/2018
+
+### Bug Fix
+
+- Performance improvements for opening the projects.
+- Introducing a 'memory efficient' mode for importing Excel XLSX data type.
+- Couldn't type and search Google Sheet names.
+- OAuth redirect for Twitter data connection was not working properly.
+- Remove an underscore "(\_)" letter at the beginning of the data frame names that were added after sanitizing non-ASCII characters from the data frame names.
+- Join Dialog: Target data frame list shows data frames from previously opened project when this step was invalid.
+- CSV download for the published data was not working when the data frame name was ending with "data"
+
+
 ## v4.4.0.3
 
 Released on 7/15/2018
