@@ -1,6 +1,6 @@
 # Time Series Forecasting
 
-With past data as training data, it creates a model that predicts future value for a specific date and plot the predicted values on a Time Series Chart.
+With past time series data as training data, it creates a model that forecasts values for future dates/times, and plots the predicted values on a Line Chart.
 
 ## Input Data
 Input data should be a time series data. Each row should represent one observation with date/time. It should have following columns.
@@ -20,14 +20,46 @@ Input data should be a time series data. Each row should represent one observati
 11. Select view type (explained below) by clicking view type link to see each type of generated visualization.
 
 ### "Forecasted" View
-"Forecasted" View displays how the future values look like. with a line chart. Blue line is for actual values and orange line is for forecasted values. Orange band shows confidence interval.
+"Forecasted" View displays how the future values look like. with a line chart. Blue line is for actual values and orange line is for forecasted values. Orange band shows uncertainty interval.
 
 ![](images/timeseries_forcasting_forecated.png)
 
 ### "Trend" View
-"Trend" View displays actual values (blue line),  forecasted values (orange line) and trend line(green line).
+"Trend" View displays actual values (blue line), and trend line (orange line). It also displays change points of the trend line, and how much change of slope was made at each change point (green bars).
 
 ![](images/timeseries_forcasting_trend.png)
+
+### "Yearly" View
+"Yearly" View displays yearly seasonality.
+
+![](images/timeseries_forcasting_yearly.png)
+
+### "Weekly" View
+"Weekly" View displays weekly seasonality, when time unit is DAY or smaller.
+
+![](images/timeseries_forcasting_weekly.png)
+
+### "Data" View
+"Data" View shows a table with both past data and forecasted data.
+![](images/timeseries_forcasting_data.png)
+
+### Test Mode
+In Test Mode, the last part of the data for the length specified by "Forecasting Time Period" is not used for training the model, and kept for testing how well the model forecasts.
+Test Mode can be enabled by setting the "Test Mode" property to TRUE.
+
+![](images/timeseries_forcasting_test_property.png)
+
+#### "Forecasted" View in Test Mode
+Dark blue line is the part of actual data used for training, and light blue line is the part that is used for test. Orange line is the forecasted values. You can compare the orange line with the light blue line to see how close the forecast was to the actual value.
+
+![](images/timeseries_forcasting_test.png)
+
+#### "Summary" View in Test Mode
+In Test Mode, "Summary View" shows the metrics for the model's forecasting performance.
+For the detail of the metrics, we recommend reading [this online textbook](https://www.otext.org/fpp/2/5).
+
+![](images/timeseries_forcasting_summary.png)
+
 
 ## R Package
 
