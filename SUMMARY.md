@@ -43,7 +43,6 @@
       * [MongoDB](import/mongodb.md)
       * [PostgreSQL](import/postgresql.md)
       * [HP Vertica](import/hp-vertica.md)
-      * [Neo4j](import/neo4j.md)
       * [ODBC](import/odbc.md)
       * [Dremio](import/dremio.md)     
    * [Cloud Apps Data]()
@@ -61,7 +60,10 @@
    * [Data Source Extension](import/extensions.md)
      * [SPARQL](import/SPARQL.md)
      * [Quandl](import/quandl.md)
+     * [Historical Stock Prices Data](import/tidyquant.md)
      * [Weather Data](import/riem_measures.md)
+     * [Holiday](import/holiday.md)
+     * [RSS Data](import/tidyrss.md)
    * [Create Custom Data Source](import/user-defined-plugin.md)
 
 
