@@ -71,9 +71,13 @@ Time Series Forecasting Analytics View has following other properties.
 - Potential Changepoints - You can specify points of time at which trend could have changed, as candidates of changepoints.
 - Uncertainty Interval - Probability which is covered by uncertainty interval.
 
+
 ## R Package
 
-The `Time Series Forecasting` uses [`prophet`](https://cran.rstudio.com/web/packages/prophet/index.html) R Package under the hood.
+Time Series Forecasting view uses [`prophet`](https://cran.rstudio.com/web/packages/prophet/index.html) R Package under the hood.
+
+- [prophet R package's Function Reference Guide](https://cran.r-project.org/web/packages/prophet/prophet.pdf)
+- [Prophet's Official Documents](https://facebook.github.io/prophet/docs/quick_start.html)
 
 ## Exploratory R Package
 
