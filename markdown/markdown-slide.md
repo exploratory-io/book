@@ -22,6 +22,8 @@ You can use Simple Markdown Editor to create Presentation Slides to communicate 
 * [R Script - Code Block](#r-script-code-block)
 * [R Script - Inline](#r-script-inline)
 * [Publish and Share](#publish-and-share)
+* [Open in Browser](#open-in-browser)
+* [Print Slides](#print-slides)
 
 You can also look at following article for details.
 * [Creating Presentation Slides Directly Inside Exploratory](https://exploratory.io/note/kei/9285503110951652). 
@@ -517,3 +519,15 @@ To publish and share your Presentation Slides, click Share button.
 And on the Share dialog, check 'Private' if you want to privately share the Presentation Slides and Click `Share` button.
 
 ![](images/markdown-share-scope.png "Export to HTML")
+
+## Open in Browser
+
+You can show the slides in a browser by clicking "Open in Browser" button.
+
+![](images/slide-open-in-browser.png "Export to HTML")
+
+## Print Slides 
+
+You can print your slides from the browser. First, you can show the slides in a browser by clicking "Open in Browser" button. Then use brwoser's Print feature to print. Using Chrome browser is recommended.  
+
+![](images/slide-print.png "Export to HTML")
