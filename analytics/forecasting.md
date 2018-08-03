@@ -60,6 +60,16 @@ For the detail of the metrics, we recommend reading [this online textbook](https
 
 ![](images/timeseries_forcasting_summary.png)
 
+## Analytics Properties
+Time Series Forecasting Analytics View has following other properties.
+
+- Forecasting Time Period - Length of the forecasting period.
+- Yearly Seasonality - By default, whether to use yearly seasonality is automatically determined, but you can explicitly specify it here.
+- Weekly Seasonality - By default, whether to use weekly seasonality is automatically determined, but you can explicitly specify it here.
+- Strength of Seasonality - Controls the weight of seasonality taken into account in the forecasting.
+- Capacity (Cap) Value - Largest possible value to be forecasted. e.g. Size of entire market, etc.
+- Potential Changepoints - You can specify points of time at which trend could have changed, as candidates of changepoints.
+- Uncertainty Interval - Probability which is covered by uncertainty interval.
 
 ## R Package
 
