@@ -433,7 +433,7 @@ This will open up Chart Selector Dialog like this.
 After you select a Chart and Click OK, following Exploratory Code block is inserted into your Markdown content. Syntax is `/<dataframe_name>/<type>/<id>`
 
 <pre><code>
-```{exploratory}
+```{exploratory width="normal", height="normal"}
 /user_login_for_cohort_survival/viz/Flight-Analysis-1
 ```
 </code></pre>
@@ -451,6 +451,7 @@ And when you click Run, this code block is converted to Exploratory Chart like b
 By default, the system sets the document area width to the chart width. 
 You can customize the width by `width` property. You can set the width in following ways.
 
+* width="normal" (Default)
 * width="500px"
 * width="500"  (Same as "500px")
 * width="90%"  (90% of the screen width)
@@ -468,16 +469,17 @@ Example:
 
 By default, the system calcualtes the chart height automatically based  
 on the chart width and screen size. You can customize the height by `height` parameter. 
-You can set the width in following ways.
+You can set the height in following ways.
 
-* width="500px"
-* width="500"  (Same as "500px")
-* width="90%"  (90% of the screen width)
-* width="full" (Same as the 100% of the screen width)
+* height="normal" (Default)
+* height="500px"
+* height="500"  (Same as "500px")
+* height="90%"  (90% of the screen height)
+* height="full" (Same as the 100% of the screen height)
 
 Example:
 <pre><code>
-```{exploratory height="350px"}
+```{exploratory height="500px"}
 /user_login_for_cohort_survival/viz/Flight-Analysis-1
 ```
 </code></pre>
@@ -497,7 +499,7 @@ This will open up Chart Selector Dialog like this.
 After you select a Chart and Click OK, following Exploratory Code block is inserted into your Markdown content. Syntax is `/<dataframe_name>/<type>/<analytics name>/<index>`
 
 <pre><code>
-```{exploratory}
+```{exploratory width="normal", height="normal"}}
 /airline_2013_6/analytics/L/1
 ```
 </code></pre>
@@ -514,6 +516,7 @@ And when you click Run, this code block is converted to Exploratory Analytics Vi
 By default, the system sets the document area width to the chart width. 
 You can customize the width by `width` property. You can set the width in following ways.
 
+* width="normal" (Default)
 * width="500px"
 * width="500"  (Same as "500px")
 * width="90%"  (90% of the screen width)
@@ -531,16 +534,17 @@ Example:
 
 By default, the system calcualtes the chart height automatically based  
 on the chart width and screen size. You can customize the height by `height` parameter. 
-You can set the width in following ways.
+You can set the height in following ways.
 
-* width="500px"
-* width="500"  (Same as "500px")
-* width="90%"  (90% of the screen width)
-* width="full" (Same as the 100% of the screen width)
+* height="normal" (Default)
+* height="500px"
+* height="500"  (Same as "500px")
+* height="90%"  (90% of the screen width)
+* height="full" (Same as the 100% of the screen width)
 
 Example:
 <pre><code>
-```{exploratory height="350px"}
+```{exploratory height="500px"}
 /user_login_for_cohort_survival/viz/Flight-Analysis-1
 ```
 </code></pre>
