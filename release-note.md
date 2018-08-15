@@ -37,8 +37,8 @@ Released on 8/13/2018
 
 #### Reporting - Dashboard/Notes/Slides
 
-- The order of Charts were messed up after swapping the charts.
-- Some charts were not showing up in the output, and instead they were showing the loading message forever.
+- The order of Charts was messed up after swapping the charts.
+- Some charts were not showing up in the output while showing the loading message forever.
 - Charts did't show up right after importing Dashboard/Note/Slides EDF.
 - Disabled Enter key in Publish Dialog so that it won't mistakenly publish it.
 - Note: R button in the toolbar is now populating 'echo' and 'cache' attributes by default.
