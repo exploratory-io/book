@@ -1,5 +1,53 @@
 # Release Note
 
+## v4.4.0.5
+
+Released on 8/13/2018
+
+### Bug Fix
+
+#### General
+
+- Cancel button, which is shown during the data processing, is now formatted as a button instead of a link text to improve the visibility.
+- Couldn't change the data frame names when changing between upper/lower cases.
+- 'API - CSV Data' menu is added so that you can import the published data at exploratory.io from other tools.
+
+#### Data Wrangling
+
+- Step Menu: Moved "Create New Data Frame" to the action menu for each data wrangling step.
+- "Last N years" filter now returns data of the last year.
+- Column Header Menu: Convert to Number -> Minutes was producing a wrong attribute values.
+- In Mutate Multiple Columns (Mutate At) dialog, the columns could not be deleted when they no longer available after re-importing the data.
+
+#### Chart / Pivot / Map
+
+- Added Percentage and Currency Formatting support for Charts/Pivot/Map. You can find this in the property dialog now.
+- 'Show Details' was not working when the numeric column is assigned to X-Axis.
+- Chart: Non existent month names were showing up when 'Month Name' was used for X-Axis and a column is assigned to Color By.
+- Month Name labels on X-Axis were not matching with what each bar represents.
+- Table Properties were not matching with the Table specific functionalities.
+- Chart was refreshed every time hitting the enter key event to finalize Japanese words in the property.
+- Grand totals for Row and Column are now showing up by default. You can turn them off in the property.
+- First chart should not be deleted or need to add new one right after deleting first one.
+
+#### Analytics
+
+- Now you can export the charts as PNG.
+- Survival Table is now showing % symbol in the pivot table.
+
+#### Reporting - Dashboard/Notes/Slides
+
+- The order of Charts was messed up after swapping the charts.
+- Some charts were not showing up in the output while showing the loading message forever.
+- Charts did't show up right after importing Dashboard/Note/Slides EDF.
+- Disabled Enter key in Publish Dialog so that it won't mistakenly publish it.
+- Note: R button in the toolbar is now populating 'echo' and 'cache' attributes by default.
+
+#### Data Source
+
+- Data Source: Import JSON local file only imported first 200 rows
+
+
 ## v4.4.0.4
 
 Released on 7/31/2018
@@ -14,7 +62,7 @@ Released on 7/31/2018
 - Join Dialog: Target data frame list shows data frames from previously opened project when this step was invalid.
 - CSV download for the published data was not working when the data frame name was ending with "data"
 - Variable Importance under Analytics View error-ed when the predictor column names starting with full-width number.
-- Window Calculation (% Difference) with Multiple Column Headers Menu didn't set the appropriate properties in the 'Mutate At' dialog. 
+- Window Calculation (% Difference) with Multiple Column Headers Menu didn't set the appropriate properties in the 'Mutate At' dialog.
 - Viz table failed to show when one of the columns was Interval data type.
 
 ## v4.4.0.3

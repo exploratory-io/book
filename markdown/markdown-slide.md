@@ -22,6 +22,8 @@ You can use Simple Markdown Editor to create Presentation Slides to communicate 
 * [R Script - Code Block](#r-script-code-block)
 * [R Script - Inline](#r-script-inline)
 * [Publish and Share](#publish-and-share)
+* [Open in Browser](#open-in-browser)
+* [Print Slides](#print-slides)
 
 You can also look at following article for details.
 * [Creating Presentation Slides Directly Inside Exploratory](https://exploratory.io/note/kei/9285503110951652). 
@@ -425,6 +427,47 @@ And when you click Run, this code block is converted to Exploratory Chart like b
 ![](images/slide-insert-chart-preview.png)
 
 
+
+
+### Customize Width
+
+By default, the system sets the document area width to the chart width. 
+You can customize the width by `width` property. You can set the width in following ways.
+
+* width="normal" (Default)
+* width="500px"
+* width="500"  (Same as "500px")
+* width="90%"  (90% of the screen width)
+* width="full" (Same as the 100% of the screen width)
+
+Example:
+<pre><code>
+```{exploratory width="full"}
+/user_login_for_cohort_survival/viz/Flight-Analysis-1
+```
+</code></pre>
+
+
+### Customize Height
+
+By default, the system calcualtes the chart height automatically based  
+on the chart width and screen size. You can customize the height by `height` parameter. 
+You can set the height in following ways.
+
+* height="normal" (Default)
+* height="500px"
+* height="500"  (Same as "500px")
+* height="90%"  (90% of the screen height)
+* height="full" (Same as the 100% of the screen height)
+
+Example:
+<pre><code>
+```{exploratory height="500px"}
+/user_login_for_cohort_survival/viz/Flight-Analysis-1
+```
+</code></pre>
+
+
 ## Exploratory Analytics Viz
 
 On Exploratory Desktop, You can select Exploratory Analytics Viz when you writing Presentation Slides. Click Analytics Icon on Toolbar.
@@ -440,6 +483,45 @@ After you select a Chart and Click OK, following Exploratory Code block is inser
 <pre><code>
 ```{exploratory}
 /airline_delay_2016_09/analytics/1/4
+```
+</code></pre>
+
+
+### Customize Width
+
+By default, the system sets the document area width to the chart width. 
+You can customize the width by `width` property. You can set the width in following ways.
+
+* width="normal" (Default)
+* width="500px"
+* width="500"  (Same as "500px")
+* width="90%"  (90% of the screen width)
+* width="full" (Same as the 100% of the screen width)
+
+Example:
+<pre><code>
+```{exploratory width="full"}
+/user_login_for_cohort_survival/viz/Flight-Analysis-1
+```
+</code></pre>
+
+
+### Customize Height
+
+By default, the system calcualtes the chart height automatically based  
+on the chart width and screen size. You can customize the height by `height` parameter. 
+You can set the height in following ways.
+
+* height="normal" (Default)
+* height="500px"
+* height="500"  (Same as "500px")
+* height="90%"  (90% of the screen height)
+* height="full" (Same as the 100% of the screen height)
+
+Example:
+<pre><code>
+```{exploratory height="500px"}
+/user_login_for_cohort_survival/viz/Flight-Analysis-1
 ```
 </code></pre>
 
@@ -517,3 +599,15 @@ To publish and share your Presentation Slides, click Share button.
 And on the Share dialog, check 'Private' if you want to privately share the Presentation Slides and Click `Share` button.
 
 ![](images/markdown-share-scope.png "Export to HTML")
+
+## Open in Browser
+
+You can show the slides in a browser by clicking "Open in Browser" button.
+
+![](images/slide-open-in-browser.png "Export to HTML")
+
+## Print Slides 
+
+You can print your slides from the browser. First, you can show the slides in a browser by clicking "Open in Browser" button. Then use brwoser's Print feature to print. Using Chrome browser is recommended.  
+
+![](images/slide-print.png "Export to HTML")
