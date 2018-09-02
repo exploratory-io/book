@@ -56,7 +56,7 @@ Dark blue line is the part of actual data used for training, and light blue line
 
 #### "Summary" View in Test Mode
 In Test Mode, "Summary View" shows the metrics for the model's forecasting performance.
-For the detail of the metrics, we recommend reading [this online textbook](https://www.otext.org/fpp/2/5).
+For the detail of the metrics, we recommend reading [this online textbook](https://otexts.org/fpp2/accuracy.html).
 
 ![](images/timeseries_forcasting_summary.png)
 
