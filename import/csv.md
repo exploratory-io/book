@@ -48,7 +48,7 @@ If TRUE, the first row of the input will be used as the column names, and will n
 ## 4. Column Types
 
 you can override column type by passing column name and data type pair with ` columnName = 'type'` syntax.
-For Example, if `value` column is detected as integer but you want to import it as double, you can set `value = 'd'`. (d is for double). If you want to override multiple column types, you can do so by separating each pair with comma(,) like this. ` key = 'i', value = 'd'` 
+For Example, if `value` column is detected as integer but you want to import it as double, you can set `value = 'd'`. (d is for double). If you want to override multiple column types, you can do so by separating each pair with comma(,) like this. ` key = 'i', value = 'd'`
 
 Supported data types for overrides are:
 
@@ -61,10 +61,13 @@ Supported data types for overrides are:
 - T (Date time)
 - t (time)
 
+**Note :** To specify Column Types, you need to disable "Auto Detect Data Type" like the screenshot below.
+
+![](images/csv_disable_auto_detect_column_type.png)
 
 ## 5. Column Selection
 
-On top of input parameters, you can also use checkboxes on the preview table to include/exclude columns. if you uncheck the checkboxes on the columns, these columns are excluded when you save the data. 
+On top of input parameters, you can also use checkboxes on the preview table to include/exclude columns. if you uncheck the checkboxes on the columns, these columns are excluded when you save the data.
 
 ## 6. Preview and Import
 
