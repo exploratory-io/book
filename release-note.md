@@ -1,5 +1,81 @@
 # Release Note
 
+
+## v5.0
+
+Released on 8/13/2018
+
+### Enhancements
+
+#### Data Wrangling
+
+- Merge UI now supports 'union_all' option.
+- Redesigned Mutate dialog to give more space to Expression Editor
+- 'quantile' is added under Summarize in Column Header menu
+
+#### Viz / Chart
+
+- Added Number formatting support on X-Axes in Chart.
+- Support line style when the marker is set Line via configuration dialog
+- Added 'All' for the direction options along with X-Axis and Color for the Window Calculation in Chart and Pivot.
+- You can set the default font size for each Pivot Table from the property.
+- You can set First or Last N Rows for Table
+- Trendline: Shows the Coefficient based on the date / time interval that is set to the chart X-axis.
+- Added 'Opposite' direction option for Cumulative Sum Ratio Window Calculation in Pivot Table.
+- You can set different Window Calculations to each value for Pivot Table.
+- Bar chart is sorted by default when you click on the instant chart icon at the Summary view.
+- Show "Create Other Group" info under Color and Repeat By control in Chart view.
+- Added "Hide Other Group" option for Color and Repeat By.
+- Added the second Label field in Map - Long/Lat.
+
+#### Analytics
+
+- Linear / Logistic / Cox Regression: You can select whether to order the variables based on the coefficients via property.
+- Chi-Square Test : You can select whether to show actual count or percentage in the pivot table via property.
+- Sample data size is now shown at the top when data is sampled
+
+#### Data Source
+
+- CSV Import: Shows more user friendly message when the encoding setting is invalid.
+- Custom R Script: Shows more helpful errors when there is an R error.
+-
+
+### Bug Fixes
+
+**General**
+
+- Renaming a Data Frame name by changing only upper/lower case removed the Data Frame itself.
+
+
+**Data Wrangling**
+
+- Table View: 'Rows to Display' option is automatically reset when there are less than the specified rows.
+- List data type columns were not refreshed in Table after a data wrangling operation.
+- Exported R script has duplicated setTokenInfo calls when there are multiple googlesheet data sources
+- "Generate R Script" did not work when Connection was available after importing the data frame.
+
+**Viz / Chart**
+
+- Table: Exporting data for Table exported all the available columns at the step even when there were only a few columns selected for the Table.
+- Couldn't enable trend lines when a Character data type column was assigned to Y axis with 'Unique Count' function.
+- Opening Show Detail Dialog when Bar Chart doesn't have any column assigned to X-axis threw an error (error code 3).
+- Grouped Bar chart with multiple Y columns using Y2 axis with no X column assigned threw an error.
+- Bar chart with Circle Marker type failed with X, Y and Repeat by columns assigned.
+- Show Details Dialog errors when selected columns are all numeric columns
+- Hitting 'Enter' key event in the property should not refresh the chart. Hitting 'Enter' key is often used for finalizing a Japanese phrase.
+- It showed unnecessary data points when X-Axis was Month Name and Color By was assigned.
+
+**Analytics**
+
+- The min and max ranges for Y1 and Y2 Axis were not matching for PCA Analytics.
+
+**Dashboard/Note/Slides**
+
+- Section Title was not maintained when replacing the charts in Dashboard.
+- Note: When you created an empty note and moved between other notes, the empty note showed contents from other notes
+- Clicking a link in Table in a Note opened another application window.
+- Some of the charts in Note didn't show up or showed up in an unexpected order.
+
 ## v4.4.0.5
 
 Released on 8/13/2018
