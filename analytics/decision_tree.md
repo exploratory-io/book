@@ -3,7 +3,7 @@
 Builds a decision tree to predict Target Variable column value from Predictor Variable(s) column values.
 
 ## Input Data
-Input data should contain categorical columns and numeric columns.
+Input data should contain following columns.
 
   * Target Variable - Column that has values to be predicted by the decision tree.
   * Predictor Variable(s) - Column(s) that has values on which the prediction by decision tree is based. It can be of categorical (binary or multi-class) or nuneric value.
