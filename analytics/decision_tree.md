@@ -15,5 +15,5 @@ Input data should contain following columns.
 4. Select Target Variable column that you want to predict with the decision tree.
 5. Select Predictor Variable(s) columns to be the basis of the prediction by the decison tree.
 6. Click Run button to run the analytics.
-7. Select view type (explained below) by clicking view type link to see each type of generated visualization.
+7. Select view type by clicking view type link to see each type of generated visualization.
 

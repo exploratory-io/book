@@ -13,5 +13,5 @@ Input data should contain following columns.
 3. Select "Normality Test" for Type.
 4. Select Variables column.
 5. Click Run button to run the analytics.
-6. Select view type (explained below) by clicking view type link to see each type of generated visualization.
+6. Select view type by clicking view type link to see each type of generated visualization.
 

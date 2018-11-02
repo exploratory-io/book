@@ -15,5 +15,5 @@ Input data should contain following columns.
 4. Select Product column.
 5. Select Basket column.
 6. Click Run button to run the analytics.
-7. Select view type (explained below) by clicking view type link to see each type of generated visualization.
+7. Select view type by clicking view type link to see each type of generated visualization.
 
