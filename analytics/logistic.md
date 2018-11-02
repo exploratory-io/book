@@ -23,6 +23,7 @@ Input data should contain following columns.
 3. Select "Logistic Regression Analysis" for Type.
 4. Select Target Variable column.
 5. Select Predictor Variable(s) columns.
-6. Click Run button to run the analytics.
-7. Select view type by clicking view type link to see each type of generated visualization.
+6. Set Analytics Properties if necessary.
+7. Click Run button to run the analytics.
+8. Select view type by clicking view type link to see each type of generated visualization.
 
