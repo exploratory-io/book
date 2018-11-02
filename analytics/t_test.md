@@ -1,4 +1,4 @@
-# Decision Tree Analytics View
+# T Test Analytics View
 
 Runs t-test, which checks differences of means of variables between 2 groups.
 
