@@ -5,8 +5,8 @@ Builds a decision tree to predict Target Variable column value from Predictor Va
 ## Input Data
 Input data should contain following columns.
 
-  * Target Variable - Column that has values to be predicted by the decision tree.
-  * Predictor Variable(s) - Column(s) that has values on which the prediction by decision tree is based. It can be of categorical (binary or multi-class) or nuneric value.
+  * Target Variable - Column that has values to be predicted by the decision tree. It can be of categorical (binary or multi-class) or nuneric value.
+  * Predictor Variable(s) - Column(s) that has values on which the prediction by decision tree is based.
 
 ## How to Use This Feature
 1. Click Analytics View tab.
