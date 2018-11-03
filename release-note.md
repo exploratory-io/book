@@ -3,17 +3,37 @@
 
 ## v5.0
 
-Released on 8/13/2018
+Released on 10/31/2018
+
+Check out all the new features at the following v5.0 introduction announcement blog posts!
+
+- [English](https://exploratory.io/note/kanaugust/5-0-New-Features-Draft-HdA6wAp9ta)
+- [Japanese](https://exploratory.io/note/kanaugust/Exploratory-v5-0-QSm0Uuk9Wn)
+
+And here is a list of the other enhancements and bug fixes.
 
 ### Enhancements
 
-#### Data Wrangling
+**General**
+
+- Provided a way to access Proxy configuration UI while installation
+
+**Data Source**
+
+- CSV Import: Shows more user friendly message when the encoding setting is invalid.
+- Custom R Script: Shows more helpful errors when there is an R error.
+
+**Data Wrangling**
 
 - Merge UI now supports 'union_all' option.
 - Redesigned Mutate dialog to give more space to Expression Editor
 - 'quantile' is added under Summarize in Column Header menu
+- Mutate dialog should suggest locales for month() function
+- Introduce Full Name for 'Day of Week' and 'Month' functions
+- Changed the generated calculation to not include * 100' for Ratio
+- Syntax help should suggest "=="" as one of the operators in mutate()
 
-#### Viz / Chart
+**Viz / Chart**
 
 - Added Number formatting support on X-Axes in Chart.
 - Support line style when the marker is set Line via configuration dialog
@@ -27,25 +47,26 @@ Released on 8/13/2018
 - Show "Create Other Group" info under Color and Repeat By control in Chart view.
 - Added "Hide Other Group" option for Color and Repeat By.
 - Added the second Label field in Map - Long/Lat.
+Fix for Chart: Day of Week Should Support 'Full Name'
 
-#### Analytics
+**Analytics**
 
 - Linear / Logistic / Cox Regression: You can select whether to order the variables based on the coefficients via property.
 - Chi-Square Test : You can select whether to show actual count or percentage in the pivot table via property.
 - Sample data size is now shown at the top when data is sampled
-
-#### Data Source
-
-- CSV Import: Shows more user friendly message when the encoding setting is invalid.
-- Custom R Script: Shows more helpful errors when there is an R error.
--
+- Support an EDF export and publish support
+- Anomaly Detection supports parameter setting via Properties now.
 
 ### Bug Fixes
 
 **General**
 
 - Renaming a Data Frame name by changing only upper/lower case removed the Data Frame itself.
+- Tool menu didn't show up in Desktop.
 
+**Data Source**
+
+- Remote File: Changing URL and click get data does not get a data from new URL
 
 **Data Wrangling**
 
@@ -53,6 +74,8 @@ Released on 8/13/2018
 - List data type columns were not refreshed in Table after a data wrangling operation.
 - Exported R script has duplicated setTokenInfo calls when there are multiple googlesheet data sources
 - "Generate R Script" did not work when Connection was available after importing the data frame.
+- Mutate Dialog: Should be able to turn off the column suggestion
+
 
 **Viz / Chart**
 
@@ -64,10 +87,17 @@ Released on 8/13/2018
 - Show Details Dialog errors when selected columns are all numeric columns
 - Hitting 'Enter' key event in the property should not refresh the chart. Hitting 'Enter' key is often used for finalizing a Japanese phrase.
 - It showed unnecessary data points when X-Axis was Month Name and Color By was assigned.
+- Got an empty screen after switching Display Language in Chart/Summary
+- Keeping the plus button in a fixed position even after you scroll chart/analytics tabs
+- Bar chart fails if you set Y2 axis at 'sort by' and remove the Y2 axis
+- It shows all the levels of a factor column in Chart legend.
+- "Show Detail" was ignoring the color condition if numeric column assigned to Color in Bar chart.
+- Custom Color Palette Menu is broken in Japanese UI
 
 **Analytics**
 
 - The min and max ranges for Y1 and Y2 Axis were not matching for PCA Analytics.
+
 
 **Dashboard/Note/Slides**
 
@@ -75,6 +105,12 @@ Released on 8/13/2018
 - Note: When you created an empty note and moved between other notes, the empty note showed contents from other notes
 - Clicking a link in Table in a Note opened another application window.
 - Some of the charts in Note didn't show up or showed up in an unexpected order.
+- Chart was broken in the Word export
+- Note: Refresh output before publish if note, side-by-side, TOC is on.
+
+
+
+
 
 ## v4.4.0.5
 
