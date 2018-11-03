@@ -10,6 +10,12 @@ Input data should be a survival data. Each row should represent one observation 
   * Event Status - A boolean or binary numeric value (can take value of 1 or 0) column with whether the event of interest (death) happened. When this column is true or 1, it means the event of interest happened to the subject at the End Time. If it is false or 0, it means we know that the event had not happened to the subject at least until the End Time, but we don't know what happened or will happen to the subject after that point.
   * Other columns to group observations - Optionally, if there are other columns that groups subjects, they can be used to draw separate survival curves for each group, for comparison between groups.
 
+## Analytics Properties
+  * Fill NA in End Time - How to fill NA in End Time column. One of the following.
+    * Use Latest Date/Time - Use the latest date/time that appear in the data.
+    * Use Today - Use today to fill NA.
+    * Enter Manually  - Use manually entered value
+  * Date to Fill NA in End Time - Date to fill NA in End Time column. This value takes effect when "Enter Manually" is selected for "Fill NA in End Time".
 
 ## How to Use This Feature
 1. Click Analytics View tab.

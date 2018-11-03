@@ -9,6 +9,14 @@ Input data should contain categorical columns and numeric columns.
   * Measured By Column - Column that defines dimension to calculate correlation. For each group, measure is aggregated for each value of this column, forming a vector that represents the group. Then, correlations are calculated among these vectors. If Date/POSIXct column is specified, measure is aggregated for each period of time (day, week, etc.) that is specified.
   * Measure Column - Numeric column that is used to calculate correlation.
 
+## Analytics Properties
+  * Method - Method to calculate correlations. The default is "Pearson". This can be:
+    * Pearson
+    * Kendall
+    * Spearman
+  * Show Only Lower Triangle - Show only lower triangle of the matrix, avoiding showing correlations for same pairs twice.
+  * Show Diagonal Values - Show values on diagonal of the matrix, which should always have correlation of 1.
+
 ## How to Use This Feature
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.
