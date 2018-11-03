@@ -8,6 +8,15 @@ Input data should contain following columns.
   * Target Variable - Categorical column whose distribution should be compared between groups.
   * Explanatory Variable(s) - Column with categorical values to categorize rows into groups.
 
+## Analytics Properties
+  * Show Frequencies in ... - How to display the frequencies in Pivot Table view. One of the following.
+    * Percentage (%)
+    * Count
+  * Show Difference from Expected in ... - How to display the differences from expected frequency in Difference view. One of the following.
+    * % Difference
+    * Difference
+    * Standardized Difference
+
 ## How to Use This Feature
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.

@@ -17,6 +17,18 @@ For example, suppose you have a product sales revenue data by countries and prod
 
 This one gives you which countries have the simliar sales patterns/trends.
 
+## Analytics Properties
+  * Method - Type of how to calculate distance. The default is "Euclidean".
+    * Euclidean - The most common measurement of distance. sqrt(sum((x - y)^2))
+    * Maximum - Maximum difference between elements of two vectors.
+    * Manhattan - Sum of difference in each elements of two vectors.
+    * Canberra - Manhattan distance weighted by the elements. sum(|x_i - y_i| / |x_i + y_i|)
+    * Binary - non-zero elements are regarded as 1 and zero elements are regarded as 0. The distance is the number of elements only one is 1 divided by numbers of them at least one is 1.
+    * Minkowski - This is generalized case of euclidean and manhattan. If p=2, it becomes euclidean and if p=1, it becomes manhattan. sum((x - y)^p)^(1/p)
+  * Show Only Lower Triangle - Show only lower triangle of the matrix, avoiding showing distances for same pairs twice.
+  * Show Diagonal Values - Show values on diagonal of the matrix, which should always have distance of 0.
+  * Normalize Measures - Whether to normalize measures before calculating distances.
+  * Number of Clusters - Number of clusters (by K-Means algorithm) used when clustring columns to display them on Similarity Map view.
 
 ## How to Use This Feature
 1. Click Analytics View tab.

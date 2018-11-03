@@ -1,6 +1,6 @@
 # Regression Analysis
 
-Perform regression with lm.
+Build Linear Regression Model
 
 ## Input Data
 Input data should contain at least one numeric column for "What to Predict" and more than one categorical and/or numeric columns as Variable Columns.
@@ -8,6 +8,14 @@ Input data should contain at least one numeric column for "What to Predict" and 
   * What to Predict - Numeric column that you want to Predict.
   
   * Variable Columns - Numeric and/or Categorical columns that you want to check importance to predict your "What to Predict" column.
+
+## Analytics Properties
+  * Sample Data Size - Number of rows to sample before building linear regression model.
+  * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
+  * Adjust Imbalanced Data - Adjust imbalance of data in Target Variable (e.g. FALSE being majority and TRUE being minority.) by SMOTE (Synthetic Minority Over-sampling Technique) altorithm.
+  * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
+  * P Value Threshold to be Significant - P value must be smaller than this value for coefficients to be considered statistically significant.
+  * Sort Variables by Coefficients - If set to TRUE, variables displayed in Coefficients View are sorted by coefficients.
 
 ## How to Use This Feature
 1. Click Analytics View tab.

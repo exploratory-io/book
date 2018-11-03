@@ -9,6 +9,20 @@ Input data should contain at least one categorical or numeric column for "What t
   
   * Variable Columns - Numeric and/or Categorical columns that you want to check importance to predict your "What to Predict" column.
 
+## Analytics Properties
+  * Data Pre-processing
+    * Sample Data Size - Number of rows to sample before building Random Forest model.
+    * Max # of Categories for Target Variable - If categorical Target Variable column has more categories than this number, less frequent categories are combined into 'Other' category.
+    * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
+    * Adjust Imbalanced Data - Adjust imbalance of data in Target Variable (e.g. FALSE being majority and TRUE being minority.) by SMOTE (Synthetic Minority Over-sampling Technique) altorithm.
+  * Random Forest
+    * Number of Trees - Number of trees to grow.
+    * Sample Data Size for a Tree - Size of data used to grow one tree. If no value is set, half of the value specified for Sample Data Size is used.
+    * Minimum Size of Terminal Nodes - Spliting of nodes is stopped so that the sizes of terminal nodes are larger than or equal to this value.
+    * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
+  * Effects by Variables
+    * Max # of Variables - Maximum number of most important variables to display on Effects by Variable view.
+
 ## How to Use This Feature
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.

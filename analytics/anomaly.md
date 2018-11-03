@@ -8,6 +8,24 @@ Input data should be a time series data. Each row should represent one observati
   * Date - A Date or POSIXct column when the observation was made.
   * Some measure value - Numeric column that stores observed value.
 
+## Analytics Properties
+  * Direction of Anomaly - Direction of anomaly. The default is Positive and Negative. This can be
+    * Positive and Negative - Both positive and negative direction.
+    * Positive - Only positive direction.
+    * Negative - Only negative direction.
+  * Max Anomaly Ratio - The default is 0.1. The maximum ratio of anomaly data compared to the number of total data.
+  * Alpha (Sensitivity to Anomaly Data) - The default is 0.05. The larger the value, the more anomaly data are captured.
+  * Report Only Last Values within - The default is NULL. Find only last anomalies within a day or hour. This can be
+    * Reporting All Anomaly - Find all anomalies.
+    * Day - Find last anomalies within a day.
+    * Hour - Find last anomalies within an hour.
+  * Threshold of Positive Anomaly - The default is 'None'. If this is specified, only positive anomalies above the threshold are reported. This can be
+    * No Threshold - No threshold.
+    * 95th Percentile - 95th percentile of the daily max values.
+    * 99th Percentile - 99th percentile of the daily max values.
+    * Median of Max - Median of daily max values.
+  * Piecewise Median Time Window (Weeks) - The default is 2. The size of piecewise median time window (span of seasons). The unit is weeks.
+
 
 ## How to Use This Feature
 1. Click Analytics View tab.

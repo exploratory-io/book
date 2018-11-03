@@ -7,6 +7,10 @@ Input data should contain following columns.
 
   * Variables - Numeric column(s) to check if its distribution can be normal distribution.
 
+## Analytics Properties
+  * Sample Data Size - Number of rows to sample before testing normality.
+  * P Value Threshold - If P value is larger than this value, the variable (column) is considered to be distributed normally.
+
 ## How to Use This Feature
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.

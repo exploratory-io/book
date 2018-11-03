@@ -1,4 +1,4 @@
-# Variable Importance with Time.
+# Cox Regression Analytics
 
 Calculates Importance (i.e. Proportional Hazard) for each variable with Cox Regression model.
 
@@ -9,6 +9,19 @@ Input data should be a survival data. Each row should represent one observation 
 * End Time - A Date or POSIXct column with the end of the observation of the subject.
 * Event Status - A boolean or binary numeric value (can take value of 1 or 0) column with whether the event of interest (death) happened. When this column is true or 1, it means the event of interest happened to the subject at the End Time. If it is false or 0, it means we know that the event had not happened to the subject at least until the End Time, but we don't know what happened or will happen to the subject after that point.
 * Variables Columns - Variables that you want to see Importance (i.e. Proportional Hazard)
+
+## Analytics Properties
+  * Sample Data Size - Number of rows to sample before building Cox regression model.
+  * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
+  * Fill NA in End Time - How to fill NA in End Time column. One of the following.
+    * Use Latest Date/Time - Use the latest date/time that appear in the data.
+    * Use Today - Use today to fill NA.
+    * Enter Manually  - Use manually entered value
+  * Date to Fill NA in End Time - Date to fill NA in End Time column. This value takes effect when "Enter Manually" is selected for "Fill NA in End Time".
+  * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
+  * P Value Threshold to be Significant - P value must be smaller than this value for coefficients to be considered statistically significant.
+  * Sort Variables by Coefficients - If set to TRUE, variables displayed in Coefficients View are sorted by coefficients.
+
 
 ## How to Use This Feature
 1. Click Analytics View tab.

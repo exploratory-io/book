@@ -7,6 +7,14 @@ Input data should contain numeric columns.
 
   * Variable Columns - Numeric columns among which correlations are calculated.
 
+## Analytics Properties
+  * Method - Method to calculate correlations. The default is "Pearson". This can be:
+    * Pearson
+    * Kendall
+    * Spearman
+  * Show Only Lower Triangle - Show only lower triangle of the matrix, avoiding showing correlations for same pairs twice.
+  * Show Diagonal Values - Show values on diagonal of the matrix, which should always have correlation of 1.
+
 ## How to Use This Feature
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.
