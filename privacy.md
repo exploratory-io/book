@@ -189,9 +189,6 @@ Our emails might contain a pixel tag, which is a small, clear image that can tel
 Although most changes are likely to be minor, Exploratory may change our Privacy Statement from time to time. We will provide notification to Users of material changes to this Privacy Statement through our Website at least 30 days prior to the change taking effect by posting a notice on our home page or sending email to the email address specified in your Exploratory primary account. For changes to this Privacy Statement that do not affect your rights, we encourage visitors to check this page frequently.
 
 
-## License
-
-This [Privacy Statement](https://help.github.com/articles/github-privacy-statement/) by [Github](https://github.com/) is licensed under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/).
 
 ## Contacting Exploratory
 
