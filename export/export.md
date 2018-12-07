@@ -1,8 +1,18 @@
 # Export Data
 
+You can export data in various formats either by clicking 'Export' button at the top of Summary / Table view or clicking on 'Export' button inside each of the data wrangling steps at the right hand side.
+
+
+**At the top of Summary / Table view**
+
 ![](images/export.png)
 
-You can click the "Export" link anytime to export your data in various formats.
+**At the data wrangling step**
+
+![](images/export2.png)
+
+In this case, the exported data is based on the step you clicked the export button for.
+
 
 ## Standard Options
 
@@ -50,7 +60,7 @@ You can export your data to the Google Sheets.
 
 You can export your reproducible steps as an R Script file.
 
-If you want to create an environment on a different machine (Windows or Mac) where you want to run this exported R script as a standalone, you can follow the instruction in [this document](https://exploratory.io/note/hideaki/6838376453273360). 
+If you want to create an environment on a different machine (Windows or Mac) where you want to run this exported R script as a standalone, you can follow the instruction in [this document](https://exploratory.io/note/hideaki/6838376453273360).
 
 
 ## Chart Options
