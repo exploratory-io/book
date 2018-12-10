@@ -1,5 +1,15 @@
 # Release Note
 
+## v5.0.0.9 (Windows Only)
+
+Released on 12/10/2018
+
+### Bug Fixes
+- Windows Defender SmartScreen raises Warning at the first startup.
+- Exploratory crashes at login.
+
+
+
 
 ## v5.0
 
