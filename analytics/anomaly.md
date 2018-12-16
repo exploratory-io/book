@@ -5,11 +5,18 @@ With algorithm "Seasonal Hybrid ESD (S-H-ESD)", created by Twitter, it detects a
 ## Input Data
 Input data should be a time series data. Each row should represent one observation with date/time. It should have following columns.
 
-  * Date - A Date or POSIXct column when the observation was made.
-  * Some measure value - Numeric column that stores observed value.
+  * Date/Time Column - A Date or POSIXct column when the observation was made.
+    * When data type is Date, data is aggregated (e.g. summed, averaged, etc.) for each day.
+    * When data type is POSIXct, level of aggregation can be day, hour, minute, or second.
+  * Value Column - Column that stores observed values.
 
 ## Analytics Properties
-  * Direction of Anomaly - Direction of anomaly. The default is Positive and Negative. This can be
+  * How to Fill NA - This algorithm requires NAs to be filled. The default is Fill with Previous Value. This can be...
+    * Fill with Previous Value
+    * Fill with Zero
+    * Linear Interpolation 
+    * Spline Interpolation 
+  * Direction of Anomaly - Direction of anomaly. The default is Positive and Negative. This can be...
     * Positive and Negative - Both positive and negative direction.
     * Positive - Only positive direction.
     * Negative - Only negative direction.

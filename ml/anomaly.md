@@ -16,15 +16,20 @@ It detects anomaly in time series data frame. It employs an algorithm referred t
 
 ### Column Selection
 
-* Date / Time Column - Select a Date or POSIXct data type column that holds date / time information.
-  * Aggregation Level - Select date / time level such as Month, Week, Day, etc. to aggregate the data.
+* Date/Time Column - Select a Date or POSIXct data type column that holds date/time information.
+  * Aggregation Level - When data type is Date, data is aggregated (e.g. summed, averaged, etc.) for each day. When data type is POSIXct, level of aggregation can be day, hour, minute, or second.
 * Value Column - Select either 'Number of Rows' or a numeric column for which you want to detect anomalies.
   * Aggregation Function - Select an aggregate function such as 'sum', 'mean', etc. to aggregate the values.
 
 
 ### Parameters
 
-* Direction of Anomaly (Optional) - The default is "both". Direction of anomaly. This can be
+* How to Fill NA - This algorithm requires NAs to be filled. The default is Fill with Previous Value. This can be...
+  * Fill with Previous Value
+  * Fill with Zero
+  * Linear Interpolation 
+  * Spline Interpolation 
+* Direction of Anomaly (Optional) - The default is "both". Direction of anomaly. This can be...
   * "both" - Both positive and negative direction.
   * "pos" - Only positive direction.
   * "neg" - Only negative direction.
