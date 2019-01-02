@@ -175,6 +175,8 @@ Some text to show that the reference links can follow later.
 
 ## Images
 
+You can use markdonw's image syntax to show images. 
+
 ```no-highlight
 Here's our logo (hover to see the title text):
 
@@ -196,6 +198,46 @@ Reference-style:
 ![alt text][logo]
 
 [logo]: images/logo_top.png "Logo Title Text 2"
+
+
+### Controling image width
+
+You can use the HTML's img tag with `width` attribute to control the image width. You can set the width in following ways. 
+
+* width="500px"
+* width="500" (Same as "500px")
+* width="50%" (50% of the note area width)
+* width="full" (Same as the 100% of the screen width)
+
+Also, you can apply any of CSS styles with the HTML img tag. 
+
+
+Example:
+
+```
+# Default
+
+This is an image with a default width.
+
+![](/Users/kei/Downloads/airplane.jpg)
+
+
+# 50% width
+
+This is an image with width="50%".
+
+<img src="/Users/kei/Downloads/airplane.jpg" width="50%"/>
+
+# "full" width
+
+This is an image with width="full".
+
+<img src="/Users/kei/Downloads/airplane.jpg" width="full"></img>
+
+
+```
+
+![](images/note-images.png "Image width")
 
 
 ## Code

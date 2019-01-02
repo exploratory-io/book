@@ -130,6 +130,7 @@
    * [Save as PNG/SVG](viz/save.md)
    * [Save as Exploratory Data File](viz/save-as-edf.md)
    * [Share/Schedule](viz/schedule.md)
+   * [URL Link](viz/urllink.md)
 
 
 * [Analytics](analytics.md)
