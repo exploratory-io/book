@@ -1,5 +1,13 @@
 # Release Note
 
+## v5.0.1.0
+
+Released on 1/02/2019
+
+### Bug Fixes
+
+- Google BigQuery Data Import Dialog does not show tables under schema tree.
+
 ## v5.0.0.9 (Windows Only)
 
 Released on 12/10/2018
