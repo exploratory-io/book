@@ -63,23 +63,24 @@ For the detail of the metrics, we recommend reading [this online textbook](https
 ## Analytics Properties
 Time Series Forecasting Analytics View has following other properties.
 
-- Forecasting Time Period - Length of the forecasting period.
-- Yearly Seasonality - By default, whether to use yearly seasonality is automatically determined, but you can explicitly specify it here.
-- Weekly Seasonality - By default, whether to use weekly seasonality is automatically determined, but you can explicitly specify it here.
-- Strength of Seasonality - Controls the weight of seasonality taken into account in the forecasting.
-- Capacity (Cap) Value - Largest possible value to be forecasted. e.g. Size of entire market, etc.
-- Potential Changepoints - You can specify points of time at which trend could have changed, as candidates of changepoints.
-- Uncertainty Interval - Probability which is covered by uncertainty interval.
-
-## Analytics Properties
   * Forecasting Time Period - Length of periods (e.g. days, months, years...) to forecast.
+  * Uncertainty Interval - Controls the width of displayed uncertainty intervals. The default is 0.8. Probability which is covered by uncertainty interval.
+  * Simulations for Uncertainty Interval - Number of simulations to estimate uncertainty interval.
   * Yearly Seasonality - By default, whether to use yearly seasonality is automatically determined, but you can explicitly specify it here.
   * Weekly Seasonality - By default, whether to use weekly seasonality is automatically determined, but you can explicitly specify it here.
   * Strength of Seasonality - Controls the weight of seasonality taken into account in the forecasting.
   * Trend Upper Limit - Upper Limit of trend. Largest possible value for the trend to be forecasted. e.g. Size of entire market, etc.
   * Trend Lower Limit - Lower limit of trend. Takes effect only when Trend Upper Limit is specified.
+  * Number of Potential Changepoints - Number of automatically selected candidates for changepoints. Used when Potential Changepoints are not specified.
+  * Flexibility of Changepoint Selection - Larger value makes the trend line more flexible, by allowing more changepoints.
   * Potential Changepoints - You can specify points of time at which trend could have changed, as candidates of changepoints.
-  * Uncertainty Interval - Controls the width of displayed uncertainty intervals. The default is 0.8. Probability which is covered by uncertainty interval.
+  * MCMC Samples for Full Bayes - If a value greater than 0 is set, full Bayesian inference with the specified number of MCMC samples is performed. If 0, which is the default, is set, MAP estimation is performed instead of full Bayesian inference.
+  * How to Fill NA - How to fill NA after aggregation of data. There are following options. The default is No Fill.
+    * No Fill
+    * Fill with Previous Value
+    * Fill with Zero
+    * Linear Interpolation
+    * Spline Interpolation
   * Test Mode - When this option is set to TRUE, the last part of the input data for the period specifed by "Forecasting Time Period" is not used for training data, and kept to test predictive performance of the model.
 
 ## R Package
