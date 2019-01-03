@@ -19,6 +19,8 @@ Input data should contain following columns.
       - MacQueen
     * Normalize Variable Columns - Whether to normalize Variable Columns before clustering.
     * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
+  * Data Preprocessing
+    * Sample Data Size - Number of rows to sample before clustering them.
   * Error Bar
     * Type of Error Bar - Type of error bar. This can be...
       - Standard Error
