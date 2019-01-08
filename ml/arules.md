@@ -21,10 +21,11 @@ You can access from 'Add' (Plus) button.
 
 ### Parameters
 
-* Minimum Item Length, Maximum Item Length (Optional) - As default, minlen is 1 and maxlen is 10. How many subjects should appear in a rule.
+* Minimum Item Length, Maximum Item Length (Optional) - As default, minlen is 1 and maxlen is 5. How many subjects should appear in a rule.
 * Minimum Support Value, Maximum Support Value (Optional) - As default, min_support is 0.1 and max_support is 1. The range of support value for results.
 * Minimum Confidence Value (Optional) - The default is 0.5. The minimum value of confidence.
 * Left Hand Side Items, Right Hand Side Items (Optional) - The default is NULL. What subjects should come to lhs or rhs.
+* Maximum Number of Items in a Basket - Maximum number of most frequent items in a basket to keep before running rule mining algorithm (Apriori algorithm). Less frequent items are dropped so that rule mining completes within reasonable time.
 
 ## Step-by-Step Tutorial with Grocery store data.
 
