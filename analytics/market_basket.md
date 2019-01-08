@@ -24,6 +24,8 @@ Input data should contain following columns.
       * Support
       * Confidence
       * Lift
+  * Data Preprocessing 
+    * Maximum Number of Items in a Basket - Maximum number of most frequent items in a basket to keep before running rule mining algorithm (Apriori algorithm). Less frequent items are dropped so that rule mining completes within reasonable time.
 
 ## How to Use This Feature
 1. Click Analytics View tab.
