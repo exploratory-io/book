@@ -194,10 +194,15 @@ data. By clicking Preview button, you will see the data returned in Exploratory
 
 ![](https://cdn-images-1.medium.com/max/1600/1*hjL-_4Yt68TUhJ5YNPG4MQ.png)
 
+### Known issues
+
+Currently, non ascii column names are not imported correctly.
+
+
+
 ### Summary
 
 So now you know how you can install/setup Dremio and ODBC driver on your machine
 and access Dremio data from Exploratory. So on the next couple of blog posts,
 I’ll talk about how you can query YOUR data (JSON file, MongoDB, Redshift, etc)
 with Dremio and Exploratory.
-
