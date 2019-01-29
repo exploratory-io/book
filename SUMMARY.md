@@ -11,8 +11,11 @@
 
 * [Product Features]()
   * [Dashboard](markdown/markdown-dashboard.md)]
+  * [Dashboard (日本語)](markdown/markdown-dashboard_ja.md)]
   * [Note](markdown/markdown-note.md)
+  * [Note (日本語)](markdown/markdown-note_ja.md)
   * [Presentation Slides](markdown/markdown-slide.md)
+  * [Presentation Slides (日本語)](markdown/markdown-slide_ja.md)
   * [Steps (Right-hand side)](steps.md)
   * [Branch](branch/branch.md)
   * [Export](export/export.md)
