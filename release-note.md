@@ -1,5 +1,13 @@
 # Release Note
 
+## v5.0.2.0 (Mac Only)
+
+Released on 2/04/2019
+
+### Bug Fixes
+- Decision Tree and Market Basket Analysis don't show Japanese characters correctly.
+
+
 ## v5.0.1.0
 
 Released on 1/02/2019
