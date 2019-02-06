@@ -55,6 +55,9 @@ For the Heatmap, you can assign a column with continuous values (number column).
 
 For the Contour chart, you can assign a column with either discrete values (text column) or continuous values (number column) 
 
+## Word Cloud
+
+For the Word Cloud chart, you can assign a column with either discrete values (text column) or continuous values (number column) 
 
 
 
