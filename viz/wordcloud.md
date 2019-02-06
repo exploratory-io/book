@@ -4,7 +4,7 @@
 
 ## Column Assignments
 
-* X-Axis - Assign a column that contains words that you want to plot. 
+* Word - Assign a column that contains words that you want to plot. 
 * Color By - Assign a column that contains word frequency. Take a look at [Color](color.md) section for more details.
 
 
