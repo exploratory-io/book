@@ -10,7 +10,7 @@
 
 ## Configuration
 
-![](images/wordcloud_config.png)
+![](images/wordcloud-config.png)
 
 ### Rotated Text Ratio (0-1)
 This controls the ratio of words displayed vertically (90 degree rotation). For example, if you set 0.5 half of the words are displayed vertically.

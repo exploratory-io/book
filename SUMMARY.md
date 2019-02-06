@@ -117,6 +117,8 @@
    * [Map](viz/map.md)
    * [Heatmap](viz/heatmap.md)
    * [Contour](viz/contour.md)
+   * [Word Cloud](viz/wordcloud.md)
+   * [Word Cloud (日本語)](viz/wordcloud-jp.md)
    * [Trend Line](viz/trend-line.md)
    * [Small Multiple](viz/small-multiple.md)
    * [Window Calculation](viz/window-calc.md)
