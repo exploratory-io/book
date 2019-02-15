@@ -1,5 +1,13 @@
 # Release Note
 
+## v5.0.3.0
+
+Released on 2/14/2019
+
+### Bug Fixes
+- Google BigQuery Data Import fails with Response Too Large To Return.
+
+
 ## v5.0.2.0 (Mac Only)
 
 Released on 2/04/2019
