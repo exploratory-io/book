@@ -8,6 +8,14 @@ Released on 2/14/2019
 - Google BigQuery Data Import fails with Response Too Large To Return.
 
 
+## v5.0.1.0 (Installer version, Windows Only)
+
+Released on 2/13/2019
+
+Repackaged 5.0.1.0 release with the Installer. You can double click the downloaded EXE file to start the installer. Once you finish the installation, you will have shortcuts on Desktop and Program Menu. You can also uninstall Exploratory from the Windows Control Panel. 
+
+The product functionality is the same as 5.0.1.0 release. 
+
 ## v5.0.2.0 (Mac Only)
 
 Released on 2/04/2019
