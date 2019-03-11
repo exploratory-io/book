@@ -8,9 +8,9 @@
 
 Twitterの[@KanAugust](https://twitter.com/KanAugust) をフォローするか、私たちのブログをサブスクライブしてください: http://blog.exploratory.io .
 
-## Mac OS X はサポートされていますか ?
+## Mac OS X / macOSはサポートされていますか ?
 
-サポートしています! 公式的には、El Capitan と Yosemiteをサポートしていますが、Mavericksでも問題なく動くはずです.
+サポートしています! 公式的には、Mojave、 High Sierra、 Sierra、 El Capitan と Yosemiteをサポートしていますが、Mavericksでも問題なく動くはずです.
 
 ## Windowsはサポートされていますか ?
 
