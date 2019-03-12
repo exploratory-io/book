@@ -71,7 +71,7 @@ Also, here are the direct links to:
 
 Exploratory Desktop requires an internet connection for authenticating the users, downloading the required software like Git and R if you don't have them installed yet, accessing to remote data sources like Google Analytics, Web Scraping, and sharing Data, Chart, and Note.
 
-If you use a proxy server at your organizations to connect to the internet, as default it automatically tries to detect the proxy server and connect through the server. This should work for most of the times, but unfortunately it doesn't sometimes. In such cases you can manually add your proxy server information in Configuration dialog UI.
+If you use a proxy server at your organizations to connect to the internet, as default it automatically tries to detect the proxy server and connect through the server. This should work for most of the times, but unfortunately it doesn't sometimes. In such cases you can manually add your proxy server information in Configuration dialog UI. Check <a target="_target" href="[https://exploratory.io/note/2ac8ae888097/Exploratory-WUs0zeW5QG](https://exploratory.io/note/2ac8ae888097/How-to-setup-Web-Proxy-on-your-Exploratory-Dekstop-xFn0fip7Zd)">this note</a> for setup details.
 
 ![](images/proxy-config.png)
 
