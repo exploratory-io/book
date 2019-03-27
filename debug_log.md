@@ -13,3 +13,16 @@ On Mac, Tools -> Diagnostics -> Show Log Files.
 On Windows, Tools -> Diagnostics -> Show Log Files.
 
 ![](images/logfile_menu_win.png)
+
+
+# Startup log file for debugging
+
+In the following cases, we need another log file that contains the startup logs.  
+
+* Exploratory doesn't start.
+* Exploratory hangs at the splash screen.
+* You cannot find .exploratory directory under your home directory.
+
+The startup log file location is following. 
+
+`<Your Home Directory>/.exploratory_startup.log`
