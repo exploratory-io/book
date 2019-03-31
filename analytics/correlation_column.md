@@ -6,6 +6,8 @@ Calculates Correlations among columns.
 Input data should contain numeric columns.
 
   * Variable Columns - Numeric columns among which correlations are calculated.
+  * Group By - Categorical column to group by. If you specify this, the analytics runs for each group.
+
 
 ## Analytics Properties
   * Method - Method to calculate correlations. The default is "Pearson". This can be:
@@ -31,6 +33,12 @@ Input data should contain numeric columns.
 "Correlation Matrix" View displays correlations with Heatmap. Red color means it has positive correlation and Blue color means it has negative correlation. The darker the color, the stronger the correlation.
 
 ![](images/cor_by_column_matrix.png)
+
+### "Scatter Matrix" View
+"Scatter Matrix" View displays the actual data distributions for each variable combination.
+
+![](images/cor_by_column_scattermatrix.png)
+
 
 ### "Positive Correlations" View
 "Positive Correlations" View displays the most positive 100 correlations. You can click Column Header for Correlation to sort the data by Correlation value.
