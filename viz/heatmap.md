@@ -1,12 +1,14 @@
 # Heatmap
 
-![](images/heatmap.png)
+![](images/heatmap1.png)
 
 ## Column Assignments
 
 * X-Axis - Assign a column you want to show at X-Axis. You can assign any column with discrete values (text or number column). If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc.   
 * Y-Axis - Assign a column you want to show at Y-Axis. You can assign any column with discrete values (text or number column). If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc.  
 * Color - Take a look at [Color](color.md) section for more details.
+* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
+
 
 ## Layout Configuration
 
