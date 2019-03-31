@@ -34,9 +34,9 @@ For the boxplot chart, you can assign a column with discrete values (text column
 
 For the histograom, you can assign a column with discrete values (text column) to make it grouped histogram chart.
 
-## Scatter chart 
+## Scatter / Bubble chart 
 
-For the scatter chart, you can assign a column with either discrete values (text column) to make it a grouped chart or continuous values (number column) to make it a grouped chart by value buckets. 
+For the Scatter or Bubble chart, you can assign a column with either discrete values (text column) to make it a grouped chart or continuous values (number column) to make it a grouped chart by value buckets. 
 
 
 ## Map (Long/Lat) 
