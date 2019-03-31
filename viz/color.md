@@ -26,17 +26,28 @@ For Line chart, you can assign a column with discrete values (text column) to ma
 For Area chart, you can assign a column with discrete values (text column) to make it a multiple series area chart.
 
 
-## Grouped Boxplot chart 
-
-For the boxplot chart, you can assign a column with discrete values (text column) to make it grouped boxplot chart.
-
 ## Histogram
 
-For the histograom, you can assign a column with discrete values (text column) to make it grouped histogram chart.
+For the Histograom, you can assign a column with discrete values (text column) to make it grouped Histogram chart.
 
-## Scatter / Bubble chart 
+## Violin 
+
+For the Violin chart, you can assign a column with discrete values (text column) to make it grouped Violin chart.
+
+
+## Scatter / Bubble 
 
 For the Scatter or Bubble chart, you can assign a column with either discrete values (text column) to make it a grouped chart or continuous values (number column) to make it a grouped chart by value buckets. 
+
+
+## Boxplot 
+
+For the Boxplot chart, you can assign a column with discrete values (text column) to make it grouped Boxplot chart.
+
+## Density Plot
+
+For the Density Plot chart, you can assign a column with discrete values (text column) to make it grouped Density Plot.
+
 
 
 ## Map (Long/Lat) 
