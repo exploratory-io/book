@@ -16,9 +16,9 @@ You can visualize the ratio of the data in pie/ring shapes. It is suitable to co
 
 ## Layout Configuration
 
-* Show Percentages 
-* Show Values 
-* Show Labels 
-* Hole Size 
+* Show Percentages  - Show percentage numbers on the plot area.
+* Show Values - Show the actual numbers on the plot area.
+* Show Labels - Show the category names on the plot area.
+* Hole Size - The ratio of the hole size. If you set 0, it becomes a pie chart.
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
