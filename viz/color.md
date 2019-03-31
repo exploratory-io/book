@@ -26,6 +26,11 @@ For Line chart, you can assign a column with discrete values (text column) to ma
 For Area chart, you can assign a column with discrete values (text column) to make it a multiple series area chart.
 
 
+## Pie / Ring 
+
+For Pie and Ring chart, you can assign a column with discrete values (text column) to create groups in colors.
+
+
 ## Histogram
 
 For the Histograom, you can assign a column with discrete values (text column) to make it grouped Histogram chart.
