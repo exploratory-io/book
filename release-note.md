@@ -1,10 +1,135 @@
 # Release Note
 
+## 5.1
+
+Released on 4/2/2019
+
+Check out all the new features in the following v5.1 introduction announcement blog posts!
+
+- [An Introduction to Exploratory v5.1!](https://blog.exploratory.io/an-introduction-to-exploratory-v5-1-fb11e153398d)
+
+And here is a list of the other enhancements and bug fixes.
+
+### Enhancements
+
+* Installation: Support Exploratory Repository Location Switch from System Configuration UI
+
+* Chart: Support "Include Outlier" in Histogram/Scatter/Violin/Density charts.
+* Chart: Order support in Rank Window function.
+* Chart: Duplicating a Chart now place the copied chart right next to the original chart.
+* Chart: Pivot/Table to remember the last sort position and direction.
+* Chart: Show/hide row header option support in Pivot.
+* Chart: Categorical column support on X/Y Axis in Bubble chart.
+* Chart: Support categorical colors on Pivot text measure.
+* Chart: Property key value shouldn't show if the 1st label is set as a title in Area Map.
+
+* Analytics: "Normalize Data" parameter is now supported in K-Means Clustering command dialog.
+* Analytics: Correlation Analytics View: Group By is supported.
+* Analytics: Correlation Analytics View: Scatter Matrix is added.
+* Analytics: Re-designed "Adjust Imbalanced Data" feature inside Analytics View and the command dialog.
+* Analytics: Chi-Square: Supported grouping functions for numeric variables
+* Analytics: T-Test: Properties such as "Paired" are supported.
+* Analytics: Support 'Return' key on Analytics Property Dialog to execute Analytics.
+
+* Wrangling: Single Select Column List now automatically selects the first item if a user types in to find a match
+* Wrangling: Introduce 'Add a new step' at the end of the right-hand side steps list
+* Wrangling: Mutate Dialog now shows a warning message when it detects non-ASCII numbers and special characters in an expression without quotes.
+* Wrangling: Support Aggregate Filter options on Filter Dialog
+* Wrangling: Support additional str functions (str_trunc, str_normalize, etc) for Column Header Menu
+* Wrangling: Slice command did not set n() as end argument by default.
+* Wrangling: Add column menu for Excel numeric date/time to POSIXct
+* Wrangling: Join command now supports 'Case Insensitive' mode.
+* Wrangling: Added Ascending and Descending Options to Rank Column Header Menu
+
+* Reports: When creating a Note, Data Frame was not searchable on Chart and Analytics Pickers.
+* Reports: Note: Improved the plain table style in Note.
+* Reports: Dashboard: You can set a Dashboard name when creating a new Dashboard with "Add to New Dashboard" menu inside Chart view.
+
+* Data Source: Support Account Switch for OAuth Data Sources (Google Sheet, Google Analytics, Google BigQuery, Stripe, MailChimp, Twitter Search)
+* Data Source: Enhance EDF import so that you can import a Report EDF from Data Frame Menu (and a Data Frame EDF from Report menu)
+
+* R Package: Support R Package Installation from inside a Project
+
+* Schedule: Data refresh on server is supported even when local file data sources, such as local CSV files, are joined.
+
+
+
+### Bug Fixes
+
+* Installation: when there is a .Rprofile sometimes it caused an error when opening the projects.
+* Installation: When upgrading Exploratory on Windows, 'Switch Repository Location' dialog was displayed even if the repository already existed.
+* Installation: OS locale was not automatically picked up on Windows.
+* Installation: An empty screen was shown after the fresh installation.
+* Installation: On Windows, sometimes Exploratory Desktop doesn't start and stuck with the Starting-up Screen.
+
+* Summary: NA value shouldn't ben shown as a bar Summary view.
+* Summary: Summary view failed when the data frame had only one column and that is POSIXct.
+
+* Chart: Histogram didn't show all the factor levels in legend.
+* Chart: Legend showed weird items if you assigned a numeric column with NA to Color in Boxplot.
+* Chart: Property Menu showed up far from the chart property icon
+* Chart: Other Group info didn't show up when you assigned a numeric column to Color.
+* Chart: Pivot sort icon was hidden if the text on the column header was long.
+* Chart: The bucket range was incorrect in Histogram when a column is assigned to Color.
+* Chart: Couldn't rename the locally installed GeoJSON maps.
+* Chart: Clicking on 'Show Details' menu inside Chart showed a loading icon forever with Histogram.
+* Chart: Clicking on 'Show Details' menu inside Chart did not show data when POSIXct/Date columns are assgined to X-Axis.
+* Chart: 'Show Detail' doesn't show the data with floating numbers in scatter.
+* Chart: Scatter chart with the range data din't work properly with % (Percent) Number Formatting for Y-Axis.
+* Chart: Order of chart thumbnails displayed by mouse hovering on data frame didn't reflect the order of the actual chart tabs.
+* Chart: % (Percent) number format should be done automatically if the % based aggregation function is used for Number.
+* Chart: Creating a new chart caused an error - "Cannot read property 'top' of undefined".
+
+* Analytics: PCA biplot chart showed NA in the chart legend.
+* Analytics: In Property dialog, hitting the "Enter" key for IME(Input Method Editor) selection caused the Analytics to be executed.
+* Analytics: Heatmap color palette option didn't work in Correlation analytics view.
+* Analytics: The order inside the chart legend in Survival Analysis was wrong when a logical column is assigned.
+* Analytics: Decision tree didn't show Japanese characters correctly.
+* Analytics: Canceling Analytics View raised error "Cannot read property 'evaluate' of null".
+* Analytics: Survival Curve: The green message text about Others group was not displayed when coming back from Table View
+* Analytics: Chart was sometimes not displayed even when it was generated before.
+* Analytics: Market Basket Analysis: Color was not utilized for indicating confidence of rules.
+* Analytics: Numbers in scientific notation was not shown correctly in Linear Regression.
+* Analytics: After the PC wakes up from the sleep mode, adding a new analytics caused an error.
+* Analytics: a chart from a different Analytics in a different data frame was displayed.
+* Analytics: Setting a random seed by default for Analytics View to be able to reproduce the same result.
+* Analytics: Exploratory process did not go away even after shutting down the app after using Time Series Forecasting.
+
+* Wrangling: In Create Bin dialog, Chart was not displayed when the previous step was disabled.
+* Wrangling: In Column Selection Dialog, selecting columns sometimes caused an incorrect column order.
+* Wrangling: Multi-Step Selection did not work when the Source step is also selected along with other steps.
+* Wrangling: 'Clean Column Names' did not handle non-ASCII characters well.
+* Wrangling: In Create Bin dialog, description text was cut off by chart bottom
+* Wrangling: In Custom R Command dialog, join target columns were not suggested when typing join command.
+* Wrangling: In Filter Dialog, the list of values did not show all the values from a given column.
+* Wrangling: In mutate step, another token was created after empty token
+* Wrangling: In Table View, 'Rows to show' dropdown didn't work if there were less than 500 rows.
+* Wrangling: 'Change Data Type to Character' ended up converting the columns to Factor data type when selecting multiple columns.
+* Wrangling: Creating a new step didn't work when Auto-Run mode is set to 'Off'.
+* Wrangling: 'New Token' button inside Mutate step was sometimes disabled.
+* Wrangling: 'Convert Excel Numeric to Date' menu was not available when multiple columns are selected.
+
+* Reports: Clicking URL link opened another application window instead of opening an external browser in Note.
+* Reports: Position of an embedded chart with full width option was off in Note when TOC was enabled.
+* Reports: Restoring Dashboard from the history didn't work.
+* Reports: Dashboard rendering failed and showed an error: "Error at running Dashboard - Error in file(con, "w") : cannot open the connection".
+* Reports: Dashboard: Unnecessary padding showed between rows when Numbers are inserted in Dashboard.
+
+* Data Source: Data import failed with data which contains date data type columns whose date range is too small.
+* Data Source: In Data Source dialog, after account is switched, viewID (for GA) and Sheet (for Google Sheets) didn't get updated automatically.
+* Data Source: Dremio Data Source didn't handle Data type correctly.
+* Data Source: Google BigQuery Data Source raised "Response Too Large To Return" error and could not import data.
+* Data Source: Enhance ODBC Database Connection to detect ODBC drivers and change to timeout in 30 sec for getting a connection.
+
+* R Script: Copied and pasted script on R Script Data Source didn't work on Windows because of the wrong new line feed character handling
+
+
 ## v5.0.3.0
 
 Released on 2/14/2019
 
 ### Bug Fixes
+
 - Google BigQuery Data Import fails with Response Too Large To Return.
 
 
@@ -12,15 +137,16 @@ Released on 2/14/2019
 
 Released on 2/13/2019
 
-Repackaged 5.0.1.0 release with the Installer. You can double click the downloaded EXE file to start the installer. Once you finish the installation, you will have shortcuts on Desktop and Program Menu. You can also uninstall Exploratory from the Windows Control Panel. 
+Repackaged 5.0.1.0 release with the Installer. You can double click the downloaded EXE file to start the installer. Once you finish the installation, you will have shortcuts on Desktop and Program Menu. You can also uninstall Exploratory from the Windows Control Panel.
 
-The product functionality is the same as 5.0.1.0 release. 
+The product functionality is the same as 5.0.1.0 release.
 
 ## v5.0.2.0 (Mac Only)
 
 Released on 2/04/2019
 
 ### Bug Fixes
+
 - Decision Tree and Market Basket Analysis don't show Japanese characters correctly.
 
 
@@ -37,6 +163,7 @@ Released on 1/02/2019
 Released on 12/10/2018
 
 ### Bug Fixes
+
 - Windows Defender SmartScreen raises Warning at the first startup.
 - Exploratory crashes at login.
 
