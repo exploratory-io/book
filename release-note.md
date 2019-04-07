@@ -1,5 +1,16 @@
 # Release Note
 
+## 5.1.3
+
+Released on 4/6/2019
+
+### Bug Fixes
+
+* Installation: Creating a new project failed with error message "cannot run gpg: No such file or directory".
+* Wrangling: Labels on steps shown in the right-hand side wrangling step pane were missings for model summary/prediction related steps.
+* Wrangling: When selecting a data frame that has a build model step, an error with following message was raised. - "Cannot read property 'getNRow' of undefined"
+
+
 ## 5.1
 
 Released on 4/2/2019
