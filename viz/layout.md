@@ -18,8 +18,13 @@ Generic Charts includes following chart types.
 * Bar 
 * Line 
 * Area 
+* Pie / Ring 
 * Histogram
+* Density Plot 
+* Scatter 
+* Bubble
 * Boxplot
+* Violin
 * Error Bar
 * Heatmap 
 * Contour 

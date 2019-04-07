@@ -8,13 +8,13 @@
 
 Twitterの[@KanAugust](https://twitter.com/KanAugust) をフォローするか、私たちのブログをサブスクライブしてください: http://blog.exploratory.io .
 
-## Mac OS X はサポートされていますか ?
+## Mac OS X / macOSはサポートされていますか ?
 
-サポートしています! 公式的には、El Capitan と Yosemiteをサポートしていますが、Mavericksでも問題なく動くはずです.
+サポートしています! 公式的には、Mojave、 High Sierra、 Sierra、 El Capitan と Yosemiteをサポートしていますが、Mavericksでも問題なく動くはずです.
 
 ## Windowsはサポートされていますか ?
 
-まずWindows 10 と8 をサポートするために現在開発中です。正確な日程をお約束することはできませんが、おそらく、もうすぐにWindowsにも対応する予定です。その時が来たら正式に発表しますので、少しお待ち下さい。
+Windows 10、8、7をサポートしております。
 
 ## Linuxはサポートされていますか ?
 
@@ -28,23 +28,7 @@ Linuxでも同様に動くようにする予定です。
 
 Exploratoryは、ユーザーの認証を行ったり、もしあなたがまだインストールしていない場合は、GitやRのようなExploratoryに必要なソフトウェアをダウンロードしたり、Google AnalyticsやWebスクレイピングのようなリモートのデータにアクセスしたり、ノートを公開するためにインターネットに接続している必要があります。ただし、最初のセットアップさえ終わっていれば、オフラインでもExploratoryでデータを分析していくことはできます。
 
-もし、インターネットに接続するために、プロキシサーバーを使っている場合は、デフォルトで、自動的にプロキシサーバーを見つけようとしたり、サーバーを通じて接続しようとします。これは、ほとんどの場合うまく作動しますが、特定のケースにおいてうまくいきません。そのときは、手動で、Mac OS Xでは~/.exploratory、Windowsでは、<your_user_home_folder>/.exploratoryのところに置かれているuserconf.json ファイルにあなたのプロキシサーバーの情報を加えることで解決することができます。例えば、下記のような形になります。
-
-**Set a proxy server:**
-
-```
-{
-   "user": "dummy1",
-   "proxy": {
-     "server": "<your_proxy_server>",
-     "port": <port_number>,
-     "user": "<username>",
-     "password": "<password>"
-   }
-}
-```
-
-いったんプロキシサーバーの情報をセットすると、ファイルを保存してExploratoryを再起動してください。もしそれでもまだネットワークのトラブルに合う場合は、support@exploratory.ioまでご連絡ください。
+もし、インターネットに接続するために、プロキシサーバーを使っている場合は、デフォルトで、自動的にプロキシサーバーを見つけようとしたり、サーバーを通じて接続しようとします。これは、ほとんどの場合うまく作動しますが、特定のケースにおいてうまくいきません。そのときは、<a target="_target" href="https://exploratory.io/note/2ac8ae888097/Exploratory-WUs0zeW5QG">こちらのノート</a>の手順に従ってプロキシサーバーを設定してください。もしそれでもまだネットワークのトラブルに合う場合は、support@exploratory.ioまでご連絡ください。
 
 ## 私は、すでにR (rstats) 3.2をインストールしていますが、今すぐに3.3にアップグレードしたくありません。
 
