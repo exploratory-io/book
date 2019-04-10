@@ -6,7 +6,7 @@ Released on 4/10/2019
 
 ### Bug Fixes
 * Wrangling: Summarize step with n_distinct function (Number of Unique Values) hanged.
-* Chart: Pivot UI disappears when you remove the 2nd of 3 value columns.
+* Chart: Pivot UI disappeared when you remove the 2nd of 3 value columns.
 * Analytics: Correlation Analytics View: Axis and actual values were not matching in scatter matrix.
 
 
