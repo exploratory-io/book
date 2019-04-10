@@ -1,5 +1,15 @@
 # Release Note
 
+## 5.1.4
+
+Released on 4/10/2019
+
+### Bug Fixes
+* Wrangling: Summarize step with n_distinct function (Number of Unique Values) hanged.
+* Chart: Pivot UI disappears when you remove the 2nd of 3 value columns.
+* Analytics: Correlation Analytics View: Axis and actual values were not matching in scatter matrix.
+
+
 ## 5.1.3
 
 Released on 4/6/2019
