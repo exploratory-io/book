@@ -1,10 +1,24 @@
 # Release Note
 
+## 5.1.5
+
+Released on 4/12/2019
+
+### Bug Fixes
+
+* General: Parameter Dialog did not show LOV for Step Selection for parameter values.
+* Data Source: Could not open Data Import Dialog for Databases.
+* Installation: Mac: Repository Selection Dialog was not displayed with Japanese even with Japanese MacOS.
+* Data Wrangling: When a Data Frame was selected, error was raised with message "TypeError: Cannot read property 'getName' of undefined".
+* Chart: Scatter Plot: Trend line did not show up when Date column was assigned to color with function that returns number, such as Year, Quarter, Month, Day function.
+
+
 ## 5.1.4
 
 Released on 4/10/2019
 
 ### Bug Fixes
+
 * Wrangling: Summarize step with n_distinct function (Number of Unique Values) hanged.
 * Chart: Pivot UI disappeared when you remove the 2nd of 3 value columns.
 * Analytics: Correlation Analytics View: Axis and actual values were not matching in scatter matrix.
