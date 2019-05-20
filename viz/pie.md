@@ -14,6 +14,11 @@ You can visualize the ratio of the data in pie/ring shapes. It is suitable to co
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
 * Style - You can choose Pie or Ring style. 
 
+## Highlight 
+
+You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](viz/highlight.md) for the detail. 
+
+
 ## Layout Configuration
 
 * Show Percentages  - Show percentage numbers on the plot area.

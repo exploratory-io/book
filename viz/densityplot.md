@@ -13,6 +13,10 @@ You can show the distribution of the data by the curved lines. This chart is a v
 * Include Outlier - You can uncheck to exclude the outlier values. 
 
 
+## Highlight 
+
+You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](viz/highlight.md) for the detail. 
+
 ## Layout Configuration
 
 

@@ -20,6 +20,15 @@ You can select one of following number of buckets options. The default is `Autom
 * 25
 * 50
 * 100
+* 200
+* 500
+* 1000
+
+
+## Highlight 
+
+You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](viz/highlight.md) for the detail. 
+
 
 ## Layout Configuration
 

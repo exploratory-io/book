@@ -13,6 +13,11 @@ You can show the distribution of the data with "Violin" like shapes. This chart 
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
 * Include Outlier - You can uncheck to exclude the outlier values. 
 
+## Highlight 
+
+You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](viz/highlight.md) for the detail. 
+
+
 ## Layout Configuration
 
 ![](images/violin2.png)
