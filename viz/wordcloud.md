@@ -5,7 +5,7 @@
 ## Column Assignments
 
 * Word - Assign a column that contains words that you want to plot. 
-* Color By - Assign a column that contains word frequency. Take a look at [Color](color.md) section for more details.
+* Color By - Assign a column that contains word frequency. The values should be positive numeric values. It doesn't show words with 0 or negative values. Take a look at [Color](color.md) section for more details.
 
 
 ## Configuration
