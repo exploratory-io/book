@@ -2,6 +2,50 @@
 
 ## 5.1.5
 
+Released on 5/17/2019
+
+### Enhancements
+
+* Chart Highlight Support
+* Support Sorting for Boxplot and Bubble chart.
+* Adding a Comment feature for Chart and Analytics.
+* Support reverse color order when a categorical column is assigned to the Color of Chart
+* Support more than 100 buckets for Histogram
+* Treasure Data Support
+
+### Bug Fixes
+
+* Exploratory hanged at start up with splash screen on Windows on some machines.
+* On Separate Dialog, the separator character was not updated and always changed back to Comma for Date columns
+* Trend line didn't show if you set numeric column at color and chose "Data Range for Each Group"
+* Database import failed with error code 3 when database password includes quote characters.
+* Unsync X axis option for Repeat By feature didn't work in Line chart.
+* When updating Proxy Configuration on System Configuration Dialog, the Re-login button did not respond if authentication for the proxy server fails
+* Trendline support when Color is Numeric in Scatter/Bubble charts.
+* Chart legend didn't show all values in Scatter if the sync x axis option was off.
+* Pie chart failed with "Error: error code 3" error if the column name contained backticks.
+* Error "C stack usage is too close to the limit” was raised when running 'Correlation by Column' Analytics  originally created with Exploratory v4.x.
+* Error 'All "x" values are identical' was raised when running 'Normality Test' Analytics View with a column with a same value.
+* On Custom R Command Dialog, target columns for join command was not suggested when the target data frame name had special characters
+Support "Do not auto-detect the data type" option for CSV Import
+* Summarize step was not created when the Summarize Dialog was opened from a column header menu
+* On Filter dialog, Summarize function always went back to Mean where it should keep the previously selected function
+* When re-open a data frame, it didn't open the previously opened chart when the chart was duplicated from other chart
+* With the column name search, selecting a column by Enter key did not set the selected Column
+* PCA Analytics didn't show NA in the legend.
+* Boxplots got very skinny when Color and Repeat By are assigned.
+* Exporintg Note to Word format failed when it had a pivot table with only measures.
+* Missing Value Handling's 'None' option didn't work as expected in Line chart.
+* Adding a new chart did not add the new chart tab right after the the current chart tab.
+* Incorrect default value was set for Color Opacity on Area Chart.
+* The Correlation information was not shown inside the Trendline pop-up in Bubble chart.
+* Performance Improvement when navigating among Data Frames, Steps, Chart tabs, and Analytics tabs
+* Y-Axis values should be the last in the Chart pop-up.
+* Publishing a Note with reference to an already removed Chart/Analytics failed with error message "Cannot read property 'dependencies' of undefined".
+
+
+## 5.1.5
+
 Released on 4/12/2019
 
 ### Bug Fixes
