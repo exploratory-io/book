@@ -18,6 +18,7 @@
   * [Presentation Slides (日本語)](markdown/markdown-slide_ja.md)
   * [Steps (Right-hand side)](steps.md)
   * [Branch](branch/branch.md)
+  * [Parameter](parameter/parameter.md)
   * [Export](export/export.md)
   * [Share](share/shae.md)
     * [Chart](share/chart.md)
