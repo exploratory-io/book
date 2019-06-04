@@ -1,5 +1,26 @@
 # Release Note
 
+## 5.2.1
+
+Released on 6/3/2019
+
+This release is to certify R 3.6. The installation of v5.2.1 will automatically install R 3.6, and this will make all the R packages you have installed in the past invalid and you will be asked to re-install them so that they will be compatible with R 3.6.
+
+### Bug Fixes
+
+* Windows: Creating the repository on a drive other than C: drive failed.
+* The trend line option was not available for Bubble chart when a date column is assigned to X-Axis.
+* Summary View was not displayed if a data frame had a column whose name was "msg".
+* Could not open the CSV Import Dialog for a data source created prior to version 5.2.0.
+* For PostgreSQL Data Source, now it automatically adds double quotes for the table name part of the SQL query when clicking on the table name.
+* When adding a new parameter, a validation message was not shown when you entered duplicated parameter name
+* On the Step Menu, 'Convert to Custom R Command' was not working.
+* TOC was missing in the exported html if you exported a Note in side-by-side mode.
+* Wordcloud was not rendered when you assigned a column whose values are all NAs or all 0.
+* Timeseries Forcasting Analytics showed dotted line for Yearly Trend.
+* Chart level Filter was not working for Wordcloud chart.
+* Chart failed after canceling the long-running process by clicking the cancel button.
+
 ## 5.2
 
 Released on 5/17/2019
