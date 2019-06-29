@@ -82,11 +82,11 @@ No. we check the R version that is installed on your pc, but as long as it is 3.
 
 Just download Exploratory Desktop by simply clicking on Download button on the download page. It will install the latest certified version of R as part of the initial setup. For Mac, you will be asked to enter your Mac OS admin username and password, this is because R installation would require the system administrator's privilege. We don't capture this information, it's completely done by R installer itself.
 
-For Windows, you need to perform this initial step with a user account with Admin privilege. If you don't hvae Windows Admin privilege, you can follow the instruction described in [this note](https://exploratory.io/note/hideaki/Installing-Exploratory-without-Admin-Privilege-Windows-2999119790598934).
+For Windows, you need to perform this initial step with a user account with Admin privilege. If you don't have Windows Admin privilege, you can follow the instruction described in [this note](https://exploratory.io/note/hideaki/Installing-Exploratory-without-Admin-Privilege-Windows-2999119790598934).
 
 ## I have installed R with Homebrew on Mac OS X, does that work ?
 
-Unfortunately the configuration of R installed with Homebrew is not supported currently. Exploratory Desktop requires a set of R packages to make your data wrangling and analysis more efficient from the day one. To install those packages we use the binary versions of the packages, which assume that R is installed with the standard installer with '.pkg' from CRAN. If you would like to use Exploratory Desktop, the workaround is to uninstall R with Homebrew with the command below, then restart Exploratory Desktop, which will install the latest cerR 3.4 with the standard installer from CRAN.
+Unfortunately the configuration of R installed with Homebrew is not supported currently. Exploratory Desktop requires a set of R packages to make your data wrangling and analysis more efficient from the day one. To install those packages we use the binary versions of the packages, which assume that R is installed with the standard installer with '.pkg' from CRAN. If you would like to use Exploratory Desktop, the workaround is to uninstall R with Homebrew with the command below, then restart Exploratory Desktop, which will install the latest R 3.6 with the standard installer from CRAN.
 
 ```
 > brew uninstall r
@@ -146,7 +146,7 @@ You can invite others to view your insights (Data, Chart, or Note) privately by 
 
 ## How many users can I share my insights (Chart / Data / Note)?
 
-If you like to share only the named users, which means they will need to have their accounts created at Exploratory Cloud and sign in first, you can share as many users as your plan supports. If you like to share with anybody without asking them to create the accounts, then you could share a uniquely generated URL for each insight with them. This is a convenient way to share with a mass audience, though this means anybody happens to have this URL can open the insights. There is no limitation of how many people can access to your insights with this URL share option.
+If you like to share only the named users, which means they will need to have their accounts created at Exploratory Cloud(https://exploratory.io) and sign in first, you can share as many users as your plan supports. If you like to share with anybody without asking them to create the accounts, then you could share a uniquely generated URL for each insight with them. This is a convenient way to share with a mass audience, though this means anybody happens to have this URL can open the insights. There is no limitation of how many people can access to your insights with this URL share option.
 
 You can also share your insights publicly with a unlimited number of people regardless of the plan you subscribe.
 
