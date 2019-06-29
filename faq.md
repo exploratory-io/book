@@ -4,7 +4,7 @@
 
 ## I have very sensitive data. Is my data safe?
 
-Any data you import into Exploratory Desktop always stays on your PC and never leave your PC unless you explicitly publish (share) it to Exploratory Cloud (exploratory.io). If you decided to publish the data to Exploratory Cloud for sharing or scheduling, you can share it in a private way so that so that only you and others you have invited can view it. The data is also stored in encrypted. Please take a look at our [Privacy Policy](https://exploratory.io/privacy/) for more details.
+Any data you import into Exploratory Desktop always stays on your PC and never leave your PC unless you explicitly publish (share) it to Exploratory Cloud (exploratory.io). If you decided to publish the data to Exploratory Cloud for sharing or scheduling, you can share it in a private way so that only you and others you have invited can view it. The data is also stored encrypted. Please take a look at our [Privacy Policy](https://exploratory.io/privacy/) for more details.
 
 ## Where exactly my data is stored after importing?
 
@@ -29,13 +29,13 @@ It is US dollars.
 
 ## What happens when I change my subscription plan periods between Yearly and Monthly?
 
-If you change the subscription plan period from Monthly to Yearly, the plan will start from the date you update through the next 12 month periods. If you change it from Yearly to Monthly, then we’ll refund you the amount for the months that have not been used yet. Note that given the Yearly plan has a discount compared to the Monthly plan, the amount of discount that have been made for the 'already' subscribed period will be charged separately.
+If you change the subscription plan period from Monthly to Yearly, the plan will start from the date you update through the next 12 month periods. Prorated amount for the rest of the month is subtracted from the amount charged for the newly starting Yearly plan. If you change it from Yearly to Monthly, then the amount for the rest of the year is credited to your account, and will be used for upcoming monthly charges until it is used up, at which time charges for the monthly plan will resume. Note that given the Yearly plan has a discount compared to the Monthly plan, the charges for monthly plan will resume sooner than the end of the original yearly plan.
 
 ## What happens when I upgrade or downgrade my subscription plan between Personal and Business?
 
-If you are on the Monthly plan, you will be charged with the new price from the next month.
+When you downgrade, the prorated amount difference for the rest of the period (year or month) will be subtracted from the charge for the new plan at the beginning of the next period.
 
-If you are on the Yearly plan, we will refund you for the difference when you downgrade, or we will charge you the extra for the difference when you upgrade.
+When you upgrade, the prorated amount difference for the rest of the period will be added to the charge for the new plan at the beginning of the next period.
 
 
 ## How can I cancel my plan?
