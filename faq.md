@@ -82,7 +82,7 @@ No. we check the R version that is installed on your pc, but as long as it is 3.
 
 Just download Exploratory Desktop by simply clicking on Download button on the download page. It will install the latest certified version of R as part of the initial setup. For Mac, you will be asked to enter your Mac OS admin username and password, this is because R installation would require the system administrator's privilege. We don't capture this information, it's completely done by R installer itself.
 
-For Windows, you need to perform this initial step with a user account with Admin privilege. If you don't hvae Windows Admin privilege, you can follow the instruction described in [this note](https://exploratory.io/note/hideaki/Installing-Exploratory-without-Admin-Privilege-Windows-2999119790598934).
+For Windows, you need to perform this initial step with a user account with Admin privilege. If you don't have Windows Admin privilege, you can follow the instruction described in [this note](https://exploratory.io/note/hideaki/Installing-Exploratory-without-Admin-Privilege-Windows-2999119790598934).
 
 ## I have installed R with Homebrew on Mac OS X, does that work ?
 
