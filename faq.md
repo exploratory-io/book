@@ -152,10 +152,6 @@ You can also share your insights publicly with unlimited number of people regard
 
 # User Account Information
 
-## Can I change my username?
-
-We are not currently supporting it, but we will in future releases. If you need it to be changed now, please contact support@exploratory.io, we can manually change it at the server for you.
-
 ## Can I change my email address?
 
 Yes, you can change it from ['My Account'](https://exploratory.io/account/settings) page.
