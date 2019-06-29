@@ -66,7 +66,7 @@ If you use a proxy server at your organizations to connect to the internet, by d
 
 This should work for most of the times, but unfortunately it might not work sometimes. In such cases you can manually add your proxy server information in Configuration dialog UI. Check [this note](https://exploratory.io/note/2ac8ae888097/How-to-setup-Web-Proxy-on-your-Exploratory-Dekstop-xFn0fip7Zd) for setup details.
 
-![](https://docs.exploratory.io/images/proxy-config.png)
+<img src="https://docs.exploratory.io/images/proxy-config.png" width="640px">
 
 If you are still having the network issue please contact support@exploratory.io .
 
