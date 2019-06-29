@@ -146,7 +146,7 @@ You can invite others to view your insights (Data, Chart, or Note) privately by 
 
 ## How many users can I share my insights (Chart / Data / Note)?
 
-If you like to share only the named users, which means they will need to have their accounts created at Exploratory Cloud (https://exploratory.io) and sign in first, you can share as many users as your plan supports. If you like to share with anybody without asking them to create the accounts, then you could share a uniquely generated URL for each insight with them. This is a convenient way to share with a mass audience, though this means anybody happens to have this URL can open the insights. There is no limitation of how many people can access to your insights with this URL share option.
+If you like to share only the named users, which means they will need to have their accounts created at Exploratory Cloud(https://exploratory.io) and sign in first, you can share as many users as your plan supports. If you like to share with anybody without asking them to create the accounts, then you could share a uniquely generated URL for each insight with them. This is a convenient way to share with a mass audience, though this means anybody happens to have this URL can open the insights. There is no limitation of how many people can access to your insights with this URL share option.
 
 You can also share your insights publicly with a unlimited number of people regardless of the plan you subscribe.
 
