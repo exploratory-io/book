@@ -40,11 +40,11 @@ When you upgrade, the prorated amount difference for the rest of the period will
 
 ## How can I cancel my plan?
 
-You can cancel the plan anytime from your account page with just a click of a button. If you have subscribed the Yearly subscription plan, then your subscription will be expired at the end of the current yearly subscription period.
+You can cancel the plan anytime from your account page with just a click of a button. Your subscription will expire at the end of the current subscription period.
 
-## I'm currently a student at my school, but I have mistakenly started a trial for non Community plan. How can I fix?
+## I'm currently a student at my school, but I have mistakenly started a trial for non-Community plan. How can I fix?
 
-You can cancel the plan first, then click ‘Upgrade’ button at your account page. You will see ‘Community’ option available this time, and you can select it and fill the forms to apply for the Community plan.
+You can cancel the plan first, then click 'Upgrade' button at your account page. You will see 'Community' option available this time, and you can select it and fill the forms to apply for the Community plan.
 
 # Install / Upgrade
 
@@ -62,25 +62,25 @@ Yes. Here's an [instruction](https://docs.exploratory.io/howto/set_exploratory_h
 
 Exploratory Desktop requires an internet connection for authenticating the users, downloading the required software like Git and R if you don't have them installed yet, accessing to remote data sources like Google Analytics, Web Scraping, and sharing Data, Chart, and Note.
 
-If you use a proxy server at your organizations to connect to the internet, as default it automatically tries to detect the proxy server and connect through the server.
+If you use a proxy server at your organizations to connect to the internet, by default it automatically tries to detect the proxy server and connect through the server.
 
 This should work for most of the times, but unfortunately it might not work sometimes. In such cases you can manually add your proxy server information in Configuration dialog UI. Check [this note](https://exploratory.io/note/2ac8ae888097/How-to-setup-Web-Proxy-on-your-Exploratory-Dekstop-xFn0fip7Zd) for setup details.
 
 ![](images/proxy-config.png)
 
-If you are still having the network issue please contact at support@exploratory.io .
+If you are still having the network issue please contact support@exploratory.io .
 
 ## Why are you asking my password for OS X at the initial installation time?
 
-If you don't have R and/or Git previously installed you will be asked to enter your Mac OS admin username and password. This is because R and Git installation requires the system administrator's privilege. We don't see or capture this information, it's completely done by R and Git installers and that's outside of Exploratory. ;)
+If you don't have R and/or Git previously installed, you will be asked to enter your Mac OS admin username and password. This is because R and Git installation requires the system administrator's privilege. We don't see or capture this information, it's completely done by R and Git installers and that's outside of Exploratory. ;)
 
-## I have already installed R (rstats) 3.6, are you going to install another R ?
+## I have already installed R 3.6, are you going to install another R ?
 
-No. we check the R version that is installed on your pc, but as long as it is 3.6 or grater then Exploratory will use that one, without installing another R.
+No. We check the R version that is installed on your PC, and as long as it is 3.6 or grater, then Exploratory will use that one, without installing another R.
 
 ## I don't have R installed, what are you going to do ?
 
-Just download Exploratory Desktop by simply clicking on Download button on the download page. It will install the latest certified version of R as part of the initial setup. For Mac, you will be asked to enter your Mac OS admin username and password, this is because R installation would require the system administrator's privilege. We don't capture this information, it's completely done by R installer itself.
+Just download Exploratory Desktop by simply clicking on Download button on the download page, and execute it. It will install the latest certified version of R as part of the initial setup. For Mac, you will be asked to enter your Mac OS admin username and password, this is because R installation would require the system administrator's privilege. We don't capture this information, it's completely done by R installer itself.
 
 For Windows, you need to perform this initial step with a user account with Admin privilege. If you don't have Windows Admin privilege, you can follow the instruction described in [this note](https://exploratory.io/note/hideaki/Installing-Exploratory-without-Admin-Privilege-Windows-2999119790598934).
 
@@ -94,7 +94,7 @@ Unfortunately the configuration of R installed with Homebrew is not supported cu
 
 ## I'm on Windows and getting error stating "Could not install R" or "Could not install Git".
 
-If you change the installation path for R and Git during the installation you will see these errors. Please select the locations where R and Git are installed respectively in the pop-up UI and click OK. This will register the custom R and Git installed location and use them moving forward.
+If you change the installation path for R and Git during the installation, you will see these errors. Please select the locations where R and Git are installed respectively in the pop-up UI and click OK. This will register the custom R and Git installed location and use them moving forward.
 
 ## I can't open a project. I'm seeing a loading icon when I try to create a new project.
 
@@ -142,13 +142,13 @@ We have a closed beta currently. If you're interested in participating, please c
 
 ## How can I share my insights with others privately?
 
-You can invite others to view your insights (Data, Chart, or Note) privately by email addresses. They will receive an invitation email, and they can click the link to open your insights at Exploratory Cloud. If they don’t have the accounts created yet, they will be asked to create **free** accounts before opening your insights. They don’t need to subscribe any plan as long as they just want to view the shared insights. If they like to use Exploratory Desktop to customize the insights or create new ones, then they will need to subscribe one of the plans at this point.
+You can invite others to view your insights (Data, Chart, Note, Slide, or Dashboard) privately by email addresses. They will receive an invitation email, and they can click the link to open your insights at Exploratory Cloud. If they don’t have the accounts created yet, they will be asked to create **free** accounts before opening your insights. They don’t need to subscribe any plan as long as they just want to view the shared insights. If they like to use Exploratory Desktop to customize the insights or create new ones, then they will need to subscribe one of the plans at this point.
 
 ## How many users can I share my insights (Chart / Data / Note)?
 
-If you like to share only the named users, which means they will need to have their accounts created at Exploratory Cloud(https://exploratory.io) and sign in first, you can share as many users as your plan supports. If you like to share with anybody without asking them to create the accounts, then you could share a uniquely generated URL for each insight with them. This is a convenient way to share with a mass audience, though this means anybody happens to have this URL can open the insights. There is no limitation of how many people can access to your insights with this URL share option.
+If you like to share only the named users, which means they will need to have their accounts created at Exploratory Cloud (https://exploratory.io) and sign in first, you can share as many users as your plan supports. If you like to share with anybody without asking them to create the accounts, then you could share a specially generated URL for each insight with them. This is a convenient way to share with a mass audience, though this means anybody who happens to have this URL can open the insights. There is no limitation on how many people can access your insights with this URL share option.
 
-You can also share your insights publicly with a unlimited number of people regardless of the plan you subscribe.
+You can also share your insights publicly with unlimited number of people regardless of the plan you subscribe.
 
 # User Account Information
 
