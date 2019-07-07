@@ -2,66 +2,84 @@
 
 With past time series data as training data, it creates a model that forecasts values for future dates/times, and plots the predicted values on a Line Chart.
 
-## Input Data
-Input data should be a time series data. Each row should represent one observation with date/time. It should have following columns.
+# Input Data
 
-  * Date - A Date or POSIXct column when the observation was made.
-  * Some measure value - Numeric column that stores observed value.
+Input data should be a time series data. Each row should represent one observation with date/time. It should have the following columns.
+
+  * Date - A Date or POSIXct column to indicate when the observations were made.
+  * Measure - A Numeric column that stores observed values.
 
 
-## How to Use This Feature
-1. Click Analytics View tab.
-2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.
-3. Select "Time Series Forecasting" for Analytics Type.
-4. Select Date column and associated Round Function for X Axis.
-5. (Optional) Select Numeric column and aggregate function for Y Axis.
-6. (Optional) Select a column to group subjects with "Repeat By" column selector. For each group, a separate small chart will be displayed.
-10. Click Run button to run the analytics.
-11. Select view type (explained below) by clicking view type link to see each type of generated visualization.
+# How to Use This Feature
 
-### "Forecasted" View
+1. Under Analytics view, select "Time Series Forecasting (Prophet)" for Analytics Type.
+2. Select a column for Date and select an appropriate scale (e.g. Floor to Week).
+3. (Optional) Select Numeric column and aggregate function for Y Axis. The default is Number of Rows.
+4. (Optional) Select a column to group subjects with "Repeat By" column selector. For each group, a separate small chart will be displayed.
+5. Click Run button to run the analytics.
+6. Select each view type (explained below) see the detail of the analysis.
+
+## "Forecasted" View
+
 "Forecasted" View displays how the future values look like. with a line chart. Blue line is for actual values and orange line is for forecasted values. Orange band shows uncertainty interval.
 
 ![](images/timeseries_forcasting_forecated.png)
 
-### "Trend" View
+## "Trend" View
+
 "Trend" View displays actual values (blue line), and trend line (orange line). It also displays change points of the trend line, and how much change of slope was made at each change point (green bars).
 
 ![](images/timeseries_forcasting_trend.png)
 
-### "Yearly" View
+## "Yearly" View
+
 "Yearly" View displays yearly seasonality.
 
 ![](images/timeseries_forcasting_yearly.png)
 
-### "Weekly" View
+## "Weekly" View
+
 "Weekly" View displays weekly seasonality, when time unit is DAY or smaller.
 
 ![](images/timeseries_forcasting_weekly.png)
 
-### "Data" View
+## "Data" View
+
 "Data" View shows a table with both past data and forecasted data.
 ![](images/timeseries_forcasting_data.png)
 
-### Test Mode
-In Test Mode, the last part of the data for the length specified by "Forecasting Time Period" is not used for training the model, and kept for testing how well the model forecasts.
-Test Mode can be enabled by setting the "Test Mode" property to TRUE.
+# Evaluation of Forecasting Models
+
+You can enable 'Test Mode' to evaluate the forecasting model. This will split the data into Training and Test periods, build a model based on the training data and evaluate the forecasted values against the test data.
+
+You can enable it from the property.
 
 ![](images/timeseries_forcasting_test_property.png)
 
-#### "Forecasted" View in Test Mode
-Dark blue line is the part of actual data used for training, and light blue line is the part that is used for test. Orange line is the forecasted values. You can compare the orange line with the light blue line to see how close the forecast was to the actual value.
+Take a look at [this note](https://blog.exploratory.io/a-gentle-introduction-to-backtesting-for-evaluating-the-prophet-forecasting-models-66c132adc37c) for more details on how the evaluation method works.
+
+## "Forecasted" View in Test Mode
+
+The dark blue line is the actual data in the training period, and the light blue line is the actual data in the test period. You can compare the orange line with the light blue line to see how close the forecasted values are against the actual values.
 
 ![](images/timeseries_forcasting_test.png)
 
-#### "Summary" View in Test Mode
-In Test Mode, "Summary View" shows the metrics for the model's forecasting performance.
-For the detail of the metrics, we recommend reading [this online textbook](https://otexts.org/fpp2/accuracy.html).
+## "Summary" View in Test Mode
+
+There are several metrics to help you evaluate the forecasting model's performance. They are presented under "Summary" tab.
+
+* RMSE (Root Mean Square Error) : Root of mean of squares of difference between actual value and forecasted value.
+* MAE (Mean Absolute Error) : Mean of absolute differences between actual value and forecasted value.
+* MAPE (Mean Absolute Percentage Error) : Mean of absolute differences in percentage of actual value.
+* MASE (Mean Absolute Scaled Error)
+
+Take a look at [this note](https://blog.exploratory.io/a-gentle-introduction-to-backtesting-for-evaluating-the-prophet-forecasting-models-66c132adc37c) for more details on each metric.
 
 ![](images/timeseries_forcasting_summary.png)
 
 ## Properties
-Time Series Forecasting Analytics View has following other properties.
+
+There are many properties to configure how to build the models and how to transform the data before passing it to the algorithm.
 
   * Analytics Properties
     * Forecasting Time Period - Length of periods (e.g. days, months, years...) to forecast.
@@ -76,7 +94,7 @@ Time Series Forecasting Analytics View has following other properties.
   * Limits
     * Trend Upper Limit - Upper Limit of trend. Largest possible value for the trend to be forecasted. e.g. Size of entire market, etc.
     * Trend Lower Limit - Lower limit of trend. Takes effect only when Trend Upper Limit is specified.
-  * Changepoints 
+  * Changepoints
     * Number of Potential Changepoints - Number of automatically selected candidates for changepoints. Used when Potential Changepoints are not specified.
     * Flexibility of Changepoint Selection - Larger value makes the trend line more flexible, by allowing more changepoints.
     * Potential Changepoints - You can specify points of time at which trend could have changed, as candidates of changepoints.
@@ -94,7 +112,7 @@ Time Series Forecasting Analytics View has following other properties.
 
 ## R Package
 
-Time Series Forecasting view uses [`prophet`](https://cran.rstudio.com/web/packages/prophet/index.html) R Package under the hood.
+Time Series Forecasting view uses the [Prophet](https://cran.rstudio.com/web/packages/prophet/index.html) R Package under the hood.
 
 - [prophet R package's Function Reference Guide](https://cran.r-project.org/web/packages/prophet/prophet.pdf)
 - [Prophet's Official Documents](https://facebook.github.io/prophet/docs/quick_start.html)
