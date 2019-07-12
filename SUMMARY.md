@@ -19,6 +19,7 @@
   * [Steps (Right-hand side)](steps.md)
   * [Branch](branch/branch.md)
   * [Parameter](parameter/parameter.md)
+  * [Parameter (日本語)](parameter/parameter_ja.md)
   * [Export](export/export.md)
   * [Share](share/shae.md)
     * [Chart](share/chart.md)
