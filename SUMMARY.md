@@ -3,12 +3,6 @@
 * [Introduction](README.md)
 
 
-* [Tutorials (English)](tutorials/intro.md)
-   * [Getting Started Guide](tutorials/quick-start.md)
-* [Tutorials (日本語)](tutorials/intro_ja.md)   
-   * [Getting Started Guide　(日本語)](tutorials/quick-start_ja.md)
-
-
 * [Product Features]()
   * [Dashboard](markdown/markdown-dashboard.md)]
   * [Dashboard (日本語)](markdown/markdown-dashboard_ja.md)]
@@ -135,7 +129,7 @@
      * [Number](viz/singlevalue.md)
      * [Word Cloud](viz/wordcloud.md)
      * [Word Cloud (日本語)](viz/wordcloud-jp.md)
-   * Features 
+   * Features
      * [Trend Line](viz/trend-line.md)
      * [Small Multiple](viz/small-multiple.md)
      * [Window Calculation](viz/window-calc.md)
@@ -160,8 +154,8 @@
    * [Distance by Category](analytics/similarity.md)
    * [K-Means Clustering](analytics/kmeans.md)
    * [Principal Component Analysis](analytics/pca.md)
-   * [Linear Regression Analysis](analytics/regression.md) 
-   * [Logistic Regression Analysis](analytics/logistic.md) 
+   * [Linear Regression Analysis](analytics/regression.md)
+   * [Logistic Regression Analysis](analytics/logistic.md)
    * [Survival Analysis - Survival Curve](analytics/survival.md)
    * [Survival Analysis - Cox Regression](analytics/var_importance_time.md)
    * [Decision Tree](analytics/decision_tree.md)
@@ -174,7 +168,7 @@
    * [Chi-Square Test](analytics/chisq.md)
    * [A/B Test](analytics/ab_test.md)
    * [Normality Test](analytics/normality.md)
-   
+
 
 
 
