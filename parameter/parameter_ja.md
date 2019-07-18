@@ -62,4 +62,4 @@
 
 ## さらに詳しく
 
-パラメーターの詳細な使い方については[こちらのノート](https://exploratory.io/note/kanaugust/An-Introduction-to-Parameter-in-Exploratory-WCO4Vgn7HJ)をご覧下さい。
+パラメーターの詳細な使い方については[こちらのノート](https://exploratory.io/note/BWz1Bar4JF/ocn2Vts3WB)をご覧下さい。
