@@ -3,17 +3,20 @@ Exploratory Desktop Documentation
 
 # Introduction
 
-Exploratory Desktop provides an advanced, interactive, and reproducible data wrangling and analysis experience powered by R and visualization.
+Exploratory Desktop is a simple and modern UI experience for extracting data, wrangling with data, visualizing data, using statistical and machine learning algorithms to analyze data, and communicating insights with others via Dashboard, Note, and Slides.
 
-This documentation about Exploratory Desktop, you can find instructive information for Exploratory Desktop product features and a set of data wrangling and analysis commands.
+It utilizes R as its backend and provides the best UI experience for accessing many amazing capability of R without programming.
 
-Learning and understanding of the grammar based data wrangling and analysis commands / functions makes it possible for you to not only use them in other R environments like R console, RStudio, etc, but also become experts of the data analysis in general, not an expert of the product.
+This documentation is about how to use Exploratory Desktop.
 
 # Tutorials / Getting Started
 
-To help you become familiar with the way you can work with data in Exploratory, we have prepared a set of tutorials. Each tutorial is designed to address a different use case so you don't need to follow any particular order. However, we'd strongly recommend you take a look at 'Getting Started Guide' first. It walks you through the basics of how Data Wrangling, Visualization, Machine Learning features in Exploratory.
+There are many 'how-to' tutorials you want to check to learn Data Science techniques and methods. Take a look at our How-To repository to find useful tutorials.
 
-Sample data files for the tutorials are provided inside of the each tutorial page so that you can download them and start experiencing Exploratory Desktop right away.
+If you are just starting out Exploratory, we'd recommend you take a look at 'Getting Started Guide' first. It walks you through the basics of how you can use Data Wrangling, Visualization, Analytics, Dashboard features inside Exploratory.
+
+- Getting Started Guid (English) - [Link](https://exploratory.io/note/kanaugust/2617200410576325)
+- Getting Started Guid (日本語) - [Link](https://exploratory.io/note/kanaugust/6235618967553110)
 
 If you have any question please contact [support@exploratory.io](mailto:support@exploratory.io)
 
