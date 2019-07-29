@@ -15,15 +15,3 @@ Windowsの場合。Tools -> Diagnostics -> Show Log Filesとメニューをた�
 
 ![](images/logfile_menu_win.png)
 
-# スタートアップ・ログファイルの取得
-
-
-以下の現象が起こる場合には、別途スタートアップ・ログファイルが必要になります。
-
-* Exploratoryが起動しない。
-* Exploratoryがスプラッシュ・スクリーンから進まない。
-* .exploratoryディレクトリが見つからない
-
-スタートアップ・ログファイルは以下の場所にあります。
-
-`<ホームディレクトリ>/.exploratory_startup.log`
