@@ -1,5 +1,16 @@
 # Release Note
 
+## 5.3.1
+
+Released on 8/10/2019
+
+This is a patch release for fixing the Google BigQuery data source issue.
+
+### Bug Fixes
+
+* Failed to import data from BigQuery via Google Cloud Storage.
+
+
 ## 5.2.1
 
 Released on 6/3/2019
