@@ -1,5 +1,95 @@
 # Release Note
 
+## 5.3
+
+Released on 8/7/2019
+
+### New Features
+
+There are many new features with v5.3. We have presented at our online seminar, please take a look.
+
+https://exploratory.io/online-seminar
+
+### Enhancements
+
+Data Source: CSV: Supported  "None" for Quote Parameter
+
+Data Wrangling: Supported 'Branch' icon at the step header
+
+Chart: Histogram: You can enter any numbers for the Number of bars parameter.
+Chart: "Line + Cirlce" marker type support on Bar/Line/Scatter
+Chart: Supported up to 30 Values in Pivot Table
+Chart: Color: Support Reversing the Order of the Legend Values
+
+Analytics: Prophet new properties.  Test period, Daily seasonality, Change Point Range, Multiplicative.
+Analytics: Repeat-by support for Chi-Square test.
+Analytics: Power Analysis Support on T-Test/ANOVA/Chi-Square.
+
+
+### Bug Fixes
+
+Generic: 'Hide Sidebar' icon didn't show up after hiding it and re-opening a project
+Generic: It now use the current OS locale for the R connection if locale is not defined in case of Mac.
+Generic: Another R Process running error shows Re-Run button so that users can clear the process without restarting the R session.
+Installation: It threw an error complaining about existing Rserve process when switching the repository location.
+Installation: When you did not have admin privilege, installed Git/R was not recognized by Exploratory
+Project: Create Project failed with git init due to missing email and username
+
+Data Source: MailChimp: Date parameter did not work and gave Unsupported value type for form field 'since' error Customer
+Data Source: Redshift: Integer64 columns are forced to be converetd as Numeric columns since Integer64 is not fully supported yet.
+Data Source: Google BigQuery: Adding comments inside SQL editor caused an error.
+Data Source: Google BigQuery: Opening Data Import Dialog from Source Step ended up with empty Table List under schema section on the Import Dialog.
+Data Source: CSV: Support a mode for importing the data as character data type.
+Data Source: MailChimp: Date parameter was not working properly.
+Data Source: GoogleBigQuery: Support UTF8 data properly.
+Data Source: Could not open an SPSS file.
+Data Source: PostgreSQL: Upgraded the underlying R package for better quality.
+Data Source: SQL: Optimize for data re-fetching logic when importing the data into a data frame.
+
+Data Wrangling: Shortcuts Hint button now show "Control+Enter" for Windows.
+Data Wrangling: Filter: Is Not Alphabet condition did not work
+Data Wrangling: The calculation text was copied from the existing one even when creating a new calculation in the same Mutate step.
+Data Wrangling: Recode: ’Equal Frequency Option' now shows the numeric ranges as the category names.  
+Data Wrangling: Build Random Forest step has switched to use Ranger for better performance.
+Data Wrangling: is_alphabet function to support non-ascii characters properly.
+
+Chart: Heatmap: Now Y axis direction starts from the bottom to the top.
+Chart: After creating a chart from Summary View by clicking Quick Chart Icon, the column search box remained.
+Chart: Property dialog overflowed if the screen size is small on Windows
+Chart: Pie chart failed to render if you switch the chart type from Bubble
+Chart: Enter key did not refresh the chart when a value was changed in Chart Property Dialog
+Chart: Show Details should show a user friendly filter condition information.
+Chart: Multiple LOV dropdowns opened at a time in the chart property dialog.
+Chart: Reference line was not showing when the bar chart in the horizontal mode.
+Chart: Area Map failed to render when I changed the data type from number to logical.
+Chart: When drag and drop a Chart Pin, unwanted pin image was shown at the left hand side top.
+Chart: The dropdown list for Highlight was empty when a numeric column was assigned to Color and the data function was changed to Text/Int/Int10.
+Chart: The mouse over pop-up always showed the 1st measure information even when there are multiple measures.
+Chart: Pivot: Support Post Calculation for the Grand Total
+Chart: The order of the Repeat By was corrupted if you assigned a numeric column that contained positive and negative values.
+Chart: Comment: In the Comment Dialog, Enter key didn't work.
+Chart: The DAY aggregation function was reset to YEAR when you switch columns.
+Chart: Violin Plot: Sorting is now supported.
+Chart: Column value dropdown was sometimes empty inside Highlight dialog.
+Chart: "Number" chart thumbnail didn't get updated when it was duplicated.
+Chart: Word Cloud thumbnail didn't get updated when moving between Table view and Chart View.
+Chart: Number chart failed to render when the chart type was changed to Number from Pivot
+Chart: Pivot: Grand Total was not reflecting the current sorting order.
+
+Analytics: Prophet: Error 'argument "n.changepoints" matched by multiple actual arguments' was raised when number of changepoints was specified
+Analytics: Decision Tree: Multiclass Tree was displayed without color
+Analytics: Decision Tree did't use the full available space for the first time rendering
+Analytics: PCA: NA was showing up when there was no NA
+Analytics: On the Delete Confirmation Dialog, Hitting Enter Key did not work.
+Analytics: Prophet: Support Logical data type columsn for Holiday variable.
+Analytics: K-Means Clustering: It was producing a wrong result.
+
+Parameter: On Dashboard, a default value was not populated on single LOV
+Note: The Markdown table text now uses bigger font size.
+Note: Set "dpi=300" in the default R code block template to avoid blurred graphical output from R.
+Dashboard/Note/Slide: It should not show Parameter button when not necessary
+
+
 ## 5.2.1
 
 Released on 6/3/2019
