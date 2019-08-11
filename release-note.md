@@ -4,7 +4,7 @@
 
 Released on 8/11/2019
 
-This is a patch release for fixing the Google BigQuery data source issue.
+There was an issue that some of our users had a problem for importing data from Google BigQuery due to the underlying Google BigQuery API change. We have updated all the related places to use the officially supported APIs.```
 
 ### Bug Fixes
 
