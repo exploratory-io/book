@@ -1,5 +1,15 @@
 # Release Note
 
+## 5.3.1
+
+Released on 8/11/2019
+
+There was an issue that some of our users had a problem for importing data from Google BigQuery due to the underlying Google BigQuery API change. We have updated all the related places to use the officially supported APIs.```
+
+### Bug Fixes
+
+* Failed to import data from BigQuery.
+
 ## 5.3
 
 Released on 8/7/2019
