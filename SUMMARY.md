@@ -234,6 +234,8 @@
 * [Diagnostics]()
    * [Log file for debugging](debug_log.md)
    * [Log file for debugging (日本語)](debug_log_ja.md)
+   * [Startup Log file for debugging](startup_log.md)
+   * [Startup Log file for debugging (日本語)](startup_log_ja.md)
    * [Check version of Exploratory Desktop](version_check.md)
 
 * [Keyboard shortcuts](shortcut.md)
