@@ -4,11 +4,9 @@
 
 Released on 8/11/2019
 
-There was an issue that some of our users had a problem for importing data from Google BigQuery due to the underlying Google BigQuery API change. We have updated all the related places to use the officially supported APIs.```
-
 ### Bug Fixes
 
-* Failed to import data from BigQuery.
+* Failed to import data from BigQuery. - There was an issue that some of our users had a problem for importing data from Google BigQuery due to the underlying Google BigQuery API change. We have updated all the related places to use the officially supported APIs.
 
 ## 5.3
 
@@ -16,24 +14,21 @@ Released on 8/7/2019
 
 ### New Features
 
-There are many new features with v5.3. We have presented at our online seminar, please take a look.
+Here is the v5.3 release announcement blog post where you can find the details for all the new features.
 
-https://exploratory.io/online-seminar
+* [Introduction to Exploratory v5.3](https://blog.exploratory.io/exploratory-v5-3-released-e3fbe3dd9910)
+
 
 ### Enhancements
 
 Data Source: CSV: Supported  "None" for Quote Parameter
-
 Data Wrangling: Supported 'Branch' icon at the step header
-
 Chart: Histogram: You can enter any numbers for the Number of bars parameter.
 Chart: "Line + Cirlce" marker type support on Bar/Line/Scatter
 Chart: Supported up to 30 Values in Pivot Table
 Chart: Color: Support Reversing the Order of the Legend Values
-
-Analytics: Prophet new properties.  Test period, Daily seasonality, Change Point Range, Multiplicative.
-Analytics: Repeat-by support for Chi-Square test.
-Analytics: Power Analysis Support on T-Test/ANOVA/Chi-Square.
+Analytics: Time Series Forecasting: Now you can configure the Change Point Range.
+Analytics: Chi-Square: Repeat-by support has been added.
 
 
 ### Bug Fixes
