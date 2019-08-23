@@ -8,6 +8,12 @@ Input data should contain following columns.
 
   * Variable Columns - Set of numeric columns to convert into principal components.
 
+## Analytics Properties
+  * Data Preprocessing
+    * Sample Data Size - Number of rows to sample before clustering them.
+    * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
+    * Normalize Variable Columns - Whether to normalize Variable Columns before running the analysis.
+
 ## How to Use This Feature
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.
