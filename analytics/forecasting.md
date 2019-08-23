@@ -110,6 +110,10 @@ There are many properties to configure how to build the models and how to transf
   * Evaluation
     * Test Mode - When this option is set to TRUE, the last part of the input data for the period specifed by "Forecasting Time Period" is not used for training data, and kept to test predictive performance of the model.
 
+### Countries for Holidays
+
+TBD
+
 ## R Package
 
 Time Series Forecasting view uses the [Prophet](https://cran.rstudio.com/web/packages/prophet/index.html) R Package under the hood.
