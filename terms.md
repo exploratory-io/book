@@ -26,6 +26,8 @@ You may not use the Service for any illegal or unauthorized purpose. You must no
 
 For the purpose of this Agreement, a student is an individual who is enrolled at a recognized tertiary educational institution (university or college) that grants degrees requiring not less than the equivalent of two years of full-time study, and upon request by Exploratory, Inc. is able to provide proof of such enrollment. For the purpose of this Agreement, a teacher is an individual who conducts lectures and/or seminars at a recognized tertiary educational institution (university or college), and upon request by Exploratory, Inc. is able to provide proof of such involvement.
 
+Qualified students and teachers may use this edition for the purpose of learning and non-profit research project. Community edition shall not be used for commercial or any other profit purposes.
+
 
 ## B. Payment, Refunds, Upgrading and Downgrading Terms
 
