@@ -19,6 +19,6 @@ Bind multiple data frames by row.
 - Intersection (Merge only the common)
 - Setdiff (Merge only the difference)
 
-2. Select Data Frames that you want to bind.
-3. Reserve Data Frame Name - When this checkbox is checked, Data Frame Name is automatically added as a new ID column.
-4. Force Data Type to Match - When this checkbox is checked, it allows you to merge data frames whose column data types are different. After the merge, it detects and assigns appropriate data types to these columns.
+2. Select the Data Frames you want to merge. You can select a single or multiple data frames.
+3. (Optional) You can enable 'Reserve Data Frame Name' option to create a new column to hold the names of merged data frames.
+4. (Optional) You can enable 'Force Data Type to Match' to merge the data frames even when the data types of the corresponding columns are different. After the merge, it detects and assigns appropriate data types automatically.
