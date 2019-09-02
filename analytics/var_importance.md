@@ -1,34 +1,53 @@
-# Variable Importance
+# Random Forest
 
-Calculates Variable Importance with Random Forest.
+Build Random Forest Model
 
 ## Input Data
-Input data should contain at least one categorical or numeric column for "What to Predict" and more than one categorical and/or numeric columns as Variable Columns.
+Input data should contain one categorical or numeric column for "Target Variable" and more than one categorical or numeric columns as "Predictor Variable(s)".
 
-  * What to Predict - Numeric or Categorical column that you want to Predict.
+  * Target Variable - Numeric or Categorical column that you want to Predict.
   
-  * Variable Columns - Numeric and/or Categorical columns that you want to check importance to predict your "What to Predict" column.
+  * Predictor Variable(s) - Numeric or Categorical columns. Prediction is made based on the values of those columns.
 
 ## Analytics Properties
-  * Data Pre-processing
-    * Sample Data Size - Number of rows to sample before building Random Forest model.
-    * Max # of Categories for Target Variable - If categorical Target Variable column has more categories than this number, less frequent categories are combined into 'Other' category.
-    * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
-    * Adjust Imbalanced Data - Adjust imbalance of data in Target Variable (e.g. FALSE being majority and TRUE being minority.) by SMOTE (Synthetic Minority Over-sampling Technique) altorithm.
   * Random Forest
     * Number of Trees - Number of trees to grow.
     * Sample Data Size for a Tree - Size of data used to grow one tree. If no value is set, half of the value specified for Sample Data Size is used.
     * Minimum Size of Terminal Nodes - Spliting of nodes is stopped so that the sizes of terminal nodes are larger than or equal to this value.
     * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
+  * Binary Classification
+    * Cut Point for TRUE/FALSE
+  * Variable Importance
+    * Method - Method of how to calculate variable importance.
+      * Permutation - Importance of variable is measured by how much the prediction worsens when random permutation is applied to the variable, nullifying its contribution in prediction.
+      * Gini Impurity - Importance of variable is meassured by its contribution in reducing Gini Impurity while building the model.
+    * Enable Boruta - Boruta is the method that calculates variable importance with statistical significance, by repeatedly building Random Forest model. It is enabled by default.
+    * Maximum Number of Iterations for Boruta
+    * P Value Threshold for Boruta - P value threshold Boruta uses to determine whether a variable's contribution to prediction is statistically significant or not.
   * Effects by Variables
     * Max # of Variables - Maximum number of most important variables to display on Effects by Variable view.
+  * Data Pre-processing
+    * Sample Data Size - Number of rows to sample before building Random Forest model.
+    * Max # of Categories for Target Variable - If categorical Target Variable column has more categories than this number, less frequent categories are combined into 'Other' category.
+    * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
+  * Imbalanced Data Adjustment
+    * Adjust Imbalanced Data - Adjust imbalance of data in Target Variable (e.g. FALSE being majority and TRUE being minority.) by SMOTE (Synthetic Minority Over-sampling Technique) altorithm.
+    * Target % of Minority Data
+    * Maximum % Increase for Minority Size
+    * Neighbors to Sample for Populating Data
+  * Evaluation
+    * Test Mode - Enable/Disable Test Mode. In Test Mode, data is split into training data and test data, and test data is not used for building model, so that it can be used for later test, without bias.
+    * Ratio for Test Data - A value between 0 and 1.
+    * Data Splitting Method
+      * Random - Specified ratio of data that is picked randomly is used as test data.
+      * Reserve Order in Data - Specified ratio of data that appears last are used as test data.
 
 ## How to Use This Feature
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.
-3. Select "Variable Importance" for Analytics Type.
-4. Select What to Predict Column.
-5. Click Variable Columns and open Column Selector Dialog.
+3. Select "Random Forest" for Analytics Type.
+4. Select "Target Variable" column.
+5. Click "Predictor Variable(s)" and open Column Selector Dialog.
 
 ![](images/var_importance_column_select.png)
 
