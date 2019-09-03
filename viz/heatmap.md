@@ -10,6 +10,11 @@
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
 
 
+## Category 
+
+You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
+
+
 ## Layout Configuration
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 

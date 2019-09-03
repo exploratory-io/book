@@ -10,24 +10,18 @@
 
 ## Number of Buckets
 
-You can select one of following number of buckets options. The default is `Automatic`
-
-* Automatic 
-* 5
-* 10
-* 15
-* 20
-* 25
-* 50
-* 100
-* 200
-* 500
-* 1000
+You can set the number of buckets. The default is `Automatic`
 
 
 ## Highlight 
 
 You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](viz/highlight.md) for the detail. 
+
+## Category 
+
+You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
+
+
 
 
 ## Layout Configuration
