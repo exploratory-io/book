@@ -9,7 +9,7 @@ Released on 9/3/2019
 Installation: Added "Reset" Button to reset the System R packages to originally installed versions (a.k.a. factory setting).
 
 Performance: Improve the performance for opening Note/Slides/Dashboard editor.
-Performance: Improved SQL Query performance in general. 
+Performance: Improved SQL Query performance in general.
 
 Chart: Support 'Auto-Binning' for numeric columns when they are assigned to Color with functions such as LOG/ABS/INT10.
 Chart: Support the Trend Line even when categorical columns are assigend to X Axis.
@@ -22,8 +22,8 @@ Chart: Support Vertical Reference Line for Line chart.
 Chart/Analytics: Now "Save Chart/Analytics data as Data Frame" will add the data frame name as part of the name.
 Chart: Support 'Limit Values' for Y Axis in Bubble chart.
 Chart: Support 'Export as Data Frame' option.
-Chart: "Show Details" Dialog should always show 'Number of Rows' information and use the same filter conditions as shown in Chart Hover Popup.
-
+Chart: The "Show Details" dialog now shows 'Number of Rows' information and use the same filter conditions as shown in Chart Hover Popup.
+Chart: It now dynamically change the scale of the colors depends on the unique values. Currently, we support only up to 10. 
 
 Data Wrangling: Support for entering column names for Custom Function in Summarize/Pivot dialog.
 Data Wrangling: Extended the Case Insensitive text matching for character related filter operations such as 'Start with...'
