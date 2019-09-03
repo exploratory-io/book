@@ -56,38 +56,44 @@ Input data should contain one categorical or numeric column for "Target Variable
 8. Select view type (explained below) by clicking view type link to see each type of generated visualization.
 
 ### "Importance" View
-"Importance" View displays importance information on Bar chart with Mean Decrease Gini. The higher the Mean Decrease Gini, more important the variable is.
+"Importance" View displays importance of variables with decision on statistical significance of their contributions to prediction, making use of R Package Boruta. The variables in green has statistically significant contributions. The result is not decisive on the ones in yellow yet with the performed iterations. Ones in gray are decided not to have statistically significant contributions.
 
 ![](images/randomforest_boruta.png)
 
 ### "Summary" View
-"Summary" View displays the quality of the model created for this Variable Importance Analytics. Each row shows the model performance from the point whether the Class (i.e. Value in What to Predict column) prediction was correct or not if What to Predict is categorical column.
+"Summary" View displays metrics that describes the quality of the Random Forest model.
 
 - F Score - A measure of Test Accuracy. The score ranges between 0 and 1 and Higher is better.  It's harmonic mean of precision and recall.
 - Accuracy Rate - Another measure of Test Accuracy, which is calculated as `(Total True Positive + total True Negative) / Total Population.`
 - Misclassification Rate - The rate the model fails to classify correctly. (i.e. 1 - Accuracy Rate)
 - Precision - (also called positive predictive value) is the fraction of relevant instances among the retrieved instances.
 - Recall -  (also known as sensitivity) is the fraction of relevant instances that have been retrieved over the total amount of relevant instances.
+- AUC - Area under ROC (Receiver Operating Characteristic) curve.
+- Number of Rows
 
 
 ![](images/randomforest_summary.png)
 
-If the What to Predict column is numeric column, you will see
+If the Target Variable column is numeric, you will see
 
 
 - Root Mean Square errors - The Root Mean Square Error (RMSE) (also called the root mean square deviation, RMSD) is a frequently used measure of the difference between values predicted by a model and the values actually observed from the environment that is being modeled.
 
 - R Squared - A statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression. 1 (100%) indicates that the model explains all the variability of the response data around its mean.
 
+- Number of Rows
+
 
 ![](images/randomforest_summary_numeric.png)
 
 ### "Summary by Class" View
+"Summary by Class" View shows metrics for prediction of each class of the categorical Target Variable column.
 
 ![](images/randomforest_summary_by_class.png)
 
 
 ### "Effects by Variables" View
+"Effects by Variables" View shows how the predicted value or probability by the model changes when only one of the predictor changes, on average on sampled data points.
 ![](images/randomforest_edarf.png)
 
 ### "Prediction Matrix" View
@@ -109,8 +115,8 @@ If the What to Predict column is numeric column, you will see
 
 ## R Package
 
-The `Variable Importance` uses [`randomForest`](https://cran.r-project.org/web/packages/randomForest/index.html) R Package under the hood.
+`Random Forest` Analytics View uses [`ranger`](https://cran.r-project.org/web/packages/ranger/index.html) R Package under the hood.
 
 ## Exploratory R Package
 
-For details about `randomForest` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/randomForest_tidiers.R)
+For details about `ranger` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/randomForest_tidiers.R)
