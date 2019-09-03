@@ -1,5 +1,138 @@
 # Release Note
 
+## 5.3.2
+
+Released on 9/3/2019
+
+### Enhancements
+
+Installation: Added "Reset" Button to reset the System R packages to originally installed versions (a.k.a. factory setting).
+
+Performance: Improve the performance for opening Note/Slides/Dashboard editor.
+Performance: Improved SQL Query performance in general. 
+
+Chart: Support 'Auto-Binning' for numeric columns when they are assigned to Color with functions such as LOG/ABS/INT10.
+Chart: Support the Trend Line even when categorical columns are assigend to X Axis.
+Chart: Support "Show Details" even when the X-Axis Columns are categorized.
+Chart: Support for creating Custom functions inside Pivot Table.
+Chart: Support Auto-Binning of X Axis for Line and Area charts.
+Chart: Support Auto-Binning for Repeat By and Group By in Chart.
+Chart: Support Auto-Binning for Coloumn/Row Headers of Pivot Table.
+Chart: Support Vertical Reference Line for Line chart.
+Chart/Analytics: Now "Save Chart/Analytics data as Data Frame" will add the data frame name as part of the name.
+Chart: Support 'Limit Values' for Y Axis in Bubble chart.
+Chart: Support 'Export as Data Frame' option.
+Chart: "Show Details" Dialog should always show 'Number of Rows' information and use the same filter conditions as shown in Chart Hover Popup.
+
+
+Data Wrangling: Support for entering column names for Custom Function in Summarize/Pivot dialog.
+Data Wrangling: Extended the Case Insensitive text matching for character related filter operations such as 'Start with...'
+Data Wrangling: It now shows the comment icon in an always visible way when there is a comment at any data wrangling step.
+
+Analytics: Support for multibyte/special characters in column names.
+Analytics: Now it shows the number of rows for each Repeat-By group under Summary tabs.
+Analytics: For binary classification models under Analytics Views, we have added a "Probability" tab to show a histogram of the probability.
+Analytics: Support 'Reserve Order in Data' method for splitting Training/Testing data under Analytics view.
+Analytics: Bayesian A/B Test: Added option to flip A and B
+Analytics: Time Series Forecasting: Support the External Predictors even when the Target Value is Number of Rows.
+Analytics: Time Series Forecasting: Support for External Predictors created from same column but with different aggregate functions.
+Analytics: Random Forest: Effect by Variable tab now shows only the significant variables based on Boruta's result.
+Analytics: Decision Tree: Added more properties for finer control of branching in decision tree.
+
+Dashboard/Note/Slides: It now always opens Dashboard/Note/Slides in a separate window.
+
+Parameter: Supported Tab key for move between input fields for the manual input values option.
+
+
+### Bug Fixes
+
+Installation: On Windows, "No admin privilege" error was shown when user actually had admin privilege.
+Installation: Already installed Git was not detected.
+
+Project: Opening a project after creating a parameter with name that includes "-"  shows "Error 127" and could not open the project.
+Project: When Importing a project with offline mode, it showed an error that says unable to connect exploratory.io and could not import it.
+
+Generic: Clicking an URL link inside the Chat window opened a blank page.
+Generic: Error "parseJsonSafe raises Unexpected token \ in JSON" was raised when data had SJIS's problematic characters. (So called "damemoji")
+
+R Package: Success message was not displayed on Manage R Package Dialog after R Package installation
+R Package: Custom R package installed in a project was not automatically checked as used in the project 
+
+Data Source: a proper default encoding was not assigned for CSV file data import.
+Data Source: SQL Data Source: Comments inside SQL query caused invalid syntax error
+
+Summary View: When hovering a mouse over Column Name on Summary View, it broke word in the middle if the column name was long.
+Summary View: Histogram chart in the Summary View panel was gone after clicking the chart icon to create a new chart and came back to the Summary View.
+
+Chart: Drag and Drop the Chart Pin button sometimes didn't highlight the target step while it's moving.
+Chart: Decision Tree picture size was too small when it's embedded inside Note.
+Chart: A previous Chart tab selection was not preserved when moving between Summary and Chart views.
+Chart: Scatter chart failed to render if you set a numeric column at Color and enabled the circle option.
+Chart: On Windows, vertical scrollbar overlaps with the chart legend of the Line chart.
+Chart: Pivot sort by clicking the column header didn't work properly if there were empty rows.
+Chart: Heatmap was not showing NA at X/Y Axis.
+Chart: It no longer shows the warning dialog when you assign a column with too many unique values to Color.
+Chart: Renaming an inactive Chart name didn't reflect the change immediately.
+Chart: "Show Details" dialog didn't show the data for "Others" or "NA" group.
+Chart: The sample data size number was not reflecting the data size after the Chart level filter being applied.
+Chart: Sorting of Bar chart with % of Total Window Calculation was not correct.
+Chart: LongLat Map showed unexpected lines if you assigned a column to Label with the "Connect Data Points by Lines" option enabled.
+Chart: Pivot Table didn't show factor levels that didn't have any values.
+Chart: NA values in row/column header should show something like "(NA)" instead of being empty in Pivot Table
+Chart: Trend Line property dialog now shows a reason why Loess trend line type is sometimes disabled.
+Chart: Support 'Other Group' for Group By of Bubble and LongLat Map charts.
+Chart: Renaming a Chart Tab Name didn't update the Number's caption immediately
+Chart: Character and Logical columns in Bubble chart should show the column functions.
+Chart: It should show '%' in the balloon and legend if "% of TRUE" is assigned to Color.
+Chart: Charts created by "Create a chart" from the Summary view shouldn't have an index number in the chart name unless the name conflicts.
+Chart: 'Limit Values' was not effective if "% of Total" Window Calculation was applied.
+Chart: Highlight showed only 1 value in the LOV in Area Map.
+Chart: Pivot Table failed to render if a column with double quotes was assigned to Value.
+Chart: Exclude/Keep Only generated an invalid chart filter on a Pie/Ring chart without Color By/Repeat By.
+Chart: Chart Level Filter should not be created if the filter syntax entered in expression editor was invalid.
+Chart: Pie/Ring chart didn't show the pop-over by clicking a slice.
+Chart: Numeric value on X-Axis with Discrete option didn't sort even the sorting option was set in Bubble Chart.
+Chart: "Show Details" Dialog ignored Chart Filter condition for Histogram.
+Chart: Failed to show the Show Detail dialog and opened an error dialog with "error code 3" on Scatter chart.
+
+Data Wrangling: Unnecessary column suggestions were shown when the Mutate Dialog was opened from the column header menu.
+Data Wrangling: When a step failed to execute, an error message incorrectly mentioned that the error is from the currently selected step even if the error is coming from other step.
+Data Wrangling: Adding or updating a Mutate Step sometimes did not update the result on the Table View
+Data Wrangling: Selecting a column value from the suggestion was adding extra double quotes in Mutate Expression editor.
+Data Wrangling: Summarize: Newly created column should have aggregation suffix as part of the name only when there are multiple entries with the same column with various aggregation functions.
+Data Wrangling: Column names were not suggested inside ifelse function.
+Data Wrangling: unnecessary column suggestion happened on a Mutate Dialog for excel time to date conversion.
+Data Wrangling: When an invalid token exists in the middle of Mutate Step tokens, it should be automatically removed.
+Data Wrangling: When a data frame is grouped by group_by function in the Custom R Script Data Source, the grouping status was not shown in the UI.
+Data Wrangling: End Date could not be entered for between filter with POSIXct Date columns in Japanese UI.
+Data Wrangling: Moving Branch root should change Chart/Analytics Pin Point if the Chart/Analytics points to the branch root.
+Data Wrangling: %in% operator was not suggested in Mutate command dialog.
+Data Wrangling: The last digit of 64 bit integer is displayed with wrong value in Table View.
+
+
+Analytics: Deleting an analytics level filter showed an error - Cannot read property 'getAnalysisType' of undefined.
+Analytics: Data tab in Time Series Forecast Analytics showed an error with Japanese column name on Windows.
+Analytics: Should not show 'Sample Size is set to 50,000' message when the data is less than 50,000 in Analytics view.
+Analytics: When exporting Random Forest prediction result from Analytics View, Logical columns were turned into Factor. It should be Logical.
+Analytics: Poisson Regression / Negative Binomial Regression: Stopped using Incident Rate Ratio as metric of coefficients when link function is not log.  
+Analytics: Anomaly Detection: Error “object ‘negative_anomalies’ not found” showed up when Direction of Anomaly is set to Positive
+Analytics: Now it shows both training data is and test data for the prediction matrix when Test Mode is enabled.
+Analytics: Message text for Other Group disappeared after changing the Analytics configuration.
+Analytics: On Build Random Forest Dialog, logical column should not be selectable for numeric regression.
+Analytics: Hitting enter key didn't refresh a chart at the input field in the Analytics Chart Property dialog.
+
+Dashboard/Note/Slides: When a note is opened, the related Data Frames were not highlighted in the data frame list (at the left hand side).
+Dashboard: Dashboard failed when there are double quotes in the Dashboard name.
+Dashboard/Note/Slide: Publishing raised error "Local NTFS volumes are required to complete the operation." when the repository is on a remote file system such as Google Drive File Stream.
+
+
+Parameter: When updating a parameter value, "Select Values" text was shown over the values in the dropdown.
+Parameter: Could not create a new parameter on a Note opened with a separate window
+Parameter: Could not edit a parameter that references a deleted data frame or step.
+Parameter: Data type validation on Numeric parameter was missing at parameter creation.
+Parameter: Input field of Slider Parameter didn't work.
+
+
 ## 5.3.1
 
 Released on 8/11/2019
