@@ -1,5 +1,5 @@
 # Select / Remove Columns
-Select / Rename column(s) by column names or by rule.
+Select / Remove column(s) by column names.
 
 ## How to Access This Feature
 
@@ -11,7 +11,7 @@ Select / Rename column(s) by column names or by rule.
 ### From Column Menu
 ![](images/command-select-column-menu.png)
 
-* You can also select "Keep / Drop" from column menu of the columns that you want to keep (or drop).
+* You can also select "select (Remove) Columns" from column menu of the columns that you want to keep (or drop).
 
 
 ## Select / Remove Columns by Manually Specifying Columns
@@ -19,11 +19,4 @@ Select / Rename column(s) by column names or by rule.
 ![](images/select-column.png)
 
 1. Select "Include" or "Exclude" depending on whether you are selecting (Include) or removing (Exclude) columns.
-2. Click the column you want to select/remove.
-
-## Select / Remove Columns by Rules
-![](images/select-rule.png)
-
-1. Select "Include" or "Exclude" depending on whether you are selecting (Include) or removing (Exclude) columns.
-2. Click "Rule" tab.
-3. Specify detail of the rule in the form that appears.
+2. Click the column you want to select/remove. You can use Control + Click or Sift + Click to select multiple columns.
