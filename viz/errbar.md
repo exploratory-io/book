@@ -31,6 +31,15 @@ You can select from one of the following graph types. The default is `Bar`.
 
 You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](viz/highlight.md) for the detail. 
 
+## Category 
+
+You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
+
+## Limit Values
+
+You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail.
+
+
 
 ## Layout Configuration
 

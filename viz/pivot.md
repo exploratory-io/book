@@ -83,6 +83,16 @@ If you assign the "Percent of Total" window function on any Value column, the Co
 
 You can sort by the column by clicking the column header. Note that the sort happens only for the rows fetched. 
 
+## Category 
+
+You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
+
+
+## Custom Function
+
+You can use the Custom Function feature to define your own aggregation function at Value. See [Custom Function](custom-function.md) for the detail.
+
+
 
 ## Layout Configuration
 
