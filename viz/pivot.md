@@ -88,6 +88,11 @@ You can sort by the column by clicking the column header. Note that the sort hap
 You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
 
 
+## Custom Function
+
+You can use the Custom Function feature to define your own aggregation function at Value. See [Custom Function](custom-function.md) for the detail.
+
+
 
 ## Layout Configuration
 
