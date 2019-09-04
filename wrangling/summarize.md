@@ -26,5 +26,5 @@
 1. Select "(Custom)" from a Column List of Values.
 2. On the Custom Dialog, type in the R Expression for the aggregation in "Expression" field.
 3. Type in the name of new column with aggregation result in "New Column Name" field.
-4. Click "OK" and check the preview result.
+4. Click "OK" on the Custom Dialog and check the preview result.
 5. Click "Run" to run the aggregation and create the new column.
