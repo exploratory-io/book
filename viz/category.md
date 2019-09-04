@@ -18,27 +18,29 @@ You can categorize numeric values inside the chart. Category is supported in fol
 * Heatmap (X-Axis, Y-Axis, Repeat By)
 
 
+You can refer the [Exploratory v5.3 Released!](https://blog.exploratory.io/exploratory-v5-3-released-e3fbe3dd9910) for the overview of the Category feature. 
+
 
 ## Creating Categories in General
 
-If you assign a numeric column, it automatically changes the function option to ‘As Category’ and divide into 5 groups by default. The following example shows assigning a numeric column to X-Axis of a Boxplot chart. 
+If you assign a numeric column, it automatically changes the function option to ‘As Category’ and divide values into 5 groups by default. The following example shows assigning a numeric column to X-Axis of a Boxplot chart. 
 
 ![](images/category4.png)
 
-If you click the function dropdown menu, you can see ‘As Category’ option is assigned. 
+You can see ‘As Category’ option is assigned. 
 
 ![](images/category1.png)
 
-You can change this setting by clicking on the green text.
+You can open the property dialog by clicking on the green text.
 
 ![](images/category2.png)
 
-You can change the number of categories, say 10. then 
+You can change the setting in the property dialog. The following example shows setting the number of categories to 10 from 5. 
 
 ![](images/category3.png)
 
 
-## Creating a Category on Color
+## Creating a Category at Color
 
 If you assign a numeric column at Color, it divides the values into 5 groups by default as well as others. The difference is that the function option is set to "As Number". 
 
