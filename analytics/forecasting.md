@@ -47,14 +47,14 @@ There are many properties to configure how to build the models and how to transf
       * Spline Interpolation
     * Missing Value Handling for Predictors - How to fill missing values of External Predictors after aggregation. Options are same as "Missing Value Handling for Value".
   * Evaluation
-    * Test Mode - When this option is set to TRUE, the last part of the input data for the period specifed by "Forecasting Time Period" is not used for training data, and kept to test predictive performance of the model.
+    * Test Mode - When this option is set to TRUE, the last part of the input data for the period specified by "Forecasting Time Period" is not used for training data, and kept to test predictive performance of the model.
     * Time Period for Test Data - Length of periods (e.g. days, months, years...) at the end of the data to be kept as test data.
 
 # How to Use This Feature
 
 1. Under Analytics view, select "Time Series Forecasting (Prophet)" for Analytics Type.
 2. Select a column for Date and select an appropriate scale (e.g. Floor to Week).
-3. (Optional) Select Numeric column and aggregate function for Y Axis. The default is Number of Rows.
+3. (Optional) Select a column and aggregate function for Y Axis. The default is Number of Rows.
 4. (Optional) Select a column to group subjects with "Repeat By" column selector. For each group, a separate small chart will be displayed.
 5. Click Run button to run the analytics.
 6. Select each view type (explained below) see the detail of the analysis.
@@ -82,6 +82,16 @@ There are many properties to configure how to build the models and how to transf
 "Weekly" View displays weekly seasonality, when time unit is DAY or smaller.
 
 ![](images/timeseries_forcasting_weekly.png)
+
+## "Daily" View
+
+"Daily" View displays daily seasonality, when time unit is HOUR or smaller.
+
+![](images/timeseries_forecasting_daily.png)
+
+## "Effects" View
+"Effects" displays decomposition of forecasted value into trend, seasonalities, holiday effects, and effects of external predictors.
+![](images/timeseries_forecasting_effects.png)
 
 ## "Data" View
 
