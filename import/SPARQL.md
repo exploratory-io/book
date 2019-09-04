@@ -8,6 +8,7 @@ Allows to get data with SPARQL which is a RDF query language and protocol produc
 
 You can find list of SPARQL endpoint examples from [this site](https://www.w3.org/wiki/SparqlEndpoints).
 
+From the list, copy an endpoint URL and paste it to endpoint Input Field. Or type in your endpoint URL.
 
 For example, if you want to get data from [DBPedia](https://wiki.dbpedia.org/) you can use `http://dbpedia.org/sparql/` as your Endpoint URL.
 
