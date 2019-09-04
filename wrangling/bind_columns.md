@@ -4,9 +4,9 @@ Bind multiple data frames by column.
 ## How to Access This Feature
 
 ### From + (plus) Button
-![](images/command-bind-rows-df-menu.png)
+![](images/command-bind-cols-df-menu.png)
 
-* Click "+" button and select "Other" - > "Bind ..." -> "Columns"
+* Click "+" button and select "Other" - > "Add Columns from Another Data Frames (bind_cols)""
 
 ## Bind multiple data frames by Column
 
