@@ -40,7 +40,7 @@ For example, "Product Name" becomes "productName".
 
 
 ### UpperCamel
-A column name is created with multiple words that are joined together as a single word with the first letter of each of the multiple words uppercased within the new word that forms the Column Name.
+A column name is created with multiple words that are joined together as a single word with the first letter of each word uppercased.
 
 For example, "Product Name" becomes "ProductName".
 
