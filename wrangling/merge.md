@@ -1,22 +1,24 @@
-# Merge Multiple Data Frames
-
-Merge two data frames by common columns or row names, or do other versions of database _join_ operations
+# Merge multiple Data Frames
+Merge multiple data frames by row.
 
 ## How to Access This Feature
 
-![](images/command-merge-df-menu.png)
+### From + (plus) Button
+![](images/command-bind-rows-df-menu.png)
 
-* Click "+" button and select "Merge".
+* Click "+" button and select "Merge (Add Rows / Union)"
 
-## Merge data frames from UI
+## Bind multiple data frames by row
 
-![](images/merge.png)
+![](images/bind_rows.png)
 
-* bind_rows
-* union
-* intersect
-* setdiff
+1. Select Operation Type for the Merge. Supported options are:
 
-Take a look at this post for more details.
+- Bind Rows (Merge all rows)
+- Union (Merge only unique rows)
+- Intersection (Merge only the common)
+- Setdiff (Merge only the difference)
 
-* [Merging two data frames with union or bind_rows](https://blog.exploratory.io/merging-two-data-frames-with-union-or-bind-rows-a55e79766d0)
+2. Select the Data Frames you want to merge. You can select a single or multiple data frames.
+3. (Optional) You can enable 'Reserve Data Frame Name' option to create a new column to hold the names of merged data frames.
+4. (Optional) You can enable 'Force Data Type to Match' to merge the data frames even when the data types of the corresponding columns are different. After the merge, it detects and assigns appropriate data types automatically.
