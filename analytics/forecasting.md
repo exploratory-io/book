@@ -55,9 +55,11 @@ There are many properties to configure how to build the models and how to transf
 1. Under Analytics view, select "Time Series Forecasting (Prophet)" for Analytics Type.
 2. Select a column for Date and select an appropriate scale (e.g. Floor to Week).
 3. (Optional) Select a column and aggregate function for Y Axis. The default is Number of Rows.
-4. (Optional) Select a column to group subjects with "Repeat By" column selector. For each group, a separate small chart will be displayed.
-5. Click Run button to run the analytics.
-6. Select each view type (explained below) see the detail of the analysis.
+4. (Optional) Select columns and aggregate functions External Predictors.
+5. (Optional) Select a column for Holiday Column.
+6. (Optional) Select a column to group subjects with "Repeat By" column selector. For each group, a separate small chart will be displayed.
+7. Click Run button to run the analytics.
+8. Select each view type (explained below) see the detail of the analysis.
 
 ## "Forecasted" View
 
