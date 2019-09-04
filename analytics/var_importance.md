@@ -102,15 +102,15 @@ If the Target Variable column is numeric, you will see
 ![](images/randomforest_prediction_matrix.png)
 
 ### "Probability" View
-
+For binary classification, "Probability" View shows distribution of predicted probability of being TRUE, for the observations that are actually TRUE and for the observations that are actually FALSE.
 ![](images/randomforest_probability.png)
 
 ### "Prediction Quality" View
-
+When Target Variable is a number, "Prediction Quality" View shows a scatter plot with predicted values on X-axis, and actual values on Y-axis.
 ![](images/randomforest_prediction_quality.png)
 
 ### "Data" View
-
+Data View shows original input data with additional columns of predicted value and/or predicted probability.
 ![](images/randomforest_data.png)
 
 ## R Package
