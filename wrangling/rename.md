@@ -15,6 +15,5 @@ Rename existing column names
 ## Rename
 ![](images/rename.png)
 
-1. Select the column to rename from "Column" dropdown list.
 2. Type in the new name for the column in "New Column Name" field.
 3. Click "Run" to rename the column.
