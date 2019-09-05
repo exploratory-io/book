@@ -42,8 +42,30 @@ See [An Introduction to MongoDB Query for Beginners](https://blog.exploratory.io
 
 The aggregation pipeline has an internal optimization phase that provides improved performance for certain sequences of operators. For details, see [Aggregation Pipeline Optimization](https://docs.mongodb.com/manual/core/aggregation-pipeline-optimization/)
 
+## 4. Using Parameters in Find
 
-## 4. Import
+First, click Parameter link on the MongoDB Data Import Dialog.
+
+![](images/parameter_with_mongo.png)
+
+Second, define a parameter and click Save button.
+
+![](images/param_for_mongo.png)
+
+Finally, you can use @{} to surround a variable name inside the query like below.
+
+  ```
+  {borough: @{borough}}
+  ```
+  
+  If you type @ then it suggests parameters like below. And now it shows restaurants in Manhattan.
+  
+  ![](images/param_suggest_mongo.png)
+
+
+Here's a [blog post](https://exploratory.io/note/kanaugust/An-Introduction-to-Parameter-in-Exploratory-WCO4Vgn7HJ) for more detail.
+
+## 5. Import
 
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
