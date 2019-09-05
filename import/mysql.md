@@ -20,15 +20,14 @@ Click MySQL.
 
 ## 3. Import
 
-1. Put data frame name.
 
-2. Select connection from left dialog box.
+1. Select connection from left dialog box.
 
-3. Write a query in the input field.
+2. Write a query in the input field.
 
-4. Click "Preview" button. Then you will see the preview of the data.
+3. Click "Preview" button. Then you will see the preview of the data.
 
-5. Click "Import" button.
+4. Click "Import" button.
 
 ![](images/mysql-import.png)
 
