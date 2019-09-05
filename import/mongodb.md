@@ -10,7 +10,7 @@ Create a connection following [this instruction](connection.html).
 
 Click '+' button next to 'Data Frames' and select 'Import Database Data'.
 
-![](images/import-database-data.png)
+![](images/import-database.png)
 
 Click MongoDB to select.
 
@@ -22,9 +22,8 @@ Click MongoDB to select.
 
 ![](images/import-mongo-dialog.png)
 
-1. Put the data frame name at 'Name'.
-2. Select connection from left dialog box.
-3. Select collection from left dialog box. Then you will see the preview of the data. 
+1. Select connection from left dialog box.
+2. Select collection from left dialog box. Then you will see the preview of the data. 
 
 You can use Input Parameters to fine tune your query result.
 
