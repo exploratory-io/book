@@ -135,7 +135,7 @@
      * [Window Calculation](viz/window-calc.md)
      * [Date/Time Aggregation](viz/date-aggregate.md)
      * [Show Range](viz/range.md)
-     * [Highlight](viz/highlight.md)
+     * [Highlight](highlight.md)
      * [Change Marker](viz/marker.md)
      * [Multiple Y-Axis Columns](viz/multi-y.md)
      * [Layout Configuration](viz/layout.md)

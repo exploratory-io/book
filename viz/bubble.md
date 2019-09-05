@@ -19,7 +19,7 @@ You can show the distribution of the data by circles. It is similar to the Scatt
 
 ## Highlight 
 
-You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](viz/highlight.md) for the detail. 
+You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
 
 
 ## Category 
