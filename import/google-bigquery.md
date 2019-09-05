@@ -36,7 +36,7 @@ To use Google BigQuery with Exploratory Desktop, you need to create a project on
 
 - Select 'Import Database Data' from Add Data Frames dropdown
 
-![](images/import-db.png)
+![](images/import-database.png)
 
 - Click 'Google BigQuery'
 
