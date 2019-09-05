@@ -33,6 +33,8 @@ Input data should contain following columns.
     * Test Mode - Enable/Disable Test Mode. In Test Mode, data is split into training data and test data, and test data is not used for building model, so that it can be used for later test, without bias.
     * Ratio for Test Data - A value between 0 and 1.
     * Data Splitting Method
+      * Random - Specified ratio of data that is picked randomly is used as test data.
+      * Reserve Order in Data - Specified ratio of data that appears last are used as test data.
 
 ## How to Use This Feature
 1. Click Analytics View tab.
