@@ -7,6 +7,8 @@ Principal components tries to keep as much information of the original data in a
 Input data should contain following columns.
 
   * Variable Columns - Set of numeric columns to convert into principal components.
+  * Color By - Value of the column is used for color of each dot on the Scatter View.
+  * Label Column - Value of the column is shown on the Scatter View as label of each dot, or as an item on mouse-over balloon.
 
 ## Analytics Properties
   * Data Preprocessing

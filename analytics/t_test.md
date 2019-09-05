@@ -8,6 +8,22 @@ Input data should contain following columns.
   * Target Variable - Numeric column whose means should be calculated and compared between groups.
   * Explanatory Variable(s) - Column with 2 different values to categorize rows into 2 groups.
 
+## Properties
+  * Analytics Properties
+    * Type of Alternative Hypothesis
+      * Two Sided
+      * Less
+      * Greater
+    * Expected Mean or Difference in Means - Default is 0. Null hypothesis is that there are exactly this much difference between means of the 2 groups.
+    * Paired - If TRUE, perform a paired t-test.
+    * Assume Equal Variances - If TRUE, assume that variances are same between the 2 groups.
+    * Confidence Level - Confidence level for confidence interval of difference of means between two groups reported in Summary Table.
+  * Power Analysis
+    * Difference to Detect - Size of difference between means of 2 groups that is considered to be meaningful. Used to calculate effect size, Cohen's d. If not specified, mean difference calculated from the data is used.
+    * Standard Deviation - Assumed standard deviation of the Target Value. Used to calculate effect size, Cohen's d. If not specified, calculated from the data.
+    * Probability of Type 1 Error (P Value) - Probability of type 1 error that can be tolerated. Default is 0.05.
+    * Probability of Type 2 Error (1 - Power) - (Optional) Probability of type 2 error that can be tolerated. If a value is specified, required sample size is estimated and reported in the Summary Table. If not, probability of type 2 error with current condition of the test is reported in the Summary Table.
+
 ## How to Use This Feature
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.

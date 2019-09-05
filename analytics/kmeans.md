@@ -6,6 +6,7 @@ Cluster data (rows) by K-means algorithm.
 Input data should contain following columns.
 
   * Variable Columns - Set of numeric columns to be the basis of clustering.
+  * Subject Column - Value of the column is shown on the Scatter View as label of each dot, or as an item on mouse-over balloon. It is also used for color of Stack Bar View.
 
 ## Analytics Properties
   * K-Means Clustering 
@@ -17,10 +18,10 @@ Input data should contain following columns.
       - Lloyd
       - Forgy
       - MacQueen
-    * Normalize Variable Columns - Whether to normalize Variable Columns before clustering.
     * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
   * Data Preprocessing
     * Sample Data Size - Number of rows to sample before clustering them.
+    * Normalize Variable Columns - Whether to normalize Variable Columns before clustering.
   * Error Bar
     * Type of Error Bar - Type of error bar. This can be...
       - Standard Error

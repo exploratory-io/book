@@ -24,6 +24,9 @@ Input data should contain following columns.
     * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
   * Imbalanced Data Adjustment
     * Adjust Imbalanced Data - Adjust imbalance of data in Target Variable (e.g. FALSE being majority and TRUE being minority.) by SMOTE (Synthetic Minority Over-sampling Technique) altorithm.
+    * Target % of Minority Data
+    * Maximum % Increase for Minority Size
+    * Neighbors to Sample for Populating Data
   * Evaluation
     * Test Mode - Enables/Disables Test Mode, where data is split into training data and test data for evaluation of the resulting Decision Tree model.
     * Ratio for Test Data - Ratio of test data to select from the entire data. Default is 0.3.

@@ -7,11 +7,14 @@ Input data should contain following columns.
 
   * Variable Columns - Set of numeric or logical columns. Distances for all posssible pairs among those columns are calculated.
 
-## Analytics Properties
-  * Method - Method to calculate distances
-  * Show Only Lower Triangle - Show only lower triangle of the matrix, avoiding showing distances for same pairs twice.
-  * Show Diagonal Values - Show values on diagonal of the matrix, which should always have distance of 0.
-  * Number of Clusters - Number of clusters (by K-Means algorithm) used when clustring columns to display them on Similarity Map view.
+## Properties
+  * Analytics Properties
+    * Method - Method to calculate distances
+    * Show Only Lower Triangle - Show only lower triangle of the matrix, avoiding showing distances for same pairs twice.
+    * Show Diagonal Values - Show values on diagonal of the matrix, which should always have distance of 0.
+  * Clustering
+    * Number of Clusters - Number of clusters (by K-Means algorithm) used when clustring columns to display them on Similarity Map view.
+    * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
 
 ## How to Use This Feature
 1. Click Analytics View tab.

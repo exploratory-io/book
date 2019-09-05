@@ -27,7 +27,7 @@ There are many properties to configure how to build the models and how to transf
     * Seasonality Mode - This option controls whether the Seasonality, Holiday, and External Predictors have additive or multiplicative effect in the forecasting. Default is Additive.
   * Holidays
     * Strength of Holiday Effect - Controls the strength of holiday effect taken into account in the forecasting.
-    * Countries for Holidays - You can specify list of country codes whose holidays should be considered in making forecast.
+    * Countries for Holidays - You can specify list of country codes whose holidays should be considered in making forecast. For supported countries, take a look at [this table](#countries_for_holidays).
   * Limits
     * Trend Upper Limit - Upper Limit of trend. Largest possible value for the trend to be forecasted. e.g. Size of entire market, etc.
     * Trend Lower Limit - Lower limit of trend. Takes effect only when Trend Upper Limit is specified.
@@ -130,8 +130,54 @@ Take a look at [this note](https://blog.exploratory.io/a-gentle-introduction-to-
 ![](images/timeseries_forcasting_summary.png)
 
 ## Countries for Holidays
+Following is the list of country codes that are supported for "Countries or Holidays" property.
 
-TBD
+|Code|Country Name   |
+|----|---------------|
+|AR  |Argentina      |
+|AT  |Austria        |
+|AU  |Australia      |
+|BD  |Bangladesh     |
+|BE  |Belgium        |
+|BR  |Brazil         |
+|BY  |Belarus        |
+|CA  |Canada         |
+|CH  |Switzerland    |
+|CN  |China          |
+|CO  |Colombia       |
+|CZ  |Czechia        |
+|DE  |Germany        |
+|DK  |Denmark        |
+|EG  |Egypt          |
+|ES  |Spain          |
+|FI  |Finland        |
+|FR  |France         |
+|GB  |United Kingdom |
+|HR  |Croatia        |
+|HU  |Hungary        |
+|ID  |Indonesia      |
+|IE  |Ireland        |
+|IN  |India          |
+|IT  |Italy          |
+|MX  |Mexico         |
+|MY  |Malaysia       |
+|NL  |Netherlands    |
+|NO  |Norway         |
+|NZ  |New Zealand    |
+|PH  |Philippines    |
+|PK  |Pakistan       |
+|PL  |Poland         |
+|PT  |Portugal       |
+|RU  |Russia         |
+|SE  |Sweden         |
+|SI  |Slovenia       |
+|SK  |Slovakia       |
+|TH  |Thailand       |
+|TR  |Turkey         |
+|UA  |Ukraine        |
+|US  |United States  |
+|VN  |Vietnam        |
+|ZA  |South Africa   |
 
 ## R Package
 

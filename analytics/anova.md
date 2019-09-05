@@ -8,6 +8,12 @@ Input data should contain following columns.
   * Target Variable - Numeric column whose means should be calculated and compared between groups.
   * Explanatory Variable(s) - Column with categorical values to categorize rows into groups.
 
+## Properties
+  * Power Analysis
+    * Effect Size to Detect (Cohen's f) - Effect size (Cohen's f) that is considered to be meaningful. If not specified, the value calculated from the data is used.
+    * Probability of Type 1 Error (P Value) - Probability of type 1 error that can be tolerated. Default is 0.05.
+    * Probability of Type 2 Error (1 - Power) - (Optional) Probability of type 2 error that can be tolerated. If a value is specified, required sample size is estimated and reported in the Summary Table. If not, probability of type 2 error with current condition of the test is reported in the Summary Table.
+
 ## How to Use This Feature
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.
