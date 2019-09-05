@@ -8,6 +8,13 @@ Input data should contain following columns.
   * Target Variable - Numeric column whose means should be calculated and compared between groups.
   * Explanatory Variable(s) - Column with categorical values to categorize rows into groups.
 
+## Properties
+  * Power Analysis
+    * Difference to Detect - Size of difference between means of 2 groups that is considered to be meaningful. Used to calculate effect size, Cohen's d. If not specified, mean difference calculated from the data is used.
+    * Standard Deviation - Assumed standard deviation of the Target Value. Used to calculate effect size, Cohen's d. If not specified, calculated from the data.
+    * Probability of Type 1 Error (P Value) - Probability of type 1 error that can be tolerated. Default is 0.05.
+    * Probability of Type 2 Error (1 - Power) - (Optional) Probability of type 2 error that can be tolerated. If a value is specified, required sample size is estimated and reported in the Summary Table. If not, probability of type 2 error with current condition of the test is reported in the Summary Table.
+
 ## How to Use This Feature
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.

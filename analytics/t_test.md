@@ -18,7 +18,7 @@ Input data should contain following columns.
     * Paired - If TRUE, perform a paired t-test.
     * Assume Equal Variances - If TRUE, assume that variances are same between the 2 groups.
     * Confidence Level - Confidence level for confidence interval of difference of means between two groups reported in Summary Table.
-  * Power Analysis - This section is
+  * Power Analysis
     * Difference to Detect - Size of difference between means of 2 groups that is considered to be meaningful. Used to calculate effect size, Cohen's d. If not specified, mean difference calculated from the data is used.
     * Standard Deviation - Assumed standard deviation of the Target Value. Used to calculate effect size, Cohen's d. If not specified, calculated from the data.
     * Probability of Type 1 Error (P Value) - Probability of type 1 error that can be tolerated. Default is 0.05.
