@@ -15,16 +15,16 @@
 ## Summarize by Selecting Aggregate Function from UI
 ![](images/summarize-column.png)
 
-1. Select "Column" tab.
-2. Select the column to to aggregate its values.
-3. Select aggregate function to apply to the column.
-4. Type in the name of new column with aggregation result in "New Column Name" field.
+1. (Optional) Select column(s) for "Group By".
+2. Select Value column(s) to to aggregate its values.
+3. Select aggregate function to apply to each column.
 5. Click "Run" to run the aggregation and create the new column.
 
 ## Summarize by Custom R Expression
 ![](images/summarize-custom.png)
 
-1. Select "Custom" tab.
-2. Type in the R Expression for the aggregation in "Expression" field.
+1. Select "(Custom)" from a Column List of Values.
+2. On the Custom Dialog, type in the R Expression for the aggregation in "Expression" field.
 3. Type in the name of new column with aggregation result in "New Column Name" field.
-4. Click "Run" to run the aggregation and create the new column.
+4. Click "OK" on the Custom Dialog and check the preview result.
+5. Click "Run" to run the aggregation and create the new column.

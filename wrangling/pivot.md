@@ -8,12 +8,17 @@ Pivot columns into rows and columns. Values are count of pairs of rows and colum
 
 * Click "+" button and select "Pivot" 
 
+### From Column Menu
+![](images/command-pivot-column-menu.png)
+
+* You can also select "Pivot" from column menu of the column you want to pivot.
+
 
 ## Pivot
 
 ![](images/pivot.png)
 
-1. `Row` - select columns for Pivot Row.
+1. `Rows` - select columns for Pivot Row.
 2. `Columns`  - select colums for Pivot Columns.
 3. `Value` (Optional) - A column for values in output data frame.
 
