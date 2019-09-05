@@ -39,7 +39,7 @@ Click Amazon Aurora.
 
 ## 4. Using Parameters in SQL
 
-First, click a parameter link on the SQL Data Import Dialog.
+First, click Parameter link on the SQL Data Import Dialog.
 
 ![](images/add_parameter.png)
 
