@@ -7,10 +7,10 @@ Released on 9/4/2019
 ### Bug Fixes
 
 * Chart: Support an option to show/hide unused factor levels in Pivot Table. 
-* Analytics: Failed to render Survival curve chart with Repeat By and without Cohort, and showed an error "Invalid argument was passed to returnsNumericValue". 
 * Chart: Sample size became the default size (5,000) if you set a sample size more than the number of rows in Scatter chart. 
 * Chart: Histogram failed to render and showed the error "Cannot read property 'name' of null". 
 * Chart: Category setting dialog didn't open by clicking the green text in Boxplot. 
+* Analytics: Failed to render Survival curve chart with Repeat By and without Cohort, and showed an error "Invalid argument was passed to returnsNumericValue". 
  
 
 ## 5.3.2
