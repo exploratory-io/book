@@ -31,10 +31,14 @@ Join rows from the data frame with rows from another data frame by matching valu
 3. Select "Current Column" and "Target Column".
   "Current Column" is a column from current data frame, and "Target Column" is a column from target data frame. When a row from current data frame and a row from target data frame have same values in those columns, the rows are joined into one row in the resulting data frame.
 
-4. Specify "Current Columns Suffix" and/or "Target Columns Suffix" (Optional)
+4. Enable "Case Insensitive Join" (Optional)
+
+   If you want to join two data frames by ignoring case of the join key column value, select this checkbox. 
+
+5. Specify "Current Columns Suffix" and/or "Target Columns Suffix" (Optional)
   These are the suffixes to distinguish columns from current data frame and columns from target data frame in the resulting data frame, when there are columns with same names in both data frames. Note that those suffixes are applied only to column names that appear both in current and target data frames.
 
-5. Click "Run" button.
+6. Click "Run" button.
 
 ## References
 * [Introduction to Join — Bring extra columns from the target in Exploratory](https://blog.exploratory.io/introduction-to-join-bring-extra-columns-from-the-target-in-exploratory-1ec585ec2cf1)
