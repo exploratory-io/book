@@ -46,7 +46,7 @@ Finally, you can use @{} to surround a variable name inside the query like below
 
   ```
   select *
-  from airline_2016_01
+  from flights 
   where carrier = @{carrier}
   ```
   
