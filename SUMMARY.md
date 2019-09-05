@@ -145,6 +145,9 @@
      * [Save as Exploratory Data File](viz/save-as-edf.md)
      * [Share/Schedule](viz/schedule.md)
      * [URL Link](viz/urllink.md)
+     * [Category (Binning)](viz/category.md)
+     * [Highlight](viz/highlight.md)
+     * [Limit Values](viz/limit.md)
 
 
 * [Analytics](analytics.md)
