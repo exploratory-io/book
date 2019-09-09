@@ -1,6 +1,12 @@
 # Time Series Forecasting
 
-With past time series data as training data, it creates a model that forecasts values for future dates/times, and plots the predicted values on a Line Chart.
+You can quickly build time series forecasting models with the Prophet algorithm and visualize the insights including forecasted values, seasonality, trend, and effects.
+
+There are a few blog posts about the Time Series Forecasting with Prophet.
+
+* How-to Guides (incl. Tutorials) in English - [Link](https://exploratory.io/tag/Forecasting)
+* 使い方ガイド（日本語）- [Link](https://exploratory.io/tag/Forecasting)
+
 
 # Input Data
 
