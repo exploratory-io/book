@@ -1,11 +1,14 @@
 # Release Note
 
-## 5.3
+## 5.3.2
 
-Coming soon!
+Released on 9/10/2019
 
+### Enhancements
+
+* Certified with Exploratory Desktop 5.3.2.
 
 ### Bug Fixes
 
-* (Coming soon)
+* Timezones used for timestamps displayed in shared Dashboard/Note/Slide page was inconsistent.
  
