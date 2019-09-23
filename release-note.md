@@ -1,17 +1,49 @@
 # Release Note
 
+## 5.3.3
+
+Released on 9/23/2019
+
+### Bug Fixes
+
+Data Source: Web Scraping: The Run button became disabled once it was clicked.
+Data Wrangling: On Expression Editor, stop auto suggest when new line feed is entered.
+Data Wrangling: Filter: Supported aggregated function for Date and POSIXct data type columns.
+Data Wrangling: When you clicked ‘Create New’ in an existing Mutate step, the column name and the expression were copied from the one above.
+Data Wrangling: Column names were not suggested for some commands when the Mutate Dialog was opened from column header menu.
+Data Wrangling: Could not type in  "[ ]"  on Custom Function Editor of Summarize Dialog.
+Data Wrangling: Error messages were showing the step id instead of the step name.
+Data Wrangling: Google Sheets Export: Existing sheets names were not listed.
+Chart: Show detail didn't show any rows for "(NA)" color in Bar chart.
+Chart: Show appropriate date functions at Contour X/Y.
+Chart: Pie chart failed to render and showed an error with "e.split is not a function".
+Chart: Last visited Tab was not remembered when creating a new Analytics.
+Chart: Highlight dialog showed empty/incorrect values in column value dropdown.
+Chart: Shows details Dialog did not show data when category (binning) is applied to a color column.
+Chart: Histogram X-Axis bucket range was incorrect if you applied the log function to X-Axis.
+Chart: Deleting a data frame that is used by a chart after modifying the chart threw an "TypeError: Cannot read property 'getName' of undefined" error
+Chart: Sample size became 5000 (default) if you set the sample size more than the number of rows in Scatter chart.
+Analytics: Linear Regression/Logistic Regression/GLM: In Summary Tables, "Deviance" was relabeled to "Residual Deviance"
+Analytics: PCA, K-Means: Sampling was not done by default as part of preprocessing.
+Analytics: 'Other' group information was showed even there were only 2 unique values after an analytics level filter was applied.
+Analytics: PCA: The numbers in X/Y titles were not updated accordingly.
+Analytics: Failed to render Survival Curve with Cohort and showed an error "Invalid argument was passed to returnsNumericValue".
+Note/Slide/Dashboard: Switching the view mode from 'Side-by-Side' to 'Single' should be disabled while preview process is still running.
+Parameter: Could not save Number Text field parameter because of an incorrect data type validation. 
+
+
 ## 5.3.2.6
 
 Released on 9/4/2019
 
 ### Bug Fixes
 
-* Chart: Support an option to show/hide unused factor levels in Pivot Table. 
-* Chart: Sample size became the default size (5,000) if you set a sample size more than the number of rows in Scatter chart. 
-* Chart: Histogram failed to render and showed the error "Cannot read property 'name' of null". 
-* Chart: Category setting dialog didn't open by clicking the green text in Boxplot. 
-* Analytics: Failed to render Survival curve chart with Repeat By and without Cohort, and showed an error "Invalid argument was passed to returnsNumericValue". 
- 
+* Chart: Support an option to show/hide unused factor levels in Pivot Table.
+* Chart: Sample size became the default size (5,000) if you set a sample size more than the number of rows in Scatter chart.
+* Chart: Histogram failed to render and showed the error "Cannot read property 'name' of null".
+* Chart: Category setting dialog didn't open by clicking the green text in Boxplot.
+* Analytics: Failed to render Survival curve chart with Repeat By and without Cohort, and showed an error "Invalid argument was passed to returnsNumericValue".
+
 
 ## 5.3.2
 
