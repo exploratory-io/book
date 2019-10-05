@@ -33,7 +33,8 @@ There are many properties to configure how to build the models and how to transf
     * Seasonality Mode - This option controls whether the Seasonality, Holiday, and External Predictors have additive or multiplicative effect in the forecasting. Default is Additive.
   * Holidays
     * Strength of Holiday Effect - Controls the strength of holiday effect taken into account in the forecasting.
-    * Countries for Holidays - You can specify list of country codes whose holidays should be considered in making forecast. For supported countries, take a look at [this table](#countries_for_holidays).
+    * Use Built-in Country Holiday Data - By setting this option to Yes, you can specify list of country codes whose holiday data should be considered in making forecast.
+    * Country for Holiday Data - Specify list of country codes here. For supported countries, take a look at [this table](#countries_for_holidays).
   * Limits
     * Trend Upper Limit - Upper Limit of trend. Largest possible value for the trend to be forecasted. e.g. Size of entire market, etc.
     * Trend Lower Limit - Lower limit of trend. Takes effect only when Trend Upper Limit is specified.
@@ -165,6 +166,7 @@ Following is the list of country codes that are supported for "Countries or Holi
 |IE  |Ireland        |
 |IN  |India          |
 |IT  |Italy          |
+|JP  |Japan          |
 |MX  |Mexico         |
 |MY  |Malaysia       |
 |NL  |Netherlands    |
