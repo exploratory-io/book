@@ -1,5 +1,30 @@
 # Release Note
 
+## 5.3.4
+
+Released on 10/8/2019
+
+### Bug Fixes
+
+Data Source: Added 'Data Catalog' from where users can download published data on Exploratory Cloud Server
+Data Source: MySQL: On Windows, Japanese characters used in the column names and data were garbled.
+
+Data Wrangling: Mutate All dialog had a wrong function name for "log1p".
+Data Wrangling: On Summarize dialog, it shows "? ordered" as dat type on preview table when choosing weekdays() as an aggregation function for Date Column
+Data Wrangling: It now shows the 'last imported' date/time at the data source step.
+
+Chart: Added 'Apply' button for the number of bucket control in Histogram.
+Chart: when you delete a parameter that is assign to a chart, the chart hangs when viewed
+
+Analytics: Time Series Forecasting: Supported Japan as Country for Holidays
+Analytics: Time Series Forecasting: Prophet: Multiple countries for holidays were not honored
+
+Publish: The description/title/tags for shared contents (e.g. Note, Dashboard, Chart, Data) can be editted at the server. 
+Publish: Keep original url when stop publishing and republishing contents (e.g. Note, Slide, Dashboard, Chart,  Data, etc.)
+
+Installation: On Windows, an installed R is not detected if it is installed with non-privileged user who has not activated OneDrive.
+
+
 ## 5.3.3
 
 Released on 9/23/2019
@@ -29,8 +54,8 @@ Released on 9/23/2019
 * Analytics: PCA: The numbers in X/Y titles were not updated accordingly.
 * Analytics: Failed to render Survival Curve with Cohort and showed an error "Invalid argument was passed to returnsNumericValue".
 * Note/Slide/Dashboard: Switching the view mode from 'Side-by-Side' to 'Single' should be disabled while preview process is still running.
-* Parameter: Could not save Number Text field parameter because of an incorrect data type validation. 
- 
+* Parameter: Could not save Number Text field parameter because of an incorrect data type validation.
+
 
 ## 5.3.2.6
 
