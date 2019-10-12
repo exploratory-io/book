@@ -1,8 +1,10 @@
-# Terms for the Service
+# Terms of the Service
 
 By using the Exploratory.io web site ("Service"), or any software products or services of Exploratory, Inc ("Exploratory"), you are agreeing to be bound by the following terms and conditions ("Terms of Service"). IF YOU ARE ENTERING INTO THIS AGREEMENT ON BEHALF OF A COMPANY OR OTHER LEGAL ENTITY, YOU REPRESENT THAT YOU HAVE THE AUTHORITY TO BIND SUCH ENTITY, ITS AFFILIATES AND ALL USERS WHO ACCESS OUR SERVICES THROUGH YOUR ACCOUNT TO THESE TERMS AND CONDITIONS, IN WHICH CASE THE TERMS "YOU" OR "YOUR" SHALL REFER TO SUCH ENTITY, ITS AFFILIATES AND USERS ASSOCIATED WITH IT. IF YOU DO NOT HAVE SUCH AUTHORITY, OR IF YOU DO NOT AGREE WITH THESE TERMS AND CONDITIONS, YOU MUST NOT ACCEPT THIS AGREEMENT AND MAY NOT USE THE PRODUCTS and SERVICES.
 
 If Exploratory makes material changes to these Terms, we will notify you by email or by posting a notice on our site before the changes are effective. Any new features that augment or enhance the current Service, including the release of new tools and resources, shall be subject to the Terms of Service. Continued use of the Service after any such changes shall constitute your consent to such changes. You can review the most current version of the Terms of Service at any time at: https://exploratory.io/terms
+
+In addition, when using the Services, you shall be subject to any posted guidelines, rules or terms applicable to such Services, which may be posted from time to time. All such guidelines, rules or terms (including without limitation the [Exploratory Public Data Policy](https://exploratory.io/data-policy)) are hereby incorporated by reference into the Term of the Service. Exploratory may also offer other services that are governed by these or different terms of service.
 
 Violation of any of the terms below will result in the termination of your Account. While Exploratory prohibits such conduct and Content on the Product and Service, you understand and agree that Exploratory cannot be responsible for the Content posted on the Product and Service and you nonetheless may be exposed to such materials. You agree to use the Service at your own risk.
 
