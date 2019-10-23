@@ -1,5 +1,49 @@
 # Release Note
 
+## 5.4.0
+
+Released on 10/23/2019
+
+Unlike other major version upgrades (e.g. 5.2.0, 5.3.0, etc.), this release (5.4.0) is a 'merge' release that brings all the recent enhancements that we have made for 5.3.4 patch set. Also, we have made the below listed enhancements and bug fixes.
+
+We're going to release an 'official' v5.4, which is going to be as 5.4.1, in early November, and add new features and enhancements we're currently working on.
+
+### Enhancements
+
+* Data Wrangling: Added an option for ignoring NA when uniting columns.
+* Chart: You can use the columns as part of the URL link even when they are not selected for the table.
+* Note: It now shows the TOC expanded by default. You can change this setting in the property.
+* Note: Changed the font style for Note and Chart.
+* It now always ignores .Rprofile file so that it can start with more stability.
+* We have upgraded the system R packages.
+
+Beta Features:
+
+These are not official features, but we have exposed them as beta features. We'll support these as official features in the next release (5.4.1).
+
+* Beta: Analytics: We have added a Collinearity tab for Linear Regression, Logistic Regression, and GLM, which will help you diagnosis the multicollinearity.
+* Beta: Analytics: We have added a Effect tab for Linear Regression, Logistic Regression, GLM, and Decision Tree, which is basically the same as the one for Random Forest and helps you understand how the change in the predictor variables would effect the target variable.  
+
+### Bug Fixes
+
+* Data Wrangling: 'Convert from Hexadecimal to Numeric' menu was missing for the the column header menu.
+* Data Wrangling: Custom Filter condition needed to be surrounded by parenthesis.
+* Chart: After duplicating a chart and renaming the chart name, thumbnail was corrupted on the chart tab.
+* Chart: 'Number' was returning a number value even when a Date/POSIXct column is assigned.
+* Chart: Pin was removed after Note is refreshed.
+* Analytics: Improved support for multibyte column names, especially with Time Series Forecasting and Logistic Regression.
+* Analytics: Time Series Forecasting: When the change point dates are not double-quoted, it errored out.
+* Note: It overflows on iPhone when it contains the code blocks.
+* Note: When you copy image into Note, it was showing a wrong project folder path.
+* Note: Even after removing all the text from the editor the Preview was still showing the same result.
+
+Public Version Only:
+
+* Could not setup Web Proxy when Public Version was not able to connect to the Internet.
+* There was an error about git when the password includes the special characters like '@'.
+* Project git clone dialog should validate the project URL.
+
+
 ## 5.3.4
 
 Released on 10/8/2019
@@ -22,7 +66,7 @@ Released on 10/8/2019
 * Analytics: Time Series Forecasting: Supported Japan as Country for Holidays
 * Analytics: Time Series Forecasting: Prophet: Multiple countries for holidays were not honored
 
-* Publish: The description/title/tags for shared contents (e.g. Note, Dashboard, Chart, Data) can be editted at the server. 
+* Publish: The description/title/tags for shared contents (e.g. Note, Dashboard, Chart, Data) can be editted at the server.
 * Publish: Keep original url when stop publishing and republishing contents (e.g. Note, Slide, Dashboard, Chart,  Data, etc.)
 
 * Installation: On Windows, an installed R is not detected if it is installed with non-privileged user who has not activated OneDrive.
