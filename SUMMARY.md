@@ -139,6 +139,7 @@
      * [Change Marker](viz/marker.md)
      * [Multiple Y-Axis Columns](viz/multi-y.md)
      * [Layout Configuration](viz/layout.md)
+     * [Column Configuration](viz/column-configuration.md)
      * [Color Setting](viz/color.md)
      * [Pin](viz/pin.md)
      * [Save as PNG/SVG](viz/save.md)
