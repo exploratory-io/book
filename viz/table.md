@@ -1,12 +1,16 @@
 # Table
 
-![](images/table.png)
+![](images/table1.png)
 
 You can view the raw data quickly with Table. 
 
+## Columns 
+
+You can select which columns to show in the table. See [Column Configuration](column-configuration.md) for detail.
+
 ## # of Rows
 
-You can select how many rows to show at "# of Rows" control. 
+You can select how many rows to show at "# of Rows" control. You can also change either showing the first rows or last rows in the data frame. 
 
 ## Sort 
 
