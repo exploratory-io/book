@@ -101,6 +101,18 @@ You can choose the column function you want to apply on the column data. Followi
 
 You can set the sort order of the column. You can set either "Descending" or "Ascending". You can set the sort order in multiple columns. In this case, the sort happens in the priority order. 
 
+### Number Formatting
+
+You can set Number Formatting for numeric columns. Following formatting options are available. 
+
+* Type
+  * Number: Format as simple numbers. This is the default type.
+  * Currency: Format as currency. If you set a currency symbol, it will be added at the beginning of each number. 
+  * Percentage: Format as percentages. "%" sign will be added at the end of each number. 
+* Digit: Number of decimal digits.
+* Symbol: Current symbol. It will be added to it will be added at the beginning of each number if "Currency" type is selected. 
+
+
 ### URL 
 
 You can set a URL link on the column. If you define a URL link, the column value will be clickable and if a user clicks the value, it opens up the URL in an external browser. 
