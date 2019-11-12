@@ -93,6 +93,29 @@ You can categorize numeric values inside the chart. See [Category(Binning)](cate
 You can use the Custom Function feature to define your own aggregation function at Value. See [Custom Function](custom-function.md) for the detail.
 
 
+## URL Link 
+
+You can set a URL Link on each measure column. You can dynamically construct the link with the associated column values by referencing the column name by `${}`. Once you define a URL Link, the column value will be clickable and if a user clicks the value, it opens up the URL in an external browser. 
+
+  
+For example, if you have a "Country" column in your Pivot, you can set the URL `http://exploratory.io/?q=${Country}` like following.
+
+
+![](images/pivot3.png)
+
+
+
+Then, the Pivot will look like this.
+
+![](images/pivot2.png)
+
+
+If you click "Brazil", a browser opens up the URL `https://exploratory.io/?q=Brazil`
+
+
+
+  
+
 
 ## Layout Configuration
 

@@ -3,11 +3,11 @@
 ![](images/cconf1.png)
 
 
-At "Select and Confiure Columns", you can congfigure which columns to show and how each column shows. 
+At "Select and Configure Columns", you can configure which columns to show and how each column shows. 
 
 ## Select Columns 
 
-You can select which columns to show at "Select Column" section in the left hand side of the dialog. You can click to select a column, and click again to unselect the column. You can use "Shift+Click" to select multiple columns at a time. 
+You can select which columns to show at "Select Column" section on the left-hand side of the dialog. You can click to select a column and click again to unselect the column. You can use "Shift+Click" to select multiple columns at a time. 
 
 
 ![](images/cconf2.png)
@@ -16,7 +16,7 @@ You can select which columns to show at "Select Column" section in the left hand
 
 ## Reorder Columns 
 
-You can reorder columns at "Reorder Columns" section in the center of the dialog. You can drag and drop to change the order of columns. 
+You can reorder columns at the "Reorder Columns" section in the center of the dialog. You can drag and drop to change the order of columns. 
 
 
 ![](images/cconf3.png)
@@ -29,7 +29,7 @@ You can also remove a column by clicking the trash icon that you see when you ho
 
 ## Preview 
 
-You can preview the table at the "Preview" section in the right hand side of the dialog. 
+You can preview the table at the "Preview" section on the right-hand side of the dialog. 
 
 ![](images/cconf5.png)
 
@@ -53,7 +53,7 @@ You can set the column display name that you want to use.
 
 ### Function 
 
-You can choose the column function you want to apply on the column data. Following funtions are available depending on the data type of the target column. 
+You can choose the column function you want to apply to the column data. The following functions are available depending on the data type of the target column. 
 
 #### Character 
 
@@ -101,26 +101,29 @@ You can choose the column function you want to apply on the column data. Followi
 
 You can set the sort order of the column. You can set either "Descending" or "Ascending". You can set the sort order in multiple columns. In this case, the sort happens in the priority order. 
 
-### URL 
+### Number Formatting
 
-You can set a URL link on the column. If you define a URL link, the column value will be clickable and if a user clicks the value, it opens up the URL in an external browser. 
+You can set Number Formatting for numeric columns. The following formatting options are available. 
 
-You can bind the column value in a URL. For example, if you have "Country" column in your table, you can set the URL like following.
+* Type
+  * Number: Format as simple numbers. This is the default type.
+  * Currency: Format as currency. If you set a currency symbol, it will be added at the beginning of each number. 
+  * Percentage: Format as percentages. "%" sign will be added at the end of each number. 
+* Digit: Number of decimal digits.
+* Symbol: Current symbol. It will be added to it will be added at the beginning of each number if the "Currency" type is selected. 
 
-```
-http://exploratory.io/?q=${Country}
-```
 
-then the table output will look like this.
+### URL Link
+
+You can set a URL Link on the column. You can dynamically construct the link with the associated column values by referencing the column name by `${}`. Once you define a URL Link, the column value will be clickable and if a user clicks the value, it opens up the URL in an external browser. 
+
+For example, if you have a "Country" column in your table, you can set the URL `http://exploratory.io/?q=${Country}`. Then, the table output will look like this.
 
 ![](images/cconf14.png)
 
 
-If you click "Germany", a browser opens up the URL like following.
+If you click "Germany", a browser opens up the URL `https://exploratory.io/?q=Germany`
 
-```
-https://exploratory.io/?q=Germany
-```
 
 
 
@@ -153,14 +156,14 @@ This is the example of the color encoding applied to the background color.
 
 ### Condtional Formatting 
 
-You can apply a specific color only for the values that meet the condition. You can choose operator and enter the value to construct a condtiion, and you can choose a color to apply from the list. You can apply colors to either the value text or background color. 
+You can apply a specific color only for the values that meet the condition. You can choose an operator and enter the value to construct a condition, and you can choose a color to apply from the list. You can apply colors to either the value text or background color. 
 
-You can create multiple conditions by cliking "+" icon. The conditions are evaluated from the top to bottom. You can remove unnecessary conditions by clicking "x" icon.
+You can create multiple conditions by clicking "+" icon. The conditions are evaluated from the top to bottom. You can remove unnecessary conditions by clicking "x" icon.
 
 
 ![](images/cconf10.png)
 
-Following operators are available. 
+The following operators are available. 
 
 * equal to
 * not equal to
