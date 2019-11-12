@@ -113,26 +113,17 @@ You can set Number Formatting for numeric columns. The following formatting opti
 * Symbol: Current symbol. It will be added to it will be added at the beginning of each number if the "Currency" type is selected. 
 
 
-### URL 
+### URL Link
 
-You can set a URL link on the column. If you define a URL link, the column value will be clickable and if a user clicks the value, it opens up the URL in an external browser. 
+You can set a URL Link on the column. You can dynamically construct the link with the associated column values by referencing the column name by `${}`. Once you define a URL Link, the column value will be clickable and if a user clicks the value, it opens up the URL in an external browser. 
 
-You can bind the column value in a URL. For example, if you have a "Country" column in your table, you can set the URL like the following.
-
-```
-http://exploratory.io/?q=${Country}
-```
-
-then the table output will look like this.
+For example, if you have a "Country" column in your table, you can set the URL `http://exploratory.io/?q=${Country}`. Then, the table output will look like this.
 
 ![](images/cconf14.png)
 
 
-If you click "Germany", a browser opens up the URL like the following.
+If you click "Germany", a browser opens up the URL `https://exploratory.io/?q=Germany`
 
-```
-https://exploratory.io/?q=Germany
-```
 
 
 
