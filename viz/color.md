@@ -40,9 +40,9 @@ For the Histograom, you can assign a column with discrete values (text column) t
 For the Violin chart, you can assign a column with discrete values (text column) to make it grouped Violin chart.
 
 
-## Scatter / Bubble 
+## Scatter (No Aggregation / With Aggregation) 
 
-For the Scatter or Bubble chart, you can assign a column with either discrete values (text column) to make it a grouped chart or continuous values (number column) to make it a grouped chart by value buckets. 
+For the Scatter (No Aggregation and With Aggregation) chart, you can assign a column with either discrete values (text column) to make it a grouped chart or continuous values (number column) to make it a grouped chart by value buckets. 
 
 
 ## Boxplot 

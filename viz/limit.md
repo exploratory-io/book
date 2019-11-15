@@ -5,7 +5,7 @@ The Limit Values feature literally limits/filters output of the categorical valu
 Limit Values is supported in the following chart types.
 
 * Bar (X-Axis)
-* Bubble (X-Axis, Y-Axis)
+* Scatter (With Aggregation) (X-Axis, Y-Axis)
 * Boxplot (X-Axis)
 * Violin (X-Axis)
 * Error Bar (X-Axis)

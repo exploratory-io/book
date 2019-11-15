@@ -10,8 +10,8 @@ The Small Multiple feature is available for following chart types.
 * Line 
 * Area 
 * Histogram 
-* Scatter 
-* Boxplot 
+* Scatter (No Aggregation) 
+* Scatter (With Aggregation) 
 * Error Bar
 
 

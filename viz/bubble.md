@@ -1,6 +1,6 @@
-# Bubble Chart
+# Scatter (With Aggregation) Chart
 
-You can show the distribution of the data by circles. It is similar to the Scatter chart, but the Bubble chart can show the distribution of the aggregated data. 
+You can show the distribution of the data by circles. It is similar to the Scatter (No Aggregation) chart, but the Scatter (With Aggregation) chart can show the distribution of the aggregated data. 
 
 
 ![](images/bubble1.png)

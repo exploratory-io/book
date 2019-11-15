@@ -8,8 +8,8 @@ By using the Highlight feature, you can change the color of specific markers suc
 * Ring / Pie 
 * Histogram 
 * Density Plot 
-* Scatter 
-* Bubble 
+* Scatter (No Aggregation) 
+* Scatter (With Aggregation) 
 * Boxplot 
 * Violin 
 * Error Bar 
