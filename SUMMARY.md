@@ -149,6 +149,7 @@
      * [Category (Binning)](viz/category.md)
      * [Highlight](viz/highlight.md)
      * [Limit Values](viz/limit.md)
+     * [Edit Display Name](edit-display-name.md)
 
 
 * [Analytics](analytics.md)

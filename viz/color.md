@@ -113,3 +113,8 @@ You can create your own color palettes for discrete values. You can use it on Ba
 ## Highlight 
 
 You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
+
+
+## Edit Display Name 
+
+You can edit the display name of the color values. See [Edit Display Name](edit-display-name.md) for the detail. 
