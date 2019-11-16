@@ -10,12 +10,31 @@ Input data should contain following columns.
 
 ## Analytics Properties
 
-  * Sample Data Size - Number of rows to sample before building logistic regression model.
-  * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
-  * Adjust Imbalanced Data - Adjust imbalance of data in Target Variable (e.g. FALSE being majority and TRUE being minority.) by SMOTE (Synthetic Minority Over-sampling Technique) altorithm.
-  * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
-  * P Value Threshold to be Significant - P value must be smaller than this value for coefficients to be considered statistically significant.
-  * Sort Variables by Coefficients - If set to TRUE, variables displayed in Coefficients View are sorted by coefficients.
+  * Coefficients
+    * Metrics of Variables - Metric of variables to use on Y-axis of scatter plot on Coefficients View.
+      * Odds Ratio
+      * Coefficient
+      * Average Marginal Effect
+    * P Value Threshold to be Significant - P value must be smaller than this value for coefficients to be considered statistically significant.
+    * Confidence Intervals for Marginal Effects - Enable/disable calculation of confidence interval for marginal effect. Default is FALSE. Note that this is a calculation that takes some time.
+    * Sort Variables by Coefficients - If set to TRUE, variables displayed in Coefficients View are sorted by coefficients.
+  * Binary Classification
+    * Cut Point for TRUE/FALSE
+  * Data Preprocessing
+    * Sample Data Size - Number of rows to sample before building linear regression model.
+    * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
+    * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
+  * Imbalanced Data Adjustment
+    * Adjust Imbalanced Data - Adjust imbalance of data in Target Variable (e.g. FALSE being majority and TRUE being minority.) by SMOTE (Synthetic Minority Over-sampling Technique) altorithm.
+    * Target % of Minority Data
+    * Maximum % Increase for Minority Size
+    * Neighbors to Sample for Populating Data
+  * Evaluation
+    * Test Mode - Enable/Disable Test Mode. In Test Mode, data is split into training data and test data, and test data is not used for building model, so that it can be used for later test, without bias.
+    * Ratio for Test Data - A value between 0 and 1.
+    * Data Splitting Method
+      * Random - Specified ratio of data that is picked randomly is used as test data.
+      * Reserve Order in Data - Specified ratio of data that appears last are used as test data.
 
 ## How to Use This Feature
 1. Click Analytics View tab.

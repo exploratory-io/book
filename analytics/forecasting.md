@@ -1,6 +1,12 @@
 # Time Series Forecasting
 
-With past time series data as training data, it creates a model that forecasts values for future dates/times, and plots the predicted values on a Line Chart.
+You can quickly build time series forecasting models with the Prophet algorithm and visualize the insights including forecasted values, seasonality, trend, and effects.
+
+There are a few blog posts about the Time Series Forecasting with Prophet.
+
+* How-to Guides (incl. Tutorials) in English - [Link](https://exploratory.io/tag/Forecasting)
+* 使い方ガイド（日本語）- [Link](https://exploratory.io/tag/Forecasting)
+
 
 # Input Data
 
@@ -27,7 +33,8 @@ There are many properties to configure how to build the models and how to transf
     * Seasonality Mode - This option controls whether the Seasonality, Holiday, and External Predictors have additive or multiplicative effect in the forecasting. Default is Additive.
   * Holidays
     * Strength of Holiday Effect - Controls the strength of holiday effect taken into account in the forecasting.
-    * Countries for Holidays - You can specify list of country codes whose holidays should be considered in making forecast.
+    * Use Built-in Country Holiday Data - By setting this option to Yes, you can specify list of country codes whose holiday data should be considered in making forecast.
+    * Country for Holiday Data - Specify list of country codes here. For supported countries, take a look at [this table](#countries_for_holidays).
   * Limits
     * Trend Upper Limit - Upper Limit of trend. Largest possible value for the trend to be forecasted. e.g. Size of entire market, etc.
     * Trend Lower Limit - Lower limit of trend. Takes effect only when Trend Upper Limit is specified.
@@ -47,17 +54,19 @@ There are many properties to configure how to build the models and how to transf
       * Spline Interpolation
     * Missing Value Handling for Predictors - How to fill missing values of External Predictors after aggregation. Options are same as "Missing Value Handling for Value".
   * Evaluation
-    * Test Mode - When this option is set to TRUE, the last part of the input data for the period specifed by "Forecasting Time Period" is not used for training data, and kept to test predictive performance of the model.
+    * Test Mode - When this option is set to TRUE, the last part of the input data for the period specified by "Forecasting Time Period" is not used for training data, and kept to test predictive performance of the model.
     * Time Period for Test Data - Length of periods (e.g. days, months, years...) at the end of the data to be kept as test data.
 
 # How to Use This Feature
 
 1. Under Analytics view, select "Time Series Forecasting (Prophet)" for Analytics Type.
 2. Select a column for Date and select an appropriate scale (e.g. Floor to Week).
-3. (Optional) Select Numeric column and aggregate function for Y Axis. The default is Number of Rows.
-4. (Optional) Select a column to group subjects with "Repeat By" column selector. For each group, a separate small chart will be displayed.
-5. Click Run button to run the analytics.
-6. Select each view type (explained below) see the detail of the analysis.
+3. (Optional) Select a column and aggregate function for Y Axis. The default is Number of Rows.
+4. (Optional) Select columns and aggregate functions External Predictors.
+5. (Optional) Select a column for Holiday Column.
+6. (Optional) Select a column to group subjects with "Repeat By" column selector. For each group, a separate small chart will be displayed.
+7. Click Run button to run the analytics.
+8. Select each view type (explained below) see the detail of the analysis.
 
 ## "Forecasted" View
 
@@ -82,6 +91,16 @@ There are many properties to configure how to build the models and how to transf
 "Weekly" View displays weekly seasonality, when time unit is DAY or smaller.
 
 ![](images/timeseries_forcasting_weekly.png)
+
+## "Daily" View
+
+"Daily" View displays daily seasonality, when time unit is HOUR or smaller.
+
+![](images/timeseries_forecasting_daily.png)
+
+## "Effects" View
+"Effects" displays decomposition of forecasted value into trend, seasonalities, holiday effects, and effects of external predictors.
+![](images/timeseries_forecasting_effects.png)
 
 ## "Data" View
 
@@ -118,8 +137,55 @@ Take a look at [this note](https://blog.exploratory.io/a-gentle-introduction-to-
 ![](images/timeseries_forcasting_summary.png)
 
 ## Countries for Holidays
+Following is the list of country codes that are supported for "Countries or Holidays" property.
 
-TBD
+|Code|Country Name   |
+|----|---------------|
+|AR  |Argentina      |
+|AT  |Austria        |
+|AU  |Australia      |
+|BD  |Bangladesh     |
+|BE  |Belgium        |
+|BR  |Brazil         |
+|BY  |Belarus        |
+|CA  |Canada         |
+|CH  |Switzerland    |
+|CN  |China          |
+|CO  |Colombia       |
+|CZ  |Czechia        |
+|DE  |Germany        |
+|DK  |Denmark        |
+|EG  |Egypt          |
+|ES  |Spain          |
+|FI  |Finland        |
+|FR  |France         |
+|GB  |United Kingdom |
+|HR  |Croatia        |
+|HU  |Hungary        |
+|ID  |Indonesia      |
+|IE  |Ireland        |
+|IN  |India          |
+|IT  |Italy          |
+|JP  |Japan          |
+|MX  |Mexico         |
+|MY  |Malaysia       |
+|NL  |Netherlands    |
+|NO  |Norway         |
+|NZ  |New Zealand    |
+|PH  |Philippines    |
+|PK  |Pakistan       |
+|PL  |Poland         |
+|PT  |Portugal       |
+|RU  |Russia         |
+|SE  |Sweden         |
+|SI  |Slovenia       |
+|SK  |Slovakia       |
+|TH  |Thailand       |
+|TR  |Turkey         |
+|UA  |Ukraine        |
+|US  |United States  |
+|VN  |Vietnam        |
+|ZA  |South Africa   |
 
 ## R Package
 

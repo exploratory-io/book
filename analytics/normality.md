@@ -9,6 +9,7 @@ Input data should contain following columns.
 
 ## Analytics Properties
   * Sample Data Size - Number of rows to sample before testing normality.
+  * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
   * P Value Threshold - If P value is larger than this value, the variable (column) is considered to be distributed normally.
 
 ## How to Use This Feature

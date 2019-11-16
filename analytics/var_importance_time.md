@@ -1,6 +1,6 @@
 # Cox Regression Analytics
 
-Calculates Importance (i.e. Proportional Hazard) for each variable with Cox Regression model.
+Builds Cox Regression Model, estimating relationship between survival of subjects and specified variables.
 
 ## Input Data
 Input data should be a survival data. Each row should represent one observation (e.g. one user of a subscription service). It should have following columns.
@@ -11,16 +11,18 @@ Input data should be a survival data. Each row should represent one observation 
 * Variables Columns - Variables that you want to see Importance (i.e. Proportional Hazard)
 
 ## Analytics Properties
-  * Sample Data Size - Number of rows to sample before building Cox regression model.
-  * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
-  * Fill NA in End Time - How to fill NA in End Time column. One of the following.
-    * Use Latest Date/Time - Use the latest date/time that appear in the data.
-    * Use Today - Use today to fill NA.
-    * Enter Manually  - Use manually entered value
-  * Date to Fill NA in End Time - Date to fill NA in End Time column. This value takes effect when "Enter Manually" is selected for "Fill NA in End Time".
-  * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
-  * P Value Threshold to be Significant - P value must be smaller than this value for coefficients to be considered statistically significant.
-  * Sort Variables by Coefficients - If set to TRUE, variables displayed in Coefficients View are sorted by coefficients.
+  * Coefficients
+    * P Value Threshold to be Significant - P value must be smaller than this value for coefficients to be considered statistically significant.
+    * Sort Variables by Coefficients - If set to TRUE, variables displayed in Coefficients View are sorted by coefficients.
+  * Data Preprocessing
+    * Sample Data Size - Number of rows to sample before building Cox regression model.
+    * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
+    * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
+    * Fill NA in End Time - How to fill NA in End Time column. One of the following.
+      * Use Latest Date/Time - Use the latest date/time that appear in the data.
+      * Use Today - Use today to fill NA.
+      * Enter Manually  - Use manually entered value
+    * Date to Fill NA in End Time - Date to fill NA in End Time column. This value takes effect when "Enter Manually" is selected for "Fill NA in End Time".
 
 
 ## How to Use This Feature

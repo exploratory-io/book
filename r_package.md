@@ -6,7 +6,7 @@ You can install your preferred R packages from [CRAN](https://cran.r-project.org
 
 #### 1. Click on 'R Packages' on the project list page.
 
-![](images/r_pkg_install.png)
+![](images/r_pkg_install3.png)
 
 #### 2. Click 'Install' tab.
 
@@ -28,7 +28,7 @@ install.packages("./h2o_3.14.0.3.tar.gz", repos = NULL)
 If you want to use the functions from this custom R package as part of the command line then you want to add a custom R Script file that contains ‘library’ call so that your custom R package will be loaded. Please refer to [this blog post](https://blog.exploratory.io/adding-custom-r-scripts-to-extend-exploratory-desktop-a054832b9562#.68ny44np1) for how to add R Script to the projects.
 
 
-## How to use installed R packages? 
+## How to use installed R packages?
 
 Here is a blog post that walk you through how to install and use your preferred R packages in Exploratory Desktop.
 

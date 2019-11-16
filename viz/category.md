@@ -9,7 +9,7 @@ You can categorize numeric values inside the chart. Category is supported in fol
 * Ring / Pie (Repeat By)
 * Histogram (Color, Repeat By)
 * Density Plot (Color, Repeat By)
-* Bubble (X-Axis, Y-Axis, Color, Group By, Repeat By)
+* Scatter (With Aggregation) (X-Axis, Y-Axis, Color, Group By, Repeat By)
 * Boxplot (X-Axis, Color, Repeat By)
 * Violin (X-Axis, Color, Repeat By)
 * Error Bar (X-Axis, Color, Repeat By)

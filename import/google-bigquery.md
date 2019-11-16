@@ -36,7 +36,7 @@ To use Google BigQuery with Exploratory Desktop, you need to create a project on
 
 - Select 'Import Database Data' from Add Data Frames dropdown
 
-![](images/import-db.png)
+![](images/import-database.png)
 
 - Click 'Google BigQuery'
 
@@ -100,6 +100,31 @@ FROM SUBQ;
 
 
 For Migration from legacy SQL, Please refer [Migrating to Standard SQL](https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql)
+
+## 4. Using Parameters in SQL
+
+First, click Parameter link on the SQL Data Import Dialog.
+
+![](images/add_parameter.png)
+
+Second, define a parameter and click Save button.
+
+![](images/define_parameter.png)
+
+Finally, you can use @{} to surround a variable name inside the query like below.
+
+  ```
+  select *
+  from airline_2016_01
+  where carrier = @{carrier}
+  ```
+  
+  If you type @ then it suggests parameters like below.
+  
+  ![](images/insert_param_in_query.png)
+
+
+Here's a [blog post](https://exploratory.io/note/kanaugust/An-Introduction-to-Parameter-in-Exploratory-WCO4Vgn7HJ) for more detail.
 
 ## 6. Import
 

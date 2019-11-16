@@ -18,7 +18,7 @@ Create a connection following [this instruction](connection.html).
 
 Click '+' button next to 'Data Frames' and select 'Import Database Data'.
 
-![](images/import-db.png)
+![](images/import-database.png)
 
 Click Amazon Aurora.
 
@@ -26,40 +26,56 @@ Click Amazon Aurora.
 
 ## 4. Preview and Import
 
-1. Put data frame name.
 
-2. Select connection from left box in the dialog.
+1. Select connection from left box in the dialog.
 
-3. Write a query in the input field.
+2. Write a query in the input field.
 
-4. Click "Preview" button. Then you will see the preview of the data.
+3. Click "Preview" button. Then you will see the preview of the data.
 
-5. Click "Save" button to import.
+4. Click "Save" button to import.
 
 ![](images/aurora-import.png)
 
-## 5. Using Variables in SQL
+## 4. Using Parameters in SQL
 
-First, create a custom R script.
+First, click Parameter link on the SQL Data Import Dialog.
 
-![](images/add_script.png)
+![](images/add_parameter.png)
 
-Second, define a variable in the R script and save.
+Second, define a parameter and click Save button.
 
-![](images/set_variables.png)
-
-```
-cutoff_date <- "\'2016-01-15\'"
-```
-
-Note that the ‘\’ (backslash) symbols are used to escape the single quotes, which are required to be used for characters in SQL queries.
+![](images/define_parameter.png)
 
 Finally, you can use @{} to surround a variable name inside the query like below.
 
-```
-select *
-from airline_2016_01
-where fl_date > @{cutoff_date}
-```
+  ```
+  select *
+  from airline_2016_01
+  where carrier = @{carrier}
+  ```
+  
+  If you type @ then it suggests parameters like below.
+  
+  ![](images/insert_param_in_query.png)
 
-Here's a [blog post](https://blog.exploratory.io/using-variables-in-sql-query-2740924d9f20#.bdcn5v68x) for more detail.
+
+Here's a [blog post](https://exploratory.io/note/kanaugust/An-Introduction-to-Parameter-in-Exploratory-WCO4Vgn7HJ) for more detail.
+
+## 5. Number of rows
+
+From performance point of view, we no longer show actual number of rows which can be only fetched by executing whole query again.
+
+![](images/sql_number_of_rows.png)
+
+If you still want to show the actual number of query for your query, you can do so by setting System Configuration.
+
+![](images/num_of_rows_config_menu.png)
+
+Then set "Yes" For "Show Actual Number of Rows on SQL Data Import Dialog"
+
+![](images/num_of_rows_config.png)
+
+This will show you Actual Number of Rows like below.
+
+![](images/actual_num_of_rows.png)

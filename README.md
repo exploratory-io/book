@@ -15,8 +15,8 @@ There are many 'how-to' tutorials you want to check to learn Data Science techni
 
 If you are just starting out Exploratory, we'd recommend you take a look at 'Getting Started Guide' first. It walks you through the basics of how you can use Data Wrangling, Visualization, Analytics, Dashboard features inside Exploratory.
 
-- Getting Started Guid (English) - [Link](https://exploratory.io/note/kanaugust/2617200410576325)
-- Getting Started Guid (日本語) - [Link](https://exploratory.io/note/kanaugust/6235618967553110)
+- Getting Started Guide (English) - [Link](https://exploratory.io/note/kanaugust/2617200410576325)
+- Getting Started Guide (日本語) - [Link](https://exploratory.io/note/kanaugust/6235618967553110)
 
 If you have any question please contact [support@exploratory.io](mailto:support@exploratory.io)
 

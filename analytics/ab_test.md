@@ -2,11 +2,17 @@
 Analyzes A/B test result data based on Bayesian algorithm.
 
 ## Input Data
-Input data should be a A/B test result data. Each row should represent a period of time for a page (A or B) with access count and conversion rate during the period. (e.g. total number of view and total number of sign up for a day for page A). It should have following columns.
+Input data should be an A/B test result data. Each row should represent a subject or subjects, such as a visitor with the result of either converted or not. It should have following columns.
 
-* A/B Identifier - A column that indicates the row is for group A or B. The data type can be either logical, numeric or text. It should have only 2 unique values.
-* Conversion Rate (CR) - Ratio of the converted access count out of the total access count.
-* Total Population - A numeric column that contains the total access count.
+* Target Variable - A column that indicates that the subject(s) converted or not.
+* Explanatory Variable - A column that indicates the subject(s) belongss to group A or B. The data type can be either logical, numeric or text. It should have only 2 unique values.
+* Value - Optional. A column with number of subject(s) each row represents.
+* Expected Average of CR - Mean of prior probability distribution (assumed to be a beta distribution) of conversion rate. If not specified, uniform distribution is used as non-informative prior.
+* Expected SD of CR - Standard deviation of prior probability distribution (assumed to be a beta distribution) of conversion rate. If not specified, uniform distribution is used as non-informative prior.
+
+## Properties
+  * Revert A/B - If set to TRUE, which group to considered as A or B is reverted.
+
 
 ## How to Use This Feature
 1. Click Analytics View tab.

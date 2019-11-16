@@ -3,19 +3,35 @@
 Build Linear Regression Model
 
 ## Input Data
-Input data should contain at least one numeric column for "What to Predict" and more than one categorical and/or numeric columns as Variable Columns.
+Input data should contain a numeric column for "Target Variable" and more than one categorical and/or numeric columns as Predictor Variable Columns.
 
-  * What to Predict - Numeric column that you want to Predict.
+  * Target Variable - Numeric column that you want to Predict.
   
-  * Variable Columns - Numeric and/or Categorical columns that you want to check importance to predict your "What to Predict" column.
+  * Predictor Variable Columns - Numeric and/or Categorical columns. Prediction is made based on values of those columns.
 
 ## Analytics Properties
-  * Sample Data Size - Number of rows to sample before building linear regression model.
-  * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
-  * Adjust Imbalanced Data - Adjust imbalance of data in Target Variable (e.g. FALSE being majority and TRUE being minority.) by SMOTE (Synthetic Minority Over-sampling Technique) altorithm.
-  * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
-  * P Value Threshold to be Significant - P value must be smaller than this value for coefficients to be considered statistically significant.
-  * Sort Variables by Coefficients - If set to TRUE, variables displayed in Coefficients View are sorted by coefficients.
+  * Coefficients
+    * P Value Threshold to be Significant - P value must be smaller than this value for coefficients to be considered statistically significant.
+    * Sort Variables by Coefficients - If set to TRUE, variables displayed in Coefficients View are sorted by coefficients.
+  * Variable Importance
+    * Enable Relative Importance - Enable/disable calculation of variable importance. 
+    * Method - Method to calculate variable importance.
+      * First Variable - Based on R Squared of the model that predicts with only the variable to estimate the importance of.
+      * Last Variable - Based on R Squared of the model that predicts with all the variables except for the variable to estimate the importance of.
+      * Lindeman, Merenda, and Gold - Based on average of contribution of the variable to estimate to R Squared in all possible order of adding variables to the model.
+    * Confidence Interval - Level of confidence interval to estimate for variable importance of each variable.
+    * Bootstrap Method - Bootstrap method to use to estimate confidence interval of variable importance.
+    * Number of Bootstrap Iterations - Bootstrap iterations to perform to estimate confidence interval of variable importance.
+  * Data Preprocessing
+    * Sample Data Size - Number of rows to sample before building linear regression model.
+    * Random Seed - Seed used to generate random numbers. Specify this value to always reproduce the same result.
+    * Max # of Categories for Predictor Vars - If categorical predictor column has more categories than this number, less frequent categories are combined into 'Other' category.
+  * Evaluation
+    * Test Mode - Enable/disable Test Mode, where data is split into training data and test data for evaluation of the created linear regression model.
+    * Ratio for Test Data - Ratio of test data to select from the entire data. Default is 0.3.
+    * Data Splitting Method
+      * Random - Test data is randomly sampled from the original data.
+      * Reserve Order in Data - Data that shows up later in the original data is used as test data.
 
 ## How to Use This Feature
 1. Click Analytics View tab.

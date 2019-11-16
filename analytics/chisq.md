@@ -9,13 +9,19 @@ Input data should contain following columns.
   * Explanatory Variable(s) - Column with categorical values to categorize rows into groups.
 
 ## Analytics Properties
-  * Show Frequencies in ... - How to display the frequencies in Pivot Table view. One of the following.
-    * Percentage (%)
-    * Count
-  * Show Difference from Expected in ... - How to display the differences from expected frequency in Difference view. One of the following.
-    * % Difference
-    * Difference
-    * Standardized Difference
+  * Pivot Table
+    * Show Frequencies in ... - How to display the frequencies in Pivot Table view. One of the following.
+      * Percentage (%)
+      * Count
+  * Difference
+    * Show Difference from Expected in ... - How to display the differences from expected frequency in Difference view. One of the following.
+      * % Difference
+      * Difference
+      * Standardized Difference
+  * Power Analysis
+    * Effect Size to Detect (Cohen's w) - Effect size (Cohen's w) that is considered to be meaningful. If not specified, the value calculated from the data is used.
+    * Probability of Type 1 Error (P Value) - Probability of type 1 error that can be tolerated. Default is 0.05.
+    * Probability of Type 2 Error (1 - Power) - (Optional) Probability of type 2 error that can be tolerated. If a value is specified, required sample size is estimated and reported in the Summary Table. If not, probability of type 2 error with current condition of the test is reported in the Summary Table.
 
 ## How to Use This Feature
 1. Click Analytics View tab.

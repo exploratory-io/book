@@ -40,9 +40,9 @@ For the Histograom, you can assign a column with discrete values (text column) t
 For the Violin chart, you can assign a column with discrete values (text column) to make it grouped Violin chart.
 
 
-## Scatter / Bubble 
+## Scatter (No Aggregation / With Aggregation) 
 
-For the Scatter or Bubble chart, you can assign a column with either discrete values (text column) to make it a grouped chart or continuous values (number column) to make it a grouped chart by value buckets. 
+For the Scatter (No Aggregation and With Aggregation) chart, you can assign a column with either discrete values (text column) to make it a grouped chart or continuous values (number column) to make it a grouped chart by value buckets. 
 
 
 ## Boxplot 
@@ -112,4 +112,9 @@ You can create your own color palettes for discrete values. You can use it on Ba
 
 ## Highlight 
 
-You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](viz/highlight.md) for the detail. 
+You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
+
+
+## Edit Display Name 
+
+You can edit the display name of the color values. See [Edit Display Name](edit-display-name.md) for the detail. 
