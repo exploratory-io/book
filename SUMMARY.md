@@ -116,8 +116,8 @@
      * [Pie/Ring](viz/pie.md)
      * [Histogram](viz/hist.md)
      * [Density Plot](viz/densityplot.md)
-     * [Scatter](viz/scatter.md)
-     * [Bubble](viz/bubble.md)
+     * [Scatter (No Aggregation)](viz/scatter.md)
+     * [Scatter (With Aggregation)](viz/bubble.md)
      * [Boxplot](viz/boxplot.md)
      * [Violin](viz/violin.md)
      * [Error Bar](viz/errbar.md)
@@ -149,6 +149,7 @@
      * [Category (Binning)](viz/category.md)
      * [Highlight](viz/highlight.md)
      * [Limit Values](viz/limit.md)
+     * [Edit Display Name](viz/edit-display-name.md)
 
 
 * [Analytics](analytics.md)

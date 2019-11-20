@@ -21,8 +21,8 @@ Generic Charts includes following chart types.
 * Pie / Ring 
 * Histogram
 * Density Plot 
-* Scatter 
-* Bubble
+* Scatter (No Aggregation) 
+* Scatter (With Aggregation)
 * Boxplot
 * Violin
 * Error Bar
@@ -58,7 +58,7 @@ Following layout properties are available for those type of charts.
     * Default - Depending on chart type 
     * On - Show explicitly 
     * Off - Hide explicitly 
-* Z Axis (Only available for Scatter charts with Z-Axis assigned) 
+* Z Axis (Only available for Scatter (No Aggregation) charts with Z-Axis assigned) 
   * Title - Z Axis title text 
   * Title Font Size  (numbers in pixel)
   * Tick Label Font Size (numbers in pixel)

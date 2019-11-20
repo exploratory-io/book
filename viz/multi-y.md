@@ -1,6 +1,6 @@
 # Multiple Y-Axis
 
-The Multiple Y-Axis feature is available on Bar, Line, Area and Scatter charts. You can assign multiple columns to Y-Axis on those charts. 
+The Multiple Y-Axis feature is available on Bar, Line, Area and Scatter (No Aggregation) charts. You can assign multiple columns to Y-Axis on those charts. 
 
 ## How to Add Y-Axis
 

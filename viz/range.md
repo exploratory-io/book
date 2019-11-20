@@ -1,6 +1,6 @@
 # Range
 
-The Range feature is available in Line and Scatter charts. If you have upper and lower limit values for the values on Y-Axis such as confidence intervals, you can show them as ranges in the same chart. 
+The Range feature is available in Line and Scatter (No Aggregation) charts. If you have upper and lower limit values for the values on Y-Axis such as confidence intervals, you can show them as ranges in the same chart. 
 
 You can control the Range setting on the Range Setting dialog. You can open the Range Setting dialog by clicking `Range` from Y-Axis dropdown menu.
 
@@ -28,9 +28,9 @@ If you assign Upper and Lower Limit of the range in the Line Chart, it shows the
 
 ![](images/range-line.png)
 
-## Range on Scatter Chart
+## Range on Scatter (No Aggregation) Chart
 
-If you assign Upper and Lower Limit of the range in the Scatter Chart, it shows the error bar on each circle. 
+If you assign Upper and Lower Limit of the range in the Scatter (No Aggregation) chart, it shows the error bar on each circle. 
 
 ![](images/range-scatter.png)
 

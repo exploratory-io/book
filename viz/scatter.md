@@ -1,4 +1,4 @@
-## Scatter Chart
+## Scatter (No Aggregation) Chart
 
 ![](images/scatter.png)
 
