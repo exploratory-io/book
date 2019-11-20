@@ -2,7 +2,7 @@
 
 ## 5.4.0.12
 
-Released on 11/15/2019
+Released on 11/16/2019
 
 ### Enhancements
 
