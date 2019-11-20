@@ -1,5 +1,69 @@
 # Release Note
 
+## 5.4.0.12
+
+Released on 11/15/2019
+
+### Enhancements
+
+* Chart: Updated Table under Chart view by supporting Conditional Formatting, Function, Column Rename, and Column Reorder functionalities.
+* Chart: Now you can edit the values of the columns assigned to Color with 'Edit Display Name' menu.
+* Chart: You can now manually set which values to keep or remove when creating 'Other' group under Chart view.
+* Chart: Error Bar chart supports various 'Directions' for calculating the ratio.
+* Chart: Support 'Number of TRUE/FALSE' functions for the logical columns assigned to Y-Axis of Error Bar.
+* Chart: When you move the mouse over on the error bar it should show the actual values of the range along with the length of the range.
+* Chart: Show a dropdown to select the range type (SD, 95% Confidence Interval, etc) dropdown below the Y Axis for Error Bar.
+
+* Data Wrangling: You can now set the seed within the Sample step UI.
+
+* Analytics: We have added a Collinearity tab for Linear Regression, Logistic Regression, and GLM, which will help you diagnosis the multicollinearity.
+* Analytics: We have added a Effect tab for Linear Regression, Logistic Regression, GLM, and Decision Tree, which is basically the same as the one for Random Forest and helps you understand how the change in the predictor variables would effect the target variable.  
+* Analytics: ANOVA/T-Test: Added weekend function option to categorize Date data.
+* Analytics: Coefficients plot for regression analysis now has base level for categorical variable in mouse-over popup.
+* Analytics: Support "Week of Month" function for the date/time columns assigned to Repeat By and Color By.
+* Analytics: Regression Analysis/T-Test/ANOVA: Now you can apply functions like normalization or log to the input data as part of the data pre-processing.
+* Analytics: Regression Analysis/T-Test/ANOVA: Now you can filter outliers as part of the data pre-processing.
+* Analytics: Random Forest, Decision Tree: The actual data is displayed as a gray line along with the blue line representing the predicted values under Effects by Variable tab.
+
+* Public: Added R Script and Cloud App data sources for the Public edition.
+
+### Bug Fixes
+
+* Data Source: Google BigQuery failed to import data via Google Cloud Storage.
+* Data Source: Google Analytics: Re-designed the data import dialog to improve the usability.
+
+* Summary: the bars for NA were always showing 0 for the logical data type columns.
+
+* Chart: Number should be able to show 0 instead of NA.
+* Chart: 'Show Detail' button failed to show data when a numeric column at X-axis is setup with int10 function.
+* Chart: 'Show Values on Plot' is not working correctly when X-Axis is categorized on grouped bar chart.
+* Chart: the Chart Control area was not showing up after moving between Table View and Chart View.
+* Chart: Reference line was not shown when you used the 'Limit' feature (e.g. Top 10) with Bar chart.
+* Chart: Reference Line was not shown when you used the 'Categorize' feature at X-Axis of Bar chart.
+* Chart: Comment Dialog should keep the text entry during the same session even when you didn't save it and closed the dialog.
+* Chart:A broken chart thumbnail was displayed when you duplicated an existing chart and entered the comment.
+* Chart: Selected values for "is in" operator inside the Filter dialog were lost when you navigated to another chart and came back.
+* Chart: Text was chopped in the middle in Number.
+* Chart: 'Show Detail' didn't show any data of the lowest edge bar of the histogram chart.
+
+* Data Wrangling: "equal to" option was not available for the logical data type columns inside the Filter menu.
+* Data Wrangling: When converting POSIXct column to Date Column, timezone information was lost.
+
+* Data Wrangling: 'Go back to project list' button should not be clickable when there is another R process running.
+
+* Analytics: When you changed the font size for the biplot chart under PCA the color setting was lost.
+* Analytics: You couldn't read the whole message when it was too long.
+* Analytics: Time Series Forecasting: Default value of test period was not set correctly.
+
+* Parameter: Using parameter in custom function for Summarize step did not work.
+
+* Installation: When you create a directory under C:\\Users\\ and use it for Custom Repository, Exploratory didn't start up and show an empty screen.
+* Installation: The required R packages were not installed when switching the repository.
+* General: When you clicked an URL link inside the chat window it opened an Exploratory Window instead of a web browser.
+
+* Public: 'Quote exceed' message was shown incorrectly when there is a problem in the network connection.
+
+
 ## 5.4.0
 
 Released on 10/23/2019
