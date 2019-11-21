@@ -135,7 +135,9 @@ Yes! Here's an [introduction](https://blog.exploratory.io/installing-r-packages-
 
 We have a closed beta currently. If you're interested in participating, please contact support@exploratory.io so that we can put you on our beta waiting list.
 
+## I'm having trouble installing/running Exploratory on MacOS X 10.15 Catalina. What can I do?
 
+[Here](https://exploratory.io/note/hideaki/How-to-Run-Exploratory-on-MacOS-X-Catalina-sKw1AnW7nH) is a Note on known issues and solutions about installing/running Exploratory on MacOS X 10.15 Catalina.
 
 # Share / Publish
 
