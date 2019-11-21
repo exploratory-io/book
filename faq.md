@@ -50,8 +50,7 @@ You can cancel the plan first, then click 'Upgrade' button at your account page.
 
 ## What platforms are supported?
 
-There are MacOS and Windows versions available at our download page.
-
+There are MacOS and Windows versions available at our download page. Check this [Note](https://exploratory.io/note/kanaugust/8664976332176618) for more details on system requirements.
 
 ## Can I change the location of the Exploratory repository?
 

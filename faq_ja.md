@@ -56,7 +56,7 @@ BusinessからPersonalといったダウングレードの場合は、期間（�
 
 ## どのOSがサポートされていますか？
 
-現在、MacOSとWindows (64bitと32bit)がサポートされています。
+現在、MacOSとWindows (64bitと32bit)がサポートされています。システム要件の詳細についてはこちらの[ノート](https://exploratory.io/note/kanaugust/8664976332176618)をご覧ください。
 
 
 ## インストール時に、MacOSのパスワードを尋ねられますが、どうしてですか？
