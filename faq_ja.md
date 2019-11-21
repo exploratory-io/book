@@ -56,7 +56,7 @@ BusinessからPersonalといったダウングレードの場合は、期間（�
 
 ## どのOSがサポートされていますか？
 
-現在、MacOSとWindows (64bitと32bit)がサポートされています。
+現在、MacOSとWindows (64bitと32bit)がサポートされています。システム要件の詳細についてはこちらの[ノート](https://exploratory.io/note/kanaugust/8664976332176618)をご覧ください。
 
 
 ## インストール時に、MacOSのパスワードを尋ねられますが、どうしてですか？
@@ -114,6 +114,9 @@ Exploratoryデスクトップアプリケーションでは、多くのRのパ�
 
 はい、[マイ・アカウントのページ](https://exploratory.io/account/settings)より変更ができます。
 
+## MacOS X 10.15 Catalinaにインストールしたところ、トラブルがあります。どうすればいいですか？
+
+MacOS X 10.15 Catalina上での既知の問題と解決策を[こちら](https://exploratory.io/note/hideaki/MacOS-X-Catalina-Exploratory-IgN0kCu8sb)にまとめましたのでご覧ください。
 
 # コミュニケーション
 
