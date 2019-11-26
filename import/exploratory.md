@@ -1,12 +1,13 @@
 # Import Exploratory (EDF) File Data
 
-You can import local Exploratory (EDF) File Data quickly.
+You can import local Exploratory (EDF) File Data.
 
 ## 1. Select Exploratory (EDF) File Data Menu
 
 Click '+' button next to 'Data Frames' and select 'Import File Data'.
 
 ![](images/import-file-data.png)
+
 
 Make sure to select Local tab and Click 'Exploratory (.edf)'
 
