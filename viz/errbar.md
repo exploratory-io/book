@@ -47,9 +47,9 @@ You can categorize numeric values inside the chart. See [Category(Binning)](cate
 You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail.
 
 
-## Direction 
+## Group Setting 
 
-If the calculation type is `Ratio (%)`, you can set a direction for the percentage calculation in Direction dialog. You can reach the Direction dialog from the Y Axis menu. Following direction options are available. The default value is `X Axis`.
+If the calculation type is `Ratio (%)`, you can set how to group by for the percentage calculation in Group Setting dialog. You can reach the Group Setting dialog from the Y Axis menu. Following group by options are available. The default value is `X Axis`.
 
 * X Axis - Calculate the ratio for each X Axis data point. The total percentages on each X value will be 100%. For example, the total percentatge of all the color bars on `Sun` becomes 100%. 
 ![](images/errbar1.png)

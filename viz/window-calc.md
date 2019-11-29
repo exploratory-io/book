@@ -28,13 +28,11 @@ There are following options available for summarize values. The default value is
 
 The "Percent of Total" calculates the ratio of values in each group. 
 
-![](images/winfunc-ptotal-color.png)
 
-There are following 3 Direction options available. Default is `X Axis`.
+There are following 3 group by options available. Default is `X Axis`.
 
 * X Axis - Calculate the ratio for each X Axis data point. The total percentages on each X value will be 100%.  
 * Color - Calculate the ratio for each color value. The total percentage on each color value will be 100%. For example, in following chart, total percentatge of blue bars is 100%, and the same for other colors. 
-![](images/winfunc-ptotal-x.png)
 * All - Calculate the ratio based on all data point. The total percentage of all the data point will be 100%.
 
 ### Difference From 
