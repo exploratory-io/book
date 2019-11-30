@@ -17,15 +17,23 @@ Create a connection following [this instruction](https://blog.exploratory.io/how
 ## 3. Set Parameters
 
 - Select Account, Property, and View from the dropdown menu.
-- Set Date Range. You can select either of the followings:
+- Set Period. You can select either of the followings:
 
-  - Last N days
+  - Today
+  - Yesterday
+  - This Week to Yesterday
+  - This Month to Yesterday
+  - This Year to Yesterday
+  - Last Week to Yesterday
+  - Last Month to Yesterday
+  - Last Year to Yesterday
+  - Last N Days
   - Last N Weeks
   - Last N Months
   - Last N Years
   - From this Date
   
-Last N days. The default is set to 30, which means it will extract the last 30 days. You can update this based on your needs. If you select "From this Date", you can select a day from Date Picker.
+If you select either Last N days, Last N Weeks, Last N Months, or Last N Years, the additional input field appears and you have to type in number in the input field. For example, if you want to see Last 30 days of data, you select "Last N Days" as Period and enter 30 for the input field. You can update this based on your needs. If you select "From this Date", you can select a day from the Date Picker.
 
 - Select Dimensions and Metrics from the List.
 - Segments: You can select both Custom segments as well as predefined segments from list of values.
