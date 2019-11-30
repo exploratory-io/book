@@ -31,7 +31,7 @@ Create a connection following [this instruction](https://blog.exploratory.io/how
   - Last N Weeks
   - Last N Months
   - Last N Years
-  - From this Date
+  - From This Date
   
 If you select either Last N Days, Last N Weeks, Last N Months, or Last N Years, the additional input field appears and you have to type in number in the input field. For example, if you want to see Last 30 days of data, select "Last N Days" as Period and enter 30 for the input field. You can update this based on your needs. If you select "From this Date", you can select a day from the Date Picker.
 
