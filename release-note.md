@@ -1,5 +1,43 @@
 # Release Note
 
+## 5.4.1
+
+Released on 11/28/2019
+
+### Enhancements
+
+* Data Source: Google Analytics: Supported additional "Period" parameter options such as "Yesterday" for Google Analytics Data Import
+* Data Source: On Data Connection Setup Dialog, now unnecessary trailing white space for input fields are automatically removed except for password
+* Data Source: Now you can import data that is privately shared with you at the Data Catalog.
+
+* Chart: Support hiding the reference line information shown inside the chart legend.
+* Chart: Table: Support Date/Time formatting for Date/POSIXct columns inside the Table.
+* Chart: Error Bar: Support more aggregation functions in addition to "Count" and "Unique Count" for Y-Axis in Error Bar when the calculation type is "Ratio (%)".
+* Chart: Contour: Support the 'Repeat By' for Contour chart.
+* Chart: You can set the output width and height for Wordcloud, which will make sure that the Wordcloud output will have exactly the same output regardless of where it was generated. (e.g. Chart view, Note, Slide and Dashboard.)
+* Chart/Analytics/Wrangling: Added a "Week of Quarter" function for Date/POSIXcit columns. This is available through Column Header Menu, Chart and Analytics.
+
+
+### Bug Fixes
+
+* Data Source: Google Analytics: "Account", "Property", and "View" list of values were empty when reopening the Google Analytics Data Import Dialog.
+* Data Source: Google Analytics: Now we don't move the selected Dimensions and Metrics to the top.
+
+* Data Wrangling: The parse_number function didn't work for the factor type columns.
+* Data Wrangling: Unfinished step in a Branch data frame showed up in the parent data frame.
+* Data Wrangling: On Windows, filter operators such as "Starts With", "Ends With", "Contains" did not work if the column contains non-ascii data.
+
+* Chart: When you used a Conditional Coloring for the Table, the opacity was set unintentionally.
+* Chart/Analytics/Wrangling: On the Column Selection Dialog, clicking the "Clear All" link did not remove the selected columns.
+* Chart/Analytics/Wrangling: The background color of the Column Selection Dialog was too dark when the column configuration dialog was opened.
+
+* Analytics: The comment entered without being explicitly saved for the Analytics was cleared after closing the dialog.
+
+* Note: If you click a URL link in a Note in the Side-by-Side view mode, it opened 2 web browser tabs.
+* Note: Publishing a Note that was duplicated from another Note overwrote the original one at the Exploratory Cloud (exploratory.io).
+
+
+
 ## 5.4.0.12
 
 Released on 11/16/2019
