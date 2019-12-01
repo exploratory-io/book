@@ -1,5 +1,18 @@
 # Release Note
 
+## 5.4.1.4
+
+Released on 12/1/2019
+
+### Bug Fixes
+
+* Data Source: If you clicked an "Import" button in Data Catalog Import dialog, it showed an error message. 
+
+* Data Wrangling: Now NA is exported as an empty string instead of an "NA" string if you export data to CSV, Google Sheets or Clipboard from a data wrangling step, Chart or Analytics.
+* Data Wrangling: On Windows, the cursor position didn't match with the text in the Calculation Editor of the Mutate dialog.
+
+
+
 ## 5.4.1
 
 Released on 11/28/2019
