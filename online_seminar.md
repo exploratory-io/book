@@ -5,6 +5,7 @@
 
 Kan is going to introduce some of the key new features of Exploratory v5.4.
 
+* Google Analytics
 * Super Table
 * Chart: Edit Display Name
 * Chart: Error Bar
