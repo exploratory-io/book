@@ -11,6 +11,7 @@ Released on 12/1/2019
 * Partial word matching support for the Tag search for the Insight View. 
 
 ### Bug Fixes
+
 * Now "Scope" search criteria doesn't show up for the guest users (users without logging in).
 * Dashboard view didn't resize properly when a user resize the browser window. 
 * Super Table didn't get refreshed after the Data was refreshed.
