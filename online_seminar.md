@@ -12,6 +12,8 @@ Kan is going to introduce some of the key new features of Exploratory v5.4.
 * Analytics: Dependency Plot
 * Data Catalog
 
+Please join!
+
 ---
 
 # Introduction to Exploratory Data Catalog - Democratizing Data within Your Organization
