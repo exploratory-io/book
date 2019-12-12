@@ -1,12 +1,32 @@
 # Release Note
 
+## 5.4.2
+
+Released on 12/12/2019
+
+### New Features
+
+* Introduced an "Offline Mode" with 'Offline License Key'.
+
+### Bug Fixes
+
+* Installation: On Mac OS X Catalina, automatic installation of R and/or Git failed.
+* Installation: On Mac, opening downloaded dmg file failed with error message "no mountable file system".
+* Improved error handling and guidance when Exploratory cannot connect to the internet.
+* Opening project failed on machine with Avast antivirus software.
+* Data Source: Data Catalog: It failed to import data if Exploratory was initially started without internet connection.
+* Data Source: Google Analytics: Not able to switch View ID when there are multiple View IDs.
+
+* Data Wrangling: Summarize step default output column names now always have function name as suffix, to avoid confusion between original column and aggregated column.
+
+
 ## 5.4.1.4
 
 Released on 12/1/2019
 
 ### Bug Fixes
 
-* Data Source: If you clicked an "Import" button in Data Catalog Import dialog, it showed an error message. 
+* Data Source: If you clicked an "Import" button in Data Catalog Import dialog, it showed an error message.
 
 * Data Wrangling: Now NA is exported as an empty string instead of an "NA" string if you export data to CSV, Google Sheets or Clipboard from a data wrangling step, Chart or Analytics.
 * Data Wrangling: On Windows, the cursor position didn't match with the text in the Calculation Editor of the Mutate dialog.
