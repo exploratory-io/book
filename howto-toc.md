@@ -14,6 +14,8 @@
   * [Finance](howto?q=tag:finance&language=en)
   * [Extension](howto?q=tag:extension&language=en)
 
+----
+
 * [Visualization](/howto?q=tag%3Avisualization&language=en)
 * [Data Wrangling](/howto?q=tag:%22data%20wrangling%22&language=en)
   * [Date](/howto?q=tag%3Adate%20tag%3A%22data%20wrangling%22&language=en)
@@ -27,7 +29,9 @@
   * [Unite](/howto?q=tag:unite&language=en)
   * [Separate](/howto?q=tag:separate&language=en)
   * [Rename](/howto?q=tag:rename&language=en)
+  * [One Hot Encoding](/howto?q=tag:%22one-hot%20encoding%22&language=en)
 
+----
 
 * [Analytics](/howto?q=tag:Analytics&language=en)
 * [Reporting](howto?q=tag%3Anote%20tag%3Aslide%20tag%3Adashboard&language=en)
