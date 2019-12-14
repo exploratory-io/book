@@ -3,6 +3,9 @@
     * [Spread](/howto?q=spread)
     * [Gather](/howto?q=gather)
     * [Mutate](/howto?q=mutate)
+
+----
+
 * [Analytics](/howto?q=tag:Analytics)
 * [Reporting](howto?q=tag%3Anote%20tag%3Aslide%20tag%3Adashboard)
 * [Visualization](/howto?q=tag%3Avisualization)
