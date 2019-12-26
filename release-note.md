@@ -1,5 +1,17 @@
 # Release Note
 
+## 5.4.2.4
+
+Released on 12/23/2019
+
+This release is only for Public Version for below bug fixes.
+
+### Bug Fixes
+
+* Public: Closing a project failed with an error (Command failed: git push --force) when the last login inside the desktop app was not done properly.
+
+* Public: After restarting Exploratory Public, projects were not listed on the Project List.
+
 ## 5.4.2
 
 Released on 12/12/2019
