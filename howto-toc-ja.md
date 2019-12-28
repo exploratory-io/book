@@ -41,7 +41,7 @@
 ----
 
 * [データの可視化](/howto?q=tag%3Avisualization&language=ja)
-  * [チャートタイプ](/howto?q=tag%3APivot%7CBar%7CLine%7CScatter%7CArea%7CMap%7C%22Box%20Plot%22%7C%22Violin%20Plot%22%7CHeatmap%7C%22Word%20cloud%22%20tag%3AVisualization&language=ja)
+  * [チャートタイプ](/howto?q=tag%3APivot%7CBar%7CLine%7CScatter%7CArea%7CMap%7C"Box%20Plot"%7C"Violin%20Plot"%7CHeatmap%7CWordcloud%20tag%3AVisualization&language=ja)
     * [ピボットテーブル](/howto?q=tag%3APivot%20tag%3AVisualization&language=ja)
     <!--* [テーブル](/howto?q=tag%3ATable%20tag%3AVisualization&language=ja)-->
     * [バー](/howto?q=tag%3ABar&language=ja)
@@ -50,7 +50,7 @@
     <!--* [パイ](/howto?q=tag%3APie&language=ja)-->
     * [ヒストグラム](/howto?q=tag%3AHistogram&language=ja)
     <!--* [密度曲線](/howto?q=tag%3ADensity%20Plot&language=ja)-->
-    * [散布図 (集計なし)](/howto?q=tag%3AScatter&language=ja)
+    * [散布図 (集計なし)](/howto?q=tag%3AScatter%20-tag%3A%22Scatter%20Aggregation%22&language=ja)
     * [散布図 (集計あり)](/howto?q=tag%3A%22Scatter%20Aggregation%22&language=ja)
     * [箱ヒゲ図](/howto?q=tag%3A%22Box%20Plot%22&language=ja)
     <!--* [バイオリン](/howto?q=tag%3A%22Violin%20Plot%22&language=ja)-->
@@ -58,7 +58,7 @@
     * [地図 - エリア](/howto?q=tag%3AMap-Area&language=ja)
     * [地図 - 経度/緯度](/howto?q=tag%3AMap-long/lat&language=ja)
     <!--* [地図 - ヒートマップ](/howto?q=tag%3AMap-Heatmap&language=ja)-->
-    * [ヒートマップ](/howto?q=tag%3AHeatmap&language=ja)
+    * [ヒートマップ](/howto?q=tag%3AHeatmap%20-tag%3AMap-Heatmap&language=ja)
     <!--* [等高線プロット](/howto?q=tag%3ACountour&language=ja)-->
     <!--* [ナンバー](/howto?q=tag%3ANumber%20tag%3AVisualization&language=ja)-->
     * [ワードクラウド](/howto?q=tag%3AWordcloud&language=ja)
