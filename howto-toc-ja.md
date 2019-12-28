@@ -1,142 +1,146 @@
 ### How To
 * [Getting Started](/howto?q=tag%3A%22getting%20started%22)
-* [トラブルシューティング](/howto?q=tag%3A%22troubleshoot%22&language=ja)
+* [トラブルシューティング](/howto?q=tag%3Atroubleshoot&language=ja)
 * [データソース](/howto?q=tag%3A%22data%20source%22&language=ja)
-  * [ファイルデータ](/howto?q=tag%3A"File%20Data"&language=ja)
-    * [Excel](/howto?q=tag%3Aexcel&language=ja)
-    * [CSV](/howto?q=tag%3Acsv&language=ja)
-    * [JSON](/howto?q=tag%3Ajson&language=ja)
-    * [統計ファイル(SPSS, SAS, STATA)](/howto?q=tag%3ASPSS%20tag%3ASAS%20tag%3ASTATA&language=ja)
-    * [Rファイル](/howto?q=tag%3A"R%20File"&language=ja)
+  * [ファイルデータ](/howto?q=tag%3AExcel%7CCSV%7CJSON%7CSPSS%7CSAS%7CSTATA%7CXML%7C%22RFile%22%20tag%3A%22Data%20Source%22&language=ja)
+    * [Excel](/howto?q=tag%3AExcel%20tag%3A%22Data%20Source%22&language=ja)
+    * [CSV](/howto?q=tag%3Acsv%20tag%3A%22Data%20Source%22&language=ja)
+    <!--* [JSON](/howto?q=tag%3Ajson%20tag%3A%22Data%20Source%22&language=ja)-->
+    <!--* [統計ファイル(SPSS, SAS, STATA)](/howto?q=tag%3ASPSS%7CSAS%7CSTATA&language=ja)-->
+    <!--* [Rファイル](/howto?q=tag%3A%22R%20File%22&language=ja)-->
     * [XML](/howto?q=tag%3Axml&language=ja)
-  * [クラウドアプリケーションデータ](/howto?q=tag%3A"Cloud%20Data"&language=ja)
-    * [Github issues](/howto?q=tag%3A"Github%20issues"&language=ja)
-    * [Google Analytics](/howto?q=tag%3A"Google%20Analytics"&language=ja)
-    * [Google Sheets](/howto?q=tag%3A"Google%20Sheets"&language=ja)
-    * [MailChimp](/howto?q=tag%3AMailchimp&language=ja)
-    * [Stripe](/howto?q=tag%3AStripe&language=ja)
-    * [Twitter Search](/howto?q=tag%3A"Twitter%20Search"&language=ja)
-  * [データベースデータ](/howto?q=tag%3ADatabase%20tag%3ADB&language=ja)
-    * [Amazon Athena](/howto?q=tag%3A"Amazon%20Athena"&language=ja)
-    * [Amazon Aurora](/howto?q=tag%3A"Amazon%20Aurora"&language=ja)
-    * [Amazon Redshift](/howto?q=tag%3A"Amazon%20Redshift"&language=ja)
+  * [クラウドアプリケーションデータ](/howto?q=tag%3A%22Github%20issues%22%7C%22Google%20Analytics%22%7C%22Google%20Sheets%22%7CMailchimp%7CStripe%7C%22Twitter%22%20tag%3A%22Data%20Source%22&language=ja)
+    <!--* [Github issues](/howto?q=tag%3A%22Github%20issues%22&language=ja)-->
+    * [Google Analytics](/howto?q=tag%3A%22Google%20Analytics%22&language=ja)
+    * [Google Sheets](/howto?q=tag%3A%22Google%20Sheets%22&language=ja)
+    <!--* [MailChimp](/howto?q=tag%3AMailchimp&language=ja)-->
+    <!--* [Stripe](/howto?q=tag%3AStripe&language=ja)-->
+    * [Twitter Search](/howto?q=tag%3ATwitter&language=ja)
+    <!-- * [Twitter Search](/howto?q=tag%3ATwitter%20tag%3A%22Data%20Source%22&language=ja)-->
+  * [データベースデータ](/howto?q=tag%3A%22Amazon%20Athena%22%7C%22Amazon%20Aurora%22%7C%22Amazon%20Redshift%22%7CDremio%7CBigQuery%7C%22HP%20Vertica%22%7CMongoDB%7C%22MS%20SQL%20Server%22%7CMySQL%7CODBC%7CPostgreSQL%7CPresto%7CTeradata%7C%22Treasure%20Data%22&language=ja)
+    * [Amazon Athena](/howto?q=tag%3A%22Amazon%20Athena%22&language=ja)
+    <!--* [Amazon Aurora](/howto?q=tag%3A%22Amazon%20Aurora%22&language=ja)-->
+    * [Amazon Redshift](/howto?q=tag%3ARedshift&language=ja)
     * [Dremio](/howto?q=tag%3ADremio&language=ja)
     * [Google BigQuery](/howto?q=tag%3ABigQuery&language=ja)
-    * [HP Vertica](/howto?q=tag%3A"HP%20Vertica"&language=ja)
+    <!--* [HP Vertica](/howto?q=tag%3A%22HP%20Vertica%22&language=ja)-->
     * [MongoDB](/howto?q=tag%3AMongoDB&language=ja)
-    * [MS SQL Server](/howto?q=tag%3A"MS%20SQL"&language=ja)
+    <!--* [MS SQL Server](/howto?q=tag%3A%22MS%20SQL%22&language=ja)-->
     * [MySQL](/howto?q=tag%3AMySQL&language=ja)
     * [ODBC](/howto?q=tag%3AODBC&language=ja)
     * [PostgreSQL](/howto?q=tag%3APostgreSQL&language=ja)
     * [Presto](/howto?q=tag%3APresto&language=ja)
-    * [Teradata](/howto?q=tag%3ATeradata&language=ja)
-    * [Treasure Data](/howto?q=tag%3A"Treasure%20Data"&language=ja)
-  * [Rスクリプト](/howto?q=tag%3A"R%20Script"&language=ja)
-  * [WEBスクレイピング](/howto?q=tag%3A"Web%20Scraping"&language=ja)
-  * [エクステンションデータ](/howto?q=tag%3A"Extension%20Data"&language=ja)
-    * [ファイナンスデータ](/howto?q=tag%3Afinance&language=ja)
-  * [データ・カタログ](/howto?q=tag%3A"Data%20Catalog"&language=ja)
+    <!--* [Teradata](/howto?q=tag%3ATeradata&language=ja)-->
+    * [Treasure Data](/howto?q=tag%3A%22Treasure%20Data%22&language=ja)
+  * [Rスクリプト](/howto?q=tag%3A%22R%20Script%22&language=ja)
+  * [WEBスクレイピング](/howto?q=tag%3A%22Web%20Scraping%22&language=ja)
+  * [エクステンションデータ](/howto?q=tag%3A%Extension&language=ja)
+    <!--* [ファイナンスデータ](/howto?q=tag%3Afinance%20tag%3A%22Data%20Source%22&language=ja)-->
+  * [データ・カタログ](/howto?q=tag%3A%22Data%20Catalog%22%20tag%3A%22Data%20Source%22&language=ja)
 
 ----
 
 * [データの可視化](/howto?q=tag%3Avisualization&language=ja)
-  * [チャートタイプ](/howto?q=tag%3Achart-types&language=ja)
-    * [ピボットテーブル](/howto?q=tag%3Apivot&language=ja)
-    * [テーブル](/howto?q=tag%3Atable&language=ja)
-    * [バー](/howto?q=tag%3Abar&language=ja)
-    * [ライン](/howto?q=tag%3Aline&language=ja)
-    * [エリア](/howto?q=tag%3Aarea&language=ja)
-    * [パイ](/howto?q=tag%3Apie&language=ja)
-    * [ヒストグラム](/howto?q=tag%3Ahistogram&language=ja)
-    * [密度曲線](/howto?q=tag%3Adensity%20plot&language=ja)
-    * [散布図 (集計なし)](/howto?q=tag%3Ascatter&language=ja)
-    * [散布図 (集計あり)](/howto?q=tag%3A"scatter%20aggregation"&language=ja)
-    * [箱ヒゲ図](/howto?q=tag%3A"box%20plot"&language=ja)
-    * [バイオリン](/howto?q=tag%3A"violin%20plot"&language=ja)
-    * [エラーバー](/howto?q=tag%3A"error%20bar"&language=ja)
-    * [地図 - エリア](/howto?q=tag%3Amap-area&language=ja)
-    * [地図 - 経度/緯度](/howto?q=tag%3Amap-long/lat&language=ja)
-    * [地図 - ヒートマップ](/howto?q=tag%3Amap-heatmap&language=ja)
-    * [ヒートマップ](/howto?q=tag%3Aheatmap&language=ja)
-    * [等高線プロット](/howto?q=tag%3Acountour&language=ja)
-    * [ナンバー](/howto?q=tag%3Anumber&language=ja)
-    * [ワードクラウド](/howto?q=tag%3Awordcloud&language=ja)
-  * [機能](/howto?q=tag%3Achart-features&language=ja)
-    * [ピン](/howto?q=tag%3Apin&language=ja)
-    * [色(グループ化)](/howto?q=tag%3Acolor&language=ja)
-    * [繰り返し](/howto?q=tag%3A"Repeat%20By"&language=ja)
-    * [表計算](/howto?q=tag%3A"Window%20Calculation"&language=ja)
-    * [日付/時間関数](/howto?q=tag%3Adatetime&language=ja)
-    * [トレンドライン](/howto?q=tag%3ATrendline&language=ja)
-    * [リファレンスライン](/howto?q=tag%3A"reference%20line"&language=ja)
-    * [マーカーの変更](/howto?q=tag%3Amaker&language=ja)
-    * [Y2軸の設定](/howto?q=tag%3AY2-axis&language=ja)
-    * [URLリンク](howto?q=tag%3A"URL%20Link"&language=ja)
+  * [チャートタイプ](/howto?q=tag%3APivot%7CBar%7CLine%7CScatter%7CArea%7CMap%7C%22Box%20Plot%22%7C%22Violin%20Plot%22%7CHeatmap%7C%22Word%20cloud%22%20tag%3AVisualization&language=ja)
+    * [ピボットテーブル](/howto?q=tag%3APivot%20tag%3AVisualization&language=ja)
+    <!--* [テーブル](/howto?q=tag%3ATable%20tag%3AVisualization&language=ja)-->
+    * [バー](/howto?q=tag%3ABar&language=ja)
+    * [ライン](/howto?q=tag%3ALine%20tag%3AVisualization&language=ja)
+    * [エリア](/howto?q=tag%3AArea%20tag%3AVisualization&language=ja)
+    <!--* [パイ](/howto?q=tag%3APie&language=ja)-->
+    * [ヒストグラム](/howto?q=tag%3AHistogram&language=ja)
+    <!--* [密度曲線](/howto?q=tag%3ADensity%20Plot&language=ja)-->
+    * [散布図 (集計なし)](/howto?q=tag%3AScatter&language=ja)
+    * [散布図 (集計あり)](/howto?q=tag%3A%22Scatter%20Aggregation%22&language=ja)
+    * [箱ヒゲ図](/howto?q=tag%3A%22Box%20Plot%22&language=ja)
+    <!--* [バイオリン](/howto?q=tag%3A%22Violin%20Plot%22&language=ja)-->
+    <!--* [エラーバー](/howto?q=tag%3A%22Error%20Bar%22&language=ja)-->
+    * [地図 - エリア](/howto?q=tag%3AMap-Area&language=ja)
+    * [地図 - 経度/緯度](/howto?q=tag%3AMap-long/lat&language=ja)
+    <!--* [地図 - ヒートマップ](/howto?q=tag%3AMap-Heatmap&language=ja)-->
+    * [ヒートマップ](/howto?q=tag%3AHeatmap&language=ja)
+    <!--* [等高線プロット](/howto?q=tag%3ACountour&language=ja)-->
+    <!--* [ナンバー](/howto?q=tag%3ANumber%20tag%3AVisualization&language=ja)-->
+    * [ワードクラウド](/howto?q=tag%3AWordcloud&language=ja)
+  * [機能](/howto?q=tag%3AChart-Features&language=ja)
+    * [ピン](/howto?q=tag%3Apin%20-tag%3A%22Web%20Scraping%22&language=ja)
+    * [色(グループ化)](/howto?q=tag%3AColor&language=ja)
+    * [繰り返し](/howto?q=tag%3A%22Repeat%20By%22&language=ja)
+    * [表計算](/howto?q=tag%3A%22Window%20Calculation%22%20tag%3AVisualization&language=ja)
+    * [日付/時間関数](/howto?q=tag%3ADate%20tag%3AVisualization&language=ja)
+    * [トレンドライン](/howto?q=tag%3ATrend%20Line&language=ja)
+    * [リファレンスライン](/howto?q=tag%3A%22Reference%20Line%22&language=ja)
+    <!--* [マーカーの変更](/howto?q=tag%3AMaker%20tag%3AVisualization&language=ja)-->
+    * [Y2軸の設定](/howto?q=tag%3AY2-Axis&language=ja)
+    <!--* [URLリンク](howto?q=tag%3A%22URL%20Link%22%20tag%3AVisualization&language=ja)-->
     * [ハイライト](/howto?q=tag%3AHighlight&language=ja)
-    * [カテゴリー化(ビニング)](/howto?q=tag%3ABinning&language=ja)
+    * [カテゴリー化(ビニング)](/howto?q=tag%3ABinning%20tag%3AVisualization&language=ja)
     * [表示する値の制限](/howto?q=tag%3ALimit&language=ja)
-    * [表示名の編集](howto?q=tag%3A"Edit%20Display%20Name"&language=ja)
+    <!--* [表示名の編集](howto?q=tag%3A%22Edit%20Display%20Name%22%20tag%3AVisualization&language=ja)-->
 
-* [データラングリング](/howto?q=tag%3A%"data%20wrangling"&language=ja)
-    * [計算を作成](/howto?q=tag%3Amutate&language=ja)
-    * [データタイプを変換](/howto?q=tag%3A"type%20convert"&language=ja)
-    * [集計](/howto?q=tag%3Asummmarize&language=ja)
-    * [ピボット](/howto?q=tag%3Apivot&language=ja)
-    * [列名を変更](/howto?q=tag%3Arename&language=ja)
-    * [列を並び替える](/howto?q=tag%3A"reorder%20columns"&language=ja)
-    * [列を選択](/howto?q=tag%3A"select%20columns"&language=ja)
-    * [行を選択](/howto?q=tag%3Aslice&language=ja)
-    * [フィルタ](/howto?q=tag%3Afilter&language=ja)
-    * [並び替え (ソート)](/howto?q=tag%3Aarrange&language=ja)
-    * [グループ化](/howto?q=tag%3A"group%20by"&language=ja)
-    * [ブランチ](/howto?q=tag%3Abranch&language=ja)
-    * [列結合](/howto?q=tag%3Ajoin&language=ja)
-    * [行結合](/howto?q=tag%3Amerge&language=ja)
-    * [複数の列をつなげる](/howto?q=tag%3Aunite&language=ja)
-    * [列を分割](/howto?q=tag%3Aseparate&language=ja)
-    * [ワイド型からロング型へ変換](/howto?q=tag%3Agather&language=ja)
-    * [ロング型からワイド型へ変換](/howto?q=tag%3Aspread&language=ja)
-    * [既存の値を新しい値に置き換える](/howto?q=tag%3Arecode&language=ja)
+----
+
+* [データラングリング](/howto?q=tag%3A%22Data%20Wrangling%22&language=ja)
+    * [計算を作成](/howto?q=tag%3AMutate&language=ja)
+    * [データタイプを変換](/howto?q=tag%3A%22Data%20Type%20Convert%22&language=ja)
+    * [集計](/howto?q=tag%3ASummmarize&language=ja)
+    * [ピボット](/howto?q=tag%3APivot%20tag%3A%22Data%20Wrangling%22&language=ja)
+    <!--* [列名を変更](/howto?q=tag%3ARename&language=ja)-->
+    <!--* [列を並び替える](/howto?q=tag%3A%22Reorder%20Columns%22&language=ja)-->
+    <!--  * [列を選択](/howto?q=tag%3A%22Select%20Columns%22&language=ja)-->
+    <!--* [行を選択](/howto?q=tag%3ASlice&language=ja)-->
+    * [フィルタ](/howto?q=tag%3AFilter%20tag%3A%22Data%20Wrangling%22&language=ja)
+    <!--* [並び替え (ソート)](/howto?q=tag%3AArrange&language=ja)-->
+    * [グループ化](/howto?q=tag%3A%22Group%20By%22&language=ja)
+    * [ブランチ](/howto?q=tag%3ABranch&language=ja)
+    * [列結合](/howto?q=tag%3AJoin&language=ja)
+    * [行結合](/howto?q=tag%3AMerge&language=ja)
+    * [複数の列をつなげる](/howto?q=tag%3AUnite&language=ja)
+    * [列を分割](/howto?q=tag%3ASeparate&language=ja)
+    * [ワイド型からロング型へ変換](/howto?q=tag%3AGather&language=ja)
+    * [ロング型からワイド型へ変換](/howto?q=tag%3ASpread&language=ja)
+    * [既存の値を新しい値に置き換える](/howto?q=tag%3ARecode&language=ja)
     * [条件によって既存の値を置き換える](/howto?q=tag%3Acase_when&language=ja)
-    * [欠損値を扱う](/howto?q=tag%3ANA&language=ja)
-    * [ビン(カテゴリー)を作成](/howto?q=tag%3Acategories&language=ja)
-    * [その他グループを作る](/howto?q=tag%3A"other%20group"&language=ja)
-    * [テキストを操作](/howto?q=tag%3Astring&language=ja)
-    * [URLを操作](/howto?q=tag%3Aurl&language=ja)
-    * [値の順序をセット](/howto?q=tag%3A"Set%20Order%20for%20values"&language=ja)
-    * [サンプルを抽出](/howto?q=tag%3A"Extract%20Sample"&language=ja)
+    * [欠損値を扱う](/howto?q=tag%3A%22Work%20with%20Na%22&language=ja)/
+    * [ビン(カテゴリー)を作成](/howto?q=tag%3ABinnning%20tag%3A%22Data%20Wrangling%22&language=ja)
+    <!--* [その他グループを作る](/howto?q=tag%3A%22other%20group%22&language=ja)-->
+    * [テキストを操作](/howto?q=tag%3Astr&language=ja)
+    <!--* [URLを操作](/howto?q=tag%3Aurl&language=ja)-->
+    * [値の順序をセット](/howto?q=tag%3Afactor&language=ja)
+    <!--* [サンプルを抽出](/howto?q=tag%3A%22Extract%20Sample%22&language=ja)-->
     * [上位N/下位N](/howto?q=tag%3Atop_n%7Cbottom_n&language=ja)
-    * [一意な行/重複する行](/howto?q=tag%3Aunique_rows%7Cduplicated_rows&language=ja)
-    * [空行/空列を削除](/howto?q=tag%3Aremove_empty&language=ja)
+    <!--* [一意な行/重複する行](/howto?q=tag%3Aunique_rows%7Cduplicated_rows&language=ja)-->
+    <!--* [空行/空列を削除](/howto?q=tag%3Aremove_empty&language=ja)-->
     * [国名/コードの変換](/howto?q=tag%3Acountrycode&language=ja)
-    * [データの不均衡を解消](/howto?q=tag%3A不均衡&language=ja)
-    * [全ての列名をきれいにする](/howto?q=tag%3A"Clean%20up%20all%20column%20names"&language=ja)
-    * [行をヘッダとして使用](/howto?q=tag%3A"Row%20as%20Header"&language=ja)
-    * [全ての列のデータタイプを再評価](/howto?q=tag%3A"Re-Evaluate%20Data%20Types"&language=ja)
-    * [ワンホットエンコーディング](/howto?q=tag%3A"one-hot%20encoding"&language=ja)
+    <!--* [データの不均衡を解消](/howto?q=tag%3A不均衡&language=ja)-->
+    <!--* [全ての列名をきれいにする](/howto?q=tag%3A%22Clean%20up%20all%20column%20names%22&language=ja)-->
+    <!--* [行をヘッダとして使用](/howto?q=tag%3A%22Row%20as%20Header%22&language=ja)-->
+    <!--* [全ての列のデータタイプを再評価](/howto?q=tag%3A%22Re-Evaluate%20Data%20Types%22&language=ja)-->
+    <!--* [ワンホットエンコーディング](/howto?q=tag%3A%22one-hot%20encoding%22&language=ja)-->
 
 ----
 
 * [アナリティクス](/howto?q=tag%3AAnalytics&language=ja)
     * [相関](/howto?q=tag%3ACorrelation&language=ja)
-    * [距離](/howto?q=tag%3ADistance&language=ja)
+    <!--* [距離](/howto?q=tag%3ADistance&language=ja)-->
     * [クラスタリング](/howto?q=tag%3AClustering&language=ja)
     * [主成分分析 (PCA)](/howto?q=tag%3APca&language=ja)
-    * [線形回帰分析](/howto?q=tag%3A"Linear%20Regression"&language=ja)
-    * [ロジスティック回帰分析](/howto?q=tag%3A"Logistic%20Regression"&language=ja)
-    * [一般化線型モデル](/howto?q=tag%3A"Gemeralilzed%20Linear%20Models"&language=ja)
-    * [生存分析](/howto?q=tag%3A"Survival%20Analysis"&language=ja)
-    * [決定木](/howto?q=tag%3A"Dicision%20Tree"&language=ja)
+    * [線形回帰分析](/howto?q=tag%3A%22Linear%20Regression%22&language=ja)
+    <!--* [ロジスティック回帰分析](/howto?q=tag%3A%22Logistic%20Regression%22&language=ja)-->
+    <!--* [一般化線型モデル](/howto?q=tag%3AGLM&language=ja)-->
+    * [生存分析](/howto?q=tag%3A%22Survival%20Analysis%22&language=ja)
+    * [決定木](/howto?q=tag%3A%22Dicision%20Tree%22&language=ja)
     * [ランダムフォレスト](/howto?q=tag%3ARandomforest&language=ja)
     * [時系列予測 (Prophet)](/howto?q=tag%3AProphet&language=ja)
-    * [異常値検知](/howto?q=tag%3A"Anomaly%20Detection"&language=ja)
-    * [マーケット・バスケット分析](/howto?q=tag%3A"Market%20Basket"&language=ja)
-    * [統計的検定](/howto?q=tag%3A"Statistical%20Tests"&language=ja)
-    * [ベイジアンA/Bテスト](/howto?q=tag%3A"A/B%20Tests"&language=ja)
+    * [異常値検知](/howto?q=tag%3AAnomaly&language=ja)
+    * [マーケット・バスケット分析](/howto?q=tag%3A%22Market%20Basket%22&language=ja)
+    <!--* [統計的検定](/howto?q=tag%3A%22Statistical%20Tests%22&language=ja)-->
+    <!--* [ベイジアンA/Bテスト](/howto?q=tag%3A%22A/B%20Tests%22&language=ja)-->
+    * [統計](/howto?q=tag%3Astatistics&language=ja)
 
 ----
 
-* [レポーティング](howto?q=tag%3Anote%20tag%3Aslide%20tag%3Adashboard&language=ja)
+* [レポーティング](/howto?q=tag%3Adashboard%7Cnote%7CSlide&language=ja)
     * [ダッシュボード](/howto?q=tag%3ADashboard&language=ja)
     * [ノート](/howto?q=tag%3Anote&language=ja)
     * [スライド](/howto?q=tag%3Aslide&language=ja)
@@ -144,4 +148,4 @@
 ----
 
 * [パラメーター](/howto?q=tag%3AParameter&language=ja)
-* [カスタムRスクリプト](howto?q=tag%3A%22r%20script%22&language=ja)
+* [カスタムRスクリプト](/howto?q=tag%3A%22r%20script%22&language=ja)
