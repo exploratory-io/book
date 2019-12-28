@@ -20,11 +20,11 @@
   * [データベースデータ](/howto?q=tag%3A%22Amazon%20Athena%22%7C%22Amazon%20Aurora%22%7C%22Amazon%20Redshift%22%7CDremio%7CBigQuery%7C%22HP%20Vertica%22%7CMongoDB%7C%22MS%20SQL%20Server%22%7CMySQL%7CODBC%7CPostgreSQL%7CPresto%7CTeradata%7C%22Treasure%20Data%22&language=ja)
     * [Amazon Athena](/howto?q=tag%3A%22Amazon%20Athena%22&language=ja)
     <!--* [Amazon Aurora](/howto?q=tag%3A%22Amazon%20Aurora%22&language=ja)-->
-    * [Amazon Redshift](/howto?q=tag%3ARedshift&language=ja)
+    <!--* [Amazon Redshift](/howto?q=tag%3ARedshift&language=ja)-->
     * [Dremio](/howto?q=tag%3ADremio&language=ja)
     * [Google BigQuery](/howto?q=tag%3ABigQuery&language=ja)
     <!--* [HP Vertica](/howto?q=tag%3A%22HP%20Vertica%22&language=ja)-->
-    * [MongoDB](/howto?q=tag%3AMongoDB&language=ja)
+    <!--* [MongoDB](/howto?q=tag%3AMongoDB&language=ja)-->
     <!--* [MS SQL Server](/howto?q=tag%3A%22MS%20SQL%22&language=ja)-->
     * [MySQL](/howto?q=tag%3AMySQL&language=ja)
     * [ODBC](/howto?q=tag%3AODBC&language=ja)
@@ -32,9 +32,9 @@
     * [Presto](/howto?q=tag%3APresto&language=ja)
     <!--* [Teradata](/howto?q=tag%3ATeradata&language=ja)-->
     * [Treasure Data](/howto?q=tag%3A%22Treasure%20Data%22&language=ja)
-  * [Rスクリプト](/howto?q=tag%3A%22R%20Script%22&language=ja)
+  * [Rスクリプト](/howto?q=tag%3A%22R%20Script%22%20tag%3A%22Data%20Source%22&language=ja)
   * [WEBスクレイピング](/howto?q=tag%3A%22Web%20Scraping%22&language=ja)
-  * [エクステンションデータ](/howto?q=tag%3A%Extension&language=ja)
+  * [エクステンションデータ](/howto?q=tag%3A%%22Extension%20Data%22&language=ja)
     <!--* [ファイナンスデータ](/howto?q=tag%3Afinance%20tag%3A%22Data%20Source%22&language=ja)-->
   * [データ・カタログ](/howto?q=tag%3A%22Data%20Catalog%22%20tag%3A%22Data%20Source%22&language=ja)
 
@@ -149,3 +149,4 @@
 
 * [パラメーター](/howto?q=tag%3AParameter&language=ja)
 * [カスタムRスクリプト](/howto?q=tag%3A%22r%20script%22&language=ja)
+* [Excelユーザー向けガイド](/howto?q=tag%3AExcel&language=ja)
