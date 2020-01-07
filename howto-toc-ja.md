@@ -101,7 +101,7 @@
     * [ロング型からワイド型へ変換](/howto?q=tag%3ASpread&language=ja)
     * [既存の値を新しい値に置き換える](/howto?q=tag%3ARecode&language=ja)
     * [条件によって既存の値を置き換える](/howto?q=tag%3Acase_when&language=ja)
-    * [欠損値を扱う](/howto?q=tag%3A%22Work%20with%20Na%22&language=ja)/
+    * [欠損値を扱う](/howto?q=tag%3A%22Work%20with%20Na%22&language=ja)
     * [ビン(カテゴリー)を作成](/howto?q=tag%3ABinnning%20tag%3A%22Data%20Wrangling%22&language=ja)
     <!--* [その他グループを作る](/howto?q=tag%3A%22other%20group%22&language=ja)-->
     * [テキストを操作](/howto?q=tag%3Astr&language=ja)
