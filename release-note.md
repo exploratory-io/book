@@ -18,7 +18,7 @@ Released on 12/12/2019
 
 ### New Features
 
-* Introduced an "Offline Mode" with 'Offline License Key'.
+* Introduced an "Offline Mode" with 'Offline License Key'. ([Detail](https://exploratory.io/note/2ac8ae888097/How-to-enter-Exploratory-Desktop-Offline-License-Key-osX9Afe2CE))
 
 ### Bug Fixes
 
