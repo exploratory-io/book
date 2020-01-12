@@ -32,6 +32,7 @@ Released on 1/10/2019
 * Data Wrangling: The text labels for 'Step Data Export' menu is overflowing in Japanese UI.
 * Data Wrangling: Made 'Replace Values' as an independent step instead of mixing it with other Mutate step such as Create Bin.
 * Data Wrangling: The Step UI dialogs are now shown underneath the column header of the table under Table view.
+* Data Wrangling: You can move a Step UI dialog by dragging it.
 
 * Chart: Pivot Table threw an error if you selected "Ascending by Frequency" sort option against a row header column which was Numeric data type and categorized.
 * Chart: 'Previous' and 'Next' options were missing for the '% of' Window Calculation.
