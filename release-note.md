@@ -1,5 +1,73 @@
 # Release Note
 
+## 5.5
+
+Released on 1/10/2019
+
+### Bug Fixes
+
+* Table View: The long text in the pop-up were not shown fully.
+
+* Data Source: Google Sheet: Import Dialog: The long sheet names were not shown fully.
+* Data Source: Google Sheet: The default data frame names are sanitized automatically.
+* Data Source: Google Sheets: Changed default Data Frame Name from dataframe to GoogleSheet when the sheet name is non-ascii
+* Data Source: Google Analytics: Supported Custom Dimensions and Custom Metrics.
+* Data Source: Google Analytics: Popup, which showed the dimension/measure detail information, was showing at wrong positions.
+* Data Source: Google Analytics: Dimension/Metrics names were not fully shown in the pop-up.
+* Data Source: Google Analytics: Clicking 'x' icon to clear Dimension/Metrics search words removed focus from the search input field and couldn't start next search right away.
+* Data Source: Google Analytics: Goal 1 Metrics were not properly sorted in the Metrics List.
+* Data Source: Google Analytics: Couldn't delete the Last N Days parameter value with the Delete Key.
+* Data Source: Google Analytics: Opening the Update Data Import Dialog was slow.
+* Data Source: Google Analytics: Clicking Show Only Selected Icon didn't clear the search words automatically.
+
+* Data Wrangling: It now keeps the current scroll position of the Preview table when adding new columns in the Column Selection dialog.
+* Data Wrangling: Clicking the cahced step caused the previous step being executed.
+* Data Wrangling: Multiclass classification evaluation menu is hidden when the window size is small.
+* Data Wrangling: 'Use Row as Header' now automatically handles duplicate names or NA values by default.
+* Data Wrangling: Filter: The filter operator and condition information was wiped out when chaning the column.
+* Data Wrangling: Mutate: The syntax suggestion inside the Expression editor was not showing the proper values when updating the existing step.
+* Data Wrangling: You can rename the newly created column names inside the 'Summarize' dialog.
+* Data Wrangling: Now we have a new 'Text Data Wrangling' dialog for performing operations like extract text, replace text, remove text, etc.
+* Data Wrangling: Summarize: The categorical columns are now assigned to Group By when opening the dialog from the column header menu.
+* Data Wrangling: The text labels for 'Step Data Export' menu is overflowing in Japanese UI.
+* Data Wrangling: Made 'Replace Values' as an independent step instead of mixing it with other Mutate step such as Create Bin.
+* Data Wrangling: The Step UI dialogs are now shown underneath the column header of the table under Table view.
+
+* Chart: Pivot Table threw an error if you selected "Ascending by Frequency" sort option against a row header column which was Numeric data type and categorized.
+* Chart: 'Previous' and 'Next' options were missing for the '% of' Window Calculation.
+* Chart: Couldn't change the chart name to something that is already used in different data frames.
+* Chart: The data in Edit Display Name dialog and Hightlight dialog didn't reflect the "Other Group" setting.
+* Chart: Now it captures the thumbnail images for Pivot Table and Table.
+* Chart: Area Map failed to render and showed an error "Error in prettyNum invalid 'nsmall' argument" if you set a negative value at the decimal digit setting in the Chart Property dialog.
+* Chart: Line Chart: When you assigned text column whose data containing "1", "2", "3", "4"  to the X-Axis it showed only "1", "2", "3".
+* Chart: The space between the X-Axis text labels and the chart were not stable after you zoomed in.
+* Chart: Table: It didn't save the column order information when the column names consist of only numbers such as '2018'.
+* Chart: Pie: It threw an error "e.split is not a function" with a certain condition.
+* Chart: Histogram: It now supports 'Cumulative Distribution'.
+* Chart: Histogram: It now supports 'Ratio (% of Total)' calculation.
+* Chart: Number: It now supports the Custom calculaiton.
+* Chart: It now supports the Nth & Quantile functions.
+* Chart: Pivot Table: It now supports 'drag-and-drop' to change the order of columns for Rows and Values.
+* Chart: Limit Axis Value: The validation error message showed up at a wrong timing.
+
+* Analytics: Time Series Forecast (Prophet): It now shows Variable Importance based on coefficients of the Prophet model.
+* Analytics: K-Means clustering result was different on Mac and Windows.
+* Analytics: When you run the analytics, any invalid data wrangling steps are now automatically removed.
+* Analytics: K-means Clustering: The results were different between running it with the data wrangling step and running it inside the Analytics view.
+* Analytics: You can select which components of Date/POSIXct data to be included as the predictors.
+* Analytics: Time Series Forecast (Prophet): Couldn't run it due to an alert from Mac OS X Catalina's Gatekeeper.
+* Analytics: Market Basket Analysis: The Lift values shown on mouseover balloons on the scatter plot was wrongly labeled "Lift (Color)", while Lift was actually expressed as Size of circles.
+* Analytics: Linear Regression: Variable Importance bar chart is now colored based on statistical significance of the variables.
+* Analytics: K-means: "subscript out of bounds" error was raised when only one variable column was selected
+* Analytics: The text labels inside the chart pop-ups are now translated for Japanese UI.
+
+* Dashboard: Empty rows should be automatically removed in Dashboard Config UI.
+* Dashboard: Table showed an extra border line underneath the column header when you set a smaller font size.
+* Dashboard: Table/Pivot should be expanded to fill the space when it shown in the dashboard.
+* Dashboard: It now supports the Text Box for entering comment text and writing R script for custom visualizations.
+
+* Parameter: When the Parameter Dialog is opened from the Filter Dialog, the Filter Dialog was closed when it should have remained opened.
+
 ## 5.4.2.4
 
 Released on 12/23/2019
