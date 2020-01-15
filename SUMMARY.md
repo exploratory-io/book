@@ -245,5 +245,6 @@
    * [Startup Log file for debugging](startup_log.md)
    * [Startup Log file for debugging (日本語)](startup_log_ja.md)
    * [Check version of Exploratory Desktop](version_check.md)
+   * [How to Recover the History Data](history_error_recovery.md)
 
 * [Keyboard shortcuts](shortcut.md)
