@@ -1,5 +1,74 @@
 # Release Note
 
+## 5.5.1
+
+Released on 1/23/2019
+
+### Bug Fixes
+
+* Installation: Unnecessary 'Admin Privileged is required' error message was displayed on Windows. 
+* Installation: The Web Proxy Server input field now prevents an server name entry if it starts with protocols such as http:// or https://.
+* Project: At closing a project, there were cases where an error dialog showed up with a message "Error Code 127".
+* Data Source: CSV: Improved an error message for a file character encoding mismatch.
+* Data Source: Google Analytics: Added Refresh button to refresh Accounts, Properties, Views, and Segments.
+* Data Source: Google Analytics: Could not update date parameter with Date Picker.
+* Data Source: Google Sheet: Supported Detect Data Type parameter.
+* Data Source: Google Sheet: Importing a sheet with sparse data failed with 'Error in nchar(x) : invalid multibyte string' error.
+* Data Source: Twitter: Search hangs when canceled the previous search and tried a new search.
+* Data Source: Supported 'Connection Mapping' dialog that allows mapping connections used in the imported EDF to existing connections.
+* Data Wrangling: The Rename dialog showed an unnecessary vertical scrollbar on Windows. 
+* Data Wrangling: Step's label was broken showing text like "__PLACEHOLDER__" when column names were numbers.
+* Data Wrangling: Text Data Wrangling: The Preview Table didn't reflect previous text wrangling results in the same step.
+* Data Wrangling: Text Data Wrangling: Preview data was cleared when the 'Create New Column' checkbox was clicked. 
+* Data Wrangling: Summarize Dialog: Now it sets the '(Number of Rows)' as a default Value Column when an existing Value Column was removed.
+* Data Wrangling: Filter: Improved logical operator dropdown style.
+* Data Wrangling: Filter: Now numeric input fields prevent unwanted non numeric text entry.
+* Data Wrangling: The filter operator and condition information were wiped out when changing the column selection even if the column data type is the same.
+* Data Wrangling: Aggregate functions (mean, median, min, and max) for Date operations were not fully available on the Filter dialog.
+* Data Wrangling: Splitting a step did not show the resulting steps immediately and had to re-select a step to show them.
+* Data Wrangling: Text Data Wrangling: Now matched text gets highlighted in the Preview Table.
+* Data Wrangling: Rename column shouldn't allow entering duplicated column name.
+* Data Wrangling: Gather dialog was not vertically scrollable when many columns are selected.
+* Data Wrangling: Brought back 'Work with Text Function' to Column menu.
+* Data Wrangling: Incorrect error message shown for a data frame even if it didn't have an error.
+* Data Wrangling: Corrected the Column menu and Step dialog titles to be consistent.
+* Data Wrangling: Moved 'Ungroup' menu to the top level of Step menu.
+* Data Wrangling: Text Data Wrangling: Supported to show full text in the Popup when hovering a mouse over a column that contains long text.
+* Data Wrangling: Recode dialog shouldn't show images when text contains img HTML tag.
+* Data Wrangling: Summarize dialog should reject duplicated column name when editing the column name.
+* Summary: Show time and timezone information for POSIXct columns.
+* Summary: 'Unique Values' shouldn't count NA as a unique value.
+* Summary: Text on the summary panels was selected if you chose multiple columns by Shift+Click action. 
+* Summary: Show an actual number of NA/Non-NA values in Pop-up when you hover an NA/Non-NA ratio bar.
+* Chart: Supported 'Disable' option for chart filters.
+* Chart: Pivot Table: It should show more user-friendly message if I enter and run an invalid Custom Function.
+* Chart: Pivot Table: It showed 'V1' for an empty string in Column Header if you assigned a column that had empty strings in values to Column.
+* Chart: Pivot Table: If you set a descending sort on a Row Header, (NA) showed up at the top. 
+* Chart: Line chart failed to draw and showed an error dialog if you switched the chart type from Heatmap to Line.
+* Chart: Could not add a chart filter when a chart is pinned to a cached step.
+* Chart: Export Chart to CSV sometimes failed and showed an error dialog.
+* Chart: Supported moving 'Edit Display Name' dialog position by dragging it.
+* Chart: Scatter: LongLat Map: It now supports Binning by Hour, Minute and Second if you assign a POSIXct column at Color.
+* Chart: Contour chart showed an incorrect set of functions for Date column at Color.
+* Chart: Number failed to render and showed an error dialog if there were multiple columns with the same name.
+* Chart: Histogram: Y2 axis labels were missed once in a while in Histogram with 'Cumulative Sum Ratio' lines.
+* Analytics: On Effects by Variable charts, now we show charts for variables up to the specified limit, regardless of the variable's significance.
+* Analytics: Effects by Variable chart's Y-Axis range adjustment is improved so that it will not become too widespread trying to include entire confidence interval.
+* Analytics: Show 'Number of Columns' Repeat By setting as a dropdown menu inside the chart area.
+* Analytics: Timeseries Forecast (Prophet) : Message "This chart is available only when there are more than 2 years/weeks of data" was shown even when the chart was actually available and shown.
+* Analytics: Prophet: Can't remove existing Extra Regressors in the duplicated Prophet analytics.
+* Analytics: Timeseries Forecast (Prophet) : Format of the output is a dataframe was broken.
+* Analytics: Supported Hour, Minutes, and Seconds for POSIXct components for predictors.
+* Analytics: It now supports Binning at Color By and Repeat By. 
+* Analytics: Prophet: X-axis Date formatting was ignored if you assigned a column at Repeat By in Yearly Seasonality chart.
+* Analytics: If you typed in "0.0", it got back to "0" so that you couldn't type in a value between 0 and 1 in number input fields in the property dialog. 
+* Analytics: When with Repeat-By, errors that happened for a specific group is now just displayed in the Summary table, rather than stopping entire analysis involving other groups too.
+* Analytics: Timeseries Forecast (Prophet): Error with message "cols must select at least one column." was raised when there was neither seasonality nor external variables.
+* Analytics: Random Forest: Error with message "object 'variable' not found" was raised for a classification when there is a category with only one row.
+* Note/Slide/Dashboard: Improved error handling when the History information was corrupted.
+* Parameter: "Assertion failed" error was raised at creating data source with parameters.
+
+
 ## 5.5
 
 Released on 1/10/2019
