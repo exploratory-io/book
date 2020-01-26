@@ -9,7 +9,7 @@ Released on 1/23/2019
 * Installation: Unnecessary 'Admin Privileged is required' error message was displayed on Windows. 
 * Installation: The Web Proxy Server input field now prevents an server name entry if it starts with protocols such as http:// or https://.
 * Project: At closing a project, there were cases where an error dialog showed up with a message "Error Code 127".
-* Data Source: CSV: Improved an error message for the character encoding mismatch.
+* Data Source: CSV: Improved an error message for a file character encoding mismatch.
 * Data Source: Google Analytics: Added Refresh button to refresh Accounts, Properties, Views, and Segments.
 * Data Source: Google Analytics: Could not update date parameter with Date Picker.
 * Data Source: Google Sheet: Supported Detect Data Type parameter.
