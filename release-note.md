@@ -65,7 +65,7 @@ Released on 1/23/2019
 * Analytics: When with Repeat-By, errors that happened for a specific group is now just displayed in the Summary table, rather than stopping entire analysis involving other groups too.
 * Analytics: Timeseries Forecast (Prophet): Error with message "cols must select at least one column." was raised when there was neither seasonality nor external variables.
 * Analytics: Random Forest: Error with message "object 'variable' not found" was raised for a classification when there is a category with only one row.
-* Note/Slide/Dashboard:  Improved error handling when the History information was corrupted.
+* Note/Slide/Dashboard: Improved error handling when the History information was corrupted.
 * Parameter: "Assertion failed" error was raised at creating data source with parameters.
 
 
