@@ -1,5 +1,18 @@
 # Release Note
 
+## 5.5.1.5
+
+Released on 1/26/2019
+
+### Bug Fixes
+
+* Analytics: Repeat-By toolbar showed up in 'Effects by Variable' analytics chart even if no Repeat-By column was set.
+* Data Wrangling: Could not click OK button on Column Selection Dialog on a PC with lower screen resolution.
+* Chart: Boxplot: Pop-up showed a meaningless text 'trace0' if you assigned columns to X-Axis, Y-Axis and Repeat By.
+* Parameter: After making changes to a parameter and moving out to edit another parameter, the confirmation dialog about the change getting discarded didn't show up.
+* Summary View: Group-By Columns were not highglihted with green color.
+
+
 ## 5.5.1
 
 Released on 1/23/2019
