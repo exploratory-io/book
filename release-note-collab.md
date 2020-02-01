@@ -1,5 +1,18 @@
 # Release Note
 
+## 5.5.1
+
+Released on 1/31/2020
+
+### Enhancements
+
+* Certified with Exploratory Desktop 5.5.1.
+
+### Bug Fixes
+
+* Parameter: Minimum/maximum limit on text field numeric parameter was not correctly enforced.
+* Improved response time for opening share dialog.
+
 ## 5.4.1
 
 Released on 12/1/2019
