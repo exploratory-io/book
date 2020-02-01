@@ -11,7 +11,7 @@ Released on 1/31/2020
 ### Bug Fixes
 
 * Parameter: Minimum/maximum limit on text field numeric parameter was not correctly enforced.
-* Improved response time for opening share dialog.
+* Improved response time for opening Share Dialog.
 
 ## 5.4.1
 
