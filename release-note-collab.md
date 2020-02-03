@@ -1,5 +1,14 @@
 # Release Note
 
+## 5.5.1.1
+
+Released on 2/3/2020
+
+### Bug Fixes
+
+* Admin UI: Type of user accounts (Author/Viewer) displayed on the Users Administration page was not correct.
+* Parameter: Run button flickered unnecessarily, when parameter values were changed.
+
 ## 5.5.1
 
 Released on 1/31/2020
