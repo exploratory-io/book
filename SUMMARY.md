@@ -217,6 +217,7 @@
    * [Extract Summary of Fit](ml/model_stats.md)
    * [Extract Parameter Estimates](ml/model_coef.md)
    * [Run ANOVA Test](ml/model_anova.md)
+   * [Fix Imbalanced Data (SMOTE)](wrangling/smote.md)
 
 * [Text Analysis](text/main.md)
    * [Tokenize Text](text/do_tokenize.md)
