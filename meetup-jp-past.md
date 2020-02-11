@@ -79,7 +79,7 @@
 
 ## スライド
 
-### Kan
+### Exploratory CEO 西田勘一郎
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/e142daba02a34510889afcde7fa93481" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 
 
@@ -107,7 +107,7 @@
 
 ## スライド
 
-### Kan
+### Exploratory CEO 西田勘一郎
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/fad3211a023c48a1ba7f1f00f525338e" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 
 
