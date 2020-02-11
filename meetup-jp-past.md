@@ -1,5 +1,7 @@
 # 第12回勉強会 2020/1/31(金) @ラクスル株式会社
 
+![](/media/meetup/meetup12.jpg)
+
 ## 開催要項
 * 日時: 2019年 1月 31日 (金) 19:00〜21:00（18:45開場・受付開始）
 * 会場: ラクスル株式会社
@@ -16,7 +18,9 @@
 * 20:45	質疑応答
 
 ## スライド
+
 * 株式会社IHI 新見 亮輔 様
+
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 74.9296%;"><iframe src="https://speakerdeck.com/player/8bc26d42ac44455386161c684b397e67" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 	
 
@@ -24,6 +28,8 @@
 
 
 # 第11回勉強会 2019/11/15(金) @株式会社GxP - G’s LounGe
+
+![](/media/meetup/meetup11.jpg)
 
 ## 開催要項
 * 日時: 2019年 11月 15日 (金) 19:15〜21:00（19:00開場・受付開始）
@@ -39,11 +45,15 @@
 
 
 ## スライド
+
 * 株式会社GRI 古幡 征史様
+
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/5695cc1cbc4c42228ceb082cf9b7fee2" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 
 * 株式会社 truestar 齋藤 裕介様
+
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 74.9296%;"><iframe src="https://speakerdeck.com/player/43be7c59e65c426381f18efb060fce6c" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 
 * 田辺 翔様
+
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/0cb737d06efb4524bc71b113fcc920a6" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
