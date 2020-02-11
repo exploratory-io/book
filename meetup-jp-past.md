@@ -61,3 +61,84 @@
 
 
 ---
+
+# #10 - 2019/07/29(金) @ハッシャダイ
+
+<img src="/media/meetup/meetup10.jpg" width="100%" />
+
+## 開催要項
+
+* 日時 : 2019年 7月 29日 (月) 19:00〜21:00
+* 会場: 株式会社ハッシャダイ
+* 東京都渋谷区神宮前3丁目21-8 TS原宿第2ビル 1F
+* URL:https://techplay.jp/event/739849
+
+
+## アジェンダ
+
+* Exploratory v5.3の紹介 （Exploratory CEO 西田勘一郎）
+* 統計モデルを利用した従業員の満足度分析へのExploratoryの活用 (株式会社JTBコミュニケーションデザイン 大平 祐輔様)
+* Exploratoryを活用した社内データサイエンス勉強会の取り組み（三井物産 木原 悠介様）
+* 機械学習を用いたマーケティング購買要因分析へのExploratoryの活用（株式会社 株式会社 エル・ティー・エス 舟山　雄太様 ）
+
+
+## スライド
+
+### Kan
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/e142daba02a34510889afcde7fa93481" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+
+
+### 株式会社JTBコミュニケーションデザイン 大平 祐輔様
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/fe7e1625906541f1b912a237124d73c7" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+
+
+---
+
+
+# #9 - 2019/05/27(月) @ハッシャダイ
+
+
+
+## 開催要項
+
+* 日時:2019/5/27(月)  19:00〜
+* 会場: 株式会社ハッシャダイ
+* 東京都渋谷区神宮前3丁目21-8 TS原宿第2ビル 1F
+
+
+## アジェンダ
+
+* Exploratory v5.1 & v5.2 の紹介 （Exploratory CEO 西田勘一郎）
+
+
+## スライド
+
+### Kan
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/fad3211a023c48a1ba7f1f00f525338e" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+
+
+
+---
+
+
+# #8 - 2019/01/23(月) @GXP
+
+
+
+## 開催要項
+
+* 日時:2019/01/23(水) 19:00〜20:30
+* 会場:グロースエクスパートナーズ株式会社 「G's LounGe」
+* 〒160-0023 東京都新宿区西新宿7-21-1 新宿ロイヤルビル3階 
+* URL:https://data-science-discussion.connpass.com/event/114477/
+
+
+## アジェンダ
+
+* 18:45～19:00 受付
+* 19:00～19:30 Exploratory v5.1の紹介 by 西田　勘一郎 CEO@Exploratory
+* 19:30～20:00 マーケット・バスケット分析 by 林　秀明 CTO@Exploratory
+* 20:00～20:30 セールス・アナリティクス by 村里　郁哉
+
+
+
