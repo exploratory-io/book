@@ -1,4 +1,4 @@
-# 第12回勉強会 2020/1/31(金) @ラクスル株式会社
+# #12 - 2020/1/31(金) @ラクスル株式会社
 
 <img src="/media/meetup/meetup12.jpg" width="100%" />
 
@@ -28,7 +28,7 @@
 ---
 
 
-# 第11回勉強会 2019/11/15(金) @株式会社GxP - G’s LounGe
+# #11 - 2019/11/15(金) @株式会社GxP - G’s LounGe
 
 <img src="/media/meetup/meetup11.jpg" width="100%" />
 
