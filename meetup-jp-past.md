@@ -19,8 +19,7 @@
 
 ## スライド
 
-* 株式会社IHI 新見 亮輔 様
-
+株式会社IHI 新見 亮輔 様
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 74.9296%;"><iframe src="https://speakerdeck.com/player/8bc26d42ac44455386161c684b397e67" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 	
 
@@ -46,14 +45,13 @@
 
 ## スライド
 
-* 株式会社GRI 古幡 征史様
-
+株式会社GRI 古幡 征史様
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/5695cc1cbc4c42228ceb082cf9b7fee2" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 
-* 株式会社 truestar 齋藤 裕介様
 
+株式会社 truestar 齋藤 裕介様
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 74.9296%;"><iframe src="https://speakerdeck.com/player/43be7c59e65c426381f18efb060fce6c" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 
-* 田辺 翔様
 
+田辺 翔様
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/0cb737d06efb4524bc71b113fcc920a6" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
