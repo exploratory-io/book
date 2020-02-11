@@ -1,6 +1,6 @@
 # 第12回勉強会 2020/1/31(金) @ラクスル株式会社
 
-![](/media/meetup/meetup12.jpg)
+<img src="/media/meetup/meetup12.jpg" width="100%">
 
 ## 開催要項
 * 日時: 2019年 1月 31日 (金) 19:00〜21:00（18:45開場・受付開始）
@@ -29,7 +29,7 @@
 
 # 第11回勉強会 2019/11/15(金) @株式会社GxP - G’s LounGe
 
-![](/media/meetup/meetup11.jpg)
+<img src="/media/meetup/meetup11.jpg" width="100%">
 
 ## 開催要項
 * 日時: 2019年 11月 15日 (金) 19:15〜21:00（19:00開場・受付開始）
