@@ -1,12 +1,10 @@
 # #12 - 2020/1/31(金) @ラクスル株式会社
 
-<img src="/media/meetup/meetup12.jpg" width="100%" />
+<img src="https://www.dropbox.com/s/7dw77dagect9lvh/meetup12.jpg?raw=1" width="100%" />
 
 ## 開催要項
 * 日時: 2019年 1月 31日 (金) 19:00〜21:00（18:45開場・受付開始）
 * 会場: ラクスル株式会社
-* 住所: 東京都品川区上大崎2-24-9 アイケイビル1F(目黒駅 徒歩3分) 
-* URL: https://techplay.jp/event/762419
 
 ## アジェンダ
 * 19:00	オープニング・Exploratory v5.5のご紹介	Exploratory CEO 西田勘一郎
@@ -30,12 +28,11 @@
 
 # #11 - 2019/11/15(金) @株式会社GxP - G’s LounGe
 
-<img src="/media/meetup/meetup11.jpg" width="100%" />
+<img src="https://www.dropbox.com/s/zz5ojseu690mda9/meetup11.jpg?raw=1" width="100%" />
 
 ## 開催要項
 * 日時: 2019年 11月 15日 (金) 19:15〜21:00（19:00開場・受付開始）
-* 会場: 株式会社GxP - G’s LounGe 東京都新宿区西新宿7-21-1 新宿ロイヤルビル3階
-* URL: https://techplay.jp/event/753874
+* 会場: 株式会社GxP - G’s LounGe
 
 ## アジェンダ
 * Exploratory & コラボレーションサーバー v5.4 の紹介 （Exploratory CEO 西田勘一郎）
@@ -64,14 +61,12 @@
 
 # #10 - 2019/07/29(金) @ハッシャダイ
 
-<img src="/media/meetup/meetup10.jpg" width="100%" />
+<img src="https://www.dropbox.com/s/8kurwxf6xvjjdyx/meetup10.jpg?raw=1" width="100%" />
 
 ## 開催要項
 
-* 日時 : 2019年 7月 29日 (月) 19:00〜21:00
+* 日時: 2019年 7月 29日 (月) 19:00〜21:00
 * 会場: 株式会社ハッシャダイ
-* 東京都渋谷区神宮前3丁目21-8 TS原宿第2ビル 1F
-* URL:https://techplay.jp/event/739849
 
 
 ## アジェンダ
@@ -101,9 +96,8 @@
 
 ## 開催要項
 
-* 日時:2019/5/27(月)  19:00〜
+* 日時: 2019/5/27(月)  19:00〜
 * 会場: 株式会社ハッシャダイ
-* 東京都渋谷区神宮前3丁目21-8 TS原宿第2ビル 1F
 
 
 ## アジェンダ
@@ -121,16 +115,14 @@
 ---
 
 
-# #8 - 2019/01/23(月) @GXP
+# #8 - 2019/01/23(月) @株式会社GxP - G’s LounGe
 
 
 
 ## 開催要項
 
-* 日時:2019/01/23(水) 19:00〜20:30
-* 会場:グロースエクスパートナーズ株式会社 「G's LounGe」
-* 〒160-0023 東京都新宿区西新宿7-21-1 新宿ロイヤルビル3階 
-* URL:https://data-science-discussion.connpass.com/event/114477/
+* 日時: 2019/01/23(水) 19:00〜20:30
+* 会場: 株式会社GxP - G’s LounGe
 
 
 ## アジェンダ
