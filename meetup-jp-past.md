@@ -133,4 +133,11 @@
 * 20:00～20:30 セールス・アナリティクス by 村里　郁哉
 
 
+## スライド
+
+### Exploratory CEO 西田勘一郎
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/9a0ace8274674ec9a70f8792ff43cd52" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+
+### Exploratory 村里 郁哉
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/4b1c579e950d42de95945ea119e9c033" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 
