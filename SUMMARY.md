@@ -47,6 +47,7 @@
       * [HP Vertica](import/hp-vertica.md)
       * [ODBC](import/odbc.md)
       * [Dremio](import/dremio.md)     
+      * [SQLServer](import/sqlserver.md)
    * [Cloud Apps Data]()
       * [Create Connection](import/connection-cloud-apps.md)
       * [Github Issues](import/github.md)
