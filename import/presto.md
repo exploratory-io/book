@@ -30,3 +30,4 @@ Click "Get Data" button to see the data back from your Presto.
 ![](images/presto-preview.png)
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
+ 
