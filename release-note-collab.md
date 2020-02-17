@@ -1,5 +1,27 @@
 # Release Note
 
+## 5.5.1.1
+
+Released on 2/3/2020
+
+### Bug Fixes
+
+* Admin UI: Type of user accounts (Author/Viewer) displayed on the Users Administration page was not correct.
+* Parameter: Run button flickered unnecessarily, when parameter values were changed.
+
+## 5.5.1
+
+Released on 1/31/2020
+
+### Enhancements
+
+* Certified with Exploratory Desktop 5.5.1.
+
+### Bug Fixes
+
+* Parameter: Minimum/maximum limit on text field numeric parameter was not correctly enforced.
+* Improved response time for opening Share Dialog.
+
 ## 5.4.1
 
 Released on 12/1/2019
