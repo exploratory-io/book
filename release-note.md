@@ -1,38 +1,37 @@
 # Release Note
 
-## 5.5.1.5
-
-Released on 1/26/2019
-
-### Bug Fixes
-
-* Analytics: Repeat-By toolbar showed up in 'Effects by Variable' analytics chart even if no Repeat-By column was set.
-* Data Wrangling: Could not click OK button on Column Selection Dialog on a PC with lower screen resolution.
-* Chart: Boxplot: Pop-up showed a meaningless text 'trace0' if you assigned columns to X-Axis, Y-Axis and Repeat By.
-* Parameter: After making changes to a parameter and moving out to edit another parameter, the confirmation dialog about the change getting discarded didn't show up.
-* Summary View: Group-By Columns were not highglihted with green color.
-
-
 ## 5.5.1
 
-Released on 1/23/2019
+Released on 1/26/2020
+
+### New Features / Enhancements
+
+* Data Source: Google Analytics: Added Refresh button to refresh Accounts, Properties, Views, and Segments.
+* Data Source: Google Sheet: Supported Detect Data Type parameter.
+
+* Chart: Supported 'Disable' option for chart filters.
+* Chart: Scatter: LongLat Map: It now supports Binning by Hour, Minute and Second if you assign a POSIXct column at Color.
+
+* Analytics: 'Number of Columns' setting is now exposed at the top of the charts as a dropdown menu.
+* Analytics: Supported Hour, Minutes, and Seconds for POSIXct components for predictors.
+* Analytics: It now supports Binning at Color By and Repeat By.
 
 ### Bug Fixes
 
-* Installation: Unnecessary 'Admin Privilege is required' error message was displayed on Windows. 
+* Installation: Unnecessary 'Admin Privilege is required' error message was displayed on Windows.
 * Installation: The Web Proxy Server input field now prevents an server name entry if it starts with protocols such as http:// or https://, which would cause problem in connecting to the proxy.
+
 * Project: At closing a project, there were cases where an error dialog showed up with a message "Error Code 127".
+
 * Data Source: CSV: Improved an error message for a file character encoding mismatch.
-* Data Source: Google Analytics: Added Refresh button to refresh Accounts, Properties, Views, and Segments.
 * Data Source: Google Analytics: Could not update date parameter with Date Picker.
-* Data Source: Google Sheet: Supported Detect Data Type parameter.
 * Data Source: Google Sheet: Importing a sheet with sparse data failed with 'Error in nchar(x) : invalid multibyte string' error.
 * Data Source: Twitter: Search hangs when canceled the previous search and tried a new search.
 * Data Source: Supported 'Connection Mapping' dialog that allows mapping connections used in the imported EDF to existing connections.
-* Data Wrangling: The Rename dialog showed an unnecessary vertical scrollbar on Windows. 
+* Data Wrangling: The Rename dialog showed an unnecessary vertical scrollbar on Windows.
 * Data Wrangling: Step's label was broken showing text like "PLACEHOLDER" when column names were numbers.
 * Data Wrangling: Text Data Wrangling: The Preview Table didn't reflect previous text wrangling results in the same step.
-* Data Wrangling: Text Data Wrangling: Preview data was cleared when the 'Create New Column' checkbox was clicked. 
+* Data Wrangling: Text Data Wrangling: Preview data was cleared when the 'Create New Column' checkbox was clicked.
 * Data Wrangling: Summarize Dialog: Now it sets the '(Number of Rows)' as a default Value Column when an existing Value Column was removed.
 * Data Wrangling: Filter: Improved logical operator dropdown style.
 * Data Wrangling: Filter: Now numeric input fields prevent unwanted non numeric text entry.
@@ -49,42 +48,67 @@ Released on 1/23/2019
 * Data Wrangling: Text Data Wrangling: Supported to show full text in the popup when hovering a mouse over a column that contains long text.
 * Data Wrangling: Recode dialog shouldn't show images when text contains img HTML tag.
 * Data Wrangling: Summarize dialog should reject duplicated column name when editing the column name.
+* Data Wrangling: Could not click OK button on Column Selection Dialog on a PC with lower screen resolution.
+
+* Summary: Group-By Columns were not highglihted with green color.
 * Summary: Show time and timezone information for POSIXct columns.
 * Summary: 'Unique Values' shouldn't count NA as a unique value.
-* Summary: Text on the summary panels was selected if you chose multiple columns by Shift+Click action. 
+* Summary: Text on the summary panels was selected if you chose multiple columns by Shift+Click action.
 * Summary: Show an actual number of NA/Non-NA values in popup when you hover over an NA/Non-NA ratio bar.
-* Chart: Supported 'Disable' option for chart filters.
+
 * Chart: Pivot Table: More user-friendly message for an invalid Custom Function.
 * Chart: Pivot Table: It showed 'V1' for an empty string in Column Header if you assigned a column that had empty strings in values to Column.
-* Chart: Pivot Table: If you set a descending sort on a Row Header, (NA) showed up at the top. 
+* Chart: Pivot Table: If you set a descending sort on a Row Header, (NA) showed up at the top.
 * Chart: Line chart failed to draw and showed an error dialog if you switched the chart type from Heatmap to Line.
 * Chart: Could not add a chart filter when a chart is pinned to a cached step.
 * Chart: Export Chart to CSV sometimes failed and showed an error dialog.
 * Chart: Supported moving 'Edit Display Name' dialog position by dragging it.
-* Chart: Scatter: LongLat Map: It now supports Binning by Hour, Minute and Second if you assign a POSIXct column at Color.
 * Chart: Contour chart showed an incorrect set of functions for Date column at Color.
 * Chart: Number failed to render and showed an error dialog if there were multiple columns with the same name.
 * Chart: Histogram: Y2 axis labels were missed once in a while in Histogram with 'Cumulative Sum Ratio' lines.
+* Chart: Boxplot: Pop-up showed a meaningless text 'trace0' if you assigned columns to X-Axis, Y-Axis and Repeat By.
+
 * Analytics: On Effects by Variable charts, now we show charts for variables up to the specified limit, regardless of the variable's significance.
-* Analytics: Effects by Variable chart's Y-Axis range adjustment is improved so that it will not become too widespread trying to include entire confidence interval.
-* Analytics: Show 'Number of Columns' Repeat By setting as a dropdown menu inside the chart area.
 * Analytics: Timeseries Forecast (Prophet) : Message "This chart is available only when there are more than 2 years/weeks of data" was shown even when the chart was actually available and shown.
 * Analytics: Timeseries Forecast (Prophet) : Sometimes removing existing External Variables in a duplicated Analytics did not work.
 * Analytics: Timeseries Forecast (Prophet) : Format of the output dataframe was broken.
 * Analytics: Timeseries Forecast (Prophet) : X-axis Date in Yearly Seasonality chart showed a specific year.
 * Analytics: Timeseries Forecast (Prophet) : Error with message "cols must select at least one column." was raised when there was neither seasonality nor external variables.
-* Analytics: Supported Hour, Minutes, and Seconds for POSIXct components for predictors.
-* Analytics: It now supports Binning at Color By and Repeat By. 
-* Analytics: If you typed in "0.0" to a number text field, it was getting back to "0", which was preventing you from typing in a value like "0.01". 
-* Analytics: When with Repeat-By, errors that happened for a specific group is now just displayed in the Summary table, rather than stopping entire analysis involving other groups too.
+* Analytics: If you typed in "0.0" to a number text field, it was getting back to "0", which was preventing you from typing in a value like "0.01".
+* Analytics: When using Repeat-By, sometimes it error-ed out due to an issue with a specific group.  It is now showing the warning messsage in the Summary table, rather than stopping the entire analysis.
 * Analytics: Random Forest: Error with message "object 'variable' not found" was raised for a classification when there is a category with only one row.
+* Analytics: Repeat-By toolbar showed up in 'Effects by Variable' analytics chart even if no Repeat-By column was set.
+
 * Note/Slide/Dashboard: Improved error handling when the History information was corrupted.
 * Parameter: "Assertion failed" error was raised at creating data source with parameters.
+* Parameter: After making changes to a parameter and moving out to edit another parameter, the confirmation dialog about the change getting discarded didn't show up.
 
 
 ## 5.5
 
-Released on 1/10/2019
+Released on 1/10/2020
+
+### New Features / Enhancements
+
+* Data Source: Google Analytics: Supported Custom Dimensions and Custom Metrics.
+
+* Data Wrangling: We have introduced 2 new UI for 'Text Data Wrangling' to support 'extract', 'replace', 'remove', and 'convert' operations.
+* Data Wrangling: You can now reorder the columns in Group-By and Values sections by drag-and-drop.
+
+* Chart: Histogram: Add 'Cumulative Ratio' and 'Cumulative Values' reference lines.
+* Chart: Number: It now supports the Custom calculation.
+* Chart: It now supports the Nth & Quantile functions.
+* Chart: Pivot Table: It now supports 'drag-and-drop' to change the order of columns for Rows and Values.
+* Chart: It now captures the thumbnail images for Pivot Table and Table.
+
+* Analytics: Time Series Forecast (Prophet): It now shows Variable Importance based on coefficients of the Prophet model.
+* Analytics: You can select which components of Date/POSIXct data to be included as the predictors.
+* Analytics: Linear Regression: Variable Importance bar chart is now colored based on statistical significance of the variables.
+* Analytics: The text labels inside the chart pop-ups are now translated for Japanese UI.
+
+* Dashboard: Table/Pivot is now expanded to fill the space.
+* Dashboard: We have added Text Box for entering comment text and writing R script for custom visualizations.
+* Dashboard: It now captures the thumbnail image of the Dashboard output.
 
 ### Bug Fixes
 
@@ -93,7 +117,6 @@ Released on 1/10/2019
 * Data Source: Google Sheet: Import Dialog: The long sheet names were not shown fully.
 * Data Source: Google Sheet: The default data frame names are sanitized automatically.
 * Data Source: Google Sheets: Changed default Data Frame Name from dataframe to GoogleSheet when the sheet name is non-ascii
-* Data Source: Google Analytics: Supported Custom Dimensions and Custom Metrics.
 * Data Source: Google Analytics: Popup, which showed the dimension/measure detail information, was showing at wrong positions.
 * Data Source: Google Analytics: Dimension/Metrics names were not fully shown in the pop-up.
 * Data Source: Google Analytics: Clicking 'x' icon to clear Dimension/Metrics search words removed focus from the search input field and couldn't start next search right away.
@@ -103,51 +126,36 @@ Released on 1/10/2019
 * Data Source: Google Analytics: Clicking Show Only Selected Icon didn't clear the search words automatically.
 
 * Data Wrangling: It now keeps the current scroll position of the Preview table when adding new columns in the Column Selection dialog.
-* Data Wrangling: Clicking the cahced step caused the previous step being executed.
+* Data Wrangling: Clicking the cached step caused the previous step being executed.
 * Data Wrangling: Multiclass classification evaluation menu is hidden when the window size is small.
 * Data Wrangling: 'Use Row as Header' now automatically handles duplicate names or NA values by default.
-* Data Wrangling: Filter: The filter operator and condition information was wiped out when chaning the column.
+* Data Wrangling: Filter: The filter operator and condition information was wiped out when changing the column.
 * Data Wrangling: Mutate: The syntax suggestion inside the Expression editor was not showing the proper values when updating the existing step.
 * Data Wrangling: You can rename the newly created column names inside the 'Summarize' dialog.
-* Data Wrangling: Now we have a new 'Text Data Wrangling' dialog for performing operations like extract text, replace text, remove text, etc.
 * Data Wrangling: Summarize: The categorical columns are now assigned to Group By when opening the dialog from the column header menu.
 * Data Wrangling: The text labels for 'Step Data Export' menu is overflowing in Japanese UI.
-* Data Wrangling: Made 'Replace Values' as an independent step instead of mixing it with other Mutate step such as Create Bin.
-* Data Wrangling: The Step UI dialogs are now shown underneath the column header of the table under Table view.
 * Data Wrangling: You can move a Step UI dialog by dragging it.
 
 * Chart: Pivot Table threw an error if you selected "Ascending by Frequency" sort option against a row header column which was Numeric data type and categorized.
 * Chart: 'Previous' and 'Next' options were missing for the '% of' Window Calculation.
 * Chart: Couldn't change the chart name to something that is already used in different data frames.
-* Chart: The data in Edit Display Name dialog and Hightlight dialog didn't reflect the "Other Group" setting.
-* Chart: Now it captures the thumbnail images for Pivot Table and Table.
+* Chart: The data in Edit Display Name dialog and Highlight dialog didn't reflect the "Other Group" setting.
 * Chart: Area Map failed to render and showed an error "Error in prettyNum invalid 'nsmall' argument" if you set a negative value at the decimal digit setting in the Chart Property dialog.
 * Chart: Line Chart: When you assigned text column whose data containing "1", "2", "3", "4"  to the X-Axis it showed only "1", "2", "3".
 * Chart: The space between the X-Axis text labels and the chart were not stable after you zoomed in.
 * Chart: Table: It didn't save the column order information when the column names consist of only numbers such as '2018'.
 * Chart: Pie: It threw an error "e.split is not a function" with a certain condition.
-* Chart: Histogram: It now supports 'Cumulative Distribution'.
-* Chart: Histogram: It now supports 'Ratio (% of Total)' calculation.
-* Chart: Number: It now supports the Custom calculaiton.
-* Chart: It now supports the Nth & Quantile functions.
-* Chart: Pivot Table: It now supports 'drag-and-drop' to change the order of columns for Rows and Values.
 * Chart: Limit Axis Value: The validation error message showed up at a wrong timing.
 
-* Analytics: Time Series Forecast (Prophet): It now shows Variable Importance based on coefficients of the Prophet model.
 * Analytics: K-Means clustering result was different on Mac and Windows.
 * Analytics: When you run the analytics, any invalid data wrangling steps are now automatically removed.
 * Analytics: K-means Clustering: The results were different between running it with the data wrangling step and running it inside the Analytics view.
-* Analytics: You can select which components of Date/POSIXct data to be included as the predictors.
 * Analytics: Time Series Forecast (Prophet): Couldn't run it due to an alert from Mac OS X Catalina's Gatekeeper.
 * Analytics: Market Basket Analysis: The Lift values shown on mouseover balloons on the scatter plot was wrongly labeled "Lift (Color)", while Lift was actually expressed as Size of circles.
-* Analytics: Linear Regression: Variable Importance bar chart is now colored based on statistical significance of the variables.
 * Analytics: K-means: "subscript out of bounds" error was raised when only one variable column was selected
-* Analytics: The text labels inside the chart pop-ups are now translated for Japanese UI.
 
 * Dashboard: Empty rows should be automatically removed in Dashboard Config UI.
 * Dashboard: Table showed an extra border line underneath the column header when you set a smaller font size.
-* Dashboard: Table/Pivot should be expanded to fill the space when it shown in the dashboard.
-* Dashboard: It now supports the Text Box for entering comment text and writing R script for custom visualizations.
 
 * Parameter: When the Parameter Dialog is opened from the Filter Dialog, the Filter Dialog was closed when it should have remained opened.
 
