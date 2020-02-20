@@ -95,7 +95,7 @@ Released on 1/10/2020
 * Data Wrangling: We have introduced 2 new UI for 'Text Data Wrangling' to support 'extract', 'replace', 'remove', and 'convert' operations.
 * Data Wrangling: You can now reorder the columns in Group-By and Values sections by drag-and-drop.
 
-* Chart: Histogram: Add 'Cumulative Ratio' and 'Cumulative Values' reference lines.
+* Chart: Histogram: Add 'Cumulative Ratio' and 'Cumulative Sum' reference lines.
 * Chart: Number: It now supports the Custom calculation.
 * Chart: It now supports the Nth & Quantile functions.
 * Chart: Pivot Table: It now supports 'drag-and-drop' to change the order of columns for Rows and Values.
