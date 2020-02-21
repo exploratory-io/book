@@ -7,13 +7,13 @@
 * 会場: ラクスル株式会社
 
 ## アジェンダ
-* オープニング・Exploratory v5.5のご紹介 (Exploratory CEO 西田勘一郎)
+* Exploratory v5.5のご紹介 (Exploratory CEO 西田勘一郎)
 * 統計モデルから得たインサイトの広告ターゲティングへの活用例	(株式会社ハッシャダイ 横関 秀樹 様)
 * Exploratoryを活用した社内データサイエンス勉強会の取り組みについて (Sansan株式会社 新名 庸生 様)
 * 健診・問診データを活用した人事施策への活用例 (株式会社IHI 新見 亮輔 様)
 * コラボレーション・サーバを活用したインサイトとデータの共有	(非公開)
 * 従業員サーベイの分析へのExploratoryの活用例	National Instruments (紅林 浩一様)
-* 質疑応答
+
 
 ## スライド
 
@@ -129,10 +129,9 @@
 
 ## アジェンダ
 
-* 18:45～19:00 受付
-* 19:00～19:30 Exploratory v5.1の紹介 by 西田　勘一郎 CEO@Exploratory
-* 19:30～20:00 マーケット・バスケット分析 by 林　秀明 CTO@Exploratory
-* 20:00～20:30 セールス・アナリティクス by 村里　郁哉
+* Exploratory v5.1の紹介 (Exploratory CEO 西田　勘一郎)
+* マーケット・バスケット分析 (Exploratory CTO 林　秀明)
+* セールス・アナリティクス (Exploratory 村里　郁哉)
 
 
 ## スライド
