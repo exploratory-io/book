@@ -47,6 +47,7 @@
       * [HP Vertica](import/hp-vertica.md)
       * [ODBC](import/odbc.md)
       * [Dremio](import/dremio.md)     
+      * [Presto](import/presto.md) 
       * [SQLServer](import/sqlserver.md)
       * [Teradata](import/teradata.md)
    * [Cloud Apps Data]()
