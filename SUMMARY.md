@@ -194,6 +194,7 @@
    * [T-test](stats/t-test.md)
    * [F-test](stats/f-test.md)
    * [Chi-square test](stats/chi-test.md)
+   * [A/B Test (Bayesian)](stats/exp_bayes_ab.md)
 
 
 * [Machine Learning]()
