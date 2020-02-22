@@ -47,6 +47,7 @@
       * [HP Vertica](import/hp-vertica.md)
       * [ODBC](import/odbc.md)
       * [Dremio](import/dremio.md)     
+      * [Presto](import/presto.md) 
       * [SQLServer](import/sqlserver.md)
       * [Teradata](import/teradata.md)
    * [Cloud Apps Data]()
@@ -194,6 +195,7 @@
    * [T-test](stats/t-test.md)
    * [F-test](stats/f-test.md)
    * [Chi-square test](stats/chi-test.md)
+   * [A/B Test (Bayesian)](stats/exp_bayes_ab.md)
 
 
 * [Machine Learning]()

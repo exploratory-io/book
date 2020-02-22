@@ -7,19 +7,21 @@
 * 会場: ラクスル株式会社
 
 ## アジェンダ
-* 19:00	オープニング・Exploratory v5.5のご紹介	Exploratory CEO 西田勘一郎
-* 19:30	統計モデルから得たインサイトの広告ターゲティングへの活用例	株式会社ハッシャダイ 横関 秀樹 様
-* 19:45	Exploratoryを活用した社内データサイエンス勉強会の取り組みについて	Sansan株式会社 新名 庸生 様
-* 20:00	健診・問診データを活用した人事施策への活用例	株式会社IHI 新見 亮輔 様
-* 20:15	コラボレーション・サーバを活用したインサイトとデータの共有	非公
-* 20:30	従業員サーベイの分析へのExploratoryの活用例	National Instruments 紅林 浩一様
-* 20:45	質疑応答
+* Exploratory v5.5のご紹介 (Exploratory CEO 西田勘一郎)
+* 統計モデルから得たインサイトの広告ターゲティングへの活用例	(株式会社ハッシャダイ 横関 秀樹 様)
+* Exploratoryを活用した社内データサイエンス勉強会の取り組みについて (Sansan株式会社 新名 庸生 様)
+* 健診・問診データを活用した人事施策への活用例 (株式会社IHI 新見 亮輔 様)
+* コラボレーション・サーバを活用したインサイトとデータの共有	(非公開)
+* 従業員サーベイの分析へのExploratoryの活用例	National Instruments (紅林 浩一様)
+
 
 ## スライド
 
+### 株式会社ハッシャダイ 横関 秀樹 様
+<script async class="speakerdeck-embed" data-id="120bdfec53614bd6825a98aca3522b77" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+	
 ### 株式会社IHI 新見 亮輔 様
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 74.9296%;"><iframe src="https://speakerdeck.com/player/8bc26d42ac44455386161c684b397e67" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
-	
 
 
 
@@ -127,10 +129,9 @@
 
 ## アジェンダ
 
-* 18:45～19:00 受付
-* 19:00～19:30 Exploratory v5.1の紹介 by 西田　勘一郎 CEO@Exploratory
-* 19:30～20:00 マーケット・バスケット分析 by 林　秀明 CTO@Exploratory
-* 20:00～20:30 セールス・アナリティクス by 村里　郁哉
+* Exploratory v5.1の紹介 (Exploratory CEO 西田　勘一郎)
+* マーケット・バスケット分析 (Exploratory CTO 林　秀明)
+* セールス・アナリティクス (Exploratory 村里　郁哉)
 
 
 ## スライド
