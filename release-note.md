@@ -10,102 +10,104 @@ Here is a v5.5.2 release announcement blog post for more details on some of the 
 
 ### New Features / Enhancements
 
-Data Source: Excel: Date column was imported as a numeric column where it should be a Date or POSIXct column.
-Data Source: Excel Import Dialog: Supported Timezone Parameter.
-Data Source: MongoDB: Supported Data Connection by Connection String.
-Data Source: MongoDB: Added 'Last N Rows' option.
+* Data Source: Excel: Date column was imported as a numeric column where it should be a Date or POSIXct column.
+* Data Source: Excel Import Dialog: Supported Timezone Parameter.
+* Data Source: MongoDB: Supported Data Connection by Connection String.
+* Data Source: MongoDB: Added 'Last N Rows' option.
 
-Data Wrangling: Filter: Now  the 'Stop words' operator supports more languages.
-Data Wrangling: Supported the 'Stop Words' parameter for Tokenize Text Step UI.
-Data Wrangling: Supported the 'First Word' and 'Last Word' options for Extract Text.
-Data Wrangling: Supported remove 'Full-width space' and 'Special Characters' options.
-Data Wrangling: Now you can copy and paste the same set of the data wrangling steps to the multiple data frames.
-Data Wrangling: Supported Chinese,  Japanese,  Korean, and Vietnamese for Text Tokenize.
-Data Wrangling: Supported locale argument to 'Re-Evaluate Data Types for All Columns'.
-Data Wrangling: Supported 'Last N Months (Exclude This Month)' option for Date Filter.
-Data Wrangling: Added column menu to convert year numbers to Date type.
-Data Wrangling: Now you can move the 'Published' button to other steps by drag and drop.
-Data Wrangling: Filter: Supported This Year, This Quarter, This Month, This Week, and Today options for Date Filter.
+* Data Wrangling: Filter: Now  the 'Stop words' operator supports more languages.
+* Data Wrangling: Supported the 'Stop Words' parameter for Tokenize Text Step UI.
+* Data Wrangling: Supported the 'First Word' and 'Last Word' options for Extract Text.
+* Data Wrangling: Supported remove 'Full-width space' and 'Special Characters' options.
+* Data Wrangling: Now you can copy and paste the same set of the data wrangling steps to the multiple data frames.
+* Data Wrangling: Supported Chinese,  Japanese,  Korean, and Vietnamese for Text Tokenize.
+* Data Wrangling: Supported locale argument to 'Re-Evaluate Data Types for All Columns'.
+* Data Wrangling: Supported 'Last N Months (Exclude This Month)' option for Date Filter.
+* Data Wrangling: Added column menu to convert year numbers to Date type.
+* Data Wrangling: Now you can move the 'Published' button to other steps by drag and drop.
+* Data Wrangling: Filter: Supported This Year, This Quarter, This Month, This Week, and Today options for Date Filter.
 
-Chart: 'Other Group' is supported at 'X Axis' of Bar, Line, Area, Error Bar, Boxplot and Violin.
-Chart: 'Show Values on Plot' option works on charts even with 'Repeat By'.
-Chart: The chart popup shows a number of rows.
-Chart: 'Custom Calculation' is supported in Bar, Line, Area, Bubble chart types.
-Chart: Now, you can use 'Repeat By' for the Horizontal Bar chart.
-Chart: We now support Error Bar in the horizontal direction.
-Chart: Support 'Constant' option in '% Difference' and 'Difference' Window Calculations.
-Chart: Now you can adjust the vertical and horizontal padding between charts in Repeat By charts.
-Slide: Now you can show Table and Pivot Table into a slide without scrollbars.
-Chart: Reference Line: Support 'Standard Error' Range Type.
-Chart: Changed to show 'Number of Rows' information inside the 'Show Details' dialog.
-Chart: Support title text alignment option (Left, Center, Right)
+* Chart: 'Other Group' is supported at 'X Axis' of Bar, Line, Area, Error Bar, Boxplot and Violin.
+* Chart: 'Show Values on Plot' option works on charts even with 'Repeat By'.
+* Chart: The chart popup shows a number of rows.
+* Chart: 'Custom Calculation' is supported in Bar, Line, Area, Bubble chart types.
+* Chart: Now, you can use 'Repeat By' for the Horizontal Bar chart.
+* Chart: We now support Error Bar in the horizontal direction.
+* Chart: Support 'Constant' option in '% Difference' and 'Difference' Window Calculations.
+* Chart: Now you can adjust the vertical and horizontal padding between charts in Repeat By charts.
 
-Analytics: Time Series Forecasting (Prophet): Model Summary view is now shown even when it is not in the Test mode.
-Analytics: Time Series Forecasting (Prophet): In the Effects chart, the names of the multiplicative external predictors are now shown by the original column names, as opposed to by indexes. (e.g. Predictor 1, Predictor 2...)
+* Chart: Reference Line: Support 'Standard Error' Range Type.
+* Chart: Changed to show 'Number of Rows' information inside the 'Show Details' dialog.
+* Chart: Support title text alignment option (Left, Center, Right)
 
-Parameter: When a Parameter is changed, data for Source Steps using the Parameter are kept as "Out-of-Date" cache, instead of just getting removed as being old, to avoid potentially expensive reloading of the data.
-Parameter: Values of Parameters from the previous session on the project are now remembered and restored.
+* Analytics: Time Series Forecasting (Prophet): Model Summary view is now shown even when it is not in the Test mode.
+* Analytics: Time Series Forecasting (Prophet): In the Effects chart, the names of the multiplicative external predictors are now shown by the original column names, as opposed to by indexes. (e.g. Predictor 1, Predictor 2...)
 
-Collaboration Server: Support switching the server between Collaboration Server and Cloud Server when there is a connection error.
-Collaboration Server: Improved Error Message when Exploratory Desktop is opened with Public Account.
+* Slide: Now you can show Table and Pivot Table into a slide without scrollbars.
+
+* Parameter: When a Parameter is changed, data for Source Steps using the Parameter are kept as "Out-of-Date" cache, instead of just getting removed as being old, to avoid potentially expensive reloading of the data.
+* Parameter: Values of Parameters from the previous session on the project are now remembered and restored.
+
+* Collaboration Server: Support switching the server between Collaboration Server and Cloud Server when there is a connection error.
+* Collaboration Server: Improved Error Message when Exploratory Desktop is opened with Public Account.
 
 ### Bug Fixes
 
-Data Source: Import Log File Dialog: Hitting the Enter key inside the 'Skip N Rows' input field caused unexpected App Restart.
-Data Source: Google BigQuery: Query result was not refreshed when the data was updated via Google Cloud Storage.
-Data Source: Google Analytics: Incorrect Data Type was mapped to some of the Dimensions.
-Data Source: Google Sheet: Improved Error message for the case where a column has only NA.
-Data Source: Google Analytics: Moved Custom Dimensions and Metrics at the bottom of the list for better scroll search experience.
-Data Source: Google Analytics: Hour of Day (dateHourMunite) column data type was returned as interger instead of POSIXct.
-Data Source: Google Analytics: Supported Dimensions and Metrics label translation for Japanese UI language.
-Data Source: When trying to open MySQL Data Import Dialog, it didn't open in some situations.
-Data Source: On MySQL Data Import Dialog, "external pointer is not valid" error was raised when the connection became invalid after certain amount of time.
+* Data Source: Import Log File Dialog: Hitting the Enter key inside the 'Skip N Rows' input field caused unexpected App Restart.
+* Data Source: Google BigQuery: Query result was not refreshed when the data was updated via Google Cloud Storage.
+* Data Source: Google Analytics: Incorrect Data Type was mapped to some of the Dimensions.
+* Data Source: Google Sheet: Improved Error message for the case where a column has only NA.
+* Data Source: Google Analytics: Moved Custom Dimensions and Metrics at the bottom of the list for better scroll search experience.
+* Data Source: Google Analytics: Hour of Day (dateHourMunite) column data type was returned as interger instead of POSIXct.
+* Data Source: Google Analytics: Supported Dimensions and Metrics label translation for Japanese UI language.
+* Data Source: When trying to open MySQL Data Import Dialog, it didn't open in some situations.
+* Data Source: On MySQL Data Import Dialog, "external pointer is not valid" error was raised when the connection became invalid after certain amount of time.
 
-Data Wrangling: Added 'Cache Step Data' icon on a step header.
-Data Wrangling: Opening Text Data Wrangling Dialog for an existing step showed object not found error.
-Data Wrangling: Chart and Analytics Pins now move to the most previous available step instead of the source step when the pinned step is disabled.
-Data Wrangling: Summarize Dialog: When Quantile function was selected, it did not keep the entered value when the Cancel button was clicked.
-Data Wrangling: Could not remove multiple text with 'Text (Multiple Candidates)' Option.
-Data Wrangling: Join Dialog: Data Frame List didn't show the folder names and the icons.
-Data Wrangling: Filter: It should keep the filter condition even if a custom expression is removed and the Cancel button is clicked.
-Data Wrangling: Preview Table showed incorrect data when moving back from the next step.
-Data Wrangling: When clicking an existing Summarize step, Summarize Dialog sometimes showed object not found error.
-Data Wrangling: Chart and Analytics Pin should move to the last step when the pinned step was split into multiple steps.
-Data Wrangling: Filter Dialog: Now it sets a default value for the 'Last N' operation.
-Data Wrangling: When "Replace with New Values" Step was applied on a Japanese column, the column was garbled at a later Merge step.
+* Data Wrangling: Added 'Cache Step Data' icon on a step header.
+* Data Wrangling: Opening Text Data Wrangling Dialog for an existing step showed object not found error.
+* Data Wrangling: Chart and Analytics Pins now move to the most previous available step instead of the source step when the pinned step is disabled.
+* Data Wrangling: Summarize Dialog: When Quantile function was selected, it did not keep the entered value when the Cancel button was clicked.
+* Data Wrangling: Could not remove multiple text with 'Text (Multiple Candidates)' Option.
+* Data Wrangling: Join Dialog: Data Frame List didn't show the folder names and the icons.
+* Data Wrangling: Filter: It should keep the filter condition even if a custom expression is removed and the Cancel button is clicked.
+* Data Wrangling: Preview Table showed incorrect data when moving back from the next step.
+* Data Wrangling: When clicking an existing Summarize step, Summarize Dialog sometimes showed object not found error.
+* Data Wrangling: Chart and Analytics Pin should move to the last step when the pinned step was split into multiple steps.
+* Data Wrangling: Filter Dialog: Now it sets a default value for the 'Last N' operation.
+* Data Wrangling: When "Replace with New Values" Step was applied on a Japanese column, the column was garbled at a later Merge step.
 
-Chart: Error dialog showed up when removing a column selection on a chart filter then click the Run button.
-Chart: Wordcloud: 'Minimum Frequency for Words' option didn't work if you specify a larger value than the maximum value of the data.
-Chart: Bar selection wasn't removed after closing a Popup.
-Chart: Wordcloud failed to render and showed an error "unable to start png() device".
-Chart: Scatter: Values didn't show up in the plot area if you selected 'Bar' marker.
-Chart: Line: Values on plot didn't align if a categorical column was assigned to 'X Axis'.
-Chart: Switching from Table was slow if you had many columns assigned to the Table.
-Chart: Highlight: The List of values became empty if you assigned a column, which was used in 'Group By', step to Color.
-Chart: Creating a chart filter failed if a column with a name 'x' was assigned to 'X Axis' of a chart.
-Chart: Pivot Table failed to render and showed an error "TypeError: Cannot read property 'slice' of undefined".
-Chart: Edit Display Name: '(NA)' showed up even when there was no NA.
+* Chart: Error dialog showed up when removing a column selection on a chart filter then click the Run button.
+* Chart: Wordcloud: 'Minimum Frequency for Words' option didn't work if you specify a larger value than the maximum value of the data.
+* Chart: Bar selection wasn't removed after closing a Popup.
+* Chart: Wordcloud failed to render and showed an error "unable to start png() device".
+* Chart: Scatter: Values didn't show up in the plot area if you selected 'Bar' marker.
+* Chart: Line: Values on plot didn't align if a categorical column was assigned to 'X Axis'.
+* Chart: Switching from Table was slow if you had many columns assigned to the Table.
+* Chart: Highlight: The List of values became empty if you assigned a column, which was used in 'Group By', step to Color.
+* Chart: Creating a chart filter failed if a column with a name 'x' was assigned to 'X Axis' of a chart.
+* Chart: Pivot Table failed to render and showed an error "TypeError: Cannot read property 'slice' of undefined".
+* Chart: Edit Display Name: '(NA)' showed up even when there was no NA.
 
-Analytics: When editing existing Analytics, previously selected Variable Columns were not shown on the Column Selection Dialog.
-Analytics: Linear Regression, Logistic Regression, GLM: Various errors were raised when special characters like parentheses were used in column names.
-Analytics: Random Forest: With Test Mode and Repeat-By enabled, error in model building was not handled cleanly. Now the error message is displayed in the Summary table in case of error.
-Analytics: K-Means: When all but one column have constant values, "subscript out of bounds" error was raised.
-Analytics: PCA: When only one column was specified, "subscript out of bounds" error was raised.
-Analytics: Decision Tree: "subscript out of bounds" error was raised when the target variable was a character column with values "TRUE" or "FALSE".
-Analytics: Correlation by Column: On the Heatmap, white cell with NA was displayed when the correlation was 0, where a gray cell with value 0 should have been displayed.
-Analytics: Analytics shouldn't run when you click 'Apply' button in the property dialog if not all mandatory fields are assigned yet.
-Analytics: Resizing the window size reset 'Number of Columns' configuration.
+* Analytics: When editing existing Analytics, previously selected Variable Columns were not shown on the Column Selection Dialog.
+* Analytics: Linear Regression, Logistic Regression, GLM: Various errors were raised when special characters like parentheses were used in column names.
+* Analytics: Random Forest: With Test Mode and Repeat-By enabled, error in model building was not handled cleanly. Now the error message is displayed in the Summary table in case of error.
+* Analytics: K-Means: When all but one column have constant values, "subscript out of bounds" error was raised.
+* Analytics: PCA: When only one column was specified, "subscript out of bounds" error was raised.
+* Analytics: Decision Tree: "subscript out of bounds" error was raised when the target variable was a character column with values "TRUE" or "FALSE".
+* Analytics: Correlation by Column: On the Heatmap, white cell with NA was displayed when the correlation was 0, where a gray cell with value 0 should have been displayed.
+* Analytics: Analytics shouldn't run when you click 'Apply' button in the property dialog if not all mandatory fields are assigned yet.
+* Analytics: Resizing the window size reset 'Number of Columns' configuration.
 
-Note: 'Not found' message showed up for a chart even that chart existed if you ran a note right after opening a project.
-Note: Spin icon on main window disappeared right after the mouse focus moved to a Note window but the spin should remain until the process ends on main window.
+* Note: 'Not found' message showed up for a chart even that chart existed if you ran a note right after opening a project.
+* Note: Spin icon on main window disappeared right after the mouse focus moved to a Note window but the spin should remain until the process ends on main window.
 
-Parameter: Parameter input fields, list of values, sliders, date pickers should not be updatable when the process is still running.
-Parameter: Empty Parameter Pane was shown after closing and reopening a project.
-Parameter: Filter: When a new parameter was created from Filter Dialog, the parameter should be selectable from the parameter list on the Filter Dialog.
-Parameter: The min value, max value, and step defined for numeric parameters were ignored on the Parameter Pane.
-Parameter: Supported 'List of Values (Multi Select)' for the Logical data type.
+* Parameter: Parameter input fields, list of values, sliders, date pickers should not be updatable when the process is still running.
+* Parameter: Empty Parameter Pane was shown after closing and reopening a project.
+* Parameter: Filter: When a new parameter was created from Filter Dialog, the parameter should be selectable from the parameter list on the Filter Dialog.
+* Parameter: The min value, max value, and step defined for numeric parameters were ignored on the Parameter Pane.
+* Parameter: Supported 'List of Values (Multi Select)' for the Logical data type.
 
-Install: After installing RTools, Exploratory became unable to open a Project.
+* Install: After installing RTools, Exploratory became unable to open a Project.
 
 
 ## 5.5.1
