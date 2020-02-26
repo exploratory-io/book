@@ -4,6 +4,7 @@
 
 ## Column Assignments
 
+* Orientation - You can choose a chart orientation. Either 'Vertical' or 'Horizontal'.
 * X-Axis - Assign a column you want to show at X-Axis. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc. If you assign a Number column, you can choose either `As Number` to treat values as continuous values or `As Text` to treat values as categorical values.  
 * Y-Axis - Assign a column you want to show at Y-Axis. If it's a Numeric column assigned, you can set the aggregation function such as `Sum`, `Mean (Average)`, etc. to aggregate the values. You can also assign a Window Calculation from the gear icon on Y-Axis. Look at [Window Calculation](window-calc.md) section for details.  
 * Color - Take a look at [Color](color.md) section for more details.
