@@ -32,6 +32,10 @@ You can change the color of the specific markers such as bars, lines or circles 
 You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
 
 
+## Custom Function
+
+You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
+
 
 ## Layout Configuration
 

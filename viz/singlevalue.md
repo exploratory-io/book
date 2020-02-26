@@ -16,6 +16,10 @@ You can rename the chart then the same name comes up as a caption.
 ![](images/singlevalue1.png)
  
 
+## Custom Function
+
+You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
+
 
 ## Layout Configuration
 

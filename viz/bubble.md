@@ -31,6 +31,10 @@ You can categorize numeric values inside the chart. See [Category(Binning)](cate
 You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail.
 
 
+## Custom Function
+
+You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
+
 
 ## Layout Configuration
 
