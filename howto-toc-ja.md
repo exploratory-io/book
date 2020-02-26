@@ -1,4 +1,5 @@
 ### How To
+
 * [Getting Started](/howto?q=tag%3A%22getting%20started%22)
 * [トラブルシューティング](/howto?q=tag%3Atroubleshoot&language=ja)
 * [データソース](/howto?q=tag%3A%22data%20source%22&language=ja)
@@ -38,6 +39,7 @@
   * [データ・カタログ](/howto?q=tag%3A%22Data%20Catalog%22%20tag%3A%22Data%20Source%22&language=ja)
 
 ----
+
 * [データの可視化](/howto?q=tag%3Avisualization&language=ja)
   * [チャートタイプ](/howto?q=tag%3APivot%7CBar%7CLine%7CScatter%7CArea%7CMap%7C"Box%20Plot"%7C"Violin%20Plot"%7CHeatmap%7CWordcloud%20tag%3AVisualization&language=ja)
     * [ピボットテーブル](/howto?q=tag%3APivot%20tag%3AVisualization&language=ja)
