@@ -43,6 +43,13 @@ You can select from one of the following bar types. The default is `Stacked`.
 ![](images/bar-grouped.png)
 
 
+
+## Reference Line
+
+Take a look at [Reference Line](reference-line.md) section for more details.
+
+
+
 ## Highlight 
 
 You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
@@ -59,7 +66,7 @@ You can use Limit Values to filter the categories by the aggregated values. See 
 
 You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
 
-
+## Reference Line 
 
 
 ## Layout Configuration

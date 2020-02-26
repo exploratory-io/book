@@ -16,6 +16,16 @@ You can show the distribution of the data by circles. It is similar to the Scatt
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
 
 
+## Trend Line
+
+Take a look at [Trend Line](trend-line.md) section for more details.
+
+
+## Reference Line
+
+Take a look at [Reference Line](reference-line.md) section for more details.
+
+
 
 ## Highlight 
 

@@ -2,18 +2,18 @@
 
 The Custom Function feature allows you to define your own aggregation function as a column. Custom Function is available in the following charts. 
 
-* Pivot Table (Value)
-* Bar (Y)
-* Line (Y)
-* Area (Y)
-* Pie / Ring (Value)
-* Bubble (X, Y, Color, Size)
-* Error Bar (Y)
-* Map - Area (Color)
-* Map - Long/Lat (Color, Size)
-* Heatmap (Color)
-* Contour (Color)
-* Number (Value)
+* Pivot Table: Value
+* Bar: Y-Axis
+* Line: Y-Axis
+* Area: Y-Axis
+* Pie / Ring: Value
+* Bubble: X-Axis, Y-Axis, Color, Size
+* Error Bar: Y-Axis
+* Map - Area: Color
+* Map - Long/Lat: Color, Size
+* Heatmap: Color
+* Contour: Color
+* Number: Value
 
 
 ## Introduction

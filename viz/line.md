@@ -18,6 +18,17 @@ You can assign multiple columns to Y-Axis. Take a look at [Multiple Y-Axis](mult
 
 You can select one of marker types from the `Marker` menu of Y-Axis properties. Take a look at [Marker Type](marker.md) section for more details.
 
+## Trend Line
+
+Take a look at [Trend Line](trend-line.md) section for more details.
+
+
+## Reference Line
+
+Take a look at [Reference Line](reference-line.md) section for more details.
+
+
+
 
 ## Range
 
