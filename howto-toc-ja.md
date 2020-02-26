@@ -16,7 +16,6 @@
     <!--* [MailChimp](/howto?q=tag%3AMailchimp&language=ja)-->
     <!--* [Stripe](/howto?q=tag%3AStripe&language=ja)-->
     * [Twitter Search](/howto?q=tag%3ATwitter&language=ja)
-    <!-- * [Twitter Search](/howto?q=tag%3ATwitter%20tag%3A%22Data%20Source%22&language=ja)-->
   * [データベースデータ](/howto?q=tag%3A%22Amazon%20Athena%22%7C%22Amazon%20Aurora%22%7C%22Amazon%20Redshift%22%7CDremio%7CBigQuery%7C%22HP%20Vertica%22%7CMongoDB%7C%22MS%20SQL%20Server%22%7CMySQL%7CODBC%7CPostgreSQL%7CPresto%7CTeradata%7C%22Treasure%20Data%22&language=ja)
     * [Amazon Athena](/howto?q=tag%3A%22Amazon%20Athena%22&language=ja)
     <!--* [Amazon Aurora](/howto?q=tag%3A%22Amazon%20Aurora%22&language=ja)-->
@@ -76,7 +75,7 @@
     * [ハイライト](/howto?q=tag%3AHighlight&language=ja)
     * [カテゴリー化(ビニング)](/howto?q=tag%3ABinning%20tag%3AVisualization&language=ja)
     * [表示する値の制限](/howto?q=tag%3ALimit&language=ja)
-    <!--* [表示名の編集](howto?q=tag%3A%22Edit%20Display%20Name%22%20tag%3AVisualization&language=ja)-->
+    * [表示名の編集](/howto?q=tag%3A%22Edit%20Display%20Name%22%20tag%3AVisualization&language=ja)
 
 ----
 
@@ -146,7 +145,7 @@
     * [スライド](/howto?q=tag%3Aslide&language=ja)
 
 ----
-
+* [共有方法](/howto?q=tag%3AShare&language=ja)
 * [パラメーター](/howto?q=tag%3AParameter&language=ja)
 * [カスタムRスクリプト](/howto?q=tag%3A%22r%20script%22&language=ja)
 * [Excelユーザー向けガイド](/howto?q=tag%3AExcel&language=ja)
