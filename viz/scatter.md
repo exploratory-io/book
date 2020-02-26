@@ -24,6 +24,12 @@ You can assign multiple columns to Y-Axis. Take a look at [Multiple Y-Axis](mult
 Take a look at [Trend Line](trend-line.md) section for more details.
 
 
+## Reference Line
+
+Take a look at [Reference Line](reference-line.md) section for more details.
+
+
+
 ## Range
 
 Take a look at [Range](range.md) section for more details.

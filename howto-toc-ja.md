@@ -1,82 +1,82 @@
 ### How To
+
 * [Getting Started](/howto?q=tag%3A%22getting%20started%22)
 * [トラブルシューティング](/howto?q=tag%3Atroubleshoot&language=ja)
 * [データソース](/howto?q=tag%3A%22data%20source%22&language=ja)
-  * [ファイルデータ](/howto?q=tag%3AExcel%7CCSV%7CJSON%7CSPSS%7CSAS%7CSTATA%7CXML%7C%22RFile%22%20tag%3A%22Data%20Source%22&language=ja)
-    * [Excel](/howto?q=tag%3AExcel%20tag%3A%22Data%20Source%22&language=ja)
-    * [CSV](/howto?q=tag%3Acsv%20tag%3A%22Data%20Source%22&language=ja)
+    * [ファイルデータ](/howto?q=tag%3AExcel%7CCSV%7CJSON%7CSPSS%7CSAS%7CSTATA%7CXML%7C%22RFile%22%20tag%3A%22Data%20Source%22&language=ja)
+        * [Excel](/howto?q=tag%3AExcel%20tag%3A%22Data%20Source%22&language=ja)
+        * [CSV](/howto?q=tag%3Acsv%20tag%3A%22Data%20Source%22&language=ja)
     <!--* [JSON](/howto?q=tag%3Ajson%20tag%3A%22Data%20Source%22&language=ja)-->
     <!--* [統計ファイル(SPSS, SAS, STATA)](/howto?q=tag%3ASPSS%7CSAS%7CSTATA&language=ja)-->
     <!--* [Rファイル](/howto?q=tag%3A%22R%20File%22&language=ja)-->
-    * [XML](/howto?q=tag%3Axml&language=ja)
-  * [クラウドアプリケーションデータ](/howto?q=tag%3A%22Github%20issues%22%7C%22Google%20Analytics%22%7C%22Google%20Sheets%22%7CMailchimp%7CStripe%7C%22Twitter%22%20tag%3A%22Data%20Source%22&language=ja)
+        * [XML](/howto?q=tag%3Axml&language=ja)
+    * [クラウドアプリケーションデータ](/howto?q=tag%3A%22Github%20issues%22%7C%22Google%20Analytics%22%7C%22Google%20Sheets%22%7CMailchimp%7CStripe%7C%22Twitter%22%20tag%3A%22Data%20Source%22&language=ja)
     <!--* [Github issues](/howto?q=tag%3A%22Github%20issues%22&language=ja)-->
-    * [Google Analytics](/howto?q=tag%3A%22Google%20Analytics%22&language=ja)
-    * [Google Sheets](/howto?q=tag%3A%22Google%20Sheets%22&language=ja)
+        * [Google Analytics](/howto?q=tag%3A%22Google%20Analytics%22&language=ja)
+        * [Google Sheets](/howto?q=tag%3A%22Google%20Sheets%22&language=ja)
     <!--* [MailChimp](/howto?q=tag%3AMailchimp&language=ja)-->
     <!--* [Stripe](/howto?q=tag%3AStripe&language=ja)-->
-    * [Twitter Search](/howto?q=tag%3ATwitter&language=ja)
-    <!-- * [Twitter Search](/howto?q=tag%3ATwitter%20tag%3A%22Data%20Source%22&language=ja)-->
-  * [データベースデータ](/howto?q=tag%3A%22Amazon%20Athena%22%7C%22Amazon%20Aurora%22%7C%22Amazon%20Redshift%22%7CDremio%7CBigQuery%7C%22HP%20Vertica%22%7CMongoDB%7C%22MS%20SQL%20Server%22%7CMySQL%7CODBC%7CPostgreSQL%7CPresto%7CTeradata%7C%22Treasure%20Data%22&language=ja)
-    * [Amazon Athena](/howto?q=tag%3A%22Amazon%20Athena%22&language=ja)
+        * [Twitter Search](/howto?q=tag%3ATwitter&language=ja)
+    * [データベースデータ](/howto?q=tag%3A%22Amazon%20Athena%22%7C%22Amazon%20Aurora%22%7C%22Amazon%20Redshift%22%7CDremio%7CBigQuery%7C%22HP%20Vertica%22%7CMongoDB%7C%22MS%20SQL%20Server%22%7CMySQL%7CODBC%7CPostgreSQL%7CPresto%7CTeradata%7C%22Treasure%20Data%22&language=ja)
+        * [Amazon Athena](/howto?q=tag%3A%22Amazon%20Athena%22&language=ja)
     <!--* [Amazon Aurora](/howto?q=tag%3A%22Amazon%20Aurora%22&language=ja)-->
     <!--* [Amazon Redshift](/howto?q=tag%3ARedshift&language=ja)-->
-    * [Dremio](/howto?q=tag%3ADremio&language=ja)
-    * [Google BigQuery](/howto?q=tag%3ABigQuery&language=ja)
+        * [Dremio](/howto?q=tag%3ADremio&language=ja)
+        * [Google BigQuery](/howto?q=tag%3ABigQuery&language=ja)
     <!--* [HP Vertica](/howto?q=tag%3A%22HP%20Vertica%22&language=ja)-->
     <!--* [MongoDB](/howto?q=tag%3AMongoDB&language=ja)-->
     <!--* [MS SQL Server](/howto?q=tag%3A%22MS%20SQL%22&language=ja)-->
-    * [MySQL](/howto?q=tag%3AMySQL&language=ja)
-    * [ODBC](/howto?q=tag%3AODBC&language=ja)
-    * [PostgreSQL](/howto?q=tag%3APostgreSQL&language=ja)
-    * [Presto](/howto?q=tag%3APresto&language=ja)
+        * [MySQL](/howto?q=tag%3AMySQL&language=ja)
+        * [ODBC](/howto?q=tag%3AODBC&language=ja)
+        * [PostgreSQL](/howto?q=tag%3APostgreSQL&language=ja)
+        * [Presto](/howto?q=tag%3APresto&language=ja)
     <!--* [Teradata](/howto?q=tag%3ATeradata&language=ja)-->
-    * [Treasure Data](/howto?q=tag%3A%22Treasure%20Data%22&language=ja)
-  * [Rスクリプト](/howto?q=tag%3A%22R%20Script%22%20tag%3A%22Data%20Source%22&language=ja)
-  * [WEBスクレイピング](/howto?q=tag%3A%22Web%20Scraping%22&language=ja)
-  * [エクステンションデータ](/howto?q=tag%3A%%22Extension%20Data%22&language=ja)
+        * [Treasure Data](/howto?q=tag%3A%22Treasure%20Data%22&language=ja)
+    * [Rスクリプト](/howto?q=tag%3A%22R%20Script%22%20tag%3A%22Data%20Source%22&language=ja)
+    * [WEBスクレイピング](/howto?q=tag%3A%22Web%20Scraping%22&language=ja)
+    * [エクステンションデータ](/howto?q=tag%3A%%22Extension%20Data%22&language=ja)
     <!--* [ファイナンスデータ](/howto?q=tag%3Afinance%20tag%3A%22Data%20Source%22&language=ja)-->
-  * [データ・カタログ](/howto?q=tag%3A%22Data%20Catalog%22%20tag%3A%22Data%20Source%22&language=ja)
+    * [データ・カタログ](/howto?q=tag%3A%22Data%20Catalog%22%20tag%3A%22Data%20Source%22&language=ja)
 
 ----
 
 * [データの可視化](/howto?q=tag%3Avisualization&language=ja)
-  * [チャートタイプ](/howto?q=tag%3APivot%7CBar%7CLine%7CScatter%7CArea%7CMap%7C"Box%20Plot"%7C"Violin%20Plot"%7CHeatmap%7CWordcloud%20tag%3AVisualization&language=ja)
-    * [ピボットテーブル](/howto?q=tag%3APivot%20tag%3AVisualization&language=ja)
+    * [チャートタイプ](/howto?q=tag%3APivot%7CBar%7CLine%7CScatter%7CArea%7CMap%7C"Box%20Plot"%7C"Violin%20Plot"%7CHeatmap%7CWordcloud%20tag%3AVisualization&language=ja)
+        * [ピボットテーブル](/howto?q=tag%3APivot%20tag%3AVisualization&language=ja)
     <!--* [テーブル](/howto?q=tag%3ATable%20tag%3AVisualization&language=ja)-->
-    * [バー](/howto?q=tag%3ABar&language=ja)
-    * [ライン](/howto?q=tag%3ALine%20tag%3AVisualization&language=ja)
-    * [エリア](/howto?q=tag%3AArea%20tag%3AVisualization&language=ja)
+        * [バー](/howto?q=tag%3ABar&language=ja)
+        * [ライン](/howto?q=tag%3ALine%20tag%3AVisualization&language=ja)
+        * [エリア](/howto?q=tag%3AArea%20tag%3AVisualization&language=ja)
     <!--* [パイ](/howto?q=tag%3APie&language=ja)-->
-    * [ヒストグラム](/howto?q=tag%3AHistogram&language=ja)
+        * [ヒストグラム](/howto?q=tag%3AHistogram&language=ja)
     <!--* [密度曲線](/howto?q=tag%3ADensity%20Plot&language=ja)-->
-    * [散布図 (集計なし)](/howto?q=tag%3AScatter%20-tag%3A%22Scatter%20Aggregation%22&language=ja)
-    * [散布図 (集計あり)](/howto?q=tag%3A%22Scatter%20Aggregation%22&language=ja)
-    * [箱ヒゲ図](/howto?q=tag%3A%22Box%20Plot%22&language=ja)
+        * [散布図 (集計なし)](/howto?q=tag%3AScatter%20-tag%3A%22Scatter%20Aggregation%22&language=ja)
+        * [散布図 (集計あり)](/howto?q=tag%3A%22Scatter%20Aggregation%22&language=ja)
+        * [箱ヒゲ図](/howto?q=tag%3A%22Box%20Plot%22&language=ja)
     <!--* [バイオリン](/howto?q=tag%3A%22Violin%20Plot%22&language=ja)-->
     <!--* [エラーバー](/howto?q=tag%3A%22Error%20Bar%22&language=ja)-->
-    * [地図 - エリア](/howto?q=tag%3AMap-Area&language=ja)
-    * [地図 - 経度/緯度](/howto?q=tag%3AMap-long/lat&language=ja)
+        * [地図 - エリア](/howto?q=tag%3AMap-Area&language=ja)
+        * [地図 - 経度/緯度](/howto?q=tag%3AMap-long/lat&language=ja)
     <!--* [地図 - ヒートマップ](/howto?q=tag%3AMap-Heatmap&language=ja)-->
-    * [ヒートマップ](/howto?q=tag%3AHeatmap%20-tag%3AMap-Heatmap&language=ja)
+        * [ヒートマップ](/howto?q=tag%3AHeatmap%20-tag%3AMap-Heatmap&language=ja)
     <!--* [等高線プロット](/howto?q=tag%3ACountour&language=ja)-->
     <!--* [ナンバー](/howto?q=tag%3ANumber%20tag%3AVisualization&language=ja)-->
-    * [ワードクラウド](/howto?q=tag%3AWordcloud&language=ja)
-  * [機能](/howto?q=tag%3AChart-Features&language=ja)
-    * [ピン](/howto?q=tag%3Apin%20-tag%3A%22Web%20Scraping%22&language=ja)
-    * [色(グループ化)](/howto?q=tag%3AColor&language=ja)
-    * [繰り返し](/howto?q=tag%3A%22Repeat%20By%22&language=ja)
-    * [表計算](/howto?q=tag%3A%22Window%20Calculation%22%20tag%3AVisualization&language=ja)
-    * [日付/時間関数](/howto?q=tag%3ADate%20tag%3AVisualization&language=ja)
-    * [トレンドライン](/howto?q=tag%3ATrend%20Line&language=ja)
-    * [リファレンスライン](/howto?q=tag%3A%22Reference%20Line%22&language=ja)
+        * [ワードクラウド](/howto?q=tag%3AWordcloud&language=ja)
+    * [機能](/howto?q=tag%3AChart-Features&language=ja)
+        * [ピン](/howto?q=tag%3Apin%20-tag%3A%22Web%20Scraping%22&language=ja)
+        * [色(グループ化)](/howto?q=tag%3AColor&language=ja)
+        * [繰り返し](/howto?q=tag%3A%22Repeat%20By%22&language=ja)
+        * [表計算](/howto?q=tag%3A%22Window%20Calculation%22%20tag%3AVisualization&language=ja)
+        * [日付/時間関数](/howto?q=tag%3ADate%20tag%3AVisualization&language=ja)
+        * [トレンドライン](/howto?q=tag%3ATrend%20Line&language=ja)
+        * [リファレンスライン](/howto?q=tag%3A%22Reference%20Line%22&language=ja)
     <!--* [マーカーの変更](/howto?q=tag%3AMaker%20tag%3AVisualization&language=ja)-->
-    * [Y2軸の設定](/howto?q=tag%3AY2-Axis&language=ja)
+        * [Y2軸の設定](/howto?q=tag%3AY2-Axis&language=ja)
     <!--* [URLリンク](howto?q=tag%3A%22URL%20Link%22%20tag%3AVisualization&language=ja)-->
-    * [ハイライト](/howto?q=tag%3AHighlight&language=ja)
-    * [カテゴリー化(ビニング)](/howto?q=tag%3ABinning%20tag%3AVisualization&language=ja)
-    * [表示する値の制限](/howto?q=tag%3ALimit&language=ja)
-    <!--* [表示名の編集](howto?q=tag%3A%22Edit%20Display%20Name%22%20tag%3AVisualization&language=ja)-->
+        * [ハイライト](/howto?q=tag%3AHighlight&language=ja)
+        * [カテゴリー化(ビニング)](/howto?q=tag%3ABinning%20tag%3AVisualization&language=ja)
+        * [表示する値の制限](/howto?q=tag%3ALimit&language=ja)
+        * [表示名の編集](/howto?q=tag%3A%22Edit%20Display%20Name%22%20tag%3AVisualization&language=ja)
 
 ----
 
@@ -146,7 +146,7 @@
     * [スライド](/howto?q=tag%3Aslide&language=ja)
 
 ----
-
+* [共有方法](/howto?q=tag%3AShare&language=ja)
 * [パラメーター](/howto?q=tag%3AParameter&language=ja)
 * [カスタムRスクリプト](/howto?q=tag%3A%22r%20script%22&language=ja)
 * [Excelユーザー向けガイド](/howto?q=tag%3AExcel&language=ja)

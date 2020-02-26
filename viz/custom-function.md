@@ -2,7 +2,27 @@
 
 The Custom Function feature allows you to define your own aggregation function as a column. Custom Function is available in the following charts. 
 
-* Pivot Table (Value)
+* Pivot Table: Value
+* Bar: Y-Axis
+* Line: Y-Axis
+* Area: Y-Axis
+* Pie / Ring: Value
+* Bubble: X-Axis, Y-Axis, Color, Size
+* Error Bar: Y-Axis
+* Map - Area: Color
+* Map - Long/Lat: Color, Size
+* Heatmap: Color
+* Contour: Color
+* Number: Value
+
+
+## Introduction
+
+You can look at the Note following about the Custom Function.
+
+* [How to Use Custom Function in Chart](https://exploratory.io/note/kei/How-to-Use-Custom-Function-in-Pivot-Table-WoJ3vON1Nb)
+* [チャートのカスタム関数の使い方](https://exploratory.io/note/kei/hrU6CfQ9qC)
+
 
 
 ## Creating a Custom Function 
