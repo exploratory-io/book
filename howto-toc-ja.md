@@ -36,7 +36,7 @@
   * [WEBスクレイピング](/howto?q=tag%3A%22Web%20Scraping%22&language=ja)
   * [エクステンションデータ](/howto?q=tag%3A%%22Extension%20Data%22&language=ja)
     <!--* [ファイナンスデータ](/howto?q=tag%3Afinance%20tag%3A%22Data%20Source%22&language=ja)-->
-  * [データ・カタログ](/howto?q=tag%3A%22Data%20Catalog%22%20tag%3A%22Data%20Source%22&language=ja)
+    * [データ・カタログ](/howto?q=tag%3A%22Data%20Catalog%22%20tag%3A%22Data%20Source%22&language=ja)
 
 ----
 
