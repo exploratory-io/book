@@ -1,5 +1,25 @@
 # Release Note
 
+## 5.5.3
+
+Released on 2/28/2020
+
+### Bug Fixes
+
+* Data Source: Mongodb: Support DNS Seedlist connection to support cluster environments.
+* Data Wrangling: Summarize/Pivot: Support POSIXct (Date/Time) Functions such as 'Round to Hour'.
+* Data Wrangling: Summarize/Pivot: Date was not rounded to year when it's opened from Column Menu
+* Data Wrangling: Support creating a new data frame based on a selected Step with and without the Steps.
+* Data Wrangling: The Step menu of a pinned step did not show icons for Cut Step and Copy Step menu items.
+* Chart: If the Step cache is removed, refreshing the chart failed with object not found error.
+* Chart: Support POSIXct (Date/Time) Functions such as 'Extract Hour/Minute/Second'.
+* Analytics: Prophet: The internal model was rebuilt every time when you opened the projects.
+* Analytics: Prophet: Order of predictors in the legend of additive effect chart does not correspond to the order of the column selection
+* Analytics: Prophet: It showed a wrong tab if you switched from the additive mode to the multiplicative mode while you were viewing 'Effects' chart.
+* Analytics: Prophet: Bars on under the Importance tab should be sorted by the importance scores.
+* Analytics: Number of Columns LOV was reset if you went to the other tabs and came back.
+* Parameter: The parameter was not working for the recently added Filter operators such as "Last N Weeks Exclude Today". 
+
 ## 5.5.2
 
 Released on 2/24/2020
