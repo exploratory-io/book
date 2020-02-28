@@ -83,7 +83,7 @@
 * [データラングリング](/howto?q=tag%3A%22Data%20Wrangling%22&language=ja)
     * [計算を作成](/howto?q=tag%3AMutate&language=ja)
     * [データタイプを変換](/howto?q=tag%3A%22Data%20Type%20Convert%22&language=ja)
-    * [集計](/howto?q=tag%3ASummmarize&language=ja)
+    * [集計](/howto?q=tag%3ASummarize&language=ja)
     * [ピボット](/howto?q=tag%3APivot%20tag%3A%22Data%20Wrangling%22&language=ja)
     <!--* [列名を変更](/howto?q=tag%3ARename&language=ja)-->
     <!--* [列を並び替える](/howto?q=tag%3A%22Reorder%20Columns%22&language=ja)-->
