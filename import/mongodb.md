@@ -12,7 +12,7 @@ In Exploratory, there are three types of MongoDB connections.
 
 ### 1.1 Connection String
 
-If you want to connect to your MongoDB with DNS Seedlist Connection Format or if you already have a working MongoDB Connection String, you can use this "Connection String" Connection Type. Simply copy and paste the Connection String to the text area and click the Test Connection button. If it works, click Add to save it.
+If you want to connect to your MongoDB with DNS Seedlist Connection Format or if you already have a working MongoDB Connection String, you can use this "Connection String" Connection Type. Simply copy and paste the Connection String to the text area and click the Test Connection button. If the connection test went well, click the Add button to save it.
 
 You can find MongoDB connection Sting details [here](https://docs.mongodb.com/manual/reference/connection-string/).
 
@@ -20,13 +20,13 @@ You can find MongoDB connection Sting details [here](https://docs.mongodb.com/ma
 
 ### 1.2 Single Host
 
-If you prefer to connection to your mongoDB by supplying Host, Port, Database, Username, and Password from UI, you can use this "Single Host" Connection Type. Like other Database connections, type in required fields then click Test Connection button. If the connection went well, click Add to save it. 
+If you prefer to connection to your MongoDB by supplying Host, Port, Database, Username, and Password from the Connection Dialog, you can use this "Single Host" Connection Type. Like other Database connections, type in required fields then click Test Connection button. If the connection test went well, click Add to save it. 
 
 ![](images/mongo-conn-single.png)
 
 ### 1.3 Multiple Hosts
 
-If you prefer to connection to your Sharded Cluster by supplying Cluster, Database, Username, and Password from UI, you can use this "Multiple Hosts" Connection Type. Type in Cluster and other required fields, then click the Test Connection button. If the connection went well, click Add button to save it. 
+If you prefer to connection to your MongoDB (Sharded Cluster) by supplying Cluster, Database, Username, and Password from the Connection Dialog, you can use this "Multiple Hosts" Connection Type. Type in Cluster and other required fields, then click the Test Connection button. If the connection test went well, click Add button to save it. 
 
 ![](images/mongo-conn-multiple.png)
 
