@@ -4,7 +4,32 @@ You can quickly import data from your MongoDB into Exploratory.
 
 ## 1. Create a Connection to use
 
-Create a connection following [this instruction](connection.html).
+In Exploratory, there are three types of MongoDB connections.
+
+- Connection string
+- Single Host
+- Multiple Hosts
+
+### 1.1 Connection String
+
+If you want to connect to your MongoDB with DNS Seedlist Connection Format or if you already have a working MongoDB Connection String, you can use this "Connection String" Connection Type. Simply copy and paste the Connection String to text area and Test Connection. If it works, click Add to save it.
+
+You can find MongoDB connection Sting details [here](https://docs.mongodb.com/manual/reference/connection-string/).
+
+![](images/mongo-conn-string.png)
+
+### 1.2 Single Host
+
+If you prefer to connection to your mongoDB by supplying Host, Port, Database, Username, and Password from UI, you can use this "Single Host" Connection Type. Like other Database connections, type in required fields then click Test Connection button. If the connection went well, click Add to save it. 
+
+![](images/mongo-conn-single.png)
+
+### 1.3 Multiple Hosts
+
+If you prefer to connection to your Sharded Cluster by supplying Cluster, Database, Username, and Password from UI, you can use this "Multiple Hosts" Connection Type. Type in Cluster and other required fields, then click the Test Connection button. If the connection went well, click Add button to save it. 
+
+![](images/mongo-conn-multiple.png)
+
 
 ## 2. Open MongoDB Import dialog
 
