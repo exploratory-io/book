@@ -12,7 +12,7 @@ In Exploratory, there are three types of MongoDB connections.
 
 ### 1.1 Connection String
 
-If you want to connect to your MongoDB with DNS Seedlist Connection Format or if you already have a working MongoDB Connection String, you can use this "Connection String" Connection Type. Simply copy and paste the Connection String to text area and Test Connection. If it works, click Add to save it.
+If you want to connect to your MongoDB with DNS Seedlist Connection Format or if you already have a working MongoDB Connection String, you can use this "Connection String" Connection Type. Simply copy and paste the Connection String to the text area and click the Test Connection button. If it works, click Add to save it.
 
 You can find MongoDB connection Sting details [here](https://docs.mongodb.com/manual/reference/connection-string/).
 
