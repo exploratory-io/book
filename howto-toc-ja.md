@@ -83,12 +83,13 @@
 * [データラングリング](/howto?q=tag%3A%22Data%20Wrangling%22&language=ja)
     * [計算を作成](/howto?q=tag%3AMutate&language=ja)
     * [データタイプを変換](/howto?q=tag%3A%22Data%20Type%20Convert%22&language=ja)
+    * [ステップ](/howto?q=tag%3AStep&language=ja)
     * [集計](/howto?q=tag%3ASummarize&language=ja)
     * [ピボット](/howto?q=tag%3APivot%20tag%3A%22Data%20Wrangling%22&language=ja)
     <!--* [列名を変更](/howto?q=tag%3ARename&language=ja)-->
     <!--* [列を並び替える](/howto?q=tag%3A%22Reorder%20Columns%22&language=ja)-->
     <!--  * [列を選択](/howto?q=tag%3A%22Select%20Columns%22&language=ja)-->
-    <!--* [行を選択](/howto?q=tag%3ASlice&language=ja)-->
+    * [行を選択](/howto?q=tag%3ASlice&language=ja)
     * [フィルタ](/howto?q=tag%3AFilter%20tag%3A%22Data%20Wrangling%22&language=ja)
     <!--* [並び替え (ソート)](/howto?q=tag%3AArrange&language=ja)-->
     * [グループ化](/howto?q=tag%3A%22Group%20By%22&language=ja)
@@ -100,15 +101,16 @@
     * [ワイド型からロング型へ変換](/howto?q=tag%3AGather&language=ja)
     * [ロング型からワイド型へ変換](/howto?q=tag%3ASpread&language=ja)
     * [既存の値を新しい値に置き換える](/howto?q=tag%3ARecode&language=ja)
+    * [条件によって異なる値を返す](/howto?q=tag%3Aifelse&language=ja)
     * [条件によって既存の値を置き換える](/howto?q=tag%3Acase_when&language=ja)
-    * [欠損値を扱う](/howto?q=tag%3A%22Work%20with%20Na%22&language=ja)
+    * [欠損値を扱う](/howto?q=tag%3ANa&language=ja)
     * [ビン(カテゴリー)を作成](/howto?q=tag%3ABinnning%20tag%3A%22Data%20Wrangling%22&language=ja)
     <!--* [その他グループを作る](/howto?q=tag%3A%22other%20group%22&language=ja)-->
     * [テキストを操作](/howto?q=tag%3Astr&language=ja)
     <!--* [URLを操作](/howto?q=tag%3Aurl&language=ja)-->
     * [値の順序をセット](/howto?q=tag%3Afactor&language=ja)
     <!--* [サンプルを抽出](/howto?q=tag%3A%22Extract%20Sample%22&language=ja)-->
-    * [上位N/下位N](/howto?q=tag%3Atop_n%7Cbottom_n&language=ja)
+    * [上位N/下位N](/howto?q=tag%3Atop_n&language=ja)
     <!--* [一意な行/重複する行](/howto?q=tag%3Aunique_rows%7Cduplicated_rows&language=ja)-->
     <!--* [空行/空列を削除](/howto?q=tag%3Aremove_empty&language=ja)-->
     * [国名/コードの変換](/howto?q=tag%3Acountrycode&language=ja)
@@ -150,3 +152,4 @@
 * [パラメーター](/howto?q=tag%3AParameter&language=ja)
 * [カスタムRスクリプト](/howto?q=tag%3A%22r%20script%22&language=ja)
 * [Excelユーザー向けガイド](/howto?q=tag%3AExcel&language=ja)
+* [日付型データ](/howto?q=tag%3ADate&language=ja)

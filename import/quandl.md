@@ -75,6 +75,7 @@ Then after you get your API key, please set the API Key to the new Input Field o
 
 ![](images/quandl_api_key.png)
 
+If the API key is not provided, the default API key is used, however, this has a limitation that authenticated users have a limit of 300 calls per 10 seconds, 2,000 calls per 10 minutes and a limit of 50,000 calls per day. (ref: https://help.quandl.com/article/356-i-keep-getting-a-download-failed-limit-exceeded-error-message-what-should-i-do)
 
 ## 2. Import
 
@@ -84,5 +85,3 @@ Once you confirmed the query result, click `Import` button to import the data as
 ## 3. Reference
 
 See [Getting Bitcoin Data and Visualizing in 3 Steps](https://blog.exploratory.io/getting-bitcoin-data-and-visualizing-in-3-steps-fd2bba78084f) for Bitcoin Data.
-
-
