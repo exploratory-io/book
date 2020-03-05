@@ -38,7 +38,7 @@
 ----
 
 * [データの可視化](/howto?q=tag%3Avisualization&language=ja)
-  * チャートタイプ
+
     * [ピボットテーブル](/howto?q=tag%3APivot%20tag%3AVisualization&language=ja)
     <!--* [テーブル](/howto?q=tag%3ATable%20tag%3AVisualization&language=ja)-->
     * [バー](/howto?q=tag%3ABar&language=ja)
