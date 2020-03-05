@@ -1,5 +1,24 @@
 # Release Note
 
+## 5.5.4
+
+Released on 3/5/2020
+
+### Bug Fixes
+
+* Analytics: Linear Regression: Variable Importance: The variable names at X-Axis were wrong.
+* Analytics: Prophet: MAPE was using percent as the unit, but it's now changed to 0-1 scale just like MASE.
+
+* Data Source: Google Sheets: Upgraded to use Google Sheets V4 APIs instead of V3.
+* Data Source: Google Sheets: Now it correctly detects the Date/POSIXct data types.
+* Data Source: Google Sheets: Introduced a Timezone parameter in the data import dialog.
+* Data Source: For Stripe, MailChimp, and Google Analytics Data Sources, the Last N Years parameter did not work when you run it on Feb 29 in the leap year.
+
+* Data Wrangling: Added 'Count Text Pairs' option to the column header menu.
+* Data Wrangling: After converting POSIXct column data type to Date, the spin icon did not go away and could not navigate from the Summary View to other views like Table View.
+
+
+
 ## 5.5.3
 
 Released on 2/28/2020
@@ -18,7 +37,7 @@ Released on 2/28/2020
 * Analytics: Prophet: It showed a wrong tab if you switched from the additive mode to the multiplicative mode while you were viewing 'Effects' chart.
 * Analytics: Prophet: Bars on under the Importance tab should be sorted by the importance scores.
 * Analytics: Number of Columns LOV was reset if you went to the other tabs and came back.
-* Parameter: The parameter was not working for the recently added Filter operators such as "Last N Weeks Exclude Today". 
+* Parameter: The parameter was not working for the recently added Filter operators such as "Last N Weeks Exclude Today".
 
 ## 5.5.2
 
