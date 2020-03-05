@@ -38,42 +38,42 @@
 ----
 
 * [データの可視化](/howto?q=tag%3Avisualization&language=ja)
-    * チャートタイプ
-        * [ピボットテーブル](/howto?q=tag%3APivot%20tag%3AVisualization&language=ja)
+  * チャートタイプ
+    * [ピボットテーブル](/howto?q=tag%3APivot%20tag%3AVisualization&language=ja)
     <!--* [テーブル](/howto?q=tag%3ATable%20tag%3AVisualization&language=ja)-->
-        * [バー](/howto?q=tag%3ABar&language=ja)
-        * [ライン](/howto?q=tag%3ALine%20tag%3AVisualization&language=ja)
-        * [エリア](/howto?q=tag%3AArea%20tag%3AVisualization&language=ja)
+    * [バー](/howto?q=tag%3ABar&language=ja)
+    * [ライン](/howto?q=tag%3ALine%20tag%3AVisualization&language=ja)
+    * [エリア](/howto?q=tag%3AArea%20tag%3AVisualization&language=ja)
     <!--* [パイ](/howto?q=tag%3APie&language=ja)-->
-        * [ヒストグラム](/howto?q=tag%3AHistogram&language=ja)
+    * [ヒストグラム](/howto?q=tag%3AHistogram&language=ja)
     <!--* [密度曲線](/howto?q=tag%3ADensity%20Plot&language=ja)-->
-        * [散布図 (集計なし)](/howto?q=tag%3AScatter%20-tag%3A%22Scatter%20Aggregation%22&language=ja)
-        * [散布図 (集計あり)](/howto?q=tag%3A%22Scatter%20Aggregation%22&language=ja)
-        * [箱ヒゲ図](/howto?q=tag%3A%22Box%20Plot%22&language=ja)
+    * [散布図 (集計なし)](/howto?q=tag%3AScatter%20-tag%3A%22Scatter%20Aggregation%22&language=ja)
+    * [散布図 (集計あり)](/howto?q=tag%3A%22Scatter%20Aggregation%22&language=ja)
+    * [箱ヒゲ図](/howto?q=tag%3A%22Box%20Plot%22&language=ja)
     <!--* [バイオリン](/howto?q=tag%3A%22Violin%20Plot%22&language=ja)-->
     <!--* [エラーバー](/howto?q=tag%3A%22Error%20Bar%22&language=ja)-->
-        * [地図 - エリア](/howto?q=tag%3AMap-Area&language=ja)
-        * [地図 - 経度/緯度](/howto?q=tag%3AMap-long/lat&language=ja)
+    * [地図 - エリア](/howto?q=tag%3AMap-Area&language=ja)
+    * [地図 - 経度/緯度](/howto?q=tag%3AMap-long/lat&language=ja)
     <!--* [地図 - ヒートマップ](/howto?q=tag%3AMap-Heatmap&language=ja)-->
-        * [ヒートマップ](/howto?q=tag%3AHeatmap%20-tag%3AMap-Heatmap&language=ja)
+    * [ヒートマップ](/howto?q=tag%3AHeatmap%20-tag%3AMap-Heatmap&language=ja)
     <!--* [等高線プロット](/howto?q=tag%3ACountour&language=ja)-->
     <!--* [ナンバー](/howto?q=tag%3ANumber%20tag%3AVisualization&language=ja)-->
-        * [ワードクラウド](/howto?q=tag%3AWordcloud&language=ja)
-    * 機能
-        * [ピン](/howto?q=tag%3Apin%20-tag%3A%22Web%20Scraping%22&language=ja)
-        * [色(グループ化)](/howto?q=tag%3AColor&language=ja)
-        * [繰り返し](/howto?q=tag%3A%22Repeat%20By%22&language=ja)
-        * [表計算](/howto?q=tag%3A%22Window%20Calculation%22%20tag%3AVisualization&language=ja)
-        * [日付/時間関数](/howto?q=tag%3ADate%20tag%3AVisualization&language=ja)
-        * [トレンドライン](/howto?q=tag%3ATrend%20Line&language=ja)
-        * [リファレンスライン](/howto?q=tag%3A%22Reference%20Line%22&language=ja)
+    * [ワードクラウド](/howto?q=tag%3AWordcloud&language=ja)
+  * 機能
+    * [ピン](/howto?q=tag%3Apin%20-tag%3A%22Web%20Scraping%22&language=ja)
+    * [色(グループ化)](/howto?q=tag%3AColor&language=ja)
+    * [繰り返し](/howto?q=tag%3A%22Repeat%20By%22&language=ja)
+    * [表計算](/howto?q=tag%3A%22Window%20Calculation%22%20tag%3AVisualization&language=ja)
+    * [日付/時間関数](/howto?q=tag%3ADate%20tag%3AVisualization&language=ja)
+    * [トレンドライン](/howto?q=tag%3ATrend%20Line&language=ja)
+    * [リファレンスライン](/howto?q=tag%3A%22Reference%20Line%22&language=ja)
     <!--* [マーカーの変更](/howto?q=tag%3AMaker%20tag%3AVisualization&language=ja)-->
-        * [Y2軸の設定](/howto?q=tag%3AY2-Axis&language=ja)
+    * [Y2軸の設定](/howto?q=tag%3AY2-Axis&language=ja)
     <!--* [URLリンク](howto?q=tag%3A%22URL%20Link%22%20tag%3AVisualization&language=ja)-->
-        * [ハイライト](/howto?q=tag%3AHighlight&language=ja)
-        * [カテゴリー化(ビニング)](/howto?q=tag%3ABinning%20tag%3AVisualization&language=ja)
-        * [表示する値の制限](/howto?q=tag%3ALimit&language=ja)
-        * [表示名の編集](/howto?q=tag%3A%22Edit%20Display%20Name%22%20tag%3AVisualization&language=ja)
+    * [ハイライト](/howto?q=tag%3AHighlight&language=ja)
+    * [カテゴリー化(ビニング)](/howto?q=tag%3ABinning%20tag%3AVisualization&language=ja)
+    * [表示する値の制限](/howto?q=tag%3ALimit&language=ja)
+    * [表示名の編集](/howto?q=tag%3A%22Edit%20Display%20Name%22%20tag%3AVisualization&language=ja)
 
 ----
 
