@@ -1,5 +1,19 @@
 # Release Note
 
+## 5.5.3.7
+
+* Added a support for the OAuth data sources including Google Sheet, Google Analytics, Google BigQuery, etc.
+* Added a support for MS SQL Server data sources for scheduling and the interactive mode.
+* Each author can now enable the Parameter for his/her Dashboards and other contents to those who are not logged in.
+* Schedule: You can now re-authorize the expired OAuth tokens from the server UI.
+* Admin UI: The User table shows the user type, either Author or Viewer for each user.
+* Header menu is now translated for Japanese.
+* Admin UI is also now translated for Japanese.
+
+* The user type was shown as "Public" where it should be "Viewer" at the server UI.
+* Admin UI: "Scheduler" user type was shown in the user table.
+
+
 ## 5.5.1.1
 
 Released on 2/3/2020
@@ -30,12 +44,12 @@ Released on 12/1/2019
 
 * The data download REST API now supports the private data access.  Also, users can directly download the privately shared data directly in Exploratory Desktop.
 * Added "Liked by Me" search scope for the Insight Page.
-* Partial word matching support for the Tag search for the Insight View. 
+* Partial word matching support for the Tag search for the Insight View.
 
 ### Bug Fixes
 
 * Now "Scope" search criteria doesn't show up for the guest users (users without logging in).
-* Dashboard view didn't resize properly when a user resize the browser window. 
+* Dashboard view didn't resize properly when a user resize the browser window.
 * Super Table didn't get refreshed after the Data was refreshed.
 
 ## 5.3.2
@@ -49,4 +63,3 @@ Released on 9/10/2019
 ### Bug Fixes
 
 * Timezones used for timestamps displayed in shared Dashboard/Note/Slide page was inconsistent.
- 
