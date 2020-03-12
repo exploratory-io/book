@@ -1,6 +1,15 @@
 # Release Note
 
-## 5.5.3.7
+## 5.5.4.2
+
+Released on 3/11/2020
+
+### Download Links
+
+* [For New Install](https://d3hboxb895ffcl.cloudfront.net/collab-server/exploratory-collab-5.5.4.2.tar.gz)
+* [For Upgrade](https://d3hboxb895ffcl.cloudfront.net/collab-server/exploratory-collab-images-5.5.4.2.tar.gz)
+
+### Bug Fixes
 
 * Added a support for the OAuth data sources including Google Sheet, Google Analytics, Google BigQuery, etc.
 * Added a support for MS SQL Server data sources for scheduling and the interactive mode.
