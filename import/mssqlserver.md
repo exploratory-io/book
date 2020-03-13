@@ -11,7 +11,7 @@ First, you want to create a connection for SQL Server.
 After filling the below database information:
 
 - Host - Host name of the SQL Server
-- Port - Port number for the SQL Server. For "named" instance, please assign static port to your SQL Server.
+- Port - Port number for the SQL Server. 
 - Database - Database Name
 - MS SQL Server ODBC Driver - It shows list of installed drivers. Regardless of the driver selected here, when you publish a Data source that uses the connection, ODBC Driver 17 for SQL Server is used for Scheduling. (Both exploratory.io and Collaboration Server have ODBC Driver 17 for SQL Server)
 - Username - Username of the SQL Server
