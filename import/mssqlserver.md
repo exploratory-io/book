@@ -2,13 +2,22 @@
 
 You can quickly import data from your SQL Server into Exploratory.
 
-## 1. Create a connection for Presto
+## 1. Create a connection for MS SQL Server 
 
 First, you want to create a connection for SQL Server.
 
 ![](images/connection-mssqlserver.png)
 
-After filling the database information, click ‘Test Connection’ button to make sure the information is correct, before you save it.
+After filling the below database information:
+
+- Host - Host name of the SQL Server
+- Port - Port number for the SQL Server. For "named" instance, please assign static port to your SQL Server.
+- Database - Database Name
+- MS SQL Server ODBC Driver - It shows list of installed drivers. Regardless of the driver selected here, when you publish a Data source that uses the connection, ODBC Driver 17 for SQL Server is used for Scheduling. (Both exploratory.io and Collaboration Server have ODBC Driver 17 for SQL Server)
+- Username - Username of the SQL Server
+- Password - Password of the SQL Server
+
+Click ‘Test Connection’ button to make sure the information is correct, before you save it.
 
 
 ## 2. Open SQL Server Import dialog
