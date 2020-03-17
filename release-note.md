@@ -1,5 +1,29 @@
 # Release Note
 
+## 5.5.4
+
+Released on 3/16/2020
+
+### Bug Fixes
+
+* Data Source: Google Analytics: Changed 'Hour of Day' dimension label to 'Date/Hour'.
+* Data Source: Google Analytics: Supported Timezone Parameter and added more 'Last N Date' related options.
+* Data Source: Supported MS SQL Server Data Source without DSN.
+* Data Source: Google Sheets: Inside the Data Source step, sheet title was showing the title of the first sheet even when you selected a different sheet.
+
+* Data Wrangling: Added 'Use "." to represent the columns. e.g. log(.)' message inside the 'Create Calculation (Mutate) for Multiple Columns' dialog.
+* Data Wrangling: Tokenize Text: Selecting 'Yes' for 'Keep Original Column' parameter didn't save the original column.
+* Data Wrangling: Sample Step raised error if data had fewer rows than the specified sample size.
+* Data Wrangling: Supported "Add Row Number" option under the Plus button menu.
+* Data Wrangling: Removed the sub menu items under "Select Columns" of the column header menu when multiple columns were selected.
+
+
+* Chart: Error Bar: In 'Ratio' mode with grouping by 'X Axis', the percentage is now calculated with devision by the numbers for each X-axis, as opposed to devision by the total number for all the X-axis values.
+* Chart/Analytics: Added “Styling with Markdown is supported” text and help link at description fields in Comment / Rename Dialogs.
+* Analytics: Decision Tree: Charts in the Effects of Variables tab are now sorted by the variable importance scores.
+* Analytics: Effects by Variables: Confidence intervals of "Actual" lines/dots for binary classification now correctly uses confidence interval of population proportion.
+* Analytics: Effects by Variables: Categorical predictor values on X-axis are now sorted by the predicted values.
+
 ## 5.5.3.7
 
 Released on 3/5/2020
