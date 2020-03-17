@@ -19,7 +19,10 @@
 
 ### 株式会社ハッシャダイ 横関 秀樹 様
 <script async class="speakerdeck-embed" data-id="120bdfec53614bd6825a98aca3522b77" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-	
+
+### 株式会社リクルートマーケティングパートナーズ 林田 祐輝様
+<script async class="speakerdeck-embed" data-id="3a8d8a3dac3041c49e83343b9dc74532" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 ### 株式会社IHI 新見 亮輔 様
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 74.9296%;"><iframe src="https://speakerdeck.com/player/8bc26d42ac44455386161c684b397e67" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 
@@ -141,4 +144,3 @@
 
 ### Exploratory 村里 郁哉
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/4b1c579e950d42de95945ea119e9c033" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
-
