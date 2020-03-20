@@ -19,6 +19,7 @@ Create a connection following [this instruction](https://blog.exploratory.io/how
 - Select Account, Property, and View from the dropdown menu.
 - Set Period. You can select either of the followings:
 
+  - From This Date
   - Today
   - Yesterday
   - This Week to Yesterday
@@ -28,10 +29,25 @@ Create a connection following [this instruction](https://blog.exploratory.io/how
   - Last Month to Yesterday
   - Last Year to Yesterday
   - Last N Days
+  - Last N Days (Exclude Today)
   - Last N Weeks
+  - Last N Weeks (Exclude This Week)
   - Last N Months
+  - Last N Months (Exclude This Month)
+  - Last N Months (Exclude This Week)
+  - Last N Months (Exclude Today)
+  - Last N Quarters
+  - Last N Quarters (Exclude This Quarter)
+  - Last N Quarters (Exclude This Month)
+  - Last N Quarters (Exclude This Week)
+  - Last N Quarters (Exclude Today)
   - Last N Years
-  - From This Date
+  - Last N Years (Exclude This Year)
+  - Last N Years (Exclude This Quarter)
+  - Last N Years (Exclude This Month)
+  - Last N Years (Exclude This Week)
+  - Last N Years (Exclude Today)
+
   
 
 - Select Dimensions and Metrics from the List. You might want to take a look at [Query Parameter reference page](https://developers.google.com/analytics/devguides/reporting/core/v3/reference) for more detail on Dimension and Measures. Also, [Google Analytics Query Explorer tool page](https://ga-dev-tools.appspot.com/query-explorer/) is helpful for you to explore different parameters that Google Analytics support.
