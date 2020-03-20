@@ -1,5 +1,29 @@
 # Release Note
 
+## 5.5.5
+
+Released on 3/20/2020
+
+* Project: When opening a project that has a Date parameter, there was a case that it showed  "e.replace is not a function" error and couldn't open it.
+
+* Data Wrangling: Saving a step as a "New data frame without steps" incorrectly kept the grouped state where it shouldn't.
+* Data Wrangling: Date Filter: 'This Month' option did not work for a POSIXct column when the timezone for the column is different from the system timezone setting.
+* Data Wrangling: When selecting multiple columns then open the Column Selection Dialog, the dialog didn't show the columns as selected.
+
+* Chart: A column dropdown list was not shown correctly when 'Keep' option was selected for Other Group setting.
+* Chart: Histogram: Bucket range info was incorrect in the hover popup of the cumulative sum reference line.
+* Chart: Error Bar: It should show 100% bars in Ratio Mode when the group by setting is 'X Axis' and 'Number of Rows' is assigned to Y Axis.
+* Chart: Error Bar: Make the '95% Confidence Interval' the default.
+* Chart: Pivot failed to render and showed an error "Cannot read property 'length' of undefined"
+* Chart: Show detail dialog showed an incorrect number of rows if 'Number of Rows' was assigned to Y Axis in Bar.
+
+* Analytics: Add "Number of Rows" information to the Summary table for T-test and Wilcoxon test.
+* Analytics: When an Analytics tab was 'Pinned' to a particular step and the step was deleted, running the Analytics showed 'Required metadata is not available' error.
+* Analytics: Effects by Variables: Increased the number of variables setting to 20 by default.
+* Analytics: Logistic Regression: Coefficent (Significant) tab was still showing not significant variables when Repeat By is used
+Analytics: Logistic/GLM: 'Effect by Variables' setting in the property was missing.
+
+
 ## 5.5.4
 
 Released on 3/16/2020
