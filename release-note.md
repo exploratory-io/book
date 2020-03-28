@@ -1,5 +1,97 @@
 # Release Note
 
+## 5.5.5
+
+Released on 3/20/2020
+
+* Project: When opening a project that has a Date parameter, there was a case that it showed  "e.replace is not a function" error and couldn't open it.
+
+* Data Wrangling: Saving a step as a "New data frame without steps" incorrectly kept the grouped state where it shouldn't.
+* Data Wrangling: Date Filter: 'This Month' option did not work for a POSIXct column when the timezone for the column is different from the system timezone setting.
+* Data Wrangling: When selecting multiple columns then open the Column Selection Dialog, the dialog didn't show the columns as selected.
+
+* Chart: A column dropdown list was not shown correctly when 'Keep' option was selected for Other Group setting.
+* Chart: Histogram: Bucket range info was incorrect in the hover popup of the cumulative sum reference line.
+* Chart: Error Bar: It should show 100% bars in Ratio Mode when the group by setting is 'X Axis' and 'Number of Rows' is assigned to Y Axis.
+* Chart: Error Bar: Make the '95% Confidence Interval' the default.
+* Chart: Pivot failed to render and showed an error "Cannot read property 'length' of undefined"
+* Chart: Show detail dialog showed an incorrect number of rows if 'Number of Rows' was assigned to Y Axis in Bar.
+
+* Analytics: Add "Number of Rows" information to the Summary table for T-test and Wilcoxon test.
+* Analytics: When an Analytics tab was 'Pinned' to a particular step and the step was deleted, running the Analytics showed 'Required metadata is not available' error.
+* Analytics: Effects by Variables: Increased the number of variables setting to 20 by default.
+* Analytics: Logistic Regression: Coefficent (Significant) tab was still showing not significant variables when Repeat By is used
+Analytics: Logistic/GLM: 'Effect by Variables' setting in the property was missing.
+
+
+## 5.5.4
+
+Released on 3/16/2020
+
+### Enhancements
+
+* Data Source: Google Analytics: Changed 'Hour of Day' dimension label to 'Date/Hour'.
+* Data Source: Google Analytics: Supported Timezone Parameter and added more 'Last N Date' related options.
+* Data Source: Supported MS SQL Server Data Source without DSN.
+
+* Data Wrangling: Added 'Use "." to represent the columns. e.g. log(.)' message inside the 'Create Calculation (Mutate) for Multiple Columns' dialog.
+* Data Wrangling: Supported "Add Row Number" option under the Plus button menu.
+
+* Chart/Analytics: Added “Styling with Markdown is supported” text and help link at description fields in Comment / Rename Dialogs.
+* Analytics: Decision Tree: Charts in the Effects of Variables tab are now sorted by the variable importance scores.
+* Analytics: Effects by Variables: Categorical predictor values on X-axis are now sorted by the predicted values.
+
+### Bug Fixes
+
+* Data Source: Google Sheets: Inside the Data Source step, sheet title was showing the title of the first sheet even when you selected a different sheet.
+
+* Data Wrangling: Tokenize Text: Selecting 'Yes' for 'Keep Original Column' parameter didn't save the original column.
+* Data Wrangling: Sample Step raised error if data had fewer rows than the specified sample size.
+* Data Wrangling: Removed the sub menu items under "Select Columns" of the column header menu when multiple columns were selected.
+
+* Chart: Error Bar: In 'Ratio' mode with grouping by 'X Axis', the percentage is now calculated with devision by the numbers for each X-axis, as opposed to devision by the total number for all the X-axis values.
+* Analytics: Effects by Variables: Confidence intervals of "Actual" lines/dots for binary classification now correctly uses confidence interval of population proportion.
+
+
+## 5.5.3.7
+
+Released on 3/5/2020
+
+### Bug Fixes
+
+* Analytics: Linear Regression: Variable Importance: The variable names at X-Axis were wrong.
+* Analytics: Prophet: MAPE was using percent as the unit, but it's now changed to 0-1 scale just like MASE.
+
+* Data Source: Google Sheets: Upgraded to use Google Sheets V4 APIs instead of V3.
+* Data Source: Google Sheets: Now it correctly detects the Date/POSIXct data types.
+* Data Source: Google Sheets: Introduced a Timezone parameter in the data import dialog.
+* Data Source: For Stripe, MailChimp, and Google Analytics Data Sources, the Last N Years parameter did not work when you run it on Feb 29 in the leap year.
+
+* Data Wrangling: Added 'Count Text Pairs' option to the column header menu.
+* Data Wrangling: After converting POSIXct column data type to Date, the spin icon did not go away and could not navigate from the Summary View to other views like Table View.
+
+
+
+## 5.5.3
+
+Released on 2/28/2020
+
+### Bug Fixes
+
+* Data Source: Mongodb: Support DNS Seedlist connection to support cluster environments.
+* Data Wrangling: Summarize/Pivot: Support POSIXct (Date/Time) Functions such as 'Round to Hour'.
+* Data Wrangling: Summarize/Pivot: Date was not rounded to year when it's opened from Column Menu
+* Data Wrangling: Support creating a new data frame based on a selected Step with and without the Steps.
+* Data Wrangling: The Step menu of a pinned step did not show icons for Cut Step and Copy Step menu items.
+* Chart: If the Step cache is removed, refreshing the chart failed with object not found error.
+* Chart: Support POSIXct (Date/Time) Functions such as 'Extract Hour/Minute/Second'.
+* Analytics: Prophet: The internal model was rebuilt every time when you opened the projects.
+* Analytics: Prophet: Order of predictors in the legend of additive effect chart does not correspond to the order of the column selection
+* Analytics: Prophet: It showed a wrong tab if you switched from the additive mode to the multiplicative mode while you were viewing 'Effects' chart.
+* Analytics: Prophet: Bars on under the Importance tab should be sorted by the importance scores.
+* Analytics: Number of Columns LOV was reset if you went to the other tabs and came back.
+* Parameter: The parameter was not working for the recently added Filter operators such as "Last N Weeks Exclude Today".
+
 ## 5.5.2
 
 Released on 2/24/2020

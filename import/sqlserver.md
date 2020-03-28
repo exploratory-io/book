@@ -2,7 +2,7 @@
 
 You can quickly import data from your  SQLServer into Exploratory.
 
-## 1. Create a connection for Presto
+## 1. Create a connection for SQL Server 
 
 First, you want to create a connection for SQL Server.
 
