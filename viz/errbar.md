@@ -40,26 +40,26 @@
 ### Calculation Type: Mean
 
 * Standard Error 
-<img src="images/stderr_mean.png" height="45px">
+<br/><img src="images/stderr_mean.png" height="45px">
 
 * 95% Confidence Interval
-<img src="images/95confint_mean.png" height="20px">
+<br/><img src="images/95confint_mean.png" height="20px">
 
 * 99% Confidence Interval
-<img src="images/99confint_mean.png" height="22px">
+<br/><img src="images/99confint_mean.png" height="22px">
 
 
 ### Calculation Type: Ratio (%) 
 
 
 * Standard Error
-<img src="images/stderr_p.png" height="48px">
+<br/><img src="images/stderr_p.png" height="48px">
 
 * 95% Confidence Interval
-<img src="images/95confint_p.png" height="50px">
+<br/><img src="images/95confint_p.png" height="50px">
 
 * 99% Confidence Interval
-<img src="images/99confint_p.png" height="48px">
+<br/><img src="images/99confint_p.png" height="48px">
 
 
 
