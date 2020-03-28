@@ -23,8 +23,8 @@
     * Number of FALSE (logical only)
 * Range Type - You can select an error bar range type from the following options. The default is `Standard Error`.
   * Standard Error 
-  * Confidence Interval (95%)
-  * Confidence Interval (99%)
+  * 95% Confidence Interval 
+  * 99% Confidence Interval 
   * 1 Standard Deviation
   * 2 Standard Deviation
   * 3 Standard Deviation
@@ -33,6 +33,29 @@
 * Sort - Assign a column to use for Sorting the X-Axis values. The default is based on either the alphabetic order or the factor level order for Factor type columns.
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
 * Orientation - You can choose a chart orientation. Either 'Vertical' or 'Horizontal'.
+
+
+## Range Calculation Formula
+
+### Calculation Type: Mean
+
+* Standard Error: <img src="images/stderr_mean.png" height="45px">
+
+* 95% Confidence Interval: <img src="images/95confint_mean.png" height="20px">
+
+* 99% Confidence Interval: <img src="images/99confint_mean.png" height="22px">
+
+
+### Calculation Type: Ratio (%) 
+
+
+* Standard Error: <img src="images/stderr_p.png" height="48px">
+
+* 95% Confidence Interval: <img src="images/95confint_p.png" height="50px">
+
+* 99% Confidence Interval: <img src="images/99confint_p.png" height="48px">
+
+
 
 
 ## Highlight 
