@@ -31,6 +31,7 @@ Released on 3/11/2020
 
 * The user type was shown as "Public" where it should be "Viewer" at the server UI.
 * Admin UI: "Scheduler" user type was shown in the user table.
+* Deleted users were displayed on the Users Administration page.
 
 
 ## 5.5.1.1
