@@ -1,5 +1,16 @@
 # Release Note
 
+## 5.5.6
+
+Released on 4/22/2020
+
+Summary: It showed NaN for the Unique Values when a character data type column had NA values.
+Data Wrangling: Copying a Data Wrangling step and pasting it multiple times could break the data frame.
+Chart: The number of rows showed an incorrect value in the 'Show Detail' dialog when you use a Window Calculation (% of Total) with '(Number of Rows)'.
+Chart: When you created an invalid Custom function and clicked the 'Cancel' button in the dialog it didn't clear the invalid entry. This caused an error when you returned to this chart from other charts.
+Analytics: An error dialog with "Cannot read property '0' of undefined" showed up when opening a data frame on rare occasions
+General: The 'Latest Version Available' button was not displayed on the Project List even when a newer desktop version was available.
+
 ## 5.5.5
 
 Released on 3/20/2020
