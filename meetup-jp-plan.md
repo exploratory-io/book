@@ -2,9 +2,7 @@
 
 本イベントではExploratoryの活用事例などについてユーザー様、パートナー様よりご講演いただきます。さらに5月にリリース予定のExplortory最新版6.0のリリース情報をCEOの西田よりお届けします。
 
-詳細・参加のお申し込みは[こちら](https://exploratory.io/note/BWz1Bar4JF/13-tFQ2OEM7gQ)から。
-
-
 ## 開催要項
 * 日時: 2020年 5月 29日 (金) 13:00〜15:00（12:45開場）
-* Zoomにて開催します。
+* 会場: Zoom会議にて開催します。
+* 参加方法: [こちら](https://exploratory.io/note/BWz1Bar4JF/13-tFQ2OEM7gQ)から詳細の確認・お申し込みをお願いします。
