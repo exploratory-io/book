@@ -1,13 +1,23 @@
 # Release Note
 
-## 5.5.4.2
+## 5.5.5
 
-Released on 3/11/2020
+Released on 3/26/2020
 
 ### Download Links
 
-* [For New Install](https://d3hboxb895ffcl.cloudfront.net/collab-server/exploratory-collab-5.5.4.2.tar.gz)
-* [For Upgrade](https://d3hboxb895ffcl.cloudfront.net/collab-server/exploratory-collab-images-5.5.4.2.tar.gz)
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-5.5.5.0.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-5.5.5.0.tar.gz)
+
+### Bug Fixes
+
+* The Share dialog now shows the sharing URL once the URL share is enabled.
+* Bundle/host all the 3rd party libraries inside the Collaboration Server.
+* Updated the link for the Getting Started guide.
+
+## 5.5.4.2
+
+Released on 3/11/2020
 
 ### Bug Fixes
 
@@ -21,6 +31,7 @@ Released on 3/11/2020
 
 * The user type was shown as "Public" where it should be "Viewer" at the server UI.
 * Admin UI: "Scheduler" user type was shown in the user table.
+* Deleted users were displayed on the Users Administration page.
 
 
 ## 5.5.1.1
