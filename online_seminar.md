@@ -10,6 +10,8 @@ I'm starting the Data Visualization workshop by introducing the basics of how to
 * Introduction to Bubble (Scatter) Chart
 * Introduction to Map
 
+The past recording and tutorial slides can be found at the [workshop page](https://exploratory.io/note/kanaugust/Data-Visualization-Workshop-YAZ6azM0MU).
+
 ----
 
 # Data Visualization Workshop Part 2 - Visualizing Time Series Data
@@ -26,6 +28,8 @@ This is a part of the Data Visualization Workshop. In this seminar, we'll focus 
 * Relative Time Filter - Last 6 months, YTD, etc.
 * Trend line
 
+The past recording and tutorial slides can be found at the [workshop page](https://exploratory.io/note/kanaugust/Data-Visualization-Workshop-YAZ6azM0MU).
+
 ----
 
 # Data Visualization Workshop Part 3 - Visualizing Variance & Correlation
@@ -35,8 +39,11 @@ This is a part of the Data Visualization Workshop. In this seminar, we'll focus 
 
 This is a part of the Data Visualization Workshop. In this seminar, we'll focus on how to visualize Time Series data effectively.
 
-* Understanding Variance with Histogram, Density, Boxplot, Violin charts.
-* Understanding Correlation with Scatter, Boxplot charts.
+* Understanding Variance with Histogram, Density, Boxplot, Violin charts
+* Understanding Correlation with Scatter, Boxplot charts
+
+The past recording and tutorial slides can be found at the [workshop page](https://exploratory.io/note/kanaugust/Data-Visualization-Workshop-YAZ6azM0MU).
+
 ----
 
 # Data Visualization Workshop Part 4 - Visualizing Uncertainty
@@ -46,8 +53,10 @@ This is a part of the Data Visualization Workshop. In this seminar, we'll focus 
 
 This is a part of the Data Visualization Workshop. In this seminar, we'll focus on how to visualize the variance and the correlation.
 
-* Understanding Variance with Histogram, Density, Boxplot, Violin charts.
-* Understanding Correlation with Scatter, Boxplot charts.
+* Introduction to Error Bar chart
+* Introduction to Confidence Interval
+
+The past recording and tutorial slides can be found at the [workshop page](https://exploratory.io/note/kanaugust/Data-Visualization-Workshop-YAZ6azM0MU).
 
 ----
 
@@ -61,6 +70,9 @@ This is a part of the Data Visualization Workshop. In this seminar, we'll focus 
 * Join / Merge Data
 * Create Calculation
 * Date / Time Sensitive Data Filtering
-* Text Data Wrangling 
+* Text Data Wrangling
+* Order Categorical Values with Factor 
+
+The past recording and tutorial slides can be found at the [workshop page](https://exploratory.io/note/kanaugust/Data-Visualization-Workshop-YAZ6azM0MU).
 
 ----
