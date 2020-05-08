@@ -54,7 +54,7 @@
     * [Create Calculation](/howto?q=tag:mutate&language=en)
     * [Summarize](/howto?q=tag:summarize&language=en)
     * [Pivot](/howto?q=tag:%3Apivot%20tag%3A%22Data%20Wrangling%22&language=en)
-    * [Join (Add Columns)](/howto?q=tag%3A"data%20wrangling"%20tag%3Ajoin&language=en)
+    * [Join (Add Columns)](/howto?q=tag%3Ajoin%20tag%3A%22Data%20Wrangling%22&language=en)
     * [Merge (Add Rows)](/howto?q=tag:merge&language=en)
     * [Group By](/howto?q=tag:%22group%20by%22&language=en)
     * [Unite](/howto?q=tag:unite&language=en)
