@@ -8,6 +8,7 @@ Released on 5/19/2020.
 
 * Summary View: Added a new 'Highlight' mode to highlight a matching data based on a condition you create.
 * Summary View: Added a new 'Correlate' mode to explore the correlation among the variables.
+* Summary View: Switched to a parallel processing engine to calculate the chart data and the metrics. 
 
 * Table View: Added Filter support.
 
