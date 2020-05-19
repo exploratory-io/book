@@ -150,3 +150,4 @@
 * [カスタムRスクリプト](/howto?q=tag%3A%22r%20script%22&language=ja)
 * [Excelユーザー向けガイド](/howto?q=tag%3AExcel&language=ja)
 * [日付型データ](/howto?q=tag%3ADate&language=ja)
+* [テキスト分析](/howto?q=tag%3A%22text%20analysis%22&language=ja)
