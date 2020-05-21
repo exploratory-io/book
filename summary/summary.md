@@ -87,21 +87,21 @@ In Highlight mode, you can highlight the distribution of data that you are intet
 
 ### How to Use 
 
-* Click "Highlight" button in Regular mode.
+Click "Highlight" button in Regular mode.
 ![](images/hl1.png)
 
-* Set the condition that you want highlight in the dialog. 
+Set the condition that you want highlight in the dialog. 
 ![](images/hl2.png)
 
-* You can see the data that meet the condition is highlighted in Blue color in charts. 
+You can see the data that meet the condition is highlighted in Blue color in charts. 
 ![](images/hl3.png)
 
-* You can click "% Ratio" to see the distribution in percentage. 
+You can click "% Ratio" to see the distribution in percentage. 
 ![](images/hl4.png)
 
 
 ### Exit Highlight Mode
-* You can click "Close" button to exit the Highlight mode.
+You can click "Close" button to exit the Highlight mode.
 ![](images/hl5.png)
 
 
@@ -115,13 +115,13 @@ In Correlation mode, you can see the correlations between the target column and 
 
 ### How to Use 
 
-* Click "Correlate" button in Regular mode.
+Click "Correlate" button in Regular mode.
 ![](images/cor1.png)
 
-* Select a column that you want to see the correlations with other columns. You can choose either a numeric column or a logical column.
+Select a column that you want to see the correlations with other columns. You can choose either a numeric column or a logical column.
 ![](images/cor3.png)
 
-* You can see the correlations between the target column and the other columns.
+You can see the correlations between the target column and the other columns.
 ![](images/cor2.png)
 
 
