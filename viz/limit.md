@@ -51,6 +51,7 @@ You can define a condition against the aggregated values of each category to fil
 Following options are available. 
 
 * Based on: Values to compare. You can select a column that has values to compare and aggregation function. By default, it uses the same value column and its aggregation function used in the chart. You can also choose a different column and different aggregation function that is not even used in the chart. 
+* Set Position: See below for deatil.
 * Operator: The Operator of the condition. Following operators are available. 
     * equal to
     * not equal to
@@ -61,6 +62,25 @@ Following options are available.
     * between 
     * not between 
 * Value: Condition value 
+
+
+
+#### Set Position
+
+
+If you use "Condition" type, you need to specify a condition against the summarized value of the target group. But in some case, you want to point out value at a specific position in the group. 
+
+For example, suppose you have a line chart with Color, and  you want to limit the colors that have "2887" at the last value. 
+
+![](images/limit6.png)
+
+You can do it by checking the "Set Position" checkbox, selecting "Last Value" in the pulldown menu and setting "2887" at Value. 
+
+![](images/limit7.png)
+
+The following positions are available. 
+* First Value
+* Last Value 
 
 
 ### Top
@@ -87,22 +107,3 @@ Following options are available.
 
 * Number of Results: Number of categories to show. Default is 10.
 * Based on: Values to compare. You can select a column that has values to compare and aggregation function. By default, it uses the same value column and its aggregation function used in the chart. You can also choose a different column and different aggregation function that is not even used in the chart. 
-
-
-
-## Set Position
-
-
-If you use "Condition" type, you need to specify the condition against the summarized value of the target group. But in some case, you want to point the specific value in the group. 
-
-For example, suppose you have a line chart with Color, and  you want to limit the colors that have "2887" at the last value. 
-
-![](images/limit6.png)
-
-You can do it by checking the "Set Position" checkbox, selecting "Last Value" in the pulldown menu and setting "2887" at Value. 
-
-![](images/limit7.png)
-
-The following positions are available. 
-* First Value
-* Last Value 
