@@ -92,4 +92,17 @@ Following options are available.
 
 ## Set Position
 
-(Coming soon)
+
+If you use "Condition" type, you need to specify the condition against the summarized value of the target group. But in some case, you want to point the specific value in the group. 
+
+For example, suppose you have a line chart with Color, and  you want to limit the colors that have "2887" at the last value. 
+
+![](images/limit6.png)
+
+You can do it by checking the "Set Position" checkbox, selecting "Last Value" in the pulldown menu and setting "2887" at Value. 
+
+![](images/limit7.png)
+
+The following positions are available. 
+* First Value
+* Last Value 
