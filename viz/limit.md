@@ -4,12 +4,16 @@ The Limit Values feature literally limits/filters output of the categorical valu
 
 Limit Values is supported in the following chart types.
 
-* Bar (X-Axis)
-* Scatter (With Aggregation) (X-Axis, Y-Axis)
-* Boxplot (X-Axis)
-* Violin (X-Axis)
-* Error Bar (X-Axis)
-* Area Map (Color)
+* Bar (X-Axis, Color, Repeat By)
+* Line  (Color, Repeat By)
+* Area (Color, Repeat By)
+* Scatter (With Aggregation) (X-Axis, Y-Axis, Color, Repeat By, Group By)
+* Boxplot (X-Axis, Color, Repeat By)
+* Violin (X-Axis, Color, Repeat By)
+* Histogram (Color, Repeat By)
+* Density Plot (Color, Repeat By)
+* Error Bar (X-Axis, Color, Repeat By)
+* Map - Extension (Color)
 
 
 ## Overview
