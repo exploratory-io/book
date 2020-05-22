@@ -51,7 +51,7 @@ You can define a condition against the aggregated values of each category to fil
 Following options are available. 
 
 * Based on: Values to compare. You can select a column that has values to compare and aggregation function. By default, it uses the same value column and its aggregation function used in the chart. You can also choose a different column and different aggregation function that is not even used in the chart. 
-* Set Position: See below for deatil.
+* Set Position: See [below](#set-position) for detail.
 * Operator: The Operator of the condition. Following operators are available. 
     * equal to
     * not equal to
