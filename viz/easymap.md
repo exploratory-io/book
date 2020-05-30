@@ -11,7 +11,7 @@
   * US Counties
   * Japan Prefectures
 * Type - Select the map type. Either Circle or Area.
-* Region such as "Country", "State", "Prefecture", "County" etc - Select a column that has the regional information. It requires different region information depending on the map types. 
+* Region such as "Country", "State", "Prefecture", "County" etc - Select a column that has the regional information. It requires different region information depending on the selected map type. 
   * World Countries
     * Country: Country name or country code (iso2c or iso3c codes)
   * US States
