@@ -13,7 +13,7 @@
 * Type - Select the map type. Either Circle or Area.
 * Region such as "Country", "State", "Prefecture", "County" etc - Select a column that has the regional information. It requires different region information depending on the selected map type. 
   * World Countries
-    * Country: Country name or country code (iso2c or iso3c codes)
+    * Country: Country name or country code (iso2c or iso3c code)
   * US States
     * State: United States State name or 2-letter state code
   * US Counties
