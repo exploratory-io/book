@@ -23,7 +23,7 @@ Suppose you have a Bar chart with a lot of bars. You may want to reduce the numb
 
 ![](images/limit1.png)
 
-You can definitely create a filter to reduce bars. But, it is not straightforward to define a filter based on the aggregated values (in this case, the size of bars) such as "Showing top 30 bars". Limit Values provides a set of ways to filter categories based on the aggregated values by category. For example, you can get the top 30 of bars by just setting "Top" with "30" results.  
+You can definitely create a filter to reduce bars. But, it is not straightforward to define a filter based on the aggregated values (in this case, the size of bars) such as "Showing top 20 bars". Limit Values provides a set of ways to filter categories based on the aggregated values by category. For example, you can get the top 20 of bars by just setting "Top" with "20" results.  
 
 ![](images/limit3.png)
 
@@ -68,27 +68,27 @@ Following options are available.
 
 ### Top
 
-You can show only the number of categories that have the highest values. For example, you can define "Top 20 Countries".
+You can show only the number of categories that have the highest values. For example, you can set 20 to show top 20 countries.
 
 ![](images/limit3.png)
 
 Following options are available. 
 
 
-* Number of Results: Number of categories to show. Default is 10.
+* Number of Results: Number of categories to show. 
 * Based on: Values to compare. You can select a column that has values to compare and aggregation function. By default, it uses the same value column and its aggregation function used in the chart. You can also choose a different column and different aggregation function that is not even used in the chart. 
 
 ### Bottom
 
 
-You can show only the number of categories that have the lowest values. For example, you can define "Bottom 20 Countries".
+You can show only the number of categories that have the lowest values. For example, you can set 20 to show bottom 20 countries.
 
 ![](images/limit4.png)
 
 Following options are available. 
 
 
-* Number of Results: Number of categories to show. Default is 10.
+* Number of Results: Number of categories to show. 
 * Based on: Values to compare. You can select a column that has values to compare and aggregation function. By default, it uses the same value column and its aggregation function used in the chart. You can also choose a different column and different aggregation function that is not even used in the chart. 
 
 
