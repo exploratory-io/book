@@ -43,7 +43,7 @@ There are 3 Limit Value types.
 
 ### Condition 
 
-You can define a condition against the aggregated values of each category to filter. For example, you can define "Bars that have more than 5,000 rows.".
+You can define a condition against the aggregated values of each category to filter. For example, you can define "Countires that have sales amount more than 500,000.".
 
 ![](images/limit5.png)
 
@@ -65,27 +65,10 @@ Following options are available.
 
 
 
-#### Set Position
-
-
-If you use "Condition" type, you need to specify a condition against the summarized value of the target group. But in some case, you want to point out value at a specific position in the group. 
-
-For example, suppose you have a line chart with Color, and  you want to limit the colors that have "2887" at the last value. 
-
-![](images/limit6.png)
-
-You can do it by checking the "Set Position" checkbox, selecting "Last Value" in the pulldown menu and setting "2887" at Value. 
-
-![](images/limit7.png)
-
-The following positions are available. 
-* First Value
-* Last Value 
-
 
 ### Top
 
-You can show only the number of categories that have the highest values. For example, you can define "Top 30 Bars".
+You can show only the number of categories that have the highest values. For example, you can define "Top 20 Countries".
 
 ![](images/limit3.png)
 
@@ -98,7 +81,7 @@ Following options are available.
 ### Bottom
 
 
-You can show only the number of categories that have the lowest values. For example, you can define "Bottom 30 Bars".
+You can show only the number of categories that have the lowest values. For example, you can define "Bottom 20 Countries".
 
 ![](images/limit4.png)
 
@@ -107,3 +90,32 @@ Following options are available.
 
 * Number of Results: Number of categories to show. Default is 10.
 * Based on: Values to compare. You can select a column that has values to compare and aggregation function. By default, it uses the same value column and its aggregation function used in the chart. You can also choose a different column and different aggregation function that is not even used in the chart. 
+
+
+
+
+
+## Set Position
+
+In the Limit setting for Color, you can set the position to compare and limit values. For example, if you have a Line chart showing Sales median values of each region and you want to show the top 5 region based on the last values. 
+
+![](images/limit9.png)
+
+You can do it by checking the "Set Position" checkbox, selecting "Last Value". 
+
+![](images/limit8.png)
+
+
+You can also pick the top 5 region based on the first values. 
+
+![](images/limit6.png)
+
+You can select by selecting "First Value". 
+
+![](images/limit7.png)
+
+
+
+The following positions are available. 
+* First Value
+* Last Value 
