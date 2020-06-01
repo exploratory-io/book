@@ -1,5 +1,105 @@
 # Release Note
 
+## 6.0
+
+Released on 5/19/2020.
+
+### New Features / Enhancements
+
+* Summary View: Added a new 'Highlight' mode to highlight a matching data based on a condition you create.
+* Summary View: Added a new 'Correlate' mode to explore the correlation among the variables.
+* Summary View: Switched to a parallel processing engine to calculate the chart data and the metrics. 
+
+* Table View: Added Filter support.
+
+* Data Source: Weather Extension Data Import now supports list of values for Country Network and Station parameters.
+* Data Source: Added a support for Timezone for the CSV Import.
+* Data Source: Google Sheets: Added 'Auto Detect Data Type' checkbox next to Run button.
+
+* Data Wrangling: Added 'Remove Outliers / Keep Outliers' as the Filter's operators.
+* Data Wrangling: Added 'Previous' and 'Next' options for Window Function column menu.
+* Data Wrangling: Added an encoding property inside the Merge Data with 'bind_rows' option.
+* Data Wrangling: Added a Window Calculation menu for the Date and POSIXc columns.
+
+* Chart: Added the 'Limit' feature for Group By, Repeat By and Color By options.
+* Chart: Added an 'Odds' calculation for the Logical data type columns.
+* Chart: Error Bar: The Reference Line is now supported for Error Bar.
+* Chart: Heatmap: It now exports the data as it is shown in the Heatmap chart, which is in the wide format rather than in the long format.
+* Chart: Map: Added a 'Standard' type to make the map creation easier. This is only for World Countries, US States, US Counties, Japan Prefectures for now.
+* Chart: Map: Supports more granular level of the zoom in and out.
+* Chart: Support multiple reference lines for X-Axis.
+* Chart: Support showing the label text for the X-Axis reference lines (the vertical ones) on the plot area.
+
+* Analytics: Survival Forest: We have added a new Random Survival Forest under the Analytics View
+* Analytics: Cox Regression: We have added a Prediction tab (partial dependence plot) to show the predicted values based on the predictor values.
+* Analytics: Cox Regression: Added a Data tab to show the prediction result.
+* Analytics: Cox Regression: Added 'Outlier Removal' as the data pre-processing section in the property.
+* Analytics: Cox Regression: Added an Importance (variable importance) tab to show which predictor variables are more important.
+* Analytics: Cox Regression: Added a Survival Curve tab to show impacts on the survival curve for each predictor variable.
+* Analytics: Survival: Added the "Auto" mode for the Period, which sets an appropriate period based on the data.
+* Analytics: We have added Permutation Importance for all the prediction models including Linear Regression, Logistic Regression, GLM (Poisson, Binomial, and Gaussian families), Cox Regression, Random Survival Forest. Decision Tree and Random Forest have already been using it. With this, you will have a consistent way for looking at the importance among the models.
+* Analytics: We have added the ROC tab to show the ROC curve for Binary Classification types.
+* Analytics: Charts under the Prediction tab (as formally known as "Effects") are now sorted based on the variable importance scores.
+* Analytics: Survival Curve: We have combined the Survival Curve and Survival Curve with Confidence Interval tabs into one. Now you can control whether showing the confidence interval or not by clicking on a radio box.
+* Analytics: Added 'Effect Size (Epsilon Squared)' for Kruskal-Wallis Test.
+
+
+
+### Bug Fixes
+
+* General: After canceling a process, an error dialog with 'This process is canceled.' message showed up where it was not needed.
+* General: When opening a project, the Chat icon was displayed even when you didn't click on the 'Questions?' button.
+* General: The 'Latest Version Available' Button was not displayed even though new version was available.
+* General: When a connection error happens, could not go into offline mode even after clicking the 'Go Offline Mode' button on Connection Error Dialog.
+
+* Data Source: Could not Import an EDF file if it included sample data with invalid Japanese characters.
+* Data Source: Fixed incorrect help link for MS SQL Server Connection.
+
+* Data Wrangling: Removing Cache from a step didn't update the cache stale status.
+* Data Wrangling: On the Filter Dialog, it didn't clear the value when switching the column selection to a column with a different data type.
+* Data Wrangling: On Windows, "Replace Values" Step (recode and case_when function) on a multibyte character column broke encoding property of the column, which caused garbling of the texts in later steps such as Merge Step.
+* Data Wrangling: When exporting POSIXct data to a CSV file, it didn't honor Timezone information and exported it as UTC.
+* Data Wrangling: When column names used in an expression contain certain Japanese characters, 'Only ASCII characters are supported' message was displayed in Mutate Dialog.
+* Data Wrangling: On Windows, after merging data frames, Japanese data got garbled.
+* Data Wrangling: One Hot Encoding did not work in Japanese UI.
+* Data Source: After OAuth token sync was done, it still opened the Add Connection dialog where it shouldn't.
+* Data Wrangling: Removed unnecessary sub-menu under 'Remove Columns' from multi column menu.
+* Data Wrangling: Chart Filter didn't recognize the updated column data type.
+* Data Wrangling: Analytics under a branch data frame disappears when the parent data frame's step was deleted.
+* Data Wrangling: When hovering a mouse over Remote File Data Source Step, the URL for the remote file was not fully visible.
+
+* Chart: The Show Detail Dialog didn't show data for a Heatmap when the X or Y axis is categorized.
+* Chart: Error Bar: Ratio calculation was incorrect when 'Number of Rows' was assigned to Y Axis.
+* Chart: Now clicking 'Cancel' button in the custom function dialog would ask whether you want to delete the custom function when you have an invalid expression.
+* Chart: When an OAuth token expiration is detected while refreshing the chart data, it would open the re-authorization dialog.
+* Chart: Show Details Dialog didn't show any data when assigning a numeric column to Color with 'Outlier' categorization being applied.
+* Chart: The sort icon was not shown in the Pivot Table's total column header when embedded in Note.
+* Chart: When navigating between data frames, Chart or Analytics level filter buttons were truncated.
+* Chart: Negative numbers as the Cutting Point values were not handled correctly in Category Setting dialog.
+* Chart: Custom Calculation dialog shows an error "Object Custom not found" when you use the 'Limit' in Bar chart.
+
+* Analytics: When moving among analytics chart tabs, unnecessary thumbnail generation happened even when there was no update.
+* Analytics: On Windows, the bottom of the Column Selection Dialog was not fully visible when creating a Logistic Regression Analytics.
+* Analytics: '(NA)' group showed up at the top in the "Group" LOV in Cox Regression.
+* Analytics: When an analytics metadata file was broken, it didn't open the data frame properly.
+* Analytics: Correlation: Selecting "Only lower triangle" option in the property caused an error.
+* Analytics: XGBoost: It now works with data with NAs.
+* Analytics: When you run Random Forest, it shows "TypeError: r[e.facet].push is not a function" error if you have a text 'map' in the column name for 'Repeat By'.
+* Analytics: The metrics of F Score, Precision, Recall, Accuracy Rate were not consistent between the Step and the Analytics view for Random Forest because the underlying model parameters were using different default values. The model parameters including the random seed and the number of trees are now set to the same default values.
+
+* Note: Numbers in Table became links if you viewed an exported HTML on Windows Edge
+* Note: Refreshing a note showed an error when the referencing analytics was already removed.
+
+* Dashboard: Thumbnail image for a chart and analytics didn't show up when it's added to a dashboard by clicking the "Add to Dashboard" button.
+* Dashboard: Creating a dashboard with duplicated name was not prevented.
+* Dashboard: When opening a chart on a main Window from a Dashboard in a separate window,  "Add To Dashboard" dialog in a main window didn't respond and prevented any operation on main window.
+* Dashboard: When the thumbnail image was not available, the description for 'Number' chart was displayed outside of the layout box.
+
+* Parameter: Default value was not set on a numeric multi-select list of values.
+
+* R Script: Supported 'Control + /' (Command +/ for Mac) shortcut key for comment out multiple lines R script.
+
+
 ## 5.5.6
 
 Released on 4/22/2020

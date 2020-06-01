@@ -37,7 +37,7 @@ The past recording and tutorial slides can be found at the [workshop page](https
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://zoom.us/j/331585134)
 
-This is a part of the Data Visualization Workshop. In this seminar, we'll focus on how to visualize Time Series data effectively.
+This is a part of the Data Visualization Workshop. In this seminar, we'll focus on how to visualize the variance and the correlation effectively.
 
 * Understanding Variance with Histogram, Density, Boxplot, Violin charts
 * Understanding Correlation with Scatter, Boxplot charts
@@ -51,7 +51,7 @@ The past recording and tutorial slides can be found at the [workshop page](https
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://zoom.us/j/331585134)
 
-This is a part of the Data Visualization Workshop. In this seminar, we'll focus on how to visualize the variance and the correlation.
+This is a part of the Data Visualization Workshop. In this seminar, we'll focus on how to visualize the uncertainty with Error Bar.
 
 * Introduction to Error Bar chart
 * Introduction to Confidence Interval
@@ -71,7 +71,7 @@ This is a part of the Data Visualization Workshop. In this seminar, we'll focus 
 * Create Calculation
 * Date / Time Sensitive Data Filtering
 * Text Data Wrangling
-* Order Categorical Values with Factor 
+* Order Categorical Values with Factor
 
 The past recording and tutorial slides can be found at the [workshop page](https://exploratory.io/note/kanaugust/Data-Visualization-Workshop-YAZ6azM0MU).
 

@@ -9,7 +9,7 @@ The Custom Function feature allows you to define your own aggregation function a
 * Pie / Ring: Value
 * Bubble: X-Axis, Y-Axis, Color, Size
 * Error Bar: Y-Axis
-* Map - Area: Color
+* Map - Extension: Color
 * Map - Long/Lat: Color, Size
 * Heatmap: Color
 * Contour: Color

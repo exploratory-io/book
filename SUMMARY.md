@@ -4,6 +4,7 @@
 
 
 * [Product Features]()
+  * [Summary View](summary/summary.md)]
   * [Dashboard](markdown/markdown-dashboard.md)]
   * [Dashboard (日本語)](markdown/markdown-dashboard_ja.md)]
   * [Note](markdown/markdown-note.md)
@@ -127,8 +128,9 @@
      * [Boxplot](viz/boxplot.md)
      * [Violin](viz/violin.md)
      * [Error Bar](viz/errbar.md)
-     * [Map - Area](viz/map.md)
-     * [Map - Long/Lat](viz/geojson.md)
+     * [Map - Standard](viz/easymap.md)
+     * [Map - Extension](viz/geojson.md)
+     * [Map - Long/Lat](viz/map.md)
      * [Map - Heatmap](viz/maphmap.md)
      * [Heatmap](viz/heatmap.md)
      * [Contour](viz/contour.md)

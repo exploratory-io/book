@@ -13,7 +13,7 @@ You can categorize numeric values inside the chart. Category is supported in fol
 * Boxplot (X-Axis, Color, Repeat By)
 * Violin (X-Axis, Color, Repeat By)
 * Error Bar (X-Axis, Color, Repeat By)
-* Area Map (Color)
+* Map - Extension (Color)
 * LongLat Map (Group By, Color)
 * Heatmap (X-Axis, Y-Axis, Repeat By)
 
