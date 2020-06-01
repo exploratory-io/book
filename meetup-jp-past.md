@@ -1,5 +1,8 @@
 # #13 - 2020/5/29(金) オンライン開催
 
+<img src="https://www.dropbox.com/s/kns9gf28zetgzzp/online_meetup_v13.png?raw=1" width="100%" />
+
+
 ## 開催要項
 
 * 日時: 2019年 5月 29日 (金) 13:00〜15:00（12:45開場）
