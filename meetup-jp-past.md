@@ -1,4 +1,4 @@
-# #13 - 2020/5/29(金) オンライ開催
+# #13 - 2020/5/29(金) オンライン開催
 
 ## 開催要項
 * 日時: 2019年 5月 29日 (金) 13:00〜15:00（12:45開場）
@@ -28,7 +28,9 @@
 <script async class="speakerdeck-embed" data-id="38e9ffbfeb50458b878308af53f95d2c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
+
 ---
+
 
 
 # #12 - 2020/1/31(金) @ラクスル株式会社
