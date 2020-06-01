@@ -1,3 +1,36 @@
+# #13 - 2020/5/29(金) オンライ開催
+
+## 開催要項
+* 日時: 2019年 5月 29日 (金) 19:00〜21:00（18:45開場・受付開始）
+* 会場: ラクスル株式会社
+
+## アジェンダ
+
+* Exploratory v6.0のご紹介 （Exploratory CEO 西田勘一郎）
+* 「データの民主化」の取り組みについて （Chatwork株式会社 田中 亜希様）
+* GPSデータを使った人の移動の可視化 （レイ・フロンティア株式会社 久保 翔太様）
+* クラスタリングから得たインサイトの駐車サービスへの活用例 （株式会社アイネット 宮岡 優太様）
+* コラボレーション・サーバを活用したインサイトの共有 （Beacon Communications k.k. 富樫 学様）
+* 「データ分析の民主化」の取り組みについて （株式会社ネオキャリア 鈴木 海斗様）
+
+## スライド
+
+### Chatwork株式会社 田中 亜希様
+
+<script async class="speakerdeck-embed" data-id="66ab066223cd40358414bf8ce5afc1cc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### レイ・フロンティア株式会社 久保 翔太様
+
+<script async class="speakerdeck-embed" data-id="34f68ea306ca4efba85872dddcc47b3c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### Beacon Communications k.k. 富樫 学様
+
+<script async class="speakerdeck-embed" data-id="38e9ffbfeb50458b878308af53f95d2c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+---
+
+
 # #12 - 2020/1/31(金) @ラクスル株式会社
 
 <img src="https://www.dropbox.com/s/7dw77dagect9lvh/meetup12.jpg?raw=1" width="100%" />
