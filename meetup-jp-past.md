@@ -1,4 +1,4 @@
-# #13 - 2020/5/29(金) オンライン開催
+# #13 - 2020/5/29(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/kns9gf28zetgzzp/online_meetup_v13.png?raw=1" width="100%" />
 
