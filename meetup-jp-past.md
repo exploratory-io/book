@@ -22,7 +22,7 @@
 
 <iframe width="897" height="520" src="https://www.youtube.com/embed/nJIv6sgShsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
+<br>
 
 <script async class="speakerdeck-embed" data-id="931f2186e2034e958207897e2a593b22" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
