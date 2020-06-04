@@ -20,7 +20,7 @@
 
 ### Exploratory 西田勘一郎
 
-<iframe width="850" height="492" src="https://www.youtube.com/embed/nJIv6sgShsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="690" height="400" src="https://www.youtube.com/embed/nJIv6sgShsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
