@@ -18,6 +18,11 @@
 
 ## スライド
 
+### Exploratory 西田勘一郎
+
+<script async class="speakerdeck-embed" data-id="931f2186e2034e958207897e2a593b22" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
 ### Chatwork株式会社 田中 亜希様
 
 <script async class="speakerdeck-embed" data-id="66ab066223cd40358414bf8ce5afc1cc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
