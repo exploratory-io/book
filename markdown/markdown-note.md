@@ -13,15 +13,14 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 ### Side by Side Mode
 
 
-画面分割モードでは、左側に編集画面、右側にプレビュー画面が同一画面上に横並びで表示されます。画面分割モードでは、左側で編集をしながら、リフレッシュボタンを押すことで随時、出力を確認することができます。
+In Side by Side mode, you can see the edit screen and the preview screen side by side in a single window. You can click the refresh button anytime to confirm the preview while you are editing. 
 
 ![](images/note3en.png)
 
 
-
 ### Switching to Side by Side Mode
 
-シングル・ビュー・モードから画面分割モードに切り替えるには、画面左上の切り替えボタンを押します。
+You can click the "Switch to Side By Side Mode" button to switch from Single View mode to Side By Side mode. 
 
 ![](images/note6en.png)
 
@@ -32,13 +31,15 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 
 ### Single View Mode
 
-シングル・ビュー・モードは、編集画面とプレビュー画面が独立しています。編集画面とプレビュー画面の切り替えは、画面左上の「編集」「実行」ボタンで行うことができます。シングル・ビュー・モードは画面いっぱいに表示が行えるので、より実際のブラウザの画面に近い状態で編集およびプレビューを行うことができます。
+In Single View mode, you can show either the edit screen or the preview screen at a time. You can switch the edit screen or the preview screen by clicking "Edit" or "Run" button at the top left corner of the screen. 
 
-編集画面
+In Single View mode, you can use the full window area for editing and previewing. It is useful if you want to check how users actually view your note. 
+
+Edit screen
 
 ![](images/note2en.png)
 
-プレビュー画面
+Preview screen
 
 ![](images/note1en.png)
 
@@ -46,7 +47,8 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 
 ### Switching to Single View Mode
 
-画面分割モードからシングル・ビュー・モードに切り替えるには、画面左上の切り替えボタンを押します。
+
+You can click the "Switch to Single View Mode" button to switch from ModeSide By Side mode to Single View mode. 
 
 
 ![](images/note5en.png)
@@ -55,29 +57,29 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 
 ## Export
 
-ノートを様々な形でエクスポートすることができます。エクスポートのメニューは、画面右上のエクスポートボタンからアクセスすることができます。
+You can export your note in various formats. You can access to the export menus from the Export button at the top right corner of the screen. 
 
 ![](images/note4en.png)
 
 
 ### Open in Web Browser
 
-プレビューをブラウザで開いて確認することができます。
+You can preview the output in the web browser. 
 
 
 ### Export as HTML
 
-ノートの出力をHTML形式でエクスポートすることができます。
+You can export the note output in HTML format. 
 
 ### Export as Word Document 
 
-ノートの出力をワード形式の文書でエクスポートすることができます。
 
-ワード文書にエクスポートは、シングル・ビュー・モードから現在行うことができません。シングル・ビュー・モードの起動方法はこちらをご覧ください。
+You can export the note output in Microsoft Word format. 
 
-You can see [here](#switching-to-single-view-mode) how to switch to Single View Mode.
+The "Export as Word Document" feature is only available in Single View mode. You can see [here](#switching-to-single-view-mode) for how to switch to Single View mode.
 
 
 ### Export as EDF
 
-ノートをEDF形式でエクスポートすることができます。エクスポートされたEDFには、ノートと、ノートに含まれるチャート、データフレームなど、ノートを再現するのに必要なものがすべてエクスポートされます。
+
+You can export the note output in EDF format. The exported EDF includes not only the text in the note, but also charts, analytics, data frames and others referenced in the note. You can import that EDF anytime to reproduce the note completely. 
