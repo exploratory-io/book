@@ -24,8 +24,6 @@ Exploratoryデスクトップでシンプル・マークダウン・エディタ
 ![](images/note4ja.png)
 
 
-![](images/note3ja.png)
-
 
 
 
