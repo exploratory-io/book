@@ -1,3 +1,49 @@
+# #13 - 2020/5/29(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/kns9gf28zetgzzp/online_meetup_v13.png?raw=1" width="100%" />
+
+## 開催要項
+
+* 日時: 2019年 5月 29日 (金) 13:00〜15:00（12:45開場）
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.0のご紹介 （Exploratory CEO 西田勘一郎）
+* 「データの民主化」の取り組みについて （Chatwork株式会社 田中 亜希様）
+* GPSデータを使った人の移動の可視化 （レイ・フロンティア株式会社 久保 翔太様）
+* クラスタリングから得たインサイトの駐車サービスへの活用例 （株式会社アイネット 宮岡 優太様）
+* コラボレーション・サーバを活用したインサイトの共有 （Beacon Communications k.k. 富樫 学様）
+* 「データ分析の民主化」の取り組みについて （株式会社ネオキャリア 鈴木 海斗様）
+
+## スライド
+
+### Exploratory 西田勘一郎
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/nJIv6sgShsQ?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+<br>
+
+<script async class="speakerdeck-embed" data-id="931f2186e2034e958207897e2a593b22" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+### Chatwork株式会社 田中 亜希様
+
+<script async class="speakerdeck-embed" data-id="66ab066223cd40358414bf8ce5afc1cc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### レイ・フロンティア株式会社 久保 翔太様
+
+<script async class="speakerdeck-embed" data-id="34f68ea306ca4efba85872dddcc47b3c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### Beacon Communications k.k. 富樫 学様
+
+<script async class="speakerdeck-embed" data-id="38e9ffbfeb50458b878308af53f95d2c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+
+---
+
+
 # #12 - 2020/1/31(金) @ラクスル株式会社
 
 <img src="https://www.dropbox.com/s/7dw77dagect9lvh/meetup12.jpg?raw=1" width="100%" />
