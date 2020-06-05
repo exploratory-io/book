@@ -15,17 +15,17 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 
 画面分割モードでは、左側に編集画面、右側にプレビュー画面が同一画面上に横並びで表示されます。画面分割モードでは、左側で編集をしながら、リフレッシュボタンを押すことで随時、出力を確認することができます。
 
-![](images/note1ja.png)
+![](images/note3en.png)
+
 
 
 ### Switching to Side by Side Mode
 
 シングル・ビュー・モードから画面分割モードに切り替えるには、画面左上の切り替えボタンを押します。
 
-![](images/note4ja.png)
+![](images/note6en.png)
 
 
-![](images/note3ja.png)
 
 
 
@@ -36,11 +36,12 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 
 編集画面
 
-![](images/note6ja.png)
+![](images/note2en.png)
 
 プレビュー画面
 
-![](images/note2ja.png)
+![](images/note1en.png)
+
 
 
 ### Switching to Single View Mode
@@ -48,7 +49,7 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 画面分割モードからシングル・ビュー・モードに切り替えるには、画面左上の切り替えボタンを押します。
 
 
-![](images/note3ja.png)
+![](images/note5en.png)
 
 
 
@@ -56,7 +57,7 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 
 ノートを様々な形でエクスポートすることができます。エクスポートのメニューは、画面右上のエクスポートボタンからアクセスすることができます。
 
-![](images/note5ja.png)
+![](images/note4en.png)
 
 
 ### Open in Web Browser
@@ -73,6 +74,8 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 ノートの出力をワード形式の文書でエクスポートすることができます。
 
 ワード文書にエクスポートは、シングル・ビュー・モードから現在行うことができません。シングル・ビュー・モードの起動方法はこちらをご覧ください。
+
+You can see [here](#switching-to-single-view-mode) how to switch to Single View Mode.
 
 
 ### Export as EDF
