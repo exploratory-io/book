@@ -10,3 +10,5 @@ You can take a look at [this 'Remark.js' wiki page](https://github.com/gnab/rema
 ## Parameter
 
 If you add charts, analytics or data frames that contain the parameters to the slides, those parameters will show up automatically when you run the slides. You can change the parameters to update charts and analytics in the slides on the fly. 
+
+Please see [here](parameter/parameter.md) for more details about Parameter.
