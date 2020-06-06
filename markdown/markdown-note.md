@@ -6,6 +6,11 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 
 
 
+## Parameter
+
+If you add charts, analytics or data frames that contain the parameters to the note, those parameters will show up automatically when you run the note. You can change the parameters to update charts and analytics in the note on the fly. 
+
+
 
 
 ## View Mode
