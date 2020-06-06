@@ -1,5 +1,41 @@
 # Release Note
 
+## 6.0.1
+
+Released on 6/4/2020.
+
+### Enhancements
+
+* Summary/Table: Now it supports "Case Insensitive" option for the text filter condition.
+* Data Wrangling: Now the "Not Equal" operator has an option to either keep NA or remove NA.
+* Data Wrangling: On Custom R Script editor and R Script Data Source Import Dialog, added available keyboard shortcut list such as 'Command + /' for comment out.
+* Data Wrangling: Added 'Keep NA' option to the Filter's 'Not Equal' operator.
+* Chart/Analytics: Changed the filter button color to white.
+* Analytics: Binning/Other Group support in explanatory variables.
+* Analytics: Error bar charts for ANOVA and Kruskal-Wallis test are now sorted by mean of the categories.
+* Analytics: Prediction tab for Linear Regression now shows the coefficient and p value in the chart pop-up.
+* Data Source: We now support the scheduling for Treasure Data, Weather Data, and Stock Prices Data at Exploratory Cloud (exploratory.io) and Exploratory Collaboration Server.
+
+### Bug Fixes
+
+* Summary:  The column search box overflowed if the data wrangling step pane was hidden.
+* Summary: 'Other' category was showing 0 in the Highlight mode.
+* Summary: Duplicated column names were shown in the column selection dropdown in the correlation mode.
+* Data Source: Removed unnecessary 'Detect Data Type' checkbox from the Data Catalog's data import dialog.
+* Data Source Extension: New Version available message was displayed incorrectly even if there was no new version.
+* Data Source Extension: Weather: Selecting the station name with the arrow keys was not working properly.
+* Data Source Extension: Weather: Some of the station names were duplicated or truncated. 
+* Data Wrangling: The work-in-progress step with an error now have the delete icon so that users can delete it explicitly.
+* Data Wrangling: Rename and Text Wrangling Dialog didn't work with a column whose name contains special characters such as backslash "\".
+* Data Wrangling: Opening a data frame exported from Analytics hangs in some occasions.
+* Data Wrangling: The Data Frame dropdown list inside the Merge dialog was not displayed when a Note is opened with a separate window and there was a folder in the data frame list.
+* Chart: Map - Standard: Japan Prefecture: "Kyoto" was not mapped correctly.
+* Chart: Chart rendering failed with an error when double quotes are used for the display name inside the Edit Display Name dialog.
+* Analytics: "Group" dropdown selection was reset if you moved to the other Analytics tabs.
+* Parameter: When binding large numeric value such as 100000 to a SQL query, the numeric value became scientific notation and made the SQL query invalid.
+* General: Clicking the Cancel button was showing an error dialog.
+
+
 ## 6.0
 
 Released on 5/19/2020.
@@ -8,7 +44,7 @@ Released on 5/19/2020.
 
 * Summary View: Added a new 'Highlight' mode to highlight a matching data based on a condition you create.
 * Summary View: Added a new 'Correlate' mode to explore the correlation among the variables.
-* Summary View: Switched to a parallel processing engine to calculate the chart data and the metrics. 
+* Summary View: Switched to a parallel processing engine to calculate the chart data and the metrics.
 
 * Table View: Added Filter support.
 
