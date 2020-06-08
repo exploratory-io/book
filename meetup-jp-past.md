@@ -39,6 +39,9 @@
 
 <script async class="speakerdeck-embed" data-id="38e9ffbfeb50458b878308af53f95d2c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+### 株式会社ネオキャリア 鈴木 海斗様
+
+<script async class="speakerdeck-embed" data-id="b3393964d3ff434881882128a3b2511d" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 ---
