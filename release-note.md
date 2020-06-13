@@ -1,5 +1,21 @@
 # Release Note
 
+## 6.0.2
+
+Released on 6/13/2020.
+
+* Data Source: MySQL: Changed default data type from integer64 to numeric for bigint data.
+* Summary: If POSIXct column has an NA value in the first row, it does not show the timezone info in Summary view.
+* Data Wrangling: After deleting a step, Table View did not get refreshed.
+* Data Wrangling: Clicking a link inside popup help didn't open external browser and showed the linked page content inside Exploratory Desktop.
+* Data Wrangling: When selecting the Rename from the column header menu, the Rename dialog did not show up if the previous step was also the Rename.
+* Publish: Comment is now supported when Publishing Note, Dashboard, Slide, Data, Chart, and Analytics and these comments are shown under the History on exploratory.io cloud server or Exploratory Collaboration Server.
+* Chart: Unexpected "%" signs showed up in Line chart if I set Color, used "% of" window calculation and turned on "Show Values on Plot".
+* Chart: Standard Map: Zoom level was not saved when you changed a column assignment.
+* Chart: After updating a step, it cleared column assignments made to a Pivot Table.
+* Publish: "Add or Remove Users" link is added to the Publish dialog for Data, Charts, and Analytics.
+
+
 ## 6.0.1
 
 Released on 6/4/2020.
@@ -24,7 +40,7 @@ Released on 6/4/2020.
 * Data Source: Removed unnecessary 'Detect Data Type' checkbox from the Data Catalog's data import dialog.
 * Data Source Extension: New Version available message was displayed incorrectly even if there was no new version.
 * Data Source Extension: Weather: Selecting the station name with the arrow keys was not working properly.
-* Data Source Extension: Weather: Some of the station names were duplicated or truncated. 
+* Data Source Extension: Weather: Some of the station names were duplicated or truncated.
 * Data Wrangling: The work-in-progress step with an error now have the delete icon so that users can delete it explicitly.
 * Data Wrangling: Rename and Text Wrangling Dialog didn't work with a column whose name contains special characters such as backslash "\".
 * Data Wrangling: Opening a data frame exported from Analytics hangs in some occasions.
