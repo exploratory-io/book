@@ -13,7 +13,7 @@ The past recording and tutorial slides can be found at the [workshop page](https
 ----
 
 # Data Visualization Workshop Part 5 - Data Wrangling for Data Visualization
-## Date/Time: TBD
+## Date/Time: 7/1/2020 (Wed)
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://zoom.us/j/331585134)
 
