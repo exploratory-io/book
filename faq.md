@@ -38,6 +38,33 @@ When you downgrade, the prorated amount difference for the rest of the period (y
 When you upgrade, the prorated amount difference for the rest of the period will be added to the charge for the new plan at the beginning of the next period.
 
 
+## How can I get an invoice?
+
+An invoice will be delivered to your email address every time the charge is made.
+
+
+## How can I change my plan? 
+
+First, you can open the [Account Setting Page](https://exploratory.io/account/settings). You need to login to open this page. Click the "Upgrade Plan" link below the plan box. 
+
+![](https://www.dropbox.com/s/lllbvpj6ahsgipf/payment1.jpeg?raw=1) 
+
+Then, it opens up the Plan page. Click to select a new plan that you want. If the new plan is a paid plan, choose a payment term (yearly or monthly) and payment method info. If you are still in a trial period, you don't need to enter the payment method now. 
+
+![](https://www.dropbox.com/s/n6boqcyq4ljn2wg/payment2.png?raw=1) 
+
+You can check whether you are still in a trial period or not by looking at the top right of the Plan page. 
+
+![](https://www.dropbox.com/s/4voqobx85e1ij8g/payment3.png?raw=1) 
+
+Once you update the info, check out the "Terms for the Service" and check the checkbox, then click the "Upgrade plan" to finalize it. 
+
+If you see the "You plan is updated" message, the plan update is done. If you see any error, problem, or any questions, please feel free to contact [us](mailto:support@exploratory.io). 
+
+![](https://www.dropbox.com/s/lnbyfrvsb3pcxcm/payment4.png?raw=1) 
+
+
+
 ## How can I cancel my plan?
 
 You can cancel the plan anytime from your account page with just a click of a button. Your subscription will expire at the end of the current subscription period.
