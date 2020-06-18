@@ -55,7 +55,7 @@ You can click this button to view the chart in the chart view.
 
 You can select a column by clicking a panel. You can also choose multiple panels by Shift+Click or Control(Command)+Click. 
 
-After selecting columns, you can open the column menu and select an opeation to perform the operation to multiple columns at a time.
+After selecting columns, you can open the column menu and select an operation to perform the operation to multiple columns at a time.
 
 ![](images/summary4.png)
 
@@ -69,7 +69,7 @@ You can search columns by clicking the "Search" icon and entering a text to the 
 
 
 ## Highlight Mode
-In Highlight mode, you can highlight the distribution of data that you are inteterested in. 
+In Highlight mode, you can highlight the distribution of data that you are interested in. 
 
 ![](images/hl3.png)
 
