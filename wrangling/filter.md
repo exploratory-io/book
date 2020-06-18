@@ -25,6 +25,8 @@ Return rows with matching conditions
 
 ### Operators
 
+When creating a filter, Exploratory Desktop supports below operators for each column data type.
+
 #### Numeric
 - Equal To
 - Not Equal To
