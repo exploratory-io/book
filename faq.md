@@ -38,10 +38,17 @@ When you downgrade, the prorated amount difference for the rest of the period (y
 When you upgrade, the prorated amount difference for the rest of the period will be added to the charge for the new plan at the beginning of the next period.
 
 
-## How can I get an invoice?
+## How can I get a receipt?
 
-An invoice will be delivered to your email address every time the charge is made.
+A receipt will be delivered to your email address every time the charge is made.
 
+## How can I get a receipt in a different format? 
+
+We issue a customized version of recept upon requests for Business plan users. Please contact [us](mailto:support@exploratory.io). 
+
+## How can I get an invoice? 
+
+We issue an invoice upon requests for Business plan users. Please contact [us](mailto:support@exploratory.io). 
 
 ## How can I change my plan? 
 
