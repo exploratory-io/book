@@ -13,7 +13,7 @@ You can add a row by passing Column Name-value pairs.
 
 1. Select Column that you want to set a value.
 2. Enter a value for the column in the Expression field.
-3. Click "Run" to Sample data frame.
+3. Click "Run" to add a new row.
 
 If you want to enter values for the other columns in the row, you can click "+Add New" on the "Add Row Manually" step.
 
