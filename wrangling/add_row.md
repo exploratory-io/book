@@ -11,7 +11,7 @@ You can add a row by passing Column Name-value pairs.
 
 ![](images/add_row2.png)
 
-1. Select Column - you want to set value.
+1. Select Column that you want to set a value.
 2. Enter Value for the column in the Expression field.
 3. Click "Run" to Sample data frame.
 
