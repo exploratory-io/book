@@ -1,5 +1,27 @@
 # Release Note
 
+## 6.0.3
+
+Released on 6/23/2020
+
+This release is to certify R 4.0.
+
+The installation of v6.0.3 will automatically install R 4.0, which will make all the R packages you have installed in the past invalid and you will be asked to re-install them so that they will be compatible with R 4.0.
+
+### Enhancements
+
+* Summary: On Summary View, the Correlation/Highlight mode is now kept even after a wrangling step is added, updated, deleted, or moved to a different wrangling step.
+* Chart: Chart now keeps the column assignments (with warning icons) even when the columns don't exist at the current step.
+* Chart: The Custom Calculation dialog shows a hint text along with an example.
+* Chart: Changed the default number for the Limit's Top/Bottom setting.
+* Reports: When inserting a Chart/Analytics to a Note or Slide, it now adds the title of the Chart/Analytics along with the comment text.
+
+### Bug Fixes
+
+* Data Source: Google Sheets: When upgrading Exploratory Desktop from a version before 5.5 to the 6.0, there was a case that old OAuth token was mistakenly used and 403 permission denied error was raised.
+* Chart: Error Bar: Number of TRUE calculation was incorrect in Ratio mode.
+* Data Wrangling: Clicking the help URL link on the Add Row Dialog didn't open the help page.
+
 ## 6.0.2
 
 Released on 6/13/2020.
