@@ -113,6 +113,7 @@
    * [Remove Empty Columns](wrangling/remove_empty_cols.md)
    * [Clean Column Names](wrangling/clean_names.md)
    * [Window Calculation](wrangling/window-calculation.md)
+   * [Add Row](wrangling/add_row.md)
 
 
 * [Visualization](chart.md)
