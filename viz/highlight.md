@@ -13,8 +13,8 @@ By using the Highlight feature, you can change the color of specific markers suc
 * Boxplot 
 * Violin 
 * Error Bar 
-* Area Map 
-* Long/Lat Map 
+* Map - Extension
+* Map - Long/Lat
 
 
 ## How to Use 

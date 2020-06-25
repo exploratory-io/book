@@ -17,6 +17,8 @@ After filling the below database information:
 - Username - Username of the SQL Server
 - Password - Password of the SQL Server
 
+To Install ODBC Driver for SQL Server, please follow the [instruction](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15). 
+
 Click ‘Test Connection’ button to make sure the information is correct, before you save it.
 
 

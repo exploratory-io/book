@@ -4,8 +4,10 @@
 
 
 * [Product Features]()
-  * [Dashboard](markdown/markdown-dashboard.md)]
-  * [Dashboard (日本語)](markdown/markdown-dashboard_ja.md)]
+  * [Summary View](summary/summary.md)
+  * [Table View](table/table.md)
+  * [Dashboard](markdown/markdown-dashboard.md)
+  * [Dashboard (日本語)](markdown/markdown-dashboard_ja.md)
   * [Note](markdown/markdown-note.md)
   * [Note (日本語)](markdown/markdown-note_ja.md)
   * [Presentation Slides](markdown/markdown-slide.md)
@@ -110,6 +112,8 @@
    * [Remove Empty Rows](wrangling/remove_empty_rows.md)
    * [Remove Empty Columns](wrangling/remove_empty_cols.md)
    * [Clean Column Names](wrangling/clean_names.md)
+   * [Window Calculation](wrangling/window-calculation.md)
+   * [Add Row](wrangling/add_row.md)
 
 
 * [Visualization](chart.md)
@@ -127,8 +131,9 @@
      * [Boxplot](viz/boxplot.md)
      * [Violin](viz/violin.md)
      * [Error Bar](viz/errbar.md)
-     * [Map - Area](viz/map.md)
-     * [Map - Long/Lat](viz/geojson.md)
+     * [Map - Standard](viz/easymap.md)
+     * [Map - Extension](viz/geojson.md)
+     * [Map - Long/Lat](viz/map.md)
      * [Map - Heatmap](viz/maphmap.md)
      * [Heatmap](viz/heatmap.md)
      * [Contour](viz/contour.md)

@@ -24,6 +24,16 @@ Create a connection following [this instruction](https://blog.exploratory.io/how
 
 - Set parameters for how to read the data.
 
+Now you can set below parameters:
+
+1. First row as header - Set Yes if the first row is the header row.
+
+2. Skip first N rows - Number of lines to skip before reading data
+
+3. Timezone - Timezone you want to use for the POSIXct columns
+
+4. Treat these as NA - Character vector of strings to interpret as missing values. 
+
 ![](images/import_gs_data.png)
 
 ## 4. Preview and Import

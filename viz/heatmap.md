@@ -10,6 +10,9 @@
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
 
 
+
+
+
 ## Category 
 
 You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
@@ -22,6 +25,14 @@ You can use the Custom Function feature to define your own aggregation function.
 ## Layout Configuration
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
+
+
+## Exporting Chart Data 
+
+Unlike the other chart types, if you export the Heatmap chart data, the data will be saved in in a wide format.  
+
+![](images/heatmap_export.png)
+
 
 ## Links
 

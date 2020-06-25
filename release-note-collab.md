@@ -1,5 +1,30 @@
 # Release Note
 
+## 6.0
+
+Released on 6/12/2020
+
+### Download Links
+
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.0.1.1.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.0.1.1.tar.gz)
+
+
+### Enhancements
+
+* Japanese translations for more UIs including Share, Schedule, and Parameter.
+* Added the Parameter support for Chart and Analytics.
+* You can write a message and send it when you share the published contents with others.
+* You can add a comment when you publish or republish. The comments can be viewed as 'History' by others. 
+* Support SMTP for sending out notification emails.
+
+### Bug Fixes
+
+* Changes made to a user's properties were not immediately reflected on the Admin UI.
+* Set "Shared with me" as a default scope if Viewer selects "My insight" menu from the user dropdown menu.
+* Schedule: After a long-running job, other jobs stayed in the queue and did not get processed.
+* Certified with Exploratory Desktop 6.0.1.
+
 ## 5.5.5
 
 Released on 3/26/2020

@@ -6,7 +6,9 @@
 * Line: Y-Axis
 * Scatter (No Aggregation): X-Axis, Y-Axis
 * Scatter (With Agggregation): X-Axis, Y-Axis
-
+* Histogram: X-Axis
+* Density Plot: X-Axis
+* Error Bar: Y-Axis
 
 Reference Line is available only when a numeric column is assigned to the target Axis. 
 
@@ -67,3 +69,32 @@ Following Reference Line types are available.
   * Solid
   * Dotted 
   * Dot and Dash
+  
+  
+  
+## Drawing Multiple Constant Reference Lines 
+
+You can render multiple Reference Lines in "Constant" Reference Line type. You can set multiple values separated by comma at "Constant Values". You can also define multiple labels separated by comma at "Constant Label". 
+
+Numeric Axis Example 
+
+![](images/refline6.png)
+
+Date Axis Example 
+
+![](images/refline7.png)
+
+## Showig Reference Line Labels on Plot Area
+
+You can show the Reference Line labels and values on the plot area. You can change the setting at "Show Text on Plot Area" in the Reference Line dialog.  
+
+![](images/refline5.png)
+
+
+The following options are available. 
+ 
+* None
+* Label Only 
+* Label and Value 
+
+Currently, "Show Text on Plot Area" option is available only for the vertical (X-Axis) Reference Lines. 
