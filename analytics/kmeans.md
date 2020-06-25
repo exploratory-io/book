@@ -9,7 +9,7 @@ Input data should contain following columns.
   * Subject Column - Value of the column is shown on the Scatter View as label of each dot, or as an item on mouse-over balloon. It is also used for color of Stack Bar View.
 
 ## Analytics Properties
-  * K-Means Clustering 
+  * K-Means Clustering
     * Number of Clusters - Set an integer number to decide how many clusters (groups) should be there in the outcome.
     * Max Iteration Times - The default is 10. The maximum number of cluster update iteration.
     * Trial Times - The default is 1. How many random initial configuration should be tried. The best result is chosen as the outcome.
@@ -45,3 +45,17 @@ Input data should contain following columns.
 5. Click Run button to run the analytics.
 6. Select view type by clicking view type link to see each type of generated visualization.
 
+### "Scatter" View
+"Scatter" View displays the scatter plot of observations (rows) with colors by the clusters.
+
+### "BoxPlot" View
+"BoxPlot" View displays boxplot that shows distributions of the variables for each cluster. Y-axis is always normalized so that the values of variables, which can be in very different scales, are comparable to each other.
+
+### "Error Bar" View
+"Error Bar" View displays means of variables for each cluster with error bars. Type of the error bars can be selected in the properties.
+
+### "Line" View
+"Line" View displays lines that represent individual observations, showing the values of the variables, with colors by the clusters. Y-axis is always normalized so that the values of variables, which can be in very different scales, are comparable to each other.
+
+### "Data" View
+"Data" View shows the original data with additional "cluster" column that tells which cluster each row belongs to.
