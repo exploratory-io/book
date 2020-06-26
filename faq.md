@@ -129,24 +129,9 @@ Unfortunately the configuration of R installed with Homebrew is not supported cu
 
 If you change the installation path for R and Git during the installation, you will see these errors. Please select the locations where R and Git are installed respectively in the pop-up UI and click OK. This will register the custom R and Git installed location and use them moving forward.
 
-## I can't open a project. I'm seeing a loading icon when I try to create a new project.
+## I can't open a project. How can I fix the issue?
 
-One possible reason for this is, your home directory path on your PC has a space(s). If that's the case please perform the following steps to workaround it.
-
-1. Create or pick a directory to install R packages for Exploratory, which does not have space in the path. Let’s say your home directory is '/Volumes/Another HD/kanaugust' and you created ‘/Users/KanAugust’ as a directory to install the R packages for Exploratory.
-2. Open ‘/Volumes/Another HD/kanaugust/.exploratory/userconf.json’ with text editor.
-3. Add “r_lib_path” attribute that specifies the directory you picked.
-Your userconf.json should look something like the following.
-
-{
-    "user": "kanaugust",
-    "r_lib_path": “/Users/KanAugust”
-}
-
-4. Restart Exploratory
-5. Follow the setup step.
-
-This will install the R packages to the specified location. After that, you should be able to open the project. Otherwise, please contact support@exploratory.io .
+Please refer the [Troubleshooting Guide](https://exploratory.io/note/exploratory/How-to-Fix-Common-Exploratory-Desktop-Problems-tsy2jVJ0RO) for the details.
 
 ## What version of Git is required?
 
