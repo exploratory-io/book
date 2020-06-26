@@ -131,7 +131,7 @@ If you change the installation path for R and Git during the installation, you w
 
 ## I can't open a project. How can I fix the issue?
 
-Please refer the [Trouble Shooting Guide](https://exploratory.io/note/exploratory/How-to-Fix-Common-Exploratory-Desktop-Problems-tsy2jVJ0RO) for the details.
+Please refer the [Troubleshooting Guide](https://exploratory.io/note/exploratory/How-to-Fix-Common-Exploratory-Desktop-Problems-tsy2jVJ0RO) for the details.
 
 ## What version of Git is required?
 
