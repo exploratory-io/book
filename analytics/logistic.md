@@ -5,7 +5,7 @@ Builds a logistic regression model to predict binary Target Variable column valu
 ## Input Data
 Input data should contain following columns.
 
-  * Target Variable - Column that has binary values to be predicted by the logistic regression model.
+  * Target Variable - A column that has logical values (TRUE/FALSE) to be predicted by the logistic regression model. (For how to convert other types of columns to logical type, take a look at the reference.)
   * Predictor Variable(s) - Column(s) that has values on which the prediction by logistic regression model is based.
 
 ## Analytics Properties
@@ -37,6 +37,7 @@ Input data should contain following columns.
       * Reserve Order in Data - Specified ratio of data that appears last are used as test data.
 
 ## How to Use This Feature
+
 1. Click Analytics View tab.
 2. If necessary, click "+" button on the left of existing Analytics tabs, to create a new Analytics.
 3. Select "Logistic Regression Analysis" for Type.
@@ -46,3 +47,6 @@ Input data should contain following columns.
 7. Click Run button to run the analytics.
 8. Select view type by clicking view type link to see each type of generated visualization.
 
+## Reference
+
+[データタイプをロジカル型に変換する方法](https://exploratory.io/note/GMq1Qom5tS/CGC0oYS8Gw)
