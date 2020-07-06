@@ -154,3 +154,4 @@
 * [テキスト分析](/howto?q=tag%3A%22text%20analysis%22&language=ja)
 * [Excelユーザー向けガイド](/howto?q=tag%3AExcel&language=ja)
 * [SaaS](/howto?tag/?q=tag:saas&language=ja)
+* [Google Analytics](/howto?q=tag%3A%22Google%20Analytics%22&language=ja)
