@@ -59,6 +59,7 @@
     <!--* [等高線プロット](/howto?q=tag%3ACountour&language=ja)-->
     <!--* [ナンバー](/howto?q=tag%3ANumber%20tag%3AVisualization&language=ja)-->
     * [ワードクラウド](/howto?q=tag%3AWordcloud&language=ja)
+    * [Custom R Viz](/howto?q=tag%3A%22custom%20r%20viz%22&language=ja)
   * 機能
     * [ピン](/howto?q=tag%3Apin%20-tag%3A%22Web%20Scraping%22&language=ja)
     * [色(グループ化)](/howto?q=tag%3AColor&language=ja)
@@ -143,6 +144,7 @@
     * [ダッシュボード](/howto?q=tag%3ADashboard&language=ja)
     * [ノート](/howto?q=tag%3Anote&language=ja)
     * [スライド](/howto?q=tag%3Aslide&language=ja)
+    * [Custom R Viz](/howto?q=tag%3A%22custom%20r%20viz%22&language=ja)
 
 ----
 * [共有方法](/howto?q=tag%3AShare&language=ja)
@@ -152,3 +154,4 @@
 * [テキスト分析](/howto?q=tag%3A%22text%20analysis%22&language=ja)
 * [Excelユーザー向けガイド](/howto?q=tag%3AExcel&language=ja)
 * [SaaS](/howto?tag/?q=tag:saas&language=ja)
+* [Google Analytics](/howto?q=tag%3A%22Google%20Analytics%22&language=ja)
