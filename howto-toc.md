@@ -49,7 +49,8 @@
 ----
 
 * [Data Wrangling](/howto?q=tag:%22data%20wrangling%22&language=en)
-    * [Date](/howto?q=tag%3Adate%20tag%3A%22data%20wrangling%22&language=en)
+    * [Date Data](/howto?q=tag%3Adate%20tag%3A%22data%20wrangling%22&language=en)
+    * [Text Data](/howto?q=tag%3Atext%20tag%3A%22data%20wrangling%22&language=en)
     * [Branch](/howto?q=tag:branch&language=en)
     * [Create Calculation](/howto?q=tag:mutate&language=en)
     * [Summarize](/howto?q=tag:summarize&language=en)
