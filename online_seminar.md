@@ -16,7 +16,7 @@ The past recording and tutorial slides can be found at the [workshop page](https
 ----
 
 # Exploratory Data Analysis Part 1 - Understanding Variation in Data
-## Date/Time: 7/15/2020 (Wed)
+## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://zoom.us/j/331585134)
 
@@ -30,7 +30,7 @@ This is a part of the Exploratory Data Analysis Workshop. We'll start by introdu
 ----
 
 # Exploratory Data Analysis Part 2 - Correlation and Association
-## Date/Time: 7/22/2020 (Wed)
+## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://zoom.us/j/331585134)
 
