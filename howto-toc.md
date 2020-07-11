@@ -60,6 +60,7 @@
     * [Group By](/howto?q=tag:%22group%20by%22&language=en)
     * [Unite](/howto?q=tag:unite&language=en)
     * [Separate](/howto?q=tag:separate&language=en)
+    * [If Else](/howto?q=tag:ifelse&language=en)
     * [Rename](/howto?q=tag:rename&language=en)
     * [Tokenize](/howto?q=tag:tokenize&language=en)
     * [One Hot Encoding](/howto?q=tag:%22one-hot%20encoding%22&language=en)
