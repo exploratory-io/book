@@ -1,10 +1,51 @@
+# #14 - 2020/7/31(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/7sfbvtif8phlj96/online_meetup_v14.png?raw=1" width="100%" />
+
+## 開催要項
+
+* 日時: 2020年 7月 31日 (金) 12:00〜13:30（11:45開場）
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.1のご紹介 （Exploratory CEO 西田勘一郎）
+* データを使ったメンバーのストレス状態のモニタリング （株式会社GxP 石村 麻莉彩様）
+* 従業員の心理的安全性についての分析 （株式会社リブセンス 後藤 鉄平様）
+* 作業品質向上のためのロジスティック回帰を使った分析事例 （株式会社 日立ドキュメントソリューションズ
+湯山 咲子様）
+
+## スライド
+
+### Exploratory 西田勘一郎
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eiLNTuOZ8gU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+<script async class="speakerdeck-embed" data-id="838f70640ee64bb9a72cf848854bfce7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### 株式会社GxP 石村 麻莉彩様
+
+<script async class="speakerdeck-embed" data-id="4c4ad6fd45a04b9aa6d6590092227044" data-ratio="1.44428772919605" src="//speakerdeck.com/assets/embed.js"></script>
+
+### 株式会社リブセンス 後藤 鉄平様
+
+<script async class="speakerdeck-embed" data-id="30dd7bc80a0b41e090df3fb52e7676be" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### 株式会社 日立ドキュメントソリューションズ 湯山 咲子様
+
+<script async class="speakerdeck-embed" data-id="293d33b6a1cb4daea456134ffa23d94a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+---
+
 # #13 - 2020/5/29(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/kns9gf28zetgzzp/online_meetup_v13.png?raw=1" width="100%" />
 
 ## 開催要項
 
-* 日時: 2019年 5月 29日 (金) 13:00〜15:00（12:45開場）
+* 日時: 2020年 5月 29日 (金) 13:00〜15:00（12:45開場）
 * 会場: Zoom会議
 
 ## アジェンダ
