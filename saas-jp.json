@@ -1,0 +1,106 @@
+{
+  "kpi": {
+    "desc": "必要なKPIを発見する",
+    "moreButtonText": "もっと見てみる",
+    "moreButtnUrl": "https://exploratory.io/insight?q=kpi&language=all",
+    "insights": [
+      { 
+       "title": "自転車の貸し出 し件数には季節は影響しているのか？",
+       "desc": "自転車の貸し出し件数は、どの季節に多くなるのだろうか。普段自転車に乗っているため、個人的にはどの季節でも乗りたい。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/afk7FOx5UE"
+      },
+      { 
+       "title": "オリンピックは開催国だとメダル獲得率は上がるのか？",
+       "desc": "第7回：EDASalonの投稿です！",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/jtP4VsN4xI"
+      },
+      { 
+       "title": "自転車の貸し出し件数には季節は影響しているのか？",
+       "desc": "自転車の貸し出し件数は、どの季節に多くなるのだろうか。普段自転車に乗っているため、個人的にはどの季節でも乗りたい。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/afk7FOx5UE"
+      },
+      { 
+       "title": "オリンピックは開催国だとメダル獲得率は上がるのか？",
+       "desc": "第7回：EDASalonの投稿です！",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/jtP4VsN4xI"
+      },
+      { 
+       "title": "自転車の貸し出し件数には季節は影響しているのか？",
+       "desc": "自転車の貸し出し件数は、どの季節に多くなるのだろうか。普段自転車に乗っているため、個人的にはどの季節でも乗りたい。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/afk7FOx5UE"
+      },
+      { 
+       "title": "オリンピックは開催国だとメダル獲得率は上がるのか？",
+       "desc": "第7回：EDASalonの投稿です！",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/jtP4VsN4xI"
+      }
+    ]
+  },
+  "workshop": {
+    "desc": "必要なKPIを発見する",
+    "moreButtonText": "もっと見てみる",
+    "moreButtnUrl": "https://exploratory.io/insight?q=kpi&language=all",
+    "insights": [
+      {
+       "title": "自転車の貸し出 し件数には季節は影響しているのか？",
+       "desc": "自転車の貸し出し件数は、どの季節に多くなるのだろうか。普段自転車に乗っているため、個人的にはどの季節でも乗りたい。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/afk7FOx5UE"
+      },
+      {
+       "title": "オリンピックは開催国だとメダル獲得率は上がるのか？",
+       "desc": "第7回：EDASalonの投稿です！",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/jtP4VsN4xI"
+      },
+      {
+       "title": "自転車の貸し出し件数には季節は影響しているのか？",
+       "desc": "自転車の貸し出し件数は、どの季節に多くなるのだろうか。普段自転車に乗っているため、個人的にはどの季節でも乗りたい。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/afk7FOx5UE"
+      }
+    ]
+  },
+  "how-to": {
+    "desc": "必要なKPIを発見する",
+    "moreButtonText": "もっと見てみる",
+    "moreButtnUrl": "https://exploratory.io/insight?q=kpi&language=all",
+    "insights": [
+      {
+       "title": "自転車の貸し出 し件数には季節は影響しているのか？",
+       "desc": "自転車の貸し出し件数は、どの季節に多くなるのだろうか。普段自転車に乗っているため、個人的にはどの季節でも乗りたい。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/afk7FOx5UE"
+      },
+      {
+       "title": "オリンピックは開催国だとメダル獲得率は上がるのか？",
+       "desc": "第7回：EDASalonの投稿です！",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/jtP4VsN4xI"
+      },
+      {
+       "title": "自転車の貸し出し件数には季節は影響しているのか？",
+       "desc": "自転車の貸し出し件数は、どの季節に多くなるのだろうか。普段自転車に乗っているため、個人的にはどの季節でも乗りたい。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/afk7FOx5UE"
+      }
+    ]
+  },
+  "blog": {
+    "desc": "必要なKPIを発見する",
+    "moreButtonText": "もっと見てみる",
+    "moreButtnUrl": "https://exploratory.io/insight?q=kpi&language=all",
+    "insights": [
+      {
+       "title": "自転車の貸し出 し件数には季節は影響しているのか？",
+       "desc": "自転車の貸し出し件数は、どの季節に多くなるのだろうか。普段自転車に乗っているため、個人的にはどの季節でも乗りたい。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/afk7FOx5UE"
+      },
+      {
+       "title": "オリンピックは開催国だとメダル獲得率は上がるのか？",
+       "desc": "第7回：EDASalonの投稿です！",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/jtP4VsN4xI"
+      },
+      {
+       "title": "自転車の貸し出し件数には季節は影響しているのか？",
+       "desc": "自転車の貸し出し件数は、どの季節に多くなるのだろうか。普段自転車に乗っているため、個人的にはどの季節でも乗りたい。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/afk7FOx5UE"
+      }
+    ]
+  }
+
+}
