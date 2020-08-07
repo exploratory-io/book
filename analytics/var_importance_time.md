@@ -84,9 +84,9 @@ Input data should be a survival data. Each row should represent one observation 
 
 - Survival Time - Survival time of the subject.
 - Linear Predictor - Linear predictor for the subject.
-- Std Error -
-- Residual -
-- Survival Time for Prediction - Survival time used for the prediction below. 
+- Std Error - Standard error of the linear predictor.
+- Residual - Martingale residual of the prediction.
+- Survival Time for Prediction - Survival time used for the prediction of survival rate below. 
 - Predicted Survival Rate - Predicted survival rate at the point of time above.
 
 ![](images/var_importance_with_time_data.png)
