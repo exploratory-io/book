@@ -80,14 +80,14 @@ Input data should be a survival data. Each row should represent one observation 
 "Collinearity" View displays VIF (Variance Inflation Factor) of each predictor variables. VIF greater than 10 is commonly considered to be the indicator of problematic degree of multicollinearity.
 
 ### "Data" View
-"Data" View displays parameter details.
+"Data" View displays prediction results on each subject in the data.
 
-- Term - Variable name
-- Hazard Ratio - Variable's Proportional Hazard. (it shows how many times will Hazard become when the value of the parameter increased by 1)
-- Estimate - Log scale (Natural logarithm) of Hazard Ratio. If the value is greater than 0 (zero), it means there is an influence that the event tends to occur easily.
-- Conf Low - Lower limit of Confidence Interval.
-- Conf High - Higher limit of Confidence Interval.
-
+- Survival Time - Survival time of the subject.
+- Linear Predictor - Linear predictor for the subject.
+- Std Error -
+- Residual -
+- Survival Time for Prediction - Survival time used for the prediction below. 
+- Predicted Survival Rate - Predicted survival rate at the point of time above.
 
 ![](images/var_importance_with_time_data.png)
 
