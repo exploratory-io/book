@@ -51,3 +51,32 @@ Input data should contain following columns.
 8. Click Run button to run the analytics.
 9. Select view type by clicking view type link to see each type of generated visualization.
 
+### "Summary" View
+"Summary" View displays the summary of the created model.
+
+### "Prediction" View
+"Prediction" View plots how the target variable (or probability of the target variable being TRUE) varies as each predictor variable changes. This is so called partial dependence plot.
+
+### "Importance" View
+"Importance" View displays importances of variables for the prediction. Importances are calculated by permutation importance with log likelihood as the cost function.
+
+### "Coefficients" View
+"Coefficients" View displays coefficient estimates for all the predictor variables with Error Bars with P value as a color (i.e. If P Value < 0.05, the color is blue) 
+
+### "Coefficients Table" View
+"Coefficients Table" View displays more details for all the variables along with other metrics like Coefficient, Standard Error, t-Ratio, P-Value, etc. You can click on the column headers to sort the data with a help of bar visualization.
+
+### "Collinearity" View
+"Collinearity" View displays VIF (Variance Inflation Factor) of each predictor variables. VIF greater than 10 is commonly considered to be the indicator of problematic degree of multicollinearity.
+
+### "Residuals" View
+"Residuals" View compares the predicted values and the actual values to see how good or bad the model’s prediction capability is. If it is the perfect model, meaning it can predict with 100% accuracy, then all the dots should be lining up along with the gray line called ‘Perfect Fit’.
+
+### "Prediction Matrix" View (for Binomial family) 
+"Prediction Matrix" View displays a matrix where each column represents the instances in a predicted class while each row represents the instances in an actual class. It makes it easy to see how well the model is classifying the two classes. The darker the color, the higher the percentage value.
+
+### "Probability" View (for Binomial family)
+For binary classification, "Probability" View shows distribution of predicted probability of being TRUE, for the observations that are actually TRUE and for the observations that are actually FALSE.
+
+### "Data" View
+Data View shows original input data with additional columns of predicted probability.
