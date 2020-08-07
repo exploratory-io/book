@@ -71,6 +71,9 @@ Input data should contain following columns.
 ### "Probability" View
 For binary classification, "Probability" View shows distribution of predicted probability of being TRUE, for the observations that are actually TRUE and for the observations that are actually FALSE.
 
+### "ROC" View
+"ROC" View displays Receiver Operating Characteristic Curve of the model. The area under this curve is the AUC, which indicates how well the model separates the TRUE class and the FALSE class.
+
 ### "Data" View
 Data View shows original input data with additional columns of predicted probability.
 

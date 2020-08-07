@@ -62,5 +62,8 @@ For binary classification, "Probability" View shows distribution of predicted pr
 ### "Prediction Quality" View
 When Target Variable is a number, "Prediction Quality" View shows a scatter plot with predicted values on X-axis, and actual values on Y-axis.
 
+### "ROC" View
+For binary classification, "ROC" View displays Receiver Operating Characteristic Curve of the model. The area under this curve is the AUC, which indicates how well the model separates the TRUE class and the FALSE class.
+
 ### "Data" View
 Data View shows original input data with additional columns of predicted value and/or predicted probability.
