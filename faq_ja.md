@@ -91,6 +91,9 @@ Exploratoryは、ご利用のPCのRのバージョンをチェックし、Rの�
 ```
 > brew uninstall r
 ```
+## プロジェクトが開けません。どうすればよいでしょうか？
+
+対応方法については [トラブルシューティング・ガイド](https://exploratory.io/note/exploratory/Exploratory-uNt2DXZ9Iy)を参照してください。
 
 ## Gitのどのバージョンが必要ですか?
 

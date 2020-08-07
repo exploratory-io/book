@@ -105,3 +105,71 @@ Following options are available.
 * Group By: Target data group to create categories. 
   * All: Create categories against the whole data set. If you use Repeat By, all charts will have the same data range. 
   * Repeat By: Create categories for each chart if you use Repeat By. Each chart will have a different data range. 
+
+
+### Logical Condition 
+
+You can define a logical condition to divide the data into 2 groups (TRUE and FALSE). Currently, this option is supported only at Color. 
+
+
+![](images/logicalize2.png)
+
+Following operators are availbale. 
+
+Numeric
+
+* Equal To
+* Not Equal To
+* Is In (Multiple Values)
+* Is Not In (Multiple Values)
+* Less Than
+* Less Than or Equal To
+* Greater than
+* Greater Than or Equal To
+* Between
+* Not Between
+* Not NA
+* Is NA
+* Not Outliers
+* Is Outliers"
+
+Categorical (character, factor)
+* Equal To
+* Not Equal To
+* Is In (Multiple Values)
+* Is Not In (Multiple Values)
+* Starts With
+* Not Start With
+* Ends With
+* Not End With
+* Contains
+* Not Contain
+* Is NA
+* Not NA
+* Keep Only Empty
+* Remove Empty
+* Keep Only Stopword
+* Remove Stopword
+* Keep Only Alphabet
+* Remove Alphabet
+
+Date/POSIXct 
+* Relative Dates
+* Equal To
+* Not Equal To
+* Is In (Multiple Values)
+* Is Not In (Multiple Values)
+* Earlier Than
+* Earlier Than or Equal To
+* Later Than
+* Later Than or Equal To
+* Between
+* Not Between
+* Is NA
+* Not NA
+
+Logical 
+* Is TRUE
+* Is FALSE
+* Is NA
+* Not NA

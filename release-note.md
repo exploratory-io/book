@@ -1,5 +1,115 @@
 # Release Note
 
+## 6.1 (6.1.1)
+
+Released on 8/4/2020
+
+### Enhancements
+
+**Summary View**
+
+* Summary: If you use "Ratio" mode in the Highlight view, it should show bars with higher ratios instead of showing bars with larger number of rows.
+
+**Data Wrangling**
+
+* Data Wrangling: List of Values widget now supports adding a new option by typing and it also supports clearing selected options at once by clicking 'x' button.
+* Data Wrangling: Changed display label for 'Mode' to 'Mode (Most Frequent)'.
+* Data Wrangling: On Filter Dialog, moved the 'Ignore Cases' and 'Keep NA' checkboxes after the Value input field.
+* Data Wrangling: Filter: Changed the Date filter default operator to "Equal To".
+* Data Wrangling: Filter Dialog: Improved Column Selector style for mouse hover.
+* Data Wrangling: Supported "This Half Year" option for Date filter.
+* Data Wrangling: Filter: Moved "Equal To" operator position to after the "Is FALSE" for logical filter.
+
+**Chart**
+
+* Chart: Now you can show the range for the vertical reference line in Histogram and Density Plot.
+* Chart: Pivot: Now you can choose whether you apply the URL encoding or not for parameters in a URL links.
+* Chart: Reference line popups by hover should show confidence interval information as well.
+* Chart: Chart filters created by selecting Include/Exclude menu now use custom condition so that you can edit.
+
+**Analytics**
+
+* Analytics: Anomaly Detection: "Alpha" property was renamed to "P Value Threshold" for better understanding.
+* Analytics: Time Series Forecast: X-axis tick labels of Yearly Trend chart had unnecessary "01" day field in addition to the month name. They are now removed.
+* Analytics: Renamed 'Correlation by Columns' to 'Correlation' and 'Distance by Columns' to 'Distance'.
+* Analytics: Time Series Forecast: Maximum supported number of External Variables is increased from 5 to 25.
+* Analytics: When switching between different analytics types, the target column and the predictor columns are now preserved.
+* Analytics: Prediction tabs (partial dependence plot): For a logical predictor, now we arrange the X-axis in TRUE, FALSE order rather than sorting by Y-axis predicted values.
+* Analytics: Cox Regression/Survival Forest: X-axis of Prediction chart (partial dependence plot) for categorical predictor is now sorted based on Y-axis predicted values.
+* Analytics: Cox Regression/Survival Forest: Default pick of prediction time period is now mean of survival times of observations with event. This usually gives better view of effect of the predictor variables.
+
+**Parameter**
+
+* Parameter: Support for arguments to control quoting and escaping of @{} parameter placeholders in SQL or MongoDB query.
+* Parameter: Improved Slider widget to show selected value dynamically while sliding.
+* Parameter: On Filter Dialog, resulting R script now shows '@{}' notation instead of internal 'exploraory_env$' notation for parameters.
+* Parameter: Introduced new Date/Time Picker for better usability.
+
+### Bug Fixes
+
+* Data Source: Google BigQuery: When importing data, it sporadically failed with error "Invalid value at 'start_index' (TYPE_UINT64), "3e+05" [invalid]".
+* Data Source: Google BigQuery: When there were more than 100 datasets under a project, not all the datasets were displayed.
+* Data Source: Excel: Reading excel files with multibyte path or filename raised an error.
+* Data Source: Web Scraping: Encoding option was not working properly.
+* Data Source: ODBC: Views are not displayed on the left-hand side schema tree.
+* Data Source: Data Connection information is now managed separately from the Data Source step on the exploraotry.io server, or the upcoming release of Collaboration Server. This means that if setting of a Data Connection changes, you only need to publish one Insight with the Data Source, instead of publishing all the insight with the updated Data Connection.
+
+* Summary: A column selected for Correlation was not saved after creating a chart from summary view and coming back to the summary view.
+* Summary: When switching to the correlation mode, selected column and other fields are not shown while waiting for correlation calculation.
+* Summary: With Highlight mode, when a column is not selected, TypeError: Cannot read property 'escapedName' of undefined error is raised for some occasions.
+* Summary: Column name became shorter in the summary panel if you ran the Highlight in Summary View, moved to Analytics View, and came back.
+* Summary: Correlation calculation was not skipped when a column was not selected nor the selected column was invalid.
+
+* Table View: Vertical grid lines didn't align vertically between the table header and body in Windows.
+
+* Data Wrangling: Filter: A selected aggregate function got reset to the default after selecting different column.
+* Data Wrangling: The Recode dialog showed an error when it has "FALSE" as an original value
+* Data Wrangling: Error "ProjectDir.getObject: Metadata file not found in project:" was raised for some occasions.
+* Data Wrangling: After copying a folder with data frames, the source token of the copied R Script data frame did not show label.
+* Data Wrangling: On Filter Dialog, changed the label from Range to Option for Outlier operator.
+
+* Chart: Shor Detail: Number of rows in a table doesn't change when you change the "Rows to show" dropdown to the other values.
+* Chart: Show Detail: It doesn't shows no rows if a logical condition with a categorical column such as JobRole == "Sales Rep" is applied at Color.
+* Chart: Boxplot: You cannot change/reset the sort option because it is disabled if a numeric column is assigned to X-Axis.
+* Chart: When creating a chart filter, 'Day of Week' list of values didn't show locale aware values.
+* Chart: Window calculation name repeats in a hover popup if you turn on "Show function name" option in the chart property dialog.
+* Chart: Chart filter dialog was not automatically closed when moving to Analytics or other views.
+* Chart: Table: URL link points incorrect URL if you sort a table by clicking the table column header.
+* Chart: Number: Thumbnails was removed after clicking the OK button on Title / Comment dialog without changing anything.
+* Chart: Pivot: When you assigned a Date or POSIXct column with "Extract Day of Month" option, the day of month numbers were sorted as text.
+
+* Analytics: Prophet: When deleting an External Predictor column, the function assigned to the deleted column was assigned to the next External Predictor column.  
+* Analytics: When clicking the Run button for Analytics, it didn't properly check if there was another R process running.
+* Analytics: When Switching analytics type from Cox regression to Survival Forest, Start and End date column selections were removed.
+* Analytics: Result of Variable Importance (permutation importance) was affected by the order of predictor variables, but now it always returns a same result regardless of the predictor variable order.
+* Analytics: Prediction with Random Forest Model Step on another Data Frame raised error when the other Data Frame did not already have a target variable column.
+* Analytics: "Cannot Combine" R error showed up if you set "Auto" at Period and used Repeat By in COX Regression.
+* Analytics: Other Group setting green text didn't show up automatically when you assigned a character column with a lot of unique values to Repeat By in Survival Curve and COX Regression.
+* Analytics: Cox Regression: Repeat By column selector disappeared right after assigning a column
+* Analytics: Random Forest: Predictor variables of insignificant importance on Boruta boxplot was not sorted properly.
+* Analytics: Variable Importance: P Value of categorical predictor variables were displayed as (NA) under some perfect collinearity cases.
+
+* Reporting: Unexpected "No search result" text showed up in the Analytics Chart picker dialog in Note, Slide and Dashboard.
+* Reporting: Charts in Notes, Slides and Dashboards sensitive should be sensitive to the UI language setting.
+* Reporting: Published date is not shown on the Publish Dialog header area.
+* Dashboard: Chart thumbnail was not updated after updating the display name in Number.
+* Dashboard: Chart returns no data if more columns are added to the data source and those new columns were used in the chart.
+* Dashboard: Text overflows from a text panel if you have text with a lot of line breaks.
+* Note: Dependency from embedded R code to Data Frames were not handled properly when there were spaces before the triple-backtick.
+* Note: When moving between notes, the content get overridden by the old content of the same note.
+
+* Parameter: The number of rows information was not updated in Chart view when updating the Parameter values.
+* Parameter: Parameters imported with EDF file were not immediately available after the import.
+* Parameter: After changing the order of the Parameters in the layout setting, sometimes it was not saved.
+
+* R Package: On R package Dialog, an error message from the previous installation was kept being shown even after installing another package.
+* R Package: When the installation of R packages failed due to a package loading problem, both the success and the failure messages were shown at the same time.
+
+* General: Rserve process remaining from the previous time the Exploratory Desktop was up prevented starting up of Exploratory Desktop.
+* General: The in-app chat window was not available right after Exploratory Desktop was installed.
+
+
+
 ## 6.0.3
 
 Released on 6/23/2020
