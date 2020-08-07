@@ -33,3 +33,14 @@ Input data should contain following columns.
 6. Click Run button to run the analytics.
 7. Select view type by clicking view type link to see each type of generated visualization.
 
+### "Summary" View
+"Summary" View displays the summary of the test result.
+
+### "Error Bar" View
+"Error Bar" View displays error bar chart of means of target variable for each category with 95% confidence interval.
+
+### "Density Plot" View
+"Density Plot" View displays distribution of the target variable values for each category.
+
+### "Statistics" View
+"Statistics" View displays statistics of data for each category, such as mean.
