@@ -1,38 +1,23 @@
 {
   "kpi": {
-    "desc": "Exploratoryを使って、必要なKPIを発見する方法をご紹介します。",
+    "desc": "サブスクリプション型ビジネスの現状をより正しく理解するための指標をご紹介します。",
     "moreButtonText": "もっと見る",
-    "moreButtnUrl": "https://exploratory.io/insight?q=kpi&language=all",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
     "insights": [
       {
        "title": "SaaS KPI シリーズ #1 - はじめに",
-       "desc": "SaaS KPIシリーズです",
+       "desc": "SaaS KPIの基本についてご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-MIN6ydv8aF"
       },
       {
        "title": "SaaS KPI シリーズ #2—MRR (月間定期収益)",
-       "desc": "SaaS KPIシリーズです",
+       "desc": "SaaSでよく使われる指標のMRR（月間定期収益）、ARR（年間定期収益）、ニューMRRを紹介しています。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-2-MRR-QMR7lZl6oZ"
       },
       {
-       "title": "SaaS KPI シリーズ #3—コンバージョン率",
+       "title": "SaaS KPI シリーズ #3—コンバージョン",
        "desc": "SaaS KPIシリーズです",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-3-WId2mch9hL"
-      },
-      {
-       "title": "SaaS KPI シリーズ #4—チャーン率",
-       "desc": "SaaS KPIシリーズです",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-4-QNF3YKi9eS"
-      },
-      {
-       "title": "SaaS KPI シリーズ #5—コホート分析",
-       "desc": "SaaS KPIシリーズです",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-5-CSM9zmT1Ja"
-      },
-      {
-       "title": "SaaS KPI シリーズ #6—エクスパンション & コントラクション",
-       "desc": "SaaS KPIシリーズです",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-6-Expansion-Contraction-Nvm3MTp5PB"
       }
     ]
   },
@@ -47,7 +32,7 @@
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-1-SaaS-KPI-Part-1-JOI0SOR2xE"
       },
       {
-       "title": "SaaS アナリティクス・ワークショップ #1 - 最重要KPI Part 2",
+       "title": "SaaS アナリティクス・ワークショップ #2 - 最重要KPI Part 2",
        "desc": "SaaS アナリティクス・ワークショップ・シリーズです。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-2-SaaS-KPI-Part-2-PLj5fUv4hf"
       },
@@ -55,7 +40,7 @@
        "title": "SaaS アナリティクス・ワークショップ #3 - エンゲージメント Part 1",
        "desc": "SaaS アナリティクス・ワークショップ・シリーズです。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-3-Part-1-DAU-MAU-NgT7dry1dB"
-      }
+      },
     ]
   },
   "how-to": {
