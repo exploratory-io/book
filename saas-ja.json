@@ -55,6 +55,21 @@
        "title": "#3 - エンゲージメント Part 1 - DAU/MAU",
        "desc": "コンバージョンやチャーンの先行指標である「エンゲージメント」というコンセプトを紹介し、Facebookが使い始めたことで有名になったエンゲージメント指標の1つであるDAU/MAUについてご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-3-Part-1-DAU-MAU-NgT7dry1dB"
+      },
+      {
+       "title": "#4 - エンゲージメント Part 2 - パワーユーザー・カーブ",
+       "desc": "コンバージョンを上げる、またはチャーンを減らすことに有効な施策を打つために、「エンゲージメント」をもとにユーザーをにセグメント分ける「パワーユーザー・カーブ」の計算と可視化の方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-4-Part-2-DMN9ely0Ik"
+      },
+      {
+       "title": "#5 - エンゲージメント Part 3 - RFV分析",
+       "desc": "ユーザーの「エンゲージメント」を測るRecency（直近の利用状況）、Frequency（利用頻度）、Volume（サービスやコンテンツの利用量）といった指標をもとにユーザーをにセグメントに分けるRFV分析をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-5-Part-3-RFV-CLJ4efS3jU"
+      },
+      {
+       "title": "#6 - コホート分析 Part 1 - レイヤーケーキ・チャート",
+       "desc": "MRR（月間定期収益）をユーザーの購読タイミングごとのグループ（コホート）に分けて可視化する、レイヤーケーキと言われるチャートを作成する方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-6-ckh8RBK2sL"
       }
     ]
   },
