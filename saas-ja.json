@@ -84,14 +84,29 @@
        "url": "https://exploratory.io/note/BWz1Bar4JF/NPS-Part-1-jOf3loX8wF"
       },
       {
+       "title": "顧客満足度を測るNPSのモニター Part 2：NPSの計算を自動化する",
+       "desc": "顧客満足度を測るNPSの計算を自動化する方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/NPS-Part-2-NPS-EQS3KUj2UL"
+      },
+      {
        "title": "自由記述アンケートのテキスト分析 Part 1：文章の単語化とワードクラウドを使った可視化",
-       "desc": "自由記述のアンケートのテキストを分析する方法をご紹介します。",
+       "desc": "自由記述のアンケートのテキストを文章の単語化とワードクラウドを使って分析する方法をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/FSD1Fcu5hK"
+      },
+      {
+       "title": "自由記述アンケートのテキスト分析 Part 2：よく一緒に使われる単語の組み合わせの集計と可視化",
+       "desc": "自由記述のアンケートで一緒に使われる単語の組み合わせを集計して可視化する方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/Huu9xBQ5yZ"
       },
       {
        "title": "SaaSのコホート分析でよく使われるレイヤー・ケーキ・チャートの作り方",
        "desc": "SaaSのコホート分析でよく使われるレイヤー・ケーキ・チャートの作り方をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/Emx7psi2Ca"
+      },
+      {
+       "title": "エンゲージメントKPI - DAU / MAU 比率の計算と可視化",
+       "desc": "SaaSでよく使われるエンゲージメント指標のDAU/MAUの計算と可視化の方法を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-DAU-MAU-FuQ6jIf6Ky"
       }
     ]
   },
@@ -100,6 +115,11 @@
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3Asaas%20tag%3Ablog%20&language=ja",
     "insights": [
+      {
+       "title": "SaaSで営業やってる人は絶対に見ておくべき18のセールスKPI",
+       "desc": "",
+       "url": "https://exploratory.io/note/kanaugust/SaaS-18-KPI-eQt5SIz5em"
+      },
       {
        "title": "SaaSにとって最も重要なのに誰も見てないKPI：プロダクト・エンゲージメント",
        "desc": "",
@@ -114,6 +134,16 @@
        "title": "今シリコンバレーのSaaS企業で最も効率的に、そして急成長しているビデオ会議サービス、Zoom",
        "desc": "",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Zoom-aqi7Wlu3fp"
+      },
+      {
+       "title": "イギリスの1888創業の老舗メディア企業がシリコンバレーのSaaS企業のようにデータを使って成長しているという話",
+       "desc": "",
+       "url": "https://exploratory.io/note/kanaugust/1888-SaaS-xyU6Nko4KT"
+      },
+      {
+       "title": "Linkedinのプロダクト・ディレクターが語るNPSのベストプラクティス決定版",
+       "desc": "",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/Linkedin-NPS-OFY7YfV6Jl"
       }
     ]
   }
