@@ -27,11 +27,21 @@
 
 ### 株式会社GxP 石村 麻莉彩様
 
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/4OCEDPyXPl8?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+<br>
+
 <script async class="speakerdeck-embed" data-id="4c4ad6fd45a04b9aa6d6590092227044" data-ratio="1.44428772919605" src="//speakerdeck.com/assets/embed.js"></script>
 
 ### 株式会社リブセンス 後藤 鉄平様
 
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://player.vimeo.com/video/141567420?byline=0&amp;badge=0&amp;portrait=0&amp;title=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+
+<br>
+
 <script async class="speakerdeck-embed" data-id="30dd7bc80a0b41e090df3fb52e7676be" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 ### 株式会社 日立ドキュメントソリューションズ 湯山 咲子様
 
