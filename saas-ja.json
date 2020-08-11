@@ -1,6 +1,6 @@
 {
   "kpi": {
-    "desc": "サブスクリプション型ビジネスの現状をより正しく理解するための指標についてご紹介します。",
+    "desc": "SaaS/サブスクリプション型ビジネスの現状をより正しく理解するために重要な様々な指標を紹介しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
     "insights": [
@@ -37,7 +37,7 @@
     ]
   },
   "workshop": {
-    "desc": "SaaSビジネスにとって重要なKPI、データの加工、可視化、統計・機械学習といった様々なデータサイエンスの手法などを、シリコンバレーなどでの事例を交え、ご紹介します。",
+    "desc": "KPIの作り方や分析手法を実際に手を動かしながら学べる、1時間単位のオンラインワークショップの録画とスライドです。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-workshop&language=ja",
     "insights": [
@@ -74,7 +74,7 @@
     ]
   },
   "how-to": {
-    "desc": "SaaSビジネスのデータ分析の手法をハンズオン形式で紹介します。",
+    "desc": "SaaS/サブスクリプション型ビジネスのためのデータ分析の手法をステップ・バイ・ステップで説明しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Saas%22%20%20tag%3A%22how-to%22&language=ja",
     "insights": [
@@ -111,7 +111,7 @@
     ]
   },
   "blog": {
-    "desc": "ExploratoryによるSaaSアナリティクスに関するブログ記事をシリコンバレーなどでの事例を交えご紹介します。",
+    "desc": "SaaSアナリティクスに関するシリコンバレーや世界での事例をブログ形式で紹介しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3Asaas%20tag%3Ablog%20&language=ja",
     "insights": [
