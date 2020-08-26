@@ -1,6 +1,6 @@
 {
   "kpi": {
-    "desc": "サブスクリプション型ビジネスの現状をより正しく理解するための指標についてご紹介します。",
+    "desc": "SaaS/サブスクリプション型ビジネスの現状をより正しく理解するために重要な様々な指標を紹介しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
     "insights": [
@@ -37,17 +37,17 @@
     ]
   },
   "workshop": {
-    "desc": "SaaSビジネスにとって重要なKPI、データの加工、可視化、統計・機械学習といった様々なデータサイエンスの手法などを、シリコンバレーなどでの事例を交え、ご紹介します。",
+    "desc": "KPIの作り方や分析手法を実際に手を動かしながら学べる、1時間単位のオンラインワークショップの録画とスライドです。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-workshop&language=ja",
     "insights": [
       {
-       "title": "#1 - 最重要KPI Part 1 - MRR、ネット・ニューMRR",
+       "title": "#1 - MRR、ネット・ニューMRR",
        "desc": "サブスクリプション型ビジネスの現状をより正しく理解するための指標である、MRR（月間定期収益）、チャーン率、エクスパンション、ネット・レベニュー・リテンション率などの紹介と、それらの計算方法をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-1-SaaS-KPI-Part-1-JOI0SOR2xE"
       },
       {
-       "title": "#2 - 最重要KPI Part 2 - チャーン、リテンション、ネット・レベニュー・リテンション",
+       "title": "#2 - チャーン、リテンション、ネット・レベニュー・リテンション",
        "desc": "サブスクプション型のビジネスの決済データなどを使って、サブスクリプション型のビジネスに特有の指標を加工・集計する方法と、それらをダッシュボードにまとめて、モニターしていく方法をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-2-SaaS-KPI-Part-2-PLj5fUv4hf"
       },
@@ -74,7 +74,7 @@
     ]
   },
   "how-to": {
-    "desc": "SaaSビジネスのデータ分析の手法をハンズオン形式で紹介します。",
+    "desc": "SaaS/サブスクリプション型ビジネスのためのデータ分析の手法をステップ・バイ・ステップで説明しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Saas%22%20%20tag%3A%22how-to%22&language=ja",
     "insights": [
@@ -84,22 +84,42 @@
        "url": "https://exploratory.io/note/BWz1Bar4JF/NPS-Part-1-jOf3loX8wF"
       },
       {
+       "title": "顧客満足度を測るNPSのモニター Part 2：NPSの計算を自動化する",
+       "desc": "顧客満足度を測るNPSの計算を自動化する方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/NPS-Part-2-NPS-EQS3KUj2UL"
+      },
+      {
        "title": "自由記述アンケートのテキスト分析 Part 1：文章の単語化とワードクラウドを使った可視化",
-       "desc": "自由記述のアンケートのテキストを分析する方法をご紹介します。",
+       "desc": "自由記述のアンケートのテキストを文章の単語化とワードクラウドを使って分析する方法をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/FSD1Fcu5hK"
+      },
+      {
+       "title": "自由記述アンケートのテキスト分析 Part 2：よく一緒に使われる単語の組み合わせの集計と可視化",
+       "desc": "自由記述のアンケートで一緒に使われる単語の組み合わせを集計して可視化する方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/Huu9xBQ5yZ"
       },
       {
        "title": "SaaSのコホート分析でよく使われるレイヤー・ケーキ・チャートの作り方",
        "desc": "SaaSのコホート分析でよく使われるレイヤー・ケーキ・チャートの作り方をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/Emx7psi2Ca"
+      },
+      {
+       "title": "エンゲージメントKPI - DAU / MAU 比率の計算と可視化",
+       "desc": "SaaSでよく使われるエンゲージメント指標のDAU/MAUの計算と可視化の方法を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-DAU-MAU-FuQ6jIf6Ky"
       }
     ]
   },
   "blog": {
-    "desc": "ExploratoryによるSaaSアナリティクスに関するブログ記事をシリコンバレーなどでの事例を交えご紹介します。",
+    "desc": "SaaSアナリティクスに関するシリコンバレーや世界での事例をブログ形式で紹介しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3Asaas%20tag%3Ablog%20&language=ja",
     "insights": [
+      {
+       "title": "SaaSで営業やってる人は絶対に見ておくべき18のセールスKPI",
+       "desc": "",
+       "url": "https://exploratory.io/note/kanaugust/SaaS-18-KPI-eQt5SIz5em"
+      },
       {
        "title": "SaaSにとって最も重要なのに誰も見てないKPI：プロダクト・エンゲージメント",
        "desc": "",
@@ -114,6 +134,16 @@
        "title": "今シリコンバレーのSaaS企業で最も効率的に、そして急成長しているビデオ会議サービス、Zoom",
        "desc": "",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Zoom-aqi7Wlu3fp"
+      },
+      {
+       "title": "イギリスの1888創業の老舗メディア企業がシリコンバレーのSaaS企業のようにデータを使って成長しているという話",
+       "desc": "",
+       "url": "https://exploratory.io/note/kanaugust/1888-SaaS-xyU6Nko4KT"
+      },
+      {
+       "title": "Linkedinのプロダクト・ディレクターが語るNPSのベストプラクティス決定版",
+       "desc": "",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/Linkedin-NPS-OFY7YfV6Jl"
       }
     ]
   }

@@ -16,7 +16,7 @@ Create a connection following [this instruction](https://blog.exploratory.io/how
 
 ## 3. Set Parameters
 
-- Type Data Frame Name
+- Select a Drive if you have Shared Drives. If you don't have Shared Drives, it only shows defualt drive which is My Drive.
 
 - Select Google Spreadsheet name from the dropdown menu
 
