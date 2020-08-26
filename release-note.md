@@ -1,5 +1,72 @@
 # Release Note
 
+## 6.1.2
+
+Released on 8/25/2020.
+
+### Enhancements
+
+* General: Upgraded the broom package to 0.7.0.
+* General: Switched to Parquet file from RDS file for the data saving. This improves the file read/write performance about 10x faster.
+* Data Source: Google Sheet: Supported accessing sheets in the Shared Drives (a.k.a. Team Drives).
+
+### Bug Fixes
+
+* General: When dragging a mouse inside input field toward the edge of the dialog to select text, it caused the Dialog to be closed.
+* General: When closing Exploratory, 'No window with id: 5' error was raised for some occasions.
+* General: When closing Exploratory, 'Extension context invalidated' error was raised for some occasions.
+
+* Data Source: ODBC: On Schema Tree, changed to sort the table and view names alphabetically.
+* Data Source: Changing the data source to the 'data catalog' type didn't work
+* Data Source: When importing a file with long path name, the file path name was not shown properly.
+* Data Source: PostgreSQL: The Preview failed and showed "No method asJSON S3 class: pq__text" if you have a column with text[] data type.
+* Data Source: Google Sheets: Could not get data from Google Sheets when the selected sheets is only accessible by id.
+* Data Source: Google BigQuery: When streaming data with many columns, some columns contained missing values.
+
+* Summary View: After exiting from the highlight mode, the 'unique value' was still showing the values for the highlighted.
+* Summary View: When an analytics raised an error on the analytics view, moving to the Summary View showed a blank screen.
+* Summary: Pop-up shows up always at the left side when you hover the histogram in Summary view.
+
+* Table View: Clicking on the Filter's LOV made the dialog closed at the first time.
+* Table View: Popover text box for the Table Filter Token was too long with unnecessary space.
+
+* Data Wrangling: When a step had an error on Analytics view, analytics column selector widgets became disabled and could not change them even after moving to a valid step.
+* Data Wrangling: When the step cache was removed, the step was unnecessarily recalculated even when the step was already up to date.
+* Data Wrangling: When navigating to a build model step, it tried to show the table view when it should be showing the model summary view.
+* Data Wrangling: The Step token label text was removed after adding a Filter Step.
+* Data Wrangling: When opening the Export to Google Sheet Dialog, the Sheet list was empty.
+* Data Wrangling: After importing a data, a step selection in right hand-side step list was removed for some occasions.
+* Data Wrangling: The Tokenize Text (No Space Between Words) step failed when selecting TRUE for the 'Keep Other Columns' parameter.
+* Data Wrangling: Changed not to multiply by 100 for the % window calculations.
+* Data Wrangling: On Rename Dialog it didn't select/highlight text when moving between the cells by the tab key.
+* Data Wrangling: Selector widget: Improved the UI by making the selected value font weight as bold.
+* Data Wrangling: Added dense_rank to the Date and POSIXct column header menus.
+* Data Wrangling: Filter: Improved the performance for showing the dropdown values when there are many values.
+* Data Wrangling: When creating a recode step after a group by step, the Recode Dialog showed incorrect values in the table.
+* Data Wrangling: The Summary and the Pivot step UIs' preview table now shows all the data. You can still limit the rows if you want.
+* Data Wrangling: The Prediction step with cached Random Forest or XGBoost model step failed with an error.
+
+* Chart: Error Bar: A strange number showed up on Y Axis if you enabled the reference line and used the Horizontal orientation.  
+* Chart: The Show Details dialog showed no data when the chart had a chart filter and X-Axis had a numeric column with category function applied.
+* Chart: When creating a chart from the Summary View, an extra space was appended at the end of the chart name.
+* Chart: Map - Heatmap: Circles didn't show up if there were NAs in the Value column.
+* Chart: Filter token width was not long enough to show the filter condition text.
+* Chart: When transitioning from Chart view to Summary view, it pushed the UI down for a second.
+* Chart: Quantile dialog position was incorrect and input field validation was missing.
+* Chart: Map - Long / Lat: The larger circles are shown under the smaller circles so that you can click on any circles.
+
+* Analytics: Random Forest Step: On Windows, when creating a build model step, number of rows for test data was not displayed on Model Summary View when UI language was Japanese.
+* Analytics: NAs in the target variable is now filtered out before building the prediction models.
+* Analytics: When changing the Analytics Type to the one that does not support Repeat By like Normality Test, the previously selected Repeat By column was not cleared and it ended up showing an unexpected result.
+* Analytics: Survival Curve: "%" was missing for the survival rate displayed on the mouse-over pop-up.
+
+* Note: After previewing a note, the last scrolled position was not remembered and it went back to the top of the content.
+* Publish: When the publishing failed, a proper error message was not shown.
+
+* R Package: Improved style for Tabs and Table inside the R Package Management Dialog.
+* Project: When there is an warning icon next to a project, mouse hovering the icon didn't show the warning message in the instant pop-up.
+
+
 ## 6.1 (6.1.1)
 
 Released on 8/4/2020
