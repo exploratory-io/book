@@ -65,6 +65,8 @@ Supported data types for overrides are:
 
 ![](images/csv_disable_auto_detect_column_type.png)
 
+Also, if the column name contains special characters, use backtick \` to escape column names like \`Column A\` = 'c'
+
 ## 5. Column Selection
 
 On top of input parameters, you can also use checkboxes on the preview table to include/exclude columns. if you uncheck the checkboxes on the columns, these columns are excluded when you save the data.
