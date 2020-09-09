@@ -6,7 +6,7 @@ Reoder column(s) by drag and drop.
 ### From + (plus) Button
 ![](images/command-reorder-menu.png)
 
-* Click "+" button and select "Reorder".
+* Click "+" button and select "Reorder Columns".
 
 ### From Column Menu
 ![](images/command-reorder-column-menu.png)
