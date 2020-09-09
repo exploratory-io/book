@@ -78,6 +78,7 @@
 * [Data Wrangling](chart.md)
    * [Command Line mode for faster and more flexible data interaction in Exploratory](wrangling/command-mode.md)
    * [Select / Remove Columns](wrangling/select.md)
+   * [Reorder Columns](wrangling/reorder.md)
    * [Create New Calculation](wrangling/mutate.md)
    * [Create New Calculation for Multiple Columns](wrangling/mutate_at.md)
    * [Summarize (Aggregate)](wrangling/summarize.md)
