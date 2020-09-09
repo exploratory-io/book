@@ -19,3 +19,4 @@
 * よく利用される単語の組み合わせの集計と可視化
 
 参加されたい方は[こちらの](https://exploratory.io/note/BWz1Bar4JF/SaaS-URL-sfD2NLI1Gs)詳細ページよりお申し込み下さい。（無料です！）
+　
