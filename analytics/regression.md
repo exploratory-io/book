@@ -46,18 +46,8 @@ Input data should contain a numeric column for "Target Variable" and more than o
 7. Click Run button to run the analytics.
 8. Select view type (explained below) by clicking view type link to see each type of generated visualization.
 
-### "Coefficients" View
-"Coefficients" View displays coefficient estimates for all the predictor variables with Error Bars with P value as a color (i.e. If P Value < 0.05, the color is blue) 
-
-![](images/regression_coeff.png)
-
-### "Coefficients Table" View
-"Coefficients Table" View displays more details for all the variables along with other metrics like Coefficient, Standard Error, t-Ratio, P-Value, etc. You can click on the column headers to sort the data with a help of bar visualization.
-
-![](images/regression_coeff_table.png)
-
-### "Model Summary" View
-"Model Summary" View displays the summary of the model created for this Regression Analysis. Each column shows the model information like R Squared, Root Mean Square Error from where you can understand model performance.
+### "Summary" View
+"Summary" View displays the summary of the model created for this Regression Analysis. Each column shows the model information like R Squared, Root Mean Square Error from where you can understand model performance.
 
 
 - R Squared - A statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression. 1 (100%) indicates that the model explains all the variability of the response data around its mean.
@@ -73,15 +63,36 @@ Input data should contain a numeric column for "Target Variable" and more than o
 
 
 ### "Prediction" View
-"Prediction" View compares the predicted values and the actual values to see how good or bad the model’s prediction capability is. If it is the perfect model, meaning it can predict with 100% accuracy, then all the dots should be lining up along with the gray line called ‘Perfect Fit’.
+"Prediction" View plots how the predicted value varies as each variable changes. This is so called partial dependence plot.
+
+### "Importance" View
+"Importance" View displays importances of variables for the prediction of the target value. Importances are calculated by permutation importance with residual sum of squares as the cost function.
+
+### "Coefficients" View
+"Coefficients" View displays coefficient estimates for all the predictor variables with Error Bars with P value as a color (i.e. If P Value < 0.05, the color is blue) 
+
+![](images/regression_coeff.png)
+
+### "Coefficients Table" View
+"Coefficients Table" View displays more details for all the variables along with other metrics like Coefficient, Standard Error, t-Ratio, P-Value, etc. You can click on the column headers to sort the data with a help of bar visualization.
+
+![](images/regression_coeff_table.png)
+
+### "Collinearity" View
+"Collinearity" View displays VIF (Variance Inflation Factor) of each predictor variables. VIF greater than 10 is commonly considered to be the indicator of problematic degree of multicollinearity.
+
+### "Residuals" View
+"Residuals" View compares the predicted values and the actual values to see how good or bad the model’s prediction capability is. If it is the perfect model, meaning it can predict with 100% accuracy, then all the dots should be lining up along with the gray line called ‘Perfect Fit’.
 
 ![](images/regression_prediction.png)
 
-### "Residual" View
-"Residual" View shows the residual which is difference between the predicted and the actual values. And visualizing the Residuals can reveal a lot of useful information that can guide you to decide what types of data transformations are needed to improve the model. (e.g. [Interpreting residual plots to improve your regression](http://docs.statwing.com/interpreting-residual-plots-to-improve-your-regression/))
+### "Residual Distribution" View
+"Residual Distribution" View shows the residual which is difference between the predicted and the actual values. And visualizing the Residuals can reveal a lot of useful information that can guide you to decide what types of data transformations are needed to improve the model. (e.g. [Interpreting residual plots to improve your regression](http://docs.statwing.com/interpreting-residual-plots-to-improve-your-regression/))
 
 ![](images/regression_residual.png)
 
+### "Data" View
+"Data" View displays prediction results on each row in the data.
 
 ## R Package
 

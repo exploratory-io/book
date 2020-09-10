@@ -55,11 +55,6 @@ Input data should contain one categorical or numeric column for "Target Variable
 7. Click Run button to run the analytics.
 8. Select view type (explained below) by clicking view type link to see each type of generated visualization.
 
-### "Importance" View
-"Importance" View displays importance of variables with decision on statistical significance of their contributions to prediction, making use of R Package Boruta. The variables in green has statistically significant contributions. The result is not decisive on the ones in yellow yet with the performed iterations. Ones in gray are decided not to have statistically significant contributions.
-
-![](images/randomforest_boruta.png)
-
 ### "Summary" View
 "Summary" View displays metrics that describes the quality of the Random Forest model.
 
@@ -86,15 +81,16 @@ If the Target Variable column is numeric, you will see
 
 ![](images/randomforest_summary_numeric.png)
 
-### "Summary by Class" View
-"Summary by Class" View shows metrics for prediction of each class of the categorical Target Variable column.
-
-![](images/randomforest_summary_by_class.png)
-
-
-### "Effects by Variables" View
-"Effects by Variables" View shows how the predicted value or probability by the model changes when only one of the predictor changes, on average on sampled data points.
+### "Prediction" View
+"Prediction" View shows how the predicted value or probability by the model changes when only one of the predictor changes, on average on sampled data points.
 ![](images/randomforest_edarf.png)
+
+
+### "Importance" View
+"Importance" View displays importance of variables with decision on statistical significance of their contributions to prediction, making use of R Package Boruta. The variables in green has statistically significant contributions. The result is not decisive on the ones in yellow yet with the performed iterations. Ones in gray are decided not to have statistically significant contributions.
+
+![](images/randomforest_boruta.png)
+
 
 ### "Prediction Matrix" View
 "Prediction Matrix" View displays a matrix where each column represents the instances in a predicted class while each row represents the instances in an actual class. It makes it easy to see how well the model is classifying the two classes. The darker the color, the higher the percentage value.
@@ -104,6 +100,9 @@ If the Target Variable column is numeric, you will see
 ### "Probability" View
 For binary classification, "Probability" View shows distribution of predicted probability of being TRUE, for the observations that are actually TRUE and for the observations that are actually FALSE.
 ![](images/randomforest_probability.png)
+
+### "ROC" View
+For binary classification, "ROC" View displays Receiver Operating Characteristic Curve of the model. The area under this curve is the AUC, which indicates how well the model separates the TRUE class and the FALSE class.
 
 ### "Prediction Quality" View
 When Target Variable is a number, "Prediction Quality" View shows a scatter plot with predicted values on X-axis, and actual values on Y-axis.

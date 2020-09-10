@@ -1,104 +1,149 @@
 {
   "kpi": {
-    "desc": "Exploratoryを使って、必要なKPIを発見する方法をご紹介します。",
+    "desc": "SaaS/サブスクリプション型ビジネスの現状をより正しく理解するために重要な様々な指標を紹介しています。",
     "moreButtonText": "もっと見る",
-    "moreButtnUrl": "https://exploratory.io/insight?q=kpi&language=all",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
     "insights": [
       {
-       "title": "SaaS KPI シリーズ #1 - はじめに",
-       "desc": "SaaS KPIシリーズです",
+       "title": "#1 - はじめに",
+       "desc": "SaaSのKPIの基本についてご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-MIN6ydv8aF"
       },
       {
-       "title": "SaaS KPI シリーズ #2—MRR (月間定期収益)",
-       "desc": "SaaS KPIシリーズです",
+       "title": "#2 - MRR (月間定期収益)",
+       "desc": "SaaSでよく使われる指標のMRR（月間定期収益）、ARR（年間定期収益）、ニューMRRをご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-2-MRR-QMR7lZl6oZ"
       },
       {
-       "title": "SaaS KPI シリーズ #3—コンバージョン率",
-       "desc": "SaaS KPIシリーズです",
+       "title": "#3 - コンバージョン",
+       "desc": "SaaSでよく使われるコンバージョンに関するコンセプトや指標をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-3-WId2mch9hL"
       },
-      { 
-       "title": "SaaS KPI シリーズ #4—チャーン率",
-       "desc": "SaaS KPIシリーズです",
+      {
+       "title": "#4 - チャーン & リテンション",
+       "desc": "SaaSでよく使われる指標のカスタマー・チャーン率、カスタマーリテンション率、ネット・ニューMRRをご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-4-QNF3YKi9eS"
       },
-      { 
-       "title": "SaaS KPI シリーズ #5—コホート分析",
-       "desc": "SaaS KPIシリーズです",
+      {
+       "title": "#5 - コホート分析",
+       "desc": "SaaSでよく使われる分析手法である生存分析およびコホート分析をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-5-CSM9zmT1Ja"
       },
-      { 
-       "title": "SaaS KPI シリーズ #6—エクスパンション & コントラクション",
-       "desc": "SaaS KPIシリーズです",
+      {
+       "title": "#6 - エクスパンション & コントラクション",
+       "desc": "SaaSでよく使われる指標のエクスパンションMRR、コントラクションMRR、ネット・ニューMRRをご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-6-Expansion-Contraction-Nvm3MTp5PB"
       }
     ]
   },
   "workshop": {
-    "desc": "ExploratoryによるSaaSアナリティクスのワークショップをご紹介します。",
+    "desc": "KPIの作り方や分析手法を実際に手を動かしながら学べる、1時間単位のオンラインワークショップの録画とスライドです。",
     "moreButtonText": "もっと見る",
-    "moreButtnUrl": "https://exploratory.io/insight?q=saas%20%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97&language=all",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-workshop&language=ja",
     "insights": [
       {
-       "title": "SaaS アナリティクス・ワークショップ #1 - 最重要KPI Part 1",
-       "desc": "SaaS アナリティクス・ワークショップ・シリーズです。",
+       "title": "#1 - MRR、ネット・ニューMRR",
+       "desc": "サブスクリプション型ビジネスの現状をより正しく理解するための指標である、MRR（月間定期収益）、チャーン率、エクスパンション、ネット・レベニュー・リテンション率などの紹介と、それらの計算方法をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-1-SaaS-KPI-Part-1-JOI0SOR2xE"
       },
       {
-       "title": "SaaS アナリティクス・ワークショップ #1 - 最重要KPI Part 2",
-       "desc": "SaaS アナリティクス・ワークショップ・シリーズです。",
+       "title": "#2 - チャーン、リテンション、ネット・レベニュー・リテンション",
+       "desc": "サブスクプション型のビジネスの決済データなどを使って、サブスクリプション型のビジネスに特有の指標を加工・集計する方法と、それらをダッシュボードにまとめて、モニターしていく方法をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-2-SaaS-KPI-Part-2-PLj5fUv4hf"
       },
       {
-       "title": "SaaS アナリティクス・ワークショップ #3 - エンゲージメント Part 1",
-       "desc": "SaaS アナリティクス・ワークショップ・シリーズです。",
+       "title": "#3 - エンゲージメント Part 1 - DAU/MAU",
+       "desc": "コンバージョンやチャーンの先行指標である「エンゲージメント」というコンセプトを紹介し、Facebookが使い始めたことで有名になったエンゲージメント指標の1つであるDAU/MAUについてご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-3-Part-1-DAU-MAU-NgT7dry1dB"
+      },
+      {
+       "title": "#4 - エンゲージメント Part 2 - パワーユーザー・カーブ",
+       "desc": "コンバージョンを上げる、またはチャーンを減らすことに有効な施策を打つために、「エンゲージメント」をもとにユーザーをにセグメント分ける「パワーユーザー・カーブ」の計算と可視化の方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-4-Part-2-DMN9ely0Ik"
+      },
+      {
+       "title": "#5 - エンゲージメント Part 3 - RFV分析",
+       "desc": "ユーザーの「エンゲージメント」を測るRecency（直近の利用状況）、Frequency（利用頻度）、Volume（サービスやコンテンツの利用量）といった指標をもとにユーザーをにセグメントに分けるRFV分析をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-5-Part-3-RFV-CLJ4efS3jU"
+      },
+      {
+       "title": "#6 - コホート分析 Part 1 - レイヤーケーキ・チャート",
+       "desc": "MRR（月間定期収益）をユーザーの購読タイミングごとのグループ（コホート）に分けて可視化する、レイヤーケーキと言われるチャートを作成する方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-6-ckh8RBK2sL"
       }
     ]
   },
   "how-to": {
-    "desc": "ExploratoryによるSaaSアナリティクスの使い方の例をご紹介します。",
+    "desc": "SaaS/サブスクリプション型ビジネスのためのデータ分析の手法をステップ・バイ・ステップで説明しています。",
     "moreButtonText": "もっと見る",
-    "moreButtnUrl": "https://exploratory.io/insight?q=kpi&language=all",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Saas%22%20%20tag%3A%22how-to%22&language=ja",
     "insights": [
       {
-       "title": "SaaS KPI シリーズ #1 - はじめに",
-       "desc": "SaaS KPIシリーズです",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-MIN6ydv8aF"
+       "title": "顧客満足度を測るNPSのモニター Part 1：プロモーターとデトラクターの割合の集計とNPSの計算",
+       "desc": "顧客満足度を測るNPSの計算方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/NPS-Part-1-jOf3loX8wF"
       },
       {
-       "title": "SaaS KPI シリーズ #2—MRR (月間定期収益)",
-       "desc": "SaaS KPIシリーズです",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-2-MRR-QMR7lZl6oZ"
+       "title": "顧客満足度を測るNPSのモニター Part 2：NPSの計算を自動化する",
+       "desc": "顧客満足度を測るNPSの計算を自動化する方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/NPS-Part-2-NPS-EQS3KUj2UL"
       },
       {
-       "title": "SaaS KPI シリーズ #3—コンバージョン率",
-       "desc": "SaaS KPIシリーズです",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-3-WId2mch9hL"
+       "title": "自由記述アンケートのテキスト分析 Part 1：文章の単語化とワードクラウドを使った可視化",
+       "desc": "自由記述のアンケートのテキストを文章の単語化とワードクラウドを使って分析する方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/FSD1Fcu5hK"
+      },
+      {
+       "title": "自由記述アンケートのテキスト分析 Part 2：よく一緒に使われる単語の組み合わせの集計と可視化",
+       "desc": "自由記述のアンケートで一緒に使われる単語の組み合わせを集計して可視化する方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/Huu9xBQ5yZ"
+      },
+      {
+       "title": "SaaSのコホート分析でよく使われるレイヤー・ケーキ・チャートの作り方",
+       "desc": "SaaSのコホート分析でよく使われるレイヤー・ケーキ・チャートの作り方をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/Emx7psi2Ca"
+      },
+      {
+       "title": "エンゲージメントKPI - DAU / MAU 比率の計算と可視化",
+       "desc": "SaaSでよく使われるエンゲージメント指標のDAU/MAUの計算と可視化の方法を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-DAU-MAU-FuQ6jIf6Ky"
       }
     ]
   },
   "blog": {
-    "desc": "ExploratoryによるSaaSアナリティクスに関するブログ記事をご紹介します。",
+    "desc": "SaaSアナリティクスに関するシリコンバレーや世界での事例をブログ形式で紹介しています。",
     "moreButtonText": "もっと見る",
-    "moreButtnUrl": "https://exploratory.io/insight?q=kpi&language=all",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3Asaas%20tag%3Ablog%20&language=ja",
     "insights": [
       {
-       "title": "SaaS アナリティクス・ワークショップ #1 - 最重要KPI Part 1",
-       "desc": "SaaS アナリティクス・ワークショップ・シリーズです。",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-1-SaaS-KPI-Part-1-JOI0SOR2xE"
+       "title": "SaaSで営業やってる人は絶対に見ておくべき18のセールスKPI",
+       "desc": "",
+       "url": "https://exploratory.io/note/kanaugust/SaaS-18-KPI-eQt5SIz5em"
       },
       {
-       "title": "SaaS アナリティクス・ワークショップ #1 - 最重要KPI Part 2",
-       "desc": "SaaS アナリティクス・ワークショップ・シリーズです。",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-2-SaaS-KPI-Part-2-PLj5fUv4hf"
+       "title": "SaaSにとって最も重要なのに誰も見てないKPI：プロダクト・エンゲージメント",
+       "desc": "",
+       "url": "https://exploratory.io/note/kanaugust/SaaS-KPI-DBR6Qex2ba"
       },
       {
-       "title": "SaaS アナリティクス・ワークショップ #3 - エンゲージメント Part 1",
-       "desc": "SaaS アナリティクス・ワークショップ・シリーズです。",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-3-Part-1-DAU-MAU-NgT7dry1dB"
+       "title": "Facebookが使い出したことで有名になったエンゲージメントを測るKPI — DAU/MAU比率",
+       "desc": "",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/Facebook-KPI-DAU-MAU-QZr0EfN4AB"
+      },
+      {
+       "title": "今シリコンバレーのSaaS企業で最も効率的に、そして急成長しているビデオ会議サービス、Zoom",
+       "desc": "",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Zoom-aqi7Wlu3fp"
+      },
+      {
+       "title": "イギリスの1888創業の老舗メディア企業がシリコンバレーのSaaS企業のようにデータを使って成長しているという話",
+       "desc": "",
+       "url": "https://exploratory.io/note/kanaugust/1888-SaaS-xyU6Nko4KT"
+      },
+      {
+       "title": "Linkedinのプロダクト・ディレクターが語るNPSのベストプラクティス決定版",
+       "desc": "",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/Linkedin-NPS-OFY7YfV6Jl"
       }
     ]
   }

@@ -23,7 +23,7 @@ Input data should be a survival data. Each row should represent one observation 
 3. Select "Survival Analysis" for Analytics Type.
 4. Select Start Time column with "Start Time" column selector.
 5. Select End Time column with "End Time" column selector.
-6. Select unit of time (Day, Week...) with "Period By" dropdown.
+6. Select unit of time (Day, Week...) with "Period By" dropdown. The default "Auto" is mean of observations with event.
 7. Select Event Status column with "Event Status" column selector.
 8. (Optional) Select a column to group subjects with "Color By" column selector. For each group, a survival curve with a different color will be drawn in a same chart.
 9. (Optional) Select a column to group subjects with "Repeat By" column selector. For each group, a separate small chart will be displayed.
@@ -38,8 +38,7 @@ This example is with Color By.
 This example is with Repeat By in addition to Color By.
 ![](images/survival_curve_with_repeat.png)
 
-### "With Confidence Range" View
-"With Confidence Range" View displays the survival curve with confidence interval. It is estimated that 95% of the time, the survival rate will fall between the upper bound and lower bound of the bands around the lines.
+By checking "With Confidence Range" checkbox, range for 95% confidence interval can be displayed.
 ![](images/survival_curve_with_confint.png)
 
 ### "Survival Table" View

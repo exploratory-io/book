@@ -43,3 +43,27 @@ Input data should contain following columns.
 6. Click Run button to run the analytics.
 7. Select view type by clicking view type link to see each type of generated visualization.
 
+### "Summary" View
+"Summary" View displays metrics that describes the quality of the Decision Tree model.
+
+### "Prediction" View
+"Prediction" View shows how the predicted value or probability by the model changes when only one of the predictor changes, on average on sampled data points.
+
+
+### "Importance" View
+"Importance" View displays importances of variables for the prediction.
+
+### "Prediction Matrix" View
+"Prediction Matrix" View displays a matrix where each column represents the instances in a predicted class while each row represents the instances in an actual class. It makes it easy to see how well the model is classifying the two classes. The darker the color, the higher the percentage value.
+
+### "Probability" View
+For binary classification, "Probability" View shows distribution of predicted probability of being TRUE, for the observations that are actually TRUE and for the observations that are actually FALSE.
+
+### "Prediction Quality" View
+When Target Variable is a number, "Prediction Quality" View shows a scatter plot with predicted values on X-axis, and actual values on Y-axis.
+
+### "ROC" View
+For binary classification, "ROC" View displays Receiver Operating Characteristic Curve of the model. The area under this curve is the AUC, which indicates how well the model separates the TRUE class and the FALSE class.
+
+### "Data" View
+Data View shows original input data with additional columns of predicted value and/or predicted probability.
