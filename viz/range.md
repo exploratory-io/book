@@ -3,6 +3,8 @@
 The Range feature enables you to show additional range information on a chart. It is available in Line and Scatter (No Aggregation) charts. 
 
 
+![](images/range9.png)
+
 
 ## Setup the Range 
 
