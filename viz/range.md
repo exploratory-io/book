@@ -1,16 +1,53 @@
 # Range
 
-The Range feature is available in Line and Scatter (No Aggregation) charts. If you have upper and lower limit values for the values on Y-Axis such as confidence intervals, you can show them as ranges in the same chart. 
+The Range feature enables you to show additional range information on a chart. It is available in Line and Scatter (No Aggregation) charts. 
 
-You can control the Range setting on the Range Setting dialog. You can open the Range Setting dialog by clicking `Range` from Y-Axis dropdown menu.
 
-![](images/range-toggle.png)
+![](images/range9.png)
 
-![](images/range-dialog.png)
 
-You can enable the Range by checking the `Show Range` checkbox. Then you can assign columns for Upper Limit values and Lower Limit values. 
+## Setup the Range 
 
-Columns will be automatically picked and assigned for your convenience if you have one of following column pairs in the same data frame. 
+You can set up the range from the Range Dialog. You can find the Range Dialog in the Y-Axis menu dropdown.
+
+![](images/range0.png)
+
+
+## Range Types
+
+There are 2 range types available. 
+
+* Confidence Interval
+* Custom
+
+### Confidence Interval 
+
+The Confidence Interval option calculates confidence interval ranges from data and shows them automatically on a chart. You can show confidence interval ranges by selecting the "Confidence Interval" from the Range Type menu in the Range Setting Dialog. 
+
+![](images/range6.png)
+
+There are the following options available for Range Function.
+
+* 95% Condfidence Interval
+* 99% Condfidence Interval
+* Standard Error
+
+
+Note that Confidence Interval is available only in Line chart, and is available for Mean, % of TRUE, and % of FALSE functions without Window Calculation being applied on Y-Axis. 
+
+
+
+### Custom 
+
+If you already have columns for upper and lower limit values for the values on Y-Axis, you can show them as ranges in the same chart. 
+
+You can select "Custom" from the Range Type menu and assign columns for Upper Limit values and Lower Limit values.  
+
+
+![](images/range5.png)
+
+
+Columns will be automatically picked and assigned for your convenience if you have one of the following column pairs in the same data frame. 
 
 * `(Y-Axis Column Name)_high` and `(Y-Axis Column Name)_low`
 * `(Y-Axis Column Name).high` and `(Y-Axis Column Name).low`
@@ -22,16 +59,34 @@ Columns will be automatically picked and assigned for your convenience if you ha
 * `conf.high` and `conf.low`
 
 
-## Range on Line Chart
 
-If you assign Upper and Lower Limit of the range in the Line Chart, it shows the range band for each line. 
 
-![](images/range-line.png)
 
-## Range on Scatter (No Aggregation) Chart
 
-If you assign Upper and Lower Limit of the range in the Scatter (No Aggregation) chart, it shows the error bar on each circle. 
+## Range in Line Chart
 
-![](images/range-scatter.png)
+The following range types are available in Line chart.
 
-You can optionally set the Error Bar Width at the Range Setting dialog. The default width is `4` in pixel.
+* Confidence Interval
+* Custom
+
+In Line chart, ranges will be displayed as range bands like the following. 
+
+
+![](images/range7.png)
+
+
+
+
+## Range in Scatter (No Aggregation) Chart
+
+The following range types are available in Scatter (No Aggregation) Chart
+
+* Custom
+
+
+In Scatter (No Aggregation) chart, ranges will be displayed as error bars like the following. 
+
+![](images/range8.png)
+
+You can optionally set the error bar width in Range Dialog. The default width is `4` in pixel.
