@@ -12,6 +12,7 @@ Exploratory v6.2の紹介と、ユーザー様によるExploratoryを使った�
 <img src="https://www.dropbox.com/s/wsctsqgupnxxjtm/speaker.png?raw=1" width="100%" />
 
 
+
 ## アジェンダ:
 
 <img src="https://www.dropbox.com/s/fmzhpimgbatg37c/2020_1002_v15-2.png?raw=1" width="100%" />
