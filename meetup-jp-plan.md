@@ -6,5 +6,11 @@ Exploratory v6.2の紹介と、ユーザー様によるExploratoryを使った�
 * 日時: 2020年 10月 2日 (金) 12:00〜13:30（11:50開場）
 * 会場: Zoom会議
 * 参加方法: [こちら](https://exploratory.io/note/BWz1Bar4JF/15-IDR4XWZ9JY)のページよりお申し込みください。
-* アジェンダ:
+
+## スピーカー
+
+<img src="https://www.dropbox.com/s/wsctsqgupnxxjtm/speaker.png?raw=1" width="100%" />
+
+## アジェンダ:
+
 <img src="https://www.dropbox.com/s/fmzhpimgbatg37c/2020_1002_v15-2.png?raw=1" width="100%" />
