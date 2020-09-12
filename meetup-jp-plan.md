@@ -9,9 +9,9 @@ Exploratory v6.2の紹介と、ユーザー様によるExploratoryを使った�
 
 ## スピーカー
 
-<img src="https://www.dropbox.com/s/wsctsqgupnxxjtm/speaker.png?raw=1" width="90%" />
+<img src="https://www.dropbox.com/s/hws9eez6pb2j24i/speaker_v2.png?raw=1" width="100%" />
 
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/fmzhpimgbatg37c/2020_1002_v15-2.png?raw=1" width="90%" />
+<img src="https://www.dropbox.com/s/fmzhpimgbatg37c/2020_1002_v15-2.png?raw=1" width="100%" />
