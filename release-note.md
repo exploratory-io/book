@@ -1,5 +1,14 @@
 # Release Note
 
+## 6.1.3
+
+Released on 9/11/2020.
+
+* General: Failed to perform "Save Step Data as New Data Frame (Without Steps)" and showed "cannot open the connection" error. 
+* General: An error message showed up after duplicating a data frame if the source data file didn't exist in the local filesystem.
+* Data Wrangling: After selecting columns from column menu on the Summary View or the Table View, the Select step became empty.
+
+
 ## 6.1.2
 
 Released on 8/25/2020.
