@@ -92,6 +92,8 @@
    * [Gather](wrangling/gather.md)
    * [Spread](wrangling/spread.md)
    * [Pivot](wrangling/pivot.md)
+   * [Expand](wrangling/expand.md)
+   * [Complete](wrangling/complete.md)
    * [Separate](wrangling/separate.md)
    * [Unite](wrangling/unite.md)
    * [Bind Rows](wrangling/bind_rows.md)
