@@ -70,6 +70,26 @@
        "title": "#6 - コホート分析 Part 1 - レイヤーケーキ・チャート",
        "desc": "MRR（月間定期収益）をユーザーの購読タイミングごとのグループ（コホート）に分けて可視化する、レイヤーケーキと言われるチャートを作成する方法をご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-6-ckh8RBK2sL"
+      },
+      {
+       "title": "#7 - コホート分析 Part 2 - レイヤーケーキ・チャート",
+       "desc": "顧客のチャーンのトレンドを的確に理解する手法として、生存（サバイバル）分析のアルゴリズムを使ったコホート分析を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-7-Part-2-vlR7epa8Cv"
+      },
+      {
+       "title": "#8 -  CLV（顧客生涯価値）の計算",
+       "desc": "生存（サバイバル）分析のアルゴリズムを使って、よりビジネスの実態に見合った形でCLV（顧客生涯価値）を計算する方法を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-8-CLV-kGJ8ksH1mN"
+      },
+      {
+       "title": "#9 - NPS（ネット・プロモーター・スコア）の計算",
+       "desc": "SaaSの世界では当たり前になりつつある、プロダクトやサービスに対する顧客の満足度を測る指標のNPS（ネット・プロモーター・スコア）の概要と、その計算方法を紹介をします。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-9-NPS-HHq1Juj9zK"
+      },
+      {
+       "title": "#10 - アンケートデータのテキスト分析",
+       "desc": "自由記述のアンケートデータから、よく使われる単語やその組み合わせなどを可視化して分析する手法を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-10-XkN1pjT8wD"
       }
     ]
   },
