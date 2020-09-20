@@ -25,6 +25,11 @@ You can change the color of the specific circles that you pick to stand out from
 
 You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
 
+## Missing Value Handling
+
+You can use the Missing Value Handling feature to control missing values. See [Missing Value Handling](missing-value-handling.md) for the detail.
+
+
 
 ## Custom Function
 

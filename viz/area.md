@@ -29,6 +29,11 @@ You can use Limit Values to filter the categories by the aggregated values. See 
 
 You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
 
+## Missing Value Handling
+
+You can use the Missing Value Handling feature to control missing values. See [Missing Value Handling](missing-value-handling.md) for the detail.
+
+
 
 ## Layout Configuration
 

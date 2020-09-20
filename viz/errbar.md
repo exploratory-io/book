@@ -92,6 +92,12 @@ If the calculation type is `Ratio (%)`, you can set how to group by for the perc
 ![](images/errbar3.png)
 
 
+## Missing Value Handling
+
+You can use the Missing Value Handling feature to control missing values. See [Missing Value Handling](missing-value-handling.md) for the detail.
+
+
+
 ## Layout Configuration
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 

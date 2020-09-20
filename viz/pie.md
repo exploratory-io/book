@@ -28,6 +28,12 @@ You can categorize numeric values inside the chart. See [Category(Binning)](cate
 You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
 
 
+## Missing Value Handling
+
+You can use the Missing Value Handling feature to control missing values. See [Missing Value Handling](missing-value-handling.md) for the detail.
+
+
+
 ## Layout Configuration
 
 * Show Percentages  - Show percentage numbers on the plot area.
