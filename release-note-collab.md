@@ -1,14 +1,45 @@
 # Release Note
 
-## 6.0
+## 6.1
 
-Released on 6/12/2020
+Released on 9/20/2020
 
 ### Download Links
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.0.1.1.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.0.1.1.tar.gz)
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.1.3.0.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.1.3.0.tar.gz)
 
+### Enhancements
+
+* Data Catalog: Support "History" tab next to the "Metadata" tab in published Data Shares.
+* Insight: Data Range search option improvement to show the most viewed insights based on the last N period in Insight view.
+* Insight: Tile view support in Insight view
+* Insight: Insight Search: Page loading performance improvement.
+* Parameter: Partial chart refreshing support for markdown reports (Dashboard, Slides, Note)
+* Parameter: Improved Parameter usability by uptaking new widgets.
+* Parameter: At the begining of an Interactive Session, Collaboration Server loads the data to be used in the Insight from the Parquet or RDS files. Before this release, Collaboration Server just loaded all the data for data source steps and recalculated necessary steps from there, regardless of steps cached on the Exploratory Desktop. Now we honor steps cached on the Exploratory Desktop, and calculation on the Collaboration Server also starts from the cached step data, instead of from the data source step data, if it is available.
+* Parameter: Scheduler: Data loading time performance improvement.
+* Parameter: Set "Autorun" off by default.
+* Parameter: Scheduler: Connection initialization performance improvement. 
+* Scheduler: Publish history on a shared item includes updates by the scheduler.
+* General: Before this release, connection information for Data Sources, such as host name for a database server, was kept in each one of the Data Source Steps uploaded to the Collaboration Server. This meant that if a connection information changed, you had to re-upload all the Insights that used the data sources with the connection information. With this release, we store the connection information as a centralized metadata on the server. This means you need to upload only one of the Insights that uses the changed connection informatoin, and the rest of the Insights start using the new connection information uploaded with the one Insight you uploaded.
+
+### Bug Fixes
+
+* Data Catalog: Scheduling a shared Data, Chart or Analytics broke the connection information defined on the server. 
+* Data Catalog: Invalid API key is set in CSV API URL if you are not logged in.
+* Data Catalog: If the Super Table has a list data type column, it failed to render the table when typing search keywords in search input field. 
+* Data Catalog: Super Table didn't load properly when network speed was slow.
+* Parameter: When numbers were used for parameter display names, single select pulldown for Numeric column did not work.
+* Parameter: Before this release, if Rserve child process, which is the R execution environment for Collaboration Server, crashed while executing, Interactive Session or Scheduled Data Refresh was kept waiting indefinitely. Now we handle such cases better, and the error is properly reported to the user.
+* Scheduler: Scheduler failed at .save_remote_rds and threw "file.exists(path) is not TRUE" error.
+* Scheduler: If you modified the title and description online and schedule it, it reset the modification on the title and description.
+* General: Download page should not show download button for Viewer users.
+* General: Empty LOV showed up if you clicked a '...' button on a Data share page that you didn't own.
+
+## 6.0
+
+Released on 6/12/2020
 
 ### Enhancements
 
