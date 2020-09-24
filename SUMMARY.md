@@ -185,7 +185,9 @@
    * [Random Survival Forest](analytics/random_survival_forest.md)
    * [Decision Tree](analytics/decision_tree.md)
    * [Variable Importance (Random Forest)](analytics/var_importance.md)
+   * [XGBoost](analytics/xgboost.md)
    * [Time Series Forecasting (Prophet)](analytics/forecasting.md)
+   * [Random Survival Forest Test](analytics/survival_forest.md)
    * [Anomaly Detection](analytics/anomaly.md)
    * [Market Basket Analysis](analytics/market_basket.md)
    * [T Test](analytics/t_test.md)
@@ -195,7 +197,6 @@
    * [Chi-Square Test](analytics/chisq.md)
    * [A/B Test](analytics/ab_test.md)
    * [Normality Test](analytics/normality.md)
-
 
 
 
