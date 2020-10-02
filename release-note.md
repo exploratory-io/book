@@ -1,10 +1,102 @@
 # Release Note
 
+## 6.2
+
+Released on 10/2/2020.
+
+### Enhancements
+
+* Summary: Show Mean and Median reference lines for the numeric and date data type columns.
+* Summary View: It now shows a percentage of each category when you place the mouse over on the bar.
+* Summary: Correlation mode: It now removes NA values instead of treating them as a category.
+
+* Data Wrangling: Supported Unnest wider and Unnest Longer.
+* Data Wrangling: Supported Disable/Duplicate a step token by clicking icon on the token.
+* Data Wrangling: Introduced a new UI dialog for the conditional replacing values with 'case_when'.
+* Data Wrangling: Support extracting values from the List column by specifying the name or the position.
+* Data Wrangling: When selecting/removing multiple columns, it now executes the step without showing the column selection dialog.
+* Data Wrangling: Added a series of functions for calculating the confidence interval.
+
+* Chart: It now support searching column names for the Other Group and the Highlight dialogs.
+* Chart: Now you can manage to show/hide unused factor levels at X-Axis and Color.
+* Chart: Error Bar: Add 3-way button control in "Ratio (%)" Calculation Type mode.
+* Chart: Support "Confidence Interval" option in the Range setting in Line chart.
+
+* Analytics: T-Test Analytics View: Added the "Difference" tab with error bar chart of mean differences between the 2 groups.
+* Analytics: Added the XGBoost to Analytics View.
+* Analytics: Added the ARIMA to Analytics View.
+* Analytics: Random Survival Forest: Improved the importance evaluation logic to make the result more robust.
+* Analytics: Random Forest: We made the Importance tab to use a bar chart instead of the boxplot to be consistent with other models. You can bring it back by enabing 'Boruta' in the property.
+* Analytics: Prediction tab: It now shows 'Number of Rows' in the popup for the "Actual" line.
+
+* Dashboard: Now you can set the row height when the "Fit to Screen" option is off.
+
+* Parameter: On SQL Editor, changed to show parameter runtime panel when clicking parameter link.
+* Parameter: Supported dynamically querying data for min/max value for numeric parameters or the list of values for categorical parameter.
+* Parameter: Supported "today" as a default value for Date data type and Timezone for Date / POSIXct Parameter.
+* Parameter: It now keeps opening the dialog when clicking the Save button instead of closing it so that you can continue working on other parameters.
+
+### Bug Fixes
+
+
+* Data Source: With Public Edition, clicking Re-importing button does not reflect the change.
+* Data Source: MySQL: Character column is shown as numeric column in the preview when the value is something like 9E.
+* Data Source: On Google Analytics Data Import Dialog, the "TypeError: Cannot read property 'some' of null" error was raised for some occasions.
+* Data Source: Google BigQuery: Corrected the Help Link for the storage bucket creation.
+* Data Source: CSV: When trying to import a CSV file, it failed due to missing Default Encoding for some occasions.
+
+* Summary: When moving a step while correlation mode is on, if the target column was not available on the moved step, it showed an empty screen.
+* Summary: Correlation Mode: Sorting by the 'P Value' didn't sort the columns properly.
+* Summary: Correlation Mode: When you imported data from the Data Catalog while the Correlation Mode was on, it opened the imported data with the Correlation mode.
+* Summary: Highlight Mode: When creating a chart by clicking on the chart icon while the highlighting column was not selected it showed an error.
+
+* Data Wrangling: In the 'Replace Values' the values shown in the preview table did not honor the levels of a Factor column.
+* Data Wrangling: Custom Step: The Run button did not respond right after you converted the step to a R Custom step.
+* Data Wrangling: The Comment was gone after splitting a step into multiple steps.
+* Data Wrangling: After saving a step as a data frame, switching to the Summary View threw an error sometimes.
+* Data Wrangling: The Comment popup for a step didn't close even after moving the mouse cursor to the other steps.
+* Data Wrangling: Even after resolving the step error, the step title was still showed in red.
+* Data Wrangling: Select Columns step became empty when the step was created by selecting multiple columns from the column menu.
+* Data Wrangling: An error dialog showed up when you selected "Save Step Data as New Data Frame (Without Steps)".
+
+* Chart: Map: The background map image was not showing up.
+* Chart: Map: type dropdown didn't close when you opened the dropdown and clicked outside the dropdown area.
+* Chart: Map: Standard map failed to render if the column for the State name was renamed.
+* Chart: When you exported a boxplot chart as a data frame, the column names for '1Q' and '3Q' were reversed.
+* Chart: The Axis range setting for the X-Axis didn't work when you used the Repeat By.
+* Chart: Table: Column Selection was cleared when the selected column was removed from a step
+* Chart: Error Bar: The Limit with "Current Y column" didn't work with the "Ratio(%)" Calculation Type.
+* Chart: Pivot Table: Fixed the text color of the "Viridis" color palette.
+* Chart: Clicking "Add to Dashboard" icon didn't work.
+
+* Analytics: When you created a new analytics and published it immediately, the thumbnail image didn't show up on the published analytics.
+
+* Note: Clicking a URL link in a Note in the single view mode, it opened up another desktop window where it should have opened a web browser.
+* Dashboard, Slides, Note: It now updates the charts directly inside the Dashboard, Note, and Slides instead of refreshing the whole page.
+* Dashboard: Could not get out of the project nor open the dashboard once clicking an url link from the dashboard edit window.
+* Dashboard: It takes a long time to preview a dashboard when resizing the window size.
+* Slide: When you click the "Refresh" button, it now stays on the currently opened page in the preview.
+
+* Publish: Canceling the 'publish' ended up restarting an R session.
+* Publish: The Lock icon remains on the published contents even after switching the mode from Private Share to Public Share.
+*
+* Parameter: A 'name conflict' error was shown if the Save button was clicked for the second time.
+* Parameter: The parameter pane was kept opened even after selecting a different dashboard
+* Parameter: An error "Cannot read property 'querySelector' of null" was shown after being a long time opening the parameter pane for Dashboard sometimes.
+* Parameter: The name conflict error was shown when you renamed a parameter, moved to other parameters, and clicked the Save button on the Confirmation Dialog.
+* Parameter: The display name was not properly shown for the dropdown type parameters.
+
+* Project: When opening a project with the Safe Mode, it didn't skip loading the custom R Scripts created for the project.
+* General: An error dialog showed up when you duplicated a data frame that pointed a data file which didn't exist anymore.
+* General: When trying to exit project, 'Extension context invalidated' error was raised for some occasions.
+
+
+
 ## 6.1.3
 
 Released on 9/11/2020.
 
-* General: Failed to perform "Save Step Data as New Data Frame (Without Steps)" and showed "cannot open the connection" error. 
+* General: Failed to perform "Save Step Data as New Data Frame (Without Steps)" and showed "cannot open the connection" error.
 * General: An error message showed up after duplicating a data frame if the source data file didn't exist in the local filesystem.
 * Data Wrangling: After selecting columns from column menu on the Summary View or the Table View, the Select step became empty.
 
