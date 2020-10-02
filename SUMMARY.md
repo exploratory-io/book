@@ -113,6 +113,8 @@
    * [Row as header](wrangling/row_as_header.md)
    * [Ungroup](wrangling/ungroup.md)
    * [Unnest](wrangling/unnest.md)
+   * [Separate List Items into Columns (Unnest Wider)](wrangling/unnest_wider.md)
+   * [Separate List Items into Rows (Unnest Longer)](wrangling/unnest_longer.md)
    * [Hoist](wrangling/hoist.md)
    * [Remove Empty Rows](wrangling/remove_empty_rows.md)
    * [Remove Empty Columns](wrangling/remove_empty_cols.md)
