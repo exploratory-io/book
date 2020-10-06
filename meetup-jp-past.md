@@ -1,7 +1,7 @@
 
 # #15 - 2020/10/2(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/rmqq3sux5l1xiqm/online_meetup_v15.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/3btfhe294vzzis6/online_meetup_v15.png?raw=1" width="100%" />
 
 ## 開催要項
 
