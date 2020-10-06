@@ -1,3 +1,49 @@
+
+# #15 - 2020/10/2(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/rmqq3sux5l1xiqm/online_meetup_v15.png?raw=1" width="100%" />
+
+## 開催要項
+
+* 日時: 2020年 10月 2日 (金) 12:00〜13:30（11:50開場）
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.2のご紹介 （Exploratory CEO 西田勘一郎）
+* 信頼区間を利用した広告クリエイティブのパフォーマンス評価 （社名非公開 羽生田 哲啓様）
+* CLV（顧客生涯価値）向上のための生存時間分析 （akippa株式会社 横田 学様）
+* 回帰モデルを利用したチャーン（解約）の要因分析 （サイボウズ株式会社 戒田 大至様）
+* 市場調査データへの機械学習の活用 （株式会社インテージヘルスケア 町田 脩様）
+
+
+## スライド
+
+### Exploratory 西田勘一郎
+
+<script async class="speakerdeck-embed" data-id="9e5181afff9e4a07bfd4f4d7ce1f2e64" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### 社名非公開 羽生田 哲啓様
+
+<script async class="speakerdeck-embed" data-id="4088cbf083b74033ae306a471ca891c1" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### akippa株式会社 横田 学様
+
+<script async class="speakerdeck-embed" data-id="91825f141b9d4a7da18382cdaedcbf29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+### サイボウズ株式会社 戒田 大至様
+
+<script async class="speakerdeck-embed" data-id="02dbb16dfb6249219b422f670d3c97d6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+### 株式会社インテージヘルスケア 町田 脩様
+
+<script async class="speakerdeck-embed" data-id="c55a03fe0dba4bd483a27fd8f3e4c346" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+---
+
+
 # #14 - 2020/7/31(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/7sfbvtif8phlj96/online_meetup_v14.png?raw=1" width="100%" />
