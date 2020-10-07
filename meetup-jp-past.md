@@ -17,53 +17,61 @@
 * 市場調査データへの機械学習の活用 （株式会社インテージヘルスケア 町田 脩様）
 
 
-## スライド
+## Exploratory 西田勘一郎
 
-### Exploratory 西田勘一郎
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/JkoG7dHzquE?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
 
 <script async class="speakerdeck-embed" data-id="9e5181afff9e4a07bfd4f4d7ce1f2e64" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-### 社名非公開 羽生田 哲啓様
+## 社名非公開 羽生田 哲啓様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/SX7ktzaQRc8?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
 
 <script async class="speakerdeck-embed" data-id="4088cbf083b74033ae306a471ca891c1" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ### akippa株式会社 横田 学様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/lgRY8hKjy6I?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
 
 <script async class="speakerdeck-embed" data-id="91825f141b9d4a7da18382cdaedcbf29" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 ### サイボウズ株式会社 戒田 大至様
 
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/O3vZbz6HCzY?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+
 <script async class="speakerdeck-embed" data-id="02dbb16dfb6249219b422f670d3c97d6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ### 株式会社インテージヘルスケア 町田 脩様
 
-<script async class="speakerdeck-embed" data-id="c55a03fe0dba4bd483a27fd8f3e4c346" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-
-
-## 動画
-
-### Exploratory 西田勘一郎
-
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/JkoG7dHzquE?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
-
-
-### 社名非公開 羽生田 哲啓様
-
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/SX7ktzaQRc8?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
-
-### akippa株式会社 横田 学様
-
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/lgRY8hKjy6I?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
-
-
-### サイボウズ株式会社 戒田 大至様
-
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/O3vZbz6HCzY?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
-
-### 株式会社インテージヘルスケア 町田 脩様
+ビデオ：
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/hcvm6c_xQgc?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="c55a03fe0dba4bd483a27fd8f3e4c346" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 
 ---
