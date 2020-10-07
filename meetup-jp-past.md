@@ -41,6 +41,33 @@
 <script async class="speakerdeck-embed" data-id="c55a03fe0dba4bd483a27fd8f3e4c346" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 
+## 動画
+
+
+### Exploratory 西田勘一郎
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JkoG7dHzquE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 社名非公開 羽生田 哲啓様
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SX7ktzaQRc8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### akippa株式会社 横田 学様
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lgRY8hKjy6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### サイボウズ株式会社 戒田 大至様
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O3vZbz6HCzY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### 株式会社インテージヘルスケア 町田 脩様
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hcvm6c_xQgc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+
+
+
 ---
 
 
