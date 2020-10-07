@@ -64,8 +64,7 @@
 
 ### 株式会社インテージヘルスケア 町田 脩様
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hcvm6c_xQgc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hcvm6c_xQgc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ---
