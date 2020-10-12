@@ -36,6 +36,9 @@ Input data should contain following columns.
 ### "Summary" View
 "Summary" View displays the summary of the test result.
 
+### "Difference" View
+"Difference" View displays error bar chart of the difference between the means of the 2 categories with 95% confidence interval. If the confidence interval includes 0, the difference is statistically insignificant.
+
 ### "Error Bar" View
 "Error Bar" View displays error bar chart of means of target variable for each category with 95% confidence interval.
 
