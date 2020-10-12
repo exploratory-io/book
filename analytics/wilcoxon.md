@@ -33,6 +33,9 @@ Input data should contain following columns.
 ### "Summary" View
 "Summary" View displays the summary of the test result.
 
+### "Difference" View
+"Difference" View appears only when "Estimate Confidence Interval of Difference" property is set to TRUE. It displays error bar chart of the median of the differences between a sample from one category and a sample from the other category with 95% confidence interval.
+
 ### "Error Bar" View
 "Error Bar" View displays error bar chart of means of target variable for each category with 95% confidence interval.
 
