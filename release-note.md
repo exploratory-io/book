@@ -1,5 +1,67 @@
 # Release Note
 
+## 6.2.1
+
+Released on 10/12/2020.
+
+### Bug Fixes
+
+* Summary View: Could not unselect a column for correlation mode.
+
+
+* Data Wrangling:  On Mutate Step, a token showed "Creating" instead of expression when there was not saved change and the project was reopened.
+* Data Wrangling: Added calc_confint_mean and calc_confint_ratio to the numeric functions.
+* Data Wrangling: After converting a command to a Custom R Script step, clicking the Cancel button then reopening the token still showed a Custom R Script Dialog.
+* Data Wrangling: Calculation Type Pull down list on Mutate Multiple was not fully displayed when many columns are selected.
+* Data Wrangling: Drag and drop a branch to move branch root ended up "dataframe undefined does not exist in the catalog" error for some occasion.
+* Data Wrangling: Expose confidence interval functions in Summarize dialog.
+* Data Wrangling: Improved label and text of Unnest Wider and Unnest Longer parameters.
+* Data Wrangling: Japanese column name is not highlighted in orange in Mutate or other expression editor.
+* Data Wrangling: When selecting multiple columns for Unite command, the selected column order was not saved properly and it generated value in unexpected order.
+* Data Wrangling: On Summarize Dialog, changed the default preview sample size to 10K rows.
+* Data Wrangling: On Text Wrangling Dialog, if the "end" argument was not entered for extract range of text operation, preview shows duplicated text.
+* Data Wrangling: Syntax suggestion for mutate step etc. was not suggesting correct candidates when column names that consist of multibyte characters are in the expression.
+* Data Wrangling: Table View: When collapsing the data frame list on the Analytics View, table does not use full width after moving to the table view.
+* Data Wrangling: When disabling a step, associated branches now move to the previous valid step.
+* Data Wrangling: when selected a data frame, Error "DAG Node dataframe: does not exist." showed for some occasion.\
+
+
+* Chart: Color is not respecting the result of the Limit on X-Axis.
+* Chart: Support a property to adjust the double click timing for the Chart legend. 
+* Chart: Support the custom bandwidth option in Density chart.
+* Chart: Expose the Repeat By Layout Toolbar in Chart.
+* Chart: Long/Lat Map: Decimal digit setting shouldn't apply to the number of rows in Popup. 
+* Chart: Make the upper/lower range column auto-assignment case-insensitive in Range setting.
+* Chart: Show detail is empty if you assign POSIXct column at X-Axis with floor to month function.
+* Chart: Support a property to show/hide number of rows in Popup.
+* Chart: When re-opening a data frame, if previously selected step had an error, it showed TypeError: Cannot read property 'getTransformName' of undefined when underlying metadata was corrupted.
+
+
+* Analytics: ARIMA: In some cases for shorter data, error with message "Column `seasonal` doesn't exist" was raised.
+* Analytics: ARIMA: Seasonal ARIMA parameters can be manually specified now.
+* Analytics: Cox Regression Model Step: Residual was missing in prediction result on training data.
+* Analytics: Cox Regression Step: Layout got broken while selecting predictor variables
+* Analytics: XGBoost: Default validation metrics is changed to negative log likelihood.
+
+
+* Note/Slide: When a note or slide is opened in the Side by Side mode, now the Run button is placed on the preview toolbar area.
+
+
+* Parameter: Duplicated parameters were shown in the Parameter Pane if the same parameter was used in the SQL query multiple times
+* Parameter: Filter with "Is In (Multiple Values)" operator with "Ignore Case" option with a Parameter kept no data when the Parameter value was set to "All".
+* Parameter: Importing EDF file with parameters failed with error "Cannot read property 'type' of undefined".
+* Parameter: When defining a data frame based parameter, the last step info was not saved when updating a parameter.
+* Parameter: When opening a parameter pane, command dialog should be closed.
+
+
+* Install: On WIndows, improved the repository location validation to prevent a repository created directly under C:/Users directory.
+* General: Accidentally dropping an image file onto Exploratory breaks the User Interface.
+* General: Clicking "See all your conversations button" inside Chat Dialog didn't display the conversations.
+* General: Now the Chat Dialog inside Exploratory Desktop shows Japanese User Interface when Exploratory Desktop UI language is Japanese.
+* General: When published to exploratory.io or Collaboration Server, database query returned no data, if the data source was originally imported from a published EDF file.
+* General: On Project List, renaming project was slow when there are many projects.
+
+
 ## 6.2
 
 Released on 10/2/2020.
@@ -10,6 +72,7 @@ Released on 10/2/2020.
 * Summary View: It now shows a percentage of each category when you place the mouse over on the bar.
 * Summary: Correlation mode: It now removes NA values instead of treating them as a category.
 
+
 * Data Wrangling: Supported Unnest wider and Unnest Longer.
 * Data Wrangling: Supported Disable/Duplicate a step token by clicking icon on the token.
 * Data Wrangling: Introduced a new UI dialog for the conditional replacing values with 'case_when'.
@@ -17,10 +80,12 @@ Released on 10/2/2020.
 * Data Wrangling: When selecting/removing multiple columns, it now executes the step without showing the column selection dialog.
 * Data Wrangling: Added a series of functions for calculating the confidence interval.
 
+
 * Chart: It now support searching column names for the Other Group and the Highlight dialogs.
 * Chart: Now you can manage to show/hide unused factor levels at X-Axis and Color.
 * Chart: Error Bar: Add 3-way button control in "Ratio (%)" Calculation Type mode.
 * Chart: Support "Confidence Interval" option in the Range setting in Line chart.
+
 
 * Analytics: T-Test Analytics View: Added the "Difference" tab with error bar chart of mean differences between the 2 groups.
 * Analytics: Added the XGBoost to Analytics View.
@@ -29,7 +94,9 @@ Released on 10/2/2020.
 * Analytics: Random Forest: We made the Importance tab to use a bar chart instead of the boxplot to be consistent with other models. You can bring it back by enabing 'Boruta' in the property.
 * Analytics: Prediction tab: It now shows 'Number of Rows' in the popup for the "Actual" line.
 
+
 * Dashboard: Now you can set the row height when the "Fit to Screen" option is off.
+
 
 * Parameter: On SQL Editor, changed to show parameter runtime panel when clicking parameter link.
 * Parameter: Supported dynamically querying data for min/max value for numeric parameters or the list of values for categorical parameter.
@@ -45,10 +112,12 @@ Released on 10/2/2020.
 * Data Source: Google BigQuery: Corrected the Help Link for the storage bucket creation.
 * Data Source: CSV: When trying to import a CSV file, it failed due to missing Default Encoding for some occasions.
 
+
 * Summary: When moving a step while correlation mode is on, if the target column was not available on the moved step, it showed an empty screen.
 * Summary: Correlation Mode: Sorting by the 'P Value' didn't sort the columns properly.
 * Summary: Correlation Mode: When you imported data from the Data Catalog while the Correlation Mode was on, it opened the imported data with the Correlation mode.
 * Summary: Highlight Mode: When creating a chart by clicking on the chart icon while the highlighting column was not selected it showed an error.
+
 
 * Data Wrangling: In the 'Replace Values' the values shown in the preview table did not honor the levels of a Factor column.
 * Data Wrangling: Custom Step: The Run button did not respond right after you converted the step to a R Custom step.
@@ -58,6 +127,7 @@ Released on 10/2/2020.
 * Data Wrangling: Even after resolving the step error, the step title was still showed in red.
 * Data Wrangling: Select Columns step became empty when the step was created by selecting multiple columns from the column menu.
 * Data Wrangling: An error dialog showed up when you selected "Save Step Data as New Data Frame (Without Steps)".
+
 
 * Chart: Map: The background map image was not showing up.
 * Chart: Map: type dropdown didn't close when you opened the dropdown and clicked outside the dropdown area.
@@ -69,7 +139,9 @@ Released on 10/2/2020.
 * Chart: Pivot Table: Fixed the text color of the "Viridis" color palette.
 * Chart: Clicking "Add to Dashboard" icon didn't work.
 
+
 * Analytics: When you created a new analytics and published it immediately, the thumbnail image didn't show up on the published analytics.
+
 
 * Note: Clicking a URL link in a Note in the single view mode, it opened up another desktop window where it should have opened a web browser.
 * Dashboard, Slides, Note: It now updates the charts directly inside the Dashboard, Note, and Slides instead of refreshing the whole page.
@@ -77,14 +149,17 @@ Released on 10/2/2020.
 * Dashboard: It takes a long time to preview a dashboard when resizing the window size.
 * Slide: When you click the "Refresh" button, it now stays on the currently opened page in the preview.
 
+
 * Publish: Canceling the 'publish' ended up restarting an R session.
 * Publish: The Lock icon remains on the published contents even after switching the mode from Private Share to Public Share.
-*
+
+
 * Parameter: A 'name conflict' error was shown if the Save button was clicked for the second time.
 * Parameter: The parameter pane was kept opened even after selecting a different dashboard
 * Parameter: An error "Cannot read property 'querySelector' of null" was shown after being a long time opening the parameter pane for Dashboard sometimes.
 * Parameter: The name conflict error was shown when you renamed a parameter, moved to other parameters, and clicked the Save button on the Confirmation Dialog.
 * Parameter: The display name was not properly shown for the dropdown type parameters.
+
 
 * Project: When opening a project with the Safe Mode, it didn't skip loading the custom R Scripts created for the project.
 * General: An error dialog showed up when you duplicated a data frame that pointed a data file which didn't exist anymore.
@@ -117,6 +192,7 @@ Released on 8/25/2020.
 * General: When closing Exploratory, 'No window with id: 5' error was raised for some occasions.
 * General: When closing Exploratory, 'Extension context invalidated' error was raised for some occasions.
 
+
 * Data Source: ODBC: On Schema Tree, changed to sort the table and view names alphabetically.
 * Data Source: Changing the data source to the 'data catalog' type didn't work
 * Data Source: When importing a file with long path name, the file path name was not shown properly.
@@ -124,12 +200,15 @@ Released on 8/25/2020.
 * Data Source: Google Sheets: Could not get data from Google Sheets when the selected sheets is only accessible by id.
 * Data Source: Google BigQuery: When streaming data with many columns, some columns contained missing values.
 
+
 * Summary View: After exiting from the highlight mode, the 'unique value' was still showing the values for the highlighted.
 * Summary View: When an analytics raised an error on the analytics view, moving to the Summary View showed a blank screen.
 * Summary: Pop-up shows up always at the left side when you hover the histogram in Summary view.
 
+
 * Table View: Clicking on the Filter's LOV made the dialog closed at the first time.
 * Table View: Popover text box for the Table Filter Token was too long with unnecessary space.
+
 
 * Data Wrangling: When a step had an error on Analytics view, analytics column selector widgets became disabled and could not change them even after moving to a valid step.
 * Data Wrangling: When the step cache was removed, the step was unnecessarily recalculated even when the step was already up to date.
@@ -147,6 +226,7 @@ Released on 8/25/2020.
 * Data Wrangling: The Summary and the Pivot step UIs' preview table now shows all the data. You can still limit the rows if you want.
 * Data Wrangling: The Prediction step with cached Random Forest or XGBoost model step failed with an error.
 
+
 * Chart: Error Bar: A strange number showed up on Y Axis if you enabled the reference line and used the Horizontal orientation.  
 * Chart: The Show Details dialog showed no data when the chart had a chart filter and X-Axis had a numeric column with category function applied.
 * Chart: When creating a chart from the Summary View, an extra space was appended at the end of the chart name.
@@ -156,13 +236,16 @@ Released on 8/25/2020.
 * Chart: Quantile dialog position was incorrect and input field validation was missing.
 * Chart: Map - Long / Lat: The larger circles are shown under the smaller circles so that you can click on any circles.
 
+
 * Analytics: Random Forest Step: On Windows, when creating a build model step, number of rows for test data was not displayed on Model Summary View when UI language was Japanese.
 * Analytics: NAs in the target variable is now filtered out before building the prediction models.
 * Analytics: When changing the Analytics Type to the one that does not support Repeat By like Normality Test, the previously selected Repeat By column was not cleared and it ended up showing an unexpected result.
 * Analytics: Survival Curve: "%" was missing for the survival rate displayed on the mouse-over pop-up.
 
+
 * Note: After previewing a note, the last scrolled position was not remembered and it went back to the top of the content.
 * Publish: When the publishing failed, a proper error message was not shown.
+
 
 * R Package: Improved style for Tabs and Table inside the R Package Management Dialog.
 * Project: When there is an warning icon next to a project, mouse hovering the icon didn't show the warning message in the instant pop-up.
