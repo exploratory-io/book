@@ -57,7 +57,6 @@
 
 スライド：
 
-
 <script async class="speakerdeck-embed" data-id="02dbb16dfb6249219b422f670d3c97d6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## 株式会社インテージヘルスケア 町田 脩様
@@ -70,8 +69,6 @@
 スライド：
 
 <script async class="speakerdeck-embed" data-id="c55a03fe0dba4bd483a27fd8f3e4c346" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-
-
 
 ---
 
@@ -95,32 +92,42 @@
 
 ## スライド
 
-### Exploratory 西田勘一郎
+## Exploratory 西田勘一郎
+
+ビデオ：
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/eiLNTuOZ8gU?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
-<br>
+
+スライド：
 
 <script async class="speakerdeck-embed" data-id="838f70640ee64bb9a72cf848854bfce7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-### 株式会社GxP 石村 麻莉彩様
+## 株式会社GxP 石村 麻莉彩様
+
+ビデオ：
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/4OCEDPyXPl8?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
-<br>
+
+スライド：
 
 <script async class="speakerdeck-embed" data-id="4c4ad6fd45a04b9aa6d6590092227044" data-ratio="1.44428772919605" src="//speakerdeck.com/assets/embed.js"></script>
 
-### 株式会社リブセンス 後藤 鉄平様
+## 株式会社リブセンス 後藤 鉄平様
+
+ビデオ：
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/1yiGZcohVkI?rel=0&amp;start=3" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
-<br>
+
+スライド：
 
 <script async class="speakerdeck-embed" data-id="30dd7bc80a0b41e090df3fb52e7676be" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+## 株式会社 日立ドキュメントソリューションズ 湯山 咲子様
 
-### 株式会社 日立ドキュメントソリューションズ 湯山 咲子様
+スライド：
 
 <script async class="speakerdeck-embed" data-id="293d33b6a1cb4daea456134ffa23d94a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
@@ -148,12 +155,14 @@
 
 ### Exploratory 西田勘一郎
 
+ビデオ：
+
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/nJIv6sgShsQ?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
-<br>
+
+スライド：
 
 <script async class="speakerdeck-embed" data-id="931f2186e2034e958207897e2a593b22" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
 
 ### Chatwork株式会社 田中 亜希様
 
