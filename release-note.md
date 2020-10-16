@@ -1,5 +1,18 @@
 # Release Note
 
+## 6.2.2
+
+Released on 10/16/2020.
+
+### Bug Fixes
+
+
+* Data Source: Re-Import menu showed the "Re-import All the Related Source Data" option for a branch even if it doesn't have any related data frames.
+* Generic: When closing a project, 'nw.gui' error was raisd for some occasion.
+* Parameter: After changing the Slider type parameter's type from Dynamic type to Static type, the min and max values of the Slider were still using the values from the previously selected data frame.
+* Project: When using Exploratory Desktop with a Collaboration server, the Account Settings shortcut menu on the Project List was linked to an incorrect URL.
+
+
 ## 6.2.1
 
 Released on 10/12/2020.
