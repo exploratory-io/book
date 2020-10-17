@@ -1,13 +1,30 @@
 # Release Note
 
+Released on 10/16/2020
+
+### Download Links
+
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.2.1.0.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.2.1.0.tar.gz)
+
+
+### Enhancements
+
+* Parameter: Before this release, even when the list of values for a categorical parameter was based on unique values of a data frame column, the list of values were fetched only at the creation of the parameter, and it had fixed options of values after that. With this release, list of values for such a parameter is dynamically updated when the data frame it depends on is updated.
+* Summary View: We now show percentages for character and factor columns.
+
+### Bug Fixes
+
+* Parameter: Display name was not used for the the 'List of Values' type parameters.
+* Parameter: List of Values did not work when the referenced column name contained special characters.
+* Parameter: Starting the Interactive Session failed with error "could not find function '%>%'".
+* Scheduler: Refreshing the Dashboards with Wordcloud charts was not working.
+* Server: The Map was shown over the parameter pane.
+
 ## 6.1
 
 Released on 9/20/2020
 
-### Download Links
-
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.1.3.0.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.1.3.0.tar.gz)
 
 ### Enhancements
 
@@ -20,15 +37,15 @@ Released on 9/20/2020
 * Parameter: At the begining of an Interactive Session, Collaboration Server loads the data to be used in the Insight from the Parquet or RDS files. Before this release, Collaboration Server just loaded all the data for data source steps and recalculated necessary steps from there, regardless of steps cached on the Exploratory Desktop. Now we honor steps cached on the Exploratory Desktop, and calculation on the Collaboration Server also starts from the cached step data, instead of from the data source step data, if it is available.
 * Parameter: Scheduler: Data loading time performance improvement.
 * Parameter: Set "Autorun" off by default.
-* Parameter: Scheduler: Connection initialization performance improvement. 
+* Parameter: Scheduler: Connection initialization performance improvement.
 * Scheduler: Publish history on a shared item includes updates by the scheduler.
 * General: Before this release, connection information for Data Sources, such as host name for a database server, was kept in each one of the Data Source Steps uploaded to the Collaboration Server. This meant that if a connection information changed, you had to re-upload all the Insights that used the data sources with the connection information. With this release, we store the connection information as a centralized metadata on the server. This means you need to upload only one of the Insights that uses the changed connection informatoin, and the rest of the Insights start using the new connection information uploaded with the one Insight you uploaded.
 
 ### Bug Fixes
 
-* Data Catalog: Scheduling a shared Data, Chart or Analytics broke the connection information defined on the server. 
+* Data Catalog: Scheduling a shared Data, Chart or Analytics broke the connection information defined on the server.
 * Data Catalog: Invalid API key is set in CSV API URL if you are not logged in.
-* Data Catalog: If the Super Table has a list data type column, it failed to render the table when typing search keywords in search input field. 
+* Data Catalog: If the Super Table has a list data type column, it failed to render the table when typing search keywords in search input field.
 * Data Catalog: Super Table didn't load properly when network speed was slow.
 * Parameter: When numbers were used for parameter display names, single select pulldown for Numeric column did not work.
 * Parameter: Before this release, if Rserve child process, which is the R execution environment for Collaboration Server, crashed while executing, Interactive Session or Scheduled Data Refresh was kept waiting indefinitely. Now we handle such cases better, and the error is properly reported to the user.
@@ -46,7 +63,7 @@ Released on 6/12/2020
 * Japanese translations for more UIs including Share, Schedule, and Parameter.
 * Added the Parameter support for Chart and Analytics.
 * You can write a message and send it when you share the published contents with others.
-* You can add a comment when you publish or republish. The comments can be viewed as 'History' by others. 
+* You can add a comment when you publish or republish. The comments can be viewed as 'History' by others.
 * Support SMTP for sending out notification emails.
 
 ### Bug Fixes
