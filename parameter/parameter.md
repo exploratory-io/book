@@ -54,6 +54,9 @@ By using Parameters, following Views on Exploratory Desktop or Dashboards/Docume
 
 ### Dashboards/Documents Published at exploratory.io or Collaboration Server
 
+- Data 
+- Chart
+- Analytics
 - Dashboard
 - Note
 - Slides
