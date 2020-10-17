@@ -32,3 +32,19 @@ Input data should contain following columns.
 6. Click Run button to run the analytics.
 7. Select view type by clicking view type link to see each type of generated visualization.
 
+### "Summary" View
+"Summary" View displays the summary of the test result.
+
+### "Pivot Table" View
+"Pivot Table" View displays a table that shows frequencies of the rows that comes from each combination of the 2 categorical values.
+The frequencies can be displayed either in count or in percentage, which can be configured by the "Show Frequencies in..." property.
+
+### "Ratio" View
+"Ratio" View displays a bar chart that shows percentages of the rows with each value of the Target Variable, for each Explanatory Variable value.
+
+### "Contributions (%)" View
+"Contributions (%)" View displays a scatter plot with circles each of which represents contribution to the Chi-Squared value from a combination of the 2 categorical variable values.
+
+### "Differences" View
+"Differences" View displays a scatter plot with circles each of which represents difference of the actual frequency from the expected frequency for a combination of the 2 categorical variable values.
+The differences can be measured either in percentage, absolute count, or the standardized difference, which can be configured by "Calculation Method" property.
