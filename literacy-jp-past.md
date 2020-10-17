@@ -6,12 +6,11 @@
 * 日時: 2020年 10月 16日 (金) 12:00〜14:00（11:50開場）
 * 会場: Zoom会議
 
-## アジェンダ
-
+## アジェンダ・資料
 
 * コロナ時代のデータリテラシー	(Exploratory CEO 西田勘一郎)
-* BIからその先のデータ活用へ	(スプライングローバル株式会社 岩橋 智宏様)
-* 分析から価値あるアウトプットを出すには	(株式会社 truestar 戸塚 佳子様)
+* BIからその先のデータ活用へ	(スプライングローバル株式会社 岩橋 智宏様) - [スライド](https://speakerdeck.com/ikuyam/bikarasofalsexian-falsedetahuo-yong-he)
+* 分析から価値あるアウトプットを出すには	(株式会社 truestar 戸塚 佳子様) - [スライド](https://files.speakerdeck.com/presentations/e0b57e0e5c25483caaa36218240fe331/tuestar.pdf)
 * Google Analyticsユーザーが陥りがちな3つの落とし穴	(株式会社プリンシプル 取締役副社長/チーフ・エバンジェリスト 木田 和廣様)
 
 ## ビデオ
