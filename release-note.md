@@ -1,70 +1,86 @@
 # Release Note
 
+## 6.2.2
+
+Released on 10/16/2020.
+
+### Bug Fixes
+
+
+* Data Source: Re-Import menu showed the "Re-import All the Related Source Data" option for a branch even if it doesn't have any related data frames.
+* Generic: When closing a project, 'nw.gui' error was raisd for some occasion.
+* Parameter: After changing the Slider type parameter's type from Dynamic type to Static type, the min and max values of the Slider were still using the values from the previously selected data frame.
+* Project: When using Exploratory Desktop with a Collaboration server, the Account Settings shortcut menu on the Project List was linked to an incorrect URL.
+
+
 ## 6.2.1
 
 Released on 10/12/2020.
 
+### Enhancements
+
+* Data Wrangling: Expose the confidence interval functions in Summarize dialog.
+* Data Wrangling: Improved label and text of Unnest Wider and Unnest Longer parameters.
+* Data Wrangling: Japanese column name is now highlighted in orange color in Mutate or other expression editor.
+* Data Wrangling: On Summarize Dialog, changed the default preview sample size to 10K rows to make the initial performance better.
+
+* Chart: Expose the Repeat By Layout Toolbar in Chart.
+* Chart: Support a property to adjust the double click timing for the Chart legend.
+* Chart: Support the custom bandwidth option for Density chart.
+* Chart: Now you can show/hide 'number of rows' in the chart popup.
+
+* Analytics: ARIMA: Seasonal ARIMA parameters can be manually specified now.
+* Analytics: XGBoost: The default validation metrics for the 'Learning' is changed to negative log likelihood.
+
+* Note/Slide: When a note or slide is opened in the Side by Side mode, now the Run button is placed at the preview toolbar.
+
+* General: Now the Chat Dialog inside Exploratory Desktop shows Japanese User Interface when Exploratory Desktop UI language is Japanese.
+
+
 ### Bug Fixes
 
-* Summary View: Could not unselect a column for correlation mode.
+* Data Wrangling: On Mutate Step, a token showed "Creating" instead of expression when the it was not saved before closing the project.
+* Data Wrangling: Added calc_confint_mean and calc_confint_ratio under the numeric functions of the column header menu.
+* Data Wrangling: After converting the step to a Custom R Script, you couldn't get it back even after you clicked the Cancel button.
+* Data Wrangling: Drag and drop a branch data frame root ended up showing "dataframe undefined does not exist in the catalog" error for some occasions.
 
-
-* Data Wrangling:  On Mutate Step, a token showed "Creating" instead of expression when there was not saved change and the project was reopened.
-* Data Wrangling: Added calc_confint_mean and calc_confint_ratio to the numeric functions.
-* Data Wrangling: After converting a command to a Custom R Script step, clicking the Cancel button then reopening the token still showed a Custom R Script Dialog.
-* Data Wrangling: Calculation Type Pull down list on Mutate Multiple was not fully displayed when many columns are selected.
-* Data Wrangling: Drag and drop a branch to move branch root ended up "dataframe undefined does not exist in the catalog" error for some occasion.
-* Data Wrangling: Expose confidence interval functions in Summarize dialog.
-* Data Wrangling: Improved label and text of Unnest Wider and Unnest Longer parameters.
-* Data Wrangling: Japanese column name is not highlighted in orange in Mutate or other expression editor.
-* Data Wrangling: When selecting multiple columns for Unite command, the selected column order was not saved properly and it generated value in unexpected order.
-* Data Wrangling: On Summarize Dialog, changed the default preview sample size to 10K rows.
-* Data Wrangling: On Text Wrangling Dialog, if the "end" argument was not entered for extract range of text operation, preview shows duplicated text.
-* Data Wrangling: Syntax suggestion for mutate step etc. was not suggesting correct candidates when column names that consist of multibyte characters are in the expression.
-* Data Wrangling: Table View: When collapsing the data frame list on the Analytics View, table does not use full width after moving to the table view.
+* Data Wrangling: When selecting multiple columns for Unite command, the selected column order was not preserved properly.
+* Data Wrangling: On Text Wrangling Dialog, if the "end" input box for the Extract Range of Text was empty, the preview showed duplicated text.
+* Data Wrangling: Syntax suggestion was not suggesting correct candidates when column names with multibyte characters are in the expression in the Mutate step.
+* Data Wrangling: Table View: When collapsing the data frame list on the Analytics View, the table does not use full width after moving to the table view.
 * Data Wrangling: When disabling a step, associated branches now move to the previous valid step.
-* Data Wrangling: when selected a data frame, Error "DAG Node dataframe: does not exist." showed for some occasion.\
 
-
-* Chart: Color is not respecting the result of the Limit on X-Axis.
-* Chart: Support a property to adjust the double click timing for the Chart legend. 
-* Chart: Support the custom bandwidth option in Density chart.
-* Chart: Expose the Repeat By Layout Toolbar in Chart.
-* Chart: Long/Lat Map: Decimal digit setting shouldn't apply to the number of rows in Popup. 
-* Chart: Make the upper/lower range column auto-assignment case-insensitive in Range setting.
-* Chart: Show detail is empty if you assign POSIXct column at X-Axis with floor to month function.
-* Chart: Support a property to show/hide number of rows in Popup.
+* Chart: The Color was not respecting the result of the Limit configuration done for the X-Axis.
+* Chart: Long/Lat Map: Decimal digit setting shouldn't apply to the number of rows in Popup.
+* Chart: 'Show detail' dialog was showing empty when you assigned a POSIXct column at X-Axis with 'Floor to Month' function.
 * Chart: When re-opening a data frame, if previously selected step had an error, it showed TypeError: Cannot read property 'getTransformName' of undefined when underlying metadata was corrupted.
 
 
-* Analytics: ARIMA: In some cases for shorter data, error with message "Column `seasonal` doesn't exist" was raised.
-* Analytics: ARIMA: Seasonal ARIMA parameters can be manually specified now.
+* Analytics: ARIMA: In some cases for shorter data, error with message "Column 'seasonal' doesn't exist" was raised.
 * Analytics: Cox Regression Model Step: Residual was missing in prediction result on training data.
-* Analytics: Cox Regression Step: Layout got broken while selecting predictor variables
-* Analytics: XGBoost: Default validation metrics is changed to negative log likelihood.
-
-
-* Note/Slide: When a note or slide is opened in the Side by Side mode, now the Run button is placed on the preview toolbar area.
-
+* Analytics: Cox Regression Step: Layout got broken while selecting the predictor variables
 
 * Parameter: Duplicated parameters were shown in the Parameter Pane if the same parameter was used in the SQL query multiple times
-* Parameter: Filter with "Is In (Multiple Values)" operator with "Ignore Case" option with a Parameter kept no data when the Parameter value was set to "All".
+* Parameter: Filter with "Is In (Multiple Values)" operator with "Ignore Case" option always returned no data even when the Parameter was set to "All".
 * Parameter: Importing EDF file with parameters failed with error "Cannot read property 'type' of undefined".
 * Parameter: When defining a data frame based parameter, the last step info was not saved when updating a parameter.
-* Parameter: When opening a parameter pane, command dialog should be closed.
 
+* Install: On Windows, the repository location validation is now prevents it from creating the repository directly under C:/Users directory.
 
-* Install: On WIndows, improved the repository location validation to prevent a repository created directly under C:/Users directory.
-* General: Accidentally dropping an image file onto Exploratory breaks the User Interface.
+* General: Accidentally dropping an image file onto Exploratory broke the User Interface.
 * General: Clicking "See all your conversations button" inside Chat Dialog didn't display the conversations.
-* General: Now the Chat Dialog inside Exploratory Desktop shows Japanese User Interface when Exploratory Desktop UI language is Japanese.
 * General: When published to exploratory.io or Collaboration Server, database query returned no data, if the data source was originally imported from a published EDF file.
-* General: On Project List, renaming project was slow when there are many projects.
+* General: On Project List, renaming project was super slow when there are many projects.
 
 
 ## 6.2
 
 Released on 10/2/2020.
+
+Here is a v6.2 release announcement blog post for more details on some of the key new features.
+
+* [Introduction to Exploratory v6.2](https://blog.exploratory.io/exploratory-v6-2-released-e7128dd0678d)
+
 
 ### Enhancements
 
