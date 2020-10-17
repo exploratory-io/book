@@ -34,7 +34,19 @@ Input data should contain following columns.
 7. Select view type by clicking view type link to see each type of generated visualization.
 
 ### "Summary" View
-"Summary" View displays the summary of the test result.
+"Summary" View displays a table that shows the summary of the test result.
+  * t Ratio
+  * P Value
+  * Degree of Freedom
+  * Difference - Difference between the means of the values from the 2 categories.
+  * Conf High - Upper bound of the confidence interval of the difference. The confidence level can be specified by the Confidence Level property.
+  * Conf Low - Lower bound of the confidence interval of the difference. The confidence level can be specified by the Confidence Level property.
+  * Effect Size (Cohen's d)
+  * Power - Power of the test. Calculated as 1 minus the probability of type 2 error explained below.
+  * Probability of Type 2 Error - Possible maximum probability of committing type 2 error given the sample size, the confidence level, and the difference to detect.
+    If the difference to detect is not specified, the actual difference from the data is used instead.
+  * Number of Rows - Total number of rows used for the test.
+  * Number of Rows for... - Number of rows for each value of the explanatory variable.
 
 ### "Difference" View
 "Difference" View displays error bar chart of the difference between the means of the 2 categories with 95% confidence interval. If the confidence interval includes 0, the difference is statistically insignificant.
