@@ -186,7 +186,7 @@
    * [Cox Regression](analytics/var_importance_time.md)
    * [Random Survival Forest](analytics/survival_forest.md)
    * [Decision Tree](analytics/decision_tree.md)
-   * [Variable Importance (Random Forest)](analytics/var_importance.md)
+   * [Random Forest](analytics/var_importance.md)
    * [XGBoost](analytics/xgboost.md)
    * [Time Series Forecasting (Prophet)](analytics/forecasting.md)
    * [Anomaly Detection](analytics/anomaly.md)
