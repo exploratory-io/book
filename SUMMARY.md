@@ -189,6 +189,7 @@
    * [Random Forest](analytics/var_importance.md)
    * [XGBoost](analytics/xgboost.md)
    * [Time Series Forecasting (Prophet)](analytics/forecasting.md)
+   * [Time Series Forecasting (ARIMA)](analytics/arima.md)
    * [Anomaly Detection](analytics/anomaly.md)
    * [Market Basket Analysis](analytics/market_basket.md)
    * [T Test](analytics/t_test.md)
