@@ -15,7 +15,9 @@ Input data should be a time series data. Each row should represent one observati
     * Prediction Interval - Controls the width of the displayed prediction interval. The default is 0.8. Probability which is covered by the prediction interval.
   * Model Parameters - Basic
     * Select Parameters Automatically
-    * Criterion for Parameter Selection
+      * TRUE - Parameters p,d, and q are selected automatically based on the specified criterion.
+      * FALSE - Parameters p,d, and q are to be specified manually.
+    * Criterion for Parameter Selection - Criterion used to select model when "Select Parameters Automatically" property is TRUE.
       * AIC
       * AICC
       * BIC
@@ -23,9 +25,11 @@ Input data should be a time series data. Each row should represent one observati
     * Integration (d)
     * MA Process (q)
   * Model Parameters - Seasonal
-    * Model with Seasonality
+    * Model with Seasonality - Whether to use Seasonal ARIMA model, as opposed to ARIMA model without seasonality.
     * Seasonal Period
     * Select Parameters Automatically
+      * TRUE - Parameters P,D, and Q are selected automatically based on the specified criterion.
+      * FALSE - Parameters P,D, and Q are to be specified manually.
     * AR Process (P)
     * Integration (D)
     * MA Process (Q)
