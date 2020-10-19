@@ -66,12 +66,12 @@ By using Parameters, following Views on Exploratory Desktop or Dashboards/Docume
 You can specify the following properties for a parameter when the parameter is embedded in an SQL or MongoDB query.
 
 - quote - Controls whether to quote the value of the parameter in the SQL or MongoDB query, and with what kind of quotation. The defaylt is double quotation.
-  - '"' - Double quote the parameter value.
-  - "'" - Single quote the parameter value.
+  - `'"'` - Double quote the parameter value.
+  - `"'"` - Single quote the parameter value.
   - FALSE - Do not quote the parameter value.
 - escape - Controls whether to escape the value of the parameter in the SQL or MongoDB query, and for what kind of quotation. The default is escaping for double quotation.
-  - '"' - Escape the parameter value so that it can be used with double quotation.
-  - "'" - Escape the parameter value so that it can be used with single quotation.
+  - `'"'` - Escape the parameter value so that it can be used with double quotation.
+  - `"'"` - Escape the parameter value so that it can be used with single quotation.
   - FALSE - Do not escape the parameter value.
 
 ### Examples:
