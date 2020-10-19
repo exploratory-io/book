@@ -34,12 +34,12 @@ Input data should be a time series data. Each row should represent one observati
     * Integration (D)
     * MA Process (Q)
   * Stationarity
-    * Unit Root Test
+    * Unit Root Test - The unit root test performed for the "Stationarity" View.
       * KPSS
       * ADF
       * PP
   * Data Preprocessing
-    * Missing Value Handling for Value - How to fill missing values after aggregation of data. There are following options. The default is No Fill.
+    * Missing Value Handling for Value - How to fill missing values after aggregation of data. There are following options. The default is "Fill with Previous Value".
       * Fill with Previous Value
       * Fill with Zero
       * Linear Interpolation
