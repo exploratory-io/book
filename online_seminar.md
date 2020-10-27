@@ -1,17 +1,19 @@
-# Data Visualization Workshop Part 5 - Data Wrangling for Data Visualization
-## Date/Time: TBD 
+# Data Wrangling for Data Visualization
+## Date/Time: 10/28 (Wed) - 11AM PT (US) / 2PM ET (US) / 6PM GMT / 8PM CET
 ## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://zoom.us/j/331585134)
+## Meeting URL: [Zoom](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-This is a part of the Data Visualization Workshop. In this seminar, we'll focus on how to prepare data before visualizing the data.
+Once you get your data, more often than not, you'd find a need to clean and transform the data before even visualizing it to make any sense. We call this task Data Wrangling.
 
-* Join / Merge Data
-* Create Calculation
-* Date / Time Sensitive Data Filtering
-* Text Data Wrangling
-* Order Categorical Values with Factor
+In this seminar, I'm going to introduce a few commonly used techniques to clean and transform data with COVID-19 data.
 
-The past recording and tutorial slides can be found at the [workshop page](https://exploratory.io/note/kanaugust/Data-Visualization-Workshop-YAZ6azM0MU).
+Transform Wide data to Long data
+Convert Text to Date data type
+Calculate the difference from the previous row with Lag function
+Join with another data frame
+Knowing these simple techniques is essential for creating effective visualizations.
+
+This is a part of the Data Visualization Workshop. The past recording and tutorial slides can be found at the [workshop page](https://exploratory.io/note/kanaugust/Data-Visualization-Workshop-YAZ6azM0MU).
 
 ----
 
