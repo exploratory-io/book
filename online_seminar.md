@@ -7,11 +7,11 @@ Once you get your data, more often than not, you'd find a need to clean and tran
 
 In this seminar, I'm going to introduce a few commonly used techniques to clean and transform data with COVID-19 data.
 
-Transform Wide data to Long data
-Convert Text to Date data type
-Calculate the difference from the previous row with Lag function
-Join with another data frame
-Knowing these simple techniques is essential for creating effective visualizations.
+* Transform Wide data to Long data
+* Convert Text to Date data type
+* Calculate the difference from the previous row with Lag function
+* Join with another data frame
+* Knowing these simple techniques is essential for creating effective visualizations.
 
 This is a part of the Data Visualization Workshop. The past recording and tutorial slides can be found at the [workshop page](https://exploratory.io/note/kanaugust/Data-Visualization-Workshop-YAZ6azM0MU).
 
