@@ -8,4 +8,6 @@ Exploratory v6.3の紹介と、ユーザー様によるExploratoryを使った�
 * 会場: Zoom会議
 * 参加方法: [こちら](https://exploratory.io/note/BWz1Bar4JF/16-qez2ack5yL)のページよりお申し込みください。
 
-<img src="https://www.dropbox.com/s/dm49x5b4hj17tlp/2020_1204_v16.png?raw=1" width="100%" />
+## アジェンダ
+
+<img src="https://www.dropbox.com/s/t1ka37glyiqvbg7/2020_1204_v16_v2.png?raw=1" width="100%" />
