@@ -10,8 +10,8 @@ Exploratory v6.3の紹介と、ユーザー様によるExploratoryを使った�
 
 ## スピーカー
 
-<img src="https://www.dropbox.com/s/2y8c9hq130kfw3c/2020_1204_v16_.bustup_v1.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/ka939obf70dddj6/2020_1204_v16_.bustup_v3.png?raw=1" width="100%" />
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/bt26h6e2ykd3tdc/2020_1204_v16_v3.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/z0kzt6273g3z97s/2020_1204_v16_v4.png?raw=1" width="100%" />
