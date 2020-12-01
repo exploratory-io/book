@@ -86,6 +86,7 @@ You can cancel the plan first, then click 'Upgrade' button at your account page.
 
 There are MacOS and Windows versions available at our download page. Check this [Note](https://exploratory.io/note/kanaugust/8664976332176618) for more details on system requirements.
 
+For macOS Big Sur, we tested basic operations and confirmed these work fine. There is one known issue for the fresh install case so please check this [Community Post](https://community.exploratory.io/t/r-installation-error-on-macos-big-sur/1948) for more details.
 ## Can I change the location of the Exploratory repository?
 
 Yes. Here's an [instruction](https://docs.exploratory.io/howto/set_exploratory_home.html) on how to do that.
