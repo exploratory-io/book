@@ -9,7 +9,7 @@
 * Y-Axis - Assign a column you want to show at Y-Axis. If it's a Numeric column assigned, you can set the aggregation function such as `Sum`, `Mean (Average)`, etc. to aggregate the values. You can also assign a Window Calculation from the gear icon on Y-Axis. Look at [Window Calculation](window-calc.md) section for details.  
 * Color - Take a look at [Color](color.md) section for more details.
 * Sort - Assign a column to use for Sorting the X-Axis values. The default is based on either the alphabetic order or the factor level order for Factor type columns.
-* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
+* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
 
 You can assign multiple columns to Y-Axis. Take a look at [Multiple Y-Axis](multi-y.md) section for more details.
 
@@ -27,7 +27,7 @@ You can select from one of the following orientations. The default is `Vertical`
 ![](images/bar-horiz.png)
 
 * In this orientation type, X-Axis goes vertically and Y-Axis goes horizontally in order to make it easy to switch between horizontal and vertical orientation.
-* At this moment, the horizontal orientation doesn't support [Small Multiple](small-multiple.md). 
+* At this moment, the horizontal orientation doesn't support [Repeat By](small-multiple.md). 
 
 
 ## Bar Type - Stacked vs. Grouped

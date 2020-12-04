@@ -15,7 +15,7 @@
 ![](images/scatter-label.png)
 If you check the `Show on plot` option, the column values directly come up in the plot area. 
 ![](images/scatter-label-on-plot.png)
-* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
+* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
 
 You can assign multiple columns to Y-Axis. Take a look at [Multiple Y-Axis](multi-y.md) section for more details.
 

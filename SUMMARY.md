@@ -150,7 +150,7 @@
    * Features
      * [Trend Line](viz/trend-line.md)
      * [Reference Line](viz/reference-line.md)
-     * [Small Multiple](viz/small-multiple.md)
+     * [Repeat By](viz/small-multiple.md)
      * [Window Calculation](viz/window-calc.md)
      * [Date/Time Aggregation](viz/date-aggregate.md)
      * [Show Range](viz/range.md)

@@ -10,7 +10,7 @@ You can show the distribution of the data with "Violin" like shapes. This chart 
 
 * X-Axis - Assign a column you want to show the distribution. The column data should be numeric. 
 * Color By - Assign a column for color. Take a look at [Color](color.md) section for more details.
-* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
+* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
 * Include Outlier - You can uncheck to exclude the outlier values. 
 
 ## Highlight 

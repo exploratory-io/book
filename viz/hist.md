@@ -8,7 +8,7 @@
 * Y-Axis - It is fixed to "Number of Rows". You can select how you want to show the bars at the function dropdown. See ["Ratio Mode"](#ratio-mode) for detail.
 * Color - Take a look at [Color](color.md) section for more details.
 * Number of Bars - Specify the number of bars. The default is `Automatic`.
-* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Small Multiple](small-multiple.md) section for more details.
+* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
 
 
 ## Count/Ratio Mode
