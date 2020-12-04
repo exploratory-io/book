@@ -126,6 +126,7 @@
 * [Visualization](chart.md)
    * Types
      * [Pivot](viz/pivot.md)
+     * [Summarize Table](viz/summarize-table.md)
      * [Table](viz/table.md)
      * [Bar](viz/bar.md)
      * [Line](viz/line.md)
@@ -159,6 +160,7 @@
      * [Multiple Y-Axis Columns](viz/multi-y.md)
      * [Layout Configuration](viz/layout.md)
      * [Column Configuration](viz/column-configuration.md)
+     * [Column Configuration Dialog](viz/column-configuration-dialog.md)
      * [Color Setting](viz/color.md)
      * [Pin](viz/pin.md)
      * [Save as PNG/SVG](viz/save.md)
