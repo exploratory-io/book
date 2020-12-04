@@ -2,7 +2,7 @@
 
 You can change the format of the target column in the Column Configuration Dialog. 
 
-![](images/cconf8.png#)
+![](images/cconf8.png)
 
 
 
@@ -103,7 +103,7 @@ You can show inline bars in the column value cells. The bar length is depending 
 
 The output will look like this. 
 
-![](images/cconf11.png#)
+![](images/cconf11.png)
 
 
 ### Color Encoding 
@@ -116,7 +116,7 @@ You can apply a color encoding to the column values. You can choose a color pale
 This is the example of the color encoding applied to the background color. 
 
 
-![](images/cconf12.png#)
+![](images/cconf12.png)
 
 ## Condtional Formatting 
 
@@ -144,4 +144,4 @@ The following operators are available.
 
 This is the sample output of the Conditional Formatting. 
 
-![](images/cconf13.png#)
+![](images/cconf13.png)

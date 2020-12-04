@@ -24,7 +24,7 @@ You can choose what type of totals you want to show in the Summarize Table. The 
 ## Formatting Columns
 
 You can format each Row Header and Value column. You can access the Column Format dialog by selecting "Format" menu in the column menu next to the column name dropdown. See 
-[Column Configuration Dialog](viz/column-configuration-dialog.md) for mode details.
+[Column Configuration Dialog](column-configuration-dialog.md) for mode details.
 
 ![](images/stable2.png)
 
@@ -32,7 +32,7 @@ You can format each Row Header and Value column. You can access the Column Forma
 
 ## Window Calculation 
 
-* You can assign Window Calculations for each column at Value. See [Window Calculation](viz/window-calc.md) for more details.
+* You can assign Window Calculations for each column at Value. See [Window Calculation](window-calc.md) for more details.
 
 
 ## Visual Sort 

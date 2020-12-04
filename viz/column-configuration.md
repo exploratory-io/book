@@ -41,6 +41,6 @@ You can also configure the format of each column from the Column Configuration D
 
 ## Column Configuration Dialog 
 
-You can change the format of the target column in the Column Configuration Dialog. See [Column Configuration Dialog](viz/column-configuration-dialog.md) for more details.
+You can change the format of the target column in the Column Configuration Dialog. See [Column Configuration Dialog](column-configuration-dialog.md) for more details.
 
 ![](images/cconf8.png)
