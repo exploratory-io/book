@@ -35,6 +35,9 @@ Input data should contain following columns.
 ### "Summary" View
 "Summary" View displays the summary of the test result.
 
+### "Prob. Distribution" View
+"Prob. Distribution" View displays probability distribution of the test statistic (Chi-Square) under the null hypothesis, and where the test statistic for the performed test is placed in the distribution.
+
 ### "Pivot Table" View
 "Pivot Table" View displays a table that shows frequencies of the rows that comes from each combination of the 2 categorical values.
 The frequencies can be displayed either in count or in percentage, which can be configured by the "Show Frequencies in..." property.

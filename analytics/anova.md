@@ -26,6 +26,9 @@ Input data should contain following columns.
 ### "Summary" View
 "Summary" View displays the summary of the test result.
 
+### "Prob. Distribution" View
+"Prob. Distribution" View displays probability distribution of the test statistic (F value) under the null hypothesis, and where the test statistic for the performed test is placed in the distribution.
+
 ### "Error Bar" View
 "Error Bar" View displays error bar chart of means of target variable for each category with 95% confidence interval.
 
