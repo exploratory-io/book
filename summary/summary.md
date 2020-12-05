@@ -168,22 +168,68 @@ Logical target column:
 
 
 
-### Create Analytics/Chart from Metircs
+### Create Analytics/Chart 
 
-You can create an Analytics or a Chart by clicking a metric value in the column. The available metrics vary depending the data type of the target column and the comparing column.
-
-Numeric target column: 
-* R Squared: Linear regression analytics 
-* Correlation: Scatter chart with a linear regression trend line  
-* P Value: Kruskal-Wallis test analytics
-
-Logical target column: 
-* AUC: Logistic regression analytics
-* P Value: Chi-square Test analytics
+You can create an Analytics or a Chart from the column header menu. Available Analytics and Chart types vary depending the data type of the target column and the comparing column.
 
 
-![](images/cor8.png)
+#### Numeric target column 
+##### Analytics
+* Linear Regression 
+* Decision Tree 
+* Random Forest 
+* XGBoost 
+* Kruskal-Wallis Test 
 
+##### Chart
+* Bar 
+* Error Bar
+* Line 
+* Scatter (Only if a comparing column is Numeric or Date)
+
+
+#### Logical target column 
+
+##### Analytics
+* Logistic Regression 
+* Decision Tree 
+* Random Forest 
+* XGBoost 
+* Chi-Square Test 
+
+##### Chart
+* Bar 
+* Error Bar
+* Line 
+
+
+![](images/cor9.png)
+
+
+
+### Create Analytics with Multiple Predictor Variables
+
+You can create an Analytics with multiple predictor variables from Summary View by the following steps. 
+
+* Choose columns for predictor variables by control(command)+click or shift+click. 
+* Select an Analytics type from the column header menu. 
+
+Available Analytics types vary depending the data type of the target column. 
+
+
+#### Numeric target column 
+* Linear Regression 
+* Decision Tree 
+* Random Forest 
+* XGBoost 
+
+#### Logical target column 
+* Logistic Regression 
+* Decision Tree 
+* Random Forest 
+* XGBoost 
+
+![](images/cor10.png)
 
 
 
