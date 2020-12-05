@@ -35,7 +35,7 @@ Input data should contain following columns.
 
 ### "Summary" View
 "Summary" View displays a table that shows the summary of the test result.
-  * t Ratio
+  * t Value
   * P Value
   * Degree of Freedom
   * Difference - Difference between the means of the values from the 2 categories.
@@ -47,6 +47,9 @@ Input data should contain following columns.
     If the difference to detect is not specified, the actual difference from the data is used instead.
   * Number of Rows - Total number of rows used for the test.
   * Number of Rows for... - Number of rows for each value of the explanatory variable.
+
+### "Prob. Distribution" View
+"Prob. Distribution" View displays probability distribution of the test statistic (t value) under the null hypothesis, and where the test statistic for the performed test is placed in the distribution.
 
 ### "Difference" View
 "Difference" View displays error bar chart of the difference between the means of the 2 categories with 95% confidence interval. If the confidence interval includes 0, the difference is statistically insignificant.
