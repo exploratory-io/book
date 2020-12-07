@@ -19,6 +19,7 @@ Released on 12/3/2020.
 * Data Wrangling: It now has an option to show 'space/tab/new line' in the preview table inside the Text Wrangling UI.
 * Data Wrangling: On the Text Wrangling Dialog's Preview Table, now it shows the number of unique values in Count Column.
 
+
 * Chart: Added a new 'Summarize Table' to summarize data in a table format.
 * Chart: Now you can repeat charts for each Y-Axis column when you assign multiple Y-Axis columns.
 * Chart: Added "Logistic" and "Poisson" Trend Line types.
@@ -26,6 +27,7 @@ Released on 12/3/2020.
 * Chart: Support clicking to highlight rows in Table, Pivot Table and Summarize Table.
 * Chart/Analytics: Column Selection dialog now shows how many columns are selected.
 * Chart/Analytics: When duplicating a Chart/Analytics, it now shows a dialog to set the name.
+
 
 * Analytics: You can now add a step to predict by using a model that is created in the Analytics View
 * Analytics: Cox Regression and Survival Forest now has chart for time-dependent ROC with AUC.
@@ -39,6 +41,7 @@ Released on 12/3/2020.
 * Analytics: Time Series Forecasting (Prophet): 0 as forecast period is allowed. This is useful when you'd like to create a model with external variables, which do not have future values.
 * Analytics: By-class summary table for multiclass classification is added back.
 * Analytics: Linear Regression: Residual/Prediction scatter plot is added back.
+
 
 * Report: Now you can see the setting menu of the charts with 'Repeat By' even inside Note, Slide and Dashboard.
 
@@ -69,11 +72,13 @@ Released on 12/3/2020.
 * Data Wrangling: On Text Data Wrangling UI, the preview table highlight was not happening for some cases.
 * Data Wrangling: On the Table View, after adding a Group By step, the table shows incorrect coloring for the groups.
 
+
 * Data Wrangling: On Windows, When creating a filter and hovering mouse over the custom tab, the right border is missing in the right tab.
 * Data Wrangling: Right hand-side step pane is not displayed when selecting a data frame that uses a data source extension but the extension was not installed.
 * Data Wrangling: System Locale was not affecting result of month function and shows English names.
 * Data Wrangling: When creating multiple tokens inside a 'Replace Values with New Values' step, the dialog for the new token did not show an expected result.
 * Data Wrangling: The 'Duplicate' icon did not show up when there was only one token in the Mutate / Filter steps.
+
 
 * Chart: "Map - Extension" showed an error dialog if you assigned a logical column to Color By and choose "ALL" for the aggregation function.
 * Chart: After deleting a step that caused the missing column issue for a chart, the chart did not get updated.
@@ -90,18 +95,22 @@ Released on 12/3/2020.
 * Chart: When disabling a column used for the color, it showed 'object not found error.'
 * Chart: Long/Lat Map: You couldn't assign a column to Size if "(Row ID)" is assigned to Group By.
 
+
 * Analytics: Axis order doesn't change even if you check "Sync Y Axis" option in the Contribution chart in Chi-Square Test.
 * Analytics: Unchecking the "Sync Y-Axis" option didn't adjust the Y-Axis under the Prediction tab.
 * Analytics: If you import a project that contains a data frame created by "Save Chart Data as Data Frame", it shows an error dialog with "Error in gzfile(file, "rb") : cannot open the connection".
 * Analytics: Prediction Matrix: Columns with only 0 values used to be dropped, but now it is reserved.
 * Analytics: The random seed is set at each group level when the Repeat-by is used for more stability in the results.
 
+
 * Parameter: Dynamic Slider: Min/Max value was not properly set when there is a Group By step.
 * Parameter: When changing parameter type from Slider to Text Input, it was still showing the data frame selector.
+
 
 * General: Improved the error message for the proxy network setting.
 * General: With R 4.0.3, Date operations that involve timezone raised an error "Unrecognized timezone".
 * General: Improved an overall performance for opening / closing projects and moving between data frames and views.
+
 
 * Installation: Windows: When User's home directory contains Japanese characters, the selected custom folder name was not properly displayed.
 
