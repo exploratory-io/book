@@ -1,4 +1,3 @@
-
 # #16 - 2020/12/4(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/e7qrtsj0uxjz8gm/1-kan.png?raw=1" width="100%" />
@@ -57,7 +56,6 @@
 <script async class="speakerdeck-embed" data-id="6607d4d9b5ec4af19fdc20dcd3c93bc9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ---
-
 
 # #15 - 2020/10/2(金) @Zoom会議
 
