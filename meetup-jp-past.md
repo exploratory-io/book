@@ -56,6 +56,8 @@
 
 <script async class="speakerdeck-embed" data-id="6607d4d9b5ec4af19fdc20dcd3c93bc9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
+---
+
 # #15 - 2020/10/2(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/3btfhe294vzzis6/online_meetup_v15.png?raw=1" width="100%" />
