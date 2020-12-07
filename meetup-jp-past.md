@@ -1,4 +1,58 @@
 
+# #16 - 2020/12/4(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/e7qrtsj0uxjz8gm/1-kan.png?raw=1" width="100%" />
+
+## 開催要項
+
+* 日時: 2020年 12月 4日 (金) 12:00〜13:30（11:50開場）
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.3のご紹介 （Exploratory CEO 西田勘一郎）
+* 半年でつくるデータ分析文化 （株式会社リンクアンドモチベーション 東田 富貴様）
+* 商品レビューのテキスト分析（社名非公開 森末 祐子様）
+* 広告運用におけるベイジアンABテストの活用 （株式会社セプテーニ 大塩 和朗様）
+* 製造業における時系列予測モデルの活用（ライオン株式会社 尾崎 淳様）
+
+## Exploratory 西田勘一郎
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/eVN48C7Q3rQ?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## 株式会社リンクアンドモチベーション 東田 富貴様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/H5zUgI90RyQ?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="0413210a756a43e8a480d3f2aa0932da" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 株式会社セプテーニ 大塩 和朗様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/NaIs4nUxHaM?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="ca4002a033d54a7cb5b3b49cfbc7aaf6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## ライオン株式会社 尾崎 淳様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/97DeL55ecO8?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="6607d4d9b5ec4af19fdc20dcd3c93bc9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 # #15 - 2020/10/2(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/3btfhe294vzzis6/online_meetup_v15.png?raw=1" width="100%" />
