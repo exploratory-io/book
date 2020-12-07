@@ -22,6 +22,9 @@
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/eVN48C7Q3rQ?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
+スライド：
+
+<script async class="speakerdeck-embed" data-id="4f1d5a8c226d4e02a42bcb46bbfb04a7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## 株式会社リンクアンドモチベーション 東田 富貴様
 
