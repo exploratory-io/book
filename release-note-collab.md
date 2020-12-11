@@ -11,16 +11,16 @@ Released on 12/10/2020
 
 ### Enhancements
 
-* Parameter: Supporting prediction by a model created by an Analytics View on Interactive Session.
-* Scheduler: Supporting scheduling failure notification email in Collaboration Server. (SMTP server configuration is required.)
-* Server: Support user level runtime parameters (locale, first day of week) for Scheduling and Interactive Session.
-* Insight: Supporting "Last 7 days" and "Last 30 days" options in Date Range parameter in Insight Search. 
+* Parameter: Supporting the prediction feature with models created by the Analytics View in the Interactive mode.
+* Scheduler: Notification emails will be sent when the scheduling jobs failed. (SMTP server configuration is required.)
+* Server: Users can now set their locale related setting from the server UI (locale, first day of week). This information is used for the Scheduling and the Interactive mode.
+* Insight: Supporting "Last 7 days" and "Last 30 days" options in Date Range parameter in Insight Search.
 
 ### Bug Fixes
 
-* Parameter: When opening the Parameters pane, it showed "hidden" parameters too.
-* Parameter: Interactive Session with database Data Sources published by previous versions of Exploratory Desktop raised error.
-* Server: Deletion of published Data/Chart/Analytics did not correctly release the disk space.
+* Parameter: When opening the Parameters pane, it was showing the "hidden" parameters.
+* Parameter: Interactive Session with the database data source type published by previous versions of Exploratory Desktop raised an error.
+* Server: Deletion of published Data/Chart/Analytics did not correctly recover the disk space.
 
 
 ## 6.2
