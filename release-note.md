@@ -7,7 +7,6 @@ Released on 12/10/2020.
 
 ### Enhancements
 
-
 * Chart: Supported Column Width and Text Wrap option in Table. 
 * Chart: Supported Font Style and Visual Formatting options for non-numeric columns in Table.
 
@@ -21,7 +20,6 @@ Released on 12/10/2020.
 
 
 ### Bug Fixes
-
 
 * Data Source: With ODBC data source, a SQL query that included non-ascii column names in a where clause didn't work for Oracle Database.
 * Data Source: Consolidated odbc R package based Data Source and RODBC R package based Data Source and now it only shows one unified "ODBC" data source.
