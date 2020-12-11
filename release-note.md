@@ -11,7 +11,7 @@ Released on 12/10/2020.
 
 
 * Chart: Table: You can now set the column width and also enable text wrapping.
-* Chart: Table: The Font Style and Visual Formatting options are not supported even for the non-numeric columns.
+* Chart: Table: The Font Style and Visual Formatting options are now supported even for the non-numeric columns.
 
 
 * Analytics: Time Series Forecasting (Prophet): "Autoscale Y Axis" is supported for the Forecasted and the Trend charts.
