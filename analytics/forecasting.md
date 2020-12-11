@@ -72,11 +72,15 @@ There are many properties to configure how to build the models and how to transf
 
 "Forecasted" View displays how the future values look like. with a line chart. Blue line is for actual values and orange line is for forecasted values. Orange band shows uncertainty interval.
 
-![](images/timeseries_forcasting_forecated.png)
+You can check "Autoscale Y Axis" checkbox to make the Y axis scale optimized. 
+
+![](images/timeseries_forcasting_forecated.png#1)
 
 ## "Trend" View
 
 "Trend" View displays actual values (blue line), and trend line (orange line). It also displays change points of the trend line, and how much change of slope was made at each change point (green bars).
+
+You can check "Autoscale Y Axis" checkbox to make the Y axis scale optimized. 
 
 ![](images/timeseries_forcasting_trend.png)
 
