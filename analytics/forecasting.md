@@ -74,7 +74,7 @@ There are many properties to configure how to build the models and how to transf
 
 You can check "Autoscale Y Axis" checkbox to make the Y axis scale optimized. 
 
-![](images/timeseries_forcasting_forecated.png#1)
+![](images/timeseries_forcasting_forecated.png)
 
 ## "Trend" View
 
