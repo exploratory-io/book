@@ -25,7 +25,7 @@ Released on 12/10/2020.
 * Data Source: Consolidated odbc R package based Data Source and RODBC R package based Data Source and now it only shows one unified "ODBC" data source.
 
 
-* Data Wrangling: Error message from an invalid step kept shown even after opening a different project
+* Data Wrangling: Error message from an invalid step kept shown even after opening a different project.
 * Data Wrangling: Reorganized column menu for Text Data Wrangling.
 * Data Wrangling: On the Table View, adding a step failed if the new step removed columns used for a table filter.
 * Data Wrangling: On Recode dialog, switching override column did not work and it kept showing the previously selected column.
