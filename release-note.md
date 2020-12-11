@@ -1,13 +1,58 @@
 # Release Note
 
+## 6.3.2
+
+Released on 12/10/2020.
+
+
+### Enhancements
+
+
+* Chart: Supported Column Width and Text Wrap option in Table. 
+* Chart: Supported Font Style and Visual Formatting options for non-numeric columns in Table.
+
+
+* Analytics: Supported "Autoscale Y Axis" option in the chart toolbar in Forecasted and Trend charts in Time Series Forecasting (Prophet) analytics.
+* Analytics: Prediction by a model created with Analytics View is now supported on Interactive Session on exploratory.io or Collaboration Server.
+* Analytics: Introduced model_info function to extract model information from a list column of a data frame that stores model objects, making use of functions of broom package.
+
+
+* Installation: Supported proxy server connection test on the System Configuration dialog.
+
+
+### Bug Fixes
+
+
+* Data Source: With ODBC data source, a SQL query that included non-ascii column names in a where clause didn't work for Oracle Database.
+* Data Source: Consolidated odbc R package based Data Source and RODBC R package based Data Source and now it only shows one unified "ODBC" data source.
+
+
+* Data Wrangling: Error message from an invalid step kept shown even after opening a different project
+* Data Wrangling: Reorganized column menu for Text Data Wrangling.
+* Data Wrangling: On the Table View, adding a step failed if the new step removed columns used for a table filter.
+* Data Wrangling: On Recode dialog, switching override column did not work and it kept showing the previously selected column.
+* Data Wrangling: Create Bin dialog froze right after opening the dialog.
+
+ 
+* Chart: Line chart failed to render and showed an error dialog if you entered non-numeric values for Constant Values in Reference Line setting. 
+* Chart: Pivot Table failed to render and showed an error dialog if you entered the same value twice for Cutting Points in Category Setting dialog. 
+
+
+* Analytics: It was hard to show a popup by hovering a reference line in Error Bar charts in T Test and Wilcoxon Test. 
+* Analytics: Prediction by a model created with Analytics View on a scheduled job at the exploratory.io server failed, if Date information extraction function was applied on predictor variables, and the server's locale was set differently from that of the Exploratory Desktop.
+
+
+* Installation: On macOS Big Sur, installation of R, as part of Exploratory's installation, did not properly create R's executable at /usr/local/bin/R, resulting in Exploratory repeatedly requiring R to be installed.
+
+
 ## 6.3.1
 
 Released on 12/3/2020.
 
 ### Enhancements
 
-* Summary View: Support creating analytics (e.g. Random Forest) by selecting multiple columns.
-* Summary View: Support more chart/analytics types for creating from Summary View.
+* Summary View: Supported creating analytics (e.g. Random Forest) by selecting multiple columns.
+* Summary View: Supported more chart/analytics types for creating from Summary View.
 
 
 * Data Wrangling: Supported 'Text inside of', 'Text by Range', 'First Word', 'Last Word', 'Email Address',  'URL', and 'Emoji' options for Text Wrangling Dialog.
@@ -24,7 +69,7 @@ Released on 12/3/2020.
 * Chart: Now you can repeat charts for each Y-Axis column when you assign multiple Y-Axis columns.
 * Chart: Added "Logistic" and "Poisson" Trend Line types.
 * Chart: Added a "Quick Window Calculation" menu.
-* Chart: Support clicking to highlight rows in Table, Pivot Table and Summarize Table.
+* Chart: Supported clicking to highlight rows in Table, Pivot Table and Summarize Table.
 * Chart/Analytics: Column Selection dialog now shows how many columns are selected.
 * Chart/Analytics: When duplicating a Chart/Analytics, it now shows a dialog to set the name.
 
