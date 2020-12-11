@@ -7,7 +7,7 @@ Released on 12/10/2020.
 
 ### Enhancements
 
-* Chart: Supported Column Width and Text Wrap option in Table. 
+* Chart: Supported Column Width and Text Wrap options in Table. 
 * Chart: Supported Font Style and Visual Formatting options for non-numeric columns in Table.
 
 
