@@ -7,37 +7,38 @@ Released on 12/10/2020.
 
 ### Enhancements
 
-* Chart: Supported Column Width and Text Wrap options in Table. 
-* Chart: Supported Font Style and Visual Formatting options for non-numeric columns in Table.
+* Data Source: ODBC: Now it has one unified "ODBC" data source that supports both 'unixodbc' and 'iodbc' types.
 
 
-* Analytics: Supported "Autoscale Y Axis" option in the chart toolbar in Forecasted and Trend charts in Time Series Forecasting (Prophet) analytics.
-* Analytics: Prediction by a model created with Analytics View is now supported on Interactive Session on exploratory.io or Collaboration Server.
-* Analytics: Introduced model_info function to extract model information from a list column of a data frame that stores model objects, making use of functions of broom package.
+* Chart: Table: You can now set the column width and also enable text wrapping.
+* Chart: Table: The Font Style and Visual Formatting options are not supported even for the non-numeric columns.
 
 
-* Installation: Supported proxy server connection test on the System Configuration dialog.
+* Analytics: Time Series Forecasting (Prophet): "Autoscale Y Axis" is supported for the Forecasted and the Trend charts.
+* Analytics: Prediction by a model created with Analytics View is now supported on Interactive Session at Exploratory Cloud and Exploratory Collaboration Server.
+* Analytics: Adding 'model_info' function to extract model information from a list column of a data frame that stores model objects.
+
+* Installation: Supporting a proxy server connection test capability in the System Configuration dialog.
 
 
 ### Bug Fixes
 
-* Data Source: With ODBC data source, a SQL query that included non-ascii column names in a where clause didn't work for Oracle Database.
-* Data Source: Consolidated odbc R package based Data Source and RODBC R package based Data Source and now it only shows one unified "ODBC" data source.
+* Data Source: With ODBC data source, a SQL query that included non-ascii column names in a 'where' clause didn't work for Oracle Database.
 
 
 * Data Wrangling: Error message from an invalid step kept shown even after opening a different project.
-* Data Wrangling: Reorganized column menu for Text Data Wrangling.
-* Data Wrangling: On the Table View, adding a step failed if the new step removed columns used for a table filter.
-* Data Wrangling: On Recode dialog, switching override column did not work and it kept showing the previously selected column.
-* Data Wrangling: Create Bin dialog froze right after opening the dialog.
-
- 
-* Chart: Line chart failed to render and showed an error dialog if you entered non-numeric values for Constant Values in Reference Line setting. 
-* Chart: Pivot Table failed to render and showed an error dialog if you entered the same value twice for Cutting Points in Category Setting dialog. 
+* Data Wrangling: Reorganized the column menu for Text Data Wrangling.
+* Data Wrangling: On the Table View, adding a step failed with an error when a newly added step removed a column that was used for the table filter.
+* Data Wrangling: On Recode dialog, switching a column to overwrite did not work and it kept showing the previously selected column.
+* Data Wrangling: 'Create Bin' dialog froze right after opening the dialog.
 
 
-* Analytics: It was hard to show a popup by hovering a reference line in Error Bar charts in T Test and Wilcoxon Test. 
-* Analytics: Prediction by a model created with Analytics View on a scheduled job at the exploratory.io server failed, if Date information extraction function was applied on predictor variables, and the server's locale was set differently from that of the Exploratory Desktop.
+* Chart: Line chart failed to render and showed an error dialog when you entered non-numeric values for the Constant Values in Reference Line setting.
+* Chart: Pivot Table failed to render and showed an error dialog when you entered the same value twice for Cutting Points in Category Setting dialog.
+
+
+* Analytics: It is now easier to show a popup by hovering a reference line in Error Bar charts in T Test and Wilcoxon Test.
+* Analytics: Prediction by a model created with Analytics View on a scheduled job at Exploratory Cloud server failed, if Date information extraction function was applied on predictor variables, and the server's locale was set differently from that of the Exploratory Desktop.
 
 
 * Installation: On macOS Big Sur, installation of R, as part of Exploratory's installation, did not properly create R's executable at /usr/local/bin/R, resulting in Exploratory repeatedly requiring R to be installed.
