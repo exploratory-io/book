@@ -1,12 +1,31 @@
 # Release Note
 
-Released on 10/16/2020
+## 6.3.1.10
+
+Released on 12/10/2020
 
 ### Download Links
 
 * [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.2.1.0.tar.gz)
 * [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.2.1.0.tar.gz)
 
+### Enhancements
+
+* Parameter: Supporting prediction by a model created by an Analytics View on Interactive Session.
+* Scheduler: Supporting scheduling failure notification email in Collaboration Server. (SMTP server configuration is required.)
+* Server: Support user level runtime parameters (locale, first day of week) for Scheduling and Interactive Session.
+* Insight: Supporting "Last 7 days" and "Last 30 days" options in Date Range parameter in Insight Search. 
+
+### Bug Fixes
+
+* Parameter: When opening the Parameters pane, it showed "hidden" parameters too.
+* Parameter: Interactive Session with database Data Sources published by previous versions of Exploratory Desktop raised error.
+* Server: Deletion of published Data/Chart/Analytics did not correctly release the disk space.
+
+
+## 6.2
+
+Released on 10/16/2020
 
 ### Enhancements
 
