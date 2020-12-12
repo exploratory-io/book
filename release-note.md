@@ -1,5 +1,14 @@
 # Release Note
 
+## 6.3.3
+
+Released on 12/11/2020.
+
+### Bug Fixes
+
+* Chart: Dropdown list opened from bottom to top so that you couldn't see all the options in the Set Color Conditionally section of the Format Column dialog in Table.
+
+
 ## 6.3.2
 
 Released on 12/10/2020.
