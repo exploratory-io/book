@@ -10,6 +10,14 @@ You can change the format of the target column in the Column Configuration Dialo
 
 You can set the column display name that you want to use. 
 
+## Font Style
+
+You can set a font style that you want to use for text in cells.
+
+## Column Width (px)
+
+You can set a column width. The unit is pixel. 
+
 ## Function 
 
 You can choose the column function you want to apply to the column data if available. The following functions are available depending on the data type of the target column. 
@@ -74,6 +82,14 @@ You can set Number Formatting for numeric columns. The following formatting opti
 * Symbol: Current symbol. It will be added to it will be added at the beginning of each number if the "Currency" type is selected. 
 
 
+## Text Wrap
+
+You can enable Text Wrap option to allow showing the text in multiple lines. 
+
+![](images/cconf15.png)
+
+
+
 ## URL Link
 
 You can set a URL Link on the column. You can dynamically construct the link with the associated column values by referencing the column name by `${}`. Once you define a URL Link, the column value will be clickable and if a user clicks the value, it opens up the URL in an external browser. 
@@ -95,7 +111,7 @@ If you want to use values as a URL parameter, check the "Apply URL encoding for 
 
 You can set a Visual Formatting on each column. Visual formatting is available only for the numeric columns. 
 
-### Bar Length 
+### Show Bars on Background
 
 You can show inline bars in the column value cells. The bar length is depending on the column value. You can choose colors for positive values and negative values.  
 
@@ -106,7 +122,7 @@ The output will look like this.
 ![](images/cconf11.png)
 
 
-### Color Encoding 
+### Set Colors
 
 You can apply a color encoding to the column values. You can choose a color palette to apply from the list. You can apply colors to either the value text or background color. 
 
@@ -118,7 +134,7 @@ This is the example of the color encoding applied to the background color.
 
 ![](images/cconf12.png)
 
-## Condtional Formatting 
+## Set Colors Conditionally
 
 You can apply a specific color only for the values that meet the condition. You can choose an operator and enter the value to construct a condition, and you can choose a color to apply from the list. You can apply colors to either the value text or background color. 
 

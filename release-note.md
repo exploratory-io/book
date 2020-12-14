@@ -1,129 +1,168 @@
 # Release Note
 
+## 6.3.3
+
+Released on 12/11/2020.
+
+### Bug Fixes
+
+* Chart: Dropdown list opened from bottom to top so that you couldn't see all the options in the Set Color Conditionally section of the Format Column dialog in Table.
+
+
+## 6.3.2
+
+Released on 12/10/2020.
+
+
+### Enhancements
+
+* Data Source: ODBC: Now it has one unified "ODBC" data source that supports both 'unixodbc' and 'iodbc' types.
+
+
+* Chart: Table: You can now set the column width and also enable text wrapping.
+* Chart: Table: The Font Style and Visual Formatting options are now supported even for the non-numeric columns.
+
+
+* Analytics: Time Series Forecasting (Prophet): "Autoscale Y Axis" is supported for the Forecasted and the Trend charts.
+* Analytics: Prediction by a model created with Analytics View is now supported on Interactive Session at Exploratory Cloud and Exploratory Collaboration Server.
+* Analytics: Adding 'model_info' function to extract model information from a list column of a data frame that stores model objects.
+
+* Installation: Supporting a proxy server connection test capability in the System Configuration dialog.
+
+
+### Bug Fixes
+
+* Data Source: With ODBC data source, a SQL query that included non-ascii column names in a 'where' clause didn't work for Oracle Database.
+
+
+* Data Wrangling: Error message from an invalid step kept shown even after opening a different project.
+* Data Wrangling: Reorganized the column menu for Text Data Wrangling.
+* Data Wrangling: On the Table View, adding a step failed with an error when a newly added step removed a column that was used for the table filter.
+* Data Wrangling: On Recode dialog, switching a column to overwrite did not work and it kept showing the previously selected column.
+* Data Wrangling: 'Create Bin' dialog froze right after opening the dialog.
+
+
+* Chart: Line chart failed to render and showed an error dialog when you entered non-numeric values for the Constant Values in Reference Line setting.
+* Chart: Pivot Table failed to render and showed an error dialog when you entered the same value twice for Cutting Points in Category Setting dialog.
+
+
+* Analytics: It is now easier to show a popup by hovering a reference line in Error Bar charts in T Test and Wilcoxon Test.
+* Analytics: Prediction by a model created with Analytics View on a scheduled job at Exploratory Cloud server failed, if Date information extraction function was applied on predictor variables, and the server's locale was set differently from that of the Exploratory Desktop.
+
+
+* Installation: On macOS Big Sur, installation of R, as part of Exploratory's installation, did not properly create R's executable at /usr/local/bin/R, resulting in Exploratory repeatedly requiring R to be installed.
+
+
 ## 6.3.1
 
 Released on 12/3/2020.
 
 ### Enhancements
 
-* Data Source: Added ODBC Data Source that uses odbc R package instead of RODBC R package 
+* Summary View: Supported creating analytics (e.g. Random Forest) by selecting multiple columns.
+* Summary View: Supported more chart/analytics types for creating from Summary View.
 
 
-* Summary View: Support creating analytics with multiple predictors by multiple column selection.
-* Summary View: Support creating more chart/analytics types from Summary View.
-
-
+* Data Wrangling: Supported 'Text inside of', 'Text by Range', 'First Word', 'Last Word', 'Email Address',  'URL', and 'Emoji' options for Text Wrangling Dialog.
 * Data Wrangling: Added "Unite" parameter to the Count Text Dialog.
-* Data Wrangling: Supported 'Text inside of', 'Text by Range', 'First Word', 'Last Word', 'Email Address',  'URL', and 'Emoji' options for Text Wrangling Dialog. 
 * Data Wrangling: Supported ‘Group by’ parameter for Count Token Pair.
 * Data Wrangling: Supported an option to summarize the count by Token, not by Document ID for Tokenize Text (No Spaces Between Words).
-* Data Wrangling: Supported drag move for the column rename popup inside Summarize Dialog.
-* Data Wrangling: Supported pagination for Text Wrangling and 'Replace Values with New Values' Dialogs when there are many rows in preview table.
-* Data Wrangling: Supported space replacement with specific symbol option in the Text Wrangling Dialog.
+* Data Wrangling: You can now move the rename dialog inside Summarize Step UI.
+* Data Wrangling: Supported pagination for Text Wrangling and 'Replace Values with New Values' UIs when there are too many rows in the preview table.
+* Data Wrangling: It now has an option to show 'space/tab/new line' in the preview table inside the Text Wrangling UI.
+* Data Wrangling: On the Text Wrangling Dialog's Preview Table, now it shows the number of unique values in Count Column.
 
 
-* Chart: Summarize Table chart type support.
-* Chart: Now you can repeat charts by Y-Axis Columns.
-* Chart: Add "Logistic" and "Poisson" Trend Line types.
-* Chart: Add "Quick Window Calculation" menu.
+* Chart: Added a new 'Summarize Table' to summarize data in a table format.
+* Chart: Now you can repeat charts for each Y-Axis column when you assign multiple Y-Axis columns.
+* Chart: Added "Logistic" and "Poisson" Trend Line types.
+* Chart: Added a "Quick Window Calculation" menu.
+* Chart: Supported clicking to highlight rows in Table, Pivot Table and Summarize Table.
+* Chart/Analytics: Column Selection dialog now shows how many columns are selected.
+* Chart/Analytics: When duplicating a Chart/Analytics, it now shows a dialog to set the name.
 
 
-* Analytics: Prediction with a model created by Analytics View
+* Analytics: You can now add a step to predict by using a model that is created in the Analytics View
 * Analytics: Cox Regression and Survival Forest now has chart for time-dependent ROC with AUC.
-* Analytics: Cox Regression and Survival Forest now have Test Mode.
+* Analytics: Cox Regression and Survival Forest now support 'Test Mode' and show the model evaluation metrics under the Summary tab.
 * Analytics: K-Means: Error bar chart for cluster means now can be displayed either in normalized values (default) or in raw values.
 * Analytics: Logistic Regression: On the Prediction chart, odds ratio of each predictor variable is displayed on the mouse-hover popup.
-* Analytics: Maximum VIF is now displayed on Summary table of Linear/Logistic/Cox Regression, and GLMs.
+* Analytics: Maximum VIF (Multicollinearity) is now displayed on Summary table of Linear/Logistic/Cox Regression, and GLMs.
 * Analytics: When switching type of Analytics, more properties are preserved, instead of getting reset to the default value.
 * Analytics: Supported changing a base level for Character/Factor columns when selecting predictor columns.
-* Analytics: T-Test, ANOVA, Chi-Square test: Added Probability Distribution table showing the probability distribution of test statistic under null hypothesis.
-* Analytics: Time Series Forecasting (Prophet): 0 as forecast period is allowed. This is useful when you'd like to create a model with external variables, but do not have future values for them.
+* Analytics: T-Test, ANOVA, Chi-Square test: Added Probability Distribution tab to show the probability distribution of test statistic under null hypothesis.
+* Analytics: Time Series Forecasting (Prophet): 0 as forecast period is allowed. This is useful when you'd like to create a model with external variables, which do not have future values.
+* Analytics: By-class summary table for multiclass classification is added back.
+* Analytics: Linear Regression: Residual/Prediction scatter plot is added back.
 
 
-* Report: Expose Repeat By layout toolbar in Note, Slide and Dashboard.
+* Report: Now you can see the setting menu of the charts with 'Repeat By' even inside Note, Slide and Dashboard.
 
 
 
 ### Bug Fixes
 
 
-* Data Source: CSV Import failed with Invalid multibyte string, element 3 error for some non-ascii data.
-* Data Source: Google Analytics: Failed to get a list of account when there are many properties.
-* Data Source: Mongodb connection string stored in connection turns into random string when userconf.json file was broken.
-* Data Source: On Web scraping Dialog, the Run button didn't work when the previous preview didn't return any data.
-* Data Source: On Windows, Web Scraping ended up invalid multibyte string error for some non-ascii pages.
+* Data Source: CSV Import failed with invalid multibyte characters with 'element 3' error.
+* Data Source: Google Analytics: Failed to get a list of account when there were too many properties.
+* Data Source: Mongodb connection string stored in connection turned into random string when userconf.json file was broken.
+* Data Source: Web Scraping: Run button didn't work when the previous preview didn't return any data.
+* Data Source: On Windows, Web Scraping failed with invalid multibyte characters.
 * Data Source: Re-opening the Data Source Dialog was slow when not all the columns were selected for the first import.
 
 
-* Summary View: Summary View showed isBuildModel of undefined error for some occasion. 
+* Data Wrangling: 'Replace Values with new Values' Dialog became unresponsive when the selected column has too many unique values.
+* Data Wrangling: Added 'Replace Values by Conditions' menu to the column header menu of the Date and POSIXct data type columns.
+* Data Wrangling: After selecting multiple steps, selecting another data frame causes the issue that right hand-side steps showing incorrect steps.
+* Data Wrangling: Changed to show the 'Replace Values by Conditions' dialog for "Replace ... with NA" column menu.
+* Data Wrangling: Cleaned and consolidated the column header menu for Text Wrangling related operations.
+* Data Wrangling: Could not select multiple columns for the "Add Row Manually" step.
+* Data Wrangling: Exporting a step data as a data frame at the source step caused an error.
+* Data Wrangling: Exporting table data was not honoring the Table Filter setting.
+* Data Wrangling: Added 'Remove Duplicate' option to the column header menu under 'Filter'.
+* Data Wrangling: Moving Pin did not work and right hand side area became blank for some occasions.
+* Data Wrangling: On Duplicate Data Frame UI, "Include Chart" and "Include Analytics" checkboxes are now checked by default.
+* Data Wrangling: On Text Data Wrangling UI, the preview table highlight was not happening for some cases.
+* Data Wrangling: On the Table View, after adding a Group By step, the table shows incorrect coloring for the groups.
 
- 
-* Data Wrangling: For the 'Replace Values with New Values' and 'Replace Values with Conditions' Dialogs, improved style for Create New Column Input Field and Overwrite Existing Column Selector. 
-* Data Wrangling: 'Replace Values with new Values' Dialog became unresponsive when trying with a column with many unique values.
-* Data Wrangling: Added Replace Values by Conditions option to Date and POSIXct type column menus.
-* Data Wrangling: After selecting multiple steps, selecting another dataframe causes the issue that right hand-side steps showing incorrect steps. 
-* Data Wrangling: Change to open Replace Value with Condition Dialog when impute_na option is selected from the Column Menu.
-* Data Wrangling: Changed to show Replace Values by Conditions Dialog for "Replace ... with NA" column menu. 
-* Data Wrangling: Cleaned and consolidated column menu for Text Wrangling Operations.
-* Data Wrangling: Correlation: Fix parameter label Japanese text for Keep Self Pairs
-* Data Wrangling: Could not specify multiple columns with "Add Row Manually" step.
-* Data Wrangling: Exporting a step data as a data frame without step causes error code 3.
-* Data Wrangling: Exporting table data should honor Table Filter.
-* Data Wrangling: Filer: Added 'Remove Duplicate' option.
-* Data Wrangling: Moving Pin did not work and right hand side area became blank for some occasion.
-* Data Wrangling: On Duplicate Data Frame Dialog, "Include Chart" and "Include Analytics" checkboxes are now checked by default.
-* Data Wrangling: On Text Data Wrangling Dialog, the preview table highlight was not happening for some cases.
-* Data Wrangling: On the Table View, after adding a group by step, the table shows incorrect coloring for the groups.
-* Data Wrangling: On the Text Wrangling Dialog's Preview Table, now it shows the number of unique values in Count Column.
+
 * Data Wrangling: On Windows, When creating a filter and hovering mouse over the custom tab, the right border is missing in the right tab.
 * Data Wrangling: Right hand-side step pane is not displayed when selecting a data frame that uses a data source extension but the extension was not installed.
-* Data Wrangling: Right hand-side steps are not displayed for some occasion.
-* Data Wrangling: Summarize Group performed unnecessary calculation for numeric columns.
 * Data Wrangling: System Locale was not affecting result of month function and shows English names.
-* Data Wrangling: When creating multiple tokens inside a 'Replace Values with New Values' step, Recode Dialog for the new token does not show the result from the previous token.
-* Data Wrangling: When there was only one token, 'duplicate' icon did not show up on the token.
- 
- 
-* Chart: "Map - Extension" shows an error dialog if you assign a logical column to Color By and choose "ALL" for the aggregation function.
-* Chart: After deleting a step that caused the missing column issue for a chart, the chart did not get updated. 
-* Chart: Analytics: Scrollbar of the column name dropdown becomes transparent. 
-* Chart: Applying "As int10" function against difftime column fails and throws an error "No method asJSON S3 class: difftime"
-* Chart: Axis range setting should be ignored if "Sync Axis" option is disabled.
-* Chart: Chart control area became blank if you click the format button in the chart table multiple column selection dialog.
-* Chart: Chart filter failed with "TypeError: Cannot read property 'formType' of null" for some occasion.
-* Chart: If you use a column with special characters for Y-Axis and exclude chart data by "Exclude" menu in Popup, the system hangs.
-* Chart: Line chart shows an error dialog if a column used in the Limit at Color becomes unavailable by the step change. 
-* Chart: On a low resolution Windows PC, after selecting an aggregation function on a Filter Dailog, the entire UI pushed up.
-* Chart: Pivot Table shouldn't show an error dialog if you rename/remove a column that is used in a custom calculation.
-* Chart: Renaming chart raised error "Cannot read property IndexOf of undefined".
-* Chart: Sort by frequency option doesn't work in Pivot Table.
-* Chart: Support clicking to highlight rows in Table, Pivot Table and Summarize Table.
-* Chart: When a step failed in the chart view, the error message mentioned a wrong step name in it and the error didn't go away even if the chart pin was not pointing the error step.
-* Chart: When disabling a column used for the color, it showed object not found error 
-* Chart: You cannot assign a column to Size if "(Row ID)" is assigned to Group By in Long/Lat Map.
-* Chart/Analytics: Column Selector Dialog now shows the number of columns being selected.
-* Chart/Analytics: When duplicating a chart/Analytics, it now shows a dialog from where a user can set a new name.
- 
- 
-* Analytics: After re-opening a project, the predictor column selector dialog keeps showing a spin and didn't stop.
-* Analytics: Axis order doesn't change even if you check "Sync Y Axis" option in Contribution chart in Chi-Square Test.
-* Analytics: By-class summary table for multiclass classification is added back.
-* Analytics: Changing "Sync Y-Axis" option doesn't make any changes in Prediction chart in Analytics.
-* Analytics: If you import a project that contains a data frame created by "Save Chart Data as Data Frame", it shows an error dialog with "Error in gzfile(file, "rb") : cannot open the connection".
-* Analytics: Linear Regression: Residual/Prediction scatter plot was once removed, but we added it back.
-* Analytics: Prediction Matrix: Columns with only 0 values used to be dropped, but now we show them.
-* Analytics: When a Repeat By and/or Group By Column data type is changed on a step, the change is not reflected on the Analytics that refers the columns
-* Analytics: When with Repeat-by, random seed, when applicable, is set per group, for more stability in the results.
- 
- 
-* Parameter: Dynamic Slider: Min/Max value was not properly set when there is a group by step.
-* Parameter: When changing parameter type from Slider to Text Input, it keeps showing the data frame selector.
+* Data Wrangling: When creating multiple tokens inside a 'Replace Values with New Values' step, the dialog for the new token did not show an expected result.
+* Data Wrangling: The 'Duplicate' icon did not show up when there was only one token in the Mutate / Filter steps.
 
- 
-* General: Changed to show user friendly message for the Handle HTTP Status 407 “Proxy Authentication Required” and DNS error from misspelled hostname errors.
-* General: System Configuration Dialog: Changed the label from Display Language to UI Language.
-* General: With R 4.0.3, Date operations that involve timezone raised error "Unrecognized timezone".
-* General: Improved performance for closing a project.
+
+* Chart: "Map - Extension" showed an error dialog if you assigned a logical column to Color By and choose "ALL" for the aggregation function.
+* Chart: After deleting a step that caused the missing column issue for a chart, the chart did not get updated.
+* Chart: Applying "As int10" function against the 'difftime' data type columns failed with an error "No method asJSON S3 class: difftime"
+* Chart: Axis range setting should be ignored if "Sync Axis" option is disabled.
+* Chart: The column assignment area (left side) became blank if you click the format button in the column selection dialog of the Table.
+* Chart: Chart filter failed with an error "TypeError: Cannot read property 'formType' of null" for some occasions.
+* Chart: If you used a column with special characters for Y-Axis and tried to click the "Exclude" menu in the popup, Exploratory app hung.
+* Chart: Line chart shows an error dialog if a column used in the Limit at Color becomes unavailable by the step change.
+* Chart: On a low resolution Windows PC, after selecting an aggregation function on the Filter dialog, the entire UI pushed up.
+* Chart: Pivot Table failed with an error dialog if you renameed or removed a column that is used in a custom calculation.
+* Chart: Sort by frequency option didn't work for the Pivot Table.
+* Chart: When a step, which is referenced by a chart, had an error, the error message mentioned a wrong step name and the error didn't go away even after the chart's pin was pointed to an non-error step.
+* Chart: When disabling a column used for the color, it showed 'object not found error.'
+* Chart: Long/Lat Map: You couldn't assign a column to Size if "(Row ID)" is assigned to Group By.
+
+
+* Analytics: Axis order doesn't change even if you check "Sync Y Axis" option in the Contribution chart in Chi-Square Test.
+* Analytics: Unchecking the "Sync Y-Axis" option didn't adjust the Y-Axis under the Prediction tab.
+* Analytics: If you import a project that contains a data frame created by "Save Chart Data as Data Frame", it shows an error dialog with "Error in gzfile(file, "rb") : cannot open the connection".
+* Analytics: Prediction Matrix: Columns with only 0 values used to be dropped, but now it is reserved.
+* Analytics: The random seed is set at each group level when the Repeat-by is used for more stability in the results.
+
+
+* Parameter: Dynamic Slider: Min/Max value was not properly set when there is a Group By step.
+* Parameter: When changing parameter type from Slider to Text Input, it was still showing the data frame selector.
+
+
+* General: Improved the error message for the proxy network setting.
+* General: With R 4.0.3, Date operations that involve timezone raised an error "Unrecognized timezone".
+* General: Improved an overall performance for opening / closing projects and moving between data frames and views.
 
 
 * Installation: Windows: When User's home directory contains Japanese characters, the selected custom folder name was not properly displayed.
