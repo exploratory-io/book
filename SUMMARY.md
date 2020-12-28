@@ -172,6 +172,8 @@
      * [Limit Values](viz/limit.md)
      * [Edit Display Name](viz/edit-display-name.md)
      * [Missing Value Handling](viz/missing-value-handling.md)
+     * [Rename Column Names](viz/rename-column-names.md)
+     * [Axis Setting](viz/dualy-setting.md)
 
 
 * [Analytics](analytics.md)

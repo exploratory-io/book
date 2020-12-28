@@ -50,6 +50,16 @@ Following circle types are available.
 
 You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
 
+## Rename Column Names
+
+You can use the Rename Column Names feature to update column names if you assign multiple columns to Y-Axis. See [Rename Column Names](rename-column-names.md) for the detail.
+
+
+## Axis Setting
+
+You can use the Axis Setting feature to assign columns to Y1/Y2 axes if you assign multiple columns to Y-Axis. See [Axis Setting](dualy-setting.md) for the detail.
+
+
 
 ## Layout Configuration
 
