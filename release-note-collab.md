@@ -1,13 +1,28 @@
 # Release Note
 
-## 6.3.1.10
+## 6.3.4.0
 
-Released on 12/10/2020
+Released on 12/30/2020
 
 ### Download Links
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.3.1.10.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.3.1.10.tar.gz)
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.3.4.0.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.3.4.0.tar.gz)
+
+### Bug Fixes
+
+* Analytics: Analytics View published from pre-6.3 Exploratory Desktop, which is without cached rds, raised error at changing Parameters.
+* Analytics: Analytics View created by pre-6.3 Exploratory Desktop and published by 6.3 Exploratory Desktop raised errors in Scheduled Jobs and at changing Parameters.
+* Analytics: If an Analytics View was used both for prediction and for Charts, the main logic of the Analytics was run twice. With this release, it was optimized to run only once.
+* Analytics: Cached Analytics View result was not properly invalidated when the Parameters it depends on were updated.
+* Parameter: RDS/Parquet data caches were not cleaned up when an insight was republished.
+* Insight: Invitation to an Insight using email address did not work if the specified email address had upper case charactors.
+* Insight: Insight Search by date range was not working. 
+
+
+## 6.3.1.10
+
+Released on 12/10/2020
 
 ### Enhancements
 
