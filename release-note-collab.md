@@ -11,11 +11,11 @@ Released on 12/30/2020
 
 ### Bug Fixes
 
-* Analytics: Analytics View published from pre-6.3 Exploratory Desktop, which is without cached rds, raised error at changing Parameters.
-* Analytics: Analytics View created by pre-6.3 Exploratory Desktop and published by 6.3 Exploratory Desktop raised errors in Scheduled Jobs and at changing Parameters.
-* Analytics: If an Analytics View was used both for prediction and for Charts, the main logic of the Analytics was run twice. With this release, it was optimized to run only once.
-* Analytics: Cached Analytics View result was not properly invalidated when the Parameters it depends on were updated.
-* Parameter: RDS/Parquet data caches were not cleaned up when an insight was republished.
+* Analytics: Analytics View published from Exploratory Desktop 6.3 or older, which is without cached prediction models, raised errors at changing Parameters.
+* Analytics: Analytics View created by Exploratory Desktop 6.3 or older and published by Exploratory Desktop 6.3 raised errors in Scheduled Jobs and at changing Parameters.
+* Analytics: If an Analytics View was used both for prediction and for Charts, the main logic of the Analytics was run twice. With this release, it is optimized to run only once.
+* Analytics: Cached Analytics View models were not properly invalidated when the Parameters it depends on were updated.
+* Parameter: Existing RDS/Parquet data cache files were not cleaned up when an insight was republished.
 * Insight: Invitation to an Insight using email address did not work if the specified email address had upper case charactors.
 * Insight: Insight Search by date range was not working. 
 
