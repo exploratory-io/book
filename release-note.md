@@ -1,5 +1,93 @@
 # Release Note
 
+## 6.3.4
+
+Released on 12/30/2020.
+
+### Enhancements
+
+* Data Wrangling: "Week of Year - Sunday Start" and "Week of Year - Monday Start" support in "Extract" menu in Column Header Menu.
+* Data Wrangling: On Summary View and Table View, now columns added by the "Predict with Model" step get highlighted.
+* Data Wrangling: Text Wrangling UI: Now you can sort the preview table by clicking a column.
+* Data Wrangling: Tokenize Text: Generating N-Gram for Japanese words support.
+* Data Wrangling: "cumsum_decayed" function support. It can be used to calculate Adstock for Marketing Mixed Modeling, etc.
+
+
+* Chart: "Rename Column Names" support at Y-Axis if you assign multiple columns to Y-Axis. 
+* Chart: "Week of Year - Sunday Start" and "Week of Year - Monday Start" support in the column function for Date/POSIXct column.
+
+### Bug Fixes
+
+* Data Source: Added "EDF" option to File Data Source picker.
+* Data Source: Extension: Added the "Open" button on the Data Source Extensions list from where you can open a help page in a browser.
+* Data Source: Github: Changed to show a user-friendly message with personal access token instruction help page link when authentication with password failed.
+* Data Source: Google BigQuery: When OAuth token was invalid, Google BigQuery Configuration dialog shows an empty project list.
+* Data Source: SQL Server: Import dialog didn't show an error message and just closed when an error happened during the import.
+
+
+* Summary View: After deleting a data frame in the Summary View, importing a CSV file ended up with an empty screen.
+* Summary View: Analytics created from Summary View had a weird name if UI Language is set to English.
+* Summary View: Emoji didn't show up in character columns. 
+* Summary View: It showed an empty screen when navigating from a branch data frame to the parent data frame.
+
+
+* Data Wrangling: Added description to the column menu for numeric functions.
+* Data Wrangling: Cached Step did not work correctly if the previous step were updated and some columns of it were dropped.
+* Data Wrangling: Column highlight in calculation editor did not work properly when the column name contained Japanese character and "_".
+* Data Wrangling: Count Text Pair & Tokenize Text dialog: Improved Japanese translation for title and label.
+* Data Wrangling: Filter: Now it keeps the value in the input field when selecting another column as long as the operator is 'contains', 'not contain', 'starts with', or 'end with'. 
+* Data Wrangling: Filter: When switching the filter operator from "Equal To" to "Is In", the previously selected value was wiped out.
+* Data Wrangling: For Japanese UI, improved label by adding "NA" in the description for "Remove NA/Keep Only NA" filter menu.
+* Data Wrangling: Group by columns no longer have a trailing suffix with function name if the column is used only once for group by.
+* Data Wrangling: Improved Japanese translation for Text Pair dialog title and step label.
+* Data Wrangling: Made dialog draggable area wider and made sure to show the grab cursor when hovering the mouse over the dialog draggable area.
+* Data Wrangling: Now the "Country Code" is the default destination for convert country when opening the Text Wrangling dialog from the column menu.
+* Data Wrangling: On Rename dialog, added the "x" icon for clearing search text.
+* Data Wrangling: On Summarize dialog, changed the data type of Number of Rows, unique, etc as Numeric instead of Integer.
+* Data Wrangling: Replace Values By Conditions: Changed 'Create New Column' option to be the default.
+* Data Wrangling: Replace Values By Conditions: Now the Condition Setting dialog is draggable.
+* Data Wrangling: Replace Values By Conditions: When hovering a mouse over a condition, it now applies the green border color and white background to align with other widgets.
+* Data Wrangling: Replace Values With New Values: The Input field for "Default Value" didn't show up even if you checked the "Set Default Value" checkbox.
+* Data Wrangling: Table Filter dialog didn't close automatically when moving to other views.
+* Data Wrangling: Text Wrangling UI: Changed 'Overwrite Existing Column' option to be the default.
+* Data Wrangling: Update Japanese Translation for "-" from "dash" to "hyphen".
+* Data Wrangling: When selecting the Row Number from a Window Function Column Menu, it shouldn't set the column name inside the "row_number" function.
+* Data Wrangling: Windows: Emoji characters used in data wrangling steps were garbled.
+* Data Wrangling: When creating a calculation using with_tz function, syntax suggestion showed multiple timezones for the same "GMT" timezone.
+
+
+* Chart: Icons for Column Format dialog didn't show up if column names were long in Column Selection dialog in Table. 
+* Chart: Maps installed locally shouldn't show up in the "Updates" section in Map Extension dialog.
+* Chart: Table didn't show 0.1 as "10%" if the "Percentage" number format was applied in Column Format dialog.
+* Chart: Visual Formatting condition dropdown didn't show fully if you defined multiple conditions in Column Formatting dialog.
+* Chart: "(Number of Rows)" was missing at Label in Scatter (With Aggregation) chart.
+
+
+* Analytics: After duplicating an analytics, the "Prediction" tab did not show the content until the green link was clicked again.
+* Analytics: Analytics Views that does not do prediction created unnecessary RDS cache files internally.
+
+
+* Note: Run button now has a mouse over the instant popup that shows the shortcut key to run the note.
+* Note: Table of Content part overlapped the content body if you opened a note in Safari browser and used the browser's zoom out feature.
+
+
+* Publish: Publishing a data frame that contains empty list columns with enabling "CSV" download option failed and showed "Flat files can't store the list column" error.
+* Publish: RDS/Parquet files were included in EDF even when no EDF download, Scheduling, or Parameter was to be done.
+* Publish: Cached prediction models were not properly updated by scheduled jobs.
+* Publish: In some cases, column data types of data from some data sources were different between when it was on Exploratory Desktop and when it was on the Server with Parameters.
+
+
+* Parameter: Now it shows a warning message and icon for a parameter that refers a data frame that no longer exists.
+
+
+* Project: Upload of a project at the closing of the project on Exploratory Public failed.
+
+
+* General: On Mac, in some cases, at the installation, the error "Security returned a non-successful error code: 51" was raised.
+* General: When exporting a project as a zip file, if it was done by overwriting an existing zip file, the content of the existing zip file remained in the resulting zip file.
+
+
+
 ## 6.3.3
 
 Released on 12/11/2020.
