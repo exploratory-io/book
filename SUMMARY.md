@@ -121,7 +121,7 @@
    * [Clean Column Names](wrangling/clean_names.md)
    * [Window Calculation](wrangling/window-calculation.md)
    * [Add Row](wrangling/add_row.md)
-
+   * [Text Wrangling](wrangling/text_wrangling.md)
 
 * [Visualization](chart.md)
    * Types
