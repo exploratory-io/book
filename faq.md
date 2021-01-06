@@ -108,10 +108,9 @@ If you are still having the network issue please contact support@exploratory.io 
 
 If you don't have R and/or Git previously installed, you will be asked to enter your Mac OS admin username and password. This is because R and Git installation requires the system administrator's privilege. We don't see or capture this information, it's completely done by R and Git installers and that's outside of Exploratory. ;)
 
-## I have already installed R 3.6, are you going to install another R ?
+## I have already installed R, are you going to install another R ?
 
-No. We check the R version that is installed on your PC, and as long as it is 3.6 or grater, then Exploratory will use that one, without installing another R.
-
+No. Exploratory will check the R version on your PC and upgrade to the latest certified version if the R version is old. If the certified version of R is already installed on your PC, it will not install a new version of R, but continue to use the existing one
 ## I don't have R installed, what are you going to do ?
 
 Just download Exploratory Desktop by simply clicking on Download button on the download page, and execute it. It will install the latest certified version of R as part of the initial setup. For Mac, you will be asked to enter your Mac OS admin username and password, this is because R installation would require the system administrator's privilege. We don't capture this information, it's completely done by R installer itself.
