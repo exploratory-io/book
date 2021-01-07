@@ -20,7 +20,7 @@ Mutate creates new column(s) with given expressions and preserves existing colum
 
 1. Click the "Create New Column" radio button.
 2. Type in the name of new column in "New Column Name" field.
-3. Type in the R expression in "Calculation" field.
+3. Type in the R Calculation in "Calculation" field.
 4. Click "Run" to run the calculation and create the new column.
 
 ## Overwrite Existing Column with New Calculation
