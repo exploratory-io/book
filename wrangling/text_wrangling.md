@@ -26,12 +26,12 @@ You can remove strings from your text data with various options listed below.
 
 ### How to Use 
 
-You can access Text Wrangling UI from the column header menu. 
+You can access Text Wrangling UI Remove option from the column header menu. 
 
 ![](images/remove_text2.png)
 
 
-### Remove Text
+### Text
 
 Type in strings that you want to remove from your text. In the below example, it removes "COVID19" from the text. 
 
@@ -39,14 +39,14 @@ Type in strings that you want to remove from your text. In the below example, it
 
 #### Regular Expression
 
-You can use regular expression to remove strings from your text. Click the `Regular Expression` radio button and type in a regular expression that you want to try. In the below example, it removes the `pandemic` at the end of the text.
+You can use regular expression to remove strings from your text. Click the Regular Expression radio button and type in a regular expression that you want to try. In the below example, it removes the "pandemic" at the end of the text.
 
 ![](images/remove_text3.png)
 
 
 #### Ignore Case
 
-If you select "Yes" for `Ignore Case`, it removes string with case insensitive fashion. For example, in the below example, it removes both 'pandemic' and 'Pandemic'.
+If you select "Yes" for Ignore Case radio button, it removes string with case insensitive fashion. For example, in the below example, it removes both 'pandemic' and 'Pandemic'.
 
 ![](images/remove_text4.png)
 
@@ -57,9 +57,9 @@ In the above regular expression case, you used `$` to match the string at the en
 
 ![](images/remove_text5.png)
 
-### Remove Text (All)
+### Text (All)
 
-It's basically same as Remove Text. The difference is it removes the all the matches. In below example, there are two "Pandemic" in the text and both of them are removed.
+It's basically same as "Text" option. The difference is it removes the all the matches. In below example, there are two "Pandemic" in the text and both of them are removed. In case of "Text", it only removes the first match.
 
 ![](images/remove_text6.png)
 
@@ -164,6 +164,149 @@ This option removes Emojis from your text like below screenshot.
 This option removes Punctuation Characters from your text like below screenshot.
 
 ![](images/remove_text22.png)
+
+## Replace
+
+
+You can replace strings from your text data with various options listed below.
+
+- Text
+- Text (All)
+- Text (Multiple Candidate)
+- Text (Multiple Candidates: All)
+- Text Inside Special Characters
+- Text Inside Special Characters (All)
+- Range of Text
+- Alphabets
+- Numbers
+- First Word
+- Last Word
+- Spaces
+- Email Address
+- URL
+- Punctuations Characters
+
+### How to Use 
+
+You can access Text Wrangling UI Replace option from the column header menu. 
+
+![](images/replace_text1.png)
+
+### Text
+
+Type in strings that you want to replace. In the below example, it replaces "COVID19" with "Corona Virus".
+
+
+![](images/replace_text2.png)
+
+#### Regular Expression
+
+You can use regular expression to replace strings in your text. Click the "Regular Expression" radio button and type in a regular expression that you want to try. In the below example, with the regular expression it can replace the strings like "New York" to NYC.
+
+![](images/replace_text3.png)
+
+
+#### Ignore Case
+
+If you select "No" for Ignore Case radio button, it replaces string with case sensitive fashion. For example, in the below example, it replace 'new York' but not 'New York'.
+
+![](images/replace_text4.png)
+
+
+#### Position
+
+If you select the "End" for the Position, it only matches the string at the end of the text. In the below example, it only matches "COVID19" at the end of the text and ignore the rest.
+
+![](images/replace_text5.png)
+
+### Text (All)
+
+It's basically same as "Text" option. The difference is it removes the ALL the matches. In below example, there are two "new" in the text and both of them are replaced with "NEW". In case of "Text", only the first one got replaced.
+
+![](images/replace_text6.png)
+
+### Text (Multiple Candidates)
+
+This option replace strings using multiple candidates for matching. In below example, it replaces strings that match either "covid" or "corona" to "New". You can enter comma separate values to the From input field as candidates. 
+
+![](images/replace_text7.png)
+
+### Text (Multiple Candidates: All)
+
+It's basically same as Text (Multiple Candidates). The difference is it replace all the matches like the below screenshot.
+
+![](images/replace_text8.png)
+
+
+### Text Inside Special Characters
+
+This option replaces text inside specified special characters with the value entered in "Replace With" input field. It's useful when you want to replace text inside parentheses. If you select No for "Include Special Characters", it keeps the begin and end special characters and replace strings inside of these.
+
+![](images/replace_text9.png)
+
+### Text Inside Special Characters (All)
+
+It's basically the same as Text Inside Special Characters. The difference is it replaces all the matches in the text like the below screenshot.
+
+![](images/replace_text10.png)
+
+### Range of Text
+
+This option replaces strings in a specified range in your text with the value entered in "Replace With" input field. The below example shows replacing strings between 10th and 20th with "Special".
+
+![](images/replace_text11.png)
+
+### Alphabets
+
+This option replaces Alphabets in your text with the value entered in "Replace With" input field like the below screenshot.
+
+![](images/replace_text12.png)
+
+### Numbers
+
+This option replaces Numbers in your text like the below screenshot.
+
+![](images/replace_text13.png)
+
+### First Word
+
+This option separate text into words with specified separator (space for the below example) and replaces the first word like the below screenshot. 
+
+![](images/replace_text14.png)
+
+
+### Last Word
+
+This option separate text into words with specified separator (space for the below example) and replaces the last word like the below screenshot. 
+
+![](images/replace_text15.png)
+
+### Spaces
+
+This option replaces spaces in the text like below screenshot. By clicking "Show Invisible Characters" checkbox, you can see space with "␣" character in the preview table.
+
+![](images/replace_text16.png)
+
+
+### Email Address
+
+This option replaces email addresses in your text like below screenshot.
+
+![](images/replace_text17.png)
+
+
+### URL
+
+This option replaces URLs in your text like below screenshot.
+
+![](images/replace_text18.png)
+
+
+### Punctuations Characters
+
+This option replaces Punctuation Characters in your text like below screenshot.
+
+![](images/replace_text19.png)
 
 
 
