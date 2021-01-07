@@ -443,7 +443,7 @@ This option extracts URLs in your text like below screenshot.
 
 ## Convert
 
-You can replace strings from your text data with various options listed below.
+You can convert strings to various way as listed below.
 
 - UPPERCASE
 - lowercase
