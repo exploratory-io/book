@@ -167,7 +167,6 @@ This option removes Punctuation Characters from your text like below screenshot.
 
 ## Replace
 
-
 You can replace strings from your text data with various options listed below.
 
 - Text
@@ -221,7 +220,7 @@ If you select the "End" for the Position, it only matches the string at the end 
 
 ### Text (All)
 
-It's basically same as "Text" option. The difference is it removes the ALL the matches. In below example, there are two "new" in the text and both of them are replaced with "NEW". In case of "Text", only the first one got replaced.
+It's basically same as "Text" option. The difference is it replaces the ALL the matches. In below example, there are two "new" in the text and both of them are replaced with "NEW". In case of "Text", only the first one got replaced.
 
 ![](images/replace_text6.png)
 
@@ -233,7 +232,7 @@ This option replace strings using multiple candidates for matching. In below exa
 
 ### Text (Multiple Candidates: All)
 
-It's basically same as Text (Multiple Candidates). The difference is it replace all the matches like the below screenshot.
+It's basically same as Text (Multiple Candidates). The difference is it replaces all the matches like the below screenshot.
 
 ![](images/replace_text8.png)
 
@@ -307,6 +306,139 @@ This option replaces URLs in your text like below screenshot.
 This option replaces Punctuation Characters in your text like below screenshot.
 
 ![](images/replace_text19.png)
+
+## Extract
+
+You can replace strings from your text data with various options listed below.
+
+- Text
+- Text (All)
+- Text (Multiple Candidate)
+- Text (Multiple Candidates: All)
+- Text Inside Special Characters
+- Text Inside Special Characters (All)
+- Range of Text
+- Alphabets
+- Numbers
+- First Word
+- Last Word
+- Nth Word (2nd, 3rd, etc.)
+- Email Address
+- URL
+
+
+### How to Use 
+
+You can access Text Wrangling UI Extract option from the column header menu. 
+
+![](images/extract_text1.png)
+
+### Text
+
+Type in strings that you want to replace. In the below example, it extracts "COVID" from text.
+
+
+![](images/extract_text2.png)
+
+#### Regular Expression
+
+You can use regular expression to replace strings in your text. Click the "Regular Expression" radio button and type in a regular expression that you want to try. In the below example, with the regular expression it can extracts the strings like "New York".
+
+![](images/extract_text3.png)
+
+
+#### Ignore Case
+
+If you select "No" for Ignore Case radio button, it extracts string with case sensitive fashion. For example, in the below example, it extracts 'new York' but not 'New York'.
+
+![](images/extract_text4.png)
+
+
+#### Position
+
+If you select the "End" for the Position, it only matches the string at the end of the text. In the below example, it only matches "COVID19" at the end of the text and ignore the rest.
+
+![](images/extract_text5.png)
+
+### Text (All)
+
+It's basically same as "Text" option. The difference is it extracts the ALL the matches. In below example, there are two "new" in the text and both of them are replaced with "NEW". In case of "Text", only the first one got replaced.
+
+![](images/extract_text6.png)
+
+### Text (Multiple Candidates)
+
+This option extracts strings using multiple candidates for matching. In below example, it extracts strings that match either "covid" or "corona" to "New". You can enter comma separate values to the From input field as candidates. 
+
+![](images/extract_text7.png)
+
+### Text (Multiple Candidates: All)
+
+It's basically same as Text (Multiple Candidates). The difference is it extracts all the matches like the below screenshot.
+
+![](images/extract_text8.png)
+
+
+### Text Inside Special Characters
+
+This option extracts text inside specified special characters. It's useful when you want to extract text inside parentheses.
+
+![](images/extract_text9.png)
+
+### Text Inside Special Characters (All)
+
+It's basically the same as Text Inside Special Characters. The difference is it extracts all the matches in the text like the below screenshot.
+
+![](images/extract_text10.png)
+
+### Range of Text
+
+This option extracts strings in a specified range from your text. The below example shows extracting strings between 10th and 20th.
+
+![](images/extract_text11.png)
+
+### Alphabets
+
+This option extracts Alphabets from your text like the below screenshot.
+
+![](images/extract_text12.png)
+
+### Numbers
+
+This option extracts Numbers from your text like the below screenshot.
+
+![](images/extract_text13.png)
+
+### First Word
+
+This option separates text into words with specified separator (space for the below example) and extracts the first word like the below screenshot. 
+
+![](images/extract_text14.png)
+
+### Last Word
+
+This option separates text into words with specified separator (space for the below example) and extracts the last word like the below screenshot. 
+
+![](images/extract_text15.png)
+
+### N th Word
+
+This option separates text into words with specified separator (space for the below example) and extracts the nth word (e.g. 2nd word) like the below screenshot. 
+
+![](images/extract_text16.png)
+
+### Email Address
+
+This option extracts email addresses in your text like below screenshot.
+
+![](images/extract_text17.png)
+
+
+### URL
+
+This option extracts URLs in your text like below screenshot.
+
+![](images/extract_text18.png)
 
 
 
