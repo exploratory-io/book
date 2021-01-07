@@ -441,5 +441,117 @@ This option extracts URLs in your text like below screenshot.
 ![](images/extract_text18.png)
 
 
+## Convert
 
+You can convert strings to various way as listed below.
+
+- UPPERCASE
+- lowercase
+- Title Case
+- Normalize (Zenkaku/Hankaku)
+- Country
+- US State
+- US County
+- IP Address - Country
+- Anonymize
+- Detect a Given Text (TRUE/FALSE)
+- Character Encoding
+
+
+### How to Use 
+
+You can access Text Wrangling UI Extract option from the column header menu. 
+
+![](images/convert_text1.png)
+
+### UPPERCASE
+
+It converts text to uppercase like the below screenshot.
+
+![](images/convert_text2.png)
+
+#### lowercase
+
+It converts text to lowercase like the below screenshots.
+
+![](images/convert_text3.png)
+
+
+#### Title Case
+
+If you select "No" for Ignore Case radio button, it extracts string with case sensitive fashion. For example, in the below example, it extracts 'new York' but not 'New York'.
+
+![](images/convert_text4.png)
+
+
+#### Normalize (Zenkaku/Hankaku)
+
+It normalize text. In the below example, it converts Zenakaku numbers Hankaku numbers.
+
+![](images/convert_text5.png)
+
+### Country
+
+You can convert country code to country name or vice versa.
+The supported country codes are:
+
+- Correlates of War (Character)
+- Correlates of War (Numeric)
+- ISO3 (Character)
+- ISO3 (Numeric)
+- ISO2 (Character)
+- IMF (Numeric)
+- FIPS (ederal Information Processing Standard) 10-4 (Numeric)
+- FAO (Numeric)
+- United Nations (Numeric)
+- Word Bank (Character)
+
+![](images/convert_text6.png)
+
+### US State
+
+It converts US State code to US State Name or vice versa.
+The supported US State codes are:
+
+- US States Abbreviation
+- US States Number
+
+
+![](images/convert_text7.png)
+
+Also, you can convert US state to Division like "Pacific", "Middle Atlantic", etc. or to Region like "West", "Northeast", etc.
+
+![](images/convert_text8.png)
+
+
+### US County
+
+It generates US county code (FIPS - Federal Information Processing Standard) based on US State and County names. To use this operation, you need to specify the column includes US State Names for the US County.
+
+![](images/convert_text9.png)
+
+
+### IP Address - Country
+
+It converts IP address to country name.
+
+![](images/convert_text10.png)
+
+### Anonymize
+
+it anonymizes values by hashing algorithms.
+
+![](images/convert_text12.png)
+
+### Detect a Give Text (TRUE/FALSE)
+
+it returns TRUE or FALSE based on whether Text data contains a given text or not.
+
+![](images/convert_text11.png)
+
+### Character Encoding
+
+It converts column character encoding. Below example, converts encoding from Japanese cp932 to UTF-8.
+
+![](images/convert_text13.png)
 
