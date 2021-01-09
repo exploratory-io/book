@@ -4,7 +4,7 @@
       "title": "チャートの種類",
       "desc": "Exploratoryには様々なチャートのタイプがあります。",
       "moreButtonText": "もっと見る",
-      "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
+      "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
       "insights": [
         {
          "title": "バーチャートの作り方",
@@ -27,7 +27,7 @@
       "title": "チャートの機能",
       "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
       "moreButtonText": "もっと見る",
-      "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
+      "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
       "insights": [
         {
          "title": "表計算：合計値に対する割合のチャートの作り方",
