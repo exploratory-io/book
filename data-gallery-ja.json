@@ -45,6 +45,11 @@
       "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
       "insights": [
         {
+          "title": "Google Sheetsのデータをインポートする方法",
+          "desc": "Google Sheetsのデータをインポートする方法を紹介します。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Sheets-Nnk4xUD2bI"
+        },
+        {
           "title": "Twitterのデータを読み込む方法",
           "desc": "Twitterのデータを読み込む方法を紹介します。",
           "url": "https://exploratory.io/note/GMq1Qom5tS/Twitter-QCG7HEt1qD"
@@ -75,12 +80,12 @@
         {
           "title": "Google BigQueryのデータを読み込む方法",
           "desc": "Google BigQueryのデータを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Lwp8jfl1pb"
+          "url": "https://exploratory.io/note/2ac8ae888097/9140554486080544"
         },
         {
           "title": "MySQLに踏み台サーバー経由(ssh)でアクセスする方法",
           "desc": "MySQLに踏み台サーバー経由(ssh)でアクセスする方法をご紹介します。",
-          "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Lwp8jfl1pb"
+          "url": "https://exploratory.io/note/2ac8ae888097/MySQL-ssh-BBY7Gpj9QJ"
         },
         {
           "title": "Dremioのデータを読み込む方法",
@@ -100,7 +105,7 @@
         {
           "title": "SQLiteのデータを読み込む",
           "desc": "SQLiteのデータを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/2ac8ae888097/Dr-Sum-ODBC-Exploratory-UzH6FFw9Ri"
+          "url": "https://exploratory.io/note/2ac8ae888097/8482041754876436"
         },
         {
           "title": "SQLでパラメーターを使う方法",
