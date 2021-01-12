@@ -5,6 +5,7 @@
       "desc": "Exploratoryには様々なチャートのタイプがあります。",
       "moreButtonText": "もっと見る",
       "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
+      "id":"chart-types",
       "insights": [
         {
          "title": "バーチャートの作り方",
@@ -53,6 +54,7 @@
       "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
       "moreButtonText": "もっと見る",
       "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
+      "id":"chart-features",
       "insights": [
         {
          "title": "表計算：合計値に対する割合のチャートの作り方",
