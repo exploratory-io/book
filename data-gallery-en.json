@@ -32,7 +32,7 @@
         {
          "title": "Import data from Google Analytics",
          "desc": "This explains how to import data from Google Analytics.",
-         "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Lwp8jfl1pb"
+         "url": "https://exploratory.io/note/kanaugust/Google-Analytics-Visualize-Sessions-by-Day-Hour-with-Heatmap-tNT7GsO0Hd"
         },
         {
           "title": "Import data from Elasticsearch",
@@ -79,6 +79,11 @@
           "title": "Weather Data",
           "desc": "How to import Whether Data",
           "url": "https://exploratory.io/note/2ac8ae888097/Data-Source-Extension-Weather-Data-rjM2VGd1ib"
+        },
+        {
+          "title": "Stock Data",
+          "desc": "How to import Stock Data",
+          "url": "https://exploratory.io/note/kanaugust/Importing-Historical-Stock-Price-Data-3739206537242714"
         }
       ]
     }
