@@ -28,7 +28,7 @@
         },
         {
           "title": "同じディレクトリの下にある複数のPDFファイルからテキストを読み込む方法",
-          "desc": "PC上同じディレクトリの下にある複数のPDFファイルからテキストを読み込む方法をご紹介します。",
+          "desc": "PC上の同じディレクトリの下にある複数のPDFファイルからテキストを読み込む方法をご紹介します。",
           "url": "https://exploratory.io/note/BWz1Bar4JF/Amazon-S3-csv-RxZ3ZAj1AI"
         },
         {
@@ -58,11 +58,6 @@
          "title": "Googleフォームのデータを読み込む方法",
          "desc": "Googleフォームのデータを読み込む方法をご紹介します。",
          "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Lwp8jfl1pb"
-        },
-        {
-          "title": "Elasticsearchに接続してデータを読み込む方法",
-          "desc": "Googleフォームのデータを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/2ac8ae888097/Exploatory-Elasticsearch-FIQ3mqN1ux"
         }
       ]
     },
@@ -96,6 +91,11 @@
           "title": "Sparkのデータを読み込む方法",
           "desc": "Sparkのデータを読み込む方法をご紹介します。",
           "url": "https://exploratory.io/note/2ac8ae888097/2569131745987096"
+        },
+        {
+          "title": "Elasticsearchに接続してデータを読み込む方法",
+          "desc": "Elasticsearchに接続してデータを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/2ac8ae888097/Exploatory-Elasticsearch-FIQ3mqN1ux"
         },
         {
           "title": "Dr.Sumのデータを読み込む方法",

@@ -33,11 +33,6 @@
          "title": "Import data from Google Analytics",
          "desc": "This explains how to import data from Google Analytics.",
          "url": "https://exploratory.io/note/kanaugust/Google-Analytics-Visualize-Sessions-by-Day-Hour-with-Heatmap-tNT7GsO0Hd"
-        },
-        {
-          "title": "Import data from Elasticsearch",
-          "desc": "This explains how to import data from Elasticsearch.",
-          "url": "https://exploratory.io/note/2ac8ae888097/How-to-import-data-from-Elasticsearch-RdT9wiT6Uq"
         }
       ]
     },
@@ -66,6 +61,11 @@
           "title": "Import data from Spark",
           "desc": "This explains how to import data from Spark.",
           "url": "https://exploratory.io/note/2ac8ae888097/8385836660075252"
+        },
+        {
+          "title": "Import data from Elasticsearch",
+          "desc": "This explains how to import data from Elasticsearch.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-import-data-from-Elasticsearch-RdT9wiT6Uq"
         }
       ]
     },
