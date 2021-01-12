@@ -1,124 +1,130 @@
 {
   "data": [
     {
-      "title": "チャートの種類",
-      "desc": "Exploratoryには様々なチャートのタイプがあります。",
+      "title": "ファイル",
+      "desc": "Exploratoryでは様々なファイルからデータを読み込むことができます。",
       "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
       "insights": [
         {
-         "title": "バーチャートの作り方",
-         "desc": "バーチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
+          "title": "CSVやエクセルのデータを読み込む方法",
+          "desc": "PC上のCSVやエクセルのデータをインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/CSV-qMt0tdA0Ti"
         },
         {
-         "title": "ラインチャートの作り方",
-         "desc": "ラインチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
+          "title": "複数のExcelまたはCSVファイルをいっぺんに読み込む方法",
+          "desc": "PC上にある複数のExcelまたはCSVファイルをいっぺんに読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/CSV-qMt0tdA0Ti"
         },
         {
-         "title": "ヒートマップの作り方",
-         "desc": "ヒートマップの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
+          "title": "Amazon S3上の複数のcsvファイルを一度に読み込む方法",
+          "desc": "Amazon S3上の複数のcsvファイルを一度に読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/Amazon-S3-csv-RxZ3ZAj1AI"
         },
         {
-         "title": "箱ヒゲ図の作り方",
-         "desc": "箱ヒゲ図の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/17-skB4kPv4JL"
+          "title": "Githubで公開されているCSVデータを読み込む方法",
+          "desc": "Githubで公開されているCSVデータを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/GitHub-ZQW1UUM8XE"
         },
         {
-         "title": "散布図（集計なし）の作り方",
-         "desc": "散布図（集計なし）の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/13-2-TZm4tyi8UC"
+          "title": "同じディレクトリの下にある複数のPDFファイルからテキストを読み込む方法",
+          "desc": "PC上同じディレクトリの下にある複数のPDFファイルからテキストを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/Amazon-S3-csv-RxZ3ZAj1AI"
         },
         {
-         "title": "散布図（集計あり）の作り方",
-         "desc": "散布図（集計あり）の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/rHW8oVO8GS"
-        },
-        {
-         "title": "地図 - 標準の使い方",
-         "desc": "地図 - 標準の使い方についてご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/GWw6gtb4rU"
-       },
-       {
-        "title": "地図 - 経度/緯度の作り方",
-        "desc": "地図 - 経度/緯度の作り方をご紹介します。",
-        "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
-       }
+          "title": "XMLデータを読み込む方法",
+          "desc": "XMLデータを読み込む方法を読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/XML-Gur3OyD2lj"
+        }
       ]
     },
     {
-      "title": "チャートの機能",
-      "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
+      "title": "クラウド アプリケーション",
+      "desc": "Exploratoryでは様々なクラウド アプリケーションからデータを読み込むことができます。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
+      "insights": [
+        {
+          "title": "Twitterのデータを読み込む方法",
+          "desc": "Twitterのデータを読み込む方法を紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/Twitter-QCG7HEt1qD"
+        },
+        {
+         "title": "Googleフォームのデータを読み込む方法",
+         "desc": "Googleフォームのデータを読み込む方法をご紹介します。",
+         "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Lwp8jfl1pb"
+        },
+        {
+          "title": "Elasticsearchに接続してデータを読み込む方法",
+          "desc": "Googleフォームのデータを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/2ac8ae888097/Exploatory-Elasticsearch-FIQ3mqN1ux"
+        }
+      ]
+    },
+    {
+      "title": "データベース",
+      "desc": "Exploratoryでは様々なデータベースからデータを読み込むことができます。",
       "moreButtonText": "もっと見る",
       "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
       "insights": [
         {
-         "title": "表計算：合計値に対する割合のチャートの作り方",
-         "desc": "表計算：合計値に対する割合のチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
+          "title": "Snowflakeのデータを読みこむ方法",
+          "desc": "Snowflakeに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/2ac8ae888097/Exploatory-Snowflake-rpe0WYz9NS"
         },
         {
-         "title": "表計算：累積合計のチャートの作り方",
-         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+          "title": "Google BigQueryのデータを読み込む方法",
+          "desc": "Google BigQueryのデータを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Lwp8jfl1pb"
         },
         {
-         "title": "表計算：移動平均の引き方",
-         "desc": "表計算：移動平均をラインチャートに引く方法をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
-       },
-       {
-       "title": "リファレンスラインの使い方",
-       "desc": "リファレンスラインの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/eDU7CFA8RQ"
-       },
-       {
-       "title": "トレンドライン：線形回帰の引き方",
-       "desc": "トレンドライン：線形回帰の引き方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/14-2-rdp7QBM4vw"
-       },
-       {
-       "title": "トレンドライン：LOESS曲線の引き方",
-       "desc": "トレンドライン：LOESS曲線の引き方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/10-LOESS-UJg3GXO9qL"
-       },
-       {
-       "title": "ハイライトの使い方",
-       "desc": "ハイライトの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/snt1aaS4qm"
-       },
-       {
-       "title": "繰り返しの使い方",
-       "desc": "繰り返しの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/YZc5vEy0xt"
-       },
-       {
-       "title": "Y2軸を設定する方法",
-       "desc": "Y2軸を設定する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Y2-NEy3ptf8HT"
-       },
-       {
-       "title": "チャートのY軸の値をパーセント表記に変更する方法",
-       "desc": "チャートのY軸の値をパーセント表記に変更する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Y-qSL5Hik3qH"
-       },
-       {
-       "title": "軸のレンジの設定方法",
-       "desc": "軸のレンジの設定方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/ERf7KXM0NL"
-       },
-       {
-       "title": "チャートタイトルの設定方法",
-       "desc": "チャートタイトルの設定方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/uIv0WEw1Xn"
-       },
-       {
-       "title": "チャートの軸のタイトルの設定方法",
-       "desc": "チャートの軸のタイトルの設定方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/wOz6bsJ7sn"
-       }
+          "title": "MySQLに踏み台サーバー経由(ssh)でアクセスする方法",
+          "desc": "MySQLに踏み台サーバー経由(ssh)でアクセスする方法をご紹介します。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Lwp8jfl1pb"
+        },
+        {
+          "title": "Dremioのデータを読み込む方法",
+          "desc": "Dremioのデータを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/2ac8ae888097/2067678796952374"
+        },
+        {
+          "title": "Sparkのデータを読み込む方法",
+          "desc": "Sparkのデータを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/2ac8ae888097/2569131745987096"
+        },
+        {
+          "title": "Dr.Sumのデータを読み込む方法",
+          "desc": "Dr.SumにODBCで接続してデータを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/2ac8ae888097/Dr-Sum-ODBC-Exploratory-UzH6FFw9Ri"
+        },
+        {
+          "title": "SQLiteのデータを読み込む",
+          "desc": "SQLiteのデータを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/2ac8ae888097/Dr-Sum-ODBC-Exploratory-UzH6FFw9Ri"
+        },
+        {
+          "title": "SQLでパラメーターを使う方法",
+          "desc": "SQLでパラメーターを使う方法をご紹介します。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/SQL-jxm8Ftl3HW"
+        }
+      ]
+    },
+    {
+      "title": "エクステンション",
+      "desc": "Exploratoryでは様々なエクステンションからデータを読み込むことができます。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
+      "insights": [
+        {
+          "title": "天候データを読み込む方法",
+          "desc": "天候データを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/2ac8ae888097/Lnu0hnY4MV"
+        },
+        {
+          "title": "株価データを読み込む方法",
+          "desc": "株価データを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Lwp8jfl1pb"
+        }
       ]
     }
   ]

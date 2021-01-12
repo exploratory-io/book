@@ -1,124 +1,85 @@
 {
   "data": [
     {
-      "title": "チャートの種類",
-      "desc": "Exploratoryには様々なチャートのタイプがあります。",
-      "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
+      "title": "Files",
+      "desc": "You can import data from various files with Exploratory.",
+      "moreButtonText": "More...",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=en",
       "insights": [
         {
-         "title": "バーチャートの作り方",
-         "desc": "バーチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
+          "title": "Import Multiple Excel or CSV Files Together",
+          "desc": "This.explains how to import multiple Excel or CSV files together.",
+          "url": "https://exploratory.io/note/kanaugust/Reading-Multiple-Excel-or-CSV-Files-Together-Rna9YmN0Sr"
         },
         {
-         "title": "ラインチャートの作り方",
-         "desc": "ラインチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
+          "title": "Import multiple CSV Files From S3 at Once",
+          "desc": "This explains how to import multiple CSV files from S3 at once.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-Import-multiple-CSV-Files-From-S3-at-Once-xWq8dXV4vC"
         },
         {
-         "title": "ヒートマップの作り方",
-         "desc": "ヒートマップの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
-        },
-        {
-         "title": "箱ヒゲ図の作り方",
-         "desc": "箱ヒゲ図の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/17-skB4kPv4JL"
-        },
-        {
-         "title": "散布図（集計なし）の作り方",
-         "desc": "散布図（集計なし）の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/13-2-TZm4tyi8UC"
-        },
-        {
-         "title": "散布図（集計あり）の作り方",
-         "desc": "散布図（集計あり）の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/rHW8oVO8GS"
-        },
-        {
-         "title": "地図 - 標準の使い方",
-         "desc": "地図 - 標準の使い方についてご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/GWw6gtb4rU"
-       },
-       {
-        "title": "地図 - 経度/緯度の作り方",
-        "desc": "地図 - 経度/緯度の作り方をご紹介します。",
-        "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
-       }
+          "title": "Import Excel File Data from Dropbox",
+          "desc": "This explains how to import Excel file data from Dropbox.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-Import-Excel-File-Data-from-Dropbox-Khx1Beo1yz"
+        }
       ]
     },
     {
-      "title": "チャートの機能",
-      "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
-      "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
+      "title": "Cloud Applications",
+      "desc": "You can import data from various Cloud Applications with Exploratory.",
+      "moreButtonText": "More...",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=en",
       "insights": [
         {
-         "title": "表計算：合計値に対する割合のチャートの作り方",
-         "desc": "表計算：合計値に対する割合のチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
+         "title": "Import data from Google Analytics",
+         "desc": "This explains how to import data from Google Analytics.",
+         "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Lwp8jfl1pb"
         },
         {
-         "title": "表計算：累積合計のチャートの作り方",
-         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+          "title": "Import data from Elasticsearch",
+          "desc": "This explains how to import data from Elasticsearch.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-import-data-from-Elasticsearch-RdT9wiT6Uq"
+        }
+      ]
+    },
+    {
+      "title": "Databases",
+      "desc": "You can import data from various Cloud Applications with Exploratory.",
+      "moreButtonText": "More...",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=en",
+      "insights": [
+        {
+          "title": "Import data from Snowflake",
+          "desc": "This explains how to import data from Snowflake.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-import-data-from-Snowflake-nhP3FTm5ZM"
         },
         {
-         "title": "表計算：移動平均の引き方",
-         "desc": "表計算：移動平均をラインチャートに引く方法をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
-       },
-       {
-       "title": "リファレンスラインの使い方",
-       "desc": "リファレンスラインの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/eDU7CFA8RQ"
-       },
-       {
-       "title": "トレンドライン：線形回帰の引き方",
-       "desc": "トレンドライン：線形回帰の引き方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/14-2-rdp7QBM4vw"
-       },
-       {
-       "title": "トレンドライン：LOESS曲線の引き方",
-       "desc": "トレンドライン：LOESS曲線の引き方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/10-LOESS-UJg3GXO9qL"
-       },
-       {
-       "title": "ハイライトの使い方",
-       "desc": "ハイライトの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/snt1aaS4qm"
-       },
-       {
-       "title": "繰り返しの使い方",
-       "desc": "繰り返しの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/YZc5vEy0xt"
-       },
-       {
-       "title": "Y2軸を設定する方法",
-       "desc": "Y2軸を設定する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Y2-NEy3ptf8HT"
-       },
-       {
-       "title": "チャートのY軸の値をパーセント表記に変更する方法",
-       "desc": "チャートのY軸の値をパーセント表記に変更する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Y-qSL5Hik3qH"
-       },
-       {
-       "title": "軸のレンジの設定方法",
-       "desc": "軸のレンジの設定方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/ERf7KXM0NL"
-       },
-       {
-       "title": "チャートタイトルの設定方法",
-       "desc": "チャートタイトルの設定方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/uIv0WEw1Xn"
-       },
-       {
-       "title": "チャートの軸のタイトルの設定方法",
-       "desc": "チャートの軸のタイトルの設定方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/wOz6bsJ7sn"
-       }
+          "title": "Access MySQL through ssh tunnel",
+          "desc": "This explains How to access MySQL through ssh tunnel.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-access-MySQL-through-ssh-tunnel-sdN9olb8ey"
+        },
+        {
+          "title": "Import data from Dremio",
+          "desc": "This explains how to import data from Dremio.",
+          "url": "https://exploratory.io/note/2ac8ae888097/6753692980334964"
+        },
+        {
+          "title": "Import data from Spark",
+          "desc": "This explains how to import data from Spark.",
+          "url": "https://exploratory.io/note/2ac8ae888097/8385836660075252"
+        }
+      ]
+    },
+    {
+      "title": "Extensions",
+      "desc": "You can import data from various Data Source Extension.",
+      "moreButtonText": "More...",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=en",
+      "insights": [
+        {
+          "title": "Weather Data",
+          "desc": "How to import Whether Data",
+          "url": "https://exploratory.io/note/2ac8ae888097/Data-Source-Extension-Weather-Data-rjM2VGd1ib"
+        }
       ]
     }
   ]
