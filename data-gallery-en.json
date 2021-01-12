@@ -1,5 +1,125 @@
 {
   "data": [
-  ],
-  "__COMMENT__": "Not used now. For future use."
+    {
+      "title": "チャートの種類",
+      "desc": "Exploratoryには様々なチャートのタイプがあります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
+      "insights": [
+        {
+         "title": "バーチャートの作り方",
+         "desc": "バーチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
+        },
+        {
+         "title": "ラインチャートの作り方",
+         "desc": "ラインチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
+        },
+        {
+         "title": "ヒートマップの作り方",
+         "desc": "ヒートマップの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
+        },
+        {
+         "title": "箱ヒゲ図の作り方",
+         "desc": "箱ヒゲ図の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/17-skB4kPv4JL"
+        },
+        {
+         "title": "散布図（集計なし）の作り方",
+         "desc": "散布図（集計なし）の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/13-2-TZm4tyi8UC"
+        },
+        {
+         "title": "散布図（集計あり）の作り方",
+         "desc": "散布図（集計あり）の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/rHW8oVO8GS"
+        },
+        {
+         "title": "地図 - 標準の使い方",
+         "desc": "地図 - 標準の使い方についてご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/GWw6gtb4rU"
+       },
+       {
+        "title": "地図 - 経度/緯度の作り方",
+        "desc": "地図 - 経度/緯度の作り方をご紹介します。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
+       }
+      ]
+    },
+    {
+      "title": "チャートの機能",
+      "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
+      "insights": [
+        {
+         "title": "表計算：合計値に対する割合のチャートの作り方",
+         "desc": "表計算：合計値に対する割合のチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
+        },
+        {
+         "title": "表計算：累積合計のチャートの作り方",
+         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+        },
+        {
+         "title": "表計算：移動平均の引き方",
+         "desc": "表計算：移動平均をラインチャートに引く方法をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
+       },
+       {
+       "title": "リファレンスラインの使い方",
+       "desc": "リファレンスラインの使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/eDU7CFA8RQ"
+       },
+       {
+       "title": "トレンドライン：線形回帰の引き方",
+       "desc": "トレンドライン：線形回帰の引き方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/14-2-rdp7QBM4vw"
+       },
+       {
+       "title": "トレンドライン：LOESS曲線の引き方",
+       "desc": "トレンドライン：LOESS曲線の引き方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/10-LOESS-UJg3GXO9qL"
+       },
+       {
+       "title": "ハイライトの使い方",
+       "desc": "ハイライトの使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/snt1aaS4qm"
+       },
+       {
+       "title": "繰り返しの使い方",
+       "desc": "繰り返しの使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/YZc5vEy0xt"
+       },
+       {
+       "title": "Y2軸を設定する方法",
+       "desc": "Y2軸を設定する方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Y2-NEy3ptf8HT"
+       },
+       {
+       "title": "チャートのY軸の値をパーセント表記に変更する方法",
+       "desc": "チャートのY軸の値をパーセント表記に変更する方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Y-qSL5Hik3qH"
+       },
+       {
+       "title": "軸のレンジの設定方法",
+       "desc": "軸のレンジの設定方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/ERf7KXM0NL"
+       },
+       {
+       "title": "チャートタイトルの設定方法",
+       "desc": "チャートタイトルの設定方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/uIv0WEw1Xn"
+       },
+       {
+       "title": "チャートの軸のタイトルの設定方法",
+       "desc": "チャートの軸のタイトルの設定方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/wOz6bsJ7sn"
+       }
+      ]
+    }
+  ]
 }
