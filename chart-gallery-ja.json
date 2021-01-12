@@ -4,7 +4,7 @@
       "title": "チャートの種類",
       "desc": "Exploratoryには様々なチャートのタイプがあります。",
       "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
          "title": "バーチャートの作り方",
@@ -52,7 +52,7 @@
       "title": "チャートの機能",
       "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
       "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
          "title": "表計算：合計値に対する割合のチャートの作り方",
@@ -118,7 +118,30 @@
        "title": "チャートの軸のタイトルの設定方法",
        "desc": "チャートの軸のタイトルの設定方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/wOz6bsJ7sn"
-       }
+      }
+      ]
+    },
+     {
+       "title": "データの可視化ワークショップ",
+       "desc": "データや目的に適したチャートの選び方と使い方、効果的にデータを可視化するためのテクニック、可視化するためのデータの作り方などを学べる、1時間単位のオンラインワークショップの録画とスライドです。",
+       "moreButtonText": "もっと見る",
+       "moreButtonUrl": "https://exploratory.io/tag/?q=tag:%22Viz%20Workshop%22",
+       "insights": [
+         {
+          "title": "データの可視化ワークショップ #1 - 基礎編",
+          "desc": "データタイプや目的に適したチャートを選べるように、データを可視化する際の基本となる使い方を紹介しています。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/1-QyT6tWa7mT"
+         },
+         {
+          "title": "データの可視化ワークショップ #2 - 時系列データの可視化",
+          "desc": "時系列データのトレンドをどうやって理解していくのか、効果的に可視化するのかを表計算やトレンドラインなどの機能を使って紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/2-mKt8TJD8GP"
+         },
+         {
+          "title": "データの可視化ワークショップ #3 - ばらつきと相関の可視化",
+          "desc": "データの中にある「ばらつき」からパターンを発見するために、データタイプに合わせた「相関」の可視化方法について紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/3-wPX8KeJ5DY"
+        }
       ]
     }
   ]
