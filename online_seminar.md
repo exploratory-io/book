@@ -1,11 +1,9 @@
-# Data Wrangling for Data Visualization
-## Date/Time: 10/28 (Wed) - 11AM PT (US) / 2PM ET (US) / 6PM GMT / 8PM CET
+# Exploratory v6.3 - Introducing New Features
+## Date/Time: 1/13 (Wed) - 11AM PT (US) / 2PM ET (US) / 6PM GMT / 8PM CET
 ## Duration: 1 hour
 ## Meeting URL: [Zoom](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-Once you get your data, more often than not, you'd find a need to clean and transform the data before even visualizing it to make any sense. We call this task Data Wrangling.
-
-In this seminar, I'm going to introduce a few commonly used techniques to clean and transform data with COVID-19 data.
+We have released Exploratory v6.3 in December. Kan will introduce some of the big new features with dem
 
 * Transform Wide data to Long data
 * Convert Text to Date data type

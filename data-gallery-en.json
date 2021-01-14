@@ -1,0 +1,91 @@
+{
+  "data": [
+    {
+      "title": "Files",
+      "desc": "You can import data from various files with Exploratory.",
+      "moreButtonText": "More...",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=en",
+      "insights": [
+        {
+          "title": "Import Multiple Excel or CSV Files Together",
+          "desc": "This.explains how to import multiple Excel or CSV files together.",
+          "url": "https://exploratory.io/note/kanaugust/Reading-Multiple-Excel-or-CSV-Files-Together-Rna9YmN0Sr"
+        },
+        {
+          "title": "Import multiple CSV Files From S3 at Once",
+          "desc": "This explains how to import multiple CSV files from S3 at once.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-Import-multiple-CSV-Files-From-S3-at-Once-xWq8dXV4vC"
+        },
+        {
+          "title": "Import Excel File Data from Dropbox",
+          "desc": "This explains how to import Excel file data from Dropbox.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-Import-Excel-File-Data-from-Dropbox-Khx1Beo1yz"
+        }
+      ]
+    },
+    {
+      "title": "Cloud Applications",
+      "desc": "You can import data from various Cloud Applications with Exploratory.",
+      "moreButtonText": "More...",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=en",
+      "insights": [
+        {
+         "title": "Import data from Google Analytics",
+         "desc": "This explains how to import data from Google Analytics.",
+         "url": "https://exploratory.io/note/kanaugust/Google-Analytics-Visualize-Sessions-by-Day-Hour-with-Heatmap-tNT7GsO0Hd"
+        }
+      ]
+    },
+    {
+      "title": "Databases",
+      "desc": "You can import data from various Cloud Applications with Exploratory.",
+      "moreButtonText": "More...",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=en",
+      "insights": [
+        {
+          "title": "Import data from Snowflake",
+          "desc": "This explains how to import data from Snowflake.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-import-data-from-Snowflake-nhP3FTm5ZM"
+        },
+        {
+          "title": "Access MySQL through ssh tunnel",
+          "desc": "This explains How to access MySQL through ssh tunnel.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-access-MySQL-through-ssh-tunnel-sdN9olb8ey"
+        },
+        {
+          "title": "Import data from Dremio",
+          "desc": "This explains how to import data from Dremio.",
+          "url": "https://exploratory.io/note/2ac8ae888097/6753692980334964"
+        },
+        {
+          "title": "Import data from Spark",
+          "desc": "This explains how to import data from Spark.",
+          "url": "https://exploratory.io/note/2ac8ae888097/8385836660075252"
+        },
+        {
+          "title": "Import data from Elasticsearch",
+          "desc": "This explains how to import data from Elasticsearch.",
+          "url": "https://exploratory.io/note/2ac8ae888097/How-to-import-data-from-Elasticsearch-RdT9wiT6Uq"
+        }
+      ]
+    },
+    {
+      "title": "Extensions",
+      "desc": "You can import data from various Data Source Extension.",
+      "moreButtonText": "More...",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=en",
+      "insights": [
+        {
+          "title": "Weather Data",
+          "desc": "How to import Whether Data",
+          "url": "https://exploratory.io/note/2ac8ae888097/Data-Source-Extension-Weather-Data-rjM2VGd1ib"
+        },
+        {
+          "title": "Stock Data",
+          "desc": "How to import Stock Data",
+          "url": "https://exploratory.io/note/kanaugust/Importing-Historical-Stock-Price-Data-3739206537242714"
+        }
+      ]
+    }
+  ]
+}

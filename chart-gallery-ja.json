@@ -1,0 +1,148 @@
+{
+  "data": [
+    {
+      "title": "チャートの種類",
+      "desc": "Exploratoryには様々なチャートのタイプがあります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "insights": [
+        {
+         "title": "バーチャートの作り方",
+         "desc": "バーチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
+        },
+        {
+         "title": "ラインチャートの作り方",
+         "desc": "ラインチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
+        },
+        {
+         "title": "ヒートマップの作り方",
+         "desc": "ヒートマップの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
+        },
+        {
+         "title": "箱ヒゲ図の作り方",
+         "desc": "箱ヒゲ図の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/17-skB4kPv4JL"
+        },
+        {
+         "title": "散布図（集計なし）の作り方",
+         "desc": "散布図（集計なし）の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/13-2-TZm4tyi8UC"
+        },
+        {
+         "title": "散布図（集計あり）の作り方",
+         "desc": "散布図（集計あり）の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/rHW8oVO8GS"
+        },
+        {
+         "title": "地図 - 標準の使い方",
+         "desc": "地図 - 標準の使い方についてご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/GWw6gtb4rU"
+       },
+       {
+        "title": "地図 - 経度/緯度の作り方",
+        "desc": "地図 - 経度/緯度の作り方をご紹介します。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
+       }
+      ]
+    },
+    {
+      "title": "チャートの機能",
+      "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "insights": [
+        {
+         "title": "表計算：合計値に対する割合のチャートの作り方",
+         "desc": "表計算：合計値に対する割合のチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
+        },
+        {
+         "title": "表計算：累積合計のチャートの作り方",
+         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+        },
+        {
+         "title": "表計算：移動平均の引き方",
+         "desc": "表計算：移動平均をラインチャートに引く方法をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
+       },
+       {
+       "title": "リファレンスラインの使い方",
+       "desc": "リファレンスラインの使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/eDU7CFA8RQ"
+       },
+       {
+       "title": "トレンドライン：線形回帰の引き方",
+       "desc": "トレンドライン：線形回帰の引き方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/14-2-rdp7QBM4vw"
+       },
+       {
+       "title": "トレンドライン：LOESS曲線の引き方",
+       "desc": "トレンドライン：LOESS曲線の引き方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/10-LOESS-UJg3GXO9qL"
+       },
+       {
+       "title": "ハイライトの使い方",
+       "desc": "ハイライトの使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/snt1aaS4qm"
+       },
+       {
+       "title": "繰り返しの使い方",
+       "desc": "繰り返しの使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/YZc5vEy0xt"
+       },
+       {
+       "title": "Y2軸を設定する方法",
+       "desc": "Y2軸を設定する方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Y2-NEy3ptf8HT"
+       },
+       {
+       "title": "チャートのY軸の値をパーセント表記に変更する方法",
+       "desc": "チャートのY軸の値をパーセント表記に変更する方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Y-qSL5Hik3qH"
+       },
+       {
+       "title": "軸のレンジの設定方法",
+       "desc": "軸のレンジの設定方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/ERf7KXM0NL"
+       },
+       {
+       "title": "チャートタイトルの設定方法",
+       "desc": "チャートタイトルの設定方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/uIv0WEw1Xn"
+       },
+       {
+       "title": "チャートの軸のタイトルの設定方法",
+       "desc": "チャートの軸のタイトルの設定方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/wOz6bsJ7sn"
+      }
+      ]
+    },
+     {
+       "title": "データの可視化ワークショップ",
+       "desc": "データや目的に適したチャートの選び方と使い方、効果的にデータを可視化するためのテクニック、可視化するためのデータの作り方などを学べる、1時間単位のオンラインワークショップの録画とスライドです。",
+       "moreButtonText": "もっと見る",
+       "moreButtonUrl": "https://exploratory.io/tag/?q=tag:%22Viz%20Workshop%22",
+       "insights": [
+         {
+          "title": "データの可視化ワークショップ #1 - 基礎編",
+          "desc": "データタイプや目的に適したチャートを選べるように、データを可視化する際の基本となる使い方を紹介しています。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/1-QyT6tWa7mT"
+         },
+         {
+          "title": "データの可視化ワークショップ #2 - 時系列データの可視化",
+          "desc": "時系列データのトレンドをどうやって理解していくのか、効果的に可視化するのかを表計算やトレンドラインなどの機能を使って紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/2-mKt8TJD8GP"
+         },
+         {
+          "title": "データの可視化ワークショップ #3 - ばらつきと相関の可視化",
+          "desc": "データの中にある「ばらつき」からパターンを発見するために、データタイプに合わせた「相関」の可視化方法について紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/3-wPX8KeJ5DY"
+        }
+      ]
+    }
+  ]
+}
