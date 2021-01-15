@@ -39,6 +39,7 @@
       * [SQL Troubleshooting](https://exploratory.io/note/2ac8ae888097/How-to-workaround-the-issue-that-scheduled-Amazon-Athena-Data-Source-ends-up-with-empty-result-Fbe1yiQ3aC)
       * [Create Connection](import/connection.md)
       * [Google BigQuery](import/google-bigquery.md)
+      * [Snowflake](import/snowflake.md)
       * [MySQL DB](import/mysql.md)
       * [Amazon Aurora](import/aurora.md)
       * [Amazon Athena](import/athena.md)
