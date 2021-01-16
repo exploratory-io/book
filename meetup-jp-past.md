@@ -185,13 +185,13 @@
 
 ## 株式会社 日立ドキュメントソリューションズ 湯山 咲子様
 
-スライド：
-
-<script async class="speakerdeck-embed" data-id="293d33b6a1cb4daea456134ffa23d94a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
 ビデオ：
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/1D6pA0iBEik?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="293d33b6a1cb4daea456134ffa23d94a" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ---
 
