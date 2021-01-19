@@ -27,6 +27,8 @@ There are many properties to configure how to build the models and how to transf
     * Simulations for Uncertainty Interval - Number of simulations to estimate uncertainty interval.
   * Seasonalities
     * Yearly Seasonality - By default, whether to use yearly seasonality is automatically determined, but you can explicitly specify it here.
+    * Quarterly Seasonality - By default, it is not used.
+    * Monthly Seasonality - By default, it is not used.
     * Weekly Seasonality - By default, whether to use weekly seasonality is automatically determined, but you can explicitly specify it here.
     * Daily Seasonality - By default, whether to use weekly seasonality is automatically determined, but you can explicitly specify it here.
     * Strength of Seasonality - Controls the strength of seasonality taken into account in the forecasting.

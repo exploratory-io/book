@@ -1,40 +1,5 @@
 {
   "data": [
-    {
-      "title": "バーチャート",
-      "desc": "バーチャートの使い方をご紹介します。",
-      "moreButtonText": "もっと見る",
-      "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
-      "insights": [
-        {
-         "title": "バーチャートの作り方",
-         "desc": "バーチャートの作り方の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
-        },
-        {
-         "title": "表計算：合計値に対する割合のチャートの作り方",
-         "desc": "表計算：合計値に対する割合のチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
-        }
-      ]
-    },
-    {
-      "title": "地図",
-      "desc": "地図の使い方をご紹介します。",
-      "moreButtonText": "もっと見る",
-      "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
-      "insights": [
-        {
-         "title": "地図 - 標準の使い方",
-         "desc": "地図 - 標準の使い方についてご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/GWw6gtb4rU"
-        },
-        {
-         "title": "地図 - 経度/緯度の作り方",
-         "desc": "地図 - 経度/緯度の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
-        }
-      ]
-    }
-  ]
+  ],
+  "__COMMENT__": "Not used now. For future use."
 }
