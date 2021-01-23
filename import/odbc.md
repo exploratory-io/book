@@ -27,6 +27,7 @@ Select the "ODBC" icon.
 ![](images/odbc-connection3.png)
 
 Select the DSN created at Step 1 and click the Test and make sure it works.
+For Mac, we support both [iODBC](http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/ODBCMacOSX) based and [unixODBC](http://www.unixodbc.org/drivers.html) based ODBC Drivers and DSN. 
 
 ![](images/odbc-connection4.png)
 
