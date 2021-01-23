@@ -2,10 +2,11 @@
 
 You can quickly import data from your ODBC Database Connection into Exploratory.
 
-## 1. Set up ODBC Data Source Name (DSN)
+## 1. Install ODBC Drivers and Set Up Data Source Name (DSN)
 
-First, set up ODBC DSN for the database you want to connect Exploratory to. Following are instructions to create ODBC DSN for some of the types of databases we verified that they work.
+First, install ODBC Drivers and set up Data Source Name (DSN) for the database you want to connect Exploratory to. Following are instructions to create ODBC DSN for some of the types of databases we verified that they work.
 
+* [Snowflake](https://exploratory.io/note/2ac8ae888097/How-to-import-data-from-Snowflake-nhP3FTm5ZM) (from Exploratory for Mac/Windows)
 * [Oracle](https://community.exploratory.io/t/connecting-to-oracle-database-through-odbc-from-windows-with-oracle-instance-client/499) (from Exploratory for Windows)
 * [Oracle](https://community.exploratory.io/t/connecting-to-oracle-database-through-odbc-from-mac/347) (from Exploratory for Mac)
 * [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-windows/341) (from Exploratory for Windows)
@@ -13,11 +14,28 @@ First, set up ODBC DSN for the database you want to connect Exploratory to. Foll
 
 ## 2. Create a Connection to use
 
-Create a connection following [this instruction](connection.html).
+Select the "Data Connection" menu from the menu right next to the project name.
+
+![](images/odbc-connection1.png)
+
+Click the "Add" button.
+
+![](images/odbc-connection2.png)
+
+Select the "ODBC" icon.
+
+![](images/odbc-connection3.png)
+
+Select the DSN created at Step 1 and click the Test and make sure it works.
+
+![](images/odbc-connection4.png)
+
+Click the "Add" button to save the connection.
+
 
 ## 3. Open ODBC Import dialog
 
-Click '+' button next to 'Data Frames' and select 'Import Database Data'.
+Click '+' button next to 'Data Frames' and select 'Database Data'.
 
 ![](images/import-database.png)
 
