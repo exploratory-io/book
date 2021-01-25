@@ -15,6 +15,8 @@
 
 パスコード: 214463
 
+----
+
 # ExcelユーザーのためのExploratoryの始め方 Part 2
 ## 時間: 2021/1/28 (木) - 午後12時 - 1時（日本時間）
 ## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
