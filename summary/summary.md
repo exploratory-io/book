@@ -174,12 +174,6 @@ You can create an Analytics or a Chart from the column header menu. Available An
 
 
 #### Numeric target column 
-##### Analytics
-* Linear Regression 
-* Decision Tree 
-* Random Forest 
-* XGBoost 
-* Kruskal-Wallis Test 
 
 ##### Chart
 * Bar 
@@ -187,20 +181,34 @@ You can create an Analytics or a Chart from the column header menu. Available An
 * Line 
 * Scatter (Only if a comparing column is Numeric or Date)
 
+##### Analytics
+* Linear Regression 
+* Decision Tree 
+* Random Forest 
+* XGBoost 
+
+##### Statistical Tests
+* T Test (Only if a comparing column has 2 unique values)
+* ANOVA (Only if a comparing column has 2 unique values)
+* Wilcoxon Test  
+* Kruskal-Wallis Test 
+
 
 #### Logical target column 
+
+##### Chart
+* Bar 
+* Error Bar
+* Line 
 
 ##### Analytics
 * Logistic Regression 
 * Decision Tree 
 * Random Forest 
 * XGBoost 
-* Chi-Square Test 
 
-##### Chart
-* Bar 
-* Error Bar
-* Line 
+##### Statistical Tests
+* Chi-Square Test 
 
 
 ![](images/cor9.png)
