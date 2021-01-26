@@ -7,6 +7,7 @@ Released on 1/26/2021.
 
 ### Enhancements
 
+
 * Data Source: Now you can adjust "Max Tree Depth" and "Max List Size" when you load JSON data in the JSON data import dialog.
 * Data Source: Supported Snowflake as a new data source.
 
