@@ -10,13 +10,14 @@ You can change the format of the target column in the Column Configuration Dialo
 
 You can set the column display name that you want to use. 
 
+## Header Font Style
+
+You can set font styles that you want to use for headers.
+
 ## Font Style
 
-You can set a font style that you want to use for text in cells.
+You can set font styles that you want to use for text in cells.
 
-## Column Width (px)
-
-You can set a column width. The unit is pixel. 
 
 ## Function 
 
@@ -104,6 +105,11 @@ If you click "Germany", a browser opens up the URL `https://exploratory.io/?q=Ge
 
 If you want to use values as a URL parameter, check the "Apply URL encoding for the column value." checkbox.
 
+
+
+## Column Width (px)
+
+You can set a column width. The unit is pixel. 
 
 
 
