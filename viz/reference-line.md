@@ -2,8 +2,8 @@
 
  Reference Line feature is available in the following chart types. 
 
-* Bar: Y-Axis
-* Line: Y-Axis
+* Bar: X-Axis, Y-Axis
+* Line: X-Axis, Y-Axis
 * Scatter (No Aggregation): X-Axis, Y-Axis
 * Scatter (With Agggregation): X-Axis, Y-Axis
 * Histogram: X-Axis
