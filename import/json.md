@@ -35,6 +35,11 @@ Select node on JSON Tree.
 On the left hand side, you an see JSON Tree and you can select red table icon for importing data.
 
 
+You can configure the following properties for the JSON Tree.
+* Max Tree Depth: How deep you want to show the tree structure. If your JSON tree structure is deep and you want to see the deeper levels, increase this. If you increase this, it may take time to load the tree.  
+* Max List Size:  How many list items to show in the tree. If you want to see more list items in the list data type in your JSON tree, increase this. If you increase this, it may take time to load the tree.  
+
+
 ## 4. Column Selection
 
 On top of input parameters, you can also use checkboxes on the preview table to include/exclude columns. if you uncheck the checkboxes on the columns, these columns are excluded when you save the data. 
