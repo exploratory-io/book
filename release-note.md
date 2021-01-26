@@ -12,20 +12,21 @@ Released on 1/26/2021.
 * Data Source: Supported Snowflake as a new data source.
 
 
-* Summary View: Now you can create Anova, Wilcoxon and T Test from the Correlation view. 
+* Summary View: Now you can create Anova, Wilcoxon and T Test from the Correlation view.
 
 
 * Data Wrangling: Tokenize Text: Now you can sort results by 'Document ID'.
-* Data Wrangling: Introduced a new UI for Time Series Clustering.
+* Data Wrangling: Separate: Added 'Combine with Original Column Name' parameter.
 
 
 * Chart: Now you can add vertical reference lines in Bar chart.
-* Chart: Summarize Table: Table: Now you can customize column header styles. 
+* Chart: Summarize Table: Table: Now you can customize column header formatting.
 * Chart: Now you can disable using unit abbreviations such as "k" or "M" on the chart axis by the "Shorten Numbers" option in the Chart Property dialog.
+* Chart/Analytics: Changed the default name for copied charts/analytics to have "-x" suffix where x is a number to make the name unique.
 
 
 * Analytics: Time Series Forecast Analytics View with Prophet now supports quarterly and monthly seasonality.
-* Analytics: Now you can change how many rows to show from the Table toolbar in the "Data" tab. 
+* Analytics: Now you can adjust how many rows to show for the Table data under the "Data" tab.
 * Analytics: Time Series Clustering is added as a new Analytics Step.
 
 
@@ -33,20 +34,19 @@ Released on 1/26/2021.
 
 
 * Data Source: Added "Optional" label for an optional parameter to make it obvious.
-* Data Source: Removed old MS SQL Server (DSN) option from the Data Source selection dialog.
+* Data Source: Removed an old MS SQL Server (DSN) option from the Data Source selection dialog.
 * Data Source: When trying to add a Teradata connection, UI became empty and hung.
 
 
-* Summary View: Loading Summary View was slow comparing to the previous version on Windows.
-* Summary View: P Values under 0.001 should show as "< 0.0001" instead of "0.0000" in the Correlation view. 
+* Summary View: Loading Summary View was slow comparing to the previous version for Windows.
+* Summary View: P Values under 0.001 should be shown as "< 0.0001" instead of "0.0000" in the Correlation view.
 * Summary View: When clicking the Ratio button on Summary Highlight mode, the Ratio button didn't get highlighted.
 
 
 * Data Wrangling: _tam_isDataFrame function, which is an internal function of Exploratory, was included in exported R script for web scraping, CSV, etc., which made the exported script hard to run outside of Exploratory.
 * Data Wrangling: Filter: On a Filter step, changing the logical operator showed an incorrect "Condition is empty, Do you want to delete" message.
 * Data Wrangling: For local file data sources, now it shows the file full path when hovering over the source step.
-* Data Wrangling: Remote File Data Source: When hitting the Tab key inside the URL field, it should not run preview.
-* Data Wrangling: Separate: Added 'Combine with Original Column Name' parameter.
+* Data Wrangling: Remote File Data Source: Hitting the Tab key inside the URL field was running the preview again.
 * Data Wrangling: Text Wrangling UI: Preview table showed unnecessary sort icons on the column header.
 * Data Wrangling: Text Wrangling: Matched text was not highlighted for Replacing Range of Text option.
 * Data Wrangling: When importing data right after started the App, the Summary, Table, Chart, and Analytics tab labels were shown in English even if the UI Language was set as Japanese.
@@ -54,10 +54,9 @@ Released on 1/26/2021.
 
 
 * Chart: After deleting a chart table that included invalid columns, it showed an empty screen.
-* Chart: After duplicating a chart with a chart filter, changes made to the copied chart's filter also applied to the source's chart filter.
+* Chart: After duplicating a chart with a chart filter, when you changed the chart filter setting it also changed the original chart filter setting.
 * Chart: Show Detail showed no rows if numeric columns were assigned to Y and Color in Bar chart.
-* Chart: Summarize table failed to render if you added multiple columns to Row and chose "(None)" for the 1st one.
-* Chart/Analytics: Changed the default name for copied charts/analytics to have "-x" suffix where x is a number to make the name unique.
+* Chart: Summarize table failed to render if you added multiple columns to Row and selected "(None)" for the 1st one.
 
 
 * Analytics: ARIMA: In the Summary tab, Repeat-By column wrongly showed up twice.
@@ -67,11 +66,11 @@ Released on 1/26/2021.
 * Analytics: XGBoost: In some cases, multiclass classification threw the error "SoftmaxMultiClassObj: label must be in [0, num_class).".
 
 
-* Note: Publish Dialog got closed when clicking outside of the dialog where it should stay open.
+* Note: Publish Dialog got closed when clicking outside of the dialog where it should have stayed open.
 * Note/Slide/Dashboard: When importing a Note/Slide/Dashboard EDF file, it should open it in a separate window.
 
 
-* Parameter: In some cases, when publishing an Insight, a parquet file necessary for Parameter was lacking in the uploaded EDF file, which caused an error when using the Parameter on the Server.
+* Parameter: In some cases, when publishing an Insight, a cached data file for Parameter was missing in the uploaded EDF file, which caused an error when using the Parameter on the Server.
 
 
 * Project: Improved the error message when it failed to open a project due to Rserve start failure.
