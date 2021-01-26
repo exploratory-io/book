@@ -1,5 +1,87 @@
 # Release Note
 
+## 6.4.0
+
+Released on 1/26/2021.
+
+
+### Enhancements
+
+* Data Source: Now you can adjust "Max Tree Depth" and "Max List Size" when you load JSON data in the JSON data import dialog.
+* Data Source: Supported Snowflake as a new data source.
+
+
+* Summary View: Now you can create Anova, Wilcoxon and T Test from the Correlation view. 
+
+
+* Data Wrangling: Tokenize Text: Now you can sort result by 'Document ID'.
+* Data Wrangling: Introduced a new UI for Time Series Clustering.
+
+
+* Chart: Now you can add vertical reference lines in Bar chart.
+* Chart: Summarize Table: Table: Now you can customize column header styles. 
+* Chart: Now you can disable using unit abbreviations such as "k" or "M" on chart axis by "Shorten Numbers" option in Chart Property dialog.
+
+
+* Analytics: Time Series Forecast Analytics View with Prophet now supports quarterly and monthly seasonality.
+* Analytics: Now you can change how many rows to show from the Table toolbar in the "Data" tab. 
+* Analytics: Time Series Clustering is added as a new Analytics Step.
+
+
+### Bug Fixes
+
+
+* Data Source: Added "Optional" label for optional parameter to make it obvious
+* Data Source: Removed old MS SQL Server (DSN) option from the Data Source selection dialog.
+* Data Source: When trying to add a Teradata connection, UI became empty and hung.
+
+
+* Summary View: Loading Summary View was slow comparing to the previous version on Windows.
+* Summary View: P Values under 0.001 should show as "< 0.0001" instead of "0.0000" in the Correlation view. 
+* Summary View: When clicking the Ratio button on Summary Highlight mode, the Ratio button didn't get highlighted.
+
+
+* Data Wrangling: _tam_isDataFrame function, which is an internal function of Exploratory, was included in exported R script for web scraping, CSV, etc., which made the exported script hard to run outside of Exploratory.
+* Data Wrangling: Filter: On a Filter step, changing the logical operator showed incorrect "Condition is empty, Do you want to delete" message.
+* Data Wrangling: For local file data sources, now it shows the file full path when hovering over the source step.
+* Data Wrangling: Remote File Data Source: When hitting the Tab key inside the URL field, it should not run preview.
+* Data Wrangling: Separate: Added 'Combine with Original Column Name' parameter.
+* Data Wrangling: Text Wrangling UI: Preview table showed unnecessary sort icons on column header.
+* Data Wrangling: Text Wrangling: Matched text was not highlighted for Replacing Range of Text option.
+* Data Wrangling: When importing a data right after started the App, the Summary, Table, Chart, and Analytics tab labels were shown in English even if the UI Language was set as Japanese.
+* Data Wrangling: When updating an existing Select Columns step, it didn't allow you to select additional columns.
+
+
+* Chart: After deleting a chart table that included invalid columns, it showed an empty screen.
+* Chart: After duplicating a chart with a chart filter, changes made to the copied chart's filter also applied to the source's chart filter.
+* Chart: Show Detail showed no rows if numeric columns were assigned to Y and Color in Bar chart.
+* Chart: Summarize table failed to render if you added multiple columns to Row and chose "(None)" for the 1st one.
+* Chart/Analytics: Changed the default name for copied charts/analytics to have "-x" suffix where x is a number to make the name unique.
+
+
+* Analytics: ARIMA: In the Summary tab, Repeat-By column wrongly showed up twice.
+* Analytics: Cox Regression: P-values and coerricients are now displayed in the hover popups.
+* Analytics: R squared and RMSE are now added to the Summary table of "GLM - Gaussian" Analytics View.
+* Analytics: When creating an analytics from the Summary View, the spin icon disappeared in the middle of the transition from Summary View to Analytics View.
+* Analytics: XGBoost: In some cases, multiclass classification threw the error "SoftmaxMultiClassObj: label must be in [0, num_class).".
+
+
+* Note: Publish Dialog got closed when clicking outside of the dialog where it should stay opened.
+* Note/Slide/Dashboard: When importing a Note/Slide/Dashboard EDF file, it should open it in a separate window.
+
+
+* Parameter: In some cases, when publishing an Insight, Parquet file necessary for Parameter was lacking in the uploaded EDF file, which caused an error when using the Parameter on the Server.
+
+
+* Project: Improved the error message when it failed to open a project due to Rserve start failure.
+* Project: On Windows, exporting a project failed if the exploratory repository was on a network drive.
+* Project: When deleting a project from project list, it didn't show a spin icon.
+
+
+* General: While exporting a Dashboard as an EDF file, it didn't show a spin icon.
+* General: Windows: Supported Windows-1251 as System Encoding.
+
+
 ## 6.3.4
 
 Released on 12/30/2020.
