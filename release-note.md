@@ -15,13 +15,13 @@ Released on 1/26/2021.
 * Summary View: Now you can create Anova, Wilcoxon and T Test from the Correlation view. 
 
 
-* Data Wrangling: Tokenize Text: Now you can sort result by 'Document ID'.
+* Data Wrangling: Tokenize Text: Now you can sort results by 'Document ID'.
 * Data Wrangling: Introduced a new UI for Time Series Clustering.
 
 
 * Chart: Now you can add vertical reference lines in Bar chart.
 * Chart: Summarize Table: Table: Now you can customize column header styles. 
-* Chart: Now you can disable using unit abbreviations such as "k" or "M" on chart axis by "Shorten Numbers" option in Chart Property dialog.
+* Chart: Now you can disable using unit abbreviations such as "k" or "M" on the chart axis by the "Shorten Numbers" option in the Chart Property dialog.
 
 
 * Analytics: Time Series Forecast Analytics View with Prophet now supports quarterly and monthly seasonality.
@@ -32,7 +32,7 @@ Released on 1/26/2021.
 ### Bug Fixes
 
 
-* Data Source: Added "Optional" label for optional parameter to make it obvious
+* Data Source: Added "Optional" label for an optional parameter to make it obvious.
 * Data Source: Removed old MS SQL Server (DSN) option from the Data Source selection dialog.
 * Data Source: When trying to add a Teradata connection, UI became empty and hung.
 
@@ -43,13 +43,13 @@ Released on 1/26/2021.
 
 
 * Data Wrangling: _tam_isDataFrame function, which is an internal function of Exploratory, was included in exported R script for web scraping, CSV, etc., which made the exported script hard to run outside of Exploratory.
-* Data Wrangling: Filter: On a Filter step, changing the logical operator showed incorrect "Condition is empty, Do you want to delete" message.
+* Data Wrangling: Filter: On a Filter step, changing the logical operator showed an incorrect "Condition is empty, Do you want to delete" message.
 * Data Wrangling: For local file data sources, now it shows the file full path when hovering over the source step.
 * Data Wrangling: Remote File Data Source: When hitting the Tab key inside the URL field, it should not run preview.
 * Data Wrangling: Separate: Added 'Combine with Original Column Name' parameter.
-* Data Wrangling: Text Wrangling UI: Preview table showed unnecessary sort icons on column header.
+* Data Wrangling: Text Wrangling UI: Preview table showed unnecessary sort icons on the column header.
 * Data Wrangling: Text Wrangling: Matched text was not highlighted for Replacing Range of Text option.
-* Data Wrangling: When importing a data right after started the App, the Summary, Table, Chart, and Analytics tab labels were shown in English even if the UI Language was set as Japanese.
+* Data Wrangling: When importing data right after started the App, the Summary, Table, Chart, and Analytics tab labels were shown in English even if the UI Language was set as Japanese.
 * Data Wrangling: When updating an existing Select Columns step, it didn't allow you to select additional columns.
 
 
@@ -61,22 +61,22 @@ Released on 1/26/2021.
 
 
 * Analytics: ARIMA: In the Summary tab, Repeat-By column wrongly showed up twice.
-* Analytics: Cox Regression: P-values and coerricients are now displayed in the hover popups.
+* Analytics: Cox Regression: P-values and coefficients are now displayed in the hover popups.
 * Analytics: R squared and RMSE are now added to the Summary table of "GLM - Gaussian" Analytics View.
 * Analytics: When creating an analytics from the Summary View, the spin icon disappeared in the middle of the transition from Summary View to Analytics View.
 * Analytics: XGBoost: In some cases, multiclass classification threw the error "SoftmaxMultiClassObj: label must be in [0, num_class).".
 
 
-* Note: Publish Dialog got closed when clicking outside of the dialog where it should stay opened.
+* Note: Publish Dialog got closed when clicking outside of the dialog where it should stay open.
 * Note/Slide/Dashboard: When importing a Note/Slide/Dashboard EDF file, it should open it in a separate window.
 
 
-* Parameter: In some cases, when publishing an Insight, Parquet file necessary for Parameter was lacking in the uploaded EDF file, which caused an error when using the Parameter on the Server.
+* Parameter: In some cases, when publishing an Insight, a parquet file necessary for Parameter was lacking in the uploaded EDF file, which caused an error when using the Parameter on the Server.
 
 
 * Project: Improved the error message when it failed to open a project due to Rserve start failure.
 * Project: On Windows, exporting a project failed if the exploratory repository was on a network drive.
-* Project: When deleting a project from project list, it didn't show a spin icon.
+* Project: When deleting a project from the project list, it didn't show a spin icon.
 
 
 * General: While exporting a Dashboard as an EDF file, it didn't show a spin icon.
