@@ -4,7 +4,7 @@ You can quickly import data from your MySQL Database into Exploratory.
 
 ## 1. Create a Connection to use
 
-Create a connection following [this instruction](connection.html).
+Create a connection following [this instruction](https://docs.exploratory.io/data_import/database-data/connection).
 
 * Whether the connection is SSL or not is automatically detected.
 

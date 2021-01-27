@@ -6,7 +6,7 @@ Here is a [blog post](https://blog.exploratory.io/exploratory-data-analysis-for-
 
 ## 1. Create a Connection to use
 
-Create a connection following [this instruction](connection.html).
+Create a connection following [this instruction](https://docs.exploratory.io/data_import/database-data/connection).
 
 
 ## 2. Open Redshift Import dialog
