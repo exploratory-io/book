@@ -10,7 +10,7 @@ Make sure you added your client PC's IP address to your DB Security Group associ
 
 ## 2. Create a Connection to use
 
-Create a connection following [this instruction](connection.html).
+Create a connection following [this instruction](https://docs.exploratory.io/data_import/database-data/connection).
 
 * Whether the connection is SSL or not is automatically detected.
 

@@ -4,7 +4,7 @@ You can quickly import data from your Neo4j Database into Exploratory.
 
 ## 1. Create a Connection to use
 
-Create a connection following [this instruction](connection.html).
+Create a connection following [this instruction](https://docs.exploratory.io/data_import/database-data/connection).
 
 ## 2. Open Neo4j  Import dialog
 
