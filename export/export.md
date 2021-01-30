@@ -50,7 +50,7 @@ You can export your data to an EDF (Exploratory Data Format) file. This EDF file
 
 #### Export Data to Clipboard
 
-You can export your data to the Clipboard.
+You can export your data to the Clipboard. The max data size that you can copy to the Clipboard depends on the amount of memory available on the machine for both Windows and Mac. The copied contents may be chopped in the middle if the available memory is not enough.
 
 #### Export Data as Google Sheets
 
@@ -108,4 +108,5 @@ You can export your Pivot Table to a JSON file. You can choose one of the format
 * Values
 
 #### Export Pivot Table to Clipboard
-You can export your Pivot Table to the Clipboard.
+
+You can export your Pivot Table to the Clipboard. The max data size that you can copy to the Clipboard depends on the amount of memory available on the machine for both Windows and Mac. The copied contents may be chopped in the middle if the available memory is not enough.
