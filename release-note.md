@@ -12,7 +12,7 @@ Released on 2/4/2021.
 * Data Wrangling: Create Bin: Now you can manually set labels for the Equal Length and Equal Frequency cases inside the dialog.
 
 
-* Chart: Now you can change the max number of columns to show in Table.
+* Chart: Table: Now you can change the max number of columns to show.
 
 
 * Dashboard: Now you can resize Dashboard width and height by drag and drop.
@@ -29,7 +29,6 @@ Released on 2/4/2021.
 
 
 * Chart: Table: Column Selection dialog disappeared when the chart was pinned to a step that had no rows and selected a column from the list.
-* Chart: Table: Now you can edit a column in the Selected Column area even if there are more than 300 columns.
 * Chart: Histogram failed to render and showed an error "Problem with summarize()" if Limit was set on Color.
 * Chart: It shouldn't create categories on number values on X-Axis if the number of unique values is not too many when you switch the chart type from Scatter to Bar.
 * Chart: Line chart failed to render and showed an error “q is not a function”.
