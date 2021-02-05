@@ -18,6 +18,8 @@ Released on 2/4/2021.
 * Dashboard: Now you can resize Dashboard width and height by drag and drop.
 
 
+* General: Account login and publishing insights from behind HTTPS proxy is supported on Windows.
+
 
 ### Bug Fixes
 
@@ -39,8 +41,8 @@ Released on 2/4/2021.
 
 
 * Analytics: "GLM - Gamma" Analytics failed and showed an error "no valid set of coefficients has been found".
-* Analytics: ARIMA: Auto correlation with lag 0 was shown in the ACF chart.
-* Analytics: ARIMA: Negative ACF values were not plotted in the ACF chart.
+* Analytics: ARIMA: Auto correlation with lag 0 was shown in the ACF bar chart.
+* Analytics: ARIMA: Bars for negative ACF values were not shown in the ACF bar chart.
 * Analytics: Cox Regression: At the Data tab, you couldn't select the "All" option from the "Rows" drop-down in the toolbar.
 * Analytics: Sample size should be configurable at the Analytics control pane.
 
@@ -50,8 +52,8 @@ Released on 2/4/2021.
 * Dashboard: Unnecessary Dashboard refresh was performed if you clicked the information ("i") icon in the toolbar.
 
 
-* Parameter: Error "type 26 is not implemented" raised when the parameter was used in Custom R Data Source.
-* Parameter: When opening a parameter pane, it didn't show a spin icon while loading list of values.
+* Parameter: Error "type 26 is not implemented" was raised when the parameter was used in a Data Source Step.
+* Parameter: When opening a parameter pane, it didn't show a spin icon while loading the list of values.
 
 
 * Project: Could not enter an URL for Public Project Import UI.
