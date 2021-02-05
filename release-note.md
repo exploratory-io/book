@@ -7,17 +7,9 @@ Released on 2/4/2021.
 ### Enhancements
 
 * Data Source:  SAS/SPSS/STATA: Now you can choose an encoding for the file on the import dialog.
-
-
 * Data Wrangling: Create Bin: Now you can manually set labels for the Equal Length and Equal Frequency cases inside the dialog.
-
-
 * Chart: Table: Now you can change the max number of columns to show.
-
-
 * Dashboard: Now you can resize Dashboard width and height by drag and drop.
-
-
 * General: Account login and publishing insights from behind HTTPS proxy is supported on Windows.
 
 
