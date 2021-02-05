@@ -15,42 +15,39 @@ Released on 2/4/2021.
 * Chart: Now you can change the max number of columns to show in Table.
 
 
-* Dashboard: Support resizing Dashboard width and height by drag and drop.
+* Dashboard: Now you can resize Dashboard width and height by drag and drop.
 
 
 
 ### Bug Fixes
 
 * Data Source: Connection Test failed with "type 26 is not implemented" error for Teradata connection.
-* Data Source:  MariaDB(MySQL): Changed the label from 'MySQL' to 'MariaDB (MySQL)' since it supports both MariaDB and MySQL.
 
 
-* Data Wrangling: Improved the error message when it failed to load cached data files.
 * Data Wrangling: Not all rows were copied to the clipboard when exporting data to the clipboard on Windows.
-* Data Wrangling: Prediction with Model: the Analytics (Model) list of values didn't show placeholder text.
-* Data Wrangling: Filter: When a character parameter is used along with the 'Ignore Case' filter option, an empty string was not detected with the filter.
+* Data Wrangling: Filter: When a character parameter was used along with the 'Ignore Case' filter option, an empty string was not detected with the filter.
 
 
-* Chart: Chart Table: Column Selection dialog disappeared when the chart is pinned to a step that has no rows and selecting a column from it.
-* Chart: Chart table: Now you can edit a column in the Selected Column area even if there are more than 300 columns.
+* Chart: Table: Column Selection dialog disappeared when the chart was pinned to a step that had no rows and selected a column from the list.
+* Chart: Table: Now you can edit a column in the Selected Column area even if there are more than 300 columns.
 * Chart: Histogram failed to render and showed an error "Problem with summarize()" if Limit was set on Color.
 * Chart: It shouldn't create categories on number values on X-Axis if the number of unique values is not too many when you switch the chart type from Scatter to Bar.
 * Chart: Line chart failed to render and showed an error “q is not a function”.
-* Chart: Pivot Table didn't show Value cells property if the column for measures contained ',' in the value.
+* Chart: Pivot Table didn't show Value cells property if the column for the Value contained ',' in the value.
 * Chart: Summarize Table failed to render and showed an error “Cannot read property 'url' of null” when a column at Row was removed.
 * Chart: Summarize Table: "Hide" menu was missing for columns at Row in Summarize Table.
-* Chart/Analytics: When selecting multiple columns, the preview table didn't show preview results when the previous R process was still running.
+* Chart/Analytics: In the multiple columns selection dialog, the preview table didn't show preview results once in a while because the previous R process was still running.
 
 
 * Analytics: "GLM - Gamma" Analytics failed and showed an error "no valid set of coefficients has been found".
 * Analytics: ARIMA: Auto correlation with lag 0 was shown in the ACF chart.
 * Analytics: ARIMA: Negative ACF values were not plotted in the ACF chart.
 * Analytics: Cox Regression: At the Data tab, you couldn't select the "All" option from the "Rows" drop-down in the toolbar.
-* Analytics: Sample size should be configurable at the Analytics control panel.
+* Analytics: Sample size should be configurable at the Analytics control pane.
 
 
 * Dashboard: After resizing a dashboard window, clicking an URL in a table inside the dashboard opened another Exploratory Desktop window where it should open a browser.
-* Dashboard: Note: Slides: Wordcloud didn't refresh even you updated parameters on the browser in the published Dashboard.
+* Dashboard/Note/Slides: Wordcloud didn't refresh even if you updated parameters on the browser in the published Dashboard, Note and Slides.
 * Dashboard: Unnecessary Dashboard refresh was performed if you clicked the information ("i") icon in the toolbar.
 
 
@@ -61,8 +58,7 @@ Released on 2/4/2021.
 * Project: Could not enter an URL for Public Project Import UI.
 
 
-* General: Even after setting correct proxy info, re-login still failed until restarting Exploratory
-* General: Improved the error message when it detects an installation to an old not supported macOS.
+* General: Even after setting correct proxy info, re-login still failed until restarting Exploratory.
 
 
 ## 6.4.0
