@@ -173,3 +173,7 @@ Logical
 * Is FALSE
 * Is NA
 * Not NA
+
+### None
+
+Do nothing. 
