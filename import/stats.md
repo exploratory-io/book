@@ -26,7 +26,7 @@ if you select remote, small dialog shows up so enter a URL for the file. And sel
 
 ## 3. Input parameters
 
-There is no parameter on the import dialog.
+- Encoding (Optional) : The character encoding used for the data file.
 
 ![](images/import-stats-dialog.png)
 
