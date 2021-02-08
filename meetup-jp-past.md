@@ -1,3 +1,71 @@
+# #17 - 2021/2/5(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/v0ygrrff2a9x4fj/Exploratory-v64-Introduction-jp.001.jpeg?raw=1" width="100%" />
+
+## 開催要項
+
+* 日時: 2021年 2月 5日 (金) 18:00〜19:30（17:50開場）
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.4のご紹介 （Exploratory CEO 西田勘一郎）
+* NPSを使った従業員アンケートデータの分析 （株式会社オズビジョン 松田 光憲様）
+* 車両走行データの時系列クラスタリング（スズキ株式会社 千明 将人様）
+* RFM分析による効率的な顧客セグメンテーション （株式会社タカオカメガ 十二 義雄様）
+* Data Informed な健康経営（サンホシスコ 中尾 智様）
+
+## Exploratory 西田勘一郎
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/Rzc2gVudCQc?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="493a485e2edf4ff4a09cd1832417682c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 株式会社オズビジョン松田 光憲様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/IKEsGIWpWTE?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="a8df5b83b6474c4288ac141479d2cfa6" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## スズキ株式会社 千明 将人様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/H5zUgI90RyQ?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="ea634e68ed7341e5a6f29e1d26ef3339" data-ratio="1.77469670710572" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 株式会社タカオカメガ 十二 義雄様
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="890e92b98b1e427eabaff7d240c7de78" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
+
+## サンホシスコ 中尾 智様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/MhdqmwaCPb4?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="35e8bac9f7194bcba73f130256c5e087" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+---
+
 # #16 - 2020/12/4(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/e7qrtsj0uxjz8gm/1-kan.png?raw=1" width="100%" />
