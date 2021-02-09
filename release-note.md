@@ -26,7 +26,7 @@ Released on 2/8/2021.
 
 * Dashboard: Dashboard didn't show in the same layout (height/width) configuration as it used to show in the previous desktop version even no row/column resize was made. 
 * Dashboard: Resizing a dashboard row height by drag and drop was not smooth and difficult to set desired height.
-* Dashboard: Row height/ratio is different between design mode and run mode.
+* Dashboard: Dashboard row height/ratio was different between the design mode and the preview mode.
 
 
 * Installation: Mac: Removed HTTPS option from Proxy Setup UI since Mac does not support HTTPS for proxy.
