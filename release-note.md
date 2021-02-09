@@ -1,5 +1,42 @@
 # Release Note
 
+## 6.4.2
+
+Released on 2/8/2021.
+
+### Bug Fixes
+
+* Data Source: Data Source Extension dialog now has the 'Details' button from where you can open each Data Source Extension's help page in a browser.
+
+
+* Summary: Highlight Mode: Made the column selection widget style consistent with that of Correlation mode.
+
+
+* Data Wrangling: Create Bin: The 'Column to Categorize' field was not shown.
+* Data Wrangling: Text Data Wrangling UI: When the dialog was opened, the sort icon on the preview table was not shown for the Count column.
+
+
+* Chart: Exported CSV data was separated by "|||" in Summarized Table and Pivot Table. 
+* Chart: If I used a custom calculation, it didn't multiply values by 100 even if I chose 'percentage' for the number formatting.
+* Chart: Now you can choose "None" for the bucketing type at Color to disable the color bucketing in "Map - Stanard", "Map - Extension", "Map - Long/Lat" and "Bubble" charts.
+
+
+* Analytics: Data tab failed to render and showed an error "Cannot read property '0' of undefined".
+
+
+* Dashboard: Dashboard didn't show in the same layout (height/width) configuration as it used to show in the previous desktop version even no row/column resize was made. 
+* Dashboard: Resizing a dashboard row height by drag and drop was not smooth and difficult to set desired height.
+* Dashboard: Row height/ratio is different between design mode and run mode.
+
+
+* Installation: Mac: Removed HTTPS option from Proxy Setup UI since Mac does not support HTTPS for proxy.
+
+
+* General: Windows: When making the window full size, it showed an empty screen for some occasions.
+* General: With the existing proxy setup, remote file data source and web scraping did not work after upgrading to 6.4.1.
+
+
+
 ## 6.4.1
 
 Released on 2/4/2021.
