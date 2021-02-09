@@ -1,34 +1,23 @@
-
-# Exploratory Data Analysis Part 1 - Understanding Variation in Data
-## Date/Time: 2021/1/20 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+# Exploratory v6.4 Introduction
+## Date/Time: 2021/2/10 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-This is a part of the Exploratory Data Analysis Workshop. We'll start by introducing some of the effective methods to understand data variation.
+Kan is going to present the newly released Exploratory v6.4's new features and enhancements.
 
-* Data Distribution and Variation
-* Summary Metrics
-* Introduction to Highlight
+Exploratory v6.4 New Feature Highlights:
 
-
-----
-
-# Exploratory Data Analysis Part 2 - Correlation and Association
-## Date/Time: 2021/1/27 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-This is a part of the Exploratory Data Analysis Workshop. In this episode, we'll talk about the correlation and association between variables and introduce some effective methods to investigate such relationships.
-
-* Correlation / Association
-* Kruskal-Wallis Test
-* Linear Regression
-
+Dashboard - Drag & Drop to Resize
+Time Series Data Clustering
+Time Series Forecasting (Prophet) - Quarterly / Monthly Seasonality
+Snowflake Data Source Support
+Improvements on ODBC Data Source
+Chart: Rename on Y-Axis Column Names
 
 ----
 
 # Exploratory Data Analysis Part 3 - What makes a difference between the two
-## Date/Time: 2021/2/10 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+## Date/Time: 2021/2/17 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
@@ -38,6 +27,5 @@ This is a part of the Exploratory Data Analysis Workshop. In this episode, we'll
 * Error Bar
 * Chi-Square Test
 * Logistic Regression
-
 
 ----
