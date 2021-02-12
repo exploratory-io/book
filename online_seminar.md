@@ -1,21 +1,3 @@
-# Exploratory v6.4 Introduction
-## Date/Time: 2021/2/10 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-Kan is going to present the newly released Exploratory v6.4's new features and enhancements.
-
-Exploratory v6.4 New Feature Highlights:
-
-Dashboard - Drag & Drop to Resize
-Time Series Data Clustering
-Time Series Forecasting (Prophet) - Quarterly / Monthly Seasonality
-Snowflake Data Source Support
-Improvements on ODBC Data Source
-Chart: Rename on Y-Axis Column Names
-
-----
-
 # Exploratory Data Analysis Part 3 - What makes a difference between the two
 ## Date/Time: 2021/2/17 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
@@ -27,5 +9,39 @@ This is a part of the Exploratory Data Analysis Workshop. In this episode, we'll
 * Error Bar
 * Chi-Square Test
 * Logistic Regression
+
+----
+
+# How to Start Exploratory for Excel Users Part 1
+## Date/Time: 2021/2/24 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+There are so many things you can do with Exploratory and they are much more capable and flexible than Excel. But, there are a few things you want to know before you get started so that you can fully take advantage of them and be much more productive with your data analysis.
+
+This is a part 1 of this series.
+
+* Convert Data Type
+* Create Calculations 
+* Filter
+* Summarize / Aggregate
+* Join Columns
+* Replace Values
+
+----
+
+# How to Start Exploratory for Excel Users Part 2
+## Date/Time: 2021/3/3 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+There are so many things you can do with Exploratory and they are much more capable and flexible than Excel. But, there are a few things you want to know before you get started so that you can fully take advantage of them and be much more productive with your data analysis.
+
+This is a part 2 of this series.
+
+* If Else
+* Merge Rows
+* Transform Wide Data to Long Data
+* Text Data Wrangling
 
 ----
