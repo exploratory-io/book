@@ -1,5 +1,58 @@
 # Release Note
 
+## 6.4.3
+
+Released on 2/14/2021.
+
+### Enhancements
+
+
+* Chart: Now the "CSV" Download option is available when you publish a Chart or Analytics. If you check this option, you can download the data used for Chart/Analytics in the CSV format from the published Chart/Analytics insight page on the server.
+* Chart: If the "# of Columns" was set to 1 or 2 with Repeat By, the height of the chart is now set to the window height, which will make it easier to see the charts when there are multiples.
+* Chart: Table: It now supports 'Apply' button so that you can setup the formatting and see the result in preview without closing the setup dialog itself.
+
+
+* Analytics: Added a checkbox to enable/disable data sampling for the prediction models under Analytics Views.
+* Analytics: ARIMA: The hover popup on the line chart in the Stationarity tab now shows how many differentiations and/or seasonal differentiations were applied on the original data to get the displayed differentiated data, which the stationarity test is performed on.
+* Analytics: Time Series Cluster: The default algorithms were changed to 'DTW with L2 Norm' and 'DTW barycenter averaging' to make it more robust for various type of data. They used to be 'Soft-DTW' and 'Soft-DTW center' respectively, which could throw an error like "gradient of objective in x0 returns NA" when a given data includes an outlier time series.
+* Analytics: Random Forest / Decision Tree: Prediction with a binary classification model under Analytics View now returns the original target column as Logical data type rather than Factor data type under the Data tab.
+
+
+* Data Wrangling: Summarize Dialog: Now the column names of the result do not have an aggregate function as suffix unless the same column used multiple times.
+
+
+* Data Source: Improved Teradata Data Source for the performance and multibyte characters handling.
+
+
+* Dashboard: When you change the page height with 'Set Height' mode, now it adjusts the height only of the bottom row and keeps heights of other rows as original.
+* Dashboard: Now it dynamically shows the current row height and column width while adjusting them by drag and drop.
+
+
+### Bug Fixes
+
+* Data Wrangling: Moved 'Keep Only' menu to under 'Filter' of the column header menu when multiple columns are selected.
+* Data Wrangling: Number of rows was shown as 0 when directly opening a chart view of a branch data frame.
+* Data Wrangling: 'Predict with Model (Analytics)' Dialog: The order of model pull-down list items did not match with the order of the tabs under Analytics View.
+* Data Wrangling: When you duplicate a data frame and give a conflict name that is used by another data frame, an incorrect '[Object object]' error message was shown.
+
+
+* Chart: Chart Table: When trying to remove a column that didn't exist anymore, the Column Selection UI hung.
+* Chart: Density Plot chart failed to render with an error when an assigned column's values are mostly NA.
+* Chart: 'Show Details' didn't open if the chart had a chart filter with the 'Last N Months' condition for a POSIXct column.
+* Chart: The Custom Calculation dialog didn't validate the expression even if the expression didn't aggregate the data and returned more than one row.
+
+
+* Note: If you opened a Note with a Pivot Table created in an older version of the desktop without opening it in the Chart view, it showed the '|||' sign in the Value cells.
+
+
+* Parameter: At the publishing of insight, now we do a validation check on whether the Data Frames referenced from Parameters for list-of-values or range actually still exists. This will prevent the scheduler from trying to load non-existent parquet/rds files and ending up throwing an error.
+
+
+* Installation: Setting up the proxy configuration during installation caused the installation process to hang.
+* General: When the 'request offline license key' button was clicked, there was no way to see the required information if the PC did not have a mail client setup.
+* General: Clicking on the sort icon of the 'Updated' column on the Project List page did not sort the project names correctly when the system locale is set to a Russian locale on Windows PC.
+
+
 ## 6.4.2
 
 Released on 2/8/2021.
