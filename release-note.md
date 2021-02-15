@@ -1,5 +1,55 @@
 # Release Note
 
+## 6.4.3
+
+Released on 2/14/2021.
+
+### Enhancements
+
+
+* Chart: Now the "CSV" Download option is available when you publish a Chart or Analytics. If you check this option, you can download the data used for Chart/Analytics in the CSV format from the published Chart/Analytics insight page on the server. 
+
+
+### Bug Fixes
+
+* Data Source: Improved Teradata Data Source by switching the R package used under the hood.
+
+
+* Data Wrangling: Changed the multi-column menu label 'Keep Only' to 'Filter' to make it consistent with the single column menu label.
+* Data Wrangling: Number of rows was shown as 0 when opening a branch dataframe whose previously selected view was Chart View.
+* Data Wrangling: Predict with Model UI: The order of model pull-down list items did not match with the Analytics View Tab order.
+* Data Wrangling: Summarize Dialog: Now resulting column names do not have an aggregate function as suffix as long as the column names do not conflict with each other.
+* Data Wrangling: When duplicating a dataframe and the new name conflicts with others, an incorrect '[Object object]' error message was shown.
+
+
+* Chart: Chart Table: When trying to remove a column that didn't exist anymore, the Column Selection UI hung.
+* Chart: Densityplot failed to render with “need at least 2 points to select a bandwidth automatically” error.
+* Chart: Show Details failed if the chart had a chart filter with the 'Last N Months' condition for a POSIXct column.
+* Chart: Table: If you selected "Set Colors" at Visual Formatting, the Column Formatting dialog immediately closed.
+* Chart: The Custom Calculation dialog didn't validate the expression even if the expression didn't aggregate the data and returned more than one row. 
+* Chart: If the "# of Columns" was set 1 in the chart toolbar, the height of the chart subplot got too tall to fit in the chart view area. 
+
+
+* Analytics: Checkboxes to enable/disable sampling of data for Analytics Views are added.
+* Analytics: ARIMA: The hover popup on the line chart in the Stationarity tab now shows how many differentiations and/or seasonal differentiations were applied on the original data to get the displayed differentiated data, which the stationarity test is performed on.
+* Analytics: Time Series Cluster: The default algorithms were changed to DTW with L2 norm and DTW barycenter averaging, from Soft-DTW and Soft-DTW center, which could throw an error like "gradient of objective in x0 returns NA" with a data that includes an outlier time series, for more stability for exploratory data analysis.
+* Analytics: XGBoost Step: Improved error message that is displayed when the input column names need to be cleaned up so that what can be actually done is more clear.
+* Analytics: Random Forest / Decision Tree: Prediction with a binary classification model created by Analytics View was returning the prediction result as a factor with levels of "TRUE" and "FALSE". Now we simply return logical data type instead.
+
+
+* Note: If you opened a Note with a Pivot Table created in an older version of the desktop without opening it in the Chart view, it showed the '|||' sign in the Value cells. 
+* Dashboard: With Set Height mode, when the page height is changed, now it adjusts the increased (or decreased) height at the bottom row and keeps heights of other rows as they are.
+* Dashboard: Now it dynamically displays the current row height while changing the row height by drag and drop.
+
+
+* Parameter: At the publishing of insight, now we do a sanity check on whether the Data Frames referenced from Parameters for list-of-values or range actually still exists. This will prevent errors that would happen when the insight is run as a scheduled job on the server, for example, from trying to load non-existent parquet/rds files.
+
+
+* Installation: Setting up the proxy configuration during installation caused the installation process to hang.
+* General: When the 'request offline license key' button was clicked, there was no way to see the required information if the PC did not have a mail client setup.
+* General: Sorting the project list by 'Updated' column did not work on Russian locale Windows PC.
+
+
 ## 6.4.2
 
 Released on 2/8/2021.
