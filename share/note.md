@@ -16,6 +16,7 @@ It opens up the dialog. You can set the followings.
 
 
 Click the "Publish" button to publish it. 
+
 ![](images/note-publish2.png)
 
 You can republish or stop publishing by the buttons at the bottom of the dialog once you publish it. 
