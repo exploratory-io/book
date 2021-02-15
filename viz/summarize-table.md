@@ -21,6 +21,21 @@ You can choose what type of totals you want to show in the Summarize Table. The 
 ![](images/stable4.png)
 
 
+## How to Change the Aggregation Function for Total
+
+The default aggregation function for Totals and Subtotals depends on the aggregation function that you use for the Value calculation. 
+
+You can change the Totals/Subtotals aggregation function from the "Total" menu of each Value column. 
+
+
+![](images/stable6.png)
+
+It opens up the Total Setting dialog. You can hange the aggregation function for totals and subtotals from the dropdown menu.  
+
+
+![](images/stable7.png)
+
+
 ## Formatting Columns
 
 You can format each Row Header and Value column. You can access the Column Format dialog by selecting "Format" menu in the column menu next to the column name dropdown. See 
