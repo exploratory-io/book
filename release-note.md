@@ -6,6 +6,9 @@ Released on 2/15/2021.
 
 ### Bug Fixes
 
+* Data Wrangling: Filter: For the 'Last N Months' operator for POSIXct column, changed to use as_date function instead of as.Date function to make sure the correct timezone is used.
+
+
 * Chart: Bar chart failed to render and showed an error "Assertion failed" if you left the "Value" field empty and hit the "Apply" button in the Logical Condition dialog.
 * Chart: After removing the Chart Pin, selecting a different data wrangling step didn't refresh the chart.
 
@@ -14,6 +17,10 @@ Released on 2/15/2021.
 
 
 * Dashboard: When opening a dashboard created with the previous version on Set Height mode, it didn't honor the previously set row height.
+* Dashboard: Scrollbars showed up in Number charts once in a while in the Preview mode. 
+
+
+
 
 
 
