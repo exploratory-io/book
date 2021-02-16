@@ -20,10 +20,6 @@ Released on 2/15/2021.
 * Dashboard: Scrollbars showed up in Number charts once in a while in the Preview mode. 
 
 
-
-
-
-
 ## 6.4.3
 
 Released on 2/14/2021.
