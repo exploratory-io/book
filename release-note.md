@@ -1,5 +1,22 @@
 # Release Note
 
+## 6.4.4
+
+Released on 2/15/2021.
+
+### Bug Fixes
+
+* Chart: Bar chart failed to render and showed an error "Assertion failed" if you left the "Value" field empty and hit the "Apply" button in the Logical Condition dialog.
+* Chart: After removing a chart pin, selecting a different data wrangling step didn't refresh the chart.
+
+
+* Analytics: Time Series Clustering: Since the random seed was not set, the result changed for each run. Now you can specify the random seed on the dialog.
+
+
+* Dashboard: When opening a dashboard created with the previous version on Set Height mode, it didn't honor the previously set row height.
+
+
+
 ## 6.4.3
 
 Released on 2/14/2021.
