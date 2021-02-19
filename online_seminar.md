@@ -1,17 +1,3 @@
-# Exploratory Data Analysis Part 3 - What makes a difference between the two
-## Date/Time: 2021/2/17 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-This is a part of the Exploratory Data Analysis Workshop. In this episode, we'll get into how we can find what makes a difference between two groups so that, for example, we can answer questions like "what makes a difference between those who sign up and those who don't."
-
-* Confidence Interval
-* Error Bar
-* Chi-Square Test
-* Logistic Regression
-
-----
-
 # How to Start Exploratory for Excel Users Part 1
 ## Date/Time: 2021/2/24 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
@@ -22,7 +8,7 @@ There are so many things you can do with Exploratory and they are much more capa
 This is a part 1 of this series.
 
 * Convert Data Type
-* Create Calculations 
+* Create Calculations
 * Filter
 * Summarize / Aggregate
 * Join Columns
@@ -43,5 +29,20 @@ This is a part 2 of this series.
 * Merge Rows
 * Transform Wide Data to Long Data
 * Text Data Wrangling
+
+----
+
+# How to use Parameters in Exploratory
+## Date/Time: 2021/3/10 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+The Parameter feature is one of the strong features in Exploratory. It makes your chart, analytics, dashboard, notes, slides, and data interactive in a very flexible way. In this seminar, Kan will introduce the basic and demonstrate on how to use it in the following scenarios. 
+
+* Parameterizing SQL Queries
+* Parameterizing Filters
+* Parameterizing Calculations  
+* Parameterizing Dashboard
 
 ----
