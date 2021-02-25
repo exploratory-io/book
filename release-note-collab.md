@@ -1,5 +1,43 @@
 # Release Note
 
+## 6.4.5.2
+
+Released on 2/25/2021
+
+### Download Links
+
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.4.5.2.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.4.5.2.tar.gz)
+
+### Enhancements
+
+* General: Now you can create a Team, assign members to the Team. Team members can collaboratively publish Insights as a team.
+* Admin: Now it shows Collaboration Server version Info at the bottom of the page.
+* Data Catalog: Now you can highlight a row in Super Table by clicking the row.
+* Insight: Now Collaboration Server Administrator can view the stats for all users from the Collaboration Server Administration page.
+* Insight: Now you can download the CSV data and use CSV API on the Chart and Analytics.
+* Insight: Now you can see the view/usage stats of your Insights from the "Stats" menu in the user dropdown menus. 
+* Parameter: Now you can click the "Download" button in the parameter pane to download the CSV data even if you didn't specify "CSV" download option at the publishing time on Desktop. 
+
+### Bug Fixes
+
+* Admin: On Create User dialog, email validation message was not properly shown when the entered email address was in an incorrect format.
+* Data Catalog: Super Table: When entering search text for a column, rows with NA values were not filtered out.
+* General: "Re-auth" link didn't show up in the OAuth error messages.
+* Insight: Buttons on the navigation area at the top overlapped the title text in the Insight page.
+* Parameter: Analytics published from Exploratory Desktop older than 6.3 raised error when Parameter was turned on, because of lack of cached Analytics result data. With this release, such a case can be handled without resulting in an error.
+* Parameter: Analytics View result was not properly updated when the Parameters it depends on were changed.
+* Parameter: Better error message is shown in case a Data Source step returns a non-data frame object.
+* Parameter: Changing the parameter value didn't make any changes on the Analytics chart after changing the parameter one or two times. 
+* Parameter: In some cases, a duplicated Run button was shown at the bottom of the parameter pane.
+* Parameter: Prediction models created by Analytics View was rebuilt when Parameter was turned on. Now we make use of published cached models to avoid potentially computationally expensive model building.
+* Parameter: With Dashboard, Note, or Slide, turning Parameters on failed with a message "error code 3" if the value for a numeric text field parameter was set to an empty string.
+* Parameter: Word Cloud chart didn't change even if you changed the parameter values. 
+* Schedule: After re-authorizing the OAuth access, it didn't return to the original insight page where you started the re-authorization process.
+* Schedule: The link for re-authorizing the OAuth access didn't show up in the error message if the error was coming from the unauthorized access.
+* Schedule: Fefreshing data for Weather Data did not work.
+
+
 ## 6.3.4.0
 
 Released on 12/30/2020
