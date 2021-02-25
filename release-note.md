@@ -1,5 +1,54 @@
 # Release Note
 
+## 6.4.5
+
+Released on 2/25/2021.
+
+### Enhancements
+
+* Chart: Now you can select the Standard Deviation and IQR for the sort aggregation function in BoxPlot, Violin Plot, and Scatter (With Aggregation).
+* Chart: Now you can set the threshold to show the values on the plot at the 'Show Values if Greater than This Value' option in the Chart property dialog.
+
+
+* Collaboration: Now you can publish Data, Chart, Analytics, Note, Slide, and Dashboard as a team.
+
+### Bug Fixes
+
+* Data Source Extension: After publishing the Weather Data, clicking the 'Run Immediate' button didn't refresh the data.
+
+
+* Data Wrangling: After a data wrangling step error was resolved, the error indicator icon on the data frame was not cleared right away.
+* Data Wrangling: The spin icon disappeared before a new step was completely added to the right-hand side step list.
+* Data Wrangling: Text Wrangling UI: Improved error message when it failed to load large preview data.
+
+
+* Chart: When duplicating a chart, there was a time lag until the chart menu became active when there were many charts.
+
+
+* Analytics: If you ran the Random Forest with 3.600 variable columns, it failed to run and showed an error 'invalid response (expecting SEXP)'. 
+* Analytics: model_info function threw an error 'object <column name> not found' when the column name for the model was other than 'model'.
+
+
+* Note: If you had an HTML script tag for Speaker Deck slides in a published Note, the loading bar kept showing for a long time even if the content was already loaded.
+* Dashboard: After changing a textbox width by drag and drop, the updated text was reverted to the original one.
+* Dashboard: Now you can adjust the width of all charts to be equally distributed in a row by clicking the 'Distribute width evenly' button.
+* Dashboard: Set Height Mode: Adding or deleting a row changed other rows' height unexpectedly.
+* Publish: After republishing a publicly published insight to make it private, a new URL was assigned, where it should keep the original URL.
+
+
+* Parameter: Starting to use Parameter on the Server failed if the Insight had a Parameter that was based on another Data Frame.
+
+
+* Project: On Windows: When exporting a project as a zip file, non-ASCII characters in the project names were removed from the default name.
+
+
+* Installation: On the Proxy setup dialog, the port number input field implies 8080 as the default port, but port 80 was actually used as the default port.
+
+
+* General: On Japanese Windows, when publishing data that include Dame-moji, the table view on the published data didn't show data.
+* General: There was no way to switch server or account when the associated Collaboration Server license has expired or the user is a viewer.
+
+
 ## 6.4.4
 
 Released on 2/15/2021.
