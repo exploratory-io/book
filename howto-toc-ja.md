@@ -80,7 +80,7 @@
 
 * [データラングリング](/howto?q=tag%3A%22Data%20Wrangling%22&language=ja)
     * [計算を作成](/howto?q=tag%3AMutate&language=ja)
-    * [データタイプを変換](/howto?q=tag%3A%22Data%20Type%20Convert%22&language=ja)
+    * [データタイプ](/howto?q=tag%3A%22Data%20Type%22&language=ja)
     * [ステップ](/howto?q=tag%3AStep&language=ja)
     * [集計](/howto?q=tag%3ASummarize&language=ja)
     * [ピボット](/howto?q=tag%3APivot%20tag%3A%22Data%20Wrangling%22&language=ja)
