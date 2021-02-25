@@ -10,6 +10,17 @@ You can show the distribution of the data with "Violin" like shapes. This chart 
 
 * X-Axis - Assign a column you want to show the distribution. The column data should be numeric. 
 * Color By - Assign a column for color. Take a look at [Color](color.md) section for more details.
+* Sort By - Assign a column to use for Sorting the X-Axis values. The default is based on either the alphabetic order or the factor level order for Factor type columns. You can also select which aggreagation function for sorting from the Sort Setting dialog. The following aggregation functions are available.
+  * Sum
+  * Mean (Average)
+  * Median
+  * Min Value
+  * Max Value
+  * First 
+  * Last
+  * Standard Deviation
+  * IQR (Interquartile Range)
+
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
 * Include Outlier - You can uncheck to exclude the outlier values. 
 

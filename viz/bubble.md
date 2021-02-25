@@ -13,6 +13,17 @@ You can show the distribution of the data by circles. It is similar to the Scatt
 * Size - Assign a column you want to apply the size on each bubble. You can assign a number based column only. 
 * Color - Assign a column for color. If you assign a categorical column, it will be also used as a groupby column. Take a look at [Color](color.md) section for more details.
 * Label - Assign a column you want to show in the balloon help that you see when you hover bubbles. 
+* Sort By - Assign a column to use for Sorting the X-Axis values. The default is based on either the alphabetic order or the factor level order for Factor type columns. You can also select which aggreagation function for sorting from the Sort Setting dialog. The following aggregation functions are available.
+  * Sum
+  * Mean (Average)
+  * Median
+  * Min Value
+  * Max Value
+  * First 
+  * Last
+  * Standard Deviation
+  * IQR (Interquartile Range)
+
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
 
 

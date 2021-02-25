@@ -30,7 +30,7 @@
   * 3 Standard Deviation
   * IQR
 * Color - Take a look at [Color](color.md) section for more details.
-* Sort - Assign a column to use for Sorting the X-Axis values. The default is based on either the alphabetic order or the factor level order for Factor type columns.
+* Sort By - Assign a column to use for Sorting the X-Axis values. The default is based on either the alphabetic order or the factor level order for Factor type columns.
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
 * Orientation - You can choose a chart orientation. Either 'Vertical' or 'Horizontal'.
 
