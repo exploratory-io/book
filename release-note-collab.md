@@ -42,11 +42,6 @@ Released on 2/25/2021
 
 Released on 12/30/2020
 
-### Download Links
-
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.3.4.0.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.3.4.0.tar.gz)
-
 ### Bug Fixes
 
 * Analytics: Analytics that have been published with Exploratory Desktop 6.3 or older version raised errors when interacting with them with the Parameters or scheduling them.
