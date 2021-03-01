@@ -75,7 +75,7 @@
     * [Linear Regression](/howto?q=tag%3A%22Linear%20Regression%22&language=en)
     * [Logistic Regression](/howto?q=tag%3A%22Logistic%20Regression%22&language=en)
     * [Survival Analysis](/howto?q=tag%3A%22Survival%20Analysis%22&language=en)
-    * [Decision Tree](/howto?q=tag%3A%22Dicision%20Tree%22&language=en)
+    * [Decision Tree](/howto?q=tag%3A%22Decision%20Tree%22&language=en)
     * [Random Forest](/howto?q=tag%3A%22random%20forest%22&language=en)
     * [Time Series Forecasting (Prophet)](/howto?q=tag%3AProphet&language=en)
     * [Anomaly Detection](/howto?q=tag%3AAnomaly&language=en)
