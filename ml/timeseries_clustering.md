@@ -37,10 +37,10 @@ Input data should be a time series data with category. Each row should represent
     * Fill with 0
     * Linear Interpolation
     * Spline Interpolation
-  * NA Fill Type Beginning - How to fill NAs that appear before the first non-NA value in a time series.
+  * NA Fill Type - Beginning - How to fill NAs that appear before the first non-NA value in a time series.
     * Fill with 0
     * Fill with First Non-NA Value
-  * NA Fill Type Ending - How to fill NAs that appear after the last non-NA value in a time series.
+  * NA Fill Type - Ending - How to fill NAs that appear after the last non-NA value in a time series.
     * Fill with 0
     * Fill with Last Non-NA Value
   * Max Category NA Ratio - If the time series data for a category has more NAs than this ratio, the category is removed from the data before the clustering is performed.
