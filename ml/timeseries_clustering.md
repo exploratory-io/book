@@ -8,7 +8,7 @@ Input data should be a time series data with category. Each row should represent
 
   * Category Column - A categorical (character or factor) column. The categories specified here are clustered into groups.
   * Date/Time Column - A Date or POSIXct column to indicate when the observations took place.
-  * Value Column - A column that stores observed values. Values for multiple rows for one date/time for a category are internally aggregated into one value by the specified aggregation function to form a time series for the category to be clustered.
+  * Value Column (Optional) - A column that stores observed values. Values for multiple rows for one date/time for a category are internally aggregated into one value by the specified aggregation function to form a time series for the category to be clustered. If not specified, the number of rows for each date/time is used as the time series to cluster.
   * Other Columns to Keep (Optional) - Other columns for values to keep in the output data. Values for multiple rows for one date/time for a category are internally aggregated into one value by the specified aggregation function, to be put together in the output.
 
 # Parameters
@@ -21,7 +21,7 @@ Input data should be a time series data with category. Each row should represent
     * DTW Barycenter Averaging
     * Soft DTW Centroids
     * Partition around Medoids
-  * Include Cluster Center Data - If set to TRUE, the output data includes the calculated cluster center time series data for each cluster.
+  * Include Cluster Center Data - If set to TRUE, the output data includes the calculated cluster center time series data (centroid) for each cluster.
   * Distance Method - Method to calculate distance between the cluster center time series (centroid) and each time series for each iteration.
     * DTW
     * DTW with L2 Norm
