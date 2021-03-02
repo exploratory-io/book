@@ -11,7 +11,7 @@ Released on 3/1/2021.
 ### Bug Fixes
 
 * Data Wrangling: Added the 'Replace Values By Setting Conditions' menu to the logical data type column menu.
-* Data Wrangling: Fill NA with Predict (impute_na) raised an error when the first row's value of the first predictor column was 0 or NA
+* Data Wrangling: Fill NA with Predict (impute_na) raised an error when the first row's value of the first predictor column was 0 or NA.
 * Data Wrangling: When closing the Join dialog without selecting Key Columns, it didn't show the Key Column was not set error message.
 
 
