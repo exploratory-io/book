@@ -16,7 +16,7 @@ Released on 3/1/2021.
 
 
 * Chart: No rows showed up in the 'Show Detail' dialog.
-* Chart: Unnecessary '%' signs showed up on the chart plot area once in a while if you set the 'Show Values if Greater than This Value' option in the chart property dialog.
+* Chart: Unnecessary '%' signs showed up on the chart plot area for NA values if you set the 'Show Values if Greater than This Value' option in the chart property dialog.
 * Chart: Values on the chart plot area showed numbers with '%' signs for Y-Axis columns that didn't use any percent values if you used the 'Repeat by Y-Axis Column' feature.
 
 
