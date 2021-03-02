@@ -1,16 +1,41 @@
 # Release Note
 
+## 6.4.6
+
+Released on 3/1/2021.
+
+### Enhancements
+
+* Chart: Long/Lat Map" Now you can split the lines even in the same color by setting a column to the 'Label' and enabling the 'Split lines by Label column' option in the property when the marker is 'Line'.
+
+### Bug Fixes
+
+* Data Wrangling: Added the 'Replace Values By Setting Conditions' menu to the logical data type column header menu.
+* Data Wrangling: Fill NA with Predict (impute_na) raised an error when the first row's value of the first predictor column was 0 or NA.
+* Data Wrangling: Closing the Join dialog without selecting Key Columns created an invalid step.
+
+
+* Chart: No rows showed up in the 'Show Detail' dialog.
+* Chart: Unnecessary '%' signs showed up on the chart plot area for NA values when you set the 'Show Values if Greater than This Value' option in the chart property dialog.
+* Chart: Values on the chart plot area showed the percent numbers with '%' signs for Y-Axis columns when it was not necessary when you used the 'Repeat by Y-Axis Column' feature.
+
+
+* Analytics: Table columns in the Summary tab were not translated (Japanese).
+
+
+* Dashboard: When adding a chart to a row, charts' widths were not proportionally distributed.
+* Dashboard: When adding a chart to an existing dashboard created with the previous version, the added chart's width was not adjusted properly. 
+
+
 ## 6.4.5
 
 Released on 2/25/2021.
 
 ### Enhancements
 
-* Chart: Now you can select the Standard Deviation and IQR for the sort aggregation function in BoxPlot, Violin Plot, and Scatter (With Aggregation).
-* Chart: Now you can set the threshold to show the values on the plot at the 'Show Values if Greater than This Value' option in the Chart property dialog.
-
-
-* Collaboration: Now you can publish Data, Chart, Analytics, Note, Slide, and Dashboard as a team.
+* Chart: Now you can select the Standard Deviation and IQR as one of the sorting metrics in BoxPlot, Violin Plot, and Scatter (With Aggregation).
+* Chart: Now you can set the threshold to show the values on the plot by using the 'Show Values if Greater than This Value' property in the Chart property dialog.
+* Dashboard: Now you can adjust the width of all charts to be equally distributed in a row by clicking the 'Distribute width evenly' button.
 
 ### Bug Fixes
 
@@ -19,20 +44,21 @@ Released on 2/25/2021.
 
 * Data Wrangling: After a data wrangling step error was resolved, the error indicator icon on the data frame was not cleared right away.
 * Data Wrangling: The spin icon disappeared before a new step was completely added to the right-hand side step list.
-* Data Wrangling: Text Wrangling UI: Improved error message when it failed to load large preview data.
+* Data Wrangling: Text Wrangling UI: Improved the error message for when it failed to load a large preview data.
 
 
 * Chart: When duplicating a chart, there was a time lag until the chart menu became active when there were many charts.
 
 
-* Analytics: If you ran the Random Forest with 3.600 variable columns, it failed to run and showed an error 'invalid response (expecting SEXP)'. 
+* Analytics: If you ran the Random Forest with 3.600 variable columns, it failed to run and showed an error 'invalid response (expecting SEXP)'.
 * Analytics: model_info function threw an error 'object <column name> not found' when the column name for the model was other than 'model'.
 
 
 * Note: If you had an HTML script tag for Speaker Deck slides in a published Note, the loading bar kept showing for a long time even if the content was already loaded.
-* Dashboard: After changing a textbox width by drag and drop, the updated text was reverted to the original one.
-* Dashboard: Now you can adjust the width of all charts to be equally distributed in a row by clicking the 'Distribute width evenly' button.
+* Dashboard: After changing the Text Box width by drag and drop, the updated text was reverted to the original one.
 * Dashboard: Set Height Mode: Adding or deleting a row changed other rows' height unexpectedly.
+
+
 * Publish: After republishing a publicly published insight to make it private, a new URL was assigned, where it should keep the original URL.
 
 
@@ -46,7 +72,7 @@ Released on 2/25/2021.
 
 
 * General: On Japanese Windows, when publishing data that include Dame-moji, the table view on the published data didn't show data.
-* General: There was no way to switch server or account when the associated Collaboration Server license has expired or the user is a viewer.
+* General: There was no way to switch server or account when the associated Collaboration Server license had expired or the user was a viewer.
 
 
 ## 6.4.4
@@ -66,7 +92,7 @@ Released on 2/15/2021.
 
 
 * Dashboard: When opening a dashboard created with the previous version on Set Height mode, it didn't honor the previously set row height.
-* Dashboard: Scrollbars showed up in Number charts once in a while in the Preview mode. 
+* Dashboard: Scrollbars showed up in Number charts once in a while in the Preview mode.
 
 
 ## 6.4.3
