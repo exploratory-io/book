@@ -1,5 +1,33 @@
 # Release Note
 
+## 6.4.6
+
+Released on 3/1/2021.
+
+### Enhancements
+
+* Chart: Now you can split lines even in the same color by setting a column to the 'Label' and enabling the 'Split lines by Label column' option in Long/Lat Map.
+
+### Bug Fixes
+
+* Data Wrangling: Added the 'Replace Values By Setting Conditions' menu to the logical data type column menu.
+* Data Wrangling: Fill NA with Predict (impute_na) raised an error when the first row's value of the first predictor column was 0 or NA
+* Data Wrangling: When closing the Join dialog without selecting Key Columns, it didn't show the Key Column was not set error message.
+
+
+* Chart: No rows showed up in the "Show Detail" dialog.
+* Chart: Unnecessary '%' signs showed up on the chart plot area once in a while if you set the 'Show Values if Greater than This Value' option in the chart property dialog.
+* Chart: Values on the chart plot area showed numbers with '%' signs for Y-Axis columns that didn't use any percent values if you used the 'Repeat by Y-Axis Column' feature.
+
+
+* Analytics: Table columns in the Summary tab were not translated.
+
+
+* Dashboard: Chart and Analytics selection dialog: The data frame selection LOV was not shown above the "No Search Result" message.
+* Dashboard: When adding a chart to a row, charts' widths were not proportionally distributed.
+* Dashboard: When adding a chart to an existing dashboard creating with the previous version, the added chart's width was too short.
+
+
 ## 6.4.5
 
 Released on 2/25/2021.
