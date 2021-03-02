@@ -15,7 +15,7 @@ Released on 3/1/2021.
 * Data Wrangling: When closing the Join dialog without selecting Key Columns, it didn't show the Key Column was not set error message.
 
 
-* Chart: No rows showed up in the "Show Detail" dialog.
+* Chart: No rows showed up in the 'Show Detail' dialog.
 * Chart: Unnecessary '%' signs showed up on the chart plot area once in a while if you set the 'Show Values if Greater than This Value' option in the chart property dialog.
 * Chart: Values on the chart plot area showed numbers with '%' signs for Y-Axis columns that didn't use any percent values if you used the 'Repeat by Y-Axis Column' feature.
 
@@ -23,7 +23,7 @@ Released on 3/1/2021.
 * Analytics: Table columns in the Summary tab were not translated.
 
 
-* Dashboard: Chart and Analytics selection dialog: The data frame selection LOV was not shown above the "No Search Result" message.
+* Dashboard: Chart and Analytics selection dialog: The data frame selection LOV was not shown above the 'No Search Result' message.
 * Dashboard: When adding a chart to a row, charts' widths were not proportionally distributed.
 * Dashboard: When adding a chart to an existing dashboard creating with the previous version, the added chart's width was too short.
 
