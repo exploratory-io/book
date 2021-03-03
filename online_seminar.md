@@ -27,10 +27,11 @@ We have compiled a list of reasons why our users have chosen Exploratory over Ex
 
 This is a part 1 of this series.
 
-* Parameterizing SQL Queries
-* Parameterizing Filters
-* Parameterizing Calculations  
-* Parameterizing Dashboard
+* Data Size Limitation
+* Learning Cost
+* Debuggability
+* Data Reproducibility & Automation
+
 
 ----
 
@@ -42,6 +43,11 @@ This is a part 1 of this series.
 We have compiled a list of reasons why our users have chosen Exploratory over Excel for performing data analysis to increase their productivity 100x. In this seminar, Kan will discuss those points along with live demo.
 
 This is a part 2 of this series.
+
+* Specialization with Excel God
+* Lack of Intuitive Understanding
+* Lack of Analytical Capability
+* Reproducibility for Reporting
 
 
 ----
