@@ -1,4 +1,4 @@
-# Seminar #37 - Why Exploratory, not Excel? - Part 1
+# Seminar #37 - Why Excel Users Love Exploratory? - Part 1
 ## Date/Time: 2021/3/10 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
@@ -17,7 +17,7 @@ In this seminar, Kan will be discussing the first 4 topics.
 
 ----
 
-# Seminar #38 - Why Exploratory, not Excel? - Part 2
+# Seminar #38 - Why Excel Users Love Exploratory? - Part 2
 ## Date/Time: 2021/3/17 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
