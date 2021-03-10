@@ -68,6 +68,15 @@ BusinessからPersonalといったダウングレードの場合は、期間（�
 
 macOS Big Surについては、基本操作をテストし、問題なく動作することを確認しております。macOS Big SurでExploratoryを新規インストールする際に、Rのインストールに関して既知の問題が報告されております。こちらの[コミュニティサイト](https://community-ja.exploratory.io/t/topic/391)をご確認ください。
 
+## どのブラウザがサポートされていますか？
+
+Exploratoryデスクトップで作成したダッシュボードやノートはWebブラウザでも開くことができますが、以下のブラウザがサポートされています。
+
+* Chrome
+* Safari
+* Microsoft Edge
+
+Internet Explorerはサポートされていません。
 
 ## インストール時に、MacOSのパスワードを尋ねられますが、どうしてですか？
 
