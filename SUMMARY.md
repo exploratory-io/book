@@ -56,6 +56,7 @@
       * [Teradata](import/teradata.md)
    * [Cloud Apps Data]()
       * [Create Connection](import/connection-cloud-apps.md)
+      * [Amazon S3](import/s3.md)
       * [Github Issues](import/github.md)
       * [Google Analytics](import/google-analytics.md)
       * [Google Analytics (日本語)](import/google-analytics-ja.md)      
