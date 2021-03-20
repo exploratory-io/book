@@ -1,6 +1,6 @@
 # #17 - 2021/2/5(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/v0ygrrff2a9x4fj/Exploratory-v64-Introduction-jp.001.jpeg?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup17.jpeg" width="100%" />
 
 ## 開催要項
 
@@ -68,7 +68,7 @@
 
 # #16 - 2020/12/4(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/e7qrtsj0uxjz8gm/1-kan.png?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup16.jpeg" width="100%" />
 
 ## 開催要項
 
@@ -127,7 +127,7 @@
 
 # #15 - 2020/10/2(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/3btfhe294vzzis6/online_meetup_v15.png?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup15.jpeg" width="100%" />
 
 ## 開催要項
 
@@ -201,7 +201,7 @@
 
 # #14 - 2020/7/31(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/7sfbvtif8phlj96/online_meetup_v14.png?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup14.jpeg" width="100%" />
 
 ## 開催要項
 
@@ -265,7 +265,7 @@
 
 # #13 - 2020/5/29(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/kns9gf28zetgzzp/online_meetup_v13.png?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup13.jpeg" width="100%" />
 
 ## 開催要項
 
@@ -316,7 +316,7 @@
 
 # #12 - 2020/1/31(金) @ラクスル株式会社
 
-<img src="https://www.dropbox.com/s/7dw77dagect9lvh/meetup12.jpg?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup12.jpeg" width="100%" />
 
 ## 開催要項
 * 日時: 2019年 1月 31日 (金) 19:00〜21:00（18:45開場・受付開始）
@@ -349,7 +349,7 @@
 
 # #11 - 2019/11/15(金) @株式会社GxP - G’s LounGe
 
-<img src="https://www.dropbox.com/s/zz5ojseu690mda9/meetup11.jpg?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup11.jpeg" width="100%" />
 
 ## 開催要項
 * 日時: 2019年 11月 15日 (金) 19:15〜21:00（19:00開場・受付開始）
@@ -382,7 +382,7 @@
 
 # #10 - 2019/07/29(金) @ハッシャダイ
 
-<img src="https://www.dropbox.com/s/8kurwxf6xvjjdyx/meetup10.jpg?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup10.jpeg" width="100%" />
 
 ## 開催要項
 
