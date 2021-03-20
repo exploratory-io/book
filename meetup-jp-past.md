@@ -68,7 +68,7 @@
 
 # #16 - 2020/12/4(金) @Zoom会議
 
-<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup16.jpeg" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup16.png" width="100%" />
 
 ## 開催要項
 
@@ -127,7 +127,7 @@
 
 # #15 - 2020/10/2(金) @Zoom会議
 
-<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup15.jpeg" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup15.png" width="100%" />
 
 ## 開催要項
 
@@ -201,7 +201,7 @@
 
 # #14 - 2020/7/31(金) @Zoom会議
 
-<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup14.jpeg" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup14.png" width="100%" />
 
 ## 開催要項
 
@@ -265,7 +265,7 @@
 
 # #13 - 2020/5/29(金) @Zoom会議
 
-<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup13.jpeg" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup13.png" width="100%" />
 
 ## 開催要項
 
