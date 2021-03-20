@@ -10,10 +10,10 @@ Exploratory v6.5の紹介と、ユーザー様によるExploratoryを使った�
 
 ## スピーカー
 
-<img src="https://www.dropbox.com/s/3u5mra5ppjqnpki/bustup_photo_v1.png?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup18-1.png" width="100%" />
 
 
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/sb0mdond66sszse/agenda_v1.png?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup18-2.png" width="100%" />
