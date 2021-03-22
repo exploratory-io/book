@@ -10,7 +10,9 @@ Exploratory v6.5の紹介と、ユーザー様によるExploratoryを使った�
 
 ## スピーカー
 
-<img src="https://www.dropbox.com/s/3u5mra5ppjqnpki/bustup_photo_v1.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/r3mwijul9s1ba9c/bustup_photo_v2.png?raw=1" width="100%" />
+
+
 
 
 
