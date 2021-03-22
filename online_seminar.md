@@ -1,22 +1,3 @@
-# Seminar #37 - Why Excel Users Love Exploratory? - Part 1
-## Date/Time: 2021/3/10 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-We have interviewed our users who used to be using Excel on why they have transitioned to Exploratory, and we've come up with a list of 8 reasons we often hear.
-
-* Data Size Limitation & Performance
-* Learning Cost
-* Debuggability
-* Data Reproducibility & Automation
-
-
-In this seminar, Kan will be discussing the first 4 topics.
-
-
-
-----
-
 # Seminar #38 - Why Excel Users Love Exploratory? - Part 2
 ## Date/Time: 2021/3/17 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
@@ -24,9 +5,9 @@ In this seminar, Kan will be discussing the first 4 topics.
 
 We have interviewed our users who used to be using Excel on why they have transitioned to Exploratory, and we've come up with a list of 8 reasons we often hear.
 
-* Specialization with Excel God
-* Lack of Intuitive Understanding
-* Lack of Analytical Capability
+
+* Intuitive Understanding of Data at Every Step
+* Analytical Capability
 * Reproducibility for Reporting
 
 In this seminar, Kan will be discussing the second half of the topics.
@@ -46,5 +27,21 @@ The Parameter feature is one of the strong features in Exploratory. It makes you
 * Parameterizing Filters
 * Parameterizing Calculations  
 * Parameterizing Dashboard
+
+----
+
+# Seminar #40 - Introduction to Various Filter Types in Exploratory
+## Date/Time: 2021/3/28 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+There are various Filter types in Exploratory such as Step Filter, Chart Filter, Table View Filter, etc. In this seminar, Kan will introduce all things related to filtering the data in Exploratory and discuss when and how you want to use them.
+
+* Step Filter
+* Chart / Analytics Filter
+* Table View Filter
+* Chart - Limit Values 
+* Parameter
 
 ----

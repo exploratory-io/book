@@ -13,9 +13,6 @@ Exploratory v6.5の紹介と、ユーザー様によるExploratoryを使った�
 <img src="https://www.dropbox.com/s/r3mwijul9s1ba9c/bustup_photo_v2.png?raw=1" width="100%" />
 
 
-
-
-
 ## アジェンダ
 
 <img src="https://www.dropbox.com/s/sb0mdond66sszse/agenda_v1.png?raw=1" width="100%" />
