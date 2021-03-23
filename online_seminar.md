@@ -1,51 +1,3 @@
-# Seminar #36 - How to Start Exploratory for Excel Users Part 2
-## Date/Time: 2021/3/3 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-There are so many things you can do with Exploratory and they are much more capable and flexible than the things you would do with Excel.
-
-But, there are a few things you want to know before you get started especially in the area of Data Wrangling so that you can smoothly transition to the Exploratory way.
-
-We have compiled a list of such topics based on the feedback from our users. This is the second half of this series.
-
-
-* Summarize (Aggregate) Data
-* If_Else / Case_When
-* Merge Rows
-* Transform Wide Data to Long Data
-* Text Data Wrangling
-
-----
-
-# Seminar #37 - Why Exploratory, not Excel? - Part 1
-## Date/Time: 2021/3/10 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-We have compiled a list of reasons why our users have chosen Exploratory over Excel for performing data analysis to increase their productivity 100x. In this seminar, Kan will discuss those points along with live demo.
-
-This is a part 1 of this series.
-
-* Parameterizing SQL Queries
-* Parameterizing Filters
-* Parameterizing Calculations  
-* Parameterizing Dashboard
-
-----
-
-# Seminar #38 - Why Exploratory, not Excel? - Part 2
-## Date/Time: 2021/3/17 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-We have compiled a list of reasons why our users have chosen Exploratory over Excel for performing data analysis to increase their productivity 100x. In this seminar, Kan will discuss those points along with live demo.
-
-This is a part 2 of this series.
-
-
-----
-
 # Seminar #39 - How to use Parameters in Exploratory
 ## Date/Time: 2021/3/21 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
@@ -60,3 +12,55 @@ The Parameter feature is one of the strong features in Exploratory. It makes you
 * Parameterizing Dashboard
 
 ----
+
+# Seminar #40 - Introduction to Various Filter Types in Exploratory
+## Date/Time: 2021/3/28 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+There are various Filter types in Exploratory such as Step Filter, Chart Filter, Table View Filter, etc. In this seminar, Kan will introduce all things related to filtering the data in Exploratory and discuss when and how you want to use them.
+
+* Step Filter
+* Chart / Analytics Filter
+* Table View Filter
+* Chart - Limit Values
+* Parameter
+
+----
+
+# Seminar #41 - Survey Data Analysis
+## Date/Time: TBD
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+----
+
+# Seminar #42 - RFM Analysis for Sales Data
+## Date/Time: TBD
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+----
+
+# Seminar #43 - Cohort Analysis Part 1 - Layer Cake Chart
+## Date/Time: TBD
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+----
+
+# Seminar #44 - Cohort Analysis Part 2 - Retension / Churn Analysis with Survival Curve
+## Date/Time: TBD
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+----
+
+# Seminar #45 - Cohort Analysis Part 1 - Calculating CLTV (Customer Life Time Value)
+## Date/Time: TBD
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)

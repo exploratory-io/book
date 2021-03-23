@@ -34,3 +34,19 @@ You can use the Missing Value Handling feature to control missing values. See [M
 ## Custom Function
 
 You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
+
+
+## Connecting dots by lines
+
+You can connect dots by lines by setting a marker to either "Circle + Line" or "Circle + Dashed Line". You can change the marker from the Size Setting dialog.
+
+![](images/map-connect-dots.png)
+
+## Split lines by the Label column
+
+
+You can split the lines even in the same color by setting a grouping column to the 'Label' and enabling the 'Split lines by Label column' option in the property. 
+
+![](images/map-split-lines.png)
+
+You can check out [the sample Map](https://exploratory.io/viz/kei/Map-Places-Anthony-Bourdain-Visited-for-His-Shows-with-Exploratory-6-4-6-wmr6gig4Jb). Try downloading and importing the EDF to your Exploratory Desktop to see how it works.  
