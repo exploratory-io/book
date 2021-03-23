@@ -195,6 +195,7 @@
    * [XGBoost](analytics/xgboost.md)
    * [Time Series Forecasting (Prophet)](analytics/forecasting.md)
    * [Time Series Forecasting (ARIMA)](analytics/arima.md)
+   * [Time Series Clustering](analytics/time_series_clustering.md)
    * [Anomaly Detection](analytics/anomaly.md)
    * [Market Basket Analysis](analytics/market_basket.md)
    * [T Test](analytics/t_test.md)
