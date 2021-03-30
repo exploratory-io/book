@@ -1,4 +1,4 @@
-# セミナー #51 - ABテスト
+# セミナー #51 - A/Bテストのデータ分析
 
 ## 時間: 2021/4/1 (木) - 午後12時 - 1時（日本時間）
 ## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
@@ -21,4 +21,6 @@
 ## 時間: 2021/4/8 (木) - 午後12時 - 1時（日本時間）
 ## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
 
-Google Big QueryのデータをExploratoryで活用する方法を紹介します。
+最近発売された「SQL入門 - Google Big Queryではじめるビジネスデータ分析」の著者でもある株式会社プリンシプルの木田和廣さんをお招きし、データベースへのクエリ言語であるSQLのデータ分析における重要性と、Google Big Queryを使ったSQLの最速学習方などの話をしていただきます。
+
+当日のセミナーの最初に、弊社の西田よりExploratoryの中でGoogle Big Queryの使い方の紹介を簡単にさせていただきます。
