@@ -45,7 +45,14 @@ There are various Filter types in Exploratory such as Step Filter, Chart Filter,
 
 ----
 
-# Seminar #45 - Cohort Analysis Part 1 - Calculating CLTV (Customer Life Time Value)
+# Seminar #45 - Cohort Analysis Part 3 - Calculating CLTV (Customer Life Time Value)
+## Date/Time: TBD
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+----
+
+# Seminar #46 - Introduction to Exploratory Server 
 ## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
