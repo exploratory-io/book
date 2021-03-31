@@ -10,23 +10,8 @@ There are various Filter types in Exploratory such as Step Filter, Chart Filter,
 * Chart / Analytics Filter
 * Table View Filter
 * Chart - Limit Values
-* Parameter
-
-----
-
-# Seminar #41 - Survey Data Analysis
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-
-----
-
-# Seminar #42 - RFM Analysis for Sales Data
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
+* Filter with Parameter
+* Highlight - Summary View & Chart
 
 ----
 
@@ -50,9 +35,26 @@ There are various Filter types in Exploratory such as Step Filter, Chart Filter,
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
+
 ----
 
-# Seminar #46 - Introduction to Exploratory Server 
+# Seminar #41 - Survey Data Analysis
+## Date/Time: TBD
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+----
+
+# Seminar #42 - RFM Analysis for Sales Data
+## Date/Time: TBD
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+----
+
+# Seminar #46 - Introduction to Exploratory Server
 ## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
