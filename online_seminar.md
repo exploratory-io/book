@@ -16,7 +16,7 @@ There are various Filter types in Exploratory such as Step Filter, Chart Filter,
 ----
 
 # Seminar #43 - Cohort Analysis Part 1 - Layer Cake Chart
-## Date/Time: TBD
+## Date/Time: 2021/4/21 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
