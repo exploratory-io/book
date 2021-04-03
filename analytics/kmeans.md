@@ -22,6 +22,8 @@ Input data should contain following columns.
   * Data Preprocessing
     * Sample Data Size - Number of rows to sample before clustering them.
     * Normalize Variable Columns - Whether to normalize Variable Columns before clustering.
+  * Stack Bar
+    * Max # of Categories for Label Column - Max # of categories (colors) shown in the Stack Bar.
   * Error Bar
     * Type of Error Bar - Type of error bar. This can be...
       - Standard Error
