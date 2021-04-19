@@ -2,6 +2,7 @@
 
 <img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup18.png" width="100%" />
 
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup17.jpeg" width="100%" />
 
 ## 開催要項
 
