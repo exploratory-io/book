@@ -19,10 +19,10 @@ Released on 4/19/2021.
 
 
 * Chart: Now you can show values on the plot area in Heatmap.
-* Chart: If you changed the chart type from Pivot/Summarize Table/Table/Number to the other chart types and came back, then the column assignments were lost.
+* Chart: If you changed the chart type from Pivot Table/Summarize Table/Table/Number to the other chart types and came back, then the column assignments were lost.
 * Chart: Line pattern support for each line in the Line chart.
-* Chart: Pivot: Summarize Table: Now you can choose the total/subtotal calculation timing either before or after the Pivot cell calculation. 
-* Chart: Pivot: Now you can set the max number of rows to display from the chart property dialog. 
+* Chart: Pivot Table: Summarize Table: Now you can choose the total/subtotal calculation timing either before or after the Pivot Table cell calculation. 
+* Chart: Pivot Table: Now you can set the max number of rows to display from the chart property dialog. 
 * Chart: Now you can set a different column to Size and Color separately in Word Cloud.
 * Chart: Now the sorting is applied before applying the cumulative Window Calculation.
 * Chart: Now you have more date formatting options on X-Axis.
@@ -63,7 +63,7 @@ Released on 4/19/2021.
 
 * Data Wrangling: The "Numeric Type convert" option was not available when selecting multiple logical columns.
 * Data Wrangling: Now it shows an error message when required input fields are not entered on Text Wrangling UI.
-* Data Wrangling: After copying a data frame, the popup hover didn't show chart thumbnails.
+* Data Wrangling: After copying a data frame, the hover pop-up didn't show chart thumbnails.
 * Data Wrangling: After deleting a data frame, if you re-used the same name for copying another data frame, the previously selected view was displayed instead of Summary View.
 * Data Wrangling: On Create Bin UI, changing the method resulted in an error.
 * Data Wrangling: On the data frame list, the currently Selected Data Frame was unselected when creating a new note.
