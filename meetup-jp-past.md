@@ -2,6 +2,7 @@
 
 <img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup18.png" width="100%" />
 
+
 ## 開催要項
 
 * 日時: 2021年 4月 16日 (金) 12:00〜13:30（11:50開場）
