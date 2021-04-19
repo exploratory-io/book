@@ -1,7 +1,6 @@
 # #18 - 2021/4/16(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/4s2uc3stv5qm1e4/cover-image.png" width="100%" />
-
+<img src="https://www.dropbox.com/s/8n12s16ki2xlrmv/Exploratory-v65-Introduction-jp.001.jpeg" width="100%" />
 
 ## 開催要項
 
