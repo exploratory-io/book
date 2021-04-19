@@ -1,6 +1,7 @@
 # #18 - 2021/4/16(金) @Zoom会議
 
-<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup18.jpeg" width="100%" />
+<img src="https://www.dropbox.com/s/4s2uc3stv5qm1e4/cover-image.png?raw=1" width="100%" />
+
 
 ## 開催要項
 
