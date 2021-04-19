@@ -24,7 +24,7 @@
 
 スライド：
 
-<script async class="speakerdeck-embed" data-id="493a485e2edf4ff4a09cd1832417682c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="bf9aeed12a614be290cd8dcc17bfb134" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## 株式会社インテージ 駒崎 幹拓様
 
