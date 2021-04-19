@@ -7,62 +7,61 @@ Released on 4/19/2021.
 
 ### Enhancements
 
+* Generic: Now you can resize the data frame list width by drag and drop.
+* General: Now a Data Frame can be exported/imported as a .df file, with Charts and Analytics on it.
+* General: Now you can search objects such as Data Frames, Branches, Charts, Analytics, Notes, Dashboards, and others in the project by name, description, and comment.
+* General: Upgraded to R 4.0.5 for the new installs.
+
 
 * Data Source: Support importing multiple CSV (or Excel) files from Amazon S3, Google Drive, or local drive.
 
 
-* Summary View: Now you can choose a chart type from "Aggregation", "Distribution", and "Uncertainty" in the Correlation mode.
+* Summary View: Correlation Mode: Now it supports 3 types of visualizations - "Aggregation", "Distribution", and "Uncertainty".
 
 
-* Data Wrangling: Filter: Supported the "Keep NA" option for the "Not Contain" filter operator.
-* Data Wrangling: Now you can resize the data frame list width by drag and drop.
+* Data Wrangling: Filter: Added a support for the "Keep NA" option for the "Not Contain" filter operator.
 
 
 * Chart: Now you can show values on the plot area in Heatmap.
-* Chart: If you changed the chart type from Pivot Table/Summarize Table/Table/Number to the other chart types and came back, then the column assignments were lost.
-* Chart: Line pattern support for each line in the Line chart.
-* Chart: Pivot Table: Summarize Table: Now you can choose the total/subtotal calculation timing either before or after the Pivot Table cell calculation. 
-* Chart: Pivot Table: Now you can set the max number of rows to display from the chart property dialog. 
-* Chart: Now you can set a different column to Size and Color separately in Word Cloud.
+* Chart: The setting for Pivot Table / Summarize Table / Table / Number are now preserved when switching to other chart types.
+* Chart: Added more Patterns (e.g. dotted line) for the Line chart.
+* Chart: Pivot Table: Summarize Table: Now you can choose the total/subtotal calculation timing either before or after the summazing calculation.
+* Chart: Pivot Table: Now you can set the max number of rows to display from the chart property dialog.
+* Chart: Word Cloud: Now you can set a column to Size that is different from the one assinged to Color.
 * Chart: Now the sorting is applied before applying the cumulative Window Calculation.
 * Chart: Now you have more date formatting options on X-Axis.
 * Chart: Now X-Axis is sorted by the ratio of the first category value if you use "% of" Window Calculation.
-* Chart: Table: Now you have more date formatting options.
+* Chart: Table: Added 'Date' formatting.
 
 
-* Analytics: Correlation: Now you can show the correlation values on the plot area of the Heatmap chart.
-* Analytics: Correlation: Positive Correlation tab and Negative Correlation tab are combined together into a Data tab.
-* Analytics: Time Series Clustering Analytics View is added.
 * Analytics: Correlation: Added Significance tab to show P values of correlations.
-* Analytics: Support of variance-based variable importance (FIRM) for prediction models.
+* Analytics: Correlation: Now you can show the correlation values on the Heatmap chart.
+* Analytics: Correlation: Positive Correlation tab and Negative Correlation tab are combined together into a Data tab.
+* Analytics: Added a new 'Time Series Clustering'.
 * Analytics: Time Series Clustering: "Normalize" option is added to the existing Analytics Step and new Analytics View.
+* Analytics: Added a new variance-based variable importance (FIRM) algorithm support.
 
 
-* General: R installed for new installs are upgraded to R 4.0.5.
-* General: Now a Data Frame can be exported/imported as a .df file, with Charts and Analytics on it.
-* General: Now you can search objects such as Data Frames, Branches, Charts, Analytics, Notes, Dashboards, and others in the project by name, description, and comment.
 
 
 ### Bug Fixes
 
 
-* Data Source: After creating a Google Big Query connection, the Setup Dialog didn't close after clicking the OK button.
-* Data Source: Error was raised from refreshing Custom R Data Source Step right after EDF import.
+* Data Source: Google BigQuery: After creating the connection, the Setup Dialog didn't close after clicking the OK button.
 * Data Source: Google BigQuery: It showed Error in curl::curl_fetch_memory(url, handle = handle) : Error in the HTTP2 framing layer for some occasion.
-* Data Source: Google BigQuery: Import via Cloud Storage did not use Cloud Storage but load data as a stream.
-* Data Source: On the SQL import dialog, when clicking the edge of the Run button,  it did not execute the updated SQL query.
-
+* Data Source: Google BigQuery: 'Import via Cloud Storage' did not use Cloud Storage but loaded data as a stream.
+* Data Source: On the SQL import dialog, when clicking the edge of the Run button, it did not execute the updated SQL query.
+* Data Source: Error was raised from refreshing Custom R Data Source Step right after EDF import.
 
 * Summary view: If you created a bar chart from the Correlation mode, the default aggregation function became "Sum". It should be "Mean".
 * Summary View: It showed an incorrect number of NA values if there were character data starting with "NA".
-* Summary View: Summary View shows a blank screen when navigating from Analytics view that has an error.
+* Summary View: Summary View showed a blank screen when navigating from Analytics view that had an error.
 
 
 * Table View: Now the Table View shows numbers with decimal separators.
 
 
 * Data Wrangling: The "Numeric Type convert" option was not available when selecting multiple logical columns.
-* Data Wrangling: Now it shows an error message when required input fields are not entered on Text Wrangling UI.
 * Data Wrangling: After copying a data frame, the hover pop-up didn't show chart thumbnails.
 * Data Wrangling: After deleting a data frame, if you re-used the same name for copying another data frame, the previously selected view was displayed instead of Summary View.
 * Data Wrangling: On Create Bin UI, changing the method resulted in an error.
@@ -70,7 +69,7 @@ Released on 4/19/2021.
 * Data Wrangling: When creating N-Grams, it did not work if the same column was assigned for both Document ID and Sentence ID.
 * Data Wrangling: Error "Cannot read property 'type' of undefined" was raised if a Data Frame referenced from a step like Join or Merge was renamed.
 * Data Wrangling: Filter: For the Year / Month option, changed to show the locale neutral example as the placeholder text in the input field.
-* Data Wrangling: Filter: When today's date is the end of the month such as Mar 31st, the "Previous Month" filter operator did not work. 
+* Data Wrangling: Filter: When today's date is the end of the month such as Mar 31st, the "Previous Month" filter operator did not work.
 * Data Wrangling: The Merge step should not show its own Data Frame or Branch as a possible target.
 * Data Wrangling: Mutate Multiple Dialog: Right-hand side options were not shown for data types other than character and logical.
 * Data Wrangling: On Summarize Group dialog, when typing the Japanese column name in the custom expression editor, the expression was removed.
@@ -93,12 +92,12 @@ Released on 4/19/2021.
 * Chart: Bubble: No P-Value showed up in the Trend Line if number columns were assigned to both X and Y axes with the "As Integer" function.
 * Chart: Bubble: Trend Line was off if number columns were assigned to both X and Y axes with the "As Discrete" function.
 * Chart: Highlighted items didn't come at the top in the legend area if you chose the "Horizontal" orientation in the Bar chart.
-* Chart: You couldn't access the Color Setting if you had multiple columns assigned to Y-Axis and no column for Color. 
-* Chart: Map: When you created a Map and assigned a column to the Color, the green information text for the "Equal Width" bucketing option didn't show up. 
-* Chart: Now the text sort for non-English text in the legend is consistent between Windows and Mac. 
-* Chart: If you used Repeat By and you had only 1 small multiple, it should use the full width of the chart view area regardless of the layout setting. 
+* Chart: You couldn't access the Color Setting if you had multiple columns assigned to Y-Axis and no column for Color.
+* Chart: Map: When you created a Map and assigned a column to the Color, the green information text for the "Equal Width" bucketing option didn't show up.
+* Chart: Now the text sort for non-English text in the legend is consistent between Windows and Mac.
+* Chart: If you used Repeat By and you had only 1 small multiple, it should use the full width of the chart view area regardless of the layout setting.
 * Chart: Summarize Table didn't show the green information text for the "Other Group" setting if a date column was assigned to "Group".
-* Chart: If you exported a Pivot Table to Excel, the numeric data were treated as text if the numeric column contained NA values. 
+* Chart: If you exported a Pivot Table to Excel, the numeric data were treated as text if the numeric column contained NA values.
 
 
 * Analytics: When in Analytics View, the spin icon was removed in the middle of switching the data frame.
@@ -120,7 +119,7 @@ Released on 4/19/2021.
 * Note: Charts didn't show up correctly if you restored the content from the history and clicked the preview.
 * Note: When opening a note, it did not show a spin icon.
 * Note: When opening a note, related data frames were not highlighted.
-* Note: When you opened a note in the full-screen mode, you couldn't close the note window. 
+* Note: When you opened a note in the full-screen mode, you couldn't close the note window.
 * Note: If you exported a note containing a Pivot Table with color as a Word Document, the Pivot Table in the exported document had unexpected data.
 * Slide: Clicking the "Fit in Screen" checkbox on a chart took you to the next slide.
 * Dashboard: Hitting the "Run" button on Dashboard reran steps after reference to an empty-list Parameter even if the Parameter is not changed.
@@ -183,7 +182,7 @@ Released on 3/1/2021.
 
 
 * Dashboard: When adding a chart to a row, charts' widths were not proportionally distributed.
-* Dashboard: When adding a chart to an existing dashboard created with the previous version, the added chart's width was not adjusted properly. 
+* Dashboard: When adding a chart to an existing dashboard created with the previous version, the added chart's width was not adjusted properly.
 
 
 ## 6.4.5
