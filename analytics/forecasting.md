@@ -36,7 +36,7 @@ There are many properties to configure how to build the models and how to transf
   * Holidays
     * Strength of Holiday Effect - Controls the strength of holiday effect taken into account in the forecasting.
     * Use Built-in Country Holiday Data - By setting this option to Yes, you can specify list of country codes whose holiday data should be considered in making forecast.
-    * Country for Holiday Data - Specify list of country codes here. For supported countries, take a look at [this table](#countries_for_holidays).
+    * Country for Holiday Data - Specify list of country codes here. For supported countries, take a look at [this table](#countries-for-holidays).
   * Limits
     * Trend Upper Limit - Upper Limit of trend. Largest possible value for the trend to be forecasted. e.g. Size of entire market, etc.
     * Trend Lower Limit - Lower limit of trend. Takes effect only when Trend Upper Limit is specified.

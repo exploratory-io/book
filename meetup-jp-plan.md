@@ -1,20 +1,25 @@
-# # 17 - 2021年2月5日(金) @Zoom会議
+# # 19 - 2021年6月11日(金) @Zoom会議
 
-Exploratory v6.4の紹介と、ユーザー様によるExploratoryを使ったデータ分析やデータの民主化の事例を紹介させていただきます。
+Exploratory v6.6の紹介と、ユーザー様によるExploratoryを使ったデータ分析やデータの民主化の事例を紹介させていただきます。
 
 ## 開催要項
 
-* 日時: 2021年 2月 5日 (金) 18:00〜19:30（17:50開場）
+* 日時: 2021年 6月 11日 (金) 12:00〜13:30（11:50開場）
 * 会場: Zoom会議
-* 参加方法: [こちら](https://techplay.jp/event/804875)のページよりお申し込みください。
+* 次回開催の詳細が決まりましたらお知らせいたします。
+
+
+<!--
+
+* 参加方法: [こちら](https://exploratory.io/note/exploratory/Exploratory-18-aET1CQf0)のページよりお申し込みください。
 
 ## スピーカー
 
-<img src="https://www.dropbox.com/s/8yjkubotbr5wrij/bustup_photo_v3.png?raw=1" width="100%" />
-
-
+<img src="https://www.dropbox.com/s/who7b4f6d4u65el/bustup_photo_v3.png?raw=1" width="100%" />
 
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/cklrx40lb5mvqck/Agenda_v3.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/jr7i9031e6bqba5/agenda_v4.png?raw=1" width="100%" />
+
+-->

@@ -1,62 +1,61 @@
-# Seminar #36 - How to Start Exploratory for Excel Users Part 2
-## Date/Time: 2021/3/3 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+# Seminar #43 - An Introduction to Exploratory v6.5 New Features
+## Date/Time: 2021/4/21 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-There are so many things you can do with Exploratory and they are much more capable and flexible than the things you would do with Excel.
+We have released Exploratory v6.5 on 4/19 with many exciting new features. Kan will introduce some of the new features including the following.
 
-But, there are a few things you want to know before you get started especially in the area of Data Wrangling so that you can smoothly transition to the Exploratory way.
-
-We have compiled a list of such topics based on the feedback from our users. This is the second half of this series.
-
-
-* Summarize (Aggregate) Data
-* If_Else / Case_When
-* Merge Rows
-* Transform Wide Data to Long Data
-* Text Data Wrangling
-
-----
-
-# Seminar #37 - Why Exploratory, not Excel? - Part 1
-## Date/Time: 2021/3/10 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-We have compiled a list of reasons why our users have chosen Exploratory over Excel for performing data analysis to increase their productivity 100x. In this seminar, Kan will discuss those points along with live demo.
-
-This is a part 1 of this series.
-
-* Parameterizing SQL Queries
-* Parameterizing Filters
-* Parameterizing Calculations  
-* Parameterizing Dashboard
-
-----
-
-# Seminar #38 - Why Exploratory, not Excel? - Part 2
-## Date/Time: 2021/3/17 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-We have compiled a list of reasons why our users have chosen Exploratory over Excel for performing data analysis to increase their productivity 100x. In this seminar, Kan will discuss those points along with live demo.
-
-This is a part 2 of this series.
+- Summary View: New Chart Types
+- Analytics: Time Series Clustering
+- Analytics: Updates for Correlation
+- Multiple Excel / CSV Files Import
+- Google Drive / S3 Support
+- Contents Search inside Project
 
 
 ----
 
-# Seminar #39 - How to use Parameters in Exploratory
-## Date/Time: 2021/3/21 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+
+# Seminar #44 - Cohort Analysis Part 1 - Layer Cake Chart
+## Date/Time: 2021/4/28 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+----
+
+# Seminar #45 - Cohort Analysis Part 2 - Retension / Churn Analysis with Survival Curve
+## Date/Time: 2021/5/5 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
 
-The Parameter feature is one of the strong features in Exploratory. It makes your chart, analytics, dashboard, notes, slides, and data interactive in a very flexible way. In this seminar, Kan will introduce the basic and demonstrate on how to use it in the following scenarios.
+----
 
-* Parameterizing SQL Queries
-* Parameterizing Filters
-* Parameterizing Calculations  
-* Parameterizing Dashboard
+# Seminar #46 - Cohort Analysis Part 3 - Calculating CLTV (Customer Life Time Value)
+## Date/Time: 2021/5/12 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
 
 ----
+
+# Seminar #47 - Survey Data Analysis
+## Date/Time: 2021/5/19 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+----
+
+# Seminar #48 - RFM Analysis for Sales Data
+## Date/Time: 2021/5/26 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+----
+
+# Seminar #49 - Introduction to Exploratory Server
+## Date/Time: TBD
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)

@@ -6,14 +6,14 @@ Clusters multiple time series data into groups.
 
 Input data should be a time series data with category. Each row should represent one observation with date/time. It may have multiple rows for a date/time, in which case the rows are internally aggregated into one row for the date/time. It should have the following columns.
 
-  * Category Column - A categorical (character or factor) column. The categories specified here are clustered into groups.
-  * Date/Time Column - A Date or POSIXct column to indicate when the observations took place.
-  * Value Column (Optional) - A column that stores observed values. Values for multiple rows for one date/time for a category are internally aggregated into one value by the specified aggregation function to form a time series for the category to be clustered. If not specified, the number of rows for each date/time is used as the time series to cluster.
+  * Group - A categorical (character or factor) column. The categories specified here are clustered into groups.
+  * Date/Time - A Date or POSIXct column to indicate when the observations took place.
+  * Value (Optional) - A column that stores observed values. Values for multiple rows for one date/time for a category are internally aggregated into one value by the specified aggregation function to form a time series for the category to be clustered. If not specified, the number of rows for each date/time is used as the time series to cluster.
   * Other Columns to Keep (Optional) - Other columns for values to keep in the output data. Values for multiple rows for one date/time for a category are internally aggregated into one value by the specified aggregation function, to be put together in the output.
 
 # Parameters
 
-  * Number of Clusters (Centers) - The number of clusters to group the time series data into.
+  * Number of Clusters - The number of clusters to group the time series data into.
   * Cluster Center Method - Method to calculate cluster center time series (centroid) for each iteration.
     * Mean
     * Median
@@ -43,7 +43,8 @@ Input data should be a time series data with category. Each row should represent
   * NA Fill Type - Ending - How to fill NAs that appear after the last non-NA value in a time series.
     * Fill with 0
     * Fill with Last Non-NA Value
-  * Max Category NA Ratio - If the time series data for a category has more NAs than this ratio, the category is removed from the data before the clustering is performed.
+  * Remove Groups When NA Ratio Is Greater Than - If the time series data for a category has more NAs than this ratio, the category is removed from the data before the clustering is performed.
+  * Normalize Value - Whether to normalize the aggregated values or not.
   * Random Seed - Random seed set before the clustering, so that the results are constant when the same calculations are repeated.
 
 ## R Package

@@ -1,6 +1,71 @@
+# #18 - 2021/4/16(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/4s2uc3stv5qm1e4/cover-image.png?raw=1" width="100%" />
+
+
+## 開催要項
+
+* 日時: 2021年 4月 16日 (金) 12:00〜13:30（11:50開場）
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.5のご紹介 （Exploratory CEO 西田勘一郎）
+* エラーバーを使った“プチ働き方改革“ （株式会社インテージ 駒崎 幹拓様）
+* 時系列予測（Prophet）を使ったコールセンターの受電数の予測（株式会社アサイアン 川浦 徹様）
+* ExploratoryとSalesforceを利用したビジネスデータのモニタリング （木の香往診クリニック 松本 真二様）
+* コロナ禍における社員の意識と働き方のアンケート分析（株式会社ヒューマンバリュー 川口 大輔様）
+
+## Exploratory 西田勘一郎
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/unzVYSKPzxA?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="bf9aeed12a614be290cd8dcc17bfb134" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 株式会社インテージ 駒崎 幹拓様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/eieevT8DLHU?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="3f5735a689584178b45d65211c16722c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 株式会社アサイアン 川浦 徹様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/OE1PLMltDT8?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="5611f85d991241b19b2c17c1dbcc68ce" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+## 木の香往診クリニック 松本 真二様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/AEFQ0l765-0?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="deedd6c046994d608c3249ea3df2b6ce" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+---
+
 # #17 - 2021/2/5(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/v0ygrrff2a9x4fj/Exploratory-v64-Introduction-jp.001.jpeg?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup17.jpeg" width="100%" />
 
 ## 開催要項
 
@@ -68,7 +133,7 @@
 
 # #16 - 2020/12/4(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/e7qrtsj0uxjz8gm/1-kan.png?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup16.png" width="100%" />
 
 ## 開催要項
 
@@ -127,7 +192,7 @@
 
 # #15 - 2020/10/2(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/3btfhe294vzzis6/online_meetup_v15.png?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup15.png" width="100%" />
 
 ## 開催要項
 
@@ -201,7 +266,7 @@
 
 # #14 - 2020/7/31(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/7sfbvtif8phlj96/online_meetup_v14.png?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup14.png" width="100%" />
 
 ## 開催要項
 
@@ -265,7 +330,7 @@
 
 # #13 - 2020/5/29(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/kns9gf28zetgzzp/online_meetup_v13.png?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup13.png" width="100%" />
 
 ## 開催要項
 
@@ -316,7 +381,7 @@
 
 # #12 - 2020/1/31(金) @ラクスル株式会社
 
-<img src="https://www.dropbox.com/s/7dw77dagect9lvh/meetup12.jpg?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup12.jpeg" width="100%" />
 
 ## 開催要項
 * 日時: 2019年 1月 31日 (金) 19:00〜21:00（18:45開場・受付開始）
@@ -349,7 +414,7 @@
 
 # #11 - 2019/11/15(金) @株式会社GxP - G’s LounGe
 
-<img src="https://www.dropbox.com/s/zz5ojseu690mda9/meetup11.jpg?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup11.jpeg" width="100%" />
 
 ## 開催要項
 * 日時: 2019年 11月 15日 (金) 19:15〜21:00（19:00開場・受付開始）
@@ -382,7 +447,7 @@
 
 # #10 - 2019/07/29(金) @ハッシャダイ
 
-<img src="https://www.dropbox.com/s/8kurwxf6xvjjdyx/meetup10.jpg?raw=1" width="100%" />
+<img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup10.jpeg" width="100%" />
 
 ## 開催要項
 
