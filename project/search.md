@@ -1,6 +1,6 @@
 # How to search the Project
 
-You can search the project by typing in a keyword at the seach text input.
+You can search the project by typing in a keyword at the search text input.
 
 ![](images/search1.png)
 
@@ -23,6 +23,6 @@ The search targets are the following.
 
 ## How to exit the search
 
-You can click 'x' icon to quit the search.
+You can click the 'x' icon to quit the search.
 
 ![](images/search2.png)

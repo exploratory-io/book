@@ -5,7 +5,7 @@ You can configure how to show the axis from the Axis Formatting dialog. You can 
 ![](images/axis-format1.png)
 
 
-Currently, the Axis Foramtting is available only if you assign a Date or POSIXct column to the axis.
+Currently, the Axis Formatting is available only if you assign a Date or POSIXct column to the axis.
 
 
 ## Date Format
