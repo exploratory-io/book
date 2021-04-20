@@ -12,6 +12,11 @@
 
 
 
+## Show Values on Plot
+
+You can show the column values at "Color By" on the plot area by checking the "Show Value on Plot" checkbox.
+
+![](images/heatmap-show-on-plot.png)
 
 ## Category 
 

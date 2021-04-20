@@ -114,7 +114,18 @@ If you click "Brazil", a browser opens up the URL `https://exploratory.io/?q=Bra
 
 
 
-  
+
+## Total Calculation
+
+You can choose how to calculate the totals/subtotals at the Calculation Target in the Setting dialog for total.
+
+* Data After Aggregation: Totals and subtotals are calculated based on the cell values in the Pivot Table which are already aggregated. 
+* Data Before Aggregation: Totals and subtotals are calculated based on the raw data before any aggregations. 
+
+![](images/pivot-total-config.png)
+
+
+
 
 
 ## Layout Configuration

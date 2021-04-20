@@ -175,6 +175,7 @@
      * [Missing Value Handling](viz/missing-value-handling.md)
      * [Rename Column Names](viz/rename-column-names.md)
      * [Axis Setting](viz/dualy-setting.md)
+     * [Axis Formatting](viz/axis-format.md)
 
 
 * [Analytics](analytics.md)

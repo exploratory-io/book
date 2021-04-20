@@ -37,33 +37,6 @@ You can choose the column function you want to apply to the column data if avail
 * Remove Numbers
 
 
-### Number 
-
-* As Number 
-* As Integer 
-* As Character 
-* Log (Natural Log)
-* Log 2
-* Log 10 
-* Normalize 
-
-### Date/POSIXct 
-* Year
-* Half Year
-* Quarter
-* Bi-Month
-* Month - Number (1)
-* Month - Short Name (Jan)
-* Month - Long Name (January)
-* Week of Year
-* Day of Month
-* Day of Year
-* Day of Quarter
-* Day of Week - Number (1)
-* Day of Week - Short Name (Mon)
-* Day of Week - Long Name (Monday)
-* Weekday/Weekend
-
 
 ## Sort 
 
@@ -82,6 +55,9 @@ You can set Number Formatting for numeric columns. The following formatting opti
 * Digit: Number of decimal digits.
 * Symbol: Current symbol. It will be added to it will be added at the beginning of each number if the "Currency" type is selected. 
 
+
+## Date Formatting
+You can set the date formatting for Date and POSIXct columns at the "Formatting" section. 
 
 ## Text Wrap
 
