@@ -1,3 +1,64 @@
+# #18 - 2021/4/16(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/4s2uc3stv5qm1e4/cover-image.png?raw=1" width="100%" />
+
+
+## 開催要項
+
+* 日時: 2021年 4月 16日 (金) 12:00〜13:30（11:50開場）
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.5のご紹介 （Exploratory CEO 西田勘一郎）
+* エラーバーを使った“プチ働き方改革“ （株式会社インテージ 駒崎 幹拓様）
+* 時系列予測（Prophet）を使ったコールセンターの受電数の予測（株式会社アサイアン 川浦 徹様）
+* ExploratoryとSalesforceを利用したビジネスデータのモニタリング （木の香往診クリニック 松本 真二様）
+* コロナ禍における社員の意識と働き方のアンケート分析（株式会社ヒューマンバリュー 川口 大輔様）
+
+## Exploratory 西田勘一郎
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/unzVYSKPzxA?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="bf9aeed12a614be290cd8dcc17bfb134" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 株式会社インテージ 駒崎 幹拓様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/eieevT8DLHU?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="3f5735a689584178b45d65211c16722c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 株式会社アサイアン 川浦 徹様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/OE1PLMltDT8?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## 木の香往診クリニック 松本 真二様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/AEFQ0l765-0?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="deedd6c046994d608c3249ea3df2b6ce" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+---
+
 # #17 - 2021/2/5(金) @Zoom会議
 
 <img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup17.jpeg" width="100%" />

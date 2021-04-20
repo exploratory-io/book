@@ -1,5 +1,163 @@
 # Release Note
 
+
+## 6.5.0
+
+Released on 4/19/2021.
+
+### Enhancements
+
+* Generic: Now you can resize the data frame list width by drag and drop.
+* General: Now a Data Frame can be exported/imported as a .df file, with Charts and Analytics on it.
+* General: Now you can search objects such as Data Frames, Branches, Charts, Analytics, Notes, Dashboards, and others in the project by name, description, and comment.
+* General: Upgraded to R 4.0.5 for the new installs.
+
+
+* Data Source: Support importing multiple CSV (or Excel) files from Amazon S3, Google Drive, or local drive.
+
+
+* Summary View: Correlation Mode: Now it supports 3 types of visualizations - "Aggregation", "Distribution", and "Uncertainty".
+
+
+* Data Wrangling: Filter: Added a support for the "Keep NA" option for the "Not Contain" filter operator.
+
+
+* Chart: Now you can show values on the plot area in Heatmap.
+* Chart: The setting for Pivot Table / Summarize Table / Table / Number are now preserved when switching to other chart types.
+* Chart: Added more Patterns (e.g. dotted line) for the Line chart.
+* Chart: Pivot Table: Summarize Table: Now you can choose the total/subtotal calculation timing either before or after the summazing calculation.
+* Chart: Pivot Table: Now you can set the max number of rows to display from the chart property dialog.
+* Chart: Word Cloud: Now you can set a column to Size that is different from the one assinged to Color.
+* Chart: Now the sorting is applied before applying the cumulative Window Calculation.
+* Chart: Now you have more date formatting options on X-Axis.
+* Chart: Now X-Axis is sorted by the ratio of the first category value if you use "% of" Window Calculation.
+* Chart: Table: Added 'Date' formatting.
+
+
+* Analytics: Correlation: Added Significance tab to show P values of correlations.
+* Analytics: Correlation: Now you can show the correlation values on the Heatmap chart.
+* Analytics: Correlation: Positive Correlation tab and Negative Correlation tab are combined together into a Data tab.
+* Analytics: Added a new 'Time Series Clustering'.
+* Analytics: Time Series Clustering: "Normalize" option is added to the existing Analytics Step and new Analytics View.
+* Analytics: Added a new variance-based variable importance (FIRM) algorithm support.
+
+
+
+
+### Bug Fixes
+
+
+* Data Source: Google BigQuery: After creating the connection, the Setup Dialog didn't close after clicking the OK button.
+* Data Source: Google BigQuery: It showed Error in curl::curl_fetch_memory(url, handle = handle) : Error in the HTTP2 framing layer for some occasion.
+* Data Source: Google BigQuery: 'Import via Cloud Storage' did not use Cloud Storage but loaded data as a stream.
+* Data Source: On the SQL import dialog, when clicking the edge of the Run button, it did not execute the updated SQL query.
+* Data Source: Error was raised from refreshing Custom R Data Source Step right after EDF import.
+
+* Summary view: If you created a bar chart from the Correlation mode, the default aggregation function became "Sum". It should be "Mean".
+* Summary View: It showed an incorrect number of NA values if there were character data starting with "NA".
+* Summary View: Summary View showed a blank screen when navigating from Analytics view that had an error.
+
+
+* Table View: Now the Table View shows numbers with decimal separators.
+
+
+* Data Wrangling: The "Numeric Type convert" option was not available when selecting multiple logical columns.
+* Data Wrangling: After copying a data frame, the hover pop-up didn't show chart thumbnails.
+* Data Wrangling: After deleting a data frame, if you re-used the same name for copying another data frame, the previously selected view was displayed instead of Summary View.
+* Data Wrangling: On Create Bin UI, changing the method resulted in an error.
+* Data Wrangling: On the data frame list, the currently Selected Data Frame was unselected when creating a new note.
+* Data Wrangling: When creating N-Grams, it did not work if the same column was assigned for both Document ID and Sentence ID.
+* Data Wrangling: Error "Cannot read property 'type' of undefined" was raised if a Data Frame referenced from a step like Join or Merge was renamed.
+* Data Wrangling: Filter: For the Year / Month option, changed to show the locale neutral example as the placeholder text in the input field.
+* Data Wrangling: Filter: When today's date is the end of the month such as Mar 31st, the "Previous Month" filter operator did not work.
+* Data Wrangling: The Merge step should not show its own Data Frame or Branch as a possible target.
+* Data Wrangling: Mutate Multiple Dialog: Right-hand side options were not shown for data types other than character and logical.
+* Data Wrangling: On Summarize Group dialog, when typing the Japanese column name in the custom expression editor, the expression was removed.
+* Data Wrangling: Recreating a branch leads to a strange state where the main branch source is selected while viewing the branch.
+* Data Wrangling: The "Remove Text with Range Positions" option didn't work with a negative index.
+* Data Wrangling: Improved text for POSIXct and Date column menu label for Replace Value by Setting Conditions.
+* Data Wrangling: Added summarize_row function for summarizing values in different columns for each row.
+* Data Wrangling: The Text Wrangling dialog accidentally closed when selecting the "Extract Range of Text" option.
+* Data Wrangling: When creating a logical parameter from the Filter Dialog, the default value is not properly set, and an R error was raised.
+* Data Wrangling: When deleting a not selected data frame that had charts,  it ended up showing duplicated charts when creating a data frame with the same name.
+* Data Wrangling: When exporting a data frame, it didn't show a spin icon.
+* Data Wrangling: When importing a data frame, the newly selected data frame was not selected for some occasions.
+* Data Wrangling: When splitting a filter step that contained a disabled token, an error with the message "Assertion failed" was displayed.
+
+
+* Chart: The "Tick Label Auto Scaling" option was missing in Line and Area charts.
+* Chart: A grayscale color palette should be added to the color palette list for publications.
+* Chart: Adding Limit on Word Cloud Word, Enabling Limit by default on Bar X and Word Cloud Word.
+* Chart: Bubble: The "As Numeric" function didn't work in the same way as other numeric functions such as "As Integer".
+* Chart: Bubble: No P-Value showed up in the Trend Line if number columns were assigned to both X and Y axes with the "As Integer" function.
+* Chart: Bubble: Trend Line was off if number columns were assigned to both X and Y axes with the "As Discrete" function.
+* Chart: Highlighted items didn't come at the top in the legend area if you chose the "Horizontal" orientation in the Bar chart.
+* Chart: You couldn't access the Color Setting if you had multiple columns assigned to Y-Axis and no column for Color.
+* Chart: Map: When you created a Map and assigned a column to the Color, the green information text for the "Equal Width" bucketing option didn't show up.
+* Chart: Now the text sort for non-English text in the legend is consistent between Windows and Mac.
+* Chart: If you used Repeat By and you had only 1 small multiple, it should use the full width of the chart view area regardless of the layout setting.
+* Chart: Summarize Table didn't show the green information text for the "Other Group" setting if a date column was assigned to "Group".
+* Chart: If you exported a Pivot Table to Excel, the numeric data were treated as text if the numeric column contained NA values.
+
+
+* Analytics: When in Analytics View, the spin icon was removed in the middle of switching the data frame.
+* Analytics: Correlation by Category Step: With Japanese UI language, sum and medial labels are not translated in Japanese.
+* Analytics: Correlation Step: The View type selector disappeared when selecting columns in the Column Selection dialog.
+* Analytics: Improved the UI by reducing unnecessary space between Analytics tabs.
+* Analytics: K-means: Stacked Bar failed to render and showed an error if there were many unique values in the column assigned to the Label Column.
+* Analytics: Market Basket Analysis Step: Auto-selection of support threshold is made available on Analytics Step too.
+* Analytics: After moving the Analytics tab by drag and drop, selecting the Correlation Analytics View tab sometimes hangs.
+* Analytics: Time Series Forecast (Prophet): Made built-in country holiday data available for Analytics Step too.
+* Analytics: Random Forest, XGBoost: Column name with single quote character raised an error with message "error code 3".
+* Analytics: Total number of groups showing up in the "Other Group" green information text for a Date column was incorrect.
+* Analytics: Configuration on the type of variable importance was lost when the type of prediction model was switched.
+* Analytics: XGBoost: Horizontal scrollbar was not fully displayed when there were many analytics tabs on the Analytics View.
+* Analytics: K-means / PCA: If columns with types such as list, difftime, etc. were there in the input Data Frame, an error with a message such as "unimplemented type 'list'" was raised.
+* Analytics: Logistic Regression / GLM Binomial: Output column from prediction with new data "predicted_response" was renamed to "predicted_probability", just like other binary classification models.
+
+
+* Note: Charts didn't show up correctly if you restored the content from the history and clicked the preview.
+* Note: When opening a note, it did not show a spin icon.
+* Note: When opening a note, related data frames were not highlighted.
+* Note: When you opened a note in the full-screen mode, you couldn't close the note window.
+* Note: If you exported a note containing a Pivot Table with color as a Word Document, the Pivot Table in the exported document had unexpected data.
+* Slide: Clicking the "Fit in Screen" checkbox on a chart took you to the next slide.
+* Dashboard: Hitting the "Run" button on Dashboard reran steps after reference to an empty-list Parameter even if the Parameter is not changed.
+* Dashboard: When editing a dashboard, the "Set Height" label was always displayed even if the option was not selected.
+* Dashboard: When moving from "Fit to Screen" mode to "Fit Within the Specified Height", row height got shrunk.
+* Dashboard: When resizing a Dashboard Window, it triggered unnecessary re-rendering and took some time to finish.
+* Dashboard: When there is an empty row, now the "add new row" menu becomes disabled since adding repeating empty rows is not supported.
+
+
+* Parameter: After running a parameter without a default value, it showed the previous default value when opening the Parameter UI.
+* Parameter: Changed to always show the "Display As" input field.
+* Parameter: When running a parameter, changed the default for the "Auto Run" as unchecked.
+* Parameter: When creating a logical parameter, clicking on the Default checkbox didn't select all the options.
+* Parameter: Error was raised at importing EDF file with a Date / POSIXct Parameter with a relative date default value.
+* Parameter: It didn't create a parameter when clicking "Create Parameter" in the Filter dialog.
+* Parameter: Parameter appeared in filter command as @{[object Object]} if the parameter is picked implicitly as a result of operator change.
+* Parameter: The same column name showed up twice for the list of values' column selector.
+* Parameter: When changing parameter type from Date to Text, default date value type remained and it caused the unexpected default value was set for the parameter at runtime.
+* Parameter: When creating a new parameter, an existing parameter display name was pre-populated for the display name of the new parameter.
+* Parameter: When using the multi-select list of values parameter for filter "Is In" operator, it showed an empty screen when trying to open Parameter UI.
+* Parameter: When using the "today" as the default value of the Date parameter, if today was outside of min and max values, the parameter was not properly rendered.
+
+
+* Project: After deleting a custom R package, clicking the "Auto fix" button or the "Open (No User R Package)" button on the confirmation dialog did not open the project that referred to the R package.
+* Project: Clicking a script didn't highlight itself in the catalog tree.
+* Project: On the Project List, when a search keyword exists, if you delete a project then the unmatched project is also displayed as a search result.
+* Project: When clicking the Create Project button, it flickered.
+* Project: When closing a project, there was a lag even though the project did not have any data frames.
+* Project: When exiting a project, there was a case where you keep seeing an Error dialog and cannot exit the project.
+
+
+* Publish: Insights published to an on-premise Exploratory Server before hostname / IP address change was not recognized by Exploratory Desktop after the hostname / IP address change.
+* Publish: When publishing an insight with Google Sheet Data source, etc. which was just imported via EDF file, without creating a Connection for it in the Project, it failed.
+* Export: Exporting EDF file into another drive, such as D: drive or Google Drive failed and showed an error “cross-device link not permitted, rename”.
+* General: Creating Project could fail because of an error from the user's custom pre-commit Git hook (e.g. git-secrets).
+* General: .git directory was included in exported Project zip files, but we stopped including it for size reduction and speed.
+
+
 ## 6.4.6
 
 Released on 3/1/2021.
@@ -24,7 +182,7 @@ Released on 3/1/2021.
 
 
 * Dashboard: When adding a chart to a row, charts' widths were not proportionally distributed.
-* Dashboard: When adding a chart to an existing dashboard created with the previous version, the added chart's width was not adjusted properly. 
+* Dashboard: When adding a chart to an existing dashboard created with the previous version, the added chart's width was not adjusted properly.
 
 
 ## 6.4.5
