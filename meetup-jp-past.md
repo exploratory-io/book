@@ -44,6 +44,10 @@
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/OE1PLMltDT8?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
+スライド：
+
+<script async class="speakerdeck-embed" data-id="5611f85d991241b19b2c17c1dbcc68ce" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
 
 ## 木の香往診クリニック 松本 真二様
 
