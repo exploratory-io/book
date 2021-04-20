@@ -1,5 +1,39 @@
 # Release Note
 
+## 6.5.0.14
+
+Released on 4/20/2021
+
+### Download Links
+
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.5.0.14.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.5.0.14.tar.gz)
+
+### Enhancements
+
+* Insight: Now you can choose the "Owned by Team" scope on the Insight search page.
+* Insight: Now you can receive email notifications by subscribing to Insights that are scheduled regularly.
+* Insight: Now Script can be published along with Insights.
+* General: Support for accessing data files on Google Drive.
+
+### Bug Fixes
+
+* Schedule: Running a Dashboard with many Charts or Analytics failed, and the spin icon on the Insight page kept spinning after the failure as if the scheduled job was going on.
+* Server: When using relative date such as "today" as the default value of a Date or POSIXct parameter, if the relative date was outside of min and max, the Parameter was not properly rendered.
+* Server: Download button was not enabled as expected after enabling Parameters.
+* Server: When opening a list of values in the Parameter pane, the options were cut off at the bottom and not fully visible.
+* Insight: The view stats dialog showed an error if the Insight was shared as a Team.
+* Insight: The hover pop-up for the "Download" button became incorrect once you updated the share setting on the Insight page.
+* Insight: Accessing the CSV API URL of the public data share returned a 500 error.
+* Insight: Histogram data on the user stats page was incorrect.
+* Insight: Thumbnails didn't show for Insights that were shared as a Team.
+* Parameter: Turning Parameters on at an Insight page failed if a parameter with list of value that is dynamically fetched from another Data Frame had the list-of-value display name column that is same as the value column.
+* Parameter: Updating the Parameter Option of a publicly shared Insight raised an error.
+* Summary View: It showed 100% for NA values even if there was no NA value if you had a character column with text data starting with "NA".
+* General: When the hostname or IP address of an on-premise Exploratory Server was changed, hostname/IP address of Data Catalog URL sent to Exploratory Desktop stayed old, causing error at importing data from Data Catalog.
+* General: A URL link to Insight in an invitation email was incorrect if the Insight was shared as a Team.
+
+
 ## 6.4.5.2
 
 Released on 2/25/2021
@@ -11,7 +45,7 @@ Released on 2/25/2021
 
 ### Enhancements
 
-* General: Now you can create a Team, assign members to the Team. Team members can collaboratively publish Insights as a team.
+* General: Now you can create a Team, assign members to the Team. Team members can collaboratively publish Insights as a Team.
 * Admin: Now it shows Collaboration Server version Info at the bottom of the page.
 * Admin: Now Collaboration Server Administrator can view the stats for all users from the Collaboration Server Administration page.
 * Data Catalog: Now you can highlight a row in Super Table by clicking the row.
@@ -33,7 +67,7 @@ Released on 2/25/2021
 * Parameter: Prediction models created by Analytics View was rebuilt when Parameter was turned on. Now we make use of published cached models to avoid potentially computationally expensive model building.
 * Parameter: With Dashboard, Note, or Slide, turning on the Parameters failed with a message "error code 3" if the value for a numeric text field parameter was set to an empty string.
 * Parameter: Word Cloud chart didn't change even if you changed the parameter values.
-* Schedule: After re-authorizing the OAuth access, it didn't return to the original insight page where you started the re-authorization process.
+* Schedule: After re-authorizing the OAuth access, it didn't return to the original Insight page where you started the re-authorization process.
 * Schedule: Refreshing data did not work for the Weather Data.
 
 
@@ -94,7 +128,7 @@ Released on 9/20/2020
 ### Enhancements
 
 * Data Catalog: Support "History" tab next to the "Metadata" tab in published Data Shares.
-* Insight: Data Range search option improvement to show the most viewed insights based on the last N period in Insight view.
+* Insight: Data Range search option improvement to show the most viewed Insights based on the last N period in Insight view.
 * Insight: Tile view support in Insight view
 * Insight: Insight Search: Page loading performance improvement.
 * Parameter: Partial chart refreshing support for markdown reports (Dashboard, Slides, Note)
