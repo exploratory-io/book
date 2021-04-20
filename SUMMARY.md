@@ -22,8 +22,9 @@
     * [Data](share/data.md)
     * [Report (Note / Slides / Dashbaord)](share/note.md)
   * [Project]()
-   * [Import](project/import.md)
-   * [Export](project/export.md)   
+    * [Import](project/import.md)
+    * [Export](project/export.md)   
+    * [Search](project/search.md)   
 
 
 * [Data Import](data_import.md)
