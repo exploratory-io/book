@@ -5,14 +5,17 @@
 ## Column Assignments
 
 * Word - Assign a column that contains words that you want to plot. 
-* Color By - Assign a column that contains word frequency. The values should be positive numeric values. It doesn't show words with 0 or negative values. Take a look at [Color](color.md) section for more details.
+* Color By - Assign a column for the word colors. It can be either a categorical (text) column or numeric column. If you have NA values in a categorical column, NA will be treated as one of categories. If you have NA values in a numeric column, the corresponding words won't show up on a plot. 
+* Size - Assign a column for the word size. 
 
+
+## Limit Values
+
+You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail.
 
 ## Configuration
 
-![](images/wordcloud-config.png)
-
+* Width: Width of the plot in pixel.
+* Height: Width of the plot in pixel.
 * Rotated Text Ratio (0-1) - This controls the ratio of words displayed vertically (90 degree rotation). For example, if you set 0.5 half of the words are displayed vertically.
 * Min Frequency for Words - Words whose frequency is below this Minimum Frequency will not be plotted.
-* Max Number of Words - Maximum number of words to be plotted. least frequent terms dropped
-* Word Size Range - You can set the minimum and maximum size of the word size. Note that this is not a font size, but the size of the "word". 

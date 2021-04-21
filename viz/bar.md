@@ -60,7 +60,7 @@ You can categorize numeric values inside the chart. See [Category(Binning)](cate
 
 ## Limit Values
 
-You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail.
+You can use Limit Values to filter the categories by the aggregated values. It is on by default for X-Axis. See [Limit Values](limit.md) for the detail. 
 
 ## Custom Function
 

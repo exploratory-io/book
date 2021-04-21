@@ -25,8 +25,9 @@
   * [Share (日本語)](share/share_ja.md)
     * [共有のタイプ](share/share_type_ja.md)
   * [Project]()
-   * [Import](project/import.md)
-   * [Export](project/export.md)   
+    * [Import](project/import.md)
+    * [Export](project/export.md)   
+    * [Search](project/search.md)   
 
 
 * [Data Import](data_import.md)
@@ -180,6 +181,7 @@
      * [Missing Value Handling](viz/missing-value-handling.md)
      * [Rename Column Names](viz/rename-column-names.md)
      * [Axis Setting](viz/dualy-setting.md)
+     * [Axis Formatting](viz/axis-format.md)
 
 
 * [Analytics](analytics.md)

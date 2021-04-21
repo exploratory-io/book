@@ -1,20 +1,12 @@
-# Limit Values
+# Axis Formatting
 
-The Limit Values feature literally limits/filters output of the categorical values by the conditions.
+Axis Formatting is available if you assign a Date or POSIXct column. 
 
-Limit Values is supported in the following chart types.
+Axis Foramtting is supported in the following chart types.
 
-* Bar (X-Axis, Color, Repeat By)
-* Line  (Color, Repeat By)
-* Area (Color, Repeat By)
-* Scatter (With Aggregation) (X-Axis, Y-Axis, Color, Repeat By, Group By)
-* Boxplot (X-Axis, Color, Repeat By)
-* Violin (X-Axis, Color, Repeat By)
-* Histogram (Color, Repeat By)
-* Density Plot (Color, Repeat By)
-* Error Bar (X-Axis, Color, Repeat By)
-* Map - Extension (Color)
-
+* Bar (X-Axis)
+* Line (X-Axis)
+* Area (X-Axis)
 
 ## Overview
 
