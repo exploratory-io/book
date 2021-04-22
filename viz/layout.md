@@ -85,7 +85,14 @@ Following layout properties are available for those type of charts.
   * Font Size - Font size for the legend text in pixel
 * Plot Area 
   * Number of Decimal Digits - Number of decimal digits to round. 
-  
+
+
+### Tick Label Auto Scaling
+
+If you assign a numeric, Date or POSIXct column to X-Axis and you want to show the labels for all the data points on X-Axis, you can uncheck the "Tick Label Auto Scaling" option. This option is currently avaiable in Bar, Line and Area charts. 
+
+![](images/tick-label-auto-scaling.png)
+
 ## Maps
 
 Maps includes following chart types.

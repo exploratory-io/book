@@ -43,7 +43,8 @@ Input data should be a time series data with category. Each row should represent
   * NA Fill Type - Ending - How to fill NAs that appear after the last non-NA value in a time series.
     * Fill with 0
     * Fill with Last Non-NA Value
-  * Max Category NA Ratio - If the time series data for a category has more NAs than this ratio, the category is removed from the data before the clustering is performed.
+  * Remove Groups When NA Ratio Is Greater Than - If the time series data for a category has more NAs than this ratio, the category is removed from the data before the clustering is performed.
+  * Normalize Value - Whether to normalize the aggregated values or not.
   * Random Seed - Random seed set before the clustering, so that the results are constant when the same calculations are repeated.
 
 ## R Package
