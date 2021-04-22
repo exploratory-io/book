@@ -17,14 +17,24 @@
          "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
         },
         {
-         "title": "ヒートマップの作り方",
-         "desc": "ヒートマップの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
+         "title": "エリアチャートの作り方",
+         "desc": "エリアチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/bRd2lAx7Iy"
         },
         {
-         "title": "箱ヒゲ図の作り方",
-         "desc": "箱ヒゲ図の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/17-skB4kPv4JL"
+         "title": "パイチャートの作り方",
+         "desc": "パイチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/OjL5DOn1pr"
+        },
+        {
+         "title": "ヒストグラムの作り方",
+         "desc": "ヒストグラムの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/UGZ4vyR3GG"
+        },
+        {
+         "title": "密度曲線の作り方",
+         "desc": "密度曲線の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/eck4bdS4Wl"
         },
         {
          "title": "散布図（集計なし）の作り方",
@@ -37,6 +47,26 @@
          "url": "https://exploratory.io/note/GMq1Qom5tS/rHW8oVO8GS"
         },
         {
+         "title": "箱ヒゲ図の作り方",
+         "desc": "箱ヒゲ図の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/17-skB4kPv4JL"
+        },
+        {
+         "title": "バイオリン図の作り方",
+         "desc": "バイオリン図の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/FIL2lsu3rR"
+        },
+        {
+         "title": "エラーバーの作り方",
+         "desc": "エラーバーの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/RJX0NGW1hl"
+        },
+        {
+         "title": "ヒートマップの作り方",
+         "desc": "ヒートマップの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
+        },
+        {
          "title": "地図 - 標準の使い方",
          "desc": "地図 - 標準の使い方についてご紹介します。",
          "url": "https://exploratory.io/note/GMq1Qom5tS/GWw6gtb4rU"
@@ -45,6 +75,16 @@
         "title": "地図 - 経度/緯度の作り方",
         "desc": "地図 - 経度/緯度の作り方をご紹介します。",
         "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
+       },
+       {
+        "title": "ナンバーの作り方",
+        "desc": "ナンバーの作り方をご紹介します。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/biG3kLJ2qy"
+       },
+       {
+        "title": "ワードクラウドの作り方",
+        "desc": "ワードクラウドの作り方をご紹介します。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/oHN4Egn2UY"
        }
       ]
     },
