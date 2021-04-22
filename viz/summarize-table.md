@@ -36,6 +36,34 @@ It opens up the Total Setting dialog. You can hange the aggregation function for
 ![](images/stable7.png)
 
 
+
+## Calculation Target for Total Calculation
+
+You can choose how to calculate the totals/subtotals at the Calculation Target in the Setting dialog for total.
+
+* Data After Aggregation: Totals and subtotals are calculated based on the cell values in the Pivot Table which are already aggregated. 
+* Data Before Aggregation: Totals and subtotals are calculated based on the raw data before any aggregations. 
+
+
+### Limitations of the "Data Before Aggregation" option
+
+There are a couple of known limitations for the "Data Before Aggregation" option.
+
+* The total calculation ignores the Window Calculation if you use any of the Window Calculation at the Value.
+* The total calculation doesn't work with the "Custom Calculation" at the Value.
+
+
+
+![](images/stable8.png)
+
+
+![](images/stable9.png)
+
+
+
+
+
+
 ## Formatting Columns
 
 You can format each Row Header and Value column. You can access the Column Format dialog by selecting "Format" menu in the column menu next to the column name dropdown. See 
