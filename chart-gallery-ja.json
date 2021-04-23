@@ -7,6 +7,21 @@
       "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
+         "title": "ピボットテーブルの作り方",
+         "desc": "ピボットテーブルの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/FAQ5WqV0xM"
+        },
+        {
+         "title": "集計テーブルの作り方",
+         "desc": "集計テーブルの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/RMB5wbA4Rs"
+        },
+        {
+         "title": "テーブルの作り方",
+         "desc": "テーブルの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/ktS2eEK6jW"
+        },
+        {
          "title": "バーチャートの作り方",
          "desc": "バーチャートの作り方をご紹介します。",
          "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
