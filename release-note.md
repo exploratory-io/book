@@ -5,6 +5,9 @@
 
 Released on 4/19/2021.
 
+
+Release announcement: https://blog.exploratory.io/exploratory-v6-5-released-6ccb768993f3
+
 ### Enhancements
 
 * Generic: Now you can resize the data frame list width by drag and drop.
