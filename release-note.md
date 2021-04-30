@@ -1,5 +1,61 @@
 # Release Note
 
+## 6.5.1
+
+Released on 4/29/2021.
+
+
+### Enhancements
+
+* Data Source: S3: Support bucket search on the file list dialog.
+
+
+* Summary View: Now you can set how many columns to display on the screen.
+
+
+* Chart: Summarize Table: Now you can choose numeric operators such as 'Greater Than' in the 'Set Colors Conditionally' Visual Formatting for a logical column with an aggregation function that returns numeric values. 
+* Chart: Now you can hide axis labels from the Chart Property dialog. 
+
+
+### Bug Fixes
+
+* Data Source: After switching a data source, it updated the Data Frame as a merged Data Frame even if there is only one file associated with it.
+* Data Source: CSV Import: Improved 'C stack usage is too close to the limit' error message when the Data Separator mismatch happened.
+* Data Source: Google Drive: 'Error in curl::curl_fetch_memory(url, handle = handle) : Error in the HTTP2 framing layer' raised while navigation file list.
+* Data Source: On CSV/Excel Import dialog, Added 'Change' button from where you can change file selection.
+* Data Source: On Windows, Installation of Historical Stock Prices Data Source Extension failed while installing dependency package tidyverse.
+* Data Source: S3: Couldn't select a bucket when the AWS account did not have the list bucket permission.
+* Data Source: S3: On the file list dialog, folder structure was not properly shown and files with the same name displayed multiple times.
+* Data Source: When opening the Update Data Source dialog for the Data Frame created before version 6.5, the dialog title showed 'Import and merge' even if the Data Frame was created from a single CSV file.
+* Data Source: When updating the existing data source for a CSV/Excel file,  'Select',  'All',  'Conditions' radio buttons were displayed on the file list dialog even if the Data Frame was created from a single file.
+
+
+* Data Wrangling: Added text label for 'Confidential Interval Functions' in the column header menu.
+* Data Wrangling: Clicking a link in the function help dialog opened the document inside the Exploratory Desktop application.
+* Data Wrangling: Filter: The 'Create Parameter' link remained after switching to the Custom tab.
+* Data Wrangling: Now EDF import dialog validates a file extension and shows an error message if a non-EDF file is selected.
+* Data Wrangling: On Windows, when exporting data to Google Sheets, if a spreadsheet name that has multibyte characters is specified, those characters are garbled in the resulting spreadsheet name.
+* Data Wrangling: summarize_group function was inappropriately suggested in Mutate or Filter expression dialog.
+* Data Wrangling: When creating a branch, it showed 'Cannot read property 'then' of undefined is raised for some occasion.
+
+
+* Chart: Chart Filter: When hovering over the long filter condition, the text inside the popup overflowed.
+* Chart: It should show a dialog to select either 'Limit' or 'Other Group' when assigning a column with too many unique values.
+* Chart: Summarize Table: The total value was incorrect if you set the 'Calculation Target' in the Total Setting dialog to 'Data Before Aggregation' and assigned a logical column to the Value with the '% of TRUE' aggregation function.
+
+
+* Analytics: Chart content was messed up unexpectedly by drag-and-dropping an Analytics tab.
+* Analytics: Correlation Analytics View raised an error with the message "'x' must be a numeric vector" when all the input columns were logical type.
+* Analytics: Correlation: The Significance chart showed an error "Invalid response (expecting SEXP)" if you chose many columns.
+
+
+* Parameter: When hitting the Enter Key after selecting an item, the Parameter didn't get executed.
+
+
+* General: An error "Cannot read property 'getId' of null" showed up right after creating a Script and moving to a Data Frame.
+* General: If the 'Predict with Model' step was used, there were cases where an error with the message "Cannot read property 'get' of undefined" was raised when trying to duplicate a Data Frame.
+* General: Server: When a Script was imported through an EDF file downloaded from an On-Premise Exploratory Server, its internal ID was displayed in place of the name of the Script.
+
 
 ## 6.5.0
 
