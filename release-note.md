@@ -7,20 +7,32 @@ Released on 5/2/2021.
 
 ### Enhancements
 
-* Data Source: S3: Support bucket search on the file list dialog.
+* Data Source: S3: You can now search the bucket.
+* Data Source: CSV Import: Improved 'C stack usage is too close to the limit' error message when the Data Separator mismatch happened.
 
 
-* Summary View: Now you can set how many columns to display on the screen.
+* Summary View: Now you can set how many columns to show.
 
 
-* Chart: Summarize Table: Now you can choose numeric operators such as 'Greater Than' in the 'Set Colors Conditionally' Visual Formatting for a logical column with an aggregation function that returns numeric values. 
-* Chart: Now you can hide axis labels from the Chart Property dialog. 
+* Chart: It should show a dialog to select either 'Limit' or 'Other Group' when assigning a column with too many unique values.
+* Chart: Summarize Table: Now you can choose numeric operators such as 'Greater Than' for the conditional color formatting for the logical columns.
+* Chart: Now you can hide axis labels from the Chart Property dialog.
+
+
+* Data Wrangling: Now EDF import dialog validates a file extension and shows an error message if a non-EDF file is selected.
+* Data Wrangling: Support parameter syntax for 'Replace Values By Setting' conditions.
+
+
+* Parameter: Now you can hit the Enter Key to execute inside the Parameter pane.
+
+
+* Project: Now the 'data frame export' exports all the data frames that are referenced (e.g. via Join) from the main data frame you are trying to export.
+
 
 
 ### Bug Fixes
 
 * Data Source: After switching a data source, it updated the Data Frame as a merged Data Frame even if there is only one file associated with it.
-* Data Source: CSV Import: Improved 'C stack usage is too close to the limit' error message when the Data Separator mismatch happened.
 * Data Source: Google Drive: 'Error in curl::curl_fetch_memory(url, handle = handle) : Error in the HTTP2 framing layer' raised while navigation file list.
 * Data Source: On CSV/Excel Import dialog, Added 'Change' button from where you can change file selection.
 * Data Source: On Windows, Installation of Historical Stock Prices Data Source Extension failed while installing dependency package tidyverse.
@@ -34,18 +46,15 @@ Released on 5/2/2021.
 * Data Wrangling: Added text label for 'Confidential Interval Functions' in the column header menu.
 * Data Wrangling: Clicking a link in the function help dialog opened the document inside the Exploratory Desktop application.
 * Data Wrangling: Filter: The 'Create Parameter' link remained after switching to the Custom tab.
-* Data Wrangling: Now EDF import dialog validates a file extension and shows an error message if a non-EDF file is selected.
 * Data Wrangling: On Windows, when exporting data to Google Sheets, if a spreadsheet name that has multibyte characters is specified, those characters are garbled in the resulting spreadsheet name.
 * Data Wrangling: summarize_group function was inappropriately suggested in Mutate or Filter expression dialog.
 * Data Wrangling: When creating a branch, it showed 'Cannot read property 'then' of undefined is raised for some occasion.
-* Data Wrangling: Support parameter syntax for 'Replace Values By Setting' conditions.
 * Data Wrangling: There were cases where Analytics View was lost when the Data Frame on it was renamed, if the "Predict with Model" Step was used.
 * Data Wrangling: When clicking the Cancel button on the Update Data Source dialog, the data frame selection was removed from the data frame list.
-* Data Wrangling: Opening an existing Data Frame failed with an error "Invalid UTF8 payload" once in a while.
+* Data Wrangling: Opening an existing data frame failed with an error "Invalid UTF8 payload" once in a while.
 
 
 * Chart: Chart Filter: When hovering over the long filter condition, the text inside the popup overflowed.
-* Chart: It should show a dialog to select either 'Limit' or 'Other Group' when assigning a column with too many unique values.
 * Chart: Summarize Table: The total value was incorrect if you set the 'Calculation Target' in the Total Setting dialog to 'Data Before Aggregation' and assigned a logical column to the Value with the '% of TRUE' aggregation function.
 * Chart: Scatter: If you assigned a character column with numeric character data to the Label, the number formatting was applied to the data.
 * Chart: Values on the plot area didn't align if you assign many columns to Y-Axis in the Bar chart with 'Grouped' Bar Chart Type.
@@ -54,16 +63,12 @@ Released on 5/2/2021.
 
 * Analytics: Chart content was messed up unexpectedly by drag-and-dropping an Analytics tab.
 * Analytics: Correlation Analytics View raised an error with the message "'x' must be a numeric vector" when all the input columns were logical type.
-* Analytics: Correlation: The Significance chart showed an error "Invalid response (expecting SEXP)" if you chose many columns.
-
-
-* Parameter: When hitting the Enter Key after selecting an item, the Parameter didn't get executed.
+* Analytics: Correlation: The Significance chart showed an error "Invalid response (expecting SEXP)" if you chose too many columns.
 
 
 * General: An error "Cannot read property 'getId' of null" showed up right after creating a Script and moving to a Data Frame.
-* General: If the 'Predict with Model' step was used, there were cases where an error with the message "Cannot read property 'get' of undefined" was raised when trying to duplicate a Data Frame.
+* General: If the 'Predict with Model' step was used, there were cases where an error with the message "Cannot read property 'get' of undefined" was raised when trying to duplicate or rename the existing data frame.
 * General: Server: When a Script was imported through an EDF file downloaded from an On-Premise Exploratory Server, its internal ID was displayed in place of the name of the Script.
-* General: Now, exported Data Frame File (.df file) includes other necessary Data Frames that are referenced (e.g. via Join) from the main Data Frame to be exported.
 
 
 ## 6.5.0
