@@ -2,7 +2,7 @@
 
 ## 6.5.1
 
-Released on 4/29/2021.
+Released on 5/2/2021.
 
 
 ### Enhancements
@@ -28,6 +28,7 @@ Released on 4/29/2021.
 * Data Source: S3: On the file list dialog, folder structure was not properly shown and files with the same name displayed multiple times.
 * Data Source: When opening the Update Data Source dialog for the Data Frame created before version 6.5, the dialog title showed 'Import and merge' even if the Data Frame was created from a single CSV file.
 * Data Source: When updating the existing data source for a CSV/Excel file,  'Select',  'All',  'Conditions' radio buttons were displayed on the file list dialog even if the Data Frame was created from a single file.
+* Data Source: Google Drive: When a file name contained trailing space, it did not show up in the file list.
 
 
 * Data Wrangling: Added text label for 'Confidential Interval Functions' in the column header menu.
@@ -37,11 +38,18 @@ Released on 4/29/2021.
 * Data Wrangling: On Windows, when exporting data to Google Sheets, if a spreadsheet name that has multibyte characters is specified, those characters are garbled in the resulting spreadsheet name.
 * Data Wrangling: summarize_group function was inappropriately suggested in Mutate or Filter expression dialog.
 * Data Wrangling: When creating a branch, it showed 'Cannot read property 'then' of undefined is raised for some occasion.
+* Data Wrangling: Support parameter syntax for 'Replace Values By Setting' conditions.
+* Data Wrangling: There were cases where Analytics View was lost when the Data Frame on it was renamed, if the "Predict with Model" Step was used.
+* Data Wrangling: When clicking the Cancel button on the Update Data Source dialog, the data frame selection was removed from the data frame list.
+* Data Wrangling: Opening an existing Data Frame failed with an error "Invalid UTF8 payload" once in a while.
 
 
 * Chart: Chart Filter: When hovering over the long filter condition, the text inside the popup overflowed.
 * Chart: It should show a dialog to select either 'Limit' or 'Other Group' when assigning a column with too many unique values.
 * Chart: Summarize Table: The total value was incorrect if you set the 'Calculation Target' in the Total Setting dialog to 'Data Before Aggregation' and assigned a logical column to the Value with the '% of TRUE' aggregation function.
+* Chart: Scatter: If you assigned a character column with numeric character data to the Label, the number formatting was applied to the data.
+* Chart: Values on the plot area didn't align if you assign many columns to Y-Axis in the Bar chart with 'Grouped' Bar Chart Type.
+* Chart/Analytics: Filter: Now it shows a confirmation dialog when trying to close the Filter dialog without entering the required fields.
 
 
 * Analytics: Chart content was messed up unexpectedly by drag-and-dropping an Analytics tab.
@@ -55,6 +63,7 @@ Released on 4/29/2021.
 * General: An error "Cannot read property 'getId' of null" showed up right after creating a Script and moving to a Data Frame.
 * General: If the 'Predict with Model' step was used, there were cases where an error with the message "Cannot read property 'get' of undefined" was raised when trying to duplicate a Data Frame.
 * General: Server: When a Script was imported through an EDF file downloaded from an On-Premise Exploratory Server, its internal ID was displayed in place of the name of the Script.
+* General: Now, exported Data Frame File (.df file) includes other necessary Data Frames that are referenced (e.g. via Join) from the main Data Frame to be exported.
 
 
 ## 6.5.0
