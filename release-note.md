@@ -1,5 +1,14 @@
 # Release Note
 
+## 6.5.2 (Mac Only)
+
+Released on 5/4/2021.
+
+### Bug Fixes
+
+* Install: On Mac, the install process kept requiring R to be installed even though it was already installed. This happened when the macOS account did not have privilege to write in /tmp directory.
+
+
 ## 6.5.1
 
 Released on 5/2/2021.
