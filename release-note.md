@@ -12,7 +12,7 @@ Released on 5/6/2021.
 * Data Wrangling: Made the drag and drop data frame list resizer easier to grip.
 
 
-* Chart: Values on the plot area were off on the Stacked Bar chart if you assigned a character column with only numbers such as “1” or “2” in the data to X-Axis.
+* Chart: Values on the plot area were off on the Stacked Bar chart if you assigned a character column with only numbers such as "1" or "2" in the data to X-Axis.
 * Chart/Analytics: After opening the filter dialog for an existing chart or analytics filter, clicking the Close button showed a Delete Incomplete Filter dialog even if the required field is entered.
 
 
