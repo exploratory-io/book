@@ -1,5 +1,25 @@
 # Release Note
 
+## 6.5.3
+
+Released on 5/6/2021.
+
+### Bug Fixes
+
+* Data Source: BigQuery: When importing data failed, the error message dialog didn't show up. 
+
+
+* Data Wrangling: Made the drag and drop data frame list resizer easier to grip.
+
+
+* Chart: Values on the plot area were off on the Stacked Bar chart if you assigned a character column with only numbers such as “1” or “2” in the data to X-Axis.
+* Chart/Analytics: After opening the filter dialog for an existing chart or analytics filter, clicking the Close button showed a Delete Incomplete Filter dialog even if the required field is entered.
+
+
+* General: On Windows, if Display Scaling is set as more than 100%, it showed an empty screen after selecting a data frame.
+
+
+
 ## 6.5.2 (Mac Only)
 
 Released on 5/4/2021.
