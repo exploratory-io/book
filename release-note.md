@@ -7,7 +7,7 @@ Released on 5/12/2021.
 
 ### Bug Fixes
 
-* Chart: If you chose Top N in the Limit, it dropped the largest value if you have ties in the values. 
+* Chart: If you chose Top N at the Limit dialog, it dropped the largest value once in a while if you have ties in the values. 
 
 
 ## 6.5.4
