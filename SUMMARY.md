@@ -182,6 +182,7 @@
      * [Rename Column Names](viz/rename-column-names.md)
      * [Axis Setting](viz/dualy-setting.md)
      * [Axis Formatting](viz/axis-format.md)
+     * [Number of Unique Values Check](viz/number-of-unuque-values-check.md)
 
 
 * [Analytics](analytics.md)

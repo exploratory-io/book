@@ -34,9 +34,11 @@ Following layout properties are available for those type of charts.
 * Chart
   * Title - Title text
   * Font Size (numbers in pixel)
-* X Axis 
-  * Title - X Axis title text 
+* X Axis Title
+  * Title Text 
   * Title Font Size (numbers in pixel)
+* X Axis 
+  * Show Label
   * Tick Label Font Size (numbers in pixel)
   * Show Grid Lines 
     * Default - Depending on chart type 
@@ -46,9 +48,11 @@ Following layout properties are available for those type of charts.
     * Default - Depending on chart type 
     * On - Show explicitly 
     * Off - Hide explicitly
+* Y Axis Title
+  * Title Text 
+  * Title Font Size (numbers in pixel)
 * Y Axis 
-  * Title - Y Axis title text 
-  * Title Font Size - Font size in pixel
+  * Show Label
   * Tick Label Font Size - Font size in pixel
   * Show Grid Lines 
     * Default - Depending on chart type 
@@ -58,9 +62,11 @@ Following layout properties are available for those type of charts.
     * Default - Depending on chart type 
     * On - Show explicitly 
     * Off - Hide explicitly 
+* Z Axis Title
+  * Title Text 
+  * Title Font Size (numbers in pixel)
 * Z Axis (Only available for Scatter (No Aggregation) charts with Z-Axis assigned) 
-  * Title - Z Axis title text 
-  * Title Font Size  (numbers in pixel)
+  * Show Label
   * Tick Label Font Size (numbers in pixel)
   * Show Grid Lines 
     * Default - Depending on chart type
