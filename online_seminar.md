@@ -1,22 +1,11 @@
-# Seminar #43 - Cohort Analysis Part 2 - Retention / Churn Analysis with Survival Curve
-## Date/Time: 2021/5/5 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-If you care about customer retention this chart is probably the most important chart among many. It shows a series retention rates over time by cohorts of when the customers have converted. By visualizing the trend you can spot where the retention problems are and understand the health of your business.
-
-But you will hit a few hurdles if you try to calculate such data manually, which is the foundation of the cohort chart.
-
-That's where a survival analysis algorithm can help.
-
-Kan will present what the survival analysis algorithm is and how can it be used to analyze your customer retention better, and how you can do it quickly in Exploratory.
-
-----
-
 # Seminar #44 - Cohort Analysis Part 3 - Calculating CLTV (Customer Life Time Value)
 ## Date/Time: 2021/5/12 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM GMT / 8PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+It's critical for any SaaS businesses to understand what the customer lifetime value (CLV) is. Without accurately estimating the customer life time value you don't know how much you can spend for acquiring customers via Sales or Marketing. However, calculating the CLV has been somewhat mysterious.
+
+In this seminar, Kan is going to introduce a way to estimate the CLV by using the Survival Curve data. 
 
 
 ----
@@ -38,7 +27,7 @@ Kan will present what the survival analysis algorithm is and how can it be used 
 ----
 
 # Seminar #47 - RFM Analysis for Sales Data
-## Date/Time: TBD 
+## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
