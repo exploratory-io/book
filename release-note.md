@@ -1,5 +1,41 @@
 # Release Note
 
+
+
+## 6.5.4
+
+Released on 5/11/2021.
+
+### Enhancements
+
+* Data Wrangling: Text Wrangling: Calculate TF IDF: Supported Term Frequency Column parameter.
+
+### Bug Fixes
+
+* Data Wrangling: On Replace Values with New Values dialog, there was no way to edit mapping for values that didn't exist in current data.
+* Data Wrangling: Separate Dialog: Corrected the position of the ‘Reset’ button.
+* Data Wrangling: The Source Step was overridden by the data wrangling step for some occasions.
+* Data Wrangling: Text Wrangling UI: Changed not to show NA on the preview table.
+* Data Wrangling: Text Wrangling UI: The Number of Preview Rows pulldown list showed unnecessary options when there were fewer than 1,000 preview rows.
+
+
+* Chart: Bar Chart was slow to render if you had a lot of unique values in the column for the X-Axis and specified the Sort By option.
+* Chart: Bar: Even if you limited the number of bars to 1,000 by the value using the Limit. it rendered more than 1,000 bars if there were ties in values.
+* Chart: The Highlight dialog didn't open by clicking the green Highlight info text after choosing 'Add All Values' in the Unique Value Check dialog.
+* Chart: The busy icon kept spinning if you created a chart from a character column that had a lot of unique values in the Summary View.
+* Chart: The Unique Values Check dialog should be draggable.
+* Chart: The default 'Group By' option of the Window Calculation didn't work as expected if you created a new Window Calculation.
+* Chart: You couldn't add the 2nd color condition by clicking '+' in the Column Formatting dialog.
+
+
+* Analytics: After moving the empty analytics tab by drag and drop, a blank analytics chart content was shown.
+
+
+* Export: In some cases, the last steps of data frames imported via the EDF file were missing.
+* General: When the last name was not set on the Account page, Exploratory Desktop showed the user ID instead of the user display name.
+
+
+
 ## 6.5.3
 
 Released on 5/6/2021.
