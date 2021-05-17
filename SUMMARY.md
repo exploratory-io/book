@@ -66,6 +66,7 @@
       * [Google Analytics (日本語)](import/google-analytics-ja.md) 
       * [Google Drive](import/google-drive.md)
       * [Google Spreadsheet](import/google-sheet.md)
+      * [Salesforce](import/salesforce.md)
       * [Twitter Search](import/twitter.md)      
       * [Stripe](import/stripe.md)
       * [MailChimp](import/mailchimp.md)
