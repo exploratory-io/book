@@ -6,20 +6,16 @@ Exploratory v6.6の紹介と、ユーザー様によるExploratoryを使った�
 
 * 日時: 2021年 6月 11日 (金) 12:00〜13:30（11:50開場）
 * 会場: Zoom会議
-* 次回開催の詳細が決まりましたらお知らせいたします。
-
+* 参加方法: [こちら](https://techplay.jp/event/818384)のページよりお申し込みください。
 
 <!--
-
-* 参加方法: [こちら](https://exploratory.io/note/exploratory/Exploratory-18-aET1CQf0)のページよりお申し込みください。
 
 ## スピーカー
 
 <img src="https://www.dropbox.com/s/who7b4f6d4u65el/bustup_photo_v3.png?raw=1" width="100%" />
 
+-->
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/jr7i9031e6bqba5/agenda_v4.png?raw=1" width="100%" />
-
--->
+<img src="https://www.dropbox.com/s/st3zjx61lbb57ex/agenda_v1.png?raw=1" width="100%" />
