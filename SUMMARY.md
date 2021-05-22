@@ -184,6 +184,7 @@
      * [Axis Setting](viz/dualy-setting.md)
      * [Axis Formatting](viz/axis-format.md)
      * [Number of Unique Values Check](viz/number-of-unuque-values-check.md)
+     * [Number of Unique Values Check (日本語)](viz/number-of-unuque-values-check-ja.md)
 
 
 * [Analytics](analytics.md)
