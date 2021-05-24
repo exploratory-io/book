@@ -145,7 +145,8 @@
      * [Scatter (With Aggregation)](viz/bubble.md)
      * [Boxplot](viz/boxplot.md)
      * [Violin](viz/violin.md)
-     * [Error Bar](viz/errbar.md)
+     * [Error Bar (No Aggregation)](viz/errbar-agg.md)
+     * [Error Bar (With Aggregation)](viz/errbar.md)
      * [Map - Standard](viz/easymap.md)
      * [Map - Extension](viz/geojson.md)
      * [Map - Long/Lat](viz/map.md)
@@ -183,6 +184,7 @@
      * [Axis Setting](viz/dualy-setting.md)
      * [Axis Formatting](viz/axis-format.md)
      * [Number of Unique Values Check](viz/number-of-unuque-values-check.md)
+     * [Number of Unique Values Check (日本語)](viz/number-of-unuque-values-check-ja.md)
 
 
 * [Analytics](analytics.md)
