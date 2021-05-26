@@ -8,13 +8,12 @@ Exploratory v6.6の紹介と、ユーザー様によるExploratoryを使った�
 * 会場: Zoom会議
 * 参加方法: [こちら](https://techplay.jp/event/818384)のページよりお申し込みください。
 
-<!--
 
 ## スピーカー
 
-<img src="https://www.dropbox.com/s/who7b4f6d4u65el/bustup_photo_v3.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/sslx4mi66st9jx9/bustup_photo_v1.png?raw=1" width="100%" />
 
--->
+
 
 ## アジェンダ
 
