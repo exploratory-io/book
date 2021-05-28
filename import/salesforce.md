@@ -59,7 +59,7 @@ Click the Parameter link to open the parameter pane.
 
 ![](images/open_salesforce_parameter.png)
 
-Then you can previewed the data filtered by the parameter.
+Select the parameter value and click the Run button, then you can previewed the data filtered by the parameter.
 
 ![](images/preview_salesforce_filtered_data.png)
 
