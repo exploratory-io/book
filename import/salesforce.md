@@ -1,7 +1,9 @@
 # Salesforce Data Import
 
-You can quickly import data from your Salesforce into Exploratory.
+To be announced.
+<!--
 
+You can quickly import data from your Salesforce into Exploratory.
 
 ## 1. Create a connection for Salesforce 
 
@@ -69,3 +71,4 @@ If it looks ok, then you can click 'Save' to import the data into Exploratory.
 ## 4. Known Restrictions
 
 If the selected columns don't have any values, they are not included in the result.
+-->
