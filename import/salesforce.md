@@ -39,3 +39,7 @@ Click "Run" button to see the data back from Salesforce.
 
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
+
+## 4. Known Restrictions
+
+If the selected columns are empty (i.e. all the value is NA), the query result do not include these empty columns. 
