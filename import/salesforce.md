@@ -68,4 +68,4 @@ If it looks ok, then you can click 'Save' to import the data into Exploratory.
 
 ## 4. Known Restrictions
 
-If the selected columns are empty (i.e. all the values are NA), the query result do not include these empty columns. 
+If the selected columns don't have any values, they are not included in the result.
