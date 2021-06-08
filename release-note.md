@@ -3,11 +3,11 @@
 
 ## 6.6.1
 
-Released on 6/8/2021.
+Released on 6/xx/2021.
 
 ### Enhancements
 
-* Data Source: Supported Salesforce Data Source
+* Data Source: Supported Salesforce Data Source.
 * Data Source: Now you can search tables in Database Import Dialog.
 
 
@@ -15,7 +15,7 @@ Released on 6/8/2021.
 * Summary View: Now you can export the Summary View data in the CSV and Excel format.
 
 
-* Data Wrangling: Supported the date picker on the Filter dialog
+* Data Wrangling: Supported the date picker on the Filter dialog.
 
 
 * Chart: Now you can create an Error Bar with the summarized data. 
@@ -30,8 +30,6 @@ Released on 6/8/2021.
 
 
 * Dashboard: Supported the option to set row height equally.
-
-
 
 
 ### Bug Fixes
@@ -59,7 +57,7 @@ Released on 6/8/2021.
 * Data Wrangling: Rename Dialog: Corrected the error message display position and fixed the issue that the error message was not cleared after name conflicts were resolved.
 * Data Wrangling: Right-hand side steps became empty when the underlying metadata file was broken.
 * Data Wrangling: Now it only shows SQL query on source steps.
-* Data Wrangling: Update text for Repeated Space
+* Data Wrangling: Update text for Repeated Space.
 
 
 * Chart: The "Show Detail" and "Exclude" options disappeared after changing the "# of Columns" options in the chart toolbar.
