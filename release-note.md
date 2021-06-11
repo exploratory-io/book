@@ -3,7 +3,7 @@
 
 ## 6.6.1
 
-Released on 6/xx/2021.
+Released on 6/10/2021.
 
 ### Enhancements
 
