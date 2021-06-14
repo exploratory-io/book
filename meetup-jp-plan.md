@@ -8,7 +8,6 @@ Exploratory v6.7の紹介と、ユーザー様によるExploratoryを使った�
 * 会場: Zoom会議
 * 詳細が決まりましたら、お知らせいたします。
 
-
 <!--
 * 参加方法: [こちら](https://techplay.jp/event/818384)のページよりお申し込みください。
 
