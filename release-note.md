@@ -1,6 +1,92 @@
 # Release Note
 
 
+## 6.6.1
+
+Released on 6/10/2021.
+
+### Enhancements
+
+* Data Source: Supported Salesforce Data Source.
+* Data Source: Now you can search tables in Database Import Dialog.
+
+
+* Summary View: Now you can choose which algorithm to use for the Correlation mode. 2 new algorithms (Decision Tree and Random Forest) are added.
+* Summary View: Now you can export the Summary View data in the CSV and Excel format.
+
+
+* Data Wrangling: Supported the date picker on the Filter dialog.
+
+
+* Chart: Now you can create an Error Bar with the summarized data. 
+* Chart: Analytics: Supported 'Export to Google Sheets' option in the Chart/Analytics export menu.
+* Chart: Now you can change the circle size and line width in the Error Bar. 
+* Chart: Now you can draw Reference Lines for each color. 
+* Chart: Now you can search the content in the Table from the toolbar. 
+
+
+* Analytics: Added a new Factor Analysis Analytics View.
+* Analytics: Added new Text Analysis Analytics View with word cloud and co-occurrence network.
+
+
+* Dashboard: Supported the option to set row height equally.
+
+
+### Bug Fixes
+
+* Data Source: At EDF import, if the creation of a missing connection was canceled, the Summary View was not refreshed with newly imported data.
+* Data Source: Athena: Switched to use odbc package instead of RODBC package.
+* Data Source: CSV and Excel files were not shown when the file extension was the upper case.
+* Data Source: Deprecated the Dremio data source.
+* Data Source: Google BigQuery: Supported datasets search feature on the import dialog.
+* Data Source: Google BigQuery: When updating or refreshing a data frame, an Invalid Project ID error was raised.
+* Data Source: Google Drive: After Importing a CSV or XLS file, clicking on the Refresh icon did not update the content.
+* Data Source: Google Drive: Could not switch a data source to another data source type.
+* Data Source: Google Drive: When trying to re-select the folder for the existing Google Drive Data Frame, it didn't show files under the folder.
+
+
+* Summary View: A chart created by the chart button in the Summary View always shows a 95% confidence interval range even if it is set to 99% or 90% in the Summary View.
+* Summary View: If you created an Analytics from the column header menu in the Correlation mode, the busy icon disappeared before finishing the chart rendering.
+
+
+* Data Wrangling: Added 'Convert Excel Numeric to Date' menu for character data type column menu.
+* Data Wrangling: Added 'Unite' to the column header menu.
+* Data Wrangling: Replace Values with Conditions UI: The cursor was not inside the input field when opening this dialog.
+* Data Wrangling: For the Date and POSIXct column menu, changed it to show Create Calculation Dialog with impute_na command for the missing value operation.
+* Data Wrangling: Filter: Improved UI by removing the extra spaces.
+* Data Wrangling: Rename Dialog: Corrected the error message display position and fixed the issue that the error message was not cleared after name conflicts were resolved.
+* Data Wrangling: Right-hand side steps became empty when the underlying metadata file was broken.
+* Data Wrangling: Now it only shows SQL query on source steps.
+* Data Wrangling: Update text for Repeated Space.
+
+
+* Chart: The "Show Detail" and "Exclude" options disappeared after changing the "# of Columns" options in the chart toolbar.
+* Chart: Exporting the chart data to the CSV failed if the path to the folder contained single quotes.
+* Chart: Reset the skipping unique value check setting when you assign a new column.
+* Chart: Values should start from the bottom to the top by default in the Stacked Bar and Area chart.
+* Chart/Analytics: Column selection should show a Pop-up for the long column names when you hover it.
+
+
+* Analytics: It shouldn't create number buckets if you assign a numeric column that contains only a couple number of unique values to the Color By or Repeat By. 
+* Analytics: The "Color Sort Order" chart property was missing in the Chart Property dialog in the Analytics view.
+* Analytics: The Variable Importance Bar chart failed to render and showed an error dialog with a message "key.replace is not a function".
+* Analytics: Y-Axis Range setting was not effective on the Prediction chart in the Linear Regression analytics.
+
+
+* Parameter: When switching LOV type from Character to Logical, it kept showing the Character list where it should show TRUE/FALSE.
+
+
+* Publish: Data Share: CSV option is now checked by default.
+
+
+* General: Git-related error was raised at closing a project if the password included single quote characters in the Public edition.
+* General: Error "Cannot read property 'type' of undefined" was raised if the join/merge target data frame was renamed/removed if its name included '-'.
+* General: 407 Proxy Authentication Required” should show appropriate error message rather than error report dialog
+* General: Certified R that runs natively on Apple silicon Macs (M1).
+* General: Certified R4.1
+* General: do_tfidf function miscalculated tf-idf.
+
+
 ## 6.5.5
 
 Released on 5/12/2021.

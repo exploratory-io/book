@@ -1,3 +1,66 @@
+# #19 - 2021/6/11(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/f5lszcc1sbvo0no/Exploratory-v66-Introduction-jp.001.jpeg?raw=1" width="100%" />
+
+
+## 開催要項
+
+* 日時: 2021年 6月 11日 (金) 12:00〜14:00（11:50開場）
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.6のご紹介（Exploratory CEO 西田勘一郎）
+* データラングリングを効率化するためのTips（ヒッドワークス合同会社 四方 秀和様）
+* サマリビューを起点としたデータ分析ワークフロー（ラクスル株式会社 根来 哲也様）
+* データ分析の再現性を高くするためのExploratoryの活用法（株式会社フォーバルテレコム 矢通 康弘様）
+
+## Exploratory 西田勘一郎
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/89opFD88qTw?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="3f455ea801ba4aa3b652cc62a31bf1bb" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## ヒッドワークス合同会社 四方 秀和様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/YzptLOP0wls?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="ffda568b1a0e4d6cbb8a1f4e6daaae82" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## ラクスル株式会社 根来 哲也様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/oJh1qs7HCcM?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="2eedb8bf14d74d139afbf55292cfb726" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+## 株式会社フォーバルテレコム 矢通 康弘様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/cuHQUI_har4?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="75e6044e5e904c1d9fac09f4f4c57a6c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+---
+
+
 # #18 - 2021/4/16(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/4s2uc3stv5qm1e4/cover-image.png?raw=1" width="100%" />
