@@ -1,6 +1,53 @@
 # Release Note
 
 
+## 6.6.2
+
+Released on 6/15/2021.
+
+### Enhancements
+
+* Data Source: Google BigQuery: Supported Page Size on the Google BigQuery Setup dialog. And now you can import the full result from a SQL query with many columns by setting a small number to the page size.
+
+
+* Analytics: Factor Analysis: Now X/Y axis labels of the biplot show the percentage of variances the factors can explain.
+* Analytics: Text Analysis: Now, "Words To Be Treated As One Word" does not need to be specified with separating spaces for languages like Japanese, which are without word-separating spaces.
+* Analytics: Factor Analysis: Added Summary tab that shows info such as the significance of the factor analysis.
+
+
+### Bug Fixes
+
+* Data Source: Could not add a new ODBC connection.
+* Data Source: MongoDB: Improved error message for SSL issue with Mongo Atlas connection.
+* Data Source: Salesforce SQL: When selecting a table from the schema tree, now it inserts the table name to the query editor.
+* Data Source: Salesforce: Improved error message for the case where the user did not have the Modify Metadata permission.
+* Data Source: Salesforce: Improved UI by switching Filter and Run button positions.
+
+
+* Summary View: The download button and configuration button overlapped each other in the Correlation toolbar.
+
+
+* Chart: If you exported chart data with reference lines to the CSV file, internal column names were shown up for the reference line data.
+* Chart: Table search performance improvement.
+* Chart/Analytics: The property dialog didn't close when you moved to a different view such as the Summary view or closed the project.
+
+
+* Analytics: Clicking outside the property dialog shouldn't close the dialog. 
+* Analytics: Correlation: Error "`f` must be a factor (or character vector)." was raised if the names of all the input columns are numbers.
+* Analytics: Time Series Clustering: Error "There are missing values in the series" was raised if one or more of the time series were constant.
+
+
+* Note: Chart failed to render if the chart name contained special characters such as "‗" on Windows. 
+* Dashboard: Improved UI by aligning row height between runtime and design time. 
+* Dashboard: Left and right margins were uneven in the preview screen.
+* Dashboard: Set Height Evenly Button overlapped with Published Icon.
+* Dashboard: When in Fit to Screen Mode, adding a new row pushed the page down and it overflowed vertically.
+* Dashboard: When switching from 'Fit to Screen' mode to 'Fit Within the Specified Height' mode, row height unexpectedly changed where it should keep the same height.
+
+
+* Installation: R: Improved Installation UI and now it shows CPU architecture name along with R version.
+
+
 ## 6.6.1
 
 Released on 6/10/2021.
