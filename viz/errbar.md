@@ -10,9 +10,6 @@
 * Calculation Type - You can select an error bar calculation type from the following options. The default is `Mean`.
   * Mean - Average based error bar chart. 
   * Ratio (%) - Ratio based error bar chart based on the count of values. 
-* Marker - You can select a marker type from the following options. The default is `Bar`.
-  * Bar - Suitable for comparing actual values and error bar ranges. 
-  * Circle - Suitable for comparing error bar ranges. 
 * X-Axis - Assign a column you want to show at X-Axis. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc. If you assign a Number column, you can choose either `As Number` to treat values as continuous values or `As Text` to treat values as categorical values.  
 * Y-Axis - Assign a column you want to show at Y-Axis. 
   * If the calculation type is `Mean`, you can only choose `Average` for the column function. 
@@ -23,12 +20,16 @@
     * Number of FALSE (logical only)
 * Range Type - You can select an error bar range type from the following options. The default is `Standard Error`.
   * Standard Error 
+  * 90% Confidence Interval 
   * 95% Confidence Interval 
   * 99% Confidence Interval 
   * 1 Standard Deviation
   * 2 Standard Deviation
   * 3 Standard Deviation
   * IQR
+* Marker - You can select a marker type from the following options. The default is `Bar`.
+  * Bar - Suitable for comparing actual values and error bar ranges. 
+  * Circle - Suitable for comparing error bar ranges. 
 * Color - Take a look at [Color](color.md) section for more details.
 * Sort By - Assign a column to use for Sorting the X-Axis values. The default is based on either the alphabetic order or the factor level order for Factor type columns.
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
