@@ -17,9 +17,9 @@ Released on 6/15/2021.
 
 ### Bug Fixes
 
-* Data Source: BigQuery: Clicking BigQuery icon on the Database Data Source dialog showed 'Error: Not found Dataset' when the selected billing project does not have any dataset.
-* Data Source: Could not add a new ODBC connection.
+* Data Source: Google BigQuery: Clicking BigQuery icon on the Database Data Source dialog showed 'Error: Not found Dataset' when the selected billing project does not have any dataset.
 * Data Source: MongoDB: Improved error message for SSL issue with Mongo Atlas connection.
+* Data Source: ODBC: Could not add a new ODBC connection.
 * Data Source: Salesforce SQL: When selecting a table from the schema tree, now it inserts the table name to the query editor.
 * Data Source: Salesforce: Improved error message for the case where the user did not have the Modify Metadata permission.
 * Data Source: Salesforce: Improved UI by switching Filter and Run button positions.
