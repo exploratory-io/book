@@ -67,6 +67,14 @@
 Take a look at [Reference Line](reference-line.md) section for more details.
 
 
+## Style 
+
+You can change the error bar styles from the "Style" setting at Y-Axis. You can change the followings.
+* Line Width: Thickness of the error bars.
+* Circle Size: Size of the circle. Available only for "Circle" marker option.
+* Horizontal Bar Width: Length of the horizontal bar part of the error bars. 
+
+
 ## Highlight 
 
 You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
