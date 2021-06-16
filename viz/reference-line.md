@@ -9,6 +9,7 @@
 * Histogram: X-Axis
 * Density Plot: X-Axis
 * Error Bar: Y-Axis
+* Error Bar (Summarized Data): Y-Axis
 
 Reference Line is available only when a numeric column is assigned to the target Axis. 
 
@@ -46,12 +47,15 @@ Following Reference Line types are available.
 * Group By
   * All - Against the all data.
   * X Axis - For each X Axis. 
+  * Color By - For each Color By.
   * Repeat By - For each Repeat By.
   * X Axis + Repeat By - For each X Axis and Repeat By. 
+  * Color By + Repeat By - For each Color By and Repeat By. 
 * Label - Label text that will show up in Popup and Legend.
 * Range Type - You can show the value distribution range. Only available for 'Mean' and 'Median' Reference Line types.
   * (None)
   * Standard Error 
+  * 90% Conf. Interval
   * 95% Conf. Interval
   * 99% Conf. Interval
   * 1 Standard Deviation
@@ -67,8 +71,11 @@ Following Reference Line types are available.
 * Line Length
 * Line Style 
   * Solid
-  * Dotted 
-  * Dot and Dash
+  * Dot
+  * Dash 
+  * Long Dash 
+  * Dash and Dot 
+  * Long Dash and Dot 
   
   
   

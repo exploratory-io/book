@@ -28,6 +28,7 @@ The Confidence Interval option calculates confidence interval ranges from data a
 
 There are the following options available for Range Function.
 
+* 90% Condfidence Interval
 * 95% Condfidence Interval
 * 99% Condfidence Interval
 * Standard Error
