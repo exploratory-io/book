@@ -16,7 +16,7 @@ Click Snowflake to select.
 
 If this is your first time to use Salesforce for the first time, below Dialog shows up.
 
-![](images/salesforce_oauth.png)
+![](images/salesforce-oauth.png)
 
 ## 2. Preview and Import
 
