@@ -2,24 +2,8 @@
 
 You can quickly import data from your Salesforce into Exploratory.
 
-## 1. Create a connection for Salesforce 
 
-First, you want to create a connection for Salesforce.
-
-![](images/salesforce-connection.png)
-
-After filling the below database information:
-
-- Server - Salesforce login server
-- Username - Username of the Salesforce
-- Password - Password of the Salesforce
-- Security Token - (Optional) Security token of the Salesforce
-
-
-Click ‘Test Connection’ button to make sure the information is correct, before you save it.
-
-
-## 2. Open Salesforce Import dialog
+## 1. Open Salesforce Import dialog
 
 Select 'Cloud Apps Data' from Add New Data Frame menu.
 
@@ -29,6 +13,10 @@ Click Snowflake to select.
 
 ![](images/salesforce-picker.png)
 
+
+If this is your first time to use Salesforce for the first time, below Dialog shows up.
+
+![](images/salesforce_oauth.png)
 
 ## 3. Preview and Import
 
@@ -65,6 +53,3 @@ Select the parameter value and click the Run button, then you can previewed the 
 
 If it looks ok, then you can click 'Save' to import the data into Exploratory.
 
-## 4. Known Restrictions
-
-If the selected columns don't have any values, they are not included in the result.
