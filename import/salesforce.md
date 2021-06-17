@@ -18,13 +18,13 @@ If this is your first time to use Salesforce for the first time, below Dialog sh
 
 ![](images/salesforce_oauth.png)
 
-## 3. Preview and Import
+## 2. Preview and Import
 
 Click "Run" button to see the data back from Salesforce. You can add filters to limit your query results.
 
 ![](images/salesforce-import.png)
 
-## 4. Using Parameters inside Filters.
+## 3. Using Parameters inside Filters.
 
 First, click the Add Filter Button.
 
