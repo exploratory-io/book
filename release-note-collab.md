@@ -1,5 +1,41 @@
 # Release Note
 
+## 6.6.2.0
+
+Released on 6/21/2021
+
+### Download Links
+
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.6.2.0.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.6.2.0.tar.gz)
+
+### Enhancements
+
+* General: Supported Salesforce Data Source Scheduling and Interactive mode.
+* Schedule: We now automatic retry failed schedules caused by a temporary 500/503 error from Google REST API.
+
+### Bug Fixes
+
+* Admin: Creating a new user failed after creating 3 new users.
+* Admin: it should ask "Logout and continue?" to proceed the user activation if you are already logged in as an Admin user and clicked a user activation link.
+* Admin: Translated “Are you sure?” message in Japanese.
+* Chart: Published chart should use the same UI locale that the user was using when the user published the chart on the Desktop.
+* Dashboard: Parameter failed to refresh a Table when you updated the paraeter and clicked the "OK" button if the Table is from Analytics Data tab.
+* General: When POSIXct column name contains period(.), table didn't show the data properly.
+* Insight: CSV API response missed the Content-Type HTTP header.
+* Insight: A URL link to the insight in the share notification email was incorrect for insights shared as team.
+* Insight: If deletion of a published data or chart was done from the server UI, the directory for the insight on the server was left, which took up disk spece unnecesarily.
+* Insight: If publishing of an Insight fails, directory on the server for the insight was left in the middle of the creation, which took up disk spece unnecesarily.
+* Parameter: An incorrect default value showed up in a character parameter if the parameter was originally created as a Date parameter and switched to the character type.
+* Parameter: Downloading chart data by clicking download button didn't work if you started the parameter session but didn't change the parameter yet.
+* Parameter: Error "error code 3" at enabling Parameters if data connections were not published together with the Insight.
+* Parameter: Parameter did not always use the the same time zone that was used when the insight was created on the Desktop.
+* Parameter: The "Download" button in the Parameter pane should be enabled from the beginning of the Parameter session even before clicking the "Run" button.
+* Parameter: When hitting enter Key after selecting item, the parameter didn't get executed
+* Schedule: Error "error code 3" at running a scheduled job if data connections were not published together with the insight.
+* Schedule: The scheduled job did not always use the the same time zone that was used when the Insight was created on the Desktop.
+
+
 ## 6.5.0.14
 
 Released on 4/20/2021
@@ -37,11 +73,6 @@ Released on 4/20/2021
 ## 6.4.5.2
 
 Released on 2/25/2021
-
-### Download Links
-
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.4.5.2.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.4.5.2.tar.gz)
 
 ### Enhancements
 
