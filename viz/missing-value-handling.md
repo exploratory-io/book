@@ -11,6 +11,7 @@ Missing Value Hanlding is available in the following charts.
 * Boxplot
 * Violin Plot
 * Error bar
+* Error Bar (Summarized Data)
 * Map - Long/Lat 
 
 
