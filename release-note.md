@@ -1,5 +1,54 @@
 # Release Note
 
+## 6.6.3
+
+Released on 6/24/2021.
+
+### Enhancements
+
+
+* Data Wrangling: Summarize Group: Supported Min and Max for Character Columns aggregation function.
+
+
+* Analytics: Text Analysis: Added "Words - Data" tab that shows and allows export of tokenized text data.
+
+
+* Dashboard: Maps in the Dashboard now remember the zoom level and center position if you update Maps in the Dashboard preview.
+
+
+### Bug Fixes
+
+* Data Source: Amazon S3/Google Drive: Changing file selection on Import Data Dialog showed there was another R running error.
+* Data Source: Clicking the Parameter link on the R Script Data Frame dialog did not respond.
+* Data Source: CSV/Excel Files: The file list is now sorted by Date Modified Column.
+* Data Source: Google Analytics: It failed to load data when the 'Goal 8 Completion' measure was selected.
+* Data Source: Google Analytics: View ID didn't have the required prefix and failed to load data for some occasion.
+* Data Source: Importing Remote CSV failed and showed another R process running error.
+* Data Source: Remote CSV File: After changing the URL, clicking the Run button did not refresh the preview table.
+* Data Source: Remote CSV File: Failed to load data when loading took more than 60 seconds.
+* Data Source: Salesforce icon on OAuth Dialog was squashed.
+* Data Source: When trying to import multiple CSV files with the "All" or "Conditions" option, changing the "Skip first N rows" parameter did not work.
+
+
+* Data Wrangling: Filter: If a filter step had only one token and was disabled,  there was no way to enable the token back.
+* Data Wrangling: Right hand-side step showed an empty screen for some occasion.
+* Data Wrangling: System-Level Timezone was not reflecting on data wrangling steps.
+
+
+* Chart: After reordering chart tabs by drag and drop, chart tabs order was not retained when the App was restarted.
+* Chart: Pivot Table: Column names in the exported CSV data didn't follow the display names defined in the Chart Property dialog.
+
+
+* Analytics: Factor Analysis: Using factoring method other than Minimum Residual did not work with the error message "Column MR1 doesn’t exist.".
+* Analytics: Rendering of the Prediction chart in the Random Forest Analytics was very slow if you selected character columns as Predictor Variables.
+* Analytics: Text Analysis: Error was raised if the input text column had NAs. Now we automatically filter out NA rows.
+
+
+* General: Error Report Dialog showed up when shutting down Exploratory after exporting a project.
+* General: NANO-Antivirus reported a false alarm with the previous release (6.6.2.3) of the Windows version.
+* General: The keyword clear button ("x" button) in the search input field should show up only if there is a keyword.
+ 
+
 
 ## 6.6.2
 
