@@ -1,6 +1,6 @@
 # Time Series Clustering
 
-Clusters multiple time series data into groups. (This is a feature planned for the upcoming release. Stay tuned!)
+Clusters multiple time series data into groups.
 
 # Input Data
 
