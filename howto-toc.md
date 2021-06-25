@@ -91,5 +91,5 @@
 
 ----
 
-* [Parameter](howto?q=tag%3Anote%20tag%3Aslide%20tag%3Adashboard&language=en)
+* [Parameter](howto?q=tag%3Aparameter&language=en)
 * [R Script](howto?q=tag%3A%22r%20script%22&language=en)
