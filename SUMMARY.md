@@ -195,6 +195,7 @@
    * [Distance by Category](analytics/similarity.md)
    * [K-Means Clustering](analytics/kmeans.md)
    * [Principal Component Analysis](analytics/pca.md)
+   * [Factor Analysis](analytics/factanal.md)
    * [Linear Regression Analysis](analytics/regression.md)
    * [Logistic Regression Analysis](analytics/logistic.md)
    * [Generalized Linear Models](analytics/glm.md)
