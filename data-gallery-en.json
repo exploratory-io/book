@@ -53,11 +53,6 @@
           "url": "https://exploratory.io/note/2ac8ae888097/How-to-access-MySQL-through-ssh-tunnel-sdN9olb8ey"
         },
         {
-          "title": "Import data from Dremio",
-          "desc": "This explains how to import data from Dremio.",
-          "url": "https://exploratory.io/note/2ac8ae888097/6753692980334964"
-        },
-        {
           "title": "Import data from Spark",
           "desc": "This explains how to import data from Spark.",
           "url": "https://exploratory.io/note/2ac8ae888097/8385836660075252"
