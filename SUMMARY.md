@@ -209,6 +209,7 @@
    * [Time Series Forecasting (ARIMA)](analytics/arima.md)
    * [Time Series Clustering](analytics/time_series_clustering.md)
    * [Anomaly Detection](analytics/anomaly.md)
+   * [Text Analysis](analytics/textanal.md)
    * [Market Basket Analysis](analytics/market_basket.md)
    * [T Test](analytics/t_test.md)
    * [ANOVA](analytics/anova.md)
