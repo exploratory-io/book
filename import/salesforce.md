@@ -53,3 +53,14 @@ Select the parameter value and click the Run button, then you can previewed the 
 
 If it looks ok, then you can click 'Save' to import the data into Exploratory.
 
+## 4 Restriction
+
+To use Salesforce Data Source, your Salesforce edition needs to be one of the followings:
+
+- Enterprise Edition
+- Unlimited Edition
+- Developer Edition
+- Performance Edition
+
+[Salesforce editions with API access](https://help.salesforce.com/articleView?id=000326486&type=1&mode=1)
+
