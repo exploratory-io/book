@@ -32,6 +32,10 @@ And it also need "holiday" column, so let's create it.
 
 ![](images/holiday_column.png)
 
+If you'd like to to have the effect of holiday before or after the holiday too, you can also add "lower_window" column and "upper_window" column.
+For example, if you want the holiday effect to take effect from 1 day before the holiday to 1 day after the holiday, you can set -1 to the "lower_window" column, and 1 to the "upper_window" column.
+For more detail on the content of the data frame for holidays, refer to [the official document of Prophet](https://facebook.github.io/prophet/docs/seasonality,_holiday_effects,_and_regressors.html).
+
 ## Use it from Time Series Forecast
 
 Then, you can choose this data frame from Time Series Forecast dialog and the dates in the data frame are recognized as holidays.
