@@ -1,6 +1,6 @@
-# Marketing Impact Analysis
+# Causal Impact Analysis
 
-With Marketing Impact Analysis, you can estimate impact of an event (advertisement, etc.) on a market, by using other markets to form a synthetic baseline.
+With Causal Impact Analysis, you can estimate impact of an event (advertisement, etc.) on a market, by using other markets to form a synthetic baseline.
 
 ## Input Data
 Input data should be a time series data frame. It should have following columns.
@@ -50,6 +50,7 @@ You can also access this feature from the column menu of the Measure Column. Mou
   * Output Type
   * Weight on Distance (vs Correlation) for Ranking Markets
   * Tail-Area Probability for Posterior Interval
+    * You can control the confidence level of the confidence intervals in the output. The default is 0.05 which translates into 95% confidence level. 
   * Number of MCMC Samples
   * Standardize Data
   * Prior Standard Deviation of Random Walk
