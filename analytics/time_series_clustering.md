@@ -23,12 +23,11 @@ Input data should be a time series data with category. Each row should represent
       * Soft DTW Centroids
       * Partition around Medoids
     * Distance Method - Method to calculate distance between the cluster center time series (centroid) and each time series for each iteration.
-      * DTW
       * DTW with L2 Norm
       * DTW Basic
-      * DTW Guided by Lemire's Lower Bound
-      * Keogh's Lower Bound for DTW
-      * Lemire's Lower Bound for DTW
+      * DTW Guided by Lemire's Lower Bound - 10% of the length of the data is set for the window size.
+      * Keogh's Lower Bound for DTW - 10% of the length of the data is set for the window size.
+      * Lemire's Lower Bound for DTW - 10% of the length of the data is set for the window size.
       * Shape-Based Distance
       * Global Alignment Kernels
       * Soft-DTW
