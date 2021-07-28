@@ -7,13 +7,14 @@ In this seminar, Kan will demonstrate how you can access Google BigQuery data in
 
 Agenda:
 
-* Access to BigQuery
-* Summary View
-* Visualization
-* Data Wrangling
-* Analytics
-* Schedule
-* Reproduce
+* Create a Connection
+* Configure for Bucket
+* Get Data with SQL
+* Create Charts
+* Parameterize SQL Queries
+* Create a Dashboard
+* Publish the Dashboard
+* Run SQL Query at Exploratory Server
 
 ----
 
