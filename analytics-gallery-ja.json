@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "title": "アナリティクスの種類",
+      "desc": "Exploratoryには様々なアナリティクスのタイプがあります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3AAnalytics&language=ja",
+      "insights": [
+       {
+        "title": "ランダムフォレストの使い方",
+        "desc": "ランダムフォレストの使い方をご紹介します。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/Awv4BdC2vr"
+       }
+      ]
+    }
+  ]
+}
