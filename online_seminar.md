@@ -1,34 +1,47 @@
-# Seminar #53 - Exploratory × Google Big Query
-## Date/Time: 7/28/2021
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-In this seminar, Kan will demonstrate how you can access Google BigQuery data in Exploratory and what you can do with Data Science workflow to make your data analysis more productive and reproducible.
-
-Agenda:
-
-* Create a Connection
-* Configure for Bucket
-* Get Data with SQL
-* Create Charts
-* Parameterize SQL Queries
-* Create a Dashboard
-* Publish the Dashboard
-* Run SQL Query at Exploratory Server
-
-----
-
-
-# Seminar #54 - Survey Data Analysis
+# Seminar #54 - Data Wrangling for Text Data
 ## Date/Time: 8/4/2021
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-In this seminar, Kan will demonstrate how you can access Google BigQuery data in Exploratory and what you can do with Data Science workflow to make your data analysis more productive and reproducible.
+One of the most common problems when it comes to data wrangling is the dirty text data. Cases (uppercase / lowercase) are not consistent, need to replace or remove certain letters or spaces from the text data, need to convert between various country codes, etc.
+
+Good news is that you can solve all these problems with UIs in Exploratory. In this seminar, Kan will demonstrate how to solve common problems with text data in Exploratory.
 
 Agenda:
 
-* Correlation Analysis
-* PCA
-* Factor Analysis
-* Survey Text Analysis
+1. Convert uppercase / lowercase
+2. Replace values with something else
+3. Replace a part of text with something else
+4. Remove some letters from text
+5. Remove extra spaces
+6. Extract letters inside brackets
+
+
+
+----
+
+# Seminar #55 - Measuring Customer Engagement - DAU/MAU & RFV
+## Date/Time: 8/25/2021
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+----
+
+# Seminar #56 - Survey Data Analysis Part 2 - Word Count & Document Clustering
+## Date/Time: 9/1/2021
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+
+----
+
+# Seminar #56 - Visualizing & Analyzing Time Series Data
+## Date/Time: 9/1/2021
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+
+----
