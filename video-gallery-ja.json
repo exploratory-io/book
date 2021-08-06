@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "title": "Data Wrangling",
+      "desc": "Videos for Data Wrangling.",
+      "moreButtonText": "More",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3AAnalytics&language=ja",
+      "insights": [
+       {
+        "title": "Data Wrangling: Convert Country Name & Code",
+        "desc": "Introducing how to convert country name & code.",
+        "videoId": "fM2ldcshWxs"
+       }
+      ]
+    }
+  ]
+}
