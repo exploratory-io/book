@@ -6,10 +6,45 @@
       "moreButtonText": "もっと見る",
       "moreButtonUrl": "https://exploratory.io/howto?q=tag%3AAnalytics&language=ja",
       "insights": [
+        {
+          "title": "相関の紹介",
+          "desc": "相関の使い方をご紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/ACO8snr6qm"
+       },
        {
-        "title": "ランダムフォレストの使い方",
+         "title": "線形回帰の紹介",
+         "desc": "線形回帰の使い方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/llv3NNC6Ij"
+       },
+       {
+         "title": "ロジスティック回帰の紹介",
+         "desc": "ロジスティック回帰の使い方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/ZSy0JQr3eO"
+       },
+       {
+        "title": "ランダムフォレストの紹介",
         "desc": "ランダムフォレストの使い方をご紹介します。",
         "url": "https://exploratory.io/note/GMq1Qom5tS/Awv4BdC2vr"
+       },
+       {
+         "title": "時系列予測 - Prophetの紹介",
+         "desc": "時系列予測の手法であるProphetの使い方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Prophet-LtL1AKy5yW"
+       },
+       {
+         "title": "生存曲線の紹介",
+         "desc": "生存曲線の使い方をご紹介します。",
+         "url": "https://exploratory.io/note/BWz1Bar4JF/FAQ-oNW6Fzd2Vo"
+       },
+       {
+         "title": "K-Meansクラスタリングの紹介",
+         "desc": "K-Meansクラスタリングの使い方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/K-Means-ViC2XCL2pW"
+       },
+       {
+         "title": "主成分分析（PCA）の紹介",
+         "desc": "主成分分析（PCA）の使い方をご紹介します。",
+         "url": "https://exploratory.io/note/kanaugust/18-PCA-tWA7mRe3HR"
        }
       ]
     }
