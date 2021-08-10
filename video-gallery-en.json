@@ -13,5 +13,18 @@
        }
       ]
     }
+    {
+      "title": "Highlight Mode in Summary View",
+      "desc": "Introducing Summary View in Exploratory.",
+      "moreButtonText": "More",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3AAnalytics&language=ja",
+      "insights": [
+       {
+        "title": "Data Wrangling: Convert Country Name & Code",
+        "desc": "Introducing how to convert country name & code.",
+        "youtubeId": "e0Cz4CvQ6uA"
+       }
+      ]
+    }
   ]
 }
