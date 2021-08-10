@@ -12,6 +12,11 @@
           "url": "https://exploratory.io/note/GMq1Qom5tS/ACO8snr6qm"
        },
        {
+         "title": "仮説検定の紹介 - t検定、クラスカル・ウォリス検定、カイ二乗検定",
+         "desc": "仮説検定の使い方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/t-ZGE0sBx5Eo"
+      },
+       {
          "title": "線形回帰の紹介",
          "desc": "線形回帰の使い方をご紹介します。",
          "url": "https://exploratory.io/note/GMq1Qom5tS/llv3NNC6Ij"
@@ -26,6 +31,11 @@
         "desc": "ランダムフォレストの使い方をご紹介します。",
         "url": "https://exploratory.io/note/GMq1Qom5tS/Awv4BdC2vr"
        },
+       {
+         "title": "XGBoostの紹介",
+         "desc": "XGBoostの使い方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/XGBoost-OfE1zYp6Cg"
+      },
        {
          "title": "時系列予測 - Prophetの紹介",
          "desc": "時系列予測の手法であるProphetの使い方をご紹介します。",
