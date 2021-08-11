@@ -1,34 +1,89 @@
 {
   "data": [
     {
-      "title": "Data Wrangling",
-      "desc": "Videos for Data Wrangling.",
+      "title": "Product Features",
+      "desc": "Learn how to use Exploratory!",
       "moreButtonText": "More",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3AAnalytics&language=ja",
+      "moreButtonUrl": "https://www.youtube.com/playlist?list=PLxM-q2GK4zu4237MMM-DSaDWGK62xqgtt",
       "insights": [
        {
-        "title": "Data Wrangling: Convert Country Name & Code",
-        "desc": "Introducing how to convert country name & code.",
-        "youtubeId": "fM2ldcshWxs"
+        "title": "Highlight Mode in Summary View",
+        "desc": "Introducing how to use the Highlight Mode in Summary view.",
+        "youtubeId": "e0Cz4CvQ6uA"
        },
        {
-        "title": "Data Wrangling: Convert Country Name & Code",
-        "desc": "Introducing how to convert country name & code.",
-        "youtubeId": "e0Cz4CvQ6uA"
-       }
+        "title": "Correlation Mode in Summary View",
+        "desc": "Introducing how to use the Correlation Moode in Summary view.",
+        "youtubeId": "xBo7-drgaAk"
+      },
+      {
+       "title": "How to Create Dashboard",
+       "desc": "Shows you how to create your first Dashboard in Exploratory!",
+       "youtubeId": "XZ0QlC8yiVY"
+     },
+     {
+      "title": "How to Create Note",
+      "desc": "Shows you how you to create your first Note in Exploratory!",
+      "youtubeId": "hgNjkAdW5Bc"
+     }
       ]
     },
     {
-      "title": "Highlight Mode in Summary View",
-      "desc": "Introducing Summary View in Exploratory.",
+      "title": "Data Wrangling",
+      "desc": "Learn how to clean & transform data!",
       "moreButtonText": "More",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3AAnalytics&language=ja",
+      "moreButtonUrl": "https://www.youtube.com/playlist?list=PLxM-q2GK4zu5oR_cBqzFe19EcthWS_iwU",
       "insights": [
        {
-        "title": "Data Wrangling: Convert Country Name & Code",
-        "desc": "Introducing how to convert country name & code.",
-        "youtubeId": "e0Cz4CvQ6uA"
-       }
+        "title": "Convert Data Type",
+        "desc": "This is about how to convert Data Type.",
+        "youtubeId": "VuRuV7GH7dc"
+      },
+      {
+       "title": "Convert to Date & Time Data Type",
+       "desc": "This is about how to convert Data Type.",
+       "youtubeId": "VuRuV7GH7dc"
+     },
+      {
+       "title": "Join - Add Columns",
+       "desc": "How to add columns from another data frame",
+       "youtubeId": "U-lH7YIVyI4"
+     },
+     {
+      "title": "Join - Filter Data",
+      "desc": "Shows you how to filter data based on another data frame by using Semi Join or Anti Join steps.",
+      "youtubeId": "0JyKqXFmErI"
+    },
+    {
+     "title": "Merge - Add Rows",
+     "desc": "Shows you how to merge multiple data frames to add rows in Exploratory.",
+     "youtubeId": "mcK9exW_Chg"
+   },
+      {
+       "title": "Transform Wide Data to Long Data",
+       "desc": "Shows you how to transform Wide data to Long data in Exploratory.",
+       "youtubeId": "9vQ0H1xxZoY"
+     },
+    {
+     "title": "Transform Long Data to Wide Data",
+     "desc": "Shows you how to transform Long format data to Wide format data, and quickly run a correlation analysis in Exploratory",
+     "youtubeId": "WOq3HgAJjnI"
+   },
+   {
+    "title": "Summarize Data",
+    "desc": "Shows you how to summarize data as the data wrangling step.",
+    "youtubeId": "h26dK9Nij14"
+  },
+   {
+    "title": "Convert Country Name & Code",
+    "desc": "Shows you how to convert the country names and codes",
+    "youtubeId": "fM2ldcshWxs"
+  },
+  {
+   "title": "Returning TRUE or FALSE with Condition",
+   "desc": "Shows you how to create conditions with various types of logical functions (operators) as calculations in Exploratory.",
+   "youtubeId": "PCW4hb_JlTA"
+  }
       ]
     }
   ]
