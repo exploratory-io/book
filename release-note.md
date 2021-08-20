@@ -1,5 +1,180 @@
 # Release Note
 
+## 6.7.0
+
+Released on 8/19/2021.
+
+### Enhancements
+
+* Data Source: Excel: Now you can import macro-enabled Excel files that use the .xlsm file extension.
+* Data Source: Google Analytics: Now you can view POSIXct column data in a time zone other than the one set in Google Analytics.
+* Data Source: Google Analytics: Supported ‘Between’ Date Filter Operation.
+* Data Source: Google Analytics: Supported Google Analytics V4.
+* DataFrame: Supported "Add Comments" for Data Frames.
+
+
+* Data Wrangling: Filter: Supported 'Contain this string (multiple)' operator.
+* Data Wrangling: Keep Unique Rows: Supported 'All Columns' option and Improve the UI.
+* Data Wrangling: Supported 'Leave Original Column' option for the 'Mutate with Multiple Columns'.
+* Data Wrangling: Supported 'years_between', 'months_between', 'weeks_betwen', and 'days_between' functions for Date and POSIXct columns and 'hours_between', 'minutes_between', and 'seconds_between' for POSIXct columns.
+* Data Wrangling: Supported the option to remove extra spaces in text wrangling dialog.
+
+
+* Chart: Highlight: Now you can choose the position of the highlighted colors either top or bottom in the Stacked Bar and Area chart. 
+* Chart: Now the sort is applied within each chart if you use Repeat By. 
+* Chart: Now you can quickly access the Trend Line and Reference Line configurations from the information green text.
+* Chart: Now you can quickly remove the column configuration such as Window Calculation, Limit, Other Group, and others by clicking the 'x' button at the information green text.
+* Chart: Pivot Table: Now you can assign multiple columns to the Value and a column to the Column at a time.
+* Chart: Pivot Table: Now you can do the column formatting in the same way as you do in the Summarize Table. 
+* Chart: Pivot Table: Summarize Table: Now you can show the text in multiple lines in cells by the "Text Wrap" option in the Format Column dialog.
+* Chart: Pivot Table: Summarize Table: Table: Now you can fit the table width to the Chart view area by the "Fit to Screen" option in the chart property dialog.
+
+
+* Analytics: "Text Clustering by Topic Model" Analytics View is added.
+* Analytics: Correlation: In the Data tab, now we show t-value along with P-value if the method is Pearson
+* Analytics: Factor Analysis: Now the sum of squared loadings (SS loadings) is shown on the hover popup of the Factor Importance bar chart.
+* Analytics: K-Means: Added Summary tab that shows the summary of each cluster, such as cluster center and the number of rows belonging to it.
+* Analytics: K-Means: Now the stack bar chart hover popup shows the number of rows.
+* Analytics: Text analytics features (Tokenize Text Step, Word Count Analytics View, and Topic Model Analytics View) now have the "Clean Up Twitter Data'' option for tokenizing, which removes mentions and hashtags.
+* Analytics: Word Cloud, Topic Model: Now you can eliminate specific words from the default stopwords.
+* Analytics: Word Count: Now network clustering is applied to the co-occurrence network, and displayed by colors.
+* Analytics: Word Count: Now you can specify a minimum count of words to be displayed in the word cloud.
+
+
+### Bug Fixes
+
+* Data Source: Brought back 'ODBC (Legacy)' data source to support databases such as Teradata and Kintone.
+* Data Source: Error "object exp.file.id not found" was raised if the directory for the CSV, Excel files had been removed. Now we show a message that explains this kind of situation better, including similar cases for files on AWS S3 or Google Drive.
+* Data Source: File Data Source: Importing a file failed with the 'URIError: URI malformed' error when the file name contains certain special characters.
+* Data Source: Google BigQuery: Improved error message when columns in a SQL query did not exist.
+* Data Source: Google Drive: Switching from "all" mode to "select files" mode thrown 'The "path" argument must be of type string.' error.
+* Data Source: Multiple CSV files: When guessed file encoding was incorrect, it only imported the first file and ignored the rest after the error was recovered.
+* Data Source: Now ODBC data source honors the user's timezone for POSIXct column data.
+* Data Source: Now you can change column data types on the CSV/Excel file import dialog.
+* Data Source: SQL: When a table name starts with a number of other special characters, now it generates a SQL that wraps the table name with a quote string to make the SQL syntax valid. 
+* Data Source: Supported FRED (FRB Economic Data) as a cloud apps data source.
+* Data Source: Switching from a CSV data source to a Google BigQuery data source didn't work.
+* Data Source: Switching from a multi CSV files data source to a single CSV file data source didn't work.
+* Data Source: Teradata: it didn't show schema information properly.
+* Data Source: When new columns were added to a file, these new columns were not selected when opening the Update data source dialog.
+
+
+* Summary View: A blank screen showed up if you removed a column from a data frame that had more than 300 columns. 
+* Summary View: Correlation mode: Linear regression prediction lines were not straight.
+* Summary View: When a join step was selected, the Correlation mode didn't refresh even after changing the target column.
+
+
+* Data Wrangling: "Add Column Suffix" option was not shown for Inner Join.
+* Data Wrangling: Added “unit” to the formula for floor_date function.
+* Data Wrangling: After closing a project with the right-hand-side step list collapsed, re-opening the project showed the incorrect step collapse icon.
+* Data Wrangling: After copying a folder, branches in a data frame in the folder were not displayed.
+* Data Wrangling: Alignment of the Window top became broken after selecting columns for K-means step dialog.
+* Data Wrangling: Changed to include step number in a spin message when a step is executed. 
+* Data Wrangling: Changed to use impute_na for filling missing value with specific value operation.
+* Data Wrangling: Duplicating a data frame with a "Predict with Model (Analytics View)" step raised an error.
+* Data Wrangling: Failed to replace NA with the other value “Replace NA… with specific value” menu if the target column is a factor.
+* Data Wrangling: Filter: Added an example to the Year / Month option label.
+* Data Wrangling: Now Filter dialog honors the user's timezone when the 'Between Date' operator is used.
+* Data Wrangling: Now the syntax suggestion for mutate operation is shown in Japanese when UI language is Japanese.
+* Data Wrangling: On the Chart View, when running a step, it shows 'length' of undefined error for some occasions.
+* Data Wrangling: On Tokenize Text dialog, changing the "With Sentence ID" parameter did not change the selected value.
+* Data Wrangling: Table View showed a blank UI when underlying metadata was corrupted.
+* Data Wrangling: Text Wrangling: Removing last words failed if the text contained special characters.
+* Data Wrangling: When navigating from Table view to Chart view while the Table Filter dialog was open, the Filter dialog did not close automatically.
+
+
+* Chart: Bar chart failed to render with the "Problem with mutate() column c2.sortval" error if you had "% of" window function, sort setting, and Limit with a condition that removed all the data.
+* Chart: Bar: Values on the plot area didn't align with bars if you used the Highlight feature. 
+* Chart: Checking the "Sync X Axis" checkbox didn't sync the X Axis in the Line chart.
+* Chart: Highlight: Highlighted colors did not come up at the top in Area and Pie/Ring charts.
+* Chart: If you typed in '1' for the "Number of Categories" in the Category Setting dialog, it became '2' automatically.
+* Chart: Line chart failed to render and showed an error "argument "df1" is missing, with no default".
+* Chart: Pivot Table failed to render if you selected the Quantile aggregation function against the data with all NA values.
+* Chart: Pivot Table: "NaN" text shouldn't show up in the value cells. It should show empty cells instead.
+* Chart: Pivot Table: Summarize Table: Date formatting support. 
+* Chart: Pivot Table: Summarize Table: It didn't show the total values correctly if you used a Custom Calculation and set the "Before Aggregation" option for the calculation timing setting.
+* Chart: Pivot Table: Summarize Table: The hover Pop-up got too wide if there was a long text in there. 
+* Chart: Pivot Table: The Color Visual Formatting didn't work if you used a Custom Calculation that generated text output at the Value.
+* Chart: Pivot Table: The table border shouldn't show in the table header cells if you specify a background color in the Visual Formatting setting.
+* Chart: Pivot Table: Values from a hidden Row column shouldn't show up in the Pop-up. 
+* Chart: The "Color Direction" option should be removed from the "Conditional Formatting" Visual Formatting. 
+* Chart: The "Hide Value Cells" option was missing in the Pivot Table. 
+* Chart: The "There is no data to display" message in the Chart view was not translated into Japanese.
+* Chart: The Repeat By order was incorrect if you selected more than 10 columns at Y-Axis and used the "Repeat By Y-Axis Columns" feature.
+* Chart: Unchecking the "Sync X Axis" checkbox didn't unsync the X-Axis in Error Bar (Summarized Data).
+* Chart: Values on plot area didn't align if there were missing values in the Line chart. 
+* Chart: Word Cloud failed to render and showed a "Cannot read property 'match' of undefined" error.
+* Chart: Word Cloud failed to render and showed an "invalid printing width" error.
+
+
+* Analytics: After moving an Analytics tab by drag and drop, the spin icon didn't go away.
+* Analytics: After renaming a duplicated analytics, clicking another analytics tab ended up reverting name change.
+* Analytics: Analytics was mistakenly executed by deleting an unfinished filter condition.
+* Analytics: ARIMA: An error "Names must be unique. These names are duplicated" was raised if you assigned a column with the name "y" as the Value column.
+* Analytics: ARIMA: For some cases, only models without constant terms were searched as candidates of the model.
+* Analytics: ARIMA: NA handling in an aggregation of data for each time period is improved.
+* Analytics: Correlation, Distance: Now the column orders in the heatmap are ordered in the same way between Mac and Windows.
+* Analytics: Correlation: Checking the "Show Correlation Values" checkbox didn't show the correlation values on the plot area.
+* Analytics: Cox Regression, Survival Forest: Now a unit of the period is indicated in the status text for the Survival Curve chart.
+* Analytics: Cox Regression, Survival Forest: The prediction period is now shown in the status text for the Prediction chart.
+* Analytics: Emoji removal is improved, and some of the emoji we could not remove before can be removed now.
+* Analytics: Exporting the Word Cloud data should be enabled in the Text Analysis. 
+* Analytics: K-Means: If there is a column with only NAs, we remove that column from the input automatically so that the analysis can go on with the rest of the columns.
+* Analytics: Multicollinearity (VIF) bar charts when used with repeat-by groups are now sorted properly by the VIF value for each repeat-by group.
+* Analytics: PCA: Pivot Table columns in the Weight tab were partially translated. 
+* Analytics: PCA/Factor Analysis: A column selected at the Color By was reset if you switched the Analytics type from PCA to Factor Analysis.
+* Analytics: Prophet: Data that is just 2-year long was not processed with yearly seasonality by default. We adjusted the criteria of the automatic switch of yearly seasonality so that such data is processed with yearly seasonality by default.
+* Analytics: Revised default Japanese stopword list to avoid unwanted removal of potentially important words.
+* Analytics: Row number for the basis of power analysis was counting rows with NAs too. Now we filter NAs before counting rows for power analysis.
+* Analytics: Statistical Test: Now, when a repeat-by group is used and some of the groups got errors running the test, the errors are reported on the Note column of the Summary table, rather than blocking tests for all other repeat-by groups.
+* Analytics: Statistical Tests: Improved error messages that are shown when no data or only 1 row is left after removing NAs.
+* Analytics: Survival Curve: Error "Cannot read property 'getColumns' of undefined" showed up when a numeric column was assigned to Color.
+* Analytics: Survival Curve: You should be able to assign the same column to both Cohort and Start Date. 
+* Analytics: The Data tab in the Chi-Square Test failed to render and showed a "Cannot read property 'column' of undefined" error.
+* Analytics: The Network chart didn't use the full chart viewing area after opening the full-screen view.
+* Analytics: The number of decimal digits setting didn't work in Summary or Coef Table tabs in Analytics.
+* Analytics: Time Series Clustering: Many of the combinations of Cluster Center Method and Distance Method raised errors.
+* Analytics: Tokenization done by Analytics View and Step now gives the same result.
+* Analytics: Variable importance bar charts (including the box plot for Boruta for Random Forest) when used with repeat-by groups are now sorted by the importance of variables properly for each repeat-by group.
+* Analytics: When navigating between a branch data frame and the parent data frame, a blank screen was shown after a branch data frame failed to execute.
+* Analytics: Wilcoxon Test, Kruskal-Wallis Test: Misleading the "MEAN" label for the Value column is removed.
+* Analytics: Word Count: Added random seed so that co-occurrence network result is stable.
+* Analytics: Word Count: The layout algorithm for the co-occurrence network is improved, and made more adjustable.
+
+
+* Parameter: After clicking the parameter icon, Parameter UI was not displayed when there was a parameter that refers to a missing data frame.
+
+
+* Note: Corrected popup text for "quote" icon in toolbar.
+* Note: There were cases where embedding of Chart in Note did not work because the generated chart referencing tags were malformatted.
+* Slide: Disable the Slide feature.
+* Dashboard: Changed to set bigger default row height when adding a new row.
+* Dashboard: When opening a dashboard, the previously opened dashboard was displayed before it showed the selected dashboard.
+* Dashboard: When stopping publishing a dashboard, it generated output and captured thumbnails where it shouldn't.
+* Dashboard/Note: Added the 'Export' button to the catalog tree menu from where users can download an EDF file.
+
+
+* Export: Now the chart thumbnails are shown from right after importing the EDF file or .df file.
+* Export: Project export from a repository on a network drive such as Google Drive consumed a lot of memory.
+* Export: When exporting a chart as EDF, it showed an error dialog when the chart uses a Parameter that refers to a missing Data Frame.
+* Project: When clicking the Update button for project rename, it did not respond for some project.
+* Project: When renaming a project to an existing conflicting name, the Update Name dialog showed an error but the project name on the list was updated with the duplicated name. 
+
+
+* Install: Intel Mac run on a virtual machine environment was mistakenly considered to be an M1 Mac by the installer of Exploratory.
+* Installation: Improved error message when package installation failed.
+* Installation: When selecting a folder for Exploratory Repsotiory, it now validates the write permission on the folder and shows an error message if the user does not have the permission.
+* Installer: Git installed with Exploratory is upgraded to the latest 2.33.0 (Windows) and 2.32.0 (Mac).
+* Installer: Rcpp package installed with Exploratory is upgraded to the latest 1.0.7. This should resolve some of the problems in installing custom R packages from CRAN that worked only with this version of Rcpp.
+
+
+* General: If a double-quote was used in the password, login was required each time Exploratory Desktop was started.
+* General: Performance of loading or updating data on Windows was slower than it should have been because of a workaround we did around writing data to a parquet file for caching of data. Now the root issue with Parquet is fixed and we removed the work-around that was causing performance degradation.
+* General: When an incorrect password is used at the login UI, it showed an unrelated error dialog.
+* General: When exporting a Project as a zip file, it didn't show a spin icon and could not tell when the operation finished.
+* Generic: When clicking open Publish Dialog, it didn't show any error message when the Exploratory Desktop was offline.
+
+
 ## 6.6.3
 
 Released on 6/24/2021.
