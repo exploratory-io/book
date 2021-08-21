@@ -1,5 +1,35 @@
 # Release Note
 
+## 6.7.0.16
+
+Released on 8/20/2021
+
+### Download Links
+
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.7.0.16.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.7.0.16.tar.gz)
+
+### Enhancements
+
+* General: Now you can change the language setting for the notification emails at the Account Setting page.
+* Insight: Now you can see the scheduling detail information in the Insight Subscription dialog.
+* Insight: Now you can customize the message title and text for the Insight invitation email.
+* Insight: Now you can see a thumbnail image if available in the Insight invitation email.
+* Schedule: Now you can see a thumbnail image if available in the schedule notification email.
+* Schedule: Now a thumbnail image is also refreshed based on the latest data when a schedule runs.
+
+### Bug Fixes
+
+* Schedule: When scheduling failed for a Google Drive Data source due to an OAuth error, it didn't show a re-auth link in the Error Details dialog.
+* Schedule: The server instance went down if you subscribed to an Insight that had been published as a team.
+* Schedule: A scheduled job runs twice once in a while.
+* Schedule: When scheduling a Google Analytics data source, it didn't honor the user's timezone.
+* Schedule: If the Exploratory Server was shut down while a scheduled job was running, the job hanged after the Exploratory Server was restarted.
+
+
+
+
+
 ## 6.6.2.0
 
 Released on 6/21/2021
