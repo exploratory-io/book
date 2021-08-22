@@ -10,23 +10,19 @@ Click '+' button next to 'Data Frames' and select 'Import Cloud Apps Data'.
 
 ![](images/import-cloudapps.png)
 
-Click 'FRED (Federal Reserve of Economic Data)'.
+Click 'FRED (Economic Data)'.
 
 ![](images/fred-data-menu.png)
 
 Create connection from here if you don't have.
-
-![](images/fred-con-open.png)
-
-Select "FRED".
-
-![](images/select_fred.png)
 
 Type connection name and FRED API Key. Test connection and if it works ok, click "Add" button.
 
 ![](images/fred-setting.png)
 
 Type in Series ID, e.g. UNRATE for unemployment rate, and select Start Date. 
+You can search Series ID in https://fred.stlouisfed.org/tags/series 
+
 ![](images/fred_preview.png)
 
 Click "Run". If the preview is okay, click "Import".
