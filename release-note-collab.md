@@ -25,9 +25,8 @@ Released on 8/20/2021
 * Schedule: A scheduled job runs twice once in a while.
 * Schedule: When scheduling a Google Analytics data source, it didn't honor the user's timezone.
 * Schedule: If the Exploratory Server was shut down while a scheduled job was running, the job hanged after the Exploratory Server was restarted.
-
-
-
+* General: After OAuth re-authorization for a team-shared insight, the browser was redirected to a wrong insight URL with the user's ID used in place of the team ID
+* General: In the insight update history page, avator picture for the login user was used instead of correct ones for the users who updated the insight.
 
 
 ## 6.6.2.0
