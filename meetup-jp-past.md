@@ -1,3 +1,65 @@
+# #20 - 2021/8/20(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/z9vd01ows86lcgl/cover.png?raw=1" width="100%" />
+
+
+
+## 開催要項
+
+* 日時: 2021年 8月 20日 (金) 12:00〜14:00（11:50開場）
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.7のご紹介（Exploratory CEO 西田勘一郎）
+* マーケット・バスケット分析を活用したECサイトの購買分析（株式会社エートゥジェイ 佐藤 史渉様）
+* パーソナルデータという原石をダイヤモンドにするための手法（DSInnovation株式会社 野尻 梢様）
+* リピーターを増やすための顧客セグメンテーション分析（日本成長投資アライアンス株式会社 倉富 雄平様）
+
+## Exploratory 西田勘一郎
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/xHUOktaOnmA?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="3cc0153db26b47499b21f83d4362ebfe" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## 株式会社エートゥジェイ 佐藤 史渉様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/lvuk7DPs2Co?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="3383c52e463440d989df253a81f9b9fc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+## DSInnovation株式会社 野尻 梢様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/GCS4ThWMDHg?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="0ae8428b02274f72908b0b19a53b14ed" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+## 日本成長投資アライアンス株式会社 倉富 雄平様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/V7VD2aDqc_o?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+スライド：
+
+<script async class="speakerdeck-embed" data-id="e378aad8b533422b8d50d945672485cb" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
+
+---
+
 # #19 - 2021/6/11(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/f5lszcc1sbvo0no/Exploratory-v66-Introduction-jp.001.jpeg?raw=1" width="100%" />
