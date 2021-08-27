@@ -95,3 +95,11 @@ Then set "Yes" For "Show Actual Number of Rows on SQL Data Import Dialog"
 This will show you Actual Number of Rows like below.
 
 ![](images/actual_num_of_rows.png)
+
+## 7. Known Issues
+
+- [Importing multi-byte characters from Teradata Aster fails](https://exploratory.io/note/exploratory/How-to-workaround-known-issues-when-connectiong-to-Teradata-Aster-with-ODBC-BTG0Tmz9)
+
+- [Schema and Tables are not shown for Kintone](https://exploratory.io/note/exploratory/How-to-workaround-known-issues-when-connecting-to-Kintone-with-ODBC-hjq9Deg4)
+
+
