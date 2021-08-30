@@ -6,18 +6,12 @@ Exploratory v6.8の紹介と、ユーザー様によるExploratoryを使った�
 
 * 日時: 2021年 11月 12日 (金) 12:00〜14:00（11:50開場）
 * 会場: Zoom会議
-* 詳細が決まり次第、随時アップデートします。
-
-<!--
-* 参加方法: [こちら](https://exploratory.io/note/GMq1Qom5tS/Exploratory-20-QoR9neK1ZR)のページよりお申し込みください。
-
+* 参加方法: [こちら](https://exploratory.io/note/GMq1Qom5tS/Exploratory-21-yxo7egM6dA)のページよりお申し込みください。
 
 ## スピーカー
 
-<img src="https://www.dropbox.com/s/ece7cgfdt01ro04/bustup_photo_v1.png?raw=1" width="100%" />
-
+<img src="https://www.dropbox.com/s/eoicte9fpd5ugu1/bustup-photo.png?raw=1" width="100%" />
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/txfo15qavb1c7pk/agenda_v5.png?raw=1" width="100%" />
--->
+<img src="https://www.dropbox.com/s/5cdva32gp5mzisk/Agenda.png?raw=1" width="100%" />
