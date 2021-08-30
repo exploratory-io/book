@@ -12,7 +12,6 @@ Exploratory v6.8の紹介と、ユーザー様によるExploratoryを使った�
 
 <img src="https://www.dropbox.com/s/7kziogvatj8bse7/bustup-photo.png?raw=1" width="100%" />
 
-
 ## アジェンダ
 
 <img src="https://www.dropbox.com/s/5cdva32gp5mzisk/Agenda.png?raw=1" width="100%" />
