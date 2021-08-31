@@ -19,6 +19,7 @@ Released on 8/30/2021.
 * Data Source: MariaDB/MySQL: Connection failed when timezone was not properly set up on the Database server.
 * Data Source: MongoDB: Supported connection with SSL client certificate.
 * Data Source: When importing only one file, an unnecessary "1/1" prefix was shown in the spin message.
+* Data Source: ODBC: On the “Add New Connection” dialog, the dropdown for the DSN list was empty when the dialog was opened for the first time right after the installation.
 
 
 * Summary View: When adding a new step on Summary View, the spin message didn't show the step name and just said "Calculating Summary Info".
