@@ -7,45 +7,47 @@ Released on 8/31/2021.
 
 ### Enhancements
 
-* Chart: Now you can set the Scale option when you export the chart as an image file in order to export the image in a higher resolution. 
-* Chart: Now you can use the "Missing Value Handling" option in Bar, Area, and Scatter (With Aggregation) chart types.
+* Chart: Now you can set the Scale option when you export the chart as an image file in order to export the image in a higher resolution.
+* Chart: We have added "Missing Value Handling" support for Bar, Area, and Scatter (With Aggregation) chart types.
+
+
+* Data Source: CSV / Excel: Now you will see a list of the last 10 used folders when you choose the folder.
+* Data Source: JSON: Now the "Export Data as JSON" option export the data in a nested data structure if the data frame contains list columns.
+* Data Source: MongoDB: Now you can use your SSL client certificate for the connection.
+
+
+* Data Wrangling: Added 'Email' for the 'Work with URL' menu in the column header menu.
+* Data Wrangling: Added the 'unnest' command to the column header menu so that it can 'unnest' the nested list columns easily.
+* Data Wrangling: Now the values for the true_value argument of str_logical function are suggested in Create Calculation (mutate) dialog.
 
 ### Bug Fixes
 
-* Data Source: Re-organized CSV / Excel Data Import dialog parameters.
-* Data Source: The exported JSON data by the "Export Data as JSON" option should keep a nested data structure if the data frame contains list columns. 
-* Data Source: Google Analytics: After upgrading to Exploratory Desktop 6.7.0, updating an existing Google Analytics Data Source threw Time Zone not set error. 
-* Data Source: Supported the refresh file list button on the CSV / Excel file list dialog.
+
+* Data Source: Google Analytics: After upgrading to Exploratory Desktop 6.7.0, updating an existing Google Analytics Data Source threw Time Zone not set error.
 * Data Source: MariaDB/MySQL: Connection failed when timezone was not properly set up on the Database server.
-* Data Source: MongoDB: Supported connection with SSL client certificate.
-* Data Source: When importing only one file, an unnecessary "1/1" prefix was shown in the spin message.
 * Data Source: ODBC: On the “Add New Connection” dialog, the dropdown for the DSN list was empty when the dialog was opened for the first time right after the installation.
 
 
 * Summary View: When adding a new step on Summary View, the spin message didn't show the step name and just said "Calculating Summary Info".
 
 
-* Data Wrangling: Added 'Email' for the 'Work with URL' menu in the column header menu.
-* Data Wrangling: Added back unnest command so that it can handle nested list columns.
 * Data Wrangling: Mutate Multiple Columns: When using special characters for Suffix, it showed an unmatched parenthesis error.
-* Data Wrangling: Now the values for the true_value argument of str_logical function are suggested in Create Calculation (mutate) dialog etc.
 
 
-* Chart: The "Cumulative Sum" Window Calculation didn't work properly if there were NA values in the summarized data in the Line chart. 
-* Chart: If numeric values on X-Axis were derived from a Date or POSIXct column such as the "Month Number" function, the "Fill with NA" Missing Value Handling option should complete the missing numbers and fill NAs for values. 
+* Chart: The "Cumulative Sum" Window Calculation didn't work properly if there were NA values in the summarized data in the Line chart.
+* Chart: If numeric values on X-Axis were derived from a Date or POSIXct column such as the "Month Number" function, the "Fill with NA" Missing Value Handling option should complete the missing numbers and fill NAs for values.
 * Chart: Exported chart data didn't contain columns using the "As Category" column function.
 * Chart: Pivot Table failed to render and threw "Cannot read property 'url' of undefined' if you assigned multiple columns to Value and removed the first one.
-* Chart: The "Show Detail" dialog should show a reason why there is no row if the bar is created by the "Missing Value Handling". 
 
 
 * Analytics: Correlation: You couldn't open an Excel file created by the "Export Table Data as Excel" feature in the Data tab if you had Japanese characters in the data and column names on Windows.
 
 
-* Parameter: When moving a slider to the far end,  it kept sliding even after releasing the mouse.
+* Parameter: When moving a slider to the far end, it kept sliding even after releasing the mouse.
 
 
 * Export: EDF/DF file export failed if exported Chart(s) had a long name.
-* Export: Project export failed if the path or name for the zip file to create included multibyte characters.
+* Export: Project export failed if the path or file name included multibyte characters.
 * General: If project export failed in the middle, a directory named "\_archived_project" was left in the project directory, and it looked like an additional project on the project list screen.
 
 
@@ -69,12 +71,12 @@ Released on 8/19/2021.
 * Data Wrangling: Supported the option to remove extra spaces in text wrangling dialog.
 
 
-* Chart: Highlight: Now you can choose the position of the highlighted colors either top or bottom in the Stacked Bar and Area chart. 
-* Chart: Now the sort is applied within each chart if you use Repeat By. 
+* Chart: Highlight: Now you can choose the position of the highlighted colors either top or bottom in the Stacked Bar and Area chart.
+* Chart: Now the sort is applied within each chart if you use Repeat By.
 * Chart: Now you can quickly access the Trend Line and Reference Line configurations from the information green text.
 * Chart: Now you can quickly remove the column configuration such as Window Calculation, Limit, Other Group, and others by clicking the 'x' button at the information green text.
 * Chart: Pivot Table: Now you can assign multiple columns to the Value and a column to the Column at a time.
-* Chart: Pivot Table: Now you can do the column formatting in the same way as you do in the Summarize Table. 
+* Chart: Pivot Table: Now you can do the column formatting in the same way as you do in the Summarize Table.
 * Chart: Pivot Table: Summarize Table: Now you can show the text in multiple lines in cells by the "Text Wrap" option in the Format Column dialog.
 * Chart: Pivot Table: Summarize Table: Table: Now you can fit the table width to the Chart view area by the "Fit to Screen" option in the chart property dialog.
 
@@ -100,7 +102,7 @@ Released on 8/19/2021.
 * Data Source: Multiple CSV files: When guessed file encoding was incorrect, it only imported the first file and ignored the rest after the error was recovered.
 * Data Source: Now ODBC data source honors the user's timezone for POSIXct column data.
 * Data Source: Now you can change column data types on the CSV/Excel file import dialog.
-* Data Source: SQL: When a table name starts with a number of other special characters, now it generates a SQL that wraps the table name with a quote string to make the SQL syntax valid. 
+* Data Source: SQL: When a table name starts with a number of other special characters, now it generates a SQL that wraps the table name with a quote string to make the SQL syntax valid.
 * Data Source: Supported FRED (FRB Economic Data) as a cloud apps data source.
 * Data Source: Switching from a CSV data source to a Google BigQuery data source didn't work.
 * Data Source: Switching from a multi CSV files data source to a single CSV file data source didn't work.
@@ -108,7 +110,7 @@ Released on 8/19/2021.
 * Data Source: When new columns were added to a file, these new columns were not selected when opening the Update data source dialog.
 
 
-* Summary View: A blank screen showed up if you removed a column from a data frame that had more than 300 columns. 
+* Summary View: A blank screen showed up if you removed a column from a data frame that had more than 300 columns.
 * Summary View: Correlation mode: Linear regression prediction lines were not straight.
 * Summary View: When a join step was selected, the Correlation mode didn't refresh even after changing the target column.
 
@@ -118,7 +120,7 @@ Released on 8/19/2021.
 * Data Wrangling: After closing a project with the right-hand-side step list collapsed, re-opening the project showed the incorrect step collapse icon.
 * Data Wrangling: After copying a folder, branches in a data frame in the folder were not displayed.
 * Data Wrangling: Alignment of the Window top became broken after selecting columns for K-means step dialog.
-* Data Wrangling: Changed to include step number in a spin message when a step is executed. 
+* Data Wrangling: Changed to include step number in a spin message when a step is executed.
 * Data Wrangling: Changed to use impute_na for filling missing value with specific value operation.
 * Data Wrangling: Duplicating a data frame with a "Predict with Model (Analytics View)" step raised an error.
 * Data Wrangling: Failed to replace NA with the other value “Replace NA… with specific value” menu if the target column is a factor.
@@ -133,25 +135,25 @@ Released on 8/19/2021.
 
 
 * Chart: Bar chart failed to render with the "Problem with mutate() column c2.sortval" error if you had "% of" window function, sort setting, and Limit with a condition that removed all the data.
-* Chart: Bar: Values on the plot area didn't align with bars if you used the Highlight feature. 
+* Chart: Bar: Values on the plot area didn't align with bars if you used the Highlight feature.
 * Chart: Checking the "Sync X Axis" checkbox didn't sync the X Axis in the Line chart.
 * Chart: Highlight: Highlighted colors did not come up at the top in Area and Pie/Ring charts.
 * Chart: If you typed in '1' for the "Number of Categories" in the Category Setting dialog, it became '2' automatically.
 * Chart: Line chart failed to render and showed an error "argument "df1" is missing, with no default".
 * Chart: Pivot Table failed to render if you selected the Quantile aggregation function against the data with all NA values.
 * Chart: Pivot Table: "NaN" text shouldn't show up in the value cells. It should show empty cells instead.
-* Chart: Pivot Table: Summarize Table: Date formatting support. 
+* Chart: Pivot Table: Summarize Table: Date formatting support.
 * Chart: Pivot Table: Summarize Table: It didn't show the total values correctly if you used a Custom Calculation and set the "Before Aggregation" option for the calculation timing setting.
-* Chart: Pivot Table: Summarize Table: The hover Pop-up got too wide if there was a long text in there. 
+* Chart: Pivot Table: Summarize Table: The hover Pop-up got too wide if there was a long text in there.
 * Chart: Pivot Table: The Color Visual Formatting didn't work if you used a Custom Calculation that generated text output at the Value.
 * Chart: Pivot Table: The table border shouldn't show in the table header cells if you specify a background color in the Visual Formatting setting.
-* Chart: Pivot Table: Values from a hidden Row column shouldn't show up in the Pop-up. 
-* Chart: The "Color Direction" option should be removed from the "Conditional Formatting" Visual Formatting. 
-* Chart: The "Hide Value Cells" option was missing in the Pivot Table. 
+* Chart: Pivot Table: Values from a hidden Row column shouldn't show up in the Pop-up.
+* Chart: The "Color Direction" option should be removed from the "Conditional Formatting" Visual Formatting.
+* Chart: The "Hide Value Cells" option was missing in the Pivot Table.
 * Chart: The "There is no data to display" message in the Chart view was not translated into Japanese.
 * Chart: The Repeat By order was incorrect if you selected more than 10 columns at Y-Axis and used the "Repeat By Y-Axis Columns" feature.
 * Chart: Unchecking the "Sync X Axis" checkbox didn't unsync the X-Axis in Error Bar (Summarized Data).
-* Chart: Values on plot area didn't align if there were missing values in the Line chart. 
+* Chart: Values on plot area didn't align if there were missing values in the Line chart.
 * Chart: Word Cloud failed to render and showed a "Cannot read property 'match' of undefined" error.
 * Chart: Word Cloud failed to render and showed an "invalid printing width" error.
 
@@ -167,10 +169,10 @@ Released on 8/19/2021.
 * Analytics: Cox Regression, Survival Forest: Now a unit of the period is indicated in the status text for the Survival Curve chart.
 * Analytics: Cox Regression, Survival Forest: The prediction period is now shown in the status text for the Prediction chart.
 * Analytics: Emoji removal is improved, and some of the emoji we could not remove before can be removed now.
-* Analytics: Exporting the Word Cloud data should be enabled in the Text Analysis. 
+* Analytics: Exporting the Word Cloud data should be enabled in the Text Analysis.
 * Analytics: K-Means: If there is a column with only NAs, we remove that column from the input automatically so that the analysis can go on with the rest of the columns.
 * Analytics: Multicollinearity (VIF) bar charts when used with repeat-by groups are now sorted properly by the VIF value for each repeat-by group.
-* Analytics: PCA: Pivot Table columns in the Weight tab were partially translated. 
+* Analytics: PCA: Pivot Table columns in the Weight tab were partially translated.
 * Analytics: PCA/Factor Analysis: A column selected at the Color By was reset if you switched the Analytics type from PCA to Factor Analysis.
 * Analytics: Prophet: Data that is just 2-year long was not processed with yearly seasonality by default. We adjusted the criteria of the automatic switch of yearly seasonality so that such data is processed with yearly seasonality by default.
 * Analytics: Revised default Japanese stopword list to avoid unwanted removal of potentially important words.
@@ -178,7 +180,7 @@ Released on 8/19/2021.
 * Analytics: Statistical Test: Now, when a repeat-by group is used and some of the groups got errors running the test, the errors are reported on the Note column of the Summary table, rather than blocking tests for all other repeat-by groups.
 * Analytics: Statistical Tests: Improved error messages that are shown when no data or only 1 row is left after removing NAs.
 * Analytics: Survival Curve: Error "Cannot read property 'getColumns' of undefined" showed up when a numeric column was assigned to Color.
-* Analytics: Survival Curve: You should be able to assign the same column to both Cohort and Start Date. 
+* Analytics: Survival Curve: You should be able to assign the same column to both Cohort and Start Date.
 * Analytics: The Data tab in the Chi-Square Test failed to render and showed a "Cannot read property 'column' of undefined" error.
 * Analytics: The Network chart didn't use the full chart viewing area after opening the full-screen view.
 * Analytics: The number of decimal digits setting didn't work in Summary or Coef Table tabs in Analytics.
@@ -207,7 +209,7 @@ Released on 8/19/2021.
 * Export: Project export from a repository on a network drive such as Google Drive consumed a lot of memory.
 * Export: When exporting a chart as EDF, it showed an error dialog when the chart uses a Parameter that refers to a missing Data Frame.
 * Project: When clicking the Update button for project rename, it did not respond for some project.
-* Project: When renaming a project to an existing conflicting name, the Update Name dialog showed an error but the project name on the list was updated with the duplicated name. 
+* Project: When renaming a project to an existing conflicting name, the Update Name dialog showed an error but the project name on the list was updated with the duplicated name.
 
 
 * Install: Intel Mac run on a virtual machine environment was mistakenly considered to be an M1 Mac by the installer of Exploratory.
@@ -271,7 +273,7 @@ Released on 6/24/2021.
 * General: Error Report Dialog showed up when shutting down Exploratory after exporting a project.
 * General: NANO-Antivirus reported a false alarm with the previous release (6.6.2.3) of the Windows version.
 * General: The keyword clear button ("x" button) in the search input field should show up only if there is a keyword.
- 
+
 
 
 ## 6.6.2
@@ -306,13 +308,13 @@ Released on 6/15/2021.
 * Chart/Analytics: The property dialog didn't close when you moved to a different view such as the Summary view or closed the project.
 
 
-* Analytics: Clicking outside the property dialog shouldn't close the dialog. 
+* Analytics: Clicking outside the property dialog shouldn't close the dialog.
 * Analytics: Correlation: Error "`f` must be a factor (or character vector)." was raised if the names of all the input columns are numbers.
 * Analytics: Time Series Clustering: Error "There are missing values in the series" was raised if one or more of the time series were constant.
 
 
-* Note: Chart failed to render if the chart name contained special characters such as "‗" on Windows. 
-* Dashboard: Improved UI by aligning row height between runtime and design time. 
+* Note: Chart failed to render if the chart name contained special characters such as "‗" on Windows.
+* Dashboard: Improved UI by aligning row height between runtime and design time.
 * Dashboard: Left and right margins were uneven in the preview screen.
 * Dashboard: Set Height Evenly Button overlapped with Published Icon.
 * Dashboard: When in Fit to Screen Mode, adding a new row pushed the page down and it overflowed vertically.
@@ -339,11 +341,11 @@ Released on 6/10/2021.
 * Data Wrangling: Supported the date picker on the Filter dialog.
 
 
-* Chart: Now you can create an Error Bar with the summarized data. 
+* Chart: Now you can create an Error Bar with the summarized data.
 * Chart: Analytics: Supported 'Export to Google Sheets' option in the Chart/Analytics export menu.
-* Chart: Now you can change the circle size and line width in the Error Bar. 
-* Chart: Now you can draw Reference Lines for each color. 
-* Chart: Now you can search the content in the Table from the toolbar. 
+* Chart: Now you can change the circle size and line width in the Error Bar.
+* Chart: Now you can draw Reference Lines for each color.
+* Chart: Now you can search the content in the Table from the toolbar.
 
 
 * Analytics: Added a new Factor Analysis Analytics View.
@@ -388,7 +390,7 @@ Released on 6/10/2021.
 * Chart/Analytics: Column selection should show a Pop-up for the long column names when you hover it.
 
 
-* Analytics: It shouldn't create number buckets if you assign a numeric column that contains only a couple number of unique values to the Color By or Repeat By. 
+* Analytics: It shouldn't create number buckets if you assign a numeric column that contains only a couple number of unique values to the Color By or Repeat By.
 * Analytics: The "Color Sort Order" chart property was missing in the Chart Property dialog in the Analytics view.
 * Analytics: The Variable Importance Bar chart failed to render and showed an error dialog with a message "key.replace is not a function".
 * Analytics: Y-Axis Range setting was not effective on the Prediction chart in the Linear Regression analytics.
@@ -414,7 +416,7 @@ Released on 5/12/2021.
 
 ### Bug Fixes
 
-* Chart: If you chose Top N at the Limit dialog, it dropped the largest value once in a while if you have ties in the values. 
+* Chart: If you chose Top N at the Limit dialog, it dropped the largest value once in a while if you have ties in the values.
 
 
 ## 6.5.4
@@ -457,7 +459,7 @@ Released on 5/6/2021.
 
 ### Bug Fixes
 
-* Data Source: BigQuery: When importing data failed, the error message dialog didn't show up. 
+* Data Source: BigQuery: When importing data failed, the error message dialog didn't show up.
 
 
 * Data Wrangling: Made the drag and drop data frame list resizer easier to grip.
