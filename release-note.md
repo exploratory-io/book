@@ -14,7 +14,7 @@ Released on 8/30/2021.
 
 * Data Source: Re-organized CSV / Excel Data Import dialog parameters.
 * Data Source: The exported JSON data by the "Export Data as JSON" option should keep a nested data structure if the data frame contains list columns. 
-* Data Source: Google Analytics: After upgrading to Exploratory Desktop 6.7.0, updating an existing Google Analytics Data Source throws Time Zone not set error. 
+* Data Source: Google Analytics: After upgrading to Exploratory Desktop 6.7.0, updating an existing Google Analytics Data Source threw Time Zone not set error. 
 * Data Source: Supported the refresh file list button on the CSV / Excel file list dialog.
 * Data Source: MariaDB/MySQL: Connection failed when timezone was not properly set up on the Database server.
 * Data Source: MongoDB: Supported connection with SSL client certificate.
