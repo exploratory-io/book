@@ -1,5 +1,53 @@
 # Release Note
 
+
+## 6.7.1
+
+Released on 8/30/2021.
+
+### Enhancements
+
+* Chart: Now you can set the Scale option when you export the chart as an image file in order to export the image in a higher resolution. 
+* Chart: Now you can use the "Missing Value Handling" option in Bar, Area, and Scatter (With Aggregation) chart types.
+
+### Bug Fixes
+
+* Data Source: Re-organized CSV / Excel Data Import dialog parameters.
+* Data Source: The exported JSON data by the "Export Data as JSON" option should keep a nested data structure if the data frame contains list columns. 
+* Data Source: Google Analytics: After upgrading to Exploratory Desktop 6.7.0, updating an existing Google Analytics Data Source throws Time Zone not set error. 
+* Data Source: Supported the refresh file list button on the CSV / Excel file list dialog.
+* Data Source: MariaDB/MySQL: Connection failed when timezone was not properly set up on the Database server.
+* Data Source: MongoDB: Supported connection with SSL client certificate.
+* Data Source: When importing only one file, an unnecessary "1/1" prefix was shown in the spin message.
+
+
+* Summary View: When adding a new step on Summary View, the spin message didn't show the step name and just said "Calculating Summary Info".
+
+
+* Data Wrangling: Added 'Email' for the 'Work with URL' menu in the column header menu.
+* Data Wrangling: Added back unnest command so that it can handle nested list columns.
+* Data Wrangling: Mutate Multiple Columns: When using special characters for Suffix, it showed an unmatched parenthesis error.
+* Data Wrangling: Now the values for the true_value argument of str_logical function are suggested in Create Calculation (mutate) dialog etc.
+
+
+* Chart: The "Cumulative Sum" Window Calculation didn't work properly if there were NA values in the summarized data in the Line chart. 
+* Chart: If numeric values on X-Axis were derived from a Date or POSIXct column such as the "Month Number" function, the "Fill with NA" Missing Value Handling option should complete the missing numbers and fill NAs for values. 
+* Chart: Exported chart data didn't contain columns using the "As Category" column function.
+* Chart: Pivot Table failed to render and threw "Cannot read property 'url' of undefined' if you assigned multiple columns to Value and removed the first one.
+* Chart: The "Show Detail" dialog should show a reason why there is no row if the bar is created by the "Missing Value Handling". 
+
+
+* Analytics: Correlation: You couldn't open an Excel file created by the "Export Table Data as Excel" feature in the Data tab if you had Japanese characters in the data and column names on Windows.
+
+
+* Parameter: When moving a slider to the far end,  it kept sliding even after releasing the mouse.
+
+
+* Export: EDF/DF file export failed if exported Chart(s) had a long name.
+* Export: Project export failed if the path or name for the zip file to create included multibyte characters.
+* General: If project export failed in the middle, a directory named "\_archived_project" was left in the project directory, and it looked like an additional project on the project list screen.
+
+
 ## 6.7.0
 
 Released on 8/19/2021.
