@@ -12,9 +12,22 @@ You can view the raw data quickly with Table.
 
 * Max # of Columns - You can select how many columns to show at "Max # of Columns" control. You can choose either "300", "1,000" or "10,000". Note that if you have many columns and choose a large number here, it may slow down the table rendering. 
 
-## Sort 
 
-You can sort by the column by clicking the column header.  If it is a numeric column, it also shows the micro bar charts. Note that the sort happens only for the rows fetched. 
+
+## Formatting Columns
+
+You can change the style and formatting for each column by using the Column Format dilaog. You can access the Column Format dialog by clicking the Edit icon in the Setup section in the Column Selection dialog. See 
+[Column Configuration Dialog](column-configuration-dialog.md) for mode details.
+
+![](images/table-column-format.png)
+
+
+
+## Fit to Screen
+
+
+You can fit the table to the chart viewing area by the "Fit to Screen" option in the chart property dialog. See [Fit to Screen (Table)](viz/table-fit-to-screen.md) for more details.
+
 
 
 ## Search

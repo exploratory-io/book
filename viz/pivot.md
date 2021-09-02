@@ -8,7 +8,7 @@ Pivot Table makes it super easy to not only summarize (aggregate) data but also 
 ## Column Assignments
 
 * Row - Assign a column you want to show at Row Headers. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc. You can assign multiple columns to Row.   
-* Value - Assign a column you want to show at the value area. If it is a numeric column assigned, you can set the aggregation function such as `Sum`, `Mean (Average)`, etc. to aggregate the values. If it is non-numeric column, you can set the count based aggregation function such as `Count (number of rows)`, `Number of Unique Values`, etc. You can assign multiple columns to Value. You can also assign a Window Calculation for each Value from the gear icon on each Value. Look at the Percent (%) of Total section below for detail.  
+* Value - Assign a column you want to show at the value area. You can assign multiple columns to Value. If a numeric column is assigned, you can set the aggregation function such as `Sum`, `Mean (Average)`, etc. to aggregate the values. If it is non-numeric column, you can set a count-based aggregation function such as `Unique Count` or a function to pick one of values in the group such as "First (First Row)". 
 * Column - Assign a column you want to show at Column Headers. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc.
 * Sort - Assign a column to use for Sorting the Row values. The default is based on either the alphabetic order or the factor level order for Factor type columns.
 
@@ -22,6 +22,11 @@ You can format each Row Header and Value column. You can access the Column Forma
 
 ![](images/pivot-format2.png)
 
+
+## Fit to Screen
+
+
+You can fit the table to the chart viewing area by the "Fit to Screen" option in the chart property dialog. See [Fit to Screen (Table)](viz/table-fit-to-screen.md) for more details.
 
 ## Window Calculation 
 

@@ -38,11 +38,6 @@ You can choose the column function you want to apply to the column data if avail
 
 
 
-## Sort 
-
-You can set the sort order of the column. You can set either "Descending" or "Ascending". You can set the sort order in multiple columns. In this case, the sort happens in the priority order. 
-
-In case of Summarize Table, there will be no priority option. If you set a sorting option in one place, the sorting option you set in other place will be reset. 
 
 ## Number Formatting
 
@@ -59,6 +54,9 @@ You can set Number Formatting for numeric columns. The following formatting opti
 ## Date Formatting
 You can set the date formatting for Date and POSIXct columns at the "Formatting" section. 
 
+## Time Zone
+You can set which time zone to apply for the POSIXct column data.
+
 ## Text Wrap
 
 You can enable Text Wrap option to allow showing the text in multiple lines. 
@@ -67,7 +65,14 @@ You can enable Text Wrap option to allow showing the text in multiple lines.
 
 
 
-## URL Link
+## Sort 
+
+You can set the sort order of the column. You can set either "Descending" or "Ascending". You can set the sort order in multiple columns. In this case, the sort happens in the priority order. 
+
+In case of Summarize Table, there will be no priority option. If you set a sorting option in one place, the sorting option you set in other place will be reset. 
+
+
+## URL
 
 You can set a URL Link on the column. You can dynamically construct the link with the associated column values by referencing the column name by `${}`. Once you define a URL Link, the column value will be clickable and if a user clicks the value, it opens up the URL in an external browser. 
 
