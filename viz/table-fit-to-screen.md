@@ -13,7 +13,7 @@ Suppose you have a wider table that overflows the chart viewing area like the fo
 ![](images/fit1.png)
 
 
-You can check the "Fit to Screen" option to fit the table into the chart viewing area. It tries to fit as much as possible, but if you have too many columns, it may still overlow.  
+You can check the "Fit to Screen" option to fit the table into the chart viewing area. It tries to fit as much as possible, but if you have too many columns, it may still overflow.  
 
 ![](images/fit2.png)
 

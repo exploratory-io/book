@@ -41,3 +41,7 @@ You can use the Missing Value Handling feature to control missing values. See [M
 ## Layout Configuration
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
+
+## Save as an Image
+
+You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.

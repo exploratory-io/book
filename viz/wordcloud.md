@@ -19,3 +19,8 @@ You can use Limit Values to filter the categories by the aggregated values. See 
 * Height: Width of the plot in pixel.
 * Rotated Text Ratio (0-1) - This controls the ratio of words displayed vertically (90 degree rotation). For example, if you set 0.5 half of the words are displayed vertically.
 * Min Frequency for Words - Words whose frequency is below this Minimum Frequency will not be plotted.
+
+
+## Save as an Image
+
+You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.

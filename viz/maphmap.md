@@ -11,3 +11,7 @@ When you have tons of location data points being displayed as dots on Map, it’
 * Longitude - Assign a column that has longitude values. 
 * Latitude - Assign a column that has longitude values. 
 * Value - Assign a numeric column for values. 
+
+## Save as an Image
+
+You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.

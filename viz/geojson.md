@@ -66,3 +66,7 @@ You can use Limit Values to filter the categories by the aggregated values. See 
 ## Custom Function
 
 You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
+
+## Save as an Image
+
+You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.

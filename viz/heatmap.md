@@ -39,8 +39,13 @@ Unlike the other chart types, if you export the Heatmap chart data, the data wil
 ![](images/heatmap_export.png)
 
 
+## Save as an Image
+
+You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.
+
 ## Links
 
 You can check out the following articles for more information. 
 
 * [Quick Introduction to Heatmap in Exploratory](https://blog.exploratory.io/quick-introduction-to-heatmap-c21a9f9e4644)
+

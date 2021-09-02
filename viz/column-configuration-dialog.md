@@ -59,7 +59,7 @@ You can set which time zone to apply for the POSIXct column data.
 
 ## Text Wrap
 
-You can enable Text Wrap option to allow showing the text in multiple lines. 
+You can enable the Text Wrap option to allow showing the text in multiple lines. 
 
 ![](images/cconf15.png)
 
@@ -69,7 +69,7 @@ You can enable Text Wrap option to allow showing the text in multiple lines.
 
 You can set the sort order of the column. You can set either "Descending" or "Ascending". You can set the sort order in multiple columns. In this case, the sort happens in the priority order. 
 
-In case of Summarize Table, there will be no priority option. If you set a sorting option in one place, the sorting option you set in other place will be reset. 
+In the case of Summarize Table, there will be no priority option. If you set a sorting option in one place, the sorting option you set in another place will be reset. 
 
 
 ## URL
@@ -90,7 +90,7 @@ If you want to use values as a URL parameter, check the "Apply URL encoding for 
 
 ## Column Width (px)
 
-You can set a column width. The unit is pixel. 
+You can set column width. The unit is a pixel. 
 
 
 
@@ -111,12 +111,12 @@ The output will look like this.
 
 ### Set Colors
 
-You can apply a color encoding to the column values. You can choose a color palette to apply from the list. You can apply colors to either the value text or background color. 
+You can apply color encoding to the column values. You can choose a color palette to apply from the list. You can apply colors to either the value text or background color. 
 
 
 ![](images/cconf9.png)
 
-This is the example of the color encoding applied to the background color. 
+This is an example of the color encoding applied to the background color. 
 
 
 ![](images/cconf12.png)
@@ -125,7 +125,7 @@ This is the example of the color encoding applied to the background color.
 
 You can apply a specific color only for the values that meet the condition. You can choose an operator and enter the value to construct a condition, and you can choose a color to apply from the list. You can apply colors to either the value text or background color. 
 
-You can create multiple conditions by clicking "+" icon. The conditions are evaluated from the top to bottom. You can remove unnecessary conditions by clicking "x" icon.
+You can create multiple conditions by clicking the "+" icon. The conditions are evaluated from the top to bottom. You can remove unnecessary conditions by clicking the "x" icon.
 
 
 ![](images/cconf10.png)
