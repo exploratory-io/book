@@ -13,70 +13,19 @@ Pivot Table makes it super easy to not only summarize (aggregate) data but also 
 * Sort - Assign a column to use for Sorting the Row values. The default is based on either the alphabetic order or the factor level order for Factor type columns.
 
 
-## Color By
+## Formatting Columns
 
-You can use "Color By" to format the Value cells with colors based on the Values, which would make it easier to spot the patterns or trends in the data. The formatting is based on the value range of each target group. Basically what it does is, it figures out the value range based on min and max values, splits the range into 5 equal length, and applies the color palettes. Following target group options are available. 
+You can format each Row Header and Value column. You can access the Column Format dialog by selecting "Formatting" menu in the column menu next to the column name dropdown. See 
+[Column Configuration Dialog](column-configuration-dialog.md) for mode details.
 
+![](images/pivot-format1.png)
 
-#### Row (Detail Level)
-![](images/pivot_colorby_row.png)
-
-It formats Value cells for each row. 
-
-#### Row (Group Level)
-![](images/pivot_colorby_rowg.png)
+![](images/pivot-format2.png)
 
 
-It formats Value cells for each row group, which means the 2nd Row Header group from the right.  
+## Window Calculation 
 
-#### Column
-![](images/pivot_colorby_col.png)
-
-It formats Value cells for each column. 
-
-
-#### All
-![](images/pivot_colorby_all.png)
-
-It formats Value cells for the entire pivot table. 
-
-
-You can change the color palette and reverse the order of the color assignment by clicking a gear icon.
-
-If you assign multiple columns to Value, the Color By options applies to all the columns.   
-
-If you assign the "Percent of Total" window function on any Value column, the Color By option will be available only for the direction selected at the "Percent of Total". See the "Percent of Total" section following for details.
-
-
-
-## Percent (%) of Total
-
-The "Percent of Total" calculates the ratio of values for each group (direction). You can assign "Percent of Total" by clicking the gear icon on each column assigned to Value, selecting "Window Function" menu item and choosing it from the "Calculation Type".   
-
-![](images/pivot_ptotal.png)
-
-Following direction options are available.
-
-#### Row (Detail Level)
-
-The ratio calculation is done for each row. 
-
-#### Row (Group Level)
-
-The ratio calculation is done for each row group, which means the 2nd Row Header group from the right.  
-
-#### Column
-
-The ratio calculation is done for each column. 
-
-#### All
-
-The ratio calculation is done for the entire pivot table. 
-
-
-If you assign multiple columns to Value, the Color By options applies to all the columns assigned.   
-
-If you assign the "Percent of Total" window function on any Value column, the Color By option will be available only for the direction selected at the "Percent of Total". 
+* You can assign Window Calculations for each column at Value. See [Window Calculation](window-calc.md) for more details.
 
 
 ## Visual Sort 
@@ -93,28 +42,6 @@ You can categorize numeric values inside the chart. See [Category(Binning)](cate
 You can use the Custom Function feature to define your own aggregation function at Value. See [Custom Function](custom-function.md) for the detail.
 
 
-## URL Link 
-
-You can set a URL Link on each measure column. You can dynamically construct the link with the associated column values by referencing the column name by `${}`. Once you define a URL Link, the column value will be clickable and if a user clicks the value, it opens up the URL in an external browser. 
-
-  
-For example, if you have a "Country" column in your Pivot, you can set the URL `http://exploratory.io/?q=${Country}` like following.
-
-
-![](images/pivot3.png)
-
-
-
-Then, the Pivot will look like this.
-
-![](images/pivot2.png)
-
-
-If you click "Brazil", a browser opens up the URL `https://exploratory.io/?q=Brazil`
-
-
-
-
 ## Calculation Target for Total Calculation
 
 You can choose how to calculate the totals/subtotals at the Calculation Target in the Setting dialog for total.
@@ -123,29 +50,9 @@ You can choose how to calculate the totals/subtotals at the Calculation Target i
 * Data Before Aggregation: Totals and subtotals are calculated based on the raw data before any aggregations. 
 
 
-### Limitations of the "Data Before Aggregation" option
-
-There are a couple of known limitations for the "Data Before Aggregation" option.
-
-* The total calculation ignores the Window Calculation if you use any of the Window Calculation at the Value.
-* The total calculation doesn't work with the "Custom Calculation" at the Value. 
-
-
-![](images/pivot-total-config.png)
-
-
-
-
-
 ## Layout Configuration
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
 
 
-## Links
 
-You can check out the following articles for more information. 
-
-* [Introducing Pivot Table](https://blog.exploratory.io/introducing-pivot-table-1c9c949fd2d6#.vxc6ndj8u)
-
-* [Percent of Total support (3.0 Release)](https://blog.exploratory.io/exploratory-v3-0-released-ace2a16e7d91)

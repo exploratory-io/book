@@ -116,7 +116,7 @@ This is the example of the color encoding applied to the background color.
 
 ![](images/cconf12.png)
 
-## Set Colors Conditionally
+### Set Colors Conditionally
 
 You can apply a specific color only for the values that meet the condition. You can choose an operator and enter the value to construct a condition, and you can choose a color to apply from the list. You can apply colors to either the value text or background color. 
 
@@ -143,3 +143,64 @@ The following operators are available.
 This is the sample output of the Conditional Formatting. 
 
 ![](images/cconf13.png)
+
+
+
+
+
+
+
+## Direction
+
+For "Show Bars on Background" and "Show Color" visual formattings, you can choose how you group the Values for the color formatting at the Direction option. The following Direction types are available.
+
+
+
+![](images/cconf-direction.png)
+
+
+
+
+
+
+
+
+### All (Down then Across)
+
+
+It formats Value cells for the entire pivot table. 
+
+![](images/cconf-direction-all.png)
+
+
+
+### Row (Across)
+
+It formats Value cells for each row. 
+
+![](images/cconf-direction-row.png)
+
+
+
+### Column (Down)
+
+It formats Value cells for each column. 
+
+![](images/cconf-direction-col.png)
+
+
+
+### Column (Down within Group)
+
+It formats Value cells for each column within each row group, which means the 2nd Row Header group from the right.  
+
+![](images/cconf-direction-colg.png)
+
+
+### Column (Down then Across within Group)
+
+
+It formats Value cells for each row group, which means the 2nd Row Header group from the right.  
+
+
+![](images/cconf-direction-group.png)
