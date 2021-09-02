@@ -16,11 +16,13 @@ The following options are available.
 
 * PNG
 * SVG
+
 ## Background
 
 The following options are available. 
 
 * Set Background Transparent - You can check this option to make the background of the exported image transparent.
+
 ## Size
 
 * Width - Width of the image.

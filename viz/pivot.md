@@ -30,7 +30,7 @@ You can fit the table to the chart viewing area by the "Fit to Screen" option in
 
 ## Window Calculation 
 
-* You can assign Window Calculations for each column at Value. See [Window Calculation](window-calc.md) for more details.
+You can assign Window Calculations for each column at Value. See [Window Calculation](window-calc.md) for more details.
 
 
 ## Visual Sort 
