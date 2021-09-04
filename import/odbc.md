@@ -6,11 +6,13 @@ You can quickly import data from your ODBC Database Connection into Exploratory.
 
 First, install ODBC Drivers and set up Data Source Name (DSN) for the database you want to connect Exploratory to. Following are instructions to create ODBC DSN for some of the types of databases we verified that they work.
 
-* [Snowflake](https://exploratory.io/note/2ac8ae888097/How-to-import-data-from-Snowflake-nhP3FTm5ZM) (from Exploratory for Mac/Windows)
-* [Oracle](https://community.exploratory.io/t/connecting-to-oracle-database-through-odbc-from-windows-with-oracle-instance-client/499) (from Exploratory for Windows)
-* [Oracle](https://community.exploratory.io/t/connecting-to-oracle-database-through-odbc-from-mac/347) (from Exploratory for Mac)
-* [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-windows/341) (from Exploratory for Windows)
-* [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-mac/339) (from Exploratory for Mac)
+* [Snowflake](https://exploratory.io/note/2ac8ae888097/How-to-import-data-from-Snowflake-nhP3FTm5ZM) (for Mac/Windows)
+* [Oracle](https://exploratory.io/note/exploratory/Connecting-to-Oracle-Database-through-ODBC-from-Windows-with-Oracle-Instance-Client-LmR8nHr3) (for Windows)
+* [Oracle](https://exploratory.io/note/exploratory/Connecting-to-Oracle-Database-through-ODBC-from-Mac-uvi2DuT5) (for Mac)
+* [Oracle (Japanese)](https://exploratory.io/note/BWz1Bar4JF/Oracle-Instance-Client-Windows-ODBC-Oracle-Database-AGi5wIz7QG) (for Windows)
+* [Oracle (Japanese)](https://exploratory.io/note/BWz1Bar4JF/ODBC-Mac-Oracle-Database-baR1tUK7KO) (for Mac)
+* [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-windows/341) (for Windows)
+* [Microsoft SQL Server](https://community.exploratory.io/t/connecting-to-ms-sql-server-through-odbc-from-mac/339) (for Mac)
 
 ## 2. Create a Connection to use
 
@@ -27,7 +29,7 @@ Select the "ODBC" icon.
 ![](images/odbc-connection3.png)
 
 Select the DSN created at Step 1 and click the Test and make sure it works.
-For Mac, we support both [iODBC](http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/ODBCMacOSX) based and [unixODBC](http://www.unixodbc.org/drivers.html) based ODBC Drivers and DSN. 
+For Mac, we support both [iODBC](http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/ODBCMacOSX) based and [unixODBC](http://www.unixodbc.org/drivers.html) based ODBC Drivers and DSN.
 
 ![](images/odbc-connection4.png)
 
@@ -70,9 +72,9 @@ Finally, you can use @{} to surround a variable name inside the query like below
   from airline_2016_01
   where carrier = @{carrier}
   ```
-  
+
   If you type @ then it suggests parameters like below.
-  
+
   ![](images/insert_param_in_query.png)
 
 
@@ -101,5 +103,3 @@ This will show you Actual Number of Rows like below.
 - [Importing multi-byte characters from Teradata Aster fails](https://exploratory.io/note/exploratory/How-to-workaround-known-issues-when-connectiong-to-Teradata-Aster-with-ODBC-BTG0Tmz9)
 
 - [Schema and Tables are not shown for Kintone](https://exploratory.io/note/exploratory/How-to-workaround-known-issues-when-connecting-to-Kintone-with-ODBC-hjq9Deg4)
-
-
