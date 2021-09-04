@@ -68,3 +68,8 @@ Take a look at [Layout Configuration](layout.md) on how to configure the layout 
 ## Note about 3D Scatter on Windows
 
 On Windows with some hardware and driver, 3D scatter chart may not work. In that case, you can install [DirectX 9 redistributable](http://www.microsoft.com/en-us/download/details.aspx?id=8109) to make it work. 
+
+
+## Save as an Image
+
+You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.

@@ -38,11 +38,6 @@ You can choose the column function you want to apply to the column data if avail
 
 
 
-## Sort 
-
-You can set the sort order of the column. You can set either "Descending" or "Ascending". You can set the sort order in multiple columns. In this case, the sort happens in the priority order. 
-
-In case of Summarize Table, there will be no priority option. If you set a sorting option in one place, the sorting option you set in other place will be reset. 
 
 ## Number Formatting
 
@@ -59,15 +54,25 @@ You can set Number Formatting for numeric columns. The following formatting opti
 ## Date Formatting
 You can set the date formatting for Date and POSIXct columns at the "Formatting" section. 
 
+## Time Zone
+You can set which time zone to apply for the POSIXct column data.
+
 ## Text Wrap
 
-You can enable Text Wrap option to allow showing the text in multiple lines. 
+You can enable the Text Wrap option to allow showing the text in multiple lines. 
 
 ![](images/cconf15.png)
 
 
 
-## URL Link
+## Sort 
+
+You can set the sort order of the column. You can set either "Descending" or "Ascending". You can set the sort order in multiple columns. In this case, the sort happens in the priority order. 
+
+In the case of Summarize Table, there will be no priority option. If you set a sorting option in one place, the sorting option you set in another place will be reset. 
+
+
+## URL
 
 You can set a URL Link on the column. You can dynamically construct the link with the associated column values by referencing the column name by `${}`. Once you define a URL Link, the column value will be clickable and if a user clicks the value, it opens up the URL in an external browser. 
 
@@ -85,7 +90,7 @@ If you want to use values as a URL parameter, check the "Apply URL encoding for 
 
 ## Column Width (px)
 
-You can set a column width. The unit is pixel. 
+You can set column width. The unit is a pixel. 
 
 
 
@@ -106,21 +111,21 @@ The output will look like this.
 
 ### Set Colors
 
-You can apply a color encoding to the column values. You can choose a color palette to apply from the list. You can apply colors to either the value text or background color. 
+You can apply color encoding to the column values. You can choose a color palette to apply from the list. You can apply colors to either the value text or background color. 
 
 
 ![](images/cconf9.png)
 
-This is the example of the color encoding applied to the background color. 
+This is an example of the color encoding applied to the background color. 
 
 
 ![](images/cconf12.png)
 
-## Set Colors Conditionally
+### Set Colors Conditionally
 
 You can apply a specific color only for the values that meet the condition. You can choose an operator and enter the value to construct a condition, and you can choose a color to apply from the list. You can apply colors to either the value text or background color. 
 
-You can create multiple conditions by clicking "+" icon. The conditions are evaluated from the top to bottom. You can remove unnecessary conditions by clicking "x" icon.
+You can create multiple conditions by clicking the "+" icon. The conditions are evaluated from the top to bottom. You can remove unnecessary conditions by clicking the "x" icon.
 
 
 ![](images/cconf10.png)
@@ -143,3 +148,64 @@ The following operators are available.
 This is the sample output of the Conditional Formatting. 
 
 ![](images/cconf13.png)
+
+
+
+
+
+
+
+## Direction
+
+For "Show Bars on Background" and "Show Color" visual formattings, you can choose how you group the Values for the color formatting at the Direction option. The following Direction types are available.
+
+
+
+![](images/cconf-direction.png)
+
+
+
+
+
+
+
+
+### All (Down then Across)
+
+
+It formats Value cells for the entire pivot table. 
+
+![](images/cconf-direction-all.png)
+
+
+
+### Row (Across)
+
+It formats Value cells for each row. 
+
+![](images/cconf-direction-row.png)
+
+
+
+### Column (Down)
+
+It formats Value cells for each column. 
+
+![](images/cconf-direction-col.png)
+
+
+
+### Column (Down within Group)
+
+It formats Value cells for each column within each row group, which means the 2nd Row Header group from the right.  
+
+![](images/cconf-direction-colg.png)
+
+
+### Column (Down then Across within Group)
+
+
+It formats Value cells for each row group, which means the 2nd Row Header group from the right.  
+
+
+![](images/cconf-direction-group.png)

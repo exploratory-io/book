@@ -1,6 +1,6 @@
 # Missing Value Handling
 
-Missing Value Hanlding is available in the following charts. 
+Missing Value Handling is available in the following charts. 
 
 * Bar
 * Line
@@ -19,17 +19,62 @@ Missing Value Hanlding is available in the following charts.
 
 You can set to show or hide the unused factor levels.
 
-## Missing Value Hanling in Line chart
+## Missing Value Hanling 
 
-At the Y Axis of Line chart, you have the following missing value handling options.
 
-* None - Do nothing.
-* Fill with NA - Fill the missing value with NA. The line will be intermittent.
+You can set how to fill the missing value at the "Missing Value Handling" option. This option is available in the following chart types.
+
+* Bar - Y-Axis
+* Line - Y-Axis
+* Area - Y-Axis
+* Scatter (With Aggregation) - Y-Axis
+
+
+The following options are available. 
+
+* None 
+* Fill with NA 
 * Fill with Zero
 * Fill with Previous Value
 * Fill with Next Value
 
-For "Fill with Previous Value" and "Fill with Next Value" options, you have the "Range to Fill Through" option. Following options are available.
+Here are examples of how each option works. Suppose you have Sales data but it misses the data for year 2013 except USCA. 
 
-* End of Each Color - Value filling happens within each color range. 
+### None 
+
+No filling happens. If you use a Line chart, It just connects the values. This is the default behavior.
+
+![](images/mvh1.png)
+
+### Fill with NA 
+
+It fills missing values with NAs. If you use a Line chart, lines will be intermittent.
+
+![](images/mvh2.png)
+
+### Fill with Zero
+
+It fills missing values with zeros.
+
+![](images/mvh3.png)
+
+
+### Fill with Previous Value
+
+It fills missing values with the previous values.
+
+![](images/mvh4.png)
+
+### Fill with Next Value
+
+
+It fills missing values with the next values.
+
+![](images/mvh5.png)
+
+
+
+For the "Fill with Previous Value" and "Fill with Next Value" options, you have the "Range to Fill Through" option. The following options are available.
+
+* End of Each Group - Value filling happens within each group (Color and Repeat By) range. 
 * End of All - Value filling happens for the whole data range. 
