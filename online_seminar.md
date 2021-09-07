@@ -3,7 +3,7 @@
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-In this part 2 of the Survey Data Analysis seminar, Kan will introduce two commonly used analysis methods - Factor Analysis and Text Anlaysis.
+In this part 2 of the Survey Data Analysis seminar, Kan will introduce two commonly used analysis methods - Factor Analysis and Text Analysis.
 
 Factor Analysis can be used to discover underlying characteristics of the survey responders based on how they answer the questions.
 
@@ -21,6 +21,6 @@ More often than not you have time sensitive information in your data. For exampl
 
 This type of data is called 'Time Series' data, and there are specific ways to transform, visualize, and analyze.
 
-In this seminar, Kan will introduce how you can use data wrangling, data visualization, and analytics for such Time Series data to find the insights about underlying trends in the data and present it effectively. 
+In this seminar, Kan will introduce how you can use data wrangling, data visualization, and analytics for such Time Series data to find the insights about underlying trends in the data and present it effectively.
 
 ----
