@@ -24,7 +24,7 @@ Input data should contain following column.
     * Number of Bars (Words)
   * Word Cloud
     * Number of Words
-    * Min Count for Words to Show
+    * Min Count for Words to Show - Minimum count of words to be shown on the word cloud. Words that appear only less than this count will not show up on the word cloud.
     * Min Word Size (px)
     * Max Word Size (px)
     * Rotated Text Ratio (0-1)
