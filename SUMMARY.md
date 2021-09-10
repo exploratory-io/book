@@ -190,9 +190,8 @@
 
 
 * [Analytics](analytics.md)
-   * [Correlation by Column](analytics/correlation_column.md)
-   * [Distance by Column](analytics/distance_column.md)
-   * [Distance by Category](analytics/similarity.md)
+   * [Correlation](analytics/correlation_column.md)
+   * [Distance](analytics/distance_column.md)
    * [K-Means Clustering](analytics/kmeans.md)
    * [Principal Component Analysis](analytics/pca.md)
    * [Factor Analysis](analytics/factanal.md)
