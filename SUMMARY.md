@@ -191,7 +191,6 @@
 
 * [Analytics](analytics.md)
    * [Correlation by Column](analytics/correlation_column.md)
-   * [Correlation by Category](analytics/correlation_category.md)
    * [Distance by Column](analytics/distance_column.md)
    * [Distance by Category](analytics/similarity.md)
    * [K-Means Clustering](analytics/kmeans.md)
@@ -211,7 +210,6 @@
    * [Time Series Clustering](analytics/time_series_clustering.md)
    * [Anomaly Detection](analytics/anomaly.md)
    * [Word Count](analytics/textanal.md)
-   * [Text Clustering](analytics/text_cluster.md)
    * [Topic Model](analytics/topic_model.md)
    * [Market Basket Analysis](analytics/market_basket.md)
    * [T Test](analytics/t_test.md)
@@ -221,8 +219,6 @@
    * [Chi-Square Test](analytics/chisq.md)
    * [A/B Test](analytics/ab_test.md)
    * [Normality Test](analytics/normality.md)
-
-
 
 
 * [Statistics]()
