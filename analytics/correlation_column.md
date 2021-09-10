@@ -54,6 +54,11 @@ Input data should contain numeric columns.
 ### "Data" View
 "Data" View displays the correlations for all the pairs of the selected columns in a table. By default the table is sorted by the correlation values. You can click the Column Header to sort the table based on any of the other columns.
 
+* Column 1 / Column 2
+* Correlation
+* P Value - P value from the t-test to determine the significance of the correlation.
+* t Value - t value from the t-test to determine the significance of the correlation.
+
 ## R Package
 
 The `Correlation by Column` uses `cor` function from  [`stats`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/cor.html) R Package under the hood.
