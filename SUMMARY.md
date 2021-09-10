@@ -209,7 +209,7 @@
    * [Time Series Clustering](analytics/time_series_clustering.md)
    * [Anomaly Detection](analytics/anomaly.md)
    * [Word Count](analytics/textanal.md)
-   * [Topic Model](analytics/topic_model.md)
+   * [Text Clustering with Topic Model (LDA)](analytics/topic_model.md)
    * [Market Basket Analysis](analytics/market_basket.md)
    * [T Test](analytics/t_test.md)
    * [ANOVA](analytics/anova.md)

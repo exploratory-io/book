@@ -1,6 +1,6 @@
 # Text Clustering with Topic Model
 
-Clusters documents based on the topics they are talking about with topic model (LDA - Latent Dirichlet allocation).
+Clusters documents based on the topics they are talking about with topic model. The topic model algorithm is LDA (Latent Dirichlet allocation).
 
 It is a fuzzy clustering, in that the topic model gives ratio of topics for each document, rather than labeling a document with a single topic.
 
