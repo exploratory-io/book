@@ -64,7 +64,7 @@ Input data should contain following column.
 
 ## "Word Pairs - Network" View
 
-"Word Pairs - Network" View displays the network graph of co-occurrence of the words. The line thickness in the graph represents the count of co-occurrence. The sizes of the circles represents the count of the word. The colors of circles are the result of clustering of the words based on co-occurrence.
+"Word Pairs - Network" View displays the network graph of co-occurrence of the words. The line thickness in the graph represents the count of co-occurrence. The sizes of the circles represent the count of the word. The colors of circles are the result of clustering of the words based on co-occurrence.
 
 ## R Package
 
