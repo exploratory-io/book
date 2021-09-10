@@ -3,10 +3,13 @@
 ## How to Access This Feature
 
 ### From + (plus) Button
+
 There are two ways to access. One is to access from 'Add' (Plus) button.
+
 ![](images/do_tokenize_add.png)
 
 Another way is to access from a column header menu.
+
 ![](images/do_tokenize_col.png)
 
 ## Parameters
