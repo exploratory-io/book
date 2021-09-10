@@ -33,6 +33,12 @@ Input data should be a survival data. Each row should represent one observation 
 ### "Summary" View
 "Summary" View shows up only when Color By column is set. It shows the result of log-rank test that tests if the difference in survival of the subjects that belongs to different Color-By column groups is statistically significant or not.
 
+* Chi-Square - The rest statistic of the log-rank test.
+* P Value (Log-Rank Test)
+* Degree of Freedom - The degree of freedom of the chi-square distribution used for the log-rank test.
+* Number of Rows - Number of observations.
+* Number of Events - Number of events (death) in the entire observation data.
+
 ### "Survival Curve" View
 "Survival Curve" View displays how the subjects survives (without experiencing event/death) as time goes by with a line chart.
 This example is with Color By.
