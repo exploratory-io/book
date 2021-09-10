@@ -9,13 +9,22 @@ Input data should contain numeric columns.
   * Group By - Categorical column to group by. If you specify this, the analytics runs for each group.
 
 
-## Analytics Properties
+## Properties
+* Analytics Properties
   * Method - Method to calculate correlations. The default is "Pearson". This can be:
     * Pearson
-    * Kendall
     * Spearman
+* Correlation - This section is about "Correlations" View.
   * Show Only Lower Triangle - Show only lower triangle of the matrix, avoiding showing correlations for same pairs twice.
   * Show Diagonal Values - Show values on diagonal of the matrix, which should always have correlation of 1.
+* Significance - This section is about "Significance" View.
+  * P Value Threshold to be Significant
+  * Show Only Lower Triangle
+  * Show Diagonal Values
+* Data - This section is about "Data" View.
+  * Show Data From
+    * Positive Correlations
+    * Negative Correlations
 
 ## How to Use This Feature
 1. Click Analytics View tab.
@@ -29,10 +38,13 @@ Input data should contain numeric columns.
 6. Click Run button to run the analytics.
 7. Select view type (explained below) by clicking view type link to see each type of generated visualization.
 
-### "Correlation Matrix" View
-"Correlation Matrix" View displays correlations with Heatmap. Red color means it has positive correlation and Blue color means it has negative correlation. The darker the color, the stronger the correlation.
+### "Correlations" View
+"Correlations" View displays correlations with Heatmap. Red color means it has positive correlation and Blue color means it has negative correlation. The darker the color, the stronger the correlation.
 
 ![](images/cor_by_column_matrix.png)
+
+### "Significance" View
+"Significance" View displays correlations with Scatter Plot. Gray color means it is not statistically significant. Red color means it has positive significant correlation and Blue color means it has negative significant correlation. You can check the p-values of the correlations by hovering the mouse pointer over the circles.
 
 ### "Scatter Matrix" View
 "Scatter Matrix" View displays the actual data distributions for each variable combination.
