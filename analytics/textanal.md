@@ -12,9 +12,10 @@ Input data should contain following column.
 
   * Sample Data Size - Number of rows to sample before running the analysis.
   * Text Tokenization
-    * Remove Stopwords
-    * Language for Stopwords
-    * Additional Stopwords
+    * Remove Stopwords - Default is Yes.
+    * Language for Stopwords - By default it is automatically selected based on the content of the text.
+    * Additional Stopwords - Words to be added to the default set of stopwords.
+    * Exclude from Stopwords - Words to be excluded from the default set of stopwords.
     * Words To Be Treated As One Word - If a word or phrase that should be treated as one token is separated into multiple tokens, it can be fixed by specifying the word/phrase here.
     * Remove Punctuations
     * Remove Numbers
