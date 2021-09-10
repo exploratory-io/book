@@ -42,20 +42,25 @@ Input data should be a survival data. Each row should represent one observation 
 ### "Survival Curve" View
 "Survival Curve" View displays how the subjects survives (without experiencing event/death) as time goes by with a line chart.
 This example is with Color By.
+
 ![](images/survival_curve.png)
 
 This example is with Repeat By in addition to Color By.
+
 ![](images/survival_curve_with_repeat.png)
 
 By checking "With Confidence Range" checkbox, range for 95% confidence interval can be displayed.
+
 ![](images/survival_curve_with_confint.png)
 
 ### "Survival Table" View
 "Survival Table" View displays how the subjects survives as time goes by with a table with color.
+
 ![](images/survival_table.png)
 
 ### "Data" View
 "Data" View displays raw data for the survival curve.
+
 ![](images/survival_data.png)
 
 #### Output Data
