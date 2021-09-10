@@ -39,16 +39,8 @@ Input data should contain numeric columns.
 
 ![](images/cor_by_column_scattermatrix.png)
 
-
-### "Positive Correlations" View
-"Positive Correlations" View displays the most positive 100 correlations. You can click Column Header for Correlation to sort the data by Correlation value.
-
-![](images/cor_by_column_positive.png)
-
-### "Negative Correlations" View
-"Negative Correlations" View displays the most negative 100 correlations. You can click Column Header for Correlation to sort the data by Correlation value.
-
-![](images/cor_by_column_negative.png)
+### "Data" View
+"Data" View displays the correlations for all the pairs of the selected columns in a table. By default the table is sorted by the correlation values. You can click the Column Header to sort the table based on any of the other columns.
 
 ## R Package
 
