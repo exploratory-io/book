@@ -20,18 +20,19 @@ Input data should contain following column.
     * Remove Numbers
     * Remove Hiragana Only Words - You can treat often meaningless short Japanese Hiragana words as stopwords altogether by selecting an option here.
   * Words - Bar
-    * Number of Words to Show
+    * Number of Bars (Words)
   * Word Cloud
-    * Number of Words to Show
+    * Number of Words
+    * Min Count for Words to Show
     * Min Word Size (px)
     * Max Word Size (px)
     * Rotated Text Ratio (0-1)
     * Chart Width (px)
     * Chart Height (px)
   * Word Pairs - Bar
-    * Number of Word Pairs to Show
+    * Number of Bars (Word Pairs)
   * Word Pairs - Network
-    * Number of Words to Show
+    * Number of Words
     * Max Size of Circle (px)
     * Criterion for Size of Circle
     * Max Width of Edge (px)
