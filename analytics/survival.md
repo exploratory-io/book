@@ -30,6 +30,9 @@ Input data should be a survival data. Each row should represent one observation 
 10. Click Run button to run the analytics.
 11. Select view type (explained below) by clicking view type link to see each type of generated visualization.
 
+### "Summary" View
+"Summary" View shows up only when Color By column is set. It shows the result of log-rank test that tests if the difference in survival of the subjects that belongs to different Color-By column groups is statistically significant or not.
+
 ### "Survival Curve" View
 "Survival Curve" View displays how the subjects survives (without experiencing event/death) as time goes by with a line chart.
 This example is with Color By.
