@@ -19,6 +19,7 @@ Input data should contain following column.
     * Words To Be Treated As One Word - If a word or phrase that should be treated as one token is separated into multiple tokens, it can be fixed by specifying the word/phrase here.
     * Remove Punctuations
     * Remove Numbers
+    * Clean Up Twitter Data - Whether to remove hashtag (starts with #) and mention (starts with @). The default is No.
     * Remove Hiragana Only Words - You can treat often meaningless short Japanese Hiragana words as stopwords altogether by selecting an option here.
   * Words - Bar
     * Number of Bars (Words)
