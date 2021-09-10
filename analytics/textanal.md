@@ -39,6 +39,32 @@ Input data should contain following column.
     * Max Width of Edge (px)
     * Font Size (Ratio)
 
+## How to Use This Feature
+
+1. Under Analytics view, select "Word Count" for Analytics Type.
+2. Select a column for Text Column.
+3. Click Run button to run the analytics.
+4. Select each view type (explained below) see the detail of the analysis.
+
+## "Word Cloud" View
+
+"Word Cloud" View displays the word cloud of the words used in the text data. Both the color and the size of a word indicates the count of the word.
+
+## "Words - Bar" View and "Words - Count" View
+
+"Words - Bar" View and "Words - Count" View display the count of the words in the text data.
+
+## "Words - Data" View
+
+"Words - Data" View displays the text data after tokenization.
+
+## "Word Pairs - Bar" View and "Word Pairs - Count" View
+
+"Word Pairs - Bar" View and "Word Pairs - Count" View display the count of the word pairs in the text data.
+
+## "Word Pairs - Network" View
+
+"Word Pairs - Network" View displays the network graph of co-occurrence of the words. The line thickness in the graph represents the count of co-occurrence. The sizes of the circles represents the count of the word. The colors of circles are the result of clustering of the words based on co-occurrence.
 
 ## R Package
 
