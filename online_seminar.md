@@ -11,15 +11,22 @@ In this seminar, Kan will introduce how you can use data wrangling, data visuali
 
 ----
 
-# Seminar #59 - Hypothesis Test
+# Seminar #59 - Visualizing Confidence Interval
 ## Date/Time: 9/22/2021 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM BST / 8PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
 ----
 
-# Seminar #60 - Open Data - FRED, Stock, Weather 
+# Seminar #60 - Hypothesis Test
 ## Date/Time: 9/29/2021 (Wed) 11AM PT (US) / 2PM ET (US) / 7PM BST / 8PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+----
+
+# Seminar #61 - Open Data - FRED, Stock, Weather
+## Date/Time: TBD 
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
