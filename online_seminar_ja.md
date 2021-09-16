@@ -28,3 +28,42 @@
 - KPI1: 利益
 - KPI2: 投資回収期間
 - KPI3: CLTV(顧客生涯価値)
+
+---
+
+# セミナー #69 Google Analytics Part 2
+
+## 時間: 2021/9/30 (木) - 午後12時 - 1時（日本時間）
+
+## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
+
+エラーバー, ABテスト, Prophet
+
+---
+
+# セミナー #70 オープンデータ Part 2
+
+## 時間: 2021/10/7 (木) - 午後12時 - 1時（日本時間）
+
+## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
+
+---
+
+# セミナー #71 機械学習モデルを使った予測と検証
+
+## 時間: 2021/10/14 (木) - 午後12時 - 1時（日本時間）
+
+## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
+
+
+
+
+---
+
+# セミナー #72 レポートのためのチャートの作り方
+
+## 時間: 2021/10/21 (木) - 午後12時 - 1時（日本時間）
+
+## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
+
+---
