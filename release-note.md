@@ -6,11 +6,11 @@ Released on 9/28/2021.
 
 ### Enhancements
 
-* Chart: Now you can create a range by specifying upper and lower values manually using the "Specific Value" option in the Line chart.
-* Chart: Now you can fill the Reference Line range with color.
+* Chart: Now, you can create a range by specifying upper and lower values manually using the "Specific Value" option in the Line chart.
+* Chart: Now, you can fill the Reference Line range with color.
 
 
-* Data Source: Amazon Athena: Supported additional parameters input field where a user can enter any supported ODBC parameters.
+* Data Source: Amazon Athena: Supported additional parameters input field to enter any supported ODBC parameters.
 * Data Source: Amazon Athena: Supported VPC Endpoint parameter.
 * Data Source: Google Drive: Supported importing files from a Share Folder.
 * Data Wrangling: Work with Text Data: Supported "Remove Text Before/After Specified Character", "Replace Text Before/After Specified Character",  and "Extract Text Before/After Specified Character", 
@@ -24,9 +24,9 @@ Released on 9/28/2021.
 * Analytics: The "Words - Count" chart in Word Count Analytics failed to render and showed "Invalid argument was passed to returnsNumericValue" error.
 
 
-* Chart: It showed less number of dots if you set the Trend Line in the Scatter chart. 
+* Chart: It showed fewer dots if you set the Trend Line in the Scatter chart. 
 * Chart: Reference Line range values in the 2nd Repeat By was incorrect if you used the "Repeat by Y-Axis Columns" feature.
-* Chart: Table failed to render and showed an error dialog if the data frame had rownames.
+* Chart: Table failed to render and showed an error dialog if the data frame had row names.
 
 
 * Dashboard: Dashboard didn't show more than 6 Numbers in a row even if you could add more than 6 Numbers at the design time. 
@@ -34,7 +34,7 @@ Released on 9/28/2021.
 
 * Data Source: Amazon S3: Files from a child folder was listed on the parent folder.
 * Data Source: Amazon S3: When merging multiple csv files as a single data frame, files from a sub-folder were included mistakenly.
-* Data Source: Amazon S3: When selecting an empty bucket, spin icon didn't go away.
+* Data Source: Amazon S3: When selecting an empty bucket, the spin icon didn't go away.
 * Data Source: ODBC: Japanese Tables names got garbled for MS SQL Server in the Schema list.
 * Data Source: SQL Server, when a SQL query failed, it showed clearDBConnection failed message.
 * Data Source: Treasure Data Connection: API Key input field was not displayed for Treasure Data Connection dialog.
@@ -44,7 +44,7 @@ Released on 9/28/2021.
 * Data Wrangling: Summarize Group: When using a column that is already assigned to Group Columns as a value column, column name was overridden.
 
 
-* Export: Error 'Cannot convert undefined or null to object' was raised from exporting a Dashboard or Note as an EDF file when a database connection missing in the project was used.
+* Export: Error 'Cannot convert undefined or null to object' was raised from exporting a Dashboard or Note as an EDF file when a database connection missed in the project was used.
 * Export: Error 'Command failed: zip -q -r "edf.zip" "note_content\note.html"' was raised when publishing or exporting a Dashboard or Note from a repository on a network drive.
 * Export: Publishing or exporting an Insight hanged if your home directory was on a network drive.
 * Export: Publish dialog didn't open when the PC was offline.
