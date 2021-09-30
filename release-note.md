@@ -4,6 +4,8 @@
 
 Released on 9/29/2021.
 
+### Bug Fixes
+
 * General: When trying to generate an Offline License Key from Exploratory Desktop, it showed 'Offline license key is supported only for Business plan' error even if your plan was Business Plan.
 
 ## 6.7.2
