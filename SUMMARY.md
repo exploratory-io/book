@@ -140,6 +140,7 @@
      * [Line](viz/line.md)
      * [Area](viz/area.md)
      * [Pie/Ring](viz/pie.md)
+     * [Radar](viz/radar.md)
      * [Histogram](viz/hist.md)
      * [Density Plot](viz/densityplot.md)
      * [Scatter (No Aggregation)](viz/scatter.md)
