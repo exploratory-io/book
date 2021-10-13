@@ -61,7 +61,7 @@
       * [Teradata](import/teradata.md)
    * [Cloud Apps Data]()
       * [Create Connection](import/connection-cloud-apps.md)
-      * [FRED (Federal Reserve of Economic Data)](import/fred.md)
+      * [FRED - Federal Reserve of Economic Data](import/fred.md)
       * [Github Issues](import/github.md)
       * [Google Analytics](import/google-analytics.md)
       * [Google Analytics (日本語)](import/google-analytics-ja.md)
