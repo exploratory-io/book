@@ -24,14 +24,14 @@
     * [Report (Note / Slides / Dashboard)](share/note.md)
   * [Share (日本語)](share/share_ja.md)
     * [共有のタイプ](share/share_type_ja.md)
-  * [Project]()
+  * [Project](project.md)
     * [Import](project/import.md)
     * [Export](project/export.md)   
     * [Search](project/search.md)   
 
 
 * [Data Import](data_import.md)
-   * [File Data]()
+   * [File Data](file-data.md)
       * [CSV / Delimited File](import/csv.md)
       * [Amazon S3](import/s3.md)
       * [Google Drive](import/google-drive.md)
@@ -41,7 +41,7 @@
       * [Stats - SAS / SPSS / STATA](import/stats.md)
       * [RData / RDS](import/rds.md)
       * [EDF - Exploratory](import/exploratory.md)
-   * [Database Data]()
+   * [Database Data](database-data.md)
       * [SQL Troubleshooting](https://exploratory.io/note/2ac8ae888097/How-to-workaround-the-issue-that-scheduled-Amazon-Athena-Data-Source-ends-up-with-empty-result-Fbe1yiQ3aC)
       * [Create Connection](import/connection.md)
       * [Google BigQuery](import/google-bigquery.md)
@@ -59,7 +59,7 @@
       * [SQLServer (DSN)](import/sqlserver.md)
       * [SQLServer](import/mssqlserver.md)
       * [Teradata](import/teradata.md)
-   * [Cloud Apps Data]()
+   * [Cloud Apps Data](cloud-apps-data.md)
       * [Create Connection](import/connection-cloud-apps.md)
       * [FRED - Federal Reserve of Economic Data](import/fred.md)
       * [Github Issues](import/github.md)
@@ -221,7 +221,7 @@
    * [Normality Test](analytics/normality.md)
 
 
-* [Statistics]()
+* [Statistics](statistics.md)
    * [Correlation](stats/correlation.md)
    * [Distance](stats/dist.md)
    * [Cosine Similarity](stats/sim.md)
@@ -233,7 +233,7 @@
    * [A/B Test (Bayesian)](stats/exp_bayes_ab.md)
 
 
-* [Machine Learning]()
+* [Machine Learning](machine-learning.md)
    * [Linear Regression](ml/linear-regression.md)
    * [Logistic Regression](ml/logistic-regression.md)
    * [GLM](ml/glm.md)
@@ -268,7 +268,7 @@
    * [Count Text Pairs](text/pair_count.md)
 
 
-* [Extend with R]()
+* [Extend with R](extend-with-r.md)
    * [R Package Install](r_package.md)
    * [Custom R Script](r_script.md)
    * [Custom Model Function](user-defined-model-function.md)
@@ -282,7 +282,7 @@
    * [Possible Reasons for Install Error](howto/install_errors.md)
    * [Upgrade Microsoft .NET Framework](howto/upgrade_dot_net.md)
 
-* [Diagnostics]()
+* [Diagnostics](diagnostics.md)
    * [Log file for debugging](debug_log.md)
    * [Log file for debugging (日本語)](debug_log_ja.md)
    * [Startup Log file for debugging](startup_log.md)
