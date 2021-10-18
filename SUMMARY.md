@@ -223,15 +223,15 @@
 
 
 * [Statistics](statistics.md)
-   * [Correlation](stats/correlation.md)
-   * [Distance](stats/dist.md)
-   * [Cosine Similarity](stats/sim.md)
-   * [SVD](stats/svd.md)
-   * [Multi Dimensional Scaling](stats/mds.md)
-   * [T-test](stats/t-test.md)
-   * [F-test](stats/f-test.md)
-   * [Chi-square test](stats/chi-test.md)
-   * [A/B Test (Bayesian)](stats/exp_bayes_ab.md)
+   * [Correlation](stats/correlation.html.md)
+   * [Distance](stats/dist.html.md)
+   * [Cosine Similarity](stats/sim.html.md)
+   * [SVD](stats/svd.html.md)
+   * [Multi Dimensional Scaling](stats/mds.html.md)
+   * [T-test](stats/t-test.html.md)
+   * [F-test](stats/f-test.html.md)
+   * [Chi-square test](stats/chi-test.html.md)
+   * [A/B Test (Bayesian)](stats/exp_bayes_ab.html.md)
 
 
 * [Machine Learning](machine-learning.md)
