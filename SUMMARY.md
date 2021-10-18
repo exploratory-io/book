@@ -263,10 +263,10 @@
    * [Fix Imbalanced Data (SMOTE)](wrangling/smote.html.md)
 
 * [Text Analysis](text/main.md)
-   * [Tokenize Text](text/do_tokenize.md)
-   * [Create N-gram Tokens](text/do_ngram.md)
-   * [Calculate tf-idf](text/do_tfidf.md)
-   * [Count Text Pairs](text/pair_count.md)
+   * [Tokenize Text](text/do_tokenize.html.md)
+   * [Create N-gram Tokens](text/do_ngram.html.md)
+   * [Calculate tf-idf](text/do_tfidf.html.md)
+   * [Count Text Pairs](text/pair_count.html.md)
 
 
 * [Extend with R](extend-with-r.md)
