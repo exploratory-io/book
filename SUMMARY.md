@@ -40,6 +40,7 @@
       * [Log File](import/log.md)
       * [Stats - SAS / SPSS / STATA](import/stats.md)
       * [RData / RDS](import/rds.md)
+      * [Parquet File](import/parquet.md)
       * [EDF - Exploratory](import/exploratory.md)
    * [Database Data](database-data.md)
       * [SQL Troubleshooting](https://exploratory.io/note/2ac8ae888097/How-to-workaround-the-issue-that-scheduled-Amazon-Athena-Data-Source-ends-up-with-empty-result-Fbe1yiQ3aC)
