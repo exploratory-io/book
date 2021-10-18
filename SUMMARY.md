@@ -276,12 +276,12 @@
 
 
 * [Setup](setup.md)
-   * [Disable McAfee virus scan](howto/stopmcafee.md)
-   * [Change Repository Location](howto/set_exploratory_home.md)
-   * [Change Repository Location (日本語)](howto/set_exploratory_home_ja.md)
-   * [Holidays Data for Forecast](howto/holiday.md)
-   * [Possible Reasons for Install Error](howto/install_errors.md)
-   * [Upgrade Microsoft .NET Framework](howto/upgrade_dot_net.md)
+   * [Disable McAfee virus scan](howto/stopmcafee.html.md)
+   * [Change Repository Location](howto/set_exploratory_home.html.md)
+   * [Change Repository Location (日本語)](howto/set_exploratory_home_ja.html.md)
+   * [Holidays Data for Forecast](howto/holiday.html.md)
+   * [Possible Reasons for Install Error](howto/install_errors.html.md)
+   * [Upgrade Microsoft .NET Framework](howto/upgrade_dot_net.html.md)
 
 * [Diagnostics](diagnostics.md)
    * [Log file for debugging](debug_log.md)
