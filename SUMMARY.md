@@ -83,7 +83,7 @@
    * [Create Custom Data Source](import/user-defined-plugin.md)
 
 
-* [Data Wrangling](chart.md)
+* [Data Wrangling](data-wrangling.md)
    * [Command Line mode for faster and more flexible data interaction in Exploratory](wrangling/command-mode.md)
    * [Select / Remove Columns](wrangling/select.md)
    * [Reorder Columns](wrangling/reorder.md)
@@ -131,7 +131,7 @@
    * [Add Row](wrangling/add_row.md)
    * [Text Wrangling](wrangling/text_wrangling.md)
 
-* [Visualization](chart.md)
+* [Visualization](visualization.md)
    * Types
      * [Pivot](viz/pivot.md)
      * [Summarize Table](viz/summarize-table.md)
