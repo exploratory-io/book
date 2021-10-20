@@ -220,6 +220,7 @@
    * [Chi-Square Test](analytics/chisq.html.md)
    * [A/B Test](analytics/ab_test.html.md)
    * [Normality Test](analytics/normality.html.md)
+   * [Prediction](analytics/prediction.md)
 
 
 * [Statistics](statistics.md)
