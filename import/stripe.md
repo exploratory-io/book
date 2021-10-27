@@ -16,6 +16,8 @@ Click 'Stripe'
 
 Create a connection following [this instruction](https://blog.exploratory.io/how-to-setup-oauth-cloud-apps-connections-in-exploratory-a5c20d18e7c7).
 
+Note that your Stripe account needs to have [the Administrator role](https://stripe.com/docs/dashboard/teams) in allowing Exploratory to read your Stripe data.
+
 ## 3. Input parameters
 
 Set these parameters.
