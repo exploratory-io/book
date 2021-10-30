@@ -9,8 +9,6 @@ Released on 10/30/2021.
 * General: Exploratory Desktop did not start up on macOS Monterey.
 
 
-# Release Note
-
 ## 6.7.3
 
 Released on 9/29/2021.
