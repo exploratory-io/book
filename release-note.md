@@ -1,5 +1,14 @@
 # Release Note
 
+## 6.7.4 (Mac Only)
+
+Released on 10/30/2021.
+
+### Bug Fixes
+
+* General: Exploratory Desktop did not start up on macOS Monterey.
+
+
 ## 6.7.3
 
 Released on 9/29/2021.
@@ -8,6 +17,7 @@ Released on 9/29/2021.
 
 * General: When trying to generate an Offline License Key from Exploratory Desktop, it showed 'Offline license key is supported only for Business plan' error even if your plan was Business Plan.
 * Installation: Download of Git and/or R failed.
+
 
 ## 6.7.2
 
