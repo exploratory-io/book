@@ -74,3 +74,7 @@ On top of input parameters, you can also use checkboxes on the preview table to 
 ## 6. Preview and Import
 
 Click Preview button to see the data in CSV / Delimited File. You can limit number of rows for the preview by selecting number from pulldown list on the preview table. If it looks ok, then you can click 'Import' to import the whole CSV / Delimited data into Exploratory.
+
+## 7. Column Data Type Auto-Detection
+
+When previewing the data, Exploratory uses the number of rows from preview data to detect column data types. It means if you set 50 rows for your preview, column data types are detect with the 50 rows. When you actually import full data, it will use up to 1,000 rows to detect column data types so you might see different column data types in the imported data than in the preview.
