@@ -18,7 +18,7 @@ Released on 11/11/2021.
 * Data Wrangling: Supported "Remove Alphabet" and "Remove URL" parameters to the Tokenize Text step dialog.
 * Data Wrangling: Supported “Group by” for the TF-IDF Step.
 * Data Wrangling: Supported exporting step data, chart data, and analytics data as a Parquet file.
-* Data Wrangling: Supported sum_if, count_if, mean_if, median_if, max_if, and min_if functions
+* Data Wrangling: Supported sum_if, count_if, mean_if, median_if, max_if, and min_if functions.
 * Data Wrangling: Text Wrangling: Supported an option to remove/replace/extract specified text in another column.
 
 
@@ -79,7 +79,7 @@ Released on 11/11/2021.
 * Data Wrangling: Summarize Group: Custom Expression Editor didn't have the link to open the Function List dialog. 
 * Data Wrangling: There was a case that already deleted data frames kept showing in the data frame list and clicking the data frame threw an Error.
 * Data Wrangling: When deleting a branch data frame, it showed an error TypeError: Cannot read property 'getId' of null for some occasion.
-* Data Wrangling: When deleting a data frame, the parquet file used for data caching of the source step was left without getting removed
+* Data Wrangling: When deleting a data frame, the parquet file used for data caching of the source step was left without getting removed.
 * Data Wrangling: When selecting a data frame on the data frame list, 'Error : dagops.members() dataframe does not exist' raised for some occasion.
 * Data Wrangling: When updating a source step, Cannot read property 'cache' of undefined error is raised for some occasion.
 
@@ -100,7 +100,7 @@ Released on 11/11/2021.
 
 * Analytics: Chart Property dialog should always show the color properties even if no color is used in the chart. 
 * Analytics: Improved property menu for Market Basket Analysis to prevent unnecessary value set for 'Minimum Support Value'  when 'Auto' is set for 'Minimum Support".
-* Analytics: Survival Curve: Row number shown in the Summary was larger than the actual value by 1
+* Analytics: Survival Curve: Row number shown in the Summary was larger than the actual value by 1.
 * Analytics: The zero line for the Y-Axis didn't show in the Probability chart in the Random Forest analytics.
 * Analytics: Topic Model / Word Count: Added mouse hover popup help on "Clean Up Twitter Data" menu.
 * Analytics: When moving to a different Analytics Tab, unnecessary file save happened and it slowed the navigation.
@@ -111,7 +111,7 @@ Released on 11/11/2021.
 * Note: When adding a chart to a note, now it inserts a new line break before the code so that the generated document can show the header section properly.
 
 
-* Publish: Error "Cannot read property 'getName' of undefined" raised when publishing an Analytics with Weather Data and the Weather Data extension was not installed
+* Publish: Error "Cannot read property 'getName' of undefined" raised when publishing an Analytics with Weather Data and the Weather Data extension was not installed.
 * Schedule: There were cases where scheduled jobs failed due to unnecessary type conversion on uploaded file data.
 
 
@@ -119,7 +119,7 @@ Released on 11/11/2021.
 * Installation: When Rserve installation failed, the error message didn't show a full path of failed file 
 * Installation: Windows: R under Documents/R/R-4.1.0 under the home directory was not properly detected and used.
 * Public: 'Download' button on the 'New version available' dialog was not linked to the Public Edition download page.
-* R Package Upgrade for 6.8
+* R Package Upgrade for 6.8.
 
 
 ## 6.7.4 (Mac Only)
