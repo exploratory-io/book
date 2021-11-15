@@ -1,12 +1,66 @@
+# #21 - 2021年11月12日(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/1huyrvo6ho9k97d/Exploratory%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E5%8B%89%E5%BC%B7%E4%BC%9A_v21_cover.001.jpeg?raw=1" width="100%" />
+
+## 開催要項
+
+* 日時: 2021年 11月 12日 (金) 12:00〜14:00
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.8のご紹介（Exploratory CEO 西田勘一郎）
+* ホテル客室販売における時系列クラスタリングの活用（株式会社からくさホテルズ 宇津井 篤様）
+* もうRとExcelには戻れない - Exploratoryを使ったゆとりあるワークフロー管理（株式会社サイズ 相澤 健様）
+* 求人サービスのユーザー分析をもとにした予算管理 - ロジスティック回帰（株式会社リブセンス大坪 誠様）
+* データ・コミュニケーションツールとしてのExploratoryの活用法（株式会社リクルート 後藤 真理絵様）
+
+## Exploratory 西田勘一郎
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/rXYX7MUHDiQ?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## 株式会社からくさホテルズ 宇津井 篤様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/X4cMUv_jKD0?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+
+## 株式会社サイズ 相澤 健様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/1gkwwQBm8VQ?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## 株式会社リブセンス大坪 誠様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/w2YXA0Nz_x4?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## 株式会社リクルート 後藤 真理絵様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/tUg5QPWS-nY?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+---
+
+
 # #20 - 2021/8/20(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/z9vd01ows86lcgl/cover.png?raw=1" width="100%" />
 
 
-
 ## 開催要項
 
-* 日時: 2021年 8月 20日 (金) 12:00〜14:00（11:50開場）
+* 日時: 2021年 8月 20日 (金) 12:00〜14:00
 * 会場: Zoom会議
 
 ## アジェンダ
@@ -22,20 +76,11 @@
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/xHUOktaOnmA?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
-
-スライド：
-
-<script async class="speakerdeck-embed" data-id="3cc0153db26b47499b21f83d4362ebfe" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
 ## 株式会社エートゥジェイ 佐藤 史渉様
 
 ビデオ：
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/lvuk7DPs2Co?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
-
-スライド：
-
-<script async class="speakerdeck-embed" data-id="3383c52e463440d989df253a81f9b9fc" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## DSInnovation株式会社 野尻 梢様
 
@@ -43,20 +88,12 @@
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/GCS4ThWMDHg?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
-スライド：
-
-<script async class="speakerdeck-embed" data-id="0ae8428b02274f72908b0b19a53b14ed" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
 
 ## 日本成長投資アライアンス株式会社 倉富 雄平様
 
 ビデオ：
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/V7VD2aDqc_o?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
-
-スライド：
-
-<script async class="speakerdeck-embed" data-id="e378aad8b533422b8d50d945672485cb" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script>
 
 ---
 
@@ -67,7 +104,7 @@
 
 ## 開催要項
 
-* 日時: 2021年 6月 11日 (金) 12:00〜14:00（11:50開場）
+* 日時: 2021年 6月 11日 (金) 12:00〜14:00
 * 会場: Zoom会議
 
 ## アジェンダ
@@ -84,19 +121,11 @@
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/89opFD88qTw?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
 
-スライド：
-
-<script async class="speakerdeck-embed" data-id="3f455ea801ba4aa3b652cc62a31bf1bb" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
 ## ヒッドワークス合同会社 四方 秀和様
 
 ビデオ：
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/YzptLOP0wls?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
-
-スライド：
-
-<script async class="speakerdeck-embed" data-id="ffda568b1a0e4d6cbb8a1f4e6daaae82" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## ラクスル株式会社 根来 哲也様
 
@@ -105,20 +134,11 @@
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/oJh1qs7HCcM?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
 
 
-スライド：
-
-<script async class="speakerdeck-embed" data-id="2eedb8bf14d74d139afbf55292cfb726" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-
-
 ## 株式会社フォーバルテレコム 矢通 康弘様
 
 ビデオ：
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/cuHQUI_har4?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
-
-スライド：
-
-<script async class="speakerdeck-embed" data-id="75e6044e5e904c1d9fac09f4f4c57a6c" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ---
 
@@ -130,7 +150,7 @@
 
 ## 開催要項
 
-* 日時: 2021年 4月 16日 (金) 12:00〜13:30（11:50開場）
+* 日時: 2021年 4月 16日 (金) 12:00〜13:30
 * 会場: Zoom会議
 
 ## アジェンダ
@@ -194,7 +214,7 @@
 
 ## 開催要項
 
-* 日時: 2021年 2月 5日 (金) 18:00〜19:30（17:50開場）
+* 日時: 2021年 2月 5日 (金) 18:00〜19:30
 * 会場: Zoom会議
 
 ## アジェンダ
@@ -262,7 +282,7 @@
 
 ## 開催要項
 
-* 日時: 2020年 12月 4日 (金) 12:00〜13:30（11:50開場）
+* 日時: 2020年 12月 4日 (金) 12:00〜13:30
 * 会場: Zoom会議
 
 ## アジェンダ
@@ -321,7 +341,7 @@
 
 ## 開催要項
 
-* 日時: 2020年 10月 2日 (金) 12:00〜13:30（11:50開場）
+* 日時: 2020年 10月 2日 (金) 12:00〜13:30
 * 会場: Zoom会議
 
 ## アジェンダ
@@ -395,7 +415,7 @@
 
 ## 開催要項
 
-* 日時: 2020年 7月 31日 (金) 12:00〜13:30（11:45開場）
+* 日時: 2020年 7月 31日 (金) 12:00〜13:30
 * 会場: Zoom会議
 
 ## アジェンダ
@@ -459,7 +479,7 @@
 
 ## 開催要項
 
-* 日時: 2020年 5月 29日 (金) 13:00〜15:00（12:45開場）
+* 日時: 2020年 5月 29日 (金) 13:00〜15:00
 * 会場: Zoom会議
 
 ## アジェンダ
@@ -509,7 +529,7 @@
 <img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup12.jpeg" width="100%" />
 
 ## 開催要項
-* 日時: 2019年 1月 31日 (金) 19:00〜21:00（18:45開場・受付開始）
+* 日時: 2019年 1月 31日 (金) 19:00〜21:00
 * 会場: ラクスル株式会社
 
 ## アジェンダ
@@ -542,7 +562,7 @@
 <img src="https://d3hboxb895ffcl.cloudfront.net/assets/web/benkyo-kai/meetup11.jpeg" width="100%" />
 
 ## 開催要項
-* 日時: 2019年 11月 15日 (金) 19:15〜21:00（19:00開場・受付開始）
+* 日時: 2019年 11月 15日 (金) 19:15〜21:00
 * 会場: 株式会社GxP - G’s LounGe
 
 ## アジェンダ
