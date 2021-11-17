@@ -91,3 +91,9 @@ Click "Run" button to see the data back from Snowflake.
 
 
 If it looks ok, then you can click 'Import' to import the data into Exploratory.
+
+## 4. Known Issues
+
+Currently, Snowflake does not support Snowflake ODBC drive on Apple M1 Mac.
+
+ref: https://stackoverflow.com/questions/69652761/error-loading-snowflake-odbc-driver-on-mac-m1-from-erlang-call-odbc-connect

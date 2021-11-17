@@ -1,5 +1,127 @@
 # Release Note
 
+## 6.8.0
+
+Released on 11/11/2021.
+
+### Enhancements
+
+* Data Source: Google Drive / Amazon S3: Now it remembers the last 20 visited folders.
+* Data Source: Supported Azure Storage Blob / Data Lake for CSV, Excel, and Parquet files.
+* Data Source: Supported MS Access Data Source.
+* Data Source: Supported Parquet files as one of the local file data sources.
+* Data Source: Supported Parquet files for Amazon S3 Data Source.
+
+
+* Data Wrangling: Filter: Supported 'Keep NA' option for Date and Numeric column filter operations.
+* Data Wrangling: impute_na function can now fill NA with the mode of the column.
+* Data Wrangling: Supported "Remove Alphabet" and "Remove URL" parameters to the Tokenize Text step dialog.
+* Data Wrangling: Supported “Group by” for the TF-IDF Step.
+* Data Wrangling: Supported exporting step data, chart data, and analytics data as a Parquet file.
+* Data Wrangling: Supported sum_if, count_if, mean_if, median_if, max_if, and min_if functions.
+* Data Wrangling: Text Wrangling: Supported an option to remove/replace/extract specified text in another column.
+
+
+* Chart: Map: The World Map (Pacific Ocean centered) support.
+* Chart: Now you can show the grand total in Table. 
+* Chart: Number: Now the caption text shows in multiple lines if it is long. 
+* Chart: Pivot: Summarize Table: Now you can configure how to handle NA values from the Missing Value Handling setting. 
+* Chart: Radar chart support.
+* Chart: Supported Y-axis columns reorder by drag and drop.
+
+
+* Analytics: Added the option to remove alphabet words at text tokenization by Tokenize Text Step.
+* Analytics: Added the option to remove alphabet words at text tokenization in Word Count and Topic Model Analytics View.
+* Analytics: Factor Analysis: The Communality column was added to the Weight table.
+* Analytics: Factor Analysis: You can now specify a categorical variable to look into its relationship with the discovered factors with the new Radar chart and Path chart.
+* Analytics: K-Means: You can now specify a categorical variable to look into its relationship with the discovered clusters with the new Radar chart and the Path chart as well as the existing Stack Bar chart.
+* Analytics: Now you can change the sort direction of Bar charts from the chart property dialog.
+* Analytics: Now you can customize the Network chart in the Market Basket analysis from the chart property dialog.
+* Analytics: Now you can customize the Network chart in the Word Count analysis from the chart property dialog.
+* Analytics: Now you can customize the Tree chart in the Decision Tree analysis from the chart property dialog.
+* Analytics: Time Series Clustering: Added Elbow Method mode to determine the optimal number of clusters.
+* Analytics: Topic Model: Words in the documents are now colored based on the most likely topic that the word belongs to.
+* Analytics: Topic Model: You can now specify a categorical variable to look into its relationship with the discovered topics and important words of the topics with the new Path chart and Stacked Bar charts.
+
+
+* Dashboard: Note: Now you can show/hide the Repeat-By controls in charts from the property dialog.
+
+
+* Parameter: Supported cache option for dynamic LOV result.
+* Parameter: Supported the option to show all the available items for dynamic LOV.
+
+### Bug Fixes
+
+
+* Data Source: Amazon S3: Import and merge files fails for some directories.
+* Data Source: CSV: The file selection dialog height didn't change dynamically when the App's window size increased.
+* Data Source: Excel Import and Merge: Improved the error message when duplicated column names were detected.
+* Data Source: Excel Import and Merge: Improved the error message when sheet names in the selected files were not all the same case.
+* Data Source: Excel: Data type convert didn't work after re-selecting a sheet other than the one originally specified in the Excel data.
+* Data Source: Improved performance for previewing multiple CSV/Excel/Parquet files import and merge cases.
+* Data Source: MS SQL Server: Relabeled and reordered ODBC drivers shown in the List of Values to make it less confusing.
+* Data Source: ODBC Data Source: Stopped blindly escaping non-ASCII table names to avoid SQL syntax becoming invalid.
+* Data Source: Remote Excel: After changing a remote Excel file URL, the associated Sheet Name was not properly updated. 
+* Data Source: Twitter: Now you can use LOV for Language parameters.
+* Data Source: When creating a new data frame while the source step was selected on the Chart View, the newly created data frame was not displayed on the data frame list.
+* Data Source: When importing Stats (SPSS/SAS/Stata) files, imported column data types were incorrect when the columns were labeled.
+
+
+* Data Wrangling:  In the expression editor, column names highlighting didn't work if a name contains both alphabet and Japanese characters.
+* Data Wrangling: Column Menu: 'Convert Excel numeric to Date Type' didn't work when multiple columns were selected.
+* Data Wrangling: The help link for the Predict with Analytics dialog didn't work.
+* Data Wrangling: The help link for the Sample Step dialog didn't work.
+* Data Wrangling: On Analytics View, the data frame comment icon position was incorrect after collapsing and expanding the right-hand side steps.
+* Data Wrangling: On Create Calculation for Multiple Columns dialog, the Function List dialog didn't show up when clicking the Function List link.
+* Data Wrangling: On Summary View, when a selected step was grouped, the 'Search Columns' label overlapped with the 'Correlation' button.
+* Data Wrangling: On the Create Calculation for Multiple Columns dialog, the label for Window Calculation was truncated.
+* Data Wrangling: Recode: the "# of unique" value label was placed way below the table when there were very few rows.
+* Data Wrangling: Summarize Group: Custom Expression Editor didn't have the link to open the Function List dialog. 
+* Data Wrangling: There was a case that already deleted data frames kept showing in the data frame list and clicking the data frame threw an Error.
+* Data Wrangling: When deleting a branch data frame, it showed an error TypeError: Cannot read property 'getId' of null for some occasion.
+* Data Wrangling: When deleting a data frame, the parquet file used for data caching of the source step was left without getting removed.
+* Data Wrangling: When selecting a data frame on the data frame list, 'Error : dagops.members() dataframe does not exist' raised for some occasion.
+* Data Wrangling: When updating a source step, Cannot read property 'cache' of undefined error is raised for some occasion.
+
+
+* Chart: 'Show detail' didn't show filtered data when the chart had disabled chart filters.
+* Chart: Export data to Google Sheets failed with 'Cannot read properties of null' error.
+* Chart: Exporting the chart data to Excel failed with an "invalid multibyte string" error if the data contained Japanese.
+* Chart: If I hovered the first box from the left on a Boxplot chart, it showed hover balloons for multiple boxes.
+* Chart: If the order of the X-axis was reversed, the X-axis range setting was ignored.
+* Chart: Pivot failed to render if you assigned a date column to the Column and chose "Day of Month" in the formatting dialog.
+* Chart: Pivot: Summarize Table: Referring to a column in the Value in the URL formatting for a column in the Row didn't work.
+* Chart: Pivot: The hover pop-up didn't show the display name defined in the formatting dialog.
+* Chart: Summarize Table: The "Show Bars on Background" option didn't show up for a character column with a "Unique Count" function assigned to the Value.
+* Chart: Table: The header text didn't show fully once in a while even though the text was short. 
+* Chart: Value text on the plot area didn't align with bars if you used a Color with highlight. 
+* Chart: Word Cloud failed to render if you assigned a factor column to Color and chose a "Unique Count" function.
+
+
+* Analytics: Chart Property dialog should always show the color properties even if no color is used in the chart. 
+* Analytics: Improved property menu for Market Basket Analysis to prevent unnecessary value set for 'Minimum Support Value'  when 'Auto' is set for 'Minimum Support".
+* Analytics: Survival Curve: Row number shown in the Summary was larger than the actual value by 1.
+* Analytics: The zero line for the Y-Axis didn't show in the Probability chart in the Random Forest analytics.
+* Analytics: Topic Model / Word Count: Added mouse hover popup help on "Clean Up Twitter Data" menu.
+* Analytics: When moving to a different Analytics Tab, unnecessary file save happened and it slowed the navigation.
+* Analytics: Word Count: Word Count Analytics View failed to run when there was no co-occurrence.
+* Analytics: Y-Axis direction was flipped if you uncheck the "Sync Y-Axis" checkbox in the Prediction chart in the Random Forest analytics.
+
+
+* Note: When adding a chart to a note, now it inserts a new line break before the code so that the generated document can show the header section properly.
+
+
+* Publish: Error "Cannot read property 'getName' of undefined" raised when publishing an Analytics with Weather Data and the Weather Data extension was not installed.
+* Schedule: There were cases where scheduled jobs failed due to unnecessary type conversion on uploaded file data.
+
+
+* Installation: When Git and R download failed due to the proxy server blocking the download request, an error message didn't show up for some occasions.
+* Installation: When Rserve installation failed, the error message didn't show a full path of failed file 
+* Installation: Windows: R under Documents/R/R-4.1.0 under the home directory was not properly detected and used.
+* Public: 'Download' button on the 'New version available' dialog was not linked to the Public Edition download page.
+* R Package Upgrade for 6.8.
+
+
 ## 6.7.4 (Mac Only)
 
 Released on 10/30/2021.
