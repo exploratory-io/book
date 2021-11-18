@@ -1,5 +1,44 @@
 # Release Note
 
+
+## 6.8.1
+
+Released on 11/18/2021.
+
+### Enhancements
+
+* Chart: Now you can choose to keep or remove NA values before applying a Window Calculation by the "Remove NA" checkbox in the Window Calculation dialog. 
+
+
+### Bug Fixes
+
+* Data Source: Azure: When opening an Azure Data File List for the first time, the Container LOV didn't select the first available option by default.
+* Data Source: Google Analytics: Could not select a time zone other than the system default.
+* Data Source: S3 /Google Drive/Azure: Added the 'Create Connection' link on the File List dialog.
+* Data Source: S3: Preview dialog did not show up after selecting a CSV file when file encoding detection failed.
+
+
+* Summary: Correlation Mode: Now logical columns also show a Correlation value if you select a numeric column to the target column.
+
+
+* Data Wrangling: 'Remove Specified Text in Another Column' operation failed for a column whose name has special characters or non-ASCII characters. 
+* Data Wrangling: Summarize Group: On the Custom Expression editor, it didn't suggest columns from the previous step.
+
+
+* Chart: Custom Expression Dialog: Supported Function List dialog.
+* Chart: Density Plot: Show values with a unit name (μ etc) in the hover popup. 
+* Chart: Exporting chart data to an Excel file failed if you tried to overwrite an existing Excel file.
+* Chart: Heatmap: Values on the heatmap cells were incorrect if you assigned numeric values to the X or Y-Axis. 
+* Chart: Number: The lower part of the main number text was truncated.
+
+
+* Analytics: Chart-related error messages should show up in the chart plot area instead of the top of the application window.
+
+
+* Installation: Installed R was not detected if Command Prompt had a problem. If this problem is detected, we show a dialog with an instruction to resolve the Command Prompt issue.
+* Installation: Upgrading to Exploratory Desktop 6.8.0 failed with an error "w[1].version_command.unshift is not a function" if custom R location was specified.
+
+
 ## 6.8.0
 
 Released on 11/11/2021.
