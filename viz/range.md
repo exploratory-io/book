@@ -18,7 +18,8 @@ You can set up the range from the Range Dialog. You can find the Range Dialog in
 There are 2 range types available. 
 
 * Confidence Interval
-* Custom
+* Column
+* Specific Value
 
 ### Confidence Interval 
 
@@ -38,7 +39,7 @@ Note that Confidence Interval is available only in Line chart, and is available 
 
 
 
-### Custom 
+### Column
 
 If you already have columns for upper and lower limit values for the values on Y-Axis, you can show them as ranges in the same chart. 
 
@@ -60,7 +61,11 @@ Columns will be automatically picked and assigned for your convenience if you ha
 * `conf.high` and `conf.low`
 
 
+### Specific Value
 
+You can specify the range by setting the upper and lower value manually. 
+
+![](images/range3.png)
 
 
 
