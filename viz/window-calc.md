@@ -84,6 +84,10 @@ Following options are available.
  * Left
 * Fill Value - Value to fill the empty data points. Default is empty. 
 
+## Options
+
+* Remove NA - Whether you want to remove NA values before applying a Window Calculation or not. 
+
 
 ## Links
 

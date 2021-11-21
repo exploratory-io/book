@@ -70,3 +70,11 @@ Then set "Yes" For "Show Actual Number of Rows on SQL Data Import Dialog"
 This will show you Actual Number of Rows like below.
 
 ![](images/actual_num_of_rows.png)
+
+# 6. Known Issues for geometry column.
+
+When you try to import data from PostgreSQL instance, you might get the below error if your SQL query contains columns whose data type is geometry which is not supported in Exploratory.
+
+Error : No method asJSON S3 class: pq_geometry
+
+Please refer to [this community post](https://community.exploratory.io/t/error-no-method-asjson-s3-class-pq-geometry-is-raised-when-try-to-import-data-from-postgresql/2102) for the workaround.
