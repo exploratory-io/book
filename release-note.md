@@ -15,7 +15,7 @@ Released on 11/24/2021.
 
 * Dashboard: Couldn't Re-Import and Run a Dashboard at the same time.
 * Dashboard: A dashboard panel title showed a weird text like "{data-width=100}" if a chart name contains an underscore ('\_') letter. 
-* Dashboard: A dashboard panel got unexpectedly wider if a chart name contains an underscore ('\_') letter. 
+* Dashboard: A dashboard panel got unexpectedly wider or narrower if a chart name contains an underscore ('\_') letter. 
 
 
 * Publish: Connection info was not uploaded to the server for scheduled jobs or parameters if you had recreated the connection.
