@@ -1,5 +1,30 @@
 # Release Note
 
+## 6.8.2
+
+Released on 11/24/2021.
+
+
+### Bug Fixes
+
+* Data Source: Amazon Athena: Supported workgroup parameter.
+
+
+* Data Wrangling: After sorting numeric columns in descending order, all the values of the column became negative.
+
+
+* Dashboard: Couldn't Re-Import and Run a Dashboard at the same time.
+* Dashboard: A dashboard panel title showed a weird text like "{data-width=100}" if a chart name contains an underscore ('\_') letter. 
+* Dashboard: A dashboard panel got unexpectedly wider if a chart name contains an underscore ('\_') letter. 
+
+
+* Publish: Connection info was not uploaded to the server for scheduled jobs or parameters if you had recreated the connection.
+
+
+* Installer: Improved 'Reset R Packages' feature to recreate the R packages folder to prevent unexpected folder permission issues.
+* Installer: Improved error messages and suggestions in case upgrading R packages failed due to a permission error while upgrading Exploratory.
+
+
 
 ## 6.8.1
 
