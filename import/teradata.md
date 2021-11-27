@@ -4,11 +4,17 @@ You can quickly import data from your  Teradata into Exploratory.
 
 ## 1. Create a connection for Teradata
 
-First, you want to create a connection for SQL Server.
+First, you want to create a connection for Teradata.
 
 ![](images/connection.png)
 
+Click the Teradata Icon.
+
+![](images/teradata_connection.png)
+
 After filling the database information, click ‘Test Connection’ button to make sure the information is correct, before you save it.
+
+![](images/add_teradata_connection.png)
 
 
 ## 2. Open Teradata Import dialog
@@ -19,6 +25,7 @@ Select 'Import Database Data' from Add New Data Frame menu.
 
 Click Teradata to select.
 
+![](images/teradata_datasource.png)
 
 ## 3. Preview and Import
 
