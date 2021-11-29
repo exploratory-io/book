@@ -1,13 +1,46 @@
 # Release Note
 
-## 6.7.0.16
+## 6.8.0.19
 
-Released on 8/20/2021
+Released on 11/17/2021
 
 ### Download Links
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.7.0.16.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.7.0.16.tar.gz)
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.8.0.19.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.8.0.19.tar.gz)
+
+### Enhancements
+
+* Admin: Now the Scheduler UI uses the same port number as the other pages.
+* Insight: Now you can assign the "Can Update Share Setting" role to people you share your Insight so that they can also invite the other people.
+* Insight: Now you can see the utm_campaign and utm_media information in the Insight stats dialog.
+* Parameter: Supported cache option for dynamic LOV items.
+* Parameter: Supported the option to show all the available LOV items for a dynamic LOV.
+* Schedule: Supported writing back the results of the scheduled job to Google Sheets.
+
+### Bug Fixes
+
+* General: "New Version Available" message was wrongly shown for M1 Mac version of the Exploratory Desktop logged in to the Exploratory Server.
+* General: After OAuth re-authorization for a team-shared Insight, the browser was redirected to a wrong Insight URL with the user's ID instead of the team ID.
+* Insight: Data Tab: Rows are not properly shown when a column name contains special characters.
+* Insight: Data Tab: Table is not properly rendered for a publish data that has rownames.
+* Insight: Incorrect user thumbnails showed up in the Insight History dialog if you had multiple authors for the Insight. 
+* Insight: The table view in the Data share showed only 200 rows even you have more rows after changing the Parameter.
+* Insight: The view count in the Insight stats dialog was less than the number at the top of the main Insight view.
+* Insight: When an Insight is shared with a team, it should send a notification email to all team members. 
+* Parameter: Prediction model with local file threw error about missing data file at rebuilding the model by updating parameter values on the server.
+* Parameter: When moving a slider to the far end, the slider drag event didn't clear and it kept moving the slider even after releasing mouse.
+* Parameter: When the Parameter session fails due to a data source error such as connection info is missing, it should show the error message and hint on UI.
+* Schedule: If Collab Server was shut down while a scheduled job is running, the job hanged after the Collab Server is restarted #22472
+* Schedule: Scheduling failure notification email should include more hint and information in addition to the error message.
+* Stats: The number of views on the stats page was lower than the actual view count.
+* Stats: The total disk usage on stats page was less than the sum of the usages of all the documents.
+* Stats: The total number of the "Rows Processed This Month" should be included in the stats page for the Administrator.
+
+
+## 6.7.0.16
+
+Released on 8/20/2021
 
 ### Enhancements
 

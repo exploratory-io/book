@@ -25,26 +25,22 @@ In the Reference Line dialog, you can select the type and style of the Reference
 ![](images/refline2.png)
 
 
-## Types
-
-Following Reference Line types are available. 
-
-* (None)
-* Sum 
-* Mean (Average): 
-* Median
-* Mode 
-* Min Value
-* Max Value
-* First: First value of the data. 
-* Last: Last value of the data. 
-* Diagonal: It is available in Scatter (No Aggregation and With Aggregation) and numeric columns are assigned to both X and Y. 
-* Constant: Constant value that you specify. 
-
-
 ## Options
 
-* Group By
+* Type - The following Reference Line types are available. 
+  * (None)
+  * Sum 
+  * Mean (Average): 
+  * Median
+  * Mode 
+  * Min Value
+  * Max Value
+  * First: First value of the data. 
+  * Last: Last value of the data. 
+  * Diagonal: It is available in Scatter (No Aggregation and With Aggregation) and numeric columns are assigned to both X and Y. 
+  * Constant: Constant value that you specify. 
+
+* Group By - How to group by when you calculate and draw the Reference Lines.
   * All - Against the all data.
   * X Axis - For each X Axis. 
   * Color By - For each Color By.
@@ -52,6 +48,26 @@ Following Reference Line types are available.
   * X Axis + Repeat By - For each X Axis and Repeat By. 
   * Color By + Repeat By - For each Color By and Repeat By. 
 * Label - Label text that will show up in Popup and Legend.
+* Show in Legend - Check if you want to show the Reference Line item in the Legend.
+
+## Style Options
+
+The following style options are available.
+* Color
+* Line Style
+  * Solid
+  * Dot
+  * Dash 
+  * Long Dash 
+  * Dash and Dot 
+  * Long Dash and Dot 
+* Line Width 
+* Line Length
+
+## Range Options
+
+If you choose either "Mean" or "Median" to the Reference Line Type, you can show the Range Lines too. The following options are available for the Reference Line Range.
+
 * Range Type - You can show the value distribution range. Only available for 'Mean' and 'Median' Reference Line types.
   * (None)
   * Standard Error 
@@ -64,11 +80,6 @@ Following Reference Line types are available.
   * IQR
   ![](images/refline3.png)
   
-  
-* Show in Legend - Check if you want to show the Reference Line item in the Legend.
-* Color 
-* Line Width: Thickless of the line.
-* Line Length
 * Line Style 
   * Solid
   * Dot
@@ -76,6 +87,11 @@ Following Reference Line types are available.
   * Long Dash 
   * Dash and Dot 
   * Long Dash and Dot 
+* Style - The following Reference Line Range styles are available.
+  * Lines Only
+  * Line and Fill
+* Fill Opacity - Applicable if you choose "Line and Fill" above.
+* Line Length
   
   
   
