@@ -1,13 +1,32 @@
 # Release Note
 
-## 6.8.0.19
+## 6.8.2.4
 
-Released on 11/17/2021
+Released on 11/30/2021
 
 ### Download Links
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.8.0.19.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.8.0.19.tar.gz)
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.8.2.4.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.8.2.4.tar.gz)
+
+### Enhancements
+
+* Admin: Added the "Last Updated" column in the admin stats page.
+* Insight: Added the "Last Updated" column in the stats page.
+* Data Source: Supported workgroup argument for Amazon Athena connection.
+
+### Bug Fixes
+
+* Admin: When removing a team or a user, associated data shares, charts, analytics, notes, and dashboards were not cleanly removed for some occasions
+* Data Source: SQL query failed if UseResultsetStreaming and RowsToFetchPerBlock were set for an Amazon Athena connection.
+* Data Wrangling: After sorting numeric columns in descending order, all the column values became negative.
+* Insight: Delete icons were missing for team-published insights in the insight search page.
+* Parameter: Improved the error messages. 
+* Schedule: Improved the message for the scheduling failure notification email.
+
+## 6.8.0.19
+
+Released on 11/17/2021
 
 ### Enhancements
 
