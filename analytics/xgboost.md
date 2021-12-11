@@ -127,4 +127,27 @@ Data View shows original input data with additional columns of predicted value a
 
 ## Exploratory R Package
 
-For details about `xgboost` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/build_xgboost.R)
+For details about `xgboost` usage in Exploratory R Package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/build_xgboost.R).
+
+`exp_xgboost` is the function we call for the XGBoost Analytics View.
+
+Name of the R function arguments for the parameters are as follows.
+
+- Max Levels for Tree Depth - `max_depth`
+- Min Size for Terminal Node - `min_child_weight`
+- Min Improvement Rate by Split - `gamma`
+- Sample Rate for a Tree - `subsample`
+- Sample Rate of Columns for a Tree - `colsample_bytree`
+- Learning Rate for an Additional Tree - `eta`
+- Random Seed - `seed`
+- Iterations - `nrounds`
+- Number of Iterations for Early Stopping - `early_stopping_rounds`
+- Use Validation Data - `validate`
+- Ratio for Validation Data - `watchlist_rate`
+- Metric - Regression - `eval_metric_regression`
+- Metric - Binary Classification - `eval_metric_binary`
+- Metric - Multiclass Classification - `eval_metric_multiclass`
+- Type of Output (Regression) - `output_type_regression`
+- Cut Point for TRUE/FALSE - `binary_classification_threshold`
+- Type of Output (Binary Classification) - `output_type_binary`
+
