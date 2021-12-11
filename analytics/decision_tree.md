@@ -67,3 +67,19 @@ For binary classification, "ROC" View displays Receiver Operating Characteristic
 
 ### "Data" View
 Data View shows original input data with additional columns of predicted value and/or predicted probability.
+
+
+## Exploratory R Package
+
+Under the cover, we make use of `rpart` R package for the Decision Tree Analytics View.
+For details about how we use `rpart` R package, please refer to the [github repository](https://github.com/exploratory-io/exploratory_func/blob/master/R/randomForest_tidiers.R).
+
+`exp_rpart` is the function we call for the Decision Tree Analytics View.
+
+Name of the R function arguments for the parameters are as follows.
+
+- Max Size for Node before Split - `minsplit`
+- Min Size for Terminal Node - `minbucket`
+- Min Improvement Rate by Split - `cp`
+- Max Levels for Tree Depth - `maxdepth`
+
