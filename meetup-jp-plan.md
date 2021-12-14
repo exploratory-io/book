@@ -9,15 +9,12 @@ Exploratory v6.9の紹介と、ユーザー様によるExploratoryを使った�
 * 日時: 2022年 2月 18日 (金) 12:00〜14:00（11:50開場）
 * 会場: Zoom会議
 
-<!--
-* 参加方法: [こちら](https://exploratory.io/note/GMq1Qom5tS/Exploratory-21-yxo7egM6dA)のページよりお申し込みください。
+* 参加方法: [こちら](https://exploratory.io/note/exploratory/Exploratory-22-ttF4SVC7)のページよりお申し込みください。
 
 ## スピーカー
 
-<img src="https://www.dropbox.com/s/1d5isx49ggxrc4y/bustup-photo_v4.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/3x4swsqe60y6q03/bustup-photo_v1.png?raw=1" width="100%" />
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/486r8qilzh45mrt/Agenda_v5.png?raw=1" width="100%" />
-
--->
+<img src="https://www.dropbox.com/s/kh81b2sgv5wsvey/Agenda_v1.png?raw=1" width="100%" />
