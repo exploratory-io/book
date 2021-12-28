@@ -24,7 +24,7 @@ We're extremely concerned and active about security, but we're aware that many c
 
 ## Data Center Security
 
-Exploratory Cloud is hosted at DigitalOcean's data center, which are audited and certified by various internationally-recognized compliance standards. Please see [DigitalOcean's policy page](https://www.digitalocean.com/help/policy/) for more details.
+Exploratory Cloud is hosted at DigitalOcean's data center, which are audited and certified by various internationally-recognized compliance standards. Please see [DigitalOcean's policy page](https://www.digitalocean.com/trust/) for more details.
 
 
 ## Software Security
