@@ -4,11 +4,8 @@ Exploratory v6.9の紹介と、ユーザー様によるExploratoryを使った�
 
 ## 開催要項
 
-スピーカーや参加方法などが決まりましたら随時アップデート致します。
-
 * 日時: 2022年 2月 18日 (金) 12:00〜14:00（11:50開場）
 * 会場: Zoom会議
-
 * 参加方法: [こちら](https://exploratory.io/note/exploratory/Exploratory-22-ttF4SVC7)のページよりお申し込みください。
 
 ## スピーカー
@@ -17,4 +14,4 @@ Exploratory v6.9の紹介と、ユーザー様によるExploratoryを使った�
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/kh81b2sgv5wsvey/Agenda_v1.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/q2k1ji00stt6zrw/Agenda_v2.png?raw=1" width="100%" />
