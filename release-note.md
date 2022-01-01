@@ -20,7 +20,28 @@ Released on 12/31/2021.
 
 ### Bug Fixes
 
-* Analytics: The color assignment was removed from category ratio charts in analytics such as K-Means, Word Count Analysis etc. in a note if you restarted the Exploratory Desktop and previewed the note.
+
+* Data Source: Data import process didn't finish if you imported a CSV file with 2,200 columns.
+* Data Source: Google BigQuery: Improved the error Message for page size-related issues.
+* Data Source: When adding a file to an existing merged CSV/Excel data source, it only showed data from the first file.
+
+
+* Summary View / Table View: It shouldn't remember the last selected option for the number of rows/columns.
+* Summary View: Correlation Mode: If you sort the columns by the metrics such as P-value, it should show the sort result against all the columns, not columns shown on the screen.
+* Summary View: NA values were not counted properly in the Date columns.
+* Summary View: The view got blank if you swapped the column names using the Rename Column Name dialog.
+* Summary View: After selecting certain columns, it didn't show the Summary view.
+
+
+* Data Wrangling: Another R process running error happened if you went to the Summary view after renaming columns.
+* Data Wrangling: Filter: Specific Year Month option did not work on Windows with Japanese locale.
+* Data Wrangling: Improved Error handling triggered by renaming columns.
+* Data Wrangling: Improved Reorder columns command by ignoring columns that do not exist.
+* Data Wrangling: Merge: Changed the "Force Data Type to Match" checkbox as unchecked by default.
+* Data Wrangling: Replace Values with Conditions: Corrected spacing around Insert Function / Document link.
+* Data Wrangling: Replacing an empty string did not finish on the Recode dialog.
+
+
 * Chart: "Another R process running" showed up if you assigned a column to the chart and chose the "Export Chart Data as Excel" option. 
 * Chart: Boxplot chart should exclude infinite values before the boxplot calculation. 
 * Chart: If you check the "Skip this check for this column." option in the "Number of Unique Values Check" dialog, it shouldn't show this dialog even if you update the column assignment in the other places. 
@@ -29,35 +50,34 @@ Released on 12/31/2021.
 * Chart: Sorting Bar chart didn't work properly if there were only NaN values in the data.
 * Chart: Table View should show "Inf"/"-Inf" for infinite values instead of "NaN".
 * Chart: The "Sync X-Axis" option should appear in the Chart toolbar. 
+
+
+* Analytics: The color assignment was removed from category ratio charts in analytics such as K-Means, Word Count Analysis etc. in a note if you restarted the Exploratory Desktop and previewed the note.
+
+
 * Dashboard: When adjusting row height by drag and drop, it only changed the height for the dragged row and kept other rows' height unchanged.
-* Data Source: Data import process didn't finish if you imported a CSV file with 2,200 columns.
-* Data Source: Google BigQuery: Improved the error Message for page size-related issues.
-* Data Source: When adding a file to an existing merged CSV/Excel data source, it only showed data from the first file.
-* Data Wrangling: Another R process running error happened if you went to the Summary view after renaming columns.
-* Data Wrangling: Filter: Specific Year Month option did not work on Windows with Japanese locale.
-* Data Wrangling: Improved Error handling triggered by renaming columns.
-* Data Wrangling: Improved Reorder columns command by ignoring columns that do not exist.
-* Data Wrangling: Merge: Changed the "Force Data Type to Match" checkbox as unchecked by default.
-* Data Wrangling: Replace Values with Conditions: Corrected spacing around Insert Function / Document link.
-* Data Wrangling: Replacing an empty string did not finish on the Recode dialog.
+
+
+* Parameter: Error about "another R process" was thrown at changing the name of a Parameter.
+
+
+* Project: Opening a project failed with TypeError: Cannot read properties of null (reading 'classList') for some occasion.
+* Project: Project List showed unnecessary space when the app is resized inside the project.
+* Project: When a project was exported and imported, the images embedded in the notes were lost.
+
+
+* Publish: Added Help link on Publish dialog.
+* Publish: Summary View on the server didn't show all the columns.
+* Publish: When moved the published icon by drag and drop to a different step, team share became personal share.
+
+
 * General: Improved Network Error dialog text, label, and style.
 * General: Improved the performance for importing files with many columns.
 * General: In some environments, the network connection to exploratory.io for login or OAuth failed due to the expired root CA certificate for Let's Encrypt SSL certificate. With this version, this is handled without having to adjust OS configurations.
 * General: Starting up in an offline environment threw the error "Cannot read properties of null (reading 'setDate')" if the name of your home directory on Windows had multibyte characters.
 * General: Supported 'number of columns to show' in preview table for Data Import dialog and Column Selection dialog.
 * Installation: Re-designed Installation UI and separated it into 3 steps. (Git, R, and R packages)
-* Parameter: Error about "another R process" was thrown at changing the name of a Parameter.
-* Project: Opening a project failed with TypeError: Cannot read properties of null (reading 'classList') for some occasion.
-* Project: Project List showed unnecessary space when the app is resized inside the project.
-* Project: When a project was exported and imported, the images embedded in the notes were lost.
-* Publish: Added Help link on Publish dialog.
-* Publish: Summary View on the server didn't show all the columns.
-* Publish: When moved the published icon by drag and drop to a different step, team share became personal share.
-* Summary View / Table View: It shouldn't remember the last selected option for the number of rows/columns.
-* Summary View: Correlation Mode: If you sort the columns by the metrics such as P-value, it should show the sort result against all the columns, not columns shown on the screen.
-* Summary View: NA values were not counted properly in the Date columns.
-* Summary View: The view got blank if you swapped the column names using the Rename Column Name dialog.
-* Summary View: After selecting certain columns, it didn't show the Summary view.
+
 
 
 ## 6.8.2
