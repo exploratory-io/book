@@ -4,19 +4,39 @@
 
 Released on 12/31/2021.
 
+
+The biggest feature of this release is to support Project Level Collaboration. Now you can publish your projects to Exploratory Server and share with others.
+
 ### Enhancements
 
-* Collaboration: Now, you can collaboratively work on projects published on the server as a team.
-  * Team members can update the same project.
-  * You can sync your local project with the latest version of the project on the server.
-  * Past versions can be kept on the server, and you can restore a past version if needed.
-* Data Source: Amazon Aurora: Supported SSL CA file parameter.
-* Data Source: Google Analytics: Supported Sampling Parameter.
-* Data Source: Google Sheets: On Import dialog, supported Search dialog for Sheet Selection.
-* Data Wrangling: Added "to Beginning" and "to End" options for Reorder Columns menu for the single column menu.
-* Parameter: Performance of using Parameters on the server was improved by automatic caching of intermediate data.
-* Parameter: Usage of Parameters that does not exist is detected for a better debugging experience.
-* Project: Improved Project update dialog, and now it shows Created Date, Size, and Current Memory Usage.
+* Collaboration: You can publish your projects and share with others.
+* Collaboration: You can update your projects with the latest changes published by others.
+* Collaboration: The published projects are version controlled so that you can restore to a particular version from the past.
+* Collaboration: You can publish your projects as a Team. This will make it easier to collaborate with team members.
+
+
+* Data Source: Amazon Aurora: Supports SSL CA file parameter.
+* Data Source: Google Analytics: Supports 'Sampling'.
+* Data Source: Google Sheets: You can now search Sheet names at the server.
+
+
+* Summary View: Now you can select first or last N columns / rows to show.
+* Summary View: Correlation Mode: You can sort the columns alphabetically.
+* Summary View: Correlation Mode: You can sort all the columns based on a selected sorting metric and show only the first / last N columns.
+* Table View: Now you can select how many columns to show.
+
+
+* Data Wrangling: Added "to Beginning" and "to End" options for Reorder Columns menu.
+
+
+* Dashboard: Now it keeps other rows' height when adjusting a given row height by drag and drop.
+
+
+* Parameter: We have improved the performance of enabling the interactive mode by automatically caching the step data.
+* Parameter: It now detects invalid Parameters and provide a better error message.
+
+
+* Project: It now provides more information about the projects including the creation date, project file size, and the current memory consumption size.
 
 ### Bug Fixes
 
@@ -26,57 +46,41 @@ Released on 12/31/2021.
 * Data Source: When adding a file to an existing merged CSV/Excel data source, it only showed data from the first file.
 
 
-* Summary View / Table View: It shouldn't remember the last selected option for the number of rows/columns.
-* Summary View: Correlation Mode: If you sort the columns by the metrics such as P-value, it should show the sort result against all the columns, not columns shown on the screen.
-* Summary View: NA values were not counted properly in the Date columns.
-* Summary View: The view got blank if you swapped the column names using the Rename Column Name dialog.
-* Summary View: After selecting certain columns, it didn't show the Summary view.
+* Summary View: NA values were not counted properly for the Date data type columns.
+* Summary View: It showed a blank screen when you changed the column names in the previous steps.
 
 
-* Data Wrangling: Another R process running error happened if you went to the Summary view after renaming columns.
-* Data Wrangling: Filter: Specific Year Month option did not work on Windows with Japanese locale.
-* Data Wrangling: Improved Error handling triggered by renaming columns.
-* Data Wrangling: Improved Reorder columns command by ignoring columns that do not exist.
-* Data Wrangling: Merge: Changed the "Force Data Type to Match" checkbox as unchecked by default.
-* Data Wrangling: Replace Values with Conditions: Corrected spacing around Insert Function / Document link.
-* Data Wrangling: Replacing an empty string did not finish on the Recode dialog.
+* Data Wrangling: 'Another R process running' error happened if you went to the Summary view after renaming columns.
+* Data Wrangling: Filter: 'Year Month' option did not work on Windows with Japanese locale.
+* Data Wrangling: Improved an error handling triggered by renaming existing columns.
+* Data Wrangling: Merge: Changed the "Force Data Type to Match" checkbox as unchecked by default for a better performance.
+* Data Wrangling: Replacing an empty string with something else did not finish.
 
 
-* Chart: "Another R process running" showed up if you assigned a column to the chart and chose the "Export Chart Data as Excel" option. 
-* Chart: Boxplot chart should exclude infinite values before the boxplot calculation. 
-* Chart: If you check the "Skip this check for this column." option in the "Number of Unique Values Check" dialog, it shouldn't show this dialog even if you update the column assignment in the other places. 
-* Chart: Map: Update the label for the "Sea of Japan".
+* Chart: "Another R process running" showed up if you assigned a column to the chart and chose the "Export Chart Data as Excel" option.
+* Chart: Boxplot chart should exclude 'infinite' values before the boxplot calculation.
+* Chart: If you check the "Skip this check for this column." option in the "Number of Unique Values Check" dialog, it shouldn't show this dialog even if you update the column assignment in the other places.
 * Chart: The radar chart showed an error if you assigned character columns and enabled the "Normalize Values" option in the Chart property dialog.
-* Chart: Sorting Bar chart didn't work properly if there were only NaN values in the data.
+* Chart: Sorting Bar chart didn't work properly if there were NaN values in the data.
 * Chart: Table View should show "Inf"/"-Inf" for infinite values instead of "NaN".
-* Chart: The "Sync X-Axis" option should appear in the Chart toolbar. 
+* Chart: The "Sync X-Axis" option should appear in the Chart toolbar.
 
 
-* Analytics: The color assignment was removed from category ratio charts in analytics such as K-Means, Word Count Analysis etc. in a note if you restarted the Exploratory Desktop and previewed the note.
+* Parameter: Error about "another R process" was thrown when you changed the name of a Parameter.
 
 
-* Dashboard: When adjusting row height by drag and drop, it only changed the height for the dragged row and kept other rows' height unchanged.
-
-
-* Parameter: Error about "another R process" was thrown at changing the name of a Parameter.
-
-
-* Project: Opening a project failed with TypeError: Cannot read properties of null (reading 'classList') for some occasion.
+* Project: Opening a project failed with TypeError: Cannot read properties of null (reading 'classList') for some occasions.
 * Project: Project List showed unnecessary space when the app is resized inside the project.
-* Project: When a project was exported and imported, the images embedded in the notes were lost.
+* Project: When you imported a project that was once exported, the images embedded in the notes were lost.
 
 
-* Publish: Added Help link on Publish dialog.
-* Publish: Summary View on the server didn't show all the columns.
-* Publish: When moved the published icon by drag and drop to a different step, team share became personal share.
-
-
-* General: Improved Network Error dialog text, label, and style.
-* General: Improved the performance for importing files with many columns.
+* General: Improved the Network Error dialog to make it easier to understand.
+* General: Improved the performance for importing data files with many columns.
 * General: In some environments, the network connection to exploratory.io for login or OAuth failed due to the expired root CA certificate for Let's Encrypt SSL certificate. With this version, this is handled without having to adjust OS configurations.
 * General: Starting up in an offline environment threw the error "Cannot read properties of null (reading 'setDate')" if the name of your home directory on Windows had multibyte characters.
-* General: Supported 'number of columns to show' in preview table for Data Import dialog and Column Selection dialog.
-* Installation: Re-designed Installation UI and separated it into 3 steps. (Git, R, and R packages)
+
+
+* Installation: Re-designed the Installation UI to make it more intuitive. 
 
 
 
@@ -94,8 +98,8 @@ Released on 11/24/2021.
 
 
 * Dashboard: Couldn't Re-Import and Run a Dashboard at the same time.
-* Dashboard: A dashboard panel title showed a weird text like "{data-width=100}" if a chart name contains an underscore ('\_') letter. 
-* Dashboard: A dashboard panel got unexpectedly wider or narrower if a chart name contains an underscore ('\_') letter. 
+* Dashboard: A dashboard panel title showed a weird text like "{data-width=100}" if a chart name contains an underscore ('\_') letter.
+* Dashboard: A dashboard panel got unexpectedly wider or narrower if a chart name contains an underscore ('\_') letter.
 
 
 * Publish: Connection info was not uploaded to the server for scheduled jobs or parameters if you had recreated the connection.
@@ -112,7 +116,7 @@ Released on 11/18/2021.
 
 ### Enhancements
 
-* Chart: Now you can choose to keep or remove NA values before applying a Window Calculation by the "Remove NA" checkbox in the Window Calculation dialog. 
+* Chart: Now you can choose to keep or remove NA values before applying a Window Calculation by the "Remove NA" checkbox in the Window Calculation dialog.
 
 
 ### Bug Fixes
@@ -126,14 +130,14 @@ Released on 11/18/2021.
 * Summary: Correlation Mode: Now logical columns also show a Correlation value if you select a numeric column to the target column.
 
 
-* Data Wrangling: 'Remove Specified Text in Another Column' operation failed for a column whose name has special characters or non-ASCII characters. 
+* Data Wrangling: 'Remove Specified Text in Another Column' operation failed for a column whose name has special characters or non-ASCII characters.
 * Data Wrangling: Summarize Group: On the Custom Expression editor, it didn't suggest columns from the previous step.
 
 
 * Chart: Custom Expression Dialog: Supported Function List dialog.
-* Chart: Density Plot: Show values with a unit name (μ etc) in the hover popup. 
+* Chart: Density Plot: Show values with a unit name (μ etc) in the hover popup.
 * Chart: Exporting chart data to an Excel file failed if you tried to overwrite an existing Excel file.
-* Chart: Heatmap: Values on the heatmap cells were incorrect if you assigned numeric values to the X or Y-Axis. 
+* Chart: Heatmap: Values on the heatmap cells were incorrect if you assigned numeric values to the X or Y-Axis.
 * Chart: Number: The lower part of the main number text was truncated.
 
 
@@ -167,9 +171,9 @@ Released on 11/11/2021.
 
 
 * Chart: Map: The World Map (Pacific Ocean centered) support.
-* Chart: Now you can show the grand total in Table. 
-* Chart: Number: Now the caption text shows in multiple lines if it is long. 
-* Chart: Pivot: Summarize Table: Now you can configure how to handle NA values from the Missing Value Handling setting. 
+* Chart: Now you can show the grand total in Table.
+* Chart: Number: Now the caption text shows in multiple lines if it is long.
+* Chart: Pivot: Summarize Table: Now you can configure how to handle NA values from the Missing Value Handling setting.
 * Chart: Radar chart support.
 * Chart: Supported Y-axis columns reorder by drag and drop.
 
@@ -205,7 +209,7 @@ Released on 11/11/2021.
 * Data Source: Improved performance for previewing multiple CSV/Excel/Parquet files import and merge cases.
 * Data Source: MS SQL Server: Relabeled and reordered ODBC drivers shown in the List of Values to make it less confusing.
 * Data Source: ODBC Data Source: Stopped blindly escaping non-ASCII table names to avoid SQL syntax becoming invalid.
-* Data Source: Remote Excel: After changing a remote Excel file URL, the associated Sheet Name was not properly updated. 
+* Data Source: Remote Excel: After changing a remote Excel file URL, the associated Sheet Name was not properly updated.
 * Data Source: Twitter: Now you can use LOV for Language parameters.
 * Data Source: When creating a new data frame while the source step was selected on the Chart View, the newly created data frame was not displayed on the data frame list.
 * Data Source: When importing Stats (SPSS/SAS/Stata) files, imported column data types were incorrect when the columns were labeled.
@@ -220,7 +224,7 @@ Released on 11/11/2021.
 * Data Wrangling: On Summary View, when a selected step was grouped, the 'Search Columns' label overlapped with the 'Correlation' button.
 * Data Wrangling: On the Create Calculation for Multiple Columns dialog, the label for Window Calculation was truncated.
 * Data Wrangling: Recode: the "# of unique" value label was placed way below the table when there were very few rows.
-* Data Wrangling: Summarize Group: Custom Expression Editor didn't have the link to open the Function List dialog. 
+* Data Wrangling: Summarize Group: Custom Expression Editor didn't have the link to open the Function List dialog.
 * Data Wrangling: There was a case that already deleted data frames kept showing in the data frame list and clicking the data frame threw an Error.
 * Data Wrangling: When deleting a branch data frame, it showed an error TypeError: Cannot read property 'getId' of null for some occasion.
 * Data Wrangling: When deleting a data frame, the parquet file used for data caching of the source step was left without getting removed.
@@ -237,12 +241,12 @@ Released on 11/11/2021.
 * Chart: Pivot: Summarize Table: Referring to a column in the Value in the URL formatting for a column in the Row didn't work.
 * Chart: Pivot: The hover pop-up didn't show the display name defined in the formatting dialog.
 * Chart: Summarize Table: The "Show Bars on Background" option didn't show up for a character column with a "Unique Count" function assigned to the Value.
-* Chart: Table: The header text didn't show fully once in a while even though the text was short. 
-* Chart: Value text on the plot area didn't align with bars if you used a Color with highlight. 
+* Chart: Table: The header text didn't show fully once in a while even though the text was short.
+* Chart: Value text on the plot area didn't align with bars if you used a Color with highlight.
 * Chart: Word Cloud failed to render if you assigned a factor column to Color and chose a "Unique Count" function.
 
 
-* Analytics: Chart Property dialog should always show the color properties even if no color is used in the chart. 
+* Analytics: Chart Property dialog should always show the color properties even if no color is used in the chart.
 * Analytics: Improved property menu for Market Basket Analysis to prevent unnecessary value set for 'Minimum Support Value'  when 'Auto' is set for 'Minimum Support".
 * Analytics: Survival Curve: Row number shown in the Summary was larger than the actual value by 1.
 * Analytics: The zero line for the Y-Axis didn't show in the Probability chart in the Random Forest analytics.
@@ -260,7 +264,7 @@ Released on 11/11/2021.
 
 
 * Installation: When Git and R download failed due to the proxy server blocking the download request, an error message didn't show up for some occasions.
-* Installation: When Rserve installation failed, the error message didn't show a full path of failed file 
+* Installation: When Rserve installation failed, the error message didn't show a full path of failed file
 * Installation: Windows: R under Documents/R/R-4.1.0 under the home directory was not properly detected and used.
 * Public: 'Download' button on the 'New version available' dialog was not linked to the Public Edition download page.
 * R Package Upgrade for 6.8.
@@ -298,7 +302,7 @@ Released on 9/28/2021.
 * Data Source: Amazon Athena: Supported additional parameters input field to enter any supported ODBC parameters.
 * Data Source: Amazon Athena: Supported VPC Endpoint parameter.
 * Data Source: Google Drive: Supported importing files from a Share Folder.
-* Data Wrangling: Work with Text Data: Supported "Remove Text Before/After Specified Character", "Replace Text Before/After Specified Character",  and "Extract Text Before/After Specified Character", 
+* Data Wrangling: Work with Text Data: Supported "Remove Text Before/After Specified Character", "Replace Text Before/After Specified Character",  and "Extract Text Before/After Specified Character",
 
 
 * General: Supported self service Offline License Key generation for users with Business Plan.
@@ -309,12 +313,12 @@ Released on 9/28/2021.
 * Analytics: The "Words - Count" chart in Word Count Analytics failed to render and showed "Invalid argument was passed to returnsNumericValue" error.
 
 
-* Chart: It showed fewer dots if you set the Trend Line in the Scatter chart. 
+* Chart: It showed fewer dots if you set the Trend Line in the Scatter chart.
 * Chart: Reference Line range values in the 2nd Repeat By was incorrect if you used the "Repeat by Y-Axis Columns" feature.
 * Chart: Table failed to render and showed an error dialog if the data frame had row names.
 
 
-* Dashboard: Dashboard didn't show more than 6 Numbers in a row even if you could add more than 6 Numbers at the design time. 
+* Dashboard: Dashboard didn't show more than 6 Numbers in a row even if you could add more than 6 Numbers at the design time.
 
 
 * Data Source: Amazon S3: Files from a child folder was listed on the parent folder.
