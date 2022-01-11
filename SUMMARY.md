@@ -22,7 +22,7 @@
     * [Chart / Analytics](share/chart.md)
     * [Data](share/data.md)
     * [Report (Note / Dashboard)](share/note.md)
-    * [Notification)](share/notification.md)
+    * [Notification](share/notification.md)
     * [Restore Older Version](share/restore.md)
   * [Share (日本語)](share/share_ja.md)
     * [共有のタイプ](share/share_type_ja.md)
