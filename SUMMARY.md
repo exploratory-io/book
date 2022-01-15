@@ -153,7 +153,7 @@
    * [Add Row](wrangling/add_row.md)
    * [Text Wrangling](wrangling/text_wrangling.md)
    * [Regular Expression Cheat Sheet](wrangling/regular_expression.md)
-   * [Regular Expression Cheat Sheet(日本語)](wrangling/regular_expression_ja.md)   
+   * [Regular Expression Cheat Sheet (日本語)](wrangling/regular_expression_ja.md)   
 
 * [Visualization](visualization.md)
    * Types
