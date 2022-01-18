@@ -13,9 +13,9 @@ Please see [here](../parameter/parameter.md) for more details about Parameter.
 
 
 
-## Showing the Parameter Value on Dashboard
+## Showing a Parameter Value on Dashboard
 
-You can show the current parameter value on the Dashboard using the R code chunk or R inline expression. Please see [here](../parameter/parameter.md#referring-the-parameter-value-in-note-dashboard) for more details.
+You can show the current parameter value on Dashboard using the R code chunk or R inline expression. Please see [here](../parameter/parameter.md#showing-the-parameter-value-on-note-dashboard) for more details.
 
 
 
