@@ -14,6 +14,12 @@ Exploratoryデスクトップでシンプル・マークダウン・エディタ
 パラメータの詳細に関しては[こちら](parameter/parameter_ja.md)をご覧ください。
 
 
+## ノート上にパラメータの値を表示する方法
+
+ノートでは、Rコードブロックや、インラインRコードを使って、パラメーターの値をノート上に表示することができます。詳細は[こちら](parameter/parameter_ja.md#ntoyadasshubdoniparamtnowosuru)をご覧ください。
+
+
+
 ## ビュー・モード
 
 ### 画面分割モード

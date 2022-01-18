@@ -88,23 +88,13 @@ SELECT * FROM Customers WHERE CustomerName LIKE '%@{search_string, quote=FALSE, 
 
 
 
-## Referring the Parameter Value in Note / Dashboard
+## Showing the Parameter Value on Note / Dashboard
 
-You can refer the current parameter value from the Note / Dashboard using the R code chunk or R inline expression. 
+You can show the current parameter value on the Note / Dashboard using the R code chunk or R inline expression. 
 
 ![](images/en1.png)
 
 ### Example using the R code chunk 
-
-For example, if you have a parameter "segment", you can refer it like the following.
-
-```
-
-Segment: `r @{segment}`
-
-```
-
-### Example using the R inline expression
 
 For example, if you have a parameter "segment", you can refer it like the following.
 
@@ -116,6 +106,18 @@ For example, if you have a parameter "segment", you can refer it like the follow
 
 ```
 ````
+
+
+### Example using the R inline expression
+
+For example, if you have a parameter "segment", you can refer it like the following.
+
+```
+
+`r @{segment}`
+
+```
+
 
 ## Learn More
 

@@ -11,6 +11,14 @@ If you add charts, analytics or data frames that contain the parameters to the d
 
 Please see [here](parameter/parameter.md) for more details about Parameter.
 
+
+
+## Showing the Parameter Value on Dashboard
+
+You can show the current parameter value on the Dashboard using the R code chunk or R inline expression. Please see [here](parameter/parameter.md#referring-the-parameter-value-in-note-dashboard) for more details.
+
+
+
 ## Row Height Setting 
 
 You can set a row height of each row if "Fit to Screen" option is disabled. 
