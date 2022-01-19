@@ -1,5 +1,35 @@
 # Release Note
 
+## 6.8.4.2
+
+Released on 1/18/2022
+
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.8.4.2.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.8.4.2.tar.gz)
+
+### Enhancements
+
+* Collaboration: Project Level Collaboration is supported. Now you can publish your projects to Exploratory Server and share them with others.
+* Insight: Version History support for insights and projects.
+* Parameter: Supported remembering the last selected Parameter values.
+
+### Bug Fixes
+
+* Data Source: After OAuth for Google Sheets, the browser was redirected to an incorrect URL that showed an error page.
+* Insight: The table for published Data now shows formatted numeric values.
+* Insight: If you have commas (',') in the Chart or Analytics name, downloading a CSV file from the Download button showed an error. 
+* Insight: Summary View showed all the columns even if you limited the number of columns on the Desktop before publishing it.
+* Parameter: Performance of parameter session was improved by optimizing the usage of cached data.
+* Parameter: On Safari, if you downloaded the CSV file from the Download button and then changed the Parameter, it showed a network error.
+* Parameter: Setting an empty string to a text field for a numeric parameter caused an error.
+* Parameter: Unnecessary UI flickering happened when a parameter was initialized.
+* Parameter: When moving a slider too far outside the parameter pane, it didn't trigger refreshing the Dashboard even if the auto-run was enabled.
+* Parameter: Word Cloud on a Note showed the error "error code 127" on the chart area if you changed the Parameter to a value that would return no row. Then you could not recover from the error even if you changed the Parameter values back. 
+* R: jpmesh R package is made available on the server.
+* Schedule: Timestamp of the insight such as Dashboard was updated by data refreshes even if they failed.
+* Schedule: The error message text overflowed if it was long in the error notification email.
+
+
 ## 6.8.2.4
 
 Released on 11/30/2021
