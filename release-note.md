@@ -51,7 +51,7 @@ Released on 1/18/2021.
 * Analytics: When a selected column data type was changed after a pin step moved, the associated aggregate function was not properly updated.
 
 
-* Note: Addressed the issue that Command + R  (or Ctrl + R for Windows) shortcut key did not work if the mouse focus was outside of the Note Editor.
+* Note: Command + R  (or Ctrl + R for Windows) shortcut key did not work if the mouse focus was outside of the Note Editor.
 * Note: Chart/Analytics Picker did not remember the last selected data frame.
 
 
