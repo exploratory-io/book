@@ -34,11 +34,6 @@ Released on 1/18/2022
 
 Released on 11/30/2021
 
-### Download Links
-
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.8.2.4.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.8.2.4.tar.gz)
-
 ### Enhancements
 
 * Admin: Added the "Last Updated" column in the admin stats page.
