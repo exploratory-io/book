@@ -2,32 +2,35 @@
 
 ## 6.8.4.2
 
-Released on 1/18/2022
+Released on 1/20/2022
+
+The main new feature for this release is to support Project Level Collaboration. You can now publish your projects to the Server to share with others and version control the projects.
+
 
 * [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.8.4.2.tar.gz)
 * [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.8.4.2.tar.gz)
 
 ### Enhancements
 
-* Collaboration: Project Level Collaboration is supported. Now you can publish your projects to Exploratory Server and share them with others.
-* Insight: Version History support for insights and projects.
+* Team: You can publish the projects as a team or as an individual.
+* Version History: You can see the thumbnail images for the past scheduled charts and dashboards.
+* Version Control: You can see all the versions of projects you published before and you can restore to any version.
 * Parameter: Supported remembering the last selected Parameter values.
+* Data: The table for the published data page now shows formatted numeric values.
 
 ### Bug Fixes
 
 * Data Source: After OAuth for Google Sheets, the browser was redirected to an incorrect URL that showed an error page.
-* Insight: The table for published Data now shows formatted numeric values.
-* Insight: If you have commas (',') in the Chart or Analytics name, downloading a CSV file from the Download button showed an error. 
-* Insight: Summary View showed all the columns even if you limited the number of columns on the Desktop before publishing it.
+* Chart: If you have commas (',') in the Chart or Analytics name, downloading a CSV file from the Download button showed an error.
+* Data: Summary View showed all the columns even if you limited the number of columns on the Desktop before publishing it.
 * Parameter: Performance of parameter session was improved by optimizing the usage of cached data.
 * Parameter: On Safari, if you downloaded the CSV file from the Download button and then changed the Parameter, it showed a network error.
 * Parameter: Setting an empty string to a text field for a numeric parameter caused an error.
-* Parameter: Unnecessary UI flickering happened when a parameter was initialized.
 * Parameter: When moving a slider too far outside the parameter pane, it didn't trigger refreshing the Dashboard even if the auto-run was enabled.
-* Parameter: Word Cloud on a Note showed the error "error code 127" on the chart area if you changed the Parameter to a value that would return no row. Then you could not recover from the error even if you changed the Parameter values back. 
-* R: jpmesh R package is made available on the server.
-* Schedule: Timestamp of the insight such as Dashboard was updated by data refreshes even if they failed.
-* Schedule: The error message text overflowed if it was long in the error notification email.
+* Parameter: Word Cloud on a Note showed the error "error code 127" on the chart area if you changed the Parameter to a value that would return no data.
+* R package: The jpmesh R package is made available on the server.
+* Schedule: The timestamp of the published data and insights were updated even when their scheduled jobs failed.
+* Schedule: The error message text overflowed in the notification email when it was too long.
 
 
 ## 6.8.2.4
@@ -46,7 +49,7 @@ Released on 11/30/2021
 * Data Source: SQL query failed if UseResultsetStreaming and RowsToFetchPerBlock were set for an Amazon Athena connection.
 * Data Wrangling: After sorting numeric columns in descending order, all the column values became negative.
 * Insight: Delete icons were missing for team-published insights in the insight search page.
-* Parameter: Improved the error messages. 
+* Parameter: Improved the error messages.
 * Schedule: Improved the message for the scheduling failure notification email.
 
 ## 6.8.0.19
@@ -68,10 +71,10 @@ Released on 11/17/2021
 * General: After OAuth re-authorization for a team-shared Insight, the browser was redirected to a wrong Insight URL with the user's ID instead of the team ID.
 * Insight: Data Tab: Rows are not properly shown when a column name contains special characters.
 * Insight: Data Tab: Table is not properly rendered for a publish data that has rownames.
-* Insight: Incorrect user thumbnails showed up in the Insight History dialog if you had multiple authors for the Insight. 
+* Insight: Incorrect user thumbnails showed up in the Insight History dialog if you had multiple authors for the Insight.
 * Insight: The table view in the Data share showed only 200 rows even you have more rows after changing the Parameter.
 * Insight: The view count in the Insight stats dialog was less than the number at the top of the main Insight view.
-* Insight: When an Insight is shared with a team, it should send a notification email to all team members. 
+* Insight: When an Insight is shared with a team, it should send a notification email to all team members.
 * Parameter: Prediction model with local file threw error about missing data file at rebuilding the model by updating parameter values on the server.
 * Parameter: When moving a slider to the far end, the slider drag event didn't clear and it kept moving the slider even after releasing mouse.
 * Parameter: When the Parameter session fails due to a data source error such as connection info is missing, it should show the error message and hint on UI.
