@@ -2,17 +2,19 @@
 
 ## 6.8.4.2
 
-Released on 1/20/2022
+Released on 1/20/2022.
 
-The main new feature for this release is to support Project Level Collaboration. You can now publish your projects to the Server to share with others and version control the projects.
+### Brief
 
+The main new feature for this release is to support Project Level Collaboration. You can now publish your projects to the Server to share with others and version control the projects. You can publish the projects as a team or as an individual.
+
+### Download
 
 * [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.8.4.2.tar.gz)
 * [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.8.4.2.tar.gz)
 
 ### Enhancements
 
-* Team: You can publish the projects as a team or as an individual.
 * Version History: You can see the thumbnail images for the past scheduled charts and dashboards.
 * Version Control: You can see all the versions of projects you published before and you can restore to any version.
 * Parameter: Supported remembering the last selected Parameter values.
