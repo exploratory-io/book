@@ -2,72 +2,76 @@
 
 ## 6.8.4
 
-Released on 1/18/2021.
+Released on 1/20/2021.
 
 ### Enhancements
 
-* Data Wrangling: Filter: Supported Remove Inf and -Inf option for numeric columns.
-* Data Wrangling: Supported pipe ("|") as a separate for the Separate and Separate Row commands.
-* Summary View: The column search can search all columns including ones currently not showing on the screen.
- 
- 
-* Note: Dashboard: Support the '@{param_name}' notation to access parameter values in the R code snippet. 
- 
- 
-* General: Add the "Create Team" option in the publishing options in the Project Publish dialog. 
- 
+* Data Wrangling: Filter: Supported 'Remove Inf' for numeric data type columns.
+* Data Wrangling: Supported pipe ("|") as a separating character for the Separate Columns and the Separate Rows steps.
+
+
+* Summary View: The column search can now search all columns including ones currently not showing on the screen.
+
+
+* Chart: Radar: Now you can configure the font size for the column names.
+
+
+* Note/Dashboard: Support the '@{param_name}' notation to access parameter values in the R code snippet.
+
+
+* General: Add the "Create Team" button in the Project Publish dialog.
+
 
 
 ### Bug Fixes
 
-* Data Source: Amazon Aurora: When trying to connect with a certificate of the CA, it failed with Failed to connect: SSL connection error: No such file or directory.
-* Data Source: Google BigQuery: Improved the Set Up dialog by re-organized input fields and by changing it to open the dialog by clicking the Edit button on the Connection list.
-* Data Source: Google Drive: Folders and files were not displayed for shared drives.
-* Data Source: Google Sheets: On the Sheet Selection dialog, a sheet name was truncated if the name included slashes.
-* Data Source: Google Sheets: When importing an EDF or Project, the Missing Connection Handling dialog on a Dashboard didn't show the Create Connection button. 
+* Data Source: Amazon Aurora: When trying to connect with a certificate of the CA, it failed with an error 'Failed to connect: SSL connection error: No such file or directory.''
+* Data Source: Google BigQuery: Improved the Set Up dialog menu. You can now open it from the Data Source Connection list.
+* Data Source: Google Drive: Folders and files were not displayed for the Shared drives.
+* Data Source: Google Sheets: On the Sheet Selection dialog, a sheet name was truncated when the sheet names included slashes.
+* Data Source: Google Sheets: When importing an EDF or Project, the Missing Connection Handling dialog on a Dashboard didn't show the Create Connection button.
 * Data Source: Google Sheets: When there were multiple files with the same name, selecting one of the files ended up with selecting all the files with the same name.
 * Data Source: Google Sheets: When updating an existing data source, re-selecting a Sheet ended up creating a new data frame instead of updating the existing data frame.
 * Data Source: Improved error handling for the case where authentication error is raised when getting OAuth token from Exploratory Server.
-* Data Source: Reverted RODBC version to address the issue that Non-Ascii characters were not imported properly.
-* Data Source: SalesForce: Improved the message for OAuth token revoked error. 
+* Data Source: RODBC: Non-Ascii characters were not imported properly.
+* Data Source: SalesForce: Improved the message for OAuth token revoked error.
 
 
-* Summary View: Summary View failed to render and showed the "invalid UTF-8 byte sequence detected" error. 
-* Summary View: The min value on the histogram label was incorrect. 
+* Summary View: The minimum value that was shown at underneaththe the histogram chart was incorrect.
 
 
 * Data Wrangling: Added a help link for a regular expression in the Text Wrangling UI.
 * Data Wrangling: On the Column Selection dialog, an incorrect "?" data type icon was shown for "ordered factor" columns.
-* Data Wrangling: Text Wrangling UI: Supported highlighting matched text when regular expression [:digit:] is used.
+* Data Wrangling: Text Wrangling: The dialog now supports highlighting the matched text for '[:digit:]'.
 
 
 * Chart: Legend should respect the order of categorized values with the 'Manual' Cut option.
-* Chart: Number: It should show 'NA' instead of 'NaN' if a numeric column assigned to the Value contains only NA values.
-* Chart: Radar: It should support configuring the font size for the column names.
-* Chart: The hover popup positions were off if you set the hover mode to the "All Values on Same X-Axis" in a Horizontal Bar chart. 
+* Chart: Number: It should show 'NA' instead of 'NaN' when an assigned column contains only NA values.
+
+* Chart: The hover popup positions were off if you set the hover mode to the "All Values on Same X-Axis" with the Horizontal Bar chart.
 * Chart: The slider widget used at the Color Opacity setting didn't allow you to set "0.9".
 
 
 * Analytics: When a selected column data type was changed after a pin step moved, the associated aggregate function was not properly updated.
 
 
-* Note: Command + R  (or Ctrl + R for Windows) shortcut key did not work if the mouse focus was outside of the Note Editor.
-* Note: Chart/Analytics Picker did not remember the last selected data frame.
+* Note: Command + R  (or Ctrl + R for Windows) shortcut key for re-running the Note did not work if the mouse focus was outside of the Note Editor.
+* Note: Chart/Analytics Picker did not remember the last selected data frame name.
 
 
-* Parameter: If you run the Parameter on a Note/Dashboard, a Word Cloud chart shows error code 127 when there is no row. And you can't recover even with rows after that.
-* Parameter: Usage of deleted parameters was not correctly detected in some cases, such as refreshing data for a Dashboard.
+* Parameter: If you run the Parameter on a Note/Dashboard, a Word Cloud chart shows error code 127 when there is no data.
 
 
-* Collaboration: Custom color palette was not transferred with update/sync of a project or export/import of a project via EPF file.
-* Collaboration: When imported into Exploratory Desktop, the EDF file downloaded from a team-published insight that was previously individually published was not correctly recognized as a team-published insight.
-* Project: Improved the performance for opening and closing the Duplicate Project dialog.
+* Project: User created color palettes were not included in the exported projects.
 
 
-* General: From version 6.8.0 to 6.8.3, Exploratory did not start on Windows if the Visual Studio library was not available on the machine.
-* Import: Error "Malicious entry: _archived_project/data/..." was raised at importing a project with data files with multibyte names.
-* Installation: Changed to show the setup confirmation message on the Application Toolbar.
+* Team: When imported into Exploratory Desktop, the EDF file downloaded from a team-published insight that was previously individually published was not correctly recognized as a team-published insight.
+* Project: Improved the performance for duplicating the projects.
+* Project: An error "Malicious entry: _archived_project/data/..." was raised when importing a project that contains data files with non-asciee names.
 
+
+* Install: Exploratory did not start on Windows if your PC doesn't have the Visual Studio library.
+* Install: Changed to show the setup confirmation message on the Application Toolbar.
 
 
 ## 6.8.3
@@ -150,7 +154,7 @@ The biggest feature of this release is to support Project Level Collaboration. N
 * General: Starting up in an offline environment threw the error "Cannot read properties of null (reading 'setDate')" if the name of your home directory on Windows had multibyte characters.
 
 
-* Installation: Re-designed the Installation UI to make it more intuitive. 
+* Installation: Re-designed the Installation UI to make it more intuitive.
 
 
 
