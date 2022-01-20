@@ -2,7 +2,7 @@
 
 ## 6.8.4
 
-Released on 1/18/2021.
+Released on 1/20/2021.
 
 ### Enhancements
 
