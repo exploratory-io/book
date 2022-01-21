@@ -105,6 +105,7 @@
     * [ビン(カテゴリー)を作成](/howto?q=tag%3ABinnning%20tag%3A%22Data%20Wrangling%22&language=ja)
     <!--* [その他グループを作る](/howto?q=tag%3A%22other%20group%22&language=ja)-->
     * [テキストデータの加工](/howto?q=tag%3A%22Text%20Data%22&language=ja)
+    * [正規表現](/howto?q=tag%3A%22Regular%20Expression%22&language=ja)
     <!--* [URLを操作](/howto?q=tag%3Aurl&language=ja)-->
     * [値の順序をセット](/howto?q=tag%3Afactor&language=ja)
     <!--* [サンプルを抽出](/howto?q=tag%3A%22Extract%20Sample%22&language=ja)-->
