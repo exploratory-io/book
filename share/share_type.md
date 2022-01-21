@@ -9,7 +9,7 @@ When you publish data or insights in the private mode you can invite others by t
 ![](images/share-invite-dialog-en.png)
 
 
-You can set priviledges for each invited user. The following privileges are availble. 
+You can set privileges for each invited user. The following privileges are available. 
 
 
 * Can Use Parameter: If it is on, the invited user also can use the parameters if this insight has parameters.
