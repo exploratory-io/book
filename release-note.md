@@ -37,7 +37,7 @@ Released on 1/20/2021.
 * Data Source: SalesForce: Improved the message for OAuth token revoked error.
 
 
-* Summary View: The minimum value that was shown at underneaththe the histogram chart was incorrect.
+* Summary View: The minimum value that was shown at underneath the the histogram chart was incorrect.
 
 
 * Data Wrangling: Added a help link for a regular expression in the Text Wrangling UI.
@@ -67,7 +67,7 @@ Released on 1/20/2021.
 
 * Team: When imported into Exploratory Desktop, the EDF file downloaded from a team-published insight that was previously individually published was not correctly recognized as a team-published insight.
 * Project: Improved the performance for duplicating the projects.
-* Project: An error "Malicious entry: _archived_project/data/..." was raised when importing a project that contains data files with non-asciee names.
+* Project: An error "Malicious entry: _archived_project/data/..." was raised when importing a project that contains data files with non-ascii names.
 
 
 * Install: Exploratory did not start on Windows if your PC doesn't have the Visual Studio library.
