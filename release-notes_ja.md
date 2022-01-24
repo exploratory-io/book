@@ -6,9 +6,11 @@
 
 ### 修正された問題
 
-* Data Wrangling: Error "Assertion failed" was raised when a step originally created by a very old version of Exploratory Desktop was run.
-* Chart: Y-Axis range was shorter than the max bar height, which caused some bars not showing themselves fully if you create a Bar chart from the Summary View.
-* Data Wrangling: Text Wrangling: Clicking the Regular Expression label did not auto-select the radio button.
+* データラングリング: 非常に古いバージョンのExploratoryデスクトップで作成したステップを実行すると、 "Assertion failed" というエラーが表示される。
+* データラングリング: テキストデータの加工: 「正規表現」のラベルをクリックしても、ラジオボタンが自動で選択されない。
+
+
+* チャート: サマリービューからバーチャートを作成したとき、Y軸の値の範囲がバーの最大値より短いため、一部のバーが完全に表示されない。
 
 
 ## 6.8.4
@@ -17,71 +19,68 @@
 
 ### 機能強化
 
-* Data Wrangling: Filter: Supported 'Remove Inf' for numeric data type columns.
-* Data Wrangling: Supported pipe ("|") as a separating character for the Separate Columns and the Separate Rows steps.
+* データラングリング: フィルタ: 数値型のデータにおいて「無限大(inf)を除く」、「無限大(inf)のみを残す」をサポートしました。
+* データラングリング: 「列に分割」と「行に分割」の区切り文字で 「|　（パイプ）」をサポートしました。
 
 
-* Summary View: The column search can now search all columns including ones currently not showing on the screen.
+* サマリビュー: 「列を検索」で、画面に表示されていない列を含むすべての列を検索できるようになりました。
 
 
-* Chart: Radar: Now you can configure the font size for the column names.
+* チャート: レーダー: 列名のフォントサイズを設定できるようになりました。
 
 
-* Note/Dashboard: Support the '@{param_name}' notation to access parameter values in the R code snippet.
+* ノート/ダッシュボード: Rのコードのスニペット内で、パラメーターの値が入力できるように '@{param_name}' 記法をサポートしました。
 
 
-* General: Add the "Create Team" button in the Project Publish dialog.
+* 一般: パブリッシュダイアログに 「新しいチームを作成」ボタンを追加しました。
 
 
 ### 修正された問題
 
-* Data Source: Amazon Aurora: When trying to connect with a certificate of the CA, it failed with an error 'Failed to connect: SSL connection error: No such file or directory.''
-* Data Source: Google BigQuery: Improved the Set Up dialog menu. You can now open it from the Data Source Connection list.
-* Data Source: Google Drive: Folders and files were not displayed for the Shared drives.
-* Data Source: Google Sheets: On the Sheet Selection dialog, a sheet name was truncated when the sheet names included slashes.
-* Data Source: Google Sheets: When importing an EDF or Project, the Missing Connection Handling dialog on a Dashboard didn't show the Create Connection button.
-* Data Source: Google Sheets: When there were multiple files with the same name, selecting one of the files ended up with selecting all the files with the same name.
-* Data Source: Google Sheets: When updating an existing data source, re-selecting a Sheet ended up creating a new data frame instead of updating the existing data frame.
-* Data Source: Improved error handling for the case where authentication error is raised when getting OAuth token from Exploratory Server.
-* Data Source: RODBC: Non-Ascii characters were not imported properly.
-* Data Source: SalesForce: Improved the message for OAuth token revoked error.
+* データソース: Amazon Aurora: CA証明書を使って接続すると、「Failed to connect: SSL connection error: No such file or directory.」というエラーが表示される。
+* データソース: Google Big Query: 設定ダイアログのメニューを改善し、データコネクションのリストから設定ダイアログを開けるようになりました。
+* データソース: Google ドライブ: 共有アイテムの場合、フォルダやファイルが表示されない。
+* データソース: Google Sheets: シート名にスラッシュが含まれる場合、シートの選択ダイアログで、シート名が途中までしか表示されない。
+* データソース: Google Sheets: プロジェクトやEDFをインポートした際、「コネクションを作成」ボタンが表示されない。
+* データソース: Google Sheets: 同じ名前のファイルが複数ある場合、ファイルの1つを選択すると、同じ名前のファイル全てが選択される。
+* データソース: Google Sheets: データソースのステップからシートを再選択すると、既存のデータフレームを更新されず、新しいデータフレームが作成される。
+* データソース: Exploratory サーバーから OAuth トークンを取得するときに表示される認証エラーの処理を改善しました。
+* データソース: RODBC: 非アスキー文字が正しくインポートされない。
+* データソース: Salesforce: OAuthトークンの失効エラーのメッセージを改善しました。
 
 
-* Summary View: The minimum value that was shown at underneath the the histogram chart was incorrect.
+* サマリビュー: ヒストグラムの下に表示される最小値が正しくない。
 
 
-* Data Wrangling: Added a help link for a regular expression in the Text Wrangling UI.
-* Data Wrangling: On the Column Selection dialog, an incorrect "?" data type icon was shown for "ordered factor" columns.
-* Data Wrangling: Text Wrangling: The dialog now supports highlighting the matched text for '[:digit:]'.
+* データラングリング: テキストデータの加工: 正規表現のヘルプリンクを追加しました。
+* データラングリング: テキストデータの加工: 正規表現の「[:digit:]」にマッチするテキストがハイライトされるようになりました。
+* データラングリング: 「列を選択」のダイアログで、ファクター型の列が「?」というデータ型として表示される。
 
 
-* Chart: Legend should respect the order of categorized values with the 'Manual' Cut option.
-* Chart: Number: It should show 'NA' instead of 'NaN' when an assigned column contains only NA values.
-
-* Chart: The hover popup positions were off if you set the hover mode to the "All Values on Same X-Axis" with the Horizontal Bar chart.
-* Chart: The slider widget used at the Color Opacity setting didn't allow you to set "0.9".
-
-
-* Analytics: When a selected column data type was changed after a pin step moved, the associated aggregate function was not properly updated.
+* チャート: 「カテゴリーの作成」で「手動」の区切りタイプを選択した際、凡例が区切られた順番を尊重しない。
+* チャート: ナンバー: 選択した列の値の全てが欠損値の場合、「NaN」の代わりに 「NA」を表示するようになりました。
+* チャート:  バーチャートの　「バー・チャート・タイプ」に「横並び」を選択して、「ホバー・モード」に「同じX軸上のすべての値」をすると、ポップアップの位置がずれる。
+* チャート: 「色の設定」の「不透明度」のスライダーで「0.9」を設定できない。
 
 
-* Note: Command + R  (or Ctrl + R for Windows) shortcut key for re-running the Note did not work if the mouse focus was outside of the Note Editor.
-* Note: Chart/Analytics Picker did not remember the last selected data frame name.
+* アナリティクス:  ピンを移動した後に、選択していた列のデータ型を変更すると、関連する集計関数が正しく更新されない。
 
 
-* Parameter: If you run the Parameter on a Note/Dashboard, a Word Cloud chart shows error code 127 when there is no data.
+* ノート: マウスのフォーカスがノートエディタの外にある場合、ノートを実行するためのCommand + R (Windows では Ctrl + R)のショートカットキーが機能しない。
+* ノート: チャート/アナリティクスの選択時に、最後に選択していたデータフレームを記憶していない。
+* ノート: ノート/ダッシュボードでパラメータを実行して、ワードクラウドを更新したときにデータがないと「error code 127」が表示される。
 
 
-* Project: User created color palettes were not included in the exported projects.
+* プロジェクト: エクスポートされたプロジェクトにカスタムカラーパレットが含まれない。
+* プロジェクト: プロジェクトを複製する際のパフォーマンスを改善しました。
+* プロジェクト: 非アスキー文字を含むデータファイルを含むプロジェクトをインポートすると、"Malicious entry: _archived_project/data/..."というエラーが表示される。
 
 
-* Team: When imported into Exploratory Desktop, the EDF file downloaded from a team-published insight that was previously individually published was not correctly recognized as a team-published insight.
-* Project: Improved the performance for duplicating the projects.
-* Project: An error "Malicious entry: _archived_project/data/..." was raised when importing a project that contains data files with non-ascii names.
+* チーム: 過去に個人でパブリッシュした後に、チームでパブリッシュしたEDFをインポートすると、チームとしてパブリッシュされたインサイトとして認識されない。
 
 
-* Install: Exploratory did not start on Windows if your PC doesn't have the Visual Studio library.
-* Install: Changed to show the setup confirmation message on the Application Toolbar.
+* インストール:  Visual Studio ライブラリがない場合、Windowsで起動しない。
+* インストール: アプリケーションツールバーにセットアップの確認メッセージを表示するようになりました。
 
 
 ## 6.8.3
