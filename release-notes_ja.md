@@ -4,7 +4,7 @@
 
 2021年1月22日リリース。
 
-### Bug Fixes
+### 修正された問題
 
 * Data Wrangling: Error "Assertion failed" was raised when a step originally created by a very old version of Exploratory Desktop was run.
 * Chart: Y-Axis range was shorter than the max bar height, which caused some bars not showing themselves fully if you create a Bar chart from the Summary View.
@@ -15,7 +15,7 @@
 
 2021年1月20日リリース。
 
-### Enhancements
+### 機能強化
 
 * Data Wrangling: Filter: Supported 'Remove Inf' for numeric data type columns.
 * Data Wrangling: Supported pipe ("|") as a separating character for the Separate Columns and the Separate Rows steps.
@@ -33,7 +33,7 @@
 * General: Add the "Create Team" button in the Project Publish dialog.
 
 
-### Bug Fixes
+### 修正された問題
 
 * Data Source: Amazon Aurora: When trying to connect with a certificate of the CA, it failed with an error 'Failed to connect: SSL connection error: No such file or directory.''
 * Data Source: Google BigQuery: Improved the Set Up dialog menu. You can now open it from the Data Source Connection list.
