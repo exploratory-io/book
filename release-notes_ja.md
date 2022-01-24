@@ -1,5 +1,89 @@
 # リリースノート
 
+## 6.8.5
+
+2021年1月22日リリース。
+
+### Bug Fixes
+
+* Data Wrangling: Error "Assertion failed" was raised when a step originally created by a very old version of Exploratory Desktop was run.
+* Chart: Y-Axis range was shorter than the max bar height, which caused some bars not showing themselves fully if you create a Bar chart from the Summary View.
+* Data Wrangling: Text Wrangling: Clicking the Regular Expression label did not auto-select the radio button.
+
+
+## 6.8.4
+
+2021年1月20日リリース。
+
+### Enhancements
+
+* Data Wrangling: Filter: Supported 'Remove Inf' for numeric data type columns.
+* Data Wrangling: Supported pipe ("|") as a separating character for the Separate Columns and the Separate Rows steps.
+
+
+* Summary View: The column search can now search all columns including ones currently not showing on the screen.
+
+
+* Chart: Radar: Now you can configure the font size for the column names.
+
+
+* Note/Dashboard: Support the '@{param_name}' notation to access parameter values in the R code snippet.
+
+
+* General: Add the "Create Team" button in the Project Publish dialog.
+
+
+### Bug Fixes
+
+* Data Source: Amazon Aurora: When trying to connect with a certificate of the CA, it failed with an error 'Failed to connect: SSL connection error: No such file or directory.''
+* Data Source: Google BigQuery: Improved the Set Up dialog menu. You can now open it from the Data Source Connection list.
+* Data Source: Google Drive: Folders and files were not displayed for the Shared drives.
+* Data Source: Google Sheets: On the Sheet Selection dialog, a sheet name was truncated when the sheet names included slashes.
+* Data Source: Google Sheets: When importing an EDF or Project, the Missing Connection Handling dialog on a Dashboard didn't show the Create Connection button.
+* Data Source: Google Sheets: When there were multiple files with the same name, selecting one of the files ended up with selecting all the files with the same name.
+* Data Source: Google Sheets: When updating an existing data source, re-selecting a Sheet ended up creating a new data frame instead of updating the existing data frame.
+* Data Source: Improved error handling for the case where authentication error is raised when getting OAuth token from Exploratory Server.
+* Data Source: RODBC: Non-Ascii characters were not imported properly.
+* Data Source: SalesForce: Improved the message for OAuth token revoked error.
+
+
+* Summary View: The minimum value that was shown at underneath the the histogram chart was incorrect.
+
+
+* Data Wrangling: Added a help link for a regular expression in the Text Wrangling UI.
+* Data Wrangling: On the Column Selection dialog, an incorrect "?" data type icon was shown for "ordered factor" columns.
+* Data Wrangling: Text Wrangling: The dialog now supports highlighting the matched text for '[:digit:]'.
+
+
+* Chart: Legend should respect the order of categorized values with the 'Manual' Cut option.
+* Chart: Number: It should show 'NA' instead of 'NaN' when an assigned column contains only NA values.
+
+* Chart: The hover popup positions were off if you set the hover mode to the "All Values on Same X-Axis" with the Horizontal Bar chart.
+* Chart: The slider widget used at the Color Opacity setting didn't allow you to set "0.9".
+
+
+* Analytics: When a selected column data type was changed after a pin step moved, the associated aggregate function was not properly updated.
+
+
+* Note: Command + R  (or Ctrl + R for Windows) shortcut key for re-running the Note did not work if the mouse focus was outside of the Note Editor.
+* Note: Chart/Analytics Picker did not remember the last selected data frame name.
+
+
+* Parameter: If you run the Parameter on a Note/Dashboard, a Word Cloud chart shows error code 127 when there is no data.
+
+
+* Project: User created color palettes were not included in the exported projects.
+
+
+* Team: When imported into Exploratory Desktop, the EDF file downloaded from a team-published insight that was previously individually published was not correctly recognized as a team-published insight.
+* Project: Improved the performance for duplicating the projects.
+* Project: An error "Malicious entry: _archived_project/data/..." was raised when importing a project that contains data files with non-ascii names.
+
+
+* Install: Exploratory did not start on Windows if your PC doesn't have the Visual Studio library.
+* Install: Changed to show the setup confirmation message on the Application Toolbar.
+
+
 ## 6.8.3
 
 2021年12月31日リリース。
