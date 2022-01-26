@@ -2,18 +2,18 @@
 
 ## 6.8.5
 
-Released on 1/22/2021.
+Released on 1/22/2022.
 
 ### Bug Fixes
 
 * Data Wrangling: Error "Assertion failed" was raised when a step originally created by a very old version of Exploratory Desktop was run.
-* Chart: Y-Axis range was shorter than the max bar height, which caused some bars not showing themselves fully if you create a Bar chart from the Summary View. 
+* Chart: Y-Axis range was shorter than the max bar height, which caused some bars not showing themselves fully if you create a Bar chart from the Summary View.
 * Data Wrangling: Text Wrangling: Clicking the Regular Expression label did not auto-select the radio button.
 
 
 ## 6.8.4
 
-Released on 1/20/2021.
+Released on 1/20/2022.
 
 ### Enhancements
 
