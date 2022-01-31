@@ -1,8 +1,63 @@
 # Release Note
 
+## 6.8.6
+
+Released on 1/31/2022.
+
+
+### Enhancements
+
+* Dashboard: Supported the Height Setting dialog where you can set a row height for each row.
+* Note: Now you can show the Parameter value using the new notation in Note. Example: `` `@{parameter_name}` ``
+
+
+### Bug Fixes
+
+* Data Source: Data File List: Improved the style by changing the text color of 'Change Folder' to green.
+* Data Source: SalesForce: Could not re-authorize SalesForce when the OAuth token was invalid.
+
+
+* Data Wrangling: After renaming a target data frame column and refreshed steps, an assertion error is raised for a group by step.
+* Data Wrangling: Opening the Reorder Columns dialog from a column menu moves the selected column to the top.
+
+
+* Chart: Bar: Bars didn't fit the default Y-axis range if you had a Stacked Bar chart with Color By, Repeat By and you set "Above" and then "(None)" for the "Value on Plot" property.
+
+
+* Analytics: If rlang R package was upgraded to 1.0.0, many analytics threw the R error "'as_pairlist' is not an exported object from 'namespace:rlang'".
+
+
+* Note: Changing the Parameter didn't update the output of the inline R code. 
+* Dashboard: Could not drag the bottom row to change the row height.
+
+
+* Project List: You cannot type in a search text into the Project Search input field for a while if you close the project and come back to the list.
+* Project: After publishing a project as a team, the publisher became a user where it should be the team.
+
+
+* Installation: Added validation to disallow selecting Desktop directory as the Exploratory repository.
+
+
+* Public: If an error occurred while importing a project by URL, the error remained in the Project Import dialog.
+* Public: Publish at the project close failed if your Git was configured to use "main" as the default branch name instead of "master".
+
+
+
+
+## 6.8.5
+
+Released on 1/22/2022.
+
+### Bug Fixes
+
+* Data Wrangling: Error "Assertion failed" was raised when a step originally created by a very old version of Exploratory Desktop was run.
+* Chart: Y-Axis range was shorter than the max bar height, which caused some bars not showing themselves fully if you create a Bar chart from the Summary View.
+* Data Wrangling: Text Wrangling: Clicking the Regular Expression label did not auto-select the radio button.
+
+
 ## 6.8.4
 
-Released on 1/20/2021.
+Released on 1/20/2022.
 
 ### Enhancements
 
@@ -37,7 +92,7 @@ Released on 1/20/2021.
 * Data Source: SalesForce: Improved the message for OAuth token revoked error.
 
 
-* Summary View: The minimum value that was shown at underneaththe the histogram chart was incorrect.
+* Summary View: The minimum value that was shown at underneath the the histogram chart was incorrect.
 
 
 * Data Wrangling: Added a help link for a regular expression in the Text Wrangling UI.
@@ -67,7 +122,7 @@ Released on 1/20/2021.
 
 * Team: When imported into Exploratory Desktop, the EDF file downloaded from a team-published insight that was previously individually published was not correctly recognized as a team-published insight.
 * Project: Improved the performance for duplicating the projects.
-* Project: An error "Malicious entry: _archived_project/data/..." was raised when importing a project that contains data files with non-asciee names.
+* Project: An error "Malicious entry: _archived_project/data/..." was raised when importing a project that contains data files with non-ascii names.
 
 
 * Install: Exploratory did not start on Windows if your PC doesn't have the Visual Studio library.

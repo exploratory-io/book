@@ -1,39 +1,40 @@
-# Release Note
+# リリースノート
 
 ## 6.8.4.2
 
-Released on 1/20/2022.
+2022年1月20日にリリースされました。
 
-### Brief
+### 概要
 
-The main new feature for this release is to support Project Level Collaboration. You can now publish your projects to the Server to share with others and version control the projects. You can publish the projects as a team or as an individual.
+今回のリリースの大きな新機能として、プロジェクトレベルでのコラボレーションができるようになりました。
 
-### Download
+プロジェクトをサーバーにパブリッシュし、チームまたは他の人と共有したり、プロジェクトのバージョンを管理できるようになりました。さらに、「チーム」または「個人」としてプロジェクトをパブリッシュすることができるようになっています。
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.8.4.2.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.8.4.2.tar.gz)
+### ダウンロード
 
-### Enhancements
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.8.4.2.tar.gz)
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.8.4.2.tar.gz)
 
-* Version History: You can see the thumbnail images for the past scheduled charts and dashboards.
-* Version Control: You can see all the versions of projects you published before and you can restore to any version.
-* Parameter: Supported remembering the last selected Parameter values.
-* Data: The table for the published data page now shows formatted numeric values.
+### 機能強化
 
-### Bug Fixes
+* バージョン履歴: 過去にスケジュールされたチャートやダッシュボードのサムネイルのイメージを見れるようになりました。
+* バージョン管理: 過去にパブリッシュされたプロジェクトの全てのバージョンを確認し、任意のバージョンに復元することができます。
+* パラメーター: 最後に使ったパラメーターの値が選択された状態でパラメーターの画面が開くようになりました。
+* データ: パブリッシュされたデータのデータタブは数値をフォーマットした状態で表示するようになりました。
+* パラメーター: ステップデータを自動的にキャッシュすることにより、サーバーでパラメーターを有効にした際のパフォーマンスが向上しています。
+* Rパッケージ: jpmeshパッケージがサーバー上で利用できるようになりました。
 
-* Data Source: After OAuth for Google Sheets, the browser was redirected to an incorrect URL that showed an error page.
-* Chart: If you have commas (',') in the Chart or Analytics name, downloading a CSV file from the Download button showed an error.
-* Data: Summary View showed all the columns even if you limited the number of columns on the Desktop before publishing it.
-* Parameter: Performance of parameter session was improved by optimizing the usage of cached data.
-* Parameter: On Safari, if you downloaded the CSV file from the Download button and then changed the Parameter, it showed a network error.
-* Parameter: Setting an empty string to a text field for a numeric parameter caused an error.
-* Parameter: When moving a slider too far outside the parameter pane, it didn't trigger refreshing the Dashboard even if the auto-run was enabled.
-* Parameter: Word Cloud on a Note showed the error "error code 127" on the chart area if you changed the Parameter to a value that would return no data.
-* R package: The jpmesh R package is made available on the server.
-* Schedule: The timestamp of the published data and insights were updated even when their scheduled jobs failed.
-* Schedule: The error message text overflowed in the notification email when it was too long.
+### 修正された問題
 
+* データソース: Google SheetsでOAuthを認証した後、ブラウザが誤ったURLにリダイレクトされエラーページが表示される。
+* チャート: チャートまたはアナリティクスの名前にカンマ（ , ）がある場合、ダウンロードボタンからCSVファイルをダウンロードするとエラーが表示される。
+* データ: デスクトップ上で列の数を制限してからデータをパブリッシュしても、サマリビューのタブで全ての列が表示される。
+* パラメーター: SafariでダウンロードボタンからCSVファイルをダウンロードした後にパラメーターを変更するとネットワークエラーが表示される。
+* パラメーター: 数値タイプのパラメーターのテキスト入力フィールドに空文字列を設定するとエラーになる。
+* パラメーター: パラメーターウインドウの外側にスライダーを移動させた際に、自動実行が有効であってもパラメーターが実行されない。
+* パラメーター: ノートのパラメーターの値を変更した結果データが無い場合、ワードクラウドのチャートが"error code 127"というエラーを出す。
+* スケジュール: パブリッシュされたデータやインサイトのスケジュールが失敗した場合でも、タイムスタンプが更新されていました。
+* スケジュール: 通知メールのテキストが長すぎると、エラーメッセージのテキストがオーバーフローしてしまう。
 
 ## 6.8.2.4
 
