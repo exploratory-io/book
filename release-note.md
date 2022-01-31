@@ -1,5 +1,50 @@
 # Release Note
 
+## 6.8.6
+
+Released on 1/31/2022.
+
+
+### Enhancements
+
+* Dashboard: Supported the Height Setting dialog where you can set a row height for each row.
+* Note: Now you can show the Parameter value using the new notation in Note. Example: `` `@{parameter_name}` ``
+
+
+### Bug Fixes
+
+* Data Source: Data File List: Improved the style by changing the text color of 'Change Folder' to green.
+* Data Source: SalesForce: Could not re-authorize SalesForce when the OAuth token was invalid.
+
+
+* Data Wrangling: After renaming a target data frame column and refreshed steps, an assertion error is raised for a group by step.
+* Data Wrangling: Opening the Reorder Columns dialog from a column menu moves the selected column to the top.
+
+
+* Chart: Bar: Bars didn't fit the default Y-axis range if you had a Stacked Bar chart with Color By, Repeat By and you set "Above" and then "(None)" for the "Value on Plot" property.
+
+
+* Analytics: With rlang 1.0.0, many analytics throws the R error: Error: 'as_pairlist' is not an exported object from 'namespace:rlang'.
+
+
+* Note: Changing the Parameter didn't update the output of the inline R code. 
+* Dashboard: Could not drag the bottom row to change the row height.
+
+
+* Project List: You cannot type in a search text into the Project Search input field for a while if you close the project and come back to the list.
+* Project: After publishing a project as a team, the publisher became a user where it should be the team.
+* Project: EPF file import invokes unnecessary git-add.
+
+
+* Installation: Added validation to disallow selecting Desktop directory as the Exploratory repository.
+
+
+* Public: If an error occurred while importing a project by URL, the error remained in the Project Import dialog.
+* Public: Publish at the project close fails if the branch name is main as opposed to master.
+
+
+
+
 ## 6.8.5
 
 Released on 1/22/2022.
