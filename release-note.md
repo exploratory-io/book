@@ -24,7 +24,7 @@ Released on 1/31/2022.
 * Chart: Bar: Bars didn't fit the default Y-axis range if you had a Stacked Bar chart with Color By, Repeat By and you set "Above" and then "(None)" for the "Value on Plot" property.
 
 
-* Analytics: With rlang 1.0.0, many analytics throws the R error: Error: 'as_pairlist' is not an exported object from 'namespace:rlang'.
+* Analytics: If rlang R package was upgraded to 1.0.0, many analytics threw the R error "'as_pairlist' is not an exported object from 'namespace:rlang'".
 
 
 * Note: Changing the Parameter didn't update the output of the inline R code. 
@@ -33,14 +33,13 @@ Released on 1/31/2022.
 
 * Project List: You cannot type in a search text into the Project Search input field for a while if you close the project and come back to the list.
 * Project: After publishing a project as a team, the publisher became a user where it should be the team.
-* Project: EPF file import invokes unnecessary git-add.
 
 
 * Installation: Added validation to disallow selecting Desktop directory as the Exploratory repository.
 
 
 * Public: If an error occurred while importing a project by URL, the error remained in the Project Import dialog.
-* Public: Publish at the project close fails if the branch name is main as opposed to master.
+* Public: Publish at the project close failed if your Git was configured to use "main" as the default branch name instead of "master".
 
 
 
