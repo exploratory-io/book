@@ -97,6 +97,9 @@ FROM SUBQ;
 
 ![](images/google-big-query-with.png)
 
+For Migration from legacy SQL, Please refer [Migrating to Standard SQL](https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql)
+
+
 ## 6. Page Size
 
 When importing data from Google BigQuery, if you specify a lot of columns in your SQL query, the query may return missing results.
@@ -108,10 +111,6 @@ Please note that decreasing the page size slows the importing data process.
 
 ![](images/google-big-query-page-size.png)
 
-
-
-
-For Migration from legacy SQL, Please refer [Migrating to Standard SQL](https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql)
 
 ## 7. Using Parameters in SQL
 
