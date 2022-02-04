@@ -67,7 +67,7 @@ Select an account you want to use for your Google BigQuery and click 'Allow' but
 
 ## 5. Standard SQL
 
-You can now use Standard SQL by clicking "Standard SQL Mode" checkbox. 
+You can now use Standard SQL by clicking "Standard SQL Mode" checkbox.
 
 ![](images/google-big-query-standard-sql.png)
 
@@ -97,11 +97,23 @@ FROM SUBQ;
 
 ![](images/google-big-query-with.png)
 
+## 6. Page Size
+
+When importing data from Google BigQuery, if you specify a lot of columns in your SQL query, the query may return missing results.
+If this is the case, you might want to reduce the page size.
+
+Also, when your query result contains many list columns, you also want to reduce page size so that you can import the query result.
+
+Please note that decreasing the page size slows the importing data process.
+
+![](images/google-big-query-page-size.png)
+
+
 
 
 For Migration from legacy SQL, Please refer [Migrating to Standard SQL](https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql)
 
-## 4. Using Parameters in SQL
+## 7. Using Parameters in SQL
 
 First, click Parameter link on the SQL Data Import Dialog.
 
@@ -118,15 +130,15 @@ Finally, you can use @{} to surround a variable name inside the query like below
   from airline_2016_01
   where carrier = @{carrier}
   ```
-  
+
   If you type @ then it suggests parameters like below.
-  
+
   ![](images/insert_param_in_query.png)
 
 
 Here's a [blog post](https://exploratory.io/note/kanaugust/An-Introduction-to-Parameter-in-Exploratory-WCO4Vgn7HJ) for more detail.
 
-## 6. Import
+## 8. Import
 
 Click 'Import' button
 
