@@ -75,6 +75,6 @@
 
 ## リンク
 
-詳しくは、以下の記事をご覧ください。
+詳しくは、以下の記事（英語）をご覧ください。
 
-* 【Rで最も実用的な5つのウィンドウ（テーブル）計算】(https://blog.exploratory.io/5-most-practically-useful-window-table-calculations-in-r-7e2c7ca431d9)
+* [5 Most Practically Useful Window (Table) Calculations in R](https://blog.exploratory.io/5-most-practically-useful-window-table-calculations-in-r-7e2c7ca431d9)
