@@ -21,6 +21,24 @@ To Install ODBC Driver for SQL Server, please follow the [instruction](https://d
 
 Click ‘Test Connection’ button to make sure the information is correct, before you save it.
 
+## Troubleshooting
+
+If you use Mac and installed ODBC Driver 17 for SQL Server version 17.8 or older, you might see the below error when connection to your SQL Server 
+
+```r
+[08001][Microsoft][ODBC Driver 17 for SQL Server]SSL Provider: [OpenSSL library could not be loaded, make sure OpenSSL 1.0 or 1.1 is installed]
+```
+
+If this is the case, try the below steps:
+It assume you use brew to install openssl and brew prefix is `/usr/local`. (you can check it with `brew --prefix`)   
+
+```sh
+$ rm -rf /usr/local/opt/openssl
+
+$ ln -s /usr/local/Cellar/openssl@1.1/1.1.1m /usr/local/opt/openssl
+```
+
+Then restart Exploratory.
 
 ## 2. Open SQL Server Import dialog
 
