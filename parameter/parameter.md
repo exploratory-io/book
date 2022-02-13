@@ -90,33 +90,10 @@ SELECT * FROM Customers WHERE CustomerName LIKE '%@{search_string, quote=FALSE, 
 
 ## Showing the Parameter Value on Note / Dashboard
 
-You can show the current parameter value on the Note / Dashboard using the R code chunk or R inline expression. 
+You can show the current parameter value on the Note / Dashboard using the `` `@{parameter_name}` `` notation like the following.
 
 ![](images/en1.png)
 
-### Example using the R code chunk 
-
-For example, if you have a parameter "segment", you can refer it like the following.
-
-
-````
-```{r}
-
-@{segment}
-
-```
-````
-
-
-### Example using the R inline expression
-
-For example, if you have a parameter "segment", you can refer it like the following.
-
-```
-
-`r @{segment}`
-
-```
 
 
 ## Learn More
