@@ -2,7 +2,9 @@
 
 <img src="https://www.dropbox.com/s/b13gjlwchno5sbw/cover.001.jpeg?raw=1" width="100%" />
 
-<br> <br>
+<br>
+
+
 
 Exploratory v6.9の紹介と、ユーザー様によるExploratoryを使ったデータ分析やデータの民主化の事例を紹介させていただきます。
 
