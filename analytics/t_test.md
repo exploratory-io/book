@@ -41,6 +41,7 @@ Input data should contain following columns.
   * Difference - Difference between the means of the values from the 2 categories.
   * Conf High - Upper bound of the confidence interval of the difference. The confidence level can be specified by the Confidence Level property.
   * Conf Low - Lower bound of the confidence interval of the difference. The confidence level can be specified by the Confidence Level property.
+  * Base Level - The category which is the base of the difference.
   * Effect Size (Cohen's d)
   * Power - Power of the test. Calculated as 1 minus the probability of type 2 error explained below.
   * Probability of Type 2 Error - Possible maximum probability of committing type 2 error given the sample size, the confidence level, and the difference to detect.
