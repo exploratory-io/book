@@ -32,6 +32,16 @@ Input data should contain following columns.
 
 ### "Summary" View
 "Summary" View displays the summary of the test result.
+  * U Statistic - The statistic for the independent test (rank sum test).
+  * W Statistic - The statistic for the paired test (signed rank test).
+  * P Value
+  * Difference - Estimated median of difference between a sample from one category and a sample from the other category.
+  * Conf High - Upper bound of the confidence interval of the difference. The confidence level can be specified by the Confidence Level property.
+  * Conf Low - Lower bound of the confidence interval of the difference. The confidence level can be specified by the Confidence Level property.
+  * Base Level - The category which is the base of the difference.
+  * Method
+  * Number of Rows - Total number of rows used for the test.
+  * Number of Rows for... - Number of rows for each value of the explanatory variable.
 
 ### "Difference" View
 "Difference" View appears only when "Estimate Confidence Interval of Difference" property is set to TRUE. It displays error bar chart of the median of the differences between a sample from one category and a sample from the other category with 95% confidence interval.

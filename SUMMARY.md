@@ -150,6 +150,7 @@
    * [Remove Empty Columns](wrangling/remove_empty_cols.md)
    * [Clean Column Names](wrangling/clean_names.md)
    * [Window Calculation](wrangling/window-calculation.md)
+   * [Window Calculation (日本語)](wrangling/window-calculation_ja.md)
    * [Add Row](wrangling/add_row.md)
    * [Text Wrangling](wrangling/text_wrangling.md)
    * [Regular Expression Cheat Sheet](wrangling/regular_expression.md)
