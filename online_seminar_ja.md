@@ -13,3 +13,21 @@
 * プロジェクトのバージョン管理
 
 ----
+
+# セミナー #81 決定木
+
+## 時間: 2022/2/24 (木) - 午後12時 - 1時（日本時間）
+
+## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
+
+----
+
+# セミナー #82 Exploratoryサーバーの紹介 Part 2
+
+## 時間: 2022/2/24 (木) - 午後12時 - 1時（日本時間）
+
+## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
+
+Exploratoryサーバーの活用に関する紹介シリーズです。（[リンク](https://exploratory.io/tag/?q=tag%3A%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%20Exploratory%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%20&language=all)）
+
+今回のセミナーでは前回からアップデートした機能について、デモを交えて紹介します。
