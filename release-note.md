@@ -90,7 +90,6 @@ Released on 3/3/2022.
 
 
 * Analytics: Binary Classification: ROC tabs raised an error if the name of the target variable column ends with "...<number>".
-* Analytics: Decision Tree: The order of the Prediction chart facets does not correspond with variable importance. 
 * Analytics: Topic Model: Indexes of topics were sorted alphabetically rather than numerically.
 
 
@@ -99,7 +98,7 @@ Released on 3/3/2022.
 
 * Parameter: After deleting a parameter, "Add New.." was displayed as a token label and no error message was shown. 
 * Parameter: False alarm validation at the creation of range parameter.
-* Parameter: Step metadata is broken after removing parameter definitions causing an error at the publishing time. 
+* Parameter: Removing parameters caused an error at publishing insights. 
 
 
 * General: Command + R Key shortcut key was overtaken even when Window focus was off.
