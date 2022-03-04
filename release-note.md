@@ -1,5 +1,116 @@
 # Release Note
 
+## 6.9.0
+
+Released on 3/3/2022.
+
+
+### Breaking Changes
+
+* Parameter: Existing Filter Step with parameters will be migrated into a Custom R Step.
+
+
+
+### Enhancements
+
+
+* Data Wrangling: Now data frames with a name with multibyte characters are supported.
+* Data Wrangling: Filter: Supported ‘Regular Expression’ mode.
+* Data Wrangling: Introducing the Window Calculation UI.
+* Data Wrangling: last_date function to get the last date of the period (week, month, quarter, or year) is added.
+* Data Wrangling: New aggregate functions to use with Summarize Step, count_rows, count_unique, and count_unique_if are added.
+* Data Wrangling: Now you can specify the digit to round up (ceiling) or down (floor) numbers.
+* Data Wrangling: Summarize Group: Supported UI for SUM_IF series.
+* Data Wrangling: Supported conversions for Zenkaku / Hankaku, Japanese Imperial Year / Western Year,  Japanese Calendar / Western Calendar, Kansuji / Number, Japanese Prefecture / Code.
+* Data Wrangling: Supported extracting Japanese holiday.
+* Data Wrangling: Supported UI for separating Japanese Addresses.
+* Data Wrangling: Text Wrangling: Added the option to convert Hankaku including Alphanumeric to Zenkaku.
+* Data Wrangling: ts_lag and ts_diff functions are added for lag and diff of time series data.
+
+
+* Chart: Introducing the "Color & Group" dialog.
+* Chart: Now you can create a logical color condition against the aggregated values on Y-Axis in the Bar chart.
+* Chart: Now you can select a City-level Japan map in the Map - Standard map type.
+* Chart: Now you can set the "Group By" option in the "Cumulative", "Difference From", "% Difference From" and "Moving" Window Calculations. 
+* Chart: Now you can use "Difference from Period Ago" and "% Difference from Period Ago" Time-Series Window Calculations.
+
+
+* Analytics: Chi-Square: Now we show Cramer’s V on the Summary table.
+* Analytics: Correlation: The order of the variables on the heatmap is optimized so that it is easier to discover sets of highly correlated variables.
+* Analytics: Decision Tree: Supported permutation importance in addition to the existing variable importance algorithms.
+* Analytics: T-Test, Wilcoxon Test: Summary table and Difference error bar chart now show which category is considered to be the base.
+* Analytics: Topic Model: The threshold of topic probability for highlighting the words in the Document tab is now configurable.
+
+
+* Dashboard: Now you can view a chart in the full-screen mode. 
+* Note: Now you can view a chart in the full-screen mode. 
+
+
+* Parameter: New 'Range' type parameter is supported.
+* Parameter: Supported Range Slider for 'Between' operator for numeric columns.
+* Publish: Now you can choose whether or not to notify the publishing event to the team members when you publish or republish your insight.
+
+
+
+
+### Bug Fixes
+
+
+* Data Source: File Import: Now the Update button only becomes clickable after previewing the data so that it makes sure changes made to the data source are valid.
+* Data Source: Google Analytics: Could not open a data source created with an older version of Exploratory.
+* Data Source: Google BigQuery: After performing OAuth, the Google BigQuery Setup dialog showed up even if a Billing Project was already selected.
+* Data Source: Google BigQuery: Improved the error message for the page size error.
+* Data Source: SQL Server: On Mac, improved the error message for an OpenSSL library loading known issue.
+* Data Source: When trying to update a data frame that merges multiple Excel files, it didn't update the data frame if you select a single Excel file for the update.
+
+
+* Summary View: Correlation: Moved the target column to the end when it's sorted by correlation.
+* Summary View: Spin icon didn't show up for a while after switching the number of columns to show.
+
+
+* Data Wrangling: Column Selection dialog: To prevent a column selection step becomes empty unexpectedly,  now the Run button becomes clickable only when you select columns.
+* Data Wrangling: Data frames with a name that started with '-' could not be renamed or removed.
+* Data Wrangling: Error from the step before a cached step after restarting Exploratory.
+* Data Wrangling: Filter Dialog collapsed while setting up a between function for a Date column.
+* Data Wrangling: Generate R Script menu did not work when an associated connection does not exist.
+* Data Wrangling: Improved the display name of ”AND" and "OR" logical conditions of the filter.
+* Data Wrangling: Improved the performance for renaming a data frame.
+* Data Wrangling: On the Column Selection dialog, when a column has a long name it was displayed across multiple lines.
+* Data Wrangling: On Windows, columns with a name containing emojis caused issues such as not being able to select on column selection dialogs.
+* Data Wrangling: Unsaved changes on step dialog were used for recalculation of the step.
+* Data Wrangling: When selecting a data frame, an assertion error was raised for some occasions.
+
+
+* Chart: Exporting Summarize Table data to a CSV file failed due to the "invalid multibyte string" error if the data contained Japanese characters.
+* Chart: Improved the Hover Popup range information text such as Standard Deviation to show '±' prefix.
+* Chart: Increased the unique value validation threshold to 100 for Color.
+* Chart: Map - Extension: The area type name is not translated on the button even though the names in the dropdown are translated.
+* Chart: Map - Standard: Hover Popup content is inconsistent between Area and Circle modes.
+* Chart: Pivot Table failed to render due to the "character string is not in a standard unambiguous format" error if you had NA values in Row and applied the date formatting.
+
+
+* Analytics: Binary Classification: ROC tabs raised an error if the name of the target variable column ends with "...<number>".
+* Analytics: Decision Tree: The order of the Prediction chart facets does not correspond with variable importance. 
+* Analytics: Topic Model: Indexes of topics were sorted alphabetically rather than numerically.
+
+
+* Dashboard: When a parameter was executed and there was a missing data connection, it didn't show the dialog from where you can select or create a connection.
+
+
+* Parameter: After deleting a parameter, "Add New.." was displayed as a token label and no error message was shown. 
+* Parameter: False alarm validation at the creation of range parameter.
+* Parameter: Step metadata is broken after removing parameter definitions causing an error at the publishing time. 
+
+
+* General: Command + R Key shortcut key was overtaken even when Window focus was off.
+* General: Corrected the Dialog Title of the Repository Directory picker.
+* General: Table View: Made the column width shorter when the value in the column was long.
+* Project: After renaming a project, duplicated project names were shown on the Project List.
+* Export: “Malicious entry” error could happen at importing a project (.epf file) that was exported from a project that was originally imported via another .epf file when the project contains local data files with a name with multibyte characters.
+
+
+
+
 ## 6.8.6
 
 Released on 1/31/2022.
