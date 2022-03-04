@@ -23,7 +23,7 @@ Released on 3/3/2022.
 * Data Wrangling: Summarize Group: Supported UI for SUM_IF series.
 * Data Wrangling: Supported conversions for Zenkaku / Hankaku, Japanese Imperial Year / Western Year,  Japanese Calendar / Western Calendar, Kansuji / Number, Japanese Prefecture / Code.
 * Data Wrangling: Supported extracting Japanese holiday.
-* Data Wrangling: Supported UI for separating Japanese Addresses.
+* Data Wrangling: Supported UI for separating Japanese address.
 * Data Wrangling: Text Wrangling: Added the option to convert Hankaku including Alphanumeric to Zenkaku.
 * Data Wrangling: ts_lag and ts_diff functions are added for lag and diff of time series data.
 
