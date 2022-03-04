@@ -21,7 +21,7 @@ Released on 3/3/2022.
 * Data Wrangling: New aggregate functions to use with Summarize Step, count_rows, count_unique, and count_unique_if are added.
 * Data Wrangling: Now you can specify the digit to round up (ceiling) or down (floor) numbers.
 * Data Wrangling: Summarize Group: Supported UI for SUM_IF series.
-* Data Wrangling: Supported conversions for Zenkaku / Hankaku, Japanese Imperial Year / Western Year,  Japanese Calendar / Western Calendar, Kansuji / Number, Japanese Prefecture / Code.
+* Data Wrangling: Supported conversions for Zenkaku / Hankaku, Japanese Imperial Year / Western Year,  Japanese Calendar / Western Calendar, Kansuji / Number, and Japanese Prefecture / Code.
 * Data Wrangling: Supported extracting Japanese holiday.
 * Data Wrangling: Supported UI for separating Japanese address.
 * Data Wrangling: Text Wrangling: Added the option to convert Hankaku including Alphanumeric to Zenkaku.
