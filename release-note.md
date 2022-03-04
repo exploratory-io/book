@@ -1,5 +1,16 @@
 # Release Note
 
+
+## 6.9.1
+
+Released on 3/3/2022.
+
+### Bug Fixes
+
+* Data Source: When clicking the Cancel button on the Update Data Source Step, data frame selection was removed.
+* Chart: Window Calculation: The default Group By target should be the smallest group all the time unless you change it.
+
+
 ## 6.9.0
 
 Released on 3/3/2022.
