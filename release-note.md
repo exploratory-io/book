@@ -1,5 +1,15 @@
 # Release Note
 
+## 6.9.2
+
+Released on 3/4/2022.
+
+### Bug Fixes
+
+* Summary View: Calculation of the Summary View was slower than 6.8 with recently released 6.9.0.
+* Data Wrangling: Incorrect input field validation error was raised in the Replace Text dialog.
+* Chart: Line: When the fill range was specified for Y-Axis of logical type, the range was not displayed.
+
 
 ## 6.9.1
 
