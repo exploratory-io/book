@@ -1,5 +1,39 @@
 # Release Note
 
+## 6.9.3
+
+Released on 3/10/2022.
+
+### Bug Fixes
+
+* Data Source: Raw Line: After importing a text file, clicking the "File" button then selecting a different text file switched it to a CSV data source.
+
+
+* Data Wrangling: After Renaming the existing Data Frame to Japanese for Join, Merge, etc, reference to these data frames break.
+* Data Wrangling: Export to Google Sheets: The sheet LOV did not show a list of Google Sheets when trying to override the existing one.
+* Data Wrangling: Filter: Cannot enter from and to values for the between operator.
+* Data Wrangling: Pivot: Could not select Date/POSIXct columns.
+* Data Wrangling: Window Calculation: Corrected sort order for Row Number.
+* Data Wrangling: Window Calculation: Supported Window Align argument for Moving Calculation.
+* Data Wrangling: Window Calculation: Changing the preview number of rows didn't work when the selected option was more than 200 rows.
+* Data Wrangling: Window Calculation: When Date or POSIXct columns are assigned to group columns,  original columns were overridden.
+
+
+* Chart: Color Dialog: The 'x' button at the search input field doesn't work.
+* Chart: Density Plot curves are incorrect if the data contains inf/-inf values.
+* Chart: If you have multiple columns at Y-Axis and set the highlight color, the highlighted color doesn't come at the beginning in the chart legend and bars.
+* Chart: If you move the order of columns at Y-axis by drag and drop, the highlight target column changes.
+* Chart: Logical condition target column should be always in sync with the column selected at the Color.
+* Chart: Map: Colors used in the thumbnail don't match the ones in the Map on Mac. 
+
+
+* Note: The full-screen toggle button on each chart disappears if you change the number of columns to show in the chart toolbar.
+
+
+* Export: Exporting a project that was originally imported via an EPF file with data files with multibyte names hangs.
+
+
+
 ## 6.9.2
 
 Released on 3/4/2022.
