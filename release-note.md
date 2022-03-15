@@ -1,5 +1,27 @@
 # Release Note
 
+
+## 6.9.4
+
+Released on 3/14/2022.
+
+### Bug Fixes
+
+* Data Wrangling: Window Calculation: When clicking the 'Edit' icon for a value column, the "Set Column Name" checkbox should be checked by default.
+
+
+* Chart: Labels less than 5% were not displayed on the Pie chart. 
+* Chart: The axis labels became ',' if you assigned a Date column to the X-axis of the Bar or Line chart and unchecked the 'Shorten Numbers' checkbox for the X-axis.
+* Chart: If you change the Marker to the 'Circle' or 'Line' on a Bar chart, the Bar Chart Type should become the "Side by Side" automatically.
+
+
+* Note/Dashboard: Chart and Analytics under a branch were not displayed on the Chart / Analytics Selector.
+* Note: Extra unnecessary space showed up below the Table/Number in a Note. 
+* Dashboard: When hovering a mouse over a chart, it showed an internal data frame ID instead of a data frame name.
+
+
+
+
 ## 6.9.3
 
 Released on 3/10/2022.
