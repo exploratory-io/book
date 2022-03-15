@@ -5,21 +5,18 @@
 
 Released on 3/14/2022.
 
-### Bug Fixes
+### Enhancements
 
 * Data Wrangling: Window Calculation: When clicking the 'Edit' icon for a value column, the "Set Column Name" checkbox should be checked by default.
-
-
-* Chart: Labels less than 5% were not displayed on the Pie chart. 
-* Chart: The axis labels became ',' if you assigned a Date column to the X-axis of the Bar or Line chart and unchecked the 'Shorten Numbers' checkbox for the X-axis.
 * Chart: If you change the Marker to the 'Circle' or 'Line' on a Bar chart, the Bar Chart Type should become the "Side by Side" automatically.
 
 
-* Note/Dashboard: Chart and Analytics under a branch were not displayed on the Chart / Analytics Selector.
-* Note: Extra unnecessary space showed up below the Table/Number in a Note. 
-* Dashboard: When hovering a mouse over a chart, it showed an internal data frame ID instead of a data frame name.
+### Bug Fixes
 
-
+* Chart: Pie Chart: Label texts were not displayed when those are less than 5%.
+* Chart: The axis labels became ',' if you assigned a Date column to the X-axis of the Bar or Line chart and unchecked the 'Shorten Numbers' checkbox for the X-axis.
+* Note/Dashboard: Chart and Analytics of the Branch data frames were not displayed in the Chart / Analytics Selection dialog.
+* Note: Unnecessary extra space was added below the Table/Number in a Note.
 
 
 ## 6.9.3
@@ -46,7 +43,7 @@ Released on 3/10/2022.
 * Chart: If you have multiple columns at Y-Axis and set the highlight color, the highlighted color doesn't come at the beginning in the chart legend and bars.
 * Chart: If you move the order of columns at Y-axis by drag and drop, the highlight target column changes.
 * Chart: Logical condition target column should be always in sync with the column selected at the Color.
-* Chart: Map: Colors used in the thumbnail don't match the ones in the Map on Mac. 
+* Chart: Map: Colors used in the thumbnail don't match the ones in the Map on Mac.
 
 
 * Note: The full-screen toggle button on each chart disappears if you change the number of columns to show in the chart toolbar.
@@ -108,7 +105,7 @@ Released on 3/3/2022.
 * Chart: Introducing the "Color & Group" dialog.
 * Chart: Now you can create a logical color condition against the aggregated values on Y-Axis in the Bar chart.
 * Chart: Now you can select a City-level Japan map in the Map - Standard map type.
-* Chart: Now you can set the "Group By" option in the "Cumulative", "Difference From", "% Difference From" and "Moving" Window Calculations. 
+* Chart: Now you can set the "Group By" option in the "Cumulative", "Difference From", "% Difference From" and "Moving" Window Calculations.
 * Chart: Now you can use "Difference from Period Ago" and "% Difference from Period Ago" Time-Series Window Calculations.
 
 
@@ -119,8 +116,8 @@ Released on 3/3/2022.
 * Analytics: Topic Model: The threshold of topic probability for highlighting the words in the Document tab is now configurable.
 
 
-* Dashboard: Now you can view a chart in the full-screen mode. 
-* Note: Now you can view a chart in the full-screen mode. 
+* Dashboard: Now you can view a chart in the full-screen mode.
+* Note: Now you can view a chart in the full-screen mode.
 
 
 * Parameter: New 'Range' type parameter is supported.
@@ -173,9 +170,9 @@ Released on 3/3/2022.
 * Dashboard: When a parameter was executed and there was a missing data connection, it didn't show the dialog from where you can select or create a connection.
 
 
-* Parameter: After deleting a parameter, "Add New.." was displayed as a token label and no error message was shown. 
+* Parameter: After deleting a parameter, "Add New.." was displayed as a token label and no error message was shown.
 * Parameter: False alarm validation at the creation of range parameter.
-* Parameter: Removing parameters caused an error at publishing insights. 
+* Parameter: Removing parameters caused an error at publishing insights.
 
 
 * General: Command + R Key shortcut key was overtaken even when Window focus was off.
