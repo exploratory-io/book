@@ -82,6 +82,11 @@
          "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
         },
         {
+         "title": "レーダーチャートの作り方",
+         "desc": "レーダーチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/exploratory/YQe8tvk6"
+        },
+        {
          "title": "地図 - 標準の使い方",
          "desc": "地図 - 標準の使い方についてご紹介します。",
          "url": "https://exploratory.io/note/GMq1Qom5tS/GWw6gtb4rU"
@@ -125,6 +130,16 @@
          "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
        },
        {
+        "title": "表計算：表計算：前年同月比のチャートの作り方",
+        "desc": "表計算：前の期間からの差の割合を使って前年同月比を可視化する方法をご紹介します。",
+        "url": "https://exploratory.io/note/exploratory/RCD3vcu7"
+      },
+      {
+       "title": "表計算：最初の値からの差の割合のチャートの作り方",
+       "desc": "表計算：最初の値からの差の割合を使って成長率を可視化する方法をご紹介します。",
+       "url": "https://exploratory.io/note/exploratory/bdG6yTZ5"
+      },
+       {
        "title": "リファレンスラインの使い方",
        "desc": "リファレンスラインの使い方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/eDU7CFA8RQ"
@@ -138,6 +153,11 @@
        "title": "トレンドライン：LOESS曲線の引き方",
        "desc": "トレンドライン：LOESS曲線の引き方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/10-LOESS-UJg3GXO9qL"
+       },
+       {
+       "title": "チャートの色を変更する方法",
+       "desc": "色とグループの設定の使い方をご紹介します。",
+       "url": "https://exploratory.io/note/exploratory/lSA6eIV2"
        },
        {
        "title": "ハイライトの使い方",
@@ -207,6 +227,16 @@
           "title": "データの可視化ワークショップ #3 - ばらつきと相関の可視化",
           "desc": "データの中にある「ばらつき」からパターンを発見するために、データタイプに合わせた「相関」の可視化方法について紹介します。",
           "url": "https://exploratory.io/note/GMq1Qom5tS/3-wPX8KeJ5DY"
+          },
+          {
+          "title": "データの可視化ワークショップ #4 - 不確実性の可視化",
+          "desc": "手元のデータから母集団の真の姿を推測するときに使える「信頼区間」の可視化方法について紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/4-QQo8skp5uu"
+          },
+          {
+          "title": "データの可視化ワークショップ #5 - 可視化のためのデータラングリング",
+          "desc": "データを可視化する時によく直面するデータの加工に関する問題を効率的に解決していく方法を紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/5-AZS6fim1QH"
         }
       ]
     }
