@@ -25,6 +25,7 @@
 
 ## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
 
+
 ----
 
 # セミナー #86 アナリティクスの文法
