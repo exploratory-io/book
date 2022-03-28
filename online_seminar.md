@@ -1,18 +1,19 @@
-# Seminar #62 - Survey Data Analysis Part 1
+# Seminar #62 - Survey Data Analysis Part 3
 ## Date/Time: 3/30/2022, Noon ET, 9AM PT, 5PM GMT, 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-Doing a survey is easy, ask questions and collect the answers.
+You can analyze your survey data with various data analysis methods. We have covered some of them in the past seminar.
 
-But, are you fully taking advantage of the survey data and getting useful insights out of it?
+However, without getting your survey data in the right data format, you don't have data to analyze.
 
-In this seminar, Kan will talk about how to get the survey data in shape so that you can easily visualize and analyze. And also, will introduce a quick way to perform a correlation analysis to gain useful isights about your audience and make your survey questions better. 
+In this seminar, Kan will discuss what is the right data format for analyzing and visualizing the survey data. And also, Kan will introduce a quick way to perform a correlation analysis to gain useful isights about your audience.
 
 Agenda:
 
-- Summary Information with Summary View
-- Data Format - Long & Wide
+- Basic Data Type
+- Data Format - Long Data & Wide Data
+- Handling Multiple Answers Data 
 - Correlation Analysis
 
 ----
@@ -26,7 +27,7 @@ Agenda:
 
 - Factor Analisys
 - Text Analysis - Word Count
-- Text Anlaysis - Clustering with Topic Model
+- Text Analysis - Clustering with Topic Model
 
 ----
 
@@ -37,11 +38,12 @@ Agenda:
 
 Agenda:
 
+- Initial Setup
+- Download Data with UI
+- Bulk Download Data with R Script
 - Filter with Date / Time
 - Merge Multiple Data Sets
 - Window Calculation
-- Forecasting
-- Clustering  
 
 ----
 
