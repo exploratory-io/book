@@ -67,7 +67,7 @@ Select an account you want to use for your Google BigQuery and click 'Allow' but
 
 ## 5. Standard SQL
 
-You can now use Standard SQL by clicking "Standard SQL Mode" checkbox on Google BigQuery Configuration Dialog.
+You can now use Standard SQL by clicking the "Standard SQL Mode" checkbox on Google BigQuery Configuration Dialog.
 
 Click the Edit button to open the Google BigQuery Configuration Dialog.
 ![](images/google-big-query-open-config-dialog.png)
