@@ -67,7 +67,12 @@ Select an account you want to use for your Google BigQuery and click 'Allow' but
 
 ## 5. Standard SQL
 
-You can now use Standard SQL by clicking "Standard SQL Mode" checkbox.
+You can now use Standard SQL by clicking "Standard SQL Mode" checkbox on Google BigQuery Configuration Dialog.
+
+Click the Edit button to open the Google BigQuery Configuration Dialog.
+![](images/google-big-query-open-config-dialog.png)
+
+On the Google BigQuery Configuration Dialog, you can set the Standard SQL Mode.
 
 ![](images/google-big-query-standard-sql.png)
 
@@ -111,6 +116,11 @@ Please note that decreasing the page size slows the importing data process.
 
 ![](images/google-big-query-page-size.png)
 
+You can override the Page Size at the Import Dialog too.
+
+![](images/google-big-query-page-size-import.png)
+
+
 
 ## 7. Using Parameters in SQL
 
@@ -142,3 +152,9 @@ Here's a [blog post](https://exploratory.io/note/kanaugust/An-Introduction-to-Pa
 Click 'Import' button
 
 If the data in the preview table look ok, then click 'Import' button to import the data into Exploratory.
+
+## 9. Switch Billing Project
+
+When you want to switch your Billing Project, you can click select a Billing Project on Google BigQuery Configuration dialog.
+
+![](images/google-big-query-switch-billing-project.png)
