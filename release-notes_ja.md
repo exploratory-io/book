@@ -2,9 +2,9 @@
 
 ## 6.9.5
 
-Released on 4/5/2022.
+2022年4月5日リリース。
 
-### Enhancements
+### 機能強化
 
 * データソース: CSVファイルの区切り文字にat（@）、Price(|).and Tab(\t)がサポートされました。
 
@@ -13,8 +13,7 @@ Released on 4/5/2022.
 * データラングリング: 全ての列名をきれいにするに「空白の削除」のオプションが追加されました。
 
 
-### Bug Fixes
-
+### 修正された問題
 
 * データソース: ノートまたはダッシュボードを開いた後に、EDFファイルをインポートできませんでした。
 * データソース: データベース：関連する情報のみを表示するようにエラーメッセージを改善しました。
@@ -31,59 +30,47 @@ Released on 4/5/2022.
 * データラングリング: 日本のWindows PCで、日付型に変換する際に「Year, Month」のオプションを使用すると、11月の日付が1月として変換されていました。
 * データラングリング: 列名の変更のダイアログで、列名に非表示のバックスペース文字が追加されることがありました。
 * データラングリング: データをGoogleスプレッドシートにエクスポートするときに、シート名に特殊文字が含まれているとエラーが発生していました。
-
-
-* Data Wrangling: When opening a data frame rename/comment dialog, the dialog was displayed in the far-right end position.
 * データラングリング: データフレームの「名前変更/コメント」のダイアログを開くと、ダイアログは画面の右端に表示されていました。
-
-* Data Wrangling: After opening the Window Calculation UI from a column menu, setting a new column name didn't work.
 * データラングリング: 列ヘッダメニューから表計算を開いた後、表計算のダイアログ上で新しい列名を設定できませんでした。
-
-* Data Wrangling: When opening the Window Calculation UI from a character column menu,  it didn't set the column as a group column.
-* データラングリング:カテゴリー型のメニューからウィンドウ計算UIを開くと、列がグループ列として設定されませんでした。
-
-* Data Wrangling: Window Calculation: It showed the incorrect label 'Difference From (%)' for a Date/POSIXct column where it should be 'Difference From'.
-* データラングリング:
-
-* Data Wrangling: ceiling/floor functions now have digits argument to specify at which digit the number should be ceiled/floored.
-* データラングリング:
+* データラングリング: カテゴリー型で列ヘッダメニューから表計算を開いた際に、グループ化の列として設定されませんでした。
+* データラングリング: 日付 / 日付時間型のデータで表計算の「...からの差」であるはずが、誤ったラベルとして「...からの差の割合」が表示されていました。
+* データラングリング: ceiling / floor関数に、数字をどの桁で切り上げ、切り捨てするかを指定する引数が追加されました。
 
 * サマリビュー: Numeric（数値)型の列の値の桁数が大きいときに"Failed to get information."というエラーが表示される。
 * サマリビュー: 相関モードとチャートビューの移動に時間がかかる。
 
 
-* Chart: Bubble: The list of values in the Color & Group Setting dialog didn't match with the values in the chart legend if you used the Repeat By and the "None" Grouping option.
-* Chart: Bubble: The reference line didn't show properly if you assigned an aggregation function such as "Sum" to the Color and selected the "Color By" option for the "Group By" option in the Reference Line dialog.
-* Chart: Bubble: Sorting didn't work if you assigned a numeric column to Color.
-* Chart: Bar: Sorting didn't work if you assigned the "Y-axis values" to Color.
-* Chart: The default color palette should be a gradient color if you assign a factor column to Color.
-* Chart: Chart Table: Could not move a column to the very top of the column list by drag and drop.
-* Chart: If you used the same name for the display name for multiple items in the Color & Group Setting dialog to reduce the number of unique values, the color assignment didn't match between the dialog and the chart.
-* Chart: It showed "3 Values are highlighted" in the Highlight info green text even though there were only 2 items highlighted in the Color & Group Setting dialog.
-* Chart: The Format Column dialog shouldn't disappear if you click outside of the dialog in Pivot Table and Summarize Table.
-* Chart: The "Export Chart Data as CSV" failed right after running a preview of a Note or Dashboard.
-* Chart: If you assigned a gradient color palette for the Logical condition in the Color & Group Setting dialog, the color assignment didn't match between the dialog and chart legend.
-* Chart: An error dialog showed up if you switched the column from the "Y-Axis Values" to a regular column.
-* Chart: The Logical condition didn't follow the column change if you created a Logical condition using the "Y-Axis Values" and changed the column assignment for the Y-Axis.
-* Chart: Invalid columns and operators showed up in the Logical condition setting dialog.
-* Chart: Pie/Ring: Labels for values less than 5% were not shown on the plot area. Now you can configure the threshold from the chart property dialog.
-* Chart: Axis labels became ',' if you assigned a Date column to X-Axis and unchecked the '数字の短縮化' option for X-Axis.
-* Chart: Labels for the "Others" created by the Others Group setting were different between the Color & Group Setting dialog and chart on Japanese UI.
-* Chart: Map: The chart control area became blank if you chose the 'None' option for Grouping Type in the Color & Group Setting dialog.
-* Chart: The color order should start from the left to the right in a Stacked, Horizontal Bar chart.
-* Chart: Scatter: Adding a reference line to the X-Axis in a Scatter chart failed if you assigned columns for X-Axis, Y-Axis, Color, Size, Label, Repeat By and it used Trend Line.
-* Chart: Scatter: The "Assertion Failed" error showed up if you assigned a difftime column to X-axis and selected the "Show Detail" option from a Pop-up.
-* Chart: The Sorting should be turned on/off by a checkbox, not from the dropdown.
-* Chart: Bar: You should be able to select the "Stacked" Bar Chart Type even if you change the Marker to "Line" or "Circle".
+* チャート: 散布図の集計ありにて、グループ化に「なし」を選択した状態で「繰り返し」を利用した場合、色とグループの設定のダイアログで表示される値のリストが凡例の値と一致しませんでした。
+* チャート: 散布図の集計ありにて、色に対して数値列を割り当てて「合計」などの集計関数を設定した状態でリファレンスラインを引いた際、グループ化に「色」を指定しているとリファレンスラインが正しく表示されませんでした。
+* チャート: 散布図の集計ありで色に数値列を割り当てた場合、並べ替えは機能しませんでした。
+* チャート: バーチャートで色に「Y軸の値」を割り当てた場合、並べ替えは機能しませんでした。
+* チャート: 順序つきカテゴリー（factor）型の列を色に割り当てた場合、デフォルトのカラーパレットをグラデーションカラーに変更しました。
+* チャート: テーブルチャートにて、ドラッグ＆ドロップで列をリストの一番上に移動できませんでした。
+* チャート: 色とグループの設定のダイアログにて、複数の項目の表示名に同じ名前を使用して一意な値の数を減らした場合、色の割り当てがダイアログとグラフの間で一致しませんでした。
+* チャート: 色とグループの設定のダイアログでハイライトされている項目が2つしかないにも関わらず、ハイライトの緑色のテキストに「3つの値」と表示されていました。
+* チャート: ピボットテーブルと集計テーブルにて、「列のフォーマット」のダイアログの外側をクリックしてもダイアログが閉じないように変更しました。
+* チャート: ノートまたはダッシュボードのプレビューを実行した直後にチャートのデータをCSVをエクスポートするとエラーが発生しました。
+* チャート: 色とグループの設定のダイアログで、論理条件を設定した状態でカラーパレットにグラデーションを割り当てた場合、色の割り当てがダイアログとチャートの凡例の間で一致しませんでした。
+* チャート: 色に割り当てている列を「Y軸の値」から通常の列に切り替えるとエラーダイアログが表示されていました。
+* チャート: 色に「Y軸の値」を使用して論理条件を作成後、Y軸の列の割り当てを変更すると論理条件は列の変更に追従しませんでした。
+* チャート: 色とグループの設定でグループ分けのタイプに「論理条件」を使用した際に、無効な列や演算子が表示されていました。
+* チャート: パイチャート / リングチャートで値が5％未満のラベルはプロット領域に表示されませんでした。チャートプロパティからチャートに表示するラベルのしきい値を変更できます。
+* チャート: 日付列をX軸に割り当て、X軸の「数字の短縮化」オプションをオフにした場合、軸ラベルに「,」が表示されていました。
+* チャート: その他グループで設定された「その他」のラベルは、色とグループの設定ダイアログと日本語のUIのチャートで異なります。
+* チャート: 地図で色とグループの設定でグループ分けのタイプに「なし」を選択すると、チャートの表示領域が空白になります。
+* チャート: 積み上げバーチャートの向きを横にした場合、色の順序は左から右に開始する必要があります。
+* チャート: 散布図でX軸、Y軸、色、サイズ、ラベル、繰り返しに列を割り当ててトレンドラインを使用した場合、散布図のX軸へのリファレンスラインの追加に失敗しました。
+* チャート: 散布図でdifftime型の列をX軸に割り当ててポップアップから詳細を表示のオプションを選択した場合、「アサーションに失敗しました」といったエラーが表示されました。
+* チャート: Y軸の並び替えはドロップダウンから選択するのではなく、チェックボックスでオン/オフの切り替えができるようになりました。
+* チャート: バーチャートのマーカーを「ライン」または「サークル」に変更した際に、バーチャートのタイプに「積み上げ」が選択できませんでした。
 
 
-* Analytics: Distance: The default color palette was one that was more appropriate for data with both positive and negative values, which was not the best choice to express distances. We switched the default to a more appropriate yellow-to-red gradation.
-* Analytics: K-means / PCA: An error is raised when the input data frame has columns named PC1, PC2, etc. We improved the error message so that it is clear that it should be avoided by renaming those columns.
-* Analytics: The chart legend setting should be hidden for the Survival Curve chart in the Cox Regression and Survival Forest analytics.
-* Analytics: Distance: If any of the input columns started with V, an error was raised.
-* Analytics: Decision Tree: The order of the Prediction chart facets did not correspond with the order of variable importances.
-* Analytics: Chi-Square Test: Association Coefficient (Cramer's V) is now calculated and shown in the Summary table.
-
+* アナリティクス: 距離のデフォルトのカラーパレットは、正と負の値の両方を持つデータに適したものでしたが、距離を表すのには最適な選択ではありませんでした。デフォルトのカラーパレットをより適切な黄色から赤のグラデーションに変更しました。
+* アナリティクス: K-meansや主成分分析（PCA）を実行する際に、データフレームにPC1, PC2などの列名がある場合にエラーが発生します。これらの列名を変更することで問題を回避できますが、列名の変更が必要であることがわかるようにエラーメッセージを変更しました。
+* アナリティクス: コックス回帰およびサバイバルフォレスト分析の生存曲線のタブでは、チャートの凡例設定を非表示にする必要があります。
+* アナリティクス: 距離の使用する列にVで始まる列名が存在する場合、エラーが発生していました。
+* アナリティクス: 決定木の予測タブで表示されるチャートの順序は変数重要度の順序と 一致しませんでした。
+* アナリティクス: カイ二乗検定のサマリタブに連関係数（Cramer's V）が追加されました。
 
 * ノート: ノート: テーブルやナンバーチャートの下に不要なスペースが表示される。
 * ノート: ワード文書にエクスポートしたときの画像の解像度が高くなりました。
