@@ -37,6 +37,7 @@ Released on 4/5/2022.
 * Data Wrangling: After opening the Window Calculation UI from a column menu, setting a new column name didn't work.
 * Data Wrangling: When opening the Window Calculation UI from a character column menu,  it didn't set the column as a group column.
 * Data Wrangling: Window Calculation: It showed the incorrect label 'Difference From (%)' for a Date/POSIXct column where it should be 'Difference From'.
+* Data Wrangling: ceiling/floor functions now have digits argument to specify at which digit the number should be ceiled/floored.
 
 
 * Summary View: Correlation mode: The "Failed to get information." error showed up if you had a numeric column with very large numbers.
@@ -71,6 +72,9 @@ Released on 4/5/2022.
 * Analytics: Distance: The default color palette was one that was more appropriate for data with both positive and negative values, which was not the best choice to express distances. We switched the default to a more appropriate yellow-to-red gradation.
 * Analytics: K-means / PCA: An error is raised when the input data frame has columns named PC1, PC2, etc. We improved the error message so that it is clear that it should be avoided by renaming those columns.
 * Analytics: The chart legend setting should be hidden for the Survival Curve chart in the Cox Regression and Survival Forest analytics.
+* Analytics: Distance: If any of the input columns started with V, an error was raised.
+* Analytics: Decision Tree: The order of the Prediction chart facets did not correspond with the order of variable importances.
+* Analytics: Chi-Square Test: Association Coefficient (Cramer's V) is now calculated and shown in the Summary table.
 
 
 * Note: There was an unnecessary space below the Table and Number charts in a Note.
