@@ -9,9 +9,9 @@ In this seminar, Kan will introduce the basis of such Analytics and demonstrate 
 
 Agenda:
 
-- Factor Analisys
+- Factor Analysys
 - Text Analysis - Word Count
-- Text Analysis - Clustering with Topic Model
+- Text Analysis - Topic Model
 
 ----
 
