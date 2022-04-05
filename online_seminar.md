@@ -9,7 +9,7 @@ In this seminar, Kan will introduce the basis of such Analytics and demonstrate 
 
 Agenda:
 
-- Factor Analysys
+- Factor Analysis
 - Text Analysis - Word Count
 - Text Analysis - Topic Model
 
