@@ -6,38 +6,47 @@ Released on 4/5/2022.
 
 ### Enhancements
 
-* Data Source: CSV File Import: Supported At (@), Pipe (|), and Tab (\t) as separators.
+* データソース: CSVファイルの区切り文字にat（@）、Price(|).and Tab(\t)がサポートされました。
 
-
-* Data Wrangling: When exporting data to Excel, now you can select the 'yyyy/mm/dd' as a date format.
-* Data Wrangling: Supported timezone for Date/Time related filtering operations.
-* Data Wrangling: Clean Column Name: Supported 'Remove Spaces' and 'Trim Spaces'  options.
+* データラングリング: データをExcelにエクスポートする時に、日付形式を選択できるようになりました。
+* データラングリング: 日付/時間型のデータをフィルタする際に、タイムゾーンを指定できるようになりました。
+* データラングリング: 全ての列名をきれいにするに「空白の削除」のオプションが追加されました。
 
 
 ### Bug Fixes
 
-* Data Source: After opening a Note or Dashboard, importing an EDF file didn't work.
-* Data Source: Database: Improved an error message to only show relevant information.
-* Data Source: Database: When updating or re-importing an existing database data source, column data types were updated unexpectedly where they should keep the original data types.
-* Data Source: Google BigQuery: When publishing data, chart, analytics, note, or dashboard that uses Google BigQuery as a data source to the Server, the scheduled job failed with the 'Use Standard SQL' error.
-* Data Source: Spin disappeared in the middle of opening the Data Connection dialog from the project header menu.
-* Improved error messages about missing local data files (e.g., CSV, Excel, etc.). This situation typically happens after importing an EDF or DF file with local data files exported from another machine.
-* Data Source: When importing an Excel file, specifying column data as Date didn't work and it's imported as a POSIXct column.
+
+* データソース: ノートまたはダッシュボードを開いた後に、EDFファイルをインポートできませんでした。
+* データソース: データベース：関連する情報のみを表示するようにエラーメッセージを改善しました。
+* データソース: データベース：既存のデータベースデータを更新または再インポートすると、列のデータ型が予期せず更新されてしまうため、元のデータ型を保持する必要がありました。
+* データソース: Google BigQuery: BigQueryをデータソースとして使用するデータ、チャート、アナリティクス、ノート、またはダッシュボードをサーバーに公開すると、スケジュールされたジョブが「標準SQLの使用」によるエラーで失敗しました。
+* データソース: プロジェクトのメニューからデータコネクションのダイアログを開いている途中でスピンが消えていました。
+* データソース: ローカルデータファイル（CSV、Excelなど）が無いことに関するエラーメッセージが改善されました。この状況は、別のマシンからエクスポートされたローカルデータファイルを含むEDFまたはDFファイルをインポートした後に発生します。
+* データソース:Excelファイルをインポートする時に、インポートダイアログ上で列のデータタイプを日付（Date）として指定しても機能せず、日付時間型（POSIXct）の列としてインポートされていました。
 
 
-* Data Wrangling: After having an error on a step, moving to another data frame or branch popped up an error with the report dialog.
-* Data Wrangling: Filter: Added the "Slice(Select Rows)" option under the filter column menu.
-* Data Wrangling: Join: After restarting the App, the Join target columns were not populated on the Join dialog.
-* Data Wrangling: On a Japanese Windows PC, converting data type with the 'Year / Month' option converted the date as January (1) where it should be November (11).
-* Data Wrangling: The rename dialog sometimes added hidden backspace characters to column names.
-* Data Wrangling: When exporting data to Google Sheets, it failed if the sheet name contained special characters.
-* Data Wrangling: When opening a dashboard, the data frame list on the main window didn't highlight the related data frames.
+* データラングリング: ステップでエラーが発生した後、別のデータフレームまたはブランチに移動すると、レポートダイアログでエラーが表示されていました。
+* データラングリング: フィルターのメニューに「行番号を指定」のオプションを追加しました。
+* データラングリング: アプリケーションを再起動した時に、結合のダイアログにてキー列が表示されませんでした。
+* データラングリング: 日本のWindows PCで、日付型に変換する際に「Year, Month」のオプションを使用すると、11月の日付が1月として変換されていました。
+* データラングリング: 列名の変更のダイアログで、列名に非表示のバックスペース文字が追加されることがありました。
+* データラングリング: データをGoogleスプレッドシートにエクスポートするときに、シート名に特殊文字が含まれているとエラーが発生していました。
+
+
 * Data Wrangling: When opening a data frame rename/comment dialog, the dialog was displayed in the far-right end position.
-* Data Wrangling: After opening the Window Calculation UI from a column menu, setting a new column name didn't work.
-* Data Wrangling: When opening the Window Calculation UI from a character column menu,  it didn't set the column as a group column.
-* Data Wrangling: Window Calculation: It showed the incorrect label 'Difference From (%)' for a Date/POSIXct column where it should be 'Difference From'.
-* Data Wrangling: ceiling/floor functions now have digits argument to specify at which digit the number should be ceiled/floored.
+* データラングリング: データフレームの「名前変更/コメント」のダイアログを開くと、ダイアログは画面の右端に表示されていました。
 
+* Data Wrangling: After opening the Window Calculation UI from a column menu, setting a new column name didn't work.
+* データラングリング: 列ヘッダメニューから表計算を開いた後、表計算のダイアログ上で新しい列名を設定できませんでした。
+
+* Data Wrangling: When opening the Window Calculation UI from a character column menu,  it didn't set the column as a group column.
+* データラングリング:カテゴリー型のメニューからウィンドウ計算UIを開くと、列がグループ列として設定されませんでした。
+
+* Data Wrangling: Window Calculation: It showed the incorrect label 'Difference From (%)' for a Date/POSIXct column where it should be 'Difference From'.
+* データラングリング:
+
+* Data Wrangling: ceiling/floor functions now have digits argument to specify at which digit the number should be ceiled/floored.
+* データラングリング:
 
 * サマリビュー: Numeric（数値)型の列の値の桁数が大きいときに"Failed to get information."というエラーが表示される。
 * サマリビュー: 相関モードとチャートビューの移動に時間がかかる。
@@ -79,7 +88,7 @@ Released on 4/5/2022.
 * ノート: ノート: テーブルやナンバーチャートの下に不要なスペースが表示される。
 * ノート: ワード文書にエクスポートしたときの画像の解像度が高くなりました。
 
-
+* ダッシュボード: ダッシュボードを開いたときに、メインウィンドウのデータフレームリストでダッシュボードに関連するデータフレームが強調表示されませんでした。
 * ダッシュボード: テーブルの高さが短いとき、全画面表示がうまく動かない。
 * ダッシュボード: 編集画面でチャートにマウスのカーソルを合わせると、設定した「表示名」ではなく、システム内部で利用している名称が表示される。
 
