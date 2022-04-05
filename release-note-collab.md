@@ -11,27 +11,28 @@ Released on 4/5/2022.
 
 ### Enhancements
 
-* Parameter: Supported range slider for a numeric parameter.
+* Parameter: Supported the Range Slider for numeric parameters.
+* Insight: Insight Search page is now translated to Japanese.
+* Schedule: You can now configure all the properties for Scheduling Runtime in your Account Setting page.
 
 ### Bug Fixes
 
-* Data Source: Improved OAuth error handling for Salesforce and Twitter.
-* Data Source: Data Sources created without explicitly specifying the Standard SQL option in the Connection dialog was run without the Standard SQL option on the server. In such cases, we changed the default behavior to be with the Standard SQL option.
-* Insight: Data View: Numeric column did not show a horizontal blue bar.
+
+* Insight: Data View: Numeric column did not show horizontal blue bars.
 * Insight: Data View: On iPhone or other smaller screen size devices, the row number dropdown and the search input box were overlapping.
 * Insight: Summary View: Inf and -Inf values were shown as "NA" in a numeric column.
-* Insight: Summary View: NA values were not properly counted in a Date column.
+* Insight: Summary View: NA values were not properly counted in Date columns.
 * Insight: A "Page Not Found" error showed up if you clicked the "My Insight" menu on iPhone or other smaller screen devices.
-* Insight: Now Insight Search view has the Japanese UI.
-* Insight: Should remove the "Runtime Setting" menu and move all the runtime settings into the "Account Setting" page.
-* Insight: We should show the "Sign In" link on the individual insight/project view page if not signed in. 
-* Insight: Under certain conditions, scheduled data refresh on a Note on the server raised the error "Cannot read property 'forEach' of null.".
-* General: Data frames with multibyte character names are supported.
+
+
 * Parameter: A "Cannot read property '0' of undefined" error showed up if you changed parameter values in the Word Cloud.
 * Parameter: An embedded R code referencing the parameter in a Note or Dashboard wasn't updated even if you changed the parameter values.
 * Parameter: Improved error message about missing data frame column necessary for a parameter's list-of-value.
-* Parameter: Parameter started throwing a database connection related error if the insight was updated by the other team member rather than the original author.
+
+
 * Scheduler: For team-shared Dashboard and Note, the schedules were not properly canceled when they were unpublished.
+* Scheduler: Improved OAuth error handling for Salesforce and Twitter.
+* Scheduler: BigQuery: Data or insights that were created without explicitly specifying the Standard SQL option in the Connection dialog was run without the Standard SQL option on the server. In such cases, we changed the default behavior to be with the Standard SQL option.
 
 
 ## 6.8.4.2
