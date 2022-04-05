@@ -1,5 +1,103 @@
 # リリースノート
 
+## 6.9.5
+
+Released on 4/5/2022.
+
+### Enhancements
+
+* Data Source: CSV File Import: Supported At (@), Pipe (|), and Tab (\t) as separators.
+
+
+* Data Wrangling: When exporting data to Excel, now you can select the 'yyyy/mm/dd' as a date format.
+* Data Wrangling: Supported timezone for Date/Time related filtering operations.
+* Data Wrangling: Clean Column Name: Supported 'Remove Spaces' and 'Trim Spaces'  options.
+
+
+### Bug Fixes
+
+* Data Source: After opening a Note or Dashboard, importing an EDF file didn't work.
+* Data Source: Database: Improved an error message to only show relevant information.
+* Data Source: Database: When updating or re-importing an existing database data source, column data types were updated unexpectedly where they should keep the original data types.
+* Data Source: Google BigQuery: When publishing data, chart, analytics, note, or dashboard that uses Google BigQuery as a data source to the Server, the scheduled job failed with the 'Use Standard SQL' error.
+* Data Source: Spin disappeared in the middle of opening the Data Connection dialog from the project header menu.
+* Improved error messages about missing local data files (e.g., CSV, Excel, etc.). This situation typically happens after importing an EDF or DF file with local data files exported from another machine.
+* Data Source: When importing an Excel file, specifying column data as Date didn't work and it's imported as a POSIXct column.
+
+
+* Data Wrangling: After having an error on a step, moving to another data frame or branch popped up an error with the report dialog.
+* Data Wrangling: Filter: Added the "Slice(Select Rows)" option under the filter column menu.
+* Data Wrangling: Join: After restarting the App, the Join target columns were not populated on the Join dialog.
+* Data Wrangling: On a Japanese Windows PC, converting data type with the 'Year / Month' option converted the date as January (1) where it should be November (11).
+* Data Wrangling: The rename dialog sometimes added hidden backspace characters to column names.
+* Data Wrangling: When exporting data to Google Sheets, it failed if the sheet name contained special characters.
+* Data Wrangling: When opening a dashboard, the data frame list on the main window didn't highlight the related data frames.
+* Data Wrangling: When opening a data frame rename/comment dialog, the dialog was displayed in the far-right end position.
+* Data Wrangling: After opening the Window Calculation UI from a column menu, setting a new column name didn't work.
+* Data Wrangling: When opening the Window Calculation UI from a character column menu,  it didn't set the column as a group column.
+* Data Wrangling: Window Calculation: It showed the incorrect label 'Difference From (%)' for a Date/POSIXct column where it should be 'Difference From'.
+* Data Wrangling: ceiling/floor functions now have digits argument to specify at which digit the number should be ceiled/floored.
+
+
+* サマリビュー: Numeric（数値)型の列の値の桁数が大きいときに"Failed to get information."というエラーが表示される。
+* サマリビュー: 相関モードとチャートビューの移動に時間がかかる。
+
+
+* Chart: Bubble: The list of values in the Color & Group Setting dialog didn't match with the values in the chart legend if you used the Repeat By and the "None" Grouping option.
+* Chart: Bubble: The reference line didn't show properly if you assigned an aggregation function such as "Sum" to the Color and selected the "Color By" option for the "Group By" option in the Reference Line dialog.
+* Chart: Bubble: Sorting didn't work if you assigned a numeric column to Color.
+* Chart: Bar: Sorting didn't work if you assigned the "Y-axis values" to Color.
+* Chart: The default color palette should be a gradient color if you assign a factor column to Color.
+* Chart: Chart Table: Could not move a column to the very top of the column list by drag and drop.
+* Chart: If you used the same name for the display name for multiple items in the Color & Group Setting dialog to reduce the number of unique values, the color assignment didn't match between the dialog and the chart.
+* Chart: It showed "3 Values are highlighted" in the Highlight info green text even though there were only 2 items highlighted in the Color & Group Setting dialog.
+* Chart: The Format Column dialog shouldn't disappear if you click outside of the dialog in Pivot Table and Summarize Table.
+* Chart: The "Export Chart Data as CSV" failed right after running a preview of a Note or Dashboard.
+* Chart: If you assigned a gradient color palette for the Logical condition in the Color & Group Setting dialog, the color assignment didn't match between the dialog and chart legend.
+* Chart: An error dialog showed up if you switched the column from the "Y-Axis Values" to a regular column.
+* Chart: The Logical condition didn't follow the column change if you created a Logical condition using the "Y-Axis Values" and changed the column assignment for the Y-Axis.
+* Chart: Invalid columns and operators showed up in the Logical condition setting dialog.
+* Chart: Pie/Ring: Labels for values less than 5% were not shown on the plot area. Now you can configure the threshold from the chart property dialog.
+* Chart: Axis labels became ',' if you assigned a Date column to X-Axis and unchecked the '数字の短縮化' option for X-Axis.
+* Chart: Labels for the "Others" created by the Others Group setting were different between the Color & Group Setting dialog and chart on Japanese UI.
+* Chart: Map: The chart control area became blank if you chose the 'None' option for Grouping Type in the Color & Group Setting dialog.
+* Chart: The color order should start from the left to the right in a Stacked, Horizontal Bar chart.
+* Chart: Scatter: Adding a reference line to the X-Axis in a Scatter chart failed if you assigned columns for X-Axis, Y-Axis, Color, Size, Label, Repeat By and it used Trend Line.
+* Chart: Scatter: The "Assertion Failed" error showed up if you assigned a difftime column to X-axis and selected the "Show Detail" option from a Pop-up.
+* Chart: The Sorting should be turned on/off by a checkbox, not from the dropdown.
+* Chart: Bar: You should be able to select the "Stacked" Bar Chart Type even if you change the Marker to "Line" or "Circle".
+
+
+* Analytics: Distance: The default color palette was one that was more appropriate for data with both positive and negative values, which was not the best choice to express distances. We switched the default to a more appropriate yellow-to-red gradation.
+* Analytics: K-means / PCA: An error is raised when the input data frame has columns named PC1, PC2, etc. We improved the error message so that it is clear that it should be avoided by renaming those columns.
+* Analytics: The chart legend setting should be hidden for the Survival Curve chart in the Cox Regression and Survival Forest analytics.
+* Analytics: Distance: If any of the input columns started with V, an error was raised.
+* Analytics: Decision Tree: The order of the Prediction chart facets did not correspond with the order of variable importances.
+* Analytics: Chi-Square Test: Association Coefficient (Cramer's V) is now calculated and shown in the Summary table.
+
+
+* ノート: ノート: テーブルやナンバーチャートの下に不要なスペースが表示される。
+* ノート: ワード文書にエクスポートしたときの画像の解像度が高くなりました。
+
+
+* ダッシュボード: テーブルの高さが短いとき、全画面表示がうまく動かない。
+* ダッシュボード: 編集画面でチャートにマウスのカーソルを合わせると、設定した「表示名」ではなく、システム内部で利用している名称が表示される。
+
+
+* パブリッシュ: チームとしてパブリッシュしたアナリティクスをやめて、再パブリッシュしたときに発行されるURLが変わる。
+
+
+* パラメーター: フィルター内に設定したパラメーターで正規表現のオプションを利用できるようになりました。
+* パラメーター: スライダーのパラメータを設定したときに、最小値/最大値の範囲外であってもデフォルトの値が0になっていました。
+* パラメーター: データ、チャート、アナリティクス、ノート、ダッシュボードをパブリッシュしたときに、設定したパラメーターを確認できないと、パラメーターが利用されている問題がある箇所を確認できるようになりました。
+
+* エクスポート: マルチバイト文字（日本語）のダッシュボードをHTMLとしてエクスポートするとエラーが表示される。
+
+* 一般: Windows/Macレベルのプロキシの設定を無視して、コラボレーション・サーバー に直接接続できるオプションをプロキシの設定メニューに追加しました。
+* 一般: プロキシ・サーバーに接続できないときのエラーメッセージを改善しました。
+* 一般: 特定の条件下で"Rserve"プロセスがクラッシュして、"unable to initialize the JIT"というエラーメッセージが表示される。
+
+
 ## 6.9.4
 
 2022年3月14日リリース。
