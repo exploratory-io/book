@@ -145,6 +145,7 @@
    * [Unnest](wrangling/unnest.md)
    * [Separate List Items into Columns (Unnest Wider)](wrangling/unnest_wider.md)
    * [Separate List Items into Rows (Unnest Longer)](wrangling/unnest_longer.md)
+   * [Separate Address (Japan)](wrangling/separate-japanese-address.md)
    * [Hoist](wrangling/hoist.md)
    * [Remove Empty Rows](wrangling/remove_empty_rows.md)
    * [Remove Empty Columns](wrangling/remove_empty_cols.md)

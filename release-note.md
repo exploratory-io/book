@@ -1,5 +1,292 @@
 # Release Note
 
+
+## 6.9.5
+
+Released on 4/5/2022.
+
+### Enhancements
+
+* Data Source: CSV File Import: Supported At (@), Pipe (|), and Tab (\t) as separators.
+
+
+* Data Wrangling: When exporting data to Excel, now you can select the date format.
+* Data Wrangling: Supported timezone for Date/Time related filtering operations.
+* Data Wrangling: Clean Column Name: Supported 'Remove Spaces' and 'Trim Spaces'  options.
+
+
+* Chart: You can now use the checkbox to turn on or off for the Sorting.
+* Chart: Bar: You can now select the "Stacked" Bar Chart Type even if you change the Marker to "Line" or "Circle".
+
+
+* Analytics: Chi-Square Test: Now we show the Association Coefficient (Cramer's V) in the Summary table.
+
+
+* Note: We increased the resolution for the exported Word Document.
+
+
+* Parameter: You can now use the regular expression for the filters with parameters.
+
+
+* General: Now you can choose to ignore the Windows/Mac level proxy setting and directly connect to the Collaboration Server.
+
+
+### Bug Fixes
+
+* Data Source: After opening a Note or Dashboard, 'drag and drop' for importing an EDF file didn't work.
+* Data Source: Database: Improved an error message to only show relevant information.
+* Data Source: Database: When updating or re-importing an existing database data source, column data types were updated unexpectedly where they should keep the original data types.
+* Data Source: Google BigQuery: Scheduling data or insights that use Google BigQuery data at the server failed with the 'Use Standard SQL' error.
+* Improved error messages about missing local data files (e.g., CSV, Excel, etc.). This situation typically happens after importing an EDF or DF file with local data files exported from another machine.
+* Data Source: Excel: Even when setting the column data type as Date in the data import dialog it was still imported as POSIXct.
+
+
+* Data Wrangling: When moving to another data frame or the branch data frame after having an error with the data wrangling step it showed an error with the report dialog.
+* Data Wrangling: Filter: Added the "Slice (Select Rows)" option under the filter column menu.
+* Data Wrangling: Join: After restarting the App, the Join target columns were not populated on the Join dialog.
+* Data Wrangling: On a Japanese Windows PC, converting data type with the 'Year / Month' option converted the date as January (1) where it should be November (11).
+* Data Wrangling: Rename: The rename dialog sometimes added hidden backspace characters to column names.
+* Data Wrangling: When exporting data to Google Sheets, it failed if the sheet name contained special characters.
+* Data Wrangling: Window Calculation: It showed the incorrect label 'Difference From (%)' for a Date/POSIXct column where it should be 'Difference From'.
+* Data Wrangling: ceiling/floor functions now have digits argument to specify at which digit the number should be ceiled/floored.
+
+
+* Summary View: Correlation mode: The "Failed to get information." error showed up if you had a numeric column with very large numbers.
+* Summary View: The transition between the Summary View Correlation mode and Chart was very slow.
+
+
+* Chart: Bubble: The list of values in the Color & Group Setting dialog didn't match with the values in the chart legend if you used the Repeat By and the "None" Grouping option.
+* Chart: Bubble: The reference line didn't show properly if you assigned an aggregation function such as "Sum" to the Color and selected the "Color By" option for the "Group By" option in the Reference Line dialog.
+* Chart: Bubble: Sorting didn't work if you assigned a numeric column to Color.
+* Chart: Bar: Sorting didn't work if you assigned the "Y-axis values" to Color.
+* Chart: The default color palette should be a gradient color if you assign a factor column to Color.
+* Chart: Chart Table: Could not move a column to the very top of the column list by drag and drop.
+* Chart: If you used the same name for the display name for multiple items in the Color & Group Setting dialog to reduce the number of unique values, the color assignment didn't match between the dialog and the chart.
+* Chart: It showed "3 Values are highlighted" in the Highlight info green text even though there were only 2 items highlighted in the Color & Group Setting dialog.
+* Chart: The Format Column dialog shouldn't disappear if you click outside of the dialog in Pivot Table and Summarize Table.
+* Chart: The "Export Chart Data as CSV" failed right after running a preview of a Note or Dashboard.
+* Chart: If you assigned a gradient color palette for the Logical condition in the Color & Group Setting dialog, the color assignment didn't match between the dialog and chart legend.
+* Chart: An error dialog showed up if you switched the column from the "Y-Axis Values" to a regular column.
+* Chart: The Logical condition didn't follow the column change if you created a Logical condition using the "Y-Axis Values" and changed the column assignment for the Y-Axis.
+* Chart: Invalid columns and operators showed up in the Logical condition setting dialog.
+* Chart: Pie/Ring: Labels for values less than 5% were not shown on the plot area. Now you can configure the threshold from the chart property dialog.
+* Chart: Axis labels became ',' if you assigned a Date column to X-Axis and unchecked the '数字の短縮化' option for X-Axis.
+* Chart: Labels for the "Others" created by the Others Group setting were different between the Color & Group Setting dialog and chart on Japanese UI.
+* Chart: Map: The chart control area became blank if you chose the 'None' option for Grouping Type in the Color & Group Setting dialog.
+* Chart: The color order should start from the left to the right in the Horizontal Stacked Bar chart.
+* Chart: Scatter: Adding a reference line to the X-Axis in a Scatter chart failed if you assigned columns for X-Axis, Y-Axis, Color, Size, Label, Repeat By and it used Trend Line.
+* Chart: Scatter: The "Assertion Failed" error showed up if you assigned a column with the 'difftime' type to X-axis and selected the "Show Detail" option from a Pop-up.
+
+
+* Analytics: K-means / PCA: An error is raised when the input data frame has columns named PC1, PC2, etc. We improved the error message so that it is clear that it should be avoided by renaming those columns.
+* Analytics: Distance: If any of the input columns started with V, an error was raised.
+* Analytics: Decision Tree: The order of the Prediction chart facets did not correspond with the order of variable importances.
+
+
+
+* Note: There was an unnecessary space below the Table and Number charts in a Note.
+* Dashboard: The table inside Dashboard was not expanded properly when it was in a shorter height row.
+* Dashboard: When opening a dashboard, the data frame list on the main window didn't highlight the related data frames.
+
+
+* Publish: Unpublishing and republishing a team-shared Analytics changed the URL.
+
+
+
+* Parameter: When defining a slider parameter, the default value was auto-filled with 0 even if it was outside of the min/max range.
+* Parameter: It now shows where the missing parameter is used when there were missing parameter references at publishing data or insights.  
+
+
+* Export: Exporting a Dashboard with a multibyte name as HTML raised an error.
+* General: Improved error messages about not being able to connect to the proxy server.
+* General: The Rserve process crashed under certain conditions and popped up an error dialog with the message "unable to initialize the JIT".
+
+
+
+
+## 6.9.4
+
+Released on 3/14/2022.
+
+### Enhancements
+
+* Data Wrangling: Window Calculation: When clicking the 'Edit' icon for a value column, the "Set Column Name" checkbox should be checked by default.
+* Chart: If you change the Marker to the 'Circle' or 'Line' on a Bar chart, the Bar Chart Type should become the "Side by Side" automatically.
+
+
+### Bug Fixes
+
+* Chart: Pie Chart: Label texts were not displayed when those are less than 5%.
+* Chart: The axis labels became ',' if you assigned a Date column to the X-axis of the Bar or Line chart and unchecked the 'Shorten Numbers' checkbox for the X-axis.
+* Note/Dashboard: Chart and Analytics of the Branch data frames were not displayed in the Chart / Analytics Selection dialog.
+* Note: Unnecessary extra space was added below the Table/Number in a Note.
+
+
+## 6.9.3
+
+Released on 3/10/2022.
+
+### Bug Fixes
+
+* Data Source: Raw Line: After importing a text file, clicking the "File" button then selecting a different text file switched it to a CSV data source.
+
+
+* Data Wrangling: After Renaming the existing Data Frame to Japanese for Join, Merge, etc, reference to these data frames break.
+* Data Wrangling: Export to Google Sheets: The sheet LOV did not show a list of Google Sheets when trying to override the existing one.
+* Data Wrangling: Filter: Cannot enter from and to values for the between operator.
+* Data Wrangling: Pivot: Could not select Date/POSIXct columns.
+* Data Wrangling: Window Calculation: Corrected sort order for Row Number.
+* Data Wrangling: Window Calculation: Supported Window Align argument for Moving Calculation.
+* Data Wrangling: Window Calculation: Changing the preview number of rows didn't work when the selected option was more than 200 rows.
+* Data Wrangling: Window Calculation: When Date or POSIXct columns are assigned to group columns,  original columns were overridden.
+
+
+* Chart: Color Dialog: The 'x' button at the search input field doesn't work.
+* Chart: Density Plot curves are incorrect if the data contains inf/-inf values.
+* Chart: If you have multiple columns at Y-Axis and set the highlight color, the highlighted color doesn't come at the beginning in the chart legend and bars.
+* Chart: If you move the order of columns at Y-axis by drag and drop, the highlight target column changes.
+* Chart: Logical condition target column should be always in sync with the column selected at the Color.
+* Chart: Map: Colors used in the thumbnail don't match the ones in the Map on Mac.
+
+
+* Note: The full-screen toggle button on each chart disappears if you change the number of columns to show in the chart toolbar.
+
+
+* Export: Exporting a project that was originally imported via an EPF file with data files with multibyte names hangs.
+
+
+
+## 6.9.2
+
+Released on 3/4/2022.
+
+### Bug Fixes
+
+* Summary View: Calculation of the Summary View was slower than 6.8 with recently released 6.9.0.
+* Data Wrangling: Incorrect input field validation error was raised in the Replace Text dialog.
+* Chart: Line: When the fill range was specified for Y-Axis of logical type, the range was not displayed.
+
+
+## 6.9.1
+
+Released on 3/3/2022.
+
+### Bug Fixes
+
+* Data Source: When clicking the Cancel button on the Update Data Source Step, data frame selection was removed.
+* Chart: Window Calculation: The default Group By target should be the smallest group all the time unless you change it.
+
+
+## 6.9.0
+
+Released on 3/3/2022.
+
+
+### Breaking Changes
+
+* Parameter: Existing Filter Step with parameters will be migrated into a Custom R Step.
+
+
+
+### Enhancements
+
+
+* Data Wrangling: Now data frames with a name with multibyte characters are supported.
+* Data Wrangling: Filter: Supported ‘Regular Expression’ mode.
+* Data Wrangling: Introducing the Window Calculation UI.
+* Data Wrangling: last_date function to get the last date of the period (week, month, quarter, or year) is added.
+* Data Wrangling: New aggregate functions to use with Summarize Step, count_rows, count_unique, and count_unique_if are added.
+* Data Wrangling: Now you can specify the digit to round up (ceiling) or down (floor) numbers.
+* Data Wrangling: Summarize Group: Supported UI for SUM_IF series.
+* Data Wrangling: Supported conversions for Zenkaku / Hankaku, Japanese Imperial Year / Western Year,  Japanese Calendar / Western Calendar, Kansuji / Number, and Japanese Prefecture / Code.
+* Data Wrangling: Supported extracting Japanese holiday.
+* Data Wrangling: Supported UI for separating Japanese address.
+* Data Wrangling: Text Wrangling: Added the option to convert Hankaku including Alphanumeric to Zenkaku.
+* Data Wrangling: ts_lag and ts_diff functions are added for lag and diff of time series data.
+
+
+* Chart: Introducing the "Color & Group" dialog.
+* Chart: Now you can create a logical color condition against the aggregated values on Y-Axis in the Bar chart.
+* Chart: Now you can select a City-level Japan map in the Map - Standard map type.
+* Chart: Now you can set the "Group By" option in the "Cumulative", "Difference From", "% Difference From" and "Moving" Window Calculations.
+* Chart: Now you can use "Difference from Period Ago" and "% Difference from Period Ago" Time-Series Window Calculations.
+
+
+* Analytics: Chi-Square: Now we show Cramer’s V on the Summary table.
+* Analytics: Correlation: The order of the variables on the heatmap is optimized so that it is easier to discover sets of highly correlated variables.
+* Analytics: Decision Tree: Supported permutation importance in addition to the existing variable importance algorithms.
+* Analytics: T-Test, Wilcoxon Test: Summary table and Difference error bar chart now show which category is considered to be the base.
+* Analytics: Topic Model: The threshold of topic probability for highlighting the words in the Document tab is now configurable.
+
+
+* Dashboard: Now you can view a chart in the full-screen mode.
+* Note: Now you can view a chart in the full-screen mode.
+
+
+* Parameter: New 'Range' type parameter is supported.
+* Parameter: Supported Range Slider for 'Between' operator for numeric columns.
+* Publish: Now you can choose whether or not to notify the publishing event to the team members when you publish or republish your insight.
+
+
+
+
+### Bug Fixes
+
+
+* Data Source: File Import: Now the Update button only becomes clickable after previewing the data so that it makes sure changes made to the data source are valid.
+* Data Source: Google Analytics: Could not open a data source created with an older version of Exploratory.
+* Data Source: Google BigQuery: After performing OAuth, the Google BigQuery Setup dialog showed up even if a Billing Project was already selected.
+* Data Source: Google BigQuery: Improved the error message for the page size error.
+* Data Source: SQL Server: On Mac, improved the error message for an OpenSSL library loading known issue.
+* Data Source: When trying to update a data frame that merges multiple Excel files, it didn't update the data frame if you select a single Excel file for the update.
+
+
+* Summary View: Correlation: Moved the target column to the end when it's sorted by correlation.
+* Summary View: Spin icon didn't show up for a while after switching the number of columns to show.
+
+
+* Data Wrangling: Column Selection dialog: To prevent a column selection step becomes empty unexpectedly,  now the Run button becomes clickable only when you select columns.
+* Data Wrangling: Data frames with a name that started with '-' could not be renamed or removed.
+* Data Wrangling: Error from the step before a cached step after restarting Exploratory.
+* Data Wrangling: Filter Dialog collapsed while setting up a between function for a Date column.
+* Data Wrangling: Generate R Script menu did not work when an associated connection does not exist.
+* Data Wrangling: Improved the display name of ”AND" and "OR" logical conditions of the filter.
+* Data Wrangling: Improved the performance for renaming a data frame.
+* Data Wrangling: On the Column Selection dialog, when a column has a long name it was displayed across multiple lines.
+* Data Wrangling: On Windows, columns with a name containing emojis caused issues such as not being able to select on column selection dialogs.
+* Data Wrangling: Unsaved changes on step dialog were used for recalculation of the step.
+* Data Wrangling: When selecting a data frame, an assertion error was raised for some occasions.
+
+
+* Chart: Exporting Summarize Table data to a CSV file failed due to the "invalid multibyte string" error if the data contained Japanese characters.
+* Chart: Improved the Hover Popup range information text such as Standard Deviation to show '±' prefix.
+* Chart: Increased the unique value validation threshold to 100 for Color.
+* Chart: Map - Extension: The area type name is not translated on the button even though the names in the dropdown are translated.
+* Chart: Map - Standard: Hover Popup content is inconsistent between Area and Circle modes.
+* Chart: Pivot Table failed to render due to the "character string is not in a standard unambiguous format" error if you had NA values in Row and applied the date formatting.
+
+
+* Analytics: Binary Classification: ROC tabs raised an error if the name of the target variable column ends with "...<number>".
+* Analytics: Topic Model: Indexes of topics were sorted alphabetically rather than numerically.
+
+
+* Dashboard: When a parameter was executed and there was a missing data connection, it didn't show the dialog from where you can select or create a connection.
+
+
+* Parameter: After deleting a parameter, "Add New.." was displayed as a token label and no error message was shown.
+* Parameter: False alarm validation at the creation of range parameter.
+* Parameter: Removing parameters caused an error at publishing insights.
+
+
+* General: Command + R Key shortcut key was overtaken even when Window focus was off.
+* General: Corrected the Dialog Title of the Repository Directory picker.
+* General: Table View: Made the column width shorter when the value in the column was long.
+* Project: After renaming a project, duplicated project names were shown on the Project List.
+* Export: “Malicious entry” error could happen at importing a project (.epf file) that was exported from a project that was originally imported via another .epf file when the project contains local data files with a name with multibyte characters.
+
+
+
+
 ## 6.8.6
 
 Released on 1/31/2022.

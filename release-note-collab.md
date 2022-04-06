@@ -1,5 +1,43 @@
 # Release Note
 
+## 6.9.5.5
+
+Released on 4/5/2022.
+
+### Download
+
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.9.5.5.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.9.5.5.tar.gz)
+
+### Enhancements
+
+* Parameter: Supported the Range Slider for numeric parameters.
+* Insight: Insight Search page is now translated to Japanese.
+* Schedule: You can now configure all the properties for Scheduling Runtime in your Account Setting page.
+* Reporting: You can now expand each chart inside Dashboards/Notes and show it in a full window mode.
+* Team: You can now notify team members when you publish Data, Insights, and Projects. 
+
+
+### Bug Fixes
+
+
+* Insight: Data View: Numeric column did not show horizontal blue bars.
+* Insight: Data View: On iPhone or other smaller screen size devices, the row number dropdown and the search input box were overlapping.
+* Insight: Summary View: Inf and -Inf values were shown as "NA" in a numeric column.
+* Insight: Summary View: NA values were not properly counted in Date columns.
+* Insight: A "Page Not Found" error showed up if you clicked the "My Insight" menu on iPhone or other smaller screen devices.
+
+
+* Parameter: A "Cannot read property '0' of undefined" error showed up if you changed parameter values in the Word Cloud.
+* Parameter: An embedded R code referencing the parameter in a Note or Dashboard wasn't updated even if you changed the parameter values.
+* Parameter: Improved error message about missing data frame column necessary for a parameter's list-of-value.
+
+
+* Scheduler: For team-shared Dashboard and Note, the schedules were not properly canceled when they were unpublished.
+* Scheduler: Improved OAuth error handling for Salesforce and Twitter.
+* Scheduler: BigQuery: Data or insights that were created without explicitly specifying the Standard SQL option in the Connection dialog was run without the Standard SQL option on the server. In such cases, we changed the default behavior to be with the Standard SQL option.
+
+
 ## 6.8.4.2
 
 Released on 1/20/2022.

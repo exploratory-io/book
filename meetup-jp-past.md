@@ -1,3 +1,56 @@
+# #22 - 2022年2月18日(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/yo2m5j9ecens1y2/Exploratory%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E5%8B%89%E5%BC%B7%E4%BC%9A_v22.002.jpeg?raw=1" width="100%" />
+
+
+## 開催要項
+
+* 日時: 2022年 2月 18日 (金) 12:00〜14:00
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.9のご紹介（Exploratory CEO 西田勘一郎）
+* 弱小データアナリストが成果を出せるようになるまで（TIS株式会社 田中 翔也様）
+* ExploratoryでデータをExploreする 〜研究力の可視化を目指して〜（滋賀医科大学 石井 真理子様）
+* 女性活躍推進のための人員構成比のシミュレーション（日鉄ソリューションズ株式会社 赤塚 友里様）
+* Exploratoryによる作業内容の見える化・文章化・共有化（山形大学 藤原 宏司様）
+
+## Exploratory 西田勘一郎
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/HmuKFVz6tpI?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+## TIS株式会社 田中 翔也様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/s8yzYkDdsbE?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## 滋賀医科大学 石井 真理子様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/Lja40wYFH_k?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## 日鉄ソリューションズ株式会社 赤塚 友里様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/saOOZSL_xl4?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+## 山形大学 藤原 宏司様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/DvWjl5dtCoo?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+---
+
 # #21 - 2021年11月12日(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/1huyrvo6ho9k97d/Exploratory%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E5%8B%89%E5%BC%B7%E4%BC%9A_v21_cover.001.jpeg?raw=1" width="100%" />
