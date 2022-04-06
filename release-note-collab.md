@@ -14,6 +14,9 @@ Released on 4/5/2022.
 * Parameter: Supported the Range Slider for numeric parameters.
 * Insight: Insight Search page is now translated to Japanese.
 * Schedule: You can now configure all the properties for Scheduling Runtime in your Account Setting page.
+* Reporting: You can now expand each chart inside Dashboards/Notes and show it in a full window mode.
+* Team: You can now notify team members when you publish Data, Insights, and Projects. 
+
 
 ### Bug Fixes
 
