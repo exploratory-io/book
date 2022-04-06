@@ -1,6 +1,3 @@
-# Manage Schedule
-
-
 
 
 
