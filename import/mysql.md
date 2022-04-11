@@ -61,7 +61,7 @@ Here's a [blog post](https://exploratory.io/note/kanaugust/An-Introduction-to-Pa
 
 ![](images/aws-security-group.png)
 
-If you are using Amazon RDS as your MySQL database, and encounter a database connection error, please go to AWS console and make sure you added your client PC's IP address to your DB Security Group associated with the MySQL database instance.
+If you are using Amazon RDS as your MySQL database, and encounter a database connection error, please go to AWS console and make sure you added your client PC's IP address to an inbound rule for your DB Security Group associated with the MySQL database instance.
 
 ## 6. Number of rows
 
