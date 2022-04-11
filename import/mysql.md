@@ -1,4 +1,4 @@
-# MySQL Data Import
+# MariaDB (MySQL) Data Import
 
 You can quickly import data from your MySQL Database into Exploratory.
 
@@ -8,7 +8,7 @@ Create a connection following [this instruction](https://docs.exploratory.io/dat
 
 * Whether the connection is SSL or not is automatically detected.
 
-## 2. Open MySQL Import dialog
+## 2. Open MariaDB (MySQL) Import dialog
 
 Click '+' button next to 'Data Frames' and select 'Import Database Data'.
 

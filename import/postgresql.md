@@ -71,7 +71,13 @@ This will show you Actual Number of Rows like below.
 
 ![](images/actual_num_of_rows.png)
 
-# 6. Known Issues for geometry column.
+## 6. AWS Security Group Setup (Only for Amazon RDS)
+
+![](images/aws-security-group.png)
+
+If you are using Amazon RDS as your MySQL database, and encounter a database connection error, please go to AWS console and make sure you added your client PC's IP address to an inbound rule for your DB Security Group associated with the MySQL database instance.
+
+# 7. Known Issues for geometry column.
 
 When you try to import data from PostgreSQL instance, you might get the below error if your SQL query contains columns whose data type is geometry which is not supported in Exploratory.
 
