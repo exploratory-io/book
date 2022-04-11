@@ -93,4 +93,4 @@ SELECT *
 
 ## 8. Rとdplyrを使ったAmazon Redshiftの探索的データ分析
 
-ブログ記事R & dplyrによるAmazon Redshiftの探索的データ分析への[リンクはこちらです]((https://blog.exploratory.io/exploratory-data-analysis-for-amazon-redshift-with-r-dplyr-9a14441020eb))。
+ブログ記事R & dplyrによるAmazon Redshiftの探索的データ分析への[リンクはこちらです](https://blog.exploratory.io/exploratory-data-analysis-for-amazon-redshift-with-r-dplyr-9a14441020eb)。
