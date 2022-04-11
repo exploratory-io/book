@@ -68,7 +68,7 @@
       * [Amazon Athena](import/athena.md)
       * [Amazon Aurora](import/aurora.md)
       * [Amazon Redshift](import/redshift.md)
-      * [Amazon Redshift (日本語)](import/redshift.md)
+      * [Amazon Redshift (日本語)](import/redshift_ja.md)
       * [Google BigQuery](import/google-bigquery.md)
       * [HP Vertica](import/hp-vertica.md)
       * [MariaDB / MySQL DB](import/mysql.md)

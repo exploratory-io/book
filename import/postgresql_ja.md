@@ -1,4 +1,4 @@
-# PostgreSQLデータベースデータインポート
+# PostgreSQLデータベースからデータをインポートする
 
 PostgreSQLデータベースからExploratoryに素早くデータをインポートすることができます。
 

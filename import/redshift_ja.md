@@ -1,4 +1,4 @@
-# Amazon Redshift データベースデータインポート
+# Amazon Redshift データベースからデータをインポートする
 
 Amazon Redshift DatabaseからExploratoryに素早くデータをインポートすることができます。
 
