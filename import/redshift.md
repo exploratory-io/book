@@ -70,7 +70,7 @@ Here's a [blog post](https://exploratory.io/note/kanaugust/An-Introduction-to-Pa
 
 ![](images/redshift4.png)
 
-If you encounter a database connection error, please go to AWS console and make sure you added your client PC's IP address to your Security Group (both Inbound and Outbound) associated with the Redshift cluster.
+If you encounter a database connection error, please go to AWS console and make sure you added your client PC's IP address to your Security Group (Inbound) associated with the Redshift cluster.
 
 ## 7. Number of rows
 
