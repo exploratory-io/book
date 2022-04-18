@@ -29,7 +29,7 @@ Released on 4/18/2022.
 
 
 * General: Rserve was unstable under memory pressure in 6.9.5 for Windows.
-* General: The loading icon kept showing at the login screen if you set CmdSpec env var to "powershell.exe".
+* General: When starting Exploratory Desktop, the login process did not end with the error "The term 'dpapibridge' is not recognized as the name of a cmdlet..." in the log file.
 
 
 
