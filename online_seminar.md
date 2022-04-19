@@ -1,9 +1,9 @@
-# Seminar #65 - Open Data - Working with FRED Data
+# Seminar #65 - Working with FRB Economic Data (FRED)
 ## Date/Time: 4/20/2022, Noon ET, 9AM PT, 5PM GMT, 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-America's central bank FRB (Federal Reserve Bank) has a website called FRED (Federal Reserve Economic Data) which hosts more than 800,000 US and international economic time series data such as inflation, oil price, GDP, interest rates, etc. 
+America's central bank FRB (Federal Reserve Bank) has a website called FRED (Federal Reserve Economic Data) which hosts more than 800,000 US and international economic time series data such as inflation, oil price, GDP, interest rates, etc.
 
 And, you can easily get the data in Exploratory by using one of the supported data sources 'FRED'.  
 
@@ -17,7 +17,7 @@ Agenda:
 - Filter with Date / Time
 - Merge Multiple Data Sets
 - Window Calculation
-
+- Add Colors to Metrics
 
 ----
 
