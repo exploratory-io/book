@@ -15,6 +15,7 @@ Released on 4/18/2022.
 * Data Wrangling: Added description for how the "Remove Duplicated Rows" operation behaves.
 * Data Wrangling: as_Date function was not highlighted in the expression editor.
 * Data Wrangling: Drop NA dialog did not close after selecting a column.
+* Data Wrangling: Filter: Unnecessary Time Zone selector is shown for the Date Column filter.
 * Data Wrangling: When selecting the "Remove Rows with All NA Columns" from the Column Menu, it incorrectly removed the rows if any of the specified columns contains NA.
 
 
