@@ -1,5 +1,38 @@
 # Release Note
 
+## 6.9.6
+
+Released on 4/18/2022.
+
+
+### Bug Fixes
+
+* Data Source: Added Japanese Help Links for Redshift, MariaDB / MySQL, and PostgreSQL.
+* Data Source: Google BigQuery: When leaving the Page Size parameter input field blank on the import dialog, it failed with assert_that: missing values present in the assertion message.
+* Data Source: Improved the error message for 'import & merge' Excel files that do not have the same sheet name.
+
+
+* Data Wrangling: Added description for how the "Remove Duplicated Rows" operation behaves.
+* Data Wrangling: as_Date function was not highlighted in the expression editor.
+* Data Wrangling: Drop NA dialog did not close after selecting a column.
+* Data Wrangling: When selecting the "Remove Rows with All NA Columns" from the Column Menu, it incorrectly removed the rows if any of the specified columns contains NA.
+
+
+* Chart: Bubble: An error dialog showed up If you set the POSIXct column with "Extract Hour" on Y-axis and enabled the sorting.
+* Chart: The color assignment was incorrect if you set both display name and custom color to the categorized numeric values.
+* Chart: Color change didn't take effect if you set custom display names for multiple Y-axis columns.
+* Chart: It should use the "Sum" for the default total aggregation function for the number of TRUE/FALSE/NA/Not NA in the Pivot Table and Summarize Table.
+* Chart: Map - Standard: The "Pacific Ocean Centered" map didn't center the Pacific Ocean with the ‘Circle’ type.
+
+
+* Analytics: When creating a Time Series Anomaly detection as a step, the Missing Value Handling parameter value could not be changed.
+
+
+* General: Rserve was unstable under memory pressure in 6.9.5 for Windows.
+* General: When starting Exploratory Desktop, the login process did not end with the error "The term 'dpapibridge' is not recognized as the name of a cmdlet..." in the log file.
+
+
+
 
 ## 6.9.5
 
