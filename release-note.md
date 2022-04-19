@@ -2,7 +2,7 @@
 
 ## 6.9.6
 
-Released on 4/18/2022.
+Released on 4/19/2022.
 
 
 ### Bug Fixes
