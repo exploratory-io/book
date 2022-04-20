@@ -1,32 +1,20 @@
-# Seminar #65 - Working with FRB Economic Data (FRED)
+# Seminar #66 - Regular Expressions
 ## Date/Time: 4/20/2022, Noon ET, 9AM PT, 5PM GMT, 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-America's central bank FRB (Federal Reserve Bank) has a website called FRED (Federal Reserve Economic Data) which hosts more than 800,000 US and international economic time series data such as inflation, oil price, GDP, interest rates, etc.
+Regular Expression is a powerful tool that everyone who needs to clean and transform data should be able to use. It is a very flexible way to match any letters in data that you want to remove, replace, or extract.
 
-And, you can easily get the data in Exploratory by using one of the supported data sources 'FRED'.  
+In Exploratory, most of the text data cleaning problems can be addressed by clicking one of the menu options inside the Text Data Wrangling UI. But in some cases, you want to use Regular Expression to match with some tricky letters that are buried in data to clean them up.
 
-In this seminar, Kan will show you how you can start, get the data from FRED, and work with the data to effectively visualize and analyze the data with a few data wrangling and visualization tips
-
-Agenda:
-
-- Initial Setup
-- Download Data with UI
-- Bulk Download Data with R Script
-- Filter with Date / Time
-- Merge Multiple Data Sets
-- Window Calculation
-- Add Colors to Metrics
-
-----
-
-# Seminar #66 - Regular Expression
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+In this seminar, Kan will introduce the basics of Regular Expressions and show you how you can use them to flexibly clean up your text data with examples. 
 
 Agenda:
+
+- Introduction to Regular Expression
+- Commonly Used Types of Regular Expressions
+- Example: Clean up Data with Regular Expression
+
 
 
 ----
