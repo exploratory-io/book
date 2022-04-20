@@ -11,19 +11,17 @@ Released on 4/19/2022.
 
 ### Enhancements
 
-* Schedule: Google Sheets Writeback: Supported a pulldown list to switch between My Drive, Shared With Me, and Team Drives when selecting an existing sheet.
-* Insight: Notification email can now be delivered when projects or insights that you subscribe to are updated by republishing.
+* Schedule: Google Sheets Export: Added a dropdown list to select between My Drive, Shared With Me, and Team Drives so that you can find the existing sheets easily.
+* Insight: Notification emails are now sent when your subscribed projects or insights are republished.
 
 ### Bug Fixes
 
-* General: The version of the Exploratory Desktop to be downloaded was shown as the version of the Collab Server itself in the page footers.
-* Insight: Downloading a CSV or EDF file of a published chart failed if a slash sign ("/") was used in the chart name.
-* Insight: The language used in the scheduling notification email was sometimes different from the one used in republish notification email. 
-* Parameter: At the first parameter change in parameter sessions, data affected by any of the parameters were unnecessarily recalculated.
-* Parameter: It was hard to find the error detail because the error dialog didn't show up for some types of errors. 
-* Parameter: Parameter session failed to start if a Date parameter whose type was converted from numeric or character was used in the insight.
-* Parameter: Parameter sessions on team-published insights stopped working if the original author's type was changed from Author to Viewer.
-* Schedule: Schedules on team-published insights stopped working if the original author's type was changed from Author to Viewer.
+* General: The version of the Exploratory Desktop to be downloaded was shown as the version of the Collaboration Server itself in the page footers.
+* Insight: Downloading CSV or EDF files for the published charts failed if a slash sign ("/") was used in the chart name.
+* Parameter: At the first parameter change in the interactive sessions, there were unnecessarily recalculations.
+* Parameter: An interactive mode failed to start when there were parameters whose data types were converted from numeric or character.
+* Parameter: An interactive mode stopped working when the insight was published as a team and the original author's type was changed from Author to Viewer.
+* Schedule: Schedules stopped working when the insight was published as a team and the original author's type was changed from Author to Viewer.
 
 
 ## 6.9.5.5
@@ -36,7 +34,7 @@ Released on 4/5/2022.
 * Insight: Insight Search page is now translated to Japanese.
 * Schedule: You can now configure all the properties for Scheduling Runtime in your Account Setting page.
 * Reporting: You can now expand each chart inside Dashboards/Notes and show it in a full window mode.
-* Team: You can now notify team members when you publish Data, Insights, and Projects. 
+* Team: You can now notify team members when you publish Data, Insights, and Projects.
 
 
 ### Bug Fixes
