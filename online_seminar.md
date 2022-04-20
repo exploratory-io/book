@@ -7,7 +7,7 @@ Regular Expression is a powerful tool that everyone who needs to clean and trans
 
 In Exploratory, most of the text data cleaning problems can be addressed by clicking one of the menu options inside the Text Data Wrangling UI. But in some cases, you want to use Regular Expression to match with some tricky letters that are buried in data to clean them up.
 
-In this seminar, Kan will introduce the basics of Regular Expressions and show you how you can use them to flexibly clean up your text data with examples. 
+In this seminar, Kan will introduce the basics of Regular Expressions and show you how you can use them to flexibly clean up your text data with examples.
 
 Agenda:
 
@@ -16,10 +16,9 @@ Agenda:
 - Example: Clean up Data with Regular Expression
 
 
-
 ----
 
-# Seminar #67 - Using Color to Visualize Effectively
+# Seminar #67 - Tidy Data, Wide Data & Long Data
 ## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
@@ -29,7 +28,7 @@ Agenda:
 
 ----
 
-# Seminar #68 - Tidy Data, Wide Data & Long Data
+# Seminar #68 - Using Color to Visualize Effectively
 ## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
