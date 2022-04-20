@@ -1,13 +1,34 @@
 # Release Note
 
-## 6.9.5.5
+Released on 4/19/2022.
 
-Released on 4/5/2022.
+## 6.9.6.1
 
 ### Download
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.9.5.5.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.9.5.5.tar.gz)
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.9.6.1.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.9.6.1.tar.gz)
+
+### Enhancements
+
+* Schedule: Google Sheets Writeback: Supported a pulldown list to switch between My Drive, Shared With Me, and Team Drives when selecting an existing sheet.
+* Insight: Notification email can now be delivered when projects or insights that you subscribe to are updated by republishing.
+
+### Bug Fixes
+
+* General: The version of the Exploratory Desktop to be downloaded was shown as the version of the Collab Server itself in the page footers.
+* Insight: Downloading a CSV or EDF file of a published chart failed if a slash sign ("/") was used in the chart name.
+* Insight: The language used in the scheduling notification email was sometimes different from the one used in republish notification email. 
+* Parameter: At the first parameter change in parameter sessions, data affected by any of the parameters were unnecessarily recalculated.
+* Parameter: It was hard to find the error detail because the error dialog didn't show up for some types of errors. 
+* Parameter: Parameter session failed to start if a Date parameter whose type was converted from numeric or character was used in the insight.
+* Parameter: Parameter sessions on team-published insights stopped working if the original author's type was changed from Author to Viewer.
+* Schedule: Schedules on team-published insights stopped working if the original author's type was changed from Author to Viewer.
+
+
+## 6.9.5.5
+
+Released on 4/5/2022.
 
 ### Enhancements
 
