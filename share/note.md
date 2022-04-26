@@ -24,3 +24,6 @@ You can republish or stop publishing by the buttons at the bottom of the dialog 
 ![](images/note-publish3.png)
 
 
+# Schedule 
+
+Once you publish your Note or Dashboard, you can setup a schedule to refresh your Note or Dashboard periodically. See the [document](/product-features/schedule/manage) for more details about how to manage the schedule. 

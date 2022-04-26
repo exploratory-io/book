@@ -1,3 +1,9 @@
+
+# Publish Insights
+
+In order to schedule your insight, you need to publish your insight to the server first. See the [document](/product-features/share) for mote details.
+
+
 # Manage Schedules
 
 You can click the clock icon to open the scheduling dialog for managing schedules. 

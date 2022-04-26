@@ -36,3 +36,9 @@ You can republish or stop publishing by the buttons at the bottom of the dialog 
 # Sharing Branch Data or Joined Data
 
 What if you want to share data that is branched off or joined with other data frames? Exploratory Desktop takes care of the data dependency automatically. The shared data includes all the necessary data wangling steps and data to reproduce the data so that the imported data will have the branch or joined data frames if required. 
+
+
+
+# Schedule 
+
+Once you publish your data, you can setup a schedule to refresh your data periodically. See the [document](/product-features/schedule/manage) for more details about how to manage the schedule. 
