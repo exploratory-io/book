@@ -41,4 +41,4 @@ What if you want to share data that is branched off or joined with other data fr
 
 # Schedule 
 
-Once you publish your data, you can setup a schedule to refresh your data periodically. See the [document](/product-features/schedule/manage) for more details about how to manage the schedule. 
+Once you publish your data, you can setup a schedule to refresh your data periodically. See the [document](../schedule/manage_ja.md) for more details about how to manage the schedule. 
