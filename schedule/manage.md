@@ -1,7 +1,7 @@
 
 # Publish Insights
 
-In order to schedule your insight, you need to publish your insight to the server first. See the [document](/product-features/share) for mote details.
+In order to schedule your insight, you need to publish your insight to the server first. See the [document](/product-features/share) for more details.
 
 
 # Manage Schedules
