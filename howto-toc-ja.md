@@ -113,6 +113,7 @@
     <!--* [一意な行/重複する行](/howto?q=tag%3Aunique_rows%7Cduplicated_rows&language=ja)-->
     <!--* [空行/空列を削除](/howto?q=tag%3Aremove_empty&language=ja)-->
     * [国名/コードの変換](/howto?q=tag%3Acountrycode&language=ja)
+    * [Rスクリプト](/howto?q=tag%3A%22Data%20Wrangling%22%20tag%3A%22R%20Script%22&language=ja)
     <!--* [データの不均衡を解消](/howto?q=tag%3A不均衡&language=ja)-->
     <!--* [全ての列名をきれいにする](/howto?q=tag%3A%22Clean%20up%20all%20column%20names%22&language=ja)-->
     <!--* [行をヘッダとして使用](/howto?q=tag%3A%22Row%20as%20Header%22&language=ja)-->
@@ -151,7 +152,7 @@
 ----
 * [共有方法](/howto?q=tag%3AShare&language=ja)
 * [パラメーター](/howto?q=tag%3AParameter&language=ja)
-* [カスタムRスクリプト](/howto?q=tag%3A%22r%20script%22&language=ja)
+* [Rスクリプト](/howto?q=tag%3A%22r%20script%22&language=ja)
 * [日付型データ](/howto?q=tag%3ADate&language=ja)
 * [テキスト分析](/howto?q=tag%3A%22text%20analysis%22&language=ja)
 * [Excelユーザー向けガイド](/howto?q=tag%3AExcel&language=ja)
