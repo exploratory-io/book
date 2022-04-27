@@ -146,7 +146,7 @@
     * [ダッシュボード](/howto?q=tag%3ADashboard&language=ja)
     * [ノート](/howto?q=tag%3Anote&language=ja)
     * [スライド](/howto?q=tag%3Aslide&language=ja)
-    * [カスタムチャート](/howto?q=tag%3A"visualization"%20tag%3A"R%20script"&language=ja)
+    * [カスタムチャート](/howto?q=tag%3Avisualization%20tag%3A%22R%20Script%22&language=ja)
 
 ----
 * [共有方法](/howto?q=tag%3AShare&language=ja)
