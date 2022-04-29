@@ -41,4 +41,4 @@ Exploratory will inform the complainant and provide a copy of the counter-notice
 As of today this policy outlines what kinds of content Exploratory will remove from the Exploratory Public servers. Content on the web is, by its very nature, an evolving area. Therefore Exploratory may, from time to time, revise this policy.
 
 
-If you have any questions feel free to contact us at support@exploratory.io.
+If you have any questions, feel free to contact us at support@exploratory.io.
