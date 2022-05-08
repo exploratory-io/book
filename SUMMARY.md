@@ -98,6 +98,7 @@
    * [Write R Script as Data](import/r-script-data.md)
    * [Write R Script as Data (日本語)](import/r-script-data_ja.md)
    * [Web Page Scraping](import/web-scraping.md)
+   * [Free Input Text](import/free-input-text.md)
    * [Data Source Extension](import/extensions.md)
      * [SPARQL](import/SPARQL.md)
      * [Quandl](import/quandl.md)
