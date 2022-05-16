@@ -14,7 +14,6 @@ Exploratory v6.11の紹介と、ユーザー様によるExploratoryを使った�
 
 * 日時: 2022年 8月5日 (金) 12:00〜14:15（予定）　<!--（11:50開場）-->
 * 会場: Zoom会議
-* 参加方法：ページを作成できましたら、公開いたします。
 
 <!--
 * 参加方法: [こちら](https://exploratory.io/note/exploratory/Exploratory-23-XUo9wAT7)のページよりお申し込みください。
