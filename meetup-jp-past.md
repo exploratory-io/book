@@ -1,3 +1,57 @@
+# #23 - 2022年5月13日(金) @Zoom会議
+
+<img src="https://www.dropbox.com/s/3i0721pbbpdp74h/Cover_v23.jpeg?raw=1" width="100%" />
+
+## 開催要項
+
+* 日時: 2022年 5月 13日 (金) 12:00〜14:00
+* 会場: Zoom会議
+
+## アジェンダ
+
+* Exploratory v6.10のご紹介（Exploratory CEO 西田勘一郎）
+* トピックモデル分析を活用した問合せ業務の効率化（株式会社LIXIL 稲妻 直子様）
+* 回帰分析の活用による新商品の販売力予測（株式会社ロッテ 中澤 政紀様）
+* 生存分析モデルを利用したLineのブロック要因分析（CREFIL株式会社 鈴木 絢子様）
+* 自動車トラブルと気象条件などの探索的データ分析（株式会社プレステージ・インターナショナル 山口 重朗様）
+
+## Exploratory 西田勘一郎
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/S705XjrdKNI?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## 株式会社LIXIL 稲妻 直子様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/Z61BsHQDP1g?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## 株式会社ロッテ 中澤 政紀様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/y53cEjJAnmo?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## CREFIL株式会社 鈴木 絢子様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/2jgoxanVG-c?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+## 株式会社プレステージ・インターナショナル 山口 重朗様
+
+ビデオ：
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/kSDT58VSyXE?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+
+
+---
+
 # #22 - 2022年2月18日(金) @Zoom会議
 
 <img src="https://www.dropbox.com/s/yo2m5j9ecens1y2/Exploratory%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E5%8B%89%E5%BC%B7%E4%BC%9A_v22.002.jpeg?raw=1" width="100%" />
