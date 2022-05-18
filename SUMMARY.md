@@ -251,6 +251,7 @@
    * [A/B Test](analytics/ab_test.md)
    * [Normality Test](analytics/normality.md)
    * [Prediction](analytics/prediction.md)
+   * [Dictionaries for Text Analysis](analytics/dictionary.md)
 
 
 * [Statistics](statistics.md)
