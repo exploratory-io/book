@@ -15,4 +15,3 @@ Exploratory v6.11の紹介と、ユーザー様によるExploratoryを使った�
 ## アジェンダ
 
 <img src="https://www.dropbox.com/s/5lyviry3nq543yj/Agenda_v1.png?raw=1" width="100%" />
--->
