@@ -13,7 +13,7 @@ You can manage your dictionaries from the Dictionaries dialog. You can access th
 From the project menu at the top left of the screen.
 ![](images/dictionary2.png)
 
-In the Property dialog of the Topic Model (LDA) Analytics.
+From the dictionary icon in the Property dialog of the Topic Model (LDA) Analytics.
 ![](images/dictionary1.png)
 
 
