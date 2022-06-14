@@ -136,3 +136,12 @@ The "Export Chart Data" menu is available only on notes published to the server.
 
 
 This feature is not supported on the Number chart type for now.
+
+
+## Show the Comment of the Chart/Analytics
+
+If your chart/analytics has a comment, you can view it on the note by hovering/clicking the comment icon on each Chart/Analytics. 
+
+![](images/note-chart-comment.png)
+
+This feature is not supported on the Number chart type for now.

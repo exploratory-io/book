@@ -66,3 +66,13 @@ The "Export Chart Data" menu is available only on dashboards published to the se
 
 
 This feature is not supported on the Number chart type for now.
+
+
+## Show the Comment of the Chart/Analytics
+
+If your chart/analytics has a comment, you can view it on the dashboard by hovering/clicking the comment icon on each Chart/Analytics. 
+
+![](images/dashboard-chart-comment.png)
+
+
+This feature is not supported on the Number chart type for now.
