@@ -69,6 +69,11 @@ Following options are available.
   * All: Create categories against the whole data set. If you use Repeat By, all charts will have the same data range. 
   * Repeat By: Create categories for each chart if you use Repeat By. Each chart will have a different data range. 
 * Set 0 as Center: It uses 0 as a center value when it creates categories.
+* Upper Range: You can set the upper value range for creating categories. If you don't specify, the max value will be used.
+* Lower Range: You can set the lower value range for creating categories. If you don't specify, the min value will be used.
+* For Values Outside of Range: If you specify the Upper/Lower Range, you can set how to treat values outside the range. The following options are available.
+  * Create Groups
+  * Ignore
 
 ### Equal Frequency 
 
@@ -80,6 +85,24 @@ Following options are available.
 * Group By: Target data group to create categories. 
   * All: Create categories against the whole data set. If you use Repeat By, all charts will have the same data range. 
   * Repeat By: Create categories for each chart if you use Repeat By. Each chart will have a different data range. 
+
+
+### Equal Step 
+
+It divides numeric values into groups by the specified step (range). For example, if you specify "10", the group will be like "10-20", "20-30", "30-40" and so on. Each group has an equal data range. 
+
+Following options are available. 
+
+* Step: Range for each group.
+* Edge Handling: Which end to include in each range. The following options are available.
+  * Include Upper End
+  * Include Lower End
+* Upper Range: You can set the upper value range for creating categories. If you don't specify, the max value will be used.
+* Lower Range: You can set the lower value range for creating categories. If you don't specify, the min value will be used.
+* For Values Outside of Range: If you specify the Upper/Lower Range, you can set how to treat values outside the range. The following options are available.
+  * Create Groups
+  * Ignore
+
 
 ### Manual
 
