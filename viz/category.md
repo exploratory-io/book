@@ -72,7 +72,7 @@ Following options are available.
 * Upper Range: You can set the upper value range for creating categories. If you don't specify, the max value will be used.
 * Lower Range: You can set the lower value range for creating categories. If you don't specify, the min value will be used.
 * For Values Outside of Range: If you specify the Upper/Lower Range, you can set how to treat values outside the range. The following options are available.
-  * Create Groups
+  * Create Groups: Create extra groups for the values outside the range.
   * Ignore
 
 ### Equal Frequency 
@@ -100,7 +100,7 @@ Following options are available.
 * Upper Range: You can set the upper value range for creating categories. If you don't specify, the max value will be used.
 * Lower Range: You can set the lower value range for creating categories. If you don't specify, the min value will be used.
 * For Values Outside of Range: If you specify the Upper/Lower Range, you can set how to treat values outside the range. The following options are available.
-  * Create Groups
+  * Create Groups: Create extra groups for the values outside the range.
   * Ignore
 
 
