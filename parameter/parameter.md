@@ -97,20 +97,35 @@ You can show the current parameter value on the Note / Dashboard using the `` `@
 
 
 
-## Fit the Parameter Pane in the View
+## Parameter Pane Style on the Server View. 
 
-You can fit the parameter pane in the view area like the following.
+There are 2 types of parameter pane styles on the server view. 
+
+
+### Fit the parameter pane
+
+The parameter pane fits in the same view as the insight pane. 
 
 ![](images/parameter-fit-mode3.png)
 
 
-Here is how.
+### Show the parameter pane on top of the pane
 
-Select the "Parameter Setting" from the menu.
+The parameter pane shows up on the top of the insight pane. 
+
+
+![](images/parameter-fit-mode4.png)
+
+
+
+
+
+You can change the style from the Parameter Setting dialog on the server view. You can select the "Parameter Setting" from the menu to open the dialog.
 
 ![](images/parameter-fit-mode1.png)
 
-It opens up the Parameter Setting dialog. Uncheck the "Show the parameter pane on top of the pane" and click the "Update" button.
+You can change the "Show the parameter pane on top of the pane" checkbox and click the "Update" button to change the style.
+
 
 ![](images/parameter-fit-mode2.png)
 
