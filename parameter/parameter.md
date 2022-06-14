@@ -96,6 +96,27 @@ You can show the current parameter value on the Note / Dashboard using the `` `@
 
 
 
+
+## Fit the Parameter Pane in the View
+
+You can fit the parameter pane in the view area like the following.
+
+![](images/parameter-fit-mode3.png)
+
+
+Here is how.
+
+Select the "Parameter Setting" from the menu.
+
+![](images/parameter-fit-mode1.png)
+
+It opens up the Parameter Setting dialog. Uncheck the "Show the parameter pane on top of the pane" and click the "Update" button.
+
+![](images/parameter-fit-mode2.png)
+
+
+
+
 ## Learn More
 
 This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Parameter-in-Exploratory-WCO4Vgn7HJ) explains how to use Parameters in Exploratory in detail.
