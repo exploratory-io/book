@@ -45,6 +45,14 @@ You can format each Row Header and Value column. You can access the Column Forma
 
 ![](images/stable3.png)
 
+
+## Visual Formatting 
+
+You can quickly apply the visual formatting from the "Visual Formatting" column menu. You can configure the formatting details in the [Column Configuration Dialog](column-configuration-dialog.md).
+
+
+![](images/stable_viz_format_menu.png)
+
 ## Fit to Screen
 
 

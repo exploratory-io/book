@@ -23,6 +23,15 @@ You can format each Row Header and Value column. You can access the Column Forma
 ![](images/pivot-format2.png)
 
 
+
+## Visual Formatting 
+
+You can quickly apply the visual formatting from the "Visual Formatting" column menu. You can configure the formatting details in the [Column Configuration Dialog](column-configuration-dialog.md).
+
+
+![](images/pivot_viz_format_menu.png)
+
+
 ## Fit to Screen
 
 
