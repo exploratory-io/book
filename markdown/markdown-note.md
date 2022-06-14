@@ -93,3 +93,46 @@ The "Export as Word Document" feature is only available in Single View mode. You
 
 
 You can export the note output in EDF format. The exported EDF includes not only the text in the note, but also charts, analytics, data frames and others referenced in the note. You can import that EDF anytime to reproduce the note completely. 
+
+
+
+
+
+## View the Chart/Analytics in the Full-Screen Mode
+
+You can view the chart in the full-screen mode by clicking the "Show in fullscreen" icon on each Chart/Analytics. 
+
+![](images/note-view-fullscreen.png)
+
+This feature is not supported on the Number chart type for now.
+
+## Download the Image of the Chart/Analytics
+
+You can download the chart as an image file by selecting the "Export Chart Image" menu on each Chart/Analytics. 
+
+![](images/note-download-image.png)
+
+The dimension of the image file is following. 
+
+* Width: 1,200px
+* Height: 800px if Repeat By is not used in the chart. Height stretches to include all the charts if Repeat By is used.
+* Pixel Ratio: 200%
+
+
+The "Export Chart Image" menu is available only on notes published to the server. 
+
+This feature is not supported on Number and Map chart types. 
+
+
+## Download the Data of the Chart/Analytics
+
+You can download the chart data in the CSV format by selecting the "Export Chart Data" menu on each Chart/Analytics. 
+
+![](images/note-download-data2.png)
+
+The "Export Chart Data" menu is available only on notes published to the server. You also need to select the "CSV" download option when you publish the note. 
+
+![](images/dashboard-download-data1.png)
+
+
+This feature is not supported on the Number chart type for now.
