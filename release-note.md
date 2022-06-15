@@ -30,6 +30,19 @@ Released on 6/12/2022.
 
 * Collaboration: Now updating projects on the server or synchronizing the local project with the one on the server is done by sending/receiving only the differences for a much quicker update/sync.
 
+### Breaking Changes
+
+* Referencing other data frames from within mutate, summarize, filter, etc., without the "!!" operator will stop working from 6.10. This change was necessary to detect dependencies on other data frames more accurately.
+
+  This will not work anymore.
+  ```
+  mutate(col1 = nrow(another_dataframe))
+  ```
+
+  It should be rewritten this way.
+  ```
+  mutate(col1 = nrow(!!another_dataframe))
+  ```
 
 ### Bug Fixes
 
