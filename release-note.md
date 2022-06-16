@@ -4,6 +4,11 @@
 
 Released on 6/15/2022.
 
+### Enhancements
+
+* Dashboard: Now it shows page comments in a popup dialog when hovering the mouse over a page tab.
+
+
 ### Bug Fixes
 
 * Data Source: Improved the error message when importing an excel file locked with a password.
@@ -15,9 +20,6 @@ Released on 6/15/2022.
 
 * Chart: Bar: If the custom calculation was used for the Y-axis, limiting the number of bars by the current Y-axis values didn't show the expected result. 
 * Chart: The show detail dialog failed and showed an error if a numeric column was assigned to Color and the "Equal Step" Grouping Type was selected without the Step value.
-
-
-* Dashboard: Now it shows page comments in a popup dialog when hovering the mouse over a page tab.
 
 
 * Export: When a chart or an analytics view on a branch was exported and imported, the resulting imported branch got a random string name instead of the original name.
