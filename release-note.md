@@ -1,5 +1,31 @@
 # Release Note
 
+## 6.10.1
+
+Released on 6/15/2022.
+
+### Bug Fixes
+
+* Data Source: Improved the error message when importing an excel file locked with a password.
+
+
+* Summary View: After switching a column for Correlation, it sometimes showed the "another R process running" error.
+* Summary View: Error "Cannot read properties of null (reading 'map')" was raised from mutate steps on a rare occasion.
+
+
+* Chart: Bar: If the custom calculation was used for the Y-axis, limiting the number of bars by the current Y-axis values didn't show the expected result. 
+* Chart: The show detail dialog failed and showed an error if a numeric column was assigned to Color and the "Equal Step" Grouping Type was selected without the Step value.
+
+
+* Dashboard: Now it shows page comments in a popup dialog when hovering the mouse over a page tab.
+
+
+* Export: When a chart or an analytics view on a branch was exported and imported, the resulting imported branch got a random string name instead of the original name.
+* Project: If you search the project, the current data frame should always show even if it doesn't match. 
+* Project: Searching the project using special characters such as "(" didn't work.
+
+
+
 ## 6.10.0
 
 Released on 6/12/2022.
