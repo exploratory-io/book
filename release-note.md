@@ -4,6 +4,10 @@
 
 Released on 6/20/2022.
 
+### Breaking Changes
+
+* The default starting position of the Radar chart is now set to "Top". It applies to all the existing Radar charts. You can restore the original behavior (starting from the right) at the "Start Position" property in the Chart Property dialog. 
+
 ### Enhancements
 
 * Chart: Now, you can specify the starting position of the radar. 
