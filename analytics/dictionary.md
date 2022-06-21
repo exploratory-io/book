@@ -11,9 +11,11 @@ There are 2 types of dictionaries.
 You can manage your dictionaries from the Dictionaries dialog. You can access the Dictionaries dialog from the following locations.
 
 From the project menu at the top left of the screen.
+
 ![](images/dictionary2.png)
 
 From the dictionary icon in the Property dialog of the Topic Model (LDA) Analytics.
+
 ![](images/dictionary1.png)
 
 
@@ -36,6 +38,7 @@ It opens the dictionary edit dialog. Edit the dictionary and click the "Save" bu
 You can update your existing dictionary by clicking the name of the dictionary in the dictionary list. 
 
 ![](images/dictionary_update1.png)
+
 ### Publish / Republish 
 
 You can publish/unpublish/update your existing dictionary by clicking the "Publish" button in the dictionary edit dialog. 
@@ -47,7 +50,9 @@ It opens up the publish dialog. Enter the title, description, etc, and click the
 ![](images/dictionary_publish1.png)
 
 ### Unpublish
+
 You can unpublish the published dictionary by clicking the "Stop Publishing" button.
+
 ![](images/dictionary_publish3.png)
 
 ### Delete
