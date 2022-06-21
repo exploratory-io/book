@@ -6,26 +6,25 @@ Released on 6/20/2022.
 
 ### Breaking Changes
 
-* The default starting position of the Radar chart is now set to "Top". It applies to all the existing Radar charts. You can restore the original behavior (starting from the right) at the "Start Position" property in the Chart Property dialog. 
+* Chart: Radar Chart: The default starting position is now set to "Top". It applies to all the existing Radar charts. You can restore the original behavior (starting from the right) at the "Start Position" property in the Chart Property dialog.
 
 ### Enhancements
 
-* Chart: Now, you can specify the starting position of the radar. 
+* Chart: You can specify the starting position of the radar.
+* Dashboard: When clicking the Info icon it now shows the information for only the charts that are included in the current page.
+
 
 ### Bug Fixes
 
-* Chart: Pivot Table: The Custom Function dialog was cut off when opening the function list.
-* Chart: The radar chart looked weird if you assigned the same column to the Value multiple times.
-* Dashboard: After deleting a page tab, clicking the Preview button didn't respond.
-* Dashboard: Could not change the row height by dragging the bottom of the row when there is only one row.
-* Dashboard: In a single-page dashboard, the empty title section showed up if you didn't set the title text.
-* Dashboard: Set Height dialog: Row height was not rounded, and it showed many decimal points.
-* Dashboard: When clicking the Info icon, now it shows chart information for each page.
-* Data Source: Improved the error message for importing a password-protected excel file.
 * Data Source: Switching a CSV data source to a Text Input data source did not work.
 * Data Wrangling: Pivot: Setting the "Fill Value" parameter did not work, and it always showed 1 for NA.
-* Export: An error "s.promises.utimesSync is not a function" was raised if the edf, df, or epf file was exported to a drive different from the one the Exploratory's repository was on.
-* Publish: Publishing a word cloud with a parameter setting that fed no row to the word cloud raised an error.
+* Chart: Pivot Table: The Custom Function dialog was cut off when opening the function list.
+* Chart: Radar Chart: It broke if you assigned the same column to the Value multiple times.
+* Chart: Word Cloud: Publishing a Word Cloud chart with a parameter that returned no data raised an error.
+* Dashboard: After deleting a page tab, clicking the Preview button didn't respond.
+* Dashboard: Could not change the row height by dragging the bottom of the row when there is only one row.
+* Dashboard: Set Height dialog: Row height value was not rounded appropriately.
+* Project Export: On Windows, an error "s.promises.utimesSync is not a function" was raised if a project (.epf) was exported to a drive that was different from the drive where the Exploratory repository was installed.
 
 
 ## 6.10.1
