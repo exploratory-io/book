@@ -15,7 +15,6 @@ Released on 6/20/2022.
 * Dashboard: After deleting a page tab, clicking the Preview button didn't respond.
 * Dashboard: Could not change the row height by dragging the bottom of the row when there is only one row.
 * Dashboard: In a single-page dashboard, the empty title section showed up if you didn't set the title text.
-* Dashboard: Now, you can open a chart by clicking a thumbnail on the popup dialog shown when hovering a mouse over a page tab.
 * Dashboard: Set Height dialog: Row height was not rounded, and it showed many decimal points.
 * Dashboard: When clicking the Info icon, now it shows chart information for each page.
 * Data Source: Improved the error message for importing a password-protected excel file.
