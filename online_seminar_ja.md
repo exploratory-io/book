@@ -2,7 +2,7 @@
 
 ## 時間: 2022/6/23 (木) - 午後12時 - 1時（日本時間）
 
-## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
+## ミーティング URL: [リンク](https://us02web.zoom.us/j/84903371336?pwd=NnrDLVPIunuvKvAB2pHffRWB179VTl.1) (パスコード: 230867)
 
 国や都道府県などのデータから「地理的」なトレンドがあるのかを直感的に可視化したいときは「地図」を使った可視化がよく行われます。
 
