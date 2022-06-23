@@ -8,9 +8,21 @@
 * Color By - You can draw radars for each of its values. Take a look at [Color](color.md) section for more details.
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
 
+
+
 ## Category 
 
 You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
+
+## Start Position
+
+You can set the starting point of the radar. The following options are available. 
+
+* Top (Default)
+* Bottom
+* Left
+* Right 
+
 
 ## Limit Values
 

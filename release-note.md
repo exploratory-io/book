@@ -1,5 +1,59 @@
 # Release Note
 
+## 6.10.2
+
+Released on 6/20/2022.
+
+### Breaking Changes
+
+* Chart: Radar Chart: The default starting position is now set to "Top". It applies to all the existing Radar charts. You can restore the original behavior (starting from the right) at the "Start Position" property in the Chart Property dialog.
+
+### Enhancements
+
+* Chart: You can specify the starting position of the radar.
+* Dashboard: When clicking the Info icon it now shows the information for only the charts that are included in the current page.
+
+
+### Bug Fixes
+
+* Data Source: Switching a CSV data source to a Text Input data source did not work.
+* Data Wrangling: Pivot: Setting the "Fill Value" parameter did not work, and it always showed 1 for NA.
+* Chart: Pivot Table: The Custom Function dialog was cut off when opening the function list.
+* Chart: Radar Chart: It broke if you assigned the same column to the Value multiple times.
+* Chart: Word Cloud: Publishing a Word Cloud chart with a parameter that returned no data raised an error.
+* Dashboard: After deleting a page tab, clicking the Preview button didn't respond.
+* Dashboard: Could not change the row height by dragging the bottom of the row when there is only one row.
+* Dashboard: Set Height dialog: Row height value was not rounded appropriately.
+* Project Export: On Windows, an error "s.promises.utimesSync is not a function" was raised if a project (.epf) was exported to a drive that was different from the drive where the Exploratory repository was installed.
+
+
+## 6.10.1
+
+Released on 6/15/2022.
+
+### Enhancements
+
+* Dashboard: Now it shows page comments in a popup dialog when hovering the mouse over a page tab.
+
+
+### Bug Fixes
+
+* Data Source: Improved the error message when importing an excel file locked with a password.
+
+
+* Summary View: After switching a column for Correlation, it sometimes showed the "another R process running" error.
+* Summary View: Error "Cannot read properties of null (reading 'map')" was raised from mutate steps on a rare occasion.
+
+
+* Chart: Bar: If the custom calculation was used for the Y-axis, limiting the number of bars by the current Y-axis values didn't show the expected result.
+* Chart: The "Show Detail" dialog failed and showed an error if a numeric column was assigned to Color and the "Equal Step" Grouping Type was selected without an explicit Step value.
+
+
+* Export: When a chart or an analytics in a branch was exported, the branch name became a random string name instead of the original name when it was imported.
+* Project: If you search inside the project, the currently selected data frame should always show even if it doesn't match.
+* Project: Searching the project using special characters such as "(" didn't work.
+
+
 ## 6.10.0
 
 Released on 6/12/2022.
@@ -7,113 +61,118 @@ Released on 6/12/2022.
 
 ### Enhancements
 
-* Data Source: CSV: Now it automatically guesses a delimiter for files.
-* Data Source: CSV: Supported importing UTF-16 encoding files.
-* Data Source: Supported the Text Input Data Source that allows creating a data frame from manually entered delimited text.
+* Data Source: CSV: Now it automatically guesses an appropriate delimiter for the data files.
+* Data Source: CSV: Now it supports importing UTF-16 encoded files.
+* Data Source: Added a new Text Input Data type, with which you can manually enter delimited text data.
+
+
+* Data Wrangling: Added the 'Preview' button for Summarize, Window Calculation, and Pivot Dialog.
+* Data Wrangling: Separate: Supported the 'Regular Expression' mode for the custom separator.
+* Data Wrangling: Summarize: Supported 'ratio' version for count_if/sum_if function family.
+* Data Wrangling: Text Wrangling: Added the 'Regular Expression' and 'Character' options for the 'String before/after the specified text' cases.
+* Data Wrangling: Text Wrangling: Supported 'Letters (Alphabet & others)', 'Alphanumeric', and 'Letters and Numbers' options for remove, replace, and extract operations.
+* Data Wrangling: US State Conversion: Now it removes space and symbols from the data before the conversion.
 
 
 * Chart: Now you can set the target value range in the "Equal Width" bucketing option.
 * Chart: Now you can use the "Equal Step" bucketing option for creating buckets.
-* Chart: Now you can use the conditional aggregation functions such as "SUM_IF", and "COUNT_IF". 
-* Chart: Pivot: Now you can set the Visual Formatting from the column dropdown menu in the Pivot and Summarize Table. 
+* Chart: Now you can use the conditional aggregation functions such as "SUM_IF", and "COUNT_IF".
+* Chart: Pivot/Summarize Table: Now you can select 'Visual Formatting' from the menu to quickly format the cell.
+* Chart: The Custom Color Palette dialog should be accessible from the Project menu.
 
 
-* Analytics: Now you can create your own stop word dictionaries or compound word dictionaries and use them in text analysis with the Analytics Views. You can share your dictionaries through exploratory.io too.
+* Analytics: Word Count/Topic Model: Now you can create your own dictionaries for Stop Words and Compound Words for Text Analysis.
+* Analytics: Word Count/Topic Model: You can publish and share Stop Words / Compound Words dictionaries.
 
 
-* Dashboard: Note: Now you can download the chart data on each chart if you set the "Download CSV" option at the publishing time.
-* Dashboard: Note: Now you can download the chart image on each chart.
-* Dashboard: Note: Now you can view the chart comment on each chart. 
-* Dashboard: Supported Column Layout.
-* Dashboard: Supported multiple Pages in a Dashboard.
+* Dashboard: Note: Now you can download the chart data for the published Dashboards/Notes.
+* Dashboard: Note: Now you can download the chart image for the published Dashboards/Notes.
+* Dashboard: Note: Now you can view the comment you made for the charts that are included in a dashboard.
+* Dashboard: Added a new 'Column Layout' option.
+* Dashboard: Added 'Page' support. Now you can create multiple pages inside a Dashboard.
 
 
-* Collaboration: Now updating projects on the server or synchronizing the local project with the one on the server is done by sending/receiving only the differences for a much quicker update/sync.
+* Parameter: Move the plus button to the next of the Parameter radio button text.
+* Parameter: Added the' Setup' button in the Parameter Pane.
 
+
+* Collaboration: Now updating projects on the server or synchronizing the local project with the one on the server is done by sending/receiving only the differences. This makes the project publishing and the updating much faster.
+
+
+### Breaking Changes
+
+* Referencing other data frames from within mutate, summarize, filter, etc., without the "!!" operator will stop working from 6.10. This change was necessary to detect dependencies on other data frames more accurately.
+
+  This will not work anymore.
+
+  ```
+  mutate(col1 = nrow(another_dataframe))
+  ```
+
+  It should be rewritten this way.
+
+  ```
+  mutate(col1 = nrow(!!another_dataframe))
+  ```
 
 ### Bug Fixes
 
 * Data Source: Google BigQuery: Numeric value became NA for INT 64 data type columns.
 * Data Source: Google BigQuery: On the Setup dialog, the Google Cloud Storage Bucket List only showed 200 buckets.
-* Data Source: Google Sheets: Improved error message for missing sheet.
-* Data Source: Incorrect file index number was shown as part of the spin message while importing a remote CSV file.
 * Data Source: Made user and password field optional for Database Data Sources.
-* Data Source: Publishing data to the Exploratory Server failed with the 'long packets are not implemented' error when there were many columns.
-* Data Source: Salesforce: Improved the error message for SOQL query too long case.
+* Data Source: Publishing data to the Exploratory Server failed with the 'long packets are not implemented' error when there were too many columns.
 
 
-* Data Wrangling: Added the 'Preview' button for Summarize, Window Calculation, and Pivot Dialog.
 * Data Wrangling: After deleting a data frame, the 'DAG Node does not exist case' error was raised on some occasions.
 * Data Wrangling: After searching columns on the Summary View, a newly added step token became "In Creating".
 * Data Wrangling: Create Bin Dialog: Improved labels for Integer columns to show 1-3 style instead of (1,3] style.
 * Data Wrangling: Create Calculation (Mutate): The count_if function was not shown in the function list.
 * Data Wrangling: Deleting a data frame or branch did not trigger the recalculation of the steps that depend on it as it should have.
 * Data Wrangling: False positive errors about circular references were raised if columns with the same name as a data frame.
-* Data Wrangling: Filter: Added a help link for the Regular Expression radio button.
-* Data Wrangling: Filter: Unnecessary Time Zone selector was shown for Date Column filters.
 * Data Wrangling: For the set-operation steps like intersect, data frame names were not properly enclosed with back-ticks in the generated R command, which led to R errors.
-* Data Wrangling: Join: Improved the error message when the join failed due to target column and source column data types mismatch.
 * Data Wrangling: Join: Join target column was not automatically selected even if the same name column exists on the target data frame.
-* Data Wrangling: Made sure to remove associated data cache files from the repository when a data frame created from a step/chart/analytics data was deleted.
 * Data Wrangling: Pivot: The calculation result became incorrect when a column whose name is 'value' was selected.
-* Data Wrangling: R command issues such as using multibyte quotation marks in place of correct ASCII quotation marks or missing quotation marks were wrongly reported as mismatching parenthesis issues.
-* Data Wrangling: Separate: Supported the 'Regular Expression' mode for the custom separator.
-* Data Wrangling: Summarize: Supported 'ratio' version for count_if/sum_if function family.
-* Data Wrangling: Text Wrangling: Added the 'Regular Expression' and 'Character' options for the 'String before/after the specified text' cases.
-* Data Wrangling: Text Wrangling: Supported 'Letters (Alphabet & others)', 'Alphanumeric', and 'Letters and Numbers' options for remove, replace, and extract operations.
-* Data Wrangling: The Re-import Icon color remained green after clicking it.
-* Data Wrangling: US State conversion should remove space and symbols before the conversion.
 * Data Wrangling: When opening a data frame, 'TypeError: Cannot read properties of undefined (reading 'length')' error was raised on some occasions.
 
 
-* Table View: Text data became URL links if the text looked like the host name such as "1.introduction" or "aaa.bbb.ccc.ddd". 
+* Table View: Text data became URL links if the text looked like the host name such as "1.introduction" or "aaa.bbb.ccc.ddd".
 
 
 * Chart: "% TRUE", "% FALSE", '% NA" and "% Not NA" aggregation functions should return ratio values (between 0-1) instead of percentage values (0-100%) in the Pivot and Summarize Table.
 * Chart: Color Dialog: The color setting didn't work if you set a numeric column that contains values greater than 1000 to the Color and used the "As Discrete" column function.
-* Chart: Color Dialog: If you searched the table and changed one of the colors in the search result, the search result was reset. 
-* Chart: Color Dialog: The Color Palette dropdown should show the custom palettes. 
+* Chart: Color Dialog: If you searched the table and changed one of the colors in the search result, the search result was reset.
+* Chart: Color Dialog: The Color Palette dropdown didn't list the custom palettes.
 * Chart: Color Dialog: The Sort Order option was reset to the "Top to Bottom" if you changed the # of groups.
 * Chart: The "Palette 1" color palette should be the default color palette if you assign a factor column to the Color.
-* Chart: The Custom Color Palette dialog should be accessible from the Project menu. 
 
 
 * Analytics: K-means: Running the elbow method with fewer rows than the maximum number of the centers raised an error.
-* Analytics: The default color palette was a categorical one if you assigned a numeric column with the bucketing at Color in the Survival Curve analysis. It should assign the 'Blue' gradient palette by default. 
+* Analytics: The default color palette was a categorical one if you assigned a numeric column with the bucketing at Color in the Survival Curve analysis. It should assign the 'Blue' gradient palette by default.
 * Analytics: Topic Model: Add the "Text Wrap" option in the chart property dialog for the "Document" chart.
 
 
-* Dashboard: Fit to screen did not work when the original dashboard had many rows.
-* Dashboard: Note: Word Cloud was not center-aligned in the full-screen chart view.
-* Dashboard: The Number chart's thumbnail is small when the number is placed inside the chart row. 
-* Dashboard: Scrollbars should show up if the text content is taller than the text panel height. 
-* Dashboard: The width differs between the number row and the chart columns when setting equal width.
+* Dashboard: 'Fit to Screen' did not work when the original dashboard had many rows.
+* Dashboard: Note: Word Cloud was not center-aligned in the full-screen mode view.
+* Dashboard: Scrollbars should show up if the text content is taller than the text panel height.
 * Dashboard: Note: When the “Reimport all the data sources” button was clicked, cached steps were not recalculated as they should have.
 * Note: Publishing a note that uses data source extension failed if the data source extension was not installed.
 
 
-* Publish: Publishing an analytics that was unpublished before failed if the analytics had never run yet after opening the project.
 * Publish: The caption text in Number charts didn't show up in the dashboard thumbnail image.
 
 
-* Parameter: Added the' Setup' button in the Parameter Pane.
 * Parameter: For a dynamic single select LOV parameter, the default value was cleared when underlying data was changed.
-* Parameter: Move the plus button to the next of the Parameter radio button text.
 
 
 * Project: The project info dialog should include the project info on the server side if it is published.
-* Project: When trying to import a non-project zip file, it showed an "undefined" error.
-* Project: The search result got messed up if you searched data frames and renamed one of them in the search result. 
+* Project: The search result got messed up if you searched data frames and renamed one of them in the search result.
 
 
 * Export: Exporting/Publishing with a parametrized step that appears before a cached step could fail with an "object not found" error.
-* Export: Importing EDF files could create unwanted step cache data files, leading to errors from subsequent operations.
-* Export: Unnecessary row number was added when exporting data to a CSV file with Shift-JIS encoding.
-* Export: When exporting a chart as an edf file, the spin icon did not show up.
+* Export: Unnecessary row number column was added when exporting data to a CSV file with Shift-JIS encoding.
 * General: After copying a data frame, charts in the copied data frame didn't show up in the hover popup.
 * General: Calling the ‘install.packages’ R function in a Custom R Script hung.
 * General: When opening the R Package Management dialog, a confirmation dialog was kept displayed, and could not close.
-* Installation: Custom R Script: Improved the spin message shown after clicking the Save button.
 
 
 
@@ -132,8 +191,8 @@ Released on 4/19/2022.
 
 * Chart: Now you can set the target value range in the "Equal Width" bucketing option.
 * Chart: Now you can use the "Equal Step" bucketing option for creating buckets.
-* Chart: Now you can use the conditional aggregation functions such as "SUM_IF", and "COUNT_IF". 
-* Chart: Pivot: Now you can set the Visual Formatting from the column dropdown menu in the Pivot and Summarize Table. 
+* Chart: Now you can use the conditional aggregation functions such as "SUM_IF", and "COUNT_IF".
+* Chart: Pivot: Now you can set the Visual Formatting from the column dropdown menu in the Pivot and Summarize Table.
 
 
 * Analytics: Now you can create your own stop word dictionaries or compound word dictionaries and use them in text analysis with the Analytics Views. You can share your dictionaries through exploratory.io too.
@@ -141,7 +200,7 @@ Released on 4/19/2022.
 
 * Dashboard: Note: Now you can download the chart data on each chart if you set the "Download CSV" option at the publishing time.
 * Dashboard: Note: Now you can download the chart image on each chart.
-* Dashboard: Note: Now you can view the chart comment on each chart. 
+* Dashboard: Note: Now you can view the chart comment on each chart.
 * Dashboard: Supported Column Layout.
 * Dashboard: Supported multiple Pages in a Dashboard.
 
@@ -184,27 +243,27 @@ Released on 4/19/2022.
 * Data Wrangling: When opening a data frame, 'TypeError: Cannot read properties of undefined (reading 'length')' error was raised on some occasions.
 
 
-* Table View: Text data became URL links if the text looked like the host name such as "1.introduction" or "aaa.bbb.ccc.ddd". 
+* Table View: Text data became URL links if the text looked like the host name such as "1.introduction" or "aaa.bbb.ccc.ddd".
 
 
 * Chart: "% TRUE", "% FALSE", '% NA" and "% Not NA" aggregation functions should return ratio values (between 0-1) instead of percentage values (0-100%) in the Pivot and Summarize Table.
 * Chart: Color Dialog: The color setting didn't work if you set a numeric column that contains values greater than 1000 to the Color and used the "As Discrete" column function.
-* Chart: Color Dialog: If you searched the table and changed one of the colors in the search result, the search result was reset. 
-* Chart: Color Dialog: The Color Palette dropdown should show the custom palettes. 
+* Chart: Color Dialog: If you searched the table and changed one of the colors in the search result, the search result was reset.
+* Chart: Color Dialog: The Color Palette dropdown should show the custom palettes.
 * Chart: Color Dialog: The Sort Order option was reset to the "Top to Bottom" if you changed the # of groups.
 * Chart: The "Palette 1" color palette should be the default color palette if you assign a factor column to the Color.
-* Chart: The Custom Color Palette dialog should be accessible from the Project menu. 
+* Chart: The Custom Color Palette dialog should be accessible from the Project menu.
 
 
 * Analytics: K-means: Running the elbow method with fewer rows than the maximum number of the centers raised an error.
-* Analytics: The default color palette was a categorical one if you assigned a numeric column with the bucketing at Color in the Survival Curve analysis. It should assign the 'Blue' gradient palette by default. 
+* Analytics: The default color palette was a categorical one if you assigned a numeric column with the bucketing at Color in the Survival Curve analysis. It should assign the 'Blue' gradient palette by default.
 * Analytics: Topic Model: Add the "Text Wrap" option in the chart property dialog for the "Document" chart.
 
 
 * Dashboard: Fit to screen did not work when the original dashboard had many rows.
 * Dashboard: Note: Word Cloud was not center-aligned in the full-screen chart view.
-* Dashboard: The Number chart's thumbnail is small when the number is placed inside the chart row. 
-* Dashboard: Scrollbars should show up if the text content is taller than the text panel height. 
+* Dashboard: The Number chart's thumbnail is small when the number is placed inside the chart row.
+* Dashboard: Scrollbars should show up if the text content is taller than the text panel height.
 * Dashboard: The width differs between the number row and the chart columns when setting equal width.
 * Dashboard: Note: When the “Reimport all the data sources” button was clicked, cached steps were not recalculated as they should have.
 * Note: Publishing a note that uses data source extension failed if the data source extension was not installed.
@@ -222,7 +281,7 @@ Released on 4/19/2022.
 
 * Project: The project info dialog should include the project info on the server side if it is published.
 * Project: When trying to import a non-project zip file, it showed an "undefined" error.
-* Project: The search result got messed up if you searched data frames and renamed one of them in the search result. 
+* Project: The search result got messed up if you searched data frames and renamed one of them in the search result.
 
 
 
