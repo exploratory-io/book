@@ -7,12 +7,12 @@ In this seminar, Kan will walk you through how to design the Dashboard layout by
 
 Agenda:
 
-A quick introduction to Dashboard in Exploratory
-How to Create Dashboard
-Column vs. Row Layout
-KPI Row
-Pages
-Data / Chart Image Export per Chart
+* A quick introduction to Dashboard in Exploratory
+* How to Create Dashboard
+* Column vs. Row Layout
+* KPI Row
+* Pages
+* Data / Chart Image Export per Chart
 
 
 ----
