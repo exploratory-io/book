@@ -1,5 +1,15 @@
 # Release Note
 
+## 6.10.3
+
+Released on 6/30/2022.
+
+### Bug Fixes
+
+* Collaboration: Project update failed if the name of your home directory has a space character. 
+* Data Wrangling: Pivot step failed with the "Can't convert" error message when assigning a non-numeric column to the value.
+
+
 ## 6.10.2
 
 Released on 6/20/2022.
