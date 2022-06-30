@@ -1,6 +1,8 @@
 # # 24 - 2022年8月5日(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/nxf1ns5xmrc2eue/Exploratory%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E5%8B%89%E5%BC%B7%E4%BC%9A_v24.001.jpeg?raw=1" width="100%"/>
+<img src="https://www.dropbox.com/s/nnsllvcfuandyb8/Exploratory%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E5%8B%89%E5%BC%B7%E4%BC%9A_v24.001.jpeg?raw=1" width="100%"/>
+
+
 
 <br>
 
