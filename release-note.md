@@ -1,8 +1,74 @@
 # Release Note
 
+
+## 6.10.4
+
+Released on 7/15/2022.
+
+### Enhancements
+
+* General: Certified with R 4.2.1.
+
+
+* Chart: Color & Group Setting dialog: Now you can open the custom palette dialog from the "Edit Custom Palette" menu in the color palette dropdown.
+* Chart: Color & Group Setting dialog: Now you can configure which edge to include in groups from the "Edge Value Handling" option in the "Manual", "Equal Width" and "Equal Freq" Grouping Types.
+* Chart: Pivot: Summarize Table: Table: Now you can change the column width for all the columns at once by checking the "Apply All Columns" checkbox at the Cell Width setting. 
+
+
+* Dashboard: Note: Now you can download data and images for each chart in the published Note and Dashboard. 
+* Dashboard: Now you can show/hide the title of the content area from the property dialog.
+
+
+* Export: Now it remembers the output directory that you chose last time.
+
+
+### Bug Fixes
+
+* Data Source: MS Access: After closing the Exploratory Desktop, the lock file was not removed.
+* Data Source: AWS Athena: Supported HTTP proxy.
+* Data Source: RODBC data source failed to load due to the invalid UTF-8 characters in character data.
+
+
+* Table View: Summary View: Inf/-Inf values in Date/POSIXct columns were treated as NA in the Table and Summary View. 
+
+
+* Data Wrangling: After duplicating a data frame, the toolbar and data frame list showed the source data frame name where it should show the new data frame name.
+* Data Wrangling: Importing a .df (data frame) file by drag and drop didn't work if there was a data frame name conflict.
+* Data Wrangling: Window Calculation / Pivot / Summarize: Improved the column selector widget usability on the dialogs. 
+* Data Wrangling: The support of @{} parameter notation was missing in the custom calculation editor for mutate steps on multiple columns.
+* Data Wrangling: Pivot: When a character column was selected for value along with an aggregation function that returns a numeric value, it raised the 'cannot convert' error.
+
+
+* Chart: The "Show Detail" option in the popup failed and showed the "Error Code 127" error if you had a Bar chart with a logical column at X-axis and edited the display names of the values on the X-axis.
+* Chart: The Show Detail showed no rows if you had a Line chart, a Date column at X-axis and chose the "RAW" function for the Date column.
+
+
+* Analytics: When running the K-means in a step, you could not exclude character columns with the "Exclude Columns" option.
+
+
+* Note: Number charts didn't show up on an exported Word Doc.
+* Dashboard: Supported adding a row/column even when the dashboard is blank.
+* Dashboard: The text edit dialog should not close when clicking outside of the dialog.
+* Dashboard: The title of the contents area got collapsed if you set an empty text for the title. 
+* Dashboard: When there was only one row, the 'Add Chart' button was not visible after deleting a chart from the only row.
+
+
+* Parameter: When changing a parameter data type, no longer needed drop-down options should be removed from a metadata file.
+
+
+* Collaboration: Project update failed if your home directory name had space characters.
+* Export: Now, the original local data files such as CSV or Excel files are included in exported/published .df files or .edf files.
+* General: Couldn't connect to a collaboration server when you set a proxy on the Exploratory desktop.
+* General: Couldn't open a project if a git lock file existed.
+* General: Windows: Screen was frozen and didn't respond on some occasions.
+* Installation: Now it removes old, not used R package folders from an Exploratory repository.
+* Installation: Resetting R packages on M1 Mac raised an error.
+
+
 ## 6.10.3
 
 Released on 6/30/2022.
+
 
 ### Bug Fixes
 
