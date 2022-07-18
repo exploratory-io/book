@@ -8,18 +8,18 @@
       "insights": [
         {
          "title": "サマリビューを起点としたデータ分析ワークフロー",
-         "desc": "2021/06/11に行われたExploratoryデータサイエンス勉強会#19のラクスル株式会社の根来様のご発表内容となります。",
+         "desc": "データサイエンス勉強会#19のラクスル株式会社の根来様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/BQw3YAc3"
         },
         {
          "title": "自動車トラブルと気象条件などの探索的データ分析",
-         "desc": "2022/5/13(金) に行われたExploratoryデータサイエンス勉強会#23の株式会社プレステージ・インターナショナル様のご発表内容となります。",
+         "desc": "データサイエンス勉強会#23の株式会社プレステージ・インターナショナル様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-snA3Odm4"
         },
         {
-         "title": "テーブルの作り方",
-         "desc": "テーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/ktS2eEK6jW"
+         "title": "パーソナルデータという原石をダイヤモンドにするための手法",
+         "desc": "データサイエンス勉強会#20のDSInnovation株式会社様のご発",
+         "url": "https://exploratory.io/note/exploratory/by-DSInnovation-ZiR1ike3"
         },
         {
          "title": "バーチャートの作り方",
