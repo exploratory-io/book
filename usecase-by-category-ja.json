@@ -7,9 +7,9 @@
       "moreButtonUrl": "https://exploratory.io/insight?q=tag%3A%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E4%BA%8B%E4%BE%8B%20tag%3A%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90&language=ja",
       "insights": [
         {
-         "title": "ピボットテーブルの作り方",
-         "desc": "ピボットテーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/FAQ5WqV0xM"
+         "title": "回帰分析の活用による新商品の販売力予測",
+         "desc": "2022/5/13(金) に行われたExploratoryデータサイエンス勉強会#23の株式会社ロッテ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-ONb8Twr1"
         },
         {
          "title": "集計テーブルの作り方",
