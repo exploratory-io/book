@@ -1,13 +1,37 @@
 # Release Note
 
-Released on 4/19/2022.
+## 6.10.4.5
 
-## 6.9.6.1
+Released on 7/15/2022.
 
 ### Download
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.9.6.1.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.9.6.1.tar.gz)
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.10.4.5.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.10.4.5.tar.gz)
+
+### Enhancements
+
+* Insight: Now, you can download data and images for each chart in Note and Dashboard.
+* Insight: Now, you can publish dictionaries for text analysis.
+* Insight: Project: Now, you can delete the version histories to save the disk space from the Version History dialog.
+* Parameter: Now, you can choose how to show the parameter pane (either "overlay" mode or "fitted in the screen" mode) from the Parameter Setting dialog.
+
+### Bug Fixes
+
+* Analytics: Now, you can create your own stop word dictionaries or compound word dictionaries and use them in text analysis with the Analytics Views. You can share your dictionaries through exploratory.io too.
+* Collaboration: Now, updating projects on the server or synchronizing the local project with the one on the server is done by sending/receiving only the differences. This makes the project publishing and updating much faster.
+* Data: Table header columns and the data were not matching.
+* Insight: Disqus comment should be disabled on public projects on the Collaboration Server.
+* Insight: Inf/-Inf values in Date/POSIXct columns were treated as NA in the Summary View. 
+* Insight: Thumbnail image didn't show up if you posted the public chart insight URL to Twitter.
+* Parameter: When you opened the parameter pane for the first time for a published chart, it showed an empty parameter pane for some occasions.
+* Scheduling: The link to the insight in the scheduling notification email was broken.
+* Stats: The size on disk was always "0B" for team-owned projects.
+
+
+## 6.9.6.1
+
+Released on 4/19/2022.
 
 ### Enhancements
 
