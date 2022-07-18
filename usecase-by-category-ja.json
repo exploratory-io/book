@@ -1,5 +1,5 @@
 {
-  "探索的分析": [
+  "data": [
     {
       "title": "探索的分析",
       "desc": "探索的分析の事例を紹介します。",
@@ -8,7 +8,7 @@
       "insights": [
         {
          "title": "サマリビューを起点としたデータ分析ワークフロー",
-         "desc": "データサイエンス勉強会#19のラクスル株式会社のご発表内容となります。",
+         "desc": "データサイエンス勉強会#19のラクスル株式会社の根来様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/BQw3YAc3"
         },
         {
@@ -21,6 +21,54 @@
          "desc": "データサイエンス勉強会#20のDSInnovation株式会社様のご発内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-DSInnovation-ZiR1ike3"
         }
+        {
+         "title": "バーチャートの作り方",
+         "desc": "バーチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
+        },
+        {
+         "title": "ラインチャートの作り方",
+         "desc": "ラインチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
+        },
+        {
+         "title": "エリアチャートの作り方",
+         "desc": "エリアチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/bRd2lAx7Iy"
+        },
+        {
+         "title": "パイチャートの作り方",
+         "desc": "パイチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/OjL5DOn1pr"
+        }
+      ]
+    },
+    {
+      "title": "ダッシュボードのユーザー事例",
+      "desc": "ダッシュボードのユーザー事例をご紹介します。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "insights": [
+        {
+         "title": "表計算：合計値に対する割合のチャートの作り方",
+         "desc": "表計算：合計値に対する割合のチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Msq6osQ9LP"
+        },
+        {
+         "title": "表計算：累積合計のチャートの作り方",
+         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+        },
+        {
+         "title": "表計算：移動平均の引き方",
+         "desc": "表計算：移動平均をラインチャートに引く方法をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
+       },
+       {
+        "title": "表計算：表計算：前年同月比のチャートの作り方",
+        "desc": "表計算：前の期間からの差の割合を使って前年同月比を可視化する方法をご紹介します。",
+        "url": "https://exploratory.io/note/exploratory/RCD3vcu7"
+       }
       ]
     }
   ]
