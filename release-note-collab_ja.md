@@ -1,13 +1,39 @@
 # リリースノート
 
+## 6.10.4.5
+
+2022年7月15日にリリース。
+
+### ダウンロード
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.10.4.5.tar.gz)
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.10.4.5.tar.gz)
+
+### 機能強化
+
+* インサイト: ノートやダッシュボード内のチャートのデータや画像をダウンロードできるようになりました。
+* インサイト: アナリティクスビューの「テキスト分析」で利用可能な「ストップワード」や「つなぐ単語」の辞書をパブリッシュできるようになりました。
+* インサイト: プロジェクト: ディスクの利用量を節約するために、「バージョンの履歴」のダイアログから過去のバージョンの履歴を削除できるようになりました。
+* パラメーター: 「パラメーターの表示設定」のダイアログから、パラメーターを常にページ上に表示させるか、ページの上に重ねて表示させるかを選択できるようになりました。
+* コラボレーション: サーバーにパブリッシュしているプロジェクトをリパブリッシュするときや、サーバーにパブリッシュしているプロジェクトをExploratoryデスクトップにダウンロードして更新するときに、差分のデータのみを利用するようになりました。これによりプロジェクトのリパブリッシュやExploratoryデスクトップ上でのプロジェクトの更新の速度が速くなります。
+
+### 修正された問題
+
+* データ: サーバーにパブリッシュしたデータの「データ」タブにおいて、異なる列の値が表示される。
+* インサイト: パブリッシュしたインサイトにコメントをするシステム(Disqus)を表示しないようにしました。
+* インサイト: Date（日付）/POSIXct（日付時間）型の列にあるinf/-infという値が、サマリビューで欠損値（NA）として扱われてしまう。
+* パラメーター: パブリッシュしたチャートで初めてパラメーターを表示させたときに、設定したパラメーターが表示されず、空のパラメーターペインが表示される。
+* スケジュール: 購読したインサイトの通知メールに利用されているインサイトのリンクが壊れている。
+* インサイトの利用状況: チームでパブリッシュしたプロジェクトのディスクの利用量が正しく表示されず、"0B（バイト）"になってしまう。
+
 ## 6.9.6.1
 
 2022年4月19日にリリース。
 
 ### ダウンロード
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.9.6.1.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.9.6.1.tar.gz)
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.9.6.1.tar.gz)
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.9.6.1.tar.gz)
 
 ### 機能強化
 
