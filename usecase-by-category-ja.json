@@ -20,26 +20,6 @@
          "title": "パーソナルデータという原石をダイヤモンドにするための手法",
          "desc": "データサイエンス勉強会#20のDSInnovation株式会社様のご発内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-DSInnovation-ZiR1ike3"
-        },
-        {
-         "title": "バーチャートの作り方",
-         "desc": "バーチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
-        },
-        {
-         "title": "ラインチャートの作り方",
-         "desc": "ラインチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
-        },
-        {
-         "title": "エリアチャートの作り方",
-         "desc": "エリアチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/bRd2lAx7Iy"
-        },
-        {
-         "title": "パイチャートの作り方",
-         "desc": "パイチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/OjL5DOn1pr"
         }
       ]
     },
@@ -50,25 +30,20 @@
       "moreButtonUrl": "https://exploratory.io/insight?q=tag%3A%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E4%BA%8B%E4%BE%8B%20tag%3A%E4%BF%A1%E9%A0%BC%E5%8C%BA%E9%96%93&language=ja",
       "insights": [
         {
-         "title": "表計：合計値に対する割合のチャートの作り方",
-         "desc": "表計算：合計値に対する割合のチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Msq6osQ9LP"
+                "title": "信頼区間を利用した広告クリエイティブのパフォーマンス評価",
+                "desc": "データサイエンス勉強会#15の羽生田様のご発表内容となります。",
+                "url": "https://exploratory.io/note/exploratory/MeU7BcZ3"
         },
         {
-         "title": "表計算：累積合計のチャートの作り方",
-         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+         "title": "エラーバーを使ったプチ働き方改革",
+         "desc": "データサイエンス勉強会#18の株式会社インテージ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/CSv7ICJ7"
         },
         {
-         "title": "表計算：移動平均の引き方",
-         "desc": "表計算：移動平均をラインチャートに引く方法をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
-       },
-       {
-        "title": "表計算：表計算：前年同月比のチャートの作り方",
-        "desc": "表計算：前の期間からの差の割合を使って前年同月比を可視化する方法をご紹介します。",
-        "url": "https://exploratory.io/note/exploratory/RCD3vcu7"
-       }
+           "title": "サマリビューを起点としたデータ分析ワークフロー",
+           "desc": "データサイエンス勉強会#19のラクスル株式会社のご発表内容となります。",
+           "url": "https://exploratory.io/note/exploratory/BQw3YAc3"
+        }
       ]
     }
   ]
