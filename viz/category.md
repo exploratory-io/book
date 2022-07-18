@@ -2,7 +2,8 @@
 
 You can categorize numeric values inside the chart. Category is supported in following chart types.
 
-* Pivot Table (Row Header, Column Header)
+* Pivot Table (Row, Column)
+* Summarize Table (Group By)
 * Bar (X-Axis, Color, Repeat By)
 * Line (X-Axis, Color, Repeat By)
 * Area (X-Axis, Color, Repeat By)
@@ -17,6 +18,7 @@ You can categorize numeric values inside the chart. Category is supported in fol
 * Map - Extension (Color)
 * LongLat Map (Group By, Color)
 * Heatmap (X-Axis, Y-Axis, Repeat By)
+* Radar (Color)
 
 
 You can refer the [Exploratory v5.3 Released!](https://blog.exploratory.io/exploratory-v5-3-released-e3fbe3dd9910) for the overview of the Category feature. 
@@ -65,10 +67,13 @@ Following options are available.
 
 * Number of categories: Number of categories to create.
 * Label Text: Names for categories separated by commas.  
-* Group By: Target data group to create categories. 
+* Target Group: Target data group to create categories. 
   * All: Create categories against the whole data set. If you use Repeat By, all charts will have the same data range. 
   * Repeat By: Create categories for each chart if you use Repeat By. Each chart will have a different data range. 
 * Set 0 as Center: It uses 0 as a center value when it creates categories.
+* Edge Value Handling: Which end to include in each range. The following options are available.
+  * Include Upper Edge
+  * Include Lower Edge
 * Upper Range: You can set the upper value range for creating categories. If you don't specify, the max value will be used.
 * Lower Range: You can set the lower value range for creating categories. If you don't specify, the min value will be used.
 * For Values Outside of Range: If you specify the Upper/Lower Range, you can set how to treat values outside the range. The following options are available.
@@ -82,10 +87,12 @@ It divides the numeric values into groups by the number of data points. Each gro
 Following options are available.
 * Number of categories: Number of categories to create.
 * Label Text: Names for categories separated by commas.  
-* Group By: Target data group to create categories. 
+* Target Group: Target data group to create categories. 
   * All: Create categories against the whole data set. If you use Repeat By, all charts will have the same data range. 
   * Repeat By: Create categories for each chart if you use Repeat By. Each chart will have a different data range. 
-
+* Edge Value Handling: Which end to include in each range. The following options are available.
+  * Include Upper Edge
+  * Include Lower Edge
 
 ### Equal Step 
 
@@ -94,9 +101,9 @@ It divides numeric values into groups by the specified step (range). For example
 Following options are available. 
 
 * Step: Range for each group.
-* Edge Handling: Which end to include in each range. The following options are available.
-  * Include Upper End
-  * Include Lower End
+* Edge Value Handling: Which end to include in each range. The following options are available.
+  * Include Upper Edge
+  * Include Lower Edge
 * Upper Range: You can set the upper value range for creating categories. If you don't specify, the max value will be used.
 * Lower Range: You can set the lower value range for creating categories. If you don't specify, the min value will be used.
 * For Values Outside of Range: If you specify the Upper/Lower Range, you can set how to treat values outside the range. The following options are available.
@@ -111,6 +118,9 @@ It divides numeric values into groups by the Cutting Point values that user-spec
 Following options are available.
 
 * Cutting Points: Boundary values of categories separated by commas. For example, if you enter "10, 20", it will create categories by splitting data at 10 and 20. 
+* Edge Value Handling: Which end to include in each range. The following options are available.
+  * Include Upper Edge
+  * Include Lower Edge
 * Label Text: Names for categories separated by commas.  
 * Include Outside of the Range: If you check this, it will include the values outside of the Cutting Points. For example, if you enter "10, 20" at the Cutting Points, it will create 3 categories "-Inf - 10", "10 - 20" and "20 - Inf". If you uncheck this, it will ignore the values outside the Cutting Points. In this example, it will create 1 category "10 - 20". 
 
@@ -126,7 +136,7 @@ Following options are available.
   * Standard Deviation
 * Threshold: You can specify the threshold values. Available for Percentile and Standard Deviation outlier types. 
 * Label Text: Names for categories separated by commas.  
-* Group By: Target data group to create categories. 
+* Target Group: Target data group to create categories. 
   * All: Create categories against the whole data set. If you use Repeat By, all charts will have the same data range. 
   * Repeat By: Create categories for each chart if you use Repeat By. Each chart will have a different data range. 
 
