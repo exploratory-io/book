@@ -3,6 +3,8 @@
     {
       "title": "探索的分析",
       "desc": "探索的分析の事例を紹介します",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
          "title": "ピボットテーブルの作り方",
