@@ -108,20 +108,13 @@ This feature is not supported on the Number chart type for now.
 
 ## Download the Image of the Chart/Analytics
 
-You can download the chart as an image file by selecting the "Export Chart Image" menu on each Chart/Analytics. 
+You can download the chart image in either PNG or SVG file format by selecting the "Export Chart Image" menu on each Chart/Analytics. 
 
 ![](images/note-download-image.png)
 
-The dimension of the image file is following. 
-
-* Width: 1,200px
-* Height: 800px if Repeat By is not used in the chart. Height stretches to include all the charts if Repeat By is used.
-* Pixel Ratio: 200%
-
-
 The "Export Chart Image" menu is available only on notes published to the server. 
 
-This feature is not supported on Number and Map chart types. 
+This feature is not supported on Number, Word Cloud and Map chart types. 
 
 
 ## Download the Data of the Chart/Analytics
