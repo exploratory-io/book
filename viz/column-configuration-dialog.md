@@ -92,6 +92,10 @@ If you want to use values as a URL parameter, check the "Apply URL encoding for 
 
 You can set column width. The unit is a pixel. 
 
+### Apply All Columns
+
+If you check the "Apply All Columns" option, you can apply the column width setting to all the columns.
+
 
 
 ## Visual Formatting 
