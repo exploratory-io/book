@@ -1,5 +1,5 @@
 {
-  "data": [
+  "探索的分析": [
     {
       "title": "探索的分析",
       "desc": "探索的分析の事例を紹介します。",
@@ -20,9 +20,10 @@
          "title": "パーソナルデータという原石をダイヤモンドにするための手法",
          "desc": "データサイエンス勉強会#20のDSInnovation株式会社様のご発内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-DSInnovation-ZiR1ike3"
-        },
+        }
           ]
   },
+  "信頼区間": [
     {
       "title": "信頼区間",
       "desc": "信頼区間の活用事例を紹介します。",
