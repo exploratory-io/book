@@ -26,6 +26,16 @@ You can set a row height of each row if "Fit to Screen" option is disabled.
 ![](images/rowheight.png)
 
 
+## Hide the Contents Area Title
+
+You can uncheck the "Show Title" checkbox at the "Contents Area Setting" to hide the titles of each content.
+
+
+![](images/panel-header2.png)
+
+![](images/panel-header1.png)
+
+
 
 
 ## View the Chart/Analytics in the Full-Screen Mode
