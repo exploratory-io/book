@@ -18,12 +18,9 @@ Released on 7/15/2022.
 
 ### Bug Fixes
 
-* Analytics: Now, you can create your own stop word dictionaries or compound word dictionaries and use them in text analysis with the Analytics Views. You can share your dictionaries through exploratory.io too.
 * Collaboration: Now, updating projects on the server or synchronizing the local project with the one on the server is done by sending/receiving only the differences. This makes the project publishing and updating much faster.
 * Data: Table header columns and the data were not matching.
-* Insight: Disqus comment should be disabled on public projects on the Collaboration Server.
-* Insight: Inf/-Inf values in Date/POSIXct columns were treated as NA in the Summary View. 
-* Insight: Thumbnail image didn't show up if you posted the public chart insight URL to Twitter.
+* Insight: Inf/-Inf values in Date/POSIXct columns were treated as NA in the Summary View.
 * Parameter: When you opened the parameter pane for the first time for a published chart, it showed an empty parameter pane for some occasions.
 * Scheduling: The link to the insight in the scheduling notification email was broken.
 * Stats: The size on disk was always "0B" for team-owned projects.
