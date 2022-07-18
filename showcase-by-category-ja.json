@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "title": "チャートの種類",
+      "desc": "チャートの種類をご紹介します。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "insights": [
+        {
+         "title": "ピボットテーブルの作り方",
+         "desc": "ピボットテーブルの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/FAQ5WqV0xM"
+        },
+        {
+         "title": "集計テーブルの作り方",
+         "desc": "集計テーブルの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/RMB5wbA4Rs"
+        },
+        {
+         "title": "テーブルの作り方",
+         "desc": "テーブルの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/ktS2eEK6jW"
+        },
+        {
+         "title": "バーチャートの作り方",
+         "desc": "バーチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
+        },
+        {
+         "title": "ラインチャートの作り方",
+         "desc": "ラインチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
+        },
+        {
+         "title": "エリアチャートの作り方",
+         "desc": "エリアチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/bRd2lAx7Iy"
+        },
+        {
+         "title": "パイチャートの作り方",
+         "desc": "パイチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/OjL5DOn1pr"
+        }
+       }
+      ]
+    },
+    {
+      "title": "チャートの機能",
+      "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "insights": [
+        {
+         "title": "表計算：合計値に対する割合のチャートの作り方",
+         "desc": "表計算：合計値に対する割合のチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Msq6osQ9LP"
+        },
+        {
+         "title": "表計算：累積合計のチャートの作り方",
+         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+        },
+        {
+         "title": "表計算：移動平均の引き方",
+         "desc": "表計算：移動平均をラインチャートに引く方法をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
+       },
+       {
+        "title": "表計算：表計算：前年同月比のチャートの作り方",
+        "desc": "表計算：前の期間からの差の割合を使って前年同月比を可視化する方法をご紹介します。",
+        "url": "https://exploratory.io/note/exploratory/RCD3vcu7"
+       }
+      ]
+    }
+  ]
+}
