@@ -1,10 +1,8 @@
 {
   "data": [
     {
-      "title": "アナリティクスのユーザー事例",
-      "desc": "アナリティクスのユーザー事例ご紹介します。",
-      "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "title": "探索的分析",
+      "desc": "探索的分析の事例を紹介します"
       "insights": [
         {
          "title": "ピボットテーブルの作り方",
