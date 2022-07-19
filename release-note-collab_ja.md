@@ -4,12 +4,12 @@
 
 2022年7月18日にリリース。
 
-### Download
+### ダウンロード
 
 * [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.10.4.6.tar.gz)
 * [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.10.4.6.tar.gz)
 
-### Bug Fixes
+### 修正された問題
 
 * スケジュール: スケジュールを設定したデータのGoogleスプレッドシートへのエクスポートが失敗する。
 
