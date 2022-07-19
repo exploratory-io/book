@@ -1,13 +1,22 @@
 # Release Note
 
+## 6.10.4.6
+
+Released on 7/18/2022.
+
+### Download
+
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.10.4.6.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.10.4.6.tar.gz)
+
+### Bug Fixes
+
+* Scheduling: Exporting the scheduled data to Google Sheets failed.
+
 ## 6.10.4.5
 
 Released on 7/15/2022.
 
-### Download
-
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.10.4.5.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.10.4.5.tar.gz)
 
 ### Enhancements
 
