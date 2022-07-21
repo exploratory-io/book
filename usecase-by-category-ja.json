@@ -43,6 +43,57 @@
          "url": "https://exploratory.io/note/exploratory/BQw3YAc3"
         }
       ]
+    },
+    {
+      "title": "回帰分析",
+      "desc": "回帰分析のアルゴリズムの活用事例を紹介します。",
+      "insights": [
+        {
+         "title": "求人サービスのユーザー分析をもとにした予算管理（ロジスティック回帰）株式会社リブセンス",
+         "desc": "データサイエンス勉強会#21の株式会社リブセンス様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-DXM6RRR8"
+        },
+        {
+         "title": "自動車トラブルと気象条件などの探索的データ分析",
+         "desc": "データサイエンス勉強会#23の株式会社プレステージ・インターナショナル様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-snA3Odm4"
+        },
+        {
+         "title": "回帰分析の活用による新商品の販売力予測",
+         "desc": "Exploratoryデータサイエンス勉強会#23の株式会社ロッテ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-ONb8Twr1"
+        },
+        {
+         "title": "Data Informed な健康経営",
+         "desc": "データサイエンス勉強会#17のサンホシスコ 中尾様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/Data-Informed-xby4Mny7"
+        },
+        {
+         "title": "回帰モデルを利用したチャーンの要因分析",
+         "desc": "データサイエンス勉強会#15のサイボウズ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/mjD1jam1"
+        },
+        {
+         "title": "CLV向上のための生存時間分析",
+         "desc": "データサイエンス勉強会#15のakippa株式会社のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/CLV-peQ9oDO5"
+        },
+        {
+         "title": "作業品質向上のためのロジスティック回帰を使った分析事例",
+         "desc": "データサイエンス勉強会#14の日立ドキュメントソリューションズ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/UaZ9snw0"
+        },
+        {
+         "title": "健診・問診データを活用した人事施策への活用例",
+         "desc": "データサイエンス勉強会#12の株式会社IHI様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/DlR3Iwh0"
+        },
+        {
+         "title": "統計モデルから得たインサイトの広告ターゲティングへの活用例",
+         "desc": "データサイエンス勉強会#12の株式会社ハッシャダイ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/DlR3Iwh0"
+        }
+      ]
     }
   ]
 }
