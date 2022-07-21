@@ -94,37 +94,6 @@
          "url": "https://exploratory.io/note/exploratory/DlR3Iwh0"
         }
       ]
-    },
-    {
-      "title": "機械学習",
-      "desc": "機械学習のアルゴリズムの活用事例を紹介します。",
-      "insights": [
-        {
-         "title": "データ・コミュニケーションツールとしてのExploratoryの活用法",
-         "desc": "データサイエンス勉強会#21の株式会社リクルート様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/Exploratory-by-gnJ3XwM4"
-        },
-        {
-         "title": "サマリビューを起点としたデータ分析ワークフロー",
-         "desc": "データサイエンス勉強会#19のラクスル株式会社様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/BQw3YAc3"
-        },
-        {
-         "title": "市場調査データへの機械学習の活用",
-         "desc": "データサイエンス勉強会#15の株式会社インテージヘルスケア様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/EaP7sKg0"
-        },
-        {
-         "title": "健診・問診データを活用した人事施策への活用例",
-         "desc": "データサイエンス勉強会#12の株式会社IHI様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/GlM7QRK7"
-        },
-        {
-         "title": "機械学習結果に対する因果推論でのExploratoryの利用例",
-         "desc": "データサイエンス勉強会#11の株式会社GRI様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/by-GlQ0IJm6"
-        }
-      ]
     }
   ]
 }
