@@ -53,14 +53,9 @@
       ]
     },
     {
-      "title": "回帰分析",
-      "desc": "回帰分析のアルゴリズムの活用事例を紹介します。",
+      "title": "機械学習",
+      "desc": "回帰分析や機会学習のアルゴリズムの活用事例を紹介します。",
       "insights": [
-        {
-         "title": "求人サービスのユーザー分析をもとにした予算管理",
-         "desc": "データサイエンス勉強会#21の株式会社リブセンス様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/by-DXM6RRR8"
-        },
         {
          "title": "自動車トラブルと気象条件などの探索的データ分析",
          "desc": "データサイエンス勉強会#23の株式会社プレステージ・インターナショナル様のご発表内容となります。",
@@ -70,6 +65,21 @@
          "title": "回帰分析の活用による新商品の販売力予測",
          "desc": "Exploratoryデータサイエンス勉強会#23の株式会社ロッテ様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-ONb8Twr1"
+        },
+        {
+         "title": "データ・コミュニケーションツールとしてのExploratoryの活用法",
+         "desc": "データサイエンス勉強会#21の株式会社リクルート様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-by-gnJ3XwM4"
+        },
+        {
+         "title": "求人サービスのユーザー分析をもとにした予算管理",
+         "desc": "データサイエンス勉強会#21の株式会社リブセンス様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-DXM6RRR8"
+        },
+        {
+         "title": "サマリビューを起点としたデータ分析ワークフロー",
+         "desc": "データサイエンス勉強会#19のラクスル株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/BQw3YAc3"
         },
         {
          "title": "Data Informed な健康経営",
@@ -87,6 +97,11 @@
          "url": "https://exploratory.io/note/exploratory/CLV-peQ9oDO5"
         },
         {
+         "title": "市場調査データへの機械学習の活用",
+         "desc": "データサイエンス勉強会#15の株式会社インテージヘルスケア様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/EaP7sKg0"
+        },
+        {
          "title": "作業品質向上のためのロジスティック回帰を使った分析事例",
          "desc": "データサイエンス勉強会#14の株式会社日立ドキュメントソリューションズ様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/UaZ9snw0"
@@ -100,28 +115,7 @@
          "title": "統計モデルから得たインサイトの広告ターゲティングへの活用例",
          "desc": "データサイエンス勉強会#12の株式会社ハッシャダイ様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/DlR3Iwh0"
-        }
-      ]
-    },
-    {
-      "title": "機械学習",
-      "desc": "機械学習のアルゴリズムの活用事例を紹介します。",
-      "insights": [
-        {
-         "title": "データ・コミュニケーションツールとしてのExploratoryの活用法",
-         "desc": "データサイエンス勉強会#21の株式会社リクルート様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/Exploratory-by-gnJ3XwM4"
-        },
-        {
-         "title": "サマリビューを起点としたデータ分析ワークフロー",
-         "desc": "データサイエンス勉強会#19のラクスル株式会社様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/BQw3YAc3"
-        },
-        {
-         "title": "市場調査データへの機械学習の活用",
-         "desc": "データサイエンス勉強会#15の株式会社インテージヘルスケア様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/EaP7sKg0"
-        },
+       },
         {
          "title": "健診・問診データを活用した人事施策への活用例",
          "desc": "データサイエンス勉強会#12の株式会社IHI様のご発表内容となります。",
@@ -246,17 +240,6 @@
          "title": "エンゲージメント向上のための人事制度改革",
          "desc": "「学校からはじまるデータサイエンスの民主化」セミナー#1の追手門学院様のご発表内容となります。",
          "url": "https://exploratory.io/note/BWz1Bar4JF/Exploratory-by-FZE0UWE2vw"
-        }
-      ]
-    },
-    {
-      "title": "クラスタリング",
-      "desc": "クラスタリングの活用事例を紹介します。",
-      "insights": [
-        {
-         "title": "車両走行データの時系列クラスタリング",
-         "desc": "データサイエンス勉強会#17のスズキ株式会社様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/LGU3Unm1"
         }
       ]
     },
@@ -459,7 +442,7 @@
       ]
     },
     {
-      "title": "コミュニケーション",
+      "title": "データの民主化",
       "desc": "データ分析に関するコミュニケーションにおける活用事例を紹介します。",
       "insights": [
         {
@@ -473,11 +456,6 @@
          "url": "https://exploratory.io/note/exploratory/hCV0GrG0"
         },
         {
-         "title": "作業品質向上のためのロジスティック回帰を使った分析事例",
-         "desc": "データサイエンス勉強会#14の日立ドキュメントソリューションズ様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/UaZ9snw0"
-        },
-        {
          "title": "もしも新卒1年目の統計学初心者が Exploratoryを使ったら",
          "desc": "データサイエンス勉強会#13の株式会社ネオキャリア様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/1-Exploratory-fBQ7mgY9"
@@ -486,22 +464,6 @@
          "title": "「データの民主化」の取り組みについて",
          "desc": "データサイエンス勉強会#13のChatwork株式会社様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/csh8VQO8"
-        }
-      ]
-    },
-    {
-      "title": "データ活用",
-      "desc": "データの活用事例を紹介します",
-      "insights": [
-        {
-         "title": "データ分析の再現性を高くするためのExploratoryの活用法",
-         "desc": "データサイエンス勉強会#19の株式会社フォーバルテレコムの矢通様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/Exploratory-hhc1bRt7"
-        },
-        {
-         "title": "GPSデータを使った人の移動の可視化",
-         "desc": "データサイエンス勉強会#13のレイ・フロンティア様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/GPS-LaN4QDk1"
         }
       ]
     },
@@ -517,8 +479,8 @@
       ]
     },
     {
-      "title": "コラボレーション・サーバー",
-      "desc": "コラボレーション・サーバーの活用事例を紹介します。",
+      "title": "コラボレーション",
+      "desc": "他の人とのコラボレーションの事例を紹介します。",
       "insights": [
         {
          "title": "市場調査データへの機械学習の活用",
