@@ -243,6 +243,28 @@
        ]
      },
      {
+       "title": "食品",
+       "desc": "食品業界における活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "回帰分析の活用による新商品の販売力予測",
+          "desc": "データサイエンス勉強会#23の株式会社ロッテ様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-ONb8Twr1"
+         }
+       ]
+     },
+     {
+       "title": "日用品",
+       "desc": "日用品業界における活用事例をご紹介します。",
+       "insights": [
+         {
+           "title": "製造業における時系列予測モデルの活用",
+           "desc": "データサイエンス勉強会#16のライオン株式会社様のご発表内容となります。",
+           "url": "https://exploratory.io/note/exploratory/JcF4ixB8"
+         }
+       ]
+     },
+     {
        "title": "サポート",
        "desc": "サポート領域における活用事例をご紹介します。",
        "insights": [
@@ -292,17 +314,6 @@
           "title": "GPSデータを使った人の移動の可視化",
           "desc": "データサイエンス勉強会#13のレイ・フロンティア株式会社様のご発表内容となります。",
           "url": "https://exploratory.io/note/exploratory/GPS-LaN4QDk1"
-         }
-       ]
-     },
-     {
-       "title": "食品",
-       "desc": "食品業界における活用事例をご紹介します。",
-       "insights": [
-         {
-          "title": "回帰分析の活用による新商品の販売力予測",
-          "desc": "データサイエンス勉強会#23の株式会社ロッテ様のご発表内容となります。",
-          "url": "https://exploratory.io/note/exploratory/by-ONb8Twr1"
          }
        ]
      },
