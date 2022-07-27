@@ -1,5 +1,14 @@
 # Release Note
 
+## 6.10.5
+
+Released on 7/26/2022.
+
+### Bug Fixes
+
+* Data Source: Clicking the Save button for a newly created Amazon Redshift data source raised an error "error code 127".
+* Dashboard: Japanese characters were garbled if you opened a chart data CSV file downloaded from a published dashboard with Excel.
+
 
 ## 6.10.4
 
