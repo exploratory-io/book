@@ -23,6 +23,8 @@ You can show the distribution of the data with "Violin" like shapes. This chart 
 
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
 * Include Outlier - You can uncheck to exclude the outlier values. 
+* Orientation - You can choose a chart orientation. Either 'Vertical' or 'Horizontal'.
+
 
 ## Highlight 
 
