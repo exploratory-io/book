@@ -1,32 +1,30 @@
-# Seminar #70 - How to Use Exploratory Part 1 - Charts
-## Date/Time: 2022/8/3 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
+# Seminar #71 - How to Use Exploratory Part 2 - Clean & Transform Data 
+## Date/Time: 2022/8/10 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-In this seminar, Kan will walk you through how to use Charts in Exploratory to visualize your data effectively by introducing some of the key features with demo.
+In this seminar, Kan will walk you through how you can clean and transform your data flexibly with Exploratory by introducing some of the key features with demo.
 
-This is the 1st of 4 sessions of 'How to Use Exploratory' series.
+This is the 2nd of 4 sessions of 'How to Use Exploratory' series.
 
 Agenda:
 
+* Create Calculations
+* Calculation with Conditions
+* Aggregation
+* Aggregation with Conditions
+* Wide Data vs. Long Data
+* Join & Merge
 * Data Type Conversion
-* Chart Pin
-* Limit Values
-* Summarize Functions
-* Show Values on Plot
-* Use Color
-* Categorize Numeric Values
-* Create ‘Other’ Group
-* Window Calculations
+* Separate to Rows
+* Text Data Wrangling
 
-----
+How to Use Exploratory Series
 
-# Seminar #71 - How to Use Exploratory Part 2 - Data Wrangling
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-Agenda:
+* Part 1 - How to Use Charts in Exploratory
+* Part 2 - How to Clean & Transform Data in Exploratory
+* Part 3 - How to Start Analytics with Exploratory
+* Part 4 - How to Create Dashboards & Notes with Exploratory
 
 ----
 
@@ -59,7 +57,7 @@ Agenda:
 
 
 ----
-# Seminar #75 - BI & Dashboard with Exploratory 
+# Seminar #75 - BI & Dashboard with Exploratory
 ## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
