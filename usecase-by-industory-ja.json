@@ -1,74 +1,386 @@
 {
   "data": [
     {
-      "title": "金融業界のユーザー事例",
-      "desc": "金融業界のユーザー事例をご紹介します。",
-      "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "title": "マーケティング",
+      "desc": "マーケティング業界やマーケティング担当者様の活用事例をご紹介します。",
       "insights": [
         {
-         "title": "ピボットテーブルの作り方",
-         "desc": "ピボットテーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/FAQ5WqV0xM"
+         "title": "生存分析モデルを利用したLineのブロック要因分析",
+         "desc": "データサイエンス勉強会#23のCREFIL株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/Line-by-CREFIL-Aik1bhL2"
         },
         {
-         "title": "集計テーブルの作り方",
-         "desc": "集計テーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/RMB5wbA4Rs"
+         "title": "求人サービスのユーザー分析をもとにした予算管理（ロジスティック回帰）",
+         "desc": "データサイエンス勉強会#21の株式会社リブセンス様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-DXM6RRR8"
         },
         {
-         "title": "テーブルの作り方",
-         "desc": "テーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/ktS2eEK6jW"
+         "title": "リピーターを増やすための顧客セグメンテーション分析",
+         "desc": "データサイエンス勉強会#20の日本成長投資アライアンス株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-Utr2eQA5"
         },
         {
-         "title": "バーチャートの作り方",
-         "desc": "バーチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
+         "title": "マーケット・バスケット分析を活用したECサイトの購買分析",
+         "desc": "データサイエンス勉強会#20の株式会社エートゥジェイ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/EC-by-oPE5bnR2"
         },
         {
-         "title": "ラインチャートの作り方",
-         "desc": "ラインチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
+         "title": "エラーバーを使ったプチ働き方改革",
+         "desc": "データサイエンス勉強会#18の株式会社インテージ 駒崎様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/CSv7ICJ7"
         },
         {
-         "title": "エリアチャートの作り方",
-         "desc": "エリアチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/bRd2lAx7Iy"
+         "title": "RFM分析による効率的な顧客セグメンテーション",
+         "desc": "データサイエンス勉強会#17の株式会社タカオカメガ 十二様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/RFM-Rxk7YCa6"
         },
         {
-         "title": "パイチャートの作り方",
-         "desc": "パイチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/OjL5DOn1pr"
+         "title": "広告運用におけるベイジアンABテストの活用",
+         "desc": "データサイエンス勉強会#16の株式会社セプテーニ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/AB-tak6cIg2"
+        },
+        {
+         "title": "市場調査データへの機械学習の活用",
+         "desc": "データサイエンス勉強会#15の株式会社インテージヘルスケア様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/EaP7sKg0"
+        },
+        {
+         "title": "信頼区間を利用した広告クリエイティブのパフォーマンス評価",
+         "desc": "データサイエンス勉強会#15の羽生田様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/MeU7BcZ3"
+        },
+        {
+         "title": "統計モデルから得たインサイトの広告ターゲティングへの活用例",
+         "desc": "データサイエンス勉強会#12の株式会社ハッシャダイ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/DlR3Iwh0"
         }
       ]
     },
     {
-      "title": "SaaS業界のユーザー事例",
-      "desc": "SaaS業界のユーザー事例をご紹介します。",
-      "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "title": "コンサルティング",
+      "desc": "コンサルティング業界の活用事例をご紹介します。",
       "insights": [
         {
-         "title": "表計算：合計値に対する割合のチャートの作り方",
-         "desc": "表計算：合計値に対する割合のチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Msq6osQ9LP"
+         "title": "生存分析モデルを利用したLineのブロック要因分析",
+         "desc": "データサイエンス勉強会#23のCREFIL株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/Line-by-CREFIL-Aik1bhL2"
         },
         {
-         "title": "表計算：累積合計のチャートの作り方",
-         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+         "title": "もうRとExcelには戻れない - Exploratoryを使ったゆとりあるワークフロー管理",
+         "desc": "データサイエンス勉強会#21の株式会社サイズ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/R-Excel-Exploratory-by-dSj6lJx2"
         },
         {
-         "title": "表計算：移動平均の引き方",
-         "desc": "表計算：移動平均をラインチャートに引く方法をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
-       },
-       {
-        "title": "表計算：表計算：前年同月比のチャートの作り方",
-        "desc": "表計算：前の期間からの差の割合を使って前年同月比を可視化する方法をご紹介します。",
-        "url": "https://exploratory.io/note/exploratory/RCD3vcu7"
-       }
+           "title": "パーソナルデータという原石をダイヤモンドにするための手法",
+           "desc": "データサイエンス勉強会#20のDSInnovation株式会社様のご発表内容となります。",
+           "url": "https://exploratory.io/note/exploratory/by-DSInnovation-ZiR1ike3"
+        },
+        {
+         "title": "データラングリングを効率化するためのTips",
+         "desc": "データサイエンス勉強会#19のヒッドワークス合同会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/Tips-vrt7Zsp9"
+        },
+        {
+           "title": "エラーバーを使ったプチ働き方改革",
+           "desc": "データサイエンス勉強会#18の株式会社インテージ様のご発表内容となります。",
+           "url": "https://exploratory.io/note/exploratory/CSv7ICJ7"
+        },
+        {
+           "title": "市場調査データへの機械学習の活用",
+           "desc": "データサイエンス勉強会#15のインテージヘルスケア様のご発表内容となります。",
+           "url": "https://exploratory.io/note/exploratory/EaP7sKg0"
+        },
+        {
+           "title": "機械学習結果に対する因果推論でのExploratoryの利用例",
+           "desc": "データサイエンス勉強会#11のGRI様のご発表内容となります。",
+           "url": "https://exploratory.io/note/exploratory/Exploratory-DvI0vZo3"
+        }
+      ]
+     },
+     {
+       "title": "広告",
+       "desc": "広告領域の活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "広告運用におけるベイジアンABテストの活用",
+          "desc": "データサイエンス勉強会#16のセプテーニ様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/AB-tak6cIg2"
+         },
+         {
+          "title": "信頼区間を利用した広告クリエイティブのパフォーマンス評価",
+          "desc": "データサイエンス勉強会#15の羽生田様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/MeU7BcZ3"
+         },
+         {
+          "title": "コラボレーション・サーバーの活用例",
+          "desc": "データサイエンス勉強会#13のBeacon Communications様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-Beacon-Communications-bUX3YgA6"
+         },
+         {
+          "title": "統計モデルから得たインサイトの広告ターゲティングへの活用例",
+          "desc": "データサイエンス勉強会#12の株式会社ハッシャダイ様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/DlR3Iwh0"
+         }
+       ]
+     },
+     {
+       "title": "ウェブ",
+       "desc": "ウェブサービス業界の活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "弱小データアナリストが成果を出せるようになるまで",
+          "desc": "データサイエンス勉強会#22のTIS株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-TIS-fiG7GxH0"
+         },
+         {
+          "title": "データ・コミュニケーションツールとしてのExploratoryの活用法",
+          "desc": "データサイエンス勉強会#21の株式会社リクルート様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-by-gnJ3XwM4"
+         },
+         {
+          "title": "サマリビューを起点としたデータ分析ワークフロー",
+          "desc": "データサイエンス勉強会#19のラクスル株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/BQw3YAc3"
+         },
+         {
+          "title": "回帰モデルを利用したチャーンの要因分析",
+          "desc": "データサイエンス勉強会#15のサイボウズ株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/mjD1jam1"
+         },
+         {
+          "title": "データ組織の課題とコラボレーション・サーバー",
+          "desc": "データサイエンス勉強会#12リクルートマーケティングパートナーズ様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-GlQ0IJm6"
+         }
+       ]
+     },
+     {
+       "title": "SaaS",
+       "desc": "SaaS業界の活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "データ・コミュニケーションツールとしてのExploratoryの活用法",
+          "desc": "データサイエンス勉強会#21の株式会社リクルート様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-by-gnJ3XwM4"
+         },
+         {
+          "title": "回帰モデルを利用したチャーンの要因分析",
+          "desc": "データサイエンス勉強会#15のサイボウズ株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/mjD1jam1"
+         },
+         {
+          "title": "もしも新卒1年目の統計学初心者が Exploratoryを使ったら",
+          "desc": "データサイエンス勉強会#13の株式会社ネオキャリアのご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/BQw3YAc3"
+         },
+         {
+          "title": "「データの民主化」の取り組みについて",
+          "desc": "データサイエンス勉強会#13のChatwork株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/csh8VQO8"
+         },
+         {
+          "title": "データ組織の課題とコラボレーション・サーバー",
+          "desc": "データサイエンス勉強会#12リクルートマーケティングパートナーズ様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-GlQ0IJm6"
+         }
+       ]
+     },
+     {
+       "title": "スタートアップ",
+       "desc": "スタートアップ企業や新規事業における活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "弱小データアナリストが成果を出せるようになるまで",
+          "desc": "データサイエンス勉強会#22のTIS株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-TIS-fiG7GxH0"
+         },
+         {
+          "title": "NPSを使った従業員アンケートデータの分析",
+          "desc": "データサイエンス勉強会#17の株式会社オズビジョン様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/NPS-PQc3BXk6"
+         },
+         {
+          "title": "CLV向上のための生存時間分析",
+          "desc": "データサイエンス勉強会#15のakippa株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/BQw3YAc3"
+         },
+         {
+          "title": "GPSデータを使った人の移動の可視化",
+          "desc": "データサイエンス勉強会#13のレイ・フロンティア株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/GPS-LaN4QDk1"
+         },
+         {
+          "title": "「データの民主化」の取り組みについて",
+          "desc": "データサイエンス勉強会#13のChatwork株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/csh8VQO8"
+         }
+       ]
+     },
+     {
+       "title": "製造業（食品・日用品・自動車）",
+       "desc": "製造業における活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "回帰分析の活用による新商品の販売力予測",
+          "desc": "データサイエンス勉強会#23の株式会社ロッテ様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-ONb8Twr1"
+         },
+         {
+          "title": "トピックモデル分析を活用した問合せ業務の効率化",
+          "desc": "データサイエンス勉強会#23の株式会社LIXIL様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-LIXIL-odg2vFc4"
+         },
+         {
+          "title": "車両走行データの時系列クラスタリング",
+          "desc": "データサイエンス勉強会#17のスズキ株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/LGU3Unm1"
+         },
+         {
+          "title": "製造業における時系列予測モデルの活用",
+          "desc": "データサイエンス勉強会#16のライオン株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/JcF4ixB8"
+         }
+       ]
+     },
+     {
+       "title": "サポート",
+       "desc": "サポート領域における活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "自動車トラブルと気象条件などの探索的データ分析",
+          "desc": "データサイエンス勉強会#23の株式会社プレステージ・インターナショナル様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-snA3Odm4"
+         },
+         {
+          "title": "トピックモデル分析を活用した問合せ業務の効率化",
+          "desc": "データサイエンス勉強会#23の株式会社LIXIL様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-LIXIL-odg2vFc4"
+         },
+         {
+          "title": "時系列予測（Prophet）を使ったコールセンターの受電数の予測",
+          "desc": "データサイエンス勉強会#18の株式会社アサイアン様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Prophet-hQK3Muy5"
+         }
+       ]
+     },
+     {
+       "title": "EC",
+       "desc": "EC領域における活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "リピーターを増やすための顧客セグメンテーション分析",
+          "desc": "データサイエンス勉強会#20の日本成長投資アライアンス株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-Utr2eQA5"
+         },
+         {
+          "title": "マーケット・バスケット分析を活用したECサイトの購買分析",
+          "desc": "データサイエンス勉強会#20の株式会社エートゥジェイ様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/EC-by-oPE5bnR2"
+         }
+       ]
+     },
+     {
+       "title": "通信",
+       "desc": "通信業界における活用事例を紹介します。",
+       "insights": [
+         {
+          "title": "データ分析の再現性を高くするためのExploratoryの活用法",
+          "desc": "データサイエンス勉強会#19の株式会社フォーバルテレコム様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-hhc1bRt7"
+         },
+         {
+          "title": "GPSデータを使った人の移動の可視化",
+          "desc": "データサイエンス勉強会#13のレイ・フロンティア株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/GPS-LaN4QDk1"
+         }
+       ]
+     },
+     {
+       "title": "医療",
+       "desc": "医療業界における活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "ExploratoryとSalesforceを利用したビジネスデータのモニタリング",
+          "desc": "データサイエンス勉強会#18の木の香往診クリニック様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-Salesforce-zof0qsu1"
+         }
+       ]
+     },
+     {
+       "title": "人事",
+       "desc": "人事領域における活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "女性活躍推進のための人員構成比のシミュレーション",
+          "desc": "データサイエンス勉強会#22の日鉄ソリューションズ株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/by-nYO6kju2"
+         },
+         {
+          "title": "NPSを使った従業員アンケートデータの分析",
+          "desc": "データサイエンス勉強会#17の株式会社オズビジョン様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/NPS-PQc3BXk6"
+         },
+         {
+            "title": "Data Informed な健康経営",
+            "desc": "データサイエンス勉強会#17のサンホシスコ様のご発表内容となります。",
+            "url": "https://exploratory.io/note/exploratory/Data-Informed-xby4Mny7"
+         },
+         {
+          "title": "従業員の心理的安全性についての分析",
+          "desc": "データサイエンス勉強会#14の株式会社リブセンス様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/uZS0eCk5"
+         },
+         {
+            "title": "データを使ったメンバーのストレス状態のモニタリング",
+            "desc": "データサイエンス勉強会#14の株式会社GxP様のご発表内容となります。",
+            "url": "https://exploratory.io/note/exploratory/cpN7oxu0"
+         },
+         {
+            "title": "健診・問診データを活用した人事施策への活用例",
+            "desc": "データサイエンス勉強会#12の株式会社IHI様のご発表内容となります。",
+            "url": "https://exploratory.io/note/exploratory/GlM7QRK7"
+         }
+       ]
+     },
+     {
+       "title": "教育機関",
+       "desc": "大学などの教育機関における活用事例をご紹介します。",
+       "insights": [
+         {
+          "title": "ExploratoryとRによる全学データサイエンス教育",
+          "desc": "「学校からはじまるデータサイエンスの民主化」セミナー#1の中央大学様のご発表内容となります。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/Exploratory-R-by-zFQ5FoE6mP"
+         },
+         {
+          "title": "エンゲージメント向上のための人事制度改革",
+          "desc": "「学校からはじまるデータサイエンスの民主化」セミナー#1の追手門学院様のご発表内容となります。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/Exploratory-by-FZE0UWE2vw"
+         },
+         {
+          "title": "「学ぶ」分析技術から「使う」分析技術へ - Exploratoryによるドリル演習",
+          "desc": "「学校からはじまるデータサイエンスの民主化」セミナー#1の横浜市立大学様のご発表内容となります。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/Exploratory-by-Bfu6ASG4zx"
+         },
+         {
+          "title": "データサイエンス入門教育の現場から - 46歳新任教員2年間の苦闘",
+          "desc": "「学校からはじまるデータサイエンスの民主化」セミナー#1の多摩大学様のご発表内容となります。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/46-2-by-ssf7pJA1fj"
+         },
+         {
+          "title": "データサイエンス「も」使えるチェンジメーカー輩出への挑戦",
+          "desc": "「学校からはじまるデータサイエンスの民主化」セミナー#1の清泉女子大学様のご発表内容となります。",
+          "url": "https://exploratory.io/note/BWz1Bar4JF/by-GRE2JCr0St"
+         },
+         {
+          "title": "Exploratoryによる作業内容の見える化・文章化・共有化",
+          "desc": "データサイエンス勉強会#22の山形大学様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-by-ans9vlb6"
+         },
+         {
+          "title": "ExploratoryでデータをExploreする 〜研究力の可視化を目指して〜",
+          "desc": "データサイエンス勉強会#22の滋賀医科大学様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-Explore-by-RMX0BHB6"
+         }
       ]
     }
   ]
