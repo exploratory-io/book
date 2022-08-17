@@ -136,7 +136,7 @@ The result looks like this.
 ## Examples
 
 - [Using H2O Powered Machine Learning Algorithms in R & Exploratory](https://exploratory.io/note/exploratory/Using-H2O-Powered-Machine-Learning-Algorithms-in-R-Exploratory-Jcn4oyt6)
-- [Using forecast (auto.arima) in Exploratory](https://exploratory.io/note/hideaki/4704304894566822)
+- [Building Deep Learning Models with Keras inside Exploratory](https://exploratory.io/note/exploratory/Building-Deep-Learning-Models-with-Keras-inside-Exploratory-wSW9HTl4)
 
 - [スピードがむちゃくちゃ早いと有名なH2Oの機械学習アルゴリズムを試してみる](https://exploratory.io/note/exploratory/H2O-sHL2Huo3)
 - [Exploratoryから直接kerasにアクセスしてディープラーニングする](https://exploratory.io/note/exploratory/Exploratory-keras-Ggd3oWB2)
