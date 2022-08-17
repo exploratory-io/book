@@ -175,7 +175,7 @@ Exploratoryデスクトップアプリケーションでは、多くのRのパ�
 
 ## MacOS X 10.15 Catalinaにインストールしたところ、トラブルがあります。どうすればいいですか？
 
-MacOS X 10.15 Catalina上での既知の問題と解決策を[こちら](https://exploratory.io/note/hideaki/MacOS-X-Catalina-Exploratory-IgN0kCu8sb)にまとめましたのでご覧ください。
+MacOS X 10.15 Catalina上での既知の問題と解決策を[こちら](https://exploratory.io/note/exploratory/MacOS-X-Catalina-Exploratory-wJi9WeR3)にまとめましたのでご覧ください。
 
 # コミュニケーション
 
