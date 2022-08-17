@@ -63,6 +63,7 @@ It supports the following category types.
 
 It divides numeric values into groups by the data range. Each group has an equal data range. This the default type. 
 
+
 Following options are available. 
 
 * Number of categories: Number of categories to create.
@@ -80,9 +81,17 @@ Following options are available.
   * Create Groups: Create extra groups for the values outside the range.
   * Ignore
 
+
+If you don't specify the Upper/lower Range, the edge value (min/max value) will be handled by the following rule. 
+
+* If the "Edge Value Handling" is set to "Include Upper Edge", the min value will be included in the lowest category. 
+* If the "Edge Value Handling" is set to "Include Lower Edge", the max value will be included in the highest category. 
+
+
 ### Equal Frequency 
 
 It divides the numeric values into groups by the number of data points. Each group will have the same amount of data points (data rows). Note that it won't be exactly the same number among groups if you have tied values. 
+
 
 Following options are available.
 * Number of categories: Number of categories to create.
@@ -93,6 +102,12 @@ Following options are available.
 * Edge Value Handling: Which end to include in each range. The following options are available.
   * Include Upper Edge
   * Include Lower Edge
+
+If you don't specify the Upper/lower Range, the edge value (min/max value) will be handled by the following rule. 
+
+* If the "Edge Value Handling" is set to "Include Upper Edge", the min value will be included in the lowest category. 
+* If the "Edge Value Handling" is set to "Include Lower Edge", the max value will be included in the highest category. 
+
 
 ### Equal Step 
 
