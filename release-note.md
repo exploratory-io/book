@@ -7,12 +7,12 @@ Released on 8/17/2022.
 ### Bug Fixes
 
 
-* Data Source: Selecting a nested data frame in the JSON tree on the left-hand side of the JSON Import dialog failed and showed an error "invalid subscript type 'list'". 
-* Data Wrangling: When a grouped column is also used for the value column, the calculation result did not reflect the before "grouped by" state.
-* Data Wrangling: When selecting the "Custom" option from the column menu, the Filter Dialog did not open.
-* Data Wrangling: If you exported the Chart Table data to the Google Sheets, empty cells were filled with "null" text in the sheet.
+* Data Source: Selecting a nested data frame in the JSON tree on the left-hand side of the JSON Import dialog failed and showed an error "invalid subscript type 'list'".
+* Data Wrangling: Summarize: When the same column was used for both Group and Value, the calculation result did not reflect the grouping status.
+* Data Wrangling: Filter: When selecting the "Custom" option from the column header menu, the Filter Dialog did not open.
+* Data Wrangling: Exporting the Chart Table data to the Google Sheets, empty cells ended up becoming "null" text.
 * Data Wrangling: Window Calculation: Changing the # of Rows for the preview and clicking the Preview Button didn't update the preview result.
-* Dashboard: Desktop froze or shut down suddenly if you previewed or published a large Dashboard. 
+* Dashboard: Desktop became frozen or shut down when you tried to preview or publish a Dashboard with large data.
 * Parameter: When changing parameter type from the List of Values to the Input field, it raised the "e.value.map is not a function" error.
 
 
@@ -37,10 +37,10 @@ Released on 7/15/2022.
 
 * Chart: Color & Group Setting dialog: Now you can open the custom palette dialog from the "Edit Custom Palette" menu in the color palette dropdown.
 * Chart: Color & Group Setting dialog: Now you can configure which edge to include in groups from the "Edge Value Handling" option in the "Manual", "Equal Width" and "Equal Freq" Grouping Types.
-* Chart: Pivot: Summarize Table: Table: Now you can change the column width for all the columns at once by checking the "Apply All Columns" checkbox at the Cell Width setting. 
+* Chart: Pivot: Summarize Table: Table: Now you can change the column width for all the columns at once by checking the "Apply All Columns" checkbox at the Cell Width setting.
 
 
-* Dashboard: Note: Now you can download data and images for each chart in the published Note and Dashboard. 
+* Dashboard: Note: Now you can download data and images for each chart in the published Note and Dashboard.
 * Dashboard: Now you can show/hide the title of the content area from the property dialog.
 
 
@@ -54,12 +54,12 @@ Released on 7/15/2022.
 * Data Source: RODBC data source failed to load due to the invalid UTF-8 characters in character data.
 
 
-* Table View: Summary View: Inf/-Inf values in Date/POSIXct columns were treated as NA in the Table and Summary View. 
+* Table View: Summary View: Inf/-Inf values in Date/POSIXct columns were treated as NA in the Table and Summary View.
 
 
 * Data Wrangling: After duplicating a data frame, the toolbar and data frame list showed the source data frame name where it should show the new data frame name.
 * Data Wrangling: Importing a .df (data frame) file by drag and drop didn't work if there was a data frame name conflict.
-* Data Wrangling: Window Calculation / Pivot / Summarize: Improved the column selector widget usability on the dialogs. 
+* Data Wrangling: Window Calculation / Pivot / Summarize: Improved the column selector widget usability on the dialogs.
 * Data Wrangling: The support of @{} parameter notation was missing in the custom calculation editor for mutate steps on multiple columns.
 * Data Wrangling: Pivot: When a character column was selected for value along with an aggregation function that returns a numeric value, it raised the 'cannot convert' error.
 
@@ -74,7 +74,7 @@ Released on 7/15/2022.
 * Note: Number charts didn't show up on an exported Word Doc.
 * Dashboard: Supported adding a row/column even when the dashboard is blank.
 * Dashboard: The text edit dialog should not close when clicking outside of the dialog.
-* Dashboard: The title of the contents area got collapsed if you set an empty text for the title. 
+* Dashboard: The title of the contents area got collapsed if you set an empty text for the title.
 * Dashboard: When there was only one row, the 'Add Chart' button was not visible after deleting a chart from the only row.
 
 
@@ -97,7 +97,7 @@ Released on 6/30/2022.
 
 ### Bug Fixes
 
-* Collaboration: Project update failed if the name of your home directory has a space character. 
+* Collaboration: Project update failed if the name of your home directory has a space character.
 * Data Wrangling: Pivot step failed with the "Can't convert" error message when assigning a non-numeric column to the value.
 
 
