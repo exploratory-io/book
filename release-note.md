@@ -1,5 +1,21 @@
 # Release Note
 
+## 6.10.6
+
+Released on 8/17/2022.
+
+### Bug Fixes
+
+
+* Data Source: Selecting a nested data frame in the JSON tree on the left-hand side of the JSON Import dialog failed and showed an error "invalid subscript type 'list'". 
+* Data Wrangling: When a grouped column is also used for the value column, the calculation result did not reflect the before "grouped by" state.
+* Data Wrangling: When selecting the "Custom" option from the column menu, the Filter Dialog did not open.
+* Data Wrangling: If you exported the Chart Table data to the Google Sheets, empty cells were filled with "null" text in the sheet.
+* Data Wrangling: Window Calculation: Changing the # of Rows for the preview and clicking the Preview Button didn't update the preview result.
+* Dashboard: Desktop froze or shut down suddenly if you previewed or published a large Dashboard. 
+* Parameter: When changing parameter type from the List of Values to the Input field, it raised the "e.value.map is not a function" error.
+
+
 ## 6.10.5
 
 Released on 7/26/2022.
