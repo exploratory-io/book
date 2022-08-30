@@ -61,6 +61,11 @@
       "desc": "コンサルティング業界の活用事例をご紹介します。",
       "insights": [
         {
+         "title": "ビジュアル・コミュニケーションツールとしてのExploratoryの活用",
+         "desc": "データサイエンス勉強会#24の株式会社ADKマーケティング・ソリューションズ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/24-Exploratory-jnC9vEJ1"
+        },
+        {
          "title": "生存分析モデルを利用したLineのブロック要因分析",
          "desc": "データサイエンス勉強会#23のCREFIL株式会社様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/Line-by-CREFIL-Aik1bhL2"
