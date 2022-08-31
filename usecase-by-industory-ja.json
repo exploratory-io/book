@@ -5,6 +5,11 @@
       "desc": "マーケティング業界やマーケティング担当者様の活用事例をご紹介します。",
       "insights": [
         {
+         "title": "広告データ分類のためのK-Meansクラスタリング",
+         "desc": "データサイエンス勉強会#24のSPIインタラクティブ株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/K-Means-by-SPI-FhI9Kjg2"
+        },
+        {
          "title": "生存分析モデルを利用したLineのブロック要因分析",
          "desc": "データサイエンス勉強会#23のCREFIL株式会社様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/Line-by-CREFIL-Aik1bhL2"
@@ -106,6 +111,11 @@
        "title": "広告",
        "desc": "広告領域の活用事例をご紹介します。",
        "insights": [
+         {
+          "title": "広告データ分類のためのK-Meansクラスタリング",
+          "desc": "データサイエンス勉強会#24のSPIインタラクティブ株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/K-Means-by-SPI-FhI9Kjg2"
+         },
          {
           "title": "広告運用におけるベイジアンABテストの活用",
           "desc": "データサイエンス勉強会#16のセプテーニ様のご発表内容となります。",
