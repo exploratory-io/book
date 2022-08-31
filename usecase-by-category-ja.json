@@ -62,6 +62,11 @@
       "desc": "回帰分析や機会学習のアルゴリズムの活用事例を紹介します。",
       "insights": [
         {
+         "title": "サイトの閲読と有料会員継続の関係 - 「生存分析」活用",
+         "desc": "データサイエンス勉強会#24の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-mih7Anf2"
+        },
+        {
          "title": "自動車トラブルと気象条件などの探索的データ分析",
          "desc": "データサイエンス勉強会#23の株式会社プレステージ・インターナショナル様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-snA3Odm4"
@@ -163,6 +168,11 @@
       "title": "生存分析",
       "desc": "生存分析のアルゴリズムの活用事例を紹介します。",
       "insights": [
+        {
+         "title": "サイトの閲読と有料会員継続の関係 - 「生存分析」活用",
+         "desc": "データサイエンス勉強会#24の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-mih7Anf2"
+        },
         {
          "title": "生存分析モデルを利用したLineのブロック要因分析",
          "desc": "データサイエンス勉強会#23のCREFIL株式会社様のご発表内容となります。",
