@@ -133,6 +133,11 @@
        "desc": "ウェブサービス業界の活用事例をご紹介します。",
        "insights": [
          {
+         "title": "サイトの閲読と有料会員継続の関係 - 「生存分析」活用",
+         "desc": "データサイエンス勉強会#24の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-mih7Anf2"
+         },
+         {
           "title": "弱小データアナリストが成果を出せるようになるまで",
           "desc": "データサイエンス勉強会#22のTIS株式会社様のご発表内容となります。",
           "url": "https://exploratory.io/note/exploratory/by-TIS-fiG7GxH0"
@@ -160,9 +165,14 @@
        ]
      },
      {
-       "title": "SaaS",
-       "desc": "SaaS業界の活用事例をご紹介します。",
+       "title": "SaaS・サブスクリプション",
+       "desc": "SaaS業界やサブスクリプション型ビジネスにおける活用事例をご紹介します。",
        "insights": [
+         {
+         "title": "サイトの閲読と有料会員継続の関係 - 「生存分析」活用",
+         "desc": "データサイエンス勉強会#24の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-mih7Anf2"
+         },
          {
           "title": "データ・コミュニケーションツールとしてのExploratoryの活用法",
           "desc": "データサイエンス勉強会#21の株式会社リクルート様のご発表内容となります。",
