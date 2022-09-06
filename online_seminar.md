@@ -1,4 +1,4 @@
-# Seminar #72 - How to Use Exploratory Part 3 - Dashboard & Note
+# Seminar #73 - How to Use Exploratory Part 3 - Dashboard & Note
 ## Date/Time: 2022/8/24 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
@@ -25,7 +25,7 @@ How to Use Exploratory Series
 
 ----
 
-# Seminar #73 - How to Use Exploratory Part 4 - Dashboard & Note
+# Seminar #74 - How to Use Exploratory Part 4 - Dashboard & Note
 ## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
