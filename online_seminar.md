@@ -1,20 +1,20 @@
-# Seminar #72 - How to Use Exploratory Part 3 - Analytics
-## Date/Time: 2022/8/17 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
+# Seminar #73 - How to Use Exploratory Part 3 - Dashboard & Note
+## Date/Time: 2022/8/24 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-There are many analytics features and algorithms supported in Exploratory but it might confuse you on where and how to start if you're not familiar with such analytics methods.
+Once you have created a series of charts and found useful insights, it's time to share the charts and insights with others. That's when you want to create Dashboards to share the snapshot of what you have found or create Notes to communicate your finding effectively.
 
-So, in this seminar, Kan will walk you through how you can start using Analytics features of Exploratory to analyze data by introducing the basic framework for finding correlation among variables and using prediction models to analyze such correlation further.
+In this seminar, Kan will walk you through how you can create Dashboards and Notes quickly with Exploratory. He will also introduce how you can share Dashboards and Notes and schedule them at Exploratory Server.  
 
-This is the 3rd of 4 sessions of 'How to Use Exploratory' series.
+This is the last of 4 sessions of 'How to Use Exploratory' series.
 
 Agenda:
 
-* Summary View - Correlation Mode
-* Create Prediction Models and Understand the Result
-* Target Variable: Numeric vs. Logical
-* Use the Prediction Model to Predict
+* Create Dashboards
+* Create Notes
+* Add Parameters
+* Publish & Share
 
 How to Use Exploratory Series
 
@@ -25,7 +25,7 @@ How to Use Exploratory Series
 
 ----
 
-# Seminar #73 - How to Use Exploratory Part 4 - Dashboard & Note
+# Seminar #74 - How to Use Exploratory Part 4 - Dashboard & Note
 ## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)

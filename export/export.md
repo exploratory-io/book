@@ -60,7 +60,7 @@ You can export your data to the Google Sheets.
 
 You can export your reproducible steps as an R Script file.
 
-If you want to create an environment on a different machine (Windows or Mac) where you want to run this exported R script as a standalone, you can follow the instruction in [this document](https://exploratory.io/note/hideaki/6838376453273360).
+If you want to create an environment on a different machine (Windows or Mac) where you want to run this exported R script as a standalone, you can follow the instruction in [this document](https://exploratory.io/note/exploratory/Creating-R-environment-where-R-script-from-Exploratory-can-run-tfS2dYo6).
 
 
 ## Chart Options

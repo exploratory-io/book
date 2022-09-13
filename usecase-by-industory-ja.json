@@ -5,6 +5,11 @@
       "desc": "マーケティング業界やマーケティング担当者様の活用事例をご紹介します。",
       "insights": [
         {
+         "title": "広告データ分類のためのK-Meansクラスタリング",
+         "desc": "データサイエンス勉強会#24のSPIインタラクティブ株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/K-Means-by-SPI-FhI9Kjg2"
+        },
+        {
          "title": "生存分析モデルを利用したLineのブロック要因分析",
          "desc": "データサイエンス勉強会#23のCREFIL株式会社様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/Line-by-CREFIL-Aik1bhL2"
@@ -61,6 +66,11 @@
       "desc": "コンサルティング業界の活用事例をご紹介します。",
       "insights": [
         {
+         "title": "ビジュアル・コミュニケーションツールとしてのExploratoryの活用",
+         "desc": "データサイエンス勉強会#24の株式会社ADKマーケティング・ソリューションズ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/24-Exploratory-jnC9vEJ1"
+        },
+        {
          "title": "生存分析モデルを利用したLineのブロック要因分析",
          "desc": "データサイエンス勉強会#23のCREFIL株式会社様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/Line-by-CREFIL-Aik1bhL2"
@@ -102,6 +112,11 @@
        "desc": "広告領域の活用事例をご紹介します。",
        "insights": [
          {
+          "title": "広告データ分類のためのK-Meansクラスタリング",
+          "desc": "データサイエンス勉強会#24のSPIインタラクティブ株式会社様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/K-Means-by-SPI-FhI9Kjg2"
+         },
+         {
           "title": "広告運用におけるベイジアンABテストの活用",
           "desc": "データサイエンス勉強会#16のセプテーニ様のご発表内容となります。",
           "url": "https://exploratory.io/note/exploratory/AB-tak6cIg2"
@@ -127,6 +142,11 @@
        "title": "ウェブ",
        "desc": "ウェブサービス業界の活用事例をご紹介します。",
        "insights": [
+         {
+         "title": "サイトの閲読と有料会員継続の関係 - 「生存分析」活用",
+         "desc": "データサイエンス勉強会#24の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-mih7Anf2"
+         },
          {
           "title": "弱小データアナリストが成果を出せるようになるまで",
           "desc": "データサイエンス勉強会#22のTIS株式会社様のご発表内容となります。",
@@ -155,9 +175,14 @@
        ]
      },
      {
-       "title": "SaaS",
-       "desc": "SaaS業界の活用事例をご紹介します。",
+       "title": "SaaS・サブスクリプション",
+       "desc": "SaaS業界やサブスクリプション型ビジネスにおける活用事例をご紹介します。",
        "insights": [
+         {
+         "title": "サイトの閲読と有料会員継続の関係 - 「生存分析」活用",
+         "desc": "データサイエンス勉強会#24の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-mih7Anf2"
+         },
          {
           "title": "データ・コミュニケーションツールとしてのExploratoryの活用法",
           "desc": "データサイエンス勉強会#21の株式会社リクルート様のご発表内容となります。",
