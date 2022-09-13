@@ -2,7 +2,7 @@
 
 ダウンロードオプションを有効にしてパブリッシュされたデータ、チャート、アナリティクスなどのインサイトのデータは、CSV APIを用いてダウンロードすることができます。CSV APIのURLは、サーバのインサイトのページのダウンロードボタンから、「API - CSVデータ」を選択することで確認することができます。
 
-例: https://exploratory.io/viz/kanaugust/Exchange-Rate-Japanese-Yen-vs-U-S-Dollar-Fdt2eDO7CC?lang=ja
+例: [Exchange Rate - Japanese Yen vs U.S. Dollar](https://exploratory.io/viz/kanaugust/Exchange-Rate-Japanese-Yen-vs-U-S-Dollar-Fdt2eDO7CC?lang=ja)
 
 
 ![](images/csvapi0_ja.png)
