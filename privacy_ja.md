@@ -16,11 +16,9 @@
 
 ### ウェブブラウザからの情報
 
-当社のウェブサイトを閲覧した場合、クッキーやウェブサーバーログなどの一般的なインターネット技術を利用して、ほとんどのウェブサイトが収集する情報と同等の、基本的な情報を収集します。 こちらは、Exploratoryのアカウントを持っているかどうかに関わらず、全ての人から収集するものです。
+当社のウェブサイトを閲覧した場合、クッキーやウェブサーバーログなどの基本的なインターネット技術を利用して、一般的なウェブサイトが収集する情報と同等の情報を収集します。 こちらは、Exploratoryのアカウントを持っているかどうかに関わらず、全ての人から収集するものです。
 
 私たちが収集する情報には、当社のウェブサイトの訪問者のブラウザーの種類、言語設定、参照サイト、リクエストされたウェブサイト、各訪問者のリクエストの日付と時刻が含まれます。また、インターネット・プロトコル（IP）アドレスのような個人を特定しうる情報も収集します。
-
--> "additional websites requested"という単語の訳に不安があり、確認をお願いします。原文: "The information we collect about all visitors to our website includes the visitor’s browser type, language preference, referring site, additional websites requested, and the date and time of each visitor request. "
 
 #### なぜこれらの情報を収集するのですか？
 
