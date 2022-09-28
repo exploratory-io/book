@@ -6,7 +6,7 @@ Released on 9/27/2022.
 
 ### Breaking Changes
 
-* Chart: If you have a Pie/Ring chart with the "Others" group option and the "Sort by Value" checked, now the "Others" group shows up at the end regardless of the slice size. 
+* Chart: If you have a Pie/Ring chart with the "Others" group and the "Sort by Value" checked, now the "Others" group shows up at the end regardless of the slice size. 
 
 ### Enhancements
 
