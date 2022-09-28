@@ -9,9 +9,9 @@ You can open this dialog by selecting `Trend Line` menu of Y-Axis properties.
 ![](images/trend-toggle.png)
 
 
-## Types
+## Type
 
-We support following 3 Trend Line types.
+We support the following Trend Line types.
 
 ### Linear Regression  —  LM
 
@@ -33,13 +33,35 @@ This one uses Generalized Additive Model (GAM) internally to draw trend lines. I
 ![](images/trend-gam.png)
 
 
-## Options
+### Logistic Regression
 
-* Line Length - You can select one of following options. 
-  * Data Range for Each Group - It draws the trend lines and ranges only for the X-Axis range for each group of Color
-  ![](images/trend-length-each-group.png)
+This one uses the Logistic Regression internally to draw trend lines. 
 
-  * Data Range for All Groups - It draws the trend lines and ranges for the entire chart area.  
-  ![](images/trend-length-all-groups.png)
+### Poisson Regression
 
-* Show Confidence Interval - You can show/hide the confidence interval ranges. Default is checked. 
+This one uses the Poisson Regression internally to draw trend lines. 
+
+
+
+## Target 
+
+You can choose the target data group for the Trend Lines. It is available when you assign a column to Color. It is available for Scatter (No Aggregation) and Scatter (With Aggregation) types.
+
+* All: It draws a single Trend Line based on the all data points regardless of the Color setting. 
+* Each Color Group: It draws Trend Lines for each color group. This is the default option.
+
+## Line Length 
+
+You can choose one of the following options for the Trend Line length. 
+
+* Data Range for Each Group - It draws the trend lines and ranges only for the X-Axis range for each group of Color
+![](images/trend-length-each-group.png)
+
+* Data Range for All Groups - It draws the trend lines and ranges for the entire chart area.  
+![](images/trend-length-all-groups.png)
+
+## Show Confidence Interval 
+
+You can show/hide the confidence interval ranges. Default is "show".
+
+
