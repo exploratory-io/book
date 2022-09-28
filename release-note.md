@@ -1,5 +1,117 @@
 # Release Note
 
+## 6.11.0
+
+Released on 9/27/2022.
+
+### Breaking Changes
+
+* Chart: If you have a Pie/Ring chart with the "Others" group and the "Sort by Value" checked, now the "Others" group shows up at the end regardless of the slice size. 
+
+### Enhancements
+
+* Table View: Now you can configure how to show the invisible characters such as spaces, tabs, etc, from the Property dialog. 
+* Table View: Now you can configure the number formatting from the Property dialog. 
+* Table View: Now you can show the NA ratio bars at the column header. You can configure it from the Property dialog.
+
+
+* Data Wrangling: Data Frame Merge: Supported selecting multiple data frames by checking checkboxes on the data frame list.
+* Data Wrangling: Filter: Now you can select multiple values more easily for the 'Is In' and 'Is Not In' operations.
+* Data Wrangling: Filter: Supported the Multiple Values option for the 'Starts With', 'Ends With', and 'Contains' operators.
+* Data Wrangling: Join: Now you can select which columns to keep from the join target data frame.
+* Data Wrangling: Now you can create branches on multiple levels.
+* Data Wrangling: Now you can replace values at once for multiple columns.
+* Data Wrangling: Replace Values with Condition: Redesigned the dialog to Support Re-order, Multiple Conditions, and Text Input. - Multiple Condition support
+* Data Wrangling: Text Wrangling: Now it automatically converts column data type to numeric for the Kansuji /numbers option.
+
+
+* Chart: Highlight: Now you can use the "Show as ‘Others’ for not highlighted values." option to improve the chart drawing performance in Scatter and Bubble chart types.
+* Chart: Now you can set the legend order and value order separately for Area and Bar (Stacked) chart types from the Color & Group Setting dialog.
+* Chart: Now you can show a single trend line for all the data even if you assign a column to Color by the "One Line Per Chart" Trend Line option in the Scatter chart.
+* Chart: Now you can show the detailed data by clicking the chart on Pivot, Summarize Table, Map (Standard), Map (Extension), and Map (Long/Lat) chart types. 
+* Chart: Now you can use "Previous Value", "Next Value" and "Period Ago" Window Calculations.
+* Chart: Now you can use the "Middle" option in the "Show Value on Plot" property on Bar, Error Bar, and Error Bar (Summarized Data) chart types.
+* Chart: Now you can use the horizontal orientation on Boxplot and Violin chart types.
+* Chart: Now you can use the Limit feature in Pivot and Summarize Table.
+* Chart: Pivot: Summarize Table: Now you can configure the visibility of the popup on hover from the Property dialog.
+
+
+* Analytics: Cox Regression / Survival Forest: Now you can predict the survival rate of new observations on a specific date or the date when the predicted survival rate drops to a specific value.
+* Analytics: Factor Analysis: Now the table of weights is sorted so that the variables that consist of similar factors are shown close to each other.
+* Analytics: Topic Model: Now the topic ID numbers are assigned based on the number of documents the topic has. In other words, the most popular topic gets presented as topic 1, the second popular topic as topic 2, and so on.
+
+
+* Dashboard: Note: Now you can show the detailed data by clicking charts.
+* Dashboard: Note: Now you can use the "Export Chart Data" and "Export Chart Image" options for charts and analytics on the Desktop.
+* Dashboard: Now you can edit a text panel on a Dashboard with the markdown editor.
+* Dashboard: Supported the 'Add Chart' buttons to each row and column.
+
+
+* Parameter: Improved parameter value selection experience by introducing a new pulldown and list widget for single and multi List of Values.
+
+
+### Bug Fixes
+
+* Data Source: Data Catalog: The Data Catalog list was not sorted by updated date.
+* Data Source: Google Analytics: Improved the query performance for getting profile information from Google.
+* Data Source: Selecting a nested data frame showed the "invalid subscript type list" error in the JSON import dialog.
+
+
+* Data Wrangling: Added 'With Condition' option for the create calculation multi-column menu.
+* Data Wrangling: Adding a suffix did not work in the Join dialog when you set it for only one side.
+* Data Wrangling: After saving a step with POSIXct columns as a data frame, reopening the data frame caused the columns to become character columns.
+* Data Wrangling: Clicking the OK button in the "Select (Remove) Columns" dialog didn't respond.
+* Data Wrangling: Filter Dialog: The Command + Enter shortcut key didn't execute the command for a custom condition.
+* Data Wrangling: Reorganized the Math Functions in the Column Header Menu.
+* Data Wrangling: Replace Values with New Values: When searching values, it showed values that did not match with the search text.
+* Data Wrangling: Summarize: When assigning the same date columns multiple times to group by, the second and subsequent columns aggregated the value of the first date column which was already aggregated.
+* Data Wrangling: Summarize: When opening a column name edit popup on the Summarize Dialog, it showed a different column name.
+
+
+* Chart: Color Dialog: If you edited the custom palette that was used for the chart, the chart wasn't updated immediately.
+* Chart: Color: Long category names were cut off in the Color & Group Setting dialog.
+* Chart: Column assignments got screwed up after dragging and dropping Value columns in Radar chart.
+* Chart: If you exported the chart data to Google Sheets, a "null" text showed up in the empty cells.
+* Chart: If you have multiple columns assigned to Y-Axis and removed the 1st one, the 2nd column moved up to the 1st position but the Window Calculation setting on the 2nd column didn't follow the column move.
+* Chart: If you selected the "(Row ID)" column to the Group By, the show detail dialog showed all the data in Scatter (with Aggregation) chart. 
+* Chart: Pivot: Summarize Table: Colors on categorical values should respect the factor/text order.
+* Chart: Pivot: Summarize Table: It didn't remember the last decision of the "Apply All" checkbox if you reopened the Formatting dialog.
+* Chart: Radar: Increase the default margin size between Radar charts in order to avoid label text overlapping and incorrect chart alignment. 
+* Chart: Table: A long URL text was cut in the middle even if you set the text wrap option.
+* Chart: The "Others" group should show up at the end of the categories.
+* Chart: The Equal Step grouping type didn't include the lowest value if you set the "Include Upper Edge" and didn't set the Lower Range value.
+* Chart: The popup position was off if the chart used the Repeat By. 
+* Chart: The position of the Quick Window Function submenu was off on the Area chart.
+
+
+* Analytics: Changing the analytics type from the "Word Count" to the "Topic Model" reset the selected dictionaries.
+* Analytics: Chisq: Pivot table showed % values based on the whole table as opposed to each column.
+* Analytics: Clicking the Pin icon in the Analytics view failed due to the "cannot read properties of undefined (reading 'deps')" error.
+
+
+* Dashboard: After opening a Dashboard, opening another note showed the Run button in the incorrect position.
+* Dashboard: Chart didn't reflect the parameter change if you showed a chart in the full-screen mode after changing parameters.
+* Dashboard: Chart didn't show the correct color for the "Others" if you set a custom color for the "Others".
+* Dashboard: The dashboard layout got corrupted if the page name contained special characters such as braces, curly braces, and underscores.
+* Dashboard: Desktop suddenly terminated without any notice while publishing a large dashboard.
+* Dashboard: If you extract a zip file created by the HTML export, the folder name should be based on the Dashboard name.
+* Dashboard: Japanese characters were garbled if you opened a chart data CSV file exported from the Dashboard on Excel.
+* Dashboard: When editing a chart title and number title, the dialog was closed by accidentally clicking outside of the dialog.
+* Dashboard: You should be able to update the parameter even if the Dashboard preview fails.
+
+
+* Note: If the chart had no data to show, it showed the "There is no data to display." message with an unnecessary vertical scroll bar.
+
+
+* Publish: Publish Dialog should show up after 15 sec if a connection is timed out. 
+
+
+* Export: When exporting and importing a project, Folders in the projects were opened on some occasions.
+* General: The corner of the splash screen was missing at the application startup.
+* General: There were cases where opening a data frame hung at reading the internal data cache parquet file on Windows.
+* Installation: R package installation from CRAN through a password-protected proxy did not work.
+
+
 ## 6.10.6
 
 Released on 8/17/2022.

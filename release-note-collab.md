@@ -1,13 +1,34 @@
 # Release Note
 
-## 6.10.4.6
+## 6.11.0.5
 
-Released on 7/18/2022.
+Released on 9/28/2022.
 
 ### Download
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.10.4.6.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.10.4.6.tar.gz)
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.11.0.5.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.11.0.5.tar.gz)
+
+### Enhancements
+
+Insight: Now you can show the detail data by clicking a Chart on Dashboard and Note. 
+Parameter: Supported the new List of Values widget for multi-select and single-select parameters.
+
+### Bug Fixes
+
+Insight: A notification was not sent to the team members when an insight was restored from the history even if you published the insight with the "Notify team members" option. 
+Insight: Japanese characters were garbled if you opened a chart data CSV file exported from the Dashboard on Excel.
+Insight: Now all the invited users can use the Parameter by default.
+Insight: The information dialog showed duplicate data frame names on Dashboard and Note. 
+Insight: You couldn't unsubscribe the team-owned insight and if you were a team member but not an original author.
+Parameter: Now it doesn't include the number of rows processed by using Parameter in the total number of rows processed.
+Parameter: Now it supports dynamic min and max dates for date parameters.
+Scheduler: Dashboard scheduling failed if an R query returned 0 rows for a Chart in a Dashboard. 
+
+
+## 6.10.4.6
+
+Released on 7/18/2022.
 
 ### Bug Fixes
 
