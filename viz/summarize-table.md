@@ -93,6 +93,10 @@ You can choose how to calculate the totals/subtotals at the Calculation Target i
 ![](images/stable8.png)
 
 
+## Show Detail
+
+You can show the detailed data underlying the chart by clicking the value text. See [Show Detail](show-detail.md) for the detail.
+
 
 ## Layout Configuration
 

@@ -66,6 +66,10 @@ You can use the Rename Column Names feature to update column names if you assign
 You can use the Axis Setting feature to assign columns to Y1/Y2 axes if you assign multiple columns to Y-Axis. See [Axis Setting](dualy-setting.md) for the detail.
 
 
+## Show Detail
+
+You can show the detailed data underlying the chart by clicking the chart figure. See [Show Detail](show-detail.md) for the detail.
+
 
 ## Layout Configuration
 

@@ -38,6 +38,10 @@ Unlike the other chart types, if you export the Heatmap chart data, the data wil
 
 ![](images/heatmap_export.png)
 
+## Show Detail
+
+You can show the detailed data underlying the chart by clicking the chart figure. See [Show Detail](show-detail.md) for the detail.
+
 
 ## Save as an Image
 

@@ -34,6 +34,11 @@ You can use Limit Values to filter the categories by the aggregated values. See 
 You can use the Rename Column Names feature to update column names if you assign multiple columns to Value. See [Rename Column Names](rename-column-names.md) for the detail.
 
 
+## Show Detail
+
+You can show the detailed data underlying the chart by clicking the chart figure. See [Show Detail](show-detail.md) for the detail.
+
+
 ## Layout Configuration
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 

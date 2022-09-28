@@ -129,6 +129,9 @@ You can use Limit Values to filter the categories by the aggregated values. See 
 You can use the Missing Value Handling feature to control missing values. See [Missing Value Handling](missing-value-handling.md) for the detail.
 
 
+## Show Detail
+
+You can show the detailed data underlying the chart by clicking the chart figure. See [Show Detail](show-detail.md) for the detail.
 
 ## Layout Configuration
 

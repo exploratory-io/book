@@ -72,6 +72,12 @@ You can choose how to calculate the totals/subtotals at the Calculation Target i
 * Data Before Aggregation: Totals and subtotals are calculated based on the raw data before any aggregations. 
 
 
+## Show Detail
+
+You can show the detailed data underlying the chart by clicking the value text. See [Show Detail](show-detail.md) for the detail.
+
+
+
 ## Layout Configuration
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 

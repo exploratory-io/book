@@ -218,6 +218,7 @@
      * [Rename Column Names](viz/rename-column-names.md)
      * [Axis Setting](viz/dualy-setting.md)
      * [Axis Formatting](viz/axis-format.md)
+     * [Show Detail](viz/show-detail.md)
      * [Fit to Screen (Table)](viz/table-fit-to-screen.md)
      * [Number of Unique Values Check](viz/number-of-unuque-values-check.md)
      * [Number of Unique Values Check (日本語)](viz/number-of-unuque-values-check-ja.md)

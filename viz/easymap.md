@@ -57,6 +57,10 @@ You can categorize numeric values inside the chart. See [Category(Binning)](cate
 
 You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
 
+## Show Detail
+
+You can show the detailed data underlying the chart by clicking the chart figure. See [Show Detail](show-detail.md) for the detail.
+
 ## Save as an Image
 
 You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.

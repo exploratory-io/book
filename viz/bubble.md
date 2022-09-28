@@ -56,6 +56,9 @@ You can use Limit Values to filter the categories by the aggregated values. See 
 
 You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
 
+## Show Detail
+
+You can show the detailed data underlying the chart by clicking the chart figure. See [Show Detail](show-detail.md) for the detail.
 
 ## Layout Configuration
 
