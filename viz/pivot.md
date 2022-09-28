@@ -50,6 +50,9 @@ You can sort by the column by clicking the column header. Note that the sort hap
 
 You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
 
+## Limit Values
+
+You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail. 
 
 ## Custom Function
 
