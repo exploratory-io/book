@@ -4,25 +4,35 @@ You can assign new values to a column by setting conditions with easy-to-use dia
 
 ## How to Access?
 
-![](images/case_when.png)
+![](images/case_when_column_menu.png)
 
-* From Column Menu on Character Column, select "Replace Values" -> "By Setting Conditions".
+* From Column Menu on Character Column, select "Replace Values" -> "With Conditions".
 
 ## How to Use?
 
 ### Set Condition and New Values
 
-To assign new value, you need to set a condition. For example, if you want to assign 100 for the case where BusinessTravel column value is "Non-Travel" like below screenshoot,
+To assign new value, you need to set a condition. For example, if you want to assign 100 for the case where City column value is "Tokyo" like below screenshoot,
 
-![](images/case_when2.png)
+![](images/case_when_dialog.png)
 
 then you can click the condition and set it in the Filter like dialog.
 
-![](images/case_when3.png)
+![](images/case_when_condition.png)
 
 
 ### Set New Values
 
-To set a new value for each condition, click the New Value field and then Enter New Value Dialog popup. Enter value and click OK.
+To set a new value for each condition, you can select either of followings:
 
-![](images/case_when4.png)
+- Input Field (Text Input Field for Character column and Number Input Field for for Numeric column.)
+- Column
+- NA
+- Calculation
+
+![](images/case_when_new_value.png)
+
+To change the type, click the button label and select the available option.
+
+![](images/case_when_new_value_type.png)
+
