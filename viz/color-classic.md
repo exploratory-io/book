@@ -1,50 +1,14 @@
-# Color & Group Setting
+## Heatmap 
 
+For the Heatmap, you can assign a column with continuous values (number column). 
 
-You can set the color and grouping setting in the Color & Group Setting dialog. 
+## Contour
 
+For the Contour chart, you can assign a column with either discrete values (text column) or continuous values (number column) 
 
-## How to Open the Dialog
+## Word Cloud
 
-You can select the "Color & Group" menu from the column menu at Color. 
-
-![](images/build_palette1.png)
-
-
-
-## Color Palette setting
-
-
-
-
-
-
-
-
-
-## Grouping setting
-
-
-
-
-
-
-## Customize Color and Display Name
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+For the Word Cloud chart, you can assign a column with either discrete values (text column) or continuous values (number column) 
 
 
 
@@ -81,3 +45,11 @@ You can create your own color palettes for discrete values. You can use it on Ba
 
 
 
+## Highlight 
+
+You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
+
+
+## Edit Display Name 
+
+You can edit the display name of the color values. See [Edit Display Name](edit-display-name.md) for the detail. 
