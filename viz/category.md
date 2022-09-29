@@ -45,12 +45,7 @@ You can change the setting in the property dialog. The following example shows s
 
 ## Creating a Category at Color
 
-If you assign a numeric column at Color, it divides the values into 5 groups by default as well as others. The difference is that the function option is set to "As Number". 
-
-In case of Color, the output of any numeric functions such as "As Integer by 10", "Log 2", "Log 10" are automatically categorized.  
-
-
-![](images/category5.png)
+See [Color](color.md) for how to create categories at Color.
 
 
 
@@ -161,7 +156,6 @@ Following options are available.
 You can define a logical condition to divide the data into 2 groups (TRUE and FALSE). Currently, this option is supported only at Color. 
 
 
-![](images/logicalize2.png)
 
 Following operators are availbale. 
 

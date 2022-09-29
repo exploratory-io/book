@@ -205,6 +205,7 @@
      * [Column Configuration Dialog](viz/column-configuration-dialog.md)
      * [Color Setting](viz/color.md)
      * [Color Setting (日本語)](viz/color-ja.md)
+     * [Custom Palette Setting](viz/custom-palette.md)
      * [Pin](viz/pin.md)
      * [Save as PNG/SVG](viz/save.md)
      * [Save as Exploratory Data File](viz/save-as-edf.md)

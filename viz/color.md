@@ -1,83 +1,104 @@
 # Color & Group Setting
 
 
-You can set the color and grouping setting in the Color & Group Setting dialog. 
+You can update the color and grouping settings in the Color & Group Setting dialog. 
 
 
 ## How to Open the Dialog
 
 You can select the "Color & Group" menu from the column menu at Color. 
 
-![](images/build_palette1.png)
+![](images/colorgroup1.png)
 
 
 
 ## Color Palette setting
 
+You can set up the color palette in this section.
+
+![](images/colorgroup2.png)
+
+The following options are available.  
+
+* Color Palette - You can select which color palette to use. It shows the system-defined palettes and your custom palettes. 
+* Color Direction - How you want to apply the colors on the palette. The default is "Left to Right". 
+* Opacity - You can set the color opacity.
+
+
+### Highlight Mode
+
+
+You can use the Highlight Mode to highlight specific categories that you pick. You can select the "Highlight" menu in the Color Palette dropdown menu to start using it. See [Highlight](highlight.md) for the detail. 
 
 
 
+![](images/colorgroup8.png)
 
+### Edit Custom Palette
 
+You can add/edit your custom palette by selecting the "Edit Custom Color Palette" menu at the bottom of the Color Palette dropdown. See [Custom Palette](custom-palette.md) for how to use the Custom Palette dialog. 
 
 
 
 ## Grouping setting
 
+You can set up the Grouping in this section. 
+
+![](images/colorgroup3.png)
 
 
+The following Grouping Types are available. The list of options may vary depending on the chart type and data type of the column that you assigned to the Color. 
+
+* Equal Width - It divides numeric values into groups by the data range. Each group has an equal data range. 
+* Equal Frequency - It divides the numeric values into groups by the number of data points. Each group will have the same amount of data points (data rows).
+* Equal Step - It divides numeric values into groups by the specified step (range). For example, if you specify "10", the group will be like "10-20", "20-30", "30-40" and so on. Each group has an equal data range. 
+* Manual - It divides numeric values into groups by the user-specified Cutting Point values.
+* Outliers - It divides numeric values into groups by the outlier detection rules. 
+* Logical Condition - You can define a logical condition to divide the data into 2 groups (TRUE and FALSE).
+* None
+
+
+See [Category](category.md#category-types) for the available options for each type.
 
 
 
 ## Customize Color and Display Name
 
 
+You can customize the color and display name for each category in this section. 
 
 
+![](images/colorgroup4.png)
 
 
+The following settings are available.  
+
+* Sort By - You can change the sort order of the values. It is available for Bar (Stacked), Area, and Pie chart types. The following options are available. 
+  * Character type column at Color
+    * Alphabetical (A-Z)
+    * Alphabetical (Z-A)
+    * Y-Axis Value (Ascending)
+    * Y-Axis Value (Descending)
+  * Factor type column at Color
+    * Factor Level
+    * Factor Level (Reversed)
+  * For a column with any other type 
+    * Top to Bottom
+    * Bottom to Top
+* Legend Direction - You can change the direction of how to apply the color palette. It is available for Bar (Stacked) and Area chart types. The following options are available. 
+    * Top to Bottom
+    * Bottom to Top
+ 
 
 
+### Show as 'Others' for not highlighted values
 
+![](images/colorgroup6.png)
 
+If you use the Highlight Mode and you have many categories, you can show as 'Others' for not highlighted values to make the legend simpler. This option also makes the chart rendering faster so you can use it if you feel the chart rendering is slow. 
 
+You can turn it on/off by the checkbox at the bottom of the table. 
 
-
-
-
-
-
-
-## Switch the color palette
-
-You can switch the color palette for Bar, Line, and Area charts.
-
-1. Click the gear icon next to 'Color' label text and select one of the pre-defined ones from Color Palette dropdown menu.
-
-![](images/color-1.png)
-
-
-## Customize the color palette
-
-You can create your own color palettes for discrete values. You can use it on Bar, Line, Area, Boxplot, Map and other charts that accept a column with discrete values at color. Here is how to build your own color palettes.
-
-* Click the gear icon next to 'Color' label text and select 'Custom' from Color Palette dropdown.
-* Click "Edit" right next to the "Custom Color Palette" to open the Color Palette dialog. 
-
-![](images/build_palette1.png)
-
-
-* Click "Add" button to add a new Color Palette. It opens up a Color Palette Builder dialog
-
-![](images/build_palette2.png)
-
-* Click "Add" to add a color to the Color Palette. Click the box to change the color. Once you finish, set a Display Name for this Color Palette and click "Add" button to add this Color Palette to the system.
-
-![](images/build_palette3.png)
-
-* Make sure your palette is added to the system. 
-
-![](images/build_palette4.png)
-
+It is available in Scatter (No Aggregation) and Scatter (With Aggregation) chart types.
 
 
