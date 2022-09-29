@@ -10,6 +10,12 @@ You can assign new values to a column by setting conditions with easy-to-use dia
 
 ## How to Use?
 
+### Select Target Columns
+
+You can select a column or multiple columns for this operation. To select multiple columns, check the checkboxes for the columns you want to perform this operation.
+
+![](images/case_when_multiple_columns.png)
+
 ### Set Condition and New Values
 
 To assign new value, you need to set a condition. For example, if you want to assign 100 for the case where City column value is "Tokyo" like below screenshoot,
