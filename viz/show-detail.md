@@ -14,7 +14,7 @@ You can change how many rows to show from the "Rows" dropdown menu.
 
 ## Export
 
-You can export the detailed data in the following formats. It exports all the data regardless of the "Rows setting. 
+You can export the detailed data in the following formats. It exports all the data regardless of the "Rows" setting. 
 
 * CSV
 * Excel

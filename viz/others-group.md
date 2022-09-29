@@ -15,7 +15,7 @@ By using the 'Others' Group feature, you can reduce the number of categories by 
 |H|80|
 |I|90|
 
-You can recude the number of categories by changing the name to the 'Others' like the following.
+You can reduce the number of categories by changing the name to the 'Others' like the following.
 
 
 |category|value|
@@ -43,7 +43,7 @@ There are 3 types of creating the 'Others' group.
 
 ### Based on Number of Rows
 
-You can keep categories that appear frequently in the data and change the less frequent categories to the 'Others'. You can specify how many freqent categories to keep.
+You can keep categories that appear frequently in the data and change the less frequent categories to the 'Others'. You can specify how many frequent categories to keep.
 
 ### Manually Select to Keep
 
