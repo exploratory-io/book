@@ -1,5 +1,303 @@
 {
   "data": [
-  ],
-  "__COMMENT__": "Not used now. For future use."
+    {
+      "title": "Chart Type",
+      "desc": "You can choose from various types of charts to visualize your data effectively. ",
+      "moreButtonText": "Show More",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=en",
+      "insights": [
+        {
+         "title": "ピボットテーブルの作り方",
+         "desc": "ピボットテーブルの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/FAQ5WqV0xM"
+        },
+        {
+         "title": "集計テーブルの作り方",
+         "desc": "集計テーブルの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/RMB5wbA4Rs"
+        },
+        {
+         "title": "テーブルの作り方",
+         "desc": "テーブルの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/ktS2eEK6jW"
+        },
+        {
+         "title": "バーチャートの作り方",
+         "desc": "バーチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
+        },
+        {
+         "title": "ラインチャートの作り方",
+         "desc": "ラインチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
+        },
+        {
+         "title": "エリアチャートの作り方",
+         "desc": "エリアチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/bRd2lAx7Iy"
+        },
+        {
+         "title": "パイチャートの作り方",
+         "desc": "パイチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/OjL5DOn1pr"
+        },
+        {
+         "title": "ヒストグラムの作り方",
+         "desc": "ヒストグラムの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/UGZ4vyR3GG"
+        },
+        {
+         "title": "密度曲線の作り方",
+         "desc": "密度曲線の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/eck4bdS4Wl"
+        },
+        {
+         "title": "散布図（集計なし）の作り方",
+         "desc": "散布図（集計なし）の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/13-2-TZm4tyi8UC"
+        },
+        {
+         "title": "散布図（集計あり）の作り方",
+         "desc": "散布図（集計あり）の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/rHW8oVO8GS"
+        },
+        {
+         "title": "Introduction to Boxplot Chart",
+         "desc": "Boxplot chart is very helpful when it comes to understanding the distribution of your data or even better, compare how the distribution differs among various groups.",
+         "url": "https://exploratory.io/note/kanaugust/Introduction-to-Boxplot-Chart-Ncd0DjD5iT"
+        },
+        {
+         "title": "バイオリン図の作り方",
+         "desc": "バイオリン図の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/FIL2lsu3rR"
+        },
+        {
+         "title": "How to Use Error Bar",
+         "desc": "You can use Error Bar chart to show confidence intervals for Mean (Average) values and for Ratio values.",
+         "url": "https://exploratory.io/note/exploratory/How-to-Use-Error-Bar-Chw4Yms2"
+        },
+        {
+         "title": "ヒートマップの作り方",
+         "desc": "ヒートマップの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
+        },
+        {
+         "title": "レーダーチャートの作り方",
+         "desc": "レーダーチャートの作り方をご紹介します。",
+         "url": "https://exploratory.io/note/exploratory/YQe8tvk6"
+        },
+        {
+         "title": "地図 - 標準の使い方",
+         "desc": "地図 - 標準の使い方についてご紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/GWw6gtb4rU"
+       },
+       {
+        "title": "地図 - 経度/緯度の作り方",
+        "desc": "地図 - 経度/緯度の作り方をご紹介します。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
+       },
+       {
+        "title": "ナンバーの作り方",
+        "desc": "ナンバーの作り方をご紹介します。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/biG3kLJ2qy"
+       },
+       {
+        "title": "ワードクラウドの作り方",
+        "desc": "ワードクラウドの作り方をご紹介します。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/oHN4Egn2UY"
+       },
+       {
+        "title": "集合バーチャートの作り方",
+        "desc": "集合バーチャートの作り方をご紹介します。",
+        "url": "https://exploratory.io/note/exploratory/lfa4hrY9"
+       }
+      ]
+    },
+    {
+      "title": "Chart Features",
+      "desc": "There are various Chart features you can use to enrich your data visualization.",
+      "moreButtonText": "Show More",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "insights": [
+        {
+         "title": "Pin - Set a Particular Data Step to Visualize",
+         "desc": "The most important feature of Chart is 'Pin'. You can pin the chart to a particular step so that it will always source the chart data from the pinned step even when new Data Wrangling steps are added.",
+         "url": "https://exploratory.io/note/kanaugust/Introduction-to-Chart-Pin-Feature-in-Exploratory-AYx1Rrg5qu"
+        },
+        {
+         "title": "Window Calculation - Percentage of Total",
+         "desc": "You can learn how you can use Window Calculation feature to visualize '% of Total' with Bar chart in this Note.",
+         "url": "https://exploratory.io/note/exploratory/How-to-Create-Chart-to-Show-of-Total-qYz4cap5"
+        },
+        {
+         "title": "Window Calculation - Cummulative Sum",
+         "desc": "You can learn how to create a chart to show cumulative sum (running total).",
+         "url": "https://exploratory.io/note/exploratory/How-to-Create-Chart-to-Show-Cumulative-Sum-Running-Total-UZD4SSk4"
+        },
+        {
+         "title": "Window Calculation - Moving Average",
+         "desc": "Here's how to create a chart to show moving average.",
+         "url": "https://exploratory.io/note/exploratory/How-to-Create-Chart-to-Show-Moving-Average-NVO7AiF4"
+       },
+       {
+        "title": "Window Calculation - Period Ago (e.g. Same Month in Last Year)",
+        "desc": "Here's how to create a chart to show the growth compared to the same month in the last year or quarter.",
+        "url": "https://exploratory.io/note/exploratory/Chart-Ratio-to-Same-Month-in-Previous-Period-YnH6LgM6"
+      },
+      {
+       "title": "Window Calculation - % Difference from First Value",
+       "desc": "Here's how you can create a chart to show the % of Difference from First Value with 'Window Calculation' feature.",
+       "url": "https://exploratory.io/note/exploratory/Chart-Show-Difference-from-First-Value-Ubh6sjp2"
+      },
+       {
+       "title": "Show Reference Line",
+       "desc": "Here's how you can draw reference lines on chart.",
+       "url": "https://exploratory.io/note/kanaugust/Chart-Showing-Reference-Line-Uncertainty-Interval-Kbg8Eto4sS"
+       },
+       {
+       "title": "Show Trend Line",
+       "desc": "Here's how you can draw various types of trendlines on chart.",
+       "url": "https://exploratory.io/note/kanaugust/Chart-Trendline-Linear-LOESS-GAM-jWk8SBs2Zg"
+       },
+       {
+       "title": "チャートの色を変更する方法",
+       "desc": "色とグループの設定の使い方をご紹介します。",
+       "url": "https://exploratory.io/note/exploratory/lSA6eIV2"
+       },
+       {
+       "title": "Highlight Particular Groups",
+       "desc": "You can highlight particular values with specified colors.",
+       "url": "https://exploratory.io/note/kanaugust/Highlighting-a-Part-of-Chart-NRa9tSP1oG"
+       },
+       {
+       "title": "条件によって色を指定する方法",
+       "desc": "条件によって色を指定する方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-182-zYg0Rav0Ef"
+       },
+       {
+       "title": "Categorizing Numerical Values (Create Bins)",
+       "desc": "Here's how you can categorize numerical values by dividing into multiple groups.",
+       "url": "https://exploratory.io/note/kanaugust/Categorizing-Binning-Numeric-Values-inside-Chart-JiZ2nBs5yR"
+       },
+       {
+       "title": "Y軸の値を元に色を指定する方法",
+       "desc": "Y軸の値を元に色を指定する方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-186-Y-lOu8rEI7tV"
+       },
+       {
+       "title": "色の表示名を変更して複数のグループを一つにまとめる",
+       "desc": "色の表示名を変更して複数のグループを一つにまとめる方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-188-kjk7hiJ8NY"
+       },
+       {
+       "title": "カスタム・カラーパレットの使い方",
+       "desc": "カスタム・カラーパレットの使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-201-YMo1Lhw9Ps"
+       },
+       {
+       "title": "数値を等間隔でカテゴリー化して可視化する方法",
+       "desc": "数値を等間隔でカテゴリー化して可視化する方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-200-oPT9mcP7DH"
+       },
+       {
+       "title": "繰り返しの使い方",
+       "desc": "繰り返しの使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/YZc5vEy0xt"
+       },
+       {
+       "title": "Show Multiple Measures in Multiple Charts",
+       "desc": "You can separate a chart to multiple charts and show each measure in its own chart with Repeat By.",
+       "url": "https://exploratory.io/note/exploratory/Show-Multiple-Measures-in-Multiple-Charts-XTd0wQe7"
+       },
+       {
+       "title": "Show Only Top (Bottom) 10 Values",
+       "desc": "You can limit the values to be shown for X-Axis/Color.",
+       "url": "https://exploratory.io/note/kanaugust/Show-Only-the-Values-that-are-either-Top-Bottom-N-or-Matching-with-a-Condition-inside-Chart-GAv1oaI1zw"
+       },
+       {
+       "title": "Switch Marker between Bar, Line, and Circle.",
+       "desc": "You can switch the marker to be bar, line, or circle.",
+       "url": "https://exploratory.io/note/kanaugust/Chart-Switching-Marker-Circle-Line-Bar-LoW1UdM7QH"
+       },
+       {
+       "title": "Reverse the Order for X/Y-Axis",
+       "desc": "You can change the order of X-Axis and/or Y-Axis.",
+       "url": "https://exploratory.io/note/kanaugust/How-to-Reverse-the-Order-for-X-Y-Axis-sFs5gtm4nK"
+       },
+       {
+       "title": "集計テーブル: クイック・ビジュアルフォーマット",
+       "desc": "集計テーブルにあるクイック・ビジュアルフォーマットの使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-199-tMh4beE1za"
+       },
+       {
+       "title": "Missing Value (NA) Handlnig in Chart",
+       "desc": "There are various ways to handle or fill the missing values (NA) inside the chart.",
+       "url": "https://exploratory.io/note/kanaugust/Chart-Missing-Values-NA-Handling-lfh2EFT9pc"
+       },
+       {
+       "title": "条件付き集計関数（sum if関数など）の使い方",
+       "desc": "チャート内での条件付き集計関数の使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-197-sum-if-bTK2VuK3AQ"
+       },
+       {
+       "title": "factor型の列のデータがないレベルはチャートで非表示にする方法",
+       "desc": "factor型の列のデータがないレベルはチャートで非表示にする方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-122-factor-Xox5VtM6XM"
+       },
+       {
+       "title": "集計テーブルの合計の計算対象を集計前に変更する方法",
+       "desc": "集計テーブルの合計の計算対象を集計前に変更する方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-119-huW6VwS5UK"
+       },
+       {
+       "title": "Use Dual Axes to Show Multiple Measures",
+       "desc": "You can assign the columns to either Y1 or Y2 axis.",
+       "url": "https://exploratory.io/note/kanaugust/Chart-Dual-Y-Axis-ilv7Hbe1Xt"
+       },
+       {
+       "title": "一つのチャートにバーとラインを同時に表示する方法",
+       "desc": "一つのチャートにバーとラインを同時に表示する方法をご紹介します。",
+       "url": "https://exploratory.io/note/kei/Frr5QQl7fI"
+       },
+       {
+       "title": "チャート上に値を表示する方法",
+       "desc": "チャート上に値を表示する方法をご紹介します。",
+       "url": "https://exploratory.io/note/kei/OBj7zZr8JE"
+       }
+      ]
+    },
+     {
+       "title": "Data Visualization Workshop",
+       "desc": "You can learn how to choose the right charts based on the type of data, how to visualize various types of data effectively, how to prepare data to visualize, etc. and share the tutorials and data with you so that you can practice by yourself.",
+       "moreButtonText": "Show More",
+       "moreButtonUrl": "https://exploratory.io/tag/?q=tag:%22Viz%20Workshop%22",
+       "insights": [
+         {
+          "title": "#1 - Visualizing Summarized Data",
+          "desc": "In this seminar, you can learn how you can choose the right chart types and demonstrate how to visualize summarized (aggregated) data effectively.",
+          "url": "https://exploratory.io/note/kanaugust/Seminar-29-Visualizing-Summarized-Data-rrJ9tfI5bn"
+         },
+         {
+          "title": "#2 - Visualizing Time Series Data",
+          "desc": "In this seminar, you can learn how you can visualize Time Series data effectively with Exploratory.",
+          "url": "https://exploratory.io/note/kanaugust/Seminar-30-Visualizing-Time-Series-Data-myp0nly1Ex"
+         },
+         {
+          "title": "#3 - Visualizing Variance & Correlation",
+          "desc": "In this seminar, you can learn how to visualize variance in data and correlation between variables with various chart types in Exploratory.",
+          "url": "https://exploratory.io/note/kanaugust/Seminar-31-Visualizing-Variance-Correlation-eJr4Twr1Sl"
+          },
+          {
+          "title": "#4 - Visualizing Uncertainty with Confidence Interval",
+          "desc": "In this seminar, we introduce concepts like 'Uncertainty' and 'Confidence Interval' and show you how you can visualize them effectively with Error Bar in Exploratory.",
+          "url": "https://exploratory.io/note/kanaugust/Seminar-33-Visualizing-Uncertainty-with-Confidence-Interval-Error-Bar-uAC9JDI7va"
+          },
+          {
+          "title": "データの可視化ワークショップ #5 - 可視化のためのデータラングリング",
+          "desc": "データを可視化する時によく直面するデータの加工に関する問題を効率的に解決していく方法を紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/5-AZS6fim1QH"
+        }
+      ]
+    }
+  ]
 }
