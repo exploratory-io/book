@@ -6,20 +6,19 @@ You can map existing values to new values by using easy-to-use dialog UI.
 
 ![](images/recode.png)
 
-* From Column Menu on Character Column, select "Map / Convert Data" -> "Map ... to ...".
+* From the Column Menu on a Character Column, select "Replace Values" -> "With New Values".
 
 ## How to Use?
 
-### One to One mapping
+### Select Target Columns
 
-To simply map an item to a new one, you can select values from the dropdown and assign new values.
+You can select a column or multiple columns for this operation. To select multiple columns, check the checkboxes for the columns you want to perform this operation.
+
+![](images/recode_multiple_columns.png)
+
+### Set New Values
+
+To map multiple Existing Values to a same New Value, you can simply type in the new values.
+For example, if you want to set `North Bay` for San Francisco and `South Bay` for San Jose, type in the values like the below screenshot.
 
 ![](images/recode2.png) 
-
-### Map multiple Existing Values to a same New Value.
-
-To map multiple Existing Values to a same New Value, you can select existing values from the dropdown and assign the same New Value to each existing value.
-
-For example, if you want to recode `SFO` (San Francisco International Airport), `OAK` (Oakland International Airport), and `SJC` (San Jose International Airport) to `California`, then you can assign `California` for all these three values as follows.
-
-![](images/recode3.png) 
