@@ -125,6 +125,10 @@ This is an example of the color encoding applied to the background color.
 
 ![](images/cconf12.png)
 
+
+If you assign a categorical data for Value, such as a character column with the "First" aggregation function, the color palette will be assigned to the values in the alphabetical order. If it is a factor column, it will be assigned to the values in the factor level order.
+
+
 ### Set Colors Conditionally
 
 You can apply a specific color only for the values that meet the condition. You can choose an operator and enter the value to construct a condition, and you can choose a color to apply from the list. You can apply colors to either the value text or background color. 
