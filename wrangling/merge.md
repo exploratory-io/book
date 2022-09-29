@@ -10,7 +10,7 @@ Merge multiple data frames by row.
 
 ## Bind multiple data frames by row
 
-![](images/bind_rows.png)
+![](images/merge_dialog.png)
 
 1. Select Operation Type for the Merge. Supported options are:
 
