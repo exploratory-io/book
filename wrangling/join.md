@@ -26,16 +26,22 @@ Join rows from the data frame with rows from another data frame by matching valu
 
 2. Select "Target Data Frame".
 
-  Select the other data frame to join current data frame with.
+   Select the other data frame to join current data frame with.
 
 3. Select "Current Column" and "Target Column".
   "Current Column" is a column from current data frame, and "Target Column" is a column from target data frame. When a row from current data frame and a row from target data frame have same values in those columns, the rows are joined into one row in the resulting data frame.
 
-4. Enable "Case Insensitive Join" (Optional)
+4. Select Target Columns (Optional)
+
+   if you want to keep specific columns from the target data frame, click the "Select Columns to Join" link. Then select columns you want to keep. You can also excludes specific columns by selecting the "Remove" radio button.
+
+![](images/join_target_columns_selection.png)
+
+5. Enable "Case Insensitive Join" (Optional)
 
    If you want to join two data frames by ignoring case of the join key column value, select this checkbox. 
 
-5. Specify "Current Columns Suffix" and/or "Target Columns Suffix" (Optional)
+6. Specify "Current Columns Suffix" and/or "Target Columns Suffix" (Optional)
   These are the suffixes to distinguish columns from current data frame and columns from target data frame in the resulting data frame, when there are columns with same names in both data frames. Note that those suffixes are applied only to column names that appear both in current and target data frames.
 
 6. Click "Run" button.
