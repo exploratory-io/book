@@ -6,7 +6,7 @@
 
 * X-Axis - Assign a column you want to show at X-Axis. You can assign any column with continuous values (number column). 
 * Y-Axis - Assign a column you want to show at X-Axis. You can assign any column with continuous values (number column). 
-* Color - Take a look at [Color](color-classic.md) section for more details.
+* Color - Take a look at [Color](color-dialog.md) section for more details.
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
 
 

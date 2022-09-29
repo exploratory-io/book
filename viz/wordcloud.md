@@ -5,7 +5,7 @@
 ## Column Assignments
 
 * Word - Assign a column that contains words that you want to plot. 
-* Color By - Assign a column for the word colors. It can be either a categorical (text) column or numeric column. If you have NA values in a categorical column, NA will be treated as one of categories. If you have NA values in a numeric column, the corresponding words won't show up on a plot. See [Color](color-classic.md) section for more details.
+* Color By - Assign a column for the word colors. It can be either a categorical (text) column or numeric column. If you have NA values in a categorical column, NA will be treated as one of categories. If you have NA values in a numeric column, the corresponding words won't show up on a plot. See [Color](color-dialog.md) section for more details.
 * Size - Assign a column for the word size. 
 
 
