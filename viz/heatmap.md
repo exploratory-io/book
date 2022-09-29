@@ -22,6 +22,9 @@ You can show the column values at "Color By" on the plot area by checking the "S
 
 You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
 
+## 'Others' Group
+
+If you have many categories, you can reduce the number of categories by changing some category names to 'Others' using the 'Others' Group feature. See ['Others' Group](others-group.md) for the detail. 
 
 ## Custom Function
 

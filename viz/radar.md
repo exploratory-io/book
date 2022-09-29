@@ -29,6 +29,11 @@ You can set the starting point of the radar. The following options are available
 You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail. 
 
 
+## 'Others' Group
+
+If you have many categories, you can reduce the number of categories by changing some category names to 'Others' using the 'Others' Group feature. See ['Others' Group](others-group.md) for the detail. 
+
+
 ## Rename Column Names
 
 You can use the Rename Column Names feature to update column names if you assign multiple columns to Value. See [Rename Column Names](rename-column-names.md) for the detail.

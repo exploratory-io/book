@@ -213,6 +213,7 @@
      * [Category (Binning)](viz/category.md)
      * [Highlight](viz/highlight.md)
      * [Limit Values](viz/limit.md)
+     * ['Others' Group](viz/others-group.md)
      * [Edit Display Name](viz/edit-display-name.md)
      * [Missing Value Handling](viz/missing-value-handling.md)
      * [Rename Column Names](viz/rename-column-names.md)

@@ -25,6 +25,9 @@ You can categorize numeric values inside the chart. See [Category(Binning)](cate
 
 You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail.
 
+## 'Others' Group
+
+If you have many categories, you can reduce the number of categories by changing some category names to 'Others' using the 'Others' Group feature. See ['Others' Group](others-group.md) for the detail. 
 ## Missing Value Handling
 
 You can use the Missing Value Handling feature to control missing values. See [Missing Value Handling](missing-value-handling.md) for the detail.

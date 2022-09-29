@@ -62,6 +62,10 @@ You can categorize numeric values inside the chart. See [Category(Binning)](cate
 
 You can use Limit Values to filter the categories by the aggregated values. It is on by default for X-Axis. See [Limit Values](limit.md) for the detail. 
 
+## 'Others' Group
+
+If you have many categories, you can reduce the number of categories by changing some category names to 'Others' using the 'Others' Group feature. See ['Others' Group](others-group.md) for the detail. 
+
 ## Custom Function
 
 You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.

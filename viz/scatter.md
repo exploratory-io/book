@@ -55,6 +55,12 @@ You can change the color of the specific markers such as bars, lines or circles 
 You can use the Rename Column Names feature to update column names if you assign multiple columns to Y-Axis. See [Rename Column Names](rename-column-names.md) for the detail.
 
 
+## 'Others' Group
+
+If you have many categories, you can reduce the number of categories by changing some category names to 'Others' using the 'Others' Group feature. See ['Others' Group](others-group.md) for the detail. 
+
+
+
 ## Axis Setting
 
 You can use the Axis Setting feature to assign columns to Y1/Y2 axes if you assign multiple columns to Y-Axis. See [Axis Setting](dualy-setting.md) for the detail.
