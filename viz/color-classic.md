@@ -1,13 +1,19 @@
 # Color setting
 
-## Switch the color palette
+You can update the color setting from the Color setting dialog.
+## How to Open
 
-You can switch the color palette for Bar, Line, and Area charts.
+You can click the gear icon at Color By to open the Color setting dialog.
 
-1. Click the gear icon next to 'Color' label text and select one of the pre-defined ones from Color Palette dropdown menu.
 
 ![](images/color-1.png)
 
+
+The following options are available.
+* Color Palette - You can pick your favorite color palette for the chart from here.
+* Reverse Palette Order - You can check it to apply the color from the last to the first of the palette.
+* Opacity
+* Color Bar Range - Only applicable for Heatmap and Contour chart types.
 
 ## Customize the color palette
 
