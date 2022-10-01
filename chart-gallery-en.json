@@ -185,11 +185,6 @@
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-186-Y-lOu8rEI7tV"
        },
        {
-       "title": "色の表示名を変更して複数のグループを一つにまとめる",
-       "desc": "色の表示名を変更して複数のグループを一つにまとめる方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-188-kjk7hiJ8NY"
-       },
-       {
        "title": "カスタム・カラーパレットの使い方",
        "desc": "カスタム・カラーパレットの使い方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-201-YMo1Lhw9Ps"
@@ -198,11 +193,6 @@
        "title": "数値を等間隔でカテゴリー化して可視化する方法",
        "desc": "数値を等間隔でカテゴリー化して可視化する方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-200-oPT9mcP7DH"
-       },
-       {
-       "title": "繰り返しの使い方",
-       "desc": "繰り返しの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/YZc5vEy0xt"
        },
        {
        "title": "Show Multiple Measures in Multiple Charts",
@@ -238,11 +228,6 @@
        "title": "条件付き集計関数（sum if関数など）の使い方",
        "desc": "チャート内での条件付き集計関数の使い方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-197-sum-if-bTK2VuK3AQ"
-       },
-       {
-       "title": "factor型の列のデータがないレベルはチャートで非表示にする方法",
-       "desc": "factor型の列のデータがないレベルはチャートで非表示にする方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-122-factor-Xox5VtM6XM"
        },
        {
        "title": "集計テーブルの合計の計算対象を集計前に変更する方法",
