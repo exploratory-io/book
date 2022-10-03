@@ -6,7 +6,11 @@ Released on 9/27/2022.
 
 ### Breaking Changes
 
+* General: For Windows, we started using UTF-8 as the character set on R. We recommend [enabling UTF-8 support on Windows](https://exploratory.io/note/exploratory/Enabling-UTF-8-on-Windows-hYc3yWL0), which fully enables the UTF-8 support on R. Without this setup, usage of multibyte characters may cause some issues.
 * Chart: If you have a Pie/Ring chart with the "Others" group and the "Sort by Value" checked, now the "Others" group shows up at the end regardless of the slice size. 
+* Analytics: Topic Model: We now assign topic IDs based on the number of documents that belongs to the topics. As a result, the IDs of the topics might change from the results from previous releases.
+* Analytics: Output column name for the linear predictor of logistic regression/GLM prediction step with the models from Analytics View is changed from "predicted_value" to "linear_predictor."
+* Analytics: Cox Regression/Survival Forest: Existing prediction steps with the models from these Analytics Views will stop working. Please open the dialog for those steps, and select the new set of properties to make them work again.
 
 ### Enhancements
 
