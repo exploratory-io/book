@@ -8,6 +8,7 @@ Released on 9/27/2022.
 
 * General: For Windows, we started using UTF-8 as the character set on R. We recommend [enabling UTF-8 support on Windows](https://exploratory.io/note/exploratory/Enabling-UTF-8-on-Windows-hYc3yWL0), which fully enables the UTF-8 support on R. Without this setup, usage of multibyte characters may cause some issues.
 * Chart: If you have a Pie/Ring chart with the "Others" group and the "Sort by Value" checked, now the "Others" group shows up at the end regardless of the slice size. 
+* Analytics: Topic Model: We now assign topic IDs based on the number of documents that belongs to the topics. As a result, the IDs of the topics might change from the results from previous releases.
 
 ### Enhancements
 
