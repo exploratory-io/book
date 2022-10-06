@@ -45,7 +45,7 @@ This one uses the Poisson Regression internally to draw trend lines.
 
 ## Target 
 
-You can choose the target data group for the Trend Lines. It is available when you assign a column to Color. It is available for Scatter (No Aggregation) and Scatter (With Aggregation) types.
+You can choose the target data group for the Trend Lines. It is available when you assign a column to Color. It is available for Scatter (No Aggregation) chart type.
 
 * All: It draws a single Trend Line based on the all data points regardless of the Color setting. 
 * Each Color Group: It draws Trend Lines for each color group. This is the default option.

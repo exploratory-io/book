@@ -1,6 +1,71 @@
 # Release Note
 
+## 6.11.1
+
+Released on 10/5/2022.
+
+### Breaking Changes
+
+* Data Source: MS Access: To import non-ASCII data or query from non-ASCII tables and columns on Windows, Please follow [enabling UTF-8 support on Windows](https://exploratory.io/note/exploratory/Enabling-UTF-8-on-Windows-hYc3yWL0) and enables the UTF-8 support on R. 
+
+### Enhancements
+
+
+* Chart: Now you can a legend for the Trend Line with the "All" Target option in the Scatter (No Aggregation) chart.
+
+
+* General: Now you can configure Data Format for Exporting to Clipboard.
+
+
+* Analytics: Topic Model: Documents on the Documents tab are now sorted so that documents relevant to the same topic are shown close to each other.
+* Analytics: Factor Analysis: Variables on the Weight (Bar) tab are now sorted so that variables that are affected by the same factor are shown close to each other.
+
+
+### Bug Fixes
+
+
+* Data Source: CSV: Importing file ends up with The size of the connection buffer was not large enough error.
+
+
+* Data Wrangling: Replace Values with Conditions: Drag and drop reordering for conditions did not work.
+* Data Wrangling: Copying a folder didn't copy chart thumbnails on the nested branches.
+* Data Wrangling: On a source step label, it showed an internal attribute for the Parquet data source.
+* Data Wrangling: Filter: When changing a column selection, the selected parameter didn't stay even though the column data type was the same as before.
+* Data Wrangling: Filter: When re-opening the Filter dialog, it did not populate the multi-selection widget with available options.
+* Data Wrangling: Merge: The data frame list didn't show selected data frames at the top.
+* Data Wrangling: Summarize: "1st" function is not working when you select "All Numeric Columns" as the value.
+* Data Wrangling: Window Calculation: When clicking the green text for a value column, it did not open the Edit Dialog when the mouse hovered at the bottom of the text.
+
+
+* Chart: Highlight: "Highlighted: 1 Value" showed up even though there were 2 highlighted values if you clicked the "Apply" button without clearing the table search in the Color and Group dialog.
+* Chart: Bar chart failed to render if you assigned a logical column to Color and added a logical condition. 
+* Chart: Duplicate Project dialog showed up if you duplicate a note and selected the "Edit Custom Color Palette" menu from the Color Palette dropdown in Color and Group Setting dialog.
+* Chart: Table: Color formatting didn't work correctly on numeric columns that used to be character columns.
+* Chart: Table: Table failed to render due to a "non-numeric argument to binary operator" error if you assigned a numeric column with "%" formatting to the table and the column data type was converted to character.
+
+
+* Analytics: Topic Model: In the Documents tab, the colors of the tagged words were wrong.
+
+
+* Dashboard: The "more" icon on a row was cut off when the row height was the minimum height.
+
+
+* Publish: When publishing an insight as a team failed because the team owner's account is no longer a Business account, It didn't show a correct error message .
+* Parameter: Made the multi-selector widget height static instead of dynamically changing it. 
+
+
+* Import: Importing a project failed with a "Bad archive" error.
+* Project Export:  Stopped performing unnecessary R restart when canceling a project export.
+* General: The 'Use Legacy Window System Encoding' option was not saved and cleared after restarting App.
+
+
+
+
+
 ## 6.11.0
+
+
+
 
 Released on 9/27/2022.
 
