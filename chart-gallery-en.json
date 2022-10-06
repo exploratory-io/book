@@ -22,14 +22,14 @@
          "url": "https://exploratory.io/note/GMq1Qom5tS/ktS2eEK6jW"
         },
         {
-         "title": "バーチャートの作り方",
-         "desc": "バーチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
+         "title": "Introduction to Bar Chart",
+         "desc": "You can quickly create various types of bar charts in a simple way!",
+         "url": "https://exploratory.io/note/exploratory/Introduction-to-Bar-Chart-itK7nJy2"
         },
         {
-         "title": "ラインチャートの作り方",
-         "desc": "ラインチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
+         "title": "Introduction to Line Chart",
+         "desc": "Line charts are great especially for visualizing time series data. Here's how you can quickly create them with various options!",
+         "url": "https://exploratory.io/note/exploratory/Introduction-to-Line-Chart-tuh6vie0"
         },
         {
          "title": "エリアチャートの作り方",
@@ -82,9 +82,9 @@
          "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
         },
         {
-         "title": "レーダーチャートの作り方",
-         "desc": "レーダーチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/YQe8tvk6"
+         "title": "Radar Chart",
+         "desc": "Here's how you can use Radar Chart.",
+         "url": "https://exploratory.io/note/exploratory/Introduction-to-Radar-Chart-UVx2dgH2"
         },
         {
          "title": "地図 - 標準の使い方",
@@ -95,6 +95,11 @@
         "title": "地図 - 経度/緯度の作り方",
         "desc": "地図 - 経度/緯度の作り方をご紹介します。",
         "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
+       },
+       {
+        "title": "Map - Extension with GeoJSON",
+        "desc": "You can extend Map with your GeoJSON files.",
+        "url": "https://exploratory.io/note/exploratory/Extend-Map-with-Your-Own-GeoJSON-Files-lAk9Ydb2"
        },
        {
         "title": "ナンバーの作り方",
@@ -160,9 +165,9 @@
        "url": "https://exploratory.io/note/kanaugust/Chart-Trendline-Linear-LOESS-GAM-jWk8SBs2Zg"
        },
        {
-       "title": "チャートの色を変更する方法",
-       "desc": "色とグループの設定の使い方をご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/lSA6eIV2"
+       "title": "Color Configuration",
+       "desc": "You can flexibly assign colors to particular groups in charts, here's how.",
+       "url": "https://exploratory.io/note/exploratory/How-to-Change-Color-Display-Name-Pii4Yah2"
        },
        {
        "title": "Highlight Particular Groups",
@@ -170,9 +175,9 @@
        "url": "https://exploratory.io/note/kanaugust/Highlighting-a-Part-of-Chart-NRa9tSP1oG"
        },
        {
-       "title": "条件によって色を指定する方法",
-       "desc": "条件によって色を指定する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-182-zYg0Rav0Ef"
+       "title": "Set Colors with a Condition",
+       "desc": "You can create a condition to set colors. Here's how.",
+       "url": "https://exploratory.io/note/exploratory/How-to-Set-Colors-with-a-Condition-vSs0lgj0"
        },
        {
        "title": "Categorizing Numerical Values (Create Bins)",
@@ -180,19 +185,19 @@
        "url": "https://exploratory.io/note/kanaugust/Categorizing-Binning-Numeric-Values-inside-Chart-JiZ2nBs5yR"
        },
        {
-       "title": "Y軸の値を元に色を指定する方法",
-       "desc": "Y軸の値を元に色を指定する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-186-Y-lOu8rEI7tV"
+       "title": "Custom Color Palette",
+       "desc": "You can create your own color palette, here's how.",
+       "url": "https://exploratory.io/note/exploratory/How-to-Create-Custom-Color-Palette-rQl5ciH6"
        },
        {
-       "title": "カスタム・カラーパレットの使い方",
-       "desc": "カスタム・カラーパレットの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-201-YMo1Lhw9Ps"
+       "title": "Comment / Annotation",
+       "desc": "You can add comments to your charts, here's how.",
+       "url": "https://exploratory.io/note/kanaugust/Adding-Comment-Annotation-for-Charts-and-Analytics-Kof8xiW3LW"
        },
        {
-       "title": "数値を等間隔でカテゴリー化して可視化する方法",
-       "desc": "数値を等間隔でカテゴリー化して可視化する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-200-oPT9mcP7DH"
+       "title": "Categorize Numeric Values with Equal Step",
+       "desc": "You can convert numeric values such as Age, Income, Sales, etc. into a set of groups with an 'Equal Step' option, which will create a group for an every given number such as 'every 10'.",
+       "url": "https://exploratory.io/note/exploratory/How-to-Categorize-Numeric-Values-with-Equal-Step-SKW2Daj5"
        },
        {
        "title": "Show Multiple Measures in Multiple Charts",
@@ -225,9 +230,9 @@
        "url": "https://exploratory.io/note/kanaugust/Chart-Missing-Values-NA-Handling-lfh2EFT9pc"
        },
        {
-       "title": "条件付き集計関数（sum if関数など）の使い方",
-       "desc": "チャート内での条件付き集計関数の使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-197-sum-if-bTK2VuK3AQ"
+       "title": "How to Summarize with Conditions (SUM_IF)",
+       "desc": "You can summarize data conditionally, which means you can create your own conditions for the data to be summarized.",
+       "url": "https://exploratory.io/note/exploratory/How-to-Summarize-with-Conditions-YNv7sUq1"
        },
        {
        "title": "集計テーブルの合計の計算対象を集計前に変更する方法",
@@ -240,9 +245,14 @@
        "url": "https://exploratory.io/note/kanaugust/Chart-Dual-Y-Axis-ilv7Hbe1Xt"
        },
        {
-       "title": "一つのチャートにバーとラインを同時に表示する方法",
-       "desc": "一つのチャートにバーとラインを同時に表示する方法をご紹介します。",
-       "url": "https://exploratory.io/note/kei/Frr5QQl7fI"
+       "title": "Show Bar and Line in a Single Chart",
+       "desc": "You can use different markers for different measures in the same chart.",
+       "url": "https://exploratory.io/note/kanaugust/Chart-Switching-Marker-Circle-Line-Bar-LoW1UdM7QH"
+       },
+       {
+       "title": "Add Your Own GeoJSON for Map",
+       "desc": "You can learn on how you can install your GeoJSON files and start visualizing data with your own Map.",
+       "url": "https://exploratory.io/note/exploratory/Extend-Map-with-Your-Own-GeoJSON-Files-lAk9Ydb2"
        },
        {
        "title": "チャート上に値を表示する方法",
