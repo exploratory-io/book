@@ -13,6 +13,10 @@ Released on 10/5/2022.
 * General: Now you can configure whether you want to "Double Quote" data for Clipboard export.
 
 
+* Analytics: Topic Model: Documents on the Documents tab are now sorted so that documents relevant to the same topic are shown close to each other.
+* Analytics: Factor Analysis: Variables on the Weight (Bar) tab are now sorted so that variables that are affected by the same factor are shown close to each other.
+
+
 ### Bug Fixes
 
 
@@ -36,8 +40,7 @@ Released on 10/5/2022.
 * Chart: Table: Table failed to render due to a "non-numeric argument to binary operator" error if you assigned a numeric column with "%" formatting to the table and the column data type was converted to character.
 
 
-* Analytics: Topic Model: Colors of the tagged words were wrong.
-* Analytics: Topic Model: Sort documents on the Documents tab based on the documents' top topic and relevance value.
+* Analytics: Topic Model: In the Documents tab, the colors of the tagged words were wrong.
 
 
 * Dashboard: The "more" icon on a row was cut off when the row height was the minimum height.
