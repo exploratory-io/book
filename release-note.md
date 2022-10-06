@@ -1,6 +1,6 @@
 # Release Note
 
-## 6.11.0
+## 6.11.1
 
 Released on 10/5/2022.
 
