@@ -4,13 +4,17 @@
 
 Released on 10/5/2022.
 
+### Breaking Changes
+
+* Data Source: MS Access: To import non-ASCII data or query from non-ASCII tables and columns on Windows, Please follow [enabling UTF-8 support on Windows](https://exploratory.io/note/exploratory/Enabling-UTF-8-on-Windows-hYc3yWL0) and enables the UTF-8 support on R. 
+
 ### Enhancements
 
 
 * Chart: Now you can a legend for the Trend Line with the "All" Target option in the Scatter (No Aggregation) chart.
 
 
-* General: Now you can configure whether you want to "Double Quote" data for Clipboard export.
+* General: Now you can configure Data Format for Exporting to Clipboard.
 
 
 * Analytics: Topic Model: Documents on the Documents tab are now sorted so that documents relevant to the same topic are shown close to each other.
