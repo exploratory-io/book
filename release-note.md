@@ -4,6 +4,10 @@
 
 Released on 10/5/2022.
 
+### Breaking Changes
+
+* Data Source: MS Access: To import data from non-ASCII tables and columns on Windows, Please follow [enabling UTF-8 support on Windows](https://exploratory.io/note/exploratory/Enabling-UTF-8-on-Windows-hYc3yWL0) and enables the UTF-8 support on R. 
+
 ### Enhancements
 
 
