@@ -14,7 +14,7 @@ Released on 10/5/2022.
 * Chart: Now you can a legend for the Trend Line with the "All" Target option in the Scatter (No Aggregation) chart.
 
 
-* General: Now you can configure whether you want to "Double Quote" data for Clipboard export.
+* General: Now you can configure Data Format for Exporting to Clipboard.
 
 
 ### Bug Fixes
