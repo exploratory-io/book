@@ -2,6 +2,64 @@
 
 ## 6.11.0
 
+Released on 10/5/2022.
+
+### Enhancements
+
+
+* Chart: Now you can a legend for the Trend Line with the "All" Target option in the Scatter (No Aggregation) chart.
+
+
+* General: Now you can configure whether you want to "Double Quote" data for Clipboard export.
+
+
+### Bug Fixes
+
+
+* Data Source: CSV: Importing file ends up with The size of the connection buffer was not large enough error.
+
+
+* Data Wrangling: Replace Values with Conditions: Drag and drop reordering for conditions did not work.
+* Data Wrangling: Copying a folder didn't copy chart thumbnails on the nested branches.
+* Data Wrangling: On a source step label, it showed an internal attribute for the Parquet data source.
+* Data Wrangling: Filter: When changing a column selection, the selected parameter didn't stay even though the column data type was the same as before.
+* Data Wrangling: Filter: When re-opening the Filter dialog, it did not populate the multi-selection widget with available options.
+* Data Wrangling: Merge: The data frame list didn't show selected data frames at the top.
+* Data Wrangling: Summarize: "1st" function is not working when you select "All Numeric Columns" as the value.
+* Data Wrangling: Window Calculation: When clicking the green text for a value column, it did not open the Edit Dialog when the mouse hovered at the bottom of the text.
+
+
+* Chart: Highlight: "Highlighted: 1 Value" showed up even though there were 2 highlighted values if you clicked the "Apply" button without clearing the table search in the Color and Group dialog.
+* Chart: Bar chart failed to render if you assigned a logical column to Color and added a logical condition. 
+* Chart: Duplicate Project dialog showed up if you duplicate a note and selected the "Edit Custom Color Palette" menu from the Color Palette dropdown in Color and Group Setting dialog.
+* Chart: Table: Color formatting didn't work correctly on numeric columns that used to be character columns.
+* Chart: Table: Table failed to render due to a "non-numeric argument to binary operator" error if you assigned a numeric column with "%" formatting to the table and the column data type was converted to character.
+
+
+* Analytics: Topic Model: Colors of the tagged words were wrong.
+* Analytics: Topic Model: Sort documents on the Documents tab based on the documents' top topic and relevance value.
+
+
+* Dashboard: The "more" icon on a row was cut off when the row height was the minimum height.
+
+
+* Publish: When publishing an insight as a team failed because the team owner's account is no longer a Business account, It didn't show a correct error message .
+* Parameter: Made the multi-selector widget height static instead of dynamically changing it. 
+
+
+* Import: Importing a project failed with a "Bad archive" error.
+* Project Export:  Stopped performing unnecessary R restart when canceling a project export.
+* General: The 'Use Legacy Window System Encoding' option was not saved and cleared after restarting App.
+
+
+
+
+
+## 6.11.0
+
+
+
+
 Released on 9/27/2022.
 
 ### Breaking Changes
