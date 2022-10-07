@@ -1,5 +1,21 @@
 # リリースノート
 
+# Release Note
+
+## 6.11.1
+
+2022年10月5日リリース。
+
+### 互換性のない修正
+
+* Data Source: MS Access: To import non-ASCII data or query from non-ASCII tables and columns on Windows, Please follow [enabling UTF-8 support on Windows](https://exploratory.io/note/exploratory/Enabling-UTF-8-on-Windows-hYc3yWL0) and enables the UTF-8 support on R.
+
+### 機能強化
+
+
+### 修正された問題
+
+
 ## 6.11.0
 
 2022年9月27日リリース。
