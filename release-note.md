@@ -6,7 +6,7 @@ Released on 10/5/2022.
 
 ### Breaking Changes
 
-* Data Source: MS Access: To import non-ASCII data or query from non-ASCII tables and columns on Windows, Please follow [enabling UTF-8 support on Windows](https://exploratory.io/note/exploratory/Enabling-UTF-8-on-Windows-hYc3yWL0) and enables the UTF-8 support on R. 
+* Data Source: MS Access: To import non-ASCII data or query from non-ASCII tables and columns on Windows, Please follow [enabling UTF-8 support on Windows](https://exploratory.io/note/exploratory/Enabling-UTF-8-on-Windows-hYc3yWL0) and enables the UTF-8 support on R.
 
 ### Enhancements
 
@@ -38,7 +38,7 @@ Released on 10/5/2022.
 
 
 * Chart: Highlight: "Highlighted: 1 Value" showed up even though there were 2 highlighted values if you clicked the "Apply" button without clearing the table search in the Color and Group dialog.
-* Chart: Bar chart failed to render if you assigned a logical column to Color and added a logical condition. 
+* Chart: Bar chart failed to render if you assigned a logical column to Color and added a logical condition.
 * Chart: Duplicate Project dialog showed up if you duplicate a note and selected the "Edit Custom Color Palette" menu from the Color Palette dropdown in Color and Group Setting dialog.
 * Chart: Table: Color formatting didn't work correctly on numeric columns that used to be character columns.
 * Chart: Table: Table failed to render due to a "non-numeric argument to binary operator" error if you assigned a numeric column with "%" formatting to the table and the column data type was converted to character.
@@ -51,7 +51,7 @@ Released on 10/5/2022.
 
 
 * Publish: When publishing an insight as a team failed because the team owner's account is no longer a Business account, It didn't show a correct error message .
-* Parameter: Made the multi-selector widget height static instead of dynamically changing it. 
+* Parameter: Made the multi-selector widget height static instead of dynamically changing it.
 
 
 * Import: Importing a project failed with a "Bad archive" error.
@@ -59,28 +59,22 @@ Released on 10/5/2022.
 * General: The 'Use Legacy Window System Encoding' option was not saved and cleared after restarting App.
 
 
-
-
-
 ## 6.11.0
-
-
-
 
 Released on 9/27/2022.
 
 ### Breaking Changes
 
 * General: For Windows, we started using UTF-8 as the character set on R. We recommend [enabling UTF-8 support on Windows](https://exploratory.io/note/exploratory/Enabling-UTF-8-on-Windows-hYc3yWL0), which fully enables the UTF-8 support on R. Without this setup, usage of multibyte characters may cause some issues.
-* Chart: If you have a Pie/Ring chart with the "Others" group and the "Sort by Value" checked, now the "Others" group shows up at the end regardless of the slice size. 
+* Chart: If you have a Pie/Ring chart with the "Others" group and the "Sort by Value" checked, now the "Others" group shows up at the end regardless of the slice size.
 * Analytics: Topic Model: We now assign topic IDs based on the number of documents that belongs to the topics. As a result, the IDs of the topics might change from the results from previous releases.
 * Analytics: Output column name for the linear predictor of logistic regression/GLM prediction step with the models from Analytics View is changed from "predicted_value" to "linear_predictor."
 * Analytics: Cox Regression/Survival Forest: Existing prediction steps with the models from these Analytics Views will stop working. Please open the dialog for those steps, and select the new set of properties to make them work again.
 
 ### Enhancements
 
-* Table View: Now you can configure how to show the invisible characters such as spaces, tabs, etc, from the Property dialog. 
-* Table View: Now you can configure the number formatting from the Property dialog. 
+* Table View: Now you can configure how to show the invisible characters such as spaces, tabs, etc, from the Property dialog.
+* Table View: Now you can configure the number formatting from the Property dialog.
 * Table View: Now you can show the NA ratio bars at the column header. You can configure it from the Property dialog.
 
 
@@ -97,7 +91,7 @@ Released on 9/27/2022.
 * Chart: Highlight: Now you can use the "Show as ‘Others’ for not highlighted values." option to improve the chart drawing performance in Scatter and Bubble chart types.
 * Chart: Now you can set the legend order and value order separately for Area and Bar (Stacked) chart types from the Color & Group Setting dialog.
 * Chart: Now you can show a single trend line for all the data even if you assign a column to Color by the "One Line Per Chart" Trend Line option in the Scatter chart.
-* Chart: Now you can show the detailed data by clicking the chart on Pivot, Summarize Table, Map (Standard), Map (Extension), and Map (Long/Lat) chart types. 
+* Chart: Now you can show the detailed data by clicking the chart on Pivot, Summarize Table, Map (Standard), Map (Extension), and Map (Long/Lat) chart types.
 * Chart: Now you can use "Previous Value", "Next Value" and "Period Ago" Window Calculations.
 * Chart: Now you can use the "Middle" option in the "Show Value on Plot" property on Bar, Error Bar, and Error Bar (Summarized Data) chart types.
 * Chart: Now you can use the horizontal orientation on Boxplot and Violin chart types.
@@ -142,14 +136,14 @@ Released on 9/27/2022.
 * Chart: Column assignments got screwed up after dragging and dropping Value columns in Radar chart.
 * Chart: If you exported the chart data to Google Sheets, a "null" text showed up in the empty cells.
 * Chart: If you have multiple columns assigned to Y-Axis and removed the 1st one, the 2nd column moved up to the 1st position but the Window Calculation setting on the 2nd column didn't follow the column move.
-* Chart: If you selected the "(Row ID)" column to the Group By, the show detail dialog showed all the data in Scatter (with Aggregation) chart. 
+* Chart: If you selected the "(Row ID)" column to the Group By, the show detail dialog showed all the data in Scatter (with Aggregation) chart.
 * Chart: Pivot: Summarize Table: Colors on categorical values should respect the factor/text order.
 * Chart: Pivot: Summarize Table: It didn't remember the last decision of the "Apply All" checkbox if you reopened the Formatting dialog.
-* Chart: Radar: Increase the default margin size between Radar charts in order to avoid label text overlapping and incorrect chart alignment. 
+* Chart: Radar: Increase the default margin size between Radar charts in order to avoid label text overlapping and incorrect chart alignment.
 * Chart: Table: A long URL text was cut in the middle even if you set the text wrap option.
 * Chart: The "Others" group should show up at the end of the categories.
 * Chart: The Equal Step grouping type didn't include the lowest value if you set the "Include Upper Edge" and didn't set the Lower Range value.
-* Chart: The popup position was off if the chart used the Repeat By. 
+* Chart: The popup position was off if the chart used the Repeat By.
 * Chart: The position of the Quick Window Function submenu was off on the Area chart.
 
 
@@ -172,7 +166,7 @@ Released on 9/27/2022.
 * Note: If the chart had no data to show, it showed the "There is no data to display." message with an unnecessary vertical scroll bar.
 
 
-* Publish: Publish Dialog should show up after 15 sec if a connection is timed out. 
+* Publish: Publish Dialog should show up after 15 sec if a connection is timed out.
 
 
 * Export: When exporting and importing a project, Folders in the projects were opened on some occasions.
