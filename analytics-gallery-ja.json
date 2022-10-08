@@ -52,7 +52,7 @@
         "url": "https://exploratory.io/note/GMq1Qom5tS/Awv4BdC2vr"
        },
        {
-         "title": "XGBoostの紹介",
+         "title": "XGBoost",
          "desc": "XGBoostの使い方をご紹介します。",
          "url": "https://exploratory.io/note/GMq1Qom5tS/XGBoost-OfE1zYp6Cg"
       },
@@ -113,7 +113,7 @@
       },
       {
         "title": "統計的検定 - クラスカル・ウォリス検定",
-        "desc": "時系列異常値検知の使い方をご紹介します。",
+        "desc": "クラスカル・ウォリス検定の使い方をご紹介します。",
         "url": "https://exploratory.io/note/exploratory/vgu0oqy0"
       },
        {
