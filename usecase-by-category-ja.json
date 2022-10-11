@@ -112,11 +112,6 @@
          "url": "https://exploratory.io/note/exploratory/CLV-peQ9oDO5"
         },
         {
-         "title": "市場調査データへの機械学習の活用",
-         "desc": "データサイエンス勉強会#15の株式会社インテージヘルスケア様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/EaP7sKg0"
-        },
-        {
          "title": "作業品質向上のためのロジスティック回帰を使った分析事例",
          "desc": "データサイエンス勉強会#14の株式会社日立ドキュメントソリューションズ様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/UaZ9snw0"
@@ -501,11 +496,6 @@
       "title": "コラボレーション",
       "desc": "コラボレーションの事例を紹介します。",
       "insights": [
-        {
-         "title": "市場調査データへの機械学習の活用",
-         "desc": "データサイエンス勉強会#15の株式会社インテージヘルスケア様のご発表内容となります。",
-         "url": "https://exploratory.io/note/exploratory/EaP7sKg0"
-        },
         {
          "title": "コラボレーション・サーバーの活用例",
          "desc": "データサイエンス勉強会#13のBeacon Communications様のご発表内容となります。",
