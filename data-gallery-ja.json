@@ -53,7 +53,7 @@
       "desc": "Exploratoryでは様々なクラウド アプリケーションからデータを読み込むことができます。",
       "moreButtonText": "もっと見る",
       "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
-      "insights":
+      "insights": [
         {
           "title": "FRED",
           "desc": "FREDのデータを読み込む方法を紹介します。",
