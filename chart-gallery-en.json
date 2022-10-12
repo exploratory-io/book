@@ -7,18 +7,18 @@
       "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=en",
       "insights": [
         {
-         "title": "ピボットテーブルの作り方",
-         "desc": "ピボットテーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/FAQ5WqV0xM"
+         "title": "Pivot Table",
+         "desc": "A quick introduction to Pivot Table.",
+         "url": "https://blog.exploratory.io/introducing-pivot-table-1c9c949fd2d6"
         },
         {
-         "title": "集計テーブルの作り方",
-         "desc": "集計テーブルの作り方をご紹介します。",
+         "title": "Summarize Table",
+         "desc": "A quick introduction to Summarize Table.",
          "url": "https://exploratory.io/note/GMq1Qom5tS/RMB5wbA4Rs"
         },
         {
-         "title": "テーブルの作り方",
-         "desc": "テーブルの作り方をご紹介します。",
+         "title": "Table",
+         "desc": "A quick introduction to Table.",
          "url": "https://exploratory.io/note/GMq1Qom5tS/ktS2eEK6jW"
         },
         {
@@ -47,9 +47,9 @@
          "url": "https://exploratory.io/note/GMq1Qom5tS/UGZ4vyR3GG"
         },
         {
-         "title": "密度曲線の作り方",
-         "desc": "密度曲線の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/eck4bdS4Wl"
+         "title": "Density Plot",
+         "desc": "A quick introduciton to Density Plot.",
+         "url": "https://exploratory.io/note/kanaugust/Introduction-to-Density-Plot-qok5EPh4DW"
         },
         {
          "title": "散布図（集計なし）の作り方",
@@ -77,9 +77,9 @@
          "url": "https://exploratory.io/note/exploratory/How-to-Use-Error-Bar-Chw4Yms2"
         },
         {
-         "title": "ヒートマップの作り方",
-         "desc": "ヒートマップの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
+         "title": "Heatmap",
+         "desc": "A quick introduction to Heatmap!",
+         "url": "https://blog.exploratory.io/quick-introduction-to-heatmap-c21a9f9e4644"
         },
         {
          "title": "Radar Chart",
@@ -87,13 +87,13 @@
          "url": "https://exploratory.io/note/exploratory/Introduction-to-Radar-Chart-UVx2dgH2"
         },
         {
-         "title": "地図 - 標準の使い方",
-         "desc": "地図 - 標準の使い方についてご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/GWw6gtb4rU"
+         "title": "Map - Standard",
+         "desc": "A quick introduciton to Standard Map type",
+         "url": "https://exploratory.io/note/exploratory/Introduction-to-Map-Standard-vne0goX1"
        },
        {
-        "title": "地図 - 経度/緯度の作り方",
-        "desc": "地図 - 経度/緯度の作り方をご紹介します。",
+        "title": "Map - Longitude / Latitude",
+        "desc": "A quick introduction to Longitude / Latitude Map type.",
         "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
        },
        {
