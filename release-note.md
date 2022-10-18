@@ -6,7 +6,7 @@ Released on 10/18/2022.
 
 ### Enhancements
 
-* Data Source: Supported the "Additional Parameter" for MS SQL Server / Azure SQL and Snowflake data connections.
+* Data Source: Supported the "Additional Parameters" for MS SQL Server / Azure SQL and Snowflake data connections.
 
 
 * Data Wrangling: Replace Values with Condition: Now you can disable a condition row.
