@@ -1,5 +1,57 @@
 # Release Note
 
+## 6.11.2
+
+Released on 10/18/2022.
+
+### Enhancements
+
+* Data Source: Supported the "Additional Parameters" for MS SQL Server / Azure SQL and Snowflake data connections.
+
+
+* Data Wrangling: Replace Values with Condition: Now you can disable a condition row.
+* Data Wrangling: Replace Values with Condition: Now you can reorder a condition token by drag and drop.
+* Data Wrangling: Replace Values with Condition: Now you can reserve the order of new values and set the data type as Factor.
+* Data Wrangling: Replace Values with Condition: Supported the Reset button.
+* Data Wrangling: Replace Values with Condition: When a new value was not set, clicking the Run button showed the error popup for deleting a whole step.
+* Data Wrangling: Replace Values with Condition: When the new value data type is changed, now it is set to the previously set value for the data type.
+* Data Wrangling: Window Calculation: Now it sets Date as the default unit for Date columns calculation and hour for POSIXct columns calculation.
+
+
+* Chart: Now you can configure the color sort on Line, Bar (Grouped), Scatter (With Aggregation), and Error Bar chart types.
+* Chart: Now you can hide the unused factor levels from the "Show Unused levels" setting on Scatter chart types.
+* Chart: Trend Line: Now you can draw one trend line per chart even if you set a column to Color by setting the "All" Target option in the Trend Line setting dialog on Line and Scatter (With Aggregation) chart types.
+
+
+### Bug Fixes
+
+
+* Data Wrangling: An error report dialog with the following error message came up while adding a new step in some cases. "belongsTo attribute to set to the inserted step does not match with the step that would be the next step of the inserted step".
+* Data Wrangling: In the English UI language, the Radio Button Label overflowed for Predict With Model Dialog.
+* Data Wrangling: Replace Values with Condition: Changed the default new value data type as a character.
+* Data Wrangling: Replace Values with Condition: When selecting multiple columns for target columns, a condition should use "selected columns" for column assignment by default.
+* Data Wrangling: Replace Values with New Values: Multi-column selection with Shift key was not working when the Replace Values with New Values Dialog was opened with only one column.
+
+
+* Chart: Color: If you choose the "Y-Axis Values" for the Sort By and "Bottom to Top" for the Direction in the Color setting dialog, the "Others" group should show up at the top on a Bar (Stacked) and Area chart types.
+* Chart: Color Dialog didn't open if you assigned a numeric column to Color with the "As Discrete Numeric" function and set the "Row ID" column to Group By on Map Long/Lat.
+* Chart: Color Dialog: The Sort dropdown should be separated into the Direction and Sort By dropdowns.
+* Chart: Summarize Table failed to render due to the “Invalid argument was passed to returnsNumericValue” error.
+* Chart: Color: The default color direction setting for a logical column should be "Bottom to Top". 
+
+
+* Analytics: Random Forest, XGBoost, Linear/Logistic regression, etc.: If the "Reserve Order in Data" option was selected, but the training/test split itself was off, the single last row was still split into the test data set.
+
+
+* Dashboard: After changing a multi-select parameter widget style,  the "Show Details" dialog errored out.
+* Dashboard: If you hover over the page tab, it should show the Popup only when the page name is long. 
+* Note: When opening a Note after running a Dashboard, the Run button was displayed in the incorrect position.
+
+
+* Publish: The spin icon did not go away when opening a publish dialog for data sharing.
+* Installation: Supported timeout for the installation dialog for R and Git.
+
+
 ## 6.11.1
 
 Released on 10/5/2022.
