@@ -1,5 +1,18 @@
 # リリースノート
 
+## 6.11.2.1
+
+2022年10月19日にリリース。
+
+### ダウンロード
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.11.2.1.tar.gz)
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.11.2.1.tar.gz)
+
+### 修正された問題
+
+* スーパーテーブル: 検索ボックスが隣のラベルに重なってしまう。
+
 ## 6.11.0.5
 
 2022年9月28日にリリース。
