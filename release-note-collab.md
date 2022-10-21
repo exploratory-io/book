@@ -12,6 +12,7 @@ Released on 10/19/2022.
 ### Bug Fixes
 
 * Super Table: The search input field was displayed too long and overlapped with the label next to it.
+* Insight: The style of the Show Detail dialog was not consistent with the one on the Exploratory Desktop. 
 * Parameter: After typed in text to search field, parameter height was shrink where it should keep the original height.
 
 ## 6.11.0.5
