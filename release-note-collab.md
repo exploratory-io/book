@@ -12,7 +12,7 @@ Released on 10/19/2022.
 ### Bug Fixes
 
 * Super Table: The search input field was displayed too long and overlapped with the label next to it.
-
+* Parameter: After typed in text to search field, parameter height was shrink where it should keep the original height.
 
 ## 6.11.0.5
 
