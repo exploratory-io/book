@@ -1,13 +1,23 @@
 # Release Note
 
-## 6.11.0.5
+## 6.11.2.1
 
-Released on 9/28/2022.
+Released on 10/19/2022.
 
 ### Download
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.11.0.5.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.11.0.5.tar.gz)
+* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.11.2.1.tar.gz)
+* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.11.2.1.tar.gz)
+
+### Bug Fixes
+
+* Super Table: The search input field was displayed too long and overlapped with the label next to it.
+* Insight: The style of the Show Detail dialog was not consistent with the one on the Exploratory Desktop. 
+* Parameter: After typed in text to search field, parameter height was shrink where it should keep the original height.
+
+## 6.11.0.5
+
+Released on 9/28/2022.
 
 ### Enhancements
 

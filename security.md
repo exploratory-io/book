@@ -48,7 +48,7 @@ Exploratory Cloud is multi-tenant and does not segment your data from other user
 
 ## Data Retention and Deletion
 
-Exploratory Cloud retains your content unless you take explicit steps to delete data, charts, and notes. For information on how to delete them, please see this [help document](https://docs.exploratory.io/share/share.html). For information on our retention policies, please refer to the section of our [privacy policy](https://exploratory.io/privacy/), titled “Data Retention and Deletion”.
+Exploratory Cloud retains your content unless you take explicit steps to delete data, charts, and notes. For information on how to delete them, please see this [help document](https://docs.exploratory.io/product-features/share). For information on our retention policies, please refer to the section of our [privacy policy](https://exploratory.io/privacy/), titled “Data Retention and Deletion”.
 
 
 ## Employee access

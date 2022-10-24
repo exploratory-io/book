@@ -8,33 +8,43 @@
       "insights": [
         {
           "title": "CSV・Excel",
-          "desc": "PC上のCSVやエクセルのデータをインポートする方法をご紹介します。",
+          "desc": "CSVやエクセルのデータをインポートする方法をご紹介します。",
           "url": "https://exploratory.io/note/BWz1Bar4JF/CSV-qMt0tdA0Ti"
         },
         {
-          "title": "複数のCSVまたはExcelファイル",
-          "desc": "PC上の複数のExcelまたはCSVファイルをいっぺんに読み込む方法をご紹介します。",
+          "title": "リモートCSV",
+          "desc": "リモートCSVのデータをインポートする方法をご紹介します。",
           "url": "https://exploratory.io/note/kanaugust/Excel-CSV-rXx6GVk9XI"
         },
         {
-          "title": "Amazon S3上の複数のcsvファイル",
-          "desc": "Amazon S3上の複数のcsvファイルを一度に読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/BWz1Bar4JF/Amazon-S3-csv-RxZ3ZAj1AI"
+          "title": "複数のCSVまたはExcelファイル",
+          "desc": "複数のExcelまたはCSVファイルをいっぺんにをインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/CSV-Excel-Exploratory-nCG0mnv3"
         },
         {
-          "title": "Githubで公開されているCSV",
-          "desc": "Githubで公開されているCSVデータを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/GitHub-ZQW1UUM8XE"
+          "title": "Google ドライブ",
+          "desc": "Google ドライブからCSVファイルをインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/Google-Drive-raT1FzF5fd"
         },
         {
-          "title": "複数のPDFファイル",
-          "desc": "PC上の同じディレクトリの下にある複数のPDFファイルからテキストを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/BWz1Bar4JF/Amazon-S3-csv-RxZ3ZAj1AI"
+          "title": "JSON",
+          "desc": "JSONファイルをインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/JSON-qss2jup9"
         },
         {
-          "title": "XML",
-          "desc": "XMLデータを読み込む方法を読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/XML-Gur3OyD2lj"
+          "title": "Parquet",
+          "desc": "Parquetファイルをインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-161-Parquet-yeG7yZf7Oa"
+        },
+        {
+          "title": "統計ファイル（SPSS, SAS, STATA）",
+          "desc": "統計ファイル（SPSS, SAS, STATA）をインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/SPSS-SAS-STATA-UTk5cVn4"
+        },
+        {
+          "title": "Rファイル（RDATA, RDS）",
+          "desc": "Rファイル（RDATA, RDS）をインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/R-RDATA-RDS-SlJ5RFY5"
         }
       ]
     },
@@ -45,13 +55,38 @@
       "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
       "insights": [
         {
+          "title": "FRED",
+          "desc": "FREDのデータを読み込む方法を紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/FRED-FRB-Wnz3Snw9Gp"
+        },
+        {
+          "title": "Github issues",
+          "desc": "Github issuesのデータを読み込む方法を紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Github-issues-UUd2dDd6"
+        },
+        {
+          "title": "Google Analytics",
+          "desc": "Google Analyticsのデータを読み込む方法を紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Google-CxF2SmH0"
+        },
+        {
           "title": "Google Sheets",
           "desc": "Google Sheetsのデータを読み込む方法を紹介します。",
           "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Sheets-Nnk4xUD2bI"
         },
         {
-          "title": "Twitter",
-          "desc": "Twitterのデータを読み込む方法を紹介します。",
+          "title": "Salesforce",
+          "desc": "Salesforceのデータを読み込む方法を紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Salesforce-ZjW6Boi8"
+        },
+        {
+          "title": "Stripe",
+          "desc": "Stripeのデータを読み込む方法を紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Stripe-WyN7tDh9"
+        },
+        {
+          "title": "Twitter Search",
+          "desc": "Twitter Searchのデータを読み込む方法を紹介します。",
           "url": "https://exploratory.io/note/GMq1Qom5tS/Twitter-QCG7HEt1qD"
         },
         {
@@ -68,62 +103,107 @@
       "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
       "insights": [
         {
+          "title": "Amazon Athena",
+          "desc": "Amazon Athenaに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-Amazon-Athena-aIA9wSL1"
+        },
+        {
+          "title": "Amazon Aurola",
+          "desc": "Amazon Aurolaに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Amazon-Aurora-qCo6wLC3"
+        },
+        {
+          "title": "Amazon Redshift",
+          "desc": "Amazon Redshiftに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Amazon-Redshift-egv3aAv7"
+        },
+        {
+          "title": "Google Big Query",
+          "desc": "Google Big Queryに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Google-BigQuery-ttA7gqG9"
+        },
+        {
+          "title": "HP Vertica",
+          "desc": "HP Verticaに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/HP-Vertica-yTF3rcb6"
+        },
+        {
+          "title": "MongoDB",
+          "desc": "MongoDBに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/MongoDB-jpf5ecY1"
+        },
+        {
+          "title": "Microsoft Access",
+          "desc": "Microsoft Accessに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/MongoDB-jpf5ecY1"
+        },
+        {
+          "title": "MS SQL Server / Azure SQL",
+          "desc": "MS SQL Server / Azure SQLに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/MS-SQL-Server-Azure-SQL-giA2KiF9"
+        },
+        {
+          "title": "MariaDB (MySQL)",
+          "desc": "MariaDB (MySQL)に接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/MariaDB-MySQL-jud2ZjX7"
+        },
+        {
+          "title": "ODBC",
+          "desc": "ODBCに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/ODBC-atz9rYu8"
+        },
+        {
+          "title": "PostgreSQL",
+          "desc": "PostgreSQLに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/PostgreSQL-cVM4liT6"
+        },
+        {
+          "title": "Presto",
+          "desc": "Prestoに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Presto-oOf6LUI1"
+        },
+        {
           "title": "Snowflake",
           "desc": "Snowflakeに接続してデータを読みこむ方法をご紹介します。",
           "url": "https://exploratory.io/note/2ac8ae888097/Exploatory-Snowflake-rpe0WYz9NS"
         },
         {
-          "title": "Google BigQuery",
-          "desc": "Google BigQueryのデータを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/2ac8ae888097/9140554486080544"
+          "title": "Teradata",
+          "desc": "Teradataに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Teradata-TdY2eKy8"
         },
         {
-          "title": "Spark",
-          "desc": "Sparkのデータを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/2ac8ae888097/2569131745987096"
-        },
-        {
-          "title": "Elasticsearch",
-          "desc": "Elasticsearchのデータを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/2ac8ae888097/Exploatory-Elasticsearch-FIQ3mqN1ux"
-        },
-        {
-          "title": "Dr.Sum",
-          "desc": "Dr.SumにODBCで接続してデータを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/2ac8ae888097/Dr-Sum-ODBC-Exploratory-UzH6FFw9Ri"
-        },
-        {
-          "title": "SQLite",
-          "desc": "SQLiteのデータを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/2ac8ae888097/8482041754876436"
-        },
-        {
-          "title": "MySQLに踏み台サーバー経由(ssh)でアクセスする方法",
-          "desc": "MySQLに踏み台サーバー経由(ssh)でアクセスする方法をご紹介します。",
-          "url": "https://exploratory.io/note/2ac8ae888097/MySQL-ssh-BBY7Gpj9QJ"
-        },
-        {
-          "title": "SQLでパラメーターを使う方法",
-          "desc": "SQLでパラメーターを使う方法をご紹介します。",
-          "url": "https://exploratory.io/note/BWz1Bar4JF/SQL-jxm8Ftl3HW"
+          "title": "Treasure Data",
+          "desc": "Treasure Dataに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/2ac8ae888097/Exploatory-Treasure-Data-xWH7lmp9Yf"
         }
       ]
     },
     {
-      "title": "エクステンション",
-      "desc": "Exploratoryでは様々なエクステンションからデータを読み込むことができます。",
+      "title": "その他",
+      "desc": "Exploratoryでは他にも様々なデータを読み込むことができます。",
       "moreButtonText": "もっと見る",
       "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
       "insights": [
         {
-          "title": "天候データ",
-          "desc": "天候データを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/2ac8ae888097/Lnu0hnY4MV"
+          "title": "WEBスクレイピング",
+          "desc": "WEBスクレイピングをしてデータを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/Web-tby3QRV0kO"
+        },
+        {
+          "title": "テキスト・インプットデータ",
+          "desc": "データを手動で作成して読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-198-iyD2MGi3St"
         },
         {
           "title": "株価データ",
           "desc": "株価データを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/BWz1Bar4JF/pPy5ZPb2XK"
+          "url": "https://exploratory.io/note/GMq1Qom5tS/RAu9VSG4Pc"
+        },
+        {
+          "title": "天候データ",
+          "desc": "天候データを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/kaV5TAk3cS"
         }
       ]
     },
@@ -134,6 +214,16 @@
       "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
       "insights": [
         {
+          "title": "PDF",
+          "desc": "PDFのデータを読み込む方法を紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/PDF-OAH6rtx7Iw"
+        },
+        {
+          "title": "XML",
+          "desc": "XMLのデータを読み込む方法を紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/XML-Gur3OyD2lj"
+        },
+        {
           "title": "e-Stat",
           "desc": "e-Statのデータを読み込む方法を紹介します。",
           "url": "https://exploratory.io/note/GMq1Qom5tS/e-Stat-API-fEe2Vxh8YS"
@@ -142,6 +232,11 @@
           "title": "Jira",
           "desc": "Jiraのデータを読み込む方法を紹介します。",
           "url": "https://exploratory.io/note/exploratory/Exploratory-Jira-TKi4qbr4"
+        },
+        {
+          "title": "Elasticsearch",
+          "desc": "Elasticsearchのデータを読み込む方法を紹介します。",
+          "url": "https://exploratory.io/note/2ac8ae888097/Exploatory-Elasticsearch-FIQ3mqN1ux"
         }
       ]
     }
