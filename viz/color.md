@@ -73,22 +73,27 @@ You can customize the color and display name for each category in this section.
 
 The following settings are available.  
 
-* Sort By - You can change the sort order of the values. It is available for Bar (Stacked), Area, and Pie chart types. The following options are available. 
-  * Character type column at Color
-    * Alphabetical (A-Z)
-    * Alphabetical (Z-A)
-    * Y-Axis Value (Ascending)
-    * Y-Axis Value (Descending)
+* Direction - You can choose the sort direction. 
   * Factor type column at Color
     * Factor Level
     * Factor Level (Reversed)
   * For a column with any other type 
     * Top to Bottom
     * Bottom to Top
-* Legend Direction - You can change the direction of how to apply the color palette. It is available for Bar (Stacked) and Area chart types. The following options are available. 
-    * Top to Bottom
-    * Bottom to Top
+* Sort By - You can choose the base values for the sort. It is available on Bar, Line, Area, Pie, Scatter (With Aggregation) and Error Bar, and if you assign a character type column to Color. The following options are available. 
+  * Alphabetical 
+  * Y-Axis Value 
  
+<!--
+Use this once #26183 is in the product.
+
+* Sort By - You can choose the base values for the sort. It is available on Bar, Line, Area, Pie, Scatter (With Aggregation) and Error Bar, and if you assign a character type column to Color. The following options are available. 
+  * Original Value 
+  * Display Name
+  * Y-Axis Value 
+
+-->
+
 
 
 ### Show as 'Others' for not highlighted values
