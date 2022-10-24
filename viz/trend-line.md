@@ -1,10 +1,10 @@
 # Trend Line
 
-Trend Line feature is available for Line and Scatter(No Aggregation and With Agggregation) charts. You can draw Trend or Smooth Lines by selecting one of Trend Line types in the Trend Line Setting dialog. 
+Trend Line feature is available for Line and Scatter(No Aggregation and With Aggregation) charts. You can draw Trend or Smooth Lines by selecting one of the Trend Line types in the Trend Line Setting dialog. 
 
 ![](images/trend-dialog.png)
 
-You can open this dialog by selecting `Trend Line` menu of Y-Axis properties. 
+You can open this dialog by selecting the `Trend Line` menu of Y-Axis properties. 
 
 ![](images/trend-toggle.png)
 
@@ -15,20 +15,20 @@ We support the following Trend Line types.
 
 ### Linear Regression  —  LM
 
-This one uses Linear Regression (lm) internally and draw linear (straight) lines.
+This one uses Linear Regression (lm) internally and draws linear (straight) lines.
 
 ![](images/trend-liner.png)
 
 
 ### Polynomial  —  Loess
 
-This one uses Local Polynomial Regression (loess) internally to draw trend lines. It is the best to use when the data size is small. This option will be automatically disabled if the data size is more than 1000 for the performance reason.  
+This one uses the Local Polynomial Regression (loess) internally to draw trend lines. It is best to use when the data size is small. This option will be automatically disabled if the data size is more than 1000 for performance reasons.  
 
 ![](images/trend-loess.png)
 
 ### Polynomial  —  GAM
 
-This one uses Generalized Additive Model (GAM) internally to draw trend lines. It is the best to use when the data size is large.
+This one uses the Generalized Additive Model (GAM) internally to draw trend lines. It is the best to use when the data size is large.
 
 ![](images/trend-gam.png)
 
@@ -45,9 +45,9 @@ This one uses the Poisson Regression internally to draw trend lines.
 
 ## Target 
 
-You can choose the target data group for the Trend Lines. It is available when you assign a column to Color. It is available for Scatter (No Aggregation) chart type.
+You can choose the target data group for the Trend Lines. It is available if you assign a column to Color.
 
-* All: It draws a single Trend Line based on the all data points regardless of the Color setting. 
+* All: It draws a single Trend Line based on all data regardless of the Color setting. 
 * Each Color Group: It draws Trend Lines for each color group. This is the default option.
 
 ## Line Length 
@@ -62,6 +62,15 @@ You can choose one of the following options for the Trend Line length.
 
 ## Show Confidence Interval 
 
-You can show/hide the confidence interval ranges. Default is "show".
+You can show/hide the confidence interval ranges. The default is "show".
+
+
+## Show in Legend
+
+If you select the "All" option for the Target, it shows a corresponding item in the legend. You can uncheck it to hide this.
+
+![](images/trend-show-in-legend.png)
+
+
 
 
