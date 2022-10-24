@@ -36,6 +36,11 @@ You can uncheck the "Show Title" checkbox at the "Contents Area Setting" to hide
 ![](images/panel-header1.png)
 
 
+## Show the Chart Detail Data
+
+You can view the detailed data of the chart by clicking a figure of the chart such as a bar, line, circle, etc. Showing detailed data is supported on charts that you can view the detail data on the Chart View. 
+
+![](images/dashboard-show-detail.png)
 
 
 ## View the Chart/Analytics in the Full-Screen Mode
