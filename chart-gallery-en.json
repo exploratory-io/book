@@ -220,19 +220,9 @@
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-199-tMh4beE1za"
        },
        {
-       "title": "Missing Value (NA) Handlnig in Chart",
-       "desc": "There are various ways to handle or fill the missing values (NA) inside the chart.",
-       "url": "https://exploratory.io/note/kanaugust/Chart-Missing-Values-NA-Handling-lfh2EFT9pc"
-       },
-       {
        "title": "How to Summarize with Conditions (SUM_IF)",
        "desc": "You can summarize data conditionally, which means you can create your own conditions for the data to be summarized.",
        "url": "https://exploratory.io/note/exploratory/How-to-Summarize-with-Conditions-YNv7sUq1"
-       },
-       {
-       "title": "集計テーブルの合計の計算対象を集計前に変更する方法",
-       "desc": "集計テーブルの合計の計算対象を集計前に変更する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-119-huW6VwS5UK"
        },
        {
        "title": "Use Dual Axes to Show Multiple Measures",
@@ -248,11 +238,6 @@
        "title": "Add Your Own GeoJSON for Map",
        "desc": "You can learn on how you can install your GeoJSON files and start visualizing data with your own Map.",
        "url": "https://exploratory.io/note/exploratory/Extend-Map-with-Your-Own-GeoJSON-Files-lAk9Ydb2"
-       },
-       {
-       "title": "チャート上に値を表示する方法",
-       "desc": "チャート上に値を表示する方法をご紹介します。",
-       "url": "https://exploratory.io/note/kei/OBj7zZr8JE"
        }
       ]
     },
@@ -281,12 +266,7 @@
           "title": "#4 - Visualizing Uncertainty with Confidence Interval",
           "desc": "In this seminar, we introduce concepts like 'Uncertainty' and 'Confidence Interval' and show you how you can visualize them effectively with Error Bar in Exploratory.",
           "url": "https://exploratory.io/note/kanaugust/Seminar-33-Visualizing-Uncertainty-with-Confidence-Interval-Error-Bar-uAC9JDI7va"
-          },
-          {
-          "title": "データの可視化ワークショップ #5 - 可視化のためのデータラングリング",
-          "desc": "データを可視化する時によく直面するデータの加工に関する問題を効率的に解決していく方法を紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/5-AZS6fim1QH"
-        }
+          }
       ]
     }
   ]
