@@ -9,11 +9,12 @@ In this seminar, Kan will discuss why they choose Exploratory as their BI & Dash
 
 Agenda:
 
-- 80% of BI is Data Wrangling!
-- Data varies, are you visualizing it?
-- Causation or Correlation, that's the question.
+- A Quick Introduction to Dashboard in Exploratory
+- Data Wrangling for Dashboard
+- Visualizing Variance & Uncertainty
+- Ad-hoc Analysis - Correlation & Causation
+- Report Automation
 - Collaboration
-
 
 ----
 # Seminar #77 - Machine Learning - Validation & Prediction
@@ -24,7 +25,7 @@ Agenda:
 Agenda:
 
 ----
-# Seminar #78 - Introduction to Window Calculation 
+# Seminar #78 - Introduction to Window Calculation
 ## Date/Time: 2022/11/9 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)

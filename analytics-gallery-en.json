@@ -1,5 +1,127 @@
 {
   "data": [
-  ],
-  "__COMMENT__": "Not used now. For future use."
+    {
+      "title": "アナリティクスの種類",
+      "desc": "Exploratoryには様々なアナリティクスのタイプがあります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3AAnalytics&language=ja",
+      "insights": [
+       {
+          "title": "相関",
+          "desc": "相関について紹介しています。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/ACO8snr6qm"
+       },
+       {
+         "title": "距離",
+         "desc": "距離について紹介しています。",
+         "url": "https://exploratory.io/note/exploratory/Xlw7vat7"
+       },
+       {
+        "title": "K-Meansクラスタリング",
+        "desc": "K-Meansクラスタリングについて紹介しています。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/K-Means-ViC2XCL2pW"
+       },
+       {
+        "title": "PCA (Principal Component Analysis)",
+        "desc": "An introduction to PCA.",
+        "url": "https://exploratory.io/note/kanaugust/Introduction-to-PCA-Principal-Component-Analysis-with-FIFA-Soccer-Data-POb2BMx6ap"
+       },
+       {
+        "title": "因子分析",
+        "desc": "因子分析について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/PqC9Tvz5"
+       },
+       {
+         "title": "線形回帰",
+         "desc": "線形回帰について紹介しています。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/llv3NNC6Ij"
+       },
+       {
+         "title": "ロジスティック回帰",
+         "desc": "ロジスティック回帰について紹介しています。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/ZSy0JQr3eO"
+       },
+       {
+         "title": "決定木",
+         "desc": "決定木について紹介しています。",
+         "url": "https://exploratory.io/note/exploratory/GEQ0ssi1"
+       },
+       {
+        "title": "ランダムフォレストの紹介",
+        "desc": "ランダムフォレストについて紹介しています。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/Awv4BdC2vr"
+       },
+       {
+         "title": "XGBoost",
+         "desc": "XGBoostについて紹介しています。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/XGBoost-OfE1zYp6Cg"
+      },
+      {
+        "title": "生存分析 - 生存曲線",
+        "desc": "生存曲線について紹介しています。",
+        "url": "https://exploratory.io/note/BWz1Bar4JF/FAQ-oNW6Fzd2Vo"
+      },
+      {
+        "title": "生存分析 - コックス回帰",
+        "desc": "コックス回帰について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/dsV4vOV3"
+      },
+      {
+        "title": "生存分析 - サバイバル・フォレスト",
+        "desc": "サバイバル・フォレストについて紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/QfN1kOF8"
+      },
+      {
+        "title": "時系列分析 - 時系列予測（Prophet）",
+        "desc": "時系列予測（Prophet）について紹介しています。",
+        "url": "https://exploratory.io/note/GMq1Qom5tS/Prophet-LtL1AKy5yW"
+      },
+      {
+        "title": "時系列分析 - 時系列クラスタリング",
+        "desc": "時系列クラスタリングについて紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/ZzB6Omb7"
+      },
+      {
+        "title": "時系列分析 - 時系列異常値検知",
+        "desc": "時系列異常値検知について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/HxR7aQx3"
+      },
+      {
+        "title": "テキスト分析 - 単語のカウント",
+        "desc": "単語のカウントについて紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/hvP4cCu6"
+      },
+      {
+        "title": "テキスト分析 - トピックモデル（LDA）",
+        "desc": "トピックモデル（LDA）について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/LDA-MmP4fnU2"
+      },
+      {
+        "title": "マーケット・バスケット分析",
+        "desc": "マーケット・バスケット分析について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/ZIP3jdn4"
+      },
+      {
+        "title": "統計的検定 - t検定",
+        "desc": "t検定について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/t-xPg2tCn3"
+      },
+      {
+        "title": "統計的検定 - カイ二乗検定",
+        "desc": "カイ二乗検定について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/hpL7fJS1"
+      },
+      {
+        "title": "統計的検定 - クラスカル・ウォリス検定",
+        "desc": "クラスカル・ウォリス検定について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/vgu0oqy0"
+      },
+       {
+         "title": "A/B テスト - ベイジアン",
+         "desc": "ベイジアンA/Bテストについて紹介しています。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Prophet-LtL1AKy5yW"
+       }
+      ]
+    }
+  ]
 }
