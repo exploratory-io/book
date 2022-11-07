@@ -261,6 +261,11 @@
           "title": "#4 - Visualizing Uncertainty with Confidence Interval",
           "desc": "In this seminar, we introduce concepts like 'Uncertainty' and 'Confidence Interval' and show you how you can visualize them effectively with Error Bar in Exploratory.",
           "url": "https://exploratory.io/note/kanaugust/Seminar-33-Visualizing-Uncertainty-with-Confidence-Interval-Error-Bar-uAC9JDI7va"
+          },
+          {
+          "title": "#5 - Data Wrangling for Data Visualization",
+          "desc": "Once you get your data, more often than not, you need to clean and transform the data before even visualizing it to make any sense. We call this task Data Wrangling. We'll introduce several techniques on how to prepare data for effective visualizations.",
+          "url": "https://exploratory.io/note/kanaugust/Seminar-33-Visualizing-Uncertainty-with-Confidence-Interval-Error-Bar-uAC9JDI7va"
           }
       ]
     }
