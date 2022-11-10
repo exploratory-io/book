@@ -5,8 +5,8 @@ Runs Chi-Square Test, which checks differences of distributions of categorical v
 ## Input Data
 Input data should contain following columns.
 
-  * Target Variable - Categorical column whose distribution should be compared between groups.
-  * Explanatory Variable(s) - Column with categorical values to categorize rows into groups.
+  * Target Variable - The categorical column whose distribution should be compared among groups of rows categorized by the values of the explanatory variable.
+  * Explanatory Variable - Another categorical column to categorize rows into groups.
 
 ## Analytics Properties
   * Pivot Table
@@ -34,6 +34,15 @@ Input data should contain following columns.
 
 ### "Summary" View
 "Summary" View displays the summary of the test result.
+
+  * Chi-Square
+  * P Value
+  * Degree of Freedom
+  * Association Coef. (Cramer's V) - Measure of association between the target variable and the explanatory variable. The value ranges from 0 (no association) and 1 (complete association).
+  * Effect Size (Cohen's w)
+  * Power
+  * Probability of Type 2 Error
+  * Number of Rows - The number of rows of the entire input data.
 
 ### "Prob. Distribution" View
 "Prob. Distribution" View displays probability distribution of the test statistic (Chi-Square) under the null hypothesis, and where the test statistic for the performed test is placed in the distribution.
