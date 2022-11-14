@@ -4,10 +4,14 @@
 
 Released on 11/9/2022.
 
+### Enhancements
+
+* General: Supported connecting to exploratory.io through a proxy server that rewrites SSL certificates.
+
 ### Bug Fixes
 
-* Chart: Area: If numeric or Date data for X-Axis were all NA for a specific color category, the category showed up as the largest category in the legend. It shouldn't show up in the legend. 
-* Chart: Equal Step category didn't honor the decimal digit setting in the chart property dialog. 
+* Chart: Area: If numeric or Date data for X-Axis were all NA for a specific color category, the category showed up as the largest category in the legend. It shouldn't show up in the legend.
+* Chart: Equal Step category didn't honor the decimal digit setting in the chart property dialog.
 * Chart: If you assigned multiple columns to Y-Axis, assigned Y2 Axis on the 2nd Y-Axis column, and selected the "Middle" to the Show Value on Plot option, an error dialog showed up.
 * Chart: The order of the colors was incorrect on the Color, Group & Sort dialog if you selected the "Logical Condition" for the Grouping Type.
 
@@ -36,7 +40,6 @@ Released on 11/9/2022.
 
 * General: Error "Cannot read properties of null (reading 'name')" at opening a project when the proxy server rejects the connection.
 * General: Proxy: Added a validation to prevent * is set at the beginning of proxy whitelist.
-* General: Supported connecting to exploratory.io through a proxy server that rewrites SSL certificates.
 
 
 
@@ -77,14 +80,14 @@ Released on 10/18/2022.
 * Chart: Color Dialog didn't open if you assigned a numeric column to Color with the "As Discrete Numeric" function and set the "Row ID" column to Group By on Map Long/Lat.
 * Chart: Color Dialog: The Sort dropdown should be separated into the Direction and Sort By dropdowns.
 * Chart: Summarize Table failed to render due to the “Invalid argument was passed to returnsNumericValue” error.
-* Chart: Color: The default color direction setting for a logical column should be "Bottom to Top". 
+* Chart: Color: The default color direction setting for a logical column should be "Bottom to Top".
 
 
 * Analytics: Random Forest, XGBoost, Linear/Logistic regression, etc.: If the "Reserve Order in Data" option was selected, but the training/test split itself was off, the single last row was still split into the test data set.
 
 
 * Dashboard: After changing a multi-select parameter widget style,  the "Show Details" dialog errored out.
-* Dashboard: If you hover over the page tab, it should show the Popup only when the page name is long. 
+* Dashboard: If you hover over the page tab, it should show the Popup only when the page name is long.
 * Note: When opening a Note after running a Dashboard, the Run button was displayed in the incorrect position.
 
 
