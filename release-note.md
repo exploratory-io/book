@@ -25,16 +25,17 @@ Released on 11/9/2022.
 * Data Wrangling: Layout was corrupted after showing a very long column name on column selector.
 * Data Wrangling: Limited the max number of items displayed for a LOV from 5000 to 1000 to improve usability.
 * Data Wrangling: Multi-Select widget: Selected items should not move to the top when a user is in the middle of selecting but show them at the top when the dialog is reopened.
-* Data Wrangling: Same branch was repeatedly displayed in the left-hand-side dataframe tree pane after editing a custom R step.
+* Data Wrangling: Same branch was repeatedly displayed in the left-hand-side data frame tree pane after editing a custom R step.
 * Data Wrangling: When exporting step data to a file, the default file name contained incorrect index number.
 
 
-* Installation: Windows: Now the default value for the 'Use Windows System Encoding' is changed back to yes.
+* Installation: Windows: Now the default value for the 'Use Windows System Encoding' is changed back to 'Yes'.
 * Installation: Error "Failed to validate the installed R packages" was shown when the repository path included space characters. Now, Exploratory will ask you to use a repository path that does not have spaces in it.
 
 
-* Note: The width of the text area was too narrow.
-* Publish: The message for hitting the server storage limit should suggest deleting version histories of each insight.
+* Note: We have made the width of the text area a bit wider to make it easier to read.
+
+
 * Summary View: The hover popup on the histogram got too wide if the text was long.
 
 
