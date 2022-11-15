@@ -56,6 +56,7 @@
       * [CSV / Delimited File](import/csv.md)
       * [Amazon S3](import/s3.md)
       * [Google Drive](import/google-drive.md)
+      * [Google Cloud Storage](import/google-cloud-storage.md)
       * [Excel](import/excel.md)
       * [JSON](import/json.md)
       * [Log File](import/log.md)

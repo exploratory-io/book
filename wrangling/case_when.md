@@ -18,7 +18,7 @@ You can select a column or multiple columns for this operation. To select multip
 
 ### Set Condition and New Values
 
-To assign new value, you need to set a condition. For example, if you want to assign 100 for the case where City column value is "Tokyo" like below screenshoot,
+To assign new value, you need to set a condition. For example, if you want to assign 100 for the case where City column value is "Tokyo" like below screenshot,
 
 ![](images/case_when_dialog.png)
 
@@ -26,6 +26,20 @@ then you can click the condition and set it in the Filter like dialog.
 
 ![](images/case_when_condition.png)
 
+#### Reorder Conditions by drag and drop
+You can drag and drop a condition to reorder conditions.
+
+![](images/case_when_condition_dnd.png)
+
+#### Duplicate Conditions
+Click the duplicate icon to duplicate a condition.
+
+![](images/case_when_duplicate_condition.png)
+
+#### Disable / Enable Conditions
+Click the Disable (or Enable) icons to toggle Condition state.
+
+![](images/case_when_disable_condition.png)
 
 ### Set New Values
 
