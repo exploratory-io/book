@@ -1,5 +1,31 @@
 # Release Note
 
+## 6.11.4
+
+Released on 11/16/2022.
+
+### Bug Fixes
+
+* Data Source: Excel: Could not override column data types when there were more than 100 columns on the Excel file.
+
+
+* Data Wrangling: Replace Values with Condition: When changing the default type to the Column, it did not automatically set the Target Column as the selected column.
+* Data Wrangling: Replace Values with New Values: When the selected column was removed in the previous step, one could not remove the column from the selected columns.
+* Data Wrangling: When there was an update in the parent branch, cached steps in the child branches did not turn yellow to show that they turned into stale caches as expected.
+
+
+* Chart: When a stale cache of a step was removed, the Chart displayed at that time was not redrawn as expected.
+* Chart: If you selected IQR for the column aggregation function, it returned 1.5*IQR values. Values shouldn't be multiplied by 1.5. 
+
+
+* Dashboard: Improved the Delete Row confirmation message.
+* Dashboard: Japanese characters were garbled if you opened a chart data CSV file exported from the dashboard on the desktop by double-clicking it. 
+
+
+* Public: A project was not removed when canceling 'project publish' at the closing time for the first time.
+* Upgrade: If you upgraded to recent versions of Exploratory, and your home directory name has space characters in it, you might need to move the repository (.exploratory under the home directory) to another path that does not have space characters in its name. We improved the handling of this case so that how to move your repository to a path that works with the latest Exploratory is clear.
+
+
 ## 6.11.3
 
 Released on 11/9/2022.
