@@ -19,7 +19,7 @@ Released on 11/16/2022.
 
 
 * Dashboard: Improved the Delete Row confirmation message.
-* Dashboard: Japanese characters were garbled if you opened a chart data CSV file exported from the dashboard on the desktop by double-clicking it. 
+* Dashboard: Japanese characters were garbled on Excel if you exported a chart data CSV file from a Dashboard on the desktop and opened it by double-clicking it. 
 
 
 * Public: A project was not removed when canceling 'project publish' at the closing time for the first time.
