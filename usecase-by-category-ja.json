@@ -5,6 +5,11 @@
       "desc": "探索的分析の事例を紹介します。",
       "insights": [
         {
+         "title": "",
+         "desc": "データサイエンス勉強会#25の株式会社博報堂様のご発表内容となります。主成分分析を使って、データから得られる「発見」をクリエティブに要約する方法をご紹介いたします。",
+         "url": "https://exploratory.io/note/exploratory/25-Sbi2VHb3"
+        },
+        {
          "title": "ビジュアル・コミュニケーションツールとしてのExploratoryの活用",
          "desc": "データサイエンス勉強会#24の株式会社ADKマーケティング・ソリューションズ様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/24-Exploratory-jnC9vEJ1"
@@ -220,6 +225,11 @@
       "title": "アンケートデータ分析",
       "desc": "アンケートデータ分析の事例を紹介します",
       "insights": [
+        {
+         "title": "",
+         "desc": "データサイエンス勉強会#25の株式会社博報堂様のご発表内容となります。主成分分析を使って、データから得られる「発見」をクリエティブに要約する方法をご紹介いたします。",
+         "url": "https://exploratory.io/note/exploratory/25-Sbi2VHb3"
+        },
         {
          "title": "トピックモデル分析を活用した問合せ業務の効率化",
          "desc": "データサイエンス勉強会#23の株式会社LIXIL様のご発表内容となります。",
