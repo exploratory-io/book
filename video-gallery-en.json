@@ -100,6 +100,52 @@
    "youtubeId": "EmHwnrhuF2Q"
   }
       ]
+    },
+    {
+      "title": "Chart",
+      "desc": "Learn how to use Chart features!",
+      "moreButtonText": "More",
+      "moreButtonUrl": "https://www.youtube.com/playlist?list=PLxM-q2GK4zu5oR_cBqzFe19EcthWS_iwU",
+      "insights": [
+       {
+        "title": "Highlight",
+        "desc": "",
+        "youtubeId": "VuRuV7GH7dc"
+      },
+      {
+       "title": "Limit",
+       "desc": "",
+       "youtubeId": "q15Yvwrer3o"
+     }
+      ]
+    },
+    {
+      "title": "How to Start Exploratory Seminars",
+      "desc": "Learn how to use Exploratory!",
+      "moreButtonText": "More",
+      "moreButtonUrl": "https://www.youtube.com/playlist?list=PLxM-q2GK4zu5oR_cBqzFe19EcthWS_iwU",
+      "insights": [
+       {
+        "title": "How to Use Chart",
+        "desc": "Walks you through how you can get started with Chart in Exploratory and use some of the key features to visualize your data effectively.",
+        "youtubeId": "J3MNU9q8iMc"
+      },
+      {
+       "title": "How to Clean & Transform Data",
+       "desc": "Walk you through how you can clean and transform your data flexibly with Exploratory.",
+       "youtubeId": "5U-BCGXFKvM"
+     },
+     {
+      "title": "How to use Analytics features",
+      "desc": "Walk you through how you can start using Analytics features of Exploratory to analyze data by introducing the basic framework for finding correlation among variables and using prediction models to analyze such correlation further.",
+      "youtubeId": "2XUePEFCqZA"
+    },
+    {
+     "title": "How to Create Dashboards & Notes",
+     "desc": "Walks you through how you can create Dashboards and Notes quickly with Exploratory. He also introduces how you can share Dashboards and Notes and schedule them at Exploratory Server.",
+     "youtubeId": "BzhqHhhxe6M"
     }
+    ]
+   }
   ]
 }
