@@ -25,6 +25,11 @@
       "title": "How to Create Note",
       "desc": "Shows you how you to create your first Note in Exploratory!",
       "youtubeId": "hgNjkAdW5Bc"
+     },
+     {
+      "title": "Data Wrangling Steps - Copy, Cache, Disable, & Export",
+      "desc": "Walks you through 4 powerful features of the Data Wrangling Steps that would make your data wrangling life more productive.",
+      "youtubeId": "2oRcYrEYsrk"
      }
       ]
     },
@@ -83,6 +88,16 @@
    "title": "Returning TRUE or FALSE with Condition",
    "desc": "Shows you how to create conditions with various types of logical functions (operators) as calculations in Exploratory.",
    "youtubeId": "PCW4hb_JlTA"
+  },
+  {
+   "title": "Factor Data Type for Ordinal Data",
+   "desc": "Shows you how you can manually set the order for the values of a given column and visualize the data with Chart view in Exploratory.",
+   "youtubeId": "TU31rqGUpQw"
+  },
+  {
+   "title": "Conditional Value Assignment (Case When)",
+   "desc": "Shows you how you can assign values based on a set of conditions with the 'Conditional Value Assignment' UI in Exploratory.",
+   "youtubeId": "EmHwnrhuF2Q"
   }
       ]
     }
