@@ -108,14 +108,14 @@
       "moreButtonUrl": "https://www.youtube.com/playlist?list=PLxM-q2GK4zu5oR_cBqzFe19EcthWS_iwU",
       "insights": [
        {
-        "title": "Highlight",
-        "desc": "",
-        "youtubeId": "VuRuV7GH7dc"
+        "title": "Highlight Some Values in Chart",
+        "desc": "Sometimes, you want to highlight some particular values in a chart to compare them to the others or simply emphasize them so that your audience can see the points you’re making easily. Here's a quick introduction to the Highlight feature! ",
+        "youtubeId": "JI4I6s2qWmQ"
       },
       {
-       "title": "Limit",
-       "desc": "",
-       "youtubeId": "q15Yvwrer3o"
+       "title": "Limit the Values in Chart",
+       "desc": "It’s not uncommon to have too many unique values in some of the columns in your data. In such cases, you can use the Limit feature to literally limit the values to be included in your chart. Here's a quick introduction for Limit feature",
+       "youtubeId": "BmWBCJL6CMI"
      }
       ]
     },
