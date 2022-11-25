@@ -116,6 +116,16 @@
        "title": "Limit the Values in Chart",
        "desc": "It’s not uncommon to have too many unique values in some of the columns in your data. In such cases, you can use the Limit feature to literally limit the values to be included in your chart. Here's a quick introduction for Limit feature",
        "youtubeId": "BmWBCJL6CMI"
+      },
+      {
+       "title": "Create 'Others' Group",
+       "desc": "Sometimes, you might have a column with many unique values but most of them are very low frequent like long tail values. In such cases, you can put those long tail values into ‘Others’ group in Exploratory.",
+       "youtubeId": "ckVUlnxWDUM"
+      },
+      {
+       "title": "Categorize Numeric Values",
+       "desc": "Numeric values can be cut or split into multiple groups. This is called ‘Categorizing Numeric Values’, and you can do it quickly and visualize such data more effectively in Exploratory. ",
+       "youtubeId": "hk2-Gb_iEQ0"
      }
       ]
     },
