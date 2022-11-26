@@ -94,7 +94,7 @@
       * [Google Analytics](import/google-analytics.md)
       * [Google Analytics (日本語)](import/google-analytics-ja.md)
       * [Google Spreadsheet](import/google-sheet.md)
-      * [Google Cloud Storage](import/google-cloud-storage.md)
+      * [Google Cloud Storage](import/google-cloud-storage.md) 
       * [Salesforce](import/salesforce.md)
       * [Twitter Search](import/twitter.md)      
       * [Stripe](import/stripe.md)
