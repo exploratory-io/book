@@ -252,6 +252,7 @@
    * [Text Clustering with Topic Model (LDA)](analytics/topic_model.md)
    * [Market Basket Analysis](analytics/market_basket.md)
    * [T Test](analytics/t_test.md)
+   * [T Test (Aggregated Data)](analytics/t_test_aggregated.md)
    * [ANOVA](analytics/anova.md)
    * [Wilcoxon Test](analytics/wilcoxon.md)
    * [Kruskal-Wallis Test](analytics/kruskal_wallis.md)
