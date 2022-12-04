@@ -6,8 +6,8 @@ Released on 10/19/2022.
 
 ### Download
 
-* [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.11.2.1.tar.gz)
-* [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.11.2.1.tar.gz)
+* [For New Install](https://exploratory-download1.s3.us-west-2.amazonaws.com/collab-server/exploratory-collab-6.11.2.1.tar.gz)
+* [For Upgrade](https://exploratory-download1.s3.us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.11.2.1.tar.gz)
 
 ### Bug Fixes
 
@@ -126,10 +126,12 @@ Released on 1/20/2022.
 
 The main new feature for this release is to support Project Level Collaboration. You can now publish your projects to the Server to share with others and version control the projects. You can publish the projects as a team or as an individual.
 
+<!--
 ### Download
 
 * [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.8.4.2.tar.gz)
 * [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.8.4.2.tar.gz)
+-->
 
 ### Enhancements
 
@@ -233,10 +235,13 @@ Released on 8/20/2021
 
 Released on 6/21/2021
 
+<!--
+
 ### Download Links
 
 * [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.6.2.0.tar.gz)
 * [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.6.2.0.tar.gz)
+-->
 
 ### Enhancements
 
@@ -269,10 +274,13 @@ Released on 6/21/2021
 
 Released on 4/20/2021
 
+<!--
+
 ### Download Links
 
 * [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.5.0.14.tar.gz)
 * [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.5.0.14.tar.gz)
+-->
 
 ### Enhancements
 
@@ -436,10 +444,13 @@ Released on 6/12/2020
 
 Released on 3/26/2020
 
+<!--
+
 ### Download Links
 
 * [For New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-5.5.5.0.tar.gz)
 * [For Upgrade](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-5.5.5.0.tar.gz)
+-->
 
 ### Bug Fixes
 
