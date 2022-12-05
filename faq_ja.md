@@ -68,7 +68,7 @@ Exploratoryデスクトップのライセンスはユーザー単位となって
 
 ## 有料プラン（Personal/Business）のトライアルにサインアップしたときのトライアルの開始日はいつですか？
 
-Exploratoryデスクトップの有料プラン（Personal/Business）のトライアルはExploratoryにサインアップいただいた日から30日間です。
+Exploratoryデスクトップの有料プラン（Personal/Business）のトライアルはExploratoryにサインアップいただいた日がトライアルの開始日となります。
 
 ## 大学の職員でもアカデミックプランは使えますか？
 
