@@ -98,7 +98,22 @@
    "title": "Conditional Value Assignment (Case When)",
    "desc": "Shows you how you can assign values based on a set of conditions with the 'Conditional Value Assignment' UI in Exploratory.",
    "youtubeId": "EmHwnrhuF2Q"
-  }
+   },
+   {
+    "title": "Separating a Column to Multiple Rows",
+    "desc": "When you have multiple values in a single column you can quickly separate the column into multiple rows so that you can count the values easily. Here's a quick how-to video!",
+    "youtubeId": "RAOXrBzzKDc"
+    },
+    {
+     "title": "Separating a Column to Multiple Columns",
+     "desc": "When you have multiple values such as Country Name and State Name in a single column, you might want to separate the column to two columns, one for the Country Name and another for the State Name. Here's a quick video on how to do it. ",
+     "youtubeId": "rBkSFmIQwFU"
+     },
+     {
+      "title": "Uniting Multiple Columns",
+      "desc": "In this video, Kan shows how you can quickly unite (or concatenate) multiple columns with the Unite step in Exploratory.",
+      "youtubeId": "tF2KwxMeUdQ"
+      }
       ]
     },
     {
