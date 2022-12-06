@@ -47,17 +47,31 @@ Input data should contain following columns.
 5. Click Run button to run the analytics.
 6. Select view type by clicking view type link to see each type of generated visualization.
 
-### "Scatter" View
+### "Summary" View
+"Summary" View displays the table of the following info for each cluster.
+  - Number of Rows
+  - Number of Rows (Ratio)
+  - Within-Cluster Sum of Squares
+  - Mean of variable column values (cluster center)
+
+### "Biplot" View
 "Scatter" View displays the scatter plot of observations (rows) with colors by the clusters.
 
 ### "BoxPlot" View
 "BoxPlot" View displays boxplot that shows distributions of the variables for each cluster. Y-axis is always normalized so that the values of variables, which can be in very different scales, are comparable to each other.
 
-### "Error Bar" View
-"Error Bar" View displays means of variables for each cluster with error bars. Type of the error bars can be selected in the properties.
+### "Radar" View
+"Radar" View displays normalized means of variables for each cluster with radar chart.
 
 ### "Line" View
 "Line" View displays lines that represent individual observations, showing the values of the variables, with colors by the clusters. Y-axis is always normalized so that the values of variables, which can be in very different scales, are comparable to each other.
+
+### "Category (Ratio)" View
+Category (Ratio)" View appears only when the Category column is specified. It shows ratios of the rows in different categories in each cluster.
+
+### "Category (Path)" View
+Category (Path)" View appears only when the Category column is specified too. It shows ratios of the rows in different categories in each cluster as well as their absolute row numbers.
+Parallel Categories Diagram
 
 ### "Data" View
 "Data" View shows the original data with additional "cluster" column that tells which cluster each row belongs to.
