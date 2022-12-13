@@ -6,8 +6,8 @@ Released on 10/19/2022.
 
 ### Download
 
-* [For New Install](https://exploratory-download1.s3.us-west-2.amazonaws.com/collab-server/exploratory-collab-6.11.2.1.tar.gz)
-* [For Upgrade](https://exploratory-download1.s3.us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.11.2.1.tar.gz)
+* [For New Install](https://exploratory-download.s3.us-west-2.amazonaws.com/collab-server/exploratory-collab-6.11.2.1.tar.gz)
+* [For Upgrade](https://exploratory-download.s3.us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.11.2.1.tar.gz)
 
 ### Bug Fixes
 
