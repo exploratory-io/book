@@ -60,6 +60,9 @@ Input data should contain following columns.
 ### "BoxPlot" View
 "BoxPlot" View displays boxplot that shows distributions of the variables for each cluster. Y-axis is always normalized so that the values of variables, which can be in very different scales, are comparable to each other.
 
+### "Distribution" View
+"Distribution" View displays density plot that shows distributions of the variables for each cluster.
+
 ### "Radar" View
 "Radar" View displays normalized means of variables for each cluster with radar chart.
 
