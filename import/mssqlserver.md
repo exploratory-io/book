@@ -29,13 +29,20 @@ If you use Mac and installed ODBC Driver 17 for SQL Server version 17.8 or older
 [08001][Microsoft][ODBC Driver 17 for SQL Server]SSL Provider: [OpenSSL library could not be loaded, make sure OpenSSL 1.0 or 1.1 is installed]
 ```
 
+or
+
+```r
+[08000][Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x2746 [Microsoft][ODBC Driver 17 for SQL Server]Client unable to establish connection
+```
+
 If this is the case, try the below steps:
 It assume you use brew to install openssl and brew prefix is `/usr/local`. (you can check it with `brew --prefix`)   
+Please note `1.1.1s` might vary for the last character.
 
 ```sh
 $ rm -rf /usr/local/opt/openssl
 
-$ ln -s /usr/local/Cellar/openssl@1.1/1.1.1m /usr/local/opt/openssl
+$ ln -s /usr/local/Cellar/openssl@1.1/1.1.1s /usr/local/opt/openssl
 ```
 
 Then restart Exploratory.
