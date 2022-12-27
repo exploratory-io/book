@@ -1,6 +1,6 @@
 # # 26 - 2023年2月3日(金) @Zoom会議
 
-<img src="https://www.dropbox.com/s/9k7eiylvkw08lbq/Exploratory%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E5%8B%89%E5%BC%B7%E4%BC%9A_v26.001.jpeg?raw=1" width="100%"/>
+<img src="https://www.dropbox.com/s/bnse3vt0d38t0dl/Exploratory%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E5%8B%89%E5%BC%B7%E4%BC%9A_v26.001.jpeg?raw=1" width="100%"/>
 
 
 <br>
@@ -15,4 +15,4 @@ Exploratory v6.13の紹介と、ユーザー様によるExploratoryを使った�
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/sod8rmlj4xo9r6i/Agenda_v2.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/mvdoo30e1q3v0b7/Agenda_v3.png?raw=1" width="100%" />
