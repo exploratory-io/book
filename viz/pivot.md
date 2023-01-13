@@ -24,9 +24,9 @@ You can format each Row Header and Value column. You can access the Column Forma
 
 
 
-## Visual Formatting 
+## Color Assignment
 
-You can quickly apply the visual formatting from the "Visual Formatting" column menu. You can configure the formatting details in the [Column Configuration Dialog](column-configuration-dialog.md).
+You can quickly apply the color formatting from the "Color Assignment" column menu. You can configure the formatting details in the [Column Configuration Dialog](column-configuration-dialog.md).
 
 
 ![](images/pivot_viz_format_menu.png)

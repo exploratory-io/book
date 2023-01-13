@@ -98,11 +98,11 @@ If you check the "Apply All Columns" option, you can apply the column width sett
 
 
 
-## Visual Formatting 
+## Color Assignment
 
-You can set a Visual Formatting on each column. Visual formatting is available only for the numeric columns. 
+You can set a Color Assignment on each column. 
 
-### Show Bars on Background
+### Color Bars
 
 You can show inline bars in the column value cells. The bar length is depending on the column value. You can choose colors for positive values and negative values.  
 
@@ -113,7 +113,7 @@ The output will look like this.
 ![](images/cconf11.png)
 
 
-### Set Colors
+### Background / Text
 
 You can apply color encoding to the column values. You can choose a color palette to apply from the list. You can apply colors to either the value text or background color. 
 
@@ -129,9 +129,9 @@ This is an example of the color encoding applied to the background color.
 If you assign a categorical data for Value, such as a character column with the "First" aggregation function, the color palette will be assigned to the values in the alphabetical order. If it is a factor column, it will be assigned to the values in the factor level order.
 
 
-### Set Colors Conditionally
+### With Conditions
 
-You can apply a specific color only for the values that meet the condition. You can choose an operator and enter the value to construct a condition, and you can choose a color to apply from the list. You can apply colors to either the value text or background color. 
+You can apply a specific color only for the values that meet the condition.  You can choose an operator and enter the value to construct a condition, and you can choose a color to apply from the list. You can apply colors to either the value text, background color or inline bars. 
 
 You can create multiple conditions by clicking the "+" icon. The conditions are evaluated from the top to bottom. You can remove unnecessary conditions by clicking the "x" icon.
 
@@ -159,13 +159,18 @@ This is the sample output of the Conditional Formatting.
 
 
 
+### Apply All Columns
+
+You can check the "Apply All Columns" checkbox to apply the same color formatting for all the other columns including row headers and row totals. It doesn't apply the color formatting to the columns that already have their own Color Assignment.
+
+If you check this checkbox in multiple columns, the setting on the 1st column will be effective. 
 
 
 
 
 ## Direction
 
-For "Show Bars on Background" and "Show Color" visual formattings, you can choose how you group the Values for the color formatting at the Direction option. The following Direction types are available.
+For "Color Bars" and "Background / Text" color formattings, you can choose how you group the Values for the color formatting at the Direction option. The following Direction types are available.
 
 
 
