@@ -16,7 +16,7 @@ If you assign a numeric column to Y-Axis and choose either "Mean" or "Conditiona
 
 ### Ratio mode
 
-If you assign a column and aggregation function that don't match the Mean mode criteria, it becomes the Ratio mode. The Error Bar calculation is based on the ratio of the values.
+If you assign a column and aggregation function that don't match the Mean mode criteria above, it becomes the Ratio mode. The Error Bar calculation is based on the ratio of the value counts.
 
 
 
