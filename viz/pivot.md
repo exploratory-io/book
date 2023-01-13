@@ -69,12 +69,24 @@ You can use the Custom Function feature to define your own aggregation function 
 You can use the Missing Value Handling feature to control missing values. See [Missing Value Handling](missing-value-handling.md) for the detail.
 
 
-## Calculation Target for Total Calculation
+
+## Total Setting
+### Calculation Target for Total Calculation
 
 You can choose how to calculate the totals/subtotals at the Calculation Target in the Setting dialog for total.
 
 * Data After Aggregation: Totals and subtotals are calculated based on the cell values in the Pivot Table which are already aggregated. 
 * Data Before Aggregation: Totals and subtotals are calculated based on the raw data before any aggregations. 
+
+### Position
+
+You can choose which side to show the Row total. The following options are available. 
+
+* Right (Default)
+* Left 
+
+![](images/pivot-total.png)
+
 
 
 ## Show Detail
