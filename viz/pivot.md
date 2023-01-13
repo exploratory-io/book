@@ -10,8 +10,15 @@ Pivot Table makes it super easy to not only summarize (aggregate) data but also 
 * Row - Assign a column you want to show at Row Headers. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc. You can assign multiple columns to Row.   
 * Value - Assign a column you want to show at the value area. You can assign multiple columns to Value. If a numeric column is assigned, you can set the aggregation function such as `Sum`, `Mean (Average)`, etc. to aggregate the values. If it is a non-numeric column, you can set a count-based aggregation function such as `Unique Count` or a function to pick one of the values in the group such as "First (First Row)". 
 * Column - Assign a column you want to show at Column Headers. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc.
-* Sort - Assign a column to use for Sorting the Row values. The default is based on either the alphabetic order or the factor level order for Factor type columns.
-
+* Total - You can choose what type of totals to show. The following options are available. 
+  * None 
+  * Totals Only 
+  * Subtotals Only 
+  * Totals and Subtotals
+* Total Target - You can choose total targets to show. The following options are available. 
+  * Both Column & Row - It shows totals for rows and columns.
+  * Only Row - It shows totals for rows. 
+  * Only Column - It shows totals for columns.
 
 ## Formatting Columns
 
