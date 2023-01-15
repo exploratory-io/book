@@ -1,5 +1,22 @@
 # Release Note
 
+## 6.12.1
+
+Released on 1/14/2023.
+
+### Bug Fixes
+
+* Data Source: On Mac, importing data from MariaDB / MySQL failed after upgrading to 6.12.0
+* Data Source: Twitter Data Source: screen_name column was not included in the query result.
+
+
+* Table View: Row Filter doesn't apply if you select a data frame, open the Table View, close and open the project, select the same data frame and create a new Row Filter.
+* Table View: NA showed up for the standard deviation all the time in the column metrics popup. 
+
+
+* Project: On Mac, clicking the project information icon didn't work after upgrading to 6.12.0
+
+
 ## 6.12.0
 
 Released on 1/12/2023.
