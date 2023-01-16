@@ -30,21 +30,24 @@ Input data for "Topic Model (Tokenized Data)" should contain the following colum
   * Text Tokenization
     * Remove Stopwords - Default is Yes.
     * Language for Stopwords - By default it is automatically selected based on the content of the text.
-    * Additional Stopwords - Words to be added to the default set of stopwords.
+    * Additional Stopword Dictionary - Dictionary of the words to be added to the default set of stopwords.
+    * Additional Stopwords - Words to be added to the default set of stopwords and the words in the stopword dictionary.
     * Exclude from Stopwords - Words to be excluded from the default set of stopwords.
-    * Words To Be Treated As One Word - If a word or phrase that should be treated as one token is separated into multiple tokens, it can be fixed by specifying the word/phrase here.
+    * Compound Word Dictionary - Dictionary of the compound words. If a word or phrase that should be treated as one token is separated into multiple tokens, it can be fixed by creating a dictionary and adding the word/phrase to it.
+    * Additional Compound Words - Compound words to be added to the words in the compound word dictionary.
     * Remove Punctuations
     * Remove Numbers
+    * Remove Alphabets
+    * Remove URLs 
     * Clean Up Twitter Data - Whether to remove hashtag (starts with #) and mention (starts with @). The default is No.
     * Remove Hiragana Only Words - You can treat often meaningless short Japanese Hiragana words as stopwords altogether by selecting an option here.
-  * Documents of Topics - This section is about "Documents of Topics" View.
+  * Top Words - This section is about "Top Words" View.
+    * Number of Words to Show - Number of top words to show in the bar charts for each topic.
+  * Documents - This section is about "Documents" View.
     * Number of Documents to Show - Number of documents to show for each topic.
-  * Topics of Documents - This section is about "Topics of Documents" View.
-    * Number of Documents to Show - Number of documents to show in the document-topic matrix.
-  * Important Words of Topics - This section is about "Important Words of Topics" View.
-    * Number of Important Words to Show - Number of important words to show in the bar charts for each topic.
-  * Topics of Words - This section is about "Topics of Words" View.
-    * Number of Words to Show - Numver of words to show in the word-topic matrix.
+    * Baseline Probability for Word Highlight - Word in the documents are highlighted if the word's occurrence probability from the topic in the document is higher than this threshold.
+  * Data (Words)
+    * Number of Words to Show - Number of words to show in the word-topic matrix in the "Data (Words)" View.
 
 ## How to Use This Feature
 
