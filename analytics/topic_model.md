@@ -2,7 +2,7 @@
 
 Clusters documents based on the topics they are talking about with topic model. The topic model algorithm is LDA (Latent Dirichlet allocation).
 
-It is a fuzzy clustering, in that the topic model gives ratio of topics for each document, rather than labeling a document with a single topic.
+It is a fuzzy clustering, in that the topic model gives ratios of topics for each document, rather than labeling a document with a single topic.
 
 ## Input Data
 
@@ -53,12 +53,12 @@ Input data for "Topic Model (Tokenized Data)" should contain the following colum
 
 1. Under Analytics view, select "Word Count" for Analytics Type.
 2. Select a column for Text Column.
-3. Click Run button to run the analytics.
+3. Click the Run button to run the analytics.
 4. Select each view type (explained below) see the detail of the analysis.
 
 ## "Summary" View
 
-"Summary" View shows number of documents for each topic. Since topic model gives ratio of topics for each document, rather than labeling with a single topic, the numbers here are the count of documents by the topic with the highest ratio for the document.
+"Summary" View shows the number of documents for each topic. Since the topic model gives a ratio of topics for each document, rather than labeling with a single topic, the numbers here are the count of documents by the topic with the highest ratio for the document.
 
 ## "Top Words" View
 
@@ -67,7 +67,7 @@ Input data for "Topic Model (Tokenized Data)" should contain the following colum
 ## "Top Words by Category" View
 
 "Top Words by Category" View appears only when the optional Category column is specified.
-It shows percent stacked bar charts that shows the ratio of the document's category for the occurrences of each topic's top words.
+It shows percent stacked bar charts that show the ratio of the document's category for the occurrences of each topic's top words.
 
 ## "Documents" View
 
@@ -90,4 +90,4 @@ It shows a parallel categories diagram that shows the ratio of the document's ca
 
 ## "Data (Words)" View
 
-"Data (Words)" View shows the word-topic matrix. It shows occurrence probability of each words in each topic. The words are sorted in a way that top words of each topic shows up close to each other.
+"Data (Words)" View shows the word-topic matrix. It shows the occurrence probability of each word in each topic. The words are sorted in a way that the top words of each topic shows up close to each other.
