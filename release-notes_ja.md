@@ -76,79 +76,82 @@
 
 ### 修正された問題
 
-* Analytics: Changing a base level for a character predictor column didn't work.
-* Analytics: K-means: Preview table kept showing original column value even if a column function was set for the column.
-* Analytics: K-Means: The number of rows excluded because of NAs is now shown on the Summary tab.
-* Analytics: Likert's sigma is now available as a pre-processing function for Analytics View. It is useful to normalize scale data in surveys, such as 5-point scales.
-* Analytics: T-Test: If you ran the T-Test Analytics twice, the Error Bar showed a different output.
+
+* アナリティクス: 予測変数の列の設定からベースレベルを変更しても機能しない。
+* アナリティクス: K-means: 列の選択と設定で列の関数を設定しても、プレビューのテーブルに元の列の値が表示される。
+* アナリティクス: K-means: 欠損値のために除外された行の数がサマリタブに表示されるようになりました。
+* アナリティクス: リッカートシグマ法がアナリティクスビューの前処理の関数として使用できるようになりました。これにより、
+5段階評価などのアンケートの尺度データを正規化するのに役立ちます。
+* アナリティクス: t検定: t検定を2回実行すると、エラーバーに異なる結果が出力される。
 
 
-* Chart: "Equal Step" category setting did not allow setting labels.
-* Chart: Analytics: Performance improvement for a data frame with many columns.
-* Chart: Area: Chart legend didn't show if you assigned a column that has only 1 unique value to Color.
-* Chart: Bar chart showed weird object on the Y-axis tick area if you set "0" for the "Axis Tick Step".
-* Chart: Categories created on X-Axis by the "Equal Step" didn't respect the decimal digit setting for the X-Axis.
-* Chart: Density Plot: The label "Density" should be translated in the hover Popup.
-* Chart: Error Bar: If you created an Error Bar, switched the chart type to Error Bar (Summarized Data) and selected the Error Bar again, the Ratio By option became "All". This option should stay as "X-Axis".
-* Chart: If you selected the IQR aggregation function, the IQR output was multiplied by 1.5.
-* Chart: Map LongLat: Show Detail didn't work once in a while if you set the "Row ID" column to Group By.
-* Chart: Sort: The order when sorting is wrong when using a window calculation as a percent of the total.
+* チャート: カテゴリーのタイプの「等間隔」でラベルが設定できない。
+* チャート: アナリティクス: 列数が多いデータフレームでのパフォーマンスが向上しました。
+* チャート: エリア: 色に一意な値の数が1つしかない列を割り当てた場合、凡例が表示されない。
+* チャート: チャートプロパティから「軸のステップ幅」に「0」を指定していると、バーチャートのY軸の目盛に奇妙なオブジェクトが表示される。
+* チャート: X軸を「等間隔」によってカテゴリー化している場合、X軸の小数点以下の桁数の設定が機能しない。
+* チャート: 密度曲線: マウスオーバーした時のポップアップに表示される「Density」を「密度」に翻訳しました。
+* チャート: エラーバー: エラーバーを作成し、チャートタイプをエラーバー（集計済データ）に変更して、再度エラーバーに戻すと、「割合の対象」が「全体」に切り替わってしまう。このぷションは「X軸」のままにしておく必要がある。.
+* チャート: 集計関数に「IQR」を選択した場合、IQRでの出力は「1.5」倍になる。
+* チャート: 地図 - 緯度/経度: グループ化に「行番号」を設定していると、「詳細を表示」が機能しないことがある。
+* チャート: ソート：全体に対する割合として表計算を使用した場合、並び替えられる順番に誤りがある。
 
 
-* Dashboard: Japanese characters were garbled if you opened a chart data CSV file exported from the Dashboard by double-clicking the file on the File Explorer.
-* Dashboard: Publishing failed with an error "RangeError [ERR_BUFFER_OUT_OF_BOUNDS]: Attempt to write outside buffer bounds” if you have many charts in a dashboard.
+* ダッシュボード: ダッシュボードのチャートデータをCSV形式でエクスポートし、ファイルをファイルエクスプローラーでダブルクリックして開くと日本語の文字で文字化けが発生する。
+* ダッシュボード: ダッシュボードに多くのチャートが含まれている場合、"RangeError [ERR_BUFFER_OUT_OF_BOUNDS]: Attempt to write outside buffer bounds”というエラーでパブリッシュに失敗する。
 
 
-* Data Source: CSV: List of files dialog didn't show any files when the directory contained a dead symbolic link.
-* Data Source: Excel: Could not override column data type when there are more than 100 columns.
-* Data Source: Google Drive: Importing multiple CSV files from Shared With Me by selecting file names didn't work.
-* Data Source: Local Files: Supported folder navigation by clicking the parent folder button like Cloud Storage Files.
-* Data Source: Salesforce: When a column data was empty,  the query result didn't include the column.
-* Data Source: Snowflake: Warehouse was not properly set on the session and "57P03: No active warehouse selected in the current session" error was raised.
+* データソース: CSV: ディレクトリに無効なシンボリックリンクが含まれている場合、「CSVファイルの選択」のダイアログにファイルが表示されない。
+* データソース: Excel: 列数が100列を超える場合、列のデータタイプを上書きできない。
+* データソース: Google ドライブ: ファイル名を選択して、共有アイテムから複数のCSVファイルをインポートできない。
+* データソース: ローカルファイル: クラウドストレージファイルのように、親フォルダーのボタンをクリックして子フォルダーを開けるようにフォルダーナビゲーションをサポートしました。
+* データソース: Salesforce: 列データが空の場合、クエリ結果にその列が含まれない。
+* データソース: Snowflake: セッションでウェアハウスが正しく設定されておらず、"57P03: No active warehouse selected in the current session"というエラーが発生する。
 
 
-* Data Wrangling: After copying a data frame with a branch that has a join step pointing to another branch in the same data frame, it showed an error message that tells that the target data frame does not exist wrongly.
-* Data Wrangling: Column Reorder: Added the clear selection button on the column selection area.
-* Data Wrangling: Create Categories: Supported "Edge Value Handling" and other parameters for category settings.
-* Data Wrangling: Create Categories: Unchecking the 'Save Factor Order' checkbox still created a column with Factor data type.
-* Data Wrangling: Excel Export: Changed the default date format to yyyy/mm/dd and now it remembers the previously selected date format.
-* Data Wrangling: Extract Alphabet: The conversion result should be character data type instead of List data type.
-* Data Wrangling: Factor values in the Recode dialog were not sorted properly.
-* Data Wrangling: If you had many columns (e.g. more than 5000 columns) in a data frame, UI operation such as column selection became very slow.
-* Data Wrangling: Long to Wide: Now it shows prereview results on the Dialog.
-* Data Wrangling: Make this rows as column header: Clean Column Names option did not preserve non-ASCII name column name.
-* Data Wrangling: Merge / Union: When a data frame used for merge was renamed,  you could not remove the renamed data frame from the data frame list.
-* Data Wrangling: Merge/Union: "Select all" was not working when you searched data frames.
-* Data Wrangling: Mutate: After running a command, the table view scroll position should remain.
-* Data Wrangling: Now it uses pivot_longer R function instead of gather and pivot_wider R function instead of spread.
-* Data Wrangling: Orphan branch remained on the UI and it shows dagops.members: dataframe abc does not exist in the catalog error.
-* Data Wrangling: Pivot: It showed Error: Data from the previous step is empty when there was no record in the data frame.
-* Data Wrangling: Recode: When column name was changed in the previous step, one could not remove the column selection.
-* Data Wrangling: Removing a step cache didn't update the Chart.
-* Data Wrangling: Text Wrangling: Remove punctuation did not remove symbols such as $
-* Data Wrangling: Under certain conditions, the same branch was repeatedly displayed in the left-hand-side dataframe tree pane.
-* Data Wrangling: When exporting large numeric value to a CSV file with Shift-JIS encoding, the value was exported with scientific notation.
+* データラングリング: 同じデータフレーム内の別のブランチを結合するステップを持つブランチデータフレームをコピーすると、ターゲットのデータフレームが存在しないことを表すエラーメッセージが表示される。
+* データラングリング: 列の並び替え: 選択している列を解除する「選択をクリア」のボタンを追加しました。
+* データラングリング: カテゴリーを作成: カテゴリーの作成時に「範囲の端の扱い」およびその他のパラメーターをサポートしました。
+* データラングリング: カテゴリーを作成: 「ファクター型として順序を保持する」のチェックボックスをオフにしても、ファクター型の列が作成される。
+* データラングリング: Excelファイルのエクスポート: デフォルトの日付形式がyyyy/mm/ddに変更され、過去に選択した日付形式が記憶されるようになりました。
+* データラングリング:アルファベットの抽出: 抽出後の結果のデータタイプはリスト型ではなく文字列型である必要があります。
+* データラングリング: 元の値を新しい値で置換: ダイアログにて、ファクター型で設定された順序で値がソートされない。
+* データラングリング: 列数が多い（例：5000列以上）データフレームでは、列を選択などのUIでの操作が非常に遅くなっていたためパフォーマンスを向上しました。
+* データラングリング: ロング型からワイド型へ: ダイアログにプレビュー結果が表示されるようになりました。
+* データラングリング: 指定した行を列名にする: 「列名をきれいにする」のオプションでは、Non-ASCII文字が保持されない。
+* データラングリング: マージ / Union: マージに使用されるデータフレームの名前が変更された場合、名前が変更されたデータフレームをデータフレームの選択のリストから削除できない。
+* データラングリング: マージ / Union: データフレームの検索時に「全選択」が機能しない。
+* データラングリング: 計算を作成: 計算を実行した後、テーブルビューのスクロール一は維持される必要がある。
+* データラングリング: ロング型からワイド型へ: spread関数の代わりにpivot_longerの関数を使用するようになりました。
+* データラングリング: 孤立したブランチが作成され、"dagops.members: dataframe abc does not exist in the catalog"のエラーが表示される。
+* データラングリング: ピボット: データフレームに行がなかったときに、"Data from the previous step is empty when there was no record in the data frame."のエラーが発生する。
+* データラングリング: 元の値を新しい値で置換: 前のステップで列名を変更すると、列の選択を解除できない。
+* データラングリング: ステップデータのキャッシュを削除しても、チャートが更新されない。
+* データラングリング: テキストデータの加工: 句読点を削除しても、$などの記号が削除されない。
+* データラングリング: 特定の条件によって、左側のデータフレームのリストに同じブランチデータフレームが繰り返し表示される。
+* データラングリング: 大きな数値を含むデータをShift-JIS エンコーディングのCSVファイルとしてエクスポートすると、値が指数表記でエクスポートされる。
 
 
-* Export: Exporting a wider data frame (tens of thousands of columns by tens of rows) hanged.
+* エクスポート: 列数が非常に多いデータフレーム（数万列, 数十行）でエクスポートでハングする。
 
 
-* Installation: If you try to install an invalid R package from CRAN, it showed the network error dialog.
+* インストール: CRANから無効なRパッケージをインストールしようとすると、ネットワークエラーのダイアログが表示される。
 
 
-* Parameter: LOV parameter was not updated in the dashboard when there was a dependency between the parameters.
-* Parameter: When a data frame that provides a list of values for a parameter was exported and imported via EDF file, its name turned into a randomly generated string.
+* パラメーター: パラメーター間に依存関係がある場合、ダッシュボードのパラメーターのLOVが更新されない。
+* パラメーター: パラメーターの値をリストを持つデータフレームをEDFファイル経由でエクスポートおよびインポートをすると、その名前がランダムに生成された文字列に変わってしまう。
 
 
-* Publish: After publishing a Cloud Storage CSV data, override data type set for columns were not honored, and it caused a data type mismatch error in a Join step that uses the column.
-* Publish: Error message improvement for exceeding the storage size limit at publishing.
-* Publish: Publishing data failed with "s.getSummary(...).concat is not a function" if you tried to publish the model step.
-* Publish: When there was a missing Data Frame reference for a parameter, it didn't show a user-friendly error message.
+* パブリッシュ: クラウドストレージのCSVデータをパブリッシュした後、列に設定されたデータ型の変更が適用されず、その列を使用する結合ステップでデータ型の不一致のエラーが発生する。
+* パブリッシュ: パブリッシュ時にストレージサイズの制限を超過した場合のエラーメッセージを改善しました。
+* パブリッシュ: モデルのステップがあるデータをパブリッシュしようとすると、"s.getSummary(...).concat is not a function"というエラーが発生する。
+* パブリッシュ: パラメーターでデータフレームから値を取得する際に、参照がうまくできない場合のエラーメッセージを改善しました。
 
 
-* Summary View: CSV data exported from the Summary View was corrupted if column names contained certain special characters such as commas or double quotes.
-* Summary View: If a data frame had a column with many unique text values, the Summary View took a very long time to show.
-* Summary View: Performance improvement for a data frame with many columns.
+* サマリビュー: 列名にコンマやダブルクォートなどの特殊文字が含まれていると、サマリビューからエクスポートしたCSVデータが破損する。
+* サマリビュー: データフレームに多くの一意な値の数を持つ文字列型の列がある場合、サマリビューの表示に時間がかかる。
+* サマリビュー: 列数が多いデータフレームでのサマリビューの表示のパフォーマンスが向上しました。
+
 
 ## 6.11.4
 
