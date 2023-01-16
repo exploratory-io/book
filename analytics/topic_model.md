@@ -6,9 +6,20 @@ It is a fuzzy clustering, in that the topic model gives ratio of topics for each
 
 ## Input Data
 
-Input data should contain following column.
+There are 2 types of this Analytics View.
+"Topic Model (Text Data)" can handle raw text data before tokenizing.
+"Topic Model (Tokenized Data)" can handle tokenized text data.
+
+Input data for "Topic Model (Text Data)" should contain the following columns.
 
   * Text Column - The column of the text data. Each row is treated as a document.
+  * Category (Optional) - Category to compare with the clustering result.
+
+Input data for "Topic Model (Tokenized Data)" should contain the following columns.
+
+  * Words - The tokenized words.
+  * Group By - The ID of the document the word belongs to.
+  * Category (Optional) - Category to compare with the clustering result.
 
 ## Properties
 
@@ -46,23 +57,34 @@ Input data should contain following column.
 
 "Summary" View shows number of documents for each topic. Since topic model gives ratio of topics for each document, rather than labeling with a single topic, the numbers here are the count of documents by the topic with the highest ratio for the document.
 
-## "Documents of Topics" View
+## "Top Words" View
 
-"Documents of Topics" View shows samples of documents for each topic. The documents shown here as the samples of each topic are the ones that have the highest ratio of the topic among all the documents.
+"Top Words" View shows a bar chart for each topic that shows the words with the highest probability of occurrence.
 
-## "Topics of Documents" View
+## "Top Words by Category" View
 
-"Topics of Documents" View shows the document-topic matrix. It shows ratio of topics for each document.
+"Top Words by Category" View appears only when the optional Category column is specified.
+It shows percent stacked bar charts that shows the ratio of the document's category for the occurrences of each topic's top words.
 
-## "Important Words of Topics" View
+## "Documents" View
 
-"Important Words of Topics" View shows a bar chart for each topic that shows the words with the highest probability of occurrence.
+"Documents" View appears only with the "Topic Model (Text Data)" Analytics View.
+It shows typical documents for each topic along with the topic ratios of each document. The documents shown here are the ones that have the highest ratio of the topic among all the documents.
 
-## "Topics of Words" View
+## "Category (Ratio)" View
 
-"Topics of Words" View shows the word-topic matrix. It shows occurrence probability of each words in each topic. The words are sorted by the highest probability it has with any one of the topics.
+"Category (Ratio)" View appears only when the optional Category column is specified.
+It shows a percent stacked bar chart that shows the ratio of the document's category for each topic.
 
-## "Data" View
+## "Category (Path)" View
 
-"Data" View shows the original data frame with additional columns for ratios of topics for each document (i.e. for each row).
+"Category (Path)" View appears only when the optional Category column is specified.
+It shows a parallel categories diagram that shows the ratio of the document's category for each topic.
 
+## "Data (Full)" View
+
+"Data (Full)" View shows the data frame with each row representing a document, with additional columns for ratios of topics for each document.
+
+## "Data (Words)" View
+
+"Data (Words)" View shows the word-topic matrix. It shows occurrence probability of each words in each topic. The words are sorted in a way that top words of each topic shows up close to each other.
