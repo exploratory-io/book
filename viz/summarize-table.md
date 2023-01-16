@@ -9,16 +9,12 @@ Pivot Table makes it super easy to not only summarize (aggregate) data but also 
 
 * Group By - Assign a column you want to group by. You can assign multiple columns to Group By. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc. 
 * Value - Assign a column you want to show at the value area. You can assign multiple columns to Value. If a numeric column is assigned, you can set the aggregation function such as `Sum`, `Mean (Average)`, etc. to aggregate the values. If it is a non-numeric column, you can set a count-based aggregation function such as `Unique Count` or a function to pick one of the values in the group such as "First (First Row)". 
-
-## Totals and Subtotals
-
-You can choose what type of totals you want to show in the Summarize Table. The following options are available. 
+* Total - You can choose what type of totals you want to show. The following options are available. 
   * None 
-  * Subtotals Only 
   * Totals Only 
+  * Subtotals Only 
   * Totals and Subtotals
 
-![](images/stable4.png)
 
 
 ## How to Change the Aggregation Function for Total
@@ -46,9 +42,9 @@ You can format each Row Header and Value column. You can access the Column Forma
 ![](images/stable3.png)
 
 
-## Visual Formatting 
+## Color Assignment 
 
-You can quickly apply the visual formatting from the "Visual Formatting" column menu. You can configure the formatting details in the [Column Configuration Dialog](column-configuration-dialog.md).
+You can quickly apply the color formatting from the "Color Assignment" column menu. You can configure the formatting details in the [Column Configuration Dialog](column-configuration-dialog.md).
 
 
 ![](images/stable_viz_format_menu.png)

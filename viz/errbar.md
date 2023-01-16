@@ -2,31 +2,37 @@
 
 ![](images/errorbar.png)
 
+
+## Mean mode and Ratio mode.
+
+
+The Error Bar has 2 modes, Mean mode and Ratio mode. The mode automatically switches depending on the column data type and aggregation function that you assign to Y-Axis. 
+
+
+### Mean mode
+
+If you assign a numeric column to Y-Axis and choose either "Mean" or "Conditional Mean" for the aggregation function, it becomes the Mean mode. The Error Bar calculation is based on the mean values. 
+
+
+### Ratio mode
+
+If you assign a column and aggregation function that don't match the Mean mode criteria above, it becomes the Ratio mode. The Error Bar calculation is based on the ratio of the value counts.
+
+
+
 ## Assignments
 
-
-
-
-* Calculation Type - You can select an error bar calculation type from the following options. The default is `Mean`.
-  * Mean - Average based error bar chart. 
-  * Ratio (%) - Ratio based error bar chart based on the count of values. 
 * X-Axis - Assign a column you want to show at X-Axis. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc. If you assign a Number column, you can choose either `As Number` to treat values as continuous values or `As Text` to treat values as categorical values.  
-* Y-Axis - Assign a column you want to show at Y-Axis. 
-  * If the calculation type is `Mean`, you can only choose `Average` for the column function. 
-  * If the calculation type is `Ratio (%)`, you can only choose one of the count-based functions following for the column function.
-    * Count 
-    * Unique Count 
-    * Number of TRUE (logical only)
-    * Number of FALSE (logical only)
+* Y-Axis - Assign a column you want to show at Y-Axis. The Error Bar mode automatically switches depending on the column data type and aggregation function. See "Mean mode and Ratio mode" above for details.
 * Range Type - You can select an error bar range type from the following options. The default is `Standard Error`.
   * Standard Error 
   * 90% Confidence Interval 
   * 95% Confidence Interval 
   * 99% Confidence Interval 
-  * 1 Standard Deviation
-  * 2 Standard Deviation
-  * 3 Standard Deviation
-  * IQR
+  * 1 Standard Deviation (Available only in Mean mode)
+  * 2 Standard Deviation (Available only in Mean mode)
+  * 3 Standard Deviation (Available only in Mean mode)
+  * 1.5 IQR (Available only in Mean mode)
 * Marker - You can select a marker type from the following options. The default is `Bar`.
   * Bar - Suitable for comparing actual values and error bar ranges. 
   * Circle - Suitable for comparing error bar ranges. 
@@ -38,7 +44,7 @@
 
 ## Range Calculation Formula
 
-### Calculation Type: Mean
+### Mean mode
 
 * Standard Error 
 <br/><img src="images/stderr_mean.png" height="45px">
@@ -50,7 +56,7 @@
 <br/><img src="images/99confint_mean.png" height="22px">
 
 
-### Calculation Type: Ratio (%) 
+### Ratio mode
 
 
 * Standard Error
@@ -94,15 +100,15 @@ You can use Limit Values to filter the categories by the aggregated values. See 
 If you have many categories, you can reduce the number of categories by changing some category names to 'Others' using the 'Others' Group feature. See ['Others' Group](others-group.md) for the detail. 
 
 
-## Group Setting 
+## Ratio Setting 
 
-If the calculation type is `Ratio (%)`, you can set how to group by for the percentage calculation in Group Setting dialog. You can reach the Group Setting dialog from the Y Axis menu. Following group by options are available. The default value is `X Axis`.
+If the Error Bar is in Ratio mode, you can set how to group by for the percentage calculation in Ratio Setting dialog. You can reach the Ratio Setting dialog from the Y Axis menu. The following group by options are available. The default value is `X Axis`.
 
-* X Axis - Calculate the ratio for each X Axis data point. The total percentages on each X value will be 100%. For example, the total percentatge of all the color bars on `Sun` becomes 100%. 
+* X Axis - Calculate the ratio for each X Axis and Color group. For example, the TRUE ratio of the Africa and Corporate (Blue bar at Africa) is 4.5%.
 ![](images/errbar1.png)
-* Color - Calculate the ratio for each color value. The total percentage on each color value will be 100%. For example, total percentatge of all the blue bars becomes 100%.
+* Color - Calculate the ratio for each color value. The total percentage of each color value becomes 100%. For example, the total percentatge of all the blue bars is 100%.
 ![](images/errbar2.png)
-* All - Calculate the ratio based on all data point. The total percentage of all the data point will be 100%.
+* All - Calculate the ratio based for the entire data. The total percentage of all bars in all colors becomes 100%.
 ![](images/errbar3.png)
 
 

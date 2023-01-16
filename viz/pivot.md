@@ -10,8 +10,15 @@ Pivot Table makes it super easy to not only summarize (aggregate) data but also 
 * Row - Assign a column you want to show at Row Headers. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc. You can assign multiple columns to Row.   
 * Value - Assign a column you want to show at the value area. You can assign multiple columns to Value. If a numeric column is assigned, you can set the aggregation function such as `Sum`, `Mean (Average)`, etc. to aggregate the values. If it is a non-numeric column, you can set a count-based aggregation function such as `Unique Count` or a function to pick one of the values in the group such as "First (First Row)". 
 * Column - Assign a column you want to show at Column Headers. If it's a Date / Time column assigned, you can select the aggregation level such as `Month`, `Week`, `Day`, etc.
-* Sort - Assign a column to use for Sorting the Row values. The default is based on either the alphabetic order or the factor level order for Factor type columns.
-
+* Total - You can choose what type of totals to show. The following options are available. 
+  * None 
+  * Totals Only 
+  * Subtotals Only 
+  * Totals and Subtotals
+* Total Target - You can choose total targets to show. The following options are available. 
+  * Both Column & Row - It shows totals for rows and columns.
+  * Only Row - It shows totals for rows. 
+  * Only Column - It shows totals for columns.
 
 ## Formatting Columns
 
@@ -24,9 +31,9 @@ You can format each Row Header and Value column. You can access the Column Forma
 
 
 
-## Visual Formatting 
+## Color Assignment
 
-You can quickly apply the visual formatting from the "Visual Formatting" column menu. You can configure the formatting details in the [Column Configuration Dialog](column-configuration-dialog.md).
+You can quickly apply the color formatting from the "Color Assignment" column menu. You can configure the formatting details in the [Column Configuration Dialog](column-configuration-dialog.md).
 
 
 ![](images/pivot_viz_format_menu.png)
@@ -69,12 +76,24 @@ You can use the Custom Function feature to define your own aggregation function 
 You can use the Missing Value Handling feature to control missing values. See [Missing Value Handling](missing-value-handling.md) for the detail.
 
 
-## Calculation Target for Total Calculation
+
+## Total Setting
+### Calculation Target for Total Calculation
 
 You can choose how to calculate the totals/subtotals at the Calculation Target in the Setting dialog for total.
 
 * Data After Aggregation: Totals and subtotals are calculated based on the cell values in the Pivot Table which are already aggregated. 
 * Data Before Aggregation: Totals and subtotals are calculated based on the raw data before any aggregations. 
+
+### Position
+
+You can choose which side to show the Row total. The following options are available. 
+
+* Right (Default)
+* Left 
+
+![](images/pivot-total.png)
+
 
 
 ## Show Detail
