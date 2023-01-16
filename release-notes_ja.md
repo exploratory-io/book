@@ -1,5 +1,155 @@
 # リリースノート
 
+# Release Note
+
+## 6.12.1
+
+2023年1月14日リリース。
+
+### 修正された問題
+
+* Data Source: On Mac, importing data from MariaDB / MySQL failed after upgrading to 6.12.0
+* Data Source: Twitter Data Source: screen_name column was not included in the query result.
+
+
+* Table View: Row Filter doesn't apply if you select a data frame, open the Table View, close and open the project, select the same data frame and create a new Row Filter.
+* Table View: NA showed up for the standard deviation all the time in the column metrics popup.
+
+
+* Project: On Mac, clicking the project information icon didn't work after upgrading to 6.12.0
+
+
+## 6.12.0
+
+2023年1月12日リリース。
+
+### 機能強化
+
+* Analytics: Factor Analysis: Inter-factor correlation is now shown if an oblique rotation is used.
+* Analytics: K-means: The new density plot view that displays the distribution of feature values for each cluster is added.
+* Analytics: T-test for already aggregated data is added as a new Analytics View.
+* Analytics: Topic models with pre-tokenized text data is added as a new Analytics View.
+
+
+* Chart: Now you can add a title to the chart legend.
+* Chart: Now you can synchronize Y1 and Y2 scale at zero from the "Y1/Y2 Assignment" menu.
+* Chart: Now you can treat the hms data as numeric values.
+* Chart: Number: Now you can assign a color by conditions.
+* Chart: Pie: Now you can edit the center text of the Ring chart.
+* Chart: Pivot: Summarize Table: Now you can add colors to the inline bars by conditions.
+* Chart: Pivot: Summarize Table: Now you can apply the Color Assignment to all columns by the "Apply all columns" option.
+* Chart: Pivot: Summarize Table: Now you can click the total values to show the detailed data.
+* Chart: Radar: Now you can set the legend direction from the Color, Groups & Sort Setting dialog.
+* Chart: Trend line: Now you can show the trend line metrics (R-squared and Coefficient) on the plot area for the Linear Regression trend lines.
+
+
+* Dashboard: When editing a dashboard, now you can reorder rows and columns by drag and drop.
+
+
+* Data Source: Excel: Now you can Import multiple excel sheets as separate data frames or a merged data frame.
+* Data Source: Now you can import data file such as JSON by drag and drop.
+* Data Source: Supported GCS (Google Cloud Storage) as a data source.
+
+
+* General: Now UTF-8 support on Windows is available without modifying Windows configuration.
+
+
+* Data Wrangling: Case When, Recode, Bin, and Text Wrangling: Now you can add a new column right after the current column.
+* Data Wrangling: Join Dialog: Now it shows the NA Bar on the preview table column header.
+* Data Wrangling: Mutate: Now it highlight newly created column on Summary View and Table View.
+* Data Wrangling: Reorder Columns: Now you can move multiple columns to the top or bottom on the dialog.
+* Data Wrangling: Reorder Columns: Now you can reorder multiple columns by drag and drop.
+* Data Wrangling: Summarize: Supported aggregation functions such mean and sum for hms type data.
+* Data Wrangling: Supported URL encode and decode on the Text Wrangling UI
+
+
+* Project: Now you can import a project file (epf) file by drag and drop.
+
+
+* Summary View: Now it shows the "# of NAs" bar for each column in the Correlation mode.
+* Summary View: Now you can filter columns by conditions from the "Column" button on the toolbar.
+* Summary View: Now you can filter the data by conditions from the "Row" button on the toolbar.
+
+
+* Table View: Now you can filter columns by conditions from the "Column" button on the toolbar.
+* Table View: Now you can view the column metrics by clicking the 'i' icon in the table header.
+
+### 修正された問題
+
+* Analytics: Changing a base level for a character predictor column didn't work.
+* Analytics: K-means: Preview table kept showing original column value even if a column function was set for the column.
+* Analytics: K-Means: The number of rows excluded because of NAs is now shown on the Summary tab.
+* Analytics: Likert's sigma is now available as a pre-processing function for Analytics View. It is useful to normalize scale data in surveys, such as 5-point scales.
+* Analytics: T-Test: If you ran the T-Test Analytics twice, the Error Bar showed a different output.
+
+
+* Chart: "Equal Step" category setting did not allow setting labels.
+* Chart: Analytics: Performance improvement for a data frame with many columns.
+* Chart: Area: Chart legend didn't show if you assigned a column that has only 1 unique value to Color.
+* Chart: Bar chart showed weird object on the Y-axis tick area if you set "0" for the "Axis Tick Step".
+* Chart: Categories created on X-Axis by the "Equal Step" didn't respect the decimal digit setting for the X-Axis.
+* Chart: Density Plot: The label "Density" should be translated in the hover Popup.
+* Chart: Error Bar: If you created an Error Bar, switched the chart type to Error Bar (Summarized Data) and selected the Error Bar again, the Ratio By option became "All". This option should stay as "X-Axis".
+* Chart: If you selected the IQR aggregation function, the IQR output was multiplied by 1.5.
+* Chart: Map LongLat: Show Detail didn't work once in a while if you set the "Row ID" column to Group By.
+* Chart: Sort: The order when sorting is wrong when using a window calculation as a percent of the total.
+
+
+* Dashboard: Japanese characters were garbled if you opened a chart data CSV file exported from the Dashboard by double-clicking the file on the File Explorer.
+* Dashboard: Publishing failed with an error "RangeError [ERR_BUFFER_OUT_OF_BOUNDS]: Attempt to write outside buffer bounds” if you have many charts in a dashboard.
+
+
+* Data Source: CSV: List of files dialog didn't show any files when the directory contained a dead symbolic link.
+* Data Source: Excel: Could not override column data type when there are more than 100 columns.
+* Data Source: Google Drive: Importing multiple CSV files from Shared With Me by selecting file names didn't work.
+* Data Source: Local Files: Supported folder navigation by clicking the parent folder button like Cloud Storage Files.
+* Data Source: Salesforce: When a column data was empty,  the query result didn't include the column.
+* Data Source: Snowflake: Warehouse was not properly set on the session and "57P03: No active warehouse selected in the current session" error was raised.
+
+
+* Data Wrangling: After copying a data frame with a branch that has a join step pointing to another branch in the same data frame, it showed an error message that tells that the target data frame does not exist wrongly.
+* Data Wrangling: Column Reorder: Added the clear selection button on the column selection area.
+* Data Wrangling: Create Categories: Supported "Edge Value Handling" and other parameters for category settings.
+* Data Wrangling: Create Categories: Unchecking the 'Save Factor Order' checkbox still created a column with Factor data type.
+* Data Wrangling: Excel Export: Changed the default date format to yyyy/mm/dd and now it remembers the previously selected date format.
+* Data Wrangling: Extract Alphabet: The conversion result should be character data type instead of List data type.
+* Data Wrangling: Factor values in the Recode dialog were not sorted properly.
+* Data Wrangling: If you had many columns (e.g. more than 5000 columns) in a data frame, UI operation such as column selection became very slow.
+* Data Wrangling: Long to Wide: Now it shows prereview results on the Dialog.
+* Data Wrangling: Make this rows as column header: Clean Column Names option did not preserve non-ASCII name column name.
+* Data Wrangling: Merge / Union: When a data frame used for merge was renamed,  you could not remove the renamed data frame from the data frame list.
+* Data Wrangling: Merge/Union: "Select all" was not working when you searched data frames.
+* Data Wrangling: Mutate: After running a command, the table view scroll position should remain.
+* Data Wrangling: Now it uses pivot_longer R function instead of gather and pivot_wider R function instead of spread.
+* Data Wrangling: Orphan branch remained on the UI and it shows dagops.members: dataframe abc does not exist in the catalog error.
+* Data Wrangling: Pivot: It showed Error: Data from the previous step is empty when there was no record in the data frame.
+* Data Wrangling: Recode: When column name was changed in the previous step, one could not remove the column selection.
+* Data Wrangling: Removing a step cache didn't update the Chart.
+* Data Wrangling: Text Wrangling: Remove punctuation did not remove symbols such as $
+* Data Wrangling: Under certain conditions, the same branch was repeatedly displayed in the left-hand-side dataframe tree pane.
+* Data Wrangling: When exporting large numeric value to a CSV file with Shift-JIS encoding, the value was exported with scientific notation.
+
+
+* Export: Exporting a wider data frame (tens of thousands of columns by tens of rows) hanged.
+
+
+* Installation: If you try to install an invalid R package from CRAN, it showed the network error dialog.
+
+
+* Parameter: LOV parameter was not updated in the dashboard when there was a dependency between the parameters.
+* Parameter: When a data frame that provides a list of values for a parameter was exported and imported via EDF file, its name turned into a randomly generated string.
+
+
+* Publish: After publishing a Cloud Storage CSV data, override data type set for columns were not honored, and it caused a data type mismatch error in a Join step that uses the column.
+* Publish: Error message improvement for exceeding the storage size limit at publishing.
+* Publish: Publishing data failed with "s.getSummary(...).concat is not a function" if you tried to publish the model step.
+* Publish: When there was a missing Data Frame reference for a parameter, it didn't show a user-friendly error message.
+
+
+* Summary View: CSV data exported from the Summary View was corrupted if column names contained certain special characters such as commas or double quotes.
+* Summary View: If a data frame had a column with many unique text values, the Summary View took a very long time to show.
+* Summary View: Performance improvement for a data frame with many columns.
+
 ## 6.11.4
 
 2022年11月16日リリース。
