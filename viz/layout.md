@@ -39,6 +39,8 @@ Following layout properties are available for those type of charts.
     * Middle - Available only on Bar, Error Bar and Error Bar (Summarized Data) chart types.
     * Below
 * Legend 
+  * Title Text 
+  * Title Font Size
   * Position 
     * Right - Default
     * Left
