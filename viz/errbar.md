@@ -6,7 +6,7 @@
 ## Mean mode and Ratio mode.
 
 
-The Error Bar has 2 modes, Mean mode and Ratio mode. The mode automatically switches depending on the column data type and aggregation function that you assign to Y-Axis. 
+The Error Bar has 2 modes, Mean mode, and Ratio mode. The mode automatically switches depending on the column data type and aggregation function that you assign to Y-Axis. 
 
 
 ### Mean mode
@@ -76,15 +76,15 @@ Take a look at [Reference Line](reference-line.md) section for more details.
 
 ## Style 
 
-You can change the error bar styles from the "Style" setting at Y-Axis. You can change the followings.
+You can change the error bar styles from the "Style" setting at Y-Axis. You can change the following.
 * Line Width: Thickness of the error bars.
-* Circle Size: Size of the circle. Available only for "Circle" marker option.
+* Circle Size: Size of the circle. Available only for the "Circle" marker option.
 * Horizontal Bar Width: Length of the horizontal bar part of the error bars. 
 
 
 ## Highlight 
 
-You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
+You can change the color of the specific markers such as bars, lines, or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
 
 ## Category 
 
@@ -102,13 +102,13 @@ If you have many categories, you can reduce the number of categories by changing
 
 ## Ratio Setting 
 
-If the Error Bar is in Ratio mode, you can set how to group by for the percentage calculation in Ratio Setting dialog. You can reach the Ratio Setting dialog from the Y Axis menu. The following group by options are available. The default value is `X Axis`.
+If the Error Bar is in Ratio mode, you can set how to group by for the percentage calculation in the Ratio Setting dialog. You can reach the Ratio Setting dialog from the Y-Axis menu. The following group by options are available. The default value is `X Axis`.
 
-* X Axis - Calculate the ratio for each X Axis and Color group. For example, the TRUE ratio of the Africa and Corporate (Blue bar at Africa) is 4.5%.
+* X Axis - Calculate the ratio for each X-Axis and Color group. For example, the TRUE ratio of Africa and Corporate (Blue bar at Africa) is 4.5%.
 ![](images/errbar1.png)
-* Color - Calculate the ratio for each color value. The total percentage of each color value becomes 100%. For example, the total percentatge of all the blue bars is 100%.
+* Color - Calculate the ratio for each color value. The total percentage of each color value becomes 100%. For example, the total percentage of all the blue bars is 100%.
 ![](images/errbar2.png)
-* All - Calculate the ratio based for the entire data. The total percentage of all bars in all colors becomes 100%.
+* All - Calculate the ratio based on the entire data. The total percentage of all bars in all colors becomes 100%.
 ![](images/errbar3.png)
 
 
