@@ -9,11 +9,11 @@ You can view the data in each column in the selected data frame.
 
 ## Row Filter
 
-You can filter rows to show by the condition on Table View. See [Row Filter](row_filter.md) for more details.
+You can filter rows by the condition on Table View. See [Row Filter](row_filter.md) for more details.
 
 ## Column Filter
 
-You can filter columns to show by the condition on Table View. See [Column Filter](column_filter.md) for more details. 
+You can filter columns by the condition on Table View. See [Column Filter](column_filter.md) for more details. 
 
 
 ## Column Metrics

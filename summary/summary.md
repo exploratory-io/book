@@ -6,11 +6,11 @@ At the Summary View, you can view the summary information of the selected data f
 
 ## Row Filter
 
-You can filter rows to show by the condition on Summary View and Table View. See [Row Filter](../table/row_filter.md) for more details.
+You can filter rows by the condition on Summary View. See [Row Filter](../table/row_filter.md) for more details.
 
 ## Column Filter
 
-You can filter columns to show by the condition on Summary View and Table View. See [Column Filter](../table/column_filter.md) for more details. 
+You can filter columns by the condition on Summary View. See [Column Filter](../table/column_filter.md) for more details. 
 
 
 

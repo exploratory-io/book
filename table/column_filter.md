@@ -1,6 +1,6 @@
 # Column Filter
 
-You can filter the columns to show by the condition on Summary View and Table View. You can define the condition from the "Columns" button at the top. The condition can be shared among the Summary View and Table View.
+You can filter the columns by the condition on Summary View and Table View. You can define the condition from the "Columns" button at the top. The condition can be shared among the Summary View and Table View.
 
 Summary View
 ![](images/colfilter1.png)
@@ -10,7 +10,7 @@ Table View
 
 
 
-If conditions are applied, the button gets highlighted. The number in the button means the number of columns currently showing. 
+If conditions are applied, the button gets highlighted. The number on the button means the number of columns currently showing. 
 
 
 ![](images/colfilter3.png)
@@ -35,7 +35,7 @@ You can filter columns by the keyword. The following search options are availabl
 
 ## Data Type
 
-You can filter column by the data type. You can check the data type to show. You can check multiple checkboxes. If you don't check anything, filtering by the data type is disabled. The following data type options are available. 
+You can filter columns by the data type. You can check the data type to show. You can check multiple checkboxes. If you don't check anything, filtering by the data type is disabled. The following data type options are available. 
 
 * Numeric
 * Character

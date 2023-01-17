@@ -9,7 +9,7 @@ Table View
 ![](images/rowfilter4.png)
 
 
-If conditions are applied, the button gets highlighted. The number in the button means the number of rows after applying the filter. 
+If conditions are applied, the button gets highlighted. The number on the button means the number of rows after applying the filter. 
 
 
 ![](images/rowfilter1.png)
@@ -24,10 +24,10 @@ You can click the "Rows" button to create the very first condition. It will imme
 
 ## Update and Delete Conditions 
 
-You can click the "Rows" button to update existing conditions, add other conditions, or detele conditions. 
+You can click the "Rows" button to update existing conditions, add other conditions, or delete conditions. 
 
 
-You can add other conditions by clicking "+ Add Filter" link.
+You can add other conditions by clicking the "+ Add Filter" link.
 
 If you have multiple conditions, you can choose how to apply those conditions. Those 2 options are available. 
 
