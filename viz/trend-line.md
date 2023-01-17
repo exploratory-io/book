@@ -72,5 +72,42 @@ If you select the "All" option for the Target, it shows a corresponding item in 
 ![](images/trend-show-in-legend.png)
 
 
+## Style
+
+You can change the style of the trend line. The following options are available.
+
+* Color
+* Line Width
+* Line Style
+  * Solid
+  * Dot
+  * Dash
+  * Long Dash
+  * Dash and Dot
+  * Long Dash and Dot
+
+## Show Metrics on Plot
+
+You can show the Trend Line metrics on the plot area. This option is available if all the following conditions meet. 
+
+* Liner Regression trend line type is used. 
+* Showing 1 trend line per chart. For example.
+  * No column set for Color.
+  * Column set for Color and Target is set to "All".
 
 
+The following options are available.
+
+
+* Metrics
+  * R Squared & Coefficient
+  * Coefficient
+  * R Squared 
+* Position
+  * Upper Left
+  * Upper Right
+* Font Size
+* Apply All Columns - Apply the settings above to all the columns. It is available only if you assign multiple columns to Y-axis and use the "(Y-Axis Values)" for the Repeat By.
+
+
+![](images/trend_line_show_on_plot.png)
