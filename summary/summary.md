@@ -3,6 +3,18 @@
 At the Summary View, you can view the summary information of the selected data frame. 
 
 
+
+## Row Filter
+
+You can filter rows to show by the condition on Summary View and Table View. See [Row Filter](../table/row_filter.md) for more details.
+
+## Column Filter
+
+You can filter columns to show by the condition on Summary View and Table View. See [Column Filter](../table/column_filter.md) for more details. 
+
+
+
+
 ## Regular Mode
 You can view the summary of columns in the selected data frame. 
 

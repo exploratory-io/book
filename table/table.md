@@ -7,6 +7,14 @@ You can view the data in each column in the selected data frame.
 
 ![](images/table1.png)
 
+## Row Filter
+
+You can filter rows to show by the condition on Table View. See [Row Filter](row_filter.md) for more details.
+
+## Column Filter
+
+You can filter columns to show by the condition on Table View. See [Column Filter](column_filter.md) for more details. 
+
 
 ## Column Menu
 You can click the downward button to see the column menu. It shows a list of operations you can perform against this column. 
@@ -23,9 +31,5 @@ After selecting columns, you can open the column menu and select an operation to
 ![](images/table3.png)
 
 
-## Filter
-On Table View, you can filters so that you can check details of the data that you want to confirm. 
-
-![](images/table4.png)
 
 
