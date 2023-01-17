@@ -8,16 +8,14 @@
 
 ### 修正された問題
 
-* Data Source: On Mac, importing data from MariaDB / MySQL failed after upgrading to 6.12.0
-* Data Source: Twitter Data Source: screen_name column was not included in the query result.
+* データソース: Mac で6.12.0 にアップグレードすると、MariaDB / MySQL からのデータインポートに失敗する。
+* データソース: Twitter : screen_name 列がデータに含まれない。
 
 
-* Table View: Row Filter doesn't apply if you select a data frame, open the Table View, close and open the project, select the same data frame and create a new Row Filter.
-* Table View: NA showed up for the standard deviation all the time in the column metrics popup.
+* テーブルビュー: テーブルビューを開いた後にプロジェクトを閉じ、再び同じプロジェクトの同じデータフレームを選択し、新しい行フィルタを作成すると、行フィルタが適用されない。
+* テーブルビュー: サマリのポップアップ内の標準偏差が常にNAとして表示される。
 
-
-* Project: On Mac, clicking the project information icon didn't work after upgrading to 6.12.0
-
+プロジェクト:Mac で6.12.0 にアップグレードすると、プロジェクトの情報アイコンをクリックしても反応しない。
 
 ## 6.12.0
 
@@ -25,54 +23,56 @@
 
 ### 機能強化
 
-* Analytics: Factor Analysis: Inter-factor correlation is now shown if an oblique rotation is used.
-* Analytics: K-means: The new density plot view that displays the distribution of feature values for each cluster is added.
-* Analytics: T-test for already aggregated data is added as a new Analytics View.
-* Analytics: Topic models with pre-tokenized text data is added as a new Analytics View.
+* アナリティクス: 因子分析: 「回転のタイプ」に斜交タイプのものを選択すると、因子間相関が表示されるようになりました。
+* アナリティクス: K-means クラスタリング: 各クラスターの特徴量の分布を密度曲線で表現する分布タブが追加されました。
+* アナリティクス: 新しいアナリティクスのタイプとして、集計済みデータを使ったt検定を追加しました。
+* アナリティクス: 新しいアナリティクスのタイプとして、単語化済みデータを使ったトピックモデルを追加しました。
 
 
-* Chart: Now you can add a title to the chart legend.
-* Chart: Now you can synchronize Y1 and Y2 scale at zero from the "Y1/Y2 Assignment" menu.
-* Chart: Now you can treat the hms data as numeric values.
-* Chart: Number: Now you can assign a color by conditions.
-* Chart: Pie: Now you can edit the center text of the Ring chart.
-* Chart: Pivot: Summarize Table: Now you can add colors to the inline bars by conditions.
-* Chart: Pivot: Summarize Table: Now you can apply the Color Assignment to all columns by the "Apply all columns" option.
-* Chart: Pivot: Summarize Table: Now you can click the total values to show the detailed data.
-* Chart: Radar: Now you can set the legend direction from the Color, Groups & Sort Setting dialog.
-* Chart: Trend line: Now you can show the trend line metrics (R-squared and Coefficient) on the plot area for the Linear Regression trend lines.
+* チャート: 凡例にタイトルを追加できるようになりました。
+* チャート: 凡例にタイトルを追加できるようになりました。
+* チャート: Y軸メニューの「Y1/Y2軸の指定」から、Y1軸とY2軸を0で同期することができるようになりました。
+* チャート: hms型のデータを数値として扱えるようになりました。
+* チャート: ナンバー: 「フォーマット」から条件によって色を割り当てられるようになりました。
+* チャート: パイ: 値のメニューの「列名の変更」からチャート内の中央のテキストを編集できるようになりました。
+* チャート: ピボットテーブル: 集計テーブル: フォーマットから色の割り当てに「条件付き」を選択したときに、条件に応じてバーに色を割り当てられるようになりました。
+* チャート: ピボットテーブル: 集計テーブル: フォーマットから「すべての列に適用」のオプションを使って、全ての列のテキストに一度に色を適用できるようになりました。
+* チャート: ピボットテーブル: 集計テーブル: 小計や合計値をクリックして、詳細データを表示できるようになりました。
+* チャート: レーダー: 「色、グループ、並び順の設定」ダイアログで、凡例の色の方向を設定できるようになりました。
+* チャート: トレンドライン: 線形回帰のプロット領域に、トレンドラインの指標（R2乗値と係数）を表示できるようになりました。
 
 
-* Dashboard: When editing a dashboard, now you can reorder rows and columns by drag and drop.
+* ダッシュボード: 編集時にドラッグ＆ドロップで行や列全体を並び替えられるようになりました。
 
 
-* Data Source: Excel: Now you can Import multiple excel sheets as separate data frames or a merged data frame.
-* Data Source: Now you can import data file such as JSON by drag and drop.
-* Data Source: Supported GCS (Google Cloud Storage) as a data source.
+* データソース: Excel: 複数のシートを別々のデータフレームとしてインポートするか、1つのデータフレームとしてマージしてインポートできるようになりました。
+* データソース: JSONファイルをドラッグ＆ドロップでインポートできるようになりました。
+* データソース: データソースとしてGCS（Google Cloud Storage）をサポートしました。
 
 
-* General: Now UTF-8 support on Windows is available without modifying Windows configuration.
+* 一般: Windowsにおいて、設定を変更することなくUTF-8をサポートできるようになりました。
 
 
-* Data Wrangling: Case When, Recode, Bin, and Text Wrangling: Now you can add a new column right after the current column.
-* Data Wrangling: Join Dialog: Now it shows the NA Bar on the preview table column header.
-* Data Wrangling: Mutate: Now it highlight newly created column on Summary View and Table View.
-* Data Wrangling: Reorder Columns: Now you can move multiple columns to the top or bottom on the dialog.
-* Data Wrangling: Reorder Columns: Now you can reorder multiple columns by drag and drop.
-* Data Wrangling: Summarize: Supported aggregation functions such mean and sum for hms type data.
-* Data Wrangling: Supported URL encode and decode on the Text Wrangling UI
+* データラングリング: 条件を設定して置換、カテゴリーを作成、テキストデータの加工: 選択した列の直後に新しい列が作成されるようになりました。
+* データラングリング: 結合: プレビュー内のテーブルのヘッダーにNA（欠損値）のバーが表示されるようになりました。
+* データラングリング: 計算を作成: 新しく作成した列が、サマリービューとテーブルビューでハイライトされるようになりました。
+* データラングリング: 列の並び替え: 複数の列を一度に先頭あるいは最後に移せるようになりました。
+* データラングリング: 列の並び替え: 複数の列をドラッグ＆ドロップで一度に並び替えられるようになりました
+* データラングリング: 集計: hms型の列で平均値や合計値などの集計関数をサポートしました。
+* データラングリング: テキストデータの加工: URLのエンコードとデコードをサポートしました。
 
 
-* Project: Now you can import a project file (epf) file by drag and drop.
+* プロジェクト: プロジェクトファイル（epf）をドラッグ＆ドロップでインポートできるようになりました。
 
 
-* Summary View: Now it shows the "# of NAs" bar for each column in the Correlation mode.
-* Summary View: Now you can filter columns by conditions from the "Column" button on the toolbar.
-* Summary View: Now you can filter the data by conditions from the "Row" button on the toolbar.
+* サマリビュー: 相関モード: 各列の欠損値の数と割合を表すバーが表示されるようになりました。
+* サマリビュー: ツールバーの 「列」のボタンから条件を指定して、列をフィルタできるようになりました。
+* サマリビュー: ツールバーの「行」のボタンから条件を指定して、データをフィルタできるようになりました。
 
 
-* Table View: Now you can filter columns by conditions from the "Column" button on the toolbar.
-* Table View: Now you can view the column metrics by clicking the 'i' icon in the table header.
+* テーブルビュー: ツールバーの 「列」のボタンから条件を指定して、列をフィルタできるようになりました。
+* テーブルビュー: 列のヘッダーの「i」アイコンをクリックすると、サマリの情報が表示されるようになりました。
+
 
 ### 修正された問題
 
