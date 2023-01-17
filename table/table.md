@@ -16,6 +16,13 @@ You can filter rows to show by the condition on Table View. See [Row Filter](row
 You can filter columns to show by the condition on Table View. See [Column Filter](column_filter.md) for more details. 
 
 
+## Column Metrics
+
+You can show the column metrics by hovering the column header area and click the green "i" icon. 
+
+
+![](images/show_column_metrics.png)
+
 ## Column Menu
 You can click the downward button to see the column menu. It shows a list of operations you can perform against this column. 
 
