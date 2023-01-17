@@ -1,5 +1,158 @@
 # リリースノート
 
+# Release Note
+
+## 6.12.1
+
+2023年1月14日リリース。
+
+### 修正された問題
+
+* Data Source: On Mac, importing data from MariaDB / MySQL failed after upgrading to 6.12.0
+* Data Source: Twitter Data Source: screen_name column was not included in the query result.
+
+
+* Table View: Row Filter doesn't apply if you select a data frame, open the Table View, close and open the project, select the same data frame and create a new Row Filter.
+* Table View: NA showed up for the standard deviation all the time in the column metrics popup.
+
+
+* Project: On Mac, clicking the project information icon didn't work after upgrading to 6.12.0
+
+
+## 6.12.0
+
+2023年1月12日リリース。
+
+### 機能強化
+
+* Analytics: Factor Analysis: Inter-factor correlation is now shown if an oblique rotation is used.
+* Analytics: K-means: The new density plot view that displays the distribution of feature values for each cluster is added.
+* Analytics: T-test for already aggregated data is added as a new Analytics View.
+* Analytics: Topic models with pre-tokenized text data is added as a new Analytics View.
+
+
+* Chart: Now you can add a title to the chart legend.
+* Chart: Now you can synchronize Y1 and Y2 scale at zero from the "Y1/Y2 Assignment" menu.
+* Chart: Now you can treat the hms data as numeric values.
+* Chart: Number: Now you can assign a color by conditions.
+* Chart: Pie: Now you can edit the center text of the Ring chart.
+* Chart: Pivot: Summarize Table: Now you can add colors to the inline bars by conditions.
+* Chart: Pivot: Summarize Table: Now you can apply the Color Assignment to all columns by the "Apply all columns" option.
+* Chart: Pivot: Summarize Table: Now you can click the total values to show the detailed data.
+* Chart: Radar: Now you can set the legend direction from the Color, Groups & Sort Setting dialog.
+* Chart: Trend line: Now you can show the trend line metrics (R-squared and Coefficient) on the plot area for the Linear Regression trend lines.
+
+
+* Dashboard: When editing a dashboard, now you can reorder rows and columns by drag and drop.
+
+
+* Data Source: Excel: Now you can Import multiple excel sheets as separate data frames or a merged data frame.
+* Data Source: Now you can import data file such as JSON by drag and drop.
+* Data Source: Supported GCS (Google Cloud Storage) as a data source.
+
+
+* General: Now UTF-8 support on Windows is available without modifying Windows configuration.
+
+
+* Data Wrangling: Case When, Recode, Bin, and Text Wrangling: Now you can add a new column right after the current column.
+* Data Wrangling: Join Dialog: Now it shows the NA Bar on the preview table column header.
+* Data Wrangling: Mutate: Now it highlight newly created column on Summary View and Table View.
+* Data Wrangling: Reorder Columns: Now you can move multiple columns to the top or bottom on the dialog.
+* Data Wrangling: Reorder Columns: Now you can reorder multiple columns by drag and drop.
+* Data Wrangling: Summarize: Supported aggregation functions such mean and sum for hms type data.
+* Data Wrangling: Supported URL encode and decode on the Text Wrangling UI
+
+
+* Project: Now you can import a project file (epf) file by drag and drop.
+
+
+* Summary View: Now it shows the "# of NAs" bar for each column in the Correlation mode.
+* Summary View: Now you can filter columns by conditions from the "Column" button on the toolbar.
+* Summary View: Now you can filter the data by conditions from the "Row" button on the toolbar.
+
+
+* Table View: Now you can filter columns by conditions from the "Column" button on the toolbar.
+* Table View: Now you can view the column metrics by clicking the 'i' icon in the table header.
+
+### 修正された問題
+
+
+* アナリティクス: 予測変数の列の設定からベースレベルを変更しても機能しない。
+* アナリティクス: K-means: 列の選択と設定で列の関数を設定しても、プレビューのテーブルに元の列の値が表示される。
+* アナリティクス: K-means: 欠損値のために除外された行の数がサマリタブに表示されるようになりました。
+* アナリティクス: リッカートシグマ法がアナリティクスビューの前処理の関数として使用できるようになりました。これにより、
+5段階評価などのアンケートの尺度データを正規化するのに役立ちます。
+* アナリティクス: t検定: t検定を2回実行すると、エラーバーに異なる結果が出力される。
+
+
+* チャート: カテゴリーのタイプの「等間隔」でラベルが設定できない。
+* チャート: アナリティクス: 列数が多いデータフレームでのパフォーマンスが向上しました。
+* チャート: エリア: 色に一意な値の数が1つしかない列を割り当てた場合、凡例が表示されない。
+* チャート: チャートプロパティから「軸のステップ幅」に「0」を指定していると、バーチャートのY軸の目盛に奇妙なオブジェクトが表示される。
+* チャート: X軸を「等間隔」によってカテゴリー化している場合、X軸の小数点以下の桁数の設定が機能しない。
+* チャート: 密度曲線: マウスオーバーした時のポップアップに表示される「Density」を「密度」に翻訳しました。
+* チャート: エラーバー: エラーバーを作成し、チャートタイプをエラーバー（集計済データ）に変更して、再度エラーバーに戻すと、「割合の対象」が「全体」に切り替わってしまう。このぷションは「X軸」のままにしておく必要がある。.
+* チャート: 集計関数に「IQR」を選択した場合、IQRでの出力は「1.5」倍になる。
+* チャート: 地図 - 緯度/経度: グループ化に「行番号」を設定していると、「詳細を表示」が機能しないことがある。
+* チャート: ソート：全体に対する割合として表計算を使用した場合、並び替えられる順番に誤りがある。
+
+
+* ダッシュボード: ダッシュボードのチャートデータをCSV形式でエクスポートし、ファイルをファイルエクスプローラーでダブルクリックして開くと日本語の文字で文字化けが発生する。
+* ダッシュボード: ダッシュボードに多くのチャートが含まれている場合、"RangeError [ERR_BUFFER_OUT_OF_BOUNDS]: Attempt to write outside buffer bounds”というエラーでパブリッシュに失敗する。
+
+
+* データソース: CSV: ディレクトリに無効なシンボリックリンクが含まれている場合、「CSVファイルの選択」のダイアログにファイルが表示されない。
+* データソース: Excel: 列数が100列を超える場合、列のデータタイプを上書きできない。
+* データソース: Google ドライブ: ファイル名を選択して、共有アイテムから複数のCSVファイルをインポートできない。
+* データソース: ローカルファイル: クラウドストレージファイルのように、親フォルダーのボタンをクリックして子フォルダーを開けるようにフォルダーナビゲーションをサポートしました。
+* データソース: Salesforce: 列データが空の場合、クエリ結果にその列が含まれない。
+* データソース: Snowflake: セッションでウェアハウスが正しく設定されておらず、"57P03: No active warehouse selected in the current session"というエラーが発生する。
+
+
+* データラングリング: 同じデータフレーム内の別のブランチを結合するステップを持つブランチデータフレームをコピーすると、ターゲットのデータフレームが存在しないことを表すエラーメッセージが表示される。
+* データラングリング: 列の並び替え: 選択している列を解除する「選択をクリア」のボタンを追加しました。
+* データラングリング: カテゴリーを作成: カテゴリーの作成時に「範囲の端の扱い」およびその他のパラメーターをサポートしました。
+* データラングリング: カテゴリーを作成: 「ファクター型として順序を保持する」のチェックボックスをオフにしても、ファクター型の列が作成される。
+* データラングリング: Excelファイルのエクスポート: デフォルトの日付形式がyyyy/mm/ddに変更され、過去に選択した日付形式が記憶されるようになりました。
+* データラングリング:アルファベットの抽出: 抽出後の結果のデータタイプはリスト型ではなく文字列型である必要があります。
+* データラングリング: 元の値を新しい値で置換: ダイアログにて、ファクター型で設定された順序で値がソートされない。
+* データラングリング: 列数が多い（例：5000列以上）データフレームでは、列を選択などのUIでの操作が非常に遅くなっていたためパフォーマンスを向上しました。
+* データラングリング: ロング型からワイド型へ: ダイアログにプレビュー結果が表示されるようになりました。
+* データラングリング: 指定した行を列名にする: 「列名をきれいにする」のオプションでは、Non-ASCII文字が保持されない。
+* データラングリング: マージ / Union: マージに使用されるデータフレームの名前が変更された場合、名前が変更されたデータフレームをデータフレームの選択のリストから削除できない。
+* データラングリング: マージ / Union: データフレームの検索時に「全選択」が機能しない。
+* データラングリング: 計算を作成: 計算を実行した後、テーブルビューのスクロール一は維持される必要がある。
+* データラングリング: ロング型からワイド型へ: spread関数の代わりにpivot_longerの関数を使用するようになりました。
+* データラングリング: 孤立したブランチが作成され、"dagops.members: dataframe abc does not exist in the catalog"のエラーが表示される。
+* データラングリング: ピボット: データフレームに行がなかったときに、"Data from the previous step is empty when there was no record in the data frame."のエラーが発生する。
+* データラングリング: 元の値を新しい値で置換: 前のステップで列名を変更すると、列の選択を解除できない。
+* データラングリング: ステップデータのキャッシュを削除しても、チャートが更新されない。
+* データラングリング: テキストデータの加工: 句読点を削除しても、$などの記号が削除されない。
+* データラングリング: 特定の条件によって、左側のデータフレームのリストに同じブランチデータフレームが繰り返し表示される。
+* データラングリング: 大きな数値を含むデータをShift-JIS エンコーディングのCSVファイルとしてエクスポートすると、値が指数表記でエクスポートされる。
+
+
+* エクスポート: 列数が非常に多いデータフレーム（数万列, 数十行）でエクスポートでハングする。
+
+
+* インストール: CRANから無効なRパッケージをインストールしようとすると、ネットワークエラーのダイアログが表示される。
+
+
+* パラメーター: パラメーター間に依存関係がある場合、ダッシュボードのパラメーターのLOVが更新されない。
+* パラメーター: パラメーターの値をリストを持つデータフレームをEDFファイル経由でエクスポートおよびインポートをすると、その名前がランダムに生成された文字列に変わってしまう。
+
+
+* パブリッシュ: クラウドストレージのCSVデータをパブリッシュした後、列に設定されたデータ型の変更が適用されず、その列を使用する結合ステップでデータ型の不一致のエラーが発生する。
+* パブリッシュ: パブリッシュ時にストレージサイズの制限を超過した場合のエラーメッセージを改善しました。
+* パブリッシュ: モデルのステップがあるデータをパブリッシュしようとすると、"s.getSummary(...).concat is not a function"というエラーが発生する。
+* パブリッシュ: パラメーターでデータフレームから値を取得する際に、参照がうまくできない場合のエラーメッセージを改善しました。
+
+
+* サマリビュー: 列名にコンマやダブルクォートなどの特殊文字が含まれていると、サマリビューからエクスポートしたCSVデータが破損する。
+* サマリビュー: データフレームに多くの一意な値の数を持つ文字列型の列がある場合、サマリビューの表示に時間がかかる。
+* サマリビュー: 列数が多いデータフレームでのサマリビューの表示のパフォーマンスが向上しました。
+
+
 ## 6.11.4
 
 2022年11月16日リリース。
