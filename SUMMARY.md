@@ -6,6 +6,8 @@
 * [Product Features](product-features.md)
   * [Summary View](summary/summary.md)
   * [Table View](table/table.md)
+  * [Row Filter](table/row_filter.md)
+  * [Column Filter](table/column_filter.md)
   * [Dashboard](markdown/markdown-dashboard.md)
   * [Dashboard (日本語)](markdown/markdown-dashboard_ja.md)
   * [Note](markdown/markdown-note.md)
