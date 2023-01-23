@@ -21,6 +21,10 @@ Released on 1/14/2023.
 
 Released on 1/12/2023.
 
+### Breaking Changes
+
+* Data Wrangling: In a custom multi-column mutate step, you must now specify the original column as a period (.). Specifying only the function name as a custom expression is no longer allowed.
+
 ### Enhancements
 
 * Analytics: Factor Analysis: Inter-factor correlation is now shown if an oblique rotation is used.
