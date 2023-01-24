@@ -10,7 +10,7 @@ Released on 1/24/2023.
 
 
 * Chart: Bar: Now you can add a gap between bars from the chart property dialog. 
-* 
+
 
 ### Bug Fixes
 
