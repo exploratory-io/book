@@ -38,6 +38,9 @@ Following layout properties are available for those type of charts.
     * Above
     * Middle - Available only on Bar, Error Bar and Error Bar (Summarized Data) chart types.
     * Below
+  * Show Values if Greater than This Value - You can show values on plot only for the values that are greater than this setting.
+  * Add Space Between Bars (Bar chart only) - You can add a space between grouped bars.
+
 * Legend 
   * Title Text 
   * Title Font Size
