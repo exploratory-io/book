@@ -1,5 +1,42 @@
 # Release Note
 
+## 6.12.2
+
+Released on 1/24/2023.
+
+### Enhancements
+
+* Data Wrangling:  Now it shows the translated function reference when the UI locale is Japanese.
+
+
+* Chart: Bar: Now you can add a gap between bars from the chart property dialog. 
+
+
+### Bug Fixes
+
+
+* Data Source: Excel: Improved multiple Excel sheets handling on Excel Import dialog.
+* Data Source: Opening an existing Excel Sheets Data Source failed with TypeError: Cannot read properties of undefined (reading 'length').
+* Data Source: Salesforce: When the Bulk Import checkbox is checked and there was new line feeds in an SOQL, it showed an incorrect object permission error.
+* Data Source: Presto / Treasure Data: BIG INT data type was treated as an integer after the 6.12.0 upgrade.
+
+
+* Data Wrangling: Text Wrangling: Improved the 'custom' menu for the specified text for the Japanese UI locale.
+* Data Wrangling: Text Wrangling: Improved the 'Include Specified Characters' menu for the specified text for the Japanese UI locale.
+
+
+* Summary View: The label '(Others)' should be translated on a histogram chart of a category column.
+
+
+* Chart: Bar chart failed due to "forcats::fct_reorder(): ! Arguments in ... must be used." error if you had a data frame with 1 row for each category, assigned the category column to X-axis and Color, assigned a numeric column with Standard Deviation (SD) for Y-axis, and set the Top 10 Limit on Color. 
+
+
+* General: Error report dialog with message "dagops.members: dataframe does not exist in the catalog" appears when deleting a branch under certain rare conditions.
+* General: Error dialog with the message "Failed to validate the installed R packages" keeps appearing at starting up on Windows.
+* Installation: When a user profile metadata file was broken, Exploratory Desktop didn't start up.
+* Project: It should not allow clicking the project sync button multiple times in the middle of the project update.
+
+
 ## 6.12.1
 
 Released on 1/14/2023.
