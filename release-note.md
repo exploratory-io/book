@@ -11,7 +11,7 @@ Released on 1/14/2023.
 
 
 * Table View: Row Filter doesn't apply if you select a data frame, open the Table View, close and open the project, select the same data frame and create a new Row Filter.
-* Table View: NA showed up for the standard deviation all the time in the column metrics popup. 
+* Table View: NA showed up for the standard deviation all the time in the column metrics popup.
 
 
 * Project: On Mac, clicking the project information icon didn't work after upgrading to 6.12.0
@@ -31,18 +31,18 @@ Released on 1/12/2023.
 * Analytics: K-means: The new density plot view that displays the distribution of feature values for each cluster is added.
 * Analytics: T-test for already aggregated data is added as a new Analytics View.
 * Analytics: Topic models with pre-tokenized text data is added as a new Analytics View.
+* Analytics: Likert's sigma is now available as a pre-processing function for Analytics View. It is useful to normalize scale data in surveys, such as 5-point scales.
 
-
-* Chart: Now you can add a title to the chart legend. 
-* Chart: Now you can synchronize Y1 and Y2 scale at zero from the "Y1/Y2 Assignment" menu. 
-* Chart: Now you can treat the hms data as numeric values. 
-* Chart: Number: Now you can assign a color by conditions. 
-* Chart: Pie: Now you can edit the center text of the Ring chart. 
-* Chart: Pivot: Summarize Table: Now you can add colors to the inline bars by conditions. 
+* Chart: Now you can add a title to the chart legend.
+* Chart: Now you can synchronize Y1 and Y2 scale at zero from the "Y1/Y2 Assignment" menu.
+* Chart: Now you can treat the hms data as numeric values.
+* Chart: Number: Now you can assign a color by conditions.
+* Chart: Pie: Now you can edit the center text of the Ring chart.
+* Chart: Pivot: Summarize Table: Now you can add colors to the inline bars by conditions.
 * Chart: Pivot: Summarize Table: Now you can apply the Color Assignment to all columns by the "Apply all columns" option.
-* Chart: Pivot: Summarize Table: Now you can click the total values to show the detailed data. 
+* Chart: Pivot: Summarize Table: Now you can click the total values to show the detailed data.
 * Chart: Radar: Now you can set the legend direction from the Color, Groups & Sort Setting dialog.
-* Chart: Trend line: Now you can show the trend line metrics (R-squared and Coefficient) on the plot area for the Linear Regression trend lines. 
+* Chart: Trend line: Now you can show the trend line metrics (R-squared and Coefficient) on the plot area for the Linear Regression trend lines.
 
 
 * Dashboard: When editing a dashboard, now you can reorder rows and columns by drag and drop.
@@ -69,11 +69,11 @@ Released on 1/12/2023.
 
 
 * Summary View: Now it shows the "# of NAs" bar for each column in the Correlation mode.
-* Summary View: Now you can filter columns by conditions from the "Column" button on the toolbar. 
-* Summary View: Now you can filter the data by conditions from the "Row" button on the toolbar. 
+* Summary View: Now you can filter columns by conditions from the "Column" button on the toolbar.
+* Summary View: Now you can filter the data by conditions from the "Row" button on the toolbar.
 
 
-* Table View: Now you can filter columns by conditions from the "Column" button on the toolbar. 
+* Table View: Now you can filter columns by conditions from the "Column" button on the toolbar.
 * Table View: Now you can view the column metrics by clicking the 'i' icon in the table header.
 
 ### Bug Fixes
@@ -81,19 +81,18 @@ Released on 1/12/2023.
 * Analytics: Changing a base level for a character predictor column didn't work.
 * Analytics: K-means: Preview table kept showing original column value even if a column function was set for the column.
 * Analytics: K-Means: The number of rows excluded because of NAs is now shown on the Summary tab.
-* Analytics: Likert's sigma is now available as a pre-processing function for Analytics View. It is useful to normalize scale data in surveys, such as 5-point scales.
 * Analytics: T-Test: If you ran the T-Test Analytics twice, the Error Bar showed a different output.
 
 
-* Chart: "Equal Step" category setting did not allow setting labels. 
+* Chart: "Equal Step" category setting did not allow setting labels.
 * Chart: Analytics: Performance improvement for a data frame with many columns.
 * Chart: Area: Chart legend didn't show if you assigned a column that has only 1 unique value to Color.
 * Chart: Bar chart showed weird object on the Y-axis tick area if you set "0" for the "Axis Tick Step".
-* Chart: Categories created on X-Axis by the "Equal Step" didn't respect the decimal digit setting for the X-Axis. 
+* Chart: Categories created on X-Axis by the "Equal Step" didn't respect the decimal digit setting for the X-Axis.
 * Chart: Density Plot: The label "Density" should be translated in the hover Popup.
-* Chart: Error Bar: If you created an Error Bar, switched the chart type to Error Bar (Summarized Data) and selected the Error Bar again, the Ratio By option became "All". This option should stay as "X-Axis". 
+* Chart: Error Bar: If you created an Error Bar, switched the chart type to Error Bar (Summarized Data) and selected the Error Bar again, the Ratio By option became "All". This option should stay as "X-Axis".
 * Chart: If you selected the IQR aggregation function, the IQR output was multiplied by 1.5.
-* Chart: Map LongLat: Show Detail didn't work once in a while if you set the "Row ID" column to Group By. 
+* Chart: Map LongLat: Show Detail didn't work once in a while if you set the "Row ID" column to Group By.
 * Chart: Sort: The order when sorting is wrong when using a window calculation as a percent of the total.
 
 
@@ -148,8 +147,8 @@ Released on 1/12/2023.
 * Publish: When there was a missing Data Frame reference for a parameter, it didn't show a user-friendly error message.
 
 
-* Summary View: CSV data exported from the Summary View was corrupted if column names contained certain special characters such as commas or double quotes. 
-* Summary View: If a data frame had a column with many unique text values, the Summary View took a very long time to show. 
+* Summary View: CSV data exported from the Summary View was corrupted if column names contained certain special characters such as commas or double quotes.
+* Summary View: If a data frame had a column with many unique text values, the Summary View took a very long time to show.
 * Summary View: Performance improvement for a data frame with many columns.
 
 
@@ -169,11 +168,11 @@ Released on 11/16/2022.
 
 
 * Chart: When a stale cache of a step was removed, the Chart displayed at that time was not redrawn as expected.
-* Chart: If you selected IQR for the column aggregation function, it returned 1.5*IQR values. Values shouldn't be multiplied by 1.5. 
+* Chart: If you selected IQR for the column aggregation function, it returned 1.5*IQR values. Values shouldn't be multiplied by 1.5.
 
 
 * Dashboard: Improved the Delete Row confirmation message.
-* Dashboard: Japanese characters were garbled on Excel if you exported a chart data CSV file from a Dashboard on the desktop and opened it by double-clicking it. 
+* Dashboard: Japanese characters were garbled on Excel if you exported a chart data CSV file from a Dashboard on the desktop and opened it by double-clicking it.
 
 
 * Public: A project was not removed when canceling 'project publish' at the closing time for the first time.
