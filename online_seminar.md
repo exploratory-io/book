@@ -1,35 +1,18 @@
-# Seminar #80 - Introduction to Window Calculation
-## Date/Time: 2/8/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
+# Seminar #81 - Correlation & Causation
+## Date/Time: 2/15/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-Window Calculation is a great tool to have when you want to visualize and analyze your data in a deep and effective way. It gives you a way to calculate numbers in a 'group' sensitive way.
+In Data Analysis & Statistics, we often say 'Correlation is not Causation'. But what does that supposed to mean?
 
-For example, you want to accumulate the number of orders for each product or calculate average number of orders within a 7 days window for each country. Or, you might want to calculate your monthly sales growth rate compared to a year ago, a quater ago, etc.
+It is a bit of mystery for many, and even for those who think they know it's still hard to practice it in the real world.
 
-These are the times when you want to use Window Calculations.
+In this seminar, Kan will walk you through why 'Correlation is not Causation', and how that becomes a problem in real life by using the mask debate over the last three years of COVID-19 pandemic as an example. He will also discuss how we can run experiments like RCT or A/B Test to distinguish between Correlation and Causation with statistical analysis. 
 
-In this seminar, Kan will introduce the basic of Window Calculation along with some of the useful calculation types. He's also going to demonstrate how you can create such calculations directly inside Chart and also as Data Wrangling steps.  
-
-Agenda:
-
-* What is Window Calculation
-* Cumulative Sum (Running Total)
-* Moving Average
-* % Difference against Period Ago
-* Window Calculation as Data Wrangling Step
-
-----
-# Seminar #81 - Causation and Correlation
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-Agenda:
 
 ----
 # Seminar #82 - Introduction to Linear Regression
-## Date/Time: TBD
+## Date/Time: 2/22/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
