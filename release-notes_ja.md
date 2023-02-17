@@ -2,6 +2,84 @@
 
 # Release Note
 
+## 6.12.3
+
+2023年2月16日リリース。
+
+### 機能強化
+
+* Data Source: PostgreSQL/Redshift: Supported SSL mode.
+
+
+* Chart: Bar: Improved the 'Show Value on Chart' by avodiing the text overlapping each other with 'Top', 'Middle', and 'Bottom' options.
+* Chart: Bar: Now you can set the Angle for the values shown on the Chart.
+* Chart: Now the "Quick Window Calculation" menu is available for Pivot and Summarize Table.
+* Chart: Now you can change the font style of the legend title text.
+* Chart: Pivot: Summarize Table: Table: Now you can control the default text for NA.
+
+
+* Data Wrangling: Column Header Menu: We have changed 'Convert to Numeric' to use 'as.numeric' function for Factor columns so that the Factor levels will become the numerical values as result.
+
+
+* Analytics: ANOVA summary table is re-formatted with Between-Group row and Within-Group row.
+
+### 修正された問題
+
+* Data Source: Clicking the Refresh Excel Sheets icon did not work when multiple Excel files were selected.
+* Data Source: CSV: File List: Do not show hidden folders such as .DS_Store on the file list.
+* Data Source: CSV: When the "Auto Separator" detection failed, now it highlights the Separator input field with red color.
+* Data Source: Excel: Multi Sheets: Cannot type in the Search Sheet Input Field.
+* Data Source: GoogleAnalytics: When an account has both GA4 and UA profiles, it failed with the error 'http_403 User does not have sufficient permissions for this profile'.
+* Data Source: Google Drive: Excel: Import dialog did not show a list of sheets and could not import the file.
+* Data Source: If the Excel file was located in a folder with a name that contained multi-byte characters, an error occurred indicating that the file did not exist.
+* Data Source: SQL Import Dialog: When there were too many tables and views in the schema panel, Exploratory crashed.
+* Data Source: When some of the columns are not selected in the Excel Import Dialog, the column data type setting did not take in effect.
+
+
+
+
+* データラングリング: ブランチのデータフレーム名を変更すると、ブランチを派生したステップに変更前のブランチのデータフレーム名が表示されてしまう。
+* データラングリング: カテゴリーを作成: 範囲の端の扱いのデフォルトの「下端の値を含む」に変更しました。
+* データラングリング: ダイアログのプレビューにテーブルの列数が表示されるようになります。
+* データラングリング: ロング型からワイド型へ: キー列と値の列が選択されている場合、ダイアログを開くとデフォルトでプレビューが表示されるようになります。
+* データラングリング: 計算を作成: ステップに「新規作成」のボタンが表示されない。
+* データラングリング: 条件を設定して置換: リセットボタンを押しても元の状態に復元されない。
+* データラングリング: 列を選択: 列の選択、または削除の時に列の順序が保持されるようになります。
+* データラングリング: 「列の選択」と「列の並び替え」のダイアログに「リセット」ボタンがサポートされます。
+* データラングリング: ブランチを他のステップにドラッグ＆ドロップで移動できることをより簡単に理解できるように、ブランチのルートアイコンを更新しました。
+
+
+
+
+* サマリビュー: 行フィルター: 列のデータタイプが文字列（Character）型にして「等しい」の条件を追加した際に、値のドロップダウンをクリックすると値のリストが表示されない、またはダイアログが閉じてしまう。
+* サマリビュー行フィルター: 2つ目の条件を作成した場合、最初の条件で選択された値が残ってしまう。
+
+
+
+* チャート: 密度曲線: 値がすべて欠損値の列を割り当てた場合、レンダリングに失敗してエラーが表示される。
+* チャート: ピボットテーブル: 集計テーブル: Sum_if関数（または同様の関数）を利用して条件列を別の列に変更すると、チャートのコントロールエリアが空白になる。
+* チャート: ピボットテーブル: 集計テーブル: 時系列での表計算は、日付列が行（グループ化）の最も細かいレベルで設定されている場合にのみ表示されるようになります。
+* チャート: 「Y1軸とY2軸を0で同期する」のオプションはデフォルトでチェックされるようになります。
+* チャート: 範囲の端の扱いのデフォルトの「下端の値を含む」に変更しました。
+* チャート: 凡例の位置を右から上に変更すると、Y2軸の目盛りが大きくなってしまう。
+
+
+
+
+* アナリティクス: t検定: ウィルコクソン検定: 説明変数にロジカル型の列を割り当てて実行した時のベースレベルがTRUEとなっていました。この動作を変更し、FALSEをベースレベルにすることで、より直感的に理解がしやすくなります。
+
+
+
+
+* ノート / ダッシュボード: チャートの選択ダイアログ: データフレームの表示順が正しく並べられていない。
+
+
+
+
+* プロジェクト: プロジェクトを複製した時に、複製されたプロジェクトがリストの一番上に表示されるようになります。
+
+
+
 ## 6.12.2
 
 2023年1月24日リリース。
@@ -6602,7 +6680,7 @@ Released on 5/9/2016
 
    ```
    str_count_all("I ate banana, apple, and peach yesterday, and banana, peach today.", patterns=c("apple", "banana"), remove.zero=TRUE)   
-
+  
    > Returns a list column of data frames with 'apple' and 'banana' columns.
    ```
 
