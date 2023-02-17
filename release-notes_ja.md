@@ -25,14 +25,23 @@
 
 ### 修正された問題
 
+* データソース: 
 * Data Source: Clicking the Refresh Excel Sheets icon did not work when multiple Excel files were selected.
+* データソース: 
 * Data Source: CSV: File List: Do not show hidden folders such as .DS_Store on the file list.
+* データソース: 
 * Data Source: CSV: When the "Auto Separator" detection failed, now it highlights the Separator input field with red color.
+* データソース: 
 * Data Source: Excel: Multi Sheets: Cannot type in the Search Sheet Input Field.
+* データソース: 
 * Data Source: GoogleAnalytics: When an account has both GA4 and UA profiles, it failed with the error 'http_403 User does not have sufficient permissions for this profile'.
+* データソース: 
 * Data Source: Google Drive: Excel: Import dialog did not show a list of sheets and could not import the file.
+* データソース: 
 * Data Source: If the Excel file was located in a folder with a name that contained multi-byte characters, an error occurred indicating that the file did not exist.
+* データソース: 
 * Data Source: SQL Import Dialog: When there were too many tables and views in the schema panel, Exploratory crashed.
+* データソース: 
 * Data Source: When some of the columns are not selected in the Excel Import Dialog, the column data type setting did not take in effect.
 
 
