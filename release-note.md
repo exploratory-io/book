@@ -17,7 +17,7 @@ Released on 2/16/2023.
 * Chart: Pivot: Summarize Table: Table: Now you can control the default text for NA.
 
 
-* Data Wrangling: When converting Factor column to Numeric column from the column menu, the column data became NA.
+* Data Wrangling: Column Header Menu: We have changed 'Convert to Numeric' to use 'as.numeric' function for Factor columns so that the Factor levels will become the numerical values as result.
 
 
 * Analytics: ANOVA summary table is re-formatted with Between-Group row and Within-Group row.
