@@ -1,5 +1,80 @@
 # Release Note
 
+
+## 6.12.3
+
+Released on 2/16/2023.
+
+### Enhancements
+
+* Data Source: PostgreSQL/Redshift: Supported  SSL mode.
+
+
+* Chart: Bar: Now you can set the angle on the value text displayed on the plot area.
+* Chart: Now the "Quick Window Calculation" menu is available on Pivot and Summarize Table.
+* Chart: Now you can change the font style of the legend title text.
+* Chart: Pivot: Summarize Table: Table: Now you can control the default text for NA values. 
+
+
+* Analytics: ANOVA summary table is formatted with Between-Group row and Within-Group row.
+
+### Bug Fixes
+
+* Data Source: Clicking the Refresh Excel Sheets icon did not work when multiple Excel files were selected.
+* Data Source: CSV: File List: Do not show hidden folders such as .DS_Store on the file list.
+* Data Source: CSV: When the "Auto Separator" detection failed, now it highlights the Separator input field with red color.
+* Data Source: Excel: Multi Sheets: Cannot type in the Search Sheet Input Field.
+* Data Source: Excel: Removed "Memory Efficient Mode" parameter.
+* Data Source: Excel: When clicking the Refresh Excel Sheet icon, it should show a spin icon while executing.
+* Data Source: GA: When an account has both GA4 and UA profiles, it failed with the error 'http_403 User does not have sufficient permissions for this profile'.
+* Data Source: Google Drive: Excel: Import dialog did not show a list of sheets and could not import the file.
+* Data Source: If the Excel file was located in a folder with a name that contained multi-byte characters, an error occurred indicating that the file did not exist.
+* Data Source: Postgres/Redshift: Publish: It should show a scheduling warning message if a custom SSL CA certificate file is used in the database connection. 
+* Data Source: SQL Import Dialog: When there were many tables and views under schema, Exploratory Desktop crashed.
+* Data Source: When unchecked the column selection on the Excel Import Dialog, the columns' data type update did not work.
+
+
+* Data Wrangling: After updating a branch name, a step that had the branch still showed the old branch name.
+* Data Wrangling: Create Category: Made the "Include Lower Values" as the default for the "Edge Value Handling" option.
+* Data Wrangling: Do not show the number of tokens in a step if the step has only one token.
+* Data Wrangling: Join: When opening the Join Dailog to create a new Join Step, the previously selected Join target column was shown as a selected column with invalid status.
+* Data Wrangling: Long to Wide: Show the number of columns in the preview table of the dialog.
+* Data Wrangling: Long to Wide: When key and value columns are selected, show the preview data by default when opening the dialog.
+* Data Wrangling: Mutate: Brought back the "Create New" option and "Duplicate" Icon on the token.
+* Data Wrangling: Mutate: When there was a mismatched bracket, it should show an user-friendly message.
+* Data Wrangling: Reorder Columns: When dragging a column with a long column name, the dragged item style was misaligned.
+* Data Wrangling: Replace Values with Condition: The Reset button did not restore the original condition.
+* Data Wrangling: Select Columns: Now it keeps the column order when selecting or deleting columns.
+* Data Wrangling: Show a user-friendly message when an already deleted data frame was selected.
+* Data Wrangling: Support the "Reset" button for all the data wrangling dialogs.
+* Data Wrangling: Updated the icon for the branch root so that it's much easier to understand that you can drag & drop the branch root to other steps.
+* Data Wrangling: When converting Factor column to Numeric column from the column menu, the column data became NA.
+
+* Table View: The unnecessary space between the table header and body should be removed.
+* Row Filter: If you added a new "Equal To" condition, chose a character column, and clicked the value dropdown, the list of values didn't show up once in a while. 
+* Row Filter: If you added a new "Equal To" condition, chose a character column, and clicked the value dropdown, the whole dialog suddenly closed once in a while. 
+* Row Filter: If you created the second condition. the value selected in the first condition still remained.
+
+
+* Chart: Bar: Value text displayed on the plot area overlapped each other.
+* Chart: Density plot failed to render and showed an error if you assigned a column with all NA values.
+* Chart: Pivot Table: Summarize Table: The chart control area got blank if you set a condition for XXX_IF function and changed the column in the condition to a different column. 
+* Chart: Pivot: Summarize Table: Time-series window calculations should show up only if a Date column is set at the most detail level in the Row Header.
+* Chart: The  "Sync Y1 & Y2 Scale at Zero" checkbox should be checked by default.
+* Chart: The "Include Lower Values" should be the default option for the "Edge Value Handling".
+* Chart: Y2 Axis scale got corrupted if you changed the legend position from the right to the top. 
+
+
+* Analytics: Font sizes are inconsistent in the main dropdown and submenu of the Analytics type dropdown. 
+* Analytics: T-Test, Wilcoxon Test: When groups were separated by TRUE and FALSE, the group for TRUE was treated as the base. We have changed this behavior so that FALSE is the base, which is more intuitive.
+
+
+* Note/Dashboard: Chart Selection Dialog: The data frames were not sorted on the data frame list.
+
+
+* Project: When duplicating a project, the duplicated project should come to the top.
+
+
 ## 6.12.2
 
 Released on 1/24/2023.

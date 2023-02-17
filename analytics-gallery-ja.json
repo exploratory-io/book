@@ -9,7 +9,7 @@
        {
           "title": "相関",
           "desc": "相関について紹介しています。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/ACO8snr6qm"
+          "url": "https://exploratory.io/note/exploratory/ZkX0KrG2"
        },
        {
          "title": "距離",
@@ -19,7 +19,7 @@
        {
         "title": "K-Meansクラスタリング",
         "desc": "K-Meansクラスタリングについて紹介しています。",
-        "url": "https://exploratory.io/note/GMq1Qom5tS/K-Means-ViC2XCL2pW"
+        "url": "https://exploratory.io/note/exploratory/K-Means-EVl1hGE7"
        },
        {
         "title": "主成分分析（PCA）",
@@ -34,12 +34,12 @@
        {
          "title": "線形回帰",
          "desc": "線形回帰について紹介しています。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/llv3NNC6Ij"
+         "url": "https://exploratory.io/note/exploratory/Yla0xCR7"
        },
        {
          "title": "ロジスティック回帰",
          "desc": "ロジスティック回帰について紹介しています。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/ZSy0JQr3eO"
+         "url": "https://exploratory.io/note/exploratory/aBh1BXi2"
        },
        {
          "title": "決定木",
@@ -49,17 +49,17 @@
        {
         "title": "ランダムフォレストの紹介",
         "desc": "ランダムフォレストについて紹介しています。",
-        "url": "https://exploratory.io/note/GMq1Qom5tS/Awv4BdC2vr"
+        "url": "https://exploratory.io/note/exploratory/Vfg2fEA8"
        },
        {
          "title": "XGBoost",
          "desc": "XGBoostについて紹介しています。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/XGBoost-OfE1zYp6Cg"
+         "url": "https://exploratory.io/note/exploratory/XGBoost-Gbn5oUn5"
       },
       {
         "title": "生存分析 - 生存曲線",
         "desc": "生存曲線について紹介しています。",
-        "url": "https://exploratory.io/note/BWz1Bar4JF/FAQ-oNW6Fzd2Vo"
+        "url": "https://exploratory.io/note/exploratory/ORW0HUF3"
       },
       {
         "title": "生存分析 - コックス回帰",
@@ -74,7 +74,7 @@
       {
         "title": "時系列分析 - 時系列予測（Prophet）",
         "desc": "時系列予測（Prophet）について紹介しています。",
-        "url": "https://exploratory.io/note/GMq1Qom5tS/Prophet-LtL1AKy5yW"
+        "url": "https://exploratory.io/note/exploratory/Prophet-rZS5nfn3"
       },
       {
         "title": "時系列分析 - 時系列クラスタリング",
@@ -119,7 +119,7 @@
        {
          "title": "A/B テスト - ベイジアン",
          "desc": "ベイジアンA/Bテストについて紹介しています。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Prophet-LtL1AKy5yW"
+         "url": "https://exploratory.io/note/exploratory/A-B-jIR1NMU2"
        }
       ]
     }
