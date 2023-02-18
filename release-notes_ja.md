@@ -8,43 +8,33 @@
 
 ### 機能強化
 
-* Data Source: PostgreSQL/Redshift: Supported SSL mode.
+* データソース: PostgreSQL/Redshift: SSLモードをサポートしました。
 
 
-* Chart: Bar: Improved the 'Show Value on Chart' by avodiing the text overlapping each other with 'Top', 'Middle', and 'Bottom' options.
-* Chart: Bar: Now you can set the Angle for the values shown on the Chart.
-* Chart: Now the "Quick Window Calculation" menu is available for Pivot and Summarize Table.
-* Chart: Now you can change the font style of the legend title text.
-* Chart: Pivot: Summarize Table: Table: Now you can control the default text for NA.
+* チャート: バー: 「値をプロット上に表示」を設定したときに文字が重ならないように改善しました。
+* チャート: バー: チャートに値を表示したときの値の表示角度を設定できるようになりました。
+* チャート: ピボットテーブル: 集計テーブル: テーブル: NAのときのデフォルトのテキストを変更できるようになりました。
+* チャート: ピボットテーブル: 集計テーブル: 「クイック表計算」メニューを追加しました。
+* チャート: 凡例のタイトルのテキストのフォントスタイルを変更できるようになりました。
 
 
-* Data Wrangling: Column Header Menu: We have changed 'Convert to Numeric' to use 'as.numeric' function for Factor columns so that the Factor levels will become the numerical values as result.
+* データラングリング: 列ヘッダーメニュー:  Factor型の列をNumeric型の列に変換するときの関数を「as.numeric」に変更し、ファクターのレベルが数値に変換されるようになりました。
 
 
-* Analytics: ANOVA summary table is re-formatted with Between-Group row and Within-Group row.
+* アナリティクス: 分散分析（ANOVA）のサマリータブの表示方法を改善し、「グループ間」と「グループ内」の行が表示されるようになりました。
+
 
 ### 修正された問題
 
-* データソース: 
-* Data Source: Clicking the Refresh Excel Sheets icon did not work when multiple Excel files were selected.
-* データソース: 
-* Data Source: CSV: File List: Do not show hidden folders such as .DS_Store on the file list.
-* データソース: 
-* Data Source: CSV: When the "Auto Separator" detection failed, now it highlights the Separator input field with red color.
-* データソース: 
-* Data Source: Excel: Multi Sheets: Cannot type in the Search Sheet Input Field.
-* データソース: 
-* Data Source: GoogleAnalytics: When an account has both GA4 and UA profiles, it failed with the error 'http_403 User does not have sufficient permissions for this profile'.
-* データソース: 
-* Data Source: Google Drive: Excel: Import dialog did not show a list of sheets and could not import the file.
-* データソース: 
-* Data Source: If the Excel file was located in a folder with a name that contained multi-byte characters, an error occurred indicating that the file did not exist.
-* データソース: 
-* Data Source: SQL Import Dialog: When there were too many tables and views in the schema panel, Exploratory crashed.
-* データソース: 
-* Data Source: When some of the columns are not selected in the Excel Import Dialog, the column data type setting did not take in effect.
-
-
+* データソース: CSV: ファイルリスト: .DS_Store のような隠しフォルダが表示されなくなりました。
+* データソース: CSV: データの区切り文字の自動検出に失敗したときに、「データの区切り文字」の設定フィールドを赤色で強調するようにしました。
+* データソース: Excel: 複数のExcelファイルを選択した状態でシート名の更新アイコンをクリックしても、正常に動作しないことがありました。
+* データソース: Excel: 複数シート: シートの検索フィールドに値を入力できない。
+* データソース: Excel: インポートダイアログで列の選択を外したときに、列のデータ型の設定が正しく引き継がれない。
+* データソース: Google Analytics: 1つのアカウントにGA4とUAの両方のプロファイルがある場合、"http_403 User does not have sufficient permissions for this profile"というエラーが発生し、データをインポートできない。
+* データソース: Google ドライブ: Excel: インポートダイアログにシートのリストが表示されず、ファイルをインポートできない。
+* データソース: マルチバイトの文字を含むフォルダにExcelのファイルがあるときに、そのフォルダにファイルが存在しないことを表すエラーが表示される。
+* データソース: SQLのインポートダイアログ: スキーマのパネルに表示されるテーブルとビューが多すぎると、Exploratory がクラッシュする。
 
 
 * データラングリング: ブランチのデータフレーム名を変更すると、ブランチを派生したステップに変更前のブランチのデータフレーム名が表示されてしまう。
@@ -58,11 +48,8 @@
 * データラングリング: ブランチを他のステップにドラッグ＆ドロップで移動できることをより簡単に理解できるように、ブランチのルートアイコンを更新しました。
 
 
-
-
 * サマリビュー: 行フィルター: 列のデータタイプが文字列（Character）型にして「等しい」の条件を追加した際に、値のドロップダウンをクリックすると値のリストが表示されない、またはダイアログが閉じてしまう。
 * サマリビュー行フィルター: 2つ目の条件を作成した場合、最初の条件で選択された値が残ってしまう。
-
 
 
 * チャート: 密度曲線: 値がすべて欠損値の列を割り当てた場合、レンダリングに失敗してエラーが表示される。
@@ -73,21 +60,13 @@
 * チャート: 凡例の位置を右から上に変更すると、Y2軸の目盛りが大きくなってしまう。
 
 
-
-
 * アナリティクス: t検定: ウィルコクソン検定: 説明変数にロジカル型の列を割り当てて実行した時のベースレベルがTRUEとなっていました。この動作を変更し、FALSEをベースレベルにすることで、より直感的に理解がしやすくなります。
-
-
 
 
 * ノート / ダッシュボード: チャートの選択ダイアログ: データフレームの表示順が正しく並べられていない。
 
 
-
-
 * プロジェクト: プロジェクトを複製した時に、複製されたプロジェクトがリストの一番上に表示されるようになります。
-
-
 
 ## 6.12.2
 
