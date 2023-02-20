@@ -1,6 +1,25 @@
 # Release Note
 
 
+## 6.12.4
+
+Released on 2/20/2023.
+
+### Enhancements
+
+
+* Chart: Now you can turn off the font size auto adjustment for values on the plot area from the chart property dialog.
+
+
+### Bug Fixes
+
+* Data Wrangling: Create Calculation: When creating a new calculation from a column menu, it should be created as a new step instead of a new token in an existing step.
+* Note: Improved the error message displayed when a note failed to open due to a broken or deleted associated metadata file.
+* Export: Exporting a project from a repository on a network drive fails with a "Command failed" error from xcopy if the project contains a file with a long path name or file name.
+
+
+
+
 ## 6.12.3
 
 Released on 2/16/2023.
