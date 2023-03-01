@@ -13,6 +13,7 @@ Released on 2/28/2023
 
 The URL Sharing using a special URL has been discontinued. You can still use the special URLs that you currently have. The special URL will be disabled and removed if you disable the URL Sharing from the Share dialog on the individual insight page. 
 
+
 The new URL Sharing uses the main insight URL. Once you turn on URL Sharing, you can just copy the URL from the URL bar and send it to someone. Then she/he can access the insight without logging in. 
 
 ### Enhancements
