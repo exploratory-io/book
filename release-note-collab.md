@@ -11,26 +11,26 @@ Released on 2/28/2023
 
 ### Enhancements
 
-Admin: Now you can add a description for each user.
-Insight: Now you can use the main insight URL for the URL Share.
-Insight: Project: Now you can change the visibility (private or public) of the insight/project from the Share dialog on the server side.
-Insight: Project: Now you can choose a particular team for the insight/project search condition.
-Insight: Project: Now you can delete your insight/project from the individual insight page.
-Insight: Project: Now you can delete your insight/project from the Stats page.
-Insight: Project: Now you can see the original author, creation date, last updated by, and last updated date of the team-owned insight/
-Parameter: Now any logged-in user can use the parameter by default if the insight is public.
-Parameter: Now you can use the parameter on an insight opened by the URL Share.
+* Admin: Now you can add a description for each user.
+* Insight: Now you can use the main insight URL for the URL Share.
+* Insight: Project: Now you can change the visibility (private or public) of the insight/project from the Share dialog on the server side.
+* Insight: Project: Now you can choose a particular team for the insight/project search condition.
+* Insight: Project: Now you can delete your insight/project from the individual insight page.
+* Insight: Project: Now you can delete your insight/project from the Stats page.
+* Insight: Project: Now you can see the original author, creation date, last updated by, and last updated date of the team-owned insight/project from the information dialog.
+* Parameter: Now any logged-in user can use the parameter by default if the insight is public.
+* Parameter: Now you can use the parameter on an insight opened by the URL Share.
 
 ## Bug Fixes
 
-Admin:  Users table now displays Last Page View Date and Last Desktop Start Date, and it also supports table search by any column, pagination, and column sorting by clicking on the column name.
-Insight: Not only the original author but also the other team members should be able to update the URL share setting if the published insight is owned by the team.
+* Admin:  Users table now displays the Last Page View Date and Last Desktop Start Date, and it also supports table search by any column, pagination, and column sorting by clicking on the column name.
+* Insight: Not only the original author but also the other team members should be able to update the URL share setting if the published insight is owned by the team.
 project from the information dialog.
-Parameter: If you had a chart from Prophet Analytics in a dashboard and updated the parameter that returned no row, it showed the "Error in validate_empty_data(df) : Input data frame is empty" error.
-Parameter: It didn't open the LOV when the parameter pane was shown on top of the page.
-Parameter: Logical LOV: Only the selected value was displayed and the other option was not included in the list.
-Parameter: The parameter list was not updated in a dashboard if there was a parent-child relationship between the parameters and the parent parameter was updated.
-Stats: URLs for team-owned insights were incorrect on the Stats page.
+* Parameter: If you had a chart from Prophet Analytics in a dashboard and updated the parameter that returned no row, it showed the "Error in validate_empty_data(df) : Input data frame is empty" error.
+* Parameter: It didn't open the LOV when the parameter pane was shown on top of the page.
+* Parameter: Logical LOV: Only the selected value was displayed and the other option was not included in the list.
+* Parameter: The parameter list was not updated in a dashboard if there was a parent-child relationship between the parameters and the parent parameter was updated.
+* Stats: URLs for team-owned insights were incorrect on the Stats page.
 
 ## 6.11.2.1
 
