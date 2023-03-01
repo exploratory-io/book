@@ -4,10 +4,16 @@
 
 Released on 2/28/2023
 
-## Download
+### Download
 
 * [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.12.3.6.tar.gz)
 * [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.12.3.6.tar.gz)
+
+### Breaking Changes
+
+The URL Sharing using a special URL has been discontinued. You can still use the special URLs that you currently have. The special URL will be disabled and removed if you disable the URL Sharing from the Share dialog on the individual insight page. 
+
+The new URL Sharing uses the main insight URL. Once you turn on URL Sharing, you can just copy the URL from the URL bar and send it to someone. Then she/he can access the insight without logging in. 
 
 ### Enhancements
 
@@ -36,10 +42,12 @@ project from the information dialog.
 
 Released on 10/19/2022.
 
+<!--
 ### Download
 
 * [For New Install](https://exploratory-download.s3.us-west-2.amazonaws.com/collab-server/exploratory-collab-6.11.2.1.tar.gz)
 * [For Upgrade](https://exploratory-download.s3.us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.11.2.1.tar.gz)
+-->
 
 ### Bug Fixes
 
