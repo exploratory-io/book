@@ -36,9 +36,12 @@ Following layout properties are available for those type of charts.
   * Show Values on Plot
     * (None)
     * Above
-    * Middle - Available only on Bar, Error Bar and Error Bar (Summarized Data) chart types.
+    * Middle 
     * Below
+  * Text Angle for Values - You can set an angle to the value text on plot. 
   * Show Values if Greater than This Value - You can show values on plot only for the values that are greater than this setting.
+  * Font Size
+  * Font Size Auto Adjust - If it is checked, the value text on the plot automatically adjusts the size to avoid overlapping each other. 
   * Add Space Between Bars (Bar chart only) - You can add a space between grouped bars.
 
 * Legend 
@@ -137,6 +140,7 @@ The following layout properties are available for Pivot Table and Summarize Tabl
 
 * General
   * Font Size
+  * Display Text for NA - You can customize the text for NA values. Default is blank.
   * Show All Categorical Values - If you assign a factor column to Row, Column or Group By, show all the categories (factor levels) even there is no data for categories.
   * Show Popup on Hover - Show a Popup on hovering a value text.
   * Limit # of Rows to Show - Enable or disable limiting the number of rows to show. Default is "Yes".
