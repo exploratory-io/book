@@ -132,6 +132,13 @@ The "Rank" calculates the rank of the values in the group.
 * Remove NA - Whether you want to remove NA values before applying a Window Calculation or not. 
 
 
+
+## Quick Window Calculation
+
+You can reach the popular Window Calculations quickly from the Quick Window Calculation menu. It is just a shortcut to the Window Calculation and you can customize it like a regular Window Calculation. 
+
+![](images/quick-wincalc.png)
+
 ## Links
 
 You can check out the following articles for more information. 
