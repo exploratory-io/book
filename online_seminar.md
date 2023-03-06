@@ -9,7 +9,8 @@ One of the hypothesis methods called t-test helps us to answer these questions.
 
 In this seminar, Kan will introduce what t-test is and how you can use it to test the difference between two groups.
 
-Hope you can join!
+This is a part of the Hypothesis Testing series. If you haven't yet we'd strongly recommend you watch '[Introduction to Hypothesis Testing](https://exploratory.io/note/kanaugust/Seminar-83-Introduction-to-Hypothesis-Testing-UII5IOW1bn)' first.
+
 
 Agenda:
 
