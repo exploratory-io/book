@@ -67,7 +67,7 @@ Following options are available.
   * All: Create categories against the whole data set. If you use Repeat By, all charts will have the same data range. 
   * Repeat By: Create categories for each chart if you use Repeat By. Each chart will have a different data range. 
 * Set 0 as Center: It uses 0 as a center value when it creates categories.
-* Edge Value Handling: Which end to include in each range. The following options are available.
+* Edge Value Handling: Which end to include in each range. The following options are available. Default is "Include Lower Range".
   * Include Upper Edge
   * Include Lower Edge
 * Upper Range: You can set the upper value range for creating categories. If you don't specify, the max value will be used.
@@ -94,7 +94,7 @@ Following options are available.
 * Target Group: Target data group to create categories. 
   * All: Create categories against the whole data set. If you use Repeat By, all charts will have the same data range. 
   * Repeat By: Create categories for each chart if you use Repeat By. Each chart will have a different data range. 
-* Edge Value Handling: Which end to include in each range. The following options are available.
+* Edge Value Handling: Which end to include in each range. The following options are available. Default is "Include Lower Range".
   * Include Upper Edge
   * Include Lower Edge
 
@@ -111,7 +111,7 @@ It divides numeric values into groups by the specified step (range). For example
 Following options are available. 
 
 * Step: Range for each group.
-* Edge Value Handling: Which end to include in each range. The following options are available.
+* Edge Value Handling: Which end to include in each range. The following options are available. Default is "Include Lower Range".
   * Include Upper Edge
   * Include Lower Edge
 * Upper Range: You can set the upper value range for creating categories. If you don't specify, the max value will be used.
@@ -128,7 +128,7 @@ It divides numeric values into groups by the Cutting Point values that user-spec
 Following options are available.
 
 * Cutting Points: Boundary values of categories separated by commas. For example, if you enter "10, 20", it will create categories by splitting data at 10 and 20. 
-* Edge Value Handling: Which end to include in each range. The following options are available.
+* Edge Value Handling: Which end to include in each range. The following options are available. Default is "Include Lower Range".
   * Include Upper Edge
   * Include Lower Edge
 * Label Text: Names for categories separated by commas.  

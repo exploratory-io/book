@@ -1,13 +1,54 @@
 # Release Note
 
+## 6.12.3.6
+
+Released on 2/28/2023
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.12.3.6.tar.gz)
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.12.3.6.tar.gz)
+
+### Breaking Change
+
+The URL Sharing using a special URL has been discontinued. You can still use the special URLs that you currently have. The special URL will be disabled and removed if you disable the URL Sharing from the Share dialog on the individual insight page. 
+
+
+The new URL Sharing uses the main insight URL. Once you turn on URL Sharing, you can just copy the URL from the URL bar and send it to someone. Then she/he can access the insight without logging in. 
+
+### Enhancements
+
+* Admin: Now you can add a description for each user.
+* Insight: Now you can use the main insight URL for the URL Share.
+* Insight: Project: Now you can change the visibility (private or public) of the insight/project from the Share dialog on the server side.
+* Insight: Project: Now you can choose a particular team for the insight/project search condition.
+* Insight: Project: Now you can delete your insight/project from the individual insight page.
+* Insight: Project: Now you can delete your insight/project from the Stats page.
+* Insight: Project: Now you can see the original author, creation date, last updated by, and last updated date of the team-owned insight/project from the information dialog.
+* Parameter: Now any logged-in user can use the parameter by default if the insight is public.
+* Parameter: Now you can use the parameter on an insight opened by the URL Share.
+
+## Bug Fixes
+
+* Admin:  Users table now displays the Last Page View Date and Last Desktop Start Date, and it also supports table search by any column, pagination, and column sorting by clicking on the column name.
+* Insight: Not only the original author but also the other team members should be able to update the URL share setting if the published insight is owned by the team.
+project from the information dialog.
+* Parameter: If you had a chart from Prophet Analytics in a dashboard and updated the parameter that returned no row, it showed the "Error in validate_empty_data(df) : Input data frame is empty" error.
+* Parameter: It didn't open the LOV when the parameter pane was shown on top of the page.
+* Parameter: Logical LOV: Only the selected value was displayed and the other option was not included in the list.
+* Parameter: The parameter list was not updated in a dashboard if there was a parent-child relationship between the parameters and the parent parameter was updated.
+* Stats: URLs for team-owned insights were incorrect on the Stats page.
+
 ## 6.11.2.1
 
 Released on 10/19/2022.
 
+<!--
 ### Download
 
 * [For New Install](https://exploratory-download.s3.us-west-2.amazonaws.com/collab-server/exploratory-collab-6.11.2.1.tar.gz)
 * [For Upgrade](https://exploratory-download.s3.us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.11.2.1.tar.gz)
+-->
 
 ### Bug Fixes
 
