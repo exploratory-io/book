@@ -1,26 +1,22 @@
-# Seminar #83 - Introduction to Hypothesis Testing
-## Date/Time: 3/1/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
+# Seminar #84 - Hypothesis Testing with t-Test
+## Date/Time: 3/8/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-Hypothesis Testing is the key component of the scientific method. It helps you to decide whether you proceed with your hypothesis or discard it in order to make better decisions.
+When you have two groups and see a difference in the means between them, is that big enough for us to take actions or spend more time to investigate about the difference? Or, maybe the difference is so marginal that we'd better move on?
 
-In this seminar, Kan will introduce the basics of the Hypothesis Testing by discussing the idea behind it and how you can apply it for your decision making process.
+One of the hypothesis methods called t-test helps us to answer these questions.
 
-Agenda:
+In this seminar, Kan will introduce what t-test is and how you can use it to test the difference between two groups.
 
-- Introduction to Hypothesis Testing
-- Iterative Learning Process with Deduction and Induction
-- Null Hypothesis & Alternative Hypothesis
-- Types of Hypothesis Testing
-
-----
-# Seminar #84 - Hypothesis Testing with T Test
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+Hope you can join!
 
 Agenda:
+
+- Introduction to t-test
+- How to Interpret
+- P-Value to Accept or Reject Null Hypothesis
+- Confidence Interval of Difference to Draw Conclusion
 
 ----
 # Seminar #85 - Hypothesis Testing with ANOVA Test
