@@ -10,11 +10,10 @@ Released on 3/7/2023.
 
 ### Bug Fixes
 
-* Data Wrangling: After moving steps by drag and drop, there was a case the existing steps disappeared.
 * Data Wrangling: When opening a Create Calculation dialog with the 'Extract Week Day' column menu, the default new column name was set as 'calculation_1' instead of the expected 'original column name_wday.
 * Data Wrangling: A step token was overridden with another step token when you click quickly between steps.
 * Chart: It showed unexpected "." between the 6th and 7th decimal digits on numbers on the X-Axis tick label if you assigned a numeric column on X-Axis with a bucketing option. 
-* General: Error from creating a project caused by git-secret.
+* General: An error occurred during project creation if you used git-secrets by default on your machine.
 
 
 ## 6.12.4
