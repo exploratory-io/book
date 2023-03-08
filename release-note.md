@@ -6,14 +6,18 @@ Released on 3/7/2023.
 
 ### Enhancements
 
-* Data Source: Oracle: Now you can set the Encoding for Oracle Database (NLS_LANG) on the System Configuration Dialog.
+* Data Source: Oracle: Now you can set the Encoding for Oracle Database (NLS_LANG) on the System Configuration Dialog to support multibyte characters.
 
 ### Bug Fixes
 
+* Data Wrangling: A step token was overridden with another step token when you click between steps too quickly.
 * Data Wrangling: When opening a Create Calculation dialog with the 'Extract Week Day' column menu, the default new column name was set as 'calculation_1' instead of the expected 'original column name_wday.
-* Data Wrangling: A step token was overridden with another step token when you click quickly between steps.
-* Chart: It showed unexpected "." between the 6th and 7th decimal digits on numbers on the X-Axis tick label if you assigned a numeric column on X-Axis with a bucketing option. 
-* General: An error occurred during project creation if you used git-secrets by default on your machine.
+
+
+* Chart: It showed unexpected "." between the 6th and 7th decimal digits on numbers on the X-Axis tick label if you assigned a numeric column on X-Axis with a bucketing option.
+
+
+* General: Creating a new project throws an error if you have installed git-secrets but not installed properly on your PC.
 
 
 ## 6.12.4
