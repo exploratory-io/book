@@ -10,6 +10,7 @@ Released on 3/7/2023.
 
 ### Bug Fixes
 
+* Data Wrangling: When renaming a data frame and changing the Column Filter setting in Summary view, newly added data wrangling steps were sometimes deleted.
 * Data Wrangling: A step token was overridden with another step token when you click between steps too quickly.
 * Data Wrangling: When opening a Create Calculation dialog with the 'Extract Week Day' column menu, the default new column name was set as 'calculation_1' instead of the expected 'original column name_wday.
 
