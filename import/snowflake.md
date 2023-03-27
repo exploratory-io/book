@@ -52,7 +52,7 @@ DriverODBCVer=03.52
 SQLLevel=1
 ```
 
-Open the snow flake config file located /opt/snowflake/snowflakeodbc/lib/universal/simba.snowflake.ini
+Open the Snowflake ODBC config file located at `/opt/snowflake/snowflakeodbc/lib/universal/simba.snowflake.ini`
 
 Make sure that unixODBC section points to the `libodbcinst.dylib` file which is installed with homebrew.
 Please note the location of the `libodbcinst.dylib` varies per installation.
