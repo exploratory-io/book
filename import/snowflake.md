@@ -52,6 +52,18 @@ DriverODBCVer=03.52
 SQLLevel=1
 ```
 
+Open the snow flake config file located /opt/snowflake/snowflakeodbc/lib/universal/simba.snowflake.ini
+
+Make sure that unixODBC section points to the `libodbcinst.dylib` file which is installed with homebrew.
+Please note the location of the `libodbcinst.dylib` varies per installation.
+
+```sh
+#   unixODBC
+#ODBCInstLib=libodbcinst.a(libodbcinst.so.1)
+ODBCInstLib=/usr/local/lib/libodbcinst.dylib
+
+```
+
 ## 1. Create a connection for Snowflake 
 
 First, you want to create a connection for Snowflake.
