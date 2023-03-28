@@ -1,35 +1,22 @@
-# Seminar #84 - Hypothesis Testing with t-Test
-## Date/Time: 3/8/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
+# Seminar #85 - Hypothesis Testing with Chi-Squared Test
+## Date/Time: 3/29/2023
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-When you have two groups and see a difference in the means between them, is that big enough for us to take actions or spend more time to investigate about the difference? Or, maybe the difference is so marginal that we'd better move on?
+This is a part of the Hypothesis Testing series. This time, we will introduce Chi-Square Test, which is to test hypotheses about the relationship between two categorical variables.
 
-One of the hypothesis methods called t-test helps us to answer these questions.
+Let's say you want to know if there is any difference in terms of effectiveness between wearing mask and not wearing mask. We have a variable of 'Infection' whose values would be 'Infected' or 'Not Infected' and a variable of 'Wearing Mask' whose values would be 'Yes' and 'No'. Are there any relationship between these two variables?
 
-In this seminar, Kan will introduce what t-test is and how you can use it to test the difference between two groups.
-
-This is a part of the Hypothesis Testing series. If you haven't yet we'd strongly recommend you watch '[Introduction to Hypothesis Testing](https://exploratory.io/note/kanaugust/Seminar-83-Introduction-to-Hypothesis-Testing-UII5IOW1bn)' first.
-
+That's the kind of question we can use Chi-Square Test to answer.
 
 Agenda:
 
-- Introduction to t-test
-- How to Interpret
-- P-Value to Accept or Reject Null Hypothesis
-- Confidence Interval of Difference to Draw Conclusion
+- Introduction to Chi-Square Test
+- How to Use in Exploratory
+- How to Interpret the Result
 
 ----
-# Seminar #85 - Hypothesis Testing with ANOVA Test
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-Agenda:
-
-
-----
-# Seminar #86 - Hypothesis Testing with Kruskal Wallis test Test
+# Seminar #86 - Hypothesis Testing with ANOVA Test
 ## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
@@ -37,7 +24,7 @@ Agenda:
 Agenda:
 
 ----
-# Seminar #87 - Hypothesis Testing with Chi-Squared Test
+# Seminar #87 - Hypothesis Testing with Kruskal Wallis test Test
 ## Date/Time: TBD
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
