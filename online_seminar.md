@@ -9,6 +9,8 @@ Let's say you want to know if there is any difference in terms of effectiveness 
 
 That's the kind of question we can use Chi-Square Test to answer.
 
+In this seminar, Kan will introduce the Chi-Square Test and how to interpret the result by using Exploratory.
+
 Agenda:
 
 - Introduction to Chi-Square Test
