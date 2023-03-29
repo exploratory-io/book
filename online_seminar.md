@@ -19,7 +19,7 @@ Agenda:
 
 ----
 # Seminar #86 - Hypothesis Testing with ANOVA Test
-## Date/Time: TBD
+## Date/Time: 4/5/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
