@@ -3,7 +3,9 @@
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-This is a part of the Hypothesis Testing series. This time, we will introduce Kruskal Wallis Test, which is one of the hypothesis testing method to test hypotheses about the relationship between numerical and categorical variables without an assumption of 'normality'. Unlike t-Test and ANOVA, which are both required to have the underlying data to be normally distributed, Kruskal Wallis Test doesn't have such restrictions hence it can be used for data with any distribution and with any number of groups for the categorical variable.
+This is a part of the Hypothesis Testing series. This time, we will introduce Kruskal Wallis Test, which is one of the hypothesis testing method to test hypotheses about the relationship between numerical and categorical variables without an assumption of 'normality'.
+
+Unlike t-Test and ANOVA, which are both required to have the underlying data to be normally distributed, Kruskal Wallis Test doesn't have such restrictions hence it can be used for data with any distribution and with any number of groups for the categorical variable.
 
 In this seminar, Kan will introduce the Kruskal Wallis Test and how to interpret the result by using Exploratory.
 
