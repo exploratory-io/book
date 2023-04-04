@@ -1,3 +1,3 @@
 # Change Repository Location
 
-Please refer [How to switch Exploratory Repository](https://exploratory.io/note/2ac8ae888097/How-to-switch-Exploratory-Repository-qbL9uzp2nk) for details.
+Please refer [How to switch Exploratory Repository](https://exploratory.io/note/exploratory/How-to-switch-Exploratory-Repository-ADm5ESx0) for details.
