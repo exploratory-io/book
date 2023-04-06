@@ -12,7 +12,7 @@ In this seminar, Kan will introduce the Kruskal Wallis Test and how to interpret
 Agenda:
 
 - Introduction to Kruskal Wallis Test
-- How to Run it in Exploratory
+- How to Run the Test in Exploratory
 - How to Interpret the Result
 
 
