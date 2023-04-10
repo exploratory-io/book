@@ -1,33 +1,23 @@
-# Seminar #86 - Hypothesis Testing with Kruskal Wallis Test
-## Date/Time: 4/5/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-This is a part of the Hypothesis Testing series. This time, we will introduce Kruskal Wallis Test, which is one of the hypothesis testing method to test hypotheses about the relationship between numerical and categorical variables without an assumption of 'normality'.
-
-Unlike t-Test and ANOVA, which are both required to have the underlying data to be normally distributed, Kruskal Wallis Test doesn't have such restrictions hence it can be used for data with any distribution and with any number of groups for the categorical variable.
-
-In this seminar, Kan will introduce the Kruskal Wallis Test and how to interpret the result by using Exploratory.
-
-Agenda:
-
-- Introduction to Kruskal Wallis Test
-- How to Run the Test in Exploratory
-- How to Interpret the Result
-
-
-----
-# Seminar #87 - Discovering & Investigating Correlation
+# Seminar #87 - 4 Ways to Discover & Investigate Correlation Effectively with Exploratory
 ## Date/Time: 4/12/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
+Correlation is the most powerful and useful tool in data analysis. In order to improve your quality and productivity in data analysis, you want to find as many correlations as you can in your data quickly and accurately so that you can test and build better hypotheses based on data.
+
+In this seminar, Kan will discuss what the correlation is and why it is important, then walk you through how you can discover and investigate correlations in your data effectively with Exploratory. 
+
 Agenda:
 
+- Why & What Correlation
+- Data Visualization
+- Summary View's Correlation Mode
+- Correlation Analysis
+- PCA
 
 ----
 # Seminar #88 - Introduction to Multivariate Analysis with Linear Regression
-## Date/Time: TBD
+## Date/Time: 4/19/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
