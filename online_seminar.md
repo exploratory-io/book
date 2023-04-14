@@ -1,56 +1,23 @@
-# Seminar #83 - Introduction to Hypothesis Testing
-## Date/Time: 3/1/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
+# Seminar #87 - 4 Ways to Discover & Investigate Correlation Effectively with Exploratory
+## Date/Time: 4/12/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-Hypothesis Testing is the key component of the scientific method. It helps you to decide whether you proceed with your hypothesis or discard it in order to make better decisions.
+Correlation is the most powerful and useful tool in data analysis. In order to improve your quality and productivity in data analysis, you want to find as many correlations as you can in your data quickly and accurately so that you can test and build better hypotheses based on data.
 
-In this seminar, Kan will introduce the basics of the Hypothesis Testing by discussing the idea behind it and how you can apply it for your decision making process.
-
-Agenda:
-
-- Introduction to Hypothesis Testing
-- Iterative Learning Process with Deduction and Induction
-- Null Hypothesis & Alternative Hypothesis
-- Types of Hypothesis Testing
-
-----
-# Seminar #84 - Hypothesis Testing with T Test
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+In this seminar, Kan will discuss what the correlation is and why it is important, then walk you through how you can discover and investigate correlations in your data effectively with Exploratory. 
 
 Agenda:
 
-----
-# Seminar #85 - Hypothesis Testing with ANOVA Test
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-Agenda:
-
-
-----
-# Seminar #86 - Hypothesis Testing with Kruskal Wallis test Test
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-Agenda:
-
-----
-# Seminar #87 - Hypothesis Testing with Chi-Squared Test
-## Date/Time: TBD
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-Agenda:
-
+- Why & What Correlation
+- Data Visualization
+- Summary View's Correlation Mode
+- Correlation Analysis
+- PCA
 
 ----
 # Seminar #88 - Introduction to Multivariate Analysis with Linear Regression
-## Date/Time: TBD
+## Date/Time: 4/19/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
