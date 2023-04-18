@@ -81,6 +81,7 @@
       * [Microsoft Access](import/access.md)
       * [MongoDB](import/mongodb.md)
       * [ODBC](import/odbc.md)
+      * [Oracle](import/oracle.md)
       * [PostgreSQL](import/postgresql.md)
       * [PostgreSQL (日本語)](import/postgresql_ja.md)
       * [Presto](import/presto.md)
