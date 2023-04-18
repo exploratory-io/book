@@ -9,107 +9,122 @@
         {
          "title": "ピボットテーブルの作り方",
          "desc": "ピボットテーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/FAQ5WqV0xM"
+         "url": "https://exploratory.io/note/exploratory/nAH3SJh5"
         },
         {
          "title": "集計テーブルの作り方",
          "desc": "集計テーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/RMB5wbA4Rs"
+         "url": "https://exploratory.io/note/exploratory/lqW2aSE0"
         },
         {
          "title": "テーブルの作り方",
          "desc": "テーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/ktS2eEK6jW"
+         "url": "https://exploratory.io/note/exploratory/SSA0IGE1"
         },
         {
          "title": "バーチャートの作り方",
          "desc": "バーチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Data-Viz-duD3HnH9pE"
+         "url": "https://exploratory.io/note/exploratory/skT2SiM2"
         },
         {
          "title": "ラインチャートの作り方",
          "desc": "ラインチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-hLj4gnu7Df"
+         "url": "https://exploratory.io/note/exploratory/YFL4nzV9"
         },
         {
          "title": "エリアチャートの作り方",
          "desc": "エリアチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/bRd2lAx7Iy"
+         "url": "https://exploratory.io/note/exploratory/iHo5ktK0"
         },
         {
          "title": "パイチャートの作り方",
          "desc": "パイチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/OjL5DOn1pr"
+         "url": "https://exploratory.io/note/exploratory/IuD9vfw6"
         },
         {
          "title": "ヒストグラムの作り方",
          "desc": "ヒストグラムの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/UGZ4vyR3GG"
+         "url": "https://exploratory.io/note/exploratory/jzm3iOI6"
         },
         {
          "title": "密度曲線の作り方",
          "desc": "密度曲線の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/eck4bdS4Wl"
+         "url": "https://exploratory.io/note/exploratory/WoZ8ghS6"
         },
         {
          "title": "散布図（集計なし）の作り方",
          "desc": "散布図（集計なし）の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/13-2-TZm4tyi8UC"
+         "url": "https://exploratory.io/note/exploratory/NwG7vDs4"
         },
         {
          "title": "散布図（集計あり）の作り方",
          "desc": "散布図（集計あり）の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/rHW8oVO8GS"
+         "url": "https://exploratory.io/note/exploratory/SWQ7MVN0"
         },
         {
          "title": "箱ヒゲ図の作り方",
          "desc": "箱ヒゲ図の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/17-skB4kPv4JL"
+         "url": "https://exploratory.io/note/exploratory/ZER8TSU7"
         },
         {
          "title": "バイオリン図の作り方",
          "desc": "バイオリン図の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/FIL2lsu3rR"
+         "url": "https://exploratory.io/note/exploratory/wFG0RLv5"
         },
         {
          "title": "エラーバーの作り方",
          "desc": "エラーバーの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/RJX0NGW1hl"
+         "url": "https://exploratory.io/note/exploratory/pAb2PLC2"
         },
         {
          "title": "エラーバー（集計済データ）の作り方",
          "desc": "エラーバー（集計済データ）の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/RJX0NGW1hl"
+         "url": "https://exploratory.io/note/exploratory/qRP3yXj9"
+        },
+        {
+          "title": "地図 - 標準の使い方",
+          "desc": "地図 - 標準の使い方についてご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/XuJ9GBN8"
+        },
+        {
+          "title": "地図 - 拡張の使い方",
+          "desc": "地図 - 拡張の使い方についてご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/NpA6zFw5"
+        },
+        {
+         "title": "地図 - 経度/緯度の作り方",
+         "desc": "地図 - 経度/緯度の作り方をご紹介します。",
+         "url": "https://exploratory.io/note/exploratory/Shd0okQ6"
+        },
+        {
+          "title": "地図 - ヒートマップの使い方",
+          "desc": "地図 - ヒートマップの使い方についてご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/FxW3cnx0"
         },
         {
          "title": "ヒートマップの作り方",
          "desc": "ヒートマップの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-6-XzP8Ojk7GT"
+         "url": "https://exploratory.io/note/exploratory/xrc6alo8"
         },
+        {
+          "title": "等高線プロットの作り方",
+          "desc": "等高線プロットの作り方をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/uql2ytG7"
+         },
         {
          "title": "レーダーチャートの作り方",
          "desc": "レーダーチャートの作り方をご紹介します。",
          "url": "https://exploratory.io/note/exploratory/YQe8tvk6"
-        },
-        {
-         "title": "地図 - 標準の使い方",
-         "desc": "地図 - 標準の使い方についてご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/GWw6gtb4rU"
-       },
-       {
-        "title": "地図 - 経度/緯度の作り方",
-        "desc": "地図 - 経度/緯度の作り方をご紹介します。",
-        "url": "https://exploratory.io/note/GMq1Qom5tS/OHp6ihw1IB"
-       },
+        }, 
        {
         "title": "ナンバーの作り方",
         "desc": "ナンバーの作り方をご紹介します。",
-        "url": "https://exploratory.io/note/GMq1Qom5tS/biG3kLJ2qy"
+        "url": "https://exploratory.io/note/exploratory/obr3bby2"
        },
        {
         "title": "ワードクラウドの作り方",
         "desc": "ワードクラウドの作り方をご紹介します。",
-        "url": "https://exploratory.io/note/GMq1Qom5tS/oHN4Egn2UY"
+        "url": "https://exploratory.io/note/exploratory/nab0EZU5"
        },
        {
         "title": "集合バーチャートの作り方",
