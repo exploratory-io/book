@@ -22,11 +22,6 @@
           "url": "https://exploratory.io/note/exploratory/CSV-Excel-Exploratory-nCG0mnv3"
         },
         {
-          "title": "Google ドライブ",
-          "desc": "Google ドライブからCSVファイルをインポートする方法をご紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/Google-Drive-raT1FzF5fd"
-        },
-        {
           "title": "JSON",
           "desc": "JSONファイルをインポートする方法をご紹介します。",
           "url": "https://exploratory.io/note/exploratory/JSON-qss2jup9"
@@ -45,6 +40,34 @@
           "title": "Rファイル（RDATA, RDS）",
           "desc": "Rファイル（RDATA, RDS）をインポートする方法をご紹介します。",
           "url": "https://exploratory.io/note/exploratory/R-RDATA-RDS-SlJ5RFY5"
+        }
+      ]
+    },
+    {
+      "title": "クラウドストレージデータ",
+      "desc": "Exploratoryでは様々なファイルからデータを読み込むことができます。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
+      "insights": [
+        {
+          "title": "Amazon S3",
+          "desc": "Amazon S3からCSVファイルをインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Amazon-S3-OqS0VOG7"
+        },
+        {
+          "title": "Google ドライブ",
+          "desc": "Google ドライブからCSVファイルをインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/Google-Drive-raT1FzF5fd"
+        },
+        {
+          "title": "Google クラウドストレージ",
+          "desc": "Google クラウドストレージからCSVファイルをインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Google-KKE2LFj0"
+        },
+        {
+          "title": "Microsoft Azure",
+          "desc": "Microsoft AzureからCSVファイルをインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Microsoft-Azure-syF2EyW1"
         }
       ]
     },
@@ -100,7 +123,7 @@
       "title": "データベース",
       "desc": "Exploratoryでは様々なデータベースからデータを読み込むことができます。",
       "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%22Chart%20Gallery%22&language=all",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
       "insights": [
         {
           "title": "Amazon Athena",
@@ -153,9 +176,19 @@
           "url": "https://exploratory.io/note/exploratory/ODBC-atz9rYu8"
         },
         {
+          "title": "Oracle",
+          "desc": "Oracleに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Oracle-Database-PxZ9srH9"
+        },
+        {
           "title": "PostgreSQL",
           "desc": "PostgreSQLに接続してデータを読みこむ方法をご紹介します。",
           "url": "https://exploratory.io/note/exploratory/PostgreSQL-cVM4liT6"
+        },
+        {
+          "title": "Salesforce",
+          "desc": "Salesforceに接続してデータを読みこむ方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Salesforce-ZjW6Boi8"
         },
         {
           "title": "Presto",
