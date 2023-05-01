@@ -1,25 +1,27 @@
-# Seminar #89 - Multicollinearity - Why that's a problem & How to Detect and Address it with your Regression Models
-## Date/Time: 4/26/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
+# Seminar #90 - AUC & F Value - Metrics for Binary Classification Model
+## Date/Time: 5/3/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-Have you heard about ‘Multicollinearity’?
+When you want to analyze what makes your customers convert, sign up, respond, etc. with data, building binary classification models with either machine learning or statistical learning algorithms would be a great tool to use.
 
-If you are doing multivariate analysis with the Statistical Learning models like Linear Regression, Logistic Regression, etc. this is the first thing you need to check. Otherwise, your analysis around the coefficients could be unstable, and that's not where you want to do be.
+When you build such models though, how would you know your models are good or bad?
 
-The word multicollinearity sounds intimidating and a bit mysterious. But the idea behind it is not as complicated as you would think.
+That's where AUC and F value come in. They are the two metrics that are used often to evaluate the prediction quality of the models.
 
-In this seminar, Kan will introduce what the 'Multicollinearity' is and walks you through how the detection mechanics works. Then, he'll demonstrate how you can detect and address the problem with Exploratory.
+In this seminar, Kan will discuss what AUC and F value are, why and when you need them, and how to use them in Exploratory.
 
 Agenda:
 
-- What is Multicollinearity?
-- How to Detect?
-- How to Address with Exploratory?
+- A Grammar of Analytics
+- Why not Accuracy Rate?
+- Type 1 Error & Type 2 Errors
+- F Value
+- AUC
 
 ----
 
-# Seminar #90 - AUC & F Value - Metrics for Binary Classification Model 
+# Seminar #91 - Working with Currency Data
 ## Date/Time: 5/3/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
