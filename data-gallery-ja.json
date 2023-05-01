@@ -9,12 +9,12 @@
         {
           "title": "CSV・Excel",
           "desc": "CSVやエクセルのデータをインポートする方法をご紹介します。",
-          "url": "https://exploratory.io/note/BWz1Bar4JF/CSV-qMt0tdA0Ti"
+          "url": "https://exploratory.io/note/exploratory/CSV-Jqt2IWj9"
         },
         {
           "title": "リモートCSV",
           "desc": "リモートCSVのデータをインポートする方法をご紹介します。",
-          "url": "https://exploratory.io/note/kanaugust/Excel-CSV-rXx6GVk9XI"
+          "url": "https://exploratory.io/note/exploratory/CSV-qdg8mdG4"
         },
         {
           "title": "複数のCSVまたはExcelファイル",
@@ -29,7 +29,7 @@
         {
           "title": "Parquet",
           "desc": "Parquetファイルをインポートする方法をご紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-161-Parquet-yeG7yZf7Oa"
+          "url": "https://exploratory.io/note/exploratory/Parquet-Rvc5nib6"
         },
         {
           "title": "統計ファイル（SPSS, SAS, STATA）",
@@ -57,7 +57,7 @@
         {
           "title": "Google ドライブ",
           "desc": "Google ドライブからCSVファイルをインポートする方法をご紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/Google-Drive-raT1FzF5fd"
+          "url": "https://exploratory.io/note/exploratory/Google-Drive-QLm4fhD7"
         },
         {
           "title": "Google クラウドストレージ",
@@ -80,7 +80,12 @@
         {
           "title": "FRED",
           "desc": "FREDのデータを読み込む方法を紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/FRED-FRB-Wnz3Snw9Gp"
+          "url": "https://exploratory.io/note/exploratory/FRED-FRB-PRy9ODA3"
+        },
+        {
+          "title": "株価データ",
+          "desc": "株価データを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/FCk6jAK7"
         },
         {
           "title": "Github issues",
@@ -95,7 +100,7 @@
         {
           "title": "Google Sheets",
           "desc": "Google Sheetsのデータを読み込む方法を紹介します。",
-          "url": "https://exploratory.io/note/BWz1Bar4JF/Google-Sheets-Nnk4xUD2bI"
+          "url": "https://exploratory.io/note/exploratory/Google-Sheets-ZzF2hXW2"
         },
         {
           "title": "Salesforce",
@@ -110,7 +115,12 @@
         {
           "title": "Twitter Search",
           "desc": "Twitter Searchのデータを読み込む方法を紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/Twitter-QCG7HEt1qD"
+          "url": "https://exploratory.io/note/exploratory/Twitter-bZF8YZj5"
+        },
+        {
+          "title": "天候データ",
+          "desc": "天候データを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/nsf9gdF3"
         },
         {
          "title": "Googleフォーム",
@@ -221,22 +231,12 @@
         {
           "title": "WEBスクレイピング",
           "desc": "WEBスクレイピングをしてデータを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/Web-tby3QRV0kO"
+          "url": "https://exploratory.io/note/exploratory/Web-Piy4qMt7"
         },
         {
           "title": "テキスト・インプットデータ",
           "desc": "データを手動で作成して読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-198-iyD2MGi3St"
-        },
-        {
-          "title": "株価データ",
-          "desc": "株価データを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/RAu9VSG4Pc"
-        },
-        {
-          "title": "天候データ",
-          "desc": "天候データを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/kaV5TAk3cS"
+          "url": "https://exploratory.io/note/exploratory/muF6NJB6"
         }
       ]
     },
@@ -249,17 +249,17 @@
         {
           "title": "PDF",
           "desc": "PDFのデータを読み込む方法を紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/PDF-OAH6rtx7Iw"
+          "url": "https://exploratory.io/note/exploratory/PDF-jHF0UCD9"
         },
         {
           "title": "XML",
           "desc": "XMLのデータを読み込む方法を紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/XML-Gur3OyD2lj"
+          "url": "https://exploratory.io/note/exploratory/XML-Qcq6pYi3"
         },
         {
           "title": "e-Stat",
           "desc": "e-Statのデータを読み込む方法を紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/e-Stat-API-fEe2Vxh8YS"
+          "url": "https://exploratory.io/note/exploratory/e-Stat-API-MBG8KYC0"
         },
         {
           "title": "Jira",
