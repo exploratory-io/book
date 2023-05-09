@@ -1,25 +1,40 @@
-# Seminar #88 - Introduction to Multivariate Analysis with Linear Regression
-## Date/Time: 4/19/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
+# Seminar #90 - AUC & F Value - Metrics for Binary Classification Model
+## Date/Time: 5/3/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-When you have found correlated relationships among the variables, that's a great news. You can use the information to explain what is happening and predict what is going to happen. But, you don't stop there. More often than not, that correlation you found could involve something called 'confounding', which is a fancy word for a 'hidden cause' - another variable that creates such relationship.
+When you want to analyze what makes your customers convert, sign up, respond, etc. with data, building binary classification models with either machine learning or statistical learning algorithms would be a great tool to use.
 
-And this is where you want to perform Multivariate Analysis. It can help you investigate further to see if there are such 'confounding' elements among the variables and find out how much of the effect the prediction variables have on the target variable independently.
+When you build such models though, how would you know your models are good or bad?
 
-In this seminar, Kan will introduce Multivariate Analysis by using Linear Regression models, discuss why and when you need, and walk you through how you can perform it in Exploratory.
+That's where AUC and F value come in. They are the two metrics that are used often to evaluate the prediction quality of the models.
+
+In this seminar, Kan will discuss what AUC and F value are, why and when you need them, and how to use them in Exploratory.
 
 Agenda:
 
-- Correlation and Confounding
-- Difference between Univariate and Multivariate Analysis
-- How to Interpret Prediction Models for Multivariable Analysis
-- Limitation & Recommendation
+- A Grammar of Analytics
+- Why not Accuracy Rate?
+- Type 1 Error & Type 2 Errors
+- F Value
+- AUC
 
 ----
-# Seminar #89 - Introduction to Multi-Collinearity
-## Date/Time: 4/26/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
+
+# Seminar #91 - Working with Currency Data
+## Date/Time: 5/3/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
+
+Agenda:
+
+----
+
+# Seminar #91 - Introduction to Boruta
+## Date/Time: 5/3/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
+## Duration: 1 hour
+## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+
 
 Agenda:
