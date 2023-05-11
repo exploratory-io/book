@@ -104,6 +104,7 @@
       * [Weather Data](import/weather.md)
       * [Stock Price Data](import/stock-price.md)
    * [Write R Script as Data](import/r-script-data.md)
+      * [Currency Exchange Rate](import/currency.md)
    * [Write R Script as Data (日本語)](import/r-script-data_ja.md)
    * [Web Page Scraping](import/web-scraping.md)
    * [Text Input Data](import/free-input-text.md)
