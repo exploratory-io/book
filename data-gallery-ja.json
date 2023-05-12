@@ -7,8 +7,8 @@
       "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
       "insights": [
         {
-          "title": "CSV・Excel",
-          "desc": "CSVやエクセルのデータをインポートする方法をご紹介します。",
+          "title": "エクセル・CSV",
+          "desc": "エクセルやCSVのデータをインポートする方法をご紹介します。",
           "url": "https://exploratory.io/note/exploratory/CSV-Jqt2IWj9"
         },
         {
@@ -32,13 +32,13 @@
           "url": "https://exploratory.io/note/exploratory/Parquet-Rvc5nib6"
         },
         {
-          "title": "統計ファイル（SPSS, SAS, STATA）",
-          "desc": "統計ファイル（SPSS, SAS, STATA）をインポートする方法をご紹介します。",
+          "title": "統計（SPSS, SAS, STATA）",
+          "desc": "統計SPSS, SAS, STATA）をインポートする方法をご紹介します。",
           "url": "https://exploratory.io/note/exploratory/SPSS-SAS-STATA-UTk5cVn4"
         },
         {
-          "title": "Rファイル（RDATA, RDS）",
-          "desc": "Rファイル（RDATA, RDS）をインポートする方法をご紹介します。",
+          "title": "Rデータ（RDATA, RDS）",
+          "desc": "Rデータ（RDATA, RDS）をインポートする方法をご紹介します。",
           "url": "https://exploratory.io/note/exploratory/R-RDATA-RDS-SlJ5RFY5"
         }
       ]
@@ -78,14 +78,9 @@
       "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
       "insights": [
         {
-          "title": "FRED",
+          "title": "FRED（経済指標）",
           "desc": "FREDのデータを読み込む方法を紹介します。",
           "url": "https://exploratory.io/note/exploratory/FRED-FRB-PRy9ODA3"
-        },
-        {
-          "title": "株価データ",
-          "desc": "株価データを読み込む方法をご紹介します。",
-          "url": "https://exploratory.io/note/exploratory/FCk6jAK7"
         },
         {
           "title": "Github issues",
@@ -108,6 +103,11 @@
           "url": "https://exploratory.io/note/exploratory/Salesforce-ZjW6Boi8"
         },
         {
+          "title": "株価データ",
+          "desc": "株価データを読み込む方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/FCk6jAK7"
+        },
+        {
           "title": "Stripe",
           "desc": "Stripeのデータを読み込む方法を紹介します。",
           "url": "https://exploratory.io/note/exploratory/Stripe-WyN7tDh9"
@@ -118,8 +118,8 @@
           "url": "https://exploratory.io/note/exploratory/Twitter-bZF8YZj5"
         },
         {
-          "title": "天候データ",
-          "desc": "天候データを読み込む方法をご紹介します。",
+          "title": "気象データ",
+          "desc": "気象データを読み込む方法をご紹介します。",
           "url": "https://exploratory.io/note/exploratory/nsf9gdF3"
         },
         {
@@ -151,8 +151,8 @@
           "url": "https://exploratory.io/note/exploratory/Amazon-Redshift-egv3aAv7"
         },
         {
-          "title": "Google Big Query",
-          "desc": "Google Big Queryに接続してデータを読みこむ方法をご紹介します。",
+          "title": "Google BigQuery",
+          "desc": "Google BigQueryに接続してデータを読みこむ方法をご紹介します。",
           "url": "https://exploratory.io/note/exploratory/Google-BigQuery-ttA7gqG9"
         },
         {

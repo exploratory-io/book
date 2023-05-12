@@ -7,9 +7,9 @@
       "moreButtonUrl": "https://exploratory.io/howto?q=tag%3AAnalytics&language=ja",
       "insights": [
        {
-          "title": "相関",
-          "desc": "相関について紹介しています。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/ACO8snr6qm"
+          "title": "Introduction to Correlation",
+          "desc": "",
+          "url": "https://exploratory.io/note/exploratory/Introduction-to-Correlation-mRr9mdH7"
        },
        {
          "title": "距離",
@@ -103,6 +103,16 @@
       },
       {
         "title": "統計的検定 - t検定",
+        "desc": "t検定について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/t-xPg2tCn3"
+      },
+      {
+        "title": "統計的検定 - ANOVA",
+        "desc": "t検定について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/t-xPg2tCn3"
+      },
+      {
+        "title": "統計的検定 - Repeated Measures ANOVA",
         "desc": "t検定について紹介しています。",
         "url": "https://exploratory.io/note/exploratory/t-xPg2tCn3"
       },
