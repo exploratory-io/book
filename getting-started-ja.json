@@ -1,337 +1,87 @@
 {
   "data": [
     {
-      "title": "チャートの種類",
-      "desc": "Exploratoryには様々なチャートのタイプがあります。",
+      "title": "Exploratoryの使い方",
+      "desc": "Exploratoryの基本的な操作やお役に立つ機能を短時間で体験していただくためのハンズオン形式のガイドです。",
       "moreButtonText": "もっと見る",
       "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
-         "title": "ピボットテーブルの作り方",
-         "desc": "ピボットテーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/nAH3SJh5"
+         "title": "Part 1 - 基本的な機能",
+         "desc": "「データのインポート」から始まり、サマリ・ビューの見方、計算の作成方法、チャートの作り方などが学べます。",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-Part1-cgt5lFZ4"
         },
         {
-         "title": "集計テーブルの作り方",
-         "desc": "集計テーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/lqW2aSE0"
+         "title": "Part 2 - データの可視化",
+         "desc": "効果的にデータを可視化するために、Exploratoryのチャートに関する機能を簡単に体験しながら学べます。",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-Part2-FPI1JFa6"
         },
         {
-         "title": "テーブルの作り方",
-         "desc": "テーブルの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/SSA0IGE1"
+         "title": "Part 3 - データラングリング（加工",
+         "desc": "データの「結合」、「条件付きの計算」、表記揺れを修正するための「テキストデータの加工」など、データラングリングに関する機能を簡単に体験していただけます。",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-Part-3-guu8gME7"
         },
         {
-         "title": "バーチャートの作り方",
-         "desc": "バーチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/skT2SiM2"
+         "title": "Part 4 - アナリティクス",
+         "desc": "「相関分析」、「予測モデル」を使った分析など、Exploratoryのアナリティクス機能を簡単に体験していただけます。",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-Part-4-iWj3IXv5"
         },
         {
-         "title": "ラインチャートの作り方",
-         "desc": "ラインチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/YFL4nzV9"
-        },
-        {
-         "title": "エリアチャートの作り方",
-         "desc": "エリアチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/iHo5ktK0"
-        },
-        {
-         "title": "パイチャートの作り方",
-         "desc": "パイチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/IuD9vfw6"
-        },
-        {
-         "title": "ヒストグラムの作り方",
-         "desc": "ヒストグラムの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/jzm3iOI6"
-        },
-        {
-         "title": "密度曲線の作り方",
-         "desc": "密度曲線の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/WoZ8ghS6"
-        },
-        {
-         "title": "散布図（集計なし）の作り方",
-         "desc": "散布図（集計なし）の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/NwG7vDs4"
-        },
-        {
-         "title": "散布図（集計あり）の作り方",
-         "desc": "散布図（集計あり）の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/SWQ7MVN0"
-        },
-        {
-         "title": "箱ヒゲ図の作り方",
-         "desc": "箱ヒゲ図の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/ZER8TSU7"
-        },
-        {
-         "title": "バイオリン図の作り方",
-         "desc": "バイオリン図の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/wFG0RLv5"
-        },
-        {
-         "title": "エラーバーの作り方",
-         "desc": "エラーバーの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/pAb2PLC2"
-        },
-        {
-         "title": "エラーバー（集計済データ）の作り方",
-         "desc": "エラーバー（集計済データ）の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/qRP3yXj9"
-        },
-        {
-          "title": "地図 - 標準の使い方",
-          "desc": "地図 - 標準の使い方についてご紹介します。",
-          "url": "https://exploratory.io/note/exploratory/XuJ9GBN8"
-        },
-        {
-          "title": "地図 - 拡張の使い方",
-          "desc": "地図 - 拡張の使い方についてご紹介します。",
-          "url": "https://exploratory.io/note/exploratory/NpA6zFw5"
-        },
-        {
-         "title": "地図 - 経度/緯度の作り方",
-         "desc": "地図 - 経度/緯度の作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/Shd0okQ6"
-        },
-        {
-          "title": "地図 - ヒートマップの使い方",
-          "desc": "地図 - ヒートマップの使い方についてご紹介します。",
-          "url": "https://exploratory.io/note/exploratory/FxW3cnx0"
-        },
-        {
-         "title": "ヒートマップの作り方",
-         "desc": "ヒートマップの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/xrc6alo8"
-        },
-        {
-          "title": "等高線プロットの作り方",
-          "desc": "等高線プロットの作り方をご紹介します。",
-          "url": "https://exploratory.io/note/exploratory/uql2ytG7"
-         },
-        {
-         "title": "レーダーチャートの作り方",
-         "desc": "レーダーチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/exploratory/YQe8tvk6"
-        }, 
-       {
-        "title": "ナンバーの作り方",
-        "desc": "ナンバーの作り方をご紹介します。",
-        "url": "https://exploratory.io/note/exploratory/obr3bby2"
-       },
-       {
-        "title": "ワードクラウドの作り方",
-        "desc": "ワードクラウドの作り方をご紹介します。",
-        "url": "https://exploratory.io/note/exploratory/nab0EZU5"
-       },
-       {
-        "title": "集合バーチャートの作り方",
-        "desc": "集合バーチャートの作り方をご紹介します。",
-        "url": "https://exploratory.io/note/exploratory/lfa4hrY9"
-       }
+         "title": "Part 5 - ダッシュボード",
+         "desc": "ダッシュボードを作ったり、さらにサーバーで運用したりする際に役立つ機能を体験していただけます。",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-Part-5-vSl9pUm4"
+        }
       ]
     },
     {
-      "title": "チャートの機能",
-      "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
+      "title": "アンケートデータの分析",
+      "desc": "アンケートデータを分析する際に役立つExploratoryの機能という視点からのハンズオン形式の使い方ガイドです。",
       "moreButtonText": "もっと見る",
       "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
-         "title": "表計算：合計値に対する割合のチャートの作り方",
-         "desc": "表計算：合計値に対する割合のチャートの作り方をご紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Msq6osQ9LP"
+         "title": "Part 1 - アンケートの回答の相関分析",
+         "desc": "アンケートの回答データを元に、ある指標と相関が強い質問を探し出すための「相関モード」を使った分析を体験いただきます。",
+         "url": "https://exploratory.io/note/exploratory/Part1-jTw2MmU3"
         },
         {
-         "title": "表計算：累積合計のチャートの作り方",
-         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+         "title": "Part 2 - 自由記述テキストの分析",
+         "desc": "自由記述のテキストデータを使い、頻出度の高い単語、一緒に使われる単語の特徴などを分析する手法を体験いただきます。",
+         "url": "https://exploratory.io/note/exploratory/Part2-Qam8VPQ1"
         },
         {
-         "title": "表計算：移動平均の引き方",
-         "desc": "表計算：移動平均をラインチャートに引く方法をご紹介します。",
+         "title": "Part 3 - アンケートデータを使った因子分析",
+         "desc": "アンケートデータの回答の裏にあるモチベーションを探索するための「因子分析」を体験いただきます。",
          "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
-       },
-       {
-        "title": "表計算：表計算：前年同月比のチャートの作り方",
-        "desc": "表計算：前の期間からの差の割合を使って前年同月比を可視化する方法をご紹介します。",
-        "url": "https://exploratory.io/note/exploratory/RCD3vcu7"
-      },
-      {
-       "title": "表計算：最初の値からの差の割合のチャートの作り方",
-       "desc": "表計算：最初の値からの差の割合を使って成長率を可視化する方法をご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/bdG6yTZ5"
-      },
-       {
-       "title": "リファレンスラインの使い方",
-       "desc": "リファレンスラインの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/eDU7CFA8RQ"
-       },
-       {
-       "title": "トレンドライン：線形回帰の引き方",
-       "desc": "トレンドライン：線形回帰の引き方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/14-2-rdp7QBM4vw"
-       },
-       {
-       "title": "トレンドライン：LOESS曲線の引き方",
-       "desc": "トレンドライン：LOESS曲線の引き方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/10-LOESS-UJg3GXO9qL"
-       },
-       {
-       "title": "ラインチャートで特定の値の範囲を塗りつぶす方法",
-       "desc": "ラインチャートで特定の値の範囲を塗りつぶす方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-169-aiq1Dku0xw"
-       },
-       {
-       "title": "チャートの色を変更する方法",
-       "desc": "色とグループの設定の使い方をご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/lSA6eIV2"
-       },
-       {
-       "title": "ハイライトの使い方",
-       "desc": "ハイライトの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/snt1aaS4qm"
-       },
-       {
-       "title": "条件によって色を指定する方法",
-       "desc": "条件によって色を指定する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-182-zYg0Rav0Ef"
-       },
-       {
-       "title": "数値を等幅または等頻度に分けて色を付ける方法",
-       "desc": "数値を等幅または等頻度に分けて色を付ける方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-184-Ial5eak0rB"
-       },
-       {
-       "title": "Y軸の値を元に色を指定する方法",
-       "desc": "Y軸の値を元に色を指定する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-186-Y-lOu8rEI7tV"
-       },
-       {
-       "title": "色の表示名を変更して複数のグループを一つにまとめる",
-       "desc": "色の表示名を変更して複数のグループを一つにまとめる方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-188-kjk7hiJ8NY"
-       },
-       {
-       "title": "カスタム・カラーパレットの使い方",
-       "desc": "カスタム・カラーパレットの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-201-YMo1Lhw9Ps"
-       },
-       {
-       "title": "数値を等間隔でカテゴリー化して可視化する方法",
-       "desc": "数値を等間隔でカテゴリー化して可視化する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-200-oPT9mcP7DH"
-       },
-       {
-       "title": "繰り返しの使い方",
-       "desc": "繰り返しの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/YZc5vEy0xt"
-       },
-       {
-       "title": "複数の指標を個々のチャートとして並べて見る方法",
-       "desc": "繰り返しのY軸の列ごとの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-191-bVS6xdg7ro"
-       },
-       {
-       "title": "特定の値以外は全て「その他」グループとして表示する方法",
-       "desc": "特定の値以外は全て「その他」グループとして表示する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-209-FEX7ADy4qC"
-       },
-       {
-       "title": "集計テーブル: クイック・ビジュアルフォーマット",
-       "desc": "集計テーブルにあるクイック・ビジュアルフォーマットの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-199-tMh4beE1za"
-       },
-       {
-       "title": "チャート内での欠損値の処理方法",
-       "desc": "チャート内での欠損値の処理方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-163-EYM8Vcx6vG"
-       },
-       {
-       "title": "条件付き集計関数（sum if関数など）の使い方",
-       "desc": "チャート内での条件付き集計関数の使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-197-sum-if-bTK2VuK3AQ"
-       },
-       {
-       "title": "factor型の列のデータがないレベルはチャートで非表示にする方法",
-       "desc": "factor型の列のデータがないレベルはチャートで非表示にする方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-122-factor-Xox5VtM6XM"
-       },
-       {
-       "title": "集計テーブルの合計の計算対象を集計前に変更する方法",
-       "desc": "集計テーブルの合計の計算対象を集計前に変更する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-119-huW6VwS5UK"
-       },
-       {
-       "title": "Y2軸を設定する方法",
-       "desc": "Y2軸を設定する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Y2-NEy3ptf8HT"
-       },
-       {
-       "title": "チャートのY軸の値をパーセント表記に変更する方法",
-       "desc": "チャートのY軸の値をパーセント表記に変更する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Y-qSL5Hik3qH"
-       },
-       {
-       "title": "軸のレンジの設定方法",
-       "desc": "軸のレンジの設定方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/ERf7KXM0NL"
-       },
-       {
-       "title": "チャートタイトルの設定方法",
-       "desc": "チャートタイトルの設定方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/uIv0WEw1Xn"
-       },
-       {
-       "title": "チャートの軸のタイトルの設定方法",
-       "desc": "チャートの軸のタイトルの設定方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/wOz6bsJ7sn"
-       },
-       {
-       "title": "一つのチャートにバーとラインを同時に表示する方法",
-       "desc": "一つのチャートにバーとラインを同時に表示する方法をご紹介します。",
-       "url": "https://exploratory.io/note/kei/Frr5QQl7fI"
-       },
-       {
-       "title": "チャート上に値を表示する方法",
-       "desc": "チャート上に値を表示する方法をご紹介します。",
-       "url": "https://exploratory.io/note/kei/OBj7zZr8JE"
        }
       ]
     },
      {
-       "title": "データの可視化ワークショップ",
-       "desc": "データや目的に適したチャートの選び方と使い方、効果的にデータを可視化するためのテクニック、可視化するためのデータの作り方などを学べる、1時間単位のオンラインワークショップの録画とスライドです。",
+       "title": "サブスク・SaaSアナリティクス",
+       "desc": "サブスクリプション型のビジネスに特有な指標の作成・可視化や分析を通して、Exploratoryの使い方を学んでいただくハンズオン形式の使い方ガイドです。",
        "moreButtonText": "もっと見る",
-       "moreButtonUrl": "https://exploratory.io/tag/?q=tag:%22Viz%20Workshop%22",
+       "moreButtonUrl": "",
        "insights": [
          {
-          "title": "データの可視化ワークショップ #1 - 基礎編",
-          "desc": "データタイプや目的に適したチャートを選べるように、データを可視化する際の基本となる使い方を紹介しています。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/1-QyT6tWa7mT"
+          "title": "Part 1 - ダッシュボードを使ったビジネスKPIのモニタリング",
+          "desc": "サブスクリプション型のビジネスでよく使われる3つの指標を実際に計算したり、可視化したりすることで、Exploratoryの基本機能である「データの加工」と「データの可視化」を体験していただきます。",
+          "url": "https://exploratory.io/note/exploratory/SaaS-1-GtE6edw7"
          },
          {
-          "title": "データの可視化ワークショップ #2 - 時系列データの可視化",
-          "desc": "時系列データのトレンドをどうやって理解していくのか、効果的に可視化するのかを表計算やトレンドラインなどの機能を使って紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/2-mKt8TJD8GP"
+          "title": "Part 2 - MRRの推移をコホートごとに可視化するレイヤーケーキ・チャート",
+          "desc": "支払いデータを元に、ビジネスの効率的な成長を示すレイヤーケーキ・チャートを作るために必要なデータの加工と可視化の機能を体験していただきます。",
+          "url": "https://exploratory.io/note/exploratory/SaaS-2-ZHG7MNR5"
          },
          {
-          "title": "データの可視化ワークショップ #3 - ばらつきと相関の可視化",
-          "desc": "データの中にある「ばらつき」からパターンを発見するために、データタイプに合わせた「相関」の可視化方法について紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/3-wPX8KeJ5DY"
+          "title": "Part 3 - コンバージョンの要因分析と予測",
+          "desc": "見込み顧客のコンバージョンを予測するための予測モデルを作り、コンバートしやすい顧客の特徴を分析します。",
+          "url": "https://exploratory.io/note/exploratory/3-dpU1dZr8"
           },
           {
-          "title": "データの可視化ワークショップ #4 - 不確実性の可視化",
-          "desc": "手元のデータから母集団の真の姿を推測するときに使える「信頼区間」の可視化方法について紹介します。",
+          "title": "Part 4 - リテンション率の推移の可視化",
+          "desc": "キャンセルの分析に欠かせない「生存曲線」を使った「コホート分析」を通して、Exploratoryの使い方を学んでいただきます。",
           "url": "https://exploratory.io/note/GMq1Qom5tS/4-QQo8skp5uu"
-          },
-          {
-          "title": "データの可視化ワークショップ #5 - 可視化のためのデータラングリング",
-          "desc": "データを可視化する時によく直面するデータの加工に関する問題を効率的に解決していく方法を紹介します。",
-          "url": "https://exploratory.io/note/GMq1Qom5tS/5-AZS6fim1QH"
-        }
+          }
       ]
     }
   ]
