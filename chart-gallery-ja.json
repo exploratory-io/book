@@ -3,6 +3,8 @@
     {
       "title": "チャートの種類",
       "desc": "Exploratoryには様々なチャートのタイプがあります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
          "title": "ピボットテーブルの作り方",
@@ -134,6 +136,8 @@
     {
       "title": "チャートの機能",
       "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
          "title": "表計算：合計値に対する割合のチャートの作り方",
@@ -300,6 +304,8 @@
      {
        "title": "データの可視化ワークショップ",
        "desc": "データや目的に適したチャートの選び方と使い方、効果的にデータを可視化するためのテクニック、可視化するためのデータの作り方などを学べる、1時間単位のオンラインワークショップの録画とスライドです。",
+       "moreButtonText": "もっと見る",
+       "moreButtonUrl": "https://exploratory.io/tag/?q=tag:%22Viz%20Workshop%22",
        "insights": [
          {
           "title": "データの可視化ワークショップ #1 - 基礎編",

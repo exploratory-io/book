@@ -3,8 +3,6 @@
     {
       "title": "Exploratoryの使い方",
       "desc": "Exploratoryの基本的な操作やお役に立つ機能を短時間で体験していただくためのハンズオン形式のガイドです。",
-      "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
          "title": "Part 1 - 基本的な機能",
@@ -36,8 +34,6 @@
     {
       "title": "アンケートデータの分析",
       "desc": "アンケートデータを分析する際に役立つExploratoryの機能という視点からのハンズオン形式の使い方ガイドです。",
-      "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
          "title": "Part 1 - アンケートの回答の相関分析",
@@ -59,8 +55,6 @@
      {
        "title": "サブスク・SaaSアナリティクス",
        "desc": "サブスクリプション型のビジネスに特有な指標の作成・可視化や分析を通して、Exploratoryの使い方を学んでいただくハンズオン形式の使い方ガイドです。",
-       "moreButtonText": "もっと見る",
-       "moreButtonUrl": "",
        "insights": [
          {
           "title": "Part 1 - ダッシュボードを使ったビジネスKPIのモニタリング",

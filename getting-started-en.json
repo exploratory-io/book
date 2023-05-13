@@ -3,8 +3,6 @@
     {
       "title": "Chart Type",
       "desc": "You can choose from various types of charts to visualize your data effectively. ",
-      "moreButtonText": "Show More",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=en",
       "insights": [
         {
          "title": "Pivot Table",
@@ -116,8 +114,6 @@
     {
       "title": "Chart Features",
       "desc": "There are various Chart features you can use to enrich your data visualization.",
-      "moreButtonText": "Show More",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
       "insights": [
         {
          "title": "Pin - Set a Particular Data Step to Visualize",
@@ -239,8 +235,6 @@
      {
        "title": "Data Visualization Workshop",
        "desc": "You can learn how to choose the right charts based on the type of data, how to visualize various types of data effectively, how to prepare data to visualize, etc. and share the tutorials and data with you so that you can practice by yourself.",
-       "moreButtonText": "Show More",
-       "moreButtonUrl": "https://exploratory.io/tag/?q=tag:%22Viz%20Workshop%22",
        "insights": [
          {
           "title": "#1 - Visualizing Summarized Data",
