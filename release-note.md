@@ -6,71 +6,86 @@ Released on 5/22/2023.
 
 ### Breaking Changes
 
-* Analytics: Anomaly Detection analytics is obsoleted. You can still run the existing one but it doesn't guarantee the correct result anymore.
+* Analytics: Anomaly Detection analytics is obsoleted due to the base package is no longer supported by R4.3.
 * Analytics: The "Coefficient (Significant)" tab in Linear Regression, Logistic Regression, Cox Regression, and GLM Regressions is obsoleted. Please use the "Coefficient" tab instead.
+
+
+### New Features
+
+* Summary View: Now you can click on the metrics and see the description.
+
+
+* Data Source: Supported Oracle as a Database Data Source.
+* Data Source: Moved the Weather and Stock Price data sources from the 'Extension' to build-in 'Cloud Apps' Data Sources.
+
+
+* Data Wrangling: Join: Support joining data frames based on conditions.
+* Data Wrangling: Filter: Support the 'Column' as filter target type.
+
+
+* Chart: You can set the default formatting setting such as font size, color palette, etc. from the System Settings dialog.
+* Chart: Supported Japanese help documents by cliking the help link.
+
+* Analytics: You can run the Power Analysis for t-Test and Chi-Square Test.
+* Analytics: In the Summary tab, you can click on the metrics to see the metric description.
+* Analytics: Supported Japanese help documents by cliking the help link.
+
+* Note: Dashboard: Now you can add Button, YouTube, Tweet, and Rumble from the "+" button.
+* Note: Dashboard: Supported reordering Notes and Dashboards by Name or Updated Date at the left-hand side catalog tree.
+
+
+* Project: Collaboration: It shows what has been changed when publishing and importing the projects.
+* Project: Collaboration: You can import the published projects directly inside Exploratory Desktop.
+
 
 ### Enhancements
 
-* Data Source: Data Catalog: Supported search by 'Owned by Me', 'Owned by Team', and 'Shared With Me'.
+* Summary View: If you create a chart from the Summary View, it should use "Light Blue" as a default color.
+* Summary View: If you create a chart from the Correlation mode with the Prediction option, the created chart should show the Trend line.
+* Summary View: If you create a chart from the Character or Factor column, it should create a horizontal bar chart.
+
+
+* Data Source: Data Catalog: You can search data by 'Owned by Me', 'Owned by Team', and 'Shared With Me'.
 * Data Source: Now you can configure MS SQL Server ODBC Driver for the Collaboration Server.
-* Data Source: Supported Oracle as a Database Data Source.
 
 
 * Data Wrangling: Export to Google Sheets: Supported "Create as a new sheet inside spreadsheet" and "Append rows to an existing sheet" options.
-* Data Wrangling: Filter: Supported the 'Column' as filter target type.
 * Data Wrangling: Replace Values with New Values: Add a feature to convert to factor data type.
 * Data Wrangling: Replace Values with New Values: Supported the auto data type detection.
 * Data Wrangling: Window Calculation: Supported the Sort Column.
 * Data Wrangling: Summarize: Supported the % in conditional percentage.
-* Data Wrangling: Join: Support joining data frames based on conditions.
-
-
-* Summary View: Now you can view the metric description by clicking a metric name.
 
 
 * Chart: Pivot: Summarize Table: Now you can show multiple Column Totals.
 * Chart: Radar: Now you can show values on the plot area. You can also change the tick step, grid line style, circle size, line width, line style, and fill opacity.
-* Chart: Now you can set the default color palette from the System Settings dialog.
 * Chart: Radar: Now you can show reference lines on the Radar chart.
-* Chart: Now you can set the default font size from the System Settings dialog.
 
 
-* Analytics: Now you can run the Power Analysis based on the t-Test and Chi-Square Test. (hideaki)
-* Analytics: In the Summary tab, now you can see the metric description by hovering a metric name on the table header and clicking the information ("i") icon.
 * Analytics: Prophet: Now R-Squared value is available in the Summary tab.
 * Analytics: Now you can use a custom color palette for the Analytics chart.
-* Analytics: Now you can view the Probability Distribution in Wilcoxon and Kruskal-Wallis Tests. (hideaki)
-* Analytics: Support Dunn's test with Kruskal-Wallis. (hideaki)
+* Analytics: Added the Probability Distribution for Wilcoxon and Kruskal-Wallis Tests.
+* Analytics: Support Dunn's test for Kruskal-Wallis Test.
 
 
-* Note: Dashboard: Now you can add Button, YouTube, Tweet, and Rumble from the "+" button.
 * Note: Now you can hide the border of the Pivot, Summarize Table, and Table by specifying the border="none" attribute.
-* Note: Dashboard: Supported reordering Notes and Dashboards by Name or Updated Date at the left-hand side catalog tree.
+* Note: Spell Checker: Updated the dictionary to minimize false alarms.
+* Dashboard: Note: If you change the "# of columns" setting on a chart on a dashboard or note, it should remember the setting.
 
 
-* Parameter: Supported the 'Radio' and 'Checkbox' for Logical data type case.
+* Parameter: Added the 'Radio' and 'Checkbox' style for Logical data type case.
 * Parameter: Single Select LOV: Supported the 'Set all values when no value is selected' option.
 * Parameter: Multi Select LOV: Supported 'Return All' and 'Return Empty' options for the 'Set all values when no value is selected' case.
 * Parameter: Supported duplicating (copying) parameters.
 * Parameter: Changed it to sync the last selected parameter value between Note/Dashboard and other items (Chart/Analytics/Step).
 
 
-* Project: Collaboration: Now you can see changes done for a shared project when importing or publishing the project.
-* Project: Collaboration: Now you can search and import shared projects from Exploratory Desktop.
-
-
 ### Bug Fixes
 
 * Data Source: Excel: After selecting a different sheet inside an Excel file for the 'Import & Merge' operation, it was changed back to the first sheet.
 * Data Source: Excel: Sheet selection was not working properly when you import & merge several sheets and switched the data source.
-* Data Source: Exported JSON file should be formatted.
-* Data Source: Moved the Weather and Stock Price data sources from the 'Extension' to build-in 'Cloud Apps' Data Sources.
-* Data Source: SQL Import Dialog: The Run button vertical alignment was off.
+* Data Source: Exported JSON file should be formatted in a user-friendly way.
 
 
-* Summary View: If you create a chart from the Summary View, it should use "Light Blue" as a default color.
-* Summary View: If you create a chart from the Correlation mode with the Prediction option, the created chart should show the Trend line.
-* Summary View: If you create a chart from the Character or Factor column, it should create a horizontal bar chart.
 * Summary View: When a custom R step did not return data, clicking the Summary Tab showed an Error Report Dialog.
 
 
@@ -80,53 +95,31 @@ Released on 5/22/2023.
 * Data Wrangling: The summarize dialog did automatically not close when you selected a script on the left-hand side catalog tree.
 * Data Wrangling: Replace Values with Condition: The original column could not be specified as the default column when it was based on the Integer type column.
 * Data Wrangling: Convert to R command menu did not work.
-* Data Wrangling: Creating a Calculation based on multiple columns selection added the token in an existing step, but it should create a new step instead.
-* Data Wrangling: Long to Wide: Updated parameter label from "Keep All Values" to "Keep All Values (and Levels)".
-* Data Wrangling: Create Calculation: Specifying column position did not work when there were multiple tokens in the step.
-* Data Wrangling: When selecting a connection for the source step after importing the data source step, it raised an assertion error.
-* Data Wrangling: Recode: If you renamed "." to the other name, it showed an error.
+* Data Wrangling: Creating a Calculation based on multiple columns added the token in an existing step, but it should have created a new step instead.
+* Data Wrangling: When selecting a connection for the source step after importing the data source step, it raised an error.
+* Data Wrangling: Recode: If you renamed "." with something else it showed an error.
 
 
-* Chart: Bar: Colors on the chart and the Color, Group, and Sort Setting dialog were inconsistent if you added multiple columns at Y-axis and selected the Palette2 color palette.
 * Chart: If you typed in a negative number value to the "Step" field in the Equal Step bucketing setting, the error dialog showed up.
 * Chart: Chart Table Column Selection Dialog: Fixed issue where unavailable columns could not be removed and an error was displayed in the table view upon closing the dialog.
-* Chart: Color Picker dialog immediately closed as soon as you clicked the Hex color code input field while creating a new custom color palette.
-* Chart: Color: If the logical condition expression was long, it overflowed the dialog.
-* Chart: If you updated the display name for ".", the error dialog showed up.
-* Chart: If a column used in the condition of the COUNT_IF aggregation became unavailable by renaming or removing it, the error dialog showed up.
-* Chart: Heatmap: The Legend section was empty in the chart property dialog.
-* Chart: Pivot: Summarize Table: Number: If you assign a logical column to the Value with the ratio aggregation function such as "TRUE Ratio", or "NA Ratio", the "Percentage (%)" formatting should be applied by default.
+* Chart: Custom Color Palette: Color Picker dialog immediately closed when you clicked the Hex color code input field.
+* Chart: Color: If the logical condition expression was too long, it overflowed the dialog.
+* Chart: If you renamed "." with something else it showed an error.
 * Chart: Scatter: Labels on the plot area didn't match with the actual data if you assigned a column for Repeat By and unchecked the Sync X-Axis checkbox.
-* Chart: Show Details: The spin icon did not show up after selecting an option from the 'Number of Rows to Display' pulldown list.
 * Chart: Pivot: Summarize Table: The number of decimal digits setting didn't apply for the numbers on the bucket labels like "< 0.63".
 
 
-* Analytics: Chart: Clicking the Help icon always opens the English document. It should be UI locale sensitive.
-* Analytics: ANOVA: If you assigned a logical column to the Explanatory Variable and clicked the Means tab, the error dialog showed up. (hideaki)
-
-
-* Note: Updated the dictionary for the Spell Checker to minimize false alarms by adding additional words.
-* Note: Dashboard: If you moved a Note / Dashboard under a folder while opening it with the separator window, it was moved out of the Folder after closing the Note / Dashboard.
-* Note: Dashboard: Changed the Spell Checker to be 'on' by default.
-* Dashboard:  When resizing the dashboard row height by drag-and-drop, the row height was shown as 'NaN px'.
-* Dashboard: Dashboard Editor: Corrected spacing and style for Rows / Columns Layout.
 * Dashboard: If there was only one row in a dashboard, you could not move charts inside the row by drag-and-drop.
 * Dashboard: In the Column Layout, if you dragged a chart and dropped it, the dropped chart was not selected.
-* Dashboard: Note: If you change the "# of columns" setting on a chart on a dashboard or note, it should remember the setting.
-* Dashboard: Some thumbnails were not shown on the Edit dialog when the dashboard was not run yet.
+* Dashboard/Note: If you moved a Note / Dashboard under a folder while opening it with the separator window, it was moved out of the Folder after closing the Note / Dashboard.
+* Dashboard/Note: Changed the Spell Checker to be 'on' by default.
 
 
-* Parameter: Changed the link text to 'Create Parameter' when there is no parameter in the Parameter pane.
-* Parameter: Improved the message for the error when the parameter type was not matching with the operator.
-* Parameter: Parameter Definition Dialog: When choosing certain parameters in the Parameter dialog, it flashes the entire screen.
-* Parameter: When publishing a chart/analytics/step with parameters, the parameter values set on the Exploratory Desktop were not reflected for the published item on the Exploratory Server.
+* Parameter: When publishing contents with parameters, the parameter values were not set correctly.
 
 
-* Project: Fixed the issue that drag-and-drop project import did not work when you drop the .epf file outside of the project list.
-
-
-* Scheduler: Scheduling data fails if it refers to a parameter that LOV is derived from another database-based data frame.  (hideaki)
 * General:  Now it cleans up the temporary directory when Exploratory Desktop starts up.
+
 
 
 
