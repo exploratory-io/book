@@ -6,7 +6,7 @@ Released on 5/22/2023.
 
 ### Breaking Changes
 
-* Analytics: Anomaly Detection analytics is obsoleted. You can still run the existing one but it doesn't guarantee the correct result anymore. 
+* Analytics: Anomaly Detection analytics is obsoleted. You can still run the existing one but it doesn't guarantee the correct result anymore.
 * Analytics: The "Coefficient (Significant)" tab in Linear Regression, Logistic Regression, Cox Regression, and GLM Regressions is obsoleted. Please use the "Coefficient" tab instead.
 
 ### Enhancements
@@ -36,15 +36,15 @@ Released on 5/22/2023.
 
 
 * Analytics: Now you can run the Power Analysis based on the t-Test and Chi-Square Test. (hideaki)
-* Analytics: In the Summary tab, now you can see the metric description by hovering a metric name on the table header and clicking the information ("i") icon. 
-* Analytics: Prophet: Now R-Squared value is available in the Summary tab. 
+* Analytics: In the Summary tab, now you can see the metric description by hovering a metric name on the table header and clicking the information ("i") icon.
+* Analytics: Prophet: Now R-Squared value is available in the Summary tab.
 * Analytics: Now you can use a custom color palette for the Analytics chart.
 * Analytics: Now you can view the Probability Distribution in Wilcoxon and Kruskal-Wallis Tests. (hideaki)
 * Analytics: Support Dunn's test with Kruskal-Wallis. (hideaki)
 
 
-* Note: Dashboard: Now you can add Button, YouTube, Tweet, and Rumble from the "+" button. 
-* Note: Now you can hide the border of the Pivot, Summarize Table, and Table by specifying the border="none" attribute. 
+* Note: Dashboard: Now you can add Button, YouTube, Tweet, and Rumble from the "+" button.
+* Note: Now you can hide the border of the Pivot, Summarize Table, and Table by specifying the border="none" attribute.
 * Note: Dashboard: Supported reordering Notes and Dashboards by Name or Updated Date at the left-hand side catalog tree.
 
 
@@ -68,9 +68,9 @@ Released on 5/22/2023.
 * Data Source: SQL Import Dialog: The Run button vertical alignment was off.
 
 
-* Summary View: If you create a chart from the Summary View, it should use "Light Blue" as a default color. 
+* Summary View: If you create a chart from the Summary View, it should use "Light Blue" as a default color.
 * Summary View: If you create a chart from the Correlation mode with the Prediction option, the created chart should show the Trend line.
-* Summary View: If you create a chart from the Character or Factor column, it should create a horizontal bar chart. 
+* Summary View: If you create a chart from the Character or Factor column, it should create a horizontal bar chart.
 * Summary View: When a custom R step did not return data, clicking the Summary Tab showed an Error Report Dialog.
 
 
@@ -98,7 +98,7 @@ Released on 5/22/2023.
 * Chart: Pivot: Summarize Table: Number: If you assign a logical column to the Value with the ratio aggregation function such as "TRUE Ratio", or "NA Ratio", the "Percentage (%)" formatting should be applied by default.
 * Chart: Scatter: Labels on the plot area didn't match with the actual data if you assigned a column for Repeat By and unchecked the Sync X-Axis checkbox.
 * Chart: Show Details: The spin icon did not show up after selecting an option from the 'Number of Rows to Display' pulldown list.
-* Chart: Pivot: Summarize Table: The number of decimal digits setting didn't apply for the numbers on the bucket labels like "< 0.63". 
+* Chart: Pivot: Summarize Table: The number of decimal digits setting didn't apply for the numbers on the bucket labels like "< 0.63".
 
 
 * Analytics: Chart: Clicking the Help icon always opens the English document. It should be UI locale sensitive.
