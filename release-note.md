@@ -24,11 +24,12 @@ Released on 5/22/2023.
 
 
 * Chart: You can set the default formatting setting such as font size, color palette, etc. from the System Settings dialog.
-* Chart: Supported Japanese help documents by cliking the help link.
+* Chart: Supported Japanese help documents by clicking the help link.
 
+* Analytics: Added Two-Way ANOVA.
 * Analytics: You can run the Power Analysis for t-Test and Chi-Square Test.
 * Analytics: In the Summary tab, you can click on the metrics to see the metric description.
-* Analytics: Supported Japanese help documents by cliking the help link.
+* Analytics: Supported Japanese help documents by clicking the help link.
 
 * Note: Dashboard: Now you can add Button, YouTube, Tweet, and Rumble from the "+" button.
 * Note: Dashboard: Supported reordering Notes and Dashboards by Name or Updated Date at the left-hand side catalog tree.
