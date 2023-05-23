@@ -4,8 +4,4 @@
 
 ## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
 
-<<<<<<< HEAD
 今週はいよいよExploratoryの次期バージョンであるv7.0をリリースする予定です。このセミナーでは、このv7.0の新機能をご紹介します！
-=======
-今週はいよいよExploratoryの次期バージョンであるv7.0をリリースする予定です。このセミナーでは、このv7.0の新機能をご紹介します！
->>>>>>> 4b42b6fbd8cab1ebbbc2dc555da893eb4ac841bb
