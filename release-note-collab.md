@@ -1,6 +1,6 @@
 # Release Note
 
-## 7.0.9
+## 7.0
 
 Released on 5/25/2023
 
@@ -13,7 +13,7 @@ Released on 5/25/2023
 
 * Parameter: Single Select LOV: Supported the 'Set all values when no value is selected' option.
 * Parameter: Multi Select LOV: Supported the 'Return All' and 'Return Empty' options for the 'Set all values when no value is selected' case.
-* Project: Now you can see what has been changed on each publish. 
+* Project: Now you can see what has been changed on each publish.
 
 ## Bug Fixes
 
@@ -42,10 +42,10 @@ Released on 2/28/2023
 
 ### Breaking Change
 
-The URL Sharing using a special URL has been discontinued. You can still use the special URLs that you currently have. The special URL will be disabled and removed if you disable the URL Sharing from the Share dialog on the individual insight page. 
+The URL Sharing using a special URL has been discontinued. You can still use the special URLs that you currently have. The special URL will be disabled and removed if you disable the URL Sharing from the Share dialog on the individual insight page.
 
 
-The new URL Sharing uses the main insight URL. Once you turn on URL Sharing, you can just copy the URL from the URL bar and send it to someone. Then she/he can access the insight without logging in. 
+The new URL Sharing uses the main insight URL. Once you turn on URL Sharing, you can just copy the URL from the URL bar and send it to someone. Then she/he can access the insight without logging in.
 
 ### Enhancements
 
@@ -84,7 +84,7 @@ Released on 10/19/2022.
 ### Bug Fixes
 
 * Super Table: The search input field was displayed too long and overlapped with the label next to it.
-* Insight: The style of the Show Detail dialog was not consistent with the one on the Exploratory Desktop. 
+* Insight: The style of the Show Detail dialog was not consistent with the one on the Exploratory Desktop.
 * Parameter: After typed in text to search field, parameter height was shrink where it should keep the original height.
 
 ## 6.11.0.5
@@ -93,19 +93,19 @@ Released on 9/28/2022.
 
 ### Enhancements
 
-* Insight: Now you can show the detail data by clicking a Chart on Dashboard and Note. 
+* Insight: Now you can show the detail data by clicking a Chart on Dashboard and Note.
 * Parameter: Supported the new List of Values widget for multi-select and single-select parameters.
 
 ### Bug Fixes
 
-* Insight: A notification was not sent to the team members when an insight was restored from the history even if you published the insight with the "Notify team members" option. 
+* Insight: A notification was not sent to the team members when an insight was restored from the history even if you published the insight with the "Notify team members" option.
 * Insight: Japanese characters were garbled if you opened a chart data CSV file exported from the Dashboard on Excel.
 * Insight: Now all the invited users can use the Parameter by default.
-* Insight: The information dialog showed duplicate data frame names on Dashboard and Note. 
+* Insight: The information dialog showed duplicate data frame names on Dashboard and Note.
 * Insight: You couldn't unsubscribe the team-owned insight and if you were a team member but not an original author.
 * Parameter: Now it doesn't include the number of rows processed by using Parameter in the total number of rows processed.
 * Parameter: Now it supports dynamic min and max dates for date parameters.
-* Scheduler: Dashboard scheduling failed if an R query returned 0 rows for a Chart in a Dashboard. 
+* Scheduler: Dashboard scheduling failed if an R query returned 0 rows for a Chart in a Dashboard.
 
 
 ## 6.10.4.6
