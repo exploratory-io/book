@@ -40,11 +40,6 @@ Released on 5/25/2023
 
 Released on 2/28/2023
 
-### Download
-
-* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.12.3.6.tar.gz)
-* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.12.3.6.tar.gz)
-
 ### Breaking Change
 
 The URL Sharing using a special URL has been discontinued. You can still use the special URLs that you currently have. The special URL will be disabled and removed if you disable the URL Sharing from the Share dialog on the individual insight page. 
