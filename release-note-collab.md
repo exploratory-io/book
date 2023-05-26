@@ -13,28 +13,29 @@ Released on 5/25/2023
 
 * Parameter: Single Select LOV: Supported the 'Set all values when no value is selected' option.
 * Parameter: Multi Select LOV: Supported the 'Return All' and 'Return Empty' options for the 'Set all values when no value is selected' case.
-* Project: Now you can see what has been changed on each publish.
+* Parameter: Enabled the Data Download button regardless of the Download option.
+
+
+* Project: Now you can see what has been changed by each project publish at the project page.
+
+
+* Scheduler: Now you can configure the HTTP request timeout.
+
+
+* Stats / Insight Page: Improved the page generation performance for the Insight Search page and the Stats dialog.
+* Stats Page: Translated the Stats dialog for Japanese.
+
 
 ## Bug Fixes
 
-* Admin: 'Add Team Members' dialog should be translated.
-* Admin: User Tables: Column sort icons were not vertically aligned.
-* General: 'Enterprise' plan name should be 'Business'.
-* General: Troubleshooting and Function Reference links in the navigation menu were incorrect.
-* Insight: Discussion widget showed up at the top of the page for a while if you updated the Parameter.
-* Insight: Loading of the insight search page was slow.
-* Insight: Loading of the stats information was slow in the Stats dialog.
 * Insight: Restoring a team-owned project by the other team member didn't work and showed an error.
 * Insight: Schedule icon didn't show up on the Dashboard page if it was shared an insight as a team and the URL share was enabled.
-* Insight: Searching insights by 'tag: note' (space between 'tag:' and keyword) didn't work as expected.
-* Insight: Stats dialog should be translated.
-* Insight: View button shouldn't show up in the Version History dialog of a published Note because the thumbnail is not supported in Notes.
-* Parameter: Change the CSV file name for the data file downloaded from the parameter pane to the name of the insight.
-* Parameter: Enabled the Data Download button regardless of the Download option.
-* Parameter: The list of values parameter width is narrow on mobile phones.
+
+
+* Parameter: The list of values parameter width was narrower than what's supposed to be on mobile phones.
 * Parameter: When publishing contents with parameters, the parameter values were not set correctly.
-* Parameter: When parameters had a parent and child relationship, the child parameter did not get updated after the parent * parameter value is changed for some occasions.
-* Scheduler: HTTP request timeout should be configurable.
+* Parameter: When parameters had a parent and child relationship, the child parameter did not get updated after the parent parameter value was changed for some occasions.
+
 
 ## 6.12.3.6
 
