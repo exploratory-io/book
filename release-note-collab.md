@@ -1,5 +1,41 @@
 # Release Note
 
+## 7.0.9
+
+Released on 5/25/2023
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-7.0.9.tar.gz)
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-7.0.9.tar.gz)
+
+### Enhancements
+
+Parameter: Single Select LOV: Supported the 'Set all values when no value is selected' option.
+Parameter: Multi Select LOV: Supported the 'Return All' and 'Return Empty' options for the 'Set all values when no value is selected' case.
+Project: Now you can see what has been changed on each publish. 
+
+## Bug Fixes
+
+Admin: The 'Add Team Members' dialog should be translated.
+Admin: User Tables: Column sort icons were not vertically aligned.
+General: 'Enterprise' plan name should be 'Business'.
+General: Troubleshooting and Function Reference links in the navigation menu were incorrect.
+Insight: Discussion widget showed up at the top of the page for a while if you updated the Parameter.
+Insight: Loading of the insight search page was slow.
+Insight: Loading of the stats information was slow in the Stats dialog.
+Insight: Restoring a team-owned project by the other team member didn't work and showed an error.
+Insight: Schedule icon didn't show up on the Dashboard page if it was shared an insight as a team and the URL share was enabled.
+Insight: Searching insights by 'tag: note' (space between 'tag:' and keyword) didn't work as expected.
+Insight: Stats dialog should be translated.
+Insight: View button shouldn't show up in the the Version History dialog of a published Note because thumbnail is not supported in Notes.
+Parameter: Change the CSV file name for the data file downloaded from the parameter pane to the name of the insight.
+Parameter: Enabled the Data Download button regardless of the Download option.
+Parameter: List of values width is narrow on mobile phone.
+Parameter: When publishing contents with parameters, the parameter values were not set correctly.
+Parameter: When parameters had parent and child relationship, the child parameter did not get updated after the parent parameter value is changed for some occasions.
+Scheduler: HTTP request timeout should be configurable. 
+
 ## 6.12.3.6
 
 Released on 2/28/2023
