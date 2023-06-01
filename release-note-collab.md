@@ -1,20 +1,52 @@
 # Release Note
 
+## 7.0
+
+Released on 5/25/2023
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-7.0.9.tar.gz)
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-7.0.9.tar.gz)
+
+### Enhancements
+
+* Parameter: Single Select LOV: Supported the 'Set all values when no value is selected' option.
+* Parameter: Multi Select LOV: Supported the 'Return All' and 'Return Empty' options for the 'Set all values when no value is selected' case.
+* Parameter: Enabled the Data Download button regardless of the Download option.
+
+
+* Project: Now you can see what has been changed by each project publish at the project page.
+
+
+* Scheduler: Now you can configure the HTTP request timeout.
+
+
+* Stats / Insight Page: Improved the page generation performance for the Insight Search page and the Stats dialog.
+* Stats Page: Translated the Stats dialog for Japanese.
+
+
+## Bug Fixes
+
+* Insight: Restoring a team-owned project by the other team member didn't work and showed an error.
+* Insight: Schedule icon didn't show up on the Dashboard page if it was shared an insight as a team and the URL share was enabled.
+
+
+* Parameter: The list of values parameter width was narrower than what's supposed to be on mobile phones.
+* Parameter: When publishing contents with parameters, the parameter values were not set correctly.
+* Parameter: When parameters had a parent and child relationship, the child parameter did not get updated after the parent parameter value was changed for some occasions.
+
+
 ## 6.12.3.6
 
 Released on 2/28/2023
 
-### Download
-
-* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-6.12.3.6.tar.gz)
-* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-6.12.3.6.tar.gz)
-
 ### Breaking Change
 
-The URL Sharing using a special URL has been discontinued. You can still use the special URLs that you currently have. The special URL will be disabled and removed if you disable the URL Sharing from the Share dialog on the individual insight page. 
+The URL Sharing using a special URL has been discontinued. You can still use the special URLs that you currently have. The special URL will be disabled and removed if you disable the URL Sharing from the Share dialog on the individual insight page.
 
 
-The new URL Sharing uses the main insight URL. Once you turn on URL Sharing, you can just copy the URL from the URL bar and send it to someone. Then she/he can access the insight without logging in. 
+The new URL Sharing uses the main insight URL. Once you turn on URL Sharing, you can just copy the URL from the URL bar and send it to someone. Then she/he can access the insight without logging in.
 
 ### Enhancements
 
@@ -53,7 +85,7 @@ Released on 10/19/2022.
 ### Bug Fixes
 
 * Super Table: The search input field was displayed too long and overlapped with the label next to it.
-* Insight: The style of the Show Detail dialog was not consistent with the one on the Exploratory Desktop. 
+* Insight: The style of the Show Detail dialog was not consistent with the one on the Exploratory Desktop.
 * Parameter: After typed in text to search field, parameter height was shrink where it should keep the original height.
 
 ## 6.11.0.5
@@ -62,19 +94,19 @@ Released on 9/28/2022.
 
 ### Enhancements
 
-* Insight: Now you can show the detail data by clicking a Chart on Dashboard and Note. 
+* Insight: Now you can show the detail data by clicking a Chart on Dashboard and Note.
 * Parameter: Supported the new List of Values widget for multi-select and single-select parameters.
 
 ### Bug Fixes
 
-* Insight: A notification was not sent to the team members when an insight was restored from the history even if you published the insight with the "Notify team members" option. 
+* Insight: A notification was not sent to the team members when an insight was restored from the history even if you published the insight with the "Notify team members" option.
 * Insight: Japanese characters were garbled if you opened a chart data CSV file exported from the Dashboard on Excel.
 * Insight: Now all the invited users can use the Parameter by default.
-* Insight: The information dialog showed duplicate data frame names on Dashboard and Note. 
+* Insight: The information dialog showed duplicate data frame names on Dashboard and Note.
 * Insight: You couldn't unsubscribe the team-owned insight and if you were a team member but not an original author.
 * Parameter: Now it doesn't include the number of rows processed by using Parameter in the total number of rows processed.
 * Parameter: Now it supports dynamic min and max dates for date parameters.
-* Scheduler: Dashboard scheduling failed if an R query returned 0 rows for a Chart in a Dashboard. 
+* Scheduler: Dashboard scheduling failed if an R query returned 0 rows for a Chart in a Dashboard.
 
 
 ## 6.10.4.6

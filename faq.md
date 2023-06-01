@@ -18,9 +18,12 @@ You can find it on [the pricing page](https://exploratory.io/pricing).
 
 ## How can I pay?
 
-You can pay for the subscription with your credit card from the [plan page](https://exploratory.io/plan).
+The most simplest way is to pay with your credit card from the [plan page](https://exploratory.io/plan).
 
-Also, you can pay via a bank wiring. Please contact support@exploratory.io for the purchase request. We will send you an invoice with the bank wiring information. Note that this is only for the Yearly subscription.
+We support issuing invoices and receipts with either credit card or bank wiring for the payment as well. But this requires the Business Plan or greater with annual subscriptions. Please take a look at the following document for more detail.
+
+* How to Buy Exploratory Subscription Licenses with Invoice - [Link](https://exploratory.io/note/kanaugust/How-to-Buy-Exploratory-Subscription-Licenses-with-Invoice-FWS2vOl9mP)
+
 
 ## How is the currency for the payment?
 
@@ -42,31 +45,31 @@ When you upgrade, the prorated amount difference for the rest of the period will
 
 A receipt will be delivered to your email address every time the charge is made.
 
-## How can I get a receipt in a different format? 
+## How can I get a receipt in a different format?
 
-We issue a customized version of recept upon requests for Business plan users. Please contact [us](mailto:support@exploratory.io). 
+We issue a customized version of receipt upon requests for Business plan users. Please contact [us](mailto:support@exploratory.io).
 
-## How can I get an invoice? 
+## How can I get an invoice?
 
-We issue an invoice upon requests for Business plan users. Please contact [us](mailto:support@exploratory.io). 
+We issue an invoice upon requests for Business plan users. Please contact [us](mailto:support@exploratory.io).
 
-## How can I change my plan? 
+## How can I change my plan?
 
-First, you can open the [Account Setting Page](https://exploratory.io/account/settings). You need to login to open this page. Click the "Upgrade Plan" link below the plan box. 
+First, you can open the [Account Setting Page](https://exploratory.io/account/settings). You need to login to open this page. Click the "Upgrade Plan" link below the plan box.
 
 <img src="https://raw.githubusercontent.com/exploratory-io/book/master/images/payment1.png" style="width:100%"/>
 
-Then, it opens up the Plan page. Click to select a new plan that you want. If the new plan is a paid plan, choose a payment term (yearly or monthly) and payment method info. If you are still in a trial period, you don't need to enter the payment method now. 
+Then, it opens up the Plan page. Click to select a new plan that you want. If the new plan is a paid plan, choose a payment term (yearly or monthly) and payment method info. If you are still in a trial period, you don't need to enter the payment method now.
 
 <img src="https://raw.githubusercontent.com/exploratory-io/book/master/images/payment2.png" style="width:100%"/>
 
-You can check whether you are still in a trial period or not by looking at the top right of the Plan page. 
+You can check whether you are still in a trial period or not by looking at the top right of the Plan page.
 
 <img src="https://raw.githubusercontent.com/exploratory-io/book/master/images/payment3.png" style="width:100%"/>
 
-Once you update the info, check out the "Terms for the Service" and check the checkbox, then click the "Upgrade plan" to finalize it. 
+Once you update the info, check out the "Terms for the Service" and check the checkbox, then click the "Upgrade plan" to finalize it.
 
-If you see the "You plan is updated" message, the plan update is done. If you see any error, problem, or any questions, please feel free to contact [us](mailto:support@exploratory.io). 
+If you see the "You plan is updated" message, the plan update is done. If you see any error, problem, or any questions, please feel free to contact [us](mailto:support@exploratory.io).
 
 <img src="https://raw.githubusercontent.com/exploratory-io/book/master/images/payment4.png" style="width:100%"/>
 
@@ -76,9 +79,21 @@ If you see the "You plan is updated" message, the plan update is done. If you se
 
 You can cancel the plan anytime from your account page with just a click of a button. Your subscription will expire at the end of the current subscription period.
 
-## I'm currently a student at my school, but I have mistakenly started a trial for non-Community plan. How can I fix?
+## I'm currently a student or a teacher at my school and want to use Exploratory for my studying or teaching.
 
-You can cancel the plan first, then click 'Upgrade' button at your account page. You will see 'Community' option available this time, and you can select it and fill the forms to apply for the Community plan.
+You can use the Academic plan, which is for free. The Academic plan is for students and teachers who are currently studying or teaching at schools.
+
+When you sign up you need to use the accredited school email address. Once your school email is validated then you'll have your account that is setup for the Academic plan.
+
+We will send you an email once in a half year to confirm your current status at the school. You can confirm by clicking a button in the email if you are still at a school and would like to continue using it.
+
+If your school is not registered at Exploratory, you can request it by clicking a link at the sign up page.
+
+
+
+## I'm currently a student or a teacher at my school, but I have mistakenly started with a different plan. How can I switch to the Academic plan?
+
+You can switch the plan quickly. Here's [an instruction](https://community.exploratory.io/t/how-to-change-your-plan-to-the-community-plan/2006) of how you switch it.
 
 # Install / Upgrade
 
@@ -184,4 +199,4 @@ We have a [community page](https://community.exploratory.io) to raise any questi
 
 ## What is the best way to keep myself updated with the news?
 
-Please follow [@ExploratoryData](https://twitter.com/ExploratoryData) at Twitter or subscribe our blog: http://blog.exploratory.io .
+Please follow [@ExploratoryData](https://twitter.com/ExploratoryData) at Twitter!

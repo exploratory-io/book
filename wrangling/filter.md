@@ -1,33 +1,14 @@
 # Filter
+
 Return rows with matching conditions
 
-## How to Access This Feature
-
-### From + (plus) Button
-![](images/command-filter-df-menu.png)
-
-* Click "+" button and select "Filter".
-
-### From Column Menu
-![](images/command-filter-column-menu.png)
-
-* You can also select "Filter" from column menu of the column to apply filtering, and then select its submenu to choose the type of filtering.
-
-## Filter by Selecting Filtering Rule from UI
-![](images/filter.png)
-
-1. Select "Column" tab.
-2. Select the column to apply the filtering condition from "Column" dropdown list.
-3. Select operator for filtering condition from "Operator" dropdown list.
-4. (Optional) Ignore Case - For Character related operators, you can enable Ignore Case to do case insensitive filtering.
-4. Specify the detail of filtering condition by filling the rest of the fields in the dialog box. For "equal to" or "not equal to" condition value, you can either select (or type) value or select Parameter.
-6. Click "Run" to filter the rows based on the condition.
 
 ### Operators
 
-When creating a filter, Exploratory Desktop supports below operators for each column data type.
+When creating a filter, Exploratory supports below operators for each column data type.
 
 #### Numeric
+
 - Equal To
 - Not Equal To
 - Is In (Multiple Values)
@@ -53,6 +34,7 @@ So if you select "Is Outlier" and "95 Percentile" as Type of Detection, and "Upp
 
 
 #### Character
+
 - Starts With
 - Not Starts With
 - Ends With
@@ -69,6 +51,7 @@ So if you select "Is Outlier" and "95 Percentile" as Type of Detection, and "Upp
 - Not NA
 
 ### Date / Time
+
 - Relative Date
 - Equal To
 - Not Equal To
@@ -82,11 +65,10 @@ So if you select "Is Outlier" and "95 Percentile" as Type of Detection, and "Upp
 - Not Between
 - Is NA
 - Not NA
-  
-#### Date
-- Keep 
+
 
 ## Filter by Custom R Expression
+
 ![](images/filter_custom.png)
 
 1. Select "Custom" tab.
