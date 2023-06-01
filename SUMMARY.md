@@ -210,7 +210,7 @@
      * [Color and Group Setting](viz/color.md)
      * [Color and Group Setting (日本語)](viz/color-ja.md)
      * [Color Setting](viz/color-dialog.md)
-     * [Custom Palette Setting](viz/custom-palette.md)
+     * [User Color Palette Setting](viz/custom-palette.md)
      * [Pin](viz/pin.md)
      * [Save as PNG/SVG](viz/save.md)
      * [Save as Exploratory Data File](viz/save-as-edf.md)

@@ -20,7 +20,7 @@ You can set up the color palette in this section.
 
 The following options are available.  
 
-* Color Palette - You can select which color palette to use. It shows the system-defined palettes and your custom palettes. 
+* Color Palette - You can select which color palette to use. It shows the system-defined palettes and user-defined palettes. 
 * Color Direction - How you want to apply the colors on the palette. The default is "Left to Right". 
 * Opacity - You can set the color opacity.
 
@@ -34,9 +34,9 @@ You can use the Highlight Mode to highlight specific categories that you pick. Y
 
 ![](images/colorgroup8.png)
 
-### Edit Custom Palette
+### Edit User Color Palette
 
-You can add/edit your custom palette by selecting the "Edit Custom Color Palette" menu at the bottom of the Color Palette dropdown. See [Custom Palette](custom-palette.md) for how to use the Custom Palette dialog. 
+You can add/edit your color palette by selecting the "Edit Custom Color Palette" menu at the bottom of the Color Palette dropdown. See [User Color Palette](custom-palette.md) for how to use the User Color Palette dialog. 
 
 
 

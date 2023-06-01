@@ -17,15 +17,22 @@ The following options are available.
 
 ## Customize the color palette
 
-You can create your own color palettes from the Custom Palette dialog. Here is how to open the Custom Palette dialog. 
+You can create your own color palettes from the User Color Palette dialog. Here is how to open the User Color Palette dialog. 
 
-* Select 'Custom' from Color Palette dropdown.
-* Click "Edit" right next to the "Custom Color Palette" to open the Color Palette dialog. 
+* Scroll down the Color Palette dropdown menu to the bottom.
+* Select "Add/Edit Color Palette". 
 
-![](images/build_palette1.png)
+![](images/build_palette1a.png)
 
 
-See [Custom Palette](custom-palette.md) for how to use the Custom Palette dialog.
+
+You can also access the User Color Palette dialog from the project menu dropdown.
+
+![](images/build_palette1b.png)
+
+
+
+See [User Color Palette](custom-palette.md) for how to use the User Color Palette dialog.
 
 
 
