@@ -7,6 +7,10 @@ You can quickly import data from your Snowflake into Exploratory.
 
 To use the Snowflake Data Source, you need to install ODBC driver.
 
+If you use Mac with Apple Silicon (M1/M2), you need to install the ODBC driver for architecture macaarch64.
+
+![](images/snowflake-arm-odbc.png)
+
 ### Install ODBC Driver for Windows
 
 To Install ODBC Driver for Snowflake for Windows, please follow the [instruction](https://docs.snowflake.com/en/user-guide/odbc-windows.html) 
@@ -40,6 +44,19 @@ SQLLEN Size........: 8
 SQLSETPOSIROW Size.: 8
 ```
 
+if you use Mac with Apple Silicon (M1/M2), you might see slight different location like below.
+
+```sh
+unixODBC 2.3.11
+DRIVERS............: /opt/homebrew/etc/odbcinst.ini
+SYSTEM DATA SOURCES: /opt/homebrew/etc/odbc.ini
+FILE DATA SOURCES..: /opt/homebrew/etc/ODBCDataSources
+USER DATA SOURCES..: /Users/hidekoji/.odbc.ini
+SQLULEN Size.......: 8
+SQLLEN Size........: 8
+SQLSETPOSIROW Size.: 8
+```
+
 So add the below to the odbcinst.ini file
 
 ```sh
@@ -52,7 +69,21 @@ DriverODBCVer=03.52
 SQLLevel=1
 ```
 
+if you use Mac with Apple Silicon (M1/M2), driver path is different so it looks like this.
+
+```sh
+[SnowflakeDSIIDriver]
+APILevel=1
+ConnectFunctions=YYY
+Description=Snowflake DSII
+Driver=/opt/snowflake/snowflakeodbc/lib/libSnowflake.dylib
+DriverODBCVer=03.52
+SQLLevel=1
+```
+
 Open the Snowflake ODBC config file located at `/opt/snowflake/snowflakeodbc/lib/universal/simba.snowflake.ini`
+
+For Mac with Apple Silicon (M1/M2), the location is `/opt/snowflake/snowflakeodbc/lib/simba.snowflake.ini`
 
 Make sure that unixODBC section points to the `libodbcinst.dylib` file which is installed with homebrew.
 Please note the location of the `libodbcinst.dylib` varies per installation.
@@ -62,6 +93,13 @@ Please note the location of the `libodbcinst.dylib` varies per installation.
 #ODBCInstLib=libodbcinst.a(libodbcinst.so.1)
 ODBCInstLib=/usr/local/lib/libodbcinst.dylib
 
+```
+
+For Mac with Apple Silicon (M1/M2), the library file location is `/opt/homebrew/lib/libodbcinst.dylib` by default.
+
+```sh
+#   unixODBC
+ODBCInstLib=/opt/homebrew/lib/libodbcinst.dylib
 ```
 
 ## 1. Create a connection for Snowflake 
