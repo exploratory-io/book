@@ -1,5 +1,44 @@
 # Release Note
 
+
+## 7.1
+
+Released on 6/12/2023.
+
+### Bug Fixes
+
+
+* Data Source: Excel: When a sheet name is a number, it raised a "Can't retrieve sheet in position" error and could not import the sheet.
+* Data Source: Obsolete Twitter Data Source.
+* Data Source: Windows: The 'Import and Merge' option did not work if the file name or folder name contained non-ASCII characters. 
+
+
+* Summary View: Correlation mode: Blank screen showed up if you had more than 100 columns and applied the sorting.
+* Summary View: Correlation mode: Hover popup on the chart overflowed if you had long text data in a text column. 
+
+
+* Data Wrangling: Replace Values with Condition: When you checked the 'Keep order as factor data type' and changed the new data type to numeric it showed unexpected NA in the result.
+* Data Wrangling: When parameters had a parent/child relationship, the child parameter values were filled with all the available options when it should just show the 'Select None'.
+
+
+* Chart: “Add/Edit Color Palette” menu didn't show up if there was no user palette defined yet.
+* Chart: Color Palette: The default color palette was ignored if you assigned a numeric column and chose the “As Discrete Numeric” function at the Color of Bar chart. 
+* Chart: Other Group: Error dialog showed up if you selected the "Selected Values" for "Candidates for 'Others'" option and hit the "Apply" button without choosing values.
+* Chart: Pivot: Summarize Table: If you set it to show the function names on the header and changed the column width, function names disappeared. 
+* Chart: The threshold value for the Show Values on Plot should take a ratio value instead of a percentage value if you showed values in percentage. 
+* Chart: Pivot: Summarize Table: Condition values for the Conditional Color Formatting should take a ratio value instead of a percentage value if you showed values in percentage. 
+* Chart: Pivot: Summarize Table: Numeric aggregation functions such as "Mean" should be available for the additional totals even if you use non-numeric columns to Values as long as those columns return numeric values such as "Unique Count".  
+
+
+* Note: Pressing the escape key on the Note editor changed the mode from 'Side-by-Side' to 'Single View' and corrupted the layout.
+
+
+* General: Exploratory Desktop did not start up and hang when there were invalid connection files in the repository.
+* Installation: When required R core package loading failed, now it shows a dialog from where users can reset the R core packages.
+
+
+
+
 ## 7.0
 
 Released on 5/22/2023.
