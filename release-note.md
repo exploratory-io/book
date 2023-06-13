@@ -34,7 +34,7 @@ Released on 6/12/2023.
 * Chart: Pivot: Summarize Table: If you set it to show the function names on the header and changed the column width, function names disappeared.
 * Chart: The threshold value for the Show Values on Plot should take a ratio value instead of a percentage value if you showed values in percentage.
 * Chart: Pivot: Summarize Table: Condition values for the Conditional Color Formatting should take a ratio value instead of a percentage value if you showed values in percentage.
-* Chart: Pivot: Summarize Table: Numeric aggregation functions such as "Mean" should be available for the additional totals even if you use non-numeric columns to Values as long as those columns return numeric values such as "Unique Count".  
+* Chart: Pivot: Summarize Table: Numeric aggregation functions such as "Mean" should be available for the additional totals even if you use non-numeric columns to Values as long as those columns return numeric values such as "Unique Count" and "Data After Aggregation" is set.  
 
 
 * Note: Pressing the escape key on the Note editor changed the mode from 'Side-by-Side' to 'Single View' and corrupted the layout.
