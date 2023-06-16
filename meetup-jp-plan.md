@@ -19,4 +19,4 @@ Exploratoryの最新情報のアップデートと、ユーザー様によるExp
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/f1drlsukf8qzhki/Agenda_v3.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/u5lme9p19mxqg6u/Agenda-v4.png?raw=1" width="100%" />
