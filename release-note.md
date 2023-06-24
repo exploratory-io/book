@@ -1,5 +1,37 @@
 # Release Note
 
+## 7.2
+
+Released on 6/24/2023.
+
+### Enhancements
+
+* Data Source: Snowflake: Supported the Role parameter for Snowflake data connection.
+
+
+* Data Wrangling: Merge: Supported the 'Column Index as Column Name' option.
+
+
+### Bug Fixes
+
+* Data Source: Excel: Selecting a sheet whose name starts with a number ended up importing other sheets in the Excel file.
+* Data Source: Excel: Import and merge for all files in a folder failed if there was a temporary Excel file in the folder. 
+* Data Source: Local Files: Import and Merge: Search Condition "Starts With" did not work.
+
+
+* Chart: Bar: Sort didn't work under some conditions on a Bar chart with the "% of" window calculation.
+
+
+* Analytics: Chi-Square: Show Cohen's W in the Summary tab.
+* Analytics: t-Test: Japanese translation is missing for some of the section titles in the property dialog.
+* Analytics: t-Test: Japanese translation is missing for the "Target Type 2 Error" column header in the Summary tab. 
+
+
+* Dashboard: Note: Selecting the "Export Chart Data" menu on a chart in a published Dashboard/Note didn't start the data download.
+
+
+* Project: Exporting a project didn't work when there were unnecessary temporary files in the project folder.
+
 
 ## 7.1
 
