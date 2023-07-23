@@ -507,6 +507,11 @@
       "desc": "コラボレーションの事例を紹介します。",
       "insights": [
         {
+         "title": "データ分析業務効率化のためのコラボレーションサーバー活用",
+         "desc": "データサイエンス勉強会#26のスズキ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-QWT7SFS0"
+        },
+        {
          "title": "コラボレーション・サーバーの活用例",
          "desc": "データサイエンス勉強会#13のBeacon Communications様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-Beacon-Communications-bUX3YgA6"
