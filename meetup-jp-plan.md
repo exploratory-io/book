@@ -1,6 +1,6 @@
 # # 29 - 2023年9月29日(金) in 東京
 
-<img src="https://www.dropbox.com/scl/fi/bwrlhpno0hygp3l7kr5a6/Cover.jpeg?raw=1" width="100%"/>
+<img src="https://www.dropbox.com/s/bwrlhpno0hygp3l7kr5a6/Cover.jpeg?raw=1" width="100%"/>
 
 <br>
 
@@ -18,4 +18,5 @@ Exploratoryの最新情報のアップデートと、ユーザー様によるExp
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/scl/fi/5f5ikbuhvp0jzjc8l4eo3/Agenda_v1.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/s/5f5ikbuhvp0jzjc8l4eo3/Agenda_v1.png?raw=1" width="100%" />
+
