@@ -1,6 +1,6 @@
-# # 28 - 2023年6月23日(金) in 東京
+# # 29 - 2023年9月29日(金) in 東京
 
-<img src="https://www.dropbox.com/s/rkby1xwjk0evptv/Top.001.jpeg?raw=1" width="100%"/>
+<img src="https://www.dropbox.com/scl/fi/bwrlhpno0hygp3l7kr5a6/Cover.jpeg?raw=1" width="100%"/>
 
 <br>
 
@@ -12,11 +12,10 @@ Exploratoryの最新情報のアップデートと、ユーザー様によるExp
 
 ## 開催要項
 
-* 日時: 2023年6月23日 (金) 18:00 - 20:00（17:45開場）、20:00 - 22:00 懇親会
-* 会場: TKP品川カンファレンスセンター（東京都港区高輪3-25-23 京急第2ビル）
-  
-* 参加方法: [こちら](https://exploratory.io/note/exploratory/Exploratory-28-in-bFZ4spD1)のページよりお申し込みください。
+* 日時: 2023年9月29日 (金) 18:00 - 20:00（17:45開場）、20:00 - 22:00 懇親会
+* 会場: 未定
+* 参加方法: [こちら](https://exploratory.io/note/exploratory/Exploratory-29-in-AiQ3MDq5)のページよりお申し込みください。
 
 ## アジェンダ
 
-<img src="https://www.dropbox.com/s/u5lme9p19mxqg6u/Agenda-v4.png?raw=1" width="100%" />
+<img src="https://www.dropbox.com/scl/fi/5f5ikbuhvp0jzjc8l4eo3/Agenda_v1.png?raw=1" width="100%" />
