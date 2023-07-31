@@ -5,7 +5,7 @@
 
 When you see differences in means of multiple groups you want to know if the difference is something special that you need to pay attention or it is marginal that you should move on.
 
-This is when ANOVA Test, which is one of the Statistical Test methods that is used to test if the difference in means among multiple groups is significant or not.
+This is when you want to use ANOVA Test. It is one of the Statistical Test methods that is used to test if the difference in means among multiple groups is significant or not.
 
 In this seminar, we'll introduce the basics of ANOVA including the mechanics behind the test, effect size, and post-hoc analysis.
 
