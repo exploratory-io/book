@@ -1,6 +1,6 @@
 # # 29 - 2023年9月29日(金) in 東京
 
-<img src="https://dl.dropboxusercontent.com/s/bwrlhpno0hygp3l7kr5a6/Cover.jpeg" width="100%"/>
+<img src="https://dl.dropboxusercontent.com/s/bwrlhpno0hygp3l7kr5a6/Cover.jpeg?rlkey=tkodx0msqp6dvgx3xagee46xd&dl=0" width="100%"/>
 
 <br>
 
