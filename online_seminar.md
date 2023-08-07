@@ -5,11 +5,11 @@
 
 This is the second part of ANOVA Introduction series.
 
-Let's say you are interested in knowing if there is a difference in performance among multiple schools. As we have seen in the 'ANOVA Part 1' seminar, you can use One-Way ANOVA to test if the difference in the multiple means of the performance is significant or not.
+With One-Way ANOVA you can test the difference in the target variable has anything to do with the explanatory variable.
 
-But, what if the difference might be also coming from another factor like students demographic background such as Sex, Race, Parents Income, etc. and not just the school difference?
+But, what if the difference is also coming from another factor?
 
-This is when you want to use Two-Way ANOVA which lets you bring in another categorical variable to test. With Two-Way ANOVA, you can not only see if each of the explanatory variables is significant, but also see if the interaction between the two explanatory variables is significant or not.
+This is when you want to use Two-Way ANOVA which lets you bring in another explanatory variable and see if each of the explanatory variables is significant and how they are related to the target variable.
 
 In this seminar, Kan will introduce the Two-Way ANOVA and demonstrate how you can use it and understand the result.
 
@@ -25,7 +25,7 @@ This is a part of the Hypothesis Testing series. We'd encourage you take a look 
 
 ----
 
-# Seminar #94 - Reporting Automation with Exploratory 
+# Seminar #94 - Reporting Automation with Exploratory
 ## Date/Time: 8/16/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
