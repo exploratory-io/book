@@ -1,22 +1,3 @@
-# Seminar #94 - Reporting Automation with Exploratory
-## Date/Time: 8/16/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
-## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-The number one reason why data scientists / analysts can't analyze data enough is because they have to spend most of their time on creating reports and charts everyday, every week, or month. And this work required for creating reports tends to be dumped on a few individuals, which would become a bottleneck for organizations to generate enough business insights for improving their businesses.  
-
-This is why automating the reports creation work is critical for any organizations not just for saving the time and the cost but also for creating more time for explore and analyze data to discover useful insights for improving their business.
-
-In this seminar, Kan will discuss why automating reports creation should be the top priority for any data driven organizations and demonstrate how you can automate it with Exploratory.
-
-Agenda:
-
-- What are the problems with Reports Creation
-- How you can solve them with Reporting Automation with Exploratory
-- Successful use case study
-
-
-----
 
 # Seminar #95 - Data Visualization - When to Use Which Chart?
 ## Date/Time: 8/23/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
@@ -24,7 +5,19 @@ Agenda:
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
 
+You might be familiar with the standard chart types such as Bar, Line, Pie, etc. But in Exploratory, there are many other chart types to choose from.
+
+You might be wondering what they are and which ones to choose from to visualize your data in the best way.
+
+In this seminar, Kan will discuss what those chart types are, what they are good at, and when you want to use them, and show you how to use them.
+
 Agenda:
+
+- Visualize Summarized Data
+- Visualize Variance
+- Visualize Correlation
+- Visualize Geographical Data
+- Visualize Text Data
 
 
 ----
