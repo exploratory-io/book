@@ -4,6 +4,11 @@
 
 Released on 8/29/2023.
 
+### Breaking Changes
+
+* Data Wrangling: Added support for the Decimals parameter for the Create Categories command and changed the output format to match the Chart Category feature.  
+
+
 ### Enhancements
 
 
@@ -11,12 +16,12 @@ Released on 8/29/2023.
 - Data Source: SQL: Now SQL Data Import runs as a background process and does not block the user interface. 
 
 
-- Data Wrangling: Fill NA With: Supported Fill NA With Today and Specific Date options. 
+- Data Wrangling: Fill NA With: Supported Fill NA with Today and Specific Date options. 
 - Data Wrangling: Filter: Supported the Last N month/week/day from the last day of the data. 
 - Data Wrangling: Improved the Step label and popup text readability. 
 - Data Wrangling: Join: Now it supports the option to exclude missing values in the join target data frame. 
 - Data Wrangling: Make this row as column header: Supported the 'Re-Evaluate Data Types for All Columns' parameter. 
-
+- Data Wrangling: Merge: Improved error message to indicate which target data frame the problem is coming from.
 
 - Chart: Now you can change the axis line color thickness. 
 - Chart: Now you can choose which column to show values on the plot area. 
