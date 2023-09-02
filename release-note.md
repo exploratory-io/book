@@ -6,7 +6,7 @@ Released on 8/29/2023.
 
 ### Breaking Changes
 
-* Data Wrangling: Added support for the Decimals parameter for the Create Categories command and changed the output format to match the Chart Category feature.  
+* Data Wrangling: Create Category: The output format has been changed to match the Chart Category feature.   
 
 
 ### Enhancements
@@ -22,6 +22,8 @@ Released on 8/29/2023.
 - Data Wrangling: Join: Now it supports the option to exclude missing values in the join target data frame. 
 - Data Wrangling: Make this row as column header: Supported the 'Re-Evaluate Data Types for All Columns' parameter. 
 - Data Wrangling: Merge: Improved error message to indicate which target data frame the problem is coming from.
+- Data Wrangling: Now you can set the Decimals parameter for the Create Categories command.
+
 
 - Chart: Now you can change the axis line color thickness. 
 - Chart: Now you can choose which column to show values on the plot area. 
@@ -31,9 +33,11 @@ Released on 8/29/2023.
 - Chart: Now you can extract the "Year-Month" from the Date/POSIXct values. 
 - Chart: Now you can use "yyyy/mm" and "yy/mm" date formattings in the Axis Formatting dialog. 
 - Chart: Now you can set the angle to the axis labels. 
+- Chart: Now you can set the thousand separator setting at the axis level.
 - Chart: Bar: Now you can sort bars by the first color category if you assign a column to Color. 
 - Chart: Highlight: Now you can keep the original legend order even if you apply the highlight. 
 - Chart: Histogram: Density Plot: Boxplot: Violin Plot: Map - Standard: Map - Extension: Map - Long/Lat: Heatmap: Contour: Number formatting support. 
+- Chart: Map: Now the map shows names in Japanese if the UI locale is in Japanese. 
 - Chart: Pie: Now you can apply different decimal digit settings on values and percentages. 
 - Chart: Pivot Table: Now you can hide the column header title. 
 - Chart: Pivot Table: Now you can set the horizontal text alignment on the column header text. 
@@ -43,6 +47,7 @@ Released on 8/29/2023.
 - Chart: Now you can move the chart property dialog by drag-and-drop. 
 
 
+- Analytics: K-Means Clustering: Boxplot should use the original values instead of the normalized values if the "Normalize Variable" option is set to FALSE.
 - Analytics: Now 2-way ANOVA, ANCOVA, and Correspondence Analysis are available. 
 
 
@@ -58,11 +63,16 @@ Released on 8/29/2023.
 ### Bug Fixes
 
 
+- Data Source: Azure Synapse: When querying against Azure Synapse, not all rows were imported.
 - Data Source: Google Analytics: After changing the property from GA3 to GA4, the property setting disappeared by clicking the Run button. 
-- Data Source: Salesforce SOQL: If the query was invalid, it returned a connection error whereas it should have returned a SQL syntax error. 
+- Data Source: ODBC (Legacy): When query against MS SQL Server, not all rows were imported.
+- Data Source: Salesforce SQL: If the query was invalid, it returned a connection error whereas it should have returned a SQL syntax error. 
 - Data Source: When switching the data source from a parquet file to an Excel file, an unwanted ID column with the sheet name was added to the data frame. 
 
+- Data Wrangling: Keep Duplicated Rows: Improved usability by incorporating the Multi-Select widget for column selection.
+- Data Wrangling: Merge: Improved the error message to show the data frame where the problem is coming from.
 
+- Chart: "Always Include 0 in X/Y Axis" setting was not effective if you used the Repeat By and unchecked the "Sync X Axis" checkbox.
 - Chart: Bar: Line: You should be able to edit the column name if you assign only one column to the Y-axis. 
 - Chart: Boxplot: Unnecessary bottom padding showed up if you assigned a column to Repeat By. 
 - Chart: Bubble chart failed to render due to "Invalid argument was passed to returnsNumericValue: "col is empty." error in some conditions. 
@@ -80,11 +90,11 @@ Released on 8/29/2023.
 - Analytics: K-Means Clustering: Column name "Observations" should be "PC2" in the exported data of the Biplot chart. 
 - Analytics: K-Means Clustering: Radar chart should use the original data instead of normalized data if you set not to normalize variables in the analytics property dialog. 
 - Analytics: Kruskal-Wallis Test: The formatting of the bucketed numbers was incorrect if you assigned a numeric column to the explanatory variables. 
-
+- Analytics: Variables with VIF greater than 10 should be highlighted in the Multicollinearity chart.
 
 - Dashboard: When editing a dashboard, it was not possible to set the minimum height of the panel by drag-and-drop in Column Layout mode. 
 - Note: It did not respect the Report list order from the last session. 
-
+- Note: Scroll position was not synced between editor and viewer.
 
 - Project: If you ran the search on the project list, it matched the deleted items in the project once in a while. 
 - Project: Project List rendering was slow if you had many projects.
