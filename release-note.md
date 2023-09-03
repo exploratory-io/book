@@ -84,7 +84,8 @@ Released on 8/29/2023.
 - Chart: Pivot: Gradient color assignment didn't work if you assigned a categorical color palette to a numeric column on Value. 
 - Chart: Table column order got messed up if you added a new column to the existing table. 
 - Chart: Table: The target column of the URL Link was changed if you renamed or dropped a column used in the Table. 
-- Chart: The "% Diffs from Prev" Window function with the "All" Group By setting didn't work as expected if you assigned a column to Color. 
+- Chart: The "% Diffs from Prev" Window function with the "All" Group By setting didn't work as expected if you assigned a column to Color.
+- Chart: Values on the plot didn't follow the number formatting setting.
 
 
 - Analytics: K-Means Clustering: Column name "Observations" should be "PC2" in the exported data of the Biplot chart. 
