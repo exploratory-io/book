@@ -1,5 +1,103 @@
 # リリースノート
 
+## 8.0
+
+2023年9月4日リリース。
+
+### 互換性のない修正
+
+* Data Wrangling: Create Category: The output format has been changed to match the Chart Category feature.   
+
+
+### 機能強化
+
+
+* データソース: SQL: 複数のコネクションがあるときに最後に使用したコネクションを記憶するようになりました。
+* データソース: SQL: データインポートがバックグラウンドプロセスとして実行されるようになり、データのインポート中に他の操作ができるようになりました。
+
+
+* データラングリング: 欠損値の加工: 今日および特定の日付で埋めるオプションをサポートしました。
+* データラングリング: フィルタ: データ上の最後の日からNヶ月/週/日のフィルタをサポートしました。
+* データラングリング: ステップとトークンのポップアップのテキストの可読性を改善し、処理内容をより簡単に理解できるようになりました。
+* データラングリング: 結合: 結合先データフレームの欠損値を除外するオプションをサポートしました。 
+* データラングリング: 指定した行を列名にする: すべての列のデータ型を再評価するパラメーターをサポートしました。
+* データラングリング: マージ: エラーが起きた際、どのデータフレームで問題が起きているのかがエラーメッセージに表示されるようになりました。
+* データラングリング: カテゴリーを作成: 区切り値の小数の桁数を指定できるようになりました。
+
+
+* チャート: 軸の色と太さを指定できるようになりました。
+* チャート: Y軸に複数の列を選択したときに、値を表示する列を選択できるようになりました。
+* チャート: 表示する値を、条件によって指定できるようになりました。例えば、ハイライトした値、値の範囲、最小/最大/最初/最後の値、などの指定が可能です。
+* チャート: バー: エリア: バー・チャートタイプに積み上げを選択したときや、エリアチャートで「色で分割」に列を選択したときに、合計値を表示できるようになりました。
+* チャート: 値をマーカーと同じ色で表示できるようになりました。
+* チャート: Date（日付）/POSIXct（日付時間）型の列から"年と月"を抽出できるようになりました。
+* チャート: 軸の設定ダイアログから、"yyyy/mm" および "yy/mm" の日付書式を利用できるようになりました。
+* チャート: 軸のラベルの角度を設定できるようになりました。
+* チャート: 軸の設定から、軸の桁区切りの設定が可能になりました。
+* チャート: バー:  「色で分割」に列を選択したときに、並び替えの設定から、「最初のカテゴリーで並び替え」ができるようになりました。
+* チャート: ハイライト: 元の凡例の順序を維持できるようになりatting support. 
+* チャート: ヒストグラム: 密度曲線: 箱ヒゲ図: バイオリン図: 地図（標準, 拡張, 緯度/経度）: ヒートマップ:  ヒートマップ: 等高線プロット: 数値のフォーマットをサポートしました。
+* チャート: 地図: UIのロケールが日本語のときに、地図が日本語で表示されるようになりました。
+* チャート: パイ: 値の表示を設定するときに値と割合(%)に異なる小数点以下の桁数を指定できるようになりました。
+* チャート: ピボットテーブル: 列のフォーマットの設定からタイトルを非表示にできるようになりました。
+* チャート: ピボットテーブル: 列のフォーマットの設定から「グループヘッダーの位置」メニューを変更して、ヘッダーのテキストの位置を設定できるようになりました。
+* チャート: ピボットテーブル: 集計テーブル: 「全ての列に適用」オプションを使用して、全ての列に行のカラー・フォーマットを適用できるようになりました。
+* チャート: ピボットテーブル: 集計テーブル: 「行のフォーマット」の並べ替えメニューから、並び替えの優先順位を設定できるようになりました。
+* チャート: 設定ダイアログのメニューがタブ形式で表示されるようになりました。
+* チャート: 設定ダイアログをドラッグ・アンド・ドロップで移動できるようになりました。
+
+
+* アナリティクス: K-Means クラスタリング:  「データの前処理」に「変数を標準化する」が「FALSE」に設定されている場合、箱ヒゲ図タブで標準化された値の代わりに元の値を使った箱ヒゲ図が表示されるようになりました。
+* アナリティクス: 2-way ANOVA(分散分析), ANCOVA(共分散分析), 対応分析をサポートしました。 
+
+
+* ダッシュボード: ナンバー:  割り当てられる高さによってフォントサイズが最適なサイズに動的に変更されるようになりました。
+
+
+* パブリッシュ: インサイトのパブリッシュがバックグラウンドプロセスとして実行されるようになり、パブリッシュ中に他の操作ができるようになりました。
+* 一般: Rのセッション全体をシャットダウンすることなく、実行中のRコマンドをキャンセルできるようになりました。
+* プロジェクト: パブリッシュされているプロジェクトを開くときや編集をしているときに、誰がプロジェクトを編集しているかを確認できるようになりました。
+
+
+### 修正された問題
+
+
+- Data Source: Azure Synapse: When querying against Azure Synapse, not all rows were imported.
+- Data Source: Google Analytics: After changing the property from GA3 to GA4, the property setting disappeared by clicking the Run button. 
+- Data Source: ODBC (Legacy): When query against MS SQL Server, not all rows were imported.
+- Data Source: Salesforce SQL: If the query was invalid, it returned a connection error whereas it should have returned a SQL syntax error. 
+- Data Source: When switching the data source from a parquet file to an Excel file, an unwanted ID column with the sheet name was added to the data frame. 
+
+- Data Wrangling: Keep Duplicated Rows: Improved usability by incorporating the Multi-Select widget for column selection.
+- Data Wrangling: Merge: Improved the error message to show the data frame where the problem is coming from.
+
+- Chart: "Always Include 0 in X/Y Axis" setting was not effective if you used the Repeat By and unchecked the "Sync X Axis" checkbox.
+- Chart: Bar: Line: You should be able to edit the column name if you assign only one column to the Y-axis. 
+- Chart: Boxplot: Unnecessary bottom padding showed up if you assigned a column to Repeat By. 
+- Chart: Bubble chart failed to render due to "Invalid argument was passed to returnsNumericValue: "col is empty." error in some conditions. 
+- Chart: The color assignment got screwed up if you created a chart from Summary View and updated it. 
+- Chart: Decimal digit formatting didn't work in the hover popup of Boxplot and Violin Plot. 
+- Chart: Heatmap should show all the factor levels even if it is not used. 
+- Chart: Highlight: Legend order became incorrect if you assigned the same color to multiple categories. 
+- Chart: Line chart failed to render if you assigned columns to Y-Axis, Color, Repeat By, and unchecked the "Sync X Axis" option. 
+- Chart: Pivot: Gradient color assignment didn't work if you assigned a categorical color palette to a numeric column on Value. 
+- Chart: Table column order got messed up if you added a new column to the existing table. 
+- Chart: Table: The target column of the URL Link was changed if you renamed or dropped a column used in the Table. 
+- Chart: The "% Diffs from Prev" Window function with the "All" Group By setting didn't work as expected if you assigned a column to Color. 
+
+
+- Analytics: K-Means Clustering: Column name "Observations" should be "PC2" in the exported data of the Biplot chart. 
+- Analytics: K-Means Clustering: Radar chart should use the original data instead of normalized data if you set not to normalize variables in the analytics property dialog. 
+- Analytics: Kruskal-Wallis Test: The formatting of the bucketed numbers was incorrect if you assigned a numeric column to the explanatory variables. 
+- Analytics: Variables with VIF greater than 10 should be highlighted in the Multicollinearity chart.
+
+- Dashboard: When editing a dashboard, it was not possible to set the minimum height of the panel by drag-and-drop in Column Layout mode. 
+- Note: It did not respect the Report list order from the last session. 
+- Note: Scroll position was not synced between editor and viewer.
+
+- Project: If you ran the search on the project list, it matched the deleted items in the project once in a while. 
+- Project: Project List rendering was slow if you had many projects.
+
 ## 7.2
 
 2023年6月24日リリース。
