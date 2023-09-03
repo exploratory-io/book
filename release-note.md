@@ -2,7 +2,7 @@
 
 ## 8.0
 
-Released on 8/29/2023.
+Released on 9/3/2023.
 
 ### Breaking Changes
 
