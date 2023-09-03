@@ -6,7 +6,7 @@
 
 ### 互換性のない修正
 
-* Data Wrangling: Create Category: The output format has been changed to match the Chart Category feature.   
+* データラングリング: カテゴリーを作成: カテゴリーを作成時のアウトプットのフォーマットが、チャートでのカテゴリ作成と一致するように変更されました。
 
 
 ### 機能強化
@@ -61,42 +61,46 @@
 
 ### 修正された問題
 
-
-- Data Source: Azure Synapse: When querying against Azure Synapse, not all rows were imported.
-- Data Source: Google Analytics: After changing the property from GA3 to GA4, the property setting disappeared by clicking the Run button. 
-- Data Source: ODBC (Legacy): When query against MS SQL Server, not all rows were imported.
-- Data Source: Salesforce SQL: If the query was invalid, it returned a connection error whereas it should have returned a SQL syntax error. 
-- Data Source: When switching the data source from a parquet file to an Excel file, an unwanted ID column with the sheet name was added to the data frame. 
-
-- Data Wrangling: Keep Duplicated Rows: Improved usability by incorporating the Multi-Select widget for column selection.
-- Data Wrangling: Merge: Improved the error message to show the data frame where the problem is coming from.
-
-- Chart: "Always Include 0 in X/Y Axis" setting was not effective if you used the Repeat By and unchecked the "Sync X Axis" checkbox.
-- Chart: Bar: Line: You should be able to edit the column name if you assign only one column to the Y-axis. 
-- Chart: Boxplot: Unnecessary bottom padding showed up if you assigned a column to Repeat By. 
-- Chart: Bubble chart failed to render due to "Invalid argument was passed to returnsNumericValue: "col is empty." error in some conditions. 
-- Chart: The color assignment got screwed up if you created a chart from Summary View and updated it. 
-- Chart: Decimal digit formatting didn't work in the hover popup of Boxplot and Violin Plot. 
-- Chart: Heatmap should show all the factor levels even if it is not used. 
-- Chart: Highlight: Legend order became incorrect if you assigned the same color to multiple categories. 
-- Chart: Line chart failed to render if you assigned columns to Y-Axis, Color, Repeat By, and unchecked the "Sync X Axis" option. 
-- Chart: Pivot: Gradient color assignment didn't work if you assigned a categorical color palette to a numeric column on Value. 
-- Chart: Table column order got messed up if you added a new column to the existing table. 
-- Chart: Table: The target column of the URL Link was changed if you renamed or dropped a column used in the Table. 
-- Chart: The "% Diffs from Prev" Window function with the "All" Group By setting didn't work as expected if you assigned a column to Color. 
+* データソース: Azure Synapse: Azure Synapseに対してクエリを実行すると、一部の行がインポートされない。
+* データソース: Google Analytics: プロパティをGA3からGA4に変更後、実行ボタンをクリックするとプロパティの設定が消えてしまう。
+* データソース: ODBC（Legacy）: MS SQL Serverに対してクエリを実行すると、一部の行がいんぽーとされない。
+* データソース: Salesforce SQL: クエリが無効な場合、SQLの構文エラーが返されるはずが、接続エラーが返ってしまう。
+* データソース: データソースをParquetからExcelファイルに切り替えると、シート無を含む不要なID列が追加される。
 
 
-- Analytics: K-Means Clustering: Column name "Observations" should be "PC2" in the exported data of the Biplot chart. 
-- Analytics: K-Means Clustering: Radar chart should use the original data instead of normalized data if you set not to normalize variables in the analytics property dialog. 
-- Analytics: Kruskal-Wallis Test: The formatting of the bucketed numbers was incorrect if you assigned a numeric column to the explanatory variables. 
-- Analytics: Variables with VIF greater than 10 should be highlighted in the Multicollinearity chart.
+* データラングリング: 重複行の保持: 列選択用の複数選択のウィジェットを組み込むことで使いやすがさ向上しました。
+* データラングリング: マージ: エラーメッセージに問題の原因となるデータフレーム名を表示するようにメッセージを改善しました。
 
-- Dashboard: When editing a dashboard, it was not possible to set the minimum height of the panel by drag-and-drop in Column Layout mode. 
-- Note: It did not respect the Report list order from the last session. 
-- Note: Scroll position was not synced between editor and viewer.
 
-- Project: If you ran the search on the project list, it matched the deleted items in the project once in a while. 
-- Project: Project List rendering was slow if you had many projects.
+* チャート: 繰り返しを使用し、「X軸を同期」のチェックボックスをオフにすると、「X/Y軸で0軸に含める」のオプションがが機能しない。
+* チャート: バー: ライン: Y軸に1つの列のみを割り当てた際に、列名を編集できるようになりました。
+* チャート: 箱ヒゲ図: 繰り返しを使用した際に、下部に不必要な余白が表示される。
+* チャート: 一部の条件で"Invalid argument was passed to returnsNumericValue: "col 
+* チャート: サマリビューからチャートを作成して更新をすると、色の割り当てがおかしくなってしまう。
+* チャート: 箱ヒゲ図: ヴァイオリン図: マウスオーバーした時のポップアップで、小数の桁数のフォーマットが機能しない。
+* チャート: ヒートマップ: 使用されていない場合でも全てのFactor型のレベルを表示する必要があります。
+* チャート: ハイライト: 複数のカテゴリーに同じ色を割り当てた場合、凡例の順序が正しくありませんでした。
+* チャート: ライン: Y軸、色、繰り返しに列を割り当て、「X軸を同期」のオプションのチェックを外した場合、ラインチャートの描画に失敗する。
+* チャート: ピボット: 値の数値列にカテゴリ型のパレットを割り当てると、色の割り当てが正しくありませんでした。
+* チャート: テーブル: 既存のテーブルに新しい列を追加すると、列の順序が乱れてしまう。
+* チャート: テーブル：テーブルで使用されている列の名前を変更、または削除した場合、URLリンクのターゲット列が変更されてしまう。
+* チャート: 色に列を割り当てて、表計算のグループ化に「全体」を設定すると、「前の値の差の割合」が期待通りの結果を返さない。
+
+
+* アナリティクス: K-Means クラスタリング: バイプロットタブのデータをエクスポートした際の列名「Observations」は「PC2」が正しい列名です。
+* アナリティクス:  K-Means クラスタリング: プロパティから「変数を標準化する」を適用しないように設定した場合、レーダーチャートでは標準化した値ではなく元のデータでの平均値を表示する必要があります。
+* アナリティクス: クラスカルウォリス検定: 説明変数に数値列を割り当てた場合、多重比較タブのグループにてバケットの表記に誤りがある。
+* アナリティクス: 多重共線性タブで分散拡大係数（VIF）で10を超える変数は、強調表示されるようになります。
+
+
+* ダッシュボード: ダッシュボードを編集する時に、列レイアウトモードでドラッグ＆ドロップで高さを設定することができない。
+* ノート: レポートのリストで最後のセッションを元にした順序が考慮されない。
+* ノート: スクロールした時の位置は編集画面とプレビュー画面で同期されていない。
+
+
+* プロジェクト: プロジェクトリストで検索をした際に、プロジェクト内の削除されたアイテムと一致することがある。
+* プロジェクト: プロジェクトの数が多い場合、プロジェクトリストの表示が遅い。
+
 
 ## 7.2
 
