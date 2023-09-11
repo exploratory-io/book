@@ -12,7 +12,7 @@ Released on 9/3/2023.
 
 - Data Source: SQL: Now SQL Data Import runs as a separated background process and does not block other user actions.
 - Data Wrangling: Show a summary information for each Data Wrangling Step to improve the readability.
-- Chart: Tab support in the chart property dialog.
+- Chart: Redesigned the Chart Property UI to provide much better usability.
 - Analytics: Supported ANCOVA and Correspondence Analysis.
 - Collaboration: Now you can see who is editing the project for the published projects.
 - Undo/Restore/Version Control: Now you can go back and restore to a moment in the past from History dialog.
