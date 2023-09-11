@@ -1,4 +1,4 @@
-# Seminar #98 - How to Choose the Right Color and Use it Effectively
+# Seminar #98 - How to Choose the Right Color and Use it Effectively for your Charts 
 ## Date/Time: 9/13/2023 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
