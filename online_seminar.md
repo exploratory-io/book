@@ -3,7 +3,7 @@
 ## Duration: 1 hour
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-Among other visual perceptions, Color is a great tool to help you discover patterns and trends in data intuitively and to communicate your insights to your audience effectively.
+Among other visual perceptions, Color is a great way to help you discover patterns and trends in data intuitively and to communicate your insights to your audience effectively.
 
 But not everybody knows enough about the Color to use it effectively, and unfortunately this world is filled with many charts with wrong color.
 
