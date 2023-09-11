@@ -267,6 +267,24 @@
           "url": "https://exploratory.io/note/2ac8ae888097/Exploatory-Elasticsearch-FIQ3mqN1ux"
         }
       ]
+    },
+    {
+       "title": "How to",
+       "desc": "データソースに関連するさまざまな使い方を紹介します。",
+       "moreButtonText": "もっと見る",
+       "moreButtonUrl": "https://exploratory.io/insight?type=note&q=data%20source&language=all",
+       "insights": [
+        {
+          "title": "データソースの変更",
+          "desc": "データフレームのデータソースのみを変更する方法をご紹介します。",
+          "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-272-JGS1gEm1rh"
+        },
+        {
+          "title": "プロジェクトをインポートする方法",
+          "desc": "プロジェクトをインポートする方法をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/epf-KTA9uJn1"
+        }
+      ]
     }
   ]
 }
