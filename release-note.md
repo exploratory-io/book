@@ -1,5 +1,64 @@
 # Release Note
 
+
+## 8.1
+
+Released on 9/13/2023.
+
+
+### Enhancements
+
+* Data Source: SQL Data Import Job: Now you can cancel an SQL Data Import job when exiting a project or closing the App.
+* Data Source: FRED: Supported importing multiple Series at once.
+
+
+* Chart: Now if you open the chart property dialog, it opens the tab/subtab where you left off last time automatically. 
+
+
+* Dashboard: Now you can enable/disable the font size auto scaling for Number charts from the Dashboard property dialog.
+
+
+### Bug Fixes
+
+* Data Source: After importing SQL data, it showed the 'There was a conflict with another R process' error.
+
+
+* Data Wrangling: Filter: Improved the Operator Names.
+* Data Wrangling: Replace Values with Condition: Token showed the internal column name for the "Selected Column".
+* Data Wrangling: Work with Text Data: When selecting the Question Mark as a separator, it did not work. 
+
+
+* Summary View: If you create a chart from the Summary View, it should use the default blue color for the default color instead of light blue. 
+
+
+* Chart: The "Always Include 0 in X/Y Axis" setting was ignored if you assigned a column to Repeat By and unchecked the "Sync X Axis" checkbox.
+* Chart: Description for the Shorten Numbers (Using K, M, etc.) setting was not clear.
+* Chart: Pie: Font size didn't change even if you set it. 
+* Chart: The bottom part of the property dialog was chopped if you moved the dialog to the bottom and switched the tab. 
+* Chart: Unexpected string like ".2f" showed up on the X-Axis if you set a Date column to X-Axis and set the Decimals explicitly.
+
+
+* Analytics: Analytics filter was not created for the first time and could not be updated after the filter was created.
+
+
+* Note: The style of the Table of Contents was inconsistent if you disabled the Floating Table of Contents.
+* Dashboard: After duplicating a page, not all the contents were shown.
+* Dashboard: If you inserted a Number chart in the very short row, the thumbnail looked too small to how it looked in the preview.
+* Dashboard: If you inserted a Number chart into a Number row, the thumbnail looked very small.
+* Dashboard: When running a dashboard that contains Analytics, underlying Analytics change was always recorded in history regardless of the change.
+
+
+* Publish: Data Share: If you publish a step with some English text in the title, the text should be used as a part of the URL but it didn't work.
+* Publish: Publish did not work for a source step if some of the required parameters were missing in the metadata file. 
+
+
+* Project: It was slow after clicking the Close Project button on the Publish Confirmation Dialog.
+* Project: Project List: Selecting a project from the project list opened a different project.
+* History: After copying a project, the change history showed an empty entry and a 'Modified project.json' message which cannot be used for restoring.
+* History: Restore from history feature did not work if the git working branch name was other than master.
+
+
+
 ## 8.0
 
 Released on 9/3/2023.
