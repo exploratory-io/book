@@ -270,15 +270,20 @@
        "url": "https://exploratory.io/note/GMq1Qom5tS/Y2-NEy3ptf8HT"
        },
        {
-       "title": "チャートのY軸の値をパーセント表記に変更する方法",
-       "desc": "チャートのY軸の値をパーセント表記に変更する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Y-qSL5Hik3qH"
+       "title": "チャートのプロパティ: 軸の設定",
+       "desc": "軸に関する設定方法をご紹介します。",
+       "url": "https://exploratory.io/note/exploratory/AKS0KcX0"
        },
        {
-       "title": "軸のレンジの設定方法",
-       "desc": "軸のレンジの設定方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/ERf7KXM0NL"
-       },
+        "title": "チャートのプロパティ: 数値フォーマットの設定",
+        "desc": "「通貨記号」や「割合」などの数値のフォーマットに関する設定方法をご紹介します。",
+        "url": "https://exploratory.io/note/exploratory/tWR2zzh2"
+        },
+        {
+          "title": "チャートのプロパティ: テーブルの詳細設定",
+          "desc": "「ピボットテーブル」や「集計テーブル」など設定に関する便利な機能をご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/iai3RkW7"
+        },
        {
        "title": "チャートタイトルの設定方法",
        "desc": "チャートタイトルの設定方法をご紹介します。",
@@ -333,6 +338,37 @@
           "url": "https://exploratory.io/note/GMq1Qom5tS/5-AZS6fim1QH"
         }
       ]
-    }
+    },
+    {
+      "title": "セミナー",
+      "desc": "可視化に関するセミナーを下記に紹介しています。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/tag/?q=tag%3A%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%20tag%3A%20visualization&language=all",
+      "insights": [
+        {
+         "title": "チャートタイプの選び方",
+         "desc": "目的に応じて適切なチャートタイプを選ぶ方法について紹介します。",
+         "url": "https://exploratory.io/note/kanaugust/109-OfP5dwa2Nd"
+        },
+        {
+         "title": "可視化における効果的な色の使い方",
+         "desc": "チャートで色を使う際に気をつけたいルールについて紹介します。",
+         "url": "https://exploratory.io/note/kanaugust/84-ZrR9zZc6MD"
+        },
+        {
+         "title": "レポートのためのチャートの作り方",
+         "desc": "他の人に効果的に伝えるためのチャートの機能や使い方について紹介します。",
+         "url": "https://exploratory.io/note/kanaugust/73-Tos7ttk3vL"
+         },
+         {
+         "title": "レーダーチャートの使い方",
+         "desc": "レーダチャートを使用する際の便利な機能について紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/4-QQo8skp5uu"
+         },
+         {
+         "title": "地図の使い方",
+         "desc": "地図の使い分け、必要なデータの作り方などを紹介します。",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/5-AZS6fim1QH"
+       }
   ]
 }
