@@ -1,5 +1,12 @@
 # Release Note
 
+## 8.2
+
+Released on 9/14/2023.
+
+### Bug Fixes
+
+* Data Wrangling: Creating a ‘Group By’ step failed with the “Cannot read properties of undefined (reading ‘name’)” error.
 
 ## 8.1
 
