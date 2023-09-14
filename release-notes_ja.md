@@ -1,5 +1,85 @@
 # リリースノート
 
+## 8.1
+
+2023年9月14日リリース。
+
+### 機能強化
+
+* Data Source: SQL Data Import Job: Now you can cancel an SQL Data Import job when exiting a project or closing the App.
+* データソース: 
+* Data Source: FRED: Supported importing multiple Series at once.
+* データソース: 
+
+
+* Chart: Now if you open the chart property dialog, it opens the tab/subtab where you left off last time automatically. 
+* チャート: 
+
+
+* Dashboard: Now you can enable/disable the font size auto scaling for Number charts from the Dashboard property dialog.
+* ダッシュボード: 
+
+
+### 修正された問題
+
+* Data Source: After importing SQL data, it showed the 'There was a conflict with another R process' error.
+* データソース: 
+
+
+* Data Wrangling: Filter: Improved the Operator Names.
+* データラングリング: 
+* Data Wrangling: Replace Values with Condition: Token showed the internal column name for the "Selected Column".
+* データラングリング: 
+* Data Wrangling: Work with Text Data: When selecting the Question Mark as a separator, it did not work. 
+* データラングリング: 
+
+
+* Summary View: If you create a chart from the Summary View, it should use the default blue color for the default color instead of light blue. 
+* サマリビュー: 
+
+
+* Chart: The "Always Include 0 in X/Y Axis" setting was ignored if you assigned a column to Repeat By and unchecked the "Sync X Axis" checkbox.
+* チャート: 
+* Chart: Description for the Shorten Numbers (Using K, M, etc.) setting was not clear.
+* チャート: 
+* Chart: Pie: Font size didn't change even if you set it. 
+* チャート: 
+* Chart: The bottom part of the property dialog was chopped if you moved the dialog to the bottom and switched the tab. 
+* チャート: 
+* Chart: Unexpected string like ".2f" showed up on the X-Axis if you set a Date column to X-Axis and set the Decimals explicitly.
+* チャート: 
+
+
+* Analytics: Analytics filter was not created for the first time and could not be updated after the filter was created.
+* アナリティクス: 
+
+
+* Note: The style of the Table of Contents was inconsistent if you disabled the Floating Table of Contents.
+* ノート: 
+* Dashboard: After duplicating a page, not all the contents were shown.
+* ダッシュボード: 
+* Dashboard: If you inserted a Number chart in the very short row, the thumbnail looked too small to how it looked in the preview.
+* ダッシュボード: 
+* Dashboard: If you inserted a Number chart into a Number row, the thumbnail looked very small.
+* ダッシュボード: 
+* Dashboard: When running a dashboard that contains Analytics, underlying Analytics change was always recorded in history regardless of the change.
+* ダッシュボード: 
+
+* Publish: Data Share: If you publish a step with some English text in the title, the text should be used as a part of the URL but it didn't work.
+* パブリッシュ: 
+* Publish: Publish did not work for a source step if some of the required parameters were missing in the metadata file. 
+* パブリッシュ: 
+
+* Project: It was slow after clicking the Close Project button on the Publish Confirmation Dialog.
+* プロジェクト: 
+* Project: Project List: Selecting a project from the project list opened a different project.
+* プロジェクト: 
+* History: After copying a project, the change history showed an empty entry and a 'Modified project.json' message which cannot be used for restoring.
+* 変更履歴: 
+* History: Restore from history feature did not work if the git working branch name was other than master.
+* 変更履歴: 
+
+
 ## 8.0
 
 2023年9月4日リリース。
