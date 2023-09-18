@@ -20,11 +20,16 @@ Type connection name and FRED API Key. Test connection and if it works ok, click
 
 ![](images/fred-setting.png)
 
-Type in Series ID, e.g. UNRATE for unemployment rate, and select Start Date. 
+Type in Series ID, e.g. UNRATE for unemployment rate. You can set multiple Series ID by separating them by comma(,).
+For example, you can type in MIXRSA, NYXRSA, SFXRSA as Series IDs to get Real State Price Index for Miami, New York, and San Francisco.
+
 You can search Series ID in https://fred.stlouisfed.org/tags/series 
+
+Start Date and End Date are optional. If you leave them blank, it will get all data available.
 
 ![](images/fred_preview.png)
 
-Click "Run". If the preview is okay, click "Import".
+Click the "Run" button to preview data. If the preview looks okay, click the "Save" button.
+
 ![](images/fred_preview2.png)
 
