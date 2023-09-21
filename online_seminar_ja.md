@@ -2,11 +2,10 @@
 
 ## 時間: 2023/9/21 (木) - 午後12時 - 1時（日本時間）
 ## スピーカー: 白戸 敬登
-## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
-
+## ミーティング URL: [リンク](https://us02web.zoom.us/j/84903371336?pwd=NnrDLVPIunuvKvAB2pHffRWB179VTl.1) (パスコード: 230867)
 
 <!-- KanさんのZoom URL
-## ミーティング URL: [リンク](https://us02web.zoom.us/j/84903371336?pwd=NnrDLVPIunuvKvAB2pHffRWB179VTl.1) (パスコード: 230867)
+## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) (パスコード: 214463)
 -->
 
 
