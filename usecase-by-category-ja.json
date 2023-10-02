@@ -67,6 +67,16 @@
       "desc": "回帰分析や機会学習のアルゴリズムの活用事例を紹介します。",
       "insights": [
         {
+         "title": "ホステッド・サーバーを軸とした データサイエンス・ソリューションの開発",
+         "desc": "データサイエンス勉強会#29の株式会社ホンダコムテック様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-bXz2gnX7wm"
+        },
+        {
+         "title": "デジタルマーケティング施策におけるPDCAサイクルの効率化",
+         "desc": "データサイエンス勉強会#28の株式会社ビューカード様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-GxQ4mtj9Bm"
+        },
+        {
          "title": "サイトの閲読と有料会員継続の関係 - 「生存分析」活用",
          "desc": "データサイエンス勉強会#24の朝日新聞社様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-mih7Anf2"
@@ -148,6 +158,11 @@
       "desc": "時系列予測や時系列クラスタリングのアルゴリズムの活用事例を紹介します。",
       "insights": [
         {
+         "title": "需要予測を基にした部品の発注計画",
+         "desc": "データサイエンス勉強会#26の株式会社ユーシン精機様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/26-EoM8JBI0"
+        },
+        {
          "title": "時系列予測（Prophet）を使ったコールセンターの受電数の予測",
          "desc": "データサイエンス勉強会#18の株式会社アサイアン様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/Prophet-hQK3Muy5"
@@ -226,6 +241,11 @@
       "desc": "アンケートデータ分析の事例を紹介します",
       "insights": [
         {
+         "title": "ロジスティック回帰を使った個人の趣味と勤労意欲の関係性の検証",
+         "desc": "データサイエンス勉強会#27の株式会社博報堂様のご発表内容となります。主成分分析を使って、データから得られる「発見」をクリエティブに要約する方法をご発表いただきました。",
+         "url": "https://exploratory.io/note/exploratory/by-XHk1wqe1"
+        },
+        {
          "title": "主成分分析を用いた生活者意識の全体的な傾向の把握",
          "desc": "データサイエンス勉強会#25の株式会社博報堂様のご発表内容となります。主成分分析を使って、データから得られる「発見」をクリエティブに要約する方法をご発表いただきました。",
          "url": "https://exploratory.io/note/exploratory/25-Sbi2VHb3"
@@ -289,6 +309,11 @@
       "desc": "仮説検定の活用事例を紹介します。",
       "insights": [
         {
+         "title": "カイ二乗検定を利用したオンラインセミナーの効果測定",
+         "desc": "データサイエンス勉強会#27のサイボウズ株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-LgF8eOP6"
+        },
+        {
          "title": "Data Informed な健康経営",
          "desc": "データサイエンス勉強会#17のサンホシスコ 中尾様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/Data-Informed-xby4Mny7"
@@ -304,6 +329,11 @@
       "title": "データラングリング",
       "desc": "データラングリングにおける活用事例を紹介します。",
       "insights": [
+        {
+         "title": "デジタルマーケティング施策におけるPDCAサイクルの効率化",
+         "desc": "データサイエンス勉強会#28の株式会社ビューカード様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-GxQ4mtj9Bm"
+        },
         {
          "title": "女性活躍推進のための人員構成比のシミュレーション",
          "desc": "データサイエンス勉強会#22の日鉄ソリューションズ株式会社様のご発表内容となります。",
@@ -350,6 +380,11 @@
       "title": "可視化",
       "desc": "可視化における活用事例を紹介します。",
       "insights": [
+        {
+         "title": "デジタルマーケティング施策におけるPDCAサイクルの効率化",
+         "desc": "データサイエンス勉強会#28の株式会社ビューカード様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-GxQ4mtj9Bm"
+        },
         {
          "title": "ExploratoryでデータをExploreする 〜研究力の可視化を目指して〜",
          "desc": "データサイエンス勉強会#22の滋賀医科大学様のご発表内容となります。",
@@ -398,6 +433,11 @@
       "desc": "データラングリングや分析の再現性に関する事例を紹介します。",
       "insights": [
         {
+         "title": "デジタルマーケティング施策におけるPDCAサイクルの効率化",
+         "desc": "データサイエンス勉強会#28の株式会社ビューカード様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-GxQ4mtj9Bm"
+        },
+        {
          "title": "女性活躍推進のための人員構成比のシミュレーション",
          "desc": "データサイエンス勉強会#22の日鉄ソリューションズ株式会社様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-nYO6kju2"
@@ -428,6 +468,11 @@
       "title": "レポーティング",
       "desc": "ダッシュボードやノートの活用事例を紹介します。",
       "insights": [
+        {
+         "title": "ホステッド・サーバーを軸とした データサイエンス・ソリューションの開発",
+         "desc": "データサイエンス勉強会#29の株式会社ホンダコムテック様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-bXz2gnX7wm"
+        },
         {
          "title": "Exploratoryによる作業内容の見える化・文章化・共有化",
          "desc": "データサイエンス勉強会#22の山形大学様のご発表内容となります。",
@@ -464,6 +509,11 @@
       "title": "データの民主化",
       "desc": "データ分析に関するコミュニケーションにおける活用事例を紹介します。",
       "insights": [
+        {
+         "title": "ホステッド・サーバーを軸とした データサイエンス・ソリューションの開発",
+         "desc": "データサイエンス勉強会#29の株式会社ホンダコムテック様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-bXz2gnX7wm"
+        },
         {
          "title": "ビジュアル・コミュニケーションツールとしてのExploratoryの活用",
          "desc": "データサイエンス勉強会#24の株式会社ADKマーケティング・ソリューションズ様のご発表内容となります。",
