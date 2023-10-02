@@ -265,6 +265,11 @@
           "title": "Elasticsearch",
           "desc": "Elasticsearchのデータを読み込む方法を紹介します。",
           "url": "https://exploratory.io/note/2ac8ae888097/Exploatory-Elasticsearch-FIQ3mqN1ux"
+        },
+        {
+          "title": "通貨レート",
+          "desc": "通貨レートを取得する方法を紹介します。",
+          "url": "https://exploratory.io/note/exploratory/XLM4Fnb0SD"
         }
       ]
     },
