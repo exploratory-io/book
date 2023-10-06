@@ -1,5 +1,47 @@
 # Release Note
 
+## 8.3
+
+Released on 10/05/2023.
+
+### Enhancements
+
+* Chart: Pie: Now you can do the number formatting on values. 
+* Chart: Pie: Now you can create a condition for which values to show in Show Values. 
+* Chart: Now you can create a condition using a "Greater than" or "Less than" range type in Show Values.
+
+### Bug Fixes
+
+* Data Source: Unable to import data from Data Catalog when Exploratory Desktop was running inside the firewall with proxy server setup.
+* Data Source: CSV: When Separator Auto Detection failed, it should try with comma ',' as fallback.
+* Data Source: Presto/Treasure Data: It should automatically remove trailing semicolon in SQL query.
+* Data Source: Salesforce SQL: Clicking the Run button on the Source Step showed the Re-Authentication dialog where it shouldn't.
+* Data Source: Web Scrape: Updating Source Step did not refresh the Summary View and Table View.
+
+* Data Wrangling: Arrange (Sort): Clicking the Run button did not work when there was a step next to the Arrange step.
+* Data Wrangling: Create Categories: With the "Include Lower Edge" option, the incorrect inequality sign was used in the category name.
+* Data Wrangling: Create Categories: With the "Manual" method, setting "Label Text" ended up a blank preview.
+* Data Wrangling: It should show translated display names for Source Step popup.
+
+* Summary: Unnecessary HTML tags were shown on Delete Row Filter confirmation dialog.
+  
+* Chart: Bucket label should show more meaningful text instead of operator signs. For example, "2000 or greater" instead of "2000 <=". ata on a Pivot Table.
+* Chart: Color: If you create Equal Width buckets, set the # of buckets to more than 5 and choose the "Red / Light Blue" color palette, it repeats the 5-color palette.
+* Chart: Color: If you create Equal Width buckets on a numeric column and turn on the "Set 0 as Center", it should create buckets using the given data range and the center color of the palette should align to the bucket that contains 0. 
+* Chart: Error dialog showed up with the "Cannot read properties of undefined (reading 'name')" error if you tried to show the detail d
+* Chart: Scatter: Error dialog showed up with the "Cannot read properties of undefined (reading '0')" error if you use Repeat By and set a Y-Axis column that contains sparse data to the Y2 axis.
+* Chart: When you create categories assigning numeric columns to "color by", "Same as the Chart Color" stops working
+
+* Analytics: Prophet: Error dialog showed up with the "Error code 127" error if you tried to save the chart data as a new data frame at the Forecasted tab.
+* Analytics: XGBoost: If you turned on the Test mode, the sum of the percentages in the Test group wan't 100%. 
+
+* Note: After applying a parameter, the viewer scrollbar went up to the top where it should stay at the current position.
+
+* Parameter: After changing a data frame selection for a dynamic parameter, other dynamic parameters also showed the changed data frame as selected one even if you didn't change it.
+
+* Project: Unable to open a project with the Safe Mode (No User R Packages).
+* Project: When publishing a project, it showed 'ELOOP: too many symbolic links encountered error' for some occasion.
+
 ## 8.2
 
 Released on 9/14/2023.
