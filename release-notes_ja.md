@@ -1,5 +1,56 @@
 # リリースノート
 
+## 8.3
+
+2023年10月6日リリース。
+
+### 機能強化
+
+* Chart: Pie: Now you can do the number formatting on values.
+* Chart: Pie: Now you can create a condition for which values to show in Show Values.
+* Chart: Now you can create a condition using a "Greater than" or "Less than" range type in Show Values.
+
+### 修正された問題
+
+* Data Source: Unable to import data from Data Catalog when Exploratory Desktop was running inside the firewall with proxy server setup.
+* Data Source: CSV: When Separator Auto Detection fails, it should try with a comma ',' as a fallback.
+* Data Source: Presto/Treasure Data: It should automatically remove the trailing semicolon in the SQL query.
+* Data Source: Salesforce SQL: Clicking the Run button on the Source Step showed the Re-Authentication dialog where it shouldn't.
+* Data Source: Web Scrape: Updating Source Step did not refresh the Summary View and Table View.
+
+
+* Data Wrangling: Arrange (Sort): Clicking the Run button did not work when there was a step next to the Arrange step.
+* Data Wrangling: Create Categories: With the "Include Lower Edge" option, the incorrect inequality sign was used in the category name.
+* Data Wrangling: Create Categories: With the "Manual" method, setting "Label Text" ended up a blank preview.
+
+
+* Summary: Unnecessary HTML tags were shown on the Delete Row Filter confirmation dialog.
+
+
+
+* チャート: 数値をカテゴリー化した時のバケットのラベルは、よりわかりやすい表現で表示する必要があります。例えば、「2000<=」ではなく、「2000以上」といった表記に変わります。
+* チャート: 色: 数値をカテゴリー化した際に、「等幅」を使ってバケットを作成した際に、バケット数を5より多く設定し、カラーパレットに「レッド / ブルー」を選択すると、５色のパレットが繰り返される。
+* チャート: 色: 数値をカテゴリー化した際に、「等幅」を使ってバケットを作成し、「0を中央にする」のオプションが適用されていると、指定されたデータ範囲を使用してバケットが作成され、パレットの中心の色が次のデータが次のデータが含まれるバケットと揃う必要がある。
+* チャート: ピボットテーブルで詳細データを表示しようとすると、エラーダイアログが表示され、"Cannot read properties of undefined (reading 'name')"のエラーが表示される。
+* チャート: 散布図: 繰り返しを使用し、スパースデータを含むY軸列をY2軸に設定すると"Cannot read properties of undefined (reading '0')"のエラーが表示される。
+* チャート: 色で数値列をカテゴリー化した場合、「値の表示」の「チャートと同じ色」のオプションが機能しない。
+
+
+
+* アナリティクス: Prophet: 予測タブでチャートのデータを新しいデータフレームとして保存をしようとすると、 "Error code 127"のエラーが発生する。
+* アナリティクス: XGBoost: テストモードを適用した時に、予測マトリックスのパーセンテージの合計が100%にならない。
+
+
+* ノート: パラメーターを適用すると、プレビュー画面のスクロールバーが最上部まで移動し、現在の位置に留まる。
+
+
+* パラメーター: 別のデータフレームを参照するような動的なパラメーターを設定している場合、変更を加えたとしても、他の関連するパラメーターでその結果をもとにしたパラメーターの値に反映されない。
+
+
+* プロジェクト: セーフモード（ユーザーRパッケージ無し）でプロジェクトが開けない。
+* プロジェクト: プロジェクトをExploratoryサーバーにパブリッシュした時に、"ELOOP: too many symbolic links encountered error"といったエラーが発生することがある。
+
+
 
 ## 8.2
 
