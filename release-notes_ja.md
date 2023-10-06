@@ -6,26 +6,25 @@
 
 ### 機能強化
 
-* Chart: Pie: Now you can do the number formatting on values.
-* Chart: Pie: Now you can create a condition for which values to show in Show Values.
-* Chart: Now you can create a condition using a "Greater than" or "Less than" range type in Show Values.
+* チャート: パイ: 値のフォーマットを設定できるようになりました。
+* チャート: パイ: 「値を表示」で表示する値の条件を指定できるようになりました。
+* チャート: 「値を表示」で範囲タイプに「以上」または「以下」を使用して、表示する値の条件を作成できるようになりました。
 
 ### 修正された問題
 
-* Data Source: Unable to import data from Data Catalog when Exploratory Desktop was running inside the firewall with proxy server setup.
-* Data Source: CSV: When Separator Auto Detection fails, it should try with a comma ',' as a fallback.
-* Data Source: Presto/Treasure Data: It should automatically remove the trailing semicolon in the SQL query.
-* Data Source: Salesforce SQL: Clicking the Run button on the Source Step showed the Re-Authentication dialog where it shouldn't.
-* Data Source: Web Scrape: Updating Source Step did not refresh the Summary View and Table View.
+* データソース: プロキシサーバーを利用しているファイアウォール内でExploratoryデスクトップを利用しているときに、データカタログからデータをインポートできませんでした。
+* データソース: CSV: データの区切り文字の自動検出に失敗したときに、区切り文字に自動的にカンマ(,)を利用するようにしました。
+* データソース: Presto/Treasure Data: エラーが発生しないようにSQLのクエリの最後のセミコロンを自動的に削除するようになりました。
+* データソース: Salesforce SQL: データソースのステップの「実行」ボタンをクリックしたときに、表示されるべきでない再認証のダイアログが表示されました。
+* データソース: Webスクレイピング: データソースのステップを更新しても、サマリー・ビューとテーブル・ビューが更新されませんでした。
 
 
-* Data Wrangling: Arrange (Sort): Clicking the Run button did not work when there was a step next to the Arrange step.
-* Data Wrangling: Create Categories: With the "Include Lower Edge" option, the incorrect inequality sign was used in the category name.
-* Data Wrangling: Create Categories: With the "Manual" method, setting "Label Text" ended up a blank preview.
+* データラングリング: 並び替え (ソート): すでに次のステップがあるときに「実行」ボタンが機能しない。
+* データラングリング: カテゴリーを作成: 「範囲の端の扱い」に「下端の値を含む」を選択したときに、カテゴリー名に誤った不等号が使われていました。
+* データラングリング: カテゴリーを作成: カテゴリーのタイプに「手動」を選択したときに、「ラベル」を設定すると、プレビューが空白になっていました。
 
 
-* Summary: Unnecessary HTML tags were shown on the Delete Row Filter confirmation dialog.
-
+* サマリー: 行フィルタを削除するときの確認ダイアログに不要なHTMLタグが表示されていました。
 
 
 * チャート: 数値をカテゴリー化した時のバケットのラベルは、よりわかりやすい表現で表示する必要があります。例えば、「2000<=」ではなく、「2000以上」といった表記に変わります。
