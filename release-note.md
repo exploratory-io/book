@@ -6,8 +6,8 @@ Released on 10/05/2023.
 
 ### Enhancements
 
-* Chart: Pie: Now you can do the number formatting on values. 
-* Chart: Pie: Now you can create a condition for which values to show in Show Values. 
+* Chart: Pie: Now you can do the number formatting on values.
+* Chart: Pie: Now you can create a condition for which values to show in Show Values.
 * Chart: Now you can create a condition using a "Greater than" or "Less than" range type in Show Values.
 
 ### Bug Fixes
@@ -22,22 +22,21 @@ Released on 10/05/2023.
 * Data Wrangling: Arrange (Sort): Clicking the Run button did not work when there was a step next to the Arrange step.
 * Data Wrangling: Create Categories: With the "Include Lower Edge" option, the incorrect inequality sign was used in the category name.
 * Data Wrangling: Create Categories: With the "Manual" method, setting "Label Text" ended up a blank preview.
-* Data Wrangling: It should show translated display names for the Source Step popup.
 
 
 * Summary: Unnecessary HTML tags were shown on the Delete Row Filter confirmation dialog.
 
-  
+
 * Chart: Bucket labels should show more meaningful text instead of operator signs. For example, "2000 or greater" instead of "2000 <=".
 * Chart: Color: If you created "Equal Width" buckets, set the # of buckets to more than 5, and chose the "Red / Light Blue" color palette, it repeated the 5-color palette.
-* Chart: Color: If you create "Equal Width" buckets on a numeric column and turn on the "Set 0 as Center", it should create buckets using the given data range and the center color of the palette should align with the bucket that contains 0. 
+* Chart: Color: If you create "Equal Width" buckets on a numeric column and turn on the "Set 0 as Center", it should create buckets using the given data range and the center color of the palette should align with the bucket that contains 0.
 * Chart: Error dialog showed up with the "Cannot read properties of undefined (reading 'name')" error if you tried to show the detailed data on a Pivot Table.
 * Chart: Scatter: Error dialog showed up with the "Cannot read properties of undefined (reading '0')" error if you used Repeat By and set a Y-Axis column that contained sparse data to the Y2 axis.
 * Chart: "Same as the Chart Color" option at Show Values didn't work if you created categories on a numeric column at Color.
 
 
 * Analytics: Prophet: Error dialog showed up with the "Error code 127" error if you tried to save the chart data as a new data frame at the Forecasted tab.
-* Analytics: XGBoost: If you turned on the Test mode, the sum of the percentages in the Test group didn't become 100%. 
+* Analytics: XGBoost: If you turned on the Test mode, the sum of the percentages in the Test group didn't become 100%.
 
 
 * Note: After applying a parameter, the viewer scrollbar went up to the top where it should stay at the current position.
@@ -48,6 +47,7 @@ Released on 10/05/2023.
 
 * Project: Unable to open a project with the Safe Mode (No User R Packages).
 * Project: When publishing a project, it showed 'ELOOP: too many symbolic links encountered error' for some occasions.
+
 
 ## 8.2
 
@@ -68,7 +68,7 @@ Released on 9/13/2023.
 * Data Source: FRED: Supported importing multiple Series at once.
 
 
-* Chart: Now if you open the chart property dialog, it opens the tab/subtab where you left off last time automatically. 
+* Chart: Now if you open the chart property dialog, it opens the tab/subtab where you left off last time automatically.
 
 
 * Dashboard: Now you can enable/disable the font size auto scaling for Number charts from the Dashboard property dialog.
@@ -81,16 +81,16 @@ Released on 9/13/2023.
 
 * Data Wrangling: Filter: Improved the Operator Names.
 * Data Wrangling: Replace Values with Condition: Token showed the internal column name for the "Selected Column".
-* Data Wrangling: Work with Text Data: When selecting the Question Mark as a separator, it did not work. 
+* Data Wrangling: Work with Text Data: When selecting the Question Mark as a separator, it did not work.
 
 
-* Summary View: If you create a chart from the Summary View, it should use the default blue color for the default color instead of light blue. 
+* Summary View: If you create a chart from the Summary View, it should use the default blue color for the default color instead of light blue.
 
 
 * Chart: The "Always Include 0 in X/Y Axis" setting was ignored if you assigned a column to Repeat By and unchecked the "Sync X Axis" checkbox.
 * Chart: Description for the Shorten Numbers (Using K, M, etc.) setting was not clear.
-* Chart: Pie: Font size didn't change even if you set it. 
-* Chart: The bottom part of the property dialog was chopped if you moved the dialog to the bottom and switched the tab. 
+* Chart: Pie: Font size didn't change even if you set it.
+* Chart: The bottom part of the property dialog was chopped if you moved the dialog to the bottom and switched the tab.
 * Chart: Unexpected string like ".2f" showed up on the X-Axis if you set a Date column to X-Axis and set the Decimals explicitly.
 
 
@@ -105,7 +105,7 @@ Released on 9/13/2023.
 
 
 * Publish: Data Share: If you publish a step with some English text in the title, the text should be used as a part of the URL but it didn't work.
-* Publish: Publish did not work for a source step if some of the required parameters were missing in the metadata file. 
+* Publish: Publish did not work for a source step if some of the required parameters were missing in the metadata file.
 
 
 * Project: It was slow after clicking the Close Project button on the Publish Confirmation Dialog.
