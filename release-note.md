@@ -29,15 +29,15 @@ Released on 10/05/2023.
 
   
 * Chart: Bucket labels should show more meaningful text instead of operator signs. For example, "2000 or greater" instead of "2000 <=".
-* Chart: Color: If you create "Equal Width" buckets, set the # of buckets to more than 5 and choose the "Red / Light Blue" color palette, it repeats the 5-color palette.
+* Chart: Color: If you created "Equal Width" buckets, set the # of buckets to more than 5, and chose the "Red / Light Blue" color palette, it repeated the 5-color palette.
 * Chart: Color: If you create "Equal Width" buckets on a numeric column and turn on the "Set 0 as Center", it should create buckets using the given data range and the center color of the palette should align with the bucket that contains 0. 
-* Chart: Error dialog showed up with the "Cannot read properties of undefined (reading 'name')" error if you tried to show the detail d
-* Chart: Scatter: Error dialog showed up with the "Cannot read properties of undefined (reading '0')" error if you use Repeat By and set a Y-Axis column that contains sparse data to the Y2 axis.
-* Chart: When you create categories assigning numeric columns to "color by", "Same as the Chart Color" stops working
+* Chart: Error dialog showed up with the "Cannot read properties of undefined (reading 'name')" error if you tried to show the detailed data on a Pivot Table.
+* Chart: Scatter: Error dialog showed up with the "Cannot read properties of undefined (reading '0')" error if you used Repeat By and set a Y-Axis column that contained sparse data to the Y2 axis.
+* Chart: "Same as the Chart Color" option at Show Values didn't work if you created categories on a numeric column at Color.
 
 
 * Analytics: Prophet: Error dialog showed up with the "Error code 127" error if you tried to save the chart data as a new data frame at the Forecasted tab.
-* Analytics: XGBoost: If you turned on the Test mode, the sum of the percentages in the Test group wasn't 100%. 
+* Analytics: XGBoost: If you turned on the Test mode, the sum of the percentages in the Test group didn't become 100%. 
 
 
 * Note: After applying a parameter, the viewer scrollbar went up to the top where it should stay at the current position.
