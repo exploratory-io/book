@@ -12,34 +12,26 @@ Released on 10/11/2023
 
 ### Enhancements
 
-* Insight: Now you can request access to an insight when you open to an insight that you don't have access to.
-* Insight: Now you can select sending the invitation email or not when sharing your insight with others.
-
-
-* General: Now you can find user and insight event logs in the log file. 
+* Now you can request an access when you don't have it for the contents you're trying to open.
+* Now you can choose whether you want to send an invitation email or not when sharing your contents with others.
+* Admin: We have added user access and content event log information in the log file.
 
 
 ### Bug Fixes
 
-* Insight: After publishing data, it showed the data frame's internal name instead of the display name. 
-* Insight: The parameter pane should be closed by default when you open a note.
-* Insight: Publishing a dashboard failed if the dashboard contained very large metadata. 
+* After publishing data, it showed the data frame's internal name instead of the display name.
+* The parameter pane should be closed by default when you open a note.
+* Publishing a dashboard failed if the dashboard contained very large data.
 
 
-* Parameter: It showed an error "Processing might have failed due to the large data size." if you updated the parameter on a dashboard that contains a lot of charts and data. 
+* Parameter: It showed an error "Processing might have failed due to the large data size." if you updated the parameter on a dashboard that contains a lot of charts and data.
 * Parameter: Updating parameters didn’t refresh charts on a data frame that joined another data frame including parameters.
 * Parameter: When there was a parent-child relationship in parameters, changing the parent parameter did not update the list of values in the child parameter.
-* Parameter: Updating parameters failed If you used a function from the "zipangu" R package in the step.
+* Parameter: Updating parameters failed if you used a function from the "zipangu" R package in the step.
 
 
-* Scheduler: When a job fails with the Invalid OAuth token error, it should show the re-OAuth link in the error dialog.
-
-
-* Admin: When sorting a column in the User table, it should show the NA and "-" at the end.
-* Admin: Now it shows awaiting acceptance status users in the User table.
-
-
-* General: MongoDB should be upgraded to 6.0.
+* Admin: Column sorting result should show the rows with values first before ones with NA.
+* Admin: Now it shows the users you have created but not confirmed yet.
 
 
 ## 7.0
