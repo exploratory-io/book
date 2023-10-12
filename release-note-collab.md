@@ -12,11 +12,11 @@ Released on 10/11/2023
 
 ### Enhancements
 
-* General: Now you can find user and insight event logs in the log file. 
-
-
 * Insight: Now you can request access to an insight when you open to an insight that you don't have access to.
 * Insight: Now you can select sending the invitation email or not when sharing your insight with others.
+
+
+* General: Now you can find user and insight event logs in the log file. 
 
 
 ### Bug Fixes
