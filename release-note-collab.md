@@ -1,14 +1,14 @@
 # Release Note
 
 
-## 8.4
+## 8.3
 
 Released on 10/11/2023
 
 ### Download
 
-* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-8.4.1.tar.gz)
-* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-8.4.1.tar.gz)
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-8.3.2.tar.gz)
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-8.3.2.tar.gz)
 
 ### Enhancements
 
