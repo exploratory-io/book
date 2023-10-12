@@ -1,13 +1,50 @@
 # Release Note
 
-## 7.0
 
-Released on 5/25/2023
+## 8.3
+
+Released on 10/11/2023
 
 ### Download
 
-* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-7.0.9.tar.gz)
-* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-7.0.9.tar.gz)
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-8.3.2.tar.gz)
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-8.3.2.tar.gz)
+
+### Enhancements
+
+* General: Now you can find user and insight event logs in the log file. 
+
+
+* Insight: Now you can request access to an insight when you open to an insight that you don't have access to.
+* Insight: Now you can select sending the invitation email or not when sharing your insight with others.
+
+
+### Bug Fixes
+
+* Insight: After publishing data, it showed the data frame's internal name instead of the display name. 
+* Insight: The parameter pane should be closed by default when you open a note.
+* Insight: Publishing a dashboard failed if the dashboard contained very large metadata. 
+
+
+* Parameter: It showed an error "Processing might have failed due to the large data size." if you updated the parameter on a dashboard that contains a lot of charts and data. 
+* Parameter: Updating parameters didn’t refresh charts on a data frame that joined another data frame including parameters.
+* Parameter: When there was a parent-child relationship in parameters, changing the parent parameter did not update the list of values in the child parameter.
+* Parameter: Updating parameters failed If you used a function from the "zipangu" R package in the step.
+
+
+* Scheduler: When a job fails with the Invalid OAuth token error, it should show the re-OAuth link in the error dialog.
+
+
+* Admin: When sorting a column in the User table, it should show the NA and "-" at the end.
+* Admin: Now it shows awaiting acceptance status users in the User table.
+
+
+* General: MongoDB should be upgraded to 6.0.
+
+
+## 7.0
+
+Released on 5/25/2023
 
 ### Enhancements
 
