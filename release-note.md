@@ -7,12 +7,12 @@ Released on 10/11/2023.
 ### Bug Fixes
 
 * Data Source: S3: When clicking a source step, it did not open the Update Data Source dialog when the associated connection was not found.
-  
-
-* Dashboard: When a dashboard used Text Input Data Source, scheduling was disabled for the dashboard on the Exploratory Server.
 
 
-* Publish: After changing the Exploratory Server to connect, it still published an insight to the old server.
+* Dashboard: Scheduling was not enabled when the dashboard was referencing Text Input data source.
+
+
+* Publish: Switching the Exploratory Server connection doesn't update the server connection when publishing contents.
 
 ## 8.3
 
@@ -20,7 +20,7 @@ Released on 10/05/2023.
 
 ### Enhancements
 
-* Chart: Pie: Now you can do the number formatting on values.
+* Chart: Pie: Now you can do the number formatting for the values.
 * Chart: Pie: Now you can create a condition for which values to show in Show Values.
 * Chart: Now you can create a condition using a "Greater than" or "Less than" range type in Show Values.
 
