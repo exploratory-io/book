@@ -1,5 +1,19 @@
 # Release Note
 
+## 8.4
+
+Released on 10/11/2023.
+
+### Bug Fixes
+
+* Data Source: S3: When clicking a source step, it did not open the Update Data Source dialog when the associated connection was not found.
+  
+
+* Dashboard: When a dashboard used Text Input Data Source, scheduling was disabled for the dashboard on the Exploratory Server.
+
+
+* Publish: After changing the Exploratory Server to connect, it still published an insight to the old server.
+
 ## 8.3
 
 Released on 10/05/2023.
