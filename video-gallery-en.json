@@ -114,7 +114,12 @@
       "desc": "In this video, Kan shows how you can quickly unite (or concatenate) multiple columns with the Unite step in Exploratory.",
       "youtubeId": "tF2KwxMeUdQ"
       }
-      ]
+   {
+    "title": "Standardize (Clean Up) Country Names",
+    "desc": "You can quickly standardize or clean up the country names with Convert UI, here's how!",
+    "youtubeId": "1r_b32fLRYw"
+    }
+    ]
     },
     {
       "title": "Chart",
@@ -142,6 +147,16 @@
        "desc": "Numeric values can be cut or split into multiple groups. This is called ‘Categorizing Numeric Values’, and you can do it quickly and visualize such data more effectively in Exploratory. ",
        "youtubeId": "hk2-Gb_iEQ0"
      }
+     {
+      "title": "Show Reference Line at X-Axis & Y-Axis",
+      "desc": "Using the Reference Line is a great way to give your audience more context to the charts you're presenting. Here's how you can show it in Exploratory!",
+      "youtubeId": "A_ikyVWEUos"
+    }
+    {
+     "title": "Show Moving Average",
+     "desc": "Showing Moving Average is a great way to capture the average change in a time series data over time and smooth the movement of line chart, which will give you a sense of an overall trend. Here's how you can show it in Exploratory! ",
+     "youtubeId": "pu9hZVUKp_U"
+   }
       ]
     },
     {
