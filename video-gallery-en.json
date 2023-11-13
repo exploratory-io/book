@@ -118,7 +118,12 @@
     "title": "Standardize (Clean Up) Country Names",
     "desc": "You can quickly standardize or clean up the country names with Convert UI, here's how!",
     "youtubeId": "1r_b32fLRYw"
-    }
+  },
+  {
+   "title": "Replace Existing Values with New Values",
+   "desc": "You can quickly replace existing values with new values with Replace Values UI in Exploratory. Here's how! ",
+   "youtubeId": "fj7Y3R4bkro"
+   }
     ]
     },
     {
@@ -156,6 +161,16 @@
      "title": "Show Moving Average",
      "desc": "Showing Moving Average is a great way to capture the average change in a time series data over time and smooth the movement of line chart, which will give you a sense of an overall trend. Here's how you can show it in Exploratory! ",
      "youtubeId": "pu9hZVUKp_U"
+   },
+   {
+    "title": "Use Y2 Axis for Variables with Different Scales",
+    "desc": "You can assign one of the Y-Axis columns to Y2 Axis so that you can have each of Y1 and Y2 axis to show different range of scales.",
+    "youtubeId": "0QQCtgmGKOg"
+   },
+   {
+    "title": "Compare Values from Year Ago or Quarter, Month, etc.",
+    "desc": "Want to report your business growth by comparing the latest numbers against a year ago or other periods ago? Here's how!",
+    "youtubeId": "ao5BmglMQxY"
    }
       ]
     },
