@@ -13,9 +13,9 @@ Exploratoryの最新情報のアップデートと、ユーザー様によるExp
 ## 開催要項
 
 * 日時: 2023年12月15日 (金) 18:00 - 20:30（17:45開場）、20:30 - 22:00 懇親会
-* 会場: 未定
+* 会場: 新橋ビジネスフォーラム（東京都港区新橋1-18-21　第一日比谷ビル8F）
 * 参加方法: [こちら](https://exploratory.io/note/exploratory/Exploratory-30-in-mjQ3koh2Rp)のページよりお申し込みください。
 
 ## アジェンダ
 
-<img src="https://dl.dropboxusercontent.com/s/g7zmw47s7vu7fmsj0umg8/Agenda.png?rlkey=iqr387z00a7llwo1d5euqgb6e&dl=0" width="100%" />
+<img src="https://dl.dropboxusercontent.com/s/tc996j6duicoy1kfh4o00/Agenda_v1.png?rlkey=l0j2d5b8galrdrq8gd9s233ua&dl=0" width="100%" />
