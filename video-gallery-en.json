@@ -133,44 +133,59 @@
       "moreButtonUrl": "https://www.youtube.com/playlist?list=PLxM-q2GK4zu5oR_cBqzFe19EcthWS_iwU",
       "insights": [
        {
-        "title": "Highlight Some Values in Chart",
-        "desc": "Sometimes, you want to highlight some particular values in a chart to compare them to the others or simply emphasize them so that your audience can see the points you’re making easily. Here's a quick introduction to the Highlight feature! ",
+        "title": "Highlight Values in Chart",
+        "desc": "You can quickly highlight some particular values in a chart. Here's how!",
         "youtubeId": "JI4I6s2qWmQ"
       },
       {
        "title": "Limit the Values in Chart",
-       "desc": "It’s not uncommon to have too many unique values in some of the columns in your data. In such cases, you can use the Limit feature to literally limit the values to be included in your chart. Here's a quick introduction for Limit feature",
+       "desc": "You can limit number of groups to show based on aggregated values, here's how!",
        "youtubeId": "BmWBCJL6CMI"
       },
       {
        "title": "Create 'Others' Group",
-       "desc": "Sometimes, you might have a column with many unique values but most of them are very low frequent like long tail values. In such cases, you can put those long tail values into ‘Others’ group in Exploratory.",
+       "desc": "You can create 'Others' group for those that are less frequent.",
        "youtubeId": "ckVUlnxWDUM"
       },
       {
        "title": "Categorize Numeric Values",
-       "desc": "Numeric values can be cut or split into multiple groups. This is called ‘Categorizing Numeric Values’, and you can do it quickly and visualize such data more effectively in Exploratory. ",
+       "desc": "You can categorize numeric values by cutting or splitting into multiple groups, here's how!",
        "youtubeId": "hk2-Gb_iEQ0"
      },
      {
       "title": "Show Reference Line at X-Axis & Y-Axis",
-      "desc": "Using the Reference Line is a great way to give your audience more context to the charts you're presenting. Here's how you can show it in Exploratory!",
+      "desc": "You can use Reference Line to give your audience more context to your charts, here's how!",
       "youtubeId": "A_ikyVWEUos"
     },
     {
      "title": "Show Moving Average",
-     "desc": "Showing Moving Average is a great way to capture the average change in a time series data over time and smooth the movement of line chart, which will give you a sense of an overall trend. Here's how you can show it in Exploratory! ",
+     "desc": "Yuo can show Moving Average to capture the overall trend by smoothing the movement of line chart, here's how!",
      "youtubeId": "pu9hZVUKp_U"
    },
    {
     "title": "Use Y2 Axis for Variables with Different Scales",
-    "desc": "You can assign one of the Y-Axis columns to Y2 Axis so that you can have each of Y1 and Y2 axis to show different range of scales.",
+    "desc": "You can assign one of the Y-Axis columns to Y2 Axis to use a different scale, here's how!",
     "youtubeId": "0QQCtgmGKOg"
    },
    {
     "title": "Compare Values from Year Ago or Quarter, Month, etc.",
     "desc": "Want to report your business growth by comparing the latest numbers against a year ago or other periods ago? Here's how!",
     "youtubeId": "ao5BmglMQxY"
+   },
+   {
+    "title": "Change Marker Type between Bar / Line / Circle",
+    "desc": "You can quickly switch the chart marker type between Bar, Line, and Circle, here's how!",
+    "youtubeId": "zJi99Fwyc0Q"
+   },
+   {
+    "title": "Aggregate Values with Conditions",
+    "desc": "You can selectively aggregate values by using conditions, here's how!",
+    "youtubeId": "QJOqoqu4XEw"
+   },
+   {
+    "title": "Aggregate Values with Conditions",
+    "desc": "You can add visual cues by using color and bar for Pivot / Summarize Tables, here's how!",
+    "youtubeId": "_zYQYAsmQwU"
    }
       ]
     },
