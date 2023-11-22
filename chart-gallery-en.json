@@ -220,14 +220,19 @@
        "url": "https://exploratory.io/note/exploratory/How-to-Summarize-with-Conditions-YNv7sUq1"
        },
        {
-       "title": "Use Dual Axes to Show Multiple Measures",
+       "title": "Use Dual Axes (Y1/Y2) to Show Multiple Measures",
        "desc": "You can assign the columns to either Y1 or Y2 axis.",
        "url": "https://exploratory.io/note/kanaugust/Chart-Dual-Y-Axis-ilv7Hbe1Xt"
        },
        {
-       "title": "Show Bar and Line in a Single Chart",
+       "title": "Switch Marker between Bar, Line, and Circle",
        "desc": "You can use different markers for different measures in the same chart.",
        "url": "https://exploratory.io/note/kanaugust/Chart-Switching-Marker-Circle-Line-Bar-LoW1UdM7QH"
+       },
+       {
+       "title": "Adding Visual Cues (Color / Bar) for Pivot / Summarize Tables",
+       "desc": "You can add visual cues by using color and bar for Pivot / Summarize Tables.",
+       "url": "https://exploratory.io/note/exploratory/How-to-Add-Visual-Cue-Color-Bar-to-Pivot-Summarize-Tables-mRJ2XHr6ER"
        },
        {
        "title": "Add Your Own GeoJSON for Map",
