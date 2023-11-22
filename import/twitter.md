@@ -1,5 +1,7 @@
 # Import Twitter Search API data
 
+NOTE: Currently, this data source is not supported in Exploratory Desktop.
+
 You can query and extract Twitter's tweet data.
 
 * [Quick Video: How to Query and Extract Twitter Data](https://exploratory.io/tutorial#querying-extracting-twitter-data)
