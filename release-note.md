@@ -1,5 +1,14 @@
 # Release Note
 
+## 8.5
+
+Released on 12/6/2023.
+
+### Enhancements
+
+* Analytics: Introducing "Chi-Square A/B Test (Aggregated Data)" and "Power Analysis - Chi-Square A/B Test" analytics.
+
+
 ## 8.4
 
 Released on 10/11/2023.
