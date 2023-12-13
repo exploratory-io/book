@@ -32,12 +32,15 @@ Released on 12/14/2023.
 * Data Source: Updating SQL Data Source failed with the "Cannot read properties of undefined (reading 'get')" error on some occasions.
 * Data Source: After deleting a data frame created with the "Save As New Data Frame" operation, you cannot restore it from Change History.
 
+
 * Data Wrangling: Create Categories: The category label for the value outside the range was incorrect. 
 * Data Wrangling: Creating a text wrangling step failed with RangeError: Invalid count value: -1
 * Data Wrangling: The filter token does not show the correct label for numeric in the operator
 * Data Wrangling: On Windows, a custom R Command failed with error code 127 for a long script.
 
+
 * Table View: Metrics popup failed to show the content if you opened the metrics popup by clicking the "i" icon in the table header right after the project opened.
+
 
 * Chart: Bar chart showed "Invalid argument was passed to returnsNumericValue" if you assigned a numeric column to color, changed the bucket type, and unselected the column at Color.
 * Chart: During the SQL Data import, users could not operate in the chart view.
@@ -45,17 +48,22 @@ Released on 12/14/2023.
 * Chart: Pie: Under the Value tab in the Property dialog, if you set a Font Size and changed the Condition from "All" to "Range", the Font Size value was copied to the Threshold value.
 * Chart: Show Detail failed to show if the target data frame is based on the "data.table" R object.
 
+
 * Analytics: Confidence interval value was different between the Statistics tab and the Mean tab in the Wilcoxon Test. 
 * Analytics: Hovering the table header of the Summary tab in the Chi-Square A/B test didn't show the "i" icon for help.
 * Analytics: Prophet: Effects tab showed the "Error code 3" error if you assigned a column including single quote characters to the External Predictors or Repeat By.
 * Analytics: When you updated a step in the analytics view and ran analytics, the analytics did not reflect the updated data.
 
+
 * Parameter: When creating a new parameter from the Filter Dialog, it now uses the Filter operator, column information, etc to set default parameter settings.
+
 
 * General: Windows: Screen flickered when going to full-screen mode
 
+
 * Publish: "Notify team members" option is not effective when you publish a chart to the team. 
 * Publish: When publishing a chart, the Notify Team Member parameter is not passed to the server
+
 
 * Project: After exporting a project with an EPF file, temporary data files remained in the project folder. 
 * Project: Exporting EPF file shows the "Cannot read properties of undefined (reading 'displayName') error
