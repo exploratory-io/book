@@ -39,6 +39,9 @@ Released on 12/14/2023.
 * Data Wrangling: On Windows, a custom R Command failed with error code 127 for a long script.
 
 
+* Summary View: Correlation mode showed incorrect results if you ran the Correlation mode, moved to the Table view, updated the column data type, and came back to the Summary view.
+
+  
 * Table View: Metrics popup failed to show the content if you opened the metrics popup by clicking the "i" icon in the table header right after the project opened.
 
 
