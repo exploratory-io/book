@@ -38,6 +38,9 @@ Released on 12/14/2023.
 * Data Wrangling: On Windows, a custom R Command failed with error code 127 for a long script.
 
 
+* Summary: Correlation Mode: When navigating between summary view and other view without exiting correlation mode, correlation mode UI shows incorrect result.
+  
+
 * Chart: Bar chart showed "Invalid argument was passed to returnsNumericValue" if you assigned a numeric column to color, changed the bucket type, and unselected the column at Color.
 * Chart: During the SQL Data import, users could not operate in the chart view.
 * Chart: Pie: Under the Value tab in the Property dialog, if you set a Font Size and changed the Condition from "All" to "Range", the Font Size value was copied to the Threshold value.
