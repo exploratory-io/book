@@ -12,7 +12,7 @@ Released on 12/14/2023.
 ### New Features
 
 * Data Wrangling: Now you can rename the column names with Replace/Remove/Extract/Convert options.
-* Number: Now youc an use 'Compare' feature to calculate difference between two data points.
+* Number: Now you can use 'Compare' feature to calculate difference between two data points.
 * Dashboard: Now you can filter the data by clicking charts and pivot tables in Dashboards.
 * Note: Introducing the new Note editor.
 * Project: Now you can open multiple projects with separate windows.
