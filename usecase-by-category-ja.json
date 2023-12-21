@@ -67,6 +67,11 @@
       "desc": "回帰分析や機会学習のアルゴリズムの活用事例を紹介します。",
       "insights": [
         {
+         "title": "Data Informed な健康経営の試行錯誤Part2",
+         "desc": "データサイエンス勉強会#30の株式会社サンホシスコ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/Data-Informed-Part2-by-Jaf4nwH6oM"
+        },
+        {
          "title": "ホステッド・サーバーを軸とした データサイエンス・ソリューションの開発",
          "desc": "データサイエンス勉強会#29の株式会社ホンダコムテック様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-bXz2gnX7wm"
@@ -241,6 +246,11 @@
       "desc": "アンケートデータ分析の事例を紹介します",
       "insights": [
         {
+         "title": "NPSアンケートでサービス改善項目を炙り出す～アクションドライバーチャート～",
+         "desc": "データサイエンス勉強会#30の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/NPS-by-HZC1Fbr6Dd"
+        },
+        {
          "title": "ロジスティック回帰を使った個人の趣味と勤労意欲の関係性の検証",
          "desc": "データサイエンス勉強会#27の株式会社博報堂様のご発表内容となります。主成分分析を使って、データから得られる「発見」をクリエティブに要約する方法をご発表いただきました。",
          "url": "https://exploratory.io/note/exploratory/by-XHk1wqe1"
@@ -381,6 +391,11 @@
       "desc": "可視化における活用事例を紹介します。",
       "insights": [
         {
+         "title": "NPSアンケートでサービス改善項目を炙り出す～アクションドライバーチャート～",
+         "desc": "データサイエンス勉強会#30の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/NPS-by-HZC1Fbr6Dd"
+        },
+        {
          "title": "デジタルマーケティング施策におけるPDCAサイクルの効率化",
          "desc": "データサイエンス勉強会#28の株式会社ビューカード様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-GxQ4mtj9Bm"
@@ -416,6 +431,11 @@
       "title": "セグメンテーション",
       "desc": "セグメンテーション分析の事例を紹介します。",
       "insights": [
+        {
+         "title": "NPSアンケートでサービス改善項目を炙り出す～アクションドライバーチャート～",
+         "desc": "データサイエンス勉強会#30の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/NPS-by-HZC1Fbr6Dd"
+        },
         {
          "title": "リピーターを増やすための顧客セグメンテーション分析",
          "desc": "データサイエンス勉強会#20の日本成長投資アライアンス株式会社様のご発表内容となります。",
@@ -468,6 +488,11 @@
       "title": "レポーティング",
       "desc": "ダッシュボードやノートの活用事例を紹介します。",
       "insights": [
+        {
+         "title": "Data Informed な健康経営の試行錯誤Part2",
+         "desc": "データサイエンス勉強会#30の株式会社サンホシスコ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/Data-Informed-Part2-by-Jaf4nwH6oM"
+        },
         {
          "title": "ホステッド・サーバーを軸とした データサイエンス・ソリューションの開発",
          "desc": "データサイエンス勉強会#29の株式会社ホンダコムテック様のご発表内容となります。",
