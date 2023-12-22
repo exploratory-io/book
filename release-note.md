@@ -12,25 +12,24 @@ Released on 12/23/2023.
 * Data Wrangling: When opening multiple projects, moving between chart view and table view showed the "could not find function" error.
 
 
-* Chart: Histogram: Show detail failed if you set a date column to color and choose the "Year and Month" group function.
-* Chart: Map: Moved the Russia’s position to where Moscow is.
-* Chart: Map: Some countries names were not showing up in the pop-up.
-* Chart: Number updates.
-* Chart: Pivot/Summarize Table/Table updates. 
-* Chart: Updating parameter on the published chart failed if the chart was not pinned and the last step is disabled.
+* Chart: Histogram: Show detail failed if you set a date column to color and choose the "Year and Month" grouping function.
+* Chart: Map: Circle marker for Russia should show up at Moscow.
+* Chart: Map: Some country names didn't show up in the hover pop-up.
+* Chart: Number: Pivot: Summarize Table: Table: Default text color should be configurable.
+* Chart: Updating parameters on the published chart failed if the chart was not pinned and the last step was disabled.
 
 
-* Note: After upgraded to version 9.0, it cannot open the note created with older version.
-* Note: The Note body width was not consistent between Desktop and Preview/Server.
+* Note: Existing notes created on an older version didn't open properly.
+* Note: The note body width was not consistent between desktop and server.
 
 
 * Dashboard: Dashboard filter didn't work if a column name contained braces. 
-* Dashboard: If you closed a dashboard in Run mode and reopened it, it opened in the Run mode with blank screen.
-* Dashboard: Interactive Filter: Color assignment was not working properly under some condition.
+* Dashboard: If you closed a dashboard in Run mode and reopened it, it opened in Run mode with a blank screen.
 
 
 * Project: After editing the project name in the project list and opening the project, the project name was still old.
 * Project: Project Information Dialog: Clicking the Update Button didn't work right after creating a project.
+
 
 ## 9.0
 
