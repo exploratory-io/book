@@ -1,5 +1,36 @@
 # Release Note
 
+## 9.1
+
+Released on 12/22/2023.
+
+### Bug Fixes
+
+* Data Source: UTF-8 support on Windows was broken and Japanese characters were garbled for SQL Data Sources.
+
+
+* Data Wrangling: When opening multiple projects, moving between chart view and table view showed the "could not find function" error.
+
+
+* Chart: Histogram: Show detail failed if you set a date column to color and choose the "Year and Month" grouping function.
+* Chart: Map: Circle marker for Russia should show up at Moscow.
+* Chart: Map: Some country names didn't show up in the hover pop-up.
+* Chart: Number: Pivot: Summarize Table: Table: Default text color should be configurable.
+* Chart: Updating parameters on the published chart failed if the chart was not pinned and the last step was disabled.
+
+
+* Note: Existing notes created on an older version didn't open properly.
+* Note: The note body width was not consistent between desktop and server.
+
+
+* Dashboard: Dashboard filter didn't work if a column name contained braces. 
+* Dashboard: If you closed a dashboard in Run mode and reopened it, it opened in Run mode with a blank screen.
+
+
+* Project: After editing the project name in the project list and opening the project, the project name was still old.
+* Project: Project Information Dialog: Clicking the Update Button didn't work right after creating a project.
+
+
 ## 9.0
 
 Released on 12/14/2023.
