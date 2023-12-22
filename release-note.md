@@ -12,6 +12,7 @@ Released on 12/22/2023.
 * Data Wrangling: When opening multiple projects, moving between chart view and table view showed the "could not find function" error.
 
 
+* Chart: Bar chart failed to render if you created a Bubble chart with the Label and switched to the Bar chart. 
 * Chart: Histogram: Show detail failed if you set a date column to color and choose the "Year and Month" grouping function.
 * Chart: Map: Circle marker for Russia should show up at Moscow.
 * Chart: Map: Some country names didn't show up in the hover pop-up.
@@ -23,8 +24,9 @@ Released on 12/22/2023.
 * Note: The note body width was not consistent between desktop and server.
 
 
-* Dashboard: Dashboard filter didn't work if a column name contained braces. 
+* Dashboard: Dashboard filter didn't work properly if a column name contained braces. 
 * Dashboard: If you closed a dashboard in Run mode and reopened it, it opened in Run mode with a blank screen.
+* Dashboard: If you click a slice of a Pie chart, the color palette of the Pie chart changes.
 
 
 * Project: After editing the project name in the project list and opening the project, the project name was still old.
