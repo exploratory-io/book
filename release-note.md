@@ -2,7 +2,7 @@
 
 ## 9.1
 
-Released on 12/23/2023.
+Released on 12/22/2023.
 
 ### Bug Fixes
 
