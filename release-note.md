@@ -24,7 +24,7 @@ Released on 12/22/2023.
 * Note: The note body width was not consistent between desktop and server.
 
 
-* Dashboard: Dashboard filter didn't work properly if a column name contained braces.
+* Dashboard: Dashboard Filter didn't work properly if a column name contained braces.
 * Dashboard: Dashboard Filter should work even if the column is not assigned to the chart as long as the column exists in the pinned step.
 * Dashboard: If you closed a dashboard in Run mode and reopened it, it opened in Run mode with a blank screen.
 * Dashboard: If you click a slice of a Pie chart, the color palette of the Pie chart changes.
