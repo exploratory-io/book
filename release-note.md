@@ -1,5 +1,20 @@
 # Release Note
 
+## 9.2
+
+Released on 12/25/2023.
+
+### Bug Fixes
+
+* Chart: Map - Standard: Showing the detail data by clicking the map didn't work on the World Map with Area mode.
+* Chart: Map - Standard: When you changed the Map type from US State to World Map, showing the detail data by clicking the map didn't work.
+
+
+* Project: After renaming a project a project in a separate window, the Project List should reflect the change immediately without clicking the Refresh icon.
+* Project: After publishing/unpublishing a project in a separate window, the Project List should reflect the change immediately without clicking the Refresh icon.
+
+
+
 ## 9.1
 
 Released on 12/22/2023.
