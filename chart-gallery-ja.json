@@ -125,11 +125,6 @@
         "title": "ワードクラウドの作り方",
         "desc": "ワードクラウドの作り方をご紹介します。",
         "url": "https://exploratory.io/note/exploratory/nab0EZU5"
-       },
-       {
-        "title": "集合バーチャートの作り方",
-        "desc": "集合バーチャートの作り方をご紹介します。",
-        "url": "https://exploratory.io/note/exploratory/lfa4hrY9"
        }
       ]
     },
@@ -164,141 +159,156 @@
        "desc": "表計算：最初の値からの差の割合を使って成長率を可視化する方法をご紹介します。",
        "url": "https://exploratory.io/note/exploratory/bdG6yTZ5"
       },
-       {
+      {
+        "title": "集合バーチャートの作り方",
+        "desc": "集合バーチャートの作り方をご紹介します。",
+        "url": "https://exploratory.io/note/exploratory/lfa4hrY9"
+      },
+      {
        "title": "リファレンスラインの使い方",
        "desc": "リファレンスラインの使い方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/eDU7CFA8RQ"
-       },
-       {
+      },
+      {
        "title": "トレンドライン：線形回帰の引き方",
        "desc": "トレンドライン：線形回帰の引き方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/14-2-rdp7QBM4vw"
-       },
-       {
+      },
+      {
        "title": "トレンドライン：LOESS曲線の引き方",
        "desc": "トレンドライン：LOESS曲線の引き方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/10-LOESS-UJg3GXO9qL"
-       },
-       {
+      },
+      {
        "title": "ラインチャートで特定の値の範囲を塗りつぶす方法",
        "desc": "ラインチャートで特定の値の範囲を塗りつぶす方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-169-aiq1Dku0xw"
-       },
-       {
+      },
+      {
        "title": "チャートの色を変更する方法",
        "desc": "色とグループの設定の使い方をご紹介します。",
        "url": "https://exploratory.io/note/exploratory/lSA6eIV2"
-       },
-       {
+      },
+      {
        "title": "ハイライトの使い方",
        "desc": "ハイライトの使い方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/snt1aaS4qm"
-       },
-       {
+      },
+      {
        "title": "条件によって色を指定する方法",
        "desc": "条件によって色を指定する方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-182-zYg0Rav0Ef"
-       },
-       {
+      },
+      {
        "title": "数値を等幅または等頻度に分けて色を付ける方法",
        "desc": "数値を等幅または等頻度に分けて色を付ける方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-184-Ial5eak0rB"
-       },
-       {
+      },
+      {
        "title": "Y軸の値を元に色を指定する方法",
        "desc": "Y軸の値を元に色を指定する方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-186-Y-lOu8rEI7tV"
-       },
-       {
+      },
+      {
        "title": "色の表示名を変更して複数のグループを一つにまとめる",
        "desc": "色の表示名を変更して複数のグループを一つにまとめる方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-188-kjk7hiJ8NY"
-       },
-       {
-       "title": "カスタム・カラーパレットの使い方",
-       "desc": "カスタム・カラーパレットの使い方をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-201-YMo1Lhw9Ps"
-       },
-       {
+      },
+      {
+       "title": "ユーザーカラーパレットの使い方",
+       "desc": "ユーザーカラーパレットの使い方をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/IBL1sEe4If"
+      },
+      {
        "title": "数値を等間隔でカテゴリー化して可視化する方法",
        "desc": "数値を等間隔でカテゴリー化して可視化する方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-200-oPT9mcP7DH"
-       },
-       {
+      },
+      {
        "title": "繰り返しの使い方",
        "desc": "繰り返しの使い方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/YZc5vEy0xt"
-       },
-       {
+      },
+      {
        "title": "複数の指標を個々のチャートとして並べて見る方法",
        "desc": "繰り返しのY軸の列ごとの使い方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-191-bVS6xdg7ro"
-       },
-       {
+      },
+      {
        "title": "特定の値以外は全て「その他」グループとして表示する方法",
        "desc": "特定の値以外は全て「その他」グループとして表示する方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-209-FEX7ADy4qC"
-       },
-       {
+      },
+      {
        "title": "集計テーブル: クイック・ビジュアルフォーマット",
        "desc": "集計テーブルにあるクイック・ビジュアルフォーマットの使い方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-199-tMh4beE1za"
-       },
-       {
+      },
+      {
        "title": "チャート内での欠損値の処理方法",
        "desc": "チャート内での欠損値の処理方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-163-EYM8Vcx6vG"
-       },
-       {
+      },
+      {
        "title": "条件付き集計関数（sum if関数など）の使い方",
        "desc": "チャート内での条件付き集計関数の使い方をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-197-sum-if-bTK2VuK3AQ"
-       },
-       {
+      },
+      {
        "title": "factor型の列のデータがないレベルはチャートで非表示にする方法",
        "desc": "factor型の列のデータがないレベルはチャートで非表示にする方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-122-factor-Xox5VtM6XM"
-       },
-       {
+      },
+      {
        "title": "集計テーブルの合計の計算対象を集計前に変更する方法",
        "desc": "集計テーブルの合計の計算対象を集計前に変更する方法をご紹介します。",
        "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-119-huW6VwS5UK"
-       },
-       {
+      },
+      {
        "title": "Y2軸を設定する方法",
        "desc": "Y2軸を設定する方法をご紹介します。",
-       "url": "https://exploratory.io/note/GMq1Qom5tS/Y2-NEy3ptf8HT"
-       },
-       {
-       "title": "チャートのプロパティ: 軸の設定",
+       "url": "https://exploratory.io/note/exploratory/Y2-HzL4SAP6qZ"
+      },
+      {
+       "title": "チャートの設定: 軸の設定",
        "desc": "軸に関する設定方法をご紹介します。",
        "url": "https://exploratory.io/note/exploratory/AKS0KcX0"
-       },
-       {
-        "title": "チャートのプロパティ: 数値フォーマットの設定",
+      },
+      {
+        "title": "チャートの設定: 数値フォーマットの設定",
         "desc": "「通貨記号」や「割合」などの数値のフォーマットに関する設定方法をご紹介します。",
         "url": "https://exploratory.io/note/exploratory/tWR2zzh2"
-        },
-        {
-          "title": "チャートのプロパティ: テーブルの詳細設定",
+      },
+      {
+        "title": "チャートの設定: 凡例",
+        "desc": "凡例の設定方法をご紹介します。",
+        "url": "https://exploratory.io/note/exploratory/Grk4xrC8"
+      },
+      {
+        "title": "チャートの設定: 値",
+        "desc": "チャート上に値を表示する設定方法をご紹介します。",
+        "url": "https://exploratory.io/note/exploratory/JsX7TYo7"
+      },
+      {
+        "title": "チャートのデフォルト設定",
+        "desc": "チャートのデフォルト値の設定方法をご紹介します。",
+        "url": "https://exploratory.io/note/exploratory/Rzn2ErN6"
+      },
+      {
+          "title": "チャートの設定: テーブルの詳細設定",
           "desc": "「ピボットテーブル」や「集計テーブル」など設定に関する便利な機能をご紹介します。",
           "url": "https://exploratory.io/note/exploratory/iai3RkW7"
-        },
-       {
+      },
+      {
        "title": "チャートタイトル、軸タイトルの設定方法",
        "desc": "チャートタイトル、軸タイトルの設定方法をご紹介します。",
        "url": "https://exploratory.io/note/exploratory/zap4kWs2Yv"
-       },
-       {
+      },
+      {
        "title": "一つのチャートにバーとラインを同時に表示する方法",
        "desc": "一つのチャートにバーとラインを同時に表示する方法をご紹介します。",
        "url": "https://exploratory.io/note/kei/Frr5QQl7fI"
-       },
-       {
-       "title": "チャート上に値を表示する方法",
-       "desc": "チャート上に値を表示する方法をご紹介します。",
-       "url": "https://exploratory.io/note/kei/OBj7zZr8JE"
-       }
+      }
       ]
     },
      {
