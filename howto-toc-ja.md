@@ -79,46 +79,61 @@
 ----
 
 * [データラングリング](/howto?q=tag%3A%22Data%20Wrangling%22&language=ja)
-    * [計算を作成](/howto?q=tag%3AMutate&language=ja)
-    * [データタイプ](/howto?q=tag%3A%22Data%20Type%22&language=ja)
-    * [ステップ](/howto?q=tag%3AStep&language=ja)
-    * [集計](/howto?q=tag%3ASummarize&language=ja)
-    * [ピボット](/howto?q=tag%3APivot%20tag%3A%22Data%20Wrangling%22&language=ja)
-    <!--* [列名を変更](/howto?q=tag%3ARename&language=ja)-->
-    <!--* [列を並び替える](/howto?q=tag%3A%22Reorder%20Columns%22&language=ja)-->
-    <!--  * [列を選択](/howto?q=tag%3A%22Select%20Columns%22&language=ja)-->
-    * [行を選択](/howto?q=tag%3ASlice&language=ja)
-    * [フィルタ](/howto?q=tag%3AFilter%20tag%3A%22Data%20Wrangling%22&language=ja)
-    <!--* [並び替え (ソート)](/howto?q=tag%3AArrange&language=ja)-->
-    * [グループ化](/howto?q=tag%3A%22Group%20By%22&language=ja)
-    * [ブランチ](/howto?q=tag%3ABranch&language=ja)
-    * [列結合](/howto?q=tag%3AJoin&language=ja)
-    * [行結合](/howto?q=tag%3AMerge&language=ja)
-    * [複数の列をつなげる](/howto?q=tag%3AUnite&language=ja)
-    * [列を分割](/howto?q=tag%3ASeparate&language=ja)
-    * [ワイド型からロング型へ変換](/howto?q=tag%3AGather&language=ja)
-    * [ロング型からワイド型へ変換](/howto?q=tag%3ASpread&language=ja)
-    * [既存の値を新しい値に置き換える](/howto?q=tag%3ARecode&language=ja)
-    * [条件によって異なる値を返す](/howto?q=tag%3Aifelse&language=ja)
-    * [条件によって既存の値を置き換える](/howto?q=tag%3Acase_when&language=ja)
-    * [欠損値を扱う](/howto?q=tag%3ANa&language=ja)
-    * [ビン(カテゴリー)を作成](/howto?q=tag%3ABinnning%20tag%3A%22Data%20Wrangling%22&language=ja)
-    <!--* [その他グループを作る](/howto?q=tag%3A%22other%20group%22&language=ja)-->
-    * [テキストデータの加工](/howto?q=tag%3A%22Text%20Data%22&language=ja)
-    * [正規表現](/howto?q=tag%3A%22Regular%20Expression%22&language=ja)
+
+  * [列名を変更](/howto?q=tag%3ARename&language=ja)
+  * [列を選択/削除](/howto?q=tag%3ASelect&language=ja)
+  * [列を並び替える](/howto?q=tag%3AReorder&language=ja)
+  * [フィルタ](/howto?q=tag%3AFilter%20tag%3A%22Data%20Wrangling%22&language=ja)
+  * [グループ化](/howto?q=tag%3A%22Group%20By%22&language=ja)
+  * [集計](/howto?q=tag%3ASummarize&language=ja)
+  * [計算を作成](/howto?q=tag%3AMutate&language=ja)
+  * [表計算を作成](/howto?q=tag%3A%22Window%20Calculation%22&language=ja)
+  * [カテゴリーを作成](/howto?q=tag%3ABinnning%20tag%3A%22Data%20Wrangling%22&language=ja)
+  * [並び替え（ソート）](/howto?q=tag%3AArrange&language=ja)
+  * [結合](/howto?q=tag%3AMerge&language=ja)
+  * [マージ](/howto?q=tag%3AJoin&language=ja)
+  * [ワイド型からロング型へ変換](/howto?q=tag%3AGather&language=ja)
+  * [ロング型からワイド型へ変換](/howto?q=tag%3ASpread&language=ja)
+  * [ピボット](/howto?q=tag%3APivot%20tag%3A%22Data%20Wrangling%22&language=ja)
+  * [分割](/howto?q=tag%3ASeparate&language=ja)
+  * [複数の列をつなげる](/howto?q=tag%3AUnite&language=ja)
+  * [データタイプを変換](/howto?q=tag%3A%22Data%20Type%22&language=ja)
+  * [新しい値を指定](/howto?q=tag%3ARecode&language=ja)
+  * [条件を指定](/howto?q=tag%3Acase_when&language=ja)
+  * [数値関数を使う](/howto?q=tag%3A%22Numeric%20Function%22&language=ja)
+  * [テキストデータの加工](/howto?q=tag%3A%22Text%20Data%22&language=ja)
+  * [欠損値の加工](/howto?q=tag%3ANa&language=ja)
+  * [その他グループを作る](/howto?q=tag%3A%22other%20group%22&language=ja)
+  * [値の順序をセット](/howto?q=tag%3Afactor&language=ja)
+    <!--期間/現状コンテンツがないため、隠している-->
+  * [抽出](/howto?q=tag%3ADate%20%E6%8A%BD%E5%87%BA&language=ja)
+  * [丸め処理](/howto?q=tag%3ADate%20%E4%B8%B8%E3%82%81%E5%87%A6%E7%90%86&language=ja)
+    <!--アナリティクス/現状コンテンツが見あたらないため、隠している-->
+  * [予測（アナリティクス・ビュー）](/howto?q=tag%3APrediction%20tag%3A%22Data%20Wrangling%22&language=ja)
+  * [サンプルを抽出](/howto?q=tag%3Asampling&language=ja)
+  * [上位N/下位N](/howto?q=tag%3Atop_n&language=ja)
+  * [一意な行/重複する行](/howto?q=tag%3Aunique_rows%7Cduplicated_rows&language=ja)
+  * [行を選択](/howto?q=tag%3ASlice&language=ja)
+  * [欠損値がある行を削除](/howto?q=tag%3ANA%20tag%3AFilter&language=ja)
+  * [空の行/空の列を削除](/howto?q=tag%3Aremove_empty&language=ja)
+    <!--その他/整理中のため隠している-->
+  * [モデルを構築・評価](/howto?q=tag%3APrediction%20tag%3A%22Data%20Wrangling%22&language=ja)
+    <!--テキストマイニング/整理中のため隠している-->
+    <!--*ここからはメニュー外-->
+  - [ステップ](/howto?q=tag%3AStep&language=ja)
+  - [ブランチ](/howto?q=tag%3ABranch&language=ja)
+  - [正規表現](/howto?q=tag%3A%22Regular%20Expression%22&language=ja)
+  - [国名/コードの変換](/howto?q=tag%3Acountrycode&language=ja)
+  - [Rスクリプト](/howto?q=tag%3A%22Data%20Wrangling%22%20tag%3A%22R%20Script%22&language=ja)
+    <!--*ここからは過去にあったメニュー-->
     <!--* [URLを操作](/howto?q=tag%3Aurl&language=ja)-->
-    * [値の順序をセット](/howto?q=tag%3Afactor&language=ja)
     <!--* [サンプルを抽出](/howto?q=tag%3A%22Extract%20Sample%22&language=ja)-->
-    * [上位N/下位N](/howto?q=tag%3Atop_n&language=ja)
-    <!--* [一意な行/重複する行](/howto?q=tag%3Aunique_rows%7Cduplicated_rows&language=ja)-->
-    <!--* [空行/空列を削除](/howto?q=tag%3Aremove_empty&language=ja)-->
-    * [国名/コードの変換](/howto?q=tag%3Acountrycode&language=ja)
-    * [Rスクリプト](/howto?q=tag%3A%22Data%20Wrangling%22%20tag%3A%22R%20Script%22&language=ja)
     <!--* [データの不均衡を解消](/howto?q=tag%3A不均衡&language=ja)-->
     <!--* [全ての列名をきれいにする](/howto?q=tag%3A%22Clean%20up%20all%20column%20names%22&language=ja)-->
     <!--* [行をヘッダとして使用](/howto?q=tag%3A%22Row%20as%20Header%22&language=ja)-->
     <!--* [全ての列のデータタイプを再評価](/howto?q=tag%3A%22Re-Evaluate%20Data%20Types%22&language=ja)-->
     <!--* [ワンホットエンコーディング](/howto?q=tag%3A%22one-hot%20encoding%22&language=ja)-->
+
 
 ----
 
