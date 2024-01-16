@@ -79,6 +79,7 @@
 ----
 
 * [データラングリング](/howto?q=tag%3A%22Data%20Wrangling%22&language=ja)
+
     * [列名を変更](/howto?q=tag%3ARename&language=ja)
     * [列を選択/削除](/howto?q=tag%3ASelect&language=ja)
     * [列を並び替える](/howto?q=tag%3AReorder&language=ja)
