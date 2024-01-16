@@ -18,12 +18,12 @@ Released on 1/16/2024.
 
 
 * Data Wrangling: Create Calculation: Clicking the "Function List" link did not open the function list.
-* Data Wrangling: Deleting a data frame did not work for some occasions.
+* Data Wrangling: Deleting a data frame did not work on some occasions.
 
 
 * Chart: Bar: If you had negative values on the Stacked Bar and showed the total values on the plot, it showed incorrect values. 
 * Chart: Date formatting was missing on the Y2 Axis tab in the Chart Property dialog.
-* Chart: It shouldn't create categories if you assign a numeric column with less than 200 unique values to the X-Axis of the Bar chart.
+* Chart: It shouldn't create categories if you assign a numeric column with less than 200 unique values to the X-axis of the Bar chart.
 * Chart: Map: Bubble: Bucket colors didn't match the actual colors on the chart if you enabled the "Set 0 as Center" option.
 * Chart: Pivot: Subtotal layout was corrupted if you have unused factor levels on the Column Header. 
 * Chart: Scatter: Chart failed to render if you enabled the "Show Labels on Plot" and Trend Line with the "All" target type.
@@ -46,7 +46,7 @@ Released on 1/16/2024.
 * Dashboard: It failed to capture thumbnails for some of the charts if you had a Map chart in the dashboard. 
 * Dashboard: Note: It should remember the map position and zoom level if you update it.
 * Dashboard: Now it uses the new note editor for the Text widgets.
-* Dashboard: Previous dashboard filter remained after closing and opening the dashboard.
+* Dashboard: Previous dashboard filters remained after closing and opening the dashboard.
 * Dashboard: Publishing a dashboard failed if you clicked the Publish button in the Edit mode.
 
 
