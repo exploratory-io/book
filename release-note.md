@@ -6,12 +6,55 @@ Released on 1/16/2024.
 
 ### New Features
 
-
+* Data Source: Snowflake: Now it supports secret key file authentication.
+* Data Wrangling: Create Categories: Now it supports the "Display Labels As" parameter and can show labels with greater / less than symbols.
+* Chart: Heatmap: Now you can set different Decimal/Thousand Separator settings to values under the Values tab in the Chart Property dialog.
+* Dashboard: Now you can apply the parameter changes to all the tabs by checking the "Apply for All Pages" checkbox.
+* R: Now you can delete the custom R packages that you have installed. 
+ 
 ### Bug Fixes
 
+* Data Source: Refreshing the stock data failed due to missing "quantmod" and "tidyquant" packages. 
 
 
+* Data Wrangling: Create Calculation: Clicking the "Function List" link did not open the function list.
+* Data Wrangling: Deleting a data frame did not work for some occasions.
 
+
+* Chart: Bar: If you had negative values on the Stacked Bar and showed the total values on the plot, it showed incorrect values. 
+* Chart: Date formatting was missing on the Y2 Axis tab in the Chart Property dialog.
+* Chart: It shouldn't create categories if you assign a numeric column with less than 200 unique values to the X-Axis of the Bar chart.
+* Chart: Map: Bubble: Bucket colors didn't match the actual colors on the chart if you enabled the "Set 0 as Center" option.
+* Chart: Pivot: Subtotal layout was corrupted if you have unused factor levels on the Column Header. 
+* Chart: Scatter: Chart failed to render if you enabled the "Show Labels on Plot" and Trend Line with the "All" target type.
+* Chart: Unique value check dialog should show up only if you assign a new column. 
+
+
+* Note: After duplicating a note and updating the duplicated one, the updated content was saved to the original note. 
+* Note: Charts didn't show up in the exported Word document. Note that exporting Map and Word Cloud charts doesn't work properly yet.
+* Note: Clicking the "Keyboard Shortcut" button didn't open the Keyboard Shortcut dialog.
+* Note: Get back the "Export as Word Document" menu.
+* Note: If there was an error in the R code, it shouldn't show an Error dialog but should show the error in the preview. 
+* Note: If you added a chart, changed the size, and clicked the "Refresh" button, the chart size was reset. 
+* Note: We should get back the Table of Contents (TOC) related properties in the Note property dialog. 
+* Note: When you reopened the URL dialog and dragged it to a different place, an unnecessary scroll bar showed up.
+
+
+* Dashboard:  Charts on a Dashboard did not get refreshed when the "Re-import Data" checkbox was checked.
+* Dashboard: After checking the "Auto Run" for the parameter, if you selected the parameter LOV items quickly, it showed an "Another R process" error. 
+* Dashboard: Dashboard layout was corrupted if you published a dashboard right after changing the parameters.
+* Dashboard: It failed to capture thumbnails for some of the charts if you had a Map chart in the dashboard. 
+* Dashboard: Note: It should remember the map position and zoom level if you update it.
+* Dashboard: Now it uses the new note editor for the Text widgets.
+* Dashboard: Previous dashboard filter remained after closing and opening the dashboard.
+* Dashboard: Publishing a dashboard failed if you clicked the Publish button in the Edit mode.
+
+
+* Parameter: When creating a Date or POSIXct parameter with the Between operator from the Filter Dialog, the created parameter was not available on the parameter list on the Filter dialog.
+* Project: After moving a repository to a new PC, a project using custom R packages did not open if the R package was not installed on the new PC.
+* Project: If you added a data frame in a project, closed the project, and searched the added data frame by the name in the Project List view, it didn't show the data frame.
+* Project: The "Updated" column on the Project List was not refreshed after closing a project.
+* Project: When clicking a project, the same project was opened with two windows at the same time on some occasions.
 
 
 ## 9.2
