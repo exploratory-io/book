@@ -31,9 +31,9 @@ Released on 1/16/2024.
 
 
 * Note: After duplicating a note and updating the duplicated one, the updated content was saved to the original note. 
-* Note: Charts didn't show up in the exported Word document. Note that exporting Map and Word Cloud charts doesn't work properly yet.
 * Note: Clicking the "Keyboard Shortcut" button didn't open the Keyboard Shortcut dialog.
 * Note: Get back the "Export as Word Document" menu.
+* Note: Charts didn't show up in the exported Word document. Note that exporting Map and Word Cloud charts doesn't work properly yet.
 * Note: If there was an error in the R code, it shouldn't show an Error dialog but should show the error in the preview. 
 * Note: If you added a chart, changed the size, and clicked the "Refresh" button, the chart size was reset. 
 * Note: We should get back the Table of Contents (TOC) related properties in the Note property dialog. 
