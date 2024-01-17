@@ -1,5 +1,63 @@
 # リリースノート
 
+## 9.3
+
+2024年1月16日リリース。
+
+### 機能強化
+
+* Data Source: Snowflake: Now it supports secret key file authentication.
+* Data Wrangling: Create Categories: Now it supports the "Display Labels As" parameter and can show labels with greater / less than symbols.
+* Chart: Heatmap: Now you can set different Decimal/Thousand Separator settings to values under the Values tab in the Chart Property dialog.
+* Dashboard: Now you can apply the parameter changes to all the tabs by checking the "Apply for All Pages" checkbox.
+* R: Now you can delete the custom R packages that you have installed. 
+ 
+### 修正された問題
+
+
+* データソース: "quantmod"および"tidyquant"パッケージが不足しているため、株価データの更新に失敗する。
+
+
+* データラングリング: 計算を作成: 計算を作成のダイアログにて、「関数一覧」をクリックしても開かない。
+* データラングリング: データフレームの削除が機能しないことがある。
+
+
+* Chart: Bar: If you had negative values on the Stacked Bar and showed the total values on the plot, it showed incorrect values. 
+* Chart: Date formatting was missing on the Y2 Axis tab in the Chart Property dialog.
+* Chart: It shouldn't create categories if you assign a numeric column with less than 200 unique values to the X-axis of the Bar chart.
+* Chart: Map: Bubble: Bucket colors didn't match the actual colors on the chart if you enabled the "Set 0 as Center" option.
+* Chart: Pivot: Subtotal layout was corrupted if you have unused factor levels on the Column Header. 
+* Chart: Scatter: Chart failed to render if you enabled the "Show Labels on Plot" and Trend Line with the "All" target type.
+* Chart: Unique value check dialog should show up only if you assign a new column. 
+
+
+* ノート: ノートを複製して更新した後、更新された内容が元のノートに保存されてしまう。
+* ノート: ツールバーからキーボード・ショートカットのボタンをクリックしても、ダイアログが表示されない。
+* ノート: エクスポートのメニュー「ワード文書にエクスポート」が復活しました。
+* ノート: エクスポートされたワード文書にチャートが表示されない。地図とワードクラウドのチャートは、正常に機能しないことに注意が必要です。
+* ノート: Rコードでエラーがあった場合、エラーダイアログではなくプレビューにエラーを表示するべきです。
+* ノート: チャートを追加し、サイズを変更して「リフレッシュ」ボタンをクリックすると、チャートのサイズがリセットされる。
+* ノート: ノートの設定ダイアログで目次（TOC）関連のプロパティが復活しました。
+* ノート: URLリンクの挿入のダイアログを再度開いて別の場所にドラッグすると、不要なスクロールバーが表示される。
+
+
+* ダッシュボード: 「データの再インポート」のチェックボックスをオンに実行しても、ダッシュボード上のチャートが更新されない。
+* ダッシュボード: パラメーターの「自動実行」をチェックした後、パラメーターLOV項目を素早く選択すると「別のRプロセス」エラーが発生する。
+* ダッシュボード: パラメーターを変更した直後にダッシュボードを公開すると、ダッシュボードのレイアウトが壊れてしまう。
+* ダッシュボード: ダッシュボードに地図のチャートがある場合、一部のチャートのサムネイルのキャプチャに失敗してしまう。
+* ダッシュボード: ノート: 更新した際に、地図の位置とズームレベルを記憶するべきです。
+* ダッシュボード: テキストウィジェットに新しいノートエディターを使用するようになりました。
+* ダッシュボード: ダッシュボードを閉じて開いた後、以前のダッシュボードのインタラクティブフィルターが残ってしまう。
+* ダッシュボード:  編集モードでパブリッシュボタンをクリックすると、ダッシュボードの公開に失敗する。
+
+
+* Parameter: When creating a Date or POSIXct parameter with the Between operator from the Filter Dialog, the created parameter was not available on the parameter list on the Filter dialog.
+* Project: After moving a repository to a new PC, a project using custom R packages did not open if the R package was not installed on the new PC.
+* Project: If you added a data frame in a project, closed the project, and searched the added data frame by the name in the Project List view, it didn't show the data frame.
+* Project: The "Updated" column on the Project List was not refreshed after closing a project.
+* Project: When clicking a project, the same project was opened with two windows at the same time on some occasions.
+
+
 ## 9.2
 
 2023年12月26日リリース。
