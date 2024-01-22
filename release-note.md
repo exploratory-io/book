@@ -6,8 +6,8 @@ Released on 1/22/2024.
 
 ### Bug Fixes
 
-* Project: When R was installed in non-standard location, it failed to detect the R and showed an empty screen when opening a project.
-* Project: When Rserve failed to start, it should show a user friendly message from where user can reset R packages to the initial state.
+* Project: When R was installed in a non-standard location, it failed to detect the R and showed an empty screen when opening a project.
+* Project: When Rserve failed to start, it should show a user-friendly message from where the user can reset R packages to the initial state.
 
 
 * General: On Mac platforms, attempting to log in to Exploratory Desktop resulted in a 'Security returned a non-successful error code: 44' error.
