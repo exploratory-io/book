@@ -5,12 +5,12 @@
       "desc": "",
       "insights": [
         {
-         "title": "How to Use Exploratory - Basics",
+         "title": "Basics",
          "desc": "Learn the most essential features of Exploratory!",
          "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Basic-kOZ9UYC0"
        },
        {
-        "title": "How to Use Exploratory - Data Wrangling",
+        "title": "Data Wrangling",
         "desc": "Learn how to clean and transform data with Exploratory!",
         "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Data-Wrangling-ELT1Ihl5BD"
        }
