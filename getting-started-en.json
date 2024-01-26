@@ -13,7 +13,12 @@
         "title": "Data Wrangling",
         "desc": "Learn how to clean and transform data with Exploratory!",
         "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Data-Wrangling-ELT1Ihl5BD"
-       }
+      },
+      {
+       "title": "Dashboard",
+       "desc": "Learn how to create a Dashboard with Exploratory!",
+       "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Part-4-Dashboard-AxN0wAe6YC"
+      }
       ]
     }
   ]
