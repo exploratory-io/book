@@ -1,14 +1,24 @@
 {
   "data": [
     {
-      "title": "How To",
+      "title": "How to Use Exploratory",
       "desc": "",
       "insights": [
         {
-         "title": "How to Use Exploratory - Basics",
-         "desc": "It explains the basic usage of the Exploratory. ",
+         "title": "Basics",
+         "desc": "Learn the most essential features of Exploratory!",
          "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Basic-kOZ9UYC0"
-        }
+       },
+       {
+        "title": "Data Wrangling",
+        "desc": "Learn how to clean and transform data with Exploratory!",
+        "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Data-Wrangling-ELT1Ihl5BD"
+      },
+      {
+       "title": "Dashboard",
+       "desc": "Learn how to create a Dashboard with Exploratory!",
+       "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Part-4-Dashboard-AxN0wAe6YC"
+      }
       ]
     }
   ]
