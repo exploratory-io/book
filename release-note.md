@@ -1,5 +1,67 @@
 # Release Note
 
+
+## 9.5
+
+Released on 1/29/2024.
+
+
+### New Features
+
+- Data Wrangling: Supported the 'Remove Extra Spaces' option to 'Text Inside of…' Operation Type for 'Work with Text' and 'Change Column Names with Text Operation' commands. 
+
+
+
+### Bug Fixes
+
+- Summary View: Summary View showed info for the previous step if you created a calculation for multiple columns. 
+
+
+- Data Wrangling: Column menu did not close after selecting an item in the menu.
+- Data Wrangling: Column menu did not close when clicking another column's menu.
+- Data Wrangling: When selecting a data frame, it showed an 'r.indexOf is not a function' error for some occasions.
+
+
+- Chart: If the Auto Margin option is enabled, it should ignore the user-defined margin values.
+- Chart: Update the default margin setting for the Pie/Donut chart. 
+- Chart: Number: The base value should not show when the 'Compare to' is not set.
+- Chart: If you clicked a chart in the chart full-screen view, the show detail dialog didn't show up.
+- Chart: The default value of the Pixel Ratio should be always 300% in the chart image export.
+
+
+- Note: Changed the behavior to toggle between quote and normal text when clicking the Quote icon on the toolbar.
+- Note: If you select a bullet list item and click the Bullet List button, it should cancel the bullet list.
+- Note: If you selected text and clicked the Code Block button, the selected text was removed.
+- Note: EDF export failed if the note was not previewed yet.
+- Note: If there is no header in a note, it shouldn't show the Table of Contents area in the HTML preview.
+- Note: When copying multiple lines of text from an external browser, only the first line became a bulleted list after clicking the Bullet List icon on the toolbar.
+- Note: If you choose the middle size option on a chart or image, it shouldn't overlap the Table of Contents area in the HTML preview.
+- Note: On a bullet list, if you typed "-" and hit the space key, it removed the line. 
+- Note: Right after inserting an image, hitting the Enter key added a new line above the chart instead of the bottom of the chart even though the cursor position was right after the inserted chart.
+- Note: If you clicked a chart in the chart full-screen view, the show detail dialog didn't show up.
+- Note: Some of the chats on the note showed a "not found" message when reopening the note.
+- Note: The Preview button should show a "Play" icon at the beginning of the button text.
+- Note: Chart toolbar should show up at the top left corner of the chart.
+- Note: Values displayed on a Pie Chart inside a note cut off at the top. 
+- Note: When moving the cursor with the arrow keys, the movement was very slow if there was a lot of text in the note.
+- Note: When there were multiple images, moving up and down with the arrow keys caused the scroll positions to change rapidly.
+- Note: When trying to convert copy-and-pasted text as a header, not only the first line but also all the text became a header. 
+- Note: Now you can prevent text enclosed within '$' symbols from being treated as inline math by disabling the "LaTeX Format" option. By default, the "LaTeX Format" is set to 'disabled'.
+- Note: When copying and pasting text from an external browser, it was not fully copied when the text contained Markdown syntax special characters such as #. 
+
+
+- Dashboard: Renaming the Page name didn't work if the dashboard has only a single page.
+- Dashboard: Pivot: If you clicked a Pivot Table cell including an inline bar for the filtering, the layout got corrupted.
+- Dashboard: There are too many top/bottom margins for a dashboard thumbnail in the hover popup.
+- Dashboard: It should show a busy icon instead of the "Loading..." text when you apply a dashboard filter.
+
+
+- Project: In some cases, opening a project on Windows failed with error code 127.
+- Project: Exporting a project failed with "line 1: syntax error: unexpected end of file" when the EPF filename contained a single quotation mark.
+- Project: Added 'Edit Name / Description' option to the Project Header menu.
+
+
+
 ## 9.4
 
 Released on 1/22/2024.
