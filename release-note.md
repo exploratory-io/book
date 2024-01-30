@@ -11,10 +11,10 @@ Released on 1/29/2024.
 - Data Wrangling: Supported the 'Remove Extra Spaces' option to 'Text Inside of…' Operation Type for 'Work with Text' and 'Change Column Names with Text Operation' steps.
 
 
-- Note: Now you can click the Quote icon in the toolbar to switch toggle between quote and normal text when 
-- Note: If you select a bullet list item and click the Bullet List button, it should cancel the bullet list.
-- Note: If there is no header in a note, it shouldn't show the Table of Contents area in the HTML preview.
-- Note: Now you can prevent text enclosed within '$' symbols from being treated as inline math by disabling the "LaTeX Format" option. By default, the "LaTeX Format" is set to 'disabled'.
+- Note: Now you can click the Quote button in the toolbar to switch between quote and normal text.
+- Note: Now you can click on the Bullet List button in the toolbar to switch between bullet list and normal text.
+- Note: If there is no header in a note, it automatically disable the Table of Contents option.
+- Note: Now you can enable or disable the "LaTeX Format" option for math formula text.
 
 
 
@@ -45,6 +45,8 @@ Released on 1/29/2024.
 - Note: When moving the cursor with the arrow keys, the movement was very slow if there was a lot of text in the note.
 - Note: When trying to convert copy-and-pasted text as a header, not only the first line but also all the text became a header.
 - Note: When copying and pasting text from an external browser, it was not fully copied when the text contained Markdown syntax special characters such as #.
+- Note: When you have more than one '$' symbols in a sentence it converted the text between the symbol to be LaTeX format.
+
 
 
 - Dashboard: Renaming the Page name didn't work if the dashboard has only a single page.
@@ -53,6 +55,8 @@ Released on 1/29/2024.
 
 - Project: In some cases, opening a project on Windows failed with error code 127.
 - Project: Exporting a project failed with "line 1: syntax error: unexpected end of file" when the EPF filename contained a single quotation mark.
+
+
 
 
 
