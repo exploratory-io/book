@@ -1,0 +1,45 @@
+{
+
+  "data": [
+    {
+      "title": "過去のユーザー会",
+      "desc": "過去のユーザー会の一覧です。",
+      "moreButtonText": "",
+      "moreButtonUrl": "",
+      "insights": [
+        {
+         "title": "チャートタイプの選び方",
+         "desc": "目的に応じて適切なチャートタイプを選ぶ方法について紹介します。",
+         "url": "https://exploratory.io/note/kanaugust/109-OfP5dwa2Nd"
+        },
+        {
+         "title": "可視化における効果的な色の使い方",
+         "desc": "チャートで色を使う際に気をつけたいルールについて紹介します。",
+         "url": "https://exploratory.io/note/kanaugust/84-ZrR9zZc6MD"
+        },
+        {
+         "title": "レポートのためのチャートの作り方",
+         "desc": "他の人に効果的に伝えるためのチャートの機能や使い方について紹介します。",
+         "url": "https://exploratory.io/note/kanaugust/73-Tos7ttk3vL"
+         },
+         {
+         "title": "レーダーチャートの使い方",
+         "desc": "レーダチャートを使用する際の便利な機能について紹介します。",
+         "url": "https://exploratory.io/note/kanaugust/112-eLx1yEJ8Ye"
+         },
+         {
+         "title": "地図の使い方",
+         "desc": "地図の使い分け、必要なデータの作り方などを紹介します。",
+         "url": "https://exploratory.io/note/kanaugust/92-cIj9CGq0TS"
+        }
+      ]
+    }
+  ],
+  "testimonial": [
+    {
+      "text": "事例がとても参考になりました。おすすめです！",
+      "name": "営業担当 / 自動車メーカー勤務"
+    }
+  ]
+
+}
