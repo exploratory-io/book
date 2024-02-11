@@ -7,30 +7,25 @@
       "moreButtonUrl": "",
       "insights": [
         {
-         "title": "チャートタイプの選び方",
-         "desc": "目的に応じて適切なチャートタイプを選ぶ方法について紹介します。",
-         "url": "https://exploratory.io/note/kanaugust/109-OfP5dwa2Nd"
+         "title": "データサイエンス勉強会 #30 in 東京",
+         "desc": "2023年12月15日(金)に開催した勉強会の録画を公開しています",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-30-in-mjQ3koh2Rp"
         },
         {
-         "title": "可視化における効果的な色の使い方",
-         "desc": "チャートで色を使う際に気をつけたいルールについて紹介します。",
-         "url": "https://exploratory.io/note/kanaugust/84-ZrR9zZc6MD"
+         "title": "データサイエンス勉強会 #29 in 東京",
+         "desc": "2023年9月29日(金)に開催した勉強会の録画を公開しています",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-29-in-AiQ3MDq5"
         },
         {
-         "title": "レポートのためのチャートの作り方",
-         "desc": "他の人に効果的に伝えるためのチャートの機能や使い方について紹介します。",
-         "url": "https://exploratory.io/note/kanaugust/73-Tos7ttk3vL"
+         "title": "データサイエンス勉強会 #28 in 東京",
+         "desc": "2023年6月23日(金)に開催した勉強会の録画を公開しています",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-28-in-bFZ4spD1"
          },
          {
-         "title": "レーダーチャートの使い方",
-         "desc": "レーダチャートを使用する際の便利な機能について紹介します。",
-         "url": "https://exploratory.io/note/kanaugust/112-eLx1yEJ8Ye"
-         },
-         {
-         "title": "地図の使い方",
-         "desc": "地図の使い分け、必要なデータの作り方などを紹介します。",
-         "url": "https://exploratory.io/note/kanaugust/92-cIj9CGq0TS"
-        }
+         "title": "Exploratory データサイエンス勉強会 #27 in 東京",
+         "desc": "2023年3月22日(金)に開催した勉強会の録画を公開しています",
+         "url": "https://ja.exploratory.io/note/exploratory/Exploratory-27-in-ZFZ7LFn1"
+         }
       ]
     }
   ],
@@ -39,13 +34,33 @@
       "desc": "参加者からの声を紹介します。",
       "testimonials": [
         {
-          "text": "事例がとても参考になりました。\nおすすめです！",
-          "name": "営業担当 / 自動車メーカー勤務"
+          "text": "自分と近しい業務に関しての活用や社内への展開方法とその留意点などの知見を得ることができました。",
+          "name": "コンサルティング / 組織開発事業"
         },
         {
-          "text": "初心者でもわかりやすく、とても勉強になりました。他の方にも勧めていきたいです。",
-          "name": "ソフトウェア開発 / IT企業勤務"
-        }
+          "text": "アンケートでの複数回答の質問は、前処理が複雑になる割には分析から得られるものが少ないので、使わないようにしていましたが、それをうまく使った事例は大変参考になりました！文系のデータサイエンスといった形で、素晴らしかったです。",
+          "name": "大学教員"
+        },
+        {
+          "text": "他社で実際にExploratoryを活用されている方の、取り組まれている課題や分析について知ることができ、とても刺激になりました。",
+          "name": "新聞業界"
+        },
+        {
+          "text": "ビジネス課題とデータサイエンスの話がとても繋がりがあり、Exploratoryとデータ活用を検討する参考になりました。",
+          "name": "教育研究所 / 大学職員"
+        },
+        {
+          "text": "普段関わることが少ない業界の方のお話を聞くことができて大変勉強になりました。",
+          "name": "新聞業界"
+        },
+        {
+          "text": "リアルな活用事例を聞くことができ、さらには懇親会などを通してユーザー間のコミュニティを形成できる。",
+          "name": "製造業"
+        },
+        {
+          "text": "データ分析がアクションの改善や施策の優先順位づけに繋がった事例を聞けます。",
+          "name": "教育研究所 / 大学職員"
+        },
       ]
   }
 }
