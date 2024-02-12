@@ -8,13 +8,19 @@ Released on 1/29/2024.
 
 ### New Features
 
-- Data Wrangling: Supported the 'Remove Extra Spaces' option to 'Text Inside of…' Operation Type for 'Work with Text' and 'Change Column Names with Text Operation' commands. 
+- Data Wrangling: Supported the 'Remove Extra Spaces' option to 'Text Inside of…' Operation Type for 'Work with Text' and 'Change Column Names with Text Operation' steps.
+
+
+- Note: Now you can click the Quote button in the toolbar to switch between quote and normal text.
+- Note: Now you can click on the Bullet List button in the toolbar to switch between bullet list and normal text.
+- Note: If there is no header in a note, it automatically disable the Table of Contents option.
+- Note: Now you can enable or disable the "LaTeX Format" option for math formula text.
 
 
 
 ### Bug Fixes
 
-- Summary View: Summary View showed info for the previous step if you created a calculation for multiple columns. 
+- Summary View: Summary View showed info for the previous step if you created a calculation for multiple columns.
 
 
 - Data Wrangling: Column menu did not close after selecting an item in the menu.
@@ -22,43 +28,35 @@ Released on 1/29/2024.
 - Data Wrangling: When selecting a data frame, it showed an 'r.indexOf is not a function' error for some occasions.
 
 
-- Chart: If the Auto Margin option is enabled, it should ignore the user-defined margin values.
-- Chart: Update the default margin setting for the Pie/Donut chart. 
-- Chart: Number: The base value should not show when the 'Compare to' is not set.
+- Chart: If the Auto Margin option is enabled, it should ignore the margin value inputs.
+- Chart: Pie/Donut chart were not displayed at the center position in Dashboard.
 - Chart: If you clicked a chart in the chart full-screen view, the show detail dialog didn't show up.
-- Chart: The default value of the Pixel Ratio should be always 300% in the chart image export.
 
 
-- Note: Changed the behavior to toggle between quote and normal text when clicking the Quote icon on the toolbar.
-- Note: If you select a bullet list item and click the Bullet List button, it should cancel the bullet list.
 - Note: If you selected text and clicked the Code Block button, the selected text was removed.
 - Note: EDF export failed if the note was not previewed yet.
-- Note: If there is no header in a note, it shouldn't show the Table of Contents area in the HTML preview.
 - Note: When copying multiple lines of text from an external browser, only the first line became a bulleted list after clicking the Bullet List icon on the toolbar.
-- Note: If you choose the middle size option on a chart or image, it shouldn't overlap the Table of Contents area in the HTML preview.
-- Note: On a bullet list, if you typed "-" and hit the space key, it removed the line. 
+- Note: If you choose the middle size option on a chart or image, it shouldn't overlap the Table of Contents area in the output.
+- Note: On a bullet list, if you typed "-" and hit the space key, it removed the line.
 - Note: Right after inserting an image, hitting the Enter key added a new line above the chart instead of the bottom of the chart even though the cursor position was right after the inserted chart.
 - Note: If you clicked a chart in the chart full-screen view, the show detail dialog didn't show up.
-- Note: Some of the chats on the note showed a "not found" message when reopening the note.
-- Note: The Preview button should show a "Play" icon at the beginning of the button text.
-- Note: Chart toolbar should show up at the top left corner of the chart.
-- Note: Values displayed on a Pie Chart inside a note cut off at the top. 
+- Note: Some of the charts on the note showed a "not found" message when reopening the note.
+- Note: Values displayed on a Pie Chart inside a note cut off at the top.
 - Note: When moving the cursor with the arrow keys, the movement was very slow if there was a lot of text in the note.
-- Note: When there were multiple images, moving up and down with the arrow keys caused the scroll positions to change rapidly.
-- Note: When trying to convert copy-and-pasted text as a header, not only the first line but also all the text became a header. 
-- Note: Now you can prevent text enclosed within '$' symbols from being treated as inline math by disabling the "LaTeX Format" option. By default, the "LaTeX Format" is set to 'disabled'.
-- Note: When copying and pasting text from an external browser, it was not fully copied when the text contained Markdown syntax special characters such as #. 
+- Note: When trying to convert copy-and-pasted text as a header, not only the first line but also all the text became a header.
+- Note: When copying and pasting text from an external browser, it was not fully copied when the text contained Markdown syntax special characters such as #.
+- Note: When you have more than one '$' symbols in a sentence it converted the text between the symbol to be LaTeX format.
+
 
 
 - Dashboard: Renaming the Page name didn't work if the dashboard has only a single page.
 - Dashboard: Pivot: If you clicked a Pivot Table cell including an inline bar for the filtering, the layout got corrupted.
-- Dashboard: There are too many top/bottom margins for a dashboard thumbnail in the hover popup.
-- Dashboard: It should show a busy icon instead of the "Loading..." text when you apply a dashboard filter.
 
 
 - Project: In some cases, opening a project on Windows failed with error code 127.
 - Project: Exporting a project failed with "line 1: syntax error: unexpected end of file" when the EPF filename contained a single quotation mark.
-- Project: Added 'Edit Name / Description' option to the Project Header menu.
+
+
 
 
 
@@ -84,40 +82,40 @@ Released on 1/16/2024.
 * Data Wrangling: Create Categories: Now it supports the "Display Labels As" parameter and can show labels with greater / less than symbols.
 * Chart: Heatmap: Now you can set different Decimal/Thousand Separator settings to values under the Values tab in the Chart Property dialog.
 * Dashboard: Now you can apply the parameter changes to all the tabs by checking the "Apply for All Pages" checkbox.
-* R: Now you can delete the custom R packages that you have installed. 
- 
+* R: Now you can delete the custom R packages that you have installed.
+
 ### Bug Fixes
 
-* Data Source: Refreshing the stock data failed due to missing "quantmod" and "tidyquant" packages. 
+* Data Source: Refreshing the stock data failed due to missing "quantmod" and "tidyquant" packages.
 
 
 * Data Wrangling: Create Calculation: Clicking the "Function List" link did not open the function list.
 * Data Wrangling: Deleting a data frame did not work on some occasions.
 
 
-* Chart: Bar: If you had negative values on the Stacked Bar and showed the total values on the plot, it showed incorrect values. 
+* Chart: Bar: If you had negative values on the Stacked Bar and showed the total values on the plot, it showed incorrect values.
 * Chart: Date formatting was missing on the Y2 Axis tab in the Chart Property dialog.
 * Chart: It shouldn't create categories if you assign a numeric column with less than 200 unique values to the X-axis of the Bar chart.
 * Chart: Map: Bubble: Bucket colors didn't match the actual colors on the chart if you enabled the "Set 0 as Center" option.
-* Chart: Pivot: Subtotal layout was corrupted if you have unused factor levels on the Column Header. 
+* Chart: Pivot: Subtotal layout was corrupted if you have unused factor levels on the Column Header.
 * Chart: Scatter: Chart failed to render if you enabled the "Show Labels on Plot" and Trend Line with the "All" target type.
-* Chart: Unique value check dialog should show up only if you assign a new column. 
+* Chart: Unique value check dialog should show up only if you assign a new column.
 
 
-* Note: After duplicating a note and updating the duplicated one, the updated content was saved to the original note. 
+* Note: After duplicating a note and updating the duplicated one, the updated content was saved to the original note.
 * Note: Clicking the "Keyboard Shortcut" button didn't open the Keyboard Shortcut dialog.
 * Note: Get back the "Export as Word Document" menu.
 * Note: Charts didn't show up in the exported Word document. Note that exporting Map and Word Cloud charts doesn't work properly yet.
-* Note: If there was an error in the R code, it shouldn't show an Error dialog but should show the error in the preview. 
-* Note: If you added a chart, changed the size, and clicked the "Refresh" button, the chart size was reset. 
-* Note: We should get back the Table of Contents (TOC) related properties in the Note property dialog. 
+* Note: If there was an error in the R code, it shouldn't show an Error dialog but should show the error in the preview.
+* Note: If you added a chart, changed the size, and clicked the "Refresh" button, the chart size was reset.
+* Note: We should get back the Table of Contents (TOC) related properties in the Note property dialog.
 * Note: When you reopened the URL dialog and dragged it to a different place, an unnecessary scroll bar showed up.
 
 
 * Dashboard:  Charts on a Dashboard did not get refreshed when the "Re-import Data" checkbox was checked.
-* Dashboard: After checking the "Auto Run" for the parameter, if you selected the parameter LOV items quickly, it showed an "Another R process" error. 
+* Dashboard: After checking the "Auto Run" for the parameter, if you selected the parameter LOV items quickly, it showed an "Another R process" error.
 * Dashboard: Dashboard layout was corrupted if you published a dashboard right after changing the parameters.
-* Dashboard: It failed to capture thumbnails for some of the charts if you had a Map chart in the dashboard. 
+* Dashboard: It failed to capture thumbnails for some of the charts if you had a Map chart in the dashboard.
 * Dashboard: Note: It should remember the map position and zoom level if you update it.
 * Dashboard: Now it uses the new note editor for the Text widgets.
 * Dashboard: Previous dashboard filters remained after closing and opening the dashboard.
@@ -158,7 +156,7 @@ Released on 12/22/2023.
 * Data Wrangling: When opening multiple projects, moving between chart view and table view showed the "could not find function" error.
 
 
-* Chart: Bar chart failed to render if you created a Bubble chart with the Label and switched to the Bar chart. 
+* Chart: Bar chart failed to render if you created a Bubble chart with the Label and switched to the Bar chart.
 * Chart: Histogram: Show detail failed if you set a date column to color and choose the "Year and Month" grouping function.
 * Chart: Map: Circle marker for Russia should show up at Moscow.
 * Chart: Map: Some country names didn't show up in the hover pop-up.
@@ -219,7 +217,7 @@ Released on 12/14/2023.
 
 
 * Summary: Correlation Mode: When navigating between summary view and other view without exiting correlation mode, correlation mode UI shows incorrect result.
-  
+
 
 * Chart: Bar chart showed "Invalid argument was passed to returnsNumericValue" if you assigned a numeric column to color, changed the bucket type, and unselected the column at Color.
 * Chart: During the SQL Data import, users could not operate in the chart view.
