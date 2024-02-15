@@ -1,6 +1,61 @@
 # リリースノート
 
 
+## 9.6
+
+2024年2月14日リリース。
+
+### 機能強化
+
+* Note: Now you can set a color on the text. 
+
+
+* Parameter: Added support for setting default values at the content level without altering the parameter default value itself.
+
+
+
+### 修正された問題
+
+* Data Source: CSV: The application would hang during import if the file encoding was not UTF-8, with the spin icon continuously displayed.
+* Data Source: Text Input: It showed the content from the other data frame when opening the dialog after running another data frame.
+
+
+* Data Wrangling: After canceling an R job, the 'TypeError: A.map is not a function' error was raised.
+* Data Wrangling: Removed the 'Group By' from all the column header menus.
+* Data Wrangling: When multiple "Replace with Conditions" steps were combined, all the tokens showed the content from the first token.
+
+
+* Chart: Boxplot: Median, 1Q, and 3Q values didn't change regardless of the "Include Outliers" checkbox setting.
+* Chart: Color palette on the color dialog didn't match the palette on the chart if you assign a gradient color palette for more than 10 categories. 
+* Chart: Other Group: The Other Group dialog overflowed if you had many categories to keep or drop. 
+* Chart: Pivot Table: Summarize Table: Totals didn't show up if you created a chart from the Summary View and switched the type to Pivot. 
+* Chart: Pivot Table: Changing the font size didn't affect the column header text. 
+
+
+* Dashboard: Clicking the Republish button triggered the 'Another R Running' error.
+
+
+* ノート: バージョン9.0より前のバージョンで作成されたノートにHTMLタグが含まれている場合、ノートが開けない。
+* ノート: 上矢印キーを押すとパラメーターペインが表示されて消えなくなる。
+* ノート: ノートにHTMLタグがある場合、タグにあるテキストをクリックすることができない。
+* ノート: 複数の行を選択してコードブロックボタンをクリックすると、それらの行が改行なしの単一行としてまとめられてしまう。
+* ノート: ノートを再度開いた時にYouTubeの動画の読み込みが遅い。
+* ノート: 箇条書きのリスト内にチャートを挿入できないようにすべきです。
+* ノート: 外部のブラウザからコピーしたテキストを貼り付けた時に、全てのテキストが1つの段落として貼り付けられる。
+* ノート: サイズの大きなノートを編集する際に、UIが非常に遅くなる。
+* ノート: 改行を含む箇条書きのテキストを選択して箇条書きボタンをクリックしても、ボタンが機能しない。
+
+
+* パラメーター: デフォルト値が日付の最大値として設定されている場合でも、日付のパラメーターのデフォルト値が自動的に更新されない。
+* パラメーター: 日付の最小値、最大値が動的に更新されない。
+* パラメーター: 「自動実行」にチェックをしてコンテンツをパブリッシュした場合、パブリッシュされたコンテンツでもデフォルトで「自動実行」のチェックがオンになっているべきです。
+
+
+* プロジェクト: プロジェクトを閉じた後、データフレーム、レポートの並び替え順序が記憶されていない。
+* プロジェクト: Windows: "error code 127"によってプロジェクトが開けない。
+* プロジェクト: チャットウィンドウを複数回開いたり閉じたりし、チャットウィンドウ内のURLリンクをクリックすると同じブラウザが複数タブで開かれる。
+
+
 ## 9.5
 
 2024年1月29日リリース。
