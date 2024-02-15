@@ -1,6 +1,63 @@
 # Release Note
 
 
+
+## 9.6
+
+Released on 2/14/2024.
+
+
+### New Features
+
+* Note: Now you can set a color on the text. 
+
+
+* Parameter: Added support for setting default values at the content level without altering the parameter default value itself.
+
+
+
+### Bug Fixes
+
+* Data Source: CSV: The application would hang during import if the file encoding was not UTF-8, with the spin icon continuously displayed.
+* Data Source: Text Input: It showed the content from the other data frame when opening the dialog after running another data frame.
+
+
+* Data Wrangling: After canceling an R job, the 'TypeError: A.map is not a function' error was raised.
+* Data Wrangling: Removed the 'Group By' from all the column header menus.
+* Data Wrangling: When multiple "Replace with Conditions" steps were combined, all the tokens showed the content from the first token.
+
+
+* Chart: Boxplot: Median, 1Q, and 3Q values didn't change regardless of the "Include Outliers" checkbox setting.
+* Chart: Color palette on the color dialog didn't match the palette on the chart if you assign a gradient color palette for more than 10 categories. 
+* Chart: Other Group: The Other Group dialog overflowed if you had many categories to keep or drop. 
+* Chart: Pivot Table: Summarize Table: Totals didn't show up if you created a chart from the Summary View and switched the type to Pivot. 
+* Chart: Pivot Table: Changing the font size didn't affect the column header text. 
+
+
+* Dashboard: Clicking the Republish button triggered the 'Another R Running' error.
+
+
+* Note: Notes created with versions older than 9.0 couldn't be opened if they contained HTML tags.
+* Note: Hitting the Arrow Up key caused showing the parameter pane and it did not go away. 
+* Note: If there was an HTML tag in a note, you couldn't click the text for the tag. 
+* Note: If you selected multiple lines and clicked the code block button, those lines were concatenated to a single line without new lines. 
+* Note: Loading a YouTube video was slow when reopening a note.
+* Note: It should prevent inserting a chart inside a bullet list.
+* Note: Copying text from an external browser resulted in pasting all text as one paragraph.
+* Note: When editing a large note, the UI became very slow. 
+* Note: When you selected a bullet point with a break line and clicked the bullet point icon, the button did not work.
+
+
+* Parameter: Date parameters did not automatically update the default value even if the default value was set as max date. 
+* Parameter: Min and ax Date were not dynamically updated. 
+* Parameter: If you check the "Auto Run" and publish your content, the published content should have the "Auto Run" checkbox checked by default on the server. 
+
+
+* Project: After closing a project, the sort order for data frames/reports was not remembered.
+* Project: Windows: Could not open a project with error code 127.
+* Project: If you opened and closed the chat window multiple times and clicked a URL link in the chat window, it opened the same URL in multiple browser tabs.
+
+
 ## 9.5
 
 Released on 1/29/2024.
