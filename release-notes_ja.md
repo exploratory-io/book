@@ -7,32 +7,29 @@
 
 ### 機能強化
 
-* Note: Now you can set a color on the text. 
-
-
-* Parameter: Added support for setting default values at the content level without altering the parameter default value itself.
-
-
+* ノート: テキストに色をつけられるようになりました。
+ 
+* パラメーター: パラメータのデフォルト値を変更することなく、コンテンツごとにデフォルト値を設定できるようになりました。
 
 ### 修正された問題
 
-* Data Source: CSV: The application would hang during import if the file encoding was not UTF-8, with the spin icon continuously displayed.
-* Data Source: Text Input: It showed the content from the other data frame when opening the dialog after running another data frame.
+* データソース: CSV: ファイルのエンコーディングがUTF-8でない場合、インポート中にアプリケーションがハングして、スピンアイコンが消えないことがありました。
+* データソース: テキスト・インプット： 別のデータフレームを開いた直後にダイアログを開くと別のデータフレームの内容が表示されることがありました。
 
 
-* Data Wrangling: After canceling an R job, the 'TypeError: A.map is not a function' error was raised.
-* Data Wrangling: Removed the 'Group By' from all the column header menus.
-* Data Wrangling: When multiple "Replace with Conditions" steps were combined, all the tokens showed the content from the first token.
+* データラングリング: Rのジョブをキャンセルすると、'TypeError： A.map is not a function'というエラーが表示される。
+* データラングリング: 列ヘッダーメニューから「グループ化」を取り除きました。
+* データラングリング: 複数の「条件を設定して置換」のステップを1つのステップにまとめると、すべてのトークンで表示される内容が、最初のトークンの内容になってしまう。
 
 
-* Chart: Boxplot: Median, 1Q, and 3Q values didn't change regardless of the "Include Outliers" checkbox setting.
-* Chart: Color palette on the color dialog didn't match the palette on the chart if you assign a gradient color palette for more than 10 categories. 
-* Chart: Other Group: The Other Group dialog overflowed if you had many categories to keep or drop. 
-* Chart: Pivot Table: Summarize Table: Totals didn't show up if you created a chart from the Summary View and switched the type to Pivot. 
-* Chart: Pivot Table: Changing the font size didn't affect the column header text. 
+* チャート: 箱ヒゲ図: 「外れ値を含む」のチェックボックスの設定を変えても中央値、第一四分位、第三四分位の値が変化しない。
+* チャート: 10以上あるカテゴリーにグラデーションのカラーパレットを割り当てたときに、「色、グループ、並び順」のダイアログ内のカラーパレットと、グラフのパレットが一致しない。
+* チャート: その他グループ: カテゴリーの数が多いと「含む値を任意に選ぶ」または「含まない値を任意に選ぶ」のダイアログで表示されるカテゴリーのリストが見切れてしまう。
+* チャート: ピボットテーブル: 集計テーブル: サマリビューからチャートを作成し、タイプを「ピボットテーブル」に切り替えると合計が表示されない。
+* チャート: ピボットテーブル: フォントサイズを変更しても、列の見出しのテキストのサイズが変わらない。
 
 
-* Dashboard: Clicking the Republish button triggered the 'Another R Running' error.
+* ダッシュボード: 「再パブリッシュ」ボタンをクリックすると、「別のRプロセスとのコンフリクトがありました」というエラーが表示されることがありました。
 
 
 * ノート: バージョン9.0より前のバージョンで作成されたノートにHTMLタグが含まれている場合、ノートが開けない。
