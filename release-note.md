@@ -4,32 +4,34 @@
 
 Released on 2/22/2024.
 
+### Enhancements
+
+* Note: Supported showing tooltips for the buttons in the toolbar.
+
 ### Bug Fixes
 
-* Data Source: Amazon Aurora: Accessing Amazon Aurora failed due to obsoleted bundled certificate file.
+* Data Source: Amazon Aurora: Accessing Amazon Aurora failed due to obsoleted bundled SSL certificate file.
 
 
-* Data Wrangling: The 'Remove duplicated rows' command did not work if you selected a column whose name starts with "_". 
+* Data Wrangling: The 'Remove duplicated rows' command did not work if you selected a column whose name starts with "_".
 
 
 * Chart: Assigning a color to the Y-Axis Column did not work if the Repeat By was used.
-* Chart: If you set "0.1" to the Each Step Length property, it immediately turned to "0.00001" in the chart property dialog. 
-* Chart: If you assigned multiple columns at Y-Axis and assigned colors on those columns, the color configuration didn't follow the column order change by the drag-and-drop. 
+* Chart: If you set "0.1" to the Each Step Length property, it immediately turned to "0.00001" in the chart property dialog.
+* Chart: If you assigned multiple columns at Y-Axis and assigned colors on those columns, the color configuration didn't follow the column order change by the drag-and-drop.
 
 
-* Note: Could not open a note if it included HTML tags such as <style>, <image>, and <script>.
-* Note: Refreshing a note did not refresh a chart on the note if the note contained both updated charts and not-updated charts. 
-* Note: The chart layout got corrupted when you refreshed the note to update the chart if the chart had the Repeat By and the "Full" height size option.
-* Note: Supported tooltip for toolbar icons.
+* Note: Could not open a Note if it included HTML tags such as <style>, <image>, and <script>.
+* Note: Refreshing a note did not refresh a chart on the note if the note contained both updated charts and not-updated charts.
+
 * Note: Chart default height should be taller if the chart has the Repeat By and the "Full" height size option.
 * Note: When applying color to multiple bullet points simultaneously, it inserted a weird character at the beginning of the first item.
-* Note: When copying an image from another note, it should copy it as an image instead of escaped markdown text.
+* Note: When copying an image from another note, it copied it as an escaped markdown text.
 * Note: When you copied and pasted text from Mac's Note App, it showed unnecessary HTML tags at the top and also inserted unnecessary line breaks.
-* Note: You cannot change the "# of Columns" on a chart. 
-* Note: Show buttons at the right-hand side top in Preview / View modes. 
+* Note: You cannot change the "# of Columns" for the charts with Repeat By.
 
 
-* Dashboard: When a parameter had a dependency on another parameter, the dependency parameter was not shown on the parameter pane.
+* Dashboard: When a parameter had a dependency on another parameter, the dependency parameter was not shown inside the parameter pane.
 
 
 
