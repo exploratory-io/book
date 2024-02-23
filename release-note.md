@@ -21,7 +21,7 @@ Released on 2/22/2024.
 * Chart: If you assigned multiple columns at Y-Axis and assigned colors on those columns, the color configuration didn't follow the column order change by the drag-and-drop.
 
 
-* Note: Could not open a Note if it included HTML tags such as <style>, <image>, and <script>.
+* Note: Could not open a Note if it included HTML tags such as style, image, and script.
 * Note: Refreshing a note did not refresh a chart on the note if the note contained both updated charts and not-updated charts.
 
 * Note: Chart default height should be taller if the chart has the Repeat By and the "Full" height size option.
