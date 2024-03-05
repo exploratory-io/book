@@ -23,7 +23,7 @@ Released on 3/5/2024.
 ### Bug Fixes
 
 
-* Data Source: Publish: Scheduling a dashboard failed if you had a chart on Google Sheet data source and another chart on the local Parquet data source.
+* Data Source: Publish: Scheduling a dashboard failed if you had a chart on the Google Sheet data source and another chart on the local Parquet data source.
 
 
 * Data Wrangling: Case When: The dialog title should be "Create Calculations or Replace Values with Conditions". 
