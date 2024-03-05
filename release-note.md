@@ -1,5 +1,57 @@
 # Release Note
 
+
+
+## 9.8
+
+Released on 3/5/2024.
+
+### Enhancements
+
+* Chart: Table: Now you can show image URLs as images in table cells by the "Treat as Image" option in the Format Configuration dialog.
+
+
+* Note: Now you can click the "Edit" button on a chart to open the Chart on the main Window. 
+* Note: Now you can embed HTML code fragments in a note.
+* Note: Now you can embed Web pages in a note.
+* Note: Now you can create a link that points to a header in the same note. 
+* Note: Now you can see a thumbnail of a note by hovering the note in the project tree on the left-hand side. 
+* Note: Now you can see a chart name in a note by hovering the mouse over the chart edit icon.
+* Note/Dashboard: Chart / Analytics Picker: Now you can  sort Data Frames by Name or Updated Date.
+
+
+### Bug Fixes
+
+
+* Data Source: Publish: Scheduling a dashboard failed if you had a chart on Google Sheet data source and another chart on the local Parquet data source.
+
+
+* Data Wrangling: Case When: The dialog title should be "Create Calculations or Replace Values with Conditions". 
+
+
+* Chart: The "Always Include 0 in Y Axis" property didn't work properly if you had a Reference Line on X-axis.
+* Chart: The default subtab should be "X Axis" instead of "Y Axis" for the Axis tab in the chart property dialog.
+
+
+* Note: After adding a smaller image to note, changing the image size moved the image to an incorrect position.
+* Note: Improved H1 font size and the body line height.
+* Note: Existing note didn't open if the note had a code block and "<" and ">" signs were in the code block. 
+* Note: When a portion of a hyperlink was selected, clicking the "Body" option within the Heading toolbar dropdown menu didn't remove the hyperlink association from the selected text.
+* Note: When clicking the Refresh button multiple times, it failed with another R running error or the pandoc document conversion failed error. 
+* Note: When opening an existing note, an empty line at the bottom was removed where it should be kept.
+
+
+* Dashboard: Running the dashboard filter by clicking a chart on a published dashboard on the server caused an error if you had a chart without pinning a step.
+* Dashboard: If you republished a Dashboard after running it, it showed another R running error for some occasions.
+
+
+* Parameter: If you changed the data frame association for one parameter, the data frame association for the other parameter also changed.
+* Project: After reopening a project it showed an empty screen for some occasion.
+* Project: When opening a project, Local Data Source Import Dialog was partially displayed and it blocked clicking inside the project.
+* General: Mac: Sometimes a password on a Data Connection was cleared and you had to reenter the password for the Data Connection.
+
+
+
 ## 9.7
 
 Released on 2/22/2024.
