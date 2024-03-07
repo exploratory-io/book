@@ -23,21 +23,23 @@
 * チャート: X軸にリファレンスラインを引いていると「0をY軸に含む」オプションが適切に動かない。
 * チャート: ピボットテーブル: 詳細データからデータをエクスポートしたときに、100列までしかデータがエクスポートされない。
 
-* Note: Changing the image size moved the image to an incorrect position for small images.
-* Note: Existing note didn't open if "<" and ">" signs were used in the code block.
-* Note: Clicking the Refresh button multiple times caused another R running error.
-* Note: When opening an existing note, an empty line at the bottom was removed where it should be kept.
-* Note: When copying text containing multiple levels of bullet points and pasting them into a note, only the text from the first level was captured.
-* Note: When copying and pasting note content within Exploratory Desktop, users experienced an issue where the second copy of the same content was pasted as markdown text instead of retaining the original content format.
+
+* ノート: イメージのサイズを変更した際に、イメージが小さいとイメージが誤った位置に移動してしまう。
+* ノート: コードブロックで"<"または">"の記号が使用されていると、既存のノートが開けない。
+* ノート: リフレッシュボタンを複数回クリックすると、他のRプロセスの実行中によるエラーが発生する。
+* ノート: 既存のノートを開くと、保持する必要があった空行も削除される。
+* ノート: 複数のレベルの箇条書きを含むテキストをコピーして貼り付けると、最初のレベルのテキストのみが追加される。
+* ノート: Exploratory デスクトップ内で同じノートのコンテンツを2度ペーストすると、2回目のペーストがマークダウンテキストとして貼り付けられる。
 
 
-* Dashboard: Scheduling a dashboard failed if you had a chart and one of the data sources is the local Parquet file.
-* Dashboard: Clicking on a chart inside a published dashboard at the server caused an error if the chart didn't pin a step.
-* Dashboard: If you republished a Dashboard after running it, it showed another R running error for some occasions.
-* Dashboard: Dashboard Filter didn't work if you clicked one of the bars on a Horizontal Bar chart with no column assigned to the X-axis.
+* ダッシュボード: チャートに使われているデータソースの1つがローカルのParquetファイルの場合、ダッシュボードのスケジュールに失敗する。
+* ダッシュボード: サーバーでパブリッシュされているダッシュボード内のチャートをクリックすると、チャートのピンが特定のステップに固定されていない場合にエラーが発生する。
+* ダッシュボード: ダッシュボードを実行した後に再パブリッシュをすると、別のRプロセスの実行によるエラーが発生することがある。
+* ダッシュボード: X軸に列が割り当てられていない横向きのバーチャートで、いずれかのバーをクリックした時にインタラクティブフィルターが機能しない。
 
 
-* Parameter: If you changed the data frame selection for one parameter, the other parameter's data frame selection was also changed.
+* パラメーター: 1つのパラメーターのデータフレームの選択を変更すると、他のパラメーターのデータフレームの選択も一緒に変更される。
+
 
 * プロジェクト: プロジェクトを開いたときに空の画面が表示されることがある。
 * プロジェクト: データのインポートダイアログが開いている状態でプロジェクトを閉じると、インポートダイアログの一部しか表示されなくなってしまう。
