@@ -1,5 +1,48 @@
 # リリースノート
 
+## 9.8
+
+2024年3月6日リリース。
+
+### 機能強化
+
+* チャート: テーブル: 「列のフォーマット」の設定から「イメージとして扱う」オプションを有効にして、画像のURLを画像として読み込めるようになりました。
+
+* ノート: ノート内のチャートに「編集ボタン」を追加し、直接チャートを開けるようになりました。
+* ノート: コンテンツの追加メニューに「HTML」を追加して、ノート内にHTMLのコードを埋め込めるようになりました。
+* ノート: コンテンツの追加メニューに「Webページ」を追加し、ノートにWebページを埋め込めるようになりました。
+* ノート: ノート内の「ヘッダー」リンクをサポートし、同じノート内のヘッダー（H1、H2）にジャンプするテキストリンクを作成できるようになりました。
+* ノート: 画面の左側に表示されるノート名にカーソルを合わせると、各ノートのサムネイルが表示されるようになりました。
+* ノート/ダッシュボードト: チャートやアナリティクスをノートに追加するためにデータフレームを選択するときに、データフレームを「名前」または「更新日」でソートできるようになりました。
+
+
+### 修正された問題
+
+* データソース: Mac: 保存したデータ・コネクションのパスワードが消えて、パスワードを再入力しなければならないことがある。
+
+* チャート: X軸にリファレンスラインを引いていると「0をY軸に含む」オプションが適切に動かない。
+* チャート: ピボットテーブル: 詳細データからデータをエクスポートしたときに、100列までしかデータがエクスポートされない。
+
+* Note: Changing the image size moved the image to an incorrect position for small images.
+* Note: Existing note didn't open if "<" and ">" signs were used in the code block.
+* Note: Clicking the Refresh button multiple times caused another R running error.
+* Note: When opening an existing note, an empty line at the bottom was removed where it should be kept.
+* Note: When copying text containing multiple levels of bullet points and pasting them into a note, only the text from the first level was captured.
+* Note: When copying and pasting note content within Exploratory Desktop, users experienced an issue where the second copy of the same content was pasted as markdown text instead of retaining the original content format.
+
+
+* Dashboard: Scheduling a dashboard failed if you had a chart and one of the data sources is the local Parquet file.
+* Dashboard: Clicking on a chart inside a published dashboard at the server caused an error if the chart didn't pin a step.
+* Dashboard: If you republished a Dashboard after running it, it showed another R running error for some occasions.
+* Dashboard: Dashboard Filter didn't work if you clicked one of the bars on a Horizontal Bar chart with no column assigned to the X-axis.
+
+
+* Parameter: If you changed the data frame selection for one parameter, the other parameter's data frame selection was also changed.
+
+* プロジェクト: プロジェクトを開いたときに空の画面が表示されることがある。
+* プロジェクト: データのインポートダイアログが開いている状態でプロジェクトを閉じると、インポートダイアログの一部しか表示されなくなってしまう。
+* プロジェクト: プロジェクトリストでスピンアイコンが表示されているときに左側のメニューをクリックできてしまう。
+
 ## 9.7
 
 2024年2月22日リリース。
