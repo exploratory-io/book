@@ -28,6 +28,16 @@
          "title": "Part 5 - ダッシュボード",
          "desc": "ダッシュボードを作ったり、さらにサーバーで運用したりする際に役立つ機能を体験していただけます。",
          "url": "https://exploratory.io/note/exploratory/Exploratory-Part-5-vSl9pUm4"
+        },
+        {
+          "title": "Part 6 - ノート",
+          "desc": "分析レポートである「ノート」の作成方法や、ノートを作る上で役立つ機能を体験していただけます。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-Part-6-bNh4TaJ0"
+        },
+        {
+          "title": "Part 7 - パラメーター",
+          "desc": "ダッシュボードなどでデータを柔軟に絞り込むことができる「パラメーター」機能を体験しながら学べます。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-Part-7-Yrh8tEp4TD"
         }
       ]
     },
