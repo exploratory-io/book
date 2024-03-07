@@ -14,7 +14,7 @@ Released on 3/5/2024.
 * Note: Added "Edit" buttons for the charts inside Note so that you can click them to open the charts directly under the Chart view.
 * Note: Added HTML code block component so that you can embed HTML code inside Notes.
 * Note: Added Web Page component so that you can embed Web pages in a note.
-* Note: Supported 'Header' link inside Note so that you can create text links that would nagivate to headers (H1, H2) in the same note.
+* Note: Supported 'Header' link inside Note so that you can create text links that would navigate to headers (H1, H2) in the same note.
 * Note: Now you can see a thumbnail of each note by hovering over the note name in the left-hand side pane.
 * Note/Dashboard: Now you can sort the data frame list by Name or Updated Date.
 
@@ -25,22 +25,27 @@ Released on 3/5/2024.
 
 
 * Chart: The "Always Include 0 in Y Axis" property didn't work properly if you had a Reference Line on X-axis.
+* Chart: Pivot Table: If you exported the Show Detail data with more than 100 columns, it exported only up to 100 columns. 
 
 
-* Note: Changing the image size moved the image to an incorrect position for smalll images.
+* Note: Changing the image size moved the image to an incorrect position for small images.
 * Note: Existing note didn't open if "<" and ">" signs were used in the code block.
-* Note: Clicking the Refresh button multiple times caused an another R running error.
+* Note: Clicking the Refresh button multiple times caused another R running error.
 * Note: When opening an existing note, an empty line at the bottom was removed where it should be kept.
+* Note: When copying text containing multiple levels of bullet points and pasting them into a note, only the text from the first level was captured.
+* Note: When copying and pasting note content within Exploratory Desktop, users experienced an issue where the second copy of the same content was pasted as markdown text instead of retaining the original content format.
 
 
 * Dashboard: Scheduling a dashboard failed if you had a chart and one of the data sources is the local Parquet file.
-* Dashboard: Clicking on a chart inside a published dashboard at the server caused an error if the chart didn't have pinning a step.
+* Dashboard: Clicking on a chart inside a published dashboard at the server caused an error if the chart didn't pin a step.
 * Dashboard: If you republished a Dashboard after running it, it showed another R running error for some occasions.
+* Dashboard: Dashboard Filter didn't work if you clicked one of the bars on a Horizontal Bar chart with no column assigned to the X-axis.
 
 
 * Parameter: If you changed the data frame selection for one parameter, the other parameter's data frame selection was also changed.
-* Project: When you opened a project it showed an empty screen sometimes.
-* Project: After closing a project while the data import dialog was opened, when you opened the project, the data import dialog was partially displayed.
+* Project: When you opened a project, it showed an empty screen sometimes.
+* Project: After closing a project while the data import dialog was opened when you opened the project, the data import dialog was partially displayed.
+* Project: When the spin was shown on the Project List, it didn't cover the whole window.
 
 
 
