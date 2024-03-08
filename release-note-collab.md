@@ -20,7 +20,7 @@ Released on 03/07/2024
 
 
 * Parameter: Now you can extend the interactive session by clicking the "Extend" button in the timeout dialog. 
-* Parameter: Now you can enable or disable the access to the parameter per user in the Share dialog.
+* Parameter: Now you can enable or disable access to the parameter per user in the Share dialog.
 * Parameter: Now you can reset all values to default.
 * Parameter: Support passing default parameter values over the URL parameter. 
 
@@ -31,16 +31,16 @@ Released on 03/07/2024
 ### Bug Fixes
 
 * Data Source: Amazon Aurora: Bundled the latest Certificate File.
-* Data Source: Google Sheets: HTTP2 farming layer error was raised for some occasion.
+* Data Source: Google Sheets: HTTP2 farming layer error was raised for some occasions.
 
 
-* Insight: Applying a Dashboard filter showed the "Error : object 'XXX' not found" on the other charts.
-* Insight: Deleting published contents didn't remove its associated files if you deleted it from the Stats page.
+* Insight: Applying a Dashboard filter showed the "Error: object 'XXX' not found" on the other charts.
+* Insight: Deleting published content didn't remove its associated files if you deleted it from the Stats page.
 * Insight: If you accessed the team-owned dashboard URL without logging in, it took you to the account setting page after the login. 
 * Insight: When publishing a dashboard with the "Save Selected Values" unchecked, it did not show a parameter default value on the server side.
 
 
-* Project: Restoring a team-owned project by the other team member showed an error on UI.
+* Project: Restoring a team-owned project by another team member showed an error on the UI.
 * Project: The notification email should include the list of changes. 
 
 
