@@ -1,5 +1,59 @@
 # リリースノート
 
+## 9.0
+
+2024年3月7日リリース。
+
+### Download
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-9.0.4.tar.gz)
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-9.0.4.tar.gz)
+
+### 機能強化
+
+* Data Source: Now you can schedule an insight whose data source is Oracle Database.
+
+
+* Published Content: Now you can use Markdown syntax for comments when publishing.
+* Published Content: Now you can select how many versions to keep for the history at the server.
+
+
+* Search: Support an alphabetical sorting for contents.
+
+
+
+* Parameter: Now you can extend the interactive session by clicking the "Extend" button in the timeout dialog.
+* Parameter: Now you can enable or disable the parameter feature for each shared user from the Share dialog.
+* Parameter: Now you can reset all values to default.
+* Parameter: Support passing default parameter values over the URL parameter.
+
+
+* Scheduler: Support Monthly Period.
+
+
+### 修正された問題
+
+* Data Source: Amazon Aurora: Bundled the latest Certificate File.
+* Data Source: Google Sheets: HTTP2 farming layer error was raised for some occasions.
+
+
+* Insight: Applying a Dashboard filter showed the "Error: object 'XXX' not found" on the other charts.
+* Insight: Deleting published content didn't remove its associated files if you deleted it from the Stats page.
+* Insight: If you accessed the team-owned dashboard URL without logging in, it took you to the account setting page after the login.
+* Insight: When publishing a dashboard with the "Save Selected Values" unchecked, it did not show a parameter default value on the server side.
+
+
+* Project: Restoring a team-owned project by another team member showed an error on the UI.
+* Project: The notification email should include the list of changes.
+
+
+* Scheduler: It always showed "00:00" for the daily schedule even if you scheduled the other time.
+* Scheduler: Layout of the Scheduler Admin page corrupted right after running a "Rum Immediate" scheduling.
+* Scheduler: Parameter with a dynamic default value such as max date was not evaluated at the scheduling time.
+* Scheduler: Scheduling a Data share with a CSV data source failed with "Can't subset columns with islist.” if the data source CSV became empty.
+* Scheduler: Scheduling failed with the "There is another R process running." error if the scheduling took a long time.
+
+
 ## 8.0
 
 2023年10月11日にリリース。
