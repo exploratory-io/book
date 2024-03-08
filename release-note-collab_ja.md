@@ -4,7 +4,7 @@
 
 2024年3月7日リリース。
 
-### Download
+### ダウンロード
 
 * [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-9.0.4.tar.gz)
 * [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-9.0.4.tar.gz)
@@ -37,21 +37,21 @@
 * Data Source: Google Sheets: HTTP2 farming layer error was raised for some occasions.
 
 
-* Insight: Applying a Dashboard filter showed the "Error: object 'XXX' not found" on the other charts.
-* Insight: Deleting published content didn't remove its associated files if you deleted it from the Stats page.
-* Insight: If you accessed the team-owned dashboard URL without logging in, it took you to the account setting page after the login.
-* Insight: When publishing a dashboard with the "Save Selected Values" unchecked, it did not show a parameter default value on the server side.
+* インサイト: ダッシュボードフィルターを適用すると、他のチャートで"Error: object 'XXX' not found"というメッセージが表示される。
+* インサイト: インサイトの利用状況ページからパブリッシュしたコンテンツを削除した場合、関連するファイルが削除されない。
+* インサイト: ログインせずにチームが所有するダッシュボードのURLにアクセスすると、ログイン後にアカウントページが表示される。
+* インサイト: 選択された値を保存のチェックを外してダッシュボードをパブリッシュすると、サーバー側でパラメーターのデフォルト値が表示されない。
 
 
-* Project: Restoring a team-owned project by another team member showed an error on the UI.
-* Project: The notification email should include the list of changes.
+* プロジェクト: 別のチームメンバーがチーム所有のプロジェクトを復元すると、UIにエラーが表示される。
+* プロジェクト: 通知メールには変更履歴も含まれている必要があります。
 
 
-* Scheduler: It always showed "00:00" for the daily schedule even if you scheduled the other time.
-* Scheduler: Layout of the Scheduler Admin page corrupted right after running a "Rum Immediate" scheduling.
-* Scheduler: Parameter with a dynamic default value such as max date was not evaluated at the scheduling time.
-* Scheduler: Scheduling a Data share with a CSV data source failed with "Can't subset columns with islist.” if the data source CSV became empty.
-* Scheduler: Scheduling failed with the "There is another R process running." error if the scheduling took a long time.
+* スケジューラー: 繰り返しのタイプに毎日を使って他の時間にスケジュールを設定しても、時間は常に"00:00"で表示される。
+* スケジューラー: スケジュールから「今すぐ実行」を実行した直後にスケジュールの管理画面のページでレイアウトが崩れる。
+* スケジューラー: パラメーターのデフォルト値で日付の最大値などの動的な値を持つパラメーターでは、スケジュールが実行されてもパラメーターの値が更新がされない。
+* スケジューラー: CSVデータソースを使用したデータでスケジュールを設定した際に、CSVファイルが空の結果を返す場合に"Can't subset columns with islist.” のエラーが発生する。
+* スケジューラー: スケジュールに時間がかかった時に "There is another R process running."のエラーが発生してスケジュールに失敗する。
 
 
 ## 8.0
