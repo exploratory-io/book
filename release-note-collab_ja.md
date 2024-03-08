@@ -11,30 +11,28 @@
 
 ### 機能強化
 
-* Data Source: Now you can schedule an insight whose data source is Oracle Database.
+* データソース: Oracleデータベースを利用したコンテンツのスケジュールができるようになりました。
+
+* パブリッシュしたコンテンツ: パブリッシュをするときのコメントにマークダウンを利用できるようになりました。
+* パブリッシュしたコンテンツ: 各コンテンツの「保持するバージョンの数」を指定できるようになりました。
 
 
-* Published Content: Now you can use Markdown syntax for comments when publishing.
-* Published Content: Now you can select how many versions to keep for the history at the server.
+* 検索: コンテンツをタイトル名でソートできるようになりました。
 
 
-* Search: Support an alphabetical sorting for contents.
+* パラメーター: 「延長」ボタンをクリックして、タイムアウトのダイアログからインタラクティブ・セッションを延長できるようになりました。
+* パラメーター: 「共有」のダイアログから、パラメーターの利用権限をユーザーごとに設定できるようになりました。
+* パラメーター: 全てのパラメーターの値をデフォルト値に戻せるようになりました。
+* パラメーター: パラメーターのデフォルト値を含むURLを発行できるようになりました。
 
 
-
-* Parameter: Now you can extend the interactive session by clicking the "Extend" button in the timeout dialog.
-* Parameter: Now you can enable or disable the parameter feature for each shared user from the Share dialog.
-* Parameter: Now you can reset all values to default.
-* Parameter: Support passing default parameter values over the URL parameter.
-
-
-* Scheduler: Support Monthly Period.
+* スケジューラー: コンテンツの更新を月ごとにスケジュールできるようになりました。
 
 
 ### 修正された問題
 
-* Data Source: Amazon Aurora: Bundled the latest Certificate File.
-* Data Source: Google Sheets: HTTP2 farming layer error was raised for some occasions.
+* データソース: Amazon Aurora: 最新の証明書ファイルを利用するようになりました。
+* データソース: Google Sheets: HTTP2ファーミングレイヤーでエラーが発生することがありました。
 
 
 * インサイト: ダッシュボードフィルターを適用すると、他のチャートで"Error: object 'XXX' not found"というメッセージが表示される。
