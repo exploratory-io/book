@@ -6,34 +6,34 @@
 
 ### 機能強化
 
-* Chart: Support choosing the base axis (Y1 or Y2) for the zero line sync.
+* チャート: Y軸を同期する際のベース軸（Y1軸またはY2軸）の選択をサポートしました。
 
 
-* Note: Supports option to display borders for charts embedded in notes. 
+* ノート: 追加したチャートの境界線を表示するオプションをサポートしました。
 
 
-* Parameter: Now it supports overwriting labels for a List of Values with '(None)' and '(All)' options.
+* パラメーター: 全ての値を返したときや、空の値を返したときのラベル名を上書きできるようになりました。
 
 
 ### 修正された問題
 
-* Chart: Bar: NA didn't show up as a category if you assigned a Date column including NA values to Color.
-* Chart: Color dialog didn't remember the Color Direction setting when reopening the Color dialog.
-* Chart: Reference line length should be the same as the group's data range if you choose "Color" for the Group By setting. 
-* Chart: Map: Legend becomes weird if you apply the percentage number formatting.
+* チャート: バー: 欠損値（NA）を含む日付列を色に割り当てたとき、欠損値（NA）がカテゴリーとして表示されませんでした。
+* チャート: 「色、グループ、並び順の設定」から、「色の方向」を変更したときに、その設定が記憶されない。
+* チャート: リファレンスラインの「グループ化」に「色」を選択したときに、リファレンスラインの長さがグループのデータの範囲と一致しない。
+* チャート: 地図: 設定から「色のフォーマット」を「パーセント」に変更すると不適切な凡例が表示される。
 
 
-* Dashboard: Attempting to add a link within a text unexpectedly closed the Text Edit dialog.
-* Dashboard: After changing parameter values, it did not update the charts on the Dashboard.
-* Dashboard: Running preview failed with the error code 127 if you had a chart with a range parameter on the dashboard.
-* Dashboard: Text editing was unavailable for dashboards created with versions before v9 if they contained HTML tags.
-* Dashboard: Text Widget: When you run the Dashboard, the color setting for text does not work and it becomes a link.
-* Dashboard: Pressing the Tab key inadvertently triggered the display of the parameter pane.
-* Dashboard: When the parameter is applied to all pages, some charts in inactive pages are not updated.
+* ダッシュボード: テキスト編集のダイアログの中でリンクのボタンをクリックすると、編集ダイアログが閉じてしまう。
+* ダッシュボード: パラメーターを変更してもダッシュボード内のチャートが更新されない。
+* ダッシュボード: 範囲のパラメーターを利用するチャートが含まれていると、プレビューしたときに「error code 127」というエラーが表示される。
+* ダッシュボード: v9より前のバージョンで作成したダッシュボードのテキストに、HTMLタグが含まれているとテキストを編集できなくなってしまう。
+* ダッシュボード: テキスト・ウィジェット: ダッシュボードを実行すると、テキストの色の設定がリンクに置き換わってしまう。
+* ダッシュボード: Tabキーを押すと、パラメーターペインが表示されてしまうことがある。
+* ダッシュボード: パラメーターの設定で「全てのページに適用」にチェックを付けて実行をしても、アクティブでないページのチャートが更新されないことがある。
 
 
-* Data Source: Importing a CSV file resulted in an error message displaying 'could not find function "silver".
-* Data Source: Database / R Script: Users were unable to select items from a multi-select List of Values (LOV) on the Import dialog.
+* データソース: CSVのファイルをインポートすると、「could not find function "silver"」というエラーメッセージが表示される。
+* データソース: データベース/Rスクリプト: インポートダイアログにおいて、複数選択のパラメーターのリストから値を選択できない。
 
 
 * ノート: チャート: Windowsでバーチャートの上に表示される値が見切れてしまう。
@@ -55,13 +55,13 @@
 * ノート: ノートをパブリッシュするときに、イメージのキャプションが中央揃えであるはずが左揃えになってしまう。
 * ノート: プロジェクト間でノートの内容をコピーして貼り付けると、元の内容の形式を保持せずにマークダウンテキストとして貼り付けられる。
 
-* Parameter: After hiding parameters on a Note, the parameters reappeared upon refreshing the note.
+* パラメーター: ノートを更新する度に、隠したパラメーターが表示されてしまう。
 
 
-* Project: After reopening the project, the previously selected Report Sort Type option was not restored.
+* プロジェクト: プロジェクトを閉じると、指定したレポートの並べ替えの設定がデフォルトに戻ってしまう。
 
 
-* Publish: Dashboard: Note: Support an option to enable chart data downloads, but not for EDF file.
+* パブリッシュ: ダッシュボード: ノート: EDFファイルのダウンロードは許可せず、チャートのデータだけをダウンロードできるオプションをサポートしました。
 
 ## 9.8
 
