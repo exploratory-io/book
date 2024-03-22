@@ -1,5 +1,68 @@
 # リリースノート
 
+## 9.9
+
+2024年3月21日リリース。
+
+### 機能強化
+
+* Chart: Support choosing the base axis (Y1 or Y2) for the zero line sync.
+
+
+* Note: Supports option to display borders for charts embedded in notes. 
+
+
+* Parameter: Now it supports overwriting labels for a List of Values with '(None)' and '(All)' options.
+
+
+### 修正された問題
+
+* Chart: Bar: NA didn't show up as a category if you assigned a Date column including NA values to Color.
+* Chart: Color dialog didn't remember the Color Direction setting when reopening the Color dialog.
+* Chart: Reference line length should be the same as the group's data range if you choose "Color" for the Group By setting. 
+* Chart: Map: Legend becomes weird if you apply the percentage number formatting.
+
+
+* Dashboard: Attempting to add a link within a text unexpectedly closed the Text Edit dialog.
+* Dashboard: After changing parameter values, it did not update the charts on the Dashboard.
+* Dashboard: Running preview failed with the error code 127 if you had a chart with a range parameter on the dashboard.
+* Dashboard: Text editing was unavailable for dashboards created with versions before v9 if they contained HTML tags.
+* Dashboard: Text Widget: When you run the Dashboard, the color setting for text does not work and it becomes a link.
+* Dashboard: Pressing the Tab key inadvertently triggered the display of the parameter pane.
+* Dashboard: When the parameter is applied to all pages, some charts in inactive pages are not updated.
+
+
+* Data Source: Importing a CSV file resulted in an error message displaying 'could not find function "silver".
+* Data Source: Database / R Script: Users were unable to select items from a multi-select List of Values (LOV) on the Import dialog.
+
+
+* ノート: チャート: Windowsでバーチャートの上に表示される値が見切れてしまう。
+* ノート: 見出しのルールバーから「本文」を適用しても、太字、斜体、取り消し線、色、およびインラインコードの書式設定がクリアされない。
+* ノート: データの再インポート: 更新されたデータが反映されることを確認するために、「データを再インポートしてからリフレッシュ」を2回実行する必要がありました。
+* ノート: LaTeX書式を有効にしても、数式の構文が機能しない。
+* ノート: リンクの挿入で「見出し」を使用したときに、見出しのレベルに応じてインデントを整える必要があります。
+* ノート: HTMLの挿入は、プレビューおよびパブリッシュでは機能しない。
+* ノート: 見出しのテキストに特殊文字が含まれている場合、見出しへのリンクが機能しない。
+* ノート: 数式を使用した時のアウトプットはエディタとプレビュー間で統一されている必要があります。
+* ノート: 数式の構文はHTMLプレビューで機能しない。
+* ノート: テーブルを選択した後に削除キーを押すだけでは、テーブルが削除できない。
+* ノート: Rスクリプトの下部にコメント行がある場合、Rスクリプトのプレビューが失敗する。
+* ノート: Rのコードを使用した時のアウトプットはエディタとプレビュー間で統一されている必要があります。
+* ノート: R/HTML/数式のコードブロックの領域の選択方法をアップデートしました。
+* ノート: $記号への依存を排除し、 `math y = ax + b` のようなインラインの数式がサポートされるようになりました。
+* ノート: テーブル: セルのテキストに改行が入力できない。
+* ノート: 既存のチャートにコメントを追加した際に、ノートのエディタにコメントが表示されない。
+* ノート: ノートをパブリッシュするときに、イメージのキャプションが中央揃えであるはずが左揃えになってしまう。
+* ノート: プロジェクト間でノートの内容をコピーして貼り付けると、元の内容の形式を保持せずにマークダウンテキストとして貼り付けられる。
+
+* Parameter: After hiding parameters on a Note, the parameters reappeared upon refreshing the note.
+
+
+* Project: After reopening the project, the previously selected Report Sort Type option was not restored.
+
+
+* Publish: Dashboard: Note: Support an option to enable chart data downloads, but not for EDF file.
+
 ## 9.8
 
 2024年3月6日リリース。
