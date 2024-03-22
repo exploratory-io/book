@@ -12,7 +12,7 @@ Release on 3/21/2024.
 * Note: Supports option to display borders for charts embedded in notes. 
 
 
-* Parameter: Now it supports overwriting labels for List of Values with '(None)' and '(All)' options.
+* Parameter: Now it supports overwriting labels for a List of Values with '(None)' and '(All)' options.
 
 
 ### Bug Fixes
@@ -20,14 +20,14 @@ Release on 3/21/2024.
 * Chart: Bar: NA didn't show up as a category if you assigned a Date column including NA values to Color.
 * Chart: Color dialog didn't remember the Color Direction setting when reopening the Color dialog.
 * Chart: Reference line length should be the same as the group's data range if you choose "Color" for the Group By setting. 
-* Chart: Map: Legend becomes weird is you apply the percentage number formatting.
+* Chart: Map: Legend becomes weird if you apply the percentage number formatting.
 
 
 * Dashboard: Attempting to add a link within a text unexpectedly closed the Text Edit dialog.
-* Dashboard: After changing parameter values, it did not update the charts on the Dashboard
+* Dashboard: After changing parameter values, it did not update the charts on the Dashboard.
 * Dashboard: Running preview failed with the error code 127 if you had a chart with a range parameter on the dashboard.
-* Dashboard: Text editing was unavailable for dashboards created with versions prior to v9 if it contained HTML tags.
-* Dashboard: Text Widget: When you run the Dashboard, color setting for text does not work and it becomes link.
+* Dashboard: Text editing was unavailable for dashboards created with versions before v9 if they contained HTML tags.
+* Dashboard: Text Widget: When you run the Dashboard, the color setting for text does not work and it becomes a link.
 * Dashboard: Pressing the Tab key inadvertently triggered the display of the parameter pane.
 * Dashboard: When the parameter is applied to all pages, some charts in inactive pages are not updated.
 
@@ -36,16 +36,16 @@ Release on 3/21/2024.
 * Data Source: Database / R Script: Users were unable to select items from a multi-select List of Values (LOV) on the Import dialog.
 
 
-* Note: Chart:  Values shown on top of a bar chart is cut off on Windows.
+* Note: Chart: Values shown on top of a bar chart are cut off on Windows.
 * Note: Selecting the 'Body' option from the Heading toolbar dropdown menu did not clear the Bold, Italic, Strikethrough, Color, and Inline Code formatting.
 * Note: Data Reimport: Previously, users had to click 'Re-import Data then Refresh' twice to see the updated data reflected.
 * Note: Even after enabling the LaTeX format option, the math syntax was not working.
 * Note: Header items should have indentation depending on the level.
-* Note: Inserting a HTML does not work on the Preview and Publish.
-* Note: Link to Header didn't work when there were special characters in the header text.
+* Note: Inserting an HTML does not work on the Preview and Publish.
+* Note: The link to the Header didn't work when there were special characters in the header text.
 * Note: Math output (font etc) should be consistent between Editor and Preview.
 * Note: Math syntax doesn't work on the HTML preview.
-* Note: Note: One could not delete a table by simply pressing the delete key after selecting it.
+* Note: Note: One cannot delete a table by simply pressing the delete key after selecting it.
 * Note: Previewing R script failed if you had a comment line at the bottom of the script.
 * Note: R code output should be consistent between Editor and Preview.
 * Note: R/HTML/Math Code Block selection update.
