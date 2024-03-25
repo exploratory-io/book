@@ -1,5 +1,16 @@
 # Release Note
 
+## 9.10
+
+Release on 3/24/2024.
+
+### Bug Fixes
+
+* Note: Changing the parameter value on one note inadvertently triggered an update to the parameter value on a separate note, despite the 'Save Selected Value' checkbox being selected.
+
+
+* Project: Spin Icon closed prematurely prior to the completion of project loading
+
 ## 9.9
 
 Release on 3/21/2024.
