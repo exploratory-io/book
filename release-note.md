@@ -9,7 +9,7 @@ Release on 3/24/2024.
 * Note: Changing the parameter value on one note inadvertently triggered an update to the parameter value on a separate note, despite the 'Save Selected Value' checkbox being selected.
 
 
-* Project: Spin Icon closed prematurely prior to the completion of project loading
+* Project: Spin Icon closed prematurely prior to the completion of project loading.
 
 ## 9.9
 
