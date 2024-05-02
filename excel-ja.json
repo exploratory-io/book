@@ -1,25 +1,14 @@
 {
-  "seminar": {
-    "desc": "これまでのセミナーをご紹介します。",
-    "moreButtonText": "もっと見る",
-    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3AExcel-seminar&language=ja",
-    "insights": [
-      {
-       "title": "#1 - MRR、ネット・ニューMRR",
-       "desc": "サブスクリプション型ビジネスの現状をより正しく理解するための指標である、MRR（月間定期収益）、チャーン率、エクスパンション、ネット・レベニュー・リテンション率などの紹介と、それらの計算方法をご紹介します。",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-1-SaaS-KPI-Part-1-JOI0SOR2xE"
-      }
-    ]
-  },
+
   "how-to": {
     "desc": "Excelで使われる主な操作や手法を、Exploratory上でどのように行うかをステップ・バイ・ステップで説明しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Saas%22%20%20tag%3A%22how-to%22&language=ja",
     "insights": [
       {
-       "title": "顧客満足度を測るNPSのモニター Part 1：プロモーターとデトラクターの割合の集計とNPSの計算",
-       "desc": "顧客満足度を測るNPSの計算方法をご紹介します。",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/NPS-Part-1-jOf3loX8wF"
+       "title": "CSVやエクセルのデータをインポートする方法",
+       "desc": "CSVやエクセルのデータをインポートする方法をご紹介します。",
+       "url": "https://exploratory.io/note/exploratory/CSV-Jqt2IWj9"
       }
     ]
   },
@@ -29,11 +18,22 @@
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3Asaas%20tag%3Ablog%20&language=ja",
     "insights": [
       {
-       "title": "SaaSで営業やってる人は絶対に見ておくべき18のセールスKPI",
-       "desc": "",
-       "url": "https://exploratory.io/note/kanaugust/SaaS-18-KPI-eQt5SIz5em"
+       "title": "複数のエクセルファイルを一つのデータフレームとしてインポートする方法",
+       "desc": "複数のエクセルファイルを一つのデータフレームとしてインポートする方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Dds7QwA9BL"
+      }
+    ]
+  },
+  "seminar": {
+    "desc": "これまでのセミナーをご紹介します。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3AExcel-seminar&language=ja",
+    "insights": [
+      {
+       "title": "Exploratory Hour #114 - 複数のエクセルファイルを一気にインポートしたい",
+       "desc": "複数のエクセルファイルを一気にインポートする方法をご紹介します。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-114-eot4OPK0oR"
       }
     ]
   }
-
 }
