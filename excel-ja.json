@@ -102,6 +102,18 @@
       }
     ]
   },
+  "blog": {
+    "desc": "Excelユーザーの方にお役立ちいただける情報をブログ形式で紹介しています。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ABlog%20tag%3A%20Excel&language=ja",
+    "insights": [
+      {
+       "title": "データラングリングが分析者にとってなぜ必須のスキルなのか",
+       "desc": "データラングリングが分析者にとってなぜ必須のスキルなのかについていくつかのケースとスキルを向上するための6つのステップについて紹介しています。",
+       "url": "https://exploratory.io/note/GMq1Qom5tS/CAy2bAn5HP"
+      }
+    ]
+  },
   "seminar": {
     "desc": "これまでのセミナーをご紹介します。",
     "moreButtonText": "もっと見る",
