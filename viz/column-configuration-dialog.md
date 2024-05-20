@@ -84,6 +84,17 @@ For example, if you have a "Country" column in your table, you can set the URL `
 If you click "Germany", a browser opens up the URL `https://exploratory.io/?q=Germany`
 
 
+If you have `$`, `{`, `{` or `\` in the column name, you need to add a `\` letter before each letter like the following. 
+
+* `$ -> \$`
+* `{ -> \{`
+* `} -> \}`
+* `\ -> \\`
+
+For example, if you have a column `US$ Sales`, the URL should look like `http://exploratory.io/?q=${US\$ Sales}`.
+
+
+
 If you want to use values as a URL parameter, check the "Apply URL encoding for the column value." checkbox.
 
 
