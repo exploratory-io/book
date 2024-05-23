@@ -9,7 +9,7 @@ Release on 5/23/2024.
 * Data Source: CSV Import: Supported the "Treat All Columns as Text (Force)" Option.
 
 
-* Data Wrangling: Now it supports the Latest N Years/Months/Weeks/Days options for the RelativeDate operator for the Filter.
+* Data Wrangling: Now it supports the Latest N Years/Months/Weeks/Days options for the Relative Date operator for the Filter.
 
 
 * Chart: Binning: Now you can use the Manual bucketing option for a Date or POSIXct column at Color.
