@@ -4,44 +4,59 @@
 
 Release on 5/23/2024.
 
+### New Features
+
+* Chart: XmR Chart: Now you can show the "Control Limits" range for Line, Bar, Scatter, Bubble, and Error Bar charts.
+* Chart: Number: Now you can show a sub-metric value underneath the main metric value when using Difference feature.
+* Chart: Now you can choose the "Period Ago" reference line type if you assign a Date/POSIXct column to X-Axis.
+* Chart: Now you can set the base data range for the reference line calculation and the trend line data.
+* Chart: Added 'Quick Filter' operator for the Limit Values at X-Axis.
+* Chart: Now you can change the sort order for the Repeat By.
+
+* Note: Added 'Text Search' and 'Replace Text' feature for Note Editor.
+
 ### Enhancements
 
 * Data Source: CSV Import: Supported the "Treat All Columns as Text (Force)" Option.
 
 
-* Data Wrangling: Now it supports the Latest N Years/Months/Weeks/Days options for the RelativeDate operator for the Filter.
+* Data Wrangling: Added 'Quick Filter' operator to make it easier to filter time series data.
+* Data Wrangling: Added the 'Latest N Years/Months/Weeks/Days' options for the 'Relative Date' operator for the Filter.
 
 
+
+* Table View: Now you can set the custom decimal and thousand separators for numeric data shown inside the Table View.
+
+
+* Chart: Reference Line: Now you can set the text position (left or right) for the reference line labels on the plot.
 * Chart: Binning: Now you can use the Manual bucketing option for a Date or POSIXct column at Color.
 * Chart: Color: Now you can choose an aggregation function for sorting Color/Legend items by values.
-* Chart: Now it supports the Latest N Years/Months/Weeks/Days options for the RelativeDate operator for the Limit Values at X-Axis.
-* Chart: Now you can change the sort order of the Repeat By. 
-* Chart: Number: Now you can show additional info as a sub-metric.
-* Chart: Number: Now you can show the date of the last period value as a sub-metric.
+* Chart: Added 'Latest N Years/Months/Weeks/Days' options for the 'Relative Date' operator for the Limit Values at X-Axis.
+
+
+* Chart: Pivot: Summarize Table: Now you can show the column names in multiple lines with 'Text Wrap' option.
+* Chart: Pivot: Summarize Table: Table: Now you can show the full column names with "Fit to Header Text" option.
+* Chart: Pivot: Summarize Table: Now you can change the text alignment for the Row values.
 * Chart: Pivot Table: Now you can sort the values for the Column.
-* Chart: Pivot: Summarize Table: Now you can change the text alignment for the Row values. 
-* Chart: Pivot: Summarize Table: Now you can enable the text wrap for the column header text.
-* Chart: Pivot: Summarize Table: Table: Now you can select the "Fit to Header Text" to show the column header text fully without ellipsis even if the text is long. 
-* Chart: Reference Line: Now you can choose the "Period Ago" reference line type if you assign a Date/POSIXct column at X-Axis.
-* Chart: Reference Line: Now you can set the base data range for the reference line calculation.
-* Chart: Reference Line: Now you can set the text position (left or right) for the reference line labels on the plot. 
-* Chart: Reference Line: Now you can use the "Control Limits (mR)" and "Control Limits (X)" reference line range types. 
-* Chart: Trend Line: Now you can set the base data range for the trend line calculation.
 
 
 * Analytics: Factor Analysis: Now you can enable the text wrap to see the full column names on the Weights tab.
 
 
-* Note: Now it supports the "Large Size" option for R Script output results.
+* Dashboard: Updated the Run button as a dropdown button so that you can choose either Run or Run with Data Import.
+* Dashboard: Added a support for showing the comment for Number charts that are included inside a Dashboard.
+
+
+* Note: Added the display size options for the R Script block.
 * Note: Support the chart size with normal width and full height.
 * Note: You can now search for and replace text within a note.
 
 
-* Parameter: Now it supports the quote option in steps for the dynamic column selection.
+* Parameter: Now it supports the quote option so that you can make column names as parameter values inside calculations.
 
 
-* Project: Now you sort the data frames or reports by name in the project object tree on the left-hand side, it does the numeric sort for names that start with numbers. 
-* General: Now you can set the custom decimal and thousand separators for numbers on the Table View. 
+* Project: Now it supports numeric sort for data frame names inside the project.
+
 
 
 ### Bug Fixes
@@ -49,16 +64,14 @@ Release on 5/23/2024.
 * Data Source: BigQuery: When importing data that contains character columns, the data type of the column changed from character to numeric on some occasions.
 * Data Source: Excel: It mistakenly selected all the columns even though these columns were not presented in the preview table.
 * Data Source: Excel: It opened a wrong dialog for multiple Excel sheets when clicking a source step.
-* Data Source: Google Analytics: When opening the import dialog, It did not restore the previously selected profile. 
+* Data Source: Google Analytics: When opening the import dialog, It did not restore the previously selected profile.
 * Data Source: Re-Importing SQL data showed an infinite spin when the associated password is empty.
 * Data Source: SQL: After canceling a data import job, it showed ERROR CODE 127.
 
 
-* Data Wrangling: Chart: Window calculation: If there was an NA at the beginning of the column data, the cumulative calculation such as cumsum returned all NA values.
+* Data Wrangling: Window Calculation: If there was an NA at the beginning of the data we the cumulative calculation returned all NA values.
 * Data Wrangling: Could not combine multiple Create Calculation With Condition steps into a single step.
 * Data Wrangling: Exporting step data to Google Sheets with the 'Override Existing' option failed with error code 127.
-* Data Wrangling: Filter Step Label: Filter Step Labels displayed both the current selection and the previously selected value where it should only show the current selection.
-* Data Wrangling: Filter: Updated the operation names and changed menu order for Remove NA, etc. 
 * Data Wrangling: Join: After creating a right join step, the target data frame key columns in the Join Dialog became disabled if the target data frame was a branch of a branch.
 * Data Wrangling: Join: When the target data frame was "Grouped by", you could not get rid of the group columns from the target column selections.
 * Data Wrangling: When copying a data frame, it sometimes failed to copy the underlying chart.
@@ -66,23 +79,21 @@ Release on 5/23/2024.
 
 
 * Chart: Bar chart failed to render due to the “idx must contain one integer for each level of f” error if you assigned a column that had many unique values to X-Axis.
-* Chart: Heatmap: The default decimal formatting didn't apply for values on the plot area if you turned on and off the thousand separator setting. 
-* Chart: Number: If you closed the Difference/Ratio dialog by hitting the Close button, moved to another chart tab, and came back to the original chart, then the value became "0". 
-* Chart: Pivot Table: If you enabled the text wrap, the column width got wider. 
+* Chart: Heatmap: The default decimal formatting didn't apply for values on the plot area if you turned on and off the thousand separator setting.
+* Chart: Number: If you closed the Difference/Ratio dialog by hitting the Close button, moved to another chart tab, and came back to the original chart, then the value became "0".
+* Chart: Pivot Table: If you enabled the text wrap, the column width got wider.
 * Chart: Pivot Table: The cell width got wider even if you set an explicit cell width in the Formatting dialog if you assigned multiple columns to Value and a column to Column.
-* Chart: Pivot: Summarize Table: Table: Now you can customize the text for "Inf". 
-* Chart: Reference Line: The line didn't go through from the left to the right if you assigned a column to "Color By" and chose the "All" for Group By setting. 
+* Chart: Pivot: Summarize Table: Table: Now you can customize the text for "Inf".
+* Chart: Reference Line: The line didn't go through from the left to the right if you assigned a column to "Color By" and chose the "All" for Group By setting.
 * Chart: Reference Line: You should be able to enter date values for the constant value even if the column at X-Axis is POSIXct.
 * Chart: Table: The text sort order was inconsistent between the Table and Pivot if the data contained full-width alphabet characters.
-* Chart: The Missing Value Handling menu should show up even if you assign multiple columns to the Y-axis. 
+* Chart: The Missing Value Handling menu should show up even if you assign multiple columns to the Y-axis.
 * Chart: You should be able to change the color for each column at Y-Axis if you have multiple columns assigned to Y-Axis.
 
 
 * Dashboard: After changing the parameter type from Single Select LOV to Multiple Select LOV, opening a dashboard raised TypeError: e.value.map is not a function error.
 * Dashboard: After moving the last chart from one row to another row by drag and drop, the empty row was removed from the page.
 * Dashboard: Showing the detail data failed with the "error code 3" error on the published dashboard if the chart used in the dashboard was not pinned to the step.
-* Dashboard: Updated the Run button as a dropdown button and now it shows the "Run with Data Import" option.
-* Dashboard: You should be able to see the comment for a Number chart on a dashboard.
 * Dashboard: When publishing a dashboard whose data source is Google Drive, it showed a connection not found error.
 
 
@@ -90,7 +101,7 @@ Release on 5/23/2024.
 * Note: Deleting an inline code block was difficult if there was a space at the end.
 * Note: Importing notes created with Exploratory Desktop V9 sometimes resulted in charts being incorrectly placed within bullet lists, causing them to display improperly.
 * Note: LaTeX: Added the link for the LaTeX cheat sheet.
-* Note: Note content got cleared for some occasions. 
+* Note: Note content got cleared for some occasions.
 * Note: Resolved an issue where deleting an inline code block at the beginning of a sentence was difficult after its contents were cleared.
 * Note: Retain the original scroll position when pressing the refresh button.
 * Note: The cursor could not be placed before a character immediately following an inline code block.
@@ -102,10 +113,9 @@ Release on 5/23/2024.
 * Parameter: The Data Frame List of Value should show an instant popup for a long data frame name.
 
 
-* Project: The current editing user popup shouldn't show the users who don't have the privilege to republish the project. 
+* Project: The current editing user popup shouldn't show the users who don't have the privilege to republish the project.
 * Project: When multiple projects were opened, the projects froze when you tried to close them.
 * Project: You could not close a Project after publishing the project.
-* General: Added the 'Close' button for the multi-select widget.
 * General: The chat button did not go away even if you clicked the close button.
 
 
@@ -130,7 +140,7 @@ Release on 3/21/2024.
 * Chart: Support choosing the base axis (Y1 or Y2) for the zero line sync.
 
 
-* Note: Supports option to display borders for charts embedded in notes. 
+* Note: Supports option to display borders for charts embedded in notes.
 
 
 * Parameter: Now it supports overwriting labels for a List of Values with '(None)' and '(All)' options.
@@ -140,7 +150,7 @@ Release on 3/21/2024.
 
 * Chart: Bar: NA didn't show up as a category if you assigned a Date column including NA values to Color.
 * Chart: Color dialog didn't remember the Color Direction setting when reopening the Color dialog.
-* Chart: Reference line length should be the same as the group's data range if you choose "Color" for the Group By setting. 
+* Chart: Reference line length should be the same as the group's data range if you choose "Color" for the Group By setting.
 * Chart: Map: Legend becomes weird if you apply the percentage number formatting.
 
 
@@ -208,7 +218,7 @@ Released on 3/5/2024.
 
 
 * Chart: The "Always Include 0 in Y Axis" property didn't work properly if you had a Reference Line on X-axis.
-* Chart: Pivot Table: If you exported the Show Detail data with more than 100 columns, it exported only up to 100 columns. 
+* Chart: Pivot Table: If you exported the Show Detail data with more than 100 columns, it exported only up to 100 columns.
 
 
 * Note: Changing the image size moved the image to an incorrect position for small images.
