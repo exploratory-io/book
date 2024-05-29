@@ -7,13 +7,15 @@ Release on 5/23/2024.
 ### New Features
 
 * Chart: XmR Chart: Now you can show the "Control Limits" range for Line, Bar, Scatter, Bubble, and Error Bar charts.
-* Chart: Number: Now you can show a sub-metric value underneath the main metric value when using Difference feature.
+* Chart: Number: Now you can show a sub-metric value underneath the main metric value when using the Difference feature.
 * Chart: Now you can choose the "Period Ago" reference line type if you assign a Date/POSIXct column to X-Axis.
 * Chart: Now you can set the base data range for the reference line calculation and the trend line data.
 * Chart: Added 'Quick Filter' operator for the Limit Values at X-Axis.
 * Chart: Now you can change the sort order for the Repeat By.
 
+
 * Note: Added 'Text Search' and 'Replace Text' feature for Note Editor.
+
 
 ### Enhancements
 
@@ -22,7 +24,6 @@ Release on 5/23/2024.
 
 * Data Wrangling: Added 'Quick Filter' operator to make it easier to filter time series data.
 * Data Wrangling: Added the 'Latest N Years/Months/Weeks/Days' options for the 'Relative Date' operator for the Filter.
-
 
 
 * Table View: Now you can set the custom decimal and thousand separators for numeric data shown inside the Table View.
@@ -34,8 +35,8 @@ Release on 5/23/2024.
 * Chart: Added 'Latest N Years/Months/Weeks/Days' options for the 'Relative Date' operator for the Limit Values at X-Axis.
 
 
-* Chart: Pivot: Summarize Table: Now you can show the column names in multiple lines with 'Text Wrap' option.
-* Chart: Pivot: Summarize Table: Table: Now you can show the full column names with "Fit to Header Text" option.
+* Chart: Pivot: Summarize Table: Now you can show the column names in multiple lines with the 'Text Wrap' option.
+* Chart: Pivot: Summarize Table: Table: Now you can show the full column names with the "Fit to Header Text" option.
 * Chart: Pivot: Summarize Table: Now you can change the text alignment for the Row values.
 * Chart: Pivot Table: Now you can sort the values for the Column.
 
@@ -44,7 +45,7 @@ Release on 5/23/2024.
 
 
 * Dashboard: Updated the Run button as a dropdown button so that you can choose either Run or Run with Data Import.
-* Dashboard: Added a support for showing the comment for Number charts that are included inside a Dashboard.
+* Dashboard: Added support for showing the comment for Number charts that are included inside a Dashboard.
 
 
 * Note: Added the display size options for the R Script block.
@@ -55,8 +56,8 @@ Release on 5/23/2024.
 * Parameter: Now it supports the quote option so that you can make column names as parameter values inside calculations.
 
 
-* Project: Now it supports numeric sort for data frame names inside the project.
-
+* Project: Now it supports numeric sorting for data frame names inside the project.
+* Project: Now you can invite academic plan users to your team shared projects.
 
 
 ### Bug Fixes
@@ -89,12 +90,15 @@ Release on 5/23/2024.
 * Chart: Table: The text sort order was inconsistent between the Table and Pivot if the data contained full-width alphabet characters.
 * Chart: The Missing Value Handling menu should show up even if you assign multiple columns to the Y-axis.
 * Chart: You should be able to change the color for each column at Y-Axis if you have multiple columns assigned to Y-Axis.
+* Chart: Table: Table should show the number of rows all the time.
 
 
 * Dashboard: After changing the parameter type from Single Select LOV to Multiple Select LOV, opening a dashboard raised TypeError: e.value.map is not a function error.
 * Dashboard: After moving the last chart from one row to another row by drag and drop, the empty row was removed from the page.
 * Dashboard: Showing the detail data failed with the "error code 3" error on the published dashboard if the chart used in the dashboard was not pinned to the step.
 * Dashboard: When publishing a dashboard whose data source is Google Drive, it showed a connection not found error.
+* Dashboard: Running a dashboard with parameters referring to a data frame resulted in an "object not found" error.
+* Dashboard/Note: Changed the default sort type to Date instead of Name. 
 
 
 * Note: After inserting a URL that contains a hyphen (-), it was mistakenly escaped.
@@ -107,18 +111,23 @@ Release on 5/23/2024.
 * Note: The cursor could not be placed before a character immediately following an inline code block.
 * Note: The mouse cursor could not be placed immediately after inline math syntax.
 * Note: When trying to cut and paste an image in a note, it did not work unless you explicitly clicked the circle icon to select the image before cutting it.
+* Note: The size popup didn't go away even if you unselected a map chart on a note.
+* Note: The size popup didn't show up if you selected a map chart using the cursor key.
 
 
 * Parameter: It should show an instant popup for a long parameter name.
 * Parameter: The Data Frame List of Value should show an instant popup for a long data frame name.
+* Parameter: After deleting a step referenced from a parameter, selecting the step that uses the parameter showed the object not found error.
 
 
 * Project: The current editing user popup shouldn't show the users who don't have the privilege to republish the project.
 * Project: When multiple projects were opened, the projects froze when you tried to close them.
 * Project: You could not close a Project after publishing the project.
+* Project: Restoring with history failed with "does not match index" error. 
 * General: The chat button did not go away even if you clicked the close button.
-
-
+* General: Signing out and then signing in with a different account still used the previous account's information for publishing insights.
+* Installation: The rename dialog now consistently displays IDs for Project, Data Frame, and other elements, enhancing the diagnostic experience.
+  
 
 ## 9.10
 
