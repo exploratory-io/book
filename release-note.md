@@ -8,7 +8,7 @@ Release on 6/3/2024.
 
 ### Bug Fixes
 
-* Data Source: Switching between connections caused the schema and tables to be swapped.
+* Data Source: Switching between connections didn't update the schema and tables correctly.
 
 
 * Data Wrangling: The Last Imported date information in the data import step was updated even when just running a step that is not the data import step.
