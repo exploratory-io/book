@@ -11,22 +11,20 @@ Release on 6/3/2024.
 * Data Source: Switching between connections caused the schema and tables to be swapped.
 
 
-* Data Wrangling: The Last Imported date was mistakenly updated when running a step.
+* Data Wrangling: The Last Imported date information in the data import step was updated even when just running a step that is not the data import step.
 
 
+* Chart: Number: When there is no value to compare against, now we display '-' instead of leaving the field blank.
 * Chart: Number: The height of the number was incorrect when there was no data after applying the parameter setting.
-* Chart: Number: When there is no value to compare against, display '-' instead of leaving the field blank.
-* Chart: Pivot: Summarize Table: The "Difference"/"% Difference" Window Calculation should support the "Calculate As Absolute Values" option.
-* Chart: Pivot: Summarize Table: If you added 2 columns at Row, set the "Hide" option for the 1st column, and removed the 1st column, the "Hide" option wasn't removed. 
+* Chart: Pivot: Summarize Table: Now we support "Calculate As Absolute Values" option for "Difference"/"% Difference" Window Calculation.
+* Chart: Pivot: Summarize Table: When you have two columns assigned to Row and set the "Hide" option for the first column, removing the first column pass the Hide setting to the second column.
 
 
-* Note: When typing on a note with large text, the performance got a little slow. 
-
-
-* Parameter: The column assignment for a Date parameter became invalid after deleting a referenced step.
+* Parameter: The column assignment for a parameter became invalid after deleting a referenced step. Now we automatically assign the previous step to make the parameter valid.
 
 
 * Project: Projects could not be closed if they had previously failed to publish and had pending changes.
+
 
 ## 10.0
 
@@ -126,7 +124,7 @@ Release on 5/29/2024.
 * Dashboard: Showing the detail data failed with the "error code 3" error on the published dashboard if the chart used in the dashboard was not pinned to the step.
 * Dashboard: When publishing a dashboard whose data source is Google Drive, it showed a connection not found error.
 * Dashboard: Running a dashboard with parameters referring to a data frame resulted in an "object not found" error.
-* Dashboard/Note: Changed the default sort type to Date instead of Name. 
+* Dashboard/Note: Changed the default sort type to Date instead of Name.
 
 
 * Note: After inserting a URL that contains a hyphen (-), it was mistakenly escaped.
@@ -151,11 +149,11 @@ Release on 5/29/2024.
 * Project: The current editing user popup shouldn't show the users who don't have the privilege to republish the project.
 * Project: When multiple projects were opened, the projects froze when you tried to close them.
 * Project: You could not close a Project after publishing the project.
-* Project: Restoring with history failed with "does not match index" error. 
+* Project: Restoring with history failed with "does not match index" error.
 * General: The chat button did not go away even if you clicked the close button.
 * General: Signing out and then signing in with a different account still used the previous account's information for publishing insights.
 * Installation: The rename dialog now consistently displays IDs for Project, Data Frame, and other elements, enhancing the diagnostic experience.
-  
+
 
 ## 9.10
 
