@@ -1,5 +1,33 @@
 # Release Note
 
+
+
+## 10.1
+
+Release on 6/3/2024.
+
+### Bug Fixes
+
+* Data Source: Switching between connections caused the schema and tables to be swapped.
+
+
+* Data Wrangling: The Last Imported date was mistakenly updated when running a step.
+
+
+* Chart: Number: The height of the number was incorrect when there was no data after applying the parameter setting.
+* Chart: Number: When there is no value to compare against, display '-' instead of leaving the field blank.
+* Chart: Pivot: Summarize Table: The "Difference"/"% Difference" Window Calculation should support the "Calculate As Absolute Values" option.
+* Chart: Pivot: Summarize Table: If you added 2 columns at Row, set the "Hide" option for the 1st column, and removed the 1st column, the "Hide" option wasn't removed. 
+
+
+* Note: When typing on a note with large text, the performance got a little slow. 
+
+
+* Parameter: The column assignment for a Date parameter became invalid after deleting a referenced step.
+
+
+* Project: Projects could not be closed if they had previously failed to publish and had pending changes.
+
 ## 10.0
 
 Release on 5/29/2024.
