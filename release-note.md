@@ -1,5 +1,12 @@
 # Release Note
 
+## 10.2
+
+Release on 6/5/2024.
+
+### Bug Fixes
+
+* Data Wrangling: Selecting a branch of a branch resulted in an empty screen.
 
 
 ## 10.1
