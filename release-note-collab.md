@@ -1,5 +1,61 @@
 # Release Note
 
+## 10.0
+
+Released on 06/10/2024
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-10.0.2.tar.gz)
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-10.0.2.tar.gz)
+
+### Enhancements
+
+* Data Source: Snowflake: Now it supports secret key file authentication.
+
+
+* Content: Now it refreshes the output of the R code chunk such as image or text in a note or dashboard if you change the parameter or schedule it. 
+
+
+* Admin: Added an "Admin" column to the user list table for easier identification and management of admin users
+* Admin: Admin users can now view the activation URL for users awaiting approval in the user list.
+* Admin: Admin users now have the ability to change the ownership of content published on the server.
+* Admin: Now you can setup the IP white list for the Server Admin page access. 
+* Admin: Now you can view the access logs per user or per content. 
+
+
+* Dashboard: Now you can specify which page to open by default by specifying a "page=" URL parameter. 
+
+
+* Search: Now you can use single quote to surround keywords when you search the contents.
+
+
+* Parameter: Now it supports overwriting (None) and (All) labels for List of Values
+* Parameter: Now it supports the quote option so that you can make column names as parameter values inside calculations.
+* Parameter: Now you can choose which side (left or right) to show the parameter pane. 
+
+
+* Schedule: Now you can specify the end date of the scheduling. 
+
+
+### Bug Fixes
+
+* Content: If you scheduled a note or dashboard with a Table that contains NA values and exported the Table data to the CSV after that, it showed "NA" text for the NA values instead of empty values. 
+* Content: If you use the embedded mode and you have narrower window width, the parameter pane shouldn't show by default and it should have a parameter toggle button at the top right corner. 
+* Content: Scheduling History didn't show the recent history logs if there were more than 200 logs.
+* Content: The team suggestion should show all teams even if you don't belong to in the Share dialog on the Hosted/On-Prem Server. 
+
+
+* Admin: Admin should be able to remove invited but not confirmed users from the User Admin UI. 
+* Admin: Admin users are now required to enter both the first and last names when adding a new user.
+* Admin: Admin users should be able to see the users without scrolling inside a user list table.
+
+* Parameter: It failed to update the Parameter and showed the “Error: IOError: Failed to open local file. No such file or directory” error on a fresh Hosted/On-Prem Server installation.
+* Parameter: Parameter pane didn't show up on a public content if you were not logged in.
+* Parameter: Session failed to initialize due to "TypeError: e.replace is not a function" error if you created a multi-value parameter and changed it to the single-value parameter.
+* Parameter: The show detail table showed "Chart rendering failed." if the underlying step had more than 100 columns. 
+* Parameter: When the parameter was executed, the parameter pane became blank, and the charts displayed "No Data."
+
 ## 9.0
 
 Released on 03/07/2024
