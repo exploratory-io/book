@@ -49,6 +49,7 @@ Released on 06/10/2024
 * Admin: Admin should be able to remove invited but not confirmed users from the User Admin UI. 
 * Admin: Admin users are now required to enter both the first and last names when adding a new user.
 * Admin: Admin users should be able to see the users without scrolling inside a user list table.
+ 
 
 * Parameter: It failed to update the Parameter and showed the “Error: IOError: Failed to open local file. No such file or directory” error on a fresh Hosted/On-Prem Server installation.
 * Parameter: Parameter pane didn't show up on a public content if you were not logged in.
