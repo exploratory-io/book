@@ -9,6 +9,11 @@ Released on 06/10/2024
 * [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-10.0.2.tar.gz)
 * [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-collab-images-10.0.2.tar.gz)
 
+### Installation Instruction
+
+* [New Install](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml)
+* [Upgrade Install](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH)
+
 ### Enhancements
 
 * Data Source: Snowflake: Now it supports secret key file authentication.
@@ -20,14 +25,14 @@ Released on 06/10/2024
 * Admin: Added an "Admin" column to the user list table for easier identification and management of admin users
 * Admin: Admin users can now view the activation URL for users awaiting approval in the user list.
 * Admin: Admin users now have the ability to change the ownership of content published on the server.
-* Admin: Now you can setup the IP white list for the Server Admin page access. 
+* Admin: Now you can set up the IP white list for the Server Admin page access. 
 * Admin: Now you can view the access logs per user or per content. 
 
 
 * Dashboard: Now you can specify which page to open by default by specifying a "page=" URL parameter. 
 
 
-* Search: Now you can use single quote to surround keywords when you search the contents.
+* Search: Now you can use a single quote to surround keywords when you search the contents.
 
 
 * Parameter: Now it supports overwriting (None) and (All) labels for List of Values
@@ -52,8 +57,8 @@ Released on 06/10/2024
  
 
 * Parameter: It failed to update the Parameter and showed the “Error: IOError: Failed to open local file. No such file or directory” error on a fresh Hosted/On-Prem Server installation.
-* Parameter: Parameter pane didn't show up on a public content if you were not logged in.
-* Parameter: Session failed to initialize due to "TypeError: e.replace is not a function" error if you created a multi-value parameter and changed it to the single-value parameter.
+* Parameter: Parameter pane didn't show up on public content if you were not logged in.
+* Parameter: Session failed to initialize due to the "TypeError: e.replace is not a function" error if you created a multi-value parameter and changed it to the single-value parameter.
 * Parameter: The show detail table showed "Chart rendering failed." if the underlying step had more than 100 columns. 
 * Parameter: When the parameter was executed, the parameter pane became blank, and the charts displayed "No Data."
 
