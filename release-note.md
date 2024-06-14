@@ -243,6 +243,7 @@ Released on 3/5/2024.
 
 ### Enhancements
 
+* Data Source: Snowflake: Now it supports secret key file authentication on Exploratory Server.
 * Chart: Table: Now you can show image URLs as images in table cells by the "Treat as Image" option in the Format Configuration dialog.
 
 
