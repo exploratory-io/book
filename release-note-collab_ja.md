@@ -1,5 +1,22 @@
 # リリースノート
 
+## 10.1
+
+2024年6月13日リリース。
+
+### ダウンロード
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-10.1.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-10.1.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
+
+### 修正された問題
+
+データソース: Google BigQuery: Googleクラウドストレージ経由でデータをインポートすると、結果に別のデータが含まれてしまう。
+
+管理: コンテンツの所有権を別のユーザーに変更するときに、コネクションの情報と、スケジュールの情報が転送されない問題を解決しました。
+管理: Exploratoryサーバーのdocker-composeファイルの移行スクリプトが動作しない。
+
+
 ## 10.0
 
 2024年6月10日リリース。
