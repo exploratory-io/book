@@ -1,5 +1,42 @@
 # Release Note
 
+## 10.3
+
+Release on 6/19/2024.
+
+### New Features
+
+Parameter: Added support for resetting parameter values to their default settings.
+
+
+### Bug Fixes
+
+* Data Source: Google BigQuery: Import result messed up during multiple Imports via Google Cloud Storage.
+* Data Source: After re-importing data, reopening the project displays the previous 'Last Imported Date' instead of the updated one.
+
+
+* Summary View: Quick Filters were not applied to exported data. 
+
+
+* Data Wrangling: Long to Wide:  Aggregate functions for numeric columns were incorrectly listed when a character column was assigned as the value.
+* Data Wrangling: Step Cut and Paste failed with the 'Cannot read properties of undefined' error.
+* Data Wrangling: Text Wrangling: The label for tokens always displayed the first token's label when multiple tokens were present in a step.
+* Data Wrangling: An incorrect 'circular relationship error' occurred when a join column name matched the name of another data frame.
+
+
+* Chart: Color: Logical condition on Date column didn't work as expected.
+
+
+* Dashboard: Always show a green comment icon if a chart has comments. 
+* Dashboard: The output of R code chunks and inline R code did not update when parameters were changed.
+
+
+* Parameter: Resolved various parameter-related errors that appeared after importing an EDF file.
+* Parameter: TRUE/FALSE values were incorrectly auto-populated for 'List of value' options when selecting the 'List' style for a character list of value parameter.
+
+
+* Project: The project header displayed an incorrect name during the initial loading phase. 
+
 ## 10.2
 
 Release on 6/5/2024.
