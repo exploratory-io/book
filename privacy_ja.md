@@ -44,8 +44,6 @@ Exploratoryのアカウント作成時には、いくつかの基本情報をお
 
 当社はExploratory デスクトップ・アプリケーションと私たちのサービスとのやりとりを、利用ログとしてExploratory クラウドサーバーに収集します。
 
--> 訳を確認いただきたいです。"Exploratory Cloud Server performs server-side logging of Exploratory Desktop application interactions with our services."
-
 このログには、Exploratory デスクトップおよびExploratory クラウドサーバーにアクセスするためのお客様のアカウントの認証、お客様が明示的にデータ、チャート、またはノートをサーバーにパブリッシュしたときの活動ログが含まれます。これらのログには、ログインに成功したイベントと失敗したイベントも含まれます。なお、Exploratory デスクトップから活動ログを自動的に収集することはありません。
 
 #### なぜこれらの情報を収集するのですか？
