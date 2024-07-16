@@ -1,5 +1,67 @@
 # Release Note
 
+
+
+## 10.4
+
+Release on 7/15/2024.
+
+### New Features
+
+* Data Wrangling: Wide to Long: Added support for automatic data type detection for Key columns.
+* Data Wrangling: Create Calculation with Condition: Added support for automatic data type detection for 'Return Values'.
+
+
+* Chart: Limit: Now you can limit the data by the relative dates in all chart types. 
+
+
+### Bug Fixes
+
+
+* Data Source: SQL import job failed when Exploratory Desktop was running in offline mode.
+* Data Source: Unable to click on source step token after canceling during data import. 
+* Data Source: when a project was associated with custom R packages that were missing, the import SQL job failed.
+
+
+* Data Wrangling: Create Calculation with Condition: Custom conditions using 'OR' operators were not functioning as expected.
+* Data Wrangling: Create Calculation with Condition: The default column selection disappeared when there were no rows from the previous step.
+* Data Wrangling: In the Mutate dialog, the function help content for the highlight function was not displayed correctly when scrolling.
+* Data Wrangling: The Re-import option was not appearing under certain conditions.
+
+
+* Chart: Pivot: Summarize Table: Show detail returned no rows if you applied the date formatting on the Row or Column. 
+* Chart: Scatter: The text order on the Y-axis became incorrect if you assigned the same character column for the X and Y axes and assigned columns for Color and Repeat By. 
+* Chart: The order of the legend items was different between Mac and Windows if you had Japanese characters in the legend item names. 
+
+
+* Analytics: Prophet: The Effects tab became blank if you assigned external predictors and used the multiplicative seasonality mode. 
+
+
+* Note: The R code block preview output did not update dynamically when parameters were changed.
+* Note: When creating a visNetwork chart using an R code chunk and previewing it, the chart appeared wider than expected.
+* Note: When inserting a link to text, closing the URL Link dialog didn't save the URL.
+
+
+* Dashboard: Chart Picker: The Data Frame List incorrectly displayed disabled data frames after opening the merge or join steps.
+* Dashboard: Clicking the Apply button three times caused the text inside a text widget to disappear.
+* Dashboard: Exporting a dashboard to HTML caused the UI to break
+* Dashboard: The Math Block option was not supported in Text Widgets.
+* Dashboard: The visNetwork chart created in the R Script disappeared if you switched the dashboard tabs in the preview mode.
+* Dashboard: When re-importing data from an SQL data source, the confirmation dialog should not appear if the user is still opening the dashboard.”
+
+
+* Publish: Added a 'Retry' link for failed published jobs.
+* Publish: Dashboard: Selecting 'Data Re-Import' from the Run dropdown caused the dashboard to fetch data twice when publishing.
+
+
+* Parameter: The 'Allow No Selection (Return All Values)' option didn't return all values when the associated data frame was updated.
+
+
+* Project: Attempting to open a project often resulted in an error message: 'Failed to open the project because it couldn’t start an Rserve process.'
+
+
+
+
 ## 10.3
 
 Release on 6/19/2024.
