@@ -57,7 +57,7 @@ Release on 7/15/2024.
 * Parameter: The 'Allow No Selection (Return All Values)' option didn't return all values when the associated data frame was updated.
 
 
-* Project: Attempting to open a project often resulted in an error message: 'Failed to open the project because it couldn’t start an Rserve process.'
+* Project: Attempting to open a project often resulted in an error message: 'Failed to open the project because it couldn’t start an Rserve process.'.
 
 
 
