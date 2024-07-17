@@ -15,6 +15,9 @@ Release on 7/15/2024.
 * Chart: Limit: Now you can limit the data by the relative dates in all chart types. 
 
 
+* Parameter: Now you can change the order of parameters in the Data Import dialog.
+
+
 ### Bug Fixes
 
 
@@ -55,7 +58,6 @@ Release on 7/15/2024.
 
 
 * Parameter: The 'Allow No Selection (Return All Values)' option didn't return all values when the associated data frame was updated.
-
 
 * Project: Attempting to open a project often resulted in an error message: 'Failed to open the project because it couldn’t start an Rserve process.'.
 
