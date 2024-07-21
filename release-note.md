@@ -1,6 +1,25 @@
 # Release Note
 
 
+## 10.5
+
+Release on 7/20/2024.
+
+### Bug Fixes
+
+* Data Source: SQL: An error occurred if an SQL preview was being executed when a notification for database import completion appeared and the OK button was clicked.
+
+
+* Data Wrangling: Filter: When filtering a POSIXct column with a time zone other than UTC, filtering by 'Date' did not yield the correct dates.
+* Data Wrangling: The "Import All the Related Source Data" option should not be displayed when selecting a step that precedes a merge data frame step.
+
+
+* Note: Pressing the Enter key in the image caption area did not add a new line.
+* Note: The content became blank if the data frame used for charts in the note were deleted.
+
+
+* Dashboard: Cascading parameters did not work when the parameter was set to use "Select All" for empty values.
+* Dashboard: The "Fit to screen" option did not work when previewing or publishing the dashboard.
 
 ## 10.4
 
