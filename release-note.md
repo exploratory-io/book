@@ -21,6 +21,9 @@ Release on 7/20/2024.
 * Dashboard: Cascading parameters did not work when the parameter was set to use "Select All" for empty values.
 * Dashboard: The "Fit to screen" option did not work when previewing or publishing the dashboard.
 
+
+* Installation: On Windows, Exploratory Desktop failed to detect R installations located in the \AppData\Local\Programs\R folder within the user's home directory.
+
 ## 10.4
 
 Release on 7/15/2024.
