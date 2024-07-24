@@ -1,5 +1,38 @@
 # Release Note
 
+## 10.2
+
+Released on 07/23/2024
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-10.2.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-10.2.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+
+### Enhancements
+
+* Parameter: Added text input field validation when the 'Allow Empty' option was not set and no values were entered.
+* Parameter: Support the "Run with Data Import" with the parameter.
+
+
+* Schedule: Now you can create schedules with more flexible scheduling time.
+
+
+### Bug Fixes
+
+* Admin: The admin password should require at least at least one capital letter, one small capital letter, one numeric digit, and one symbol.
+* Admin: The "Last Desktop Startup" date was not refreshed even if there was a desktop startup event.
+
+
+* Parameter: The "Update data for chart export" checkbox should not be shown on the Dashboard.
+* Parameter: By default the "Update data for chart export" checkbox should be checked.
+* Parameter: Schedule: The parameter or scheduling should update the chart images created in the R code block.
+
+
+* Schedule: Team scheduling failed after the other team member republished the insight.
+
+
 ## 10.1
 
 Released on 06/13/2024
