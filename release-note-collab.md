@@ -12,25 +12,25 @@ Released on 07/23/2024
 
 ### Enhancements
 
+* The charts created inside R Code Block are now updated by running the parameter or scheduling the content (Dashboards, Notes, etc.). 
+
+
+* Parameter: Support "Run with Data Import" option inside the Parameter pane. Now the Viewer users can not only updating the data with Parameter, but also re-importing the latest data from the data sources.
 * Parameter: Added text input field validation when the 'Allow Empty' option was not set and no values were entered.
-* Parameter: Support the "Run with Data Import" with the parameter.
 
 
-* Schedule: Now you can create schedules with more flexible scheduling time.
+* Schedule: Now you can set Hour and Minute when you set up the schedule.
 
 
 ### Bug Fixes
 
-* Admin: The admin password should require at least at least one capital letter, one small capital letter, one numeric digit, and one symbol.
-* Admin: The "Last Desktop Startup" date was not refreshed even if there was a desktop startup event.
+* Admin UI: The "Last Desktop Startup" date was not updated in some instances.
 
 
-* Parameter: The "Update data for chart export" checkbox should not be shown on the Dashboard.
-* Parameter: By default the "Update data for chart export" checkbox should be checked.
-* Parameter: Schedule: The parameter or scheduling should update the chart images created in the R code block.
+* Parameter: The "Update data for chart export" checkbox should not be shown inside the Parameter pane. The data for chart export is always updated when running the dashboards / notes with Parameter.
 
 
-* Schedule: Team scheduling failed after the other team member republished the insight.
+* Schedule: Team scheduling failed after the other team member republished the content (Dashboards, Notes, etc.).
 
 
 ## 10.1
