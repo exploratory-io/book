@@ -2,7 +2,7 @@
 
 ## 10.2
 
-Released on 7/25/2024
+Released on 7/26/2024
 
 ### Download
 
