@@ -1,6 +1,30 @@
 # Release Note
 
 
+## 10.6
+
+Release on 7/25/2024.
+
+### Bug Fixes
+
+* Data Source: SQL Connection: Added syntax validation for the Additional Parameter field. 
+
+
+* Data Wrangling: Create Calculation with Condition:  Unchecking the selected column did not clear the column from the selected columns.
+* Data Wrangling: Create Calculation with Condition: Supported factor as a New Value Data Type.
+
+
+* Chart: Pivot: Limit on a Date/POSIXct column did not work as expected if a Window Calculation was used. 
+
+
+* Dashboard: It should not run a dashboard when clicking the Publish or Published button when there was no change made to the Dashboard.
+
+
+* Publish: The data option is now always enabled and has been removed from the Publish Dialog.
+* General: The connected server name is now displayed in the dropdown menu when clicking the user name on the Project List UI.
+
+
+
 ## 10.5
 
 Release on 7/20/2024.
