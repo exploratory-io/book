@@ -3,7 +3,7 @@
 
 ## 10.6
 
-Release on 7/25/2024.
+Release on 7/26/2024.
 
 ### New Features
 
@@ -18,7 +18,7 @@ Release on 7/25/2024.
 * Data Wrangling: Create Calculation with Condition: Duplicating a token to create a separate step resulted in unnecessary columns being added.
 
 
-* Chart: Pivot: Limit on a Date/POSIXct column did not work as expected if a Window Calculation was used. 
+* Chart: Limit on a Date/POSIXct column did not work as expected if a Window Calculation was used. 
 
 
 * Dashboard: It should not run a dashboard when clicking the Publish or Published button when there was no change made to the Dashboard.
