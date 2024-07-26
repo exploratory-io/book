@@ -14,7 +14,8 @@ Release on 7/25/2024.
 * Data Source: SQL Connection: Added syntax validation for the Additional Parameter field. 
 
 
-* Data Wrangling: Create Calculation with Condition:  Unchecking the selected column did not clear the column from the selected columns.
+* Data Wrangling: Create Calculation with Condition: Unchecking the selected column did not clear the column from the selected columns.
+* Data Wrangling: Create Calculation with Condition: Duplicating a token to create a separate step resulted in unnecessary columns being added.
 
 
 * Chart: Pivot: Limit on a Date/POSIXct column did not work as expected if a Window Calculation was used. 
