@@ -2,7 +2,7 @@
 
 ## 10.2
 
-Released on 07/23/2024
+Released on 07/25/2024
 
 ### Download
 
@@ -19,6 +19,9 @@ Released on 07/23/2024
 * Parameter: Added text input field validation when the 'Allow Empty' option was not set and no values were entered.
 
 
+* Interactive: Now you can enable/disable the Show Detail Data feature from the Setting dialog. 
+
+
 * Schedule: Now you can set Hour and Minute when you set up the schedule.
 
 
@@ -31,6 +34,10 @@ Released on 07/23/2024
 
 
 * Schedule: Team scheduling failed after the other team member republished the content (Dashboards, Notes, etc.).
+
+
+* General: The "Download" menu shouldn't show up if you log in to the server as a Viewer.
+
 
 
 ## 10.1
