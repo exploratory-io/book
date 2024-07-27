@@ -7,25 +7,26 @@ Release on 7/26/2024.
 
 ### New Features
 
-* Data Wrangling: Create Calculation with Condition: Supported factor as a New Value Data Type.
+* Data Wrangling: Create Calculation with Condition: Supported Factor data type for the New Value.
+* General: Now you can see which Exploratory Server (exploratory.io, hosted, or on-prem) you're connecting to under the User menu on the project list UI.
+
 
 ### Bug Fixes
 
-* Data Source: SQL Connection: Added syntax validation for the Additional Parameter field. 
+* Data Source: SQL Connection: Added syntax validation for the Additional Parameter field.
 
 
 * Data Wrangling: Create Calculation with Condition: Unchecking the selected column did not clear the column from the selected columns.
 * Data Wrangling: Create Calculation with Condition: Duplicating a token to create a separate step resulted in unnecessary columns being added.
 
 
-* Chart: Limit on a Date/POSIXct column did not work as expected if a Window Calculation was used. 
+* Chart: Limit for Date/POSIXct columns did not work as expected when Window Calculations were used.
 
 
-* Dashboard: It should not run a dashboard when clicking the Publish or Published button when there was no change made to the Dashboard.
+* Dashboard: It should not re-run the Dashboard when clicking the Publish or Published button when there was no change made to the Dashboard.
 
 
-* Publish: The data option is now always enabled and has been removed from the Publish Dialog.
-* General: The connected server name is now displayed in the dropdown menu when clicking the user name on the Project List UI.
+* Publish: The Data option is now always enabled and has been removed from the Publish Dialog.
 
 
 
@@ -62,7 +63,7 @@ Release on 7/15/2024.
 * Data Wrangling: Create Calculation with Condition: Added support for automatic data type detection for 'Return Values'.
 
 
-* Chart: Limit: Now you can limit the data by the relative dates in all chart types. 
+* Chart: Limit: Now you can limit the data by the relative dates in all chart types.
 
 
 * Parameter: Now you can change the order of parameters in the Data Import dialog.
@@ -72,7 +73,7 @@ Release on 7/15/2024.
 
 
 * Data Source: SQL import job failed when Exploratory Desktop was running in offline mode.
-* Data Source: Unable to click on source step token after canceling during data import. 
+* Data Source: Unable to click on source step token after canceling during data import.
 * Data Source: when a project was associated with custom R packages that were missing, the import SQL job failed.
 
 
@@ -82,12 +83,12 @@ Release on 7/15/2024.
 * Data Wrangling: The Re-import option was not appearing under certain conditions.
 
 
-* Chart: Pivot: Summarize Table: Show detail returned no rows if you applied the date formatting on the Row or Column. 
-* Chart: Scatter: The text order on the Y-axis became incorrect if you assigned the same character column for the X and Y axes and assigned columns for Color and Repeat By. 
-* Chart: The order of the legend items was different between Mac and Windows if you had Japanese characters in the legend item names. 
+* Chart: Pivot: Summarize Table: Show detail returned no rows if you applied the date formatting on the Row or Column.
+* Chart: Scatter: The text order on the Y-axis became incorrect if you assigned the same character column for the X and Y axes and assigned columns for Color and Repeat By.
+* Chart: The order of the legend items was different between Mac and Windows if you had Japanese characters in the legend item names.
 
 
-* Analytics: Prophet: The Effects tab became blank if you assigned external predictors and used the multiplicative seasonality mode. 
+* Analytics: Prophet: The Effects tab became blank if you assigned external predictors and used the multiplicative seasonality mode.
 
 
 * Note: The R code block preview output did not update dynamically when parameters were changed.
@@ -129,7 +130,7 @@ Parameter: Added support for resetting parameter values to their default setting
 * Data Source: After re-importing data, reopening the project displays the previous 'Last Imported Date' instead of the updated one.
 
 
-* Summary View: Quick Filters were not applied to exported data. 
+* Summary View: Quick Filters were not applied to exported data.
 
 
 * Data Wrangling: Long to Wide:  Aggregate functions for numeric columns were incorrectly listed when a character column was assigned as the value.
@@ -141,7 +142,7 @@ Parameter: Added support for resetting parameter values to their default setting
 * Chart: Color: Logical condition on Date column didn't work as expected.
 
 
-* Dashboard: Always show a green comment icon if a chart has comments. 
+* Dashboard: Always show a green comment icon if a chart has comments.
 * Dashboard: The output of R code chunks and inline R code did not update when parameters were changed.
 
 
@@ -149,7 +150,7 @@ Parameter: Added support for resetting parameter values to their default setting
 * Parameter: TRUE/FALSE values were incorrectly auto-populated for 'List of value' options when selecting the 'List' style for a character list of value parameter.
 
 
-* Project: The project header displayed an incorrect name during the initial loading phase. 
+* Project: The project header displayed an incorrect name during the initial loading phase.
 
 ## 10.2
 
