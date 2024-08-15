@@ -7,97 +7,122 @@
     "insights": [
       {
        "title": "CSVやエクセルのデータをインポートする方法",
-       "desc": "CSVやエクセルのデータをインポートする方法をご紹介します。",
+       "desc": "CSVやエクセルのデータをインポートする方法を紹介します。",
        "url": "https://exploratory.io/note/exploratory/CSV-Jqt2IWj9"
       },
       {
         "title": "複数のエクセルファイルを一つのデータフレームとしてインポートする方法",
-        "desc": "複数のエクセルファイルを一つのデータフレームとしてインポートする方法をご紹介します。",
+        "desc": "複数のエクセルファイルを一つのデータフレームとしてインポートする方法を紹介します。",
         "url": "https://exploratory.io/note/GMq1Qom5tS/Dds7QwA9BL"
        },
       {
         "title": "Excelファイルの複数のシートをいっぺんにインポートする方法",
-        "desc": "Excelファイルの複数のシートをいっぺんにインポートする方法をご紹介します。",
+        "desc": "Excelファイルの複数のシートをいっぺんにインポートする方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-WGG2HBe0Yy"
        },
       {
         "title": "Excelシリーズ: 計算を作成する方法",
-        "desc": "計算を作成する方法をご紹介します。",
+        "desc": "計算を作成する方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-KFm4ZqT9gT"
       },
       {
         "title": "Excelシリーズ: データタイプを変換する方法",
-        "desc": "データタイプを変換する方法をご紹介します。",
+        "desc": "データタイプを変換する方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-jUh8RWs8Ja"
       },
       {
         "title": "Excelシリーズ: データ自体を集計する方法",
-        "desc": "データ自体を集計する方法をご紹介します。",
+        "desc": "データ自体を集計する方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-dDQ8RWE0BU"
       },
       {
+        "title": "Excelシリーズ: 表計算の使い方",
+        "desc": "表計算の使い方について紹介します。",
+        "url": "https://exploratory.io/note/exploratory/Excel-SWV3kAU3"
+      },
+      {
         "title": "Excelシリーズ: データをフィルタする方法",
-        "desc": "データをフィルタする方法をご紹介します。",
+        "desc": "データをフィルタする方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-zek8UEZ7IX"
       },
       {
         "title": "Excelシリーズ: データをピボットで集計する方法",
-        "desc": "データをピボットで集計する方法をご紹介します。",
+        "desc": "データをピボットで集計する方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-rXL9TBY8yE"
       },
       {
         "title": "Excelシリーズ: 他のデータフレームにある列を結合する方法",
-        "desc": "他のデータフレームにある列を結合する方法をご紹介します。",
+        "desc": "他のデータフレームにある列を結合する方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-QJC2qrp2qv"
       },
       {
         "title": "Excelシリーズ: 他のデータフレームにある行を結合する方法",
-        "desc": "他のデータフレームにある行を結合する方法をご紹介します。",
+        "desc": "他のデータフレームにある行を結合する方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-JHm6wLz6BF"
       },
       {
-        "title": "Excel シリーズ: 値を置換する方法",
-        "desc": "値を置換する方法をご紹介します。",
+        "title": "Excelシリーズ: 値を置換する方法",
+        "desc": "値を置換する方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-yWP4Wwq8Yy"
       },
       {
-        "title": "Excel シリーズ: 条件をもとに値を返す方法",
-        "desc": "条件をもとに値を返す方法をご紹介します。",
+        "title": "Excelシリーズ: 条件をもとに値を返す方法",
+        "desc": "条件をもとに値を返す方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-jsP3HUo6MR"
       },
       {
-        "title": "Excel シリーズ: 条件付き集計関数（SUM_IF）の使い方",
-        "desc": "条件付き集計関数（SUM_IF）の使い方についてご紹介します。",
+        "title": "Excelシリーズ: 条件付き集計関数（SUM_IF）の使い方",
+        "desc": "条件付き集計関数（SUM_IF）の使い方について紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-SUM-IF-jPB1WSe8Sp"
       },
       {
         "title": "Excelシリーズ: テキストデータの加工 - 取り除く",
-        "desc": "テキストデータの加工として文字列を取り除く方法をご紹介します。",
+        "desc": "テキストデータの加工として文字列を取り除く方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-GoD2srK9SW"
       },
       {
         "title": "Excelシリーズ: テキストデータの加工 - 抽出する",
-        "desc": "テキストデータの加工として文字列を抽出する方法をご紹介します。",
+        "desc": "テキストデータの加工として文字列を抽出する方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-Nxb3tjQ4yZ"
       },
       {
         "title": "Excelシリーズ: テキストデータの加工 - 置換する",
-        "desc": "テキストデータの加工として文字列を置換する方法をご紹介します。",
+        "desc": "テキストデータの加工として文字列を置換する方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-fjN8yXq7Yi"
       },
       {
+        "title": "Excelシリーズ: 行ごとに値を集計する方法",
+        "desc": "行ごとに値を集計する方法を紹介します。",
+        "url": "https://exploratory.io/note/exploratory/Excel-Mws5iVD2db"
+      },
+      {
+        "title": "Excelシリーズ: 複数の列をつなげて1つの列にまとめる方法",
+        "desc": "複数の列をつなげて1つの列にまとめる方法を紹介します。",
+        "url": "https://exploratory.io/note/exploratory/Excel-1-XqH4XFU6"
+      },
+      {
         "title": "Excelシリーズ: データを縦に伸びる「ロング型」に変換する方法",
-        "desc": "データを縦に伸びるロング型に変換する方法をご紹介します。",
+        "desc": "データを縦に伸びるロング型に変換する方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-bmQ6cUZ8xa"
       },
       {
+        "title": "Excelシリーズ: データを横に伸びる「ワイド型」に変換する方法",
+        "desc": "データを横に伸びるワイド型に変換する方法を紹介します。",
+        "url": "https://exploratory.io/note/exploratory/Excel-Nhu5pSs1hD"
+      },
+      {
+        "title": "Excelシリーズ: データの再現性と自動化",
+        "desc": "データの再現性と自動化について紹介します。",
+        "url": "https://exploratory.io/note/exploratory/Excel-bry7ngT3"
+      },
+      {
         "title": "Excelの時間データをインポートする方法",
-        "desc": "Excelの時間データをインポートする方法をご紹介します。",
+        "desc": "Excelの時間データをインポートする方法を紹介します。",
         "url": "https://exploratory.io/note/exploratory/Excel-pTO9zAp8"
       },
       {
         "title": "Excelの日付データ（44197）と記号と欠損値が混在している列を正しい日付型の列にする方法",
-        "desc": "Excelの日付データ（44197）列を正しい日付型の列にする方法をご紹介します。",
+        "desc": "Excelの日付データ（44197）列を正しい日付型の列にする方法を紹介します。",
         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-Hour-132-Excel-44197-dsj8RNM3WC"
       }
     ]
@@ -115,18 +140,18 @@
     ]
   },
   "seminar": {
-    "desc": "これまでのセミナーをご紹介します。",
+    "desc": "これまでのセミナーを紹介します。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%20tag%3AExcel&language=ja",
     "insights": [
       {
        "title": "Excelデータをインポートした時によくある問題と解決法",
-       "desc": "ExcelデータをExploratoryにインポートした時によくある問題を、どのように解決すればよいかをご紹介します。",
+       "desc": "ExcelデータをExploratoryにインポートした時によくある問題を、どのように解決すればよいかを紹介します。",
        "url": "https://exploratory.io/note/kanaugust/116-Excel-XZr2Qnv3wl"
       },
       {
         "title": "Excelでよく行う6つのタスクをExploratoryで行う方法",
-        "desc": "Excelでよく行うタスクを6つピックアップし、各機能をExploratoryでどのように解決するのかをご紹介します。",
+        "desc": "Excelでよく行うタスクを6つピックアップし、各機能をExploratoryでどのように解決するのかを紹介します。",
         "url": "https://exploratory.io/note/kanaugust/107-Excel-6-Exploratory-Ihv2HtP3yj"
       },
       {
