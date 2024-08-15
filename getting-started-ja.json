@@ -42,6 +42,58 @@
       ]
     },
     {
+      "title": "データラングリング",
+      "desc": "Exploratoryでデータラングリング（データの加工・整形）をする際に、よく使われる便利な機能を短時間で体験していただくためのハンズオン形式の使い方ガイドです。",
+      "insights": [
+        {
+         "title": "Part 1 - データ加工の基礎",
+         "desc": "Exploratoryでデータをラングリング（加工・整形）する際に、抑えておきたい一般的なデータの加工に関する便利な機能を体験いただきます。",
+         "url": "https://exploratory.io/note/exploratory/Part-1-NcV1tMa6"
+        },
+        {
+         "title": "Part 2 - データの持ち方",
+         "desc": "2つのデータの持ち方（ワイド型、ロング型）を自由自在に変換する方法を体験いただきます。",
+         "url": "https://exploratory.io/note/exploratory/Part-2-nwR7zEq2"
+        },
+        {
+         "title": "Part 3 - テキストデータの加工",
+         "desc": "テキストデータを加工して文字列を綺麗に整えたり、文字列に対して置換や抽出する際の便利な機能を体験いただきます。",
+         "url": "https://exploratory.io/note/exploratory/Part-3-XEO0GZp6"
+         },
+        {
+         "title": "Part 4 - ラングリングの便利な機能",
+         "desc": "このノートでは、「ステップのコピー」や「ブランチ」、「データの再現性」など、データラングリングする際に便利な機能を体験いただきます。",
+         "url": "https://exploratory.io/note/exploratory/Part-4-BIl1Oft3"
+       }
+      ]
+    },
+    {
+      "title": "時系列データ分析",
+      "desc": "時系列データの可視化や分析に関する様々なExploratoryの機能を体験していただくためのハンズオン形式の使い方ガイドです。",
+      "insights": [
+        {
+         "title": "Part 1 - 時系列データの加工と可視化",
+         "desc": "時系列データを使う際に知っていると便利なデータ型の紹介、日付データの変換方法、時系列データの可視化に関する便利な機能を体験いただきます。",
+         "url": "https://exploratory.io/note/exploratory/Part-1-duV4HYn8"
+        },
+        {
+         "title": "Part 2 - 表計算を使った可視化",
+         "desc": "時系列データでよく使用される「累積合計値」や「前年同月比」などの表計算の機能を体験いただきます。",
+         "url": "https://exploratory.io/note/exploratory/Part-2-Kfv4yYN5"
+        },
+        {
+          "title": "Part 3 - 時系列予測モデルを使った分析",
+          "desc": "Prophetというアルゴリズムを使った「時系列予測」モデルを使い、データの中にあるトレンドを分析する方法を体験いただきます。",
+          "url": "https://exploratory.io/note/exploratory/Part-3-gux0NVj3"
+         },
+        {
+         "title": "Part 4 - XmRチャートを使った分析",
+         "desc": "データを使ってビジネスを改善していくために使える、XmRチャートの作り方、解釈の仕方を体験いただきます。",
+         "url": "https://exploratory.io/note/exploratory/Part-4-XmR-VFg2Gny3"
+       }
+      ]
+    },
+    {
       "title": "アンケートデータの分析",
       "desc": "アンケートデータを分析する際に役立つExploratoryの機能という視点からのハンズオン形式の使い方ガイドです。",
       "insights": [
@@ -56,9 +108,14 @@
          "url": "https://exploratory.io/note/exploratory/Part2-Qam8VPQ1"
         },
         {
-         "title": "Part 3 - アンケートデータを使った因子分析",
-         "desc": "アンケートデータの回答の裏にあるモチベーションを探索するための「因子分析」を体験いただきます。",
-         "url": "https://exploratory.io/note/exploratory/3-gUt2UFK9"
+          "title": "Part 3 - アンケートデータを使った因子分析",
+          "desc": "アンケートデータの回答の裏にあるモチベーションを探索するための「因子分析」を体験いただきます。",
+          "url": "https://exploratory.io/note/exploratory/3-gUt2UFK9"
+        },
+        {
+         "title": "Part 4 - 回答の集計",
+         "desc": "アンケートデータを使って、ワイド型のデータをロング型に変換して回答のスコアを集計する方法を体験いただきます。",
+         "url": "https://exploratory.io/note/exploratory/Part4-kiF9cCl9"
        }
       ]
     },
