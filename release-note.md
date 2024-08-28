@@ -1,6 +1,59 @@
 # Release Note
 
 
+## 10.7
+
+Release on 8/29/2024.
+
+### New Features
+
+* Data Wrangling: Added an option to select whether to remove double quotes when exporting to CSV.
+* Data Wrangling: Added support for two types of comments - Author and Viewer.
+* Data Wrangling: Added support for using the Note Editor to enter comments.
+* Chart: Added support for date format settings when assigning a Date column to Repeat By.
+* Chart: Enhanced Number Chart to support displaying values from the previous period in sub-metrics.
+* Note: Now you can copy the URL for an H1/H2 header of the document by hovering the header text and clicking the link icon on a published note. 
+* Dashboard: Added an option to set the top margin for Text Panels.
+* Dashboard: Added support for titles in Text Panels, similar to Chart Panels.
+* Dashboard: Now you can create a link to open another page from the Link dialog. 
+* Dashboard/Note: Now it shows Author Comments when the logged-in user is the author of the insight.
+* Parameter: Added an option to set NULL in date-picker and slider parameters to return all values.
+* Parameter: Added support for inputting NA as a text input value.
+
+### Bug Fixes
+
+* Data Source: After importing a project from another user, “Run with Data Import” for the dashboard failed to reimport a parquet data frame on some occasions.
+* Data Wrangling: Data Source Reimport failed with TypeError: Cannot read properties of undefined (reading 'multivalued').
+* Data Wrangling: Long to Wide did not work when assigning an hms data type column to a value column.
+* Data Wrangling: Unit was ignored when converting hms data to numeric data type.
+* Analytics: Linear Regression / Logistic Regression: In the Effects tab, it should show "< 0.0001" if the P-value is less than 0.0001. 
+* Analytics: Survival Curve: Percentage values should show up in the Survival Table chart instead of ratio values. 
+* Analytics: Survival Curve: Summary tab should show the "Rows" and "Rows *(TRUE)" information even if you don't set a column to Color.
+* Chart: A "0%" difference from the previous period was displayed as "In,fin,ity%".
+* Chart: Boxplot: Even if you checked the "Include outliers" checkbox, the appropriate maximum value was not displayed. 
+* Chart: Number Chart showed unnecessary space below even when there was no sub-metric.
+* Chart: Pivot Table / Summarize Table: The "% of" Window Calculation should be applied to the totals. 
+* Chart: The time portion disappeared when changing the format of POSIXct type in Number charts.
+* Chart: When changing the marker to 'Line + Circle' it added unnecessary space at the right and the left sides.
+* Note: The 'plot' function in R Script Block didn't work inside the Note Editor.
+* Note: Adding a Code Block deleted images before the Code Block.
+* Note: Clicking the 'Number of Rows' dropdown caused the settings dialog to disappear.
+* Note: Could not reopen the same note immediately after closing it.
+* Note: Moving the cursor upwards did not select the image.
+* Note: Selecting text with Shift + Down only selected the image.
+* Note: When you published your note with the previous versions of Exploratory Desktop, if you didn't turn on the 'Data' and 'EDF' options, the 'Show Detail' option didn't show up on the published view even if you republished it with the latest version. 
+* Note: Dashboard: If you added a waterfall or visNetwork chart in an R code chunk and clicked the preview tab, it spawned a new preview window. It should show the preview under the preview tab.
+* Dashboard: Optimized R Script output size to better fit the available section.
+* Project: Sorting data frames by name didn't work as expected if a data frame name contained "0." at the beginning. 
+* Project: Opening a project showed the “EMFILE: too many open files, open” error once in a while. 
+* Project: The editing green lamp remained on even after leaving a team-published project.
+
+
+
+
+
+
+
 ## 10.6
 
 Release on 7/26/2024.
