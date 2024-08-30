@@ -30,6 +30,7 @@ Release on 8/29/2024.
 
 * Data Source: After importing a project from another user, “Run with Data Import” for the dashboard failed to reimport a parquet data frame on some occasions.
 
+
 * Data Wrangling: Create Calculation: When converting Japanese characters, the symbol "⍰" unexpectedly appears at the beginning of the resulting string.
 * Data Wrangling: Typing Japanese text may result in characters being repeated unexpectedly.
 * Data Wrangling: Data Source Reimport failed with TypeError: Cannot read properties of undefined (reading 'multivalued').
