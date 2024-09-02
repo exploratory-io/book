@@ -1,5 +1,5 @@
 {
-  "営業 / Sales": {
+  "sales": {
     "desc": "Salesや営業の現状をより正しく理解するために重要な様々な指標を紹介しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Sales%20Kpi%22&language=ja",
@@ -46,7 +46,7 @@
       }
     ]
   },
-  "SaaS / サブスクリプション": {
+  "saas": {
     "desc": "SaaS/サブスクリプション型ビジネスの現状をより正しく理解するために重要な様々な指標を紹介しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
@@ -123,7 +123,7 @@
       }
     ]
   },
-  "SaaS KPI のワークショップ": {
+  "saas-kpi": {
     "desc": "KPIの作り方や分析手法を実際に手を動かしながら学べる、1時間単位のオンラインワークショップの録画とスライドです。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-workshop&language=ja",
