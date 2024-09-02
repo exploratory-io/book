@@ -43,6 +43,11 @@
        "title": "#3 商談数 / 商談化率",
        "desc": "フォローアップした顧客において、どの程度の商談が発生したかの指標を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/FdG0fJk1"
+      },
+      {
+       "title": "#4 受注数 / 受注率",
+       "desc": "発生した商談において、どの程度の受注が発生したかの指標を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/FdG0fJk1"
       }
     ]
   },
