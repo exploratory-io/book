@@ -1,5 +1,5 @@
 {
-  "営業 / Sales": {
+  "sales": {
     "desc": "Salesや営業の現状をより正しく理解するために重要な様々な指標を紹介しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Sales%20Kpi%22&language=ja",
@@ -46,7 +46,7 @@
       }
     ]
   },
-  "SaaS / サブスクリプション": {
+  "saas": {
     "desc": "SaaS/サブスクリプション型ビジネスの現状をより正しく理解するために重要な様々な指標を紹介しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
@@ -120,6 +120,83 @@
        "title": "#13 ユニットエコノミクス",
        "desc": "SaaSでよく使われる指標のユニットエコノミクスをご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-KPI-jSg5ykK8rH"
+      }
+    ]
+  },
+  "SaaS KPI のワークショップ": {
+    "desc": "KPIの作り方や分析手法を実際に手を動かしながら学べる、1時間単位のオンラインワークショップの録画とスライドです。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-workshop&language=ja",
+    "insights": [
+      {
+       "title": "#1 - MRR、ネット・ニューMRR",
+       "desc": "サブスクリプション型ビジネスの現状をより正しく理解するための指標である、MRR（月間定期収益）、チャーン率、エクスパンション、ネット・レベニュー・リテンション率などの紹介と、それらの計算方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-1-SaaS-KPI-Part-1-JOI0SOR2xE"
+      },
+      {
+       "title": "#2 - チャーン、リテンション、ネット・レベニュー・リテンション",
+       "desc": "サブスクプション型のビジネスの決済データなどを使って、サブスクリプション型のビジネスに特有の指標を加工・集計する方法と、それらをダッシュボードにまとめて、モニターしていく方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-2-SaaS-KPI-Part-2-PLj5fUv4hf"
+      },
+      {
+       "title": "#3 - エンゲージメント Part 1 - DAU/MAU",
+       "desc": "コンバージョンやチャーンの先行指標である「エンゲージメント」というコンセプトを紹介し、Facebookが使い始めたことで有名になったエンゲージメント指標の1つであるDAU/MAUについてご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-3-Part-1-DAU-MAU-NgT7dry1dB"
+      },
+      {
+       "title": "#4 - エンゲージメント Part 2 - パワーユーザー・カーブ",
+       "desc": "コンバージョンを上げる、またはチャーンを減らすことに有効な施策を打つために、「エンゲージメント」をもとにユーザーをにセグメント分ける「パワーユーザー・カーブ」の計算と可視化の方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-4-Part-2-DMN9ely0Ik"
+      },
+      {
+       "title": "#5 - エンゲージメント Part 3 - RFV分析",
+       "desc": "ユーザーの「エンゲージメント」を測るRecency（直近の利用状況）、Frequency（利用頻度）、Volume（サービスやコンテンツの利用量）といった指標をもとにユーザーをにセグメントに分けるRFV分析をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-5-Part-3-RFV-CLJ4efS3jU"
+      },
+      {
+       "title": "#6 - コホート分析 Part 1 - レイヤーケーキ・チャート",
+       "desc": "MRR（月間定期収益）をユーザーの購読タイミングごとのグループ（コホート）に分けて可視化する、レイヤーケーキと言われるチャートを作成する方法をご紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-6-ckh8RBK2sL"
+      },
+      {
+       "title": "#7 - コホート分析 Part 2 - 生存分析",
+       "desc": "顧客のチャーンのトレンドを的確に理解する手法として、生存（サバイバル）分析のアルゴリズムを使ったコホート分析を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-7-Part-2-vlR7epa8Cv"
+      },
+      {
+       "title": "#8 -  CLV（顧客生涯価値）の計算",
+       "desc": "生存（サバイバル）分析のアルゴリズムを使って、よりビジネスの実態に見合った形でCLV（顧客生涯価値）を計算する方法を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-8-CLV-kGJ8ksH1mN"
+      },
+      {
+       "title": "#9 - NPS（ネット・プロモーター・スコア）の計算",
+       "desc": "SaaSの世界では当たり前になりつつある、プロダクトやサービスに対する顧客の満足度を測る指標のNPS（ネット・プロモーター・スコア）の概要と、その計算方法を紹介をします。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-9-NPS-HHq1Juj9zK"
+      },
+      {
+       "title": "#10 - アンケートデータのテキスト分析",
+       "desc": "自由記述のアンケートデータから、よく使われる単語やその組み合わせなどを可視化して分析する手法を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-10-XkN1pjT8wD"
+      },
+      {
+       "title": "#11 - CES（カスタマー・エフォート・スコア）",
+       "desc": "プロダクトやサービスの改善にあたって、より具体的なアクションを実行していくためによく使われるCES（顧客努力指標）という指標を、NPSとの使い分けを踏まえて紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-CES-jWm2eBb0AK"
+      },
+      {
+       "title": "#12 - SaaSビジネス最重要KPI トップ5",
+       "desc": "SaaSのビジネスの最重要KPI（重要指標）を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-12-SaaS-KPI-5-jvv9GHl3Qe"
+      },
+      {
+       "title": "#13 - SaaSビジネスのグロースKPI",
+       "desc": "SaaSビジネスの成長を測るための4つの指標とその計算方法を紹介します。Product-Led-Growthに関する指標も紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-SaaS-KPI-bxB5pEg4db"
+      },
+      {
+       "title": "#14 - 生存分析のためのデータの作り方",
+       "desc": "支払いやアクセスログのデータからチャーンを特定し、生存分析ためのデータを作成する方法を紹介します。",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-RbP0Usg7PL"
       }
     ]
   },
