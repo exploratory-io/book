@@ -12,32 +12,37 @@
       {
        "title": "#2 顧客あたりの売上",
        "desc": "売上を増やすことを考えるときに重要な顧客あたり売上を紹介いたします。",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-2-MRR-QMR7lZl6oZ"
+       "url": "https://exploratory.io/note/exploratory/rhE0dEM4"
       },
       {
        "title": "#3 顧客獲得コスト",
        "desc": "新規顧客の獲得にかかったコストである、顧客獲得コストを紹介いたします。",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-3-WId2mch9hL"
+       "url": "https://exploratory.io/note/exploratory/zYM4viN9"
       },
       {
        "title": "#4 利益、利益率",
        "desc": "あらゆる営業活動の原資となる利益/利益率を紹介いたします。",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-4-QNF3YKi9eS"
+       "url": "https://exploratory.io/note/exploratory/Pwi8vCB6"
+      },
+      {
+      "title": "#5 F2転換率",
+      "desc": "新たに顧客になった方のうち、2回目の購買に至った顧客の割合の指標であるF2転換率を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/F2-DCG0Siw5"
       },
       {
       "title": "#1 リード数",
       "desc": "顧客が購買に至る際の最初の段階である見込み顧客（リード）数を紹介いたします。",
-      "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-6-Expansion-Contraction-Nvm3MTp5PB"
+      "url": "https://exploratory.io/note/exploratory/Euf4Job0"
       },
       {
        "title": "#2 フォロー完了数 / フォロー完了率",
        "desc": "見込み顧客は、営業による様々なフォローアップを経て顧客になります。そこで、顧客のフォローアップに関する指標を紹介いたします。",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-KPI-sDn0wxG0fN"
+       "url": "https://exploratory.io/note/exploratory/cyB1LQf3"
       },
       {
        "title": "#3 商談数 / 商談化率",
        "desc": "フォローアップした顧客において、どの程度の商談が発生したかの指標を紹介いたします。",
-       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-7-CLV-Muq9KjY9qk"
+       "url": "https://exploratory.io/note/exploratory/FdG0fJk1"
       }
     ]
   },
