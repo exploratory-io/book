@@ -1,11 +1,11 @@
 {
   "sales": {
-    "desc": "Salesや営業の現状をより正しく理解するために重要な様々な指標を紹介しています。",
+    "desc": "Salesや営業の現状をより正しく理解するための重要な指標を紹介しています。",
     "moreButtonText": "もっと見る",
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Sales%20Kpi%22&language=ja",
     "insights": [
       {
-       "title": "#1 営業指標 - 売上（新規顧客・既存顧客）",
+       "title": "#1 売上（新規顧客・既存顧客）",
        "desc": "売上を増やすことを考えるときに重要な新規顧客からの売上、既存顧客からの売上を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/ckd6WjJ2"
       },
@@ -47,7 +47,66 @@
       {
        "title": "#4 受注数 / 受注率",
        "desc": "発生した商談において、どの程度の受注が発生したかの指標を紹介いたします。",
-       "url": "https://exploratory.io/note/exploratory/FdG0fJk1"
+       "url": "https://exploratory.io/note/exploratory/kfj1sTz8"
+      }
+    ]
+  },
+  "marketing": {
+    "desc": "マーケティング活動の現状をより正しく理解するための重要な指標を紹介しています。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Marketing%20Kpi%22&language=ja",
+    "insights": [
+      {
+       "title": "#1 ブランド認知率",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/gCb6EEV7"
+      },
+      {
+       "title": "#2 トライアル数",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/aLK7ytp2"
+      },
+      {
+       "title": "#3 コンバージョン率",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/wKY6AoO3"
+      },
+      {
+       "title": "#4 紹介数",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/nBV9wBb7"
+      },
+      {
+      "title": "#5 NPS",
+      "desc": "",
+      "url": "https://exploratory.io/note/exploratory/NPS-Xcf9XNW7"
+      }
+    ]
+  },
+  "hr": {
+    "desc": "人事の活動の現状をより正しく理解するための重要な指標を紹介しています。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/insight?q=hr%20kpi&language=ja",
+    "insights": [
+      {
+       "title": "#1 平均勤続年数",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/CsF2xbW2"
+      },
+      {
+       "title": "#2 退職（生存）率",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/ERO9ILV7"
+      },
+      {
+       "title": "#3 休職率",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/zRR1CXz4"
+      },
+      {
+       "title": "#4 eNPS",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/eNPS-IdQ4kwY2"
       }
     ]
   },
