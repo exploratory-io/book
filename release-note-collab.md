@@ -1,5 +1,51 @@
 # Release Note
 
+## 10.3
+
+Released on 9/4/2024
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-10.3.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-10.3.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+
+### Enhancements
+
+* Content: Now it shows comments on published charts and analytics. 
+* Content: Now you can enable/disable the Parameter for the URL Link.
+* Content: Now you can protect the URL Link by password. 
+
+
+* Dashboard: Added a support for showing a description.
+
+
+* Parameter: Added an option to set NULL in date-picker and slider parameters to return all values.
+* Parameter: Added support for inputting NA as a text input value.
+* Parameter: Added support for the "Enable re-importing data" option, allowing you to control whether viewer users are permitted to re-import data.
+* Parameter: Display the 'Show Parameter' button when an insight includes refreshable data sources enabling users to run the insight with data import directly from the Parameter pane.
+
+
+* Schedule: Now you can specify the email address to deliver the scheduling error notification.
+
+
+### Bug Fixes
+
+* Content: Delete button should show all the time in the Version History dialog. 
+
+* Admin: IP filter for the Admin UI should support IP range expression.
+
+
+* Dashboard: Cascading Parameter did not work for "Select All" for empty case. 
+* Dashboard: Parameter pane was shown by default even if the dashboards did not include parameter.
+
+
+* Parameter: Run with Data Import failed when merged data frames were used in the insight.
+
+
+
+
+
 ## 10.2
 
 Released on 7/26/2024
