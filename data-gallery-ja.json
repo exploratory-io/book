@@ -151,6 +151,11 @@
           "url": "https://exploratory.io/note/exploratory/Google-BigQuery-ttA7gqG9"
         },
         {
+          "title": "よくあるGoogle Big Queryの問題と解決法",
+          "desc": "Google BigQueryでよくある問題とその解決方法についてご紹介します。",
+          "url": "https://exploratory.io/note/exploratory/Google-BigQuery-bXQ2fng4"
+        },
+        {
           "title": "HP Vertica",
           "desc": "HP Verticaに接続してデータを読みこむ方法をご紹介します。",
           "url": "https://exploratory.io/note/exploratory/HP-Vertica-yTF3rcb6"
