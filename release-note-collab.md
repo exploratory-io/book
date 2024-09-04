@@ -43,9 +43,6 @@ Released on 9/4/2024
 * Parameter: Run with Data Import failed when merged data frames were used in the insight.
 
 
-
-
-
 ## 10.2
 
 Released on 7/26/2024
