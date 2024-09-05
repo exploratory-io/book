@@ -58,67 +58,67 @@
     "insights": [
       {
        "title": "ブランド認知率",
-       "desc": "",
+       "desc": "顧客の購買サイクルの「認知」フェーズの重要指標のブランド認知率を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/gCb6EEV7"
       },
       {
        "title": "トライアル数",
-       "desc": "",
+       "desc": "顧客の購買サイクルの「比較検討・評価」フェーズの重要指標のトライアル数を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/aLK7ytp2"
       },
       {
        "title": "コンバージョン率",
-       "desc": "",
+       "desc": "顧客の購買サイクルの「トライアル」フェーズの重要指標のコンバージョン率を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/wKY6AoO3"
       },
       {
        "title": "紹介数",
-       "desc": "",
+       "desc": "顧客の購買サイクルの「ロイヤルティ」フェーズの重要指標の紹介数を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/nBV9wBb7"
       },
       {
       "title": "NPS",
-      "desc": "",
+      "desc": "顧客の購買サイクルの「ロイヤルティ」フェーズの重要指標のNPSを紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/NPS-Xcf9XNW7"
       },
       {
       "title": "クリック率（CTR）",
-      "desc": "",
+      "desc": "検索型のオンライン広告の説明文やテキストが、顧客にとって魅力的になっているかを測ることに役立つクリック率を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/CTR-Tta9gSW5"
       },
       {
       "title": "クリック単価（CPC）",
-      "desc": "",
+      "desc": "検索型のオンライン広告の費用を理解するときに最も重要なクリック単価を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/CPC-ncX1Mjq0"
       },
       {
       "title": "コンバージョン率",
-      "desc": "",
+      "desc": "オンライン広告をクリックした顧客のうち、商品やサービスに至った顧客の割合であるコンバ-ジョン率を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/DhX2uwP4"
       },
       {
       "title": "直帰率",
-      "desc": "",
+      "desc": "クリックされたオンライン広告のパフォーマンスを測る直帰率を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/GxU9MnZ7"
       },
       {
       "title": "広告費用対効果（ROAS）",
-      "desc": "",
+      "desc": "広告に費やした費用に対してどの程度の成果を得られたかを測る効率の指標である、広告費用対効果（ROAS）を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/ROAS-VoP5PPS1"
       },
       {
       "title": "コンバージョン単価（CPA）",
-      "desc": "",
+      "desc": "売上をあげることが目的ではない、オンライン広告などのパフォーマンスを測る指標のコンバージョン単価を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/CPA-oAK9yIV2"
       },
       {
       "title": "利益",
-      "desc": "",
+      "desc": "ビジネスやマーケティング活動の原資となる利益を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/ZMq8NOA9"
       },
       {
       "title": "正味現在価値（NPV）",
-      "desc": "",
+      "desc": "未来のお金の価値を、現在のお金の価値に変換した指標の正味現在価値（NPV）を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/FCa9UnM4"
       }
     ]
@@ -130,22 +130,22 @@
     "insights": [
       {
        "title": "平均勤続年数",
-       "desc": "",
+       "desc": "自社の従業員が平均して、どの程度の期間働いているかを測る平均勤続年数を紹介しています。",
        "url": "https://exploratory.io/note/exploratory/CsF2xbW2"
       },
       {
        "title": "退職（生存）率",
-       "desc": "",
+       "desc": "従業員の退職率を正しく認識するための指標の生存率を紹介しています。",
        "url": "https://exploratory.io/note/exploratory/ERO9ILV7"
       },
       {
        "title": "休職率",
-       "desc": "",
+       "desc": "休職している従業員の割合である休職率を紹介しています。",
        "url": "https://exploratory.io/note/exploratory/zRR1CXz4"
       },
       {
        "title": "eNPS",
-       "desc": "",
+       "desc": "従業員の満足度やロイヤルティを測るための指標のeNPSを紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/eNPS-IdQ4kwY2"
       }
     ]
@@ -157,22 +157,22 @@
     "insights": [
       {
        "title": "リテンション率",
-       "desc": "",
+       "desc": "既存顧客を維持できている割合のリテンション率を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/yVQ1IME9"
       },
       {
        "title": "オンボーディング率",
-       "desc": "",
+       "desc": "既存顧客のうち、オンボーディングが成功、あるいは完了した割合のオンボーディング率を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/jbE0ppE2"
       },
       {
        "title": "タイム･トゥ・バリュー",
-       "desc": "",
+       "desc": "顧客が自社のサービスの価値を見出すまでにかかった平均的な時間であるタイム・トゥ・バリューを紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/QPT3SlK2"
       },
       {
        "title": "ヘルススコア",
-       "desc": "",
+       "desc": "顧客が自社の製品やサービスをどれだけ効果的に活用しているかを評価するヘルススコアを紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/yVQ1IME9"
       }
     ]
@@ -184,71 +184,71 @@
     "insights": [
       {
        "title": "SaaS 最重要 KPI まとめ",
-       "desc": "SaaSの最重要KPIをまとめてご紹介します。",
+       "desc": "SaaSの最重要KPIをまとめて紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-MIN6ydv8aF"
       },
       {
-       "title": "#1 MRR (月間定期収益)",
-       "desc": "収益に関わる指標のMRR（月間定期収益）、ARR（年間定期収益）、ニューMRRをご紹介します。",
+       "title": "MRR (月間定期収益)",
+       "desc": "収益に関わる指標のMRR（月間定期収益）、ARR（年間定期収益）、ニューMRRを紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-2-MRR-QMR7lZl6oZ"
       },
       {
-       "title": "#2 コンバージョン",
-       "desc": "顧客の獲得（コンバージョン）に関する指標をご紹介します。",
+       "title": "コンバージョン",
+       "desc": "顧客の獲得（コンバージョン）に関する指標を紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-3-WId2mch9hL"
       },
       {
-       "title": "#3 チャーン & リテンション",
-       "desc": "顧客の解約やサービスの継続に関わる指標のカスタマー・チャーン率、カスタマーリテンション率、ネット・ニューMRRをご紹介します。",
+       "title": "チャーン & リテンション",
+       "desc": "顧客の解約やサービスの継続に関わる指標のカスタマー・チャーン率、カスタマーリテンション率、ネット・ニューMRRを紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-4-QNF3YKi9eS"
       },
       {
-      "title": "#4 エクスパンション & コントラクション",
-      "desc": "プランのアップグレードやダウングレードに関わる指標のエクスパンションMRR、コントラクションMRR、ネット・ニューMRRをご紹介します。",
+      "title": "エクスパンション & コントラクション",
+      "desc": "プランのアップグレードやダウングレードに関わる指標のエクスパンションMRR、コントラクションMRR、ネット・ニューMRRを紹介します。",
       "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-6-Expansion-Contraction-Nvm3MTp5PB"
       },
       {
-       "title": "#5 ネット・レベニュー・リテンション",
-       "desc": "収益の効率性を計る指標のネット・レベニュー・リテンション率をご紹介します。",
+       "title": "ネット・レベニュー・リテンション",
+       "desc": "収益の効率性を計る指標のネット・レベニュー・リテンション率を紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-KPI-sDn0wxG0fN"
       },
       {
-       "title": "#6 CLV（顧客生涯価値）",
-       "desc": "1人の顧客から得られる通算の収益の指標であるCLV（顧客生涯価値）をご紹介します。",
+       "title": "CLV（顧客生涯価値）",
+       "desc": "1人の顧客から得られる通算の収益の指標であるCLV（顧客生涯価値）を紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-Vol-7-CLV-Muq9KjY9qk"
       },
       {
-       "title": "#7 MRRリテンション率",
-       "desc": "収益をどれだけ維持できているかの指標であるMRRリテンション率をご紹介します。",
+       "title": "MRRリテンション率",
+       "desc": "収益をどれだけ維持できているかの指標であるMRRリテンション率を紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-KPI-MRR-cqZ3yRn8um"
       },
       {
-       "title": "#8 MRRエクスパンション率",
-       "desc": "プランのアップグレードに関する指標であるMRRエクスパンション率をご紹介します。",
+       "title": "MRRエクスパンション率",
+       "desc": "プランのアップグレードに関する指標であるMRRエクスパンション率を紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-KPI-MRR-Zio6SdZ8wW"
       },
       {
-       "title": "#9 ネットMRRチャーン率",
-       "desc": "既存顧客からの収益をどの程度失っているかを表した指標のMRRチャーン率をご紹介します。",
+       "title": "ネットMRRチャーン率",
+       "desc": "既存顧客からの収益をどの程度失っているかを表した指標のMRRチャーン率を紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-KPI-MRR-Xhx7HMS8bL"
       },
       {
-       "title": "#10 クイックレシオ",
-       "desc": "収益の成長の効率性を測る指標であるクイックレシオをご紹介します。",
+       "title": "クイックレシオ",
+       "desc": "収益の成長の効率性を測る指標であるクイックレシオを紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-KPI-Quick-Ratio-KTq1Neu2Qj"
       },
       {
-       "title": "#11 ARPU（1ユーザーあたりの平均収益）",
-       "desc": "1ユーザーあたりの平均収益であるARPUをご紹介します。",
+       "title": "ARPU（1ユーザーあたりの平均収益）",
+       "desc": "1ユーザーあたりの平均収益であるARPUを紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-KPI-ARPU-FXU3IeK0bj"
       },
       {
-       "title": "#12 ペイバック・ピリオド",
+       "title": "ペイバック・ピリオド",
        "desc": "顧客獲得にかけた費用をどの程度の期間で回収できるかの指標であるペイバック・ピリオドを紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-KPI-yEv9uir5eZ"
       },
       {
-       "title": "#13 ユニットエコノミクス",
+       "title": "ユニットエコノミクス",
        "desc": "SaaSでよく使われる指標のユニットエコノミクスをご紹介します。",
        "url": "https://exploratory.io/note/BWz1Bar4JF/SaaS-KPI-jSg5ykK8rH"
       }
