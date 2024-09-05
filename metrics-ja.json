@@ -5,47 +5,47 @@
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Sales%20Kpi%22&language=ja",
     "insights": [
       {
-       "title": "#1 売上（新規顧客・既存顧客）",
+       "title": "売上（新規顧客・既存顧客）",
        "desc": "売上を増やすことを考えるときに重要な新規顧客からの売上、既存顧客からの売上を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/ckd6WjJ2"
       },
       {
-       "title": "#2 顧客あたりの売上",
+       "title": "顧客あたりの売上",
        "desc": "売上を増やすことを考えるときに重要な顧客あたり売上を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/rhE0dEM4"
       },
       {
-       "title": "#3 顧客獲得コスト",
+       "title": "顧客獲得コスト",
        "desc": "新規顧客の獲得にかかったコストである、顧客獲得コストを紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/zYM4viN9"
       },
       {
-       "title": "#4 利益、利益率",
+       "title": "利益、利益率",
        "desc": "あらゆる営業活動の原資となる利益/利益率を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/Pwi8vCB6"
       },
       {
-      "title": "#5 F2転換率",
+      "title": "F2転換率",
       "desc": "新たに顧客になった方のうち、2回目の購買に至った顧客の割合の指標であるF2転換率を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/F2-DCG0Siw5"
       },
       {
-      "title": "#1 リード数",
+      "title": "リード数",
       "desc": "顧客が購買に至る際の最初の段階である見込み顧客（リード）数を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/Euf4Job0"
       },
       {
-       "title": "#2 フォロー完了数 / フォロー完了率",
+       "title": "フォロー完了数 / フォロー完了率",
        "desc": "見込み顧客は、営業による様々なフォローアップを経て顧客になります。そこで、顧客のフォローアップに関する指標を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/cyB1LQf3"
       },
       {
-       "title": "#3 商談数 / 商談化率",
+       "title": "商談数 / 商談化率",
        "desc": "フォローアップした顧客において、どの程度の商談が発生したかの指標を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/FdG0fJk1"
       },
       {
-       "title": "#4 受注数 / 受注率",
+       "title": "受注数 / 受注率",
        "desc": "発生した商談において、どの程度の受注が発生したかの指標を紹介いたします。",
        "url": "https://exploratory.io/note/exploratory/kfj1sTz8"
       }
@@ -57,56 +57,123 @@
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Marketing%20Kpi%22&language=ja",
     "insights": [
       {
-       "title": "#1 ブランド認知率",
+       "title": "ブランド認知率",
        "desc": "",
        "url": "https://exploratory.io/note/exploratory/gCb6EEV7"
       },
       {
-       "title": "#2 トライアル数",
+       "title": "トライアル数",
        "desc": "",
        "url": "https://exploratory.io/note/exploratory/aLK7ytp2"
       },
       {
-       "title": "#3 コンバージョン率",
+       "title": "コンバージョン率",
        "desc": "",
        "url": "https://exploratory.io/note/exploratory/wKY6AoO3"
       },
       {
-       "title": "#4 紹介数",
+       "title": "紹介数",
        "desc": "",
        "url": "https://exploratory.io/note/exploratory/nBV9wBb7"
       },
       {
-      "title": "#5 NPS",
+      "title": "NPS",
       "desc": "",
       "url": "https://exploratory.io/note/exploratory/NPS-Xcf9XNW7"
+      },
+      {
+      "title": "クリック率（CTR）",
+      "desc": "",
+      "url": "https://exploratory.io/note/exploratory/CTR-Tta9gSW5"
+      },
+      {
+      "title": "クリック単価（CPC）",
+      "desc": "",
+      "url": "https://exploratory.io/note/exploratory/CPC-ncX1Mjq0"
+      },
+      {
+      "title": "コンバージョン率",
+      "desc": "",
+      "url": "https://exploratory.io/note/exploratory/DhX2uwP4"
+      },
+      {
+      "title": "直帰率",
+      "desc": "",
+      "url": "https://exploratory.io/note/exploratory/GxU9MnZ7"
+      },
+      {
+      "title": "広告費用対効果（ROAS）",
+      "desc": "",
+      "url": "https://exploratory.io/note/exploratory/ROAS-VoP5PPS1"
+      },
+      {
+      "title": "コンバージョン単価（CPA）",
+      "desc": "",
+      "url": "https://exploratory.io/note/exploratory/CPA-oAK9yIV2"
+      },
+      {
+      "title": "利益",
+      "desc": "",
+      "url": "https://exploratory.io/note/exploratory/ZMq8NOA9"
+      },
+      {
+      "title": "正味現在価値（NPV）",
+      "desc": "",
+      "url": "https://exploratory.io/note/exploratory/FCa9UnM4"
       }
     ]
   },
   "hr": {
     "desc": "人事の活動の現状をより正しく理解するための重要な指標を紹介しています。",
     "moreButtonText": "もっと見る",
-    "moreButtnUrl": "https://exploratory.io/insight?q=hr%20kpi&language=ja",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag:%22Hr%20Kpi%22",
     "insights": [
       {
-       "title": "#1 平均勤続年数",
+       "title": "平均勤続年数",
        "desc": "",
        "url": "https://exploratory.io/note/exploratory/CsF2xbW2"
       },
       {
-       "title": "#2 退職（生存）率",
+       "title": "退職（生存）率",
        "desc": "",
        "url": "https://exploratory.io/note/exploratory/ERO9ILV7"
       },
       {
-       "title": "#3 休職率",
+       "title": "休職率",
        "desc": "",
        "url": "https://exploratory.io/note/exploratory/zRR1CXz4"
       },
       {
-       "title": "#4 eNPS",
+       "title": "eNPS",
        "desc": "",
        "url": "https://exploratory.io/note/exploratory/eNPS-IdQ4kwY2"
+      }
+    ]
+  },
+  "cs": {
+    "desc": "カスタマーサクセスの活動の現状をより正しく理解するための重要な指標を紹介しています。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag:%22Customer%20Success%20Kpi%22",
+    "insights": [
+      {
+       "title": "リテンション率",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/yVQ1IME9"
+      },
+      {
+       "title": "オンボーディング率",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/jbE0ppE2"
+      },
+      {
+       "title": "タイム･トゥ・バリュー",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/QPT3SlK2"
+      },
+      {
+       "title": "ヘルススコア",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/yVQ1IME9"
       }
     ]
   },
