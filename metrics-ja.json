@@ -120,6 +120,16 @@
       "title": "正味現在価値（NPV）",
       "desc": "未来のお金の価値を、現在のお金の価値に変換した指標の正味現在価値（NPV）を紹介いたします。",
       "url": "https://exploratory.io/note/exploratory/FCa9UnM4"
+      },
+      {
+      "title": "内部収益率（IRR）",
+      "desc": "利益を現在の価値に換算したうえで、検討している施策から、どの程度のリターンが得られるのか指標である内部収益率（IRR）を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/IRR-jua7Yva3"
+      },
+      {
+      "title": "投資回収期間（ペイバック・ピリオド）",
+      "desc": "投資した費用を、回収した利益が上回るタイミングの指標の投資回収期間（ペイバック・ピリオド）を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/lEg1eIO0"
       }
     ]
   },
