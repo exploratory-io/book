@@ -5,6 +5,16 @@
       "desc": "マーケティング業界やマーケティング担当者様の活用事例をご紹介します。",
       "insights": [
         {
+         "title": "立地特性・競合データを組み合わせたデジタルマーケティングの分析および可視化",
+         "desc": "ユーザー会#31の株式会社free web hope様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-free-web-hope-NLS0orp4"
+        },
+        {
+         "title": "SQLクエリのパラメーター化によるデータの民主化",
+         "desc": "ユーザー会#31の株式会社DECENCIA様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/SQL-by-DECENCIA-OSC7dJb0"
+        },
+        {
          "title": "デジタルマーケティング施策におけるPDCAサイクルの効率化",
          "desc": "データサイエンス勉強会#28の株式会社ビューカード様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-GxQ4mtj9Bm"
@@ -81,6 +91,26 @@
       "desc": "コンサルティング業界の活用事例をご紹介します。",
       "insights": [
         {
+         "title": "立地特性・競合データを組み合わせたデジタルマーケティングの分析および可視化",
+         "desc": "ユーザー会#31の株式会社free web hope様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-free-web-hope-NLS0orp4"
+        },
+        {
+         "title": "多変量解析とテキスト分析を組み合わせた顧客満足度向上施策の提案",
+         "desc": "ユーザー会#31の日本電気株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-Uih3pVh3"
+        },
+        {
+         "title": "ECサイトの購入者データを使ったユーザー分析",
+         "desc": "データサイエンス勉強会#30の株式会社エートゥジェイ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/EC-by-DUV7gTs6OL"
+        },
+        {
+         "title": "Exploratoryの社内展開を通じた、データサイエンス民主化に向けたチャレンジ",
+         "desc": "データサイエンス勉強会#30の株式会社ヒューマンバリュー様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-by-gsX4vUG7no"
+        },
+        {
          "title": "ビジュアル・コミュニケーションツールとしてのExploratoryの活用",
          "desc": "データサイエンス勉強会#24の株式会社ADKマーケティング・ソリューションズ様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/24-Exploratory-jnC9vEJ1"
@@ -153,6 +183,11 @@
        "desc": "ウェブサービス業界の活用事例をご紹介します。",
        "insights": [
         {
+         "title": "LDA（トピックモデル）で顧客の閲読記事をもとに顧客の興味をジャンル分け",
+         "desc": "ユーザー会#31の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/LDA-by-trw6xxp6"
+        },
+        {
          "title": "NPSアンケートでサービス改善項目を炙り出す～アクションドライバーチャート～",
          "desc": "データサイエンス勉強会#30の朝日新聞社様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/NPS-by-HZC1Fbr6Dd"
@@ -193,6 +228,11 @@
        "title": "SaaS・サブスクリプション",
        "desc": "SaaS業界やサブスクリプション型ビジネスにおける活用事例をご紹介します。",
        "insights": [
+        {
+         "title": "LDA（トピックモデル）で顧客の閲読記事をもとに顧客の興味をジャンル分け",
+         "desc": "ユーザー会#31の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/LDA-by-trw6xxp6"
+        },
         {
          "title": "NPSアンケートでサービス改善項目を炙り出す～アクションドライバーチャート～",
          "desc": "データサイエンス勉強会#30の朝日新聞社様のご発表内容となります。",
@@ -271,6 +311,11 @@
        "desc": "製造業における活用事例をご紹介します。",
        "insights": [
         {
+         "title": "SQLクエリのパラメーター化によるデータの民主化",
+         "desc": "ユーザー会#31の株式会社DECENCIA様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/SQL-by-DECENCIA-OSC7dJb0"
+        },
+        {
          "title": "ホステッド・サーバーを軸とした データサイエンス・ソリューションの開発",
          "desc": "データサイエンス勉強会#29の株式会社ホンダコムテック様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-bXz2gnX7wm"
@@ -306,6 +351,11 @@
        "title": "サポート",
        "desc": "サポート領域における活用事例をご紹介します。",
        "insights": [
+        {
+         "title": "多変量解析とテキスト分析を組み合わせた顧客満足度向上施策の提案",
+         "desc": "ユーザー会#31の日本電気株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-Uih3pVh3"
+        },
          {
           "title": "自動車トラブルと気象条件などの探索的データ分析",
           "desc": "データサイエンス勉強会#23の株式会社プレステージ・インターナショナル様のご発表内容となります。",
@@ -327,6 +377,11 @@
        "title": "EC",
        "desc": "EC領域における活用事例をご紹介します。",
        "insights": [
+        {
+         "title": "ECサイトの購入者データを使ったユーザー分析",
+         "desc": "データサイエンス勉強会#30の株式会社エートゥジェイ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/EC-by-DUV7gTs6OL"
+        },
          {
           "title": "リピーターを増やすための顧客セグメンテーション分析",
           "desc": "データサイエンス勉強会#20の日本成長投資アライアンス株式会社様のご発表内容となります。",
@@ -370,6 +425,11 @@
        "title": "人事",
        "desc": "人事領域における活用事例をご紹介します。",
        "insights": [
+        {
+         "title": "クラスター分析を活用した人材育成・研修の最適化",
+         "desc": "ユーザー会#31の株式会社アップバリュー様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-EQn7EPg8"
+        },
         {
          "title": "Data Informed な健康経営の試行錯誤Part2",
          "desc": "データサイエンス勉強会#30の株式会社サンホシスコ様のご発表内容となります。",
@@ -416,6 +476,21 @@
        "title": "教育機関",
        "desc": "大学などの教育機関における活用事例をご紹介します。",
        "insights": [
+         {
+          "title": "Exploratoryによる労働者・消費者データの分析",
+          "desc": "ユーザー会#32の神田外語大学様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-by-qYT1rrz0"
+         },
+         {
+          "title": "Exploratoryを使った地理情報の可視化の民主化",
+          "desc": "ユーザー会#31の中央大学様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-by-KCS0xoB7"
+         },
+         {
+          "title": "国勢調査データにおける学歴不詳の分析：Exploratoryを用いた可視化手法",
+          "desc": "ユーザー会#31の横浜市立大学様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-by-pSH8BaD4"
+         },
          {
           "title": "ExploratoryとRによる全学データサイエンス教育",
           "desc": "「学校からはじまるデータサイエンスの民主化」セミナー#1の中央大学様のご発表内容となります。",
