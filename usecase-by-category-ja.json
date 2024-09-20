@@ -5,6 +5,11 @@
       "desc": "探索的分析の事例を紹介します。",
       "insights": [
         {
+         "title": "LDA（トピックモデル）で顧客の閲読記事をもとに顧客の興味をジャンル分け",
+         "desc": "ユーザー会#31の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/LDA-by-trw6xxp6"
+        },
+        {
          "title": "主成分分析を用いた生活者意識の全体的な傾向の把握",
          "desc": "データサイエンス勉強会#25の株式会社博報堂様のご発表内容となります。主成分分析を使って、データから得られる「発見」をクリエティブに要約する方法をご発表いただきました。",
          "url": "https://exploratory.io/note/exploratory/25-Sbi2VHb3"
@@ -66,6 +71,21 @@
       "title": "機械学習",
       "desc": "回帰分析や機会学習のアルゴリズムの活用事例を紹介します。",
       "insights": [
+        {
+         "title": "立地特性・競合データを組み合わせたデジタルマーケティングの分析および可視化",
+         "desc": "ユーザー会#31の株式会社free web hope様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-free-web-hope-NLS0orp4"
+        },
+        {
+         "title": "多変量解析とテキスト分析を組み合わせた顧客満足度向上施策の提案",
+         "desc": "ユーザー会#31の日本電気株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-Uih3pVh3"
+        },
+        {
+         "title": "クラスター分析を活用した人材育成・研修の最適化",
+         "desc": "ユーザー会#31の株式会社アップバリュー様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-EQn7EPg8"
+        },
         {
          "title": "Data Informed な健康経営の試行錯誤Part2",
          "desc": "データサイエンス勉強会#30の株式会社サンホシスコ様のご発表内容となります。",
@@ -230,6 +250,16 @@
       "desc": "テキスト分析の事例を紹介します。",
       "insights": [
         {
+         "title": "LDA（トピックモデル）で顧客の閲読記事をもとに顧客の興味をジャンル分け",
+         "desc": "ユーザー会#31の朝日新聞社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/LDA-by-trw6xxp6"
+        },
+        {
+         "title": "多変量解析とテキスト分析を組み合わせた顧客満足度向上施策の提案",
+         "desc": "ユーザー会#31の日本電気株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-Uih3pVh3"
+        },
+        {
          "title": "トピックモデル分析を活用した問合せ業務の効率化",
          "desc": "データサイエンス勉強会#23の株式会社LIXIL様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-LIXIL-odg2vFc4"
@@ -245,6 +275,16 @@
       "title": "アンケートデータ分析",
       "desc": "アンケートデータ分析の事例を紹介します",
       "insights": [
+        {
+         "title": "多変量解析とテキスト分析を組み合わせた顧客満足度向上施策の提案",
+         "desc": "ユーザー会#31の日本電気株式会社様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-Uih3pVh3"
+        },
+        {
+         "title": "クラスター分析を活用した人材育成・研修の最適化",
+         "desc": "ユーザー会#31の株式会社アップバリュー様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/by-EQn7EPg8"
+        },
         {
          "title": "NPSアンケートでサービス改善項目を炙り出す～アクションドライバーチャート～",
          "desc": "データサイエンス勉強会#30の朝日新聞社様のご発表内容となります。",
@@ -453,6 +493,11 @@
       "desc": "データラングリングや分析の再現性に関する事例を紹介します。",
       "insights": [
         {
+         "title": "ECサイトの購入者データを使ったユーザー分析",
+         "desc": "データサイエンス勉強会#30の株式会社エートゥジェイ様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/EC-by-DUV7gTs6OL"
+        },
+        {
          "title": "デジタルマーケティング施策におけるPDCAサイクルの効率化",
          "desc": "データサイエンス勉強会#28の株式会社ビューカード様のご発表内容となります。",
          "url": "https://exploratory.io/note/exploratory/by-GxQ4mtj9Bm"
@@ -534,6 +579,16 @@
       "title": "データの民主化",
       "desc": "データ分析に関するコミュニケーションにおける活用事例を紹介します。",
       "insights": [
+        {
+         "title": "SQLクエリのパラメーター化によるデータの民主化",
+         "desc": "ユーザー会#31の株式会社DECENCIA様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/SQL-by-DECENCIA-OSC7dJb0"
+        },
+        {
+         "title": "Exploratoryの社内展開を通じた、データサイエンス民主化に向けたチャレンジ",
+         "desc": "データサイエンス勉強会#30の株式会社ヒューマンバリュー様のご発表内容となります。",
+         "url": "https://exploratory.io/note/exploratory/Exploratory-by-gsX4vUG7no"
+        },
         {
          "title": "ホステッド・サーバーを軸とした データサイエンス・ソリューションの開発",
          "desc": "データサイエンス勉強会#29の株式会社ホンダコムテック様のご発表内容となります。",
