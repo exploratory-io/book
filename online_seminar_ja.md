@@ -1,13 +1,15 @@
-# セミナー #142 - 「データ可視化の基本が全部わかる本」の紹介セミナー
+# セミナー #143 - 「戦略論と科学思考の教科書」の紹介セミナー
 
-## 時間: 2024/8/29 (木) - 午後12時 - 1時（日本時間）
-## スピーカー: 矢崎 裕一 様
+## 時間: 2024/9/26 (木) - 午後12時 - 1時（日本時間）
+## スピーカー: 吉田 裕介 様
 ## ミーティング URL: [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09) 
 
-「[データ可視化の基本が全部わかる本](https://www.amazon.co.jp/%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%81%8C%E5%85%A8%E9%83%A8%E3%82%8F%E3%81%8B%E3%82%8B%E6%9C%AC-%E5%8F%8E%E9%9B%86%E3%83%BB%E5%A4%89%E6%8F%9B%E3%81%8B%E3%82%89%E3%83%93%E3%82%B8%E3%83%A5%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%BC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E5%88%86%E6%9E%90%E6%94%AF%E6%8F%B4%E3%81%BE%E3%81%A7-%E7%9F%A2%E5%B4%8E-%E8%A3%95%E4%B8%80/dp/4798183687/ref=sr_1_1?adgrpid=168059930121&dib=eyJ2IjoiMSJ9.EUrSZZ81Sdt8yo-8LwHLeb1sKIk5E5LFkPbzrl5Bhr3tN8hw9dV0YKWgmX8NdFTtiBWpj8huE2oQiJ9M7iN7N23-cSkkCEGF884xHOEYwJ6KpiKzjz-AJ3s4xbJCQxT1SJrzKLHusVMnWswDV2appjvVjPQRHoxjQEQ9JgahK7t03VM-AxMGu4wungLfD-BrdSpquy5gAaFvgBzLmpZs_V8m7xDAXxtgXUDfCHImD5odv1KSUnkRs9H-5uejRUw6ADv9-bgybqPUJq5xNbhuzw.B2GFcxp2p69HUGH7aZjXZ9gWdACrnAaE0bHo3hdPgwg&dib_tag=se&gad_source=1&hvadid=705230087226&hvdev=c&hvlocphy=9198439&hvnetw=g&hvqmt=b&hvrand=843075459861715850&hvtargid=kwd-2326524810180&hydadcr=27269_14738598&jp-ad-ap=0&keywords=%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%AF%E8%A6%96%E5%8C%96%E3%81%AE%E5%9F%BA%E6%9C%AC%E3%81%8C%E5%85%A8%E9%83%A8%E3%82%8F%E3%81%8B%E3%82%8B%E6%9C%AC&qid=1724627997&sr=8-1)」の著者である矢崎 裕一様をお招きして、この本を書く至った背景やデータの可視化について対談させていただく予定です。
+「[戦略論と科学思考の教科書 - チームで創るデータ駆動イノベーション](https://www.amazon.co.jp/%E6%88%A6%E7%95%A5%E8%AB%96%E3%81%A8%E7%A7%91%E5%AD%A6%E6%80%9D%E8%80%83%E3%81%AE%E6%95%99%E7%A7%91%E6%9B%B8-%E3%83%81%E3%83%BC%E3%83%A0%E3%81%A7%E5%89%B5%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E9%A7%86%E5%8B%95%E3%82%A4%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E5%90%89%E7%94%B0-%E8%A3%95%E4%BB%8B/dp/4909666834/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=1CQ9SA9SZ6FHM&dib=eyJ2IjoiMSJ9.taju8MvCn6Vm1SxNspG-SCqeFLa6FIH-aOPtrJq4hlYG6cl4GhYg1HgiLweNGrFQO4pI-TXwV9UQiJhI5goL3I8nHZV-fRqJKSDmhrCSvXTTm8-H-TY7kWGeGGG9cPqaluuA6ZuBHuL2Ff1o_wGjj3BYZ3O0v1gjeDXpQLFTts9Q7Vfdiuntvx6_9Jch6lsnNBjFDKEkwhiSKvMkO4kD0Gvcr2RHh0htwrE8txSnrJPmYPfmH-nNQleaeDtNpLmZpMI0uQi0i9XEYS8vBNQarazY7Vkuv7ibkvTTSPUjlwM.hkwXh917VH-YkD1tae-t3ASjEfj9ZClwPSlj-2DvVVc&dib_tag=se&keywords=%E6%88%A6%E7%95%A5%E8%AB%96%E3%81%A8&qid=1727046863&sprefix=%E6%88%A6%E7%95%A5%E8%AB%96%E3%81%A8%2Caps%2C176&sr=8-1)」の著者である吉田 裕介様をお招きして、この本を書くに至った背景や戦略論と科学的思考などについて対談させていただく予定です。
 
-アジェンダ：
+吉田様は元々ゼネラル・エレクトリック（ＧＥ）でデータを共通言語としたマーケティング戦略を立案・実行してきた方で、現在は某グローバル企業のメーカーでデータサイエンティストとして、大量データを活用し、先進的なマーケティング基盤の構築に取り組まれています。
 
+アジェンダ:
 * 著者紹介
 * 本の紹介
-* データ可視化の基本
+* 対談
+* Q&A
