@@ -59,6 +59,22 @@ Exploratory, in its sole discretion, has the right to suspend or terminate your 
 
 In the event that Exploratory takes action to suspend or terminate an account, we will make a reasonable effort to provide the affected account owner with a copy of their account contents upon request, unless the account was suspended or terminated due to unlawful conduct.
 
+Additionally, in the event that an account is suspended or terminated, any unused portion of the amount already paid at that time will be refunded.
+
+As of the current date (October 17, 2024), since the service began in May 2016, no paid accounts have been suspended nor terminated. However, with respect to free accounts (during the trial period or with the Public plan), we have had to delete accounts created based on spam or security concerns.
+
+The following are cases in which we may suspend or terminate an account:
+
+* Modifying, altering, or tampering with the service in a way that falsely implies an association with Exploratory or any other Exploratory service.
+* Reproducing, duplicating, copying, selling, reselling, or exploiting any part of the products and services, service usage, or access to the service without explicit written permission from Exploratory.
+* Publishing content that is illegal, offensive, threatening, defamatory, libelous, pornographic, obscene, or otherwise objectionable, or that may violate the intellectual property of others or these terms of use.
+* Engaging in verbal, physical, written, or any form of abuse (including threats of abuse or retaliation) towards Exploratory customers, members, employees, or officers.
+* Uploading, posting, hosting, or sending unsolicited emails, SMS, "spam" messages, viruses, or any code of a * destructive nature.
+* Accounts created or maintained by individuals associated with organized crime or other antisocial forces.
+
+If such issues are discovered, and unless the account is immediately suspended or terminated due to illegal activity, we will contact the account owner in advance regarding the issue. If it is not an issue, the account holder will need to explain or prove this. If the issue is not resolved, the account may be suspended or terminated.
+
+
 ## D. Temporary Suspension for non-payment
 
 Exploratory reserves the right to suspend your access to Exploratory' Products in the event that you fail to make payment for its subscription.
