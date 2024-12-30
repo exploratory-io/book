@@ -1,5 +1,54 @@
 # Release Note
 
+## 11.0
+
+### New Features
+
+#### Web Authoring
+
+Now you can create new or edit the published Notes and Charts in web browsers.
+
+#### Copy & Paste Charts, Data, & Steps  
+
+Now you can copy and paste the following objects across multiple project windows.
+
+- Data Frames
+- Data Wrangling Steps
+- Charts
+- Notes
+
+Also, now you can copy and paste charts across multiple data frames within a same project.
+
+#### Run Button inside Chart View
+
+We added 'Run' button to Chart View so that you can decide whether you want the chart to automatically update as you change the column configuration or to hold the update until you click the Run button.
+
+### Enhancements
+
+Chart: Added sub-menu for Reference Line, Trend Line so make it easier to access typical line types.
+Chart: Supported additional trend line types - Exponential, Logarithmic, Power and Polynomial
+Chart: Support showing values on the reference lines even when there are both X-Axis and Y-Axis lines.
+
+Note: You can now expand images with full screen size inside Notes.
+Note: We have added two columns layout component. You can use it to show two charts side by side.
+Note: Support copying markdown text from outside the Note editor and pasting it while preserving the format.
+Note: Support 'Paste without Formatting' with Command + Shift + V.
+Note: We have assigned new short cut keys for Header text format as follows.
+
+- Header 1: Cmd + Option + 1 / Ctrl + Option + 1
+- Header 2: Cmd + Option + 2 / Ctrl + Option + 2
+- Header 3: Cmd + Option + 3 / Ctrl + Option + 3
+
+Data Wrangling: Now you can see the Data Wrangling Step's comments even when the steps are disabled.
+
+### Bug Fixes
+
+Chart: Changed to apply the Limit Values after the Window Calculation where it used to be before the calculation.
+Note: If you make colored text bold and reopen it, asterisks (*) will appear.
+Project: The project creation time displayed in the Version History was incorrect.
+Project: After switching windows with Command (or Control) + W keys, the mouse click stopped working in the switched window.
+Parameter: If the text input does not specify a default, an error will occur when setting the parameters in the filter.
+
 
 ## 10.7
 
@@ -11,15 +60,15 @@ Release on 8/29/2024.
 * Data Wrangling: Added support for two types of comments - Author and Viewer.
 * Data Wrangling: Added support for using the Note Editor to enter comments.
 
- 
+
 * Chart: Added support for date format settings when assigning a Date column to Repeat By.
 * Chart: Enhanced Number Chart to support displaying values from the previous period in sub-metrics.
 
 
-* Note: Now you can copy the URL for an H1/H2 header of the document by hovering the header text and clicking the link icon on a published note. 
+* Note: Now you can copy the URL for an H1/H2 header of the document by hovering the header text and clicking the link icon on a published note.
 * Dashboard: Added an option to set the top margin for Text Panels.
 * Dashboard: Added support for titles in Text Panels, similar to Chart Panels.
-* Dashboard: Now you can create a link to open another page from the Link dialog. 
+* Dashboard: Now you can create a link to open another page from the Link dialog.
 * Dashboard/Note: Now it shows Author Comments when the logged-in user is the author of the insight.
 
 
@@ -40,15 +89,15 @@ Release on 8/29/2024.
 
 
 * Chart: A "0%" difference from the previous period was displayed as "In,fin,ity%".
-* Chart: Boxplot: Even if you checked the "Include outliers" checkbox, the appropriate maximum value was not displayed. 
+* Chart: Boxplot: Even if you checked the "Include outliers" checkbox, the appropriate maximum value was not displayed.
 * Chart: Number Chart showed unnecessary space below even when there was no sub-metric.
-* Chart: Pivot Table / Summarize Table: The "% of" Window Calculation should be applied to the totals. 
+* Chart: Pivot Table / Summarize Table: The "% of" Window Calculation should be applied to the totals.
 * Chart: The time portion disappeared when changing the format of POSIXct type in Number charts.
 * Chart: When changing the marker to 'Line + Circle' it added unnecessary space at the right and the left sides.
 
 
-* Analytics: Linear Regression / Logistic Regression: In the Effects tab, it should show "< 0.0001" if the P-value is less than 0.0001. 
-* Analytics: Survival Curve: Percentage values should show up in the Survival Table chart instead of ratio values. 
+* Analytics: Linear Regression / Logistic Regression: In the Effects tab, it should show "< 0.0001" if the P-value is less than 0.0001.
+* Analytics: Survival Curve: Percentage values should show up in the Survival Table chart instead of ratio values.
 * Analytics: Survival Curve: Summary tab should show the "Rows" and "Rows *(TRUE)" information even if you don't set a column to Color.
 
 
@@ -58,13 +107,13 @@ Release on 8/29/2024.
 * Note: Could not reopen the same note immediately after closing it.
 * Note: Moving the cursor upwards did not select the image.
 * Note: Selecting text with Shift + Down only selected the image.
-* Note: When you published your note with the previous versions of Exploratory Desktop, if you didn't turn on the 'Data' and 'EDF' options, the 'Show Detail' option didn't show up on the published view even if you republished it with the latest version. 
+* Note: When you published your note with the previous versions of Exploratory Desktop, if you didn't turn on the 'Data' and 'EDF' options, the 'Show Detail' option didn't show up on the published view even if you republished it with the latest version.
 * Note: Dashboard: If you added a waterfall or visNetwork chart in an R code chunk and clicked the preview tab, it spawned a new preview window. It should show the preview under the preview tab.
 * Dashboard: Optimized R Script output size to better fit the available section.
 
 
-* Project: Sorting data frames by name didn't work as expected if a data frame name contained "0." at the beginning. 
-* Project: Opening a project showed the “EMFILE: too many open files, open” error once in a while. 
+* Project: Sorting data frames by name didn't work as expected if a data frame name contained "0." at the beginning.
+* Project: Opening a project showed the “EMFILE: too many open files, open” error once in a while.
 * Project: The editing green lamp remained on even after leaving a team-published project.
 
 
