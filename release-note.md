@@ -28,29 +28,30 @@ We added 'Run' button to Chart View so that you can decide whether you want the 
 
 ### Enhancements
 
-Chart: Added sub-menu for Reference Line, Trend Line so make it easier to access typical line types.
-Chart: Supported additional trend line types - Exponential, Logarithmic, Power and Polynomial
-Chart: Support showing values on the reference lines even when there are both X-Axis and Y-Axis lines.
+* Chart: Added sub-menu for Reference Line, Trend Line so make it easier to access typical line types.
+* Chart: Supported additional trend line types - Exponential, Logarithmic, Power and Polynomial
+* Chart: Support showing values on the reference lines even when there are both X-Axis and Y-Axis lines.
 
-Note: You can now expand images with full screen size inside Notes.
-Note: We have added two columns layout component. You can use it to show two charts side by side.
-Note: Support copying markdown text from outside the Note editor and pasting it while preserving the format.
-Note: Support 'Paste without Formatting' with Command + Shift + V.
-Note: We have assigned new short cut keys for Header text format as follows.
 
+* Note: You can now expand images with full screen size inside Notes.
+* Note: We have added two columns layout component. You can use it to show two charts side by side.
+* Note: Support copying markdown text from outside the Note editor and pasting it while preserving the format.
+* Note: Support 'Paste without Formatting' with Command + Shift + V.
+* Note: We have assigned new short cut keys for Header text format as follows.
+```
 - Header 1: Cmd + Option + 1 / Ctrl + Option + 1
 - Header 2: Cmd + Option + 2 / Ctrl + Option + 2
 - Header 3: Cmd + Option + 3 / Ctrl + Option + 3
-
-Data Wrangling: Now you can see the Data Wrangling Step's comments even when the steps are disabled.
+```
+* Data Wrangling: Now you can see the Data Wrangling Step's comments even when the steps are disabled.
 
 ### Bug Fixes
 
-Chart: Changed to apply the Limit Values after the Window Calculation where it used to be before the calculation.
-Note: If you make colored text bold and reopen it, asterisks (*) will appear.
-Project: The project creation time displayed in the Version History was incorrect.
-Project: After switching windows with Command (or Control) + W keys, the mouse click stopped working in the switched window.
-Parameter: If the text input does not specify a default, an error will occur when setting the parameters in the filter.
+* Chart: Changed to apply the Limit Values after the Window Calculation where it used to be before the calculation.
+* Note: If you make colored text bold and reopen it, asterisks (*) will appear.
+* Project: The project creation time displayed in the Version History was incorrect.
+* Project: After switching windows with Command (or Control) + W keys, the mouse click stopped working in the switched window.
+* Parameter: If the text input does not specify a default, an error will occur when setting the parameters in the filter.
 
 
 ## 10.7
