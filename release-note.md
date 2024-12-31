@@ -38,11 +38,9 @@ We added 'Run' button to Chart View so that you can decide whether you want the 
 * Note: Support copying markdown text from outside the Note editor and pasting it while preserving the format.
 * Note: Support 'Paste without Formatting' with Command + Shift + V.
 * Note: We have assigned new short cut keys for Header text format as follows.
-```
-- Header 1: Cmd + Option + 1 / Ctrl + Option + 1
-- Header 2: Cmd + Option + 2 / Ctrl + Option + 2
-- Header 3: Cmd + Option + 3 / Ctrl + Option + 3
-```
+    - Header 1: Cmd + Option + 1 / Ctrl + Option + 1
+    - Header 2: Cmd + Option + 2 / Ctrl + Option + 2
+    - Header 3: Cmd + Option + 3 / Ctrl + Option + 3
 * Data Wrangling: Now you can see the Data Wrangling Step's comments even when the steps are disabled.
 
 ### Bug Fixes
