@@ -2,11 +2,13 @@
 
 ## 11.0
 
+Released on 12/30/2024.
+
 ### New Features
 
 #### Web Authoring
 
-Now you can create new or edit the published Notes and Charts in web browsers.
+Now you can create new or edit Notes and Charts, which have already been published, in web browsers.
 
 #### Copy & Paste Charts, Data, & Steps  
 
@@ -16,6 +18,7 @@ Now you can copy and paste the following objects across multiple project windows
 - Data Wrangling Steps
 - Charts
 - Notes
+- Dashboards 
 
 Also, now you can copy and paste charts across multiple data frames within a same project.
 
@@ -52,7 +55,7 @@ Parameter: If the text input does not specify a default, an error will occur whe
 
 ## 10.7
 
-Release on 8/29/2024.
+Released on 8/29/2024.
 
 ### New Features
 
@@ -124,7 +127,7 @@ Release on 8/29/2024.
 
 ## 10.6
 
-Release on 7/26/2024.
+Released on 7/26/2024.
 
 ### New Features
 
@@ -153,7 +156,7 @@ Release on 7/26/2024.
 
 ## 10.5
 
-Release on 7/20/2024.
+Released on 7/20/2024.
 
 ### Bug Fixes
 
@@ -238,7 +241,7 @@ Release on 7/15/2024.
 
 ## 10.3
 
-Release on 6/19/2024.
+Released on 6/19/2024.
 
 ### New Features
 
@@ -275,7 +278,7 @@ Parameter: Added support for resetting parameter values to their default setting
 
 ## 10.2
 
-Release on 6/5/2024.
+Released on 6/5/2024.
 
 ### Bug Fixes
 
@@ -308,7 +311,7 @@ Release on 6/3/2024.
 
 ## 10.0
 
-Release on 5/29/2024.
+Released on 5/29/2024.
 
 ### New Features
 
