@@ -1,5 +1,21 @@
 # Release Note
 
+## 11.1
+
+Released on 01/09/2024.
+
+### Bug Fixes
+
+* Data Wrangling: Data frames could not be dragged and dropped into folders.
+
+
+* Note: On Windows, Note window could not be resized.
+*	Note: Pressing the Enter key after typing a backtick in a code block resulted in an undeletable symbol being displayed.
+*	Dashboard: Importing an EDF containing data frames with conflicting names caused the header row to display a "chart not found" error.
+
+
+* Publish: Data Catalog: Publish fails when the data size exceeds 2GB
+
 ## 11.0
 
 Released on 12/30/2024.
