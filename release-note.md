@@ -14,7 +14,7 @@ Released on 01/09/2024.
 *	Dashboard: Importing an EDF containing data frames with conflicting names caused the header row to display a "chart not found" error.
 
 
-* Publish: Data Catalog: Publish fails when the data size exceeds 2GB
+* Publish: Data Catalog: Publish failed when the data size exceeded 2GB
 
 ## 11.0
 
