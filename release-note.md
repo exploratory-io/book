@@ -1,8 +1,38 @@
 # Release Note
 
+## 11.2
+
+Released on 01/25/2025.
+
+### Enhancements
+
+* Parameter: Supported the option that selecting values for a parameter updates values for the other related parameters.
+
+### Bug Fixes
+
+* Data Source: Snowflake: Data sources created in Exploratory Desktop versions prior to 9.8 could not be published to Exploratory Server after upgrading Exploratory Desktop to versions newer than 9.8.
+* Data Source: Excel: Override column data types didn't work when importing and merging multiple sheets from an Excel file.
+
+
+* Data Wrangling: Filter: Using the "Equal To" operator with a multi-select parameter caused an "Error in coercion to logical(1)".
+
+
+* Chart: Pivot Table: Reordering columns via drag-and-drop did not work immediately after dragging and dropping a data frame.
+* Chart: Summarize Table: Selecting the "Total & Subtotal" option in the Total settings prevented the Show Detail dialog from appearing when clicking a row header cell at the bottom.
+* Chart: The reference line color setting did not work when a column was assigned to Color, and the "Specific Value" reference line type was selected.
+
+
+* Note: Deleting text below an added image resulted in an unpredictable deletion mode.
+* Note: Improved responsiveness of the publish button to better indicate activity, especially on low-spec machines.
+* Note: Copy and Paste text values inside a table did not work.
+* Note: Publishing to Exploratory Server or exporting to an EDF file failed if the note or dashboard did not contain any charts.
+* Note: Inserting a chart to a 2-Column Layout didn't insert it to correct position.
+* Note: Updated spacing for bullet lists for better readability.
+* Note: Hitting the delete key on a row formatted as H1 now properly removes the H1 formatting.
+
 ## 11.1
 
-Released on 01/09/2024.
+Released on 01/09/2025.
 
 ### Bug Fixes
 
