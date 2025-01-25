@@ -30,6 +30,10 @@ Released on 01/25/2025.
 * Note: Updated spacing for bullet lists for better readability.
 * Note: Hitting the delete key on a row formatted as H1 now properly removes the H1 formatting.
 
+
+* Project: Project information did not display on the project page when a project was published for the first time.
+
+
 ## 11.1
 
 Released on 01/09/2025.
