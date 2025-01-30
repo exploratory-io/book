@@ -2,6 +2,7 @@
 
 ## 11.2
 
+Released on 1/29/2025
 
 
 ### Download
@@ -44,8 +45,6 @@
 
 * Interactive: immediately after starting interactive mode, the result did not match the parameter condition if no parameters were changed.
 * Interactive: When starting interactive mode on a note, some data sources ignored the Parquet file and attempted to load an Excel file instead.
-
-
 * Parameter: Cascading parameter failed when setting a displayName column to dynamic List of Values.
 * Parameter: Chart: The Word Cloud didn't render properly after updating parameters. If a Word Cloud chart with no data was published, it was supposed to show the chart but didn’t.
 * Parameter: Dashboard: The "Apply for All Pages" option in the parameter pane allowed applying the parameter to either the current page or all pages.
