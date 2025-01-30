@@ -1,5 +1,66 @@
 # Release Note
 
+## 11.2
+
+
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.2.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.2.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+
+### Enhancements
+
+* Admin: Now you can add multiple users at once from a CSV file.
+* Admin: Now you can configure the interactive session timeout in the Site Settings UI.
+* Admin: Now you can customize the Admin name and email address for email notifications in the Site Settings UI.
+* Admin: Now you can hide the page footer, including links to Terms, Contact, etc., via the config file.
+* Admin: Now you can search for users by team name in the user list.
+* Admin: Now you can set the default sorting for the content search page in the Site Settings UI.
+* Admin: Now you can set the default user locale for new users in the Site Settings UI, applying to both the Communication Language and Runtime Locale.
+* Admin: Now you can set the default view mode, such as Tile view or List view, for the content search page in the Site Settings UI.
+* Admin: Now, when you create a user account, an invitation email is automatically sent if the SMTP server is set up.
+
+
+* Content: Now you can create a new chart and note online.
+* Content: Now you can filter content by language on the content search page.
+* Content: Now you can see the SQL query of data sources published to the server.
+
+
+* Interactive: Introduced support for the Re-import button, enabling users to trigger Run Immediate execution seamlessly.
+* Parameter: Supported relative dates for date columns.
+
+
+* Scheduler: Now scheduling can refresh R-based charts (such as ggplot2) in the R code chunk.
+* Scheduler: Now you can send scheduling notification emails only when no data is available in the published Data or Chart by enabling the "Don’t send notifications when no data" option in the Scheduling dialog.
+
+
+### Bug Fixes
+
+* Content: The content search page UI was improved.
+* Content: Dashboard: Turning on the interactive mode used previously selected parameter values from cache, causing session failures.
+
+
+* Interactive: immediately after starting interactive mode, the result did not match the parameter condition if no parameters were changed.
+* Interactive: When starting interactive mode on a note, some data sources ignored the Parquet file and attempted to load an Excel file instead.
+
+
+* Parameter: Cascading parameter failed when setting a displayName column to dynamic List of Values.
+* Parameter: Chart: The Word Cloud didn't render properly after updating parameters. If a Word Cloud chart with no data was published, it was supposed to show the chart but didn’t.
+* Parameter: Dashboard: The "Apply for All Pages" option in the parameter pane allowed applying the parameter to either the current page or all pages.
+* Parameter: Run with Data Import button failed after importing a private data share from Data Catalog, creating a chart and dashboard, and then publishing it.
+* Parameter: Updating the parameter didn't update downloaded data from a chart on a different page.
+* Parameter: Using the quick filter on the dashboard displayed an invalid date.
+
+
+* Scheduler: Google Sheets write-back failed to list sheets in a shared folder.
+* Scheduler: Scheduling didn't finish when it contained large data files.
+
+
+
+
+
 ## 10.3
 
 Released on 9/4/2024
