@@ -25,7 +25,7 @@
 
 * Content: Now you can create a new chart and note online.
 * Content: Now you can filter content by language on the content search page.
-* Content: Now you can see the SQL query of data sources published to the server.
+* Content: Now You can view the SQL query for data sources published to the server.
 
 
 * Interactive: Introduced support for the Re-import button, enabling users to trigger Run Immediate execution seamlessly.
