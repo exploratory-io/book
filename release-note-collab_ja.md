@@ -7,8 +7,8 @@ Released on 2/1/2025
 
 ### Download
 
-* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.3.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
-* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.3.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.3.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.3.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
 
 
 ### Bug Fixes
