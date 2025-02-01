@@ -1,5 +1,20 @@
 # リリースノート
 
+## 11.3
+
+Released on 2/1/2025
+
+
+### Download
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.3.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.3.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+
+### Bug Fixes
+
+* コンテンツ: ログインせずにコンテンツにアクセスすると、サーバーエラーが発生し、コンテンツが表示されない問題を修正しました。
+
 
 ## 11.2
 
