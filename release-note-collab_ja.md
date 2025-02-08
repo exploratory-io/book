@@ -1,5 +1,36 @@
 # リリースノート
 
+## 11.4
+
+Released on 2/8/2025
+
+
+### Download
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.4.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.4.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
+
+
+### 機能強化
+
+- 管理: ユーザーを作成する際に、アカウントを有効化するかどうかを選択できるようになりました。この設定は、サイト設定のUIで有効または無効にできます。
+- 管理: ユーザー作成時に、自動で招待メールを送信するかどうかを選択できるようになりました。このオプションは、サイト設定のUIで設定できます。
+
+
+- コンテンツ: 各コンテンツごとに、設定ダイアログからインタラクティブチャートを有効または無効にできるようになりました。
+
+
+
+
+
+### 修正された問題
+
+
+- コンテンツ: Webオーサリング: 貼り付けた画像が最初は正しく表示されるものの、保存して再度ノートを開いた際に消えてしまう問題を修正しました。
+- コンテンツ: Webオーサリング: ノートを保存した後に閉じるボタンをクリックすると、「未保存の変更があります」というポップアップが表示される問題を修正しました。この問題は、実際には変更が行われていない場合にも発生していました。
+
+
+
 ## 11.3
 
 Released on 2/1/2025
@@ -11,7 +42,7 @@ Released on 2/1/2025
 * [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.3.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
 
 
-### Bug Fixes
+### 修正された問題
 
 * コンテンツ: ログインせずにコンテンツにアクセスすると、サーバーエラーが発生し、コンテンツが表示されない問題を修正しました。
 
