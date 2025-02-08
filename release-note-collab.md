@@ -1,5 +1,31 @@
 # Release Note
 
+## 11.4
+
+Released on 2/8/2025
+
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.4.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.4.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+
+### Enhancements
+* Admin: You can now choose whether to activate users when creating them. This setting can be enabled or disabled in the Site Settings UI.
+* Admin: You can now enable or disable automatic invitation emails when creating users. This option is available in the Site Settings UI.
+
+
+* Content: You can now enable or disable the Interactive Chart for each piece of content from the Settings dialog on the content page.
+
+### Bug Fixes
+
+* Content: Web Authoring: Pasted images initially appeared correctly but disappeared after saving and reopening the note.
+* Content: Web Authoring: A "There are unsaved changes" pop-up appeared after saving a note and clicking close, even when no changes were pending.
+
+
+
+
 ## 11.3
 
 Released on 2/1/2025
