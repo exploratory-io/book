@@ -2,7 +2,7 @@
 
 ## 11.4
 
-Released on 2/8/2025
+2025年2月8日リリース
 
 
 ### Download
@@ -33,7 +33,7 @@ Released on 2/8/2025
 
 ## 11.3
 
-Released on 2/1/2025
+2025年2月1日リリース
 
 
 ### Download
