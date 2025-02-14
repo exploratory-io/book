@@ -32,18 +32,53 @@
         "url": "https://exploratory.io/note/exploratory/PqC9Tvz5"
        },
        {
-         "title": "線形回帰",
-         "desc": "線形回帰について紹介しています。",
-         "url": "https://exploratory.io/note/exploratory/Yla0xCR7"
+        "title": "対応分析",
+        "desc": "対応分析について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/pPJ0xcS7Em"
        },
        {
-         "title": "ロジスティック回帰",
-         "desc": "ロジスティック回帰について紹介しています。",
-         "url": "https://exploratory.io/note/exploratory/aBh1BXi2"
+        "title": "線形回帰",
+        "desc": "線形回帰について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/Yla0xCR7"
        },
        {
-         "title": "決定木",
-         "desc": "決定木について紹介しています。",
+        "title": "ロジスティック回帰",
+        "desc": "ロジスティック回帰について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/aBh1BXi2"
+       },
+       {
+        "title": "一般化線形モデル - 正規分布",
+        "desc": "一般化線形モデル（正規分布）について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/rIW4IQB9"
+       },
+       {
+        "title": "一般化線形モデル - 二項分布",
+        "desc": "一般化線形モデル（二項分布）について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/pzS6GPz1"
+       },
+       {
+        "title": "一般化線形モデル - ガンマ分布",
+        "desc": "一般化線形モデル（ガンマ分布）について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/yuA9TsG3"
+       },
+       {
+        "title": "一般化線形モデル - 逆ガウス分布",
+        "desc": "一般化線形モデル（逆ガウス分布）について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/ymk2qxg5"
+       },
+       {
+        "title": "一般化線形モデル - ポアソン分布",
+        "desc": "一般化線形モデル（ポアソン分布）について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/UhN0GRY4"
+       },
+       {
+        "title": "一般化線形モデル - 負の二項分布",
+        "desc": "一般化線形モデル（負の二項分布）について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/BVZ0PWl2"
+       },
+       {
+        "title": "決定木",
+        "desc": "決定木について紹介しています。",
          "url": "https://exploratory.io/note/exploratory/GEQ0ssi1"
        },
        {
@@ -77,6 +112,11 @@
         "url": "https://exploratory.io/note/exploratory/Prophet-rZS5nfn3"
       },
       {
+        "title": "時系列分析 - 時系列予測（ARIMA/SARIMA）",
+        "desc": "時系列予測（ARIMA/SARIMA）について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/ARIMA-lSh9DQG9"
+      },
+      {
         "title": "時系列分析 - 時系列クラスタリング",
         "desc": "時系列クラスタリングについて紹介しています。",
         "url": "https://exploratory.io/note/exploratory/ZzB6Omb7"
@@ -87,9 +127,14 @@
         "url": "https://exploratory.io/note/exploratory/hvP4cCu6"
       },
       {
-        "title": "テキスト分析 - トピックモデル（LDA）",
-        "desc": "トピックモデル（LDA）について紹介しています。",
+        "title": "テキスト分析 - トピックモデル（文章データ）",
+        "desc": "文章データのトピックモデリング（LDA）について紹介しています。",
         "url": "https://exploratory.io/note/exploratory/LDA-MmP4fnU2"
+      },
+      {
+        "title": "テキスト分析 - トピックモデル（単語化済み）",
+        "desc": "単語化済みデータのトピックモデリングについて紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/dEv1qdY1"
       },
       {
         "title": "マーケット・バスケット分析",
@@ -97,25 +142,65 @@
         "url": "https://exploratory.io/note/exploratory/ZIP3jdn4"
       },
       {
-        "title": "統計的検定 - t検定",
+        "title": "t検定",
         "desc": "t検定について紹介しています。",
         "url": "https://exploratory.io/note/exploratory/t-xPg2tCn3"
       },
       {
-        "title": "統計的検定 - カイ二乗検定",
+        "title": "t検定（集計済データ）",
+        "desc": "集計済データに対するt検定について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/t-nBP8uns3"
+      },
+      {
+        "title": "One-Way ANOVA",
+        "desc": "一元配置分散分析について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/ANOVA-zgQ7KSz0"
+      },
+      {
+        "title": "Two-Way ANOVA",
+        "desc": "二元配置分散分析について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/Two-Way-ANOVA-mST7SmY8"
+      },
+      {
+        "title": "ANCOVA",
+        "desc": "共分散分析について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/ANCOVA-UhL7NQk3"
+      },
+      {
+        "title": "カイ二乗検定",
         "desc": "カイ二乗検定について紹介しています。",
         "url": "https://exploratory.io/note/exploratory/hpL7fJS1"
       },
       {
-        "title": "統計的検定 - クラスカル・ウォリス検定",
-        "desc": "クラスカル・ウォリス検定について紹介しています。",
+        "title": "正規性検定",
+        "desc": "正規性の検定について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/alS4Wox6"
+      },
+      {
+        "title": "ウィルコクソン検定",
+        "desc": "ウィルコクソン検定について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/ytN6zTC3"
+      },
+      {
+        "title": "クラスカルウォリス検定",
+        "desc": "クラスカルウォリス検定について紹介しています。",
         "url": "https://exploratory.io/note/exploratory/vgu0oqy0"
       },
-       {
+      {
+        "title": "t検定 - 検出力分析",
+        "desc": "t検定の検出力分析について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/t-hBg8fde4"
+      },
+      {
+        "title": "カイ二乗検定 - 検出力分析",
+        "desc": "カイ二乗検定の検出力分析について紹介しています。",
+        "url": "https://exploratory.io/note/exploratory/dsZ9nGs6"
+      },
+      {
          "title": "A/B テスト - ベイジアン",
          "desc": "ベイジアンA/Bテストについて紹介しています。",
          "url": "https://exploratory.io/note/exploratory/A-B-jIR1NMU2"
-       }
+      }
       ]
     }
   ]
