@@ -128,12 +128,12 @@
       },
       {
         "title": "テキスト分析 - トピックモデル（文章データ）",
-        "desc": "文章データのトピックモデリング（LDA）について紹介しています。",
+        "desc": "文章データのトピックモデルについて紹介しています。",
         "url": "https://exploratory.io/note/exploratory/LDA-MmP4fnU2"
       },
       {
         "title": "テキスト分析 - トピックモデル（単語化済み）",
-        "desc": "単語化済みデータのトピックモデリングについて紹介しています。",
+        "desc": "単語化済みデータのトピックモデルについて紹介しています。",
         "url": "https://exploratory.io/note/exploratory/dEv1qdY1"
       },
       {
@@ -153,17 +153,17 @@
       },
       {
         "title": "One-Way ANOVA",
-        "desc": "一元配置分散分析について紹介しています。",
+        "desc": "一元配置分散分析（One-Way ANOVA）について紹介しています。",
         "url": "https://exploratory.io/note/exploratory/ANOVA-zgQ7KSz0"
       },
       {
         "title": "Two-Way ANOVA",
-        "desc": "二元配置分散分析について紹介しています。",
+        "desc": "二元配置分散分析（Two-Way ANOVA）について紹介しています。",
         "url": "https://exploratory.io/note/exploratory/Two-Way-ANOVA-mST7SmY8"
       },
       {
         "title": "ANCOVA",
-        "desc": "共分散分析について紹介しています。",
+        "desc": "共分散分析（ANCOVA）について紹介しています。",
         "url": "https://exploratory.io/note/exploratory/ANCOVA-UhL7NQk3"
       },
       {
@@ -173,7 +173,7 @@
       },
       {
         "title": "正規性検定",
-        "desc": "正規性の検定について紹介しています。",
+        "desc": "正規性検定について紹介しています。",
         "url": "https://exploratory.io/note/exploratory/alS4Wox6"
       },
       {
