@@ -1,5 +1,17 @@
 # Release Note
 
+## 11.4
+
+Released on 02/15/2025.
+
+### Bug Fixes
+
+* Data Wrangling: Selecting a data frame in a low-resolution Windows environment caused the right side of the UI to appear blank.
+
+
+* Publish: After publish a dashboard to a server, CSV exports from dashboard charts displayed inconsistent values.
+
+
 ## 11.3
 
 Released on 02/14/2025.
