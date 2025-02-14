@@ -1,5 +1,25 @@
 # Release Note
 
+## 11.3
+
+Released on 02/14/2025.
+
+### Bug Fixes
+
+* Chart: Scatter (With Aggregation): Fixed an issue where colors could not be updated when using the "Manual" color bucket.
+
+
+* Dashboard: After updating the data source and running the dashboard, it didn't update charts on other pages.
+* Dashboard: When you open and run a dashboard, it failed if the underlying charts are not opened before.
+* Dashboard: Re-importing data from a database multiple times would cause the number of connections to increase unexpectedly.
+
+
+* Parameter: The spinning icon would persist when a cascading parameter referenced itself as the source for its list of values.
+
+
+* Publish: When offline, canceling publishing takes a long time to process, and after cancellation, it incorrectly displays a "complete" status.
+
+
 ## 11.2
 
 Released on 01/25/2025.
