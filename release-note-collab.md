@@ -24,6 +24,8 @@ Released on 2/8/2025
 * Content: Web Authoring: A "There are unsaved changes" pop-up appeared after saving a note and clicking close, even when no changes were pending.
 
 
+* Parameter: Parameter button was not shown for contents if the underlying data source was not supported for refresh.
+  
 
 
 ## 11.3
