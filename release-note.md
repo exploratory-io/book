@@ -1,5 +1,14 @@
 # Release Note
 
+## 11.5
+
+Released on 02/18/2025.
+
+### Bug Fixes
+
+* Data Wrangling: Clicking on an existing Select or Reorder Columns step did not open the Column Selection dialog as expected.
+
+
 ## 11.4
 
 Released on 02/16/2025.
