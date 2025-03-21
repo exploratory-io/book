@@ -1,5 +1,23 @@
 # Release Note
 
+
+
+## 11.5
+
+Released on 3/21/2025
+
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.5.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.5.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+
+### Bug Fixes
+* Update the Exploratory Desktop download link to point the latest desktop version (11.5.1).
+
+
+
 ## 11.4
 
 Released on 2/8/2025
