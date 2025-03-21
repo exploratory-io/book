@@ -1,5 +1,20 @@
 # リリースノート
 
+## 11.5
+
+2025年3月21日リリース
+
+
+### Download
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.5.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.5.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
+
+
+### 修正された問題
+- Exploratory デスクトップのダウンロードリンクを、最新版 (11.5.1) をダウンロードできるように修正しました。
+
+
 ## 11.4
 
 2025年2月8日リリース
