@@ -1,5 +1,81 @@
 # Release Note
 
+
+## 12.0
+
+Released on 03/24/2025.
+
+### Enhancements
+
+* AI: Now you can ask AI for data wrangling questions.
+
+
+* Chart: Pivot Table: Summarize Table: If you turn on the "Show Popup on Hover" option in the chart property dialog, now you can hover the total cell to see the aggregation function used for the total calculation.
+* Chart: Pivot Table: Summarize Table: Now you can show "0" values as empty values by turning on the "Show Zero as NA" option in the chart property dialog.
+
+
+* Project: Now you can search comments of data frames, branches, notes, and dashboards.
+
+
+### Bug Fixes
+
+* Data Source: Excel: The sheet name was not refreshed when re-importing data or pressing the refresh button in the import dialog.
+* Data Source: SQL Editor: Unnecessary function suggestion was showing up.
+* Data Source: SQL: It should show a "Rerun" message when an R conflict occurred.
+* Data Source: Teradata: Database connection failed with external pointer is invalid error.
+
+
+* Data Wrangling: column name highlighting did not work for names containing special characters.
+* Data Wrangling: Column suggestion is not displayed inside parentheses when creating calculation.
+* Data Wrangling: Now you can either ask the error to the Intercom AI or copy the error text when you get a step error message at the top of the window. 
+* Data Wrangling: Refreshing a data frame that references a local file failed after importing a project.
+* Data Wrangling: Summarize: The function box next to the Number Of Rows was disabled by default
+* Data Wrangling: The Delete Confirmation dialog was not centered in the window.
+
+
+* Chart: If you created categories on numeric values and assigned custom bucket labels with only numbers like "1, 2, 3, 4...", the chart showed incorrect number of buckets. 
+* Chart: Line: If you apply the "Percentage" formatting on the X axis, it should multiply the values by 100 automatically.
+* Chart: Scatter (With Aggregation): If you assigned a column to "Color by", it didn't draw a reference line fully from the left edge to the right edge. 
+* Chart: Scatter (With Aggregation): If you assigned a column to "Color by", the labels for the reference line showed up in multiple places. 
+* Chart: Scatter (With Aggregation): If you assigned a column to "Color by", you couldn't change the the color of the diagonal reference line.
+* Chart: The "Cumulative Sum Ratio" Window Calculation should show up in the menu list. 
+
+
+* Analytics: Prophet – The 'Run' button was cut off when multiple external predictor variables were specified.
+
+
+* Note: Deleting text directly below a math block would select the math box instead of deleting the text.
+* Note: Note window was not correctly listed under the window menu.
+* Note: Reduced the delay between clicking the Publish button and the Publish Dialog opening.
+
+
+* Dashboard: Clicking a URL link in the text panel did not open the link in the web browser but displayed it within Exploratory Desktop Window.
+* Dashboard: If you publish a dashboard, it should use the dashboard thumbnail instead of the 1st chart thumbnail for the publish notification email.
+* Dashboard: If you ran Parameter with the "Apply for All Pages" option and moved to another page, the busy icon kept spinning. 
+* Dashboard: If you ran Parameter, the contents of the whole app shifted upward.
+* Dashboard: If you ran Parameter, the scroll bars appeared and disappeared repeatedly on each dashboard panel. 
+* Dashboard: Long page title was not properly truncated in the preview.
+* Dashboard: Parameters – "Failed to generate Dashboard while updating catalog" error occurred when executing parameters.
+* Dashboard: Note: Report menu icon did not appear when hovering over it.
+
+
+* Parameter: Data was re-fetched unnecessarily when updating parameters in an SQL query.
+
+
+* Project: Importing a specific remote project displayed an incorrect import dialog that prevented the import process.
+* Project: Resetting R packages failed when an active project was open.
+* Project: Windows: Publishing a project failed with zip error: Error Code 15.
+
+
+* General: The error message improvement when requesting a License Key fails. 
+* General: The Cmd + Backtick shortcut key interfered with other applications.
+* General: If you clicked the "Ask AI" button in the error dialog, it sent the "[Object object]" as an error message to the Intercom AI chat. 
+* General: The delete confirmation dialog was cut off when many items were listed in the catalog.
+* General: The link to show/hide the error details in the error dialog did not work. 
+
+
+
+
 ## 11.5
 
 Released on 02/18/2025.
