@@ -1,6 +1,15 @@
 # Release Note
 
 
+## 12.1 (Windows Only)
+
+Released on 03/27/2025.
+
+### Bug Fixes
+
+* R: On Windows, if you accessed to a database table that contained Japanese characters, it showed the "ORA-00942: table or view does not exist" error.
+
+
 ## 12.0
 
 Released on 03/26/2025.
