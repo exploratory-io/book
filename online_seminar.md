@@ -1,35 +1,19 @@
-# Seminar #104 - How to Create Custom Charts with R Scripts in Dashboard & Note
-## Date/Time: 8/21/2024 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
-## Duration: 1 hour
+# Seminar #105 - A New Paradigm with AI Prompt based Data Wrangling
+## Date/Time: 4/4/2025 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET
 ## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 
-Since Exploratory is built on top of R it's straightforward to extend Exploratory's out-of-box capability by writing R code. Once of the things you can do is to create custom charts with various R packages such as Treemap, Venn Diagram, Waterfall Chart, etc. for your Dashboards & Notes.
+We have just released Exploratory v12, and the highlight of this release is a feature called ​“Data Wrangling with AI Prompt”, which allows you to transform and clean your data using natural language and AI.
 
-In this seminar, Kan will show you how you can start writing R codes with Dashboards & Notes to create various types of custom charts.
+We truly believe this marks a paradigm shift in data wrangling, and as Exploratory enters its 10th year, we’re incredibly excited to be at the forefront of this new era.
+
+I'm going to introduce the new Data Wrangling with AI Prompt feature with a background story of the paradigm shift in Data Wrangling and also talk about how you can quickly take advantage of the feature efficiently.
+
+Please come and join us!
 
 Agenda:
 
-- How to write R codes in Dashboards & Notes
-- Venn Diagram
-- Waterfall Chart
-- Treemap
-- Hierarchical Clustering Tree
-
-
-----
-
-# Seminar #105 - How to Write LaTeX to Express Mathmatical Formula in Note
-## Date/Time: 8/28/2024 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-
-Agenda:
-
-----
-
-# Seminar #106 - 5 Ways to Maximize the Value of your Survey Data
-## Date/Time: 8/28/2024 (Wed) Noon ET / 9AM PT / 5PM GMT / 6PM CET## Duration: 1 hour
-## Meeting URL: [https://zoom.us/j/331585134](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
-
-
-Agenda:
+* Paradigm Shift in Data Wrangling
+* Introduction to Data Wrangling with AI Prompt
+* Best Practice
+* Release Roadmap
+* Q & A
