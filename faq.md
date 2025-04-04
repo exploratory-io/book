@@ -8,6 +8,10 @@ Any data you import into Exploratory Desktop app always stays on your PC and nev
 
 The data is also stored encrypted. Please take a look at our [Privacy Policy](https://exploratory.io/privacy/) for more details.
 
+## Where exactly my data is stored after importing?
+
+All the data you import into Exploratory Desktop is saved as a binary form (R's Rdata format) inside your repository, which is located under '<your_home_directory>/.exploratory' on your PC.
+
 ## How Exploratory Handles Your Data When Using AI Features
 
 When you use the Data Wrangling with AI Prompt feature in the Exploratory Desktop app, a portion of your data may be sent to our AI service provider, Anthropic (Anthropic, Inc. / https://anthropic.com), depending on your configuration:
@@ -20,9 +24,7 @@ Importantly, none of your data or prompts are stored on Exploratory’s servers.
 In addition, Anthropic does not store or use your data or prompt content for model training purposes. For more details, please refer to Anthropic’s data privacy policy here: [How do you use personal data in model training?](https://privacy.anthropic.com/en/articles/7996885-how-do-you-use-personal-data-in-model-training)
 
 
-## Where exactly my data is stored after importing?
 
-All the data you import into Exploratory Desktop is saved as a binary form (R's Rdata format) inside your repository, which is located under '<your_home_directory>/.exploratory' on your PC.
 
 # Subscription / License / Price / Payment
 
