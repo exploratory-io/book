@@ -47,6 +47,16 @@ Exploratory Cloud Server performs server-side logging of Exploratory Desktop app
 - To help you verify use of your account with your subscription plan and access the product features available to your plan accordingly.  
 - To provide a better information for the published contents like data, charts, or notes. This includes when they are published, when they are scheduled, the data size of the contents, etc.
 
+### How Exploratory Handles Your Data When Using AI Features
+
+When you use the Data Wrangling with AI Prompt feature in the Exploratory Desktop app, a portion of your data may be sent to our AI service provider, Anthropic (Anthropic, Inc.), depending on your configuration:
+
+* If you set the sample data size to a value greater than 0, a sample of your dataset is included in the prompt text sent to Anthropic’s AI service to improve the quality and relevance of the AI-generated suggestions.
+* If you set the sample data size to 0, only the column names and their data types (e.g., "numeric", "character", etc.) are included in the prompt. No actual data values are sent.
+
+Importantly, none of your data or prompts are stored on Exploratory’s servers. We simply pass the information directly to the AI service as part of the prompt, and we do not retain any of it.
+
+In addition, Anthropic does not store or use your data or prompt content for model training purposes. For more details, please refer to Anthropic’s data privacy policy here: [How do you use personal data in model training?](https://privacy.anthropic.com/en/articles/7996885-how-do-you-use-personal-data-in-model-training)
 
 ## What information Exploratory does not collect
 

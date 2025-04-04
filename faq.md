@@ -4,7 +4,21 @@
 
 ## I have very sensitive data. Is my data safe?
 
-Any data you import into Exploratory Desktop always stays on your PC and never leave your PC unless you explicitly publish (share) it to Exploratory Cloud (exploratory.io). If you decided to publish the data to Exploratory Cloud for sharing or scheduling, you can share it in a private way so that only you and others you have invited can view it. The data is also stored encrypted. Please take a look at our [Privacy Policy](https://exploratory.io/privacy/) for more details.
+Any data you import into Exploratory Desktop app always stays on your PC and never leave your PC unless you explicitly publish (share) it to Exploratory Server (exploratory.io) or use Data Wrangling with AI Prompt feature. If you decided to publish the data to Exploratory Server for sharing or scheduling, you can share it in a private way so that only you and others you have invited can view it.
+
+The data is also stored encrypted. Please take a look at our [Privacy Policy](https://exploratory.io/privacy/) for more details.
+
+## How Exploratory Handles Your Data When Using AI Features
+
+When you use the Data Wrangling with AI Prompt feature in the Exploratory Desktop app, a portion of your data may be sent to our AI service provider, Anthropic (Anthropic, Inc. / https://anthropic.com), depending on your configuration:
+
+* If you set the sample data size to a value greater than 0, a sample of your dataset is included in the prompt text sent to Anthropic’s AI service to improve the quality and relevance of the AI-generated suggestions.
+* If you set the sample data size to 0, only the column names and their data types (e.g., "numeric", "character", etc.) are included in the prompt. No actual data values are sent.
+
+Importantly, none of your data or prompts are stored on Exploratory’s servers. We simply pass the information directly to the AI service as part of the prompt, and we do not retain any of it.
+
+In addition, Anthropic does not store or use your data or prompt content for model training purposes. For more details, please refer to Anthropic’s data privacy policy here: [How do you use personal data in model training?](https://privacy.anthropic.com/en/articles/7996885-how-do-you-use-personal-data-in-model-training)
+
 
 ## Where exactly my data is stored after importing?
 
