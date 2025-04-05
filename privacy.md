@@ -47,7 +47,7 @@ Exploratory Cloud Server performs server-side logging of Exploratory Desktop app
 - To help you verify use of your account with your subscription plan and access the product features available to your plan accordingly.  
 - To provide a better information for the published contents like data, charts, or notes. This includes when they are published, when they are scheduled, the data size of the contents, etc.
 
-### How Exploratory Handles Your Data When Using AI Features
+## How Exploratory Handles Your Data When Using AI Features
 
 When you use the Data Wrangling with AI Prompt feature in the Exploratory Desktop app, a portion of your data may be sent to our AI service provider, Anthropic (Anthropic, Inc.), depending on your configuration:
 
