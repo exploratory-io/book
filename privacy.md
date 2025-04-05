@@ -1,6 +1,6 @@
 # Exploratory Privacy Statement
 
-Effective date: May 11, 2017
+Effective date: April 1, 2025
 
 Thanks for entrusting Exploratory with your data, your projects, and your personal information. Holding onto your private information is a serious responsibility, and we want you to know how we're handling it.
 

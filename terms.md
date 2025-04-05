@@ -61,7 +61,7 @@ In the event that Exploratory takes action to suspend or terminate an account, w
 
 Additionally, in the event that an account is suspended or terminated, any unused portion of the amount already paid at that time will be refunded.
 
-As of the current date (October 17, 2024), since the service began in May 2016, no paid accounts have been suspended nor terminated. However, with respect to free accounts (during the trial period or with the Public plan), we have had to delete accounts created based on spam or security concerns.
+As of the current date (April 4th, 2025), since the service began in May 2016, no paid accounts have been suspended nor terminated. However, with respect to free accounts (during the trial period or with the Public plan), we have had to delete accounts created based on spam or security concerns.
 
 The following are cases in which we may suspend or terminate an account:
 
