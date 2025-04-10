@@ -1,5 +1,39 @@
 # Release Note
 
+## 12.2
+
+Released on 4/9/2025.
+
+### Enhancements
+
+* Chart: Pivot Table: Summarize Table: Now you can choose to show all levels of the subtotals or only the top level of subtotals.
+* Chart: Summarize Table: Now you can choose the 'Current Value Column' as a target column in Limit.
+
+
+### Bug Fixes
+
+* AI: Prompt: The AI Prompt step menu appeared even when the system was offline.
+* AI: Prompt: The AI Prompt dialog was dragged outside the visible window.
+* AI: Prompt: Pressing the Escape key inside the R Script editor incorrectly closed the AI Prompt dialog.
+* AI: Prompt: Newly typed column names in the R Script editor were not being highlighted.
+* AI: Prompt: Column name suggestions didn't work correctly after typing a function name in the R Script editor.
+* AI: Prompt: The tooltip background for error steps were white instead of the intended black.
+
+
+* Data Source: Prevented drag-and-drop file import when the AI Prompt dialog was open.
+* Data Source: MS SQL Server: Implemented a retry mechanism for handling "Communication link failure" errors.
+
+
+* Data Wrangling: Create Calculation with Conditions: Improved the condition panel scrollbar for smoother and more reliable scrolling.
+* Data Wrangling: It should checks the data frame metadata and shows a warning with details if there's any inconsistency that might cause a data frame to be missing when you duplicate a project.
+
+
+* Chart: Chart was refreshed when you updated the condition for the conditional aggregation such as "Sum If" even though the auto-run option was turned off.
+* Chart: Pivot Table: If you sorted the column in the descending order, the subtotal order didn't match.
+
+
+* General: Windows:  Exploratory window unexpectedly shifted position when using external displays.
+
 
 ## 12.1 (Windows Only)
 
