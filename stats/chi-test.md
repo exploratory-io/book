@@ -2,9 +2,11 @@
 
 ## Introduction
 
-Statistical test to evaluate if distribution of variables is different among groups(columns).
+The Chi-Square Test is a statistical method used to determine whether there is a significant difference in the distribution of categorical variables between two groups (i.e., two columns).
 
 ## How to Access?
+
+Click on the Chi-Square Test option from the step menu.
 
 ![](images/chisq_add.png)
 
@@ -12,31 +14,52 @@ Statistical test to evaluate if distribution of variables is different among gro
 
 #### Column Selection
 
+In the Chi-Square Test dialog:
+
 ![](images/chisq_dialog.png)
 
-There are many ways to select columns. You can choose
-* Select Column Names - Listing up columns selecting one by one
-* Range of Column Position - Select columns between columns chosen as Start and End
-* Starts with - Select columns whose names start with a certain text
-* Ends with - Select columns whose names end with a certain text
-* Contains - Select columns whose names contain a certain text.
-* Matches Regular Expression - Select columns whose names contain a certain text.
-* Range of Suffix (X1, X2...) - Select columns names with prefix and numbers.
-* Everything - All columns.
-* All Numeric Columns - All numeric columns.
+* Select Column Names - Choose two categorical columns from the list. These columns will be used to evaluate the distribution differences between groups.
 
-### Parameters
+## Output
 
-* Correct Continuity (Optional) - Whether continuity correction will be applied for 2 by 2 tables.
-* Probability to Compare (Optional) - This works when one column is selected. A column to be considered as probability to be compared.
-* Rescale Probability (Optional) - The default is TRUE. If TRUE, p is rescaled to sum to 1. If FALSE and p doesn't sum to 1, it causes an error.
-* Simulate Probability (Optional) - The default is FALSE. Whether p value should be calculated by Monte Carlo simulation.
-* Number of Replicates in Monte Carlo Test (B) (Optional) - The default is 2000. This works only when simulate.p.value is TRUE. The number of replicates for Monte Carlo test.
+The Chi-Square Test will output the following metrics:
 
-Take a look at the [reference document](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/chisq.test.html) for the 'chisq.test' function from base R for more details on the parameters.
+![](images/chisq_output.png)
 
+### Key Statistics
 
-## Introduction of Chi-square test feature
+| Metric | Description |
+|--------|-------------|
+| **Chi-Square** | indicates how much difference exists between the actual counts (number of rows) in each combination of the categories and their expected counts if there were no relationship between the two categorical variables. <br> P Value is calculated based on where this Chi-Square value resides on a given Chi-Square distribution.
+| **P Value** | indicates a probability of observing the relationship between the two categorical variables if we accept a null hypothesis (assumption) that there is no relationship between the two. <br> If it is less than a threshold value you can reject the null hypothesis and conclude that there is a statistically significant difference between the two groups. Otherwise, it’s not significant. The threshold is set to 0.05 (5%) by default. |
+| **DF** | Degrees of freedom represent the number of independent values that can vary in the calculation of a statistic. The degrees of freedom is calculated as (number of rows − 1) × (number of columns − 1). |
+| **Rows** | Number of rows in the dataset |
 
-* [
-Exploratory v3.2 Released!](https://blog.exploratory.io/exploratory-v3-2-released-da940b794043)
+### Effect Size Measurements
+
+#### Phi Coefficient
+- **Description**: Measures the strength of association between two categorical variables
+- **Calculation**: √(Chi-Square / sample size)
+- **Interpretation**:
+  - 0.14: Large Effect
+  - 0.06: Medium Effect
+  - 0.01: Small Effect
+
+#### Cramer's V
+- **Description**: Cramer's V is an effect size measurement for the Chi-Square Test. It measures how strongly two categorical variables are associated.
+- **Calculation**: √(Chi-Square / (min(categories) - 1) × sample size)
+- **Interpretation**:
+  - 0.5: Large Effect
+  - 0.3: Medium Effect
+  - 0.1: Small Effect
+- **Note**: Interpretation may vary based on degrees of freedom
+
+#### Cohen's W
+- **Description**: Measures the strength of association between two categorical variables
+
+### Statistical Power Analysis
+
+| Metric | Description |
+|--------|-------------|
+| **Power** | Probability of correctly rejecting the null hypothesis when it is false |
+| **Type 2 Error** | Probability of incorrectly accepting the null hypothesis when it is false |
