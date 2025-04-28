@@ -1,5 +1,66 @@
 # Release Note
 
+
+
+## 12.3
+
+Released on 04/28/2025.
+
+### Enhancements
+
+* AI: Prompt: Now you can preview the output of the suggested R script by clicking the "Preview" button at the R code block. You can also run the R script partially by selecting the R expression and running the preview.
+* AI: Prompt: Now you can fix the problem of the suggested R script by clicking the "Auto Fix" button in the preview area.
+* AI: Prompt: Now you can see the history of the past prompts that match what you type in.
+* AI: Prompt: Now you can use "@" sign for the data frame name suggestion in addition to the "$" sign.
+
+
+* Chart: Pivot Table: Now you can control the alignment of the column title text from the Column Property dialog.
+* Chart: Pivot Table: Now you can show the vertical grid lines between column categories from the Chart Property dialog.
+
+
+* Dashboard: Now you can replace the chart with a different one from the "Choose a different chart" button.
+
+
+* Data Wrangling: Export: Now you can enhance CSV export options, including Encoding (BOM) and Line Endings Code (LF/CRLF).
+
+
+### Bug fixes
+
+* AI: Prompt: Added support for auto-scrolling to the bottom of content while streaming results from AI.
+* AI: Prompt: After you changed your email address on Exploratory Server, AI Prompt does not work on Exploratory Desktop.
+* AI: Prompt: Automatically prefix function names with the corresponding package name when the package was not loaded by default.
+* AI: Prompt: Improved error handling for cases where the server becomes unresponsive during a request, such as a 529 Overloaded Error.
+* AI: Prompt: The screen appeared blank when attempting to create a linear regression model.
+* AI: Prompt: Unnecessary scripts were generated when attempting to merge data frames.
+* AI: Prompt: When an account was created before MongoDB schema changes, AI Prompt shows an empty screen where it should show an error message.
+* AI: Ask AI: It should open the Intercom client on desktop and ask a solution for the error directly instead of opening an external browser.
+
+
+* Table View: Column summary panel didn't close if you moved to the other wrangling step.
+
+
+* Data Wrangling: Character columns could not be selected in the Chi-square Test dialog.
+* Data Wrangling: Export: Leading zeros were lost when exporting data to Google Sheets.
+* Data Wrangling: The argument value 'FALSE' was not properly suggested in syntax suggestions.
+
+
+* Chart: Boxplot: "Show Unused Levels" setting on the X-axis didn't work properly.
+
+
+* Analytics: t-Test: Result was different from the one created from the step.
+
+
+* Dashboard: LaTeX formatting was not working in the text editor.
+* Dashboard: On Windows, publishing failed with "EPERM: Operation Not Permitted, Open" error.
+* Note: Repeatedly copying and pasting Math blocks, R blocks, and images within the same note caused instability when pressing the Enter key.
+
+
+* General: Mac: Full-screen mode was canceled when switching to another screen.
+* General: Mac: Prevented windows from moving when toggling between Exploratory windows using Cmd + Backtick (`).
+* General: The purrr package should be loaded by default when you open a project.
+
+
+
 ## 12.2
 
 Released on 4/9/2025.
