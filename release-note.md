@@ -34,7 +34,7 @@ Released on 04/28/2025.
 * AI: Prompt: The screen appeared blank when attempting to create a linear regression model.
 * AI: Prompt: Unnecessary scripts were generated when attempting to merge data frames.
 * AI: Prompt: When an account was created before MongoDB schema changes, AI Prompt shows an empty screen where it should show an error message.
-* AI: Ask AI: It should open the Intercom client on desktop and ask a solution for the error directly instead of opening an external browser.
+* AI: Ask AI: It should open the chart window on desktop and ask a solution for the error directly instead of opening an external browser.
 
 
 * Table View: Column summary panel didn't close if you moved to the other wrangling step.
