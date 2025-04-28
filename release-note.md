@@ -14,14 +14,15 @@ Released on 04/28/2025.
 * AI: Prompt: Now you can use "@" sign for the data frame name suggestion in addition to the "$" sign.
 
 
+* Data Wrangling: Export: Now you can enhance CSV export options, including Encoding (BOM) and Line Endings Code (LF/CRLF).
+
+
 * Chart: Pivot Table: Now you can control the alignment of the column title text from the Column Property dialog.
 * Chart: Pivot Table: Now you can show the vertical grid lines between column categories from the Chart Property dialog.
 
 
 * Dashboard: Now you can replace the chart with a different one from the "Choose a different chart" button.
 
-
-* Data Wrangling: Export: Now you can enhance CSV export options, including Encoding (BOM) and Line Endings Code (LF/CRLF).
 
 
 ### Bug fixes
