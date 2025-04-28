@@ -1,17 +1,16 @@
 # Release Note
 
-
-
 ## 12.3
 
 Released on 04/28/2025.
 
 ### Enhancements
 
-* AI: Prompt: Now you can preview the output of the suggested R script by clicking the "Preview" button at the R code block. You can also run the R script partially by selecting the R expression and running the preview.
-* AI: Prompt: Now you can fix the problem of the suggested R script by clicking the "Auto Fix" button in the preview area.
-* AI: Prompt: Now you can see the history of the past prompts that match what you type in.
-* AI: Prompt: Now you can use "@" sign for the data frame name suggestion in addition to the "$" sign.
+* AI Prompt: Now you can preview the output of the suggested R script by clicking the "Preview" button at the R code block.
+* AI Prompt: Now you can select a part of the generated R script and preview the result.
+* AI Prompt: When you see an error by running the generated R script in AI Prompt dialog, you can click on 'Auto Fix' button to have AI automatically fix the R script in the Preview pane.
+* AI Prompt: Now you can see the history of the past prompts that match what you type in.
+* AI Prompt: Now you can use "@" sign for the data frame name suggestion in addition to the "$" sign.
 
 
 * Data Wrangling: Export: Now you can enhance CSV export options, including Encoding (BOM) and Line Endings Code (LF/CRLF).
@@ -21,20 +20,17 @@ Released on 04/28/2025.
 * Chart: Pivot Table: Now you can show the vertical grid lines between column categories from the Chart Property dialog.
 
 
-* Dashboard: Now you can replace the chart with a different one from the "Choose a different chart" button.
+* Dashboard: Now you can replace the existing chart with a new chart by clicking the "Choose a different chart" button.
 
 
 
 ### Bug fixes
 
-* AI: Prompt: Added support for auto-scrolling to the bottom of content while streaming results from AI.
-* AI: Prompt: After you changed your email address on Exploratory Server, AI Prompt does not work on Exploratory Desktop.
-* AI: Prompt: Automatically prefix function names with the corresponding package name when the package was not loaded by default.
-* AI: Prompt: Improved error handling for cases where the server becomes unresponsive during a request, such as a 529 Overloaded Error.
-* AI: Prompt: The screen appeared blank when attempting to create a linear regression model.
-* AI: Prompt: Unnecessary scripts were generated when attempting to merge data frames.
-* AI: Prompt: When an account was created before MongoDB schema changes, AI Prompt shows an empty screen where it should show an error message.
-* AI: Ask AI: It should open the chart window on desktop and ask a solution for the error directly instead of opening an external browser.
+* AI Prompt: Added support for auto-scrolling to the bottom of content while streaming results from AI.
+* AI Prompt: After you changed your email address on Exploratory Server, AI Prompt does not work on Exploratory Desktop.
+* AI Prompt: Automatically prefix function names with the corresponding package name when the package was not loaded by default.
+* AI Prompt: Improved error handling for cases where the server becomes unresponsive during a request, such as a 529 Overloaded Error.
+* AI: Ask AI: It should open the chat window inside Exploratory Desktop app instead of opening an external web browser.
 
 
 * Table View: Column summary panel didn't close if you moved to the other wrangling step.
@@ -42,7 +38,6 @@ Released on 04/28/2025.
 
 * Data Wrangling: Character columns could not be selected in the Chi-square Test dialog.
 * Data Wrangling: Export: Leading zeros were lost when exporting data to Google Sheets.
-* Data Wrangling: The argument value 'FALSE' was not properly suggested in syntax suggestions.
 
 
 * Chart: Boxplot: "Show Unused Levels" setting on the X-axis didn't work properly.
@@ -57,8 +52,7 @@ Released on 04/28/2025.
 
 
 * General: Mac: Full-screen mode was canceled when switching to another screen.
-* General: Mac: Prevented windows from moving when toggling between Exploratory windows using Cmd + Backtick (`).
-* General: The purrr package should be loaded by default when you open a project.
+* General: The 'purrr' package should be loaded by default when you open a project.
 
 
 
@@ -74,12 +68,12 @@ Released on 4/9/2025.
 
 ### Bug Fixes
 
-* AI: Prompt: The AI Prompt step menu appeared even when the system was offline.
-* AI: Prompt: The AI Prompt dialog was dragged outside the visible window.
-* AI: Prompt: Pressing the Escape key inside the R Script editor incorrectly closed the AI Prompt dialog.
-* AI: Prompt: Newly typed column names in the R Script editor were not being highlighted.
-* AI: Prompt: Column name suggestions didn't work correctly after typing a function name in the R Script editor.
-* AI: Prompt: The tooltip background for error steps were white instead of the intended black.
+* AI Prompt: The AI Prompt step menu appeared even when the system was offline.
+* AI Prompt: The AI Prompt dialog was dragged outside the visible window.
+* AI Prompt: Pressing the Escape key inside the R Script editor incorrectly closed the AI Prompt dialog.
+* AI Prompt: Newly typed column names in the R Script editor were not being highlighted.
+* AI Prompt: Column name suggestions didn't work correctly after typing a function name in the R Script editor.
+* AI Prompt: The tooltip background for error steps were white instead of the intended black.
 
 
 * Data Source: Prevented drag-and-drop file import when the AI Prompt dialog was open.
@@ -132,18 +126,18 @@ Released on 03/26/2025.
 
 * Data Wrangling: column name highlighting did not work for names containing special characters.
 * Data Wrangling: Column suggestion is not displayed inside parentheses when creating calculation.
-* Data Wrangling: Now you can either ask the error to the Intercom AI or copy the error text when you get a step error message at the top of the window. 
+* Data Wrangling: Now you can either ask the error to the Intercom AI or copy the error text when you get a step error message at the top of the window.
 * Data Wrangling: Refreshing a data frame that references a local file failed after importing a project.
 * Data Wrangling: Summarize: The function box next to the Number Of Rows was disabled by default
 * Data Wrangling: The Delete Confirmation dialog was not centered in the window.
 
 
-* Chart: If you created categories on numeric values and assigned custom bucket labels with only numbers like "1, 2, 3, 4...", the chart showed incorrect number of buckets. 
+* Chart: If you created categories on numeric values and assigned custom bucket labels with only numbers like "1, 2, 3, 4...", the chart showed incorrect number of buckets.
 * Chart: Line: If you apply the "Percentage" formatting on the X axis, it should multiply the values by 100 automatically.
-* Chart: Scatter (With Aggregation): If you assigned a column to "Color by", it didn't draw a reference line fully from the left edge to the right edge. 
-* Chart: Scatter (With Aggregation): If you assigned a column to "Color by", the labels for the reference line showed up in multiple places. 
+* Chart: Scatter (With Aggregation): If you assigned a column to "Color by", it didn't draw a reference line fully from the left edge to the right edge.
+* Chart: Scatter (With Aggregation): If you assigned a column to "Color by", the labels for the reference line showed up in multiple places.
 * Chart: Scatter (With Aggregation): If you assigned a column to "Color by", you couldn't change the the color of the diagonal reference line.
-* Chart: The "Cumulative Sum Ratio" Window Calculation should show up in the menu list. 
+* Chart: The "Cumulative Sum Ratio" Window Calculation should show up in the menu list.
 
 
 * Analytics: Prophet – The 'Run' button was cut off when multiple external predictor variables were specified.
@@ -156,9 +150,9 @@ Released on 03/26/2025.
 
 * Dashboard: Clicking a URL link in the text panel did not open the link in the web browser but displayed it within Exploratory Desktop Window.
 * Dashboard: If you publish a dashboard, it should use the dashboard thumbnail instead of the 1st chart thumbnail for the publish notification email.
-* Dashboard: If you ran Parameter with the "Apply for All Pages" option and moved to another page, the busy icon kept spinning. 
+* Dashboard: If you ran Parameter with the "Apply for All Pages" option and moved to another page, the busy icon kept spinning.
 * Dashboard: If you ran Parameter, the contents of the whole app shifted upward.
-* Dashboard: If you ran Parameter, the scroll bars appeared and disappeared repeatedly on each dashboard panel. 
+* Dashboard: If you ran Parameter, the scroll bars appeared and disappeared repeatedly on each dashboard panel.
 * Dashboard: Long page title was not properly truncated in the preview.
 * Dashboard: Parameters – "Failed to generate Dashboard while updating catalog" error occurred when executing parameters.
 * Dashboard: Note: Report menu icon did not appear when hovering over it.
@@ -172,11 +166,11 @@ Released on 03/26/2025.
 * Project: Windows: Publishing a project failed with zip error: Error Code 15.
 
 
-* General: The error message improvement when requesting a License Key fails. 
+* General: The error message improvement when requesting a License Key fails.
 * General: The Cmd + Backtick shortcut key interfered with other applications.
-* General: If you clicked the "Ask AI" button in the error dialog, it sent the "[Object object]" as an error message to the Intercom AI chat. 
+* General: If you clicked the "Ask AI" button in the error dialog, it sent the "[Object object]" as an error message to the Intercom AI chat.
 * General: The delete confirmation dialog was cut off when many items were listed in the catalog.
-* General: The link to show/hide the error details in the error dialog did not work. 
+* General: The link to show/hide the error details in the error dialog did not work.
 
 
 
@@ -290,7 +284,7 @@ Now you can copy and paste the following objects across multiple project windows
 - Data Wrangling Steps
 - Charts
 - Notes
-- Dashboards 
+- Dashboards
 
 Also, now you can copy and paste charts across multiple data frames within a same project.
 
