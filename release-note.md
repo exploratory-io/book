@@ -43,7 +43,7 @@ Released on 04/28/2025.
 * Chart: Boxplot: "Show Unused Levels" setting on the X-axis didn't work properly.
 
 
-* Analytics: t-Test: Result was different from the one created from the step.
+* Analytics: The result of 'Paired t-Test' was not matching with the result of R.
 
 
 * Dashboard: LaTeX formatting was not working in the text editor.
