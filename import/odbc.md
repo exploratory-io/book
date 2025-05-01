@@ -103,3 +103,5 @@ This will show you Actual Number of Rows like below.
 - [Importing multi-byte characters from Teradata Aster fails](https://exploratory.io/note/exploratory/How-to-workaround-known-issues-when-connectiong-to-Teradata-Aster-with-ODBC-BTG0Tmz9)
 
 - [Schema and Tables are not shown for Kintone](https://exploratory.io/note/exploratory/How-to-workaround-known-issues-when-connecting-to-Kintone-with-ODBC-hjq9Deg4)
+
+- [Unable to Connect to IBM DB2 with ODBC and it shows error message SQLAllocHandle failed at SQL_HANDLE_ENV.](https://community.exploratory.io/t/unable-to-connect-to-ibm-db2-with-odbc-and-it-shows-error-message-sqlallochandle-failed-at-sql-handle-env/3888)
