@@ -26,5 +26,5 @@
 
 * 日時：2025/5/8（木） 昼 12:00 - 13:00（日本時間）
 * スピーカー：西田 勘一郎
-* 形式：オンライン（Zoom）- [URL リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
+* 形式：オンライン（Zoom）- [リンク](https://us02web.zoom.us/j/331585134?pwd=VGVyeXBRWjFMT2hESFdhSU45Z2d0dz09)
 * 参加費：無料
