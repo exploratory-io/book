@@ -1,52 +1,52 @@
-# 分析結果
+# サマリ
 
 今回の分析では、共変量として<%= covariate %>を調整した上で、<%= explanatory %>による<%= target %>の平均の差が有意かどうかを調べました。
 
-<% if (p_explanatory > 0.05 && p_interaction > 0.05) { %>
-  結果として、<%= explanatory %>の主効果（P値: <%= 100 * p_explanatory %>%）および<%= explanatory %> * <%= covariate %>の交互作用（P値: <%= 100 * p_interaction %>%）のいずれも有意水準5%（0.05）より大きいため、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は統計的に有意とは言えません。
+<% if (p_explanatory > baseline_p && p_interaction > baseline_p) { %>
+結果として、<%= explanatory %>の主効果（P値: <%= p_explanatory_pct %>%）および<%= explanatory %> * <%= covariate %>の交互作用（P値: <%= p_interaction_pct %>%）のいずれも有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は統計的に有意とは言えません。
 <% } %>
 
-<% if (p_explanatory <= 0.05 && p_interaction > 0.05) { %>
-  結果として、<%= explanatory %>の主効果（P値: <%= 100 * p_explanatory %>%）は有意水準5%（0.05）より低いため統計的に有意です。<%= explanatory %> * <%= covariate %>の交互作用（P値: <%= 100 * p_interaction %>%）は有意水準5%（0.05）より大きいため統計的に有意とは言えません。
+<% if (p_explanatory <= baseline_p && p_interaction > baseline_p) { %>
+結果として、<%= explanatory %>の主効果（P値: <%= p_explanatory_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。<%= explanatory %> * <%= covariate %>の交互作用（P値: <%= p_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意です。
 
   <% if (effect_size_explanatory < 0.06) { %>
-    <%= explanatory %>の効果量（Eta2乗）は<%= 100 * effect_size_explanatory %>%と低く、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は小さなものです。
+<%= explanatory %>の効果量（Eta2乗）は<%= effect_size_explanatory_pct %>%と低く、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は小さなものです。
   <% } else if (effect_size_explanatory < 0.14) { %>
-    <%= explanatory %>の効果量（Eta2乗）は<%= 100 * effect_size_explanatory %>%なので、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は中程度です。
+<%= explanatory %>の効果量（Eta2乗）は<%= effect_size_explanatory_pct %>%なので、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は中程度です。
   <% } else { %>
-    <%= explanatory %>の効果量（Eta2乗）も<%= 100 * effect_size_explanatory %>%と大きく、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
+<%= explanatory %>の効果量（Eta2乗）も<%= effect_size_explanatory_pct %>%と大きく、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
   <% } %>
 <% } %>
 
-<% if (p_explanatory > 0.05 && p_interaction <= 0.05) { %>
-  結果として、<%= explanatory %> * <%= covariate %>の交互作用（P値: <%= 100 * p_interaction %>%）は有意水準5%（0.05）より低いため統計的に有意ですが、<%= explanatory %>の主効果（P値: <%= 100 * p_explanatory %>%）は有意水準5%（0.05）より大きいため統計的に有意とは言えません。交互作用が有意であることは、<%= explanatory %>による<%= target %>への影響が<%= covariate %>の値によって異なることを示しています。
+<% if (p_explanatory > baseline_p && p_interaction <= baseline_p) { %>
+  結果として、<%= explanatory %> * <%= covariate %>の交互作用（P値: <%= p_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory %>の主効果（P値: <%= p_explanatory_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。交互作用が有意であることは、<%= explanatory %>による<%= target %>への影響が<%= covariate %>の値によって異なることを示しています。
 
   <% if (effect_size_interaction < 0.06) { %>
-    交互作用の効果量（Eta2乗）は<%= 100 * effect_size_interaction %>%と低く、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は小さなものです。
+交互作用の効果量（Eta2乗）は<%= effect_size_interaction_pct %>%と低く、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は小さなものです。
   <% } else if (effect_size_interaction < 0.14) { %>
-    交互作用の効果量（Eta2乗）は<%= 100 * effect_size_interaction %>%なので、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は中程度です。
+交互作用の効果量（Eta2乗）は<%= effect_size_interaction_pct %>%なので、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は中程度です。
   <% } else { %>
-    交互作用の効果量（Eta2乗）も<%= 100 * effect_size_interaction %>%と大きく、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は大きいと言えます。
+交互作用の効果量（Eta2乗）も<%= effect_size_interaction_pct %>%と大きく、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は大きいと言えます。
   <% } %>
 <% } %>
 
-<% if (p_explanatory <= 0.05 && p_interaction <= 0.05) { %>
-  結果として、<%= explanatory %>の主効果（P値: <%= 100 * p_explanatory %>%）および<%= explanatory %> * <%= covariate %>の交互作用（P値: <%= 100 * p_interaction %>%）のいずれも有意水準5%（0.05）より低いため統計的に有意です。交互作用が有意であることは、<%= explanatory %>による<%= target %>への影響が<%= covariate %>の値によって異なることを示しています。したがって、<%= explanatory %>の主効果の解釈は慎重に行う必要があります。
+<% if (p_explanatory <= baseline_p && p_interaction <= baseline_p) { %>
+結果として、<%= explanatory %>の主効果（P値: <%= p_explanatory_pct %>%）および<%= explanatory %> * <%= covariate %>の交互作用（P値: <%= p_interaction_pct %>%）のいずれも有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意です。交互作用が有意であることは、<%= explanatory %>による<%= target %>への影響が<%= covariate %>の値によって異なることを示しています。したがって、<%= explanatory %>の主効果の解釈は慎重に行う必要があります。
 
   <% if (effect_size_explanatory < 0.06) { %>
-    <%= explanatory %>の効果量（Eta2乗）は<%= 100 * effect_size_explanatory %>%と低く、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は小さなものです。
+<%= explanatory %>の効果量（Eta2乗）は<%= effect_size_explanatory_pct %>%と低く、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は小さなものです。
   <% } else if (effect_size_explanatory < 0.14) { %>
-    <%= explanatory %>の効果量（Eta2乗）は<%= 100 * effect_size_explanatory %>%なので、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は中程度です。
+<%= explanatory %>の効果量（Eta2乗）は<%= effect_size_explanatory_pct %>%なので、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は中程度です。
   <% } else { %>
-    <%= explanatory %>の効果量（Eta2乗）も<%= 100 * effect_size_explanatory %>%と大きく、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
+<%= explanatory %>の効果量（Eta2乗）も<%= effect_size_explanatory_pct %>%と大きく、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
   <% } %>
 
   <% if (effect_size_interaction < 0.06) { %>
-    交互作用の効果量（Eta2乗）は<%= 100 * effect_size_interaction %>%と低く、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は小さなものです。
+交互作用の効果量（Eta2乗）は<%= effect_size_interaction_pct %>%と低く、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は小さなものです。
   <% } else if (effect_size_interaction < 0.14) { %>
-    交互作用の効果量（Eta2乗）は<%= 100 * effect_size_interaction %>%なので、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は中程度です。
+交互作用の効果量（Eta2乗）は<%= effect_size_interaction_pct %>%なので、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は中程度です。
   <% } else { %>
-    交互作用の効果量（Eta2乗）も<%= 100 * effect_size_interaction %>%と大きく、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は大きいと言えます。
+交互作用の効果量（Eta2乗）も<%= effect_size_interaction_pct %>%と大きく、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は大きいと言えます。
   <% } %>
 <% } %>
 
@@ -54,10 +54,9 @@
 
 有意性については、P値によって判断できます。
 
-{{summary_chart}}
-
-# 主要な統計指標
-
+{{summary}}
+{start_show_hide}
+## 主要な統計指標
 * 変数
   * 変数は分析に含まれる要因の名前を示します。ANOCOVAでは主に「共変量」「要因（独立変数）」が表示されます。
   * 共変量は統制したい連続変数（例：年齢、スコアなど）、要因は効果を調べたいカテゴリ変数です。
@@ -111,96 +110,95 @@
   * Omega2乗はEta2乗を改良した効果量の指標で、サンプルサイズによるバイアスが小さいとされています。
   * 値は0から1の間（厳密には負の値も取りうる）で、値が大きいほど効果が大きいことを示します。
   * 一般的にEta2乗より若干小さい値になり、サンプルサイズが小さい場合や将来の研究への一般化を考える際に推奨されます。
+{end_show_hide}
 
 ## <%= explanatory %>の主効果（P値）
 
 <%= explanatory %>の主効果に関する帰無仮説は「<%= covariate %>の影響を調整した後、<%= explanatory %>の複数のグループ間で<%= target %>の平均には差がない」というものです。
 
-<% if (p_explanatory > 0.05) { %>
-  検定の結果、P値が<%= 100 * p_explanatory %>% (<%= p_explanatory %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_explanatory %>）がたまたま得られる確率が約<%= 100 * p_explanatory %>%であるということです。有意水準が5% (0.05) の場合、この確率は十分に高いので、帰無仮説を棄却できません。つまり、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は統計的に有意であると言えません。
+<% if (p_explanatory > baseline_p) { %>
+検定の結果、P値が<%= p_explanatory_pct %>% (<%= p_explanatory %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_explanatory %>）がたまたま得られる確率が約<%= p_explanatory_pct %>%であるということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>) の場合、この確率は十分に高いので、帰無仮説を棄却できません。つまり、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は統計的に有意であると言えません。
 <% } %>
 
-<% if (p_explanatory <= 0.05) { %>
-  検定の結果、P値が<%= 100 * p_explanatory %>% (<%= p_explanatory %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_explanatory %>）がたまたま得られる確率は約<%= 100 * p_explanatory %>%しかないということです。有意水準が5% (0.05) の場合、この確率は十分に低いので、帰無仮説を棄却できます。つまり、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は統計的に有意であると言えます。
+<% if (p_explanatory <= baseline_p) { %>
+検定の結果、P値が<%= p_explanatory_pct %>% (<%= p_explanatory %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_explanatory %>）がたまたま得られる確率は約<%= p_explanatory_pct %>%しかないということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>) の場合、この確率は十分に低いので、帰無仮説を棄却できます。つまり、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は統計的に有意であると言えます。
 <% } %>
 
 ## <%= covariate %>の効果（P値）
 
 <%= covariate %>の効果に関する帰無仮説は「<%= target %>と<%= covariate %>の間に線形関係がない」というものです。
 
-<% if (p_covariate > 0.05) { %>
-  検定の結果、P値が<%= 100 * p_covariate %>% (<%= p_covariate %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_covariate %>）がたまたま得られる確率が約<%= 100 * p_covariate %>%であるということです。有意水準が5% (0.05) の場合、この確率は十分に高いので、帰無仮説を棄却できません。つまり、<%= target %>と<%= covariate %>の間に統計的に有意な線形関係があるとは言えません。
+<% if (p_covariate > baseline_p) { %>
+検定の結果、P値が<%= p_covariate_pct %>% (<%= p_covariate %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_covariate %>）がたまたま得られる確率が約<%= p_covariate_pct %>%であるということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>) の場合、この確率は十分に高いので、帰無仮説を棄却できません。つまり、<%= target %>と<%= covariate %>の間に統計的に有意な線形関係があるとは言えません。
 <% } %>
 
-<% if (p_covariate <= 0.05) { %>
-  検定の結果、P値が<%= 100 * p_covariate %>% (<%= p_covariate %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_covariate %>）がたまたま得られる確率は約<%= 100 * p_covariate %>%しかないということです。有意水準が5% (0.05) の場合、この確率は十分に低いので、帰無仮説を棄却できます。つまり、<%= target %>と<%= covariate %>の間に統計的に有意な線形関係があると言えます。
+<% if (p_covariate <= baseline_p) { %>
+検定の結果、P値が<%= p_covariate_pct %>% (<%= p_covariate %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_covariate %>）がたまたま得られる確率は約<%= p_covariate_pct %>%しかないということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>) の場合、この確率は十分に低いので、帰無仮説を棄却できます。つまり、<%= target %>と<%= covariate %>の間に統計的に有意な線形関係があると言えます。
 <% } %>
 
 ## <%= explanatory %> * <%= covariate %>の交互作用（P値）
 
 <%= explanatory %>と<%= covariate %>の交互作用に関する帰無仮説は「<%= explanatory %>の各グループにおける<%= target %>と<%= covariate %>の関係は同じである」というものです。
 
-<% if (p_interaction > 0.05) { %>
-  検定の結果、P値が<%= 100 * p_interaction %>% (<%= p_interaction %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_interaction %>）がたまたま得られる確率が約<%= 100 * p_interaction %>%であるということです。有意水準が5% (0.05) の場合、この確率は十分に高いので、帰無仮説を棄却できません。つまり、<%= explanatory %>の各グループにおける<%= target %>と<%= covariate %>の関係に統計的に有意な違いがあるとは言えません。
+<% if (p_interaction > baseline_p) { %>
+検定の結果、P値が<%= p_interaction_pct %>% (<%= p_interaction %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_interaction %>）がたまたま得られる確率が約<%= p_interaction_pct %>%であるということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>) の場合、この確率は十分に高いので、帰無仮説を棄却できません。つまり、<%= explanatory %>の各グループにおける<%= target %>と<%= covariate %>の関係に統計的に有意な違いがあるとは言えません。
 <% } %>
 
-<% if (p_interaction <= 0.05) { %>
-  検定の結果、P値が<%= 100 * p_interaction %>% (<%= p_interaction %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_interaction %>）がたまたま得られる確率は約<%= 100 * p_interaction %>%しかないということです。有意水準が5% (0.05) の場合、この確率は十分に低いので、帰無仮説を棄却できます。つまり、<%= explanatory %>の各グループにおける<%= target %>と<%= covariate %>の関係には統計的に有意な違いがあると言えます。これは、<%= explanatory %>による<%= target %>への影響が<%= covariate %>の値によって異なることを意味します。
+<% if (p_interaction <= baseline_p) { %>
+検定の結果、P値が<%= p_interaction_pct %>% (<%= p_interaction %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= f_interaction %>）がたまたま得られる確率は約<%= p_interaction_pct %>%しかないということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>) の場合、この確率は十分に低いので、帰無仮説を棄却できます。つまり、<%= explanatory %>の各グループにおける<%= target %>と<%= covariate %>の関係には統計的に有意な違いがあると言えます。これは、<%= explanatory %>による<%= target %>への影響が<%= covariate %>の値によって異なることを意味します。
 <% } %>
 
-{{probability_chart}}
+{{probability_dist}}
 
-現在の有意水準（P値）は<%= 100 * base_line_p %>% (<%= base_line_p %>)に設定されていますが、これはアナリティクスの「設定」より変更可能です。
+現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの「設定」より変更可能です。
 
 ## 効果量
 
-<% if (p_explanatory <= 0.05) { %>
+<% if (p_explanatory <= baseline_p) { %>
 
 ### <%= explanatory %>の主効果の効果量
-この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size_explanatory %>と示されています。これは、<%= explanatory %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= 100 * effect_size_explanatory %>%が<%= explanatory %>によって説明できると解釈できます。
+この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size_explanatory %>と示されています。これは、<%= explanatory %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= effect_size_explanatory_pct %>%が<%= explanatory %>によって説明できると解釈できます。
 
 <% if (effect_size_explanatory < 0.06) { %>
-効果量（Eta2乗）は<%= 100 * effect_size_explanatory %>%と低く、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は小さなものです。
+効果量（Eta2乗）は<%= effect_size_explanatory_pct %>%と低く、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は小さなものです。
 <% } else if (effect_size_explanatory < 0.14) { %>
-効果量（Eta2乗）は<%= 100 * effect_size_explanatory %>%なので、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は中程度です。
+効果量（Eta2乗）は<%= effect_size_explanatory_pct %>%なので、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は中程度です。
 <% } else { %>
-効果量（Eta2乗）も<%= 100 * effect_size_explanatory %>%と大きく、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
+効果量（Eta2乗）も<%= effect_size_explanatory_pct %>%と大きく、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
 <% } %>
 <% } %>
 
-<% if (p_covariate <= 0.05) { %>
+<% if (p_covariate <= baseline_p) { %>
 
 ### <%= covariate %>の効果の効果量
-この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size_covariate %>と示されています。これは、<%= covariate %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= 100 * effect_size_covariate %>%が<%= covariate %>によって説明できると解釈できます。
+この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size_covariate %>と示されています。これは、<%= covariate %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= effect_size_covariate_pct %>%が<%= covariate %>によって説明できると解釈できます。
 
 <% if (effect_size_covariate < 0.06) { %>
-効果量（Eta2乗）は<%= 100 * effect_size_covariate %>%と低く、<%= covariate %>による<%= target %>の平均の差は小さなものです。
+効果量（Eta2乗）は<%= effect_size_covariate_pct %>%と低く、<%= covariate %>による<%= target %>の平均の差は小さなものです。
 <% } else if (effect_size_covariate < 0.14) { %>
-効果量（Eta2乗）は<%= 100 * effect_size_covariate %>%なので、<%= covariate %>による<%= target %>の平均の差は中程度です。
+効果量（Eta2乗）は<%= effect_size_covariate_pct %>%なので、<%= covariate %>による<%= target %>の平均の差は中程度です。
 <% } else { %>
-効果量（Eta2乗）も<%= 100 * effect_size_covariate %>%と大きく、<%= covariate %>による<%= target %>の平均の差は大きいと言えます。
+効果量（Eta2乗）も<%= effect_size_covariate_pct %>%と大きく、<%= covariate %>による<%= target %>の平均の差は大きいと言えます。
 <% } %>
 <% } %>
 
-<% if (p_interaction <= 0.05) { %>
+<% if (p_interaction <= baseline_p) { %>
 
 ### <%= explanatory %> * <%= covariate %>の交互作用の効果量
-この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size_interaction %>と示されています。これは、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= 100 * effect_size_interaction %>%が<%= explanatory %>と<%= covariate %>の交互作用によって説明できると解釈できます。
+この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size_interaction %>と示されています。これは、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= effect_size_interaction_pct %>%が<%= explanatory %>と<%= covariate %>の交互作用によって説明できると解釈できます。
 
 <% if (effect_size_interaction < 0.06) { %>
-効果量（Eta2乗）は<%= 100 * effect_size_interaction %>%と低く、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は小さなものです。
+効果量（Eta2乗）は<%= effect_size_interaction_pct %>%と低く、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は小さなものです。
 <% } else if (effect_size_interaction < 0.14) { %>
-効果量（Eta2乗）は<%= 100 * effect_size_interaction %>%なので、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は中程度です。
+効果量（Eta2乗）は<%= effect_size_interaction_pct %>%なので、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は中程度です。
 <% } else { %>
-効果量（Eta2乗）も<%= 100 * effect_size_interaction %>%と大きく、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は大きいと言えます。
+効果量（Eta2乗）も<%= effect_size_interaction_pct %>%と大きく、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は大きいと言えます。
 <% } %>
 <% } %>
-
-{{confidence_interval_chart}}
 
 # 多重比較
 
-<% if (p_explanatory > 0.05 && p_interaction > 0.05) { %>
+<% if (p_explanatory > baseline_p && p_interaction > baseline_p) { %>
 多重比較分析とは<%= explanatory %>のグループのどの組み合わせにおける<%= target %>の平均の差が有意なのかを調べるためのものです。全体では<%= explanatory %>の主効果および交互作用のいずれも有意と言えないため、多重比較分析を行う必要はありませんが、参考までに以下がその結果です。
 
 P値が有意水準の5%以下である組み合わせにおける<%= target %>の平均の差は統計的に有意だと言えます。
@@ -209,18 +207,18 @@ P値が有意水準の5%以下である組み合わせにおける<%= target %>�
 
 <% } %>
 
-<% if (p_explanatory <= 0.05 || p_interaction <= 0.05) { %>
+<% if (p_explanatory <= baseline_p || p_interaction <= baseline_p) { %>
 全体では
-<% if (p_explanatory <= 0.05) { %><%= explanatory %>の主効果<% } %>
-<% if (p_explanatory <= 0.05 && p_interaction <= 0.05) { %>および<% } %>
-<% if (p_interaction <= 0.05) { %><%= explanatory %> * <%= covariate %>の交互作用<% } %>
+<% if (p_explanatory <= baseline_p) { %><%= explanatory %>の主効果<% } %>
+<% if (p_explanatory <= baseline_p && p_interaction <= baseline_p) { %>および<% } %>
+<% if (p_interaction <= baseline_p) { %><%= explanatory %> * <%= covariate %>の交互作用<% } %>
 は有意でした。そこで、多重比較分析として<%= explanatory %>のグループのどの組み合わせにおける<%= target %>の調整済み平均の差が有意なのか調べました。多重比較のために同じような検定を繰り返し何度も行うと、本当は有意でないのに有意であると判断してしまう（タイプ１エラー）確率が上がってしまいます。検定結果には<%= correction %>補正をかけることで、タイプ１エラーの確率を想定内にコントロールしています。
 
 P値が有意水準の5%以下である組み合わせにおける<%= target %>の調整済み平均の差は統計的に有意だと言えます。
 
 {{comparison}}
 
-<% if (p_interaction <= 0.05) { %>
+<% if (p_interaction <= baseline_p) { %>
 交互作用が有意であるため、<%= explanatory %>による<%= target %>への影響は<%= covariate %>の値によって異なります。そのため、各<%= explanatory %>グループにおける<%= target %>と<%= covariate %>の関係を別々に分析することが推奨されます。
 <% } %>
 <% } %>
@@ -248,12 +246,12 @@ P値が有意水準の5%以下である組み合わせにおける<%= target %>�
 
 それぞれのグループごとの平均の信頼区間をエラーバーを使って可視化したものが以下となります。
 
-{{mean}}
+{{means}}
 
 
 ## 平均値（調整済み）
 
 <%= explanatory %>グループごとの<%= covariate %>の平均値で調整した<%= target %>の平均の信頼区間をエラーバーを使って可視化したものが以下となります。
 
-{{adjusted_mean}}
+{{adjusted_means}}
 
