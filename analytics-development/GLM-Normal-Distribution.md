@@ -168,15 +168,15 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 <% if (variable.type == 'numeric') { %>
 **数値型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.se %>単位の差があります。
+他の変数の値が一定だとしても、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.coef %>単位の差があります。
 <% } else if (variable.type == 'logical') { %>
 **ロジカル型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.se %>単位の差があります。  
+他の変数の値が一定だとしても、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.coef %>単位の差があります。  
 <% } else { %>
 **カテゴリー（文字列）型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.se %>の差があります。
+他の変数の値が一定だとしても、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.coef %>の差があります。
 <% }}); %>
 
 ### 注意点
