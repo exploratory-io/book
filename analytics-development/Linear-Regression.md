@@ -155,15 +155,15 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 <% variables.forEach(variable => { %>
 <% if (variable.type == 'numeric') { %>
 
-* 他の変数の値が一定の場合、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.se %>上がり（下がり）ます。
+* 他の変数の値が一定の場合、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.coef %>上がり（下がり）ます。
 
 <% } else if (variable.type == 'logical') { %>
 
-* 他の変数の値が一定の場合、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.se %>の差があります。  
+* 他の変数の値が一定の場合、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.coef %>の差があります。  
 
 <% } else { %>
 
-* 他の変数の値が一定の場合、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.se %>の差があります。
+* 他の変数の値が一定の場合、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.coef %>の差があります。
 <% } %>
 <% }) %>
 
