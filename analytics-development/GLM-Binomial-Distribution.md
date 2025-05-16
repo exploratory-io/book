@@ -3,7 +3,7 @@
 
 目的変数である<%= target %>と選択された予測変数との関係を調べるために一般化線形モデル（二項分布）を使った予測モデルが作られました。
 
-<% if (variables.length > 1) { %>
+<% if (predictorColumns.length > 1) { %>
 # 多重共線性
 
 {{multicollinearity}}
@@ -142,7 +142,7 @@
 
 # 目的変数と予測変数の関係
 
-<% if (variables.length > 1) { %>
+<% if (predictorColumns.length > 1) { %>
 ## 予測変数の重要度
 
 <%= target %>を予測するためにどの予測変数が相対的により重要なのかを表したのが以下のチャートです。
