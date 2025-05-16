@@ -1,9 +1,9 @@
-br/>
+<br/>
 <!-- intentional new line feed above -->
 
 目的変数である<%= target %>と選択された予測変数との関係を調べるために一般化線形モデル（ポアソン分布）を使った予測モデルが作られました。
 
-<% if (variables.length > 1) { %>
+<% if (predictorColumns.length > 1) { %>
 # 多重共線性
 
 {{multicollinearity}}
@@ -25,9 +25,9 @@ br/>
 ## モデルの有意性
 
 <% if (p > baseline_p) { %>
-  モデルのP値は<%= 100 * p %>% (<%= p %>)で、有意水準<%= 100 * baseline_p %>% (<%= baseline_p %>) より高いため、選択された予測変数と<%= target %>の関係は統計的に有意とは言えません。
+  モデルのP値は<%= p_pct %>% (<%= p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より高いため、選択された予測変数と<%= target %>の関係は統計的に有意とは言えません。
 <% } else { %>
-  モデルのP値は<%= 100 * p %>% (<%= p %>)で、有意水準<%= 100 * baseline_p %>% (<%= baseline_p %>) より低いため、選択された予測変数と<%= target %>の関係は統計的に有意だと言えます。
+  モデルのP値は<%= p_pct %>% (<%= p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、選択された予測変数と<%= target %>の関係は統計的に有意だと言えます。
 <% } %>
 
 {start_show_hide}
@@ -85,7 +85,7 @@ br/>
 
 # 目的変数と予測変数の関係
 
-<% if (variables.length > 1) { %>
+<% if (predictorColumns.length > 1) { %>
 ## 予測変数の重要度
 
 <%= target %>を予測するためにどの予測変数が相対的により重要なのかを表したのが以下のチャートです。
