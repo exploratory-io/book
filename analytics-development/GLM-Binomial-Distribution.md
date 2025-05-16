@@ -1,9 +1,9 @@
-br/>
+<br/>
 <!-- intentional new line feed above -->
 
 目的変数である<%= target %>と選択された予測変数との関係を調べるために一般化線形モデル（二項分布）を使った予測モデルが作られました。
 
-<% if (variables.length > 1) { %>
+<% if (predictorColumns.length > 1) { %>
 # 多重共線性
 
 {{multicollinearity}}
@@ -50,7 +50,7 @@ br/>
 * F1スコア: 適合率と再現率のバランスを示すF1スコアは<%= f1_score_pct %>となっています。
 
 {start_show_hide}
-# モデルの指標の詳細
+## モデルの指標の詳細
 * AUC
   * AUC（Area Under the Curve）はROC曲線の下の面積で、モデルの分類性能を総合的に評価する指標です。
   * 値は0.5から1の間で、0.5はランダムな予測（コイン投げと同等）、1はTRUEとFALSEをうまく切り分けられている完璧な分類を意味します。
@@ -142,7 +142,7 @@ br/>
 
 # 目的変数と予測変数の関係
 
-<% if (variables.length > 1) { %>
+<% if (predictorColumns.length > 1) { %>
 ## 予測変数の重要度
 
 <%= target %>を予測するためにどの予測変数が相対的により重要なのかを表したのが以下のチャートです。
