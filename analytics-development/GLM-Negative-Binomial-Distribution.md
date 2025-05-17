@@ -1,9 +1,9 @@
-br/>
+<br/>
 <!-- intentional new line feed above -->
 
 目的変数である<%= target %>と選択された予測変数との関係を調べるために一般化線形モデル（負の二項分布）を使った予測モデルが作られました。
 
-<% if (variables.length > 1) { %>
+<% if (predictorColumns.length > 1) { %>
 # 多重共線性
 
 {{multicollinearity}}
@@ -95,7 +95,7 @@ br/>
 
 # 目的変数と予測変数の関係
 
-<% if (variables.length > 1) { %>
+<% if (predictorColumns.length > 1) { %>
 ## 予測変数の重要度
 
 <%= target %>を予測するためにどの予測変数が相対的により重要なのかを表したのが以下のチャートです。
@@ -140,18 +140,18 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 それぞれの予測変数の係数はそのデータ型によって以下のように解釈できます。一般化線形モデル（負の二項分布）では、係数の指数を取った発生率比を使って解釈します。
 
 <% variables.forEach(variable => { %>
-<% if (variable.type == 'numeric') { %>
+<% if (['numeric','integer'].includes(variable.type)) { %>
 **数値型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.se %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.coef %>倍になります。
 <% } else if (variable.type == 'logical') { %>
 **ロジカル型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.se %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.coef %>倍になります。
 <% } else { %>
 **カテゴリー（文字列）型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.se %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.coef %>倍になります。
 <% }}); %>
 
 ### 注意点
