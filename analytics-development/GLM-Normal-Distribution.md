@@ -165,7 +165,7 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 それぞれの予測変数の係数はそのデータ型によって以下のように解釈できます。
 
 <% variables.forEach(variable => { %>
-<% if (variable.type == 'numeric') { %>
+<% if (['numeric','integer'].includes(variable.type)) { %>
 **数値型の場合：**
 
 他の変数の値が一定だとしても、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.coef %>単位の差があります。

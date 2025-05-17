@@ -127,18 +127,18 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 それぞれの予測変数の係数はそのデータ型によって以下のように解釈できます。一般化線形モデル（ポアソン分布）では、係数の指数を取った発生率比を使って解釈します。
 
 <% variables.forEach(variable => { %>
-<% if (variable.type == 'numeric') { %>
+<% if (['numeric','integer'].includes(variable.type)) { %>
 **数値型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.se %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.coef %>倍になります。
 <% } else if (variable.type == 'logical') { %>
 **ロジカル型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.se %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.coef %>倍になります。
 <% } else { %>
 **カテゴリー（文字列）型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.se %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.coef %>倍になります。
 <% }}); %>
 
 ### 注意点

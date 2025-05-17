@@ -188,18 +188,18 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 それぞれの予測変数の係数（オッズ比）はそのデータ型によって以下のように解釈できます。
 
 <% variables.forEach(variable => { %>
-<% if (variable.type == 'numeric') { %>
+<% if (['numeric','integer'].includes(variable.type)) { %>
 **数値型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>が1単位上がると、<%= target %>のオッズは約<%= variable.se %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>が1単位上がると、<%= target %>のオッズは約<%= variable.coef %>倍になります。
 <% } else if (variable.type == 'logical') { %>
 **ロジカル型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>のオッズはは約<%= variable.se %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>のオッズはは約<%= variable.coef %>倍になります。
 <% } else { %>
 **カテゴリー（文字列）型の場合：**
 
-他の変数の値が一定だとしても、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べてオッズは約<%= variable.se %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べてオッズは約<%= variable.coef %>倍になります。
 <% }}); %>
 
 ### 注意点
