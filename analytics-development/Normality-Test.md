@@ -8,18 +8,20 @@
 # 正規性検定の結果
 
 今回の分析では、以下の変数の正規性検定を行いました：
-* <%= variables %>
+<% variables.forEach(function(variable) { %>
+* <%= variable.column %>
+<% }); %>
 
 {{summary_chart}}
 
 正規性検定の結果は以下のとおりです：
 
 <% variables.forEach(function(variable) { %>
-* **<%= variable %>**: W値が <%= w_value[variable] %> で、P値は <%= p_value[variable] %> です。
-  <% if (p_value[variable] <= 0.05) { %>
-  P値が有意水準5%(0.05)より小さいため、<%= variable %>は正規分布していないと判断されます。
+* **<%= variable.column %>**: W値が <%= variable.w %> で、P値は <%= variable.p %> です。
+  <% if (variable.p <= baseline_p) { %>
+  P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>)より小さいため、<%= variable.column %>は正規分布していないと判断されます。
   <% } else { %>
-  P値が有意水準5%(0.05)より大きいため、<%= variable %>は正規分布していると判断できます。
+  P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>)より大きいため、<%= variable.column %>は正規分布していると判断できます。
   <% } %>
 <% }); %>
 
