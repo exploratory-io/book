@@ -179,19 +179,25 @@ _現在の有意水準（P値）は<%= 100 * base_line_p %>% (<%= base_line_p %>
 
 それぞれの予測変数の係数（ハザード比）はそのデータ型によって以下のように解釈できます。
 
+<% variables.forEach(function(variable) { %>
+  <% if (variable.type === 'numeric') { %>
 **数値型の場合：**
 
-他の変数の値が一定だとしても、<%= variable1 %>が1単位上がると、<%= event %>のイベント発生の可能性は約<%= value %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>が1単位上がると、<%= event %>のイベント発生の可能性は約<%= variable.value %>倍になります。
 
-
+  <% } else if (variable.type === 'logical') { %>
 **ロジカル型の場合：**
 
-他の変数の値が一定だとしても、<%= variable1 %>がTRUEの場合、FALSEに比べ<%= event %>のイベント発生の可能性は約<%= value %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= event %>のイベント発生の可能性は約<%= variable.value %>倍になります。
 
 
+  <% } else if (variable.type === 'character' || variable.type === 'factor') { %>
 **カテゴリー（文字列）型の場合：**
 
-他の変数の値が一定だとしても、<%= variable1 %>は、ベースレベルである<%= variable1_base_level %>と比べて<%= event %>のイベント発生の可能性が約<%= value %>倍になります。
+他の変数の値が一定だとしても、<%= variable.variable %>は、ベースレベルである<%= variable.base_level %>と比べて<%= event %>のイベント発生の可能性が約<%= variable.value %>倍になります。
+
+  <% } %>
+<% }); %>
 
 
 ### 注意点
