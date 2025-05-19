@@ -18,6 +18,10 @@ const template =
 <% } %>
 <% } %>
 
+<!--
+この問題を解決するためには、VIFの値が10を超えている予測変数である<%= vif_variables %>から1つずつ除外し、再実行し、VIFの値が10を超える予測変数がなくなるまで繰り返してください。
+-->
+
 # モデルの指標
 
 {{summary}}
@@ -168,6 +172,39 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 * 他の変数の値が一定の場合、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.coef %>の差があります。
 <% } %>
 <% }) %>
+
+<!-- 
+<% variables.forEach(variable => { %>
+<% if (variable.type == 'numeric') { %>
+
+* 他の変数の値が一定の場合、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.coef %><% if (variable.coef > 0) { %>上がります<% } else { %>下がります<% } %>。
+* <%= variable %>の値が<%= x_axis_value %>の時には<%= target %>の予測値が<%= target_value%>%になると予測されています。
+  <% if (variable.p_value <= 0.05) { %>
+* この関係性はP値が<%= variable.p_value %> で5% (0.05)よりも小さいため、統計的に有意だと言えます。
+<% } else { %>
+* この関係性はP値が<%= variable.p_value %> で5% (0.05)よりも大きいため、統計的に有意とは言えません。
+  <% } %>
+
+<% } else if (variable.type == 'logical') { %>
+
+* 他の変数の値が一定の場合、<%= variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.coef %>の差があります。  
+  <% if (variable.p_value <= 0.05) { %>
+* この関係性はP値が<%= variable.p_value %> で5% (0.05)よりも小さいため、統計的に有意だと言えます。
+<% } else { %>
+* この関係性はP値が<%= variable.p_value %> で5% (0.05)よりも大きいため、統計的に有意とは言えません。
+  <% } %>
+
+<% } else { %>
+
+* 他の変数の値が一定の場合、<%= variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.coef %>の差があります。  
+  <% if (variable.p_value <= 0.05) { %>
+* この関係性はP値が<%= variable.p_value %> で5% (0.05)よりも小さいため、統計的に有意だと言えます。
+<% } else { %>
+* この関係性はP値が<%= variable.p_value %> で5% (0.05)よりも大きいため、統計的に有意とは言えません。
+<% } %>
+<% }) %>
+
+-->
 
 
 ## 係数と信頼区間の可視化
