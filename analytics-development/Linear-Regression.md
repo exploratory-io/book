@@ -1,3 +1,5 @@
+const template = 
+`
 <br/>
 <!-- intentional new line feed above -->
 
@@ -155,11 +157,11 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 <% variables.forEach(variable => { %>
 <% if (variable.type == 'numeric') { %>
 
-* 他の変数の値が一定の場合、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.coef %>上がり（下がり）ます。
+* 他の変数の値が一定の場合、<%= variable.variable %>が1単位上がると、<%= target %>は約<%= variable.coef %><% if (variable.coef > 0) { %>上がります<% } else { %>下がります<% } %>。
 
 <% } else if (variable.type == 'logical') { %>
 
-* 他の変数の値が一定の場合、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.coef %>の差があります。  
+* 他の変数の値が一定の場合、<%= variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.coef %>の差があります。  
 
 <% } else { %>
 
@@ -217,3 +219,6 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 * 非線形関係の検討：<%= target %>と非線形の関係を持つ予測変数はデータを加工することで、より正確にモデル化することができます。
 * 外れ値の確認：予測精度に影響を与える可能性のある外れ値がないか確認し、必要に応じて対処することで、モデルの信頼性が向上する可能性があります。
 * モデルの評価：このモデルの予測性能をより厳密に評価するために、トレーニングデータとテストデータに分けて検証することができます。その場合は、プロパティより「検証」セクションの下の「テストモード」をTRUEに設定し、実行し直してください。
+`;
+
+module.exports = template;
