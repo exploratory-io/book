@@ -1,3 +1,4 @@
+const template = `
 # サマリ
 
 <%= explanatory %>による<%= target %>の平均の差が有意かどうかを<%= repeat_by %>ごとに調べました。
@@ -147,3 +148,7 @@
 ### チャート
 {{mean}}
 {end_lazy_show_hide}
+
+`;
+
+module.exports = template;
