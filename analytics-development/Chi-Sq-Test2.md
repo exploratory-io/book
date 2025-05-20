@@ -17,12 +17,14 @@ const template = `
 <% if (p <= baseline_p) { %>
 結果として、P値は<%= p_pct %>% (<%= p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、<%= target %>と<%= explanatory %>の関係は統計的に有意だと言えます。
 
-  <% if (effect_size < 0.2) { %>
-効果量（Cramer's V）は<%= effect_size %>と低く、<%= target %>と<%= explanatory %>の関係は小さなものです。
-  <% } else if (effect_size < 0.8) { %>
-効果量は<%= effect_size %>なので、<%= target %>と<%= explanatory %>の関係は中程度です。
+  <% if (effect_size < 0.1) { %>
+効果量（Cramer's V）は<%= effect_size %>と非常に小さく、<%= target %>と <%= explanatory %>の関係はほとんど無視できるレベルです。
+  <% } else if (effect_size < 0.3) { %>
+効果量（Cramer's V）は<%= effect_size %>と小さく、<%= target %>と<%= explanatory %>の関係は弱いものです。
+  <% } else if (effect_size < 0.5) { %>
+効果量（Cramer's V）は<%= effect_size %>と中くらいで、<%= target %>と<%= explanatory %>の関係は中程度です。
   <% } else { %>
-効果量も<%= effect_size %>と大きく、<%= target %>と<%= explanatory %>の関係は大きいと言えます。
+効果量（Cramer's V）は<%= effect_size %>と大きく、<%= target %>と<%= explanatory %>の関係は強いと言えます。
   <% } %>
 <% } %>
 
@@ -31,6 +33,7 @@ const template = `
 有意性については、P値によって判断できます。
 
 {{summary}}
+
 {start_show_hide}
 ## 主要な統計指標
 * カイ2乗値
@@ -100,11 +103,13 @@ const template = `
 この検定では効果量の1つであるCramer's Vが<%= effect_size %>と示されています。これは、<%= target %>と<%= explanatory %>の関係の大きさを標準化したものです。
 
 <% if (effect_size < 0.1) { %>
-効果量（Cramer's V）は<%= effect_size %>と低く、<%= target %>と<%= explanatory %>の関係は小さなものです。
+効果量（Cramer's V）は<%= effect_size %>と非常に小さく、<%= target %>と <%= explanatory %>の関係はほとんど無視できるレベルです。
 <% } else if (effect_size < 0.3) { %>
-効果量は<%= effect_size %>なので、<%= target %>と<%= explanatory %>の関係は中程度です。
+効果量（Cramer's V）は<%= effect_size %>と小さく、<%= target %>と<%= explanatory %>の関係は弱いものです。
+<% } else if (effect_size < 0.5) { %>
+効果量（Cramer's V）は<%= effect_size %>と中くらいで、<%= target %>と<%= explanatory %>の関係は中程度です。
 <% } else { %>
-効果量も<%= effect_size %>と大きく、<%= target %>と<%= explanatory %>の関係は大きいと言えます。
+効果量（Cramer's V）は<%= effect_size %>と大きく、<%= target %>と<%= explanatory %>の関係は強いと言えます。
 <% } %>
 
 <% if (p > baseline_p) { %>
@@ -114,6 +119,15 @@ const template = `
 <% if (p <= baseline_p) { %>
 今回の検定結果は有意と判断できますが、効果量が小さいため注意が必要です。
 <% } %>
+
+以下のテーブルは、カイ2乗検定における効果量（Cramer's V）の解釈の目安を示しています。
+
+| 効果量の値 | 効果量の大きさ |
+|------------|----------------|
+| V < 0.1 | 非常に小さい効果 |
+| 0.1 ≤ V < 0.3 | 小さい効果 |
+| 0.3 ≤ V < 0.5 | 中くらいの効果 |
+| 0.5 ≤ V | 大きい効果 |
 
 ## 検出力
 
