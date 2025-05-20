@@ -11,11 +11,11 @@ const template = `
 結果として、P値は<%= p_pct %>% (<%= p %>)で、有意水準<%= base_line_p_pct %>% (<%= base_line_p %>) より低いため、<%= explanatory %>による<%= target %>の中央値の差は統計的に有意だと言えます。
 
   <% if (effect_size < 0.06) { %>
-効果量（Epsilon2乗）は<%= effect_size_pct %>%と低く、<%= explanatory %>による<%= target %>の中央値の差は小さなものです。
+効果量（Eta2乗）は<%= effect_size_pct %>%と低く、<%= explanatory %>による<%= target %>の中央値の差は小さなものです。
   <% } else if (effect_size < 0.14) { %>
-効果量（Epsilon2乗）は<%= effect_size_pct %>%なので、<%= explanatory %>による<%= target %>の中央値の差は中程度です。
+効果量（Eta2乗）は<%= effect_size_pct %>%なので、<%= explanatory %>による<%= target %>の中央値の差は中程度です。
   <% } else { %>
-効果量（Epsilon2乗）も<%= effect_size_pct %>%と大きく、<%= explanatory %>による<%= target %>の中央値の差は大きいと言えます。
+効果量（Eta2乗）も<%= effect_size_pct %>%と大きく、<%= explanatory %>による<%= target %>の中央値の差は大きいと言えます。
   <% } %>
 <% } %>
 
@@ -64,7 +64,7 @@ const template = `
 この検定における帰無仮説は「<%= explanatory %>の複数のグループ間で<%= target %>の中央値に差がない」というものです。
 
 <% if (p > baseline_p) { %>
-検定の結果、P値が<%= p_pct %>% (<%= p %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータにおけるクラスカル・ウォリス統計量の値（H値: <%= h_value %>）がたまたま得られる確率が約<%= p_pct %>%であるということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>) の場合、この確率は十分に高いので、帰無仮説を棄却できません。つまり、<%= explanatory %>による<%= target %>の中央値の差は統計的に有意であると言えません。
+検定の結果、P値が<%= p_pct %>% (<%= p %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータにおけるクラスカル・ウォリス検定の統計量の値（H値: <%= h_value %>）がたまたま得られる確率が約<%= p_pct %>%であるということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>) の場合、この確率は十分に高いので、帰無仮説を棄却できません。つまり、<%= explanatory %>による<%= target %>の中央値の差は統計的に有意であると言えません。
 <% } %>
 
 <% if (p <= baseline_p) { %>
@@ -78,14 +78,14 @@ const template = `
 
 ## 効果量
 
-この検定では効果量の1つであるEpsilon2乗が<%= epsilon_squared %>と示されています。これは、<%= explanatory %>による<%= target %>の効果が、データ全体のばらつきに比べてどの程度大きいかを示します。つまり、<%= target %>のばらつきの大きさの<%= epsilon_squared %>が<%= explanatory %>によって説明できると解釈できます。
+この検定では効果量の1つであるEta（イータ）2乗が<%= eta_squared %>と示されています。これは、<%= explanatory %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= eta_squared %>が<%= explanatory %>によって説明できると解釈できます。
 
 <% if (effect_size < 0.06) { %>
-効果量（Epsilon2乗）は<%= effect_size %>と低く、<%= explanatory %>による<%= target %>の平均の差は小さなものです。
+効果量（Eta2乗）は<%= effect_size %>と低く、<%= explanatory %>による<%= target %>の平均の差は小さなものです。
 <% } else if (effect_size < 0.14) { %>
-効果量（Epsilon2乗）は<%= effect_size %>なので、<%= explanatory %>による<%= target %>の平均の差は中程度です。
+効果量（Eta2乗）は<%= effect_size %>なので、<%= explanatory %>による<%= target %>の平均の差は中程度です。
 <% } else { %>
-効果量（Epsilon2乗）も<%= effect_size %>と大きく、<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
+効果量（Eta2乗）も<%= effect_size %>と大きく、<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
 <% } %>
 
 <% if (p > baseline_p) { %>
@@ -96,13 +96,14 @@ const template = `
 今回の検定結果は有意と判断できますが、効果量が小さいため注意が必要です。
 <% } %>
 
-以下のテーブルは、クラスカル・ウォリス検定における効果量（Epsilon2乗）の解釈の目安を示しています。
+以下のテーブルは、クラスカル・ウォリス検定における効果量（Eta2乗）の解釈の目安を示しています。
 
 | 効果量の値 | 効果量の大きさ |
 |------------|------------|
 | 0.01 | 小さい効果 |
 | 0.06 | 中くらいの効果 |
 | 0.14 | 大きい効果 |
+
 
 # 多重比較
 
