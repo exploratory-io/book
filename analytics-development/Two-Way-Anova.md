@@ -11,11 +11,11 @@ const template = `
 結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。
 
   <% if (effect_size1 < 0.06) { %>
-<%= explanatory1 %>の効果量（Eta2乗）は<%= efect_size1_pct %>%と低く、<%= explanatory1 %>による<%= target %>の平均の差は小さなものです。
+<%= explanatory1 %>の効果量（Eta2乗）は<%= effect_size1_pct %>%と低く、<%= explanatory1 %>による<%= target %>の平均の差は小さなものです。
   <% } else if (effect_size1 < 0.14) { %>
-<%= explanatory1 %>の効果量（Eta2乗）は<%= efect_size1_pct %>%なので、<%= explanatory1 %>による<%= target %>の平均の差は中程度です。
+<%= explanatory1 %>の効果量（Eta2乗）は<%= effect_size1_pct %>%なので、<%= explanatory1 %>による<%= target %>の平均の差は中程度です。
   <% } else { %>
-<%= explanatory1 %>の効果量（Eta2乗）も<%= efect_size1_pct %>%と大きく、<%= explanatory1 %>による<%= target %>の平均の差は大きいと言えます。
+<%= explanatory1 %>の効果量（Eta2乗）も<%= effect_size1_pct %>%と大きく、<%= explanatory1 %>による<%= target %>の平均の差は大きいと言えます。
   <% } %>
 <% } %>
 
@@ -47,11 +47,11 @@ const template = `
 結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）および<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）はいずれも有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。
 
   <% if (effect_size1 < 0.06) { %>
-<%= explanatory1 %>の効果量（Eta2乗）は<%= efect_size1_pct %>%と低く、<%= explanatory1 %>による<%= target %>の平均の差は小さなものです。
+<%= explanatory1 %>の効果量（Eta2乗）は<%= effect_size1_pct %>%と低く、<%= explanatory1 %>による<%= target %>の平均の差は小さなものです。
   <% } else if (effect_size1 < 0.14) { %>
-<%= explanatory1 %>の効果量（Eta2乗）は<%= efect_size1_pct %>%なので、<%= explanatory1 %>による<%= target %>の平均の差は中程度です。
+<%= explanatory1 %>の効果量（Eta2乗）は<%= effect_size1_pct %>%なので、<%= explanatory1 %>による<%= target %>の平均の差は中程度です。
   <% } else { %>
-<%= explanatory1 %>の効果量（Eta2乗）も<%= efect_size1_pct %>%と大きく、<%= explanatory1 %>による<%= target %>の平均の差は大きいと言えます。
+<%= explanatory1 %>の効果量（Eta2乗）も<%= effect_size1_pct %>%と大きく、<%= explanatory1 %>による<%= target %>の平均の差は大きいと言えます。
   <% } %>
 
   <% if (effect_size2 < 0.06) { %>
@@ -183,14 +183,14 @@ const template = `
 <% if (p1 <= baseline_p) { %>
 
 ### <%= explanatory1 %>の主効果の効果量
-この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size1 %>と示されています。これは、<%= explanatory1 %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= efect_size1_pct %>%が<%= explanatory1 %>によって説明できると解釈できます。
+この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size1 %>と示されています。これは、<%= explanatory1 %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= effect_size1_pct %>%が<%= explanatory1 %>によって説明できると解釈できます。
 
 <% if (effect_size1 < 0.06) { %>
-効果量（Eta2乗）は<%= efect_size1_pct %>%と低く、<%= explanatory1 %>による<%= target %>の平均の差は小さなものです。
+効果量（Eta2乗）は<%= effect_size1_pct %>%と低く、<%= explanatory1 %>による<%= target %>の平均の差は小さなものです。
 <% } else if (effect_size1 < 0.14) { %>
-効果量（Eta2乗）は<%= efect_size1_pct %>%なので、<%= explanatory1 %>による<%= target %>の平均の差は中程度です。
+効果量（Eta2乗）は<%= effect_size1_pct %>%なので、<%= explanatory1 %>による<%= target %>の平均の差は中程度です。
 <% } else { %>
-効果量（Eta2乗）も<%= efect_size1_pct %>%と大きく、<%= explanatory1 %>による<%= target %>の平均の差は大きいと言えます。
+効果量（Eta2乗）も<%= effect_size1_pct %>%と大きく、<%= explanatory1 %>による<%= target %>の平均の差は大きいと言えます。
 <% } %>
 <% } %>
 
@@ -219,6 +219,14 @@ const template = `
 効果量（Eta2乗）も<%= effect_size_interaction_pct %>%と大きく、<%= explanatory1 %>と<%= explanatory2 %>の交互作用による<%= target %>の平均の差は大きいと言えます。
 <% } %>
 <% } %>
+
+以下のテーブルは、Two-Way ANOVAにおける効果量（Eta2乗）の解釈の目安を示しています。
+
+| 効果量の値 | 効果量の大きさ |
+|------------|------------|
+| 0.01 | 小さい効果 |
+| 0.06 | 中くらいの効果 |
+| 0.14 | 大きい効果 |
 
 # 多重比較 - 変数
 
@@ -271,11 +279,6 @@ P値が有意水準の5%以下である組み合わせにおける<%= target %>�
 
 <% } %>
 
-# 次のステップ
-
-* 今回は<%= target %>に対する<%= explanatory1 %>と<%= explanatory2 %>という2つの変数が与える影響を分析しました。しかし、他の変数も<%= target %>に影響している可能性があります。そのため、「線形回帰」などを使った多変量分析を使い、複数の要因を同時に考慮した分析をすることができます。
-* 今回の検定は全体に対して行われましたが、グループごとに分けて実施することも可能です。その場合は、「繰り返し」にグループとなる変数を選択し、実行し直すことができます。
-
 # 補足情報
 
 ## 統計量
@@ -304,6 +307,12 @@ P値が有意水準の5%以下である組み合わせにおける<%= target %>�
 ### チャート
 {{mean_line}}
 {end_lazy_show_hide}
+
+# 次のステップ
+
+* 今回は<%= target %>に対する<%= explanatory1 %>と<%= explanatory2 %>という2つの変数が与える影響を分析しました。しかし、他の変数も<%= target %>に影響している可能性があります。そのため、「線形回帰」などを使った多変量分析を使い、複数の要因を同時に考慮した分析をすることができます。
+* 今回の検定は全体に対して行われましたが、グループごとに分けて実施することも可能です。その場合は、「繰り返し」にグループとなる変数を選択し、実行し直すことができます。
 `;
 
 module.exports = template;
+
