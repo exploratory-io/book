@@ -1,3 +1,4 @@
+const template = `
 # サマリ
 
 今回の分析では、<%= explanatory %>による<%= target %>の平均の差が有意かどうかを調べました。
@@ -189,3 +190,6 @@
 ### チャート
 {{mean}}
 {end_lazy_show_hide}
+`;
+
+module.exports = template;
