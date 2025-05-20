@@ -1,3 +1,4 @@
+const template = `
 <br/>
 <!-- intentional new line feed above -->
 
@@ -175,7 +176,7 @@
 
 有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>)の元では、P値が<%= baseline_p_pct %>% (<%= baseline_p %>)よりも大きい予測変数は<%= target %>との関係が統計的に有意だとは言えません。逆に、P値が<%= baseline_p_pct %>% (<%= baseline_p %>)よりも小さい予測変数は<%= target %>との関係が統計的に有意だと言えます。
 
-_現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの「設定」より変更可能です。_
+_現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。_
 
 ### 信頼区間を使った有意性の判断
 
@@ -223,23 +224,38 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 
 元のデータに対して、作成された予測モデルを使って予測した結果が以下の表となります。
 
+{start_lazy_show_hide}
+### チャート
 {{data}}
+{end_lazy_show_hide}
 
 ## 予測マトリックス
 
 この表は、モデルの予測結果と実際の結果の対応関係を示す予測マトリックスです。各セルの値は全体に対する割合（%）を表しています。
 
+{start_lazy_show_hide}
+### チャート
 {{confusion_matrix}}
+{end_lazy_show_hide}
 
 ## 予測確率分布
 
 このチャートは、モデルが予測した<%= target %>の確率（0～1の間の値）を実際にTRUEのケース（青線）、実際にFALSEのケース（オレンジの線）に分けて密度曲線として可視化しています。
 理想的には、実際にTRUEのケース（青線）は右側（1に近い確率）に、実際にFALSEのケース（オレンジ線）は左側（0に近い確率）に集中しているほど、モデルの予測精度が高いと言えます。縦の点線は、TRUEとFALSEを分類するために使用されているTRUE/FALSEの境界値を示しています。この分布からモデルの分類性能や、最適なTRUE/FALSEの境界値の調整を視覚的に確認できます。
 
+{start_lazy_show_hide}
+### チャート
 {{probability_distribution}}
+{end_lazy_show_hide}
 
 ## ROC曲線
 
 この曲線は、モデルの分類性能を様々な閾値で評価するROC曲線です。Y軸は真陽性率（感度）、X軸は偽陽性率（1-特異度）を表しています。青い線は今回のモデルのROC曲線で、対角線の灰色の点線はランダムな予測（AUC: 0.5）を意味します。
 
+{start_lazy_show_hide}
+### チャート
 {{roc_curve}}
+{end_lazy_show_hide}
+`;
+
+module.exports = template;
