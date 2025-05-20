@@ -1,3 +1,4 @@
+const template = `
 # サマリ
 
 今回の分析では、共変量として<%= covariate %>を調整した上で、<%= explanatory %>による<%= target %>の平均の差が有意かどうかを調べました。
@@ -150,7 +151,7 @@
 
 {{probability_dist}}
 
-現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの「設定」より変更可能です。
+現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
 
 ## 効果量
 
@@ -234,24 +235,37 @@ P値が有意水準の5%以下である組み合わせにおける<%= target %>�
 
 それぞれのグループごとの調整済み統計値は以下の通りです。
 
+{start_lazy_show_hide}
+### チャート
 {{statistics}}
+{end_lazy_show_hide}
 
 ## データの分布
 
 <%= explanatory %>による<%= target %>の分布の違いを密度曲線を使って可視化したものが以下となります。
 
+{start_lazy_show_hide}
+### チャート
 {{distribution}}
+{end_lazy_show_hide}
 
 ## 平均値の信頼区間
 
 それぞれのグループごとの平均の信頼区間をエラーバーを使って可視化したものが以下となります。
 
+{start_lazy_show_hide}
+### チャート
 {{means}}
-
+{end_lazy_show_hide}
 
 ## 平均値（調整済み）
 
 <%= explanatory %>グループごとの<%= covariate %>の平均値で調整した<%= target %>の平均の信頼区間をエラーバーを使って可視化したものが以下となります。
 
+{start_lazy_show_hide}
+### チャート
 {{adjusted_means}}
+{end_lazy_show_hide}
+`;
 
+module.exports = template;

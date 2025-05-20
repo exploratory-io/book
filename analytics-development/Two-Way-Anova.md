@@ -1,3 +1,4 @@
+const template = `
 # サマリ
 
 今回の分析では、<%= explanatory1 %>と<%= explanatory2 %>による<%= target %>の平均の差、およびそれらの交互作用が有意かどうかを調べました。
@@ -175,7 +176,7 @@
 
 {{probability_dist}}
 
-現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの「設定」より変更可能です。
+現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
 
 ## 効果量
 
@@ -281,16 +282,28 @@ P値が有意水準の5%以下である組み合わせにおける<%= target %>�
 
 それぞれのグループごとの統計値は以下の通りです。
 
+{start_lazy_show_hide}
+### チャート
 {{statistics}}
+{end_lazy_show_hide}
 
 ## データの分布
 
 <%= explanatory1 %>と<%= explanatory2 %>による<%= target %>分布の違いを密度曲線を使って可視化したものが以下となります。
 
+{start_lazy_show_hide}
+### チャート
 {{distribution}}
+{end_lazy_show_hide}
 
 ## 平均値の交互作用(ライン)
 
 <%= explanatory1 %>と<%= explanatory2 %>による<%= target %>への交互作用を可視化したものが以下となります。
 
+{start_lazy_show_hide}
+### チャート
 {{mean_line}}
+{end_lazy_show_hide}
+`;
+
+module.exports = template;
