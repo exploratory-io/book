@@ -121,12 +121,12 @@ const template = `
 
 {{probability_chart}}
 
-現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの「設定」より変更可能です。
+現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
 
 
 # 効果量
 
-この検定では効果量の1つであるEta（イータ）2乗が<%= eta_squared %>と示されています。これは、<%= explanatory %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= eta_squared %>が<%= explanatory %>によって説明できると解釈できます。効果量は検定結果において有意と判断した場合に注意する必要があります。
+この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size %>と示されています。これは、<%= explanatory %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= effect_size %>が<%= explanatory %>によって説明できると解釈できます。効果量は検定結果において有意と判断した場合に注意する必要があります。
 
 <% if (effect_size < 0.06) { %>
   効果量（Eta2乗）は<%= effect_size %>と低く、<%= explanatory %>による<%= target %>の平均の差は小さなものです。
