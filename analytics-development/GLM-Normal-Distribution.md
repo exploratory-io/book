@@ -1,3 +1,4 @@
+const template = `
 <br/>
 <!-- intentional new line feed above -->
 
@@ -154,7 +155,7 @@ RMSE（平均二乗誤差のルート）は<%= rmse %>で、この予測モデ�
 
 有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>)の元では、P値が<%= baseline_p_pct %>% (<%= baseline_p %>)よりも大きい予測変数は<%= target %>との関係が統計的に有意だとは言えません。逆に、P値が<%= baseline_p_pct %>% (<%= baseline_p %>)よりも小さい予測変数は<%= target %>との関係が統計的に有意だと言えます。
 
-_現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの「設定」より変更可能です。_
+_現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。_
 
 ### 信頼区間を使った有意性の判断
 
@@ -199,16 +200,28 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 
 元のデータに対して、作成された予測モデルを使って予測した結果が以下の表となります。
 
+{start_lazy_show_hide}
+### チャート
 {{data}}
+{end_lazy_show_hide}
 
 ## 実測値と予測値の関係
 
 予測した結果、元の実測値と予測値にはズレがありますが、それらの関係を散布図を使って可視化したのが以下のチャートです。それぞれの点はそれぞれの行を表しています。
 
+{start_lazy_show_hide}
+### チャート
 {{actual_predicted}}
+{end_lazy_show_hide}
 
 ## 予測値と残差の関係
 
 予測した結果、予測値と残差（元の実測値と予測値のズレ）の関係を散布図を使って可視化したのが以下のチャートです。それぞれの点はそれぞれの行を表しています。
 
+{start_lazy_show_hide}
+### チャート
 {{predicted_residual}}
+{end_lazy_show_hide}
+`;
+
+module.exports = template;
