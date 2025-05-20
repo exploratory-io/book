@@ -1,3 +1,4 @@
+const template = `
 # サマリ
 
 今回の分析では、<%= explanatory %>による<%= target %>の平均の差が有意かどうかを調べました。
@@ -100,7 +101,7 @@
 
 {{probability_dist}}
 
-現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの「設定」より変更可能です。
+現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
 
 ## 有意性 - 信頼区間
 
@@ -157,11 +158,19 @@
 
 それぞれのグループごとの統計値は以下の通りです。
 
+{start_lazy_show_hide}
+### チャート
 {{statistics}}
+{end_lazy_show_hide}
 
 ## 平均値の信頼区間
 
 それぞれのグループごとの平均の信頼区間をエラーバーを使って可視化したものが以下となります。
 
+{start_lazy_show_hide}
+### チャート
 {{mean}}
+{end_lazy_show_hide}
+`;
 
+module.exports = template;

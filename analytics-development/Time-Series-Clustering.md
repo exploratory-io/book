@@ -1,3 +1,4 @@
+const template = `
 # 分析結果
 
 <%= value %>の時系列データを使って<%= group %>を<%= number_of_clusters %>つのクラスター（グループ）に分類しました。
@@ -62,10 +63,18 @@
 
 緑色の点は十分なデータがあることを示しており、データが欠損している、あるいは、足りない期間はグレーで表されます。この情報により、分析結果の信頼性や、特定の期間のデータ品質を評価できます。
 
+{start_lazy_show_hide}
+### チャート
 {{data_confirmation}}
+{end_lazy_show_hide}
 
 ## 時系列データ
 
 以下のテーブルは、<%= group %>ごとの<%= value %>の集計データと時系列クラスタリングの結果を表しています。テーブルには各時点における<%= group %>ごとの集計値と標準化した値、クラスター ID、が含まれています。
 
+{start_lazy_show_hide}
+### チャート
 {{data}}
+{end_lazy_show_hide}
+`;
+module.exports = template;

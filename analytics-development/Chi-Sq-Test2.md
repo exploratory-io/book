@@ -1,4 +1,5 @@
- サマリ
+const template = `
+# サマリ
 
 今回の分析では、<%= target %>と<%= explanatory %>の関係が有意かどうかを調べました。
 
@@ -92,7 +93,7 @@
 
 {{probability_dist}}
 
-現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの「設定」より変更可能です。
+現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
 
 ## 効果量
 
@@ -137,16 +138,29 @@
 
 <%= target %>のそれぞれのグループにおける<%= explanatory %>のそれぞれのグループごとの割合を表形式で表したものが以下となります。
 
+{start_lazy_show_hide}
+### チャート
 {{pivot}}
+{end_lazy_show_hide}
 
 ## 割合（チャート）
 
 <%= target %>のそれぞれのグループにおける<%= explanatory %>のそれぞれのグループごとの割合をバーチャートを使って可視化したものが以下となります。
 
+{start_lazy_show_hide}
+### チャート
 {{ratio}}
+{end_lazy_show_hide}
 
 ## カイ2乗値への寄与度
 
 <%= target %>と<%= explanatory %>のそれぞれのグループの組み合わせが、全体の「ズレ」の指標であるカイ2乗値に寄与する割合を可視化したものが以下となります。円の色の濃淡は寄与度（率）を示し、濃い青であるほどその組み合わせは他の組み合わせに比べてより大きな「ズレ」があると解釈できます。円の大きさはデータ量を表し、大きい円であるほどその組み合わせにより多くのデータがあると解釈できます。
 
+{start_lazy_show_hide}
+### チャート
 {{contribution}}
+{end_lazy_show_hide}
+
+`;
+
+module.exports = template;

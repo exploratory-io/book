@@ -1,3 +1,4 @@
+const template = `
 <br/>
 <!-- intentional new line feed above -->
 
@@ -173,22 +174,37 @@
 
 元のデータに対して、作成された予測モデルを使って予測した結果が以下の表となります。
 
+{start_lazy_show_hide}
+### チャート
 {{data}}
+{end_lazy_show_hide}
 
 ## 残差分析
 
 以下は予測モデルの残差（予測値と実測値の誤差）をラインチャートで可視化したものです。良いモデルでは、残差はランダムで、安定した分散を持つことが期待されます。
 
+{start_lazy_show_hide}
+### チャート
 {{residuals}}
+{end_lazy_show_hide}
 
 ## 残差の自己相関
 
 以下はモデルの残差の自己相関関数（ACF）をバーチャートで可視化したものです。
 
+{start_lazy_show_hide}
+### チャート
 {{residual_autocorrelation}}
+{end_lazy_show_hide}
 
 ## 残差の偏自己相関
 
 以下はモデルの残差の偏自己相関関数（PACF）をバーチャートで可視化したものです。
 
+{start_lazy_show_hide}
+### チャート
 {{residual_partial_autocorrelation}}
+{end_lazy_show_hide}
+`;
+
+module.exports = template;

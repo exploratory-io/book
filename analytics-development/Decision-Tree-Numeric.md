@@ -1,3 +1,4 @@
+const template = `
 # <%= model %>を使った<%= target %>と選択された予測変数の関係の分析
 
 目的変数である<%= target %>と選択された予測変数との関係を調べるために決定木を使った予測モデルが作られました。
@@ -89,10 +90,18 @@ RMSE（平均二乗誤差のルート）は<%= rmse %>で、これはこの予�
 
 元のデータに対して、作成された予測モデルを使って予測した結果が以下の表となります。
 
+{start_lazy_show_hide}
+### チャート
 {{data}}
+{end_lazy_show_hide}
 
 ## 実測値と予測値の関係
 
 予測した結果、元の実測値と予測値にはズレがありますが、それらの関係を散布図を使って可視化したのが以下のチャートです。それぞれの点はそれぞれの行を表しています。
 
+{start_lazy_show_hide}
+### チャート
 {{actual_predicted}}
+{end_lazy_show_hide}
+`;
+module.exports = template;
