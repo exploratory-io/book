@@ -44,7 +44,7 @@ AUCは<%= auc_pct %>% (<%= auc %>)と低く、このモデルは<%= target %>の
 
 ### 正解率、F値
 
-* 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings)より変更可能です。_
+* 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings)より変更可能です。
 
 ## 有意性
 
