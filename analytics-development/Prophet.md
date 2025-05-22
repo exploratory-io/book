@@ -1,3 +1,4 @@
+const template = `
 <br/>
 <!-- intentional new line feed above -->
 

@@ -1,3 +1,4 @@
+const template = `
 # 分析結果
 
 今回の分析では、<%= explanatory %>によって、どちらが<%= target %>が優れているかをベイジアン A/Bテストを使って調べました。
@@ -7,14 +8,14 @@
 <% if (improve_probability > 0.95) { %>
   結果として、グループAがグループBより優れている確率は<%= 100 * improve_probability %>% (<%= improve_probability %>)で、95%の信頼度の閾値を超えています。つまり、グループAがグループBよりも優れていると高い確信を持って言えます。
   
-  期待される改善率は<%= 100 * expected_improvement %>% (<%= expected_improvement %>)で、確信区間は<%= 100 * confidence_lower %>%から<%= 100 * confidence_upper %>%の間となっています。
+  期待される改善率は<%= expected_improvement_pct %>% (<%= expected_improvement %>)で、確信区間は<%= confidence_lower_pct %>%から<%= confidence_upper_pct %>%の間となっています。
   
   <% if (expected_loss < 0.001) { %>
-    期待される損失率は<%= 100 * expected_loss %>% (<%= expected_loss %>)と非常に低く、グループAを選択することによるリスクは極めて低いと言えます。
+    期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)と非常に低く、グループAを選択することによるリスクは極めて低いと言えます。
   <% } else if (expected_loss < 0.01) { %>
-    期待される損失率は<%= 100 * expected_loss %>% (<%= expected_loss %>)と低く、グループAを選択することによるリスクは低いと言えます。
+    期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)と低く、グループAを選択することによるリスクは低いと言えます。
   <% } else { %>
-    期待される損失率は<%= 100 * expected_loss %>% (<%= expected_loss %>)となっています。
+    期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)となっています。
   <% } %>
 <% } else if (improve_probability > 0.75) { %>
   結果として、グループAがグループBより優れている確率は<%= 100 * improve_probability %>% (<%= improve_probability %>)です。95%の信頼度の閾値には達していませんが、グループAがグループBよりも優れている可能性がある程度あります。
@@ -22,25 +23,25 @@
   期待される改善率は<%= 100 * expected_improvement %>% (<%= expected_improvement %>)で、確信区間は<%= 100 * confidence_lower %>%から<%= 100 * confidence_upper %>%の間となっています。
   
   <% if (expected_loss > 0.05) { %>
-    期待される損失率は<%= 100 * expected_loss %>% (<%= expected_loss %>)と比較的高く、グループAを選択することにはまだリスクがあると考えられます。
+    期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)と比較的高く、グループAを選択することにはまだリスクがあると考えられます。
   <% } else { %>
-    期待される損失率は<%= 100 * expected_loss %>% (<%= expected_loss %>)となっています。
+    期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)となっています。
   <% } %>
 <% } else if (improve_probability > 0.5) { %>
   結果として、グループAがグループBより優れている確率は<%= 100 * improve_probability %>% (<%= improve_probability %>)です。グループAとグループBの間に明確な差があるとは言えず、どちらかが優れているかについては不確実性が高いです。
   
-  期待される改善率は<%= 100 * expected_improvement %>% (<%= expected_improvement %>)で、確信区間は<%= 100 * confidence_lower %>%から<%= 100 * confidence_upper %>%の間となっています。この確信区間に0が含まれているため、改善効果がない可能性も十分にあります。
+  期待される改善率は<%= expected_improvement_pct %>% (<%= expected_improvement %>)で、確信区間は<%= confidence_lower_pct %>%から<%= confidence_upper_pct %>%の間となっています。この確信区間に0が含まれているため、改善効果がない可能性も十分にあります。
   
-  期待される損失率は<%= 100 * expected_loss %>% (<%= expected_loss %>)となっています。
+  期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)となっています。
 <% } else { %>
   結果として、グループAがグループBより優れている確率は<%= 100 * improve_probability %>% (<%= improve_probability %>)です。この結果から、グループBがグループAよりも優れている可能性が高いと言えます。
   
   期待される改善率は<%= 100 * expected_improvement %>% (<%= expected_improvement %>)で、確信区間は<%= 100 * confidence_lower %>%から<%= 100 * confidence_upper %>%の間となっています。
   
   <% if (expected_loss > 0.05) { %>
-    期待される損失率は<%= 100 * expected_loss %>% (<%= expected_loss %>)と高く、グループAを選択することによるリスクは大きいと言えます。
+    期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)と高く、グループAを選択することによるリスクは大きいと言えます。
   <% } else { %>
-    期待される損失率は<%= 100 * expected_loss %>% (<%= expected_loss %>)となっています。
+    期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)となっています。
   <% } %>
 <% } %>
 
@@ -112,3 +113,6 @@ X軸は改善率（AがBよりどれだけ優れているか）を表し、各�
 * グループBの採用検討: 分析結果からはグループBの方が優れている可能性が高いため、グループBの実装を検討するか、新たなA/BテストでグループBを基準として改善策を検討してください。
 <% } %>
 * コンバージョン率に関係している要因を調べたい場合、「ロジスティック回帰」などを使った多変量分析を使い、複数の要因を同時に考慮した分析をすることができます。
+`;
+
+module.exports = template;
