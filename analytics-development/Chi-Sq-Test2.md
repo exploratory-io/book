@@ -1,5 +1,4 @@
 const template = `
-
 # サマリ
 
 今回の分析では、<%= target %>と<%= explanatory %>の関係が有意かどうかを調べました。
