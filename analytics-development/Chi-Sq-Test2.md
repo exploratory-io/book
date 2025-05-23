@@ -131,7 +131,7 @@ const template = `
 <% } else if (power < 0.8) { %>
 検出力は<%= power_pct %>% (<%= power %>)とやや低めになっています。これは、もし実際に<%= target %>と<%= explanatory %>の間に関係があったとしても、それを正しく検出できる確率が約<%= power_pct %>%>しかないということです。言い換えると、**本当は差があるのに「差がない」と誤って結論づけてしまう確率（タイプ２エラー）が<%= 100 - power_pct %>%**もあるということなので、慎重な判断が必要です。
 <% } else { %>
-<!-- Power is sufficient, no need to mention -->
+検出力は<%= power_pct %>% (<%= power %>)と十分に高いため、特に問題はありません。
 <% } %>
 
 # 補足情報
@@ -173,4 +173,3 @@ const template = `
 `;
 
 module.exports = template;
-
