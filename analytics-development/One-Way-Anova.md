@@ -17,14 +17,14 @@ const template = `
 
 
 <% if (p <= baseline_p) { %>
-  結果として、P値は<%= p_pct %>% (<%= p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、<%= explanatory %>による<%= target %>の平均の差は統計的に有意だと言えます。
+結果として、P値は<%= p_pct %>% (<%= p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、<%= explanatory %>による<%= target %>の平均の差は統計的に有意だと言えます。
 
   <% if (effect_size < 0.06) { %>
-    効果量（Eta2乗）は<%= effect_size_pct %>% (<%= effect_size %>)と低く、<%= explanatory %>による<%= target %>の平均の差は小さなものです。
+効果量（Eta2乗）は<%= effect_size_pct %>% (<%= effect_size %>)と低く、<%= explanatory %>による<%= target %>の平均の差は小さなものです。
   <% } else if (effect_size < 0.14) { %>
-    効果量（Eta2乗）は<%= effect_size_pct %>% (<%= effect_size %>)なので、<%= explanatory %>による<%= target %>の平均の差は中程度です。
+効果量（Eta2乗）は<%= effect_size_pct %>% (<%= effect_size %>)なので、<%= explanatory %>による<%= target %>の平均の差は中程度です。
   <% } else { %>
-    効果量（Eta2乗）も<%= effect_size_pct %>% (<%= effect_size %>)と大きく、<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
+効果量（Eta2乗）も<%= effect_size_pct %>% (<%= effect_size %>)と大きく、<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
   <% } %>
 <% } %>
 
