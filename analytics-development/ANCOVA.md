@@ -208,30 +208,11 @@ const template = `
 
 # 多重比較
 
-<% if (p_explanatory > baseline_p && p_interaction > baseline_p) { %>
-多重比較分析とは<%= explanatory %>のグループのどの組み合わせにおける<%= target %>の平均の差が有意なのかを調べるためのものです。全体では<%= explanatory %>の主効果および交互作用のいずれも有意と言えないため、多重比較分析を行う必要はありませんが、参考までに以下がその結果です。
+多重比較分析とは各変数のグループのどの組み合わせにおける<%= target %>の平均の差が有意なのかを調べるためのものです。多重比較のために同じような検定を繰り返し何度も行うと、本当は有意でないのに有意であると判断してしまう（タイプ１エラー）確率が上がってしまいます。検定結果には<%= correction %>補正をかけることで、タイプ１エラーの確率を想定内にコントロールしています。
 
-P値が有意水準の5%以下である組み合わせにおける<%= target %>の平均の差は統計的に有意だと言えます。
-
-{{comparison}}
-
-<% } %>
-
-<% if (p_explanatory <= baseline_p || p_interaction <= baseline_p) { %>
-全体では
-<% if (p_explanatory <= baseline_p) { %><%= explanatory %>の主効果<% } %>
-<% if (p_explanatory <= baseline_p && p_interaction <= baseline_p) { %>および<% } %>
-<% if (p_interaction <= baseline_p) { %><%= explanatory %> * <%= covariate %>の交互作用<% } %>
-は有意でした。そこで、多重比較分析として<%= explanatory %>のグループのどの組み合わせにおける<%= target %>の調整済み平均の差が有意なのか調べました。多重比較のために同じような検定を繰り返し何度も行うと、本当は有意でないのに有意であると判断してしまう（タイプ１エラー）確率が上がってしまいます。検定結果には<%= correction %>補正をかけることで、タイプ１エラーの確率を想定内にコントロールしています。
-
-P値が有意水準の5%以下である組み合わせにおける<%= target %>の調整済み平均の差は統計的に有意だと言えます。
+以下のP値が有意水準の5%以下である組み合わせは、<%= target %>の平均の差が統計的に有意だと言えます。
 
 {{comparison}}
-
-<% if (p_interaction <= baseline_p) { %>
-交互作用が有意であるため、<%= explanatory %>による<%= target %>への影響は<%= covariate %>の値によって異なります。そのため、各<%= explanatory %>グループにおける<%= target %>と<%= covariate %>の関係を別々に分析することが推奨されます。
-<% } %>
-<% } %>
 
 # 補足情報
 
