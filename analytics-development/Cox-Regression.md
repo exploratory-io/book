@@ -199,7 +199,7 @@ _説明変数は上記の「説明変数の重要度」にある重要度の高�
 <% } else if (variable.type == 'logical') { %>
 他の変数の値が一定の場合、<%= variable.variable %>がTRUEの場合、FALSEに比べて<%= event %>のハザード（単位時間あたりに<%= event %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。
 <% } else { %>
-他の変数の値が一定の場合、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて<%= event %>のハザード（単位時間あたりに<%= event %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。
+他の変数の値が一定の場合、「<%= variable.variable %>」は、ベースレベルである「<%= variable.base_level %>」と比べて<%= event %>のハザード（単位時間あたりに<%= event %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。
 <% } %>
 <% }) %>
 
