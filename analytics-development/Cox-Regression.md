@@ -54,9 +54,9 @@ const template = `
 ## 有意性
 
 <% if (likelihood_ratio_test_p > baseline_p) { %>
-モデルのP値は<%= likelihood_ratio_test_p_pct %>% (<%= p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より高いため、選択された説明変数と生存曲線の関係は統計的に有意とは言えません。
+モデルのP値は<%= likelihood_ratio_test_p_pct %>% (<%= likelihood_ratio_test_p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より高いため、選択された説明変数と生存曲線の関係は統計的に有意とは言えません。
 <% } else { %>
-モデルのP値は<%= likelihood_ratio_test_p_pct %>% (<%= p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、選択された説明変数と生存曲線のの関係は統計的に有意だと言えます。
+モデルのP値は<%= likelihood_ratio_test_p_pct %>% (<%= likelihood_ratio_test_p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、選択された説明変数と生存曲線のの関係は統計的に有意だと言えます。
 <% } %>
 
 
