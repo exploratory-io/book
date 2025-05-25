@@ -7,7 +7,10 @@ const template = `
 
 {{multicollinearity}}
 
-<% if (max_vif > 10) { %>
+<% if (has_perfect_collinearity) { %>
+このモデルには<%= perfect_collinearity_variables %> によって完全な多重共線性（この説明変数が他の説明変数の値を足したり引いたり、何倍かして作られる数値で完全に表される状態）の問題が見られます。
+この問題を解決するためには、説明変数の中から<%= perfect_collinearity_variables %>を除外し、再実行してください。
+<% } else if (max_vif > 10) { %>
 
 このモデルには多重共線性（複数の説明変数間に強い相関関係があること）の問題が見られます。VIFの値が10を超えている説明変数があると、個々の変数の効果を正確に評価することが難しくなります。
 この問題を解決するためには、VIFの値が10を超えている説明変数の中から必要性が低いものを1つずつ除外し、再実行し、VIFの値が10を超える説明変数がなくなるまで繰り返してください。
@@ -175,7 +178,7 @@ _説明変数は上記の「説明変数の重要度」にある重要度の高�
 
 <% } else { %>
 
-* 他の変数の値が一定の場合、「<%= variable.variable %>」は、ベースレベルである「<%= variable.base_level %>」と比べて約<%= variable.coef %>の差があります。
+* 他の変数の値が一定の場合、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.coef %>の差があります。
 <% } %>
 <% }) %>
 
