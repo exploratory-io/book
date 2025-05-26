@@ -4,8 +4,7 @@ const template = `
 # 多重共線性
 
 <% if (has_perfect_collinearity) { %>
-このモデルには<%= perfect_collinearity_variables %> によって完全な多重共線性（この説明変数が他の説明変数の値を足したり引いたり、何倍かして作られる数値で完全に表される状態）の問題が見られます。
-この問題を解決するためには、説明変数の中から<%= perfect_collinearity_variables %>を除外し、再実行してください。
+このモデルでは<%= perfect_collinearity_variables %>が完全な多重共線性（他の説明変数の値によって数式で完全に計算できる状態）の問題を作っているため、そのVIFスコアが無限大となり多重共線性をテストするためのチャートが生成できませんでした。多重共線性の問題を解決するために、<%= perfect_collinearity_variables %>を説明変数から除外し再実行してください。
 <% } else if (max_vif > 10) { %>
 {{multicollinearity}}
 
