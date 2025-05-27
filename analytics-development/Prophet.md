@@ -161,6 +161,7 @@ Prophetモデルがデータより読み取った<%= target %>の長期的なト
 <% } %>
 
 {start_lazy_show_hide}
+### データ
 {{data}}
 {end_lazy_show_hide}
 
