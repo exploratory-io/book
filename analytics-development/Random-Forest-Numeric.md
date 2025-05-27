@@ -57,14 +57,14 @@ _説明変数は上記の「説明変数の重要度」にある重要度の高�
 * <%= group.name %>
     <% } %>
   <% }); %>
-<% } else if (group => group.r_square >= 0.4) { %>
+<% } %>
+<% if (groups.some(group => group.r_square >= 0.4 && group.r_square < 0.6)) { %>
 以下のグループにおいては、R2乗が中程度なため（0.4以上）、選択された説明変数で<%= target %>のばらつきをある程度説明できています。
   <% groups.forEach(group => { %>
-    <% if (group.r_square >= 0.4) { %>
+    <% if (group.r_square >= 0.4 && group.r_square < 0.6) { %>
 * <%= group.name %>
     <% } %>
   <% }); %>
-<% } else { %>
 <% } %>
 
 
