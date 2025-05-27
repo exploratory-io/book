@@ -105,7 +105,7 @@ const template = `
 
 ## 有意性 - 信頼区間
 
-<%= explanatory %>により<%= target %>の平均の差は約<%= mean_diff %>ですが、その95%信頼区間は<%= lower_end %>から<%= higher_end %>となっています。これは「<%= group_a %>と<%= group_b %>の<%= target %>の平均の差がこの範囲内にある可能性が95%ある」ということを意味します。
+<%= explanatory %>により<%= target %>の平均の差は約<%= mean_diff %>ですが、その95%信頼区間は<%= lower_end %>から<%= higher_end %>となっています。これは「<%= group_a %>と<%= group_b %>の<%= target %>の平均の差がこの範囲内にある可能性が高い（95%の信頼がある）」ことを意味します。
 
 <% if (p > baseline_p) { %>
 この区間に0（差がない）が含まれているため、<%= explanatory %>による<%= target %>の平均の差は有意であると言えません。
