@@ -6,7 +6,7 @@ const template = `
 {{summary_chart}}
 
 <% if (improve_probability > 0.95) { %>
-  結果として、グループAがグループBより優れている確率は<%= 100 * improve_probability %>% (<%= improve_probability %>)で、95%の信頼度の閾値を超えています。つまり、グループAがグループBよりも優れていると高い確信を持って言えます。
+  結果として、グループAがグループBより優れている確率は<%= improve_probability_pct %>% (<%= improve_probability %>)で、95%の信頼度の閾値を超えています。つまり、グループAがグループBよりも優れていると高い確信を持って言えます。
   
   期待される改善率は<%= expected_improvement_pct %>% (<%= expected_improvement %>)で、確信区間は<%= confidence_lower_pct %>%から<%= confidence_upper_pct %>%の間となっています。
   
@@ -18,9 +18,9 @@ const template = `
     期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)となっています。
   <% } %>
 <% } else if (improve_probability > 0.75) { %>
-  結果として、グループAがグループBより優れている確率は<%= 100 * improve_probability %>% (<%= improve_probability %>)です。95%の信頼度の閾値には達していませんが、グループAがグループBよりも優れている可能性がある程度あります。
+  結果として、グループAがグループBより優れている確率は<%= improve_probability_pct %>% (<%= improve_probability %>)です。95%の信頼度の閾値には達していませんが、グループAがグループBよりも優れている可能性がある程度あります。
   
-  期待される改善率は<%= 100 * expected_improvement %>% (<%= expected_improvement %>)で、確信区間は<%= 100 * confidence_lower %>%から<%= 100 * confidence_upper %>%の間となっています。
+  期待される改善率は<%= expected_improvement_pct %>% (<%= expected_improvement %>)で、確信区間は<%= confidence_lower_pct %>%から<%= confidence_upper_pct %>%の間となっています。
   
   <% if (expected_loss > 0.05) { %>
     期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)と比較的高く、グループAを選択することにはまだリスクがあると考えられます。
@@ -28,15 +28,15 @@ const template = `
     期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)となっています。
   <% } %>
 <% } else if (improve_probability > 0.5) { %>
-  結果として、グループAがグループBより優れている確率は<%= 100 * improve_probability %>% (<%= improve_probability %>)です。グループAとグループBの間に明確な差があるとは言えず、どちらかが優れているかについては不確実性が高いです。
+  結果として、グループAがグループBより優れている確率は<%= improve_probability_pct %>% (<%= improve_probability %>)です。グループAとグループBの間に明確な差があるとは言えず、どちらかが優れているかについては不確実性が高いです。
   
   期待される改善率は<%= expected_improvement_pct %>% (<%= expected_improvement %>)で、確信区間は<%= confidence_lower_pct %>%から<%= confidence_upper_pct %>%の間となっています。この確信区間に0が含まれているため、改善効果がない可能性も十分にあります。
   
   期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)となっています。
 <% } else { %>
-  結果として、グループAがグループBより優れている確率は<%= 100 * improve_probability %>% (<%= improve_probability %>)です。この結果から、グループBがグループAよりも優れている可能性が高いと言えます。
+  結果として、グループAがグループBより優れている確率は<%=  improve_probability_pct %>% (<%= improve_probability %>)です。この結果から、グループBがグループAよりも優れている可能性が高いと言えます。
   
-  期待される改善率は<%= 100 * expected_improvement %>% (<%= expected_improvement %>)で、確信区間は<%= 100 * confidence_lower %>%から<%= 100 * confidence_upper %>%の間となっています。
+  期待される改善率は<%= expected_improvement_pct %>% (<%= expected_improvement %>)で、確信区間は<%= confidence_lower_pct %>%から<%= confidence_upper_pct %>%の間となっています。
   
   <% if (expected_loss > 0.05) { %>
     期待される損失率は<%= expected_loss_pct %>% (<%= expected_loss %>)と高く、グループAを選択することによるリスクは大きいと言えます。
