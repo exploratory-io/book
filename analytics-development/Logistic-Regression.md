@@ -125,14 +125,14 @@ _上記の信頼区間の説明は直感的な説明であって、正確には�
 * <%= group.name %>
     <% } %>
   <% }); %>
-<% } else if (group => group.auc >= 0.6) { %>
+<% } %>
+<% if (groups.some(group => group.auc >= 0.6 && group.auc < 0.8)) { %>
 以下のグループにおいては、AUCが中程度なため（0.6以上）、選択された説明変数で<%= target %>のTRUEとFALSEのデータをある程度うまく分類できることを示しています。
   <% groups.forEach(group => { %>
-    <% if (group.auc >= 0.6) { %>
+    <% if (group.auc >= 0.6 && group.auc < 0.8) { %>
 * <%= group.name %>
     <% } %>
   <% }); %>
-<% } else { %>
 <% } %>
 
 ### 予測精度の指標
