@@ -3,7 +3,7 @@ const template = `
 <br/>
 <!-- intentional new line feed above -->
 
-<% if (algorithm = 'peason') { %>
+<% if (algorithm == 'pearson') { %>
 全ての変数の組み合わせに対し相関係数を計算しました。相関係数の計算のアルゴリズムは「ピアソン」が使われています。変数間の関係が直線的でない場合は、「スピアマンの順位相関係数」を使うことが推奨されます。アルゴリズムは[「設定」](//analytics/settings)より変更可能です。
 <% } else { %>
 全ての変数の組み合わせに対し相関係数を計算しました。相関係数の計算のアルゴリズムは「スピアマン」が使われています。アルゴリズムは[「設定」](//analytics/settings)より変更可能です。
