@@ -2,7 +2,7 @@ const template = `
 <br/>
 <!-- intentional new line feed above -->
 
-選択された説明変数を元に、<%= event_stauts %>の生存曲線を予測するコックス回帰モデルを作成しました。
+選択された説明変数を元に、<%= event_status %>の生存曲線を予測するコックス回帰モデルを作成しました。
 
 # モデルの指標
 
@@ -35,7 +35,7 @@ const template = `
 <% if (predictorColumns.length > 1) { %>
 ## 説明変数の重要度
 
-<%= event %>に関する生存曲線を予測するために、どの説明変数が相対的により重要なのかを表したのが以下のチャートです。
+<%= event_status %>に関する生存曲線を予測するために、どの説明変数が相対的により重要なのかを表したのが以下のチャートです。
 
 {{variable_importance}}
 
@@ -43,7 +43,7 @@ const template = `
 
 ## 説明変数の影響度
 
-期間が<%= survival_period%>の時点において、それぞれの説明変数の値が変わると<%= event %>の発生確率がどのように変わるかを表したのが以下のチャートです。期間は[「設定」](//analytics/settings)より変更可能です。
+期間が<%= survival_period%>の時点において、それぞれの説明変数の値が変わると<%= event_status %>の発生確率がどのように変わるかを表したのが以下のチャートです。期間は[「設定」](//analytics/settings)より変更可能です。
 
 {{variable_effect}}
 
