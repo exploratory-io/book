@@ -155,47 +155,7 @@ const template = `
 
 ## 効果量
 
-<% if (p_explanatory <= baseline_p) { %>
-
-### <%= explanatory %>の主効果の効果量
-この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size_explanatory %>と示されています。これは、<%= explanatory %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= effect_size_explanatory_pct %>%が<%= explanatory %>によって説明できると解釈できます。
-
-<% if (effect_size_explanatory < 0.06) { %>
-効果量（Eta2乗）は<%= effect_size_explanatory_pct %>%と低く、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は小さなものです。
-<% } else if (effect_size_explanatory < 0.14) { %>
-効果量（Eta2乗）は<%= effect_size_explanatory_pct %>%なので、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は中程度です。
-<% } else { %>
-効果量（Eta2乗）も<%= effect_size_explanatory_pct %>%と大きく、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
-<% } %>
-<% } %>
-
-<% if (p_covariate <= baseline_p) { %>
-
-### <%= covariate %>の効果の効果量
-この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size_covariate %>と示されています。これは、<%= covariate %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= effect_size_covariate_pct %>%が<%= covariate %>によって説明できると解釈できます。
-
-<% if (effect_size_covariate < 0.06) { %>
-効果量（Eta2乗）は<%= effect_size_covariate_pct %>%と低く、<%= covariate %>による<%= target %>の平均の差は小さなものです。
-<% } else if (effect_size_covariate < 0.14) { %>
-効果量（Eta2乗）は<%= effect_size_covariate_pct %>%なので、<%= covariate %>による<%= target %>の平均の差は中程度です。
-<% } else { %>
-効果量（Eta2乗）も<%= effect_size_covariate_pct %>%と大きく、<%= covariate %>による<%= target %>の平均の差は大きいと言えます。
-<% } %>
-<% } %>
-
-<% if (p_interaction <= baseline_p) { %>
-
-### <%= explanatory %> * <%= covariate %>の交互作用の効果量
-この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size_interaction %>と示されています。これは、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= effect_size_interaction_pct %>%が<%= explanatory %>と<%= covariate %>の交互作用によって説明できると解釈できます。
-
-<% if (effect_size_interaction < 0.06) { %>
-効果量（Eta2乗）は<%= effect_size_interaction_pct %>%と低く、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は小さなものです。
-<% } else if (effect_size_interaction < 0.14) { %>
-効果量（Eta2乗）は<%= effect_size_interaction_pct %>%なので、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は中程度です。
-<% } else { %>
-効果量（Eta2乗）も<%= effect_size_interaction_pct %>%と大きく、<%= explanatory %>と<%= covariate %>の交互作用による<%= target %>の平均の差は大きいと言えます。
-<% } %>
-<% } %>
+この検定では効果量としてEta（イータ）2乗を用います。Eta2乗は、説明変数や交互作用が目的変数のばらつきをどの程度説明できるかを示す指標です。値は0から1の間を取り、1に近いほど効果が大きいことを意味します。
 
 以下のテーブルは、ANCOVAにおける効果量（Eta2乗）の解釈の目安を示しています。
 
