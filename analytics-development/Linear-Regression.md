@@ -43,7 +43,7 @@ const template = `
 
 {{variable_effect}}
 
-* 青い線（または点）は説明変数の値に対する予測値を示します。
+* 青い線（または点）は説明変数の値に対する予測値を示します。予測値の計算方法の詳細は、[こちらのノート](https://exploratory.io/note/exploratory/Sbd0LDU6)をご参照ください。
 * グレーの線は実測値とその95%信頼区間を示します。
 * 縦軸は<%= target %>の値です。
 
