@@ -77,7 +77,7 @@ _説明変数は上記の「説明変数の重要度」にある重要度の高�
 
 <% } else { %>
 
-* 他の変数の値が一定の場合、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.coef %>の差があります。
+* 他の変数の値が一定の場合、<%= variable.variable %>は、ベースレベルである"<%= variable.base_level %>"と比べて約<%= variable.coef %>の差があります。ベースレベルの詳細は、[こちらのノート](https://exploratory.io/note/exploratory/Pxa6FmO2)をご参照ください。
 <% } %>
 <% }) %>
 
