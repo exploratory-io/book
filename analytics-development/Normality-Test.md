@@ -15,16 +15,27 @@ const template = `
 
 {{summary_chart}}
 
-正規性検定の結果は以下のとおりです：
 
-<% variables.forEach(function(variable) { %>
+正規性検定の結果は以下のとおりです。
+
+<% if (variables.some(variable => variable.p > baseline_p)) { %>
+以下の変数においては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より高いため、正規分布であると判断できます。
+  <% variables.forEach(variable => { %>
+    <% if (variable.p > baseline_p) { %>
 * **<%= variable.column %>**: W値が <%= variable.w %> で、P値は <%= variable.p %> です。
-  <% if (variable.p <= baseline_p) { %>
-  P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>)より小さいため、<%= variable.column %>は正規分布していないと判断されます。
-  <% } else { %>
-  P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>)より大きいため、<%= variable.column %>は正規分布していると判断できます。
-  <% } %>
-<% }); %>
+    <% } %>
+  <% }); %>
+<% } %>
+
+<% if (variables.some(variable => variable.p <= baseline_p)) { %>
+以下の変数においては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、正規分布でないと判断できます。
+  <% variables.forEach(variable => { %>
+    <% if (variable.p <= baseline_p) { %>
+* **<%= variable.column %>**: W値が <%= variable.w %> で、P値は <%= variable.p %> です。
+    <% } %>
+  <% }); %>
+<% } %>
+
 
 ## Q-Qプロット
 
