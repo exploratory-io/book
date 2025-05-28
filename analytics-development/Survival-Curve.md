@@ -2,7 +2,7 @@ const template = `
 <br/>
 <!-- intentional new line feed above -->
 
-観察対象ごとに「<%= start_date_column %>」列の値から「<%= end_date_column %>」列の値までを生存期間、「<%= event_status %>」をイベントとした生存分析用のデータを元に、カプラン・マイヤー法を使って生存曲線を計算しました。
+観察対象ごとに「<%= start_date_column %>」列の値から「<%= end_date_column %>」列の値までを生存期間、「<%= event_status %>」をイベントとした生存分析用のデータを元に、[カプラン・マイヤー法](https://exploratory.io/note/exploratory/ITp4cVo8)を使って生存曲線を計算しました。
 
 
 # 生存曲線
@@ -26,6 +26,8 @@ const template = `
 {{data}}
 
 生存率の計算のあたり、観測期間中にイベントが発生したかどうか確認できないデータを「打ち切り」と呼び、生存率の計算の対象から外します。例えば、まだ一ヶ月しか経過していない観察対象は、2ヶ月目以降イベントが起きるのかどうかまだわかりません。そこで2ヶ月目以降の計算からは対象外として外します。このようなケースを「打ち切り」と呼びます。
+
+打ち切りに関する詳細な説明については、[こちら](https://exploratory.io/note/exploratory/ITp4cVo8)のノートをご覧ください。
 
 # サマリ情報
 
