@@ -2,7 +2,7 @@ const template = `
 <br/>
 <!-- intentional new line feed above -->
 
-選択された説明変数を元に、<%= event_status %>の生存曲線を予測するコックス回帰モデルを作成しました。
+選択された説明変数を元に、<%= event_status %>の生存曲線を予測するサバイバル・フォレストモデルを作成しました。
 
 # モデルの指標
 
