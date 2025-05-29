@@ -8,11 +8,11 @@ const template = `
 {{summary}}
 
 <% if (p1 > baseline_p && p2 > baseline_p && p_interaction > baseline_p) { %>
-結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）、および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）のいずれも有意水準5%（0.05）より大きいため、<%= target %>の平均の差は統計的に有意とは言えません。
+結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）、および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= p_interaction_pct %>%）のいずれも有意水準5%（0.05）より大きいため、<%= target %>の平均の差は統計的に有意とは言えません。
 <% } %>
 
 <% if (p1 <= baseline_p && p2 > baseline_p && p_interaction > baseline_p) { %>
-結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。
+結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= p_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。
 
  <% if (effect_size1 < 0.06) { %>
 <%= explanatory1 %>の効果量（Eta2乗）は<%= effect_size1_pct %>%と低く、<%= explanatory1 %>による<%= target %>の平均の差は小さなものです。
@@ -24,7 +24,7 @@ const template = `
 <% } %>
 
 <% if (p1 > baseline_p && p2 <= baseline_p && p_interaction > baseline_p) { %>
-結果として、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。
+結果として、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= p_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。
 
  <% if (effect_size2 < 0.06) { %>
 <%= explanatory2 %>の効果量（Eta2乗）は<%= effect_size2_pct %>%と低く、<%= explanatory2 %>による<%= target %>の平均の差は小さなものです。
@@ -36,7 +36,7 @@ const template = `
 <% } %>
 
 <% if (p1 > baseline_p && p2 > baseline_p && p_interaction <= baseline_p) { %>
-結果として、<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）および<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。
+結果として、<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= p_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）および<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。
 
  <% if (effect_size_interaction < 0.06) { %>
 交互作用の効果量（Eta2乗）は<%= effect_size_interaction_pct %>%と低く、<%= explanatory1 %>と<%= explanatory2 %>の組み合わせによる<%= target %>の平均の差は小さなものです。
@@ -48,7 +48,7 @@ const template = `
 <% } %>
 
 <% if (p1 <= baseline_p && p2 <= baseline_p && p_interaction > baseline_p) { %>
-結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）および<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）はいずれも有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。
+結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）および<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）はいずれも有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= p_interaction_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。
 
  <% if (effect_size1 < 0.06) { %>
 <%= explanatory1 %>の効果量（Eta2乗）は<%= effect_size1_pct %>%と低く、<%= explanatory1 %>による<%= target %>の平均の差は小さなものです。
@@ -68,7 +68,7 @@ const template = `
 <% } %>
 
 <% if (p1 <= baseline_p && p2 > baseline_p && p_interaction <= baseline_p) { %>
-結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）が有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。交互作用が有意である場合、主効果の解釈は慎重に行う必要があります。
+結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= p_interaction_pct %>%）が有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。交互作用が有意である場合、主効果の解釈は慎重に行う必要があります。
 
  <% if (effect_size1 < 0.06) { %>
 <%= explanatory1 %>の効果量（Eta2乗）は<%= effect_size1_pct %>%と低く、<%= explanatory1 %>による<%= target %>の平均の差は小さなものです。
@@ -88,7 +88,7 @@ const template = `
 <% } %>
 
 <% if (p1 > baseline_p && p2 <= baseline_p && p_interaction <= baseline_p) { %>
-結果として、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）が有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。交互作用が有意である場合、主効果の解釈は慎重に行う必要があります。
+結果として、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= p_interaction_pct %>%）が有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意ですが、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）は有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため統計的に有意とは言えません。交互作用が有意である場合、主効果の解釈は慎重に行う必要があります。
 
  <% if (effect_size2 < 0.06) { %>
 <%= explanatory2 %>の効果量（Eta2乗）は<%= effect_size2_pct %>%と低く、<%= explanatory2 %>による<%= target %>の平均の差は小さなものです。
@@ -108,7 +108,7 @@ const template = `
 <% } %>
 
 <% if (p1 <= baseline_p && p2 <= baseline_p && p_interaction <= baseline_p) { %>
-結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）、および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）のすべてが有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意です。交互作用が有意である場合、主効果の解釈は慎重に行う必要があります。
+結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）、および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= p_interaction_pct %>%）のすべてが有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より低いため統計的に有意です。交互作用が有意である場合、主効果の解釈は慎重に行う必要があります。
 
  <% if (effect_size1 < 0.06) { %>
 <%= explanatory1 %>の効果量（Eta2乗）は<%= effect_size1_pct %>%と低く、<%= explanatory1 %>による<%= target %>の平均の差は小さなものです。
@@ -255,11 +255,11 @@ const template = `
 <%= explanatory1 %>と<%= explanatory2 %>の交互作用に関する帰無仮説は「<%= explanatory1 %>による<%= target %>の平均への影響は<%= explanatory2 %>の各グループで同じである」というものです。
 
 <% if (p_interaction > baseline_p) { %>
-検定の結果、P値が<%= effect_size_interaction_pct %>% (<%= p_interaction %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= interaction_f %>）がたまたま得られる確率が約<%= effect_size_interaction_pct %>%であるということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>) の場合、この確率は十分に高いので、帰無仮説を棄却できません。つまり、<%= explanatory1 %>と<%= explanatory2 %>の交互作用は統計的に有意であると言えません。
+検定の結果、P値が<%= p_interaction_pct %>% (<%= p_interaction %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= interaction_f %>）がたまたま得られる確率が約<%= p_interaction_pct %>%であるということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>) の場合、この確率は十分に高いので、帰無仮説を棄却できません。つまり、<%= explanatory1 %>と<%= explanatory2 %>の交互作用は統計的に有意であると言えません。
 <% } %>
 
 <% if (p_interaction <= baseline_p) { %>
-検定の結果、P値が<%= effect_size_interaction_pct %>% (<%= p_interaction %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= interaction_f %>）がたまたま得られる確率は約<%= effect_size_interaction_pct %>%しかないということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>)の場合、この確率は十分に低いので、帰無仮説を棄却できます。つまり、<%= explanatory1 %>と<%= explanatory2 %>の交互作用は統計的に有意であると言えます。
+検定の結果、P値が<%= p_interaction_pct %>% (<%= p_interaction %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= interaction_f %>）がたまたま得られる確率は約<%= p_interaction_pct %>%しかないということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>)の場合、この確率は十分に低いので、帰無仮説を棄却できます。つまり、<%= explanatory1 %>と<%= explanatory2 %>の交互作用は統計的に有意であると言えます。
 <% } %>
 
 <% } else { %>
@@ -382,7 +382,7 @@ const template = `
 # 次のステップ
 
 * 今回は<%= target %>に対する<%= explanatory1 %>と<%= explanatory2 %>という2つの変数が与える影響を分析しました。しかし、他の変数も<%= target %>に影響している可能性があります。そのため、「線形回帰」などを使った多変量分析を使い、複数の要因を同時に考慮した分析をすることができます。
-(!repeat_by) { %>
+<% if (!repeat_by) { %>
 * 今回の検定は全体に対して行われましたが、グループごとに分けて実施することも可能です。その場合は、「繰り返し」にグループとなる変数を選択し、実行し直すことができます。
 <% } %>
 * 複数の指標をまとめて一括で検定を行いたい場合、データの形を変更することで可能です。詳細については、[こちら](https://exploratory.io/note/exploratory/mxW2zKb2)のノートをご覧ください。
