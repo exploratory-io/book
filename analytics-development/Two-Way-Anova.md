@@ -1,7 +1,11 @@
 const template = `
 # サマリ
 
-今回の分析では、<%= explanatory1 %>と<%= explanatory2 %>による<%= target %>の平均の差、およびそれらの交互作用が有意かどうかを調べました。
+<% if (!repeat_by) { %>
+
+<%= explanatory1 %>と<%= explanatory2 %>による<%= target %>の平均の差、およびそれらの交互作用が有意かどうかを調べました。
+
+{{summary}}
 
 <% if (p1 > baseline_p && p2 > baseline_p && p_interaction > baseline_p) { %>
 結果として、<%= explanatory1 %>の主効果（P値: <%= p1_pct %>%）、<%= explanatory2 %>の主効果（P値: <%= p2_pct %>%）、および<%= explanatory1 %> * <%= explanatory2 %>の交互作用（P値: <%= effect_size_interaction_pct %>%）のいずれも有意水準5%（0.05）より大きいため、<%= target %>の平均の差は統計的に有意とは言えません。
@@ -131,11 +135,34 @@ const template = `
  <% } %>
 <% } %>
 
-# 有意性
 
-有意性については、P値によって判断できます。
+<% } else { %>
+
+<%= explanatory %>による<%= target %>の平均の差が有意かどうかを<%= repeat_by %>ごとに調べました。
 
 {{summary}}
+
+<% if (groups.some(group => group.p <= baseline_p)) { %>
+以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、統計的に有意だと言えます。
+  <% groups.forEach(group => { %>
+    <% if (group.p <= baseline_p) { %>
+* <%= group.name %>
+    <% } %>
+  <% }); %>
+<% } %>
+<% if (groups.some(group => group.p > baseline_p)) { %>
+以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より高いため、統計的に有意とは言えません。
+  <% groups.forEach(group => { %>
+    <% if (group.p > baseline_p) { %>
+* <%= group.name %>
+    <% } %>
+  <% }); %>
+<% } %>
+
+<% } %>
+
+この検定における有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
+
 {start_show_hide}
 ## 主要な統計指標
 * 変数
@@ -194,6 +221,11 @@ const template = `
   * 一般的にEta2乗より若干小さい値になり、サンプルサイズが小さい場合や将来の研究への一般化を考える際に推奨されます。
 {end_show_hide}
 
+# 有意性
+
+有意性についてはP値を元に判断できます。
+
+<% if (!repeat_by) { %>
 ## <%= explanatory1 %>の主効果（P値）
 
 <%= explanatory1 %>の主効果に関する帰無仮説は「<%= explanatory1 %>の複数のグループ間で<%= target %>の平均には差がない」というものです。
@@ -230,11 +262,34 @@ const template = `
 検定の結果、P値が<%= effect_size_interaction_pct %>% (<%= p_interaction %>)となりました。これは、もし帰無仮説が正しいのであれば、今回のデータのようなF値（<%= interaction_f %>）がたまたま得られる確率は約<%= effect_size_interaction_pct %>%しかないということです。有意水準が<%= baseline_p_pct %>% (<%= baseline_p %>)の場合、この確率は十分に低いので、帰無仮説を棄却できます。つまり、<%= explanatory1 %>と<%= explanatory2 %>の交互作用は統計的に有意であると言えます。
 <% } %>
 
+<% } else { %>
+
+帰無仮説が正しい場合、今回のデータに見られる差かそれ以上の差がたまたま起きる確率がP値です。有意水準<%= baseline_p_pct %>%より大きければ、帰無仮説を棄却できないため、統計的に有意であるとは言えません。逆に、<%= baseline_p_pct %>%以下であれば、帰無仮説を棄却できるため、統計的に有意であると言えます。
+
+確率分布であるF分布のどのあたりにP値（青い点線）が位置するのかを、<%= repeat_by %>ごとに可視化したのが以下のチャートです。薄い青の領域は（帰無仮説の）棄却領域です。
+
+<% } %>
+
+
 {{probability_dist}}
 
 現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
 
 ## 効果量
+
+統計的有意性（P値）はサンプルサイズが大きいと、小さな差でも「有意」と判定されることがあるために、効果量を元にして実際の効果の大きさを評価することができます。
+
+この検定では効果量の1つであるEta（イータ）2乗が<%= effect_size %>と示されています。これは、<%= explanatory %>による<%= target %>の平均値のばらつきの大きさの全体のばらつきに対する比率です。つまり、<%= target %>のばらつきの大きさの<%= effect_size %>が<%= explanatory %>によって説明できると解釈できます。
+
+効果量（Eta2乗）の大きさの判断のための目安は以下のとおりです。
+
+| 効果量の値 | 効果量の大きさ |
+|------------|------------|
+| 0.01 | 小さい効果 |
+| 0.06 | 中くらいの効果 |
+| 0.14 | 大きい効果 |
+
+<% if (!repeat_by) { %>
 
 <% if (p1 <= baseline_p) { %>
 
@@ -276,14 +331,11 @@ const template = `
 <% } %>
 <% } %>
 
-以下のテーブルは、Two-Way ANOVAにおける効果量（Eta2乗）の解釈の目安を示しています。
+<% } else { %>
 
-| 効果量の値 | 効果量の大きさ |
-|------------|------------|
-| 0.01 | 小さい効果 |
-| 0.06 | 中くらいの効果 |
-| 0.14 | 大きい効果 |
+効果量は検定結果において有意と判断した場合に注意する必要があります。有意でなければ、特に注意する必要はありません。
 
+<% } %>
 
 # 多重比較 - 変数
 
@@ -301,16 +353,13 @@ const template = `
 
 {{interaction_comparison}}
 
-# 補足情報
+# 記述統計情報
 
-## 統計量
+## 統計値
 
 それぞれのグループごとの統計値は以下の通りです。
 
-{start_lazy_show_hide}
-### チャート
 {{statistics}}
-{end_lazy_show_hide}
 
 ## データの分布
 
@@ -333,7 +382,11 @@ const template = `
 # 次のステップ
 
 * 今回は<%= target %>に対する<%= explanatory1 %>と<%= explanatory2 %>という2つの変数が与える影響を分析しました。しかし、他の変数も<%= target %>に影響している可能性があります。そのため、「線形回帰」などを使った多変量分析を使い、複数の要因を同時に考慮した分析をすることができます。
+(!repeat_by) { %>
 * 今回の検定は全体に対して行われましたが、グループごとに分けて実施することも可能です。その場合は、「繰り返し」にグループとなる変数を選択し、実行し直すことができます。
+<% } %>
+* 複数の指標をまとめて一括で検定を行いたい場合、データの形を変更することで可能です。詳細については、[こちら](https://exploratory.io/note/exploratory/mxW2zKb2)のノートをご覧ください。
+
 `;
 
 module.exports = template;
