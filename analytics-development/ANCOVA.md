@@ -1,7 +1,11 @@
 const template = `
 # サマリ
 
+<% if (!repeat_by) { %>
+
 今回の分析では、共変量として<%= covariate %>を調整した上で、<%= explanatory %>による<%= target %>の平均の差が有意かどうかを調べました。
+
+{{summary}}
 
 <% if (p_explanatory > baseline_p && p_interaction > baseline_p) { %>
 結果として、<%= explanatory %>の主効果（P値: <%= p_explanatory_pct %>%）および<%= explanatory %> * <%= covariate %>の交互作用（P値: <%= p_interaction_pct %>%）のいずれも有意水準<%= baseline_p_pct %>%（<%= baseline_p %>）より大きいため、<%= covariate %>の影響を調整した後の<%= explanatory %>による<%= target %>の平均の差は統計的に有意とは言えません。
@@ -51,13 +55,36 @@ const template = `
   <% } %>
 <% } %>
 
-# 有意性
+<% } else { %>
 
-有意性については、P値によって判断できます。
+今回の分析では、共変量として<%= covariate %>を調整した上で、<%= explanatory %>による<%= target %>の平均の差が有意かどうかを<%= repeat_by %>ごとに調べました。
 
 {{summary}}
+
+<% if (groups.some(group => group.p <= baseline_p)) { %>
+以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、統計的に有意だと言えます。
+  <% groups.forEach(group => { %>
+    <% if (group.p <= baseline_p) { %>
+* <%= group.name %>
+    <% } %>
+  <% }); %>
+<% } %>
+<% if (groups.some(group => group.p > baseline_p)) { %>
+以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より高いため、統計的に有意とは言えません。
+  <% groups.forEach(group => { %>
+    <% if (group.p > baseline_p) { %>
+* <%= group.name %>
+    <% } %>
+  <% }); %>
+<% } %>
+
+この検定における有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
+
 {start_show_hide}
-## 主要な統計指標
+
+
+## 統計指標の説明
+
 * 変数
   * 変数は分析に含まれる要因の名前を示します。ANOCOVAでは主に「共変量」「要因（独立変数）」が表示されます。
   * 共変量は統制したい連続変数（例：年齢、スコアなど）、要因は効果を調べたいカテゴリ変数です。
@@ -112,6 +139,10 @@ const template = `
   * 値は0から1の間（厳密には負の値も取りうる）で、値が大きいほど効果が大きいことを示します。
   * 一般的にEta2乗より若干小さい値になり、サンプルサイズが小さい場合や将来の研究への一般化を考える際に推奨されます。
 {end_show_hide}
+
+# 有意性
+
+有意性については、P値または信頼区間のどちらかによって判断できます。どちらも同じ結果となります。
 
 ## <%= explanatory %>の主効果（P値）
 
