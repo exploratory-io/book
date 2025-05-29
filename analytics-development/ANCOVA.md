@@ -261,9 +261,7 @@ const template = `
 
 それぞれのグループごとの調整済み統計値は以下の通りです。
 
-### チャート
-
-{end_lazy_show_hide}
+{{statistics}}
 
 ## データの分布
 
