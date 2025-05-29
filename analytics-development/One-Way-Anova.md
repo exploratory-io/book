@@ -33,7 +33,7 @@ const template = `
 
 <%= explanatory %>による<%= target %>の平均の差が有意かどうかを<%= repeat_by %>ごとに調べました。
 
-{{summary}}
+{{summary_chart}}
 
 <% if (groups.some(group => group.p <= baseline_p)) { %>
 以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、統計的に有意だと言えます。
