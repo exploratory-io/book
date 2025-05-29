@@ -5,12 +5,12 @@ const template = `
 
 <%= explanatory %>による<%= target %>の中央値の差が有意かどうかを調べました。
 
-<% if (p > base_line_p) { %>
-結果として、P値は<%= p_pct %>% (<%= p %>)で、有意水準<%= base_line_p_pct %>% (<%= base_line_p %>) より大きいため、<%= explanatory %>による<%= target %>の中央値の差は統計的に有意とは言えません。
+<% if (p > baseline_p) { %>
+結果として、P値は<%= p_pct %>% (<%= p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より大きいため、<%= explanatory %>による<%= target %>の中央値の差は統計的に有意とは言えません。
 <% } %>
 
-<% if (p <= base_line_p) { %>
-結果として、P値は<%= p_pct %>% (<%= p %>)で、有意水準<%= base_line_p_pct %>% (<%= base_line_p %>) より低いため、<%= explanatory %>による<%= target %>の中央値の差は統計的に有意だと言えます。
+<% if (p <= baseline_p) { %>
+結果として、P値は<%= p_pct %>% (<%= p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、<%= explanatory %>による<%= target %>の中央値の差は統計的に有意だと言えます。
 
   <% if (effect_size < 0.06) { %>
 効果量（Eta2乗）は<%= effect_size_pct %>%と低く、<%= explanatory %>による<%= target %>の中央値の差は小さなものです。
@@ -43,7 +43,6 @@ const template = `
     <% } %>
   <% }); %>
 <% } %>
-
 
 <% } %>
 
@@ -114,6 +113,7 @@ const template = `
 
 現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
 
+<% } %>
 
 # 効果量
 
@@ -186,7 +186,7 @@ P値が有意水準の5%以下である組み合わせにおける<%= target %>�
 
 ## データの分布
 
-<%= explanatory %>による<%= target %>のの分布の違いを密度曲線を使って可視化したものが以下となります。
+<%= explanatory %>による<%= target %>の分布の違いを密度曲線を使って可視化したものが以下となります。
 
 {start_lazy_show_hide}
 ### チャート
@@ -207,7 +207,7 @@ P値が有意水準の5%以下である組み合わせにおける<%= target %>�
 ## 次のステップ
 
 * 今回は<%= target %>に対する<%= explanatory %>という1つの変数が与える影響を分析しました。しかし、他の変数も<%= target %>に影響している可能性があります。そのため、「線形回帰」などを使った多変量分析を使い、複数の要因を同時に考慮した分析をすることができます。
-* <% if (!repeat_by) { %>
+<% if (!repeat_by) { %>
 * 今回の検定は全体に対して行われましたが、グループごとに分けて実施することも可能です。その場合は、「繰り返し」にグループとなる変数を選択し、実行し直すことができます。
 <% } %>
 
