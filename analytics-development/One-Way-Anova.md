@@ -179,17 +179,13 @@ const template = `
 
 <% } %>
 
+# 記述統計情報
 
-# 補足情報
-
-## 統計量
+## 統計値
 
 それぞれのグループごとの統計値は以下の通りです。
 
-{start_lazy_show_hide}
-### チャート
 {{statistics}}
-{end_lazy_show_hide}
 
 ## データの分布
 
@@ -208,6 +204,8 @@ const template = `
 ### チャート
 {{mean}}
 {end_lazy_show_hide}
+
+# 補足情報
 
 ## 次のステップ
 

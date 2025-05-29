@@ -2,31 +2,7 @@ const template = `
 
 # サマリ
 
-<% if (repeat_by) { %>
-
-<%= explanatory %>による<%= target %>の平均の差が有意かどうかを<%= repeat_by %>ごとに調べました。
-
-{{summary}}
-
-<% if (groups.some(group => group.p <= baseline_p)) { %>
-以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、統計的に有意だと言えます。
-  <% groups.forEach(group => { %>
-    <% if (group.p <= baseline_p) { %>
-* <%= group.name %>
-    <% } %>
-  <% }); %>
-<% } %>
-<% if (groups.some(group => group.p > baseline_p)) { %>
-以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より高いため、統計的に有意とは言えません。
-  <% groups.forEach(group => { %>
-    <% if (group.p > baseline_p) { %>
-* <%= group.name %>
-    <% } %>
-  <% }); %>
-<% } %>
-
-
-<% } else { %>
+<% if (!repeat_by) { %>
 
 <%= explanatory %>による<%= target %>の平均の差が有意かどうかを調べました。
 
@@ -53,6 +29,31 @@ const template = `
 効果量も<%= effect_size %>と大きく、<%= explanatory %>による<%= target %>の平均の差は大きいと言えます。
   <% } %>
 <% } %>
+
+
+<% } else { %>
+
+<%= explanatory %>による<%= target %>の平均の差が有意かどうかを<%= repeat_by %>ごとに調べました。
+
+{{summary}}
+
+<% if (groups.some(group => group.p <= baseline_p)) { %>
+以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、統計的に有意だと言えます。
+  <% groups.forEach(group => { %>
+    <% if (group.p <= baseline_p) { %>
+* <%= group.name %>
+    <% } %>
+  <% }); %>
+<% } %>
+<% if (groups.some(group => group.p > baseline_p)) { %>
+以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より高いため、統計的に有意とは言えません。
+  <% groups.forEach(group => { %>
+    <% if (group.p > baseline_p) { %>
+* <%= group.name %>
+    <% } %>
+  <% }); %>
+<% } %>
+
 
 <% } %>
 
