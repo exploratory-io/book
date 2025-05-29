@@ -3,7 +3,7 @@ const template = `
 
 <% if (!repeat_by) { %>
 
-今回の分析では、共変量として<%= covariate %>を調整した上で、<%= explanatory %>による<%= target %>の平均の差が有意かどうかを調べました。
+共変量として<%= covariate %>を調整した上で、<%= explanatory %>による<%= target %>の平均の差が有意かどうかを調べました。
 
 {{summary}}
 
@@ -57,7 +57,7 @@ const template = `
 
 <% } else { %>
 
-今回の分析では、共変量として<%= covariate %>を調整した上で、<%= explanatory %>による<%= target %>の平均の差が有意かどうかを<%= repeat_by %>ごとに調べました。
+共変量として<%= covariate %>を調整した上で、<%= explanatory %>による<%= target %>の平均の差が有意かどうかを<%= repeat_by %>ごとに調べました。
 
 {{summary}}
 
@@ -78,11 +78,11 @@ const template = `
   <% }); %>
 <% } %>
 
+<% } %>
+
 この検定における有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
 
 {start_show_hide}
-
-
 ## 統計指標の説明
 
 * 変数
