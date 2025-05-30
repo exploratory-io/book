@@ -76,7 +76,7 @@ const template = `
 <% } else if (variable.type == 'logical') { %>
 他の変数の値が一定だとしても、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>は約<%= variable.coef %>倍になります。
 <% } else { %>
-他の変数の値が一定だとしても、「<%= variable.variable %>」は、ベースレベルである「<%= variable.base_level %>」と比べて約<%= variable.coef %>倍になります。
+他の変数の値が一定だとしても、「<%= variable.variable %>」は、ベースレベルである「<%= variable.base_level %>」と比べて約<%= variable.coef %>倍になります。ベースレベルの詳細は[こちらのノート](https://exploratory.io/note/exploratory/Pxa6FmO2)をご参照ください。
 <% } %>
 <% }) %>
 

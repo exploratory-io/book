@@ -83,7 +83,7 @@ _カテゴリー型（Character型、Factor型）の説明変数において一�
 <% } else if (variable.type == 'logical') { %>
 他の変数の値が一定の場合、<%= variable.variable %>がTRUEの場合、FALSEに比べ<%= target %>のオッズ（TRUEの割合 / FALSEの割合）は約<%= variable.odds_ratio %>倍になります。
 <% } else { %>
-他の変数の値が一定の場合、「<%= variable.variable %>」は、ベースレベルである「<%= variable.base_level %>」と比べて<%= target %>のオッズ（TRUEの割合 / FALSEの割合）が約<%= variable.odds_ratio %>倍になります。
+他の変数の値が一定の場合、「<%= variable.variable %>」は、ベースレベルである「<%= variable.base_level %>」と比べて<%= target %>のオッズ（TRUEの割合 / FALSEの割合）が約<%= variable.odds_ratio %>倍になります。ベースレベルの詳細は[こちらのノート](https://exploratory.io/note/exploratory/Pxa6FmO2)をご参照ください。
 <% } %>
 <% }) %>
 
