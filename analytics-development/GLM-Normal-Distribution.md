@@ -8,6 +8,8 @@ const template = `
 # 多重共線性
 
 <% if (has_perfect_collinearity) { %>
+{{multicollinearity:0.6}}
+
 このモデルでは<%= perfect_collinearity_variables %>が完全な[多重共線性](https://exploratory.io/note/exploratory/Ysc3LNp0)（他の説明変数の値によって数式で完全に計算できる状態）の問題を作っているため、そのVIFスコアが無限大となり多重共線性をテストするためのチャートが生成できませんでした。多重共線性の問題を解決するために、<%= perfect_collinearity_variables %>を説明変数から除外し再実行してください。
 <% } else if (max_vif > 10) { %>
 {{multicollinearity}}
