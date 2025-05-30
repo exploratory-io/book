@@ -2,7 +2,7 @@ const template = `
 <br/>
 <!-- intentional new line feed above -->
 
-選択された説明変数を元に、<%= target %>を予測する一般化線形モデル（逆ガンマ分布）を作成しました。
+選択された説明変数を元に、<%= target %>を予測する一般化線形モデル（逆ガウス分布）を作成しました。
 
 <% if (predictorColumns.length > 1) { %>
 # 多重共線性
