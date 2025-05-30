@@ -1,8 +1,5 @@
 const template =`
 
-<br/>
-<!-- intentional new line feed above -->
-
 以下の変数を元に因子分析を行い、変数間の相関関係から<%= factor_count %>個の潜在的な共通因子を特定しました。これら<%= factor_count %>個の因子でデータ全体のばらつきの<%= cumulative_variance_pct %>%を説明できます。現在の因子数は<%= factor_count %>ですが、[「設定」](//analytics/settings)より変更可能です。
 
 <% variables.forEach(variable => { %>

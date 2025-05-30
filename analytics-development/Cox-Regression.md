@@ -1,6 +1,4 @@
 const template = `
-<br/>
-<!-- intentional new line feed above -->
 
 選択された説明変数を元に、<%= event_status %>の生存曲線を予測するコックス回帰モデルを作成しました。
 
@@ -24,6 +22,11 @@ const template = `
 <% } %>
 <% } %>
 
+# 生存曲線
+
+モデルに基づいた説明変数ごとの生存曲線を表したのが以下のチャートです。この曲線は、時間の経過に伴う生存確率（イベントの非発生確率）の予測値を示しています。
+
+{{survival_curve}}
 
 # 変数間の関係
 
@@ -64,11 +67,6 @@ const template = `
 * カテゴリー型（Character型、Factor型）の説明変数において一意の値が12個より多い場合は、頻度の多いものから11個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings)より変更可能です。
 
 
-# 生存曲線
-
-モデルに基づいた説明変数ごとの生存曲線を表したのが以下のチャートです。この曲線は、時間の経過に伴う生存確率（イベントの非発生確率）の予測値を示しています。
-
-{{survival_curve}}
 
 # 変数のハザード比
 
@@ -80,15 +78,15 @@ const template = `
 
 それぞれの説明変数の値が1単位変わると、<%= event_status %>のハザード（単位時間あたりに<%= event_status %>が発生するリスク）が何倍上がる（または下がる）かを示します。ハザードとは、ある時点でイベントが発生する瞬間的なリスク（発生率）を意味します。
 
-### ハザード比の解釈の例
+**ハザード比の解釈の例**
 
 <% variables.forEach(variable => { %>
 <% if (variable.type == 'numeric') { %>
-他の変数の値が一定の場合、<%= variable.variable %>が1単位上がると、<%= event_status %>のハザード（単位時間あたりに<%= event_status %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。
+* 他の変数の値が一定の場合、<%= variable.variable %>が1単位上がると、<%= event_status %>のハザード（単位時間あたりに<%= event_status %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。
 <% } else if (variable.type == 'logical') { %>
-他の変数の値が一定の場合、<%= variable.variable %>がTRUEの場合、FALSEに比べて<%= event_status %>のハザード（単位時間あたりに<%= event_status %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。
+* 他の変数の値が一定の場合、<%= variable.variable %>がTRUEの場合、FALSEに比べて<%= event_status %>のハザード（単位時間あたりに<%= event_status %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。
 <% } else { %>
-他の変数の値が一定の場合、「<%= variable.variable %>」は、ベースレベルである「<%= variable.base_level %>」と比べて<%= event_status %>のハザード（単位時間あたりに<%= event_status %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。ベースレベルの詳細は[こちらのノート](https://exploratory.io/note/exploratory/Pxa6FmO2)をご参照ください。
+* 他の変数の値が一定の場合、「<%= variable.variable %>」は、ベースレベルである「<%= variable.base_level %>」と比べて<%= event_status %>のハザード（単位時間あたりに<%= event_status %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。ベースレベルの詳細は[こちらのノート](https://exploratory.io/note/exploratory/Pxa6FmO2)をご参照ください。
 <% } %>
 <% }) %>
 
@@ -113,7 +111,7 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 
 _上記の信頼区間の説明は直感的な説明であって、正確には「同じ母集団から繰り返しサンプルを取り、毎回95％信頼区間を計算した場合、そのうちの95％の区間は真のハザード比を含む」ということになります。_
 
-### 注意点
+**注意点：**
 
 * ハザード比は、確率の変化比ではなく、あくまでもハザード（単位時間あたりのイベント発生リスク）の変化比です。
 * ハザード比が1より大きい場合は、<%= event_status %>がより早く（短い時間で）発生しやすくなり、1より小さい場合は発生しにくく（時間がかかるように）なります。

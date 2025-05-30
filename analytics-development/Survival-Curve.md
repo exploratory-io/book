@@ -1,6 +1,4 @@
 const template = `
-<br/>
-<!-- intentional new line feed above -->
 
 観察対象である行ごとに「<%= start_date_column %>」列の値から「<%= end_date_column %>」列の値までを生存期間、「<%= event_status %>」をイベントとしたデータを元に、[カプラン・マイヤー](https://exploratory.io/note/exploratory/ITp4cVo8)のアルゴリズムを使って生存曲線を計算しました。
 
@@ -66,36 +64,7 @@ const template = `
 
 {{summary_chart}}
 
-この仮説検定における帰無仮説は、「<%= color_column %>のグループ間で生存曲線に差がない」というものです。
-
-<% if (!group_column) { %>
-
-<% if (p > 0.05) { %>
-結果として、P値は**<%= p_pct %>% (<%= p %>)**で、有意水準5% (0.05) より大きいため、<%= color_column %>のグループ間の生存曲線の差は統計的に有意とは言えません。
-<% } else { %>
-結果として、P値は**<%= p_pct %>% (<%= p %>)**で、有意水準5% (0.05) より低いため、<%= color_column %>のグループ間の生存曲線の差は統計的に有意だと言えます。
-<% } %>
-
-<% } else { %>
-
-<% if (groups.some(group => group.p <= baseline_p)) { %>
-以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より低いため、統計的に有意だと言えます。
-  <% groups.forEach(group => { %>
-    <% if (group.p <= baseline_p) { %>
-* <%= group.name %>
-    <% } %>
-  <% }); %>
-<% } %>
-<% if (groups.some(group => group.p > baseline_p)) { %>
-以下のグループにおいては、P値が有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より高いため、統計的に有意とは言えません。
-  <% groups.forEach(group => { %>
-    <% if (group.p > baseline_p) { %>
-* <%= group.name %>
-    <% } %>
-  <% }); %>
-<% } %>
-
-<% } %>
+この仮説検定における帰無仮説は、「<%= color_column %>のグループ間で生存曲線に差がない」というものです。P値の値が有意水準である<%= baseline_p_pct %>%より高ければ、選択された説明変数と<%= target %>の関係は統計的に有意とは言えません。逆に、P値が<%= baseline_p_pct %>%より低ければ、有意だと言えます。
 
 **指標の詳細**
 

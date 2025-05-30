@@ -1,6 +1,4 @@
 const template = `
-<br/>
-<!-- intentional new line feed above -->
 
 選択された説明変数を元に、<%= target %>を予測するXGBoostのモデルを作成しました。
 
@@ -52,53 +50,22 @@ const template = `
 
 {{summary}}
 
-<% if (repeat_by) { %>
-
 ## 予測精度
 
-<% if (groups.some(group => group.auc >= 0.8)) { %>
-以下のグループにおいては、AUCが高いため（0.8以上）、選択された説明変数で<%= target %>のTRUEとFALSEのデータを非常にうまく分類できることを示しています。
- <% groups.forEach(group => { %>
-   <% if (group.auc >= 0.8) { %>
-* <%= group.name %>
-   <% } %>
- <% }); %>
-<% } else if (group => group.auc >= 0.6) { %>
-以下のグループにおいては、AUCが中程度なため（0.6以上）、選択された説明変数で<%= target %>のTRUEとFALSEのデータをある程度うまく分類できることを示しています。
- <% groups.forEach(group => { %>
-   <% if (group.auc >= 0.6) { %>
-* <%= group.name %>
-   <% } %>
- <% }); %>
-<% } else { %>
-<% } %>
+目的変数がロジカル型（TRUE/FALSE）の場合、モデルの予測精度を評価する指標としてAUCがよく使われるます。
 
-### 予測精度の指標
+* AUC
+  * ロジカル型の目的変数を予測するモデルの予測精度を評価するために、一般的によく使われる指標です。
+  * このモデルがTRUEのデータとFALSEのデータをうまく分類することができるかを測ります。
+  * 値は0.5から1の間で、0.5はランダムな予測（コイン投げと同等）、1はTRUEとFALSEのデータを完全に分類できることを意味します。
+  * 一般的に0.6以上で許容可能、0.8以上で良好、0.9以上で非常に優れた分類性能と解釈されます。
+  * Area Under the Curveの略で、ROC曲線（the Curve）の下の面積という意味です。
 
-* ロジカル型（TRUE/FALSE）を予測するモデルの予測精度の評価には一般的にAUCがよく使われます。値は0.5から1の間で、0.5はランダムな予測（コイン投げと同等）、1はTRUEとFALSEのデータを完全に分類できることを意味します。
+参考情報：
+
 * AUCの詳細な説明については、[こちら](https://exploratory.io/note/exploratory/AUC-RZG7gbI6)のノートをご覧ください。
 * 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings)より変更可能です。
 
-
-<% } else { %>
-## 予測精度
-
-<% if (auc > 0.9) { %>
-AUCは<%= auc_pct %>% (<%= auc %>)と非常に高く、このモデルは<%= target %>のTRUEとFALSEのデータを非常にうまく分類できることを示しています。
-<% } else if (auc > 0.8) { %>
-AUCは<%= auc_pct %>% (<%= auc %>)と高く、このモデルは<%= target %>のTRUEとFALSEのデータをうまく分類できることを示しています。
-<% } else if (auc > 0.6) { %>
-AUCは<%= auc_pct %>% (<%= auc %>)と中程度で、このモデルは<%= target %>のTRUEとFALSEのデータをある程度うまく分類できることを示しています。
-<% } else { %>
-AUCは<%= auc_pct %>% (<%= auc %>)と低く、このモデルは<%= target %>のTRUEとFALSEをあまりうまく分類できないことを示しています。
-<% } %>
-
-### 予測精度の指標
-
-* ロジカル型（TRUE/FALSE）を予測するモデルの予測精度の評価には一般的にAUCがよく使われます。値は0.5から1の間で、0.5はランダムな予測（コイン投げと同等）、1はTRUEとFALSEのデータを完全に分類できることを意味します。
-* 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings)より変更可能です。
-
-<% } %>
 
 {start_show_hide}
 ## モデルの指標の詳細
