@@ -86,7 +86,7 @@ const template = `
 <% } else if (variable.type == 'logical') { %>
 他の変数の値が一定の場合、<%= variable.variable %>がTRUEの場合、FALSEに比べて<%= event_status %>のハザード（単位時間あたりに<%= event_status %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。
 <% } else { %>
-他の変数の値が一定の場合、「<%= variable.variable %>」は、ベースレベルである「<%= variable.base_level %>」と比べて<%= event_status %>のハザード（単位時間あたりに<%= event_status %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。
+他の変数の値が一定の場合、「<%= variable.variable %>」は、ベースレベルである「<%= variable.base_level %>」と比べて<%= event_status %>のハザード（単位時間あたりに<%= event_status %>が発生するリスク：イベント発生率 / 生存率）は約<%= variable.hazard_ratio %>倍になります。ベースレベルの詳細は[こちらのノート](https://exploratory.io/note/exploratory/Pxa6FmO2)をご参照ください。
 <% } %>
 <% }) %>
 
