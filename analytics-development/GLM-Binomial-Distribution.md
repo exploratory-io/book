@@ -33,9 +33,9 @@ const template =
 
 {{variable_importance}}
 
-<% } %>
-
 変数の重要度の仕組みについては、[こちら](https://exploratory.io/note/exploratory/dLm5rwn5)のノートをご覧ください。
+
+<% } %>
 
 ## 説明変数の影響度
 
@@ -147,6 +147,7 @@ _上記の信頼区間の説明は直感的な説明であって、正確には�
 ### 予測精度の指標
 
 * ロジカル型（TRUE/FALSE）を予測するモデルの予測精度の評価には一般的にAUCがよく使われます。値は0.5から1の間で、0.5はランダムな予測（コイン投げと同等）、1はTRUEとFALSEのデータを完全に分類できることを意味します。
+* AUCの詳細な説明については、[こちら](https://exploratory.io/note/exploratory/AUC-RZG7gbI6)のノートをご覧ください。
 * 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings)より変更可能です。
 
 ## 有意性
