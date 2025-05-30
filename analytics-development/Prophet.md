@@ -114,6 +114,8 @@ Prophetモデルがデータより読み取った<%= target %>の長期的なト
 
 {{variable_importance}}
 
+変数の重要度の仕組みについては、[こちら](https://exploratory.io/note/exploratory/dLm5rwn5)のノートをご覧ください。
+
 <% } %>
 
 ## 時系列要素と予測値の関係
