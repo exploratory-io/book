@@ -1,7 +1,5 @@
 const template =
 `
-<br/>
-<!-- intentional new line feed above -->
 
 選択された説明変数を元に、<%= target %>を予測するランダムフォレストのモデルを作成しました。
 

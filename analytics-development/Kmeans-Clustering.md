@@ -1,6 +1,5 @@
 const template = `
-<br/>
-<!-- intentional new line feed above -->
+
 
 データの各行を観察対象として、選択された変数を元に「K-Means クラスタリング」を使ってデータを<%= cluster_number %>つのクラスター（グループ）に分類しました。クラスターの数は<%= cluster_number %>ですが、[「設定」](//analytics/settings)より変更可能です。
 

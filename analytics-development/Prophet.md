@@ -1,6 +1,5 @@
 const template = `
-<br/>
-<!-- intentional new line feed above -->
+
 
 <% if (!test_mode) { %>
 <%= target %> を予測するモデルが作られました。<%= period %><%= unit %>後までを予測していますが、こちらの予測期間は[「設定」](//analytics/settings)の「予測期間」より変更できます。

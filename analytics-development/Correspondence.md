@@ -1,7 +1,5 @@
 const template = `
 
-<br/>
-<!-- intentional new line feed above -->
 
 以下の変数間の関係性を分析するために対応分析（コレスポンデンス分析）を実施しました。
 
