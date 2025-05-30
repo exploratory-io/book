@@ -143,8 +143,6 @@ const template = `
 
 <% } %>
 
-
-
 {{probability_dist}}
 
 現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に設定されていますが、これはアナリティクスの[「設定」](//analytics/settings)より変更可能です。
