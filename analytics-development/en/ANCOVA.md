@@ -1,3 +1,5 @@
+const template = `
+
 # Summary
 
 <% if (!repeat_by) { %>
