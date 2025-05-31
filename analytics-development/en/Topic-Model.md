@@ -66,8 +66,8 @@ The following visualizes the relationship between important words for each topic
 
 # Next Steps
 
-* Stop word configuration: By excluding common auxiliary verbs like "できる" (can do) and "られる" (be able to), and common nouns like "方" (person/way) and "者" (person), you can focus on more meaningful words. You can register these words as "Stop Word Dictionary" from Analytics [Settings](//analytics/settings).
-* Compound word registration: Words that are counted separately but actually refer to one concept, such as "Web" and "会議" (meeting), can be recognized as "Web会議" (web meeting) to improve analysis accuracy. You can also register this as "Compound Word Dictionary" from Analytics [Settings](//analytics/settings).
+* Stop word configuration: By excluding common auxiliary verbs like "can do" and "be able to", and common nouns like person/way and person, you can focus on more meaningful words. You can register these words as "Stop Word Dictionary" from Analytics [Settings](//analytics/settings).
+* Compound word registration: Words that are counted separately but actually refer to one concept, such as "Web" and "meeting", can be recognized as "web meeting" to improve analysis accuracy. You can also register this as "Compound Word Dictionary" from Analytics [Settings](//analytics/settings).
 `;
 
 module.exports = template; 

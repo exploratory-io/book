@@ -2,7 +2,7 @@ const template = `
 
 
 <% if (!test_mode) { %>
-A model to predict <%= target %> has been created. It predicts up to <%= period %><%= unit %> ahead, and this prediction period can be changed from the "Prediction Period" in [Settings](//analytics/settings).
+A model to predict <%= target %> has been created. It predicts up to <%= period %> <%= unit %> ahead, and this prediction period can be changed from the "Prediction Period" in [Settings](//analytics/settings).
 <% } else { %>
 A model to predict <%= target %> has been created. Since it is currently in test mode, the model is built using data up to <%= test_period %><%= unit %> before the end of the data, and predictions are made for the period thereafter (test period). The test period can be changed from the "Test Data Period" section in [Settings](//analytics/settings) in Analytics.
 <% } %>
