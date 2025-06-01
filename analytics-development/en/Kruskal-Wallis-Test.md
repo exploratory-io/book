@@ -5,6 +5,8 @@ const template = `
 
 We examined whether the difference in medians of <%= target %> by <%= explanatory %> is significant.
 
+{{summary}}
+
 <% if (p > baseline_p) { %>
 As a result, the P-value is <%= p_pct %>% (<%= p %>), which is greater than the significance level of <%= baseline_p_pct %>% (<%= baseline_p %>). Therefore, the difference in medians of <%= target %> by <%= explanatory %> is not statistically significant.
 <% } %>
