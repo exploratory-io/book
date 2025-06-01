@@ -32,7 +32,10 @@ Notes:
 * Predictor variables are arranged in order of importance as shown in the "Predictor Variable Importance" section above.
 
 <% } %>
+
+<% if (has_category_columns) { %>
 * For categorical (Character type, Factor type) predictor variables with more than 12 unique values, the 11 most frequent values are retained and the rest are categorized as "Others". This can be changed in [Settings](//analytics/settings).
+<% } %>
 
 # Model Metrics
 

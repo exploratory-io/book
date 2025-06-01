@@ -39,7 +39,10 @@ Important Notes:
 * Explanatory variables are arranged in order of importance as shown in the "Variable Importance" section above.
 
 <% } %>
+
+<% if (has_category_columns) { %>
 * For categorical (Character, Factor) explanatory variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed from [Settings](//analytics/settings) in Analytics.
+<% } %>
 
 # Decision Tree
 

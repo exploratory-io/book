@@ -59,7 +59,10 @@ Notes:
 * Predictor variables are arranged in order of importance as shown in the "Variable Importance" section above.
 
 <% } %>
+
+<% if (has_category_columns) { %>
 * For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings).
+<% } %>
 
 # Variable Coefficients (Odds Ratios) and Significance
 
@@ -67,7 +70,9 @@ The coefficients (odds ratios), p-values for determining significance, and confi
 
 {{coefficient_table}}
 
+<% if (has_perfect_collinearity) { %>
 _For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings)._
+<% } %>
 
 ## Interpretation of Odds Ratios
 

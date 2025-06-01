@@ -60,7 +60,10 @@ Notes:
 * The explanatory variables are arranged in order of importance as shown in the "Variable Importance" section above.
 
 <% } %>
+
+<% if (has_category_columns) { %>
 * For categorical (Character type, Factor type) explanatory variables with more than 12 unique values, the 11 most frequent values are kept and the rest are labeled as "Others". This can be changed in [Settings](//analytics/settings).
+<% } %>
 
 # Variable Coefficients and Significance
 
