@@ -1,5 +1,4 @@
 const template = `
-# Power Analysis - Chi-Square Test
 
 Power analysis is a method for calculating the required sample size to detect a meaningful effect in statistical testing.
 
@@ -60,4 +59,4 @@ The following is a line chart showing the relationship between sample size and p
 The horizontal axis (X-axis) represents the sample size, and the vertical axis (Y-axis) represents the power. It can be seen that as the sample size increases, the power (the probability of correctly detecting an effect when there is actually one) increases. It is also possible to estimate the sample size required to achieve a specific power with the specified effect size and significance level.
 `;
 
-module.exports = template; 
+module.exports = template;
