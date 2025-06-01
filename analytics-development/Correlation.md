@@ -79,7 +79,7 @@ const template = `
 
 全ての変数間の組み合わせにおける相関係数やP値などを以下の表にリストしています。
 
-{start_lazy_show_hide}
+{start_show_hide}
 ### テーブル（表）
 {{data}}
 
