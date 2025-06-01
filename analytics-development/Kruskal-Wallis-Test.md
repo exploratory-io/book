@@ -5,6 +5,8 @@ const template = `
 
 <%= explanatory %>による<%= target %>の中央値の差が有意かどうかを調べました。
 
+{{summary}}
+
 <% if (p > baseline_p) { %>
 結果として、P値は<%= p_pct %>% (<%= p %>)で、有意水準<%= baseline_p_pct %>% (<%= baseline_p %>) より大きいため、<%= explanatory %>による<%= target %>の中央値の差は統計的に有意とは言えません。
 <% } %>
