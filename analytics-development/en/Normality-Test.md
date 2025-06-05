@@ -36,7 +36,7 @@ For the following variables, since the P-value is lower than the significance le
 <% } %>
 
 
-#Q Plot
+# Q-Q Plot
 
 A Q-Q plot is a graph used to visually check if the data follows a normal distribution. If the data is perfectly normally distributed, the points on the plot will lie along the diagonal line.
 
