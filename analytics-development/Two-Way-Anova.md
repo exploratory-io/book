@@ -138,7 +138,7 @@ const template = `
 
 <% } else { %>
 
-<%= explanatory %>による<%= target %>の平均の差が有意かどうかを<%= repeat_by %>ごとに調べました。
+<%= explanatory1 %>と<%= explanatory2 %>による<%= target %>の平均の差が有意かどうかを<%= repeat_by %>ごとに調べました。
 
 {{summary}}
 
