@@ -34,7 +34,7 @@ The following similarity map uses MDS (Multidimensional Scaling) to visualize th
 {{similarity_map}}
 
 * Objects placed close to each other have high similarity, while those placed far apart have low similarity.
-* Variables are color-coded into three groups based on distances between variables. Variables of the same color have relatively higher similarity compared to others.
+* Variables are color-coded into <%= cluster %> groups based on distances between variables. Variables of the same color have relatively higher similarity compared to others.
 
 # Supplementary Information
 
