@@ -24,7 +24,7 @@ This model does not show signs of [multicollinearity](https://exploratory.io/not
 
 # Survival Curves
 
-The following chart shows survival curves for each explanatory variable based on the model. These curves show predicted values of survival probability (probability of non-occurrence of the event) over time.
+The following chart shows survival curves for each explanatory variable based on the model. These curves show predicted values of survival probability (probability of non-occurrence of the event) over time (unit: <%= time_unit %>).
 
 {{survival_curve}}
 
