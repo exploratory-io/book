@@ -2,7 +2,7 @@ const template = `
 
 
 <% if (!test_mode) { %>
-A model to predict <%= target %> has been created. We are forecasting up to <%= period %><%= unit %> ahead, and this forecast period can be changed from "Forecast Period" in [Settings](//analytics/settings).
+A model to predict <%= target %> has been created. We are forecasting up to <%= test_period %><%= unit %> ahead, and this forecast period can be changed from "Forecast Period" in [Settings](//analytics/settings).
 <% } else { %>
 A model to predict <%= target %> has been created. Since we are currently in test mode, the model was built using data up to <%= test_period %><%= unit %> before the end of the data, and predictions are made for the subsequent period (test period). The test period can be changed from the "Test Data Period" section in [Settings](//analytics/settings) of Analytics.
 <% } %>
@@ -82,24 +82,89 @@ Since we are currently in test mode, various metrics related to the model's fore
 
 The main evaluation metrics are as follows:
 
-* RMSE (Root Mean Square Error): The difference between predicted and actual values averages about <%= rmse %>. Smaller values indicate higher forecast accuracy.
-* MAE (Mean Absolute Error): The difference (absolute value) between predicted and actual values averages about <%= mae %>. Smaller values indicate higher forecast accuracy.
-* MAPE (Mean Absolute Percentage Error): The difference (absolute value) between predicted and actual values is about <%= mape * 100 %>% relative to actual values. Smaller values indicate higher forecast accuracy.
-* R-squared: This model can explain <%= r_squared * 100 %>% of the variance in <%= target %>.
-
-<% } %>
-
+* RMSE (Root Mean Square Error): The average difference between the predicted and actual values is about <%= rmse %>. The smaller the value, the higher the forecast accuracy.
+* MAE (Mean Absolute Error): The average absolute difference between the predicted and actual values is about <%= mae %>. The smaller the value, the higher the forecast accuracy.
+* MAPE (Mean Absolute Percentage Error): The average absolute difference between the predicted and actual values is about <%= mape_pct %>% of the actual values. The smaller the value, the higher the forecast accuracy.
+* R-squared: This model explains <%= r_squared_pct %>% of the variance in <%= target %>.
 
 ## Model Diagnostics
 
-<% if (ljung_box_p > baseline_p) { %>
- The P-value of the Ljung-Box test is <%= ljung_box_p %>, which exceeds <%= baseline_p %>, and no significant autocorrelation is observed in the model residuals. This suggests that the model appropriately captures the time series structure.
-<% } else { %>
- The P-value of the Ljung-Box test is <%= ljung_box_p %>, which is below <%= baseline_p %>, and autocorrelation may still remain in the model residuals. Parameter adjustment of the model or consideration of different model structures may be necessary.
+The Ljung-Box test was performed to evaluate the validity of the ARIMA model. The null hypothesis of this test is "no autocorrelation in the residuals," meaning the model has adequately captured the structure of the time series data. If the p-value is higher than the significance level of <%= baseline_p_pct %>%, it suggests that there is no significant autocorrelation in the residuals and the model has adequately captured the structure of the time series. Conversely, if the p-value is lower than <%= baseline_p_pct %>%, there may still be autocorrelation in the residuals, and it may be necessary to adjust the model parameters or consider a different model structure.
+
 <% } %>
 
 {start_show_hide}
-## Detailed Model Metrics
+<% if (!test_mode) { %>
+## Explanation of Model Metrics
+
+* RMSE
+ * RMSE (Root Mean Square Error) measures the magnitude of the error between predicted and actual values.
+ * It is expressed in the same units as the target variable, making it easy to interpret. The smaller the value, the higher the forecast accuracy.
+ * The value is always 0 or greater, and a perfect prediction would have a value of 0.
+
+* MAE
+ * MAE (Mean Absolute Error) is the average of the absolute errors between predicted and actual values.
+ * It is expressed in the same units as the target variable, and the smaller the value, the higher the forecast accuracy.
+ * Compared to RMSE, MAE is less sensitive to outliers.
+
+* MAPE (Ratio)
+ * MAPE (Mean Absolute Percentage Error) expresses the relative error of the forecast as a percentage.
+ * The smaller the value, the higher the forecast accuracy. Generally, a value below 10% is considered a good forecast.
+ * Note that if the actual value is 0 or very small, the value can become extremely large.
+
+* R-squared
+ * R-squared (coefficient of determination) indicates the explanatory power of the model, representing the proportion of variance in the data explained by the model.
+ * The value is usually between 0 and 1, and the closer to 1, the better the model fit.
+ * In time series models, the value can be artificially high for trending data, so interpretation requires caution.
+
+* AIC
+ * AIC (Akaike Information Criterion) is an indicator that evaluates the balance between model complexity and goodness of fit.
+ * The smaller the value, the better the model, and it helps select the optimal model while avoiding overfitting.
+ * It is especially useful for comparing different ARIMA/SARIMA models.
+
+* BIC
+ * BIC (Bayesian Information Criterion) is also an indicator for model selection, but it penalizes the number of parameters more strictly than AIC.
+ * It tends to select simpler models than AIC, and the smaller the value, the better the model.
+ * Useful for analyses with large sample sizes or when the true model is considered relatively simple.
+
+* AICc
+ * AICc (corrected AIC) is a variant of AIC that corrects for bias in small sample sizes.
+ * It allows for reliable model selection even with small sample sizes.
+ * As the sample size increases, it approaches AIC.
+
+* p, d, q
+ * Parameters of the ARIMA model: p (order of autoregressive terms), d (order of differencing), q (order of moving average terms).
+ * p indicates how much past values affect the current value, q indicates how much past forecast errors affect the current value.
+ * d indicates the number of differences needed to make the data stationary.
+
+* P, D, Q
+ * Parameters of the seasonal component of the SARIMA model: P (order of seasonal autoregressive terms), D (order of seasonal differencing), Q (order of seasonal moving average terms).
+ * These have similar meanings to p, d, and q, but capture relationships for each seasonal period.
+
+* Period
+ * Indicates the period of the seasonal component. For example, 12 for monthly data, 4 for quarterly data, 7 for weekly data, etc.
+ * Important parameter when considering seasonality in SARIMA models.
+
+* Ljung-Box Statistic
+ * A statistic to test whether there is autocorrelation in the model residuals (forecast errors).
+ * The larger the value, the more likely there is autocorrelation remaining in the residuals.
+
+* Ljung-Box Test p-value
+ * The p-value based on the Ljung-Box statistic. Usually, if it is 0.05 or higher, it is judged that there is no significant autocorrelation in the residuals.
+ * If the p-value is small, the model may not have adequately captured the structure of the time series.
+
+* Number of Rows
+ * Indicates the total number of data points (sample size) used in the analysis.
+ * In time series models, having enough data is important for accurate forecasts.
+
+<% } else { %>
+
+## Model Diagnostics
+
+The Ljung-Box test was performed to evaluate the validity of the ARIMA model. The null hypothesis of this test is "no autocorrelation in the residuals," meaning the model has adequately captured the structure of the time series data. If the p-value is higher than the significance level of <%= baseline_p_pct %>%, it suggests that there is no significant autocorrelation in the residuals and the model has adequately captured the structure of the time series. Conversely, if the p-value is lower than <%= baseline_p_pct %>%, there may still be autocorrelation in the residuals, and it may be necessary to adjust the model parameters or consider a different model structure.
+
+## Explanation of Model Metrics
+
 * RMSE
  * RMSE (Root Mean Square Error) measures the magnitude of error between predicted and actual values.
  * It is expressed in the same units as the target variable, making it easy to interpret, and smaller values indicate higher forecast accuracy.
@@ -159,6 +224,8 @@ The main evaluation metrics are as follows:
 * Number of Rows
  * Indicates the total number of data (sample size) used in the analysis.
  * For time series models, having sufficient data volume is important for high-accuracy forecasting.
+ 
+ <% } %>
 {end_show_hide}
 
 
