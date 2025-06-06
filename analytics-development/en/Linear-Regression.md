@@ -50,19 +50,25 @@ The following chart shows how the value of <%= target %> changes when the value 
 * The gray lines show the actual values and their 95% confidence intervals.
 * The vertical axis represents the values of <%= target %>.
 
-Notes:
-
 <% if (predictorColumns.length > 1) { %>
+
+Notes:
 
 * Since this predicts the effect of each predictor variable individually while other variables remain constant, there may be discrepancies between the mean of actual values and predicted values.
 * For details on how predicted values are calculated, please see [this note](https://exploratory.io/note/exploratory/Sbd0LDU6).
 * For differences in interpretation between simple regression and multiple regression analysis, please see [this note](https://exploratory.io/note/exploratory/BDI7AeE5).
 * Predictor variables are arranged in order of importance as shown in the "Variable Importance" section above.
 
-<% } %>
-
 <% if (has_category_columns) { %>
 * For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings).
+<% } %>
+
+<% } else { %>
+<% if (has_category_columns) { %>
+Notes:
+
+* For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings).
+<% } %>
 <% } %>
 
 # Variable Coefficients and Significance
