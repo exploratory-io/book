@@ -24,12 +24,14 @@ We classified <%= group %> into <%= number_of_clusters %> clusters (groups) usin
   * Smaller values indicate that the time series patterns within the cluster are more similar.
   * By comparing distance values between clusters, you can determine which cluster is most homogeneous and which cluster contains diverse patterns.
 
-
+<% if (normalize) { %>
 ## Normalized Time Series Patterns
 
 The following chart displays <%= value %> for each <%= group %> normalized (converted to mean 0, standard deviation 1). Normalization eliminates differences in value magnitude and allows focus on patterns of change only. This enables comparison of change rates and change shapes between groups with large <%= value %> and groups with small <%= value %> on the same scale, making pattern similarities clearer.
 
 {{normalized_time_series}}
+
+<% } %>
 
 ## Time Series Patterns
 

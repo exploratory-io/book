@@ -138,7 +138,7 @@ The effect size (Eta squared) of the interaction is also <%= effect_size_interac
 
 <% } else { %>
 
-We examined whether the difference in means of <%= target %> by <%= explanatory %> is significant for each <%= repeat_by %>.
+We examined whether the difference in means of <%= target %> by <%= explanatory1 %> and <%= explanatory2 %> is significant for each <%= repeat_by %>.
 
 {{summary}}
 

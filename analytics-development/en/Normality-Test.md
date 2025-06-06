@@ -1,5 +1,4 @@
 const template = `
-## About Normality Test
 
 Normality test is a statistical method to verify if data follows a normal distribution. We are using the Shapiro-Wilk test in this analysis.
 
@@ -37,7 +36,7 @@ For the following variables, since the P-value is lower than the significance le
 <% } %>
 
 
-## Q-Q Plot
+# Q-Q Plot
 
 A Q-Q plot is a graph used to visually check if the data follows a normal distribution. If the data is perfectly normally distributed, the points on the plot will lie along the diagonal line.
 
@@ -46,7 +45,7 @@ A Q-Q plot is a graph used to visually check if the data follows a normal distri
 *   If the points line up linearly along the diagonal line: The data is likely to follow a normal distribution.
 *   If the points deviate significantly from the diagonal line: The data is likely not to follow a normal distribution.
 
-## Histogram
+# Histogram
 
 A histogram visually displays the distribution of data. For a normal distribution, it shows a symmetrical bell-shaped curve.
 
