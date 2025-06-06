@@ -4,7 +4,7 @@ We created a Survival Forest model to predict the survival curve of <%= event_st
 
 # Survival Curve
 
-The following chart shows the survival curves for each explanatory variable based on the model. This curve shows the predicted values of survival probability (probability of event non-occurrence) over time.
+The following chart shows the survival curves for each explanatory variable based on the model. This curve shows the predicted values of survival probability (probability of event non-occurrence) over time (unit: <%= time_unit%>).
 
 {{survival_curve}}
 

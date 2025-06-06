@@ -12,16 +12,16 @@ Survival curves were calculated using the [Kaplan-Meier](https://exploratory.io/
 <% if (!color_column) { %>
 
 <% if (!group_column) { %>
-The following chart visualizes the survival rate (proportion of instances where the <%= event_status %> event has not occurred) over time as a survival curve. The horizontal axis represents the time elapsed from the start, and the vertical axis represents the survival rate (%).
+The following chart visualizes the survival rate (proportion of instances where the <%= event_status %> event has not occurred) over time as a survival curve. The horizontal axis represents the time elapsed from the start (unit: <%= time_unit%>), and the vertical axis represents the survival rate (%).
 <% } else { %>
-Survival curve charts visualizing the survival rate (proportion of instances where the <%= event_status %> event has not occurred) over time for each <%= group_column %> are shown. The horizontal axis represents the time elapsed from the start, and the vertical axis represents the survival rate (%).
+Survival curve charts visualizing the survival rate (proportion of instances where the <%= event_status %> event has not occurred) over time for each <%= group_column %> are shown. The horizontal axis represents the time elapsed from the start (unit: <%= time_unit%>), and the vertical axis represents the survival rate (%).
 <% } %>
 <% } else { %>
 
 <% if (!group_column) { %>
-The following chart visualizes the survival rate (proportion of instances where the <%= event_status %> event has not occurred) over time as a survival curve for each <%= color_column %>. The horizontal axis represents the time elapsed from the start, and the vertical axis represents the survival rate (%).
+The following chart visualizes the survival rate (proportion of instances where the <%= event_status %> event has not occurred) over time as a survival curve for each <%= color_column %>. The horizontal axis represents the time elapsed from the start (unit: <%= time_unit%>), and the vertical axis represents the survival rate (%).
 <% } else { %>
-The following chart visualizes the survival rate (proportion of instances where the <%= event_status %> event has not occurred) over time as a survival curve for each combination of <%= color_column %> and <%= group_column %>. The horizontal axis represents the time elapsed from the start, and the vertical axis represents the survival rate (%).
+The following chart visualizes the survival rate (proportion of instances where the <%= event_status %> event has not occurred) over time as a survival curve for each combination of <%= color_column %> and <%= group_column %>. The horizontal axis represents the time elapsed from the start (unit: <%= time_unit%>), and the vertical axis represents the survival rate (%).
 <% } %>
 
 <% } %>

@@ -5,6 +5,7 @@ In this analysis, we used Bayesian A/B testing to examine which group performs b
 
 {{summary_chart}}
 
+<% if (!repeat_by) { %>
 <% if (improve_probability > 0.95) { %>
 As a result, the probability that Group A is superior to Group B is <%= improve_probability_pct %>% (<%= improve_probability %>), which exceeds the 95% confidence threshold. This means we can say with high confidence that Group A is superior to Group B.
   
@@ -42,6 +43,7 @@ The expected improvement rate is <%= expected_improvement_pct %>% (<%= expected_
 The expected loss rate is <%= expected_loss_pct %>% (<%= expected_loss %>), which is high, indicating that the risk of choosing Group A is significant.
 <% } else { %>
 The expected loss rate is <%= expected_loss_pct %>% (<%= expected_loss %>).
+<% } %>
 <% } %>
 <% } %>
 
@@ -103,6 +105,7 @@ The bar chart of conversion rates by group is as follows:
 
 # Next Steps
 
+<% if (!repeat_by) { %>
 <% if (improve_probability > 0.95) { %>
 * Implementation Consideration: Since Group A is clearly superior to Group B, consider implementing Group A in the production environment.
 <% } else if (improve_probability > 0.75) { %>
@@ -111,6 +114,10 @@ The bar chart of conversion rates by group is as follows:
 * Additional Testing: Since it's not clear which group is superior at this point, consider increasing sample size or reviewing the test design and conducting the test again.
 <% } else { %>
 * Consider Adopting Group B: The analysis results suggest that Group B is likely superior, so consider implementing Group B or designing new A/B tests with Group B as the baseline for improvement strategies.
+<% } %>
+<% } %>
+<% if (!repeat_by) { %>
+* This Bayesian A/B test was conducted on the entire dataset, but it is also possible to perform it for each group. In that case, you can select the variable to group by in "Repeat By" and run it again.
 <% } %>
 * If you want to investigate factors related to conversion rates, you can use multivariate analysis such as "Logistic Regression" to simultaneously consider multiple factors.
 `;
