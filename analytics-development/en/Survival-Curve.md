@@ -4,7 +4,7 @@ Survival curves were calculated using the [Kaplan-Meier](https://exploratory.io/
 
 **Notes**
 
-* If the end date <%= end_date_column %> is NA (missing value), the "last day" of the data is used by default. To fill with another value, you can change it in [Settings](//analytics/settings).
+* If the end date <%= end_date_column %> is NA (missing value), the "last day" of the data is used by default. To fill with another value, you can change it in [Settings](//analytics/settings/impute_end_date).
 
 
 # Survival Curve

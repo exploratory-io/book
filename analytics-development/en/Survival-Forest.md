@@ -23,7 +23,7 @@ For more information on how variable importance works, please refer to [this not
 
 ## Variable Effects
 
-The following chart shows how the probability of <%= event_status %> occurrence changes when the values of each explanatory variable change at the time point when the period is <%= survival_period%>. The period can be changed in [Settings](//analytics/settings).
+The following chart shows how the probability of <%= event_status %> occurrence changes when the values of each explanatory variable change at the time point when the period is <%= survival_period%>. The period can be changed in [Settings](//analytics/settings/survival_period).
 
 {{variable_effect}}
 
@@ -41,7 +41,7 @@ Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character type, Factor type) explanatory variables with more than 12 unique values, the top 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings).
+* For categorical (Character type, Factor type) explanatory variables with more than 12 unique values, the top 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 
 # Model Metrics
@@ -63,7 +63,7 @@ The metrics related to model prediction accuracy are summarized in the table bel
 
 * Time-dependent AUC
   * Time-dependent AUC is a metric that measures how well this model can classify TRUE and FALSE data at a specific time point.
-  * Currently, the prediction period is set to <%= survival_period%>, so the predicted survival rate at the <%= survival_period%> elapsed time point is used for calculating the time-dependent AUC. The period can be changed in [Settings](//analytics/settings).
+  * Currently, the prediction period is set to <%= survival_period%>, so the predicted survival rate at the <%= survival_period%> elapsed time point is used for calculating the time-dependent AUC. The period can be changed in [Settings](//analytics/settings/survival_period).
   * Values range from 0.5 to 1, where 0.5 is random prediction (equivalent to coin flipping) and 1 means perfect classification of TRUE and FALSE data.
   * Generally, 0.6 or higher is considered acceptable, 0.8 or higher is good, and 0.9 or higher indicates excellent classification performance.
   * By checking AUC at multiple time points, you can evaluate the temporal stability of the model's predictive performance.
@@ -95,7 +95,7 @@ The following chart shows the ROC curve that evaluates the model's classificatio
 
 {{roc_curve}}
 
-For ROC curve calculation, the predicted survival rate at the <%= survival_period%> elapsed time point is used. The period can be changed in [Settings](//analytics/settings).
+For ROC curve calculation, the predicted survival rate at the <%= survival_period%> elapsed time point is used. The period can be changed in [Settings](//analytics/settings/survival_period).
 
 # Additional Information
 
@@ -107,7 +107,7 @@ For ROC curve calculation, the predicted survival rate at the <%= survival_perio
 <% } %>
 * Outlier verification: Check for outliers that may affect prediction accuracy and address them as necessary to potentially improve model reliability. For methods on removing outliers, please refer to [this note](https://exploratory.io/note/exploratory/Eep7kip3).
 <% if (!test_mode) { %>
-* Model evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by dividing into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings) and re-run the analysis.
+* Model evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by dividing into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings/test_mode) and re-run the analysis.
 <% } %>
 * Predictions on new data: When you want to make predictions on new data using the created model, add a "Predict with Model (Analytics View)" step to the data frame containing the data you want to predict. For details, please refer to [this note](https://exploratory.io/note/exploratory/qIr9Hfa5).
 

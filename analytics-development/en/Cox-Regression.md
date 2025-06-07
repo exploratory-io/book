@@ -44,9 +44,9 @@ For more information about the mechanism of variable importance, please see [thi
 ## Variable Effects
 
 <% if (predictorColumns.length > 1) { %>
-At the time point of <%= survival_period%>, when the values of other variables are held constant, the following chart shows how the probability of <%= event_status %> occurrence changes when the value of each explanatory variable changes. The time period can be changed from [Settings](//analytics/settings) in Analytics.
+At the time point of <%= survival_period%>, when the values of other variables are held constant, the following chart shows how the probability of <%= event_status %> occurrence changes when the value of each explanatory variable changes. The time period can be changed from [Settings](//analytics/settings/survival_period) in Analytics.
 <% } else { %>
-At the time point of <%= survival_period%>, the following chart shows how the probability of <%= event_status %> occurrence changes when the value of the explanatory variable changes. The time period can be changed from [Settings](//analytics/settings) in Analytics.
+At the time point of <%= survival_period%>, the following chart shows how the probability of <%= event_status %> occurrence changes when the value of the explanatory variable changes. The time period can be changed from [Settings](//analytics/settings/survival_period) in Analytics.
 <% } %>
 
 {{variable_effect}}
@@ -66,7 +66,7 @@ Important Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed from [Settings](//analytics/settings) in Analytics.
+* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
 <% } %>
 
 
@@ -138,7 +138,7 @@ Various metrics related to model prediction accuracy and significance are summar
 
 * Time-dependent AUC
   * Time-dependent AUC is a metric that measures how well this model can classify TRUE and FALSE data at a specific time point.
-  * Currently, the prediction period is <%= survival_period%>, so survival probability predictions at the <%= survival_period%> elapsed time point are used for time-dependent AUC calculation. The period can be changed from [Settings](//analytics/settings) in Analytics.
+  * Currently, the prediction period is <%= survival_period%>, so survival probability predictions at the <%= survival_period%> elapsed time point are used for time-dependent AUC calculation. The period can be changed from [Settings](//analytics/settings/survival_period) in Analytics.
   * Values range from 0.5 to 1, where 0.5 is random prediction (equivalent to coin tossing) and 1 means perfect classification of TRUE and FALSE data.
   * Generally, 0.6 or above is acceptable, 0.8 or above is good, and 0.9 or above indicates excellent classification performance.
   * By examining AUC at multiple time points, you can evaluate the temporal stability of the model's predictive performance.
@@ -246,7 +246,7 @@ The following chart shows the ROC curve that evaluates the model's classificatio
 
 {{roc_curve}}
 
-The ROC curve calculation uses survival probability predictions at the <%= survival_period%> elapsed time point. The period can be changed from [Settings](//analytics/settings) in Analytics.
+The ROC curve calculation uses survival probability predictions at the <%= survival_period%> elapsed time point. The period can be changed from [Settings](//analytics/settings/survival_period) in Analytics.
 
 
 
@@ -260,7 +260,7 @@ The ROC curve calculation uses survival probability predictions at the <%= survi
 <% } %>
 * Outlier Verification: By checking for outliers that may affect prediction accuracy and addressing them as necessary, the reliability of the model may improve. For methods to remove outliers, please see [this note](https://exploratory.io/note/exploratory/Eep7kip3).
 <% if (!test_mode) { %>
-* Model Evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings) and re-run the analysis.
+* Model Evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings/test_mode) and re-run the analysis.
 <% } %>
 * Prediction on New Data: When you want to use the created model to make predictions on new data, add a "Predict with Model (Analytics View)" step to the target data frame you want to predict. For details, please refer to [this note](https://exploratory.io/note/exploratory/qIr9Hfa5).
 

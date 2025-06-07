@@ -41,7 +41,7 @@ Important Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed from [Settings](//analytics/settings) in Analytics.
+* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
 <% } %>
 
 # Decision Tree
@@ -151,7 +151,7 @@ The following table shows the results of predictions made on all data using the 
 * Parameter Tuning: By adjusting decision tree parameters (tree depth, minimum improvement rate for branching, etc.), you may be able to further improve model performance.
 * Consideration of Ensemble Learning Methods: To capture patterns that cannot be captured by a single decision tree, it may be effective to consider ensemble learning methods such as Random Forest or XGBoost.
 <% if (!test_mode) { %>
-* Model Evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings) and re-run the analysis.
+* Model Evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings/test_mode) and re-run the analysis.
 <% } %>
 * Prediction on New Data: When you want to use the created model to make predictions on new data, add a "Predict with Model (Analytics View)" step to the target data frame you want to predict. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
 

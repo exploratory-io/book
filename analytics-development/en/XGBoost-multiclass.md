@@ -34,7 +34,7 @@ Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character type, Factor type) predictor variables with more than 12 unique values, the 11 most frequent values are retained and the rest are categorized as "Others". This can be changed in [Settings](//analytics/settings).
+* For categorical (Character type, Factor type) predictor variables with more than 12 unique values, the 11 most frequent values are retained and the rest are categorized as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 
 # Model Metrics
@@ -50,7 +50,7 @@ Various metrics related to model prediction accuracy and significance are summar
 {{summary}}
 
 * The number of rows indicates the number of data rows used for model creation.
-* Accuracy Rate, Misclassification Rate, F1 Score, Precision, and Recall are affected by the TRUE/FALSE threshold setting. The current threshold is set to <%= true_false_criteria %>, but this can be changed in [Settings](//analytics/settings).
+* Accuracy Rate, Misclassification Rate, F1 Score, Precision, and Recall are affected by the TRUE/FALSE threshold setting. The current threshold is set to <%= true_false_criteria %>, but this can be changed in [Settings](//analytics/settings/true_false_criteria).
 
 **Metric Details**
 
@@ -85,7 +85,7 @@ The following table shows prediction accuracy for each class.
 
 {{class_summary}}
 
-* Accuracy Rate, Misclassification Rate, F1 Score, Precision, and Recall are affected by the TRUE/FALSE threshold setting. The current threshold is set to <%= true_false_criteria %>, but this can be changed in [Settings](//analytics/settings).
+* Accuracy Rate, Misclassification Rate, F1 Score, Precision, and Recall are affected by the TRUE/FALSE threshold setting. The current threshold is set to <%= true_false_criteria %>, but this can be changed in [Settings](//analytics/settings/true_false_criteria).
 
 {start_show_hide}
 ### Metric Details
@@ -172,7 +172,7 @@ When the learning curve starts to flatten, it may be approaching the optimal num
 * Outlier Verification: Check for outliers that may affect prediction accuracy and address them as necessary to potentially improve model reliability. For methods to remove outliers, please refer to [this note](https://exploratory.io/note/exploratory/Eep7kip3).
 * Parameter Tuning: You may be able to further improve model performance by adjusting XGBoost parameters (tree depth, learning rate, number of learning iterations, etc.).
 <% if (!test_mode) { %>
-* Model Evaluation: To more rigorously evaluate the prediction performance of this model, you can validate by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Evaluation" section under [Settings](//analytics/settings) and re-run.
+* Model Evaluation: To more rigorously evaluate the prediction performance of this model, you can validate by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Evaluation" section under [Settings](//analytics/settings/test_mode) and re-run.
 <% } %>
 * Prediction on New Data: When you want to make predictions on new data using the created model, add a "Predict with Model (Analytics View)" step to the data frame you want to make predictions on. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
 

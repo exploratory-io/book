@@ -40,7 +40,7 @@ Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character type, Factor type) predictor variables with more than 12 unique values, the 11 most frequent values are retained and the rest are categorized as "Others". This can be changed in [Settings](//analytics/settings).
+* For categorical (Character type, Factor type) predictor variables with more than 12 unique values, the 11 most frequent values are retained and the rest are categorized as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 
 # Model Metrics
@@ -149,7 +149,7 @@ The following chart shows the model learning process. The horizontal axis repres
 * Model Evaluation: Consider validating by splitting into training data and test data to more rigorously evaluate the prediction performance of this model.
 * Parameter Tuning: You may be able to further improve model performance by adjusting XGBoost parameters (tree depth, learning rate, number of learning iterations, etc.).
 <% if (!test_mode) { %>
-* Model Evaluation: To more rigorously evaluate the prediction performance of this model, you can validate by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Evaluation" section under [Settings](//analytics/settings) and re-run.
+* Model Evaluation: To more rigorously evaluate the prediction performance of this model, you can validate by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Evaluation" section under [Settings](//analytics/settings/test_mode) and re-run.
 <% } %>
 * Prediction on New Data: When you want to make predictions on new data using the created model, add a "Predict with Model (Analytics View)" step to the data frame you want to make predictions on. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
 

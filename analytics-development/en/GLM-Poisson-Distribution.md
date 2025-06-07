@@ -62,7 +62,7 @@ Important Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the top 11 most frequent values are retained and the rest are grouped as "Others". This can be changed from [Settings](//analytics/settings) in Analytics.
+* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the top 11 most frequent values are retained and the rest are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
 <% } %>
 
 # Variable Coefficients and Significance
@@ -239,7 +239,7 @@ The following table shows the results of predictions made on training data and t
 * Overdispersion Check: In Poisson distribution, it is assumed that variance equals mean, but this assumption may not hold for real data (overdispersion). If the residual deviance is considerably larger than the residual degrees of freedom, consider another model like negative binomial distribution.
 * Outlier Verification: Checking for outliers that may affect prediction accuracy and addressing them as necessary may improve model reliability. For methods to remove outliers, please see [this note](https://exploratory.io/note/exploratory/Eep7kip3).
 <% if (!test_mode) { %>
-* Model Evaluation: To evaluate this model's prediction performance more rigorously, you can verify by splitting into training data and test data. In that case, set "Test Mode" to TRUE under the "Validation" section in [Settings](//analytics/settings) and re-run.
+* Model Evaluation: To evaluate this model's prediction performance more rigorously, you can verify by splitting into training data and test data. In that case, set "Test Mode" to TRUE under the "Validation" section in [Settings](//analytics/settings/test_mode) and re-run.
 <% } %>
 * Prediction on New Data: When you want to make predictions on new data using the created model, add a "Predict with Model (Analytics View)" step to the target data frame. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
 

@@ -1,7 +1,7 @@
 const template = `
 
 
-Distances were calculated for all combinations of the selected variables. The algorithm currently used for distance calculation is <%= distance_method %>. The algorithm can be changed from [Settings](//analytics/settings) in Analytics.
+Distances were calculated for all combinations of the selected variables. The algorithm currently used for distance calculation is <%= distance_method %>. The algorithm can be changed from [Settings](//analytics/settings/do_dist_argo) in Analytics.
 
 # Distance Magnitude
 
@@ -25,7 +25,7 @@ This analysis uses the <%= distance_method %> algorithm for distance calculation
 * Chebyshev: A method that uses the maximum difference among all dimensions as the distance, used when focusing on the maximum error.
 * Minkowski: A generalized distance that encompasses Euclidean and Manhattan distances.
 
-The algorithm can be changed from [Settings](//analytics/settings) in Analytics.
+The algorithm can be changed from [Settings](//analytics/settings/do_dist_argo) in Analytics.
 
 # Similarity Visualization
 

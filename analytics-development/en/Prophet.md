@@ -2,9 +2,9 @@ const template = `
 
 
 <% if (!test_mode) { %>
-A model to predict <%= target %> has been created. It predicts up to <%= period %> <%= unit %> ahead, and this prediction period can be changed from the "Prediction Period" in [Settings](//analytics/settings).
+A model to predict <%= target %> has been created. It predicts up to <%= period %> <%= unit %> ahead, and this prediction period can be changed from the "Prediction Period" in [Settings](//analytics/settings/forecast_period).
 <% } else { %>
-A model to predict <%= target %> has been created. Since it is currently in test mode, the model is built using data up to <%= test_period %><%= unit %> before the end of the data, and predictions are made for the period thereafter (test period). The test period can be changed from the "Test Data Period" section in [Settings](//analytics/settings) in Analytics.
+A model to predict <%= target %> has been created. Since it is currently in test mode, the model is built using data up to <%= test_period %><%= unit %> before the end of the data, and predictions are made for the period thereafter (test period). The test period can be changed from the "Test Data Period" section in [Settings](//analytics/settings/test_period) in Analytics.
 <% } %>
 
 <!-- If there are external regressors and a value greater than 0 is set for the prediction period, show this section -->
@@ -233,7 +233,7 @@ The following table shows the results of predicting on the training and test dat
 * Optimizing the prediction period: Focusing on shorter-term predictions may improve prediction accuracy.
 * When making predictions with Prophet, there are data-related considerations such as handling anomalies (outliers), the required data period, setting holiday effects, and future data for external regressors. For information on these issues and their solutions, please refer to [this note](https://exploratory.io/note/exploratory/Prophet-kEu1dMb1).
 <% if (!test_mode) { %>
-* Model evaluation: To more rigorously evaluate the prediction performance of this model, you can validate it by splitting the data into training and test sets. In that case, set "Test Mode" under the "Validation" section in [Settings](//analytics/settings) to TRUE and re-run.
+* Model evaluation: To more rigorously evaluate the prediction performance of this model, you can validate it by splitting the data into training and test sets. In that case, set "Test Mode" under the "Validation" section in [Settings](//analytics/settings/test_mode) to TRUE and re-run.
 <% } %>
 
 `;

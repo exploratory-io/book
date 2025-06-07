@@ -2,9 +2,9 @@ const template = `
 
 
 <% if (algorithm == 'pearson') { %>
-Correlation coefficients were calculated for all variable combinations. The algorithm used for calculating correlation coefficients is "Pearson". The algorithm can be changed from [Settings](//analytics/settings) in Analytics.
+Correlation coefficients were calculated for all variable combinations. The algorithm used for calculating correlation coefficients is "Pearson". The algorithm can be changed from [Settings](//analytics/settings/do_cor_argo) in Analytics.
 <% } else { %>
-Correlation coefficients were calculated for all variable combinations. The algorithm used for calculating correlation coefficients is "Spearman". The algorithm can be changed from [Settings](//analytics/settings) in Analytics.
+Correlation coefficients were calculated for all variable combinations. The algorithm used for calculating correlation coefficients is "Spearman". The algorithm can be changed from [Settings](//analytics/settings/do_cor_argo) in Analytics.
 
 <% } %>
 
@@ -44,7 +44,7 @@ Guidelines for interpreting correlation coefficients are as follows:
 ## Important Notes
 
 * Correlation coefficients do not indicate causal relationships between variables, but only indicate the strength of relationship in the sense that two numerical variables move together in the same direction.
-* The algorithm for correlation coefficients is **Pearson's correlation coefficient** by default. However, if there is a monotonic but not linear relationship between variables, **Spearman's rank correlation coefficient** can more appropriately capture the correlation. The algorithm can be changed from [Settings](//analytics/settings) in Analytics.
+* The algorithm for correlation coefficients is **Pearson's correlation coefficient** by default. However, if there is a monotonic but not linear relationship between variables, **Spearman's rank correlation coefficient** can more appropriately capture the correlation. The algorithm can be changed from [Settings](//analytics/settings/do_cor_argo) in Analytics.
 * Spearman's rank correlation coefficient converts original values to rank values and then calculates correlation coefficients using the same method as Pearson's correlation coefficient. For details on these two correlation coefficients, please refer to [this note](https://exploratory.io/note/exploratory/2-BsF1LQF4).
 
 # Correlation Significance
