@@ -63,7 +63,7 @@ Important Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the top 11 most frequent values are retained and the rest are grouped as "Others". This can be changed from [Settings](//analytics/settings) in Analytics.
+* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the top 11 most frequent values are retained and the rest are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
 <% } %>
 
 # Variable Coefficients (Odds Ratios) and Significance
@@ -140,7 +140,7 @@ For logical-type target variables (TRUE/FALSE), AUC is commonly used as a metric
 Reference Information:
 
 * For detailed explanation of AUC, please see [this note](https://exploratory.io/note/exploratory/AUC-RZG7gbI6).
-* Accuracy, error rate, F1 score, precision, and recall are affected by the TRUE/FALSE threshold setting. The current threshold is set to <%= true_false_criteria %>, but this can be changed from [Settings](//analytics/settings) in Analytics.
+* Accuracy, error rate, F1 score, precision, and recall are affected by the TRUE/FALSE threshold setting. The current threshold is set to <%= true_false_criteria %>, but this can be changed from [Settings](//analytics/settings/true_false_criteria) in Analytics.
 
 ## Significance
 
@@ -273,7 +273,7 @@ This model predicted the probability of <%= target %> (values between 0 and 1) f
 * Since test mode is currently enabled, this shows the distribution of probabilities predicted on test data.
 <% } %>
 * The higher the prediction accuracy of the model, the more the group with actual TRUE values (blue line) should be biased toward the right (probabilities close to 1), and the group with actual FALSE values (orange line) should be biased toward the left (probabilities close to 0).
-* The vertical dotted line shows the currently set probability threshold for classifying TRUE and FALSE. The default is 50% (0.5), but this can be changed from [Settings](//analytics/settings) in Analytics.
+* The vertical dotted line shows the currently set probability threshold for classifying TRUE and FALSE. The default is 50% (0.5), but this can be changed from [Settings](//analytics/settings/true_false_criteria) in Analytics.
 * From this distribution, you can visually confirm the model's classification performance and adjust the optimal TRUE/FALSE threshold.
 
 
@@ -298,7 +298,7 @@ The following chart shows the ROC curve that evaluates the model's classificatio
 * Examining Non-linear Relationships: Explanatory variables with non-linear relationships to <%= target %> can be modeled more accurately by transforming the data.
 * Outlier Verification: Checking for outliers that may affect prediction accuracy and addressing them as necessary may improve model reliability. For methods to remove outliers, please see [this note](https://exploratory.io/note/exploratory/Eep7kip3).
 <% if (!test_mode) { %>
-* Model Evaluation: To evaluate this model's prediction performance more rigorously, you can verify by splitting into training data and test data. In that case, set "Test Mode" to TRUE under the "Validation" section in [Settings](//analytics/settings) and re-run.
+* Model Evaluation: To evaluate this model's prediction performance more rigorously, you can verify by splitting into training data and test data. In that case, set "Test Mode" to TRUE under the "Validation" section in [Settings](//analytics/settings/test_mode) and re-run.
 <% } %>
 * Prediction on New Data: When you want to make predictions on new data using the created model, add a "Predict with Model (Analytics View)" step to the target data frame. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
 

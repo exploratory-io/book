@@ -63,7 +63,7 @@ Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings).
+* For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 
 # Variable Coefficients (Odds Ratios) and Significance
@@ -73,7 +73,7 @@ The coefficients (odds ratios), p-values for determining significance, and confi
 {{coefficient_table}}
 
 <% if (has_perfect_collinearity) { %>
-_For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings)._
+_For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor)._
 <% } %>
 
 ## Interpretation of Odds Ratios
@@ -144,7 +144,7 @@ For logical (TRUE/FALSE) target variables, AUC is commonly used as a metric for 
 Reference information:
 
 * For detailed explanation of AUC, please see [this note](https://exploratory.io/note/exploratory/AUC-RZG7gbI6).
-* Accuracy, misclassification rate, F1 score, precision, and recall are affected by the TRUE/FALSE threshold setting. The current threshold is set to <%= true_false_criteria %>, but this can be changed in [Settings](//analytics/settings).
+* Accuracy, misclassification rate, F1 score, precision, and recall are affected by the TRUE/FALSE threshold setting. The current threshold is set to <%= true_false_criteria %>, but this can be changed in [Settings](//analytics/settings/true_false_criteria).
 
 ## Significance
 
@@ -277,7 +277,7 @@ This model predicted the probability of <%= target %> (values between 0 and 1) f
 * Since we are currently in test mode, this shows the distribution of probabilities predicted for test data.
 <% } %>
 * The more the TRUE actual value group (blue line) is biased toward the right side (probabilities close to 1) and the FALSE actual value group (orange line) is biased toward the left side (probabilities close to 0), the higher the model's prediction accuracy.
-* The vertical dotted line shows the probability threshold currently set for classifying TRUE and FALSE. The default is 50% (0.5), but this can be changed in [Settings](//analytics/settings).
+* The vertical dotted line shows the probability threshold currently set for classifying TRUE and FALSE. The default is 50% (0.5), but this can be changed in [Settings](//analytics/settings/true_false_criteria).
 * This distribution allows visual confirmation of the model's classification performance and adjustment of the optimal TRUE/FALSE threshold.
 
 
@@ -302,7 +302,7 @@ The following chart shows the ROC curve that evaluates the model's classificatio
 * Consideration of non-linear relationships: Predictor variables that have non-linear relationships with <%= target %> can be modeled more accurately by transforming the data.
 * Checking for outliers: Checking for outliers that may affect prediction accuracy and addressing them as necessary can improve model reliability. For methods to remove outliers, please see [this note](https://exploratory.io/note/exploratory/Eep7kip3).
 <% if (!test_mode) { %>
-* Model evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by dividing into training and test data. In this case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings) and re-run.
+* Model evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by dividing into training and test data. In this case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings/test_mode) and re-run.
 <% } %>
 * Prediction on new data: When you want to use the created model to make predictions on new data, add a "Predict with Model (Analytics View)" step to the target data frame. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
 

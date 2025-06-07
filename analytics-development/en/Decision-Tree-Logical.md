@@ -40,7 +40,7 @@ Important Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed from [Settings](//analytics/settings) in Analytics.
+* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
 <% } %>
 
 # Decision Tree
@@ -87,7 +87,7 @@ For logical (TRUE/FALSE) target variables, AUC is commonly used as a metric to e
 Reference Information:
 
 * For detailed explanation of AUC, please see [this note](https://exploratory.io/note/exploratory/AUC-RZG7gbI6).
-* Accuracy, misclassification rate, F1 score, precision, and recall are affected by the TRUE/FALSE boundary value setting. The current boundary value is set to <%= true_false_criteria %>, but this can be changed from [Settings](//analytics/settings) in Analytics.
+* Accuracy, misclassification rate, F1 score, precision, and recall are affected by the TRUE/FALSE boundary value setting. The current boundary value is set to <%= true_false_criteria %>, but this can be changed from [Settings](//analytics/settings/true_false_criteria) in Analytics.
 
 
 {start_show_hide}
@@ -162,7 +162,7 @@ This model predicted the probability of <%= target %> (values between 0 and 1) f
 * Since we are currently in test mode, this shows the distribution of probabilities predicted for test data.
 <% } %>
 * The more the group with actual TRUE values (blue line) is biased toward the right side (probabilities close to 1) and the group with actual FALSE values (orange line) is biased toward the left side (probabilities close to 0), the higher the model's prediction accuracy.
-* The vertical dotted line shows the currently set probability boundary value for classifying TRUE and FALSE. The default is 50% (0.5), but this can be changed from [Settings](//analytics/settings) in Analytics.
+* The vertical dotted line shows the currently set probability boundary value for classifying TRUE and FALSE. The default is 50% (0.5), but this can be changed from [Settings](//analytics/settings/true_false_criteria) in Analytics.
 * From this distribution, you can visually confirm the model's classification performance and adjustments to the optimal TRUE/FALSE boundary value.
 
 ## ROC Curve
@@ -192,7 +192,7 @@ The following table shows the results of predictions made on all data using the 
 * Outlier Verification: By checking for outliers that may affect prediction accuracy and addressing them as necessary, the reliability of the model may improve. For methods to remove outliers, please see [this note](https://exploratory.io/note/exploratory/Eep7kip3).
 * Consideration of Ensemble Learning Methods: To capture patterns that cannot be captured by a single decision tree, it may be effective to consider ensemble learning methods such as Random Forest or XGBoost.
 <% if (!test_mode) { %>
-* Model Evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings) and re-run the analysis.
+* Model Evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings/test_mode) and re-run the analysis.
 <% } %>
 * Prediction on New Data: When you want to use the created model to make predictions on new data, add a "Predict with Model (Analytics View)" step to the target data frame you want to predict. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
 

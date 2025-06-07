@@ -62,7 +62,7 @@ Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character type, Factor type) explanatory variables with more than 12 unique values, the 11 most frequent values are kept and the rest are labeled as "Others". This can be changed in [Settings](//analytics/settings).
+* For categorical (Character type, Factor type) explanatory variables with more than 12 unique values, the 11 most frequent values are kept and the rest are labeled as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 
 # Variable Coefficients and Significance
@@ -225,7 +225,7 @@ The following table shows the results of predictions on training data and test d
 * Outlier verification: By checking for outliers that may affect prediction accuracy and addressing them as needed, the reliability of the model may improve. For methods to remove outliers, please see [this note](https://exploratory.io/note/exploratory/Eep7kip3).
 * Distribution fit verification: Gamma distribution is a model suitable for positive continuous values, but depending on data characteristics, other distributions might be worth considering.
 <% if (!test_mode) { %>
-* Model evaluation: To evaluate the prediction performance of this model more rigorously, you can validate by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings) and re-run.
+* Model evaluation: To evaluate the prediction performance of this model more rigorously, you can validate by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings/test_mode) and re-run.
 <% } %>
 * Prediction on new data: When you want to use the created model to predict on new data, add a "Predict with Model (Analytics View)" step to the data frame you want to predict. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
 
