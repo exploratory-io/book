@@ -34,7 +34,7 @@ const template =
 <% } %>
 
 <% if (has_category_columns) { %>
-* カテゴリー型（Character型、Factor型）の説明変数において一意の値が12個より多い場合は、頻度の多いものから11個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings)より変更可能です。
+* カテゴリー型（Character型、Factor型）の説明変数において一意の値が12個より多い場合は、頻度の多いものから11個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
 <% } %>
 
 # モデルの指標
@@ -50,7 +50,7 @@ const template =
 {{summary}}
 
 * 行数はモデル作成に使用したデータの行数を示します。
-* 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings)より変更可能です。
+* 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings/true_false_criteria)より変更可能です。
 
 **指標の詳細**
 
@@ -85,7 +85,7 @@ const template =
 
 {{class_summary}}
 
-* 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings)より変更可能です。
+* 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings/true_false_criteria)より変更可能です。
 
 {start_show_hide}
 ### 指標の詳細

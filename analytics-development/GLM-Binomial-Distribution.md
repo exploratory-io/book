@@ -62,7 +62,7 @@ const template =
 
 <% } %>
 <% if (has_category_columns) { %>
-* カテゴリー型（Character型、Factor型）の説明変数において一意の値が12個より多い場合は、頻度の多いものから11個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings)より変更可能です。
+* カテゴリー型（Character型、Factor型）の説明変数において一意の値が12個より多い場合は、頻度の多いものから11個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
 <% } %>
 
 # 変数の係数（オッズ比）と有意性
@@ -139,7 +139,7 @@ _上記の信頼区間の説明は直感的な説明であって、正確には�
 参考情報：
 
 * AUCの詳細な説明については、[こちら](https://exploratory.io/note/exploratory/AUC-RZG7gbI6)のノートをご覧ください。
-* 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings)より変更可能です。
+* 正解率、誤分類率、F1スコア、適合率、再現率はTRUE/FALSEの境界値の設定により影響されます。現在の境界値は<%= true_false_criteria %>に設定されていますが、これは[「設定」](//analytics/settings/true_false_criteria)より変更可能です。
 
 ## 有意性
 

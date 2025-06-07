@@ -4,8 +4,7 @@ const template = `
 
 **注意点**
 
-* 終了時期である<%= end_date_column %>がNA（欠損値）の場合は、デフォルトではデータの「最後の日」が使われます。他の値で埋めたい場合は、[「設定」](//analytics/settings)より変更できます。
-
+* 終了時期である<%= end_date_column %>がNA（欠損値）の場合は、デフォルトではデータの「最後の日」が使われます。他の値で埋めたい場合は、[「設定」](//analytics/settings/impute_end_date)より変更できます。
 
 # 生存曲線
 

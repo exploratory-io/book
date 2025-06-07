@@ -62,7 +62,7 @@ const template =
 <% } %>
 
 <% if (has_category_columns) { %>
-* カテゴリー型（Character型、Factor型）の説明変数において一意の値が12個より多い場合は、頻度の多いものから11個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings)より変更可能です。
+* カテゴリー型（Character型、Factor型）の説明変数において一意の値が12個より多い場合は、頻度の多いものから11個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
 <% } %>
 
 # 変数の係数と有意性
