@@ -1,48 +1,61 @@
 const template = `
-
-
-We classified the data into <%= cluster_number %> clusters (groups) using "K-Means Clustering" based on the selected variables, treating each row of the data as an observation. The number of clusters is <%= cluster_number %>, but this can be changed from [Settings](//analytics/settings).
+Using the selected variables, the data was classified into <%= cluster_number %> clusters (groups) with K-Means Clustering. You can change the number of clusters from [Settings](//analytics/settings/cluster_number).
 
 # Characteristics of Each Cluster
 
 <!-- AI_SUMMARY -->
 
-## Summary Information
+## Summary
 
-The table below summarizes the amount of data in each cluster and the average score (standardized value) for the variables used in the classification.
+<% if (normalize) { %>
+The following table summarizes the number of rows in each cluster and the average score (normalized value) for each variable used for the classification.
+<% } else { %>
+The following table summarizes the number of rows in each cluster and the average value for each variable used for the classification.
+<% } %>
 
 {{summary}}
 
-* Excluded Rows - Rows with missing values (NA) in at least one variable are excluded from the data in advance. If the percentage of Excluded Rows is high, please reconsider the variables used or impute missing values.
+* Excluded Rows - Any row with a missing value (NA) in any of the variables is excluded from the data. If the ratio of Excluded Rows is high, consider reviewing the variables to use or filling in the missing values.
 
-## Visualization with Radar Chart
+## Radar Chart
 
-You can interpret the characteristics of each cluster based on the average score (standardized value) for the variables used in the classification.
+<% if (normalize) { %>
+You can interpret the characteristics of each cluster based on the average score (normalized value) for the variables used in the classification.
+<% } else { %>
+You can interpret the characteristics of each cluster based on the average value for the variables used in the classification.
+<% } %>
 
 {{radar}}
 
-The values on each axis are the standardized original values of each variable. The average value is 0, positive values mean higher than average, and negative values mean lower than average.
+<% if (normalize) { %>
+The values on each axis are normalized values of the original variables. A mean value is 0, positive values indicate above-average, and negative values indicate below-average.
+<% } else { %>
+The values on each axis are the original values of each variable. The scale of the values differs depending on the unit and scale of each variable. The axis is scaled to the largest value among all the variables.
+<% } %>
 
+## Boxplot
 
-## Visualization with Box Plot
-
-The following is a visualization of the variability of values for each variable by cluster using box plots.
+The following boxplots visualize the variation in each variable for each cluster.
 
 {{boxplot}}
 
-The values on the Y-axis are the standardized original values of each variable. The average value is 0, positive values mean higher than average, and negative values mean lower than average.
+<% if (normalize) { %>
+The Y-axis values are normalized values of the original variables. A mean value is 0, positive values indicate above-average, and negative values indicate below-average.
+<% } else { %>
+The Y-axis values are the original values of each variable. The scale of the values differs depending on the unit and scale of each variable. The axis is scaled to the largest value among all the variables.
+<% } %>
 
-## Visualization with Scatter Plot
+## Biplot
 
-This is a visualization of the relationship between clusters and variables, and the relationship between variables using a scatter plot. This chart is called a "Biplot".
+The following chart, called a "biplot," visualizes the relationships between clusters and variables, as well as the relationships among variables.
 
 {{biplot}}
 
-The original data is represented by <%= variables.length %> variables, but it is not possible to visualize the variability of all data in a 2-dimensional (X-axis and Y-axis) space. Therefore, this chart attempts to visualize the variability of the original data using two virtually created variables (X-axis and Y-axis) so as not to lose as much information (variability) as possible from the original data. The X-axis represents <%= ratio_of_variance_of_p1_pct %>% of the original data's variability, and the Y-axis represents <%= ratio_of_variance_of_p2_pct %>%.
+The original data is represented by <%= variables.length %> variables, but it is not possible to visualize all the variation in two dimensions (X and Y axes). Therefore, this chart visualizes the variation in the original data using two virtual variables (X and Y axes) that retain as much of the original information (variation) as possible. The X-axis represents <%= ratio_of_variance_of_p1_pct %>% of the original data's variation, and the Y-axis represents <%= ratio_of_variance_of_p2_pct %>.
 
-Each variable is represented by a gray line extending outwards from the center point (0, 0). Variables whose lines point in the same direction can be said to be strongly correlated variables.
+Each variable is represented by a gray line extending from the center point (0, 0) outward. Variables pointing in the same direction are highly correlated.
 
-Each cluster can be interpreted by how close it is to which line. If it is closer to the end of the line extending outwards, it means that the cluster has a high score for that variable. Conversely, if it is on the opposite side across 0, it means that the cluster has a low score for that variable.
+You can interpret the characteristics of each cluster by seeing which lines they are close to. If a cluster is near the tip of an outward line, it has a high score for that variable. Conversely, if it is on the opposite side across 0, it has a low score for that variable.
 
 <% if (has_category) { %>
 
@@ -61,47 +74,40 @@ Based on the cluster classification results, we assigned a cluster ID to each ro
 
 {{data}}
 
-
 <% if (elbow_method_mode) { %>
 
 # Optimal Number of Clusters
 
-The Elbow method can be used as one visual technique for choosing the "optimal number of clusters (K)" in K-Means clustering.
+The elbow method is a heuristic used in determining the optimal number of clusters in a dataset.
 
-Mechanism:
+How it works:
 
-1. Perform K-Means clustering while varying the number of clusters from 1 to 10.
-2. Calculate the sum of squared differences within clusters (within-cluster sum of squares) for each number of clusters.
-3. Visualize the number of clusters on the horizontal axis and the within-cluster variability on the vertical axis using a line chart.
-4. The "elbow" point, where the graph shape decreases sharply and then becomes gradual, is an indication of the optimal number of clusters.
+1. Run K-Means clustering for a range of cluster counts (e.g., from 1 to 10).
+2. For each number of clusters, calculate the within-cluster sum of squares (WCSS).
+3. Plot the WCSS for each cluster count.
+4. The "elbow" on the plot, the point where the rate of decrease sharply changes, suggests the optimal number of clusters.
 
-If not needed, this can be disabled from [Settings](//analytics/settings). The maximum number of clusters can also be changed.
-
-For more details on the Elbow method, please refer to [this note](https://exploratory.io/note/exploratory/K-Means-QRV2jAz0#%E3%82%A8%E3%83%AB%E3%83%9C%E3%83%BC%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%AB%E3%82%88%E3%82%8B%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC%E6%95%B0%E3%81%AE%E6%B1%BA%E5%AE%9A) (Note: This link points to a Japanese section in the note, ideally it would point to an English section or the note in English).
+You can disable this from [Settings](//analytics/settings/elbow_method), where you can also change the maximum number of clusters to try.
 
 ## Elbow Curve
 
-The following chart visualizes the within-cluster sum of squares for each number of clusters using a line called the Elbow curve, based on the Elbow method.
+The following chart visualizes the within-cluster sum of squares for each number of clusters. This is called an elbow curve.
 
 {{elbow}}
 
-When the number of clusters is small, the variability of data within clusters is large, so the variability decreases significantly as the number of clusters increases up to a certain point. However, after a certain point, the amount of decrease in variability gradually becomes smaller. This "boundary between sharp decrease and gradual change (Elbow)" serves as a guideline for the "optimal number of clusters". However, in reality, it is also important whether the characteristics of each cluster are easy to understand and useful after dividing into a certain number of clusters, so please use this only as a reference.
+With a small number of clusters, the within-cluster variation is large. The variation decreases as the number of clusters increases. However, the rate of decrease slows down at some point, creating an "elbow". This elbow indicates a good trade-off between the number of clusters and the variation within them. Note that this is a heuristic, and the interpretability of clusters is also important.
 
-## Degree of Variability Reduction
+## Rate of Decrease in WCSS
 
-In the Elbow curve chart, it may not be visually clear where the "Elbow" is. In such cases, you can compare the numerical values of the degree of descent of the Elbow curve (the degree of reduction in the variability of data within clusters), and the point where the value becomes constant can be used as a guideline for the "optimal number of clusters".
+Sometimes the elbow is not clear on the elbow curve. In such cases, you can look at the rate of decrease in WCSS. When the rate of decrease becomes constant, that can be a good indication of the optimal number of clusters.
 
 {{elbow_diff}}
 
 <% } %>
 
-# Supplementary Information
+# Learn More
 
-## Next Steps
-
-* If the observations you want to cluster do not correspond to the current rows, you need to create data for K-Means clustering. For details, please refer to [this note](https://exploratory.io/note/exploratory/K-Means-sfp4Syw0) (Note: This link points to a Japanese section in the note, ideally it would point to an English section or the note in English).
-
-
+* When you want to cluster by an observation unit that is not a row in the current data, you first need to aggregate the data. You can find more details in [this note](https://exploratory.io/note/exploratory/K-Means-sfp4Syw0).
 `;
 
 module.exports = template; 
