@@ -73,6 +73,40 @@ The following table shows aggregated data of <%= value %> for each <%= group %> 
 {{data}}
 {end_lazy_show_hide}
 
+<% if (elbow_method_mode) { %>
+
+# Optimal Number of Clusters
+
+The Elbow method can be used as one visual technique for choosing the "optimal number of clusters (K)" in K-Means clustering.
+
+Mechanism:
+
+1. Perform K-Means clustering while varying the number of clusters from 1 to 10.
+2. Calculate the sum of squared differences within clusters (within-cluster sum of squares) for each number of clusters.
+3. Visualize the number of clusters on the horizontal axis and the within-cluster variability on the vertical axis using a line chart.
+4. The "elbow" point, where the graph shape decreases sharply and then becomes gradual, is an indication of the optimal number of clusters.
+
+If not needed, this can be disabled from [Settings](//analytics/settings). The maximum number of clusters can also be changed.
+
+For more details on the Elbow method, please refer to [this note](https://exploratory.io/note/exploratory/K-Means-QRV2jAz0#%E3%82%A8%E3%83%AB%E3%83%9C%E3%83%BC%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%AB%E3%82%88%E3%82%8B%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC%E6%95%B0%E3%81%AE%E6%B1%BA%E5%AE%9A) (Note: This link points to a Japanese section in the note, ideally it would point to an English section or the note in English).
+
+## Elbow Curve
+
+The following chart visualizes the within-cluster sum of squares for each number of clusters using a line called the Elbow curve, based on the Elbow method.
+
+{{elbow}}
+
+When the number of clusters is small, the variability of data within clusters is large, so the variability decreases significantly as the number of clusters increases up to a certain point. However, after a certain point, the amount of decrease in variability gradually becomes smaller. This "boundary between sharp decrease and gradual change (Elbow)" serves as a guideline for the "optimal number of clusters". However, in reality, it is also important whether the characteristics of each cluster are easy to understand and useful after dividing into a certain number of clusters, so please use this only as a reference.
+
+## Degree of Variability Reduction
+
+In the Elbow curve chart, it may not be visually clear where the "Elbow" is. In such cases, you can compare the numerical values of the degree of descent of the Elbow curve (the degree of reduction in the variability of data within clusters), and the point where the value becomes constant can be used as a guideline for the "optimal number of clusters".
+
+{{elbow_diff}}
+
+<% } %>
+
+
 # Next Steps
 
 * Cluster number optimization: Consider whether the current number of clusters is appropriate and re-run the analysis with different cluster numbers if necessary. Fewer clusters capture general trends, while more clusters capture more detailed patterns.

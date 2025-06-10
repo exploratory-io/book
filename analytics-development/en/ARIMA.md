@@ -2,9 +2,9 @@ const template = `
 
 
 <% if (!test_mode) { %>
-A model to predict <%= target %> has been created. We are forecasting up to <%= test_period %><%= unit %> ahead, and this forecast period can be changed from "Forecast Period" in [Settings](//analytics/settings).
+A model to predict <%= target %> has been created. We are forecasting up to <%= test_period %><%= unit %> ahead, and this forecast period can be changed from "Forecast Period" in [Settings](//analytics/settings/test_period).
 <% } else { %>
-A model to predict <%= target %> has been created. Since we are currently in test mode, the model was built using data up to <%= test_period %><%= unit %> before the end of the data, and predictions are made for the subsequent period (test period). The test period can be changed from the "Test Data Period" section in [Settings](//analytics/settings) of Analytics.
+A model to predict <%= target %> has been created. Since we are currently in test mode, the model was built using data up to <%= test_period %><%= unit %> before the end of the data, and predictions are made for the subsequent period (test period). The test period can be changed from the "Test Data Period" section in [Settings](//analytics/settings/test_period) of Analytics.
 <% } %>
 
 # Forecast Results
@@ -276,7 +276,7 @@ The following is a bar chart visualization of the partial autocorrelation functi
 * Forecast Period Optimization: Focusing on shorter-term forecasts may improve forecast accuracy.
 * Comparison with Other Models: Comparing different parameter settings for ARIMA/SARIMA models or other time series models like Prophet may help find more appropriate models.
 <% if (!test_mode) { %>
-* Model Evaluation: To more rigorously evaluate the forecast performance of this model, you can validate by splitting into training and test data. In that case, set "Test Mode" to TRUE in the "Evaluation" section under [Settings](//analytics/settings) and re-run.
+* Model Evaluation: To more rigorously evaluate the forecast performance of this model, you can validate by splitting into training and test data. In that case, set "Test Mode" to TRUE in the "Evaluation" section under [Settings](//analytics/settings/test_mode) and re-run.
 <% } %>
 `;
 

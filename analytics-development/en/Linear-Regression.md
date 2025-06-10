@@ -60,14 +60,14 @@ Notes:
 * Predictor variables are arranged in order of importance as shown in the "Variable Importance" section above.
 
 <% if (has_category_columns) { %>
-* For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
+* For categorical (Character, Factor) predictor variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 
 <% } else { %>
 <% if (has_category_columns) { %>
 Notes:
 
-* For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
+* For categorical (Character, Factor) predictor variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 <% } %>
 
@@ -78,7 +78,7 @@ The coefficients (slopes), p-values for determining significance, and confidence
 {{coefficient_table}}
 
 <% if (has_category_columns) { %>
-_For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor)._
+_For categorical (Character, Factor) predictor variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor)._
 <% } %>
 
 ## Interpretation of Coefficients

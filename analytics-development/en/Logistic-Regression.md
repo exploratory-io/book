@@ -63,17 +63,18 @@ Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
+* For categorical (Character, Factor) predictor variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 
+<% if (is_variable_odds_ratio) { %>
 # Variable Coefficients (Odds Ratios) and Significance
 
 The coefficients (odds ratios), p-values for determining significance, and confidence intervals are listed for each variable.
 
 {{coefficient_table}}
 
-<% if (has_perfect_collinearity) { %>
-_For categorical (Character, Factor) predictor variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor)._
+<% if (has_category_columns) { %>
+_For categorical (Character, Factor) predictor variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor)._
 <% } %>
 
 ## Interpretation of Odds Ratios
@@ -119,6 +120,140 @@ _The above explanation of confidence intervals is intuitive; more precisely, it 
 * Odds ratios represent the change ratio of odds (ratio of TRUE / FALSE), not the change ratio of probability.
 * When the odds ratio is greater than 1, the probability of <%= target %> becoming TRUE increases; when less than 1, it decreases.
 * These odds ratio values represent the amount of change when each predictor variable changes by 1 point. When predictor variables have different units, you cannot use these odds ratio values to compare the strength of relationships with <%= target %>. To compare the strength of relationships between predictor variables, please refer to the "Variable Importance" section above.
+
+<% } %>
+
+<% if (is_variable_average_marginal_effect) { %>
+
+# Variable Coefficients (Average Marginal Effect) and Significance
+
+The coefficients (average marginal effects), p-values for determining significance, and confidence intervals are listed for each variable.
+
+{{coefficient_table}}
+
+<% if (has_category_columns) { %>
+_For categorical (Character, Factor) predictor variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor)._
+<% } %>
+
+## Interpretation of Average Marginal Effects
+
+Shows how much the probability of <%= target %> changes on average when each predictor variable's value changes by 1 unit.
+
+### Examples of Average Marginal Effect Interpretation
+
+<% variables.forEach(variable => { %>
+<% if (variable.type == 'numeric') { %>
+
+* When other variables remain constant, a 1-unit increase in <%= variable.variable %> <% if (variable.marginal_effect_pct > 0) { %>increases the probability of <%= target %> becoming TRUE by about <%= variable.marginal_effect_pct %> percentage points on average<% } else { %>decreases the probability of <%= target %> becoming TRUE by about <%= variable.marginal_effect_pct * -1 %> percentage points on average<% } %>.
+
+<% } else if (variable.type == 'logical') { %>
+
+* When other variables remain constant, when <%= variable.variable %> is TRUE, there is about a <%= variable.marginal_effect_pct %> percentage point difference in the probability of <%= target %> becoming TRUE on average compared to FALSE.
+
+<% } else { %>
+
+* When other variables remain constant, "<%= variable.variable %>" has about a <%= variable.marginal_effect_pct %> percentage point difference in the probability of <%= target %> becoming TRUE on average compared to the base level "<%= variable.base_level %>". For details on base levels, please refer to [this note](https://exploratory.io/note/exploratory/Pxa6FmO2).
+
+<% } %>
+<% }) %>
+
+_A percentage point is an absolute change in probability. For example, if the original probability is 30% and the average marginal effect is 5 percentage points, the new probability is 35%. Please note that this is different from a relative change (a % increase)._
+
+For information on interpreting coefficients by data type in statistical prediction models, please see [this note](https://exploratory.io/note/exploratory/KOC5WYt3).
+
+## Significance Testing Using P-values
+
+At a significance level of <%= baseline_p_pct %>% (<%= baseline_p %>), predictor variables with p-values greater than <%= baseline_p_pct %>% (<%= baseline_p %>) cannot be considered statistically significant in their relationship with <%= target %>. Conversely, predictor variables with p-values less than <%= baseline_p_pct %>% (<%= baseline_p %>) can be considered statistically significant in their relationship with <%= target %>.
+
+_The current significance level (p-value) is set to <%= baseline_p_pct %>% (<%= baseline_p %>), but this can be changed in [Settings](//analytics/settings)._
+
+## Visualization of Average Marginal Effects
+
+The following chart visualizes the average marginal effects and significance for each variable.
+
+{{coefficient}}
+
+* Each point represents the value of the average marginal effect. Predictor variables that have a significant and positive relationship with <%= target %> are shown in blue, and those with a negative relationship are in red. Gray predictor variables are not considered to have a significant relationship with <%= target %>.
+* An average marginal effect of 0 means that a change in the predictor variable's value does not change the probability of <%= target %> becoming TRUE, indicating no relationship with <%= target %>.
+* Significance is determined by the p-value.
+
+### Notes
+
+* The average marginal effect directly shows the amount of change in probability, making it more intuitive to understand than odds ratios. However, since the average marginal effect represents an average effect across all data, the actual marginal effect for individual observations (the change in probability for a one-unit change in the predictor variable at that observation) may differ. For example, even if the average marginal effect of income is 3 percentage points, the effect of an income increase might be 5 percentage points for low-income individuals and 1 percentage point for high-income individuals. Please be aware that the marginal effect can vary significantly depending on the values of the predictor variables and other variables.
+* A positive average marginal effect increases the probability of <%= target %> becoming TRUE, while a negative value decreases it.
+* These average marginal effect values are the change for a 1-point change in each predictor variable. If predictor variables have different units, you cannot compare the strength of their relationship with <%= target %> using these values. To compare the strength of relationships between predictor variables, please refer to the "Variable Importance" section above.
+
+<% } %>
+
+<% if (is_variable_coefficient) { %>
+
+# Variable Coefficients and Significance
+
+The coefficients, p-values for determining significance, and confidence intervals are listed for each variable.
+
+{{coefficient_table}}
+
+<% if (has_category_columns) { %>
+
+For categorical (Character, Factor) predictor variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
+
+<% } %>
+
+## Interpretation of Coefficients
+
+Shows how much the likelihood (log odds) of <%= target %> changes when each predictor variable's value changes by 1 unit.
+
+### Examples of Coefficient Interpretation
+
+<% variables.forEach(variable => { %>
+
+<% if (variable.type == 'numeric') { %>
+
+When other variables remain constant, a 1-unit increase in <%= variable.variable %> changes the likelihood (log odds) of <%= target %> by approximately <%= variable.coefficient %>.
+
+<% } else if (variable.type == 'logical') { %>
+
+When other variables remain constant, when <%= variable.variable %> is TRUE, the likelihood (log odds) of <%= target %> changes by approximately <%= variable.coefficient %> compared to FALSE.
+
+<% } else { %>
+
+When other variables remain constant, "<%= variable.variable %>" changes the likelihood (log odds) of <%= target %> by approximately <%= variable.coefficient %> compared to the base level "<%= variable.base_level %>". For details on base levels, please refer to [this note](https://exploratory.io/note/exploratory/Pxa6FmO2).
+
+<% } %>
+
+<% }) %>
+
+For information on interpreting coefficients by data type in statistical prediction models, please see [this note](https://exploratory.io/note/exploratory/KOC5WYt3).
+
+## Significance Testing Using P-values
+
+At a significance level of <%= baseline_p_pct %>% (<%= baseline_p %>), predictor variables with p-values greater than <%= baseline_p_pct %>% (<%= baseline_p %>) cannot be considered statistically significant in their relationship with <%= target %>. Conversely, predictor variables with p-values less than <%= baseline_p_pct %>% (<%= baseline_p %>) can be considered statistically significant in their relationship with <%= target %>.
+
+_The current significance level (p-value) is set to <%= baseline_p_pct %>% (<%= baseline_p %>), but this can be changed in [Settings](//analytics/settings)._
+
+## Visualization of Coefficients and Confidence Intervals
+
+The following chart visualizes the coefficients and significance for each variable.
+
+{{coefficient}}
+
+* The center point of each error bar represents the coefficient value, and the upper and lower lines represent its 95% confidence interval. Predictor variables with significant and positive relationships with <%= target %> are shown in blue, and those with negative relationships are in red. Predictor variables shown in gray do not have a significant relationship with <%= target %>.
+
+* A coefficient of 0 means that a change in the predictor variable's value does not change the likelihood (log odds) of <%= target %>, indicating no relationship with <%= target %>.
+
+* The 95% confidence interval for coefficients means "there is high probability (95% confidence) that the true coefficient lies within this range." Therefore, predictor variables whose confidence intervals include 0 cannot be considered statistically significant because there is a possibility of no relationship with <%= target %>. Conversely, predictor variables whose confidence intervals do not include 0 can be considered statistically significant because there is almost no possibility of no relationship with <%= target %>.
+
+* Significance can be determined using either p-values or confidence intervals, and both methods yield the same results.
+
+The above explanation of confidence intervals is intuitive; more precisely, it means "if we repeatedly sample from the same population and calculate 95% confidence intervals each time, 95% of those intervals will contain the true coefficient."
+
+### Notes
+
+* Coefficients represent the change in likelihood (log odds) and do not directly indicate the change in probability.
+* A positive coefficient tends to increase the probability of <%= target %> becoming TRUE, while a negative coefficient tends to decrease it.
+* These coefficient values are the change for a 1-point change in each predictor variable. If predictor variables have different units, you cannot use these coefficient values to compare the strength of their relationship with <%= target %>. To compare the strength of relationships between predictor variables, please refer to the "Variable Importance" section above.
+
+<% } %>
 
 # Model Metrics
 

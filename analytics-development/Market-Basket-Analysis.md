@@ -35,17 +35,32 @@ const template = `
 * これは「その組み合わせがどのくらいよくあるか」を示すもので、全体に占める割合で表されます。
 * 支持度が高いほど、その組み合わせは全体のデータに占める割合が大きいということになります。
 
-```
-\text{支持度} = \frac{\text{特定の組み合わせの出現回数}}{\text{全てのデータ（バスケット）}}
-```
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mtext>支持度</mtext>
+    <mo>=</mo>
+    <mfrac>
+      <mtext>特定の組み合わせの出現回数</mtext>
+      <mtext>全てのデータ（バスケット）</mtext>
+    </mfrac>
+  </mrow>
+</math>
 
 **確信度（Confidence）**
 * ある商品Aを選択した人のうち、どれくらいの割合で商品Bも一緒に選択されているかを表す指標です。
 * これは「Aを選択していたら、どのくらいの確率でBも選択しているか」という条件付きの割合を示し、確信度が高いほど「Aを選択する人は高い確率でBも選択している」と判断できます。
 
-```
-\text{確信度} = \frac{\text{商品AとBを選択した数}}{\text{商品Aが選択された数}}
-```
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mtext>確信度</mtext>
+    <mo>=</mo>
+    <mfrac>
+      <mtext>商品AとBを選択した数</mtext>
+      <mtext>商品Aが選択された数</mtext>
+    </mfrac>
+  </mrow>
+</math>
 
 **リフト（Lift）**
 
@@ -53,9 +68,16 @@ const template = `
 * リフトは商品Aを選択した数における商品Bの選択率（確信度）を、全体における商品Bの選択率（商品Bの支持度）で割ることで求められます。
 * この値によって、確信度が高い組み合わせが本当に関連性が強いのか、それとも単にBがよく選択されるものなのでたまたま一緒に選択されているだけなのかを判断できます。
 
-```
-\text{リフト} = \frac{\text{確信度}}{\text{商品Bの支持度}}
-```
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mrow>
+    <mtext>リフト</mtext>
+    <mo>=</mo>
+    <mfrac>
+      <mtext>確信度</mtext>
+      <mtext>商品Bの支持度</mtext>
+    </mfrac>
+  </mrow>
+</math>
 
 ## グラフ
 

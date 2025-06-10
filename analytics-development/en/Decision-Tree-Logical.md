@@ -40,7 +40,7 @@ Important Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
+* For categorical (Character, Factor) explanatory variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
 <% } %>
 
 # Decision Tree

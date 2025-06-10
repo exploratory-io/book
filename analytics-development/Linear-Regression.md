@@ -61,14 +61,14 @@ const template = `
 * 単回帰分析と重回帰分析の解釈の違いについては、[こちらのノート](https://exploratory.io/note/exploratory/BDI7AeE5)をご覧ください。
 * 説明変数は上記の「説明変数の重要度」にある重要度の高い順番で並んでいます。
 <% if (has_category_columns) { %>
-* カテゴリー型（Character型、Factor型）の説明変数において一意の値が12個より多い場合は、頻度の多いものから11個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
+* カテゴリー型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n -1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
 <% } %>
 
 <% } else { %>
 <% if (has_category_columns) { %>
 注意点：
 
-* カテゴリー型（Character型、Factor型）の説明変数において一意の値が12個より多い場合は、頻度の多いものから11個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
+* カテゴリー型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n -1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
 <% } %>
 <% } %>
 
@@ -80,7 +80,7 @@ const template = `
 {{coefficient_table}}
 
 <% if (has_category_columns) { %>
-_カテゴリー型（Character型、Factor型）の説明変数において一意の値が12個より多い場合は、頻度の多いものから11個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。_
+_カテゴリー型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n -1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。_
 <% } %>
 
 ## 係数の解釈

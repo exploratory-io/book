@@ -40,7 +40,7 @@ Notes:
 <% } %>
 
 <% if (has_category_columns) { %>
-* For categorical (Character type, Factor type) predictor variables with more than 12 unique values, the 11 most frequent values are retained and the rest are categorized as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
+* For categorical (Character type, Factor type) predictor variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are categorized as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 
 # Model Metrics
