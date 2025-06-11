@@ -1,5 +1,62 @@
 # Release Note
 
+
+## 13.0
+
+Released on 06/11/2025.
+
+### Enhancements
+
+* Chart: Table: Now it supports the "Apply All Columns" option in the color formatting. 
+
+
+* Analytics: Enhanced user interface with improved navigation and visual design.
+* Analytics: Chart: Now you can see the list of available charts/analytics from the "Show Chart/Analytics List" button in the Analytics and Chart tab area.
+
+
+### Bug fixes
+
+* AI Prompt: It didn't create a step after clicking the "Save As Step" button when opened via Cmd + L shortcut.
+* AI Prompt: It failed when the sample data has many columns.
+* AI Prompt: The "AI Wrangling" button style was not displayed correctly when grouping columns were present.
+
+
+* Data Source: CSV / Text Input: Separator fallback is now supported at the R function level so that it works on the Scheduler.
+* Data Source: CSV Import: Auto-detection of the separator did not work when the file contained only one column.
+
+
+* Data Wrangling: Error dialog should not appear if the error originates from a wrangling step.
+
+
+* Chart: "Cannot read properties of null (reading 'getRName')" error showed up when deleting a data frame.
+* Chart: R-based charts now support automatic configuration to make output responsive to the view area.
+
+
+* Analytics: Analytics type now appears in the hover popup for analytics.
+* Analytics: Renamed "Predictor Variables" to "Explanatory Variables" for consistency.
+* Analytics: The "Data Type" column for Training/Test was missing in GLM analytics even when Test Mode was enabled.
+* Analytics: Data rows that are not statistically significant should be in gray color in the Coefficient tables in Statistical Prediction Models.
+* Analytics: One-way ANOVA should use the oneway.test() function for improved statistical accuracy.
+
+
+* Note / Dashboard: Publishing failed with "EPERM: Operation Not Permitted" error in some cases.
+* Note: Fixed an issue where the note reverted to a previous state unexpectedly.
+
+
+* Parameter: Executing a slider parameter with the default value did not return the correct result.
+* Parameter: After resetting the parameter value to the default, the number slider value jumped to the maximum.
+
+
+* Publish: Publishing a certain dashboard failed with a network error if you have a lot of case-when conditions in the step.
+
+
+* System Setting: Fixed terminology inconsistency for "Repository" in Japanese UI.
+* General: The quota information should be refreshed when opening the user info dropdown on the Project List page.
+* General: The quota information should display the next quota reset date in the user info dropdown on the Project List page.
+
+
+
+
 ## 12.3
 
 Released on 04/28/2025.
