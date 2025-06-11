@@ -17,7 +17,7 @@ Released on 06/11/2025.
 ### Bug fixes
 
 * AI Prompt: It didn't create a step after clicking the "Save As Step" button when opened via Cmd + L shortcut.
-* AI Prompt: It failed when the sample data has many columns.
+* AI Prompt: Resolved an issue where AI Prompt would fail when processing sample data containing a high number of columns.
 * AI Prompt: The "AI Wrangling" button style was not displayed correctly when grouping columns were present.
 
 
