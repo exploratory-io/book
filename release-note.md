@@ -47,7 +47,7 @@ Released on 06/11/2025.
 * Parameter: After resetting the parameter value to the default, the number slider value jumped to the maximum.
 
 
-* Publish: Publishing a certain dashboard failed with a network error if you have a lot of case-when conditions in the step.
+* Publish: Publishing a Dashboard or Note failed with a network error if you had a lot of case-when conditions in the step.
 
 
 * System Setting: Fixed terminology inconsistency for "Repository" in Japanese UI.
