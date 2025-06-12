@@ -77,12 +77,19 @@ The following table allows you to check the words contained in each document (or
 {{word_data_table}}
 {end_lazy_show_hide}
 
+## Data (Full)
 
+English version:
+The following table shows the group assignment for each document (original text) and the frequently occurring words within each group.
+{start_lazy_show_hide}
+### Table
+{{table_full}}
+{end_lazy_show_hide}
 
 ## Next Steps
 
-* Stop word configuration: By excluding common auxiliary verbs like "できる" (can do) and "られる" (be able to), and common nouns like "方" (person/way) and "者" (person), you can focus on more meaningful words. You can register these words as "Stop Word Dictionary" from Analytics [Settings](//analytics/settings).
-* Compound word registration: Words that are counted separately but actually refer to one concept, such as "Web" and "会議" (meeting), can be recognized as "Web会議" (web meeting) to improve analysis accuracy. You can also register this as "Compound Word Dictionary" from Analytics [Settings](//analytics/settings).
+* Stop word configuration: By excluding common auxiliary verbs like "できる" (can do) and "られる" (be able to), and common nouns like "方" (person/way) and "者" (person), you can focus on more meaningful words. You can register these words as "Stop Word Dictionary" from Analytics [Settings](//analytics/settings/stop_words).
+* Compound word registration: Words that are counted separately but actually refer to one concept, such as "Web" and "会議" (meeting), can be recognized as "Web会議" (web meeting) to improve analysis accuracy. You can also register this as "Compound Word Dictionary" from Analytics [Settings](//analytics/settings/compound_words).
 * Utilizing topic modeling: In addition to word frequency, using topic modeling may help discover hidden themes or topics within text. This might provide deeper insights that cannot be obtained from simple word counts alone.
 `;
 
