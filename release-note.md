@@ -10,7 +10,7 @@ Released on 06/12/2025.
 
 ### Bug fixes
 
-* Summary View: The Step Export menu style was broken.
+* Summary View: The step export menu style was broken.
 
 
 * Analytics: Word Count: Moved network chart-related properties to the Analytics-level setting for consistency.
