@@ -1,5 +1,27 @@
 # Release Note
 
+## 13.1
+
+Released on 06/12/2025.
+
+### Enhancements
+
+* Analytics: Word Count: Now it supports the new "Data" chart table that displays original data along with group assignments and their typical words.
+
+### Bug fixes
+
+* Summary View: The Step Export menu style was broken.
+
+
+* Analytics: Word Count: Moved network chart-related properties to the Analytics-level setting for consistency.
+* Analytics: Word Count: Fixed an inconsistency where the AI Summary results did not match the groups shown in the Network Chart.
+
+
+* Parameter: Numeric text input parameters defaulted to 0 when left blank.
+
+
+* History: Fixed an issue where using the mouse wheel caused unexpected scrolling behavior.
+
 
 ## 13.0
 
