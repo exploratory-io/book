@@ -55,8 +55,6 @@ The relationship between the important words for each topic and the values of <%
 
 <% } %>
 
-# Supplementary Information
-
 ## Data (Overall)
 
 The table below shows the original data with topic probability information added.
@@ -67,8 +65,8 @@ Each row represents one text data, and the columns "Topic 1" to "Topic <%= topic
 
 # Next Steps
 
-* Stop word configuration: By excluding common auxiliary verbs like "can do" and "be able to", and common nouns like person/way and person, you can focus on more meaningful words. You can register these words as "Stop Word Dictionary" from Analytics [Settings](//analytics/settings).
-* Compound word registration: Words that are counted separately but actually refer to one concept, such as "Web" and "meeting", can be recognized as "web meeting" to improve analysis accuracy. You can also register this as "Compound Word Dictionary" from Analytics [Settings](//analytics/settings).
+* Stop word configuration: By excluding common auxiliary verbs like "can do" and "be able to", and common nouns like person/way and person, you can focus on more meaningful words. You can register these words as "Stop Word Dictionary" from Analytics [Settings](//analytics/settings/stop_words).
+* Compound word registration: Words that are counted separately but actually refer to one concept, such as "Web" and "meeting", can be recognized as "web meeting" to improve analysis accuracy. You can also register this as "Compound Word Dictionary" from Analytics [Settings](//analytics/settings/compound_words).
 `;
 
 module.exports = template; 
