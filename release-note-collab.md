@@ -43,7 +43,7 @@ Released on 6/27/2025
 * General: Logging in after publishing content while logged out would open account settings page instead of the published content.
 * General: Quota information in the user dropdown was outdated.
 * General: The change email pop-up didn't close after clicking the Change Email button.
-* General: Loading the Stats page took long time.
+* General: Loading the Stats dialog content took long time.
 
 
 
