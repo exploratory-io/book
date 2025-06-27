@@ -1,68 +1,53 @@
 # Release Note
 
-## 13.1
+## 13.0
 
-Released on 6/25/2025
+Released on 6/27/2025
 
 ### Download
 
-* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-13.1.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
-* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-13.1.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-13.0.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-13.0.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
 
 ### Enhancements
 
-* Admin: Added team filter to access logs for better administration.
-* Admin: Now displays the number of authors on the user management page.
-* Admin: Now supports customizing the content of invitation emails to be sent.
+* Admin: Now you can filter the access logs by the team for better administration.
+* Admin: Now you can see the number of authors on the user management page.
+* Admin: Now you can customize the content of invitation emails to be sent.
 
 
+* General: Now you can see the monthly usage reset date in the user dropdown menu.
 
-* Content: Pivot Table: Added support for downloading data by clicking the data download icon.
-* Content: Now supports default content filter settings that match the browser's language preferences.
-
-
-
-* General: Now shows monthly usage reset date in the user dropdown menu.
-
-
-
-* Interactive: Performance improvement for interactive mode activation and parameter changes.
-
-
-* Server: Now points to the symbolic link for downloading the latest supported Desktop version.
 
 ### Bug Fixes
 
-
 * Admin: Fixed horizontal scrolling issues on the user management page.
-* Admin: Users could no longer be removed before activation, causing them to accumulate.
-
-
-* Analytics: Downloading images and CSV files for each chart was not working.
-* Analytics: The language of analytics explanations changed when parameters were updated.
-* Analytics: Linear Regression: The data table was not displayed when the parameter had only one value.
 
 
 * Content: Charts created online from published data failed to refresh when using Snowflake (Key pair Auth) or BigQuery Service Account.
+* Content: Downloaded chart data was incorrect when downloading from a particular dashboard.
 * Content: Images were not displaying in published dashboards created from Windows environment.
 * Content: Math formulas were not applied after adding or updating math formulas in text panels online.
-* Content: The parameter pane was not shown when the content was published.
-* Content: Semantic search didn't return results when users were logged in.
-* Content: Thumbnails changed compared to previous versions.
-* Content: Downloaded chart data was incorrect when downloading from a particular dashboard.
+* Content: The default language setting of the search page now follows the language of the UI.
+* Content: Pivot Table: Table: The download dropdown only had 1 item. You should be able to download the chart data by clicking the download icon. 
+
+
+* Parameter: The interactive session failed to initialize if a cache data file was missing even if the cache data could be recovered by running steps. 
+* Parameter: Starting the interactive mode and updating parameter took long time. 
+
+
+* Schedule: Scheduling against Oracle database didn't work.
+* Schedule: Updated error notification email message for OAuth token expiration.
+* Schedule: Scheduling a dashboard didn't update the thumbnail properly if the dashboard contained a lot of charts. 
 
 
 * General: Logging in after publishing content while logged out would open account settings page instead of the published content.
 * General: Quota information in the user dropdown was outdated.
 * General: The change email pop-up didn't close after clicking the Change Email button.
-* General: Improved loading performance for the Stats page.
+* General: Loading the Stats page took long time.
 
 
-* Interactive: Interactive sessions failed to start due to missing parquet files.
 
-
-* Schedule: Scheduling against Oracle database didn't work.
-* Schedule: Updated error notification email message for OAuth token expiration.
 
 
 
