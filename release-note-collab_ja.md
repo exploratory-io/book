@@ -1,11 +1,68 @@
 # リリースノート
 
+## 13.0
+
+2025年6月27日リリース
+
+
+### ダウンロード
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-13.0.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-13.0.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
+
+
+
+### 機能強化
+
+
+* 管理: チームごとにアクセスログをフィルタできるようになり、管理がしやすくなりました。
+* 管理: ユーザー管理ページで作成者の人数を確認できるようになりました。
+* 管理: 招待メールの内容をカスタマイズできるようになりました。
+
+
+* 一般: ユーザーのドロップダウンメニューに、月間利用量のリセット日が表示されるようになりました。
+
+
+### 修正された問題
+
+* 管理: ユーザー管理ページで横スクロールが発生する問題を修正しました。
+
+
+* コンテンツ: オンラインで作成したチャートが、Snowflake（キーペア認証）やBigQueryのサービスアカウントを使っていると更新されない問題を修正しました。
+* コンテンツ: Windows環境で作成されたダッシュボードをパブリッシュすると、画像が表示されない問題を修正しました。
+* コンテンツ: ダッシュボード: 数式を追加または更新した後、テキストパネルに数式が適用されない問題を修正しました。
+* コンテンツ: 検索ページのデフォルト言語が、UIの言語設定と一致するようになりました。
+* コンテンツ: ピボットテーブル: テーブル: ダウンロードメニューに1つしか項目が表示されない問題を修正しました。ダウンロードアイコンをクリックすると、チャートデータを即座にダウンロードできるようになりました。
+
+
+* 一般: ログアウト中にコンテンツをパブリッシュしてからログインすると、パブリッシュされたコンテンツではなくアカウント設定ページが表示される問題を修正しました。
+* 一般: ユーザーのドロップダウンに表示される使用量の情報が古いことがある問題を修正しました。
+* 一般: 「メールアドレスの変更」ボタンをクリックしてもポップアップが閉じない問題を修正しました。
+* 一般: 利用状況のダイアログの読み込みに時間がかかる問題を修正しました。
+
+
+* パラメーター: データファイルが存在しない場合、そのデータがステップを実行することで復旧可能であっても、インタラクティブ・モードが初期化できない問題を修正しました。
+* パラメーター: インタラクティブ・モードの開始やパラメーターの更新に時間がかかる問題を修正しました。
+
+
+* スケジュール: Oracleデータベースに対してスケジューリングが機能しない問題を修正しました。
+* スケジュール: OAuthトークンの有効期限切れ時に表示されるエラーメールメッセージを更新しました。
+* スケジュール: 多数のチャートを含むダッシュボードをスケジューリングした際に、サムネイルが正しく更新されない問題を修正しました。
+
+
+
+
+
+
+
+
+
 ## 11.5
 
 2025年3月21日リリース
 
 
-### Download
+### ダウンロード
 
 * [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.5.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
 * [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.5.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
@@ -20,7 +77,7 @@
 2025年2月8日リリース
 
 
-### Download
+### ダウンロード
 
 * [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.4.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
 * [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.4.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
@@ -51,7 +108,7 @@
 2025年2月1日リリース
 
 
-### Download
+### ダウンロード
 
 * [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-11.3.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
 * [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-11.3.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
