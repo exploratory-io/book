@@ -1,5 +1,69 @@
 # Release Note
 
+## 13.1
+
+Released on 6/25/2025
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-13.1.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-13.1.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+### Enhancements
+
+* Admin: Added team filter to access logs for better administration.
+* Admin: Now displays the number of authors on the user management page.
+* Admin: Now supports customizing the content of invitation emails to be sent.
+
+
+
+* Content: Pivot Table: Added support for downloading data by clicking the data download icon.
+* Content: Now supports default content filter settings that match the browser's language preferences.
+
+
+
+* General: Now shows monthly usage reset date in the user dropdown menu.
+
+
+
+* Interactive: Performance improvement for interactive mode activation and parameter changes.
+
+
+* Server: Now points to the symbolic link for downloading the latest supported Desktop version.
+
+### Bug Fixes
+
+
+* Admin: Fixed horizontal scrolling issues on the user management page.
+* Admin: Users could no longer be removed before activation, causing them to accumulate.
+
+
+* Analytics: Downloading images and CSV files for each chart was not working.
+* Analytics: The language of analytics explanations changed when parameters were updated.
+* Analytics: Linear Regression: The data table was not displayed when the parameter had only one value.
+
+
+* Content: Charts created online from published data failed to refresh when using Snowflake (Key pair Auth) or BigQuery Service Account.
+* Content: Images were not displaying in published dashboards created from Windows environment.
+* Content: Math formulas were not applied after adding or updating math formulas in text panels online.
+* Content: The parameter pane was not shown when the content was published.
+* Content: Semantic search didn't return results when users were logged in.
+* Content: Thumbnails changed compared to previous versions.
+* Content: Downloaded chart data was incorrect when downloading from a particular dashboard.
+
+
+* General: Logging in after publishing content while logged out would open account settings page instead of the published content.
+* General: Quota information in the user dropdown was outdated.
+* General: The change email pop-up didn't close after clicking the Change Email button.
+* General: Improved loading performance for the Stats page.
+
+
+* Interactive: Interactive sessions failed to start due to missing parquet files.
+
+
+* Schedule: Scheduling against Oracle database didn't work.
+* Schedule: Updated error notification email message for OAuth token expiration.
+
 
 
 ## 11.5
@@ -96,7 +160,7 @@ Released on 1/29/2025
 
 
 * Scheduler: Now scheduling can refresh R-based charts (such as ggplot2) in the R code chunk.
-* Scheduler: Now you can send scheduling notification emails only when no data is available in the published Data or Chart by enabling the "Don’t send notifications when no data" option in the Scheduling dialog.
+* Scheduler: Now you can send scheduling notification emails only when no data is available in the published Data or Chart by enabling the "Don't send notifications when no data" option in the Scheduling dialog.
 
 
 ### Bug Fixes
@@ -108,7 +172,7 @@ Released on 1/29/2025
 * Interactive: immediately after starting interactive mode, the result did not match the parameter condition if no parameters were changed.
 * Interactive: When starting interactive mode on a note, some data sources ignored the Parquet file and attempted to load an Excel file instead.
 * Parameter: Cascading parameter failed when setting a displayName column to dynamic List of Values.
-* Parameter: Chart: The Word Cloud didn't render properly after updating parameters. If a Word Cloud chart with no data was published, it was supposed to show the chart but didn’t.
+* Parameter: Chart: The Word Cloud didn't render properly after updating parameters. If a Word Cloud chart with no data was published, it was supposed to show the chart but didn't.
 * Parameter: Dashboard: The "Apply for All Pages" option in the parameter pane allowed applying the parameter to either the current page or all pages.
 * Parameter: Run with Data Import button failed after importing a private data share from Data Catalog, creating a chart and dashboard, and then publishing it.
 * Parameter: Updating the parameter didn't update downloaded data from a chart on a different page.
@@ -273,7 +337,7 @@ Released on 06/10/2024
 * Admin: Admin users should be able to see the users without scrolling inside a user list table.
 
 
-* Parameter: It failed to update the Parameter and showed the “Error: IOError: Failed to open local file. No such file or directory” error on a fresh Hosted/On-Prem Server installation.
+* Parameter: It failed to update the Parameter and showed the "Error: IOError: Failed to open local file. No such file or directory" error on a fresh Hosted/On-Prem Server installation.
 * Parameter: Parameter pane didn't show up on public content if you were not logged in.
 * Parameter: Session failed to initialize due to the "TypeError: e.replace is not a function" error if you created a multi-value parameter and changed it to the single-value parameter.
 * Parameter: The show detail table showed "Chart rendering failed." if the underlying step had more than 100 columns.
@@ -329,7 +393,7 @@ Released on 03/07/2024
 * Scheduler: It always showed "00:00" for the daily schedule even if you scheduled the other time.
 * Scheduler: Layout of the Scheduler Admin page corrupted right after running a "Rum Immediate" scheduling.
 * Scheduler: Parameter with a dynamic default value such as max date was not evaluated at the scheduling time.
-* Scheduler: Scheduling a Data share with a CSV data source failed with "Can't subset columns with islist.” if the data source CSV became empty.
+* Scheduler: Scheduling a Data share with a CSV data source failed with "Can't subset columns with islist." if the data source CSV became empty.
 * Scheduler: Scheduling failed with the "There is another R process running." error if the scheduling took a long time.
 
 ## 8.0
@@ -356,7 +420,7 @@ Released on 10/11/2023
 
 
 * Parameter: It showed an error "Processing might have failed due to the large data size." if you updated the parameter on a dashboard that contains a lot of charts and data.
-* Parameter: Updating parameters didn’t refresh charts on a data frame that joined another data frame including parameters.
+* Parameter: Updating parameters didn't refresh charts on a data frame that joined another data frame including parameters.
 * Parameter: When there was a parent-child relationship in parameters, changing the parent parameter did not update the list of values in the child parameter.
 * Parameter: Updating parameters failed if you used a function from the "zipangu" R package in the step.
 
@@ -685,7 +749,7 @@ Released on 6/21/2021
 
 * Admin: Creating a new user failed after creating 3 new users.
 * Admin: it should ask "Logout and continue?" to proceed the user activation if you are already logged in as an Admin user and clicked a user activation link.
-* Admin: Translated “Are you sure?” message in Japanese.
+* Admin: Translated "Are you sure?" message in Japanese.
 * Chart: Published chart should use the same UI locale that the user was using when the user published the chart on the Desktop.
 * Dashboard: Parameter failed to refresh a Table when you updated the paraeter and clicked the "OK" button if the Table is from Analytics Data tab.
 * General: When POSIXct column name contains period(.), table didn't show the data properly.
