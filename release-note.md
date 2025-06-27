@@ -6,37 +6,40 @@ Released on 06/19/2025.
 
 ### Enhancements
 
-* Data Source: Google BigQuery: Added service account support.
-* Analytics: AI Summary: Added text copy button for easy sharing of summary content.
+* Data Source: Google BigQuery: Now you can retrieve the data using the service account in addition to the OAuth.
+* Analytics: AI Summary: Now you can copy the AI summary content by the "Copy Text" button. 
+
 
 ### Bug fixes
 
-* Data Source: Google Analytics: Added user-friendly message when re-importing obsolete v3 GA data sources.
+* Data Source: Google Analytics: It should show a user-friendly message when re-importing obsolete v3 GA data sources
 
 
-* Data Wrangling: Added user-friendly message when selecting non-EDF files.
+* Data Wrangling: It should show a user-friendly message when selecting non-EDF files.
 
 
-* Chart: Pie/Doughnut Chart: Fixed inability to adjust opacity for individual colors.
+* Chart: Pie/Doughnut Chart: Opacity setting didn't work if you picked a custom color with an opacity. 
 
 
-* Analytics: Statistical Models: Fixed an issue where multicollinearity charts did not display groups with perfect collinearity when using Repeat by.
-* Analytics: Fixed an issue where the analytics report would scroll back to the top when moving between windows.
-* Analytics: Word Count: Fixed an issue where the co-occurrence chart didn't appear in published Word Count analytics.
-* Analytics: Linear Regression: Fixed an issue where residual charts were incorrectly exported when downloading data from parameters.
+* Analytics: Analytics Guide view scrolled back to the top when moving between windows.
+* Analytics: Statistical Models: Multicollinearity charts did not display groups with perfect collinearity when using Repeat by.
+* Analytics: Word Count: Co-occurrence chart didn't appear in published Word Count analytics.
+* Analytics: Linear Regression: "Download Data" button always exported the data for the Residual chart. 
 
 
-* Dashboard: Improved performance when working with dashboards containing many charts.
-* Dashboard: Fixed "Failed to update variables while generating Dashboard" error that occurred under certain conditions.
+* Note: R Script: Zoom level of the ggplot2-based chart were different between web and desktop previews.
 
 
-* Note: R Script: Fixed an issue where ggplot2 chart zoom ratios differed between web and desktop previews.
+* Dashboard: "Failed to update variables while generating Dashboard" error occurred when running a dashboard.
+* Dashboard: Clicking the Run button or changing the parameter took very long time if a dashboard contained many charts.
 
 
 * Parameter: Changed the "Cache Values" label to "Get Values Dynamically" and set default to off for improved clarity.
 
 
-* History: Fixed "Restore from history failed with unrecognized input" error.
+* History: "Restore from history failed with unrecognized input" error occurred when restoring a history.
+
+
 
 
 
