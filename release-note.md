@@ -12,7 +12,7 @@ Released on 06/27/2025.
 
 ### Bug fixes
 
-* Data Source: Google Analytics: It should show a user-friendly message when re-importing obsolete v3 GA data sources
+* Data Source: Google Analytics: It should show a user-friendly message when re-importing obsolete v3 GA data sources.
 
 
 * Data Wrangling: It should show a user-friendly message when selecting non-EDF files.
