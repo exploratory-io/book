@@ -25,14 +25,13 @@ Released on 6/27/2025
 
 
 * Content: Charts created online from published data failed to refresh when using Snowflake (Key pair Auth) or BigQuery Service Account.
-* Content: Downloaded chart data was incorrect when downloading from a particular dashboard.
 * Content: Images were not displaying in published dashboards created from Windows environment.
-* Content: Math formulas were not applied after adding or updating math formulas in text panels online.
+* Content: Dashboard: Math formulas were not applied after adding or updating math formulas in text panels online.
 * Content: The default language setting of the search page now follows the language of the UI.
 * Content: Pivot Table: Table: The download dropdown only had 1 item. You should be able to download the chart data by clicking the download icon. 
 
 
-* Parameter: The interactive session failed to initialize if a cache data file was missing even if the cache data could be recovered by running steps. 
+* Parameter: Interactive mode failed to initialize if a cache data file was missing even if the cache data could be recovered by running steps. 
 * Parameter: Starting the interactive mode and updating parameter took long time. 
 
 
