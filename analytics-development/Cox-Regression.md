@@ -11,14 +11,22 @@ const template = `
 このモデルでは<%= perfect_collinearity_variables %>が完全な[多重共線性](https://exploratory.io/note/exploratory/Ysc3LNp0)（他の説明変数の値によって数式で完全に計算できる状態）の問題を作っているため、そのVIFスコアが無限大となり多重共線性をテストするためのチャートが生成できませんでした。多重共線性の問題を解決するために、<%= perfect_collinearity_variables %>を説明変数から除外し再実行してください。
 <% } else if (max_vif > 10) { %>
 {{multicollinearity}}
-
+<% if (perfect_collinearity_groups && perfect_collinearity_groups.length > 0) { %>
+<%= perfect_collinearity_groups.join(', ') %>は完全な[多重共線性](https://exploratory.io/note/exploratory/Ysc3LNp0)（他の説明変数の値によって数式で完全に計算できる状態）の問題を作っているため、そのVIFスコアが無限大となり多重共線性をテストするためのチャートが生成できませんでした。多重共線性の問題を解決するために、<%= perfect_collinearity_groups.join(', ') %>を説明変数から除外し再実行してください。
+それ以外のグループではこのモデルには[多重共線性](https://exploratory.io/note/exploratory/Ysc3LNp0)（複数の説明変数間に強い相関関係があること）の問題が見られます。VIFの値が10を超えている説明変数があると、個々の変数の効果を正確に評価することが難しくなります。
+この問題を解決するためには、VIFの値が10を超えている説明変数の中から必要性が低いものを1つずつ除外し、再実行し、VIFの値が10を超える説明変数がなくなるまで繰り返してください。
+<% } else { %>
 このモデルには[多重共線性](https://exploratory.io/note/exploratory/Ysc3LNp0)（複数の説明変数間に強い相関関係があること）の問題が見られます。VIFの値が10を超えている説明変数があると、個々の変数の効果を正確に評価することが難しくなります。
 この問題を解決するためには、VIFの値が10を超えている説明変数の中から必要性が低いものを1つずつ除外し、再実行し、VIFの値が10を超える説明変数がなくなるまで繰り返してください。
-
+<% } %>
 <% } else { %>
 {{multicollinearity}}
-
+<% if (perfect_collinearity_groups && perfect_collinearity_groups.length > 0) { %>
+<%= perfect_collinearity_groups.join(', ') %>は完全な[多重共線性](https://exploratory.io/note/exploratory/Ysc3LNp0)（他の説明変数の値によって数式で完全に計算できる状態）の問題を作っているため、そのVIFスコアが無限大となり多重共線性をテストするためのチャートが生成できませんでした。多重共線性の問題を解決するために、<%= perfect_collinearity_groups.join(', ') %>を説明変数から除外し再実行してください。
+それ以外のグループではこのモデルには[多重共線性](https://exploratory.io/note/exploratory/Ysc3LNp0)（複数の説明変数間に強い相関関係があること）の問題は見られません。（VIFの値が10を超えている説明変数があると、個々の変数の効果を正確に評価することが難しくなります。）
+<% } else { %>
 このモデルには[多重共線性](https://exploratory.io/note/exploratory/Ysc3LNp0)（複数の説明変数間に強い相関関係があること）の問題は見られません。（VIFの値が10を超えている説明変数があると、個々の変数の効果を正確に評価することが難しくなります。）
+<% } %>
 <% } %>
 <% } %>
 

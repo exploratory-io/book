@@ -11,15 +11,23 @@ A linear regression model has been created to predict <%= target %> based on the
 In this model, <%= perfect_collinearity_variables %> creates a problem of [perfect multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be perfectly calculated by a formula using other predictor variables), resulting in infinite VIF scores and preventing the generation of charts for testing multicollinearity. To resolve the multicollinearity issue, please exclude <%= perfect_collinearity_variables %> from the predictor variables and re-run the analysis.
 <% } else if (max_vif > 10) { %>
 {{multicollinearity}}
-
+ <% if (perfect_collinearity_groups && perfect_collinearity_groups.length > 0) { %>
+<%= perfect_collinearity_groups.join(', ') %> have a problem of [perfect multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be perfectly calculated by a formula using other predictor variables), resulting in infinite VIF scores and preventing the generation of charts for testing multicollinearity. To resolve the multicollinearity issue, please exclude <%= perfect_collinearity_groups.join(', ') %> from the predictor variables and re-run the analysis.
+For other groups, this model shows signs of [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (strong correlation between multiple predictor variables). When predictor variables have VIF values exceeding 10, it becomes difficult to accurately evaluate the effect of individual variables.
+To resolve this issue, exclude one predictor variable with low necessity from those with VIF values exceeding 10, re-run the analysis, and repeat this process until no predictor variables have VIF values exceeding 10.
+  <% } else { %>
 This model shows signs of [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (strong correlation between multiple predictor variables). When predictor variables have VIF values exceeding 10, it becomes difficult to accurately evaluate the effect of individual variables.
 To resolve this issue, exclude one predictor variable with low necessity from those with VIF values exceeding 10, re-run the analysis, and repeat this process until no predictor variables have VIF values exceeding 10.
-
+  <% } %>
 <% } else { %>
 {{multicollinearity}}
-
+    <% if (perfect_collinearity_groups && perfect_collinearity_groups.length > 0) { %>
+<%= perfect_collinearity_groups.join(', ') %> have a problem of [perfect multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be perfectly calculated by a formula using other predictor variables), resulting in infinite VIF scores and preventing the generation of charts for testing multicollinearity. To resolve the multicollinearity issue, please exclude <%= perfect_collinearity_groups.join(', ') %> from the predictor variables and re-run the analysis.
+For other groups, this model does not show signs of [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (strong correlation between multiple predictor variables). (When predictor variables have VIF values exceeding 10, it becomes difficult to accurately evaluate the effect of individual variables.)
+    <% } else { %>
 This model does not show signs of [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (strong correlation between multiple predictor variables). (When predictor variables have VIF values exceeding 10, it becomes difficult to accurately evaluate the effect of individual variables.)
-<% } %>
+    <% } %>
+  <% } %>
 <% } %>
 
 # Relationships Between Variables

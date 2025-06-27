@@ -9,17 +9,25 @@ A generalized linear model (Gamma distribution) has been created to predict <%= 
 <% if (has_perfect_collinearity) { %>
 {{multicollinearity:0.6}}
 
-In this model, <%= perfect_collinearity_variables %> creates a problem of perfect [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be completely calculated by a formula using other explanatory variables), so their VIF scores become infinite and a chart for testing multicollinearity could not be generated. To solve the multicollinearity problem, please exclude <%= perfect_collinearity_variables %> from the explanatory variables and re-run.
+In this model, <%= perfect_collinearity_variables %> creates a problem of perfect [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be completely calculated by a formula using other explanatory variables), causing their VIF scores to become infinite and preventing the generation of a chart for testing multicollinearity. To resolve the multicollinearity problem, please exclude <%= perfect_collinearity_variables %> from the explanatory variables and re-run the analysis.
 <% } else if (max_vif > 10) { %>
 {{multicollinearity}}
-
-This model shows a problem of [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (strong correlation between multiple explanatory variables). When there are explanatory variables with VIF values exceeding 10, it becomes difficult to accurately evaluate the effect of individual variables.
-To solve this problem, please exclude one variable with low necessity from the explanatory variables with VIF values exceeding 10, re-run, and repeat until there are no more explanatory variables with VIF values exceeding 10.
-
+<% if (perfect_collinearity_groups && perfect_collinearity_groups.length > 0) { %>
+<%= perfect_collinearity_groups.join(', ') %> have a problem of [perfect multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be completely calculated by a formula using other explanatory variables), causing their VIF scores to become infinite and preventing the generation of a chart for testing multicollinearity. To resolve the multicollinearity problem, please exclude <%= perfect_collinearity_groups.join(', ') %> from the explanatory variables and re-run the analysis.
+For other groups, this model shows signs of [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (strong correlations between multiple explanatory variables). When explanatory variables have VIF values exceeding 10, it becomes difficult to accurately evaluate the effect of individual variables.
+To resolve this issue, exclude one explanatory variable with low necessity from those with VIF values exceeding 10, re-run the analysis, and repeat this process until no explanatory variables have VIF values exceeding 10.
+<% } else { %>
+This model shows signs of [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (strong correlations between multiple explanatory variables). When explanatory variables have VIF values exceeding 10, it becomes difficult to accurately evaluate the effect of individual variables.
+To resolve this issue, exclude one explanatory variable with low necessity from those with VIF values exceeding 10, re-run the analysis, and repeat this process until no explanatory variables have VIF values exceeding 10.
+<% } %>
 <% } else { %>
 {{multicollinearity}}
-
-This model does not show a problem of [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (strong correlation between multiple explanatory variables). (When there are explanatory variables with VIF values exceeding 10, it becomes difficult to accurately evaluate the effect of individual variables.)
+<% if (perfect_collinearity_groups && perfect_collinearity_groups.length > 0) { %>
+<%= perfect_collinearity_groups.join(', ') %> have a problem of [perfect multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be completely calculated by a formula using other explanatory variables), causing their VIF scores to become infinite and preventing the generation of a chart for testing multicollinearity. To resolve the multicollinearity problem, please exclude <%= perfect_collinearity_groups.join(', ') %> from the explanatory variables and re-run the analysis.
+For other groups, this model does not show signs of [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (strong correlations between multiple explanatory variables). (When explanatory variables have VIF values exceeding 10, it becomes difficult to accurately evaluate the effect of individual variables.)
+<% } else { %>
+This model does not show signs of [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (strong correlations between multiple explanatory variables). (When explanatory variables have VIF values exceeding 10, it becomes difficult to accurately evaluate the effect of individual variables.)
+<% } %>
 <% } %>
 <% } %>
 
