@@ -2,7 +2,7 @@
 
 ## 13.2
 
-Released on 06/19/2025.
+Released on 06/27/2025.
 
 ### Enhancements
 
