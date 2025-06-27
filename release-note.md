@@ -24,7 +24,6 @@ Released on 06/27/2025.
 * Analytics: Analytics Guide view scrolled back to the top when moving between windows.
 * Analytics: Statistical Models: Multicollinearity charts did not display groups with perfect collinearity when using Repeat by.
 * Analytics: Word Count: Co-occurrence chart didn't appear in published Word Count analytics.
-* Analytics: Linear Regression: "Download Data" button always exported the data for the Residual chart. 
 
 
 * Note: R Script: Zoom level of the ggplot2-based chart were different between web and desktop previews.
