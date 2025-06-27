@@ -33,7 +33,7 @@ Released on 06/27/2025.
 * Dashboard: Clicking the Run button or changing the parameter took very long time if a dashboard contained many charts.
 
 
-* Parameter: Changed the "Cache Values" label to "Get Values Dynamically" and set default to off for improved clarity.
+* Parameter: Changed the "Cache Values" label to "Get Values Dynamically" and set default to off for improved clarity in the Parameter Setting dialog.
 
 
 * History: "Restore from history failed with unrecognized input" error occurred when restoring a history.
