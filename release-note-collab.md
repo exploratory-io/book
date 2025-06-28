@@ -2,7 +2,7 @@
 
 ## 13.0
 
-Released on 6/27/2025
+Released on 6/28/2025
 
 ### Download
 
