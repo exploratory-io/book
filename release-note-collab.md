@@ -8,6 +8,7 @@ Released on 6/28/2025
 
 * [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-13.0.10.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
 * [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-13.0.10.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+    * Please make sure to run the **"11. Upgrade MongoDB version if you are upgrading to Exploratory Server v13"** step.
 
 ### Enhancements
 
