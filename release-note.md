@@ -1,5 +1,50 @@
 # Release Note
 
+## 13.3
+
+Released on 07/05/2025.
+
+
+* Data Source: Google Sheets: Now you can automatically detect data types during import, just like with CSV files.
+
+
+* Chart: Number: Now you can append custom text after the value in Number charts.
+
+
+* Note: Now you can export notes in Markdown format.
+
+
+### Bug Fixes
+
+* AI: Prompt: R Script was not correctly restored when reopening an existing AI Prompt step.
+
+
+* Data Source: BigQuery: Text in the connection settings dialog overlapped with the title.
+
+
+* Data Wrangling: Error handling needs to be improved if the referenced connection is incorrect or not found when publishing or exporting a step.
+
+
+* Summary View/Table View: Displaying all columns did not work properly when there were more than 1,000 columns.
+
+
+* Chart: CSV download option was not available in the published chart. 
+
+
+* Analytics: There was an extra space to the left of the X-axis when the confidence intervals option was checked in the Survival Curve.
+
+
+* Note: Blank window showed up when opening notes created with older versions of Exploratory Desktop.
+* Dashboard: Fixed an issue where the dashboard thumbnail still contained a hover popup.
+
+
+* General: The user dropdown shows quota information when connected to a hosted or on-premise server.
+* General: Project window turned blank when resized or maximized on Windows.
+
+
+
+
+
 ## 13.2
 
 Released on 06/28/2025.
