@@ -4,6 +4,8 @@
 
 Released on 07/05/2025.
 
+### Enhancements
+
 
 * Data Source: Google Sheets: Now you can automatically detect data types during import, just like with CSV files.
 
