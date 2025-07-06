@@ -1,5 +1,40 @@
 # リリースノート
 
+## 13.1
+
+2025年7月5日リリース
+
+
+### ダウンロード
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-13.1.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-13.1.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
+    * Exploratory Serverのバージョン13以前からアップグレードする場合は、**「11. Exploratory サーバー をv13にアップグレードする場合 (MongoDBのバージョンのアップグレード」** のステップを忘れずに実施してください。
+
+
+### 機能強化
+
+
+
+* AI: ホステッドサーバー上でAI機能を利用できるようになりました。  
+
+
+* 管理: チーム管理ページで、チームに共有されたコンテンツの一覧を表示できるようになりました。  
+* 管理: コンテンツ: 検索結果の最上位に常に表示されるように、特定のコンテンツをピン留めできるようになりました。  
+* 管理: コンテンツ: コンテンツ検索ページのデフォルトの言語設定を変更できるようになりました。  
+
+
+### 修正された問題
+
+* 管理: アクセスログ: タイトルとチーム名でアクセスログを検索した際に、検索結果が一致しない問題を修正しました。  
+
+
+* コンテンツ: タグ検索のURLをコピーして新しいブラウザウィンドウで開くと、「Page not found」エラーが表示される問題を修正しました。  
+* コンテンツ: パブリッシュされたプロジェクトページで、バージョン履歴の順序が正しく表示されない問題を修正しました。  
+
+
+
+
 ## 13.0
 
 2025年6月28日リリース
