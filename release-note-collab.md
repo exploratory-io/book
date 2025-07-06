@@ -1,5 +1,36 @@
 # Release Note
 
+## 13.1
+
+Released on 7/5/2025
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-13.1.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-13.1.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+    * Please make sure to run the **"11. Upgrade MongoDB version if you are upgrading to Exploratory Server v13"** step if you are upgrading from the version 12 or below.
+
+### Enhancements
+
+* AI: Now you can use the AI features on the hosted server.  
+
+* Admin: Now you can view the contents that are shared to a specific team from the Team Admin page.  
+* Admin: Content: Now you can pin specific content so it always appears at the top of the search results.  
+* Admin: Content: Now you can change the default language setting on the content search page.  
+
+
+### Bug Fixes
+
+* Admin: Access Log: Search results were inconsistent when searching access logs by the title and team name.  
+
+* Content: Copying a tag-search URL and opening it in a new browser window showed a “Page not found” error.  
+* Content: The order of the version history was incorrect on the published project page.
+
+
+
+
+
+
 ## 13.0
 
 Released on 6/28/2025
