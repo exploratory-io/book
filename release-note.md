@@ -1,5 +1,28 @@
 # Release Note
 
+## 13.4
+
+Released on 7/8/2025.
+
+### Enhancements
+
+* Parameter: Supported Next N Months/Weeks/Days and Previous N Months/Weeks/Days parameter options with default value for date parameters.
+* Parameter: Added current month start and end date options as default values for date parameters.
+
+### Bug Fixes
+
+* Chart: Map: UK country map was missing some areas.
+* Chart: Map: World map was missing some countries such as Vatican City, Antigua and Barbuda, etc.
+* Chart: Map: Longitude range of the Pacific-centered world map was too wide.
+
+
+* Project: Project failed to open with the error "Error in loadNamespace(x): there is no package called 'pacman'.
+
+
+
+
+
+
 ## 13.3
 
 Released on 07/05/2025.
