@@ -16,7 +16,7 @@ Released on 7/8/2025.
 * Chart: Map: Longitude range of the Pacific-centered world map was too wide.
 
 
-* Project: Project failed to open with the error "Error in loadNamespace(x): there is no package called 'pacman'.
+* Project: Project failed to open with the error "Error in loadNamespace(x): there is no package called 'pacman'".
 
 
 
