@@ -258,7 +258,7 @@ The ROC curve calculation uses survival probability predictions at the <%= survi
 
 
 
-# Supplementary Information
+# Appendix
 
 ## Next Steps
 

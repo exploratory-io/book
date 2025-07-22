@@ -156,7 +156,7 @@ The following table shows the results of predictions made on all data using the 
 {{data}}
 {end_lazy_show_hide}
 
-# Supplementary Information
+# Appendix
 
 ## Next Steps
 

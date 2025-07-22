@@ -73,7 +73,7 @@ Notes:
 * For categorical (Character type, Factor type) explanatory variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are kept and the rest are labeled as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 
-# Variable Coefficients and Significance
+# Coefficient & Significance
 
 The coefficients (slopes), p-values for determining significance, and confidence intervals are listed for each variable.
 
@@ -222,7 +222,7 @@ The following table shows the results of predictions on training data and test d
 {{data}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

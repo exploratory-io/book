@@ -97,7 +97,7 @@ The following chart shows the ROC curve that evaluates the model's classificatio
 
 For ROC curve calculation, the predicted survival rate at the <%= survival_period%> elapsed time point is used. The period can be changed in [Settings](//analytics/settings/survival_period).
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

@@ -3,7 +3,7 @@ const template =
 
 A Random Forest model to predict <%= target %> has been created based on the selected explanatory variables.
 
-# Relationship between Variables
+# Variable Relationships
 
 <% if (predictorColumns.length > 1) { %>
 ## Explanatory Variable Importance
@@ -127,7 +127,7 @@ As a result of prediction, there is a discrepancy between the original actual va
 {{actual_predicted}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

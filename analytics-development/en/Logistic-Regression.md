@@ -32,7 +32,7 @@ This model does not show signs of [multicollinearity](https://exploratory.io/not
 <% } %>
 
 
-# Relationships Between Variables
+# Variable Relationships
 
 <% if (predictorColumns.length > 1) { %>
 ## Variable Importance
@@ -75,7 +75,7 @@ Notes:
 <% } %>
 
 <% if (is_variable_odds_ratio) { %>
-# Variable Coefficients (Odds Ratios) and Significance
+# Coefficient & Significance
 
 The coefficients (odds ratios), p-values for determining significance, and confidence intervals are listed for each variable.
 
@@ -195,7 +195,7 @@ The following chart visualizes the average marginal effects and significance for
 
 <% if (is_variable_coefficient) { %>
 
-# Variable Coefficients and Significance
+# Coefficient & Significance
 
 The coefficients, p-values for determining significance, and confidence intervals are listed for each variable.
 
@@ -434,7 +434,7 @@ The following chart shows the ROC curve that evaluates the model's classificatio
 
 {{roc_curve}}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

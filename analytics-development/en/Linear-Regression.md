@@ -30,7 +30,7 @@ This model does not show signs of [multicollinearity](https://exploratory.io/not
   <% } %>
 <% } %>
 
-# Relationships Between Variables
+# Variable Relationships
 
 <% if (predictorColumns.length > 1) { %>
 ## Variable Importance
@@ -79,7 +79,7 @@ Notes:
 <% } %>
 <% } %>
 
-# Variable Coefficients and Significance
+# Coefficient & Significance
 
 The coefficients (slopes), p-values for determining significance, and confidence intervals are listed for each variable.
 
@@ -286,7 +286,7 @@ The following table shows the results of predictions made on both training and t
 {{data}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

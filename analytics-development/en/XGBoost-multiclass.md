@@ -161,7 +161,7 @@ When the learning curve starts to flatten, it may be approaching the optimal num
 {{learning_curve_logical}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

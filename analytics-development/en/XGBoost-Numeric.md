@@ -137,7 +137,7 @@ The following chart shows the model learning process. The horizontal axis repres
 {{learning_curve_numeric}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

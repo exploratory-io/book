@@ -73,7 +73,7 @@ Important Notes:
 * For categorical (Character, Factor) explanatory variables with more than 12 unique values, the top 11 most frequent values are retained and the rest are grouped as "Others". This can be changed from [Settings](//analytics/settings) in Analytics.
 <% } %>
 
-# Variable Coefficients and Significance
+# Coefficient & Significance
 
 Coefficients (slopes), P-values for determining their significance, and confidence intervals are listed for each variable.
 
@@ -248,7 +248,7 @@ The following table shows the results of predictions made on training data and t
 {{data}}
 {end_lazy_show_hide}
 
-# Supplementary Information
+# Appendix
 
 ## Next Steps
 

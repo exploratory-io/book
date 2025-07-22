@@ -9,7 +9,7 @@ Correspondence analysis was conducted to analyze the relationships between the f
 
 Correspondence analysis is a statistical technique that visually represents the associations between values of multiple variables.
 
-# Relationships Between Variable Values (Categories)
+# Group Relationships
 
 The following plot visualizes the relationships between the values (categories) of selected variables by placing each value in a two-dimensional space. Values positioned close to each other indicate strong associations.
 
@@ -23,7 +23,7 @@ How to interpret this plot:
 * Categories positioned near the origin (0,0) do not have particularly distinctive characteristics
 
 
-# Relationships Between Variables
+# Variable Relationships
 
 The following plot places the selected variables themselves in a two-dimensional space. Variables positioned close to each other indicate strong associations.
 
@@ -35,7 +35,7 @@ The following table shows the weight of each variable for each dimension (the st
 
 {{weight_table}}
 
-# Supplementary Information
+# Appendix
 
 ## Contribution Rate
 The following chart visualizes the "contribution rate," which represents how much of the information content (variance) in the original data is explained by the axes created through correspondence analysis. The cumulative contribution rate shows how much can be represented when these contribution rates are added up sequentially.

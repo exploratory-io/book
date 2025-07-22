@@ -226,7 +226,7 @@ The following table shows the results of predicting on the training and test dat
 {{data}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

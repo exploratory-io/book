@@ -275,7 +275,7 @@ The following is a visualization of the confidence interval of the mean for each
 {{mean}}
 {end_lazy_show_hide}
 
-# Supplementary Information
+# Appendix
 
 ## Next Steps
 

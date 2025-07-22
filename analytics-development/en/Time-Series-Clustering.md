@@ -51,7 +51,7 @@ The following table shows which cluster each group belongs to in tabular format.
 
 {{cluster_members}}
 
-# Additional Information
+# Appendix
 
 ## Data Validity Verification
 

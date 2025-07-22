@@ -107,7 +107,7 @@ The null hypothesis for this hypothesis test is that there is no difference in s
 <% } %>
 
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

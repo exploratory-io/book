@@ -256,7 +256,7 @@ The chart below visualizes the confidence interval of the mean for each group us
 {{mean}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

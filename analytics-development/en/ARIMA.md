@@ -242,7 +242,7 @@ The following table shows the results of dividing the original data into trainin
 {{data}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Residual Analysis
 

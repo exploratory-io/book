@@ -3,7 +3,7 @@ const template =
 
 A Random Forest model to predict <%= target %> has been created based on the selected explanatory variables.
 
-# Relationship between Variables
+# Variable Relationships
 
 <% if (predictorColumns.length > 1) { %>
 ## Explanatory Variable Importance
@@ -150,7 +150,7 @@ This table is a prediction matrix showing the correspondence between the model's
 {{confusion_matrix}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

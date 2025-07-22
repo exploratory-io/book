@@ -7,7 +7,7 @@ Using the topic model method on the text in the "<%= text_column %>" column, we 
 
 Topic modeling is an analytical method that discovers several "topics," also known as themes, from text (document) data. For details on how topic modeling classifies documents, please refer to [this note](https://exploratory.io/note/exploratory/fXu6heu5).
 
-# Relationship between Topics and Words
+# Topic & Word Relationships
 
 ## Important Words
 
@@ -23,7 +23,7 @@ This is the data for the probability that each word is included in each topic, w
 
 {{word_topic_probabilities}}
 
-# Relationship between Topics and Documents
+# Topic & Document Relationships
 
 The original text (documents) are colored to show which topic they are most strongly related to. Important words for classifying each topic are highlighted in the respective topic's color.
 

@@ -7,7 +7,7 @@ Principal Component Analysis (PCA) was performed on the following variables to r
 * <%= variable %>
 <% }); %>
 
-# Relationship between Principal Components and Variables
+# Principal Component & Variable Relationships
 
 The table below shows the loadings of each principal component for each variable.
 

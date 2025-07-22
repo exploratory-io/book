@@ -6,7 +6,7 @@ Factor analysis was conducted based on the following variables to identify <%= f
   - <%= variable.name %>
 <% }); %>
 
-# Relationship Between Factors and Variables
+# Factor & Variable Relationships
 
 The following table shows the factor loadings of each factor for each variable.
 
@@ -29,7 +29,7 @@ The following radar chart visualizes the factor loadings of each variable by fac
 
 Each axis represents each variable, and the values represent the absolute values of factor loadings. If the line for each factor extends outward at a particular variable, it can be interpreted as having a strong relationship with that variable.
 
-# Relationships Between Variables
+# Variable Relationships
 
 The following chart, called a "biplot," visualizes the relationships between all variables on a plane represented by Factor 1 and Factor 2.
 
@@ -52,7 +52,7 @@ Therefore, it is generally recommended that the optimal number of factors is up 
 
 <% if (has_category) { %>
 
-# Relationship Between Factors and Categories
+# Factor & Category Relationships
 
 The following visualizes the relationship between '<%= category %>' selected as a category and the factors using a radar chart.
 
@@ -62,7 +62,7 @@ This chart visualizes the average factor scores for each factor by category. Thi
 
 <% } %>
 
-# Supplementary Information
+# Appendix
 
 ## Significance
 

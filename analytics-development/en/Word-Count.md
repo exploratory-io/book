@@ -3,7 +3,7 @@ const template = `
 
 We performed word count analysis on the <%= text_column %> column.
 
-Word count divides sentences into "words" and aggregates (quantifies) the frequency of each word, allowing you to understand patterns and characteristics within the data.
+Word count divides sentences into "words" and aggregates (quantifies) the frequency of each word, allowing you to grasp patterns and characteristics within the data.
 
 # Frequent Words
 
@@ -25,6 +25,15 @@ We visualized the occurrence counts of word combinations that are used together 
 
 {{word_pairs_bar_chart:1}}
 
+<% if (has_category) { %>
+# Group & Word Relationships
+
+The following chart visualizes the proportion of occurrence frequency for each word by group. You can compare frequently used words in each group.
+
+{{word_category_ratio_chart}}
+
+<% } %>
+
 # Co-occurrence Network
 
 We visualized the relationships between words that are frequently used together using a network diagram. Words are displayed as nodes (points), and words that frequently appear together are connected by lines.
@@ -37,18 +46,14 @@ We visualized the relationships between words that are frequently used together 
 * Circle size: Determined by the "occurrence frequency" of words. Higher frequency results in larger circles, while lower frequency results in smaller circles.
 * Line thickness: Word combinations that are frequently used together are represented by thicker lines.
 
-<% if (has_category) { %>
-# Relationship Between Groups and Words
+# Data
 
-The following chart visualizes the proportion of occurrence frequency for each word by group. You can compare frequently used words in each group.
+The following data adds group IDs to each data based on the co-occurrence network information above.
 
-{{word_category_ratio_chart}}
-
-<% } %>
+{{table_full}}
 
 
-
-# Additional Information
+# Appendix
 
 ## Words - Count
 
@@ -77,14 +82,6 @@ The following table allows you to check the words contained in each document (or
 {{word_data_table}}
 {end_lazy_show_hide}
 
-## Data (Full)
-
-English version:
-The following table shows the group assignment for each document (original text) and the frequently occurring words within each group.
-{start_lazy_show_hide}
-### Table
-{{table_full}}
-{end_lazy_show_hide}
 
 ## Next Steps
 

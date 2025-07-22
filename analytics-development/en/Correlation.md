@@ -97,7 +97,7 @@ Correlation coefficients, P-values, etc. for all variable combinations are liste
   * The larger the absolute value of the t-value, the smaller the P-value becomes.
 {end_show_hide}
 
-# Supplementary Information
+# Appendix
 
 ## Next Steps
 

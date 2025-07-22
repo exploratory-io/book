@@ -74,7 +74,7 @@ Important Notes:
 * For categorical (Character, Factor) explanatory variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
 <% } %>
 
-# Variable Coefficients (Odds Ratios) and Significance
+# Coefficient & Significance
 
 Coefficients (odds ratios), P-values for determining their significance, and confidence intervals are listed for each variable.
 
@@ -295,7 +295,7 @@ The following chart shows the ROC curve that evaluates the model's classificatio
 
 {{roc_curve}}
 
-# Supplementary Information
+# Appendix
 
 ## Next Steps
 

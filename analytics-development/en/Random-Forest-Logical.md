@@ -2,7 +2,7 @@ const template = `
 
 A Random Forest model to predict <%= target %> has been created based on the selected explanatory variables.
 
-# Relationship between Variables
+# Variable Relationships
 
 <% if (predictorColumns.length > 1) { %>
 ## Explanatory Variable Importance
@@ -165,7 +165,7 @@ This model predicted a probability (a value between 0 and 1) of <%= target %> fo
 * The vertical dotted line indicates the currently set probability threshold for classifying as TRUE or FALSE. The default is 50% (0.5), but this can be changed in [Settings](//analytics/settings/true_false_criteria).
 * This distribution allows for visual confirmation of the model's classification performance and adjustment of the optimal TRUE/FALSE threshold.
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

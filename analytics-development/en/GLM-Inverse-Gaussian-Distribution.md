@@ -30,7 +30,7 @@ This model does not show signs of [multicollinearity](https://exploratory.io/not
 <% } %>
 <% } %>
 
-# Relationships Between Variables
+# Variable Relationships
 
 <% if (predictorColumns.length > 1) { %>
 ## Variable Importance
@@ -72,7 +72,7 @@ Notes:
 * For categorical (Character, Factor) predictor variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed in [Settings](//analytics/settings/max_categories_for_factor).
 <% } %>
 
-# Variable Coefficients and Significance
+# Coefficient & Significance
 
 The coefficients (slopes), p-values for determining significance, and confidence intervals are listed for each variable.
 
@@ -222,7 +222,7 @@ The following table shows the results of predictions made on both training and t
 {{data}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 

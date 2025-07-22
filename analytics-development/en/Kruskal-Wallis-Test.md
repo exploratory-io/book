@@ -204,7 +204,7 @@ The following visualizes the confidence intervals for means of each group using 
 {{mean}}
 {end_lazy_show_hide}
 
-# Additional Information
+# Appendix
 
 ## Next Steps
 
