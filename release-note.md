@@ -1,5 +1,61 @@
 # Release Note
 
+## 13.5
+
+Released on 7/28/2025.
+
+### Enhancements
+
+* Data Source: Now you can selectively re-import chosen data sources.
+* Data Source: Now you can drag and drop xlsm files for import.
+
+
+* Data Wrangling: Filter: Now you can filter by first and last day of the month ago.
+
+
+* Chart: Supported parameters in custom calculations.
+* Chart: Now it includes Grand total value when exporting data in summarize table and pivot table.
+
+
+* Note: Supported the Save button on the Note Editor.
+
+
+* Publish: Now you can see the last published date when hovering over the Published Button.
+
+
+* General: Supported 2FA/MFA authentication.
+
+
+### Bug Fixes
+
+* Data Source: S3: Fixed an error "Error in z[["Owner"]][["ID"]] : subscript out of bounds" when importing data.
+* Data Source: MongoDB: Column data types were different from Desktop after scheduled data refreshed.
+* Data Wrangling: Predict with Analytics Model: The Analytics Model LOV sort order was not alphanumeric.
+
+
+* Data Wrangling: Predict with Analytics Model: The Analytics Model LOV sort order was not alphanumeric.
+* Data Wrangling: Summary / Table View: Could not clear text that equals any POSIXct value on row filters.
+
+
+* Chart: Filter behavior was different between Chart View and Table View when there are NAs.
+* Chart: Date range parameters did not work after switching to use a specific date instead of a parameter.
+
+
+* Analytics: Linear Regression failed with extract_from_date function error when column type was changed from Date to Numeric.
+* Analytics: Word Count: AI Summary examples were either repeated or missing.
+* Analytics: Word Count: Downloaded chart images showed wrong charts.
+
+
+* Note: Colored text was automatically recognized as hyperlink under certain conditions.
+
+
+* Dashboard: Error in gsub("__EXP__NA__", "\"\"", csv_content) : input string 1 is invalid" was shown when exporting chart data to CSV.
+* Dashboard: Parameter: Server error occurred in the browser when the 'Save Selected Value' was unchecked.
+
+
+* Publish: The original URL was not preserved when publishing a dashboard failed with Storage Quota Exceeded Error.
+
+
 ## 13.4
 
 Released on 7/8/2025.
