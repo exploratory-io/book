@@ -20,6 +20,9 @@ Released on 7/28/2025.
 * Note: Supported the Save button on the Note Editor.
 
 
+* Dashboard: On System Settings Dialog, You can now configure the End of Line character used when exporting chart data to CSV.
+
+
 * Publish: Now you can see the last published date when hovering over the Published Button.
 
 
