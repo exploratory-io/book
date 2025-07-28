@@ -34,7 +34,7 @@ Released on 7/28/2025.
 
 
 * Data Wrangling: Predict with Analytics Model: The Analytics Model LOV sort order was not alphanumeric.
-* Data Wrangling: Summary / Table View: Could not clear text that equals any POSIXct value on row filters.
+* Data Wrangling: Summary / Table View: Could not clear text when the "Is In" operation is selected for POSIXct type on row filters.
 
 
 * Chart: Filter behavior was different between Chart View and Table View when there are NAs.
