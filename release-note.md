@@ -30,14 +30,12 @@ Released on 7/28/2025.
 
 * Data Source: S3: Fixed an error "Error in z[["Owner"]][["ID"]] : subscript out of bounds" when importing data.
 * Data Source: MongoDB: Column data types were different from Desktop after scheduled data refreshed on server.
-* Data Wrangling: Predict with Analytics Model: The Analytics Model LOV sort order was not alphanumeric.
 
 
 * Data Wrangling: Predict with Analytics Model: The Analytics Model LOV sort order was not alphanumeric.
 * Data Wrangling: Summary / Table View: Could not clear text when the "Is In" operation is selected for POSIXct type on row filters.
 
 
-* Chart: Filter behavior was different between Chart View and Table View when there are NAs.
 * Chart: Date range parameters did not work after switching to use a specific date instead of a parameter.
 
 
