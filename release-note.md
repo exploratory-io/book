@@ -27,7 +27,7 @@ Released on 7/28/2025.
 
 
 * Note: Supported the Save button on the Note Editor.
-* NOte/Dashboard: You can now configure the End of Line character when exporting chart data to CSV in System Settings dialog.
+* Note/Dashboard: You can now configure the End of Line character when exporting chart data to CSV in System Settings dialog.
 
 
 * Security: Supported 2FA/MFA authentication.
