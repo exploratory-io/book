@@ -1,5 +1,14 @@
 # Release Note
 
+## 13.6
+
+Released on 7/28/2025.
+
+### Bug Fixes
+
+* Analytics: Prophet/ARIMA: Clicking the Apply button in the Property Dialog did not respond.
+
+
 ## 13.5
 
 Released on 7/28/2025.
