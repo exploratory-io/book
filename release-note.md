@@ -2,7 +2,7 @@
 
 ## 13.6
 
-Released on 7/28/2025.
+Released on 7/29/2025.
 
 ### Bug Fixes
 
