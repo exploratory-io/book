@@ -15,25 +15,22 @@ Released on 7/28/2025.
 
 ### Enhancements
 
-* Data Source: Now you can selectively re-import chosen data sources.
-* Data Source: Now you can drag and drop xlsm files for import.
+* Data Source: When you have multiple data sources for your data frame now you can select which data sources you want to re-import from.
+* Data Source: Now you can drag and drop '.xlsm' files for import.
 
 
 * Data Wrangling: Filter: Now you can filter by first and last day of the month ago.
 
 
 * Chart: Supported parameters in custom calculations.
-* Chart: Now it includes Grand total value when exporting data in summarize table and pivot table.
+* Chart: Now it includes Grand total values when exporting data for Summarize Table and Pivot Table.
 
 
 * Note: Supported the Save button on the Note Editor.
-* NOte/Dashboard: On System Settings Dialog, You can now configure the End of Line character used when exporting chart data to CSV.
+* NOte/Dashboard: You can now configure the End of Line character when exporting chart data to CSV in System Settings dialog.
 
 
-* Publish: Now you can see the last published date when hovering over the Published Button.
-
-
-* General: Supported 2FA/MFA authentication.
+* Security: Supported 2FA/MFA authentication.
 
 
 ### Bug Fixes
@@ -42,15 +39,14 @@ Released on 7/28/2025.
 * Data Source: MongoDB: Column data types were different from Desktop after scheduled data refreshed on server.
 
 
-* Data Wrangling: Predict with Analytics Model: The Analytics Model LOV sort order was not alphanumeric.
 * Data Wrangling: Summary / Table View: Could not clear text when the "Is In" operation is selected for POSIXct type on row filters.
 
 
 * Chart: Date range parameters did not work after switching to use a specific date instead of a parameter.
 
 
-* Analytics: Linear Regression failed with extract_from_date function error when column type was changed from Date to Numeric.
-* Analytics: Word Count: AI Summary examples were either repeated or missing.
+* Analytics: Linear Regression failed with extract_from_date function error when the predictor column data type was changed from Date to Numeric.
+* Analytics: Word Count: Example sentences were either repeated or missing in AI Summary dialog.
 * Analytics: Word Count: Downloaded chart images showed wrong charts.
 
 
@@ -61,7 +57,7 @@ Released on 7/28/2025.
 * Dashboard: Parameter: Server error occurred in the browser when the 'Save Selected Value' was unchecked.
 
 
-* Publish: The original URL was not preserved when publishing a dashboard failed with Storage Quota Exceeded Error.
+* Publish: The original URL was not preserved when publishing a dashboard failed with 'Storage Quota Exceeded' error.
 
 
 ## 13.4
@@ -117,7 +113,7 @@ Released on 07/05/2025.
 * Summary View/Table View: Displaying all columns did not work properly when there were more than 1,000 columns.
 
 
-* Chart: CSV download option was not available in the published chart. 
+* Chart: CSV download option was not available in the published chart.
 
 
 * Analytics: There was an extra space to the left of the X-axis when the confidence intervals option was checked in the Survival Curve.
@@ -141,7 +137,7 @@ Released on 06/28/2025.
 ### Enhancements
 
 * Data Source: Google BigQuery: Now you can retrieve the data using the service account in addition to the OAuth.
-* Analytics: AI Summary: Now you can copy the AI summary content by the "Copy Text" button. 
+* Analytics: AI Summary: Now you can copy the AI summary content by the "Copy Text" button.
 
 
 ### Bug fixes
@@ -152,7 +148,7 @@ Released on 06/28/2025.
 * Data Wrangling: It should show a user-friendly message when selecting non-EDF files.
 
 
-* Chart: Pie/Doughnut Chart: Opacity setting didn't work if you picked a custom color with an opacity. 
+* Chart: Pie/Doughnut Chart: Opacity setting didn't work if you picked a custom color with an opacity.
 
 
 * Analytics: Analytics Guide view scrolled back to the top when moving between windows.
@@ -205,7 +201,7 @@ Released on 06/11/2025.
 
 ### Enhancements
 
-* Chart: Table: Now it supports the "Apply All Columns" option in the color formatting. 
+* Chart: Table: Now it supports the "Apply All Columns" option in the color formatting.
 
 
 * Analytics: Enhanced user interface with improved navigation and visual design.
