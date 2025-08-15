@@ -1,5 +1,51 @@
 # Release Note
 
+## 13.2
+
+Released on 8/15/2025
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-13.2.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-13.2.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+    * Please make sure to run the **"11. Upgrade MongoDB version if you are upgrading to Exploratory Server v13"** step if you are upgrading from the version 12 or below.
+
+
+### Enhancements
+
+* Content: Now you can export the Pivot/Summarize Table data with totals and subtotals.
+* Content: Now you can set the content language from the Setting dialog. 
+
+
+* Interactive: Chart rendering performance improvement on Dashboard. Now chart queries don't block the chart rendering. 
+* Interactive: Now you can set the number of max concurrent accesses per content in the config file.
+
+
+### Bug Fixes
+
+* AI: AI features was not enabled on the desktop even though it was enabled on the server.
+
+
+* Content: Content language detection didn't work as expected if you edited the content title from the browser. 
+
+
+* Interactive: Extend the default timeout of the interactive session to 30 minutes to prevent the timeout. You can configure the timeout from the Admin UI.
+* Interactive: Filter dialog didn't close in the interactive chart mode.
+* Interactive: Initializing the interactive session didn't improve even if you set the step cache. 
+* Interactive: Initializing the interactive session failed with "Error in c(, ) : argument 1 is empty" error.
+* Interactive: Improved performance for starting an interactive mode.
+
+
+* Parameter: Child parameter values were not updated when the parent parameter enabled cache.
+* Parameter: Date: Support First/Last Day of This month and Last N / Previous N series.
+* Parameter: On Dashboard, chart changes by the parameter change were reset if you resized the browser.
+
+
+* Schedule: Schedules didn't honor the email address change and sent notification email to the old email address. 
+
+
+
+
 ## 13.1
 
 Released on 7/5/2025
