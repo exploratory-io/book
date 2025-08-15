@@ -7,7 +7,7 @@ Released on 08/15/2025.
 
 ### Bug Fixes
 
-* Chart: Pivot: Value Format Dialog: The color list of values was not fully shown.
+* Chart: Pivot: The color selection dropdown was not fully shown in the Value Format Configuration dialog. 
 
 
 
