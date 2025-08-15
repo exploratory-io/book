@@ -21,6 +21,12 @@ Released on 8/15/2025
 * Interactive: Now you can set the number of max concurrent accesses per content in the config file.
 
 
+* Parameter: Now you can set the default state for the "Update Other Parameter Values" setting.
+* 
+
+* Admin: Now you can export the list of users from the Admin UI.
+
+
 ### Bug Fixes
 
 * AI: AI features was not enabled on the desktop even though it was enabled on the server.
@@ -29,10 +35,10 @@ Released on 8/15/2025
 * Content: Content language detection didn't work as expected if you edited the content title from the browser. 
 
 
-* Interactive: Extend the default timeout of the interactive session to 30 minutes to prevent the timeout. You can configure the timeout from the Admin UI.
+* Interactive: Extend the default timeout of the interactive mode to 30 minutes to prevent the timeout. You can configure the timeout from the Admin UI.
 * Interactive: Filter dialog didn't close in the interactive chart mode.
-* Interactive: Initializing the interactive session didn't improve even if you set the step cache. 
-* Interactive: Initializing the interactive session failed with "Error in c(, ) : argument 1 is empty" error.
+* Interactive: Initializing the interactive mode didn't improve even if you set the step cache. 
+* Interactive: Initializing the interactive mode failed with "Error in c(, ) : argument 1 is empty" error.
 * Interactive: Improved performance for starting an interactive mode.
 
 
