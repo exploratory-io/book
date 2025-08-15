@@ -21,13 +21,13 @@ Released on 08/14/2025.
 
 * Data Wrangling: "Data Re-import all" did not work when the targets were branches and/or branch of branches.
 * Data Wrangling: AI Prompt: Socket closed when the data frame had a group by column and contained many groups, causing sample data size to exceed limits.
-* Data Wrangling: Filter: An error occured when specifying a parameter for "The last day of N months from today" in the filter.
+* Data Wrangling: Filter: An error occurred when specifying a parameter for "The last day of N months from today" in the filter.
 * Data Wrangling: Updated text/label for "1st/last day of N Month Ago" options for better clarity.
 
 
 * Chart: Bar: Y1 and Y2 axis scales did not sync at zero when setting the axis range to Y2 axis.
 * Chart: Heatmap: Color palette was not applied correctly for values of 0 if you set a custom color on the same chart before.
-* Chart: Line: Legend color appeared inverted from the configured color setting if you set the "Botom to Top" direction in the Color dialog on the same chart before.
+* Chart: Line: Legend color appeared inverted from the configured color setting if you set the "Bottom to Top" direction in the Color dialog on the same chart before.
 * Chart: If you used the "Line + Circle" marker type and clicked the chart figure to show the detail, circle markers disappeared.
 
 
