@@ -1,5 +1,46 @@
 # Release Note
 
+
+## 13.7
+
+Released on 08/14/2025.
+
+### Enhancements
+
+* Chart: Pivot/Summarize Table: Now you can override the default total aggregation function.
+* Chart: Pivot/Summarize Table: Now you can decide to show/hide total at each column level.
+
+
+* Dashboard: Chart rendering performance improvement. Now chart queries do not block the chart rendering. 
+
+
+### Bug Fixes
+
+* Data Source: Close button did not respond after canceling an import in an R script data source on Windows.
+
+
+* Data Wrangling: "Data Re-import all" did not work when the targets were branches and/or branch of branches.
+* Data Wrangling: AI Prompt: Socket closed when the data frame had a group by column and contained many groups, causing sample data size to exceed limits.
+* Data Wrangling: Filter: An error occured when specifying a parameter for "The last day of N months from today" in the filter.
+* Data Wrangling: Updated text/label for "1st/last day of N Month Ago" options for better clarity.
+
+
+* Chart: Bar: Y1 and Y2 axis scales did not sync at zero when setting the axis range to Y2 axis.
+* Chart: Heatmap: Color palette was not applied correctly for values of 0 if you set a custom color on the same chart before.
+* Chart: Line: Legend color appeared inverted from the configured color setting if you set the "Botom to Top" direction in the Color dialog on the same chart before.
+* Chart: If you used the "Line + Circle" marker type and clicked the chart figure to show the detail, circle markers disappeared.
+
+
+* Analytics: Time Series Clustering errored with "model = purrr::map(...)".
+
+
+* Dashboard: After copying a dashboard from one project to another, it added '_1' to the copied dashboard name.
+* Dashboard: Switching to column layout showed a blank screen right after creating a new dashboard.
+
+
+
+
+
 ## 13.6
 
 Released on 7/29/2025.
