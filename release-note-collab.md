@@ -23,7 +23,7 @@ Released on 8/15/2025
 
 * Parameter: Now you can set the default state for the "Update Other Parameter Values" setting.
 
-* Parameter: Date: Added support for "First/Last Day of This Month" and "Last N/Previous N" options.
+* Parameter: Date: Added support for "First/Last Day of This Month" and "Last N/Previous N" options as a default value.
 
 
 * Admin: Now you can export user lists as a CSV file from the Admin UI.
