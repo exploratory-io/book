@@ -1,0 +1,351 @@
+{
+  "sales": {
+    "desc": "営業の現状をより正しく理解するための重要な指標を紹介しています。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Sales%20Kpi%22&language=ja",
+    "insights": [
+      {
+       "title": "売上（新規顧客・既存顧客）",
+       "desc": "売上を増やすことを考えるときに重要な新規顧客からの売上、既存顧客からの売上を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/ckd6WjJ2"
+      },
+      {
+       "title": "顧客あたりの売上",
+       "desc": "売上を増やすことを考えるときに重要な顧客あたり売上を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/rhE0dEM4"
+      },
+      {
+       "title": "顧客獲得コスト",
+       "desc": "新規顧客の獲得にかかったコストである、顧客獲得コストを紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/zYM4viN9"
+      },
+      {
+       "title": "利益、利益率",
+       "desc": "あらゆる営業活動の原資となる利益/利益率を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/Pwi8vCB6"
+      },
+      {
+      "title": "F2転換率",
+      "desc": "新たに顧客になった方のうち、2回目の購買に至った顧客の割合の指標であるF2転換率を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/F2-DCG0Siw5"
+      },
+      {
+      "title": "リード数",
+      "desc": "顧客が購買に至る際の最初の段階である見込み顧客（リード）数を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/Euf4Job0"
+      },
+      {
+       "title": "フォロー完了数 / フォロー完了率",
+       "desc": "見込み顧客は、営業による様々なフォローアップを経て顧客になります。そこで、顧客のフォローアップに関する指標を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/cyB1LQf3"
+      },
+      {
+       "title": "商談数 / 商談化率",
+       "desc": "フォローアップした顧客において、どの程度の商談が発生したかの指標を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/FdG0fJk1"
+      },
+      {
+       "title": "受注数 / 受注率",
+       "desc": "発生した商談において、どの程度の受注が発生したかの指標を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/kfj1sTz8"
+      }
+    ]
+  },
+  "marketing": {
+    "desc": "マーケティング活動の現状をより正しく理解するための重要な指標を紹介しています。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%22Marketing%20Kpi%22&language=ja",
+    "insights": [
+      {
+       "title": "ブランド認知率",
+       "desc": "顧客の購買サイクルの「認知」フェーズの重要指標のブランド認知率を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/gCb6EEV7"
+      },
+      {
+       "title": "トライアル数",
+       "desc": "顧客の購買サイクルの「比較検討・評価」フェーズの重要指標のトライアル数を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/aLK7ytp2"
+      },
+      {
+       "title": "コンバージョン率",
+       "desc": "顧客の購買サイクルの「トライアル」フェーズの重要指標のコンバージョン率を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/wKY6AoO3"
+      },
+      {
+       "title": "紹介数",
+       "desc": "顧客の購買サイクルの「ロイヤルティ」フェーズの重要指標の紹介数を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/nBV9wBb7"
+      },
+      {
+      "title": "NPS",
+      "desc": "顧客の購買サイクルの「ロイヤルティ」フェーズの重要指標のNPSを紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/NPS-Xcf9XNW7"
+      },
+      {
+      "title": "クリック率（CTR）",
+      "desc": "検索型のオンライン広告の説明文やテキストが、顧客にとって魅力的になっているかを測ることに役立つクリック率を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/CTR-Tta9gSW5"
+      },
+      {
+      "title": "クリック単価（CPC）",
+      "desc": "検索型のオンライン広告の費用を理解するときに最も重要なクリック単価を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/CPC-ncX1Mjq0"
+      },
+      {
+      "title": "コンバージョン率",
+      "desc": "オンライン広告をクリックした顧客のうち、商品やサービスに至った顧客の割合であるコンバ-ジョン率を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/DhX2uwP4"
+      },
+      {
+      "title": "直帰率",
+      "desc": "クリックされたオンライン広告のパフォーマンスを測る直帰率を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/GxU9MnZ7"
+      },
+      {
+      "title": "広告費用対効果（ROAS）",
+      "desc": "広告に費やした費用に対してどの程度の成果を得られたかを測る効率の指標である、広告費用対効果（ROAS）を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/ROAS-VoP5PPS1"
+      },
+      {
+      "title": "コンバージョン単価（CPA）",
+      "desc": "売上をあげることが目的ではない、オンライン広告などのパフォーマンスを測る指標のコンバージョン単価を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/CPA-oAK9yIV2"
+      },
+      {
+      "title": "利益",
+      "desc": "ビジネスやマーケティング活動の原資となる利益を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/ZMq8NOA9"
+      },
+      {
+      "title": "正味現在価値（NPV）",
+      "desc": "未来のお金の価値を、現在のお金の価値に変換した指標の正味現在価値（NPV）を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/FCa9UnM4"
+      },
+      {
+      "title": "内部収益率（IRR）",
+      "desc": "利益を現在の価値に換算したうえで、検討している施策から、どの程度のリターンが得られるのか指標である内部収益率（IRR）を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/IRR-jua7Yva3"
+      },
+      {
+      "title": "投資回収期間（ペイバック・ピリオド）",
+      "desc": "投資した費用を、回収した利益が上回るタイミングの指標の投資回収期間（ペイバック・ピリオド）を紹介いたします。",
+      "url": "https://exploratory.io/note/exploratory/lEg1eIO0"
+      }
+    ]
+  },
+  "hr": {
+    "desc": "人事の活動の現状をより正しく理解するための重要な指標を紹介しています。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag:%22Hr%20Kpi%22",
+    "insights": [
+      {
+       "title": "平均勤続年数",
+       "desc": "自社の従業員が平均して、どの程度の期間働いているかを測る平均勤続年数を紹介しています。",
+       "url": "https://exploratory.io/note/exploratory/CsF2xbW2"
+      },
+      {
+       "title": "退職（生存）率",
+       "desc": "従業員の退職率を正しく認識するための指標の生存率を紹介しています。",
+       "url": "https://exploratory.io/note/exploratory/ERO9ILV7"
+      },
+      {
+       "title": "休職率",
+       "desc": "休職している従業員の割合である休職率を紹介しています。",
+       "url": "https://exploratory.io/note/exploratory/zRR1CXz4"
+      },
+      {
+       "title": "eNPS",
+       "desc": "従業員の満足度やロイヤルティを測るための指標のeNPSを紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/eNPS-IdQ4kwY2"
+      },
+      {
+       "title": "応募者数",
+       "desc": "採用プロセスの初期段階の指標の応募者数を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/Ioi1rlo1"
+      },
+      {
+       "title": "選考完了率",
+       "desc": "選考が完了している応募者の割合の指標である選考完了率を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/ORN5BQU7"
+      },
+      {
+       "title": "選考通過率",
+       "desc": "選考が完了している応募者のうち、選考通過した応募者の割合の指標である選考通過率を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/jZC4JXJ8"
+      },
+      {
+       "title": "内定承諾率",
+       "desc": "内定を出した応募者のうち、内定を受諾した応募者の割合の指標である内定受諾率を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/ISZ5lxG1"
+      },
+      {
+       "title": "採用期間",
+       "desc": "募集ポジションの充足にかかった期間の指標である採用期間を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/EKU7Aex2"
+      },
+      {
+       "title": "採用コスト",
+       "desc": "募集ポジションの充足にかかった費用の指標である採用コストを紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/zLa4xYU6"
+      }
+    ]
+  },
+  "cs": {
+    "desc": "カスタマーサクセスの活動の現状をより正しく理解するための重要な指標を紹介しています。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag:%22Customer%20Success%20Kpi%22",
+    "insights": [
+      {
+       "title": "リテンション率",
+       "desc": "既存顧客を維持できている割合のリテンション率を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/ggD1znP3"
+      },
+      {
+       "title": "オンボーディング率",
+       "desc": "既存顧客のうち、オンボーディングが成功、あるいは完了した割合のオンボーディング率を紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/jbE0ppE2"
+      },
+      {
+       "title": "タイム･トゥ・バリュー",
+       "desc": "顧客が自社のサービスの価値を見出すまでにかかった平均的な時間であるタイム・トゥ・バリューを紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/QPT3SlK2"
+      },
+      {
+       "title": "ヘルススコア",
+       "desc": "顧客が自社の製品やサービスをどれだけ効果的に活用しているかを評価するヘルススコアを紹介いたします。",
+       "url": "https://exploratory.io/note/exploratory/yVQ1IME9"
+      }
+    ]
+  },
+  "saas": {
+    "desc": "SaaS/サブスクリプション型ビジネスの現状をより正しく理解するために重要な様々な指標を紹介しています。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
+    "insights": [
+      {
+       "title": "SaaS 最重要 KPI まとめ",
+       "desc": "SaaSの最重要KPIをまとめて紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MTR9sOX7"
+      },
+      {
+       "title": "MRR (月間定期収益)",
+       "desc": "収益に関わる指標のMRR（月間定期収益）、ARR（年間定期収益）、ニューMRRを紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-VsH1YRd4"
+      },
+      {
+       "title": "コンバージョン",
+       "desc": "顧客の獲得（コンバージョン）に関する指標を紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-EVl6fdu8"
+      },
+      {
+       "title": "チャーン & リテンション",
+       "desc": "顧客の解約やサービスの継続に関わる指標のカスタマー・チャーン率、カスタマーリテンション率、ネット・ニューMRRを紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-ZKH4AHE1"
+      },
+      {
+      "title": "エクスパンション & コントラクション",
+      "desc": "プランのアップグレードやダウングレードに関わる指標のエクスパンションMRR、コントラクションMRR、ネット・ニューMRRを紹介します。",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-KCi2PxE5"
+      },
+      {
+       "title": "ネット・レベニュー・リテンション",
+       "desc": "収益の効率性を計る指標のネット・レベニュー・リテンション率を紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-FTq5PKM8"
+      },
+      {
+       "title": "CLV（顧客生涯価値）",
+       "desc": "1人の顧客から得られる通算の収益の指標であるCLV（顧客生涯価値）を紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-CLV-Dza5CPE2"
+      },
+      {
+       "title": "MRRリテンション率",
+       "desc": "収益をどれだけ維持できているかの指標であるMRRリテンション率を紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-FtE3cit3"
+      },
+      {
+       "title": "MRRエクスパンション率",
+       "desc": "プランのアップグレードに関する指標であるMRRエクスパンション率を紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-xBr0Yir4"
+      },
+      {
+       "title": "ネットMRRチャーン率",
+       "desc": "既存顧客からの収益をどの程度失っているかを表した指標のMRRチャーン率を紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-fVZ6PAO5"
+      },
+      {
+       "title": "クイックレシオ",
+       "desc": "収益の成長の効率性を測る指標であるクイックレシオを紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Vmh7NrA0"
+      },
+      {
+       "title": "ARPU（1ユーザーあたりの平均収益）",
+       "desc": "1ユーザーあたりの平均収益であるARPUを紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-ARPU-1-JoQ1zrm8"
+      },
+      {
+       "title": "ペイバック・ピリオド",
+       "desc": "顧客獲得にかけた費用をどの程度の期間で回収できるかの指標であるペイバック・ピリオドを紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-flv9Azj5"
+      },
+      {
+       "title": "ユニットエコノミクス",
+       "desc": "SaaSでよく使われる指標のユニットエコノミクスをご紹介します。",
+       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-rPf0SFz9"
+      }
+    ]
+  },
+  "seminar": {
+    "desc": "ビジネスのKPIや重要指標に関するセミナーの情報をまとめて紹介いたします。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3A%E6%8C%87%E6%A8%99%20tag%3A%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&language=ja",
+    "insights": [
+      {
+       "title": "人事のビジネス指標 Part 1",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/141-Part-1-GqE6beE0"
+      },
+      {
+       "title": "カスタマーサクセスが見ておくべき5つの指標",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/135-5-NwS9hqS9Kb"
+      },
+      {
+       "title": "営業活動のパフォーマンスを上げるために見ておくべきファネル指標の作り方",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/133-wqe7Pai1QX"
+      },
+      {
+       "title": "営業の最重要指標-トップライン指標",
+       "desc": "",
+       "url": "https://exploratory.io/note/exploratory/131-bXG5qQo7Ra"
+      }
+    ]
+  } ,
+  "blog": {
+    "desc": "ビジネスのKPIや重要指標に関する事例をブログ形式で紹介しています。",
+    "moreButtonText": "もっと見る",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3AKpi%20tag%3A%22blog%22&language=ja",
+    "insights": [
+      {
+       "title": "データとアナリティクスの活用が進むアメリカのアート業界から学べる４つのポイント",
+       "desc": "",
+       "url": "https://exploratory.io/note/kanaugust/Akr2uvO2sZ"
+      },
+      {
+       "title": "SaaSにとって最も重要なのに誰も見てないKPI：プロダクト・エンゲージメント",
+       "desc": "",
+       "url": "https://exploratory.io/note/kanaugust/SaaS-KPI-DBR6Qex2ba"
+      },
+      {
+       "title": "SaaSで営業やってる人は絶対に見ておくべき18のセールスKPI",
+       "desc": "",
+       "url": "https://exploratory.io/note/kanaugust/SaaS-18-KPI-eQt5SIz5em"
+      },
+      {
+       "title": "Facebookから学ぶ、北極星となる指標を見つけてビジネスをドライブする方法",
+       "desc": "",
+       "url": "https://exploratory.io/note/BWz1Bar4JF/Facebook-RYC6aGE2XV"
+      }
+    ]
+  }
+}
