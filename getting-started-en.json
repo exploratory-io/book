@@ -7,12 +7,27 @@
         {
          "title": "Basics",
          "desc": "Learn the most essential features of Exploratory!",
-         "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Basic-kOZ9UYC0"
+         "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Part-1-Basics-kap5ivt3"
        },
        {
-        "title": "Data Wrangling",
-        "desc": "Learn how to clean and transform data with Exploratory!",
+        "title": "Chart",
+        "desc": "Learn how to create charts to vidualize data in Exploratory!",
+        "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Part-2-Visualization-VBg1Lrc7"
+       },
+       {
+        "title": "Data Wrangling with AI Prompt",
+        "desc": "Learn how to clean and transform data with natural language & AI in Exploratory!",
+        "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Part-3-Data-Wrangling-AI-pbr2NZV5"
+       },
+       {
+        "title": "Data Wrangling with UI",
+        "desc": "Learn how to clean and transform data with UI dialogs in Exploratory!",
         "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Data-Wrangling-ELT1Ihl5BD"
+      },
+      {
+       "title": "Analytics",
+       "desc": "Learn how to use Analytics features with Correlation, Prediction Models, & Text Analysis in Exploratory!",
+       "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Part-4-Analytics-sXB6TUE4"
       },
       {
        "title": "Dashboard",
@@ -23,6 +38,11 @@
       "title": "Note",
       "desc": "Learn how to create a Note with Exploratory!",
       "url": "https://exploratory.io/note/exploratory/How-to-Use-Note-Editor-in-Exploratory-for-Beginners-ZCT0EgH7IL"
+     },
+     {
+      "title": "Parameter",
+      "desc": "Learn how to create Parameters with Exploratory!",
+      "url": "https://exploratory.io/note/exploratory/How-to-Use-Exploratory-Part-7-Parameter-UTb9McI9"
      }
       ]
     }
