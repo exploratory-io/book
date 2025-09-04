@@ -1,6 +1,17 @@
 # Release Note
 
 
+## 13.8
+
+Released on 08/15/2025.
+
+### Bug Fixes
+
+* Chart: Pivot: The color selection dropdown was not fully shown in the Value Format Configuration dialog. 
+
+
+
+
 ## 13.7
 
 Released on 08/14/2025.

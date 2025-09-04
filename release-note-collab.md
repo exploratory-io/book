@@ -22,9 +22,11 @@ Released on 8/15/2025
 
 
 * Parameter: Now you can set the default state for the "Update Other Parameter Values" setting.
-* 
 
-* Admin: Now you can export the list of users from the Admin UI.
+* Parameter: Date: Added support for "First/Last Day of This Month" and "Last N/Previous N" options as a default value.
+
+
+* Admin: Now you can export user lists as a CSV file from the Admin UI.
 
 
 ### Bug Fixes
@@ -37,14 +39,13 @@ Released on 8/15/2025
 
 * Interactive: Extend the default timeout of the interactive mode to 30 minutes to prevent the timeout. You can configure the timeout from the Admin UI.
 * Interactive: Filter dialog didn't close in the interactive chart mode.
-* Interactive: Initializing the interactive mode didn't improve even if you set the step cache. 
+* Interactive: Step cache were ignored during interactive mode initialization, resulting in degraded performance.
 * Interactive: Initializing the interactive mode failed with "Error in c(, ) : argument 1 is empty" error.
-* Interactive: Improved performance for starting an interactive mode.
+* Interactive: Reduced interactive mode startup time by optimizing data file loading operations.
 
 
 * Parameter: Child parameter values were not updated when the parent parameter enabled cache.
-* Parameter: Date: Support First/Last Day of This month and Last N / Previous N series.
-* Parameter: On Dashboard, chart changes by the parameter change were reset if you resized the browser.
+* Parameter: Upadted parameter values and chart content were not preserved when the window was resized and the responsive layout adjusted.
 
 
 * Schedule: Schedules didn't honor the email address change and sent notification email to the old email address. 
