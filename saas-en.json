@@ -129,5 +129,17 @@
       "url": "https://exploratory.io/note/kanaugust/Seminar-103-How-to-Create-Cohort-Analysis-Chart-to-Monitor-Churn-Retention-MZz3lYp2GK"
     }
   ] 
-  } 
+  },
+"How-to": {
+  "desc": "These are step-by-step guides explaining data analysis methods for SaaS and subscription-based businesses.",
+  "moreButtonText": "Watch More",
+  "moreButtnUrl": "https://exploratory.io/tag/?sort=&language=en&q=tag%3ASaas%20tag%3A%22how-to%22&searchType=keyword",
+  "insights": [
+    {
+      "title": "Calculating Customer Lifetime Value (CLTV) in 3 Ways",
+      "desc": "This note explains three methods to calculate Customer Lifetime Value (CLV) for subscription businesses.",
+      "url": "https://exploratory.io/note/exploratory/Calculating-Customer-Lifetime-Value-CLTV-in-3-Ways-Guts-Churn-Rates-Survival-Rates-hgO4CVU6"
+    }
+  ]
+  }
 }
