@@ -72,7 +72,7 @@
     ]
   },
 "workshop": {
-  "desc": "These are short hands-on sessions where you can quickly learn how to create KPIs and analyze subscription business data.",
+  "desc": "These are short hands-on tutorials where you can quickly learn how to create KPIs and analyze subscription business data.",
   "moreButtonText": "Watch More",
   "moreButtnUrl": "https://exploratory.io/tag/?sort=&language=en&q=tag%3ASaas%20tag%3A%22trial%20tour%22&searchType=keyword",
   "insights": [
