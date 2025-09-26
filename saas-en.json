@@ -5,11 +5,6 @@
     "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=en",
     "insights": [
       {
-        "title": "SaaS Key KPI Overview",
-        "desc": "This note explains the most important KPIs for SaaS businesses.",
-        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MTR9sOX7"
-      },
-      {
         "title": "MRR (Monthly Recurring Revenue)",
         "desc": "This note explains revenue-related metrics such as MRR (Monthly Recurring Revenue), ARR (Annual Recurring Revenue), and New MRR.",
         "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-kKJ3uAr3"
@@ -76,7 +71,7 @@
       }
     ]
   },
-"Trial Tour": {
+"workshop": {
   "desc": "These are short hands-on sessions where you can quickly learn how to create KPIs and analyze subscription business data.",
   "moreButtonText": "Watch More",
   "moreButtnUrl": "https://exploratory.io/tag/?sort=&language=en&q=tag%3ASaas%20tag%3A%22trial%20tour%22&searchType=keyword",
@@ -103,7 +98,7 @@
     }
   ]
 },
-"Seminar": {
+"online-seminar": {
   "desc": "These are recordings of online seminars where you can learn analysis methods and practical insights for SaaS and subscription-based businesses.",
   "moreButtonText": "Watch More",
   "moreButtnUrl": "https://exploratory.io/tag/?sort=&language=en&q=tag%3ASaas%20tag%3A%22online%20Seminar%22&searchType=keyword",
