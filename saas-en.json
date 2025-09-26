@@ -1,81 +1,81 @@
 {
   "kpi": {
-  "desc": "This section introduces key metrics that help you better understand the state of SaaS and subscription-based businesses.",
-  "moreButtonText": "Watch More",
-  "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=en",
-  "insights": [
-    {
-      "title": "SaaS Key KPI Overview",
-      "desc": "This note explains the most important KPIs for SaaS businesses.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MTR9sOX7"
-    },
-    {
-      "title": "MRR (Monthly Recurring Revenue)",
-      "desc": "This note explains revenue-related metrics such as MRR (Monthly Recurring Revenue), ARR (Annual Recurring Revenue), and New MRR.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-VsH1YRd4"
-    },
-    {
-      "title": "Conversion",
-      "desc": "This note explains KPIs related to customer acquisition (conversion).",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-EVl6fdu8"
-    },
-    {
-      "title": "Churn & Retention",
-      "desc": "This note explains metrics related to customer churn and retention, including churn rate, customer retention rate, and Net New MRR.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-ZKH4AHE1"
-    },
-    {
-      "title": "Expansion & Contraction",
-      "desc": "This note explains metrics related to revenue growth and reduction through customer upgrades and downgrades, such as Expansion MRR, Contraction MRR, and Net New MRR.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-KCi2PxE5"
-    },
-    {
-      "title": "Net Revenue Retention",
-      "desc": "This note explains efficiency-focused revenue metrics, in particular the Net Revenue Retention (NRR) rate.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-FTq5PKM8"
-    },
-    {
-      "title": "CLV (Customer Lifetime Value)",
-      "desc": "This note explains CLV (Customer Lifetime Value), a metric that represents the total revenue generated from a single customer.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-CLV-Dza5CPE2"
-    },
-    {
-      "title": "MRR Retention Rate",
-      "desc": "This note explains the MRR Retention Rate, which measures how much recurring revenue is being retained over time.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-FtE3cit3"
-    },
-    {
-      "title": "MRR Expansion Rate",
-      "desc": "This note explains the MRR Expansion Rate, a metric related to revenue growth from customer upgrades.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-xBr0Yir4"
-    },
-    {
-      "title": "Net MRR Churn Rate",
-      "desc": "This note explains the Net MRR Churn Rate, which measures the extent of revenue loss from existing customers.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-fVZ6PAO5"
-    },
-    {
-      "title": "Quick Ratio",
-      "desc": "This note explains the Quick Ratio, a metric used to measure the efficiency of revenue growth.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Vmh7NrA0"
-    },
-    {
-      "title": "ARPU (Average Revenue Per User)",
-      "desc": "This note explains ARPU (Average Revenue Per User), a metric that represents the average revenue per customer.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-ARPU-1-JoQ1zrm8"
-    },
-    {
-      "title": "Payback Period",
-      "desc": "This note explains the Payback Period, a metric that shows how long it takes to recover customer acquisition costs.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-flv9Azj5"
-    },
-    {
-      "title": "Unit Economics",
-      "desc": "This note explains Unit Economics, a commonly used metric framework in SaaS businesses.",
-      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-rPf0SFz9"
-    }
-  ]
-},
+    "desc": "This section introduces key metrics that help you better understand the state of SaaS and subscription-based businesses.",
+    "moreButtonText": "Watch More",
+    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=en",
+    "insights": [
+      {
+        "title": "SaaS Key KPI Overview",
+        "desc": "This note explains the most important KPIs for SaaS businesses.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MTR9sOX7"
+      },
+      {
+        "title": "MRR (Monthly Recurring Revenue)",
+        "desc": "This note explains revenue-related metrics such as MRR (Monthly Recurring Revenue), ARR (Annual Recurring Revenue), and New MRR.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-kKJ3uAr3"
+      },
+      {
+        "title": "Conversion",
+        "desc": "This note explains KPIs related to customer acquisition (conversion).",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Conversion-diH5DSS7"
+      },
+      {
+        "title": "Churn & Retention",
+        "desc": "This note explains metrics related to customer churn and retention, including churn rate, customer retention rate, and Net New MRR.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Churn-Retention-nev4DCc1"
+      },
+      {
+        "title": "Expansion & Contraction",
+        "desc": "This note explains metrics related to revenue growth and reduction through customer upgrades and downgrades, such as Expansion MRR, Contraction MRR, and Net New MRR.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Expansion-Contraction-dAh4KNc9"
+      },
+      {
+        "title": "Net Revenue Retention",
+        "desc": "This note explains efficiency-focused revenue metrics, in particular the Net Revenue Retention (NRR) rate.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Net-Revenue-Retention-Rate-dyG4pcr5"
+      },
+      {
+        "title": "CLV (Customer Lifetime Value)",
+        "desc": "This note explains CLV (Customer Lifetime Value), a metric that represents the total revenue generated from a single customer.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-CLV-Customer-Lifetime-Value-moy5euO0"
+      },
+      {
+        "title": "MRR Retention Rate",
+        "desc": "This note explains the MRR Retention Rate, which measures how much recurring revenue is being retained over time.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-Retention-Rate-fZP3Ysr4"
+      },
+      {
+        "title": "MRR Expansion Rate",
+        "desc": "This note explains the MRR Expansion Rate, a metric related to revenue growth from customer upgrades.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-Expansion-Rate-AxZ8Lcn9"
+      },
+      {
+        "title": "Net MRR Churn Rate",
+        "desc": "This note explains the Net MRR Churn Rate, which measures the extent of revenue loss from existing customers.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Net-MRR-Churn-Rate-JfT2uvy6"
+      },
+      {
+        "title": "Quick Ratio",
+        "desc": "This note explains the Quick Ratio, a metric used to measure the efficiency of revenue growth.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Quick-Ratio-jJD6iFs2"
+      },
+      {
+        "title": "ARPU (Average Revenue Per User)",
+        "desc": "This note explains ARPU (Average Revenue Per User), a metric that represents the average revenue per customer.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-ARPU-rFl4ULh9"
+      },
+      {
+        "title": "Payback Period",
+        "desc": "This note explains the Payback Period, a metric that shows how long it takes to recover customer acquisition costs.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Payback-Period-AWO9aLE6"
+      },
+      {
+        "title": "Unit Economics",
+        "desc": "This note explains Unit Economics, a commonly used metric framework in SaaS businesses.",
+        "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Unit-Economics-KlM7Yqw4"
+      }
+    ]
+  },
 "Trial Tour": {
   "desc": "These are short hands-on sessions where you can quickly learn how to create KPIs and analyze subscription business data.",
   "moreButtonText": "Watch More",
