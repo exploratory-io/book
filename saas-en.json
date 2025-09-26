@@ -1,81 +1,81 @@
 {
   "kpi": {
-    "desc": "SaaS/サブスクリプション型ビジネスの現状をより正しく理解するために重要な様々なMetricsを紹介しています。",
-    "moreButtonText": "Show More",
-    "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=ja",
-    "insights": [
-      {
-       "title": "SaaS 最重要 KPI まとめ",
-       "desc": "SaaSの最重要KPIをまとめてご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MTR9sOX7"
-      },
-      {
-       "title": "#1 MRR (月間定期収益)",
-       "desc": "収益に関わる指標のMRR（月間定期収益）、ARR（年間定期収益）、ニューMRRをご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-VsH1YRd4"
-      },
-      {
-       "title": "#2 コンバージョン",
-       "desc": "顧客の獲得（コンバージョン）に関する指標をご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-EVl6fdu8"
-      },
-      {
-       "title": "#3 チャーン & リテンション",
-       "desc": "顧客の解約やサービスの継続に関わる指標のカスタマー・チャーン率、カスタマーリテンション率、ネット・ニューMRRをご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-ZKH4AHE1"
-      },
-      {
-      "title": "#4 エクスパンション & コントラクション",
-      "desc": "プランのアップグレードやダウングレードに関わる指標のエクスパンションMRR、コントラクションMRR、ネット・ニューMRRをご紹介します。",
+  "desc": "This section introduces key metrics that help you better understand the state of SaaS and subscription-based businesses.",
+  "moreButtonText": "Show More",
+  "moreButtnUrl": "https://exploratory.io/tag/?q=tag%3ASaas-kpi&language=en",
+  "insights": [
+    {
+      "title": "SaaS Key KPI Overview",
+      "desc": "This note explains the most important KPIs for SaaS businesses.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MTR9sOX7"
+    },
+    {
+      "title": "MRR (Monthly Recurring Revenue)",
+      "desc": "This note explains revenue-related metrics such as MRR (Monthly Recurring Revenue), ARR (Annual Recurring Revenue), and New MRR.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-VsH1YRd4"
+    },
+    {
+      "title": "Conversion",
+      "desc": "This note explains KPIs related to customer acquisition (conversion).",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-EVl6fdu8"
+    },
+    {
+      "title": "Churn & Retention",
+      "desc": "This note explains metrics related to customer churn and retention, including churn rate, customer retention rate, and Net New MRR.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-ZKH4AHE1"
+    },
+    {
+      "title": "Expansion & Contraction",
+      "desc": "This note explains metrics related to revenue growth and reduction through customer upgrades and downgrades, such as Expansion MRR, Contraction MRR, and Net New MRR.",
       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-KCi2PxE5"
-      },
-      {
-       "title": "#5 ネット・レベニュー・リテンション",
-       "desc": "収益の効率性を計る指標のネット・レベニュー・リテンション率をご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-FTq5PKM8"
-      },
-      {
-       "title": "#6 CLV（顧客生涯価値）",
-       "desc": "1人の顧客から得られる通算の収益の指標であるCLV（顧客生涯価値）をご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-CLV-Dza5CPE2"
-      },
-      {
-       "title": "#7 MRRリテンション率",
-       "desc": "収益をどれだけ維持できているかの指標であるMRRリテンション率をご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-FtE3cit3"
-      },
-      {
-       "title": "#8 MRRエクスパンション率",
-       "desc": "プランのアップグレードに関する指標であるMRRエクスパンション率をご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-xBr0Yir4"
-      },
-      {
-       "title": "#9 ネットMRRチャーン率",
-       "desc": "既存顧客からの収益をどの程度失っているかを表した指標のMRRチャーン率をご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-fVZ6PAO5"
-      },
-      {
-       "title": "#10 クイックレシオ",
-       "desc": "収益の成長の効率性を測る指標であるクイックレシオをご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Vmh7NrA0"
-      },
-      {
-       "title": "#11 ARPU（1ユーザーあたりの平均収益）",
-       "desc": "1ユーザーあたりの平均収益であるARPUをご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-ARPU-1-JoQ1zrm8"
-      },
-      {
-       "title": "#12 ペイバック・ピリオド",
-       "desc": "顧客獲得にかけた費用をどの程度の期間で回収できるかの指標であるペイバック・ピリオドを紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-flv9Azj5"
-      },
-      {
-       "title": "#13 ユニットエコノミクス",
-       "desc": "SaaSでよく使われる指標のユニットエコノミクスをご紹介します。",
-       "url": "https://exploratory.io/note/exploratory/SaaS-KPI-rPf0SFz9"
-      }
-    ]
-  },
+    },
+    {
+      "title": "Net Revenue Retention",
+      "desc": "This note explains efficiency-focused revenue metrics, in particular the Net Revenue Retention (NRR) rate.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-FTq5PKM8"
+    },
+    {
+      "title": "CLV (Customer Lifetime Value)",
+      "desc": "This note explains CLV (Customer Lifetime Value), a metric that represents the total revenue generated from a single customer.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-CLV-Dza5CPE2"
+    },
+    {
+      "title": "MRR Retention Rate",
+      "desc": "This note explains the MRR Retention Rate, which measures how much recurring revenue is being retained over time.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-FtE3cit3"
+    },
+    {
+      "title": "MRR Expansion Rate",
+      "desc": "This note explains the MRR Expansion Rate, a metric related to revenue growth from customer upgrades.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-xBr0Yir4"
+    },
+    {
+      "title": "Net MRR Churn Rate",
+      "desc": "This note explains the Net MRR Churn Rate, which measures the extent of revenue loss from existing customers.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-MRR-fVZ6PAO5"
+    },
+    {
+      "title": "Quick Ratio",
+      "desc": "This note explains the Quick Ratio, a metric used to measure the efficiency of revenue growth.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-Vmh7NrA0"
+    },
+    {
+      "title": "ARPU (Average Revenue Per User)",
+      "desc": "This note explains ARPU (Average Revenue Per User), a metric that represents the average revenue per customer.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-ARPU-1-JoQ1zrm8"
+    },
+    {
+      "title": "Payback Period",
+      "desc": "This note explains the Payback Period, a metric that shows how long it takes to recover customer acquisition costs.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-flv9Azj5"
+    },
+    {
+      "title": "Unit Economics",
+      "desc": "This note explains Unit Economics, a commonly used metric framework in SaaS businesses.",
+      "url": "https://exploratory.io/note/exploratory/SaaS-KPI-rPf0SFz9"
+    }
+  ]
+},
   "workshop": {
     "desc": "KPIの作り方や分析手法を実際に手を動かしながら学べる、1時間単位のオンラインワークショップの録画とスライドです。",
     "moreButtonText": "もっと見る",
