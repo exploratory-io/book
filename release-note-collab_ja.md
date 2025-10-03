@@ -1,5 +1,20 @@
 # リリースノート
 
+## 13.3
+
+2025年10月4日リリース
+
+
+### ダウンロード
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-13.3.1.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-13.3.1.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
+    * Exploratory Serverのバージョン13以前からアップグレードする場合は、**「11. Exploratory サーバー をv13にアップグレードする場合 (MongoDBのバージョンのアップグレード」** のステップを忘れずに実施してください。
+
+### 修正された問題
+
+
+
 ## 13.2
 
 2025年8月15日リリース
