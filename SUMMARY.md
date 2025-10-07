@@ -52,7 +52,9 @@
     * [Export](project/export.md)   
     * [Search](project/search.md)   
 
-
+* [AI](ai.md)
+   * [AI Data Source](ai-data-source.md)
+   * [AI Data Source Auto Setup](ai-data-source-auto-setup.md)
 * [Data Import](data_import.md)
    * [File Data](file-data.md)
       * [CSV / Delimited File](import/csv.md)
