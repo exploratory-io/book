@@ -12,7 +12,7 @@ Released on 10/4/2025
 
 ### Bug Fixes
 
-
+* Privacy: Added 'noindex' tag for the content that are shared with URL so that they won't show up in the search result (e.g. Google) even when the URL was linked from public web pages. 
 
 
 ## 13.2
@@ -29,10 +29,10 @@ Released on 8/15/2025
 ### Enhancements
 
 * Content: Now you can export the Pivot/Summarize Table data with totals and subtotals.
-* Content: Now you can set the content language from the Setting dialog. 
+* Content: Now you can set the content language from the Setting dialog.
 
 
-* Interactive: Chart rendering performance improvement on Dashboard. Now chart queries don't block the chart rendering. 
+* Interactive: Chart rendering performance improvement on Dashboard. Now chart queries don't block the chart rendering.
 * Interactive: Now you can set the number of max concurrent accesses per content in the config file.
 
 
@@ -49,7 +49,7 @@ Released on 8/15/2025
 * AI: AI features was not enabled on the desktop even though it was enabled on the server.
 
 
-* Content: Content language detection didn't work as expected if you edited the content title from the browser. 
+* Content: Content language detection didn't work as expected if you edited the content title from the browser.
 
 
 * Interactive: Extend the default timeout of the interactive mode to 30 minutes to prevent the timeout. You can configure the timeout from the Admin UI.
@@ -63,7 +63,7 @@ Released on 8/15/2025
 * Parameter: Upadted parameter values and chart content were not preserved when the window was resized and the responsive layout adjusted.
 
 
-* Schedule: Schedules didn't honor the email address change and sent notification email to the old email address. 
+* Schedule: Schedules didn't honor the email address change and sent notification email to the old email address.
 
 
 
@@ -128,16 +128,16 @@ Released on 6/28/2025
 * Content: Images were not displaying in published dashboards created from Windows environment.
 * Content: Dashboard: Math formulas were not applied after adding or updating math formulas in text panels online.
 * Content: The default language setting of the search page now follows the language of the UI.
-* Content: Pivot Table: Table: The download dropdown only had 1 item. You should be able to download the chart data by clicking the download icon. 
+* Content: Pivot Table: Table: The download dropdown only had 1 item. You should be able to download the chart data by clicking the download icon.
 
 
-* Parameter: Interactive mode failed to initialize if a cache data file was missing even if the cache data could be recovered by running steps. 
-* Parameter: Starting the interactive mode and updating parameter took long time. 
+* Parameter: Interactive mode failed to initialize if a cache data file was missing even if the cache data could be recovered by running steps.
+* Parameter: Starting the interactive mode and updating parameter took long time.
 
 
 * Schedule: Scheduling against Oracle database didn't work.
 * Schedule: Updated error notification email message for OAuth token expiration.
-* Schedule: Scheduling a dashboard didn't update the thumbnail properly if the dashboard contained a lot of charts. 
+* Schedule: Scheduling a dashboard didn't update the thumbnail properly if the dashboard contained a lot of charts.
 
 
 * General: Logging in after publishing content while logged out would open account settings page instead of the published content.
@@ -191,7 +191,7 @@ Released on 2/8/2025
 
 
 * Parameter: Parameter button was not shown for contents if the underlying data source was not supported for refresh.
-  
+
 
 
 ## 11.3
@@ -282,9 +282,9 @@ Released on 9/4/2024
 
 ### Enhancements
 
-* Content: Now it shows comments on published charts and analytics. 
+* Content: Now it shows comments on published charts and analytics.
 * Content: Now you can enable/disable the Parameter for the URL Link.
-* Content: Now you can protect the URL Link by password. 
+* Content: Now you can protect the URL Link by password.
 
 
 * Dashboard: Added a support for showing a description.
@@ -301,12 +301,12 @@ Released on 9/4/2024
 
 ### Bug Fixes
 
-* Content: Delete button should show all the time in the Version History dialog. 
+* Content: Delete button should show all the time in the Version History dialog.
 
 * Admin: IP filter for the Admin UI should support IP range expression.
 
 
-* Dashboard: Cascading Parameter did not work for "Select All" for empty case. 
+* Dashboard: Cascading Parameter did not work for "Select All" for empty case.
 * Dashboard: Parameter pane was shown by default even if the dashboards did not include parameter.
 
 
@@ -325,14 +325,14 @@ Released on 7/26/2024
 
 ### Enhancements
 
-* The charts created inside R Code Block are now updated by running the parameter or scheduling the content (Dashboards, Notes, etc.). 
+* The charts created inside R Code Block are now updated by running the parameter or scheduling the content (Dashboards, Notes, etc.).
 
 
 * Parameter: Support "Run with Data Import" option inside the Parameter pane. Now the Viewer users can not only updating the data with Parameter, but also re-importing the latest data from the data sources.
 * Parameter: Added text input field validation when the 'Allow Empty' option was not set and no values were entered.
 
 
-* Interactive: Now you can enable/disable the Show Detail Data feature from the Setting dialog. 
+* Interactive: Now you can enable/disable the Show Detail Data feature from the Setting dialog.
 
 
 * Schedule: Now you can set Hour and Minute when you set up the schedule.
