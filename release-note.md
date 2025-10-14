@@ -1,5 +1,20 @@
 # Release Note
 
+## 13.9
+
+Released on 10/14/2025.
+
+### Bug Fixes
+
+* AI: AI Prompt failed to return results when using "Calculate NPS" as the prompt text.
+
+
+* Data Source: Oracle: Selecting Oracle as a data source displayed a blank screen.
+
+
+* Data Wrangling: The "startsWith is not a function" error occurred when deleting data frames created from merged Data Files.
+
+
 
 ## 13.8
 
