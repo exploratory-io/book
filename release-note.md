@@ -1,5 +1,15 @@
 # Release Note
 
+
+## 13.10
+
+Released on 10/15/2025.
+
+### Bug Fixes
+
+* Data Wrangling: "Data Re-import all" did not work when the targets data frames are selected.
+
+
 ## 13.9
 
 Released on 10/14/2025.
