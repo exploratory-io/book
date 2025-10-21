@@ -52,9 +52,9 @@
     * [Export](project/export.md)   
     * [Search](project/search.md)   
 
-* [AI](ai.md)
-   * [AI Data Source](ai-data-source.md)
-   * [AI Data Source Auto Setup](ai-data-source-auto-setup.md)
+* [AI](ai/ai.md)
+   * [AI Prompt Function](ai/ai-prompt-function-en.md)
+   * [AI Prompt Function (日本語)](ai/ai-prompt-function-ja.md)
 * [Data Import](data_import.md)
    * [File Data](file-data.md)
       * [CSV / Delimited File](import/csv.md)
