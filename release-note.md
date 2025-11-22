@@ -5,8 +5,8 @@ Released on 11/22/2025.
 
 ### Enhancements
 
-* AI: Added the AI Function feature for data wrangling and custom user templates within a step.
-* AI: Note: Added the Note AI feature and custom user templates within a note.
+* AI: Added the AI Function feature for data wrangling and supported AI Prompt Templates within a step.
+* AI: Added the AI Editor feature for note and supported AI Prompt Templates within a note.
 
 
 * Data Source: Google Sheet: Now you can override column data types during import.
@@ -50,7 +50,6 @@ Released on 11/22/2025.
 
 * Data Wrangling: Replace Values with Conditions: Existing condition settings showed as "Creating...".
 * Data Wrangling: Filter: The "Specify multiple values" option under "Starts with this character" did not work.
-* Data Wrangling: The Data Import Dialog should be shown from any selected step as long as the data frame has associated external data frames.
 * Data Wrangling: The Data Re-import Dialog should remember the previous selection.
 * Data Wrangling: After deleting a data frame, the data frame sometimes remained.
 * Data Wrangling: On the Data Re-import Dialog, data frames referenced from a branch data frame were not listed.
