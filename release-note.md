@@ -9,7 +9,7 @@ Released on 11/22/2025.
 * AI: Added the AI Editor feature for note and supported AI Prompt Templates within a note.
 
 
-* Data Source: Google Sheet: Now you can override column data types during import.
+* Data Source: Google Sheets: Now you can override column data types during import.
   
 
 
@@ -20,15 +20,15 @@ Released on 11/22/2025.
 * Chart: Added the copy text feature in the hover popup in the Table/Pivot Table.
 * Chart: Supported date formats where there are no zeros in the tens place, such as 8/1.
 * Chart: Added button style menu for Filter and Reference Line.
-* Chart: Number: Difference / Ratio: Now you can change the display name for sub metric.
-* Chart: Number: Now you can change or flip text color for sub metric.
+* Chart: Number: Difference / Ratio: Now you can change the display name for sub-metric.
+* Chart: Number: Now you can change or flip text color for sub-metric.
 * Chart: Pivot Table / Summarize Table: Added window calculation support for Total and Subtotal.
 * Chart: Pivot: Show detail: Now you can show only the rows whose logical values are TRUE when 'Number of TRUE' is selected.
-* Chart: Reference Line: Cumsum/Cumsum Ratio: Y2 axis option is now available in all chart types.
-* Chart: Reference Line: Added grouping option support for Cumsum/Cumsum Ratio and Moving Average reference line types.
+* Chart: Reference Line: Cumulative Sum/Cumulative Sum Ratio: Y2 axis option is now available in all chart types.
+* Chart: Reference Line: Added grouping option support for Cumulative Sum/Cumulative Sum Ratio and Moving Average reference line types.
 
 
-* Analytics: t-test: Changed the menu name for assuming equal variances.
+* Analytics: t-Test: Changed the menu name for assuming equal variances.
 
 
 
@@ -36,7 +36,7 @@ Released on 11/22/2025.
   
 
 
-* Publish: Server: Added "AI Function" and "AI Editor" search type.
+* Publish: Server: Added "AI Function" and "AI Editor" search types.
 
 
 ### Bug Fixes
@@ -50,7 +50,7 @@ Released on 11/22/2025.
 
 * Data Wrangling: Replace Values with Conditions: Existing condition settings showed as "Creating...".
 * Data Wrangling: Filter: The "Specify multiple values" option under "Starts with this character" did not work.
-* Data Wrangling: The Data Re-import Dialog should remember the previous selection.
+* Data Wrangling: The Data Re-import Dialog did not remember the previous selection.
 * Data Wrangling: After deleting a data frame, the data frame sometimes remained.
 * Data Wrangling: On the Data Re-import Dialog, data frames referenced from a branch data frame were not listed.
 * Data Wrangling: Filter: The condition expression became empty when specifying multiple values under "Starts with this character".
@@ -77,7 +77,7 @@ Released on 11/22/2025.
 * Analytics: Decision Tree: The node with a value 0.5 did not show the gray background.
 * Analytics: If a parameter was changed in the analytics view, the process did not finish and the busy indicator kept showing.
 * Analytics: Legend got garbled when selecting a target column whose value included Japanese in Decision Tree.
-* Analytics: Supervised Learning Models: When a date column was used as predictor, Day of month was incorrectly treated as Category.
+* Analytics: Supervised Learning Models: When a date column was used as predictor, Day of the month was incorrectly treated as Category.
 * Analytics: t-Test (Aggregated Data): Data Distribution tab loading did not finish.
 * Analytics: Word Count: When changing settings for the co-occurrence network size, results from a different data frame were displayed.
 
