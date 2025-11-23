@@ -42,11 +42,14 @@ Released on 11/22/2025.
 ### Bug Fixes
 
 * AI Prompt: The AI Wrangling Button did not show up when offline.
+* AI Prompt: The spin icon kept appearing.
+
 
 * Data Source: Database: Windows: The SQL being written disappeared when maximizing the window.
 * Data Source: The file selection button did not show up after clicking the Import button.
 * Data Source: Google Analytics: "Cannot read properties of undefined (reading 'some')" error occurred.
 * Data Source: Import: The Cancel button in the import dialog was unresponsive after clicking the Cancel button of the SQL Query.
+
 
 * Data Wrangling: Replace Values with Conditions: Existing condition settings showed as "Creating...".
 * Data Wrangling: Filter: The "Specify multiple values" option under "Starts with this character" did not work.
@@ -55,6 +58,7 @@ Released on 11/22/2025.
 * Data Wrangling: On the Data Re-import Dialog, data frames referenced from a branch data frame were not listed.
 * Data Wrangling: Filter: The condition expression became empty when specifying multiple values under "Starts with this character".
 * Data Wrangling: When importing an EDF file, an unnecessary "imp" suffix was set to the data frame name.
+
 
 * Chart: Charts should always be pinned.
 * Chart: Pivot Table / Summarize Table: If you applied the "% of" Window calculation and added additional totals, it did not work properly.
@@ -92,20 +96,14 @@ Released on 11/22/2025.
 * Dashboard: The whole page refreshed even if "Apply for All Pages" was unchecked and the parameter was updated on a page without R code blocks.
 * Dashboard: When a dashboard was published without execution, the thumbnail showed the previous execution's last viewed page instead of the current page.
 * Dashboard: When a duplicated dashboard was published without execution, the first page's first object became the thumbnail.
+* Dashboard: Server: Parameters: When assigning separate parameters to multiple word clouds and specifying the same value for all of them, the word clouds produced different output results.
 
 
 * Publish: When publishing data, an error "paste(csv_content...) result would exceed 2^31-1 bytes" occurred.
 
 
-* Project: Duplicate: An error occurred when duplicating a project with invalid dataframe metadata.
-
-
-* Server: Heatmap: Color palette was inconsistent between desktop and server after publishing.
-* Server: Dashboard: Parameter: Same parameter values produced different results.
-
-
-* General: Ask AI: The spin icon kept appearing.
-* General: Project window did not close with a single click.
+* Project: An error occurred when duplicating a project with invalid dataframe metadata.
+* Project: Project window did not close with a single click.
 
 
 ## 13.10
