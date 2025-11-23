@@ -1,7 +1,7 @@
 # Release Note
 
 ## 14.0
-Released on 11/22/2025.
+Released on 11/23/2025.
 
 ### Enhancements
 
