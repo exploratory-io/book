@@ -1,7 +1,7 @@
 const template = `
 # Analysis Results
 
-We classified <%= group %> into <%= number_of_clusters %> clusters (groups) using time series data of <%= value %>.
+We classified <%= group %> into <%= number_of_clusters %> clusters (groups) using time series data of <%= value %>. The current number of clusters is <%= cluster_number %>, but it can be changed from [Settings](//analytics/settings).
 
 {{summary_chart}}
 
@@ -77,13 +77,13 @@ The following table shows aggregated data of <%= value %> for each <%= group %> 
 
 # Optimal Number of Clusters
 
-The Elbow method can be used as one visual technique for choosing the "optimal number of clusters (K)" in K-Means clustering.
+The Elbow method can be used as one visual technique for choosing the "optimal number of clusters (K)" in time series clustering.
 
 Mechanism:
 
-1. Perform K-Means clustering while varying the number of clusters from 1 to 10.
-2. Calculate the sum of squared differences within clusters (within-cluster sum of squares) for each number of clusters.
-3. Visualize the number of clusters on the horizontal axis and the within-cluster variability on the vertical axis using a line chart.
+1. Perform time series clustering while varying the number of clusters from 1 to 10.
+2. Calculate the within-cluster distance for each number of clusters.
+3. Visualize the number of clusters on the horizontal axis and the within-cluster distance on the vertical axis using a line chart.
 4. The "elbow" point, where the graph shape decreases sharply and then becomes gradual, is an indication of the optimal number of clusters.
 
 If not needed, this can be disabled from [Settings](//analytics/settings). The maximum number of clusters can also be changed.
@@ -92,15 +92,15 @@ For more details on the Elbow method, please refer to [this note](https://explor
 
 ## Elbow Curve
 
-The following chart visualizes the within-cluster sum of squares for each number of clusters using a line called the Elbow curve, based on the Elbow method.
+The following chart visualizes the within-cluster distance for each number of clusters using a line called the Elbow curve, based on the Elbow method.
 
 {{elbow}}
 
-When the number of clusters is small, the variability of data within clusters is large, so the variability decreases significantly as the number of clusters increases up to a certain point. However, after a certain point, the amount of decrease in variability gradually becomes smaller. This "boundary between sharp decrease and gradual change (Elbow)" serves as a guideline for the "optimal number of clusters". However, in reality, it is also important whether the characteristics of each cluster are easy to understand and useful after dividing into a certain number of clusters, so please use this only as a reference.
+When the number of clusters is small, the within-cluster distance is large, so the distance decreases significantly as the number of clusters increases up to a certain point. However, after a certain point, the amount of decrease in distance gradually becomes smaller. This "boundary between sharp decrease and gradual change (Elbow)" serves as a guideline for the "optimal number of clusters". However, in reality, it is also important whether the characteristics of each cluster are easy to understand and useful after dividing into a certain number of clusters, so please use this only as a reference.
 
-## Degree of Variability Reduction
+## Degree of Distance Reduction
 
-In the Elbow curve chart, it may not be visually clear where the "Elbow" is. In such cases, you can compare the numerical values of the degree of descent of the Elbow curve (the degree of reduction in the variability of data within clusters), and the point where the value becomes constant can be used as a guideline for the "optimal number of clusters".
+In the Elbow curve chart, it may not be visually clear where the "Elbow" is. In such cases, you can compare the numerical values of the degree of descent of the Elbow curve (the degree of reduction in the within-cluster distance), and the point where the value becomes constant can be used as a guideline for the "optimal number of clusters".
 
 {{elbow_diff}}
 

@@ -1,5 +1,110 @@
 # Release Note
 
+## 14.0
+Released on 11/23/2025.
+
+### Enhancements
+
+* AI: Added the AI Function feature for data wrangling and supported AI Prompt Templates within a step.
+* AI: Added the AI Editor feature for note and supported AI Prompt Templates within a note.
+
+
+* Data Source: Google Sheets: Now you can override column data types during import.
+  
+
+
+* Data Wrangling: Added the copy text feature in the hover popup.
+
+
+
+* Chart: Added the copy text feature in the hover popup in the Table/Pivot Table.
+* Chart: Supported date formats where there are no zeros in the tens place, such as 8/1.
+* Chart: Added button style menu for Filter and Reference Line.
+* Chart: Number: Difference / Ratio: Now you can change the display name for sub-metric.
+* Chart: Number: Now you can change or flip text color for sub-metric.
+* Chart: Pivot Table / Summarize Table: Added window calculation support for Total and Subtotal.
+* Chart: Pivot: Show detail: Now you can show only the rows whose logical values are TRUE when 'Number of TRUE' is selected.
+* Chart: Reference Line: Cumulative Sum/Cumulative Sum Ratio: Y2 axis option is now available in all chart types.
+* Chart: Reference Line: Added grouping option support for Cumulative Sum/Cumulative Sum Ratio and Moving Average reference line types.
+
+
+* Analytics: t-Test: Changed the menu name for assuming equal variances.
+
+
+
+* Dashboard: The map zoom level is now maintained when removing filter selection.
+  
+
+
+* Publish: Server: Added "AI Function" and "AI Editor" search types.
+
+
+### Bug Fixes
+
+* AI Prompt: The AI Wrangling Button did not show up when offline.
+* AI Prompt: The spin icon kept appearing.
+
+
+* Data Source: Database: Windows: The SQL being written disappeared when maximizing the window.
+* Data Source: The file selection button did not show up after clicking the Import button.
+* Data Source: Google Analytics: "Cannot read properties of undefined (reading 'some')" error occurred.
+* Data Source: Import: The Cancel button in the import dialog was unresponsive after clicking the Cancel button of the SQL Query.
+
+
+* Data Wrangling: Replace Values with Conditions: Existing condition settings showed as "Creating...".
+* Data Wrangling: Filter: The "Specify multiple values" option under "Starts with this character" did not work.
+* Data Wrangling: The Data Re-import Dialog did not remember the previous selection.
+* Data Wrangling: After deleting a data frame, the data frame sometimes remained.
+* Data Wrangling: On the Data Re-import Dialog, data frames referenced from a branch data frame were not listed.
+* Data Wrangling: Filter: The condition expression became empty when specifying multiple values under "Starts with this character".
+* Data Wrangling: When importing an EDF file, an unnecessary "imp" suffix was set to the data frame name.
+
+
+* Chart: Charts should always be pinned.
+* Chart: Pivot Table / Summarize Table: If you applied the "% of" Window calculation and added additional totals, it did not work properly.
+* Chart: Pivot Table: Color Format: Custom calculated values used an incorrect color palette.
+* Chart: Pivot Table: An error occurred when using Limit Value.
+* Chart: Pivot Table: When a value was cut off, information was sometimes displayed in a popup and sometimes not.
+* Chart: Pivot Table: When multiple values were selected, "Show subtotal only" or "Show total only" for the last value did not work properly.
+* Chart: Reference Line: Calculation for Cumulative Sum/Cumulative Sum Ratio and Moving Average was incorrect on Scatter and Bubble charts.
+* Chart: Reference Line: An error occurred when adding Moving Avg on Y, Specific Value on X and Specific Value on Y.
+* Chart: Reference Line: The second reference line label was not displayed in the legend even when "Show in Legend" was checked.
+* Chart: Reference Line: The Y-axis scale became incorrect when using a reference line with logical type data showing true ratio.
+* Chart: Reference Line: Y2 axis title and label overlapped and the label was truncated when a cumulative total percentage reference line was set.
+* Chart: Scatter plot: Reference lines were not displayed when a date column was assigned to the X axis.
+* Chart: Scatter: Show detail data was not displayed when Y-axis format was set to percentage.
+* Chart: Sorting did not work on the Boxplot with Color if you assigned the same column to X and Color.
+* Chart: Table: Summarize Table: Pivot Table: User palette returned grey color palette.
+
+
+* Analytics: Changed the number of decimal places displayed for P-values in Guided Analytics.
+* Analytics: Decision Tree: The node with a value 0.5 did not show the gray background.
+* Analytics: If a parameter was changed in the analytics view, the process did not finish and the busy indicator kept showing.
+* Analytics: Legend got garbled when selecting a target column whose value included Japanese in Decision Tree.
+* Analytics: Supervised Learning Models: When a date column was used as predictor, Day of the month was incorrectly treated as Category.
+* Analytics: t-Test (Aggregated Data): Data Distribution tab loading did not finish.
+* Analytics: Word Count: When changing settings for the co-occurrence network size, results from a different data frame were displayed.
+
+
+* Note: Full-size image display position was incorrect.
+* Note: When importing EDF to a project that had duplicated data frames, not all charts were imported.
+* Note: When importing an EDF file, an unnecessary '_1' was added.
+* Note: Word cloud chart showed as corrupted icon in edit mode but displayed correctly in preview.
+
+
+* Dashboard: A hover popup showed up in the thumbnail in the publish notification email.
+* Dashboard: The whole page refreshed even if "Apply for All Pages" was unchecked and the parameter was updated on a page without R code blocks.
+* Dashboard: When a dashboard was published without execution, the thumbnail showed the previous execution's last viewed page instead of the current page.
+* Dashboard: When a duplicated dashboard was published without execution, the first page's first object became the thumbnail.
+* Dashboard: Server: Parameters: When assigning separate parameters to multiple word clouds and specifying the same value for all of them, the word clouds produced different output results.
+
+
+* Publish: When publishing data, an error "paste(csv_content...) result would exceed 2^31-1 bytes" occurred.
+
+
+* Project: An error occurred when duplicating a project with invalid dataframe metadata.
+* Project: Project window did not close with a single click.
+
 
 ## 13.10
 
