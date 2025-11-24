@@ -1,16 +1,21 @@
 # Release Note
 
 ## 14.0
+
 Released on 11/23/2025.
+
+### New Features
+
+* AI: Added 'AI Function' so that users can create functions to analyze and transform data with Generative AI.
+* AI: Added 'AI Note Editor' that will generate analysis reports based on charts and comments.
+
+We've published [a blog post](https://blog.exploratory.io/exploratory-v14-a-new-era-of-ai-powered-data-analysis-04c974023395) to introduce these new features, please take a look for more details.
+
 
 ### Enhancements
 
-* AI: Added the AI Function feature for data wrangling and supported AI Prompt Templates within a step.
-* AI: Added the AI Editor feature for note and supported AI Prompt Templates within a note.
-
-
 * Data Source: Google Sheets: Now you can override column data types during import.
-  
+
 
 
 * Data Wrangling: Added the copy text feature in the hover popup.
@@ -31,19 +36,10 @@ Released on 11/23/2025.
 * Analytics: t-Test: Changed the menu name for assuming equal variances.
 
 
-
 * Dashboard: The map zoom level is now maintained when removing filter selection.
-  
-
-
-* Publish: Server: Added "AI Function" and "AI Editor" search types.
 
 
 ### Bug Fixes
-
-* AI Prompt: The AI Wrangling Button did not show up when offline.
-* AI Prompt: The spin icon kept appearing.
-
 
 * Data Source: Database: Windows: The SQL being written disappeared when maximizing the window.
 * Data Source: The file selection button did not show up after clicking the Import button.
@@ -89,17 +85,14 @@ Released on 11/23/2025.
 * Note: Full-size image display position was incorrect.
 * Note: When importing EDF to a project that had duplicated data frames, not all charts were imported.
 * Note: When importing an EDF file, an unnecessary '_1' was added.
-* Note: Word cloud chart showed as corrupted icon in edit mode but displayed correctly in preview.
 
 
-* Dashboard: A hover popup showed up in the thumbnail in the publish notification email.
-* Dashboard: The whole page refreshed even if "Apply for All Pages" was unchecked and the parameter was updated on a page without R code blocks.
+* Dashboard: The whole page refreshed even if "Apply for All Pages" was unchecked and the parameter was updated on a page.
 * Dashboard: When a dashboard was published without execution, the thumbnail showed the previous execution's last viewed page instead of the current page.
 * Dashboard: When a duplicated dashboard was published without execution, the first page's first object became the thumbnail.
-* Dashboard: Server: Parameters: When assigning separate parameters to multiple word clouds and specifying the same value for all of them, the word clouds produced different output results.
 
 
-* Publish: When publishing data, an error "paste(csv_content...) result would exceed 2^31-1 bytes" occurred.
+* Publish: When publishing data, an error "paste(csv_content...) result would exceed 2GB" occurred.
 
 
 * Project: An error occurred when duplicating a project with invalid dataframe metadata.
@@ -137,7 +130,7 @@ Released on 08/15/2025.
 
 ### Bug Fixes
 
-* Chart: Pivot: The color selection dropdown was not fully shown in the Value Format Configuration dialog. 
+* Chart: Pivot: The color selection dropdown was not fully shown in the Value Format Configuration dialog.
 
 
 
@@ -152,7 +145,7 @@ Released on 08/14/2025.
 * Chart: Pivot/Summarize Table: Now you can decide to show/hide total at each column level.
 
 
-* Dashboard: Chart rendering performance improvement. Now chart queries do not block the chart rendering. 
+* Dashboard: Chart rendering performance improvement. Now chart queries do not block the chart rendering.
 
 
 ### Bug Fixes
