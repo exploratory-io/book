@@ -1,5 +1,31 @@
 # Release Note
 
+
+## Version
+Released on 12/7/2025.
+
+### Enhancements
+
+* Analytics: Word Count: Now you can use the tokenized version similar to the Topic Model.
+
+
+### Bug Fixes
+
+* AI: AI Function: An error occurred when executing data that contained line breaks.
+* AI: AI Summary didn't work on the Academic plan if it hit the quota.
+* AI: Ask AI: The spin icon kept rotating.
+
+
+* Chart: Bar: Reference Line: The X-Axis reference line didn't go through from the bottom to the top when using Repeat By, multiple Y-Axis columns, and Y-Axis sync disabled.
+* Chart: Change the name of the reference line button.
+* Chart: It didn't re-render automatically after the AI function process was completed.
+
+
+* Data Wrangling: Custom Step: If the custom R script step started with a library(dplyr) call, it failed with Error in library(., dplyr) : there is no package called ‘.’.
+
+
+
+
 ## 14.0
 
 Released on 11/23/2025.
