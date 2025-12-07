@@ -6,7 +6,7 @@ Released on 12/7/2025.
 
 ### Enhancements
 
-* Analytics: Word Count: Now you can use the tokenized version similar to the Topic Model.
+* Analytics: Word Count: Now you can use the tokenized data for the Word Count Analysis. 
 
 
 ### Bug Fixes
@@ -18,7 +18,7 @@ Released on 12/7/2025.
 
 * Chart: Bar: Reference Line: The X-Axis reference line didn't go through from the bottom to the top when using Repeat By, multiple Y-Axis columns, and Y-Axis sync disabled.
 * Chart: Change the name of the reference line button.
-* Chart: It didn't re-render automatically after the AI function process was completed.
+* Chart: Chart wasn't refreshed automatically after the AI function process was completed.
 
 
 * Data Wrangling: Custom Step: If the custom R script step started with a library(dplyr) call, it failed with Error in library(., dplyr) : there is no package called ‘.’.
