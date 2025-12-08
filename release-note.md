@@ -21,10 +21,6 @@ Released on 12/7/2025.
 * Chart: Chart wasn't refreshed automatically after the AI function process was completed.
 
 
-* Data Wrangling: Custom Step: If the custom R script step started with a library(dplyr) call, it failed with Error in library(., dplyr) : there is no package called ‘.’.
-
-
-
 
 ## 14.0
 
