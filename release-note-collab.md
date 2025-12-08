@@ -1,5 +1,50 @@
 # Release Note
 
+## 14.0
+
+Released on 12/8/2025
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-14.0.4.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-14.0.4.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+    * Please make sure to run the **"11. Upgrade MongoDB version if you are upgrading to Exploratory Server v14"** step.
+
+### Enhancements
+
+* AI: Now you can use "AI Function" and "AI Editor" on the desktop.
+
+### Bug Fixes
+
+* AI: Service mapping should have been controlled on the server side.
+
+
+* Admin: You couldn't remove the team description once you had set it.
+* Admin: The period filter on the Manage Access page was off by one day.
+
+
+* Content: If you had multiple tabs open while logged out, the last open tab was displayed when you logged in.
+* Content: Search: "AI Function" and "AI Editor" content types should have been added to the dropdown.
+* Content: The Summary tab became blank when published data had many columns.
+* Content: The label "Number of Columns" at the top of a chart using the Repeat By feature on the dashboard did not follow the current UI language setting.
+
+
+* Interactive: Initializing the interactive session failed with the "Failed to load R data" error if you had a step marked as pinned but no chart pinned it in a dashboard.
+* Interactive: Initializing the interactive session failed with the "Failed to load R data" error if the content was published for the team and the data cache was enabled.
+
+
+* Parameter: Cascading Parameter did not work.
+* Parameter: Dashboard: The same parameter settings did not produce the same Word Cloud output if you had multiple Word Clouds in a dashboard.
+* Parameter: Dashboard: Some charts were not updated if you had many charts in a dashboard.
+* Parameter: The SQL query was executed even though the parameter was not related to the SQL query.
+* Parameter: The Range Slider parameter for the Numeric Data type’s start value became NaN under certain conditions and could not be moved.
+
+
+* Schedule: Scheduling failed due to the error "Timeout was reached: Operation timed out after 30000 milliseconds with 0 bytes received.".
+* Schedule: The Re-OAuth link should have shown up when the “Access Denied: User does not have permission in project [accessDenied]” error occurred.
+
+
+
 ## 13.3
 
 Released on 10/4/2025
