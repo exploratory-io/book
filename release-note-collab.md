@@ -1,5 +1,24 @@
 # Release Note
 
+## 14.1
+
+Released on 12/11/2025
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-14.1.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-14.1.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+### Enhancements
+
+* Content: Now you can upload a custom thumbnail to Note and Dashboard.
+
+### Bug Fixes
+
+* Parameter: Right after the Interactive mode started, if you didn't change any parameter and ran it, the chart did not update when the client-side parameter selection was different from the server stage.
+
+
+
 ## 14.0
 
 Released on 12/8/2025
