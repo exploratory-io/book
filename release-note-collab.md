@@ -15,8 +15,7 @@ Released on 12/11/2025
 
 ### Bug Fixes
 
-* Parameter: Right after the Interactive mode started, if you didn't change any parameter and ran it, the chart did not update when the client-side parameter selection was different from the server stage.
-
+* Parameter: Right after starting the Interactive mode, if you ran it without changing any parameters, the chart did not reflect the parameter values.
 
 
 ## 14.0
