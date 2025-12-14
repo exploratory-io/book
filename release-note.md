@@ -1,5 +1,29 @@
 # Release Note
 
+## Version 14.2
+Released on 12/14/2025.
+
+### Enhancements
+
+* Chart: Reference Line: Added support for drag-and-drop to reorder the reference lines.
+* Chart: Reference Line: Added support for roll functions other than mean.
+
+
+* Dashboard: Text Panel: Added support for using parameters for dynamic URL-based image display.
+* Dashboard: Added support for bold font for chart titles in dashboards.
+
+### Bug Fixes
+
+* Data Source: Google Cloud Storage: When there were many files in a bucket, it failed to list them in the UI with an http_400 error and files could not be imported.
+
+
+* Chart: The order of charts changed under certain conditions.
+* Chart: Line: When displaying all values on the same X-axis in hover mode, if there was a missing value, the next value was displayed incorrectly.
+
+
+* Project: Collaboration: If you exited the app without closing the project, the green editing light remained on.
+* Project: Opening a project failed with the error "invalid multibyte character in parser (C:\Program Files\Exploratory\lib\library.r:4591:61" after upgrading to Exploratory 14.1.
+
 
 ## 14.1
 Released on 12/7/2025.
