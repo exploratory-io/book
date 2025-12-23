@@ -1,5 +1,22 @@
 # Release Note
 
+## Version 14.3
+Released on 12/22/2025.
+
+### Enhancements
+
+* Chart: Pivot / Summarize Table: Now you can export tables as image files.
+
+
+* Note: Now you can set square sizes for charts and analytics.
+
+### Bug Fixes
+
+* General: Fixed an issue where Exploratory failed to launch on Windows after a Windows update.
+
+
+* Chart: Scatter: Fixed an issue where the trend line position was incorrect for the second Y-axis column when the data partially overlapped.
+
 ## Version 14.2
 Released on 12/14/2025.
 
