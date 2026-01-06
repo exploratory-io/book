@@ -502,6 +502,31 @@
        "desc": "大学などの教育機関における活用事例をご紹介します。",
        "insights": [
          {
+          "title": "ノーコードツールを活用したデータサイエンス教育～文系学生が機械学習まで学ぶ、北陸大学のExploratory活用実践",
+          "desc": "「大学でのデータサイエンスの民主化 with Exploratory」の北陸大学 田尻様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-by-eRr1smX7"
+         },
+         {
+          "title": "実務志向のデータサイエンス教育 - ツールの障壁を超えて本質的な理解へ",
+          "desc": "「大学でのデータサイエンスの民主化 with Exploratory」の岩崎学園 伊藤様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-by-FKb9EOJ3"
+         }, 
+         {
+          "title": "Exploratoryを用いたMBAプログラムでのデータサイエンス教育",
+          "desc": "「大学でのデータサイエンスの民主化 with Exploratory」のグロービス経営大学院 鈴木様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-MBA-by-kWh6KlR7"
+         },
+         {
+          "title": "(続) ExploratoryとRによる全学データサイエンス教育",
+          "desc": "「大学でのデータサイエンスの民主化 with Exploratory」の中央大学のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-R-by-RwX0bdL3"
+         },
+         {
+          "title": "国際教養・外国語学部学生を対象としたデータ分析入門科目におけるExploratoryの活用",
+          "desc": "「大学でのデータサイエンスの民主化 with Exploratory」の神田外語大学 井芹様のご発表内容となります。",
+          "url": "https://exploratory.io/note/exploratory/Exploratory-by-RNM4pZa9"
+         },
+         {
           "title": "Exploratoryによる労働者・消費者データの分析",
           "desc": "ユーザー会#32の神田外語大学様のご発表内容となります。",
           "url": "https://exploratory.io/note/exploratory/Exploratory-by-qYT1rrz0"
