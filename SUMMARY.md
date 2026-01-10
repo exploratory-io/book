@@ -249,6 +249,7 @@
    * [Decision Tree](analytics/decision_tree.md)
    * [Random Forest](analytics/var_importance.md)
    * [XGBoost](analytics/xgboost.md)
+   * [LightGBM](analytics/lightgbm.md)
    * [Time Series Forecasting (Prophet)](analytics/forecasting.md)
    * [Time Series Forecasting (ARIMA)](analytics/arima.md)
    * [Time Series Clustering](analytics/time_series_clustering.md)
