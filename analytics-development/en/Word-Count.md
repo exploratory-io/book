@@ -27,7 +27,7 @@ Below, you can check the occurrence count of each word in a visual table.
 
 # Word Combinations
 
-The current range used to count word combinations is "{{word_pair_method}}".
+The current range used to count word combinations is "<%= word_pair_method %>".
 If you want to change the range used to count word combinations, you can change it from [Settings](//analytics/settings/word_pair).
 
 **Within a Document**
