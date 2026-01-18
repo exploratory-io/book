@@ -60,9 +60,6 @@ Released on 01/18/2026.
 * Note: Charts and images could be split incorrectly by page breaks when exporting notes to PDF.
 
 
-* Publish: Publishing notes failed when using a company network.
-
-
 * General: The arrow icon direction was incorrect after restoring a window from the maximized state.
 
 ## Version 14.3
