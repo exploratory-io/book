@@ -25,7 +25,7 @@ Released on 01/18/2026.
 * Chart: Chart property dialog is now draggable.
 * Chart: Map: Increased the number of columns that can be selected by label.
 * Chart: Automatically adjusts label positions to avoid overlapping characters when using Show Value.
-* Chart: Line Chart: Prevents text overlap when using "Show text in plot area" for reference lines.
+* Chart: Prevents text overlap when using "Show text in plot area" for reference lines.
 * Chart: Error Bar: Added an option to avoid value overlap with chart elements.
 
 
