@@ -1,5 +1,70 @@
 # Release Note
 
+## Version 14.4
+Released on 01/18/2026.
+
+### Enhancements
+
+* AI: AI Function: Improved stability when handling row count discrepancies between AI function results and actual data.
+* AI: AI Function: Improved handling of column names containing Japanese characters and numbers.
+
+
+* Analytics: Automatically excludes infinite values in Random Forest and XGBoost to prevent execution errors.
+
+
+* Data Source: Import & Merge: Added support for the "Not Contain", "Not Start With", and "Not End With" operators.
+
+
+* Data Wrangling: Filter: Added an option to retain missing values.
+* Data Wrangling: Long to Wide: Added support for one-hot encoding using Long to Wide.
+
+
+* Chart: Added an option to keep a consistent X-axis range (e.g. 1/1–12/31) across repeated year charts regardless of the actual data range.
+* Chart: Added support for specifying the number of decimal places in reference lines.
+* Chart: Filter: Added support for reordering filter conditions using drag-and-drop.
+* Chart: Chart property dialog is now draggable.
+* Chart: Map: Increased the number of columns that can be selected by label.
+* Chart: Automatically adjusts label positions to avoid overlapping characters when using Show Value.
+* Chart: Line Chart: Prevents text overlap when using "Show text in plot area" for reference lines.
+* Chart: Error Bar: Added an option to avoid value overlap with chart elements.
+
+
+* Dashboard: Added support for exporting multiple dashboard pages to a single PDF.
+
+
+* Note: Added support for exporting notes to PDF.
+
+
+### Bug fixes
+
+* Data Wrangling: Long to Wide: Converting to wide format failed if the value contained an empty string.
+* Data Wrangling: TF-IDF: document_id values were incorrect when calculating TF-IDF.
+
+
+* Chart: Window Calculation: When "Remove Missing Values" was enabled, values from other columns were also removed unintentionally.
+* Chart: Bar: When using Repeat By with cumulative percentage, the Y2 axis range could exceed 100%.
+* Chart: Pivot Table: Fixed performance degradation introduced since v14.
+* Chart: Radar: When categorizing values by color, selecting "same color as chart" reversed the colors.
+
+
+* Analytics: Word Count: Changed the default value of "Count combinations" to "Within document".
+* Analytics: ARIMA: Fixed a "subscript out of bounds" error.
+* Analytics: ARIMA: Fixed a "Null model was selected" error.
+
+
+* Dashboard: Configured parameter values were not displayed.
+* Dashboard: Parameter values specified in the URL were not reflected in dashboard results.
+* Dashboard: Parameter values set via URL were not updated if execution history existed on Exploratory Server.
+
+
+* Note: Charts and images could be split incorrectly by page breaks when exporting notes to PDF.
+
+
+* Publish: Publishing notes failed when using a company network.
+
+
+* General: The arrow icon direction was incorrect after restoring a window from the maximized state.
+
 ## Version 14.3
 Released on 12/22/2025.
 
