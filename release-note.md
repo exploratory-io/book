@@ -1,6 +1,7 @@
 # Release Note
 
 ## Version 14.4
+
 Released on 01/18/2026.
 
 ### Enhancements
@@ -9,14 +10,11 @@ Released on 01/18/2026.
 * AI: AI Function: Improved handling of column names containing Japanese characters and numbers.
 
 
-* Analytics: Automatically excludes infinite values in Random Forest and XGBoost to prevent execution errors.
-
-
 * Data Source: Import & Merge: Added support for the "Not Contain", "Not Start With", and "Not End With" operators.
 
 
 * Data Wrangling: Filter: Added an option to retain missing values.
-* Data Wrangling: Long to Wide: Added support for one-hot encoding using Long to Wide.
+* Data Wrangling: Added support for one-hot encoding using 'Long to Wide' menu.
 
 
 * Chart: Added an option to keep a consistent X-axis range (e.g. 1/1–12/31) across repeated year charts regardless of the actual data range.
@@ -25,8 +23,10 @@ Released on 01/18/2026.
 * Chart: Chart property dialog is now draggable.
 * Chart: Map: Increased the number of columns that can be selected by label.
 * Chart: Automatically adjusts label positions to avoid overlapping characters when using Show Value.
-* Chart: Prevents text overlap when using "Show text in plot area" for reference lines.
 * Chart: Error Bar: Added an option to avoid value overlap with chart elements.
+
+
+* Analytics: Automatically excludes infinite values in Random Forest and XGBoost to prevent execution errors.
 
 
 * Dashboard: Added support for exporting multiple dashboard pages to a single PDF.
@@ -63,6 +63,7 @@ Released on 01/18/2026.
 * General: The arrow icon direction was incorrect after restoring a window from the maximized state.
 
 ## Version 14.3
+
 Released on 12/22/2025.
 
 ### Enhancements
@@ -109,7 +110,7 @@ Released on 12/7/2025.
 
 ### Enhancements
 
-* Analytics: Word Count: Now you can use the tokenized data for the Word Count Analysis. 
+* Analytics: Word Count: Now you can use the tokenized data for the Word Count Analysis.
 
 
 ### Bug Fixes
