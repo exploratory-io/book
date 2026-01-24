@@ -17,7 +17,7 @@ Released on 1/23/2026
 
 
 * Interactive: Now you can use user session context as a parameter to filter data by the logged-in user's session ID (email, first name, last name, or team).
-* Interactive: Interactive session performance improvement by avoiding redundant loadDag calls.
+* Interactive: Interactive session performance improvement by avoiding redundant query calls.
 
 
 ### Bug Fixes
