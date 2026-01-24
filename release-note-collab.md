@@ -12,7 +12,6 @@ Released on 1/23/2026
 ### Enhancements
 
 * Content: Now you can upload a custom thumbnail to Note and Dashboard from the Setting dialog.
-* Content: The OAuth dialog now automatically shows up when you open team-shared content if your OAuth token is expired.
 * Content: Now you can enable or disable the text panel edit icon from the configuration menu in interactive mode.
 
 
@@ -24,6 +23,7 @@ Released on 1/23/2026
 
 * General: You couldn't change your profile picture.
 * Content: Viewers should not be able to edit the Text area in Dashboard.
+* Content: If the OAuth token has expired, the OAuth dialog automatically appears when you open content with write-back scheduling enabled. This dialog should not appear.
 
 
 * Parameter: Right after starting the Interactive mode, if you ran it without changing any parameters, the chart did not update if the client parameter selection was different from the server state.
