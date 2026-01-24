@@ -1,35 +1,5 @@
 # Release Note
 
-## 14.1
-
-Released on 1/23/2026
-
-### Download
-
-* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-14.1.12.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
-* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-14.1.12.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
-
-### Enhancements
-
-* Content: Now you can upload a custom thumbnail to Note and Dashboard from the Setting dialog.
-* Content: Now you can enable or disable the text panel edit icon from the configuration menu in interactive mode.
-
-
-* Interactive: Now you can use user session context as a parameter to filter data by the logged-in user's session ID (email, first name, last name, or team).
-* Interactive: Interactive session performance improvement by avoiding redundant query calls.
-
-
-### Bug Fixes
-
-* General: You couldn't change your profile picture.
-* Content: Viewers should not be able to edit the Text area in Dashboard.
-* Content: If the OAuth token has expired, the OAuth dialog automatically appears when you open content that has scheduling enabled with the "Export to Google Sheets" setting. This dialog should not appear automatically.
-
-
-* Parameter: Right after starting the Interactive mode, if you ran it without changing any parameters, the chart did not update if the client parameter selection was different from the server state.
-
-
-* Schedule: Scheduling failed with the "SyntaxError: Unexpected token '??='" error if you scheduled a dashboard that contained R code.
 
 
 ## 14.0
