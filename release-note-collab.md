@@ -13,17 +13,21 @@ Released on 1/24/2026
 
 * Content: Now you can upload a custom thumbnail to Note and Dashboard from the Setting dialog.
 * Content: The OAuth dialog now automatically shows up when you open team-shared content if your OAuth token is expired.
+* Content: Now you can enable or disable the text panel edit icon from the configuration menu in interactive mode.
+
+
 * Interactive: Now you can use user session context as a parameter to filter data by the logged-in user's session ID (email, first name, last name, or team).
 * Interactive: Interactive session performance improvement by avoiding redundant loadDag calls.
-* Content: Now you can enable or disable the text panel edit icon from the configuration menu in interactive mode.
+
 
 ### Bug Fixes
 
 * General: You couldn't change your profile picture.
-
 * Content: Viewers should not be able to edit the Text area in Dashboard.
 
+
 * Parameter: Right after starting the Interactive mode, if you ran it without changing any parameters, the chart did not update if the client parameter selection was different from the server state.
+
 
 * Schedule: Scheduling failed with the "SyntaxError: Unexpected token '??='" error if you scheduled a dashboard that contained R code.
 
