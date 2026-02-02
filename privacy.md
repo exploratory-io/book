@@ -53,10 +53,6 @@ The Exploratory Desktop app provides various AI-powered features to streamline d
 
 The scope of information sent and the corresponding provider are as follows:
 
-#### AI Features and Service Providers
-
-
-
 | **AI Feature**    | **AI Service Provider** | **Main Content Sent**                                        |
 | ----------------- | ----------------------- | ------------------------------------------------------------ |
 | AI Data Wrangling | Anthropic (Claude)      | Prompts, column names, data types, and (optional) sample data |
