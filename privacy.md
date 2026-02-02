@@ -49,14 +49,47 @@ Exploratory Cloud Server performs server-side logging of Exploratory Desktop app
 
 ## How Exploratory Handles Your Data When Using AI Features
 
-When you use the Data Wrangling with AI Prompt feature in the Exploratory Desktop app, a portion of your data may be sent to our AI service provider, Anthropic (Anthropic, Inc.), depending on your configuration:
+The Exploratory Desktop app provides various AI-powered features to streamline data wrangling and analysis. When you use these features, a portion of your data may be sent to our AI service providers, **Anthropic (Anthropic, Inc.)** or **Google (Google LLC)**, depending on the specific feature being used.
 
-* If you set the sample data size to a value greater than 0, a sample of your dataset is included in the prompt text sent to Anthropic’s AI service to improve the quality and relevance of the AI-generated suggestions.
-* If you set the sample data size to 0, only the column names and their data types (e.g., "numeric", "character", etc.) are included in the prompt. No actual data values are sent.
+The scope of information sent and the corresponding provider are as follows:
 
-Importantly, none of your data or prompts are stored on Exploratory’s servers. We simply pass the information directly to the AI service as part of the prompt, and we do not retain any of it.
+### AI Features and Service Providers
 
-In addition, Anthropic does not store or use your data or prompt content for model training purposes. For more details, please refer to Anthropic’s data privacy policy here: [How do you use personal data in model training?](https://privacy.anthropic.com/en/articles/7996885-how-do-you-use-personal-data-in-model-training)
+| **AI Feature**        | **AI Service Provider** | **Main Content Sent**                                        |
+| --------------------- | ----------------------- | ------------------------------------------------------------ |
+| AI Data Wrangling | Anthropic (Claude)  | Prompts, column names, data types, and (optional) sample data |
+| AI Function       | Google (Gemini)     | Prompts, column names, data types, and values from specified columns |
+| AI Summary        | Google (Gemini)     | Data from aggregated charts generated in the Analytics view  |
+| AI Note Editor    | Google (Gemini)     | Prompts, text within the note, and data from aggregated charts |
+
+### Sample Data Control for "AI Data Wrangling"
+
+For the **AI Data Wrangling (Data Wrangling with AI Prompt)** feature, you can control the amount of data sent to the AI to balance privacy and suggestion accuracy:
+
+- **If you set the sample data size to a value greater than 0:**
+
+  A sample of your dataset is included in the prompt text sent to Anthropic’s AI service to improve the quality and relevance of the AI-generated suggestions.
+
+- **If you set the sample data size to 0:**
+
+  Only the column names and their data types (e.g., "numeric", "character", etc.) are included in the prompt. **No actual data values are sent.**
+
+### Data Privacy and Security
+
+Exploratory is committed to protecting your data through the following policies:
+
+1. **No Data Storage on Our Servers:**
+
+   Regardless of the AI feature used, **none of your data or prompts are stored or retained on Exploratory’s servers.** We simply pass the information directly to the AI service as part of the prompt for real-time processing.
+
+2. **No Model Training:**
+
+   Our AI service providers (Anthropic and Google) **do not store or use your data or prompt content for model training purposes** when sent via their APIs.
+
+For more details, please refer to the respective provider's data privacy policies:
+
+- [Anthropic: How do you use personal data in model training?](https://support.anthropic.com/en/articles/7996885-how-do-you-use-personal-data-in-model-training)
+- [Google Gemini: Gemini for Google Cloud Privacy and Security](https://cloud.google.com/gemini/docs/discover/data-governance)
 
 ## What information Exploratory does not collect
 
