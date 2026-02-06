@@ -78,7 +78,16 @@ A chi-square test is performed as a hypothesis test. The null hypothesis is "the
 
 ## Data
 
-The following table shows factor scores (how much value each observation has for each factor) calculated and added to the original data.
+The table below shows the original data with "factor scores" added.
+
+Factor scores are standardized with a mean of 0 and a standard deviation of 1. Values close to 0 indicate average observations, while values further from 0 (in either positive or negative direction) indicate observations with stronger tendencies for that factor. As a guideline, values exceeding ±1 are considered to show strong tendencies that are far from the average.
+
+The interpretation of positive and negative factor scores depends on the sign of the factor loadings.
+
+* For variables with positive factor loadings, higher factor scores correspond to higher variable values, and lower factor scores correspond to lower variable values.
+* For variables with negative factor loadings, higher factor scores correspond to lower variable values, and lower factor scores correspond to higher variable values.
+
+When interpreting factor scores, please check the sign of the factor loadings in the "Factor & Variable Relationships" table.
 
 {{data}}
 
@@ -113,4 +122,4 @@ The following path diagram visualizes the relationships between each factor and 
 {end_lazy_show_hide}
 `;
 
-module.exports = template; 
+module.exports = template;
