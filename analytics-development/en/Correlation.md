@@ -75,7 +75,7 @@ The current significance level (P-value) is set to <%= baseline_p_pct %>% (<%= b
 
 Correlation coefficients, P-values, etc. for all variable combinations are listed in the following table.
 
-{start_show_hide}
+{start_lazy_show_hide}
 ### Table
 {{data}}
 
@@ -95,7 +95,7 @@ Correlation coefficients, P-values, etc. for all variable combinations are liste
   * If data size is large, the t-value tends to be large; if small, the t-value tends to be small.
   * The larger the absolute value, the higher the possibility that the correlation coefficient is not 0 (no correlation).
   * The larger the absolute value of the t-value, the smaller the P-value becomes.
-{end_show_hide}
+{end_lazy_show_hide}
 
 # Appendix
 
