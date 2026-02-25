@@ -12,19 +12,11 @@ The data is also stored encrypted. Please take a look at our [Privacy Policy](ht
 
 All the data you import into Exploratory Desktop is saved as a binary form (R's Rdata format) inside your repository, which is located under '<your_home_directory>/.exploratory' on your PC.
 
-## How Exploratory Handles Your Data When Using AI Features
+## How Exploratory Handles Data When Using AI Features?
 
-When you use the Data Wrangling with AI Prompt feature in the Exploratory Desktop app, a portion of your data may be sent to our AI service provider, Anthropic (Anthropic, Inc. / https://anthropic.com), depending on your configuration:
+The Exploratory Desktop app provides various AI-powered features to streamline data wrangling and analysis. When you use these features, a portion of your data may be sent to our AI service providers, **Anthropic (Anthropic, Inc.)** or **Google (Google LLC)**, depending on the specific feature being used.
 
-* If you set the sample data size to a value greater than 0, a sample of your dataset is included in the prompt text sent to Anthropic’s AI service to improve the quality and relevance of the AI-generated suggestions.
-* If you set the sample data size to 0, only the column names and their data types (e.g., "numeric", "character", etc.) are included in the prompt. No actual data values are sent.
-
-Importantly, none of your data or prompts are stored on Exploratory’s servers. We simply pass the information directly to the AI service as part of the prompt, and we do not retain any of it.
-
-In addition, Anthropic does not store or use your data or prompt content for model training purposes. For more details, please refer to Anthropic’s data privacy policy here: [How do you use personal data in model training?](https://privacy.anthropic.com/en/articles/7996885-how-do-you-use-personal-data-in-model-training)
-
-
-
+For details on the scope of information sent and its destination, please refer to the [Privacy Page](https://exploratory.io/privacy/).
 
 # Subscription / License / Price / Payment
 
