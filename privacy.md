@@ -49,16 +49,18 @@ Exploratory Cloud Server performs server-side logging of Exploratory Desktop app
 
 ## How Exploratory Handles Your Data When Using AI Features
 
-The Exploratory Desktop app provides various AI-powered features to streamline data wrangling and analysis. When you use these features, a portion of your data may be sent to our AI service providers, **Anthropic (Anthropic, Inc.)** or **Google (Google LLC)**, depending on the specific feature being used.
+The Exploratory Desktop provides various AI-powered features to enhance data science workflow. When you use these features, a portion of your data may be sent to our AI service providers (Google, Anthropic) depending on the specific feature being used.
 
 The scope of information sent and the corresponding provider are as follows:
 
 | **AI Feature**    | **AI Service Provider** | **Main Content Sent**                                        |
 | ----------------- | ----------------------- | ------------------------------------------------------------ |
-| AI Data Wrangling | Google (Gemini)         | Prompts, column names, data types, and (optional) sample data |
+| AI Data Wrangling | Google (Gemini)         | Prompts, column names, data types, and (if you choose) sample data |
 | AI Function       | Google (Gemini)         | Prompts, column names, data types, and values from specified columns |
-| AI Summary        | Google (Gemini)         | Data from aggregated charts generated in the Analytics view  |
-| AI Note Editor    | Google (Gemini)         | Prompts, text within the note, and data from aggregated charts |
+| AI Summary        | Google (Gemini)         | Data from aggregated data used in charts that are included in the Analytics view  |
+| AI Note Editor    | Google (Gemini)         | Prompts, text within the note, and aggregated data used in charts that are included in the note |
+
+_Note that currently, we are not using Anthropic (Claude) for our AI features. (2/25/2026)_
 
 ### Sample Data Control for "AI Data Wrangling"
 

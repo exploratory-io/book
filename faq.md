@@ -4,17 +4,19 @@
 
 ## I have very sensitive data. Is my data safe?
 
-Any data you import into Exploratory Desktop app always stays on your PC and never leave your PC unless you explicitly publish (share) it to Exploratory Server (exploratory.io) or use Data Wrangling with AI Prompt feature. If you decided to publish the data to Exploratory Server for sharing or scheduling, you can share it in a private way so that only you and others you have invited can view it.
+Any data you import into Exploratory Desktop app always stays on your PC and never leave your PC unless 1) you explicitly publish (share) it to Exploratory Server (exploratory.io), 2) you explicitly use AI features and pass the data as part of the prompt that is passed to AI service (e.g. Google Gemini).
+
+If you decided to publish the data to Exploratory Server for sharing or scheduling, you can share it in a private way so that only you and others you have invited can view it.
 
 The data is also stored encrypted. Please take a look at our [Privacy Policy](https://exploratory.io/privacy/) for more details.
 
 ## Where exactly my data is stored after importing?
 
-All the data you import into Exploratory Desktop is saved as a binary form (R's Rdata format) inside your repository, which is located under '<your_home_directory>/.exploratory' on your PC.
+All the data you import into Exploratory Desktop is saved as a binary form (Parquet format) inside your repository, which is located under '<your_home_directory>/.exploratory' on your PC.
 
 ## How Exploratory Handles Data When Using AI Features?
 
-The Exploratory Desktop app provides various AI-powered features to streamline data wrangling and analysis. When you use these features, a portion of your data may be sent to our AI service providers, **Anthropic (Anthropic, Inc.)** or **Google (Google LLC)**, depending on the specific feature being used.
+The Exploratory Desktop app provides various AI-powered features to improve the data science workflow. When you use these features, a portion of your data may be sent to our AI service providers such as Google (Gemini), Anthropic (Claude) depending on the specific feature being used.
 
 For details on the scope of information sent and its destination, please refer to the [Privacy Page](https://exploratory.io/privacy/).
 
