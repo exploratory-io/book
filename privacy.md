@@ -55,7 +55,7 @@ The scope of information sent and the corresponding provider are as follows:
 
 | **AI Feature**    | **AI Service Provider** | **Main Content Sent**                                        |
 | ----------------- | ----------------------- | ------------------------------------------------------------ |
-| AI Data Wrangling | Anthropic (Claude)      | Prompts, column names, data types, and (optional) sample data |
+| AI Data Wrangling | Google (Gemini)         | Prompts, column names, data types, and (optional) sample data |
 | AI Function       | Google (Gemini)         | Prompts, column names, data types, and values from specified columns |
 | AI Summary        | Google (Gemini)         | Data from aggregated charts generated in the Analytics view  |
 | AI Note Editor    | Google (Gemini)         | Prompts, text within the note, and data from aggregated charts |
