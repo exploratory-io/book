@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:exploratory.io)",
+      "WebFetch(domain:ja.exploratory.io)",
+      "WebFetch(domain:exploratory.substack.com)",
+      "WebFetch(domain:community-ja.exploratory.io)"
+    ]
+  }
+}
