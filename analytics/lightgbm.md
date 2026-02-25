@@ -6,5 +6,5 @@ For example, techniques such as the "Leaf-wise" strategy that prioritizes splitt
 
 For more details on how to use it, please refer to the following articles.
 
-* How-to Guides in English - [Link]([url](https://exploratory.io/note/exploratory/Introduction-to-LightGBM-eAK7zbZ9))
-* 使い方ガイド（日本語）- [Link]([url](https://ja.exploratory.io/note/exploratory/LightGBM-FsO3pPj3))
+* [Introduction to LightGBM](https://exploratory.io/note/exploratory/Introduction-to-LightGBM-eAK7zbZ9)
+* [LightGBMの紹介](https://ja.exploratory.io/note/exploratory/LightGBM-FsO3pPj3)
