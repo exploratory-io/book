@@ -27,6 +27,7 @@ Released on 03/05/2026
 * Chart: Table / Pivot Table / Summarize Table: Added "Copied" visual feedback when clicking the copy button in the hover popup.
 * Chart: Filter: Added an option to automatically close the filter dialog after applying a chart filter.
 * Chart: Filter: Added support for the "Between" operator for "Day of Month" date filter conditions.
+* Chart: Area: Now you can choose the stack and overlay layout mode.
 * Chart: Scatter: Added support for specifying the axis range as a time period when a date column is assigned to the axis.
 * Chart: Show Value: Changed the default label position to "Automatic."
 * Chart: Bar: Added support for displaying bars for data points with a value of 0.
@@ -93,7 +94,6 @@ Released on 03/05/2026
 * Chart: Table: The hover popup was cut off for long text values.
 * Chart: Color column levels disappeared when "Limit Values" was applied on the X-axis.
 * Chart: Area: The X-axis date scale was misaligned when using Repeat By.
-* Chart: Area: Values were incorrectly stacked when colors were used for differentiation.
 * Chart: Pivot Table: The Total column did not follow the sort order when columns were sorted.
 * Chart: Pivot Table: An error occurred when rendering a Pivot Table with numeric value columns.
 * Chart: Pivot Table: An error occurred when rendering certain Pivot Table configurations.
