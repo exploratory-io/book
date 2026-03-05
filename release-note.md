@@ -44,7 +44,6 @@ Released on 03/05/2026
 
 * Dashboard: Made it easier to select rows by supporting double-click selection in Edit mode.
 * Dashboard: Added support for changing the background color.
-* Dashboard: Number Chart: Added support for setting the font size.
 
 
 * Note: Improved the style of the Table of Contents (TOC).
