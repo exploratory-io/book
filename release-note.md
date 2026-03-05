@@ -23,8 +23,8 @@ Released on 03/05/2026
 
 
 * Chart: Summarize Table: Added support for calculating the most frequent value (mode) for each group using the "Other Groups" option.
-* Chart: Number: Added support for applying different font styles independently to prefix and suffix text.
-* Chart: Table / Pivot Table / Summarize Table: Added "Copied!" visual feedback when clicking the copy button in the hover popup.
+* Chart: Number: Added support for applying different font styles independently to the main value and suffix text.
+* Chart: Table / Pivot Table / Summarize Table: Added "Copied" visual feedback when clicking the copy button in the hover popup.
 * Chart: Filter: Added an option to automatically close the filter dialog after applying a chart filter.
 * Chart: Filter: Added support for the "Between" operator for "Day of Month" date filter conditions.
 * Chart: Scatter: Added support for specifying the axis range as a time period when a date column is assigned to the axis.
