@@ -19,7 +19,7 @@ Released on 03/05/2026
 * Data Source: Database: Now automatically restarts the connection when Rserve becomes unresponsive.
 
 
-* Data Wrangling: Table View: Added "Copied!" visual feedback when clicking the copy button in the hover popup.
+* Data Wrangling: Table View: Added "Copied" visual feedback when clicking the copy button in the hover popup.
 
 
 * Chart: Summarize Table: Added support for calculating the most frequent value (mode) for each group using the "Other Groups" option.
