@@ -10,7 +10,7 @@ Released on 03/05/2026
 * AI: AI Function: Added support for excluding NA values before processing when using the 10,000-row limit.
 * AI: AI Function: Added a notice indicating the maximum number of rows is limited to 3,000 when the parallel option is disabled.
 * AI: AI Prompt: Added a hint in the dialog indicating that a data frame can be referenced using @.
-* AI: AI Prompt: Improved AI-generated steps to better use numeric calculation functions such as abs and round.
+* AI: AI Prompt: Improved the result when it's better use numeric calculation functions such as 'abs', 'round', etc.
 
 
 * Data Source: CSV: Added an option to specify the maximum number of rows to import (n_max).
@@ -35,12 +35,10 @@ Released on 03/05/2026
 * Chart: Pivot Table: Now exports all rows when exporting Pivot Table data, even when not all rows are rendered in the view.
 * Chart: Pivot Table / Summarize Table: Added support for vertical border lines between columns.
 * Chart: Added a shortcut menu to Y-axis column markers for quick access to column settings.
-* Chart: Disabled chart data and image export when there is no data to display.
 
 
 * Analytics: LightGBM is now available as a machine learning option in the Analytics menu.
 * Analytics: Factor Analysis: Added explanations for factor scores to help interpret results.
-* Analytics: Clustering: Removed the unused property panel from the Parallel Coordinate view.
 
 
 * Dashboard: Made it easier to select rows by supporting double-click selection in Edit mode.
@@ -86,7 +84,6 @@ Released on 03/05/2026
 * Data Wrangling: Cancelling a SQL Import or Publish job took an unexpectedly long time.
 * Data Wrangling: Cancelling a data processing operation took too long.
 * Data Wrangling: Shift-clicking to select multiple steps did not work when clicking on a step token.
-* Data Wrangling: Strings containing voiced consonant marks (濁点) were not handled correctly in conditional imports.
 
 
 * Chart: Reference Line: The X-axis reference line label was duplicated when multiple Y-axis columns were selected.
