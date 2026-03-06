@@ -1,0 +1,56 @@
+{
+  "data": [
+    {
+      "title": "チャートの種類",
+      "desc": "Exploratoryには様々なチャートのタイプがあります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "insights": [
+        {
+         "title": "ピボットテーブルの作り方",
+         "desc": "ピボットテーブルの作り方を紹介します。",
+         "alias": "pivot-ja",
+         "url": "https://exploratory.io/note/exploratory/nAH3SJh5"
+        },
+        {
+         "title": "集計テーブルの作り方",
+         "desc": "集計テーブルの作り方を紹介します。",
+         "alias": "summarize-table-ja",
+         "url": "https://exploratory.io/note/exploratory/lqW2aSE0"
+        },
+        {
+         "title": "テーブルの作り方",
+         "desc": "テーブルの作り方を紹介します。",
+         "alias": "table-ja",
+         "url": "https://exploratory.io/note/exploratory/SSA0IGE1"
+        }
+      ]
+    },
+    {
+      "title": "チャートの機能",
+      "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "insights": [
+        {
+         "title": "表計算：合計値に対する割合のチャートの作り方",
+         "desc": "表計算：合計値に対する割合のチャートの作り方を紹介します。",
+         "alias": "percent-of-total-ja",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Msq6osQ9LP"
+        },
+        {
+         "title": "表計算：累積合計のチャートの作り方",
+         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
+         "alias": "cumulative-sum-ja",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+        },
+        {
+         "title": "表計算：移動平均の引き方",
+         "desc": "表計算：移動平均をラインチャートに引く方法を紹介します。",
+         "alias": "moving-average-ja",
+         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
+       }
+      ]
+    }
+  ]
+}

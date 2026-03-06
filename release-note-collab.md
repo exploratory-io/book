@@ -1,5 +1,30 @@
 # Release Note
 
+## 14.2
+
+Released on 3/6/2026
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-14.2.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-14.2.1.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+### Enhancements
+
+* Content: Now you can export Dashboard and Note to PDF from the "Export to PDF" menu.
+* Content: Now you can restrict CSV file download for shared content from the Setting dialog.
+* Content: Now you can restrict EDF file download for shared content from the Setting dialog.
+* Content: Now you can export Map charts as images in Note and Dashboard.
+
+### Bug Fixes
+
+* AI: The AI quota reset date was not updated when the quota information was only being fetched, causing an incorrect "usage exceeds the monthly plan limit" error.
+* Interactive: Rapidly toggling the interactive mode on and off caused a server-side conflict error.
+* Parameter: Chart data was not updated when exporting chart data after changing parameters.
+* Parameter: Parameters behaved incorrectly after upgrading to v14.1, including wrong default values and child parameter lists not updating dynamically.
+* Parameter: Dashboard results on the Server differed from Exploratory Desktop when using parameters that depend on session parameter.
+* Parameter: Date parameters were forced back to default values instead of using the user-selected values.
+
 ## 14.1
 
 Released on 1/31/2026

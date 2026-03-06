@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "title": "Chart Type",
+      "desc": "You can choose from various types of charts to visualize your data effectively. ",
+      "moreButtonText": "Show More",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=en",
+      "insights": [
+        {
+         "title": "Pivot Table",
+         "desc": "A quick introduction to Pivot Table.",
+         "alias": "pivot-en",
+         "url": "https://exploratory.io/note/exploratory/Chart-Pivot-Table-BtA9aWB2"
+        },
+        {
+         "title": "Summarize Table",
+         "desc": "A quick introduction to Summarize Table.",
+         "alias": "summarize-table-en",
+         "url": "https://exploratory.io/note/exploratory/Introduction-to-Summarize-Table-eyL0tsv0"
+        },
+        {
+         "title": "Table",
+         "desc": "A quick introduction to Table.",
+         "alias": "table-en",
+         "url": "https://exploratory.io/note/exploratory/How-to-Create-a-Table-Xfa1rPK8"
+        }
+      ]
+    },
+    {
+      "title": "Chart Features",
+      "desc": "There are various Chart features you can use to enrich your data visualization.",
+      "moreButtonText": "Show More",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "insights": [
+        {
+         "title": "Pin - Set a Particular Data Step to Visualize",
+         "desc": "The most important feature of Chart is 'Pin'. You can pin the chart to a particular step so that it will always source the chart data from the pinned step even when new Data Wrangling steps are added.",
+         "alias": "pin-en",
+         "url": "https://exploratory.io/note/kanaugust/Introduction-to-Chart-Pin-Feature-in-Exploratory-AYx1Rrg5qu"
+        },
+        {
+         "title": "Window Calculation - Percentage of Total",
+         "desc": "You can learn how you can use Window Calculation feature to visualize '% of Total' with Bar chart in this Note.",
+         "alias": "percent-of-total-en",
+         "url": "https://exploratory.io/note/exploratory/How-to-Create-Chart-to-Show-of-Total-qYz4cap5"
+        },
+        {
+         "title": "Window Calculation - Cummulative Sum",
+         "desc": "You can learn how to create a chart to show cumulative sum (running total).",
+         "alias": "cumulative-sum-en",
+         "url": "https://exploratory.io/note/exploratory/How-to-Create-Chart-to-Show-Cumulative-Sum-Running-Total-UZD4SSk4"
+        },
+        {
+         "title": "Window Calculation - Moving Average",
+         "desc": "Here's how to create a chart to show moving average.",
+         "alias": "moving-average-en",
+         "url": "https://exploratory.io/note/exploratory/How-to-Create-Chart-to-Show-Moving-Average-NVO7AiF4"
+       }
+      ]
+    }
+  ]
+}
