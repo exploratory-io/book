@@ -1,5 +1,138 @@
 # Release Note
 
+
+## Version 14.5
+
+Released on 03/09/2026
+
+### Enhancements
+
+* AI: AI Prompt: Added text to the dialog explaining that a data frame can be referenced using @.
+* AI: AI Function: Added sample function templates to help get started with AI Functions.
+* AI: AI Function: Now shows the maximum row limit of 3,000 when the parallel option is not enabled.
+* AI: AI Function: Added support for excluding NA values before processing with the 10,000 row limit.
+* AI: AI Prompt: Improved AI-generated steps to better use numeric calculation functions.
+
+* Data Source: Removed the obsolete MailChimp connection.
+* Data Source: CSV: Added an option to specify the maximum number of rows to import (n_max).
+* Data Source: GitHub: Added support for filter parameters to fetch old issues exceeding the 10K limitation.
+* Data Source: Database: Added automatic RServe restart when the Job Window's RServe status becomes invalid.
+* Data Source: Excel: Added detection of invalid file formats with a user-friendly error message.
+* Data Source: GitHub: Added support for date range and other filter parameters.
+
+* Data Wrangling: Table View: Added "Copied!" feedback when clicking the Copy button in the hover popup.
+
+* Chart: Summarize Table: Added support for finding and saving the most frequent value for each group.
+* Chart: Number: Added support for partial style customization of suffix/prefix text.
+* Chart: Table: Added hover popup copy feedback and improved balloon in Table, Pivot Table, and Summarize Table.
+* Chart: Filter: The filter list dialog now closes automatically after running the chart filter.
+* Chart: Disabled chart data and image export when there is no data to display.
+* Chart: Filter: Added support for the "Between" operator for "Day of Month" value type.
+* Chart: Scatter: Added support for specifying a period as the axis width when assigning a date column to the axis.
+* Chart: Bar: Added support for showing 0 values.
+* Chart: Pivot Table: Added support for automatically adjusting row height based on font size.
+* Chart: Added shortcut menu to markers in the Y-axis menu.
+* Chart: Pivot Table: Added support for displaying vertical borders (grid lines).
+
+* Analytics: Added the LightGBM menu on the Analytics View.
+* Analytics: Factor Analysis: Added explanations for factor scores.
+* Analytics: Clustering: Removed the property section for Parallel Coordinate.
+* Analytics: Added support for LightGBM.
+
+* Dashboard: Improved row selection by supporting double-click on chart in Edit mode.
+* Dashboard: Added support for changing background color.
+* Dashboard: Number: Added support for setting font size.
+
+* Note: Improved the Table of Contents (TOC) style.
+* Note: The PDF print dialog now shows in Japanese when the UI locale is Japanese.
+
+* Parameter: Single Select LOV: Updated label and adjusted field position.
+
+* General: Added automatic deletion of old log files.
+* General: Enhanced the shutdown cleanup process.
+* General: Added automatic RServe restart when it crashes with connection refused error.
+
+* Install: Mac: Added a check for Repository folder write permission to prevent project folder creation errors.
+
+### Bug fixes
+
+* AI: AI Function: The cached step was re-executed when duplicating a data frame.
+* AI: AI Prompt: The outlier removal feature did not work.
+* AI: Data Wrangling: Full-width symbols in AI instructions were automatically converted to half-width symbols in the generated R script.
+* AI: AI Prompt: Entering multiple rows caused the text to overflow from the editor area.
+* AI: AI Function: An HTTP request error occurred when executing AI functions.
+* AI: AI Prompt: AI prompts did not convert hms (time) types properly.
+
+* Data Source: Cloud Storage: CSV import preview did not display columns beyond the 100th column even when the column limit was set higher.
+* Data Source: Remote CSV: File path and preview were not updated when changing the data source type.
+* Data Source: R Script: Preview data was not persisted in the import dialog.
+* Data Source: GitHub: After deselecting all columns and then selecting a few columns, unnecessary columns were imported.
+* Data Source: Google Spreadsheet: Data type conversion was not working properly during data import.
+* Data Source: Import: Could not handle strings containing dakuten (濁点) properly with conditional import.
+* Data Source: Import: Dates in the yyyy/m/d format resulted in missing values when converted to a date type.
+* Data Source: Excel: The import dialog did not scroll horizontally when the Excel file had multiple sheets and the first sheet was empty.
+* Data Source: Data types were converted even when the "Automatically convert data types" checkbox was unchecked.
+
+* Data Wrangling: Table View: Scrolling to the bottom and then using the mouse wheel jumped back to the top.
+* Data Wrangling: An error occurred with "could not find function null".
+* Data Wrangling: Cancelling the Job (SQL Import and Publish) process took a long time.
+* Data Wrangling: Shift-selecting multiple steps did not work when clicking on a token.
+* Data Wrangling: Cancelling a process took a long time.
+
+* Chart: Bar: Reference line label on the X-axis was duplicated when multiple Y-axis values were selected.
+* Chart: Table: Saving a chart with a large table was very slow.
+* Chart: Table: The popup was cut off when the text was long.
+* Chart: The vertical alignment of the Y-axis marker sub-menu and column list was misaligned.
+* Chart: Color column levels disappeared when applying "Limit Values" on the X-axis.
+* Chart: Area: X-axis date scale was misaligned when using Repeat By.
+* Chart: Pivot Table: Total column did not follow the sort order when sorting columns.
+* Chart: Scatter: Clicking on a data point did not show detail data when Y-axis decimal digits was set.
+* Chart: Pivot Table: Failed to render with "no applicable method for unite" error.
+* Chart: Pivot Table: Failed to render with "Invalid argument was passed to returnsNumericValue" error.
+* Chart: When showing detailed data for logical column percentage, values other than TRUE or FALSE were displayed.
+* Chart: Pivot Table: Exporting data did not include all rows when the Pivot Table did not render all rows.
+* Chart: Show Value: The default for Position was not set to Automatic.
+* Chart: Show Value: Could not show the arrow even when setting the threshold to 0.
+* Chart: Show Value: Auto positioning showed the text for values with NA at the wrong place.
+* Chart: Filter/Reference Line: Disabled conditions were still displayed in preview.
+* Chart: Scatter: Show detail did not work properly when changing Y-axis label's decimal points to 0.
+* Chart: Pivot Table: Totals and subtotals were not included when exporting to Excel or Clipboard.
+* Chart: Summarize Table: When exporting to CSV, the values assigned to groups became missing values after the first row.
+* Chart: Area: Values were incorrectly stacked when visualizing by color.
+* Chart: Table: Scroll position was reset when scrolling down by dragging the scroll bar and then using the mouse wheel.
+* Chart: Pie: Title did not show on each Pie when using Repeat By.
+
+* Analytics: Correlation: The table was not displayed for Correlation Analytics.
+
+* Dashboard: PDF export: Number's sub metrics were not well formatted, Pivot Table's color formatting was not respected, and Map was not displayed.
+
+* Note: Number chart with metrics showed the wrong main value in Word export.
+* Note: Search Widget lost focus right after typing a few characters in the search box.
+* Note: Number charts were not fully displayed when placed inside a two-column layout.
+* Note: Images with absolute paths were not displayed when pasting Markdown into Notes.
+* Note: The right side disappeared in a two-column layout.
+* Note: Map chart image export failed with "Chart image data is empty" error.
+* Note: After copy-and-pasting markdown text, it did not get formatted properly.
+* Note: R Code Block: Could not select text inside the Preview tab.
+* Note: R Script Block: After running an R script block, no output or error was shown in some cases.
+* Note: Editor screen became blank and unresponsive for a specific note.
+* Note: When opening a note, charts showed "No Data to Display" even though they had data.
+* Note: Exporting a note with Number chart to a Word file failed.
+* Note: chordDiagram output was not returning and clicking the preview button showed an error dialog.
+* Note: Sankey diagram returned blank in preview and published Note/Dashboard.
+
+* Parameter: Did not return the correct result when a parameter had a dependency with a session parameter.
+* Parameter: Default value did not match the value referenced as a data frame.
+* Parameter: Running a parameter for a date after today caused the process to not finish.
+
+* General: Offline mode was not persisted after restarting Exploratory.
+* General: A popup overlapped with the data frame menu when hovering over the data frame name.
+* General: Excel export caused "some content issues" error requiring a repair dialog.
+* General: Unable to attach .log files in Intercom chat despite security settings allowing them.
+* General: When opening a project, a custom packages not found warning showed up even though the packages were not removed.
+* General: Publishing contents with a database connection imported from EDF/EPF failed with a connection not found error.
+* General: Restoring a project from history failed with "Unable to create index.lock file" error.
+
 ## Version 14.5
 
 Released on 03/05/2026
