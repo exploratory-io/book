@@ -165,6 +165,16 @@ This model predicted a probability (a value between 0 and 1) of <%= target %> fo
 * The vertical dotted line indicates the currently set probability threshold for classifying as TRUE or FALSE. The default is 50% (0.5), but this can be changed in [Settings](//analytics/settings/true_false_criteria).
 * This distribution allows for visual confirmation of the model's classification performance and adjustment of the optimal TRUE/FALSE threshold.
 
+## ROC Curve
+
+<% if (!test_mode) { %>
+The following chart shows the ROC curve that evaluates the model's classification performance at various TRUE/FALSE thresholds. The Y-axis represents the true positive rate (sensitivity), and the X-axis represents the false positive rate (1-specificity). The blue line is the ROC curve for this model, and the diagonal gray dotted line represents random prediction (AUC: 0.5). ROC curves that bulge toward the upper left indicate higher prediction accuracy, while those closer to the diagonal indicate lower prediction accuracy.
+<% } else { %>
+The following chart shows the ROC curve that evaluates the model's classification performance at various TRUE/FALSE thresholds. The Y-axis represents the true positive rate (sensitivity), and the X-axis represents the false positive rate (1-specificity). The blue line is the ROC curve for this model on test data, and the orange line is for training data. The diagonal gray dotted line represents random prediction (AUC: 0.5). ROC curves that bulge toward the upper left indicate higher prediction accuracy, while those closer to the diagonal indicate lower prediction accuracy.
+<% } %>
+
+{{roc_curve}}
+
 # Appendix
 
 ## Next Steps
@@ -181,4 +191,4 @@ This model predicted a probability (a value between 0 and 1) of <%= target %> fo
 
 `;
 
-module.exports = template; 
+module.exports = template;
