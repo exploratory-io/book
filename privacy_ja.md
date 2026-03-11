@@ -53,16 +53,16 @@ Exploratoryのアカウント作成時には、いくつかの基本情報をお
 
 ## ExploratoryにおけるAI機能利用時のデータ取り扱いについて
 
-Exploratoryデスクトップ・アプリでは、AIを活用してデータ加工や分析を効率化する各種機能を提供しています。これらの機能を利用する際、お客様のデータの一部がAIサービスプロバイダー（Anthropic社またはGoogle社）に送信されます。
+Exploratoryデスクトップでは、AIを活用してデータ加工や分析を効率化する各種機能を提供しています。これらの機能を利用する際、お客様のデータの一部がAIサービスプロバイダー（Google）に送信されます。
 
-送信される情報の範囲と送信先は、利用する機能によって以下の通り異なります。
+送信されるデータの内容は、利用する機能によって以下の通りとなります。
 
 | **利用する機能**    | **AIサービスプロバイダー** | **送信される主な内容**                                 |
 | ------------------- | -------------------------- | :----------------------------------------------------- |
 | AI データ加工        | Google (Gemini)             | プロンプト、列名、データ型、(設定により)サンプルデータ |
 | AI 関数             | Google (Gemini)            | プロンプト、列名、データ型、指定した列の値             |
-| AI サマリ           | Google (Gemini)            | アナリティクスで生成された集計チャートのデータ         |
-| AI ノートエディター | Google (Gemini)            | プロンプト、ノート内テキスト、集計チャートのデータ     |
+| AI サマリ           | Google (Gemini)            | アナリティクスで生成されたチャートの集計済みデータ         |
+| AI ノートエディター | Google (Gemini)            | プロンプト、ノート内テキスト、ノート内に追加されたチャートの集計済みデータ     |
 
 ### 「AIデータ加工」利用時のサンプルデータ制御
 
@@ -70,11 +70,11 @@ Exploratoryデスクトップ・アプリでは、AIを活用してデータ加�
 
 - **サンプルデータサイズを「0」より大きく設定した場合：**
 
-  AIによる提案の品質と関連性を高めるために、データセットの一部（サンプル値）がプロンプトに含まれ、Anthropic社へ送信されます。
+  列名とそのデータ型（例: numeric, character等）、およびデータセットの一部（サンプル値）がプロンプトの一部としてAIサービスプロバイダーへ送信されます。
 
 - **サンプルデータサイズを「0」に設定した場合：**
 
-  列名とそのデータ型（例: numeric, character`等）のみが送信されます。**実際の値（データの中身）は一切送信されません。**
+  列名とそのデータ型（例: numeric, character等）のみがプロンプトの一部としてAIサービスプロバイダーへ送信されます。**実際の値（データの中身）は一切送信されません。**
 
 ### データプライバシーと安全性の確保
 
@@ -86,12 +86,12 @@ Exploratoryでは、お客様のデータを保護するために以下のポリ
 
 2. **AIモデルの学習への利用について：**
 
-   当社のAIサービスプロバイダー（Anthropic社およびGoogle社）は、API経由で送信されたお客様のデータやプロンプトの内容を、**AIモデルの学習目的で利用することはありません。**
+   当社が使用するAIサービスプロバイダー（Anthropic社およびGoogle社）は、API経由で送信されたお客様のデータやプロンプトの内容を、**AIモデルの学習目的で利用することはありません。**
 
 詳細については、各プロバイダーのデータプライバシーポリシーをご確認ください。
 
 - [Anthropic: How do you use personal data in model training?](https://support.anthropic.com/en/articles/7996885-how-do-you-use-personal-data-in-model-training)
-- [Google Gemini: Gemini for Google Cloud Privacy and Security](https://cloud.google.com/gemini/docs/discover/data-governance) 
+- [Google Gemini: Gemini for Google Cloud Privacy and Security](https://cloud.google.com/gemini/docs/discover/data-governance)
 
 ## 収集しない情報
 
