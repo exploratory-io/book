@@ -16,6 +16,10 @@ All the data you import into Exploratory Desktop is saved as a binary form (R's 
 
 The Exploratory Desktop app provides various AI-powered features to streamline data wrangling and analysis. When you use these features, a portion of your data may be sent to our AI service providers, **Anthropic (Anthropic, Inc.)** or **Google (Google LLC)**, depending on the specific feature being used.
 
+## Will data published to the Exploratory Server be used for training purposes?
+
+The data is simply stored on the server; Exploratory does not utilize it for any purpose, including AI training.
+
 For details on the scope of information sent and its destination, please refer to the [Privacy Page](https://exploratory.io/privacy/).
 
 # Subscription / License / Price / Payment
