@@ -4,146 +4,191 @@
 
 Released on 03/05/2026
 
-### Enhancements
+## Enhancements
 
-* AI: AI Function: Added sample function templates to help get started with AI Functions.
-* AI: AI Function: Added support for excluding NA values before processing when using the 10,000-row limit.
-* AI: AI Function: Added a notice indicating the maximum number of rows is limited to 3,000 when the parallel option is disabled.
-* AI: AI Prompt: Added a hint in the dialog indicating that a data frame can be referenced using @.
-* AI: AI Prompt: Improved the result when it's better use numeric calculation functions such as 'abs', 'round', etc.
+### AI Function
 
+*   A new option is requested to exclude NA values before applying the 10,000-row limit for AI functions, allowing users to analyze valid data in sparse datasets more effectively.
+*   New shortcut menu items for common AI tasks like "Summarize Text" and "Score Sentiment" are being added to the column header menu to make AI functions more accessible.
+*   The AI Function step incorrectly runs again when a data frame is duplicated, causing unnecessary processing time and potential API costs for users.
+*   The AI Function will now show a warning if a user tries to process more than 3,000 rows without the "parallel" option enabled, as the system currently fills the excess with NAs.
 
-* Data Source: CSV: Added an option to specify the maximum number of rows to import (n_max).
-* Data Source: GitHub: Added support for date range filters and other parameters when importing GitHub Issues.
-* Data Source: GitHub: Added support for filter parameters to retrieve issues older than the 10,000-issue limit.
-* Data Source: Database: Now automatically restarts the connection when Rserve becomes unresponsive.
+### AI Prompt
 
+*   The AI Prompt dialog will now include a reminder that users can specify other data frames using the "@" symbol, helping prevent join errors caused by missing references.
+*   The AI Prompt's ability to handle numeric calculations like percentages and rounding is being improved to avoid errors where it suggests non-existent R functions.
 
-* Data Wrangling: Table View: Added "Copied" visual feedback when clicking the copy button in the hover popup.
+### Analytics
 
+*   New explanations are being added to Factor Analysis results to help users interpret factor scores, specifically explaining that values near 0 are average and ±1 are significant.
+*   The LightGBM algorithm is being added to the Analytics View menu, allowing users to easily access this powerful gradient boosting framework for machine learning tasks.
+*   The property section for "Parallel Coordinate" is being removed from the Clustering analytics view as the feature is no longer supported.
+*   There is a request to support LightGBM within the UI to accommodate users who prefer this specific machine learning algorithm. This would allow teams already using LightGBM in Python to transition their workflows into Exploratory more easily.
 
-* Chart: Summarize Table: Added support for calculating the most frequent value (mode) for each group using the "Other Groups" option.
-* Chart: Number: Added support for applying different font styles independently to the main value and suffix text.
-* Chart: Table / Pivot Table / Summarize Table: Added "Copied" visual feedback when clicking the copy button in the hover popup.
-* Chart: Filter: Added an option to automatically close the filter dialog after applying a chart filter.
-* Chart: Filter: Added support for the "Between" operator for "Day of Month" date filter conditions.
-* Chart: Area: Now you can choose the stack and overlay layout mode.
-* Chart: Scatter: Added support for specifying the axis range as a time period when a date column is assigned to the axis.
-* Chart: Show Value: Changed the default label position to "Automatic."
-* Chart: Bar: Added support for displaying bars for data points with a value of 0.
-* Chart: Pivot Table: Added support for automatically adjusting row height based on font size.
-* Chart: Pivot Table: Now exports all rows when exporting Pivot Table data, even when not all rows are rendered in the view.
-* Chart: Pivot Table / Summarize Table: Added support for vertical border lines between columns.
-* Chart: Added a shortcut menu to Y-axis column markers for quick access to column settings.
+### Chart
 
+*   A shortcut menu is being added to the Y-axis marker menu so users can quickly see and select different marker types without navigating through multiple dialogs.
+*   Bar charts currently do not display a "0" label when a category has zero value, making it difficult for users to confirm that data for that category was actually processed.
+*   Pivot table row heights do not automatically shrink when the font size is reduced, preventing users from fitting more data onto a single screen or dashboard.
+*   Pivot tables that are too large to render fully on screen currently only export the visible rows; the export function is being updated to include all data rows regardless of display.
+*   The "Between" (range) operator is being added for the "Day of Month" value type in filters, allowing users to easily select a range of days without multiple filter steps.
+*   The "Other" group in Summarize Tables currently aggregates based on global frequency rather than group-specific frequency, making it difficult to identify top items within specific categories like years.
+*   The default position for "Show Value" labels in charts is being changed to "Automatic" to provide a better out-of-the-box visualization experience.
+*   The export buttons for chart data and images will now be disabled when no data is displayed, preventing users from triggering "Exporting chart failed" errors.
+*   The Filter List Dialog remains open after a user runs a chart filter, requiring an extra manual click to close it and slowing down the visualization workflow.
+*   There is a request to support vertical borders or grid lines in Pivot and Summarize tables to improve data readability. Adding these lines helps users more easily distinguish between different columns and values in dense tables.
+*   This update improves the hover pop-up in Chart, Pivot, and Summarize tables by adding "Copied!" feedback, increasing the balloon size, and fixing layout flickers for a smoother experience.
+*   Users cannot currently specify a date range for the axis width in scatter plots when using date columns, making it impossible to show specific time periods that include empty data.
+*   Users currently cannot customize the font size or color of suffix/prefix text independently in Number charts, limiting their ability to create visually optimized dashboards.
+*   Users need the ability to manually set font sizes in Number charts to prevent text from being cut off in dashboard layouts. This control ensures that key metrics remain fully visible and legible regardless of the container size.
+*   When showing detailed data for a logical column's percentage in a bar chart, the system shows both TRUE and FALSE rows instead of just the TRUE rows requested by the user.
 
-* Analytics: LightGBM is now available as a machine learning option in the Analytics menu.
-* Analytics: Factor Analysis: Added explanations for factor scores to help interpret results.
+### Dashboard
 
+*   The PDF print dialog in the Dashboard view will now correctly display in Japanese when the application's UI language is set to Japanese, improving accessibility for students.
+*   Users have requested the ability to customize the background and border colors of dashboards and charts to match their branding or reporting needs. This enhancement allows for more professional and visually consistent data presentations.
 
-* Dashboard: Made it easier to select rows by supporting double-click selection in Edit mode.
-* Dashboard: Added support for changing the background color.
+### Data Source
 
+*   Large CSV imports are slow because the system reads all rows by default; adding an "n\_max" option in the import dialog would allow users to preview and configure data much faster.
+*   The GitHub Issues data source currently lacks support for filtering by date ranges or status parameters like "open" or "merged." Adding these parameters will make the integration much more powerful for tracking project progress and developer productivity.
+*   The GitHub issues data source is limited to 10,000 records, preventing users from accessing older issues; a new filter parameter is needed to fetch historical data.
 
-* Note: Improved the style of the Table of Contents (TOC).
-* Note: The PDF print dialog is now shown in Japanese when the UI language is set to Japanese.
+### Data Wrangling
 
+*   A new R script linter is being implemented to validate the code generated by JS APIs across multiple steps, ensuring the stability and correctness of automated data transformations.
 
-* Parameter: Single Select List: Updated label text and adjusted the field position.
+### Note
 
+*   A new "double-click" interaction is being added to the Note editor to make it easier for users to switch between selecting a chart/number and selecting the entire layout row.
+*   The Table of Contents (TOC) style in Notes is being updated to match the improved v15 design, providing a cleaner and more modern navigation experience for v14.5 users.
 
-* General: Automatically deletes old log files to prevent excessive disk usage.
-* General: Improved the shutdown process to more reliably clean up resources.
-* General: Added automatic restart for Rserve when it crashes unexpectedly.
+### Others
 
+*   A setup guide and automated script are being developed for Intel Mac test environments to prevent inconsistent test results caused by manual configuration errors.
+*   CSV saving tests are failing on M1 Mac hosted instances due to differences in line endings and BOM handling, requiring updates to the test suite for ARM architecture.
+*   Exploratory will now automatically delete old log files that can accumulate and take up several gigabytes of disk space, helping users maintain their system storage.
+*   The application shutdown process is being enhanced to ensure all R resources and background processes are properly released, preventing system instability or orphaned tasks.
+*   This update improves the user interface by using localized help links for Japanese users and adding visual cues (green borders) to active filters and reference lines in charts.
 
-* Install: Mac: Added a check for write permissions on the Repository folder to prevent project creation errors.
+### Parameter
 
+*   The Single Select Parameter dialog is being updated to improve the Japanese label clarity and adjust the input field positions for a more intuitive configuration experience.
 
-### Bug fixes
+### Table View
 
-* AI: AI Function: The cached step was re-executed when duplicating a data frame.
-* AI: AI Function: AI Function requests failed due to an HTTP request error.
-* AI: AI Prompt: The outlier removal feature did not work.
-* AI: AI Prompt: Full-width symbols in instructions were automatically converted to half-width symbols in the generated R script.
-* AI: AI Prompt: Time-duration (hms) values were not converted correctly.
-* AI: AI Prompt: Entering multiple lines of text caused the text to overflow from the editor area.
+*   This enhancement adds a "Copied!" visual feedback checkmark and improves the tooltip placement and scrolling behavior in the Table View for better usability when handling long text.
 
+## Bug fixes
 
-* Data Source: Cloud Storage: The CSV import preview did not display columns beyond the 100th column even when the column limit was set to a higher value.
-* Data Source: Remote CSV: The file path and preview were not updated when changing the data source type.
-* Data Source: R Script: Preview data was not retained when re-opening the import dialog.
-* Data Source: GitHub: Unnecessary columns were imported after deselecting all columns and then reselecting a few.
-* Data Source: Google Spreadsheet: Data type conversion did not work correctly during import.
-* Data Source: Import: Dates in yyyy/m/d format resulted in missing values when the column was converted to a date type.
-* Data Source: Excel: The import dialog did not scroll horizontally when the file had multiple sheets and the first sheet was empty.
-* Data Source: Data types were automatically converted even when the "Automatically convert data types" option was disabled.
+### AI Function
 
+*   AI Function requests can fail with a "Failed to perform HTTP request" error due to network timeouts or peer connection failures with the exploratory.io server.
 
-* Data Wrangling: An error occurred when a step referenced the null() function.
-* Data Wrangling: Cancelling a SQL Import or Publish job took an unexpectedly long time.
-* Data Wrangling: Cancelling a data processing operation took too long.
-* Data Wrangling: Shift-clicking to select multiple steps did not work when clicking on a step token.
+### AI Prompt
 
+*   A "could not find function 'null'" error occurs in AI-generated transforms when an uncommitted step change causes the command generator to produce invalid R code.
+*   AI prompts incorrectly use the `hms()` function instead of `as_hms()` when converting time-stamped strings, leading to errors that require manual "Auto Fix" to resolve.
+*   Entering multiple lines of code in the AI Prompt editor causes the text to overflow and the cursor to disappear, requiring an auto-expanding text area for better visibility.
+*   The AI data wrangling assistant incorrectly converts full-width Japanese brackets to half-width in the generated R script, causing text cleaning operations to fail on Japanese text.
 
-* Chart: Reference Line: The X-axis reference line label was duplicated when multiple Y-axis columns were selected.
-* Chart: Table: Saving a chart with a large table was very slow.
-* Chart: Table: The hover popup was cut off for long text values.
-* Chart: Color column levels disappeared when "Limit Values" was applied on the X-axis.
-* Chart: Area: The X-axis date scale was misaligned when using Repeat By.
-* Chart: Pivot Table: The Total column did not follow the sort order when columns were sorted.
-* Chart: Pivot Table: An error occurred when rendering a Pivot Table with numeric value columns.
-* Chart: Pivot Table: An error occurred when rendering certain Pivot Table configurations.
-* Chart: Pivot Table: Totals and subtotals were not included when exporting to Excel or copying to the clipboard.
-* Chart: Summarize Table: Group column values were missing after the first row when exporting to CSV.
-* Chart: Scatter: Clicking a data point did not show detail data when the Y-axis decimal digit setting was 0.
-* Chart: The Show Detail view for a logical column percentage chart displayed incorrect values.
-* Chart: Show Value: The arrow indicator was not displayed when the threshold was set to 0.
-* Chart: Show Value: Auto-positioned labels appeared at wrong positions for data points with NA values.
-* Chart: Filter / Reference Line: Disabled conditions were still shown in the chart preview.
-* Chart: Pie: The chart title was not shown on each pie when using Repeat By.
-* Chart: Scrolling to the bottom of a table and then using the mouse wheel caused the view to jump back to the top.
+### Analytics
 
+*   Users encounter an infinite loading spinner when trying to view the underlying data table for Correlation Analytics, blocking them from inspecting the statistical results.
 
-* Analytics: Correlation: The correlation table was not displayed in the Analytics view.
+### Chart
 
+*   A "returnsNumericValue" error in Pivot Tables occurs when measure definitions are missing or corrupted, and a preventive fix is being added to handle these invalid column states.
+*   Applying "Limit Values" on the X-axis causes Factor levels in the Color assignment to disappear, leading to inconsistent color coding across different charts in a dashboard.
+*   Area charts with date scales become misaligned when using the "Repeat By" function with X-axis synchronization turned off, causing data to appear in the wrong time periods.
+*   Disabled filter conditions and reference lines still appear in the chart preview text, which is misleading for users who expect the preview to reflect only active settings.
+*   Exporting map images from a Note fails with an "image data is empty" error, though it works from the Chart View, hindering users who need to include maps in their reports.
+*   Hover pop-ups in tables are cut off when rows are at the top of the screen or contain long text, preventing users from reading the full content of a cell.
+*   In bar charts with multiple Y-axis values, setting a reference line on a date-type X-axis causes the label to duplicate when the "Label Only" display option is selected.
+*   In Pivot Tables, the "Total" column does not respect the sort order applied to other columns, resulting in a mismatch between the displayed values and their corresponding totals.
+*   Pivot table exports to Excel or the Clipboard currently omit totals and subtotals, forcing users to use CSV export if they need the calculated summary rows.
+*   Pivot tables with a single measure and row totals enabled can fail with an R error because the grand total calculation incorrectly converts a data frame into a vector.
+*   Scatter plots fail to show detailed data when a point is clicked if the Y-axis decimal digits are set to a specific number, showing a "No Data" message instead.
+*   Setting Y-axis decimal points to 0 in a scatter plot causes the "Show Detail" filter to lose precision, resulting in an empty data table because the filter no longer matches the raw data.
+*   Summarize Tables exported to CSV incorrectly show missing values for group labels after the first row, while Excel exports handle the repeated labels correctly.
+*   Switching tabs while a Table chart is active can take up to 30 seconds due to slow thumbnail generation, significantly hindering the user experience when working with large tables.
+*   The Y-Axis marker sub-menu and Column LOV are currently misaligned vertically, creating a disjointed interface that makes navigation less intuitive.
+*   Titles for individual facets are currently missing when using the "Repeat By" function with Pie charts. Restoring these titles is crucial for users to identify which category each specific pie chart represents in a faceted visualization.
+*   Users cannot currently hide the trend arrows in Error Bar or Histogram charts even when setting thresholds to 0; a new "Show Arrows" checkbox will be added to fix this.
+*   Users want the option to visualize area charts without stacking values, starting each color from the zero axis. This allows for a clearer comparison of individual trends across different categories within the same chart.
+*   When chart values contain NAs, the "Automatic" label positioning can place text in random locations on the chart, which is confusing for users.
 
-* Dashboard: PDF Export: Number chart sub-metrics were not formatted correctly, Pivot Table color formatting was not applied, and Map charts did not appear.
+### Dashboard
 
+*   Dashboards do not always export correctly to PDF when using the browser's print menu, leading to visual inconsistencies in the charts. Resolving this is important for users who need to share static, high-quality reports of their dashboards with stakeholders.
 
-* Note: The main metric value was incorrect when exporting a Number chart with metrics to Word.
-* Note: The search widget immediately lost focus while typing.
-* Note: Number charts were not fully displayed in a two-column layout.
-* Note: Images with absolute paths were not displayed when pasting Markdown.
-* Note: The right side content disappeared in a two-column layout.
-* Note: Map: Exporting the chart as an image failed with a "Chart image data is empty" error.
-* Note: Pasted Markdown text was not formatted correctly.
-* Note: R Code Block: Text could not be selected in the Preview tab.
-* Note: R Script Block: No output or error message was shown after running an R script block.
-* Note: The editor became blank and unresponsive for certain notes.
-* Note: Charts showed "No Data to Display" incorrectly when a note was opened.
-* Note: Exporting a note containing Number charts to Word format failed.
-* Note: Sankey Diagram: The chart appeared blank in the note preview and on the published page.
-* Note: Chord Diagram: The chart output was not returned and an error appeared in the preview.
+### Data Source
 
+*   The "Automatically convert data types" checkbox is being ignored during JSON and R script imports, forcing data type changes even when the user has disabled the option.
+*   The conditional file import tool fails to correctly handle Japanese characters with diacritics (濁点), making it impossible to filter files that contain specific Japanese strings.
+*   The Excel import dialog fails to scroll horizontally if the first sheet is empty, as the system incorrectly calculates a negative width for the preview table.
+*   The Google Spreadsheet import fails to correctly convert data types (e.g., Character to Numeric) during the initial import phase, requiring users to add extra transformation steps later.
+*   The import dialog fails to convert "yyyy/m/d" date formats (without leading zeros) to Date types, resulting in missing values unless the user converts them after import.
+*   The Job Window will now automatically restart the R session if it detects an "invalid status" or null results during SQL queries, improving the reliability of database imports.
+*   The R Script import dialog does not persist preview data when reopened, unlike CSV imports, forcing users to re-run scripts to see data samples.
+*   When changing a remote CSV data source to a different file or type, the file path and preview do not update correctly, which can lead to confusion or importing the wrong data.
+*   When importing a CSV with over 100 columns from Google Drive, the preview fails to display columns beyond the 100th even if the limit is set higher, preventing users from verifying all data before import.
+*   When importing GitHub issue data, deselecting all columns and then selecting only a few results in unnecessary hidden columns being imported, leading to bloated data frames.
 
-* Parameter: The parameter did not return the correct result when it had a dependency on a session parameter.
-* Parameter: The default parameter value did not match the value from the referenced data frame.
-* Parameter: A process would not complete when a date parameter was set to a future date.
+### Data Wrangling
 
+*   Shift-selecting multiple steps in the wrangling left pane fails if the user clicks on the step's token (icon), making it tedious to manage large numbers of steps.
+*   The "Remove Outliers" function is failing to work as expected in certain datasets, preventing users from easily cleaning their data for more accurate statistical analysis.
 
-* Export: Excel: Exporting to Excel caused a "some content issues" error requiring the repair dialog.
+### Note
 
+*   Certain R script blocks (like those using the diffdf package) may return an empty result without showing an error message, leaving users confused about why the script failed.
+*   Executing specific R code for Sankey diagrams can result in blank previews or error messages in notes and dashboards. Fixing this issue is essential for users who rely on custom Sankey visualizations to map data flows correctly.
+*   Exporting a Note containing Number charts to a Word file can fail with a logical coercion error, preventing users from completing their reports.
+*   Images using absolute file paths in Markdown do not display correctly when pasted into Notes, which disrupts the workflow for users generating content via AI or external editors.
+*   Number charts placed in a two-column layout are cut off at the bottom in Preview or Published modes, often due to the chart icon appearing on mouse-over and triggering a scrollbar.
+*   Number charts with metrics show incorrect main values when exported to MS Word due to a data parsing error in the export function, leading to inconsistent reporting.
+*   Pasting Markdown text into the Note editor sometimes fails to format correctly, ignoring syntax like headers or lists and requiring manual correction.
+*   PDF exports of Notes currently suffer from formatting issues in Number chart metrics, missing color formatting in Pivot tables, and maps not appearing at all.
+*   Some charts in Notes incorrectly show "No Data to Display" until the user manually clicks into the chart's editor tab, a bug that will be addressed with an auto-refresh fix.
+*   Specific Notes can become completely blank and unresponsive in the editor due to corrupted metadata, requiring manual cleanup to restore the user's work.
+*   The search widget in Notes loses focus after typing only a few characters, making it impossible for users to effectively search for specific content within their documents.
+*   Users are unable to select or copy text within the Preview Tab of an R Code Block in Notes, making it difficult to reuse output or verify specific results.
+*   Using a two-column layout in Notes can cause the right-side chart area to disappear or turn blank if certain text formatting or deletion actions are performed, potentially breaking the note.
+*   Using the `circlize` package in an R code block can cause the R process to hang or crash, leading to "There is another R process running" errors in the Note.
 
-* Project: The "custom packages not found" warning was shown incorrectly when opening a project.
-* Project: Restoring from history failed due to a git index.lock file conflict.
+### Others
 
+*   Automated tests for DataFrameFacade and CatalogIO are showing failures on Windows due to path handling and system-specific differences that need to be resolved.
+*   Exploratory fails to persist the "Offline Mode" setting after a restart, forcing users to manually toggle it back on every time they open the application without an internet connection.
+*   Rserve may crash with a connection error, and users currently need to restart the app manually. Implementing an auto-restart feature for Rserve would ensure continuous operation and a smoother user experience.
+*   Users are unable to attach .log files in the Intercom support chat within the app despite security settings allowing them, making it harder to share diagnostic information.
 
-* Publish: Publishing content with a Database connection from an EDF or EPF file failed with a "connection not found" error.
+### Parameter
 
+*   Applying a date parameter for "today" or a future date can cause the process to hang indefinitely in certain configurations, preventing users from updating their data.
+*   Parameter default values can become out of sync with the values referenced in a data frame, leading to situations where "Reset" does not return the parameter to the expected state.
+*   Parameters that depend on session parameters (like login user) may not update their default values correctly until manually executed, leading to initial results that don't match the filter.
 
-* General: Offline mode was not retained after restarting Exploratory.
-* General: A popup overlapped with the data frame menu when hovering over a data frame name.
+### Project
+
+*   Exploratory will now check for write permissions on the repository folder before attempting to create a project, providing a clearer error message if access is denied.
+*   Restoring a project from history can fail if a "git index.lock" file exists, often caused by a previous crash or another process locking the repository.
+*   The data frame pop-up overlaps with the main menu when a user tries to rename or edit a data frame, creating a frustrating interface where menu items are hidden.
+*   Upgrading to v14.4 can trigger a false "custom packages not found" warning and cause the project list window to disappear after an auto-fix, disrupting the startup flow.
+
+### Publish
+
+*   Canceling long-running SQL imports or publishing tasks currently takes a full minute due to a hard-coded wait; this will be replaced with a status polling system for faster cancellation.
+*   Exporting certain pivot tables to Excel can result in a "content issue" error that requires a repair dialog, likely due to special characters or multi-language data handling.
+*   Publishing content that uses BigQuery OAuth connections can fail if the project was imported from an EDF/EPF, as the connection ID may not match the new environment.
+*   The "Cancelling" state for background jobs like publishing can persist for a long time, making it difficult for users to know if the operation has actually stopped.
+
+### Table View
+
+*   A bug causes the table scroll position to reset unexpectedly when using the mouse wheel after dragging the scroll bar to the bottom. Fixing this will provide a more stable and predictable navigation experience when inspecting large datasets.
+*   Windows users experience a bug where using the mouse wheel after scrolling to the bottom of a table causes the view to jump back to the top, making data inspection difficult.
+
 
 
 ## Version 14.4
