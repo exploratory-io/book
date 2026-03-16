@@ -20,6 +20,10 @@ The Exploratory Desktop app provides various AI-powered features to improve the 
 
 For details on the scope of information sent and its destination, please refer to the [Privacy Page](https://exploratory.io/privacy/).
 
+## Will data published to the Exploratory Server be used for training purposes?
+
+The data is simply stored on the server; Exploratory does not utilize it for any purpose, including AI training.
+
 # Subscription / License / Price / Payment
 
 ## Where can I find licensing / pricing information?
