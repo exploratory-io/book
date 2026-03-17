@@ -3,7 +3,7 @@
 
 ## Version 14.6
 
-Released on 3/16/2026
+Released on 3/17/2026
 
 ### Enhancements
 
@@ -42,38 +42,6 @@ Released on 3/16/2026
 * Parameter: Two LOVs were showing when selecting Parameter with the Between operation instead of one.
 
 * General: When trying to open Exploratory with a Public Plan, an error "Cannot read properties of undefined" was recorded in the log file.
-
-## Version 14.6
-
-Released on 03/13/2026
-
-### Enhancements
-
-* Data Wrangling: Case When: Improved the error message when a condition is specified as a logical vector instead of a two-sided formula.
-* Data Wrangling: If Else: Improved the error message when unexpected arguments are passed to if_else().
-* Data Wrangling: Updated the input field label from "Target Column" to "Target Columns" to better reflect that multiple columns can be selected.
-
-* Chart: Reference Line: Disabled reference lines are now dimmed in the left tool menu for better visual clarity.
-* Chart: Area: Bar: Updated the Japanese labels for "Stack" and "Overlay" layout modes.
-* Chart: Table View: Added a "Chart" button in the column summary pop-up to quickly create a chart from the selected column.
-
-* Analytics: Random Forest: Added an ROC Curve section to the result template.
-
-
-* General: Added fallback error handling for file export operations (Markdown, Summary CSV, Summary Excel).
-
-### Bug fixes
-
-* AI: AI Prompt: Fixed a layout issue where the input field and run button were misaligned.
-
-* Chart: Fixed an issue where an unexpected X-axis reference line appeared on a chart that had no reference line configured.
-* Chart: Fixed a customer error where dplyr::bind_rows failed due to a type mismatch between character and double columns.
-* Chart: Fixed a customer error where dataframe_check reported that a column or object does not exist.
-
-* Analytics: Random Forest: Fixed a customer error where train_model failed when the target variable had only one class in the training data.
-
-* Analytics: XGBoost: XGBoost test results were inconsistent on M1 Mac.
-* General: An error occurred when opening Exploratory with a Public Plan.
 
 ## Version 14.5
 
