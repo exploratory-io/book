@@ -2,7 +2,9 @@
 
 # Version 14.6
 
-Released on 3/17/2026
+## Release Date
+
+3/17/2026
 
 ## Enhancements
 
