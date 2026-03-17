@@ -1,47 +1,72 @@
 # Release Note
 
-
-## Version 14.6
+# Version 14.6
 
 Released on 3/17/2026
 
-### Enhancements
+## Enhancements
 
-* Data Wrangling: Updated input field label from "Target Column" to "Target Columns".
-* Data Wrangling: Changed the URL link for Regular Expression Help.
-* Data Wrangling: Added a "Chart" button in the Summary pop-up.
-* Data Wrangling: Added "Missing Values" to NA label in Summary.
 
-* Chart: Area/Bar: Updated the Japanese label for "Stack" and "Overlay".
-* Chart: Reference Line: Added ability to dim or gray out disabled reference lines in the left tool menu.
+### Note
 
-* Analytics: Random Forest: Added ROC Curve section in the template.
+*   The loading spinner flickers during AI data generation in the Note Editor, creating a distracting user experience that needs to be consolidated into a single "requesting to AI" state.
 
-* Note: AI Note Editor: Consolidated the spinner while generating CSV data for AI.
+### Summary View
 
-* General: Added fallback error handling for all file export operations.
+*   The 'NA' label was updated as 'NA (Missing Values)'.
 
-### Bug fixes
 
-* AI: AI Prompt: The display position of the Input field and Run button was misaligned.
+### Table View
 
-* Data Wrangling: Window Calculation: Value field with POSIXct column appeared unselected when a Character column was set as Group.
+*   Added a Chart button inside the summary chart in Table View so that users can quickly create a chart.
 
-* Chart: Marker Style Menu was no longer accessible after introducing the Marker Shortcut Menu.
-* Chart: When exporting chart image fails, it now tries saving as a new file.
-* Chart: Step cache save failed when a pinned chart depended on a disabled predecessor step.
-* Chart: Pivot: When exporting Pivot Table data including NA in the value to CSV, it failed with a type mismatch error.
-* Chart: An unexpected X-Axis Reference Line appeared on charts without being set.
-* Chart: When chart export to image failed, Exploratory now checks file and folder permissions, retries, and shows an appropriate error if it still fails.
 
-* Analytics: An error "train_model: multiclass training requires more than one class" occurred.
+## Issue fix
 
-* Note: When the TOC was too long, the TOC could not be scrolled to show the rest.
-* Note: AI Note Editor: The bottom border was cut off.
+### AI Prompt
 
-* Parameter: Two LOVs were showing when selecting Parameter with the Between operation instead of one.
+*   The AI prompt input field and run button are misaligned and overlap with other text after execution, creating a broken UI that hinders further interaction.
 
-* General: When trying to open Exploratory with a Public Plan, an error "Cannot read properties of undefined" was recorded in the log file.
+### Chart
+
+*   Chart image exports fail when complex R transformations crash or time out, requiring a more robust fallback mechanism to save alternative files when errors occur.
+*   Exporting charts to images can fail without clear guidance, necessitating a check for folder permissions and an automatic retry with alternative filenames to ensure the user's work is saved.
+*   Pinned charts fail to render when they depend on a predecessor step that has been disabled or deleted, causing "object not found" errors that disrupt the user's workflow.
+*   The introduction of a new marker shortcut menu has made the detailed marker style menu inaccessible, preventing users from customizing line and circle settings in charts.
+
+### Analytics
+
+*   The ROC Curve section was missing from the Random Forest, preventing users from evaluating model performance through this standard metric.
+
+### Note
+
+*   The AI Note Editor dialog cuts off the bottom border when moved upwards, resulting in a broken UI appearance that affects the visual integrity of the editor.
+*   When the Table of Contents (TOC) is too long, users cannot scroll to see the hidden items, making it impossible to navigate through long notes.
+
+### Others
+
+*   Users with a Public Plan encounter a "teams" property error when trying to open the Desktop edition, which is incompatible with the free tier and prevents the application from starting.
+
+### Parameter
+
+*   Selecting a parameter with the 'Between' operator incorrectly displays two drop-downs and a broken UI, preventing users from properly selecting range parameters.
+
+### Data Wrangling
+
+*   A UI bug in window calculations causes the value field to appear unselected when a character column is grouped with a POSIXct column, leading to confusion about the current selection state.
+*   Exporting pivot tables with NA values to CSV fails due to a data type mismatch between character and double types, blocking users from saving their analyzed data.
+*   Pivot table exports fail with a type mismatch error when a column contains both numeric values and character-based display strings like "(NA)", preventing successful data output.
+
+### Documentation
+
+*   The help button for regular expressions points to outdated URLs, which prevents users from accessing the most current and relevant documentation in their preferred language.
+
+
+### Others
+
+*   Improved the fallback error handling for various file export operations, which can lead to silent failures or unhelpful error messages when users encounter folder permission issues.
+
+
 
 ## Version 14.5
 
