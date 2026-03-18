@@ -1,6 +1,6 @@
 # Release Note
 
-# Version 14.6
+# 14.6
 
 ## Release Date
 
@@ -70,7 +70,7 @@
 
 
 
-## Version 14.5
+## 14.5
 
 Released on 03/05/2026
 
