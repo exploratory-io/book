@@ -196,6 +196,8 @@
      * [Number](viz/singlevalue.md)
      * [Word Cloud](viz/wordcloud.md)
      * [Word Cloud (日本語)](viz/wordcloud_ja.md)
+     * [Custom (R)](viz/r-custom.md)
+     * [Custom (R) (日本語)](viz/r-custom_ja.md)
    * Features
      * [Trend Line](viz/trend-line.md)
      * [Reference Line](viz/reference-line.md)
