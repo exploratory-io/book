@@ -21,7 +21,6 @@
 
 ### Analytics
 
-*   An error occurred when running AI Summary with Chi-Squared test.
 *   The results of the paired Wilcoxon test were different from R's results.
 
 ### General
