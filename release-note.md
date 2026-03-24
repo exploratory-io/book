@@ -1,5 +1,34 @@
 # Release Note
 
+# 14.7
+
+## Release Date
+
+3/23/2026
+
+## Enhancements
+
+### Chart
+
+*   The comment icon now turns green when a viewer comment exists, not just a creator comment.
+
+
+## Issue fix
+
+### AI Function
+
+*   An error occurred in AI Functions when execution was canceled and then re-executed.
+
+### Analytics
+
+*   An error occurred when running AI Summary with Chi-Squared test.
+*   The results of the paired Wilcoxon test were different from R's results.
+
+### General
+
+*   Analytics became slow due to a memory leak after running AI Summary and switching data frames.
+
+
 # 14.6
 
 ## Release Date
