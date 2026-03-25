@@ -13,7 +13,18 @@
 *   The comment icon now turns green when a viewer comment exists, not just a creator comment.
 
 
+
+### AI Analytics
+
+*   Improved the display of raw data examples in AI Summary when topic model data has already been tokenized.
+
+
 ## Issue fix
+
+
+### AI Wrangling
+
+*   The AI Data Wrangling dialog returned blank results on the first execution after a clean install.
 
 ### AI Function
 
