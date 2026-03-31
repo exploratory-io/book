@@ -1,5 +1,24 @@
 # Release Note
 
+# 14.8
+
+## Release Date
+
+3/30/2026
+
+## Issue fix
+
+
+### Data Wrangling
+
+*   Renaming a Data Frame, Step, Note, or Dashboard page resulted in an "a.getMarkdownContent is not a function" error.
+
+
+### Analytics
+
+*   A stale data message did not go away after running analytics.
+
+
 # 14.7
 
 ## Release Date
