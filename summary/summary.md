@@ -256,6 +256,7 @@ Available Analytics types vary depending the data type of the target column.
 ### Exit Correlation Mode
 You can click "Close" button to exit the Correlation mode.
 
+![](images/cor7.png)
 
 
 
@@ -265,4 +266,3 @@ Coming soon.
 
 
 
-![](images/cor7.png)
