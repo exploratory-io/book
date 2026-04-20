@@ -25,7 +25,7 @@ Correlation coefficients were calculated for all variable combinations and compi
 When "Show Correlation Coefficients" is checked, correlation coefficients are displayed on the heatmap.
 
 
-## About Correlation Coefficients
+## How to Read Correlation Coefficients
 
 Correlation coefficients take values between -1 and 1, indicating the strength and direction of correlation between variables.
 
@@ -47,55 +47,90 @@ Guidelines for interpreting correlation coefficients are as follows:
 * The algorithm for correlation coefficients is **Pearson's correlation coefficient** by default. However, if there is a monotonic but not linear relationship between variables, **Spearman's rank correlation coefficient** can more appropriately capture the correlation. The algorithm can be changed from [Settings](//analytics/settings/do_cor_argo) in Analytics.
 * Spearman's rank correlation coefficient converts original values to rank values and then calculates correlation coefficients using the same method as Pearson's correlation coefficient. For details on these two correlation coefficients, please refer to [this note](https://exploratory.io/note/exploratory/2-BsF1LQF4).
 
-# Correlation Significance
+# Statistical Significance
 
-<% if (!repeat_by) { %>
-Hypothesis testing is also performed for each variable combination's correlation coefficient to determine significance. The results are summarized in a scatter plot according to the following rules:
+We conducted hypothesis tests to determine whether the correlation coefficients for all pairs of variables are statistically significant.
+
+{{data}}
+
+## How to Read the Metrics
+
+<% if (algorithm == 'pearson') { %>
+
+* Correlation Coefficient (Pearson’s Correlation)
+  * The correlation coefficient measures the strength and direction of linear relationship between two variables.
+  * Values range from -1 to 1, where 1 indicates perfect positive correlation, -1 indicates perfect negative correlation, and 0 indicates no correlation.
+
+* P-value
+  * The P-value indicates how likely it is to observe the given correlation under the assumption that there is no correlation (correlation coefficient = 0).
+  * In general, a value below 5% (0.05) is considered statistically significant.
+  * The value ranges from 0 to 1, and a smaller P-value indicates stronger evidence against the null hypothesis.
+
+* Statistic (t-value)
+  * The t value is the test statistic used to evaluate whether the correlation coefficient is significantly different from 0.
+  * It is calculated from the correlation coefficient and its standard error.
+  * Larger absolute values indicate stronger evidence against the null hypothesis (no correlation), and correspond to smaller P-values.
+
 <% } else { %>
-Hypothesis testing is also performed for each variable combination's correlation coefficient to determine significance. The results are summarized in a scatter plot for each <%= repeat_by %> according to the following rules:
+
+* Correlation Coefficient (Spearman’s Rank Correlation)
+  * The correlation coefficient measures the strength and direction of a monotonic relationship (increasing or decreasing trend) between two variables.
+  * It is calculated based on the ranks (order) of the data rather than the raw values, making it less sensitive to outliers.
+  * The value ranges from -1 to 1, where 1 indicates a perfect positive monotonic relationship, -1 indicates a perfect negative monotonic relationship, and 0 indicates no monotonic relationship.
+
+* P-value
+  * The P-value indicates how likely it is to observe the given correlation under the assumption that there is no correlation (correlation coefficient = 0).
+  * In general, a value below 5% (0.05) is considered statistically significant.
+  * The value ranges from 0 to 1, and a smaller P-value indicates stronger evidence against the null hypothesis.
+
+* Statistic
+  * The statistic is used to test whether the correlation coefficient is significantly different from 0 (no correlation).
+  * Depending on the data conditions, one of the following is used:
+
+  * S value (Sum of Squared Rank Differences)
+    * This is the sum of squared differences between the ranks of each observation.
+    * Smaller values indicate closer agreement in ranks and stronger evidence against the null hypothesis.
+    * Because S depends on the sample size, it is mainly used internally for hypothesis testing rather than direct interpretation.
+
+  * Z value (Normal Approximation)
+    * This is a standardized version of the correlation coefficient, transformed to follow a standard normal distribution.
+    * It is typically used when the sample size is large or when there are tied ranks.
+    * Larger absolute values indicate stronger evidence against the null hypothesis (no correlation), and correspond to smaller P-values.
+
 <% } %>
 
-* Red: Positive correlation
-* Blue: Negative correlation
-* Gray: Not significant
-* Circle size: Correlation coefficient
+## How the Test Works
 
-{{significance_chart:0.8}}
+The hypothesis test for correlation evaluates whether an observed correlation could have occurred by chance.
 
-## About Hypothesis Testing
+* For Pearson correlation, a t-Test is used.
+* For Spearman correlation, the method depends on the data conditions:
+  * When the sample size is small (as a guideline, n < 50) and there are no tied ranks: Exact Test
+  * Otherwise: Approximate Test (normal approximation)
 
-A t-test is used for correlation coefficient hypothesis testing, and P-values are calculated for each correlation coefficient. P-values indicate the probability that the correlation coefficient is due to chance based on data variability.
+In these tests, a P-value is calculated for each correlation coefficient. The P-value represents the probability of observing the given result under the null hypothesis that there is no correlation (correlation coefficient = 0).
 
 * If the P-value is less than <%= baseline_p_pct %>%, the calculated correlation coefficient can be said to be statistically significant.
 * If the P-value is greater than <%= baseline_p_pct %>%, the calculated correlation coefficient cannot be said to be statistically significant.
 
-The current significance level (P-value) is set to <%= baseline_p_pct %>% (<%= baseline_p %>), but this can be changed from [Settings](//analytics/settings) in Analytics.
+The current significance level (P-value threshold) is set to <%= baseline_p_pct %>% (<%= baseline_p %>), but this can be changed from [Settings](//analytics/settings).
 
-## Correlation Coefficient and Test Result Data
 
-Correlation coefficients, P-values, etc. for all variable combinations are listed in the following table.
+## Visualizing the Results
 
-{start_lazy_show_hide}
-### Table
-{{data}}
+<% if (!repeat_by) { %>
+The results of the hypothesis tests are visualized in a scatter plot based on the following rules:
+<% } else { %>
+The results of the hypothesis tests are visualized in a scatter plot for each <%= repeat_by %>, based on the following rules:
+<% } %>
 
-## Statistical Indicators Explanation
+* Red: Statistically significant positive correlation
+* Blue: Statistically significant negative correlation
+* Gray: Not statistically significant
+* Circle size: Magnitude of the correlation coefficient
 
-* Correlation Coefficient
-  * The correlation coefficient is a statistic that indicates the strength and direction of linear relationship between two variables.
-  * Values range from -1 to 1, where 1 indicates perfect positive correlation, -1 indicates perfect negative correlation, and 0 indicates no correlation.
+{{significance_chart:0.8}}
 
-* P-value
-  * P-value indicates the probability that the observed correlation coefficient is due to chance.
-  * Generally, if less than 5% (0.05), it is judged to be statistically significant.
-  * Values range from 0 to 1, where smaller P-values indicate higher statistical significance.
-
-* t-value
-  * The t-value is a statistic used in t-tests for correlation coefficient testing, calculated as "correlation coefficient ÷ standard error of correlation coefficient".
-  * If data size is large, the t-value tends to be large; if small, the t-value tends to be small.
-  * The larger the absolute value, the higher the possibility that the correlation coefficient is not 0 (no correlation).
-  * The larger the absolute value of the t-value, the smaller the P-value becomes.
-{end_lazy_show_hide}
 
 # Appendix
 
@@ -111,4 +146,4 @@ Correlation coefficients, P-values, etc. for all variable combinations are liste
 
 `;
 
-module.exports = template; 
+module.exports = template;
