@@ -257,3 +257,12 @@ Available Analytics types vary depending the data type of the target column.
 You can click "Close" button to exit the Correlation mode.
 
 ![](images/cor7.png)
+
+
+
+## Outlier Mode
+
+Coming soon.
+
+
+

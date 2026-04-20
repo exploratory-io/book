@@ -1,5 +1,63 @@
 # Release Note
 
+# 14.8
+
+## Release Date
+
+3/30/2026
+
+## Issue fix
+
+
+### Data Wrangling
+
+*   Renaming a Data Frame, Step, Note, or Dashboard page resulted in an "a.getMarkdownContent is not a function" error.
+
+
+### Analytics
+
+*   A stale data message did not go away after running analytics.
+
+
+# 14.7
+
+## Release Date
+
+3/23/2026
+
+## Enhancements
+
+### Chart
+
+*   The comment icon now turns green when a viewer comment exists, not just a creator comment.
+
+
+
+### AI Analytics
+
+*   Improved the display of raw data examples in AI Summary when topic model data has already been tokenized.
+
+
+## Issue fix
+
+
+### AI Wrangling
+
+*   The AI Data Wrangling dialog returned blank results on the first execution after a clean install.
+
+### AI Function
+
+*   An error occurred in AI Functions when execution was canceled and then re-executed.
+
+### Analytics
+
+*   The results of the paired Wilcoxon test were different from R's results.
+
+### General
+
+*   Analytics became slow due to a memory leak after running AI Summary and switching data frames.
+
+
 # 14.6
 
 ## Release Date
