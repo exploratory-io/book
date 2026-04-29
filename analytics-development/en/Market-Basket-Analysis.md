@@ -89,7 +89,7 @@ The following network diagram visually represents the patterns of frequent combi
 *   The circles (nodes) represent "items", and considering the lines extending from the items, they represent "combinations of items".
 *   The lines show the tendency of combinations (which items appear together with other items).
 *   The direction of the arrow indicates direction, meaning that if the starting item is selected, the ending item is also likely to be selected.
-*   The size of the point represents the "frequency of that combination (support)", and a larger point means a combination with a higher frequency (probability).
+*   The size of the point and the thickness of the line represent the "frequency of that combination (support)", and larger/thicker indicates a combination with a higher frequency (probability).
 *   The color of the point represents the "certainty of being selected together (confidence)", and a darker color indicates a higher likelihood that "if one is present, the other is also selected".
 
 ## Scatter Plot
