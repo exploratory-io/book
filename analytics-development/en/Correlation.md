@@ -88,14 +88,14 @@ We conducted hypothesis tests to determine whether the correlation coefficients 
   * Depending on the data conditions, one of the following is used:
 
   * S value (Sum of Squared Rank Differences)
-    * This is the sum of squared differences between the ranks of each observation.
-    * Smaller values indicate closer agreement in ranks and stronger evidence against the null hypothesis.
-    * Because S depends on the sample size, it is mainly used internally for hypothesis testing rather than direct interpretation.
+      * This is the sum of squared differences between the ranks of each observation.
+      * Smaller values indicate closer agreement in ranks and stronger evidence against the null hypothesis.
+      * Because S depends on the sample size, it is mainly used internally for hypothesis testing rather than direct interpretation.
 
   * Z value (Normal Approximation)
-    * This is a standardized version of the correlation coefficient, transformed to follow a standard normal distribution.
-    * It is typically used when the sample size is large or when there are tied ranks.
-    * Larger absolute values indicate stronger evidence against the null hypothesis (no correlation), and correspond to smaller P-values.
+      * This is a standardized version of the correlation coefficient, transformed to follow a standard normal distribution.
+      * It is typically used when the sample size is large or when there are tied ranks.
+      * Larger absolute values indicate stronger evidence against the null hypothesis (no correlation), and correspond to smaller P-values.
 
 <% } %>
 
