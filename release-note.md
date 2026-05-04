@@ -1,5 +1,209 @@
 # Release Note
 
+## Version 15.0
+
+Released on 05/04/2026
+
+### Enhancements
+
+* AI: AI Prompt: Improve the explanation of the expected results.
+* AI: Wrangling Flow Chart: Output the results in sections, one for each group of steps.
+* AI: Wrangling Flow Chart: Improve the output of the Wrangling flowchart.
+* AI: AI Summary for Chart: Chart pin button wraps around.
+* Data Wrangling: AI Step Summary: Move flow diagram inline and add AI-suggested note title
+* AI: Add audience level dropdown to "Create Analysis Report" type in AI Note Editor
+* AI : AI function fails on 0-row data frame from upstream filter
+* AI: Chart AI Summary: Improve the data provided in the number chart.
+* AI: Improve AI Chart Summary with persistence and stale detection
+* AI: AI Chart: Improves the data it provides.
+* Note: AI Note Editor: Update v14.9 user prompt to replace chart_interpretation_enabled with task-type-based chart interpretation
+* Note: AI Editor: The prompt text from another Note shows up when the custom prompt is selected
+* Note: AI Editor: Keep the previously generated output during the same session
+* Note: AI Editor: Keep the previously used prompt text
+* Note: AI Editor: Don't show the chart interpretation text when not explicitly requested in the custom prompt
+* Analytics: AI Summary: System and analytics type prompt templates
+* Data Wrangling: Flow Chart: Add AI Summary Button
+* Data Wrangling: Step: Support AI Summary for Step (2nd iteration)
+* Chart: AI Summary: Add AI Summary to explain the chart and the tables including Pivot
+* AI: Support data frame overview generation.
+
+* Data Source: MongoDB: Data import fails in build version (R4.5).
+* Data Source: On Data File List, add description for Folder Selection and File Selection.
+* Data Source: Support non-standard date format to recognize it as date data type
+
+* Data Wrangling: Step Diagram: Show Data Source Description
+* Data Wrangling: Step Diagram: Chapter support for stepExplanations
+* Data Wrangling: Step Diagram: Improve the section name in the AI ​​Summary.
+* Data Wrangling: Step Diagram: Show "All" for Stripe null Date Range Type
+* Note: Support Size Option for Flow Diagram Widget
+* Data Wrangling: Step Diagram: Update SQL Data Source Tooltip style and centralize it.
+* Data Wrangling: Step Diagram: Uptake the latest system prompt for Data Source Description
+* Data Wrangling Step Diagram: Step Diagram: UI update (Take 3)
+* Data Wrangling: Step Diagram: UI update (Take 2)
+* Data Wrangling: Step Diagram and Parameter Icons alignment is off when you collapse the right hand steps.
+* Data Wrangling: Step Diagram: When generating summary, ensure to expand dialog and use 50% width for diagram and 50% width for summary report
+* Data Wrangling: Step Diagram: Updates the UI for showing charts and analytics
+* Data Wrangling: Step Diagram: When refreshing a steps from Step Dialog, spin should not cover the Step Dialog.
+* Data Wrangling: Git Commit Messages Clean Up
+* Data Wrangling: Step Diagram: Remove the unnecessary dot at the bottom of the last node
+* Data Wrangling: Step Diagram: Connector Length is too short when the previous step has multiple tokens, align the description in a node to that of a step.
+* Data Wrangling: Step Diagram: Consolidate AI buttons and remove "Save" button from footer
+* Data Wrangling: Step Flow Diagram: When saving a note, use a class name and associated CSS instead of setting styles to elements directly
+* Data Wrangling: Refine AI flow diagram UI and summary navigation
+* Data Wrangling: The order of the outlier types in the filter dialog should be; IQR -> SD -> Percentile.
+* Note: Support Flow Diagram with Mermaid JS (Phase 2)
+* Note: Support Flow Diagram in a Note with Mermaid
+* Data Wrangling: Step description is not fully shown inside a token
+* Data Wrangling: AI-generated script fails when it includes install.packages() or library() calls
+* Data Wrangling: Flow Chart / AI Step Summary: 3rd iteration
+* Data Wrangling: Flow Chart: Add Flow Chart button to all the charts inside Dashboard / Note
+* Data Wrangling: Flow Chart: Add 'Generate Text with AI' button to generate step title and description with AI
+* Data Wrangling: Flow Chart: Show Flow Chart icon at Step Header Area
+* Data Wrangling: Flow Chart: Show Flow Chart icon at each step when mouse over.
+* Data Wrangling: Show a flow chart
+* Data Wrangling: For a cached step, show the ‘Run’ button when mouse-over even when the step is not selected.
+* Data Wrangling: Automatically document data wrangling flows (steps).
+* Data Wrangling: Support Flow Visual for data wrangling
+
+* Summary View: UI breaks when switching mode
+* Summary / Table View: Support Drag-and-Drop Row Filter to Step Filter
+* Chart: Pivot Table: Show the year text without thousand separator.
+* Chart: Pivot Table: Preserve the column width to be the same when a variable is assigned to the column
+* Chart: Show Detail: Some text are not aligned
+* Chart: Show Detail: Update text to make it more user friendly
+* Chart: Show column resize handle when hovering grid line in Pivot Table body
+* Chart: Table: Show filtered/total row count when filtering by keyword
+* Chart: Filter: Support Drag and drop the chart filter to step filter
+* Chart: Add hover tooltip to delete buttons in filter and reference lines
+* Chart: Reference line: Unset reference line menu shows up
+* Chart: Improve comment hover popup — remove Delete, smart tab default, consistent labels
+* Chart: Custom Chart: Handle more R output types, support the default fallback output for unknown output types.
+* Chart: Custom Chart: Support data/image export.
+* Chart: Bar: Value label position is misaligned when position is set to "Auto"
+* Chart: Show Detail: Support 'Search' in Show Detail dialog
+* Chart : Show Detail: Show bars and sort order when clicking column header
+* Chart: Show Detail: UI updates for the dialog
+* Publish: Custom Chart Support
+* Chart: Pivot Table: Support drag-and-drop column resizing
+* Chart: Pivot / Summarize Table: Show current column width in the Row Formatting dialog
+* Chart: Pivot Table: Header and value rows are misaligned and headers are truncated
+* Chart: Pivot Table: POSIXct data with 00:00:00 time values are not formatted correctly with the default setting.
+* Chart: Pivot Table: Grid Line alignment shifts when there are multiple columns.
+* Chart: Pivot: Summarize Table: Support text alignment option for Value setting.
+* Chart: support saving as a data frame on the Show details.
+* Chart: Pivot Table: Summarize Table: Show the default size of the column width in the format dialog
+* Chart: Show Detail: Support creating a new data frame in the Export menu.
+* Chart : Custom Chart support with user-defined R code
+* Chart: Show Detail: Use Bigger Font Size and make the pop-up size bigger
+* Summary: Support Outlier Mode in Summary View
+* Summary: Support Keep/Exclude/Show Details
+
+* Analytics: Update Analytics Template for Correlation
+* Analytics: Add line thickness explanation to Market Basket Analysis guided analytics
+* Analytics: Decision Tree: Support algorithm selection (CHAID, QUEST, etc.)
+* Analytics: Text: Should be able to adjust the column width for the text column
+
+* Notes/Dashboards: Distinguish save-trigger labels (Refresh/Preview/Publish/Export/Close/Auto) in History Dialog
+* Note: R Script: Show a better waiting message in a preserved space
+* Note: Support Mermaid JS in Note
+* Notes/Dashboards: Include R code block output in AI custom prompt
+
+* Project: Open Project Information dialog immediately with async loading; show tooltip only when project name is truncated
+* General: Increase the offline grace period from 20 days to 30 days.
+* Project: Add History, Information icons at the top for easier access
+* Project: Clicking on Project Name inside the project shows loading icon before opening the dialog
+* Server: Users with access history are dropped when email addresses are pasted as comma-separated list in share settings
+* General: Removed obsolete R functions from Exploratory Package
+* Repository: Clean up the content inside Exploratory's repository
+* General: Upgrade nwjs to 0.86.0 or newer
+* R: Update R (4.5) and R packages.
+
+### Bug fixes
+
+* AI Auto Fix: Chart: Applying the auto fix for renaming Y-axis columns results in an error if the chart error is caused by the dropping pin action.
+* Data Wrangling / AI: Support token-level disable/enable in AI Auto Fix
+* AI Auto Fix: Font size alignment and Error Dialog Style Fix.
+* AI Auto Fix: Support Auto Fix in Chart View
+* Data Wrangling: AI Auto Fix preserves backtick escaping for column names with spaces/special chars
+* AI Auto Fix: Add regular expression validation and UI improvement
+* AI Auto Fix: Fix git stash failure after .df import
+* AI Auto Fix: Gather Auto Fix request Information and it's result in MognoDB
+* AI Auto Fix: Do not show the Auto Fix button for known errors (e.g. Network Error, Error Code 3, etc) that AI cannot fix
+* Server: AI Auto Fix: Add base API for error auto fix at each data wrangling command dialog
+* AI Auto Fix: Support "Out of Scope" case and navigate users to Ask AI
+* Data Wrangling: Step Diagram: After the auto fix, step node position moves and the connector lines overlaps with the node & update error message syntax in a error step box
+* AI Auto Fix: Add Auto Fix and Ask AI button for Data Wrangling Command Dialogs
+* Data Wrangling: Step Diagram: Show Error Text and Auto Fix button at the bottom
+* AI Auto Fix: Chart: Show error and Auto Fix / Debug button for cases where errors are currently suppressed
+* AI Auto Fix: Chart: Show error and Auto Fix button in the chart area when Custom Calculation references a column with changed data type
+* AI Auto Fix: Chart: Add Auto Fix button inside the Custom Calculation dialog validation message
+* AI Auto Fix: Add test case for cor() function error when all rows are NA in a group
+* AI Auto Fix: Add test case for deleted parameter causing filter step error
+* AI: Support chart error autofix
+* AI Auto Fix: Embed the syntax of functions in Exploratory into the prompt.
+* AI Auto Fix: Create a system that learns patterns that cannot be corrected by automatic correction.
+* AI: Error Auto Fix: The output format will be changed to a JSON array so that users can select from multiple suggestions.
+* Note: AI Note Editor: Change button label from Cancel to Close
+* General: Include AI Prompt information to error report sent to Intercom
+* AI: Data Wrangling: Customer Error: loadNamespace: there is no package called 'imputeTS'
+* AI : AI Summary for Chart fails with cache not found error
+* AI: Chart AI Summary: The data provided in the XmR chart does not include the XmR_Rule1-3 columns.
+* Data Wrangling: AI Function: Fix spacing inside Tooltip Hover
+* AI Auto Fix: Chart: Support Auto Fix in Chart Filter and Custom Function dialogs.
+
+* Data Source: Google BigQuery import fails with package bigrquery must be installed error.
+* Data Source: Fix false network error dialog when Another R Process Running occurs
+* Data Source: CSV: Date type reverts to Character on re-import
+* Data Source: CSV: Import Dialog doesn't show data type menu after reopening the dialog
+
+* Data Wrangling / AI : Fix R script editor theme, Edit mode explanation text, and header style
+* Data Wrangling: Filter: Duplicate Rows related operation doesn't end correctly when cancelled
+* Data Wrangling: Summarize: Columns are not suggested in expression editor after deleting an incorrect custom function and recreating it.
+* Data Wrangling: After switching UI Language, project windows do not honor the change
+* Data Wrangling: Step Diagram: Fix spinner hang when selecting a failed step
+* Data Wrangling: Step Diagram: If you drag the top edge of the dialog upward to change its height, the header area of the dialog gets cut off.
+* Data Wrangling: Step Summary Flow: UI issue fixes
+* Data Wrangling: Fix trailing comma in fct_relevel() when factor output has no text-type levels
+* Data Wrangling: Flow Chart: 2nd iteration (Default Text Update, Style Fix, Save behavior change)
+* Data Wrangling: Support Auto-Fix for errors at a step level
+
+* Chart: Filter: Show an error when the column in Filter doesn't exist
+* Chart: Custom Calculation validation does not allow functions outside of the function reference (e.g., zoo::rollmean)
+* Summary View: Unify row filter popover UI with Chart View filter popover
+* Summary View: Fix button overlap on narrow toolbar when grouping is active
+* Note: Dashboard: Custom chart with non-image output doesn't render correctly
+* Chart: Customer Error: dplyr::mutate: Can't transform a data frame with duplicate names
+* Chart: Custom Chart: Custom chart should not be able to refer to other data frames
+* Chart: value text on plot area should also disappear if you click legend item
+
+* Analytics: Correlation: Fix nested bullet list not rendering correctly in Spearman statistics section
+* Analytics: Fix Create New tab blocked while busy and Run not clearing the data-changed warning
+* Analytics: Correlation: Fix Column Name for the statistics
+* Analytics: Customer Error: Analytics View: Cannot read properties of null (reading 'name')
+* Analytics: Word Count (Text Data): Image export menu is not appearing for co-occurrence network chart
+* Analytics: K-Means Clustering fails with unreadable error when data contains missing or infinite values
+* Analytics: Logistic Regression shows cryptic error when target variable has values outside 0-1 range
+* Analytics: Random Forest: Add 'mtry' and 'max.depth' parameters and change the default for 'number of trees'
+
+* Dashboard: Customer Error: dashboard_generation: output_folder_setup_failed
+* Dashboard: Error: Error in UseMethod("unite") : no applicable method for 'unite' applied to an object of class "c('double', 'numeric')"
+
+* Note: Clicking the Link does not open Link Setup Dialog
+* Note: Right after opening a project, opening a note shows there is another R running error
+* Note: Fix race condition where opening a note during prewarm erases note content
+* Note: After closing the project and reopen, the sort order looks broken.
+* Note: Do not show a confirmation dialog, just auto save, and open a new note
+
+* General: When Exploratory is running, Cmd+R Shortcut key does not work for other Apps.
+* General: Fix dialog resize to expand only toward dragged edge
+* General: Chat: The chat window is corrupted and can't scroll.
+* Project: Fix empty screen when opening project with custom R packages after R upgrade
+* General: When both New Version Available message and Setup Finished Successfully messages are shown, it does not fit in one line
+* General: Windows installer shows "stop application" error even when no Exploratory processes are running
+* Package: Fix false orphan package error on Project List after installing package in project
+* General:  Investigate AI-Assisted extraction of self-contained functionality from external R/node libraries
+
+
 # 14.8
 
 ## Release Date
