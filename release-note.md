@@ -1,5 +1,140 @@
 # Release Note
 
+# 15.0
+
+## Release Date
+
+5/11/2026
+
+## New Features / Enhancements
+
+### General
+
+*   Now you don't need to pre-install Rosetta before installing Exploratory for Apple Silicon macs.
+*   Now Exploratory starts up much faster. You'll see the difference especially when you have many projects.
+*   Upgraded the underlying R version to 4.5.
+
+### Summary View
+
+*   We have added 'Outlier Mode" feature to the Summary View. You can click on 'Outlier' button at the top and select a variable (column) you want to analyze the outlier for. It will show how the outlier values in the target variable are related to all the other variables with highlighted charts and summary statistics. This helps users quickly identify and analyze data points that fall outside normal ranges.
+*   The Summary View now support "Keep," "Exclude," and "Show Details" functionality directly from the chart (histograms / bar charts). You can click on the bars to create the Summary View level row filter (Keep / Exclude) or show the detail data that is related to the selection (Show Detail).
+*   You can Drag-and-Drop the Row Filters in Summary and Table views to Data Wrangling Step area. It allows users to easily convert ad-hoc view filters into data frame level filters in the data wrangling steps, ensuring consistency across different views.
+
+### Data Wrangling
+
+*   We have added "Data Wrangling Step Diagram" feature. Now users can click on Step Diagram button at the top of Step pane to show a visualized data wrangling steps including joined / merged data frames. The Step Diagram supports complex scenarios like branching, joining, and staled/disabled steps. This comprehensive visualization helps users debug and understand intricate data pipelines, including identifying where errors occur.
+*   We also added "Automatic Documentation for Data Wrangling Steps'. Now users can click 'Generate Text with AI' button inside the Step Diagram dialog to automatically 1) generate user friendly step titles and descriptions and 2) generate a document to summarize and explain what is happening with the Data Wrangling Steps. This helps you (and your team members when you share) quickly understand complex data frames created by others without having to inspect every step.
+*   You can save the generated document about the Data Wrangling Steps as a Note, which allows you to edit the document to suits your requirements.
+*   We have added "AI Auto-Fix" feature. When you encounter an error in your Data Wrangling Steps, you will see 'AI Auto Fix' button. By clicking on the button, AI will diagnose the problem and suggest solutions. You can select one of the suggested solutions and it will run an internal API to fix the problem and update the Data Wrangling Steps.&#x20;
+*   By upgrading the underlying R and the R packages, we are observing that the overall performance is improved especially around Window Calculation, case\_when / ifelse functions. This performance improvements affects the steps such as: Create Calculation, Window Calculation, Calculation with Condition, Replace Values with Condition.
+*   AI Prompt for Data Wrangling: We have removed the "specific example" section to make the AI-generated explanations cleaner and to be generated faster.
+
+### Chart
+
+*   We have added "AI Summary" feature for all the chart types. This allows users to quickly get AI-driven insights and interpretations from the chart while exploring their data in the chart view.
+*   We have added "AI Auto Fix" feature for chart errors, similar to how it handles data wrangling errors. This helps users quickly resolve issues with their visualizations such as the invalid column name assignment errors, custom calculation syntax erros, etc. through a guided, automated interface.
+*   We have added a "Custom Chart" type where users can write their own R code to generate visualizations. This provides unlimited flexibility for advanced users to create specialized charts not available in the standard UI.
+*   You can now drag and drop chart filters directly into the steps area to apply them to the underlying data. This feature makes it easy to reuse a specific chart filter across multiple visualizations within the same data frame.
+*   Pivot & Summarize Tables / Table: You can use drag-and-drop to resize the column width.
+*   Pivot & Summarize Tables will now support text alignment options for values, headers, and totals.
+*   Pivot & Summarize Tables: It shows years without a thousand separator by default when using date columns with 'Extract Year' option. This ensures that years like "2025" are displayed correctly as dates rather than formatted numbers like "2,025."
+*   Chart now shows an error message when a Filter is referencing a non-existent column. This prevents users from being misled by charts that appear valid but are actually ignoring broken filter criteria.
+*   Pivot & Summarize Tables: Now it shows all the column widths in Pivot & Summarize Tables remain consistent when a column is assigned to 'Column', preventing misleading visual comparisons especially when displaying bars within the table.
+*   Show Detail dialog: Added "Create Data Frame" menu under the Export button to allow users to quickly turn detailed data into a new data frame.
+*   Show Detail dialog: Added a search box to allows users to quickly find specific records within the detailed data view of a chart result.
+*   Show Detail dialog: Now you can resize the dialog.
+*   Show Detail dialog: You can now click column headers in the "Show Detail" dialog to sort data, with the default order changed to descending, and it will visualize the values using bars.
+
+### Analytics
+
+*   We have added the support of 'AI Summary' for all the analytics types. This allows users to quickly get AI-driven summary for the information presented in each Analytics.
+*   You can now drag and drop Analytics filters directly into the steps area to apply them to the underlying data. This feature makes it easy to reuse a specific Analytics filter across multiple Analytics within the same data frame.
+*   We have added 'Number of Variables Sampled per Split' and 'Maximum Tree Depth' parameters in the Properties dialog for Random Forest, and changed the default number of trees to 200. These options allow users to better fine-tune their models for improved predictive performance.
+*   We have updated the Analytics report for Correlation to fix some of the metric names with Spearman method and reorganize hypothesis test sections.
+*   You can now be able to adjust the column width with drag-and-drop for tables under Analytics view.
+
+### Note
+
+*   We have improved the performance for opening the Note Editor window.
+*   We have added "Step Diagram' button to charts inside Note. You can now click on the Step Diagram button to see how the numbers and data are generated tracing all the data wrangling steps back to its source. This provides transparency and helps users understand the lineage of the data they are viewing in a note.
+*   An "Audience Level" dropdown has been added for 'Create Analysis Report' under in the AI Note Editor. This allows the AI to tailor the complexity and tone of the generated summary to the intended reader's expertise.
+*   AI Note Editor: Custom prompt text and the previously generated output in the AI Editor will now be preserved even after restarting the application.&#x20;
+*   The AI Editor will no longer show chart interpretation text unless it is explicitly requested in a custom prompt. This ensures the AI strictly follows user instructions and provides cleaner output for specific tasks.
+*   (Change Behavior) It used to show a confirmation dialog when you try to open another note without closing the currently opened note. It now automatically saves the current note and open a new one without showing a confirmation dialog.&#x20;
+*   We have added "Flow Diagram" widget to Note Editor. It uses [Mermaid JS](https://mermaid.js.org/intro/syntax-reference.html) so you can write any diagram markdown following [Mermaid JS syntax](https://mermaid.js.org/intro/syntax-reference.html) to generate visual data flow representations directly in the notes.
+
+### Dashboard
+
+*   We have improved the performance for opening the Dashboard Editor window.
+*   We have added "Step Diagram' button to charts inside Dashboard. You can now click on the Step Diagram button to see how the numbers and data are generated tracing all the data wrangling steps back to its source. This provides transparency and helps users understand the lineage of the data they are viewing in a Dashboard.
+
+### Data Source
+
+*   CSV: Improved the automatic data type detection logic to support various date formats such as 1) dates using slashes (/) and others as separators and 2) dates with various orders (ymd, mdy, etc.).
+
+### Project
+
+*   History and Information buttons are added to the top menu area (Left hand side top). This makes it easier to access to these features.
+*   Improved the performance for opening the Project Information dialog.
+*   Now Exploratory removes unnecessary temporary files (temp files, old log files, older R versions) in the Exploratory's repository to release the disk storage at the starting up time.
+
+### Version Control
+
+*   Improved the commit (save) messages to help users to understand and track specific changes in their project history.
+
+
+## Issue fix
+
+### Install
+
+*   The Windows installer incorrectly reports that Exploratory is running even when it is not, preventing users from upgrading or installing the software.
+
+### Data Wrangling
+
+*   Canceling the Duplicate Rows dialog leaves an empty step that blocks subsequent filter operations.
+*   The expression editor fails to suggest columns after a custom function is deleted and recreated.
+*   AI functions fail when an upstream filter results in zero rows, causing a crash instead of gracefully handling the empty data set.
+
+### Chart
+
+*   Bar chart value labels are misaligned when set to "Auto".
+*   Custom calculations are blocked if they use functions not in the standard reference, preventing advanced users from utilizing specialized R packages like 'zoo'.
+*   Grid lines in Pivot Tables shift and misalign as the number of columns increases.
+*   Pivot tables fail when data frames have duplicate column names, blocking users from generating charts until they manually rename columns.
+*   POSIXct time values of 00:00:00 are hidden by default in Pivot Tables, which can lead to data misinterpretation.
+*   The reference line menu shows "Undefined" entries for lines that were never set.
+*   Value labels are still shown on the chart even when a related item is deselected in the chart legend.
+
+### Analytics
+
+*   K-Means clustering failed with unreadable errors when data contains missing or infinite values.
+*   The export menu for co-occurrence network charts in the Word Count analysis does not show up.
+*   The Spearman statistics column is incorrectly labeled as a rho value.
+
+### Note
+
+*   Custom prompts from a previously opened note persist in the AI Note Editor.
+
+### Dashboard
+
+*   Dashboard generation fails due to folder setup errors, likely caused by permission or path issues.
+
+### Data Source
+
+*   Date type setting reverts back to Character type when re-importing data even users set it explicitly in the Data Import dialog.
+*   The CSV import dialog fails to show the data type menu upon reopening.
+
+### Project
+
+*   Opening a project with custom R packages after an upgrade results in an empty screen.
+
+### Chat Support
+
+*   The chat window in the desktop app is corrupted, preventing users from scrolling or sending new messages.
+
+
+
+
 # 14.8
 
 ## Release Date
