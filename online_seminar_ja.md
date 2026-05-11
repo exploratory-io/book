@@ -12,9 +12,9 @@ AIにデータを渡せば、KPIやチャート、さらにはレポートまで
 
 Exploratory v15では、この課題に向き合うために、
 
-Reproducibility（再現性）
-Readability（可読性）
-Reliability（信頼性）
+* Reproducibility（再現性）
+* Readability（可読性）
+* Reliability（信頼性）
 
 という「3つのR」を重要なテーマとして開発を進めてきました。
 
