@@ -1,5 +1,33 @@
 # Release Note
 
+## 15.0
+
+Released on 5/16/2026
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-15.0.5.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-15.0.5.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+### Enhancements
+
+* Content: Now you can view published charts, notes, and dashboards that include R Custom Charts.
+* Schedule: Now you can schedule contents that include AI Function steps.
+* Schedule: Now you can schedule contents that include R Custom Charts.
+
+### Bug Fixes
+
+* Content: Updating the thumbnail image from the Settings dialog of a published note failed with a "Failed to update parameter settings" error.
+* Content: Charts created with R code using d3.js (such as Sankey or Circular Chord Diagram) did not show up correctly on published notes and dashboards.
+* Content: The green indicator lamp showing that another user had a project open remained permanently lit after the original user's account was transferred to another user.
+* Content: When sharing a published dashboard with users on the public plan, viewers who were given the "Can Update Share Setting" permission did not see the Share button.
+* Content: When pasting a comma-separated list of email addresses into the share settings, users who already had access history were dropped from the registered list.
+* Content: Data Catalog publish unnecessarily regenerated parquet files because step flags were not cleared, causing timeout errors on large data.
+* Content: A UTF-8 BOM is now added to CSV files exported from interactive charts on published notes and dashboards, so that they open correctly in Excel without character corruption.
+* Content: The 'All' option has been removed from the content type filter on the Insight Search page, and the default has been changed to Note.
+* Data Source: BigQuery import with a service account returned null instead of raising an error when the query failed, making the failure invisible to the user.
+* Admin: The horizontal scroll bar is now always visible on the user table in the Admin User page so that actions like Delete User are easier to discover.
+
 ## 14.2
 
 Released on 3/6/2026
