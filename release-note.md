@@ -1,5 +1,36 @@
 # Release Note
 
+# 15.1
+
+## Release Date
+
+5/17/2026
+
+## Issue fix
+
+### Install
+
+*   Users encounter a "File already exists" error immediately after upgrading to v15 or when opening existing projects, which can block access to the application.
+
+### Data Source
+
+*   A redundant catalog loading process caused the UI to freeze for up to a minute during SQL re-imports on complex projects. This fix optimizes the loading logic to ensure the application remains responsive and recalculation starts without delay.
+*   SQL data re-import speed has significantly decreased from 5 seconds to over a minute following the v15 upgrade.
+*   When a data re-import fails due to an error in a subsequent step, the application displays a confusing error dialog that references the wrong operation. 
+
+### Chart
+
+*   The "X" button on the filter dialog occasionally fails to close the window.
+*   The boundary line blinks excessively when dragging filters or steps, particularly at the chart or analytics level.
+*   The filter dialog fails to open on the first click if it was previously closed without any input, requiring a second click to respond.
+
+
+### Note
+
+*   Clicking the "Edit Name" menu option for a note incorrectly opens both the rename dialog and the note editor simultaneously.
+*   Users may encounter an empty note immediately after upgrading to v15, though the content reappears after restarting the project.
+
+
 # 15.0
 
 ## Release Date
