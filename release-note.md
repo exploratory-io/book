@@ -1,5 +1,24 @@
 # Release Note
 
+# 15.2
+
+## Release Date
+
+5/18/2026
+
+## Enhancements
+
+### Chart
+
+*   AI Summary for charts now uses "Estimated Range" instead of "Predicted Range" and includes the probability type (e.g., 90% range) in the summary text.
+
+## Issue fix
+
+### Project
+
+*   Fixed an issue where importing an updated project from Exploratory Server failed with a "Project Not Found" error when clicking the Update button on the project list.
+
+
 # 15.1
 
 ## Release Date
