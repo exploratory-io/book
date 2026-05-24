@@ -1,5 +1,91 @@
 # Release Note
 
+# 15.3
+
+## Enhancements
+
+### Data Source
+
+* Oracle DB: A dedicated Fetch Buffer Size (FBS) field is being added to the Oracle connection settings to improve data import performance. This setting allows for easier optimization of network round-trips and faster data loading. The default size is set to 10mb, which can improve 100x to 300x better performance depending on the data size.
+* Treasure Data: Now we support SQL queries containing DROP TABLE commands, which are often necessary for complex Treasure Data workflows. This allows users to manage temporary tables directly within their SQL scripts without hitting table limits.
+
+### Data Wrangling
+
+* Create Calculation: Now you can add comments at the last line of the calculation starting with "#" symbol.
+
+### AI Prompt
+
+* Now hitting Enter key doesn't trigger AI Prompt execution. Instead, you can hit Cmd/Ctrl+Enter to execute. This prevents users from accidentally trigger AI Prompt execution by hitting the Enter key while typing.
+
+### Chart
+
+* The Scatter chart trend line metrics now can show correlation coefficient value on the plot.
+* Now you can adjust the thickness of bars in bar charts even when there is only one single bar.
+
+### Project
+
+* A new setting is being added to the System Configuration UI to allow users to manually adjust memory allocation. This is useful when you want to allocate more memory size for R processes in order to resolve "vector memory exhausted" errors.
+* Now you can disable all the AI features in the System Configuration. This is important for users who have strict data privacy requirements or organizational policies regarding the use of AI.
+
+## Issue Fixes
+
+### Data Source
+
+* Importing EDF files was experiencing significant slowness in the previous version. This fix addresses the performance issues in the EDF import path to ensure users can quickly load their shared data files.
+* Oracle data imports are getting stuck in a "waiting" state or taking an excessively long time compared to other SQL tools. This fix addresses the performance bottleneck in the Oracle import process to ensure timely data retrieval.
+* Parquet file imports fail with a misleading CSV encoding error when the data contains NUL bytes. This fix provides accurate error messaging and addresses the underlying Arrow-to-R conversion issue to allow successful Parquet imports.
+* R process conflicts occur when attempting to re-import multiple SQL data sources simultaneously. This fix manages the R process execution more effectively to prevent conflicts and ensure successful batch re-imports.
+* The "Update" button in the SQL editor becomes unresponsive when a query returns zero rows, preventing users from saving their query changes. This fix allows users to save and update their SQL scripts even when the current result set is empty.
+* The SQL import dialog can close unexpectedly and trigger a "getDataType" error when trying to reopen the editor if the previous execution returned no data. This fix prevents the UI crash and ensures the editor can be reopened reliably.
+
+### Data Wrangling
+
+* The performance was slow for Data Re-import when there were complex data updates.
+* Placing a mathematical operator at the start of a new line in the Mutate dialog causes R to throw a parsing error. This fix involves internally removing line breaks during execution so that multi-line formulas are processed correctly without manual adjustment.
+
+### AI Function
+
+* The AI Function menu appears even when connected to a server that does not support AI features, resulting in empty submenus. This fix hides the AI-related menus when the feature is unavailable to avoid user confusion.
+
+
+### Chart
+
+* Chart titles and legends overlap in Note documents when the legend is positioned at the top, even though they appear correctly in the chart view. This fix corrects the rendering logic in Notes to ensure clear and readable chart layouts.
+* R code entered in a 'Custom' chart disappears if the user navigates to another data frame without clicking preview or saving. This fix ensures that custom chart code is preserved during navigation to prevent loss of work.
+* The "Axis Tick Step" option does not function correctly when a chart is configured with the "Repeat By" setting. This fix ensures that custom tick intervals are applied consistently across all repeated chart panes.
+* The "Tick Label Auto Scaling" option is missing when using the "Repeat By" feature in charts. This fix ensures that axis labels can be automatically scaled for better readability even in multi-pane chart layouts.
+* The download button on charts disappears when the chart title is hidden in a dashboard. This fix ensures that the download functionality remains available to users regardless of the title visibility settings.
+* The UI becomes unresponsive and displays green border lines after a user exports a chart in EDF format. This fix resolves the post-export state issue to ensure the application remains interactive without requiring a restart.
+
+### Analytics
+
+* The ANCOVA analysis UI fails to reflect multiple covariates in the resulting model, only processing the first one selected. This fix ensures that all specified covariates are correctly included in the statistical calculation.
+
+
+### Note
+
+* Edits made in the AI Note Editor are lost without warning when a user switches to a different note from the main window. This fix implements a silent auto-save for template edits during note navigation to ensure user work is preserved.
+* The AI Editor fails to remember the last selected template or edited text when the dialog is closed and reopened. This fix ensures the editor state is preserved so users don't have to re-select and re-edit their prompts.
+* The cursor disappears from the Note Editor when a user switches to another window and returns, requiring an extra click to resume typing. This fix ensures the editor regains focus automatically to provide a more seamless writing experience.
+* The cursor disappears in the Note editor after clicking the bullet list button, requiring a manual click to resume typing. This fix ensures the cursor remains active and correctly positioned so users can continue writing without interruption.
+* The selected prompt template and input text disappear when navigating between different notes. This fix ensures that the AI Note Editor maintains its state across note selections to improve workflow continuity.
+* Users are unable to restore previous versions of a note from history after the content has been replaced by AI-generated text. This fix ensures that the history and restore functionality work correctly even after AI interventions.
+* Flow Diagram blocks can leak detached DOM elements and tooltip instances, potentially leading to increased memory usage over time. This fix implements proper cleanup logic when components unmount to ensure application stability and performance.
+
+### Parameter
+
+* Dashboard performance regarding parameter panes and hierarchical updates has significantly degraded since version 15. This fix addresses the slow response times and unresponsiveness of the parameter UI to restore a smooth user experience.
+
+### Project
+
+* The project can be corrupted or overwritten with stale metadata due to concurrent writes from multiple windows or dangling staged updates. This fix hardens the write process by ensuring fresh reads before updates and implementing stricter control over staged commits to prevent data loss.
+* Windows users encounter a "connection error" caused when updating the project by sync'ing with the latest version at the server. This fix ensures project synchronization run successfully on Windows.
+
+### Install
+
+* The R installation process hangs at the middle of process during the v15 upgrade for some users, preventing users from completing the update. This fix addresses the installation bottleneck to ensure a smooth transition to the new version.
+
+
 # 15.2
 
 ## Release Date
@@ -35,7 +121,7 @@
 
 *   A redundant catalog loading process caused the UI to freeze for up to a minute during SQL re-imports on complex projects. This fix optimizes the loading logic to ensure the application remains responsive and recalculation starts without delay.
 *   SQL data re-import speed has significantly decreased from 5 seconds to over a minute following the v15 upgrade.
-*   When a data re-import fails due to an error in a subsequent step, the application displays a confusing error dialog that references the wrong operation. 
+*   When a data re-import fails due to an error in a subsequent step, the application displays a confusing error dialog that references the wrong operation.
 
 ### Chart
 
