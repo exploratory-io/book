@@ -55,12 +55,16 @@ The scope of information sent and the corresponding provider are as follows:
 
 | **AI Feature**    | **AI Service Provider** | **Main Content Sent**                                        |
 | ----------------- | ----------------------- | ------------------------------------------------------------ |
-| AI Data Wrangling | Google (Gemini)         | Prompts, column names, data types, and (if you choose) sample data |
+| AI Data Wrangling | Anthropic (Claude)      | Prompts, column names, data types, and (if you choose) sample data |
 | AI Function       | Google (Gemini)         | Prompts, column names, data types, and values from specified columns |
-| AI Summary        | Google (Gemini)         | Data from aggregated data used in charts that are included in the Analytics view  |
+| AI Summary        | Google (Gemini)         | Aggregated data from charts generated in Chart view and Analytics view |
 | AI Note Editor    | Google (Gemini)         | Prompts, text within the note, and aggregated data used in charts that are included in the note |
 
-_Note that currently, we are not using Anthropic (Claude) for our AI features. (2/25/2026)_
+### Disabling AI Features
+
+AI features can be disabled at the system level all at once. By unchecking **"Use AI Features"** in the AI tab of System Settings, you can disable all AI-related features across the application — including AI Data Wrangling, AI Function, AI Summary, and AI Note Editor — preventing any data from being sent to external AI services.
+
+For details on how to configure this, see [this post](https://community.exploratory.io/t/how-to-enable-disable-ai-features-in-exploratory/4246).
 
 ### Sample Data Control for "AI Data Wrangling"
 
@@ -68,11 +72,13 @@ For the **AI Data Wrangling (Data Wrangling with AI Prompt)** feature, you can c
 
 - **If you set the sample data size to a value greater than 0:**
 
-  A sample of your dataset is included in the prompt text sent to Anthropic’s AI service to improve the quality and relevance of the AI-generated suggestions.
+  A sample of your dataset is included in the prompt text sent to Anthropic's AI service to improve the quality and relevance of the AI-generated suggestions.
 
 - **If you set the sample data size to 0:**
 
   Only the column names and their data types (e.g., "numeric", "character", etc.) are included in the prompt. **No actual data values are sent.**
+
+For details on how to configure this, see [this post](https://community.exploratory.io/t/how-to-set-the-default-sample-data-size-for-ai-data-wrangling-at-the-system-level/4248).
 
 ### Data Privacy and Security
 
