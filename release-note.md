@@ -1,6 +1,49 @@
 # Release Note
 
+# 15.4
+
+## Release Date
+
+5/28/2026
+
+## Issue fix
+
+### Install
+
+*   When previewing Note showing a warning message that 'This version of Exploratory won't be opened because it's still being the Intel processor compatible version. It turned out that Exploratory itself was fully compatible with Apple ARM without a need of Rosetta, but the Pandoc binary bundled, which is used for Note, for Mac was still an x86\_64 executable. We have replaced it with Apple ARM compatible version.
+
+### Data Wrangling
+
+*   The Step Diagram dialog has a maximum width restriction that prevents users from resizing it beyond a certain point, limiting visibility for complex workflows.
+
+### Chart
+
+*   Users are experiencing significant performance lag and delays of 5 to 10 seconds when switching between different charts in the Chart View compared to previous versions.
+
+
+### Analytics
+
+*   Re-importing data after reopening a project causes XGBoost prediction steps to error out.
+
+### Dashboard
+
+*   Running a dashboard fails with an R object update error because a parameter's reference column was renamed, causing downstream steps to reference an undefined data frame.
+
+### Note
+
+*   Dynamic parameter value lists fail to update after re-importing data within a Note, requiring users to manually re-import the specific data frame that generates the parameter list.
+
+### R Package Management
+
+*   Attempting to install an already installed R package incorrectly triggers a "There is another R Process running" error instead of a more appropriate message stating the package is already installed.
+*   The R Package dialog prematurely closes after confirming a function name masking warning during package installation, and it should instead remain open to show the installation status.
+
+
 # 15.3
+
+## Release Date
+
+5/24/2026
 
 ## Enhancements
 
