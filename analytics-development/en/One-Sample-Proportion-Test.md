@@ -50,6 +50,9 @@ For the following groups, the difference is **not statistically significant** at
 
 # Chart
 
+{{probability_dist}}
+
+
 {{confidence_interval}}
 
 

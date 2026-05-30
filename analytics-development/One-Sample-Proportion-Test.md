@@ -48,6 +48,8 @@ const template = `
 
 # チャート
 
+{{probability_dist}}
+
 {{confidence_interval}}
 
 
