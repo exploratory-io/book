@@ -74,6 +74,10 @@ The chart below shows the standard normal distribution. The dotted line marks th
 
 {{probability_dist}}
 
+The chart below shows the same test on the scale of the proportion difference. It is the normal distribution of the difference under the assumption of no difference (centered at 0), with a standard deviation equal to the standard error. The dotted line marks the observed difference, and the shaded area is the critical region at the significance level. When the observed difference falls inside the shaded region, the difference in proportions is statistically significant.
+
+{{probability_dist_diff}}
+
 
 # Proportions by Group
 
