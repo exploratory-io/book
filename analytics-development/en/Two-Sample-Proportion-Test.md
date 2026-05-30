@@ -9,7 +9,7 @@ We examined whether the difference in proportions of <%= target_col %> between <
 {{summary_chart}}
 
 <% if (significant) { %>
-As a result, the P-value is **<%= p_value %>**, which is lower than the significance level <%= sig_level_pct %>% (0.<%= sig_level_pct === '5' ? '05' : sig_level_pct %>). Therefore, the difference in proportions of **<%= group_a %> (<%= prop_a_pct %>%)** vs **<%= group_b %> (<%= prop_b_pct %>%)** is statistically significant.
+As a result, the P-value is **<%= p_value %>**, which is lower than the significance level <%= sig_level_pct %>%. Therefore, the difference in proportions of **<%= group_a %> (<%= prop_a_pct %>%)** vs **<%= group_b %> (<%= prop_b_pct %>%)** is statistically significant.
 <% } else { %>
 As a result, the P-value is **<%= p_value %>**, which is greater than the significance level <%= sig_level_pct %>%. Therefore, the difference in proportions of **<%= group_a %> (<%= prop_a_pct %>%)** vs **<%= group_b %> (<%= prop_b_pct %>%)** is not statistically significant.
 <% } %>
