@@ -147,6 +147,10 @@ The chart below visualizes where the P-value (blue dotted line) is located in th
 
 The current significance level (P-value) is set to <%= baseline_p_pct %>% (<%= baseline_p %>), but this can be changed from the ["Settings"](//analytics/settings) in Analytics.
 
+The chart below shows the same test on the scale of the mean difference. It is the distribution of the difference under the assumption of no difference (centered at 0), rescaled by the standard error. The dotted line marks the observed difference, and the shaded area is the critical region at the significance level. When the observed difference falls inside the shaded region, the difference in means is statistically significant.
+
+{{probability_dist_diff}}
+
 ## Significance - Confidence Interval
 
 <% if (!repeat_by) { %>

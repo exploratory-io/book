@@ -50,8 +50,13 @@ For the following groups, the difference is **not statistically significant** at
 
 # Chart
 
+The chart below shows the standard normal distribution. The dotted line marks the standardized test statistic (Z value), and the shaded area is the critical region at the significance level. When the Z value falls inside the shaded region, the difference from the benchmark is statistically significant.
+
 {{probability_dist}}
 
+The chart below shows the same test on the scale of the proportion. It is the normal distribution of the sample proportion under the assumption that the proportion equals the benchmark (centered at the benchmark proportion), with a standard deviation equal to the standard error. The dotted line marks the observed proportion, and the shaded area is the critical region at the significance level. When the observed proportion falls inside the shaded region, the difference from the benchmark is statistically significant.
+
+{{probability_dist_prop}}
 
 {{confidence_interval}}
 
