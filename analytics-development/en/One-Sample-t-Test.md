@@ -50,11 +50,15 @@ For the following groups, the difference is **not statistically significant** at
 
 # Chart
 
+The chart below shows the t-distribution. The dotted line marks the observed t value, and the shaded area is the critical region at the significance level. When the t value falls inside the shaded region, the observed mean is statistically significantly different from the hypothesized mean.
+
 {{probability_dist}}
 
-This chart shows the same result on the mean scale: the probability distribution of the sample mean centered at the hypothesized mean, with the observed mean marked.
+The chart below shows the same test on the scale of the mean. It is the t-distribution of the sample mean under the assumption that the population mean equals the hypothesized mean (centered at the hypothesized mean), with a spread determined by the standard error. The dotted line marks the observed mean, and the shaded area is the critical region at the significance level. When the observed mean falls inside the shaded region, it is statistically significantly different from the hypothesized mean.
 
 {{probability_dist_mean}}
+
+The chart below visualizes the observed mean together with its confidence interval. When the confidence interval does not contain the hypothesized mean, the difference is statistically significant at the corresponding level.
 
 {{confidence_interval}}
 
