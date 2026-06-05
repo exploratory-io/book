@@ -1,21 +1,25 @@
 const template = `
-Using the selected variables, the data was classified into <%= cluster_number %> clusters (groups) with K-Means Clustering. You can change the number of clusters from [Settings](//analytics/settings/cluster_number).
 
-# Characteristics of Each Cluster
 
 <!-- AI_SUMMARY -->
 
-## Summary
+# Summary
+
+Data is clustered into <%= cluster_number %> clusters based on the selected variables. You can change the number of clusters from [Settings](//analytics/settings/cluster_number).
 
 <% if (normalize) { %>
-The following table summarizes the number of rows in each cluster and the average score (normalized value) for each variable used for the classification.
+The following table summarizes each cluster by its size, compactness, separation quality, and average values (normalized) of the variables used for clustering.
 <% } else { %>
-The following table summarizes the number of rows in each cluster and the average value for each variable used for the classification.
+The following table summarizes each cluster by its size, compactness, separation quality, and average values of the variables used for clustering.
 <% } %>
 
 {{summary}}
 
-* Excluded Rows - Any row with a missing value (NA) in any of the variables is excluded from the data. If the ratio of Excluded Rows is high, consider reviewing the variables to use or filling in the missing values.
+* Average Silhouette score indicates that the observations in the cluster are well matched to the cluster and clearly separated from other clusters.
+* A high percentage of negative Silhouette scores suggests that some observations may be closer to another cluster than to their assigned cluster.
+* Excluded Rows indicates how many rows are excluded due to missing value (NA). If the ratio of Excluded Rows is high, consider re-evaluate if the variables to be included.
+
+# Cluster Profile
 
 ## Radar Chart
 
@@ -70,7 +74,7 @@ The following is a visualization of the relationship between the '<%= category %
 
 # Data
 
-Based on the cluster classification results, we assigned a cluster ID to each row of the original data.
+A cluster ID is assigned to each observation (row) at the last column.
 
 {{data}}
 
@@ -110,4 +114,4 @@ Sometimes the elbow is not clear on the elbow curve. In such cases, you can look
 * When you want to cluster by an observation unit that is not a row in the current data, you first need to aggregate the data. You can find more details in [this note](https://exploratory.io/note/exploratory/K-Means-sfp4Syw0).
 `;
 
-module.exports = template; 
+module.exports = template;
