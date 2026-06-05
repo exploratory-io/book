@@ -75,7 +75,7 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
 
 
 {start_show_hide}
-## Explanation of Statistical Metrics
+## Metrics Explanation
 
 * t-value
   * The t-value is a statistic that indicates whether the difference between two means is due to chance or is truly different. It is the value obtained by dividing the difference between the means of the data at hand by the standard error.
