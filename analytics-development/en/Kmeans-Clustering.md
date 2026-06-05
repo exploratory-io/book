@@ -74,7 +74,18 @@ Based on the cluster classification results, we assigned a cluster ID to each ro
 
 {{data}}
 
-<% if (elbow_method_mode) { %>
+<% if (use_silhouette_method) { %>
+
+# Optimal Number of Clusters
+
+The Silhouette Method evaluates how well each data point fits its assigned cluster versus neighboring clusters. A higher silhouette score indicates better cluster separation. The optimal number of clusters is typically found at the peak average silhouette score.
+
+## Silhouette Scores
+
+{{silhouette}}
+
+<% } %>
+<% if (use_elbow_method) { %>
 
 # Optimal Number of Clusters
 
@@ -110,4 +121,4 @@ Sometimes the elbow is not clear on the elbow curve. In such cases, you can look
 * When you want to cluster by an observation unit that is not a row in the current data, you first need to aggregate the data. You can find more details in [this note](https://exploratory.io/note/exploratory/K-Means-sfp4Syw0).
 `;
 
-module.exports = template; 
+module.exports = template;
