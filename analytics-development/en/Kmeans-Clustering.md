@@ -44,7 +44,7 @@ To use the “Elbow Method” instead, or to hide this section, you can change t
 
 <% if (use_elbow_method) { %>
 
-# Choosing the Number of Clusters
+# Choosing Number of Clusters
 
 You can use the information from the Elbow Method to help identify candidate values for the number of clusters. The Elbow Method looks for the point where the decrease in within-cluster variation starts to become smaller as the number of clusters increases. This point often appears like an “elbow” in the curve and can be used as a candidate for the number of clusters.
 
