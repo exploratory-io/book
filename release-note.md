@@ -1,5 +1,47 @@
 # Release Note
 
+# 15.6
+
+## Release Date
+
+6/11/2026
+
+## Product Enhancement
+
+### Chart
+
+*   Now you can change the color of a trend line even when a column is not assigned to Color.
+
+
+### Note
+
+*   We have updated the Note and Dashboard settings to remember the "Reimport Data" preference from the previous session. This prevents users from accidentally publishing or running reports without reimporting data, saving time and reducing manual configuration errors.
+
+
+## Issue fix
+
+### Analytics
+
+*   When building a binary classification model with Random Forest, the application failed to show an error message and returned a blank result if all rows for a specific target class contained missing values in a numeric predictor. This issue has been fixed to ensure appropriate error handling and visibility when data exclusion leads to insufficient samples.
+
+### Chart
+
+*   An issue where clicking "Show Detail" on a dashboard or note chart caused a "transform.getDisplayName is not a function" error has been resolved.
+
+### Dashboard
+
+*   An issue where custom R charts (HTML widgets) failed to refresh on a dashboard when parameters were changed, resulting in a "target file to copy does not exist" error, has been resolved. This fix ensures that dynamic custom charts update correctly within the dashboard environment.
+
+### Parameter
+
+*   An issue was fixed where jumping to a specific chart from a Note would cause the chart to display different data than what was shown in the Note's default parameter execution. This ensures data consistency when navigating between different views within the application.
+*   An issue was fixed where resetting parameters in the parameter pane would incorrectly display unauthorized values that should have been restricted by session-parameter filters. The parameter pane now correctly honors session-based access controls even after a reset action.
+
+### R Script
+
+* Clicking on a R script showed the previously opened R script content. 
+
+
 # 15.5
 
 ## Release Date
