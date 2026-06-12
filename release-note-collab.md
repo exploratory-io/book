@@ -1,5 +1,26 @@
 # Release Note
 
+## 15.1
+
+Released on 6/12/2026
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-15.1.19.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-15.1.19.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
+
+### Enhancements
+
+* Content: Now you can change the column width of a pivot table/summary table/table via drag-and-drop on the server.
+
+### Bug Fixes
+
+* Content: The 'All' option has been added back to the content type filter on the Insight Search page.
+* Content: The default value for CSV/EDF download options for newly published content is now 'Author and Viewer'.
+* Parameter: Executing a parameter in a dashboard that mixed R script panels and chart panels took several minutes.
+* Parameter: When the default value of a parameter was set to Select All, resetting a session-parameter-filtered parameter caused all unauthorized values to appear in the parameter pane.
+* Data Source: When a Salesforce OAuth token was revoked, the Re-OAuth link was not shown and a Bad Request (HTTP 400) error was displayed instead.
+
 ## 15.0
 
 Released on 5/16/2026

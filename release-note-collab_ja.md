@@ -1,5 +1,26 @@
 # リリースノート
 
+## 15.1
+
+2026年6月12日リリース
+
+### ダウンロード
+
+* [新規のインストールの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-15.1.19.tar.gz)  ([インストールガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-TSP7qbs5td))
+* [アップグレードの場合](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-15.1.19.tar.gz) ([アップグレードガイド](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-SEH3IFi8cG))
+
+### 機能強化
+
+* コンテンツ: サーバー上でピボットテーブル/集計テーブル/テーブルの列幅をドラッグ＆ドロップで変更できるようになりました。
+
+### 修正された問題
+
+* コンテンツ: インサイト検索ページのコンテンツタイプフィルターに「すべて」オプションが再追加されました。
+* コンテンツ: 新規パブリッシュ時のCSV/EDFダウンロードオプションのデフォルト値が「作成者と閲覧者」に変更されました。
+* パラメーター: Rスクリプトパネルとチャートパネルを混在させたダッシュボードでパラメーターを実行すると、数分かかる問題を修正しました。
+* パラメーター: パラメーターのデフォルト値が「全選択」に設定されている場合、セッションパラメーターでフィルターされたパラメーターをリセットすると、権限のない値が全て表示される問題を修正しました。
+* データソース: SalesforceのOAuthトークンが失効した際、Re-OAuthリンクが表示されずBad Request (HTTP 400) エラーが表示される問題を修正しました。
+
 ## 15.0
 
 2026年5月16日リリース
