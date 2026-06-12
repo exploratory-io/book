@@ -65,6 +65,20 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
 {start_show_hide}
 ## Explanation of Statistical Metrics
 
+* Mean
+  * The mean is the average value of <%= target %> in the sample data.
+  * This test evaluates whether this sample mean is statistically different from the specified hypothesized mean.
+
+* hypothesized mean
+  * The hypothesized mean is the reference value specified for the test.
+  * The one-sample t-test examines whether the sample mean is statistically different from this value.
+
+* Difference
+  * The difference represents the sample mean minus the hypothesized mean.
+  * A positive value means that the sample mean is higher than the hypothesized mean.
+  * A negative value means that the sample mean is lower than the hypothesized mean.
+  * It is important to interpret the magnitude of the difference along with the confidence interval and P-value.
+
 * t-value
   * The t-value is a statistic that indicates how far the sample mean is from the hypothesized mean, relative to the standard error.
   * It is calculated by dividing the difference between the sample mean and the hypothesized mean by the standard error.
@@ -80,20 +94,6 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
   * Degrees of freedom in a one-sample t-test represent the number of independent values that can vary in the data.
   * It is calculated as the sample size minus 1.
   * As the degrees of freedom increase, the t-distribution approaches the normal distribution.
-
-* Mean
-  * The mean is the average value of <%= target %> in the sample data.
-  * This test evaluates whether this sample mean is statistically different from the specified hypothesized mean.
-
-* hypothesized mean
-  * The hypothesized mean is the reference value specified for the test.
-  * The one-sample t-test examines whether the sample mean is statistically different from this value.
-
-* Difference
-  * The difference represents the sample mean minus the hypothesized mean.
-  * A positive value means that the sample mean is higher than the hypothesized mean.
-  * A negative value means that the sample mean is lower than the hypothesized mean.
-  * It is important to interpret the magnitude of the difference along with the confidence interval and P-value.
 
 * Confidence Interval Lower Limit
   * The confidence interval lower limit indicates the lower bound of the statistically estimated range for the true hypothesized mean.

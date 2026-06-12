@@ -68,6 +68,12 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
 {start_show_hide}
 ## Explanation of Statistical Metrics
 
+* Difference
+  * The difference represents the difference between the proportions of the two groups.
+  * A positive value means the first group has a higher proportion, while a negative value means the second group has a higher proportion.
+  * The difference should be interpreted together with the confidence interval and p-value.
+
+
 * Z Value
   * The Z value is a test statistic that measures how far the observed difference in proportions is from 0, relative to its standard error.
   * A larger absolute Z value indicates stronger evidence that the difference in proportions is unlikely to be due to chance.
@@ -78,11 +84,6 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
   * In this test, the null hypothesis is that there is no difference in proportions between the two groups.
   * A p-value below 5% (0.05) is commonly interpreted as statistically significant.
   * The value ranges from 0 to 1. A smaller p-value indicates stronger statistical evidence against the null hypothesis.
-
-* Difference
-  * The difference represents the difference between the proportions of the two groups.
-  * A positive value means the first group has a higher proportion, while a negative value means the second group has a higher proportion.
-  * The difference should be interpreted together with the confidence interval and p-value.
 
 * Lower Confidence Interval
   * The lower confidence interval is the lower bound of the estimated difference in population proportions.
@@ -107,7 +108,7 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
   * The value ranges from 0 to 1. A power of 0.8 (80%) or higher is commonly considered desirable.
   * Low power means that a real difference may be missed.
 
-* Type II Error
+* Type 2 Error
   * A Type II error is the probability of failing to detect a true difference.
   * It is related to statistical power as follows: statistical power = 1 - Type II error.
   * A Type II error rate of 0.2 (20%) or lower is commonly considered desirable.

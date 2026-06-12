@@ -77,6 +77,11 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
 {start_show_hide}
 ## Metrics Explanation
 
+* Difference
+  * The difference represents the difference between the means of the two groups being compared.
+  * The value of the difference itself varies depending on the unit of measurement, with a positive value indicating a higher mean for the first group and a negative value indicating a higher mean for the second group.
+  * It is important to interpret the magnitude of the difference along with the confidence interval and P-value.
+
 * t-value
   * The t-value is a statistic that indicates whether the difference between two means is due to chance or is truly different. It is the value obtained by dividing the difference between the means of the data at hand by the standard error.
   * A larger absolute value indicates a higher probability that the difference in means is not due to chance. Generally, a difference is considered meaningful if the absolute value is 2 or more.
@@ -90,11 +95,6 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
   * Degrees of freedom in a t-test represent the number of independent values that can vary in the data. It is generally calculated as "total sample size - number of groups".
   * It is always a positive integer, and a larger value increases the accuracy of the test.
   * As the degrees of freedom increase, the t-distribution approaches the normal distribution.
-
-* Difference
-  * The difference represents the difference between the means of the two groups being compared.
-  * The value of the difference itself varies depending on the unit of measurement, with a positive value indicating a higher mean for the first group and a negative value indicating a higher mean for the second group.
-  * It is important to interpret the magnitude of the difference along with the confidence interval and P-value.
 
 * Confidence Interval Lower Limit
   * The confidence interval lower limit indicates the lower bound of the statistically estimated difference in means.

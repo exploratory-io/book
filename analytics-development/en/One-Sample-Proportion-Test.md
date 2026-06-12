@@ -69,18 +69,7 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
 {start_show_hide}
 ## Explanation of Statistical Metrics
 
-* Z Value
-  * The Z value is a test statistic that measures how far the observed proportion is from the hypothesized proportion, relative to its standard error.
-  * A larger absolute Z value indicates stronger evidence that the observed proportion is unlikely to be different from the hypothesized proportion by chance alone.
-  * For a two-sided test, an absolute Z value of about 1.96 or larger is typically considered statistically significant at the 5% significance level.
-
-* P Value
-  * The p-value is the probability of observing a proportion as extreme as, or more extreme than, the observed proportion, assuming that the null hypothesis is true.
-  * In this test, the null hypothesis is that the true population proportion is equal to the hypothesized proportion.
-  * A p-value below 5% (0.05) is commonly interpreted as statistically significant.
-  * The value ranges from 0 to 1. A smaller p-value indicates stronger statistical evidence against the null hypothesis.
-
-* Observed Proportion
+* Proportion
   * The observed proportion is the proportion of observations in the sample that belong to the target category.
   * This is the sample-based estimate that is compared against the hypothesized proportion.
 
@@ -93,6 +82,17 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
   * A positive value means the observed proportion is higher than the hypothesized proportion.
   * A negative value means the observed proportion is lower than the hypothesized proportion.
   * The difference should be interpreted together with the confidence interval and p-value.
+
+* Z Value
+  * The Z value is a test statistic that measures how far the observed proportion is from the hypothesized proportion, relative to its standard error.
+  * A larger absolute Z value indicates stronger evidence that the observed proportion is unlikely to be different from the hypothesized proportion by chance alone.
+  * For a two-sided test, an absolute Z value of about 1.96 or larger is typically considered statistically significant at the 5% significance level.
+
+* P Value
+  * The p-value is the probability of observing a proportion as extreme as, or more extreme than, the observed proportion, assuming that the null hypothesis is true.
+  * In this test, the null hypothesis is that the true population proportion is equal to the hypothesized proportion.
+  * A p-value below 5% (0.05) is commonly interpreted as statistically significant.
+  * The value ranges from 0 to 1. A smaller p-value indicates stronger statistical evidence against the null hypothesis.
 
 * Lower Confidence Interval
   * The lower confidence interval is the lower bound of the estimated true population proportion.
@@ -108,7 +108,7 @@ The significance level for this test is set to <%= baseline_p_pct %>% (<%= basel
   * Because proportions are bounded between 0 and 1, Cohen's H applies a transformation to the proportions before comparing them.
   * A value of 0.2 is often interpreted as a small effect, 0.5 as a medium effect, and 0.8 or above as a large effect.
 
-* Statistical Power
+* Power
   * Statistical power is the probability that the test will detect a true difference from the hypothesized proportion when such a difference actually exists.
   * The value ranges from 0 to 1. A power of 0.8 (80%) or higher is commonly considered desirable.
   * Low power means that a real difference may be missed.
