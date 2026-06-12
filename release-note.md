@@ -1,5 +1,131 @@
 # Release Note
 
+# 15.6
+
+## Release Date
+
+6/11/2026
+
+## Product Enhancement
+
+### Chart
+
+*   Now you can change the color of a trend line even when a column is not assigned to Color.
+
+
+### Note
+
+*   We have updated the Note and Dashboard settings to remember the "Reimport Data" preference from the previous session. This prevents users from accidentally publishing or running reports without reimporting data, saving time and reducing manual configuration errors.
+
+
+## Issue fix
+
+### Analytics
+
+*   When building a binary classification model with Random Forest, the application failed to show an error message and returned a blank result if all rows for a specific target class contained missing values in a numeric predictor. This issue has been fixed to ensure appropriate error handling and visibility when data exclusion leads to insufficient samples.
+
+### Chart
+
+*   An issue where clicking "Show Detail" on a dashboard or note chart caused a "transform.getDisplayName is not a function" error has been resolved.
+
+### Dashboard
+
+*   An issue where custom R charts (HTML widgets) failed to refresh on a dashboard when parameters were changed, resulting in a "target file to copy does not exist" error, has been resolved. This fix ensures that dynamic custom charts update correctly within the dashboard environment.
+
+### Parameter
+
+*   An issue was fixed where jumping to a specific chart from a Note would cause the chart to display different data than what was shown in the Note's default parameter execution. This ensures data consistency when navigating between different views within the application.
+*   An issue was fixed where resetting parameters in the parameter pane would incorrectly display unauthorized values that should have been restricted by session-parameter filters. The parameter pane now correctly honors session-based access controls even after a reset action.
+
+### R Script
+
+* Clicking on a R script showed the previously opened R script content. 
+
+
+# 15.5
+
+## Release Date
+
+6/7/2026
+
+## Product Enhancement
+
+### Analytics
+
+*   We added support for the CatBoost machine learning model. Users can now leverage CatBoost's superior handling of categorical variables and its advanced boosting techniques to achieve higher prediction accuracy without manual encoding.
+*   We added support for L1 and L2 Regularization parameters (alpha and lambda) in XGBoost. Users can now apply these regularization techniques to prevent overfitting and create more conservative, stable models directly from the UI.
+*   We redesigned the Machine Learning Property Dialog for Decision Tree, Random Forest, XGBoost, LightGBM, and CatBoost, with better grouping and clearer descriptions for common settings like model complexity and validation. Users can now navigate the property dialog more intuitively, making it easier to tune models for better accuracy and stability.
+*   We added support for the Silhouette Method in K-Means Clustering. Users now have a more objective and normalized way to determine the optimal number of clusters compared to the Elbow Method, leading to more reliable and less subjective grouping results.
+*   We added Silhouette scores to the Summary table in K-Means Clustering. Users can now evaluate the quality of their clusters at each cluster level, providing deeper insight into how well the data has been grouped.
+*   We added support for the One-Sample Proportion Test. Users can now perform basic statistical tests to compare a sample proportion against a target value, which is a common requirement in academic and business research.
+*   We added support for the One-Sample t-Test. Users can now determine if a sample mean is significantly different from a hypothesized population mean, which is useful for verifying claims about average delivery times, ratings, or other continuous metrics.
+*   We added support for the Two-Sample Proportion Test, including Fisher's Exact Test for small counts. Users can now statistically compare the success rates of two independent groups, which is essential for A/B testing and conversion analysis.
+
+
+### Data Wrangling
+
+*   We improved the error message for "error code 2" to provide more context about potential causes like memory issues or process interruptions. This helps users better understand why a task failed and what steps they might take to resolve it.
+*   We added a copy icon to error messages and improved the pop-up behavior and font size. The improved UI makes reading and interacting with error information much more user-friendly.
+
+### Note
+
+*   We added support for setting the width of individual columns in Markdown tables. Users can now have more control on how the table would show the text inside.
+
+## Issue fix
+
+### AI Summary
+
+*   A confirmation dialog to update the AI Summary appeared incorrectly when clicking AI Summary on a duplicated analytics object that had never been summarized.
+*   AI Summary failed for specific analytics types due to missing server-side mappings and an incorrect visualization ID for confidence interval data.
+*   The language setting for AI Summary was not being correctly applied to the generated output.
+
+### AI Prompt
+
+*   The reset button in the AI prompt dialog failed to revert R script changes when reopening an existing step.
+
+### Analytics
+
+*   Running analytics occasionally failed with a "cannot read properties of null (reading 'name')" error when the underlying data was empty or filtered out.
+*   The summary table in the t-Test view had an unnecessary extra space on the left side.
+
+### Chart
+
+*   Reference lines in Scatter charts disappeared when the numerical scale was set to natural log.
+
+### Data Source
+
+*   Date data in CSV files was not being correctly recognized as Date or POSIXct type when the year was presented as two digits at the import time.
+*   Re-importing a Google Drive CSV file failed to update the data if the file was deleted and re-uploaded with the same name.
+*   Replacing a CSV data source file sometimes triggered an error about a missing column that was unrelated to the files being used.
+*   The file picker incorrectly showed a "Selected file does not exist" error for Google Drive CSV sources even when the file was present.
+*   Updating Parquet data via the "Import & Merge" source step dialog caused a JavaScript "e.forEach is not a function" error.
+
+### Install
+
+*   It showed a file writing errors in the OS temporary directory during data import.
+*   A self-signed certificate error occurred during the initial R installation on some systems, preventing the setup from completing.
+
+### Note
+
+*   Re-importing data in a Note occasionally triggered a "Cannot read properties of undefined (reading 'deps')" error.
+*   The resize icon in the 2-column layout would sometimes trigger a reload instead of resizing the frame.
+*   When re-importing data in a Note, the progress indicator was incomplete and the last updated time for the data source step failed to refresh.
+
+### Parameter
+
+*   Session parameter values that a viewer should not have access to were persisting in the parameter pane.
+*   The list of values for parameters depending on session parameters was not dynamically updating on the desktop when switching between user accounts.
+*   The reset button in the Parameter pane failed to revert parameter values to their defaults after execution.
+
+### Version Control
+
+*   Operation details were not being correctly recorded in the history, resulting in generic "Updated" messages instead of specific action descriptions.
+
+### AI Chat
+
+*   Attaching a file to the chat caused a green border to appear and made the application unresponsive until a restart.
+
+
 # 15.4
 
 ## Release Date
