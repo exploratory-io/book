@@ -105,10 +105,6 @@
       * [Stripe](import/stripe.md)
       * [Weather Data](import/weather.md)
       * [Stock Price Data](import/stock-price.md)
-      * [Reinfolib](import/reinfolib.md)
-      * [Estat](import/estat.md)
-      * [Edinet](import/edinet.md)
-      * [API](import/api.md)
    * [Write R Script as Data](import/r-script-data.md)
       * [Currency Exchange Rate](import/currency.md)
    * [Write R Script as Data (日本語)](import/r-script-data_ja.md)
@@ -119,7 +115,10 @@
      * [Holiday](import/holiday.md)
      * [RSS Data](import/tidyrss.md)
    * [Create Custom Data Source](import/user-defined-plugin.md)
-
+   * [Reinfolib](import/reinfolib.md)
+   * [Estat](import/estat.md)
+   * [Edinet](import/edinet.md)
+   * [API](import/api.md)
 
 * [Data Wrangling](data-wrangling.md)
    * [Command Line mode for faster and more flexible data interaction in Exploratory](wrangling/command-mode.md)
