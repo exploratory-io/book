@@ -9,7 +9,7 @@ A logistic regression model has been created to predict <%= target %> based on t
 <% if (has_perfect_collinearity) { %>
 {{multicollinearity:0.6}}
 
-In this model, <%= perfect_collinearity_variables %> creates a problem of [perfect multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be perfectly calculated by a formula using other predictor variables), resulting in infinite VIF scores and preventing the generation of charts for testing multicollinearity. To resolve the multicollinearity issue, please exclude <%= perfect_collinearity_variables %> from the predictor variables and re-run the analysis.
+In this model, "<%= perfect_collinearity_variables %>" column creates a problem of [perfect multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be perfectly calculated by a formula using other predictor variables), resulting in infinite VIF scores and preventing the generation of charts for testing multicollinearity. To resolve the multicollinearity issue, please exclude "<%= perfect_collinearity_variables %>" column from the predictor variables and re-run the analysis.
 <% } else if (max_vif > 10) { %>
 {{multicollinearity}}
  <% if (perfect_collinearity_groups && perfect_collinearity_groups.length > 0) { %>

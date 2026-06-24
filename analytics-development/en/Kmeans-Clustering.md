@@ -16,7 +16,7 @@ The following table summarizes each cluster by its size, compactness, separation
 
 * A higher average Silhouette score suggests that observations are closer to their assigned cluster than to neighboring clusters.
 * A high percentage of negative Silhouette scores suggests that many observations may fit another cluster better than their assigned cluster.
-* Excluded Rows shows how many rows were excluded because one or more selected variables had missing values. If many rows were excluded, consider reviewing the selected variables or handling missing values before running clustering again.
+* Excluded shows how many rows were excluded because one or more selected variables had missing values. If many rows were excluded, consider reviewing the selected variables or handling missing values before running clustering again.
 
 A useful clustering result should have clusters that are not only reasonably separated, but also easy to explain and meaningful for your analysis.
 

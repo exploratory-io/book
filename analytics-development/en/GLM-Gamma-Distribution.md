@@ -9,7 +9,7 @@ A generalized linear model (Gamma distribution) has been created to predict <%= 
 <% if (has_perfect_collinearity) { %>
 {{multicollinearity:0.6}}
 
-In this model, <%= perfect_collinearity_variables %> creates a problem of perfect [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be completely calculated by a formula using other explanatory variables), causing their VIF scores to become infinite and preventing the generation of a chart for testing multicollinearity. To resolve the multicollinearity problem, please exclude <%= perfect_collinearity_variables %> from the explanatory variables and re-run the analysis.
+In this model, "<%= perfect_collinearity_variables %>" column creates a problem of perfect [multicollinearity](https://exploratory.io/note/exploratory/Ysc3LNp0) (a state where values can be completely calculated by a formula using other explanatory variables), causing their VIF scores to become infinite and preventing the generation of a chart for testing multicollinearity. To resolve the multicollinearity problem, please exclude "<%= perfect_collinearity_variables %>" column from the explanatory variables and re-run the analysis.
 <% } else if (max_vif > 10) { %>
 {{multicollinearity}}
 <% if (perfect_collinearity_groups && perfect_collinearity_groups.length > 0) { %>
