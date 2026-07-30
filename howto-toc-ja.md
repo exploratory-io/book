@@ -72,7 +72,7 @@
     * [Y2軸の設定](/howto?q=tag%3AY2-Axis&language=ja)
     <!--* [URLリンク](howto?q=tag%3A%22URL%20Link%22%20tag%3AVisualization&language=ja)-->
     * [ハイライト](/howto?q=tag%3AHighlight&language=ja)
-    * [カテゴリー化(ビニング)](/howto?q=tag%3ABinning%20tag%3AVisualization&language=ja)
+    * [カテゴリ化(ビニング)](/howto?q=tag%3ABinning%20tag%3AVisualization&language=ja)
     * [表示する値の制限](/howto?q=tag%3ALimit&language=ja)
     * [表示名の編集](/howto?q=tag%3A%22Edit%20Display%20Name%22%20tag%3AVisualization&language=ja)
 
@@ -88,7 +88,7 @@
     * [集計](/howto?q=tag%3ASummarize&language=ja)
     * [計算を作成](/howto?q=tag%3AMutate&language=ja)
     * [表計算を作成](/howto?q=tag%3A%22Window%20Calculation%22&language=ja)
-    * [カテゴリーを作成](/howto?q=tag%3ABinnning%20tag%3A%22Data%20Wrangling%22&language=ja)
+    * [カテゴリを作成](/howto?q=tag%3ABinnning%20tag%3A%22Data%20Wrangling%22&language=ja)
     * [並び替え（ソート）](/howto?q=tag%3AArrange&language=ja)
     * [結合](/howto?q=tag%3AMerge&language=ja)
     * [マージ](/howto?q=tag%3AJoin&language=ja)

@@ -71,7 +71,7 @@ const template =
 <% } %>
 
 <% if (has_category_columns) { %>
-* カテゴリー型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n -1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
+* カテゴリ型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n -1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
 <% } %>
 
 <% if (is_variable_odds_ratio) { %>
@@ -82,7 +82,7 @@ const template =
 {{coefficient_table}}
 
 <% if (has_category_columns) { %>
-_カテゴリー型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n -1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。_
+_カテゴリ型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n -1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。_
 <% } %>
 
 ## オッズ比の解釈
@@ -140,7 +140,7 @@ _上記の信頼区間の説明は直感的な説明であって、正確には�
 {{coefficient_table}}
 
 <% if (has_category_columns) { %>
-_カテゴリー型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n - 1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。_
+_カテゴリ型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n - 1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。_
 <% } %>
 
 ## 平均限界効果の解釈
@@ -203,7 +203,7 @@ _現在の有意水準（P値）は<%= baseline_p_pct %>% (<%= baseline_p %>)に
 
 <% if (has_category_columns) { %>
 
-カテゴリー型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n - 1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
+カテゴリ型（Character型、Factor型）の説明変数において一意の値が<%= predictor_n %>個より多い場合は、頻度の多いものから<%= predictor_n - 1 %>個の値を残し、それ以外は「その他」としています。これは[「設定」](//analytics/settings/max_categories_for_factor)より変更可能です。
 
 <% } %>
 
