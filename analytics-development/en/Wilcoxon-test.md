@@ -71,7 +71,11 @@ Significance can be determined by the P-value.
 
 ## Significance - P-value
 
+<% if (group_a && group_b) { %>
 The null hypothesis for this test is "there is no difference in medians of <%= target %> between <%= group_a %> and <%= group_b %>".
+<% } else { %>
+The null hypothesis for this test is "there is no difference in medians of <%= target %> between the two groups".
+<% } %>
 
 <% if (!repeat_by) { %>
 
@@ -134,4 +138,4 @@ The following visualizes the confidence intervals for means of each group using 
 * If you want to test multiple indicators in batch, it is possible by changing the data format. For details, please refer to [this note](https://exploratory.io/note/exploratory/mxW2zKb2).
 
 `;
-module.exports = template; 
+module.exports = template;

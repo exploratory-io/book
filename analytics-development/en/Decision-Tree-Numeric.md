@@ -1,159 +1,111 @@
 const template = `
+<% const info = typeof basic_info !== 'undefined' ? basic_info : {}; %>
+<% const stats = typeof target_statistics !== 'undefined' ? target_statistics : {}; %>
+<% const groups = typeof characteristic_groups !== 'undefined' ? characteristic_groups : { high: [], low: [] }; %>
+<% const metrics = typeof numeric_metrics !== 'undefined' ? numeric_metrics : {}; %>
+<% const errors = typeof numeric_errors !== 'undefined' ? numeric_errors : {}; %>
+<% const suggestions = typeof improvement_suggestions !== 'undefined' ? improvement_suggestions : []; %>
 
-A decision tree model was created to predict <%= target %> based on the selected explanatory variables.
+# Summary
 
-# Variable Relationships
+A decision tree model was created to predict the numeric target **<%= target %>** from the selected explanatory variables.
 
-<% if (predictorColumns.length > 1) { %>
-## Variable Importance
+## Data and model information
 
-The following chart shows which explanatory variables are relatively more important for predicting <%= target %>.
+{{basic_info}}
 
-{{variable_importance}}
+## Target statistics
 
-For more information about the mechanism of variable importance, please see [this note](https://exploratory.io/note/exploratory/dLm5rwn5).
+{{target_statistics}}
 
+# Characteristic Groups
+
+Every terminal node is listed as a segment, ordered from the highest predicted value down. Conditions are the complete root-to-leaf paths, and the group size is based on training data.
+
+{{characteristic_groups}}
+
+<% if ((groups.high || []).length) { %>
+The highest predicted group is **<%= groups.high[0].path || '—' %>**. <% if (groups.high[0].small) { %>Because this group has fewer than 30 rows, the interpretation should be treated as tentative.<% } %>
+<% } %>
+<% if ((groups.low || []).length) { %>
+The lowest predicted group is **<%= groups.low[0].path || '—' %>**.
 <% } %>
 
-
-## Variable Effects
-
-<% if (predictorColumns.length > 1) { %>
-The following chart shows how the value of <%= target %> changes when the value of each explanatory variable changes.
-<% } else { %>
-The following chart shows how the value of <%= target %> changes when the value of the explanatory variable changes.
-<% } %>
-
-{{variable_effect}}
-
-* The blue line (or points) shows predicted values for explanatory variable values.
-* Gray lines show actual measured values and their 95% confidence intervals.
-* The Y-axis represents the value of <%= target %>.
-
-Important Notes:
-
-<% if (predictorColumns.length > 1) { %>
-
-* Since we predict the effect of each explanatory variable individually while holding other variables constant, discrepancies arise between the mean of actual values and predicted values.
-* For details on the prediction value calculation method, please refer to [this note](https://exploratory.io/note/exploratory/Sbd0LDU6).
-* Explanatory variables are arranged in order of importance as shown in the "Variable Importance" section above.
-
-<% } %>
-
-<% if (has_category_columns) { %>
-* For categorical (Character, Factor) explanatory variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
+<% if ((groups.high || []).some(group => group.small) || (groups.low || []).some(group => group.small)) { %>
+> Some characteristic groups contain fewer than 30 rows. Their estimates can be unstable, so interpret them together with the row count and test-data comparison.
 <% } %>
 
 # Decision Tree
 
-The following visualizes the decision tree (a series of conditional branches) created based on the data. You can see the conditional branches created when predicting <%= target %>.
+The decision tree below represents the series of condition-based splits created by the model to predict the target. Follow the branches from the top node according to the conditions; when you reach a terminal node at the bottom, the prediction for that group is determined.
 
 {{tree_structure}}
 
-**How to Read the Decision Tree**
+Each node shows the target mean, the number of rows, and the share of training data reaching that node. The value in a terminal node is the prediction used for rows satisfying its complete path. Test rows are not included when describing the fitted tree.
 
-Each box is called a node, and the lines extending from them are called branches.
+# Predictive Variables
 
-- **Conditional Branching**: Below each node, a condition (e.g., "Variable A < Value X") is displayed, and branching occurs left and right based on this condition.
- - Left branch is for when the condition is "yes (true)"
- - Right branch is for when the condition is "no (false)"
-- **Information in Nodes**
- - **Top row**: The mean value of <%= target %> in the data contained in each node
- - **Bottom row**: The proportion of data contained in each node relative to the total (%)
+## Variable importance
 
- The top row value of the bottom-most nodes becomes the predicted value when using the decision tree model.
+{{variable_importance}}
 
-# Model Metrics
+Importance uses the existing permutation importance calculated for the fitted model and is normalized so that the largest value is 100. The tooltip shows relative importance only. Importance describes predictive contribution, not causation.
 
- <% if (test_mode) { %>
- Various metrics related to model prediction accuracy are summarized in the following table. Since we are currently in test mode, metrics for both training data and test data are displayed for prediction accuracy.
- <% } else { %>
- Various metrics related to model prediction accuracy are summarized in the following table.
- <% } %>
+## Variable values and predictions
 
- {{summary}}
+{{variable_effect}}
 
- Row count indicates the number of rows of data used for model creation.
+This partial-dependence view shows how predicted values change as one explanatory variable changes while the other variables are held constant. The step-like shape reflects the decision-tree splits; it does not establish a causal relationship.
 
-## Prediction Accuracy
+# Prediction Accuracy
 
-For numeric target variables, R-squared and RMSE are commonly used metrics to evaluate model prediction accuracy.
-
-* R-squared
-  * R-squared indicates the proportion of variance in the target variable values that is explained by the explanatory variables used in this model.
-  * Values range from 0 to 1, where 1 means the model can perfectly predict the target variable values.
-  * Generally, it is often interpreted as very high model fit for 0.8 or above, high for 0.6-0.8, moderate for 0.4-0.6, low for 0.2-0.4, and very low for less than 0.2.
-  * For a note explaining R-squared, please see [here](https://exploratory.io/note/exploratory/R2-zVj7AqB3).
-
-* RMSE
-  * RMSE represents the root mean square error and measures the magnitude of error between predicted and actual values.
-  * It is expressed in the same units as the target variable, making it easy to interpret, and smaller values mean higher prediction accuracy.
-  * Takes values of 0 or above, and would be 0 for perfect prediction.
-  * For a note explaining RMSE, please see [here](https://exploratory.io/note/exploratory/RMSE-DjQ0KQd5).
-
-
-For concepts and specific calculation methods of R-squared and RMSE, please see the following notes:
-
-* R-squared - [Explanation Note](https://exploratory.io/note/exploratory/R2-zVj7AqB3)
-* RMSE - [Explanation Note](https://exploratory.io/note/exploratory/RMSE-DjQ0KQd5)
-
-
-{start_show_hide}
-## Explanation of Other Metrics
-
-* R-squared
-  * R-squared indicates the proportion of variance in the target variable values that is explained by the explanatory variables used in this model.
-  * Values range from 0 to 1, where 1 means the model can perfectly predict the target variable values.
-  * Generally, it is often interpreted as very high model fit for 0.8 or above, high for 0.6-0.8, moderate for 0.4-0.6, low for 0.2-0.4, and very low for less than 0.2.
-  * For a note explaining R-squared, please see [here](https://exploratory.io/note/exploratory/R2-zVj7AqB3).
-
-* RMSE
-  * RMSE represents the root mean square error and measures the magnitude of error between predicted and actual values.
-  * It is expressed in the same units as the target variable, making it easy to interpret, and smaller values mean higher prediction accuracy.
-  * Takes values of 0 or above, and would be 0 for perfect prediction.
-  * For a note explaining RMSE, please see [here](https://exploratory.io/note/exploratory/RMSE-DjQ0KQd5).
-
-* Row Count
-  * Row count indicates the total number of data (sample size) used in the analysis.
-  * The larger the sample size, the higher the detection power of statistical tests and the better the reliability of results.
-  * When numeric columns in explanatory variables contain missing values, those rows are removed before execution.
-
-{end_show_hide}
-
-## Relationship Between Actual and Predicted Values
-
-<% if (!test_mode) { %>
-As a result of prediction, there are discrepancies between the original actual values and predicted values. The following chart visualizes their relationship using a scatter plot. Each point represents each row.
+<% if (test_mode) { %>
+Metrics for training and test data are shown where available. The test data was not used to fit the tree.
 <% } else { %>
-As a result of prediction, there are discrepancies between the original actual values and predicted values. The following chart visualizes their relationship using a scatter plot. Each point represents each row. Training data is visualized in blue and test data in orange, separated by color.
+Metrics below describe the fitted data. Enable Test Mode to evaluate performance on unseen data.
 <% } %>
 
-{start_lazy_show_hide}
-### Chart
+## Model metrics
+
+{{summary}}
+
+R-squared is the proportion of target variation explained by the model. RMSE weights large errors more heavily, while MAE is the typical absolute error. A positive mean error indicates under-prediction on average; a negative value indicates over-prediction.
+
+## Actual and predicted values
+
 {{actual_predicted}}
-{end_lazy_show_hide}
 
-## Prediction Results
+Points near the diagonal represent accurate predictions. In Test Mode, compare the training and test point clouds to identify generalization gaps.
 
-The following table shows the results of predictions made on all data using the created predictive model.
+## Prediction error distribution
 
-{start_lazy_show_hide}
-### Table
+{{prediction_error_distribution}}
+
+Prediction error is defined as **actual − predicted**. The zero line represents no error and the additional reference line represents the mean error. Tails indicate rows that deserve investigation.
+
+## Predicted value and prediction error
+
+{{prediction_value_error}}
+
+This chart checks whether errors change with the predicted value. A trend or widening spread can indicate bias or heteroscedasticity.
+
+# Prediction Results
+
 {{data}}
-{end_lazy_show_hide}
 
-# Appendix
+# Conditional Improvement Suggestions
 
-## Next Steps
-
-* Variable Selection Optimization: Consider excluding explanatory variables with low variable importance to simplify the model. This makes the model easier to interpret and reduces the risk of overfitting. For variable selection guidelines, please see [this note](https://exploratory.io/note/exploratory/SWF4cTx8).
-* Outlier Verification: By checking for outliers that may affect prediction accuracy and addressing them as necessary, the reliability of the model may improve. For methods to remove outliers, please see [this note](https://exploratory.io/note/exploratory/Eep7kip3).
-* Parameter Tuning: By adjusting decision tree parameters (tree depth, minimum improvement rate for branching, etc.), you may be able to further improve model performance.
-* Consideration of Ensemble Learning Methods: To capture patterns that cannot be captured by a single decision tree, it may be effective to consider ensemble learning methods such as Random Forest or XGBoost.
-<% if (!test_mode) { %>
-* Model Evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings/test_mode) and re-run the analysis.
+<% if (!suggestions.length) { %>
+No automatic warning was triggered by the available metrics. Consider validating the tree on unseen data and reviewing the largest errors.
 <% } %>
-* Prediction on New Data: When you want to use the created model to make predictions on new data, add a "Predict with Model (Analytics View)" step to the target data frame you want to predict. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
+<% suggestions.forEach(suggestion => { %>
+<% if (suggestion.id === 'overfit_gap') { %>
+* Training and test performance differ materially. Consider shallower depth, larger terminal nodes, or stronger pruning.
+<% } else if (suggestion.id === 'weak_single_tree') { %>
+* No predictor has measurable importance. Review the input variables and consider an ensemble model if a single tree cannot capture the pattern.
+<% } %>
+<% }) %>
 
+For a stable analysis, inspect the characteristic groups and the largest prediction errors before changing model parameters.
 `;
-module.exports = template; 
+module.exports = template;

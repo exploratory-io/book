@@ -201,26 +201,47 @@ Power and Type II error need attention when judging as not significant based on 
 
 The following shows the proportions of each group of <%= explanatory %> within each group of <%= target %> in table format.
 
-### Chart
 {{pivot}}
 
 ## Proportions (Chart)
 
 The following visualizes the proportions of each group of <%= explanatory %> within each group of <%= target %> using a bar chart.
 
-{start_lazy_show_hide}
-### Chart
 {{ratio}}
-{end_lazy_show_hide}
 
 ## Contribution to Chi-square Value
 
 The following visualizes the proportion that each combination of <%= target %> and <%= explanatory %> groups contributes to the chi-square value, which is an indicator of overall "deviation". The color intensity of the circles indicates the contribution rate, with darker blue meaning that combination has greater "deviation" compared to other combinations. The size of the circles represents the amount of data, with larger circles indicating more data for that combination.
 
 {start_lazy_show_hide}
-### Chart
 {{contribution}}
 {end_lazy_show_hide}
+
+## Adjusted Standardized Residual
+
+The following shows the adjusted standardized residual for each combination of <%= target %> and <%= explanatory %> groups in a pivot table. The columns are the groups of <%= target %>, the rows are the groups of <%= explanatory %>, and the bars show the residual for each combination. Positive values indicate more observations than expected; negative values indicate fewer.
+
+{{difference}}
+
+**How to read the colors:**
+
+| Condition | Color | Meaning |
+|---|---|---|
+| Residual ≥ +3 | Dark blue | Far more than expected (strong difference) |
+| Residual ≥ +2 | Medium blue | More than expected (moderate difference) |
+| 0 < Residual < +2 | Light blue | Slightly more than expected |
+| -2 < Residual < 0 | Light red | Slightly fewer than expected |
+| Residual ≤ -2 | Medium red | Fewer than expected (moderate difference) |
+| Residual ≤ -3 | Dark red | Far fewer than expected (strong difference) |
+| Residual = 0 | Gray | Same as expected (no difference) |
+
+The ±2/±3 cutoffs are conventional significance guidelines for adjusted standardized residuals.
+
+## Combination List
+
+The adjusted P value is Holm-corrected across the cells in this table. Non-significant P values are shown in gray.
+
+{{combinations}}
 
 # Next Steps
 

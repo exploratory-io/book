@@ -1,200 +1,243 @@
 const template = `
+<% const info = typeof basic_info !== 'undefined' ? basic_info : {}; %>
+<% const distribution = typeof target_distribution !== 'undefined' ? target_distribution : { categories: [] }; %>
+<% const metrics = typeof logical_metrics !== 'undefined' ? logical_metrics : {}; %>
+<% const suggestions = typeof improvement_suggestions !== 'undefined' ? improvement_suggestions : []; %>
+<% const cut = typeof threshold_analysis !== 'undefined' && threshold_analysis ? threshold_analysis : null; %>
+<% const cutObjective = cut ? cut.objective : (typeof threshold_objective !== 'undefined' ? threshold_objective : 'balanced_accuracy'); %>
+<% const cutHasMinRecall = !!(cut && cut.minimum_recall_display); %>
+<% const cutHasMinPrecision = !!(cut && cut.minimum_precision_display); %>
+<% const cutMinRecall = cutHasMinRecall ? cut.minimum_recall_display : 'not set'; %>
+<% const cutMinPrecision = cutHasMinPrecision ? cut.minimum_precision_display : 'not set'; %>
+<% const cutMethodShort = cutObjective === 'f1' ? 'maximize the F1 score' : cutObjective === 'precision_at_recall' ? (cutHasMinRecall ? 'maximize precision at recall ' + cutMinRecall + ' or higher' : 'maximize precision under a recall floor') : cutObjective === 'recall_at_precision' ? (cutHasMinPrecision ? 'maximize recall at precision ' + cutMinPrecision + ' or higher' : 'maximize recall under a precision floor') : 'maximize balanced accuracy'; %>
+<% const cutMethodShortLabel = cut && cut.available ? cutMethodShort : '—'; %>
+<% const cutMethodSentence = cutObjective === 'f1' ? 'maximizes the F1 score, balancing precision against recall' : cutObjective === 'precision_at_recall' ? ('maximizes precision among the cut points that keep recall at ' + cutMinRecall + ' or higher') : cutObjective === 'recall_at_precision' ? ('maximizes recall among the cut points that keep precision at ' + cutMinPrecision + ' or higher') : 'maximizes balanced accuracy, so TRUE and FALSE are classified with comparable success'; %>
 
-A decision tree model was created to predict <%= target %> based on the selected explanatory variables.
+# Summary
 
-# Variable Relationships
+A decision tree model was created to predict the logical target **\`<%= target %>\`** from the selected explanatory variables.
 
-<% if (predictorColumns.length > 1) { %>
-## Variable Importance
+## Data and model information
 
-The following chart shows which explanatory variables are relatively more important for predicting <%= target %>.
+{{basic_info}}
 
-{{variable_importance}}
+## Target distribution
 
-For more information about the mechanism of variable importance, please see [this note](https://exploratory.io/note/exploratory/dLm5rwn5).
+{{target_distribution}}
 
-<% } %>
+Rows and share. In test mode the training and the test data are shown separately.
 
-## Variable Effects
-
-<% if (predictorColumns.length > 1) { %>
-The following chart shows how the values of <%= target %> change when the probability of each explanatory variable changes.
-<% } else { %>
-The following chart shows how the probability of <%= target %> changes when the value of the explanatory variable changes.
-<% } %>
-
-{{variable_effect}}
-
-* The blue line (or points) shows predicted values for explanatory variable values.
-* Gray lines show actual measured values and their 95% confidence intervals.
-* The Y-axis represents the probability of <%= target %>.
-
-Important Notes:
-
-<% if (predictorColumns.length > 1) { %>
-
-* Since we predict the effect of each explanatory variable individually while holding other variables constant, discrepancies arise between the mean of actual values and predicted values.
-* For details on the prediction value calculation method, please refer to [this note](https://exploratory.io/note/exploratory/Sbd0LDU6).
-* Explanatory variables are arranged in order of importance as shown in the "Variable Importance" section above.
-
-<% } %>
-
-<% if (has_category_columns) { %>
-* For categorical (Character, Factor) explanatory variables with more than <%= predictor_n %> unique values, the top <%= predictor_n - 1 %> most frequent values are retained and the rest are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
-<% } %>
 
 # Decision Tree
 
-The following visualizes the decision tree (a series of conditional branches) created based on the data. You can see the conditional branches created when predicting <%= target %>.
+The decision tree below represents the series of condition-based splits created by the model to predict the target. Follow the branches from the top node according to the conditions; when you reach a terminal node at the bottom, the prediction for that group is determined.
 
 {{tree_structure}}
 
-**How to Read the Decision Tree**
+Each node shows the TRUE/FALSE counts and percentages, the predicted class, and the share of training rows. The terminal-node class is selected using the configured threshold; the probability shown in the node is not a causal effect.
 
-Each box is called a node, and the lines extending from them are called branches.
+## Terminal Node Conditions
 
-- **Conditional Branching**: Below each node, a condition (e.g., "Variable A < Value X") is displayed, and branching occurs left and right based on this condition.
- - Left branch is for when the condition is "yes (true)"
- - Right branch is for when the condition is "no (false)"
-- **Information in Nodes**
- - **Top row**: The majority of TRUE or FALSE values in the data contained in each node
- - **Middle row**: The proportion of TRUE values in the data contained in each node
- - **Bottom row**: The proportion of data contained in each node relative to the total (%)
+Every terminal node is listed as a segment, ordered by TRUE rate. "Comparison to Overall" compares each node's TRUE rate with the overall TRUE rate.
 
- The top row value of the bottom-most nodes and their corresponding middle row proportions become the predicted values when using the decision tree model.
+{{characteristic_groups}}
 
-# Model Metrics
+# Predictive Variables
 
-<% if (!test_mode) { %>
-Various metrics related to model prediction accuracy and significance are summarized in the following table.
-<% } else { %>
-Various metrics related to model prediction accuracy and significance are summarized in the following table. Since we are currently in test mode, metrics for both training data and test data are displayed for prediction accuracy.
-<% } %>
+## Variable importance
+
+{{variable_importance}}
+
+The horizontal bars use the existing permutation importance calculated for the fitted model and are normalized so the largest importance is 100. Tooltips show relative importance only. Importance is predictive contribution, not causation.
+
+## Variable values and predicted probability
+
+{{variable_effect}}
+
+This partial-dependence view shows how predicted TRUE probability changes as one explanatory variable changes. Decision-tree steps reflect split rules and should not be interpreted as causal effects.
+
+# Prediction Accuracy
+
+<% if (test_mode) { %>Compares the prediction performance on the training data used to build the model with the test data that was held out. The test results show whether the model predicts unseen data just as well.<% } else { %>Current metrics are calculated from predictions on the training data. To evaluate accuracy on unseen data, enable "Test Mode" from [Settings](chrome-extension://analytics/settings/test_mode).<% } %>
+
+## Model metrics
 
 {{summary}}
 
-## Prediction Accuracy
-
-For logical (TRUE/FALSE) target variables, AUC is commonly used as a metric to evaluate model prediction accuracy.
-
-* AUC
-  * This is a commonly used metric to evaluate the prediction accuracy of models predicting logical target variables.
-  * It measures how well this model can classify TRUE and FALSE data.
-  * Values range from 0.5 to 1, where 0.5 is random prediction (equivalent to coin tossing) and 1 means perfect classification of TRUE and FALSE data.
-  * Generally, 0.6 or above is acceptable, 0.8 or above is good, and 0.9 or above indicates excellent classification performance.
-  * AUC stands for Area Under the Curve, meaning the area under the ROC curve (the Curve).
-
-Reference Information:
-
-* For detailed explanation of AUC, please see [this note](https://exploratory.io/note/exploratory/AUC-RZG7gbI6).
-* Accuracy, misclassification rate, F1 score, precision, and recall are affected by the TRUE/FALSE boundary value setting. The current boundary value is set to <%= true_false_criteria %>, but this can be changed from [Settings](//analytics/settings/true_false_criteria) in Analytics.
-
+- ROC AUC and PR AUC evaluate how well the model discriminates across the whole range of cut points, not at one particular cut point. The other metrics are the result of classifying rows as TRUE or FALSE at the current cut point (<%= cut && cut.current_threshold_display ? cut.current_threshold_display : true_false_criteria %>). The cut point can be changed from [Settings](chrome-extension://analytics/settings/true_false_criteria).
+<% if (test_mode) { %>- When evaluating the model's real prediction performance, focus on the results for the test data, which was not used to build the model. If the test metrics are much lower than the training ones, the model is likely overfitted to the training data and may not perform well on unseen data.
+<% } %>- When the TRUE and FALSE counts are imbalanced, accuracy can be high simply by predicting the majority category. Read it together with balanced accuracy, recall, precision, and F1 score.
+- Especially when TRUE cases are rare, PR AUC makes it easier to see the balance between finding TRUE cases and wrongly predicting TRUE.
 
 {start_show_hide}
-## Details of Other Metrics
+## Detailed Model Metrics
 
-* AUC
- * This is a commonly used metric to evaluate the prediction accuracy of models predicting logical target variables.
- * It measures how well this model can classify TRUE and FALSE data.
- * Values range from 0.5 to 1, where 0.5 is random prediction (equivalent to coin tossing) and 1 means perfect classification of TRUE and FALSE data.
- * Generally, 0.6 or above is acceptable, 0.8 or above is good, and 0.9 or above indicates excellent classification performance.
- * AUC stands for Area Under the Curve, meaning the area under the ROC curve (the Curve).
+* ROC AUC
+  * ROC AUC is one of the most commonly used metrics for evaluating the classification performance of a model that predicts TRUE and FALSE.
+  * It evaluates, across different classification thresholds, how well the model assigns higher predicted probabilities to TRUE cases than to FALSE cases.
+  * The value typically ranges from 0.5 to 1. A value of 0.5 indicates performance similar to random guessing, while a value of 1 indicates that the model can perfectly distinguish between TRUE and FALSE.
+  * As a general guideline, a value of 0.6 or higher indicates some classification ability, 0.8 or higher indicates good performance, and 0.9 or higher indicates excellent performance.
+  * ROC AUC stands for “Receiver Operating Characteristic Area Under the Curve” and represents the area under the ROC curve.
+
+* PR AUC
+  * PR AUC is the area under the Precision-Recall curve, which shows the relationship between Precision and Recall.
+  * It summarizes Precision and Recall across different classification thresholds and measures how accurately and completely the model can identify TRUE cases.
+  * The value ranges from 0 to 1. A value closer to 1 indicates that both Precision and Recall are high.
+  * It is particularly useful when TRUE cases are rare or when there is a large imbalance between the number of TRUE and FALSE cases.
+  * PR AUC stands for “Precision-Recall Area Under the Curve” and represents the area under the Precision-Recall curve.
 
 * F1 Score
- * F1 score is the harmonic mean of precision and recall, representing a metric of model prediction accuracy that considers both balance.
- * Values range from 0 to 1, where closer to 1 indicates an excellent model with balanced appropriateness and reproducibility.
- * Particularly useful when there are large differences in the proportions of TRUE and FALSE in the original data.
+  * The F1 Score is the harmonic mean of Precision and Recall and measures the balance between the two.
+  * The value ranges from 0 to 1. A value closer to 1 indicates that the model is both accurate when predicting TRUE and effective at finding actual TRUE cases.
+  * Because it does not directly evaluate how well the model identifies FALSE cases, it is most suitable when detecting TRUE cases is the main priority.
+  * It is particularly useful when TRUE cases are rare and Accuracy alone may not adequately represent model performance.
+
+* Balanced Accuracy
+  * Balanced Accuracy is the average of Recall and Specificity and evaluates how well the model correctly classifies both TRUE and FALSE cases.
+  * The value ranges from 0 to 1. A value closer to 1 indicates that the model accurately classifies both TRUE and FALSE cases.
+  * A value of 0.5 indicates performance similar to random guessing, while a value of 1 indicates perfect classification of both TRUE and FALSE.
+  * Because it gives equal importance to both classes, it may be more appropriate than Accuracy when there is a large imbalance between TRUE and FALSE cases.
 
 * Accuracy
- * Accuracy shows the proportion of correct predictions out of all predictions.
- * Values range from 0 to 1, where closer to 1 means the ability to correctly classify more cases.
- * When there are large differences in the proportions of TRUE and FALSE in the original data, it can be misleading if there is imbalance.
+  * Accuracy is the proportion of all predictions in which the model correctly predicts either TRUE or FALSE.
+  * The value ranges from 0 to 1. A value closer to 1 indicates that the model correctly classifies a larger proportion of the data overall.
+  * Although Accuracy is intuitive and easy to understand, it may overstate model performance when there is a large imbalance between TRUE and FALSE cases.
+  * For example, if most cases are FALSE, a model may achieve high Accuracy simply by predicting every case as FALSE. For this reason, Accuracy should be evaluated together with metrics such as Recall, Precision, and Balanced Accuracy.
 
-* Misclassification Rate
- * Misclassification rate (Error Rate) is the proportion of incorrect predictions out of all predictions, calculated as 1-accuracy.
- * Values range from 0 to 1, where closer to 0 means fewer misclassifications.
- * Like accuracy, interpretation requires attention when there are large differences in the proportions of TRUE and FALSE in the original data.
+* Error Rate
+  * Error Rate is the proportion of all predictions in which the model incorrectly predicts either TRUE or FALSE.
+  * It is calculated as “1 − Accuracy” and ranges from 0 to 1. A value closer to 0 indicates fewer incorrect predictions.
+  * Because it is the inverse of Accuracy, it may not adequately represent model performance when there is a large imbalance between TRUE and FALSE cases.
+  * To understand the types of errors being made, Error Rate should be evaluated together with metrics such as Precision, Recall, and Specificity.
 
 * Precision
- * Precision shows "the proportion of those predicted as TRUE that were actually TRUE".
- * Values range from 0 to 1, where closer to 1 means higher "accuracy of things predicted as TRUE actually being TRUE".
- * This metric is emphasized when wanting to minimize false positives (predicting TRUE when actually FALSE).
+  * Precision is the proportion of cases predicted as TRUE that are actually TRUE.
+  * The value ranges from 0 to 1. A value closer to 1 indicates that a TRUE prediction is more likely to be correct.
+  * Precision is especially important when false positives—cases that are actually FALSE but are predicted as TRUE—need to be minimized.
+  * For example, Precision is important when each TRUE prediction leads to additional cost or follow-up work.
 
 * Recall
- * Recall shows "the proportion of those actually TRUE that were correctly predicted as TRUE".
- * Values range from 0 to 1, where closer to 1 means higher "ability to not miss actual TRUE cases".
- * This metric is emphasized when wanting to minimize false negatives (predicting FALSE when actually TRUE).
+  * Recall is the proportion of actual TRUE cases that are correctly predicted as TRUE.
+  * The value ranges from 0 to 1. A value closer to 1 indicates that the model is less likely to miss actual TRUE cases.
+  * Recall is especially important when false negatives—cases that are actually TRUE but are predicted as FALSE—need to be minimized.
+  * For example, Recall is important when the goal is to identify as many important cases as possible without missing them.
 
-* Row Count (TRUE)
- * Shows the number of rows of data where the target variable is TRUE.
- * If TRUE is extremely few, bias may occur in model learning and evaluation.
+* Specificity
+  * Specificity is the proportion of actual FALSE cases that are correctly predicted as FALSE.
+  * The value ranges from 0 to 1. A value closer to 1 indicates that the model is less likely to incorrectly classify actual FALSE cases as TRUE.
+  * Specificity is especially important when false positives—cases that are actually FALSE but are predicted as TRUE—need to be minimized.
+  * While Recall measures the model’s ability to correctly classify actual TRUE cases, Specificity measures its ability to correctly classify actual FALSE cases.
 
-* Row Count (FALSE)
- * Shows the number of rows of data where the target variable is FALSE.
- * If FALSE is extremely few, bias may occur in model learning and evaluation.
+{end_show_hide}
 
-* Row Count
- * Row count is the total number of data (sample size) used in the analysis.
- * The more data, the higher the reliability of the model.
- * Generally, a sample size of 10 times or more than the number of explanatory variables is recommended.
+## Confusion matrix — total percentage
 
- {end_show_hide}
+<% if (test_mode) { %>The table below summarizes how many of the model's predictions for each row of the training and test data matched, or differed from, the actual value. The numbers are the row count of each combination and its **percentage of all data (%)**.<% } else { %>The table below summarizes how many of the model's predictions for each row of the training data matched, or differed from, the actual value. The numbers are the row count of each combination and its **percentage of all data (%)**.<% } %>
 
-## Prediction Matrix (Confusion Matrix)
+{{confusion_matrix_total}}
 
-<% if (!test_mode) { %>
-The following table summarizes how many of the model's predictions for each row of <%= mode %> data were the same or different from the actual values as a correspondence table. The numbers represent the percentage (%) of each combination in the total data.
+## Confusion matrix — row percentage
 
-<% } else { %>
-The following table summarizes how many of the model's predictions for each row of <%= mode %> data were the same or different from the actual values as a correspondence table. The numbers represent the percentage (%) of each combination in the total data. Since we are currently in test mode, results for both training data and test data are displayed.
+<% if (test_mode) { %>The table below summarizes how many of the model's predictions for each row of the training and test data matched or differed from the actual value. The numbers are the row count of each combination and its **percentage within each actual value (%)**.<% } else { %>The table below summarizes how many of the model's predictions for each row of the training data matched or differed from the actual value. The numbers are the row count of each combination and its **percentage within each actual value (%)**.<% } %>
 
-<% } %>
+{{confusion_matrix_row}}
 
-{{confusion_matrix}}
+## Predicted probability distribution
 
-## Distribution of Prediction Probabilities
-
-This model predicted the probability of <%= target %> (values between 0 and 1) for each row of <%= mode %> data. The following chart visualizes the distribution of these probability values separated by groups where actual values are TRUE (blue) and FALSE (orange).
+Shows the TRUE probability the model predicted for each row, split into the group whose actual value is TRUE and the group whose actual value is FALSE. Comparing the two distributions shows how well the model separates TRUE from FALSE.
 
 {{probability_distribution}}
 
-<% if (test_mode) { %>
-* Since we are currently in test mode, this shows the distribution of probabilities predicted for test data.
-<% } %>
-* The more the group with actual TRUE values (blue line) is biased toward the right side (probabilities close to 1) and the group with actual FALSE values (orange line) is biased toward the left side (probabilities close to 0), the higher the model's prediction accuracy.
-* The vertical dotted line shows the currently set probability boundary value for classifying TRUE and FALSE. The default is 50% (0.5), but this can be changed from [Settings](//analytics/settings/true_false_criteria) in Analytics.
-* From this distribution, you can visually confirm the model's classification performance and adjustments to the optimal TRUE/FALSE boundary value.
+- The more the actual TRUE group (blue) sits toward 1 on the right and the actual FALSE group (orange) sits toward 0 on the left, with little overlap between the two distributions, the better the model discriminates.
+- Where the two distributions overlap, false positives (FALSE predicted as TRUE) and misses (TRUE predicted as FALSE) are more likely.
+- The vertical axis is density, which compares the shape of the distributions, not the number of rows. The height of the curves therefore cannot be used to compare the TRUE and FALSE row counts.
 
-## ROC Curve
+## ROC curve
 
-<% if (!test_mode) { %>
-The following chart shows the ROC curve that evaluates the model's classification performance at various TRUE/FALSE boundary values. The Y-axis represents true positive rate (sensitivity), and the X-axis represents false positive rate (1-specificity). The blue line is the ROC curve for the current model, and the diagonal gray dotted line represents random prediction (AUC: 0.5). ROC curves that bulge toward the upper left indicate higher prediction accuracy, while those closer to the diagonal indicate lower prediction accuracy.
-<% } else { %>
-The following chart shows the ROC curve that evaluates the model's classification performance at various TRUE/FALSE boundary values. The Y-axis represents true positive rate (sensitivity), and the X-axis represents false positive rate (1-specificity). The blue line is the ROC curve for the current model on test data, and the orange line is for training data. The diagonal gray dotted line represents random prediction (AUC: 0.5). ROC curves that bulge toward the upper left indicate higher prediction accuracy, while those closer to the diagonal indicate lower prediction accuracy.
-<% } %>
+The ROC curve shows how the share of TRUE cases that are correctly found and the share of FALSE cases that are wrongly judged TRUE change as the cut point for judging TRUE changes. The vertical axis, the true positive rate, is the share of actual TRUE rows correctly judged TRUE, which is the same as recall. The horizontal axis, the false positive rate, is the share of actual FALSE rows wrongly judged TRUE, that is 1 − specificity.
 
 {{roc_curve}}
 
-## Prediction Results
+<% if (test_mode) { %>- The blue line is the result on the training data and the orange line is the result on the test data. The closer the curve is to the top-left, the better the model finds TRUE cases while holding down false positives on FALSE cases, which indicates stronger classification performance. The grey diagonal represents performance equivalent to a random prediction.
+- When evaluating the real prediction performance, focus on the test curve. If the test curve is well below the training curve, performance may be dropping on unseen data.
+<% } else { %>- The blue line is the result on the training data. The closer the curve is to the top-left, the better the model finds TRUE cases while holding down false positives on FALSE cases, which indicates stronger classification performance. The grey diagonal represents performance equivalent to a random prediction.
+<% } %>- ROC AUC is the area under the ROC curve. Values near 1 separate TRUE and FALSE well; 0.5 is about as good as random classification.
 
-The following table shows the results of predictions made on all data using the created predictive model.
+## Precision–Recall curve
 
-{start_lazy_show_hide}
-### Table
-{{data}}
-{end_lazy_show_hide}
+The PR curve shows how precision and recall change as the cut point for judging TRUE changes. The vertical axis, precision, is the share of rows predicted TRUE that are actually TRUE. The horizontal axis, recall, is the share of actual TRUE rows that are correctly predicted TRUE.
 
-# Appendix
+{{pr_curve}}
 
-## Next Steps
+<% if (test_mode) { %>- The blue line is the result on the training data and the orange line is the result on the test data. The closer the curve is to the upper-right, the more TRUE cases the model finds while wrongly predicting TRUE less often, which indicates stronger model performance.
+<% } else { %>- The blue line is the result on the training data. The closer the curve is to the upper-right, the more TRUE cases the model finds while wrongly predicting TRUE less often, which indicates stronger model performance.
+<% } %>- In general, raising recall lowers precision and raising precision lowers recall, so the curve shows that trade-off.
+- PR AUC is the area under the PR curve. When TRUE cases are rare, it tends to capture the balance between finding TRUE cases and false positives more clearly than ROC AUC.
 
-* Variable Selection Optimization: Consider excluding explanatory variables with low variable importance to simplify the model. This makes the model easier to interpret and reduces the risk of overfitting. For variable selection guidelines, please see [this note](https://exploratory.io/note/exploratory/SWF4cTx8).
-* Outlier Verification: By checking for outliers that may affect prediction accuracy and addressing them as necessary, the reliability of the model may improve. For methods to remove outliers, please see [this note](https://exploratory.io/note/exploratory/Eep7kip3).
-* Consideration of Ensemble Learning Methods: To capture patterns that cannot be captured by a single decision tree, it may be effective to consider ensemble learning methods such as Random Forest or XGBoost.
-<% if (!test_mode) { %>
-* Model Evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings/test_mode) and re-run the analysis.
+# Cut Point Analysis
+
+A row is predicted TRUE when its predicted probability is at or above the cut point, and FALSE when it is below. Changing the cut point moves recall (how easily TRUE is found), precision (how accurate TRUE predictions are), specificity (how correctly FALSE is judged), and the other metrics.
+
+## Recommended cut point
+
+<% if (cut && cut.available) { %>The values below show the current cut point that separates TRUE from FALSE, and the recommended cut point calculated assuming \`<%= cutMethodShort %>\`.<% } %>
+
+<% if (cut && cut.available) { %>
+{{threshold_recommendation}}
+<% } else if (cut && (cut.status === 'missing_minimum_recall' || cut.status === 'missing_minimum_precision')) { %>
+The <%= cut.status === 'missing_minimum_recall' ? 'Minimum Recall' : 'Minimum Precision' %> property is empty. Enter a value and run again.
+<% } else if (cut && cut.recommended_is_above_max) { %>
+Predicting FALSE for every row scores best here, so this model does not separate TRUE from FALSE. Review the explanatory variables and the data.
+<% } else if (cut && (cut.status === 'no_threshold_for_minimum_recall' || cut.status === 'no_threshold_for_minimum_precision')) { %>
+No cut point reaches the required <%= cut.status === 'no_threshold_for_minimum_recall' ? 'recall' : 'precision' %> of <%= cut.status_value_display %>.<% if (cut.best_achievable_display) { %> The best this data reaches is <%= cut.best_achievable_display %>.<% } %> Lower the requirement or improve the model, then run again.
+<% } else { %>
+A recommended cut point needs both TRUE and FALSE rows in the evaluated data, so none is available here.
 <% } %>
-* Prediction on New Data: When you want to use the created model to make predictions on new data, add a "Predict with Model (Analytics View)" step to the target data frame you want to predict. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
 
+<% if (cut && cut.available) { %>
+The recommended cut point is calculated based on the \`Recommendation Method\`. You can change the \`Recommendation Method\` from [Settings](chrome-extension://analytics/settings/threshold_objective).
+<% } %>
+
+<% if (cut && cut.available) { %>
+## Current versus recommended cut point
+
+<% if (cut.is_same_as_current) { %>
+The current cut point already is the recommended one, so none of these metrics change.
+<% } else { %>
+Moving the cut point from <%= cut.current_threshold_display %> to <%= cut.recommended_threshold_display %> <% if (cut.by_id.recall.delta > 0) { %>raises recall from <%= cut.by_id.recall.current_display %> to <%= cut.by_id.recall.recommended_display %><% } else if (cut.by_id.recall.delta < 0) { %>lowers recall from <%= cut.by_id.recall.current_display %> to <%= cut.by_id.recall.recommended_display %><% } else { %>leaves recall at <%= cut.by_id.recall.current_display %><% } %>. At the same time the rows predicted TRUE <% if (cut.by_id.predicted_positive.delta > 0) { %>grow from <%= cut.by_id.predicted_positive.current_display %> to <%= cut.by_id.predicted_positive.recommended_display %><% } else if (cut.by_id.predicted_positive.delta < 0) { %>shrink from <%= cut.by_id.predicted_positive.current_display %> to <%= cut.by_id.predicted_positive.recommended_display %><% } else { %>stay at <%= cut.by_id.predicted_positive.current_display %><% } %>, and precision <% if (cut.by_id.precision.delta > 0) { %>rises from <%= cut.by_id.precision.current_display %> to <%= cut.by_id.precision.recommended_display %><% } else if (cut.by_id.precision.delta < 0) { %>falls from <%= cut.by_id.precision.current_display %> to <%= cut.by_id.precision.recommended_display %><% } else { %>stays at <%= cut.by_id.precision.current_display %><% } %>.
+<% } %>
+
+### Predicted counts
+
+{{threshold_prediction_counts}}
+
+### Prediction metrics
+
+{{threshold_comparison}}
+
+<% } %>
+
+<% if (cut && cut.has_curve) { %>
+## Cut point chart
+
+This chart shows how recall, precision, balanced accuracy and the other metrics change as the cut point that classifies a predicted probability as TRUE or FALSE moves.
+
+{{threshold_chart}}
+
+Lowering the cut point classifies more rows as TRUE, so recall tends to rise. Because FALSE rows are also more likely to be predicted TRUE, precision and specificity can fall at the same time.
+
+<% if (cut && cut.available) { %>Comparing the current and recommended cut points shows how much missed TRUE cases can be reduced, and how much wrong TRUE predictions increase instead. <% } %>Metrics such as specificity and F1 score can be added to the chart from Cut Point Analysis in the settings.
+<% } %>
+
+# Prediction Results
+
+{{data}}
+
+# Conditional Improvement Suggestions
+
+<% if (!suggestions.length) { %>No automatic warning was triggered by the available metrics.<% } %>
+<% suggestions.forEach(suggestion => { %>
+<% if (suggestion.id === 'low_recall') { %>* Recall is low: many actual TRUE cases are predicted as FALSE. Review the threshold and add predictors that identify TRUE cases.<% } else if (suggestion.id === 'low_precision') { %>* Precision is low: many predicted TRUE cases are false positives. Review the threshold and the variables driving these groups.<% } else if (suggestion.id === 'overfit_gap') { %>* Training and test performance differ materially. Reduce tree complexity or increase the minimum terminal-node size.<% } else if (suggestion.id === 'weak_single_tree') { %>* No predictor has measurable importance. Review input data or consider an ensemble model.<% } %>
+<% }) %>
 `;
-module.exports = template; 
+module.exports = template;
