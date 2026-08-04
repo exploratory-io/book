@@ -1,172 +1,116 @@
-const template =
-`
+const template = `
+<% const info = typeof basic_info !== 'undefined' ? basic_info : {}; %>
+<% const distribution = typeof target_distribution !== 'undefined' ? target_distribution : { categories: [] }; %>
+<% const groups = typeof characteristic_groups !== 'undefined' ? characteristic_groups : { byCategory: {} }; %>
+<% const metrics = typeof multiclass_metrics !== 'undefined' ? multiclass_metrics : {}; %>
+<% const suggestions = typeof improvement_suggestions !== 'undefined' ? improvement_suggestions : []; %>
 
-A decision tree model was created to predict <%= target %> based on the selected explanatory variables.
+# Summary
 
-# Variable Relationships
+A decision tree model was created to predict the multi-category target **<%= target %>** from the selected explanatory variables.
 
-<% if (predictorColumns.length > 1) { %>
-## Variable Importance
+## Data and model information
 
-The following chart shows which explanatory variables are relatively more important for predicting <%= target %>.
+{{basic_info}}
 
-{{variable_importance}}
+## Target distribution
 
-For more information about the mechanism of variable importance, please see [this note](https://exploratory.io/note/exploratory/dLm5rwn5).
+{{target_distribution}}
 
+Rows and share per category. In test mode the training and the test data are shown separately.
+
+# Characteristic Groups
+
+Every terminal node is listed as a segment, grouped by its dominant category and ordered by the within-group share. The group share, overall category share, and their ratio should be considered together; a small group can produce an unstable ratio.
+
+{{characteristic_groups}}
+
+<% Object.keys(groups.byCategory || {}).forEach(category => { const group = groups.byCategory[category]; %>
+<% if (group) { %>For **<%= category %>**, the most characteristic available group is **<%= group.path || '—' %>**.<% if (group.small) { %> Its small row count requires caution.<% } %>
 <% } %>
+<% }) %>
 
-## Variable Effects
-
-The following chart shows how the probability for each classification of <%= target %> changes when the value of each explanatory variable changes.
-
-{{variable_effect}}
-
-Important Notes:
-
-<% if (predictorColumns.length > 1) { %>
-
-* Since we predict the effect of each explanatory variable individually while holding other variables constant, discrepancies arise between the mean of actual values and predicted values.
-* For details on the prediction value calculation method, please refer to [this note](https://exploratory.io/note/exploratory/Sbd0LDU6).
-* Explanatory variables are arranged in order of importance as shown in the "Variable Importance" section above.
-
-<% } %>
-
-<% if (has_category_columns) { %>
-* For categorical (Character, Factor) explanatory variables with more than 12 unique values, the 11 most frequent values are retained and others are grouped as "Others". This can be changed from [Settings](//analytics/settings/max_categories_for_factor) in Analytics.
+<% if (Object.keys(groups.byCategory || {}).some(category => groups.byCategory[category].small)) { %>
+> At least one characteristic group contains fewer than 30 rows. Keep the group visible, but interpret the category ratio cautiously.
 <% } %>
 
 # Decision Tree
 
-The following visualizes the decision tree (a series of conditional branches) created based on the data. You can see the conditional branches created when predicting <%= target %>.
+The decision tree below represents the series of condition-based splits created by the model to predict the target. Follow the branches from the top node according to the conditions; when you reach a terminal node at the bottom, the prediction for that group is determined.
 
 {{tree_structure}}
 
-**How to Read the Decision Tree**
+Each node shows counts and percentages for each category, the highest-probability category, and the share of training rows. The terminal-node probabilities are model predictions, not causal effects.
 
-Each box is called a node, and the lines extending from them are called branches.
+# Predictive Variables
 
-- **Conditional Branching**: Below each node, a condition (e.g., "Variable A < Value X") is displayed, and branching occurs left and right based on this condition.
- - Left branch is for when the condition is "yes (true)"
- - Right branch is for when the condition is "no (false)"
-- **Information in Nodes**
- - **Top row**: The most frequent value of <%= target %> in the data contained in each node
- - **Middle row**: The proportion of each value of <%= target %> in the data contained in each node
- - **Bottom row**: The proportion of data contained in each node relative to the total (%)
+## Variable importance
 
- The top row value of the bottom-most nodes and their corresponding middle row proportions become the predicted values when using the decision tree model.
+{{variable_importance}}
 
+Importance uses the existing permutation importance calculated for the fitted model and is normalized so the largest bar is 100. Tooltips show relative importance only. Importance is predictive contribution, not causation.
 
-# Model Metrics
+## Variable values and category probabilities
 
-## Model-Level Prediction Accuracy
+{{variable_effect}}
 
-<% if (test_mode) { %>
-Various metrics related to model prediction accuracy are summarized in the following table. Since we are currently in test mode, metrics for both training data and test data are displayed for prediction accuracy.
-<% } else { %>
-Various metrics related to model prediction accuracy are summarized in the following table.
-<% } %>
+Partial dependence shows category-specific predicted probabilities as one explanatory variable changes. The step pattern reflects decision-tree splits and does not establish causality.
+
+# Prediction Accuracy
+
+<% if (test_mode) { %>Training and test performance are compared where available. Test rows were not used to fit the tree.<% } else { %>Metrics describe the fitted data. Enable Test Mode to evaluate unseen data.<% } %>
+
+## Overall metrics
 
 {{summary}}
 
-* Row count indicates the number of rows of data used for model creation.
-* Accuracy, misclassification rate, F1 score, precision, and recall are affected by the TRUE/FALSE boundary value setting. The current boundary value is set to <%= true_false_criteria %>, but this can be changed from [Settings](//analytics/settings/true_false_criteria) in Analytics.
+Macro F1 averages category F1 scores. Macro ROC AUC and Macro PR AUC average one-vs-rest category scores, so every category has equal weight regardless of its overall share.
 
-
-**Metric Details**
-
-* F-value (Micro Average)
-  * F-value (micro average) is the F-value calculated by integrating all classes, showing overall classification performance.
-  * Values range from 0 to 1, where closer to 1 means higher overall prediction accuracy.
-  * Easily influenced by the number of samples per classification, strongly reflecting the performance of majority classes.
-
-* F-value (Macro Average)
-  * F-value (macro average) is a simple average of F-values for each classification, showing classification performance considering balance between classes.
-  * Values range from 0 to 1, where closer to 1 means maintaining uniformly high prediction accuracy across all classes.
-  * Less influenced by sample number bias and evaluates minority class performance equally.
-
-* Accuracy
-  * Accuracy by classification shows the proportion of those predicted as that class that were actually that class.
-  * Values range from 0 to 1, where closer to 1 means more accurate prediction for that class.
-  * Unlike overall accuracy, this represents prediction accuracy on a class-by-class basis.
-
-* Misclassification Rate
-  * Misclassification rate by classification shows the proportion of those predicted as that class that were actually different classes.
-  * Values range from 0 to 1, where closer to 0 means fewer misclassifications for that class.
-  * Calculated as 1-accuracy, representing prediction error rate on a class-by-class basis.
-
-
-## Group-wise Prediction Accuracy
-
-The following table shows prediction accuracy for each group.
+## Per-category metrics
 
 {{class_summary}}
 
-* Accuracy, misclassification rate, F1 score, precision, and recall are affected by the TRUE/FALSE boundary value setting. The current boundary value is set to <%= true_false_criteria %>, but this can be changed from [Settings](//analytics/settings/true_false_criteria) in Analytics.
+Per-category ROC AUC and PR AUC use one-vs-rest comparisons: the selected category is positive and all other categories are negative. The overall share is the baseline for interpreting a category's precision–recall curve.
 
-{start_show_hide}
-### Metric Details
+## Confusion matrix — total percentage
 
-* F1 Score
-    * F1 score is the harmonic mean of precision and recall for each classification, representing a comprehensive metric of classification performance for that class.
-    * Values range from 0 to 1, where closer to 1 means higher prediction accuracy for that class.
-    * Can appropriately evaluate performance for each classification even when class imbalance exists.
+{{confusion_matrix_total}}
 
-* Accuracy
-    * Accuracy by classification shows the proportion of those predicted as that class that were actually that class.
-    * Values range from 0 to 1, where closer to 1 means more accurate prediction for that class.
-    * Unlike overall accuracy, this represents prediction accuracy on a class-by-class basis.
+Each cell shows count and percentage of all evaluated rows.
 
-* Misclassification Rate
-    * Misclassification rate by classification shows the proportion of those predicted as that class that were actually different classes.
-    * Values range from 0 to 1, where closer to 0 means fewer misclassifications for that class.
-    * Calculated as 1-accuracy, representing prediction error rate on a class-by-class basis.
+## Confusion matrix — row percentage
 
-* Precision
-    * Precision shows "the proportion of those predicted as that class that were actually that class".
-    * Values range from 0 to 1, where closer to 1 means higher "accuracy of things predicted as that class actually being that class".
-    * This metric is emphasized when wanting to minimize false positives (predicting that class when actually a different class).
+{{confusion_matrix_row}}
 
-* Recall
-    * Recall shows "the proportion of those actually that class that were correctly predicted as that class".
-    * Values range from 0 to 1, where closer to 1 means higher "ability to not miss actual cases of that class".
-    * This metric is emphasized when wanting to minimize false negatives (predicting a different class when actually that class).
+Each actual-category row is normalized independently, making category-specific misses visible.
 
-{end_show_hide}
+## Category probability distribution
 
+{{multiclass_probability_density}}
 
+The density is shown for each category's predicted probability. A strong model concentrates the probability for the actual category near 1.
 
+## Category ROC curves
 
-## Prediction Matrix (Confusion Matrix)
+{{multiclass_roc}}
 
-<% if (!test_mode) { %>
-The following table summarizes how many of the model's predictions for each row of <%= mode %> data were the same or different from the actual values as a correspondence table. The numbers represent the percentage (%) of each combination in the total data.
-<% } else { %>
-The following table summarizes how many of the model's predictions for each row of <%= mode %> data were the same or different from the actual values as a correspondence table. The numbers represent the percentage (%) of each combination in the total data. Since we are currently in test mode, results for both training data and test data are displayed.
-<% } %>
+Each curve is one-vs-rest and includes the random baseline. Compare category AUCs rather than relying only on overall accuracy.
 
-{{confusion_matrix}}
+## Category Precision–Recall curves
 
-## Prediction Results
+{{multiclass_pr}}
 
-The following table shows the results of predictions made on all data using the created predictive model.
+Each curve has a baseline equal to that category's overall share. PR AUC is often more informative than ROC AUC for rare categories.
 
-{start_lazy_show_hide}
-### Table
+# Prediction Results
+
 {{data}}
-{end_lazy_show_hide}
 
-# Appendix
+# Conditional Improvement Suggestions
 
-## Next Steps
-
-* Variable Selection Optimization: Consider excluding explanatory variables with low variable importance to simplify the model. This makes the model easier to interpret and reduces the risk of overfitting. For variable selection guidelines, please see [this note](https://exploratory.io/note/exploratory/SWF4cTx8).
-* Outlier Verification: By checking for outliers that may affect prediction accuracy and addressing them as necessary, the reliability of the model may improve. For methods to remove outliers, please see [this note](https://exploratory.io/note/exploratory/Eep7kip3).
-* Consideration of Ensemble Learning Methods: To capture patterns that cannot be captured by a single decision tree, it may be effective to consider ensemble learning methods such as Random Forest or XGBoost.
-<% if (!test_mode) { %>
-* Model Evaluation: To more rigorously evaluate the predictive performance of this model, you can validate it by splitting into training data and test data. In that case, set "Test Mode" to TRUE in the "Validation" section under [Settings](//analytics/settings/test_mode) and re-run the analysis.
-<% } %>
-* Prediction on New Data: When you want to use the created model to make predictions on new data, add a "Predict with Model (Analytics View)" step to the target data frame you want to predict. For details, please refer to [this note](https://exploratory.io/note/exploratory/AAI3Mle3).
-
+<% if (!suggestions.length) { %>No automatic warning was triggered by the available metrics.<% } %>
+<% suggestions.forEach(suggestion => { %>
+<% if (suggestion.id === 'overfit_gap') { %>* Training and test performance differ materially. Reduce tree depth, increase terminal-node size, or strengthen pruning.<% } else if (suggestion.id === 'weak_single_tree') { %>* No predictor has measurable importance. Review input variables or consider an ensemble model.<% } %>
+<% }) %>
 `;
-module.exports = template; 
+module.exports = template;

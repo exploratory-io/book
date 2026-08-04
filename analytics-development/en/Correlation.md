@@ -1,12 +1,16 @@
 const template = `
 
 
-<% if (algorithm == 'pearson') { %>
+<% if (algorithm == 'auto') { %>
+Correlation coefficients were calculated using the "Auto" method. Exploratory selected Pearson, Polychoric, or Mixed Correlation based on the variable types. The algorithm can be changed from [Settings](//analytics/settings/do_cor_argo) in Analytics.
+<% } else if (algorithm == 'pearson') { %>
 Correlation coefficients were calculated for all variable combinations. The algorithm used for calculating correlation coefficients is "Pearson". The algorithm can be changed from [Settings](//analytics/settings/do_cor_argo) in Analytics.
 <% } else if (algorithm == 'spearman') { %>
 Correlation coefficients were calculated for all variable combinations. The algorithm used for calculating correlation coefficients is "Spearman". The algorithm can be changed from [Settings](//analytics/settings/do_cor_argo) in Analytics.
-<% } else { %>
+<% } else if (algorithm == 'polychoric') { %>
 Correlation coefficients were calculated for all variable combinations. The algorithm used for calculating correlation coefficients is "Polychoric". The algorithm can be changed from [Settings](//analytics/settings/do_cor_argo) in Analytics.
+<% } else { %>
+Correlation coefficients were calculated for all variable combinations. The algorithm used for calculating correlation coefficients is "Mixed Correlation". The algorithm can be changed from [Settings](//analytics/settings/do_cor_argo) in Analytics.
 
 <% } %>
 
@@ -49,6 +53,7 @@ Guidelines for interpreting correlation coefficients are as follows:
 * The algorithm for correlation coefficients is **Pearson's correlation coefficient** by default. However, if there is a monotonic but not linear relationship between variables, **Spearman's rank correlation coefficient** can more appropriately capture the correlation. The algorithm can be changed from [Settings](//analytics/settings/do_cor_argo) in Analytics.
 * Spearman's rank correlation coefficient converts original values to rank values and then calculates correlation coefficients using the same method as Pearson's correlation coefficient. For details on these two correlation coefficients, please refer to [this note](https://exploratory.io/note/exploratory/2-BsF1LQF4).
 * Polychoric correlation is intended for ordinal variables such as survey rating scales (e.g. 1 to 5). It estimates the correlation between the continuous variables assumed to underlie the ordinal responses.
+* Mixed Correlation is intended for data containing both continuous numeric and ordinal variables.
 
 # Statistical Significance
 
@@ -100,7 +105,7 @@ We conducted hypothesis tests to determine whether the correlation coefficients 
       * It is typically used when the sample size is large or when there are tied ranks.
       * Larger absolute values indicate stronger evidence against the null hypothesis (no correlation), and correspond to smaller P-values.
 
-<% } else { %>
+<% } else if (algorithm == 'polychoric') { %>
 
 * Correlation Coefficient (Polychoric Correlation)
   * The polychoric correlation estimates the correlation between two ordinal variables by assuming each is a discretization of an underlying continuous variable that follows a normal distribution.
@@ -128,6 +133,7 @@ The hypothesis test for correlation evaluates whether an observed correlation co
   * When the sample size is small (as a guideline, n < 50) and there are no tied ranks: Exact Test
   * Otherwise: Approximate Test (normal approximation)
 * For Polychoric correlation, a z-test based on the standard error of the estimated correlation is used.
+* For Mixed Correlation, a z-test based on the standard error of each pairwise estimate is used.
 
 In these tests, a P-value is calculated for each correlation coefficient. The P-value represents the probability of observing the given result under the null hypothesis that there is no correlation (correlation coefficient = 0).
 
