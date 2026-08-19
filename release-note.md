@@ -1,5 +1,237 @@
 # Release Note
 
+# v16.0
+
+## Release Date
+
+8/19/2026
+
+## New Features
+
+### AI Data
+
+You can now bring data into Exploratory simply by describing what you need in natural language.
+
+Instead of figuring out how to write SQL, call an API, parse a PDF, combine multiple Excel files, or scrape a website, you can tell AI what data you want. AI determines the best way to get it, generates the necessary R script, runs it, and imports the resulting data into Exploratory.
+
+Because Exploratory runs on R, AI Data can work with a wide range of data sources that can be accessed from R, including Excel, CSV, JSON, XML, PDF, databases, cloud services and APIs, websites, and open data sources.
+
+For example, you can ask AI Data to:
+
+*   Import this Excel file and combine the sheets into one dataset.&#x20;
+*   Extract the sales table from this PDF.&#x20;
+*   Get website traffic data from Google Analytics for the past 30 days.&#x20;
+*   Get population data for Tokyo from e-Stat.&#x20;
+*   Get total sales by customer for the past 12 months from the database.
+
+AI Data turns many of the tedious and technical steps involved in getting data ready for analysis into a conversational workflow while still preserving the transparency and reproducibility of an R-based data pipeline.
+
+### Data Wrangling
+
+*   We created a new UI for setting up factor levels, allowing users to define levels even for values not present in the current data. This ensures consistent visualization and summary statistics (e.g., showing all 5 points of a Likert scale) even when some responses are missing.
+*   We created a new UI for transforming multiple-answer survey data into long format with an option to select multiple columns. This allows users to easily cross-tabulate and analyze complex survey responses without performing multiple manual data wrangling steps.
+
+### Chart
+
+*   Pivot Table: We added support for 'Multiple Variables' in Pivot and Summarize tables, allowing users to cross-tabulate wide-format columns directly.&#x20;
+*   Pivot Table: We added support for "Multiple Values" columns in Pivot Tables and Charts, allowing users to analyze comma-separated (or any other delimited) values directly. This eliminates the need for complex data wrangling steps to separate rows, making it much faster to analyze survey data with multiple-choice questions.
+*   Pivot Table: We added support for Repeat By for Pivot Table.
+*   Pivot Table: We added a feature to export Pivot Tables with "Repeat By" groups as separate sheets within a single Excel or Google Sheets workbook. This allows users to organize grouped data into tabs automatically, making large exported reports much easier to navigate.
+*   Pivot Table: We introduced a 'Same Level' option for Pivot Table rows, allowing users to display multiple group columns at the same level instead of a hierarchy. This enables users to easily create General Tables (GT) for survey analysis without manual data transformation.
+*   Radar Chart: We added support for Category input mode in Radar charts. This allows users to create radar charts by simply selecting a key column and a value column, eliminating the need to manually assign every single variable when the data is already in a tidy format.
+*   Chart: We extended support for the "Multiple Values" column function to regular charts (e.g. Bar, Line, etc.). Users can now visualize delimited text data directly in standard charts without needing a separate data wrangling step.
+*   Chart: We extended support for the 'Multiple Variables' selection to regular charts. Now users can select 'Multiple Variables' on the X-axis and "Repeat By" shelves for various chart types, including Bar, Line, Radar, Pie, and Scatter charts.&#x20;
+
+### Analytics
+
+*   K-Modes Clustering: We added support for K-modes clustering, which is designed specifically for categorical data.
+*   K-Medoids Clustering: We added support for K-Medoids clustering, which is designed specifically for ordered categorical data.&#x20;
+*   Cronbach's alpha: We added support for calculating Cronbach’s alpha to assess the internal consistency of survey items. This allows users to evaluate the reliability of their measurement scales directly within the application using provided R scripts or built-in functions.
+*   Polychoric Correlation: We added "Polychoric Correlation" support to Correlation Analysis, Factor Analysis, PCA, Cronbach's Alpha.
+*   Mixed Correlation: We added "Mixed Correlation" support to Correlation Analysis, Factor Analysis, PCA, Cronbach's Alpha.
+*   Decision Tree: We improved the Decision Tree node display to show TRUE/FALSE proportions and N counts directly within the nodes. This provides users with a more intuitive and detailed understanding of the data distribution at each split, similar to traditional statistical software.
+*   CHAID Decision Tree: We added CHAID (Chi-square Automatic Interaction Detector) Decision Trees, featuring statistical details on splits and group compositions. This provides users with a popular, significance-based algorithm for building decision trees, offering an alternative to the default impurity-based methods. This allows users to understand the statistical basis of their segments and the relationships between variables in a highly visual and structured format.
+*   Ordinal Logistic Regression: We added support for Ordinal Logistic Regression to analyze target variables with inherent ordering, such as NPS categories (Detractor, Passive, Promoter).&#x20;
+
+## Enhancements
+
+### Data Source
+
+*   We improved Excel file imports to scan all rows for data type detection, similar to CSV files. This ensures accurate data types even when leading rows contain missing values, providing a more reliable and consistent import experience.
+*   We added support for Oracle OCI for Oracle Database. This provides users with a significantly faster connection and data import experience compared to using ODBC.
+*   We improved the performance of SQL data import jobs by reducing the overhead associated with spawning separate R processes. This results in faster data loading times for users working with SQL databases.
+*   We updated the database import process to retain edited SQL queries even if the import fails due to network errors. This prevents users from losing their work and allows them to quickly retry the import once the issue is resolved.
+*   We updated the PostgreSQL schema list to include materialized views.
+*   We updated the RDS file import to preserve Factor data types and their specific levels. This ensures that users don't lose their predefined category orders when sharing or moving data via RDS files.
+*   We added support for OAuth tokens in R Script data sources, allowing the R query to use existing tokens from supported data sources. This enables users to easily fetch data from services like Google Drive directly within their R scripts.
+
+### Data Wrangling
+
+*   We added "is number" and "is text" operators to the "Filter" and "Replace Values with Conditions" dialog.
+*   We added a validation check and confirmation dialog when renaming or selecting/unselecting columns that are used in subsequent steps. For renaming the column case, it can detect all the places that refers to the columns and update the references automatically.&#x20;
+*   We added the ability to edit comments on disabled steps.&#x20;
+*   You can now see the exact date and time when a step was cached by hovering over the cached step.
+*   We simplified the count\_if and other count\_x functions so they no longer require the row\_number() function as an argument. These are the functions you can use for Custom Calculation inside Chart or inside Summarize / Create Calculation steps.
+*   We improved the error message and handling for incomplete transform steps to be more descriptive and accurate. This helps users more easily identify and fix issues in their data processing steps.
+
+### Chart
+
+*   Pivot Table: Now you can add more than two columns for Column.
+*   Window Calculation: We now show all the window calculation options under 'Others' menu.&#x20;
+*   Pivot Table: We added "Number of TRUE/FALSE" and "% of TRUE/FALSE" aggregation functions for Grand Total for Pivot and Summarize Tables when a logical column is used.&#x20;
+*   Pivot Table: We added a custom color picker for text and background colors in Pivot Tables, similar to the existing chart color options.&#x20;
+*   Pivot Table: We added an option to display row totals on the left side of Pivot Tables.&#x20;
+*   Pivot Table: We added an option to select specific group hierarchies when calculating the percent of total in Pivot and Summarize tables. This allows users to calculate ratios relative to a specific parent group (e.g., percent of yearly total) rather than just the immediate group or the grand total.
+*   Pivot Table: We added support for sorting at specific levels within a multi-level row hierarchy in Pivot Tables.
+*   Pivot Table: We added an option to sort character columns numerically by ignoring non-numeric prefixes in Pivot and Summarize tables. This allows users to correctly sort labels like 'Q1, Q2, ... Q10' without manually setting factor levels.
+*   Pivot Table: We added separate font settings for the Header and Value sections in Pivot Tables.&#x20;
+*   Pivot Table: We added support for column-level subtotals in Pivot Tables when multiple columns are assigned. This allows users to see subtotals for each category within a column group.
+*   Pivot Table: We added support for conditional coloring based on values in other columns within Pivot and Summarize tables. This allows users to highlight data points based on related metrics, such as coloring a sales figure based on whether the profit margin in another column is positive or negative.
+*
+*   Pivot Table: We updated Pivot Tables to hide the entire row total column if the total display is turned off in the value formatting dialog.&#x20;
+*   Pivot Table: Grand Total: We consolidated the Grand Total settings in Pivot Tables by moving the Aggregation Function setting to the main Grand Total control area. This makes it much easier for users to configure totals and subtotals in one place without searching through individual value formatting dialogs.
+*   Reference Line: We added a "Value Only" option to the reference line settings for displaying text on the plot area. This allows users to show just the numerical value of a reference line without additional labels, resulting in a cleaner chart appearance.
+*   Show Value: We added the ability to display both actual values and percentages simultaneously on bar charts.
+*   Show Values: No you can select whether you want to show values of both Y1 and Y2 or just Y1 or Y2.&#x20;
+*   We introduced a feature to allow independent synchronization for Y1 and Y2 axes.
+*   Text Wrap for X-Axis / Legend, and Repeat By: We added support for text wrapping and ellipses for long labels on the X-axis, in Legends, and on the Repeat By title. This ensures that long category names, common in survey data, are displayed neatly without overlapping or extending beyond the chart area.
+
+### Analytics
+
+*   Chi-Square Test: Added Standardized Difference chart.
+*   Chi-Square Test: We added support for displaying both percentages and real numbers simultaneously in the pivot tables.
+*   We implemented a major redesign of the Factor Analysis, Correspondence Analysis, Principal Component Analysis (PCA) report, focusing on a user-centric analysis flow.
+*   PCA: We added an option to draw a correlation circle in PCA biplots. This helps users visualize the relationship between variables and the principal components, making it easier to interpret the strength and direction of the variables' contributions.
+*   PCA: We added an option to show original loadings instead of proportions in the PCA weights table. This allows users to see the raw factor loadings, which is often preferred for detailed statistical interpretation and reporting.
+*   PCA: We replaced heatmaps with bar-style indicators in the PCA loading table and added detailed interpretation guidelines.&#x20;
+*   PCA: We added color-coded cells and improved descriptions to the Cumulative Representation chart in PCA. This allows users to quickly identify how well each original variable is represented by the selected number of principal components.
+*   Correspondence Analysis: We added support for aggregated data, such as contingency tables. This allows users to perform analysis on data that is already summarized in a pivot-like format, rather than requiring raw individual-level data.
+*   Factor Analysis: We added support for a factor count of 1 in Factor Analysis. This allows users to validate whether a specific group of survey questions effectively measures a single underlying construct as intended in their research design.
+*   Factor Analysis: We updated the Factor Analysis loading table to use visual bars and added interpretation guidelines.&#x20;
+*   Factor Analysis\:We separated the Scree plots in Factor Analysis into two distinct charts: one for eigenvalues and one for parallel analysis. This clarity helps users better distinguish between different criteria when deciding on the number of factors.
+*   Factor Analysis: We added support for different Parallel Analysis methods (Factor Model and SMC) in Factor Analysis. This gives advanced users more flexibility in how they estimate communalities and determine the number of factors.
+*   Factor Analysis: We added support for displaying the Factor Score Coefficient matrix in Factor Analysis results. This provides users with the necessary coefficients to calculate factor scores for new data, increasing the utility of the analysis for predictive purposes.
+*   Factor Analysis: We changed the default rotation method for Factor Analysis from 'Varimax' to 'Promax'. This reflects common practice in social sciences where factors are often correlated, leading to more natural and interpretable results.
+*   Logistic Regression: We added McFadden R-Squared, Chi-Squared, and Degrees of Freedom to the Logistic Regression report. These additional metrics provide users with a more comprehensive understanding of their model's goodness-of-fit and statistical significance.
+*   Binary Prediction Models: We redesigned the Confusion Matrix tables to show percentages and counts simultaneously.
+*   Binary Prediction Models: We added the Precision-Recall curve chart.
+*   Binary Prediction Models: We added a "Recommended Cut Point" feature for binary prediction models, which suggests the optimal threshold for balancing precision and recall. This helps users make better classification decisions based on their specific business needs, such as minimizing missed cases or false alarms.
+*   Categorical Classification Models: We redesigned the ROC chart and the predicted probability distribution chart to use a "One-vs-Rest" approach for categorical targets. This makes it much easier for users to visualize how well the model distinguishes each specific category from the others.
+*   Paired t-Test / Wilcoxon Test: We added the ability to specify a key column for pairing rows in paired t-Tests and Wilcoxon tests. This ensures that users can accurately perform paired analyses even when their data is not perfectly ordered by subject.
+*   We added an option to export guided analysis results directly to a Note. This allows users to quickly compile and share multiple analysis results in a single document without the manual effort of copying and pasting text and charts.
+
+### Dashboard
+
+*   We updated the chart selection dialog to allow inserting multiple charts at once.&#x20;
+
+### Note
+
+*   We updated the chart selection dialog to allow inserting multiple charts at once.&#x20;
+*   We added support for exporting Mermaid flow diagrams from Notes to Word documents.&#x20;
+*   We added a better page margins and automatic page breaks before H1 headers when exporting to PDF.&#x20;
+
+### Version Control
+
+*   We added a search and highlighting feature to the change history.&#x20;
+
+## Issue fix
+
+### AI Function
+
+*   Fixed an issue where the comment input field would disappear and prevent comments from being added when using the "Add to Comment" button in the AI Summary.
+*   The streaming output in the AI chat was flickering, and execution status results were opening automatically without user interaction.
+
+### AI Prompt
+
+*   Fixed a UI issue where clicking the "Edit" button on an AI-generated wrangling step would break the R Script Editor interface.
+*   Fixed an issue where AI Prompt steps in imported projects could not be opened from the Chart view if the AI agreement had not yet been accepted.
+*   The UI streaming for AI prompts became less smooth and more jittery following the introduction of the AI Data source.
+
+### Data Source
+
+*   Fixed an issue where the Google BigQuery import screen would freeze if the service account JSON file had been moved or deleted from its original location.
+*   The sample data displayed during the file import and merge process incorrectly showed fewer rows than were actually present in the source files.
+*   When importing a multi-sheet Excel file, selecting the second sheet and clicking "Apply" would incorrectly display and import the data from the first sheet.
+
+### Summary View
+
+*   Deleting a column used as a target in the Summary View's correlation mode caused a persistent error that prevented users from clearing the assignment.
+
+### Data Wrangling
+
+*   Fixed an issue where no default operator was selected when opening the filter dialog for a Factor column.
+*   The data source step in the wrangling flow was incorrectly showing a yellow "stale" status even when no parameters had changed.
+*   The filter dropdown for Factor data type columns was incorrectly displaying empty or null values.
+*   XGBoost prediction steps failed with an "invalid externalptr" error after an R session restart or project reopening because the model's memory pointer was lost.
+*   Fixed an issue where duplicate branches would appear in the data frame flow after deleting a branch.
+*   Users were able to move a child branch to a step before its parent's root via drag-and-drop, which broke the data frame hierarchy and caused UI inconsistencies.
+
+### Analytics
+
+*   In Random Forest and other tree-based models with test mode enabled, the confusion matrix for test data failed to update when the classification threshold parameter was changed.
+*   The 'Underlying data has changed' warning appeared in the Analytics view immediately after opening a project.
+*   The Principal Component Analysis (PCA) score results in Exploratory were found to be different from those generated by SPSS.
+
+### Chart
+
+*   An error occurred when rendering Latitude/Longitude maps if the chart was pinned to a step that included data grouping.
+*   Charts with the 'Repeat By' (facet) setting were failing to render when viewing an HTML preview or exporting a Note to PDF.
+*   Fixed a crash in Pivot Tables that occurred when calculating subtotals for certain combinations of row and column headers.
+*   Fixed an issue in Pivot Tables where an error occurred when trying to combine ordered factors with different levels during subtotal calculation.
+*   Fixed an issue in Pivot Tables where applying the "Fill with Zero" setting for missing values would incorrectly change the values of existing cells.
+*   Fixed an issue in Pivot Tables where the 'Row' option for Color/Bar settings was not displayed when no column was assigned to the Row shelf.
+*
+*   Fixed an issue in the Bar chart where value labels were misplaced when using a numeric column as a text-scale X-axis with color grouping.
+*   Fixed an issue in the Table chart where text wrapping would fail at certain cell widths, causing text to be truncated with an ellipsis.
+*   Fixed an issue in the Table chart where visual bars became excessively thick when text wrapping caused rows to span multiple lines.
+*   Fixed an issue where certain "Band Width" options in the Density chart would trigger an error.
+*   Fixed an issue where conditional background color settings did not apply correctly to empty cells in Pivot Tables.
+*   Fixed an issue where re-selecting "Custom" from the dropdown in the chart settings would open an empty dialog and force the deletion of existing custom calculations.
+*   Fixed an issue where selecting the "Line + Circle" marker for the Y2 axis would break the bars in a bar chart.
+*   Fixed an issue where the decimal places setting in charts would unexpectedly inherit values from the font size field.
+*   Fixed an issue where the defined factor order was not honored when displaying Pivot Tables in the flat row mode.
+*   Fixed an issue where thumbnail images for new data frames created from Analytics were not appearing in the hover popup.
+*   In bar charts with multiple Y-axis values, setting one marker to 'Line + Circle' caused the bars to be cut off or rendered incorrectly.
+*   In Pivot Tables with multiple row columns and text wrapping enabled, the cell heights for child rows were inconsistent when a parent row's text wrapped.
+*   In Pivot Tables, the header centering calculation included the empty space to the right of the table, causing the text to appear off-center.
+*   Number formatting settings were not being correctly applied to the Row Level Total values in Pivot Tables.
+*   Scrolling was difficult in Pivot Tables with 'Repeat By' (facets) when the table body did not have its own scrollbars.
+*   The "Down within Group" and "Down and Across within Group" window calculations in Pivot Tables were incorrect when the "Repeat By" feature was used.
+*   The horizontal width calculation for faceted charts with Repeat By was not accounting for the space consumed by the legend, potentially leading to overlapping axis labels.
+*   When viewing a Custom chart that returns a data frame, the loading spinner did not appear immediately and showed an unnecessary flicker after the table was rendered.
+
+### Dashboard
+
+*   In long dashboards with margin-less pivot tables, mouse focus on the table would capture the scroll event, making it difficult to scroll the entire dashboard page.
+*   Users were unable to open or switch to a Note after running a Dashboard and viewing chart details.
+
+### Note
+
+*   Clicking the 2-column layout button twice in the Note editor caused an unintended nested layout to appear.
+*   Fixed an issue where creating a new note would occasionally result in an empty screen that could not be closed or deleted.
+*   Fixed an issue where the Enter key did not work to confirm the dialog when creating a new note.
+*   Opening the Note Editor would incorrectly override the Cmd+R shortcut key, preventing it from working in other applications while Exploratory was active.
+*   The "Last Updated" time for Notes was not updating in real-time during editing, causing confusion about whether changes were being saved.
+
+### Install
+
+*   Fixed an issue where the update notification button was not appearing on the desktop version for users logged into Exploratory Hosted Servers.
+*   The "Reset R Packages" process incorrectly displayed a message to close other projects even when no other projects were open, preventing the reset.
+*   The Git installation process on Apple Silicon Macs could fail or enter a loop due to "Bad CPU type" errors, even if Git was manually installed.
+*   The R installer progress bar was incorrectly reaching 81% even when the download had failed due to network issues.
+
+### Project
+
+*   Fixed an issue where opening large projects with many data frames would cause a "Too many open files" error.
+*   Restoring a project to a previous version from the change history search results was failing to correctly revert the state in some cases.
+*   The search keyword in the project change history was being cleared automatically when the user pressed the Enter key.
+
+### Publish
+
+*   Published dashboards with session parameters failed to open with an "error code 127" due to incomplete step metadata being sent from the Desktop version.
+
+
+
 # 15.6
 
 ## Release Date
@@ -39,7 +271,7 @@
 
 ### R Script
 
-* Clicking on a R script showed the previously opened R script content. 
+* Clicking on a R script showed the previously opened R script content.
 
 
 # 15.5
