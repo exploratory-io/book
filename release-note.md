@@ -1,5 +1,69 @@
 # Release Note
 
+# v16.1
+
+## Release Date
+
+8/26/2026
+
+## Enhancements
+
+### Data Source
+
+*   We updated the connection dialog to show the hostname and database name when selecting connections for the imported content that is shared by somebody else. This enables users to accurately identify and select the correct data source from their existing connections, preventing errors when importing shared work.
+
+### Data Wrangling
+
+*   We added an option to hide disabled steps within the Step Diagram. This allows users to create a cleaner view of the active data pipeline, making it much easier for third parties to follow the actual logic of the data processing.
+
+### Chart
+
+*   We added the "Edit Display Name" option for the "Repeat By" section when using 'Multiple Variables'. This allows users to customize labels directly on the chart.
+*   Pivot Table: We updated the Pivot Table to preserve the ratio calculation direction setting even when columns are temporarily removed. This allows users to switch between different view modes without losing their configuration, significantly reducing repetitive manual adjustments.
+*   Pivot Table: We removed the unnecessary "Grand Total" option from the Target Total settings in Pivot Tables. This simplifies the UI by removing a confusing and not useful option.
+*   Pivot Table: We updated the default decimal formatting to always show two decimal places when the "Ratio" (percentage) format is selected. This ensures consistent data presentation (e.g., "6.10%" instead of "6.1%"), making it easier for users to compare values accurately in reports.
+
+### Analytics
+
+*   K-Medoids Clustering: We improved the execution performance of the K-Medoids clustering algorithm for large datasets. Users can now process thousands of rows much faster, enabling more efficient exploratory analysis on larger survey and response data.
+
+### Note
+
+*   We updated the Note editor to automatically include chart comments along with the title when inserting a chart. This ensures that important context and insights are preserved and shared, saving users time from manually copying descriptions into their notes.
+
+
+## Issue fixes
+
+### Data Source
+
+*   The "Get Schema Information" button failed to use updated connection details unless the "Update" button was clicked first.
+
+### Data Wrangling
+
+*   The Step Diagram was missing from exported PDF documents when generated through the AI Summary and Note export workflow.
+*   The zoom level of the Step Diagram would unexpectedly reset whenever a user clicked on a step belonging to a different data frame.
+*   When a comment was added to a step, the actual operation summary was hidden and replaced entirely by the comment text in the Step Diagram.
+
+### Chart
+
+*   X-axis labels in charts were overlapping and not wrapping or adjusting their angle correctly when there were many bars with long labels.
+*   Copying a data frame with analytics or charts failed with a error "RangeError: Invalid string length" when there are 100s of analytics or charts.
+*   Pivot Table: The Text Wrap functionality was not working for Row Header text in tables when the words are connected by special characters.
+*   The thumbnail images generated for Pivot Tables were appearing distorted or incorrect.
+
+### Analytics
+
+*   Ordinal Logistic Regression: The numerical target variable was being incorrectly binned during assignment even when it contained only a small range of values (e.g. 1 - 5 scale).
+
+### Note
+
+*   The AI Note Editor failed to open when the user attempted to launch it while having a portion of text selected within the note.
+
+### Install
+
+*   R package installation failed on Intel Macs during the upgrade to v16 because the prophet package could not be installed correctly.
+
+
 # v16.0
 
 ## Release Date
