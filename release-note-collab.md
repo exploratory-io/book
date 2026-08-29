@@ -1,5 +1,64 @@
 # Release Note
 
+# 16.0
+
+Released on 8/29/2026
+
+## Download
+
+
+## Product Enhancement
+
+### Chart
+
+*   We added an option to disable chart image exports. Authors can now choose whether charts can be exported as image or not along with the data download option.
+*   We improved the performance of the chart editor startup, not it's about 7 to 8 times faster!
+
+### Dashboard
+
+*   We improved the interactive mode startup by optimizing for reading Parquet files. This reduces the waiting time for users when opening complex dashboards with large datasets.
+*   We implemented a multi-phase performance improvement for interactive mode parameters, including LOV caching and batching R evaluations. This significantly reduces the time users spend waiting for parameters to update, especially with large lists of values.
+*   We improved the performance of cascading parameters by optimizing how List of Values (LOV) are refreshed. Users can now experience faster parameter updates even when using large datasets without needing to create separate data frames for LOVs.
+*   The time for initiating the Interactive mode is 85% faster now.
+*   When you have cascading parameters, you will see 20 to 30 times faster speed for updating the parameter values.
+
+### Schedule
+
+*   We added the ability to specify specific hours for scheduled jobs, such as running only during business hours. This gives users more granular control over server resources and notification timing.
+
+## Issue fix
+
+### Analytics
+
+*   Exporting an analytics correlation table as an image on the server resulted in a 0-byte empty file instead of the actual image data.
+
+### Chart
+
+*   Buttons for full-screen view and image export remained visible on embedded content even when those features were turned off in the settings.
+
+### Dashboard
+
+*   Accessing published Dashboard on the server resulted in a significant delay where a blank page was shown before loading began.&#x20;
+*   Clicking on a chart to start interactive mode failed with a "There is no R process running" error, although starting it from the parameter pane worked correctly.
+*   Clicking on chart values in specific dashboards on the server triggered an "error code 127," a problem that did not occur in the desktop version.
+*   Interactive mode failed to start with an "error code 127" due to a custom R step that failed when the filtered data frame did not contain exactly one row.
+*   The error dialog on the dashboard did not provide immediate feedback when the "OK" button was clicked, leading to a delay before the page reloaded.
+*   The screenshot in the scheduling notification email was showing different numbers than the actual dashboard on the server because the thumbnail capturing was not working correctly on the scheduler side.
+
+### Parameter
+
+*   Clicking the "Reset Values" button on a session-filtered parameter incorrectly exposed default values that the current user did not have permission to view.
+*   Clicking the "Reset Values" link in the parameter pane failed to trigger the automatic update of dependent cascading parameters, even when the update option was enabled.
+*   Interactive mode parameters on the hosted server failed to reflect correctly after reopening a dashboard, causing some charts to show default values or no data while others updated.
+*   Single-select parameters incorrectly displayed a "(No Selection)" option when they shouldn't, and in some cases, executing with "(No Selection)" caused the first value in the list to be automatically selected.
+*   Single-select parameters set to "no selection" as default would automatically select the first available value upon refreshing the dashboard on the server, unlike the desktop version.
+
+### Admin
+
+*   Adding a member to a team on the server resulted in an "Internal Server Error" message, even though the member was actually added after a page reload.
+
+
+
 ## 15.1
 
 Released on 6/12/2026
@@ -153,7 +212,7 @@ Released on 10/4/2025
 
 ### Bug Fixes
 
-* Privacy: Added 'noindex' tag for the content that are shared with URL so that they won't show up in the search result (e.g. Google) even when the URL was linked from public web pages. 
+* Privacy: Added 'noindex' tag for the content that are shared with URL so that they won't show up in the search result (e.g. Google) even when the URL was linked from public web pages.
 
 
 ## 13.2
