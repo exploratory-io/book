@@ -1,20 +1,23 @@
 # Release Note
 
-# 16.0
+## 16.0
 
 Released on 8/29/2026
 
-## Download
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-16.0.62.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Collaboration-Server-Installation-Instruction-MtG2ykz5ml))
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-images-16.0.62.tar.gz) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Collaboration-Server-Epr2Ftg2HH))
 
 
-## Product Enhancement
+### Product Enhancement
 
-### Chart
+#### Chart
 
 *   We added an option to disable chart image exports. Authors can now choose whether charts can be exported as image or not along with the data download option.
 *   We improved the performance of the chart editor startup, not it's about 7 to 8 times faster!
 
-### Dashboard
+#### Dashboard
 
 *   We improved the interactive mode startup by optimizing for reading Parquet files. This reduces the waiting time for users when opening complex dashboards with large datasets.
 *   We implemented a multi-phase performance improvement for interactive mode parameters, including LOV caching and batching R evaluations. This significantly reduces the time users spend waiting for parameters to update, especially with large lists of values.
@@ -22,21 +25,21 @@ Released on 8/29/2026
 *   The time for initiating the Interactive mode is 85% faster now.
 *   When you have cascading parameters, you will see 20 to 30 times faster speed for updating the parameter values.
 
-### Schedule
+#### Schedule
 
 *   We added the ability to specify specific hours for scheduled jobs, such as running only during business hours. This gives users more granular control over server resources and notification timing.
 
-## Issue fix
+### Issue fix
 
-### Analytics
+#### Analytics
 
 *   Exporting an analytics correlation table as an image on the server resulted in a 0-byte empty file instead of the actual image data.
 
-### Chart
+#### Chart
 
 *   Buttons for full-screen view and image export remained visible on embedded content even when those features were turned off in the settings.
 
-### Dashboard
+#### Dashboard
 
 *   Accessing published Dashboard on the server resulted in a significant delay where a blank page was shown before loading began.&#x20;
 *   Clicking on a chart to start interactive mode failed with a "There is no R process running" error, although starting it from the parameter pane worked correctly.
@@ -45,7 +48,7 @@ Released on 8/29/2026
 *   The error dialog on the dashboard did not provide immediate feedback when the "OK" button was clicked, leading to a delay before the page reloaded.
 *   The screenshot in the scheduling notification email was showing different numbers than the actual dashboard on the server because the thumbnail capturing was not working correctly on the scheduler side.
 
-### Parameter
+#### Parameter
 
 *   Clicking the "Reset Values" button on a session-filtered parameter incorrectly exposed default values that the current user did not have permission to view.
 *   Clicking the "Reset Values" link in the parameter pane failed to trigger the automatic update of dependent cascading parameters, even when the update option was enabled.
@@ -53,7 +56,7 @@ Released on 8/29/2026
 *   Single-select parameters incorrectly displayed a "(No Selection)" option when they shouldn't, and in some cases, executing with "(No Selection)" caused the first value in the list to be automatically selected.
 *   Single-select parameters set to "no selection" as default would automatically select the first available value upon refreshing the dashboard on the server, unlike the desktop version.
 
-### Admin
+#### Admin
 
 *   Adding a member to a team on the server resulted in an "Internal Server Error" message, even though the member was actually added after a page reload.
 
