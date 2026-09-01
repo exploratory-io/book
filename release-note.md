@@ -97,7 +97,7 @@ AI Data turns many of the tedious and technical steps involved in getting data r
 
 ### Chart
 
-*   Pivot Table: We added support for 'Multiple Variables' in Pivot and Summarize tables, allowing users to cross-tabulate wide-format columns directly.&#x20;
+*   Pivot Table: We added support for 'Multiple Variables' in Pivot and Summarize tables, allowing users to cross-tabulate wide-format columns directly.
 *   Pivot Table: We added support for "Multiple Values" columns in Pivot Tables and Charts, allowing users to analyze comma-separated (or any other delimited) values directly. This eliminates the need for complex data wrangling steps to separate rows, making it much faster to analyze survey data with multiple-choice questions.
 *   Pivot Table: We added support for Repeat By for Pivot Table.
 *   Pivot Table: We added a feature to export Pivot Tables with "Repeat By" groups as separate sheets within a single Excel or Google Sheets workbook. This allows users to organize grouped data into tabs automatically, making large exported reports much easier to navigate.
