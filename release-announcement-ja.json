@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "title": "リリースアナウンスメント",
+      "desc": "Exploratoryのリリースアナウンスメントの記事です。リリースのテーマ、そして新機能の紹介をしています。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/tag/?q=tag:Announcement&language=ja",
+      "insights": [
+        {
+         "title": "Exploratory v16 - アンケートデータ分析を、もっと効率的に、もっと深く",
+         "desc": "データを取得 → 整える → 集計・可視化する → 深く分析する → レポートとして共有するという、アンケートデータ分析の流れに沿って紹介します。",
+         "path": "exploratory-v16-ja",
+         "url": "https://exploratory.io/note/kanaugust/rAV4tmB0PO"
+        },
+        {
+         "title": "Exploratory v15.5リリース：CatBoost、シルエット法、比率検定など、アナリティクス機能を大幅強化",
+         "desc": "機械学習、クラスタリング、統計検定といった、データからより深いインサイトを得るための機能が大きく強化されました。",
+         "path": "exploratory-v15_5-ja",
+         "url": "https://exploratory.io/note/kanaugust/QoG2Pux4Zy"
+        },
+        {
+         "title": "Exploratory v15 - AI時代に信用できるデータ分析を支える3つのR",
+         "desc": "AI時代により重要となる、データ加工の可読性、再現性、信頼性を高めるための新機能を追加しました。",
+         "path": "exploratory-v15-ja",
+         "url": "https://exploratory.io/note/kanaugust/LdZ7yEm3bo"
+        },
+        {
+         "title": "Exploratory v14 - データサイエンス 2.0 with AI 関数 & AI ノートエディター",
+         "desc": "表計算：移動平均をラインチャートに引く方法を紹介します。",
+         "path": "exploratory-v14-ja",
+         "url": "https://exploratory.io/note/kanaugust/hPm0eyK7YG"
+       }
+      ]
+    }
+  ]
+}

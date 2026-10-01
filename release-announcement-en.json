@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "title": "Release Announcements",
+      "desc": "Articles about Exploratory release announcements. They cover release themes and introduce new features.",
+      "moreButtonText": "See more",
+      "moreButtonUrl": "https://exploratory.io/tag/?q=tag:Announcement&language=ja",
+      "insights": [
+        {
+         "title": "Exploratory v16 - Survey Data Analysis, More Efficiently and More Deeply",
+         "desc": "We introduce features along the survey data analysis workflow: acquire data → prepare it → aggregate and visualize → analyze in depth → share as a report.",
+         "path": "exploratory-v16-en",
+         "url": "https://exploratory.io/note/kanaugust/rAV4tmB0PO"
+        },
+        {
+         "title": "Exploratory v15.5 Release: Major Analytics Enhancements Including CatBoost, Silhouette Method, and Proportion Test",
+         "desc": "Features for gaining deeper insights from data—machine learning, clustering, and statistical tests—have been significantly enhanced.",
+         "path": "exploratory-v15_5-en",
+         "url": "https://exploratory.io/note/kanaugust/QoG2Pux4Zy"
+        },
+        {
+         "title": "Exploratory v15 - Three Rs Supporting Trustworthy Data Analysis in the AI Era",
+         "desc": "We've added new features to improve the readability, reproducibility, and reliability of data wrangling—qualities that become even more important in the AI era.",
+         "path": "exploratory-v15-en",
+         "url": "https://exploratory.io/note/kanaugust/LdZ7yEm3bo"
+        },
+        {
+         "title": "Exploratory v14 - Data Science 2.0 with AI Functions & AI Note Editor",
+         "desc": "Spreadsheets: how to plot a moving average on a line chart.",
+         "path": "exploratory-v14-en",
+         "url": "https://exploratory.io/note/kanaugust/hPm0eyK7YG"
+       }
+      ]
+    }
+  ]
+}
