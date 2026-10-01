@@ -1,54 +1,66 @@
 {
   "data": [
     {
-      "title": "チャートの種類",
-      "desc": "Exploratoryには様々なチャートのタイプがあります。",
+      "title": "Blog記事",
+      "desc": "Exploratoryからの最新のブログ記事です。",
       "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Ablog&language=ja",
       "insights": [
         {
-         "title": "ピボットテーブルの作り方",
-         "desc": "ピボットテーブルの作り方を紹介します。",
-         "path": "pivot-ja",
-         "url": "https://exploratory.io/note/exploratory/nAH3SJh5"
+         "title": "AI時代の信頼できるデータ分析を支える「3つのR」",
+         "desc": "AIを使えば素早く簡単にデータを分析できますが、その結果がほんとうに正しいとは限りません。そこで、信頼できるデータ分析には可読性、再現性、そして信頼性が必要となります。",
+         "path": "three-r-for-trustable-data-analysis-in-ai-era-ja",
+         "url": "https://exploratory.io/note/kanaugust/YmL6aMh6fv"
         },
         {
-         "title": "集計テーブルの作り方",
-         "desc": "集計テーブルの作り方を紹介します。",
-         "path": "summarize-table-ja",
-         "url": "https://exploratory.io/note/exploratory/lqW2aSE0"
+         "title": "決定木とは？データから「違いを生む条件」を見つける方法",
+         "desc": "決定木の代表的なアルゴリズムであるCART（Classification and Regression Tree）を使った決定木について解説します。",
+         "path": "what-is-decision-tree-ja",
+         "url": "https://exploratory.io/note/kanaugust/JDz6gca6ZL"
         },
         {
-         "title": "テーブルの作り方",
-         "desc": "テーブルの作り方を紹介します。",
-         "path": "table-ja",
-         "url": "https://exploratory.io/note/exploratory/SSA0IGE1"
+         "title": "AI時代に重要な4つのデータサイエンスの力",
+         "desc": "AI時代には、統計学のリテラシー、科学的思考、分析手法の理解と結果の解釈、データ加工のスキルの4つの力がデータ分析においてより重要となります。",
+         "path": "four-important-data-science-skills-in-ai-era-ja",
+         "url": "https://exploratory.io/note/kanaugust/iqk9NQB1ye"
+        },
+        {
+         "title": "なぜ深層学習は表形式データにおいてツリーモデルを置き換えなかったのか",
+         "desc": "なぜ XGBoost や LightGBM といったモデルが、依然として構造化データの分野を支配しているのか。",
+         "path": "why-deep-learning-didnt-replace-tree-models-ja",
+         "url": "https://exploratory.io/note/kanaugust/vjV0KgV6dl"
         }
       ]
     },
     {
-      "title": "チャートの機能",
-      "desc": "Exploratoryのチャートにはデータの可視化と分析に必要な様々な機能があります。",
+      "title": "リリースアナウンスメント",
+      "desc": "Exploratoryのリリースアナウンスメントの記事です。リリースのテーマ、そして新機能の紹介をしています。",
       "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Avisualization&language=ja",
+      "moreButtonUrl": "https://exploratory.io/tag/?q=tag:Announcement&language=ja",
       "insights": [
         {
-         "title": "表計算：合計値に対する割合のチャートの作り方",
-         "desc": "表計算：合計値に対する割合のチャートの作り方を紹介します。",
-         "path": "percent-of-total-ja",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Msq6osQ9LP"
+         "title": "Exploratory v16 - アンケートデータ分析を、もっと効率的に、もっと深く",
+         "desc": "データを取得 → 整える → 集計・可視化する → 深く分析する → レポートとして共有するという、アンケートデータ分析の流れに沿って紹介します。",
+         "path": "exploratory-v16-ja",
+         "url": "https://exploratory.io/note/kanaugust/rAV4tmB0PO"
         },
         {
-         "title": "表計算：累積合計のチャートの作り方",
-         "desc": "表計算：累積合計のチャートの作り方を紹介します。",
-         "path": "cumulative-sum-ja",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-5-JED5wYp0EV"
+         "title": "Exploratory v15.5リリース：CatBoost、シルエット法、比率検定など、アナリティクス機能を大幅強化",
+         "desc": "機械学習、クラスタリング、統計検定といった、データからより深いインサイトを得るための機能が大きく強化されました。",
+         "path": "exploratory-v15_5-ja",
+         "url": "https://exploratory.io/note/kanaugust/QoG2Pux4Zy"
         },
         {
-         "title": "表計算：移動平均の引き方",
+         "title": "Exploratory v15 - AI時代に信用できるデータ分析を支える3つのR",
+         "desc": "AI時代により重要となる、データ加工の可読性、再現性、信頼性を高めるための新機能を追加しました。",
+         "path": "exploratory-v15-ja",
+         "url": "https://exploratory.io/note/kanaugust/LdZ7yEm3bo"
+        },
+        {
+         "title": "Exploratory v14 - データサイエンス 2.0 with AI 関数 & AI ノートエディター",
          "desc": "表計算：移動平均をラインチャートに引く方法を紹介します。",
-         "path": "moving-average-ja",
-         "url": "https://exploratory.io/note/GMq1Qom5tS/Exploratory-7-EKO1EYd1uQ"
+         "path": "exploratory-v14-ja",
+         "url": "https://exploratory.io/note/kanaugust/hPm0eyK7YG"
        }
       ]
     }
