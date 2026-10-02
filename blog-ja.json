@@ -4,7 +4,7 @@
       "title": "Blog記事",
       "desc": "Exploratoryからの最新のブログ記事です。",
       "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Ablog&language=ja",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&sort=&language=all&q=blog&searchType=keyword",
       "insights": [
         {
          "title": "AI時代の信頼できるデータ分析を支える「3つのR」",
