@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "title": "事例",
+      "desc": "Exploratory をデータ分析や意思決定に活用している事例を紹介します。",
+      "moreButtonText": "もっと見る",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&sort=&language=all&q=blog&searchType=keyword",
+      "insights": [
+        {
+         "title": "AI時代の信頼できるデータ分析を支える「3つのR」",
+         "desc": "AIを使えば素早く簡単にデータを分析できますが、その結果がほんとうに正しいとは限りません。そこで、信頼できるデータ分析には可読性、再現性、そして信頼性が必要となります。",
+         "path": "three-r-for-trustable-data-analysis-in-ai-era-ja",
+         "url": "https://exploratory.io/note/kanaugust/YmL6aMh6fv"
+        },
+        {
+         "title": "決定木とは？データから「違いを生む条件」を見つける方法",
+         "desc": "決定木の代表的なアルゴリズムであるCART（Classification and Regression Tree）を使った決定木について解説します。",
+         "path": "what-is-decision-tree-ja",
+         "url": "https://exploratory.io/note/kanaugust/JDz6gca6ZL"
+        },
+        {
+         "title": "AI時代に重要な4つのデータサイエンスの力",
+         "desc": "AI時代には、統計学のリテラシー、科学的思考、分析手法の理解と結果の解釈、データ加工のスキルの4つの力がデータ分析においてより重要となります。",
+         "path": "four-important-data-science-skills-in-ai-era-ja",
+         "url": "https://exploratory.io/note/kanaugust/iqk9NQB1ye"
+        },
+        {
+         "title": "なぜ深層学習は表形式データにおいてツリーモデルを置き換えなかったのか",
+         "desc": "なぜ XGBoost や LightGBM といったモデルが、依然として構造化データの分野を支配しているのか。",
+         "path": "why-deep-learning-didnt-replace-tree-models-ja",
+         "url": "https://exploratory.io/note/kanaugust/vjV0KgV6dl"
+        }
+      ]
+    }
+  ]
+}

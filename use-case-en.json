@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "title": "Use Cases",
+      "desc": "See how teams use Exploratory for data analysis and decision making.",
+      "moreButtonText": "See more",
+      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Ablog&language=ja",
+      "insights": [
+        {
+         "title": "The Three Rs That Support Trustworthy Data Analysis in the AI Era",
+         "desc": "AI makes data analysis fast and easy, but the results are not always correct. Trustworthy data analysis requires readability, reproducibility, and reliability.",
+         "path": "three-r-for-trustable-data-analysis-in-ai-era-en",
+         "url": "https://exploratory.io/note/kanaugust/YmL6aMh6fv"
+        },
+        {
+         "title": "What Is a Decision Tree? Finding the Conditions That Make a Difference in Your Data",
+         "desc": "An explanation of decision trees using CART (Classification and Regression Tree), a representative decision tree algorithm.",
+         "path": "what-is-decision-tree-en",
+         "url": "https://exploratory.io/note/kanaugust/JDz6gca6ZL"
+        },
+        {
+         "title": "Four Essential Data Science Capabilities in the AI Era",
+         "desc": "In the AI era, four capabilities matter more for data analysis: statistical literacy, scientific thinking, understanding analytical methods and interpreting results, and data wrangling skills.",
+         "path": "four-important-data-science-skills-in-ai-era-en",
+         "url": "https://exploratory.io/note/kanaugust/iqk9NQB1ye"
+        },
+        {
+         "title": "Why Deep Learning Hasn't Replaced Tree Models for Tabular Data",
+         "desc": "Why models such as XGBoost and LightGBM still dominate structured data.",
+         "path": "why-deep-learning-didnt-replace-tree-models-en",
+         "url": "https://exploratory.io/note/kanaugust/vjV0KgV6dl"
+        }
+      ]
+    }
+  ]
+}
