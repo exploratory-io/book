@@ -7,6 +7,12 @@
       "moreButtonUrl": "https://exploratory.io/insight?type=note&sort=&language=all&q=blog&searchType=keyword",
       "insights": [
         {
+         "title": "大学IRって何？ 新しくIR担当になった人のための基本と仕事の進め方",
+         "desc": "新しくIR担当になった教職員の方、IRの立ち上げや立て直しを考えている大学執行部の方に向けて、大学IRとは何か、どんな業務があり、どう進めるとうまくいくのかを、できるだけ具体的にお話しします。",
+         "path": "what-is-university-institutional-research-ir",
+         "url": "https://exploratory.io/note/kanaugust/kDI8zJT7NO"
+        },
+        {
          "title": "AI時代の信頼できるデータ分析を支える「3つのR」",
          "desc": "AIを使えば素早く簡単にデータを分析できますが、その結果がほんとうに正しいとは限りません。そこで、信頼できるデータ分析には可読性、再現性、そして信頼性が必要となります。",
          "path": "three-r-for-trustable-data-analysis-in-ai-era-ja",
