@@ -1,12 +1,224 @@
 # Release Note
 
+# v16.4
+
+## Release Date
+
+10/13/2026
+
+## Product Enhancement
+
+### AI Data
+
+*   We changed the connection setup flow in AI Data so the configuration dialog only opens when users explicitly click the Connection button inside the chart window.
+*   We renamed the AI Data source step to R Script with AI Data and updated step tokens to display original user prompts. Users can now clearly identify AI-generated steps and review their original instructions directly within the data pipeline.
+
+### Summary View
+
+*   We added a default view preference allowing users to choose between Summary and Table views upon data import. Users importing large datasets can now start immediately in Table view without waiting for summary statistics to compute, improving responsiveness.
+
+### Data Source
+
+*   CSV: We improved CSV import behavior by detecting column count mismatches between the header and data rows. Users can now see warnings or automatically fill missing column names instead of silently merging trailing columns.
+*   Excel: We added an option to convert columns to the hms (time) data type directly from the dropdown menu in the Excel import dialog. Users can now set the time type upon import without converting files to CSV.
+*   FRED: We added a 'Default' connection option for the FRED data source that utilizes Exploratory's built-in support API key. Users without their own FRED API key can now immediately access and analyze FRED data without extra configuration.
+*   MySQL: We added SSL support for MariaDB and MySQL data sources. Users can now securely connect to their databases using SSL encryption, ensuring compliance with strict organizational security requirements.
+
+### Data Wrangling
+
+*   Step Diagram: We added export functionality to the Step Diagram, allowing users to save and share workflow diagrams as images or files.
+*   Step Diagram: We improved arrow connection paths and box positioning in the Step Diagram, particularly around merge operations and separated data frames.
+*   Step Diagram: We improved the initial zoom algorithm for the Step Diagram so it opens at a readable zoom level showing more surrounding steps around the selected step. Users can now immediately see the broader workflow context without having to manually zoom out every time.
+*   We added support for SUM\_IF, SUM\_IF\_RATIO, COUNT\_IF, COUNT\_IF\_RATIO, and COUNT\_UNIQUE\_IF\_RATIO functions in the Pivot step. Users can now compute conditional aggregated ratios directly in data wrangling steps, matching the capabilities of Chart pivot tables.
+*   Merge: We added a 'Merge Method' dropdown to let users choose between matching by column names or column positions.
+*   Text Wrangling: We added an option in text wrangling to keep Arabic digits intact while converting Japanese kansuji numbers to Arabic digits. Users can now preserve existing numerical digits in mixed text columns without converting them to NA, streamlining Japanese text processing.
+*   Export: We added support for exporting data in .rda and .rdata file formats. Users can now easily export large datasets from Exploratory and import them into R, Tableau, etc. without facing file size limitations or format incompatibilities.
+
+### Chart
+
+*   Pivot Table: We added a 'Mode Ratio' calculation option to Pivot Tables. Users can now calculate the proportion of the most frequent value within each subgroup.
+*   Pivot Table / Chart: When you use Repeat By, now you can show an overall total table or chart alongside repeated category tables / charts. Users can now compare subgroup breakdowns against the complete dataset without building separate summary tables / charts.
+*   Pivot Table: We enabled narrowing column widths below the automatically calculated width even when multiple columns are selected in pivot tables. Users can now create compact, customized table layouts to fit tight display requirements.
+*   Pivot Table: We added the ability to hide row totals specifically for individual metrics when multiple values are used in Pivot and Summarize tables. Users can now suppress meaningless row totals like aggregated percentages while keeping meaningful counts and column totals.
+*   Pivot Table: We aligned the available date format patterns in pivot table column formatting with those in other charts like line charts.
+*   Pivot Table: We updated the pivot table export feature so exported files preserve custom total positions configured on the chart. Users can now export tables with top row totals and left column totals intact.
+*   Pivot Table: We added a dedicated menu option to calculate Net Promoter Score (NPS) directly. Users can now calculate NPS with a single selection without manually aggregating promoter and detractor proportions, greatly simplifying survey analysis.
+*   We added support for configuring text positioning individually for each column hierarchy in pivot tables. Users can now independently align headers and data cells across multiple column levels, improving table readability and presentation quality.
+*   Number: We added support for customizing the background color of sub-metric rows in Number charts .
+*   Number: We updated Number chart thumbnail generation to display all visible repeated tiles instead of just the first one.
+*   Number: We added sort support for Number tiles when the Repeat By feature uses the Multiple Variables option. Users can now sort tiles by values or title text, making comparative data analysis clearer and easier to interpret.
+*   Number: We enabled custom color palettes for conditional formatting and submetrics in number charts.
+*   Box plot: We added support for displaying statistical test results (such as p-values from t-tests or Wilcoxon tests) directly on boxplots. Users can now visualize significant differences alongside distributions in a single chart.
+*   Scatter Plot: We added support for assigning a column to 'Shape' in scatter plots to use distinct markers like triangles and diamonds. Users can now visualize categorical dimensions with unique marker shapes alongside color and size, making multidimensional data exploration richer.
+*   Scatter Plot: We exposed the jitter setting directly within the marker menu for Scatter Plots.
+*   Trend Line: We redesigned the trend line type dropdown menu into structured sections (Common, Specialized, Equation-based) with informative tooltips. Users can now quickly understand each trend model's statistical purpose and easily choose the right line type.
+*   Trend Line: We redesigned trend line hover tooltips to clearly separate dynamic mouse-position values from model-level statistical metrics.
+*   Trend Line: We standardized the number formatting in trend line hover tooltips to two decimal places for standard metrics and three for p-values. Users can now read consistent and clean statistical metrics across all trend lines.
+*   Reference Line: We added a "Last N" (years, quarters, months, weeks, days) option for the base data range in reference lines and trend lines.
+*   Reference Line: We added a circle style option for reference lines in bar charts. Users can now display reference data points as distinct dots across grouped bars, making benchmarks visually clear and aesthetically flexible.
+*   Repeat By: We added an option to display the Repeat By label above each chart instead of below it. Users can now position repeat labels at the top of charts, improving readability and visual hierarchy when comparing multiple charts.
+*   Repeat By: We added support for displaying a 'Total' bar or chart alongside individual group breakdowns in stack bar and Repeat By charts. Users can now evaluate overall performance and group-level contributions simultaneously in one view.
+*   Show Detail: We enabled column-width resizing via drag-and-drop within the Show Detail dialog table.
+*   Show Detail: We added column selection capabilities to the Show Detail dialog across charts and published outputs. Users can now select and display only the columns they want to show for their audience, improving data privacy by selectively hiding sensitive columns and preventing clutter from unnecessary columns.
+*   Bar Chart: We added support for weight-based aggregation on the Y-axis in Bar Charts. Users can now select a weight column and calculate weighted counts or weighted means directly in bar charts, making it easy to visualize survey data adjusted for population weights.
+*   Bar Chart: We added an automatic contrast option for showing data value labels on Bar Charts. It selects white or dark text based on bar brightness.
+*   Line Chart: We added the ability to customize markers and shapes for each line in line charts. Users can now distinguish lines effectively even when printed in black and white, improving accessibility and chart legibility.
+*   Window Calculation: We added support in window calculations for comparing values to the same day in previous periods, such as N years, months, or weeks ago. Users can now effortlessly compute week-over-week or year-over-year day-matched differences, simplifying time-series performance analysis.
+*   Common: We added drag-and-drop support to swap column assignments between X, Y, Color, and Repeat By shelves in Charts. Users can now quickly rearrange visualization dimensions without manually reselecting columns.
+*   Common: We reorganized the Chart Type dropdown menu by adding tooltips, icons, and an intuitive chart ordering.&#x20;
+*   Export: We updated table and chart export functionality so exported data preserves the current on-screen sort order.&#x20;
+*   Default Setting: We expanded the chart default settings in system preferences to include legend positions, axis title visibility, and decimal places. Users can now standardize preferred chart aesthetics automatically across projects, reducing repetitive manual styling.
+*   Default Setting: We added a system setting to configure the default date/POSIXct format, including toggling the timezone display. Users can now hide timezones across all charts by default.
+
+### Analytics
+
+*   Hierarchical Clustering: We added interactive Hierarchical Clustering for rows (observations) and columns (variables) with customizable distance, linkage methods, and real-time cluster cut adjustments. Users can now explore multi-level group structures dynamically without re-running statistical algorithms.
+*   Clustering: We added standardized cluster averages, original scale averages, overall averages, and row counts to Radar Chart tooltips across all clustering methods. Users can now easily inspect both normalized and raw metric contexts upon hover, significantly improving cluster interpretation.
+*   Clustering: We moved the Min Silhouette Score column to the far right across summary and cluster number tables for all clustering types. Users can now prioritize key evaluation metrics first while still retaining access to secondary diagnostic details.
+*   Decision Tree: We added column selection support to the Show Details dialog in Decision Tree analytics. Users can now choose which underlying columns to view and expose, making detailed data inspection cleaner and more focused.
+*   Decision Tree (CHAID): We removed degrees of freedom (DF) display from the CHAID Decision Tree visualization while retaining it in the tooltips. Users can now view a cleaner, less cluttered decision tree without losing access to detailed statistical information on demand.
+*   Statistical Test: We updated the decimal precision setting for effect sizes across statistical tests from 2 to 3 decimal places. Users can now observe small effect size values accurately, preventing premature rounding to zero and improving reporting precision.
+*   ANCOVA: We enhanced the ANCOVA report by dynamically generating plain-language narrative summaries, reorganizing sections, and adding error bar charts for adjusted means and pairwise comparisons. Users can now interpret covariate adjustments, effect sizes, and group differences more effortlessly through clear statistical narratives and visuals.
+*   Common: We reorganized the Analytics type menu by nesting Hierarchical Clustering under Clustering and restructuring Decision Tree and Logistic Regression into hierarchical submenus.&#x20;
+*   Common: We added mouse-over tooltips explaining each analytics type and reorganized the clustering analysis menu options. Users can now easily understand the purpose of each analytical method directly within the UI, helping them select the most appropriate analysis for their data.
+*   Common: We enabled sorted data export for Pivot and Summarize tables in the Analytics view. Users can now export analytics table data that preserves their applied sort order directly into CSV or clipboard.
+
+### Dashboard
+
+*   We enabled dashboard editing directly within preview mode. Users can now make adjustments and see updates in place without repeatedly switching between edit and preview views, streamlining dashboard development.
+*   We added an Image component inside Dashboard. Users can now incorporate company logos and graphical elements directly into dashboards, enhancing brand customization and report presentation.
+*   We added support for parameters within image URLs in the Image dashboard widget. Users can now dynamically swap or filter displayed images based on parameter selections.
+*   We added support for positioning page tabs on the left or right sides of dashboards in addition to the top. Users can now manage dashboards with numerous or long page titles using convenient vertical tab navigation.
+*   We introduced comprehensive Font Family support across the dashboard UI with options for Default, and System fonts. Users can now customize typography consistently across Desktop and Web publishing while preserving backward compatibility for existing dashboards.
+*   We redesigned the Title Text configuration UI into a cleaner two-line layout with expanded font pickers and standard color selectors. Users can now format panel titles with smoother previews and consistent styling controls.
+*   We added an option to choose whether a dashboard panel uses the chart's original title or a dashboard-specific override.&#x20;
+*   We added an option to remove the panel frame margin in dashboards. Users can now design flush, edge-to-edge custom HTML cards and buttons without distracting white border padding.
+*   We added an option to hide margins and borders between objects in dashboards. Users can now create seamless, edge-to-edge layouts, giving dashboards a modern and polished aesthetic.
+*   We added partial rendering support for R script-based charts and code blocks within dashboards. Users can now update individual R charts without needing to rerun the entire dashboard, significantly speeding up interactive dashboard workflows.
+*   We enabled data export in the user's sorted order for Pivot and Summarize tables inside notes and dashboards. Users can now download CSV or clipboard data matching their customized view sorting, avoiding post-export reordering.
+*   We made Number chart tiles responsive to row height, automatically adjusting font sizes and spacing. Users can now fit metric tiles neatly within regular dashboard rows without unwanted blank space.
+*   We optimized the dashboard layout and parameter controls for mobile screen viewing. Mobile users can now view multi-column dashboards without layout collapse and interact smoothly with dashboard parameters on smartphones.
+*   We added an option to customize the display width and character length of dashboard page tab titles. Users can now see full tab names without hovering, making dashboard navigation clearer and more intuitive.
+*   We added settings to customize the color and font of chart titles. Users can now style chart titles to match their dashboard theme or corporate branding.
+*   We added support for displaying dashboard page tabs in multiple rows. Users with many dashboard pages can now view all tabs across multiple lines, preventing tab overflow and improving navigation efficiency.
+*   We added an option to hide specific pages or tabs when publishing dashboards. Users can now keep draft or validation tabs private while publishing only the finalized dashboard pages to stakeholders.
+
+### Note
+
+*   We added the History button in the Note editor. This History dialog shows only Note related changes. Users can now easily restore the previous versions of notes.
+
+### Search
+
+*   We overhauled desktop search with broader indexing across note bodies, wrangling steps, and scripts, along with relevance ranking and headless API readiness. Users can now find objects across their projects much faster and more accurately.
+*   We added a dedicated search dialog on Project List page. Users can now quickly locate specific projects using structured filters and filtering by object type and by keyword.
+*   We added a dedicated project search dialog inside Project, featuring component-level result listings, target checkboxes, and keyword snippet highlights. Users can now pinpoint what items matched and jump directly to specific charts, steps, or notes.
+*   We added visual UI cues to clearly indicate when the application is operating in offline mode. Users can now instantly see their connectivity status, preventing confusion when attempting cloud or server sync operations.
+
+## General
+
+*   We added persistent window size saving for Project, Note Editor, and Dashboard windows across application restarts.
+
+### Install
+
+*   We updated the R package installation error handling to display the actual failure cause when the CRAN repository server cannot be reached rather than incorrectly reporting that the package is unavailable.
+
+## Issue fix
+
+### AI Data
+
+*   AI Data requests timed out because the hidden Markdown editor window conflicted with the WindowIPC session belonging to the project window.
+*   Generating R script explanations within AI Data failed with an error instead of displaying the explanation.
+*   Using AI Data with the English user interface failed to discover and link available FRED data connections.
+
+### AI Function
+
+*   An issue occurred where AI Function steps threw an error stating a column was not found when the missing item was actually an un-restored step or data frame in the R session.
+*   An issue occurred where generating an AI Summary in the Step Diagram dialog caused the diagram's node layout to break.
+
+### Summary View
+
+*   An issue occurred where reimporting data and navigating to specific wrangling steps resulted in an error or a blank page in Summary view.
+
+### Table View
+
+*   An issue occurred where clicking the information icon button in the Table view summary did not respond.
+
+### Data Wrangling
+
+*   An issue occurred during formula parsing in pair\_count where extremely long questionnaire column names caused R to report duplicated variable names.
+*   An issue occurred during pivot\_longer execution where attempting to rename columns inside the selection expression triggered a rename context error.
+*   An issue occurred during summarization where an aggregation function failed with an invalid type error because a character column was passed instead of a numeric column.
+*   An issue occurred in the Bind Columns step where newly added columns were not highlighted in orange in the table view after execution.
+*   An issue occurred in the Combine Multiple Answer Columns step where the newly created consolidated column was not highlighted in orange after running the step.
+*   An issue occurred where an internal data frame step object could not be found in the R environment due to cache desynchronization during complex column selection operations.
+*   An issue occurred where case\_when failed with a missing argument error when conditions lacked corresponding values or contained trailing commas.
+*   An issue occurred where the logical operator dropdown in the Filter dialog did not automatically close when clicking on other wrangling steps.
+*   When using the round function, values with a single digit that is an even number followed by .5 were being truncated due to even-rounding behavior instead of standard arithmetic rounding.
+
+### Chart
+
+*   Adding a pivot table with multi-level column headers to a note caused the chart to display blank in the editor and render broken group headers in preview.
+*   An error occurred when attempting to add a Number chart whose title contained a single quote.
+*   An issue occurred in the Number chart Main/Sub Metric Settings dialog where clicking OK closed the dialog immediately instead of allowing users to apply changes and preview iteratively.
+*   In number charts, caption text in thumbnail preview images did not wrap properly.
+*   An issue occurred in Chart Filters where the duplicate button was positioned incorrectly outside the disable and delete button group.
+*   An issue occurred in Pivot and Summarize tables where percentage formatting persisted even after switching the calculation method from ratio back to row count.
+*   An issue occurred on shared servers where the image download button failed to display for Word Cloud charts on published dashboards.
+*   An issue occurred where custom R charts failed to execute because required packages such as htmlwidgets and networkD3 were missing or process conflicts prevented loading.
+*   An issue occurred where Heatmap charts ignored the 'Wrap Long Labels' axis option.
+*   Binning numeric columns containing only NA or zeros and NA placed all NA values into a 0.00 - 0.00 bucket instead of assigning them to an (NA) category.
+*   Charts and analytics visualizations failed to display when moving or switching tabs.
+*   Clicking the Apply button in Settings dialogs did not update the chart when the Auto Run option was unchecked.
+*   Desktop AI Chart Summary failed with an error when the current visualization data cache was missing.
+*   Dragging and dropping columns in pivot tables was slow and caused the column selection area to freeze.
+*   Enabling the Replace NA with display name option for chart Color display names caused queries to fail with an R recode error on factor columns.
+*   In bar charts where a discrete numeric column was assigned to "Color By," users were unable to edit the display names of the legend categories.
+*   In horizontal bar charts where the same column was assigned to both the X-axis and color, the bars and their corresponding X-axis labels became misaligned.
+*   In pivot tables, decimal values ending in .5 were being truncated rather than properly rounded to the next increment.
+*   Selecting multiple Logical columns using the Multiple Variables option incorrectly assigned them Character data types and omitted logical-specific aggregations like '% of TRUE'.
+*   Using Repeat By with numeric date functions or binned numeric columns dropped rows with NA values entirely instead of displaying an (NA) facet panel.
+
+### Analytics
+
+*   An issue occurred in CHAID Decision Trees where intermediate split group labels were displayed as '2 - 3' rather than inequality notation.
+*   An issue occurred in Random Forest analytics where the execution threw a 'subscript out of bounds' error when the target variable column contained empty strings.
+*   An issue occurred in the Analytics view where the Analytics Type dropdown menu was cut off at the bottom of the window on shorter screens.
+*   An issue occurred where generating an AI Summary for regression and tree-based analytics sent an empty predictor variable list.
+*   Column names containing parentheses were mistakenly parsed as function calls and escaped incorrectly, resulting in syntax errors in generated R commands.
+*   Multiclass Random Forest models misassigned predicted labels and confusion matrix entries when a target class appeared exclusively in test split data.
+*   Partial Eta Squared in ANCOVA was evaluated against effect size thresholds using prematurely rounded values, leading to incorrect qualitative interpretations.
+*   Running a Two-Sample Proportion Test resulted in a completely blank result pane without an error message due to an unhandled template variable rendering exception.
+*   The Dimension 2 axis in the K-Medoids Cluster Map displayed cumulative variance instead of its own share, causing the sum of both axes to exceed 100%.
+
+### Dashboard
+
+*   An issue occurred in dashboards where \_showLoading threw a TypeError on Analytics charts, causing subsequent charts to lose their loading indicators and occasionally blocking filter refreshes.
+*   An issue occurred in dashboards where Pie chart circles failed to render when dense label text pushed the chart outside the designated drawing container.
+*   An issue occurred where exporting a chart image of a Decision Tree from a dashboard produced a blank image.
+*   Duplicating certain pages in Dashboard Edit mode failed with an error stating the change could not be applied in place, and running the dashboard did not resolve it.
+*   Opening large dashboards with numerous charts and dynamic parameters frequently triggered false another R process running errors.
+*   The R block in the dashboard's text panel re-executed and updated results on every run instead of using its cache when caching was enabled. This caused inconsistent behavior compared to Note R blocks.
+
+### Note
+
+*   An issue occurred when saving or exporting notes where file operations failed with an EEXIST error if the output directory already existed or was locked by another process.
+*   In embedded notes on external websites, clicking anchor links in headings failed to navigate users to the corresponding section.
+*   In the Note preview, Mermaid diagram styles and themes configuration were not being applied properly.
+
+### Publish
+
+*   The Notify team members checkbox on the share/publish dialog was misaligned and positioned incorrectly.
+
+### Offline Mode
+
+*   Exploratory Desktop on Windows failed to connect and fell back to offline mode when the OS root store lacked the ISRG Root X1 certificate because the built-in CA bundle was replaced instead of extended.
+
+
 # v16.3
 
 ## Release Date
 
 9/16/2026
-
-# v16.3
 
 ## Product Enhancement
 
