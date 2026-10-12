@@ -10,7 +10,7 @@
 
 ### AI Data
 
-*   We changed the connection setup flow in AI Data so the configuration dialog only opens when users explicitly click the Connection button inside the chart window.
+*   We changed the connection setup flow in AI Data so the configuration dialog only opens when users explicitly click the Connection button inside the chat window.
 *   We renamed the AI Data source step to R Script with AI Data and updated step tokens to display original user prompts. Users can now clearly identify AI-generated steps and review their original instructions directly within the data pipeline.
 
 ### Summary View
