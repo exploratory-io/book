@@ -7,6 +7,30 @@
       "moreButtonUrl": "https://exploratory.io/insight?type=note&sort=&language=all&q=blog&searchType=keyword",
       "insights": [
         {
+         "title": "Exploratory v16.4 リリース！階層クラスタリング、チャートとダッシュボードの機能大幅強化",
+         "desc": "この記事では、Exploratory v16.4で追加された代表的な新機能と改善点をご紹介します。",
+         "path": "exploratory-v16-4-introduction-ja",
+         "url": "https://exploratory.io/note/kanaugust/rVO6VGj7rG"
+        },
+        {
+         "title": "階層クラスタリングって何？ デンドログラムの読み方とその仕組み",
+         "desc": "この記事では、階層クラスタリングのしくみ、デンドログラムの読み方、Exploratory での使い方を説明します。",
+         "path": "what-is-hierarchical-clustering-ja",
+         "url": "https://exploratory.io/note/kanaugust/jIe6Tfs7pJ"
+        },
+        {
+         "title": "K-Medoidsクラスタリングって何？図表を使って説明",
+         "desc": "この記事では、K-Medoidsクラスタリングのしくみ、アンケートデータに向いている理由、Exploratory での使い方を、図と動かせるグラフで説明します。",
+         "path": "what-is-k-medoids-clustering-ja",
+         "url": "https://exploratory.io/note/kanaugust/xGk8HFK9fp"
+        },
+        {
+         "title": "【2026年版】アンケートデータ分析ソフトの選び方 — Excel、BI、SPSS、R、Exploratoryの違い",
+         "desc": "この記事では、アンケートデータ分析ソフトを選ぶときに確認したいポイントを整理したうえで、Excel、BIツール、SPSS、R / Python、Exploratoryがそれぞれどのような用途に向いているのかを見ていきます。",
+         "path": "how-to-choose-survey-data-analysis-software-ja",
+         "url": "https://exploratory.io/note/kanaugust/Dqk5kHP7Qq"
+        },
+        {
          "title": "大学IRって何？ 新しくIR担当になった人のための基本と仕事の進め方",
          "desc": "新しくIR担当になった教職員の方、IRの立ち上げや立て直しを考えている大学執行部の方に向けて、大学IRとは何か、どんな業務があり、どう進めるとうまくいくのかを、できるだけ具体的にお話しします。",
          "path": "what-is-university-institutional-research-ir",
