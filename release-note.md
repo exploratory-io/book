@@ -1,5 +1,77 @@
 # Release Note
 
+# v16.5
+
+## Release Date
+
+10/16/2026
+
+## Product Enhancement
+
+### AI Data
+
+*   We enhanced MySQL data retrieval in AI Data to automatically detect and convert quarter columns from character strings (such as '2023-Q1') into date types. Users can now directly perform time-series analysis and date filtering without manual data type conversion, streamlining their data preparation workflow.
+
+### Data Source
+
+*   We redesigned the Schema list dialog by adding clear borders to the schema list and increasing the dialog height.
+
+### Data Wrangling
+
+*   We updated the CSV export to default to the .tsv extension (or offer an explicit TSV option) when selecting Tab as the delimiter. Users can now immediately export properly named tab-delimited files, eliminating import errors and manual file renaming in downstream applications.
+
+### Chart
+
+*   We enhanced the image export feature by setting 'Current Ratio' as default, adding standard presets like 4:3 and 16:9, auto-switching to Custom on manual resize, rerendering charts to prevent distortion, adding a preview, and remembering user settings.
+
+### Dashboard
+
+*   We standardized the thumbnail aspect ratio to 16:9 across chart, analytics, dashboard, and dataframe hover previews, and updated the capture process accordingly. Users now see consistent, modern, and unclipped preview images throughout the application.
+
+### Note
+
+*   We redesigned the Link Insert Dialog style by refining the positioning and sizes of the input fields.
+
+## Issue fix
+
+### AI Data
+
+*   In AI Data, conversation history from previous sessions leaked into newly created sessions when attempting data imports.
+*   In AI Data, switching the version failed to enable the 'Run' button located in the top-right corner.&#x20;
+*   PDF data extraction in AI Data failed because docling detected an incompatible Python version (such as Python 3.9) rather than requiring Python 3.11 or higher.&#x20;
+*   Tables extracted from PDF files in AI Data retained their raw layout instead of being formatted as tidy data with one observation per row. Users had to manually provide follow-up instructions to reshape the data properly.
+
+### Data Source
+
+*   In the Save Schema Information dialog for database connections, selecting a table in one schema also selected and saved identically named tables across other schemas.&#x20;
+*   Saving schema information for a MySQL connection failed with an 'operation was aborted' error after a timeout.&#x20;
+*   Schema information files failed to maintain the database and schema hierarchy, causing same-named tables across different schemas to collide without disambiguation.&#x20;
+
+### Data Wrangling
+
+*   The export dropdown menu was displayed in an incorrect position when the wrangling steps were collapsed. It rendered properly only when the steps were visible.
+
+### Chart
+
+*   An 'object not found' error occurred during chart rendering with multi-measure settings when a referenced dataframe or column name was modified or deleted in previous wrangling steps. This caused the chart visualization preview to fail.
+*   In pivot tables set to 'Fit to Display Area', resizing a column via drag-and-drop applied a fixed pixel width that caused the table to exceed 100% width.&#x20;
+*   In pivot tables, manually resizing column widths via drag-and-drop saved the width permanently and prevented width settings like 'Fit to Display Area' or 'Fit to Column Header Text' from being applied.&#x20;
+*   When a pivot table had a column field assigned and used the default column width setting, two vertical scrollbars appeared. Additionally, the horizontal scrollbar was hidden at the bottom of the content rather than remaining visible on the screen.
+
+### Dashboard
+
+*   A small blank space appeared on the right side of a dashboard row when normal number charts and repeat-by number charts were placed together in the same row upon initial rendering.&#x20;
+*   In dashboard edit mode, dragging the border of a selected chart left an outline of the selection border stuck at the original position while moving. The residual border remained visible during the drag interaction.
+*   The tab position setting option was not displayed in the page settings dialog after adding a new page until the dashboard was executed.&#x20;
+*   When clicking and dragging the drag handle on a chart, the entire row was moved instead of moving only the individual chart or number.&#x20;
+
+### Project
+
+*   An error occurred with 'cannot DELETE from contentless fts5 table' when updating or deleting search index rows because older, incompatible SQLite schema versions remained without being properly recreated. This prevented projects from updating search indices during normal dataframe operations.
+*   An error stating 'delete may not be used with a contentless\_delete=1' occurred when updating the dataframe search index due to corrupted or mismatched SQLite FTS settings. This caused dataframe operations to fail during internal search index cleanup.
+*   Updating the dataframe search index failed with a 'cannot DELETE from contentless fts5 table' error when modifying steps or columns. This issue arose from an internal index state mismatch that prevented deleting rows from contentless FTS5 tables.
+
+
 # v16.4
 
 ## Release Date
