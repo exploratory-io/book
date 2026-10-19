@@ -7,6 +7,36 @@
       "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Ablog&language=ja",
       "insights": [
         {
+         "title": "Exploratory v16.4 Is Here! Hierarchical Clustering, Enhanced Charts & Dashboards, and More",
+         "desc": "Exploratory v16.4 brings powerful new analytics capabilities, improved visualizations, more flexible dashboards, and a faster, more intuitive workflow.",
+         "path": "exploratory-v16-4-introduction-en",
+         "url": "https://exploratory.io/note/kanaugust/CGB7hix5xf"
+        },
+        {
+         "title": "Hierarchical Clustering, Visually Explained",
+         "desc": "This post explains how Hierarchical Clustering works, how to read the tree, and how to use it in Exploratory.",
+         "path": "what-is-hierarchical-clustering-en",
+         "url": "https://exploratory.io/note/kanaugust/yYo3uhS3Vu"
+        },
+        {
+         "title": "K-Medoids Clustering, Visually Explained",
+         "desc": "This post explains how K-Medoids Clusteringd works, why it is a good fit for survey data, and how to use it in Exploratory.",
+         "path": "what-is-k-medoids-clustering-en",
+         "url": "https://exploratory.io/note/kanaugust/ake6MFJ9gD"
+        },
+        {
+         "title": "How to Choose Survey Data Analysis Software in 2026: Excel vs. BI vs. SPSS vs. R vs. Exploratory",
+         "desc": "In this article, we’ll lay out the key criteria for choosing survey data analysis software, then look at what Excel, BI tools, SPSS, R / Python, and Exploratory are each best suited for.",
+         "path": "how-to-choose-survey-data-analysis-software-en",
+         "url": "https://exploratory.io/note/kanaugust/jKX0LXO8ox"
+        },
+        {
+         "title": "What is Exploratory？",
+         "desc": "In this post, we explain what you can do with Exploratory, who are the users, and what are the problems it can solve.",
+         "path": "what-is-exploratory-en",
+         "url": "https://exploratory.io/note/kanaugust/JWy7GAe2Ls"
+        },
+        {
          "title": "The Three Rs That Support Trustworthy Data Analysis in the AI Era",
          "desc": "AI makes data analysis fast and easy, but the results are not always correct. Trustworthy data analysis requires readability, reproducibility, and reliability.",
          "path": "three-r-for-trustable-data-analysis-in-ai-era-en",

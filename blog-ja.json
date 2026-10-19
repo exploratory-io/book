@@ -37,6 +37,12 @@
          "url": "https://exploratory.io/note/kanaugust/kDI8zJT7NO"
         },
         {
+         "title": "Exploratoryって何？",
+         "desc": "Exploratoryって何ができるの、誰が何をするためのソフトなの？といった質問に答えます。",
+         "path": "what-is-exploratory-ja",
+         "url": "https://exploratory.io/note/kanaugust/yyJ5hZc0Wy"
+        },
+        {
          "title": "AI時代の信頼できるデータ分析を支える「3つのR」",
          "desc": "AIを使えば素早く簡単にデータを分析できますが、その結果がほんとうに正しいとは限りません。そこで、信頼できるデータ分析には可読性、再現性、そして信頼性が必要となります。",
          "path": "three-r-for-trustable-data-analysis-in-ai-era-ja",
