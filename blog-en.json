@@ -4,8 +4,14 @@
       "title": "Blog",
       "desc": "The latest blog posts from Exploratory.",
       "moreButtonText": "See more",
-      "moreButtonUrl": "https://exploratory.io/howto?q=tag%3Ablog&language=ja",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&sort=&language=en&q=tag%3Ablog&searchType=keyword",
       "insights": [
+        {
+         "title": "K-Means Clustering, Visually Explained!",
+         "desc": "This post shows how the method works step by step, when it works well, and how to use it in Exploratory.",
+         "path": "what-is-k-means-clustering-en",
+         "url": "https://exploratory.io/note/kanaugust/FeP6Lnc9Ab"
+        },
         {
          "title": "Exploratory v16.4 Is Here! Hierarchical Clustering, Enhanced Charts & Dashboards, and More",
          "desc": "Exploratory v16.4 brings powerful new analytics capabilities, improved visualizations, more flexible dashboards, and a faster, more intuitive workflow.",

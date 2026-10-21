@@ -4,8 +4,14 @@
       "title": "Blog記事",
       "desc": "Exploratoryからの最新のブログ記事です。",
       "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/insight?type=note&sort=&language=all&q=blog&searchType=keyword",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&sort=&language=ja&q=tag%3Ablog&searchType=keyword",
       "insights": [
+        {
+         "title": "K-Meansクラスタリングって何？図表を使って説明",
+         "desc": "この記事では、手法のしくみを1ステップずつ図で追い、うまくいく条件と、Exploratory での使い方を説明します。",
+         "path": "what-is-k-means-clustering-ja",
+         "url": "https://exploratory.io/note/kanaugust/EOc0Zaz1SK"
+        },
         {
          "title": "Exploratory v16.4 リリース！階層クラスタリング、チャートとダッシュボードの機能大幅強化",
          "desc": "この記事では、Exploratory v16.4で追加された代表的な新機能と改善点をご紹介します。",
