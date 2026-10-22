@@ -7,6 +7,12 @@
       "moreButtonUrl": "https://exploratory.io/insight?type=note&sort=&language=ja&q=tag%3Ablog&searchType=keyword",
       "insights": [
         {
+         "title": "リッカート尺度（5段階・7段階評価）の分析方法：集計・可視化から統計分析まで",
+         "desc": "この記事では、リッカート尺度の基本的な考え方から、回答分布の集計、平均値、Top 2 Box、クロス集計、統計検定、相関分析、因子分析まで、実際のアンケートデータを例に解説します。",
+         "path": "how-to-analyze-likert-scale-data-ja",
+         "url": "https://exploratory.io/note/kanaugust/UEh9raa1nD"
+        },
+        {
          "title": "K-Meansクラスタリングって何？図表を使って説明",
          "desc": "この記事では、手法のしくみを1ステップずつ図で追い、うまくいく条件と、Exploratory での使い方を説明します。",
          "path": "what-is-k-means-clustering-ja",
