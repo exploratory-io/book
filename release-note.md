@@ -808,6 +808,19 @@ AI Data turns many of the tedious and technical steps involved in getting data r
 
 
 
+# 15.7
+
+## Release Date
+
+11/4/2026
+
+## Issue fix
+
+### Install
+
+*   Exploratory Desktop on Windows failed to open or create any project, repeatedly logging 'Failed to start Rserve daemon. (Could not find process.)'.
+
+
 # 15.6
 
 ## Release Date
