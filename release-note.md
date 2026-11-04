@@ -10,7 +10,7 @@
 
 ### Install
 
-*   Exploratory Desktop on Windows failed to open or create any project, repeatedly logging 'Failed to start Rserve daemon. (Could not find process.)'
+*   Exploratory Desktop on Windows failed to open or create any project, repeatedly logging 'Failed to start Rserve daemon. (Could not find process.)'.
 
 
 # v16.5
