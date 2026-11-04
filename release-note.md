@@ -13,6 +13,19 @@
 *   Exploratory Desktop on Windows failed to open or create any project, repeatedly logging 'Failed to start Rserve daemon. (Could not find process.)'.
 
 
+# v16.6
+
+## Release Date
+
+10/16/2026
+
+## Issue fix
+
+### Data Wrangling
+
+*   After upgrading to v16.5, Join steps failed with a 'referenced data frame or branch not found' error even though the data frame being joined existed, which invalidated its columns.
+
+
 # v16.5
 
 ## Release Date
