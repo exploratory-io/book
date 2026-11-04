@@ -1,5 +1,18 @@
 # Release Note
 
+# v16.7
+
+## Release Date
+
+11/3/2026
+
+## Issue fix
+
+### Install
+
+*   Exploratory Desktop on Windows failed to open or create any project, repeatedly logging 'Failed to start Rserve daemon. (Could not find process.)', because the Rserve process was not detected when the netstat command did not list its listening port. Rserve is now detected through an additional fallback check, so projects open normally.
+
+
 # v16.5
 
 ## Release Date
