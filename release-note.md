@@ -10,7 +10,7 @@
 
 ### Install
 
-*   Exploratory Desktop on Windows failed to open or create any project, repeatedly logging 'Failed to start Rserve daemon. (Could not find process.)', because the Rserve process was not detected when the netstat command did not list its listening port. Rserve is now detected through an additional fallback check, so projects open normally.
+*   Exploratory Desktop on Windows failed to open or create any project, repeatedly logging 'Failed to start Rserve daemon. (Could not find process.)'
 
 
 # v16.5

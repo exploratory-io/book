@@ -10,7 +10,7 @@
 
 ### インストール
 
-*   Windows版のExploratory Desktopで、netstatコマンドの出力にRserveの待ち受けポートが表示されない環境において、Rserveプロセスを検出できず、「Failed to start Rserve daemon. (Could not find process.)」というエラーが繰り返し記録されてプロジェクトを開く、または作成することができない不具合を修正しました。追加のフォールバック検出を行うようにしたため、プロジェクトを通常どおり開けるようになります。
+*   「Failed to start Rserve daemon. (Could not find process.)」というエラーが繰り返し記録されてプロジェクトを開く、または作成することができない不具合を修正しました。
 
 
 # v16.5
