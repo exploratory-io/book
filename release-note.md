@@ -8,7 +8,7 @@
 
 ## Issue fix
 
-### Install
+### Project
 
 *   Exploratory Desktop on Windows failed to open or create any project, repeatedly logging 'Failed to start Rserve daemon. (Could not find process.)'.
 
@@ -816,7 +816,7 @@ AI Data turns many of the tedious and technical steps involved in getting data r
 
 ## Issue fix
 
-### Install
+### Project
 
 *   Exploratory Desktop on Windows failed to open or create any project, repeatedly logging 'Failed to start Rserve daemon. (Could not find process.)'.
 
