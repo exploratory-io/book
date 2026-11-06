@@ -49,36 +49,32 @@ Exploratory Cloud Server performs server-side logging of Exploratory Desktop app
 
 ## How Exploratory Handles Your Data When Using AI Features
 
-The Exploratory Desktop provides various AI-powered features to enhance data science workflow. When you use these features, a portion of your data may be sent to our AI service providers (Google, Anthropic) depending on the specific feature being used.
+Exploratory Desktop and Exploratory Cloud provide AI-powered features to help with data preparation and analysis. When you use these features, a portion of your data may be sent to our AI service providers (Google and Anthropic) through Exploratory’s servers. This is an exception to local processing of imported Desktop data.
 
-The scope of information sent and the corresponding provider are as follows:
+The following summarizes, by provider, the features and the kinds of content that may be sent. **The exact content sent varies by feature and by the prompts or inputs you provide.**
 
-| **AI Feature**    | **AI Service Provider** | **Main Content Sent**                                        |
-| ----------------- | ----------------------- | ------------------------------------------------------------ |
-| AI Data Wrangling | Anthropic (Claude)      | Prompts, column names, data types, and (if you choose) sample data |
-| AI Function       | Google (Gemini)         | Prompts, column names, data types, and values from specified columns |
-| AI Summary        | Google (Gemini)         | Aggregated data from charts generated in Chart view and Analytics view |
-| AI Note Editor    | Google (Gemini)         | Prompts, text within the note, and aggregated data used in charts that are included in the note |
+| **AI Service Provider** | **Features (examples)** | **Main content that may be sent (inventory-level summary)** |
+| --- | --- | --- |
+| Google (Gemini) | Chart creation; analysis explanations; notes; wrangling explanations; error correction; AI prompt functions | Sample rows, column names, R code, and error messages; AI prompt functions may also include actual data values |
+| Anthropic (Claude) | AI Data Wrangling; data sources; assistant; AI Data | Sample rows, column names, code, and error messages |
 
 ### Disabling AI Features
 
-AI features can be disabled at the system level all at once. By unchecking **"Use AI Features"** in the AI tab of System Settings, you can disable all AI-related features across the application — including AI Data Wrangling, AI Function, AI Summary, and AI Note Editor — preventing any data from being sent to external AI services.
-
-For details on how to configure this, see [this post](https://community.exploratory.io/t/how-to-enable-disable-ai-features-in-exploratory/4246).
+On Exploratory Desktop, AI features can be disabled at the system level. By unchecking **"Use AI Features"** in the AI tab of System Settings, you can prevent Desktop AI-related features from sending data to external AI services. See [this post](https://community.exploratory.io/t/how-to-enable-disable-ai-features-in-exploratory/4246) for configuration details.
 
 ### Sample Data Control for "AI Data Wrangling"
 
-For the **AI Data Wrangling (Data Wrangling with AI Prompt)** feature, you can control the amount of data sent to the AI to balance privacy and suggestion accuracy:
+On Exploratory Desktop, the **AI Data Wrangling** feature may let you control how much sample data is included. See [this post](https://community.exploratory.io/t/how-to-set-the-default-sample-data-size-for-ai-data-wrangling-at-the-system-level/4248) for configuration details.
 
-- **If you set the sample data size to a value greater than 0:**
+- If the sample data size is greater than 0, column names and data types, together with a sample of your dataset, may be included in the prompt.
+- If the sample data size is set to 0, sample data rows are not included as sample values. However, values may still be sent if they appear in the prompt text, code, or error messages you provide or that are included for the feature.
 
-  A sample of your dataset is included in the prompt text sent to Anthropic's AI service to improve the quality and relevance of the AI-generated suggestions.
+### Model training
 
-- **If you set the sample data size to 0:**
+Exploratory uses paid commercial API arrangements for the Google Gemini API and the Anthropic Claude API. Under the providers’ published terms applicable to those paid commercial API services, prompts and responses submitted through those APIs are not used to train the providers’ models. Providers may still process or retain prompts and responses for a limited period for abuse monitoring, safety and security, or legal compliance, as described in their terms. Please review each provider’s terms for details.
 
-  Only the column names and their data types (e.g., "numeric", "character", etc.) are included in the prompt. **No actual data values are sent.**
-
-For details on how to configure this, see [this post](https://community.exploratory.io/t/how-to-set-the-default-sample-data-size-for-ai-data-wrangling-at-the-system-level/4248).
+- [Anthropic: Is my data used for model training?](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training)
+- [Google Gemini API Additional Terms of Service](https://ai.google.dev/gemini-api/terms)
 
 ### Data Privacy and Security
 
@@ -139,23 +135,33 @@ Similarly, projects on Exploratory may include publicly available Personal Infor
 
 Exploratory website uses cookies to make interactions with our service easy and meaningful. We use cookies (and similar technologies, like HTML5 localStorage) to keep you logged in, remember your preferences, and provide information for future development of Exploratory.
 
-A cookie is a small piece of text that our web server stores on your computer or mobile device, which your browser sends to us when you return to our site. Cookies do not necessarily identify you if you are merely visiting Exploratory; however, a cookie may store a unique identifier for each logged in user. The cookies Exploratory sets are essential for the operation of the website, or are used for performance or functionality. By using our website, you agree that we can place these types of cookies on your computer or device.
+Cookies do not necessarily identify you if you are merely visiting Exploratory; however, a cookie may store a unique identifier for each logged in user. The cookies Exploratory sets include cookies that are essential for the operation of the website, and cookies used for performance or functionality.
 
-#### Google Analytics
+#### Google Analytics (GA4)
 
-We use Google Analytics as a third party tracking service, but we don’t use it to track you individually or collect your User Personal Information. We use Google Analytics to collect information about how our website performs and how our users, in general, navigate through and use Exploratory. This helps us evaluate our users' use of Exploratory; compile statistical reports on activity; and improve our content and website performance.
+We use Google Analytics (GA4) to understand how our website and certain Exploratory Cloud pages are used. We do not use it on viz, note, data, dashboard, or slides pages.
 
-Google Analytics gathers certain simple, non-personally identifying information over time, such as your IP address, browser type, internet service provider, referring and exit pages, time stamp, and similar data about your use of Exploratory. We do not link this information to any of your personal information such as your user name.
+We use Google Analytics to evaluate site performance, compile statistical reports on general navigation and use, and improve our content and website performance. We do not combine Google Analytics usage data with your account User Personal Information such as your user name in order to track you individually.
 
-Exploratory will not, nor will we allow any third party to, use the Google Analytics tool to track our users individually; collect any User Personal Information other than IP address; or correlate your IP address with your identity. Google provides further information about its own privacy practices and offers a [browser add-on to opt out of Google Analytics tracking](https://tools.google.com/dlpage/gaoptout).
+Google Analytics collects usage information such as cookies, pages visited, browser information, and referrer data. IP address information may be used in request processing; under Google’s ordinary GA4 handling, raw IP addresses are not stored as a lasting report identifier.
+
+Google provides further information about its own privacy practices and offers a [browser add-on to opt out of Google Analytics tracking](https://tools.google.com/dlpage/gaoptout).
 
 Certain pages on our site may set other third party cookies. For example, we may embed content, such as videos, from another site that sets a cookie. While we try to minimize these third party cookies, we can’t always control what cookies this third party content sets.
 
+#### Meta Pixel (Facebook Pixel)
+
+We use Meta Pixel (Facebook Pixel) from Meta Platforms, Inc. on our website and on certain Exploratory Cloud pages. We do not use it on viz, note, data, dashboard, or slides pages.
+
+We use Meta Pixel for analytics and advertising measurement, including page-view and sign-up completion events. Information such as cookies, pages visited, and sign-up completion events may be sent to Meta.
+
 #### Tracking
 
-"[Do Not Track](http://donottrack.us/)" is a privacy preference you can set in your browser if you do not want online services to collect and share certain kinds of information about your online activity from third party tracking services. We do not track your online browsing activity on other online services over time and we do not permit third-party services to track your activity on our site beyond our basic Google Analytics tracking, which you may opt out of [here](https://tools.google.com/dlpage/gaoptout). Because we do not share this kind of data with third party services or permit this kind of third party data collection on Exploratory for any of our users, and we do not track our users on third-party websites ourselves, we do not need to respond differently to an individual browser's [Do Not Track](http://donottrack.us/) setting.
+"[Do Not Track](http://donottrack.us/)" is a privacy preference you can set in your browser if you do not want online services to collect and share certain kinds of information about your online activity from third party tracking services. We do not track your online browsing activity on other online services over time.
 
-If you are interested in turning on your browser’s privacy and Do Not Track settings, the Do Not Track website has browser-specific instructions.
+As described above, we use Google Analytics (GA4) and Meta Pixel on our site. You may be able to limit some of this collection by changing your browser cookie settings and by using Google’s [Analytics opt-out browser add-on](https://tools.google.com/dlpage/gaoptout). The effect of browser settings and extensions varies by environment, and they may not block all collection.
+
+Because there is no consistent industry standard for responding to Do Not Track signals, we may not respond differently to an individual browser’s Do Not Track setting. If you are interested in turning on your browser’s privacy and Do Not Track settings, the Do Not Track website has browser-specific instructions.
 
 
 ## How Exploratory secures your information

@@ -107,6 +107,8 @@ Your use of the Service is at your sole risk. The Service is provided on an "as 
 
 Support for Exploratory services is only available in English and Japanese, via community, email or phone, depending on your subscribed plan.
 
+You understand that Exploratory uses third-party vendors and hosting partners ("subprocessors") to provide the necessary hardware, software, networking, storage, and related technology required to run the Service. The list of subprocessors that process personal data, and notice of changes to it, are as set out in "H. Customer Content, Security and Data Processing".
+
 You must not modify, adapt or hack the Service or modify another website so as to falsely imply that it is associated with the Service, Exploratory, or any other Exploratory service.
 
 You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Product and Service, use of the Service, or access to the Service without the express written permission of Exploratory.
@@ -144,5 +146,7 @@ Exploratory will implement reasonable security measures to protect Customer Cont
 If Exploratory confirms a security incident involving Customer Content or personal data that Exploratory processes for you on the Service (including unauthorized access, loss, alteration or disclosure), Exploratory will notify you without undue delay and in any event within 72 hours after confirmation, at the email address associated with your account. The notice will include, to the extent then known: (a) a description of the incident; (b) the categories of data affected; (c) measures taken and planned; and (d) a contact point. Exploratory will reasonably cooperate with your investigation and with any notifications you are required to make by law. Exploratory may supplement the notice as its investigation proceeds.
 
 Business customers may request a data processing agreement (DPA) covering personal data processed on the Service by contacting Exploratory at support@exploratory.io. If a DPA is signed, it prevails over these Terms of Service with respect to the processing of personal data.
+
+Exploratory may engage third parties (subprocessors) for hosting, payments, support, transmission and other processing needed to provide the Service. The current list is published at (https://exploratory.io/subprocessors). If Exploratory adds or replaces a subprocessor that will handle personal data, it will update that list and will notify you by email to the address associated with your account and/or by in-app notice at least [●] days before the new subprocessor starts processing. If a shorter period is required for security or legal reasons, Exploratory will notify you promptly afterwards. You may object on reasonable grounds by writing to support@exploratory.io within [●] days of the notice. Exploratory will discuss the objection in good faith. If it cannot reasonably accommodate the objection, you may terminate the affected Service.
 
 On termination of the Service, or on your request, Exploratory will reasonably help you export Customer Content in a commonly used format. Exploratory will then delete Customer Content from the Service without undue delay and in any event within 30 days after termination or the deletion request, except where retention is required by law. Residual copies in backups will be erased in the ordinary backup cycle.
