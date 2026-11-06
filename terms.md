@@ -129,7 +129,7 @@ Exploratory does not warrant that (i) the Service will meet your specific requir
 
 The failure of Exploratory to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitute the entire agreement between you and Exploratory and govern your use of the Service, superseding any prior agreements between you and Exploratory (including, but not limited to, any prior versions of the Terms of Service). However, if you and Exploratory have signed a separate written agreement, such as a data processing agreement (DPA) or a side letter, that agreement prevails for the matters it covers.
 
-You agree that these Terms of Service and your use of the Service are governed under California law. [Governing law and venue not yet decided. Replace this sentence if changing to Japanese law and the Tokyo District Court.]
+You agree that these Terms of Service and your use of the Service are governed under California law.
 
 Questions about the Terms of Service should be sent to [support@exploratory.io](mailto:support@exploratory.io).
 
