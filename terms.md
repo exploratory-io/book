@@ -103,21 +103,19 @@ The look and feel of the Service is copyright © Exploratory, Inc. All rights re
 
 ## G. General Conditions
 
-Your use of the Service is at your sole risk. The service is provided on an "as is" and "as available" basis.
+Your use of the Service is at your sole risk. The Service is provided on an "as is" and "as available" basis. However, Exploratory's obligations regarding Customer Content, security and data processing are as set out in "H. Customer Content, Security and Data Processing".
 
-Support for Exploratory services is only available in English and Japanese, via community, email or phone depending on the your subscribed plan.
-
-You understand that Exploratory uses third-party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run the Service.
+Support for Exploratory services is only available in English and Japanese, via community, email or phone, depending on your subscribed plan.
 
 You must not modify, adapt or hack the Service or modify another website so as to falsely imply that it is associated with the Service, Exploratory, or any other Exploratory service.
 
-You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Product and Service, use of the Service, or access to the Service without the express written permission by Exploratory.
+You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Product and Service, use of the Service, or access to the Service without the express written permission of Exploratory.
 
-We may, but have no obligation to, remove Content and Accounts containing Content that we determine in our sole discretion are unlawful, offensive, threatening, libelous, defamatory, pornographic, obscene or otherwise objectionable or violates any party's intellectual property or these Terms of Service.
+We may, but have no obligation to, remove Content and Accounts containing Content that we determine in our sole discretion are unlawful, offensive, threatening, libelous, defamatory, pornographic, obscene or otherwise objectionable or violate any party's intellectual property or these Terms of Service.
 
-Verbal, physical, written or other abuse (including threats of abuse or retribution) of any Exploratory customer, employee, member, or officer will result in immediate account termination.
+Verbal, physical, written or other abuse (including threats of abuse or retribution) of any Exploratory customer, employee, member, or officer may result in immediate account termination.
 
-You understand that the technical processing and transmission of the Service, including your Content, may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices.
+You understand that the technical processing and transmission of the Service, including your Content, involves (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Exploratory protects transmissions to and from the Service as described in the Security Policy.
 
 You must not upload, post, host, or transmit unsolicited email, SMSs, or "spam" messages.
 
@@ -125,12 +123,26 @@ You must not transmit any worms or viruses or any code of a destructive nature.
 
 If your bandwidth usage significantly exceeds the average bandwidth usage (as determined solely by Exploratory) of other Exploratory customers, we reserve the right to immediately disable your account or throttle your file hosting until you can reduce your bandwidth consumption.
 
-Exploratory does not warrant that (i) the service will meet your specific requirements, (ii) the service will be uninterrupted, timely, secure, or error-free, (iii) the results that may be obtained from the use of the service will be accurate or reliable, (iv) the quality of any products, services, information, or other material purchased or obtained by you through the service will meet your expectations, and (v) any errors in the Service will be corrected.
+Exploratory does not warrant that (i) the Service will meet your specific requirements, (ii) the Service will be uninterrupted, timely, secure, or error-free, (iii) the results that may be obtained from the use of the Service will be accurate or reliable, (iv) the quality of any products, services, information, or other material purchased or obtained by you through the Service will meet your expectations, and (v) any errors in the Service will be corrected.
 
-You expressly understand and agree that Exploratory shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if Exploratory has been advised of the possibility of such damages), resulting from: (i) the use or the inability to use the service; (ii) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from the service; (iii) unauthorized access to or alteration of your transmissions or data; (iv) statements or conduct of any third-party on the service; (v) or any other matter relating to the service.
+**Limitation of Liability.** Exploratory's total liability arising out of or relating to the Service will not exceed the fees you paid to Exploratory for the applicable Service during the twelve (12) months before the event giving rise to the claim (excluding taxes). Neither party will be liable for any lost profits, lost business opportunity, goodwill, loss of use of data, or any indirect, incidental, special, consequential or exemplary damages, even if advised of the possibility of such damages. The cap and the exclusion of damages in this section do not apply to a party's willful misconduct or gross negligence.
 
-The failure of Exploratory to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitute the entire agreement between you and Exploratory and govern your use of the Service, superseding any prior agreements between you and Exploratory (including, but not limited to, any prior versions of the Terms of Service). You agree that these Terms of Service and Your use of the Service are governed under California law.
+The failure of Exploratory to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitute the entire agreement between you and Exploratory and govern your use of the Service, superseding any prior agreements between you and Exploratory (including, but not limited to, any prior versions of the Terms of Service). However, if you and Exploratory have signed a separate written agreement, such as a data processing agreement (DPA) or a side letter, that agreement prevails for the matters it covers.
 
-Questions about the Terms of Service should be sent to support@exploratory.io.
+You agree that these Terms of Service and your use of the Service are governed under California law. [Governing law and venue not yet decided. Replace this sentence if changing to Japanese law and the Tokyo District Court.]
+
+Questions about the Terms of Service should be sent to [support@exploratory.io](mailto:support@exploratory.io).
 
 Map data copyright OpenStreetMap contributors and licensed under the Open Data Commons Open Database License. Map design and imagery subject to the MapBox Terms of Service.
+
+# H. Customer Content, Security and Data Processing
+
+Data, charts, notes, dashboards and other content that you submit to or store on the Service (including the hosted server) (“Customer Content”) remain yours. Exploratory will treat Customer Content as your confidential information and will use it only to provide, maintain and support the Service, including support you request. Exploratory personnel may access Customer Content only on a need-to-know basis for those purposes. If disclosure is required by law, Exploratory will, where legally permitted, use reasonable efforts to notify you. Information is not confidential if it (a) is or becomes public other than through Exploratory’s breach, (b) was already rightfully in Exploratory’s possession, (c) is lawfully received from a third party without a duty of confidentiality, or (d) is independently developed without use of Customer Content.
+
+Exploratory will implement reasonable security measures to protect Customer Content and personal data on the Service, taking into account the state of the art, the cost of implementation, the nature of the data and the likely impact of a breach. A description of those measures is set out in the Security Policy (https://exploratory.io/security), which Exploratory may update from time to time. The Security Policy does not promise that Exploratory itself holds any particular certification (including SOC 2 or ISO 27001). Exploratory cannot guarantee the absolute security of transmission over the internet or of electronic storage.
+
+If Exploratory confirms a security incident involving Customer Content or personal data that Exploratory processes for you on the Service (including unauthorized access, loss, alteration or disclosure), Exploratory will notify you without undue delay and in any event within 72 hours after confirmation, at the email address associated with your account. The notice will include, to the extent then known: (a) a description of the incident; (b) the categories of data affected; (c) measures taken and planned; and (d) a contact point. Exploratory will reasonably cooperate with your investigation and with any notifications you are required to make by law. Exploratory may supplement the notice as its investigation proceeds.
+
+Business customers may request a data processing agreement (DPA) covering personal data processed on the Service by contacting Exploratory at support@exploratory.io. If a DPA is signed, it prevails over these Terms of Service with respect to the processing of personal data.
+
+On termination of the Service, or on your request, Exploratory will reasonably help you export Customer Content in a commonly used format. Exploratory will then delete Customer Content from the Service without undue delay and in any event within 30 days after termination or the deletion request, except where retention is required by law. Residual copies in backups will be erased in the ordinary backup cycle.
