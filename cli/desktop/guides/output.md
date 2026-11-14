@@ -24,7 +24,7 @@ expl dashboard get d123 --json
 
 ## Language
 
-The text expl writes itself follows the language of Desktop. Switch it with expl lang ja or expl lang en. Without an argument, it shows the current language.
+The text expl writes itself follows the language of Desktop. Switch it with expl lang ja or expl lang en. With a project given by --project and no language, it shows the current language (for example expl lang --project \<id\>). Without a project, it exits with code 2.
 
 ```sh
 expl lang ja

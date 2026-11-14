@@ -8,9 +8,9 @@
 
 | コマンド | できること |
 | --- | --- |
-| expl status | Desktop のバージョン、サインイン中のユーザー、接続 |
+| expl status | Desktop のバージョンとサインイン中のユーザー（--json を付けると、権限やツールの情報も出ます） |
 | expl tools list | 使えるコマンドの一覧（読むだけか、リスク） |
-| expl tools describe \<command\> | 引数、型、必須か、選べる値 |
+| expl tools describe \<command\> | 引数、型、必須か、選べる値（2 語のコマンドは引用符で囲みます。例: expl tools describe "dashboard get"） |
 
 <a id="cmd-project"></a>
 
@@ -29,7 +29,7 @@
 | コマンド | できること |
 | --- | --- |
 | expl dataframe list | データフレームの一覧 |
-| expl dataframe get-schema | 列の名前と型 |
+| expl dataframe get-schema \<id\> | 列の名前と型（加工のステップなども返ります） |
 | expl dataframe preview | 行を表示する |
 
 <a id="cmd-chart"></a>
@@ -38,7 +38,7 @@
 
 | コマンド | できること |
 | --- | --- |
-| expl chart list | チャートの一覧 |
+| expl chart list \<dataframe_id\> | チャートの一覧（データフレームの id が必要です） |
 | expl chart get-result \<id\> | チャートの数値 |
 | expl chart get-image \<id\> --output \<file\> | チャートの画像を保存する |
 
@@ -70,7 +70,7 @@
 | --- | --- |
 | expl execution get \<execution_id\> | 待たなかった操作の状態を確認する |
 | expl call \<tool_name\> | 道具の名前でそのまま呼ぶ |
-| expl lang \[en\|ja\] | 表示の言語を確認する、切り替える |
+| expl lang --project \<id\> | 表示の言語を確認する（プロジェクトの指定が必要です。切り替えは expl lang en または expl lang ja） |
 | expl skill | AI エージェント向けの説明を出力する |
 
 <a id="more"></a>

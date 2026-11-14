@@ -28,7 +28,7 @@ expl comes with Desktop. If it is not found, see the installation page.
 expl status
 ```
 
-It shows the Desktop version, the signed-in user and whether the connection is on. If Desktop is not running, it exits with code 3.
+It shows the Desktop version and the signed-in user. If Desktop is not running, it exits with code 3.
 
 ### 3. See your projects
 
@@ -46,9 +46,9 @@ The commands you will use most. Check the arguments with expl \<command\> --help
 
 | Command | Purpose |
 | --- | --- |
-| expl status | The Desktop version, the signed-in user and the connection |
+| expl status | The Desktop version and the signed-in user |
 | expl tools list | All available commands (read-only or not, and risk) |
-| expl tools describe \<command\> | Arguments, types, required or not, allowed values |
+| expl tools describe \<command\> | Arguments, types, required or not, allowed values (put a two-word command in quotes) |
 | expl project list | List projects |
 | expl project use \<id\|name\> | Choose the project later commands work on |
 | expl project open \<id\> | Open a project |

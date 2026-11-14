@@ -28,7 +28,7 @@ expl は Exploratory Desktop に同梱されています。インストールさ
 expl status
 ```
 
-Desktop のバージョン、サインイン中のユーザー、接続が有効かを表示します。Desktop が起動していないと、終了コード 3 で終了します。
+Desktop のバージョンと、サインイン中のユーザーを表示します。Desktop が起動していないと、終了コード 3 で終了します。
 
 ### 3. プロジェクトを表示する
 
@@ -46,9 +46,9 @@ expl project list
 
 | コマンド | できること |
 | --- | --- |
-| expl status | Desktop のバージョン、サインイン中のユーザー、接続 |
+| expl status | Desktop のバージョンとサインイン中のユーザー |
 | expl tools list | 使えるコマンドの一覧（読むだけか、リスク） |
-| expl tools describe \<command\> | 引数、型、必須か、選べる値 |
+| expl tools describe \<command\> | 引数、型、必須か、選べる値（2 語のコマンドは引用符で囲みます） |
 | expl project list | プロジェクトの一覧 |
 | expl project use \<id\|name\> | 以後のコマンドの対象を決める |
 | expl project open \<id\> | プロジェクトを開く |

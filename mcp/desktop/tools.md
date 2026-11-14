@@ -6,7 +6,7 @@ The Desktop MCP lets an AI client work with the project open in Exploratory Desk
 
 ## Scope
 
-The tools below are the ones the Exploratory Desktop plugin guides the AI to use. Which tools appear depends on your Desktop version and on the settings in System Settings \> MCP / CLI: with Allow create, edit and delete off, only reading is possible.
+The table below shows the main tools as examples. There are many more tools than the ones listed. The tools below are the ones the Exploratory Desktop plugin guides the AI to use. Which tools appear depends on your Desktop version and on the settings in System Settings \> MCP / CLI: with Allow create, edit and delete off, only reading is possible.
 
 | Purpose | What the AI can do | Tools (examples) |
 | --- | --- | --- |

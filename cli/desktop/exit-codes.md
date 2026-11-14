@@ -10,7 +10,7 @@ expl returns an exit code when it ends. Scripts and CI can use the number to jud
 | --- | --- |
 | 0 | Success |
 | 1 | The operation failed. With Desktop, this also covers a declined confirmation and a timeout. |
-| 2 | Wrong usage: an unknown flag, unreadable JSON, a missing --yes outside a terminal, and so on. |
+| 2 | Wrong usage: an unknown flag (except for expl status), unreadable JSON, a missing --yes outside a terminal, and so on. |
 | 3 | Desktop or Server cannot be reached. For Server: the network, an HTML error page and so on. |
 | 4 | Authentication or permission. For Server: not signed in, or the token or API key was rejected (wrong, expired, revoked, or blocked by an administrator). |
 | 130 | Interrupted with Ctrl+C |

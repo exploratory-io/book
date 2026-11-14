@@ -16,7 +16,9 @@ Exploratory Desktop を起動し、サインインします。expl は、Desktop
 expl status
 ```
 
-Desktop のバージョン、サインイン中のユーザー、接続が有効かを表示します。
+Desktop のバージョンと、サインイン中のユーザーを表示します。
+
+初めて使うときは、Exploratory Desktop に「expl の Exploratory への接続を許可しますか？」と聞く画面が出ます。自分で起動した expl であることを確かめて、許可します。許可したあと、もう一度 expl status を実行します。
 
 ### 3. プロジェクトを選ぶ
 

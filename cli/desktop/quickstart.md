@@ -16,7 +16,9 @@ Start Exploratory Desktop and sign in. expl reads the connection details and tok
 expl status
 ```
 
-It shows the Desktop version, the signed-in user and whether the connection is on.
+It shows the Desktop version and the signed-in user.
+
+The first time you use it, Exploratory Desktop shows a screen that asks whether to allow expl to connect to Exploratory. Check that it is the expl you started yourself, and allow it. After you allow it, run expl status again.
 
 ### 3. Choose a project
 

@@ -22,4 +22,9 @@
 
 --verbose の出力は、どこかに貼り付ける前に確認してください。
 
+次のコマンドは、例外があります。
+
+- expl status は、--input の JSON を使いません。渡しても無視します。
+- expl project use、expl tools describe、expl call、expl lang に --help を付けると、ヘルプではなく、使い方のエラー（終了コード 2）になります。使い方は、「よく使うコマンド」を参照してください。
+
 シェルの補完は、expl completion bash、expl completion zsh、expl completion powershell が、補完のスクリプトを出力します。

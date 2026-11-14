@@ -8,9 +8,9 @@ The commands you will use most, grouped by purpose.
 
 | Command | Purpose |
 | --- | --- |
-| expl status | The Desktop version, the signed-in user and the connection |
+| expl status | The Desktop version and the signed-in user (with --json it also shows permissions and tools) |
 | expl tools list | All available commands (read-only or not, and risk) |
-| expl tools describe \<command\> | Arguments, types, required or not, allowed values |
+| expl tools describe \<command\> | Arguments, types, required or not, allowed values (put a two-word command in quotes, for example expl tools describe "dashboard get") |
 
 <a id="cmd-project"></a>
 
@@ -29,7 +29,7 @@ The commands you will use most, grouped by purpose.
 | Command | Purpose |
 | --- | --- |
 | expl dataframe list | List data frames |
-| expl dataframe get-schema | Column names and types |
+| expl dataframe get-schema \<id\> | Column names and types (it also returns the wrangling steps and more) |
 | expl dataframe preview | See rows |
 
 <a id="cmd-chart"></a>
@@ -38,7 +38,7 @@ The commands you will use most, grouped by purpose.
 
 | Command | Purpose |
 | --- | --- |
-| expl chart list | List charts |
+| expl chart list \<dataframe_id\> | List charts (a data frame id is required) |
 | expl chart get-result \<id\> | The numbers of a chart |
 | expl chart get-image \<id\> --output \<file\> | Save the image of a chart |
 
@@ -70,7 +70,7 @@ The commands you will use most, grouped by purpose.
 | --- | --- |
 | expl execution get \<execution_id\> | Check the state of an operation you did not wait for |
 | expl call \<tool_name\> | Call an operation by its tool name |
-| expl lang \[en\|ja\] | Show or switch the display language |
+| expl lang --project \<id\> | Show the display language (a project is required; switch with expl lang en or expl lang ja) |
 | expl skill | Print a description for AI agents |
 
 <a id="more"></a>

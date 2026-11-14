@@ -29,7 +29,7 @@ cat dashboard.json | expl dashboard create --input -
 - reads from standard input.
 
 - If you give both --input and a flag, the flag wins.
-- An unknown flag is an error (exit code 2) with a suggestion of similar names.
+- An unknown flag is an error (exit code 2) with a suggestion of similar names. The exception is expl status, which ignores an unknown flag and exits with code 0.
 - Pass an input that has the same name as a global flag, and a string that itself starts with @, in the --input JSON.
 
 <a id="id"></a>

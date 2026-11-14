@@ -8,7 +8,7 @@ In Exploratory Desktop, System Settings installs the Desktop MCP plugin into the
 
 ### 1. Turn on MCP in Desktop
 
-Open System Settings \> MCP / CLI and turn on Enable MCP. To create or change charts, notes and other content, also check Allow create, edit and delete. Both are off by default.
+Open System Settings \> MCP / CLI and turn on the MCP switch. To create or change charts, notes and other content, also check Allow create, edit and delete. Both are off by default.
 
 ### 2. Install from the "Install the Exploratory Desktop plugin" card
 
@@ -16,13 +16,13 @@ In the same tab, the "Install the Exploratory Desktop plugin" card says:
 
 > Installs the Desktop MCP plugin into the AI tools on this computer. After installing, restart that AI tool.
 
-The card lists Claude Code, Codex, Antigravity and Cursor. Choose Install on the AI tool you use. While it runs, the card shows Installing. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
+The card lists Claude Code, Codex, Antigravity and Cursor. Choose Install on the AI tool you use. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
 
 <!-- image: images/en/desktop-plugin-card.png (The "Install the Exploratory Desktop plugin" card in MCP / CLI in System Settings) -->
 
 ### 3. Save the settings
 
-Choose OK in System Settings to save the settings. If you do not save, the switches you turned on in step 1 do not take effect.
+Choose Save at the bottom of System Settings to save the settings. If you do not save, the switches you turned on in step 1 do not take effect.
 
 ### 4. Restart the AI tool
 
@@ -36,7 +36,7 @@ The first time an AI tool connects, Desktop asks whether to allow it. Allow only
 In my open Exploratory project, build a monthly bar chart from the sales data.
 ```
 
-In Claude Code, open /mcp and check that exploratory-desktop is connected. In Codex, run codex mcp list and check that exploratory-desktop is listed. If a call says that MCP is turned off, go back to steps 1 and 3 and check that you turned the switch on and saved with OK.
+In Claude Code, open /mcp and check that exploratory-desktop is connected. In Codex, run codex mcp list and check that exploratory-desktop is listed. If a call says that MCP is turned off, go back to steps 1 and 3 and check that you turned the switch on and chose Save.
 
 <a id="differences"></a>
 
@@ -55,13 +55,12 @@ Restart the AI tool after installing, whichever one it is.
 
 The buttons on the card change with its state.
 
-| State | Buttons |
+| State | What the card shows |
 | --- | --- |
-| Not installed | Install |
-| Installed | Reinstall and Remove |
-| Running | Installing |
-| The state cannot be checked | Check again |
-| It failed | Try again |
+| Not installed | Not installed, and a green Install button |
+| Installed | Installed, with Remove and Reinstall |
+
+Choosing Remove opens a confirmation.
 
 <a id="manual"></a>
 
