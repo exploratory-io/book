@@ -24,7 +24,7 @@ It works through the app on your computer, as the user signed in to the app. It 
 
 - Exploratory Desktop v17 or later, signed in and running
 - The command exploratory-mcp on your PATH. The plugin starts this command. Desktop puts it on your PATH automatically when it starts; no action is needed.
-- On macOS, Desktop must run from /Applications or ~/Applications to register the command.
+- On macOS, if you keep Desktop open from the disk image, the command is not added automatically. Move Desktop to /Applications or ~/Applications and start it from there.
 - For Claude Code: node on your PATH. The plugin's review hooks use it.
 - An AI client: Claude Code, Codex, Cursor or Antigravity
 

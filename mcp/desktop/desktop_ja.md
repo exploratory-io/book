@@ -24,7 +24,7 @@ Exploratory Desktop の MCP を使うと、AI クライアントが、あなた�
 
 - Exploratory Desktop v17 以降。サインインして、起動しておきます
 - PATH にある exploratory-mcp コマンド。プラグインが、このコマンドを起動します。Desktop の起動時に、自動で使える場所（PATH）に入ります。操作は要りません
-- macOS では、コマンドを登録するために、Desktop を /Applications か ~/Applications から起動します
+- macOS では、ディスクイメージから開いたままだとコマンドが自動で入りません。Desktop を /Applications か ~/Applications に移して起動します
 - Claude Code で使う場合は、PATH に node。プラグインのレビューのフックが使います
 - AI クライアント: Claude Code、Codex、Cursor、Antigravity
 
