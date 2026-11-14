@@ -95,11 +95,11 @@ In the image, 1 is the approval button (Allow). This screen of exploratory.io is
 
 ### 12. Check that it is connected
 
-Back in ChatGPT, Exploratory appears under Installed on the left of Customize. Open Exploratory to see its details, such as Version, and the Try in chat button.
+Back in ChatGPT, Exploratory appears under Installed on the left of Customize. Open Exploratory to see its details: the Exploratory row under Apps, and Information. Information lists Developer, Category, Version and Website.
 
-![The Exploratory details](images/en/chatgpt-08-connected.png)
+![Apps and Information in the Exploratory details](images/en/chatgpt-08-connected.png)
 
-In the image, 1 is the notification that tells you it is connected.
+In the image, 1 is the Exploratory row under Apps. The Developer field is blurred in the image.
 
 ### 13. Try it
 

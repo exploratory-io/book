@@ -95,11 +95,11 @@ https://exploratory.io/mcp
 
 ### 12. 接続されたことを確かめる
 
-ChatGPT に戻ると、「Customize」の左の「Installed」（インストール済み）に「Exploratory」が表示されます。「Exploratory」を開くと、バージョン（「Version」）などの情報と、「Try in chat」（チャットで試す）のボタンが表示されます。
+ChatGPT に戻ると、「Customize」の左の「Installed」（インストール済み）に「Exploratory」が表示されます。「Exploratory」を開くと、詳細画面に、「Apps」（アプリ）の下の「Exploratory」の行と、「Information」（情報）が表示されます。「Information」には、「Developer」（開発者）、「Category」（カテゴリ）、「Version」（バージョン）、「Website」（Web サイト）が並びます。
 
-![「Exploratory」の詳細画面](images/en/chatgpt-08-connected.png)
+![「Exploratory」の詳細画面の「Apps」と「Information」](images/en/chatgpt-08-connected.png)
 
-画像の 1 は、接続できたことを知らせる通知です。
+画像の 1 は、「Apps」の下の「Exploratory」の行です。画像では、「Developer」の欄をぼかしています。
 
 ### 13. 試す
 

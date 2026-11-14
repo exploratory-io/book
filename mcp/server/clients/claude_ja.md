@@ -103,7 +103,7 @@ Sales Orders のデータが URL つきで表示されれば、使えていま�
 
 ![「Exploratory」の詳細にある「ツールの権限」](images/ja/claude-06-tools.png)
 
-画像の 1 はサーバーの URL、2 は「ツールの権限」です。
+画像の 1 はサーバーの URL、2 は「ツールの権限」の見出しです。
 
 <a id="trouble"></a>
 

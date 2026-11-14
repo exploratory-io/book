@@ -103,7 +103,7 @@ Open Exploratory in the list to see the server URL (https://exploratory.io/mcp) 
 
 ![The tool permissions in the Exploratory details](images/ja/claude-06-tools.png)
 
-In the image, 1 is the server URL and 2 is the tool permissions.
+In the image, 1 is the server URL and 2 is the heading of the tool permissions.
 
 <a id="trouble"></a>
 
