@@ -8,7 +8,7 @@ Desktop MCP で表示されるメッセージと、その対処です。
 
 | 表示される内容 | 対処 |
 | --- | --- |
-| exploratory-mcp が見つからない | MCP をオンにした Exploratory Desktop v17 以降を起動するか、「AI クライアントと接続」のカードで「登録」を選んでから、AI クライアントを起動し直します。macOS では、アプリを /Applications か ~/Applications から起動します。 |
+| exploratory-mcp が見つからない | MCP をオンにした Exploratory Desktop v17 以降を起動します。コマンドはアプリの起動時に自動で入ります。そのあと、AI クライアントを起動し直します。macOS では、アプリを /Applications か ~/Applications から起動します。 |
 | 登録できません。Exploratory が … から起動されています。 | Exploratory を「アプリケーション」フォルダに移して、起動し直します。起動したときに登録されます。 |
 | Desktop の MCP のツールが、起動していないというエラーを返す | Exploratory Desktop を起動します。そのあと、同じ会話で、もう一度ツールを使います。 |
 | MCP がオフだと表示される | システム設定 \> MCP / CLI で、「MCP を有効にする」をオンにします。 |

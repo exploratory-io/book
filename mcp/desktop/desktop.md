@@ -23,7 +23,7 @@ It works through the app on your computer, as the user signed in to the app. It 
 ## Requirements
 
 - Exploratory Desktop v17 or later, signed in and running
-- The command exploratory-mcp on your PATH. The plugin starts this command. Desktop registers it when it starts, or you register it in the Connect AI clients card.
+- The command exploratory-mcp on your PATH. The plugin starts this command. Desktop puts it on your PATH automatically when it starts; no action is needed.
 - On macOS, Desktop must run from /Applications or ~/Applications to register the command.
 - For Claude Code: node on your PATH. The plugin's review hooks use it.
 - An AI client: Claude Code, Codex, Cursor or Antigravity
@@ -36,11 +36,11 @@ It works through the app on your computer, as the user signed in to the app. It 
 
 Open System Settings \> MCP / CLI and turn on Enable MCP. To create or change charts, notes and other content, also check Allow create, edit and delete. Both are off by default.
 
-### 2. Install the plugin from Connect AI clients
+### 2. Install the plugin from the "Install the Exploratory Desktop plugin" card
 
-In the same tab, the Connect AI clients card connects the AI clients on this computer. It lists Claude Code, Codex, Antigravity and Cursor. Choose Install on the client you use. For Claude Code, Codex and Antigravity it installs the Exploratory Desktop plugin (with its skills), and the row shows Installed with the plugin version; Update and Remove take the place of Install. For Cursor it only adds exploratory-mcp to ~/.cursor/mcp.json: no skills are installed, and the row shows Installed without a version.
+In the same tab, the "Install the Exploratory Desktop plugin" card installs the Desktop MCP plugin into the AI tools on this computer. It lists Claude Code, Codex, Antigravity and Cursor. Choose Install on the client you use. For Claude Code, Codex and Antigravity it installs the Exploratory Desktop plugin (with its skills), and the row shows Installed with the plugin version; Update and Remove take the place of Install. For Cursor it only adds exploratory-mcp to ~/.cursor/mcp.json: no skills are installed, and the row shows Installed without a version.
 
-A client that is not on this computer shows Not found on this computer. If the command row says it is not registered, choose Register. You may be asked for an administrator password.
+A client that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
 
 When the install ends, restart the AI client.
 

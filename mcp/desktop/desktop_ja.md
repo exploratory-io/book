@@ -23,7 +23,7 @@ Exploratory Desktop の MCP を使うと、AI クライアントが、あなた�
 ## 必要なもの
 
 - Exploratory Desktop v17 以降。サインインして、起動しておきます
-- PATH にある exploratory-mcp コマンド。プラグインが、このコマンドを起動します。Desktop が起動時に登録するか、「AI クライアントと接続」のカードで登録します
+- PATH にある exploratory-mcp コマンド。プラグインが、このコマンドを起動します。Desktop の起動時に、自動で使える場所（PATH）に入ります。操作は要りません
 - macOS では、コマンドを登録するために、Desktop を /Applications か ~/Applications から起動します
 - Claude Code で使う場合は、PATH に node。プラグインのレビューのフックが使います
 - AI クライアント: Claude Code、Codex、Cursor、Antigravity
@@ -36,11 +36,11 @@ Exploratory Desktop の MCP を使うと、AI クライアントが、あなた�
 
 システム設定 \> MCP / CLI を開いて、「MCP を有効にする」をオンにします。チャートやノートなどを作成・変更する場合は、「作成、変更、削除を許可する」にもチェックを入れます。どちらも初期状態ではオフです。
 
-### 2. 「AI クライアントと接続」からプラグインを入れる
+### 2. 「Exploratory Desktop プラグインのインストール」からプラグインを入れる
 
-同じタブの「AI クライアントと接続」のカードで、このコンピューターの AI クライアントとつなぎます。Claude Code、Codex、Antigravity、Cursor が並びます。使うクライアントで「インストール」を選びます。Claude Code、Codex、Antigravity では、Exploratory Desktop のプラグイン（スキルを含む）が入り、行に「インストール済み」とプラグインのバージョンが表示されます。「インストール」の代わりに「更新」と「削除」が使えます。Cursor では、~/.cursor/mcp.json に exploratory-mcp を登録するだけです。スキルは入らず、行の「インストール済み」にバージョンは表示されません。
+同じタブの「Exploratory Desktop プラグインのインストール」のカードで、Desktop MCP のプラグインを、このPC上の AI ツールにインストールします。Claude Code、Codex、Antigravity、Cursor が並びます。使うクライアントで「インストール」を選びます。Claude Code、Codex、Antigravity では、Exploratory Desktop のプラグイン（スキルを含む）が入り、行に「インストール済み」とプラグインのバージョンが表示されます。「インストール」の代わりに「更新」と「削除」が使えます。Cursor では、~/.cursor/mcp.json に exploratory-mcp を登録するだけです。スキルは入らず、行の「インストール済み」にバージョンは表示されません。
 
-このコンピューターにないクライアントには、「このパソコンに見つかりません」と表示されます。コマンドの行に「登録されていません」と出ているときは、「登録」を選びます。管理者のパスワードを求められることがあります。
+このコンピューターにないクライアントには、「このパソコンに見つかりません」と表示されます。コマンドはアプリの起動時に自動で入るので、コマンドを登録する操作は要りません。
 
 インストールが終わったら、その AI クライアントを起動し直します。
 
