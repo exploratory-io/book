@@ -21,25 +21,33 @@ You do not need an API key or a client ID.
 
 In ChatGPT, open Settings and choose Plugins.
 
-<!-- image: images/en/chatgpt-01-plugins.png (Plugins in Settings) -->
+![Plugins in Settings](images/en/chatgpt-01-plugins.png)
+
+In the image, 1 is Plugins and 2 is Browse directory.
 
 ### 2. Open the plugin list
 
 Choose Browse directory. The Plugins screen under Customize opens.
 
-<!-- image: images/en/chatgpt-02-plugin-directory.png (The Plugins screen under Customize, with Add at the top right) -->
+![The Plugins screen under Customize, with Add at the top right](images/en/chatgpt-02-plugin-directory.png)
+
+In the image, 1 is Add.
 
 ### 3. Open the screen for adding a custom MCP server
 
 Choose Add at the top right, then choose Add custom MCP server.
 
-<!-- image: images/en/chatgpt-03-add-menu.png (The Add menu) -->
+![The Add menu](images/en/chatgpt-03-add-menu.png)
+
+In the image, 1 is Add custom MCP server.
 
 ### 4. Enter the name
 
 In Name, enter the name to show in the list, for example Exploratory.
 
-<!-- image: images/en/chatgpt-04-custom-mcp-empty.png (The Add custom MCP server screen) -->
+![The Add custom MCP server screen](images/en/chatgpt-04-custom-mcp-empty.png)
+
+In the image, 1 is Name, 2 is the Server URL field and 3 is the check box I understand and want to continue.
 
 ### 5. Enter the URL
 
@@ -57,7 +65,9 @@ Check that Authentication is OAuth. There is nothing to change.
 
 The screen says "Custom MCP servers introduce risk." Make sure you trust the server, then select I understand and want to continue.
 
-<!-- image: images/en/chatgpt-05-custom-mcp-filled.png (The screen with the name, the URL, OAuth and the check box filled in) -->
+![The screen with the name, the URL, OAuth and the check box filled in](images/en/chatgpt-05-custom-mcp-filled.png)
+
+In the image, 1 is Name, 2 is the Server URL field and 3 is the check box I understand and want to continue.
 
 ### 8. Create it
 
@@ -67,19 +77,25 @@ Choose Create as a plugin.
 
 The Connect Exploratory screen opens. Choose the Connect Exploratory button.
 
-<!-- image: images/en/chatgpt-06-connect-dialog.png (The Connect Exploratory screen) -->
+![The Connect Exploratory screen](images/en/chatgpt-06-connect-dialog.png)
+
+In the image, 1 is the Connect Exploratory button.
 
 ### 10. Approve the access
 
 Your browser opens exploratory.io. If you are not signed in, sign in first. On the screen where ChatGPT asks for access, choose Allow.
 
-<!-- image: images/en/chatgpt-07-sign-in.png (The approval screen on exploratory.io) -->
+![The approval screen on exploratory.io](images/en/chatgpt-07-sign-in.png)
+
+In the image, 1 is the approval button (Allow). This screen of exploratory.io is shown in Japanese.
 
 ### 11. Check that it is connected
 
 Back in ChatGPT, Exploratory appears under Installed on the left of Customize. Open Exploratory to see its details, such as Version, and the Try in chat button.
 
-<!-- image: images/en/chatgpt-08-connected.png (The Exploratory details) -->
+![The Exploratory details](images/en/chatgpt-08-connected.png)
+
+In the image, 1 is the notification that tells you it is connected.
 
 ### 12. Try it
 

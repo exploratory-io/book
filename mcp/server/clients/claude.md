@@ -2,7 +2,7 @@
 
 Add the Exploratory server to Claude as a custom connector. A connector is a link that lets Claude use the data and features of an outside service. After you add it, sign in to Exploratory and approve the access, and you can read notes and data published on Exploratory from a Claude chat.
 
-The connector screens are the same in the Claude desktop app and on the web (claude.ai).
+The connector screens are the same in the Claude desktop app and on the web (claude.ai). The screenshots on this page show the Japanese screen.
 
 <a id="need"></a>
 
@@ -21,13 +21,17 @@ You do not need an API key or a client ID.
 
 In Claude, open settings, then open Connectors under Customize. The list of your own connectors opens.
 
-<!-- image: images/ja/claude-01-settings.png (Connectors under Customize in settings, before you add anything) -->
+![Connectors under Customize in settings, before you add anything](images/ja/claude-01-settings.png)
+
+In the image, 1 is Customize, 2 is the connectors tab and 3 is the add button.
 
 ### 2. Open the screen for adding a custom connector
 
 Use the add button in the connectors list and choose the option to add a custom connector.
 
-<!-- image: images/ja/claude-02-add-menu.png (The add menu) -->
+![The add menu](images/ja/claude-02-add-menu.png)
+
+In the image, 1 is the option to add a custom connector.
 
 ### 3. Enter the name and the URL
 
@@ -41,7 +45,9 @@ https://exploratory.io/mcp
 
 When both are filled in, continue to the next screen.
 
-<!-- image: images/ja/claude-03-custom-connector.png (Enter the name and the MCP server URL) -->
+![Enter the name and the MCP server URL](images/ja/claude-03-custom-connector.png)
+
+In the image, 1 is the name, 2 is the MCP server URL and 3 is the button to continue.
 
 ### 4. Keep the authentication settings and add the connector
 
@@ -49,19 +55,25 @@ The second screen shows the authentication settings. Leave them as they are: the
 
 Add the connector.
 
-<!-- image: images/ja/claude-03b-auth-options.png (The authentication and OAuth client screen) -->
+![The authentication and OAuth client screen](images/ja/claude-03b-auth-options.png)
+
+In the image, 1 is the sign-in option that is detected and 2 is the button to add the connector.
 
 ### 5. Approve the access
 
 Your browser opens exploratory.io and shows "Claude is asking for access to your Exploratory account". If you are not signed in, sign in first. Choose Allow.
 
-<!-- image: images/en/claude-04-sign-in.png (Allow on exploratory.io) -->
+![Allow on exploratory.io](images/en/claude-04-sign-in.png)
+
+In the image, 1 is Allow.
 
 ### 6. Check that it is connected
 
 When Exploratory appears in the connectors list as a custom connector with a check mark that shows it is connected, the connection works.
 
-<!-- image: images/ja/claude-05-connected.png (Exploratory in the list) -->
+![Exploratory in the list](images/ja/claude-05-connected.png)
+
+In the image, 1 is the Exploratory row that was added to the list.
 
 ### 7. Try it
 
@@ -79,7 +91,9 @@ If the Sales Orders data appears with its URL, it works.
 
 Open Exploratory in the list to see the server URL (https://exploratory.io/mcp) and the tool permissions. The tools of the Exploratory connector are grouped as read-only tools. You can choose when each tool runs. This setting decides when Claude may use the tools in Manual mode. In Auto mode, an automated check blocks actions it flags as risky; for other actions, Claude may act without asking, even for tools set to Needs approval.
 
-<!-- image: images/ja/claude-06-tools.png (The tool permissions in the Exploratory details) -->
+![The tool permissions in the Exploratory details](images/ja/claude-06-tools.png)
+
+In the image, 1 is the server URL and 2 is the tool permissions.
 
 <a id="trouble"></a>
 

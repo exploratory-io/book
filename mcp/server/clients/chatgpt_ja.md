@@ -2,7 +2,7 @@
 
 ChatGPT に、Exploratory のサーバーを「カスタム MCP サーバー」として追加します。MCP サーバーとは、AI アプリが外部のサービスのデータや機能を使うための接続先です。追加したあと、Exploratory に接続して許可すると、ChatGPT から、Exploratory に公開されたノートやデータを読めるようになります。
 
-ChatGPT のデスクトップアプリでも、Web 版でも、同じ設定ができます。ここでは、英語の画面の文言を「」で引き、括弧で意味を添えます。
+ChatGPT のデスクトップアプリでも、Web 版でも、同じ設定ができます。このページの画像は、英語の画面です。ここでは、英語の画面の文言を「」で引き、括弧で意味を添えます。
 
 <a id="need"></a>
 
@@ -21,25 +21,33 @@ API キーやクライアント ID は要りません。
 
 ChatGPT で設定（「Settings」）を開き、「Plugins」（プラグイン）を選びます。
 
-<!-- image: images/en/chatgpt-01-plugins.png (設定の「Plugins」) -->
+![設定の「Plugins」](images/en/chatgpt-01-plugins.png)
+
+画像の 1 は「Plugins」、2 は「Browse directory」です。
 
 ### 2. プラグインの一覧を開く
 
 「Browse directory」（ディレクトリを参照）を選びます。「Customize」の「Plugins」の画面が開きます。
 
-<!-- image: images/en/chatgpt-02-plugin-directory.png (「Customize」の「Plugins」の画面と、右上の「Add」) -->
+![「Customize」の「Plugins」の画面と、右上の「Add」](images/en/chatgpt-02-plugin-directory.png)
+
+画像の 1 は「Add」です。
 
 ### 3. カスタム MCP サーバーの追加を開く
 
 右上の「Add」（追加）を選び、「Add custom MCP server」（カスタム MCP サーバーを追加）を選びます。
 
-<!-- image: images/en/chatgpt-03-add-menu.png (「Add」のメニュー) -->
+![「Add」のメニュー](images/en/chatgpt-03-add-menu.png)
+
+画像の 1 は「Add custom MCP server」です。
 
 ### 4. 名前を入力する
 
 「Name」（名前）に、一覧に表示する名前（例: Exploratory）を入力します。
 
-<!-- image: images/en/chatgpt-04-custom-mcp-empty.png (「Add custom MCP server」の画面) -->
+![「Add custom MCP server」の画面](images/en/chatgpt-04-custom-mcp-empty.png)
+
+画像の 1 は「Name」、2 は「Server URL」の欄、3 は「I understand and want to continue」のチェックです。
 
 ### 5. URL を入力する
 
@@ -57,7 +65,9 @@ https://exploratory.io/mcp
 
 「Custom MCP servers introduce risk.」（カスタム MCP サーバーにはリスクがあります）と表示されます。接続先を信頼できることを確かめて、「I understand and want to continue」（理解したうえで続ける）にチェックを入れます。
 
-<!-- image: images/en/chatgpt-05-custom-mcp-filled.png (名前、URL、OAuth、チェックを入力した画面) -->
+![名前、URL、OAuth、チェックを入力した画面](images/en/chatgpt-05-custom-mcp-filled.png)
+
+画像の 1 は「Name」、2 は「Server URL」の欄、3 は「I understand and want to continue」のチェックです。
 
 ### 8. 作成する
 
@@ -67,19 +77,25 @@ https://exploratory.io/mcp
 
 「Connect Exploratory」（Exploratory に接続）の画面が開きます。「Connect Exploratory」のボタンを選びます。
 
-<!-- image: images/en/chatgpt-06-connect-dialog.png (「Connect Exploratory」の画面) -->
+![「Connect Exploratory」の画面](images/en/chatgpt-06-connect-dialog.png)
+
+画像の 1 は「Connect Exploratory」のボタンです。
 
 ### 10. 許可する
 
 ブラウザで exploratory.io が開きます。サインインしていないときは、先にサインインします。ChatGPT がアクセスを求めている画面で、許可します（日本語の画面では「許可する」、英語の画面では「Allow」）。
 
-<!-- image: images/en/chatgpt-07-sign-in.png (exploratory.io の許可の画面) -->
+![exploratory.io の許可の画面](images/en/chatgpt-07-sign-in.png)
+
+画像の 1 は「許可する」です。
 
 ### 11. 接続されたことを確かめる
 
 ChatGPT に戻ると、「Customize」の左の「Installed」（インストール済み）に「Exploratory」が表示されます。「Exploratory」を開くと、バージョン（「Version」）などの情報と、「Try in chat」（チャットで試す）のボタンが表示されます。
 
-<!-- image: images/en/chatgpt-08-connected.png (「Exploratory」の詳細画面) -->
+![「Exploratory」の詳細画面](images/en/chatgpt-08-connected.png)
+
+画像の 1 は、接続できたことを知らせる通知です。
 
 ### 12. 試す
 

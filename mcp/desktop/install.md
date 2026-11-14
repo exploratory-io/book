@@ -82,6 +82,20 @@ The buttons on the card change with its state.
 
 Choosing Remove opens a confirmation.
 
+<a id="failure"></a>
+
+## When the install fails
+
+When an install fails, the second line of that AI tool's row shows "Could not install." in red. Details is right after it, then a sentence that gives the reason (for example "Check that you are connected to the internet."), and a Try again button at the right of the row.
+
+Hold the mouse pointer over Details to see the output of the command that ran, in a pop-up. The output is the last 2000 characters. If it is long, you can scroll inside the pop-up vertically. The pop-up stays when you move the pointer into it. Click Details to keep it open. Copy at the top right copies the output.
+
+![The card after a failed install, with the pointer over Details](images/en/desktop-plugin-card-error.png)
+
+In the image, 1 is Details and 2 is Copy.
+
+If the reason does not let you fix it, send the copied output to support. When it is fixed, choose Try again.
+
 <a id="manual"></a>
 
 ## Install by hand

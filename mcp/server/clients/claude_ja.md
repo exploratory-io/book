@@ -21,13 +21,17 @@ API キーやクライアント ID は要りません。
 
 Claude で設定を開き、「カスタマイズ」の中の「コネクタ」を選びます。「自分のもの」の一覧が開きます。
 
-<!-- image: images/ja/claude-01-settings.png (設定の「カスタマイズ」の「コネクタ」。追加する前の「自分のもの」の一覧) -->
+![設定の「カスタマイズ」の「コネクタ」。追加する前の「自分のもの」の一覧](images/ja/claude-01-settings.png)
+
+画像の 1 は「カスタマイズ」、2 は「コネクタ」のタブ、3 は「＋ 追加」です。
 
 ### 2. カスタムコネクタの追加を開く
 
 「＋ 追加」を選び、「カスタムコネクタを追加」を選びます。
 
-<!-- image: images/ja/claude-02-add-menu.png (「＋ 追加」のメニュー) -->
+![「＋ 追加」のメニュー](images/ja/claude-02-add-menu.png)
+
+画像の 1 は「カスタムコネクタを追加」です。
 
 ### 3. 名前と URL を入力する
 
@@ -41,7 +45,9 @@ https://exploratory.io/mcp
 
 入力できたら、「続ける」を選びます。
 
-<!-- image: images/ja/claude-03-custom-connector.png (「カスタムコネクタを追加」の画面で、名前と MCP サーバー URL を入力する) -->
+![「カスタムコネクタを追加」の画面で、名前と MCP サーバー URL を入力する](images/ja/claude-03-custom-connector.png)
+
+画像の 1 は「名前」、2 は「MCP サーバー URL」、3 は「続ける」です。
 
 ### 4. 認証の設定をそのままにして追加する
 
@@ -49,19 +55,25 @@ https://exploratory.io/mcp
 
 「追加」を選びます。
 
-<!-- image: images/ja/claude-03b-auth-options.png (「認証」と「OAuth クライアント」の画面。「追加」を選ぶ) -->
+![「認証」と「OAuth クライアント」の画面。「追加」を選ぶ](images/ja/claude-03b-auth-options.png)
+
+画像の 1 は「今すぐサインイン」、2 は「追加」です。
 
 ### 5. 許可する
 
 ブラウザで exploratory.io が開き、「Claude が Exploratory アカウントへのアクセスを求めています」と表示されます。サインインしていないときは、先にサインインします。「許可する」を選びます。
 
-<!-- image: images/ja/claude-04-sign-in.png (exploratory.io の「許可する」) -->
+![exploratory.io の「許可する」](images/ja/claude-04-sign-in.png)
+
+画像の 1 は「許可する」です。
 
 ### 6. 接続されたことを確かめる
 
 コネクタの「自分のもの」の一覧に、「Exploratory」が「カスタム」と表示され、接続済みを示すチェックが付いていれば、接続できています。
 
-<!-- image: images/ja/claude-05-connected.png (一覧に表示された「Exploratory」) -->
+![一覧に表示された「Exploratory」](images/ja/claude-05-connected.png)
+
+画像の 1 は、一覧に追加された「Exploratory」の行です。
 
 ### 7. 試す
 
@@ -79,7 +91,9 @@ Sales Orders のデータが URL つきで表示されれば、使えていま�
 
 一覧で「Exploratory」を開くと、サーバーの URL（https://exploratory.io/mcp）と、「ツールの権限」が表示されます。Exploratory のコネクタが使うツールは、「読み取り専用ツール」にまとまっています。ツールごとに、実行のタイミングを選べます。この設定は、手動モードで Claude がツールを使えるタイミングを決めるものです。自動モードでは、自動チェックがリスクがあると判断した操作はブロックされます。それ以外の操作は、「承認が必要」に設定したツールでも、Claude が確認なしで実行することがあります。
 
-<!-- image: images/ja/claude-06-tools.png (「Exploratory」の詳細にある「ツールの権限」) -->
+![「Exploratory」の詳細にある「ツールの権限」](images/ja/claude-06-tools.png)
+
+画像の 1 はサーバーの URL、2 は「ツールの権限」です。
 
 <a id="trouble"></a>
 
