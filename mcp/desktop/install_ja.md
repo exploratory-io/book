@@ -16,15 +16,19 @@ Exploratory Desktop のシステム設定から、Desktop MCP のプラグイン
 
 > Desktop MCP のプラグインを、このPC上の AI ツールにインストールします。インストールしたあとは、その AI ツールを起動し直してください。
 
-カードには、Claude Code、Codex、Antigravity、Cursor が並びます。使う AI ツールで「インストール」を選びます。このコンピューターにない AI ツールには、「このパソコンに見つかりません」と表示されます。コマンドは、アプリの起動時に自動で入ります。コマンドを登録する操作は要りません。
+カードには、Claude Code、Codex、Antigravity、Cursor が並びます。使う AI ツールで「インストール」を選びます。実行中は「インストール中」と表示されます。このコンピューターにない AI ツールには、「このパソコンに見つかりません」と表示されます。コマンドは、アプリの起動時に自動で入ります。コマンドを登録する操作は要りません。
 
 <!-- image: images/ja/desktop-plugin-card.png (システム設定の MCP / CLI にある、「Exploratory Desktop プラグインのインストール」のカード) -->
 
-### 3. AI ツールを起動し直す
+### 3. 設定を保存する
+
+システム設定の「OK」を選んで、設定を保存します。保存しないと、手順 1 でオンにした設定が反映されません。
+
+### 4. AI ツールを起動し直す
 
 インストールが終わったら、その AI ツールを起動し直します。
 
-### 4. 接続を許可して試す
+### 5. 接続を許可して試す
 
 AI ツールが初めて接続すると、Desktop が許可するかどうかを聞きます。自分で起動したアプリだけ許可してください。そのあと、Exploratory Desktop でプロジェクトを開いて、次のように頼みます。
 
@@ -32,7 +36,7 @@ AI ツールが初めて接続すると、Desktop が許可するかどうかを
 開いている Exploratory のプロジェクトで、売上データから月別の棒グラフを作って
 ```
 
-Claude Code では、/mcp を開いて、exploratory-desktop が接続されていることを確認します。Codex では、codex mcp list を実行して、exploratory-desktop が並んでいることを確認します。MCP がオフだと表示されたときは、手順 1 に戻ります。
+Claude Code では、/mcp を開いて、exploratory-desktop が接続されていることを確認します。Codex では、codex mcp list を実行して、exploratory-desktop が並んでいることを確認します。MCP がオフだと表示されたときは、手順 1 と手順 3 に戻り、スイッチをオンにして「OK」で保存したかを確かめます。
 
 <a id="differences"></a>
 
@@ -42,12 +46,22 @@ Claude Code では、/mcp を開いて、exploratory-desktop が接続されて�
 
 | AI ツール | カードで入るもの | カードの表示 |
 | --- | --- | --- |
-| Claude Code | Exploratory Desktop のプラグイン（スキルを含む） | 「インストール済み」とプラグインのバージョン。「インストール」の代わりに「更新」と「削除」 |
+| Claude Code | Exploratory Desktop のプラグイン（スキルを含む） | 「インストール済み - v」とプラグインのバージョン。「インストール」の代わりに「再インストール」と「削除」 |
 | Codex | 同上 | 同上 |
 | Antigravity | 同上 | 同上 |
-| Cursor | ~/.cursor/mcp.json に exploratory-mcp を登録するだけです。スキルは入りません | 「インストール済み」だけで、バージョンは表示されません |
+| Cursor | ~/.cursor/mcp.json に exploratory-mcp を登録するだけです。スキルは入りません | 「インストール済み」だけで、バージョンは表示されません。ボタンは「再インストール」と「削除」 |
 
 どの AI ツールも、インストールのあとに起動し直します。
+
+カードのボタンは、状態によって変わります。
+
+| 状態 | ボタン |
+| --- | --- |
+| インストールしていない | 「インストール」 |
+| インストール済み | 「再インストール」と「削除」 |
+| 実行中 | 「インストール中」 |
+| 状態を確認できない | 「もう一度確認」 |
+| 失敗した | 「もう一度試す」 |
 
 <a id="manual"></a>
 
@@ -102,14 +116,18 @@ Cursor には、~/.claude から取り込んだ Claude Code のプラグイン�
 
 ## 更新と削除
 
-Claude Code、Codex、Antigravity にカードで入れたものは、カードの「更新」と「削除」で操作できます。手作業で入れたときや Cursor では、次の方法を使います。
+入れ方によって、操作が違います。
+
+- カードで入れたもの（Claude Code、Codex、Antigravity、Cursor）: カードの「再インストール」で、最新のプラグインに入れ直します（更新も、この操作で行います）。外すときは、同じカードの「削除」を選びます。Cursor も、カードで入れたものは、カードの「削除」で外せます。
+- 手作業で入れたもの: 次の表のコマンドで、更新と削除をします。
 
 | AI ツール | 更新 | 削除 |
 | --- | --- | --- |
 | Claude Code | claude plugin marketplace update exploratory を実行し、続けて claude plugin update exploratory@exploratory を実行して、Claude Code を起動し直します | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory を実行し、続けて codex plugin remove exploratory@exploratory と codex plugin add exploratory@exploratory を実行します | codex plugin remove exploratory@exploratory |
 | Antigravity | クローンしたフォルダで git pull を実行し、もう一度 agy plugin install を実行します | Antigravity のプラグインの設定で、プラグインを削除します |
-| Cursor | Claude Code でプラグインを更新します（Cursor は ~/.claude から取り込みます） | Claude Code でアンインストールします。~/.cursor/mcp.json を手で書いたときは、そこから exploratory-desktop を消します |
+| Cursor（~/.cursor/mcp.json を手で書いたとき） | 内容を書き直します | ~/.cursor/mcp.json から exploratory-desktop を消します |
+| Cursor（Claude Code から取り込んだプラグイン） | Claude Code でプラグインを更新します（Cursor は ~/.claude から取り込みます） | Claude Code でアンインストールします |
 
 Desktop の MCP は、Exploratory Desktop を終了すると止まります。プラグインを削除しても、Server の MCP の接続には影響しません。
 

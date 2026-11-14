@@ -16,15 +16,19 @@ In the same tab, the "Install the Exploratory Desktop plugin" card says:
 
 > Installs the Desktop MCP plugin into the AI tools on this computer. After installing, restart that AI tool.
 
-The card lists Claude Code, Codex, Antigravity and Cursor. Choose Install on the AI tool you use. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
+The card lists Claude Code, Codex, Antigravity and Cursor. Choose Install on the AI tool you use. While it runs, the card shows Installing. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
 
 <!-- image: images/en/desktop-plugin-card.png (The "Install the Exploratory Desktop plugin" card in MCP / CLI in System Settings) -->
 
-### 3. Restart the AI tool
+### 3. Save the settings
+
+Choose OK in System Settings to save the settings. If you do not save, the switches you turned on in step 1 do not take effect.
+
+### 4. Restart the AI tool
 
 When the install ends, restart that AI tool.
 
-### 4. Allow the connection and try it
+### 5. Allow the connection and try it
 
 The first time an AI tool connects, Desktop asks whether to allow it. Allow only an app you started yourself. Then open a project in Exploratory Desktop and try this.
 
@@ -32,7 +36,7 @@ The first time an AI tool connects, Desktop asks whether to allow it. Allow only
 In my open Exploratory project, build a monthly bar chart from the sales data.
 ```
 
-In Claude Code, open /mcp and check that exploratory-desktop is connected. In Codex, run codex mcp list and check that exploratory-desktop is listed. If a call says that MCP is turned off, go back to step 1.
+In Claude Code, open /mcp and check that exploratory-desktop is connected. In Codex, run codex mcp list and check that exploratory-desktop is listed. If a call says that MCP is turned off, go back to steps 1 and 3 and check that you turned the switch on and saved with OK.
 
 <a id="differences"></a>
 
@@ -42,12 +46,22 @@ The card works the same way, but what it installs differs a little.
 
 | AI tool | What the card installs | What the card shows |
 | --- | --- | --- |
-| Claude Code | The Exploratory Desktop plugin (with its skills) | Installed with the plugin version; Update and Remove take the place of Install |
+| Claude Code | The Exploratory Desktop plugin (with its skills) | Installed - v and the plugin version; Reinstall and Remove take the place of Install |
 | Codex | Same | Same |
 | Antigravity | Same | Same |
-| Cursor | Only adds exploratory-mcp to ~/.cursor/mcp.json. No skills are installed | Installed, without a version |
+| Cursor | Only adds exploratory-mcp to ~/.cursor/mcp.json. No skills are installed | Installed, without a version. The buttons are Reinstall and Remove |
 
 Restart the AI tool after installing, whichever one it is.
+
+The buttons on the card change with its state.
+
+| State | Buttons |
+| --- | --- |
+| Not installed | Install |
+| Installed | Reinstall and Remove |
+| Running | Installing |
+| The state cannot be checked | Check again |
+| It failed | Try again |
 
 <a id="manual"></a>
 
@@ -102,14 +116,18 @@ Cursor also shows the Claude Code plugins it imports from ~/.claude: install the
 
 ## Update and remove
 
-For Claude Code, Codex and Antigravity installed with the card, use Update and Remove on the card. If you installed by hand, or for Cursor, use the methods below.
+It depends on how you installed it.
+
+- Installed with the card (Claude Code, Codex, Antigravity, Cursor): choose Reinstall on the card to install the latest plugin again (this is also how you update). To remove it, choose Remove on the same card. Cursor too: what you installed with the card is removed with Remove on the card.
+- Installed by hand: use the commands in the table below to update and remove.
 
 | AI tool | Update | Remove |
 | --- | --- | --- |
 | Claude Code | claude plugin marketplace update exploratory, then claude plugin update exploratory@exploratory, and restart Claude Code | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory, then codex plugin remove exploratory@exploratory and codex plugin add exploratory@exploratory | codex plugin remove exploratory@exploratory |
 | Antigravity | Run git pull in the cloned folder, then agy plugin install again | Remove the plugin in Antigravity's plugin settings |
-| Cursor | Update the plugin in Claude Code (Cursor imports it from ~/.claude) | Uninstall it in Claude Code. If you wrote ~/.cursor/mcp.json by hand, remove exploratory-desktop from it |
+| Cursor (you wrote ~/.cursor/mcp.json by hand) | Rewrite its contents | Remove exploratory-desktop from ~/.cursor/mcp.json |
+| Cursor (a plugin imported from Claude Code) | Update the plugin in Claude Code (Cursor imports it from ~/.claude) | Uninstall it in Claude Code |
 
 The Desktop MCP stops when you quit Exploratory Desktop. Removing the plugin does not affect your Server MCP connection.
 

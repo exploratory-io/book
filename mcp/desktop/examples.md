@@ -10,7 +10,8 @@ The charts and text that come out depend on your data and your AI tool. You can 
 
 - Open a project in Exploratory Desktop and turn on Enable MCP in System Settings \> MCP / CLI.
 - For the examples that create or change charts, notes, dashboards and so on, also check Allow create, edit and delete. With it off, the AI can only read.
-- Desktop asks you before it deletes, publishes or runs R code. See [Permissions and settings](limits.md).
+- After you change the settings, choose OK in System Settings to save them.
+- Desktop asks you before it deletes, publishes or runs R code, unless you turned on the setting that runs these without asking. Where an example below says Desktop asks you, it means this case. See [Permissions and settings](limits.md).
 
 <a id="server-or-desktop"></a>
 

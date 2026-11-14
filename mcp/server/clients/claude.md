@@ -69,7 +69,7 @@ If the Sales Orders data appears with its URL, it works.
 
 ## Check when tools run
 
-Open Exploratory in the list to see the Tool permissions screen. The tools of the Exploratory connector are grouped under Read-only tools. You can choose when each tool runs. A tool set to Needs approval asks for your confirmation before Claude uses it.
+Open Exploratory in the list to see the Tool permissions screen. The tools of the Exploratory connector are grouped under Read-only tools. You can choose when each tool runs. This setting decides when Claude may use the tools in Manual mode. In Auto mode, an automated check blocks actions it flags as risky; for other actions, Claude may act without asking, even for tools set to Needs approval.
 
 <!-- image: images/en/claude-07-tool-permissions.png (The Tool permissions screen) -->
 
