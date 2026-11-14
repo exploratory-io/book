@@ -14,9 +14,17 @@ Antigravity に Exploratory のサーバーを登録し、ブラウザでサイ�
 
 ## 手順
 
-### 1. 登録する
+### 1. 設定ファイルの場所を調べる
 
-サーバーだけを登録するときは、~/.gemini/config/mcp_config.json に、次を書きます。
+Antigravity のアプリで、サイドバーの「Customizations」を選び、「Installed」を選びます。
+
+「MCP Servers」の見出しにある「Copy Config File Path」を選ぶと、設定ファイル（mcp_config.json）の場所をコピーできます。
+
+<!-- image: images/ja/antigravity-01-customizations.png (「Customizations」の「Installed」にある、「MCP Servers」の「Copy Config File Path」) -->
+
+### 2. サーバーを登録する
+
+mcp_config.json を開き、次の内容を書き足します。リモートのサーバーは、「serverUrl」に URL を書きます。
 
 **mcp_config.json**
 
@@ -30,9 +38,23 @@ Antigravity に Exploratory のサーバーを登録し、ブラウザでサイ�
 }
 ```
 
-Server が公式のプラグイン一覧に掲載された場合は、そこからインストールすることもできます。
+コマンドラインの agy で使うときは、~/.gemini/config/mcp_config.json に、同じ内容を書きます。
 
-### 2. サインインする
+### 3. サインインする
+
+「MCP Servers」で、exploratory-server の横にある「Authenticate」を選びます。
+
+<!-- image: images/ja/antigravity-02-authenticate.png (exploratory-server の横の「Authenticate」) -->
+
+ブラウザが開きます。Exploratory にサインインして、アクセスを許可します。
+
+ブラウザに表示された認可コードをコピーし、「Enter authorization code」の欄に貼り付けて、「Submit」を選びます。
+
+<!-- image: images/ja/antigravity-03-authorization-code.png (「Enter authorization code」の欄) -->
+
+サーバーは、自動でつなぎ直されます。サインインできたサーバーには、「Sign out」のボタンが表示されます。
+
+agy で使うときは、次の順で行います。
 
 | 順 | 操作 |
 | --- | --- |
@@ -43,15 +65,17 @@ Server が公式のプラグイン一覧に掲載された場合は、そこか�
 | 5 | Exploratory の同意画面で許可します。 |
 | 6 | ブラウザに表示された認可コードを、agy に貼り付けます。 |
 
-Antigravity のアプリでは、エージェントの設定の Customizations で、サーバーの横の Authenticate を選びます。
+### 4. 試す
 
-### 3. 試す
+新しいチャットで、次のように送信します。
 
 ```text
 Exploratory にある「Sales Orders」のデータを探して
 ```
 
-> Sales Orders のデータが URL 付きで表示されていれば、接続できています。
+Sales Orders のデータが URL つきで表示されれば、接続できています。
+
+<!-- image: images/ja/antigravity-04-try.png (チャットで確かめる) -->
 
 <a id="trouble"></a>
 
@@ -68,6 +92,6 @@ Exploratory にある「Sales Orders」のデータを探して
 
 ## 接続を解除する
 
-mcp_config.json に追加した exploratory-server の部分を削除します。
+アプリでは、exploratory-server の横の「More actions」（⋮）を選び、「Delete」を選びます。一時的に止めるだけなら、「Disable」を選びます。mcp_config.json に追加した exploratory-server の部分を削除しても、解除できます。
 
 登録を解除しても、アクセスの許可は残ります。許可も取り消すには、exploratory.io のアカウント設定の「接続中のAIアプリ」から、クライアントを解除します。

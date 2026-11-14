@@ -31,6 +31,10 @@ Exploratory Server が公式のプラグイン一覧に掲載されるまでは�
 }
 ```
 
+Cursor のアプリでは、サイドバーの「Customize」で、追加した MCP サーバーを確かめられます。サーバーごとに、有効と無効を切り替えられます。
+
+<!-- image: images/ja/cursor-01-customize.png (サイドバーの「Customize」にある exploratory-server) -->
+
 ### 2. サインインする
 
 ```sh
@@ -39,6 +43,8 @@ agent mcp login exploratory-server
 
 ブラウザが開きます。Exploratory にサインインして、アクセスを許可してください。
 
+<!-- image: images/ja/cursor-02-sign-in.png (ブラウザでのサインインと許可) -->
+
 ### 3. 試す
 
 ```text
@@ -46,6 +52,8 @@ Exploratory にある「Sales Orders」のデータを探して
 ```
 
 > Sales Orders のデータが URL 付きで表示されていれば、接続できています。
+
+<!-- image: images/ja/cursor-03-try.png (チャットで確かめる) -->
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 

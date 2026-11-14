@@ -31,6 +31,10 @@ Until Exploratory Server is listed in the official plugin directory, add only th
 }
 ```
 
+In the Cursor app, you can check the MCP server you added under Customize in the sidebar. You can turn each server on or off there.
+
+<!-- image: images/en/cursor-01-customize.png (exploratory-server under Customize in the sidebar) -->
+
 ### 2. Sign in
 
 ```sh
@@ -39,6 +43,8 @@ agent mcp login exploratory-server
 
 Your browser opens. Sign in to Exploratory and approve the access.
 
+<!-- image: images/en/cursor-02-sign-in.png (Sign in and approve in the browser) -->
+
 ### 3. Try it
 
 ```text
@@ -46,6 +52,8 @@ Find the "Sales Orders" data on Exploratory.
 ```
 
 > If the Sales Orders data appears with its URL, the connection works.
+
+<!-- image: images/en/cursor-03-try.png (Check in a chat) -->
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
