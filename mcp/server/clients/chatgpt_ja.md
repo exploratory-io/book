@@ -2,7 +2,7 @@
 
 ChatGPT に、Exploratory のサーバーを「カスタム MCP サーバー」として追加します。MCP サーバーとは、AI アプリが外部のサービスのデータや機能を使うための接続先です。追加したあと、Exploratory に接続して許可すると、ChatGPT から、Exploratory に公開されたノートやデータを読めるようになります。
 
-ChatGPT のデスクトップアプリでも、Web 版でも、同じ設定ができます。このページの画像は、英語の画面です。ここでは、英語の画面の文言を「」で引き、括弧で意味を添えます。
+ChatGPT のデスクトップアプリでも、Web 版でも、同じ設定ができます。
 
 <a id="need"></a>
 
@@ -17,93 +17,97 @@ API キーやクライアント ID は要りません。
 
 ## 手順
 
-### 1. プラグインの設定を開く
+### 1. 設定を開く
 
-ChatGPT で設定（「Settings」）を開き、「Plugins」（プラグイン）を選びます。
+ChatGPT で、設定を開きます。
 
-![設定の「Plugins」](images/en/chatgpt-01-plugins.png)
+### 2. 「プラグイン」を選ぶ
 
-画像の 1 は「Plugins」、2 は「Browse directory」です。
+設定の「プラグイン」を選びます。
 
-### 2. プラグインの一覧を開く
+![設定の「プラグイン」](images/ja/chatgpt-01-plugins.png)
 
-「Browse directory」（ディレクトリを参照）を選びます。「Customize」の「Plugins」の画面が開きます。
+画像の 1 は「プラグイン」、2 は「エージェント一覧を見る」です。
 
-![「Customize」の「Plugins」の画面と、右上の「Add」](images/en/chatgpt-02-plugin-directory.png)
+### 3. 「エージェント一覧を見る」を選ぶ
 
-画像の 1 は「Add」です。
+「エージェント一覧を見る」を選びます。カスタマイズの「プラグイン」の画面が開きます。
 
-### 3. 「Add」を選ぶ
+![カスタマイズの「プラグイン」の画面と、右上の「追加」](images/ja/chatgpt-02-plugin-directory.png)
 
-右上の「Add」（追加）を選びます。
+画像の 1 は「追加」です。
 
-### 4. 「Add custom MCP server」を選ぶ
+### 4. 「追加」を選ぶ
 
-メニューの「Add custom MCP server」（カスタム MCP サーバーを追加）を選びます。
+右上の「追加」を選びます。
 
-![「Add」のメニュー](images/en/chatgpt-03-add-menu.png)
+### 5. 「カスタム MCP サーバーを追加」を選ぶ
 
-画像の 1 は「Add custom MCP server」です。
+メニューの「カスタム MCP サーバーを追加」を選びます。
 
-### 5. 名前を入力する
+![「追加」のメニュー](images/ja/chatgpt-03-add-menu.png)
 
-「Name」（名前）に、一覧に表示する名前（例: Exploratory）を入力します。
+画像の 1 は「カスタム MCP サーバーを追加」です。
 
-![「Add custom MCP server」の画面](images/en/chatgpt-04-custom-mcp-empty.png)
+### 6. 名前を入力する
 
-画像の 1 は「Name」、2 は「Server URL」の欄、3 は「I understand and want to continue」のチェックです。
+「カスタム MCP サーバーを追加」の画面で、「名前」に、一覧に表示する名前（例: Exploratory）を入力します。
 
-### 6. URL を入力する
+![「カスタム MCP サーバーを追加」の画面](images/ja/chatgpt-04-custom-mcp-empty.png)
 
-「Connection」（接続）は、「Server URL」を選んだままにします。URL の欄に、次の URL を入力します。
+画像の 1 は「名前」、2 は「サーバーURL」の欄、3 は「理解したうえで続けます」のチェックです。
+
+### 7. URL を入力する
+
+「接続タイプ」は、「サーバーURL」を選んだままにします。URL の欄に、次の URL を入力します。
 
 ```text
 https://exploratory.io/mcp
 ```
 
-### 7. 認証を確かめる
+### 8. 認証を確かめる
 
-「Authentication」（認証）が「OAuth」になっていることを確かめます。変えるところはありません。
+「認証」が「OAuth」になっていることを確かめます。変えるところはありません。
 
-### 8. 注意を確かめて、チェックを入れる
+### 9. 注意を確かめて、チェックを入れる
 
-「Custom MCP servers introduce risk.」（カスタム MCP サーバーにはリスクがあります）と表示されます。接続先を信頼できることを確かめて、「I understand and want to continue」（理解したうえで続ける）にチェックを入れます。
+「カスタム MCP サーバーの利用にはリスクが伴います。」と表示されます。接続先を信頼できることを確かめて、「理解したうえで続けます」にチェックを入れます。
 
-![名前、URL、OAuth、チェックを入力した画面](images/en/chatgpt-05-custom-mcp-filled.png)
+![名前、URL、OAuth、チェックを入力した画面](images/ja/chatgpt-05-custom-mcp-filled.png)
 
-画像の 1 は「Name」、2 は「Server URL」の欄、3 は「I understand and want to continue」のチェックです。
+画像の 1 は「名前」、2 は「サーバーURL」の欄、3 は「理解したうえで続けます」のチェックです。
 
-### 9. 作成する
+### 10. 作成する
 
-「Create as a plugin」（プラグインとして作成）を選びます。
+「プラグインとして作成」を選びます。
 
-### 10. Exploratory に接続する
+### 11. Exploratory に接続する
 
-「Connect Exploratory」（Exploratory に接続）の画面が開きます。「Connect Exploratory」のボタンを選びます。
+接続の画面が開きます。次の画像は、英語の画面で、日本語の画面ではありません。画面には、「Connect Exploratory」という見出しとボタンが表示されます。ボタンを選びます。
 
-![「Connect Exploratory」の画面](images/en/chatgpt-06-connect-dialog.png)
+![「Connect Exploratory」の画面（英語の画面）](images/en/chatgpt-06-connect-dialog.png)
 
-画像の 1 は「Connect Exploratory」のボタンです。
+画像の 1 は「Connect Exploratory」のボタンです。この画像は、英語の画面です。
 
-### 11. 許可する
+### 12. 許可する
 
-ブラウザで exploratory.io が開きます。サインインしていないときは、先にサインインします。ChatGPT がアクセスを求めている画面で、許可します（日本語の画面では「許可する」、英語の画面では「Allow」）。
+ブラウザで exploratory.io が開きます。サインインしていないときは、先にサインインします。ChatGPT がアクセスを求めている画面で、「許可する」を選びます。
 
 ![exploratory.io の許可の画面](images/en/chatgpt-07-sign-in.png)
 
 画像の 1 は「許可する」です。
 
-### 12. 接続されたことを確かめる
+### 13. 接続されたことを確かめる
 
-ChatGPT に戻ると、「Customize」の左の「Installed」（インストール済み）に「Exploratory」が表示されます。「Exploratory」を開くと、詳細画面に、「Apps」（アプリ）の下の「Exploratory」の行と、「Information」（情報）が表示されます。「Information」には、「Developer」（開発者）、「Category」（カテゴリ）、「Version」（バージョン）、「Website」（Web サイト）が並びます。
+ChatGPT に戻ると、カスタマイズの左の「インストール済み」に「Exploratory」が表示されます。「Exploratory」を開くと、詳細画面に、「アプリ」の下の「Exploratory」の行と、「情報」が表示されます。「情報」には、開発者、カテゴリ、バージョン、ウェブサイトが並びます。
 
-![「Exploratory」の詳細画面の「Apps」と「Information」](images/en/chatgpt-08-connected.png)
+![「Exploratory」の詳細画面の「アプリ」と「情報」](images/ja/chatgpt-08-connected.png)
 
-画像の 1 は、「Apps」の下の「Exploratory」の行です。画像では、「Developer」の欄をぼかしています。
+画像の 1 は、「アプリ」の下の「Exploratory」の行です。画像では、開発者の欄をぼかしています。
 
-### 13. 試す
+### 14. 試す
 
-「Try in chat」を選んで、チャットを開きます。次のように送信します。
+詳細画面の「チャットで試す」を選んで、チャットを開きます。次のように送信します。
 
 ```text
 Exploratory にある「Sales Orders」のデータを探して
