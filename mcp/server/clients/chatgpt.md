@@ -33,15 +33,19 @@ Choose Browse directory. The Plugins screen under Customize opens.
 
 In the image, 1 is Add.
 
-### 3. Open the screen for adding a custom MCP server
+### 3. Choose Add
 
-Choose Add at the top right, then choose Add custom MCP server.
+Choose Add at the top right.
+
+### 4. Choose Add custom MCP server
+
+In the menu, choose Add custom MCP server.
 
 ![The Add menu](images/en/chatgpt-03-add-menu.png)
 
 In the image, 1 is Add custom MCP server.
 
-### 4. Enter the name
+### 5. Enter the name
 
 In Name, enter the name to show in the list, for example Exploratory.
 
@@ -49,7 +53,7 @@ In Name, enter the name to show in the list, for example Exploratory.
 
 In the image, 1 is Name, 2 is the Server URL field and 3 is the check box I understand and want to continue.
 
-### 5. Enter the URL
+### 6. Enter the URL
 
 Under Connection, leave Server URL selected. In the URL field, enter this URL.
 
@@ -57,11 +61,11 @@ Under Connection, leave Server URL selected. In the URL field, enter this URL.
 https://exploratory.io/mcp
 ```
 
-### 6. Check the authentication
+### 7. Check the authentication
 
 Check that Authentication is OAuth. There is nothing to change.
 
-### 7. Read the warning and select the check box
+### 8. Read the warning and select the check box
 
 The screen says "Custom MCP servers introduce risk." Make sure you trust the server, then select I understand and want to continue.
 
@@ -69,11 +73,11 @@ The screen says "Custom MCP servers introduce risk." Make sure you trust the ser
 
 In the image, 1 is Name, 2 is the Server URL field and 3 is the check box I understand and want to continue.
 
-### 8. Create it
+### 9. Create it
 
 Choose Create as a plugin.
 
-### 9. Connect to Exploratory
+### 10. Connect to Exploratory
 
 The Connect Exploratory screen opens. Choose the Connect Exploratory button.
 
@@ -81,7 +85,7 @@ The Connect Exploratory screen opens. Choose the Connect Exploratory button.
 
 In the image, 1 is the Connect Exploratory button.
 
-### 10. Approve the access
+### 11. Approve the access
 
 Your browser opens exploratory.io. If you are not signed in, sign in first. On the screen where ChatGPT asks for access, choose Allow.
 
@@ -89,7 +93,7 @@ Your browser opens exploratory.io. If you are not signed in, sign in first. On t
 
 In the image, 1 is the approval button (Allow). This screen of exploratory.io is shown in Japanese.
 
-### 11. Check that it is connected
+### 12. Check that it is connected
 
 Back in ChatGPT, Exploratory appears under Installed on the left of Customize. Open Exploratory to see its details, such as Version, and the Try in chat button.
 
@@ -97,7 +101,7 @@ Back in ChatGPT, Exploratory appears under Installed on the left of Customize. O
 
 In the image, 1 is the notification that tells you it is connected.
 
-### 12. Try it
+### 13. Try it
 
 Choose Try in chat to open a chat. Send this.
 

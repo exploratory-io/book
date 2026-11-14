@@ -17,25 +17,35 @@ You do not need an API key or a client ID.
 
 ## Steps
 
-### 1. Open the connectors screen
+### 1. Choose Customize
 
-In Claude, open settings, then open Connectors under Customize. The list of your own connectors opens.
+In the sidebar on the left of Claude, choose Customize.
 
-![Connectors under Customize in settings, before you add anything](images/ja/claude-01-settings.png)
+### 2. Choose the connectors tab
+
+Choose the connectors tab. The list of your own connectors opens.
+
+![Customize in the left sidebar and the connectors tab, before you add anything](images/ja/claude-01-settings.png)
 
 In the image, 1 is Customize, 2 is the connectors tab and 3 is the add button.
 
-### 2. Open the screen for adding a custom connector
+### 3. Choose the add button
 
-Use the add button in the connectors list and choose the option to add a custom connector.
+In the list, choose the add button.
+
+### 4. Choose the option to add a custom connector
+
+In the menu, choose the option to add a custom connector.
 
 ![The add menu](images/ja/claude-02-add-menu.png)
 
 In the image, 1 is the option to add a custom connector.
 
-### 3. Enter the name and the URL
+### 5. Enter the name
 
-In the name field, enter the name to show in the list, for example Exploratory.
+On the screen for adding a custom connector, enter the name to show in the list, for example Exploratory, in the name field.
+
+### 6. Enter the URL
 
 In the MCP server URL field, enter this URL.
 
@@ -43,31 +53,31 @@ In the MCP server URL field, enter this URL.
 https://exploratory.io/mcp
 ```
 
-When both are filled in, continue to the next screen.
+### 7. Continue
+
+Choose the button to continue.
 
 ![Enter the name and the MCP server URL](images/ja/claude-03-custom-connector.png)
 
 In the image, 1 is the name, 2 is the MCP server URL and 3 is the button to continue.
 
-### 4. Keep the authentication settings and add the connector
+### 8. Check the authentication settings and add the connector
 
-The second screen shows the authentication settings. Leave them as they are: the sign-in option that is detected, and Claude's public identity as the OAuth client. Both are marked as detected.
-
-Add the connector.
+The second screen shows the authentication settings. Leave them as they are: the sign-in option that is detected, and Claude's public identity as the OAuth client. Both are marked as detected. When you have checked them, add the connector.
 
 ![The authentication and OAuth client screen](images/ja/claude-03b-auth-options.png)
 
 In the image, 1 is the sign-in option that is detected and 2 is the button to add the connector.
 
-### 5. Approve the access
+### 9. Approve the access
 
-Your browser opens exploratory.io and shows "Claude is asking for access to your Exploratory account". If you are not signed in, sign in first. Choose Allow.
+If your browser opens exploratory.io and shows "Claude is asking for access to your Exploratory account", choose Allow. If you are not signed in, sign in first. If the connector connects without showing this screen, go on to the next step.
 
 ![Allow on exploratory.io](images/en/claude-04-sign-in.png)
 
 In the image, 1 is Allow.
 
-### 6. Check that it is connected
+### 10. Check that it is connected
 
 When Exploratory appears in the connectors list as a custom connector with a check mark that shows it is connected, the connection works.
 
@@ -75,7 +85,7 @@ When Exploratory appears in the connectors list as a custom connector with a che
 
 In the image, 1 is the Exploratory row that was added to the list.
 
-### 7. Try it
+### 11. Try it
 
 Open a new chat and send this.
 

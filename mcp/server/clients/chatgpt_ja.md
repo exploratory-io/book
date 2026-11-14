@@ -33,15 +33,19 @@ ChatGPT で設定（「Settings」）を開き、「Plugins」（プラグイン
 
 画像の 1 は「Add」です。
 
-### 3. カスタム MCP サーバーの追加を開く
+### 3. 「Add」を選ぶ
 
-右上の「Add」（追加）を選び、「Add custom MCP server」（カスタム MCP サーバーを追加）を選びます。
+右上の「Add」（追加）を選びます。
+
+### 4. 「Add custom MCP server」を選ぶ
+
+メニューの「Add custom MCP server」（カスタム MCP サーバーを追加）を選びます。
 
 ![「Add」のメニュー](images/en/chatgpt-03-add-menu.png)
 
 画像の 1 は「Add custom MCP server」です。
 
-### 4. 名前を入力する
+### 5. 名前を入力する
 
 「Name」（名前）に、一覧に表示する名前（例: Exploratory）を入力します。
 
@@ -49,7 +53,7 @@ ChatGPT で設定（「Settings」）を開き、「Plugins」（プラグイン
 
 画像の 1 は「Name」、2 は「Server URL」の欄、3 は「I understand and want to continue」のチェックです。
 
-### 5. URL を入力する
+### 6. URL を入力する
 
 「Connection」（接続）は、「Server URL」を選んだままにします。URL の欄に、次の URL を入力します。
 
@@ -57,11 +61,11 @@ ChatGPT で設定（「Settings」）を開き、「Plugins」（プラグイン
 https://exploratory.io/mcp
 ```
 
-### 6. 認証を確かめる
+### 7. 認証を確かめる
 
 「Authentication」（認証）が「OAuth」になっていることを確かめます。変えるところはありません。
 
-### 7. 注意を確かめて、チェックを入れる
+### 8. 注意を確かめて、チェックを入れる
 
 「Custom MCP servers introduce risk.」（カスタム MCP サーバーにはリスクがあります）と表示されます。接続先を信頼できることを確かめて、「I understand and want to continue」（理解したうえで続ける）にチェックを入れます。
 
@@ -69,11 +73,11 @@ https://exploratory.io/mcp
 
 画像の 1 は「Name」、2 は「Server URL」の欄、3 は「I understand and want to continue」のチェックです。
 
-### 8. 作成する
+### 9. 作成する
 
 「Create as a plugin」（プラグインとして作成）を選びます。
 
-### 9. Exploratory に接続する
+### 10. Exploratory に接続する
 
 「Connect Exploratory」（Exploratory に接続）の画面が開きます。「Connect Exploratory」のボタンを選びます。
 
@@ -81,7 +85,7 @@ https://exploratory.io/mcp
 
 画像の 1 は「Connect Exploratory」のボタンです。
 
-### 10. 許可する
+### 11. 許可する
 
 ブラウザで exploratory.io が開きます。サインインしていないときは、先にサインインします。ChatGPT がアクセスを求めている画面で、許可します（日本語の画面では「許可する」、英語の画面では「Allow」）。
 
@@ -89,7 +93,7 @@ https://exploratory.io/mcp
 
 画像の 1 は「許可する」です。
 
-### 11. 接続されたことを確かめる
+### 12. 接続されたことを確かめる
 
 ChatGPT に戻ると、「Customize」の左の「Installed」（インストール済み）に「Exploratory」が表示されます。「Exploratory」を開くと、バージョン（「Version」）などの情報と、「Try in chat」（チャットで試す）のボタンが表示されます。
 
@@ -97,7 +101,7 @@ ChatGPT に戻ると、「Customize」の左の「Installed」（インストー
 
 画像の 1 は、接続できたことを知らせる通知です。
 
-### 12. 試す
+### 13. 試す
 
 「Try in chat」を選んで、チャットを開きます。次のように送信します。
 

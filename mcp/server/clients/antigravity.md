@@ -40,15 +40,23 @@ Open mcp_config.json and add the following. A remote server takes its URL in "se
 
 To use the agy command line, write the same content in ~/.gemini/config/mcp_config.json.
 
-### 3. Sign in
+### 3. Select Authenticate
 
 Under MCP Servers, select Authenticate next to exploratory-server.
 
 <!-- image: images/en/antigravity-02-authenticate.png (Authenticate next to exploratory-server) -->
 
+### 4. Sign in and approve in the browser
+
 Your browser opens. Sign in to Exploratory and approve the access.
 
-Copy the authorization code shown in the browser, paste it into the Enter authorization code field, and select Submit.
+### 5. Copy the authorization code
+
+Copy the authorization code shown in the browser.
+
+### 6. Paste the code and submit it
+
+Paste the authorization code into the Enter authorization code field, and select Submit.
 
 <!-- image: images/en/antigravity-03-authorization-code.png (The Enter authorization code field) -->
 
@@ -65,7 +73,7 @@ To use agy, follow these steps.
 | 5 | Approve on Exploratory's consent page. |
 | 6 | Paste the authorization code from the browser into agy. |
 
-### 4. Try it
+### 7. Try it
 
 In a new chat, send this.
 

@@ -40,15 +40,23 @@ mcp_config.json を開き、次の内容を書き足します。リモートの�
 
 コマンドラインの agy で使うときは、~/.gemini/config/mcp_config.json に、同じ内容を書きます。
 
-### 3. サインインする
+### 3. 「Authenticate」を選ぶ
 
 「MCP Servers」で、exploratory-server の横にある「Authenticate」を選びます。
 
 <!-- image: images/ja/antigravity-02-authenticate.png (exploratory-server の横の「Authenticate」) -->
 
+### 4. ブラウザでサインインして許可する
+
 ブラウザが開きます。Exploratory にサインインして、アクセスを許可します。
 
-ブラウザに表示された認可コードをコピーし、「Enter authorization code」の欄に貼り付けて、「Submit」を選びます。
+### 5. 認可コードをコピーする
+
+ブラウザに表示された認可コードをコピーします。
+
+### 6. 認可コードを貼り付けて送る
+
+「Enter authorization code」の欄に認可コードを貼り付けて、「Submit」を選びます。
 
 <!-- image: images/ja/antigravity-03-authorization-code.png (「Enter authorization code」の欄) -->
 
@@ -65,7 +73,7 @@ agy で使うときは、次の順で行います。
 | 5 | Exploratory の同意画面で許可します。 |
 | 6 | ブラウザに表示された認可コードを、agy に貼り付けます。 |
 
-### 4. 試す
+### 7. 試す
 
 新しいチャットで、次のように送信します。
 

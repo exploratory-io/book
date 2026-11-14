@@ -90,9 +90,11 @@ When an install fails, the second line of that AI tool's row shows "Could not in
 
 Hold the mouse pointer over Details to see the output of the command that ran, in a pop-up. The output is the last 2000 characters. If it is long, you can scroll inside the pop-up vertically. The pop-up stays when you move the pointer into it. Click Details to keep it open. Copy at the top right copies the output.
 
-![The card after a failed install, with the pointer over Details](images/en/desktop-plugin-card-error.png)
+The image is an example of how the error details look. The command output in the pop-up is a sample.
 
-In the image, 1 is Details and 2 is Copy.
+![The card after a failed install, with the pointer over Details (example)](images/en/desktop-plugin-card-error.png)
+
+In the image, 1 is Details and 2 is Copy. The command output in the image is a sample and differs from real output.
 
 If the reason does not let you fix it, send the copied output to support. When it is fixed, choose Try again.
 
