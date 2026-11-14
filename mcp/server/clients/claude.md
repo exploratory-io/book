@@ -61,15 +61,19 @@ Choose the button to continue.
 
 In the image, 1 is the name, 2 is the MCP server URL and 3 is the button to continue.
 
-### 8. Check the authentication settings and add the connector
+### 8. Check the authentication settings
 
-The second screen shows the authentication settings. Leave them as they are: the sign-in option that is detected, and Claude's public identity as the OAuth client. Both are marked as detected. When you have checked them, add the connector.
+The second screen shows the authentication settings. Leave them as they are: the sign-in option that is detected, and Claude's public identity as the OAuth client. Both are marked as detected.
+
+### 9. Add the connector
+
+Choose the button to add the connector.
 
 ![The authentication and OAuth client screen](images/ja/claude-03b-auth-options.png)
 
 In the image, 1 is the sign-in option that is detected and 2 is the button to add the connector.
 
-### 9. Approve the access
+### 10. Approve the access
 
 If your browser opens exploratory.io and shows "Claude is asking for access to your Exploratory account", choose Allow. If you are not signed in, sign in first. If the connector connects without showing this screen, go on to the next step.
 
@@ -77,7 +81,7 @@ If your browser opens exploratory.io and shows "Claude is asking for access to y
 
 In the image, 1 is Allow.
 
-### 10. Check that it is connected
+### 11. Check that it is connected
 
 When Exploratory appears in the connectors list as a custom connector with a check mark that shows it is connected, the connection works.
 
@@ -85,7 +89,7 @@ When Exploratory appears in the connectors list as a custom connector with a che
 
 In the image, 1 is the Exploratory row that was added to the list.
 
-### 11. Try it
+### 12. Try it
 
 Open a new chat and send this.
 

@@ -46,17 +46,25 @@ mcp_config.json を開き、次の内容を書き足します。リモートの�
 
 <!-- image: images/ja/antigravity-02-authenticate.png (exploratory-server の横の「Authenticate」) -->
 
-### 4. ブラウザでサインインして許可する
+### 4. ブラウザでサインインする
 
-ブラウザが開きます。Exploratory にサインインして、アクセスを許可します。
+ブラウザが開きます。Exploratory にサインインします。
 
-### 5. 認可コードをコピーする
+### 5. アクセスを許可する
+
+Exploratory の同意画面で、アクセスを許可します。
+
+### 6. 認可コードをコピーする
 
 ブラウザに表示された認可コードをコピーします。
 
-### 6. 認可コードを貼り付けて送る
+### 7. 認可コードを貼り付ける
 
-「Enter authorization code」の欄に認可コードを貼り付けて、「Submit」を選びます。
+「Enter authorization code」の欄に、認可コードを貼り付けます。
+
+### 8. 「Submit」を選ぶ
+
+「Submit」を選びます。
 
 <!-- image: images/ja/antigravity-03-authorization-code.png (「Enter authorization code」の欄) -->
 
@@ -73,7 +81,7 @@ agy で使うときは、次の順で行います。
 | 5 | Exploratory の同意画面で許可します。 |
 | 6 | ブラウザに表示された認可コードを、agy に貼り付けます。 |
 
-### 7. 試す
+### 9. 試す
 
 新しいチャットで、次のように送信します。
 

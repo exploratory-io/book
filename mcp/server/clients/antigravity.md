@@ -46,17 +46,25 @@ Under MCP Servers, select Authenticate next to exploratory-server.
 
 <!-- image: images/en/antigravity-02-authenticate.png (Authenticate next to exploratory-server) -->
 
-### 4. Sign in and approve in the browser
+### 4. Sign in in the browser
 
-Your browser opens. Sign in to Exploratory and approve the access.
+Your browser opens. Sign in to Exploratory.
 
-### 5. Copy the authorization code
+### 5. Approve the access
+
+On Exploratory's consent page, approve the access.
+
+### 6. Copy the authorization code
 
 Copy the authorization code shown in the browser.
 
-### 6. Paste the code and submit it
+### 7. Paste the code
 
-Paste the authorization code into the Enter authorization code field, and select Submit.
+Paste the authorization code into the Enter authorization code field.
+
+### 8. Select Submit
+
+Select Submit.
 
 <!-- image: images/en/antigravity-03-authorization-code.png (The Enter authorization code field) -->
 
@@ -73,7 +81,7 @@ To use agy, follow these steps.
 | 5 | Approve on Exploratory's consent page. |
 | 6 | Paste the authorization code from the browser into agy. |
 
-### 7. Try it
+### 9. Try it
 
 In a new chat, send this.
 

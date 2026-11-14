@@ -4,7 +4,7 @@ Start Desktop, then check its state with expl, choose a project and get a dashbo
 
 <a id="steps"></a>
 
-## Seven steps
+## Eight steps
 
 ### 1. Start Desktop
 
@@ -24,15 +24,19 @@ It shows the Desktop version and the signed-in user.
 
 ### 4. Allow the connection the first time
 
-The first time you use it, Exploratory Desktop shows a screen that asks whether to allow expl to connect to Exploratory. Check that it is the expl you started yourself, and allow it. After you allow it, run expl status again.
+The first time you use it, Exploratory Desktop shows a screen that asks whether to allow expl to connect to Exploratory. Check that it is the expl you started yourself, and allow it.
 
-### 5. List the projects
+### 5. Check the state again
+
+After you allow it, run expl status again.
+
+### 6. List the projects
 
 ```sh
 expl project list
 ```
 
-### 6. Choose a project
+### 7. Choose a project
 
 ```sh
 expl project use "Sales Analysis"
@@ -40,7 +44,7 @@ expl project use "Sales Analysis"
 
 Replace Sales Analysis with the name of your project.
 
-### 7. Get a dashboard
+### 8. Get a dashboard
 
 ```sh
 expl dashboard get d123 --json
