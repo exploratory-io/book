@@ -10,10 +10,6 @@ Any MCP client that supports Streamable HTTP and OAuth can connect with the serv
 - An MCP client that supports Streamable HTTP (a way to send MCP over HTTP) and OAuth (sign in through the browser and approve access)
 - You do not need a client ID or an API key. The client registers itself.
 
-> **Verification status**
->
-> These steps follow the source documentation. They have not yet been checked in this client.
-
 <a id="steps"></a>
 
 ## Steps
@@ -46,7 +42,7 @@ Find the "Sales Orders" data on Exploratory.
 
 A request without a valid token gets HTTP 401. Sign in again with your client's own steps.
 
-- [Endpoint](../endpoint.md) - The authorization mechanism and the metadata URLs.
+- [Data and permissions](../data.md#auth) - The authorization mechanism and the metadata URLs.
 
 - [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the MCP Server as a whole.
 

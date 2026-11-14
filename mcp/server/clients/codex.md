@@ -10,10 +10,6 @@ Register the Exploratory server in Codex and sign in through your browser.
 - Codex
 - You do not need an API key or a client ID.
 
-> **Verification status**
->
-> These steps follow the source documentation. They have not yet been checked in this client.
-
 <a id="steps"></a>
 
 ## Steps

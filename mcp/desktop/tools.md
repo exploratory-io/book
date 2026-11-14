@@ -1,4 +1,4 @@
-# Tools and what you can do
+# Tools
 
 The Desktop MCP lets an AI client work with the project open in Exploratory Desktop. Find what it can do by purpose.
 
@@ -21,4 +21,4 @@ The tools below are the ones the Exploratory Desktop plugin guides the AI to use
 
 > **Some tools change and delete**
 >
-> Some of these tools delete things, publish and unpublish, or run R code. See Limits and what you control for how Desktop asks you first.
+> Some of these tools delete things, publish and unpublish, or run R code. See Permissions and settings for how Desktop asks you first.

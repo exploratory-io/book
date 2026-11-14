@@ -35,10 +35,28 @@ Server MCP の呼び出しは、サインインしたユーザーとして実行
 
 ツールが返すもの（行、列名、チャートの画像、エラー）は、会話の一部になります。使っている AI の提供元（例: Anthropic、OpenAI、Google、xAI）へ、その提供元の規約のもとで送られます。その提供元へ送ってはいけないデータには、この接続を使わないでください。
 
+<a id="auth"></a>
+
+## 呼び出しの認証の仕組み
+
+クライアントを自分で作る人や、設定を確認したい人向けです。
+
+| 項目 | 値 |
+| --- | --- |
+| 通信方式 | Streamable HTTP、ステートレス（POST のみ。GET と DELETE は 405） |
+| 登録 | クライアントは Dynamic Client Registration か Client ID Metadata Document で登録（どちらも、クライアントが自分を登録する方法） |
+| メタデータ | https://exploratory.io/.well-known/oauth-protected-resource/mcp、https://exploratory.io/.well-known/oauth-authorization-server |
+
+有効なトークンがない呼び出しには、HTTP 401 が返り、WWW-Authenticate ヘッダーが保護リソースのメタデータを指します。クライアントはこれを参照して、サインインを開始します。
+
+失敗したキーには、WWW-Authenticate: Bearer error="…", error_description="…" つきの 401 または 403 が返ります。上の 401 と違い、このヘッダーには resource_metadata がないので、固定のヘッダーを送るクライアントがサインインを始めることはありません。同じアドレスから（IPv4 は同じアドレス、IPv6 は同じ /64 の範囲で数えます）、15 分のうちに 30 回を超えて拒否されたキーが送られると、429 になります。
+
+初回のサインインでは、同意画面が出ます。接続したクライアントは、アカウント設定の「接続中のAIアプリ」で確認・解除できます。401 のあとでサインインし直す方法は、[トラブルシューティング](troubleshooting_ja.md#signin) にあります。
+
 <a id="disconnect"></a>
 
 ## 接続を解除する
 
 Server MCP の接続を解除するときは、exploratory.io のアカウント設定の「接続中のAIアプリ」から、クライアントを解除します。クライアントの設定から登録を削除しただけでは、アクセスの許可は残ります。 API キーを止めるには、同じアカウント設定の「API キー」で取り消します。
 
-- [クライアントを選ぶ](server_ja.md) - クライアントごとの、登録を解除する手順です。
+- [アプリから追加する](clients/apps_ja.md) - クライアントごとの、登録を解除する手順です。

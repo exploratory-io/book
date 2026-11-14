@@ -16,7 +16,7 @@
 | Grok Bot | 接続を解除してから追加し直す |
 | Antigravity | クライアントのページの、サインインの手順をもう一度行う |
 
-- [クライアントを選ぶ](server_ja.md) - クライアントごとの手順です。
+- [アプリから追加する](clients/apps_ja.md) - クライアントごとの手順です。
 
 <a id="apikey"></a>
 
@@ -31,7 +31,7 @@
 | 403 | This IP address is not allowed for API keys. | 管理者が、API キーを使える IP アドレスを限定しています。許可されたアドレスから接続します。 |
 | 429 | Too many failed API key attempts. Try again later. | 同じアドレスから（IPv4 は同じアドレス、IPv6 は同じ /64 の範囲で数えます）、15 分のうちに 30 回を超えて、拒否されたキーが送られました。キーを直して、しばらくしてからやり直します。 |
 
-- [API キーで接続する](server_ja.md#apikey) - ヘッダーの書き方と、キーで読めるものです。
+- [API キーで接続する](overview_ja.md#apikey) - ヘッダーの書き方と、キーで読めるものです。
 
 <a id="duplicate"></a>
 

@@ -1,4 +1,4 @@
-# Limits and what you control
+# Permissions and settings
 
 What Desktop asks you first, what you decide in Desktop, and what is sent and recorded.
 

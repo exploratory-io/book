@@ -16,7 +16,7 @@ A request without a valid token gets HTTP 401. Sign in again as follows.
 | Grok Bot | Remove the connection and add it again |
 | Antigravity | Go through the sign-in steps on the client page again |
 
-- [Choose your client](server.md) - Steps for each client.
+- [Add from an app](clients/apps.md) - Steps for each client.
 
 <a id="apikey"></a>
 
@@ -31,7 +31,7 @@ A key that fails gets the reason in the response, and the client does not fall b
 | 403 | This IP address is not allowed for API keys. | Your administrator allows API keys only from certain IP addresses. Connect from an allowed address. |
 | 429 | Too many failed API key attempts. Try again later. | More than 30 refused keys came from one address within 15 minutes (counted per IPv4 address, or per IPv6 /64 range). Fix the key and try again later. |
 
-- [Connect with an API key](server.md#apikey) - The header, and what a key can read.
+- [Connect with an API key](overview.md#apikey) - The header, and what a key can read.
 
 <a id="duplicate"></a>
 

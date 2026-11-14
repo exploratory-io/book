@@ -10,10 +10,6 @@ Register the Exploratory server in Claude Code and sign in through your browser.
 - Claude Code
 - You do not need an API key or a client ID.
 
-> **Verification status**
->
-> These steps follow the source documentation. They have not yet been checked in this client.
-
 <a id="steps"></a>
 
 ## Steps
@@ -108,7 +104,7 @@ claude mcp add --transport http exploratory-server https://exploratory.io/mcp --
 
 Replace exp_pat_... with your key. This leaves the key in your shell history. Use one way only: the OAuth sign-in above or this one.
 
-- [Connect with an API key](../server.md#apikey) - What a key can read and the errors it can return.
+- [Connect with an API key](../overview.md#apikey) - What a key can read and the errors it can return.
 
 <a id="trouble"></a>
 

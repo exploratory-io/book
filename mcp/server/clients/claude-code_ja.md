@@ -10,10 +10,6 @@ Claude Code に Exploratory のサーバーを登録し、ブラウザでサイ�
 - Claude Code
 - API キーとクライアント ID は必要ありません。
 
-> **確認状況**
->
-> この手順は、出典のドキュメントに基づいて記載しています。このクライアントの画面では、まだ確認していません。
-
 <a id="steps"></a>
 
 ## 手順
@@ -108,7 +104,7 @@ claude mcp add --transport http exploratory-server https://exploratory.io/mcp --
 
 exp_pat_... は、作成したキーに置き換えます。キーがシェルの履歴に残ります。上の OAuth でのサインインか、この方法か、どちらか一方だけを使います。
 
-- [API キーで接続する](../server_ja.md#apikey) - キーで読めるものと、返ってくるエラーです。
+- [API キーで接続する](../overview_ja.md#apikey) - キーで読めるものと、返ってくるエラーです。
 
 <a id="trouble"></a>
 
