@@ -13,7 +13,7 @@ MCP is a shared standard for AI apps to connect to outside services. You can use
 | Scripts, CI, a shell-based agent | expl |
 | An agent that works through MCP | MCP Server (the Exploratory plugin) |
 
-- [MCP Server](../../../mcp/server.md) - Read published content from an AI app.
+- [MCP Server](../../../mcp/server/server.md) - Read published content from an AI app.
 
 <a id="skill"></a>
 

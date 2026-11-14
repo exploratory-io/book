@@ -28,5 +28,5 @@ expl skill > ~/.claude/skills/exploratory-expl/SKILL.md
 
 ## Other ways
 
-- [MCP Server](../../../mcp/server.md) - Connect directly from an AI app.
+- [MCP Server](../../../mcp/server/server.md) - Connect directly from an AI app.
 - [Use with Server](../../server/guides/agents.md) - For reading content on exploratory.io.

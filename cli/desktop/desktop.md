@@ -8,7 +8,7 @@ expl operates the Exploratory Desktop running on this computer, from your termin
 
 > Every command on this page starts with expl and works on the Exploratory Desktop running on this computer. There is no sign-in step: it works when Desktop is running and you are signed in.
 >
-> To read content on exploratory.io, see [Server commands](../cli.md). To connect from an AI app, see [MCP Server](../../mcp/server.md).
+> To read content on exploratory.io, see [Server commands](../server/server.md). To connect from an AI app, see [MCP Server](../../mcp/server/server.md).
 
 <a id="start"></a>
 

@@ -14,7 +14,7 @@ Read notes and data published on Exploratory from an AI client. An AI client is 
 >
 > This page covers Exploratory Server only. Exploratory Desktop's MCP is not supported in the current version.
 
-To use it from a terminal or a script, see [Exploratory CLI](../cli/cli.md).
+To use it from a terminal or a script, see [Exploratory CLI](../../cli/server/server.md).
 
 <a id="clients"></a>
 
@@ -146,7 +146,7 @@ Typing the key here leaves it in your shell history. Where your client can take 
 
 An administrator on an on-premises or Hosted server can turn API keys off or limit them to certain IP addresses; the two 403 messages above mean that. The publisher settings in Data and permissions apply to a key in the same way.
 
-- [API keys](../cli/server/token.md) - Create, expire, revoke and keep a key safe.
+- [API keys](../../cli/server/token.md) - Create, expire, revoke and keep a key safe.
 
 <a id="examples"></a>
 

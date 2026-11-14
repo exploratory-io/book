@@ -145,7 +145,7 @@ For the operations that expl server calls, Exploratory Server records the follow
 - Server log: each tool call (email address, client, result, row count, duration), and when a token is created or deleted.
 - Errors of failed calls: the time, the tool call and the error are collected to improve the product.
 
-- [Data and permissions](../../mcp/data.md) - The MCP Server page describes the same records.
+- [Data and permissions](../../mcp/server/data.md) - The MCP Server page describes the same records.
 
 <a id="trouble"></a>
 

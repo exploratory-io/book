@@ -148,4 +148,4 @@ On on-premises and Hosted servers, administrators can do the following in the ad
 
 API keys are stored as hashes, with the creation time, expiry and last use. The other records are described on the MCP Server page.
 
-- [Data and permissions](../../mcp/data.md) - Describes what Exploratory records.
+- [Data and permissions](../../mcp/server/data.md) - Describes what Exploratory records.

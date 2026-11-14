@@ -28,5 +28,5 @@ expl skill > ~/.claude/skills/exploratory-expl/SKILL.md
 
 ## ほかの方法
 
-- [MCP Server](../../../mcp/server_ja.md) - AI アプリから直接つなぎます。
+- [MCP Server](../../../mcp/server/server_ja.md) - AI アプリから直接つなぎます。
 - [Server で使う](../../server/guides/agents_ja.md) - exploratory.io のコンテンツを読む場合です。

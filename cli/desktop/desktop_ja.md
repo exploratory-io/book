@@ -8,7 +8,7 @@ expl は、このコンピューターで起動している Exploratory Desktop 
 
 > このページのコマンドは、すべて expl で始まり、このコンピューターで起動している Exploratory Desktop を対象にします。サインインの操作はありません。Desktop を起動してサインインしていれば使えます。
 >
-> exploratory.io のコンテンツを読むなら [Server のコマンド](../cli_ja.md)。AI アプリからつなぐなら [MCP Server](../../mcp/server_ja.md)。
+> exploratory.io のコンテンツを読むなら [Server のコマンド](../server/server_ja.md)。AI アプリからつなぐなら [MCP Server](../../mcp/server/server_ja.md)。
 
 <a id="start"></a>
 

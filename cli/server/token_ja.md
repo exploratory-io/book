@@ -148,4 +148,4 @@ Revoked ci.
 
 API キーは、ハッシュで保存され、作成日時、有効期限、最終使用日時が記録されます。そのほかの記録は、MCP Server のページにまとめています。
 
-- [データと権限](../../mcp/data_ja.md) - Exploratory が記録するものを説明しています。
+- [データと権限](../../mcp/server/data_ja.md) - Exploratory が記録するものを説明しています。

@@ -13,7 +13,7 @@ MCP は、AI アプリが外部のサービスに接続するための共通の�
 | スクリプト、CI、シェルで実行されるエージェント | expl |
 | MCP を使用するエージェント | MCP Server（Exploratory のプラグイン） |
 
-- [MCP Server](../../../mcp/server_ja.md) - AI アプリから、パブリッシュされたコンテンツを読みます。
+- [MCP Server](../../../mcp/server/server_ja.md) - AI アプリから、パブリッシュされたコンテンツを読みます。
 
 <a id="skill"></a>
 

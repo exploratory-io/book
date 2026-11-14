@@ -14,7 +14,7 @@ AI クライアントから、Exploratory にパブリッシュされたノー�
 >
 > このページは Exploratory Server のみを対象にします。Exploratory Desktop の MCP は、現在のバージョンではサポート対象外です。
 
-ターミナルやスクリプトから使うなら [Exploratory CLI](../cli/cli_ja.md)。
+ターミナルやスクリプトから使うなら [Exploratory CLI](../../cli/server/server_ja.md)。
 
 <a id="clients"></a>
 
@@ -146,7 +146,7 @@ claude mcp add --transport http exploratory-server https://exploratory.io/mcp --
 
 オンプレミス版や Hosted 版では、管理者が、API キーをオフにしたり、使える IP アドレスを限定したりできます。上の 403 の 2 つのメッセージが、その場合です。「データと権限」の、公開した人の設定は、キーにも同じように効きます。
 
-- [API キー](../cli/server/token_ja.md) - キーの作成、有効期限、取り消し、安全な扱い方です。
+- [API キー](../../cli/server/token_ja.md) - キーの作成、有効期限、取り消し、安全な扱い方です。
 
 <a id="examples"></a>
 
