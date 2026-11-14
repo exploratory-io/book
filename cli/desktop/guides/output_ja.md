@@ -24,7 +24,7 @@ expl dashboard get d123 --json
 
 ## 言語
 
-expl 自身が書く文言は、Desktop の言語に従います。expl lang ja または expl lang en で切り替えます。プロジェクトを --project で指定して、言語を渡さずに実行すると、いまの言語を表示します（例: expl lang --project \<id\>）。プロジェクトを指定しないと、終了コード 2 で終わります。
+expl 自身が書く文言は、Desktop の言語に従います。expl lang ja または expl lang en で切り替えます。言語を渡さずに実行すると、いまの言語を表示します（例: expl lang --project \<id\>）。対象のプロジェクトを決められないとき（--project、EXPL_PROJECT、既定のプロジェクト、開いているプロジェクトのどれもないとき）は、終了コード 2 で終わります。
 
 ```sh
 expl lang ja

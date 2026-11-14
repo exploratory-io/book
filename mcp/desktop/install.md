@@ -6,39 +6,57 @@ In Exploratory Desktop, System Settings installs the Desktop MCP plugin into the
 
 ## Install
 
-### 1. Turn on MCP in Desktop
+### 1. Open System Settings
 
-Open System Settings \> MCP / CLI and turn on the MCP switch. To create or change charts, notes and other content, also check Allow create, edit and delete. Both are off by default.
+In Exploratory Desktop, open System Settings and choose MCP / CLI.
 
-### 2. Install from the "Install the Exploratory Desktop plugin" card
+### 2. Turn on MCP
 
-In the same tab, the "Install the Exploratory Desktop plugin" card says:
+Turn on the MCP switch. It is off by default.
+
+### 3. Allow writing (when you want the AI to create charts and notes)
+
+Only when you want the AI to create or change charts, notes and other content, check Allow create, edit and delete. Without it, the AI can only read.
+
+### 4. Install the plugin
+
+In the same tab, in the "Install the Exploratory Desktop plugin" card, choose Install on the AI tool you use. The card says:
 
 > Installs the Desktop MCP plugin into the AI tools on this computer. After installing, restart that AI tool.
 
-The card lists Claude Code, Codex, Antigravity and Cursor. Choose Install on the AI tool you use. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
+The card lists Claude Code, Codex, Antigravity and Cursor. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
 
 ![The "Install the Exploratory Desktop plugin" card in MCP / CLI in System Settings](images/en/desktop-plugin-card.png)
 
-In the image, 1 is MCP / CLI in the left menu, 2 is the "Install the Exploratory Desktop plugin" card, and 3 is Install on the Codex row.
+In the image, 1 is MCP / CLI in the left menu that you choose in step 1, 2 is the "Install the Exploratory Desktop plugin" card in step 4, and 3 is Install on the Codex row.
 
-### 3. Save the settings
+### 5. Save the settings
 
-Choose Save at the bottom of System Settings to save the settings. If you do not save, the switches you turned on in step 1 do not take effect.
+Choose Save at the bottom of System Settings. If you do not save, the settings from steps 2 and 3 do not take effect.
 
-### 4. Restart the AI tool
+### 6. Restart the AI tool
 
 When the install ends, restart that AI tool.
 
-### 5. Allow the connection and try it
+### 7. Allow the connection
 
-The first time an AI tool connects, Desktop asks whether to allow it. Allow only an app you started yourself. Then open a project in Exploratory Desktop and try this.
+The first time an AI tool connects, Desktop asks whether to allow it. Allow only an app you started yourself.
+
+### 8. Open a project
+
+In Exploratory Desktop, open the project you want to use.
+
+### 9. Ask the AI to try it
+
+In the AI tool, ask this.
 
 ```text
 In my open Exploratory project, build a monthly bar chart from the sales data.
 ```
 
-In Claude Code, open /mcp and check that exploratory-desktop is connected. In Codex, run codex mcp list and check that exploratory-desktop is listed. If a call says that MCP is turned off, go back to steps 1 and 3 and check that you turned the switch on and chose Save.
+### 10. Check the connection
+
+In Claude Code, open /mcp and check that exploratory-desktop is connected. In Codex, run codex mcp list and check that exploratory-desktop is listed. If a call says that MCP is turned off, go back to steps 2 and 5 and check that you turned the switch on and chose Save.
 
 <a id="differences"></a>
 

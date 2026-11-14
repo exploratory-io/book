@@ -70,13 +70,13 @@ The commands you will use most, grouped by purpose.
 | --- | --- |
 | expl execution get \<execution_id\> | Check the state of an operation you did not wait for |
 | expl call \<tool_name\> | Call an operation by its tool name |
-| expl lang --project \<id\> | Show the display language (a project is required; switch with expl lang en or expl lang ja) |
+| expl lang \[en\|ja\] | Show or switch the display language (it exits with code 2 when it cannot decide the target project; for example expl lang --project \<id\>) |
 | expl skill | Print a description for AI agents |
 
 <a id="more"></a>
 
 ## More commands
 
-Every command is listed by expl tools list. The arguments of one command are shown by expl \<command\> --help.
+Every command is listed by expl tools list. For the generated commands, such as those for data, charts, notes and dashboards, the arguments are shown by expl \<command\> --help. For project use, tools describe, call and lang, see how they are written in this table ([Global flags](global-flags.md)).
 
 - [Server commands](../server/commands.md) - Commands that read content on exploratory.io.

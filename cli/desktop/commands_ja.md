@@ -70,13 +70,13 @@
 | --- | --- |
 | expl execution get \<execution_id\> | 待たなかった操作の状態を確認する |
 | expl call \<tool_name\> | 道具の名前でそのまま呼ぶ |
-| expl lang --project \<id\> | 表示の言語を確認する（プロジェクトの指定が必要です。切り替えは expl lang en または expl lang ja） |
+| expl lang \[en\|ja\] | 表示の言語を確認する、切り替える（対象のプロジェクトを決められないときは、終了コード 2 になります。例: expl lang --project \<id\>） |
 | expl skill | AI エージェント向けの説明を出力する |
 
 <a id="more"></a>
 
 ## そのほかのコマンド
 
-すべてのコマンドは expl tools list、1 つのコマンドの引数は expl \<コマンド\> --help で確認できます。
+すべてのコマンドは expl tools list で確認できます。データ、チャート、ノート、ダッシュボードなど、生成されたコマンドの引数は、expl \<コマンド\> --help で確認できます。project use、tools describe、call、lang は、この表の書き方を見てください（[共通フラグ](global-flags_ja.md)）。
 
 - [Server のコマンド](../server/commands_ja.md) - exploratory.io のコンテンツを読むコマンドです。

@@ -25,6 +25,7 @@ Review the output of --verbose before you paste it anywhere.
 A few commands are exceptions.
 
 - expl status does not use the --input JSON. It ignores it if you pass one.
-- With --help, expl project use, expl tools describe, expl call and expl lang give a usage error (exit code 2) instead of help. See Common commands for how to use them.
+- With --help, expl project use, expl tools describe and expl call give a usage error (exit code 2) instead of help. See Common commands for how to use them.
+- With --help, expl lang does not show help. It goes on to show the language (and fails if it cannot decide the target project).
 
 For shell completion, expl completion bash, expl completion zsh and expl completion powershell print a completion script.

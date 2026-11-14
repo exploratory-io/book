@@ -4,7 +4,7 @@ Desktop を起動して、expl で状態の確認、プロジェクトの選択�
 
 <a id="steps"></a>
 
-## 4 つの手順
+## 5 つの手順
 
 ### 1. Desktop を起動してサインインする
 
@@ -20,11 +20,13 @@ Desktop のバージョンと、サインイン中のユーザーを表示しま
 
 初めて使うときは、Exploratory Desktop に「expl の Exploratory への接続を許可しますか？」と聞く画面が出ます。自分で起動した expl であることを確かめて、許可します。許可したあと、もう一度 expl status を実行します。
 
-### 3. プロジェクトを選ぶ
+### 3. プロジェクトを調べる
 
 ```sh
 expl project list
 ```
+
+### 4. プロジェクトを選ぶ
 
 ```sh
 expl project use "Sales Analysis"
@@ -32,7 +34,7 @@ expl project use "Sales Analysis"
 
 Sales Analysis は、自分のプロジェクトの名前に置き換えます。
 
-### 4. ダッシュボードを取得する
+### 5. ダッシュボードを取得する
 
 ```sh
 expl dashboard get d123 --json

@@ -42,7 +42,7 @@ expl project list
 
 ## Desktop commands (expl)
 
-The commands you will use most. Check the arguments with expl \<command\> --help.
+The commands you will use most. For the generated commands, check the arguments with expl \<command\> --help. For built-in commands such as project use, see how they are written in this table.
 
 | Command | Purpose |
 | --- | --- |
