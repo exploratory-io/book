@@ -1,13 +1,15 @@
-# Claude アプリにつなぐ
+# Claude アプリにつなぐ（デスクトップ・Web 共通）
 
-Claude のデスクトップアプリに、Exploratory のサーバーを「カスタムコネクタ」として追加します。コネクタとは、Claude が外部のサービスのデータや機能を使うための接続です。追加したあと、ブラウザで Exploratory にサインインして許可すると、Claude のチャットから、Exploratory に公開されたノートやデータを読めるようになります。
+Claude に、Exploratory のサーバーを「カスタムコネクタ」として追加します。コネクタとは、Claude が外部のサービスのデータや機能を使うための接続です。追加したあと、Exploratory にサインインして許可すると、Claude のチャットから、Exploratory に公開されたノートやデータを読めるようになります。
+
+コネクタの画面は、Claude のデスクトップアプリと、Web 版（claude.ai）で同じです。
 
 <a id="need"></a>
 
 ## 必要なもの
 
 - Exploratory のアカウント
-- Claude のデスクトップアプリ
+- Claude のデスクトップアプリ、または Web 版（claude.ai）
 
 API キーやクライアント ID は要りません。
 
@@ -15,23 +17,21 @@ API キーやクライアント ID は要りません。
 
 ## 手順
 
-### 1. 設定を開く
+### 1. コネクタの画面を開く
 
-Claude のアプリで、設定を開きます。
+Claude で設定を開き、「カスタマイズ」の中の「コネクタ」を選びます。「自分のもの」の一覧が開きます。
 
-### 2. コネクタの画面を開く
+<!-- image: images/ja/claude-01-settings.png (設定の「カスタマイズ」の「コネクタ」。追加する前の「自分のもの」の一覧) -->
 
-設定の左のメニューで、「カスタマイズ」の中にある「コネクタ」を選びます。
+### 2. カスタムコネクタの追加を開く
 
-<!-- image: images/ja/claude-01-settings.png (設定の左メニューで「コネクタ」を選ぶ) -->
+「＋ 追加」を選び、「カスタムコネクタを追加」を選びます。
 
-### 3. カスタムコネクタを追加する
+<!-- image: images/ja/claude-02-add-menu.png (「＋ 追加」のメニュー) -->
 
-コネクタの画面の右上にある「追加」を選び、「カスタムコネクタを追加」を選びます。
+### 3. 名前と URL を入力する
 
-<!-- image: images/ja/claude-03-add-menu.png (「追加」のメニュー) -->
-
-「カスタムコネクタを追加」の画面が開きます。「名前」に、一覧に表示する名前（例: Exploratory）を入力します。
+「名前」に、一覧に表示する名前（例: Exploratory）を入力します。
 
 「MCP サーバー URL」に、次の URL を入力します。
 
@@ -41,19 +41,29 @@ https://exploratory.io/mcp
 
 入力できたら、「続ける」を選びます。
 
-<!-- image: images/ja/claude-04-custom-connector.png (名前と MCP サーバー URL を入力する) -->
+<!-- image: images/ja/claude-03-custom-connector.png (「カスタムコネクタを追加」の画面で、名前と MCP サーバー URL を入力する) -->
 
-### 4. サインインして許可する
+### 4. 認証の設定をそのままにして追加する
 
-ブラウザが開きます。Exploratory にサインインして、アクセスを許可します。
+2 つ目の画面が開きます。「認証」は「今すぐサインイン」、「OAuth クライアント」は「Claude の公開アイデンティティを使用」のまま変えません。どちらにも「検出済み」と表示されています。
 
-<!-- image: images/ja/claude-05-sign-in.png (サインインと許可) -->
+「追加」を選びます。
 
-コネクタの一覧に、追加した「Exploratory」が表示され、右側に「接続済み」と出れば、接続できています。
+<!-- image: images/ja/claude-03b-auth-options.png (「認証」と「OAuth クライアント」の画面。「追加」を選ぶ) -->
 
-<!-- image: images/ja/claude-02-connectors.png (一覧に「接続済み」と表示される) -->
+### 5. 許可する
 
-### 5. 試す
+ブラウザで exploratory.io が開き、「Claude が Exploratory アカウントへのアクセスを求めています」と表示されます。サインインしていないときは、先にサインインします。「許可する」を選びます。
+
+<!-- image: images/ja/claude-04-sign-in.png (exploratory.io の「許可する」) -->
+
+### 6. 接続されたことを確かめる
+
+コネクタの「自分のもの」の一覧に、「Exploratory」が「カスタム」と表示され、接続済みを示すチェックが付いていれば、接続できています。
+
+<!-- image: images/ja/claude-05-connected.png (一覧に表示された「Exploratory」) -->
+
+### 7. 試す
 
 新しいチャットを開いて、次のように送信します。
 
@@ -63,15 +73,13 @@ Exploratory にある「Sales Orders」のデータを探して
 
 Sales Orders のデータが URL つきで表示されれば、使えています。
 
-<!-- image: images/ja/claude-06-try.png (チャットで確かめる) -->
-
 <a id="permissions"></a>
 
 ## ツールの実行を確認する
 
-追加した「Exploratory」を一覧で開くと、「ツールの権限」の画面が開きます。Exploratory のコネクタが使うツールは、「読み取り専用ツール」にまとまっています。ツールごとに、実行のタイミングを選べます。この設定は、手動モードで Claude がツールを使えるタイミングを決めるものです。自動モードでは、自動チェックがリスクがあると判断した操作はブロックされます。それ以外の操作は、「承認が必要」に設定したツールでも、Claude が確認なしで実行することがあります。
+一覧で「Exploratory」を開くと、サーバーの URL（https://exploratory.io/mcp）と、「ツールの権限」が表示されます。Exploratory のコネクタが使うツールは、「読み取り専用ツール」にまとまっています。ツールごとに、実行のタイミングを選べます。この設定は、手動モードで Claude がツールを使えるタイミングを決めるものです。自動モードでは、自動チェックがリスクがあると判断した操作はブロックされます。それ以外の操作は、「承認が必要」に設定したツールでも、Claude が確認なしで実行することがあります。
 
-<!-- image: images/ja/claude-07-tool-permissions.png (「ツールの権限」の画面) -->
+<!-- image: images/ja/claude-06-tools.png (「Exploratory」の詳細にある「ツールの権限」) -->
 
 <a id="trouble"></a>
 
