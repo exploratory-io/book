@@ -18,7 +18,9 @@ In the same tab, the "Install the Exploratory Desktop plugin" card says:
 
 The card lists Claude Code, Codex, Antigravity and Cursor. Choose Install on the AI tool you use. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
 
-<!-- image: images/en/desktop-plugin-card.png (The "Install the Exploratory Desktop plugin" card in MCP / CLI in System Settings) -->
+![The "Install the Exploratory Desktop plugin" card in MCP / CLI in System Settings](images/en/desktop-plugin-card.png)
+
+In the image, 1 is MCP / CLI in the left menu, 2 is the "Install the Exploratory Desktop plugin" card, and 3 is Install on the Codex row.
 
 ### 3. Save the settings
 

@@ -18,7 +18,9 @@ Exploratory Desktop のシステム設定から、Desktop MCP のプラグイン
 
 カードには、Claude Code、Codex、Antigravity、Cursor が並びます。使う AI ツールで「インストール」を選びます。このコンピューターにない AI ツールには、「このパソコンに見つかりません」と表示されます。コマンドは、アプリの起動時に自動で入ります。コマンドを登録する操作は要りません。
 
-<!-- image: images/ja/desktop-plugin-card.png (システム設定の MCP / CLI にある、「Exploratory Desktop プラグインのインストール」のカード) -->
+![システム設定の「MCP / CLI」にある、「Exploratory Desktop プラグインのインストール」のカード](images/ja/desktop-plugin-card.png)
+
+画像の 1 は左のメニューの「MCP / CLI」、2 は「Exploratory Desktop プラグインのインストール」のカード、3 は Codex の行の「インストール」です。
 
 ### 3. 設定を保存する
 
