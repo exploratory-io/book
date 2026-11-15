@@ -1,0 +1,115 @@
+# インストール
+
+expl のインストール方法は 2 つあります。どちらか一方を実施してください。
+
+<a id="choose"></a>
+
+## インストール方法を選ぶ
+
+> **Server のみ**
+>
+> このページは Exploratory Server のみを対象にします。
+
+| 状況 | インストール方法 |
+| --- | --- |
+| Exploratory Desktop を使っている | Desktop に同梱されています。追加の作業は必要ありません。 |
+| Desktop を使わない（Server だけ、CI、サーバー） | npm でインストールします。 |
+
+<a id="desktop"></a>
+
+## Desktop をお使いの場合
+
+expl は Exploratory Desktop に同梱されています。expl server も含まれるので、追加のインストールも Node.js も必要ありません。
+
+Exploratory Desktop を起動すると、expl が PATH（コマンドを探すフォルダの一覧）に含まれていない場合は、自動的に追加されます。macOS では、アプリが /Applications または ~/Applications にある場合に限ります。管理者の許可を求められることがあります。許可しない場合は、~/.local/bin に追加されます。必要に応じて、そのフォルダを PATH に追加してください。
+
+Exploratory 以外の expl がすでにある場合は、置き換えません。開発ビルドでは追加されません。
+
+新しいターミナルを開いて、次を実行してください。
+
+```sh
+expl --version
+```
+
+> 1 行目に expl \<バージョン\> と表示されていれば、インストールは完了しています。
+
+<a id="npm"></a>
+
+## npm でインストールする場合
+
+Desktop を使用しない場合の方法です。Exploratory Server だけを使用する場合や、CI やサーバーで expl を実行する場合に使用します。Node.js 20 以上が必要です。npm は、Node.js に同梱されている、パッケージ管理コマンドです。
+
+npx は、パッケージをインストールせずに実行するコマンドです。Node.js 20 以上が必要です。Node.js のインストール方法は、[Node.js の公式サイト](https://nodejs.org/)を参照してください。
+
+```sh
+npx -y @exploratory/cli --version
+```
+
+インストールせずに、expl を 1 回だけ実行します。ほかのコマンドを実行するときは、--version をそのコマンド（例: server login）に置き換えます。スクリプトでは、@exploratory/cli@\<バージョン\> のようにバージョンを固定します。
+
+```sh
+npm install -g @exploratory/cli@<version>
+```
+
+グローバルにインストールします。\<version\> は、使用するバージョン番号に置き換えます。
+
+スクリプトでは、必ずバージョンを固定してください。パッケージ名は @exploratory/cli で、インストールされるコマンドは expl です。名前が expl だけのパッケージはインストールしないでください。その名前は、別の開発者のものです。
+
+<a id="check"></a>
+
+## 確認する
+
+```sh
+expl --version
+```
+
+> 1 行目に expl \<バージョン\> と表示されていれば、インストールは完了しています。
+
+expl: command not found と表示された場合は、新しいターミナルを開いて、もう一度実行してください。
+
+<a id="two"></a>
+
+## Desktop と npm の両方にインストールしている場合
+
+npm でインストールした expl と Desktop の expl の両方がある場合は、どちらが実行されるかを確認します。
+
+### macOS と Linux
+
+**macOS と Linux**
+
+```sh
+which -a expl
+```
+
+インストールされているものを、実行される順にすべて表示します。
+
+### Windows
+
+**Windows**
+
+```sh
+where expl
+```
+
+expl --version の 1 行目には expl \<バージョン\> と表示され、インストール方法までは表示されません。どちらの expl かは、上で表示されたパスで判別してください。先頭のパスが想定と異なる場合は、使用する方のフォルダを PATH の先頭に置くか、もう一方をアンインストールしてください。
+
+Exploratory Desktop をお使いの場合は、npm でグローバルにインストールする必要はありません。CI でバージョンを固定して npx で使用することは、問題ありません。
+
+> **npm install -g が EEXIST で停止する場合**
+>
+> nodejs.org のインストーラーで Node.js をインストールした Mac では、npm がコマンドを Desktop が通常使用する /usr/local/bin に配置しようとするため、npm install -g が EEXIST で停止します。この場合は、--force を付けて再実行しないでください。Exploratory Desktop に同梱されている expl が置き換わります。逆に、npm の expl がすでに /usr/local/bin にある場合、Desktop はそれを残し、自分の expl は配置しません。
+
+<a id="remove"></a>
+
+## アンインストール
+
+npm でインストールした expl は、次のコマンドでアンインストールします。
+
+```sh
+npm uninstall -g @exploratory/cli
+```
+
+Exploratory Desktop に同梱されている expl は、PATH から expl のリンクまたは Exploratory のフォルダを削除します。アプリが確認を求めたときに断らない限り、次回の起動時に再び追加されます。
+
+- [クイックスタート](quickstart_ja.md) - サインインして、最初の結果を取得します。
+- [Desktop を使う](../desktop/desktop_ja.md) - 手元の Desktop を操作します。

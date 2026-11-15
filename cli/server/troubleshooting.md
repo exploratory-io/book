@@ -1,0 +1,63 @@
+# Troubleshooting
+
+Find a fix by symptom.
+
+<a id="install"></a>
+
+## The command is not found
+
+| What you see | What to do |
+| --- | --- |
+| expl: command not found | Open a new terminal and run it again. The expl that comes with Desktop is added to your PATH when the app starts. |
+| npm install -g stops with EEXIST | Do not run it again with --force: that replaces the expl that comes with Desktop. |
+| You do not know which expl runs | Run which -a expl (where expl on Windows) to see every copy. |
+
+- [Installation](install.md) - How to check when two copies are installed.
+
+<a id="signin"></a>
+
+## Sign-in
+
+| What you see | What to do |
+| --- | --- |
+| Run "expl server login". | Sign-in is missing, or the saved login was rejected. Run expl server login. |
+| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked. Create a new API key, then set EXPL_SERVER_TOKEN or run expl server login --with-token. Exit code 4. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
+| API keys are disabled by your administrator. / This IP address is not allowed for API keys. | An administrator turned API keys off or limits them to certain IP addresses. Ask your administrator, or sign in with expl server login. Exit code 4. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
+| --token was removed. … | Set EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
+| Too many failed API key attempts. Try again later. | Many refused keys came from this address in a short time. Fix the key and try again later. |
+| The redirect URL has no authorization code. | With --no-browser, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
+| Exit code 4 (Desktop) | Sign in to Exploratory Desktop. |
+
+- [API keys](token.md) - Create, pass and revoke an API key.
+
+<a id="network"></a>
+
+## Connection
+
+| What you see | What to do |
+| --- | --- |
+| Exit code 3 (Server) | The server cannot be reached. Check the network and run it again. |
+| Exit code 3 (Desktop) | Start Exploratory Desktop and run it again. |
+| Odd results | Add --verbose to see what is sent and received. Review the output before you paste it anywhere. |
+
+<a id="limits"></a>
+
+## Limits
+
+| What you see | What to do |
+| --- | --- |
+| Too big: expected number to be \<=50 at limit | Set --limit of search to 50 or less. |
+| has_more is true and not everything came back | For search and dataframe preview, get the next page with --offset. For dataset query, narrow the query or aggregate. |
+| SERVER_BUSY | Another export is running, or you reached the hourly export limit. Try again in a few seconds; for the hourly limit, wait up to an hour. |
+
+<a id="data"></a>
+
+## Data that cannot be queried
+
+| What you see | What to do |
+| --- | --- |
+| DATASET_UNAVAILABLE | The publisher needs to republish it from the current Exploratory Desktop. |
+| DATA_EGRESS_LIMIT | The publisher does not allow downloading this data as a file. Use fetch or dataframe get-schema for what the publisher shares. |
+| Unknown property "by" in a sort entry. (INVALID_SORT) | In sort, name the output column with field. |
+
+- [Query data](guides/query-data.md) - How to write the JSON arguments.

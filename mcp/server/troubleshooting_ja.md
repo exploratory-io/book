@@ -1,0 +1,73 @@
+# トラブルシューティング
+
+症状から、対処を探します。
+
+<a id="signin"></a>
+
+## サインインを求められる
+
+有効なトークンがない要求には、HTTP 401 が返ります。次の方法で、サインインし直します。
+
+| クライアント | サインインし直す方法 |
+| --- | --- |
+| Claude Code | /mcp を開く |
+| Codex | codex mcp login exploratory-server |
+| Cursor | agent mcp login exploratory-server |
+| Claude アプリ | クライアントのページのサインインの手順を、もう一度行う |
+| ChatGPT アプリ | クライアントのページのサインインの手順を、もう一度行う |
+| ほかのクライアント | そのクライアントの資料にあるとおりにサインインし直すか、API キーで接続する |
+| Grok Bot | 接続を解除してから追加し直す |
+| Antigravity | クライアントのページの、サインインの手順をもう一度行う |
+
+- [アプリから追加する](clients/apps_ja.md) - クライアントごとの手順です。
+
+<a id="apikey"></a>
+
+## API キーが拒否される
+
+失敗したキーには、理由が応答に入ります。クライアントが、ブラウザでのサインインに切り替わることはありません。
+
+| HTTP ステータス | メッセージ | 対処 |
+| --- | --- | --- |
+| 401 | The API key is invalid or expired. Create a new one in Account Settings \> API Keys. | 新しいキーを作って、ヘッダーのキーを入れ替えます。キーが取り消されたとき、持ち主が API キーを使えなくなったときも、同じメッセージです。 |
+| 403 | API keys are disabled by your administrator. | 管理者が API キーをオフにしています。管理者に確認します。 |
+| 403 | This IP address is not allowed for API keys. | 管理者が、API キーを使える IP アドレスを限定しています。許可されたアドレスから接続します。 |
+| 429 | Too many failed API key attempts. Try again later. | 同じアドレスから（IPv4 は同じアドレス、IPv6 は同じ /64 の範囲で数えます）、15 分のうちに 30 回を超えて、拒否されたキーが送られました。キーを直して、しばらくしてからやり直します。 |
+
+- [API キーで接続する](overview_ja.md#apikey) - ヘッダーの書き方と、キーで読めるものです。
+
+<a id="duplicate"></a>
+
+## 同じツールが 2 組出る
+
+インストール方法は 1 つだけにしてください。公式のプラグイン、URL の直接追加、claude.ai の Exploratory のコネクタのいずれかを使用します。claude.ai のコネクタは、同じ Claude のアカウントでサインインした Claude Code にも表示されます。
+
+あとから公式の一覧でインストールする場合は、先に直接追加した分を削除します。Claude Code では、次のコマンドを実行します。削除しないと、同じツールが 2 組表示されます。
+
+```sh
+claude mcp remove exploratory-server
+```
+
+<a id="zero"></a>
+
+## 自分のコンテンツが出ない
+
+| 表示される内容 | 対処 |
+| --- | --- |
+| 一覧に何も出ない | サインインしたアカウントが、公開したときのアカウントと同じか確認します。Server MCP は、サインインしたユーザーとして実行されるため、そのユーザーが閲覧できるものだけが表示されます。 |
+| 自分のものだけを出したい | 「自分の」と指定すると、AI は scope: "mine" で search を呼び出します。 |
+| NOT_FOUND | コンテンツが存在しないか、閲覧する権限がありません。 |
+| CHANNEL_DISABLED | 公開者が、このコンテンツの MCP アクセスを止めています。 |
+| DATA_EGRESS_LIMIT | 公開者が、このデータの行を共有していません。チャート・アナリティクス・要約を使います。 |
+
+<a id="rate"></a>
+
+## 回数の上限
+
+| 表示される内容 | 対処 |
+| --- | --- |
+| 429 RATE_LIMITED | 1 人の利用者が 1 分間に 120 回を超えて要求しました。1 分待ちます。 |
+| SERVER_BUSY | 数秒おいて再度呼び出します。2 回続いたら、時間をおきます。書き出しの上限の場合は、最大 1 時間待ちます。 |
+| RATE_LIMIT_EXCEEDED / QUERY_ENGINE_UNAVAILABLE | 問い合わせが混み合っています。数秒おいて再度呼び出します。 |
+
+- [制限とエラー](limits_ja.md) - エラーの一覧です。
