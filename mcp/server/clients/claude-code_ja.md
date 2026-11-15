@@ -42,6 +42,37 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 
+<a id="chat"></a>
+
+## チャットで頼んで追加する
+
+コマンドを自分で実行する代わりに、Claude Code のチャットで頼んで、サーバーを追加してもらうこともできます。
+
+### チャットで頼む
+
+1. Claude Code で、次の文を送ります。
+
+   ```text
+   https://exploratory.io/mcp を Exploratory という名前で MCP サーバーとして追加して
+   ```
+
+![Claude Code のチャットで、Exploratory サーバーの追加を頼む](images/ja/claude-code-chat-01-add.png)
+
+Claude Code は `claude mcp add` を実行し、サーバーを追加したこと、まだ認証が必要で接続できていないことを答えました。AI がどのコマンドを選ぶか、どの範囲（このフォルダだけか、全プロジェクトか）に保存するかは、実行のたびに変わることがあります。返答を読んで確かめてください。
+
+### サインインして確かめる
+
+1. 新しいセッションを始めます。
+2. `/mcp` を開き、Exploratory が一覧にあることを確かめます。
+3. Exploratory を選び、ブラウザでサインインします。
+4. 新しいセッションで、次のような依頼を送ります。
+
+   ```text
+   Exploratory にある「Sales Orders」のデータを探して
+   ```
+
+Exploratory への接続が複数あるとき（たとえば exploratory-server や、Claude アプリで追加したコネクタ）は、「Exploratory の MCP サーバーを使って」のように、検索に使う接続名を指定します。
+
 <a id="apikey"></a>
 
 ## API キーで接続する

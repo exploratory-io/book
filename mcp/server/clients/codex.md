@@ -61,6 +61,41 @@ If the Sales Orders data appears with its URL, the connection works.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
+<a id="chat"></a>
+
+## Add by asking in chat
+
+Instead of running the command yourself, you can ask Codex in the chat to add the server.
+
+### Ask in the chat
+
+1. In Codex, send this.
+
+   ```text
+   Add https://exploratory.io/mcp as an MCP server named Exploratory
+   ```
+
+   The image below used this request with "Please respond in English." added, so that the reply is in English.
+
+![Asking Codex in the chat to add the Exploratory server](images/en/codex-chat-01-add.png)
+
+Codex added the server with `codex mcp add` and answered that the browser sign-in was still pending. If the sign-in has not started, run `codex mcp login Exploratory`. Which command the AI chooses can differ from run to run, so read its answer.
+
+### Sign in and check
+
+1. Approve the access in the browser.
+2. Start a new session and open `/mcp`. Check that Exploratory is connected.
+
+![The MCP list in Codex shows Exploratory as connected](images/en/codex-chat-02-mcp-list.png)
+
+3. Ask for the data, and name the connection to search with.
+
+   ```text
+   Find the "Sales Orders" data on Exploratory. Use only the MCP server named Exploratory.
+   ```
+
+If you already have another Exploratory connection (for example exploratory-server or Desktop), Codex may pick that one. Naming the connection avoids it.
+
 <a id="trouble"></a>
 
 ## Troubleshooting

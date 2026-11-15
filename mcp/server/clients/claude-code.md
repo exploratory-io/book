@@ -42,6 +42,41 @@ If the Sales Orders data appears with its URL, the connection works.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
+<a id="chat"></a>
+
+## Add by asking in chat
+
+Instead of running the command yourself, you can ask Claude Code in the chat to add the server.
+
+### Ask in the chat
+
+1. In Claude Code, send this.
+
+   ```text
+   Add https://exploratory.io/mcp as an MCP server named Exploratory
+   ```
+
+   The image below used this request with "Please respond in English." added, so that the reply is in English.
+
+![Asking Claude Code in the chat to add the Exploratory server](images/en/claude-code-chat-01-add.png)
+
+Claude Code ran `claude mcp add` and answered that the server was added but not yet connected. Which command and which scope (this folder only, or all projects) the AI chooses can differ from run to run, so read its answer.
+
+### Sign in and check
+
+1. Start a new session.
+2. Open `/mcp` and check that Exploratory is listed.
+3. Choose Exploratory and sign in through the browser.
+4. In the new session, send a request such as the one below.
+
+   ```text
+   Find the "Sales Orders" data on Exploratory.
+   ```
+
+![Claude Code finds the Sales Orders data through the Exploratory server](images/en/claude-code-chat-02-search.png)
+
+If you have more than one Exploratory connection (for example exploratory-server, or a connector added in the Claude app), name the connection to search with, such as "Use the Exploratory MCP server."
+
 <a id="apikey"></a>
 
 ## Connect with an API key

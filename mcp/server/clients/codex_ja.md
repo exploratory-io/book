@@ -61,6 +61,37 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 
+<a id="chat"></a>
+
+## チャットで頼んで追加する
+
+コマンドを自分で実行する代わりに、Codex のチャットで頼んで、サーバーを追加してもらうこともできます。
+
+### チャットで頼む
+
+1. Codex で、次の文を送ります。
+
+   ```text
+   https://exploratory.io/mcp を Exploratory という名前で MCP サーバーとして追加して
+   ```
+
+Codex は、サーバーを追加し、ブラウザでの認証が必要であることを答えます。認証が始まっていないときは、`codex mcp login Exploratory` を実行します。AI がどのコマンドを選ぶかは、実行のたびに変わることがあります。返答を読んで確かめてください。
+
+### サインインして確かめる
+
+1. ブラウザでアクセスを許可します。
+2. 新しいセッションを始めて、`/mcp` を開きます。Exploratory が connected になっていることを確かめます。
+
+![Codex の MCP の一覧で、Exploratory が接続されている](images/ja/codex-chat-02-mcp-list.png)
+
+3. データを探すときは、検索に使う接続名を指定します。
+
+   ```text
+   Exploratory にある「Sales Orders」のデータを探して。名前が Exploratory の MCP サーバーだけを使ってください。
+   ```
+
+すでに Exploratory への別の接続（たとえば exploratory-server や Desktop）があると、Codex がそちらを選ぶことがあります。接続名を指定すると、それを避けられます。
+
 <a id="trouble"></a>
 
 ## トラブルシューティング
