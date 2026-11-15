@@ -58,7 +58,7 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 
 ![Claude Code のチャットで、Exploratory サーバーの追加を頼む](images/ja/claude-code-chat-01-add.png)
 
-Claude Code は `claude mcp add` を実行し、サーバーを追加したこと、まだ認証が必要で接続できていないことを答えました。AI がどのコマンドを選ぶか、どの範囲（このフォルダだけか、全プロジェクトか）に保存するかは、実行のたびに変わることがあります。返答を読んで確かめてください。
+Claude Code は `claude mcp add` を実行し、サーバーを追加したこと、認証が必要な場合は `/mcp` を実行して認証することを答えました。AI がどのコマンドを選ぶか、どの範囲（このフォルダだけか、全プロジェクトか）に保存するかは、実行のたびに変わることがあります。返答を読んで確かめてください。
 
 ### サインインして確かめる
 
@@ -72,7 +72,7 @@ Claude Code は `claude mcp add` を実行し、サーバーを追加したこ�
    Exploratory にある「Sales Orders」のデータを探して
    ```
 
-![Claude Code が、Exploratory サーバー経由で Sales Orders のデータを見つけた](images/ja/claude-code-chat-02-search.png)
+Claude Code が Exploratory サーバー経由で検索し、データが見つかります。
 
 Exploratory への接続が複数あるとき（たとえば exploratory-server や、Claude アプリで追加したコネクタ）は、「Exploratory の MCP サーバーを使って」のように、検索に使う接続名を指定します。
 

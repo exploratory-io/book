@@ -79,7 +79,7 @@ Instead of running the command yourself, you can ask Codex in the chat to add th
 
 ![Asking Codex in the chat to add the Exploratory server](images/en/codex-chat-01-add.png)
 
-Codex added the server with `codex mcp add` and answered that the browser sign-in was still pending. If the sign-in has not started, run `codex mcp login Exploratory`. Which command the AI chooses can differ from run to run, so read its answer.
+Codex added the server with `codex mcp add` and answered that the server was added and enabled. If you have not signed in yet, run `codex mcp login Exploratory`. Which command the AI chooses can differ from run to run, so read its answer.
 
 ### Sign in and check
 
@@ -92,7 +92,7 @@ Codex added the server with `codex mcp add` and answered that the browser sign-i
    Find the "Sales Orders" data on Exploratory. Use only the MCP server named Exploratory.
    ```
 
-![Codex finds the Sales Orders data through the Exploratory server](images/en/codex-chat-03-search.png)
+Codex searches through the Exploratory server and finds the data.
 
 If you already have another Exploratory connection (for example exploratory-server or Desktop), Codex may pick that one. Naming the connection avoids it.
 

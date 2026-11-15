@@ -60,7 +60,7 @@ Instead of running the command yourself, you can ask Claude Code in the chat to 
 
 ![Asking Claude Code in the chat to add the Exploratory server](images/en/claude-code-chat-01-add.png)
 
-Claude Code ran `claude mcp add` and answered that the server was added but not yet connected. Which command and which scope (this folder only, or all projects) the AI chooses can differ from run to run, so read its answer.
+Claude Code ran `claude mcp add` and answered that the server was added to the local config, and that you run `/mcp` to sign in if authentication is required. Which command and which scope (this folder only, or all projects) the AI chooses can differ from run to run, so read its answer.
 
 ### Sign in and check
 
@@ -74,7 +74,7 @@ Claude Code ran `claude mcp add` and answered that the server was added but not 
    Find the "Sales Orders" data on Exploratory.
    ```
 
-![Claude Code finds the Sales Orders data through the Exploratory server](images/en/claude-code-chat-02-search.png)
+Claude Code searches through the Exploratory server and finds the data.
 
 If you have more than one Exploratory connection (for example exploratory-server, or a connector added in the Claude app), name the connection to search with, such as "Use the Exploratory MCP server."
 
