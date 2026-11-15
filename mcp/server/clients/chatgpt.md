@@ -1,21 +1,111 @@
-# Connect the ChatGPT app (desktop and web)
+# Connect the ChatGPT app (desktop)
 
-Add the Exploratory server to ChatGPT as a custom MCP server. An MCP server is the address an AI app connects to in order to use the data and features of an outside service. After you add it, connect to Exploratory and approve the access, and ChatGPT can read notes and data published on Exploratory.
+Add the Exploratory server to the ChatGPT desktop app as an MCP server. An MCP server is the address an AI app connects to in order to use the data and features of an outside service. After you add it, connect to Exploratory and approve the access, and ChatGPT can read notes and data published on Exploratory.
 
-You can make the same settings in the ChatGPT desktop app and on the web.
+On the web (chatgpt.com), the screens for adding a server differ. The web steps are further down this page.
 
 <a id="need"></a>
 
 ## Requirements
 
 - An Exploratory account
-- The ChatGPT desktop app, or the web version
+- The ChatGPT desktop app
 
 You do not need an API key or a client ID.
 
 <a id="steps"></a>
 
-## Steps
+## Steps (desktop app)
+
+### 1. Open settings
+
+In the ChatGPT desktop app, open settings.
+
+### 2. Choose Plugins
+
+In the menu on the left of settings, choose Plugins under the integrations group.
+
+### 3. Choose the MCP tab
+
+Among the tabs for plugins, apps, MCP and skills, choose the MCP tab.
+
+<!-- image: images/en/chatgpt-desktop-01-plugins.png (Plugins in settings and the MCP tab) -->
+
+### 4. Choose Add
+
+Choose Add at the top right.
+
+### 5. Choose the option to add an MCP server
+
+In the menu, choose the option to add an MCP server. The screen for connecting to a custom MCP opens.
+
+<!-- image: images/en/chatgpt-desktop-03-add-menu.png (The Add menu) -->
+
+### 6. Enter the name
+
+In the name field, enter the name to show in the list, for example Exploratory.
+
+### 7. Choose the type
+
+For the type, choose streamable HTTP. Do not choose STDIO.
+
+### 8. Enter the URL
+
+In the URL field, enter this URL.
+
+```text
+https://exploratory.io/mcp
+```
+
+### 9. Leave the other fields empty
+
+Leave the bearer token environment variable and the headers empty. Exploratory connects through a sign-in in your browser, so it needs no token and no header.
+
+<!-- image: images/en/chatgpt-desktop-05-custom-mcp-filled.png (The custom MCP screen with the name, the type and the URL filled in) -->
+
+### 10. Save
+
+Choose the save button at the bottom right. The server you added appears in the list of servers on the MCP tab.
+
+<!-- image: images/en/chatgpt-desktop-08-connected.png (The list of servers on the MCP tab) -->
+
+The official documentation describes the rest as follows. The labels are quoted as the documentation writes them.
+
+### 11. Restart
+
+After you save, restart the ChatGPT desktop app, following the documentation's Restart instruction.
+
+### 12. Authenticate
+
+For a server that needs OAuth, the server list shows that. When it does, choose Authenticate, as the documentation says.
+
+### 13. Approve the access
+
+Your browser opens exploratory.io. If you are not signed in, sign in first. On the screen where ChatGPT asks for access, choose Allow. (The screen in the image below is shown in Japanese.)
+
+![The approval screen on exploratory.io](images/en/chatgpt-07-sign-in.png)
+
+In the image, 1 is the approval button (Allow).
+
+### 14. Check the connection
+
+Type `/mcp` in the chat box to see the connected servers.
+
+### 15. Try it
+
+In a new chat, send this.
+
+```text
+Find the "Sales Orders" data on Exploratory.
+```
+
+If the Sales Orders data appears with its URL, it works.
+
+<a id="web"></a>
+
+## Add it on the web (chatgpt.com)
+
+On the web, the screens for adding a server differ from the desktop app. This section describes the web steps.
 
 ### 1. Open settings
 
@@ -125,4 +215,4 @@ For other symptoms, see [Troubleshooting](../troubleshooting.md).
 
 ## Disconnect
 
-In the ChatGPT plugin list, delete the Exploratory plugin you added. Then open Account Settings on exploratory.io and remove the app you connected under Connected AI Apps. Deleting it in ChatGPT alone does not revoke the access you approved on Exploratory.
+In the desktop app, turn off the switch of the server you added in the list of servers on the MCP tab, and it is no longer used. On the web, delete the Exploratory plugin you added in the plugin list. Then open Account Settings on exploratory.io and remove the app you connected under Connected AI Apps. Deleting it in ChatGPT alone does not revoke the access you approved on Exploratory.

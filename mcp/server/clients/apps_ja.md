@@ -11,7 +11,7 @@ https://exploratory.io/mcp
 ## アプリを選ぶ
 
 - [Claude アプリ（デスクトップ・Web 共通）](claude_ja.md) - Claude に、カスタムコネクタとして追加します
-- [ChatGPT アプリ（デスクトップ・Web 共通）](chatgpt_ja.md) - ChatGPT に、カスタム MCP サーバーとして追加します
+- [ChatGPT アプリ（デスクトップ）](chatgpt_ja.md) - ChatGPT のデスクトップアプリに、MCP サーバーとして追加します（Web 版の手順も、同じページにあります）
 - [Antigravity](antigravity_ja.md) - Antigravity にサーバーを登録します
 - [Grok Bot](grok-bot_ja.md) - Grok Bot のチャットでサーバーを追加します
 - [Claude Code](claude-code_ja.md) - Claude Code にサーバーを登録します
