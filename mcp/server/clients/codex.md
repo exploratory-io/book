@@ -86,8 +86,6 @@ Codex added the server with `codex mcp add` and answered that the browser sign-i
 1. Approve the access in the browser.
 2. Start a new session and open `/mcp`. Check that Exploratory is connected.
 
-![The MCP list in Codex shows Exploratory as connected](images/en/codex-chat-02-mcp-list.png)
-
 3. Ask for the data, and name the connection to search with.
 
    ```text

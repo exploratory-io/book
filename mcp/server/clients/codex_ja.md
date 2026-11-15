@@ -82,8 +82,6 @@ Codex は、サーバーを追加し、ブラウザでの認証が必要であ�
 1. ブラウザでアクセスを許可します。
 2. 新しいセッションを始めて、`/mcp` を開きます。Exploratory が connected になっていることを確かめます。
 
-![Codex の MCP の一覧で、Exploratory が接続されている](images/ja/codex-chat-02-mcp-list.png)
-
 3. データを探すときは、検索に使う接続名を指定します。
 
    ```text
