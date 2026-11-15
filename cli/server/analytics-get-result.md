@@ -16,7 +16,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 
 Replace \<id\> with the id of the note and \<analytics\> with an analytics name from the result of fetch.
 
-The result below was run on the analytics Analytics 1 - Correlations (id Analytics-1-Correlations-aB1cD2eF), which is published on its own, so --analytics is not passed. Long output is trimmed.
+The result below was run on the analytics Analytics 1 - Correlations (id Analytics-1-Correlations-aB1cD2eF), which is published on its own, so --analytics is not passed. Long output is trimmed. The explanation texts are left empty in this example.
 
 **Result**
 

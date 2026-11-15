@@ -262,7 +262,7 @@ To see the trend or layout of a chart, get its image.
 expl server chart get-image <id> --chart <chart> --json
 ```
 
-The result below is for the chart iJ6kL7mN (Monthly Sales Trend). The image_path line (where the image is saved) is trimmed.
+Example of the output shape; values are illustrative. The example is for the chart iJ6kL7mN (Monthly Sales Trend). The image_path line (where the image is saved) is trimmed.
 
 **Result**
 
