@@ -77,6 +77,10 @@ Claude のデスクトップアプリで、設定の「コネクタ」の画面�
 
 Sales Orders のデータが URL つきで表示されれば、使えています。
 
+### Claude Code でも使う
+
+同じ claude.ai アカウントで [Claude Code](claude-code_ja.md) にサインインすると、ここで追加したコネクタは、Claude Code にも「claude.ai Exploratory」として表示され、そのまま使えます。Claude Code で追加し直す必要はありません。
+
 <a id="permissions"></a>
 
 ## ツールの実行を確認する

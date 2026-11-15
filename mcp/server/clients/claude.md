@@ -77,6 +77,10 @@ When Exploratory appears with the Custom label and a check mark under Status, th
 
 If the Sales Orders data appears with its URL, it works.
 
+### Use it in Claude Code too
+
+If you sign in to [Claude Code](claude-code.md) with the same claude.ai account, the connector you added here also appears there as "claude.ai Exploratory", and you can use it as is. You do not need to add it again in Claude Code.
+
 <a id="permissions"></a>
 
 ## Check when tools run

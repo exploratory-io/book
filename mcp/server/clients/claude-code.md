@@ -3,6 +3,10 @@
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Claude Code and sign in through your browser.
 It takes about 3 minutes. You need an Exploratory account and Claude Code.
 
+If you already added Exploratory as a connector in the [Claude app (desktop and web)](claude.md), you do not need to add it again here. Claude Code signed in with the same claude.ai account shows it automatically as "claude.ai Exploratory", and you can use it as is. In Claude Code, open `/mcp` to check.
+
+![The /mcp list in Claude Code, with claude.ai Exploratory](images/en/claude-code-claudeai-connector.png)
+
 <a id="need"></a>
 
 ## Requirements
