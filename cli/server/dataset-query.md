@@ -6,17 +6,31 @@ Filter and aggregate a data item on the server and return only the result. Check
 
 ## Examples
 
-### Count rows for each Type
+### Count rows for each region
 
 **Terminal**
 
 ```sh
-expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"Type"}]' --metrics '[{"function":"count_rows","alias":"n"}]' --sort '[{"field":"n","direction":"desc"}]' --limit 5 --json
+expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"count_rows","alias":"n"}]' --sort '[{"field":"n","direction":"desc"}]' --limit 5 --json
 ```
 
-Replace \<dataset_id\> with the target id and Type with a real column name. Wrap each JSON value in single quotes (').
+Replace \<dataset_id\> with the target id and region with a real column name. Wrap each JSON value in single quotes (').
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+**Result**
+
+The result of running it on the Sales Orders data (id: llS6nQK3aH). Long fields are left out and the layout is tidied.
+
+```text
+{
+  "dataset": { "id": "llS6nQK3aH", "name": "Sales Orders", "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH" },
+  "columns": [ { "name": "region", "type": "string" }, { "name": "n", "type": "integer" } ],
+  "rows": [ ["Kanto", 7814], ["Kinki", 3890], ["Chubu", 3779], ["Kyushu-Okinawa", 2418], ["Tohoku", 1592] ],
+  "result": { "row_count": 5, "has_more": true },
+  "warnings": [ { "code": "RESULT_TRUNCATED", "message": "Additional rows exist. Refine the query." } ]
+}
+```
+
+The five regions with the most rows came back. The limit (--limit 5) cut the result, so result.has_more is true and a RESULT_TRUNCATED warning is attached. To see the other regions, raise --limit or narrow the query with a filter.
 
 ### Count all rows
 
@@ -28,7 +42,21 @@ expl server dataset query <dataset_id> --mode aggregate --metrics '[{"function":
 
 Without dimensions, one total row is returned.
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+**Result**
+
+The result of running it on the Sales Orders data (id: llS6nQK3aH). Long fields are left out and the layout is tidied.
+
+```text
+{
+  "dataset": { "id": "llS6nQK3aH", "name": "Sales Orders", "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH" },
+  "columns": [ { "name": "n", "type": "integer" } ],
+  "rows": [ [23131] ],
+  "result": { "row_count": 1, "has_more": false },
+  "warnings": []
+}
+```
+
+The whole data has 23,131 rows.
 
 <a id="usage"></a>
 
@@ -60,8 +88,8 @@ expl server dataset query [<dataset_id>] [flags]
 | `--source-filters` | json |  | Narrows the rows of each data item before the join. For each alias, write conditions with that data item's plain column names. Use it for a condition on the side of a left join that should not drop rows. |
 | `--allow-many-to-many` | boolean |  | Enable it only when a key repeats on both sides of a join and the rows multiplying is what you want. |
 | `--queries` | json |  | Several independent queries in one call, up to 5, run in parallel on the server. Each takes dataset_id (or datasets for a join) and the same fields as a single query. |
-| `--include-answer-context` | boolean |  | TODO S2: Complete this section against its source and verified output before publication. |
-| `--language` | string |  | TODO S2: Complete this section against its source and verified output before publication. Values: `ja`, `en` |
+| `--include-answer-context` | boolean |  | On by default. Turn it off to leave answer_context (an interpretation of the query and the descriptions and units of the columns) out of the result. Warnings are still returned. It works only on a server that returns answer_context. |
+| `--language` | string |  | The language of the descriptions, units, labels and metric names in answer_context: ja or en. By default it is the base language of the data. A text that does not exist in the language is returned in the other one and marked. It works only on a server that returns answer_context. Values: `ja`, `en` |
 
 <a id="json-arguments"></a>
 

@@ -6,17 +6,31 @@
 
 ## 例
 
-### Type ごとの行数を数える
+### 地域ごとの行数を数える
 
 **ターミナル**
 
 ```sh
-expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"Type"}]' --metrics '[{"function":"count_rows","alias":"n"}]' --sort '[{"field":"n","direction":"desc"}]' --limit 5 --json
+expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"count_rows","alias":"n"}]' --sort '[{"field":"n","direction":"desc"}]' --limit 5 --json
 ```
 
-\<dataset_id\> は対象のデータの id、Type は実際の列の名前に置き換えます。JSON は、全体を単引用符（'）で囲みます。
+\<dataset_id\> は対象のデータの id、region は実際の列の名前に置き換えます。JSON は、全体を単引用符（'）で囲みます。
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+**実行結果**
+
+Sales Orders のデータ（id: llS6nQK3aH）で実行した結果です。長い項目は省略して、見やすく整えています。
+
+```text
+{
+  "dataset": { "id": "llS6nQK3aH", "name": "Sales Orders", "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH" },
+  "columns": [ { "name": "region", "type": "string" }, { "name": "n", "type": "integer" } ],
+  "rows": [ ["Kanto", 7814], ["Kinki", 3890], ["Chubu", 3779], ["Kyushu-Okinawa", 2418], ["Tohoku", 1592] ],
+  "result": { "row_count": 5, "has_more": true },
+  "warnings": [ { "code": "RESULT_TRUNCATED", "message": "Additional rows exist. Refine the query." } ]
+}
+```
+
+件数の多い順に 5 地域が返りました。上限（--limit 5）で切ったので、result.has_more が true になり、RESULT_TRUNCATED の警告が付いています。残りの地域も見るときは、--limit を増やすか、条件で絞り込みます。
 
 ### 全体の行数を数える
 
@@ -28,7 +42,21 @@ expl server dataset query <dataset_id> --mode aggregate --metrics '[{"function":
 
 dimensions を省くと、全体の 1 行が返ります。
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+**実行結果**
+
+Sales Orders のデータ（id: llS6nQK3aH）で実行した結果です。長い項目は省略して、見やすく整えています。
+
+```text
+{
+  "dataset": { "id": "llS6nQK3aH", "name": "Sales Orders", "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH" },
+  "columns": [ { "name": "n", "type": "integer" } ],
+  "rows": [ [23131] ],
+  "result": { "row_count": 1, "has_more": false },
+  "warnings": []
+}
+```
+
+全体の行数は 23,131 行でした。
 
 <a id="usage"></a>
 
@@ -60,8 +88,8 @@ expl server dataset query [<dataset_id>] [flags]
 | `--source-filters` | JSON |  | 結合の前に、データごとに行を絞ります。alias ごとに、そのデータの列名で条件を書きます。left join で、行を落としたくない側の条件に使います。 |
 | `--allow-many-to-many` | 有効 / 無効 |  | 結合のキーが両側で重複し、行が増えることを承知しているときだけ、有効にします。 |
 | `--queries` | JSON |  | 独立した問い合わせを、1 回の呼び出しにまとめます。5 件までで、サーバー上で並行して実行されます。各問い合わせは、dataset_id（結合する場合は datasets）と、単独の問い合わせと同じ項目を持ちます。 |
-| `--include-answer-context` | 有効 / 無効 |  | TODO S2: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。 |
-| `--language` | 文字列 |  | TODO S2: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。 値: `ja`, `en` |
+| `--include-answer-context` | 有効 / 無効 |  | 既定は有効です。無効にすると、結果に answer_context（問い合わせの解釈や、列の説明・単位などをまとめたもの）を付けません。警告は無効にしても付きます。answer_context を返す設定のサーバーでだけ使えます。 |
+| `--language` | 文字列 |  | answer_context に入る、説明・単位・ラベル・指標の名前の言語です。ja か en で指定します。省略すると、データの基本の言語になります。そのデータにない言語の文は、もう一方の言語で返り、その印が付きます。answer_context を返す設定のサーバーでだけ使えます。 値: `ja`, `en` |
 
 <a id="json-arguments"></a>
 
