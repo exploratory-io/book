@@ -67,7 +67,7 @@ expl server dataset query [<dataset_id>] [flags]
 
 ## JSON input structure
 
-These are JSON input templates, not results. Replace \< \> placeholders with data ids, columns and values. Command examples using single quotes use bash syntax; execution in Windows shells has not been verified.
+These are JSON input templates, not results. Replace \< \> placeholders with data ids, columns and values. Command examples using single quotes use bash syntax. PowerShell and cmd write quotes differently from bash, so an example that uses single quotes may not run as it is. In that case, save the JSON to a file and pass it with --input.
 
 ### Filter conditions: filters
 
