@@ -53,7 +53,7 @@ hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  dat
 expl server fetch <id> --json
 ```
 
-\<id\> は、検索結果に表示された id に置き換えます。--json を付けると、サーバーの結果を JSON のまま出力します。実行結果は、id が hI6jK7lM8n のデータ（Sales Orders）で実行したものです。長い出力は省略しています。
+\<id\> は、検索結果に表示された id に置き換えます。--json を付けると、サーバーの結果を JSON のまま出力します。実行結果の ID・URL・人名は、説明用に置き換えています。長い出力は省略しています。
 
 **実行結果**
 
@@ -105,7 +105,7 @@ expl server fetch <id> --json
 expl server dataframe get-schema <id> --detail light --json
 ```
 
-\<id\> は、データの id に置き換えます。実行結果は、id が hI6jK7lM8n のデータ（Sales Orders）で実行したものです。長い出力は省略しています。
+\<id\> は、データの id に置き換えます。実行結果の ID・URL・人名は、説明用に置き換えています。長い出力は省略しています。
 
 **実行結果**
 
@@ -142,7 +142,7 @@ expl server dataframe get-schema <id> --detail light --json
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json
 ```
 
-\<dataset_id\> はデータの id、region は実際の列の名前に置き換えます。JSON は、全体を単引用符（'）で囲みます。実行結果は、id が hI6jK7lM8n のデータ（Sales Orders）で、地域ごとの売上（sales）を合計したものです。値は、Sales Orders Dashboard の Sales by Region と一致します。
+\<dataset_id\> はデータの id、region は実際の列の名前に置き換えます。JSON は、全体を単引用符（'）で囲みます。実行結果の ID・URL・人名は、説明用に置き換えています。結果は、Sales Orders データで地域ごとの売上（sales）を合計したものです。値は、Sales Orders Dashboard の Sales by Region と一致します。
 
 **実行結果**
 

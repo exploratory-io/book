@@ -79,7 +79,7 @@ hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  dat
 expl server fetch <id>
 ```
 
-\<id\> は、検索結果に表示された id に置き換えます。実行結果は、id が hI6jK7lM8n のデータ（Sales Orders）で実行したものです。長い出力は省略しています。
+\<id\> は、検索結果に表示された id に置き換えます。実行結果の ID・URL・人名は、説明用に置き換えています。長い出力は省略しています。
 
 **実行結果**
 

@@ -79,7 +79,7 @@ hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  dat
 expl server fetch <id>
 ```
 
-Replace \<id\> with an id from the search result. The result below was run on the data with the id hI6jK7lM8n (Sales Orders). Long output is trimmed.
+Replace \<id\> with an id from the search result. In the result below, IDs, URLs, and names are replaced for illustration. Long output is trimmed.
 
 **Result**
 

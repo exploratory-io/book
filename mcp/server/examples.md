@@ -18,7 +18,7 @@ The AI calls search with scope: "all" and shows the matching data with its URL. 
 expl server search "Sales Orders" --scope all --type data --limit 3 --json
 ```
 
-With --json, the result the search tool returned is printed as it is. In the result below, long parts are omitted and people's names are replaced with fictional names.
+With --json, the result the search tool returned is printed as it is. In the result below, long parts are omitted and IDs, URLs, and people's names are replaced for illustration.
 
 **Result**
 

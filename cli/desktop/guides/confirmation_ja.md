@@ -32,4 +32,4 @@ expl execution get <execution_id> --operation-id <operation_id>
 
 \<execution_id\> と \<operation_id\> は、--no-wait が表示した値に置き換えます。
 
---timeout を過ぎると、確認方法を示して終了コード 1 で終了します（処理は続きます）。待っている間に Ctrl+C を押すと、処理の取り消しを要求して終わります（終了コード 130）。
+--timeout を過ぎると、確認方法を示して終了コード 1 で終了します（処理は続きます）。待っている間に Ctrl+C を押すと、処理の取り消しを要求して終わります（終了コード 130）。取り消しの要求が失敗する場合があります。必要なときは、expl execution get で状態を確かめます。

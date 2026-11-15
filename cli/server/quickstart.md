@@ -53,7 +53,7 @@ hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  dat
 expl server fetch <id> --json
 ```
 
-Replace \<id\> with an id from the search result. --json prints the server's result as JSON. The result below was run on the data with the id hI6jK7lM8n (Sales Orders). Long output is trimmed.
+Replace \<id\> with an id from the search result. --json prints the server's result as JSON. In the result below, IDs, URLs, and names are replaced for illustration. Long output is trimmed.
 
 **Result**
 
@@ -105,7 +105,7 @@ For a data item, first check the column names and types.
 expl server dataframe get-schema <id> --detail light --json
 ```
 
-Replace \<id\> with the id of a data item. The result below was run on the data with the id hI6jK7lM8n (Sales Orders). Long output is trimmed.
+Replace \<id\> with the id of a data item. In the result below, IDs, URLs, and names are replaced for illustration. Long output is trimmed.
 
 **Result**
 
@@ -142,7 +142,7 @@ Once you know the column names, aggregate. This example sums the sales column fo
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json
 ```
 
-Replace \<dataset_id\> with the data id and region with a real column name. Wrap each JSON value in single quotes ('). The result below sums sales by region on the data with the id hI6jK7lM8n (Sales Orders). The values match Sales by Region in the Sales Orders Dashboard.
+Replace \<dataset_id\> with the data id and region with a real column name. Wrap each JSON value in single quotes ('). In the result below, IDs, URLs, and names are replaced for illustration. It sums sales by region on the Sales Orders data. The values match Sales by Region in the Sales Orders Dashboard.
 
 **Result**
 
