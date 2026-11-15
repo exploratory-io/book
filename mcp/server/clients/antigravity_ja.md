@@ -14,17 +14,23 @@ Antigravity に Exploratory のサーバーを登録し、ブラウザでサイ�
 
 ## 手順
 
-### 1. 設定ファイルの場所を調べる
+### 1. 「Customizations」を選ぶ
 
-Antigravity のアプリで、サイドバーの「Customizations」を選び、「Installed」を選びます。
+Antigravity のアプリで、サイドバーの「Customizations」を選びます。
+
+### 2. 「Installed」を選ぶ
+
+「Installed」を選びます。
+
+### 3. 設定ファイルの場所をコピーする
 
 「MCP Servers」の見出しにある「Copy Config File Path」を選ぶと、設定ファイル（mcp_config.json）の場所をコピーできます。
 
 ![「Customizations」の「Installed」の画面。左のサイドバーの「Customizations」と、「MCP Servers」の見出し](images/en/antigravity-01-customizations.png)
 
-画像の 1 は左のサイドバーの「Customizations」、2 は「MCP Servers」の見出しです。この画像は、英語の画面です。
+画像の 1 は手順 1 の「Customizations」、2 は手順 3 の「MCP Servers」の見出しです。この画像は、英語の画面です。
 
-### 2. サーバーを登録する
+### 4. サーバーを登録する
 
 mcp_config.json を開き、次の内容を書き足します。リモートのサーバーは、「serverUrl」に URL を書きます。
 
@@ -42,29 +48,29 @@ mcp_config.json を開き、次の内容を書き足します。リモートの�
 
 コマンドラインの agy で使うときは、~/.gemini/config/mcp_config.json に、同じ内容を書きます。
 
-### 3. 「Authenticate」を選ぶ
+### 5. 「Authenticate」を選ぶ
 
 「MCP Servers」で、exploratory-server の横にある「Authenticate」を選びます。
 
 <!-- image: images/ja/antigravity-02-authenticate.png (exploratory-server の横の「Authenticate」) -->
 
-### 4. ブラウザでサインインする
+### 6. ブラウザでサインインする
 
 ブラウザが開きます。Exploratory にサインインします。
 
-### 5. アクセスを許可する
+### 7. アクセスを許可する
 
 Exploratory の同意画面で、アクセスを許可します。
 
-### 6. 認可コードをコピーする
+### 8. 認可コードをコピーする
 
 ブラウザに表示された認可コードをコピーします。
 
-### 7. 認可コードを貼り付ける
+### 9. 認可コードを貼り付ける
 
 「Enter authorization code」の欄に、認可コードを貼り付けます。
 
-### 8. 「Submit」を選ぶ
+### 10. 「Submit」を選ぶ
 
 「Submit」を選びます。
 
@@ -83,7 +89,7 @@ agy で使うときは、次の順で行います。
 | 5 | Exploratory の同意画面で許可します。 |
 | 6 | ブラウザに表示された認可コードを、agy に貼り付けます。 |
 
-### 9. 試す
+### 11. 試す
 
 新しいチャットで、次のように送信します。
 

@@ -77,7 +77,7 @@ Choose Save at the bottom right. The server you added appears under Servers on t
 
 In the image, 1 is a row in the list of servers.
 
-The official documentation describes the rest as follows. The labels are quoted as the documentation writes them.
+The [official documentation](https://learn.chatgpt.com/docs/extend/mcp) describes the rest as follows. The labels are quoted as the documentation writes them.
 
 ### 11. Restart
 
@@ -99,9 +99,13 @@ In the image, 1 is the approval button (Allow).
 
 Type `/mcp` in the chat box to see the connected servers.
 
-### 15. Try it
+### 15. Open a new chat
 
-In a new chat, send this.
+In ChatGPT, open a new chat.
+
+### 16. Send the request
+
+Send this.
 
 ```text
 Find the "Sales Orders" data on Exploratory.

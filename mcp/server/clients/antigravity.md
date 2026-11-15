@@ -14,17 +14,23 @@ Register the Exploratory server in Antigravity and sign in through your browser.
 
 ## Steps
 
-### 1. Find the config file
+### 1. Select Customizations
 
-In the Antigravity app, select Customizations in the sidebar, then select Installed.
+In the Antigravity app, select Customizations in the sidebar.
+
+### 2. Select Installed
+
+Select Installed.
+
+### 3. Copy the config file path
 
 In the MCP Servers header, select Copy Config File Path to copy the location of the config file (mcp_config.json).
 
 ![The Installed screen under Customizations: Customizations in the left sidebar and the MCP Servers heading](images/en/antigravity-01-customizations.png)
 
-In the image, 1 is Customizations in the left sidebar and 2 is the MCP Servers heading.
+In the image, 1 is Customizations in step 1 and 2 is the MCP Servers heading in step 3.
 
-### 2. Register the server
+### 4. Register the server
 
 Open mcp_config.json and add the following. A remote server takes its URL in "serverUrl".
 
@@ -42,29 +48,29 @@ Open mcp_config.json and add the following. A remote server takes its URL in "se
 
 To use the agy command line, write the same content in ~/.gemini/config/mcp_config.json.
 
-### 3. Select Authenticate
+### 5. Select Authenticate
 
 Under MCP Servers, select Authenticate next to exploratory-server.
 
 <!-- image: images/en/antigravity-02-authenticate.png (Authenticate next to exploratory-server) -->
 
-### 4. Sign in in the browser
+### 6. Sign in in the browser
 
 Your browser opens. Sign in to Exploratory.
 
-### 5. Approve the access
+### 7. Approve the access
 
 On Exploratory's consent page, approve the access.
 
-### 6. Copy the authorization code
+### 8. Copy the authorization code
 
 Copy the authorization code shown in the browser.
 
-### 7. Paste the code
+### 9. Paste the code
 
 Paste the authorization code into the Enter authorization code field.
 
-### 8. Select Submit
+### 10. Select Submit
 
 Select Submit.
 
@@ -83,7 +89,7 @@ To use agy, follow these steps.
 | 5 | Approve on Exploratory's consent page. |
 | 6 | Paste the authorization code from the browser into agy. |
 
-### 9. Try it
+### 11. Try it
 
 In a new chat, send this.
 
