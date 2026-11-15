@@ -29,7 +29,9 @@ ChatGPT のデスクトップアプリで、設定を開きます。
 
 「プラグイン」「アプリ」「MCP」「スキル」と並ぶタブから、「MCP」を選びます。
 
-<!-- image: images/ja/chatgpt-desktop-01-plugins.png (設定の「プラグイン」と「MCP」のタブ) -->
+![設定の「プラグイン」と「MCP」のタブ、「追加」](images/ja/chatgpt-desktop-01-plugins.png)
+
+画像の 1 は手順 2 の「プラグイン」、2 は手順 3 の「MCP」のタブ、3 は手順 4 の「追加」です。
 
 ### 4. 「追加」を選ぶ
 
@@ -39,7 +41,9 @@ ChatGPT のデスクトップアプリで、設定を開きます。
 
 メニューの「MCP サーバーを追加」を選びます。「カスタム MCP に接続する」の画面が開きます。
 
-<!-- image: images/ja/chatgpt-desktop-03-add-menu.png (「追加」のメニュー) -->
+![「追加」のメニュー](images/ja/chatgpt-desktop-03-add-menu.png)
+
+画像の 1 は「MCP サーバーを追加」です。
 
 ### 6. 名前を入力する
 
@@ -61,13 +65,17 @@ https://exploratory.io/mcp
 
 「Bearer トークン環境変数」と「ヘッダー」は、空のままにします。Exploratory には、ブラウザでサインインして接続するので、トークンやヘッダーは要りません。
 
-<!-- image: images/ja/chatgpt-desktop-05-custom-mcp-filled.png (名前、タイプ、URL を入力した「カスタム MCP に接続する」の画面) -->
+![名前、タイプ、URL を入力した「カスタム MCP に接続する」の画面](images/ja/chatgpt-desktop-05-custom-mcp-filled.png)
+
+画像の 1 は手順 6 の「名前」、2 は手順 7 の「タイプ」、3 は手順 8 の「URL」です。
 
 ### 10. 「保存する」を選ぶ
 
 右下の「保存する」を選びます。「MCP」のタブの「サーバー」の一覧に、追加したサーバーが表示されます。
 
-<!-- image: images/ja/chatgpt-desktop-08-connected.png (「MCP」のタブの「サーバー」の一覧) -->
+![「MCP」のタブの「サーバー」の一覧](images/ja/chatgpt-desktop-08-connected.png)
+
+画像の 1 は、サーバーの一覧の行です。
 
 公式の資料では、ここから先を次のように案内しています。画面の文言は、資料の表記のまま引いています。
 

@@ -29,7 +29,9 @@ In the menu on the left of settings, choose Plugins under Integrations.
 
 Among the tabs Plugins, Apps, MCPs and Skills, choose MCPs.
 
-<!-- image: images/en/chatgpt-desktop-01-plugins.png (Plugins in Settings and the MCPs tab) -->
+![Plugins in Settings, the MCPs tab and Add](images/en/chatgpt-desktop-01-plugins.png)
+
+In the image, 1 is Plugins in step 2, 2 is the MCPs tab in step 3 and 3 is Add in step 4.
 
 ### 4. Choose Add
 
@@ -39,7 +41,9 @@ Choose Add at the top right.
 
 In the menu, choose Add MCP server. The Connect to a custom MCP screen opens.
 
-<!-- image: images/en/chatgpt-desktop-03-add-menu.png (The Add menu) -->
+![The Add menu](images/en/chatgpt-desktop-03-add-menu.png)
+
+In the image, 1 is Add MCP server.
 
 ### 6. Enter the name
 
@@ -61,13 +65,17 @@ https://exploratory.io/mcp
 
 Leave Bearer token env var and Headers empty. Exploratory connects through a sign-in in your browser, so it needs no token and no header.
 
-<!-- image: images/en/chatgpt-desktop-05-custom-mcp-filled.png (The Connect to a custom MCP screen with Name, Type and URL filled in) -->
+![The Connect to a custom MCP screen with Name, Type and URL filled in](images/en/chatgpt-desktop-05-custom-mcp-filled.png)
+
+In the image, 1 is Name in step 6, 2 is Type in step 7 and 3 is URL in step 8.
 
 ### 10. Save
 
 Choose Save at the bottom right. The server you added appears under Servers on the MCPs tab.
 
-<!-- image: images/en/chatgpt-desktop-08-connected.png (Servers on the MCPs tab) -->
+![Servers on the MCPs tab](images/en/chatgpt-desktop-08-connected.png)
+
+In the image, 1 is a row in the list of servers.
 
 The official documentation describes the rest as follows. The labels are quoted as the documentation writes them.
 
