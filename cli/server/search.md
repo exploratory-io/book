@@ -14,7 +14,16 @@ Search the content you can view by title, description and tags. Without search w
 expl server search "sales"
 ```
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+The result below lists the first rows of the output. Descriptions are trimmed.
+
+**Result**
+
+```text
+ID  TITLE  URL  TYPE  DESCRIPTION  AUTHOR
+sjO4NsW7kb  Sales Orders Dashboard  https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb  dashboard  Alex Kim
+llS6nQK3aH  Sales Orders  https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH  data  One row is one order line item (an order can have several lines, line_no 1-3). P…  Alex Kim
+PNZ7eaY9SU  Sales Orders Overview  https://exploratory.io/note/GMq1Qom5tS/PNZ7eaY9SU  note  Alex Kim
+```
 
 ### List your content
 
@@ -26,7 +35,68 @@ expl server search "" --scope mine --limit 50 --json
 
 Lists up to 50 of your own items, newest first.
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+The result below is trimmed to the first 2 items.
+
+**Result**
+
+```text
+{
+  "results": [
+    {
+      "id": "Customer-Usage-Monitoring-iXE5AKr7gI",
+      "title": "Customer_Usage_Monitoring",
+      "url": "https://exploratory.io/dashboard/GMq1Qom5tS/Customer-Usage-Monitoring-iXE5AKr7gI",
+      "type": "dashboard",
+      "description": "",
+      "author": "Alex Kim",
+      "team": null,
+      "updated_at": "2026-11-14T22:03:01.394Z",
+      "refreshed_at": "2026-11-14T22:03:01.894Z",
+      "tags": [
+        "operation"
+      ],
+      "publication_version": "2021-05-26T02:29:48.269Z",
+      "data_as_of": "2026-11-14T22:03:01.894Z"
+    },
+    {
+      "id": "COVID-19-Infected-Cases-Death-Data-Worldwide-EQK9LRr5Kl",
+      "title": "World Wide COVID-19 Data by Johns Hopkins (JHU CCSE)",
+      "url": "https://exploratory.io/data/GMq1Qom5tS/COVID-19-Infected-Cases-Death-Data-Worldwide-EQK9LRr5Kl",
+      "type": "data",
+      "description": "#### English This data is about the COVID-19 infection and death numbers for all the countries around the world. it is originally published and shared by Johns Hopkins Un…",
+      "author": "Alex Kim",
+      "team": null,
+      "updated_at": "2026-11-14T15:13:52.790Z",
+      "refreshed_at": "2026-11-14T15:13:53.053Z",
+      "tags": [
+        "covid19",
+        "covid-19"
+      ],
+      "publication_version": "2021-04-08T00:30:28.931Z",
+      "data_as_of": "2026-11-14T15:13:53.053Z",
+      "columns": [
+        {
+          "name": "Country/Region",
+          "type": "character",
+          "description": "国/地域",
+          "missing_count": 0
+        },
+        {
+          "name": "Date",
+          "type": "Date",
+          "description": "日付",
+          "missing_count": 0
+        }
+      ],
+      "column_count": 5,
+      "row_count": 229743
+    }
+  ],
+  "has_more": true,
+  "next_offset": 50,
+  "hint": "To read a dashboard or note: fetch it, then use chart_query for totals, rankings and comparisons."
+}
+```
 
 <a id="usage"></a>
 

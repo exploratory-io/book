@@ -57,7 +57,7 @@ The [Add from an app](clients/apps.md) page has the registration steps for each 
 
 ### 2. Sign in and authorize
 
-On the first call, your client opens a browser window. Sign in to Exploratory and approve the access. This sign-in does not need an API key. If your client cannot open a browser, connect with an API key instead (see Connect with an API key).
+On the first call, your client opens a browser window. Sign in to Exploratory and approve the access. This sign-in does not need an API key. If your client cannot open a browser, connect with an API key instead (see [Connect with an API key](#apikey)).
 
 ### 3. Try it
 
@@ -86,14 +86,13 @@ With --json, the result the search tool returned is printed as it is. Long outpu
       "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
       "type": "data",
       "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
-      "author": "Takato Shiroto",
+      "author": "Alex Kim",
       "team": null,
       "updated_at": "2026-11-12T09:26:51.086Z",
       "refreshed_at": "2026-11-12T08:12:13.528Z",
       "tags": [
         "sales",
-        "orders",
-        "english"
+        "orders"
       ],
       "publication_version": "2026-11-12T09:26:51.086Z",
       "data_as_of": "2026-11-12T08:12:13.528Z",
@@ -125,7 +124,7 @@ With --json, the result the search tool returned is printed as it is. Long outpu
 
 ## Connect with an API key
 
-Some setups cannot open a browser: a server, a scheduled job, or a client that only lets you set a fixed header. Connect those with an API key. Create one in Account Settings \> API Keys (see API keys on the CLI pages), then send it in the Authorization header of every call to the server URL.
+Some setups cannot open a browser: a server, a scheduled job, or a client that only lets you set a fixed header. Connect those with an API key. Create one in Account Settings \> API Keys (see [API keys](../../cli/server/token.md)), then send it in the Authorization header of every call to the server URL.
 
 ```text
 Authorization: Bearer exp_pat_...

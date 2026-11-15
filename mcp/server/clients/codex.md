@@ -36,7 +36,7 @@ This registers only the server, without the skill. Use either of the two ways be
    codex mcp add exploratory-server --url https://exploratory.io/mcp
    ```
 
-When Exploratory Server is listed in Codex's official plugin directory, you can install it from there instead. Use one way only. exploratory@exploratory in Exploratory's GitHub marketplace is for Desktop and does not install Server.
+exploratory@exploratory in Exploratory's GitHub marketplace is for Desktop and does not install Server.
 
 ### Sign in
 

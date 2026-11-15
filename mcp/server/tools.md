@@ -85,7 +85,7 @@ Describe the columns of a data item: names, types, descriptions the publisher wr
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |
 | `id` | string | Required | The id of the data item, from a search result or a fetch. |
-| `detail` | string |  | full: descriptions, statistics, semantics and what query_dataset supports. light: only each column's name and type, and the row count, in a smaller and faster result. Values: `full`, `compact`, `light` |
+| `detail` | string |  | full: descriptions, statistics, semantics and what query_dataset supports. light: only each column's name and type, and the row count, in a smaller and faster result. Values: `full`, `light` |
 | `language` | string |  | The language of the descriptions and definitions (ja or en). By default it is the base language of the data. A text that does not exist in this language is returned in the other one and marked language_fallback. Values: `ja`, `en` |
 | `include_unapproved` | boolean |  | Also return definitions the owner has not approved yet (drafts and AI suggestions). Only the owner of the data can use it. They are hints, not official definitions. |
 

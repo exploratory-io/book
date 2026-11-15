@@ -2,6 +2,18 @@
 
 expl comes with Exploratory Desktop. There is nothing else to install.
 
+<a id="enable"></a>
+
+## Turn on the CLI first
+
+In Exploratory Desktop, the CLI is off by default. Even when expl is installed, Desktop refuses its commands until you turn it on.
+
+1. In Exploratory Desktop, open System Settings.
+2. In the menu on the left, choose MCP / CLI.
+3. In the CLI section, turn on Enable CLI.
+4. Only when you want to create, change or delete content with expl, also check Allow create, edit and delete.
+5. Choose Save at the bottom of the screen.
+
 <a id="bundled"></a>
 
 ## Bundled with Desktop

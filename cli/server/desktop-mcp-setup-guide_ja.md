@@ -14,7 +14,30 @@ Exploratory Desktop に AI クライアントをつなぐための、手順と�
 expl server desktop mcp-setup-guide --json
 ```
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+長い出力は省略しています。結果には、使うための条件、クライアントごとのインストールのコマンド、Grok Bot の手順が含まれます。ここでは先頭のクライアントだけを載せています。
+
+**実行結果**
+
+```text
+{
+  "summary": "Install the Exploratory Desktop plugin (exploratory@exploratory) from our GitHub marketplace (exploratory-io/exploratory). It registers exploratory-desktop for local projects on the user's computer. Exploratory Desktop v17 or later must be running for every De…",
+  "links": {
+    "plugin": "https://github.com/exploratory-io/exploratory",
+    "install": "https://github.com/exploratory-io/exploratory#install"
+  },
+  "install": [
+    {
+      "client": "Claude Code",
+      "installs": "The exploratory-desktop MCP server, Desktop skills and Claude-only hooks from our GitHub marketplace.",
+      "commands": [
+        "claude plugin marketplace add exploratory-io/exploratory",
+        "claude plugin install exploratory@exploratory"
+      ],
+      "after": "Start a new session and check exploratory-desktop in /mcp. Server sign-in is not needed for Desktop."
+    }
+  ]
+}
+```
 
 <a id="usage"></a>
 

@@ -16,7 +16,40 @@ expl server fetch <id> --json
 
 Replace \<id\> with an id from the search result.
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+The result below was run on the note Sales Orders Overview (id PNZ7eaY9SU). Long output is trimmed.
+
+**Result**
+
+```text
+{
+  "id": "PNZ7eaY9SU",
+  "title": "Sales Orders Overview",
+  "text": "# Sales Orders Overview\n\n# Sales Orders Overview\n\nThis note summarizes the Sales Orders data. One row is one order line item (order_id + line_no). The data covers orders from 2025-01-01 to 2026-10-31 (23,131 line items, total sales of about 440.8 million).\n\n## Sales by region\n\n**Chart: Sales by Regi…",
+  "url": "https://exploratory.io/note/GMq1Qom5tS/PNZ7eaY9SU",
+  "metadata": {
+    "scopes": {
+      "A": "…"
+    },
+    "charts": [
+      "…",
+      "…"
+    ],
+    "context": {
+      "publication_version": "2026-11-12T08:13:18.971Z",
+      "data_as_of": "2026-11-12T08:13:19.186Z",
+      "parameters": null,
+      "dashboard_filters": "none"
+    },
+    "type": "note",
+    "author": "Alex Kim",
+    "team": null,
+    "created_at": "2026-11-12T08:13:18.971Z",
+    "updated_at": "2026-11-12T08:13:18.971Z",
+    "refreshed_at": "2026-11-12T08:13:19.186Z",
+    "tags": []
+  }
+}
+```
 
 ### Read one heading
 
@@ -28,19 +61,67 @@ expl server fetch <id> --section s2 --json
 
 Replace s2 with a heading id from metadata.toc.
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+The result below returns only the heading s2 (Sales by region) of the same note. metadata.toc is not returned for a short note like this one, so the heading id s2 was taken from the result of --query below.
+
+**Result**
+
+```text
+{
+  "id": "PNZ7eaY9SU",
+  "title": "Sales Orders Overview",
+  "text": "# Sales Orders Overview > Sales by region\n\n## Sales by region\n\n**Chart: Sales by Region** (chart: `MzU3kks5`, type: bar)\n\nValues: sum of sales\n\n> [Computed summary]\n>\n> 8 region values (all rows). Total of sales: 440,826,130. Top: Kanto (148,695,040 33.7%), Kinki (74,050,840 16.8%), Chubu (72,023,380 16.3%). Bottom: Shikoku (19,857,430 4.5%), Chugoku (24,926,920 5.7%), Hokkaido (25,498,170 5.8%).\n\n| region | sales |\n…",
+  "url": "https://exploratory.io/note/GMq1Qom5tS/PNZ7eaY9SU",
+  "metadata": {
+    "scopes": "…",
+    "charts": "…",
+    "context": "…",
+    "type": "note",
+    "author": "Alex Kim",
+    "team": null,
+    "created_at": "2026-11-12T08:13:18.971Z",
+    "updated_at": "2026-11-12T08:13:18.971Z",
+    "refreshed_at": "2026-11-12T08:13:19.186Z",
+    "tags": "…",
+    "range": "…"
+  }
+}
+```
 
 ### Find a topic
 
 **Terminal**
 
 ```sh
-expl server fetch <id> --query "sales forecast" --json
+expl server fetch <id> --query "region" --json
 ```
 
 Returns paragraphs that contain any of the words.
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+The result below was run with --query "region" on the same note. Each paragraph that matches comes with its heading id and path in square brackets.
+
+**Result**
+
+```text
+{
+  "id": "PNZ7eaY9SU",
+  "title": "Sales Orders Overview",
+  "text": "# Sales Orders Overview\n\n[s2 Sales Orders Overview > Sales by region]\n## Sales by region\n\n**Chart: Sales by Region** (chart: `MzU3kks5`, type: bar)\n\nValues: sum of sales\n\n> [Computed summary]\n>\n> 8 region values (all rows). Total of sales: 440,826,130. Top: Kanto (148,695,040 33.7%), Kinki (74,050,840 16.8%), Chubu (72,023,380 16.3%). Bottom: Shikoku (19,857,430 4.5%), Chugoku (24,926,920 5.7%), Hokkaido (25,498,170 …",
+  "url": "https://exploratory.io/note/GMq1Qom5tS/PNZ7eaY9SU",
+  "metadata": {
+    "scopes": "…",
+    "charts": "…",
+    "context": "…",
+    "type": "note",
+    "author": "Alex Kim",
+    "team": null,
+    "created_at": "2026-11-12T08:13:18.971Z",
+    "updated_at": "2026-11-12T08:13:18.971Z",
+    "refreshed_at": "2026-11-12T08:13:19.186Z",
+    "tags": "…",
+    "matches": "…"
+  }
+}
+```
 
 <a id="usage"></a>
 

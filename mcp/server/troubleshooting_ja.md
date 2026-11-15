@@ -13,6 +13,9 @@
 | Claude Code | /mcp を開く |
 | Codex | codex mcp login exploratory-server |
 | Cursor | agent mcp login exploratory-server |
+| Claude アプリ | クライアントのページのサインインの手順を、もう一度行う |
+| ChatGPT アプリ | クライアントのページのサインインの手順を、もう一度行う |
+| ほかのクライアント | そのクライアントの資料にあるとおりにサインインし直すか、API キーで接続する |
 | Grok Bot | 接続を解除してから追加し直す |
 | Antigravity | クライアントのページの、サインインの手順をもう一度行う |
 

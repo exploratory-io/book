@@ -16,7 +16,37 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 
 Replace \<dataset_id\> with the id of a data item. For data whose publisher does not allow downloading it as a file, this fails with DATA_EGRESS_LIMIT.
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+The result below was run on the data Sales Orders (id llS6nQK3aH). download_url is the link to the file (trimmed here). It expires at expires_at.
+
+**Result**
+
+```text
+{
+  "success": true,
+  "item": {
+    "id": "llS6nQK3aH",
+    "type": "data",
+    "title": "Sales Orders"
+  },
+  "summary": "Saved 5 rows (0.0 MB, CSV). The link expires at 2026-11-15T06:59:47.779Z.",
+  "result": {
+    "format": "csv",
+    "rows": 5,
+    "bytes": 687,
+    "source": "full",
+    "dataset_version": "20261112T092646Z-72836d02",
+    "data_as_of": "2026-11-12T08:12:13.528Z",
+    "expires_at": "2026-11-15T06:59:47.779Z",
+    "download_url": "https://exploratory.io/mcp/exports/…",
+    "query": {
+      "mode": "rows",
+      "limit": 5
+    }
+  },
+  "warnings": [],
+  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+}
+```
 
 <a id="usage"></a>
 

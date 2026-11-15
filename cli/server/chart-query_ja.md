@@ -16,7 +16,92 @@ expl server chart query --id <id> --chart <chart> --mode aggregate --dimensions 
 
 \<id\> はノートなどの id、\<chart\> はチャートの名前、\<column\> は chart get-data の結果の query.columns にある列の名前に置き換えます。書式は dataset query と同じです。
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+実行結果は、ダッシュボード Sales Orders Dashboard（id が sjO4NsW7kb）のチャート MzU3kks5（Sales by Region）で実行したものです。このチャートは地域が 8 つあるため、どの地域も 1 行と数えられます。長い出力は省略しています。
+
+**実行結果**
+
+```text
+{
+  "query_id": "cq_ba198537",
+  "chart": {
+    "item_id": "sjO4NsW7kb",
+    "item_title": "Sales Orders Dashboard",
+    "item_type": "dashboard",
+    "name": "MzU3kks5",
+    "title": "Sales by Region",
+    "type": "bar",
+    "data_granularity": "aggregated",
+    "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+    "version": "20261112T092937Z-3fc872d2",
+    "encoding": [
+      {
+        "role": "x",
+        "column": "region",
+        "label": "region",
+        "csv_column": "region"
+      },
+      {
+        "role": "y",
+        "column": "sales",
+        "label": "sales",
+        "aggregation": "sum",
+        "csv_column": "sales"
+      }
+    ],
+    "filters": [],
+    "filter_logic": "and"
+  },
+  "context": {
+    "publication_version": "2026-11-12T09:29:37.157Z",
+    "data_as_of": "2026-11-12T08:13:36.612Z",
+    "parameters": null,
+    "dashboard_filters": "none",
+    "chart_parameters": [],
+    "data": {
+      "scope": "A",
+      "data_frame": "Sales Orders",
+      "step": null,
+      "period": null,
+      "row_filters": []
+    }
+  },
+  "columns": [
+    {
+      "name": "region",
+      "type": "string",
+      "role": "x"
+    },
+    {
+      "name": "n",
+      "type": "integer",
+      "source": {
+        "function": "count_rows",
+        "column": null
+      }
+    }
+  ],
+  "rows": [
+    [
+      "Kinki",
+      1
+    ],
+    [
+      "Kyushu-Okinawa",
+      1
+    ],
+    [
+      "Shikoku",
+      1
+    ]
+  ],
+  "result": {
+    "row_count": 8,
+    "has_more": false,
+    "source_row_count": 8
+  },
+  "warnings": []
+}
+```
 
 <a id="usage"></a>
 

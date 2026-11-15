@@ -14,7 +14,30 @@ Return the steps and links for connecting an AI client to Exploratory Desktop.
 expl server desktop mcp-setup-guide --json
 ```
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+Long output is trimmed. The result lists the requirements, the install commands of each client and the steps for Grok Bot; only the first client is shown here.
+
+**Result**
+
+```text
+{
+  "summary": "Install the Exploratory Desktop plugin (exploratory@exploratory) from our GitHub marketplace (exploratory-io/exploratory). It registers exploratory-desktop for local projects on the user's computer. Exploratory Desktop v17 or later must be running for every De…",
+  "links": {
+    "plugin": "https://github.com/exploratory-io/exploratory",
+    "install": "https://github.com/exploratory-io/exploratory#install"
+  },
+  "install": [
+    {
+      "client": "Claude Code",
+      "installs": "The exploratory-desktop MCP server, Desktop skills and Claude-only hooks from our GitHub marketplace.",
+      "commands": [
+        "claude plugin marketplace add exploratory-io/exploratory",
+        "claude plugin install exploratory@exploratory"
+      ],
+      "after": "Start a new session and check exploratory-desktop in /mcp. Server sign-in is not needed for Desktop."
+    }
+  ]
+}
+```
 
 <a id="usage"></a>
 

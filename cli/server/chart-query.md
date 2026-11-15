@@ -16,7 +16,92 @@ expl server chart query --id <id> --chart <chart> --mode aggregate --dimensions 
 
 Replace \<id\> with the id of the note, \<chart\> with the chart name and \<column\> with a column name from query.columns in the result of chart get-data. The syntax is the same as for dataset query.
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+The result below was run on the chart MzU3kks5 (Sales by Region) in the dashboard Sales Orders Dashboard (id sjO4NsW7kb). The chart has 8 regions, so each region counts 1 row. Long output is trimmed.
+
+**Result**
+
+```text
+{
+  "query_id": "cq_ba198537",
+  "chart": {
+    "item_id": "sjO4NsW7kb",
+    "item_title": "Sales Orders Dashboard",
+    "item_type": "dashboard",
+    "name": "MzU3kks5",
+    "title": "Sales by Region",
+    "type": "bar",
+    "data_granularity": "aggregated",
+    "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+    "version": "20261112T092937Z-3fc872d2",
+    "encoding": [
+      {
+        "role": "x",
+        "column": "region",
+        "label": "region",
+        "csv_column": "region"
+      },
+      {
+        "role": "y",
+        "column": "sales",
+        "label": "sales",
+        "aggregation": "sum",
+        "csv_column": "sales"
+      }
+    ],
+    "filters": [],
+    "filter_logic": "and"
+  },
+  "context": {
+    "publication_version": "2026-11-12T09:29:37.157Z",
+    "data_as_of": "2026-11-12T08:13:36.612Z",
+    "parameters": null,
+    "dashboard_filters": "none",
+    "chart_parameters": [],
+    "data": {
+      "scope": "A",
+      "data_frame": "Sales Orders",
+      "step": null,
+      "period": null,
+      "row_filters": []
+    }
+  },
+  "columns": [
+    {
+      "name": "region",
+      "type": "string",
+      "role": "x"
+    },
+    {
+      "name": "n",
+      "type": "integer",
+      "source": {
+        "function": "count_rows",
+        "column": null
+      }
+    }
+  ],
+  "rows": [
+    [
+      "Kinki",
+      1
+    ],
+    [
+      "Kyushu-Okinawa",
+      1
+    ],
+    [
+      "Shikoku",
+      1
+    ]
+  ],
+  "result": {
+    "row_count": 8,
+    "has_more": false,
+    "source_row_count": 8
+  },
+  "warnings": []
+}
+```
 
 <a id="usage"></a>
 

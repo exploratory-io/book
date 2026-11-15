@@ -4,7 +4,7 @@ Examples of what to ask your AI, with the tools it uses and a few tips.
 
 <a id="find"></a>
 
-## Find and read a note
+## Find data
 
 ```text
 Find the "Sales Orders" data on Exploratory.
@@ -31,14 +31,13 @@ With --json, the result the search tool returned is printed as it is. Long outpu
       "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
       "type": "data",
       "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
-      "author": "Takato Shiroto",
+      "author": "Alex Kim",
       "team": null,
       "updated_at": "2026-11-12T09:26:51.086Z",
       "refreshed_at": "2026-11-12T08:12:13.528Z",
       "tags": [
         "sales",
-        "orders",
-        "english"
+        "orders"
       ],
       "publication_version": "2026-11-12T09:26:51.086Z",
       "data_as_of": "2026-11-12T08:12:13.528Z",

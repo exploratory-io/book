@@ -42,7 +42,7 @@ expl server search "Sales Orders" --scope all --type data
 
 ```text
 ID          TITLE         URL                                                TYPE  DESCRIPTION                                                                                                                                                                                                                                                                                                   AUTHOR
-llS6nQK3aH  Sales Orders  https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH  data  One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...  Takato Shiroto
+llS6nQK3aH  Sales Orders  https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH  data  One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...  Alex Kim
 ```
 
 > If the result lists content with ids and URLs, the search works.
@@ -82,15 +82,14 @@ Replace \<id\> with an id from the search result. --json prints the server's res
       "dashboard_filters": "none"
     },
     "type": "data",
-    "author": "Takato Shiroto",
+    "author": "Alex Kim",
     "team": null,
     "created_at": "2026-11-12T08:12:13.447Z",
     "updated_at": "2026-11-12T08:12:13.447Z",
     "refreshed_at": "2026-11-12T08:12:13.528Z",
     "tags": [
       "sales",
-      "orders",
-      "english"
+      "orders"
     ]
   }
 }

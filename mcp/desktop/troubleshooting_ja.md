@@ -13,8 +13,7 @@ Desktop MCP で表示されるメッセージと、その対処です。
 | Desktop の MCP のツールが、起動していないというエラーを返す | Exploratory Desktop を起動します。そのあと、同じ会話で、もう一度ツールを使います。 |
 | MCP がオフだと表示される | システム設定 \> MCP / CLI で、「MCP」のスイッチをオンにします。そのあと、システム設定の下にある「保存」を選びます。 |
 | カードに「インストールできませんでした。」と表示される | 「詳細」にマウスを載せて、出力を確かめます。理由の文に従って直し、「もう一度試す」を選びます。詳しくは [プラグインのインストール](install_ja.md#failure) を参照してください。 |
-| Git was not found on this computer. Install Git and try again. | Antigravity のインストールは、Git でプラグインを取得します。Git を入れて、もう一度試します。 |
-| A marketplace named "exploratory" is already registered from a different source … | メッセージに出ているコマンドで削除してから、もう一度「インストール」を選びます。 |
-| Your organization's settings may not allow this marketplace. | 管理者に確認します。 |
+| 別の場所から登録された exploratory があります（…）。「…」で削除してから、もう一度「インストール」を押してください。 | メッセージに出ているコマンドで削除してから、もう一度「インストール」を選びます。 |
+| 組織の設定で、このマーケットプレイスが許可されていない可能性があります。管理者に確認してください。 | 管理者に確認します。 |
 | Claude Code のフックで node が見つからない | Node.js を入れて、node を PATH に通します。 |
 | Desktop の MCP が想定どおりに動かない | Exploratory Desktop にサインインしているかを確認します。 |

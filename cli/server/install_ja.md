@@ -8,7 +8,7 @@ expl のインストール方法は 2 つあります。どちらか一方を実
 
 > **Server のみ**
 >
-> このページは Exploratory Server のみを対象にします。Exploratory Desktop の CLI は、現在のバージョンではサポート対象外です。
+> このページは Exploratory Server のみを対象にします。
 
 | 状況 | インストール方法 |
 | --- | --- |

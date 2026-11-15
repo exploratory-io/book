@@ -13,6 +13,9 @@ A request without a valid token gets HTTP 401. Sign in again as follows.
 | Claude Code | Open /mcp |
 | Codex | codex mcp login exploratory-server |
 | Cursor | agent mcp login exploratory-server |
+| Claude app | Go through the sign-in steps on the client page again |
+| ChatGPT app | Go through the sign-in steps on the client page again |
+| Other clients | Sign in again as the client's documentation describes, or connect with an API key |
 | Grok Bot | Remove the connection and add it again |
 | Antigravity | Go through the sign-in steps on the client page again |
 

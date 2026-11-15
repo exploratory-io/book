@@ -48,10 +48,10 @@ Do not choose STDIO. You can leave the other fields empty (Exploratory connects 
 
 ### Restart and authenticate
 
-The [official documentation](https://learn.chatgpt.com/docs/extend/mcp) describes what to do after you save as follows. The labels are quoted as the documentation writes them.
+The [official documentation](https://learn.chatgpt.com/docs/extend/mcp) says: "Save the server, then select Restart." and "Select Authenticate when an OAuth server requires sign-in." The labels are quoted as the documentation writes them.
 
-1. Restart the ChatGPT desktop app, following the documentation's Restart instruction.
-2. When the list of servers shows that the server needs OAuth, choose Authenticate, as the documentation says.
+1. After you save, select Restart.
+2. When the list of servers shows that the server needs OAuth, select Authenticate.
 
 ### Approve the access on exploratory.io
 

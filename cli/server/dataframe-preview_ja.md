@@ -16,7 +16,60 @@ expl server dataframe preview <id> --limit 3 --json
 
 \<id\> は、データの id に置き換えます。
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+実行結果は、データ Sales Orders（id が llS6nQK3aH）で実行したものです。長い出力は省略しています。
+
+**実行結果**
+
+```text
+{
+  "success": true,
+  "item": {
+    "id": "llS6nQK3aH",
+    "type": "data",
+    "title": "Sales Orders"
+  },
+  "summary": "Returned 3 of 23131 rows from offset 0.",
+  "result": {
+    "columns": [
+      "order_id",
+      "line_no",
+      "order_date"
+    ],
+    "rows": [
+      [
+        "SO-250101-00001",
+        1,
+        "2025-01-01"
+      ],
+      [
+        "SO-250101-00002",
+        1,
+        "2025-01-01"
+      ],
+      [
+        "SO-250101-00002",
+        2,
+        "2025-01-01"
+      ]
+    ],
+    "offset": 0,
+    "returned": 3,
+    "has_more": true,
+    "sample_row_count": 23131,
+    "row_count": 23131,
+    "is_sample": false,
+    "source": "full",
+    "context": {
+      "publication_version": "2026-11-12T09:26:51.086Z",
+      "data_as_of": "2026-11-12T08:12:13.528Z",
+      "parameters": null,
+      "dashboard_filters": "none"
+    }
+  },
+  "warnings": [],
+  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+}
+```
 
 ### 101〜200行目を取得する
 
@@ -26,7 +79,52 @@ expl server dataframe preview <id> --limit 3 --json
 expl server dataframe preview <id> --offset 100 --limit 100 --json
 ```
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+結果は、100 行のうち先頭の 2 行に省略しています。
+
+**実行結果**
+
+```text
+{
+  "success": true,
+  "item": {
+    "id": "llS6nQK3aH",
+    "type": "data",
+    "title": "Sales Orders"
+  },
+  "summary": "Returned 100 of 23131 rows from offset 100.",
+  "result": {
+    "columns": [
+      "order_id",
+      "line_no"
+    ],
+    "rows": [
+      [
+        "SO-250104-00073",
+        1
+      ],
+      [
+        "SO-250104-00074",
+        1
+      ]
+    ],
+    "offset": 100,
+    "returned": 100,
+    "has_more": true,
+    "sample_row_count": 23131,
+    "row_count": 23131,
+    "is_sample": false,
+    "source": "full",
+    "context": {
+      "publication_version": "2026-11-12T09:26:51.086Z",
+      "data_as_of": "2026-11-12T08:12:13.528Z",
+      "parameters": null,
+      "dashboard_filters": "none"
+    }
+  },
+  "warnings": [],
+  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+}
+```
 
 <a id="usage"></a>
 

@@ -28,7 +28,7 @@ What it cannot do, how to read the numbers, the limits, and what to do about err
 | --- | --- |
 | query_dataset: rows | Up to 1,000 rows (needs columns) |
 | query_dataset: aggregate | Up to 500 rows |
-| dataframe_preview、chart_get_data | Up to 100 rows per call |
+| dataframe_preview, chart_get_data | Up to 100 rows per call |
 | query_dataset: queries | Up to 5 per call |
 | chart_query: queries | Up to 10 per call (the default; an on-premises server can change it) |
 | Data items in a join | 2 to 5 |

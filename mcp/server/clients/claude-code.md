@@ -25,8 +25,6 @@ This registers only the server, without the plugin or skill.
    claude mcp add --transport http exploratory-server https://exploratory.io/mcp
    ```
 
-When Exploratory Server is listed in Claude's official plugin directory, you can install it from there instead. Use one way only.
-
 2. Start a new session.
 3. Open `/mcp`.
 4. Choose the exploratory-server connection.
@@ -41,60 +39,6 @@ When Exploratory Server is listed in Claude's official plugin directory, you can
    ```
 
 If the Sales Orders data appears with its URL, the connection works.
-
-**The same operation run with the CLI**
-
-```sh
-expl server search "Sales Orders" --scope all --type data --limit 3 --json
-```
-
-With --json, the result the search tool returned is printed as it is. Long output is trimmed.
-
-**Result**
-
-```text
-{
-  "results": [
-    {
-      "id": "llS6nQK3aH",
-      "title": "Sales Orders",
-      "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
-      "type": "data",
-      "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
-      "author": "Takato Shiroto",
-      "team": null,
-      "updated_at": "2026-11-12T09:26:51.086Z",
-      "refreshed_at": "2026-11-12T08:12:13.528Z",
-      "tags": [
-        "sales",
-        "orders",
-        "english"
-      ],
-      "publication_version": "2026-11-12T09:26:51.086Z",
-      "data_as_of": "2026-11-12T08:12:13.528Z",
-      "columns": [
-        {
-          "name": "order_id",
-          "type": "character",
-          "description": "",
-          "missing_count": 0
-        },
-        {
-          "name": "line_no",
-          "type": "numeric",
-          "description": "",
-          "missing_count": 0
-        }
-… (trimmed)
-      ],
-      "column_count": 14,
-      "row_count": 23131
-    }
-  ],
-  "has_more": false,
-  "next_offset": null
-}
-```
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 

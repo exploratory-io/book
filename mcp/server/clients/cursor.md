@@ -17,7 +17,7 @@ It takes about 5 minutes. You need an Exploratory account and Cursor.
 
 ### Register in mcp.json
 
-Until Exploratory Server is listed in the official plugin directory, add only the server by hand, without the skill.
+Exploratory Server is not in the official plugin directory. Add only the server by hand, without the skill.
 
 1. Open ~/.cursor/mcp.json (or .cursor/mcp.json in a project).
 2. Add this.

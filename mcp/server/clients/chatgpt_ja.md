@@ -50,8 +50,8 @@ ChatGPT のデスクトップアプリで、設定を開きます。
 
 [公式の資料](https://learn.chatgpt.com/docs/extend/mcp)では、保存したあとを次のように案内しています。画面の文言は、資料の表記のまま引いています。
 
-1. 資料の「Restart」（再起動）の案内に従って、ChatGPT のデスクトップアプリを再起動します。
-2. サーバーの一覧に、認証（OAuth）が必要と表示されたら、資料の「Authenticate」（認証）を選びます。
+1. 保存したあと、「Restart」を選びます。
+2. サーバーの一覧に、認証（OAuth）が必要と表示されたら、「Authenticate」を選びます。
 
 ### exploratory.io で許可する
 
@@ -123,7 +123,7 @@ ChatGPT で、設定を開きます。
 
 続けて、接続の画面が開きます。
 
-1. 「Exploratory に接続」のボタンを選びます。
+1. 「Exploratoryに接続」のボタンを選びます。
 
 ![「Exploratory を接続する」の画面](images/ja/chatgpt-06-connect-dialog.png)
 

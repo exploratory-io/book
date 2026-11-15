@@ -34,7 +34,7 @@ The image is an example from an account where the server was already connected. 
 ### Sign in
 
 1. When Grok Bot shows a card for exploratory-server, sign in to Exploratory from the card.
-2. Check that the card says it is connected.
+2. Check the card's display, following what Grok Bot shows. This page does not quote the card's wording, because it has not been confirmed on a real screen.
 
 ### Check that it is connected
 

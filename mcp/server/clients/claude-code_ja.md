@@ -25,8 +25,6 @@
    claude mcp add --transport http exploratory-server https://exploratory.io/mcp
    ```
 
-Claude の公式のプラグイン一覧に Exploratory Server が掲載された場合は、そこからインストールすることもできます。インストール方法は 1 つだけにしてください。
-
 2. 新しいセッションを開始します。
 3. `/mcp` を開きます。
 4. exploratory-server の接続を選びます。
@@ -41,60 +39,6 @@ Claude の公式のプラグイン一覧に Exploratory Server が掲載され�
    ```
 
 Sales Orders のデータが URL 付きで表示されていれば、接続できています。
-
-**CLI で同じ操作を実行した結果**
-
-```sh
-expl server search "Sales Orders" --scope all --type data --limit 3 --json
-```
-
---json を付けると、search ツールが返した結果をそのまま出力します。長い出力は省略しています。
-
-**実行結果**
-
-```text
-{
-  "results": [
-    {
-      "id": "llS6nQK3aH",
-      "title": "Sales Orders",
-      "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
-      "type": "data",
-      "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
-      "author": "Takato Shiroto",
-      "team": null,
-      "updated_at": "2026-11-12T09:26:51.086Z",
-      "refreshed_at": "2026-11-12T08:12:13.528Z",
-      "tags": [
-        "sales",
-        "orders",
-        "english"
-      ],
-      "publication_version": "2026-11-12T09:26:51.086Z",
-      "data_as_of": "2026-11-12T08:12:13.528Z",
-      "columns": [
-        {
-          "name": "order_id",
-          "type": "character",
-          "description": "",
-          "missing_count": 0
-        },
-        {
-          "name": "line_no",
-          "type": "numeric",
-          "description": "",
-          "missing_count": 0
-        }
-… (trimmed)
-      ],
-      "column_count": 14,
-      "row_count": 23131
-    }
-  ],
-  "has_more": false,
-  "next_offset": null
-}
-```
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 

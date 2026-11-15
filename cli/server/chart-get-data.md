@@ -16,7 +16,104 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 
 Replace \<id\> with the id of the note and \<chart\> with a chart name from the result of fetch.
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+The result below was run on the chart MzU3kks5 (Sales by Region) in the dashboard Sales Orders Dashboard (id sjO4NsW7kb). Long output is trimmed.
+
+**Result**
+
+```text
+{
+  "success": true,
+  "item": {
+    "id": "sjO4NsW7kb",
+    "type": "dashboard",
+    "title": "Sales Orders Dashboard"
+  },
+  "summary": "Returned 5 of 8 rows of chart \"Sales by Region\". To aggregate instead of paging, use chart_query with the same id and chart.",
+  "result": {
+    "chart": {
+      "name": "MzU3kks5",
+      "title": "Sales by Region",
+      "type": "bar",
+      "data_granularity": "aggregated",
+      "encoding": [
+        {
+          "role": "x",
+          "column": "region",
+          "label": "region",
+          "csv_column": "region"
+        },
+        {
+          "role": "y",
+          "column": "sales",
+          "label": "sales",
+          "aggregation": "sum",
+          "csv_column": "sales"
+        }
+      ],
+      "filters": [],
+      "filter_logic": "and",
+      "unsupported": []
+    },
+    "context": {
+      "publication_version": "2026-11-12T09:29:37.157Z",
+      "data_as_of": "2026-11-12T08:13:36.612Z",
+      "parameters": null,
+      "dashboard_filters": "none",
+      "chart_parameters": [],
+      "data": {
+        "scope": "A",
+        "data_frame": "Sales Orders",
+        "step": null,
+        "period": null,
+        "row_filters": []
+      }
+    },
+    "data_shared": true,
+    "columns": [
+      "region",
+      "sales"
+    ],
+    "rows": [
+      [
+        "Kanto",
+        148695040
+      ],
+      [
+        "Kinki",
+        74050840
+      ],
+      [
+        "Chubu",
+        72023380
+      ]
+    ],
+    "offset": 0,
+    "returned": 5,
+    "has_more": true,
+    "row_count": 8,
+    "query": {
+      "available": true,
+      "reason": null,
+      "columns": [
+        {
+          "name": "region",
+          "type": "string"
+        },
+        {
+          "name": "sales",
+          "type": "integer"
+        }
+      ],
+      "total_rows": {
+        "excluded": 0,
+        "detection": "not_applicable"
+      }
+    }
+  },
+  "warnings": [],
+  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb"
+}
+```
 
 <a id="usage"></a>
 

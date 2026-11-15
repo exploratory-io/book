@@ -4,7 +4,7 @@ AI への依頼文の例です。AI が使用するツールと、依頼する�
 
 <a id="find"></a>
 
-## ノートを探して読む
+## データを探す
 
 ```text
 Exploratory にある「Sales Orders」のデータを探して
@@ -31,14 +31,13 @@ expl server search "Sales Orders" --scope all --type data --limit 3 --json
       "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
       "type": "data",
       "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
-      "author": "Takato Shiroto",
+      "author": "山田 花子",
       "team": null,
       "updated_at": "2026-11-12T09:26:51.086Z",
       "refreshed_at": "2026-11-12T08:12:13.528Z",
       "tags": [
         "sales",
-        "orders",
-        "english"
+        "orders"
       ],
       "publication_version": "2026-11-12T09:26:51.086Z",
       "data_as_of": "2026-11-12T08:12:13.528Z",

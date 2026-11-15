@@ -16,7 +16,60 @@ expl server dataframe preview <id> --limit 3 --json
 
 Replace \<id\> with the id of a data item.
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+The result below was run on the data Sales Orders (id llS6nQK3aH). Long output is trimmed.
+
+**Result**
+
+```text
+{
+  "success": true,
+  "item": {
+    "id": "llS6nQK3aH",
+    "type": "data",
+    "title": "Sales Orders"
+  },
+  "summary": "Returned 3 of 23131 rows from offset 0.",
+  "result": {
+    "columns": [
+      "order_id",
+      "line_no",
+      "order_date"
+    ],
+    "rows": [
+      [
+        "SO-250101-00001",
+        1,
+        "2025-01-01"
+      ],
+      [
+        "SO-250101-00002",
+        1,
+        "2025-01-01"
+      ],
+      [
+        "SO-250101-00002",
+        2,
+        "2025-01-01"
+      ]
+    ],
+    "offset": 0,
+    "returned": 3,
+    "has_more": true,
+    "sample_row_count": 23131,
+    "row_count": 23131,
+    "is_sample": false,
+    "source": "full",
+    "context": {
+      "publication_version": "2026-11-12T09:26:51.086Z",
+      "data_as_of": "2026-11-12T08:12:13.528Z",
+      "parameters": null,
+      "dashboard_filters": "none"
+    }
+  },
+  "warnings": [],
+  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+}
+```
 
 ### Get rows 101–200
 
@@ -26,7 +79,52 @@ Replace \<id\> with the id of a data item.
 expl server dataframe preview <id> --offset 100 --limit 100 --json
 ```
 
-> TODO: S6: Complete this section against its source and verified output before publication.
+The result below is trimmed to the first 2 of the 100 rows.
+
+**Result**
+
+```text
+{
+  "success": true,
+  "item": {
+    "id": "llS6nQK3aH",
+    "type": "data",
+    "title": "Sales Orders"
+  },
+  "summary": "Returned 100 of 23131 rows from offset 100.",
+  "result": {
+    "columns": [
+      "order_id",
+      "line_no"
+    ],
+    "rows": [
+      [
+        "SO-250104-00073",
+        1
+      ],
+      [
+        "SO-250104-00074",
+        1
+      ]
+    ],
+    "offset": 100,
+    "returned": 100,
+    "has_more": true,
+    "sample_row_count": 23131,
+    "row_count": 23131,
+    "is_sample": false,
+    "source": "full",
+    "context": {
+      "publication_version": "2026-11-12T09:26:51.086Z",
+      "data_as_of": "2026-11-12T08:12:13.528Z",
+      "parameters": null,
+      "dashboard_filters": "none"
+    }
+  },
+  "warnings": [],
+  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+}
+```
 
 <a id="usage"></a>
 

@@ -95,7 +95,7 @@ If the reason does not let you fix it, send the copied output to support. When i
 
 ## Install by hand
 
-Use this when you do not use the card. The plugin is not in the official plugin directories. Add the repository exploratory-io/exploratory as a marketplace, then install the plugin exploratory. Run the commands yourself in a terminal. Do not ask an AI tool to run them: some permission modes block it.
+Use this when you do not use the card. The plugin is not in the official plugin directories. Add the repository exploratory-io/exploratory as a marketplace, then install the plugin exploratory. Run the commands in a terminal yourself, or ask an AI tool to run them.
 
 **Claude Code**
 
@@ -138,7 +138,12 @@ Add this to ~/.cursor/mcp.json. It adds the Desktop MCP without the skills, the 
 }
 ```
 
-Cursor also shows the Claude Code plugins it imports from ~/.claude: install the plugin with Claude Code first, then turn on Include Third-Party Plugins, Skills, and Other Configs in Cursor's settings.
+To also use the skills, load the plugin folder with the Cursor CLI (the steps Exploratory's setup guide shows for Cursor).
+
+```sh
+git clone https://github.com/exploratory-io/exploratory
+agent --plugin-dir ./exploratory/plugins/exploratory-desktop
+```
 
 <a id="update"></a>
 
@@ -155,7 +160,6 @@ It depends on how you installed it.
 | Codex | codex plugin marketplace upgrade exploratory, then codex plugin remove exploratory@exploratory and codex plugin add exploratory@exploratory | codex plugin remove exploratory@exploratory |
 | Antigravity | Run git pull in the cloned folder, then agy plugin install again | Remove the plugin in Antigravity's plugin settings |
 | Cursor (you wrote ~/.cursor/mcp.json by hand) | Rewrite its contents | Remove exploratory-desktop from ~/.cursor/mcp.json |
-| Cursor (a plugin imported from Claude Code) | Update the plugin in Claude Code (Cursor imports it from ~/.claude) | Uninstall it in Claude Code |
 
 The Desktop MCP stops when you quit Exploratory Desktop. Removing the plugin does not affect your Server MCP connection.
 

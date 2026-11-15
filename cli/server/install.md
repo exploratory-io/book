@@ -8,7 +8,7 @@ There are two ways to get expl. Pick one; you do not need both.
 
 > **Server only**
 >
-> This page covers Exploratory Server only. Exploratory Desktop's CLI is not supported in the current version.
+> This page covers Exploratory Server only.
 
 | Your situation | How |
 | --- | --- |

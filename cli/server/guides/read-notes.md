@@ -72,7 +72,7 @@ Replace \<id\> with an id from the search result. The result below was run on th
       "dashboard_filters": "none"
     },
     "type": "dashboard",
-    "author": "Takato Shiroto",
+    "author": "Alex Kim",
     "team": null,
     "created_at": "2026-11-12T08:13:36.316Z",
     "updated_at": "2026-11-12T08:22:40.602Z",

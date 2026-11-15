@@ -72,7 +72,7 @@ expl server fetch <id> --json
       "dashboard_filters": "none"
     },
     "type": "dashboard",
-    "author": "Takato Shiroto",
+    "author": "山田 花子",
     "team": null,
     "created_at": "2026-11-12T08:13:36.316Z",
     "updated_at": "2026-11-12T08:22:40.602Z",

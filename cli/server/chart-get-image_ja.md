@@ -16,7 +16,75 @@ expl server chart get-image <id> --chart <chart> --json
 
 \<id\> はノートなどの id、\<chart\> は fetch の結果にあるチャートの名前に置き換えます。
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+実行結果は、ダッシュボード Gps1iZR7OE のチャート edl2dXi1（売上推移）で実行したものです。画像の保存先を示す image_path の行は省略しています。公開時に画像が保存されていないチャートは、NOT_FOUND（"This chart has no stored image"）になります。その場合は chart get-data を使います。
+
+**実行結果**
+
+```text
+{
+  "success": true,
+  "item": {
+    "id": "Gps1iZR7OE",
+    "type": "dashboard",
+    "title": "売上とマーケティング費用のダッシュボード"
+  },
+  "summary": "Returned the image of chart \"売上推移\" (600x400).",
+  "result": {
+    "chart": {
+      "name": "edl2dXi1",
+      "title": "売上推移",
+      "type": "line"
+    },
+    "data_shared": true,
+    "image": {
+      "mime_type": "image/png",
+      "width": 600,
+      "height": 400,
+      "original_width": 600,
+      "original_height": 400,
+      "bytes": 41970,
+      "resized": false,
+      "captured_at": "2022-06-24T08:51:53.397Z",
+      "may_be_stale": true
+    },
+    "context": {
+      "publication_version": "2022-06-24T08:51:53.397Z",
+      "data_as_of": "2026-11-14T22:02:21.534Z",
+      "parameters": {
+        "applied": true,
+        "values": [
+          {
+            "name": "Start_Date",
+            "display_name": "Start_Date",
+            "value": [
+              "2017-01-01"
+            ]
+          },
+          {
+            "name": "End_Date",
+            "display_name": "End_Date",
+            "value": [
+              "2020-12-31"
+            ]
+          },
+          {
+            "name": "Market",
+            "display_name": "Market",
+            "value": []
+          }
+        ],
+        "note": "Values as published. A viewer who changes the parameters in the browser sees different results."
+      },
+      "dashboard_filters": "none"
+    }
+  },
+  "warnings": [
+    "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
+    "The data was refreshed at 2026-11-14T22:02:21.534Z, after this image was captured at 2022-06-24T08:51:53.397Z. The image may not show the current numbers; use chart_get_d…"
+  ],
+  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/Gps1iZR7OE"
+}
+```
 
 <a id="usage"></a>
 

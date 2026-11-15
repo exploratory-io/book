@@ -16,7 +16,104 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 
 \<id\> はノートなどの id、\<chart\> は fetch の結果にあるチャートの名前に置き換えます。
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+実行結果は、ダッシュボード Sales Orders Dashboard（id が sjO4NsW7kb）のチャート MzU3kks5（Sales by Region）で実行したものです。長い出力は省略しています。
+
+**実行結果**
+
+```text
+{
+  "success": true,
+  "item": {
+    "id": "sjO4NsW7kb",
+    "type": "dashboard",
+    "title": "Sales Orders Dashboard"
+  },
+  "summary": "Returned 5 of 8 rows of chart \"Sales by Region\". To aggregate instead of paging, use chart_query with the same id and chart.",
+  "result": {
+    "chart": {
+      "name": "MzU3kks5",
+      "title": "Sales by Region",
+      "type": "bar",
+      "data_granularity": "aggregated",
+      "encoding": [
+        {
+          "role": "x",
+          "column": "region",
+          "label": "region",
+          "csv_column": "region"
+        },
+        {
+          "role": "y",
+          "column": "sales",
+          "label": "sales",
+          "aggregation": "sum",
+          "csv_column": "sales"
+        }
+      ],
+      "filters": [],
+      "filter_logic": "and",
+      "unsupported": []
+    },
+    "context": {
+      "publication_version": "2026-11-12T09:29:37.157Z",
+      "data_as_of": "2026-11-12T08:13:36.612Z",
+      "parameters": null,
+      "dashboard_filters": "none",
+      "chart_parameters": [],
+      "data": {
+        "scope": "A",
+        "data_frame": "Sales Orders",
+        "step": null,
+        "period": null,
+        "row_filters": []
+      }
+    },
+    "data_shared": true,
+    "columns": [
+      "region",
+      "sales"
+    ],
+    "rows": [
+      [
+        "Kanto",
+        148695040
+      ],
+      [
+        "Kinki",
+        74050840
+      ],
+      [
+        "Chubu",
+        72023380
+      ]
+    ],
+    "offset": 0,
+    "returned": 5,
+    "has_more": true,
+    "row_count": 8,
+    "query": {
+      "available": true,
+      "reason": null,
+      "columns": [
+        {
+          "name": "region",
+          "type": "string"
+        },
+        {
+          "name": "sales",
+          "type": "integer"
+        }
+      ],
+      "total_rows": {
+        "excluded": 0,
+        "detection": "not_applicable"
+      }
+    }
+  },
+  "warnings": [],
+  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb"
+}
+```
 
 <a id="usage"></a>
 

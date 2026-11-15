@@ -6,9 +6,17 @@ Start Desktop, then check its state with expl, choose a project and get a dashbo
 
 ## Eight steps
 
-### 1. Start Desktop
+### 1. Start Desktop and turn on the CLI
 
-Start Exploratory Desktop.
+In Exploratory Desktop, the CLI is off by default. Turn it on first.
+
+1. Start Exploratory Desktop and open System Settings.
+2. In the menu on the left, choose MCP / CLI.
+3. In the CLI section, turn on Enable CLI.
+4. Only when you want to create, change or delete content with expl, also check Allow create, edit and delete. Without it, expl can only read.
+5. Choose Save at the bottom of the screen.
+
+If you do not save, the settings do not take effect.
 
 ### 2. Sign in to Desktop
 

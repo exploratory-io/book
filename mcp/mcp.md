@@ -11,4 +11,3 @@ Connect an AI app to Exploratory through MCP. There are two sides, and the first
 - [Server](server/server.md) - Read content published on exploratory.io.
 - [Desktop](desktop/desktop.md) - Create and edit projects in Exploratory Desktop on your computer.
 
-日本語: Server は、exploratory.io に公開した内容を読む MCP です。AI アプリにサーバー URL を追加し、ブラウザでサインインします。Desktop は、あなたのコンピューターの Exploratory Desktop で、プロジェクトを作り、編集する MCP です。Exploratory Desktop のシステム設定から、プラグインをインストールします。目次の「Server (日本語)」「Desktop (日本語)」に、それぞれの日本語のページがあります。

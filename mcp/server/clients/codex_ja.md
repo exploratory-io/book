@@ -36,7 +36,7 @@
    codex mcp add exploratory-server --url https://exploratory.io/mcp
    ```
 
-Codex の公式のプラグイン一覧に Exploratory Server が掲載された場合は、そこからインストールすることもできます。インストール方法は 1 つだけにしてください。Exploratory の GitHub マーケットプレイスの exploratory@exploratory は Desktop 用で、Server は含まれません。
+Exploratory の GitHub マーケットプレイスの exploratory@exploratory は Desktop 用で、Server は含まれません。
 
 ### サインインする
 

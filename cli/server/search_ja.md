@@ -14,7 +14,16 @@
 expl server search "sales"
 ```
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+結果の先頭の数行です。説明は省略しています。
+
+**実行結果**
+
+```text
+ID  TITLE  URL  TYPE  DESCRIPTION  AUTHOR
+sjO4NsW7kb  Sales Orders Dashboard  https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb  dashboard  山田 花子
+llS6nQK3aH  Sales Orders  https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH  data  One row is one order line item (an order can have several lines, line_no 1-3). P…  山田 花子
+PNZ7eaY9SU  Sales Orders Overview  https://exploratory.io/note/GMq1Qom5tS/PNZ7eaY9SU  note  山田 花子
+```
 
 ### 自分のコンテンツを一覧する
 
@@ -26,7 +35,68 @@ expl server search "" --scope mine --limit 50 --json
 
 自分のコンテンツを、新しい順に最大 50 件出します。
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+結果は先頭の 2 件に省略しています。
+
+**実行結果**
+
+```text
+{
+  "results": [
+    {
+      "id": "Customer-Usage-Monitoring-iXE5AKr7gI",
+      "title": "Customer_Usage_Monitoring",
+      "url": "https://exploratory.io/dashboard/GMq1Qom5tS/Customer-Usage-Monitoring-iXE5AKr7gI",
+      "type": "dashboard",
+      "description": "",
+      "author": "山田 花子",
+      "team": null,
+      "updated_at": "2026-11-14T22:03:01.394Z",
+      "refreshed_at": "2026-11-14T22:03:01.894Z",
+      "tags": [
+        "operation"
+      ],
+      "publication_version": "2021-05-26T02:29:48.269Z",
+      "data_as_of": "2026-11-14T22:03:01.894Z"
+    },
+    {
+      "id": "COVID-19-Infected-Cases-Death-Data-Worldwide-EQK9LRr5Kl",
+      "title": "World Wide COVID-19 Data by Johns Hopkins (JHU CCSE)",
+      "url": "https://exploratory.io/data/GMq1Qom5tS/COVID-19-Infected-Cases-Death-Data-Worldwide-EQK9LRr5Kl",
+      "type": "data",
+      "description": "#### English This data is about the COVID-19 infection and death numbers for all the countries around the world. it is originally published and shared by Johns Hopkins Un…",
+      "author": "山田 花子",
+      "team": null,
+      "updated_at": "2026-11-14T15:13:52.790Z",
+      "refreshed_at": "2026-11-14T15:13:53.053Z",
+      "tags": [
+        "covid19",
+        "covid-19"
+      ],
+      "publication_version": "2021-04-08T00:30:28.931Z",
+      "data_as_of": "2026-11-14T15:13:53.053Z",
+      "columns": [
+        {
+          "name": "Country/Region",
+          "type": "character",
+          "description": "国/地域",
+          "missing_count": 0
+        },
+        {
+          "name": "Date",
+          "type": "Date",
+          "description": "日付",
+          "missing_count": 0
+        }
+      ],
+      "column_count": 5,
+      "row_count": 229743
+    }
+  ],
+  "has_more": true,
+  "next_offset": 50,
+  "hint": "To read a dashboard or note: fetch it, then use chart_query for totals, rankings and comparisons."
+}
+```
 
 <a id="usage"></a>
 

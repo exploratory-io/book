@@ -2,6 +2,18 @@
 
 expl は Exploratory Desktop に同梱されています。別途インストールする必要はありません。
 
+<a id="enable"></a>
+
+## 最初に CLI を有効にする
+
+Exploratory Desktop の CLI は、初期状態ではオフです。expl をインストールしていても、オンにするまで、Desktop は expl のコマンドを受け付けません。
+
+1. Exploratory Desktop で、システム設定を開きます。
+2. 左のメニューで、MCP / CLI を選びます。
+3. CLI の項目で、「CLI を有効にする」をオンにします。
+4. expl でコンテンツの作成、変更、削除もしたいときだけ、「作成、変更、削除を許可する」にもチェックを入れます。
+5. 画面の下の「保存」を選びます。
+
 <a id="bundled"></a>
 
 ## Exploratory Desktop に同梱されています

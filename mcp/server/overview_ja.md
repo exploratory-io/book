@@ -57,7 +57,7 @@ https://exploratory.io/mcp
 
 ### 2. サインインして許可する
 
-最初の呼び出しで、クライアントがブラウザのウィンドウを開きます。Exploratory にサインインして、アクセスを許可してください。この方法では API キーは不要です。クライアントがブラウザを開けないときは、代わりに API キーで接続します（「API キーで接続する」を参照）。
+最初の呼び出しで、クライアントがブラウザのウィンドウを開きます。Exploratory にサインインして、アクセスを許可してください。この方法では API キーは不要です。クライアントがブラウザを開けないときは、代わりに API キーで接続します（[「API キーで接続する」](#apikey)を参照）。
 
 ### 3. 試す
 
@@ -86,14 +86,13 @@ expl server search "Sales Orders" --scope all --type data --limit 3 --json
       "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
       "type": "data",
       "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
-      "author": "Takato Shiroto",
+      "author": "山田 花子",
       "team": null,
       "updated_at": "2026-11-12T09:26:51.086Z",
       "refreshed_at": "2026-11-12T08:12:13.528Z",
       "tags": [
         "sales",
-        "orders",
-        "english"
+        "orders"
       ],
       "publication_version": "2026-11-12T09:26:51.086Z",
       "data_as_of": "2026-11-12T08:12:13.528Z",
@@ -125,7 +124,7 @@ expl server search "Sales Orders" --scope all --type data --limit 3 --json
 
 ## API キーで接続する
 
-ブラウザを開けない環境があります。サーバー、定期的に動くジョブ、固定のヘッダーしか設定できないクライアントなどです。その場合は、API キーで接続します。アカウント設定 \> API キーで作成して（CLI のページの「API キー」を参照）、サーバー URL への呼び出しごとに、Authorization ヘッダーで送ります。
+ブラウザを開けない環境があります。サーバー、定期的に動くジョブ、固定のヘッダーしか設定できないクライアントなどです。その場合は、API キーで接続します。アカウント設定 \> API キーで作成して（[CLI のページの「API キー」](../../cli/server/token_ja.md)を参照）、サーバー URL への呼び出しごとに、Authorization ヘッダーで送ります。
 
 ```text
 Authorization: Bearer exp_pat_...

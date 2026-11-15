@@ -16,7 +16,37 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 
 \<dataset_id\> は、データの id に置き換えます。公開した人がファイルとしての取得を許していないデータでは、DATA_EGRESS_LIMIT で失敗します。
 
-> TODO: S6: 出典と実際の結果を確認して、公開前にこの説明を完成させてください。
+実行結果は、データ Sales Orders（id が llS6nQK3aH）で実行したものです。download_url はファイルへのリンクです（ここでは省略しています）。expires_at の時刻に無効になります。
+
+**実行結果**
+
+```text
+{
+  "success": true,
+  "item": {
+    "id": "llS6nQK3aH",
+    "type": "data",
+    "title": "Sales Orders"
+  },
+  "summary": "Saved 5 rows (0.0 MB, CSV). The link expires at 2026-11-15T06:59:47.779Z.",
+  "result": {
+    "format": "csv",
+    "rows": 5,
+    "bytes": 687,
+    "source": "full",
+    "dataset_version": "20261112T092646Z-72836d02",
+    "data_as_of": "2026-11-12T08:12:13.528Z",
+    "expires_at": "2026-11-15T06:59:47.779Z",
+    "download_url": "https://exploratory.io/mcp/exports/…",
+    "query": {
+      "mode": "rows",
+      "limit": 5
+    }
+  },
+  "warnings": [],
+  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+}
+```
 
 <a id="usage"></a>
 

@@ -9,6 +9,7 @@ Find a fix by symptom.
 | What you see | What to do |
 | --- | --- |
 | expl: command not found | Open a new terminal and run it again. See also the installation page. |
+| The command is refused even though Desktop is running, and the message points to MCP / CLI | The CLI is off by default. In System Settings, choose MCP / CLI, turn on Enable CLI in the CLI section and choose Save. |
 | Exit code 3 | Start Exploratory Desktop and run it again. |
 | Exit code 4 | Sign in to Exploratory Desktop. |
 | PROJECT_NOT_OPEN | Open the project: expl project open \<id\> |

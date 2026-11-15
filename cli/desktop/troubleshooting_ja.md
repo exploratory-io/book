@@ -9,6 +9,7 @@
 | 症状 | 対処 |
 | --- | --- |
 | expl: command not found | 新しいターミナルを開いて、もう一度実行します。インストールのページも参照してください。 |
+| Desktop が起動しているのにコマンドが拒否され、メッセージに MCP / CLI と出る | CLI は初期状態ではオフです。システム設定で MCP / CLI を選び、CLI の項目の「CLI を有効にする」をオンにして「保存」を選びます。 |
 | 終了コード 3 | Exploratory Desktop を起動して、もう一度実行します。 |
 | 終了コード 4 | Exploratory Desktop にサインインします。 |
 | PROJECT_NOT_OPEN | プロジェクトを開きます: expl project open \<id\> |

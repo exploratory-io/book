@@ -95,7 +95,7 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 
 ## 手作業でインストールする
 
-カードを使わないときの手順です。このプラグインは、公式のプラグイン一覧にはありません。リポジトリ exploratory-io/exploratory をマーケットプレイスとして足してから、プラグイン exploratory を入れます。コマンドは、ご自身でターミナルに打ってください。AI ツールに実行させるのは避けてください。権限の設定によっては止められます。
+カードを使わないときの手順です。このプラグインは、公式のプラグイン一覧にはありません。リポジトリ exploratory-io/exploratory をマーケットプレイスとして足してから、プラグイン exploratory を入れます。コマンドは、ご自身でターミナルに打つか、AI ツールに頼んで実行してもらってください。
 
 **Claude Code**
 
@@ -138,7 +138,12 @@ Git が必要です。プラグインは、Antigravity のアプリの Customiza
 }
 ```
 
-Cursor には、~/.claude から取り込んだ Claude Code のプラグインも表示されます。その場合は、先に Claude Code でプラグインを入れ、Cursor の設定で「Include Third-Party Plugins, Skills, and Other Configs」をオンにします。
+スキルも使うときは、Cursor の CLI でプラグインのフォルダを読み込みます（Exploratory のセットアップ案内が Cursor 向けに示す手順です）。
+
+```sh
+git clone https://github.com/exploratory-io/exploratory
+agent --plugin-dir ./exploratory/plugins/exploratory-desktop
+```
 
 <a id="update"></a>
 
@@ -155,7 +160,6 @@ Cursor には、~/.claude から取り込んだ Claude Code のプラグイン�
 | Codex | codex plugin marketplace upgrade exploratory を実行し、続けて codex plugin remove exploratory@exploratory と codex plugin add exploratory@exploratory を実行します | codex plugin remove exploratory@exploratory |
 | Antigravity | クローンしたフォルダで git pull を実行し、もう一度 agy plugin install を実行します | Antigravity のプラグインの設定で、プラグインを削除します |
 | Cursor（~/.cursor/mcp.json を手で書いたとき） | 内容を書き直します | ~/.cursor/mcp.json から exploratory-desktop を消します |
-| Cursor（Claude Code から取り込んだプラグイン） | Claude Code でプラグインを更新します（Cursor は ~/.claude から取り込みます） | Claude Code でアンインストールします |
 
 Desktop の MCP は、Exploratory Desktop を終了すると止まります。プラグインを削除しても、Server の MCP の接続には影響しません。
 
