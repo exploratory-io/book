@@ -65,8 +65,6 @@ Claude Code は `claude mcp add` を実行し、サーバーを追加したこ�
 1. 新しいセッションを始めます。
 2. `/mcp` を開き、Exploratory が一覧にあることを確かめます。
 
-![Claude Code の MCP の一覧に、Exploratory が表示されている](images/ja/claude-code-chat-03-mcp-list.png)
-
 3. Exploratory を選び、ブラウザでサインインします。
 4. 新しいセッションで、次のような依頼を送ります。
 

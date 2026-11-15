@@ -68,8 +68,6 @@ Claude Code ran `claude mcp add` and answered that the server was added but not 
 2. Open `/mcp` and check that Exploratory is listed.
 3. Choose Exploratory and sign in through the browser.
 
-![The MCP list in Claude Code shows Exploratory as connected](images/en/claude-code-chat-03-mcp-list.png)
-
 4. In the new session, send a request such as the one below.
 
    ```text
