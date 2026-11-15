@@ -80,6 +80,8 @@ Claude Code ran `claude mcp add` and answered that the server was added to the l
 
 Claude Code searches through the Exploratory server and finds the data.
 
+![Claude Code finding the Sales Orders data through the Exploratory server](images/en/claude-code-chat-02-search.png)
+
 If you have more than one Exploratory connection (for example exploratory-server, or a connector added in the Claude app), name the connection to search with, such as "Use the Exploratory MCP server."
 
 <a id="apikey"></a>

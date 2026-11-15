@@ -92,6 +92,8 @@ Codex は、サーバーを追加し、有効になったことを答えます�
 
 Codex が Exploratory サーバー経由で検索し、データが見つかります。
 
+![Codex が Exploratory サーバー経由で Sales Orders のデータを見つけた様子](images/ja/codex-chat-02-search.png)
+
 すでに Exploratory への別の接続（たとえば exploratory-server や Desktop）があると、Codex がそちらを選ぶことがあります。接続名を指定すると、それを避けられます。
 
 <a id="trouble"></a>

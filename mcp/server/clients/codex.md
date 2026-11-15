@@ -94,6 +94,8 @@ Codex added the server with `codex mcp add` and answered that the server was add
 
 Codex searches through the Exploratory server and finds the data.
 
+![Codex finding the Sales Orders data through the Exploratory server](images/en/codex-chat-02-search.png)
+
 If you already have another Exploratory connection (for example exploratory-server or Desktop), Codex may pick that one. Naming the connection avoids it.
 
 <a id="trouble"></a>
