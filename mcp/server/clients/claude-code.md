@@ -27,9 +27,10 @@ This registers only the server, without the plugin or skill.
 
 When Exploratory Server is listed in Claude's official plugin directory, you can install it from there instead. Use one way only.
 
-2. Start a new session and open `/mcp`.
-3. Choose the exploratory-server connection.
-4. Sign in through the browser.
+2. Start a new session.
+3. Open `/mcp`.
+4. Choose the exploratory-server connection.
+5. Sign in through the browser.
 
 ### Check that it is connected
 

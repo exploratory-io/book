@@ -110,11 +110,11 @@ Next, the menu opens.
 
 ### Enter the address
 
-On the Add custom MCP server screen, enter these values.
+On the Add custom MCP server screen, enter these values. The screen says "Custom MCP servers introduce risk." Make sure you trust the server before you enter the values.
 
 1. In Name, enter `Exploratory`.
 2. Under Connection, leave Server URL selected. In the URL field, enter `https://exploratory.io/mcp`.
-3. The screen says "Custom MCP servers introduce risk." Make sure you trust the server, then select I understand and want to continue.
+3. Select I understand and want to continue.
 
 ![The screen with the name, the URL and the check box filled in](images/en/chatgpt-05-custom-mcp-filled.png)
 
