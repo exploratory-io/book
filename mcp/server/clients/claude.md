@@ -63,15 +63,15 @@ In the image, 1 is the name, 2 is the MCP server URL and 3 is Continue.
 
 ### 8. Check the authentication settings
 
-The second screen shows the authentication settings. Leave them as they are: the sign-in option that is detected, and Claude's public identity as the OAuth client. Both are marked as detected.
+The second screen shows the authentication settings. Leave them as they are: Sign in now under Authentication, and Use Claude's published identity under OAuth client. Both are marked Detected.
 
 ### 9. Add the connector
 
-Choose the button to add the connector.
+Choose Add.
 
-![The authentication and OAuth client screen](images/ja/claude-03b-auth-options.png)
+![The Authentication and OAuth client screen](images/en/claude-03b-auth-options.png)
 
-In the image, 1 is the sign-in option that is detected and 2 is the button to add the connector. This image shows the Japanese screen.
+In the image, 1 is Sign in now (step 8) and 2 is Add (step 9).
 
 ### 10. Approve the access
 
