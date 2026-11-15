@@ -20,7 +20,9 @@ Antigravity のアプリで、サイドバーの「Customizations」を選び、
 
 「MCP Servers」の見出しにある「Copy Config File Path」を選ぶと、設定ファイル（mcp_config.json）の場所をコピーできます。
 
-<!-- image: images/ja/antigravity-01-customizations.png (「Customizations」の「Installed」にある、「MCP Servers」の「Copy Config File Path」) -->
+![「Customizations」の「Installed」の画面。左のサイドバーの「Customizations」と、「MCP Servers」の見出し](images/en/antigravity-01-customizations.png)
+
+画像の 1 は左のサイドバーの「Customizations」、2 は「MCP Servers」の見出しです。この画像は、英語の画面です。
 
 ### 2. サーバーを登録する
 
@@ -92,6 +94,20 @@ Exploratory にある「Sales Orders」のデータを探して
 Sales Orders のデータが URL つきで表示されれば、接続できています。
 
 <!-- image: images/ja/antigravity-04-try.png (チャットで確かめる) -->
+
+<a id="plugin"></a>
+
+## プラグインでインストールした場合の確かめ方
+
+Exploratory のプラグインをインストールしたときは、「Customizations」の「Plugins」で「Exploratory」を開くと、接続の状態を確かめられます。「Accounts」のタブに、exploratory-server が「OAUTH」「CONNECTED」と表示されます。「MCP」のタブには、exploratory-server と、使えるツールの数（例: 「10 tools enabled」）が表示されます。
+
+![「Exploratory」の詳細画面の「Accounts」のタブ](images/en/antigravity-02-connected-plugin.png)
+
+画像の 1 は「Accounts」のタブ、2 は「CONNECTED」の表示です。この画像は、英語の画面です。
+
+![「Exploratory」の詳細画面の「MCP」のタブ](images/en/antigravity-02-mcp-plugin.png)
+
+画像の 1 は「MCP」のタブ、2 は exploratory-server の行です。この画像は、英語の画面です。
 
 <a id="trouble"></a>
 

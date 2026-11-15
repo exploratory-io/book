@@ -20,7 +20,9 @@ In the Antigravity app, select Customizations in the sidebar, then select Instal
 
 In the MCP Servers header, select Copy Config File Path to copy the location of the config file (mcp_config.json).
 
-<!-- image: images/en/antigravity-01-customizations.png (Copy Config File Path in MCP Servers, under Installed in Customizations) -->
+![The Installed screen under Customizations: Customizations in the left sidebar and the MCP Servers heading](images/en/antigravity-01-customizations.png)
+
+In the image, 1 is Customizations in the left sidebar and 2 is the MCP Servers heading.
 
 ### 2. Register the server
 
@@ -92,6 +94,20 @@ Find the "Sales Orders" data on Exploratory.
 If the Sales Orders data appears with its URL, the connection works.
 
 <!-- image: images/en/antigravity-04-try.png (Check in a chat) -->
+
+<a id="plugin"></a>
+
+## Check the connection when you installed the plugin
+
+If you installed the Exploratory plugin, open Exploratory under Plugins in Customizations to check the connection. On the Accounts tab, exploratory-server shows OAUTH and CONNECTED. The MCP tab shows exploratory-server and the number of tools it provides (for example "10 tools enabled").
+
+![The Accounts tab in the Exploratory details](images/en/antigravity-02-connected-plugin.png)
+
+In the image, 1 is the Accounts tab and 2 is CONNECTED.
+
+![The MCP tab in the Exploratory details](images/en/antigravity-02-mcp-plugin.png)
+
+In the image, 1 is the MCP tab and 2 is the exploratory-server row.
 
 <a id="trouble"></a>
 

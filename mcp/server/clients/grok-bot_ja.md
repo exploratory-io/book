@@ -22,7 +22,9 @@ Grok Bot のチャットで、次のように送信します。この方法で�
 次のリモート MCP サーバーを追加して。名前: exploratory-server、URL: https://exploratory.io/mcp
 ```
 
-<!-- image: images/ja/grok-bot-01-add.png (チャットで MCP サーバーの追加を頼む) -->
+![チャットで MCP サーバーの追加を頼む](images/ja/grok-bot-01-add.png)
+
+画像の 1 は、入力した追加の依頼です。
 
 ### 2. サインインする
 
@@ -38,7 +40,9 @@ Exploratory にある「Sales Orders」のデータを探して
 
 > Sales Orders のデータが URL 付きで表示されていれば、接続できています。
 
-<!-- image: images/ja/grok-bot-03-try.png (チャットで確かめる) -->
+![チャットで確かめる](images/ja/grok-bot-03-try.png)
+
+画像の 1 は、検索結果の「Sales Orders」のリンクです。
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 

@@ -22,7 +22,9 @@ In a Grok Bot chat, send this message. It adds the MCP server only; it does not 
 Add this remote MCP server. Name: exploratory-server, URL: https://exploratory.io/mcp
 ```
 
-<!-- image: images/en/grok-bot-01-add.png (Ask in the chat to add the MCP server) -->
+![Ask in the chat to add the MCP server](images/ja/grok-bot-01-add.png)
+
+In the image, 1 is the request you type to add the server. This image shows the Japanese screen.
 
 ### 2. Sign in
 
@@ -38,7 +40,9 @@ Find the "Sales Orders" data on Exploratory.
 
 > If the Sales Orders data appears with its URL, the connection works.
 
-<!-- image: images/en/grok-bot-03-try.png (Check in a chat) -->
+![Check in a chat](images/ja/grok-bot-03-try.png)
+
+In the image, 1 is the Sales Orders link in the search result. This image shows the Japanese screen.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 

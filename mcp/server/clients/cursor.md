@@ -31,9 +31,11 @@ Until Exploratory Server is listed in the official plugin directory, add only th
 }
 ```
 
-In the Cursor app, you can check the MCP server you added under Customize in the sidebar. You can turn each server on or off there.
+In the Cursor app, choose Customize in the sidebar, then choose MCPs, to check the MCP server you added. Before you sign in, the exploratory-server row shows "Needs Authentication in Local", with Authenticate at its right.
 
-<!-- image: images/en/cursor-01-customize.png (exploratory-server under Customize in the sidebar) -->
+![The exploratory-server row under MCPs in Customize](images/en/cursor-01-customize.png)
+
+In the image, 1 is MCPs, 2 is the exploratory-server row and 3 is Authenticate.
 
 ### 2. Sign in
 
@@ -41,9 +43,17 @@ In the Cursor app, you can check the MCP server you added under Customize in the
 agent mcp login exploratory-server
 ```
 
-Your browser opens. Sign in to Exploratory and approve the access.
+Your browser opens. Sign in to Exploratory and approve the access. Choosing Authenticate in the app opens the same browser screen.
 
-<!-- image: images/en/cursor-02-sign-in.png (Sign in and approve in the browser) -->
+![The approval screen in the browser](images/en/cursor-02-sign-in.png)
+
+In the image, 1 is Allow.
+
+When you have signed in, exploratory-server moves to the Connected list under MCPs.
+
+![The exploratory-server row in the Connected list](images/en/cursor-01-connected.png)
+
+In the image, 1 is MCPs and 2 is the exploratory-server row in the Connected list.
 
 ### 3. Try it
 

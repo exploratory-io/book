@@ -31,9 +31,11 @@ Exploratory Server が公式のプラグイン一覧に掲載されるまでは�
 }
 ```
 
-Cursor のアプリでは、サイドバーの「Customize」で、追加した MCP サーバーを確かめられます。サーバーごとに、有効と無効を切り替えられます。
+Cursor のアプリでは、サイドバーの「Customize」を選び、「MCPs」を選ぶと、追加した MCP サーバーを確かめられます。サインインの前は、exploratory-server の行に「Needs Authentication in Local」と表示され、右に「Authenticate」が表示されます。
 
-<!-- image: images/ja/cursor-01-customize.png (サイドバーの「Customize」にある exploratory-server) -->
+![「Customize」の「MCPs」にある exploratory-server の行](images/en/cursor-01-customize.png)
+
+画像の 1 は「MCPs」、2 は exploratory-server の行、3 は「Authenticate」です。この画像は、英語の画面です。
 
 ### 2. サインインする
 
@@ -41,9 +43,17 @@ Cursor のアプリでは、サイドバーの「Customize」で、追加した 
 agent mcp login exploratory-server
 ```
 
-ブラウザが開きます。Exploratory にサインインして、アクセスを許可してください。
+ブラウザが開きます。Exploratory にサインインして、アクセスを許可してください。アプリの「Authenticate」を選んでも、同じブラウザの画面が開きます。
 
-<!-- image: images/ja/cursor-02-sign-in.png (ブラウザでのサインインと許可) -->
+![ブラウザの許可の画面](images/ja/cursor-02-sign-in.png)
+
+画像の 1 は「許可する」です。
+
+サインインできると、exploratory-server は、「MCPs」の「Connected」の一覧に移ります。
+
+![「Connected」の一覧にある exploratory-server の行](images/en/cursor-01-connected.png)
+
+画像の 1 は「MCPs」、2 は「Connected」の一覧の exploratory-server の行です。この画像は、英語の画面です。
 
 ### 3. 試す
 
