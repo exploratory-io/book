@@ -27,13 +27,13 @@ The table below shows the main tools as examples. There are many more tools than
 
 ## All tools
 
-There are 146 tools in all (as of tam master). 69 only read, and 77 need permission to create, change or delete.
+There are 146 tools in all (as of tam master). 68 are always available, and 78 work only when Allow create, edit and delete is on in System Settings \> MCP / CLI.
 
-The tools that create, change or delete are available when Allow create, edit and delete is on in System Settings \> MCP / CLI.
+The always-available tools include reading and a few that only open a screen. With the switch off, the other tools stop with a permission error.
 
 ### Projects (16)
 
-**Read only (11)**
+**Always available (12)**
 
 | Name | What it does |
 | --- | --- |
@@ -45,52 +45,52 @@ The tools that create, change or delete are available when Allow create, edit an
 | list_created_artifacts | Lists the charts, analytics, steps and branches the AI created or changed in this conversation. |
 | list_projects | Lists the projects in this installation, newest first. |
 | locate_published_source | Traces published data back to where it came from. |
+| open_project | Opens a local project in its window, or focuses the existing window. |
 | search_artifacts | Searches the open project for items by name, comment or content. |
 | search_projects | Searches all local projects for data frames, charts, analytics, notes and more. |
 | search_server_projects | Lists published projects on the signed-in Exploratory server. |
 
-**Needs create, edit and delete (5)**
+**Available with Allow create, edit and delete on (4)**
 
 | Name | What it does |
 | --- | --- |
 | close_project | Closes the project's window after saving. |
 | import_project | Downloads a published project and imports it as a new local project. |
-| open_project | Opens a local project in its window, or focuses the existing window. |
 | restore_project_history | Restores the whole project to a point in its change history. |
 | save_project | Creates a new project, or imports a project file. |
 
 ### Data frames (10)
 
-**Read only (5)**
+**Always available (6)**
 
 | Name | What it does |
 | --- | --- |
 | get_data_frame | Reads a data frame's steps, column names, types and row count. |
+| get_step_diagram | Returns the Step Diagram of a data frame. |
 | get_summary_view | Returns the Summary table of a data frame. |
 | list_data_frames | Lists the data frames of the project. |
 | preview_data_frame | Returns the first rows of a data frame's last step. |
 | profile_data_frame | Summarizes every column: type, missing values, statistics and distribution. |
 
-**Needs create, edit and delete (5)**
+**Available with Allow create, edit and delete on (4)**
 
 | Name | What it does |
 | --- | --- |
 | execute_r_script | Runs an R script and returns the result. |
-| get_step_diagram | Returns the Step Diagram of a data frame. |
 | manage_data_frame | Runs data frame and catalog actions such as rename and delete. |
 | save_result_as_dataframe | Saves the data of a chart or analytics output as a new data frame. |
 | select_data_frame | Selects the data frame to work on and returns its columns. |
 
 ### Wrangling (15)
 
-**Read only (2)**
+**Always available (2)**
 
 | Name | What it does |
 | --- | --- |
 | get_wrangling_command | Shows the parameters a wrangling command accepts. |
 | list_ai_proposals | Lists the AI proposals of the project with their review status. |
 
-**Needs create, edit and delete (13)**
+**Available with Allow create, edit and delete on (13)**
 
 | Name | What it does |
 | --- | --- |
@@ -110,7 +110,7 @@ The tools that create, change or delete are available when Allow create, edit an
 
 ### Charts (15)
 
-**Read only (7)**
+**Always available (7)**
 
 | Name | What it does |
 | --- | --- |
@@ -122,7 +122,7 @@ The tools that create, change or delete are available when Allow create, edit an
 | list_chart_settings | Shows the settings and functions available for a chart type. |
 | list_charts | Lists the charts of a data frame. |
 
-**Needs create, edit and delete (8)**
+**Available with Allow create, edit and delete on (8)**
 
 | Name | What it does |
 | --- | --- |
@@ -137,7 +137,7 @@ The tools that create, change or delete are available when Allow create, edit an
 
 ### Analytics (9)
 
-**Read only (5)**
+**Always available (5)**
 
 | Name | What it does |
 | --- | --- |
@@ -147,7 +147,7 @@ The tools that create, change or delete are available when Allow create, edit an
 | list_analytics | Lists the analytics of a data frame. |
 | list_analytics_templates | Lists the analytics types that can be created. |
 
-**Needs create, edit and delete (4)**
+**Available with Allow create, edit and delete on (4)**
 
 | Name | What it does |
 | --- | --- |
@@ -158,7 +158,7 @@ The tools that create, change or delete are available when Allow create, edit an
 
 ### Notes (10)
 
-**Read only (3)**
+**Always available (3)**
 
 | Name | What it does |
 | --- | --- |
@@ -166,7 +166,7 @@ The tools that create, change or delete are available when Allow create, edit an
 | get_note_image | Returns the whole note preview as a PNG image. |
 | list_notes | Lists the notes of the project without their bodies. |
 
-**Needs create, edit and delete (7)**
+**Available with Allow create, edit and delete on (7)**
 
 | Name | What it does |
 | --- | --- |
@@ -180,7 +180,7 @@ The tools that create, change or delete are available when Allow create, edit an
 
 ### Dashboards (9)
 
-**Read only (4)**
+**Always available (4)**
 
 | Name | What it does |
 | --- | --- |
@@ -189,7 +189,7 @@ The tools that create, change or delete are available when Allow create, edit an
 | list_dashboards | Lists the dashboards of the project. |
 | validate_dashboard | Checks a dashboard layout without saving it. |
 
-**Needs create, edit and delete (5)**
+**Available with Allow create, edit and delete on (5)**
 
 | Name | What it does |
 | --- | --- |
@@ -201,44 +201,44 @@ The tools that create, change or delete are available when Allow create, edit an
 
 ### Data sources and connections (18)
 
-**Read only (12)**
+**Always available (8)**
 
 | Name | What it does |
 | --- | --- |
 | get_connections | Reads the data connections, or one connection's items. |
 | get_data_source_params | Shows the settings a data source plugin takes and whether it needs a connection. |
 | identify_data_source | Identifies the requested data source and returns its reference. |
-| list_pdf_tables | Previews the tables found in a PDF file. |
-| list_schema_nodes | Lists the child nodes of a path in a hierarchical connection. |
 | lookup_connection | Finds a selected connection and returns its metadata without credentials. |
 | lookup_reference | Returns the AI Data reference for a kind of data source. |
-| read_file_header | Checks the beginning and format of a local text file. |
 | request_connection_creation | Opens the connection creation dialog. |
-| sample_collections | Gets the actual table list and samples of a connection. |
 | search_schema | Reads the saved table and column information of a connection. |
 | validate_connection | Checks whether a saved connection has all required items. |
 
-**Needs create, edit and delete (6)**
+**Available with Allow create, edit and delete on (10)**
 
 | Name | What it does |
 | --- | --- |
 | create_data_source | Saves a data frame together with its data source. |
 | delete_connection | Deletes a data connection. |
 | extract_pdf_tables | Checks the contents of a PDF table before importing it. |
+| list_pdf_tables | Previews the tables found in a PDF file. |
+| list_schema_nodes | Lists the child nodes of a path in a hierarchical connection. |
+| read_file_header | Checks the beginning and format of a local text file. |
 | replace_data_source | Replaces the data source of an existing data frame. |
+| sample_collections | Gets the actual table list and samples of a connection. |
 | save_connection | Opens the dialog to create or edit a connection; the user enters the values. |
 | save_schema_info | Saves table and column information confirmed from a connection. |
 
 ### Parameters (6)
 
-**Read only (2)**
+**Always available (2)**
 
 | Name | What it does |
 | --- | --- |
 | get_parameters | Reads the project's parameters. |
 | get_session_parameters | Reads the definitions of session parameters set from the login. |
 
-**Needs create, edit and delete (4)**
+**Available with Allow create, edit and delete on (4)**
 
 | Name | What it does |
 | --- | --- |
@@ -249,14 +249,14 @@ The tools that create, change or delete are available when Allow create, edit an
 
 ### Publishing (7)
 
-**Read only (2)**
+**Always available (2)**
 
 | Name | What it does |
 | --- | --- |
 | list_published | Lists the notes, dashboards and data published from the project. |
 | list_teams | Lists the teams you belong to. |
 
-**Needs create, edit and delete (5)**
+**Available with Allow create, edit and delete on (5)**
 
 | Name | What it does |
 | --- | --- |
@@ -268,7 +268,7 @@ The tools that create, change or delete are available when Allow create, edit an
 
 ### Settings and shared resources (17)
 
-**Read only (7)**
+**Always available (7)**
 
 | Name | What it does |
 | --- | --- |
@@ -280,7 +280,7 @@ The tools that create, change or delete are available when Allow create, edit an
 | get_r_packages | Lists the custom R packages of the project. |
 | get_system_settings | Reads the system settings, with secrets hidden. |
 
-**Needs create, edit and delete (10)**
+**Available with Allow create, edit and delete on (10)**
 
 | Name | What it does |
 | --- | --- |
@@ -297,7 +297,7 @@ The tools that create, change or delete are available when Allow create, edit an
 
 ### Local data catalog (10)
 
-**Read only (7)**
+**Always available (7)**
 
 | Name | What it does |
 | --- | --- |
@@ -309,7 +309,7 @@ The tools that create, change or delete are available when Allow create, edit an
 | read_catalog | Reads data frames, charts, analytics, notes, parameters and dashboards of the project in one call. |
 | search_catalog | Searches the local data catalog on this computer. |
 
-**Needs create, edit and delete (3)**
+**Available with Allow create, edit and delete on (3)**
 
 | Name | What it does |
 | --- | --- |
@@ -319,17 +319,17 @@ The tools that create, change or delete are available when Allow create, edit an
 
 ### Other (4)
 
-**Read only (2)**
-
-| Name | What it does |
-| --- | --- |
-| get_execution | Returns the progress and results of a long-running operation. |
-| get_guide | Returns the usage guide of a tool. |
-
-**Needs create, edit and delete (2)**
+**Always available (3)**
 
 | Name | What it does |
 | --- | --- |
 | cancel_execution | Stops a long-running operation. |
+| get_execution | Returns the progress and results of a long-running operation. |
+| get_guide | Returns the usage guide of a tool. |
+
+**Available with Allow create, edit and delete on (1)**
+
+| Name | What it does |
+| --- | --- |
 | rerun_artifact | Re-runs a chart, analytics or other item of the open project. |
 
