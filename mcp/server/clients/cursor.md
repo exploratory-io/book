@@ -73,7 +73,7 @@ When you have signed in, exploratory-server moves to the Connected list under MC
 Next, in a new chat, send this.
 
 ```text
-Find the "Sales Orders" data on Exploratory.
+Find the "Sales Orders" data on Exploratory. Please respond in English.
 ```
 
 After you send it, check the result.

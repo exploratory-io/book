@@ -20,7 +20,7 @@ It takes about 10 minutes. You need an Exploratory account and Antigravity.
 Check that Installed is selected at the top of the screen, then do this.
 
 1. In the Antigravity app, select Customizations in the sidebar.
-2. On the MCP Servers row, select Copy Config File Path at the right end. The location of the config file (mcp_config.json) is copied.
+2. At the right end of the MCP Servers row, select the copy icon (Copy Config File Path). The location of the config file (mcp_config.json) is copied.
 
 ![The Installed screen under Customizations](images/en/antigravity-01-customizations.png)
 
@@ -82,12 +82,12 @@ In agy, go back to agy and do this.
 In a new chat, send this.
 
 ```text
-Find the "Sales Orders" data on Exploratory.
+Find the "Sales Orders" data on Exploratory. Please respond in English.
 ```
 
 After you send it, check the result.
 
-1. Check the Sales Orders data in the table of search results.
+1. Check the Sales Orders link in the reply.
 
 ![Check in a chat](images/en/antigravity-04-try.png)
 

@@ -20,9 +20,9 @@
 画面の上の「Installed」が選ばれていることを確かめてから、操作します。
 
 1. Antigravity のアプリで、サイドバーの「Customizations」を選びます。
-2. 「MCP Servers」の行の右端にある「Copy Config File Path」を選びます。設定ファイル（mcp_config.json）の場所がコピーされます。
+2. 「MCP Servers」の行の右端にあるコピーのアイコン（「Copy Config File Path」）を選びます。設定ファイル（mcp_config.json）の場所がコピーされます。
 
-![「Customizations」の「Installed」の画面（英語の画面）](images/en/antigravity-01-customizations.png)
+![「Customizations」の「Installed」の画面（英語の画面）](images/ja/antigravity-01-customizations.png)
 
 ### サーバーを登録する
 
@@ -82,14 +82,16 @@ agy では、agy に戻って、次の操作をします。
 新しいチャットで、次のように送信します。
 
 ```text
-Exploratory にある「Sales Orders」のデータを探して
+Exploratory にある「Sales Orders」のデータを探して。exploratory.io の公開データを対象に、先ほど追加した Exploratory という名前の MCP サーバーを使って。
 ```
+
+「exploratory.io の公開データを対象に」と接続名を添えると、Desktop ではなく Server が使われます。接続名は、登録した名前に置き換えます（この画像では「Exploratory」）。
 
 送信したあと、結果を確かめます。
 
-1. 検索結果の表にある「Sales Orders」のデータを確かめます。
+1. 返答の表にある、「Sales Orders」の URL を確かめます。
 
-![チャットで確かめる（英語の画面）](images/en/antigravity-04-try.png)
+![チャットで確かめる（英語の画面）](images/ja/antigravity-04-try.png)
 
 Sales Orders のデータが URL つきで表示されれば、接続できています。
 
@@ -104,7 +106,7 @@ Exploratory のプラグインをインストールしたときは、「Customiz
 1. 「Accounts」のタブを選びます。
 2. exploratory-server の「CONNECTED」の表示を確かめます。
 
-![「Exploratory」の詳細画面の「Accounts」のタブ（英語の画面）](images/en/antigravity-02-connected-plugin.png)
+![「Exploratory」の詳細画面の「Accounts」のタブ（英語の画面）](images/ja/antigravity-02-connected-plugin.png)
 
 exploratory-server が「OAUTH」「CONNECTED」と表示されていれば、接続できています。
 
@@ -113,7 +115,7 @@ exploratory-server が「OAUTH」「CONNECTED」と表示されていれば、�
 1. 「MCP」のタブを選びます。
 2. exploratory-server の行を確かめます。
 
-![「Exploratory」の詳細画面の「MCP」のタブ（英語の画面）](images/en/antigravity-02-mcp-plugin.png)
+![「Exploratory」の詳細画面の「MCP」のタブ（英語の画面）](images/ja/antigravity-02-mcp-plugin.png)
 
 exploratory-server と、使えるツールの数（例: 「10 tools enabled」）が表示されます。
 

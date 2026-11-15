@@ -1,6 +1,6 @@
 # Connect Grok Bot
 
-After you connect, an AI can read notes and data published on Exploratory. You add the Exploratory server in a Grok Bot chat. Grok Bot is a chat client where you add MCP servers by message.
+After you connect, an AI can read notes and data published on Exploratory. You add the Exploratory server in Grok Bot as a custom connector.
 It takes about 3 minutes. You need an Exploratory account and Grok Bot.
 
 <a id="need"></a>
@@ -15,36 +15,42 @@ It takes about 3 minutes. You need an Exploratory account and Grok Bot.
 
 ## Steps
 
-### Ask it to add the server
+### Open the custom connector form
 
 This adds the MCP server only; it does not install the skill.
 
-1. In the input field of a Grok Bot chat, type this request.
+1. In Grok Bot's sidebar, open the item for connecting apps.
+2. Scroll down and choose Add a custom connector.
 
-   ```text
-   Add this remote MCP server. Name: exploratory-server, URL: https://exploratory.io/mcp
-   ```
+### Fill in the form
 
-2. Send it.
+Enter Exploratory as the Name, and keep the Type as Remote HTTPS. The image shows an example name.
 
-![Ask in the chat to add the MCP server](images/en/grok-bot-01-add.png)
+1. In Server URL, enter `https://exploratory.io/mcp`.
+2. Choose Add plugin.
 
-The image is an example from an account where the server was already connected. Its input field shows the same request in other words, and Grok Bot answers that the server is already added, so no card appears. On a first connection, the card appears as described next.
+![The Add a custom connector form](images/en/grok-bot-02-form.png)
 
-### Sign in
-
-1. When Grok Bot shows a card for exploratory-server, sign in to Exploratory from the card.
-2. Check the card's display, following what Grok Bot shows. This page does not quote the card's wording, because it has not been confirmed on a real screen.
+In our check, Grok Bot connected without showing a sign-in screen.
 
 ### Check that it is connected
 
-In a new chat, send this.
+Open the connector you added and check its details.
+
+1. Check that the account shows Connected.
+2. Check that Tools shows all the tools enabled (for example "12 of 12 enabled").
+
+![The connector's details](images/en/grok-bot-02-connected.png)
+
+Next, in a chat, send this.
 
 ```text
-Find the "Sales Orders" data on Exploratory.
+Use the Exploratory MCP server you just added to find the Sales Orders data. Please respond in English.
 ```
 
 After you send it, check the result.
+
+1. Check the Sales Orders link in the reply.
 
 If the reply shows a link to Sales Orders, it is working.
 
@@ -66,6 +72,6 @@ A skill gives an AI instructions for using a service. It is separate from the MC
 
 ## Disconnect
 
-Remove exploratory-server from Grok Bot's connections.
+Open the connector's details in Grok Bot and choose Uninstall.
 
 Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in your account settings on exploratory.io.

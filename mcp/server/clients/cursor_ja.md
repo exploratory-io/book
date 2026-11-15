@@ -68,7 +68,7 @@ agent mcp login exploratory-server
 1. 「MCPs」を選びます。
 2. 「Connected」の一覧の exploratory-server の行を確かめます。
 
-![「Connected」の一覧にある exploratory-server の行（英語の画面）](images/en/cursor-01-connected.png)
+![「Connected」の一覧にある exploratory-server の行（英語の画面）](images/ja/cursor-01-connected.png)
 
 続けて、新しいチャットで、次のように送信します。
 
@@ -80,7 +80,7 @@ Exploratory にある「Sales Orders」のデータを探して
 
 1. 検索結果の「Sales Orders」のリンクを確かめます。
 
-![チャットで確かめる（英語の画面）](images/en/cursor-03-try.png)
+![チャットで確かめる（英語の画面）](images/ja/cursor-03-try.png)
 
 Sales Orders のデータが URL 付きで表示されていれば、接続できています。
 
