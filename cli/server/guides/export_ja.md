@@ -91,5 +91,5 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 | SERVER_BUSY | ほかの書き出しが実行中か、1 時間あたりの書き出しの上限に達しています。書き出しは、1 人につき同時に 1 つだけ実行できます。数秒おいてから再度実行します。上限に達した場合は、最大 1 時間待ちます。 |
 | Run "expl server login". | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
 
-- [dataframe export](../dataframe-export_ja.md) - すべてのフラグを説明しています。
-- [dataset query](../dataset-query_ja.md) - 絞り込みと集計の指定方法を説明しています。
+- [dataframe export](../commands_ja.md#dataframe-export) - すべてのフラグを説明しています。
+- [dataset query](../commands_ja.md#dataset-query) - 絞り込みと集計の指定方法を説明しています。

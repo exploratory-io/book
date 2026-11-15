@@ -110,7 +110,7 @@ Replace \<dataset_id\> with the data id and region with a real column name. The 
 
 When the result is too large, save it as a CSV or Parquet file with dataframe export. To join several data items, see the dataset query page.
 
-- [dataset query](../dataset-query.md) - Describes every flag.
+- [dataset query](../commands.md#dataset-query) - Describes every flag.
 
 <a id="json"></a>
 

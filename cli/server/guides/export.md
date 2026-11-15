@@ -91,5 +91,5 @@ In this case, use fetch or dataframe get-schema for what the publisher shares, o
 | SERVER_BUSY | Another export of yours is running, or you reached the hourly export limit. One export can run at a time per user. Try again in a few seconds; for the hourly limit, wait up to an hour. |
 | Run "expl server login". | Sign-in is missing, or the saved login or API key was rejected. Run expl server login. |
 
-- [dataframe export](../dataframe-export.md) - Describes every flag.
-- [dataset query](../dataset-query.md) - Describes how to filter and aggregate.
+- [dataframe export](../commands.md#dataframe-export) - Describes every flag.
+- [dataset query](../commands.md#dataset-query) - Describes how to filter and aggregate.

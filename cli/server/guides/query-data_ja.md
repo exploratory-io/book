@@ -110,7 +110,7 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 
 結果が大きすぎる場合は、dataframe export で CSV または Parquet のファイルにします。複数のデータを結合する方法は、dataset query のページを参照してください。
 
-- [dataset query](../dataset-query_ja.md) - すべてのフラグを説明しています。
+- [dataset query](../commands_ja.md#dataset-query) - すべてのフラグを説明しています。
 
 <a id="json"></a>
 

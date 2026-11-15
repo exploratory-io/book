@@ -149,4 +149,4 @@ The result holds the model definition (target, predictors, N), result tables wit
 | You do not know the name of the analytics | Look at metadata.blocks in the result of fetch. |
 | Run "expl server login". | Sign-in is missing, or the saved login or API key was rejected. Run expl server login. |
 
-- [analytics get-result](../analytics-get-result.md) - Describes every flag.
+- [analytics get-result](../commands.md#analytics-get-result) - Describes every flag.

@@ -347,6 +347,6 @@ expl server chart get-image <id> --chart <chart> --json
 | DATA_EGRESS_LIMIT | 公開した人が、このデータの行を共有していません。チャート、アナリティクス、要約を使用します。 |
 | Run "expl server login". | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
 
-- [chart get-data](../chart-get-data_ja.md) - すべてのフラグを説明しています。
-- [chart query](../chart-query_ja.md) - 集計の指定方法を説明しています。
-- [chart get-image](../chart-get-image_ja.md) - 画像の取得を説明しています。
+- [chart get-data](../commands_ja.md#chart-get-data) - すべてのフラグを説明しています。
+- [chart query](../commands_ja.md#chart-query) - 集計の指定方法を説明しています。
+- [chart get-image](../commands_ja.md#chart-get-image) - 画像の取得を説明しています。

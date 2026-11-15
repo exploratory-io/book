@@ -149,4 +149,4 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 | アナリティクスの名前がわからない | fetch の結果の metadata.blocks を確認します。 |
 | Run "expl server login". | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
 
-- [analytics get-result](../analytics-get-result_ja.md) - すべてのフラグを説明しています。
+- [analytics get-result](../commands_ja.md#analytics-get-result) - すべてのフラグを説明しています。
