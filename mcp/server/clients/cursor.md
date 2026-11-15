@@ -63,7 +63,9 @@ Find the "Sales Orders" data on Exploratory.
 
 > If the Sales Orders data appears with its URL, the connection works.
 
-<!-- image: images/en/cursor-03-try.png (Check in a chat) -->
+![Check in a chat](images/en/cursor-03-try.png)
+
+In the image, 1 is the Sales Orders link in the search result.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 

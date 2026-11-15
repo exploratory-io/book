@@ -30,8 +30,6 @@ Grok Bot のチャットで、次のように送信します。この方法で�
 
 exploratory-server のカードが表示されます。カードから Exploratory にサインインします。カードが「接続済み」になったら、次の手順で確認します。
 
-<!-- image: images/ja/grok-bot-02-card.png (exploratory-server のカード) -->
-
 ### 3. 試す
 
 ```text

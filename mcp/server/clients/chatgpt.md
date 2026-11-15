@@ -89,7 +89,7 @@ For a server that needs OAuth, the list of servers shows that. When it does, cho
 
 ### 13. Approve the access
 
-Your browser opens exploratory.io. If you are not signed in, sign in first. On the screen where ChatGPT asks for access, choose Allow. (The screen in the image below is shown in Japanese.)
+Your browser opens exploratory.io. If you are not signed in, sign in first. On the screen where ChatGPT asks for access, choose Allow.
 
 ![The approval screen on exploratory.io](images/en/chatgpt-07-sign-in.png)
 

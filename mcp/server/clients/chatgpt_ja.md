@@ -91,7 +91,7 @@ https://exploratory.io/mcp
 
 ブラウザで exploratory.io が開きます。サインインしていないときは、先にサインインします。ChatGPT がアクセスを求めている画面で、「許可する」を選びます。
 
-![exploratory.io の許可の画面](images/en/chatgpt-07-sign-in.png)
+![exploratory.io の許可の画面](images/ja/chatgpt-07-sign-in.png)
 
 画像の 1 は「許可する」です。
 
@@ -195,7 +195,7 @@ https://exploratory.io/mcp
 
 ブラウザで exploratory.io が開きます。サインインしていないときは、先にサインインします。ChatGPT がアクセスを求めている画面で、「許可する」を選びます。
 
-![exploratory.io の許可の画面](images/en/chatgpt-07-sign-in.png)
+![exploratory.io の許可の画面](images/ja/chatgpt-07-sign-in.png)
 
 画像の 1 は「許可する」です。
 

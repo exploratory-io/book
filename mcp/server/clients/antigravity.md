@@ -52,8 +52,6 @@ To use the agy command line, write the same content in ~/.gemini/config/mcp_conf
 
 Under MCP Servers, select Authenticate next to exploratory-server.
 
-<!-- image: images/en/antigravity-02-authenticate.png (Authenticate next to exploratory-server) -->
-
 ### 6. Sign in in the browser
 
 Your browser opens. Sign in to Exploratory.
@@ -73,8 +71,6 @@ Paste the authorization code into the Enter authorization code field.
 ### 10. Select Submit
 
 Select Submit.
-
-<!-- image: images/en/antigravity-03-authorization-code.png (The Enter authorization code field) -->
 
 The server reconnects automatically. A server you have signed in to shows a Sign out button.
 
@@ -99,7 +95,9 @@ Find the "Sales Orders" data on Exploratory.
 
 If the Sales Orders data appears with its URL, the connection works.
 
-<!-- image: images/en/antigravity-04-try.png (Check in a chat) -->
+![Check in a chat](images/en/antigravity-04-try.png)
+
+In the image, 1 is the Sales Orders data in the table of search results.
 
 <a id="plugin"></a>
 

@@ -52,8 +52,6 @@ mcp_config.json を開き、次の内容を書き足します。リモートの�
 
 「MCP Servers」で、exploratory-server の横にある「Authenticate」を選びます。
 
-<!-- image: images/ja/antigravity-02-authenticate.png (exploratory-server の横の「Authenticate」) -->
-
 ### 6. ブラウザでサインインする
 
 ブラウザが開きます。Exploratory にサインインします。
@@ -73,8 +71,6 @@ Exploratory の同意画面で、アクセスを許可します。
 ### 10. 「Submit」を選ぶ
 
 「Submit」を選びます。
-
-<!-- image: images/ja/antigravity-03-authorization-code.png (「Enter authorization code」の欄) -->
 
 サーバーは、自動でつなぎ直されます。サインインできたサーバーには、「Sign out」のボタンが表示されます。
 
@@ -99,7 +95,9 @@ Exploratory にある「Sales Orders」のデータを探して
 
 Sales Orders のデータが URL つきで表示されれば、接続できています。
 
-<!-- image: images/ja/antigravity-04-try.png (チャットで確かめる) -->
+![チャットで確かめる](images/en/antigravity-04-try.png)
+
+画像の 1 は、検索結果の表の「Sales Orders」のデータです。この画像は、英語の画面です。
 
 <a id="plugin"></a>
 

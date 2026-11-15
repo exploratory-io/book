@@ -63,7 +63,9 @@ Exploratory にある「Sales Orders」のデータを探して
 
 > Sales Orders のデータが URL 付きで表示されていれば、接続できています。
 
-<!-- image: images/ja/cursor-03-try.png (チャットで確かめる) -->
+![チャットで確かめる](images/en/cursor-03-try.png)
+
+画像の 1 は、検索結果の「Sales Orders」のリンクです。この画像は、英語の画面です。
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 
