@@ -29,11 +29,7 @@ This adds the MCP server only; it does not install the skill.
 
 The image is an example from an account where the server was already connected. Its input field shows the same request in other words, and Grok Bot answers that the server is already added, so no card appears. On a first connection, the card appears as described next.
 
-### Sign in
-
-Grok Bot shows a card for exploratory-server.
-
-1. Sign in to Exploratory from the card.
+2. When Grok Bot shows a card for exploratory-server, sign in to Exploratory from the card.
 
 When the card says it is connected, check the connection in the next step.
 
@@ -45,7 +41,7 @@ When the card says it is connected, check the connection in the next step.
    Find the "Sales Orders" data on Exploratory.
    ```
 
-### Check the result
+Next, check the result.
 
 1. Check the Sales Orders link in the search result.
 

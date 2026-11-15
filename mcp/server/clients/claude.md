@@ -37,7 +37,7 @@ The add menu opens.
 
 ![The add menu](images/en/claude-02-add-menu.png)
 
-### Enter the address
+### Enter the address and add
 
 1. In the name field, enter `Exploratory`.
 2. In the MCP server URL field, enter `https://exploratory.io/mcp`.
@@ -45,7 +45,7 @@ The add menu opens.
 
 ![The Add custom connector screen](images/en/claude-03-custom-connector.png)
 
-### Check the authentication and add
+Choosing Continue opens the authentication screen.
 
 1. Check that Authentication is Sign in now.
 2. Choose Add.
@@ -53,8 +53,6 @@ The add menu opens.
 ![The Authentication and OAuth client screen](images/en/claude-03b-auth-options.png)
 
 OAuth client is Use Claude's published identity. Both are marked Detected. There is nothing to change.
-
-### Approve the access on exploratory.io
 
 Your browser opens exploratory.io and shows "Claude is asking for access to your Exploratory account". If you are not signed in, sign in first.
 
@@ -72,9 +70,7 @@ If the connector connects without showing this screen, go on to the next check.
 
 When Exploratory appears with the Custom label and a check mark under Status, the connection works.
 
-### Try it
-
-1. Open a new chat and send this.
+2. Open a new chat and send this.
 
    ```text
    Find the "Sales Orders" data on Exploratory.

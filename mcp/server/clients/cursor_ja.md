@@ -19,9 +19,8 @@
 
 Exploratory Server が公式のプラグイン一覧に掲載されるまでは、サーバーのみを手動で追加します。スキルは含まれません。
 
-1. ~/.cursor/mcp.json（プロジェクト単位の場合は .cursor/mcp.json）に、次の内容を記述します。
-
-   **mcp.json**
+1. ~/.cursor/mcp.json（プロジェクト単位の場合は .cursor/mcp.json）を開きます。
+2. 次の内容を記述します。
 
    ```text
    {
@@ -34,7 +33,7 @@ Exploratory Server が公式のプラグイン一覧に掲載されるまでは�
    }
    ```
 
-### 「Customize」の「MCPs」を開く
+### 「MCPs」を開いてサインインする
 
 Cursor のアプリで、サイドバーの「Customize」を選ぶと、追加した MCP サーバーを確かめられます。
 
@@ -50,9 +49,7 @@ Cursor のアプリで、サイドバーの「Customize」を選ぶと、追加�
 agent mcp login exploratory-server
 ```
 
-### ブラウザで許可する
-
-ブラウザが開きます。サインインしていないときは、Exploratory にサインインします。アプリの「Authenticate」を選んでも、ターミナルのコマンドでも、同じブラウザの画面が開きます。
+続けて、ブラウザが開きます。サインインしていないときは、Exploratory にサインインします。アプリの「Authenticate」を選んでも、ターミナルのコマンドでも、同じブラウザの画面が開きます。
 
 1. 「許可する」を選びます。
 
@@ -75,7 +72,7 @@ agent mcp login exploratory-server
    Exploratory にある「Sales Orders」のデータを探して
    ```
 
-### 結果を確かめる
+続けて、結果を確かめます。
 
 1. 検索結果の「Sales Orders」のリンクを確かめます。
 

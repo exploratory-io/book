@@ -28,9 +28,8 @@
 
 リモートのサーバーは、「serverUrl」に URL を書きます。
 
-1. mcp_config.json を開き、次の内容を書き足します。
-
-   **mcp_config.json**
+1. mcp_config.json を開きます。
+2. 次の内容を書き足します。
 
    ```text
    {
@@ -44,40 +43,28 @@
 
 コマンドラインの agy で使うときは、~/.gemini/config/mcp_config.json に、同じ内容を書きます。
 
-### アプリでサインインを始める
+### アプリでサインインする
 
 1. 「MCP Servers」で、exploratory-server の横にある「Authenticate」を選びます。
-
-### ブラウザで許可する
-
-1. ブラウザが開いたら、Exploratory にサインインします。
-2. Exploratory の同意画面で、アクセスを許可します。
-3. ブラウザに表示された認可コードをコピーします。
-
-### アプリに認可コードを貼り付ける
-
-1. 「Enter authorization code」の欄に、認可コードを貼り付けます。
-2. 「Submit」を選びます。
+2. ブラウザが開いたら、Exploratory にサインインします。
+3. Exploratory の同意画面で、アクセスを許可します。
+4. ブラウザに表示された認可コードをコピーします。
+5. Antigravity に戻り、「Enter authorization code」の欄に、認可コードを貼り付けます。
+6. 「Submit」を選びます。
 
 サーバーは、自動でつなぎ直されます。サインインできたサーバーには、「Sign out」のボタンが表示されます。
 
-### agy でサインインを始める
+### agy でサインインする
 
-agy で使うときは、次の順で行います。
+コマンドラインの agy で使うときは、次の順で行います。
 
 1. agy を起動します。
 2. `/plugin` を実行します。
 3. exploratory-server の接続を開きます（Desktop プラグインの exploratory とは別です）。
 4. 「Sign in」を選びます。
-
-### agy のサインインで、ブラウザで許可する
-
-1. Exploratory の同意画面で許可します。
-2. ブラウザに表示された認可コードをコピーします。
-
-### agy に認可コードを貼り付ける
-
-1. ブラウザからコピーした認可コードを、agy に貼り付けます。
+5. ブラウザで、Exploratory の同意画面で許可します。
+6. ブラウザに表示された認可コードをコピーします。
+7. agy に戻り、認可コードを貼り付けます。
 
 ### 試す
 
@@ -87,7 +74,7 @@ agy で使うときは、次の順で行います。
    Exploratory にある「Sales Orders」のデータを探して
    ```
 
-### 結果を確かめる
+続けて、結果を確かめます。
 
 1. 検索結果の表にある「Sales Orders」のデータを確かめます。
 
@@ -101,7 +88,7 @@ Sales Orders のデータが URL つきで表示されれば、接続できて�
 
 Exploratory のプラグインをインストールしたときは、「Customizations」の「Plugins」で「Exploratory」を開くと、接続の状態を確かめられます。
 
-### 「Accounts」のタブで確かめる
+次の 2 つの画面で確かめられます。
 
 1. 「Accounts」のタブを選びます。
 2. exploratory-server の「CONNECTED」の表示を確かめます。
@@ -110,7 +97,7 @@ Exploratory のプラグインをインストールしたときは、「Customiz
 
 exploratory-server が「OAUTH」「CONNECTED」と表示されていれば、接続できています。
 
-### 「MCP」のタブで確かめる
+続けて、「MCP」のタブを確かめます。
 
 1. 「MCP」のタブを選びます。
 2. exploratory-server の行を確かめます。

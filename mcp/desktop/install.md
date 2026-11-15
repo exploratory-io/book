@@ -25,11 +25,11 @@ The card says:
 
 The card lists Claude Code, Codex, Antigravity and Cursor. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
 
-### Turn on MCP and save
+Next, on the same screen, do this.
 
-1. Turn on the MCP switch. It is off by default.
-2. Only when you want the AI to create or change charts, notes and other content, check Allow create, edit and delete. Without it, the AI can only read.
-3. Choose Save at the bottom of the screen.
+4. Turn on the MCP switch. It is off by default.
+5. Only when you want the AI to create or change charts, notes and other content, check Allow create, edit and delete. Without it, the AI can only read.
+6. Choose Save at the bottom of the screen.
 
 If you do not save, the MCP switch and the Allow create, edit and delete setting do not take effect.
 

@@ -44,22 +44,18 @@ The Add menu opens.
 
 ![The Connect to a custom MCP screen](images/en/chatgpt-desktop-05-custom-mcp-filled.png)
 
+4. Choose Save at the bottom right.
+
 Do not choose STDIO. You can leave the other fields empty (Exploratory connects through a sign-in in your browser).
 
-### Save
-
-1. Choose Save at the bottom right.
-
-### Restart ChatGPT and authenticate
+### Restart and approve the access on exploratory.io
 
 The [official documentation](https://learn.chatgpt.com/docs/extend/mcp) describes what to do after you save as follows. The labels are quoted as the documentation writes them.
 
 1. Restart the ChatGPT desktop app, following the documentation's Restart instruction.
 2. When the list of servers shows that the server needs OAuth, choose Authenticate, as the documentation says.
 
-### Approve the access on exploratory.io
-
-Your browser opens exploratory.io. If you are not signed in, sign in first.
+Next, your browser opens exploratory.io. If you are not signed in, sign in first.
 
 1. On the screen where ChatGPT asks for access, choose Allow.
 
@@ -73,9 +69,7 @@ Your browser opens exploratory.io. If you are not signed in, sign in first.
 
 If the server you added appears, it was added. Type `/mcp` in the chat box to see the connected servers.
 
-### Try it
-
-1. Open a new chat and send this.
+2. Open a new chat and send this.
 
    ```text
    Find the "Sales Orders" data on Exploratory.
@@ -122,20 +116,16 @@ On the Add custom MCP server screen, enter these values.
 
 ![The screen with the name, the URL and the check box filled in](images/en/chatgpt-05-custom-mcp-filled.png)
 
-### Create it
+4. Check that Authentication is OAuth. There is nothing to change.
+5. Choose Create as a plugin.
 
-1. Check that Authentication is OAuth. There is nothing to change.
-2. Choose Create as a plugin.
-
-### Start the approval on the Connect screen
+### Approve the access from the Connect screen
 
 The Connect Exploratory screen opens.
 
 1. Choose the Connect Exploratory button.
 
 ![The Connect Exploratory screen](images/en/chatgpt-06-connect-dialog.png)
-
-### Approve the access on exploratory.io
 
 Your browser opens exploratory.io. If you are not signed in, sign in first.
 
@@ -153,10 +143,8 @@ Back in ChatGPT, Exploratory appears under Installed on the left of Customize. O
 
 The Developer field is blurred in the image. Information lists Developer, Category, Version and Website.
 
-### Try it
-
-1. Choose Try in chat to open a chat.
-2. Send this.
+2. Choose Try in chat to open a chat.
+3. Send this.
 
    ```text
    Find the "Sales Orders" data on Exploratory.

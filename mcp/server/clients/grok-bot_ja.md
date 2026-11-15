@@ -27,11 +27,7 @@
 
 ![チャットで MCP サーバーの追加を頼む](images/ja/grok-bot-01-add.png)
 
-### サインインする
-
-exploratory-server のカードが表示されます。
-
-1. カードから Exploratory にサインインします。
+2. exploratory-server のカードが表示されたら、カードから Exploratory にサインインします。
 
 カードが「接続済み」になったら、次の手順で確認します。
 
@@ -43,7 +39,7 @@ exploratory-server のカードが表示されます。
    Exploratory にある「Sales Orders」のデータを探して
    ```
 
-### 結果を確かめる
+続けて、結果を確かめます。
 
 1. 検索結果の「Sales Orders」のリンクを確かめます。
 

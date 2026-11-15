@@ -28,9 +28,8 @@ Check that Installed is selected at the top of the screen.
 
 A remote server takes its URL in "serverUrl".
 
-1. Open mcp_config.json and add the following.
-
-   **mcp_config.json**
+1. Open mcp_config.json.
+2. Add the following.
 
    ```text
    {
@@ -44,40 +43,28 @@ A remote server takes its URL in "serverUrl".
 
 To use the agy command line, write the same content in ~/.gemini/config/mcp_config.json.
 
-### Start the sign-in in the app
+### Sign in from the app
 
 1. Under MCP Servers, select Authenticate next to exploratory-server.
-
-### Approve the access in the browser
-
-1. When your browser opens, sign in to Exploratory.
-2. On Exploratory's consent page, approve the access.
-3. Copy the authorization code shown in the browser.
-
-### Paste the authorization code into the app
-
-1. Paste the authorization code into the Enter authorization code field.
-2. Select Submit.
+2. When your browser opens, sign in to Exploratory.
+3. On Exploratory's consent page, approve the access.
+4. Copy the authorization code shown in the browser.
+5. Back in Antigravity, paste the authorization code into the Enter authorization code field.
+6. Select Submit.
 
 The server reconnects automatically. A server you have signed in to shows a Sign out button.
 
-### Start the sign-in in agy
+### Sign in from agy
 
-To use agy, follow these steps.
+To use the agy command line, follow these steps.
 
 1. Start agy.
 2. Run `/plugin`.
 3. Open the exploratory-server connection (the Desktop plugin exploratory is separate).
 4. Choose Sign in.
-
-### Approve the access in the browser for agy
-
-1. Approve on Exploratory's consent page.
-2. Copy the authorization code shown in the browser.
-
-### Paste the authorization code into agy
-
-1. Paste the authorization code you copied from the browser into agy.
+5. In the browser, approve on Exploratory's consent page.
+6. Copy the authorization code shown in the browser.
+7. Back in agy, paste the authorization code.
 
 ### Try it
 
@@ -87,7 +74,7 @@ To use agy, follow these steps.
    Find the "Sales Orders" data on Exploratory.
    ```
 
-### Check the result
+Next, check the result.
 
 1. Check the Sales Orders data in the table of search results.
 
@@ -101,7 +88,7 @@ If the Sales Orders data appears with its URL, the connection works.
 
 If you installed the Exploratory plugin, open Exploratory under Plugins in Customizations to check the connection.
 
-### Check the Accounts tab
+You can check it on these two screens.
 
 1. Select the Accounts tab.
 2. Check the CONNECTED label of exploratory-server.
@@ -110,7 +97,7 @@ If you installed the Exploratory plugin, open Exploratory under Plugins in Custo
 
 When exploratory-server shows OAUTH and CONNECTED, it is connected.
 
-### Check the MCP tab
+Next, check the MCP tab.
 
 1. Select the MCP tab.
 2. Check the exploratory-server row.

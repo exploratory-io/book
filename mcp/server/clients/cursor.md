@@ -19,9 +19,8 @@ It takes about 5 minutes. You need an Exploratory account and Cursor.
 
 Until Exploratory Server is listed in the official plugin directory, add only the server by hand, without the skill.
 
-1. Add this to ~/.cursor/mcp.json (or .cursor/mcp.json in a project).
-
-   **mcp.json**
+1. Open ~/.cursor/mcp.json (or .cursor/mcp.json in a project).
+2. Add this.
 
    ```text
    {
@@ -34,7 +33,7 @@ Until Exploratory Server is listed in the official plugin directory, add only th
    }
    ```
 
-### Open MCPs in Customize
+### Open MCPs and sign in
 
 In the Cursor app, choose Customize in the sidebar to check the MCP server you added.
 
@@ -50,9 +49,7 @@ Instead of the app, you can start the sign-in in a terminal.
 agent mcp login exploratory-server
 ```
 
-### Approve the access in the browser
-
-Your browser opens. If you are not signed in, sign in to Exploratory. Choosing Authenticate in the app and running the terminal command open the same browser screen.
+Next, your browser opens. If you are not signed in, sign in to Exploratory. Choosing Authenticate in the app and running the terminal command open the same browser screen.
 
 1. Choose Allow.
 
@@ -75,7 +72,7 @@ When you have signed in, exploratory-server moves to the Connected list under MC
    Find the "Sales Orders" data on Exploratory.
    ```
 
-### Check the result
+Next, check the result.
 
 1. Check the Sales Orders link in the search result.
 
