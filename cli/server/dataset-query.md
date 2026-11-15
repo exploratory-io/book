@@ -67,7 +67,7 @@ expl server dataset query [<dataset_id>] [flags]
 
 ## JSON input structure
 
-These are JSON input templates, not results. Replace \< \> placeholders with data ids, columns and values. Command examples using single quotes use bash syntax. PowerShell and cmd write quotes differently from bash, so an example that uses single quotes may not run as it is. In that case, save the JSON to a file and pass it with --input.
+These are JSON input templates, not results. Replace \< \> placeholders with data ids, columns and values. Command examples using single quotes use bash syntax. On Windows, we have checked installing the CLI with npm and the operation of the CLI and the MCP Server. PowerShell and cmd write quotes differently from bash, so an example that uses single quotes may not run as it is. In that case, save the JSON to a file and pass it with --input.
 
 ### Filter conditions: filters
 
