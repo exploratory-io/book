@@ -16,7 +16,7 @@ expl server chart get-image <id> --chart <chart> --json
 
 \<id\> はノートなどの id、\<chart\> は fetch の結果にあるチャートの名前に置き換えます。
 
-実行結果は、ダッシュボード Gps1iZR7OE のチャート edl2dXi1（売上推移）で実行したものです。画像の保存先を示す image_path の行は省略しています。公開時に画像が保存されていないチャートは、NOT_FOUND（"This chart has no stored image"）になります。その場合は chart get-data を使います。
+実行結果は、ダッシュボード dE5fG6hI7j のチャート iJ6kL7mN（売上推移）で実行したものです。画像の保存先を示す image_path の行は省略しています。公開時に画像が保存されていないチャートは、NOT_FOUND（"This chart has no stored image"）になります。その場合は chart get-data を使います。
 
 **実行結果**
 
@@ -24,14 +24,14 @@ expl server chart get-image <id> --chart <chart> --json
 {
   "success": true,
   "item": {
-    "id": "Gps1iZR7OE",
+    "id": "dE5fG6hI7j",
     "type": "dashboard",
     "title": "売上とマーケティング費用のダッシュボード"
   },
   "summary": "Returned the image of chart \"売上推移\" (600x400).",
   "result": {
     "chart": {
-      "name": "edl2dXi1",
+      "name": "iJ6kL7mN",
       "title": "売上推移",
       "type": "line"
     },
@@ -82,7 +82,7 @@ expl server chart get-image <id> --chart <chart> --json
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
     "The data was refreshed at 2026-11-14T22:02:21.534Z, after this image was captured at 2022-06-24T08:51:53.397Z. The image may not show the current numbers; use chart_get_d…"
   ],
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/Gps1iZR7OE"
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j"
 }
 ```
 

@@ -16,7 +16,7 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 
 Replace \<id\> with the id of the note and \<chart\> with a chart name from the result of fetch.
 
-The result below was run on the chart MzU3kks5 (Sales by Region) in the dashboard Sales Orders Dashboard (id sjO4NsW7kb). Long output is trimmed.
+The result below was run on the chart kL8mN9oP (Sales by Region) in the dashboard Sales Orders Dashboard (id pQ9rS0tU1v). Long output is trimmed.
 
 **Result**
 
@@ -24,14 +24,14 @@ The result below was run on the chart MzU3kks5 (Sales by Region) in the dashboar
 {
   "success": true,
   "item": {
-    "id": "sjO4NsW7kb",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Returned 5 of 8 rows of chart \"Sales by Region\". To aggregate instead of paging, use chart_query with the same id and chart.",
   "result": {
     "chart": {
-      "name": "MzU3kks5",
+      "name": "kL8mN9oP",
       "title": "Sales by Region",
       "type": "bar",
       "data_granularity": "aggregated",
@@ -111,7 +111,7 @@ The result below was run on the chart MzU3kks5 (Sales by Region) in the dashboar
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb"
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v"
 }
 ```
 

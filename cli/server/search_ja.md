@@ -20,9 +20,9 @@ expl server search "sales"
 
 ```text
 ID  TITLE  URL  TYPE  DESCRIPTION  AUTHOR
-sjO4NsW7kb  Sales Orders Dashboard  https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb  dashboard  山田 花子
-llS6nQK3aH  Sales Orders  https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH  data  One row is one order line item (an order can have several lines, line_no 1-3). P…  山田 花子
-PNZ7eaY9SU  Sales Orders Overview  https://exploratory.io/note/GMq1Qom5tS/PNZ7eaY9SU  note  山田 花子
+pQ9rS0tU1v  Sales Orders Dashboard  https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v  dashboard  山田 花子
+hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  data  One row is one order line item (an order can have several lines, line_no 1-3). P…  山田 花子
+wX2yZ3aB4c  Sales Orders Overview  https://exploratory.io/note/aB3cD4eF5g/wX2yZ3aB4c  note  山田 花子
 ```
 
 ### 自分のコンテンツを一覧する
@@ -43,9 +43,9 @@ expl server search "" --scope mine --limit 50 --json
 {
   "results": [
     {
-      "id": "Customer-Usage-Monitoring-iXE5AKr7gI",
+      "id": "Customer-Usage-Monitoring-uV9wX0yZ1a",
       "title": "Customer_Usage_Monitoring",
-      "url": "https://exploratory.io/dashboard/GMq1Qom5tS/Customer-Usage-Monitoring-iXE5AKr7gI",
+      "url": "https://exploratory.io/dashboard/aB3cD4eF5g/Customer-Usage-Monitoring-uV9wX0yZ1a",
       "type": "dashboard",
       "description": "",
       "author": "山田 花子",
@@ -59,9 +59,9 @@ expl server search "" --scope mine --limit 50 --json
       "data_as_of": "2026-11-14T22:03:01.894Z"
     },
     {
-      "id": "COVID-19-Infected-Cases-Death-Data-Worldwide-EQK9LRr5Kl",
+      "id": "COVID-19-Infected-Cases-Death-Data-Worldwide-nO6pQ7rS8t",
       "title": "World Wide COVID-19 Data by Johns Hopkins (JHU CCSE)",
-      "url": "https://exploratory.io/data/GMq1Qom5tS/COVID-19-Infected-Cases-Death-Data-Worldwide-EQK9LRr5Kl",
+      "url": "https://exploratory.io/data/aB3cD4eF5g/COVID-19-Infected-Cases-Death-Data-Worldwide-nO6pQ7rS8t",
       "type": "data",
       "description": "#### English This data is about the COVID-19 infection and death numbers for all the countries around the world. it is originally published and shared by Johns Hopkins Un…",
       "author": "山田 花子",

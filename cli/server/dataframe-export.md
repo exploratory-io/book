@@ -16,7 +16,7 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 
 Replace \<dataset_id\> with the id of a data item. For data whose publisher does not allow downloading it as a file, this fails with DATA_EGRESS_LIMIT.
 
-The result below was run on the data Sales Orders (id llS6nQK3aH). download_url is the link to the file (trimmed here). It expires at expires_at.
+The result below was run on the data Sales Orders (id hI6jK7lM8n). download_url is the link to the file (trimmed here). It expires at expires_at.
 
 **Result**
 
@@ -24,7 +24,7 @@ The result below was run on the data Sales Orders (id llS6nQK3aH). download_url 
 {
   "success": true,
   "item": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "type": "data",
     "title": "Sales Orders"
   },
@@ -44,7 +44,7 @@ The result below was run on the data Sales Orders (id llS6nQK3aH). download_url 
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+  "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
 }
 ```
 

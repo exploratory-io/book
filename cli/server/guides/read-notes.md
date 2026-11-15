@@ -36,21 +36,21 @@ Each item in the search result has an id and a URL. Pass the id to fetch and the
 expl server fetch <id> --json
 ```
 
-Replace \<id\> with an id from the search result. The result below was run on the dashboard Sales Orders Dashboard (id sjO4NsW7kb). Total Sales (440,826,130) is the value of the Total Sales Number chart. Long output is trimmed.
+Replace \<id\> with an id from the search result. The result below was run on the dashboard Sales Orders Dashboard (id pQ9rS0tU1v). Total Sales (440,826,130) is the value of the Total Sales Number chart. Long output is trimmed.
 
 **Result**
 
 ```text
 {
-  "id": "sjO4NsW7kb",
+  "id": "pQ9rS0tU1v",
   "title": "Sales Orders Dashboard",
-  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `Led2toc6`, type: singlevalue)\n\nValues: sum of sales\n\n| sales |\n| --- |\n| 440826130 |…,
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `cD4eF5gH`, type: singlevalue)\n\nValues: sum of sales\n\n| sales |\n| --- |\n| 440826130 |…,
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
   "metadata": {
     … (trimmed),
     "charts": [
       {
-        "name": "Led2toc6",
+        "name": "cD4eF5gH",
         "title": "Total Sales",
         "type": "singlevalue",
         "values": [
@@ -115,7 +115,7 @@ The names of the charts in a note or dashboard are in metadata.charts in the res
 expl server chart get-data <id> --chart <chart> --limit 5 --json
 ```
 
-Replace \<id\> with the id of the note and \<chart\> with the chart name. The result below is for the chart dkc1UUY6 (Monthly Sales Trend) in the dashboard with the id sjO4NsW7kb. Long output is trimmed.
+Replace \<id\> with the id of the note and \<chart\> with the chart name. The result below is for the chart qR0sT1uV (Monthly Sales Trend) in the dashboard with the id pQ9rS0tU1v. Long output is trimmed.
 
 **Result**
 
@@ -123,14 +123,14 @@ Replace \<id\> with the id of the note and \<chart\> with the chart name. The re
 {
   "success": true,
   "item": {
-    "id": "sjO4NsW7kb",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Returned 5 of 22 rows of chart \"Monthly Sales Trend\".",
   "result": {
     "chart": {
-      "name": "dkc1UUY6",
+      "name": "qR0sT1uV",
       "title": "Monthly Sales Trend",
       "type": "line",
       "data_granularity": "aggregated",

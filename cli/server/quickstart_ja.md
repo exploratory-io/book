@@ -42,7 +42,7 @@ expl server search "Sales Orders" --scope all --type data
 
 ```text
 ID          TITLE         URL                                                TYPE  DESCRIPTION                                                                                                                                                                                                                                                                                                   AUTHOR
-llS6nQK3aH  Sales Orders  https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH  data  One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...  山田 花子
+hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  data  One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...  山田 花子
 ```
 
 > コンテンツの id と URL が並んだ結果が表示されていれば、検索できています。
@@ -53,16 +53,16 @@ llS6nQK3aH  Sales Orders  https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH  dat
 expl server fetch <id> --json
 ```
 
-\<id\> は、検索結果に表示された id に置き換えます。--json を付けると、サーバーの結果を JSON のまま出力します。実行結果は、id が llS6nQK3aH のデータ（Sales Orders）で実行したものです。長い出力は省略しています。
+\<id\> は、検索結果に表示された id に置き換えます。--json を付けると、サーバーの結果を JSON のまま出力します。実行結果は、id が hI6jK7lM8n のデータ（Sales Orders）で実行したものです。長い出力は省略しています。
 
 **実行結果**
 
 ```text
 {
-  "id": "llS6nQK3aH",
+  "id": "hI6jK7lM8n",
   "title": "Sales Orders",
   "text": "# Sales Orders\n\nRows (total): 23,131\n\n## Columns\n\n| name | type | description |\n| --- | --- | --- |\n| order_id…,
-  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
+  "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
   "metadata": {
     "update_status": {
       "freshness": "not_scheduled",
@@ -105,7 +105,7 @@ expl server fetch <id> --json
 expl server dataframe get-schema <id> --detail light --json
 ```
 
-\<id\> は、データの id に置き換えます。実行結果は、id が llS6nQK3aH のデータ（Sales Orders）で実行したものです。長い出力は省略しています。
+\<id\> は、データの id に置き換えます。実行結果は、id が hI6jK7lM8n のデータ（Sales Orders）で実行したものです。長い出力は省略しています。
 
 **実行結果**
 
@@ -113,7 +113,7 @@ expl server dataframe get-schema <id> --detail light --json
 {
   "success": true,
   "item": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "type": "data",
     "title": "Sales Orders"
   },
@@ -142,7 +142,7 @@ expl server dataframe get-schema <id> --detail light --json
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json
 ```
 
-\<dataset_id\> はデータの id、region は実際の列の名前に置き換えます。JSON は、全体を単引用符（'）で囲みます。実行結果は、id が llS6nQK3aH のデータ（Sales Orders）で、地域ごとの売上（sales）を合計したものです。値は、Sales Orders Dashboard の Sales by Region と一致します。
+\<dataset_id\> はデータの id、region は実際の列の名前に置き換えます。JSON は、全体を単引用符（'）で囲みます。実行結果は、id が hI6jK7lM8n のデータ（Sales Orders）で、地域ごとの売上（sales）を合計したものです。値は、Sales Orders Dashboard の Sales by Region と一致します。
 
 **実行結果**
 
@@ -150,11 +150,11 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 {
   "query_id": "qry_2a25c1716e94b226",
   "dataset": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "name": "Sales Orders",
     "version": "20261112T081211Z-72836d02",
     "updated_at": "2026-11-12T08:12:11.243Z",
-    "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+    "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
   },
   "columns": [
     {

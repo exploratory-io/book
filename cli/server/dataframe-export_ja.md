@@ -16,7 +16,7 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 
 \<dataset_id\> は、データの id に置き換えます。公開した人がファイルとしての取得を許していないデータでは、DATA_EGRESS_LIMIT で失敗します。
 
-実行結果は、データ Sales Orders（id が llS6nQK3aH）で実行したものです。download_url はファイルへのリンクです（ここでは省略しています）。expires_at の時刻に無効になります。
+実行結果は、データ Sales Orders（id が hI6jK7lM8n）で実行したものです。download_url はファイルへのリンクです（ここでは省略しています）。expires_at の時刻に無効になります。
 
 **実行結果**
 
@@ -24,7 +24,7 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 {
   "success": true,
   "item": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "type": "data",
     "title": "Sales Orders"
   },
@@ -44,7 +44,7 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+  "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
 }
 ```
 

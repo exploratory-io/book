@@ -14,23 +14,23 @@ fetch を実行します。結果の metadata.blocks のうち、kind が analyt
 expl server fetch <id> --json
 ```
 
-\<id\> は、検索結果に表示された id に置き換えます。実行結果は、ダッシュボード Sales Orders Dashboard（id は sjO4NsW7kb）で実行したものです。長い出力は省略しています。
+\<id\> は、検索結果に表示された id に置き換えます。実行結果は、ダッシュボード Sales Orders Dashboard（id は pQ9rS0tU1v）で実行したものです。長い出力は省略しています。
 
 **実行結果**
 
 ```text
 {
-  "id": "sjO4NsW7kb",
+  "id": "pQ9rS0tU1v",
   "title": "Sales Orders Dashboard",
-  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `Led2toc6`, type: singlevalue)\n…
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `cD4eF5gH`, type: singlevalue)\n…
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
   "metadata": {
     "blocks": [
 … (trimmed)
       {
         "id": "b18",
         "kind": "analytics",
-        "name": "TQj8cbG4",
+        "name": "oP8qR9sT",
         "title": "Monthly Sales Forecast",
         "analysis_type": "do_prophet"
 … (trimmed)
@@ -46,7 +46,7 @@ expl server fetch <id> --json
 expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 ```
 
-\<id\> はダッシュボードなどの id、\<analytics\> はアナリティクスの name に置き換えます。実行結果は、アナリティクスが TQj8cbG4（Monthly Sales Forecast、do_prophet）のものです。長い出力は省略しています。
+\<id\> はダッシュボードなどの id、\<analytics\> はアナリティクスの name に置き換えます。実行結果は、アナリティクスが oP8qR9sT（Monthly Sales Forecast、do_prophet）のものです。長い出力は省略しています。
 
 **実行結果**
 
@@ -54,13 +54,13 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 {
   "success": true,
   "item": {
-    "id": "sjO4NsW7kb",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Result of do_prophet \"Monthly Sales Forecast\": 2 table(s) (summary, table).",
   "result": {
-    "analytics_id": "TQj8cbG4",
+    "analytics_id": "oP8qR9sT",
     "analysis_type": "do_prophet",
     "has_result": true,
     "model_definition": {

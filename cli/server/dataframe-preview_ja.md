@@ -16,7 +16,7 @@ expl server dataframe preview <id> --limit 3 --json
 
 \<id\> は、データの id に置き換えます。
 
-実行結果は、データ Sales Orders（id が llS6nQK3aH）で実行したものです。長い出力は省略しています。
+実行結果は、データ Sales Orders（id が hI6jK7lM8n）で実行したものです。長い出力は省略しています。
 
 **実行結果**
 
@@ -24,7 +24,7 @@ expl server dataframe preview <id> --limit 3 --json
 {
   "success": true,
   "item": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "type": "data",
     "title": "Sales Orders"
   },
@@ -67,7 +67,7 @@ expl server dataframe preview <id> --limit 3 --json
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+  "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
 }
 ```
 
@@ -87,7 +87,7 @@ expl server dataframe preview <id> --offset 100 --limit 100 --json
 {
   "success": true,
   "item": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "type": "data",
     "title": "Sales Orders"
   },
@@ -122,7 +122,7 @@ expl server dataframe preview <id> --offset 100 --limit 100 --json
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+  "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
 }
 ```
 

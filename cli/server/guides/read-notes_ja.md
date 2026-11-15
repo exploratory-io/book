@@ -36,21 +36,21 @@ expl server search "" --scope mine --limit 50 --json
 expl server fetch <id> --json
 ```
 
-\<id\> は、検索結果に表示された id に置き換えます。実行結果は、ダッシュボード Sales Orders Dashboard（id は sjO4NsW7kb）で実行したものです。Total Sales（440,826,130）は、Number チャート Total Sales の値です。長い出力は省略しています。
+\<id\> は、検索結果に表示された id に置き換えます。実行結果は、ダッシュボード Sales Orders Dashboard（id は pQ9rS0tU1v）で実行したものです。Total Sales（440,826,130）は、Number チャート Total Sales の値です。長い出力は省略しています。
 
 **実行結果**
 
 ```text
 {
-  "id": "sjO4NsW7kb",
+  "id": "pQ9rS0tU1v",
   "title": "Sales Orders Dashboard",
-  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `Led2toc6`, type: singlevalue)\n\nValues: sum of sales\n\n| sales |\n| --- |\n| 440826130 |…,
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `cD4eF5gH`, type: singlevalue)\n\nValues: sum of sales\n\n| sales |\n| --- |\n| 440826130 |…,
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
   "metadata": {
     … (trimmed),
     "charts": [
       {
-        "name": "Led2toc6",
+        "name": "cD4eF5gH",
         "title": "Total Sales",
         "type": "singlevalue",
         "values": [
@@ -115,7 +115,7 @@ expl server fetch <id> --query "sales forecast" --json
 expl server chart get-data <id> --chart <chart> --limit 5 --json
 ```
 
-\<id\> はノートなどの id、\<chart\> はチャートの名前に置き換えます。実行結果は、ダッシュボード（id は sjO4NsW7kb）のチャート dkc1UUY6（Monthly Sales Trend）のものです。長い出力は省略しています。
+\<id\> はノートなどの id、\<chart\> はチャートの名前に置き換えます。実行結果は、ダッシュボード（id は pQ9rS0tU1v）のチャート qR0sT1uV（Monthly Sales Trend）のものです。長い出力は省略しています。
 
 **実行結果**
 
@@ -123,14 +123,14 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 {
   "success": true,
   "item": {
-    "id": "sjO4NsW7kb",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Returned 5 of 22 rows of chart \"Monthly Sales Trend\".",
   "result": {
     "chart": {
-      "name": "dkc1UUY6",
+      "name": "qR0sT1uV",
       "title": "Monthly Sales Trend",
       "type": "line",
       "data_granularity": "aggregated",

@@ -16,7 +16,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 
 \<id\> はノートなどの id、\<analytics\> は fetch の結果にあるアナリティクスの名前に置き換えます。
 
-実行結果は、単独で公開されているアナリティクス Analytics 1 - Correlations（id が Analytics-1-Correlations-DRl7rrn6）で実行したものです。単独で公開されているため、--analytics は指定していません。長い出力は省略しています。
+実行結果は、単独で公開されているアナリティクス Analytics 1 - Correlations（id が Analytics-1-Correlations-aB1cD2eF）で実行したものです。単独で公開されているため、--analytics は指定していません。長い出力は省略しています。
 
 **実行結果**
 
@@ -24,13 +24,13 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 {
   "success": true,
   "item": {
-    "id": "Analytics-1-Correlations-DRl7rrn6",
+    "id": "Analytics-1-Correlations-aB1cD2eF",
     "type": "analytics",
     "title": "Analytics 1 - Correlations"
   },
   "summary": "Result of do_cor \"Analytics 1\": 1 table(s) (heatmap).",
   "result": {
-    "analytics_id": "xig1eTh4",
+    "analytics_id": "uV0wX1yZ",
     "analysis_type": "do_cor",
     "has_result": true,
     "model_definition": {
@@ -169,7 +169,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/viz/exploratory/Analytics-1-Correlations-DRl7rrn6"
+  "url": "https://exploratory.io/viz/exploratory/Analytics-1-Correlations-aB1cD2eF"
 }
 ```
 

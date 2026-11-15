@@ -14,7 +14,7 @@ dataframe export は、dataset query と同じ指定で絞り込みや集計を�
 expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 ```
 
-\<dataset_id\> は、データの id に置き換えます。実行結果は、データ Sales Orders（id は llS6nQK3aH）で実行したものです。download_url（ダウンロードリンク）の行は省略しています。
+\<dataset_id\> は、データの id に置き換えます。実行結果は、データ Sales Orders（id は hI6jK7lM8n）で実行したものです。download_url（ダウンロードリンク）の行は省略しています。
 
 **実行結果**
 
@@ -22,7 +22,7 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 {
   "success": true,
   "item": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "type": "data",
     "title": "Sales Orders"
   },
@@ -42,7 +42,7 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+  "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
 }
 ```
 
@@ -58,7 +58,7 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 ```
 
-実行結果は、id が US-Home-Sales-1963-2016-rdf5jJK9vj のデータで実行したものです。
+実行結果は、id が US-Home-Sales-1963-2016-gH3iJ4kL5m のデータで実行したものです。
 
 **実行結果**
 
@@ -68,7 +68,7 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
   "error_code": "DATA_EGRESS_LIMIT",
   "message": "The publisher does not allow downloading this data as a file.",
   "details": {
-    "url": "https://exploratory.io/data/GMq1Qom5tS/US-Home-Sales-1963-2016-rdf5jJK9vj"
+    "url": "https://exploratory.io/data/aB3cD4eF5g/US-Home-Sales-1963-2016-gH3iJ4kL5m"
   },
   "suggested_actions": [
     "Use fetch or dataframe_get_schema for what the publisher shares",

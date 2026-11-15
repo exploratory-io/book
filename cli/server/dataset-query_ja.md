@@ -18,11 +18,11 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 
 **実行結果**
 
-Sales Orders のデータ（id: llS6nQK3aH）で実行した結果です。長い項目は省略して、見やすく整えています。
+Sales Orders のデータ（id: hI6jK7lM8n）で実行した結果です。長い項目は省略して、見やすく整えています。
 
 ```text
 {
-  "dataset": { "id": "llS6nQK3aH", "name": "Sales Orders", "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH" },
+  "dataset": { "id": "hI6jK7lM8n", "name": "Sales Orders", "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n" },
   "columns": [ { "name": "region", "type": "string" }, { "name": "n", "type": "integer" } ],
   "rows": [ ["Kanto", 7814], ["Kinki", 3890], ["Chubu", 3779], ["Kyushu-Okinawa", 2418], ["Tohoku", 1592] ],
   "result": { "row_count": 5, "has_more": true },
@@ -44,11 +44,11 @@ dimensions を省くと、全体の 1 行が返ります。
 
 **実行結果**
 
-Sales Orders のデータ（id: llS6nQK3aH）で実行した結果です。長い項目は省略して、見やすく整えています。
+Sales Orders のデータ（id: hI6jK7lM8n）で実行した結果です。長い項目は省略して、見やすく整えています。
 
 ```text
 {
-  "dataset": { "id": "llS6nQK3aH", "name": "Sales Orders", "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH" },
+  "dataset": { "id": "hI6jK7lM8n", "name": "Sales Orders", "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n" },
   "columns": [ { "name": "n", "type": "integer" } ],
   "rows": [ [23131] ],
   "result": { "row_count": 1, "has_more": false },

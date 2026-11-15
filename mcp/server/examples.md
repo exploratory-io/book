@@ -26,9 +26,9 @@ With --json, the result the search tool returned is printed as it is. In the res
 {
   "results": [
     {
-      "id": "llS6nQK3aH",
+      "id": "hI6jK7lM8n",
       "title": "Sales Orders",
-      "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
+      "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
       "type": "data",
       "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
       "author": "Alex Kim",
@@ -85,7 +85,7 @@ The AI works in this order.
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json
 ```
 
-The result below sums sales by region on the data Sales Orders (id llS6nQK3aH).
+The result below sums sales by region on the data Sales Orders (id hI6jK7lM8n).
 
 **Result**
 
@@ -93,11 +93,11 @@ The result below sums sales by region on the data Sales Orders (id llS6nQK3aH).
 {
   "query_id": "qry_2a25c1716e94b226",
   "dataset": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "name": "Sales Orders",
     "version": "20261112T081211Z-72836d02",
     "updated_at": "2026-11-12T08:12:11.243Z",
-    "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+    "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
   },
   "columns": [
     {
@@ -160,7 +160,7 @@ The AI looks up the chart name (metadata.charts) in the note with fetch and gets
 expl server chart get-data <id> --chart <chart> --limit 5 --json
 ```
 
-The result below is for the chart dkc1UUY6 (Monthly Sales Trend) in the dashboard with the id sjO4NsW7kb. Long output is trimmed.
+The result below is for the chart qR0sT1uV (Monthly Sales Trend) in the dashboard with the id pQ9rS0tU1v. Long output is trimmed.
 
 **Result**
 
@@ -168,14 +168,14 @@ The result below is for the chart dkc1UUY6 (Monthly Sales Trend) in the dashboar
 {
   "success": true,
   "item": {
-    "id": "sjO4NsW7kb",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Returned 5 of 22 rows of chart \"Monthly Sales Trend\".",
   "result": {
     "chart": {
-      "name": "dkc1UUY6",
+      "name": "qR0sT1uV",
       "title": "Monthly Sales Trend",
       "type": "line",
       "data_granularity": "aggregated",

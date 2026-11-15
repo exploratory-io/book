@@ -16,7 +16,7 @@ expl server chart query --id <id> --chart <chart> --mode aggregate --dimensions 
 
 Replace \<id\> with the id of the note, \<chart\> with the chart name and \<column\> with a column name from query.columns in the result of chart get-data. The syntax is the same as for dataset query.
 
-The result below was run on the chart MzU3kks5 (Sales by Region) in the dashboard Sales Orders Dashboard (id sjO4NsW7kb). The chart has 8 regions, so each region counts 1 row. Long output is trimmed.
+The result below was run on the chart kL8mN9oP (Sales by Region) in the dashboard Sales Orders Dashboard (id pQ9rS0tU1v). The chart has 8 regions, so each region counts 1 row. Long output is trimmed.
 
 **Result**
 
@@ -24,14 +24,14 @@ The result below was run on the chart MzU3kks5 (Sales by Region) in the dashboar
 {
   "query_id": "cq_ba198537",
   "chart": {
-    "item_id": "sjO4NsW7kb",
+    "item_id": "pQ9rS0tU1v",
     "item_title": "Sales Orders Dashboard",
     "item_type": "dashboard",
-    "name": "MzU3kks5",
+    "name": "kL8mN9oP",
     "title": "Sales by Region",
     "type": "bar",
     "data_granularity": "aggregated",
-    "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+    "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
     "version": "20261112T092937Z-3fc872d2",
     "encoding": [
       {

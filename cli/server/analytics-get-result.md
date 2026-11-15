@@ -16,7 +16,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 
 Replace \<id\> with the id of the note and \<analytics\> with an analytics name from the result of fetch.
 
-The result below was run on the analytics Analytics 1 - Correlations (id Analytics-1-Correlations-DRl7rrn6), which is published on its own, so --analytics is not passed. Long output is trimmed.
+The result below was run on the analytics Analytics 1 - Correlations (id Analytics-1-Correlations-aB1cD2eF), which is published on its own, so --analytics is not passed. Long output is trimmed.
 
 **Result**
 
@@ -24,13 +24,13 @@ The result below was run on the analytics Analytics 1 - Correlations (id Analyti
 {
   "success": true,
   "item": {
-    "id": "Analytics-1-Correlations-DRl7rrn6",
+    "id": "Analytics-1-Correlations-aB1cD2eF",
     "type": "analytics",
     "title": "Analytics 1 - Correlations"
   },
   "summary": "Result of do_cor \"Analytics 1\": 1 table(s) (heatmap).",
   "result": {
-    "analytics_id": "xig1eTh4",
+    "analytics_id": "uV0wX1yZ",
     "analysis_type": "do_cor",
     "has_result": true,
     "model_definition": {
@@ -169,7 +169,7 @@ The result below was run on the analytics Analytics 1 - Correlations (id Analyti
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/viz/exploratory/Analytics-1-Correlations-DRl7rrn6"
+  "url": "https://exploratory.io/viz/exploratory/Analytics-1-Correlations-aB1cD2eF"
 }
 ```
 

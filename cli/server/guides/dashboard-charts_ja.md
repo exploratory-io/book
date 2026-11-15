@@ -14,21 +14,21 @@
 expl server fetch <id> --json
 ```
 
-\<id\> は、検索結果に表示された id に置き換えます。実行結果は、ダッシュボード Sales Orders Dashboard（id は sjO4NsW7kb）で実行したものです。長い出力は省略しています。
+\<id\> は、検索結果に表示された id に置き換えます。実行結果は、ダッシュボード Sales Orders Dashboard（id は pQ9rS0tU1v）で実行したものです。長い出力は省略しています。
 
 **実行結果**
 
 ```text
 {
-  "id": "sjO4NsW7kb",
+  "id": "pQ9rS0tU1v",
   "title": "Sales Orders Dashboard",
-  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `Led2toc6`, type: singlevalue)\n\nValues: sum of sales\n\n| sales |\n| --- |\n| 440826130 |…,
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `cD4eF5gH`, type: singlevalue)\n\nValues: sum of sales\n\n| sales |\n| --- |\n| 440826130 |…,
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
   "metadata": {
     … (trimmed),
     "charts": [
       {
-        "name": "Led2toc6",
+        "name": "cD4eF5gH",
         "title": "Total Sales",
         "type": "singlevalue",
         "values": [
@@ -71,7 +71,7 @@ expl server fetch <id> --json
 expl server chart get-data <id> --chart <chart> --limit 5 --json
 ```
 
-\<id\> はダッシュボードなどの id、\<chart\> はチャートの name に置き換えます。実行結果は、ダッシュボード（id は sjO4NsW7kb）のチャート dkc1UUY6（Monthly Sales Trend）のものです。長い出力は省略しています。
+\<id\> はダッシュボードなどの id、\<chart\> はチャートの name に置き換えます。実行結果は、ダッシュボード（id は pQ9rS0tU1v）のチャート qR0sT1uV（Monthly Sales Trend）のものです。長い出力は省略しています。
 
 **実行結果**
 
@@ -79,14 +79,14 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 {
   "success": true,
   "item": {
-    "id": "sjO4NsW7kb",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Returned 5 of 22 rows of chart \"Monthly Sales Trend\".",
   "result": {
     "chart": {
-      "name": "dkc1UUY6",
+      "name": "qR0sT1uV",
       "title": "Monthly Sales Trend",
       "type": "line",
       "data_granularity": "aggregated",
@@ -164,7 +164,7 @@ has_more が true の場合は、続きがあります。取得済みの行数�
 expl server chart query --id <id> --chart <chart> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 3 --json
 ```
 
-\<id\> と \<chart\> は、ダッシュボードなどの id とチャートの name に置き換えます。列の名前は、chart get-data の結果の query.columns で確認します。実行結果は、チャートが MzU3kks5（Sales by Region）のものです。上位 3 つの地域は、チャートの先頭の 3 行と一致します。
+\<id\> と \<chart\> は、ダッシュボードなどの id とチャートの name に置き換えます。列の名前は、chart get-data の結果の query.columns で確認します。実行結果は、チャートが kL8mN9oP（Sales by Region）のものです。上位 3 つの地域は、チャートの先頭の 3 行と一致します。
 
 **実行結果**
 
@@ -172,14 +172,14 @@ expl server chart query --id <id> --chart <chart> --mode aggregate --dimensions 
 {
   "query_id": "cq_d16081f8",
   "chart": {
-    "item_id": "sjO4NsW7kb",
+    "item_id": "pQ9rS0tU1v",
     "item_title": "Sales Orders Dashboard",
     "item_type": "dashboard",
-    "name": "MzU3kks5",
+    "name": "kL8mN9oP",
     "title": "Sales by Region",
     "type": "bar",
     "data_granularity": "aggregated",
-    "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+    "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
     "version": "20261112T082240Z-3fc872d2",
     "encoding": [
       {
@@ -262,7 +262,7 @@ result.has_more が true の場合は、結果に含まれていない行があ�
 expl server chart get-image <id> --chart <chart> --json
 ```
 
-実行結果は、チャートが edl2dXi1（売上推移）のものです。image_path（画像の保存先）の行は省略しています。
+実行結果は、チャートが iJ6kL7mN（売上推移）のものです。image_path（画像の保存先）の行は省略しています。
 
 **実行結果**
 
@@ -270,14 +270,14 @@ expl server chart get-image <id> --chart <chart> --json
 {
   "success": true,
   "item": {
-    "id": "Gps1iZR7OE",
+    "id": "dE5fG6hI7j",
     "type": "dashboard",
     "title": "売上とマーケティング費用のダッシュボード"
   },
   "summary": "Returned the image of chart \"売上推移\" (600x400).",
   "result": {
     "chart": {
-      "name": "edl2dXi1",
+      "name": "iJ6kL7mN",
       "title": "売上推移",
       "type": "line"
     },
@@ -328,7 +328,7 @@ expl server chart get-image <id> --chart <chart> --json
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
     "The data was refreshed at 2026-11-10T22:02:56.899Z, after this image was captured at 2022-06-24T08:51:53.397Z. The image may not show the current numbers; use chart_get_data for them."
   ],
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/Gps1iZR7OE",
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j",
 …（中略）
 }
 ```

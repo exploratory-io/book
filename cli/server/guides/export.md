@@ -14,7 +14,7 @@ dataframe export filters and aggregates with the same inputs as dataset query an
 expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 ```
 
-Replace \<dataset_id\> with the id of a data item. The result below was run on the data Sales Orders (id llS6nQK3aH). The download_url line (the download link) is trimmed.
+Replace \<dataset_id\> with the id of a data item. The result below was run on the data Sales Orders (id hI6jK7lM8n). The download_url line (the download link) is trimmed.
 
 **Result**
 
@@ -22,7 +22,7 @@ Replace \<dataset_id\> with the id of a data item. The result below was run on t
 {
   "success": true,
   "item": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "type": "data",
     "title": "Sales Orders"
   },
@@ -42,7 +42,7 @@ Replace \<dataset_id\> with the id of a data item. The result below was run on t
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+  "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
 }
 ```
 
@@ -58,7 +58,7 @@ For data whose publisher does not allow downloading it as a file, dataframe expo
 expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 ```
 
-The result below was run on the data with the id US-Home-Sales-1963-2016-rdf5jJK9vj.
+The result below was run on the data with the id US-Home-Sales-1963-2016-gH3iJ4kL5m.
 
 **Result**
 
@@ -68,7 +68,7 @@ The result below was run on the data with the id US-Home-Sales-1963-2016-rdf5jJK
   "error_code": "DATA_EGRESS_LIMIT",
   "message": "The publisher does not allow downloading this data as a file.",
   "details": {
-    "url": "https://exploratory.io/data/GMq1Qom5tS/US-Home-Sales-1963-2016-rdf5jJK9vj"
+    "url": "https://exploratory.io/data/aB3cD4eF5g/US-Home-Sales-1963-2016-gH3iJ4kL5m"
   },
   "suggested_actions": [
     "Use fetch or dataframe_get_schema for what the publisher shares",

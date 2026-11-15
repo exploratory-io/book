@@ -16,7 +16,7 @@ expl server chart query --id <id> --chart <chart> --mode aggregate --dimensions 
 
 \<id\> はノートなどの id、\<chart\> はチャートの名前、\<column\> は chart get-data の結果の query.columns にある列の名前に置き換えます。書式は dataset query と同じです。
 
-実行結果は、ダッシュボード Sales Orders Dashboard（id が sjO4NsW7kb）のチャート MzU3kks5（Sales by Region）で実行したものです。このチャートは地域が 8 つあるため、どの地域も 1 行と数えられます。長い出力は省略しています。
+実行結果は、ダッシュボード Sales Orders Dashboard（id が pQ9rS0tU1v）のチャート kL8mN9oP（Sales by Region）で実行したものです。このチャートは地域が 8 つあるため、どの地域も 1 行と数えられます。長い出力は省略しています。
 
 **実行結果**
 
@@ -24,14 +24,14 @@ expl server chart query --id <id> --chart <chart> --mode aggregate --dimensions 
 {
   "query_id": "cq_ba198537",
   "chart": {
-    "item_id": "sjO4NsW7kb",
+    "item_id": "pQ9rS0tU1v",
     "item_title": "Sales Orders Dashboard",
     "item_type": "dashboard",
-    "name": "MzU3kks5",
+    "name": "kL8mN9oP",
     "title": "Sales by Region",
     "type": "bar",
     "data_granularity": "aggregated",
-    "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+    "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
     "version": "20261112T092937Z-3fc872d2",
     "encoding": [
       {

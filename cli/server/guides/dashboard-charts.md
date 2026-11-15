@@ -14,21 +14,21 @@ Run fetch with the id of the dashboard or note. In the result, metadata.charts h
 expl server fetch <id> --json
 ```
 
-Replace \<id\> with an id from a search result. The result below was run on the dashboard Sales Orders Dashboard (id sjO4NsW7kb). Long output is trimmed.
+Replace \<id\> with an id from a search result. The result below was run on the dashboard Sales Orders Dashboard (id pQ9rS0tU1v). Long output is trimmed.
 
 **Result**
 
 ```text
 {
-  "id": "sjO4NsW7kb",
+  "id": "pQ9rS0tU1v",
   "title": "Sales Orders Dashboard",
-  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `Led2toc6`, type: singlevalue)\n\nValues: sum of sales\n\n| sales |\n| --- |\n| 440826130 |…,
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `cD4eF5gH`, type: singlevalue)\n\nValues: sum of sales\n\n| sales |\n| --- |\n| 440826130 |…,
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
   "metadata": {
     … (trimmed),
     "charts": [
       {
-        "name": "Led2toc6",
+        "name": "cD4eF5gH",
         "title": "Total Sales",
         "type": "singlevalue",
         "values": [
@@ -71,7 +71,7 @@ Pass a name to --chart and run chart get-data.
 expl server chart get-data <id> --chart <chart> --limit 5 --json
 ```
 
-Replace \<id\> with the id of the dashboard and \<chart\> with the name of the chart. The result below is for the chart dkc1UUY6 (Monthly Sales Trend) in the dashboard with the id sjO4NsW7kb. Long output is trimmed.
+Replace \<id\> with the id of the dashboard and \<chart\> with the name of the chart. The result below is for the chart qR0sT1uV (Monthly Sales Trend) in the dashboard with the id pQ9rS0tU1v. Long output is trimmed.
 
 **Result**
 
@@ -79,14 +79,14 @@ Replace \<id\> with the id of the dashboard and \<chart\> with the name of the c
 {
   "success": true,
   "item": {
-    "id": "sjO4NsW7kb",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Returned 5 of 22 rows of chart \"Monthly Sales Trend\".",
   "result": {
     "chart": {
-      "name": "dkc1UUY6",
+      "name": "qR0sT1uV",
       "title": "Monthly Sales Trend",
       "type": "line",
       "data_granularity": "aggregated",
@@ -164,7 +164,7 @@ For totals, rankings or the rows that match a condition, use chart query. It tak
 expl server chart query --id <id> --chart <chart> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 3 --json
 ```
 
-Replace \<id\> and \<chart\> with the id of the dashboard and the name of the chart. Take column names from query.columns in the result of chart get-data. The result below is for the chart MzU3kks5 (Sales by Region). The top 3 regions match the first 3 rows of the chart.
+Replace \<id\> and \<chart\> with the id of the dashboard and the name of the chart. Take column names from query.columns in the result of chart get-data. The result below is for the chart kL8mN9oP (Sales by Region). The top 3 regions match the first 3 rows of the chart.
 
 **Result**
 
@@ -172,14 +172,14 @@ Replace \<id\> and \<chart\> with the id of the dashboard and the name of the ch
 {
   "query_id": "cq_d16081f8",
   "chart": {
-    "item_id": "sjO4NsW7kb",
+    "item_id": "pQ9rS0tU1v",
     "item_title": "Sales Orders Dashboard",
     "item_type": "dashboard",
-    "name": "MzU3kks5",
+    "name": "kL8mN9oP",
     "title": "Sales by Region",
     "type": "bar",
     "data_granularity": "aggregated",
-    "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+    "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
     "version": "20261112T082240Z-3fc872d2",
     "encoding": [
       {
@@ -262,7 +262,7 @@ To see the trend or layout of a chart, get its image.
 expl server chart get-image <id> --chart <chart> --json
 ```
 
-The result below is for the chart edl2dXi1 (sales trend). The image_path line (where the image is saved) is trimmed.
+The result below is for the chart iJ6kL7mN (sales trend). The image_path line (where the image is saved) is trimmed.
 
 **Result**
 
@@ -270,14 +270,14 @@ The result below is for the chart edl2dXi1 (sales trend). The image_path line (w
 {
   "success": true,
   "item": {
-    "id": "Gps1iZR7OE",
+    "id": "dE5fG6hI7j",
     "type": "dashboard",
     "title": "売上とマーケティング費用のダッシュボード"
   },
   "summary": "Returned the image of chart \"売上推移\" (600x400).",
   "result": {
     "chart": {
-      "name": "edl2dXi1",
+      "name": "iJ6kL7mN",
       "title": "売上推移",
       "type": "line"
     },
@@ -328,7 +328,7 @@ The result below is for the chart edl2dXi1 (sales trend). The image_path line (w
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
     "The data was refreshed at 2026-11-10T22:02:56.899Z, after this image was captured at 2022-06-24T08:51:53.397Z. The image may not show the current numbers; use chart_get_data for them."
   ],
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/Gps1iZR7OE",
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j",
 … (trimmed)
 }
 ```

@@ -14,23 +14,23 @@ Run fetch. In metadata.blocks of the result, the entries whose kind is analytics
 expl server fetch <id> --json
 ```
 
-Replace \<id\> with an id from a search result. The result below was run on the dashboard Sales Orders Dashboard (id sjO4NsW7kb). Long output is trimmed.
+Replace \<id\> with an id from a search result. The result below was run on the dashboard Sales Orders Dashboard (id pQ9rS0tU1v). Long output is trimmed.
 
 **Result**
 
 ```text
 {
-  "id": "sjO4NsW7kb",
+  "id": "pQ9rS0tU1v",
   "title": "Sales Orders Dashboard",
-  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `Led2toc6`, type: singlevalue)\n…
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb",
+  "text": "# Sales Orders Dashboard\n\n### Total Sales\n\n**Chart: Total Sales** (chart: `cD4eF5gH`, type: singlevalue)\n…
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
   "metadata": {
     "blocks": [
 … (trimmed)
       {
         "id": "b18",
         "kind": "analytics",
-        "name": "TQj8cbG4",
+        "name": "oP8qR9sT",
         "title": "Monthly Sales Forecast",
         "analysis_type": "do_prophet"
 … (trimmed)
@@ -46,7 +46,7 @@ Pass the name to --analytics and run analytics get-result.
 expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 ```
 
-Replace \<id\> with the id of the dashboard and \<analytics\> with the name of the analytics. The result below is for the analytics TQj8cbG4 (Monthly Sales Forecast, do_prophet). Long output is trimmed.
+Replace \<id\> with the id of the dashboard and \<analytics\> with the name of the analytics. The result below is for the analytics oP8qR9sT (Monthly Sales Forecast, do_prophet). Long output is trimmed.
 
 **Result**
 
@@ -54,13 +54,13 @@ Replace \<id\> with the id of the dashboard and \<analytics\> with the name of t
 {
   "success": true,
   "item": {
-    "id": "sjO4NsW7kb",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Result of do_prophet \"Monthly Sales Forecast\": 2 table(s) (summary, table).",
   "result": {
-    "analytics_id": "TQj8cbG4",
+    "analytics_id": "oP8qR9sT",
     "analysis_type": "do_prophet",
     "has_result": true,
     "model_definition": {

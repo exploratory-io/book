@@ -81,9 +81,9 @@ With --json, the result the search tool returned is printed as it is. In the res
 {
   "results": [
     {
-      "id": "llS6nQK3aH",
+      "id": "hI6jK7lM8n",
       "title": "Sales Orders",
-      "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
+      "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
       "type": "data",
       "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
       "author": "Alex Kim",

@@ -44,7 +44,7 @@ This example sums the sales column for each value of the region column and retur
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json
 ```
 
-Replace \<dataset_id\> with the data id and region with a real column name. The result below sums sales by region on the data with the id llS6nQK3aH (Sales Orders).
+Replace \<dataset_id\> with the data id and region with a real column name. The result below sums sales by region on the data with the id hI6jK7lM8n (Sales Orders).
 
 **Result**
 
@@ -52,11 +52,11 @@ Replace \<dataset_id\> with the data id and region with a real column name. The 
 {
   "query_id": "qry_2a25c1716e94b226",
   "dataset": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "name": "Sales Orders",
     "version": "20261112T081211Z-72836d02",
     "updated_at": "2026-11-12T08:12:11.243Z",
-    "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+    "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
   },
   "columns": [
     {

@@ -72,14 +72,14 @@ expl server search "Sales Orders" --scope all --type data
 
 ```text
 ID          TITLE         URL                                                TYPE  DESCRIPTION                                                                                                                                                                                                                                                                                                   AUTHOR
-llS6nQK3aH  Sales Orders  https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH  data  One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...  Alex Kim
+hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  data  One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...  Alex Kim
 ```
 
 ```sh
 expl server fetch <id>
 ```
 
-Replace \<id\> with an id from the search result. The result below was run on the data with the id llS6nQK3aH (Sales Orders). Long output is trimmed.
+Replace \<id\> with an id from the search result. The result below was run on the data with the id hI6jK7lM8n (Sales Orders). Long output is trimmed.
 
 **Result**
 

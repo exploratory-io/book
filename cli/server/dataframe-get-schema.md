@@ -16,7 +16,7 @@ expl server dataframe get-schema <id> --detail light --json
 
 Replace \<id\> with the id of a data item.
 
-The result below was run on the data Sales Orders (id llS6nQK3aH). Long output is trimmed.
+The result below was run on the data Sales Orders (id hI6jK7lM8n). Long output is trimmed.
 
 **Result**
 
@@ -24,7 +24,7 @@ The result below was run on the data Sales Orders (id llS6nQK3aH). Long output i
 {
   "success": true,
   "item": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "type": "data",
     "title": "Sales Orders"
   },
@@ -53,7 +53,7 @@ The result below was run on the data Sales Orders (id llS6nQK3aH). Long output i
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+  "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
 }
 ```
 
@@ -73,7 +73,7 @@ The result below was run on the same data. Statistics, semantics and the list of
 {
   "success": true,
   "item": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "type": "data",
     "title": "Sales Orders"
   },
@@ -136,7 +136,7 @@ The result below was run on the same data. Statistics, semantics and the list of
   "warnings": [
     "Semantics: 1 approved."
   ],
-  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+  "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
 }
 ```
 

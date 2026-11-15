@@ -26,9 +26,9 @@ expl server search "Sales Orders" --scope all --type data --limit 3 --json
 {
   "results": [
     {
-      "id": "llS6nQK3aH",
+      "id": "hI6jK7lM8n",
       "title": "Sales Orders",
-      "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
+      "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
       "type": "data",
       "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
       "author": "山田 花子",
@@ -85,7 +85,7 @@ AI は、次の順で進めます。
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json
 ```
 
-実行結果は、データ Sales Orders（id は llS6nQK3aH）で、地域ごとの売上を合計したものです。
+実行結果は、データ Sales Orders（id は hI6jK7lM8n）で、地域ごとの売上を合計したものです。
 
 **実行結果**
 
@@ -93,11 +93,11 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 {
   "query_id": "qry_2a25c1716e94b226",
   "dataset": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "name": "Sales Orders",
     "version": "20261112T081211Z-72836d02",
     "updated_at": "2026-11-12T08:12:11.243Z",
-    "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+    "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
   },
   "columns": [
     {
@@ -160,7 +160,7 @@ AI は、fetch で、ノートの中のチャートの名前（metadata.charts�
 expl server chart get-data <id> --chart <chart> --limit 5 --json
 ```
 
-実行結果は、ダッシュボード（id は sjO4NsW7kb）のチャート dkc1UUY6（Monthly Sales Trend）のものです。長い出力は省略しています。
+実行結果は、ダッシュボード（id は pQ9rS0tU1v）のチャート qR0sT1uV（Monthly Sales Trend）のものです。長い出力は省略しています。
 
 **実行結果**
 
@@ -168,14 +168,14 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 {
   "success": true,
   "item": {
-    "id": "sjO4NsW7kb",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Returned 5 of 22 rows of chart \"Monthly Sales Trend\".",
   "result": {
     "chart": {
-      "name": "dkc1UUY6",
+      "name": "qR0sT1uV",
       "title": "Monthly Sales Trend",
       "type": "line",
       "data_granularity": "aggregated",

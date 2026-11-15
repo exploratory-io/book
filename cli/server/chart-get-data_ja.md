@@ -16,7 +16,7 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 
 \<id\> はノートなどの id、\<chart\> は fetch の結果にあるチャートの名前に置き換えます。
 
-実行結果は、ダッシュボード Sales Orders Dashboard（id が sjO4NsW7kb）のチャート MzU3kks5（Sales by Region）で実行したものです。長い出力は省略しています。
+実行結果は、ダッシュボード Sales Orders Dashboard（id が pQ9rS0tU1v）のチャート kL8mN9oP（Sales by Region）で実行したものです。長い出力は省略しています。
 
 **実行結果**
 
@@ -24,14 +24,14 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 {
   "success": true,
   "item": {
-    "id": "sjO4NsW7kb",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Returned 5 of 8 rows of chart \"Sales by Region\". To aggregate instead of paging, use chart_query with the same id and chart.",
   "result": {
     "chart": {
-      "name": "MzU3kks5",
+      "name": "kL8mN9oP",
       "title": "Sales by Region",
       "type": "bar",
       "data_granularity": "aggregated",
@@ -111,7 +111,7 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
     }
   },
   "warnings": [],
-  "url": "https://exploratory.io/dashboard/GMq1Qom5tS/sjO4NsW7kb"
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v"
 }
 ```
 

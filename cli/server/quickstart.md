@@ -42,7 +42,7 @@ expl server search "Sales Orders" --scope all --type data
 
 ```text
 ID          TITLE         URL                                                TYPE  DESCRIPTION                                                                                                                                                                                                                                                                                                   AUTHOR
-llS6nQK3aH  Sales Orders  https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH  data  One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...  Alex Kim
+hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  data  One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...  Alex Kim
 ```
 
 > If the result lists content with ids and URLs, the search works.
@@ -53,16 +53,16 @@ llS6nQK3aH  Sales Orders  https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH  dat
 expl server fetch <id> --json
 ```
 
-Replace \<id\> with an id from the search result. --json prints the server's result as JSON. The result below was run on the data with the id llS6nQK3aH (Sales Orders). Long output is trimmed.
+Replace \<id\> with an id from the search result. --json prints the server's result as JSON. The result below was run on the data with the id hI6jK7lM8n (Sales Orders). Long output is trimmed.
 
 **Result**
 
 ```text
 {
-  "id": "llS6nQK3aH",
+  "id": "hI6jK7lM8n",
   "title": "Sales Orders",
   "text": "# Sales Orders\n\nRows (total): 23,131\n\n## Columns\n\n| name | type | description |\n| --- | --- | --- |\n| order_id…,
-  "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH",
+  "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
   "metadata": {
     "update_status": {
       "freshness": "not_scheduled",
@@ -105,7 +105,7 @@ For a data item, first check the column names and types.
 expl server dataframe get-schema <id> --detail light --json
 ```
 
-Replace \<id\> with the id of a data item. The result below was run on the data with the id llS6nQK3aH (Sales Orders). Long output is trimmed.
+Replace \<id\> with the id of a data item. The result below was run on the data with the id hI6jK7lM8n (Sales Orders). Long output is trimmed.
 
 **Result**
 
@@ -113,7 +113,7 @@ Replace \<id\> with the id of a data item. The result below was run on the data 
 {
   "success": true,
   "item": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "type": "data",
     "title": "Sales Orders"
   },
@@ -142,7 +142,7 @@ Once you know the column names, aggregate. This example sums the sales column fo
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json
 ```
 
-Replace \<dataset_id\> with the data id and region with a real column name. Wrap each JSON value in single quotes ('). The result below sums sales by region on the data with the id llS6nQK3aH (Sales Orders). The values match Sales by Region in the Sales Orders Dashboard.
+Replace \<dataset_id\> with the data id and region with a real column name. Wrap each JSON value in single quotes ('). The result below sums sales by region on the data with the id hI6jK7lM8n (Sales Orders). The values match Sales by Region in the Sales Orders Dashboard.
 
 **Result**
 
@@ -150,11 +150,11 @@ Replace \<dataset_id\> with the data id and region with a real column name. Wrap
 {
   "query_id": "qry_2a25c1716e94b226",
   "dataset": {
-    "id": "llS6nQK3aH",
+    "id": "hI6jK7lM8n",
     "name": "Sales Orders",
     "version": "20261112T081211Z-72836d02",
     "updated_at": "2026-11-12T08:12:11.243Z",
-    "url": "https://exploratory.io/data/GMq1Qom5tS/llS6nQK3aH"
+    "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
   },
   "columns": [
     {

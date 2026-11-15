@@ -16,16 +16,16 @@ expl server fetch <id> --json
 
 \<id\> は、検索結果に表示された id に置き換えます。
 
-実行結果は、id が PNZ7eaY9SU のノート（Sales Orders Overview）で実行したものです。長い出力は省略しています。
+実行結果は、id が wX2yZ3aB4c のノート（Sales Orders Overview）で実行したものです。長い出力は省略しています。
 
 **実行結果**
 
 ```text
 {
-  "id": "PNZ7eaY9SU",
+  "id": "wX2yZ3aB4c",
   "title": "Sales Orders Overview",
   "text": "# Sales Orders Overview\n\n# Sales Orders Overview\n\nThis note summarizes the Sales Orders data. One row is one order line item (order_id + line_no). The data covers orders from 2025-01-01 to 2026-10-31 (23,131 line items, total sales of about 440.8 million).\n\n## Sales by region\n\n**Chart: Sales by Regi…",
-  "url": "https://exploratory.io/note/GMq1Qom5tS/PNZ7eaY9SU",
+  "url": "https://exploratory.io/note/aB3cD4eF5g/wX2yZ3aB4c",
   "metadata": {
     "scopes": {
       "A": "…"
@@ -67,10 +67,10 @@ s2 は、metadata.toc にある見出しの id に置き換えます。
 
 ```text
 {
-  "id": "PNZ7eaY9SU",
+  "id": "wX2yZ3aB4c",
   "title": "Sales Orders Overview",
-  "text": "# Sales Orders Overview > Sales by region\n\n## Sales by region\n\n**Chart: Sales by Region** (chart: `MzU3kks5`, type: bar)\n\nValues: sum of sales\n\n> [Computed summary]\n>\n> 8 region values (all rows). Total of sales: 440,826,130. Top: Kanto (148,695,040 33.7%), Kinki (74,050,840 16.8%), Chubu (72,023,380 16.3%). Bottom: Shikoku (19,857,430 4.5%), Chugoku (24,926,920 5.7%), Hokkaido (25,498,170 5.8%).\n\n| region | sales |\n…",
-  "url": "https://exploratory.io/note/GMq1Qom5tS/PNZ7eaY9SU",
+  "text": "# Sales Orders Overview > Sales by region\n\n## Sales by region\n\n**Chart: Sales by Region** (chart: `kL8mN9oP`, type: bar)\n\nValues: sum of sales\n\n> [Computed summary]\n>\n> 8 region values (all rows). Total of sales: 440,826,130. Top: Kanto (148,695,040 33.7%), Kinki (74,050,840 16.8%), Chubu (72,023,380 16.3%). Bottom: Shikoku (19,857,430 4.5%), Chugoku (24,926,920 5.7%), Hokkaido (25,498,170 5.8%).\n\n| region | sales |\n…",
+  "url": "https://exploratory.io/note/aB3cD4eF5g/wX2yZ3aB4c",
   "metadata": {
     "scopes": "…",
     "charts": "…",
@@ -103,10 +103,10 @@ expl server fetch <id> --query "region" --json
 
 ```text
 {
-  "id": "PNZ7eaY9SU",
+  "id": "wX2yZ3aB4c",
   "title": "Sales Orders Overview",
-  "text": "# Sales Orders Overview\n\n[s2 Sales Orders Overview > Sales by region]\n## Sales by region\n\n**Chart: Sales by Region** (chart: `MzU3kks5`, type: bar)\n\nValues: sum of sales\n\n> [Computed summary]\n>\n> 8 region values (all rows). Total of sales: 440,826,130. Top: Kanto (148,695,040 33.7%), Kinki (74,050,840 16.8%), Chubu (72,023,380 16.3%). Bottom: Shikoku (19,857,430 4.5%), Chugoku (24,926,920 5.7%), Hokkaido (25,498,170 …",
-  "url": "https://exploratory.io/note/GMq1Qom5tS/PNZ7eaY9SU",
+  "text": "# Sales Orders Overview\n\n[s2 Sales Orders Overview > Sales by region]\n## Sales by region\n\n**Chart: Sales by Region** (chart: `kL8mN9oP`, type: bar)\n\nValues: sum of sales\n\n> [Computed summary]\n>\n> 8 region values (all rows). Total of sales: 440,826,130. Top: Kanto (148,695,040 33.7%), Kinki (74,050,840 16.8%), Chubu (72,023,380 16.3%). Bottom: Shikoku (19,857,430 4.5%), Chugoku (24,926,920 5.7%), Hokkaido (25,498,170 …",
+  "url": "https://exploratory.io/note/aB3cD4eF5g/wX2yZ3aB4c",
   "metadata": {
     "scopes": "…",
     "charts": "…",
