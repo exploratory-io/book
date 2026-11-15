@@ -46,11 +46,9 @@ Find the "Sales Orders" data on Exploratory.
 
 After you send it, check the result.
 
-1. Check the Sales Orders link in the search result.
+If the reply shows a link to Sales Orders, it is working.
 
 ![Check in a chat](images/en/grok-bot-03-try.png)
-
-If the Sales Orders data appears with its URL, the connection works.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 

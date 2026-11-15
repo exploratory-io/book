@@ -44,11 +44,9 @@ Exploratory にある「Sales Orders」のデータを探して
 
 送信したあと、結果を確かめます。
 
-1. 検索結果の「Sales Orders」のリンクを確かめます。
+返答に Sales Orders のリンクが出れば、使えています。
 
 ![チャットで確かめる](images/ja/grok-bot-03-try.png)
-
-Sales Orders のデータが URL 付きで表示されていれば、接続できています。
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 
