@@ -77,6 +77,8 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 
 Codex は、サーバーを追加し、ブラウザでの認証が必要であることを答えます。認証が始まっていないときは、`codex mcp login Exploratory` を実行します。AI がどのコマンドを選ぶかは、実行のたびに変わることがあります。返答を読んで確かめてください。
 
+![Codex のチャットで、Exploratory サーバーの追加を頼む](images/ja/codex-chat-01-add.png)
+
 ### サインインして確かめる
 
 1. ブラウザでアクセスを許可します。
@@ -89,6 +91,8 @@ Codex は、サーバーを追加し、ブラウザでの認証が必要であ�
    ```text
    Exploratory にある「Sales Orders」のデータを探して。名前が Exploratory の MCP サーバーだけを使ってください。
    ```
+
+![Codex が、Exploratory サーバー経由で Sales Orders のデータを見つけた](images/ja/codex-chat-03-search.png)
 
 すでに Exploratory への別の接続（たとえば exploratory-server や Desktop）があると、Codex がそちらを選ぶことがあります。接続名を指定すると、それを避けられます。
 

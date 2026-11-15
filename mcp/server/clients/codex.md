@@ -94,6 +94,8 @@ Codex added the server with `codex mcp add` and answered that the browser sign-i
    Find the "Sales Orders" data on Exploratory. Use only the MCP server named Exploratory.
    ```
 
+![Codex finds the Sales Orders data through the Exploratory server](images/en/codex-chat-03-search.png)
+
 If you already have another Exploratory connection (for example exploratory-server or Desktop), Codex may pick that one. Naming the connection avoids it.
 
 <a id="trouble"></a>

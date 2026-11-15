@@ -64,12 +64,17 @@ Claude Code は `claude mcp add` を実行し、サーバーを追加したこ�
 
 1. 新しいセッションを始めます。
 2. `/mcp` を開き、Exploratory が一覧にあることを確かめます。
+
+![Claude Code の MCP の一覧に、Exploratory が表示されている](images/ja/claude-code-chat-03-mcp-list.png)
+
 3. Exploratory を選び、ブラウザでサインインします。
 4. 新しいセッションで、次のような依頼を送ります。
 
    ```text
    Exploratory にある「Sales Orders」のデータを探して
    ```
+
+![Claude Code が、Exploratory サーバー経由で Sales Orders のデータを見つけた](images/ja/claude-code-chat-02-search.png)
 
 Exploratory への接続が複数あるとき（たとえば exploratory-server や、Claude アプリで追加したコネクタ）は、「Exploratory の MCP サーバーを使って」のように、検索に使う接続名を指定します。
 
