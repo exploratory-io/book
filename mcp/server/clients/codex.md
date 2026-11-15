@@ -1,6 +1,6 @@
 # Connect Codex
 
-Register the Exploratory server in Codex and sign in through your browser.
+Register the Exploratory server in Codex and sign in through your browser. It takes about 3 minutes.
 
 <a id="need"></a>
 
@@ -14,7 +14,7 @@ Register the Exploratory server in Codex and sign in through your browser.
 
 ## Steps
 
-### 1. Register
+### Register
 
 This registers only the server, without the skill. Use either of the two ways below.
 
@@ -39,7 +39,7 @@ codex mcp add exploratory-server --url https://exploratory.io/mcp
 
 When Exploratory Server is listed in Codex's official plugin directory, you can install it from there instead. Use one way only. exploratory@exploratory in Exploratory's GitHub marketplace is for Desktop and does not install Server.
 
-### 2. Sign in
+### Sign in
 
 ```sh
 codex mcp login exploratory-server
@@ -47,7 +47,7 @@ codex mcp login exploratory-server
 
 Your browser opens. Sign in to Exploratory and approve the access.
 
-### 3. Try it
+### Try it
 
 ```text
 Find the "Sales Orders" data on Exploratory.

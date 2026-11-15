@@ -1,6 +1,6 @@
 # Claude Code につなぐ
 
-Claude Code に Exploratory のサーバーを登録し、ブラウザでサインインします。
+Claude Code に Exploratory のサーバーを登録し、ブラウザでサインインします。かかる時間は 3 分ほどです。
 
 <a id="need"></a>
 
@@ -14,7 +14,7 @@ Claude Code に Exploratory のサーバーを登録し、ブラウザでサイ�
 
 ## 手順
 
-### 1. 登録する
+### 登録する
 
 プラグインやスキルを使わずに、サーバーだけを登録する方法です。
 
@@ -24,11 +24,11 @@ claude mcp add --transport http exploratory-server https://exploratory.io/mcp
 
 Claude の公式のプラグイン一覧に Exploratory Server が掲載された場合は、そこからインストールすることもできます。インストール方法は 1 つだけにしてください。
 
-### 2. サインインする
+### サインインする
 
 新しいセッションで /mcp を開き、exploratory-server の接続を選んで、ブラウザでサインインします。
 
-### 3. 試す
+### 試す
 
 ```text
 Exploratory にある「Sales Orders」のデータを探して

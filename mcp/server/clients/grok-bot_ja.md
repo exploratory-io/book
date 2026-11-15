@@ -1,6 +1,6 @@
 # Grok Bot につなぐ
 
-Grok Bot のチャットで、Exploratory のサーバーを追加します。Grok Bot は、チャットで MCP サーバーを追加するクライアントです。
+Grok Bot のチャットで、Exploratory のサーバーを追加します。Grok Bot は、チャットで MCP サーバーを追加するクライアントです。かかる時間は 3 分ほどです。
 
 <a id="need"></a>
 
@@ -14,7 +14,7 @@ Grok Bot のチャットで、Exploratory のサーバーを追加します。Gr
 
 ## 手順
 
-### 1. 追加する
+### 追加する
 
 Grok Bot のチャットで、次のように送信します。この方法で追加されるのは MCP サーバーのみで、スキルは含まれません。
 
@@ -22,15 +22,15 @@ Grok Bot のチャットで、次のように送信します。この方法で�
 次のリモート MCP サーバーを追加して。名前: exploratory-server、URL: https://exploratory.io/mcp
 ```
 
+1. 入力した追加の依頼です。
+
 ![チャットで MCP サーバーの追加を頼む](images/ja/grok-bot-01-add.png)
 
-画像の 1 は、入力した追加の依頼です。
-
-### 2. サインインする
+### サインインする
 
 exploratory-server のカードが表示されます。カードから Exploratory にサインインします。カードが「接続済み」になったら、次の手順で確認します。
 
-### 3. 試す
+### 試す
 
 ```text
 Exploratory にある「Sales Orders」のデータを探して
@@ -38,9 +38,9 @@ Exploratory にある「Sales Orders」のデータを探して
 
 > Sales Orders のデータが URL 付きで表示されていれば、接続できています。
 
-![チャットで確かめる](images/ja/grok-bot-03-try.png)
+1. 検索結果の「Sales Orders」のリンクです。
 
-画像の 1 は、検索結果の「Sales Orders」のリンクです。
+![チャットで確かめる](images/ja/grok-bot-03-try.png)
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 

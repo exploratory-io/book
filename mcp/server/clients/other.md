@@ -1,6 +1,6 @@
 # Connect other clients
 
-Any MCP client that supports Streamable HTTP and OAuth can connect with the server URL.
+Any MCP client that supports Streamable HTTP and OAuth can connect with the server URL. It takes about 5 minutes, depending on the client.
 
 <a id="need"></a>
 
@@ -14,7 +14,7 @@ Any MCP client that supports Streamable HTTP and OAuth can connect with the serv
 
 ## Steps
 
-### 1. Register
+### Register
 
 Register this server URL in the client's MCP server settings. See the client's own documentation for where and how.
 
@@ -24,11 +24,11 @@ Register this server URL in the client's MCP server settings. See the client's o
 https://exploratory.io/mcp
 ```
 
-### 2. Sign in
+### Sign in
 
 Follow the client's prompts to sign in to Exploratory in the browser and approve access.
 
-### 3. Try it
+### Try it
 
 ```text
 Find the "Sales Orders" data on Exploratory.

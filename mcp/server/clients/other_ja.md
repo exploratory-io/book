@@ -1,6 +1,6 @@
 # そのほかのクライアントにつなぐ
 
-Streamable HTTP と OAuth に対応した MCP クライアントなら、サーバー URL を登録してつなげます。
+Streamable HTTP と OAuth に対応した MCP クライアントなら、サーバー URL を登録してつなげます。かかる時間は 5 分ほどです（クライアントによります）。
 
 <a id="need"></a>
 
@@ -14,7 +14,7 @@ Streamable HTTP と OAuth に対応した MCP クライアントなら、サー�
 
 ## 手順
 
-### 1. 登録する
+### 登録する
 
 クライアントの MCP サーバーの設定に、次のサーバー URL を登録します。設定の場所と書き方は、クライアントの説明を参照してください。
 
@@ -24,11 +24,11 @@ Streamable HTTP と OAuth に対応した MCP クライアントなら、サー�
 https://exploratory.io/mcp
 ```
 
-### 2. サインインする
+### サインインする
 
 クライアントの案内に従って、ブラウザで Exploratory にサインインし、アクセスを許可します。
 
-### 3. 試す
+### 試す
 
 ```text
 Exploratory にある「Sales Orders」のデータを探して

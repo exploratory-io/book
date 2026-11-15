@@ -1,6 +1,6 @@
 # Codex につなぐ
 
-Codex に Exploratory のサーバーを登録し、ブラウザでサインインします。
+Codex に Exploratory のサーバーを登録し、ブラウザでサインインします。かかる時間は 3 分ほどです。
 
 <a id="need"></a>
 
@@ -14,7 +14,7 @@ Codex に Exploratory のサーバーを登録し、ブラウザでサインイ�
 
 ## 手順
 
-### 1. 登録する
+### 登録する
 
 サーバーのみを登録します。スキルは含まれません。次のいずれかの方法で登録します。
 
@@ -39,7 +39,7 @@ codex mcp add exploratory-server --url https://exploratory.io/mcp
 
 Codex の公式のプラグイン一覧に Exploratory Server が掲載された場合は、そこからインストールすることもできます。インストール方法は 1 つだけにしてください。Exploratory の GitHub マーケットプレイスの exploratory@exploratory は Desktop 用で、Server は含まれません。
 
-### 2. サインインする
+### サインインする
 
 ```sh
 codex mcp login exploratory-server
@@ -47,7 +47,7 @@ codex mcp login exploratory-server
 
 ブラウザが開きます。Exploratory にサインインして、アクセスを許可してください。
 
-### 3. 試す
+### 試す
 
 ```text
 Exploratory にある「Sales Orders」のデータを探して

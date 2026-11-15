@@ -2,7 +2,7 @@
 
 Add the Exploratory server to the ChatGPT desktop app as an MCP server. An MCP server is the address an AI app connects to in order to use the data and features of an outside service. After you add it, connect to Exploratory and approve the access, and ChatGPT can read notes and data published on Exploratory.
 
-On the web (chatgpt.com), the screens for adding a server differ. The web steps are further down this page.
+On the web (chatgpt.com), the screens for adding a server differ. The web steps are further down this page. It takes about 5 minutes.
 
 <a id="need"></a>
 
@@ -17,95 +17,56 @@ You do not need an API key or a client ID.
 
 ## Steps (desktop app)
 
-### 1. Open settings
+### Open settings
 
 In the ChatGPT desktop app, open settings.
 
-### 2. Choose Plugins
+1. In the menu on the left of settings, choose Plugins under Integrations.
+2. Among the tabs Plugins, Apps, MCPs and Skills, choose MCPs.
+3. Choose Add at the top right.
 
-In the menu on the left of settings, choose Plugins under Integrations.
+![Plugins in Settings](images/en/chatgpt-desktop-01-plugins.png)
 
-### 3. Choose the MCP tab
+The Add menu opens.
 
-Among the tabs Plugins, Apps, MCPs and Skills, choose MCPs.
-
-![Plugins in Settings, the MCPs tab and Add](images/en/chatgpt-desktop-01-plugins.png)
-
-In the image, 1 is Plugins in step 2, 2 is the MCPs tab in step 3 and 3 is Add in step 4.
-
-### 4. Choose Add
-
-Choose Add at the top right.
-
-### 5. Choose the option to add an MCP server
-
-In the menu, choose Add MCP server. The Connect to a custom MCP screen opens.
+1. Choose Add MCP server. The Connect to a custom MCP screen opens.
 
 ![The Add menu](images/en/chatgpt-desktop-03-add-menu.png)
 
-In the image, 1 is Add MCP server.
+### Enter the address and save
 
-### 6. Enter the name
+1. In Name, enter the name to show in the list, for example Exploratory.
+2. For Type, choose Streamable HTTP. Do not choose STDIO.
+3. In URL, enter this URL.
 
-In Name, enter the name to show in the list, for example Exploratory.
+   ```text
+   https://exploratory.io/mcp
+   ```
 
-### 7. Choose the type
+![The Connect to a custom MCP screen](images/en/chatgpt-desktop-05-custom-mcp-filled.png)
 
-For Type, choose Streamable HTTP. Do not choose STDIO.
+You can leave the other fields (Bearer token env var, Headers and so on) empty. Exploratory connects through a sign-in in your browser, so it needs no token and no header. When you have entered the values, choose Save at the bottom right.
 
-### 8. Enter the URL
+### Restart and approve the access on exploratory.io
 
-In URL, enter this URL.
+The [official documentation](https://learn.chatgpt.com/docs/extend/mcp) describes what to do after you save as follows. The labels are quoted as the documentation writes them.
 
-```text
-https://exploratory.io/mcp
-```
-
-### 9. Leave the other fields empty
-
-Leave Bearer token env var and Headers empty. Exploratory connects through a sign-in in your browser, so it needs no token and no header.
-
-![The Connect to a custom MCP screen with Name, Type and URL filled in](images/en/chatgpt-desktop-05-custom-mcp-filled.png)
-
-In the image, 1 is Name in step 6, 2 is Type in step 7 and 3 is URL in step 8.
-
-### 10. Save
-
-Choose Save at the bottom right. The server you added appears under Servers on the MCPs tab.
-
-![Servers on the MCPs tab](images/en/chatgpt-desktop-08-connected.png)
-
-In the image, 1 is a row in the list of servers.
-
-The [official documentation](https://learn.chatgpt.com/docs/extend/mcp) describes the rest as follows. The labels are quoted as the documentation writes them.
-
-### 11. Restart
-
-After you save, restart the ChatGPT desktop app, following the documentation's Restart instruction.
-
-### 12. Authenticate
-
-For a server that needs OAuth, the list of servers shows that. When it does, choose Authenticate, as the documentation says.
-
-### 13. Approve the access
-
-Your browser opens exploratory.io. If you are not signed in, sign in first. On the screen where ChatGPT asks for access, choose Allow.
+1. Restart the ChatGPT desktop app, following the documentation's Restart instruction.
+2. For a server that needs OAuth, the list of servers shows that. When it does, choose Authenticate, as the documentation says.
+3. Your browser opens exploratory.io. If you are not signed in, sign in first.
+4. On the screen where ChatGPT asks for access, choose Allow.
 
 ![The approval screen on exploratory.io](images/en/chatgpt-07-sign-in.png)
 
-In the image, 1 is the approval button (Allow).
+### Check that it is connected
 
-### 14. Check the connection
+If the server you added appears under Servers on the MCPs tab, it was added.
 
-Type `/mcp` in the chat box to see the connected servers.
+1. The row you added in the list of servers.
 
-### 15. Open a new chat
+![Servers on the MCPs tab](images/en/chatgpt-desktop-08-connected.png)
 
-In ChatGPT, open a new chat.
-
-### 16. Send the request
-
-Send this.
+Type `/mcp` in the chat box to see the connected servers. Then open a new chat and send this.
 
 ```text
 Find the "Sales Orders" data on Exploratory.
@@ -119,95 +80,69 @@ If the Sales Orders data appears with its URL, it works.
 
 On the web, the screens for adding a server differ from the desktop app. This section describes the web steps.
 
-### 1. Open settings
+### Open the Plugins screen
 
 In ChatGPT, open Settings.
 
-### 2. Choose Plugins
-
-Choose Plugins in Settings.
+1. Choose Plugins in Settings.
+2. Choose Browse directory. The Plugins screen under Customize opens.
 
 ![Plugins in Settings](images/en/chatgpt-01-plugins.png)
 
-In the image, 1 is Plugins and 2 is Browse directory.
+On the Plugins screen under Customize, open the Add menu.
 
-### 3. Open the plugin list
+1. Choose Add at the top right.
 
-Choose Browse directory. The Plugins screen under Customize opens.
+![The Plugins screen under Customize](images/en/chatgpt-02-plugin-directory.png)
 
-![The Plugins screen under Customize, with Add at the top right](images/en/chatgpt-02-plugin-directory.png)
+The menu opens.
 
-In the image, 1 is Add.
-
-### 4. Choose Add
-
-Choose Add at the top right.
-
-### 5. Choose Add custom MCP server
-
-In the menu, choose Add custom MCP server.
+1. Choose Add custom MCP server.
 
 ![The Add menu](images/en/chatgpt-03-add-menu.png)
 
-In the image, 1 is Add custom MCP server.
+### Enter the address and create it
 
-### 6. Enter the name
+On the Add custom MCP server screen, enter these values.
 
-In Name, enter the name to show in the list, for example Exploratory.
+1. In Name, enter the name to show in the list, for example Exploratory.
+2. Under Connection, leave Server URL selected. In the URL field, enter this URL.
 
-![The Add custom MCP server screen](images/en/chatgpt-04-custom-mcp-empty.png)
+   ```text
+   https://exploratory.io/mcp
+   ```
 
-In the image, 1 is Name, 2 is the Server URL field and 3 is the check box I understand and want to continue.
+3. The screen says "Custom MCP servers introduce risk." Make sure you trust the server, then select I understand and want to continue.
 
-### 7. Enter the URL
+![The screen with the name, the URL and the check box filled in](images/en/chatgpt-05-custom-mcp-filled.png)
 
-Under Connection, leave Server URL selected. In the URL field, enter this URL.
+Also check that Authentication is OAuth. There is nothing to change. Then choose Create as a plugin.
 
-```text
-https://exploratory.io/mcp
-```
+### Approve the access on exploratory.io
 
-### 8. Check the authentication
+The Connect Exploratory screen opens.
 
-Check that Authentication is OAuth. There is nothing to change.
-
-### 9. Read the warning and select the check box
-
-The screen says "Custom MCP servers introduce risk." Make sure you trust the server, then select I understand and want to continue.
-
-![The screen with the name, the URL, OAuth and the check box filled in](images/en/chatgpt-05-custom-mcp-filled.png)
-
-In the image, 1 is Name, 2 is the Server URL field and 3 is the check box I understand and want to continue.
-
-### 10. Create it
-
-Choose Create as a plugin.
-
-### 11. Connect to Exploratory
-
-The Connect Exploratory screen opens. Choose the Connect Exploratory button.
+1. Choose the Connect Exploratory button.
 
 ![The Connect Exploratory screen](images/en/chatgpt-06-connect-dialog.png)
 
-In the image, 1 is the Connect Exploratory button.
+Your browser opens exploratory.io. If you are not signed in, sign in first.
 
-### 12. Approve the access
-
-Your browser opens exploratory.io. If you are not signed in, sign in first. On the screen where ChatGPT asks for access, choose Allow.
+1. On the screen where ChatGPT asks for access, choose Allow.
 
 ![The approval screen on exploratory.io](images/en/chatgpt-07-sign-in.png)
 
-In the image, 1 is the approval button (Allow). This screen of exploratory.io is shown in Japanese.
+This screen of exploratory.io is shown in Japanese.
 
-### 13. Check that it is connected
+### Check that it is connected
 
-Back in ChatGPT, Exploratory appears under Installed on the left of Customize. Open Exploratory to see its details: the Exploratory row under Apps, and Information. Information lists Developer, Category, Version and Website.
+Back in ChatGPT, Exploratory appears under Installed on the left of Customize. Open Exploratory to see its details.
+
+1. The Exploratory row under Apps. The Developer field is blurred in the image.
 
 ![Apps and Information in the Exploratory details](images/en/chatgpt-08-connected.png)
 
-In the image, 1 is the Exploratory row under Apps. The Developer field is blurred in the image.
-
-### 14. Try it
+Information lists Developer, Category, Version and Website.
 
 Choose Try in chat to open a chat. Send this.
 

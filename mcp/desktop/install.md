@@ -2,65 +2,42 @@
 
 In Exploratory Desktop, System Settings installs the Desktop MCP plugin into the AI tools on this computer. There is no separate procedure for each AI tool: Claude Code, Codex, Antigravity and Cursor all install from the same card.
 
+It takes about 5 minutes. You need Exploratory Desktop and the AI tool you want to install into (Claude Code, Codex, Antigravity or Cursor) on the same computer.
+
 <a id="steps"></a>
 
 ## Install
 
-### 1. Open System Settings
+### Install from System Settings
 
 In Exploratory Desktop, open System Settings.
 
-### 2. Choose MCP / CLI
+1. In the menu on the left, choose MCP / CLI.
+2. Check the "Install the Exploratory Desktop plugin" card. The card says:
 
-In the menu on the left of System Settings, choose MCP / CLI.
+   > Installs the Desktop MCP plugin into the AI tools on this computer. After installing, restart that AI tool.
 
-### 3. Turn on MCP
-
-Turn on the MCP switch. It is off by default.
-
-### 4. Allow writing (when you want the AI to create charts and notes)
-
-Only when you want the AI to create or change charts, notes and other content, check Allow create, edit and delete. Without it, the AI can only read.
-
-### 5. Install the plugin
-
-In the same tab, in the "Install the Exploratory Desktop plugin" card, choose Install on the AI tool you use. The card says:
-
-> Installs the Desktop MCP plugin into the AI tools on this computer. After installing, restart that AI tool.
-
-The card lists Claude Code, Codex, Antigravity and Cursor. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
+3. Choose Install on the row of the AI tool you use.
+4. Turn on the MCP switch. It is off by default.
+5. Only when you want the AI to create or change charts, notes and other content, check Allow create, edit and delete. Without it, the AI can only read.
+6. Choose Save at the bottom of the screen. If you do not save, the settings from 4 and 5 do not take effect.
 
 ![The "Install the Exploratory Desktop plugin" card in MCP / CLI in System Settings](images/en/desktop-plugin-card.png)
 
-In the image, 1 is MCP / CLI in the left menu that you choose in step 2, 2 is the "Install the Exploratory Desktop plugin" card in step 5, and 3 is Install on the Codex row.
+The card lists Claude Code, Codex, Antigravity and Cursor. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
 
-### 6. Save the settings
+### Check it in the AI tool
 
-Choose Save at the bottom of System Settings. If you do not save, the settings from steps 3 and 4 do not take effect.
+1. When the install ends, restart that AI tool.
+2. The first time an AI tool connects, Desktop asks whether to allow it. Allow only an app you started yourself.
+3. In Exploratory Desktop, open the project you want to use.
+4. In the AI tool, ask this.
 
-### 7. Restart the AI tool
+   ```text
+   In my open Exploratory project, build a monthly bar chart from the sales data.
+   ```
 
-When the install ends, restart that AI tool.
-
-### 8. Allow the connection
-
-The first time an AI tool connects, Desktop asks whether to allow it. Allow only an app you started yourself.
-
-### 9. Open a project
-
-In Exploratory Desktop, open the project you want to use.
-
-### 10. Ask the AI to try it
-
-In the AI tool, ask this.
-
-```text
-In my open Exploratory project, build a monthly bar chart from the sales data.
-```
-
-### 11. Check the connection
-
-In Claude Code, open /mcp and check that exploratory-desktop is connected. In Codex, run codex mcp list and check that exploratory-desktop is listed. If a call says that MCP is turned off, go back to steps 3 and 6 and check that you turned the switch on and chose Save.
+5. Check the connection. In Claude Code, open /mcp and check that exploratory-desktop is connected. In Codex, run codex mcp list and check that exploratory-desktop is listed. If a call says that MCP is turned off, go back to System Settings and check that you turned the MCP switch on and chose Save.
 
 <a id="differences"></a>
 
@@ -94,11 +71,12 @@ When an install fails, the second line of that AI tool's row shows "Could not in
 
 Hold the mouse pointer over Details to see the output of the command that ran, in a pop-up. The output is the last 2000 characters. If it is long, you can scroll inside the pop-up vertically. The pop-up stays when you move the pointer into it. Click Details to keep it open. Copy at the top right copies the output.
 
-The image is an example of how the error details look when updating an installed plugin failed. The command output in the pop-up is a sample.
+The image is an example of how the error details look when updating an installed plugin failed. The command output in the pop-up is a sample and differs from real output.
+
+1. Details.
+2. Copy.
 
 ![The card when updating an installed plugin failed, with the pointer over Details (example)](images/en/desktop-plugin-card-error.png)
-
-In the image, 1 is Details and 2 is Copy. The command output in the image is a sample and differs from real output.
 
 If the reason does not let you fix it, send the copied output to support. When it is fixed, choose Try again.
 

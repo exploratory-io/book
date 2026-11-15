@@ -1,6 +1,6 @@
 # Connect Cursor
 
-Register the Exploratory server in the Cursor agent and sign in through your browser. It works with the model you pick in Cursor, including Grok.
+Register the Exploratory server in the Cursor agent and sign in through your browser. It works with the model you pick in Cursor, including Grok. It takes about 5 minutes.
 
 <a id="need"></a>
 
@@ -14,7 +14,7 @@ Register the Exploratory server in the Cursor agent and sign in through your bro
 
 ## Steps
 
-### 1. Register
+### Register
 
 Until Exploratory Server is listed in the official plugin directory, add only the server by hand, without the skill. Add this to ~/.cursor/mcp.json (or .cursor/mcp.json in a project).
 
@@ -31,13 +31,15 @@ Until Exploratory Server is listed in the official plugin directory, add only th
 }
 ```
 
-In the Cursor app, choose Customize in the sidebar, then choose MCPs, to check the MCP server you added. Before you sign in, the exploratory-server row shows "Needs Authentication in Local", with Authenticate at its right.
+In the Cursor app, choose Customize in the sidebar to check the MCP server you added.
+
+1. Choose MCPs.
+2. Check the exploratory-server row. Before you sign in, it shows "Needs Authentication in Local".
+3. Authenticate at the right of the row lets you sign in.
 
 ![The exploratory-server row under MCPs in Customize](images/en/cursor-01-customize.png)
 
-In the image, 1 is MCPs, 2 is the exploratory-server row and 3 is Authenticate.
-
-### 2. Sign in
+### Sign in
 
 ```sh
 agent mcp login exploratory-server
@@ -45,17 +47,18 @@ agent mcp login exploratory-server
 
 Your browser opens. Sign in to Exploratory and approve the access. Choosing Authenticate in the app opens the same browser screen.
 
-![The approval screen in the browser](images/en/cursor-02-sign-in.png)
+1. Choose Allow.
 
-In the image, 1 is Allow.
+![The approval screen in the browser](images/en/cursor-02-sign-in.png)
 
 When you have signed in, exploratory-server moves to the Connected list under MCPs.
 
+1. MCPs.
+2. The exploratory-server row in the Connected list.
+
 ![The exploratory-server row in the Connected list](images/en/cursor-01-connected.png)
 
-In the image, 1 is MCPs and 2 is the exploratory-server row in the Connected list.
-
-### 3. Try it
+### Try it
 
 ```text
 Find the "Sales Orders" data on Exploratory.
@@ -63,9 +66,9 @@ Find the "Sales Orders" data on Exploratory.
 
 > If the Sales Orders data appears with its URL, the connection works.
 
-![Check in a chat](images/en/cursor-03-try.png)
+1. The Sales Orders link in the search result.
 
-In the image, 1 is the Sales Orders link in the search result.
+![Check in a chat](images/en/cursor-03-try.png)
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 

@@ -1,6 +1,6 @@
 # Connect Claude Code
 
-Register the Exploratory server in Claude Code and sign in through your browser.
+Register the Exploratory server in Claude Code and sign in through your browser. It takes about 3 minutes.
 
 <a id="need"></a>
 
@@ -14,7 +14,7 @@ Register the Exploratory server in Claude Code and sign in through your browser.
 
 ## Steps
 
-### 1. Register
+### Register
 
 This registers only the server, without the plugin or skill.
 
@@ -24,11 +24,11 @@ claude mcp add --transport http exploratory-server https://exploratory.io/mcp
 
 When Exploratory Server is listed in Claude's official plugin directory, you can install it from there instead. Use one way only.
 
-### 2. Sign in
+### Sign in
 
 Start a new session, open /mcp, choose the exploratory-server connection and sign in through the browser.
 
-### 3. Try it
+### Try it
 
 ```text
 Find the "Sales Orders" data on Exploratory.
