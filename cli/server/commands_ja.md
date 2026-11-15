@@ -17,7 +17,9 @@
 
 | コマンド | できること |
 | --- | --- |
+| [expl server dataframe get-schema](dataframe-get-schema_ja.md) | データの列を、型と一緒に取得します。 |
 | [expl server dataframe preview](dataframe-preview_ja.md) | データの行を、offset と limit でページに分けて取得します。 |
+| [expl server dataset query](dataset-query_ja.md) | サーバーでデータを絞り込み、集計して、結果だけを返します。 |
 | [expl server dataframe export](dataframe-export_ja.md) | データへの問い合わせの結果を、CSV か Parquet のファイルにして、ダウンロードリンクを返します。 |
 
 <a id="commands-chart-get-data"></a>

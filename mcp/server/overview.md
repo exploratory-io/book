@@ -73,7 +73,7 @@ Find the "Sales Orders" data on Exploratory.
 expl server search "Sales Orders" --scope all --type data --limit 3 --json
 ```
 
-With --json, the result the search tool returned is printed as it is. Long output is trimmed.
+With --json, the result the search tool returned is printed as it is. In the result below, long parts are omitted and people's names are replaced with fictional names.
 
 **Result**
 

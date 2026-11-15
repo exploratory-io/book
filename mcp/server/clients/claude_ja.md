@@ -83,7 +83,7 @@ Sales Orders のデータが URL つきで表示されれば、使えていま�
 
 一覧で「Exploratory」を開きます。
 
-1. サーバーの URL（https://exploratory.io/mcp）を確かめます。
+1. サーバーの URL（[https://exploratory.io/mcp](https://exploratory.io/mcp)）を確かめます。
 2. 「ツールの権限」を確かめます。
 
 ![「Exploratory」の詳細にある「ツールの権限」](images/ja/claude-06-tools.png)

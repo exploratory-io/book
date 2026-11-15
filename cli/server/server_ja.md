@@ -44,7 +44,7 @@ npm install -g @exploratory/cli@<version>
 npx -y @exploratory/cli --version
 ```
 
-インストールせずに、expl を 1 回だけ実行します。Node.js 20 以上が必要です。インストール方法は、Node.js の公式サイト（https://nodejs.org/）を参照してください。
+インストールせずに、expl を 1 回だけ実行します。Node.js 20 以上が必要です。インストール方法は、Node.js の公式サイト（[https://nodejs.org/](https://nodejs.org/)）を参照してください。
 
 > 1 行目に expl \<バージョン\> と表示されていれば、インストールは完了しています。
 
@@ -119,7 +119,7 @@ Rows (total): 23,131
 
 - [ノートを読む](guides/read-notes_ja.md) - 探して、本文とチャートの数値を読みます。
 - [データを集計する](guides/query-data_ja.md) - 列を確認し、絞り込んで集計します。
-- [チャートの数値を取得する](guides/dashboard-charts_ja.md) - 人が操作せずに、スクリプトや CI で実行します。
+- [チャートの数値を取得する](guides/dashboard-charts_ja.md) - ダッシュボードやノートのチャートから、数値を取得・集計します。
 - [アナリティクスの結果を取得する](guides/analytics_ja.md) - 回帰などの分析の結果を、表として取得します。
 - [結果をファイルに保存する](guides/export_ja.md) - データの結果を CSV か Parquet にします。
 - [自動処理](guides/automation_ja.md) - 人が操作せずに、スクリプトや CI で動かします。

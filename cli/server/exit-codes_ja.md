@@ -24,6 +24,6 @@ expl は、終わるときに終了コードを返します。スクリプトや
 | コード | 対処 |
 | --- | --- |
 | 3 | Desktop を使っているときは、Exploratory Desktop を起動して、もう一度実行します。Server を使っているときは、通信を確認して、もう一度実行します。 |
-| 4 | Desktop を使っているときは、Exploratory Desktop にサインインします。Server を使っているときは、expl server login を実行します。API キーを使っているときは、間違い・期限切れ・取り消しなら、アカウント設定 \> API キーで新しいキーを作ります。API キーが無効、または IP アドレスが許可されていないというメッセージなら、管理者に確認します。 EXPL_SERVER_TOKEN が設定されていると、保存したログイン情報より先にそちらが使われます。先に unset EXPL_SERVER_TOKEN を実行してください。 |
+| 4 | Desktop を使っているときは、Exploratory Desktop にサインインします。Server を使っているときは、expl server login を実行します。API キーを使っているときは、間違い・期限切れ・取り消しなら、アカウント設定 \> API キーで新しいキーを作ります。API キーが無効、または IP アドレスが許可されていないというメッセージなら、管理者に確認します。 環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。 |
 
 - [トラブルシューティング](troubleshooting_ja.md) - 症状から対処を探します。

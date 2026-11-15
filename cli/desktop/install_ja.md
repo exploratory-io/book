@@ -34,8 +34,10 @@ expl --version
 
 | OS | インストール先 |
 | --- | --- |
-| macOS | /usr/local/bin/expl |
+| macOS | /usr/local/bin/expl（管理者の許可を断ったときは ~/.local/bin/expl） |
 | Windows | \<インストール先\>\\cli をユーザーの PATH に追加します。管理者の権限は必要ありません。 |
+
+macOS で /usr/local/bin に置くときは、管理者の許可を求められることがあります。断ると、expl は ~/.local/bin に置かれます。必要なら、そのフォルダを PATH に追加してください。置かれた場所は、`which expl` で確かめられます。
 
 同じコマンドが、別名 exploratory と、MCP 用の exploratory-mcp としても追加されます。その名前がすでにほかのコマンドで使用されている場合は、その名前のみ追加されません。
 
@@ -69,7 +71,7 @@ where expl
 
 | OS | アンインストール方法 |
 | --- | --- |
-| macOS | rm /usr/local/bin/expl /usr/local/bin/exploratory /usr/local/bin/exploratory-mcp（管理者の権限が必要な場合は sudo を付けます）。アプリを /Applications に置いたままにすると、次回の起動時に再び追加されます。 |
+| macOS | rm /usr/local/bin/expl /usr/local/bin/exploratory /usr/local/bin/exploratory-mcp（管理者の権限が必要な場合は sudo を付けます）。許可を断った場合は、~/.local/bin にある同じ 3 つの名前を削除します。アプリを /Applications に置いたままにすると、次回の起動時に再び追加されます。 |
 | Windows | 「システム環境変数の編集」を開き、ユーザー環境変数の Path から \<インストール先\>\\cli を削除します。次回の起動時に再び追加されます。 |
 
 - [はじめる](quickstart_ja.md) - Desktop につなぎ、最初のコマンドを実行します。

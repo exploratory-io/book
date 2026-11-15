@@ -17,7 +17,9 @@ Choose a command by purpose. Open its name to see arguments and examples.
 
 | Command | Purpose |
 | --- | --- |
+| [expl server dataframe get-schema](dataframe-get-schema.md) | Get the columns of a data item, with their types. |
 | [expl server dataframe preview](dataframe-preview.md) | Get the rows of a data item, page by page with offset and limit. |
+| [expl server dataset query](dataset-query.md) | Filter and aggregate a data item on the server and return only the result. |
 | [expl server dataframe export](dataframe-export.md) | Save the result of a query on a data item as a CSV or Parquet file and return a download link. |
 
 <a id="commands-chart-get-data"></a>

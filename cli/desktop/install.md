@@ -34,8 +34,10 @@ expl --version
 
 | OS | Location |
 | --- | --- |
-| macOS | /usr/local/bin/expl |
+| macOS | /usr/local/bin/expl (~/.local/bin/expl when you decline the administrator permission) |
 | Windows | \<install folder\>\\cli is added to your user PATH. Administrator rights are not needed. |
+
+On macOS, installing in /usr/local/bin may ask for administrator permission. If you decline, expl goes to ~/.local/bin; add that folder to your PATH if needed, and run `which expl` to see where it is.
 
 The same program is also installed as exploratory, and as exploratory-mcp for MCP. If another command already uses one of those names, only that name is not installed.
 
@@ -69,7 +71,7 @@ where expl
 
 | OS | How |
 | --- | --- |
-| macOS | rm /usr/local/bin/expl /usr/local/bin/exploratory /usr/local/bin/exploratory-mcp (add sudo if administrator rights are needed). If the app stays in /Applications, it is installed again at the next start. |
+| macOS | rm /usr/local/bin/expl /usr/local/bin/exploratory /usr/local/bin/exploratory-mcp (add sudo if administrator rights are needed). If you declined the permission, delete the same three names in ~/.local/bin instead. If the app stays in /Applications, it is installed again at the next start. |
 | Windows | Open "Edit the system environment variables" and remove \<install folder\>\\cli from Path in the user variables. It is added again at the next start. |
 
 - [Quickstart](quickstart.md) - Connect to Desktop and run your first commands.

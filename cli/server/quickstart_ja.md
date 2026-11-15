@@ -95,7 +95,7 @@ expl server fetch <id> --json
 }
 ```
 
-結果には、本文と、見出しの一覧（metadata.toc）が含まれます。
+結果には、本文が含まれます。ノート、ダッシュボード、スライドでは、長さや指定によって、見出しの一覧（metadata.toc）も含まれます。ない場合は、--query で見出しの id を調べます。
 
 ### 5. 集計する
 
@@ -136,7 +136,7 @@ expl server dataframe get-schema <id> --detail light --json
 … (trimmed)
 ```
 
-列の名前がわかったら、集計します。次の例は、symbol 列の値ごとに close 列の平均を求め、大きい順に並べます。
+列の名前がわかったら、集計します。次の例は、region 列の値ごとに sales 列の合計を求め、大きい順に並べます。
 
 ```sh
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json

@@ -20,7 +20,7 @@ The command list comes from the server each time. A new operation on the server 
 expl server tools describe <command>
 ```
 
-Replace \<command\> with the name of a command from the list.
+Replace \<command\> with the name of a command from the list. Wrap a command of two words in quotes, as in `expl server tools describe "chart get-data"`. The tool name, such as `chart_get_data`, also works.
 
 It shows what the command does and the flags it takes. Check here instead of guessing command names.
 

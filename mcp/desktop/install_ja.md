@@ -41,8 +41,10 @@ Exploratory Desktop で、システム設定を開きます。
 4. AI ツールで、次のように頼みます。
 
    ```text
-   開いている Exploratory のプロジェクトで、売上データから月別の棒グラフを作って
+   開いている Exploratory のプロジェクトのデータフレームを一覧して
    ```
+
+   これは、読み取りだけの設定でも動きます。作成も試すときは、「作成、変更、削除を許可する」をオンにして保存してから、自分のデータの列を使った棒グラフなど、チャートを作るように頼みます。
 
 5. 接続を確かめます。
    - Claude Code では、`/mcp` を開いて、exploratory-desktop が接続されていることを確認します。
@@ -159,6 +161,7 @@ agent --plugin-dir ./exploratory/plugins/exploratory-desktop
 | Claude Code | claude plugin marketplace update exploratory を実行し、続けて claude plugin update exploratory@exploratory を実行して、Claude Code を起動し直します | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory を実行し、続けて codex plugin remove exploratory@exploratory と codex plugin add exploratory@exploratory を実行します | codex plugin remove exploratory@exploratory |
 | Antigravity | クローンしたフォルダで git pull を実行し、もう一度 agy plugin install を実行します | Antigravity のプラグインの設定で、プラグインを削除します |
+| Cursor（agent --plugin-dir で読み込んだとき） | クローンしたフォルダで git pull を実行し、もう一度 agent --plugin-dir で起動します | --plugin-dir を使わないようにします |
 | Cursor（~/.cursor/mcp.json を手で書いたとき） | 内容を書き直します | ~/.cursor/mcp.json から exploratory-desktop を消します |
 
 Desktop の MCP は、Exploratory Desktop を終了すると止まります。プラグインを削除しても、Server の MCP の接続には影響しません。

@@ -102,7 +102,7 @@ If you already have another Exploratory connection (for example exploratory-serv
 
 | What you see | What to do |
 | --- | --- |
-| You are asked to sign in | Run codex mcp login exploratory-server to sign in again. |
+| You are asked to sign in | Run codex mcp login exploratory-server to sign in again. If you added the server by chat, give the name you registered (Exploratory in the example). |
 | The Server tools do not appear | exploratory@exploratory is for Desktop. Register Server with the steps above. |
 
 - [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the MCP Server as a whole.
@@ -111,6 +111,6 @@ If you already have another Exploratory connection (for example exploratory-serv
 
 ## Disconnect
 
-Delete the \[mcp_servers.exploratory-server\] entry you added to ~/.codex/config.toml.
+Delete the \[mcp_servers.exploratory-server\] entry you added to ~/.codex/config.toml. If you added the server by chat, the entry carries the name you gave it (Exploratory in the example), so delete \[mcp_servers.Exploratory\] instead. Use the name you registered.
 
 Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in your account settings on exploratory.io.

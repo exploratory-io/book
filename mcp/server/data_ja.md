@@ -45,7 +45,7 @@ Server MCP の呼び出しは、サインインしたユーザーとして実行
 | --- | --- |
 | 通信方式 | Streamable HTTP、ステートレス（POST のみ。GET と DELETE は 405） |
 | 登録 | クライアントは Dynamic Client Registration か Client ID Metadata Document で登録（どちらも、クライアントが自分を登録する方法） |
-| メタデータ | https://exploratory.io/.well-known/oauth-protected-resource/mcp、https://exploratory.io/.well-known/oauth-authorization-server |
+| メタデータ | [https://exploratory.io/.well-known/oauth-protected-resource/mcp](https://exploratory.io/.well-known/oauth-protected-resource/mcp)、[https://exploratory.io/.well-known/oauth-authorization-server](https://exploratory.io/.well-known/oauth-authorization-server) |
 
 有効なトークンがない呼び出しには、HTTP 401 が返り、WWW-Authenticate ヘッダーが保護リソースのメタデータを指します。クライアントはこれを参照して、サインインを開始します。
 

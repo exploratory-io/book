@@ -20,7 +20,7 @@ expl server tools list
 expl server tools describe <command>
 ```
 
-\<command\> は、一覧に出たコマンドの名前に置き換えます。
+\<command\> は、一覧に出たコマンドの名前に置き換えます。2 語のコマンドは、`expl server tools describe "chart get-data"` のように引用符で囲みます。`chart_get_data` のようなツール名でも指定できます。
 
 コマンドの説明と、使えるフラグが表示されます。コマンド名を推測せず、ここで確認してください。
 

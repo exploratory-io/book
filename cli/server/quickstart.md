@@ -95,7 +95,7 @@ Replace \<id\> with an id from the search result. --json prints the server's res
 }
 ```
 
-The result holds the text and the list of headings (metadata.toc).
+The result holds the text. For a note, dashboard or slide it can also hold the list of headings (metadata.toc), depending on its length and your options. When it is missing, get the heading ids with --query.
 
 ### 5. Aggregate
 
@@ -136,7 +136,7 @@ Replace \<id\> with the id of a data item. The result below was run on the data 
 … (trimmed)
 ```
 
-Once you know the column names, aggregate. This example averages the close column for each value of the symbol column and sorts them from the largest.
+Once you know the column names, aggregate. This example sums the sales column for each value of the region column and sorts the totals from the largest.
 
 ```sh
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json

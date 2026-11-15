@@ -18,7 +18,7 @@ AI は、search を scope: "all" で呼び出し、該当するデータを URL 
 expl server search "Sales Orders" --scope all --type data --limit 3 --json
 ```
 
---json を付けると、search ツールが返した結果をそのまま出力します。長い出力は省略しています。
+--json を付けると、search ツールが返した結果をそのまま出力します。次の結果は、長い部分を省略し、人名を架空の名前に置き換えた例です。
 
 **実行結果**
 

@@ -38,7 +38,7 @@ expl server dataframe preview <id> --limit 3 --json
 
 ## 絞り込みと集計
 
-次の例は、symbol 列の値ごとに close 列の平均を求め、大きい順に 5 件を返します。
+次の例は、region 列の値ごとに sales 列の合計を求め、大きい順に 5 件を返します。
 
 ```sh
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json
@@ -120,9 +120,9 @@ JSON は、データを書くための決まった形の文字列です。dimens
 
 | フラグ | 形 | 意味 |
 | --- | --- | --- |
-| --dimensions | \[{"column":"symbol"}\] | symbol 列の値ごとにグループに分けます。 |
-| --metrics | \[{"function":"avg","column":"close","alias":"avg_close"}\] | close 列の平均を求め、結果の名前を avg_close にします。 |
-| --sort | \[{"field":"avg_close","direction":"desc"}\] | 出力の列 avg_close を、大きい順に並べます。 |
+| --dimensions | \[{"column":"region"}\] | region 列の値ごとにグループに分けます。 |
+| --metrics | \[{"function":"sum","column":"sales","alias":"sales"}\] | sales 列の合計を求め、結果の名前を sales にします。 |
+| --sort | \[{"field":"sales","direction":"desc"}\] | 出力の列 sales を、大きい順に並べます。 |
 
 metrics の alias は必須です。英字、数字、_ だけで、数字で始めず、64 文字までです。sort では、出力の列の名前を field で指定します。
 

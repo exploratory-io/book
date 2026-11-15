@@ -54,12 +54,14 @@ expl checks the key with the server first. If the server refuses it, nothing is 
 
 The key is saved in the same place as a browser login (see Where the login is saved). A saved API key is never refreshed and never opens a browser. Logging in again replaces it.
 
-Instead of saving it, you can set the environment variable EXPL_SERVER_TOKEN. It is used before any saved login. If EXPL_SERVER_TOKEN is set, it is used before a saved login, so run unset EXPL_SERVER_TOKEN first.
+Instead of saving it, you can set the environment variable EXPL_SERVER_TOKEN. It is used before any saved login.
 
 | Order | Source |
 | --- | --- |
 | 1 | EXPL_SERVER_TOKEN |
 | 2 | The saved login (a browser login, or an API key saved by --with-token) |
+
+To switch from the environment-variable key to a saved login, run unset EXPL_SERVER_TOKEN first. While it is set, it is used before the saved login.
 
 ```sh
 expl server status
@@ -156,9 +158,9 @@ For the operations that expl server calls, Exploratory Server records the follow
 | Run "expl server login". | Sign-in is missing, or the saved login was rejected. Run expl server login. |
 | The redirect URL has no authorization code. | With --no-browser, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
 | It fails after you paste | The code works only once and expires after 60 seconds. Start again from the beginning. |
-| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked, or its owner can no longer use API keys. Exit code 4. Create a new API key, then set EXPL_SERVER_TOKEN or run expl server login --with-token. If EXPL_SERVER_TOKEN is set, it is used before a saved login, so run unset EXPL_SERVER_TOKEN first. |
-| API keys are disabled by your administrator. | An administrator turned API keys off. Exit code 4. Ask your administrator, or sign in with expl server login. If EXPL_SERVER_TOKEN is set, it is used before a saved login, so run unset EXPL_SERVER_TOKEN first. |
+| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked, or its owner can no longer use API keys. Exit code 4. Create a new API key, then set EXPL_SERVER_TOKEN or run expl server login --with-token. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
+| API keys are disabled by your administrator. | An administrator turned API keys off. Exit code 4. Ask your administrator, or sign in with expl server login. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
 | This IP address is not allowed for API keys. | Your administrator limits API keys to certain IP addresses. Exit code 4. Run expl from an allowed address, or ask your administrator. |
 | Too many failed API key attempts. Try again later. | Many refused keys came from this address in a short time. Fix the key and try again later. |
-| --token was removed. … | Use the environment variable EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. If EXPL_SERVER_TOKEN is set, it is used before a saved login, so run unset EXPL_SERVER_TOKEN first. |
+| --token was removed. … | Use the environment variable EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
 | Paste an API key (it starts with exp_pat_) when … | The value is not an API key. Copy the whole key from Account Settings \> API Keys. Exit code 2. |

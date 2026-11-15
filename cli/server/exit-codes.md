@@ -24,6 +24,6 @@ A reader closing the pipe (expl ... | head -1) is not an error and exits with 0.
 | Code | What to do |
 | --- | --- |
 | 3 | With Desktop, start Exploratory Desktop and run it again. With Server, check the network and run it again. |
-| 4 | With Desktop, sign in to Exploratory Desktop. With Server, run expl server login. With an API key, create a new key in Account Settings \> API Keys if it is wrong, expired or revoked, or ask your administrator when the message says API keys are disabled or the IP address is not allowed. If EXPL_SERVER_TOKEN is set, it is used before a saved login, so run unset EXPL_SERVER_TOKEN first. |
+| 4 | With Desktop, sign in to Exploratory Desktop. With Server, run expl server login. With an API key, create a new key in Account Settings \> API Keys if it is wrong, expired or revoked, or ask your administrator when the message says API keys are disabled or the IP address is not allowed. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
 
 - [Troubleshooting](troubleshooting.md) - Find a fix by symptom.

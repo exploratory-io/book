@@ -24,13 +24,15 @@ cat > dup.jq <<'JQ'
   title: $title,
   pages: [.pages[] | {name, rows: [.layout_rows[] | {height: .options.height, panels: [.panels[] |
     if .type == "text" then {text, width: .widthRatio}
-    elif .type == "analytics" then {analytics: .id, width: .widthRatio}
-    else {chart: .id, width: .widthRatio} end]}]}],
+    elif .analysisId then {analytics: .analysisId, outputType: .id, title: .name, width: .widthRatio}
+    else {chart: .id, title: .name, width: .widthRatio} end]}]}],
   variables: [.variables[].name],
   settings
 }
 JQ
 ```
+
+この jq は、分析のパネルを `.analysisId`（分析の id）で見分け、出力の種類の id（`.id`）を `outputType` に渡します。引き継ぐのはパネルのタイトル、幅、行だけです。`mode`（create が行の数からもう一度決めます）、ページの `headers` と `columns`（列で組んだページ）、パネルのタイトルの色などの表示設定は引き継ぎません。元のダッシュボードで使っている場合は、コピーを Desktop で開いて確かめ、設定し直してください。
 
 ### 3. 作成する
 

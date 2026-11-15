@@ -41,8 +41,10 @@ If you do not save, the MCP switch and the Allow create, edit and delete setting
 4. In the AI tool, ask this.
 
    ```text
-   In my open Exploratory project, build a monthly bar chart from the sales data.
+   List the data frames in my open Exploratory project.
    ```
+
+   This works with the read-only setting too. To try creating something, turn on Allow create, edit and delete and save, then ask for a chart instead, such as a bar chart of a column of your own data.
 
 5. Check the connection.
    - In Claude Code, open `/mcp` and check that exploratory-desktop is connected.
@@ -159,6 +161,7 @@ It depends on how you installed it.
 | Claude Code | claude plugin marketplace update exploratory, then claude plugin update exploratory@exploratory, and restart Claude Code | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory, then codex plugin remove exploratory@exploratory and codex plugin add exploratory@exploratory | codex plugin remove exploratory@exploratory |
 | Antigravity | Run git pull in the cloned folder, then agy plugin install again | Remove the plugin in Antigravity's plugin settings |
+| Cursor (loaded with agent --plugin-dir) | Run git pull in the cloned folder and start agent --plugin-dir again | Stop using --plugin-dir |
 | Cursor (you wrote ~/.cursor/mcp.json by hand) | Rewrite its contents | Remove exploratory-desktop from ~/.cursor/mcp.json |
 
 The Desktop MCP stops when you quit Exploratory Desktop. Removing the plugin does not affect your Server MCP connection.

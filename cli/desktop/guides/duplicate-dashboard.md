@@ -24,13 +24,15 @@ cat > dup.jq <<'JQ'
   title: $title,
   pages: [.pages[] | {name, rows: [.layout_rows[] | {height: .options.height, panels: [.panels[] |
     if .type == "text" then {text, width: .widthRatio}
-    elif .type == "analytics" then {analytics: .id, width: .widthRatio}
-    else {chart: .id, width: .widthRatio} end]}]}],
+    elif .analysisId then {analytics: .analysisId, outputType: .id, title: .name, width: .widthRatio}
+    else {chart: .id, title: .name, width: .widthRatio} end]}]}],
   variables: [.variables[].name],
   settings
 }
 JQ
 ```
+
+This jq reads an analytics panel by `.analysisId` (the analytics id) and passes the output type id (`.id`) as `outputType`. It carries over the panel title, the width and the rows only. It does not carry over `mode` (create works it out again from the number of rows), a page's `headers` or `columns` (a page laid out in columns), or a panel's display settings such as the title color. If the original uses them, check the copy in Desktop and set them again.
 
 ### 3. Create the copies
 

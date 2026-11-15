@@ -98,7 +98,7 @@ Codex は、サーバーを追加し、ブラウザでの認証が必要であ�
 
 | 表示される内容 | 対処 |
 | --- | --- |
-| サインインを求められる | codex mcp login exploratory-server を実行して、もう一度サインインします。 |
+| サインインを求められる | codex mcp login exploratory-server を実行して、もう一度サインインします。チャットで追加した場合は、自分が登録した名前（例では Exploratory）を指定します。 |
 | Server のツールが出ない | exploratory@exploratory は Desktop 用です。上の手順で、Server を登録します。 |
 
 - [トラブルシューティング](../troubleshooting_ja.md) - MCP Server 全体の、症状ごとの対処です。
@@ -107,6 +107,6 @@ Codex は、サーバーを追加し、ブラウザでの認証が必要であ�
 
 ## 接続を解除する
 
-~/.codex/config.toml に追加した \[mcp_servers.exploratory-server\] の部分を削除します。
+~/.codex/config.toml に追加した \[mcp_servers.exploratory-server\] の部分を削除します。チャットで追加した場合は、自分が付けた名前（例では Exploratory）で登録されているので、\[mcp_servers.Exploratory\] の部分を削除します。自分が登録した名前を使ってください。
 
 登録を解除しても、アクセスの許可は残ります。許可も取り消すには、exploratory.io のアカウント設定の「接続中のAIアプリ」から、クライアントを解除します。

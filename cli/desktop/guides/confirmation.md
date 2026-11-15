@@ -32,4 +32,4 @@ expl execution get <execution_id> --operation-id <operation_id>
 
 Replace \<execution_id\> and \<operation_id\> with the values printed by --no-wait.
 
-When --timeout passes, expl shows how to check and exits with code 1 (the operation continues). Ctrl+C while waiting cancels the operation and then exits (exit code 130).
+When --timeout passes, expl shows how to check and exits with code 1 (the operation continues). Ctrl+C while waiting requests cancellation of the operation and exits (exit code 130). The request can fail, so check the state with expl execution get when it matters.

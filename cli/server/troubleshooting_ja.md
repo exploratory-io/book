@@ -21,9 +21,9 @@
 | 表示される内容 | 対処 |
 | --- | --- |
 | Run "expl server login". | サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。 |
-| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | キーが間違っているか、期限切れか、取り消されています。新しい API キーを作って、EXPL_SERVER_TOKEN に設定するか、expl server login --with-token を実行します。終了コード 4 です。 EXPL_SERVER_TOKEN が設定されていると、保存したログイン情報より先にそちらが使われます。先に unset EXPL_SERVER_TOKEN を実行してください。 |
-| API keys are disabled by your administrator. / This IP address is not allowed for API keys. | 管理者が、API キーをオフにしているか、使える IP アドレスを限定しています。管理者に確認するか、expl server login でサインインします。終了コード 4 です。 EXPL_SERVER_TOKEN が設定されていると、保存したログイン情報より先にそちらが使われます。先に unset EXPL_SERVER_TOKEN を実行してください。 |
-| --token was removed. … | EXPL_SERVER_TOKEN を設定するか、expl server login --with-token を実行します。終了コード 2 です。 EXPL_SERVER_TOKEN が設定されていると、保存したログイン情報より先にそちらが使われます。先に unset EXPL_SERVER_TOKEN を実行してください。 |
+| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | キーが間違っているか、期限切れか、取り消されています。新しい API キーを作って、EXPL_SERVER_TOKEN に設定するか、expl server login --with-token を実行します。終了コード 4 です。 環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。 |
+| API keys are disabled by your administrator. / This IP address is not allowed for API keys. | 管理者が、API キーをオフにしているか、使える IP アドレスを限定しています。管理者に確認するか、expl server login でサインインします。終了コード 4 です。 環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。 |
+| --token was removed. … | EXPL_SERVER_TOKEN を設定するか、expl server login --with-token を実行します。終了コード 2 です。 環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。 |
 | Too many failed API key attempts. Try again later. | このアドレスから、拒否されたキーが短い時間に何度も送られました。キーを直して、しばらくしてからやり直します。 |
 | The redirect URL has no authorization code. | --no-browser のとき、最初に表示された URL を貼り付けています。移動先の、http://127.0.0.1/callback?code= で始まる URL を貼り付けてください。 |
 | 終了コード 4（Desktop） | Exploratory Desktop にサインインします。 |

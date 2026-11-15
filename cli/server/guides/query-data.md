@@ -38,7 +38,7 @@ When the publisher did not include all data, the rows are the sample saved at pu
 
 ## Filter and aggregate
 
-This example averages the close column for each value of the symbol column and returns the top 5, largest first.
+This example sums the sales column for each value of the region column and returns the top 5, largest first.
 
 ```sh
 expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"sum","column":"sales","alias":"sales"}]' --sort '[{"field":"sales","direction":"desc"}]' --limit 5 --json
@@ -120,9 +120,9 @@ JSON is a text format for writing structured data. Pass dimensions, metrics, sor
 
 | Flag | Shape | Meaning |
 | --- | --- | --- |
-| --dimensions | \[{"column":"symbol"}\] | Group by the values of the symbol column. |
-| --metrics | \[{"function":"avg","column":"close","alias":"avg_close"}\] | Average the close column and name the result avg_close. |
-| --sort | \[{"field":"avg_close","direction":"desc"}\] | Sort by the output column avg_close, largest first. |
+| --dimensions | \[{"column":"region"}\] | Group by the values of the region column. |
+| --metrics | \[{"function":"sum","column":"sales","alias":"sales"}\] | Sum the sales column and name the result sales. |
+| --sort | \[{"field":"sales","direction":"desc"}\] | Sort by the output column sales, largest first. |
 
 The alias in metrics is required. Use only letters, digits and _, do not start with a digit, and use at most 64 characters. In sort, name the output column with field.
 

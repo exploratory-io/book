@@ -111,4 +111,6 @@ Replace exp_pat_... with your key. This leaves the key in your shell history. Us
 claude mcp remove exploratory-server
 ```
 
+This is the name used in the steps above. If you added the server by chat, use the name you gave it (Exploratory in the example) instead. If the AI added it in a different scope from the default, also add `--scope` with that scope. To see the names you have, run `claude mcp list`.
+
 Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in your account settings on exploratory.io.

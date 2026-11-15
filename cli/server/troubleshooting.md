@@ -21,9 +21,9 @@ Find a fix by symptom.
 | What you see | What to do |
 | --- | --- |
 | Run "expl server login". | Sign-in is missing, or the saved login was rejected. Run expl server login. |
-| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked. Create a new API key, then set EXPL_SERVER_TOKEN or run expl server login --with-token. Exit code 4. If EXPL_SERVER_TOKEN is set, it is used before a saved login, so run unset EXPL_SERVER_TOKEN first. |
-| API keys are disabled by your administrator. / This IP address is not allowed for API keys. | An administrator turned API keys off or limits them to certain IP addresses. Ask your administrator, or sign in with expl server login. Exit code 4. If EXPL_SERVER_TOKEN is set, it is used before a saved login, so run unset EXPL_SERVER_TOKEN first. |
-| --token was removed. … | Set EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. If EXPL_SERVER_TOKEN is set, it is used before a saved login, so run unset EXPL_SERVER_TOKEN first. |
+| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked. Create a new API key, then set EXPL_SERVER_TOKEN or run expl server login --with-token. Exit code 4. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
+| API keys are disabled by your administrator. / This IP address is not allowed for API keys. | An administrator turned API keys off or limits them to certain IP addresses. Ask your administrator, or sign in with expl server login. Exit code 4. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
+| --token was removed. … | Set EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
 | Too many failed API key attempts. Try again later. | Many refused keys came from this address in a short time. Fix the key and try again later. |
 | The redirect URL has no authorization code. | With --no-browser, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
 | Exit code 4 (Desktop) | Sign in to Exploratory Desktop. |
