@@ -17,12 +17,12 @@ It takes about 10 minutes. You need an Exploratory account and Antigravity.
 
 ### Copy the config file path
 
+Check that Installed is selected at the top of the screen, then do this.
+
 1. In the Antigravity app, select Customizations in the sidebar.
-2. In the MCP Servers header, select Copy Config File Path. The location of the config file (mcp_config.json) is copied.
+2. On the MCP Servers row, select Copy Config File Path at the right end. The location of the config file (mcp_config.json) is copied.
 
 ![The Installed screen under Customizations](images/en/antigravity-01-customizations.png)
-
-Check that Installed is selected at the top of the screen.
 
 ### Register the server
 
@@ -43,38 +43,49 @@ A remote server takes its URL in "serverUrl".
 
 To use the agy command line, write the same content in ~/.gemini/config/mcp_config.json.
 
-### Sign in from the app
+### Start the sign-in
+
+In the app, do this.
 
 1. Under MCP Servers, select Authenticate next to exploratory-server.
-2. When your browser opens, sign in to Exploratory.
-3. On Exploratory's consent page, approve the access.
-4. Copy the authorization code shown in the browser.
-5. Back in Antigravity, paste the authorization code into the Enter authorization code field.
-6. Select Submit.
 
-The server reconnects automatically. A server you have signed in to shows a Sign out button.
-
-### Sign in from agy
-
-To use the agy command line, follow these steps.
+In agy, follow these steps.
 
 1. Start agy.
 2. Run `/plugin`.
 3. Open the exploratory-server connection (the Desktop plugin exploratory is separate).
 4. Choose Sign in.
-5. In the browser, approve on Exploratory's consent page.
-6. Copy the authorization code shown in the browser.
-7. Back in agy, paste the authorization code.
 
-### Try it
+### Approve the access on exploratory.io
 
-1. In a new chat, send this.
+Your browser opens, in the app and in agy.
 
-   ```text
-   Find the "Sales Orders" data on Exploratory.
-   ```
+1. In the browser, sign in to Exploratory.
+2. On Exploratory's consent page, approve the access.
+3. Copy the authorization code shown in the browser.
 
-Next, check the result.
+### Paste the authorization code
+
+In the app, go back to Antigravity and do this.
+
+1. Paste the authorization code into the Enter authorization code field.
+2. Select Submit.
+
+The server reconnects automatically. A server you have signed in to shows a Sign out button.
+
+In agy, go back to agy and do this.
+
+1. Paste the authorization code.
+
+### Check that it is connected
+
+In a new chat, send this.
+
+```text
+Find the "Sales Orders" data on Exploratory.
+```
+
+After you send it, check the result.
 
 1. Check the Sales Orders data in the table of search results.
 

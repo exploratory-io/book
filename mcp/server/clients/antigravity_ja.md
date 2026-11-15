@@ -17,12 +17,12 @@
 
 ### 設定ファイルの場所をコピーする
 
+画面の上の「Installed」が選ばれていることを確かめてから、操作します。
+
 1. Antigravity のアプリで、サイドバーの「Customizations」を選びます。
-2. 「MCP Servers」の見出しにある「Copy Config File Path」を選びます。設定ファイル（mcp_config.json）の場所がコピーされます。
+2. 「MCP Servers」の行の右端にある「Copy Config File Path」を選びます。設定ファイル（mcp_config.json）の場所がコピーされます。
 
 ![「Customizations」の「Installed」の画面（英語の画面）](images/en/antigravity-01-customizations.png)
-
-画面の上の「Installed」が選ばれていることを確かめてください。
 
 ### サーバーを登録する
 
@@ -43,38 +43,49 @@
 
 コマンドラインの agy で使うときは、~/.gemini/config/mcp_config.json に、同じ内容を書きます。
 
-### アプリでサインインする
+### サインインを始める
+
+アプリでは、次の操作をします。
 
 1. 「MCP Servers」で、exploratory-server の横にある「Authenticate」を選びます。
-2. ブラウザが開いたら、Exploratory にサインインします。
-3. Exploratory の同意画面で、アクセスを許可します。
-4. ブラウザに表示された認可コードをコピーします。
-5. Antigravity に戻り、「Enter authorization code」の欄に、認可コードを貼り付けます。
-6. 「Submit」を選びます。
 
-サーバーは、自動でつなぎ直されます。サインインできたサーバーには、「Sign out」のボタンが表示されます。
-
-### agy でサインインする
-
-コマンドラインの agy で使うときは、次の順で行います。
+agy では、次の順で行います。
 
 1. agy を起動します。
 2. `/plugin` を実行します。
 3. exploratory-server の接続を開きます（Desktop プラグインの exploratory とは別です）。
 4. 「Sign in」を選びます。
-5. ブラウザで、Exploratory の同意画面で許可します。
-6. ブラウザに表示された認可コードをコピーします。
-7. agy に戻り、認可コードを貼り付けます。
 
-### 試す
+### exploratory.io で許可する
 
-1. 新しいチャットで、次のように送信します。
+アプリでも agy でも、ブラウザが開きます。
 
-   ```text
-   Exploratory にある「Sales Orders」のデータを探して
-   ```
+1. ブラウザで、Exploratory にサインインします。
+2. Exploratory の同意画面で、アクセスを許可します。
+3. ブラウザに表示された認可コードをコピーします。
 
-続けて、結果を確かめます。
+### 認可コードを貼り付ける
+
+アプリでは、Antigravity に戻って、次の操作をします。
+
+1. 「Enter authorization code」の欄に、認可コードを貼り付けます。
+2. 「Submit」を選びます。
+
+サーバーは、自動でつなぎ直されます。サインインできたサーバーには、「Sign out」のボタンが表示されます。
+
+agy では、agy に戻って、次の操作をします。
+
+1. 認可コードを貼り付けます。
+
+### つながったことを確かめる
+
+新しいチャットで、次のように送信します。
+
+```text
+Exploratory にある「Sales Orders」のデータを探して
+```
+
+送信したあと、結果を確かめます。
 
 1. 検索結果の表にある「Sales Orders」のデータを確かめます。
 

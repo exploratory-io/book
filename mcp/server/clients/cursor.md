@@ -33,9 +33,13 @@ Until Exploratory Server is listed in the official plugin directory, add only th
    }
    ```
 
-### Open MCPs and sign in
+### Open MCPs
 
-In the Cursor app, choose Customize in the sidebar to check the MCP server you added.
+In the Cursor app, check the MCP server you added.
+
+1. Choose Customize in the sidebar.
+
+Next, work on the Customize screen.
 
 1. Choose MCPs.
 2. Check the exploratory-server row. Before you sign in, it shows "Needs Authentication in Local".
@@ -49,7 +53,9 @@ Instead of the app, you can start the sign-in in a terminal.
 agent mcp login exploratory-server
 ```
 
-Next, your browser opens. If you are not signed in, sign in to Exploratory. Choosing Authenticate in the app and running the terminal command open the same browser screen.
+### Approve the access on exploratory.io
+
+Your browser opens. If you are not signed in, sign in to Exploratory. Choosing Authenticate in the app and running the terminal command open the same browser screen.
 
 1. Choose Allow.
 
@@ -64,15 +70,13 @@ When you have signed in, exploratory-server moves to the Connected list under MC
 
 ![The exploratory-server row in the Connected list](images/en/cursor-01-connected.png)
 
-### Try it
+Next, in a new chat, send this.
 
-1. In a new chat, send this.
+```text
+Find the "Sales Orders" data on Exploratory.
+```
 
-   ```text
-   Find the "Sales Orders" data on Exploratory.
-   ```
-
-Next, check the result.
+After you send it, check the result.
 
 1. Check the Sales Orders link in the search result.
 

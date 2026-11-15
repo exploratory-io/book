@@ -20,24 +20,20 @@ You do not need an API key or a client ID.
 
 ### Open the add screen
 
-In the Claude desktop app, open the Connectors screen in Settings.
+In the Claude desktop app, open the Connectors screen in Settings. You work on the screen where the Connectors tab and Yours are selected.
 
 1. Choose Customize in the sidebar on the left. Settings opens and shows the Connectors screen.
 2. Choose Add at the top right of the list.
 
 ![The Connectors screen in Settings](images/en/claude-01-settings.png)
 
-Check that the Connectors tab and Yours are selected.
-
-### Choose from the add menu
-
-The add menu opens.
+Next, the add menu opens.
 
 1. Choose Add custom connector.
 
 ![The add menu](images/en/claude-02-add-menu.png)
 
-### Enter the address and add
+### Enter the address
 
 1. In the name field, enter `Exploratory`.
 2. In the MCP server URL field, enter `https://exploratory.io/mcp`.
@@ -45,7 +41,7 @@ The add menu opens.
 
 ![The Add custom connector screen](images/en/claude-03-custom-connector.png)
 
-Choosing Continue opens the authentication screen.
+Next, the authentication screen opens.
 
 1. Check that Authentication is Sign in now.
 2. Choose Add.
@@ -53,6 +49,8 @@ Choosing Continue opens the authentication screen.
 ![The Authentication and OAuth client screen](images/en/claude-03b-auth-options.png)
 
 OAuth client is Use Claude's published identity. Both are marked Detected. There is nothing to change.
+
+### Approve the access on exploratory.io
 
 Your browser opens exploratory.io and shows "Claude is asking for access to your Exploratory account". If you are not signed in, sign in first.
 
@@ -70,7 +68,8 @@ If the connector connects without showing this screen, go on to the next check.
 
 When Exploratory appears with the Custom label and a check mark under Status, the connection works.
 
-2. Open a new chat and send this.
+2. Open a new chat.
+3. Send this.
 
    ```text
    Find the "Sales Orders" data on Exploratory.

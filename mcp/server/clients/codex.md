@@ -19,7 +19,7 @@ It takes about 3 minutes. You need an Exploratory account and Codex.
 
 This registers only the server, without the skill. Use either of the two ways below.
 
-#### Edit the config file
+**To edit the config file**
 
 1. Add this to ~/.codex/config.toml.
 
@@ -28,7 +28,7 @@ This registers only the server, without the skill. Use either of the two ways be
    url = "https://exploratory.io/mcp"
    ```
 
-#### Add with a command
+**To add with a command**
 
 1. Run this command.
 
@@ -49,7 +49,7 @@ When Exploratory Server is listed in Codex's official plugin directory, you can 
 2. When your browser opens, sign in to Exploratory.
 3. Approve the access.
 
-### Try it
+### Check that it is connected
 
 1. In a new chat, send this.
 

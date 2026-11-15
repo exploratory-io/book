@@ -33,9 +33,13 @@ Exploratory Server が公式のプラグイン一覧に掲載されるまでは�
    }
    ```
 
-### 「MCPs」を開いてサインインする
+### 「MCPs」を開く
 
-Cursor のアプリで、サイドバーの「Customize」を選ぶと、追加した MCP サーバーを確かめられます。
+Cursor のアプリで、追加した MCP サーバーを確かめます。
+
+1. サイドバーの「Customize」を選びます。
+
+続けて、「Customize」の画面で操作します。
 
 1. 「MCPs」を選びます。
 2. exploratory-server の行を確かめます。サインインの前は、「Needs Authentication in Local」と表示されます。
@@ -49,7 +53,9 @@ Cursor のアプリで、サイドバーの「Customize」を選ぶと、追加�
 agent mcp login exploratory-server
 ```
 
-続けて、ブラウザが開きます。サインインしていないときは、Exploratory にサインインします。アプリの「Authenticate」を選んでも、ターミナルのコマンドでも、同じブラウザの画面が開きます。
+### exploratory.io で許可する
+
+ブラウザが開きます。サインインしていないときは、Exploratory にサインインします。アプリの「Authenticate」を選んでも、ターミナルのコマンドでも、同じブラウザの画面が開きます。
 
 1. 「許可する」を選びます。
 
@@ -64,15 +70,13 @@ agent mcp login exploratory-server
 
 ![「Connected」の一覧にある exploratory-server の行（英語の画面）](images/en/cursor-01-connected.png)
 
-### 試す
+続けて、新しいチャットで、次のように送信します。
 
-1. 新しいチャットで、次のように送信します。
+```text
+Exploratory にある「Sales Orders」のデータを探して
+```
 
-   ```text
-   Exploratory にある「Sales Orders」のデータを探して
-   ```
-
-続けて、結果を確かめます。
+送信したあと、結果を確かめます。
 
 1. 検索結果の「Sales Orders」のリンクを確かめます。
 

@@ -15,7 +15,7 @@ It takes about 5 minutes, depending on the client. You need an Exploratory accou
 
 ## Steps
 
-### Register
+### Register and sign in
 
 See the client's own documentation for where and how.
 
@@ -25,12 +25,10 @@ See the client's own documentation for where and how.
    https://exploratory.io/mcp
    ```
 
-### Sign in
+2. Follow the client's prompts to sign in to Exploratory in the browser.
+3. Approve the access.
 
-1. Follow the client's prompts to sign in to Exploratory in the browser.
-2. Approve the access.
-
-### Try it
+### Check that it is connected
 
 1. In a new chat of the client, send this.
 

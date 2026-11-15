@@ -19,27 +19,30 @@
 
 この方法で追加されるのは MCP サーバーのみで、スキルは含まれません。
 
-1. Grok Bot のチャットの入力欄に、次の依頼を入力して送信します。
+1. Grok Bot のチャットの入力欄に、次の依頼を入力します。
 
    ```text
    次のリモート MCP サーバーを追加して。名前: exploratory-server、URL: https://exploratory.io/mcp
    ```
 
+2. 送信します。
+
 ![チャットで MCP サーバーの追加を頼む](images/ja/grok-bot-01-add.png)
 
-2. exploratory-server のカードが表示されたら、カードから Exploratory にサインインします。
+### サインインする
 
-カードが「接続済み」になったら、次の手順で確認します。
+1. exploratory-server のカードが表示されたら、カードから Exploratory にサインインします。
+2. カードが「接続済み」になったことを確かめます。
 
-### 試す
+### つながったことを確かめる
 
-1. 新しいチャットで、次のように送信します。
+新しいチャットで、次のように送信します。
 
-   ```text
-   Exploratory にある「Sales Orders」のデータを探して
-   ```
+```text
+Exploratory にある「Sales Orders」のデータを探して
+```
 
-続けて、結果を確かめます。
+送信したあと、結果を確かめます。
 
 1. 検索結果の「Sales Orders」のリンクを確かめます。
 

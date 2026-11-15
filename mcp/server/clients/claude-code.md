@@ -15,7 +15,7 @@ It takes about 3 minutes. You need an Exploratory account and Claude Code.
 
 ## Steps
 
-### Register
+### Register and sign in
 
 This registers only the server, without the plugin or skill.
 
@@ -27,13 +27,11 @@ This registers only the server, without the plugin or skill.
 
 When Exploratory Server is listed in Claude's official plugin directory, you can install it from there instead. Use one way only.
 
-### Sign in
+2. Start a new session and open `/mcp`.
+3. Choose the exploratory-server connection.
+4. Sign in through the browser.
 
-1. Start a new session and open `/mcp`.
-2. Choose the exploratory-server connection.
-3. Sign in through the browser.
-
-### Try it
+### Check that it is connected
 
 1. In the new session, send this.
 

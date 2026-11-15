@@ -19,29 +19,32 @@ It takes about 3 minutes. You need an Exploratory account and Grok Bot.
 
 This adds the MCP server only; it does not install the skill.
 
-1. In the input field of a Grok Bot chat, type this request and send it.
+1. In the input field of a Grok Bot chat, type this request.
 
    ```text
    Add this remote MCP server. Name: exploratory-server, URL: https://exploratory.io/mcp
    ```
 
+2. Send it.
+
 ![Ask in the chat to add the MCP server](images/en/grok-bot-01-add.png)
 
 The image is an example from an account where the server was already connected. Its input field shows the same request in other words, and Grok Bot answers that the server is already added, so no card appears. On a first connection, the card appears as described next.
 
-2. When Grok Bot shows a card for exploratory-server, sign in to Exploratory from the card.
+### Sign in
 
-When the card says it is connected, check the connection in the next step.
+1. When Grok Bot shows a card for exploratory-server, sign in to Exploratory from the card.
+2. Check that the card says it is connected.
 
-### Try it
+### Check that it is connected
 
-1. In a new chat, send this.
+In a new chat, send this.
 
-   ```text
-   Find the "Sales Orders" data on Exploratory.
-   ```
+```text
+Find the "Sales Orders" data on Exploratory.
+```
 
-Next, check the result.
+After you send it, check the result.
 
 1. Check the Sales Orders link in the search result.
 
