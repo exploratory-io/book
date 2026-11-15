@@ -23,13 +23,13 @@ In the ChatGPT desktop app, open settings.
 
 ### 2. Choose Plugins
 
-In the menu on the left of settings, choose Plugins under the integrations group.
+In the menu on the left of settings, choose Plugins under Integrations.
 
 ### 3. Choose the MCP tab
 
-Among the tabs for plugins, apps, MCP and skills, choose the MCP tab.
+Among the tabs Plugins, Apps, MCPs and Skills, choose MCPs.
 
-<!-- image: images/en/chatgpt-desktop-01-plugins.png (Plugins in settings and the MCP tab) -->
+<!-- image: images/en/chatgpt-desktop-01-plugins.png (Plugins in Settings and the MCPs tab) -->
 
 ### 4. Choose Add
 
@@ -37,21 +37,21 @@ Choose Add at the top right.
 
 ### 5. Choose the option to add an MCP server
 
-In the menu, choose the option to add an MCP server. The screen for connecting to a custom MCP opens.
+In the menu, choose Add MCP server. The Connect to a custom MCP screen opens.
 
 <!-- image: images/en/chatgpt-desktop-03-add-menu.png (The Add menu) -->
 
 ### 6. Enter the name
 
-In the name field, enter the name to show in the list, for example Exploratory.
+In Name, enter the name to show in the list, for example Exploratory.
 
 ### 7. Choose the type
 
-For the type, choose streamable HTTP. Do not choose STDIO.
+For Type, choose Streamable HTTP. Do not choose STDIO.
 
 ### 8. Enter the URL
 
-In the URL field, enter this URL.
+In URL, enter this URL.
 
 ```text
 https://exploratory.io/mcp
@@ -59,15 +59,15 @@ https://exploratory.io/mcp
 
 ### 9. Leave the other fields empty
 
-Leave the bearer token environment variable and the headers empty. Exploratory connects through a sign-in in your browser, so it needs no token and no header.
+Leave Bearer token env var and Headers empty. Exploratory connects through a sign-in in your browser, so it needs no token and no header.
 
-<!-- image: images/en/chatgpt-desktop-05-custom-mcp-filled.png (The custom MCP screen with the name, the type and the URL filled in) -->
+<!-- image: images/en/chatgpt-desktop-05-custom-mcp-filled.png (The Connect to a custom MCP screen with Name, Type and URL filled in) -->
 
 ### 10. Save
 
-Choose the save button at the bottom right. The server you added appears in the list of servers on the MCP tab.
+Choose Save at the bottom right. The server you added appears under Servers on the MCPs tab.
 
-<!-- image: images/en/chatgpt-desktop-08-connected.png (The list of servers on the MCP tab) -->
+<!-- image: images/en/chatgpt-desktop-08-connected.png (Servers on the MCPs tab) -->
 
 The official documentation describes the rest as follows. The labels are quoted as the documentation writes them.
 
@@ -77,7 +77,7 @@ After you save, restart the ChatGPT desktop app, following the documentation's R
 
 ### 12. Authenticate
 
-For a server that needs OAuth, the server list shows that. When it does, choose Authenticate, as the documentation says.
+For a server that needs OAuth, the list of servers shows that. When it does, choose Authenticate, as the documentation says.
 
 ### 13. Approve the access
 
@@ -215,4 +215,4 @@ For other symptoms, see [Troubleshooting](../troubleshooting.md).
 
 ## Disconnect
 
-In the desktop app, turn off the switch of the server you added in the list of servers on the MCP tab, and it is no longer used. On the web, delete the Exploratory plugin you added in the plugin list. Then open Account Settings on exploratory.io and remove the app you connected under Connected AI Apps. Deleting it in ChatGPT alone does not revoke the access you approved on Exploratory.
+In the desktop app, turn off the switch of the server you added under Servers on the MCPs tab, and it is no longer used. On the web, delete the Exploratory plugin you added in the plugin list. Then open Account Settings on exploratory.io and remove the app you connected under Connected AI Apps. Deleting it in ChatGPT alone does not revoke the access you approved on Exploratory.

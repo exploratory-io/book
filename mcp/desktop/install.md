@@ -78,7 +78,7 @@ The buttons on the card change with its state.
 | State | What the card shows |
 | --- | --- |
 | Not installed | Not installed, and a green Install button |
-| Installed | Installed, with Remove and Reinstall |
+| Installed | Installed, with Reinstall and Remove |
 
 Choosing Remove opens a confirmation.
 
@@ -86,7 +86,7 @@ Choosing Remove opens a confirmation.
 
 ## When the install fails
 
-When an install fails, the second line of that AI tool's row shows "Could not install." in red. Details is right after it, then a sentence that gives the reason (for example "Check that you are connected to the internet."), and a Try again button at the right of the row.
+When an install fails, the second line of that AI tool's row shows "Could not install." in red. Details is right after it, then a sentence that gives the reason (for example "Check that you are connected to the internet."), and the Try again and Remove buttons at the right of the row.
 
 Hold the mouse pointer over Details to see the output of the command that ran, in a pop-up. The output is the last 2000 characters. If it is long, you can scroll inside the pop-up vertically. The pop-up stays when you move the pointer into it. Click Details to keep it open. Copy at the top right copies the output.
 
