@@ -262,7 +262,7 @@ To see the trend or layout of a chart, get its image.
 expl server chart get-image <id> --chart <chart> --json
 ```
 
-The result below is for the chart iJ6kL7mN (sales trend). The image_path line (where the image is saved) is trimmed.
+The result below is for the chart iJ6kL7mN (Monthly Sales Trend). The image_path line (where the image is saved) is trimmed.
 
 **Result**
 
@@ -272,13 +272,13 @@ The result below is for the chart iJ6kL7mN (sales trend). The image_path line (w
   "item": {
     "id": "dE5fG6hI7j",
     "type": "dashboard",
-    "title": "売上とマーケティング費用のダッシュボード"
+    "title": "Sales Orders Dashboard"
   },
-  "summary": "Returned the image of chart \"売上推移\" (600x400).",
+  "summary": "Returned the image of chart \"Monthly Sales Trend\" (600x400).",
   "result": {
     "chart": {
       "name": "iJ6kL7mN",
-      "title": "売上推移",
+      "title": "Monthly Sales Trend",
       "type": "line"
     },
     "data_shared": true,
@@ -290,11 +290,11 @@ The result below is for the chart iJ6kL7mN (sales trend). The image_path line (w
       "original_height": 400,
       "bytes": 41970,
       "resized": false,
-      "captured_at": "2022-06-24T08:51:53.397Z",
+      "captured_at": "2026-11-12T09:26:51.086Z",
       "may_be_stale": true
     },
     "context": {
-      "publication_version": "2022-06-24T08:51:53.397Z",
+      "publication_version": "2026-11-12T09:26:51.086Z",
       "data_as_of": "2026-11-10T22:02:56.899Z",
       "parameters": {
         "applied": true,
@@ -326,7 +326,7 @@ The result below is for the chart iJ6kL7mN (sales trend). The image_path line (w
   },
   "warnings": [
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
-    "The data was refreshed at 2026-11-10T22:02:56.899Z, after this image was captured at 2022-06-24T08:51:53.397Z. The image may not show the current numbers; use chart_get_data for them."
+    "The data was refreshed at 2026-11-10T22:02:56.899Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_data for them."
   ],
   "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j",
 … (trimmed)

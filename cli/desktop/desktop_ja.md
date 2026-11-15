@@ -6,13 +6,17 @@ expl は、このコンピューターで起動している Exploratory Desktop 
 
 ## 対象
 
-> このページのコマンドは、すべて expl で始まり、このコンピューターで起動している Exploratory Desktop を対象にします。サインインの操作はありません。Desktop を起動してサインインしていれば使えます。
+> このページのコマンドは、すべて expl で始まり、このコンピューターで起動している Exploratory Desktop を対象にします。サインインの操作はありません。Desktop を起動してサインインし、システム設定 > MCP / CLI で CLI を有効にして保存していれば使えます。
 >
 > exploratory.io のコンテンツを読むなら [Server のコマンド](../server/server_ja.md)。AI アプリからつなぐなら [MCP Server](../../mcp/server/server_ja.md)。
 
 <a id="start"></a>
 
 ## はじめる
+
+### 0. CLI を有効にする
+
+Desktop のシステム設定 > MCP / CLI で CLI を有効にして保存します。手順は[最初に CLI を有効にする](install_ja.md#enable)を参照してください。
 
 ### 1. バージョンを確認する
 

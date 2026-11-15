@@ -56,7 +56,7 @@ Find a fix by symptom.
 
 | What you see | What to do |
 | --- | --- |
-| DATASET_UNAVAILABLE | The publisher needs to republish it with "Include all data for AI queries". |
+| DATASET_UNAVAILABLE | The publisher needs to republish it from the current Exploratory Desktop. |
 | DATA_EGRESS_LIMIT | The publisher does not allow downloading this data as a file. Use fetch or dataframe get-schema for what the publisher shares. |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | In sort, name the output column with field. |
 

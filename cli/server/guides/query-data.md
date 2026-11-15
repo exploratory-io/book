@@ -143,7 +143,7 @@ Data published without its full data cannot be queried on the server. dataset qu
 
 | What you see | What to do |
 | --- | --- |
-| DATASET_UNAVAILABLE | The publisher needs to republish it with "Include all data for AI queries". |
+| DATASET_UNAVAILABLE | The publisher needs to republish it from the current Exploratory Desktop. |
 
 Search results and --detail light do not show whether a data item can be queried. Run --detail full and check that query.available in the result is not false.
 

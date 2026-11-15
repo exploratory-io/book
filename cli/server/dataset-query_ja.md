@@ -95,7 +95,7 @@ expl server dataset query [<dataset_id>] [flags]
 
 ## JSON の引数の書き方
 
-以下は JSON の入力書式です。\< \> の部分をデータの id、列名、値に置き換えます。実行結果ではありません。コマンドの単引用符を使う例は bash 形式です。Windows では、npm での CLI のインストールと、CLI・MCP Server の動作を確かめています。PowerShell や cmd では、引用符の書き方が bash と異なり、単引用符を使う例はそのまま動かないことがあります。その場合は、JSON をファイルに保存して、--input で渡してください。
+以下は JSON の入力書式です。\< \> の部分をデータの id、列名、値に置き換えます。実行結果ではありません。コマンドの単引用符を使う例は bash 形式です。PowerShell や cmd では、引用符の書き方が bash と異なり、単引用符を使う例はそのまま動かないことがあります。その場合は、JSON をファイルに保存して、--input で渡してください。
 
 ### 条件を指定する: filters
 
@@ -172,5 +172,5 @@ column は列名、operator は比較方法、value は比較する値です。�
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | metrics では、function と alias を指定します。count_rows 以外は column も指定します。 |
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias は必須です。英字、数字、_ だけで、数字で始めず、64 文字までにします。 |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | sort の項目では、出力の列の名前を field で指定します。column、by、alias、name、metric は使えません。 |
-| DATASET_UNAVAILABLE | このデータは、全データを含めずに公開されているため、サーバーでは問い合わせできません。公開した人が、「Include all data for AI queries」を付けて公開し直す必要があります。 |
+| DATASET_UNAVAILABLE | このデータは、全データを含めずに公開されているため、サーバーでは問い合わせできません。公開した人が、今の Exploratory Desktop でデータを公開し直す必要があります。 |
 | Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |

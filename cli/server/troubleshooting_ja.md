@@ -56,7 +56,7 @@
 
 | 表示される内容 | 対処 |
 | --- | --- |
-| DATASET_UNAVAILABLE | 公開した人が、「Include all data for AI queries」を付けて公開し直す必要があります。 |
+| DATASET_UNAVAILABLE | 公開した人が、今の Exploratory Desktop でデータを公開し直す必要があります。 |
 | DATA_EGRESS_LIMIT | 公開した人が、このデータの行をファイルとして取得することを許していません。fetch か dataframe get-schema で、公開した人が共有している内容を読みます。 |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | sort では、出力の列の名前を field で指定します。 |
 

@@ -59,37 +59,37 @@ The result below is trimmed to the first 2 items.
       "data_as_of": "2026-11-14T22:03:01.894Z"
     },
     {
-      "id": "COVID-19-Infected-Cases-Death-Data-Worldwide-nO6pQ7rS8t",
-      "title": "World Wide COVID-19 Data by Johns Hopkins (JHU CCSE)",
-      "url": "https://exploratory.io/data/aB3cD4eF5g/COVID-19-Infected-Cases-Death-Data-Worldwide-nO6pQ7rS8t",
+      "id": "hI6jK7lM8n",
+      "title": "Sales Orders",
+      "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
       "type": "data",
-      "description": "#### English This data is about the COVID-19 infection and death numbers for all the countries around the world. it is originally published and shared by Johns Hopkins Un…",
+      "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
       "author": "Alex Kim",
       "team": null,
-      "updated_at": "2026-11-14T15:13:52.790Z",
-      "refreshed_at": "2026-11-14T15:13:53.053Z",
+      "updated_at": "2026-11-12T09:26:51.086Z",
+      "refreshed_at": "2026-11-12T08:12:13.528Z",
       "tags": [
-        "covid19",
-        "covid-19"
+        "sales",
+        "orders"
       ],
-      "publication_version": "2021-04-08T00:30:28.931Z",
-      "data_as_of": "2026-11-14T15:13:53.053Z",
+      "publication_version": "2026-11-12T09:26:51.086Z",
+      "data_as_of": "2026-11-12T08:12:13.528Z",
       "columns": [
         {
-          "name": "Country/Region",
+          "name": "order_id",
           "type": "character",
-          "description": "国/地域",
+          "description": "",
           "missing_count": 0
         },
         {
-          "name": "Date",
+          "name": "order_date",
           "type": "Date",
-          "description": "日付",
+          "description": "",
           "missing_count": 0
         }
       ],
-      "column_count": 5,
-      "row_count": 229743
+      "column_count": 14,
+      "row_count": 23131
     }
   ],
   "has_more": true,

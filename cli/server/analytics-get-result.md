@@ -139,13 +139,7 @@ The result below was run on the analytics Analytics 1 - Correlations (id Analyti
       },
       "filters": []
     },
-    "texts": [
-      {
-        "source": "generated",
-        "kind": "explanation",
-        "text": "\n\n# サマリ\n\n選択された変数を対象に相関分析を行いました。\n\n## 分析条件とデータの確認\n\n_[chart omitted]_\n\n相関係数は[設定](//analytics/settings/do_cor_argo)より変更できます。\n\n# 相関の強さ\n\n全ての変数の組み合わせの相関係数を計算し、それらを以下のヒートマップと呼ばれる…"
-      }
-    ],
+    "texts": [],
     "unsupported": [],
     "context": {
       "publication_version": "2025-06-05T12:17:37.781Z",

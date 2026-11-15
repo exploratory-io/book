@@ -95,7 +95,7 @@ expl server dataset query [<dataset_id>] [flags]
 
 ## JSON input structure
 
-These are JSON input templates, not results. Replace \< \> placeholders with data ids, columns and values. Command examples using single quotes use bash syntax. On Windows, we have checked installing the CLI with npm and the operation of the CLI and the MCP Server. PowerShell and cmd write quotes differently from bash, so an example that uses single quotes may not run as it is. In that case, save the JSON to a file and pass it with --input.
+These are JSON input templates, not results. Replace \< \> placeholders with data ids, columns and values. Command examples using single quotes use bash syntax. PowerShell and cmd write quotes differently from bash, so an example that uses single quotes may not run as it is. In that case, save the JSON to a file and pass it with --input.
 
 ### Filter conditions: filters
 
@@ -172,5 +172,5 @@ The result is exact and includes the data version (dataset.version) and update t
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | In metrics, give a function and an alias. Everything except count_rows also takes a column. |
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias is required. Use only letters, digits and _, do not start with a digit, and use at most 64 characters. |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | In a sort entry, give the output column name with field. column, by, alias, name and metric are not accepted. |
-| DATASET_UNAVAILABLE | This data was published without its full data, so it cannot be queried on the server. The publisher needs to republish it with "Include all data for AI queries". |
+| DATASET_UNAVAILABLE | This data was published without its full data, so it cannot be queried on the server. The publisher needs to republish it from the current Exploratory Desktop. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |

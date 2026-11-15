@@ -143,7 +143,7 @@ metrics の alias は必須です。英字、数字、_ だけで、数字で始
 
 | 表示される内容 | 対処 |
 | --- | --- |
-| DATASET_UNAVAILABLE | 公開した人が、「Include all data for AI queries」を付けて公開し直す必要があります。 |
+| DATASET_UNAVAILABLE | 公開した人が、今の Exploratory Desktop でデータを公開し直す必要があります。 |
 
 検索結果や --detail light の結果では、問い合わせできるかどうかはわかりません。--detail full で、結果の query.available が false になっていないかを確認します。
 
