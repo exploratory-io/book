@@ -1,8 +1,9 @@
 # プラグインのインストール
 
-Exploratory Desktop のシステム設定から、Desktop MCP のプラグインを、このコンピューターの AI ツールにインストールします。AI ツールごとに別の手順はありません。Claude Code、Codex、Antigravity、Cursor は、同じカードから入れられます。
+インストールすると、AI ツールから Exploratory Desktop を使えるようになります。Exploratory Desktop のシステム設定から、Desktop MCP のプラグインを、このコンピューターの AI ツールにインストールします。
+所要時間は 5 分ほどです。同じコンピューターに、Exploratory Desktop と、プラグインを入れる AI ツール（Claude Code、Codex、Antigravity、Cursor のいずれか）を用意してください。
 
-所要時間は 5 分ほどです。Exploratory Desktop と、プラグインを入れる AI ツール（Claude Code、Codex、Antigravity、Cursor のいずれか）が、同じコンピューターに入っている必要があります。
+AI ツールごとに別の手順はありません。Claude Code、Codex、Antigravity、Cursor は、同じカードから入れられます。
 
 <a id="steps"></a>
 
@@ -13,18 +14,24 @@ Exploratory Desktop のシステム設定から、Desktop MCP のプラグイン
 Exploratory Desktop で、システム設定を開きます。
 
 1. 左のメニューで、「MCP / CLI」を選びます。
-2. 「Exploratory Desktop プラグインのインストール」のカードを確かめます。カードの説明は次のとおりです。
-
-   > Desktop MCP のプラグインを、このPC上の AI ツールにインストールします。インストールしたあとは、その AI ツールを起動し直してください。
-
+2. 「Exploratory Desktop プラグインのインストール」のカードを確かめます。
 3. 使う AI ツールの行の「インストール」を選びます。
-4. 「MCP」のスイッチをオンにします。初期状態ではオフです。
-5. チャートやノートなどを AI に作成・変更させるときだけ、「作成、変更、削除を許可する」にチェックを入れます。チェックがないと、AI は読み取りだけができます。
-6. 画面の下にある「保存」を選びます。保存しないと、4 と 5 の設定が反映されません。
 
 ![システム設定の「MCP / CLI」にある、「Exploratory Desktop プラグインのインストール」のカード](images/ja/desktop-plugin-card.png)
 
+カードの説明は次のとおりです。
+
+> Desktop MCP のプラグインを、このPC上の AI ツールにインストールします。インストールしたあとは、その AI ツールを起動し直してください。
+
 カードには、Claude Code、Codex、Antigravity、Cursor が並びます。このコンピューターにない AI ツールには、「このパソコンに見つかりません」と表示されます。コマンドは、アプリの起動時に自動で入ります。コマンドを登録する操作は要りません。
+
+### MCP を有効にして保存する
+
+1. 「MCP」のスイッチをオンにします。初期状態ではオフです。
+2. チャートやノートなどを AI に作成・変更させるときだけ、「作成、変更、削除を許可する」にチェックを入れます。チェックがないと、AI は読み取りだけができます。
+3. 画面の下にある「保存」を選びます。
+
+保存しないと、「MCP」のスイッチと「作成、変更、削除を許可する」の設定が反映されません。
 
 ### AI ツールで確かめる
 
@@ -37,7 +44,11 @@ Exploratory Desktop で、システム設定を開きます。
    開いている Exploratory のプロジェクトで、売上データから月別の棒グラフを作って
    ```
 
-5. 接続を確かめます。Claude Code では、/mcp を開いて、exploratory-desktop が接続されていることを確認します。Codex では、codex mcp list を実行して、exploratory-desktop が並んでいることを確認します。MCP がオフだと表示されたときは、システム設定に戻り、「MCP」のスイッチをオンにして「保存」を選んだかを確かめます。
+5. 接続を確かめます。
+   - Claude Code では、`/mcp` を開いて、exploratory-desktop が接続されていることを確認します。
+   - Codex では、`codex mcp list` を実行して、exploratory-desktop が並んでいることを確認します。
+
+MCP がオフだと表示されたときは、システム設定に戻り、「MCP」のスイッチをオンにして「保存」を選んだかを確かめます。
 
 <a id="differences"></a>
 
@@ -73,8 +84,8 @@ Exploratory Desktop で、システム設定を開きます。
 
 画像は、インストール済みのプラグインの更新に失敗したときの、エラーの詳細の表示例です。吹き出しに出ているコマンドの出力は、サンプルで、実際の出力とは異なります。
 
-1. 「詳細」です。
-2. 「コピー」です。
+1. 「詳細」にマウスを載せます。
+2. 右上の「コピー」を選びます。
 
 ![インストール済みのプラグインの更新に失敗したときのカード。「詳細」にマウスを載せた状態（表示例）](images/ja/desktop-plugin-card-error.png)
 

@@ -1,6 +1,7 @@
 # Connect Codex
 
-Register the Exploratory server in Codex and sign in through your browser. It takes about 3 minutes.
+After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Codex and sign in through your browser.
+It takes about 3 minutes. You need an Exploratory account and Codex.
 
 <a id="need"></a>
 
@@ -20,40 +21,43 @@ This registers only the server, without the skill. Use either of the two ways be
 
 #### Edit the config file
 
-**Edit the config file**
+1. Add this to ~/.codex/config.toml.
 
-```text
-[mcp_servers.exploratory-server]
-url = "https://exploratory.io/mcp"
-```
-
-Add this to ~/.codex/config.toml.
+   ```text
+   [mcp_servers.exploratory-server]
+   url = "https://exploratory.io/mcp"
+   ```
 
 #### Add with a command
 
-**Add with a command**
+1. Run this command.
 
-```sh
-codex mcp add exploratory-server --url https://exploratory.io/mcp
-```
+   ```sh
+   codex mcp add exploratory-server --url https://exploratory.io/mcp
+   ```
 
 When Exploratory Server is listed in Codex's official plugin directory, you can install it from there instead. Use one way only. exploratory@exploratory in Exploratory's GitHub marketplace is for Desktop and does not install Server.
 
 ### Sign in
 
-```sh
-codex mcp login exploratory-server
-```
+1. Run this command.
 
-Your browser opens. Sign in to Exploratory and approve the access.
+   ```sh
+   codex mcp login exploratory-server
+   ```
+
+2. When your browser opens, sign in to Exploratory.
+3. Approve the access.
 
 ### Try it
 
-```text
-Find the "Sales Orders" data on Exploratory.
-```
+1. In a new chat, send this.
 
-> If the Sales Orders data appears with its URL, the connection works.
+   ```text
+   Find the "Sales Orders" data on Exploratory.
+   ```
+
+If the Sales Orders data appears with its URL, the connection works.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 

@@ -1,6 +1,7 @@
 # Connect Claude Code
 
-Register the Exploratory server in Claude Code and sign in through your browser. It takes about 3 minutes.
+After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Claude Code and sign in through your browser.
+It takes about 3 minutes. You need an Exploratory account and Claude Code.
 
 <a id="need"></a>
 
@@ -18,23 +19,29 @@ Register the Exploratory server in Claude Code and sign in through your browser.
 
 This registers only the server, without the plugin or skill.
 
-```sh
-claude mcp add --transport http exploratory-server https://exploratory.io/mcp
-```
+1. Run this command.
+
+   ```sh
+   claude mcp add --transport http exploratory-server https://exploratory.io/mcp
+   ```
 
 When Exploratory Server is listed in Claude's official plugin directory, you can install it from there instead. Use one way only.
 
 ### Sign in
 
-Start a new session, open /mcp, choose the exploratory-server connection and sign in through the browser.
+1. Start a new session and open `/mcp`.
+2. Choose the exploratory-server connection.
+3. Sign in through the browser.
 
 ### Try it
 
-```text
-Find the "Sales Orders" data on Exploratory.
-```
+1. In the new session, send this.
 
-> If the Sales Orders data appears with its URL, the connection works.
+   ```text
+   Find the "Sales Orders" data on Exploratory.
+   ```
+
+If the Sales Orders data appears with its URL, the connection works.
 
 **The same operation run with the CLI**
 

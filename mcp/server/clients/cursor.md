@@ -1,6 +1,7 @@
 # Connect Cursor
 
-Register the Exploratory server in the Cursor agent and sign in through your browser. It works with the model you pick in Cursor, including Grok. It takes about 5 minutes.
+After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in the Cursor agent and sign in through your browser. It works with the model you pick in Cursor, including Grok.
+It takes about 5 minutes. You need an Exploratory account and Cursor.
 
 <a id="need"></a>
 
@@ -14,61 +15,73 @@ Register the Exploratory server in the Cursor agent and sign in through your bro
 
 ## Steps
 
-### Register
+### Register in mcp.json
 
-Until Exploratory Server is listed in the official plugin directory, add only the server by hand, without the skill. Add this to ~/.cursor/mcp.json (or .cursor/mcp.json in a project).
+Until Exploratory Server is listed in the official plugin directory, add only the server by hand, without the skill.
 
-**mcp.json**
+1. Add this to ~/.cursor/mcp.json (or .cursor/mcp.json in a project).
 
-```text
-{
-  "mcpServers": {
-    "exploratory-server": {
-      "type": "http",
-      "url": "https://exploratory.io/mcp"
-    }
-  }
-}
-```
+   **mcp.json**
+
+   ```text
+   {
+     "mcpServers": {
+       "exploratory-server": {
+         "type": "http",
+         "url": "https://exploratory.io/mcp"
+       }
+     }
+   }
+   ```
+
+### Open MCPs in Customize
 
 In the Cursor app, choose Customize in the sidebar to check the MCP server you added.
 
 1. Choose MCPs.
 2. Check the exploratory-server row. Before you sign in, it shows "Needs Authentication in Local".
-3. Authenticate at the right of the row lets you sign in.
+3. Choose Authenticate at the right of the row.
 
 ![The exploratory-server row under MCPs in Customize](images/en/cursor-01-customize.png)
 
-### Sign in
+Instead of the app, you can start the sign-in in a terminal.
 
 ```sh
 agent mcp login exploratory-server
 ```
 
-Your browser opens. Sign in to Exploratory and approve the access. Choosing Authenticate in the app opens the same browser screen.
+### Approve the access in the browser
+
+Your browser opens. If you are not signed in, sign in to Exploratory. Choosing Authenticate in the app and running the terminal command open the same browser screen.
 
 1. Choose Allow.
 
 ![The approval screen in the browser](images/en/cursor-02-sign-in.png)
 
+### Check that it is connected
+
 When you have signed in, exploratory-server moves to the Connected list under MCPs.
 
-1. MCPs.
-2. The exploratory-server row in the Connected list.
+1. Choose MCPs.
+2. Check the exploratory-server row in the Connected list.
 
 ![The exploratory-server row in the Connected list](images/en/cursor-01-connected.png)
 
 ### Try it
 
-```text
-Find the "Sales Orders" data on Exploratory.
-```
+1. In a new chat, send this.
 
-> If the Sales Orders data appears with its URL, the connection works.
+   ```text
+   Find the "Sales Orders" data on Exploratory.
+   ```
 
-1. The Sales Orders link in the search result.
+### Check the result
+
+1. Check the Sales Orders link in the search result.
 
 ![Check in a chat](images/en/cursor-03-try.png)
+
+If the Sales Orders data appears with its URL, the connection works.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 

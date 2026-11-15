@@ -1,8 +1,9 @@
 # Install the plugin
 
-In Exploratory Desktop, System Settings installs the Desktop MCP plugin into the AI tools on this computer. There is no separate procedure for each AI tool: Claude Code, Codex, Antigravity and Cursor all install from the same card.
-
+After you install it, an AI tool can use Exploratory Desktop. In Exploratory Desktop, System Settings installs the Desktop MCP plugin into the AI tools on this computer.
 It takes about 5 minutes. You need Exploratory Desktop and the AI tool you want to install into (Claude Code, Codex, Antigravity or Cursor) on the same computer.
+
+There is no separate procedure for each AI tool: Claude Code, Codex, Antigravity and Cursor all install from the same card.
 
 <a id="steps"></a>
 
@@ -13,18 +14,24 @@ It takes about 5 minutes. You need Exploratory Desktop and the AI tool you want 
 In Exploratory Desktop, open System Settings.
 
 1. In the menu on the left, choose MCP / CLI.
-2. Check the "Install the Exploratory Desktop plugin" card. The card says:
-
-   > Installs the Desktop MCP plugin into the AI tools on this computer. After installing, restart that AI tool.
-
+2. Check the "Install the Exploratory Desktop plugin" card.
 3. Choose Install on the row of the AI tool you use.
-4. Turn on the MCP switch. It is off by default.
-5. Only when you want the AI to create or change charts, notes and other content, check Allow create, edit and delete. Without it, the AI can only read.
-6. Choose Save at the bottom of the screen. If you do not save, the settings from 4 and 5 do not take effect.
 
 ![The "Install the Exploratory Desktop plugin" card in MCP / CLI in System Settings](images/en/desktop-plugin-card.png)
 
+The card says:
+
+> Installs the Desktop MCP plugin into the AI tools on this computer. After installing, restart that AI tool.
+
 The card lists Claude Code, Codex, Antigravity and Cursor. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
+
+### Turn on MCP and save
+
+1. Turn on the MCP switch. It is off by default.
+2. Only when you want the AI to create or change charts, notes and other content, check Allow create, edit and delete. Without it, the AI can only read.
+3. Choose Save at the bottom of the screen.
+
+If you do not save, the MCP switch and the Allow create, edit and delete setting do not take effect.
 
 ### Check it in the AI tool
 
@@ -37,7 +44,11 @@ The card lists Claude Code, Codex, Antigravity and Cursor. An AI tool that is no
    In my open Exploratory project, build a monthly bar chart from the sales data.
    ```
 
-5. Check the connection. In Claude Code, open /mcp and check that exploratory-desktop is connected. In Codex, run codex mcp list and check that exploratory-desktop is listed. If a call says that MCP is turned off, go back to System Settings and check that you turned the MCP switch on and chose Save.
+5. Check the connection.
+   - In Claude Code, open `/mcp` and check that exploratory-desktop is connected.
+   - In Codex, run `codex mcp list` and check that exploratory-desktop is listed.
+
+If a call says that MCP is turned off, go back to System Settings and check that you turned the MCP switch on and chose Save.
 
 <a id="differences"></a>
 
@@ -73,8 +84,8 @@ Hold the mouse pointer over Details to see the output of the command that ran, i
 
 The image is an example of how the error details look when updating an installed plugin failed. The command output in the pop-up is a sample and differs from real output.
 
-1. Details.
-2. Copy.
+1. Hold the mouse pointer over Details.
+2. Choose Copy at the top right.
 
 ![The card when updating an installed plugin failed, with the pointer over Details (example)](images/en/desktop-plugin-card-error.png)
 

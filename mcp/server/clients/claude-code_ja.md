@@ -1,6 +1,7 @@
 # Claude Code につなぐ
 
-Claude Code に Exploratory のサーバーを登録し、ブラウザでサインインします。かかる時間は 3 分ほどです。
+接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Claude Code に Exploratory のサーバーを登録し、ブラウザでサインインします。
+かかる時間は 3 分ほどです。Exploratory のアカウントと、Claude Code を用意してください。
 
 <a id="need"></a>
 
@@ -18,23 +19,29 @@ Claude Code に Exploratory のサーバーを登録し、ブラウザでサイ�
 
 プラグインやスキルを使わずに、サーバーだけを登録する方法です。
 
-```sh
-claude mcp add --transport http exploratory-server https://exploratory.io/mcp
-```
+1. 次のコマンドを実行します。
+
+   ```sh
+   claude mcp add --transport http exploratory-server https://exploratory.io/mcp
+   ```
 
 Claude の公式のプラグイン一覧に Exploratory Server が掲載された場合は、そこからインストールすることもできます。インストール方法は 1 つだけにしてください。
 
 ### サインインする
 
-新しいセッションで /mcp を開き、exploratory-server の接続を選んで、ブラウザでサインインします。
+1. 新しいセッションで `/mcp` を開きます。
+2. exploratory-server の接続を選びます。
+3. ブラウザでサインインします。
 
 ### 試す
 
-```text
-Exploratory にある「Sales Orders」のデータを探して
-```
+1. 新しいセッションで、次のように送信します。
 
-> Sales Orders のデータが URL 付きで表示されていれば、接続できています。
+   ```text
+   Exploratory にある「Sales Orders」のデータを探して
+   ```
+
+Sales Orders のデータが URL 付きで表示されていれば、接続できています。
 
 **CLI で同じ操作を実行した結果**
 

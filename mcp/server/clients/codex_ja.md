@@ -1,6 +1,7 @@
 # Codex につなぐ
 
-Codex に Exploratory のサーバーを登録し、ブラウザでサインインします。かかる時間は 3 分ほどです。
+接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Codex に Exploratory のサーバーを登録し、ブラウザでサインインします。
+かかる時間は 3 分ほどです。Exploratory のアカウントと、Codex を用意してください。
 
 <a id="need"></a>
 
@@ -20,40 +21,43 @@ Codex に Exploratory のサーバーを登録し、ブラウザでサインイ�
 
 #### 設定ファイルに書く
 
-**設定ファイルに書く**
+1. ~/.codex/config.toml に、次の内容を追加します。
 
-```text
-[mcp_servers.exploratory-server]
-url = "https://exploratory.io/mcp"
-```
-
-~/.codex/config.toml に追加します。
+   ```text
+   [mcp_servers.exploratory-server]
+   url = "https://exploratory.io/mcp"
+   ```
 
 #### コマンドで追加する
 
-**コマンドで追加する**
+1. 次のコマンドを実行します。
 
-```sh
-codex mcp add exploratory-server --url https://exploratory.io/mcp
-```
+   ```sh
+   codex mcp add exploratory-server --url https://exploratory.io/mcp
+   ```
 
 Codex の公式のプラグイン一覧に Exploratory Server が掲載された場合は、そこからインストールすることもできます。インストール方法は 1 つだけにしてください。Exploratory の GitHub マーケットプレイスの exploratory@exploratory は Desktop 用で、Server は含まれません。
 
 ### サインインする
 
-```sh
-codex mcp login exploratory-server
-```
+1. 次のコマンドを実行します。
 
-ブラウザが開きます。Exploratory にサインインして、アクセスを許可してください。
+   ```sh
+   codex mcp login exploratory-server
+   ```
+
+2. ブラウザが開いたら、Exploratory にサインインします。
+3. アクセスを許可します。
 
 ### 試す
 
-```text
-Exploratory にある「Sales Orders」のデータを探して
-```
+1. 新しいチャットで、次のように送信します。
 
-> Sales Orders のデータが URL 付きで表示されていれば、接続できています。
+   ```text
+   Exploratory にある「Sales Orders」のデータを探して
+   ```
+
+Sales Orders のデータが URL 付きで表示されていれば、接続できています。
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 

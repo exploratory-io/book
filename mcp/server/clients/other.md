@@ -1,6 +1,7 @@
 # Connect other clients
 
-Any MCP client that supports Streamable HTTP and OAuth can connect with the server URL. It takes about 5 minutes, depending on the client.
+After you connect, an AI can read notes and data published on Exploratory. Any MCP client that supports Streamable HTTP and OAuth can connect with the server URL.
+It takes about 5 minutes, depending on the client. You need an Exploratory account and a supported MCP client.
 
 <a id="need"></a>
 
@@ -16,25 +17,28 @@ Any MCP client that supports Streamable HTTP and OAuth can connect with the serv
 
 ### Register
 
-Register this server URL in the client's MCP server settings. See the client's own documentation for where and how.
+See the client's own documentation for where and how.
 
+1. Register this server URL in the client's MCP server settings.
 
-
-```text
-https://exploratory.io/mcp
-```
+   ```text
+   https://exploratory.io/mcp
+   ```
 
 ### Sign in
 
-Follow the client's prompts to sign in to Exploratory in the browser and approve access.
+1. Follow the client's prompts to sign in to Exploratory in the browser.
+2. Approve the access.
 
 ### Try it
 
-```text
-Find the "Sales Orders" data on Exploratory.
-```
+1. In a new chat of the client, send this.
 
-> If the Sales Orders data appears with its URL, the connection works.
+   ```text
+   Find the "Sales Orders" data on Exploratory.
+   ```
+
+If the Sales Orders data appears with its URL, the connection works.
 
 <a id="trouble"></a>
 

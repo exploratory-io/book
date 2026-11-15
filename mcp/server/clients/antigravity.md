@@ -1,6 +1,7 @@
 # Connect Antigravity
 
-Register the Exploratory server in Antigravity and sign in through your browser. After that, the AI can read notes and data published on Exploratory. It takes about 10 minutes.
+After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Antigravity and sign in through your browser.
+It takes about 10 minutes. You need an Exploratory account and Antigravity.
 
 <a id="need"></a>
 
@@ -16,78 +17,107 @@ Register the Exploratory server in Antigravity and sign in through your browser.
 
 ### Copy the config file path
 
-1. In the Antigravity app, select Customizations in the sidebar, then select Installed.
-2. In the MCP Servers header, select Copy Config File Path to copy the location of the config file (mcp_config.json).
+1. In the Antigravity app, select Customizations in the sidebar.
+2. In the MCP Servers header, select Copy Config File Path. The location of the config file (mcp_config.json) is copied.
 
 ![The Installed screen under Customizations](images/en/antigravity-01-customizations.png)
 
+Check that Installed is selected at the top of the screen.
+
 ### Register the server
 
-Open mcp_config.json and add the following. A remote server takes its URL in "serverUrl".
+A remote server takes its URL in "serverUrl".
 
-**mcp_config.json**
+1. Open mcp_config.json and add the following.
 
-```text
-{
-  "mcpServers": {
-    "exploratory-server": {
-      "serverUrl": "https://exploratory.io/mcp"
-    }
-  }
-}
-```
+   **mcp_config.json**
+
+   ```text
+   {
+     "mcpServers": {
+       "exploratory-server": {
+         "serverUrl": "https://exploratory.io/mcp"
+       }
+     }
+   }
+   ```
 
 To use the agy command line, write the same content in ~/.gemini/config/mcp_config.json.
 
-### Sign in and approve the access
+### Start the sign-in in the app
 
 1. Under MCP Servers, select Authenticate next to exploratory-server.
-2. Your browser opens. Sign in to Exploratory.
-3. On Exploratory's consent page, approve the access.
-4. Copy the authorization code shown in the browser.
-5. Paste the authorization code into the Enter authorization code field.
-6. Select Submit.
+
+### Approve the access in the browser
+
+1. When your browser opens, sign in to Exploratory.
+2. On Exploratory's consent page, approve the access.
+3. Copy the authorization code shown in the browser.
+
+### Paste the authorization code into the app
+
+1. Paste the authorization code into the Enter authorization code field.
+2. Select Submit.
 
 The server reconnects automatically. A server you have signed in to shows a Sign out button.
+
+### Start the sign-in in agy
 
 To use agy, follow these steps.
 
 1. Start agy.
-2. Run /plugin.
+2. Run `/plugin`.
 3. Open the exploratory-server connection (the Desktop plugin exploratory is separate).
 4. Choose Sign in.
-5. Approve on Exploratory's consent page.
-6. Paste the authorization code from the browser into agy.
 
-### Check that it is connected
+### Approve the access in the browser for agy
 
-In a new chat, send this.
+1. Approve on Exploratory's consent page.
+2. Copy the authorization code shown in the browser.
 
-```text
-Find the "Sales Orders" data on Exploratory.
-```
+### Paste the authorization code into agy
 
-If the Sales Orders data appears with its URL, the connection works.
+1. Paste the authorization code you copied from the browser into agy.
 
-1. The Sales Orders data in the table of search results.
+### Try it
+
+1. In a new chat, send this.
+
+   ```text
+   Find the "Sales Orders" data on Exploratory.
+   ```
+
+### Check the result
+
+1. Check the Sales Orders data in the table of search results.
 
 ![Check in a chat](images/en/antigravity-04-try.png)
+
+If the Sales Orders data appears with its URL, the connection works.
 
 <a id="plugin"></a>
 
 ## Check the connection when you installed the plugin
 
-If you installed the Exploratory plugin, open Exploratory under Plugins in Customizations to check the connection. On the Accounts tab, exploratory-server shows OAUTH and CONNECTED. The MCP tab shows exploratory-server and the number of tools it provides (for example "10 tools enabled").
+If you installed the Exploratory plugin, open Exploratory under Plugins in Customizations to check the connection.
 
-1. The Accounts tab.
-2. The CONNECTED label.
+### Check the Accounts tab
+
+1. Select the Accounts tab.
+2. Check the CONNECTED label of exploratory-server.
 
 ![The Accounts tab in the Exploratory details](images/en/antigravity-02-connected-plugin.png)
 
-1. The MCP tab.
-2. The exploratory-server row.
+When exploratory-server shows OAUTH and CONNECTED, it is connected.
+
+### Check the MCP tab
+
+1. Select the MCP tab.
+2. Check the exploratory-server row.
 
 ![The MCP tab in the Exploratory details](images/en/antigravity-02-mcp-plugin.png)
+
+The tab shows exploratory-server and the number of tools it provides (for example "10 tools enabled").
 
 <a id="trouble"></a>
 
