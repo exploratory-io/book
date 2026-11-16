@@ -17,7 +17,7 @@ Flags you can add to any command. You can place them before or after the command
 | --verbose | Print what is sent and received to standard error. Tokens are never printed. | The same. |
 | --input \<file\|-\> | Give the whole input as JSON from a file or standard input. | The same. |
 | --output \<file\> | Where to save an image result. | See the table below. |
-| --help, -h | Print help. | Prints help for the generated commands. The built-in commands (expl server login, logout, status, token and skill) do not show help: they run. For example, expl server logout --help logs you out. Check their usage in these pages. |
+| --help, -h | Print help. | Prints help. The built-in commands (expl server login, logout, status, token and skill) are the same. |
 | --version | Print the version. | The same. |
 
 Review the output of --verbose before you paste it anywhere.

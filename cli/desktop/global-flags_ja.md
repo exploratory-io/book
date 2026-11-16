@@ -25,7 +25,7 @@
 次のコマンドは、例外があります。
 
 - expl status は、--input の JSON を使いません。渡しても無視します。
-- --help は、生成されたコマンドと expl tools のヘルプを表示します。組み込みのコマンド（expl status、expl project use、expl lang、expl skill、expl completion）は、ヘルプを表示せず、そのまま実行されます。たとえば expl project use \<id\> --help は既定のプロジェクトを変更し、expl lang --help はそのまま言語の表示に進みます（対象のプロジェクトを決められないときは、エラーになります）。使い方は、[よく使うコマンド](commands_ja.md)で確認してください。
+- --help は、ヘルプを表示します。組み込みのコマンド（expl status、expl project use、expl lang、expl skill、expl completion）も同じです。
 - expl tools describe と expl call は、引数がないと、使い方のエラー（終了コード 2）になります。
 - --json は、expl project use、expl skill、expl completion には効きません。この 3 つは、常に文字で出力します。
 - 組み込みのコマンド（expl status、expl project use、expl lang、expl skill、expl completion）は、未知のフラグや余分な引数をエラーにしません。使い方に載っているものだけを渡してください。生成されたコマンドは、これらをエラー（終了コード 2）にします。
