@@ -12,7 +12,7 @@ Check that the connection works with the steps in [Try it](overview.md#steps). I
 
 ## When you contact support
 
-Send these to support@exploratory.io: the version of Exploratory Desktop, the name and version of your AI client, what you did, and the error message as it was shown. Hide any token or API key.
+Send these to support@exploratory.io: the server URL you connect to, the name and version of your AI client, what you did, and the error message as it was shown. Hide any token or API key.
 
 <a id="network"></a>
 

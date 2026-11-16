@@ -10,7 +10,7 @@ In Exploratory Desktop, the CLI is off by default. Even when expl is installed, 
 
 1. In Exploratory Desktop, open System Settings.
 2. In the menu on the left, choose MCP / CLI.
-3. In the CLI section, turn on Enable CLI.
+3. On the CLI card, turn on the switch.
 4. Only when you want to create, change or delete content with expl, also check Allow create, edit and delete.
 5. Choose Save at the bottom of the screen.
 
@@ -49,8 +49,6 @@ If you have both an npm copy and the Desktop copy of expl, check which one runs.
 
 ### macOS and Linux
 
-**macOS and Linux**
-
 ```sh
 which -a expl
 ```
@@ -58,8 +56,6 @@ which -a expl
 Shows every copy, in the order they run.
 
 ### Windows
-
-**Windows**
 
 ```sh
 where expl

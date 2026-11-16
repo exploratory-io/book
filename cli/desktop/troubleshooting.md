@@ -21,9 +21,9 @@ Send these to support@exploratory.io: the output of expl --version, the command 
 | What you see | What to do |
 | --- | --- |
 | expl: command not found | Open a new terminal and run it again. See also the installation page. |
-| The command is refused even though Desktop is running, and the message points to MCP / CLI | The CLI is off by default. In System Settings, choose MCP / CLI, turn on Enable CLI in the CLI section and choose Save. |
+| The command is refused even though Desktop is running, and the message points to MCP / CLI | The CLI is off by default. In System Settings, choose MCP / CLI, turn on the switch on the CLI card and choose Save. |
 | Exit code 3 | Start Exploratory Desktop and run it again. |
-| Exit code 4 | See the code at the end of the message in [Exit codes](exit-codes.md#action): NOT_SIGNED_IN, UNAUTHORIZED, CHANNEL_DISABLED or PERMISSION_DENIED. |
+| Exit code 4 | See the code at the end of the message in [Exit codes](exit-codes.md#action): NOT_SIGNED_IN, UNAUTHORIZED, PAIRING_REQUIRED, CHANNEL_DISABLED or PERMISSION_DENIED. |
 | PROJECT_NOT_OPEN | Open the project: expl project open \<id\> |
 | A message names a tool, such as get_data_frame | Run expl tools describe \<tool_name\> to see the command for that tool. |
 | Odd results | Add --verbose to see what is sent and received. Review the output before you paste it anywhere. |

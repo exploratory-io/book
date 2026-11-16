@@ -12,7 +12,7 @@
 
 ## 問い合わせるとき
 
-support@exploratory.io へ、次を送ってください。Exploratory Desktop のバージョン、AI クライアントの名前とバージョン、行った操作、表示されたエラーの文です。トークンや API キーは伏せてください。
+support@exploratory.io へ、次を送ってください。接続先のサーバーの URL、AI クライアントの名前とバージョン、行った操作、表示されたエラーの文です。トークンや API キーは伏せてください。
 
 <a id="network"></a>
 

@@ -209,5 +209,5 @@ The result includes the data version and update time. Check which data the numbe
 
 - [Read notes](guides/read-notes.md) - How to read long notes and get chart numbers.
 - [Query data](guides/query-data.md) - How to write the JSON arguments.
-- [Automation](guides/automation.md) - Create a token and run it in CI.
+- [Automation](guides/automation.md) - Create an API key and run it in CI.
 - [Troubleshooting](troubleshooting.md) - Find a fix by symptom.

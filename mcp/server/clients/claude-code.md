@@ -88,13 +88,9 @@ If you have more than one Exploratory connection (for example exploratory-server
 
 ## Connect with an API key
 
-If your environment cannot open a browser, register the server with an API key instead of signing in through the browser. Create the key in Account Settings \> API Keys.
+If your environment cannot open a browser, register the server with an API key instead of signing in through the browser. Create the key in Account Settings \> API Keys. Set it in EXPLORATORY_API_KEY through your environment's secret-management facility, such as your operating system's credential store or the secrets of your CI, not through your shell's startup file. Do not write the key itself on the command line or in a configuration file. The steps below assume that this environment variable is already set.
 
-```sh
-export EXPLORATORY_API_KEY="exp_pat_..."
-```
-
-Then write the header in .mcp.json (in your project) so that Claude Code reads the key from the environment variable.
+Write the header in .mcp.json (in your project) so that Claude Code reads the key from the environment variable.
 
 ```json
 {
@@ -110,7 +106,7 @@ Then write the header in .mcp.json (in your project) so that Claude Code reads t
 }
 ```
 
-Replace exp_pat_... with your key. If you type the key on a command line or write it in a settings file as it is, it stays in your shell history or in that file. Read it from an environment variable as above.
+If you type the key on a command line or write it in a settings file as it is, it stays in your shell history or in that file. Read it from an environment variable as above.
 
 Use one way only: the OAuth sign-in above or this one.
 

@@ -20,5 +20,6 @@ What an AI agent should know before it runs expl. An agent that can run shell co
 
 ## Other ways
 
+- [MCP Desktop](../../../mcp/desktop/desktop.md) - Work with Desktop projects from an AI app.
 - [MCP Server](../../../mcp/server/server.md) - Connect directly from an AI app.
 - [Use with Server](../../server/guides/agents.md) - For reading content on exploratory.io.

@@ -20,15 +20,11 @@ If you use Exploratory Desktop, expl is bundled with the app. Without Desktop, i
 
 #### Bundled with Desktop
 
-**Bundled with Desktop**
-
 ```sh
 expl --version
 ```
 
 #### Install with npm
-
-**Install with npm**
 
 ```sh
 npm install -g @exploratory/cli@<version>
@@ -37,8 +33,6 @@ npm install -g @exploratory/cli@<version>
 Replace \<version\> with the version you want. Node.js 20 or later is required. After installation, open a new terminal and run expl --version to verify it.
 
 #### Run with npx
-
-**Run with npx**
 
 ```sh
 npx -y @exploratory/cli --version
@@ -128,7 +122,7 @@ Rows (total): 23,131
 
 ## Server commands (expl server)
 
-The commands you will use most. Arguments and flags (extra settings that start with --) are on each command page.
+The commands you will use most. Arguments and flags (extra settings that start with --) are in [All commands](commands.md).
 
 | Goal | Command |
 | --- | --- |
@@ -138,6 +132,7 @@ The commands you will use most. Arguments and flags (extra settings that start w
 | See rows of data | expl server dataframe preview |
 | Filter and aggregate data | expl server dataset query |
 | Save a result as a file | expl server dataframe export |
+| See how data was built | expl server dataframe get-wrangling |
 | Get chart numbers | expl server chart get-data |
 | Get a chart image | expl server chart get-image |
 | Aggregate chart numbers | expl server chart query |

@@ -75,8 +75,6 @@ npm でインストールした expl と Desktop の expl の両方がある場�
 
 ### macOS と Linux
 
-**macOS と Linux**
-
 ```sh
 which -a expl
 ```
@@ -84,8 +82,6 @@ which -a expl
 インストールされているものを、実行される順にすべて表示します。
 
 ### Windows
-
-**Windows**
 
 ```sh
 where expl

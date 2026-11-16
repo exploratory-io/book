@@ -44,7 +44,7 @@ IT の担当者に、exploratory.io への通信を許可してもらってく�
 | --token was removed. … | EXPL_SERVER_TOKEN を設定するか、expl server login --with-token を実行します。終了コード 2 です。 環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。 |
 | Too many failed API key attempts. Try again later. | このアドレスから、拒否されたキーが短い時間に何度も送られました。キーを直して、しばらくしてからやり直します。 |
 | The redirect URL has no authorization code. | --no-browser のとき、最初に表示された URL を貼り付けています。移動先の、http://127.0.0.1/callback?code= で始まる URL を貼り付けてください。 |
-| 終了コード 4（Desktop） | メッセージの末尾のコード（NOT_SIGNED_IN、UNAUTHORIZED、CHANNEL_DISABLED、PERMISSION_DENIED）を、[終了コード](exit-codes_ja.md#action)で確認します。 |
+| 終了コード 4（Desktop） | メッセージの末尾のコード（NOT_SIGNED_IN、UNAUTHORIZED、PAIRING_REQUIRED、CHANNEL_DISABLED、PERMISSION_DENIED）を、[終了コード](exit-codes_ja.md#action)で確認します。 |
 
 - [API キー](token_ja.md) - API キーの作り方、渡し方、取り消し方です。
 

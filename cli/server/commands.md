@@ -18,6 +18,7 @@ The commands for signing in and managing the connection are on their own pages: 
 | [expl server dataframe preview](#dataframe-preview) | `expl server dataframe preview <id> [flags]` | `--id` `--offset` `--limit` |
 | [expl server dataset query](#dataset-query) | `expl server dataset query [<dataset_id>] [flags]` | `--dataset-id` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` `--datasets` `--root-alias` `--joins` `--source-filters` `--allow-many-to-many` `--queries` `--include-answer-context` `--language` |
 | [expl server dataframe export](#dataframe-export) | `expl server dataframe export <dataset_id> [flags]` | `--dataset-id` `--format` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` |
+| [expl server dataframe get-wrangling](#dataframe-get-wrangling) | `expl server dataframe get-wrangling <id> [flags]` | `--id` `--steps` `--column` `--include-scripts` `--cursor` `--language` |
 | [expl server chart get-data](#chart-get-data) | `expl server chart get-data <id> [flags]` | `--id` `--chart` `--offset` `--limit` |
 | [expl server chart get-image](#chart-get-image) | `expl server chart get-image <id> [flags]` | `--id` `--chart` |
 | [expl server analytics get-result](#analytics-get-result) | `expl server analytics get-result <id> [flags]` | `--id` `--analytics` `--tables` `--limit` |
@@ -43,6 +44,7 @@ The commands for signing in and managing the connection are on their own pages: 
 | [expl server dataframe preview](#dataframe-preview) | Get the rows of a data item, page by page with offset and limit. |
 | [expl server dataset query](#dataset-query) | Filter and aggregate a data item on the server and return only the result. |
 | [expl server dataframe export](#dataframe-export) | Save the result of a query on a data item as a CSV or Parquet file and return a download link. |
+| [expl server dataframe get-wrangling](#dataframe-get-wrangling) | Get how a data item was built: its data wrangling steps in order. |
 
 <a id="commands-chart-get-data"></a>
 
@@ -86,11 +88,11 @@ expl server search [<query>] [flags]
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |
 | `--query` | string |  | Search words, written right after the command or passed with --query. Matches titles, descriptions and tags. Empty (or \*) lists everything in scope, newest first. |
-| `--type` | string |  | The type of content to search. Values: `all`, `note`, `dashboard`, `slide`, `chart`, `analytics`, `data` |
-| `--scope` | string |  | all: everything you can view. mine: items you own. shared: items shared with you. team: items of one team. Values: `all`, `mine`, `shared`, `team` |
+| `--type` | string |  | The type of content to search. The default is `all`. Values: `all`, `note`, `dashboard`, `slide`, `chart`, `analytics`, `data` |
+| `--scope` | string |  | all: everything you can view. mine: items you own. shared: items shared with you. team: items of one team. The default is `all`. Values: `all`, `mine`, `shared`, `team` |
 | `--team` | string | Required with --scope team | The team name. |
 | `--semantic` | boolean |  | Search by meaning instead of by keyword. |
-| `--limit` | integer |  | The maximum number of results, up to 50. |
+| `--limit` | integer |  | The maximum number of results, up to 50. The default is 20. |
 | `--offset` | integer |  | The number of results to skip. Use it to get the next page. |
 
 <a id="search-examples"></a>
@@ -759,7 +761,7 @@ expl server dataset query [<dataset_id>] [flags]
 | --- | --- | --- | --- |
 | `--dataset-id` | string | Required unless queries or datasets is used | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --dataset-id. |
 | `--mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
-| `--columns` | json |  | Only in rows mode. 1 to 50 unique column names to return. In a join, write each column with alias and column. |
+| `--columns` | json | Required in rows mode (optional in a join) | Only in rows mode. 1 to 50 unique column names to return. In a join, write each column with alias and column. In a join, leaving it out returns every column. |
 | `--filters` | json |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. In a join, they apply after the join. |
 | `--dimensions` | json |  | Only in aggregate mode. 0 to 5 columns to group by, written as { "column": "column name" }. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
 | `--metrics` | json | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations, each with a function (count_rows, count, count_distinct, sum, avg, min, max) and an alias that names the result. Everything except count_rows also takes a column. |
@@ -905,6 +907,7 @@ There is no paging. When has_more in the result is true, narrow the filters or a
 | What you see | What to do |
 | --- | --- |
 | Each dimension must be an object like { "column": "region" }. (INVALID_QUERY) | Write dimensions as an array of objects like { "column": "column name" }. |
+| columns is required in rows mode. (INVALID_QUERY) | In rows mode, name the columns to return with --columns. |
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | In metrics, give a function and an alias. Everything except count_rows also takes a column. |
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias is required. Use only letters, digits and _, do not start with a digit, and use at most 64 characters. |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | In a sort entry, give the output column name with field. column, by, alias, name and metric are not accepted. |
@@ -1020,6 +1023,83 @@ There is no paging. Use this command when the result is too large for dataset qu
 
 Related: [expl server dataset query](#dataset-query), [expl server dataframe preview](#dataframe-preview)
 
+<a id="dataframe-get-wrangling"></a>
+
+## expl server dataframe get-wrangling
+
+Look up how a published data item was built: the data wrangling steps in order, the data it was read from and joined with, and which steps created or changed each column.
+
+<a id="dataframe-get-wrangling-usage"></a>
+
+### Usage
+
+```text
+expl server dataframe get-wrangling <id> [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="dataframe-get-wrangling-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--id` | string | Required | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --id. |
+| `--steps` | scalarArray |  | The refs of the steps to return in detail, such as s3, taken from the outline. 1 to 20 refs, no duplicates. Cannot be used with --column. |
+| `--column` | string |  | Return only the steps that created or changed this column of the final data, in detail. Write the exact column name. Cannot be used with --steps. |
+| `--include-scripts` | boolean | Only with --steps or --column | Include the R code of the steps. Only for data whose rows may be shared. |
+| `--cursor` | string | Not with --steps or --column | To continue an outline that did not fit in one result, pass range.next_cursor of the previous result. |
+| `--language` | string |  | The language of the descriptions and definitions: ja or en. By default it is the base language of the data. Values: `ja`, `en` |
+
+<a id="dataframe-get-wrangling-examples"></a>
+
+### Examples
+
+#### See the outline
+
+**Terminal**
+
+```sh
+expl server dataframe get-wrangling <id> --json
+```
+
+Replace \<id\> with the id of a data item.
+
+#### See the steps that made one column
+
+**Terminal**
+
+```sh
+expl server dataframe get-wrangling <id> --column "order_date" --json
+```
+
+Replace order_date with the exact name of a column of the final data.
+
+<a id="dataframe-get-wrangling-output"></a>
+<a id="dataframe-get-wrangling-paging"></a>
+
+### Output and limits
+
+Without --steps or --column, the result is an outline: an overview, every step in order as one line (type, label and what it does), the data it was read from and joined with, and an index of which steps created or changed each column. To see a step in detail (the full explanation, the expression, the settings such as filter conditions or join keys), run it again with --steps (the refs from the outline) or with --column. The refs are valid only for the current version of the data.
+
+The overview is a summary written by AI and not reviewed, so say so when you quote it. For the processing summary the owner has approved, read the semantics in dataframe get-schema.
+
+An outline that does not fit in one result continues with --cursor. When the steps cannot be read, the result says why: they were not recorded when the data was published, the owner does not share them, or the publisher does not share the rows of the data.
+
+<a id="dataframe-get-wrangling-trouble"></a>
+
+### Troubleshooting
+
+| What you see | What to do |
+| --- | --- |
+| Use either steps or column, not both. (INVALID_PARAMETER) | Pass only one of --steps and --column. |
+| include_scripts works only together with steps or column. (INVALID_PARAMETER) | Add --steps or --column when you use --include-scripts. |
+| cursor belongs to an older version of this data. Call again without cursor. (INVALID_PARAMETER) | The data was published again. Run the command again without --cursor. |
+| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+
+Related: [expl server dataframe get-schema](#dataframe-get-schema), [expl server dataset query](#dataset-query)
+
 <a id="chart-get-data"></a>
 
 ## expl server chart get-data
@@ -1043,7 +1123,7 @@ expl server chart get-data <id> [flags]
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |
 | `--id` | string | Required | The id of the note, dashboard or slide that holds the chart, or of a chart published on its own. Write it right after the command or pass it with --id. |
-| `--chart` | string |  | The name of a chart inside a note, dashboard or slide. It is metadata.charts\[\].name in the result of fetch. |
+| `--chart` | string | Required for an item embedded in a note, dashboard or slide | The name of a chart inside a note, dashboard or slide. It is metadata.charts\[\].name in the result of fetch. |
 | `--offset` | integer |  | The number of rows to skip, counted from 0. |
 | `--limit` | integer |  | The number of rows to return, up to 100. |
 
@@ -1204,7 +1284,7 @@ expl server chart get-image <id> [flags]
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |
 | `--id` | string | Required | The id of the note, dashboard or slide that holds the chart, or of a chart published on its own. Write it right after the command or pass it with --id. |
-| `--chart` | string |  | The name of a chart inside a note, dashboard or slide. It is metadata.charts\[\].name in the result of fetch. |
+| `--chart` | string | Required for an item embedded in a note, dashboard or slide | The name of a chart inside a note, dashboard or slide. It is metadata.charts\[\].name in the result of fetch. |
 
 <a id="chart-get-image-examples"></a>
 
@@ -1333,7 +1413,7 @@ expl server analytics get-result <id> [flags]
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |
 | `--id` | string | Required | The id of the note, dashboard or slide that holds the analytics, or of an analytics published on its own. Write it right after the command or pass it with --id. |
-| `--analytics` | string |  | The name of an analytics inside a note, dashboard or slide. It is metadata.blocks\[\].name in the result of fetch. |
+| `--analytics` | string | Required for an item embedded in a note, dashboard or slide | The name of an analytics inside a note, dashboard or slide. It is metadata.blocks\[\].name in the result of fetch. |
 | `--tables` | scalarArray |  | The ids of the tables to return (available_tables\[\].id). By default it returns the tables that answer the analysis. |
 | `--limit` | integer |  | The maximum number of rows per table, up to 100. |
 
@@ -1544,8 +1624,8 @@ expl server chart query [flags]
 
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |
-| `--id` | string |  | The id of the note, dashboard or slide that holds the chart, from a search result or a fetch. |
-| `--chart` | string |  | The name of the chart: metadata.charts\[\].name in the result of fetch (letters, digits, _ and -). |
+| `--id` | string | Required unless queries is used | The id of the note, dashboard or slide that holds the chart, from a search result or a fetch. |
+| `--chart` | string | Required unless queries is used | The name of the chart: metadata.charts\[\].name in the result of fetch (letters, digits, _ and -). |
 | `--mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
 | `--columns` | scalarArray |  | Only in rows mode. 1 to 50 unique column names to return. |
 | `--filters` | json |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |

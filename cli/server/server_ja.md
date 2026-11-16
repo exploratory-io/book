@@ -20,15 +20,11 @@ Exploratory Desktop をお使いの場合、expl はアプリに同梱されて�
 
 #### Desktop に同梱されているもの
 
-**Desktop に同梱されているもの**
-
 ```sh
 expl --version
 ```
 
 #### npm でインストールする
-
-**npm でインストールする**
 
 ```sh
 npm install -g @exploratory/cli@<version>
@@ -37,8 +33,6 @@ npm install -g @exploratory/cli@<version>
 \<version\> は、使用するバージョン番号に置き換えます。Node.js 20 以上が必要です。インストール後、新しいターミナルで expl --version を実行して確認します。
 
 #### npx で実行
-
-**npx で実行**
 
 ```sh
 npx -y @exploratory/cli --version
@@ -138,6 +132,7 @@ Rows (total): 23,131
 | データの行を表示する | expl server dataframe preview |
 | データを絞り込む、集計する | expl server dataset query |
 | 結果をファイルにする | expl server dataframe export |
+| データの作られ方を確認する | expl server dataframe get-wrangling |
 | チャートの数値を取得する | expl server chart get-data |
 | チャートの画像を取得する | expl server chart get-image |
 | チャートの数値を集計する | expl server chart query |

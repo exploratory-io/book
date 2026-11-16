@@ -10,7 +10,7 @@ What an AI agent should know before it runs expl server. An agent that can run s
 2. Find commands instead of guessing names: run expl server tools list --json, then expl server tools describe \<tool_name\> for the arguments of one command.
 3. Add --json and read the result from standard output. Progress and warnings go to standard error, so they do not break the JSON.
 4. Read the exit code. 3 means the server cannot be reached, and 4 means authentication or permission.
-5. Outside a terminal, an operation that is hard to undo does nothing without --yes (exit code 2). Ask the user before you add --yes, and add it only for an operation the user has decided to run.
+5. Outside a terminal, an operation that is hard to undo does nothing without --yes (exit code 2). Ask the user before you add --yes, and add it only for an operation the user has decided to run. expl server token revoke is an exception: it sends the revocation without asking and without --yes, so confirm the key and the user's intention to revoke it before you run it.
 6. In CI, sign in with an API key through the environment variable EXPL_SERVER_TOKEN.
 7. When an error message names a tool, such as chart_query, run expl server tools describe \<tool_name\> to see the command for that tool.
 

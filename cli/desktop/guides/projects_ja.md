@@ -14,7 +14,7 @@
 
 上にあるものが勝ちます。
 
-例外があります。コマンド自身に渡したプロジェクトの id や、--input の JSON の project_id は、そのまま使われます。プロジェクトが省略できるコマンドは、EXPL_PROJECT と、expl project use で決めた既定を使いません。expl lang は、この 3 つのどれも指定されていないとき、開いているプロジェクトも使います。
+例外があります。プロジェクトの id を位置引数に取るコマンドでは、その id が優先されます。それ以外のコマンドでは、--project が --input の JSON の project_id より優先されます。--project がなければ、--input の JSON の project_id がそのまま使われます。プロジェクトが省略できるコマンドは、EXPL_PROJECT と、expl project use で決めた既定を使いません。expl lang は、この 3 つのどれも指定されていないとき、開いているプロジェクトも使います。
 
 <a id="name"></a>
 

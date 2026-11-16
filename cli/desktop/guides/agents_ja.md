@@ -20,5 +20,6 @@ AI エージェントが expl を実行する前に知っておくことです�
 
 ## ほかの方法
 
-- [MCP Server](../../../mcp/server/server_ja.md) - AI アプリから直接つなぎます。
+- [MCP の Desktop](../../../mcp/desktop/desktop_ja.md) - AI アプリから Desktop のプロジェクトを扱います。
+- [MCP の Server](../../../mcp/server/server_ja.md) - AI アプリから直接つなぎます。
 - [Server で使う](../../server/guides/agents_ja.md) - exploratory.io のコンテンツを読む場合です。

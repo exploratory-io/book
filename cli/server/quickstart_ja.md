@@ -209,5 +209,5 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 
 - [ノートを読む](guides/read-notes_ja.md) - 長いノートの読み方と、チャートの数値の取り方です。
 - [データを集計する](guides/query-data_ja.md) - JSON で渡す引数の書き方です。
-- [自動処理](guides/automation_ja.md) - トークンを作成し、CI で実行します。
+- [自動処理](guides/automation_ja.md) - API キーを作成し、CI で実行します。
 - [トラブルシューティング](troubleshooting_ja.md) - 症状から対処を探します。

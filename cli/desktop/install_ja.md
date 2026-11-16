@@ -10,7 +10,7 @@ Exploratory Desktop の CLI は、初期状態ではオフです。expl をイ�
 
 1. Exploratory Desktop で、システム設定を開きます。
 2. 左のメニューで、MCP / CLI を選びます。
-3. CLI の項目で、「CLI を有効にする」をオンにします。
+3. 「CLI」のカードのスイッチをオンにします。
 4. expl でコンテンツの作成、変更、削除もしたいときだけ、「作成、変更、削除を許可する」にもチェックを入れます。
 5. 画面の下の「保存」を選びます。
 
@@ -49,8 +49,6 @@ npm でインストールした expl と Desktop の expl の両方がある場�
 
 ### macOS と Linux
 
-**macOS と Linux**
-
 ```sh
 which -a expl
 ```
@@ -58,8 +56,6 @@ which -a expl
 インストールされているものを、実行される順にすべて表示します。
 
 ### Windows
-
-**Windows**
 
 ```sh
 where expl

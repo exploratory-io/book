@@ -54,4 +54,4 @@ done
 while read id; do expl dashboard publish "$id" --yes; done < created.txt
 ```
 
-パブリッシュするには、Desktop が描画を終えている必要があります。No rendered output と出たときは、少し待つか、expl note open \<id\> で開いてから、もう一度実行します。
+パブリッシュするには、Desktop が描画を終えている必要があります。No rendered output と出たときは、Exploratory Desktop でそのダッシュボードを 1 回開いて描画させてから、もう一度実行します。

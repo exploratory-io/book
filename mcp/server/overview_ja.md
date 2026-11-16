@@ -83,11 +83,7 @@ Authorization: Bearer exp_pat_...
 
 exp_pat_... は、作成したキーに置き換えます。
 
-キーは環境変数に入れて、クライアントにそこから読ませます。コマンドラインに鍵をそのまま打ったり、設定ファイルにそのまま書いたりすると、シェルの履歴やファイルに残ります。たとえば、固定のヘッダーを設定できる Claude Code では、環境変数を設定して、.mcp.json から参照します。
-
-```sh
-export EXPLORATORY_API_KEY="exp_pat_..."
-```
+キーは環境変数に入れて、クライアントにそこから読ませます。キーは秘密情報の管理の仕組みから EXPLORATORY_API_KEY に設定します。シェルの設定ファイルではなく、OS の資格情報の保管庫や CI のシークレットなどを使います。キーそのものをコマンドラインや設定ファイルに書かないでください。シェルの履歴やファイルに残ります。以下は、この環境変数が設定済みであることを前提にします。たとえば、固定のヘッダーを設定できる Claude Code では、.mcp.json から環境変数を参照します。
 
 ```json
 {
@@ -145,11 +141,12 @@ Exploratory の「Sales Orders」データにはどんな列がある？ 売上�
 | チャートとアナリティクス | chart_query | 読み取りだけ | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
 | チャートとアナリティクス | analytics_get_result | 読み取りだけ | 係数や p 値など、アナリティクスの結果を取得します。 |
 | データ | dataframe_get_schema | 読み取りだけ | 列の名前、型、承認された意味を調べます。 |
+| データ | dataframe_get_wrangling | 読み取りだけ | データがどう加工されて作られたかを、ステップごとに見ます。 |
 | データ | dataframe_preview | 読み取りだけ | 行を表示します。 |
 | データ | query_dataset | 読み取りだけ | サーバーで絞り込み、集計します。 |
 | データ | dataframe_export | 読み取りだけ | 結果を CSV か Parquet で保存します。 |
 
-これは、どのサーバーにもあるツールです。サーバーの設定によっては、ツールが増えます。たとえば desktop_mcp_setup_guide は、AI クライアントを Exploratory Desktop につなぐ手順を返します。お使いのサーバーにあるツールは、expl server tools list で確認できます。
+exploratory.io では、これらのツールが使えます。オンプレミスのサーバーでは、使えるツールはサーバーの設定によって変わります。query_dataset、chart_query、dataframe_export は、管理者が有効にしたときだけ使えます。設定によっては、ほかのツールも増えます。たとえば desktop_mcp_setup_guide は、AI クライアントを Exploratory Desktop につなぐ手順を返します。お使いのサーバーにあるツールは、expl server tools list で確認できます。
 
 - [ツール](tools_ja.md) - 入力と使い方を確認します。
 

@@ -83,11 +83,7 @@ Authorization: Bearer exp_pat_...
 
 Replace exp_pat_... with your key.
 
-Put the key in an environment variable and let the client read it from there. If you type the key on a command line or write it in a settings file as it is, it stays in your shell history or in that file. For example, in Claude Code, a client that accepts a fixed header, set the variable and refer to it in .mcp.json.
-
-```sh
-export EXPLORATORY_API_KEY="exp_pat_..."
-```
+Put the key in an environment variable and let the client read it from there. Set EXPLORATORY_API_KEY through your environment's secret-management facility, such as your operating system's credential store or the secrets of your CI, not through your shell's startup file. Do not write the key itself on the command line or in a configuration file; it stays in your shell history or in that file. The configuration below assumes that this environment variable is already set. For example, in Claude Code, a client that accepts a fixed header, refer to the variable in .mcp.json.
 
 ```json
 {
@@ -145,11 +141,12 @@ A tool is an operation the AI calls. They only read.
 | Charts and analytics | chart_query | Read only | Filter and aggregate the data of a chart in a note, dashboard or slide on the server. |
 | Charts and analytics | analytics_get_result | Read only | Get coefficients, p-values and other results of an analytics. |
 | Data | dataframe_get_schema | Read only | Describe the columns and their approved meaning. |
+| Data | dataframe_get_wrangling | Read only | Show how a data item was built, step by step. |
 | Data | dataframe_preview | Read only | Show rows. |
 | Data | query_dataset | Read only | Filter and aggregate on the server. |
 | Data | dataframe_export | Read only | Save a result as CSV or Parquet. |
 
-This is the set every server offers. Depending on the server settings, more tools appear, for example desktop_mcp_setup_guide, which returns the steps to connect an AI client to Exploratory Desktop. Run expl server tools list to see what your server offers.
+exploratory.io offers these tools. On an on-premises server, which tools appear depends on the server settings; query_dataset, chart_query and dataframe_export appear only when the administrator has turned them on. More tools can appear depending on the settings, for example desktop_mcp_setup_guide, which returns the steps to connect an AI client to Exploratory Desktop. Run expl server tools list to see what your server offers.
 
 - [Tools](tools.md) - Check the inputs and how to use each tool.
 

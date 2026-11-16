@@ -8,7 +8,7 @@
 
 | フラグ | 内容 | expl server では |
 | --- | --- | --- |
-| --project \<id\|name\> | 対象のプロジェクトです。 | 使いません。 |
+| --project \<id\|name\> | 対象のプロジェクトです。 | 使えません。付けると使い方のエラーで終わります（終了コード 2）。 |
 | --json | ツールが返した結果を JSON のまま出力します。 | 同じです。 |
 | --yes, -y | 取り消しにくい操作の確認を省きます。 | 同じです。 |
 | --no-wait | 時間のかかる操作を待たず、id を出力して終わります。 | 同じです。 |
@@ -22,7 +22,7 @@
 
 --verbose の出力は、貼り付ける前に中身を確認してください。
 
---json は、expl server login、expl server logout、expl server skill、expl completion には効きません。常に文字で出力します。組み込みのコマンド（expl server login、logout、status、token、skill）は、未知のフラグや余分な引数をエラーにしません。生成されたコマンドは、これらをエラー（終了コード 2）にします。
+--json は、expl server login、expl server logout、expl server skill、expl completion には効きません。常に文字で出力します。組み込みコマンドのうち expl server login、logout、status、skill は、未知のフラグや余分な引数があっても知らせません。expl server token と生成されたコマンドは、エラーにします（終了コード 2）。
 
 <a id="env"></a>
 
@@ -38,7 +38,13 @@
 
 ## シェルの補完
 
-expl completion bash、expl completion zsh、expl completion powershell は、補完のスクリプトを出力します。有効にする方法は、[シェルの補完](../desktop/global-flags_ja.md#completion)を参照してください。
+expl completion bash、expl completion zsh、expl completion powershell は、補完のスクリプトを出力します。このスクリプトを実行すると、補完が有効になります。
+
+| シェル | 今のセッションで有効にする | 次回以降も有効にする |
+| --- | --- | --- |
+| bash | eval "$(expl completion bash)" | その行を ~/.bashrc に追加します |
+| zsh | eval "$(expl completion zsh)" | その行を ~/.zshrc に追加します |
+| PowerShell | expl completion powershell \| Out-String \| Invoke-Expression | その行を $PROFILE に追加します |
 
 <a id="server"></a>
 

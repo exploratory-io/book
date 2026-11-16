@@ -8,7 +8,7 @@ Flags you can add to any command. You can place them before or after the command
 
 | Flag | What it does | With expl server |
 | --- | --- | --- |
-| --project \<id\|name\> | The project to work on. | Not used. |
+| --project \<id\|name\> | The project to work on. | Not accepted. expl server stops with a usage error (exit code 2). |
 | --json | Print the result as JSON, as the tool returned it. | The same. |
 | --yes, -y | Skip the confirmation of an operation that is hard to undo. | The same. |
 | --no-wait | Do not wait for a long operation; print its ids and exit. | The same. |
@@ -22,7 +22,7 @@ Flags you can add to any command. You can place them before or after the command
 
 Review the output of --verbose before you paste it anywhere.
 
---json has no effect on expl server login, expl server logout, expl server skill and expl completion. They always print text. The built-in commands (expl server login, logout, status, token and skill) do not report an unknown flag or an extra argument; the generated commands reject them (exit code 2).
+--json has no effect on expl server login, expl server logout, expl server skill and expl completion. They always print text. The built-in commands expl server login, logout, status and skill do not report an unknown flag or an extra argument. expl server token and the generated commands reject them (exit code 2).
 
 <a id="env"></a>
 
@@ -38,7 +38,13 @@ Review the output of --verbose before you paste it anywhere.
 
 ## Shell completion
 
-expl completion bash, expl completion zsh and expl completion powershell print a completion script. See [Shell completion](../desktop/global-flags.md#completion) for how to turn it on.
+expl completion bash, expl completion zsh and expl completion powershell print a completion script. Run the script to turn completion on.
+
+| Shell | To turn it on in the current session | To keep it for later sessions |
+| --- | --- | --- |
+| bash | eval "$(expl completion bash)" | Add that line to ~/.bashrc |
+| zsh | eval "$(expl completion zsh)" | Add that line to ~/.zshrc |
+| PowerShell | expl completion powershell \| Out-String \| Invoke-Expression | Add that line to $PROFILE |
 
 <a id="server"></a>
 

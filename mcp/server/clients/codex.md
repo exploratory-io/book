@@ -102,11 +102,7 @@ If you already have another Exploratory connection (for example exploratory-serv
 
 ## Connect with an API key
 
-If your environment cannot open a browser, use an API key instead of the sign-in. Create the key in Account Settings \> API Keys, and put it in an environment variable.
-
-```sh
-export EXPLORATORY_API_KEY="exp_pat_..."
-```
+If your environment cannot open a browser, use an API key instead of the sign-in. Create the key in Account Settings \> API Keys, and put it in an environment variable. Set EXPLORATORY_API_KEY through your environment's secret-management facility, such as your operating system's credential store or the secrets of your CI, not through your shell's startup file. Do not write the key itself on the command line or in a configuration file. The configuration below assumes that this environment variable is already set.
 
 Add the name of the variable, not the key, to ~/.codex/config.toml.
 

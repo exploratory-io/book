@@ -44,7 +44,7 @@ Ask your IT administrator to allow communication with exploratory.io. For an on-
 | --token was removed. … | Set EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
 | Too many failed API key attempts. Try again later. | Many refused keys came from this address in a short time. Fix the key and try again later. |
 | The redirect URL has no authorization code. | With --no-browser, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
-| Exit code 4 (Desktop) | See the code at the end of the message in [Exit codes](exit-codes.md#action): NOT_SIGNED_IN, UNAUTHORIZED, CHANNEL_DISABLED or PERMISSION_DENIED. |
+| Exit code 4 (Desktop) | See the code at the end of the message in [Exit codes](exit-codes.md#action): NOT_SIGNED_IN, UNAUTHORIZED, PAIRING_REQUIRED, CHANNEL_DISABLED or PERMISSION_DENIED. |
 
 - [API keys](token.md) - Create, pass and revoke an API key.
 

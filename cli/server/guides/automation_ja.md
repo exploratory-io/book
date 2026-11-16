@@ -28,7 +28,7 @@ GitHub Actions の例です。\<id\> は、読みたいコンテンツの id に
 - uses: actions/setup-node@v4
   with:
     node-version: 22
-- run: npx @exploratory/cli@<version> server fetch <id> --json
+- run: npx -y @exploratory/cli@<version> server fetch <id> --json
   env:
     EXPL_SERVER_TOKEN: ${{ secrets.EXPL_SERVER_TOKEN }}
     EXPL_SERVER_URL: https://exploratory.io

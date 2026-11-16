@@ -75,8 +75,6 @@ If you installed from npm and also use Desktop, check which one runs.
 
 ### macOS and Linux
 
-**macOS and Linux**
-
 ```sh
 which -a expl
 ```
@@ -84,8 +82,6 @@ which -a expl
 Shows every copy, in the order they run.
 
 ### Windows
-
-**Windows**
 
 ```sh
 where expl

@@ -8,7 +8,7 @@ What Desktop asks you first, what you decide in Desktop, and what is sent and re
 
 In System Settings \> MCP / CLI you also decide the following.
 
-- Data to share with the AI application: names, columns and data types only; up to aggregated results (charts, pivot tables); up to sample rows (max 100 rows); or all rows. Requests for more than the level you choose are refused.
+- Data to share with the AI tool: names, columns and data types only; up to aggregated results (charts, pivot tables); up to sample rows (max 100 rows); or all rows. Requests for more than the level you choose are refused.
 - Approval: Desktop asks you first before it deletes items (charts, analytics, notes, dashboards, steps, branches, parameters, connections, palettes, templates, R packages, catalog items), publishes or unpublishes notes, dashboards, data frames and projects, saves a connection, replaces a data source, restores a project's history, manages data frames, changes the system settings or the catalog schedule. It also asks before it runs R code, adds R packages, processes data with AI or asks the note AI. Creating and editing charts, notes and dashboards is not asked about. You can choose to run each of these two groups without asking, with "Run changes, deletions and publishing without asking" and "Run code and AI processing without asking".
 - Approved apps: an app asks for your approval the first time it connects. Remove an app to make it ask again.
 
@@ -30,7 +30,7 @@ The Desktop plugin has four settings in Claude Code. Each value is the string `"
 | `ai_summary` | `"false"` | Creates and saves an AI Summary for the charts and analytics you create. |
 | `save_comments` | `"false"` | Saves an explanatory comment on the charts you create. |
 | `review_hook` | `"false"` | Asks the AI to review its work. |
-| `plan_gate` | `"true"` | After R work, makes the AI save a scenario and a plan before it creates anything. See [Troubleshooting](troubleshooting.md#trouble). |
+| `plan_gate` | `"true"` | When the AI uses the exploratory-analysis skill and does R work, checks that a scenario and a creation plan are saved before the create calls. See [Troubleshooting](troubleshooting.md#trouble). |
 
 To see the settings, run `claude plugin configure exploratory@exploratory`. These settings are separate from the System Settings \> MCP / CLI options above.
 

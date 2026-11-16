@@ -28,7 +28,7 @@ An example for GitHub Actions. Replace \<id\> with the id of the content to read
 - uses: actions/setup-node@v4
   with:
     node-version: 22
-- run: npx @exploratory/cli@<version> server fetch <id> --json
+- run: npx -y @exploratory/cli@<version> server fetch <id> --json
   env:
     EXPL_SERVER_TOKEN: ${{ secrets.EXPL_SERVER_TOKEN }}
     EXPL_SERVER_URL: https://exploratory.io
@@ -49,7 +49,7 @@ A script can tell success from failure by the exit code. These two are common in
 
 <a id="revoke"></a>
 
-## Revoke the token
+## Revoke the API key
 
 Revoke a key that leaks or that you no longer need, as described in [API keys](../token.md#revoke).
 

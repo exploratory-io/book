@@ -18,6 +18,7 @@
 | [expl server dataframe preview](#dataframe-preview) | `expl server dataframe preview <id> [flags]` | `--id` `--offset` `--limit` |
 | [expl server dataset query](#dataset-query) | `expl server dataset query [<dataset_id>] [flags]` | `--dataset-id` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` `--datasets` `--root-alias` `--joins` `--source-filters` `--allow-many-to-many` `--queries` `--include-answer-context` `--language` |
 | [expl server dataframe export](#dataframe-export) | `expl server dataframe export <dataset_id> [flags]` | `--dataset-id` `--format` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` |
+| [expl server dataframe get-wrangling](#dataframe-get-wrangling) | `expl server dataframe get-wrangling <id> [flags]` | `--id` `--steps` `--column` `--include-scripts` `--cursor` `--language` |
 | [expl server chart get-data](#chart-get-data) | `expl server chart get-data <id> [flags]` | `--id` `--chart` `--offset` `--limit` |
 | [expl server chart get-image](#chart-get-image) | `expl server chart get-image <id> [flags]` | `--id` `--chart` |
 | [expl server analytics get-result](#analytics-get-result) | `expl server analytics get-result <id> [flags]` | `--id` `--analytics` `--tables` `--limit` |
@@ -43,6 +44,7 @@
 | [expl server dataframe preview](#dataframe-preview) | データの行を、offset と limit でページに分けて取得します。 |
 | [expl server dataset query](#dataset-query) | サーバーでデータを絞り込み、集計して、結果だけを返します。 |
 | [expl server dataframe export](#dataframe-export) | データへの問い合わせの結果を、CSV か Parquet のファイルにして、ダウンロードリンクを返します。 |
+| [expl server dataframe get-wrangling](#dataframe-get-wrangling) | データがどのように作られたかを、データ加工のステップを順に並べて取得します。 |
 
 <a id="commands-chart-get-data"></a>
 
@@ -86,11 +88,11 @@ expl server search [<query>] [flags]
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
 | `--query` | 文字列 |  | 検索語です。コマンドのすぐあとに書くか、--query で渡します。タイトル、説明、タグに一致します。空（または \*）にすると、条件に合うものを新しい順に一覧します。続きがある場合は、ページを分けて取得します。 |
-| `--type` | 文字列 |  | 探すコンテンツの種類です。 値: `all`, `note`, `dashboard`, `slide`, `chart`, `analytics`, `data` |
-| `--scope` | 文字列 |  | all: 閲覧できるものすべて。mine: 自分のもの。shared: 自分に共有されたもの。team: 1 つのチームのもの。 値: `all`, `mine`, `shared`, `team` |
+| `--type` | 文字列 |  | 探すコンテンツの種類です。既定は `all` です。 値: `all`, `note`, `dashboard`, `slide`, `chart`, `analytics`, `data` |
+| `--scope` | 文字列 |  | all: 閲覧できるものすべて。mine: 自分のもの。shared: 自分に共有されたもの。team: 1 つのチームのもの。既定は `all` です。 値: `all`, `mine`, `shared`, `team` |
 | `--team` | 文字列 | --scope team のときは必須 | チームの名前です。 |
 | `--semantic` | 有効 / 無効 |  | キーワードの一致ではなく、意味が近いものを探します。 |
-| `--limit` | 整数 |  | 返す件数の上限です。50 までです。 |
+| `--limit` | 整数 |  | 返す件数の上限です。50 までです。既定は 20 です。 |
 | `--offset` | 整数 |  | 読み飛ばす件数です。続きを取得するときに使います。 |
 
 <a id="search-examples"></a>
@@ -150,37 +152,37 @@ expl server search "" --scope mine --limit 50 --json
       "data_as_of": "2026-11-14T22:03:01.894Z"
     },
     {
-      "id": "COVID-19-Infected-Cases-Death-Data-Worldwide-nO6pQ7rS8t",
-      "title": "World Wide COVID-19 Data by Johns Hopkins (JHU CCSE)",
-      "url": "https://exploratory.io/data/aB3cD4eF5g/COVID-19-Infected-Cases-Death-Data-Worldwide-nO6pQ7rS8t",
+      "id": "hI6jK7lM8n",
+      "title": "Sales Orders",
+      "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
       "type": "data",
-      "description": "#### English This data is about the COVID-19 infection and death numbers for all the countries around the world. it is originally published and shared by Johns Hopkins Un…",
+      "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
       "author": "山田 花子",
       "team": null,
-      "updated_at": "2026-11-14T15:13:52.790Z",
-      "refreshed_at": "2026-11-14T15:13:53.053Z",
+      "updated_at": "2026-11-12T09:26:51.086Z",
+      "refreshed_at": "2026-11-12T08:12:13.528Z",
       "tags": [
-        "covid19",
-        "covid-19"
+        "sales",
+        "orders"
       ],
-      "publication_version": "2021-04-08T00:30:28.931Z",
-      "data_as_of": "2026-11-14T15:13:53.053Z",
+      "publication_version": "2026-11-12T09:26:51.086Z",
+      "data_as_of": "2026-11-12T08:12:13.528Z",
       "columns": [
         {
-          "name": "Country/Region",
+          "name": "order_id",
           "type": "character",
-          "description": "国/地域",
+          "description": "",
           "missing_count": 0
         },
         {
-          "name": "Date",
+          "name": "order_date",
           "type": "Date",
-          "description": "日付",
+          "description": "",
           "missing_count": 0
         }
       ],
-      "column_count": 5,
-      "row_count": 229743
+      "column_count": 14,
+      "row_count": 23131
     }
   ],
   "has_more": true,
@@ -759,7 +761,7 @@ expl server dataset query [<dataset_id>] [flags]
 | --- | --- | --- | --- |
 | `--dataset-id` | 文字列 | queries か datasets を使うとき以外は必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、--dataset-id で渡します。 |
 | `--mode` | 文字列 | queries を使うとき以外は必須 | rows: 条件に合う行を取得します。aggregate: dimensions でグループに分けて、metrics を計算します。 値: `rows`, `aggregate` |
-| `--columns` | JSON |  | rows だけで使います。返す列の名前を、1〜50 個、重ならないように指定します。結合するときは alias と column で書きます。 |
+| `--columns` | JSON | rows モードでは必須（結合のときは省略可） | rows だけで使います。返す列の名前を、1〜50 個、重ならないように指定します。結合するときは alias と column で書きます。結合のときに省くと、全部の列が返ります。 |
 | `--filters` | JSON |  | 絞り込みの条件です。条件 1 つか、{ "and": \[...\] } か { "or": \[...\] }（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。結合するときは、結合のあとに適用されます。 |
 | `--dimensions` | JSON |  | aggregate だけで使います。グループに分ける列を、0〜5 個指定します。{ "column": "列の名前" } の形で書きます。保存されている値のまま分けるので、日付から月や年を取り出してグループ化する指定はありません。指定しないと、全体で 1 行になります。 |
 | `--metrics` | JSON | aggregate のときは必須 | aggregate だけで使い、必須です。計算を 1〜10 個指定します。function（count_rows、count、count_distinct、sum、avg、min、max）と、結果の名前になる alias を書きます。count_rows 以外は、column も指定します。 |
@@ -905,6 +907,7 @@ Sales Orders のデータ（id: hI6jK7lM8n）で実行した結果です。長�
 | 表示される内容 | 対処 |
 | --- | --- |
 | Each dimension must be an object like { "column": "region" }. (INVALID_QUERY) | dimensions は、{ "column": "列の名前" } の形のオブジェクトの配列にします。 |
+| columns is required in rows mode. (INVALID_QUERY) | rows モードでは、返す列を --columns で指定します。 |
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | metrics では、function と alias を指定します。count_rows 以外は column も指定します。 |
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias は必須です。英字、数字、_ だけで、数字で始めず、64 文字までにします。 |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | sort の項目では、出力の列の名前を field で指定します。column、by、alias、name、metric は使えません。 |
@@ -1020,6 +1023,83 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 
 関連: [expl server dataset query](#dataset-query)、[expl server dataframe preview](#dataframe-preview)
 
+<a id="dataframe-get-wrangling"></a>
+
+## expl server dataframe get-wrangling
+
+公開されたデータがどのように作られたかを調べます。データ加工のステップを順番に、読み込んだデータと結合したデータ、列ごとにどのステップが作ったか、変えたかを返します。
+
+<a id="dataframe-get-wrangling-usage"></a>
+
+### 書式
+
+```text
+expl server dataframe get-wrangling <id> [flags]
+```
+
+\[ \] は省略できる指定、\< \> は自分の値に置き換える部分です。フラグは -- で始まる追加の指定です。
+
+<a id="dataframe-get-wrangling-flags"></a>
+
+### 引数とフラグ
+
+| 名前 | 型 | 条件 | 説明 |
+| --- | --- | --- | --- |
+| `--id` | 文字列 | 必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、--id で渡します。 |
+| `--steps` | 値の配列 |  | 詳しく返すステップの ref（概要に出る s3 など）です。1〜20 個で、重ならないように指定します。--column とは一緒に使えません。 |
+| `--column` | 文字列 |  | 最終的なデータのこの列を作ったステップ、変えたステップだけを、詳しく返します。列の名前は正確に書きます。--steps とは一緒に使えません。 |
+| `--include-scripts` | 有効 / 無効 | --steps か --column のときだけ | ステップの R のコードも返します。行の共有が許されているデータだけです。 |
+| `--cursor` | 文字列 | --steps、--column とは一緒に使えません | 1 回の結果に収まらなかった概要の続きを取得するときに、前の結果の range.next_cursor を渡します。 |
+| `--language` | 文字列 |  | 説明と定義を読む言語です。指定しないと、データの元の言語になります。 値: `ja`, `en` |
+
+<a id="dataframe-get-wrangling-examples"></a>
+
+### 例
+
+#### 概要を見る
+
+**ターミナル**
+
+```sh
+expl server dataframe get-wrangling <id> --json
+```
+
+\<id\> は、データの id に置き換えます。
+
+#### 1 つの列を作ったステップを見る
+
+**ターミナル**
+
+```sh
+expl server dataframe get-wrangling <id> --column "order_date" --json
+```
+
+order_date は、最終的なデータの列の名前に置き換えます。
+
+<a id="dataframe-get-wrangling-output"></a>
+<a id="dataframe-get-wrangling-paging"></a>
+
+### 出力と上限
+
+--steps も --column も付けないと、結果は概要です。概要には、全体の説明、すべてのステップを順に 1 行ずつ（種類、ラベル、何をするか）、読み込んだデータと結合したデータ、列ごとにどのステップが作ったか、変えたかの索引が入ります。ステップを詳しく見るには（完全な説明、式、フィルターの条件や結合のキーなどの設定）、--steps（概要に出る ref）か --column を付けて、もう一度実行します。ref は、データの今のバージョンでだけ有効です。
+
+全体の説明は AI が書いたもので、人は確認していません。引用するときは、そのことを伝えてください。所有者が承認した加工の説明は、dataframe get-schema のセマンティクスで読みます。
+
+1 回の結果に収まらない概要は、--cursor で続きを取得します。ステップを読めないときは、結果にその理由が入ります。データを公開したときに記録されていなかった、所有者が共有していない、公開した人がデータの行を共有していない、のいずれかです。
+
+<a id="dataframe-get-wrangling-trouble"></a>
+
+### トラブルシューティング
+
+| 表示される内容 | 対処 |
+| --- | --- |
+| Use either steps or column, not both. (INVALID_PARAMETER) | --steps と --column は、どちらか一方だけを渡します。 |
+| include_scripts works only together with steps or column. (INVALID_PARAMETER) | --include-scripts を使うときは、--steps か --column も付けます。 |
+| cursor belongs to an older version of this data. Call again without cursor. (INVALID_PARAMETER) | データが公開し直されています。--cursor を付けずに、もう一度実行します。 |
+| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+
+関連: [expl server dataframe get-schema](#dataframe-get-schema)、[expl server dataset query](#dataset-query)
+
 <a id="chart-get-data"></a>
 
 ## expl server chart get-data
@@ -1043,7 +1123,7 @@ expl server chart get-data <id> [flags]
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
 | `--id` | 文字列 | 必須 | チャートを含むノート、ダッシュボード、スライドの id です。チャート単体で公開したものは、その id です。コマンドのすぐあとに書くか、--id で渡します。 |
-| `--chart` | 文字列 |  | ノート、ダッシュボード、スライドの中のチャートの名前です。fetch の結果の metadata.charts\[\].name にあります。 |
+| `--chart` | 文字列 | ノート、ダッシュボード、スライドの中のものを取るときは必須 | ノート、ダッシュボード、スライドの中のチャートの名前です。fetch の結果の metadata.charts\[\].name にあります。 |
 | `--offset` | 整数 |  | 読み飛ばす行数です。0 から数えます。 |
 | `--limit` | 整数 |  | 返す行数です。100 までです。 |
 
@@ -1204,7 +1284,7 @@ expl server chart get-image <id> [flags]
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
 | `--id` | 文字列 | 必須 | チャートを含むノート、ダッシュボード、スライドの id です。チャート単体で公開したものは、その id です。コマンドのすぐあとに書くか、--id で渡します。 |
-| `--chart` | 文字列 |  | ノート、ダッシュボード、スライドの中のチャートの名前です。fetch の結果の metadata.charts\[\].name にあります。 |
+| `--chart` | 文字列 | ノート、ダッシュボード、スライドの中のものを取るときは必須 | ノート、ダッシュボード、スライドの中のチャートの名前です。fetch の結果の metadata.charts\[\].name にあります。 |
 
 <a id="chart-get-image-examples"></a>
 
@@ -1333,7 +1413,7 @@ expl server analytics get-result <id> [flags]
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
 | `--id` | 文字列 | 必須 | アナリティクスを含むノート、ダッシュボード、スライドの id です。アナリティクス単体で公開したものは、その id です。コマンドのすぐあとに書くか、--id で渡します。 |
-| `--analytics` | 文字列 |  | ノート、ダッシュボード、スライドの中のアナリティクスの名前です。fetch の結果の metadata.blocks\[\].name にあります。 |
+| `--analytics` | 文字列 | ノート、ダッシュボード、スライドの中のものを取るときは必須 | ノート、ダッシュボード、スライドの中のアナリティクスの名前です。fetch の結果の metadata.blocks\[\].name にあります。 |
 | `--tables` | 値の配列 |  | 返す表の id のリストです（available_tables\[\].id）。指定しないと、分析の答えになる表を返します。 |
 | `--limit` | 整数 |  | 表ごとの行数の上限です。100 までです。 |
 
@@ -1351,7 +1431,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 
 \<id\> はノートなどの id、\<analytics\> は fetch の結果にあるアナリティクスの名前に置き換えます。
 
-実行結果は、単独で公開されているアナリティクス Analytics 1 - Correlations（id が Analytics-1-Correlations-aB1cD2eF）で実行したものです。単独で公開されているため、--analytics は指定していません。長い出力は省略しています。
+実行結果は、単独で公開されているアナリティクス Analytics 1 - Correlations（id が Analytics-1-Correlations-aB1cD2eF）で実行したものです。単独で公開されているため、--analytics は指定していません。長い出力は省略しています。この例では、説明文は空にしています。
 
 **実行結果**
 
@@ -1474,13 +1554,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
       },
       "filters": []
     },
-    "texts": [
-      {
-        "source": "generated",
-        "kind": "explanation",
-        "text": "\n\n# サマリ\n\n選択された変数を対象に相関分析を行いました。\n\n## 分析条件とデータの確認\n\n_[chart omitted]_\n\n相関係数は[設定](//analytics/settings/do_cor_argo)より変更できます。\n\n# 相関の強さ\n\n全ての変数の組み合わせの相関係数を計算し、それらを以下のヒートマップと呼ばれる…"
-      }
-    ],
+    "texts": [],
     "unsupported": [],
     "context": {
       "publication_version": "2025-06-05T12:17:37.781Z",
@@ -1550,8 +1624,8 @@ expl server chart query [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--id` | 文字列 |  | チャートを含むノート、ダッシュボード、スライドの id です。検索結果や fetch の結果に出ます。 |
-| `--chart` | 文字列 |  | チャートの名前です。fetch の結果の metadata.charts\[\].name にあります（英数字、_、-）。 |
+| `--id` | 文字列 | queries を使わないときは必須 | チャートを含むノート、ダッシュボード、スライドの id です。検索結果や fetch の結果に出ます。 |
+| `--chart` | 文字列 | queries を使わないときは必須 | チャートの名前です。fetch の結果の metadata.charts\[\].name にあります（英数字、_、-）。 |
 | `--mode` | 文字列 | queries を使うとき以外は必須 | rows: 条件に合う行を取得します。aggregate: dimensions でグループに分けて、metrics を計算します。 値: `rows`, `aggregate` |
 | `--columns` | 値の配列 |  | rows だけで使います。返す列の名前を、1〜50 個、重ならないように指定します。 |
 | `--filters` | JSON |  | 絞り込みの条件です。条件 1 つか、{ "and": \[...\] } か { "or": \[...\] }（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |

@@ -54,4 +54,4 @@ The ids of the dashboards you created are saved in created.txt.
 while read id; do expl dashboard publish "$id" --yes; done < created.txt
 ```
 
-Desktop must have finished rendering. If you see No rendered output, wait a little or open it with expl note open \<id\>, then run it again.
+Desktop must have finished rendering. If you see No rendered output, open the dashboard once in Exploratory Desktop so that it renders, then run it again.

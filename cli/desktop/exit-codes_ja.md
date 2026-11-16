@@ -9,7 +9,7 @@ expl は、終わるときに終了コードを返します。スクリプトや
 | コード | 意味 |
 | --- | --- |
 | 0 | 成功 |
-| 1 | 操作が失敗した。Desktop では、確認を断ったときとタイムアウトも含みます。 |
+| 1 | 操作が失敗した。Desktop では、確認を断ったとき、タイムアウト、2 分以内に承認の答えが無かったとき（PAIRING_PENDING）も含みます。 |
 | 2 | 使い方が正しくない。生成されたコマンドの未知のフラグ、読めない JSON、ターミナル以外での --yes 忘れなどです。 |
 | 3 | Desktop または Server に接続できない。Server では、ネットワークや HTML のエラーページなどです。 |
 | 4 | 認証、承認、権限のエラー。Desktop では、サインインしていない、接続が承認されていない、CLI がオフ、操作が許可されていない、のいずれかです。Server では、サインインしていない、またはトークンや API キーが拒否されたとき（間違い、期限切れ、取り消し、管理者による制限）です。 |
@@ -32,9 +32,9 @@ expl は、終わるときに終了コードを返します。スクリプトや
 | --- | --- |
 | NOT_LOGGED_IN | Server のみ。expl server login を実行します。 |
 | NOT_SIGNED_IN | Exploratory Desktop にサインインします。 |
-| UNAUTHORIZED | もう一度実行します。Exploratory Desktop が接続の承認を求めます。[Desktop のはじめる](quickstart_ja.md)のページを参照してください。 |
+| UNAUTHORIZED | Desktop の場合: もう一度実行します。Exploratory Desktop が接続の承認を求めます。[Desktop のはじめる](quickstart_ja.md)のページを参照してください。Server の場合: API キーが拒否されました（間違い・期限切れ・取り消し）。アカウント設定 \> API キーで新しいキーを作り、EXPL_SERVER_TOKEN に設定するか、expl server login --with-token を実行します。 |
 | PAIRING_REQUIRED | Exploratory Desktop の承認の画面で、この接続が断られました（短い時間に要求が多すぎたときも、このコードになります）。断ってから 5 分間は、もう一度実行しても画面は出ずに断られます。5 分たってからもう一度実行し、画面で許可します。 |
-| CHANNEL_DISABLED | システム設定 > MCP / CLI で「CLI を有効にする」をオンにして、「保存」を選びます。 |
-| PERMISSION_DENIED | この接続では、その操作は許可されていません。作成、変更、削除の操作なら、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンになっているかを確認します。 |
+| CHANNEL_DISABLED | システム設定 > MCP / CLI で、「CLI」のカードのスイッチをオンにして「保存」を選びます。 |
+| PERMISSION_DENIED | Desktop の場合: この接続では、その操作は許可されていません。作成、変更、削除の操作なら、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンになっているかを確認します。Server の場合: 管理者が API キーを無効にしているか、接続元の IP アドレスを制限しています。管理者に確認するか、expl server login でサインインします。 |
 
 - [トラブルシューティング](troubleshooting_ja.md) - 症状から対処を探します。
