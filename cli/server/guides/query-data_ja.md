@@ -1,6 +1,6 @@
 # データを集計する
 
-パブリッシュされたデータの列を確認し、サーバーで絞り込み、集計します。
+公開されたデータの列を確認し、サーバーで絞り込み、集計します。
 
 <a id="pick"></a>
 
@@ -108,9 +108,7 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 - rows は最大 1,000 行、aggregate は最大 500 行です。続きを取得する指定はありません。結果の has_more が true なら、絞り込むか、集計します。
 - 結果には、データのバージョンと更新時刻が含まれます。数値を人に伝えるときは、いつのデータで計算したかも伝えます。
 
-結果が大きすぎる場合は、dataframe export で CSV または Parquet のファイルにします。複数のデータを結合する方法は、dataset query のページを参照してください。
-
-- [dataset query](../commands_ja.md#dataset-query) - すべてのフラグを説明しています。
+結果が大きすぎる場合は、dataframe export で CSV または Parquet のファイルにします。複数のデータを結合する方法は、[dataset query](../commands_ja.md#dataset-query) のページを参照してください。
 
 <a id="json"></a>
 

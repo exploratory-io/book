@@ -39,10 +39,10 @@ Claude のアプリ（デスクトップ・Web）で、すでに Exploratory を
 1. 新しいセッションで、次のように送信します。
 
    ```text
-   Exploratory にある「Sales Orders」のデータを探して
+   接続した Exploratory Server で、閲覧できるコンテンツを最大 3 件、URL 付きで一覧して。見つからなければ、その旨を教えて。
    ```
 
-Sales Orders のデータが URL 付きで表示されていれば、接続できています。
+コンテンツが URL 付きで表示されていれば、接続できています。結果が 0 件でも、認証や接続に失敗したとは限りません。
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 
@@ -86,15 +86,29 @@ Exploratory への接続が複数あるとき（たとえば exploratory-server 
 
 ## API キーで接続する
 
-ブラウザを開けない環境では、ブラウザでのサインインの代わりに、API キーでサーバーを登録します。キーは、アカウント設定 \> API キーで作ります。
+ブラウザを開けない環境では、ブラウザでのサインインの代わりに、API キーでサーバーを登録します。キーは、アカウント設定 \> API キーで作ります。キーは秘密情報の管理の仕組みから EXPLORATORY_API_KEY に設定します。シェルの設定ファイルではなく、OS の資格情報の保管庫や CI のシークレットなどを使います。キーそのものをコマンドラインや設定ファイルに書かないでください。以下は、この環境変数が設定済みであることを前提にします。
 
-```sh
-claude mcp add --transport http exploratory-server https://exploratory.io/mcp --header "Authorization: Bearer exp_pat_..."
+プロジェクトの .mcp.json にヘッダーを書くと、Claude Code が環境変数からキーを読みます。
+
+```json
+{
+  "mcpServers": {
+    "exploratory-server": {
+      "type": "http",
+      "url": "https://exploratory.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${EXPLORATORY_API_KEY}"
+      }
+    }
+  }
+}
 ```
 
-exp_pat_... は、作成したキーに置き換えます。キーがシェルの履歴に残ります。上の OAuth でのサインインか、この方法か、どちらか一方だけを使います。
+コマンドラインに鍵をそのまま打ったり、設定ファイルにそのまま書いたりすると、シェルの履歴やファイルに残ります。上のように、環境変数から読みます。
 
-- [API キーで接続する](../overview_ja.md#apikey) - キーで読めるものと、返ってくるエラーです。
+上の OAuth でのサインインか、この方法か、どちらか一方だけを使います。
+
+- [API キーで接続する](../auth_ja.md#apikey) - キーで読めるものと、返ってくるエラーです。
 
 <a id="trouble"></a>
 
@@ -103,13 +117,15 @@ exp_pat_... は、作成したキーに置き換えます。キーがシェル�
 | 表示される内容 | 対処 |
 | --- | --- |
 | サインインを求められる | /mcp を開いて、もう一度サインインします。 |
-| 同じツールが 2 組表示される | インストール方法は 1 つだけにします（公式のプラグイン、URL の直接追加、claude.ai のコネクタのいずれか）。あとから公式の一覧でインストールする場合は、先に直接追加した分を claude mcp remove exploratory-server で削除します。 |
+| 同じ道具が 2 組表示される | インストール方法は 1 つだけにします（公式のプラグイン、URL の直接追加、claude.ai のコネクタのいずれか）。あとから公式の一覧でインストールする場合は、先に直接追加した分を claude mcp remove exploratory-server で削除します。 |
 
 - [トラブルシューティング](../troubleshooting_ja.md) - MCP Server 全体の、症状ごとの対処です。
 
 <a id="remove"></a>
 
 ## 接続を解除する
+
+コマンドで直接登録した接続は、以下の手順で削除します。Claude アプリから引き継がれたコネクタは、[Claude アプリのページ](claude_ja.md#remove)の「接続を解除する」を参照してください。
 
 ```sh
 claude mcp remove exploratory-server

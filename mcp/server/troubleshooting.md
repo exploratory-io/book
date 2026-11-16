@@ -2,6 +2,24 @@
 
 Find a fix by symptom.
 
+<a id="check"></a>
+
+## Check the state first
+
+Check that the connection works with the steps in step 3 of [Get started](get-started.md#steps). If it does not, find your symptom below.
+
+<a id="contact"></a>
+
+## When you contact support
+
+Send these to support@exploratory.io: the server URL you connect to, the name and version of your AI client, what you did, and the error message as it was shown. Hide any token or API key.
+
+<a id="network"></a>
+
+## When it does not connect on a company network
+
+Ask your IT staff to allow communication to exploratory.io. For an on-premises server, ask them to allow the URL of your own server.
+
 <a id="signin"></a>
 
 ## You are asked to sign in
@@ -19,7 +37,7 @@ A request without a valid token gets HTTP 401. Sign in again as follows.
 | Grok Bot | Remove the connection and add it again |
 | Antigravity | Go through the sign-in steps on the client page again |
 
-- [Add from an app](clients/apps.md) - Steps for each client.
+- [Add from an AI tool](clients/apps.md) - Steps for each client.
 
 <a id="apikey"></a>
 
@@ -34,7 +52,7 @@ A key that fails gets the reason in the response, and the client does not fall b
 | 403 | This IP address is not allowed for API keys. | Your administrator allows API keys only from certain IP addresses. Connect from an allowed address. |
 | 429 | Too many failed API key attempts. Try again later. | More than 30 refused keys came from one address within 15 minutes (counted per IPv4 address, or per IPv6 /64 range). Fix the key and try again later. |
 
-- [Connect with an API key](overview.md#apikey) - The header, and what a key can read.
+- [Connect with an API key](auth.md#apikey) - The header, and what a key can read.
 
 <a id="duplicate"></a>
 
@@ -42,7 +60,7 @@ A key that fails gets the reason in the response, and the client does not fall b
 
 Use one way only: the official plugin, the direct URL, or the Exploratory connector on claude.ai (it also appears in Claude Code when you sign in with the same Claude account).
 
-If you later install the plugin from the official directory, remove the direct entry first. In Claude Code, use the command below. Otherwise the same tools appear twice.
+If your app's official directory lists Exploratory Server and you install it from there, remove the direct entry first. Otherwise, keep the manual registration. `exploratory@exploratory` is the Desktop plugin, not Server. In Claude Code, use the command below to remove the direct entry. Replace `exploratory-server` with the name you registered. The chat-based setup example uses `Exploratory`. If you do not remove it, the same tools appear twice.
 
 ```sh
 claude mcp remove exploratory-server
@@ -55,9 +73,9 @@ claude mcp remove exploratory-server
 | What you see | What to do |
 | --- | --- |
 | Nothing is listed | Check that the account you signed in with is the one that published the content. Server MCP runs as the signed-in user, so only what that user can view is visible. |
-| You want only your own content | When you ask for "my" content, the AI calls search with scope: "mine". |
-| NOT_FOUND | The content does not exist or you cannot view it. |
-| CHANNEL_DISABLED | The publisher turned off MCP access for this content. |
+| You want only your own content | Ask the AI for "my" content. |
+| NOT_FOUND | The content does not exist or you cannot view it. Open its URL in your browser and check whether the same account can view it. If not, ask the owner to check the sharing settings. |
+| CHANNEL_DISABLED | The publisher turned off MCP access for this content. Ask the publisher to check the MCP access setting of the content. |
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
 
 <a id="rate"></a>

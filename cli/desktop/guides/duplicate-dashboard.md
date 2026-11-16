@@ -1,10 +1,10 @@
-# Duplicate a dashboard
+# Create and duplicate dashboards
 
 Duplicate a dashboard with a different title. jq (a command that processes JSON) reshapes the definition you get into the shape that create takes.
 
 <a id="steps"></a>
 
-## Four steps
+## Three steps
 
 ### 1. Get the original dashboard
 
@@ -46,10 +46,12 @@ done
 
 The ids of the dashboards you created are saved in created.txt.
 
-### 4. Publish them
+<a id="publish"></a>
+
+## When you publish the copies
 
 ```sh
 while read id; do expl dashboard publish "$id" --yes; done < created.txt
 ```
 
-Desktop must have finished rendering. If you see No rendered output, wait a little or open it with expl note open \<id\>, then run it again.
+Desktop must have finished rendering. If you see No rendered output, open the dashboard once in Exploratory Desktop so that it renders, then run it again.

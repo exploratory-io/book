@@ -12,9 +12,21 @@ Standard output carries the result. Progress, warnings, the confirmation and err
 
 ## Readable form and JSON
 
-The default is a form for people. With --json, the result is printed as one JSON.
+The default is a form for people. With --json, the result is printed as one JSON. expl project use, expl skill and expl completion are exceptions: they always print text.
 
-On a failure, --json prints { "success": false, "error_code": ..., "message": ... } on standard output. Warnings still go to standard error, one per line, even with --json.
+On a failure, --json prints an error like the one below on standard output. The message differs by error, and details and suggested_actions are filled in when there is something to add. Warnings still go to standard error, one per line, even with --json.
+
+```json
+{
+  "success": false,
+  "error_code": "USAGE",
+  "message": "Invalid value for --timeout.",
+  "details": null,
+  "suggested_actions": []
+}
+```
+
+The JSON outputs shown in these pages are often excerpts: lines that do not matter for the example are left out, so they are not complete JSON.
 
 ```sh
 expl dashboard get d123 --json
@@ -24,7 +36,7 @@ expl dashboard get d123 --json
 
 ## Language
 
-The text expl writes itself follows the language of Desktop. Switch it with expl lang ja or expl lang en. Without a language, it shows the current language (for example expl lang --project \<id\>). When it cannot decide the target project (none of --project, EXPL_PROJECT, a default project or an open project is available), it exits with code 2.
+The text expl writes itself follows the language of Desktop. Switch it with expl lang ja or expl lang en. This changes the display language of Desktop itself as well. Run expl status first to check that Desktop is connected. Without a language, it shows the current language (for example expl lang --project \<id\>). When it cannot decide the target project (none of --project, EXPL_PROJECT, a default project or an open project is available), it exits with code 2.
 
 ```sh
 expl lang ja

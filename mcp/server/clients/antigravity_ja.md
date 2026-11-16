@@ -29,7 +29,7 @@
 リモートのサーバーは、「serverUrl」に URL を書きます。
 
 1. mcp_config.json を開きます。
-2. 次の内容を書き足します。
+2. 次の `exploratory-server` の項目を追加します。ファイルにすでに `mcpServers` がある場合は、その中に `exploratory-server` の項目だけを追加し、ほかのサーバーの設定は残します。以下は、新しいファイルを作る場合の全体の例です。
 
    ```text
    {
@@ -85,6 +85,8 @@ agy では、agy に戻って、次の操作をします。
 Exploratory にある「Sales Orders」のデータを探して。exploratory.io の公開データを対象に、先ほど追加した Exploratory という名前の MCP サーバーを使って。
 ```
 
+Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。
+
 「exploratory.io の公開データを対象に」と接続名を添えると、Desktop ではなく Server が使われます。接続名は、登録した名前に置き換えます（この画像では「Exploratory」）。
 
 送信したあと、結果を確かめます。
@@ -99,7 +101,7 @@ Sales Orders のデータが URL つきで表示されれば、接続できて�
 
 ## プラグインでインストールした場合の確かめ方
 
-Exploratory のプラグインをインストールしたときは、「Customizations」の「Plugins」で「Exploratory」を開くと、接続の状態を確かめられます。
+Exploratory のプラグインをインストールしたときは、「Customizations」の「Plugins」で「Exploratory」を開くと、接続の状態を確かめられます。`exploratory@exploratory` は Desktop 用のプラグインで、Server ではありません。
 
 次の 2 つの画面で確かめられます。
 
@@ -117,7 +119,7 @@ exploratory-server が「OAUTH」「CONNECTED」と表示されていれば、�
 
 ![「Exploratory」の詳細画面の「MCP」のタブ（英語の画面）](images/ja/antigravity-02-mcp-plugin.png)
 
-exploratory-server と、使えるツールの数（例: 「10 tools enabled」）が表示されます。
+exploratory-server と、使える道具の数（例: 「10 tools enabled」）が表示されます。
 
 <a id="trouble"></a>
 
@@ -126,7 +128,7 @@ exploratory-server と、使えるツールの数（例: 「10 tools enabled」�
 | 表示される内容 | 対処 |
 | --- | --- |
 | サインインを求められる | 上のサインインの手順を、もう一度行います。 |
-| Desktop のプラグインをインストールしたが、Server のツールが表示されない | Desktop のプラグイン exploratory は、Server とは別です。上の設定で、Server を登録します。 |
+| Desktop のプラグインをインストールしたが、Server の道具が表示されない | Desktop のプラグイン exploratory は、Server とは別です。上の設定で、Server を登録します。 |
 
 - [トラブルシューティング](../troubleshooting_ja.md) - MCP Server 全体の、症状ごとの対処です。
 
@@ -134,6 +136,6 @@ exploratory-server と、使えるツールの数（例: 「10 tools enabled」�
 
 ## 接続を解除する
 
-アプリでは、exploratory-server の横の「More actions」（⋮）を選び、「Delete」を選びます。一時的に止めるだけなら、「Disable」を選びます。mcp_config.json に追加した exploratory-server の部分を削除しても、解除できます。
+以下は、mcp_config.json に直接登録した場合の手順です。アプリでは、exploratory-server の横の「More actions」（⋮）を選び、「Delete」を選びます。一時的に止めるだけなら、「Disable」を選びます。mcp_config.json に追加した exploratory-server の部分を削除しても、解除できます。
 
 登録を解除しても、アクセスの許可は残ります。許可も取り消すには、exploratory.io のアカウント設定の「接続中のAIアプリ」から、クライアントを解除します。

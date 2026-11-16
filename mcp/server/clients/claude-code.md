@@ -3,7 +3,7 @@
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Claude Code and sign in through your browser.
 It takes about 3 minutes. You need an Exploratory account and Claude Code.
 
-If you already added Exploratory as a connector in the [Claude app (desktop and web)](claude.md), you do not need to add it again here. Claude Code signed in with the same claude.ai account shows it automatically as "claude.ai Exploratory", and you can use it as is. In Claude Code, open `/mcp` to check.
+If you already added Exploratory as a connector in the [Claude app](claude.md), you do not need to add it again here. Claude Code signed in with the same claude.ai account shows it automatically as "claude.ai Exploratory", and you can use it as is. In Claude Code, open `/mcp` to check.
 
 ![The /mcp list in Claude Code, with claude.ai Exploratory](images/en/claude-code-claudeai-connector.png)
 
@@ -39,10 +39,10 @@ This registers only the server, without the plugin or skill.
 1. In the new session, send this.
 
    ```text
-   Find the "Sales Orders" data on Exploratory.
+   Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If the Sales Orders data appears with its URL, the connection works.
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
@@ -88,15 +88,29 @@ If you have more than one Exploratory connection (for example exploratory-server
 
 ## Connect with an API key
 
-If your environment cannot open a browser, register the server with an API key instead of signing in through the browser. Create the key in Account Settings \> API Keys.
+If your environment cannot open a browser, register the server with an API key instead of signing in through the browser. Create the key in Account Settings \> API Keys. Set it in EXPLORATORY_API_KEY through your environment's secret-management facility, such as your operating system's credential store or the secrets of your CI, not through your shell's startup file. Do not write the key itself on the command line or in a configuration file. The steps below assume that this environment variable is already set.
 
-```sh
-claude mcp add --transport http exploratory-server https://exploratory.io/mcp --header "Authorization: Bearer exp_pat_..."
+Write the header in .mcp.json (in your project) so that Claude Code reads the key from the environment variable.
+
+```json
+{
+  "mcpServers": {
+    "exploratory-server": {
+      "type": "http",
+      "url": "https://exploratory.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${EXPLORATORY_API_KEY}"
+      }
+    }
+  }
+}
 ```
 
-Replace exp_pat_... with your key. This leaves the key in your shell history. Use one way only: the OAuth sign-in above or this one.
+If you type the key on a command line or write it in a settings file as it is, it stays in your shell history or in that file. Read it from an environment variable as above.
 
-- [Connect with an API key](../overview.md#apikey) - What a key can read and the errors it can return.
+Use one way only: the OAuth sign-in above or this one.
+
+- [Connect with an API key](../auth.md#apikey) - What a key can read and the errors it can return.
 
 <a id="trouble"></a>
 
@@ -112,6 +126,8 @@ Replace exp_pat_... with your key. This leaves the key in your shell history. Us
 <a id="remove"></a>
 
 ## Disconnect
+
+Use the steps below for a connection registered directly by command. For a connector inherited from the Claude app, follow "Disconnect" on the [Claude app page](claude.md#remove).
 
 ```sh
 claude mcp remove exploratory-server

@@ -4,9 +4,7 @@ Save the result of a filter or aggregation on a data item as a CSV or Parquet fi
 
 <a id="steps"></a>
 
-## Two steps
-
-### 1. Save to a file
+## Save to a file
 
 dataframe export filters and aggregates with the same inputs as dataset query and saves the result as a file. Use it when the result is too large for dataset query.
 
@@ -14,7 +12,7 @@ dataframe export filters and aggregates with the same inputs as dataset query an
 expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 ```
 
-Replace \<dataset_id\> with the id of a data item. The result below was run on the data Sales Orders (id hI6jK7lM8n). The download_url line (the download link) is trimmed.
+Replace \<dataset_id\> with the id of a data item. The result below was run on the data Sales Orders (id hI6jK7lM8n). The download_url line (the download link) is trimmed, so the JSON below is an excerpt, not a complete JSON.
 
 **Result**
 
@@ -48,9 +46,19 @@ Replace \<dataset_id\> with the id of a data item. The result below was run on t
 
 The download link expires in 15 minutes and works only for the same signed-in user. Choose the format with --format. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Use --output to choose where to save the file.
 
-> If result shows rows and expires_at, the file is saved.
+The example above creates the file on the server and returns a download link. Nothing is saved on your computer. To save it on your computer, add --output:
 
-### 2. When downloading is not allowed
+```sh
+expl server dataframe export <dataset_id> --mode rows --limit 5 --output rows.csv --json
+```
+
+When the file is saved, the result shows saved (the path) and bytes.
+
+> If result shows rows and expires_at, the file is saved on the server. If saved and bytes are shown, it is saved on your computer too.
+
+<a id="egress"></a>
+
+## When downloading is not allowed
 
 For data whose publisher does not allow downloading it as a file, dataframe export fails with DATA_EGRESS_LIMIT.
 
@@ -79,6 +87,8 @@ The result below was run on the data with the id US-Home-Sales-1963-2016-gH3iJ4k
 
 In this case, use fetch or dataframe get-schema for what the publisher shares, or open the URL in the browser.
 
+A message can name a tool, such as dataframe_get_schema. Run expl server tools describe \<tool_name\> to see the command for that tool.
+
 > If error_code is DATA_EGRESS_LIMIT, this data cannot be saved as a file.
 
 <a id="trouble"></a>
@@ -91,5 +101,4 @@ In this case, use fetch or dataframe get-schema for what the publisher shares, o
 | SERVER_BUSY | Another export of yours is running, or you reached the hourly export limit. One export can run at a time per user. Try again in a few seconds; for the hourly limit, wait up to an hour. |
 | Run "expl server login". | Sign-in is missing, or the saved login or API key was rejected. Run expl server login. |
 
-- [dataframe export](../commands.md#dataframe-export) - Describes every flag.
-- [dataset query](../commands.md#dataset-query) - Describes how to filter and aggregate.
+Every flag is described in [dataframe export](../commands.md#dataframe-export), and how to filter and aggregate in [dataset query](../commands.md#dataset-query).

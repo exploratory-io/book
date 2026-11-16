@@ -8,11 +8,16 @@ expl は Exploratory Desktop に同梱されています。別途インストー
 
 Exploratory Desktop の CLI は、初期状態ではオフです。expl をインストールしていても、オンにするまで、Desktop は expl のコマンドを受け付けません。
 
-1. Exploratory Desktop で、システム設定を開きます。
-2. 左のメニューで、MCP / CLI を選びます。
-3. CLI の項目で、「CLI を有効にする」をオンにします。
-4. expl でコンテンツの作成、変更、削除もしたいときだけ、「作成、変更、削除を許可する」にもチェックを入れます。
-5. 画面の下の「保存」を選びます。
+1. Exploratory Desktop で、画面の左下にある自分の名前を選び、開いたメニューで「システム設定」を選びます（画面の画像 1 の ① と ②）。
+
+![Exploratory Desktop の左下の自分の名前を選ぶと開くメニュー。①が自分の名前、②が「システム設定」](images/ja/open-system-settings.png)
+
+2. システム設定の左のメニューで、MCP / CLI を選びます（画面の画像 2 の ①）。
+3. 「CLI」のカードのスイッチをオンにします（画面の画像 2 の ②）。
+4. expl でコンテンツの作成、変更、削除もしたいときだけ、「作成、変更、削除を許可する」にもチェックを入れます（画面の画像 2 の ③）。
+5. 画面の下の「保存」を選びます（画面の画像 2 の ④）。
+
+![システム設定の「MCP / CLI」。①左のメニューの「MCP / CLI」、②「CLI」のカードのスイッチ、③「作成、変更、削除を許可する」のチェック、④「保存」](images/ja/cli-settings.png)
 
 <a id="bundled"></a>
 
@@ -49,8 +54,6 @@ npm でインストールした expl と Desktop の expl の両方がある場�
 
 ### macOS と Linux
 
-**macOS と Linux**
-
 ```sh
 which -a expl
 ```
@@ -59,11 +62,17 @@ which -a expl
 
 ### Windows
 
-**Windows**
-
 ```sh
 where expl
 ```
+
+<a id="update"></a>
+
+## 更新する
+
+Desktop に同梱されている expl は、Exploratory Desktop を更新すると更新されます。バージョンは expl --version で確認できます。npm でインストールした expl の更新は、[更新する](../server/install_ja.md#update)を参照してください。
+
+バージョンごとの変更点は、[リリースノート](../../release-notes_ja.md)で確認できます。
 
 <a id="remove"></a>
 
@@ -71,7 +80,7 @@ where expl
 
 | OS | アンインストール方法 |
 | --- | --- |
-| macOS | rm /usr/local/bin/expl /usr/local/bin/exploratory /usr/local/bin/exploratory-mcp（管理者の権限が必要な場合は sudo を付けます）。許可を断った場合は、~/.local/bin にある同じ 3 つの名前を削除します。アプリを /Applications に置いたままにすると、次回の起動時に再び追加されます。 |
+| macOS | /usr/local/bin/expl、/usr/local/bin/exploratory、/usr/local/bin/exploratory-mcp を ls -l で確認し、Exploratory が追加したものだけを削除します（rm \<パス\>。管理者の権限が必要な場合は sudo を付けます）。ほかの場所から入った同名のコマンド（npm でインストールしたものなど）は、削除しません。許可を断った場合は、~/.local/bin にある同じ名前を確認して削除します。アプリを /Applications に置いたままにすると、次回の起動時に再び追加されます。 |
 | Windows | 「システム環境変数の編集」を開き、ユーザー環境変数の Path から \<インストール先\>\\cli を削除します。次回の起動時に再び追加されます。 |
 
-- [はじめる](quickstart_ja.md) - Desktop につなぎ、最初のコマンドを実行します。
+Desktop につなぎ、最初のコマンドを実行する手順は、[はじめる](get-started_ja.md#steps)を参照してください。

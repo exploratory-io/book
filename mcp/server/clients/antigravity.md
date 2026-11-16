@@ -29,7 +29,7 @@ Check that Installed is selected at the top of the screen, then do this.
 A remote server takes its URL in "serverUrl".
 
 1. Open mcp_config.json.
-2. Add the following.
+2. Add the `exploratory-server` entry below. If `mcpServers` already exists in the file, add only the `exploratory-server` entry inside it and keep the other server settings. The example shows a complete new file.
 
    ```text
    {
@@ -85,6 +85,8 @@ In a new chat, send this.
 Find the "Sales Orders" data on Exploratory. Please respond in English.
 ```
 
+Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed.
+
 After you send it, check the result.
 
 1. Check the Sales Orders link in the reply.
@@ -97,7 +99,7 @@ If the Sales Orders data appears with its URL, the connection works.
 
 ## Check the connection when you installed the plugin
 
-If you installed the Exploratory plugin, open Exploratory under Plugins in Customizations to check the connection.
+If you installed the Exploratory plugin, open Exploratory under Plugins in Customizations to check the connection. `exploratory@exploratory` is the Desktop plugin, not Server.
 
 You can check it on these two screens.
 
@@ -132,6 +134,6 @@ The tab shows exploratory-server and the number of tools it provides (for exampl
 
 ## Disconnect
 
-In the app, select More actions (⋮) next to exploratory-server and choose Delete. To pause it only, choose Disable. You can also disconnect by deleting the exploratory-server entry you added to mcp_config.json.
+These steps are for the server you registered in mcp_config.json above. In the app, select More actions (⋮) next to exploratory-server and choose Delete. To pause it only, choose Disable. You can also disconnect by deleting the exploratory-server entry you added to mcp_config.json.
 
 Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in your account settings on exploratory.io.

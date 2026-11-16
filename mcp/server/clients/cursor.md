@@ -17,10 +17,10 @@ It takes about 5 minutes. You need an Exploratory account and Cursor.
 
 ### Register in mcp.json
 
-Exploratory Server is not in the official plugin directory. Add only the server by hand, without the skill.
+If your app's official directory lists Exploratory Server, follow its installation instructions. Otherwise, add only the server by hand, without the skill, as follows. `exploratory@exploratory` is for Desktop.
 
 1. Open ~/.cursor/mcp.json (or .cursor/mcp.json in a project).
-2. Add this.
+2. Add the `exploratory-server` entry below. If `mcpServers` already exists in the file, add only the `exploratory-server` entry inside it and keep the other server settings. The example shows a complete new file.
 
    ```text
    {
@@ -76,6 +76,8 @@ Next, in a new chat, send this.
 Find the "Sales Orders" data on Exploratory. Please respond in English.
 ```
 
+Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed.
+
 After you send it, check the result.
 
 1. Check the Sales Orders link in the search result.
@@ -85,6 +87,28 @@ After you send it, check the result.
 If the Sales Orders data appears with its URL, the connection works.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
+
+<a id="apikey"></a>
+
+## Connect with an API key
+
+If your environment cannot open a browser, use an API key instead of the sign-in. Create the key in Account Settings \> API Keys, and put it in an environment variable named EXPLORATORY_API_KEY before you start Cursor. Then refer to it in mcp.json.
+
+```text
+{
+  "mcpServers": {
+    "exploratory-server": {
+      "type": "http",
+      "url": "https://exploratory.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:EXPLORATORY_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+If you write the key in mcp.json as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../auth.md#apikey) for what a key can read.
 
 <a id="trouble"></a>
 

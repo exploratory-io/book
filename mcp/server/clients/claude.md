@@ -1,7 +1,7 @@
-# Connect the Claude app (desktop and web)
+# Connect the Claude app
 
 Add the Exploratory server to Claude as a custom connector. A connector is a link that lets Claude use the data and features of an outside service. After you connect, you can read notes and data published on Exploratory from a Claude chat.
-It takes about 5 minutes. You need an Exploratory account and the Claude desktop app or the web version (claude.ai).
+It takes about 5 minutes. You need an Exploratory account and the Claude desktop app or the web (claude.ai).
 
 The connector screens are the same in the Claude desktop app and on the web.
 
@@ -10,7 +10,7 @@ The connector screens are the same in the Claude desktop app and on the web.
 ## Requirements
 
 - An Exploratory account
-- The Claude desktop app, or the web version (claude.ai)
+- The Claude desktop app, or the web (claude.ai)
 
 You do not need an API key or a client ID.
 
@@ -72,10 +72,10 @@ When Exploratory appears with the Custom label and a check mark under Status, th
 3. Send this.
 
    ```text
-   Find the "Sales Orders" data on Exploratory.
+   Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If the Sales Orders data appears with its URL, it works.
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed.
 
 ### Use it in Claude Code too
 

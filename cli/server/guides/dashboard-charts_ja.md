@@ -1,10 +1,10 @@
 # チャートの数値を取得する
 
-パブリッシュされたダッシュボードやノートに含まれるチャートについて、数値の取得、サーバーでの集計、画像の取得を行います。
+公開されたダッシュボードやノートに含まれるチャートについて、数値の取得、サーバーでの集計、画像の取得を行います。
 
 <a id="steps"></a>
 
-## 4 つの手順
+## 2 つの手順
 
 ### 1. チャートの名前を確認する
 
@@ -156,7 +156,9 @@ has_more が true の場合は、続きがあります。取得済みの行数�
 
 > rows に先頭 5 行が表示されていれば、数値を取得できています。
 
-### 3. 集計する
+<a id="aggregate"></a>
+
+## 集計する（任意）
 
 合計、順位付け、条件に合う行の抽出が必要な場合は、chart query を使用します。指定方法は dataset query と同じです。
 
@@ -254,7 +256,9 @@ result.has_more が true の場合は、結果に含まれていない行があ�
 
 > rows に集計結果が表示されていれば、集計できています。
 
-### 4. チャートの形を確認する
+<a id="image"></a>
+
+## チャートの形を確認する（任意）
 
 チャートの傾向や配置を確認する場合は、画像を取得します。
 
@@ -262,7 +266,7 @@ result.has_more が true の場合は、結果に含まれていない行があ�
 expl server chart get-image <id> --chart <chart> --json
 ```
 
-実行結果は、チャートが iJ6kL7mN（売上推移）のものです。image_path（画像の保存先）の行は省略しています。
+出力の形を示す例で、値は説明用です。チャートは iJ6kL7mN（売上推移）です。image_path（画像の保存先）の行は省略しているので、次の JSON は抜粋で、完全な JSON ではありません。
 
 **実行結果**
 
@@ -290,12 +294,12 @@ expl server chart get-image <id> --chart <chart> --json
       "original_height": 400,
       "bytes": 41970,
       "resized": false,
-      "captured_at": "2022-06-24T08:51:53.397Z",
+      "captured_at": "2026-11-12T09:26:51.086Z",
       "may_be_stale": true
     },
     "context": {
-      "publication_version": "2022-06-24T08:51:53.397Z",
-      "data_as_of": "2026-11-10T22:02:56.899Z",
+      "publication_version": "2026-11-12T09:26:51.086Z",
+      "data_as_of": "2026-11-14T22:02:56.899Z",
       "parameters": {
         "applied": true,
         "values": [
@@ -326,14 +330,14 @@ expl server chart get-image <id> --chart <chart> --json
   },
   "warnings": [
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
-    "The data was refreshed at 2026-11-10T22:02:56.899Z, after this image was captured at 2022-06-24T08:51:53.397Z. The image may not show the current numbers; use chart_get_data for them."
+    "The data was refreshed at 2026-11-14T22:02:56.899Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_data for them."
   ],
   "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j",
 …（中略）
 }
 ```
 
-画像は、パブリッシュしたときに保存されたもので、データより古い場合があります。result.image.may_be_stale で確認します。画像は expl を実行しているコンピューターに保存され、保存先は image_path に表示されます。--output で保存先を指定することもできます。正確な数値は、画像ではなく chart get-data で取得します。
+画像は、公開したときに保存されたもので、データより古い場合があります。result.image.may_be_stale で確認します。画像は expl を実行しているコンピューターに保存され、保存先は image_path に表示されます。--output で保存先を指定することもできます。正確な数値は、画像ではなく chart get-data で取得します。
 
 > result.image に画像の情報が表示されていれば、取得できています。
 
@@ -347,6 +351,4 @@ expl server chart get-image <id> --chart <chart> --json
 | DATA_EGRESS_LIMIT | 公開した人が、このデータの行を共有していません。チャート、アナリティクス、要約を使用します。 |
 | Run "expl server login". | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
 
-- [chart get-data](../commands_ja.md#chart-get-data) - すべてのフラグを説明しています。
-- [chart query](../commands_ja.md#chart-query) - 集計の指定方法を説明しています。
-- [chart get-image](../commands_ja.md#chart-get-image) - 画像の取得を説明しています。
+すべてのフラグは[chart get-data](../commands_ja.md#chart-get-data)、集計の指定方法は[chart query](../commands_ja.md#chart-query)、画像の取得は[chart get-image](../commands_ja.md#chart-get-image)で説明しています。

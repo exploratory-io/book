@@ -11,7 +11,7 @@ An operation with HIGH risk (publishing, deleting and so on) asks first. The RIS
 | Situation | What happens |
 | --- | --- |
 | In a terminal, without --yes | It asks Continue? \[y/N\]. y or yes (any case) runs it; anything else cancels (exit code 1). |
-| Not in a terminal (script, CI, AI agent), without --yes | Nothing runs; exit code 2. |
+| Not in a terminal (script, CI, AI agent, or output sent to a file or a pipe), without --yes | Nothing runs; exit code 2. |
 | With --yes | It runs without asking. |
 
 --yes (or a y at the prompt) stands for the user having checked. You do not need to add --confirmed-by-user.

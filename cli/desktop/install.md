@@ -8,11 +8,16 @@ expl comes with Exploratory Desktop. There is nothing else to install.
 
 In Exploratory Desktop, the CLI is off by default. Even when expl is installed, Desktop refuses its commands until you turn it on.
 
-1. In Exploratory Desktop, open System Settings.
-2. In the menu on the left, choose MCP / CLI.
-3. In the CLI section, turn on Enable CLI.
-4. Only when you want to create, change or delete content with expl, also check Allow create, edit and delete.
-5. Choose Save at the bottom of the screen.
+1. In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens (1 and 2 in picture 1).
+
+![The menu that opens when you choose your name at the bottom left of Exploratory Desktop. 1 is your name and 2 is System Settings](images/en/open-system-settings.png)
+
+2. In the menu on the left of System Settings, choose MCP / CLI (1 in picture 2).
+3. On the CLI card, turn on the switch (2 in picture 2).
+4. Only when you want to create, change or delete content with expl, also check Allow create, edit and delete (3 in picture 2).
+5. Choose Save at the bottom of the screen (4 in picture 2).
+
+![System Settings, MCP / CLI. 1 is MCP / CLI in the left menu, 2 is the switch on the CLI card, 3 is the Allow create, edit and delete check, 4 is Save](images/en/cli-settings.png)
 
 <a id="bundled"></a>
 
@@ -49,8 +54,6 @@ If you have both an npm copy and the Desktop copy of expl, check which one runs.
 
 ### macOS and Linux
 
-**macOS and Linux**
-
 ```sh
 which -a expl
 ```
@@ -59,11 +62,17 @@ Shows every copy, in the order they run.
 
 ### Windows
 
-**Windows**
-
 ```sh
 where expl
 ```
+
+<a id="update"></a>
+
+## Update
+
+The expl that comes with Desktop is updated when you update Exploratory Desktop. Run expl --version to check the version. To update an npm copy, see [Update](../server/install.md#update).
+
+For what changed in each version, see the [release notes](../../release-note.md).
 
 <a id="remove"></a>
 
@@ -71,7 +80,7 @@ where expl
 
 | OS | How |
 | --- | --- |
-| macOS | rm /usr/local/bin/expl /usr/local/bin/exploratory /usr/local/bin/exploratory-mcp (add sudo if administrator rights are needed). If you declined the permission, delete the same three names in ~/.local/bin instead. If the app stays in /Applications, it is installed again at the next start. |
+| macOS | Run ls -l on /usr/local/bin/expl, /usr/local/bin/exploratory and /usr/local/bin/exploratory-mcp, and delete only the ones that Exploratory added (rm \<path\>; add sudo if administrator rights are needed). A command with the same name that came from somewhere else, such as an npm copy, stays. If you declined the permission, check and delete the same names in ~/.local/bin instead. If the app stays in /Applications, it is installed again at the next start. |
 | Windows | Open "Edit the system environment variables" and remove \<install folder\>\\cli from Path in the user variables. It is added again at the next start. |
 
-- [Quickstart](quickstart.md) - Connect to Desktop and run your first commands.
+To connect to Desktop and run your first commands, see [Get started](get-started.md#steps).

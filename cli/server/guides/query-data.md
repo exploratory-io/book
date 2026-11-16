@@ -108,9 +108,7 @@ Replace \<dataset_id\> with the data id and region with a real column name. The 
 - rows returns at most 1,000 rows and aggregate at most 500. There is no paging. When has_more in the result is true, narrow the query or aggregate.
 - The result includes the data version and update time. When you report the numbers, say which data they are based on.
 
-When the result is too large, save it as a CSV or Parquet file with dataframe export. To join several data items, see the dataset query page.
-
-- [dataset query](../commands.md#dataset-query) - Describes every flag.
+When the result is too large, save it as a CSV or Parquet file with dataframe export. To join several data items, see the [dataset query](../commands.md#dataset-query) page.
 
 <a id="json"></a>
 

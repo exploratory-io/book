@@ -75,8 +75,6 @@ npm でインストールした expl と Desktop の expl の両方がある場�
 
 ### macOS と Linux
 
-**macOS と Linux**
-
 ```sh
 which -a expl
 ```
@@ -84,8 +82,6 @@ which -a expl
 インストールされているものを、実行される順にすべて表示します。
 
 ### Windows
-
-**Windows**
 
 ```sh
 where expl
@@ -99,6 +95,24 @@ Exploratory Desktop をお使いの場合は、npm でグローバルにイン�
 >
 > nodejs.org のインストーラーで Node.js をインストールした Mac では、npm がコマンドを Desktop が通常使用する /usr/local/bin に配置しようとするため、npm install -g が EEXIST で停止します。この場合は、--force を付けて再実行しないでください。Exploratory Desktop に同梱されている expl が置き換わります。逆に、npm の expl がすでに /usr/local/bin にある場合、Desktop はそれを残し、自分の expl は配置しません。
 
+<a id="update"></a>
+
+## 更新する
+
+npm でインストールした expl を更新するには、次のコマンドを実行して、バージョンを確認します。
+
+```sh
+npm install -g @exploratory/cli@<version>
+```
+
+```sh
+expl --version
+```
+
+\<version\> は、使いたいバージョンに置き換えます。Exploratory Desktop に同梱されている expl は、Exploratory Desktop を更新すると更新されます。
+
+バージョンごとの変更点は、[リリースノート](../../release-notes_ja.md)で確認できます。
+
 <a id="remove"></a>
 
 ## アンインストール
@@ -109,7 +123,6 @@ npm でインストールした expl は、次のコマンドでアンインス�
 npm uninstall -g @exploratory/cli
 ```
 
-Exploratory Desktop に同梱されている expl は、PATH から expl のリンクまたは Exploratory のフォルダを削除します。アプリが確認を求めたときに断らない限り、次回の起動時に再び追加されます。
+Exploratory Desktop に同梱されている expl は、Desktop のインストールのページの[アンインストール](../desktop/install_ja.md#remove)に従います。同名のほかのコマンドを削除しないように、先に各パスを確認してください。アプリが確認を求めたときに断らない限り、次回の起動時に再び追加されます。
 
-- [クイックスタート](quickstart_ja.md) - サインインして、最初の結果を取得します。
-- [Desktop を使う](../desktop/desktop_ja.md) - 手元の Desktop を操作します。
+次は、[サインイン](login_ja.md)してから、[はじめる](get-started_ja.md#steps)で最初の結果を取得します。手元の Desktop を操作する場合は[Desktop を使う](../desktop/desktop_ja.md)を参照してください。

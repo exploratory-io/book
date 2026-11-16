@@ -11,7 +11,9 @@ AI ツールごとに別の手順はありません。Claude Code、Codex、Anti
 
 ### システム設定でインストールする
 
-Exploratory Desktop で、システム設定を開きます。
+Exploratory Desktop で、画面の左下にある自分の名前を選び、開いたメニューで「システム設定」を選びます（画面の画像の ① と ②）。
+
+![Exploratory Desktop の左下の自分の名前を選ぶと開くメニュー。①が自分の名前、②が「システム設定」](images/ja/open-system-settings.png)
 
 1. 左のメニューで、「MCP / CLI」を選びます。
 2. 「Exploratory Desktop プラグインのインストール」のカードを確かめます。
@@ -128,7 +130,7 @@ Git が必要です。プラグインは、Antigravity のアプリの Customiza
 
 **Cursor**
 
-次の内容を ~/.cursor/mcp.json に追加します。スキルなしで Desktop の MCP が入ります。カードが書くのと同じ内容です。
+次の `exploratory-desktop` の項目を ~/.cursor/mcp.json に追加します。ファイルにすでに `mcpServers` がある場合は、その中に `exploratory-desktop` の項目だけを追加し、ほかのサーバーの設定は残します。以下は、新しいファイルを作る場合の全体の例です。スキルなしで Desktop の MCP が入ります。カードが書くのと同じ内容です。
 
 ```json
 {

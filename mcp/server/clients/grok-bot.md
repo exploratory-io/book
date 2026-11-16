@@ -48,6 +48,8 @@ Next, in a chat, send this.
 Use the Exploratory MCP server you just added to find the Sales Orders data. Please respond in English.
 ```
 
+Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed.
+
 After you send it, check the result.
 
 1. Check the Sales Orders link in the reply.

@@ -4,7 +4,7 @@ For a chart in a published dashboard or note, get its numbers, aggregate them on
 
 <a id="steps"></a>
 
-## Four steps
+## Two steps
 
 ### 1. Find the chart name
 
@@ -156,7 +156,9 @@ When has_more is true, there are more rows. Pass the number of rows you have alr
 
 > If the first 5 rows are in rows, you have the numbers.
 
-### 3. Aggregate
+<a id="aggregate"></a>
+
+## Aggregate (optional)
 
 For totals, rankings or the rows that match a condition, use chart query. It takes the same inputs as dataset query.
 
@@ -254,7 +256,9 @@ When result.has_more is true, there are rows that are not in the result. There i
 
 > If the aggregated result is in rows, the query worked.
 
-### 4. See the shape of the chart
+<a id="image"></a>
+
+## See the shape of the chart (optional)
 
 To see the trend or layout of a chart, get its image.
 
@@ -295,7 +299,7 @@ Example of the output shape; values are illustrative. The example is for the cha
     },
     "context": {
       "publication_version": "2026-11-12T09:26:51.086Z",
-      "data_as_of": "2026-11-10T22:02:56.899Z",
+      "data_as_of": "2026-11-14T22:02:56.899Z",
       "parameters": {
         "applied": true,
         "values": [
@@ -326,7 +330,7 @@ Example of the output shape; values are illustrative. The example is for the cha
   },
   "warnings": [
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
-    "The data was refreshed at 2026-11-10T22:02:56.899Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_data for them."
+    "The data was refreshed at 2026-11-14T22:02:56.899Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_data for them."
   ],
   "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j",
 … (trimmed)
@@ -347,6 +351,4 @@ The image is the one saved when the item was published, so it can be older than 
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
 | Run "expl server login". | Sign-in is missing, or the saved login or API key was rejected. Run expl server login. |
 
-- [chart get-data](../commands.md#chart-get-data) - Describes every flag.
-- [chart query](../commands.md#chart-query) - Describes how to aggregate.
-- [chart get-image](../commands.md#chart-get-image) - Describes getting the image.
+Every flag is described in [chart get-data](../commands.md#chart-get-data), how to aggregate in [chart query](../commands.md#chart-query), and getting the image in [chart get-image](../commands.md#chart-get-image).

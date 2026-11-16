@@ -18,7 +18,9 @@ API キーは、プログラムが、あなたとして Exploratory を読むた
 
 ### 1. API キーを開く
 
-exploratory.io のアカウント設定で、API キーを開きます。
+exploratory.io の右上のアイコンから「アカウントの設定」を開き（https://exploratory.io/account/settings ）、「API キー」の節に進みます。
+
+![アカウントの設定の「API キー」の節。キーがまだないときは「API キーを作成」のボタンだけが表示される](images/ja/api-keys-section.png)
 
 ### 2. 作成する
 
@@ -27,6 +29,8 @@ exploratory.io のアカウント設定で、API キーを開きます。
 ### 3. 有効期限を選ぶ
 
 7、30、90、365 日、日付の指定、無期限から選びます。既定は 30 日です。管理者が、これより短い上限を決めていることがあります。
+
+![「新しい API キー」の入力欄。名前、有効期限（7 日、30 日、90 日、1 年、日付を指定、無期限）、権限（読み取りのみ）が並ぶ](images/ja/api-key-create.png)
 
 ### 4. キーをコピーする
 
@@ -46,26 +50,9 @@ exploratory.io のアカウント設定で、API キーを開きます。
 
 ## キーを expl に渡す
 
-渡し方は 2 つです。expl server login --with-token でキーを保存するか（「サインインと状態」を参照）、環境変数 EXPL_SERVER_TOKEN に設定します。両方あるときは、次の順に選ばれます。
+expl server login --with-token でキーを保存するか、環境変数 EXPL_SERVER_TOKEN に設定します。環境変数が先に使われます。選ばれる順と切り替え方は、[サインイン](login_ja.md#apikey)にあります。--token は削除されました。指定すると、終了コード 2 で終わります。
 
-| 順 | 渡し方 |
-| --- | --- |
-| 1 | EXPL_SERVER_TOKEN |
-| 2 | 保存したログイン情報（ブラウザでのログイン、または --with-token で保存した API キー） |
-
---token は削除されました。指定すると、終了コード 2 で、次のメッセージを表示して終わります。
-
-```sh
-expl server status --token <key>
-```
-
-**実行結果**
-
-```text
-Error: --token was removed. Set EXPL_SERVER_TOKEN, or run "expl server login --with-token" (reads the API key from stdin).
-```
-
-- [自動処理](guides/automation_ja.md) - GitHub Actions での使い方です。
+GitHub Actions での使い方は、[自動処理](guides/automation_ja.md)を参照してください。
 
 <a id="cli"></a>
 
@@ -77,7 +64,7 @@ Error: --token was removed. Set EXPL_SERVER_TOKEN, or run "expl server login --w
 expl server token create --name ci
 ```
 
---name は必須です。--expires \<days\> で、キーが使える日数を指定できます。この方法で作ったものも API キーで、アカウント設定 \> API キーに並びます。キーが表示されるのは 1 回だけなので、すぐに保管します。
+--name は必須です。ターミナルから作るときの名前には、英数字と「.」「_」「-」を使え、1〜64 文字です。--expires \<days\> で、キーが使える日数を 1〜365 の範囲で指定できます。この方法で作ったものも API キーで、アカウント設定 \> API キーに並びます。キーが表示されるのは 1 回だけなので、すぐに保管します。
 
 **実行結果**
 
@@ -119,7 +106,7 @@ Revoked ci.
 ## キーを安全に扱う
 
 - キーをコマンドラインやスクリプトに書かないでください。シェルの履歴に残り、プロセスの一覧からも見えます。expl server login --with-token（キーを表示せずに聞きます）か、環境変数を使います。
-- CI では、キーをシークレットに登録して、環境変数 EXPL_SERVER_TOKEN で渡します。画面やログに出さず、リポジトリにも入れないでください。
+- CI では、キーをシークレットとして渡し、ログに出さないようにします。[自動処理](guides/automation_ja.md#token)を参照してください。
 - キーには有効期限があります。期限の前に、7 日前と 1 日前にメールが届きます。ジョブが止まらないよう、それまでに新しいキーを作ってください。
 - キーが作成・再生成・取り消しされたときも、メールが届きます。心当たりがないときは、キーを取り消して、パスワードを変更してください。
 
@@ -135,7 +122,7 @@ Revoked ci.
 
 ## 管理者が決められること
 
-オンプレミス版と Hosted 版では、管理者が管理画面で次のことを決められます。
+オンプレミス環境と Hosted 環境では、管理者が管理画面で次のことを決められます。
 
 - API キーをオフにする。すべてのキーがすぐに使えなくなり、設定をオンに戻すと、また使えます。メッセージは「API keys are disabled by your administrator.」です。
 - キーの最長有効期間を決める。それより長い有効期間のキーは使えなくなります。
@@ -146,6 +133,4 @@ Revoked ci.
 
 ## 記録されるもの
 
-API キーは、ハッシュで保存され、作成日時、有効期限、最終使用日時が記録されます。そのほかの記録は、MCP Server のページにまとめています。
-
-- [データと権限](../../mcp/server/data_ja.md) - Exploratory が記録するものを説明しています。
+API キーは、ハッシュで保存され、作成日時、有効期限、最終使用日時が記録されます。そのほかの記録は、MCP Server の[データと権限](../../mcp/server/data_ja.md)のページにまとめています。

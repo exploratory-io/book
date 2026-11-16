@@ -54,10 +54,10 @@ exploratory@exploratory in Exploratory's GitHub marketplace is for Desktop and d
 1. In a new chat, send this.
 
    ```text
-   Find the "Sales Orders" data on Exploratory.
+   Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If the Sales Orders data appears with its URL, the connection works.
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
@@ -97,6 +97,22 @@ Codex searches through the Exploratory server and finds the data.
 ![Codex finding the Sales Orders data through the Exploratory server](images/en/codex-chat-02-search.png)
 
 If you already have another Exploratory connection (for example exploratory-server or Desktop), Codex may pick that one. Naming the connection avoids it.
+
+<a id="apikey"></a>
+
+## Connect with an API key
+
+If your environment cannot open a browser, use an API key instead of the sign-in. Create the key in Account Settings \> API Keys, and put it in an environment variable. Set EXPLORATORY_API_KEY through your environment's secret-management facility, such as your operating system's credential store or the secrets of your CI, not through your shell's startup file. Do not write the key itself on the command line or in a configuration file. The configuration below assumes that this environment variable is already set.
+
+Add the name of the variable, not the key, to ~/.codex/config.toml.
+
+```text
+[mcp_servers.exploratory-server]
+url = "https://exploratory.io/mcp"
+bearer_token_env_var = "EXPLORATORY_API_KEY"
+```
+
+If you write the key in the file as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../auth.md#apikey) for what a key can read.
 
 <a id="trouble"></a>
 

@@ -1,4 +1,4 @@
-# Connect the ChatGPT app (desktop)
+# Connect the ChatGPT app
 
 After you connect, ChatGPT can read notes and data published on Exploratory. You add the Exploratory server to the ChatGPT desktop app as an MCP server. An MCP server is the address an AI app connects to in order to use the data and features of an outside service.
 It takes about 5 minutes. You need an Exploratory account and the ChatGPT desktop app.
@@ -74,10 +74,10 @@ If the server you added appears, it was added.
 4. Send this.
 
    ```text
-   Find the "Sales Orders" data on Exploratory.
+   Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If the Sales Orders data appears with its URL, it works.
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed.
 
 <a id="web"></a>
 
@@ -153,10 +153,10 @@ The Developer field is blurred in the image. Information lists Developer, Catego
 3. Send this.
 
    ```text
-   Find the "Sales Orders" data on Exploratory.
+   Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If the Sales Orders data appears with its URL, it works.
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed.
 
 <a id="trouble"></a>
 

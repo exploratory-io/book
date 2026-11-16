@@ -17,10 +17,10 @@
 
 ### mcp.json に登録する
 
-Exploratory Server は公式のプラグイン一覧にありません。サーバーのみを手動で追加します。スキルは含まれません。
+お使いのアプリの公式一覧に Exploratory Server が掲載されている場合は、その手順で追加します。掲載されていない場合は、次の手順で、サーバーのみを手動で追加します。スキルは含まれません。`exploratory@exploratory` は Desktop 用です。
 
 1. ~/.cursor/mcp.json（プロジェクト単位の場合は .cursor/mcp.json）を開きます。
-2. 次の内容を記述します。
+2. 次の `exploratory-server` の項目を追加します。ファイルにすでに `mcpServers` がある場合は、その中に `exploratory-server` の項目だけを追加し、ほかのサーバーの設定は残します。以下は、新しいファイルを作る場合の全体の例です。
 
    ```text
    {
@@ -76,6 +76,8 @@ agent mcp login exploratory-server
 Exploratory にある「Sales Orders」のデータを探して
 ```
 
+Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。
+
 送信したあと、結果を確かめます。
 
 1. 検索結果の「Sales Orders」のリンクを確かめます。
@@ -86,6 +88,28 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 
+<a id="apikey"></a>
+
+## API キーで接続する
+
+ブラウザを開けない環境では、サインインの代わりに API キーを使います。キーは、アカウント設定 \> API キーで作り、Cursor を起動する前に、EXPLORATORY_API_KEY という環境変数に入れます。そのうえで、mcp.json から参照します。
+
+```text
+{
+  "mcpServers": {
+    "exploratory-server": {
+      "type": "http",
+      "url": "https://exploratory.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:EXPLORATORY_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+キーを mcp.json にそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](../auth_ja.md#apikey)を参照してください。
+
 <a id="trouble"></a>
 
 ## トラブルシューティング
@@ -93,7 +117,7 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 | 表示される内容 | 対処 |
 | --- | --- |
 | サインインを求められる | agent mcp login exploratory-server を実行して、もう一度サインインします。 |
-| Desktop のプラグインをインストールしたが、Server のツールが表示されない | Desktop のプラグインには、Server は含まれません。上の JSON で、Server を追加します。 |
+| Desktop のプラグインをインストールしたが、Server の道具が表示されない | Desktop のプラグインには、Server は含まれません。上の JSON で、Server を追加します。 |
 
 - [トラブルシューティング](../troubleshooting_ja.md) - MCP Server 全体の、症状ごとの対処です。
 
