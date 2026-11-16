@@ -295,7 +295,7 @@ Example of the output shape; values are illustrative. The example is for the cha
     },
     "context": {
       "publication_version": "2026-11-12T09:26:51.086Z",
-      "data_as_of": "2026-11-10T22:02:56.899Z",
+      "data_as_of": "2026-11-14T22:02:56.899Z",
       "parameters": {
         "applied": true,
         "values": [
@@ -326,7 +326,7 @@ Example of the output shape; values are illustrative. The example is for the cha
   },
   "warnings": [
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
-    "The data was refreshed at 2026-11-10T22:02:56.899Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_data for them."
+    "The data was refreshed at 2026-11-14T22:02:56.899Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_data for them."
   ],
   "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j",
 … (trimmed)

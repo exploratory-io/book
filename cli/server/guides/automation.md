@@ -34,8 +34,6 @@ An example for GitHub Actions. Replace \<id\> with the id of the content to read
     EXPL_SERVER_URL: https://exploratory.io
 ```
 
-Complete files for GitHub Actions and Bitbucket Pipelines are in the examples folder of the expl repository.
-
 <a id="exit"></a>
 
 ## Exit codes

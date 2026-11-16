@@ -262,7 +262,7 @@ result.has_more が true の場合は、結果に含まれていない行があ�
 expl server chart get-image <id> --chart <chart> --json
 ```
 
-実行結果は、チャートが iJ6kL7mN（売上推移）のものです。image_path（画像の保存先）の行は省略しています。
+出力の形を示す例で、値は説明用です。チャートは iJ6kL7mN（売上推移）です。image_path（画像の保存先）の行は省略しているので、次の JSON は抜粋で、完全な JSON ではありません。
 
 **実行結果**
 
@@ -290,12 +290,12 @@ expl server chart get-image <id> --chart <chart> --json
       "original_height": 400,
       "bytes": 41970,
       "resized": false,
-      "captured_at": "2022-06-24T08:51:53.397Z",
+      "captured_at": "2026-11-12T09:26:51.086Z",
       "may_be_stale": true
     },
     "context": {
-      "publication_version": "2022-06-24T08:51:53.397Z",
-      "data_as_of": "2026-11-10T22:02:56.899Z",
+      "publication_version": "2026-11-12T09:26:51.086Z",
+      "data_as_of": "2026-11-14T22:02:56.899Z",
       "parameters": {
         "applied": true,
         "values": [
@@ -326,7 +326,7 @@ expl server chart get-image <id> --chart <chart> --json
   },
   "warnings": [
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
-    "The data was refreshed at 2026-11-10T22:02:56.899Z, after this image was captured at 2022-06-24T08:51:53.397Z. The image may not show the current numbers; use chart_get_data for them."
+    "The data was refreshed at 2026-11-14T22:02:56.899Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_data for them."
   ],
   "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j",
 …（中略）

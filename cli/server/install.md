@@ -99,6 +99,22 @@ If you have Desktop, you do not need a global npm install. Using npx with a pinn
 >
 > On a Mac where Node.js was installed with the installer from nodejs.org, npm puts commands in /usr/local/bin, the folder Desktop normally uses, so npm install -g stops with EEXIST. Do not run it again with --force: that replaces the expl that comes with Desktop. The other way round, if expl from npm is already in /usr/local/bin, Desktop leaves it in place and does not add its own.
 
+<a id="update"></a>
+
+## Update
+
+To update the npm copy, run this command and then check the version.
+
+```sh
+npm install -g @exploratory/cli@<version>
+```
+
+```sh
+expl --version
+```
+
+Replace \<version\> with the version you want. The copy that comes with Desktop is updated when you update Exploratory Desktop.
+
 <a id="remove"></a>
 
 ## Remove
@@ -109,7 +125,7 @@ Remove the npm copy with this command.
 npm uninstall -g @exploratory/cli
 ```
 
-For the copy that comes with Desktop, remove the expl link or the Exploratory folder from your PATH. Desktop adds it again at the next start unless you decline when it asks.
+For the copy that comes with Desktop, follow [Remove](../desktop/install.md#remove) on the Desktop installation page. Check each path first, so that you do not delete another command with the same name. Desktop adds it again at the next start unless you decline when it asks.
 
 - [Quickstart](quickstart.md) - Sign in and get your first result.
 - [Use Desktop](../desktop/desktop.md) - Work with Desktop on this computer.

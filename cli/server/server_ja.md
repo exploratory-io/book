@@ -44,7 +44,7 @@ npm install -g @exploratory/cli@<version>
 npx -y @exploratory/cli --version
 ```
 
-インストールせずに、expl を 1 回だけ実行します。Node.js 20 以上が必要です。インストール方法は、Node.js の公式サイト（[https://nodejs.org/](https://nodejs.org/)）を参照してください。
+インストールせずに、expl を 1 回だけ実行します。ほかのコマンドを実行するときは、パッケージ名のあとに続けます（例: npx -y @exploratory/cli server login）。Node.js 20 以上が必要です。インストール方法は、Node.js の公式サイト（[https://nodejs.org/](https://nodejs.org/)）を参照してください。
 
 > 1 行目に expl \<バージョン\> と表示されていれば、インストールは完了しています。
 
@@ -66,7 +66,7 @@ expl server login
 expl server search "Sales Orders" --scope all --type data
 ```
 
---scope all は、自分のコンテンツに加えて、ほかの人が公開したコンテンツも検索します。--type data は、結果をデータだけに絞り込みます。
+--scope all は、自分のコンテンツに加えて、ほかの人が公開したコンテンツも検索します。--type data は、結果をデータだけに絞り込みます。結果が空のときは、該当するものがなかったということで、サインインのエラーではありません。サインインしているかは、expl server status で確認できます。
 
 **実行結果**
 

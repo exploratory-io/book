@@ -6,6 +6,8 @@ An AI agent that can run shell commands can use expl directly. No MCP registrati
 
 ## Teach the agent with a skill
 
+Skills are optional. expl works without one: expl --help and expl tools describe show how to use it.
+
 A skill is a description file (SKILL.md) that teaches an AI agent how to use a tool. expl skill prints a skill for Desktop. For Claude Code:
 
 ```sh

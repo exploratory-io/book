@@ -6,6 +6,8 @@ Print the skill file that teaches an AI agent how to use expl.
 
 ## What a skill is
 
+Skills are optional. expl works without one; see expl server --help and expl server tools describe for how to use it.
+
 A skill is a description file (SKILL.md) that teaches an AI agent how to use a tool. The agent reads skills from the place where you save them.
 
 <a id="save"></a>

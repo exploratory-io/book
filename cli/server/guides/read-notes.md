@@ -83,7 +83,7 @@ Replace \<id\> with an id from the search result. The result below was run on th
 }
 ```
 
-A note, dashboard or slide returns its text, the first rows of each embedded chart and the explanation of each analytics. The list of headings is in metadata.toc.
+A note, dashboard or slide returns its text, the first rows of each embedded chart and the explanation of each analytics. The list of headings is in metadata.toc when the note is long enough to return one.
 
 <a id="long"></a>
 
@@ -95,7 +95,7 @@ You do not have to read a long note in full. To read one heading, pass a heading
 expl server fetch <id> --section s2 --json
 ```
 
-Replace s2 with a heading id from metadata.toc.
+Replace s2 with a heading id from metadata.toc. If metadata.toc is not returned (a short note), search with --query first and use a heading id shown in the result.
 
 To find a topic, pass words to --query. It returns the paragraphs that contain any of the space-separated words, each with its heading path.
 

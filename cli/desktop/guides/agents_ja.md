@@ -6,6 +6,8 @@
 
 ## スキルで教える
 
+スキルは任意です。expl はスキルがなくても使えます。使い方は、expl --help と expl tools describe で確認できます。
+
 スキルは、AI エージェントに道具の使い方を教える説明ファイル（SKILL.md）です。expl skill は、Desktop 向けのスキルを出力します。Claude Code の場合は、次のとおりです。
 
 ```sh

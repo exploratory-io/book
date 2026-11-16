@@ -25,7 +25,31 @@
 次のコマンドは、例外があります。
 
 - expl status は、--input の JSON を使いません。渡しても無視します。
-- expl project use、expl tools describe、expl call に --help を付けると、ヘルプではなく、使い方のエラー（終了コード 2）になります。使い方は、「よく使うコマンド」を参照してください。
-- expl lang に --help を付けても、ヘルプは出ません。そのまま言語の表示に進みます（対象のプロジェクトを決められないときは、エラーになります）。
+- --help は、生成されたコマンドと expl tools のヘルプを表示します。組み込みのコマンド（expl status、expl project use、expl lang、expl skill、expl completion）は、ヘルプを表示せず、そのまま実行されます。たとえば expl project use \<id\> --help は既定のプロジェクトを変更し、expl lang --help はそのまま言語の表示に進みます（対象のプロジェクトを決められないときは、エラーになります）。使い方は、[よく使うコマンド](commands_ja.md)で確認してください。
+- expl tools describe と expl call は、引数がないと、使い方のエラー（終了コード 2）になります。
+- --json は、expl project use、expl skill、expl completion には効きません。この 3 つは、常に文字で出力します。
+- 組み込みのコマンド（expl status、expl project use、expl lang、expl skill、expl completion）は、未知のフラグや余分な引数をエラーにしません。使い方に載っているものだけを渡してください。生成されたコマンドは、これらをエラー（終了コード 2）にします。
 
-シェルの補完は、expl completion bash、expl completion zsh、expl completion powershell が、補完のスクリプトを出力します。
+--timeout は、秒数で指定します。数字でない値は、使い方のエラー（終了コード 2）になります。
+
+<a id="env"></a>
+
+## 環境変数
+
+| 変数 | 使いみち | 優先順位 |
+| --- | --- | --- |
+| EXPL_PROJECT | Desktop のコマンドが作業するプロジェクト | --project、EXPL_PROJECT、expl project use で決めた既定の順です。[プロジェクトを選ぶ](guides/projects_ja.md)を参照してください。 |
+| EXPL_SERVER_URL | expl server が呼び出すサーバー | --url、EXPL_SERVER_URL、最後にサインインしたサーバー、https://exploratory.io の順です。[サーバーの URL](../server/login_ja.md#url)を参照してください。 |
+| EXPL_SERVER_TOKEN | expl server に使う API キー | 保存したログイン情報より先に使われます。[API キー](../server/token_ja.md)を参照してください。 |
+
+<a id="completion"></a>
+
+## シェルの補完
+
+expl completion bash、expl completion zsh、expl completion powershell は、補完のスクリプトを出力します。このスクリプトを実行すると、補完が有効になります。
+
+| シェル | 今のセッションで有効にする | 次回以降も有効にする |
+| --- | --- | --- |
+| bash | eval "$(expl completion bash)" | その行を ~/.bashrc に追加します |
+| zsh | eval "$(expl completion zsh)" | その行を ~/.zshrc に追加します |
+| PowerShell | expl completion powershell \| Out-String \| Invoke-Expression | その行を $PROFILE に追加します |

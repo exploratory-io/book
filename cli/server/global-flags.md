@@ -17,10 +17,28 @@ Flags you can add to any command. You can place them before or after the command
 | --verbose | Print what is sent and received to standard error. Tokens are never printed. | The same. |
 | --input \<file\|-\> | Give the whole input as JSON from a file or standard input. | The same. |
 | --output \<file\> | Where to save an image result. | See the table below. |
-| --help, -h | Print help. | The same. |
+| --help, -h | Print help. | Prints help for the generated commands. The built-in commands (expl server login, logout, status, token and skill) do not show help: they run. For example, expl server logout --help logs you out. Check their usage in these pages. |
 | --version | Print the version. | The same. |
 
 Review the output of --verbose before you paste it anywhere.
+
+--json has no effect on expl server login, expl server logout, expl server skill and expl completion. They always print text. The built-in commands (expl server login, logout, status, token and skill) do not report an unknown flag or an extra argument; the generated commands reject them (exit code 2).
+
+<a id="env"></a>
+
+## Environment variables
+
+| Variable | Used for | Order of precedence |
+| --- | --- | --- |
+| EXPL_SERVER_URL | The server that expl server calls | --url, then EXPL_SERVER_URL, then the server you signed in to most recently, then https://exploratory.io. See [The server URL](login.md#url). |
+| EXPL_SERVER_TOKEN | An API key | Used before a saved login. See [API keys](token.md). |
+| EXPL_PROJECT | The project that Desktop commands work on | Not used with expl server. See [Choose a project](../desktop/guides/projects.md). |
+
+<a id="completion"></a>
+
+## Shell completion
+
+expl completion bash, expl completion zsh and expl completion powershell print a completion script. See [Shell completion](../desktop/global-flags.md#completion) for how to turn it on.
 
 <a id="server"></a>
 
@@ -30,7 +48,7 @@ Review the output of --verbose before you paste it anywhere.
 | --- | --- |
 | --url \<url\> | The server to call. |
 | --with-token | Used with expl server login. Reads an API key (asked for without showing it in a terminal, or from standard input) and saves it. --token was removed; use EXPL_SERVER_TOKEN. |
-| --output \<file\>, -o \<file\> | Where to save a file result, such as a data frame export or a chart image. |
+| --output \<file\>, -o \<file\> | Where to save a file result, such as a data frame export or a chart image. With --json, a saved file prints the path (saved) and the size (bytes) as JSON. --output - is not JSON: it writes the file itself to standard output. |
 | --no-browser | Do not open a browser while signing in. |
 
 - [Sign-in and status](login.md) - How to use --no-browser and --with-token.

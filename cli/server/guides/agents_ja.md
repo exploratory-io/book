@@ -19,17 +19,7 @@ MCP は、AI アプリが外部のサービスに接続するための共通の�
 
 ## スキルで教える
 
-スキルは、AI エージェントに道具の使い方を教える説明ファイル（SKILL.md）です。expl は、自分の使い方をまとめたスキルを出力します。お使いのエージェントがスキルを読む場所に、保存してください。Claude Code の場合は、次のとおりです。
-
-```sh
-mkdir -p ~/.claude/skills/exploratory-expl-server
-```
-
-```sh
-expl server skill > ~/.claude/skills/exploratory-expl-server/SKILL.md
-```
-
-expl server skill は Exploratory Server 向けです。サーバーに接続できるときは、出力に最新の案内も加わるので、できるだけこのコマンドを使ってください。Desktop 向けのスキルは、Desktop のページで説明しています。
+スキルは任意です。expl はスキルがなくても使えます。使い方は、expl server --help と expl server tools describe で確認できます。スキルは、AI エージェントに道具の使い方を教える説明ファイル（SKILL.md）で、expl server skill が Exploratory Server 向けのものを出力します。保存の手順は、スキルのページにあります。Desktop 向けのスキルは、Desktop のページで説明しています。
 
 - [スキル](../skill_ja.md) - スキルの保存を説明しています。
 - [Desktop で使う](../../desktop/guides/agents_ja.md) - expl skill の保存を説明しています。

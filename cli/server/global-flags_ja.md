@@ -17,10 +17,28 @@
 | --verbose | 送受信した内容を標準エラーに出力します。トークンは出力しません。 | 同じです。 |
 | --input \<file\|-\> | 入力全体を、ファイルまたは標準入力の JSON で渡します。 | 同じです。 |
 | --output \<file\> | 画像の結果の保存先です。 | 下の表を参照してください。 |
-| --help, -h | ヘルプを表示します。 | 同じです。 |
+| --help, -h | ヘルプを表示します。 | 生成されたコマンドのヘルプを表示します。組み込みのコマンド（expl server login、logout、status、token、skill）は、ヘルプを表示せず、そのまま実行されます。たとえば expl server logout --help は、ログアウトします。使い方は、これらのページで確認してください。 |
 | --version | バージョンを表示します。 | 同じです。 |
 
 --verbose の出力は、貼り付ける前に中身を確認してください。
+
+--json は、expl server login、expl server logout、expl server skill、expl completion には効きません。常に文字で出力します。組み込みのコマンド（expl server login、logout、status、token、skill）は、未知のフラグや余分な引数をエラーにしません。生成されたコマンドは、これらをエラー（終了コード 2）にします。
+
+<a id="env"></a>
+
+## 環境変数
+
+| 変数 | 使いみち | 優先順位 |
+| --- | --- | --- |
+| EXPL_SERVER_URL | expl server が呼び出すサーバー | --url、EXPL_SERVER_URL、最後にサインインしたサーバー、https://exploratory.io の順です。[接続先の URL](login_ja.md#url)を参照してください。 |
+| EXPL_SERVER_TOKEN | API キー | 保存したログイン情報より先に使われます。[API キー](token_ja.md)を参照してください。 |
+| EXPL_PROJECT | Desktop のコマンドが作業するプロジェクト | expl server では使いません。[プロジェクトを選ぶ](../desktop/guides/projects_ja.md)を参照してください。 |
+
+<a id="completion"></a>
+
+## シェルの補完
+
+expl completion bash、expl completion zsh、expl completion powershell は、補完のスクリプトを出力します。有効にする方法は、[シェルの補完](../desktop/global-flags_ja.md#completion)を参照してください。
 
 <a id="server"></a>
 
@@ -30,7 +48,7 @@
 | --- | --- |
 | --url \<url\> | 接続するサーバーです。 |
 | --with-token | expl server login と一緒に使います。API キーを読み取って（ターミナルでは表示せずに聞き、パイプでは標準入力から読みます）保存します。--token は削除されました。EXPL_SERVER_TOKEN を使います。 |
-| --output \<file\>, -o \<file\> | データのエクスポートやチャート画像など、ファイルの結果の保存先です。 |
+| --output \<file\>, -o \<file\> | データのエクスポートやチャート画像など、ファイルの結果の保存先です。--json と一緒に使うと、保存したファイルのパス（saved）とサイズ（bytes）を JSON で出力します。--output - は JSON ではなく、ファイルの中身そのものを標準出力に書きます。 |
 | --no-browser | サインインのときに、ブラウザを開きません。 |
 
 - [サインインと状態](login_ja.md) - --no-browser と --with-token の使い方です。

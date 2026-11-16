@@ -10,7 +10,9 @@ Inspect the commands the server offers and their flags.
 expl server tools list
 ```
 
-The command list comes from the server each time. A new operation on the server does not need a new version of expl. When the server cannot be reached or you are not signed in, expl shows the list it saved last time.
+The command list comes from the server each time. A new operation on the server does not need a new version of expl. When the server cannot be reached or you are not signed in, expl shows the list it saved last time, or an empty list when none is saved.
+
+Exit code 0 from tools list does not mean that the connection works. To check the connection, run expl server status.
 
 <a id="describe"></a>
 

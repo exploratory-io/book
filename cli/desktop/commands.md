@@ -12,6 +12,8 @@ The commands you will use most, grouped by purpose.
 | expl tools list | All available commands (read-only or not, and risk) |
 | expl tools describe \<command\> | Arguments, types, required or not, allowed values (put a two-word command in quotes, for example expl tools describe "dashboard get") |
 
+Exit code 0 from expl tools list does not mean that Desktop is connected. When Desktop is not running, it shows the list it saved last time, or an empty list when none is saved. To check the connection, run expl status.
+
 <a id="cmd-project"></a>
 
 ## Projects
@@ -68,9 +70,9 @@ The commands you will use most, grouped by purpose.
 
 | Command | Purpose |
 | --- | --- |
-| expl execution get \<execution_id\> | Check the state of an operation you did not wait for |
+| expl execution get \<execution_id\> --operation-id \<operation_id\> | Check the state of an operation you did not wait for, with the two ids that --no-wait printed |
 | expl call \<tool_name\> | Call an operation by its tool name |
-| expl lang \[en\|ja\] | Show or switch the display language (it exits with code 2 when it cannot decide the target project; for example expl lang --project \<id\>) |
+| expl lang \[en\|ja\] | Show or switch the display language of Desktop (switching also changes the language of Desktop itself; run expl status first to check the connection; it exits with code 2 when it cannot decide the target project; for example expl lang --project \<id\>) |
 | expl skill | Print a description for AI agents |
 
 <a id="more"></a>

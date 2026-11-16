@@ -14,6 +14,8 @@ A command that needs a project works on one project. Which one is decided in a f
 
 The one higher in the list wins.
 
+There are exceptions. A project id that you give to the command itself, or as project_id in the --input JSON, is used as it is. For a command whose project is optional, EXPL_PROJECT and the default set with expl project use are not used. expl lang also uses an open project when none of the three is set.
+
 <a id="name"></a>
 
 ## Choosing by name

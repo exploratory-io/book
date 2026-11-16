@@ -1,6 +1,6 @@
 # Quickstart
 
-Install expl, sign in, find and read a published note, then aggregate data, in five steps.
+Install expl, sign in, find and read published data, then aggregate it, in five steps.
 
 <a id="steps"></a>
 
@@ -36,7 +36,7 @@ Write the search words right after the command. A value written without a flag n
 expl server search "Sales Orders" --scope all --type data
 ```
 
---scope all searches content published by other people as well as your own. --type data limits the result to data.
+--scope all searches content published by other people as well as your own. --type data limits the result to data. An empty result means that nothing matched; it is not a sign-in error.
 
 **Result**
 
@@ -53,7 +53,7 @@ hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  dat
 expl server fetch <id> --json
 ```
 
-Replace \<id\> with an id from the search result. --json prints the server's result as JSON. In the result below, IDs, URLs, and names are replaced for illustration. Long output is trimmed.
+Replace \<id\> with an id from the search result. --json prints the server's result as JSON. In the result below, IDs, URLs, and names are replaced for illustration. Long output is trimmed, so the JSON below is an excerpt, not a complete JSON.
 
 **Result**
 
@@ -61,7 +61,7 @@ Replace \<id\> with an id from the search result. --json prints the server's res
 {
   "id": "hI6jK7lM8n",
   "title": "Sales Orders",
-  "text": "# Sales Orders\n\nRows (total): 23,131\n\n## Columns\n\n| name | type | description |\n| --- | --- | --- |\n| order_id…,
+  "text": "# Sales Orders\n\nRows (total): 23,131\n\n## Columns\n\n| name | type | description |\n| --- | --- | --- |\n| order_id… (trimmed)",
   "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
   "metadata": {
     "update_status": {

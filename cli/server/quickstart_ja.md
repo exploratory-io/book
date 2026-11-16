@@ -1,6 +1,6 @@
 # クイックスタート
 
-expl をインストールしてサインインし、パブリッシュされたノートを検索して読み、データを集計するまでを 5 段階で説明します。
+expl をインストールしてサインインし、パブリッシュされたデータを検索して読み、集計するまでを 5 段階で説明します。
 
 <a id="steps"></a>
 
@@ -36,7 +36,7 @@ expl server login
 expl server search "Sales Orders" --scope all --type data
 ```
 
---scope all は、自分のコンテンツに加えて、ほかの人が公開したコンテンツも検索します。--type data は、結果をデータだけに絞り込みます。
+--scope all は、自分のコンテンツに加えて、ほかの人が公開したコンテンツも検索します。--type data は、結果をデータだけに絞り込みます。結果が空のときは、該当するものがなかったということで、サインインのエラーではありません。
 
 **実行結果**
 
@@ -53,7 +53,7 @@ hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  dat
 expl server fetch <id> --json
 ```
 
-\<id\> は、検索結果に表示された id に置き換えます。--json を付けると、サーバーの結果を JSON のまま出力します。実行結果の ID・URL・人名は、説明用に置き換えています。長い出力は省略しています。
+\<id\> は、検索結果に表示された id に置き換えます。--json を付けると、サーバーの結果を JSON のまま出力します。実行結果の ID・URL・人名は、説明用に置き換えています。長い出力は省略しているので、次の JSON は抜粋で、完全な JSON ではありません。
 
 **実行結果**
 
@@ -61,7 +61,7 @@ expl server fetch <id> --json
 {
   "id": "hI6jK7lM8n",
   "title": "Sales Orders",
-  "text": "# Sales Orders\n\nRows (total): 23,131\n\n## Columns\n\n| name | type | description |\n| --- | --- | --- |\n| order_id…,
+  "text": "# Sales Orders\n\nRows (total): 23,131\n\n## Columns\n\n| name | type | description |\n| --- | --- | --- |\n| order_id… (trimmed)",
   "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
   "metadata": {
     "update_status": {

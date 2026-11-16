@@ -2,6 +2,10 @@
 
 目的からコマンドを選びます。名前を選ぶと、引数と例を確認できます。
 
+書式の読み方: \<値\> は自分の値に置き換えます。\[ \] で囲んだ項目は省略できます。真偽値は --flag または --no-flag で指定します。値の配列は、--tables summary --tables table のように、フラグを繰り返して渡します。JSON の例は bash 向けの書き方です。Windows では、JSON ファイルを --input で渡すこともできます。
+
+サインインや接続に関するコマンドは、それぞれのページにあります。[サインインと状態](login_ja.md)（login、logout、status）、[API キー](token_ja.md)（token）、[コマンドを調べる](tools_ja.md)（tools list、tools describe）、[スキル](skill_ja.md)（skill）です。
+
 <a id="commands-search"></a>
 
 ## 探す・読む
@@ -1186,7 +1190,7 @@ expl server chart get-image <id> --chart <chart> --json
 
 \<id\> はノートなどの id、\<chart\> は fetch の結果にあるチャートの名前に置き換えます。
 
-実行結果は、ダッシュボード dE5fG6hI7j のチャート iJ6kL7mN（売上推移）で実行したものです。画像の保存先を示す image_path の行は省略しています。公開時に画像が保存されていないチャートは、NOT_FOUND（"This chart has no stored image"）になります。その場合は chart get-data を使います。
+出力の形を示す例で、値は説明用です。ダッシュボード dE5fG6hI7j のチャート iJ6kL7mN（売上推移）の例です。画像の保存先を示す image_path の行は省略しています。公開時に画像が保存されていないチャートは、NOT_FOUND（"This chart has no stored image"）になります。その場合は chart get-data を使います。
 
 **実行結果**
 
@@ -1214,11 +1218,11 @@ expl server chart get-image <id> --chart <chart> --json
       "original_height": 400,
       "bytes": 41970,
       "resized": false,
-      "captured_at": "2022-06-24T08:51:53.397Z",
+      "captured_at": "2026-11-12T09:26:51.086Z",
       "may_be_stale": true
     },
     "context": {
-      "publication_version": "2022-06-24T08:51:53.397Z",
+      "publication_version": "2026-11-12T09:26:51.086Z",
       "data_as_of": "2026-11-14T22:02:21.534Z",
       "parameters": {
         "applied": true,
@@ -1250,7 +1254,7 @@ expl server chart get-image <id> --chart <chart> --json
   },
   "warnings": [
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
-    "The data was refreshed at 2026-11-14T22:02:21.534Z, after this image was captured at 2022-06-24T08:51:53.397Z. The image may not show the current numbers; use chart_get_d…"
+    "The data was refreshed at 2026-11-14T22:02:21.534Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_d…"
   ],
   "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j"
 }

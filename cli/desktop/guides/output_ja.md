@@ -12,9 +12,21 @@
 
 ## 人が読む形と JSON
 
-既定は人が読む形です。--json を付けると、結果を 1 つの JSON で出します。
+既定は人が読む形です。--json を付けると、結果を 1 つの JSON で出します。expl project use、expl skill、expl completion は例外で、常に文字で出力します。
 
-失敗したときは、--json では標準出力に { "success": false, "error_code": ..., "message": ... } の形で出ます。警告は --json でも標準エラーに 1 行ずつ出ます。
+失敗したときは、--json では標準出力に次のような JSON が出ます。message はエラーによって変わり、details と suggested_actions には、補足があるときだけ内容が入ります。警告は --json でも標準エラーに 1 行ずつ出ます。
+
+```json
+{
+  "success": false,
+  "error_code": "USAGE",
+  "message": "Invalid value for --timeout.",
+  "details": null,
+  "suggested_actions": []
+}
+```
+
+これらのページに載せている JSON の出力は、例に関係のない行を省いた抜粋が多く、完全な JSON ではありません。
 
 ```sh
 expl dashboard get d123 --json
@@ -24,7 +36,7 @@ expl dashboard get d123 --json
 
 ## 言語
 
-expl 自身が書く文言は、Desktop の言語に従います。expl lang ja または expl lang en で切り替えます。言語を渡さずに実行すると、いまの言語を表示します（例: expl lang --project \<id\>）。対象のプロジェクトを決められないとき（--project、EXPL_PROJECT、既定のプロジェクト、開いているプロジェクトのどれもないとき）は、終了コード 2 で終わります。
+expl 自身が書く文言は、Desktop の言語に従います。expl lang ja または expl lang en で切り替えます。Desktop 自体の表示言語も変わります。先に expl status で、Desktop に接続できていることを確認してください。言語を渡さずに実行すると、いまの言語を表示します（例: expl lang --project \<id\>）。対象のプロジェクトを決められないとき（--project、EXPL_PROJECT、既定のプロジェクト、開いているプロジェクトのどれもないとき）は、終了コード 2 で終わります。
 
 ```sh
 expl lang ja

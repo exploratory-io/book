@@ -26,7 +26,7 @@ Find a fix by symptom.
 | --token was removed. … | Set EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
 | Too many failed API key attempts. Try again later. | Many refused keys came from this address in a short time. Fix the key and try again later. |
 | The redirect URL has no authorization code. | With --no-browser, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
-| Exit code 4 (Desktop) | Sign in to Exploratory Desktop. |
+| Exit code 4 (Desktop) | See the code at the end of the message in [Exit codes](exit-codes.md#action): NOT_SIGNED_IN, UNAUTHORIZED, CHANNEL_DISABLED or PERMISSION_DENIED. |
 
 - [API keys](token.md) - Create, pass and revoke an API key.
 
@@ -38,6 +38,7 @@ Find a fix by symptom.
 | --- | --- |
 | Exit code 3 (Server) | The server cannot be reached. Check the network and run it again. |
 | Exit code 3 (Desktop) | Start Exploratory Desktop and run it again. |
+| A message names a tool, such as chart_query | Run expl server tools describe \<tool_name\> to see the command for that tool. |
 | Odd results | Add --verbose to see what is sent and received. Review the output before you paste it anywhere. |
 
 <a id="limits"></a>

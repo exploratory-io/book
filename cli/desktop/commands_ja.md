@@ -12,6 +12,8 @@
 | expl tools list | 使えるコマンドの一覧（読むだけか、リスク） |
 | expl tools describe \<command\> | 引数、型、必須か、選べる値（2 語のコマンドは引用符で囲みます。例: expl tools describe "dashboard get"） |
 
+expl tools list が終了コード 0 で終わっても、Desktop に接続できているとは限りません。Desktop が起動していないときは、前回保存した一覧を表示し、保存がないときは空の一覧になります。接続は、expl status で確認します。
+
 <a id="cmd-project"></a>
 
 ## プロジェクト
@@ -68,9 +70,9 @@
 
 | コマンド | できること |
 | --- | --- |
-| expl execution get \<execution_id\> | 待たなかった操作の状態を確認する |
+| expl execution get \<execution_id\> --operation-id \<operation_id\> | 待たなかった操作の状態を確認する（--no-wait が表示した 2 つの id を指定します） |
 | expl call \<tool_name\> | 道具の名前でそのまま呼ぶ |
-| expl lang \[en\|ja\] | 表示の言語を確認する、切り替える（対象のプロジェクトを決められないときは、終了コード 2 になります。例: expl lang --project \<id\>） |
+| expl lang \[en\|ja\] | Desktop の表示言語を確認する、切り替える（切り替えると、Desktop 自体の言語も変わります。先に expl status で接続を確認してください。対象のプロジェクトを決められないときは、終了コード 2 になります。例: expl lang --project \<id\>） |
 | expl skill | AI エージェント向けの説明を出力する |
 
 <a id="more"></a>

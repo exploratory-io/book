@@ -25,7 +25,31 @@ Review the output of --verbose before you paste it anywhere.
 A few commands are exceptions.
 
 - expl status does not use the --input JSON. It ignores it if you pass one.
-- With --help, expl project use, expl tools describe and expl call give a usage error (exit code 2) instead of help. See Common commands for how to use them.
-- With --help, expl lang does not show help. It goes on to show the language (and fails if it cannot decide the target project).
+- --help shows help for the generated commands and for expl tools. The built-in commands (expl status, expl project use, expl lang, expl skill and expl completion) do not show help: they run. For example, expl project use \<id\> --help changes the default project, and expl lang --help goes on to show the language (it fails if it cannot decide the target project). Check their usage in [Common commands](commands.md).
+- expl tools describe and expl call, given no argument, give a usage error (exit code 2).
+- --json has no effect on expl project use, expl skill and expl completion. They always print text.
+- The built-in commands (expl status, expl project use, expl lang, expl skill and expl completion) do not report an unknown flag or an extra argument. Pass only what their usage shows. The generated commands reject them (exit code 2).
 
-For shell completion, expl completion bash, expl completion zsh and expl completion powershell print a completion script.
+--timeout takes a number of seconds. A value that is not a number is a usage error (exit code 2).
+
+<a id="env"></a>
+
+## Environment variables
+
+| Variable | Used for | Order of precedence |
+| --- | --- | --- |
+| EXPL_PROJECT | The project that Desktop commands work on | --project, then EXPL_PROJECT, then the default set with expl project use. See [Choose a project](guides/projects.md). |
+| EXPL_SERVER_URL | The server that expl server calls | --url, then EXPL_SERVER_URL, then the server you signed in to most recently, then https://exploratory.io. See [The server URL](../server/login.md#url). |
+| EXPL_SERVER_TOKEN | An API key for expl server | Used before a saved login. See [API keys](../server/token.md). |
+
+<a id="completion"></a>
+
+## Shell completion
+
+expl completion bash, expl completion zsh and expl completion powershell print a completion script. Run the script to turn completion on.
+
+| Shell | To turn it on in the current session | To keep it for later sessions |
+| --- | --- | --- |
+| bash | eval "$(expl completion bash)" | Add that line to ~/.bashrc |
+| zsh | eval "$(expl completion zsh)" | Add that line to ~/.zshrc |
+| PowerShell | expl completion powershell \| Out-String \| Invoke-Expression | Add that line to $PROFILE |

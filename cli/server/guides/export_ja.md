@@ -14,7 +14,7 @@ dataframe export は、dataset query と同じ指定で絞り込みや集計を�
 expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 ```
 
-\<dataset_id\> は、データの id に置き換えます。実行結果は、データ Sales Orders（id は hI6jK7lM8n）で実行したものです。download_url（ダウンロードリンク）の行は省略しています。
+\<dataset_id\> は、データの id に置き換えます。実行結果は、データ Sales Orders（id は hI6jK7lM8n）で実行したものです。download_url（ダウンロードリンク）の行は省略しているので、次の JSON は抜粋で、完全な JSON ではありません。
 
 **実行結果**
 
@@ -48,7 +48,15 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 
 ダウンロードリンクは 15 分間有効で、サインインしている同じユーザーだけが使用できます。形式は --format で指定します。既定は csv で、UTF-8（BOM 付き）のため、Excel で正しく開けます。ファイルの保存先は --output で指定します。
 
-> result に rows と expires_at が表示されていれば、保存できています。
+上の例は、サーバー上にファイルを作り、ダウンロードリンクを返します。手元のコンピューターには何も保存されません。手元に保存するときは、--output を付けます。
+
+```sh
+expl server dataframe export <dataset_id> --mode rows --limit 5 --output rows.csv --json
+```
+
+保存できたときは、結果に saved（保存先のパス）と bytes が表示されます。
+
+> result に rows と expires_at が表示されていれば、サーバー上にファイルができています。saved と bytes も表示されていれば、手元にも保存できています。
 
 ### 2. ダウンロードが許可されていない場合
 
@@ -78,6 +86,8 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 ```
 
 この場合は、fetch または dataframe get-schema で、公開した人が共有している内容を確認するか、URL をブラウザで開きます。
+
+メッセージには、dataframe_get_schema のような道具の名前が出ることがあります。expl server tools describe \<tool_name\> で、その道具に対応するコマンドを確認できます。
 
 > error_code が DATA_EGRESS_LIMIT であれば、このデータはファイルとして保存できません。
 

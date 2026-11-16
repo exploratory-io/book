@@ -55,10 +55,16 @@ Replace Sales Analysis with the name of your project.
 ### 8. Get a dashboard
 
 ```sh
+expl dashboard list
+```
+
+Choose the id of a dashboard from the list. If the list is empty, the project has no dashboard yet.
+
+```sh
 expl dashboard get d123 --json
 ```
 
-Replace d123 with the id of a dashboard.
+Replace d123 with the id you chose.
 
 If something fails, see the troubleshooting page.
 

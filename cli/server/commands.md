@@ -2,6 +2,10 @@
 
 Choose a command by purpose. Open its name to see arguments and examples.
 
+How to read the usage lines: replace a \<value\> placeholder with your own value; an item in \[brackets\] can be left out. Write a boolean as --flag or --no-flag. To give a list of values, repeat the flag, for example --tables summary --tables table. The JSON examples are written for bash; on Windows you can also pass a JSON file with --input.
+
+The commands for signing in and managing the connection are on their own pages: [Sign-in and status](login.md) (login, logout, status), [API keys](token.md) (token), [Inspect commands](tools.md) (tools list, tools describe) and [Skills](skill.md) (skill).
+
 <a id="commands-search"></a>
 
 ## Find and read

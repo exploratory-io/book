@@ -34,8 +34,6 @@ GitHub Actions の例です。\<id\> は、読みたいコンテンツの id に
     EXPL_SERVER_URL: https://exploratory.io
 ```
 
-ファイル全体の例は、expl のリポジトリの examples フォルダにあります（GitHub Actions と Bitbucket Pipelines）。
-
 <a id="exit"></a>
 
 ## 終了コード

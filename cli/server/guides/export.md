@@ -14,7 +14,7 @@ dataframe export filters and aggregates with the same inputs as dataset query an
 expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 ```
 
-Replace \<dataset_id\> with the id of a data item. The result below was run on the data Sales Orders (id hI6jK7lM8n). The download_url line (the download link) is trimmed.
+Replace \<dataset_id\> with the id of a data item. The result below was run on the data Sales Orders (id hI6jK7lM8n). The download_url line (the download link) is trimmed, so the JSON below is an excerpt, not a complete JSON.
 
 **Result**
 
@@ -48,7 +48,15 @@ Replace \<dataset_id\> with the id of a data item. The result below was run on t
 
 The download link expires in 15 minutes and works only for the same signed-in user. Choose the format with --format. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Use --output to choose where to save the file.
 
-> If result shows rows and expires_at, the file is saved.
+The example above creates the file on the server and returns a download link. Nothing is saved on your computer. To save it on your computer, add --output:
+
+```sh
+expl server dataframe export <dataset_id> --mode rows --limit 5 --output rows.csv --json
+```
+
+When the file is saved, the result shows saved (the path) and bytes.
+
+> If result shows rows and expires_at, the file is saved on the server. If saved and bytes are shown, it is saved on your computer too.
 
 ### 2. When downloading is not allowed
 
@@ -78,6 +86,8 @@ The result below was run on the data with the id US-Home-Sales-1963-2016-gH3iJ4k
 ```
 
 In this case, use fetch or dataframe get-schema for what the publisher shares, or open the URL in the browser.
+
+A message can name a tool, such as dataframe_get_schema. Run expl server tools describe \<tool_name\> to see the command for that tool.
 
 > If error_code is DATA_EGRESS_LIMIT, this data cannot be saved as a file.
 

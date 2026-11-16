@@ -44,7 +44,7 @@ Replace \<version\> with the version you want. Node.js 20 or later is required. 
 npx -y @exploratory/cli --version
 ```
 
-Runs expl once without installing it. Node.js 20 or later is required; see the Node.js website (https://nodejs.org/) to install it.
+Runs expl once without installing it. To run another command, put it after the package name, for example npx -y @exploratory/cli server login. Node.js 20 or later is required; see the Node.js website (https://nodejs.org/) to install it.
 
 > If the first line reads expl \<version\>, it is installed.
 
@@ -66,7 +66,7 @@ To sign in without a browser, use an API key: run expl server login --with-token
 expl server search "Sales Orders" --scope all --type data
 ```
 
---scope all searches content published by other people as well as your own. --type data limits the result to data.
+--scope all searches content published by other people as well as your own. --type data limits the result to data. An empty result means that nothing matched; it is not a sign-in error. To check that you are signed in, run expl server status.
 
 **Result**
 

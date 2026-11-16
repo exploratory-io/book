@@ -19,17 +19,7 @@ MCP is a shared standard for AI apps to connect to outside services. You can use
 
 ## Teach the agent with a skill
 
-A skill is a description file (SKILL.md) that teaches an AI agent how to use a tool. expl prints a skill that describes itself. Save it where your agent reads skills. For Claude Code:
-
-```sh
-mkdir -p ~/.claude/skills/exploratory-expl-server
-```
-
-```sh
-expl server skill > ~/.claude/skills/exploratory-expl-server/SKILL.md
-```
-
-expl server skill is for Exploratory Server. When expl can reach the server, the output also carries the latest guidance from it, so prefer this command. The skill for Desktop is described on the Desktop page.
+Skills are optional. expl works without one: expl server --help and expl server tools describe show how to use it. A skill is a description file (SKILL.md) that teaches an AI agent how to use a tool, and expl server skill prints one for Exploratory Server. The steps to save it are on the Skills page. The skill for Desktop is described on the Desktop page.
 
 - [Skills](../skill.md) - Describes how to save the skill.
 - [Use with Desktop](../../desktop/guides/agents.md) - Describes how to save the skill printed by expl skill.
