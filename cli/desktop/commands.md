@@ -1,6 +1,6 @@
 # Desktop commands (expl)
 
-The commands you will use most, grouped by purpose. Every command is listed in [All commands](#more).
+The commands you will use most, grouped by purpose. For the full list, including the rest, see [All commands](#more) later on this page.
 
 <a id="cmd-check"></a>
 
