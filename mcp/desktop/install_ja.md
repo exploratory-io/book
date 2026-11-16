@@ -54,7 +54,7 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
    - Claude Code では、`/mcp` を開いて、exploratory-desktop が接続されていることを確認します。
    - Codex では、`codex mcp list` を実行して、exploratory-desktop が並んでいることを確認します。
    - Antigravity では、アプリの Customizations > Installed に、プラグインが表示されていることを確認します。
-   - Cursor では、~/.cursor/mcp.json に exploratory-desktop が登録されていることを確認します。
+   - Cursor では、カードの Cursor の行に「インストール済み - v」とプラグインのバージョンが表示されていることを確認します。
 
 MCP がオフだと表示されたときは、システム設定に戻り、「MCP」のスイッチをオンにして「保存」を選んだかを確かめます。
 
@@ -69,7 +69,7 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 | Claude Code | Exploratory Desktop のプラグイン（スキルを含む） | 「インストール済み - v」とプラグインのバージョン。「インストール」の代わりに「再インストール」と「削除」 |
 | Codex | 同上 | 同上 |
 | Antigravity | 同上 | 同上 |
-| Cursor | ~/.cursor/mcp.json に exploratory-desktop の項目（コマンドは exploratory-mcp）を登録するだけです。スキルは入りません | 「インストール済み」だけで、バージョンは表示されません。ボタンは「再インストール」と「削除」 |
+| Cursor | 同じです。~/.cursor/mcp.json には書かず、プラグインを Cursor のプラグインのフォルダ（~/.cursor/plugins/local/exploratory）へコピーします。~/.cursor/mcp.json に古い exploratory-desktop の項目が残っていると、カードが削除します。ほかの項目は残ります | 同じです |
 
 どの AI ツールも、インストールのあとに起動し直します。
 
@@ -134,24 +134,7 @@ Git が必要です。プラグインは、Antigravity のアプリの Customiza
 
 **Cursor**
 
-次の `exploratory-desktop` の項目を ~/.cursor/mcp.json に追加します。ファイルにすでに `mcpServers` がある場合は、その中に `exploratory-desktop` の項目だけを追加し、ほかのサーバーの設定は残します。以下は、新しいファイルを作る場合の全体の例です。スキルなしで Desktop の MCP が入ります。カードが書くのと同じ内容です。
-
-```json
-{
-  "mcpServers": {
-    "exploratory-desktop": {
-      "command": "exploratory-mcp"
-    }
-  }
-}
-```
-
-スキルも使うときは、Cursor の CLI でプラグインのフォルダを読み込みます（Server の MCP の desktop_mcp_setup_guide が Cursor 向けに返す手順と同じです）。
-
-```sh
-git clone https://github.com/exploratory-io/exploratory
-agent --plugin-dir ./exploratory/plugins/exploratory-desktop
-```
+カードから入れます。手作業で行う別の手順はありません。カードが、スキルを含むプラグインを ~/.cursor/plugins/local/exploratory へコピーします。
 
 <a id="update"></a>
 
@@ -160,15 +143,13 @@ agent --plugin-dir ./exploratory/plugins/exploratory-desktop
 入れ方によって、操作が違います。
 
 - カードで入れたもの（Claude Code、Codex、Antigravity、Cursor）: カードの「再インストール」で、最新のプラグインに入れ直します（更新も、この操作で行います）。外すときは、同じカードの「削除」を選びます。
-- 手作業で入れたもの: 次の表のコマンドで、更新と削除をします。
+- 手作業で入れたもの（Claude Code、Codex、Antigravity）: 次の表のコマンドで、更新と削除をします。Cursor には手作業で入れる方法がないので、カードを使います。
 
 | AI ツール | 更新 | 削除 |
 | --- | --- | --- |
 | Claude Code | claude plugin marketplace update exploratory を実行し、続けて claude plugin update exploratory@exploratory を実行して、Claude Code を起動し直します | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory を実行し、続けて codex plugin remove exploratory@exploratory と codex plugin add exploratory@exploratory を実行します | codex plugin remove exploratory@exploratory |
 | Antigravity | クローンしたフォルダで git pull を実行し、もう一度 agy plugin install を実行します | Antigravity のプラグインの設定で、プラグインを削除します |
-| Cursor（agent --plugin-dir で読み込んだとき） | クローンしたフォルダで git pull を実行し、もう一度 agent --plugin-dir で起動します | --plugin-dir を使わないようにします |
-| Cursor（~/.cursor/mcp.json を手で書いたとき） | 内容を書き直します | ~/.cursor/mcp.json から exploratory-desktop を消します |
 
 Desktop の MCP は、Exploratory Desktop を終了すると止まります。プラグインを削除しても、Server の MCP の接続には影響しません。
 

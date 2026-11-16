@@ -31,7 +31,7 @@ Enter Exploratory as the Name, and keep the Type as Remote HTTPS. The image show
 
 ![The Add a custom connector form](images/en/grok-bot-02-form.png)
 
-Grok Bot may connect without showing a sign-in screen.
+When the browser opens, sign in to Exploratory and allow the access.
 
 ### Check that it is connected
 

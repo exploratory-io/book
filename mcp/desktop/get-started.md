@@ -25,7 +25,7 @@ Check that the connection works in your AI tool.
 - Claude Code: open /mcp and check that exploratory-desktop is connected.
 - Codex: run codex mcp list and check that exploratory-desktop is listed.
 - Antigravity: check that the plugin appears under Customizations > Installed in the app.
-- Cursor: check that exploratory-desktop is registered in ~/.cursor/mcp.json.
+- Cursor: check that the Cursor row of the card shows "Installed - v" followed by the plugin version.
 
 ### 4. Ask the AI to look at your data
 

@@ -54,7 +54,7 @@ If you do not save, the MCP switch and the Allow create, edit and delete setting
    - In Claude Code, open `/mcp` and check that exploratory-desktop is connected.
    - In Codex, run `codex mcp list` and check that exploratory-desktop is listed.
    - In Antigravity, check that the plugin appears under Customizations > Installed in the app.
-   - In Cursor, check that exploratory-desktop is registered in ~/.cursor/mcp.json.
+   - In Cursor, check that the Cursor row of the card shows "Installed - v" followed by the plugin version.
 
 If a call says that MCP is turned off, go back to System Settings and check that you turned the MCP switch on and chose Save.
 
@@ -69,7 +69,7 @@ The card works the same way, but what it installs differs a little.
 | Claude Code | The Exploratory Desktop plugin (with its skills) | "Installed - v" followed by the plugin version; Reinstall and Remove take the place of Install |
 | Codex | Same | Same |
 | Antigravity | Same | Same |
-| Cursor | Only adds the exploratory-desktop entry (command exploratory-mcp) to ~/.cursor/mcp.json. No skills are installed | Installed, without a version. The buttons are Reinstall and Remove |
+| Cursor | Same. It copies the plugin to the Cursor plugin folder (~/.cursor/plugins/local/exploratory) instead of writing ~/.cursor/mcp.json. If ~/.cursor/mcp.json still has an old exploratory-desktop entry, the card deletes it; other entries stay | Same |
 
 Restart the AI tool after installing, whichever one it is.
 
@@ -134,24 +134,7 @@ Needs Git. The plugin appears in the Antigravity app under Customizations \> Ins
 
 **Cursor**
 
-Add the `exploratory-desktop` entry below to ~/.cursor/mcp.json. If `mcpServers` already exists in the file, add only the `exploratory-desktop` entry inside it and keep the other server settings. The example shows a complete new file. It adds the Desktop MCP without the skills, the same entry the card writes.
-
-```json
-{
-  "mcpServers": {
-    "exploratory-desktop": {
-      "command": "exploratory-mcp"
-    }
-  }
-}
-```
-
-To also use the skills, load the plugin folder with the Cursor CLI (the same steps that desktop_mcp_setup_guide of the Server MCP returns for Cursor).
-
-```sh
-git clone https://github.com/exploratory-io/exploratory
-agent --plugin-dir ./exploratory/plugins/exploratory-desktop
-```
+Install it with the card. There is no separate step to do by hand: the card copies the plugin, with its skills, to ~/.cursor/plugins/local/exploratory.
 
 <a id="update"></a>
 
@@ -160,15 +143,13 @@ agent --plugin-dir ./exploratory/plugins/exploratory-desktop
 It depends on how you installed it.
 
 - Installed with the card (Claude Code, Codex, Antigravity, Cursor): choose Reinstall on the card to install the latest plugin again (this is also how you update). To remove it, choose Remove on the same card.
-- Installed by hand: use the commands in the table below to update and remove.
+- Installed by hand (Claude Code, Codex, Antigravity): use the commands in the table below to update and remove. Cursor has no by-hand method; use the card.
 
 | AI tool | Update | Remove |
 | --- | --- | --- |
 | Claude Code | claude plugin marketplace update exploratory, then claude plugin update exploratory@exploratory, and restart Claude Code | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory, then codex plugin remove exploratory@exploratory and codex plugin add exploratory@exploratory | codex plugin remove exploratory@exploratory |
 | Antigravity | Run git pull in the cloned folder, then agy plugin install again | Remove the plugin in Antigravity's plugin settings |
-| Cursor (loaded with agent --plugin-dir) | Run git pull in the cloned folder and start agent --plugin-dir again | Stop using --plugin-dir |
-| Cursor (you wrote ~/.cursor/mcp.json by hand) | Rewrite its contents | Remove exploratory-desktop from ~/.cursor/mcp.json |
 
 The Desktop MCP stops when you quit Exploratory Desktop. Removing the plugin does not affect your Server MCP connection.
 

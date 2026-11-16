@@ -25,7 +25,7 @@ AI ツールで、接続できたかを確かめます。
 - Claude Code: /mcp を開き、exploratory-desktop が接続済みかを確かめます。
 - Codex: codex mcp list を実行し、exploratory-desktop が一覧にあるかを確かめます。
 - Antigravity: アプリの Customizations \> Installed に、プラグインが表示されているかを確かめます。
-- Cursor: ~/.cursor/mcp.json に exploratory-desktop が登録されているかを確かめます。
+- Cursor: カードの Cursor の行に、「インストール済み - v」とプラグインのバージョンが表示されているかを確かめます。
 
 ### 4. AI にデータを見せる
 
