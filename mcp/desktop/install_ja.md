@@ -128,7 +128,7 @@ Git が必要です。プラグインは、Antigravity のアプリの Customiza
 
 **Cursor**
 
-次の内容を ~/.cursor/mcp.json に追加します。スキルなしで Desktop の MCP が入ります。カードが書くのと同じ内容です。
+次の `exploratory-desktop` の項目を ~/.cursor/mcp.json に追加します。ファイルにすでに `mcpServers` がある場合は、その中に `exploratory-desktop` の項目だけを追加し、ほかのサーバーの設定は残します。以下は、新しいファイルを作る場合の全体の例です。スキルなしで Desktop の MCP が入ります。カードが書くのと同じ内容です。
 
 ```json
 {

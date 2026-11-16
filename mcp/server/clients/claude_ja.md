@@ -1,16 +1,16 @@
 # Claude アプリにつなぐ（デスクトップ・Web 共通）
 
 Claude に、Exploratory のサーバーを「カスタムコネクタ」として追加します。コネクタとは、Claude が外部のサービスのデータや機能を使うための接続です。接続すると、Claude のチャットから、Exploratory に公開されたノートやデータを読めるようになります。
-かかる時間は 5 分ほどです。Exploratory のアカウントと、Claude のデスクトップアプリまたは Web 版（claude.ai）を用意してください。
+かかる時間は 5 分ほどです。Exploratory のアカウントと、Claude のデスクトップアプリまたは Web（claude.ai）を用意してください。
 
-コネクタの画面は、Claude のデスクトップアプリと、Web 版で同じです。
+コネクタの画面は、Claude のデスクトップアプリと、Web（claude.ai）で同じです。
 
 <a id="need"></a>
 
 ## 必要なもの
 
 - Exploratory のアカウント
-- Claude のデスクトップアプリ、または Web 版（claude.ai）
+- Claude のデスクトップアプリ、または Web（claude.ai）
 
 API キーやクライアント ID は要りません。
 
@@ -72,10 +72,10 @@ Claude のデスクトップアプリで、設定の「コネクタ」の画面�
 3. 次のように送信します。
 
    ```text
-   Exploratory にある「Sales Orders」のデータを探して
+   接続した Exploratory Server で、閲覧できるコンテンツを最大 3 件、URL 付きで一覧して。見つからなければ、その旨を教えて。
    ```
 
-Sales Orders のデータが URL つきで表示されれば、使えています。
+コンテンツが URL つきで表示されれば、使えています。結果が 0 件でも、認証や接続に失敗したとは限りません。
 
 ### Claude Code でも使う
 

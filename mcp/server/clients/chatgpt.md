@@ -74,10 +74,10 @@ If the server you added appears, it was added.
 4. Send this.
 
    ```text
-   Find the "Sales Orders" data on Exploratory.
+   Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If the Sales Orders data appears with its URL, it works.
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed.
 
 <a id="web"></a>
 
@@ -153,10 +153,10 @@ The Developer field is blurred in the image. Information lists Developer, Catego
 3. Send this.
 
    ```text
-   Find the "Sales Orders" data on Exploratory.
+   Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If the Sales Orders data appears with its URL, it works.
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed.
 
 <a id="trouble"></a>
 

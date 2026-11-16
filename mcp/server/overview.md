@@ -57,68 +57,17 @@ The [Add from an app](clients/apps.md) page has the registration steps for each 
 
 ### 2. Sign in and authorize
 
-On the first call, your client opens a browser window. Sign in to Exploratory and approve the access. This sign-in does not need an API key. If your client cannot open a browser, connect with an API key instead (see [Connect with an API key](#apikey)).
+After registering the server, start authentication using your app's instructions. Some apps need a login command or an Authenticate button. When the browser opens, sign in to Exploratory and approve the access. This sign-in does not need an API key. If your client cannot open a browser, connect with an API key instead (see [Connect with an API key](#apikey)).
 
 ### 3. Try it
 
 ```text
-Find the "Sales Orders" data on Exploratory.
+Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
 ```
 
-> If the Sales Orders data appears with its URL, the connection works.
+> If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. If an error appears, follow the guidance for that message in [Limits and errors](limits.md).
 
-**The same operation run with the CLI**
-
-```sh
-expl server search "Sales Orders" --scope all --type data --limit 3 --json
-```
-
-With --json, the result the search tool returned is printed as it is. In the result below, long parts are omitted and IDs, URLs, and people's names are replaced for illustration.
-
-**Result**
-
-```text
-{
-  "results": [
-    {
-      "id": "hI6jK7lM8n",
-      "title": "Sales Orders",
-      "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
-      "type": "data",
-      "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
-      "author": "Alex Kim",
-      "team": null,
-      "updated_at": "2026-11-12T09:26:51.086Z",
-      "refreshed_at": "2026-11-12T08:12:13.528Z",
-      "tags": [
-        "sales",
-        "orders"
-      ],
-      "publication_version": "2026-11-12T09:26:51.086Z",
-      "data_as_of": "2026-11-12T08:12:13.528Z",
-      "columns": [
-        {
-          "name": "order_id",
-          "type": "character",
-          "description": "",
-          "missing_count": 0
-        },
-        {
-          "name": "line_no",
-          "type": "numeric",
-          "description": "",
-          "missing_count": 0
-        }
-… (trimmed)
-      ],
-      "column_count": 14,
-      "row_count": 23131
-    }
-  ],
-  "has_more": false,
-  "next_offset": null
-}
-```
+To run the same operation from a terminal, see [Exploratory CLI](../../cli/server/server.md).
 
 <a id="apikey"></a>
 
@@ -177,7 +126,7 @@ A tool is an operation the AI calls. They only read.
 | Find and read | fetch | Read a note, dashboard or slide as Markdown. |
 | Charts and analytics | chart_get_data | Get the numbers behind a chart. |
 | Charts and analytics | chart_get_image | Get a chart as an image. |
-| Charts and analytics | chart_query | Filter and aggregate the data of a chart on the server. |
+| Charts and analytics | chart_query | Filter and aggregate the data of a chart in a note, dashboard or slide on the server. |
 | Charts and analytics | analytics_get_result | Get coefficients, p-values and other results of an analytics. |
 | Data | dataframe_get_schema | Describe the columns and their approved meaning. |
 | Data | dataframe_preview | Show rows. |

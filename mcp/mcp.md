@@ -11,3 +11,4 @@ Connect an AI app to Exploratory through MCP. There are two sides, and the first
 - [Server](server/server.md) - Read content published on exploratory.io.
 - [Desktop](desktop/desktop.md) - Create and edit projects in Exploratory Desktop on your computer.
 
+Read in Japanese: [Server](server/server_ja.md) - read published content / [Desktop](desktop/desktop_ja.md) - work with local projects.

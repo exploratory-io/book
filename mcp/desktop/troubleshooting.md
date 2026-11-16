@@ -16,4 +16,7 @@ What to do for the messages you may see with the Desktop MCP.
 | A marketplace named "exploratory" is already registered from a different source … | Remove it with the command the message shows, then choose Install again. |
 | Your organization's settings may not allow this marketplace. | Ask your administrator. |
 | A Claude Code hook cannot find node | Install Node.js and add node to your PATH. |
+| `計画の関所: R の作業の後は、先にシナリオ（<題名>_シナリオ.md）と計画（<題名>_Exploratory作成計画.md）を保存してください。` | The plan gate stopped a create call because you or the AI did R work first. Ask the AI to save the scenario and the creation plan that the message names, then continue. To turn the check off, set `plan_gate` to `"false"`. See [Plugin settings](limits.md#plugin-settings). |
+| `計画の関所: この計画は記録されません。計画に、実在する HTML のファイル名が書かれていません。` | An HTML report was saved, but the plan does not name it. Write the file name of the saved HTML in the plan, and save the plan again. |
+| `ノートの関所: 次の分析の出力をノートの本文に {{analytics:ID\|出力}} で入れてから作り直してください。` | The note gate stopped creating or replacing a note. A predictive model or clustering made in this session has outputs that the note body does not embed. Ask the AI to add the outputs the message lists, then create the note again. The gate stops at most twice. |
 | The Desktop MCP does not work as you expect | Check that you are signed in to Exploratory Desktop. |

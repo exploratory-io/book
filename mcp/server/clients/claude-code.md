@@ -39,10 +39,10 @@ This registers only the server, without the plugin or skill.
 1. In the new session, send this.
 
    ```text
-   Find the "Sales Orders" data on Exploratory.
+   Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If the Sales Orders data appears with its URL, the connection works.
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
@@ -112,6 +112,8 @@ Replace exp_pat_... with your key. This leaves the key in your shell history. Us
 <a id="remove"></a>
 
 ## Disconnect
+
+Use the steps below for a connection registered directly by command. For a connector inherited from the Claude app, follow "Disconnect" on the [Claude app page](claude.md#remove).
 
 ```sh
 claude mcp remove exploratory-server

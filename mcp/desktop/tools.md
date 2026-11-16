@@ -27,7 +27,7 @@ The table below shows the main tools as examples. There are many more tools than
 
 ## All tools
 
-There are 146 tools in all (as of tam master). 68 are always available, and 78 work only when Allow create, edit and delete is on in System Settings \> MCP / CLI.
+There are 146 tools in all. 68 are always available, and 78 work only when Allow create, edit and delete is on in System Settings \> MCP / CLI. The tools you can use depend on your Exploratory Desktop version and the MCP / CLI settings.
 
 The always-available tools include reading and a few that only open a screen. With the switch off, the other tools stop with a permission error.
 

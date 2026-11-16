@@ -57,68 +57,17 @@ https://exploratory.io/mcp
 
 ### 2. サインインして許可する
 
-最初の呼び出しで、クライアントがブラウザのウィンドウを開きます。Exploratory にサインインして、アクセスを許可してください。この方法では API キーは不要です。クライアントがブラウザを開けないときは、代わりに API キーで接続します（[「API キーで接続する」](#apikey)を参照）。
+サーバーを登録したら、お使いのアプリの手順に従って認証を始めます。ログインのコマンドや Authenticate のボタンが必要なアプリもあります。ブラウザが開いたら、Exploratory にサインインして、アクセスを許可してください。この方法では API キーは不要です。クライアントがブラウザを開けないときは、代わりに API キーで接続します（[「API キーで接続する」](#apikey)を参照）。
 
 ### 3. 試す
 
 ```text
-Exploratory にある「Sales Orders」のデータを探して
+接続した Exploratory Server で、閲覧できるコンテンツを最大 3 件、URL 付きで一覧して。見つからなければ、その旨を教えて。
 ```
 
-> Sales Orders のデータが URL 付きで表示されていれば、接続できています。
+> コンテンツが URL 付きで表示されていれば、接続できています。結果が 0 件でも、認証や接続に失敗したとは限りません。エラーが表示されたときは、[制限とエラー](limits_ja.md)で、そのメッセージの対処を確認してください。
 
-**CLI で同じ操作を実行した結果**
-
-```sh
-expl server search "Sales Orders" --scope all --type data --limit 3 --json
-```
-
---json を付けると、search ツールが返した結果をそのまま出力します。次の結果は、長い部分を省略し、ID・URL・人名を説明用に置き換えた例です。
-
-**実行結果**
-
-```text
-{
-  "results": [
-    {
-      "id": "hI6jK7lM8n",
-      "title": "Sales Orders",
-      "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
-      "type": "data",
-      "description": "One row is one order line item (an order can have several lines, line_no 1-3). Period: order_date from 2025-01-01 to 2026-10-31. Columns: order_id (order ID), line_no (line number within the order), order_date, ship_date (shipping date; can be later than the order date, up to 2026-11-04), custome...",
-      "author": "山田 花子",
-      "team": null,
-      "updated_at": "2026-11-12T09:26:51.086Z",
-      "refreshed_at": "2026-11-12T08:12:13.528Z",
-      "tags": [
-        "sales",
-        "orders"
-      ],
-      "publication_version": "2026-11-12T09:26:51.086Z",
-      "data_as_of": "2026-11-12T08:12:13.528Z",
-      "columns": [
-        {
-          "name": "order_id",
-          "type": "character",
-          "description": "",
-          "missing_count": 0
-        },
-        {
-          "name": "line_no",
-          "type": "numeric",
-          "description": "",
-          "missing_count": 0
-        }
-… (trimmed)
-      ],
-      "column_count": 14,
-      "row_count": 23131
-    }
-  ],
-  "has_more": false,
-  "next_offset": null
-}
-```
+ターミナルから同じ操作をするときは、[Exploratory CLI](../../cli/server/server_ja.md) を参照してください。
 
 <a id="apikey"></a>
 
@@ -151,7 +100,7 @@ claude mcp add --transport http exploratory-server https://exploratory.io/mcp --
 | 403 | This IP address is not allowed for API keys. | 管理者が、API キーを使える IP アドレスを限定しています。許可されたアドレスから接続します。 |
 | 429 | Too many failed API key attempts. Try again later. | 同じアドレスから（IPv4 は同じアドレス、IPv6 は同じ /64 の範囲で数えます）、15 分のうちに 30 回を超えて、拒否されたキーが送られました。キーを直して、しばらくしてからやり直します。 |
 
-オンプレミス版や Hosted 版では、管理者が、API キーをオフにしたり、使える IP アドレスを限定したりできます。上の 403 の 2 つのメッセージが、その場合です。「データと権限」の、公開した人の設定は、キーにも同じように効きます。
+オンプレミス環境や Hosted 環境では、管理者が、API キーをオフにしたり、使える IP アドレスを限定したりできます。上の 403 の 2 つのメッセージが、その場合です。「データと権限」の、公開した人の設定は、キーにも同じように効きます。
 
 - [API キー](../../cli/server/token_ja.md) - キーの作成、有効期限、取り消し、安全な扱い方です。
 
@@ -177,7 +126,7 @@ Exploratory の「Sales Orders」データにはどんな列がある？ 売上�
 | 探す・読む | fetch | ノート、ダッシュボード、スライドを Markdown で読みます。 |
 | チャートとアナリティクス | chart_get_data | チャートの数値を取得します。 |
 | チャートとアナリティクス | chart_get_image | チャートを画像として取得します。 |
-| チャートとアナリティクス | chart_query | チャートのデータを、サーバーで絞り込み、集計します。 |
+| チャートとアナリティクス | chart_query | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
 | チャートとアナリティクス | analytics_get_result | 係数や p 値など、アナリティクスの結果を取得します。 |
 | データ | dataframe_get_schema | 列の名前、型、承認された意味を調べます。 |
 | データ | dataframe_preview | 行を表示します。 |

@@ -54,10 +54,10 @@ Exploratory の GitHub マーケットプレイスの exploratory@exploratory �
 1. 新しいチャットで、次のように送信します。
 
    ```text
-   Exploratory にある「Sales Orders」のデータを探して
+   接続した Exploratory Server で、閲覧できるコンテンツを最大 3 件、URL 付きで一覧して。見つからなければ、その旨を教えて。
    ```
 
-Sales Orders のデータが URL 付きで表示されていれば、接続できています。
+コンテンツが URL 付きで表示されていれば、接続できています。結果が 0 件でも、認証や接続に失敗したとは限りません。
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 

@@ -45,12 +45,12 @@ A tool that fails returns a result with isError: true and a JSON body. The body 
 
 | error_code | What to do |
 | --- | --- |
-| NOT_FOUND | The content does not exist or you cannot view it |
-| CHANNEL_DISABLED | The publisher turned off MCP access for this content |
+| NOT_FOUND | The content does not exist or you cannot view it. Open its URL in your browser and check whether the same account can view it. If not, ask the owner to check the sharing settings |
+| CHANNEL_DISABLED | The publisher turned off MCP access for this content. Ask the publisher to check the MCP access setting of the content |
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead |
 | PERSONALIZED_CONTENT | The content shows different data to each viewer. Open its URL in the browser |
 | CONTENT_UPDATING | The content is being republished. Try again in a few seconds |
-| UNSUPPORTED_OPERATION | The content cannot be read this way (for example, data with no queryable source) |
+| UNSUPPORTED_OPERATION | The content cannot be read this way (for example, data with no queryable source). Check which operations the content supports, and ask for a form it does support, such as its charts or summary |
 | INVALID_PARAMETER | Fix the argument named in details.field |
 | RESULT_TOO_LARGE | The result is too large. Add filters, select fewer columns, or aggregate |
 | SERVER_BUSY | The server is busy, another export of yours is running, or you reached the hourly export limit. See below |

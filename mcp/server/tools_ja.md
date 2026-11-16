@@ -12,7 +12,7 @@
 | 探す・読む | [fetch](tools_ja.md#fetch) | ノート、ダッシュボード、スライドを Markdown で読みます。 |
 | チャートとアナリティクス | [chart_get_data](tools_ja.md#chart_get_data) | チャートの数値を取得します。 |
 | チャートとアナリティクス | [chart_get_image](tools_ja.md#chart_get_image) | チャートを画像として取得します。 |
-| チャートとアナリティクス | [chart_query](tools_ja.md#chart_query) | チャートのデータを、サーバーで絞り込み、集計します。 |
+| チャートとアナリティクス | [chart_query](tools_ja.md#chart_query) | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
 | チャートとアナリティクス | [analytics_get_result](tools_ja.md#analytics_get_result) | 係数や p 値など、アナリティクスの結果を取得します。 |
 | データ | [dataframe_get_schema](tools_ja.md#dataframe_get_schema) | 列の名前、型、承認された意味を調べます。 |
 | データ | [dataframe_preview](tools_ja.md#dataframe_preview) | 行を見ます。 |
@@ -27,19 +27,9 @@
 
 <a id="workflow"></a>
 
-## データの質問に答える手順
+## データの質問に答える
 
-### 1. データを探す
-
-search で質問に合うデータを探します。
-
-### 2. 列と意味を確認する
-
-dataframe_get_schema で列と承認された定義を読みます。利用者の言葉を列に対応づけ、候補が複数あれば確認します。top_values で値を確認し、不足する場合は行のプレビューなどで調べます。
-
-### 3. 集計し、条件とともに伝える
-
-query_dataset を使います。質問に合う承認済みの指標があれば、その定義に従います。結果と一緒に、集計方法、絞り込み、データの時点を伝えます。
+データの名前と知りたいことを伝えます。AI は、列と承認された定義（行の意味、集計のルール）を確かめてから計算し、質問に合う承認済みの指標があれば、それを使います。結果とあわせて、集計方法、絞り込み、データの時点を確認してください。
 
 <a id="search"></a>
 
@@ -80,7 +70,7 @@ id を指定して、ノート、ダッシュボード、スライド、デー�
 
 ## dataframe_get_schema
 
-データの列を調べます。名前、型、公開した人が書いた説明、行数のほか、所有者が承認したセマンティクス（行の意味、集計のルール）も返します。dataframe_preview や query_dataset の前に呼び出します。
+データの列を調べます。名前、型、公開した人が書いた説明、行数のほか、所有者が承認したセマンティクス（行の意味、集計のルール）も返します。
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
@@ -121,7 +111,7 @@ id を指定して、ノート、ダッシュボード、スライド、デー�
 - 結果には、chart.encoding、chart.filters、chart.data_granularity、chart.unsupported、context（公開時点、データの時点、パラメータの値）が含まれます。
 - チャート単体で公開したものは、集計値ではなく、描画に使った行のサンプル（最大 1 万行）を返します。
 - warnings を確認します。
-- 絞り込み、並べ替え、集計には、同じ id と chart で chart_query を使います。
+- ノート、ダッシュボード、スライド内のチャートを絞り込み、並べ替え、集計するときは、同じ id と chart で chart_query を使います。
 
 <a id="chart_get_image"></a>
 

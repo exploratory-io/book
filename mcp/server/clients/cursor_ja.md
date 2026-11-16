@@ -17,10 +17,10 @@
 
 ### mcp.json に登録する
 
-Exploratory Server は公式のプラグイン一覧にありません。サーバーのみを手動で追加します。スキルは含まれません。
+お使いのアプリの公式一覧に Exploratory Server が掲載されている場合は、その手順で追加します。掲載されていない場合は、次の手順で、サーバーのみを手動で追加します。スキルは含まれません。`exploratory@exploratory` は Desktop 用です。
 
 1. ~/.cursor/mcp.json（プロジェクト単位の場合は .cursor/mcp.json）を開きます。
-2. 次の内容を記述します。
+2. 次の `exploratory-server` の項目を追加します。ファイルにすでに `mcpServers` がある場合は、その中に `exploratory-server` の項目だけを追加し、ほかのサーバーの設定は残します。以下は、新しいファイルを作る場合の全体の例です。
 
    ```text
    {
@@ -75,6 +75,8 @@ agent mcp login exploratory-server
 ```text
 Exploratory にある「Sales Orders」のデータを探して
 ```
+
+Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。
 
 送信したあと、結果を確かめます。
 

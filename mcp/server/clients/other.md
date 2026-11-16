@@ -33,10 +33,10 @@ See the client's own documentation for where and how.
 1. In a new chat of the client, send this.
 
    ```text
-   Find the "Sales Orders" data on Exploratory.
+   Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If the Sales Orders data appears with its URL, the connection works.
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed.
 
 <a id="trouble"></a>
 
@@ -52,6 +52,6 @@ A request without a valid token gets HTTP 401. Sign in again with your client's 
 
 ## Disconnect
 
-Remove exploratory-server from the client's settings.
+Remove exploratory-server (or the name you registered) from the client's settings.
 
 Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in your account settings on exploratory.io.

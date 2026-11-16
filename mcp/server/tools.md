@@ -12,7 +12,7 @@ Tools are operations an AI can call. Choose an operation by purpose, then inspec
 | Find and read | [fetch](tools.md#fetch) | Read a note, dashboard or slide as Markdown. |
 | Charts and analytics | [chart_get_data](tools.md#chart_get_data) | Get the numbers behind a chart. |
 | Charts and analytics | [chart_get_image](tools.md#chart_get_image) | Get a chart as an image. |
-| Charts and analytics | [chart_query](tools.md#chart_query) | Filter and aggregate the data of a chart on the server. |
+| Charts and analytics | [chart_query](tools.md#chart_query) | Filter and aggregate the data of a chart in a note, dashboard or slide on the server. |
 | Charts and analytics | [analytics_get_result](tools.md#analytics_get_result) | Get coefficients, p-values and other results of an analytics. |
 | Data | [dataframe_get_schema](tools.md#dataframe_get_schema) | Describe the columns and their approved meaning. |
 | Data | [dataframe_preview](tools.md#dataframe_preview) | Show rows. |
@@ -29,17 +29,7 @@ Get a content id from search or fetch. For charts and analytics embedded in a no
 
 ## Answer a data question
 
-### 1. Find data
-
-Use search to find data relevant to the question.
-
-### 2. Check columns and their meaning
-
-Read columns and approved definitions with dataframe_get_schema. Match the question to columns and ask when there are multiple candidates. Inspect top_values and use a row preview if more information is needed.
-
-### 3. Calculate and explain the conditions
-
-Use query_dataset, following any approved metric that matches the question. Report the result together with aggregation, filters and the data date.
+Describe the data and your question. The AI checks the columns and the approved definitions (what a row means, aggregation rules) before it calculates, and uses an approved metric when one matches. Review the aggregation, filters and data date that come with the result.
 
 <a id="search"></a>
 
@@ -80,7 +70,7 @@ metadata.blocks and metadata.charts in the result hold the names of charts and a
 
 ## dataframe_get_schema
 
-Describe the columns of a data item: names, types, descriptions the publisher wrote and the row count, plus the semantics the owner approved (what a row means, aggregation rules). Call it before dataframe_preview or query_dataset.
+Describe the columns of a data item: names, types, descriptions the publisher wrote and the row count, plus the semantics the owner approved (what a row means, aggregation rules).
 
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |
@@ -121,7 +111,7 @@ Get the data of a chart together with what the numbers mean.
 - The result includes chart.encoding, chart.filters, chart.data_granularity, chart.unsupported and context (publication, data time and parameter values).
 - A chart published on its own returns a sample of the rows used to draw it (up to 10,000 rows), not aggregated values.
 - Check warnings.
-- To filter, sort or aggregate, use chart_query with the same id and chart.
+- To filter, sort or aggregate a chart in a note, dashboard or slide, use chart_query with the same id and chart.
 
 <a id="chart_get_image"></a>
 

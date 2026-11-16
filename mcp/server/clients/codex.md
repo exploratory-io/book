@@ -54,10 +54,10 @@ exploratory@exploratory in Exploratory's GitHub marketplace is for Desktop and d
 1. In a new chat, send this.
 
    ```text
-   Find the "Sales Orders" data on Exploratory.
+   Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If the Sales Orders data appears with its URL, the connection works.
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 

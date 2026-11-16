@@ -12,6 +12,21 @@ In System Settings \> MCP / CLI you also decide the following.
 - Approval: Desktop asks you first before it deletes items (charts, analytics, notes, dashboards, steps, branches, parameters, connections, palettes, templates, R packages, catalog items), publishes or unpublishes notes, dashboards, data frames and projects, saves a connection, replaces a data source, restores a project's history, manages data frames, changes the system settings or the catalog schedule. It also asks before it runs R code, adds R packages, processes data with AI or asks the note AI. Creating and editing charts, notes and dashboards is not asked about. You can choose to run each of these two groups without asking, with "Run changes, deletions and publishing without asking" and "Run code and AI processing without asking".
 - Approved apps: an app asks for your approval the first time it connects. Remove an app to make it ask again.
 
+<a id="plugin-settings"></a>
+
+## Plugin settings (Claude Code)
+
+The Desktop plugin has four settings in Claude Code. Each value is the string `"true"` or `"false"`, not a JSON boolean.
+
+| Setting | Default | What it does |
+| --- | --- | --- |
+| `ai_summary` | `"false"` | Creates and saves an AI Summary for the charts and analytics you create. |
+| `save_comments` | `"false"` | Saves an explanatory comment on the charts you create. |
+| `review_hook` | `"false"` | Asks the AI to review its work. |
+| `plan_gate` | `"true"` | Makes the AI save a plan before it builds. See [Troubleshooting](troubleshooting.md#trouble). |
+
+To see the settings, run `claude plugin configure exploratory@exploratory`. These settings are separate from the System Settings \> MCP / CLI options above.
+
 <a id="privacy"></a>
 
 ## What is sent and recorded

@@ -128,7 +128,7 @@ Needs Git. The plugin appears in the Antigravity app under Customizations \> Ins
 
 **Cursor**
 
-Add this to ~/.cursor/mcp.json. It adds the Desktop MCP without the skills, the same entry the card writes.
+Add the `exploratory-desktop` entry below to ~/.cursor/mcp.json. If `mcpServers` already exists in the file, add only the `exploratory-desktop` entry inside it and keep the other server settings. The example shows a complete new file. It adds the Desktop MCP without the skills, the same entry the card writes.
 
 ```json
 {
