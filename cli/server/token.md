@@ -18,7 +18,7 @@ The commands on this page are named token (expl server token), and what they han
 
 ### 1. Open API Keys
 
-Open Account Settings on exploratory.io and go to API Keys.
+On exploratory.io, open Account Settings from the icon at the top right (https://exploratory.io/account/settings ) and go to the API Keys section.
 
 ### 2. Create it
 
