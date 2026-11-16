@@ -6,6 +6,24 @@
 
 サインインや接続に関するコマンドは、それぞれのページにあります。[サインインと状態](login_ja.md)（login、logout、status）、[API キー](token_ja.md)（token）、[コマンドを調べる](tools_ja.md)（tools list、tools describe）です。expl server skill は、AI エージェント向けの説明を SKILL.md の形で出力します。
 
+<a id="syntax-index"></a>
+
+## 書式とフラグの一覧
+
+| コマンド | 書式 | フラグ |
+| --- | --- | --- |
+| [expl server search](#search) | `expl server search [<query>] [flags]` | `--query` `--type` `--scope` `--team` `--semantic` `--limit` `--offset` |
+| [expl server fetch](#fetch) | `expl server fetch <id> [flags]` | `--id` `--language` `--section` `--cursor` `--query` `--include-toc` |
+| [expl server dataframe get-schema](#dataframe-get-schema) | `expl server dataframe get-schema <id> [flags]` | `--id` `--detail` `--language` `--include-unapproved` |
+| [expl server dataframe preview](#dataframe-preview) | `expl server dataframe preview <id> [flags]` | `--id` `--offset` `--limit` |
+| [expl server dataset query](#dataset-query) | `expl server dataset query [<dataset_id>] [flags]` | `--dataset-id` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` `--datasets` `--root-alias` `--joins` `--source-filters` `--allow-many-to-many` `--queries` `--include-answer-context` `--language` |
+| [expl server dataframe export](#dataframe-export) | `expl server dataframe export <dataset_id> [flags]` | `--dataset-id` `--format` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` |
+| [expl server chart get-data](#chart-get-data) | `expl server chart get-data <id> [flags]` | `--id` `--chart` `--offset` `--limit` |
+| [expl server chart get-image](#chart-get-image) | `expl server chart get-image <id> [flags]` | `--id` `--chart` |
+| [expl server analytics get-result](#analytics-get-result) | `expl server analytics get-result <id> [flags]` | `--id` `--analytics` `--tables` `--limit` |
+| [expl server chart query](#chart-query) | `expl server chart query [flags]` | `--id` `--chart` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` `--queries` |
+| [expl server desktop mcp-setup-guide](#desktop-mcp-setup-guide) | `expl server desktop mcp-setup-guide [flags]` | `--client` |
+
 <a id="commands-search"></a>
 
 ## 探す・読む

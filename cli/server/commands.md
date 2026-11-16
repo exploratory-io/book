@@ -6,6 +6,24 @@ How to read the usage lines: replace a \<value\> placeholder with your own value
 
 The commands for signing in and managing the connection are on their own pages: [Sign-in and status](login.md) (login, logout, status), [API keys](token.md) (token) and [Inspect commands](tools.md) (tools list, tools describe). expl server skill prints a description for AI agents in the form of a SKILL.md file.
 
+<a id="syntax-index"></a>
+
+## Command syntax index
+
+| Command | Usage | Flags |
+| --- | --- | --- |
+| [expl server search](#search) | `expl server search [<query>] [flags]` | `--query` `--type` `--scope` `--team` `--semantic` `--limit` `--offset` |
+| [expl server fetch](#fetch) | `expl server fetch <id> [flags]` | `--id` `--language` `--section` `--cursor` `--query` `--include-toc` |
+| [expl server dataframe get-schema](#dataframe-get-schema) | `expl server dataframe get-schema <id> [flags]` | `--id` `--detail` `--language` `--include-unapproved` |
+| [expl server dataframe preview](#dataframe-preview) | `expl server dataframe preview <id> [flags]` | `--id` `--offset` `--limit` |
+| [expl server dataset query](#dataset-query) | `expl server dataset query [<dataset_id>] [flags]` | `--dataset-id` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` `--datasets` `--root-alias` `--joins` `--source-filters` `--allow-many-to-many` `--queries` `--include-answer-context` `--language` |
+| [expl server dataframe export](#dataframe-export) | `expl server dataframe export <dataset_id> [flags]` | `--dataset-id` `--format` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` |
+| [expl server chart get-data](#chart-get-data) | `expl server chart get-data <id> [flags]` | `--id` `--chart` `--offset` `--limit` |
+| [expl server chart get-image](#chart-get-image) | `expl server chart get-image <id> [flags]` | `--id` `--chart` |
+| [expl server analytics get-result](#analytics-get-result) | `expl server analytics get-result <id> [flags]` | `--id` `--analytics` `--tables` `--limit` |
+| [expl server chart query](#chart-query) | `expl server chart query [flags]` | `--id` `--chart` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` `--queries` |
+| [expl server desktop mcp-setup-guide](#desktop-mcp-setup-guide) | `expl server desktop mcp-setup-guide [flags]` | `--client` |
+
 <a id="commands-search"></a>
 
 ## Find and read
