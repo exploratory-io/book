@@ -45,6 +45,8 @@ https://exploratory.io/mcp
 | 認証 | OAuth 2.1（PKCE）: 初回にブラウザでサインインします。または、Authorization: Bearer exp_pat_... で送る API キー |
 | スコープ | content:read（API キーも同じスコープです） |
 
+人がブラウザで使うときは、ブラウザでのサインインを使います。ブラウザがないとき、または自動で実行するときは、API キーを使います。
+
 すべての呼び出しに、Authorization: Bearer \<アクセストークンまたは API キー\> が必要です。ブラウザのセッションの Cookie では、MCP の呼び出しを認証できません。同意画面、メタデータの URL、失敗した呼び出しの詳細は、[データと権限](data_ja.md#auth) にあります。
 
 <a id="steps"></a>
@@ -81,13 +83,27 @@ Authorization: Bearer exp_pat_...
 
 exp_pat_... は、作成したキーに置き換えます。
 
-固定のヘッダーを設定できるクライアントの例として、Claude Code では、次のように登録します。
+キーは環境変数に入れて、クライアントにそこから読ませます。コマンドラインに鍵をそのまま打ったり、設定ファイルにそのまま書いたりすると、シェルの履歴やファイルに残ります。たとえば、固定のヘッダーを設定できる Claude Code では、環境変数を設定して、.mcp.json から参照します。
 
 ```sh
-claude mcp add --transport http exploratory-server https://exploratory.io/mcp --header "Authorization: Bearer exp_pat_..."
+export EXPLORATORY_API_KEY="exp_pat_..."
 ```
 
-ここにキーを書くと、シェルの履歴に残ります。クライアントが、シークレットの保管場所や環境変数からヘッダーを読めるときは、そちらを使います。
+```json
+{
+  "mcpServers": {
+    "exploratory-server": {
+      "type": "http",
+      "url": "https://exploratory.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${EXPLORATORY_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+ほかのクライアントは、[Codex](clients/codex_ja.md#apikey)、[Cursor](clients/cursor_ja.md#apikey)、[その他のクライアント](clients/other_ja.md#apikey)の手順を参照してください。
 
 - キーで読めるのは、ブラウザでのサインインと同じ、あなたが見られる内容です。読み取りのみ（content:read）です。作成できるのは Author だけです。
 - キーが失敗したときは、サーバーが理由つきの 401 または 403 を返します。代わりにブラウザでのサインイン（OAuth）に切り替わることはありません。キーを直してください。
@@ -120,18 +136,18 @@ Exploratory の「Sales Orders」データにはどんな列がある？ 売上�
 
 ツールは、AI が呼び出す操作です。提供しているのは、読み取り専用のものだけです。
 
-| 種類 | ツール | 用途 |
-| --- | --- | --- |
-| 探す・読む | search | 公開されたコンテンツを探し、一覧します。 |
-| 探す・読む | fetch | ノート、ダッシュボード、スライドを Markdown で読みます。 |
-| チャートとアナリティクス | chart_get_data | チャートの数値を取得します。 |
-| チャートとアナリティクス | chart_get_image | チャートを画像として取得します。 |
-| チャートとアナリティクス | chart_query | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
-| チャートとアナリティクス | analytics_get_result | 係数や p 値など、アナリティクスの結果を取得します。 |
-| データ | dataframe_get_schema | 列の名前、型、承認された意味を調べます。 |
-| データ | dataframe_preview | 行を表示します。 |
-| データ | query_dataset | サーバーで絞り込み、集計します。 |
-| データ | dataframe_export | 結果を CSV か Parquet で保存します。 |
+| 種類 | ツール | 読み取りだけ／作成・変更・削除 | 用途 |
+| --- | --- | --- | --- |
+| 探す・読む | search | 読み取りだけ | 公開されたコンテンツを探し、一覧します。 |
+| 探す・読む | fetch | 読み取りだけ | ノート、ダッシュボード、スライドを Markdown で読みます。 |
+| チャートとアナリティクス | chart_get_data | 読み取りだけ | チャートの数値を取得します。 |
+| チャートとアナリティクス | chart_get_image | 読み取りだけ | チャートを画像として取得します。 |
+| チャートとアナリティクス | chart_query | 読み取りだけ | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
+| チャートとアナリティクス | analytics_get_result | 読み取りだけ | 係数や p 値など、アナリティクスの結果を取得します。 |
+| データ | dataframe_get_schema | 読み取りだけ | 列の名前、型、承認された意味を調べます。 |
+| データ | dataframe_preview | 読み取りだけ | 行を表示します。 |
+| データ | query_dataset | 読み取りだけ | サーバーで絞り込み、集計します。 |
+| データ | dataframe_export | 読み取りだけ | 結果を CSV か Parquet で保存します。 |
 
 これは、どのサーバーにもあるツールです。サーバーの設定によっては、ツールが増えます。たとえば desktop_mcp_setup_guide は、AI クライアントを Exploratory Desktop につなぐ手順を返します。お使いのサーバーにあるツールは、expl server tools list で確認できます。
 

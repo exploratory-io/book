@@ -35,7 +35,7 @@ What it cannot do, how to read the numbers, the limits, and what to do about err
 | A metric alias | Starts with a letter or _; ASCII letters, digits and _ only. Japanese is not allowed |
 | A dataset alias in a join | Lowercase, up to 16 characters |
 | dataframe_export | The link is valid for 15 minutes. One export at a time per user. The number of exports per hour is limited |
-| A chart published on its own | A sample of up to 10,000 rows used to draw it |
+| A chart published on its own | The first 100 rows of the data used to draw it, not the values of the whole chart |
 
 <a id="errors"></a>
 

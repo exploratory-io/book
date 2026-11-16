@@ -2,6 +2,24 @@
 
 Find a fix by symptom.
 
+<a id="check"></a>
+
+## Check the state first
+
+Check that the connection works with the steps in [Try it](overview.md#steps). If it does not, find your symptom below.
+
+<a id="contact"></a>
+
+## When you contact support
+
+Send these to support@exploratory.io: the version of Exploratory Desktop, the name and version of your AI client, what you did, and the error message as it was shown. Hide any token or API key.
+
+<a id="network"></a>
+
+## When it does not connect on a company network
+
+Ask your IT staff to allow communication to exploratory.io. For an on-premises server, ask them to allow the URL of your own server.
+
 <a id="signin"></a>
 
 ## You are asked to sign in

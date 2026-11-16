@@ -6,18 +6,18 @@
 
 ## 目的から探す
 
-| 種類 | ツール | 用途 |
-| --- | --- | --- |
-| 探す・読む | [search](tools_ja.md#search) | 公開されたコンテンツを探し、一覧します。 |
-| 探す・読む | [fetch](tools_ja.md#fetch) | ノート、ダッシュボード、スライドを Markdown で読みます。 |
-| チャートとアナリティクス | [chart_get_data](tools_ja.md#chart_get_data) | チャートの数値を取得します。 |
-| チャートとアナリティクス | [chart_get_image](tools_ja.md#chart_get_image) | チャートを画像として取得します。 |
-| チャートとアナリティクス | [chart_query](tools_ja.md#chart_query) | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
-| チャートとアナリティクス | [analytics_get_result](tools_ja.md#analytics_get_result) | 係数や p 値など、アナリティクスの結果を取得します。 |
-| データ | [dataframe_get_schema](tools_ja.md#dataframe_get_schema) | 列の名前、型、承認された意味を調べます。 |
-| データ | [dataframe_preview](tools_ja.md#dataframe_preview) | 行を見ます。 |
-| データ | [query_dataset](tools_ja.md#query_dataset) | サーバーで絞り込み、集計します。 |
-| データ | [dataframe_export](tools_ja.md#dataframe_export) | 結果を CSV か Parquet で保存します。 |
+| 種類 | ツール | 読み取りだけ／作成・変更・削除 | 用途 |
+| --- | --- | --- | --- |
+| 探す・読む | [search](tools_ja.md#search) | 読み取りだけ | 公開されたコンテンツを探し、一覧します。 |
+| 探す・読む | [fetch](tools_ja.md#fetch) | 読み取りだけ | ノート、ダッシュボード、スライドを Markdown で読みます。 |
+| チャートとアナリティクス | [chart_get_data](tools_ja.md#chart_get_data) | 読み取りだけ | チャートの数値を取得します。 |
+| チャートとアナリティクス | [chart_get_image](tools_ja.md#chart_get_image) | 読み取りだけ | チャートを画像として取得します。 |
+| チャートとアナリティクス | [chart_query](tools_ja.md#chart_query) | 読み取りだけ | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
+| チャートとアナリティクス | [analytics_get_result](tools_ja.md#analytics_get_result) | 読み取りだけ | 係数や p 値など、アナリティクスの結果を取得します。 |
+| データ | [dataframe_get_schema](tools_ja.md#dataframe_get_schema) | 読み取りだけ | 列の名前、型、承認された意味を調べます。 |
+| データ | [dataframe_preview](tools_ja.md#dataframe_preview) | 読み取りだけ | 行を見ます。 |
+| データ | [query_dataset](tools_ja.md#query_dataset) | 読み取りだけ | サーバーで絞り込み、集計します。 |
+| データ | [dataframe_export](tools_ja.md#dataframe_export) | 読み取りだけ | 結果を CSV か Parquet で保存します。 |
 
 <a id="identifiers"></a>
 
@@ -109,7 +109,7 @@ id を指定して、ノート、ダッシュボード、スライド、デー�
 | `limit` | 整数 |  | 返す行数です。100 までです。 |
 
 - 結果には、chart.encoding、chart.filters、chart.data_granularity、chart.unsupported、context（公開時点、データの時点、パラメータの値）が含まれます。
-- チャート単体で公開したものは、集計値ではなく、描画に使った行のサンプル（最大 1 万行）を返します。
+- チャート単体で公開したものは、チャート全体の値や集計値ではなく、描画に使ったデータの先頭 100 行を返します。
 - warnings を確認します。
 - ノート、ダッシュボード、スライド内のチャートを絞り込み、並べ替え、集計するときは、同じ id と chart で chart_query を使います。
 

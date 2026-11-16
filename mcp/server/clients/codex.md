@@ -98,6 +98,26 @@ Codex searches through the Exploratory server and finds the data.
 
 If you already have another Exploratory connection (for example exploratory-server or Desktop), Codex may pick that one. Naming the connection avoids it.
 
+<a id="apikey"></a>
+
+## Connect with an API key
+
+If your environment cannot open a browser, use an API key instead of the sign-in. Create the key in Account Settings \> API Keys, and put it in an environment variable.
+
+```sh
+export EXPLORATORY_API_KEY="exp_pat_..."
+```
+
+Add the name of the variable, not the key, to ~/.codex/config.toml.
+
+```text
+[mcp_servers.exploratory-server]
+url = "https://exploratory.io/mcp"
+bearer_token_env_var = "EXPLORATORY_API_KEY"
+```
+
+If you write the key in the file as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../overview.md#apikey) for what a key can read.
+
 <a id="trouble"></a>
 
 ## Troubleshooting

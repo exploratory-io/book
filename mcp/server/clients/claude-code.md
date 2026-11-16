@@ -91,10 +91,28 @@ If you have more than one Exploratory connection (for example exploratory-server
 If your environment cannot open a browser, register the server with an API key instead of signing in through the browser. Create the key in Account Settings \> API Keys.
 
 ```sh
-claude mcp add --transport http exploratory-server https://exploratory.io/mcp --header "Authorization: Bearer exp_pat_..."
+export EXPLORATORY_API_KEY="exp_pat_..."
 ```
 
-Replace exp_pat_... with your key. This leaves the key in your shell history. Use one way only: the OAuth sign-in above or this one.
+Then write the header in .mcp.json (in your project) so that Claude Code reads the key from the environment variable.
+
+```json
+{
+  "mcpServers": {
+    "exploratory-server": {
+      "type": "http",
+      "url": "https://exploratory.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${EXPLORATORY_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+Replace exp_pat_... with your key. If you type the key on a command line or write it in a settings file as it is, it stays in your shell history or in that file. Read it from an environment variable as above.
+
+Use one way only: the OAuth sign-in above or this one.
 
 - [Connect with an API key](../overview.md#apikey) - What a key can read and the errors it can return.
 

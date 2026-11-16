@@ -6,18 +6,18 @@ Tools are operations an AI can call. Choose an operation by purpose, then inspec
 
 ## Find by purpose
 
-| Kind | Tool | What it does |
-| --- | --- | --- |
-| Find and read | [search](tools.md#search) | Search and list published content. |
-| Find and read | [fetch](tools.md#fetch) | Read a note, dashboard or slide as Markdown. |
-| Charts and analytics | [chart_get_data](tools.md#chart_get_data) | Get the numbers behind a chart. |
-| Charts and analytics | [chart_get_image](tools.md#chart_get_image) | Get a chart as an image. |
-| Charts and analytics | [chart_query](tools.md#chart_query) | Filter and aggregate the data of a chart in a note, dashboard or slide on the server. |
-| Charts and analytics | [analytics_get_result](tools.md#analytics_get_result) | Get coefficients, p-values and other results of an analytics. |
-| Data | [dataframe_get_schema](tools.md#dataframe_get_schema) | Describe the columns and their approved meaning. |
-| Data | [dataframe_preview](tools.md#dataframe_preview) | Show rows. |
-| Data | [query_dataset](tools.md#query_dataset) | Filter and aggregate on the server. |
-| Data | [dataframe_export](tools.md#dataframe_export) | Save a result as CSV or Parquet. |
+| Kind | Tool | Read only, or create, change, delete | What it does |
+| --- | --- | --- | --- |
+| Find and read | [search](tools.md#search) | Read only | Search and list published content. |
+| Find and read | [fetch](tools.md#fetch) | Read only | Read a note, dashboard or slide as Markdown. |
+| Charts and analytics | [chart_get_data](tools.md#chart_get_data) | Read only | Get the numbers behind a chart. |
+| Charts and analytics | [chart_get_image](tools.md#chart_get_image) | Read only | Get a chart as an image. |
+| Charts and analytics | [chart_query](tools.md#chart_query) | Read only | Filter and aggregate the data of a chart in a note, dashboard or slide on the server. |
+| Charts and analytics | [analytics_get_result](tools.md#analytics_get_result) | Read only | Get coefficients, p-values and other results of an analytics. |
+| Data | [dataframe_get_schema](tools.md#dataframe_get_schema) | Read only | Describe the columns and their approved meaning. |
+| Data | [dataframe_preview](tools.md#dataframe_preview) | Read only | Show rows. |
+| Data | [query_dataset](tools.md#query_dataset) | Read only | Filter and aggregate on the server. |
+| Data | [dataframe_export](tools.md#dataframe_export) | Read only | Save a result as CSV or Parquet. |
 
 <a id="identifiers"></a>
 
@@ -109,7 +109,7 @@ Get the data of a chart together with what the numbers mean.
 | `limit` | integer |  | The number of rows to return, up to 100. |
 
 - The result includes chart.encoding, chart.filters, chart.data_granularity, chart.unsupported and context (publication, data time and parameter values).
-- A chart published on its own returns a sample of the rows used to draw it (up to 10,000 rows), not aggregated values.
+- A chart published on its own returns the first 100 rows of the data used to draw it, not the values of the whole chart or aggregated values.
 - Check warnings.
 - To filter, sort or aggregate a chart in a note, dashboard or slide, use chart_query with the same id and chart.
 

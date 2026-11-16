@@ -89,10 +89,28 @@ Exploratory への接続が複数あるとき（たとえば exploratory-server 
 ブラウザを開けない環境では、ブラウザでのサインインの代わりに、API キーでサーバーを登録します。キーは、アカウント設定 \> API キーで作ります。
 
 ```sh
-claude mcp add --transport http exploratory-server https://exploratory.io/mcp --header "Authorization: Bearer exp_pat_..."
+export EXPLORATORY_API_KEY="exp_pat_..."
 ```
 
-exp_pat_... は、作成したキーに置き換えます。キーがシェルの履歴に残ります。上の OAuth でのサインインか、この方法か、どちらか一方だけを使います。
+そのうえで、プロジェクトの .mcp.json にヘッダーを書くと、Claude Code が環境変数からキーを読みます。
+
+```json
+{
+  "mcpServers": {
+    "exploratory-server": {
+      "type": "http",
+      "url": "https://exploratory.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${EXPLORATORY_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+exp_pat_... は、作成したキーに置き換えます。コマンドラインに鍵をそのまま打ったり、設定ファイルにそのまま書いたりすると、シェルの履歴やファイルに残ります。上のように、環境変数から読みます。
+
+上の OAuth でのサインインか、この方法か、どちらか一方だけを使います。
 
 - [API キーで接続する](../overview_ja.md#apikey) - キーで読めるものと、返ってくるエラーです。
 

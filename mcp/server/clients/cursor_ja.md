@@ -88,6 +88,28 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 
+<a id="apikey"></a>
+
+## API キーで接続する
+
+ブラウザを開けない環境では、サインインの代わりに API キーを使います。キーは、アカウント設定 \> API キーで作り、Cursor を起動する前に、EXPLORATORY_API_KEY という環境変数に入れます。そのうえで、mcp.json から参照します。
+
+```text
+{
+  "mcpServers": {
+    "exploratory-server": {
+      "type": "http",
+      "url": "https://exploratory.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:EXPLORATORY_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+キーを mcp.json にそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](../overview_ja.md#apikey)を参照してください。
+
 <a id="trouble"></a>
 
 ## トラブルシューティング

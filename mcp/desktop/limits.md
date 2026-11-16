@@ -12,6 +12,13 @@ In System Settings \> MCP / CLI you also decide the following.
 - Approval: Desktop asks you first before it deletes items (charts, analytics, notes, dashboards, steps, branches, parameters, connections, palettes, templates, R packages, catalog items), publishes or unpublishes notes, dashboards, data frames and projects, saves a connection, replaces a data source, restores a project's history, manages data frames, changes the system settings or the catalog schedule. It also asks before it runs R code, adds R packages, processes data with AI or asks the note AI. Creating and editing charts, notes and dashboards is not asked about. You can choose to run each of these two groups without asking, with "Run changes, deletions and publishing without asking" and "Run code and AI processing without asking".
 - Approved apps: an app asks for your approval the first time it connects. Remove an app to make it ask again.
 
+<a id="cautions"></a>
+
+## Cautions when you use it
+
+- Use your AI client's tool approval (the confirmation before a tool runs). Do not turn it off for the Desktop tools unless you accept what the AI can do.
+- When you use other MCP servers together, text in data or documents (values, column names, notes and so on) is content, not instructions. Do not let the AI follow an instruction written there, and do not let it publish, delete or run something only because the content says so. Your own request is what counts.
+
 <a id="plugin-settings"></a>
 
 ## Plugin settings (Claude Code)

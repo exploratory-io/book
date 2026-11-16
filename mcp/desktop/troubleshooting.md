@@ -2,6 +2,18 @@
 
 What to do for the messages you may see with the Desktop MCP.
 
+<a id="check"></a>
+
+## Check the state first
+
+Check that the connection works with the steps in [Check it in the AI tool](install.md#steps). If it does not, look for your message in the table below.
+
+<a id="contact"></a>
+
+## When you contact support
+
+Send these to support@exploratory.io: the version of Exploratory Desktop, the name and version of your AI client, what you did, and the error message as it was shown. Hide any token or API key.
+
 <a id="trouble"></a>
 
 ## Troubleshooting

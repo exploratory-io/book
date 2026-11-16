@@ -45,6 +45,8 @@ https://exploratory.io/mcp
 | Authorization | OAuth 2.1 with PKCE: sign in with your browser the first time. Or an API key sent as Authorization: Bearer exp_pat_... |
 | Scope | content:read (an API key has the same scope) |
 
+If a person uses it in a browser, use the browser sign-in. If there is no browser, or a job runs by itself, use an API key.
+
 Every call needs Authorization: Bearer \<access token or API key\>. A browser session cookie does not authenticate MCP calls. The consent page, the metadata URLs and the details of failed calls are in [Data and permissions](data.md#auth).
 
 <a id="steps"></a>
@@ -81,13 +83,27 @@ Authorization: Bearer exp_pat_...
 
 Replace exp_pat_... with your key.
 
-In Claude Code, a client that accepts a fixed header, register the server like this.
+Put the key in an environment variable and let the client read it from there. If you type the key on a command line or write it in a settings file as it is, it stays in your shell history or in that file. For example, in Claude Code, a client that accepts a fixed header, set the variable and refer to it in .mcp.json.
 
 ```sh
-claude mcp add --transport http exploratory-server https://exploratory.io/mcp --header "Authorization: Bearer exp_pat_..."
+export EXPLORATORY_API_KEY="exp_pat_..."
 ```
 
-Typing the key here leaves it in your shell history. Where your client can take the header from a secret store or an environment variable, use that.
+```json
+{
+  "mcpServers": {
+    "exploratory-server": {
+      "type": "http",
+      "url": "https://exploratory.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${EXPLORATORY_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+For other clients, see the steps for [Codex](clients/codex.md#apikey), [Cursor](clients/cursor.md#apikey) and [other clients](clients/other.md#apikey).
 
 - A key reads what you can view, as your browser sign-in does. It is read-only (content:read). Only Authors can create one.
 - When a key fails, the server answers 401 or 403 with the reason. It does not start the browser sign-in (OAuth) instead. Fix the key.
@@ -120,18 +136,18 @@ What columns does the "Sales Orders" data on Exploratory have, and which 5 regio
 
 A tool is an operation the AI calls. They only read.
 
-| Kind | Tool | What it does |
-| --- | --- | --- |
-| Find and read | search | Search and list published content. |
-| Find and read | fetch | Read a note, dashboard or slide as Markdown. |
-| Charts and analytics | chart_get_data | Get the numbers behind a chart. |
-| Charts and analytics | chart_get_image | Get a chart as an image. |
-| Charts and analytics | chart_query | Filter and aggregate the data of a chart in a note, dashboard or slide on the server. |
-| Charts and analytics | analytics_get_result | Get coefficients, p-values and other results of an analytics. |
-| Data | dataframe_get_schema | Describe the columns and their approved meaning. |
-| Data | dataframe_preview | Show rows. |
-| Data | query_dataset | Filter and aggregate on the server. |
-| Data | dataframe_export | Save a result as CSV or Parquet. |
+| Kind | Tool | Read only, or create, change, delete | What it does |
+| --- | --- | --- | --- |
+| Find and read | search | Read only | Search and list published content. |
+| Find and read | fetch | Read only | Read a note, dashboard or slide as Markdown. |
+| Charts and analytics | chart_get_data | Read only | Get the numbers behind a chart. |
+| Charts and analytics | chart_get_image | Read only | Get a chart as an image. |
+| Charts and analytics | chart_query | Read only | Filter and aggregate the data of a chart in a note, dashboard or slide on the server. |
+| Charts and analytics | analytics_get_result | Read only | Get coefficients, p-values and other results of an analytics. |
+| Data | dataframe_get_schema | Read only | Describe the columns and their approved meaning. |
+| Data | dataframe_preview | Read only | Show rows. |
+| Data | query_dataset | Read only | Filter and aggregate on the server. |
+| Data | dataframe_export | Read only | Save a result as CSV or Parquet. |
 
 This is the set every server offers. Depending on the server settings, more tools appear, for example desktop_mcp_setup_guide, which returns the steps to connect an AI client to Exploratory Desktop. Run expl server tools list to see what your server offers.
 

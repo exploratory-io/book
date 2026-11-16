@@ -88,6 +88,28 @@ If the Sales Orders data appears with its URL, the connection works.
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
+<a id="apikey"></a>
+
+## Connect with an API key
+
+If your environment cannot open a browser, use an API key instead of the sign-in. Create the key in Account Settings \> API Keys, and put it in an environment variable named EXPLORATORY_API_KEY before you start Cursor. Then refer to it in mcp.json.
+
+```text
+{
+  "mcpServers": {
+    "exploratory-server": {
+      "type": "http",
+      "url": "https://exploratory.io/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:EXPLORATORY_API_KEY}"
+      }
+    }
+  }
+}
+```
+
+If you write the key in mcp.json as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../overview.md#apikey) for what a key can read.
+
 <a id="trouble"></a>
 
 ## Troubleshooting

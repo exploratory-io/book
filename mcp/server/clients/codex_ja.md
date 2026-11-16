@@ -96,6 +96,26 @@ Codex が Exploratory サーバー経由で検索し、データが見つかり�
 
 すでに Exploratory への別の接続（たとえば exploratory-server や Desktop）があると、Codex がそちらを選ぶことがあります。接続名を指定すると、それを避けられます。
 
+<a id="apikey"></a>
+
+## API キーで接続する
+
+ブラウザを開けない環境では、サインインの代わりに API キーを使います。キーは、アカウント設定 \> API キーで作り、環境変数に入れます。
+
+```sh
+export EXPLORATORY_API_KEY="exp_pat_..."
+```
+
+~/.codex/config.toml には、キーではなく、環境変数の名前を書きます。
+
+```text
+[mcp_servers.exploratory-server]
+url = "https://exploratory.io/mcp"
+bearer_token_env_var = "EXPLORATORY_API_KEY"
+```
+
+キーをファイルにそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](../overview_ja.md#apikey)を参照してください。
+
 <a id="trouble"></a>
 
 ## トラブルシューティング
