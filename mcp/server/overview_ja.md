@@ -70,7 +70,7 @@ https://exploratory.io/mcp
 Exploratory の「Sales Orders」データにはどんな列がある？ 売上が一番大きい地域の上位 5 つも教えて
 ```
 
-- [AI への依頼例](examples_ja.md) - ノート、データ、チャートの例です。
+- [使い方](examples_ja.md) - ノート、データ、チャートの例です。
 
 <a id="tools"></a>
 

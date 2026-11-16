@@ -1,6 +1,20 @@
-# 使い方の例
+# 使い方
 
-Desktop の MCP で、AI に頼めることの例です。どの例も、Exploratory Desktop にプロジェクトを開いて、AI ツールに話しかけます。インストールがまだのときは、先に [プラグインのインストール](install_ja.md) を済ませます。
+Desktop の MCP で、手元のプロジェクトについて AI に頼めることです。どれも、Exploratory Desktop にプロジェクトを開いて、AI ツールに話しかけます。インストールがまだのときは、先に[プラグインのインストール](install_ja.md)を済ませます。
+
+| やりたいこと | 節 | AI が使う主な道具 |
+| --- | --- | --- |
+| データを取り込む | [データを取り込む・加工する](#import) | create_data_source、save_connection |
+| データを加工する | [データを取り込む・加工する](#import) | create_wrangling_step |
+| 列や件数を見る | [そのほか](#other) | preview_data_frame、profile_data_frame |
+| チャートを作る | [チャートを作る](#charts) | create_chart、update_chart |
+| アナリティクスを作る | [アナリティクスを作る](#analytics) | create_analytics |
+| ノートを書く | [ノートを書く](#notes) | create_note、update_note |
+| ダッシュボードを作る・複製する | [ダッシュボードを作る・複製する](#dashboards) | create_dashboard、get_dashboard、validate_dashboard |
+| 公開する | [公開する](#publish) | publish_note、publish_dashboard |
+| 値を選ぶフィルターを付ける | [そのほか](#other) | save_parameter |
+
+各道具の働きと「作成、変更、削除を許可する」が必要なものは[使える道具](tools_ja.md)を参照してください。ターミナルから同じことをするときは、CLI Desktop の[使い方](../../cli/desktop/use_ja.md)を参照してください。
 
 出力される図や文章は、データと AI ツールによって変わります。例の依頼文は、そのまま使うことも、自分のデータに合わせて言い換えることもできます。
 
@@ -25,6 +39,8 @@ Desktop は、手元のプロジェクト（公開していない変更を含む
 
 ## 例
 
+<a id="import"></a>
+
 ### データを取り込む・加工する
 
 ```text
@@ -45,6 +61,8 @@ Desktop は、手元のプロジェクト（公開していない変更を含む
 
 文章の意味を読んで分類する処理は、AI 関数の列として作ります。決まった規則で変換する処理とは、別のものです。実行の前に、Desktop が確認を出します。
 
+<a id="charts"></a>
+
 ### チャートを作る
 
 ```text
@@ -56,6 +74,8 @@ Desktop は、手元のプロジェクト（公開していない変更を含む
 ```
 
 チャートの作成と変更です（create_chart、update_chart）。作ったチャートは、Exploratory Desktop で開いて確認できます。
+
+<a id="analytics"></a>
 
 ### アナリティクスを作る
 
@@ -69,6 +89,8 @@ Desktop は、手元のプロジェクト（公開していない変更を含む
 
 回帰、検定、クラスタなどのアナリティクスを作ります（create_analytics）。結果は、Exploratory Desktop のアナリティクスとして開けます。
 
+<a id="notes"></a>
+
 ### ノートを書く
 
 ```text
@@ -76,6 +98,8 @@ Desktop は、手元のプロジェクト（公開していない変更を含む
 ```
 
 ノートを書き、保存し、図を埋め込みます（create_note、update_note）。作ったノートは、Exploratory Desktop で開いて確認できます。
+
+<a id="dashboards"></a>
 
 ### ダッシュボードを作る・複製する
 
@@ -91,6 +115,8 @@ Desktop は、手元のプロジェクト（公開していない変更を含む
 
 元のダッシュボードの定義を読み（get_dashboard）、タイトルを変えて新しいダッシュボードとして作ります（create_dashboard）。
 
+<a id="publish"></a>
+
 ### 公開する
 
 ```text
@@ -98,6 +124,8 @@ Desktop は、手元のプロジェクト（公開していない変更を含む
 ```
 
 ノートやダッシュボードを、公開 URL でサーバーに公開します（publish_note、publish_dashboard）。公開を取り消すこともできます（unpublish）。公開や取り消しの前には、Desktop が確認を出します。
+
+<a id="other"></a>
 
 ### そのほか
 

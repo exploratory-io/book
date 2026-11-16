@@ -79,4 +79,4 @@ For the arguments of any command, run expl \<command\> --help or expl tools desc
 - [Pass arguments and JSON](input.md)
 - [Desktop commands](../commands.md)
 
-To do the same through MCP, see Create analytics in [Examples](../../../mcp/desktop/examples.md#examples).
+To do the same through MCP, see Create analytics in [Use](../../../mcp/desktop/examples.md#examples).

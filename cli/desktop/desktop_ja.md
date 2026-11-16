@@ -40,7 +40,7 @@ Desktop のバージョンと、サインイン中のユーザーを表示しま
 expl project list
 ```
 
-最初のコマンドを順に実行する手順は、[試してみる](quickstart_ja.md)を参照してください。
+最初のコマンドを順に実行する手順は、[はじめる](get-started_ja.md#steps)を参照してください。
 
 <a id="commands"></a>
 

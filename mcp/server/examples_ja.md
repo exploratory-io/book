@@ -1,6 +1,17 @@
-# 使い方の例
+# 使い方
 
-AI への依頼文の例です。AI が使用するツールと、依頼するときのポイントもあわせて説明します。
+公開されたコンテンツでやりたいことに合わせた、AI への依頼文の例です。AI が使用する道具と、依頼するときのポイントもあわせて説明します。道具は AI が使うもので、自分で呼び出す必要はありません。
+
+| やりたいこと | 節 | AI が使う主な道具 |
+| --- | --- | --- |
+| データを探す | [データを探す](#find) | search、fetch |
+| ノートを読む | [ノートを読む](#notes) | search、fetch |
+| データを集計する | [データを集計する](#data) | dataframe_get_schema、query_dataset |
+| チャートの数値を取得する | [チャートの数値を取得する](#chart) | fetch、chart_get_data、chart_query |
+| アナリティクスの結果を取得する | [アナリティクスの結果を取得する](#analytics) | fetch、analytics_get_result |
+| 結果をファイルに保存する | [結果をファイルに保存する](#export) | query_dataset、dataframe_export |
+
+ターミナルから同じことをするときは、CLI Server の[使い方](../../cli/server/use_ja.md)を参照してください。
 
 <a id="find"></a>
 

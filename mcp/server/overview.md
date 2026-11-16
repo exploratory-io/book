@@ -70,7 +70,7 @@ If your client cannot open a browser, or a job runs by itself, connect with an A
 What columns does the "Sales Orders" data on Exploratory have, and which 5 regions have the highest sales?
 ```
 
-- [Examples](examples.md) - Examples with notes, data and charts.
+- [Use](examples.md) - Examples with notes, data and charts.
 
 <a id="tools"></a>
 

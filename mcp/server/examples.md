@@ -1,6 +1,17 @@
-# Examples
+# Use
 
-Examples of what to ask your AI, with the tools it uses and a few tips.
+Examples of what to ask your AI for what you want to do with published content, with the tools it uses and a few tips. The tools are what the AI uses; you do not call them yourself.
+
+| What you want to do | Section | Main tools the AI uses |
+| --- | --- | --- |
+| Find data | [Find data](#find) | search, fetch |
+| Read a note | [Read a note](#notes) | search, fetch |
+| Aggregate data | [Aggregate data](#data) | dataframe_get_schema, query_dataset |
+| Get the numbers of a chart | [Get the numbers of a chart](#chart) | fetch, chart_get_data, chart_query |
+| Get the results of analytics | [Get the results of analytics](#analytics) | fetch, analytics_get_result |
+| Save results to a file | [Save results to a file](#export) | query_dataset, dataframe_export |
+
+To do the same from a terminal, see [Use](../../cli/server/use.md) of CLI Server.
 
 <a id="find"></a>
 

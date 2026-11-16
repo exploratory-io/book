@@ -82,4 +82,4 @@ For the arguments of any command, run expl \<command\> --help or expl tools desc
 - [Duplicate a dashboard](duplicate-dashboard.md)
 - [Desktop commands](../commands.md)
 
-To do the same through MCP, see Publish in [Examples](../../../mcp/desktop/examples.md#examples).
+To do the same through MCP, see Publish in [Use](../../../mcp/desktop/examples.md#examples).

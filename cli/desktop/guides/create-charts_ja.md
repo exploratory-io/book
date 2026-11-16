@@ -77,4 +77,4 @@ expl chart edit <chart_id> --marker line --title "月別の売上の推移"
 - [ノートを書く](write-notes_ja.md)
 - [Desktop のコマンド](../commands_ja.md)
 
-同じことを MCP で行う例は、[使い方の例](../../../mcp/desktop/examples_ja.md#examples)の「チャートを作る」を参照してください。
+同じことを MCP で行う例は、[使い方](../../../mcp/desktop/examples_ja.md#examples)の「チャートを作る」を参照してください。
