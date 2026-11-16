@@ -1,6 +1,6 @@
 # All commands
 
-The commands you will use most, grouped by purpose. For the full list, including the rest, see [All commands](#more) later on this page.
+The commands you will use most, grouped by purpose. For the full list, including the rest, see [Full list](#more) later on this page.
 
 <a id="cmd-check"></a>
 
@@ -10,7 +10,7 @@ The commands you will use most, grouped by purpose. For the full list, including
 | --- | --- |
 | expl status | The Desktop version and the signed-in user (with --json it also shows permissions and tools) |
 | expl tools list | All available commands (read-only or not, and risk) |
-| expl tools describe \<command\> | Arguments, types, required or not, allowed values (put a two-word command in quotes, for example expl tools describe "dashboard get") |
+| expl tools describe \<command\> | Arguments, types, required or not, allowed values (put a two-word command in quotes, for example expl tools describe "dashboard get"; a tool name such as get_data_frame also works) |
 
 Exit code 0 from expl tools list does not mean that Desktop is connected. When Desktop is not running, it shows the list it saved last time, or an empty list when none is saved. To check the connection, run expl status.
 
@@ -78,7 +78,7 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 
 <a id="more"></a>
 
-## All commands
+## Full list
 
 Commands are added or removed depending on the Desktop version. To see the exact list on your machine, run expl tools list; for the arguments of a command, run expl \<command\> --help.
 
@@ -169,7 +169,7 @@ Commands are added or removed depending on the Desktop version. To see the exact
 | expl analytics list-templates | Lists the analytics types that can be created. | Always |
 | expl analytics add | Creates and runs an analytics (regression, classification, clustering and so on). | When Allow create, edit and delete is on |
 | expl analytics delete | Deletes an analytics. | When Allow create, edit and delete is on |
-| expl analytics save-ai-summary | Saves an interpretation to the analytics' comment. | When Allow create, edit and delete is on |
+| expl analytics save-ai-summary | Appends an interpretation to the analytics' comment. | When Allow create, edit and delete is on |
 | expl analytics edit | Changes an analytics' columns, settings or type and runs it again. | When Allow create, edit and delete is on |
 
 ### Notes
@@ -293,6 +293,6 @@ Commands are added or removed depending on the Desktop version. To see the exact
 | expl guide get | Returns the usage guide of a tool. | Always |
 | expl artifact rerun | Re-runs a chart, analytics or other item of the open project. | When Allow create, edit and delete is on |
 
-The commands project use, tools describe, call and lang are written as in the tables above ([Global flags](global-flags.md)).
+The built-in commands (expl status, project use, tools list, tools describe, call, lang, skill and completion) are in the tables at the top of this page, not below. For their flags, see [Global flags](global-flags.md).
 
 For the commands that read content on exploratory.io, see [Server commands](../server/commands.md).

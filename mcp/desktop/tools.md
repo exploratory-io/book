@@ -6,7 +6,7 @@ The Desktop MCP lets an AI client work with the project open in Exploratory Desk
 
 ## Scope
 
-The table below shows the main tools as examples. There are many more tools than the ones listed. The tools below are the ones the Exploratory Desktop plugin guides the AI to use. Which tools appear depends on your Desktop version and on the settings in System Settings \> MCP / CLI: with Allow create, edit and delete off, only reading is possible.
+The table below shows the main tools as examples. There are many more; all of them are in All tools below. The tools below are the ones the Exploratory Desktop plugin guides the AI to use. Which tools you can use depends on your Desktop version and on the settings in System Settings \> MCP / CLI: with Allow create, edit and delete off, only reading is possible.
 
 | Purpose | What the AI can do | Tools (examples) |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ The table below shows the main tools as examples. There are many more tools than
 
 > **Some tools change and delete**
 >
-> Some of these tools delete things, publish and unpublish, or run R code. See Permissions and settings for how Desktop asks you first.
+> Some of these tools delete things, publish and unpublish, or run R code. See [Permissions and settings](permissions.md) for how Desktop asks you first.
 
 <a id="all-tools"></a>
 
@@ -29,7 +29,7 @@ The table below shows the main tools as examples. There are many more tools than
 
 There are 146 tools in all. 68 are always available, and 78 work only when Allow create, edit and delete is on in System Settings \> MCP / CLI. The tools you can use depend on your Exploratory Desktop version and the MCP / CLI settings.
 
-The always-available tools include reading and a few that only open a screen. With the switch off, the other tools stop with a permission error.
+The always-available tools include reading and a few that only open a screen. With Allow create, edit and delete off, the other tools stop with a permission error.
 
 ### Projects (16)
 
@@ -153,7 +153,7 @@ The always-available tools include reading and a few that only open a screen. Wi
 | --- | --- | --- |
 | create_analytics | When Allow create, edit and delete is on | Creates and runs an analytics (regression, classification, clustering and so on). |
 | delete_analytics | When Allow create, edit and delete is on | Deletes an analytics. |
-| save_analytics_ai_summary | When Allow create, edit and delete is on | Saves an interpretation to the analytics' comment. |
+| save_analytics_ai_summary | When Allow create, edit and delete is on | Appends an interpretation you wrote to the analytics' comment and saves it. |
 | update_analytics | When Allow create, edit and delete is on | Changes an analytics' columns, settings or type and runs it again. |
 
 ### Notes (10)
@@ -184,7 +184,7 @@ The always-available tools include reading and a few that only open a screen. Wi
 
 | Name | Available | What it does |
 | --- | --- | --- |
-| get_dashboard | Always | Reads one dashboard's pages, markdown, variables and settings. |
+| get_dashboard | Always | Reads one dashboard's pages, Markdown, variables and settings. |
 | get_dashboard_image | Always | Returns a page of a saved dashboard as a PNG image. |
 | list_dashboards | Always | Lists the dashboards of the project. |
 | validate_dashboard | Always | Checks a dashboard layout without saving it. |
@@ -236,7 +236,7 @@ The always-available tools include reading and a few that only open a screen. Wi
 | Name | Available | What it does |
 | --- | --- | --- |
 | get_parameters | Always | Reads the project's parameters. |
-| get_session_parameters | Always | Reads the definitions of session parameters set from the login. |
+| get_session_parameters | Always | Reads the definitions of session parameters defined from the signed-in user's information. |
 
 **Available with Allow create, edit and delete on (4)**
 

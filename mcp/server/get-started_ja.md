@@ -18,7 +18,7 @@ https://exploratory.io/mcp
 
 ### 2. サインインする
 
-最初につなぐときに、ブラウザが開きます。Exploratory にサインインして、アクセスを許可します。ログインのコマンドや Authenticate のボタンが必要な AI ツールもあります。その場合は、AI ツールのページの手順に従ってください。
+最初につなぐときに、ブラウザが開きます。Exploratory にサインインして、アクセスを許可します。サインインのコマンドや Authenticate のボタンが必要な AI ツールもあります。その場合は、AI ツールのページの手順に従ってください。
 
 サーバーや定期ジョブなど、ブラウザを開けない環境では、代わりに API キーでつなぎます。[認証と API キー](auth_ja.md#apikey)を参照してください。
 
@@ -44,7 +44,7 @@ AI は、search でノートを探し、fetch で読んで、内容をもとに�
 
 ## うまくいかないとき
 
-- もう一度サインインを求められる、または API キーが拒否される: [トラブルシューティング](troubleshooting_ja.md#signin)と[トラブルシューティング](troubleshooting_ja.md#apikey)を参照してください。
+- もう一度サインインを求められる、または API キーが拒否される: [サインインを求められる](troubleshooting_ja.md#signin)と[API キーが拒否される](troubleshooting_ja.md#apikey)を参照してください。
 - AI が自分のコンテンツを見つけられない: [トラブルシューティング](troubleshooting_ja.md#zero)の「自分のコンテンツが出ない」を参照してください。
 - 呼び出しがエラーや上限で止まる: [制限とエラー](limits_ja.md)を参照してください。
 

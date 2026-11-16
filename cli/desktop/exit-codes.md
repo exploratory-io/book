@@ -24,7 +24,7 @@ A reader closing the pipe (expl ... | head -1) is not an error and exits with 0.
 | Code | What to do |
 | --- | --- |
 | 3 | With Desktop, start Exploratory Desktop and run it again. With Server, check the network and run it again. |
-| 4 | With Desktop, the code in parentheses at the end of the message tells which case it is (see the table below). With Server, run expl server login. With an API key, create a new key in Account Settings \> API Keys if it is wrong, expired or revoked, or ask your administrator when the message says API keys are disabled or the IP address is not allowed. If EXPL_SERVER_TOKEN is set, it is used before a saved login, so run unset EXPL_SERVER_TOKEN first. |
+| 4 | With Desktop, the code in parentheses at the end of the message tells which case it is (see the table below). With Server, run expl server login. With an API key, create a new key in Account Settings \> API Keys if it is wrong, expired or revoked, or ask your administrator when the message says API keys are disabled or the IP address is not allowed. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
 
 The code at the end of an exit code 4 message tells what to do.
 
@@ -32,7 +32,7 @@ The code at the end of an exit code 4 message tells what to do.
 | --- | --- |
 | NOT_LOGGED_IN | Server only. Run expl server login. |
 | NOT_SIGNED_IN | Sign in to Exploratory Desktop. |
-| UNAUTHORIZED | Desktop: run the command again. Exploratory Desktop asks you to approve the connection; see the [Desktop Get started](get-started.md#steps). Server: the API key was refused (wrong, expired or revoked). Create a new key in Account Settings \> API Keys, then set EXPL_SERVER_TOKEN or run expl server login --with-token. |
+| UNAUTHORIZED | Desktop: run the command again. Exploratory Desktop asks you to approve the connection; see [Get started](get-started.md#steps). Server: the API key was refused (wrong, expired or revoked). Create a new key in Account Settings \> API Keys, then set EXPL_SERVER_TOKEN or run expl server login --with-token. |
 | PAIRING_REQUIRED | This connection was declined on the approval screen of Exploratory Desktop (this code is also used when too many approval requests are made in a short time). For 5 minutes after you decline, running the command again does not show the screen and is declined at once. Run it again after 5 minutes and allow it on the screen. |
 | CHANNEL_DISABLED | In System Settings > MCP / CLI, turn on the switch on the CLI card and choose Save. |
 | PERMISSION_DENIED | Desktop: this connection is not allowed to perform that operation. For an operation that creates, changes or deletes content, check that Allow create, edit and delete is turned on in System Settings > MCP / CLI. Server: an administrator turned API keys off or limits them to certain IP addresses. Ask your administrator, or sign in with expl server login. |

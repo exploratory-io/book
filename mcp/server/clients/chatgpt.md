@@ -20,7 +20,7 @@ You do not need an API key or a client ID.
 
 ### Open the MCPs tab
 
-In the ChatGPT desktop app, open settings.
+In the ChatGPT desktop app, open Settings.
 
 1. In the menu on the left of settings, choose Plugins under Integrations.
 2. Choose the MCPs tab.
@@ -77,7 +77,7 @@ If the server you added appears, it was added.
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed.
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
 
 <a id="web"></a>
 
@@ -156,13 +156,13 @@ The Developer field is blurred in the image. Information lists Developer, Catego
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed.
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
 
 <a id="trouble"></a>
 
 ## If it does not work
 
-For other symptoms, see [Troubleshooting](../troubleshooting.md).
+For symptoms and fixes, see [Troubleshooting](../troubleshooting.md).
 
 <a id="remove"></a>
 

@@ -7,7 +7,7 @@
 ## 前提
 
 - Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](projects_ja.md)）。expl status で確認できます。
-- 作成や変更をするコマンド（このページの create-source、apply-step など）は、システム設定（MCP / CLI）の「作成、変更、削除を許可する」がオンのときだけ使えます。
+- 作成や変更をするコマンド（このページの create-source、apply-step など）は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。
 - R の実行（run-r）、ai-wrangle、ステップの削除は、実行の前に確認が出ます。ターミナルでは Continue? \[y/N\] と聞かれます。スクリプトや AI エージェントからは --yes を付けます。[確認と時間のかかる操作](confirmation_ja.md)を参照してください。
 
 <a id="steps"></a>
@@ -44,7 +44,7 @@ list は、各データフレームの id を返します。get-schema は、列
 
 ### 3. 加工のステップを追加する
 
-先に、コマンドが受け取る設定を引きます。get-command が返す名前だけが有効です。
+先に、コマンドが受け取る設定を調べます。get-command が返す名前だけが有効です。
 
 ```sh
 expl dataframe get-command --command filter
@@ -58,7 +58,7 @@ expl dataframe apply-step <dataframe_id> --command <command> --params @params.js
 
 \<command\> は、get-command で調べたコマンド名に置き換え、params.json には、返ってきた名前で設定を書きます。ステップは、1 回に 1 つの操作ずつ追加します。R で実行できなかったステップは取り消されます。--save-with-error を付けると、エラーのステップとして残します。既存のステップの前後に入れるときは、--insert-position '{"side":"after","stepName":"<ステップ名>"}' を渡します。付けないと、最後に追加します。
 
-expl dataframe preview-steps は、一時的なオブジェクトで変更を試し、保存せずに効果を見せます。引数は expl dataframe preview-steps --help で確認します。
+expl dataframe preview-steps は、一時的なオブジェクトで変更を試し、保存せずに結果を表示します。引数は expl dataframe preview-steps --help で確認します。
 
 ### 4. 結果を確認する
 

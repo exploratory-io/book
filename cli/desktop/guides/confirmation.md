@@ -14,7 +14,7 @@ An operation with HIGH risk (publishing, deleting and so on) asks first. The RIS
 | Not in a terminal (script, CI, AI agent, or output sent to a file or a pipe), without --yes | Nothing runs; exit code 2. |
 | With --yes | It runs without asking. |
 
---yes (or a y at the prompt) stands for the user having checked. You do not need to add --confirmed-by-user.
+--yes (or a y at the prompt) counts as the user's confirmation.
 
 <a id="wait"></a>
 

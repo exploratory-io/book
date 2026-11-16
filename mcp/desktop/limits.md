@@ -8,10 +8,11 @@ What the Desktop MCP refuses or stops, and what to do about it. Settings that de
 
 | What you see | What to do |
 | --- | --- |
-| A request for more data than the level you chose is refused | Desktop shares only up to the level set in System Settings \> MCP / CLI (names and columns only, aggregated results, sample rows up to 100, or all rows). Ask for a smaller result, or raise the level. See [What you control in Desktop](permissions.md#control) |
+| A request for more data than the level you chose is refused | Desktop shares only up to the level set in System Settings \> MCP / CLI (names, columns and data types only, aggregated results, sample rows up to 100, or all rows). Ask for a smaller result, or raise the level. See [What you control in Desktop](permissions.md#control) |
 | Desktop shows an approval prompt before a delete, publish, R code run, AI processing or similar | This is the confirmation. Approve it in Desktop. To stop being asked, turn on the matching setting under System Settings \> MCP / CLI. See [What you control in Desktop](permissions.md#control) |
-| A new app is asked for approval | An app asks the first time it connects. Approve it in Desktop. Removing an app makes it ask again |
+| Desktop asks you to approve a new app | An app asks the first time it connects. Approve it in Desktop. Removing an app under Approved apps makes it ask again. After you choose Don't allow, the same app is refused for 5 minutes without the window appearing again |
 | A call says that MCP is turned off | Turn on the MCP switch in System Settings \> MCP / CLI, then choose Save at the bottom |
+| A create or change call is refused with PERMISSION_DENIED | Allow create, edit and delete is off. Turn it on in System Settings \> MCP / CLI, then choose Save at the bottom. Reading still works without it |
 | The Desktop MCP tools return a not-running error | Start Exploratory Desktop. Then use the tools again in the same conversation |
 
 <a id="gates"></a>

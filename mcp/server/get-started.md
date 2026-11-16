@@ -44,8 +44,8 @@ If items appear with their URLs, the connection works. An empty result does not 
 
 ## If something does not work
 
-- You are asked to sign in again, or the API key is refused: see [Troubleshooting](troubleshooting.md#signin) and [Troubleshooting](troubleshooting.md#apikey).
-- The AI cannot find your content: see Your content does not appear in [Troubleshooting](troubleshooting.md#zero).
+- You are asked to sign in again, or the API key is refused: see [You are asked to sign in](troubleshooting.md#signin) and [Your API key is refused](troubleshooting.md#apikey).
+- The AI cannot find your content: see "Your content does not appear" in [Troubleshooting](troubleshooting.md#zero).
 - A call stops with an error or a limit: see [Limits and errors](limits.md).
 
 <a id="next"></a>

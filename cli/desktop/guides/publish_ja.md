@@ -1,13 +1,13 @@
 # 公開する
 
-Desktop から、ノート、ダッシュボード、データフレームをサーバーに公開し、公開されているものを確認し、公開を取り消します。
+Desktop から、ノート、ダッシュボード、データフレームをサーバーに公開し、公開されているものを確認し、ノートとダッシュボードの公開を取り消します。
 
 <a id="before"></a>
 
 ## 前提
 
-- Exploratory Desktop が起動していて、プロジェクトが開いていて（[プロジェクトを選ぶ](projects_ja.md)）、サインインしています（expl status で、サインインしている利用者が分かります）。
-- 公開と取り消しは、システム設定（MCP / CLI）の「作成、変更、削除を許可する」がオンのときだけ使えます。
+- Exploratory Desktop が起動していて、プロジェクトが開いていて（[プロジェクトを選ぶ](projects_ja.md)）、サインインしています（expl status で、サインイン中のユーザーが分かります）。
+- 公開と取り消しは、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。
 - 公開すると、URL を知っている人なら誰でも読めるようになります。公開の取り消しは、元に戻せません。そのため、どちらも実行の前に確認が出ます。ターミナルでは Continue? \[y/N\] と聞かれます。スクリプトや AI エージェントからは、対象を確認したうえで --yes を付けます。[確認と時間のかかる操作](confirmation_ja.md)を参照してください。
 
 <a id="steps"></a>
@@ -37,7 +37,7 @@ expl dashboard publish <dashboard_id>
 expl note publish <note_id> --tags sales --tags weekly --team <チーム名> --yes
 ```
 
-データフレームを公開するときは、expl dataframe publish \<dataframe_id\> を使います。--step-name で公開するステップを選びます。付けないと、最後の有効なステップです。
+データフレームを公開するときは、expl dataframe publish \<dataframe_id\> を使います。--step-name で公開するステップを選びます。付けないと、最後の有効なステップを公開します。
 
 公開した URL は、expl published list の publishedUrl で分かります。結果の outputOlderThanSource が true のときは、公開した内容が、いまの本文より古いものです。
 
@@ -79,7 +79,7 @@ expl published unpublish <id>
 
 - [確認と時間のかかる操作](confirmation_ja.md)
 - [ノートを書く](write-notes_ja.md)
-- [ダッシュボードを作る・複製する](duplicate-dashboard_ja.md)
+- [ダッシュボードを複製する](duplicate-dashboard_ja.md)
 - [Desktop のコマンド](../commands_ja.md)
 
 同じことを MCP で行う例は、[使い方](../../../mcp/desktop/use_ja.md#examples)の「公開する」を参照してください。

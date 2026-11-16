@@ -1,6 +1,6 @@
 # はじめる
 
-expl を入れ、サインインして、公開されたコンテンツを検索して読みます。次の手順を順に行うと、このページ 1 つで最初の結果まで進めます。
+expl をインストールし、サインインして、公開されたコンテンツを検索して読みます。次の手順を順に行うと、このページ 1 つで最初の結果まで進めます。
 
 <a id="steps"></a>
 
@@ -8,21 +8,21 @@ expl を入れ、サインインして、公開されたコンテンツを検索
 
 ### 1. インストールする
 
-Exploratory Desktop をお使いの場合、expl は同梱されています。お使いでない場合は、npm で入れます。Node.js 20 以降が必要です。
+Exploratory Desktop をお使いの場合、expl は同梱されています。お使いでない場合は、npm でインストールします。Node.js 20 以降が必要です。
 
 ```sh
-npm install -g @exploratory/cli@<version>
+npm install -g @exploratory/cli
 ```
 
-\<version\> は、入れたいバージョンに置き換えます。新しいターミナルを開いて、確認します。
+最新のバージョンがインストールされます。バージョンを固定するときは、[インストール](install_ja.md#npm)を参照してください。新しいターミナルを開いて、確認します。
 
 ```sh
 expl --version
 ```
 
-> 1 行目が expl \<version\> と表示されれば、動いています。
+> 1 行目が expl \<version\> と表示されれば、インストールは完了しています。
 
-そのほかの入れ方や、2 つ入っているときの確認は、[インストール](install_ja.md)を参照してください。
+そのほかのインストール方法や、2 つ入っているときの確認は、[インストール](install_ja.md)を参照してください。
 
 ### 2. サインインする
 
@@ -77,11 +77,11 @@ expl server fetch <id> --json
 }
 ```
 
-結果には、本文が含まれます。ノート、ダッシュボード、スライドでは、長さや指定によって、見出しの一覧（metadata.toc）も含まれます。ない場合は、--query で見出しの id を調べます。
+結果には、本文が含まれます。ノート、ダッシュボード、スライドでは、長さや指定によって、見出しの一覧（metadata.toc）も含まれます。ない場合は、--include-toc を付けて返すか、--query で見出しの id を調べます。
 
 ### 5. 集計する（任意）
 
-データのコンテンツで、まず列の名前と型を確認します。
+データのコンテンツでは、まず列の名前と型を確認します。
 
 ```sh
 expl server dataframe get-schema <id> --detail light --json
@@ -127,10 +127,10 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 
 - 検索結果が空です: 該当するものがなかったということで、サインインのエラーではありません。検索語を変えるか、--scope all を付けます。
 - ブラウザを開けません: ブラウザのないスクリプトや CI では、代わりに API キーでサインインします（expl server login --with-token。[API キー](token_ja.md)を参照）。ブラウザを開けないマシンでは、[サインイン](login_ja.md#nobrowser)を参照してください。
-- Run "expl server login". と表示されます: サインインしていないか、保存したログインが拒否されました。expl server login を実行します。
+- Run "expl server login". と表示されます: サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。
 - expl: command not found と表示されます: 新しいターミナルを開いて、もう一度試します。
-- どの id を使えばよいかわかりません: 検索結果に表示された id を使います。
-- ノートで見出しの一覧（metadata.toc）が出ません: --query で見出しの id を調べます。
+- どの id を使えばよいか分かりません: 検索結果に表示された id を使います。
+- ノートで見出しの一覧（metadata.toc）が出ません: --include-toc を付けるか、--query で見出しの id を調べます。
 
 詳しくは[トラブルシューティング](troubleshooting_ja.md)を参照してください。
 

@@ -8,7 +8,7 @@
 
 - Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](projects_ja.md)）。expl status で確認できます。
 - 埋め込むチャートとアナリティクスの id が分かっています（expl chart list \<dataframe_id\>、expl analytics list \<dataframe_id\>）。
-- note add と note edit は、システム設定（MCP / CLI）の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。ノートの削除は、確認が出ます。[確認と時間のかかる操作](confirmation_ja.md)を参照してください。
+- note add と note edit は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。ノートの削除は、確認が出ます。[確認と時間のかかる操作](confirmation_ja.md)を参照してください。
 
 <a id="steps"></a>
 
@@ -16,7 +16,7 @@
 
 ### 1. 本文を書く
 
-本文は、Markdown のファイル report.md に書きます。チャートやアナリティクスを埋め込むときは、トークンを 1 行に 1 つだけ書き、前後を空行にします。
+本文は、Markdown のファイル report.md に書きます。チャートやアナリティクスを埋め込むときは、{{chart:\<chart_id\>}} のような埋め込みの記法を、1 行に 1 つだけ書き、前後を空行にします。
 
 ```text
 # Sales Orders
@@ -28,7 +28,7 @@
 {{analytics:<analytics_id>|<output_type>}}
 ```
 
-\<chart_id\> と \<analytics_id\> は、作ったときに得た id か、一覧のコマンドで調べた id に置き換えます。{{analytics:\<analytics_id\>}} のように出力の種類を省略できるのは、アナリティクスの出力が 1 つのときだけです。そうでないときは、availableOutputTypes の値を出力の種類に指定します。チャートのパスは、自分で書きません。行の途中や、コードブロックの中に書いたトークンは、埋め込まれず、文字のまま残ります。図の下には、その図から読み取れることを数値つきで書きます（数値は expl chart get-result で読みます）。
+\<chart_id\> と \<analytics_id\> は、作ったときに得た id か、一覧のコマンドで調べた id に置き換えます。{{analytics:\<analytics_id\>}} のように出力の種類を省略できるのは、アナリティクスの出力が 1 つのときだけです。そうでないときは、availableOutputTypes の値を出力の種類に指定します。チャートのパスは、自分で書きません。行の途中や、コードブロックの中に書いた埋め込みの記法は、埋め込まれず、文字のまま残ります。図の下には、その図から読み取れることを数値つきで書きます（数値は expl chart get-result で読みます）。
 
 ### 2. ノートを作る
 
@@ -66,7 +66,7 @@ get は、Markdown の本文、フォルダ、依存関係を返します。get-
 | PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](../exit-codes_ja.md)を参照してください。 |
 | NOTE_TITLE_EXISTS | note add では別のタイトルにします。既存のノートを直すときは、note edit を使います。 |
 | NOTE_NOT_FOUND | id が違います。expl note list から写します。 |
-| 図が空白になる | トークンの id が違うか、トークンが 1 行に 1 つだけの形になっていません。 |
+| 図が空白になる | 埋め込みの記法の id が違うか、記法が 1 行に 1 つだけの形になっていません。 |
 
 コマンドの引数は、expl \<コマンド\> --help または expl tools describe "\<コマンド\>" で確認します。
 

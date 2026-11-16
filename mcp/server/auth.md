@@ -43,7 +43,7 @@ For other clients, see the steps for [Codex](clients/codex.md#apikey), [Cursor](
 | 403 | This IP address is not allowed for API keys. | Your administrator allows API keys only from certain IP addresses. Connect from an allowed address. |
 | 429 | Too many failed API key attempts. Try again later. | More than 30 refused keys came from one address within 15 minutes (counted per IPv4 address, or per IPv6 /64 range). Fix the key and try again later. |
 
-An administrator on an on-premises or Hosted server can turn API keys off or limit them to certain IP addresses; the two 403 messages above mean that. The publisher settings in Data and permissions apply to a key in the same way.
+An administrator on an on-premises or Hosted server can turn API keys off or limit them to certain IP addresses; the two 403 messages above mean that. The publisher settings in [Data and permissions](data.md#publisher) apply to a key in the same way.
 
 - [API keys](../../cli/server/token.md) - Create, expire, revoke and keep a key safe.
 

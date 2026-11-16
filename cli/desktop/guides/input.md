@@ -12,7 +12,7 @@ Pass input with flags that match its type, or give the whole input as JSON.
 | Boolean | --flag or --no-flag | --include-data |
 | List of values | Repeat the flag | --tag sales --tag weekly |
 | Object or list of objects | A JSON string or @file | --pages @pages.json |
-| Long text | @file (its content becomes the value) | --content @report.md |
+| Long text | @file (its content becomes the value) | --markdown @report.md |
 
 <a id="json"></a>
 

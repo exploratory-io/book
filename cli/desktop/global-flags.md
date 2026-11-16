@@ -25,7 +25,7 @@ Review the output of --verbose before you paste it anywhere.
 A few commands are exceptions.
 
 - expl status does not use the --input JSON. It ignores it if you pass one.
-- --help shows help. The built-in commands (expl status, expl project use, expl lang, expl skill and expl completion) are the same.
+- --help also shows help for the built-in commands (expl status, expl project use, expl lang, expl skill and expl completion).
 - expl tools describe and expl call, given no argument, give a usage error (exit code 2).
 - --json has no effect on expl project use, expl skill and expl completion. They always print text.
 - The built-in commands (expl status, expl project use, expl lang, expl skill and expl completion) do not report an unknown flag or an extra argument. Pass only what their usage shows. The generated commands reject them (exit code 2).

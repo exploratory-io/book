@@ -8,7 +8,7 @@ Create a chart from a data frame, check its numbers and image, and change it.
 
 - Exploratory Desktop is running and the project is open ([Choose a project](projects.md)). Check with expl status.
 - You know the id of the data frame and its column names (expl dataframe list and expl dataframe get-schema \<dataframe_id\>).
-- chart add and chart edit work only when Allow create, edit and delete is on in the system settings (MCP / CLI). They do not ask for confirmation; deleting a chart does. See [Confirmation](confirmation.md).
+- chart add and chart edit work only when Allow create, edit and delete is on in System Settings > MCP / CLI. They do not ask for confirmation; deleting a chart does. See [Confirmation and long-running operations](confirmation.md).
 
 <a id="steps"></a>
 

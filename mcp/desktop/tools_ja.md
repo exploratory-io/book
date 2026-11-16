@@ -6,14 +6,14 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 
 ## 道具の範囲
 
-次の表は、主な道具の例です。実際には、これ以外にも多くの道具があります。表の道具は、Exploratory Desktop のプラグインが AI に使うよう案内するものです。表示される道具は、Desktop のバージョンと、システム設定 \> MCP / CLI の設定によって変わります。「作成、変更、削除を許可する」がオフのときは、読み取りだけができます。
+次の表は、主な道具の例です。全部の道具は、下の「全部の道具の一覧」にあります。表の道具は、Exploratory Desktop のプラグインが AI に使うよう案内するものです。使える道具は、Desktop のバージョンと、システム設定 \> MCP / CLI の設定によって変わります。「作成、変更、削除を許可する」がオフのときは、読み取りだけができます。
 
 | 目的 | AI にできること | 道具（例） |
 | --- | --- | --- |
 | データフレームとデータ加工 | データフレームの読み取り、プレビュー、プロファイル。加工ステップの追加と削除、ブランチの操作、R コードの実行と結果のデータフレームへの保存。 | create_wrangling_step, ai_wrangle, preview_data_frame, profile_data_frame, create_branch, execute_r_script, save_result_as_dataframe |
 | データソースと接続 | 接続の読み取りと保存、データの取り込み、データソースの作成と置き換え、PDF からの表の抽出。 | get_connections, save_connection, create_data_source, replace_data_source, extract_pdf_tables |
 | チャート | チャートの作成、変更、コピー、読み取り（設定、データ、画像）、チャートのデータの書き出し。 | create_chart, update_chart, get_chart, get_chart_data, get_chart_image, copy_chart, export_chart_data |
-| アナリティクス | アナリティクス（回帰、検定、クラスタなど）とテンプレートの作成、変更、読み取り。 | create_analytics, update_analytics, get_analytics, list_analytics_templates |
+| アナリティクス | アナリティクス（回帰、検定、クラスタリングなど）とテンプレートの作成、変更、読み取り。 | create_analytics, update_analytics, get_analytics, list_analytics_templates |
 | ノート | ノートの作成、変更、読み取り、表示、公開、書き出し。ノートの AI への質問。 | create_note, update_note, get_note, publish_note, export_note_html, ask_note_ai |
 | ダッシュボード | ダッシュボードの作成、変更、検証、公開、書き出し。パラメーターの値の設定。 | create_dashboard, update_dashboard, validate_dashboard, publish_dashboard, export_dashboard_pdf |
 | パラメーター | パラメーターの作成、名前の変更、読み取り、削除。 | save_parameter, get_parameters, rename_parameter, delete_parameter |
@@ -21,7 +21,7 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 
 > **変更や削除を行う道具があります**
 >
-> これらの道具には、削除、公開と公開の取り消し、R コードの実行を行うものがあります。Desktop が先に確認する仕組みは、「許可の範囲と設定」で説明しています。
+> これらの道具には、削除、公開と公開の取り消し、R コードの実行を行うものがあります。Desktop が先に確認する仕組みは、[許可の範囲と設定](permissions_ja.md)で説明しています。
 
 <a id="all-tools"></a>
 
@@ -29,7 +29,7 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 
 全部で 146 個の道具があります。いつでも使える道具が 68 個、システム設定で「作成、変更、削除を許可する」をオンにすると使える道具が 78 個です。使える道具は、Exploratory Desktop のバージョンと、MCP / CLI の設定によって異なります。
 
-いつでも使える道具には、読み取りのほか、画面を開く道具などが含まれます。「作成、変更、削除を許可する」はシステム設定 \> MCP / CLI にあります。オフのときは、後者の道具は権限の不足で止まります。
+いつでも使える道具には、読み取りのほか、画面を開く道具などが含まれます。「作成、変更、削除を許可する」はシステム設定 \> MCP / CLI にあります。オフのときは、それ以外の道具は権限の不足で止まります。
 
 ### プロジェクト（16 個）
 
@@ -38,17 +38,17 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 | 名前 | 使える条件 | できること |
 | --- | --- | --- |
 | ask_project | いつでも | 書き込みの前に、どのプロジェクトを使うかを利用者に確認します。 |
-| get_environment | いつでも | 接続している Desktop の情報（アプリのバージョン、Agent API のバージョン、OS、ログイン中のユーザー、開いているプロジェクト）を返します。 |
-| get_lineage | いつでも | チャート、アナリティクス、ノート、データフレームが、どのデータの取り込み元の上に作られているかを返します。 |
+| get_environment | いつでも | 接続している Desktop の情報（アプリのバージョン、Agent API のバージョン、OS、サインイン中のユーザー、開いているプロジェクト）を返します。 |
+| get_lineage | いつでも | チャート、アナリティクス、ノート、データフレームが、どのデータソースから作られているかを返します。 |
 | get_project | いつでも | プロジェクト 1 つの名前、説明、更新日時、開いているかどうかを読み取ります。 |
 | get_project_history | いつでも | プロジェクトの変更履歴を読み取り、検索します。 |
 | list_created_artifacts | いつでも | この会話で AI が作成または変更したチャート、アナリティクス、ステップ、ブランチを一覧します。 |
-| list_projects | いつでも | この PC のプロジェクトを、新しい順に一覧します。 |
+| list_projects | いつでも | このコンピューターのプロジェクトを、新しい順に一覧します。 |
 | locate_published_source | いつでも | 公開されたデータの取り込み元をたどります。 |
 | open_project | いつでも | ローカルプロジェクトをウィンドウで開きます。すでに開いていればそのウィンドウを前面に出します。 |
 | search_artifacts | いつでも | 開いているプロジェクトから、名前、コメント、中身で成果物を検索します。 |
 | search_projects | いつでも | 手元のすべてのプロジェクトから、データフレーム、チャート、アナリティクス、ノートなどを検索します。 |
-| search_server_projects | いつでも | ログイン中の Exploratory サーバーで公開されているプロジェクトを一覧します。 |
+| search_server_projects | いつでも | サインイン中の Exploratory サーバーで公開されているプロジェクトを一覧します。 |
 
 **「作成、変更、削除を許可する」をオンにすると使える（4 個）**
 
@@ -104,8 +104,8 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 | edit_wrangling_steps | 作成、変更、削除を許可したとき | 既存のステップを、ステップのメニューと同じ方法で編集します。 |
 | move_branch | 作成、変更、削除を許可したとき | ブランチの分岐元を、別のステップに変更します。 |
 | preview_wrangling_steps | 作成、変更、削除を許可したとき | 変更を一時的なオブジェクトで試し、保存せずに結果を確認します。 |
-| set_step_cache | 作成、変更、削除を許可したとき | ステップのデータをキャッシュする、更新する、または解除します。 |
-| set_step_disabled | 作成、変更、削除を許可したとき | ステップを削除せずに、無効にする、または有効に戻します。 |
+| set_step_cache | 作成、変更、削除を許可したとき | ステップのデータのキャッシュ、更新、解除のいずれかを行います。 |
+| set_step_disabled | 作成、変更、削除を許可したとき | ステップを削除せずに、無効にするか、有効に戻します。 |
 | update_ai_proposal | 作成、変更、削除を許可したとき | 公開後に、AI の提案で直した内容が効いたかどうかを記録します。 |
 
 ### チャート（15 個）
@@ -126,11 +126,11 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 
 | 名前 | 使える条件 | できること |
 | --- | --- | --- |
-| copy_chart | 作成、変更、削除を許可したとき | チャートを複製する、または別のデータフレームに貼り付けます。 |
+| copy_chart | 作成、変更、削除を許可したとき | チャートを複製するか、別のデータフレームに貼り付けます。 |
 | create_chart | 作成、変更、削除を許可したとき | データフレームから、編集できるチャートを作成します。 |
 | delete_chart | 作成、変更、削除を許可したとき | チャートを削除します。 |
 | export_chart_data | 作成、変更、削除を許可したとき | チャートのデータをファイルに書き出します。 |
-| install_chart_map | 作成、変更、削除を許可したとき | 地図の拡張を Exploratory のサーバーから入れる、または更新します。 |
+| install_chart_map | 作成、変更、削除を許可したとき | 地図の拡張を Exploratory のサーバーから入れるか、更新します。 |
 | open_chart | 作成、変更、削除を許可したとき | チャートをチャートビューで開きます。 |
 | save_chart_ai_summary | 作成、変更、削除を許可したとき | 書いた解釈文を、チャートの AI サマリとして保存します。 |
 | update_chart | 作成、変更、削除を許可したとき | チャートの種類、集計、名前などの設定を変更します。 |
@@ -176,7 +176,7 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 | export_note_html | 作成、変更、削除を許可したとき | ノートを HTML ファイルに書き出します。 |
 | export_note_pdf | 作成、変更、削除を許可したとき | ノートを PDF ファイルに書き出します。 |
 | open_note | 作成、変更、削除を許可したとき | ノートを画面で開きます。 |
-| update_note | 作成、変更、削除を許可したとき | ノートの本文に追記する、または置き換える、名前を変更します。 |
+| update_note | 作成、変更、削除を許可したとき | ノートの本文に追記するか置き換えるか、名前を変更します。 |
 
 ### ダッシュボード（9 個）
 
@@ -184,7 +184,7 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 
 | 名前 | 使える条件 | できること |
 | --- | --- | --- |
-| get_dashboard | いつでも | ダッシュボード 1 つのページ、markdown、変数、設定を読み取ります。 |
+| get_dashboard | いつでも | ダッシュボード 1 つのページ、Markdown、変数、設定を読み取ります。 |
 | get_dashboard_image | いつでも | 保存済みダッシュボードの指定ページを PNG 画像で返します。 |
 | list_dashboards | いつでも | プロジェクトのダッシュボードを一覧します。 |
 | validate_dashboard | いつでも | 保存せずに、ダッシュボードのレイアウトを検査します。 |
@@ -206,7 +206,7 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 | 名前 | 使える条件 | できること |
 | --- | --- | --- |
 | get_connections | いつでも | データ接続の一覧、または接続 1 件の項目を読み取ります。 |
-| get_data_source_params | いつでも | データソースの設定項目と、接続が必要かどうかを返します。 |
+| get_data_source_params | いつでも | データソースのプラグインが受け取る設定項目と、接続が必要かどうかを返します。 |
 | identify_data_source | いつでも | 依頼されたデータの取得元を特定し、リファレンスを返します。 |
 | lookup_connection | いつでも | 選択した接続を探し、認証情報を除いたメタ情報を返します。 |
 | lookup_reference | いつでも | データの取得元の種類に合う、AI Data のリファレンスを返します。 |
@@ -236,7 +236,7 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 | 名前 | 使える条件 | できること |
 | --- | --- | --- |
 | get_parameters | いつでも | プロジェクトのパラメーターを読み取ります。 |
-| get_session_parameters | いつでも | ログイン情報から自動で定義されるセッションパラメーターの定義を読み取ります。 |
+| get_session_parameters | いつでも | サインイン情報から自動で定義されるセッションパラメーターの定義を読み取ります。 |
 
 **「作成、変更、削除を許可する」をオンにすると使える（4 個）**
 
@@ -301,13 +301,13 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 
 | 名前 | 使える条件 | できること |
 | --- | --- | --- |
-| fetch_catalog_item | いつでも | カタログの項目 1 つの、タイトル、説明、列などを読み取ります。 |
+| fetch_catalog_item | いつでも | カタログの項目 1 つの、タイトル、説明、列などを Markdown で読み取ります。 |
 | get_catalog_schedule | いつでも | カタログの項目の更新スケジュールを取得します。 |
 | get_catalog_schema | いつでも | カタログの項目の列を、説明と要約統計つきで取得します。 |
 | preview_catalog_data | いつでも | カタログの項目の行を、ページ送りで取得します。 |
 | query_catalog_data | いつでも | カタログの項目を、絞り込み、グループ化、集計、結合します。 |
 | read_catalog | いつでも | プロジェクトのデータフレーム、チャート、アナリティクス、ノート、パラメーター、ダッシュボードをまとめて読み取ります。 |
-| search_catalog | いつでも | この PC のデータカタログを検索します。 |
+| search_catalog | いつでも | このコンピューターのデータカタログを検索します。 |
 
 **「作成、変更、削除を許可する」をオンにすると使える（3 個）**
 

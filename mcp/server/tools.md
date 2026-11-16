@@ -9,7 +9,7 @@ Tools are operations an AI can call. Choose an operation by purpose, then inspec
 | Kind | Tool | Read only, or create, change, delete | What it does |
 | --- | --- | --- | --- |
 | Find and read | [search](tools.md#search) | Read only | Search and list published content. |
-| Find and read | [fetch](tools.md#fetch) | Read only | Read a note, dashboard or slide as Markdown. |
+| Find and read | [fetch](tools.md#fetch) | Read only | Read a note, dashboard, slide or data item as Markdown. |
 | Charts and analytics | [chart_get_data](tools.md#chart_get_data) | Read only | Get the numbers behind a chart. |
 | Charts and analytics | [chart_get_image](tools.md#chart_get_image) | Read only | Get a chart as an image. |
 | Charts and analytics | [chart_query](tools.md#chart_query) | Read only | Filter and aggregate the data of a chart in a note, dashboard or slide on the server. |
@@ -18,7 +18,7 @@ Tools are operations an AI can call. Choose an operation by purpose, then inspec
 | Data | [dataframe_get_wrangling](tools.md#dataframe_get_wrangling) | Read only | Show how a data item was built, step by step. |
 | Data | [dataframe_preview](tools.md#dataframe_preview) | Read only | Show rows. |
 | Data | [query_dataset](tools.md#query_dataset) | Read only | Filter and aggregate on the server. |
-| Data | [dataframe_export](tools.md#dataframe_export) | Read only | Save a result as CSV or Parquet. |
+| Data | [dataframe_export](tools.md#dataframe_export) | Read only (creates a download link) | Save a result as CSV or Parquet. |
 
 exploratory.io offers these tools. On an on-premises server, which tools appear depends on the server settings; query_dataset, chart_query and dataframe_export appear only when the administrator has turned them on. More tools can appear depending on the settings, for example desktop_mcp_setup_guide, which returns the steps to connect an AI client to Exploratory Desktop. Run expl server tools list to see what your server offers.
 
@@ -173,7 +173,7 @@ Filter, group and aggregate a data item on the server and return only the result
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |
 | `dataset_id` | string | Required unless queries or datasets is used | The id of the data item, from a search result or a fetch. |
-| `mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Required unless queries is used. Values: `rows`, `aggregate` |
+| `mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
 | `columns` | array | Required in rows mode (optional in a join) | Only in rows mode. 1 to 50 unique column names to return. In a join, write each column as { "alias", "column" }. In a join, leaving it out returns every column. |
 | `filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
 | `dimensions` | array |  | Only in aggregate mode. 0 to 5 columns to group by. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
@@ -193,7 +193,7 @@ Filter, group and aggregate a data item on the server and return only the result
 - mode: "aggregate" returns up to 500 rows.
 - A metric alias starts with a letter or _. It uses only ASCII letters, digits and _ (for example total_sales). Japanese is not allowed.
 - A dataset alias in a join is lowercase and has up to 16 characters.
-- A join uses 2 to 5 data sets. A call can hold up to 5 independent queries.
+- A join uses 2 to 5 data items. A call can hold up to 5 independent queries.
 
 The result is exact and includes dataset.version and dataset.updated_at. Say which data version the numbers are based on. Check warnings in the result as well. A bad query returns error.code, error.message and error.field.
 
@@ -207,7 +207,7 @@ Filter and aggregate the data of a chart in a note, dashboard or slide on the se
 | --- | --- | --- | --- |
 | `id` | string | Required unless queries is used | The id of the note, dashboard or slide that holds the chart, from a search result or a fetch. |
 | `chart` | string | Required unless queries is used | The name of the chart: metadata.charts\[\].name in the result of fetch (letters, digits, _ and -). |
-| `mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Required unless queries is used. Values: `rows`, `aggregate` |
+| `mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
 | `columns` | array |  | Only in rows mode. 1 to 50 unique column names to return. |
 | `filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
 | `dimensions` | array |  | Only in aggregate mode. 0 to 5 columns to group by. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |

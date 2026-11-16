@@ -20,11 +20,11 @@ For listing and describing commands, see [Inspect commands](../commands.md#inspe
 
 ## Choose expl or MCP Server
 
-MCP is a shared standard for AI apps to connect to outside services. You can use Exploratory from AI with either.
+MCP is a shared standard for AI tools to connect to outside services. You can use Exploratory from AI with either.
 
 | You want | Use |
 | --- | --- |
 | Scripts, CI, a shell-based agent | expl |
 | An agent that works through MCP | MCP Server (you register the server URL in your AI tool) |
 
-To read published content from an AI app, see [MCP Server](../../../mcp/server/server.md). To work with projects in Exploratory Desktop, see [Use with Desktop](../../desktop/guides/agents.md).
+To read published content from an AI tool, see [MCP Server](../../../mcp/server/server.md). To work with projects in Exploratory Desktop, see [Use with Desktop](../../desktop/guides/agents.md).

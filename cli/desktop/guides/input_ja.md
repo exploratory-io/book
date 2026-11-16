@@ -12,7 +12,7 @@
 | 真偽値 | --flag または --no-flag | --include-data |
 | 値の配列 | フラグを繰り返す | --tag sales --tag weekly |
 | オブジェクト、オブジェクトの配列 | JSON 文字列、または @ファイル | --pages @pages.json |
-| 長い文字列 | @ファイル（中身が値になります） | --content @report.md |
+| 長い文字列 | @ファイル（中身が値になります） | --markdown @report.md |
 
 <a id="json"></a>
 
@@ -28,9 +28,9 @@ cat dashboard.json | expl dashboard create --input -
 
 `--input -` と書くと、JSON を標準入力から読みます。
 
-- --input とフラグを両方渡すと、フラグが勝ちます。ただし、値の配列は例外です。繰り返したフラグの値は、--input の JSON にある配列に追加されます。配列全体を置き換えるときは、JSON のほうを変えてください。
-- 生成されたコマンドは、知らないフラグや余分な引数をエラー（終了コード 2）にして、近い名前を候補として示します。組み込みのコマンド（expl status、expl project use、expl lang、expl skill、expl completion）は、これらをエラーにしません。[共通フラグ](../global-flags_ja.md)を参照してください。
-- グローバルフラグと同じ名前の入力と、@ で始まる文字列そのものは、--input の JSON で渡してください。
+- --input とフラグを両方渡すと、フラグが優先されます。ただし、値の配列は例外です。繰り返したフラグの値は、--input の JSON にある配列に追加されます。配列全体を置き換えるときは、JSON のほうを変えてください。
+- 生成されたコマンドは、未知のフラグや余分な引数をエラー（終了コード 2）にして、近い名前を候補として示します。組み込みのコマンド（expl status、expl project use、expl lang、expl skill、expl completion）は、これらをエラーにしません。[共通フラグ](../global-flags_ja.md)を参照してください。
+- 共通フラグと同じ名前の入力と、@ で始まる文字列そのものは、--input の JSON で渡してください。
 
 <a id="id"></a>
 

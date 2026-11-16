@@ -16,7 +16,7 @@ Desktop の MCP で、手元のプロジェクトについて AI に頼めるこ
 
 各道具の働きと「作成、変更、削除を許可する」が必要なものは[使える道具](tools_ja.md)を参照してください。ターミナルから同じことをするときは、CLI Desktop の[使い方](../../cli/desktop/use_ja.md)を参照してください。
 
-出力される図や文章は、データと AI ツールによって変わります。例の依頼文は、そのまま使うことも、自分のデータに合わせて言い換えることもできます。
+出力されるチャートや文章は、データと AI ツールによって変わります。例の依頼文は、そのまま使うことも、自分のデータに合わせて言い換えることもできます。
 
 <a id="before"></a>
 
@@ -46,7 +46,7 @@ Desktop は手元のプロジェクトを対象にします。exploratory.io に
 注文日から月の列を作って、地域ごとに売上を集計して
 ```
 
-列を作る、絞る、集計する、結合するといったデータ加工を、加工のステップとして追加します（create_wrangling_step）。ステップは、Exploratory Desktop の右側のステップに並びます。
+列を作る、絞る、集計する、結合するといったデータ加工を、加工のステップとして追加します（create_wrangling_step）。ステップは、Exploratory Desktop の右側のステップの一覧に並びます。
 
 ```text
 自由記述の口コミを、内容ごとに分類する列を作って
@@ -80,7 +80,7 @@ Desktop は手元のプロジェクトを対象にします。exploratory.io に
 顧客をクラスタに分けて
 ```
 
-回帰、検定、クラスタなどのアナリティクスを作ります（create_analytics）。結果は、Exploratory Desktop のアナリティクスとして開けます。
+回帰、検定、クラスタリングなどのアナリティクスを作ります（create_analytics）。結果は、Exploratory Desktop のアナリティクスとして開けます。
 
 <a id="notes"></a>
 
@@ -90,7 +90,7 @@ Desktop は手元のプロジェクトを対象にします。exploratory.io に
 分析結果をノートにまとめて
 ```
 
-ノートを書き、保存し、図を埋め込みます（create_note、update_note）。作ったノートは、Exploratory Desktop で開いて確認できます。
+ノートを書き、保存し、チャートを埋め込みます（create_note、update_note）。作ったノートは、Exploratory Desktop で開いて確認できます。
 
 <a id="dashboards"></a>
 
@@ -132,7 +132,7 @@ Desktop は手元のプロジェクトを対象にします。exploratory.io に
 期間を選べるフィルターを付けたい
 ```
 
-パラメーターを作り、値の一覧を決めて、フィルターや図表に適用します（save_parameter など）。
+パラメーターを作り、値の一覧を決めて、フィルターやチャートに適用します（save_parameter など）。
 
 <a id="next"></a>
 

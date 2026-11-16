@@ -41,6 +41,20 @@ Replace \<id\> with an id from a search result. The result below was run on the 
         "row_count": 1,
         "queryable": true
       },
+      {
+        "name": "qR0sT1uV",
+        "title": "Monthly Sales Trend",
+        "type": "line",
+        "values": [
+          {
+            "column": "sales",
+            "label": "sales",
+            "aggregation": "sum"
+          }
+        ],
+        "row_count": 22,
+        "queryable": true
+      },
       … (trimmed)
     ],
     "context": {
@@ -266,7 +280,7 @@ To see the trend or layout of a chart, get its image.
 expl server chart get-image <id> --chart <chart> --json
 ```
 
-Example of the output shape; values are illustrative. The example is for the chart iJ6kL7mN (Monthly Sales Trend). The image_path line (where the image is saved) is trimmed.
+Example of the output shape; values are illustrative. The example is for the chart qR0sT1uV (Monthly Sales Trend). The image_path line (where the image is saved) is trimmed.
 
 **Result**
 
@@ -274,14 +288,14 @@ Example of the output shape; values are illustrative. The example is for the cha
 {
   "success": true,
   "item": {
-    "id": "dE5fG6hI7j",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Returned the image of chart \"Monthly Sales Trend\" (600x400).",
   "result": {
     "chart": {
-      "name": "iJ6kL7mN",
+      "name": "qR0sT1uV",
       "title": "Monthly Sales Trend",
       "type": "line"
     },
@@ -332,7 +346,7 @@ Example of the output shape; values are illustrative. The example is for the cha
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
     "The data was refreshed at 2026-11-14T22:02:56.899Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_data for them."
   ],
-  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j",
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
 … (trimmed)
 }
 ```
@@ -349,6 +363,6 @@ The image is the one saved when the item was published, so it can be older than 
 | --- | --- |
 | You need totals, sorting or filtering | Use chart query. |
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
-| Run "expl server login". | Sign-in is missing, or the saved login or API key was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in, or the saved login or API key was rejected. Run expl server login. |
 
 Every flag is described in [chart get-data](../commands.md#chart-get-data), how to aggregate in [chart query](../commands.md#chart-query), and getting the image in [chart get-image](../commands.md#chart-get-image).

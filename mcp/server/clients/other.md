@@ -36,7 +36,7 @@ See the client's own documentation for where and how.
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed.
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
 
 <a id="apikey"></a>
 
@@ -52,7 +52,7 @@ A request without a valid token gets HTTP 401. Sign in again with your client's 
 
 - [Data and permissions](../data.md#auth) - The authorization mechanism and the metadata URLs.
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the MCP Server as a whole.
+- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 
@@ -60,4 +60,4 @@ A request without a valid token gets HTTP 401. Sign in again with your client's 
 
 Remove exploratory-server (or the name you registered) from the client's settings.
 
-Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in your account settings on exploratory.io.
+Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in Account Settings on exploratory.io.

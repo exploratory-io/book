@@ -1,14 +1,14 @@
 # Publish
 
-Publish a note, a dashboard or a data frame from Desktop to the server, see what is published, and cancel it.
+Publish a note, a dashboard or a data frame from Desktop to the server, see what is published, and cancel the publication of a note or dashboard.
 
 <a id="before"></a>
 
 ## Before you start
 
 - Exploratory Desktop is running, the project is open ([Choose a project](projects.md)) and you are signed in (expl status shows the signed-in user).
-- Publishing and cancelling work only when Allow create, edit and delete is on in the system settings (MCP / CLI).
-- Publishing makes the content readable by anyone who has the URL, and cancelling a publication cannot be undone. So both ask for confirmation first. In a terminal, expl asks Continue? \[y/N\]. From a script or an AI agent, add --yes, after you have checked the target. See [Confirmation](confirmation.md).
+- Publishing and cancelling work only when Allow create, edit and delete is on in System Settings > MCP / CLI.
+- Publishing makes the content readable by anyone who has the URL, and cancelling a publication cannot be undone. So both ask for confirmation first. In a terminal, expl asks Continue? \[y/N\]. From a script or an AI agent, add --yes, after you have checked the target. See [Confirmation and long-running operations](confirmation.md).
 
 <a id="steps"></a>
 
@@ -41,7 +41,7 @@ To publish a data frame, use expl dataframe publish \<dataframe_id\>. --step-nam
 
 expl published list shows the public URL (publishedUrl). If the result has outputOlderThanSource set to true, the published content is older than the current body.
 
-A dashboard can be published only after Desktop has drawn it. When No rendered output appears, open the dashboard once in Exploratory Desktop so that it is drawn, and run the command again.
+A dashboard can be published only after Desktop has rendered it. When No rendered output appears, open the dashboard once in Exploratory Desktop so that it renders, and run the command again.
 
 ### 3. See what is published
 
@@ -79,7 +79,7 @@ For the arguments of any command, run expl \<command\> --help or expl tools desc
 
 - [Confirmation and long-running operations](confirmation.md)
 - [Write notes](write-notes.md)
-- [Create and duplicate dashboards](duplicate-dashboard.md)
+- [Duplicate dashboards](duplicate-dashboard.md)
 - [Desktop commands](../commands.md)
 
 To do the same through MCP, see Publish in [Use](../../../mcp/desktop/use.md#examples).

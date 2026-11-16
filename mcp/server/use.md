@@ -45,7 +45,7 @@ What columns does the "Sales Orders" data on Exploratory have, and which 5 regio
 
 Describe the data and your question. The AI checks the columns and aggregation rules before calculating. Review the calculation conditions (aggregation, filters) and the data date alongside the result.
 
-To do the same from a terminal, see [Aggregate data](../../cli/server/guides/query-data.md).
+To do the same from a terminal, see [Query data](../../cli/server/guides/query-data.md).
 
 <a id="chart"></a>
 

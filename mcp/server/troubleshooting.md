@@ -33,9 +33,9 @@ A request without a valid token gets HTTP 401. Sign in again as follows.
 | Cursor | agent mcp login exploratory-server |
 | Claude app | Go through the sign-in steps on the client page again |
 | ChatGPT app | Go through the sign-in steps on the client page again |
-| Other clients | Sign in again as the client's documentation describes, or connect with an API key |
 | Grok Bot | Remove the connection and add it again |
 | Antigravity | Go through the sign-in steps on the client page again |
+| Other clients | Sign in again as the client's documentation describes, or connect with an API key |
 
 - [Add from an AI tool](clients/apps.md) - Steps for each client.
 
@@ -58,9 +58,9 @@ A key that fails gets the reason in the response, and the client does not fall b
 
 ## The same tools appear twice
 
-Use one way only: the official plugin, the direct URL, or the Exploratory connector on claude.ai (it also appears in Claude Code when you sign in with the same Claude account).
+Use one way only: the plugin from your app's official directory (if it lists Exploratory Server), the direct URL, or the Exploratory connector on claude.ai (it also appears in Claude Code when you sign in with the same Claude account).
 
-If your app's official directory lists Exploratory Server and you install it from there, remove the direct entry first. Otherwise, keep the manual registration. `exploratory@exploratory` is the Desktop plugin, not Server. In Claude Code, use the command below to remove the direct entry. Replace `exploratory-server` with the name you registered. The chat-based setup example uses `Exploratory`. If you do not remove it, the same tools appear twice.
+If your app's official directory lists Exploratory Server and you install it from there, remove the direct entry first. Otherwise, keep the direct entry. `exploratory@exploratory` is the Desktop plugin, not Server. In Claude Code, use the command below to remove the direct entry. Replace `exploratory-server` with the name you registered. The chat-based setup example uses `Exploratory`. If you do not remove it, the same tools appear twice.
 
 ```sh
 claude mcp remove exploratory-server

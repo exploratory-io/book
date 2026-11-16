@@ -95,10 +95,10 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 
 ## トラブルシューティング
 
-| 表示される内容 | 対処 |
+| 症状 | 対処 |
 | --- | --- |
 | DATA_EGRESS_LIMIT | 公開した人が、このデータをファイルとしてダウンロードすることを許可していません。fetch または dataframe get-schema で、公開した人が共有している内容を確認するか、URL をブラウザで開きます。 |
-| SERVER_BUSY | ほかの書き出しが実行中か、1 時間あたりの書き出しの上限に達しています。書き出しは、1 人につき同時に 1 つだけ実行できます。数秒おいてから再度実行します。上限に達した場合は、最大 1 時間待ちます。 |
+| SERVER_BUSY | 自分のほかの書き出しが実行中か、1 時間あたりの書き出しの上限に達しています。書き出しは、1 人につき同時に 1 つだけ実行できます。数秒おいてから再度実行します。上限に達した場合は、最大 1 時間待ちます。 |
 | Run "expl server login". | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
 
 すべてのフラグは[dataframe export](../commands_ja.md#dataframe-export)、絞り込みと集計の指定方法は[dataset query](../commands_ja.md#dataset-query)で説明しています。

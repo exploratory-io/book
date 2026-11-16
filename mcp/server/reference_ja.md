@@ -5,11 +5,11 @@
 | 調べたいこと | ページ |
 | --- | --- |
 | 各道具の入力と、AI が使えるもの | [使える道具](tools_ja.md) |
-| 読み取りだけの道具はどれか（このサーバーの道具はすべて読み取りだけです） | [使える道具](tools_ja.md#overview) |
+| 読み取りだけの道具はどれか（このサーバーの道具はすべて読み取りだけです。dataframe_export は、ダウンロードリンクも作ります） | [使える道具](tools_ja.md#overview) |
 | 回数の上限、行数の上限、エラーごとの対処 | [制限とエラー](limits_ja.md) |
 | 何が送られ、何が記録されるか。誰の権限で動くか | [データと権限](data_ja.md) |
 | 症状からの対処 | [トラブルシューティング](troubleshooting_ja.md) |
 
-つなぎ方は、[はじめる](get-started_ja.md)を参照してください。サーバーの URL は[こちら](server_ja.md#url)、API キーでの接続は[認証と API キー](auth_ja.md)にあります。
+つなぎ方は、[はじめる](get-started_ja.md)を参照してください。サーバーの URL は[サーバー URL](server_ja.md#url)、API キーでの接続は[認証と API キー](auth_ja.md)にあります。
 
 ターミナルのコマンドを調べるときは、CLI Server の[リファレンス](../../cli/server/reference_ja.md)を参照してください。

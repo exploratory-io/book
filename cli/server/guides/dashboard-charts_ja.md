@@ -41,6 +41,20 @@ expl server fetch <id> --json
         "row_count": 1,
         "queryable": true
       },
+      {
+        "name": "qR0sT1uV",
+        "title": "Monthly Sales Trend",
+        "type": "line",
+        "values": [
+          {
+            "column": "sales",
+            "label": "sales",
+            "aggregation": "sum"
+          }
+        ],
+        "row_count": 22,
+        "queryable": true
+      },
       … (trimmed)
     ],
     "context": {
@@ -150,7 +164,7 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 … (trimmed)
 ```
 
-rows に数値が、chart.encoding に各軸の列と集計方法が表示されます。context には、公開時点、データの時点、パラメータの値が含まれます。数値は、公開されたときの値です。
+rows に数値が、chart.encoding に各軸の列と集計方法が表示されます。context には、公開時点、データの時点、パラメーターの値が含まれます。数値は、公開されたときの値です。
 
 has_more が true の場合は、続きがあります。取得済みの行数を --offset に指定すると、続きを取得できます。1 回の呼び出しで取得できる行数は、最大 100 行です。
 
@@ -266,7 +280,7 @@ result.has_more が true の場合は、結果に含まれていない行があ�
 expl server chart get-image <id> --chart <chart> --json
 ```
 
-出力の形を示す例で、値は説明用です。チャートは iJ6kL7mN（売上推移）です。image_path（画像の保存先）の行は省略しているので、次の JSON は抜粋で、完全な JSON ではありません。
+出力の形を示す例で、値は説明用です。チャートは qR0sT1uV（Monthly Sales Trend）です。image_path（画像の保存先）の行は省略しているので、次の JSON は抜粋で、完全な JSON ではありません。
 
 **実行結果**
 
@@ -274,15 +288,15 @@ expl server chart get-image <id> --chart <chart> --json
 {
   "success": true,
   "item": {
-    "id": "dE5fG6hI7j",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
-    "title": "売上とマーケティング費用のダッシュボード"
+    "title": "Sales Orders Dashboard"
   },
-  "summary": "Returned the image of chart \"売上推移\" (600x400).",
+  "summary": "Returned the image of chart \"Monthly Sales Trend\" (600x400).",
   "result": {
     "chart": {
-      "name": "iJ6kL7mN",
-      "title": "売上推移",
+      "name": "qR0sT1uV",
+      "title": "Monthly Sales Trend",
       "type": "line"
     },
     "data_shared": true,
@@ -332,7 +346,7 @@ expl server chart get-image <id> --chart <chart> --json
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
     "The data was refreshed at 2026-11-14T22:02:56.899Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_data for them."
   ],
-  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j",
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v",
 …（中略）
 }
 ```
@@ -345,7 +359,7 @@ expl server chart get-image <id> --chart <chart> --json
 
 ## トラブルシューティング
 
-| 表示される内容 | 対処 |
+| 症状 | 対処 |
 | --- | --- |
 | 合計、並べ替え、絞り込みが必要 | chart query を使用します。 |
 | DATA_EGRESS_LIMIT | 公開した人が、このデータの行を共有していません。チャート、アナリティクス、要約を使用します。 |

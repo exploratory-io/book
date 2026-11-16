@@ -32,7 +32,7 @@ expl server dataframe get-schema <id> --detail light --json
 expl server dataframe preview <id> --limit 3 --json
 ```
 
-公開した人が全データを含めていないときは、公開時に保存したサンプルの行です。合計や絞り込みは、サンプルではなく、次の dataset query で行います。
+公開した人が全データを含めていないときは、返る行は公開時に保存したサンプルです。合計や絞り込みは、サンプルではなく、次の dataset query で行います。
 
 <a id="query"></a>
 
@@ -108,6 +108,14 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 - rows は最大 1,000 行、aggregate は最大 500 行です。続きを取得する指定はありません。結果の has_more が true なら、絞り込むか、集計します。
 - 結果には、データのバージョンと更新時刻が含まれます。数値を人に伝えるときは、いつのデータで計算したかも伝えます。
 
+条件に合う行を取得するときは、--mode rows を使います。--columns が必要で、--filters で行を絞り込みます。次の例は、region が Kanto の行について、2 つの列を返します。
+
+```sh
+expl server dataset query <dataset_id> --mode rows --columns '["region","sales"]' --filters '{"column":"region","operator":"eq","value":"Kanto"}' --limit 10 --json
+```
+
+operator は比較の方法です。データごとに使える operator は、expl server dataframe get-schema \<id\> --detail full の結果にあります。複数の条件を組み合わせる方法は、[フィルタ条件](../commands_ja.md#dataset-query-json-arguments)を参照してください。
+
 結果が大きすぎる場合は、dataframe export で CSV または Parquet のファイルにします。複数のデータを結合する方法は、[dataset query](../commands_ja.md#dataset-query) のページを参照してください。
 
 <a id="json"></a>
@@ -126,7 +134,7 @@ metrics の alias は必須です。英字、数字、_ だけで、数字で始
 
 書き方を間違えたときの表示と、直し方です。
 
-| 表示される内容 | 対処 |
+| 症状 | 対処 |
 | --- | --- |
 | Each dimension must be an object like { "column": "region" }. (INVALID_QUERY) | dimensions は、{ "column": "列の名前" } の形のオブジェクトの配列にします。 |
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | metrics では、function と alias を指定します。 |
@@ -137,14 +145,14 @@ metrics の alias は必須です。英字、数字、_ だけで、数字で始
 
 ## 問い合わせできないデータ
 
-公開した人が全データを含めずに公開したデータは、サーバーでは問い合わせできません。dataset query は、次のエラーで失敗します。
+全データを含めずに公開されたデータは、サーバーでは問い合わせできません。dataset query は、次のエラーで失敗します。
 
-| 表示される内容 | 対処 |
+| 症状 | 対処 |
 | --- | --- |
-| DATASET_UNAVAILABLE | 公開した人が、今の Exploratory Desktop でデータを公開し直す必要があります。 |
+| DATASET_UNAVAILABLE | 公開した人が、最新のバージョンの Exploratory Desktop でデータを公開し直す必要があります。 |
 
-検索結果や --detail light の結果では、問い合わせできるかどうかはわかりません。--detail full で、結果の query.available が false になっていないかを確認します。
+検索結果や --detail light の結果では、問い合わせできるかどうかは分かりません。--detail full で、結果の query.available が false になっていないかを確認します。
 
 ```sh
-expl server dataframe get-schema <id> --json
+expl server dataframe get-schema <id> --detail full --json
 ```

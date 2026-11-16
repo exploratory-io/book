@@ -16,7 +16,7 @@ In Exploratory Desktop, choose your name at the bottom left of the screen, then 
 ![The menu that opens when you choose your name at the bottom left of Exploratory Desktop. 1 is your name and 2 is System Settings](images/en/open-system-settings.png)
 
 1. In the menu on the left, choose MCP / CLI.
-2. Check the "Install the Exploratory Desktop plugin" card.
+2. Find the "Install the Exploratory Desktop plugin" card.
 3. Choose Install on the row of the AI tool you use.
 
 ![The "Install the Exploratory Desktop plugin" card in MCP / CLI in System Settings](images/en/desktop-plugin-card.png)
@@ -35,10 +35,12 @@ Next, on the same screen, do this.
 
 If you do not save, the MCP switch and the Allow create, edit and delete setting do not take effect.
 
+<a id="check"></a>
+
 ### Check it in the AI tool
 
 1. When the install ends, restart that AI tool.
-2. The first time an AI tool connects, Desktop asks whether to allow it. Allow only an app you started yourself.
+2. The first time an AI tool connects, Desktop shows a window titled "An AI tool is asking for your approval". Choose Allow only for an app you started yourself. If you choose Don't allow, see [If something does not work](get-started.md#trouble).
 3. In Exploratory Desktop, open the project you want to use.
 4. In the AI tool, ask this.
 
@@ -46,11 +48,13 @@ If you do not save, the MCP switch and the Allow create, edit and delete setting
    List the data frames in my open Exploratory project.
    ```
 
-   This works with the read-only setting too. To try creating something, turn on Allow create, edit and delete and save, then ask for a chart instead, such as a bar chart of a column of your own data.
+   This works with Allow create, edit and delete off too. To try creating something, turn on Allow create, edit and delete and save, then ask for a chart instead, such as a bar chart of a column of your own data.
 
 5. Check the connection.
    - In Claude Code, open `/mcp` and check that exploratory-desktop is connected.
    - In Codex, run `codex mcp list` and check that exploratory-desktop is listed.
+   - In Antigravity, check that the plugin appears under Customizations > Installed in the app.
+   - In Cursor, check that the Cursor row of the card shows "Installed - v" followed by the plugin version.
 
 If a call says that MCP is turned off, go back to System Settings and check that you turned the MCP switch on and chose Save.
 
@@ -62,10 +66,10 @@ The card works the same way, but what it installs differs a little.
 
 | AI tool | What the card installs | What the card shows |
 | --- | --- | --- |
-| Claude Code | The Exploratory Desktop plugin (with its skills) | Installed - v and the plugin version; Reinstall and Remove take the place of Install |
+| Claude Code | The Exploratory Desktop plugin (with its skills) | "Installed - v" followed by the plugin version; Reinstall and Remove take the place of Install |
 | Codex | Same | Same |
 | Antigravity | Same | Same |
-| Cursor | Only adds exploratory-mcp to ~/.cursor/mcp.json. No skills are installed | Installed, without a version. The buttons are Reinstall and Remove |
+| Cursor | Same. It copies the plugin to the Cursor plugin folder (~/.cursor/plugins/local/exploratory) instead of writing ~/.cursor/mcp.json. If ~/.cursor/mcp.json still has an old exploratory-desktop entry, the card deletes it; other entries stay | Same |
 
 Restart the AI tool after installing, whichever one it is.
 
@@ -84,7 +88,7 @@ Choosing Remove opens a confirmation.
 
 When an install fails, the second line of that AI tool's row shows "Could not install." in red. Details is right after it, then a sentence that gives the reason (for example "Check that you are connected to the internet."), and a Try again button at the right of the row. When updating an installed plugin fails, a Remove button also appears to its right.
 
-Hold the mouse pointer over Details to see the output of the command that ran, in a pop-up. The output is the last 2000 characters. If it is long, you can scroll inside the pop-up vertically. The pop-up stays when you move the pointer into it. Click Details to keep it open. Copy at the top right copies the output.
+Hold the mouse pointer over Details to see the output of the command that ran, in a pop-up. It shows up to the last 2,000 characters of the output. If it is long, you can scroll inside the pop-up vertically. The pop-up stays when you move the pointer into it. Click Details to keep it open. Copy at the top right copies the output.
 
 The image is an example of how the error details look when updating an installed plugin failed. The command output in the pop-up is a sample and differs from real output.
 
@@ -130,24 +134,7 @@ Needs Git. The plugin appears in the Antigravity app under Customizations \> Ins
 
 **Cursor**
 
-Add the `exploratory-desktop` entry below to ~/.cursor/mcp.json. If `mcpServers` already exists in the file, add only the `exploratory-desktop` entry inside it and keep the other server settings. The example shows a complete new file. It adds the Desktop MCP without the skills, the same entry the card writes.
-
-```json
-{
-  "mcpServers": {
-    "exploratory-desktop": {
-      "command": "exploratory-mcp"
-    }
-  }
-}
-```
-
-To also use the skills, load the plugin folder with the Cursor CLI (the steps Exploratory's setup guide shows for Cursor).
-
-```sh
-git clone https://github.com/exploratory-io/exploratory
-agent --plugin-dir ./exploratory/plugins/exploratory-desktop
-```
+Install it with the card. There is no separate step to do by hand: the card copies the plugin, with its skills, to ~/.cursor/plugins/local/exploratory.
 
 <a id="update"></a>
 
@@ -155,16 +142,14 @@ agent --plugin-dir ./exploratory/plugins/exploratory-desktop
 
 It depends on how you installed it.
 
-- Installed with the card (Claude Code, Codex, Antigravity, Cursor): choose Reinstall on the card to install the latest plugin again (this is also how you update). To remove it, choose Remove on the same card. Cursor too: what you installed with the card is removed with Remove on the card.
-- Installed by hand: use the commands in the table below to update and remove.
+- Installed with the card (Claude Code, Codex, Antigravity, Cursor): choose Reinstall on the card to install the latest plugin again (this is also how you update). To remove it, choose Remove on the same card.
+- Installed by hand (Claude Code, Codex, Antigravity): use the commands in the table below to update and remove. Cursor has no by-hand method; use the card.
 
 | AI tool | Update | Remove |
 | --- | --- | --- |
 | Claude Code | claude plugin marketplace update exploratory, then claude plugin update exploratory@exploratory, and restart Claude Code | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory, then codex plugin remove exploratory@exploratory and codex plugin add exploratory@exploratory | codex plugin remove exploratory@exploratory |
 | Antigravity | Run git pull in the cloned folder, then agy plugin install again | Remove the plugin in Antigravity's plugin settings |
-| Cursor (loaded with agent --plugin-dir) | Run git pull in the cloned folder and start agent --plugin-dir again | Stop using --plugin-dir |
-| Cursor (you wrote ~/.cursor/mcp.json by hand) | Rewrite its contents | Remove exploratory-desktop from ~/.cursor/mcp.json |
 
 The Desktop MCP stops when you quit Exploratory Desktop. Removing the plugin does not affect your Server MCP connection.
 

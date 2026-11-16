@@ -1,6 +1,6 @@
 # データを探す
 
-exploratory.io に公開されたデータ、ノート、ダッシュボードを探し、id を取り、fetch やデータのスキーマの取得に進みます。
+exploratory.io に公開されたデータ、ノート、ダッシュボードを探し、id を調べ、fetch やデータのスキーマの取得に進みます。
 
 <a id="before"></a>
 
@@ -32,7 +32,7 @@ expl server search "" --scope mine --limit 50 --json
 
 --limit は、返す件数の上限で、50 までです。JSON の has_more が true のときは、next_offset の値を --offset に渡すと、次のページを取得できます。
 
-### 2. id を取る
+### 2. id を控える
 
 結果の各項目に、id と URL が出ます。id は、次のコマンドに渡す値です。URL は、人にコンテンツを伝えるときに使います。
 

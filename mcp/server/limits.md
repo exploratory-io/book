@@ -8,14 +8,14 @@ What it cannot do, how to read the numbers, the limits, and what to do about err
 
 - Create, edit, publish or delete content.
 - Recompute a chart or analytics for parameter values other than the published ones.
-- Read content that is not published to Exploratory Server, such as projects that exist only in Exploratory Desktop. Use the separate Desktop MCP for those.
+- Read content that is not published to Exploratory Server, such as projects that exist only in Exploratory Desktop. Use the separate [Desktop MCP](../desktop/desktop.md) for those.
 
 <a id="numbers"></a>
 
 ## Numbers and their conditions
 
 - Numbers are the values as published.
-- A chart published on its own returns a sample of its rows. Do not add the rows up as a total.
+- A chart published on its own returns only the first 100 rows of the data used to draw it. Do not add the rows up as a total.
 - A viewer who changes parameters in the browser sees different results. MCP does not return those results.
 - Each chart and analytics result states the conditions of its computation: the aggregation, the chart filters, context.parameters and context.data_as_of.
 - query_dataset returns dataset.version and dataset.updated_at.
@@ -83,6 +83,6 @@ dataframe_export uses error_code like the other tools. For a bad query, it retur
 
 ## Rate limit
 
-If one user sends more than 120 requests in a minute, you get HTTP 429 with RATE_LIMITED. Wait one minute.
+If you send more than 120 requests in a minute, you get HTTP 429 with RATE_LIMITED. Wait one minute.
 
 If one address sends more than 30 refused API keys within 15 minutes (counted per IPv4 address, or per IPv6 /64 range), you get HTTP 429 with the message "Too many failed API key attempts. Try again later." A valid key is not counted. Fix the key and try again later.
