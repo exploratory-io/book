@@ -20,6 +20,13 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
 
 インストールした AI ツールを再起動します。AI ツールが初めて接続するときに、Desktop が許可するかどうかを聞きます。自分で起動したアプリだけ許可してください。
 
+AI ツールで、接続できたかを確かめます。
+
+- Claude Code: /mcp を開き、exploratory-desktop が接続済みかを確かめます。
+- Codex: codex mcp list を実行し、exploratory-desktop が一覧にあるかを確かめます。
+- Antigravity: アプリの Customizations \> Installed に、プラグインが表示されているかを確かめます。
+- Cursor: ~/.cursor/mcp.json に exploratory-desktop が登録されているかを確かめます。
+
 ### 4. AI にデータを見せる
 
 Exploratory Desktop で、使いたいプロジェクトを開きます。そのうえで、AI ツールで次のように頼みます。
@@ -28,7 +35,9 @@ Exploratory Desktop で、使いたいプロジェクトを開きます。その
 開いている Exploratory のプロジェクトのデータフレームを一覧して
 ```
 
-読み取りだけの設定でも動きます。作成も試すときは、「作成、変更、削除を許可する」をオンにして保存し、自分のデータの列の棒グラフなど、チャートを頼みます。接続を確かめるには、Claude Code では /mcp を開いて exploratory-desktop が接続済みか確認し、Codex では codex mcp list を実行して exploratory-desktop が一覧にあるか確認します。
+読み取りだけの設定でも動きます。
+
+作成も試すときは、「作成、変更、削除を許可する」をオンにして保存し、自分のデータの列の棒グラフなど、チャートを頼みます。
 
 <a id="trouble"></a>
 

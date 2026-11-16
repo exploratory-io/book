@@ -5,7 +5,6 @@ What is sent and what is recorded when you use the Desktop MCP. What Desktop ask
 <a id="privacy"></a>
 
 ## What is sent and recorded
-## What is sent and recorded
 
 - The Desktop MCP runs on your computer. It reads and edits local project content through the app.
 - What a tool returns (rows, column names, chart images, errors) becomes part of your conversation. It goes to the provider of your AI under that provider's terms. Do not use it on data that you may not send to that provider.
