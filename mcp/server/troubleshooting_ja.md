@@ -6,13 +6,13 @@
 
 ## まず状態を確かめる
 
-接続できているかを、[試す](overview_ja.md#steps)の手順で確かめます。つながらないときは、下で、症状を探します。
+接続できているかを、[はじめる](get-started_ja.md#steps)の手順 3で確かめます。つながらないときは、下で、症状を探します。
 
 <a id="contact"></a>
 
 ## 問い合わせるとき
 
-support@exploratory.io へ、次を送ってください。接続先のサーバーの URL、AI クライアントの名前とバージョン、行った操作、表示されたエラーの文です。トークンや API キーは伏せてください。
+support@exploratory.io へ、次を送ってください。接続先のサーバーの URL、AI ツールの名前とバージョン、行った操作、表示されたエラーの文です。トークンや API キーは伏せてください。
 
 <a id="network"></a>
 
@@ -52,15 +52,15 @@ IT の担当者に、exploratory.io への通信を許可してもらいます�
 | 403 | This IP address is not allowed for API keys. | 管理者が、API キーを使える IP アドレスを限定しています。許可されたアドレスから接続します。 |
 | 429 | Too many failed API key attempts. Try again later. | 同じアドレスから（IPv4 は同じアドレス、IPv6 は同じ /64 の範囲で数えます）、15 分のうちに 30 回を超えて、拒否されたキーが送られました。キーを直して、しばらくしてからやり直します。 |
 
-- [API キーで接続する](overview_ja.md#apikey) - ヘッダーの書き方と、キーで読めるものです。
+- [API キーで接続する](auth_ja.md#apikey) - ヘッダーの書き方と、キーで読めるものです。
 
 <a id="duplicate"></a>
 
-## 同じツールが 2 組出る
+## 同じ道具が 2 組出る
 
 インストール方法は 1 つだけにしてください。公式のプラグイン、URL の直接追加、claude.ai の Exploratory のコネクタのいずれかを使用します。claude.ai のコネクタは、同じ Claude のアカウントでサインインした Claude Code にも表示されます。
 
-お使いのアプリの公式一覧に Exploratory Server が掲載されていて、そこからインストールする場合は、先に直接追加した分を削除します。掲載されていない場合は、手動で登録したままにします。`exploratory@exploratory` は Desktop 用のプラグインで、Server ではありません。Claude Code では、次のコマンドで、直接追加した分を削除します。`exploratory-server` は、登録した名前に置き換えてください。チャットでの追加例では `Exploratory` です。削除しないと、同じツールが 2 組表示されます。
+お使いのアプリの公式一覧に Exploratory Server が掲載されていて、そこからインストールする場合は、先に直接追加した分を削除します。掲載されていない場合は、手動で登録したままにします。`exploratory@exploratory` は Desktop 用のプラグインで、Server ではありません。Claude Code では、次のコマンドで、直接追加した分を削除します。`exploratory-server` は、登録した名前に置き換えてください。チャットでの追加例では `Exploratory` です。削除しないと、同じ道具が 2 組表示されます。
 
 ```sh
 claude mcp remove exploratory-server

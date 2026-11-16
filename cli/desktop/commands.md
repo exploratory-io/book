@@ -1,4 +1,4 @@
-# Desktop commands (expl)
+# All commands
 
 The commands you will use most, grouped by purpose. For the full list, including the rest, see [All commands](#more) later on this page.
 
@@ -74,6 +74,7 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 | expl call \<tool_name\> | Call an operation by its tool name |
 | expl lang \[en\|ja\] | Show or switch the display language of Desktop (switching also changes the language of Desktop itself; run expl status first to check the connection; it exits with code 2 when it cannot decide the target project; for example expl lang --project \<id\>) |
 | expl skill | Print a description for AI agents |
+| expl completion \[bash\|zsh\|powershell\] | Print a shell completion script (see [Global flags](global-flags.md#completion)) |
 
 <a id="more"></a>
 

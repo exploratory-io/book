@@ -14,11 +14,18 @@ In Exploratory Desktop, choose your name at the bottom left of the screen, then 
 
 On the same screen, turn on the MCP switch. It is off by default. Only when you want the AI to create or change charts, notes and other content, also check Allow create, edit and delete. Then choose Save at the bottom of the screen.
 
-If you do not save, the MCP switch and the Allow create, edit and delete setting do not take effect. For what else you can decide here, see [Permissions and settings](limits.md).
+If you do not save, the MCP switch and the Allow create, edit and delete setting do not take effect. For what else you can decide here, see [Permissions and settings](permissions.md).
 
 ### 3. Restart the AI tool and allow the connection
 
 Restart the AI tool you installed into. The first time an AI tool connects, Desktop asks whether to allow it. Allow only an app you started yourself.
+
+Check that the connection works in your AI tool.
+
+- Claude Code: open /mcp and check that exploratory-desktop is connected.
+- Codex: run codex mcp list and check that exploratory-desktop is listed.
+- Antigravity: check that the plugin appears under Customizations > Installed in the app.
+- Cursor: check that exploratory-desktop is registered in ~/.cursor/mcp.json.
 
 ### 4. Ask the AI to look at your data
 
@@ -28,7 +35,9 @@ In Exploratory Desktop, open the project you want to use. Then, in the AI tool, 
 List the data frames in my open Exploratory project.
 ```
 
-This works with the read-only setting too. To try creating something, turn on Allow create, edit and delete and save, then ask for a chart, such as a bar chart of a column of your own data. To check the connection, open /mcp in Claude Code and check that exploratory-desktop is connected, or run codex mcp list in Codex and check that exploratory-desktop is listed.
+This works with the read-only setting too.
+
+To try creating something, turn on Allow create, edit and delete and save, then ask for a chart, such as a bar chart of a column of your own data.
 
 <a id="trouble"></a>
 
@@ -44,5 +53,6 @@ See [Troubleshooting](troubleshooting.md) for more.
 
 ## Next
 
-- [Use](examples.md) - Requests to copy, with the tools the AI uses.
-- [Permissions and settings](limits.md) - What you decide in Desktop, and what is sent and recorded.
+- [Use](use.md) - Requests to copy, with the tools the AI uses.
+- [Permissions and settings](permissions.md) - What you decide in Desktop.
+- [Data and permissions](data.md) - What is sent and recorded.

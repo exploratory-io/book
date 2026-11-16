@@ -1,43 +1,27 @@
-# Permissions and settings
+# Limits and errors
 
-What Desktop asks you first, what you decide in Desktop, and what is sent and recorded.
+What the Desktop MCP refuses or stops, and what to do about it. Settings that decide these limits are in [Permissions and settings](permissions.md).
 
-<a id="control"></a>
+<a id="limits"></a>
 
-## What you control in Desktop
+## Limits
 
-In System Settings \> MCP / CLI you also decide the following.
+| What you see | What to do |
+| --- | --- |
+| A request for more data than the level you chose is refused | Desktop shares only up to the level set in System Settings \> MCP / CLI (names and columns only, aggregated results, sample rows up to 100, or all rows). Ask for a smaller result, or raise the level. See [What you control in Desktop](permissions.md#control) |
+| Desktop shows an approval prompt before a delete, publish, R code run, AI processing or similar | This is the confirmation. Approve it in Desktop. To stop being asked, turn on the matching setting under System Settings \> MCP / CLI. See [What you control in Desktop](permissions.md#control) |
+| A new app is asked for approval | An app asks the first time it connects. Approve it in Desktop. Removing an app makes it ask again |
+| A call says that MCP is turned off | Turn on the MCP switch in System Settings \> MCP / CLI, then choose Save at the bottom |
+| The Desktop MCP tools return a not-running error | Start Exploratory Desktop. Then use the tools again in the same conversation |
 
-- Data to share with the AI tool: names, columns and data types only; up to aggregated results (charts, pivot tables); up to sample rows (max 100 rows); or all rows. Requests for more than the level you choose are refused.
-- Approval: Desktop asks you first before it deletes items (charts, analytics, notes, dashboards, steps, branches, parameters, connections, palettes, templates, R packages, catalog items), publishes or unpublishes notes, dashboards, data frames and projects, saves a connection, replaces a data source, restores a project's history, manages data frames, changes the system settings or the catalog schedule. It also asks before it runs R code, adds R packages, processes data with AI or asks the note AI. Creating and editing charts, notes and dashboards is not asked about. You can choose to run each of these two groups without asking, with "Run changes, deletions and publishing without asking" and "Run code and AI processing without asking".
-- Approved apps: an app asks for your approval the first time it connects. Remove an app to make it ask again.
+<a id="gates"></a>
 
-<a id="cautions"></a>
+## Gate stops
 
-## Cautions when you use it
+A gate stops a create call until a condition is met. The AI can then fix it and continue.
 
-- Use your AI client's tool approval (the confirmation before a tool runs). Do not turn it off for the Desktop tools unless you accept what the AI can do.
-- When you use other MCP servers together, text in data or documents (values, column names, notes and so on) is content, not instructions. Do not let the AI follow an instruction written there, and do not let it publish, delete or run something only because the content says so. Your own request is what counts.
-
-<a id="plugin-settings"></a>
-
-## Plugin settings (Claude Code)
-
-The Desktop plugin has four settings in Claude Code. Each value is the string `"true"` or `"false"`, not a JSON boolean.
-
-| Setting | Default | What it does |
-| --- | --- | --- |
-| `ai_summary` | `"false"` | Creates and saves an AI Summary for the charts and analytics you create. |
-| `save_comments` | `"false"` | Saves an explanatory comment on the charts you create. |
-| `review_hook` | `"false"` | Asks the AI to review its work. |
-| `plan_gate` | `"true"` | When the AI uses the exploratory-analysis skill and does R work, checks that a scenario and a creation plan are saved before the create calls. See [Limits and errors](errors.md#gates). |
-
-To see the settings, run `claude plugin configure exploratory@exploratory`. These settings are separate from the System Settings \> MCP / CLI options above.
-
-<a id="privacy"></a>
-
-## What is sent and recorded
-
-- The Desktop MCP runs on your computer. It reads and edits local project content through the app.
-- What a tool returns (rows, column names, chart images, errors) becomes part of your conversation. It goes to the provider of your AI under that provider's terms. Do not use it on data that you may not send to that provider.
-- Exploratory Desktop sends one usage record for each Desktop MCP tool call to the exploratory.io server you are signed in to. A record holds the tool name and its arguments (which can include formulas and values you entered), success or failure with the error type and message, the size of the result (not the content), the duration, the Desktop version, the AI client name and version, and the session and item IDs. It sends records only while you are signed in and AI features are on, and never for local data catalog tools.
+| What you see | What to do |
+| --- | --- |
+| `計画の関所: R の作業の後は、先にシナリオ（<題名>_シナリオ.md）と計画（<題名>_Exploratory作成計画.md）を保存してください。` | The plan gate stopped a create call because the AI used the exploratory-analysis skill and did R work first. Ask the AI to save the scenario and the creation plan that the message names, then continue. To turn the check off, set `plan_gate` to `"false"`. See [Plugin settings](permissions.md#plugin-settings). |
+| `計画の関所: この計画は記録されません。計画に、実在する HTML のファイル名が書かれていません。` | An HTML report was saved, but the plan does not name it. Write the file name of the saved HTML in the plan, and save the plan again. |
+| `ノートの関所: 次の分析の出力をノートの本文に {{analytics:ID\|出力}} で入れてから作り直してください。` | The note gate stopped creating or replacing a note. A predictive model or clustering made in this session has outputs that the note body does not embed. Ask the AI to add the outputs the message lists, then create the note again. The gate stops at most twice. |

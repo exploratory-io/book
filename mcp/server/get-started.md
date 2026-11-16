@@ -1,6 +1,6 @@
 # Get started
 
-Connect Exploratory Server to your AI tool, sign in, and ask the AI to read a published note. It takes three steps, and you can do them on this one page.
+Connect Exploratory Server to your AI tool, sign in, and ask the AI to read a published note. It takes three steps. Do steps 1 and 2 on the page for your AI tool, and when you have signed in, come back to this page for step 3.
 
 <a id="steps"></a>
 
@@ -18,7 +18,7 @@ Open the page for the tool you use and follow its steps: [Claude app](clients/cl
 
 ### 2. Sign in
 
-The first time you connect, your browser opens. Sign in to Exploratory and allow access.
+The first time you connect, your browser opens. Sign in to Exploratory and allow access. Some AI tools need a login command or an Authenticate button. In that case, follow the steps on the page for your AI tool.
 
 If your setup cannot open a browser, such as a server or a scheduled job, connect with an API key instead. See [Authentication and API keys](auth.md#apikey).
 
@@ -32,17 +32,25 @@ Read the note "Sales Orders Report" on Exploratory and tell me the key points.
 
 The AI finds the note with search, reads it with fetch, and answers with its content. If the note is not found, tell the AI the exact name, or ask it to find the data first, for example: Find the "Sales Orders" data on Exploratory.
 
+To check only that the connection works, ask this instead.
+
+```text
+Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
+```
+
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. If an error appears, follow the guidance for that message in [Limits and errors](limits.md).
+
 <a id="trouble"></a>
 
 ## If something does not work
 
-- You are asked to sign in again, or the API key is refused: see [Troubleshooting](troubleshooting.md).
-- The AI cannot find your content: see Your content does not appear in [Troubleshooting](troubleshooting.md).
+- You are asked to sign in again, or the API key is refused: see [Troubleshooting](troubleshooting.md#signin) and [Troubleshooting](troubleshooting.md#apikey).
+- The AI cannot find your content: see Your content does not appear in [Troubleshooting](troubleshooting.md#zero).
 - A call stops with an error or a limit: see [Limits and errors](limits.md).
 
 <a id="next"></a>
 
 ## Next
 
-- [Use](examples.md) - Requests to copy, with the tools the AI uses.
+- [Use](use.md) - Requests to copy, with the tools the AI uses.
 - [Data and permissions](data.md) - Whose permissions it uses and what Exploratory records.

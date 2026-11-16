@@ -1,6 +1,6 @@
 # AI ツールから追加する
 
-すでにお使いの AI アプリに、Exploratory のサーバーを追加します。どのアプリも、つなぐ先は同じです。初回に、ブラウザで Exploratory にサインインします。
+すでにお使いの AI ツールに、Exploratory のサーバーを追加します。どのアプリも、つなぐ先は同じです。初回に、ブラウザで Exploratory にサインインします。
 
 ```text
 https://exploratory.io/mcp
@@ -19,4 +19,4 @@ https://exploratory.io/mcp
 - [Cursor](cursor_ja.md) - Cursor にサーバーを登録します
 - [そのほかのアプリ](other_ja.md) - Streamable HTTP と OAuth に対応したクライアントです
 
-アプリがブラウザを開けないときは、代わりに API キーで接続します。[API キーで接続する](../overview_ja.md#apikey) を参照してください。
+アプリがブラウザを開けないときは、代わりに API キーで接続します。[API キーで接続する](../auth_ja.md#apikey) を参照してください。

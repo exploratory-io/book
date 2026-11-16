@@ -19,4 +19,4 @@ https://exploratory.io/mcp
 - [Cursor](cursor.md) - Register the server in Cursor
 - [Other clients](other.md) - Any client that supports Streamable HTTP and OAuth
 
-If your app cannot open a browser, connect with an API key instead. See [Connect with an API key](../overview.md#apikey).
+If your app cannot open a browser, connect with an API key instead. See [Connect with an API key](../auth.md#apikey).

@@ -30,7 +30,7 @@ For other ways to install, and for what to do when two copies are installed, see
 expl server login
 ```
 
-Your browser opens. Sign in to Exploratory and allow access. In a script or CI, where there is no browser, sign in with an API key instead: expl server login --with-token (see [API keys](token.md)). For a machine that cannot open a browser, see [Sign in](login.md#nobrowser).
+Your browser opens. Sign in to Exploratory and allow access.
 
 ```sh
 expl server status
@@ -73,35 +73,7 @@ Replace \<id\> with an id from the search result. --json prints the server's res
   "title": "Sales Orders",
   "text": "# Sales Orders\n\nRows (total): 23,131\n\n## Columns\n\n| name | type | description |\n| --- | --- | --- |\n| order_id… (trimmed)",
   "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
-  "metadata": {
-    "update_status": {
-      "freshness": "not_scheduled",
-      "last_refreshed_at": "2026-11-12T08:12:13.528Z",
-      "last_published_at": "2026-11-12T08:12:13.447Z",
-      "schedule": null,
-      "last_run_status": "idle",
-      "last_failure_at": null,
-      "consecutive_failures": 0
-    },
-    "language": "en",
-    "base_language": "en",
-    "context": {
-      "publication_version": "2026-11-12T08:12:13.447Z",
-      "data_as_of": "2026-11-12T08:12:13.528Z",
-      "parameters": null,
-      "dashboard_filters": "none"
-    },
-    "type": "data",
-    "author": "Alex Kim",
-    "team": null,
-    "created_at": "2026-11-12T08:12:13.447Z",
-    "updated_at": "2026-11-12T08:12:13.447Z",
-    "refreshed_at": "2026-11-12T08:12:13.528Z",
-    "tags": [
-      "sales",
-      "orders"
-    ]
-  }
+  "metadata": { … (trimmed) }
 }
 ```
 
@@ -122,28 +94,10 @@ Replace \<id\> with the id of a data item. In the result below, IDs, URLs, and n
 ```text
 {
   "success": true,
-  "item": {
-    "id": "hI6jK7lM8n",
-    "type": "data",
-    "title": "Sales Orders"
-  },
+  "item": { "id": "hI6jK7lM8n", "type": "data", "title": "Sales Orders" },
   "summary": "14 columns, 23131 rows.",
-  "result": {
-    "row_count": 23131,
-    "columns": [
-      {
-        "name": "order_id",
-        "data_type": "character"
-      },
-      {
-        "name": "line_no",
-        "data_type": "numeric"
-      },
-      {
-        "name": "order_date",
-        "data_type": "Date"
-      },
-… (trimmed)
+  "result": { "row_count": 23131, "columns": [ … (trimmed) ] }
+}
 ```
 
 Once you know the column names, aggregate. This example sums the sales column for each value of the region column and sorts the totals from the largest.
@@ -158,56 +112,10 @@ Replace \<dataset_id\> with the data id and region with a real column name. Wrap
 
 ```text
 {
-  "query_id": "qry_2a25c1716e94b226",
-  "dataset": {
-    "id": "hI6jK7lM8n",
-    "name": "Sales Orders",
-    "version": "20261112T081211Z-72836d02",
-    "updated_at": "2026-11-12T08:12:11.243Z",
-    "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
-  },
-  "columns": [
-    {
-      "name": "region",
-      "type": "string"
-    },
-    {
-      "name": "sales",
-      "type": "float"
-    }
-  ],
-  "rows": [
-    [
-      "Kanto",
-      148695040
-    ],
-    [
-      "Kinki",
-      74050840
-    ],
-    [
-      "Chubu",
-      72023380
-    ],
-    [
-      "Kyushu-Okinawa",
-      45545510
-    ],
-    [
-      "Tohoku",
-      30228840
-    ]
-  ],
-  "result": {
-    "row_count": 5,
-    "has_more": true
-  },
-  "warnings": [
-    {
-      "code": "RESULT_TRUNCATED",
-      "message": "Additional rows exist. Refine the query."
-    }
-  ]
+  "dataset": { "id": "hI6jK7lM8n", "name": "Sales Orders", … (trimmed) },
+  "columns": [ { "name": "region", "type": "string" }, { "name": "sales", "type": "float" } ],
+  "rows": [ [ "Kanto", 148695040 ], [ "Kinki", 74050840 ], … (trimmed) ],
+  "result": { "row_count": 5, "has_more": true }
 }
 ```
 
@@ -218,6 +126,7 @@ The result includes the data version and update time. Check which data the numbe
 ## If something does not work
 
 - The search result is empty: nothing matched. It is not a sign-in error. Change the search words, or use --scope all.
+- You cannot open a browser: in a script or CI, where there is no browser, sign in with an API key instead: expl server login --with-token (see [API keys](token.md)). For a machine that cannot open a browser, see [Sign in](login.md#nobrowser).
 - You see Run "expl server login".: sign-in is missing, or the saved login was rejected. Run expl server login.
 - You see expl: command not found: open a new terminal and try again.
 - You do not know which id to use: use an id from the search result.

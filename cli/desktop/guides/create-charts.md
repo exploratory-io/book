@@ -77,4 +77,4 @@ For the arguments of any command, run expl \<command\> --help or expl tools desc
 - [Write notes](write-notes.md)
 - [Desktop commands](../commands.md)
 
-To do the same through MCP, see Create charts in [Use](../../../mcp/desktop/examples.md#examples).
+To do the same through MCP, see Create charts in [Use](../../../mcp/desktop/use.md#examples).

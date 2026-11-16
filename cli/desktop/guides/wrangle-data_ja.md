@@ -93,4 +93,4 @@ expl dataframe get-schema <dataframe_id>
 - [チャートを作る](create-charts_ja.md)
 - [Desktop のコマンド](../commands_ja.md)
 
-同じことを MCP で行う例は、[使い方](../../../mcp/desktop/examples_ja.md#examples)の「データを取り込む・加工する」を参照してください。
+同じことを MCP で行う例は、[使い方](../../../mcp/desktop/use_ja.md#examples)の「データを取り込む・加工する」を参照してください。

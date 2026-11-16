@@ -108,7 +108,7 @@ Exploratory への接続が複数あるとき（たとえば exploratory-server 
 
 上の OAuth でのサインインか、この方法か、どちらか一方だけを使います。
 
-- [API キーで接続する](../overview_ja.md#apikey) - キーで読めるものと、返ってくるエラーです。
+- [API キーで接続する](../auth_ja.md#apikey) - キーで読めるものと、返ってくるエラーです。
 
 <a id="trouble"></a>
 
@@ -117,7 +117,7 @@ Exploratory への接続が複数あるとき（たとえば exploratory-server 
 | 表示される内容 | 対処 |
 | --- | --- |
 | サインインを求められる | /mcp を開いて、もう一度サインインします。 |
-| 同じツールが 2 組表示される | インストール方法は 1 つだけにします（公式のプラグイン、URL の直接追加、claude.ai のコネクタのいずれか）。あとから公式の一覧でインストールする場合は、先に直接追加した分を claude mcp remove exploratory-server で削除します。 |
+| 同じ道具が 2 組表示される | インストール方法は 1 つだけにします（公式のプラグイン、URL の直接追加、claude.ai のコネクタのいずれか）。あとから公式の一覧でインストールする場合は、先に直接追加した分を claude mcp remove exploratory-server で削除します。 |
 
 - [トラブルシューティング](../troubleshooting_ja.md) - MCP Server 全体の、症状ごとの対処です。
 

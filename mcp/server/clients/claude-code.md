@@ -110,7 +110,7 @@ If you type the key on a command line or write it in a settings file as it is, i
 
 Use one way only: the OAuth sign-in above or this one.
 
-- [Connect with an API key](../overview.md#apikey) - What a key can read and the errors it can return.
+- [Connect with an API key](../auth.md#apikey) - What a key can read and the errors it can return.
 
 <a id="trouble"></a>
 

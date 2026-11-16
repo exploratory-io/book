@@ -1,12 +1,12 @@
 # 使える道具
 
-ツールは、AI が呼び出す操作です。目的から操作を選び、その下で入力を確認できます。
+道具は、AI が呼び出す操作です。目的から操作を選び、その下で入力を確認できます。
 
 <a id="overview"></a>
 
 ## 目的から探す
 
-| 種類 | ツール | 読み取りだけ／作成・変更・削除 | 用途 |
+| 種類 | 道具 | 読み取りだけ／作成・変更・削除 | 用途 |
 | --- | --- | --- | --- |
 | 探す・読む | [search](tools_ja.md#search) | 読み取りだけ | 公開されたコンテンツを探し、一覧します。 |
 | 探す・読む | [fetch](tools_ja.md#fetch) | 読み取りだけ | ノート、ダッシュボード、スライドを Markdown で読みます。 |
@@ -19,6 +19,8 @@
 | データ | [dataframe_preview](tools_ja.md#dataframe_preview) | 読み取りだけ | 行を見ます。 |
 | データ | [query_dataset](tools_ja.md#query_dataset) | 読み取りだけ | サーバーで絞り込み、集計します。 |
 | データ | [dataframe_export](tools_ja.md#dataframe_export) | 読み取りだけ | 結果を CSV か Parquet で保存します。 |
+
+exploratory.io では、これらの道具が使えます。オンプレミスのサーバーでは、使える道具はサーバーの設定によって変わります。query_dataset、chart_query、dataframe_export は、管理者が有効にしたときだけ使えます。設定によっては、ほかの道具も増えます。たとえば desktop_mcp_setup_guide は、AI ツールを Exploratory Desktop につなぐ手順を返します。お使いのサーバーにある道具は、expl server tools list で確認できます。
 
 <a id="identifiers"></a>
 
@@ -36,7 +38,7 @@
 
 ## search
 
-閲覧できる、パブリッシュされたコンテンツを探して、一覧します。ノート、ダッシュボード、スライド、チャート、アナリティクス、データが対象です。query を空にすると、新しい順に一覧します。
+閲覧できる、公開されたコンテンツを探して、一覧します。ノート、ダッシュボード、スライド、チャート、アナリティクス、データが対象です。query を空にすると、新しい順に一覧します。
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
@@ -239,13 +241,13 @@ id を指定して、ノート、ダッシュボード、スライド、デー�
 
 - ダウンロードリンクは 15 分間有効で、同じ本人だけが使えます。
 - 1 人のユーザーが同時に実行できる書き出しは 1 つです。1 時間あたりの書き出しの回数にも上限があります。
-- 問い合わせの誤りは、ほかのツールと同じ error_code の形で、INVALID_PARAMETER として返ります。元のコードは details.code に含まれます。
+- 問い合わせの誤りは、ほかの道具と同じ error_code の形で、INVALID_PARAMETER として返ります。元のコードは details.code に含まれます。
 
 <a id="desktop_mcp_setup_guide"></a>
 
 ## desktop_mcp_setup_guide
 
-Exploratory Desktop に AI クライアントをつなぐための、手順とリンクを返します。手順を返すだけで、Desktop は操作しません。
+Exploratory Desktop に AI ツールをつなぐための、手順とリンクを返します。手順を返すだけで、Desktop は操作しません。
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |

@@ -9,8 +9,8 @@ Find the command and the guide for what you want to do in your local projects. T
 | Create a chart | expl chart add --data-frame-id \<dataframe_id\> --marker bar --axes ... | [Create charts](guides/create-charts.md) |
 | Create an analytics | expl analytics add --data-frame-id \<dataframe_id\> --analysis-type \<analysis_type\> | [Create analytics](guides/create-analytics.md) |
 | Write a note | expl note add --title "Sales Orders report" --markdown @report.md | [Write notes](guides/write-notes.md) |
-| Copy a dashboard | expl dashboard get d123 --json \> base.json, expl dashboard create --input dashboard.json | [Duplicate a dashboard](guides/duplicate-dashboard.md) |
+| Create and duplicate dashboards | expl dashboard get d123 --json \> base.json, expl dashboard create --input dashboard.json | [Create and duplicate dashboards](guides/duplicate-dashboard.md) |
 | Publish a note or a dashboard | expl note publish \<note_id\>, expl dashboard publish \<dashboard_id\> | [Publish](guides/publish.md) |
 | Let an AI agent run the commands | expl skill | [Use from AI agents](guides/agents.md) |
 
-To do the same from an AI tool instead of a terminal, see [Use](../../mcp/desktop/examples.md) of MCP Desktop.
+To do the same from an AI tool instead of a terminal, see [Use](../../mcp/desktop/use.md) of MCP Desktop.

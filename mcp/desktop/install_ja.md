@@ -11,7 +11,7 @@ AI ツールごとに別の手順はありません。Claude Code、Codex、Anti
 
 ### システム設定でインストールする
 
-Exploratory Desktop で、画面の左下にある自分の名前を選び、開いたメニューで「システム設定」を選びます（写真の ① と ②）。
+Exploratory Desktop で、画面の左下にある自分の名前を選び、開いたメニューで「システム設定」を選びます（画面の画像の ① と ②）。
 
 ![Exploratory Desktop の左下の自分の名前を選ぶと開くメニュー。①が自分の名前、②が「システム設定」](images/ja/open-system-settings.png)
 

@@ -74,4 +74,4 @@ expl server dataframe get-schema <id> --json
 - [データを集計する](query-data_ja.md)
 - [Server のコマンド](../commands_ja.md#search)
 
-同じことを MCP で行う例は、[データを探す](../../../mcp/server/examples_ja.md#find)を参照してください。
+同じことを MCP で行う例は、[データを探す](../../../mcp/server/use_ja.md#find)を参照してください。

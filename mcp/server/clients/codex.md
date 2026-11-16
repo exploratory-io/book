@@ -112,7 +112,7 @@ url = "https://exploratory.io/mcp"
 bearer_token_env_var = "EXPLORATORY_API_KEY"
 ```
 
-If you write the key in the file as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../overview.md#apikey) for what a key can read.
+If you write the key in the file as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../auth.md#apikey) for what a key can read.
 
 <a id="trouble"></a>
 

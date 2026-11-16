@@ -20,6 +20,8 @@ Tools are operations an AI can call. Choose an operation by purpose, then inspec
 | Data | [query_dataset](tools.md#query_dataset) | Read only | Filter and aggregate on the server. |
 | Data | [dataframe_export](tools.md#dataframe_export) | Read only | Save a result as CSV or Parquet. |
 
+exploratory.io offers these tools. On an on-premises server, which tools appear depends on the server settings; query_dataset, chart_query and dataframe_export appear only when the administrator has turned them on. More tools can appear depending on the settings, for example desktop_mcp_setup_guide, which returns the steps to connect an AI client to Exploratory Desktop. Run expl server tools list to see what your server offers.
+
 <a id="identifiers"></a>
 
 ## Find ids and chart names

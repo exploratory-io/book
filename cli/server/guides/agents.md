@@ -1,4 +1,4 @@
-# AI agents
+# Use from AI agents
 
 What an AI agent should know before it runs expl server. An agent that can run shell commands can use expl directly. No MCP setup is needed.
 
@@ -25,6 +25,6 @@ MCP is a shared standard for AI apps to connect to outside services. You can use
 | You want | Use |
 | --- | --- |
 | Scripts, CI, a shell-based agent | expl |
-| An agent that works through MCP | MCP Server (the Exploratory plugin) |
+| An agent that works through MCP | MCP Server (you register the server URL in your AI tool) |
 
 To read published content from an AI app, see [MCP Server](../../../mcp/server/server.md). To work with projects in Exploratory Desktop, see [Use with Desktop](../../desktop/guides/agents.md).

@@ -1,4 +1,4 @@
-# ダッシュボードを複製する
+# ダッシュボードを作る・複製する
 
 似たダッシュボードを、タイトルだけ変えて複製します。jq（JSON を加工するコマンド）で、取得した定義を作成の入力の形に詰め替えます。
 
@@ -48,10 +48,10 @@ done
 
 <a id="publish"></a>
 
-## 複製したあとにパブリッシュする場合
+## 複製したあとに公開する場合
 
 ```sh
 while read id; do expl dashboard publish "$id" --yes; done < created.txt
 ```
 
-パブリッシュするには、Desktop が描画を終えている必要があります。No rendered output と出たときは、Exploratory Desktop でそのダッシュボードを 1 回開いて描画させてから、もう一度実行します。
+公開するには、Desktop が描画を終えている必要があります。No rendered output と出たときは、Exploratory Desktop でそのダッシュボードを 1 回開いて描画させてから、もう一度実行します。

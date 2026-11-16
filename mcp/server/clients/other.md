@@ -42,7 +42,7 @@ If items appear with their URLs, the connection works. An empty result does not 
 
 ## Connect with an API key
 
-If your client cannot open a browser, use an API key. Create the key in Account Settings \> API Keys, put it in an environment variable, and have the client send it from there as Authorization: Bearer \<your key\>. If you type the key on a command line or write it in a settings file as it is, it stays in your shell history or in that file. See [Connect with an API key](../overview.md#apikey) for what a key can read.
+If your client cannot open a browser, use an API key. Create the key in Account Settings \> API Keys, put it in an environment variable, and have the client send it from there as Authorization: Bearer \<your key\>. If you type the key on a command line or write it in a settings file as it is, it stays in your shell history or in that file. See [Connect with an API key](../auth.md#apikey) for what a key can read.
 
 <a id="trouble"></a>
 

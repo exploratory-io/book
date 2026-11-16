@@ -1,13 +1,40 @@
 # Exploratory MCP: Desktop
 
-Create and edit projects in Exploratory Desktop on your computer from an AI client. It works on your local projects, including changes you have not published.
+Create and edit projects in Exploratory Desktop on your computer from an AI tool. It works on your local projects, including changes you have not published. An AI tool is an app where you ask an AI to do work, such as Claude Code.
 
-- [Overview and requirements](overview.md) - What it does and what you need.
-- [Install the plugin](install.md) - Install it from System Settings in Exploratory Desktop. One card covers Claude Code, Codex, Antigravity and Cursor.
-- [Permissions and settings](limits.md) - What you decide in Desktop, and what is sent.
-- [Use](examples.md) - What you can ask the AI.
-- [Tools](tools.md) - What the AI can use.
-- [Limits and errors](errors.md) - What the Desktop MCP refuses or stops, and what to do.
+<a id="scope"></a>
+
+## What it does
+
+It works with these items.
+
+- Data frames, wrangling steps, branches, parameters and connections
+- Charts and analytics
+- Notes and dashboards
+
+> **It can change and delete**
+>
+> Some tools delete things, publish and unpublish notes, dashboards and data frames, or run R code. Review what your agent proposes before it writes.
+
+It works through the app on your computer, as the user signed in to the app. It is separate from the Server MCP, which reads content published on exploratory.io.
+
+<a id="need"></a>
+
+## Requirements
+
+- Exploratory Desktop v17 or later, signed in and running
+- The command exploratory-mcp on your PATH. The plugin starts this command. Desktop puts it on your PATH automatically when it starts; no action is needed.
+- On macOS, if you keep Desktop open from the disk image, the command is not added automatically. Move Desktop to /Applications or ~/Applications and start it from there.
+- For Claude Code: node on your PATH. The plugin's review hooks use it.
+- An AI tool: Claude Code, Codex, Cursor or Antigravity
+
+<a id="more"></a>
+
+## Where to go next
+
+- [Get started](get-started.md) - Install the plugin, turn on MCP and go as far as the first request. The steps are also on [Install the plugin](install.md) and [Permissions and settings](permissions.md).
+- [Use](use.md) - What you can ask the AI.
+- [Reference](reference.md) - Look up the tools, limits and errors, and data and permissions.
 - [Troubleshooting](troubleshooting.md) - Find what to do from a message.
 
 To read content published on exploratory.io, use the [Server MCP](../server/server.md) instead.

@@ -22,26 +22,19 @@ The charts and text that come out depend on your data and your AI tool. You can 
 
 ## Before you start
 
-- Open a project in Exploratory Desktop and turn on the MCP switch in System Settings \> MCP / CLI.
-- For the examples that create or change charts, notes, dashboards and so on, also check Allow create, edit and delete. With it off, the AI can only read.
-- After you change the settings, choose Save at the bottom of System Settings to save them.
-- Desktop asks you before it deletes, publishes or runs R code, unless you turned on the setting that runs these without asking. Where an example below says Desktop asks you, it means this case. See [Permissions and settings](limits.md).
+The MCP switch and the Allow create, edit and delete setting are in step 2 of [Get started](get-started.md#steps). For when Desktop asks you before it deletes, publishes or runs R code, see [Permissions and settings](permissions.md). Where an example below says Desktop asks you, it means the setting that runs these without asking is off.
 
 <a id="server-or-desktop"></a>
 
 ## Server or Desktop
 
-Desktop works on your local projects, including changes you have not published. To read content published on exploratory.io, use the [Server MCP](../server/server.md).
-
-When a request does not say which one, the plugin's skill checks first. For example, when you ask for a chart from data on exploratory.io, the AI may ask whether to build it in Exploratory Desktop. If you say "in Exploratory Desktop" from the start, it goes ahead without asking.
+Desktop works on your local projects. To read content published on exploratory.io, use the [Server MCP](../server/server.md). When a request does not say which one, the plugin's skill checks first. For example, when you ask for a chart from data on exploratory.io, the AI may ask whether to build it in Exploratory Desktop. If you say "in Exploratory Desktop" from the start, it goes ahead without asking.
 
 <a id="examples"></a>
 
-## Examples
-
 <a id="import"></a>
 
-### Import and wrangle data
+## Import and wrangle data
 
 ```text
 Import this file.
@@ -63,7 +56,7 @@ Classifying text by its meaning is built as an AI function column. It is separat
 
 <a id="charts"></a>
 
-### Create charts
+## Create charts
 
 ```text
 In my open Exploratory project, build a monthly bar chart from the sales data.
@@ -77,7 +70,7 @@ Creating and changing charts (create_chart, update_chart). You can open the char
 
 <a id="analytics"></a>
 
-### Create analytics
+## Create analytics
 
 ```text
 Find out with a regression which factors affect sales.
@@ -91,7 +84,7 @@ Creates analytics such as regression, tests and clustering (create_analytics). Y
 
 <a id="notes"></a>
 
-### Write notes
+## Write notes
 
 ```text
 Put the analysis results into a note.
@@ -101,7 +94,7 @@ Writes and saves a note and embeds charts in it (create_note, update_note). You 
 
 <a id="dashboards"></a>
 
-### Create and duplicate dashboards
+## Create and duplicate dashboards
 
 ```text
 Create a dashboard with the sales charts side by side.
@@ -117,7 +110,7 @@ Reads the definition of the original dashboard (get_dashboard), changes the titl
 
 <a id="publish"></a>
 
-### Publish
+## Publish
 
 ```text
 Publish this note and this dashboard.
@@ -127,7 +120,7 @@ Publishes a note or a dashboard to the server with a public URL (publish_note, p
 
 <a id="other"></a>
 
-### Other
+## Other
 
 ```text
 What columns does the sales data in my open project have? Also give me the count for each region.
@@ -146,4 +139,4 @@ Creates a parameter, sets its list of values and applies it to a filter or a cha
 ## Read next
 
 - [Tools](tools.md) - What the AI can do, by purpose.
-- [Permissions and settings](limits.md) - When Desktop asks you, and how much data the AI can see.
+- [Permissions and settings](permissions.md) - When Desktop asks you, and how much data the AI can see.

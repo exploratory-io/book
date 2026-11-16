@@ -108,7 +108,7 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 }
 ```
 
-キーを mcp.json にそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](../overview_ja.md#apikey)を参照してください。
+キーを mcp.json にそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](../auth_ja.md#apikey)を参照してください。
 
 <a id="trouble"></a>
 
@@ -117,7 +117,7 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 | 表示される内容 | 対処 |
 | --- | --- |
 | サインインを求められる | agent mcp login exploratory-server を実行して、もう一度サインインします。 |
-| Desktop のプラグインをインストールしたが、Server のツールが表示されない | Desktop のプラグインには、Server は含まれません。上の JSON で、Server を追加します。 |
+| Desktop のプラグインをインストールしたが、Server の道具が表示されない | Desktop のプラグインには、Server は含まれません。上の JSON で、Server を追加します。 |
 
 - [トラブルシューティング](../troubleshooting_ja.md) - MCP Server 全体の、症状ごとの対処です。
 

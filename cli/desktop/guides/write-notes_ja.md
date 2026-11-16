@@ -79,4 +79,4 @@ get は、Markdown の本文、フォルダ、依存関係を返します。get-
 - [公開する](publish_ja.md)
 - [Desktop のコマンド](../commands_ja.md)
 
-同じことを MCP で行う例は、[使い方](../../../mcp/desktop/examples_ja.md#examples)の「ノートを書く」を参照してください。
+同じことを MCP で行う例は、[使い方](../../../mcp/desktop/use_ja.md#examples)の「ノートを書く」を参照してください。

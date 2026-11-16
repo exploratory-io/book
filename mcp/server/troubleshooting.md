@@ -6,7 +6,7 @@ Find a fix by symptom.
 
 ## Check the state first
 
-Check that the connection works with the steps in [Try it](overview.md#steps). If it does not, find your symptom below.
+Check that the connection works with the steps in step 3 of [Get started](get-started.md#steps). If it does not, find your symptom below.
 
 <a id="contact"></a>
 
@@ -52,7 +52,7 @@ A key that fails gets the reason in the response, and the client does not fall b
 | 403 | This IP address is not allowed for API keys. | Your administrator allows API keys only from certain IP addresses. Connect from an allowed address. |
 | 429 | Too many failed API key attempts. Try again later. | More than 30 refused keys came from one address within 15 minutes (counted per IPv4 address, or per IPv6 /64 range). Fix the key and try again later. |
 
-- [Connect with an API key](overview.md#apikey) - The header, and what a key can read.
+- [Connect with an API key](auth.md#apikey) - The header, and what a key can read.
 
 <a id="duplicate"></a>
 

@@ -41,7 +41,7 @@
 
 ## エラーの一覧と対処
 
-失敗したツールは、isError: true の結果を返します。本文は、error_code と message を持つ JSON で、場合により url と details も持ちます。引数の誤りでは、details.field がその引数を示します。
+失敗した道具は、isError: true の結果を返します。本文は、error_code と message を持つ JSON で、場合により url と details も持ちます。引数の誤りでは、details.field がその引数を示します。
 
 | error_code | 対処 |
 | --- | --- |
@@ -77,7 +77,7 @@ query_dataset は、問い合わせの誤りを別の形で返します。error.
 
 問い合わせが混み合っているときは、RATE_LIMIT_EXCEEDED か QUERY_ENGINE_UNAVAILABLE が返るので、数秒おいて再度呼び出します。result.has_more が true なら、絞り込むか、集計するか、dataframe_export を使います。
 
-dataframe_export は、ほかのツールと同じ error_code の形式です。問い合わせの誤りは INVALID_PARAMETER で返り、元のコードは details.code に含まれます。
+dataframe_export は、ほかの道具と同じ error_code の形式です。問い合わせの誤りは INVALID_PARAMETER で返り、元のコードは details.code に含まれます。
 
 <a id="rate"></a>
 

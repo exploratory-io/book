@@ -63,7 +63,7 @@
 
 | コマンド | できること |
 | --- | --- |
-| [expl server desktop mcp-setup-guide](#desktop-mcp-setup-guide) | Exploratory Desktop に AI クライアントをつなぐための、手順とリンクを返します。 |
+| [expl server desktop mcp-setup-guide](#desktop-mcp-setup-guide) | Exploratory Desktop に AI ツールをつなぐための、手順とリンクを返します。 |
 
 <a id="inspect-commands"></a>
 
@@ -91,7 +91,7 @@ tools list が終了コード 0 で終わっても、接続できているとは
 expl server tools describe <command>
 ```
 
-\<command\> は、一覧に出たコマンドの名前に置き換えます。2 語のコマンドは、`expl server tools describe "chart get-data"` のように引用符で囲みます。`chart_get_data` のようなツール名でも指定できます。
+\<command\> は、一覧に出たコマンドの名前に置き換えます。2 語のコマンドは、`expl server tools describe "chart get-data"` のように引用符で囲みます。`chart_get_data` のような道具名でも指定できます。
 
 コマンドの説明と、使えるフラグが表示されます。コマンド名を推測せず、ここで確認してください。
 
@@ -101,7 +101,7 @@ expl server tools describe <command>
 
 search と fetch には、動詞を付けません。expl server search \<query\>、expl server fetch \<id\> の形で使用します。ほかのコマンドは、expl server dataset query のように、名詞と動詞を続けます。
 
-それぞれのコマンドには、その裏にあるツールの名前があります。MCP クライアントから見える名前です。expl server call \<tool_name\> は、その名前でコマンドを実行します。例: expl server call dataframe_preview \<id\>
+それぞれのコマンドには、その裏にある道具の名前があります。MCP クライアントから見える名前です。expl server call \<tool_name\> は、その名前でコマンドを実行します。例: expl server call dataframe_preview \<id\>
 
 目的別に全コマンドを探すには、[コマンド一覧](#syntax-index)を参照してください。
 
@@ -1804,7 +1804,7 @@ expl server chart query --id <id> --chart <chart> --mode aggregate --dimensions 
 
 ## expl server desktop mcp-setup-guide
 
-Exploratory Desktop に AI クライアントをつなぐための、手順とリンクを返します。
+Exploratory Desktop に AI ツールをつなぐための、手順とリンクを返します。
 
 <a id="desktop-mcp-setup-guide-usage"></a>
 

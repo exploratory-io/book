@@ -15,4 +15,4 @@
 | スクリプトや CI から実行する | expl server login --with-token、expl server token create --name ci | [自動処理](guides/automation_ja.md) |
 | AI エージェントにコマンドを実行させる | expl server status、expl server tools list --json | [AI エージェントから使う](guides/agents_ja.md) |
 
-ターミナルではなく AI アプリから同じことをするときは、MCP Server の[使い方](../../mcp/server/examples_ja.md)を参照してください。
+ターミナルではなく AI ツールから同じことをするときは、MCP Server の[使い方](../../mcp/server/use_ja.md)を参照してください。

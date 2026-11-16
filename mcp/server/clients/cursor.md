@@ -108,7 +108,7 @@ If your environment cannot open a browser, use an API key instead of the sign-in
 }
 ```
 
-If you write the key in mcp.json as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../overview.md#apikey) for what a key can read.
+If you write the key in mcp.json as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../auth.md#apikey) for what a key can read.
 
 <a id="trouble"></a>
 

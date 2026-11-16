@@ -30,7 +30,7 @@ expl --version
 expl server login
 ```
 
-ブラウザが開きます。Exploratory にサインインして、アクセスを許可します。ブラウザのないスクリプトや CI では、代わりに API キーでサインインします（expl server login --with-token。[API キー](token_ja.md)を参照）。ブラウザを開けないマシンでは、[サインイン](login_ja.md#nobrowser)を参照してください。
+ブラウザが開きます。Exploratory にサインインして、アクセスを許可します。
 
 ```sh
 expl server status
@@ -73,35 +73,7 @@ expl server fetch <id> --json
   "title": "Sales Orders",
   "text": "# Sales Orders\n\nRows (total): 23,131\n\n## Columns\n\n| name | type | description |\n| --- | --- | --- |\n| order_id… (trimmed)",
   "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n",
-  "metadata": {
-    "update_status": {
-      "freshness": "not_scheduled",
-      "last_refreshed_at": "2026-11-12T08:12:13.528Z",
-      "last_published_at": "2026-11-12T08:12:13.447Z",
-      "schedule": null,
-      "last_run_status": "idle",
-      "last_failure_at": null,
-      "consecutive_failures": 0
-    },
-    "language": "en",
-    "base_language": "en",
-    "context": {
-      "publication_version": "2026-11-12T08:12:13.447Z",
-      "data_as_of": "2026-11-12T08:12:13.528Z",
-      "parameters": null,
-      "dashboard_filters": "none"
-    },
-    "type": "data",
-    "author": "山田 花子",
-    "team": null,
-    "created_at": "2026-11-12T08:12:13.447Z",
-    "updated_at": "2026-11-12T08:12:13.447Z",
-    "refreshed_at": "2026-11-12T08:12:13.528Z",
-    "tags": [
-      "sales",
-      "orders"
-    ]
-  }
+  "metadata": { … (trimmed) }
 }
 ```
 
@@ -122,28 +94,10 @@ expl server dataframe get-schema <id> --detail light --json
 ```text
 {
   "success": true,
-  "item": {
-    "id": "hI6jK7lM8n",
-    "type": "data",
-    "title": "Sales Orders"
-  },
+  "item": { "id": "hI6jK7lM8n", "type": "data", "title": "Sales Orders" },
   "summary": "14 columns, 23131 rows.",
-  "result": {
-    "row_count": 23131,
-    "columns": [
-      {
-        "name": "order_id",
-        "data_type": "character"
-      },
-      {
-        "name": "line_no",
-        "data_type": "numeric"
-      },
-      {
-        "name": "order_date",
-        "data_type": "Date"
-      },
-… (trimmed)
+  "result": { "row_count": 23131, "columns": [ … (trimmed) ] }
+}
 ```
 
 列の名前がわかったら、集計します。次の例は、region 列の値ごとに sales 列の合計を求め、大きい順に並べます。
@@ -158,56 +112,10 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 
 ```text
 {
-  "query_id": "qry_2a25c1716e94b226",
-  "dataset": {
-    "id": "hI6jK7lM8n",
-    "name": "Sales Orders",
-    "version": "20261112T081211Z-72836d02",
-    "updated_at": "2026-11-12T08:12:11.243Z",
-    "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n"
-  },
-  "columns": [
-    {
-      "name": "region",
-      "type": "string"
-    },
-    {
-      "name": "sales",
-      "type": "float"
-    }
-  ],
-  "rows": [
-    [
-      "Kanto",
-      148695040
-    ],
-    [
-      "Kinki",
-      74050840
-    ],
-    [
-      "Chubu",
-      72023380
-    ],
-    [
-      "Kyushu-Okinawa",
-      45545510
-    ],
-    [
-      "Tohoku",
-      30228840
-    ]
-  ],
-  "result": {
-    "row_count": 5,
-    "has_more": true
-  },
-  "warnings": [
-    {
-      "code": "RESULT_TRUNCATED",
-      "message": "Additional rows exist. Refine the query."
-    }
-  ]
+  "dataset": { "id": "hI6jK7lM8n", "name": "Sales Orders", … (trimmed) },
+  "columns": [ { "name": "region", "type": "string" }, { "name": "sales", "type": "float" } ],
+  "rows": [ [ "Kanto", 148695040 ], [ "Kinki", 74050840 ], … (trimmed) ],
+  "result": { "row_count": 5, "has_more": true }
 }
 ```
 
@@ -218,6 +126,7 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 ## うまくいかないとき
 
 - 検索結果が空です: 該当するものがなかったということで、サインインのエラーではありません。検索語を変えるか、--scope all を付けます。
+- ブラウザを開けません: ブラウザのないスクリプトや CI では、代わりに API キーでサインインします（expl server login --with-token。[API キー](token_ja.md)を参照）。ブラウザを開けないマシンでは、[サインイン](login_ja.md#nobrowser)を参照してください。
 - Run "expl server login". と表示されます: サインインしていないか、保存したログインが拒否されました。expl server login を実行します。
 - expl: command not found と表示されます: 新しいターミナルを開いて、もう一度試します。
 - どの id を使えばよいかわかりません: 検索結果に表示された id を使います。

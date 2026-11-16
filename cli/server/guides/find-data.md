@@ -74,4 +74,4 @@ For the arguments of a command, run expl server \<command\> --help.
 - [Query data](query-data.md)
 - [Server commands](../commands.md#search)
 
-To do the same through MCP, see [Find data](../../../mcp/server/examples.md#find).
+To do the same through MCP, see [Find data](../../../mcp/server/use.md#find).

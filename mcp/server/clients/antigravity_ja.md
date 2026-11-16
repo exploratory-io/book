@@ -119,7 +119,7 @@ exploratory-server が「OAUTH」「CONNECTED」と表示されていれば、�
 
 ![「Exploratory」の詳細画面の「MCP」のタブ（英語の画面）](images/ja/antigravity-02-mcp-plugin.png)
 
-exploratory-server と、使えるツールの数（例: 「10 tools enabled」）が表示されます。
+exploratory-server と、使える道具の数（例: 「10 tools enabled」）が表示されます。
 
 <a id="trouble"></a>
 
@@ -128,7 +128,7 @@ exploratory-server と、使えるツールの数（例: 「10 tools enabled」�
 | 表示される内容 | 対処 |
 | --- | --- |
 | サインインを求められる | 上のサインインの手順を、もう一度行います。 |
-| Desktop のプラグインをインストールしたが、Server のツールが表示されない | Desktop のプラグイン exploratory は、Server とは別です。上の設定で、Server を登録します。 |
+| Desktop のプラグインをインストールしたが、Server の道具が表示されない | Desktop のプラグイン exploratory は、Server とは別です。上の設定で、Server を登録します。 |
 
 - [トラブルシューティング](../troubleshooting_ja.md) - MCP Server 全体の、症状ごとの対処です。
 

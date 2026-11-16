@@ -26,5 +26,5 @@ Send these to support@exploratory.io: the version of Exploratory Desktop, the na
 | A marketplace named "exploratory" is already registered from a different source … | Remove it with the command the message shows, then choose Install again. |
 | Your organization's settings may not allow this marketplace. | Ask your administrator. |
 | A Claude Code hook cannot find node | Install Node.js and add node to your PATH. |
-| A gate stops a create call, a limit is reached, or an approval is asked | See [Limits and errors](errors.md). |
+| A gate stops a create call, a limit is reached, or an approval is asked | See [Limits and errors](limits.md). |
 | The Desktop MCP does not work as you expect | Check that you are signed in to Exploratory Desktop. |

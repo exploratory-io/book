@@ -15,4 +15,4 @@ Find the command and the guide for what you want to do with published content.
 | Run commands from a script or CI | expl server login --with-token, expl server token create --name ci | [Automation](guides/automation.md) |
 | Let an AI agent run the commands | expl server status, expl server tools list --json | [Use from AI agents](guides/agents.md) |
 
-To do the same from an AI app instead of a terminal, see [Use](../../mcp/server/examples.md) of MCP Server.
+To do the same from an AI app instead of a terminal, see [Use](../../mcp/server/use.md) of MCP Server.

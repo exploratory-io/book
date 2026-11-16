@@ -79,7 +79,7 @@ For the arguments of any command, run expl \<command\> --help or expl tools desc
 
 - [Confirmation and long-running operations](confirmation.md)
 - [Write notes](write-notes.md)
-- [Duplicate a dashboard](duplicate-dashboard.md)
+- [Create and duplicate dashboards](duplicate-dashboard.md)
 - [Desktop commands](../commands.md)
 
-To do the same through MCP, see Publish in [Use](../../../mcp/desktop/examples.md#examples).
+To do the same through MCP, see Publish in [Use](../../../mcp/desktop/use.md#examples).

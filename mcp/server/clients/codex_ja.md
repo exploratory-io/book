@@ -110,7 +110,7 @@ url = "https://exploratory.io/mcp"
 bearer_token_env_var = "EXPLORATORY_API_KEY"
 ```
 
-キーをファイルにそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](../overview_ja.md#apikey)を参照してください。
+キーをファイルにそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](../auth_ja.md#apikey)を参照してください。
 
 <a id="trouble"></a>
 
@@ -119,7 +119,7 @@ bearer_token_env_var = "EXPLORATORY_API_KEY"
 | 表示される内容 | 対処 |
 | --- | --- |
 | サインインを求められる | codex mcp login exploratory-server を実行して、もう一度サインインします。チャットで追加した場合は、自分が登録した名前（例では Exploratory）を指定します。 |
-| Server のツールが出ない | exploratory@exploratory は Desktop 用です。上の手順で、Server を登録します。 |
+| Server の道具が出ない | exploratory@exploratory は Desktop 用です。上の手順で、Server を登録します。 |
 
 - [トラブルシューティング](../troubleshooting_ja.md) - MCP Server 全体の、症状ごとの対処です。
 

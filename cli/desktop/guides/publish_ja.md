@@ -79,7 +79,7 @@ expl published unpublish <id>
 
 - [確認と時間のかかる操作](confirmation_ja.md)
 - [ノートを書く](write-notes_ja.md)
-- [ダッシュボードを複製する](duplicate-dashboard_ja.md)
+- [ダッシュボードを作る・複製する](duplicate-dashboard_ja.md)
 - [Desktop のコマンド](../commands_ja.md)
 
-同じことを MCP で行う例は、[使い方](../../../mcp/desktop/examples_ja.md#examples)の「公開する」を参照してください。
+同じことを MCP で行う例は、[使い方](../../../mcp/desktop/use_ja.md#examples)の「公開する」を参照してください。
