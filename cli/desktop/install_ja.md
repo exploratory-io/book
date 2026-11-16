@@ -14,6 +14,8 @@ Exploratory Desktop の CLI は、初期状態ではオフです。expl をイ�
 4. expl でコンテンツの作成、変更、削除もしたいときだけ、「作成、変更、削除を許可する」にもチェックを入れます。
 5. 画面の下の「保存」を選びます。
 
+![システム設定の「MCP / CLI」にある「CLI」のカード。スイッチがオンで、「作成、変更、削除を許可する」にチェックが入っている](images/ja/cli-card.png)
+
 <a id="bundled"></a>
 
 ## Exploratory Desktop に同梱されています

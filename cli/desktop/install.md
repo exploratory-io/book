@@ -14,6 +14,8 @@ In Exploratory Desktop, the CLI is off by default. Even when expl is installed, 
 4. Only when you want to create, change or delete content with expl, also check Allow create, edit and delete.
 5. Choose Save at the bottom of the screen.
 
+![The CLI card in System Settings under MCP / CLI. The switch is on and Allow create, edit and delete is checked](images/en/cli-card.png)
+
 <a id="bundled"></a>
 
 ## Bundled with Desktop
