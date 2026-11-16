@@ -11,7 +11,9 @@ There is no separate procedure for each AI tool: Claude Code, Codex, Antigravity
 
 ### Install from System Settings
 
-In Exploratory Desktop, open System Settings.
+In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens (1 and 2 in the picture).
+
+![The menu that opens when you choose your name at the bottom left of Exploratory Desktop. 1 is your name and 2 is System Settings](images/en/open-system-settings.png)
 
 1. In the menu on the left, choose MCP / CLI.
 2. Check the "Install the Exploratory Desktop plugin" card.

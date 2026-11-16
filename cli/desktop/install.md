@@ -8,13 +8,16 @@ expl comes with Exploratory Desktop. There is nothing else to install.
 
 In Exploratory Desktop, the CLI is off by default. Even when expl is installed, Desktop refuses its commands until you turn it on.
 
-1. In Exploratory Desktop, open System Settings.
-2. In the menu on the left, choose MCP / CLI.
-3. On the CLI card, turn on the switch.
-4. Only when you want to create, change or delete content with expl, also check Allow create, edit and delete.
-5. Choose Save at the bottom of the screen.
+1. In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens (1 and 2 in picture 1).
 
-![The CLI card in System Settings under MCP / CLI. The switch is on and Allow create, edit and delete is checked](images/en/cli-card.png)
+![The menu that opens when you choose your name at the bottom left of Exploratory Desktop. 1 is your name and 2 is System Settings](images/en/open-system-settings.png)
+
+2. In the menu on the left of System Settings, choose MCP / CLI (1 in picture 2).
+3. On the CLI card, turn on the switch (2 in picture 2).
+4. Only when you want to create, change or delete content with expl, also check Allow create, edit and delete (3 in picture 2).
+5. Choose Save at the bottom of the screen (4 in picture 2).
+
+![System Settings, MCP / CLI. 1 is MCP / CLI in the left menu, 2 is the switch on the CLI card, 3 is the Allow create, edit and delete check, 4 is Save](images/en/cli-settings.png)
 
 <a id="bundled"></a>
 

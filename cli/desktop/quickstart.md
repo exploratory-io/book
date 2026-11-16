@@ -10,7 +10,7 @@ Start Desktop, then check its state with expl, choose a project and get a dashbo
 
 In Exploratory Desktop, the CLI is off by default. Turn it on first.
 
-1. Start Exploratory Desktop and open System Settings.
+1. Start Exploratory Desktop, then choose your name at the bottom left of the screen, then choose System Settings in the menu that opens. The pictures are on the [Install](install.md#enable) page.
 2. In the menu on the left, choose MCP / CLI.
 3. On the CLI card, turn on the switch.
 4. Only when you want to create, change or delete content with expl, also check Allow create, edit and delete. Without it, expl can only read.
@@ -33,6 +33,8 @@ It shows the Desktop version and the signed-in user.
 ### 4. Allow the connection the first time
 
 The first time you use it, Exploratory Desktop shows a screen that asks whether to allow expl to connect to Exploratory. Check that it is the expl you started yourself, and allow it.
+
+![The "An AI tool is asking for your approval" screen. It asks "Allow expl to connect to Exploratory? Only allow an app you started yourself." and has Allow and Don't allow buttons](images/en/pairing-dialog.png)
 
 expl waits up to 2 minutes for your answer and prints "Waiting for you to approve expl in Exploratory (a request is shown there)..." to standard error. When you allow it, the command continues. If no answer comes within 2 minutes, it stops with PAIRING_PENDING (exit code 1). Answer the request in Desktop and run the command again.
 
