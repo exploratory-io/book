@@ -37,7 +37,7 @@ A request without a valid token gets HTTP 401. Sign in again as follows.
 | Grok Bot | Remove the connection and add it again |
 | Antigravity | Go through the sign-in steps on the client page again |
 
-- [Add from an app](clients/apps.md) - Steps for each client.
+- [Add from an AI tool](clients/apps.md) - Steps for each client.
 
 <a id="apikey"></a>
 

@@ -14,7 +14,7 @@ What an AI agent should know before it runs expl server. An agent that can run s
 6. In CI, sign in with an API key through the environment variable EXPL_SERVER_TOKEN.
 7. When an error message names a tool, such as chart_query, run expl server tools describe \<tool_name\> to see the command for that tool.
 
-For listing and describing commands, see [Inspect commands](../tools.md). For the exit codes, see [Exit codes](../exit-codes.md). For using an API key in CI, see [Automation](automation.md).
+For listing and describing commands, see [Inspect commands](../commands.md#inspect-commands). For the exit codes, see [Exit codes and errors](../exit-codes.md). For using an API key in CI, see [Automation](automation.md).
 
 <a id="choose"></a>
 

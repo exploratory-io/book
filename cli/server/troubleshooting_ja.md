@@ -6,7 +6,7 @@
 
 ## まず状態を確かめる
 
-expl server status を実行します。expl server tools list が終了コード 0 で終わっても、接続できているとは限りません（[コマンドを調べる](tools_ja.md#list)を参照）。送受信の内容を見るときは、--verbose を付けます。標準エラーに出力されます。トークンは出力されませんが、貼り付ける前に、中身を確認してください。
+expl server status を実行します。expl server tools list が終了コード 0 で終わっても、接続できているとは限りません（[コマンドを調べる](commands_ja.md#inspect-list)を参照）。送受信の内容を見るときは、--verbose を付けます。標準エラーに出力されます。トークンは出力されませんが、貼り付ける前に、中身を確認してください。
 
 <a id="contact"></a>
 
@@ -44,7 +44,7 @@ Desktop と npm の両方にインストールしている場合の確認方法�
 | --token was removed. … | EXPL_SERVER_TOKEN を設定するか、expl server login --with-token を実行します。終了コード 2 です。 |
 | Too many failed API key attempts. Try again later. | このアドレスから、拒否されたキーが短い時間に何度も送られました。キーを直して、しばらくしてからやり直します。 |
 | The redirect URL has no authorization code. | --no-browser のとき、最初に表示された URL を貼り付けています。移動先の、http://127.0.0.1/callback?code= で始まる URL を貼り付けてください。 |
-| 終了コード 4（Desktop） | メッセージの末尾のコード（NOT_SIGNED_IN、UNAUTHORIZED、PAIRING_REQUIRED、CHANNEL_DISABLED、PERMISSION_DENIED）を、[終了コード](exit-codes_ja.md#action)で確認します。 |
+| 終了コード 4（Desktop） | メッセージの末尾のコード（NOT_SIGNED_IN、UNAUTHORIZED、PAIRING_REQUIRED、CHANNEL_DISABLED、PERMISSION_DENIED）を、[終了コードとエラー](exit-codes_ja.md#action)で確認します。 |
 
 環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。
 

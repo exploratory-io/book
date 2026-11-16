@@ -40,7 +40,7 @@ It shows the Desktop version and the signed-in user. If Desktop is not running, 
 expl project list
 ```
 
-To run your first commands in order, see [Quickstart](quickstart.md).
+To run your first commands in order, see [Try it](quickstart.md).
 
 <a id="commands"></a>
 

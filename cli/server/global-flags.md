@@ -57,4 +57,4 @@ expl completion bash, expl completion zsh and expl completion powershell print a
 | --output \<file\>, -o \<file\> | Where to save a file result, such as a data frame export or a chart image. With --json, a saved file prints the path (saved) and the size (bytes) as JSON. --output - is not JSON: it writes the file itself to standard output. |
 | --no-browser | Do not open a browser while signing in. |
 
-For how to use --no-browser and --with-token, see [Sign-in and status](login.md). For API keys and EXPL_SERVER_TOKEN, see [API keys](token.md).
+For how to use --no-browser and --with-token, see [Sign in](login.md). For API keys and EXPL_SERVER_TOKEN, see [API keys](token.md).

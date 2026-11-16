@@ -1,4 +1,4 @@
-# Quickstart
+# Try it
 
 Start Desktop, then check its state with expl, choose a project and get a dashboard.
 
@@ -6,17 +6,9 @@ Start Desktop, then check its state with expl, choose a project and get a dashbo
 
 ## Eight steps
 
-### 1. Start Desktop and turn on the CLI
+### 1. Start Desktop and check that the CLI is on
 
-In Exploratory Desktop, the CLI is off by default. Turn it on first.
-
-1. Start Exploratory Desktop, then choose your name at the bottom left of the screen, then choose System Settings in the menu that opens. The pictures are on the [Install](install.md#enable) page.
-2. In the menu on the left, choose MCP / CLI.
-3. On the CLI card, turn on the switch.
-4. Only when you want to create, change or delete content with expl, also check Allow create, edit and delete. Without it, expl can only read.
-5. Choose Save at the bottom of the screen.
-
-If you do not save, the settings do not take effect.
+Start Exploratory Desktop. The CLI must be turned on and saved by the steps on the [Installation](install.md#enable) page. If you have not done so yet, do it first.
 
 ### 2. Sign in to Desktop
 

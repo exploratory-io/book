@@ -125,4 +125,4 @@ npm uninstall -g @exploratory/cli
 
 Exploratory Desktop に同梱されている expl は、Desktop のインストールのページの[アンインストール](../desktop/install_ja.md#remove)に従います。同名のほかのコマンドを削除しないように、先に各パスを確認してください。アプリが確認を求めたときに断らない限り、次回の起動時に再び追加されます。
 
-サインインして最初の結果を取得する手順は[クイックスタート](quickstart_ja.md)、手元の Desktop を操作する場合は[Desktop を使う](../desktop/desktop_ja.md)を参照してください。
+次は、[サインイン](login_ja.md)してから、[試してみる](quickstart_ja.md)で最初の結果を取得します。手元の Desktop を操作する場合は[Desktop を使う](../desktop/desktop_ja.md)を参照してください。

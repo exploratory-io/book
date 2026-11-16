@@ -46,7 +46,7 @@ If you lose a key, choose Regenerate to get a new value. The old value stops wor
 
 ## Give the key to expl
 
-Save the key with expl server login --with-token, or set the environment variable EXPL_SERVER_TOKEN, which is used first. The order and how to switch are on [Sign-in and status](login.md#apikey). --token was removed; passing it exits with code 2.
+Save the key with expl server login --with-token, or set the environment variable EXPL_SERVER_TOKEN, which is used first. The order and how to switch are on [Sign in](login.md#apikey). --token was removed; passing it exits with code 2.
 
 For how to use it in GitHub Actions, see [Automation](guides/automation.md).
 

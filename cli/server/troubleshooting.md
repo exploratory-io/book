@@ -6,7 +6,7 @@ Find a fix by symptom.
 
 ## Check the state first
 
-Run expl server status. Exit code 0 from expl server tools list does not mean that the connection works (see [Inspect commands](tools.md#list)). To see what is sent and received, add --verbose; it prints to standard error. Tokens are never printed, but review the output before you paste it anywhere.
+Run expl server status. Exit code 0 from expl server tools list does not mean that the connection works (see [Inspect commands](commands.md#inspect-list)). To see what is sent and received, add --verbose; it prints to standard error. Tokens are never printed, but review the output before you paste it anywhere.
 
 <a id="contact"></a>
 
@@ -44,7 +44,7 @@ For how to check when two copies are installed, see [Installation](install.md).
 | --token was removed. … | Set EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. |
 | Too many failed API key attempts. Try again later. | Many refused keys came from this address in a short time. Fix the key and try again later. |
 | The redirect URL has no authorization code. | With --no-browser, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
-| Exit code 4 (Desktop) | See the code at the end of the message in [Exit codes](exit-codes.md#action): NOT_SIGNED_IN, UNAUTHORIZED, PAIRING_REQUIRED, CHANNEL_DISABLED or PERMISSION_DENIED. |
+| Exit code 4 (Desktop) | See the code at the end of the message in [Exit codes and errors](exit-codes.md#action): NOT_SIGNED_IN, UNAUTHORIZED, PAIRING_REQUIRED, CHANNEL_DISABLED or PERMISSION_DENIED. |
 
 To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login.
 

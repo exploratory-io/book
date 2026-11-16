@@ -33,8 +33,8 @@ Exploratory Desktop の MCP を使うと、AI クライアントが、あなた�
 ## あわせて読む
 
 - [プラグインのインストール](install_ja.md) - システム設定から、AI ツールにプラグインを入れます。
+- [許可の範囲と設定](limits_ja.md) - Desktop で決める設定と、送られる情報です。
 - [使い方の例](examples_ja.md) - AI に頼めることの例です。
 - [使える道具](tools_ja.md) - 目的から、AI にできることを確認します。
-- [許可の範囲と設定](limits_ja.md) - Desktop で決める設定と、送られる情報です。
 - [トラブルシューティング](troubleshooting_ja.md) - 表示されたメッセージから対処を探します。
 - [Server の MCP](../server/server_ja.md) - exploratory.io に公開されたコンテンツを読みます。

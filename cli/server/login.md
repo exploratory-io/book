@@ -1,4 +1,4 @@
-# Sign-in and status
+# Sign in
 
 Sign in with your browser, or with an API key (a string that lets expl read Exploratory as you without a browser), and save the login on this computer. You also check the state and sign out here.
 

@@ -14,7 +14,7 @@ AI エージェントが expl server を実行する前に知っておくこと�
 6. CI では、環境変数 EXPL_SERVER_TOKEN の API キーでサインインします。
 7. エラーのメッセージに chart_query のようなツール名が出たら、expl server tools describe \<tool_name\> で、そのツールに当たるコマンドを確認します。
 
-コマンドの一覧と説明は[コマンドを調べる](../tools_ja.md)、終了コードの一覧は[終了コード](../exit-codes_ja.md)、CI での API キーの使い方は[自動処理](automation_ja.md)を参照してください。
+コマンドの一覧と説明は[コマンドを調べる](../commands_ja.md#inspect-commands)、終了コードの一覧は[終了コードとエラー](../exit-codes_ja.md)、CI での API キーの使い方は[自動処理](automation_ja.md)を参照してください。
 
 <a id="choose"></a>
 

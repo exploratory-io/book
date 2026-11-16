@@ -37,7 +37,7 @@ IT の担当者に、exploratory.io への通信を許可してもらいます�
 | Grok Bot | 接続を解除してから追加し直す |
 | Antigravity | クライアントのページの、サインインの手順をもう一度行う |
 
-- [アプリから追加する](clients/apps_ja.md) - クライアントごとの手順です。
+- [AI ツールから追加する](clients/apps_ja.md) - クライアントごとの手順です。
 
 <a id="apikey"></a>
 

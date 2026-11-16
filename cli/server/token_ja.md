@@ -50,7 +50,7 @@ exploratory.io の右上のアイコンから「アカウントの設定」を�
 
 ## キーを expl に渡す
 
-expl server login --with-token でキーを保存するか、環境変数 EXPL_SERVER_TOKEN に設定します。環境変数が先に使われます。選ばれる順と切り替え方は、[サインインと状態](login_ja.md#apikey)にあります。--token は削除されました。指定すると、終了コード 2 で終わります。
+expl server login --with-token でキーを保存するか、環境変数 EXPL_SERVER_TOKEN に設定します。環境変数が先に使われます。選ばれる順と切り替え方は、[サインイン](login_ja.md#apikey)にあります。--token は削除されました。指定すると、終了コード 2 で終わります。
 
 GitHub Actions での使い方は、[自動処理](guides/automation_ja.md)を参照してください。
 

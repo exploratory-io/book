@@ -59,4 +59,4 @@ The first sign-in shows a consent page. To see and revoke connected clients, ope
 
 To disconnect a client from the Server MCP, open Account Settings on exploratory.io and remove it under Connected AI Apps. Removing the registration in the client alone does not revoke the access you approved. To stop an API key, revoke it under API Keys in the same Account Settings.
 
-- [Add from an app](clients/apps.md) - How to remove the registration in each client.
+- [Add from an AI tool](clients/apps.md) - How to remove the registration in each client.

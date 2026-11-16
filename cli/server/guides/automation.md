@@ -16,7 +16,7 @@ For how to create a key and keep it safe, see [API keys](../token.md).
 
 ## Pass the key
 
-Pass the key with the environment variable EXPL_SERVER_TOKEN. For the order against a saved login, see [Sign-in and status](../login.md#apikey). To use another server, set EXPL_SERVER_URL.
+Pass the key with the environment variable EXPL_SERVER_TOKEN. For the order against a saved login, see [Sign in](../login.md#apikey). To use another server, set EXPL_SERVER_URL.
 
 <a id="run"></a>
 
@@ -45,7 +45,7 @@ A script can tell success from failure by the exit code. These two are common in
 | 3 | The server cannot be reached (network, an HTML error page and so on) | Check the network and run it again. |
 | 4 | Not signed in, or the API key was rejected | Check that the key is correct, has not expired and has not been revoked. |
 
-Every exit code is described in [Exit codes](../exit-codes.md).
+Every exit code is described in [Exit codes and errors](../exit-codes.md).
 
 <a id="revoke"></a>
 

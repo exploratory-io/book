@@ -125,4 +125,4 @@ npm uninstall -g @exploratory/cli
 
 For the copy that comes with Desktop, follow [Remove](../desktop/install.md#remove) on the Desktop installation page. Check each path first, so that you do not delete another command with the same name. Desktop adds it again at the next start unless you decline when it asks.
 
-To sign in and get your first result, see [Quickstart](quickstart.md). To work with Desktop on this computer, see [Use Desktop](../desktop/desktop.md).
+Next, [sign in](login.md), then get your first result in [Try it](quickstart.md). To work with Desktop on this computer, see [Use Desktop](../desktop/desktop.md).

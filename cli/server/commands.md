@@ -4,7 +4,7 @@ Choose a command by purpose. Open its name to see arguments and examples.
 
 How to read the usage lines: replace a \<value\> placeholder with your own value; an item in \[brackets\] can be left out. Write a boolean as --flag or --no-flag. To give a list of values, repeat the flag, for example --tables summary --tables table. The JSON examples are written for bash; on Windows you can also pass a JSON file with --input.
 
-The commands for signing in and managing the connection are on their own pages: [Sign-in and status](login.md) (login, logout, status), [API keys](token.md) (token) and [Inspect commands](tools.md) (tools list, tools describe). expl server skill prints a description for AI agents in the form of a SKILL.md file.
+The commands for signing in and managing the connection are on their own pages: [Sign in](login.md) (login, logout, status), [API keys](token.md) (token) and [Inspect commands](#inspect-commands) on this page (tools list, tools describe). expl server skill prints a description for AI agents in the form of a SKILL.md file.
 
 <a id="syntax-index"></a>
 
@@ -64,6 +64,46 @@ The commands for signing in and managing the connection are on their own pages: 
 | Command | Purpose |
 | --- | --- |
 | [expl server desktop mcp-setup-guide](#desktop-mcp-setup-guide) | Return the steps and links for connecting an AI client to Exploratory Desktop. |
+
+<a id="inspect-commands"></a>
+
+## Inspect commands
+
+Inspect the commands the server offers and their flags.
+
+<a id="inspect-list"></a>
+
+### List the commands
+
+```sh
+expl server tools list
+```
+
+The command list comes from the server each time. A new operation on the server does not need a new version of expl. When the server cannot be reached or you are not signed in, expl shows the list it saved last time, or an empty list when none is saved.
+
+Exit code 0 from tools list does not mean that the connection works. To check the connection, run expl server status.
+
+<a id="inspect-describe"></a>
+
+### Describe one command
+
+```sh
+expl server tools describe <command>
+```
+
+Replace \<command\> with the name of a command from the list. Wrap a command of two words in quotes, as in `expl server tools describe "chart get-data"`. The tool name, such as `chart_get_data`, also works.
+
+It shows what the command does and the flags it takes. Check here instead of guessing command names.
+
+<a id="inspect-form"></a>
+
+### The shape of a command
+
+search and fetch take no verb: expl server search \<query\> and expl server fetch \<id\>. Other commands put a noun and a verb after server, as in expl server dataset query.
+
+Each command also has the name of the tool behind it, the one an MCP client sees. expl server call \<tool_name\> runs a command by that name, for example expl server call dataframe_preview \<id\>.
+
+To find every command by purpose, see [All commands](#syntax-index).
 
 <a id="search"></a>
 
@@ -1838,4 +1878,4 @@ There is no paging.
 | --- | --- |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
-Related: [Sign-in and status](login.md)
+Related: [Sign in](login.md)

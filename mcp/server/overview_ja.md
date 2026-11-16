@@ -18,9 +18,9 @@ AI クライアントから、Exploratory にパブリッシュされたノー�
 
 <a id="clients"></a>
 
-## アプリから追加する
+## AI ツールから追加する
 
-お使いのアプリを、[アプリから追加する](clients/apps_ja.md) のページで選びます。Claude アプリ、ChatGPT アプリ、Antigravity、Grok Bot、Claude Code、Codex、Cursor、そのほかのアプリごとに、手順があります。
+お使いのアプリを、[AI ツールから追加する](clients/apps_ja.md) のページで選びます。Claude アプリ、ChatGPT アプリ、Antigravity、Grok Bot、Claude Code、Codex、Cursor、そのほかのアプリごとに、手順があります。
 
 <a id="url"></a>
 
@@ -34,28 +34,13 @@ AI クライアントから、Exploratory にパブリッシュされたノー�
 https://exploratory.io/mcp
 ```
 
-<a id="spec"></a>
-
-## 通信と認証
-
-| 項目 | 値 |
-| --- | --- |
-| サーバー URL | https://exploratory.io/mcp |
-| 通信方式 | Streamable HTTP（HTTP で MCP をやり取りする方式）、ステートレス |
-| 認証 | OAuth 2.1（PKCE）: 初回にブラウザでサインインします。または、Authorization: Bearer exp_pat_... で送る API キー |
-| スコープ | content:read（API キーも同じスコープです） |
-
-人がブラウザで使うときは、ブラウザでのサインインを使います。ブラウザがないとき、または自動で実行するときは、API キーを使います。
-
-すべての呼び出しに、Authorization: Bearer \<アクセストークンまたは API キー\> が必要です。ブラウザのセッションの Cookie では、MCP の呼び出しを認証できません。同意画面、メタデータの URL、失敗した呼び出しの詳細は、[データと権限](data_ja.md#auth) にあります。
-
 <a id="steps"></a>
 
 ## つなぐ手順
 
 ### 1. 登録する
 
-[アプリから追加する](clients/apps_ja.md) のページに、アプリごとの登録手順があります。サーバー URL は、すべてのアプリで共通です。
+[AI ツールから追加する](clients/apps_ja.md) のページに、アプリごとの登録手順があります。サーバー URL は、すべてのアプリで共通です。
 
 ### 2. サインインして許可する
 
@@ -115,6 +100,21 @@ exp_pat_... は、作成したキーに置き換えます。
 オンプレミス環境や Hosted 環境では、管理者が、API キーをオフにしたり、使える IP アドレスを限定したりできます。上の 403 の 2 つのメッセージが、その場合です。「データと権限」の、公開した人の設定は、キーにも同じように効きます。
 
 - [API キー](../../cli/server/token_ja.md) - キーの作成、有効期限、取り消し、安全な扱い方です。
+
+<a id="spec"></a>
+
+## 通信と認証
+
+| 項目 | 値 |
+| --- | --- |
+| サーバー URL | https://exploratory.io/mcp |
+| 通信方式 | Streamable HTTP（HTTP で MCP をやり取りする方式）、ステートレス |
+| 認証 | OAuth 2.1（PKCE）: 初回にブラウザでサインインします。または、Authorization: Bearer exp_pat_... で送る API キー |
+| スコープ | content:read（API キーも同じスコープです） |
+
+人がブラウザで使うときは、ブラウザでのサインインを使います。ブラウザがないとき、または自動で実行するときは、API キーを使います。
+
+すべての呼び出しに、Authorization: Bearer \<アクセストークンまたは API キー\> が必要です。ブラウザのセッションの Cookie では、MCP の呼び出しを認証できません。同意画面、メタデータの URL、失敗した呼び出しの詳細は、[データと権限](data_ja.md#auth) にあります。
 
 <a id="examples"></a>
 

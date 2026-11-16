@@ -20,7 +20,7 @@ To use it from a terminal or a script, see [Exploratory CLI](../../cli/server/se
 
 ## Add it from your app
 
-Pick your app on the [Add from an app](clients/apps.md) page. Claude app, ChatGPT app, Antigravity, Grok Bot, Claude Code, Codex, Cursor and other clients each have their own steps.
+Pick your app on the [Add from an AI tool](clients/apps.md) page. Claude app, ChatGPT app, Antigravity, Grok Bot, Claude Code, Codex, Cursor and other clients each have their own steps.
 
 <a id="url"></a>
 
@@ -34,28 +34,13 @@ Every client connects to the same address.
 https://exploratory.io/mcp
 ```
 
-<a id="spec"></a>
-
-## Transport and authorization
-
-| Item | Value |
-| --- | --- |
-| Server URL | https://exploratory.io/mcp |
-| Transport | Streamable HTTP (a way to send MCP over HTTP), stateless |
-| Authorization | OAuth 2.1 with PKCE: sign in with your browser the first time. Or an API key sent as Authorization: Bearer exp_pat_... |
-| Scope | content:read (an API key has the same scope) |
-
-If a person uses it in a browser, use the browser sign-in. If there is no browser, or a job runs by itself, use an API key.
-
-Every call needs Authorization: Bearer \<access token or API key\>. A browser session cookie does not authenticate MCP calls. The consent page, the metadata URLs and the details of failed calls are in [Data and permissions](data.md#auth).
-
 <a id="steps"></a>
 
 ## Connect
 
 ### 1. Register
 
-The [Add from an app](clients/apps.md) page has the registration steps for each app. The server URL is the same for every app.
+The [Add from an AI tool](clients/apps.md) page has the registration steps for each app. The server URL is the same for every app.
 
 ### 2. Sign in and authorize
 
@@ -115,6 +100,21 @@ For other clients, see the steps for [Codex](clients/codex.md#apikey), [Cursor](
 An administrator on an on-premises or Hosted server can turn API keys off or limit them to certain IP addresses; the two 403 messages above mean that. The publisher settings in Data and permissions apply to a key in the same way.
 
 - [API keys](../../cli/server/token.md) - Create, expire, revoke and keep a key safe.
+
+<a id="spec"></a>
+
+## Transport and authorization
+
+| Item | Value |
+| --- | --- |
+| Server URL | https://exploratory.io/mcp |
+| Transport | Streamable HTTP (a way to send MCP over HTTP), stateless |
+| Authorization | OAuth 2.1 with PKCE: sign in with your browser the first time. Or an API key sent as Authorization: Bearer exp_pat_... |
+| Scope | content:read (an API key has the same scope) |
+
+If a person uses it in a browser, use the browser sign-in. If there is no browser, or a job runs by itself, use an API key.
+
+Every call needs Authorization: Bearer \<access token or API key\>. A browser session cookie does not authenticate MCP calls. The consent page, the metadata URLs and the details of failed calls are in [Data and permissions](data.md#auth).
 
 <a id="examples"></a>
 

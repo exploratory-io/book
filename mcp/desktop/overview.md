@@ -33,8 +33,8 @@ It works through the app on your computer, as the user signed in to the app. It 
 ## Read next
 
 - [Install the plugin](install.md) - Install the plugin into your AI tool from System Settings.
+- [Permissions and settings](limits.md) - Settings you control in Desktop, and what is sent.
 - [Examples](examples.md) - What you can ask the AI.
 - [Tools](tools.md) - Find what the AI can do by purpose.
-- [Permissions and settings](limits.md) - Settings you control in Desktop, and what is sent.
 - [Troubleshooting](troubleshooting.md) - Find what to do from a message.
 - [Server MCP](../server/server.md) - Read content published on exploratory.io.

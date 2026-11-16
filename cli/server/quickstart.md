@@ -1,34 +1,14 @@
-# Quickstart
+# Try it
 
-Install expl, sign in, find and read published data, then aggregate it, in five steps.
+Find and read published data, then aggregate it, in three steps.
+
+Before you start, install expl on the [Installation](install.md) page and [sign in](login.md). Check the state with expl server status. If you use Exploratory Desktop, expl is already installed.
 
 <a id="steps"></a>
 
-## Five steps
+## Three steps
 
-### 1. Install
-
-If you use Desktop, expl is already installed. Check it with the command below. Without Desktop, see the install page.
-
-```sh
-expl --version
-```
-
-> If the first line reads expl \<version\>, it works.
-
-### 2. Sign in
-
-```sh
-expl server login
-```
-
-Your browser opens. Sign in to Exploratory and allow access.
-
-> If you see "Logged in to exploratory.io as …", you are signed in.
-
-Check the state with expl server status. If your environment cannot open a browser, see the sign-in page (--no-browser, or sign in with an API key) and the API keys page.
-
-### 3. Search
+### 1. Search
 
 Write the search words right after the command. A value written without a flag name, like this, is called a positional argument.
 
@@ -47,7 +27,7 @@ hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  dat
 
 > If the result lists content with ids and URLs, the search works.
 
-### 4. Read
+### 2. Read
 
 ```sh
 expl server fetch <id> --json
@@ -97,7 +77,7 @@ Replace \<id\> with an id from the search result. --json prints the server's res
 
 The result holds the text. For a note, dashboard or slide it can also hold the list of headings (metadata.toc), depending on its length and your options. When it is missing, get the heading ids with --query.
 
-### 5. Aggregate
+### 3. Aggregate
 
 For a data item, first check the column names and types.
 

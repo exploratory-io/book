@@ -23,7 +23,7 @@ expl status を実行します。expl tools list が終了コード 0 で終わ�
 | expl: command not found | 新しいターミナルを開いて、もう一度実行します。インストールのページも参照してください。 |
 | Desktop が起動しているのにコマンドが拒否され、メッセージに MCP / CLI と出る | CLI は初期状態ではオフです。システム設定で MCP / CLI を選び、「CLI」のカードのスイッチをオンにして「保存」を選びます。 |
 | 終了コード 3 | Exploratory Desktop を起動して、もう一度実行します。 |
-| 終了コード 4 | メッセージの末尾のコード（NOT_SIGNED_IN、UNAUTHORIZED、PAIRING_REQUIRED、CHANNEL_DISABLED、PERMISSION_DENIED）を、[終了コード](exit-codes_ja.md#action)で確認します。 |
+| 終了コード 4 | メッセージの末尾のコード（NOT_SIGNED_IN、UNAUTHORIZED、PAIRING_REQUIRED、CHANNEL_DISABLED、PERMISSION_DENIED）を、[終了コードとエラー](exit-codes_ja.md#action)で確認します。 |
 | PROJECT_NOT_OPEN | プロジェクトを開きます: expl project open \<id\> |
 | メッセージに get_data_frame のような道具の名前が出る | expl tools describe \<tool_name\> で、その道具に対応するコマンドを確認します。 |
 | 結果が想定と異なる | --verbose を付けて、送受信の内容を確認します。貼り付ける前に、出力の内容を確認してください。 |
@@ -44,4 +44,4 @@ $OutputEncoding = [Text.UTF8Encoding]::new($false)
 
 ## 関連
 
-- [終了コード](exit-codes_ja.md) - 終了コードの一覧です。
+- [終了コードとエラー](exit-codes_ja.md) - 終了コードの一覧です。
