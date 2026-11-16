@@ -25,15 +25,27 @@ When a request does not say which one, the plugin's skill checks first. For exam
 
 ## Examples
 
-### Read the data
+### Import and wrangle data
 
 ```text
-What columns does the sales data in my open project have? Also give me the count for each region.
+Import this file.
 ```
 
-The AI reads the column names, the values and the counts from the data frame (the data frame preview and profile tools).
+Imports data from a file or a database and creates a data source or a connection (create_data_source, save_connection). Desktop asks you before it saves a connection.
 
-### Create or change a chart
+```text
+Make a month column from the order date, then total the sales by region.
+```
+
+Wrangling such as creating, filtering, summarizing and joining columns is added as wrangling steps (create_wrangling_step). The steps line up in the steps on the right side of Exploratory Desktop.
+
+```text
+Make a column that classifies the free-text reviews by topic.
+```
+
+Classifying text by its meaning is built as an AI function column. It is separate from converting values by fixed rules. Desktop asks you before it runs.
+
+### Create charts
 
 ```text
 In my open Exploratory project, build a monthly bar chart from the sales data.
@@ -45,23 +57,7 @@ Change this chart to a scatter plot.
 
 Creating and changing charts (create_chart, update_chart). You can open the chart in Exploratory Desktop to check it.
 
-### Wrangle the data
-
-```text
-Make a month column from the order date, then total the sales by region.
-```
-
-Wrangling such as creating, filtering, summarizing and joining columns is added as wrangling steps (create_wrangling_step). The steps line up in the steps on the right side of Exploratory Desktop.
-
-### Classify text
-
-```text
-Make a column that classifies the free-text reviews by topic.
-```
-
-Classifying text by its meaning is built as an AI function column. It is separate from converting values by fixed rules. Desktop asks you before it runs.
-
-### Run a statistical analysis
+### Create analytics
 
 ```text
 Find out with a regression which factors affect sales.
@@ -73,29 +69,49 @@ Split the customers into clusters.
 
 Creates analytics such as regression, tests and clustering (create_analytics). You can open the result as analytics in Exploratory Desktop.
 
-### Write up a report
+### Write notes
 
 ```text
 Put the analysis results into a note.
 ```
 
-Writes and saves a note and embeds charts in it (create_note, update_note). You can also ask to update a dashboard, or to publish a note or a dashboard (publish_note, publish_dashboard). Desktop asks you before it publishes.
+Writes and saves a note and embeds charts in it (create_note, update_note). You can open the note in Exploratory Desktop to check it.
 
-### Add a filter
+### Create and duplicate dashboards
+
+```text
+Create a dashboard with the sales charts side by side.
+```
+
+Creates a dashboard of pages, rows and panels (create_dashboard). You can check the layout before saving (validate_dashboard).
+
+```text
+Duplicate the "Sales Orders Dashboard" and change only the title.
+```
+
+Reads the definition of the original dashboard (get_dashboard), changes the title and creates it as a new dashboard (create_dashboard).
+
+### Publish
+
+```text
+Publish this note and this dashboard.
+```
+
+Publishes a note or a dashboard to the server with a public URL (publish_note, publish_dashboard). You can also take a publication back (unpublish). Desktop asks you before it publishes or takes a publication back.
+
+### Other
+
+```text
+What columns does the sales data in my open project have? Also give me the count for each region.
+```
+
+The AI reads the column names, the values and the counts from the data frame (the data frame preview and profile tools).
 
 ```text
 I want a filter where I can pick the period.
 ```
 
 Creates a parameter, sets its list of values and applies it to a filter or a chart (save_parameter and others).
-
-### Import data
-
-```text
-Import this file.
-```
-
-Imports data from a file or a database and creates a data source or a connection (create_data_source, save_connection). Desktop asks you before it saves a connection.
 
 <a id="next"></a>
 
