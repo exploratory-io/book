@@ -23,7 +23,7 @@ Desktop のプラグインには、Claude Code で使う設定が 4 つありま
 | `ai_summary` | `"false"` | 作成したチャートとアナリティクスの AI サマリを、作成して保存します。 |
 | `save_comments` | `"false"` | 作成したチャートに、説明のコメントを保存します。 |
 | `review_hook` | `"false"` | AI に、作業の見直しをさせます。 |
-| `plan_gate` | `"true"` | AI に、作る前に計画を保存させます。[トラブルシューティング](troubleshooting_ja.md#trouble)を参照してください。 |
+| `plan_gate` | `"true"` | R の作業をしたあと、作成の前に、AI にシナリオと計画を保存させます。[トラブルシューティング](troubleshooting_ja.md#trouble)を参照してください。 |
 
 設定は `claude plugin configure exploratory@exploratory` で確認できます。上のシステム設定 \> MCP / CLI の項目とは別の設定です。
 

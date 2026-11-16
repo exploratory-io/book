@@ -33,8 +33,8 @@ The code at the end of an exit code 4 message tells what to do.
 | NOT_LOGGED_IN | Server only. Run expl server login. |
 | NOT_SIGNED_IN | Sign in to Exploratory Desktop. |
 | UNAUTHORIZED | Run the command again. Exploratory Desktop asks you to approve the connection; see the [Desktop quickstart](../desktop/quickstart.md). |
-| PAIRING_REQUIRED | This connection was declined on the approval screen of Exploratory Desktop. For 5 minutes after you decline, running the command again does not show the screen and is declined at once. Run it again after 5 minutes and allow it on the screen. |
+| PAIRING_REQUIRED | This connection was declined on the approval screen of Exploratory Desktop (this code is also used when too many approval requests are made in a short time). For 5 minutes after you decline, running the command again does not show the screen and is declined at once. Run it again after 5 minutes and allow it on the screen. |
 | CHANNEL_DISABLED | In System Settings > MCP / CLI, turn on Enable CLI and choose Save. |
-| PERMISSION_DENIED | This connection is not allowed that operation. For an operation that creates, changes or deletes content, check that Allow create, edit and delete is turned on in System Settings > MCP / CLI. |
+| PERMISSION_DENIED | This connection is not allowed to perform that operation. For an operation that creates, changes or deletes content, check that Allow create, edit and delete is turned on in System Settings > MCP / CLI. |
 
 - [Troubleshooting](troubleshooting.md) - Find a fix by symptom.

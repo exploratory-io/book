@@ -33,7 +33,7 @@ expl は、終わるときに終了コードを返します。スクリプトや
 | NOT_LOGGED_IN | Server のみ。expl server login を実行します。 |
 | NOT_SIGNED_IN | Exploratory Desktop にサインインします。 |
 | UNAUTHORIZED | もう一度実行します。Exploratory Desktop が接続の承認を求めます。[Desktop のはじめる](quickstart_ja.md)のページを参照してください。 |
-| PAIRING_REQUIRED | Exploratory Desktop の承認の画面で、この接続が断られました。断ってから 5 分間は、もう一度実行しても画面は出ずに断られます。5 分たってからもう一度実行し、画面で許可します。 |
+| PAIRING_REQUIRED | Exploratory Desktop の承認の画面で、この接続が断られました（短い時間に要求が多すぎたときも、このコードになります）。断ってから 5 分間は、もう一度実行しても画面は出ずに断られます。5 分たってからもう一度実行し、画面で許可します。 |
 | CHANNEL_DISABLED | システム設定 > MCP / CLI で「CLI を有効にする」をオンにして、「保存」を選びます。 |
 | PERMISSION_DENIED | この接続では、その操作は許可されていません。作成、変更、削除の操作なら、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンになっているかを確認します。 |
 
