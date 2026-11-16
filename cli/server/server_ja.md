@@ -138,7 +138,7 @@ Rows (total): 23,131
 | チャートの数値を集計する | expl server chart query |
 | アナリティクスの結果を取得する | expl server analytics get-result |
 
-- [コマンド一覧](commands_ja.md) - 目的別に全コマンドを探します。
+目的別に全コマンドを探すには、[コマンド一覧](commands_ja.md)を参照してください。
 
 <a id="ai"></a>
 
@@ -153,5 +153,4 @@ Rows (total): 23,131
 
 expl 自体は、利用状況の計測を送りません。通信する相手は、お使いのコンピューターの Exploratory Desktop と、サインインした Exploratory Server だけです。
 
-- [Exploratory Server が記録するもの](../../mcp/server/data_ja.md) - トークン、アクセスの記録、ログ、エラーです。
-- [Desktop が記録するもの](../desktop/desktop_ja.md#records) - Desktop のページに書いています。
+トークン、アクセスの記録、ログ、エラーは[Exploratory Server が記録するもの](../../mcp/server/data_ja.md)、Desktop が記録するものは[Desktop が記録するもの](../desktop/desktop_ja.md#records)を参照してください。

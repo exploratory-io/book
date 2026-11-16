@@ -81,4 +81,4 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 
 すべてのコマンドは expl tools list で確認できます。データ、チャート、ノート、ダッシュボードなど、生成されたコマンドの引数は、expl \<コマンド\> --help で確認できます。project use、tools describe、call、lang は、この表の書き方を見てください（[共通フラグ](global-flags_ja.md)）。
 
-- [Server のコマンド](../server/commands_ja.md) - exploratory.io のコンテンツを読むコマンドです。
+exploratory.io のコンテンツを読むコマンドは、[Server のコマンド](../server/commands_ja.md)を参照してください。

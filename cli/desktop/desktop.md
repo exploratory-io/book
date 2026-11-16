@@ -40,7 +40,7 @@ It shows the Desktop version and the signed-in user. If Desktop is not running, 
 expl project list
 ```
 
-- [Quickstart](quickstart.md) - Run your first commands in order.
+To run your first commands in order, see [Quickstart](quickstart.md).
 
 <a id="commands"></a>
 
@@ -57,7 +57,7 @@ The commands you will use most. For the generated commands, check the arguments 
 | expl project use \<id\|name\> | Choose the project later commands work on |
 | expl project open \<id\> | Open a project |
 
-- [Common commands](commands.md) - Includes data, chart, note and dashboard commands.
+The commands for data, charts, notes and dashboards are in [Common commands](commands.md).
 
 <a id="difference"></a>
 
@@ -67,7 +67,7 @@ Server commands (expl server) read published content. Desktop commands can also 
 
 An operation that is hard to undo asks for confirmation before it runs.
 
-- [Confirmation and long-running operations](guides/confirmation.md) - How confirmation works and how to not wait.
+For how confirmation works and how to not wait, see [Confirmation and long-running operations](guides/confirmation.md).
 
 <a id="records"></a>
 

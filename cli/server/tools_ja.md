@@ -34,4 +34,4 @@ search と fetch には、動詞を付けません。expl server search \<query\
 
 それぞれのコマンドには、その裏にあるツールの名前があります。MCP クライアントから見える名前です。expl server call \<tool_name\> は、その名前でコマンドを実行します。例: expl server call dataframe_preview \<id\>
 
-- [コマンド一覧](commands_ja.md) - 目的別に全コマンドを探します。
+目的別に全コマンドを探すには、[コマンド一覧](commands_ja.md)を参照してください。

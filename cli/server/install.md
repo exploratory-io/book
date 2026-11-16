@@ -111,7 +111,7 @@ expl --version
 
 Replace \<version\> with the version you want. The copy that comes with Desktop is updated when you update Exploratory Desktop.
 
-- [Release notes](../../release-note.md) - See what changed in each version.
+For what changed in each version, see the [release notes](../../release-note.md).
 
 <a id="remove"></a>
 
@@ -125,5 +125,4 @@ npm uninstall -g @exploratory/cli
 
 For the copy that comes with Desktop, follow [Remove](../desktop/install.md#remove) on the Desktop installation page. Check each path first, so that you do not delete another command with the same name. Desktop adds it again at the next start unless you decline when it asks.
 
-- [Quickstart](quickstart.md) - Sign in and get your first result.
-- [Use Desktop](../desktop/desktop.md) - Work with Desktop on this computer.
+To sign in and get your first result, see [Quickstart](quickstart.md). To work with Desktop on this computer, see [Use Desktop](../desktop/desktop.md).

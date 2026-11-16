@@ -952,9 +952,7 @@ expl server dataframe export <dataset_id> [flags]
 
 ### JSON の引数
 
-filters、metrics、sort の JSON の形は dataset query の説明を参照してください。
-
-- [JSON の書き方](#dataset-query-json-arguments) - 入力のキーと置き換える値を確認します。
+filters、metrics、sort の JSON の形は、[dataset query の説明](#dataset-query-json-arguments)を参照してください。
 
 <a id="dataframe-export-examples"></a>
 
@@ -1639,9 +1637,7 @@ expl server chart query [flags]
 
 ### JSON の引数
 
-filters、metrics、sort の JSON の形は dataset query の説明を参照してください。チャートの問い合わせでは結合の指定は使いません。
-
-- [JSON の書き方](#dataset-query-json-arguments) - 入力のキーと置き換える値を確認します。
+filters、metrics、sort の JSON の形は、[dataset query の説明](#dataset-query-json-arguments)を参照してください。チャートの問い合わせでは結合の指定は使いません。
 
 <a id="chart-query-examples"></a>
 

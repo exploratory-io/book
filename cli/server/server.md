@@ -138,7 +138,7 @@ The commands you will use most. Arguments and flags (extra settings that start w
 | Aggregate chart numbers | expl server chart query |
 | Get an analytics result | expl server analytics get-result |
 
-- [All commands](commands.md) - Find every command by purpose.
+To find every command by purpose, see [All commands](commands.md).
 
 <a id="ai"></a>
 
@@ -153,5 +153,4 @@ The commands you will use most. Arguments and flags (extra settings that start w
 
 expl sends no usage analytics of its own. It talks only to Exploratory Desktop on your computer and to the Exploratory Server you sign in to.
 
-- [What Exploratory Server records](../../mcp/server/data.md) - Tokens, the data access log, server logs and errors.
-- [What Desktop records](../desktop/desktop.md#records) - Described on the Desktop page.
+For tokens, the data access log, server logs and errors, see [What Exploratory Server records](../../mcp/server/data.md). For what Desktop records, see [What Desktop records](../desktop/desktop.md#records).

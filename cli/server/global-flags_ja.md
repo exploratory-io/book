@@ -57,5 +57,4 @@ expl completion bash、expl completion zsh、expl completion powershell は、�
 | --output \<file\>, -o \<file\> | データのエクスポートやチャート画像など、ファイルの結果の保存先です。--json と一緒に使うと、保存したファイルのパス（saved）とサイズ（bytes）を JSON で出力します。--output - は JSON ではなく、ファイルの中身そのものを標準出力に書きます。 |
 | --no-browser | サインインのときに、ブラウザを開きません。 |
 
-- [サインインと状態](login_ja.md) - --no-browser と --with-token の使い方です。
-- [API キー](token_ja.md) - API キーと EXPL_SERVER_TOKEN の使い方です。
+--no-browser と --with-token の使い方は[サインインと状態](login_ja.md)、API キーと EXPL_SERVER_TOKEN の使い方は[API キー](token_ja.md)を参照してください。

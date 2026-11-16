@@ -34,4 +34,4 @@ search and fetch take no verb: expl server search \<query\> and expl server fetc
 
 Each command also has the name of the tool behind it, the one an MCP client sees. expl server call \<tool_name\> runs a command by that name, for example expl server call dataframe_preview \<id\>.
 
-- [All commands](commands.md) - Find every command by purpose.
+To find every command by purpose, see [All commands](commands.md).

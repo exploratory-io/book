@@ -14,9 +14,7 @@ AI エージェントが expl server を実行する前に知っておくこと�
 6. CI では、環境変数 EXPL_SERVER_TOKEN の API キーでサインインします。
 7. エラーのメッセージに chart_query のようなツール名が出たら、expl server tools describe \<tool_name\> で、そのツールに当たるコマンドを確認します。
 
-- [コマンドを調べる](../tools_ja.md) - コマンドの一覧と説明を表示します。
-- [終了コード](../exit-codes_ja.md) - 終了コードの一覧です。
-- [自動処理](automation_ja.md) - CI で API キーを使います。
+コマンドの一覧と説明は[コマンドを調べる](../tools_ja.md)、終了コードの一覧は[終了コード](../exit-codes_ja.md)、CI での API キーの使い方は[自動処理](automation_ja.md)を参照してください。
 
 <a id="choose"></a>
 
@@ -29,5 +27,4 @@ MCP は、AI アプリが外部のサービスに接続するための共通の�
 | スクリプト、CI、シェルで実行されるエージェント | expl |
 | MCP を使用するエージェント | MCP Server（Exploratory のプラグイン） |
 
-- [MCP Server](../../../mcp/server/server_ja.md) - AI アプリから、パブリッシュされたコンテンツを読みます。
-- [Desktop で使う](../../desktop/guides/agents_ja.md) - Exploratory Desktop のプロジェクトを扱う場合です。
+AI アプリから、パブリッシュされたコンテンツを読む場合は[MCP Server](../../../mcp/server/server_ja.md)を、Exploratory Desktop のプロジェクトを扱う場合は[Desktop で使う](../../desktop/guides/agents_ja.md)を参照してください。

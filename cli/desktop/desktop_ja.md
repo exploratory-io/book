@@ -40,7 +40,7 @@ Desktop のバージョンと、サインイン中のユーザーを表示しま
 expl project list
 ```
 
-- [はじめる](quickstart_ja.md) - 最初のコマンドを順に実行します。
+最初のコマンドを順に実行する手順は、[はじめる](quickstart_ja.md)を参照してください。
 
 <a id="commands"></a>
 
@@ -57,7 +57,7 @@ expl project list
 | expl project use \<id\|name\> | 以後のコマンドの対象を決める |
 | expl project open \<id\> | プロジェクトを開く |
 
-- [よく使うコマンド](commands_ja.md) - データ、チャート、ノート、ダッシュボードのコマンドを含みます。
+データ、チャート、ノート、ダッシュボードのコマンドは、[よく使うコマンド](commands_ja.md)にあります。
 
 <a id="difference"></a>
 
@@ -67,7 +67,7 @@ Server のコマンド（expl server）は、パブリッシュされたコン�
 
 取り消しにくい操作は、実行の前に確認します。
 
-- [確認と時間のかかる操作](guides/confirmation_ja.md) - 確認のしかたと、待たずに済ませる方法です。
+確認のしかたと、待たずに済ませる方法は、[確認と時間のかかる操作](guides/confirmation_ja.md)を参照してください。
 
 <a id="records"></a>
 

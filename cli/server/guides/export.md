@@ -101,5 +101,4 @@ A message can name a tool, such as dataframe_get_schema. Run expl server tools d
 | SERVER_BUSY | Another export of yours is running, or you reached the hourly export limit. One export can run at a time per user. Try again in a few seconds; for the hourly limit, wait up to an hour. |
 | Run "expl server login". | Sign-in is missing, or the saved login or API key was rejected. Run expl server login. |
 
-- [dataframe export](../commands.md#dataframe-export) - Describes every flag.
-- [dataset query](../commands.md#dataset-query) - Describes how to filter and aggregate.
+Every flag is described in [dataframe export](../commands.md#dataframe-export), and how to filter and aggregate in [dataset query](../commands.md#dataset-query).

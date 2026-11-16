@@ -67,7 +67,7 @@ where expl
 
 Desktop に同梱されている expl は、Exploratory Desktop を更新すると更新されます。バージョンは expl --version で確認できます。npm でインストールした expl の更新は、[更新する](../server/install_ja.md#update)を参照してください。
 
-- [リリースノート](../../release-notes_ja.md) - バージョンごとの変更点を確認できます。
+バージョンごとの変更点は、[リリースノート](../../release-notes_ja.md)で確認できます。
 
 <a id="remove"></a>
 
@@ -78,4 +78,4 @@ Desktop に同梱されている expl は、Exploratory Desktop を更新する�
 | macOS | /usr/local/bin/expl、/usr/local/bin/exploratory、/usr/local/bin/exploratory-mcp を ls -l で確認し、Exploratory が追加したものだけを削除します（rm \<パス\>。管理者の権限が必要な場合は sudo を付けます）。ほかの場所から入った同名のコマンド（npm でインストールしたものなど）は、削除しません。許可を断った場合は、~/.local/bin にある同じ名前を確認して削除します。アプリを /Applications に置いたままにすると、次回の起動時に再び追加されます。 |
 | Windows | 「システム環境変数の編集」を開き、ユーザー環境変数の Path から \<インストール先\>\\cli を削除します。次回の起動時に再び追加されます。 |
 
-- [はじめる](quickstart_ja.md) - Desktop につなぎ、最初のコマンドを実行します。
+Desktop につなぎ、最初のコマンドを実行する手順は、[はじめる](quickstart_ja.md)を参照してください。

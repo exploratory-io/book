@@ -79,7 +79,7 @@ User: you@example.com
 Auth: API key "ci-nightly" saved by login --with-token, expires 2026-12-13
 ```
 
-- [API キー](token_ja.md) - キーの作り方と、安全な扱い方です。
+キーの作り方と安全な扱い方は、[API キー](token_ja.md)を参照してください。
 
 <a id="nobrowser"></a>
 
@@ -149,7 +149,7 @@ expl server が呼び出す操作について、Exploratory Server は次のも�
 - サーバーのログ: 操作の呼び出しごとの記録（メールアドレス、クライアント、結果、行数、処理時間）と、トークンの作成・削除。
 - 失敗した呼び出しのエラー: 時刻、呼び出した操作、エラーの内容を、製品の改善のために収集します。
 
-- [データと権限](../../mcp/server/data_ja.md) - MCP Server のページでも、同じ内容を説明しています。
+同じ内容は、MCP Server の[データと権限](../../mcp/server/data_ja.md)のページでも説明しています。
 
 <a id="trouble"></a>
 
@@ -160,9 +160,11 @@ expl server が呼び出す操作について、Exploratory Server は次のも�
 | Run "expl server login". | サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。 |
 | The redirect URL has no authorization code. | --no-browser のとき、最初に表示された URL を貼り付けています。移動先の、http://127.0.0.1/callback?code= で始まる URL を貼り付けてください。 |
 | 貼り付けたあとに失敗する | コードは一度しか使えず、60 秒で切れます。最初からやり直します。 |
-| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | キーが間違っているか、期限切れか、取り消されたか、持ち主が API キーを使えなくなっています。終了コード 4 です。新しい API キーを作って、EXPL_SERVER_TOKEN に設定するか、expl server login --with-token を実行します。 環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。 |
-| API keys are disabled by your administrator. | 管理者が API キーをオフにしています。終了コード 4 です。管理者に確認するか、expl server login でサインインします。 環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。 |
+| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | キーが間違っているか、期限切れか、取り消されたか、持ち主が API キーを使えなくなっています。終了コード 4 です。新しい API キーを作って、EXPL_SERVER_TOKEN に設定するか、expl server login --with-token を実行します。 |
+| API keys are disabled by your administrator. | 管理者が API キーをオフにしています。終了コード 4 です。管理者に確認するか、expl server login でサインインします。 |
 | This IP address is not allowed for API keys. | 管理者が、API キーを使える IP アドレスを限定しています。終了コード 4 です。許可されたアドレスから実行するか、管理者に確認します。 |
 | Too many failed API key attempts. Try again later. | このアドレスから、拒否されたキーが短い時間に何度も送られました。キーを直して、しばらくしてからやり直します。 |
-| --token was removed. … | 環境変数 EXPL_SERVER_TOKEN を使うか、expl server login --with-token を実行します。終了コード 2 です。 環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。 |
+| --token was removed. … | 環境変数 EXPL_SERVER_TOKEN を使うか、expl server login --with-token を実行します。終了コード 2 です。 |
 | Paste an API key (it starts with exp_pat_) when … | 渡された値が API キーではありません。アカウント設定 \> API キーで、キー全体をコピーします。終了コード 2 です。 |
+
+環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。

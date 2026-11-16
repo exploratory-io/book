@@ -952,9 +952,7 @@ expl server dataframe export <dataset_id> [flags]
 
 ### JSON inputs
 
-See dataset query for the JSON structure of filters, metrics and sort.
-
-- [JSON structure](#dataset-query-json-arguments) - Check input keys and placeholder values.
+See [dataset query](#dataset-query-json-arguments) for the JSON structure of filters, metrics and sort.
 
 <a id="dataframe-export-examples"></a>
 
@@ -1639,9 +1637,7 @@ expl server chart query [flags]
 
 ### JSON inputs
 
-See dataset query for the JSON structure of filters, metrics and sort. Chart queries do not use the join parameters.
-
-- [JSON structure](#dataset-query-json-arguments) - Check input keys and placeholder values.
+See [dataset query](#dataset-query-json-arguments) for the JSON structure of filters, metrics and sort. Chart queries do not use the join parameters.
 
 <a id="chart-query-examples"></a>
 

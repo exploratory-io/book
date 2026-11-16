@@ -111,7 +111,7 @@ expl --version
 
 \<version\> は、使いたいバージョンに置き換えます。Exploratory Desktop に同梱されている expl は、Exploratory Desktop を更新すると更新されます。
 
-- [リリースノート](../../release-notes_ja.md) - バージョンごとの変更点を確認できます。
+バージョンごとの変更点は、[リリースノート](../../release-notes_ja.md)で確認できます。
 
 <a id="remove"></a>
 
@@ -125,5 +125,4 @@ npm uninstall -g @exploratory/cli
 
 Exploratory Desktop に同梱されている expl は、Desktop のインストールのページの[アンインストール](../desktop/install_ja.md#remove)に従います。同名のほかのコマンドを削除しないように、先に各パスを確認してください。アプリが確認を求めたときに断らない限り、次回の起動時に再び追加されます。
 
-- [クイックスタート](quickstart_ja.md) - サインインして、最初の結果を取得します。
-- [Desktop を使う](../desktop/desktop_ja.md) - 手元の Desktop を操作します。
+サインインして最初の結果を取得する手順は[クイックスタート](quickstart_ja.md)、手元の Desktop を操作する場合は[Desktop を使う](../desktop/desktop_ja.md)を参照してください。

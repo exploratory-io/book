@@ -37,4 +37,4 @@ The code at the end of an exit code 4 message tells what to do.
 | CHANNEL_DISABLED | In System Settings > MCP / CLI, turn on the switch on the CLI card and choose Save. |
 | PERMISSION_DENIED | Desktop: this connection is not allowed to perform that operation. For an operation that creates, changes or deletes content, check that Allow create, edit and delete is turned on in System Settings > MCP / CLI. Server: an administrator turned API keys off or limits them to certain IP addresses. Ask your administrator, or sign in with expl server login. |
 
-- [Troubleshooting](troubleshooting.md) - Find a fix by symptom.
+To find a fix by symptom, see [Troubleshooting](troubleshooting.md).

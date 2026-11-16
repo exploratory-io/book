@@ -67,7 +67,7 @@ where expl
 
 The expl that comes with Desktop is updated when you update Exploratory Desktop. Run expl --version to check the version. To update an npm copy, see [Update](../server/install.md#update).
 
-- [Release notes](../../release-note.md) - See what changed in each version.
+For what changed in each version, see the [release notes](../../release-note.md).
 
 <a id="remove"></a>
 
@@ -78,4 +78,4 @@ The expl that comes with Desktop is updated when you update Exploratory Desktop.
 | macOS | Run ls -l on /usr/local/bin/expl, /usr/local/bin/exploratory and /usr/local/bin/exploratory-mcp, and delete only the ones that Exploratory added (rm \<path\>; add sudo if administrator rights are needed). A command with the same name that came from somewhere else, such as an npm copy, stays. If you declined the permission, check and delete the same names in ~/.local/bin instead. If the app stays in /Applications, it is installed again at the next start. |
 | Windows | Open "Edit the system environment variables" and remove \<install folder\>\\cli from Path in the user variables. It is added again at the next start. |
 
-- [Quickstart](quickstart.md) - Connect to Desktop and run your first commands.
+To connect to Desktop and run your first commands, see [Quickstart](quickstart.md).

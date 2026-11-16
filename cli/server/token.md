@@ -48,7 +48,7 @@ If you lose a key, choose Regenerate to get a new value. The old value stops wor
 
 Save the key with expl server login --with-token, or set the environment variable EXPL_SERVER_TOKEN, which is used first. The order and how to switch are on [Sign-in and status](login.md#apikey). --token was removed; passing it exits with code 2.
 
-- [Automation](guides/automation.md) - How to use it in GitHub Actions.
+For how to use it in GitHub Actions, see [Automation](guides/automation.md).
 
 <a id="cli"></a>
 
@@ -129,6 +129,4 @@ On on-premises and Hosted servers, administrators can do the following in the ad
 
 ## What is recorded
 
-API keys are stored as hashes, with the creation time, expiry and last use. The other records are described on the MCP Server page.
-
-- [Data and permissions](../../mcp/server/data.md) - Describes what Exploratory records.
+API keys are stored as hashes, with the creation time, expiry and last use. The other records are described on the [Data and permissions](../../mcp/server/data.md) page of MCP Server.

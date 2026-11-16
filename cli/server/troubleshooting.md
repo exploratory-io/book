@@ -30,7 +30,7 @@ Ask your IT administrator to allow communication with exploratory.io. For an on-
 | npm install -g stops with EEXIST | Do not run it again with --force: that replaces the expl that comes with Desktop. |
 | You do not know which expl runs | Run which -a expl (where expl on Windows) to see every copy. |
 
-- [Installation](install.md) - How to check when two copies are installed.
+For how to check when two copies are installed, see [Installation](install.md).
 
 <a id="signin"></a>
 
@@ -39,14 +39,16 @@ Ask your IT administrator to allow communication with exploratory.io. For an on-
 | What you see | What to do |
 | --- | --- |
 | Run "expl server login". | Sign-in is missing, or the saved login was rejected. Run expl server login. |
-| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked. Create a new API key, then set EXPL_SERVER_TOKEN or run expl server login --with-token. Exit code 4. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
-| API keys are disabled by your administrator. / This IP address is not allowed for API keys. | An administrator turned API keys off or limits them to certain IP addresses. Ask your administrator, or sign in with expl server login. Exit code 4. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
-| --token was removed. … | Set EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login. |
+| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked. Create a new API key, then set EXPL_SERVER_TOKEN or run expl server login --with-token. Exit code 4. |
+| API keys are disabled by your administrator. / This IP address is not allowed for API keys. | An administrator turned API keys off or limits them to certain IP addresses. Ask your administrator, or sign in with expl server login. Exit code 4. |
+| --token was removed. … | Set EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. |
 | Too many failed API key attempts. Try again later. | Many refused keys came from this address in a short time. Fix the key and try again later. |
 | The redirect URL has no authorization code. | With --no-browser, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
 | Exit code 4 (Desktop) | See the code at the end of the message in [Exit codes](exit-codes.md#action): NOT_SIGNED_IN, UNAUTHORIZED, PAIRING_REQUIRED, CHANNEL_DISABLED or PERMISSION_DENIED. |
 
-- [API keys](token.md) - Create, pass and revoke an API key.
+To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login.
+
+For how to create, pass and revoke an API key, see [API keys](token.md).
 
 <a id="network"></a>
 
@@ -79,4 +81,4 @@ Ask your IT administrator to allow communication with exploratory.io. For an on-
 | DATA_EGRESS_LIMIT | The publisher does not allow downloading this data as a file. Use fetch or dataframe get-schema for what the publisher shares. |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | In sort, name the output column with field. |
 
-- [Query data](guides/query-data.md) - How to write the JSON arguments.
+For how to write the JSON arguments, see [Query data](guides/query-data.md#json).

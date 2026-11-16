@@ -13,8 +13,7 @@ What an AI agent should know before it runs expl. An agent that can run shell co
 5. Outside a terminal, an operation that is hard to undo does nothing without --yes (exit code 2). Ask the user before you add --yes, and add it only for an operation the user has decided to run.
 6. When an error message names a tool, such as get_data_frame, run expl tools describe \<tool_name\> to see the command for that tool.
 
-- [Exit codes](../exit-codes.md) - The list of exit codes.
-- [Confirmation and long-running operations](confirmation.md) - What --yes does.
+For the list of exit codes, see [Exit codes](../exit-codes.md). For what --yes does, see [Confirmation and long-running operations](confirmation.md).
 
 <a id="other"></a>
 

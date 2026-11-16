@@ -81,4 +81,4 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 
 Every command is listed by expl tools list. For the generated commands, such as those for data, charts, notes and dashboards, the arguments are shown by expl \<command\> --help. For project use, tools describe, call and lang, see how they are written in this table ([Global flags](global-flags.md)).
 
-- [Server commands](../server/commands.md) - Commands that read content on exploratory.io.
+For the commands that read content on exploratory.io, see [Server commands](../server/commands.md).

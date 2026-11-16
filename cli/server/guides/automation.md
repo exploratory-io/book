@@ -10,7 +10,7 @@ CI is a system that runs steps automatically when code changes. No one can sign 
 
 Store the key as a secret in your CI (a feature that keeps values hidden). Do not write it in a script, and do not print it to the screen or to logs. A key expires; create a new one and replace the secret before then.
 
-- [API keys](../token.md) - How to create a key and keep it safe.
+For how to create a key and keep it safe, see [API keys](../token.md).
 
 <a id="pass"></a>
 
@@ -45,7 +45,7 @@ A script can tell success from failure by the exit code. These two are common in
 | 3 | The server cannot be reached (network, an HTML error page and so on) | Check the network and run it again. |
 | 4 | Not signed in, or the API key was rejected | Check that the key is correct, has not expired and has not been revoked. |
 
-- [Exit codes](../exit-codes.md) - Describes every exit code.
+Every exit code is described in [Exit codes](../exit-codes.md).
 
 <a id="revoke"></a>
 
