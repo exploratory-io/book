@@ -6,7 +6,7 @@ Run expl server from scripts and CI without anyone signing in through a browser,
 
 ## Create an API key
 
-CI is a system that runs steps automatically when code changes. No one can sign in through a browser there, so you give it an API key (a string that lets expl read Exploratory as you). Create one in Account Settings \> API Keys. Choose a name that says where it is used, such as ci-nightly, and an expiry; the default is 30 days. The key is shown only once.
+CI is a system that runs steps automatically when code changes. No one can sign in through a browser there, so you give it an API key. Create one as described on the [API keys](../token.md#create) page.
 
 Store the key as a secret in your CI (a feature that keeps values hidden). Do not write it in a script, and do not print it to the screen or to logs. A key expires; create a new one and replace the secret before then.
 
@@ -16,7 +16,7 @@ Store the key as a secret in your CI (a feature that keeps values hidden). Do no
 
 ## Pass the key
 
-Pass the key with the environment variable EXPL_SERVER_TOKEN. It is used before a login saved on the machine. --token was removed. To use another server, set EXPL_SERVER_URL.
+Pass the key with the environment variable EXPL_SERVER_TOKEN. For the order against a saved login, see [Sign-in and status](../login.md#apikey). To use another server, set EXPL_SERVER_URL.
 
 <a id="run"></a>
 
@@ -51,6 +51,6 @@ A script can tell success from failure by the exit code. These two are common in
 
 ## Revoke the token
 
-Revoke the key when it leaks or when you no longer need it. Choose Revoke in Account Settings \> API Keys. After a browser login you can also run expl server token revoke \<name\>.
+Revoke a key that leaks or that you no longer need, as described in [API keys](../token.md#revoke).
 
 A call with a revoked or expired key exits with code 4.

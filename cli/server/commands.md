@@ -4,7 +4,7 @@ Choose a command by purpose. Open its name to see arguments and examples.
 
 How to read the usage lines: replace a \<value\> placeholder with your own value; an item in \[brackets\] can be left out. Write a boolean as --flag or --no-flag. To give a list of values, repeat the flag, for example --tables summary --tables table. The JSON examples are written for bash; on Windows you can also pass a JSON file with --input.
 
-The commands for signing in and managing the connection are on their own pages: [Sign-in and status](login.md) (login, logout, status), [API keys](token.md) (token), [Inspect commands](tools.md) (tools list, tools describe) and [Skills](skill.md) (skill).
+The commands for signing in and managing the connection are on their own pages: [Sign-in and status](login.md) (login, logout, status), [API keys](token.md) (token) and [Inspect commands](tools.md) (tools list, tools describe). expl server skill prints a description for AI agents in the form of a SKILL.md file.
 
 <a id="commands-search"></a>
 
@@ -50,6 +50,30 @@ The commands for signing in and managing the connection are on their own pages: 
 ## expl server search
 
 Search the content you can view by title, description and tags. Without search words, list items newest first.
+
+<a id="search-usage"></a>
+
+### Usage
+
+```text
+expl server search [<query>] [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="search-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--query` | string |  | Search words, written right after the command or passed with --query. Matches titles, descriptions and tags. Empty (or \*) lists everything in scope, newest first. |
+| `--type` | string |  | The type of content to search. Values: `all`, `note`, `dashboard`, `slide`, `chart`, `analytics`, `data` |
+| `--scope` | string |  | all: everything you can view. mine: items you own. shared: items shared with you. team: items of one team. Values: `all`, `mine`, `shared`, `team` |
+| `--team` | string | Required with --scope team | The team name. |
+| `--semantic` | boolean |  | Search by meaning instead of by keyword. |
+| `--limit` | integer |  | The maximum number of results, up to 50. |
+| `--offset` | integer |  | The number of results to skip. Use it to get the next page. |
 
 <a id="search-examples"></a>
 
@@ -147,41 +171,14 @@ The result below is trimmed to the first 2 items.
 }
 ```
 
-<a id="search-usage"></a>
-
-### Usage
-
-```text
-expl server search [<query>] [flags]
-```
-
-\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
-
-<a id="search-flags"></a>
-
-### Arguments and flags
-
-| Name | Type | Condition | Description |
-| --- | --- | --- | --- |
-| `--query` | string |  | Search words, written right after the command or passed with --query. Matches titles, descriptions and tags. Empty (or \*) lists everything in scope, newest first. |
-| `--type` | string |  | The type of content to search. Values: `all`, `note`, `dashboard`, `slide`, `chart`, `analytics`, `data` |
-| `--scope` | string |  | all: everything you can view. mine: items you own. shared: items shared with you. team: items of one team. Values: `all`, `mine`, `shared`, `team` |
-| `--team` | string | Required with --scope team | The team name. |
-| `--semantic` | boolean |  | Search by meaning instead of by keyword. |
-| `--limit` | integer |  | The maximum number of results, up to 50. |
-| `--offset` | integer |  | The number of results to skip. Use it to get the next page. |
-
+<a id="search-output"></a>
 <a id="search-paging"></a>
 
-### More results
-
-When has_more in the result is true, pass next_offset to --offset to get the next page.
-
-<a id="search-output"></a>
-
-### Output
+### Output and limits
 
 Results include the id and URL of each item. Pass an id to fetch or another command. Data items also list their columns (name and type) and row count. The default output is for people; --json prints JSON.
+
+When has_more in the result is true, pass next_offset to --offset to get the next page.
 
 <a id="search-trouble"></a>
 
@@ -192,11 +189,36 @@ Results include the id and URL of each item. Pass an id to fetch or another comm
 | Too big: expected number to be \<=50 at limit | Set --limit to 50 or less. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
+Related: [expl server fetch](#fetch), [expl server dataframe get-schema](#dataframe-get-schema)
+
 <a id="fetch"></a>
 
 ## expl server fetch
 
 Read one note, dashboard, slide or data item by its id.
+
+<a id="fetch-usage"></a>
+
+### Usage
+
+```text
+expl server fetch <id> [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="fetch-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--id` | string | Required | The id of the item, from a search result or an earlier fetch. Write it right after the command or pass it with --id. |
+| `--language` | string |  | The language of the data overview and column descriptions. By default it is the base language of the data. A text that does not exist in this language is returned in the other one and marked language_fallback. Values: `ja`, `en` |
+| `--section` | string |  | A heading id (for example s12) or the exact heading text from metadata.toc. Only for notes, dashboards and slides. |
+| `--cursor` | string |  | The marker for reading on in a long note. Pass the value of metadata.range.next_cursor from the previous result. |
+| `--query` | string |  | Words to find in the item, separated by spaces, up to 10. Paragraphs that match any word come first, ordered by how many words match, each labeled with its heading path. Use "..." for a phrase. Only the text written by the author is searched, not chart rows or analytics tables. |
+| `--include-toc` | boolean |  | Return the list of headings (metadata.toc). By default it is returned only when section, cursor and query are all omitted. Only for notes, dashboards and slides. |
 
 <a id="fetch-examples"></a>
 
@@ -319,40 +341,14 @@ The result below was run with --query "region" on the same note. Each paragraph 
 }
 ```
 
-<a id="fetch-usage"></a>
-
-### Usage
-
-```text
-expl server fetch <id> [flags]
-```
-
-\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
-
-<a id="fetch-flags"></a>
-
-### Arguments and flags
-
-| Name | Type | Condition | Description |
-| --- | --- | --- | --- |
-| `--id` | string | Required | The id of the item, from a search result or an earlier fetch. Write it right after the command or pass it with --id. |
-| `--language` | string |  | The language of the data overview and column descriptions. By default it is the base language of the data. A text that does not exist in this language is returned in the other one and marked language_fallback. Values: `ja`, `en` |
-| `--section` | string |  | A heading id (for example s12) or the exact heading text from metadata.toc. Only for notes, dashboards and slides. |
-| `--cursor` | string |  | The marker for reading on in a long note. Pass the value of metadata.range.next_cursor from the previous result. |
-| `--query` | string |  | Words to find in the item, separated by spaces, up to 10. Paragraphs that match any word come first, ordered by how many words match, each labeled with its heading path. Use "..." for a phrase. Only the text written by the author is searched, not chart rows or analytics tables. |
-| `--include-toc` | boolean |  | Return the list of headings (metadata.toc). By default it is returned only when section, cursor and query are all omitted. Only for notes, dashboards and slides. |
-
+<a id="fetch-output"></a>
 <a id="fetch-paging"></a>
 
-### More results
-
-For a long note, find a topic with --query or read one heading with --section. When more text follows, pass the value of metadata.range.next_cursor to --cursor. metadata.truncated is set only when more text follows.
-
-<a id="fetch-output"></a>
-
-### Output
+### Output and limits
 
 Notes, dashboards and slides come back as Markdown with their text, the first rows of each embedded chart and the explanation of each analytics. metadata.charts and metadata.blocks hold the names of charts and analytics. Data items include columns, the row count, sample rows and the update status.
+
+For a long note, find a topic with --query or read one heading with --section. When more text follows, pass the value of metadata.range.next_cursor to --cursor. metadata.truncated is set only when more text follows.
 
 <a id="fetch-trouble"></a>
 
@@ -364,11 +360,34 @@ Notes, dashboards and slides come back as Markdown with their text, the first ro
 | You do not know the name of a chart or analytics | Look at metadata.charts and metadata.blocks in the result. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
+Related: [expl server search](#search), [expl server chart get-data](#chart-get-data), [expl server analytics get-result](#analytics-get-result)
+
 <a id="dataframe-get-schema"></a>
 
 ## expl server dataframe get-schema
 
 Look up the columns of a data item: names, types, descriptions the publisher wrote, and the row count.
+
+<a id="dataframe-get-schema-usage"></a>
+
+### Usage
+
+```text
+expl server dataframe get-schema <id> [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="dataframe-get-schema-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--id` | string | Required | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --id. |
+| `--detail` | string |  | full: descriptions, statistics, semantics (what a row means, aggregation rules) and what dataset query supports. light: only each column's name and type, and the row count, in a smaller and faster result. Values: `full`, `light` |
+| `--language` | string |  | The language of the descriptions and definitions. By default it is the base language of the data. A text that does not exist in this language is returned in the other one and marked language_fallback. Values: `ja`, `en` |
+| `--include-unapproved` | boolean |  | Also return definitions the owner has not approved yet (drafts and AI suggestions). Only the owner of the data can use it. They are hints, not official definitions. |
 
 <a id="dataframe-get-schema-examples"></a>
 
@@ -508,38 +527,14 @@ The result below was run on the same data. Statistics, semantics and the list of
 }
 ```
 
-<a id="dataframe-get-schema-usage"></a>
-
-### Usage
-
-```text
-expl server dataframe get-schema <id> [flags]
-```
-
-\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
-
-<a id="dataframe-get-schema-flags"></a>
-
-### Arguments and flags
-
-| Name | Type | Condition | Description |
-| --- | --- | --- | --- |
-| `--id` | string | Required | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --id. |
-| `--detail` | string |  | full: descriptions, statistics, semantics (what a row means, aggregation rules) and what dataset query supports. light: only each column's name and type, and the row count, in a smaller and faster result. Values: `full`, `light` |
-| `--language` | string |  | The language of the descriptions and definitions. By default it is the base language of the data. A text that does not exist in this language is returned in the other one and marked language_fallback. Values: `ja`, `en` |
-| `--include-unapproved` | boolean |  | Also return definitions the owner has not approved yet (drafts and AI suggestions). Only the owner of the data can use it. They are hints, not official definitions. |
-
+<a id="dataframe-get-schema-output"></a>
 <a id="dataframe-get-schema-paging"></a>
 
-### More results
-
-There is no way to page through the result.
-
-<a id="dataframe-get-schema-output"></a>
-
-### Output
+### Output and limits
 
 The result includes the column names, types and the row count. With full it also includes the descriptions the publisher wrote, missing and unique counts, minimum and maximum, top values and the update status (when the data was last refreshed and whether it is fresh). When the owner has approved them, it includes semantics: what a row means, column roles, default aggregations and aggregation rules. Semantics is the official definition, so read it before you aggregate.
+
+There is no way to page through the result.
 
 <a id="dataframe-get-schema-trouble"></a>
 
@@ -550,11 +545,33 @@ The result includes the column names, types and the row count. With full it also
 | dataset query fails with DATASET_UNAVAILABLE | Run it with --detail full and check query.available in the result. Data with false cannot be queried on the server. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
+Related: [expl server dataframe preview](#dataframe-preview), [expl server dataset query](#dataset-query)
+
 <a id="dataframe-preview"></a>
 
 ## expl server dataframe preview
 
 Get the rows of a data item, page by page with offset and limit.
+
+<a id="dataframe-preview-usage"></a>
+
+### Usage
+
+```text
+expl server dataframe preview <id> [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="dataframe-preview-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--id` | string | Required | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --id. |
+| `--offset` | integer |  | The number of rows to skip, counted from 0. |
+| `--limit` | integer |  | The number of rows to return, up to 100. |
 
 <a id="dataframe-preview-examples"></a>
 
@@ -680,37 +697,14 @@ The result below is trimmed to the first 2 of the 100 rows.
 }
 ```
 
-<a id="dataframe-preview-usage"></a>
-
-### Usage
-
-```text
-expl server dataframe preview <id> [flags]
-```
-
-\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
-
-<a id="dataframe-preview-flags"></a>
-
-### Arguments and flags
-
-| Name | Type | Condition | Description |
-| --- | --- | --- | --- |
-| `--id` | string | Required | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --id. |
-| `--offset` | integer |  | The number of rows to skip, counted from 0. |
-| `--limit` | integer |  | The number of rows to return, up to 100. |
-
+<a id="dataframe-preview-output"></a>
 <a id="dataframe-preview-paging"></a>
 
-### More results
-
-Pass the number of rows you have already read to offset to read on. One call returns at most 100 rows.
-
-<a id="dataframe-preview-output"></a>
-
-### Output
+### Output and limits
 
 When the publisher included all data, every row can be read. Otherwise the rows come from the sample saved at publish time, so check is_sample and row_count. To compute totals or filter rows, use dataset query instead of reading every page.
+
+Pass the number of rows you have already read to offset to read on. One call returns at most 100 rows.
 
 <a id="dataframe-preview-trouble"></a>
 
@@ -721,67 +715,13 @@ When the publisher included all data, every row can be read. Otherwise the rows 
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
+Related: [expl server dataframe get-schema](#dataframe-get-schema), [expl server dataset query](#dataset-query)
+
 <a id="dataset-query"></a>
 
 ## expl server dataset query
 
 Filter and aggregate a data item on the server and return only the result. Check exact column names with search or dataframe get-schema.
-
-<a id="dataset-query-examples"></a>
-
-### Examples
-
-#### Count rows for each region
-
-**Terminal**
-
-```sh
-expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"count_rows","alias":"n"}]' --sort '[{"field":"n","direction":"desc"}]' --limit 5 --json
-```
-
-Replace \<dataset_id\> with the target id and region with a real column name. Wrap each JSON value in single quotes (').
-
-**Result**
-
-The result of running it on the Sales Orders data (id: hI6jK7lM8n). Long fields are left out and the layout is tidied.
-
-```text
-{
-  "dataset": { "id": "hI6jK7lM8n", "name": "Sales Orders", "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n" },
-  "columns": [ { "name": "region", "type": "string" }, { "name": "n", "type": "integer" } ],
-  "rows": [ ["Kanto", 7814], ["Kinki", 3890], ["Chubu", 3779], ["Kyushu-Okinawa", 2418], ["Tohoku", 1592] ],
-  "result": { "row_count": 5, "has_more": true },
-  "warnings": [ { "code": "RESULT_TRUNCATED", "message": "Additional rows exist. Refine the query." } ]
-}
-```
-
-The five regions with the most rows came back. The limit (--limit 5) cut the result, so result.has_more is true and a RESULT_TRUNCATED warning is attached. To see the other regions, raise --limit or narrow the query with a filter.
-
-#### Count all rows
-
-**Terminal**
-
-```sh
-expl server dataset query <dataset_id> --mode aggregate --metrics '[{"function":"count_rows","alias":"n"}]' --json
-```
-
-Without dimensions, one total row is returned.
-
-**Result**
-
-The result of running it on the Sales Orders data (id: hI6jK7lM8n). Long fields are left out and the layout is tidied.
-
-```text
-{
-  "dataset": { "id": "hI6jK7lM8n", "name": "Sales Orders", "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n" },
-  "columns": [ { "name": "n", "type": "integer" } ],
-  "rows": [ [23131] ],
-  "result": { "row_count": 1, "has_more": false },
-  "warnings": []
-}
-```
-
-The whole data has 23,131 rows.
 
 <a id="dataset-query-usage"></a>
 
@@ -875,17 +815,70 @@ column is the column name, operator is the comparison, and value is the comparis
 
 For joins, pass datasets instead of dataset_id. Match the aliases to datasets and use on for the corresponding key columns. Repeated keys on both sides can multiply rows; inspect keys before aggregating.
 
-<a id="dataset-query-paging"></a>
+<a id="dataset-query-examples"></a>
 
-### More results
+### Examples
 
-There is no paging. When has_more in the result is true, narrow the filters or aggregate. To get many rows, save them as a file with dataframe export.
+#### Count rows for each region
+
+**Terminal**
+
+```sh
+expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column":"region"}]' --metrics '[{"function":"count_rows","alias":"n"}]' --sort '[{"field":"n","direction":"desc"}]' --limit 5 --json
+```
+
+Replace \<dataset_id\> with the target id and region with a real column name. Wrap each JSON value in single quotes (').
+
+**Result**
+
+The result of running it on the Sales Orders data (id: hI6jK7lM8n). Long fields are left out and the layout is tidied.
+
+```text
+{
+  "dataset": { "id": "hI6jK7lM8n", "name": "Sales Orders", "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n" },
+  "columns": [ { "name": "region", "type": "string" }, { "name": "n", "type": "integer" } ],
+  "rows": [ ["Kanto", 7814], ["Kinki", 3890], ["Chubu", 3779], ["Kyushu-Okinawa", 2418], ["Tohoku", 1592] ],
+  "result": { "row_count": 5, "has_more": true },
+  "warnings": [ { "code": "RESULT_TRUNCATED", "message": "Additional rows exist. Refine the query." } ]
+}
+```
+
+The five regions with the most rows came back. The limit (--limit 5) cut the result, so result.has_more is true and a RESULT_TRUNCATED warning is attached. To see the other regions, raise --limit or narrow the query with a filter.
+
+#### Count all rows
+
+**Terminal**
+
+```sh
+expl server dataset query <dataset_id> --mode aggregate --metrics '[{"function":"count_rows","alias":"n"}]' --json
+```
+
+Without dimensions, one total row is returned.
+
+**Result**
+
+The result of running it on the Sales Orders data (id: hI6jK7lM8n). Long fields are left out and the layout is tidied.
+
+```text
+{
+  "dataset": { "id": "hI6jK7lM8n", "name": "Sales Orders", "url": "https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n" },
+  "columns": [ { "name": "n", "type": "integer" } ],
+  "rows": [ [23131] ],
+  "result": { "row_count": 1, "has_more": false },
+  "warnings": []
+}
+```
+
+The whole data has 23,131 rows.
 
 <a id="dataset-query-output"></a>
+<a id="dataset-query-paging"></a>
 
-### Output
+### Output and limits
 
 The result is exact and includes the data version (dataset.version) and update time (dataset.updated_at). Say which version of the data the numbers are based on. A join also returns the source data, where each output column comes from, and the row counts before and after each join.
+
+There is no paging. When has_more in the result is true, narrow the filters or aggregate. To get many rows, save them as a file with dataframe export.
 
 <a id="dataset-query-trouble"></a>
 
@@ -900,11 +893,47 @@ The result is exact and includes the data version (dataset.version) and update t
 | DATASET_UNAVAILABLE | This data was published without its full data, so it cannot be queried on the server. The publisher needs to republish it from the current Exploratory Desktop. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
+Related: [expl server dataframe get-schema](#dataframe-get-schema), [expl server dataframe export](#dataframe-export)
+
 <a id="dataframe-export"></a>
 
 ## expl server dataframe export
 
 Save the result of a query on a data item as a CSV or Parquet file and return a download link.
+
+<a id="dataframe-export-usage"></a>
+
+### Usage
+
+```text
+expl server dataframe export <dataset_id> [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="dataframe-export-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--dataset-id` | string | Required | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --dataset-id. |
+| `--format` | string |  | The file format. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Values: `csv`, `parquet` |
+| `--mode` | string | Required | rows: export the rows that match the filters. aggregate: export the result of grouping by dimensions and calculating metrics. Values: `rows`, `aggregate` |
+| `--columns` | scalarArray |  | Only in rows mode. 1 to 50 unique column names to export. Without it, every column is exported. |
+| `--filters` | json |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
+| `--dimensions` | json |  | Only in aggregate mode. 0 to 5 columns to group by. |
+| `--metrics` | json | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
+| `--sort` | json |  | The sort order, up to 3 entries. |
+| `--limit` | integer |  | The maximum number of rows to export. |
+
+<a id="dataframe-export-json-arguments"></a>
+
+### JSON inputs
+
+See dataset query for the JSON structure of filters, metrics and sort.
+
+- [JSON structure](#dataset-query-json-arguments) - Check input keys and placeholder values.
 
 <a id="dataframe-export-examples"></a>
 
@@ -952,51 +981,14 @@ The result below was run on the data Sales Orders (id hI6jK7lM8n). download_url 
 }
 ```
 
-<a id="dataframe-export-usage"></a>
-
-### Usage
-
-```text
-expl server dataframe export <dataset_id> [flags]
-```
-
-\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
-
-<a id="dataframe-export-flags"></a>
-
-### Arguments and flags
-
-| Name | Type | Condition | Description |
-| --- | --- | --- | --- |
-| `--dataset-id` | string | Required | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --dataset-id. |
-| `--format` | string |  | The file format. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Values: `csv`, `parquet` |
-| `--mode` | string | Required | rows: export the rows that match the filters. aggregate: export the result of grouping by dimensions and calculating metrics. Values: `rows`, `aggregate` |
-| `--columns` | scalarArray |  | Only in rows mode. 1 to 50 unique column names to export. Without it, every column is exported. |
-| `--filters` | json |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
-| `--dimensions` | json |  | Only in aggregate mode. 0 to 5 columns to group by. |
-| `--metrics` | json | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
-| `--sort` | json |  | The sort order, up to 3 entries. |
-| `--limit` | integer |  | The maximum number of rows to export. |
-
-<a id="dataframe-export-json-arguments"></a>
-
-### JSON inputs
-
-See dataset query for the JSON structure of filters, metrics and sort.
-
-- [JSON structure](#dataset-query-json-arguments) - Check input keys and placeholder values.
-
+<a id="dataframe-export-output"></a>
 <a id="dataframe-export-paging"></a>
 
-### More results
-
-There is no paging. Use this command when the result is too large for dataset query.
-
-<a id="dataframe-export-output"></a>
-
-### Output
+### Output and limits
 
 A download link that expires in 15 minutes is returned. The link works only for the same signed-in user. Use --output to choose where to save a file result.
+
+There is no paging. Use this command when the result is too large for dataset query.
 
 <a id="dataframe-export-trouble"></a>
 
@@ -1008,11 +1000,34 @@ A download link that expires in 15 minutes is returned. The link works only for 
 | SERVER_BUSY | Another export of yours is running, or you reached the hourly export limit. One export can run at a time per user. Try again in a few seconds; for the hourly limit, wait up to an hour. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
+Related: [expl server dataset query](#dataset-query), [expl server dataframe preview](#dataframe-preview)
+
 <a id="chart-get-data"></a>
 
 ## expl server chart get-data
 
 Get the data of a chart together with what the numbers mean.
+
+<a id="chart-get-data-usage"></a>
+
+### Usage
+
+```text
+expl server chart get-data <id> [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="chart-get-data-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--id` | string | Required | The id of the note, dashboard or slide that holds the chart, or of a chart published on its own. Write it right after the command or pass it with --id. |
+| `--chart` | string |  | The name of a chart inside a note, dashboard or slide. It is metadata.charts\[\].name in the result of fetch. |
+| `--offset` | integer |  | The number of rows to skip, counted from 0. |
+| `--limit` | integer |  | The number of rows to return, up to 100. |
 
 <a id="chart-get-data-examples"></a>
 
@@ -1127,38 +1142,14 @@ The result below was run on the chart kL8mN9oP (Sales by Region) in the dashboar
 }
 ```
 
-<a id="chart-get-data-usage"></a>
-
-### Usage
-
-```text
-expl server chart get-data <id> [flags]
-```
-
-\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
-
-<a id="chart-get-data-flags"></a>
-
-### Arguments and flags
-
-| Name | Type | Condition | Description |
-| --- | --- | --- | --- |
-| `--id` | string | Required | The id of the note, dashboard or slide that holds the chart, or of a chart published on its own. Write it right after the command or pass it with --id. |
-| `--chart` | string |  | The name of a chart inside a note, dashboard or slide. It is metadata.charts\[\].name in the result of fetch. |
-| `--offset` | integer |  | The number of rows to skip, counted from 0. |
-| `--limit` | integer |  | The number of rows to return, up to 100. |
-
+<a id="chart-get-data-output"></a>
 <a id="chart-get-data-paging"></a>
 
-### More results
+### Output and limits
+
+Besides the rows, the result explains the numbers: chart.encoding (column, aggregation and number format per shelf), chart.filters, chart.data_granularity (aggregated or row level), chart.unsupported (what cannot be returned) and context (publication, data time and parameter values). The numbers are the values as published; results for other parameter values in the browser are not available. A chart published on its own returns the first 100 rows of the data used to draw it, not aggregated values or the values of the whole chart, so do not add the rows up as a total.
 
 Pass the number of rows you have already read to offset to read on. One call returns at most 100 rows.
-
-<a id="chart-get-data-output"></a>
-
-### Output
-
-Besides the rows, the result explains the numbers: chart.encoding (column, aggregation and number format per shelf), chart.filters, chart.data_granularity (aggregated or row level), chart.unsupported (what cannot be returned) and context (publication, data time and parameter values). The numbers are the values as published; results for other parameter values in the browser are not available. A chart published on its own returns a sample of the rows used to draw it (up to 10,000), not aggregated values, so do not add the rows up as a total.
 
 <a id="chart-get-data-trouble"></a>
 
@@ -1170,11 +1161,32 @@ Besides the rows, the result explains the numbers: chart.encoding (column, aggre
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
+Related: [expl server chart query](#chart-query), [expl server chart get-image](#chart-get-image)
+
 <a id="chart-get-image"></a>
 
 ## expl server chart get-image
 
 Get a chart as a PNG image, to see its shape, trend and layout.
+
+<a id="chart-get-image-usage"></a>
+
+### Usage
+
+```text
+expl server chart get-image <id> [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="chart-get-image-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--id` | string | Required | The id of the note, dashboard or slide that holds the chart, or of a chart published on its own. Write it right after the command or pass it with --id. |
+| `--chart` | string |  | The name of a chart inside a note, dashboard or slide. It is metadata.charts\[\].name in the result of fetch. |
 
 <a id="chart-get-image-examples"></a>
 
@@ -1260,36 +1272,14 @@ Example of the output shape; values are illustrative. The example is for the cha
 }
 ```
 
-<a id="chart-get-image-usage"></a>
-
-### Usage
-
-```text
-expl server chart get-image <id> [flags]
-```
-
-\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
-
-<a id="chart-get-image-flags"></a>
-
-### Arguments and flags
-
-| Name | Type | Condition | Description |
-| --- | --- | --- | --- |
-| `--id` | string | Required | The id of the note, dashboard or slide that holds the chart, or of a chart published on its own. Write it right after the command or pass it with --id. |
-| `--chart` | string |  | The name of a chart inside a note, dashboard or slide. It is metadata.charts\[\].name in the result of fetch. |
-
+<a id="chart-get-image-output"></a>
 <a id="chart-get-image-paging"></a>
 
-### More results
-
-There is no paging.
-
-<a id="chart-get-image-output"></a>
-
-### Output
+### Output and limits
 
 The image is the one saved when the item was published; it is not drawn again, so it can be older than the data. Check result.image.may_be_stale. The image is saved on the computer that runs expl, and image_path in the result gives the location. Use --output to choose where to save it. Read exact numbers with chart get-data, not from the image.
+
+There is no paging.
 
 <a id="chart-get-image-trouble"></a>
 
@@ -1300,11 +1290,34 @@ The image is the one saved when the item was published; it is not drawn again, s
 | A may_be_stale warning appears | The image may be older than the latest data update. Check the latest numbers with chart get-data. The warning is printed to standard error. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
+Related: [expl server chart get-data](#chart-get-data)
+
 <a id="analytics-get-result"></a>
 
 ## expl server analytics get-result
 
 Get the result of an analytics (regression, correlation, chi-square test and so on) as structured data.
+
+<a id="analytics-get-result-usage"></a>
+
+### Usage
+
+```text
+expl server analytics get-result <id> [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="analytics-get-result-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--id` | string | Required | The id of the note, dashboard or slide that holds the analytics, or of an analytics published on its own. Write it right after the command or pass it with --id. |
+| `--analytics` | string |  | The name of an analytics inside a note, dashboard or slide. It is metadata.blocks\[\].name in the result of fetch. |
+| `--tables` | scalarArray |  | The ids of the tables to return (available_tables\[\].id). By default it returns the tables that answer the analysis. |
+| `--limit` | integer |  | The maximum number of rows per table, up to 100. |
 
 <a id="analytics-get-result-examples"></a>
 
@@ -1471,38 +1484,14 @@ The result below was run on the analytics Analytics 1 - Correlations (id Analyti
 }
 ```
 
-<a id="analytics-get-result-usage"></a>
-
-### Usage
-
-```text
-expl server analytics get-result <id> [flags]
-```
-
-\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
-
-<a id="analytics-get-result-flags"></a>
-
-### Arguments and flags
-
-| Name | Type | Condition | Description |
-| --- | --- | --- | --- |
-| `--id` | string | Required | The id of the note, dashboard or slide that holds the analytics, or of an analytics published on its own. Write it right after the command or pass it with --id. |
-| `--analytics` | string |  | The name of an analytics inside a note, dashboard or slide. It is metadata.blocks\[\].name in the result of fetch. |
-| `--tables` | scalarArray |  | The ids of the tables to return (available_tables\[\].id). By default it returns the tables that answer the analysis. |
-| `--limit` | integer |  | The maximum number of rows per table, up to 100. |
-
+<a id="analytics-get-result-output"></a>
 <a id="analytics-get-result-paging"></a>
 
-### More results
-
-Use --limit to cap the rows of each table. There is no way to page through the rest.
-
-<a id="analytics-get-result-output"></a>
-
-### Output
+### Output and limits
 
 The result holds the model definition (target, predictors, N), result tables with stable column ids, headline statistics split into training and test, the settings it ran with, and explanation texts marked as generated or AI-generated. Values are as displayed, and coefficients are unstandardized.
+
+Use --limit to cap the rows of each table. There is no way to page through the rest.
 
 <a id="analytics-get-result-trouble"></a>
 
@@ -1513,11 +1502,48 @@ The result holds the model definition (target, predictors, N), result tables wit
 | You do not know the name of the analytics | Look at metadata.blocks in the result of fetch. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
+Related: [expl server fetch](#fetch)
+
 <a id="chart-query"></a>
 
 ## expl server chart query
 
 Filter and aggregate the data of a chart in a note, dashboard or slide on the server and return only the result.
+
+<a id="chart-query-usage"></a>
+
+### Usage
+
+```text
+expl server chart query [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="chart-query-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--id` | string |  | The id of the note, dashboard or slide that holds the chart, from a search result or a fetch. |
+| `--chart` | string |  | The name of the chart: metadata.charts\[\].name in the result of fetch (letters, digits, _ and -). |
+| `--mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
+| `--columns` | scalarArray |  | Only in rows mode. 1 to 50 unique column names to return. |
+| `--filters` | json |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
+| `--dimensions` | json |  | Only in aggregate mode. 0 to 5 columns to group by. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
+| `--metrics` | json | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
+| `--sort` | json |  | The sort order, up to 3 entries. |
+| `--limit` | integer |  | The maximum number of result rows. rows: default 100, at most 1,000. aggregate: default 100, at most 500. There is no paging. |
+| `--queries` | json |  | Several independent queries in one call, up to 10. Each takes id, chart and the same fields as a single query. |
+
+<a id="chart-query-json-arguments"></a>
+
+### JSON inputs
+
+See dataset query for the JSON structure of filters, metrics and sort. Chart queries do not use the join parameters.
+
+- [JSON structure](#dataset-query-json-arguments) - Check input keys and placeholder values.
 
 <a id="chart-query-examples"></a>
 
@@ -1620,52 +1646,14 @@ The result below was run on the chart kL8mN9oP (Sales by Region) in the dashboar
 }
 ```
 
-<a id="chart-query-usage"></a>
-
-### Usage
-
-```text
-expl server chart query [flags]
-```
-
-\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
-
-<a id="chart-query-flags"></a>
-
-### Arguments and flags
-
-| Name | Type | Condition | Description |
-| --- | --- | --- | --- |
-| `--id` | string |  | The id of the note, dashboard or slide that holds the chart, from a search result or a fetch. |
-| `--chart` | string |  | The name of the chart: metadata.charts\[\].name in the result of fetch (letters, digits, _ and -). |
-| `--mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
-| `--columns` | scalarArray |  | Only in rows mode. 1 to 50 unique column names to return. |
-| `--filters` | json |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
-| `--dimensions` | json |  | Only in aggregate mode. 0 to 5 columns to group by. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
-| `--metrics` | json | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
-| `--sort` | json |  | The sort order, up to 3 entries. |
-| `--limit` | integer |  | The maximum number of result rows. rows: default 100, at most 1,000. aggregate: default 100, at most 500. There is no paging. |
-| `--queries` | json |  | Several independent queries in one call, up to 10. Each takes id, chart and the same fields as a single query. |
-
-<a id="chart-query-json-arguments"></a>
-
-### JSON inputs
-
-See dataset query for the JSON structure of filters, metrics and sort. Chart queries do not use the join parameters.
-
-- [JSON structure](#dataset-query-json-arguments) - Check input keys and placeholder values.
-
+<a id="chart-query-output"></a>
 <a id="chart-query-paging"></a>
 
-### More results
-
-There is no paging. When has_more in the result is true, narrow the filters or aggregate.
-
-<a id="chart-query-output"></a>
-
-### Output
+### Output and limits
 
 The table queried is the chart's table as published, with values the chart has already aggregated. Grand total and subtotal rows are not in the table; they come back in result.excluded_totals, so use them for overall values instead of adding up rows. Summing or averaging a column the chart already averaged, counted distinct or computed as a ratio carries the warning CHART_REAGGREGATION; then say so or use excluded_totals. When you report numbers, also say the chart's aggregation, chart.filters, context.parameters and context.data_as_of.
+
+There is no paging. When has_more in the result is true, narrow the filters or aggregate.
 
 <a id="chart-query-trouble"></a>
 
@@ -1676,11 +1664,31 @@ The table queried is the chart's table as published, with values the chart has a
 | CHART_REAGGREGATION | You are aggregating a column the chart has already aggregated. Mention the warning or use result.excluded_totals. |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
 
+Related: [expl server chart get-data](#chart-get-data), [expl server chart get-image](#chart-get-image)
+
 <a id="desktop-mcp-setup-guide"></a>
 
 ## expl server desktop mcp-setup-guide
 
 Return the steps and links for connecting an AI client to Exploratory Desktop.
+
+<a id="desktop-mcp-setup-guide-usage"></a>
+
+### Usage
+
+```text
+expl server desktop mcp-setup-guide [flags]
+```
+
+\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
+
+<a id="desktop-mcp-setup-guide-flags"></a>
+
+### Arguments and flags
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `--client` | string |  | The MCP client you use. Without it, the steps for all clients are returned. Values: `claude_code`, `codex`, `cursor`, `antigravity` |
 
 <a id="desktop-mcp-setup-guide-examples"></a>
 
@@ -1719,35 +1727,14 @@ Long output is trimmed. The result lists the requirements, the install commands 
 }
 ```
 
-<a id="desktop-mcp-setup-guide-usage"></a>
-
-### Usage
-
-```text
-expl server desktop mcp-setup-guide [flags]
-```
-
-\[ \] marks an optional argument; replace \< \> with your value. Flags are additional settings starting with --.
-
-<a id="desktop-mcp-setup-guide-flags"></a>
-
-### Arguments and flags
-
-| Name | Type | Condition | Description |
-| --- | --- | --- | --- |
-| `--client` | string |  | The MCP client you use. Without it, the steps for all clients are returned. Values: `claude_code`, `codex`, `cursor`, `antigravity` |
-
+<a id="desktop-mcp-setup-guide-output"></a>
 <a id="desktop-mcp-setup-guide-paging"></a>
 
-### More results
-
-There is no paging.
-
-<a id="desktop-mcp-setup-guide-output"></a>
-
-### Output
+### Output and limits
 
 It only returns steps and links. It does not install or run anything, and it does not operate Desktop.
+
+There is no paging.
 
 <a id="desktop-mcp-setup-guide-trouble"></a>
 
@@ -1756,3 +1743,5 @@ It only returns steps and links. It does not install or run anything, and it doe
 | What you see | What to do |
 | --- | --- |
 | Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+
+Related: [Sign-in and status](login.md)

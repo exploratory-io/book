@@ -2,6 +2,24 @@
 
 Find a fix by symptom.
 
+<a id="first"></a>
+
+## Check the state first
+
+Run expl server status. Exit code 0 from expl server tools list does not mean that the connection works (see [Inspect commands](tools.md#list)). To see what is sent and received, add --verbose; it prints to standard error. Tokens are never printed, but review the output before you paste it anywhere.
+
+<a id="contact"></a>
+
+## When you contact support
+
+Send these to support@exploratory.io: the output of expl --version, the command you ran, the exit code and the message. Hide any token or API key.
+
+<a id="company"></a>
+
+## When you cannot connect from a company network
+
+Ask your IT administrator to allow communication with exploratory.io. For an on-premises server, ask them to allow the URL of your own server.
+
 <a id="install"></a>
 
 ## The command is not found

@@ -2,6 +2,18 @@
 
 Find a fix by symptom.
 
+<a id="first"></a>
+
+## Check the state first
+
+Run expl status. Exit code 0 from expl tools list does not mean that Desktop is connected (see [Common commands](commands.md#cmd-check)). To see what is sent and received, add --verbose; it prints to standard error. Review the output before you paste it anywhere.
+
+<a id="contact"></a>
+
+## When you contact support
+
+Send these to support@exploratory.io: the output of expl --version, the command you ran, the exit code and the message. Hide any token or API key.
+
 <a id="symptoms"></a>
 
 ## Symptoms and fixes

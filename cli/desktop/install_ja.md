@@ -71,6 +71,8 @@ where expl
 
 Desktop に同梱されている expl は、Exploratory Desktop を更新すると更新されます。バージョンは expl --version で確認できます。npm でインストールした expl の更新は、[更新する](../server/install_ja.md#update)を参照してください。
 
+- [リリースノート](../../release-notes_ja.md) - バージョンごとの変更点を確認できます。
+
 <a id="remove"></a>
 
 ## アンインストール

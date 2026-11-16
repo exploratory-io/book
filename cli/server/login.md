@@ -6,6 +6,8 @@ Sign in with your browser, or with an API key (a string that lets expl read Expl
 
 ## Sign in
 
+If a person uses expl and has a browser, sign in with the browser. If there is no browser, or a script or CI runs expl, use an API key.
+
 ```sh
 expl server login
 ```

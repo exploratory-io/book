@@ -71,6 +71,8 @@ where expl
 
 The expl that comes with Desktop is updated when you update Exploratory Desktop. Run expl --version to check the version. To update an npm copy, see [Update](../server/install.md#update).
 
+- [Release notes](../../release-note.md) - See what changed in each version.
+
 <a id="remove"></a>
 
 ## Remove

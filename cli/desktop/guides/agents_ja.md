@@ -1,30 +1,20 @@
 # AI エージェントから使う
 
-シェルのコマンドを実行できる AI エージェントは、expl をそのまま使えます。MCP の登録は必要ありません。
+AI エージェントが expl を実行する前に知っておくことです。シェルのコマンドを実行できる AI エージェントは、expl をそのまま使えます。MCP の登録は必要ありません。
 
-<a id="skill"></a>
+<a id="use"></a>
 
-## スキルで教える
+## expl の使い方
 
-スキルは任意です。expl はスキルがなくても使えます。使い方は、expl --help と expl tools describe で確認できます。
+1. 最初に、接続を確かめます。expl status を実行します。expl tools list が終了コード 0 で終わっても、Desktop に接続できているとは限りません。
+2. コマンド名を推測せず、expl tools list --json で探します。1 つのコマンドの引数は、expl tools describe \<tool_name\> で確認します。
+3. --json を付けて、結果を標準出力から読みます。進捗、警告、確認は標準エラーに出るので、JSON は壊れません。
+4. 終了コードを確認します。3 は Desktop につながらない、4 は認証、承認、権限の問題です。
+5. ターミナル以外では、取り消しにくい操作は --yes がないと何も実行されず、終了コード 2 で終了します。--yes を付ける前に利用者に確認し、利用者が実行すると決めた操作にのみ付けます。
+6. エラーのメッセージに get_data_frame のようなツール名が出たら、expl tools describe \<tool_name\> で、そのツールに当たるコマンドを確認します。
 
-スキルは、AI エージェントに道具の使い方を教える説明ファイル（SKILL.md）です。expl skill は、Desktop 向けのスキルを出力します。Claude Code の場合は、次のとおりです。
-
-```sh
-mkdir -p ~/.claude/skills/exploratory-expl
-```
-
-```sh
-expl skill > ~/.claude/skills/exploratory-expl/SKILL.md
-```
-
-<a id="tips"></a>
-
-## エージェント向けのヒント
-
-- --json を付けて、終了コードを確認します。
-- ターミナル以外では、取り消しにくい操作は --yes がないと何も実行されず、終了コード 2 で終了します。--yes は、実行すると決めた操作にのみ付けます。
-- コマンド名を推測せず、expl tools list で、使えるものを確認します。
+- [終了コード](../exit-codes_ja.md) - 終了コードの一覧です。
+- [確認と時間のかかる操作](confirmation_ja.md) - --yes の働きを説明しています。
 
 <a id="other"></a>
 

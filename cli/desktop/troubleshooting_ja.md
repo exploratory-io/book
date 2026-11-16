@@ -2,6 +2,18 @@
 
 症状から対処を探します。
 
+<a id="first"></a>
+
+## まず状態を確かめる
+
+expl status を実行します。expl tools list が終了コード 0 で終わっても、Desktop に接続できているとは限りません（[よく使うコマンド](commands_ja.md#cmd-check)を参照）。送受信の内容を見るときは、--verbose を付けます。標準エラーに出力されます。貼り付ける前に、中身を確認してください。
+
+<a id="contact"></a>
+
+## 問い合わせるとき
+
+次の内容を support@exploratory.io へ送ってください。expl --version の出力、実行したコマンド、終了コード、メッセージです。トークンや API キーは伏せてください。
+
 <a id="symptoms"></a>
 
 ## 症状と対処

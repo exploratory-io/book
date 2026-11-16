@@ -4,7 +4,7 @@ Duplicate a dashboard with a different title. jq (a command that processes JSON)
 
 <a id="steps"></a>
 
-## Four steps
+## Three steps
 
 ### 1. Get the original dashboard
 
@@ -46,7 +46,9 @@ done
 
 The ids of the dashboards you created are saved in created.txt.
 
-### 4. Publish them
+<a id="publish"></a>
+
+## When you publish the copies
 
 ```sh
 while read id; do expl dashboard publish "$id" --yes; done < created.txt

@@ -115,6 +115,8 @@ expl --version
 
 \<version\> は、使いたいバージョンに置き換えます。Exploratory Desktop に同梱されている expl は、Exploratory Desktop を更新すると更新されます。
 
+- [リリースノート](../../release-notes_ja.md) - バージョンごとの変更点を確認できます。
+
 <a id="remove"></a>
 
 ## アンインストール

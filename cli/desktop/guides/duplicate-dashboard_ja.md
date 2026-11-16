@@ -4,7 +4,7 @@
 
 <a id="steps"></a>
 
-## 4 つの手順
+## 3 つの手順
 
 ### 1. 元のダッシュボードを取得する
 
@@ -46,7 +46,9 @@ done
 
 作ったダッシュボードの id が created.txt に残ります。
 
-### 4. パブリッシュする
+<a id="publish"></a>
+
+## 複製したあとにパブリッシュする場合
 
 ```sh
 while read id; do expl dashboard publish "$id" --yes; done < created.txt

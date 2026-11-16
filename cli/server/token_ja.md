@@ -46,24 +46,7 @@ exploratory.io のアカウント設定で、API キーを開きます。
 
 ## キーを expl に渡す
 
-渡し方は 2 つです。expl server login --with-token でキーを保存するか（「サインインと状態」を参照）、環境変数 EXPL_SERVER_TOKEN に設定します。両方あるときは、次の順に選ばれます。
-
-| 順 | 渡し方 |
-| --- | --- |
-| 1 | EXPL_SERVER_TOKEN |
-| 2 | 保存したログイン情報（ブラウザでのログイン、または --with-token で保存した API キー） |
-
---token は削除されました。指定すると、終了コード 2 で、次のメッセージを表示して終わります。
-
-```sh
-expl server status --token <key>
-```
-
-**実行結果**
-
-```text
-Error: --token was removed. Set EXPL_SERVER_TOKEN, or run "expl server login --with-token" (reads the API key from stdin).
-```
+expl server login --with-token でキーを保存するか、環境変数 EXPL_SERVER_TOKEN に設定します。環境変数が先に使われます。選ばれる順と切り替え方は、[サインインと状態](login_ja.md#apikey)にあります。--token は削除されました。指定すると、終了コード 2 で終わります。
 
 - [自動処理](guides/automation_ja.md) - GitHub Actions での使い方です。
 
@@ -119,7 +102,7 @@ Revoked ci.
 ## キーを安全に扱う
 
 - キーをコマンドラインやスクリプトに書かないでください。シェルの履歴に残り、プロセスの一覧からも見えます。expl server login --with-token（キーを表示せずに聞きます）か、環境変数を使います。
-- CI では、キーをシークレットに登録して、環境変数 EXPL_SERVER_TOKEN で渡します。画面やログに出さず、リポジトリにも入れないでください。
+- CI では、キーをシークレットとして渡し、ログに出さないようにします。[自動処理](guides/automation_ja.md#token)を参照してください。
 - キーには有効期限があります。期限の前に、7 日前と 1 日前にメールが届きます。ジョブが止まらないよう、それまでに新しいキーを作ってください。
 - キーが作成・再生成・取り消しされたときも、メールが届きます。心当たりがないときは、キーを取り消して、パスワードを変更してください。
 

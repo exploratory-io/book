@@ -115,6 +115,8 @@ expl --version
 
 Replace \<version\> with the version you want. The copy that comes with Desktop is updated when you update Exploratory Desktop.
 
+- [Release notes](../../release-note.md) - See what changed in each version.
+
 <a id="remove"></a>
 
 ## Remove

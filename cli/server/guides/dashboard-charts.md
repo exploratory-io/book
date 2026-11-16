@@ -4,7 +4,7 @@ For a chart in a published dashboard or note, get its numbers, aggregate them on
 
 <a id="steps"></a>
 
-## Four steps
+## Two steps
 
 ### 1. Find the chart name
 
@@ -156,7 +156,9 @@ When has_more is true, there are more rows. Pass the number of rows you have alr
 
 > If the first 5 rows are in rows, you have the numbers.
 
-### 3. Aggregate
+<a id="aggregate"></a>
+
+## Aggregate (optional)
 
 For totals, rankings or the rows that match a condition, use chart query. It takes the same inputs as dataset query.
 
@@ -254,7 +256,9 @@ When result.has_more is true, there are rows that are not in the result. There i
 
 > If the aggregated result is in rows, the query worked.
 
-### 4. See the shape of the chart
+<a id="image"></a>
+
+## See the shape of the chart (optional)
 
 To see the trend or layout of a chart, get its image.
 

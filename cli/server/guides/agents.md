@@ -1,6 +1,22 @@
 # AI agents
 
-An AI agent that can run shell commands can use expl directly. No MCP setup is needed.
+What an AI agent should know before it runs expl server. An agent that can run shell commands can use expl directly. No MCP setup is needed.
+
+<a id="use"></a>
+
+## How to use expl
+
+1. Check the connection first: run expl server status. Exit code 0 from expl server tools list does not mean the connection works.
+2. Find commands instead of guessing names: run expl server tools list --json, then expl server tools describe \<tool_name\> for the arguments of one command.
+3. Add --json and read the result from standard output. Progress and warnings go to standard error, so they do not break the JSON.
+4. Read the exit code. 3 means the server cannot be reached, and 4 means authentication or permission.
+5. Outside a terminal, an operation that is hard to undo does nothing without --yes (exit code 2). Ask the user before you add --yes, and add it only for an operation the user has decided to run.
+6. In CI, sign in with an API key through the environment variable EXPL_SERVER_TOKEN.
+7. When an error message names a tool, such as chart_query, run expl server tools describe \<tool_name\> to see the command for that tool.
+
+- [Inspect commands](../tools.md) - List and describe commands.
+- [Exit codes](../exit-codes.md) - The list of exit codes.
+- [Automation](automation.md) - Use an API key in CI.
 
 <a id="choose"></a>
 
@@ -14,22 +30,4 @@ MCP is a shared standard for AI apps to connect to outside services. You can use
 | An agent that works through MCP | MCP Server (the Exploratory plugin) |
 
 - [MCP Server](../../../mcp/server/server.md) - Read published content from an AI app.
-
-<a id="skill"></a>
-
-## Teach the agent with a skill
-
-Skills are optional. expl works without one: expl server --help and expl server tools describe show how to use it. A skill is a description file (SKILL.md) that teaches an AI agent how to use a tool, and expl server skill prints one for Exploratory Server. The steps to save it are on the Skills page. The skill for Desktop is described on the Desktop page.
-
-- [Skills](../skill.md) - Describes how to save the skill.
-- [Use with Desktop](../../desktop/guides/agents.md) - Describes how to save the skill printed by expl skill.
-
-<a id="tips"></a>
-
-## Tips for agents
-
-- Use --json and read the exit code.
-- Outside a terminal, an operation that is hard to undo does nothing without --yes (exit code 2). Add --yes only for an operation you have decided to run.
-- Run expl server tools list to see what is available instead of guessing command names.
-
-- [Exit codes](../exit-codes.md) - The list of exit codes.
+- [Use with Desktop](../../desktop/guides/agents.md) - For working with projects in Exploratory Desktop.

@@ -4,9 +4,7 @@ Save the result of a filter or aggregation on a data item as a CSV or Parquet fi
 
 <a id="steps"></a>
 
-## Two steps
-
-### 1. Save to a file
+## Save to a file
 
 dataframe export filters and aggregates with the same inputs as dataset query and saves the result as a file. Use it when the result is too large for dataset query.
 
@@ -58,7 +56,9 @@ When the file is saved, the result shows saved (the path) and bytes.
 
 > If result shows rows and expires_at, the file is saved on the server. If saved and bytes are shown, it is saved on your computer too.
 
-### 2. When downloading is not allowed
+<a id="egress"></a>
+
+## When downloading is not allowed
 
 For data whose publisher does not allow downloading it as a file, dataframe export fails with DATA_EGRESS_LIMIT.
 

@@ -46,24 +46,7 @@ If you lose a key, choose Regenerate to get a new value. The old value stops wor
 
 ## Give the key to expl
 
-Use one of two ways. Save the key with expl server login --with-token (see Sign-in and status), or set the environment variable EXPL_SERVER_TOKEN. When both exist, they are chosen in this order.
-
-| Order | Way |
-| --- | --- |
-| 1 | EXPL_SERVER_TOKEN |
-| 2 | The saved login (a browser login, or an API key saved by --with-token) |
-
---token was removed. Passing it ends with exit code 2 and this message.
-
-```sh
-expl server status --token <key>
-```
-
-**Result**
-
-```text
-Error: --token was removed. Set EXPL_SERVER_TOKEN, or run "expl server login --with-token" (reads the API key from stdin).
-```
+Save the key with expl server login --with-token, or set the environment variable EXPL_SERVER_TOKEN, which is used first. The order and how to switch are on [Sign-in and status](login.md#apikey). --token was removed; passing it exits with code 2.
 
 - [Automation](guides/automation.md) - How to use it in GitHub Actions.
 
@@ -119,7 +102,7 @@ Revoked ci.
 ## Keep the key safe
 
 - Do not write the key on the command line or in a script. It stays in your shell history and can be seen in the process list. Use expl server login --with-token (it asks without showing the key), or an environment variable.
-- In CI, store the key as a secret and pass it as the environment variable EXPL_SERVER_TOKEN. Do not print it to the screen or to logs, and do not commit it.
+- In CI, pass the key as a secret and keep it out of logs; see [Automation](guides/automation.md#token).
 - A key expires. You get an email before it does, 7 days and 1 day ahead. Create a new key before then so your jobs keep running.
 - You also get an email when a key is created, regenerated or revoked. If you do not expect it, revoke the key and change your password.
 

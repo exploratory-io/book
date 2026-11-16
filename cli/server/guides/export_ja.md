@@ -4,9 +4,7 @@
 
 <a id="steps"></a>
 
-## 2 つの手順
-
-### 1. ファイルとして保存する
+## ファイルとして保存する
 
 dataframe export は、dataset query と同じ指定で絞り込みや集計を行い、結果をファイルにします。結果が大きく、dataset query では取得しきれない場合に使用します。
 
@@ -58,7 +56,9 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --output rows.cs
 
 > result に rows と expires_at が表示されていれば、サーバー上にファイルができています。saved と bytes も表示されていれば、手元にも保存できています。
 
-### 2. ダウンロードが許可されていない場合
+<a id="egress"></a>
+
+## ダウンロードが許可されていない場合
 
 公開した人がファイルとしてのダウンロードを許可していないデータでは、dataframe export は DATA_EGRESS_LIMIT で失敗します。
 
