@@ -34,7 +34,9 @@ The first time you use it, Exploratory Desktop shows a screen that asks whether 
 
 ![The "An AI tool is asking for your approval" screen. It asks "Allow expl to connect to Exploratory? Only allow an app you started yourself." and has Allow and Don't allow buttons](images/en/pairing-dialog.png)
 
-expl waits up to 2 minutes for your answer and prints "Waiting for you to approve expl in Exploratory (a request is shown there)..." to standard error. When you allow it, the command continues. If no answer comes within 2 minutes, it stops with PAIRING_PENDING (exit code 1). Answer the request in Desktop and run the command again. If the command stopped before you answered, run expl status again.
+expl waits up to 2 minutes for your answer and prints "Waiting for you to approve expl in Exploratory (a request is shown there)..." to standard error. When you allow it, the command continues. If no answer comes within 2 minutes, it stops with PAIRING_PENDING (exit code 1). Answer the request in Desktop and run the command again.
+
+If you choose Don't allow, the command stops with PAIRING_REQUIRED (exit code 4). For 5 minutes after that, running the command again does not show the screen and is declined at once. Run it again after 5 minutes and allow it on the screen.
 
 ### 4. Choose a project
 
@@ -48,7 +50,13 @@ Lists the projects.
 expl project use "Sales Analysis"
 ```
 
-Replace Sales Analysis with the name of your project. Later commands work on this project.
+Replace Sales Analysis with the name of your project. Later commands work on this project. This command only saves the default project; it does not open the project in Desktop.
+
+If a later command stops with PROJECT_NOT_OPEN, the project is not open in Desktop. Open it with an id from expl project list.
+
+```sh
+expl project open <project_id>
+```
 
 ### 5. Look at the data
 
@@ -84,7 +92,9 @@ Replace d123 with the id you chose.
 
 - A command is refused: check that the CLI switch is on and saved (step 2).
 - The command stops with PAIRING_PENDING: you did not answer within 2 minutes. Answer the request in Desktop and run the command again (step 3).
-- expl tools list exits with code 0 but nothing works: that does not mean Desktop is connected. Run expl status.
+- The command stops with PAIRING_REQUIRED: you chose Don't allow. Run the command again after 5 minutes and allow it on the screen (step 3).
+- The command stops with PROJECT_NOT_OPEN: open the project with expl project open \<project_id\> (step 4).
+- expl tools list exits with code 0 but the other commands do not work: that does not mean Desktop is connected. Run expl status.
 - The dashboard list is empty: the project has no dashboard yet.
 
 See [Troubleshooting](troubleshooting.md) for more.

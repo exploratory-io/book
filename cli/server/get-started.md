@@ -11,10 +11,10 @@ Install expl, sign in, then search for published content and read it. Do the ste
 If you use Exploratory Desktop, expl is already installed. If not, install it with npm. Node.js 20 or later is required.
 
 ```sh
-npm install -g @exploratory/cli@<version>
+npm install -g @exploratory/cli
 ```
 
-Replace \<version\> with the version you want. Open a new terminal and check it.
+This installs the latest version. To pin a version, see [Installation](install.md#npm). Open a new terminal and check it.
 
 ```sh
 expl --version
@@ -77,7 +77,7 @@ Replace \<id\> with an id from the search result. --json prints the server's res
 }
 ```
 
-The result holds the text. For a note, dashboard or slide it can also hold the list of headings (metadata.toc), depending on its length and your options. When it is missing, get the heading ids with --query.
+The result holds the text. For a note, dashboard or slide it can also hold the list of headings (metadata.toc), depending on its length and your options. When it is missing, add --include-toc to return it, or get the heading ids with --query.
 
 ### 5. Aggregate (optional)
 
@@ -127,10 +127,10 @@ The result includes the data version and update time. Check which data the numbe
 
 - The search result is empty: nothing matched. It is not a sign-in error. Change the search words, or use --scope all.
 - You cannot open a browser: in a script or CI, where there is no browser, sign in with an API key instead: expl server login --with-token (see [API keys](token.md)). For a machine that cannot open a browser, see [Sign in](login.md#nobrowser).
-- You see Run "expl server login".: sign-in is missing, or the saved login was rejected. Run expl server login.
+- You see Run "expl server login".: you are not signed in, or the saved login was rejected. Run expl server login.
 - You see expl: command not found: open a new terminal and try again.
 - You do not know which id to use: use an id from the search result.
-- The list of headings (metadata.toc) is missing from a note: get the heading ids with --query.
+- The list of headings (metadata.toc) is missing from a note: add --include-toc, or get the heading ids with --query.
 
 See [Troubleshooting](troubleshooting.md) for more.
 

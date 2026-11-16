@@ -17,12 +17,12 @@
 | --verbose | 送受信した内容を標準エラーに出力します。トークンは出力しません。 | 同じです。 |
 | --input \<file\|-\> | 入力全体を、ファイルまたは標準入力の JSON で渡します。 | 同じです。 |
 | --output \<file\> | 画像の結果の保存先です。 | 下の表を参照してください。 |
-| --help, -h | ヘルプを表示します。 | ヘルプを表示します。組み込みのコマンド（expl server login、logout、status、token、skill）も同じです。 |
+| --help, -h | ヘルプを表示します。 | ヘルプを表示します。組み込みのコマンド（expl server login、logout、status、token、skill）でも使えます。 |
 | --version | バージョンを表示します。 | 同じです。 |
 
 --verbose の出力は、貼り付ける前に中身を確認してください。
 
---json は、expl server login、expl server logout、expl server skill、expl completion には効きません。常に文字で出力します。組み込みコマンドのうち expl server login、logout、status、skill は、未知のフラグや余分な引数があっても知らせません。expl server token と生成されたコマンドは、エラーにします（終了コード 2）。
+--json は、expl server login、expl server logout、expl server skill、expl completion には効きません。常にテキストで出力します。組み込みコマンドのうち expl server login、logout、status、skill は、未知のフラグや余分な引数があっても知らせません。expl server token と生成されたコマンドは、エラーにします（終了コード 2）。
 
 <a id="env"></a>
 
@@ -54,7 +54,7 @@ expl completion bash、expl completion zsh、expl completion powershell は、�
 | --- | --- |
 | --url \<url\> | 接続するサーバーです。 |
 | --with-token | expl server login と一緒に使います。API キーを読み取って（ターミナルでは表示せずに聞き、パイプでは標準入力から読みます）保存します。--token は削除されました。EXPL_SERVER_TOKEN を使います。 |
-| --output \<file\>, -o \<file\> | データのエクスポートやチャート画像など、ファイルの結果の保存先です。--json と一緒に使うと、保存したファイルのパス（saved）とサイズ（bytes）を JSON で出力します。--output - は JSON ではなく、ファイルの中身そのものを標準出力に書きます。 |
+| --output \<file\>, -o \<file\> | データの書き出しやチャート画像など、ファイルの結果の保存先です。--json と一緒に使うと、保存したファイルのパス（saved）とサイズ（bytes）を JSON で出力します。--output - は JSON ではなく、ファイルの中身そのものを標準出力に書きます。 |
 | --no-browser | サインインのときに、ブラウザを開きません。 |
 
 --no-browser と --with-token の使い方は[サインイン](login_ja.md)、API キーと EXPL_SERVER_TOKEN の使い方は[API キー](token_ja.md)を参照してください。

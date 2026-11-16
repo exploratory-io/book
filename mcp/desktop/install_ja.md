@@ -16,7 +16,7 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
 ![Exploratory Desktop の左下の自分の名前を選ぶと開くメニュー。①が自分の名前、②が「システム設定」](images/ja/open-system-settings.png)
 
 1. 左のメニューで、「MCP / CLI」を選びます。
-2. 「Exploratory Desktop プラグインのインストール」のカードを確かめます。
+2. 「Exploratory Desktop プラグインのインストール」のカードを探します。
 3. 使う AI ツールの行の「インストール」を選びます。
 
 ![システム設定の「MCP / CLI」にある、「Exploratory Desktop プラグインのインストール」のカード](images/ja/desktop-plugin-card.png)
@@ -35,10 +35,12 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
 
 保存しないと、「MCP」のスイッチと「作成、変更、削除を許可する」の設定が反映されません。
 
+<a id="check"></a>
+
 ### AI ツールで確かめる
 
 1. インストールが終わったら、その AI ツールを起動し直します。
-2. AI ツールが初めて接続すると、Desktop が許可するかどうかを聞きます。自分で起動したアプリだけ許可してください。
+2. AI ツールが初めて接続すると、Desktop に「AI ツールが許可を求めています」という画面が出ます。自分で起動したアプリだけ「許可する」を選んでください。「許可しない」を選んだときは、[うまくいかないとき](get-started_ja.md#trouble)を参照してください。
 3. Exploratory Desktop で、使うプロジェクトを開きます。
 4. AI ツールで、次のように頼みます。
 
@@ -46,11 +48,13 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
    開いている Exploratory のプロジェクトのデータフレームを一覧して
    ```
 
-   これは、読み取りだけの設定でも動きます。作成も試すときは、「作成、変更、削除を許可する」をオンにして保存してから、自分のデータの列を使った棒グラフなど、チャートを作るように頼みます。
+   これは、「作成、変更、削除を許可する」がオフでも動きます。作成も試すときは、「作成、変更、削除を許可する」をオンにして保存してから、自分のデータの列を使った棒グラフなど、チャートを作るように頼みます。
 
 5. 接続を確かめます。
    - Claude Code では、`/mcp` を開いて、exploratory-desktop が接続されていることを確認します。
    - Codex では、`codex mcp list` を実行して、exploratory-desktop が並んでいることを確認します。
+   - Antigravity では、アプリの Customizations > Installed に、プラグインが表示されていることを確認します。
+   - Cursor では、~/.cursor/mcp.json に exploratory-desktop が登録されていることを確認します。
 
 MCP がオフだと表示されたときは、システム設定に戻り、「MCP」のスイッチをオンにして「保存」を選んだかを確かめます。
 
@@ -65,7 +69,7 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 | Claude Code | Exploratory Desktop のプラグイン（スキルを含む） | 「インストール済み - v」とプラグインのバージョン。「インストール」の代わりに「再インストール」と「削除」 |
 | Codex | 同上 | 同上 |
 | Antigravity | 同上 | 同上 |
-| Cursor | ~/.cursor/mcp.json に exploratory-mcp を登録するだけです。スキルは入りません | 「インストール済み」だけで、バージョンは表示されません。ボタンは「再インストール」と「削除」 |
+| Cursor | ~/.cursor/mcp.json に exploratory-desktop の項目（コマンドは exploratory-mcp）を登録するだけです。スキルは入りません | 「インストール済み」だけで、バージョンは表示されません。ボタンは「再インストール」と「削除」 |
 
 どの AI ツールも、インストールのあとに起動し直します。
 
@@ -99,7 +103,7 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 
 ## 手作業でインストールする
 
-カードを使わないときの手順です。このプラグインは、公式のプラグイン一覧にはありません。リポジトリ exploratory-io/exploratory をマーケットプレイスとして足してから、プラグイン exploratory を入れます。コマンドは、ご自身でターミナルに打つか、AI ツールに頼んで実行してもらってください。
+カードを使わないときの手順です。このプラグインは、公式のプラグイン一覧にはありません。リポジトリ exploratory-io/exploratory をマーケットプレイスとして追加してから、プラグイン exploratory を入れます。コマンドは、ご自身でターミナルに打つか、AI ツールに頼んで実行してもらってください。
 
 **Claude Code**
 
@@ -108,9 +112,9 @@ claude plugin marketplace add exploratory-io/exploratory
 claude plugin install exploratory@exploratory
 ```
 
-Claude Code で /plugin を開き、マーケットプレイス exploratory-io/exploratory を足して、exploratory を選んでも入れられます。
+Claude Code で /plugin を開き、マーケットプレイス exploratory-io/exploratory を追加して、exploratory を選んでも入れられます。
 
-Claude アプリでは、設定 \> プラグインを開き、追加（Add marketplace）\> リポジトリから を選んで、exploratory-io/exploratory を入力し、exploratory を入れます。ターミナルで入れたプラグインも、そこに「ローカルにインストール済み」と表示されます。ローカルの MCP は、Cowork（このコンピューター上で動かしているとき）と Code タブで使えます。通常のチャットでは使えません。
+Claude アプリでは、設定 \> プラグインを開き、「Add marketplace」\>「From repository」を選んで、exploratory-io/exploratory を入力し、exploratory を入れます。ターミナルで入れたプラグインも、そこに「ローカルにインストール済み」と表示されます。ローカルの MCP は、Cowork（このコンピューター上で動かしているとき）と Code タブで使えます。通常のチャットでは使えません。
 
 **Codex**
 
@@ -142,7 +146,7 @@ Git が必要です。プラグインは、Antigravity のアプリの Customiza
 }
 ```
 
-スキルも使うときは、Cursor の CLI でプラグインのフォルダを読み込みます（Exploratory のセットアップ案内が Cursor 向けに示す手順です）。
+スキルも使うときは、Cursor の CLI でプラグインのフォルダを読み込みます（Server の MCP の desktop_mcp_setup_guide が Cursor 向けに返す手順と同じです）。
 
 ```sh
 git clone https://github.com/exploratory-io/exploratory
@@ -155,7 +159,7 @@ agent --plugin-dir ./exploratory/plugins/exploratory-desktop
 
 入れ方によって、操作が違います。
 
-- カードで入れたもの（Claude Code、Codex、Antigravity、Cursor）: カードの「再インストール」で、最新のプラグインに入れ直します（更新も、この操作で行います）。外すときは、同じカードの「削除」を選びます。Cursor も、カードで入れたものは、カードの「削除」で外せます。
+- カードで入れたもの（Claude Code、Codex、Antigravity、Cursor）: カードの「再インストール」で、最新のプラグインに入れ直します（更新も、この操作で行います）。外すときは、同じカードの「削除」を選びます。
 - 手作業で入れたもの: 次の表のコマンドで、更新と削除をします。
 
 | AI ツール | 更新 | 削除 |

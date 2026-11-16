@@ -8,7 +8,7 @@ Write a Markdown note that embeds charts and analytics, add to it later, and rea
 
 - Exploratory Desktop is running and the project is open ([Choose a project](projects.md)). Check with expl status.
 - You have the ids of the charts and analytics to embed (expl chart list \<dataframe_id\> and expl analytics list \<dataframe_id\>).
-- note add and note edit work only when Allow create, edit and delete is on in the system settings (MCP / CLI). They do not ask for confirmation; deleting a note does. See [Confirmation](confirmation.md).
+- note add and note edit work only when Allow create, edit and delete is on in System Settings > MCP / CLI. They do not ask for confirmation; deleting a note does. See [Confirmation and long-running operations](confirmation.md).
 
 <a id="steps"></a>
 
@@ -16,7 +16,7 @@ Write a Markdown note that embeds charts and analytics, add to it later, and rea
 
 ### 1. Write the body
 
-Write the body in a Markdown file, report.md. To embed a chart or an analytics, put a token on a line of its own, with a blank line before and after it.
+Write the body in a Markdown file, report.md. To embed a chart or an analytics, put an embed tag such as {{chart:\<chart_id\>}} on a line of its own, with a blank line before and after it.
 
 ```text
 # Sales Orders
@@ -28,7 +28,7 @@ Monthly sales rose through the year.
 {{analytics:<analytics_id>|<output_type>}}
 ```
 
-Replace \<chart_id\> and \<analytics_id\> with the ids you got when you created them, or from the list commands. {{analytics:\<analytics_id\>}} works without an output type only when the analytics has one output; otherwise give an output type from availableOutputTypes. Do not write the path of a chart yourself. A token written in the middle of a line, or inside a code block, is not embedded and stays as text. Under each figure, write what the figure shows with the numbers (read them with expl chart get-result).
+Replace \<chart_id\> and \<analytics_id\> with the ids you got when you created them, or from the list commands. {{analytics:\<analytics_id\>}} works without an output type only when the analytics has one output; otherwise give an output type from availableOutputTypes. Do not write the path of a chart yourself. An embed tag written in the middle of a line, or inside a code block, is not embedded and stays as text. Under each figure, write what the figure shows with the numbers (read them with expl chart get-result).
 
 ### 2. Create the note
 
@@ -66,7 +66,7 @@ get returns the Markdown body, the folder and the dependencies. get-image return
 | PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](../exit-codes.md). |
 | NOTE_TITLE_EXISTS | Use another title with note add, or edit the existing note with note edit. |
 | NOTE_NOT_FOUND | The id is wrong. Copy it from expl note list. |
-| A figure is blank | The token has a wrong id, or is not on a line of its own. |
+| A figure is blank | The embed tag has a wrong id, or is not on a line of its own. |
 
 For the arguments of any command, run expl \<command\> --help or expl tools describe "\<command\>".
 

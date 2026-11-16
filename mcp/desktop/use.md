@@ -10,7 +10,7 @@ What you can ask your AI to do in your local projects through the Desktop MCP. F
 | Create a chart | [Create charts](#charts) | create_chart, update_chart |
 | Create an analytics | [Create analytics](#analytics) | create_analytics |
 | Write a note | [Write notes](#notes) | create_note, update_note |
-| Create or copy a dashboard | [Create and duplicate dashboards](#dashboards) | create_dashboard, get_dashboard, validate_dashboard |
+| Create or duplicate a dashboard | [Create and duplicate dashboards](#dashboards) | create_dashboard, get_dashboard, validate_dashboard |
 | Publish | [Publish](#publish) | publish_note, publish_dashboard |
 | Add a filter that picks a value | [Other](#other) | save_parameter |
 
@@ -46,7 +46,7 @@ Imports data from a file or a database and creates a data source or a connection
 Make a month column from the order date, then total the sales by region.
 ```
 
-Wrangling such as creating, filtering, summarizing and joining columns is added as wrangling steps (create_wrangling_step). The steps line up in the steps on the right side of Exploratory Desktop.
+Wrangling such as creating columns, filtering, summarizing and joining is added as wrangling steps (create_wrangling_step). The steps appear in the step list on the right side of Exploratory Desktop.
 
 ```text
 Make a column that classifies the free-text reviews by topic.
@@ -66,7 +66,7 @@ In my open Exploratory project, build a monthly bar chart from the sales data.
 Change this chart to a scatter plot.
 ```
 
-Creating and changing charts (create_chart, update_chart). You can open the chart in Exploratory Desktop to check it.
+Creates and changes charts (create_chart, update_chart). You can open the chart in Exploratory Desktop to check it.
 
 <a id="analytics"></a>
 
@@ -80,7 +80,7 @@ Find out with a regression which factors affect sales.
 Split the customers into clusters.
 ```
 
-Creates analytics such as regression, tests and clustering (create_analytics). You can open the result as analytics in Exploratory Desktop.
+Creates analytics such as regression, tests and clustering (create_analytics). You can open the result in Exploratory Desktop.
 
 <a id="notes"></a>
 
@@ -116,7 +116,7 @@ Reads the definition of the original dashboard (get_dashboard), changes the titl
 Publish this note and this dashboard.
 ```
 
-Publishes a note or a dashboard to the server with a public URL (publish_note, publish_dashboard). You can also take a publication back (unpublish). Desktop asks you before it publishes or takes a publication back.
+Publishes a note or a dashboard to the server with a public URL (publish_note, publish_dashboard). You can also unpublish it (unpublish). Desktop asks you before it publishes or unpublishes.
 
 <a id="other"></a>
 

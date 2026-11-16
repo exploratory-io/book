@@ -4,9 +4,9 @@ expl は Exploratory Desktop に同梱されています。別途インストー
 
 <a id="enable"></a>
 
-## 最初に CLI を有効にする
+## 最初に CLI をオンにする
 
-Exploratory Desktop の CLI は、初期状態ではオフです。expl をインストールしていても、オンにするまで、Desktop は expl のコマンドを受け付けません。
+Exploratory Desktop の CLI は、初期状態ではオフです。expl が使える状態でも、オンにするまで、Desktop は expl のコマンドを受け付けません。
 
 1. Exploratory Desktop で、画面の左下にある自分の名前を選び、開いたメニューで「システム設定」を選びます（画面の画像 1 の ① と ②）。
 
@@ -21,11 +21,11 @@ Exploratory Desktop の CLI は、初期状態ではオフです。expl をイ�
 
 <a id="bundled"></a>
 
-## Exploratory Desktop に同梱されています
+## Exploratory Desktop への同梱
 
 Exploratory Desktop を起動すると、expl が PATH（コマンドを探すフォルダの一覧）に含まれていない場合は、自動的に追加されます。新しく開いたターミナルから使用できます。Node.js のインストールは必要ありません。
 
-macOS では、アプリが /Applications または ~/Applications にある場合に限り、追加されます。開発ビルドでは追加されません。
+macOS では、アプリが /Applications または ~/Applications にある場合に限り、追加されます。
 
 新しいターミナルを開いて、次を実行してください。
 

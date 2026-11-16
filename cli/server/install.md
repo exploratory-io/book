@@ -8,7 +8,7 @@ There are two ways to get expl. Pick one; you do not need both.
 
 > **Server only**
 >
-> This page covers Exploratory Server only.
+> This page is about installing expl to use with Exploratory Server. The copy that comes with Desktop can run expl server too.
 
 | Your situation | How |
 | --- | --- |
@@ -21,9 +21,9 @@ There are two ways to get expl. Pick one; you do not need both.
 
 expl is bundled with Exploratory Desktop, including expl server. You need no extra installation and no Node.js.
 
-When you start the production app, it puts expl on your PATH (the list of folders where commands are found) if it is not there yet. On macOS this happens only when the app is in /Applications or ~/Applications. It may ask for administrator permission. If you decline, it uses ~/.local/bin; add that folder to your PATH if needed.
+When you start Exploratory Desktop, it puts expl on your PATH (the list of folders where commands are found) if it is not there yet. On macOS this happens only when the app is in /Applications or ~/Applications. It may ask for administrator permission. If you decline, it uses ~/.local/bin; add that folder to your PATH if needed.
 
-An existing command called expl that is not Exploratory's is never replaced. A development build does not install it.
+An existing command called expl that is not Exploratory's is never replaced.
 
 Open a new terminal and run this.
 
@@ -51,7 +51,7 @@ Runs expl once without installing it. To run another command, replace --version 
 npm install -g @exploratory/cli@<version>
 ```
 
-Installs it globally. Replace \<version\> with the version you want.
+Installs it globally. Replace \<version\> with the version you want. Without @\<version\>, the latest version is installed. To find a version number, see the [release notes](../../release-note.md), or run npm view @exploratory/cli version, which prints the latest.
 
 Always pin the version in scripts. The package is @exploratory/cli and the command it installs is expl. Do not install a package named just expl: that name belongs to someone else.
 
@@ -123,6 +123,6 @@ Remove the npm copy with this command.
 npm uninstall -g @exploratory/cli
 ```
 
-For the copy that comes with Desktop, follow [Remove](../desktop/install.md#remove) on the Desktop installation page. Check each path first, so that you do not delete another command with the same name. Desktop adds it again at the next start unless you decline when it asks.
+For the copy that comes with Desktop, follow [Remove](../desktop/install.md#remove) on the Desktop installation page. Check each path first, so that you do not delete another command with the same name. Desktop adds it again at the next start while the app stays in /Applications.
 
 Next, [sign in](login.md), then get your first result in [Get started](get-started.md#steps). To work with Desktop on this computer, see [Use Desktop](../desktop/desktop.md).

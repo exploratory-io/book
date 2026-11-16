@@ -6,7 +6,7 @@ expl comes with Exploratory Desktop. There is nothing else to install.
 
 ## Turn on the CLI first
 
-In Exploratory Desktop, the CLI is off by default. Even when expl is installed, Desktop refuses its commands until you turn it on.
+In Exploratory Desktop, the CLI is off by default. Even when expl is on your PATH, Desktop refuses its commands until you turn it on.
 
 1. In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens (1 and 2 in picture 1).
 
@@ -23,9 +23,9 @@ In Exploratory Desktop, the CLI is off by default. Even when expl is installed, 
 
 ## Bundled with Desktop
 
-When you start the production app, it puts expl on your PATH (the list of folders where commands are found) if it is not there yet. Use it from a newly opened terminal. You do not need to install Node.js.
+When you start Exploratory Desktop, it puts expl on your PATH (the list of folders where commands are found) if it is not there yet. Use it from a newly opened terminal. You do not need to install Node.js.
 
-On macOS this happens only when the app is in /Applications or ~/Applications. A development build does not install it.
+On macOS this happens only when the app is in /Applications or ~/Applications.
 
 Open a new terminal and run this.
 

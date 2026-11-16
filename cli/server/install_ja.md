@@ -8,7 +8,7 @@ expl のインストール方法は 2 つあります。どちらか一方を実
 
 > **Server のみ**
 >
-> このページは Exploratory Server のみを対象にします。
+> このページは、Exploratory Server で使う expl のインストール方法です。Desktop に同梱されている expl でも、expl server を使えます。
 
 | 状況 | インストール方法 |
 | --- | --- |
@@ -23,7 +23,7 @@ expl は Exploratory Desktop に同梱されています。expl server も含ま
 
 Exploratory Desktop を起動すると、expl が PATH（コマンドを探すフォルダの一覧）に含まれていない場合は、自動的に追加されます。macOS では、アプリが /Applications または ~/Applications にある場合に限ります。管理者の許可を求められることがあります。許可しない場合は、~/.local/bin に追加されます。必要に応じて、そのフォルダを PATH に追加してください。
 
-Exploratory 以外の expl がすでにある場合は、置き換えません。開発ビルドでは追加されません。
+Exploratory 以外の expl がすでにある場合は、置き換えません。
 
 新しいターミナルを開いて、次を実行してください。
 
@@ -37,9 +37,9 @@ expl --version
 
 ## npm でインストールする場合
 
-Desktop を使用しない場合の方法です。Exploratory Server だけを使用する場合や、CI やサーバーで expl を実行する場合に使用します。Node.js 20 以上が必要です。npm は、Node.js に同梱されている、パッケージ管理コマンドです。
+Desktop を使用しない場合の方法です。Exploratory Server だけを使用する場合や、CI やサーバーで expl を実行する場合に使用します。Node.js 20 以降が必要です。npm は、Node.js に同梱されている、パッケージ管理コマンドです。
 
-npx は、パッケージをインストールせずに実行するコマンドです。Node.js 20 以上が必要です。Node.js のインストール方法は、[Node.js の公式サイト](https://nodejs.org/)を参照してください。
+npx は、パッケージをインストールせずに実行するコマンドです。Node.js 20 以降が必要です。Node.js のインストール方法は、[Node.js の公式サイト](https://nodejs.org/)を参照してください。
 
 ```sh
 npx -y @exploratory/cli --version
@@ -51,7 +51,7 @@ npx -y @exploratory/cli --version
 npm install -g @exploratory/cli@<version>
 ```
 
-グローバルにインストールします。\<version\> は、使用するバージョン番号に置き換えます。
+グローバルにインストールします。\<version\> は、使用するバージョン番号に置き換えます。@\<version\> を付けないと、最新のバージョンがインストールされます。バージョン番号は、[リリースノート](../../release-notes_ja.md)で調べるか、npm view @exploratory/cli version で調べます（最新のバージョンが表示されます）。
 
 スクリプトでは、必ずバージョンを固定してください。パッケージ名は @exploratory/cli で、インストールされるコマンドは expl です。名前が expl だけのパッケージはインストールしないでください。その名前は、別の開発者のものです。
 
@@ -123,6 +123,6 @@ npm でインストールした expl は、次のコマンドでアンインス�
 npm uninstall -g @exploratory/cli
 ```
 
-Exploratory Desktop に同梱されている expl は、Desktop のインストールのページの[アンインストール](../desktop/install_ja.md#remove)に従います。同名のほかのコマンドを削除しないように、先に各パスを確認してください。アプリが確認を求めたときに断らない限り、次回の起動時に再び追加されます。
+Exploratory Desktop に同梱されている expl は、Desktop のインストールのページの[アンインストール](../desktop/install_ja.md#remove)に従います。同名のほかのコマンドを削除しないように、先に各パスを確認してください。アプリを /Applications に置いたままにすると、次回の起動時に再び追加されます。
 
 次は、[サインイン](login_ja.md)してから、[はじめる](get-started_ja.md#steps)で最初の結果を取得します。手元の Desktop を操作する場合は[Desktop を使う](../desktop/desktop_ja.md)を参照してください。

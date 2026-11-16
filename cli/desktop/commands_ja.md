@@ -9,8 +9,8 @@
 | コマンド | できること |
 | --- | --- |
 | expl status | Desktop のバージョンとサインイン中のユーザー（--json を付けると、権限や道具の情報も出ます） |
-| expl tools list | 使えるコマンドの一覧（読むだけか、リスク） |
-| expl tools describe \<command\> | 引数、型、必須か、選べる値（2 語のコマンドは引用符で囲みます。例: expl tools describe "dashboard get"） |
+| expl tools list | 使えるコマンドの一覧（読み取り専用かどうかと、リスク） |
+| expl tools describe \<command\> | 引数、型、必須か、選べる値（2 語のコマンドは引用符で囲みます。例: expl tools describe "dashboard get"。get_data_frame のような道具名でも指定できます） |
 
 expl tools list が終了コード 0 で終わっても、Desktop に接続できているとは限りません。Desktop が起動していないときは、前回保存した一覧を表示し、保存がないときは空の一覧になります。接続は、expl status で確認します。
 
@@ -87,17 +87,17 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | コマンド | できること | 使える条件 |
 | --- | --- | --- |
 | expl project ask | 書き込みの前に、どのプロジェクトを使うかを利用者に確認します。 | いつでも |
-| expl environment get | 接続している Desktop の情報（アプリのバージョン、Agent API のバージョン、OS、ログイン中のユーザー、開いているプロジェクト）を返します。 | いつでも |
-| expl artifact get-lineage | チャート、アナリティクス、ノート、データフレームが、どのデータの取り込み元の上に作られているかを返します。 | いつでも |
+| expl environment get | 接続している Desktop の情報（アプリのバージョン、Agent API のバージョン、OS、サインイン中のユーザー、開いているプロジェクト）を返します。 | いつでも |
+| expl artifact get-lineage | チャート、アナリティクス、ノート、データフレームが、どのデータソースをもとに作られているかを返します。 | いつでも |
 | expl project get | プロジェクト 1 つの名前、説明、更新日時、開いているかどうかを読み取ります。 | いつでも |
 | expl project get-history | プロジェクトの変更履歴を読み取り、検索します。 | いつでも |
 | expl artifact list-created | この会話で AI が作成または変更したチャート、アナリティクス、ステップ、ブランチを一覧します。 | いつでも |
-| expl project list | この PC のプロジェクトを、新しい順に一覧します。 | いつでも |
+| expl project list | このコンピューターのプロジェクトを、新しい順に一覧します。 | いつでも |
 | expl project locate-published-source | 公開されたデータの取り込み元をたどります。 | いつでも |
 | expl project open | ローカルプロジェクトをウィンドウで開きます。すでに開いていればそのウィンドウを前面に出します。 | いつでも |
 | expl artifact search | 開いているプロジェクトから、名前、コメント、中身で成果物を検索します。 | いつでも |
 | expl project search | 手元のすべてのプロジェクトから、データフレーム、チャート、アナリティクス、ノートなどを検索します。 | いつでも |
-| expl project search-server | ログイン中の Exploratory サーバーで公開されているプロジェクトを一覧します。 | いつでも |
+| expl project search-server | サインインしている Exploratory サーバーで公開されているプロジェクトを一覧します。 | いつでも |
 | expl project close | 保存してから、プロジェクトのウィンドウを閉じます。 | 作成、変更、削除を許可したとき |
 | expl project import | 公開されているプロジェクトをダウンロードし、新しいローカルプロジェクトとして取り込みます。 | 作成、変更、削除を許可したとき |
 | expl project restore-history | プロジェクト全体を、変更履歴のある時点に戻します。 | 作成、変更、削除を許可したとき |
@@ -108,7 +108,7 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | コマンド | できること | 使える条件 |
 | --- | --- | --- |
 | expl dataframe get-schema | データフレームのステップ、列名、型、行数を読み取ります。 | いつでも |
-| expl dataframe step-diagram | データフレームのステップ図（Step Diagram）を返します。 | いつでも |
+| expl dataframe step-diagram | データフレームのステップダイアグラムを返します。 | いつでも |
 | expl dataframe get-summary-view | データフレームの Summary の表を返します。 | いつでも |
 | expl dataframe list | プロジェクトのデータフレームを一覧します。 | いつでも |
 | expl dataframe preview | データフレームの最後のステップの先頭の行を返します。 | いつでも |
@@ -149,11 +149,11 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | expl chart list-maps | 地図のチャートで使える地図を一覧します。 | いつでも |
 | expl chart list-settings | チャートの種類ごとに使える設定と関数を返します。 | いつでも |
 | expl chart list | データフレームのチャートを一覧します。 | いつでも |
-| expl chart copy | チャートを複製する、または別のデータフレームに貼り付けます。 | 作成、変更、削除を許可したとき |
+| expl chart copy | チャートを複製するか、別のデータフレームに貼り付けます。 | 作成、変更、削除を許可したとき |
 | expl chart add | データフレームから、編集できるチャートを作成します。 | 作成、変更、削除を許可したとき |
 | expl chart delete | チャートを削除します。 | 作成、変更、削除を許可したとき |
 | expl chart export-data | チャートのデータをファイルに書き出します。 | 作成、変更、削除を許可したとき |
-| expl chart install-map | 地図の拡張を Exploratory のサーバーから入れる、または更新します。 | 作成、変更、削除を許可したとき |
+| expl chart install-map | 地図の拡張を Exploratory のサーバーからインストールまたは更新します。 | 作成、変更、削除を許可したとき |
 | expl chart open | チャートをチャートビューで開きます。 | 作成、変更、削除を許可したとき |
 | expl chart save-ai-summary | 書いた解釈文を、チャートの AI サマリとして保存します。 | 作成、変更、削除を許可したとき |
 | expl chart edit | チャートの種類、集計、名前などの設定を変更します。 | 作成、変更、削除を許可したとき |
@@ -164,7 +164,7 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | --- | --- | --- |
 | expl analytics get | アナリティクスの結果（種類、設定、出力）を読み取ります。 | いつでも |
 | expl analytics get-summary-prompt | アナリティクスの AI サマリを書くための、実際の値を含む参考資料を返します。 | いつでも |
-| expl analytics get-template | アナリティクスの種類ごとに、指定できる項目と設定を返します。 | いつでも |
+| expl analytics get-template | アナリティクスの種類ごとに、指定できる枠と設定を返します。 | いつでも |
 | expl analytics list | データフレームのアナリティクスを一覧します。 | いつでも |
 | expl analytics list-templates | 作成できるアナリティクスの種類を一覧します。 | いつでも |
 | expl analytics add | アナリティクス（回帰、分類、クラスタリングなど）を作成して実行します。 | 作成、変更、削除を許可したとき |
@@ -179,13 +179,13 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | expl note get | ノート 1 つを、Markdown の本文ごと読み取ります。 | いつでも |
 | expl note get-image | ノートのプレビュー全体を PNG 画像で返します。 | いつでも |
 | expl note list | プロジェクトのノートを、本文なしで一覧します。 | いつでも |
-| expl note ask-ai | ノートエディターの AI に、ノートの文章の書き直し、翻訳、要約を頼みます。 | 作成、変更、削除を許可したとき |
+| expl note ask-ai | ノートエディタの AI に、ノートの文章の書き直し、翻訳、要約を頼みます。 | 作成、変更、削除を許可したとき |
 | expl note add | チャートやアナリティクスを埋め込める Markdown のノートを作成します。 | 作成、変更、削除を許可したとき |
 | expl note delete | ノートを削除します。 | 作成、変更、削除を許可したとき |
 | expl note export-html | ノートを HTML ファイルに書き出します。 | 作成、変更、削除を許可したとき |
 | expl note export-pdf | ノートを PDF ファイルに書き出します。 | 作成、変更、削除を許可したとき |
 | expl note open | ノートを画面で開きます。 | 作成、変更、削除を許可したとき |
-| expl note edit | ノートの本文に追記する、または置き換える、名前を変更します。 | 作成、変更、削除を許可したとき |
+| expl note edit | ノートの本文に追記するか、置き換えます。名前も変更できます。 | 作成、変更、削除を許可したとき |
 
 ### ダッシュボード
 
@@ -273,13 +273,13 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 
 | コマンド | できること | 使える条件 |
 | --- | --- | --- |
-| expl catalog fetch | カタログの項目 1 つの、タイトル、説明、列などを読み取ります。 | いつでも |
+| expl catalog fetch | カタログの項目 1 つの、タイトル、説明、列などを Markdown で読み取ります。 | いつでも |
 | expl catalog get-schedule | カタログの項目の更新スケジュールを取得します。 | いつでも |
 | expl catalog get-schema | カタログの項目の列を、説明と要約統計つきで取得します。 | いつでも |
 | expl catalog preview | カタログの項目の行を、ページ送りで取得します。 | いつでも |
 | expl catalog query | カタログの項目を、絞り込み、グループ化、集計、結合します。 | いつでも |
 | expl project read-catalog | プロジェクトのデータフレーム、チャート、アナリティクス、ノート、パラメーター、ダッシュボードをまとめて読み取ります。 | いつでも |
-| expl catalog search | この PC のデータカタログを検索します。 | いつでも |
+| expl catalog search | このコンピューターのデータカタログを検索します。 | いつでも |
 | expl catalog delete | カタログの項目を、データ、スケジュール、アクセスログごと削除します。 | 作成、変更、削除を許可したとき |
 | expl catalog set-schedule | カタログの項目の更新スケジュールを設定します。 | 作成、変更、削除を許可したとき |
 | expl catalog update | カタログの項目と列の説明を変更します。 | 作成、変更、削除を許可したとき |
@@ -293,6 +293,6 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | expl guide get | 道具の使い方のガイドを返します。 | いつでも |
 | expl artifact rerun | 開いているプロジェクトのチャートやアナリティクスなどを再実行します。 | 作成、変更、削除を許可したとき |
 
-project use、tools describe、call、lang は、上の表の書き方を見てください（[共通フラグ](global-flags_ja.md)）。
+組み込みのコマンド（expl status、project use、tools list、tools describe、call、lang、skill、completion）は、下ではなく、このページの上の表にあります。フラグは[共通フラグ](global-flags_ja.md)を参照してください。
 
 exploratory.io のコンテンツを読むコマンドは、[Server のコマンド](../server/commands_ja.md)を参照してください。

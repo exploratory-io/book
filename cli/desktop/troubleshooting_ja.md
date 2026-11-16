@@ -20,9 +20,11 @@ expl status を実行します。expl tools list が終了コード 0 で終わ�
 
 | 症状 | 対処 |
 | --- | --- |
-| expl: command not found | 新しいターミナルを開いて、もう一度実行します。インストールのページも参照してください。 |
+| expl: command not found | 新しいターミナルを開いて、もう一度実行します。[インストール](install_ja.md)も参照してください。 |
 | Desktop が起動しているのにコマンドが拒否され、メッセージに MCP / CLI と出る | CLI は初期状態ではオフです。システム設定で MCP / CLI を選び、「CLI」のカードのスイッチをオンにして「保存」を選びます。 |
 | 終了コード 3 | Exploratory Desktop を起動して、もう一度実行します。 |
+| 終了コード 1 で PAIRING_PENDING | Desktop の承認の画面に、2 分以内に答えませんでした。画面で答えてから、もう一度実行します（[はじめる](get-started_ja.md#steps)を参照）。 |
+| 終了コード 4 で PAIRING_REQUIRED | 承認の画面で「許可しない」を選びました。5 分間は、もう一度実行しても画面は出ずに断られます。5 分たってからもう一度実行し、画面で許可します。 |
 | 終了コード 4 | メッセージの末尾のコード（NOT_SIGNED_IN、UNAUTHORIZED、PAIRING_REQUIRED、CHANNEL_DISABLED、PERMISSION_DENIED）を、[終了コードとエラー](exit-codes_ja.md#action)で確認します。 |
 | PROJECT_NOT_OPEN | プロジェクトを開きます: expl project open \<id\> |
 | メッセージに get_data_frame のような道具の名前が出る | expl tools describe \<tool_name\> で、その道具に対応するコマンドを確認します。 |

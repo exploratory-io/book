@@ -14,7 +14,7 @@ AI ツールから、あなたのコンピューターの Exploratory Desktop �
 
 > **変更や削除もできます**
 >
-> 削除、ノート・ダッシュボード・データフレームの公開と公開の取り消し、R コードの実行を行う道具があります。AI が書き込む前に、提案を確認してください。
+> 削除、ノート・ダッシュボード・データフレーム・プロジェクトの公開、ノート・ダッシュボード・プロジェクトの公開の取り消し、R コードの実行を行う道具があります。AI が書き込む前に、提案を確認してください。
 
 お使いのコンピューターのアプリを通して、アプリにサインインしている人として動きます。exploratory.io に公開した内容を読む Server の MCP とは、別のものです。
 
@@ -25,14 +25,14 @@ AI ツールから、あなたのコンピューターの Exploratory Desktop �
 - Exploratory Desktop v17 以降。サインインして、起動しておきます
 - PATH にある exploratory-mcp コマンド。プラグインが、このコマンドを起動します。Desktop の起動時に、自動で使える場所（PATH）に入ります。操作は要りません
 - macOS では、ディスクイメージから開いたままだとコマンドが自動で入りません。Desktop を /Applications か ~/Applications に移して起動します
-- Claude Code で使う場合は、PATH に node。プラグインのレビューのフックが使います
+- Claude Code で使う場合は、PATH にある node。プラグインのレビューのフックが使います
 - AI ツール: Claude Code、Codex、Cursor、Antigravity
 
 <a id="more"></a>
 
 ## 読み進めるには
 
-- [はじめる](get-started_ja.md) - プラグインを入れ、MCP をオンにして、最初の 1 回まで進めます。手順は、[プラグインのインストール](install_ja.md)と[許可の範囲と設定](permissions_ja.md)にもあります。
+- [はじめる](get-started_ja.md) - プラグインを入れ、MCP をオンにして、最初の依頼まで進めます。手順は、[プラグインのインストール](install_ja.md)と[許可の範囲と設定](permissions_ja.md)にもあります。
 - [使い方](use_ja.md) - AI に頼めることの例です。
 - [リファレンス](reference_ja.md) - 使える道具、制限とエラー、データと権限を調べます。
 - [トラブルシューティング](troubleshooting_ja.md) - 表示されたメッセージから対処を探します。

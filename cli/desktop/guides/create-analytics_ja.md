@@ -8,7 +8,7 @@
 
 - Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](projects_ja.md)）。expl status で確認できます。
 - データフレームの id と列名が分かっています（expl dataframe list、expl dataframe get-schema \<dataframe_id\>）。
-- analytics add と analytics edit は、システム設定（MCP / CLI）の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。アナリティクスの削除は、確認が出ます。[確認と時間のかかる操作](confirmation_ja.md)を参照してください。
+- analytics add と analytics edit は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。アナリティクスの削除は、確認が出ます。[確認と時間のかかる操作](confirmation_ja.md)を参照してください。
 
 <a id="steps"></a>
 
@@ -32,13 +32,19 @@ expl analytics get-template --analysis-type <analysis_type>
 
 ### 3. 作る
 
---analysis-type と --slots が必須です。--slots は、枠の名前をキーにして、列名を入れた JSON オブジェクトです。列が 1 つの枠は文字列、複数の列の枠はリストにします。--settings には、手順 2 の設定の名前の JSON オブジェクトを渡します（真偽の設定は、文字列の "TRUE" か "FALSE" です）。
+--analysis-type と --slots が必須です。--slots は、枠の名前をキーにして、列名を入れた JSON オブジェクトです。列が 1 つの枠は文字列、複数の列の枠は配列にします。--settings には、手順 2 の設定の名前の JSON オブジェクトを渡します（真偽値の設定は、文字列の "TRUE" か "FALSE" です）。
 
 ```sh
 expl analytics add --data-frame-id <dataframe_id> --analysis-type <analysis_type> --slots @slots.json --title "売上に効く要因"
 ```
 
-slots.json には、get-template が返した枠の名前と、get-schema の列名で書きます。コマンドは、アナリティクスを作って実行します。結果に、id（analyticsId）と、出力ごとの状態が入ります。
+slots.json は、get-template が返した枠の名前と、get-schema の列名を使って書きます。例えば相関の種類（do_cor）には、複数の列を入れる columns という枠が 1 つあります。
+
+```json
+{"columns": ["Sales", "Ad Spend", "Visitors"]}
+```
+
+設定も同じ形で settings.json に書きます。例: {"cor_method": "spearman"}。種類によって枠や設定の名前は違うので、get-template の結果から写します。コマンドは、アナリティクスを作って実行します。結果に、id（analyticsId）と、出力ごとの状態が入ります。
 
 ### 4. 結果を読む
 
@@ -65,7 +71,7 @@ expl analytics edit <analytics_id> --settings @settings.json
 | --- | --- |
 | PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](../exit-codes_ja.md)を参照してください。 |
 | NO_DATA_FRAME | --data-frame-id \<dataframe_id\> を付けます。 |
-| 知らない名前だと断られる | 枠や設定の名前を、expl analytics get-template で、もう一度調べます。 |
+| 未知の名前を指定すると拒否される | 枠や設定の名前を、expl analytics get-template で、もう一度調べます。 |
 | 枠が空 | 枠に列がないと、アナリティクスは作れません。 |
 
 コマンドの引数は、expl \<コマンド\> --help または expl tools describe "\<コマンド\>" で確認します。

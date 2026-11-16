@@ -48,7 +48,7 @@ ChatGPT のデスクトップアプリで、設定を開きます。
 
 ### 再起動して認証する
 
-[公式の資料](https://learn.chatgpt.com/docs/extend/mcp)では、保存したあとを次のように案内しています。この文言は資料の表記です。画面の表示が違うときは、同じ意味のボタンを選びます。
+[公式の資料](https://learn.chatgpt.com/docs/extend/mcp)では、「Save the server, then select Restart.」と「Select Authenticate when an OAuth server requires sign-in.」と案内しています。画面の表示が違うときは、同じ意味のボタンを選びます。
 
 1. 保存したあと、「Restart」を選びます。
 2. サーバーの一覧に、認証（OAuth）が必要と表示されたら、「Authenticate」を選びます。
@@ -77,7 +77,7 @@ ChatGPT のデスクトップアプリで、設定を開きます。
    接続した Exploratory Server で、閲覧できるコンテンツを最大 3 件、URL 付きで一覧して。見つからなければ、その旨を教えて。
    ```
 
-コンテンツが URL つきで表示されれば、使えています。結果が 0 件でも、認証や接続に失敗したとは限りません。
+コンテンツが URL 付きで表示されれば、使えています。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](../troubleshooting_ja.md#zero)を参照してください。
 
 <a id="web"></a>
 
@@ -156,13 +156,13 @@ ChatGPT に戻ります。
    接続した Exploratory Server で、閲覧できるコンテンツを最大 3 件、URL 付きで一覧して。見つからなければ、その旨を教えて。
    ```
 
-コンテンツが URL つきで表示されれば、使えています。結果が 0 件でも、認証や接続に失敗したとは限りません。
+コンテンツが URL 付きで表示されれば、使えています。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](../troubleshooting_ja.md#zero)を参照してください。
 
 <a id="trouble"></a>
 
 ## うまくいかないとき
 
-ほかの症状は、[トラブルシューティング](../troubleshooting_ja.md) を参照してください。
+症状ごとの対処は、[トラブルシューティング](../troubleshooting_ja.md) を参照してください。
 
 <a id="remove"></a>
 

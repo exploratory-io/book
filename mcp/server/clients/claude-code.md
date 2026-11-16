@@ -3,7 +3,7 @@
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Claude Code and sign in through your browser.
 It takes about 3 minutes. You need an Exploratory account and Claude Code.
 
-If you already added Exploratory as a connector in the [Claude app](claude.md), you do not need to add it again here. Claude Code signed in with the same claude.ai account shows it automatically as "claude.ai Exploratory", and you can use it as is. In Claude Code, open `/mcp` to check.
+If you already added Exploratory as a connector in the [Claude app](claude.md), you do not need to add it again here. Claude Code signed in with the same claude.ai account shows it automatically as "claude.ai Exploratory", and you can use it as is. In Claude Code, open `/mcp` to check. For the steps to add it, see [Connect the Claude app](claude.md).
 
 ![The /mcp list in Claude Code, with claude.ai Exploratory](images/en/claude-code-claudeai-connector.png)
 
@@ -42,7 +42,7 @@ This registers only the server, without the plugin or skill.
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed.
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
@@ -119,9 +119,9 @@ Use one way only: the OAuth sign-in above or this one.
 | What you see | What to do |
 | --- | --- |
 | You are asked to sign in | Open /mcp and sign in again. |
-| The same tools appear twice | Use one way only: the official plugin, the direct URL, or the connector on claude.ai. If you later install the plugin from the official directory, first remove the direct entry with claude mcp remove exploratory-server. |
+| The same tools appear twice | Use one way only: the plugin from your app's official directory, the direct URL, or the connector on claude.ai. If you later install the plugin from the official directory, first remove the direct entry with claude mcp remove exploratory-server. |
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the MCP Server as a whole.
+- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 
@@ -135,4 +135,4 @@ claude mcp remove exploratory-server
 
 This is the name used in the steps above. If you added the server by chat, use the name you gave it (Exploratory in the example) instead. If the AI added it in a different scope from the default, also add `--scope` with that scope. To see the names you have, run `claude mcp list`.
 
-Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in your account settings on exploratory.io.
+Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in Account Settings on exploratory.io.

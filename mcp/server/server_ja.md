@@ -36,7 +36,7 @@ https://exploratory.io/mcp
 
 ## 読み進めるには
 
-- [はじめる](get-started_ja.md) - AI ツールにつないで、最初の 1 回まで進めます。AI ツールごとの追加手順は、[AI ツールから追加する](clients/apps_ja.md)にあります。
+- [はじめる](get-started_ja.md) - AI ツールにつないで、最初の依頼まで進めます。AI ツールごとの追加手順は、[AI ツールから追加する](clients/apps_ja.md)にあります。
 - [使い方](use_ja.md) - AI に頼めることの例です。
 - [リファレンス](reference_ja.md) - 使える道具、制限とエラー、データと権限を調べます。
 - [トラブルシューティング](troubleshooting_ja.md) - 症状から対処を探します。

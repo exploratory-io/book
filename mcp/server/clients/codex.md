@@ -57,7 +57,7 @@ exploratory@exploratory in Exploratory's GitHub marketplace is for Desktop and d
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed.
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
@@ -83,7 +83,7 @@ Codex added the server with `codex mcp add` and answered that the server was add
 
 ### Sign in and check
 
-1. Approve the access in the browser.
+1. If you are not signed in yet, run `codex mcp login Exploratory`. Your browser opens. Approve the access in the browser.
 2. Start a new session and open `/mcp`. Check that Exploratory is connected.
 
 3. Ask for the data, and name the connection to search with.
@@ -123,7 +123,7 @@ If you write the key in the file as it is, it stays in that file. Use one way on
 | You are asked to sign in | Run codex mcp login exploratory-server to sign in again. If you added the server by chat, give the name you registered (Exploratory in the example). |
 | The Server tools do not appear | exploratory@exploratory is for Desktop. Register Server with the steps above. |
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the MCP Server as a whole.
+- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 
@@ -131,4 +131,4 @@ If you write the key in the file as it is, it stays in that file. Use one way on
 
 Delete the \[mcp_servers.exploratory-server\] entry you added to ~/.codex/config.toml. If you added the server by chat, the entry carries the name you gave it (Exploratory in the example), so delete \[mcp_servers.Exploratory\] instead. Use the name you registered.
 
-Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in your account settings on exploratory.io.
+Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in Account Settings on exploratory.io.

@@ -8,7 +8,7 @@
 ## 必要なもの
 
 - Exploratory のアカウント
-- Cursor（エージェントは agent か cursor-agent）
+- Cursor（コマンドラインのエージェントは `agent` か `cursor-agent`）
 - API キーとクライアント ID は必要ありません。
 
 <a id="steps"></a>
@@ -76,7 +76,7 @@ agent mcp login exploratory-server
 Exploratory にある「Sales Orders」のデータを探して
 ```
 
-Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。
+Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](../troubleshooting_ja.md#zero)を参照してください。
 
 送信したあと、結果を確かめます。
 
@@ -92,7 +92,7 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 
 ## API キーで接続する
 
-ブラウザを開けない環境では、サインインの代わりに API キーを使います。キーは、アカウント設定 \> API キーで作り、Cursor を起動する前に、EXPLORATORY_API_KEY という環境変数に入れます。そのうえで、mcp.json から参照します。
+ブラウザを開けない環境では、サインインの代わりに API キーを使います。キーは、アカウント設定 \> API キーで作り、Cursor を起動する前に、EXPLORATORY_API_KEY という環境変数に入れます。秘密情報を管理する仕組みで設定し、シェルの設定ファイルは使わないでください。そのうえで、mcp.json から参照します。
 
 ```text
 {
@@ -119,7 +119,7 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 | サインインを求められる | agent mcp login exploratory-server を実行して、もう一度サインインします。 |
 | Desktop のプラグインをインストールしたが、Server の道具が表示されない | Desktop のプラグインには、Server は含まれません。上の JSON で、Server を追加します。 |
 
-- [トラブルシューティング](../troubleshooting_ja.md) - MCP Server 全体の、症状ごとの対処です。
+- [トラブルシューティング](../troubleshooting_ja.md) - Server の MCP 全体の、症状ごとの対処です。
 
 <a id="remove"></a>
 

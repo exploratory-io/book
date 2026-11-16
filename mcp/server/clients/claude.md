@@ -75,7 +75,7 @@ When Exploratory appears with the Custom label and a check mark under Status, th
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed.
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
 
 ### Use it in Claude Code too
 

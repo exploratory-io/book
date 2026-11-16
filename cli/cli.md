@@ -11,7 +11,7 @@ Use Exploratory from a terminal with the expl command. There are two sides, and 
 - [Server](server/server.md) - Read content published on exploratory.io.
 - [Desktop](desktop/desktop.md) - Work with projects in Exploratory Desktop on your computer.
 
-Read in Japanese: [Server](server/server_ja.md) / [Desktop](desktop/desktop_ja.md)
+Read in Japanese: [Overview](cli_ja.md) / [Server](server/server_ja.md) / [Desktop](desktop/desktop_ja.md)
 
 For first-time use, go to Get started. For Server, sign in first ([Sign in](server/login.md)).
 
@@ -19,4 +19,4 @@ For first-time use, go to Get started. For Server, sign in first ([Sign in](serv
 - Server: [Installation](server/install.md), [Sign in](server/login.md), [Get started](server/get-started.md)
 - Global flags: [Server](server/global-flags.md), [Desktop](desktop/global-flags.md)
 - Exit codes and errors: [Server](server/exit-codes.md), [Desktop](desktop/exit-codes.md)
-- Updating: [Update](server/install.md#update)
+- Updating: Desktop [Update](desktop/install.md#update), npm [Update](server/install.md#update)

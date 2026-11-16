@@ -26,13 +26,13 @@ Shows the server, your user and how you are signed in.
 expl server logout
 ```
 
-Remove the saved login. Unless you supply an API key through EXPL_SERVER_TOKEN, the next call requires sign-in. If you signed in with an API key, only the saved copy is removed; the key itself keeps working until you revoke it.
+Removes the saved login. Unless you supply an API key through EXPL_SERVER_TOKEN, the next call requires sign-in. If you signed in with an API key, only the saved copy is removed; the key itself keeps working until you revoke it.
 
 <a id="apikey"></a>
 
 ## Sign in with an API key
 
-An API key lets expl sign in without a browser. Create one in Account Settings \> API Keys (see API keys), then run this.
+An API key lets expl sign in without a browser. Create one in Account Settings \> API Keys (see [API keys](token.md)), then run this.
 
 ```sh
 expl server login --with-token
@@ -54,7 +54,7 @@ key-file is a file that holds only the key. Do not write the key on the command 
 
 expl checks the key with the server first. If the server refuses it, nothing is saved. A key starts with exp_pat_. --with-token cannot be used together with --no-browser. To choose the server, add --url.
 
-The key is saved in the same place as a browser login (see Where the login is saved). A saved API key is never refreshed and never opens a browser. Logging in again replaces it.
+The key is saved in the same place as a browser login (see Where the login is saved). A saved API key is never refreshed and never opens a browser. Signing in again replaces it.
 
 Instead of saving it, you can set the environment variable EXPL_SERVER_TOKEN. It is used before any saved login.
 
@@ -142,7 +142,7 @@ The default server is https://exploratory.io. To use another server, pass --url 
 
 ## What the server records
 
-For the operations that expl server calls, Exploratory Server records the following. It records the same when an AI app connects to Exploratory through MCP.
+For the operations that expl server calls, Exploratory Server records the following. It records the same when an AI tool connects to Exploratory through MCP.
 
 - Tokens and API keys: stored as hashes, not as plain text, with the creation time, expiry and last use. You can see and revoke the tokens of a browser login in Connected AI Apps, and API keys in Account Settings \> API Keys.
 - Data access log: the item, your user ID and email address, the channel (cli), how you signed in (browser or API key) and the API key name, the operation, the client name, the IP address, the result and error code, and the duration. Kept for 90 days by default (1 to 400 days, set on the server).
@@ -157,7 +157,7 @@ The [Data and permissions](../../mcp/server/data.md) page of MCP Server describe
 
 | What you see | What to do |
 | --- | --- |
-| Run "expl server login". | Sign-in is missing, or the saved login was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in, or the saved login was rejected. Run expl server login. |
 | The redirect URL has no authorization code. | With --no-browser, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
 | It fails after you paste | The code works only once and expires after 60 seconds. Start again from the beginning. |
 | The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked, or its owner can no longer use API keys. Exit code 4. Create a new API key, then set EXPL_SERVER_TOKEN or run expl server login --with-token. |
@@ -166,5 +166,3 @@ The [Data and permissions](../../mcp/server/data.md) page of MCP Server describe
 | Too many failed API key attempts. Try again later. | Many refused keys came from this address in a short time. Fix the key and try again later. |
 | --token was removed. … | Use the environment variable EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. |
 | Paste an API key (it starts with exp_pat_) when … | The value is not an API key. Copy the whole key from Account Settings \> API Keys. Exit code 2. |
-
-To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login.

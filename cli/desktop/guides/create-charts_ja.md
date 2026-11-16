@@ -8,7 +8,7 @@
 
 - Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](projects_ja.md)）。expl status で確認できます。
 - データフレームの id と列名が分かっています（expl dataframe list、expl dataframe get-schema \<dataframe_id\>）。
-- chart add と chart edit は、システム設定（MCP / CLI）の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。チャートの削除は、確認が出ます。[確認と時間のかかる操作](confirmation_ja.md)を参照してください。
+- chart add と chart edit は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。チャートの削除は、確認が出ます。[確認と時間のかかる操作](confirmation_ja.md)を参照してください。
 
 <a id="steps"></a>
 
@@ -32,7 +32,7 @@ expl chart list-settings --marker bar
 expl chart add --data-frame-id <dataframe_id> --marker bar --axes '{"x":"order_date","y":{"column":"sales","func":"sum"}}' --title "月別の売上"
 ```
 
-\<dataframe_id\> は、expl dataframe list の id に置き換え、列名は get-schema の表記のまま使います。--settings には、手順 1 で調べた名前の JSON オブジェクトを渡します（オンとオフの設定は、true や false でなく、文字列の "on" か "off" です）。--filters には、フィルタ条件のリストを渡します。条件の形は、expl chart add --help で確認します。
+\<dataframe_id\> は、expl dataframe list の id に置き換え、列名は get-schema の表記のまま使います。--settings には、手順 1 で調べた名前の JSON オブジェクトを渡します（オンとオフの設定は、true や false でなく、文字列の "on" か "off" です）。--filters には、フィルタ条件の配列を渡します。条件の形は、expl chart add --help で確認します。
 
 結果に、作ったチャートの id（chartId）が入ります。--data-frame-id を付けないと、Desktop で選択中のデータフレームを使います。選択中のものがないときは、NO_DATA_FRAME で止まります。
 

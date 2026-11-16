@@ -8,7 +8,7 @@ It takes about 5 minutes. You need an Exploratory account and Cursor.
 ## Requirements
 
 - An Exploratory account
-- Cursor (the agent is agent or cursor-agent)
+- Cursor (its command-line agent is `agent` or `cursor-agent`)
 - You do not need an API key or a client ID.
 
 <a id="steps"></a>
@@ -76,7 +76,7 @@ Next, in a new chat, send this.
 Find the "Sales Orders" data on Exploratory. Please respond in English.
 ```
 
-Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed.
+Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
 
 After you send it, check the result.
 
@@ -92,7 +92,7 @@ A skill gives an AI instructions for using a service. It is separate from the MC
 
 ## Connect with an API key
 
-If your environment cannot open a browser, use an API key instead of the sign-in. Create the key in Account Settings \> API Keys, and put it in an environment variable named EXPLORATORY_API_KEY before you start Cursor. Then refer to it in mcp.json.
+If your environment cannot open a browser, use an API key instead of the sign-in. Create the key in Account Settings \> API Keys, and put it in an environment variable named EXPLORATORY_API_KEY before you start Cursor, and set it from a secret manager, not in a shell startup file. Then refer to it in mcp.json.
 
 ```text
 {
@@ -119,7 +119,7 @@ If you write the key in mcp.json as it is, it stays in that file. Use one way on
 | You are asked to sign in | Run agent mcp login exploratory-server to sign in again. |
 | You installed the Desktop plugin but the Server tools do not appear | The Desktop plugin does not add Server. Add Server with the JSON above. |
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the MCP Server as a whole.
+- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 
@@ -127,4 +127,4 @@ If you write the key in mcp.json as it is, it stays in that file. Use one way on
 
 Delete the exploratory-server entry you added to mcp.json.
 
-Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in your account settings on exploratory.io.
+Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in Account Settings on exploratory.io.

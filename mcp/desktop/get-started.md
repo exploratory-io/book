@@ -18,7 +18,7 @@ If you do not save, the MCP switch and the Allow create, edit and delete setting
 
 ### 3. Restart the AI tool and allow the connection
 
-Restart the AI tool you installed into. The first time an AI tool connects, Desktop asks whether to allow it. Allow only an app you started yourself.
+Restart the AI tool you installed into. The first time an AI tool connects, Desktop shows a window titled "An AI tool is asking for your approval" and asks whether to allow it. Choose Allow only for an app you started yourself.
 
 Check that the connection works in your AI tool.
 
@@ -35,7 +35,7 @@ In Exploratory Desktop, open the project you want to use. Then, in the AI tool, 
 List the data frames in my open Exploratory project.
 ```
 
-This works with the read-only setting too.
+This works with Allow create, edit and delete off too.
 
 To try creating something, turn on Allow create, edit and delete and save, then ask for a chart, such as a bar chart of a column of your own data.
 
@@ -45,7 +45,8 @@ To try creating something, turn on Allow create, edit and delete and save, then 
 
 - A call says that MCP is turned off: go back to System Settings and check that you turned the MCP switch on and chose Save.
 - The tools return a not-running error: start Exploratory Desktop, then use the tools again in the same conversation.
-- The install fails: the row of that AI tool shows "Could not install." See When the install fails on [Install the plugin](install.md#failure).
+- You chose Don't allow on the approval window: for 5 minutes the same app is refused without the window appearing again. After 5 minutes, connect again and the window appears again. To approve an app you refused, or to take back an approval, see [Permissions and settings](permissions.md#control).
+- The install fails: the row of that AI tool shows "Could not install." See "When the install fails" on [Install the plugin](install.md#failure).
 
 See [Troubleshooting](troubleshooting.md) for more.
 

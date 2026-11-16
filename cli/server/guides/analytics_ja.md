@@ -8,7 +8,7 @@
 
 ### 1. アナリティクスの名前を確認する
 
-fetch を実行します。結果の metadata.blocks のうち、kind が analytics のものに、アナリティクスの名前（name）と分析の種類（analysis_type）が含まれます。次の手順では、タイトルではなく name を指定します。
+fetch を実行します。結果の metadata.blocks のうち、kind が analytics のものに、アナリティクスの名前（name）とアナリティクスの種類（analysis_type）が含まれます。次の手順では、タイトルではなく name を指定します。
 
 ```sh
 expl server fetch <id> --json
@@ -134,7 +134,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 … (trimmed)
 ```
 
-結果には、モデルの定義（目的変数、説明変数、N）、列の ID が固定された結果の表、学習データとテストデータに分けた主要な統計量、実行時の設定、生成された説明文（生成されたものか、AI が生成したものかを区別して表示）が含まれます。数値は表示されたとおりの値で、係数は標準化されていません。この例は時系列の予測であるため、model_definition の target と predictors は空です。
+結果には、モデルの定義（目的変数、説明変数、N）、列の ID が固定された結果の表、学習データとテストデータに分けた主要な統計量、実行時の設定、説明の文（数値から作ったものか、AI が作ったものかの印つき）が含まれます。数値は表示されたとおりの値で、係数は標準化されていません。この例は時系列の予測であるため、model_definition の target と predictors は空です。
 
 --limit は、表ごとの最大行数です（最大 100 行）。続きを取得する方法はありません。既定では、分析の答えとなる表が返ります。返す表を指定する場合は、available_tables の id を --tables に指定します。
 
@@ -144,9 +144,9 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 
 ## トラブルシューティング
 
-| 表示される内容 | 対処 |
+| 症状 | 対処 |
 | --- | --- |
-| アナリティクスの名前がわからない | fetch の結果の metadata.blocks を確認します。 |
+| アナリティクスの名前が分からない | fetch の結果の metadata.blocks を確認します。 |
 | Run "expl server login". | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
 
 すべてのフラグは、[analytics get-result](../commands_ja.md#analytics-get-result)で説明しています。

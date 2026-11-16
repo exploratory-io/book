@@ -54,16 +54,16 @@ The commands for signing in and managing the connection are on their own pages: 
 | --- | --- |
 | [expl server chart get-data](#chart-get-data) | Get the data of a chart together with what the numbers mean. |
 | [expl server chart get-image](#chart-get-image) | Get a chart as a PNG image, to see its shape, trend and layout. |
-| [expl server analytics get-result](#analytics-get-result) | Get the result of an analytics (regression, correlation, chi-square test and so on) as structured data. |
+| [expl server analytics get-result](#analytics-get-result) | Get the results of analytics (regression, correlation, chi-square test and so on) as structured data. |
 | [expl server chart query](#chart-query) | Filter and aggregate the data of a chart in a note, dashboard or slide on the server and return only the result. |
 
 <a id="commands-desktop-mcp-setup-guide"></a>
 
-## Connection
+## Connection and management
 
 | Command | Purpose |
 | --- | --- |
-| [expl server desktop mcp-setup-guide](#desktop-mcp-setup-guide) | Return the steps and links for connecting an AI client to Exploratory Desktop. |
+| [expl server desktop mcp-setup-guide](#desktop-mcp-setup-guide) | Return the steps and links for connecting an AI tool to Exploratory Desktop. |
 
 <a id="inspect-commands"></a>
 
@@ -103,7 +103,7 @@ search and fetch take no verb: expl server search \<query\> and expl server fetc
 
 Each command also has the name of the tool behind it, the one an MCP client sees. expl server call \<tool_name\> runs a command by that name, for example expl server call dataframe_preview \<id\>.
 
-To find every command by purpose, see [All commands](#syntax-index).
+To see the usage and flags of every command, see [Command syntax index](#syntax-index).
 
 <a id="search"></a>
 
@@ -247,7 +247,7 @@ When has_more in the result is true, pass next_offset to --offset to get the nex
 | What you see | What to do |
 | --- | --- |
 | Too big: expected number to be \<=50 at limit | Set --limit to 50 or less. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server fetch](#fetch), [expl server dataframe get-schema](#dataframe-get-schema)
 
@@ -418,7 +418,7 @@ For a long note, find a topic with --query or read one heading with --section. W
 | --- | --- |
 | The text is long and you cannot find the part you need | Find the topic with --query, or pass a heading from metadata.toc to --section. |
 | You do not know the name of a chart or analytics | Look at metadata.charts and metadata.blocks in the result. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server search](#search), [expl server chart get-data](#chart-get-data), [expl server analytics get-result](#analytics-get-result)
 
@@ -603,7 +603,7 @@ There is no way to page through the result.
 | What you see | What to do |
 | --- | --- |
 | dataset query fails with DATASET_UNAVAILABLE | Run it with --detail full and check query.available in the result. Data with false cannot be queried on the server. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server dataframe preview](#dataframe-preview), [expl server dataset query](#dataset-query)
 
@@ -773,7 +773,7 @@ Pass the number of rows you have already read to offset to read on. One call ret
 | What you see | What to do |
 | --- | --- |
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server dataframe get-schema](#dataframe-get-schema), [expl server dataset query](#dataset-query)
 
@@ -801,18 +801,18 @@ expl server dataset query [<dataset_id>] [flags]
 | --- | --- | --- | --- |
 | `--dataset-id` | string | Required unless queries or datasets is used | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --dataset-id. |
 | `--mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
-| `--columns` | json | Required in rows mode (optional in a join) | Only in rows mode. 1 to 50 unique column names to return. In a join, write each column with alias and column. In a join, leaving it out returns every column. |
-| `--filters` | json |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. In a join, they apply after the join. |
-| `--dimensions` | json |  | Only in aggregate mode. 0 to 5 columns to group by, written as { "column": "column name" }. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
-| `--metrics` | json | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations, each with a function (count_rows, count, count_distinct, sum, avg, min, max) and an alias that names the result. Everything except count_rows also takes a column. |
-| `--sort` | json |  | The sort order, up to 3 entries. Each entry names an output field with field and a direction with direction. |
+| `--columns` | JSON | Required in rows mode (optional in a join) | Only in rows mode. 1 to 50 unique column names to return. In a join, write each column with alias and column. In a join, leaving it out returns every column. |
+| `--filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. In a join, they apply after the join. |
+| `--dimensions` | JSON |  | Only in aggregate mode. 0 to 5 columns to group by, written as { "column": "column name" }. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
+| `--metrics` | JSON | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations, each with a function (count_rows, count, count_distinct, sum, avg, min, max) and an alias that names the result. Everything except count_rows also takes a column. |
+| `--sort` | JSON |  | The sort order, up to 3 entries. Each entry names an output field with field and a direction with direction. |
 | `--limit` | integer |  | The maximum number of result rows. rows: default 100, at most 1,000. aggregate: default 100, at most 500. There is no paging; narrow the query when rows remain. |
-| `--datasets` | json |  | The data items to join and their aliases, used instead of dataset_id. 2 to 5 items, written as an array of { "id": ..., "alias": ... }. |
+| `--datasets` | JSON |  | The data items to join and their aliases, used instead of dataset_id. 2 to 5 items, written as an array of { "id": ..., "alias": ... }. |
 | `--root-alias` | string |  | The alias of the data item where joins start. By default, the first of datasets. |
-| `--joins` | json | Required with datasets | Join types (inner, left, right, full), the left and right aliases and the key columns. One join is needed for each data item after the first. |
-| `--source-filters` | json |  | Narrows the rows of each data item before the join. For each alias, write conditions with that data item's plain column names. Use it for a condition on the side of a left join that should not drop rows. |
+| `--joins` | JSON | Required with datasets | Join types (inner, left, right, full), the left and right aliases and the key columns. One join is needed for each data item after the first. |
+| `--source-filters` | JSON |  | Narrows the rows of each data item before the join. For each alias, write conditions with that data item's plain column names. Use it for a condition on the side of a left join that should not drop rows. |
 | `--allow-many-to-many` | boolean |  | Enable it only when a key repeats on both sides of a join and the rows multiplying is what you want. |
-| `--queries` | json |  | Several independent queries in one call, up to 5, run in parallel on the server. Each takes dataset_id (or datasets for a join) and the same fields as a single query. |
+| `--queries` | JSON |  | Several independent queries in one call, up to 5, run in parallel on the server. Each takes dataset_id (or datasets for a join) and the same fields as a single query. |
 | `--include-answer-context` | boolean |  | On by default. Turn it off to leave answer_context (an interpretation of the query and the descriptions and units of the columns) out of the result. Warnings are still returned. It works only on a server that returns answer_context. |
 | `--language` | string |  | The language of the descriptions, units, labels and metric names in answer_context: ja or en. By default it is the base language of the data. A text that does not exist in the language is returned in the other one and marked. It works only on a server that returns answer_context. Values: `ja`, `en` |
 
@@ -951,8 +951,8 @@ There is no paging. When has_more in the result is true, narrow the filters or a
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | In metrics, give a function and an alias. Everything except count_rows also takes a column. |
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias is required. Use only letters, digits and _, do not start with a digit, and use at most 64 characters. |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | In a sort entry, give the output column name with field. column, by, alias, name and metric are not accepted. |
-| DATASET_UNAVAILABLE | This data was published without its full data, so it cannot be queried on the server. The publisher needs to republish it from the current Exploratory Desktop. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| DATASET_UNAVAILABLE | This data was published without its full data, so it cannot be queried on the server. The publisher needs to republish it from the latest version of Exploratory Desktop. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server dataframe get-schema](#dataframe-get-schema), [expl server dataframe export](#dataframe-export)
 
@@ -981,11 +981,11 @@ expl server dataframe export <dataset_id> [flags]
 | `--dataset-id` | string | Required | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --dataset-id. |
 | `--format` | string |  | The file format. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Values: `csv`, `parquet` |
 | `--mode` | string | Required | rows: export the rows that match the filters. aggregate: export the result of grouping by dimensions and calculating metrics. Values: `rows`, `aggregate` |
-| `--columns` | scalarArray |  | Only in rows mode. 1 to 50 unique column names to export. Without it, every column is exported. |
-| `--filters` | json |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
-| `--dimensions` | json |  | Only in aggregate mode. 0 to 5 columns to group by. |
-| `--metrics` | json | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
-| `--sort` | json |  | The sort order, up to 3 entries. |
+| `--columns` | list of values |  | Only in rows mode. 1 to 50 unique column names to export. Without it, every column is exported. |
+| `--filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
+| `--dimensions` | JSON |  | Only in aggregate mode. 0 to 5 columns to group by. |
+| `--metrics` | JSON | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
+| `--sort` | JSON |  | The sort order, up to 3 entries. |
 | `--limit` | integer |  | The maximum number of rows to export. |
 
 <a id="dataframe-export-json-arguments"></a>
@@ -1057,7 +1057,7 @@ There is no paging. Use this command when the result is too large for dataset qu
 | --- | --- |
 | DATA_EGRESS_LIMIT | The publisher does not allow downloading this data as a file. Use fetch or dataframe get-schema for what the publisher shares, or open the URL in the browser. |
 | SERVER_BUSY | Another export of yours is running, or you reached the hourly export limit. One export can run at a time per user. Try again in a few seconds; for the hourly limit, wait up to an hour. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server dataset query](#dataset-query), [expl server dataframe preview](#dataframe-preview)
 
@@ -1084,7 +1084,7 @@ expl server dataframe get-wrangling <id> [flags]
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |
 | `--id` | string | Required | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --id. |
-| `--steps` | scalarArray |  | The refs of the steps to return in detail, such as s3, taken from the outline. 1 to 20 refs, no duplicates. Cannot be used with --column. |
+| `--steps` | list of values |  | The refs of the steps to return in detail, such as s3, taken from the outline. 1 to 20 refs, no duplicates. Cannot be used with --column. |
 | `--column` | string |  | Return only the steps that created or changed this column of the final data, in detail. Write the exact column name. Cannot be used with --steps. |
 | `--include-scripts` | boolean | Only with --steps or --column | Include the R code of the steps. Only for data whose rows may be shared. |
 | `--cursor` | string | Not with --steps or --column | To continue an outline that did not fit in one result, pass range.next_cursor of the previous result. |
@@ -1134,7 +1134,7 @@ An outline that does not fit in one result continues with --cursor. When the ste
 | Use either steps or column, not both. (INVALID_PARAMETER) | Pass only one of --steps and --column. |
 | include_scripts works only together with steps or column. (INVALID_PARAMETER) | Add --steps or --column when you use --include-scripts. |
 | cursor belongs to an older version of this data. Call again without cursor. (INVALID_PARAMETER) | The data was published again. Run the command again without --cursor. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server dataframe get-schema](#dataframe-get-schema), [expl server dataset query](#dataset-query)
 
@@ -1295,7 +1295,7 @@ Pass the number of rows you have already read to offset to read on. One call ret
 | --- | --- |
 | You need totals, sorting or filtering | Use chart query. |
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server chart query](#chart-query), [expl server chart get-image](#chart-get-image)
 
@@ -1338,7 +1338,7 @@ expl server chart get-image <id> --chart <chart> --json
 
 Replace \<id\> with the id of the note and \<chart\> with a chart name from the result of fetch.
 
-Example of the output shape; values are illustrative. The example is for the chart iJ6kL7mN (Monthly Sales Trend) in the dashboard dE5fG6hI7j. The image_path line (where the image is saved) is left out. A chart published without a stored image returns NOT_FOUND ("This chart has no stored image"); use chart get-data for it.
+Example of the output shape; values are illustrative. The example is for the chart qR0sT1uV (Monthly Sales Trend) in the dashboard pQ9rS0tU1v. The image_path line (where the image is saved) is left out. A chart published without a stored image returns NOT_FOUND ("This chart has no stored image"); use chart get-data for it.
 
 **Result**
 
@@ -1346,14 +1346,14 @@ Example of the output shape; values are illustrative. The example is for the cha
 {
   "success": true,
   "item": {
-    "id": "dE5fG6hI7j",
+    "id": "pQ9rS0tU1v",
     "type": "dashboard",
     "title": "Sales Orders Dashboard"
   },
   "summary": "Returned the image of chart \"Monthly Sales Trend\" (600x400).",
   "result": {
     "chart": {
-      "name": "iJ6kL7mN",
+      "name": "qR0sT1uV",
       "title": "Monthly Sales Trend",
       "type": "line"
     },
@@ -1404,7 +1404,7 @@ Example of the output shape; values are illustrative. The example is for the cha
     "The image is the chart as saved when it was published. Read exact numbers with chart_get_data, not from the image.",
     "The data was refreshed at 2026-11-14T22:02:21.534Z, after this image was captured at 2026-11-12T09:26:51.086Z. The image may not show the current numbers; use chart_get_d…"
   ],
-  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/dE5fG6hI7j"
+  "url": "https://exploratory.io/dashboard/aB3cD4eF5g/pQ9rS0tU1v"
 }
 ```
 
@@ -1424,7 +1424,7 @@ There is no paging.
 | What you see | What to do |
 | --- | --- |
 | A may_be_stale warning appears | The image may be older than the latest data update. Check the latest numbers with chart get-data. The warning is printed to standard error. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server chart get-data](#chart-get-data)
 
@@ -1432,7 +1432,7 @@ Related: [expl server chart get-data](#chart-get-data)
 
 ## expl server analytics get-result
 
-Get the result of an analytics (regression, correlation, chi-square test and so on) as structured data.
+Get the results of analytics (regression, correlation, chi-square test and so on) as structured data.
 
 <a id="analytics-get-result-usage"></a>
 
@@ -1452,7 +1452,7 @@ expl server analytics get-result <id> [flags]
 | --- | --- | --- | --- |
 | `--id` | string | Required | The id of the note, dashboard or slide that holds the analytics, or of an analytics published on its own. Write it right after the command or pass it with --id. |
 | `--analytics` | string | Required for an item embedded in a note, dashboard or slide | The name of an analytics inside a note, dashboard or slide. It is metadata.blocks\[\].name in the result of fetch. |
-| `--tables` | scalarArray |  | The ids of the tables to return (available_tables\[\].id). By default it returns the tables that answer the analysis. |
+| `--tables` | list of values |  | The ids of the tables to return (available_tables\[\].id). By default it returns the tables that answer the analysis. |
 | `--limit` | integer |  | The maximum number of rows per table, up to 100. |
 
 <a id="analytics-get-result-examples"></a>
@@ -1636,7 +1636,7 @@ Use --limit to cap the rows of each table. There is no way to page through the r
 | What you see | What to do |
 | --- | --- |
 | You do not know the name of the analytics | Look at metadata.blocks in the result of fetch. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server fetch](#fetch)
 
@@ -1665,13 +1665,13 @@ expl server chart query [flags]
 | `--id` | string | Required unless queries is used | The id of the note, dashboard or slide that holds the chart, from a search result or a fetch. |
 | `--chart` | string | Required unless queries is used | The name of the chart: metadata.charts\[\].name in the result of fetch (letters, digits, _ and -). |
 | `--mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
-| `--columns` | scalarArray |  | Only in rows mode. 1 to 50 unique column names to return. |
-| `--filters` | json |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
-| `--dimensions` | json |  | Only in aggregate mode. 0 to 5 columns to group by. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
-| `--metrics` | json | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
-| `--sort` | json |  | The sort order, up to 3 entries. |
+| `--columns` | list of values |  | Only in rows mode. 1 to 50 unique column names to return. |
+| `--filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
+| `--dimensions` | JSON |  | Only in aggregate mode. 0 to 5 columns to group by. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
+| `--metrics` | JSON | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
+| `--sort` | JSON |  | The sort order, up to 3 entries. |
 | `--limit` | integer |  | The maximum number of result rows. rows: default 100, at most 1,000. aggregate: default 100, at most 500. There is no paging. |
-| `--queries` | json |  | Several independent queries in one call, up to 10. Each takes id, chart and the same fields as a single query. |
+| `--queries` | JSON |  | Several independent queries in one call, up to 10. Each takes id, chart and the same fields as a single query. |
 
 <a id="chart-query-json-arguments"></a>
 
@@ -1796,7 +1796,7 @@ There is no paging. When has_more in the result is true, narrow the filters or a
 | What you see | What to do |
 | --- | --- |
 | CHART_REAGGREGATION | You are aggregating a column the chart has already aggregated. Mention the warning or use result.excluded_totals. |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server chart get-data](#chart-get-data), [expl server chart get-image](#chart-get-image)
 
@@ -1804,7 +1804,7 @@ Related: [expl server chart get-data](#chart-get-data), [expl server chart get-i
 
 ## expl server desktop mcp-setup-guide
 
-Return the steps and links for connecting an AI client to Exploratory Desktop.
+Return the steps and links for connecting an AI tool to Exploratory Desktop.
 
 <a id="desktop-mcp-setup-guide-usage"></a>
 
@@ -1876,6 +1876,6 @@ There is no paging.
 
 | What you see | What to do |
 | --- | --- |
-| Run "expl server login". | Sign-in is missing or the token was rejected. Run expl server login. |
+| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [Sign in](login.md)

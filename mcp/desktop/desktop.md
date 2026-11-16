@@ -14,7 +14,7 @@ It works with these items.
 
 > **It can change and delete**
 >
-> Some tools delete things, publish and unpublish notes, dashboards and data frames, or run R code. Review what your agent proposes before it writes.
+> Some tools delete things, publish notes, dashboards, data frames and projects, unpublish notes, dashboards and projects, or run R code. Review what the AI proposes before it writes.
 
 It works through the app on your computer, as the user signed in to the app. It is separate from the Server MCP, which reads content published on exploratory.io.
 
@@ -24,7 +24,7 @@ It works through the app on your computer, as the user signed in to the app. It 
 
 - Exploratory Desktop v17 or later, signed in and running
 - The command exploratory-mcp on your PATH. The plugin starts this command. Desktop puts it on your PATH automatically when it starts; no action is needed.
-- On macOS, if you keep Desktop open from the disk image, the command is not added automatically. Move Desktop to /Applications or ~/Applications and start it from there.
+- On macOS, if you run Desktop directly from the disk image, the command is not added automatically. Move Desktop to /Applications or ~/Applications and start it from there.
 - For Claude Code: node on your PATH. The plugin's review hooks use it.
 - An AI tool: Claude Code, Codex, Cursor or Antigravity
 

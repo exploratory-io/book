@@ -95,7 +95,7 @@ You do not have to read a long note in full. To read one heading, pass a heading
 expl server fetch <id> --section s2 --json
 ```
 
-Replace s2 with a heading id from metadata.toc. If metadata.toc is not returned (a short note), search with --query first and use a heading id shown in the result.
+Replace s2 with a heading id from metadata.toc. If metadata.toc is not returned, add --include-toc to the command, or search with --query first and use a heading id shown in the result.
 
 To find a topic, pass words to --query. It returns the paragraphs that contain any of the space-separated words, each with its heading path.
 

@@ -7,8 +7,8 @@ Import data into a project as a data frame, check its columns, and add wrangling
 ## Before you start
 
 - Exploratory Desktop is running and the project is open ([Choose a project](projects.md)). Check with expl status.
-- The commands that create or change things (create-source, apply-step and the others in this page) work only when Allow create, edit and delete is on in the system settings (MCP / CLI).
-- Running R (run-r), ai-wrangle and deleting steps ask for confirmation first. In a terminal, expl asks Continue? \[y/N\]. From a script or an AI agent, add --yes. See [Confirmation](confirmation.md).
+- The commands that create or change things (create-source, apply-step and the others in this page) work only when Allow create, edit and delete is on in System Settings > MCP / CLI.
+- Running R (run-r), ai-wrangle and deleting steps ask for confirmation first. In a terminal, expl asks Continue? \[y/N\]. From a script or an AI agent, add --yes. See [Confirmation and long-running operations](confirmation.md).
 
 <a id="steps"></a>
 

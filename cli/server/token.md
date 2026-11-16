@@ -26,7 +26,7 @@ Choose Create API key. Enter a name that says where the key is used, for example
 
 ### 3. Choose when it expires
 
-Choose 7, 30, 90 or 365 days, a date, or No expiry. The default is 30 days. An administrator can set a shorter maximum.
+Choose 7, 30, 90 or 365 days, a date, or No expiry. The default is 30 days. An administrator can set a shorter maximum. Then choose Create.
 
 ### 4. Copy the key
 
@@ -110,7 +110,7 @@ Revoked ci.
 
 ## Revoke a key
 
-Revoke a key when it leaks or when you no longer need it. Choose Revoke in Account Settings \> API Keys, or run expl server token revoke \<name\> after a browser login. The key stops working right away.
+Revoke a key when it leaks or when you no longer need it. Choose Revoke in Account Settings \> API Keys, or run expl server token revoke \<name\> after a browser login. The command sends the revocation without asking for confirmation, and without --yes. The key stops working right away.
 
 A call with a revoked, expired or wrong key exits with code 4 and prints: The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED)
 

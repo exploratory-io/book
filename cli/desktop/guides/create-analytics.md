@@ -1,6 +1,6 @@
 # Create analytics
 
-Create an analytics (regression, classification, clustering and so on) from a data frame, and read its result.
+Create analytics (regression, classification, clustering and so on) from a data frame, and read its result.
 
 <a id="before"></a>
 
@@ -8,7 +8,7 @@ Create an analytics (regression, classification, clustering and so on) from a da
 
 - Exploratory Desktop is running and the project is open ([Choose a project](projects.md)). Check with expl status.
 - You know the id of the data frame and its column names (expl dataframe list and expl dataframe get-schema \<dataframe_id\>).
-- analytics add and analytics edit work only when Allow create, edit and delete is on in the system settings (MCP / CLI). They do not ask for confirmation; deleting an analytics does. See [Confirmation](confirmation.md).
+- analytics add and analytics edit work only when Allow create, edit and delete is on in System Settings > MCP / CLI. They do not ask for confirmation; deleting analytics does. See [Confirmation and long-running operations](confirmation.md).
 
 <a id="steps"></a>
 
@@ -32,13 +32,19 @@ Replace \<analysis_type\> with an id from step 1. The result shows the slots (wh
 
 ### 3. Create it
 
---analysis-type and --slots are required. --slots is a JSON object that puts column names in the slots, with the slot name as the key: a string for a slot of one column, a list for a slot of several columns. --settings takes a JSON object of the setting names from step 2 (a true or false setting is the string "TRUE" or "FALSE").
+--analysis-type and --slots are required. --slots is a JSON object that puts column names in the slots, with the slot name as the key: a string for a slot of one column, an array for a slot of several columns. --settings takes a JSON object of the setting names from step 2 (a true or false setting is the string "TRUE" or "FALSE").
 
 ```sh
 expl analytics add --data-frame-id <dataframe_id> --analysis-type <analysis_type> --slots @slots.json --title "Sales drivers"
 ```
 
-Write slots.json with the slot names that get-template returned and the column names of get-schema. The command creates the analytics and runs it. The result carries the id (analyticsId) and the state of each output.
+Write slots.json with the slot names that get-template returned and the column names of get-schema. For example, for the correlation type (do_cor), which has one slot named columns that takes several columns:
+
+```json
+{"columns": ["Sales", "Ad Spend", "Visitors"]}
+```
+
+Settings go in settings.json in the same way, for example {"cor_method": "spearman"}. Other types have other slot and setting names, so copy them from get-template. The command creates the analytics and runs it. The result carries the id (analyticsId) and the state of each output.
 
 ### 4. Read the result
 
@@ -66,7 +72,7 @@ Pass only what changes: --slots, --settings, --title, --analysis-type and so on.
 | PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](../exit-codes.md). |
 | NO_DATA_FRAME | Add --data-frame-id \<dataframe_id\>. |
 | An unknown name is rejected | Look up the slot or setting name again with expl analytics get-template. |
-| The slots are empty | An analytics cannot be created without columns in its slots. |
+| The slots are empty | Analytics cannot be created without columns in its slots. |
 
 For the arguments of any command, run expl \<command\> --help or expl tools describe "\<command\>".
 

@@ -12,7 +12,7 @@ Server MCP calls run as the signed-in user. They never go beyond what that user 
 
 ## What publishers can do
 
-A publisher can turn off MCP access for each piece of published content. A publisher can also keep the rows of data private. The publisher can still share its summary.
+A publisher can turn off MCP access for each piece of published content. A publisher can also keep the rows of data private. Even then, the publisher can share a summary of the data.
 
 <a id="records"></a>
 
@@ -51,7 +51,7 @@ A call without a valid token returns HTTP 401. The response has a WWW-Authentica
 
 A key that fails gets 401 or 403 with WWW-Authenticate: Bearer error="…", error_description="…". Unlike the 401 above, this header has no resource_metadata, so a client that sends a fixed header does not start the sign-in. After more than 30 refused keys from one address within 15 minutes (counted per IPv4 address, or per IPv6 /64 range), the answer is 429.
 
-The first sign-in shows a consent page. To see and revoke connected clients, open Account Settings and go to Connected AI Apps. To sign in again after a 401, see [Troubleshooting](troubleshooting.md#signin).
+The first sign-in shows a consent page. That page says you can revoke access in "Settings > Connected apps". It links to Account Settings, where the section is named Connected AI Apps (see [Disconnect](#disconnect)). To sign in again after a 401, see [Troubleshooting](troubleshooting.md#signin).
 
 <a id="disconnect"></a>
 

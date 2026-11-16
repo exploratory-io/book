@@ -18,7 +18,7 @@ Server commands (expl server) read published content. Desktop commands can also 
 
 An operation that is hard to undo asks for confirmation before it runs.
 
-For how confirmation works and how to not wait, see [Confirmation and long-running operations](guides/confirmation.md).
+For how confirmation works and how to avoid waiting, see [Confirmation and long-running operations](guides/confirmation.md).
 
 <a id="start"></a>
 

@@ -11,4 +11,4 @@ Look up what you need about the tools, the limits, the errors and the permission
 
 To connect, see [Get started](get-started.md). What you decide in Desktop (confirmation, the range of data, the plugin settings) is on [Permissions and settings](permissions.md), and installing, updating and removing the plugin is on [Install the plugin](install.md).
 
-To look up the commands of a terminal, see [Reference](../../cli/desktop/reference.md) of CLI Desktop.
+To look up terminal commands, see the CLI Desktop [Reference](../../cli/desktop/reference.md).

@@ -13,6 +13,6 @@
 | 何が送られ、何が記録されるか | [データと権限](data_ja.md) |
 | 症状からの対処 | [トラブルシューティング](troubleshooting_ja.md) |
 
-インストールと最初の 1 回は、[はじめる](get-started_ja.md)を参照してください。
+インストールと最初のコマンドの実行は、[はじめる](get-started_ja.md)を参照してください。
 
 AI ツールが使える道具を調べるときは、MCP Desktop の[リファレンス](../../mcp/desktop/reference_ja.md)を参照してください。

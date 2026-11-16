@@ -1,6 +1,6 @@
 # Exploratory MCP: Server
 
-Read notes, dashboards, charts, analytics and data published on exploratory.io from an AI tool. An AI tool is an app where you ask an AI to do work, such as Claude Code. MCP (Model Context Protocol) is a shared standard for AI apps to connect to outside services and use their features.
+Read notes, dashboards, charts, analytics and data published on exploratory.io from an AI tool. An AI tool is an app where you ask an AI to do work, such as Claude Code. MCP (Model Context Protocol) is a shared standard for AI tools to connect to outside services and use their features.
 
 <a id="readonly"></a>
 
@@ -10,7 +10,7 @@ Read notes, dashboards, charts, analytics and data published on exploratory.io f
 >
 > This server cannot create, edit, publish or delete content. The one exception is dataframe_export, which creates a download link that is valid for 15 minutes.
 
-It reads what you already published and what you can view.
+It reads published content that you can view.
 
 <a id="cannot"></a>
 
@@ -41,4 +41,4 @@ When you connect, you sign in to Exploratory and approve the access. If your set
 - [Reference](reference.md) - Look up the tools, limits and errors, and data and permissions.
 - [Troubleshooting](troubleshooting.md) - Find what to do from a symptom.
 
-To create and edit projects in Exploratory Desktop on your computer, use the [Desktop MCP](../desktop/desktop.md) instead. To use it from a terminal or a script, see [Exploratory CLI](../../cli/server/server.md).
+To create and edit projects in Exploratory Desktop on your computer, use the [Desktop MCP](../desktop/desktop.md) instead. To read published content from a terminal or a script, see [Exploratory CLI](../../cli/server/server.md).

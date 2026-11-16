@@ -1,6 +1,15 @@
-# Create and duplicate dashboards
+# Duplicate dashboards
 
 Duplicate a dashboard with a different title. jq (a command that processes JSON) reshapes the definition you get into the shape that create takes.
+
+<a id="before"></a>
+
+## Before you start
+
+- Exploratory Desktop is running and the project is open ([Choose a project](projects.md)). Check with expl status.
+- You know the id of the original dashboard (expl dashboard list).
+- dashboard create works only when Allow create, edit and delete is on in System Settings > MCP / CLI.
+- jq is installed. The commands on this page are written for a bash shell.
 
 <a id="steps"></a>
 

@@ -12,7 +12,7 @@
 
 ## 人が読む形と JSON
 
-既定は人が読む形です。--json を付けると、結果を 1 つの JSON で出します。expl project use、expl skill、expl completion は例外で、常に文字で出力します。
+既定は人が読む形です。--json を付けると、結果を 1 つの JSON で出します。expl project use、expl skill、expl completion は例外で、常にテキストで出力します。
 
 失敗したときは、--json では標準出力に次のような JSON が出ます。message はエラーによって変わり、details と suggested_actions には、補足があるときだけ内容が入ります。警告は --json でも標準エラーに 1 行ずつ出ます。
 

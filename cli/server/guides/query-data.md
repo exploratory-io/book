@@ -108,6 +108,14 @@ Replace \<dataset_id\> with the data id and region with a real column name. The 
 - rows returns at most 1,000 rows and aggregate at most 500. There is no paging. When has_more in the result is true, narrow the query or aggregate.
 - The result includes the data version and update time. When you report the numbers, say which data they are based on.
 
+To get the rows that match a condition, use --mode rows. It needs --columns, and --filters narrows the rows. This example returns two columns of the rows where region is Kanto.
+
+```sh
+expl server dataset query <dataset_id> --mode rows --columns '["region","sales"]' --filters '{"column":"region","operator":"eq","value":"Kanto"}' --limit 10 --json
+```
+
+operator is the comparison. The operators a data item supports are in the result of expl server dataframe get-schema \<id\> --detail full. For how to combine several conditions, see [Filter conditions](../commands.md#dataset-query-json-arguments).
+
 When the result is too large, save it as a CSV or Parquet file with dataframe export. To join several data items, see the [dataset query](../commands.md#dataset-query) page.
 
 <a id="json"></a>
@@ -141,10 +149,10 @@ Data published without its full data cannot be queried on the server. dataset qu
 
 | What you see | What to do |
 | --- | --- |
-| DATASET_UNAVAILABLE | The publisher needs to republish it from the current Exploratory Desktop. |
+| DATASET_UNAVAILABLE | The publisher needs to republish it from the latest version of Exploratory Desktop. |
 
 Search results and --detail light do not show whether a data item can be queried. Run --detail full and check that query.available in the result is not false.
 
 ```sh
-expl server dataframe get-schema <id> --json
+expl server dataframe get-schema <id> --detail full --json
 ```
