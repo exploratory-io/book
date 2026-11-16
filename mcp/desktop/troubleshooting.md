@@ -1,4 +1,4 @@
-# Troubleshooting (Desktop)
+# Troubleshooting
 
 What to do for the messages you may see with the Desktop MCP.
 
