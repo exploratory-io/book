@@ -6,7 +6,7 @@ Find a fix by symptom.
 
 ## Check the state first
 
-Run expl status. Exit code 0 from expl tools list does not mean that Desktop is connected (see [Common commands](commands.md#cmd-check)). To see what is sent and received, add --verbose; it prints to standard error. Review the output before you paste it anywhere.
+Run expl status. Exit code 0 from expl tools list does not mean that Desktop is connected (see [All commands](commands.md#cmd-check)). To see what is sent and received, add --verbose; it prints to standard error. Review the output before you paste it anywhere.
 
 <a id="contact"></a>
 

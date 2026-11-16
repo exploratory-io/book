@@ -57,7 +57,7 @@ The commands you will use most. For the generated commands, check the arguments 
 | expl project use \<id\|name\> | Choose the project later commands work on |
 | expl project open \<id\> | Open a project |
 
-The commands for data, charts, notes and dashboards are in [Common commands](commands.md).
+The commands for data, charts, notes and dashboards are in [All commands](commands.md).
 
 <a id="difference"></a>
 

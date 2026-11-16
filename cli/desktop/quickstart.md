@@ -75,5 +75,5 @@ If something fails, see the troubleshooting page.
 ## Next
 
 - [Choose a project](guides/projects.md) - The order in which the project is decided.
-- [Common commands](commands.md) - Find a command by purpose.
+- [All commands](commands.md) - Find a command by purpose.
 - [Troubleshooting](troubleshooting.md) - Find a fix by symptom.

@@ -57,7 +57,7 @@ expl project list
 | expl project use \<id\|name\> | 以後のコマンドの対象を決める |
 | expl project open \<id\> | プロジェクトを開く |
 
-データ、チャート、ノート、ダッシュボードのコマンドは、[よく使うコマンド](commands_ja.md)にあります。
+データ、チャート、ノート、ダッシュボードのコマンドは、[コマンド一覧](commands_ja.md)にあります。
 
 <a id="difference"></a>
 

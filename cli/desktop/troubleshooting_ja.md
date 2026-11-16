@@ -6,7 +6,7 @@
 
 ## まず状態を確かめる
 
-expl status を実行します。expl tools list が終了コード 0 で終わっても、Desktop に接続できているとは限りません（[よく使うコマンド](commands_ja.md#cmd-check)を参照）。送受信の内容を見るときは、--verbose を付けます。標準エラーに出力されます。貼り付ける前に、中身を確認してください。
+expl status を実行します。expl tools list が終了コード 0 で終わっても、Desktop に接続できているとは限りません（[コマンド一覧](commands_ja.md#cmd-check)を参照）。送受信の内容を見るときは、--verbose を付けます。標準エラーに出力されます。貼り付ける前に、中身を確認してください。
 
 <a id="contact"></a>
 
