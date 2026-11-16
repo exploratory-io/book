@@ -7,6 +7,7 @@ Create and edit projects in Exploratory Desktop on your computer from an AI clie
 - [Permissions and settings](limits.md) - What you decide in Desktop, and what is sent.
 - [Examples](examples.md) - What you can ask the AI.
 - [Tools](tools.md) - What the AI can use.
+- [Limits and errors](errors.md) - What the Desktop MCP refuses or stops, and what to do.
 - [Troubleshooting](troubleshooting.md) - Find what to do from a message.
 
 To read content published on exploratory.io, use the [Server MCP](../server/server.md) instead.

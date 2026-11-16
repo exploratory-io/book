@@ -30,7 +30,7 @@ The Desktop plugin has four settings in Claude Code. Each value is the string `"
 | `ai_summary` | `"false"` | Creates and saves an AI Summary for the charts and analytics you create. |
 | `save_comments` | `"false"` | Saves an explanatory comment on the charts you create. |
 | `review_hook` | `"false"` | Asks the AI to review its work. |
-| `plan_gate` | `"true"` | When the AI uses the exploratory-analysis skill and does R work, checks that a scenario and a creation plan are saved before the create calls. See [Troubleshooting](troubleshooting.md#trouble). |
+| `plan_gate` | `"true"` | When the AI uses the exploratory-analysis skill and does R work, checks that a scenario and a creation plan are saved before the create calls. See [Limits and errors](errors.md#gates). |
 
 To see the settings, run `claude plugin configure exploratory@exploratory`. These settings are separate from the System Settings \> MCP / CLI options above.
 

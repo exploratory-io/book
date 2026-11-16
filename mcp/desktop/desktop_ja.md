@@ -7,6 +7,7 @@ AI クライアントから、あなたのコンピューターの Exploratory D
 - [許可の範囲と設定](limits_ja.md) - Desktop で決める設定と、送られる情報です。
 - [使い方の例](examples_ja.md) - AI に頼めることの例です。
 - [使える道具](tools_ja.md) - AI が使える操作です。
+- [制限とエラー](errors_ja.md) - Desktop の MCP が断る、または止めるものと、その対処です。
 - [トラブルシューティング](troubleshooting_ja.md) - 表示されたメッセージから対処を探します。
 
 exploratory.io に公開された内容を読むときは、[Server の MCP](../server/server_ja.md) を使います。
