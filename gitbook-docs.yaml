@@ -14,7 +14,7 @@ site:
           path: en
           default: true
           content:
-            directory: ./
+            directory: ./en
             language: en
         - type: space
           key: space-docs-ja
