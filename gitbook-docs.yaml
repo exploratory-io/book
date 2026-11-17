@@ -1,4 +1,3 @@
-# Git Sync reads this file: ./en is English, ./ja is Japanese. Do not change the keys.
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
   title: Exploratory
