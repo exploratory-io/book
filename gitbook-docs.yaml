@@ -10,17 +10,17 @@ site:
       default: true
       children:
         - type: space
+          key: space-docs
+          title: English
+          path: en
+          default: true
+          content:
+            directory: ./en
+            language: en
+        - type: space
           key: space-docs-ja
           title: 日本語
           path: ja
-          default: true
           content:
-            directory: ./docs/ja
+            directory: ./ja
             language: ja
-    - type: space
-      key: space-docs
-      title: Documentation
-      path: docs
-      default: true
-      content:
-        directory: ./en
