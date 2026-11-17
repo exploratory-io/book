@@ -16,7 +16,7 @@ The commands for signing in and managing the connection are on their own pages: 
 | [expl server fetch](#fetch) | `expl server fetch <id> [flags]` | `--id` `--language` `--section` `--cursor` `--query` `--include-toc` |
 | [expl server dataframe get-schema](#dataframe-get-schema) | `expl server dataframe get-schema <id> [flags]` | `--id` `--detail` `--language` `--include-unapproved` |
 | [expl server dataframe preview](#dataframe-preview) | `expl server dataframe preview <id> [flags]` | `--id` `--offset` `--limit` |
-| [expl server dataset query](#dataset-query) | `expl server dataset query [<dataset_id>] [flags]` | `--dataset-id` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` `--datasets` `--root-alias` `--joins` `--source-filters` `--allow-many-to-many` `--queries` `--include-answer-context` `--language` |
+| [expl server dataset query](#dataset-query) | `expl server dataset query [<dataset_id>] [flags]` | `--dataset-id` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` `--datasets` `--root-alias` `--joins` `--source-filters` `--allow-many-to-many` `--queries` |
 | [expl server dataframe export](#dataframe-export) | `expl server dataframe export <dataset_id> [flags]` | `--dataset-id` `--format` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` |
 | [expl server dataframe get-wrangling](#dataframe-get-wrangling) | `expl server dataframe get-wrangling <id> [flags]` | `--id` `--steps` `--column` `--include-scripts` `--cursor` `--language` |
 | [expl server chart get-data](#chart-get-data) | `expl server chart get-data <id> [flags]` | `--id` `--chart` `--offset` `--limit` |
@@ -813,8 +813,6 @@ expl server dataset query [<dataset_id>] [flags]
 | `--source-filters` | JSON |  | Narrows the rows of each data item before the join. For each alias, write conditions with that data item's plain column names. Use it for a condition on the side of a left join that should not drop rows. |
 | `--allow-many-to-many` | boolean |  | Enable it only when a key repeats on both sides of a join and the rows multiplying is what you want. |
 | `--queries` | JSON |  | Several independent queries in one call, up to 5, run in parallel on the server. Each takes dataset_id (or datasets for a join) and the same fields as a single query. |
-| `--include-answer-context` | boolean |  | On by default. Turn it off to leave answer_context (an interpretation of the query and the descriptions and units of the columns) out of the result. Warnings are still returned. It works only on a server that returns answer_context. |
-| `--language` | string |  | The language of the descriptions, units, labels and metric names in answer_context: ja or en. By default it is the base language of the data. A text that does not exist in the language is returned in the other one and marked. It works only on a server that returns answer_context. Values: `ja`, `en` |
 
 <a id="dataset-query-json-arguments"></a>
 
