@@ -1,19 +1,13 @@
 # はじめに
 
-Exploratory のドキュメントのうち、日本語で読めるページをまとめています。
+Exploratory はデータ分析のツールです。Exploratory Desktop は、データの取り込み、加工、可視化、統計と機械学習のアルゴリズムによる分析、ダッシュボードとノートによる共有を行うデスクトップアプリです。裏側で R を使っているので、プログラミングをせずに R のさまざまな機能を使えます。作ったものは exploratory.io の Exploratory Server に公開できます。
 
-日本語で全体を読めるのは、次の 2 つです。
+AI アプリから MCP で使うことも、ターミナルや自動処理からコマンドライン（CLI）で使うこともできます。
 
-- [Exploratory MCP](mcp/mcp.md): AI アプリから Exploratory に接続します。
-- [Exploratory CLI](cli/cli.md): ターミナルから expl コマンドで Exploratory を使います。
+| やりたいこと | 読むところ |
+| --- | --- |
+| AI アプリを Exploratory につなぐ | [Exploratory MCP](mcp/mcp.md) |
+| ターミナルや自動処理から Exploratory を使う | [Exploratory CLI](cli/cli.md) |
+| Exploratory Desktop の機能を調べる | [製品の機能](product-features.md)とそれ以降の章 |
 
-そのほかの章は、一部のページだけを日本語で読めます。日本語で読める章は次のとおりです。
-
-- [製品の機能](product-features.md)
-- [データのインポート](data_import.md)
-- [データの加工](data-wrangling.md)
-- [ビジュアライゼーション](visualization.md)
-- [セットアップ](setup.md)
-- [診断](diagnostics.md)
-
-日本語のページがないものは英語で提供しています。英語のページは、画面右上の言語の切り替えから読めます。
+日本語のページがないものは、画面右上の言語の切り替えから英語で読めます。
