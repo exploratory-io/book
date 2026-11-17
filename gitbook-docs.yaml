@@ -1,11 +1,25 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
-  title: Exploratory Docs
+  title: Exploratory
   structure:
-    - type: space
-      key: space-docs
+    - type: section
+      key: section-docs
       title: Documentation
       path: docs
       default: true
-      content:
-        directory: ./
+      children:
+        - type: space
+          key: space-docs
+          title: English
+          path: en
+          default: true
+          content:
+            directory: ./
+            language: en
+        - type: space
+          key: space-docs-ja
+          title: 日本語
+          path: ja
+          content:
+            directory: ./ja
+            language: ja
