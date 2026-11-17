@@ -1,10 +1,13 @@
-Exploratory Desktop Documentation
-========
+# Exploratory Documentation
 
-# Introduction
+Exploratory is a data analysis tool. Exploratory Desktop is a desktop application for extracting data, wrangling data, visualizing data, running statistical and machine learning algorithms, and communicating insights with others via Dashboard and Note. It uses R as its backend, so you can use many capabilities of R without programming. You can publish your work to Exploratory Server at exploratory.io.
 
-Exploratory Desktop is a simple and modern UI experience for extracting data, wrangling with data, visualizing data, using statistical and machine learning algorithms to analyze data, and communicating insights with others via Dashboard, Note, and Slides.
+You can also use Exploratory from an AI app through MCP, or from a terminal or an automated process through the command line (CLI).
 
-It utilizes R as its backend and provides the best UI experience for accessing many amazing capability of R without programming.
+| What you want to do | Where to read |
+| --- | --- |
+| Connect an AI app to Exploratory | [Exploratory MCP](mcp/mcp.md) |
+| Use Exploratory from a terminal or an automated process | [Exploratory CLI](cli/cli.md) |
+| Look up a feature of Exploratory Desktop | [Product Features](product-features.md) and the chapters after it |
 
-This is a documentation about various features of Exploratory Desktop.
+The Japanese pages are available from the language switcher at the top right of the site, or at URLs that start with `/ja`.

@@ -52,7 +52,7 @@ You can quickly apply the color formatting from the "Color Assignment" column me
 ## Fit to Screen
 
 
-You can fit the table to the chart viewing area by the "Fit to Screen" option in the chart property dialog. See [Fit to Screen (Table)](viz/table-fit-to-screen.md) for more details.
+You can fit the table to the chart viewing area by the "Fit to Screen" option in the chart property dialog. See [Fit to Screen (Table)](table-fit-to-screen.md) for more details.
 
 ## Window Calculation 
 
