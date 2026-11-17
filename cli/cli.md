@@ -11,8 +11,6 @@ Use Exploratory from a terminal with the expl command. There are two sides, and 
 - [Server](server/server.md) - Read content published on exploratory.io.
 - [Desktop](desktop/desktop.md) - Work with projects in Exploratory Desktop on your computer.
 
-Read in Japanese: [Overview](cli_ja.md) / [Server](server/server_ja.md) / [Desktop](desktop/desktop_ja.md)
-
 For first-time use, go to Get started. For Server, sign in first ([Sign in](server/login.md)).
 
 - Desktop: [Installation](desktop/install.md), [Get started](desktop/get-started.md)
