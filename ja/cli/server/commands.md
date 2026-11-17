@@ -16,7 +16,7 @@
 | [expl server fetch](#fetch) | `expl server fetch <id> [flags]` | `--id` `--language` `--section` `--cursor` `--query` `--include-toc` |
 | [expl server dataframe get-schema](#dataframe-get-schema) | `expl server dataframe get-schema <id> [flags]` | `--id` `--detail` `--language` `--include-unapproved` |
 | [expl server dataframe preview](#dataframe-preview) | `expl server dataframe preview <id> [flags]` | `--id` `--offset` `--limit` |
-| [expl server dataset query](#dataset-query) | `expl server dataset query [<dataset_id>] [flags]` | `--dataset-id` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` `--datasets` `--root-alias` `--joins` `--source-filters` `--allow-many-to-many` `--queries` `--include-answer-context` `--language` |
+| [expl server dataset query](#dataset-query) | `expl server dataset query [<dataset_id>] [flags]` | `--dataset-id` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` `--datasets` `--root-alias` `--joins` `--source-filters` `--allow-many-to-many` `--queries` |
 | [expl server dataframe export](#dataframe-export) | `expl server dataframe export <dataset_id> [flags]` | `--dataset-id` `--format` `--mode` `--columns` `--filters` `--dimensions` `--metrics` `--sort` `--limit` |
 | [expl server dataframe get-wrangling](#dataframe-get-wrangling) | `expl server dataframe get-wrangling <id> [flags]` | `--id` `--steps` `--column` `--include-scripts` `--cursor` `--language` |
 | [expl server chart get-data](#chart-get-data) | `expl server chart get-data <id> [flags]` | `--id` `--chart` `--offset` `--limit` |
@@ -813,8 +813,6 @@ expl server dataset query [<dataset_id>] [flags]
 | `--source-filters` | JSON |  | 結合の前に、データごとに行を絞ります。alias ごとに、そのデータの列名で条件を書きます。left join で、行を落としたくない側の条件に使います。 |
 | `--allow-many-to-many` | 真偽値 |  | 結合のキーが両側で重複し、行が増えることを承知しているときだけ、有効にします。 |
 | `--queries` | JSON |  | 独立した問い合わせを、1 回の呼び出しにまとめます。5 件までで、サーバー上で並行して実行されます。各問い合わせは、dataset_id（結合する場合は datasets）と、単独の問い合わせと同じ項目を持ちます。 |
-| `--include-answer-context` | 真偽値 |  | 既定は有効です。無効にすると、結果に answer_context（問い合わせの解釈や、列の説明・単位などをまとめたもの）を付けません。警告は無効にしても付きます。answer_context を返す設定のサーバーでだけ使えます。 |
-| `--language` | 文字列 |  | answer_context に入る、説明・単位・ラベル・指標の名前の言語です。ja か en で指定します。省略すると、データの元の言語になります。そのデータにない言語の文は、もう一方の言語で返り、その印が付きます。answer_context を返す設定のサーバーでだけ使えます。値: `ja`, `en` |
 
 <a id="dataset-query-json-arguments"></a>
 

@@ -32,7 +32,7 @@ Get a content id from search or fetch. For charts and analytics embedded in a no
 
 ## Answer a data question
 
-Describe the data and your question. The AI checks the columns and the approved definitions (what a row means, aggregation rules) before it calculates, and uses an approved metric when one matches. Review the aggregation, filters and data date that come with the result.
+Describe the data and your question. The AI checks the columns and the approved definitions (what a row means, aggregation rules) before it calculates. Review the aggregation, filters and data date that come with the result.
 
 <a id="search"></a>
 
