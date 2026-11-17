@@ -12,7 +12,7 @@ This is an example to use alpha function from [psych](https://cran.r-project.org
 
 In this example, psych is already installed as a default dependency package but the function you want to use might be from a package that we don't install as default. In that case, please install the package following this instruction.
 
-[Install R Package](../r_package.md)
+[Install R Package](r_package.md)
 
 ### Add R Script
 
