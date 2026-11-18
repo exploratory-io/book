@@ -1,5 +1,6 @@
 ---
 title: "Radar Chart"
+sidebarTitle: "Radar"
 ---
 
 ![](images/radar.png)

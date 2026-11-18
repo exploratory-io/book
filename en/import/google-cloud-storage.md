@@ -1,5 +1,6 @@
 ---
 title: "Import CSV / Delimited File or Excel File Data from Google Cloud Storage (To be Introduced)"
+sidebarTitle: "Google Cloud Storage"
 ---
 
 You can import CSV / Delimited File or Excel File from Google Cloud Storage.

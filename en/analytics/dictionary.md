@@ -1,5 +1,6 @@
 ---
 title: "How to manage Dictionaries"
+sidebarTitle: "Dictionaries for Text Analysis"
 ---
 
 

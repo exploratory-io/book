@@ -1,5 +1,6 @@
 ---
 title: "Market Basket Analysis - Association Rules"
+sidebarTitle: "Market Basket"
 ---
 
 ## Introduction

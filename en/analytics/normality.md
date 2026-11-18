@@ -1,5 +1,6 @@
 ---
 title: "Normality Test Analytics View"
+sidebarTitle: "Normality Test"
 ---
 
 Runs Normality Test, which checks if distribution of columns can be normal distribution.

@@ -1,5 +1,6 @@
 ---
 title: "Share / Schedule"
+sidebarTitle: "Share/Schedule"
 ---
 
 You can share and schedule your data and charts by publishing to Exploratory Cloud server (exploratory.io).

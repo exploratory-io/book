@@ -1,5 +1,6 @@
 ---
 title: "Type Convert"
+sidebarTitle: "Data Type Conversion"
 ---
 
 Heuristically guess the data type for each column by reading the first 1000 rows, parse the data, and set appropriate data types for all the columns of the data frame

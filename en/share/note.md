@@ -1,5 +1,6 @@
 ---
 title: "How to Share Report (Note or Dashboard)"
+sidebarTitle: "Report (Note / Dashboard)"
 ---
 
 You can simply click 'Publish' button in the report (Note or Dashboard). 

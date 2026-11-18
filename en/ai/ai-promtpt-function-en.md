@@ -1,5 +1,6 @@
 ---
 title: "AI プロンプト関数"
+sidebarTitle: "AI Prompt Function"
 ---
 
 Coming soon!

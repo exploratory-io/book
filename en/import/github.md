@@ -1,5 +1,6 @@
 ---
 title: "Github Issue Data Import"
+sidebarTitle: "Github Issues"
 ---
 
 For Basic Authentication, you can simply type your Github username and password.

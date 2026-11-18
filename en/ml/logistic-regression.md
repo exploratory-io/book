@@ -1,5 +1,6 @@
 ---
 title: "Logistic Regression Model"
+sidebarTitle: "Logistic Regression"
 ---
 
 ## Introduction

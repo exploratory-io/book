@@ -1,5 +1,6 @@
 ---
 title: "Configure Layout and Format"
+sidebarTitle: "Layout Configuration"
 ---
 
 You can configure the layout and format of the chart such as margins, font size or title on the Layout property dialog. You can access to the dialog by clicking "Layout" button at the top right corner of the chart. 

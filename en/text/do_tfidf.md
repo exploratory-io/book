@@ -1,5 +1,6 @@
 ---
 title: "Calculate TF-IDF"
+sidebarTitle: "Calculate tf-idf"
 ---
 
 ## How to Access This Feature

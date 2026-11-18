@@ -1,5 +1,6 @@
 ---
 title: "Multinomial Logistic Regression Model"
+sidebarTitle: "Multinomial Logistic Regression"
 ---
 
 ## Introduction

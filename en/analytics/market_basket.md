@@ -1,5 +1,6 @@
 ---
 title: "Market Basket Analysis Analytics View"
+sidebarTitle: "Market Basket Analysis"
 ---
 
 Find rules of what tend to occur at the same time from transaction data.

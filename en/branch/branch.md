@@ -1,5 +1,6 @@
 ---
 title: "Branch feature"
+sidebarTitle: "Branch"
 ---
 
 ‘Branch’ is similar to the ‘branch’ of source control management system like Git, if you are familiar with the source code management. You can create branches off of the main data frame to have different data wangling steps. All the branches share the same main data frame that they were branched off so any update on the data wangling steps in the main will be automatically reflected in all the branches. Branch can be used for aggregating the data, filtering with different conditions, running multiple experiments, building multiple models, etc.

@@ -1,5 +1,6 @@
 ---
 title: "Exploratory MCP: Desktop"
+sidebarTitle: "Desktop"
 ---
 
 Create and edit projects in Exploratory Desktop on your computer from an AI tool. It works on your local projects, including changes you have not published. An AI tool is an app where you ask an AI to do work, such as Claude Code.

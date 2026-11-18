@@ -1,5 +1,6 @@
 ---
 title: "Presto Data Import"
+sidebarTitle: "Presto"
 ---
 
 You can quickly import data from your Presto into Exploratory.

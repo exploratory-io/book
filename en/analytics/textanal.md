@@ -1,5 +1,6 @@
 ---
 title: "Text Analysis"
+sidebarTitle: "Word Count"
 ---
 
 Runs text analysis based on frequency and co-occurrence of words.

@@ -1,5 +1,6 @@
 ---
 title: "Import CSV / Delimited File Data"
+sidebarTitle: "CSV / Delimited File"
 ---
 
 You can import both local and remote CSV / Delimited File Data quickly.

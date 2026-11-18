@@ -1,5 +1,6 @@
 ---
 title: "Bar Chart"
+sidebarTitle: "Bar"
 ---
 
 ![](images/bar.png)

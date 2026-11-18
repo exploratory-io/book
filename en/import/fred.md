@@ -1,5 +1,6 @@
 ---
 title: "FRED (Federal Reserve of Economic Data) Data Import"
+sidebarTitle: "FRED - Federal Reserve of Economic Data"
 ---
 
 ## 1. Obtain API Key.

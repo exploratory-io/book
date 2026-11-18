@@ -1,5 +1,6 @@
 ---
 title: "Import Log File Data"
+sidebarTitle: "Log File"
 ---
 
 You can import both local and remote Log File Data quickly.

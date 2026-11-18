@@ -1,5 +1,6 @@
 ---
 title: "Currency Exchange Rate Data"
+sidebarTitle: "Currency Exchange Rate"
 ---
 
 You can quickly get the currency exchange rate data that is hosted by Alpha Vantage by calling an API from the tidyquant (R package) with R Script data source option in Exploratory.

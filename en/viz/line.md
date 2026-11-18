@@ -1,5 +1,6 @@
 ---
 title: "Line Chart"
+sidebarTitle: "Line"
 ---
 
 ![](images/line.png)

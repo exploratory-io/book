@@ -1,5 +1,6 @@
 ---
 title: "Color setting"
+sidebarTitle: "Color Setting"
 ---
 
 You can update the color setting from the Color setting dialog.

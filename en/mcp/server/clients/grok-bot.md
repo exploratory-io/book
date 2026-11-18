@@ -1,5 +1,6 @@
 ---
 title: "Connect Grok Bot"
+sidebarTitle: "Grok Bot"
 ---
 
 After you connect, an AI can read notes and data published on Exploratory. You add the Exploratory server in Grok Bot as a custom connector.

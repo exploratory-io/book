@@ -1,5 +1,6 @@
 ---
 title: "Connect other clients"
+sidebarTitle: "Other clients"
 ---
 
 After you connect, an AI can read notes and data published on Exploratory. Any MCP client that supports Streamable HTTP and OAuth can connect with the server URL.

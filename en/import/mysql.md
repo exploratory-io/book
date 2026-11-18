@@ -1,5 +1,6 @@
 ---
 title: "MariaDB (MySQL) Data Import"
+sidebarTitle: "MariaDB / MySQL DB"
 ---
 
 You can quickly import data from your MySQL Database into Exploratory.

@@ -1,5 +1,6 @@
 ---
 title: "Database Connection"
+sidebarTitle: "Create Connection"
 ---
 
 You can register database connection configuration.

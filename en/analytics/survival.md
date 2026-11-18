@@ -1,5 +1,6 @@
 ---
 title: "Survival Analysis"
+sidebarTitle: "Survival Curve"
 ---
 
 Calculates Survival Curve (Kaplan-Meier estimator) from start time, end time, and survival status.

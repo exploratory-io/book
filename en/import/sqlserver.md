@@ -1,5 +1,6 @@
 ---
 title: "SQLServer Data Import"
+sidebarTitle: "SQLServer (DSN)"
 ---
 
 You can quickly import data from your  SQLServer into Exploratory.

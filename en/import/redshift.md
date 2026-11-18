@@ -1,5 +1,6 @@
 ---
 title: "Amazon Redshift Database Data Import"
+sidebarTitle: "Amazon Redshift"
 ---
 
 You can quickly import data from your Amazon Redshift Database into Exploratory.

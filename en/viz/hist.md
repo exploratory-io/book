@@ -1,5 +1,6 @@
 ---
 title: "Histogram Chart"
+sidebarTitle: "Histogram"
 ---
 
 ![](images/hist1.png)

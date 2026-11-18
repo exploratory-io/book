@@ -1,5 +1,6 @@
 ---
 title: "How to search the Project"
+sidebarTitle: "Search"
 ---
 
 You can search the project by typing in a keyword at the search text input.

@@ -1,5 +1,6 @@
 ---
 title: "Sharing Data"
+sidebarTitle: "Data"
 ---
 
 You can quickly share data you have built or transformed in Exploratory Desktop with others at any step of the data wrangling at the left hand side. Since not only you are sharing the data but also you are sharing the wrangling steps to produce the data, other people whom you share with will have much easier time to understand where the data originally came from and how it was prepared, and improve or fix the data wangling steps collaboratively. By importing the shared data anybody can easily reproduce and validate each step of the data wrangling and analysis.

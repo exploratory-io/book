@@ -1,5 +1,6 @@
 ---
 title: "Error Bar (Summarized Data) Chart"
+sidebarTitle: "Error Bar (Summarized Data)"
 ---
 
 With the Error Bar (Summarized Data) Chart, you can create an Error Bar using the data which is already summarized/aggregated. 

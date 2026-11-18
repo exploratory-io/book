@@ -1,5 +1,6 @@
 ---
 title: "Possible Reasons for Installation Errors"
+sidebarTitle: "Possible Reasons for Install Error"
 ---
 
 ## Starting up Exploratory.exe from TCC console

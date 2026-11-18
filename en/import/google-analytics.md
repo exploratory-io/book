@@ -1,5 +1,6 @@
 ---
 title: "Google Analytics Data"
+sidebarTitle: "Google Analytics"
 ---
 
 ## 1. Select Google Analytics Data Menu

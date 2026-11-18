@@ -1,5 +1,6 @@
 ---
 title: "Edit Display Names"
+sidebarTitle: "Edit Display Name"
 ---
 
  

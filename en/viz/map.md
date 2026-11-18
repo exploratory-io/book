@@ -1,5 +1,6 @@
 ---
 title: "Map - Long / Lat"
+sidebarTitle: "Map - Long/Lat"
 ---
 
 ![](images/ll1.png)

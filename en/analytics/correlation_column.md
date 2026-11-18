@@ -1,5 +1,6 @@
 ---
 title: "Correlation by Column"
+sidebarTitle: "Correlation"
 ---
 
 Calculates Correlations among columns.

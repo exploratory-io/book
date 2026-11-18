@@ -1,5 +1,6 @@
 ---
 title: "K-means Clustering Model"
+sidebarTitle: "K-means Clustering"
 ---
 
 ## Introduction

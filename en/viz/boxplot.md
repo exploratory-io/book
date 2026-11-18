@@ -1,5 +1,6 @@
 ---
 title: "Boxplot Chart"
+sidebarTitle: "Boxplot"
 ---
 
 ![](images/boxplot.png)

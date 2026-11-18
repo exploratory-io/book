@@ -1,5 +1,6 @@
 ---
 title: "Connect Codex"
+sidebarTitle: "Codex"
 ---
 
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Codex and sign in through your browser.

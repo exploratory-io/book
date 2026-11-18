@@ -1,5 +1,6 @@
 ---
 title: "Import Excel File Data"
+sidebarTitle: "Excel"
 ---
 
 You can import both local and remote Excel File Data quickly.

@@ -1,5 +1,6 @@
 ---
 title: "Exploratory CLI: Server"
+sidebarTitle: "Server"
 ---
 
 expl server reads the notes, dashboards and data published on exploratory.io from your terminal.

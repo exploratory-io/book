@@ -1,5 +1,6 @@
 ---
 title: "Use Custom Model Function"
+sidebarTitle: "Custom Model Function"
 ---
 
 Exploratory provides a framework with which users can define and use custom model functions. This is an introduction of how to do it.

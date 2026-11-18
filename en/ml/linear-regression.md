@@ -1,5 +1,6 @@
 ---
 title: "Linear Regression Model"
+sidebarTitle: "Linear Regression"
 ---
 
 ## Introduction

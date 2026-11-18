@@ -1,5 +1,6 @@
 ---
 title: "How to import Project"
+sidebarTitle: "Import"
 ---
 
 You can import a project that is exported as a zip file.

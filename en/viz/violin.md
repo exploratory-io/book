@@ -1,5 +1,6 @@
 ---
 title: "Violin Chart"
+sidebarTitle: "Violin"
 ---
 
 ## Violin Chart

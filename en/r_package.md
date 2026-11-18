@@ -1,5 +1,6 @@
 ---
 title: "Install R Package"
+sidebarTitle: "R Package Install"
 ---
 
 ## Install from CRAN

@@ -1,5 +1,6 @@
 ---
 title: "How to export Project"
+sidebarTitle: "Export"
 ---
 
 Click menu at the right hand side end of the project that you want to export and select `Export`

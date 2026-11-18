@@ -1,5 +1,6 @@
 ---
 title: "Pivot Table"
+sidebarTitle: "Pivot"
 ---
 
 ![](images/pivot.png)

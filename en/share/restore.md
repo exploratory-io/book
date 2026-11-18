@@ -1,5 +1,6 @@
 ---
 title: "Restore Old Version"
+sidebarTitle: "Restore Older Version"
 ---
 
 You can restore the old version of the insight by clicking the "Restore" button in the "Version History" dialog.

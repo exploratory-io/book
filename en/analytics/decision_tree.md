@@ -1,5 +1,6 @@
 ---
 title: "Decision Tree Analytics View"
+sidebarTitle: "Decision Tree"
 ---
 
 Builds a decision tree to predict Target Variable column value from Predictor Variable(s) column values.

@@ -1,5 +1,6 @@
 ---
 title: "Multiple Y-Axis"
+sidebarTitle: "Multiple Y-Axis Columns"
 ---
 
 The Multiple Y-Axis feature is available on Bar, Line, Area and Scatter (No Aggregation) charts. You can assign multiple columns to Y-Axis on those charts. 

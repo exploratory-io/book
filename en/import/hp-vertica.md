@@ -1,5 +1,6 @@
 ---
 title: "HP Vertica Database Data Import"
+sidebarTitle: "HP Vertica"
 ---
 
 You can quickly import data from your HP Vertica Database into Exploratory.

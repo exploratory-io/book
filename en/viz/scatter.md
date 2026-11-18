@@ -1,5 +1,6 @@
 ---
 title: "Scatter (No Aggregation) Chart"
+sidebarTitle: "Scatter (No Aggregation)"
 ---
 
 ## Scatter (No Aggregation) Chart

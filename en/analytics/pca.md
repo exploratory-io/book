@@ -1,5 +1,6 @@
 ---
 title: "Principal Component Analysis Analytics View"
+sidebarTitle: "Principal Component Analysis"
 ---
 
 Runs Principal Component Analysis, which converts data so that observations (rows) are expressed in a set of variables called principal components.

@@ -1,5 +1,6 @@
 ---
 title: "Import Twitter Search API data"
+sidebarTitle: "Twitter Search"
 ---
 
 NOTE: Currently, this data source is not supported in Exploratory Desktop.

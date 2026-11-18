@@ -1,5 +1,6 @@
 ---
 title: "Error Bar Chart"
+sidebarTitle: "Error Bar"
 ---
 
 ![](images/errorbar.png)

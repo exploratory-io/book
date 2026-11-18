@@ -1,5 +1,6 @@
 ---
 title: "Generalized Linear Regression Model"
+sidebarTitle: "GLM"
 ---
 
 ## Introduction

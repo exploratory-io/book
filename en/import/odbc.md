@@ -1,5 +1,6 @@
 ---
 title: "ODBC Database Data Import"
+sidebarTitle: "ODBC"
 ---
 
 You can quickly import data from your ODBC Database Connection into Exploratory.

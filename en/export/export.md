@@ -1,5 +1,6 @@
 ---
 title: "Export Data"
+sidebarTitle: "Export"
 ---
 
 You can export data in various formats either by clicking 'Export' button at the top of Summary / Table view or clicking on 'Export' button inside each of the data wrangling steps at the right hand side.

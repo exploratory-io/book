@@ -1,5 +1,6 @@
 ---
 title: "Google BigQuery Data Import"
+sidebarTitle: "Google BigQuery"
 ---
 
 ## 1. Before you start

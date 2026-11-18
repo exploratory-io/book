@@ -1,5 +1,6 @@
 ---
 title: "Pie / Ring Chart"
+sidebarTitle: "Pie/Ring"
 ---
 
 ##  Pie / Ring Chart

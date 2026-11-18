@@ -1,5 +1,6 @@
 ---
 title: "MS Access Data Import"
+sidebarTitle: "Microsoft Access"
 ---
 
 You can quickly import data from your MS Access into Exploratory.

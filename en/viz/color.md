@@ -1,5 +1,6 @@
 ---
 title: "Color & Group Setting"
+sidebarTitle: "Color and Group Setting"
 ---
 
 You can update the color and grouping settings in the Color & Group Setting dialog. 

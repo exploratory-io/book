@@ -1,5 +1,6 @@
 ---
 title: "Logistic Regression Analytics View"
+sidebarTitle: "Logistic Regression Analysis"
 ---
 
 Builds a logistic regression model to predict binary Target Variable column value from Predictor Variable(s) column values.

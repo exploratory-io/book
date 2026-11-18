@@ -1,5 +1,6 @@
 ---
 title: "Regression Analysis"
+sidebarTitle: "Linear Regression Analysis"
 ---
 
 Build Linear Regression Model

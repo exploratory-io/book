@@ -1,5 +1,6 @@
 ---
 title: "Chi Squared Test"
+sidebarTitle: "Chi-square test"
 ---
 
 ## Introduction

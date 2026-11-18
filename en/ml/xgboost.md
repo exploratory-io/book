@@ -1,5 +1,6 @@
 ---
 title: "XGBoost - Extreme Gradient Boosting"
+sidebarTitle: "XGBoost"
 ---
 
 ## Introduction

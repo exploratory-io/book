@@ -1,5 +1,6 @@
 ---
 title: "Area Chart"
+sidebarTitle: "Area"
 ---
 
 ![](images/bar.png)

@@ -1,5 +1,6 @@
 ---
 title: "'Others' Group"
+sidebarTitle: "'Others' Group"
 ---
 
 By using the 'Others' Group feature, you can reduce the number of categories by changing some category names to 'Others'. For example, if you have data like the following. 

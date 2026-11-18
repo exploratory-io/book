@@ -1,5 +1,6 @@
 ---
 title: "Number Chart"
+sidebarTitle: "Number"
 ---
 
 You can show a single, aggregated number. It is good for tracking a specific number, and it is good for using it in Dashborads.  

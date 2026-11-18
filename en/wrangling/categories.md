@@ -1,5 +1,6 @@
 ---
 title: "Working with Categorical Data"
+sidebarTitle: "Work with Categories"
 ---
 
 ![](images/categories1.png)

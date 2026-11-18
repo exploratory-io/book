@@ -1,5 +1,6 @@
 ---
 title: "K-Means Clustering Analytics View"
+sidebarTitle: "K-Means Clustering"
 ---
 
 Cluster data (rows) by K-means algorithm.

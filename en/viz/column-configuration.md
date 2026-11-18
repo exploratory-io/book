@@ -1,5 +1,6 @@
 ---
 title: "Select and Configure Columns"
+sidebarTitle: "Column Configuration"
 ---
 
 ![](images/cconf1.png)

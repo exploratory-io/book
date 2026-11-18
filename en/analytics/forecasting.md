@@ -1,5 +1,6 @@
 ---
 title: "Time Series Forecasting"
+sidebarTitle: "Time Series Forecasting (Prophet)"
 ---
 
 You can quickly build time series forecasting models with the Prophet algorithm and visualize the insights including forecasted values, seasonality, trend, and effects.

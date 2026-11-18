@@ -1,5 +1,6 @@
 ---
 title: "Publish Insights"
+sidebarTitle: "Manage Schedules"
 ---
 
 

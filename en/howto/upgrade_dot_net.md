@@ -1,5 +1,6 @@
 ---
 title: "How to Upgrade .NET Framework"
+sidebarTitle: "Upgrade Microsoft .NET Framework"
 ---
 
 On Windows 7, old Microsoft .NET Framwork causes login to fail.

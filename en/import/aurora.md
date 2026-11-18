@@ -1,5 +1,6 @@
 ---
 title: "Aurora Data Import"
+sidebarTitle: "Amazon Aurora"
 ---
 
 You can quickly import data from your Amazon Aurora Database into Exploratory.

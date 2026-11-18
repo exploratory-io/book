@@ -1,5 +1,6 @@
 ---
 title: "Import Stripe API Data"
+sidebarTitle: "Stripe"
 ---
 
 You can get your payment data from Stripe quickly. Take a look at this [blog post](https://blog.exploratory.io/importing-stripe-payment-data-visualize-and-schedule-with-exploratory-3b1422a9cf8b) for the details.

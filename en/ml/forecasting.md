@@ -1,5 +1,6 @@
 ---
 title: "Time Series Forecasting"
+sidebarTitle: "Forecasting"
 ---
 
 With Time Series Forecasting, you can calculate forecast data into the future based on the time series data frame from the past.

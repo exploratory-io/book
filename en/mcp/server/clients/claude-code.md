@@ -1,5 +1,6 @@
 ---
 title: "Connect Claude Code"
+sidebarTitle: "Claude Code"
 ---
 
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Claude Code and sign in through your browser.

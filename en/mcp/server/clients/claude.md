@@ -1,5 +1,6 @@
 ---
 title: "Connect the Claude app"
+sidebarTitle: "Claude app"
 ---
 
 Add the Exploratory server to Claude as a custom connector. A connector is a link that lets Claude use the data and features of an outside service. After you connect, you can read notes and data published on Exploratory from a Claude chat.

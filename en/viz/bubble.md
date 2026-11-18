@@ -1,5 +1,6 @@
 ---
 title: "Scatter (With Aggregation) Chart"
+sidebarTitle: "Scatter (With Aggregation)"
 ---
 
 You can show the distribution of the data by circles. It is similar to the Scatter (No Aggregation) chart, but the Scatter (With Aggregation) chart can show the distribution of the aggregated data. 

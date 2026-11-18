@@ -1,5 +1,6 @@
 ---
 title: "PostgreSQL Database Data Import"
+sidebarTitle: "PostgreSQL"
 ---
 
 You can quickly import data from your PostgreSQL Database into Exploratory.

@@ -1,5 +1,6 @@
 ---
 title: "Merge multiple Data Frames"
+sidebarTitle: "Merge"
 ---
 
 Merge multiple data frames by row.

@@ -1,5 +1,6 @@
 ---
 title: "Add your own custom R functions or variables with R Script"
+sidebarTitle: "Custom R Script"
 ---
 
 ## Add your own custom R functions or variables with R Script

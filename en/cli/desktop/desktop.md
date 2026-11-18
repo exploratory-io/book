@@ -1,5 +1,6 @@
 ---
 title: "Exploratory CLI: Desktop"
+sidebarTitle: "Desktop"
 ---
 
 expl operates the Exploratory Desktop running on this computer, from your terminal.

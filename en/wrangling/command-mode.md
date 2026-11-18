@@ -1,5 +1,6 @@
 ---
 title: "Command Line Mode"
+sidebarTitle: "Command Line mode for faster and more flexible data interaction in Exploratory"
 ---
 
 You might prefer directly typing R functions rather than using the UI for interacting with data, especially if you are an R aficionado. 😎 Comparing to UI based experience, the command line based experience can make the data exploration faster and more flexible.

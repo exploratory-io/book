@@ -1,5 +1,6 @@
 ---
 title: "Kruskal-Wallis Test Analytics View"
+sidebarTitle: "Kruskal-Wallis Test"
 ---
 
 Runs Kruskal-Wallis Test, which checks whether samples in multiple groups originate from the same distribution.
