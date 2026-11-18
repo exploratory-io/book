@@ -841,404 +841,1472 @@
   },
   "redirects": [
     {
+      "source": "/howto/install_errors.html",
+      "destination": "/en/howto/install_errors"
+    },
+    {
+      "source": "/howto/install_errors",
+      "destination": "/en/howto/install_errors"
+    },
+    {
+      "source": "/howto/stopmcafee.html",
+      "destination": "/en/howto/stopmcafee"
+    },
+    {
+      "source": "/howto/stopmcafee",
+      "destination": "/en/howto/stopmcafee"
+    },
+    {
+      "source": "/howto/upgrade_dot_net.html",
+      "destination": "/en/howto/upgrade_dot_net"
+    },
+    {
+      "source": "/howto/upgrade_dot_net",
+      "destination": "/en/howto/upgrade_dot_net"
+    },
+    {
+      "source": "/import/athena.html",
+      "destination": "/en/import/athena"
+    },
+    {
+      "source": "/import/athena",
+      "destination": "/en/import/athena"
+    },
+    {
+      "source": "/import/aurora.html",
+      "destination": "/en/import/aurora"
+    },
+    {
+      "source": "/import/aurora",
+      "destination": "/en/import/aurora"
+    },
+    {
+      "source": "/import/csv.html",
+      "destination": "/en/import/csv"
+    },
+    {
+      "source": "/import/csv",
+      "destination": "/en/import/csv"
+    },
+    {
+      "source": "/import/fred.html",
+      "destination": "/en/import/fred"
+    },
+    {
+      "source": "/import/fred",
+      "destination": "/en/import/fred"
+    },
+    {
+      "source": "/import/google-bigquery.html",
+      "destination": "/en/import/google-bigquery"
+    },
+    {
+      "source": "/import/google-bigquery",
+      "destination": "/en/import/google-bigquery"
+    },
+    {
+      "source": "/import/hp-vertica.html",
+      "destination": "/en/import/hp-vertica"
+    },
+    {
+      "source": "/import/hp-vertica",
+      "destination": "/en/import/hp-vertica"
+    },
+    {
+      "source": "/import/mongodb.html",
+      "destination": "/en/import/mongodb"
+    },
+    {
+      "source": "/import/mongodb",
+      "destination": "/en/import/mongodb"
+    },
+    {
+      "source": "/import/odbc.html",
+      "destination": "/en/import/odbc"
+    },
+    {
+      "source": "/import/odbc",
+      "destination": "/en/import/odbc"
+    },
+    {
+      "source": "/import/r-script-data.html",
+      "destination": "/en/import/r-script-data"
+    },
+    {
+      "source": "/import/r-script-data",
+      "destination": "/en/import/r-script-data"
+    },
+    {
+      "source": "/import/redshift.html",
+      "destination": "/en/import/redshift"
+    },
+    {
+      "source": "/import/redshift",
+      "destination": "/en/import/redshift"
+    },
+    {
+      "source": "/import/treasuredata.html",
+      "destination": "/en/import/treasuredata"
+    },
+    {
+      "source": "/import/treasuredata",
+      "destination": "/en/import/treasuredata"
+    },
+    {
+      "source": "/import/web-scraping.html",
+      "destination": "/en/import/web-scraping"
+    },
+    {
+      "source": "/import/web-scraping",
+      "destination": "/en/import/web-scraping"
+    },
+    {
+      "source": "/ml/anomaly.html",
+      "destination": "/en/ml/anomaly"
+    },
+    {
+      "source": "/ml/anomaly",
+      "destination": "/en/ml/anomaly"
+    },
+    {
+      "source": "/ml/arules.html",
+      "destination": "/en/ml/arules"
+    },
+    {
+      "source": "/ml/arules",
+      "destination": "/en/ml/arules"
+    },
+    {
+      "source": "/ml/cox-regression.html",
+      "destination": "/en/ml/cox-regression"
+    },
+    {
+      "source": "/ml/cox-regression",
+      "destination": "/en/ml/cox-regression"
+    },
+    {
+      "source": "/ml/do_roc.html",
+      "destination": "/en/ml/do_roc"
+    },
+    {
+      "source": "/ml/do_roc",
+      "destination": "/en/ml/do_roc"
+    },
+    {
+      "source": "/ml/evaluate_binary.html",
+      "destination": "/en/ml/evaluate_binary"
+    },
+    {
+      "source": "/ml/evaluate_binary",
+      "destination": "/en/ml/evaluate_binary"
+    },
+    {
+      "source": "/ml/evaluate_multi.html",
+      "destination": "/en/ml/evaluate_multi"
+    },
+    {
+      "source": "/ml/evaluate_multi",
+      "destination": "/en/ml/evaluate_multi"
+    },
+    {
+      "source": "/ml/evaluate_regression.html",
+      "destination": "/en/ml/evaluate_regression"
+    },
+    {
+      "source": "/ml/evaluate_regression",
+      "destination": "/en/ml/evaluate_regression"
+    },
+    {
+      "source": "/ml/forecasting.html",
+      "destination": "/en/ml/forecasting"
+    },
+    {
+      "source": "/ml/forecasting",
+      "destination": "/en/ml/forecasting"
+    },
+    {
+      "source": "/ml/glm.html",
+      "destination": "/en/ml/glm"
+    },
+    {
+      "source": "/ml/glm",
+      "destination": "/en/ml/glm"
+    },
+    {
+      "source": "/ml/kmeans.html",
+      "destination": "/en/ml/kmeans"
+    },
+    {
+      "source": "/ml/kmeans",
+      "destination": "/en/ml/kmeans"
+    },
+    {
+      "source": "/ml/linear-regression.html",
+      "destination": "/en/ml/linear-regression"
+    },
+    {
+      "source": "/ml/linear-regression",
+      "destination": "/en/ml/linear-regression"
+    },
+    {
+      "source": "/ml/logistic-regression.html",
+      "destination": "/en/ml/logistic-regression"
+    },
+    {
+      "source": "/ml/logistic-regression",
+      "destination": "/en/ml/logistic-regression"
+    },
+    {
+      "source": "/ml/model_anova.html",
+      "destination": "/en/ml/model_anova"
+    },
+    {
+      "source": "/ml/model_anova",
+      "destination": "/en/ml/model_anova"
+    },
+    {
+      "source": "/ml/model_coef.html",
+      "destination": "/en/ml/model_coef"
+    },
+    {
+      "source": "/ml/model_coef",
+      "destination": "/en/ml/model_coef"
+    },
+    {
+      "source": "/ml/model_stats.html",
+      "destination": "/en/ml/model_stats"
+    },
+    {
+      "source": "/ml/model_stats",
+      "destination": "/en/ml/model_stats"
+    },
+    {
+      "source": "/ml/multinom.html",
+      "destination": "/en/ml/multinom"
+    },
+    {
+      "source": "/ml/multinom",
+      "destination": "/en/ml/multinom"
+    },
+    {
+      "source": "/ml/prediction.html",
+      "destination": "/en/ml/prediction"
+    },
+    {
+      "source": "/ml/prediction",
+      "destination": "/en/ml/prediction"
+    },
+    {
+      "source": "/ml/prediction_binary.html",
+      "destination": "/en/ml/prediction_binary"
+    },
+    {
+      "source": "/ml/prediction_binary",
+      "destination": "/en/ml/prediction_binary"
+    },
+    {
+      "source": "/ml/prediction_coxph.html",
+      "destination": "/en/ml/prediction_coxph"
+    },
+    {
+      "source": "/ml/prediction_coxph",
+      "destination": "/en/ml/prediction_coxph"
+    },
+    {
+      "source": "/ml/prediction_survfit.html",
+      "destination": "/en/ml/prediction_survfit"
+    },
+    {
+      "source": "/ml/prediction_survfit",
+      "destination": "/en/ml/prediction_survfit"
+    },
+    {
+      "source": "/ml/survival-curv.html",
+      "destination": "/en/ml/survival-curv"
+    },
+    {
+      "source": "/ml/survival-curv",
+      "destination": "/en/ml/survival-curv"
+    },
+    {
+      "source": "/ml/timeseries_clustering.html",
+      "destination": "/en/ml/timeseries_clustering"
+    },
+    {
+      "source": "/ml/timeseries_clustering",
+      "destination": "/en/ml/timeseries_clustering"
+    },
+    {
+      "source": "/ml/xgboost.html",
+      "destination": "/en/ml/xgboost"
+    },
+    {
+      "source": "/ml/xgboost",
+      "destination": "/en/ml/xgboost"
+    },
+    {
+      "source": "/stats/chi-test.html",
+      "destination": "/en/stats/chi-test"
+    },
+    {
+      "source": "/stats/chi-test",
+      "destination": "/en/stats/chi-test"
+    },
+    {
+      "source": "/stats/correlation.html",
+      "destination": "/en/stats/correlation"
+    },
+    {
+      "source": "/stats/correlation",
+      "destination": "/en/stats/correlation"
+    },
+    {
+      "source": "/stats/dist.html",
+      "destination": "/en/stats/dist"
+    },
+    {
+      "source": "/stats/dist",
+      "destination": "/en/stats/dist"
+    },
+    {
+      "source": "/stats/exp_bayes_ab.html",
+      "destination": "/en/stats/exp_bayes_ab"
+    },
+    {
+      "source": "/stats/exp_bayes_ab",
+      "destination": "/en/stats/exp_bayes_ab"
+    },
+    {
+      "source": "/stats/f-test.html",
+      "destination": "/en/stats/f-test"
+    },
+    {
+      "source": "/stats/f-test",
+      "destination": "/en/stats/f-test"
+    },
+    {
+      "source": "/stats/mds.html",
+      "destination": "/en/stats/mds"
+    },
+    {
+      "source": "/stats/mds",
+      "destination": "/en/stats/mds"
+    },
+    {
+      "source": "/stats/sim.html",
+      "destination": "/en/stats/sim"
+    },
+    {
+      "source": "/stats/sim",
+      "destination": "/en/stats/sim"
+    },
+    {
+      "source": "/stats/svd.html",
+      "destination": "/en/stats/svd"
+    },
+    {
+      "source": "/stats/svd",
+      "destination": "/en/stats/svd"
+    },
+    {
+      "source": "/stats/t-test.html",
+      "destination": "/en/stats/t-test"
+    },
+    {
+      "source": "/stats/t-test",
+      "destination": "/en/stats/t-test"
+    },
+    {
+      "source": "/text/do_ngram.html",
+      "destination": "/en/text/do_ngram"
+    },
+    {
+      "source": "/text/do_ngram",
+      "destination": "/en/text/do_ngram"
+    },
+    {
+      "source": "/text/do_tfidf.html",
+      "destination": "/en/text/do_tfidf"
+    },
+    {
+      "source": "/text/do_tfidf",
+      "destination": "/en/text/do_tfidf"
+    },
+    {
+      "source": "/text/do_tokenize.html",
+      "destination": "/en/text/do_tokenize"
+    },
+    {
+      "source": "/text/do_tokenize",
+      "destination": "/en/text/do_tokenize"
+    },
+    {
+      "source": "/text/pair_count.html",
+      "destination": "/en/text/pair_count"
+    },
+    {
+      "source": "/text/pair_count",
+      "destination": "/en/text/pair_count"
+    },
+    {
+      "source": "/viz/column-configuration.html",
+      "destination": "/en/viz/column-configuration"
+    },
+    {
+      "source": "/viz/column-configuration",
+      "destination": "/en/viz/column-configuration"
+    },
+    {
+      "source": "/wrangling/add_row.html",
+      "destination": "/en/wrangling/add_row"
+    },
+    {
+      "source": "/wrangling/add_row",
+      "destination": "/en/wrangling/add_row"
+    },
+    {
+      "source": "/wrangling/arrange.html",
+      "destination": "/en/wrangling/arrange"
+    },
+    {
+      "source": "/wrangling/arrange",
+      "destination": "/en/wrangling/arrange"
+    },
+    {
+      "source": "/wrangling/bind_columns.html",
+      "destination": "/en/wrangling/bind_columns"
+    },
+    {
+      "source": "/wrangling/bind_columns",
+      "destination": "/en/wrangling/bind_columns"
+    },
+    {
+      "source": "/wrangling/bind_rows.html",
+      "destination": "/en/wrangling/bind_rows"
+    },
+    {
+      "source": "/wrangling/bind_rows",
+      "destination": "/en/wrangling/bind_rows"
+    },
+    {
+      "source": "/wrangling/buckets.html",
+      "destination": "/en/wrangling/buckets"
+    },
+    {
+      "source": "/wrangling/buckets",
+      "destination": "/en/wrangling/buckets"
+    },
+    {
+      "source": "/wrangling/clean_names.html",
+      "destination": "/en/wrangling/clean_names"
+    },
+    {
+      "source": "/wrangling/clean_names",
+      "destination": "/en/wrangling/clean_names"
+    },
+    {
+      "source": "/wrangling/command-mode.html",
+      "destination": "/en/wrangling/command-mode"
+    },
+    {
+      "source": "/wrangling/command-mode",
+      "destination": "/en/wrangling/command-mode"
+    },
+    {
+      "source": "/wrangling/complete.html",
+      "destination": "/en/wrangling/complete"
+    },
+    {
+      "source": "/wrangling/complete",
+      "destination": "/en/wrangling/complete"
+    },
+    {
+      "source": "/wrangling/distinct.html",
+      "destination": "/en/wrangling/distinct"
+    },
+    {
+      "source": "/wrangling/distinct",
+      "destination": "/en/wrangling/distinct"
+    },
+    {
+      "source": "/wrangling/drop_na.html",
+      "destination": "/en/wrangling/drop_na"
+    },
+    {
+      "source": "/wrangling/drop_na",
+      "destination": "/en/wrangling/drop_na"
+    },
+    {
+      "source": "/wrangling/expand.html",
+      "destination": "/en/wrangling/expand"
+    },
+    {
+      "source": "/wrangling/expand",
+      "destination": "/en/wrangling/expand"
+    },
+    {
+      "source": "/wrangling/fill.html",
+      "destination": "/en/wrangling/fill"
+    },
+    {
+      "source": "/wrangling/fill",
+      "destination": "/en/wrangling/fill"
+    },
+    {
+      "source": "/wrangling/filter.html",
+      "destination": "/en/wrangling/filter"
+    },
+    {
+      "source": "/wrangling/filter",
+      "destination": "/en/wrangling/filter"
+    },
+    {
+      "source": "/wrangling/gather.html",
+      "destination": "/en/wrangling/gather"
+    },
+    {
+      "source": "/wrangling/gather",
+      "destination": "/en/wrangling/gather"
+    },
+    {
+      "source": "/wrangling/get_dupes.html",
+      "destination": "/en/wrangling/get_dupes"
+    },
+    {
+      "source": "/wrangling/get_dupes",
+      "destination": "/en/wrangling/get_dupes"
+    },
+    {
+      "source": "/wrangling/group.html",
+      "destination": "/en/wrangling/group"
+    },
+    {
+      "source": "/wrangling/group",
+      "destination": "/en/wrangling/group"
+    },
+    {
+      "source": "/wrangling/hoist.html",
+      "destination": "/en/wrangling/hoist"
+    },
+    {
+      "source": "/wrangling/hoist",
+      "destination": "/en/wrangling/hoist"
+    },
+    {
+      "source": "/wrangling/join.html",
+      "destination": "/en/wrangling/join"
+    },
+    {
+      "source": "/wrangling/join",
+      "destination": "/en/wrangling/join"
+    },
+    {
+      "source": "/wrangling/merge.html",
+      "destination": "/en/wrangling/merge"
+    },
+    {
+      "source": "/wrangling/merge",
+      "destination": "/en/wrangling/merge"
+    },
+    {
+      "source": "/wrangling/mutate.html",
+      "destination": "/en/wrangling/mutate"
+    },
+    {
+      "source": "/wrangling/mutate",
+      "destination": "/en/wrangling/mutate"
+    },
+    {
+      "source": "/wrangling/mutate_at.html",
+      "destination": "/en/wrangling/mutate_at"
+    },
+    {
+      "source": "/wrangling/mutate_at",
+      "destination": "/en/wrangling/mutate_at"
+    },
+    {
+      "source": "/wrangling/pivot.html",
+      "destination": "/en/wrangling/pivot"
+    },
+    {
+      "source": "/wrangling/pivot",
+      "destination": "/en/wrangling/pivot"
+    },
+    {
+      "source": "/wrangling/remove_empty_cols.html",
+      "destination": "/en/wrangling/remove_empty_cols"
+    },
+    {
+      "source": "/wrangling/remove_empty_cols",
+      "destination": "/en/wrangling/remove_empty_cols"
+    },
+    {
+      "source": "/wrangling/remove_empty_rows.html",
+      "destination": "/en/wrangling/remove_empty_rows"
+    },
+    {
+      "source": "/wrangling/remove_empty_rows",
+      "destination": "/en/wrangling/remove_empty_rows"
+    },
+    {
+      "source": "/wrangling/rename.html",
+      "destination": "/en/wrangling/rename"
+    },
+    {
+      "source": "/wrangling/rename",
+      "destination": "/en/wrangling/rename"
+    },
+    {
+      "source": "/wrangling/reorder.html",
+      "destination": "/en/wrangling/reorder"
+    },
+    {
+      "source": "/wrangling/reorder",
+      "destination": "/en/wrangling/reorder"
+    },
+    {
+      "source": "/wrangling/row_as_header.html",
+      "destination": "/en/wrangling/row_as_header"
+    },
+    {
+      "source": "/wrangling/row_as_header",
+      "destination": "/en/wrangling/row_as_header"
+    },
+    {
+      "source": "/wrangling/sample.html",
+      "destination": "/en/wrangling/sample"
+    },
+    {
+      "source": "/wrangling/sample",
+      "destination": "/en/wrangling/sample"
+    },
+    {
+      "source": "/wrangling/select.html",
+      "destination": "/en/wrangling/select"
+    },
+    {
+      "source": "/wrangling/select",
+      "destination": "/en/wrangling/select"
+    },
+    {
+      "source": "/wrangling/separate.html",
+      "destination": "/en/wrangling/separate"
+    },
+    {
+      "source": "/wrangling/separate",
+      "destination": "/en/wrangling/separate"
+    },
+    {
+      "source": "/wrangling/slice.html",
+      "destination": "/en/wrangling/slice"
+    },
+    {
+      "source": "/wrangling/slice",
+      "destination": "/en/wrangling/slice"
+    },
+    {
+      "source": "/wrangling/smote.html",
+      "destination": "/en/wrangling/smote"
+    },
+    {
+      "source": "/wrangling/smote",
+      "destination": "/en/wrangling/smote"
+    },
+    {
+      "source": "/wrangling/spread.html",
+      "destination": "/en/wrangling/spread"
+    },
+    {
+      "source": "/wrangling/spread",
+      "destination": "/en/wrangling/spread"
+    },
+    {
+      "source": "/wrangling/summarize.html",
+      "destination": "/en/wrangling/summarize"
+    },
+    {
+      "source": "/wrangling/summarize",
+      "destination": "/en/wrangling/summarize"
+    },
+    {
+      "source": "/wrangling/top_n.html",
+      "destination": "/en/wrangling/top_n"
+    },
+    {
+      "source": "/wrangling/top_n",
+      "destination": "/en/wrangling/top_n"
+    },
+    {
+      "source": "/wrangling/type-convert.html",
+      "destination": "/en/wrangling/type-convert"
+    },
+    {
+      "source": "/wrangling/type-convert",
+      "destination": "/en/wrangling/type-convert"
+    },
+    {
+      "source": "/wrangling/ungroup.html",
+      "destination": "/en/wrangling/ungroup"
+    },
+    {
+      "source": "/wrangling/ungroup",
+      "destination": "/en/wrangling/ungroup"
+    },
+    {
+      "source": "/wrangling/unite.html",
+      "destination": "/en/wrangling/unite"
+    },
+    {
+      "source": "/wrangling/unite",
+      "destination": "/en/wrangling/unite"
+    },
+    {
+      "source": "/wrangling/unnest.html",
+      "destination": "/en/wrangling/unnest"
+    },
+    {
+      "source": "/wrangling/unnest",
+      "destination": "/en/wrangling/unnest"
+    },
+    {
+      "source": "/wrangling/unnest_longer.html",
+      "destination": "/en/wrangling/unnest_longer"
+    },
+    {
+      "source": "/wrangling/unnest_longer",
+      "destination": "/en/wrangling/unnest_longer"
+    },
+    {
+      "source": "/wrangling/unnest_wider.html",
+      "destination": "/en/wrangling/unnest_wider"
+    },
+    {
+      "source": "/wrangling/unnest_wider",
+      "destination": "/en/wrangling/unnest_wider"
+    },
+    {
+      "source": "/ai/ai-prompt-function-ri-ben-yu",
+      "destination": "/en/ai/ai-promtpt-function-en"
+    },
+    {
+      "source": "/product-features/share_ja/chart_ja",
+      "destination": "/en/share/chart"
+    },
+    {
+      "source": "/product-features/share_ja/data_ja",
+      "destination": "/en/share/data"
+    },
+    {
+      "source": "/product-features/share_ja/note_ja",
+      "destination": "/en/share/note"
+    },
+    {
+      "source": "/visualization/features/color-ja",
+      "destination": "/en/viz/color"
+    },
+    {
+      "source": "/visualization/types/r-custom_ja",
+      "destination": "/en/viz/r-custom"
+    },
+    {
       "source": "/",
       "destination": "/en/index"
     },
     {
-      "source": "/en/howto/install_errors",
-      "destination": "/en/howto/install_errors"
+      "source": "/ai",
+      "destination": "/en/ai/ai"
     },
     {
-      "source": "/en/howto/stopmcafee",
-      "destination": "/en/howto/stopmcafee"
+      "source": "/analytics/ab_test.html",
+      "destination": "/en/analytics/ab_test"
     },
     {
-      "source": "/en/howto/upgrade_dot_net",
-      "destination": "/en/howto/upgrade_dot_net"
+      "source": "/analytics/ab_test",
+      "destination": "/en/analytics/ab_test"
     },
     {
-      "source": "/en/import/athena",
-      "destination": "/en/import/athena"
+      "source": "/analytics/anova.html",
+      "destination": "/en/analytics/anova"
     },
     {
-      "source": "/en/import/aurora",
-      "destination": "/en/import/aurora"
+      "source": "/analytics/anova",
+      "destination": "/en/analytics/anova"
     },
     {
-      "source": "/en/import/csv",
-      "destination": "/en/import/csv"
+      "source": "/analytics/arima.html",
+      "destination": "/en/analytics/arima"
     },
     {
-      "source": "/en/import/fred",
-      "destination": "/en/import/fred"
+      "source": "/analytics/arima",
+      "destination": "/en/analytics/arima"
     },
     {
-      "source": "/en/import/google-bigquery",
-      "destination": "/en/import/google-bigquery"
+      "source": "/analytics/chaid",
+      "destination": "/en/analytics/chaid"
     },
     {
-      "source": "/en/import/hp-vertica",
-      "destination": "/en/import/hp-vertica"
+      "source": "/analytics/chisq.html",
+      "destination": "/en/analytics/chisq"
     },
     {
-      "source": "/en/import/mongodb",
-      "destination": "/en/import/mongodb"
+      "source": "/analytics/chisq",
+      "destination": "/en/analytics/chisq"
     },
     {
-      "source": "/en/import/odbc",
-      "destination": "/en/import/odbc"
+      "source": "/analytics/correlation_column.html",
+      "destination": "/en/analytics/correlation_column"
     },
     {
-      "source": "/en/import/r-script-data",
-      "destination": "/en/import/r-script-data"
+      "source": "/analytics/correlation_column",
+      "destination": "/en/analytics/correlation_column"
     },
     {
-      "source": "/en/import/redshift",
-      "destination": "/en/import/redshift"
+      "source": "/analytics/correspondence",
+      "destination": "/en/analytics/correspondence"
     },
     {
-      "source": "/en/import/treasuredata",
-      "destination": "/en/import/treasuredata"
+      "source": "/analytics/cronbach-alpha.html",
+      "destination": "/en/analytics/cronbach-alpha"
     },
     {
-      "source": "/en/import/web-scraping",
-      "destination": "/en/import/web-scraping"
+      "source": "/analytics/cronbach-alpha",
+      "destination": "/en/analytics/cronbach-alpha"
     },
     {
-      "source": "/en/ml/anomaly",
-      "destination": "/en/ml/anomaly"
+      "source": "/analytics/decision_tree.html",
+      "destination": "/en/analytics/decision_tree"
     },
     {
-      "source": "/en/ml/arules",
-      "destination": "/en/ml/arules"
+      "source": "/analytics/decision_tree",
+      "destination": "/en/analytics/decision_tree"
     },
     {
-      "source": "/en/ml/cox-regression",
-      "destination": "/en/ml/cox-regression"
+      "source": "/analytics/dictionary",
+      "destination": "/en/analytics/dictionary"
     },
     {
-      "source": "/en/ml/do_roc",
-      "destination": "/en/ml/do_roc"
+      "source": "/analytics/distance_column.html",
+      "destination": "/en/analytics/distance_column"
     },
     {
-      "source": "/en/ml/evaluate_binary",
-      "destination": "/en/ml/evaluate_binary"
+      "source": "/analytics/distance_column",
+      "destination": "/en/analytics/distance_column"
     },
     {
-      "source": "/en/ml/evaluate_multi",
-      "destination": "/en/ml/evaluate_multi"
+      "source": "/analytics/factanal.html",
+      "destination": "/en/analytics/factanal"
     },
     {
-      "source": "/en/ml/evaluate_regression",
-      "destination": "/en/ml/evaluate_regression"
+      "source": "/analytics/factanal",
+      "destination": "/en/analytics/factanal"
     },
     {
-      "source": "/en/ml/forecasting",
-      "destination": "/en/ml/forecasting"
+      "source": "/analytics/forecasting.html",
+      "destination": "/en/analytics/forecasting"
     },
     {
-      "source": "/en/ml/glm",
-      "destination": "/en/ml/glm"
+      "source": "/analytics/forecasting",
+      "destination": "/en/analytics/forecasting"
     },
     {
-      "source": "/en/ml/kmeans",
-      "destination": "/en/ml/kmeans"
+      "source": "/analytics/glm.html",
+      "destination": "/en/analytics/glm"
     },
     {
-      "source": "/en/ml/linear-regression",
-      "destination": "/en/ml/linear-regression"
+      "source": "/analytics/glm",
+      "destination": "/en/analytics/glm"
     },
     {
-      "source": "/en/ml/logistic-regression",
-      "destination": "/en/ml/logistic-regression"
+      "source": "/analytics/kmeans.html",
+      "destination": "/en/analytics/kmeans"
     },
     {
-      "source": "/en/ml/model_anova",
-      "destination": "/en/ml/model_anova"
+      "source": "/analytics/kmeans",
+      "destination": "/en/analytics/kmeans"
     },
     {
-      "source": "/en/ml/model_coef",
-      "destination": "/en/ml/model_coef"
+      "source": "/analytics/kmodes",
+      "destination": "/en/analytics/kmodes"
     },
     {
-      "source": "/en/ml/model_stats",
-      "destination": "/en/ml/model_stats"
+      "source": "/analytics/kruskal_wallis.html",
+      "destination": "/en/analytics/kruskal_wallis"
     },
     {
-      "source": "/en/ml/multinom",
-      "destination": "/en/ml/multinom"
+      "source": "/analytics/kruskal_wallis",
+      "destination": "/en/analytics/kruskal_wallis"
     },
     {
-      "source": "/en/ml/prediction",
-      "destination": "/en/ml/prediction"
+      "source": "/analytics/lightgbm.html",
+      "destination": "/en/analytics/lightgbm"
     },
     {
-      "source": "/en/ml/prediction_binary",
-      "destination": "/en/ml/prediction_binary"
+      "source": "/analytics/lightgbm",
+      "destination": "/en/analytics/lightgbm"
     },
     {
-      "source": "/en/ml/prediction_coxph",
-      "destination": "/en/ml/prediction_coxph"
+      "source": "/analytics/logistic.html",
+      "destination": "/en/analytics/logistic"
     },
     {
-      "source": "/en/ml/prediction_survfit",
-      "destination": "/en/ml/prediction_survfit"
+      "source": "/analytics/logistic",
+      "destination": "/en/analytics/logistic"
     },
     {
-      "source": "/en/ml/survival-curv",
-      "destination": "/en/ml/survival-curv"
+      "source": "/analytics/market_basket.html",
+      "destination": "/en/analytics/market_basket"
     },
     {
-      "source": "/en/ml/timeseries_clustering",
-      "destination": "/en/ml/timeseries_clustering"
+      "source": "/analytics/market_basket",
+      "destination": "/en/analytics/market_basket"
     },
     {
-      "source": "/en/ml/xgboost",
-      "destination": "/en/ml/xgboost"
+      "source": "/analytics/normality.html",
+      "destination": "/en/analytics/normality"
     },
     {
-      "source": "/en/stats/chi-test",
-      "destination": "/en/stats/chi-test"
+      "source": "/analytics/normality",
+      "destination": "/en/analytics/normality"
     },
     {
-      "source": "/en/stats/correlation",
-      "destination": "/en/stats/correlation"
+      "source": "/analytics/ordered_logistic_regression.html",
+      "destination": "/en/analytics/ordered_logistic_regression"
     },
     {
-      "source": "/en/stats/dist",
-      "destination": "/en/stats/dist"
+      "source": "/analytics/ordered_logistic_regression",
+      "destination": "/en/analytics/ordered_logistic_regression"
     },
     {
-      "source": "/en/stats/exp_bayes_ab",
-      "destination": "/en/stats/exp_bayes_ab"
+      "source": "/analytics/pca.html",
+      "destination": "/en/analytics/pca"
     },
     {
-      "source": "/en/stats/f-test",
-      "destination": "/en/stats/f-test"
+      "source": "/analytics/pca",
+      "destination": "/en/analytics/pca"
     },
     {
-      "source": "/en/stats/mds",
-      "destination": "/en/stats/mds"
+      "source": "/analytics/prediction",
+      "destination": "/en/analytics/prediction"
     },
     {
-      "source": "/en/stats/sim",
-      "destination": "/en/stats/sim"
+      "source": "/analytics/regression.html",
+      "destination": "/en/analytics/regression"
     },
     {
-      "source": "/en/stats/svd",
-      "destination": "/en/stats/svd"
+      "source": "/analytics/regression",
+      "destination": "/en/analytics/regression"
     },
     {
-      "source": "/en/stats/t-test",
-      "destination": "/en/stats/t-test"
+      "source": "/analytics/survival.html",
+      "destination": "/en/analytics/survival"
     },
     {
-      "source": "/en/text/do_ngram",
-      "destination": "/en/text/do_ngram"
+      "source": "/analytics/survival",
+      "destination": "/en/analytics/survival"
     },
     {
-      "source": "/en/text/do_tfidf",
-      "destination": "/en/text/do_tfidf"
+      "source": "/analytics/survival_forest.html",
+      "destination": "/en/analytics/survival_forest"
     },
     {
-      "source": "/en/text/do_tokenize",
-      "destination": "/en/text/do_tokenize"
+      "source": "/analytics/survival_forest",
+      "destination": "/en/analytics/survival_forest"
     },
     {
-      "source": "/en/text/pair_count",
-      "destination": "/en/text/pair_count"
+      "source": "/analytics/t_test.html",
+      "destination": "/en/analytics/t_test"
     },
     {
-      "source": "/en/viz/column-configuration",
-      "destination": "/en/viz/column-configuration"
+      "source": "/analytics/t_test",
+      "destination": "/en/analytics/t_test"
     },
     {
-      "source": "/en/wrangling/add_row",
-      "destination": "/en/wrangling/add_row"
+      "source": "/analytics/t_test_aggregated.html",
+      "destination": "/en/analytics/t_test_aggregated"
     },
     {
-      "source": "/en/wrangling/arrange",
-      "destination": "/en/wrangling/arrange"
+      "source": "/analytics/t_test_aggregated",
+      "destination": "/en/analytics/t_test_aggregated"
     },
     {
-      "source": "/en/wrangling/bind_columns",
-      "destination": "/en/wrangling/bind_columns"
+      "source": "/analytics/textanal.html",
+      "destination": "/en/analytics/textanal"
     },
     {
-      "source": "/en/wrangling/bind_rows",
+      "source": "/analytics/textanal",
+      "destination": "/en/analytics/textanal"
+    },
+    {
+      "source": "/analytics/time_series_clustering.html",
+      "destination": "/en/analytics/time_series_clustering"
+    },
+    {
+      "source": "/analytics/time_series_clustering",
+      "destination": "/en/analytics/time_series_clustering"
+    },
+    {
+      "source": "/analytics/topic_model.html",
+      "destination": "/en/analytics/topic_model"
+    },
+    {
+      "source": "/analytics/topic_model",
+      "destination": "/en/analytics/topic_model"
+    },
+    {
+      "source": "/analytics/var_importance.html",
+      "destination": "/en/analytics/var_importance"
+    },
+    {
+      "source": "/analytics/var_importance",
+      "destination": "/en/analytics/var_importance"
+    },
+    {
+      "source": "/analytics/var_importance_time.html",
+      "destination": "/en/analytics/var_importance_time"
+    },
+    {
+      "source": "/analytics/var_importance_time",
+      "destination": "/en/analytics/var_importance_time"
+    },
+    {
+      "source": "/analytics/wilcoxon.html",
+      "destination": "/en/analytics/wilcoxon"
+    },
+    {
+      "source": "/analytics/wilcoxon",
+      "destination": "/en/analytics/wilcoxon"
+    },
+    {
+      "source": "/analytics/xgboost.html",
+      "destination": "/en/analytics/xgboost"
+    },
+    {
+      "source": "/analytics/xgboost",
+      "destination": "/en/analytics/xgboost"
+    },
+    {
+      "source": "/data-wrangling/bind_rows",
       "destination": "/en/wrangling/bind_rows"
     },
     {
-      "source": "/en/wrangling/buckets",
-      "destination": "/en/wrangling/buckets"
+      "source": "/data-wrangling/case_when",
+      "destination": "/en/wrangling/case_when"
     },
     {
-      "source": "/en/wrangling/clean_names",
-      "destination": "/en/wrangling/clean_names"
+      "source": "/data-wrangling/recode",
+      "destination": "/en/wrangling/recode"
     },
     {
-      "source": "/en/wrangling/command-mode",
-      "destination": "/en/wrangling/command-mode"
+      "source": "/data-wrangling/regular_expression",
+      "destination": "/en/wrangling/regular_expression"
     },
     {
-      "source": "/en/wrangling/complete",
-      "destination": "/en/wrangling/complete"
+      "source": "/data-wrangling/regular_expression_ja",
+      "destination": "/ja/wrangling/regular_expression"
     },
     {
-      "source": "/en/wrangling/distinct",
-      "destination": "/en/wrangling/distinct"
+      "source": "/data-wrangling/separate-japanese-address",
+      "destination": "/en/wrangling/separate-japanese-address"
     },
     {
-      "source": "/en/wrangling/drop_na",
-      "destination": "/en/wrangling/drop_na"
+      "source": "/data-wrangling/text_wrangling",
+      "destination": "/en/wrangling/text_wrangling"
     },
     {
-      "source": "/en/wrangling/expand",
-      "destination": "/en/wrangling/expand"
+      "source": "/data-wrangling/window-calculation",
+      "destination": "/en/wrangling/window-calculation"
     },
     {
-      "source": "/en/wrangling/fill",
-      "destination": "/en/wrangling/fill"
+      "source": "/data_import/cloud-apps-data/api",
+      "destination": "/en/import/api"
     },
     {
-      "source": "/en/wrangling/filter",
-      "destination": "/en/wrangling/filter"
+      "source": "/data_import/cloud-apps-data/edinet",
+      "destination": "/en/import/edinet"
     },
     {
-      "source": "/en/wrangling/gather",
-      "destination": "/en/wrangling/gather"
+      "source": "/data_import/cloud-apps-data/estat",
+      "destination": "/en/import/estat"
     },
     {
-      "source": "/en/wrangling/get_dupes",
-      "destination": "/en/wrangling/get_dupes"
+      "source": "/data_import/cloud-apps-data/fred",
+      "destination": "/en/import/fred"
     },
     {
-      "source": "/en/wrangling/group",
-      "destination": "/en/wrangling/group"
+      "source": "/data_import/cloud-apps-data/reinfolib",
+      "destination": "/en/import/reinfolib"
     },
     {
-      "source": "/en/wrangling/hoist",
-      "destination": "/en/wrangling/hoist"
+      "source": "/data_import/cloud-apps-data/salesforce",
+      "destination": "/en/import/salesforce"
     },
     {
-      "source": "/en/wrangling/join",
-      "destination": "/en/wrangling/join"
+      "source": "/data_import/database-data/google-bigquery",
+      "destination": "/en/import/google-bigquery"
     },
     {
-      "source": "/en/wrangling/merge",
-      "destination": "/en/wrangling/merge"
+      "source": "/data_import/database-data/mssqlserver",
+      "destination": "/en/import/mssqlserver"
     },
     {
-      "source": "/en/wrangling/mutate",
-      "destination": "/en/wrangling/mutate"
+      "source": "/data_import/database-data/mysql",
+      "destination": "/en/import/mysql"
     },
     {
-      "source": "/en/wrangling/mutate_at",
-      "destination": "/en/wrangling/mutate_at"
+      "source": "/data_import/database-data/oracle",
+      "destination": "/en/import/oracle"
     },
     {
-      "source": "/en/wrangling/pivot",
-      "destination": "/en/wrangling/pivot"
+      "source": "/data_import/database-data/postgresql",
+      "destination": "/en/import/postgresql"
     },
     {
-      "source": "/en/wrangling/remove_empty_cols",
-      "destination": "/en/wrangling/remove_empty_cols"
+      "source": "/data_import/database-data/snowflake",
+      "destination": "/en/import/snowflake"
     },
     {
-      "source": "/en/wrangling/remove_empty_rows",
-      "destination": "/en/wrangling/remove_empty_rows"
+      "source": "/data_import/file-data/azure",
+      "destination": "/en/import/azure"
     },
     {
-      "source": "/en/wrangling/rename",
-      "destination": "/en/wrangling/rename"
+      "source": "/data_import/file-data/csv",
+      "destination": "/en/import/csv"
     },
     {
-      "source": "/en/wrangling/reorder",
-      "destination": "/en/wrangling/reorder"
+      "source": "/data_import/file-data/excel",
+      "destination": "/en/import/excel"
     },
     {
-      "source": "/en/wrangling/row_as_header",
-      "destination": "/en/wrangling/row_as_header"
+      "source": "/data_import/file-data/google-drive",
+      "destination": "/en/import/google-drive"
     },
     {
-      "source": "/en/wrangling/sample",
-      "destination": "/en/wrangling/sample"
+      "source": "/data_import/file-data/parquet",
+      "destination": "/en/import/parquet"
     },
     {
-      "source": "/en/wrangling/select",
-      "destination": "/en/wrangling/select"
+      "source": "/data_import/file-data/s3",
+      "destination": "/en/import/s3"
     },
     {
-      "source": "/en/wrangling/separate",
-      "destination": "/en/wrangling/separate"
+      "source": "/data_import/free-input-text",
+      "destination": "/en/import/free-input-text"
     },
     {
-      "source": "/en/wrangling/slice",
-      "destination": "/en/wrangling/slice"
+      "source": "/data_import/r-script-data",
+      "destination": "/en/import/r-script-data"
     },
     {
-      "source": "/en/wrangling/smote",
-      "destination": "/en/wrangling/smote"
+      "source": "/data_import/r-script-data_ja",
+      "destination": "/ja/import/r-script-data"
     },
     {
-      "source": "/en/wrangling/spread",
-      "destination": "/en/wrangling/spread"
+      "source": "/data_import/user-defined-plugin",
+      "destination": "/en/import/user-defined-plugin"
     },
     {
-      "source": "/en/wrangling/summarize",
-      "destination": "/en/wrangling/summarize"
+      "source": "/howto/set_exploratory_home",
+      "destination": "/en/howto/set_exploratory_home"
     },
     {
-      "source": "/en/wrangling/top_n",
-      "destination": "/en/wrangling/top_n"
+      "source": "/howto/set_exploratory_home_ja",
+      "destination": "/ja/howto/set_exploratory_home"
     },
     {
-      "source": "/en/wrangling/type-convert",
-      "destination": "/en/wrangling/type-convert"
+      "source": "/import/r-script-data_ja.html",
+      "destination": "/ja/import/r-script-data"
     },
     {
-      "source": "/en/wrangling/ungroup",
-      "destination": "/en/wrangling/ungroup"
+      "source": "/import/r-script-data_ja",
+      "destination": "/ja/import/r-script-data"
     },
     {
-      "source": "/en/wrangling/unite",
-      "destination": "/en/wrangling/unite"
+      "source": "/main/do_ngram",
+      "destination": "/en/text/do_ngram"
     },
     {
-      "source": "/en/wrangling/unnest",
-      "destination": "/en/wrangling/unnest"
+      "source": "/main/pair_count",
+      "destination": "/en/text/pair_count"
     },
     {
-      "source": "/en/wrangling/unnest_longer",
-      "destination": "/en/wrangling/unnest_longer"
+      "source": "/product-features/markdown-note",
+      "destination": "/en/markdown/markdown-note"
     },
     {
-      "source": "/en/wrangling/unnest_wider",
-      "destination": "/en/wrangling/unnest_wider"
+      "source": "/product-features/markdown-note_ja",
+      "destination": "/ja/markdown/markdown-note"
     },
     {
-      "source": "/en/ai/ai-prompt-function-ri-ben-yu",
-      "destination": "/en/ai/ai-promtpt-function-en"
+      "source": "/product-features/schedule/history",
+      "destination": "/en/schedule/history"
     },
     {
-      "source": "/en/product-features/share_ja/chart_ja",
-      "destination": "/en/share/chart"
+      "source": "/product-features/schedule/manage",
+      "destination": "/en/schedule/manage"
     },
     {
-      "source": "/en/product-features/share_ja/data_ja",
-      "destination": "/en/share/data"
+      "source": "/product-features/schedule_ja/history_ja",
+      "destination": "/ja/schedule/history"
     },
     {
-      "source": "/en/product-features/share_ja/note_ja",
-      "destination": "/en/share/note"
+      "source": "/product-features/schedule_ja/manage_ja",
+      "destination": "/ja/schedule/manage"
     },
     {
-      "source": "/en/visualization/features/color-ja",
+      "source": "/product-features/share-ri-ben-yu/share_type_ja",
+      "destination": "/ja/share/share_type"
+    },
+    {
+      "source": "/product-features/share/csvapi",
+      "destination": "/en/share/csvapi"
+    },
+    {
+      "source": "/product-features/share/restore",
+      "destination": "/en/share/restore"
+    },
+    {
+      "source": "/product-features/share/share_type",
+      "destination": "/en/share/share_type"
+    },
+    {
+      "source": "/product-features/share/version-history",
+      "destination": "/en/share/version-history"
+    },
+    {
+      "source": "/product-features/share_ja/csvapi_ja",
+      "destination": "/ja/share/csvapi"
+    },
+    {
+      "source": "/product-features/summary",
+      "destination": "/en/summary/summary"
+    },
+    {
+      "source": "/product-features/team/manage",
+      "destination": "/en/team/manage"
+    },
+    {
+      "source": "/product-features/team_ja/manage_ja",
+      "destination": "/ja/team/manage"
+    },
+    {
+      "source": "/visualization/features/color",
       "destination": "/en/viz/color"
     },
     {
-      "source": "/en/visualization/types/r-custom_ja",
-      "destination": "/en/viz/r-custom"
+      "source": "/visualization/features/limit",
+      "destination": "/en/viz/limit"
+    },
+    {
+      "source": "/visualization/features/number-of-unuque-values-check",
+      "destination": "/en/viz/number-of-unuque-values-check"
+    },
+    {
+      "source": "/visualization/features/number-of-unuque-values-check-ja",
+      "destination": "/ja/viz/number-of-unuque-values-check"
+    },
+    {
+      "source": "/visualization/types/area",
+      "destination": "/en/viz/area"
+    },
+    {
+      "source": "/visualization/types/bar",
+      "destination": "/en/viz/bar"
+    },
+    {
+      "source": "/visualization/types/boxplot",
+      "destination": "/en/viz/boxplot"
+    },
+    {
+      "source": "/visualization/types/bubble",
+      "destination": "/en/viz/bubble"
+    },
+    {
+      "source": "/visualization/types/contour",
+      "destination": "/en/viz/contour"
+    },
+    {
+      "source": "/visualization/types/densityplot",
+      "destination": "/en/viz/densityplot"
+    },
+    {
+      "source": "/visualization/types/easymap",
+      "destination": "/en/viz/easymap"
+    },
+    {
+      "source": "/visualization/types/errbar",
+      "destination": "/en/viz/errbar"
+    },
+    {
+      "source": "/visualization/types/errbar-agg",
+      "destination": "/en/viz/errbar-agg"
+    },
+    {
+      "source": "/visualization/types/heatmap",
+      "destination": "/en/viz/heatmap"
+    },
+    {
+      "source": "/visualization/types/hist",
+      "destination": "/en/viz/hist"
+    },
+    {
+      "source": "/visualization/types/line",
+      "destination": "/en/viz/line"
+    },
+    {
+      "source": "/visualization/types/map",
+      "destination": "/en/viz/map"
+    },
+    {
+      "source": "/visualization/types/maphmap",
+      "destination": "/en/viz/maphmap"
+    },
+    {
+      "source": "/visualization/types/pie",
+      "destination": "/en/viz/pie"
+    },
+    {
+      "source": "/visualization/types/radar",
+      "destination": "/en/viz/radar"
+    },
+    {
+      "source": "/visualization/types/scatter",
+      "destination": "/en/viz/scatter"
+    },
+    {
+      "source": "/visualization/types/singlevalue",
+      "destination": "/en/viz/singlevalue"
+    },
+    {
+      "source": "/visualization/types/summarize-table",
+      "destination": "/en/viz/summarize-table"
+    },
+    {
+      "source": "/visualization/types/violin",
+      "destination": "/en/viz/violin"
+    },
+    {
+      "source": "/visualization/types/wordcloud",
+      "destination": "/en/viz/wordcloud"
+    },
+    {
+      "source": "/data-wrangling/window-calculation_ja",
+      "destination": "/ja/wrangling/window-calculation"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/google-analytics-ja",
+      "destination": "/ja/import/google-analytics"
+    },
+    {
+      "source": "/data_import/database-data/mysql_ja",
+      "destination": "/ja/import/mysql"
+    },
+    {
+      "source": "/data_import/database-data/postgresql_ja",
+      "destination": "/ja/import/postgresql"
+    },
+    {
+      "source": "/data_import/database-data/redshift_ja",
+      "destination": "/ja/import/redshift"
+    },
+    {
+      "source": "/diagnostics/debug_log_ja",
+      "destination": "/ja/debug_log"
+    },
+    {
+      "source": "/diagnostics/startup_log_ja",
+      "destination": "/ja/startup_log"
+    },
+    {
+      "source": "/product-features/markdown-dashboard_ja",
+      "destination": "/ja/markdown/markdown-dashboard"
+    },
+    {
+      "source": "/product-features/parameter_ja",
+      "destination": "/ja/parameter/parameter"
+    },
+    {
+      "source": "/product-features/schedule_ja",
+      "destination": "/ja/schedule/schedule"
+    },
+    {
+      "source": "/product-features/schedule_ja/notification_ja",
+      "destination": "/ja/schedule/notification"
+    },
+    {
+      "source": "/product-features/share_ja",
+      "destination": "/ja/share/share"
+    },
+    {
+      "source": "/product-features/share_ja/bjonno",
+      "destination": "/ja/share/version-history"
+    },
+    {
+      "source": "/product-features/share_ja/notification_ja",
+      "destination": "/ja/share/notification"
+    },
+    {
+      "source": "/product-features/share_ja/restore_ja",
+      "destination": "/ja/share/restore"
+    },
+    {
+      "source": "/product-features/share_ja/share_type_ja",
+      "destination": "/ja/share/share_type"
+    },
+    {
+      "source": "/product-features/team_ja",
+      "destination": "/ja/team/team"
+    },
+    {
+      "source": "/setup/set_exploratory_home_ja",
+      "destination": "/ja/howto/set_exploratory_home"
+    },
+    {
+      "source": "/data-wrangling/arrange",
+      "destination": "/en/wrangling/arrange"
+    },
+    {
+      "source": "/data-wrangling/fill",
+      "destination": "/en/wrangling/fill"
+    },
+    {
+      "source": "/data-wrangling/filter",
+      "destination": "/en/wrangling/filter"
+    },
+    {
+      "source": "/data-wrangling/gather",
+      "destination": "/en/wrangling/gather"
+    },
+    {
+      "source": "/data-wrangling/mutate",
+      "destination": "/en/wrangling/mutate"
+    },
+    {
+      "source": "/data-wrangling/pivot",
+      "destination": "/en/wrangling/pivot"
+    },
+    {
+      "source": "/data-wrangling/separate",
+      "destination": "/en/wrangling/separate"
+    },
+    {
+      "source": "/data-wrangling/unite",
+      "destination": "/en/wrangling/unite"
+    },
+    {
+      "source": "/visualization/types/geojson",
+      "destination": "/en/viz/geojson"
+    },
+    {
+      "source": "/visualization/types/pivot",
+      "destination": "/en/viz/pivot"
+    },
+    {
+      "source": "/visualization/types/table",
+      "destination": "/en/viz/table"
+    },
+    {
+      "source": "/visualization/types/wordcloud_ja",
+      "destination": "/ja/viz/wordcloud"
     }
   ],
   "logo": {
