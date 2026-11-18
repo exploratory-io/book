@@ -129,7 +129,7 @@ The result includes the data version and update time. Check which data the numbe
 
 - The search result is empty: nothing matched. It is not a sign-in error. Change the search words, or use `--scope` all.
 - You cannot open a browser: in a script or CI, where there is no browser, sign in with an API key instead: `expl server login --with-token` (see [API keys](/en/cli/server/token)). For a machine that cannot open a browser, see [Sign in](/en/cli/server/login#nobrowser).
-- You see Run "expl server login".: you are not signed in, or the saved login was rejected. Run expl server login.
+- You see `Run "expl server login".`: you are not signed in, or the saved login was rejected. Run expl server login.
 - You see expl: command not found: open a new terminal and try again.
 - You do not know which id to use: use an id from the search result.
 - The list of headings (metadata.toc) is missing from a note: add `--include-toc`, or get the heading ids with `--query`.

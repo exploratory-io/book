@@ -365,6 +365,6 @@ expl server chart get-image <id> --chart <chart> --json
 | --- | --- |
 | 合計、並べ替え、絞り込みが必要 | chart query を使用します。 |
 | DATA_EGRESS_LIMIT | 公開した人が、このデータの行を共有していません。チャート、アナリティクス、要約を使用します。 |
-| Run "expl server login". | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
 
 すべてのフラグは[chart get-data](/ja/cli/server/commands#chart-get-data)、集計の指定方法は[chart query](/ja/cli/server/commands#chart-query)、画像の取得は[chart get-image](/ja/cli/server/commands#chart-get-image)で説明しています。

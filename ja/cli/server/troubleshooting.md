@@ -40,7 +40,7 @@ Desktop と npm の両方にインストールしている場合の確認方法�
 
 | 症状 | 対処 |
 | --- | --- |
-| Run "expl server login". | サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。 |
 | The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | キーが間違っているか、期限切れか、取り消されています。新しい API キーを作って、EXPL_SERVER_TOKEN に設定するか、`expl server login --with-token` を実行します。終了コード 4 です。 |
 | API keys are disabled by your administrator. / This IP address is not allowed for API keys. | 管理者が、API キーをオフにしているか、使える IP アドレスを限定しています。管理者に確認するか、expl server login でサインインします。終了コード 4 です。 |
 | `--token` was removed. … | EXPL_SERVER_TOKEN を設定するか、`expl server login --with-token` を実行します。終了コード 2 です。 |

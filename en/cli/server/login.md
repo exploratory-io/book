@@ -158,7 +158,7 @@ The [Data and permissions](/en/mcp/server/data) page of MCP Server describes the
 
 | What you see | What to do |
 | --- | --- |
-| Run "expl server login". | You are not signed in, or the saved login was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in, or the saved login was rejected. Run expl server login. |
 | The redirect URL has no authorization code. | With `--no-browser`, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
 | It fails after you paste | The code works only once and expires after 60 seconds. Start again from the beginning. |
 | The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked, or its owner can no longer use API keys. Exit code 4. Create a new API key, then set EXPL_SERVER_TOKEN or run `expl server login --with-token`. |

@@ -101,6 +101,6 @@ A message can name a tool, such as dataframe_get_schema. Run expl server tools d
 | --- | --- |
 | DATA_EGRESS_LIMIT | The publisher does not allow downloading this data as a file. Use fetch or dataframe get-schema for what the publisher shares, or open the URL in the browser. |
 | SERVER_BUSY | Another export of yours is running, or you reached the hourly export limit. One export can run at a time per user. Try again in a few seconds; for the hourly limit, wait up to an hour. |
-| Run "expl server login". | You are not signed in, or the saved login or API key was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in, or the saved login or API key was rejected. Run expl server login. |
 
 Every flag is described in [dataframe export](/en/cli/server/commands#dataframe-export), and how to filter and aggregate in [dataset query](/en/cli/server/commands#dataset-query).

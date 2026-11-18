@@ -108,6 +108,8 @@ FROM SUBQ;
 For Migration from legacy SQL, Please refer [Migrating to Standard SQL](https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql)
 
 
+<a id="6.-page-size"></a>
+
 ## 6. Page Size
 
 When importing data from Google BigQuery, if you specify a lot of columns in your SQL query, the query may return missing results.

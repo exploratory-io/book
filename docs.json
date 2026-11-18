@@ -9962,12 +9962,148 @@
     {
       "source": "/product-features/share-ri-ben-yu/restore_ja",
       "destination": "/ja/share/restore"
+    },
+    {
+      "source": "/product-features/share_ja/chart_ja.html",
+      "destination": "/en/share/chart"
+    },
+    {
+      "source": "/product-features/share_ja/data_ja.html",
+      "destination": "/en/share/data"
+    },
+    {
+      "source": "/product-features/share_ja/note_ja.html",
+      "destination": "/en/share/note"
+    },
+    {
+      "source": "/visualization/features/color-ja.html",
+      "destination": "/ja/viz/color"
+    },
+    {
+      "source": "/visualization/types/r-custom_ja.html",
+      "destination": "/en/viz/r-custom"
+    },
+    {
+      "source": "/data-wrangling/regular_expression_ja.html",
+      "destination": "/ja/wrangling/regular_expression"
+    },
+    {
+      "source": "/data_import/r-script-data_ja.html",
+      "destination": "/ja/import/r-script-data"
+    },
+    {
+      "source": "/howto/set_exploratory_home_ja.html",
+      "destination": "/ja/howto/set_exploratory_home"
+    },
+    {
+      "source": "/product-features/markdown-note_ja.html",
+      "destination": "/ja/markdown/markdown-note"
+    },
+    {
+      "source": "/product-features/schedule_ja/history_ja.html",
+      "destination": "/ja/schedule/history"
+    },
+    {
+      "source": "/product-features/schedule_ja/manage_ja.html",
+      "destination": "/ja/schedule/manage"
+    },
+    {
+      "source": "/product-features/share-ri-ben-yu/share_type_ja.html",
+      "destination": "/ja/share/share_type"
+    },
+    {
+      "source": "/product-features/share_ja/csvapi_ja.html",
+      "destination": "/ja/share/csvapi"
+    },
+    {
+      "source": "/product-features/team_ja/manage_ja.html",
+      "destination": "/ja/team/manage"
+    },
+    {
+      "source": "/visualization/features/number-of-unuque-values-check-ja.html",
+      "destination": "/ja/viz/number-of-unuque-values-check"
+    },
+    {
+      "source": "/data-wrangling/window-calculation_ja.html",
+      "destination": "/ja/wrangling/window-calculation"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/google-analytics-ja.html",
+      "destination": "/ja/import/google-analytics"
+    },
+    {
+      "source": "/data_import/database-data/mysql_ja.html",
+      "destination": "/ja/import/mysql"
+    },
+    {
+      "source": "/data_import/database-data/postgresql_ja.html",
+      "destination": "/ja/import/postgresql"
+    },
+    {
+      "source": "/data_import/database-data/redshift_ja.html",
+      "destination": "/ja/import/redshift"
+    },
+    {
+      "source": "/diagnostics/debug_log_ja.html",
+      "destination": "/ja/debug_log"
+    },
+    {
+      "source": "/diagnostics/startup_log_ja.html",
+      "destination": "/ja/startup_log"
+    },
+    {
+      "source": "/product-features/markdown-dashboard_ja.html",
+      "destination": "/ja/markdown/markdown-dashboard"
+    },
+    {
+      "source": "/product-features/parameter_ja.html",
+      "destination": "/ja/parameter"
+    },
+    {
+      "source": "/product-features/schedule_ja.html",
+      "destination": "/ja/schedule"
+    },
+    {
+      "source": "/product-features/schedule_ja/notification_ja.html",
+      "destination": "/ja/schedule/notification"
+    },
+    {
+      "source": "/product-features/share_ja.html",
+      "destination": "/ja/share"
+    },
+    {
+      "source": "/product-features/share_ja/notification_ja.html",
+      "destination": "/ja/share/notification"
+    },
+    {
+      "source": "/product-features/share_ja/restore_ja.html",
+      "destination": "/ja/share/restore"
+    },
+    {
+      "source": "/product-features/share_ja/share_type_ja.html",
+      "destination": "/ja/share/share_type"
+    },
+    {
+      "source": "/product-features/team_ja.html",
+      "destination": "/ja/team"
+    },
+    {
+      "source": "/setup/set_exploratory_home_ja.html",
+      "destination": "/ja/howto/set_exploratory_home"
+    },
+    {
+      "source": "/visualization/types/wordcloud_ja.html",
+      "destination": "/ja/viz/wordcloud"
+    },
+    {
+      "source": "/product-features/share-ri-ben-yu/restore_ja.html",
+      "destination": "/ja/share/restore"
     }
   ],
   "logo": {
     "light": "/en/markdown/images/logo_top.png",
-    "dark": "/en/markdown/images/logo_top.png",
-    "href": "https://exploratory.io"
+    "dark": "/en/markdown/images/logo_top.png"
   },
-  "favicon": "/images/favicon.png"
+  "favicon": "/images/favicon.png",
+  "description": "Documentation for Exploratory Desktop, Exploratory Server, MCP and CLI."
 }

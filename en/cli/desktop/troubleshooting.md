@@ -36,7 +36,7 @@ Send these to support@exploratory.io: the output of `expl --version`, the comman
 
 ## Windows
 
-In Windows PowerShell 5.1, a value that contains both " and a space breaks when you pass it directly. This is a PowerShell 5.1 bug and affects other commands such as git and node too. Pass such a value in the `--input` JSON, or use PowerShell 7.3 or later.
+In Windows PowerShell 5.1, a value that contains both `"` and a space breaks when you pass it directly. This is a PowerShell 5.1 bug and affects other commands such as git and node too. Pass such a value in the `--input` JSON, or use PowerShell 7.3 or later.
 
 When you pipe into `--input` - in Windows PowerShell 5.1, run the line below first. Otherwise Japanese text becomes ?.
 

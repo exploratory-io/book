@@ -249,7 +249,7 @@ expl server search "" --scope mine --limit 50 --json
 | 症状 | 対処 |
 | --- | --- |
 | Too big: expected number to be \<=50 at limit | `--limit` を 50 以下にします。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server fetch](#fetch)、[expl server dataframe get-schema](#dataframe-get-schema)
 
@@ -420,7 +420,7 @@ expl server fetch <id> --query "region" --json
 | --- | --- |
 | 本文が長くて、必要な部分が見つからない | `--query` で話題を探すか、metadata.toc の見出しを `--section` で指定します。 |
 | チャートやアナリティクスの名前が分からない | 結果の metadata.charts と metadata.blocks を確認します。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server search](#search)、[expl server chart get-data](#chart-get-data)、[expl server analytics get-result](#analytics-get-result)
 
@@ -605,7 +605,7 @@ expl server dataframe get-schema <id> --json
 | 症状 | 対処 |
 | --- | --- |
 | dataset query が DATASET_UNAVAILABLE で失敗する | `--detail` full で、結果の query.available を確認します。false のデータは、サーバーでは問い合わせできません。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server dataframe preview](#dataframe-preview)、[expl server dataset query](#dataset-query)
 
@@ -775,7 +775,7 @@ offset に、すでに読んだ行数を渡すと、続きを読めます。1 �
 | 症状 | 対処 |
 | --- | --- |
 | DATA_EGRESS_LIMIT | 公開した人が、このデータの行を共有していません。チャート、アナリティクス、要約を使います。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server dataframe get-schema](#dataframe-get-schema)、[expl server dataset query](#dataset-query)
 
@@ -952,7 +952,7 @@ Sales Orders のデータ（id: hI6jK7lM8n）で実行した結果です。長�
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias は必須です。英字、数字、_ だけで、数字で始めず、64 文字までにします。 |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | sort の項目では、出力の列の名前を field で指定します。column、by、alias、name、metric は使えません。 |
 | DATASET_UNAVAILABLE | このデータは、全データを含めずに公開されているため、サーバーでは問い合わせできません。公開した人が、最新のバージョンの Exploratory Desktop でデータを公開し直す必要があります。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server dataframe get-schema](#dataframe-get-schema)、[expl server dataframe export](#dataframe-export)
 
@@ -1057,7 +1057,7 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 | --- | --- |
 | DATA_EGRESS_LIMIT | 公開した人が、このデータをファイルとしてダウンロードすることを許していません。fetch か dataframe get-schema で、公開した人が共有している内容を読みます。URL をブラウザで開く方法もあります。 |
 | SERVER_BUSY | ほかの書き出しが実行中か、1 時間あたりの書き出しの上限に達しています。1 人のユーザーが同時に実行できる書き出しは 1 つです。数秒おいてから再度実行し、上限に達した場合は最大 1 時間待ちます。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server dataset query](#dataset-query)、[expl server dataframe preview](#dataframe-preview)
 
@@ -1134,7 +1134,7 @@ order_date は、最終的なデータの列の名前に置き換えます。
 | Use either steps or column, not both. (INVALID_PARAMETER) | `--steps` と `--column` は、どちらか一方だけを渡します。 |
 | include_scripts works only together with steps or column. (INVALID_PARAMETER) | `--include-scripts` を使うときは、`--steps` か `--column` も付けます。 |
 | cursor belongs to an older version of this data. Call again without cursor. (INVALID_PARAMETER) | データが公開し直されています。`--cursor` を付けずに、もう一度実行します。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server dataframe get-schema](#dataframe-get-schema)、[expl server dataset query](#dataset-query)
 
@@ -1295,7 +1295,7 @@ offset に、すでに読んだ行数を渡すと、続きを読めます。1 �
 | --- | --- |
 | 合計、並べ替え、絞り込みをしたい | chart query を使います。 |
 | DATA_EGRESS_LIMIT | 公開した人が、このデータの行を共有していません。チャート、アナリティクス、要約を使います。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server chart query](#chart-query)、[expl server chart get-image](#chart-get-image)
 
@@ -1424,7 +1424,7 @@ expl server chart get-image <id> --chart <chart> --json
 | 症状 | 対処 |
 | --- | --- |
 | may_be_stale の警告が出る | 画像が、データの更新より古い可能性があります。最新の数値は chart get-data で確認します。警告は標準エラーに出ます。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server chart get-data](#chart-get-data)
 
@@ -1636,7 +1636,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 | 症状 | 対処 |
 | --- | --- |
 | アナリティクスの名前が分からない | fetch の結果の metadata.blocks を確認します。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server fetch](#fetch)
 
@@ -1796,7 +1796,7 @@ expl server chart query --id <id> --chart <chart> --mode aggregate --dimensions 
 | 症状 | 対処 |
 | --- | --- |
 | CHART_REAGGREGATION | チャートがすでに集計した列を、さらに集計しています。警告を伝えるか、result.excluded_totals を使います。 |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server chart get-data](#chart-get-data)、[expl server chart get-image](#chart-get-image)
 
@@ -1876,6 +1876,6 @@ expl server desktop mcp-setup-guide --json
 
 | 症状 | 対処 |
 | --- | --- |
-| Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [サインイン](/ja/cli/server/login)

@@ -129,7 +129,7 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 
 - 検索結果が空です: 該当するものがなかったということで、サインインのエラーではありません。検索語を変えるか、`--scope` all を付けます。
 - ブラウザを開けません: ブラウザのないスクリプトや CI では、代わりに API キーでサインインします（`expl server login --with-token`。[API キー](/ja/cli/server/token)を参照）。ブラウザを開けないマシンでは、[サインイン](/ja/cli/server/login#nobrowser)を参照してください。
-- Run "expl server login". と表示されます: サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。
+- `Run "expl server login".` と表示されます: サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。
 - expl: command not found と表示されます: 新しいターミナルを開いて、もう一度試します。
 - どの id を使えばよいか分かりません: 検索結果に表示された id を使います。
 - ノートで見出しの一覧（metadata.toc）が出ません: `--include-toc` を付けるか、`--query` で見出しの id を調べます。

@@ -36,7 +36,7 @@ expl status を実行します。expl tools list が終了コード 0 で終わ�
 
 ## Windows
 
-Windows PowerShell 5.1 では、" と空白の両方を含む値を直接渡すと壊れます。PowerShell 5.1 自身の不具合で、ほかのコマンド（git、node など）でも同じです。そうした値は `--input` の JSON で渡すか、PowerShell 7.3 以降を使ってください。
+Windows PowerShell 5.1 では、`"` と空白の両方を含む値を直接渡すと壊れます。PowerShell 5.1 自身の不具合で、ほかのコマンド（git、node など）でも同じです。そうした値は `--input` の JSON で渡すか、PowerShell 7.3 以降を使ってください。
 
 Windows PowerShell 5.1 で `--input` - にパイプで渡すときは、先に次を実行してください。既定のままだと日本語が ? になります。
 

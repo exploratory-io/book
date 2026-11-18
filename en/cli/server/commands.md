@@ -249,7 +249,7 @@ When has_more in the result is true, pass next_offset to `--offset` to get the n
 | What you see | What to do |
 | --- | --- |
 | Too big: expected number to be \<=50 at limit | Set `--limit` to 50 or less. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server fetch](#fetch), [expl server dataframe get-schema](#dataframe-get-schema)
 
@@ -420,7 +420,7 @@ For a long note, find a topic with `--query` or read one heading with `--section
 | --- | --- |
 | The text is long and you cannot find the part you need | Find the topic with `--query`, or pass a heading from metadata.toc to `--section`. |
 | You do not know the name of a chart or analytics | Look at metadata.charts and metadata.blocks in the result. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server search](#search), [expl server chart get-data](#chart-get-data), [expl server analytics get-result](#analytics-get-result)
 
@@ -605,7 +605,7 @@ There is no way to page through the result.
 | What you see | What to do |
 | --- | --- |
 | dataset query fails with DATASET_UNAVAILABLE | Run it with `--detail` full and check query.available in the result. Data with false cannot be queried on the server. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server dataframe preview](#dataframe-preview), [expl server dataset query](#dataset-query)
 
@@ -775,7 +775,7 @@ Pass the number of rows you have already read to offset to read on. One call ret
 | What you see | What to do |
 | --- | --- |
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server dataframe get-schema](#dataframe-get-schema), [expl server dataset query](#dataset-query)
 
@@ -952,7 +952,7 @@ There is no paging. When has_more in the result is true, narrow the filters or a
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias is required. Use only letters, digits and _, do not start with a digit, and use at most 64 characters. |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | In a sort entry, give the output column name with field. column, by, alias, name and metric are not accepted. |
 | DATASET_UNAVAILABLE | This data was published without its full data, so it cannot be queried on the server. The publisher needs to republish it from the latest version of Exploratory Desktop. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server dataframe get-schema](#dataframe-get-schema), [expl server dataframe export](#dataframe-export)
 
@@ -1057,7 +1057,7 @@ There is no paging. Use this command when the result is too large for dataset qu
 | --- | --- |
 | DATA_EGRESS_LIMIT | The publisher does not allow downloading this data as a file. Use fetch or dataframe get-schema for what the publisher shares, or open the URL in the browser. |
 | SERVER_BUSY | Another export of yours is running, or you reached the hourly export limit. One export can run at a time per user. Try again in a few seconds; for the hourly limit, wait up to an hour. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server dataset query](#dataset-query), [expl server dataframe preview](#dataframe-preview)
 
@@ -1134,7 +1134,7 @@ An outline that does not fit in one result continues with `--cursor`. When the s
 | Use either steps or column, not both. (INVALID_PARAMETER) | Pass only one of `--steps` and `--column`. |
 | include_scripts works only together with steps or column. (INVALID_PARAMETER) | Add `--steps` or `--column` when you use `--include-scripts`. |
 | cursor belongs to an older version of this data. Call again without cursor. (INVALID_PARAMETER) | The data was published again. Run the command again without `--cursor`. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server dataframe get-schema](#dataframe-get-schema), [expl server dataset query](#dataset-query)
 
@@ -1295,7 +1295,7 @@ Pass the number of rows you have already read to offset to read on. One call ret
 | --- | --- |
 | You need totals, sorting or filtering | Use chart query. |
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server chart query](#chart-query), [expl server chart get-image](#chart-get-image)
 
@@ -1424,7 +1424,7 @@ There is no paging.
 | What you see | What to do |
 | --- | --- |
 | A may_be_stale warning appears | The image may be older than the latest data update. Check the latest numbers with chart get-data. The warning is printed to standard error. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server chart get-data](#chart-get-data)
 
@@ -1636,7 +1636,7 @@ Use `--limit` to cap the rows of each table. There is no way to page through the
 | What you see | What to do |
 | --- | --- |
 | You do not know the name of the analytics | Look at metadata.blocks in the result of fetch. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server fetch](#fetch)
 
@@ -1796,7 +1796,7 @@ There is no paging. When has_more in the result is true, narrow the filters or a
 | What you see | What to do |
 | --- | --- |
 | CHART_REAGGREGATION | You are aggregating a column the chart has already aggregated. Mention the warning or use result.excluded_totals. |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [expl server chart get-data](#chart-get-data), [expl server chart get-image](#chart-get-image)
 
@@ -1876,6 +1876,6 @@ There is no paging.
 
 | What you see | What to do |
 | --- | --- |
-| Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in or the token was rejected. Run expl server login. |
 
 Related: [Sign in](/en/cli/server/login)

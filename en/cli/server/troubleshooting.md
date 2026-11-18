@@ -40,7 +40,7 @@ For how to check when two copies are installed, see [Installation](/en/cli/serve
 
 | What you see | What to do |
 | --- | --- |
-| Run "expl server login". | You are not signed in, or the saved login was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in, or the saved login was rejected. Run expl server login. |
 | The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked. Create a new API key, then set EXPL_SERVER_TOKEN or run `expl server login --with-token`. Exit code 4. |
 | API keys are disabled by your administrator. / This IP address is not allowed for API keys. | An administrator turned API keys off or limits them to certain IP addresses. Ask your administrator, or sign in with expl server login. Exit code 4. |
 | `--token` was removed. … | Set EXPL_SERVER_TOKEN, or run `expl server login --with-token`. Exit code 2. |

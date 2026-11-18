@@ -31,6 +31,8 @@ Create a connection following [this instruction](oauth-connection.html).
 ## 3. Input parameters
 
 * Max # of tweets - Set max number of the tweets to return.
+<a id="language"></a>
+
 * Language - Set a language code if you want to limit the tweets to certain languages. The code is [ISO 639-1 alpha-2](https://en.wikipedia.org/wiki/ISO_639-1).
 * Last N Days - Set number of the past days for the search data.
 * Search Text - Type text to search.

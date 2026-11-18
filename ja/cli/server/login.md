@@ -159,7 +159,7 @@ expl server が呼び出す操作について、Exploratory Server は次のも�
 
 | 症状 | 対処 |
 | --- | --- |
-| Run "expl server login". | サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。 |
 | The redirect URL has no authorization code. | `--no-browser` のとき、最初に表示された URL を貼り付けています。移動先の、http://127.0.0.1/callback?code= で始まる URL を貼り付けてください。 |
 | 貼り付けたあとに失敗する | コードは一度しか使えず、60 秒で切れます。最初からやり直します。 |
 | The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | キーが間違っているか、期限切れか、取り消されたか、持ち主が API キーを使えなくなっています。終了コード 4 です。新しい API キーを作って、EXPL_SERVER_TOKEN に設定するか、`expl server login --with-token` を実行します。 |
