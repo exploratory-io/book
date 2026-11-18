@@ -581,7 +581,8 @@
                   "en/history_error_recovery"
                 ]
               },
-              "en/shortcut"
+              "en/shortcut",
+              "en/zz-render-test"
             ]
           }
         ],
