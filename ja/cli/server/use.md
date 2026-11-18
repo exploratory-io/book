@@ -7,7 +7,7 @@ title: "使い方"
 | やりたいこと | 主なコマンド | 詳しいページ |
 | --- | --- | --- |
 | 必要なデータやノートを探す | `expl server search "Sales Orders" --scope all --type` data | [データを探す](/ja/cli/server/guides/find-data) |
-| 公開されたノートを読む | expl server fetch \<id\> `--section` \<id\>（または `--query` "sales forecast"） | [ノートを読む](/ja/cli/server/guides/read-notes) |
+| 公開されたノートを読む | expl server fetch \<id\> `--section` \<id\>（または `--query "sales forecast"`） | [ノートを読む](/ja/cli/server/guides/read-notes) |
 | データの列の名前と型を確認する | expl server dataframe get-schema \<id\> `--detail` light | [データを集計する](/ja/cli/server/guides/query-data) |
 | データを絞り込み、集計する | expl server dataset query \<dataset_id\> `--mode` aggregate `--dimensions` ... `--metrics` ... | [データを集計する](/ja/cli/server/guides/query-data) |
 | チャートの数値を取得する | expl server chart get-data \<id\> `--chart` \<chart\> | [チャートの数値を取得する](/ja/cli/server/guides/dashboard-charts) |

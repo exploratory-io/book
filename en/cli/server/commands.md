@@ -377,7 +377,7 @@ expl server fetch <id> --query "region" --json
 
 Returns paragraphs that contain any of the words.
 
-The result below was run with `--query` "region" on the same note. Each paragraph that matches comes with its heading id and path in square brackets.
+The result below was run with `--query "region"` on the same note. Each paragraph that matches comes with its heading id and path in square brackets.
 
 **Result**
 

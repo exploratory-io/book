@@ -7,7 +7,7 @@ Find the command and the guide for what you want to do with published content.
 | What you want to do | Main command | Guide |
 | --- | --- | --- |
 | Find the data or note you need | `expl server search "Sales Orders" --scope all --type` data | [Find data](/en/cli/server/guides/find-data) |
-| Read a published note | expl server fetch \<id\> `--section` \<id\> (or `--query` "sales forecast") | [Read notes](/en/cli/server/guides/read-notes) |
+| Read a published note | expl server fetch \<id\> `--section` \<id\> (or `--query "sales forecast"`) | [Read notes](/en/cli/server/guides/read-notes) |
 | Check the columns and types of data | expl server dataframe get-schema \<id\> `--detail` light | [Query data](/en/cli/server/guides/query-data) |
 | Filter and aggregate data | expl server dataset query \<dataset_id\> `--mode` aggregate `--dimensions` ... `--metrics` ... | [Query data](/en/cli/server/guides/query-data) |
 | Get the numbers behind a chart | expl server chart get-data \<id\> `--chart` \<chart\> | [Get chart numbers](/en/cli/server/guides/dashboard-charts) |
