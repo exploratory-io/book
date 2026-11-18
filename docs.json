@@ -582,7 +582,9 @@
                 ]
               },
               "en/shortcut",
-              "en/zz-render-test"
+              "en/zztesta",
+              "en/zztestb",
+              "en/zztestc"
             ]
           }
         ],
