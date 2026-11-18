@@ -8,7 +8,7 @@ exploratory.io に公開されたデータ、ノート、ダッシュボード�
 
 ## 前提
 
-expl server login でサインインしてあります（[サインイン](../login.md)を参照）。検索で返るのは、自分が見られるものだけです。
+expl server login でサインインしてあります（[サインイン](/ja/cli/server/login)を参照）。検索で返るのは、自分が見られるものだけです。
 
 <a id="steps"></a>
 
@@ -54,7 +54,7 @@ expl server dataframe get-schema <id> --json
 
 \<id\> は、検索結果の id に置き換えます。fetch は、項目の本文とメタデータ（ダッシュボードやノートでは、含まれるチャートも）を返します。get-schema は、データの列名と型を返します。公開した人が承認していれば、1 行が何を表すかも返ります。
 
-ノートやそのチャート、アナリティクスを読むときは、[ノートを読む](read-notes.md)を参照してください。データを集計するときは、[データを集計する](query-data.md)を参照してください。
+ノートやそのチャート、アナリティクスを読むときは、[ノートを読む](/ja/cli/server/guides/read-notes)を参照してください。データを集計するときは、[データを集計する](/ja/cli/server/guides/query-data)を参照してください。
 
 <a id="trouble"></a>
 
@@ -63,7 +63,7 @@ expl server dataframe get-schema <id> --json
 | 状況 | 対処 |
 | --- | --- |
 | 結果が空 | 検索語を確認し、--scope all で試します。短い語にするか、--semantic を付けます。 |
-| サインインのエラー | expl server login を実行します。[サインイン](../login.md)を参照してください。 |
+| サインインのエラー | expl server login を実行します。[サインイン](/ja/cli/server/login)を参照してください。 |
 | id が見つからない | 検索結果の id をそのまま使います。似たタイトルは、同じ項目ではありません。 |
 
 コマンドの引数は、expl server \<コマンド\> --help で確認します。
@@ -72,8 +72,8 @@ expl server dataframe get-schema <id> --json
 
 ## 関連するページ
 
-- [ノートを読む](read-notes.md)
-- [データを集計する](query-data.md)
-- [Server のコマンド](../commands.md#search)
+- [ノートを読む](/ja/cli/server/guides/read-notes)
+- [データを集計する](/ja/cli/server/guides/query-data)
+- [Server のコマンド](/ja/cli/server/commands#search)
 
-同じことを MCP で行う例は、[データを探す](../../../mcp/server/use.md#find)を参照してください。
+同じことを MCP で行う例は、[データを探す](/ja/mcp/server/use#find)を参照してください。

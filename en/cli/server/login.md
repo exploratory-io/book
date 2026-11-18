@@ -6,7 +6,6 @@ Sign in with your browser, or with an API key (a string that lets expl read Expl
 
 <a id="signin"></a>
 
-## Sign in
 
 If a person uses expl and has a browser, sign in with the browser. If there is no browser, or a script or CI runs expl, use an API key.
 
@@ -34,7 +33,7 @@ Removes the saved login. Unless you supply an API key through EXPL_SERVER_TOKEN,
 
 ## Sign in with an API key
 
-An API key lets expl sign in without a browser. Create one in Account Settings \> API Keys (see [API keys](token.md)), then run this.
+An API key lets expl sign in without a browser. Create one in Account Settings \> API Keys (see [API keys](/en/cli/server/token)), then run this.
 
 ```sh
 expl server login --with-token
@@ -81,7 +80,7 @@ User: you@example.com
 Auth: API key "ci-nightly" saved by login --with-token, expires 2026-12-13
 ```
 
-For how to create a key and keep it safe, see [API keys](token.md).
+For how to create a key and keep it safe, see [API keys](/en/cli/server/token).
 
 <a id="nobrowser"></a>
 
@@ -151,7 +150,7 @@ For the operations that expl server calls, Exploratory Server records the follow
 - Server log: each tool call (email address, client, result, row count, duration), and when a token is created or deleted.
 - Errors of failed calls: the time, the tool call and the error are collected to improve the product.
 
-The [Data and permissions](../../mcp/server/data.md) page of MCP Server describes the same records.
+The [Data and permissions](/en/mcp/server/data) page of MCP Server describes the same records.
 
 <a id="trouble"></a>
 

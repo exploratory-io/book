@@ -8,7 +8,7 @@ Redshiftについて詳しく紹介した[ブログ記事](https://blog.explorat
 
 ## 1. 使用するデータコネクションを作成する
 
-[この手順](https://docs.exploratory.io/data_import/database-data/connection)に従って、接続を作成します。
+[この手順](/en/import/connection.html)に従って、接続を作成します。
 
 
 ## 2. Redshift インポートダイアログを開く

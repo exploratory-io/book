@@ -6,7 +6,7 @@ Choose a command by purpose. Open its name to see arguments and examples.
 
 How to read the usage lines: replace a \<value\> placeholder with your own value; an item in \[brackets\] can be left out. Write a boolean as --flag or --no-flag. To give a list of values, repeat the flag, for example --tables summary --tables table. The JSON examples are written for bash; on Windows you can also pass a JSON file with --input.
 
-The commands for signing in and managing the connection are on their own pages: [Sign in](login.md) (login, logout, status), [API keys](token.md) (token) and [Inspect commands](#inspect-commands) on this page (tools list, tools describe). expl server skill prints a description for AI agents in the form of a SKILL.md file.
+The commands for signing in and managing the connection are on their own pages: [Sign in](/en/cli/server/login) (login, logout, status), [API keys](/en/cli/server/token) (token) and [Inspect commands](#inspect-commands) on this page (tools list, tools describe). expl server skill prints a description for AI agents in the form of a SKILL.md file.
 
 <a id="syntax-index"></a>
 
@@ -1878,4 +1878,4 @@ There is no paging.
 | --- | --- |
 | Run "expl server login". | You are not signed in or the token was rejected. Run expl server login. |
 
-Related: [Sign in](login.md)
+Related: [Sign in](/en/cli/server/login)

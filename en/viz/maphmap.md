@@ -15,4 +15,4 @@ When you have tons of location data points being displayed as dots on Map, it’
 
 ## Save as an Image
 
-You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.
+You can save the chart as an image file. See [Save as PNG/SVG](/en/viz/save) for more details.

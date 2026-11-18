@@ -6,7 +6,6 @@ Flags you can add to any command. You can place them before or after the command
 
 <a id="all"></a>
 
-## Global flags
 
 | Flag | What it does | With expl server |
 | --- | --- | --- |
@@ -32,9 +31,9 @@ Review the output of --verbose before you paste it anywhere.
 
 | Variable | Used for | Order of precedence |
 | --- | --- | --- |
-| EXPL_SERVER_URL | The server that expl server calls | --url, then EXPL_SERVER_URL, then the server you signed in to most recently, then https://exploratory.io. See [The server URL](login.md#url). |
-| EXPL_SERVER_TOKEN | An API key | Used before a saved login. See [API keys](token.md). |
-| EXPL_PROJECT | The project that Desktop commands work on | Not used with expl server. See [Choose a project](../desktop/guides/projects.md). |
+| EXPL_SERVER_URL | The server that expl server calls | --url, then EXPL_SERVER_URL, then the server you signed in to most recently, then https://exploratory.io. See [The server URL](/en/cli/server/login#url). |
+| EXPL_SERVER_TOKEN | An API key | Used before a saved login. See [API keys](/en/cli/server/token). |
+| EXPL_PROJECT | The project that Desktop commands work on | Not used with expl server. See [Choose a project](/en/cli/desktop/guides/projects). |
 
 <a id="completion"></a>
 
@@ -59,4 +58,4 @@ expl completion bash, expl completion zsh and expl completion powershell print a
 | --output \<file\>, -o \<file\> | Where to save a file result, such as a data frame export or a chart image. With --json, a saved file prints the path (saved) and the size (bytes) as JSON. --output - is not JSON: it writes the file itself to standard output. |
 | --no-browser | Do not open a browser while signing in. |
 
-For how to use --no-browser and --with-token, see [Sign in](login.md). For API keys and EXPL_SERVER_TOKEN, see [API keys](token.md).
+For how to use --no-browser and --with-token, see [Sign in](/en/cli/server/login). For API keys and EXPL_SERVER_TOKEN, see [API keys](/en/cli/server/token).

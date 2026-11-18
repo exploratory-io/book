@@ -8,7 +8,7 @@ Find a fix by symptom.
 
 ## Check the state first
 
-Check that the connection works with the steps in step 3 of [Get started](get-started.md#steps). If it does not, find your symptom below.
+Check that the connection works with the steps in step 3 of [Get started](/en/mcp/server/get-started#steps). If it does not, find your symptom below.
 
 <a id="contact"></a>
 
@@ -39,7 +39,7 @@ A request without a valid token gets HTTP 401. Sign in again as follows.
 | Antigravity | Go through the sign-in steps on the client page again |
 | Other clients | Sign in again as the client's documentation describes, or connect with an API key |
 
-- [Add from an AI tool](clients/apps.md) - Steps for each client.
+- [Add from an AI tool](/en/mcp/server/clients/apps) - Steps for each client.
 
 <a id="apikey"></a>
 
@@ -54,7 +54,7 @@ A key that fails gets the reason in the response, and the client does not fall b
 | 403 | This IP address is not allowed for API keys. | Your administrator allows API keys only from certain IP addresses. Connect from an allowed address. |
 | 429 | Too many failed API key attempts. Try again later. | More than 30 refused keys came from one address within 15 minutes (counted per IPv4 address, or per IPv6 /64 range). Fix the key and try again later. |
 
-- [Connect with an API key](auth.md#apikey) - The header, and what a key can read.
+- [Connect with an API key](/en/mcp/server/auth#apikey) - The header, and what a key can read.
 
 <a id="duplicate"></a>
 
@@ -90,4 +90,4 @@ claude mcp remove exploratory-server
 | SERVER_BUSY | Try again in a few seconds. If it happens twice in a row, try again later. For the hourly export limit, wait up to an hour. |
 | RATE_LIMIT_EXCEEDED / QUERY_ENGINE_UNAVAILABLE | The query engine is busy. Try again in a few seconds. |
 
-- [Limits and errors](limits.md) - The list of errors.
+- [Limits and errors](/en/mcp/server/limits) - The list of errors.

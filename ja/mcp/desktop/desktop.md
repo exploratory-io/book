@@ -35,9 +35,9 @@ AI ツールから、あなたのコンピューターの Exploratory Desktop �
 
 ## 読み進めるには
 
-- [はじめる](get-started.md) - プラグインを入れ、MCP をオンにして、最初の依頼まで進めます。手順は、[プラグインのインストール](install.md)と[許可の範囲と設定](permissions.md)にもあります。
-- [使い方](use.md) - AI に頼めることの例です。
-- [リファレンス](reference.md) - 使える道具、制限とエラー、データと権限を調べます。
-- [トラブルシューティング](troubleshooting.md) - 表示されたメッセージから対処を探します。
+- [はじめる](/ja/mcp/desktop/get-started) - プラグインを入れ、MCP をオンにして、最初の依頼まで進めます。手順は、[プラグインのインストール](/ja/mcp/desktop/install)と[許可の範囲と設定](/ja/mcp/desktop/permissions)にもあります。
+- [使い方](/ja/mcp/desktop/use) - AI に頼めることの例です。
+- [リファレンス](/ja/mcp/desktop/reference) - 使える道具、制限とエラー、データと権限を調べます。
+- [トラブルシューティング](/ja/mcp/desktop/troubleshooting) - 表示されたメッセージから対処を探します。
 
-exploratory.io に公開された内容を読むときは、[Server の MCP](../server/server.md) を使います。
+exploratory.io に公開された内容を読むときは、[Server の MCP](/ja/mcp/server/server) を使います。

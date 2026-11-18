@@ -80,7 +80,7 @@ If the server you added appears, it was added.
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](/en/mcp/server/troubleshooting#zero).
 
 <a id="web"></a>
 
@@ -159,13 +159,13 @@ The Developer field is blurred in the image. Information lists Developer, Catego
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](/en/mcp/server/troubleshooting#zero).
 
 <a id="trouble"></a>
 
 ## If it does not work
 
-For symptoms and fixes, see [Troubleshooting](../troubleshooting.md).
+For symptoms and fixes, see [Troubleshooting](/en/mcp/server/troubleshooting).
 
 <a id="remove"></a>
 

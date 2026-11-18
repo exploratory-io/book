@@ -41,7 +41,7 @@ When the browser opens, sign in to Exploratory and allow the access.
 Open the connector you added and check its details.
 
 1. Check that the account shows Connected.
-2. Check that Tools shows all the tools enabled (for example "12 of 12 enabled"). The number depends on the server settings; see [Tools](../tools.md#overview). Grok Bot lists these tools under its own "Write" permission group, but the tools of this server only read; dataframe_export only makes a download link.
+2. Check that Tools shows all the tools enabled (for example "12 of 12 enabled"). The number depends on the server settings; see [Tools](/en/mcp/server/tools#overview). Grok Bot lists these tools under its own "Write" permission group, but the tools of this server only read; dataframe_export only makes a download link.
 
 ![The connector's details](images/en/grok-bot-02-connected.png)
 
@@ -51,7 +51,7 @@ Next, in a chat, send this.
 Use the Exploratory MCP server you just added to find the Sales Orders data. Please respond in English.
 ```
 
-Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
+Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](/en/mcp/server/troubleshooting#zero).
 
 After you send it, check the result.
 
@@ -71,7 +71,7 @@ A skill gives an AI instructions for using a service. It is separate from the MC
 | --- | --- |
 | You are asked to sign in | Remove the connection and add it again. |
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
+- [Troubleshooting](/en/mcp/server/troubleshooting) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 

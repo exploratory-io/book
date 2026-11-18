@@ -2,7 +2,7 @@
 title: "Use"
 ---
 
-What you can ask your AI to do in your local projects through the Desktop MCP. For each one, open a project in Exploratory Desktop and talk to your AI tool. If you have not installed the plugin yet, do [Install the plugin](install.md) first.
+What you can ask your AI to do in your local projects through the Desktop MCP. For each one, open a project in Exploratory Desktop and talk to your AI tool. If you have not installed the plugin yet, do [Install the plugin](/en/mcp/desktop/install) first.
 
 | What you want to do | Section | Main tools the AI uses |
 | --- | --- | --- |
@@ -16,7 +16,7 @@ What you can ask your AI to do in your local projects through the Desktop MCP. F
 | Publish | [Publish](#publish) | publish_note, publish_dashboard |
 | Add a filter that picks a value | [Other](#other) | save_parameter |
 
-For what each tool does, and which ones need Allow create, edit and delete, see [Tools](tools.md). To do the same from a terminal, see [Use](../../cli/desktop/use.md) of CLI Desktop.
+For what each tool does, and which ones need Allow create, edit and delete, see [Tools](/en/mcp/desktop/tools). To do the same from a terminal, see [Use](/en/cli/desktop/use) of CLI Desktop.
 
 The charts and text that come out depend on your data and your AI tool. You can use the sample requests as they are, or reword them for your own data.
 
@@ -24,13 +24,13 @@ The charts and text that come out depend on your data and your AI tool. You can 
 
 ## Before you start
 
-The MCP switch and the Allow create, edit and delete setting are in step 2 of [Get started](get-started.md#steps). For when Desktop asks you before it deletes, publishes or runs R code, see [Permissions and settings](permissions.md). Where an example below says Desktop asks you, it means the setting that runs these without asking is off.
+The MCP switch and the Allow create, edit and delete setting are in step 2 of [Get started](/en/mcp/desktop/get-started#steps). For when Desktop asks you before it deletes, publishes or runs R code, see [Permissions and settings](/en/mcp/desktop/permissions). Where an example below says Desktop asks you, it means the setting that runs these without asking is off.
 
 <a id="server-or-desktop"></a>
 
 ## Server or Desktop
 
-Desktop works on your local projects. To read content published on exploratory.io, use the [Server MCP](../server/server.md). When a request does not say which one, the plugin's skill checks first. For example, when you ask for a chart from data on exploratory.io, the AI may ask whether to build it in Exploratory Desktop. If you say "in Exploratory Desktop" from the start, it goes ahead without asking.
+Desktop works on your local projects. To read content published on exploratory.io, use the [Server MCP](/en/mcp/server/server). When a request does not say which one, the plugin's skill checks first. For example, when you ask for a chart from data on exploratory.io, the AI may ask whether to build it in Exploratory Desktop. If you say "in Exploratory Desktop" from the start, it goes ahead without asking.
 
 <a id="examples"></a>
 
@@ -140,5 +140,5 @@ Creates a parameter, sets its list of values and applies it to a filter or a cha
 
 ## Read next
 
-- [Tools](tools.md) - What the AI can do, by purpose.
-- [Permissions and settings](permissions.md) - When Desktop asks you, and how much data the AI can see.
+- [Tools](/en/mcp/desktop/tools) - What the AI can do, by purpose.
+- [Permissions and settings](/en/mcp/desktop/permissions) - When Desktop asks you, and how much data the AI can see.

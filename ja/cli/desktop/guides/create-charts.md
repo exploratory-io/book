@@ -8,9 +8,9 @@ title: "チャートを作る"
 
 ## 前提
 
-- Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](projects.md)）。expl status で確認できます。
+- Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](/ja/cli/desktop/guides/projects)）。expl status で確認できます。
 - データフレームの id と列名が分かっています（expl dataframe list、expl dataframe get-schema \<dataframe_id\>）。
-- chart add と chart edit は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。チャートの削除は、確認が出ます。[確認と時間のかかる操作](confirmation.md)を参照してください。
+- chart add と chart edit は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。チャートの削除は、確認が出ます。[確認と時間のかかる操作](/ja/cli/desktop/guides/confirmation)を参照してください。
 
 <a id="steps"></a>
 
@@ -63,7 +63,7 @@ expl chart edit <chart_id> --marker line --title "月別の売上の推移"
 
 | 状況 | 対処 |
 | --- | --- |
-| PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](../exit-codes.md)を参照してください。 |
+| PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](/ja/cli/desktop/exit-codes)を参照してください。 |
 | NO_DATA_FRAME | --data-frame-id \<dataframe_id\> を付けます。 |
 | INVALID_ARGUMENT | 設定の名前か値が違います。expl chart list-settings で、もう一度調べます。 |
 | チャートが空、または列が違う | 列名を、expl dataframe get-schema の表記と 1 文字ずつ照らします。 |
@@ -74,9 +74,9 @@ expl chart edit <chart_id> --marker line --title "月別の売上の推移"
 
 ## 関連するページ
 
-- [データを取り込む・加工する](wrangle-data.md)
-- [アナリティクスを作る](create-analytics.md)
-- [ノートを書く](write-notes.md)
-- [Desktop のコマンド](../commands.md)
+- [データを取り込む・加工する](/ja/cli/desktop/guides/wrangle-data)
+- [アナリティクスを作る](/ja/cli/desktop/guides/create-analytics)
+- [ノートを書く](/ja/cli/desktop/guides/write-notes)
+- [Desktop のコマンド](/ja/cli/desktop/commands)
 
-同じことを MCP で行う例は、[使い方](../../../mcp/desktop/use.md#examples)の「チャートを作る」を参照してください。
+同じことを MCP で行う例は、[使い方](/ja/mcp/desktop/use#examples)の「チャートを作る」を参照してください。

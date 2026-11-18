@@ -51,7 +51,7 @@ After "Run Time Series Forecast" dialog is opened, follow the steps below to cal
   * Potential Changepoints
   * Strength of Holiday Effect
   * Holiday Column - A categorical column that indicates type of holiday for the day of the observation. When logical column is selected, TRUE means it is a holiday and FALSE means it is not.
-  * Data Frame for Holidays - [Holiday definition data frame](https://docs.exploratory.io/howto/holiday.html)
+  * Data Frame for Holidays - [Holiday definition data frame](/en/howto/holiday)
   * Use Built-in Country Holiday Data - By setting this option to Yes, you can specify list of country codes whose holiday data should be considered in making forecast.
   * Country for Holiday Data - Specify list of country codes here. For supported countries, take a look at [this table](/en/analytics/forecasting#countries-for-holidays).
   * MCMC Samples for Full Bayesian Inference

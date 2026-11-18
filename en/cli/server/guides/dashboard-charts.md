@@ -367,4 +367,4 @@ The image is the one saved when the item was published, so it can be older than 
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
 | Run "expl server login". | You are not signed in, or the saved login or API key was rejected. Run expl server login. |
 
-Every flag is described in [chart get-data](../commands.md#chart-get-data), how to aggregate in [chart query](../commands.md#chart-query), and getting the image in [chart get-image](../commands.md#chart-get-image).
+Every flag is described in [chart get-data](/en/cli/server/commands#chart-get-data), how to aggregate in [chart query](/en/cli/server/commands#chart-query), and getting the image in [chart get-image](/en/cli/server/commands#chart-get-image).

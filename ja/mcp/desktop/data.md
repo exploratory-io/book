@@ -2,7 +2,7 @@
 title: "データと権限"
 ---
 
-Desktop の MCP で、何が送られ、何が記録されるかを説明します。確認が入る場面と設定は、[許可の範囲と設定](permissions.md)にあります。
+Desktop の MCP で、何が送られ、何が記録されるかを説明します。確認が入る場面と設定は、[許可の範囲と設定](/ja/mcp/desktop/permissions)にあります。
 
 <a id="privacy"></a>
 

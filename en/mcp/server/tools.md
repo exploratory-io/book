@@ -10,17 +10,17 @@ Tools are operations an AI can call. Choose an operation by purpose, then inspec
 
 | Kind | Tool | Read only, or create, change, delete | What it does |
 | --- | --- | --- | --- |
-| Find and read | [search](tools.md#search) | Read only | Search and list published content. |
-| Find and read | [fetch](tools.md#fetch) | Read only | Read a note, dashboard, slide or data item as Markdown. |
-| Charts and analytics | [chart_get_data](tools.md#chart_get_data) | Read only | Get the numbers behind a chart. |
-| Charts and analytics | [chart_get_image](tools.md#chart_get_image) | Read only | Get a chart as an image. |
-| Charts and analytics | [chart_query](tools.md#chart_query) | Read only | Filter and aggregate the data of a chart in a note, dashboard or slide on the server. |
-| Charts and analytics | [analytics_get_result](tools.md#analytics_get_result) | Read only | Get coefficients, p-values and other results of an analytics. |
-| Data | [dataframe_get_schema](tools.md#dataframe_get_schema) | Read only | Describe the columns and their approved meaning. |
-| Data | [dataframe_get_wrangling](tools.md#dataframe_get_wrangling) | Read only | Show how a data item was built, step by step. |
-| Data | [dataframe_preview](tools.md#dataframe_preview) | Read only | Show rows. |
-| Data | [query_dataset](tools.md#query_dataset) | Read only | Filter and aggregate on the server. |
-| Data | [dataframe_export](tools.md#dataframe_export) | Read only (creates a download link) | Save a result as CSV or Parquet. |
+| Find and read | [search](/en/mcp/server/tools#search) | Read only | Search and list published content. |
+| Find and read | [fetch](/en/mcp/server/tools#fetch) | Read only | Read a note, dashboard, slide or data item as Markdown. |
+| Charts and analytics | [chart_get_data](/en/mcp/server/tools#chart_get_data) | Read only | Get the numbers behind a chart. |
+| Charts and analytics | [chart_get_image](/en/mcp/server/tools#chart_get_image) | Read only | Get a chart as an image. |
+| Charts and analytics | [chart_query](/en/mcp/server/tools#chart_query) | Read only | Filter and aggregate the data of a chart in a note, dashboard or slide on the server. |
+| Charts and analytics | [analytics_get_result](/en/mcp/server/tools#analytics_get_result) | Read only | Get coefficients, p-values and other results of an analytics. |
+| Data | [dataframe_get_schema](/en/mcp/server/tools#dataframe_get_schema) | Read only | Describe the columns and their approved meaning. |
+| Data | [dataframe_get_wrangling](/en/mcp/server/tools#dataframe_get_wrangling) | Read only | Show how a data item was built, step by step. |
+| Data | [dataframe_preview](/en/mcp/server/tools#dataframe_preview) | Read only | Show rows. |
+| Data | [query_dataset](/en/mcp/server/tools#query_dataset) | Read only | Filter and aggregate on the server. |
+| Data | [dataframe_export](/en/mcp/server/tools#dataframe_export) | Read only (creates a download link) | Save a result as CSV or Parquet. |
 
 exploratory.io offers these tools. On an on-premises server, which tools appear depends on the server settings; query_dataset, chart_query and dataframe_export appear only when the administrator has turned them on. More tools can appear depending on the settings, for example desktop_mcp_setup_guide, which returns the steps to connect an AI client to Exploratory Desktop. Run expl server tools list to see what your server offers.
 

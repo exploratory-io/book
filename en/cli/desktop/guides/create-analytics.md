@@ -8,9 +8,9 @@ Create analytics (regression, classification, clustering and so on) from a data 
 
 ## Before you start
 
-- Exploratory Desktop is running and the project is open ([Choose a project](projects.md)). Check with expl status.
+- Exploratory Desktop is running and the project is open ([Choose a project](/en/cli/desktop/guides/projects)). Check with expl status.
 - You know the id of the data frame and its column names (expl dataframe list and expl dataframe get-schema \<dataframe_id\>).
-- analytics add and analytics edit work only when Allow create, edit and delete is on in System Settings > MCP / CLI. They do not ask for confirmation; deleting analytics does. See [Confirmation and long-running operations](confirmation.md).
+- analytics add and analytics edit work only when Allow create, edit and delete is on in System Settings > MCP / CLI. They do not ask for confirmation; deleting analytics does. See [Confirmation and long-running operations](/en/cli/desktop/guides/confirmation).
 
 <a id="steps"></a>
 
@@ -71,7 +71,7 @@ Pass only what changes: --slots, --settings, --title, --analysis-type and so on.
 
 | What you see | What to do |
 | --- | --- |
-| PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](../exit-codes.md). |
+| PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](/en/cli/desktop/exit-codes). |
 | NO_DATA_FRAME | Add --data-frame-id \<dataframe_id\>. |
 | An unknown name is rejected | Look up the slot or setting name again with expl analytics get-template. |
 | The slots are empty | Analytics cannot be created without columns in its slots. |
@@ -82,9 +82,9 @@ For the arguments of any command, run expl \<command\> --help or expl tools desc
 
 ## Related pages
 
-- [Create charts](create-charts.md)
-- [Write notes](write-notes.md)
-- [Pass arguments and JSON](input.md)
-- [Desktop commands](../commands.md)
+- [Create charts](/en/cli/desktop/guides/create-charts)
+- [Write notes](/en/cli/desktop/guides/write-notes)
+- [Pass arguments and JSON](/en/cli/desktop/guides/input)
+- [Desktop commands](/en/cli/desktop/commands)
 
-To do the same through MCP, see Create analytics in [Use](../../../mcp/desktop/use.md#examples).
+To do the same through MCP, see Create analytics in [Use](/en/mcp/desktop/use#examples).

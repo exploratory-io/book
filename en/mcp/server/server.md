@@ -21,7 +21,7 @@ It reads published content that you can view.
 
 - Create, edit, publish or delete content.
 - Recompute a chart or analytics for parameter values other than the published ones.
-- Read content that is not published to Exploratory Server, such as projects that exist only in Exploratory Desktop. Use the separate [Desktop MCP](../desktop/desktop.md) for those.
+- Read content that is not published to Exploratory Server, such as projects that exist only in Exploratory Desktop. Use the separate [Desktop MCP](/en/mcp/desktop/desktop) for those.
 
 <a id="url"></a>
 
@@ -33,15 +33,15 @@ Every AI tool connects to the same address.
 https://exploratory.io/mcp
 ```
 
-When you connect, you sign in to Exploratory and approve the access. If your setup cannot open a browser, connect with an API key instead (see [Authentication and API keys](auth.md)).
+When you connect, you sign in to Exploratory and approve the access. If your setup cannot open a browser, connect with an API key instead (see [Authentication and API keys](/en/mcp/server/auth)).
 
 <a id="scope"></a>
 
 ## Where to go next
 
-- [Get started](get-started.md) - Connect your AI tool and go as far as the first request. The steps for each AI tool are on [Add from an AI tool](clients/apps.md).
-- [Use](use.md) - What you can ask the AI.
-- [Reference](reference.md) - Look up the tools, limits and errors, and data and permissions.
-- [Troubleshooting](troubleshooting.md) - Find what to do from a symptom.
+- [Get started](/en/mcp/server/get-started) - Connect your AI tool and go as far as the first request. The steps for each AI tool are on [Add from an AI tool](/en/mcp/server/clients/apps).
+- [Use](/en/mcp/server/use) - What you can ask the AI.
+- [Reference](/en/mcp/server/reference) - Look up the tools, limits and errors, and data and permissions.
+- [Troubleshooting](/en/mcp/server/troubleshooting) - Find what to do from a symptom.
 
-To create and edit projects in Exploratory Desktop on your computer, use the [Desktop MCP](../desktop/desktop.md) instead. To read published content from a terminal or a script, see [Exploratory CLI](../../cli/server/server.md).
+To create and edit projects in Exploratory Desktop on your computer, use the [Desktop MCP](/en/mcp/desktop/desktop) instead. To read published content from a terminal or a script, see [Exploratory CLI](/en/cli/server/server).

@@ -8,9 +8,9 @@ title: "データを取り込む・加工する"
 
 ## 前提
 
-- Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](projects.md)）。expl status で確認できます。
+- Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](/ja/cli/desktop/guides/projects)）。expl status で確認できます。
 - 作成や変更をするコマンド（このページの create-source、apply-step など）は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。
-- R の実行（run-r）、ai-wrangle、ステップの削除は、実行の前に確認が出ます。ターミナルでは Continue? \[y/N\] と聞かれます。スクリプトや AI エージェントからは --yes を付けます。[確認と時間のかかる操作](confirmation.md)を参照してください。
+- R の実行（run-r）、ai-wrangle、ステップの削除は、実行の前に確認が出ます。ターミナルでは Continue? \[y/N\] と聞かれます。スクリプトや AI エージェントからは --yes を付けます。[確認と時間のかかる操作](/ja/cli/desktop/guides/confirmation)を参照してください。
 
 <a id="steps"></a>
 
@@ -26,7 +26,7 @@ expl dataframe read-file-header --file-path ./sales_orders.csv
 
 --head-bytes で読む量を、--encoding で utf-8、shift_jis、auto を指定できます。
 
-取り込むときは、名前と、データフレーム全体を返す R スクリプトを渡します。@ファイル名 と書くと、スクリプトをファイルから読みます（[引数と JSON を渡す](input.md)）。
+取り込むときは、名前と、データフレーム全体を返す R スクリプトを渡します。@ファイル名 と書くと、スクリプトをファイルから読みます（[引数と JSON を渡す](/ja/cli/desktop/guides/input)）。
 
 ```sh
 expl dataframe create-source --data-frame-name "Sales Orders" --r-script @import.R
@@ -70,7 +70,7 @@ expl dataframe get-schema <dataframe_id>
 
 追加したステップが steps に出て、列と行数が更新されています。
 
-依頼の内容から AI に R を書かせたいときは、expl dataframe ai-wrangle --prompt "..." を使います（--run を付けると、ステップとして追加します）。実行の前に確認が出ます。ステップダイアグラムなど、そのほかの読み取りのコマンドは、[Desktop のコマンド](../commands.md)にあります。
+依頼の内容から AI に R を書かせたいときは、expl dataframe ai-wrangle --prompt "..." を使います（--run を付けると、ステップとして追加します）。実行の前に確認が出ます。ステップダイアグラムなど、そのほかの読み取りのコマンドは、[Desktop のコマンド](/ja/cli/desktop/commands)にあります。
 
 <a id="trouble"></a>
 
@@ -78,7 +78,7 @@ expl dataframe get-schema <dataframe_id>
 
 | 状況 | 対処 |
 | --- | --- |
-| PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](../exit-codes.md)を参照してください。 |
+| PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](/ja/cli/desktop/exit-codes)を参照してください。 |
 | PROJECT_NOT_OPEN | expl project open \<id\> でプロジェクトを開きます。 |
 | NO_DATA_FRAME | コマンドの引数、または --data-frame-id で、データフレームの id を指定します。 |
 | ステップが適用されない | expl dataframe get-command で名前を確認し、列名は get-schema のものを使います。 |
@@ -90,9 +90,9 @@ expl dataframe get-schema <dataframe_id>
 
 ## 関連するページ
 
-- [確認と時間のかかる操作](confirmation.md)
-- [引数と JSON を渡す](input.md)
-- [チャートを作る](create-charts.md)
-- [Desktop のコマンド](../commands.md)
+- [確認と時間のかかる操作](/ja/cli/desktop/guides/confirmation)
+- [引数と JSON を渡す](/ja/cli/desktop/guides/input)
+- [チャートを作る](/ja/cli/desktop/guides/create-charts)
+- [Desktop のコマンド](/ja/cli/desktop/commands)
 
-同じことを MCP で行う例は、[使い方](../../../mcp/desktop/use.md#examples)の「データを取り込む・加工する」を参照してください。
+同じことを MCP で行う例は、[使い方](/ja/mcp/desktop/use#examples)の「データを取り込む・加工する」を参照してください。

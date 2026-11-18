@@ -16,7 +16,7 @@ Start Exploratory Desktop and sign in. expl reads the connection details and tok
 
 expl comes with Exploratory Desktop. The CLI is off by default, and Desktop refuses its commands until you turn it on.
 
-In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens. In the menu on the left, choose MCP / CLI, turn on the switch on the CLI card, and choose Save. To create, change or delete content with expl, also check Allow create, edit and delete. The pictures are on the [Installation](install.md#enable) page.
+In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens. In the menu on the left, choose MCP / CLI, turn on the switch on the CLI card, and choose Save. To create, change or delete content with expl, also check Allow create, edit and delete. The pictures are on the [Installation](/en/cli/desktop/install#enable) page.
 
 ### 3. Check the version and the state
 
@@ -99,13 +99,13 @@ Replace d123 with the id you chose.
 - expl tools list exits with code 0 but the other commands do not work: that does not mean Desktop is connected. Run expl status.
 - The dashboard list is empty: the project has no dashboard yet.
 
-See [Troubleshooting](troubleshooting.md) for more.
+See [Troubleshooting](/en/cli/desktop/troubleshooting) for more.
 
 <a id="next"></a>
 
 ## Next
 
-- [Choose a project](guides/projects.md) - The order in which the project is decided.
-- [Use](use.md) - Find the command for what you want to do.
-- [All commands](commands.md) - Find a command by purpose.
-- [Troubleshooting](troubleshooting.md) - Find a fix by symptom.
+- [Choose a project](/en/cli/desktop/guides/projects) - The order in which the project is decided.
+- [Use](/en/cli/desktop/use) - Find the command for what you want to do.
+- [All commands](/en/cli/desktop/commands) - Find a command by purpose.
+- [Troubleshooting](/en/cli/desktop/troubleshooting) - Find a fix by symptom.

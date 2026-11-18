@@ -88,7 +88,7 @@ In a new chat, send this.
 Find the "Sales Orders" data on Exploratory. Please respond in English.
 ```
 
-Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
+Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](/en/mcp/server/troubleshooting#zero).
 
 After you send it, check the result.
 
@@ -131,7 +131,7 @@ The tab shows exploratory-server and the number of tools it provides (for exampl
 | You are asked to sign in | Go through the sign-in steps above again. |
 | You installed the Desktop plugin but the Server tools do not appear | The Desktop plugin exploratory is separate from Server. Register Server with the configuration above. |
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
+- [Troubleshooting](/en/mcp/server/troubleshooting) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 

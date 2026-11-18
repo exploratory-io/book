@@ -8,9 +8,9 @@ Publish a note, a dashboard or a data frame from Desktop to the server, see what
 
 ## Before you start
 
-- Exploratory Desktop is running, the project is open ([Choose a project](projects.md)) and you are signed in (expl status shows the signed-in user).
+- Exploratory Desktop is running, the project is open ([Choose a project](/en/cli/desktop/guides/projects)) and you are signed in (expl status shows the signed-in user).
 - Publishing and cancelling work only when Allow create, edit and delete is on in System Settings > MCP / CLI.
-- Publishing makes the content readable by anyone who has the URL, and cancelling a publication cannot be undone. So both ask for confirmation first. In a terminal, expl asks Continue? \[y/N\]. From a script or an AI agent, add --yes, after you have checked the target. See [Confirmation and long-running operations](confirmation.md).
+- Publishing makes the content readable by anyone who has the URL, and cancelling a publication cannot be undone. So both ask for confirmation first. In a terminal, expl asks Continue? \[y/N\]. From a script or an AI agent, add --yes, after you have checked the target. See [Confirmation and long-running operations](/en/cli/desktop/guides/confirmation).
 
 <a id="steps"></a>
 
@@ -67,7 +67,7 @@ expl published unpublish <id>
 
 | What you see | What to do |
 | --- | --- |
-| PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](../exit-codes.md). |
+| PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](/en/cli/desktop/exit-codes). |
 | Exit code 2 and nothing runs | The command needs confirmation and is not in a terminal. Add --yes after you have checked the target. |
 | Exit code 1 at Continue? | You answered anything other than y. Run it again and answer y. |
 | No rendered output | Open the dashboard once in Desktop, then run the command again. |
@@ -79,9 +79,9 @@ For the arguments of any command, run expl \<command\> --help or expl tools desc
 
 ## Related pages
 
-- [Confirmation and long-running operations](confirmation.md)
-- [Write notes](write-notes.md)
-- [Duplicate dashboards](duplicate-dashboard.md)
-- [Desktop commands](../commands.md)
+- [Confirmation and long-running operations](/en/cli/desktop/guides/confirmation)
+- [Write notes](/en/cli/desktop/guides/write-notes)
+- [Duplicate dashboards](/en/cli/desktop/guides/duplicate-dashboard)
+- [Desktop commands](/en/cli/desktop/commands)
 
-To do the same through MCP, see Publish in [Use](../../../mcp/desktop/use.md#examples).
+To do the same through MCP, see Publish in [Use](/en/mcp/desktop/use#examples).

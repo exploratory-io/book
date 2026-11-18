@@ -8,9 +8,9 @@ Import data into a project as a data frame, check its columns, and add wrangling
 
 ## Before you start
 
-- Exploratory Desktop is running and the project is open ([Choose a project](projects.md)). Check with expl status.
+- Exploratory Desktop is running and the project is open ([Choose a project](/en/cli/desktop/guides/projects)). Check with expl status.
 - The commands that create or change things (create-source, apply-step and the others in this page) work only when Allow create, edit and delete is on in System Settings > MCP / CLI.
-- Running R (run-r), ai-wrangle and deleting steps ask for confirmation first. In a terminal, expl asks Continue? \[y/N\]. From a script or an AI agent, add --yes. See [Confirmation and long-running operations](confirmation.md).
+- Running R (run-r), ai-wrangle and deleting steps ask for confirmation first. In a terminal, expl asks Continue? \[y/N\]. From a script or an AI agent, add --yes. See [Confirmation and long-running operations](/en/cli/desktop/guides/confirmation).
 
 <a id="steps"></a>
 
@@ -26,7 +26,7 @@ expl dataframe read-file-header --file-path ./sales_orders.csv
 
 --head-bytes sets how much to read, and --encoding takes utf-8, shift_jis or auto.
 
-To import, pass a name and an R script that returns the whole data frame. @file reads the script from a file ([Pass arguments and JSON](input.md)).
+To import, pass a name and an R script that returns the whole data frame. @file reads the script from a file ([Pass arguments and JSON](/en/cli/desktop/guides/input)).
 
 ```sh
 expl dataframe create-source --data-frame-name "Sales Orders" --r-script @import.R
@@ -70,7 +70,7 @@ expl dataframe get-schema <dataframe_id>
 
 The new step appears in the steps, and the columns and the row count are updated.
 
-If you want the AI to write the R for a request, use expl dataframe ai-wrangle --prompt "..." (add --run to add it as a step). It asks for confirmation. The step diagram and the other read commands are in [Desktop commands](../commands.md).
+If you want the AI to write the R for a request, use expl dataframe ai-wrangle --prompt "..." (add --run to add it as a step). It asks for confirmation. The step diagram and the other read commands are in [Desktop commands](/en/cli/desktop/commands).
 
 <a id="trouble"></a>
 
@@ -78,7 +78,7 @@ If you want the AI to write the R for a request, use expl dataframe ai-wrangle -
 
 | What you see | What to do |
 | --- | --- |
-| PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](../exit-codes.md). |
+| PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](/en/cli/desktop/exit-codes). |
 | PROJECT_NOT_OPEN | Open the project with expl project open \<id\>. |
 | NO_DATA_FRAME | Give the data frame id, as the argument of the command or with --data-frame-id. |
 | A step does not apply | Check the names with expl dataframe get-command, and use the column names of get-schema. |
@@ -90,9 +90,9 @@ For the arguments of any command, run expl \<command\> --help or expl tools desc
 
 ## Related pages
 
-- [Confirmation and long-running operations](confirmation.md)
-- [Pass arguments and JSON](input.md)
-- [Create charts](create-charts.md)
-- [Desktop commands](../commands.md)
+- [Confirmation and long-running operations](/en/cli/desktop/guides/confirmation)
+- [Pass arguments and JSON](/en/cli/desktop/guides/input)
+- [Create charts](/en/cli/desktop/guides/create-charts)
+- [Desktop commands](/en/cli/desktop/commands)
 
-To do the same through MCP, see Import and wrangle data in [Use](../../../mcp/desktop/use.md#examples).
+To do the same through MCP, see Import and wrangle data in [Use](/en/mcp/desktop/use#examples).

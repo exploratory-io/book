@@ -12,13 +12,13 @@ https://exploratory.io/mcp
 
 ## Choose your app
 
-- [Claude app](claude.md) - Add it as a custom connector in Claude
-- [ChatGPT app](chatgpt.md) - Add it as an MCP server in the ChatGPT desktop app (web steps are on the same page)
-- [Antigravity](antigravity.md) - Register the server in Antigravity
-- [Grok Bot](grok-bot.md) - Add the server in a Grok Bot chat
-- [Claude Code](claude-code.md) - Register the server in Claude Code
-- [Codex](codex.md) - Register the server in Codex
-- [Cursor](cursor.md) - Register the server in Cursor
-- [Other clients](other.md) - Any client that supports Streamable HTTP and OAuth
+- [Claude app](/en/mcp/server/clients/claude) - Add it as a custom connector in Claude
+- [ChatGPT app](/en/mcp/server/clients/chatgpt) - Add it as an MCP server in the ChatGPT desktop app (web steps are on the same page)
+- [Antigravity](/en/mcp/server/clients/antigravity) - Register the server in Antigravity
+- [Grok Bot](/en/mcp/server/clients/grok-bot) - Add the server in a Grok Bot chat
+- [Claude Code](/en/mcp/server/clients/claude-code) - Register the server in Claude Code
+- [Codex](/en/mcp/server/clients/codex) - Register the server in Codex
+- [Cursor](/en/mcp/server/clients/cursor) - Register the server in Cursor
+- [Other clients](/en/mcp/server/clients/other) - Any client that supports Streamable HTTP and OAuth
 
-If your app cannot open a browser, connect with an API key instead. See [Connect with an API key](../auth.md#apikey).
+If your app cannot open a browser, connect with an API key instead. See [Connect with an API key](/en/mcp/server/auth#apikey).

@@ -4,5 +4,5 @@ title: "ビジュアライゼーション"
 
 このセクションで日本語で読めるページです。
 
-- [チャートの種類](viz/types.md)
-- [チャートの機能](viz/features.md)
+- [チャートの種類](/ja/viz/types)
+- [チャートの機能](/ja/viz/features)

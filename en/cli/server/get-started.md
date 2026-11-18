@@ -16,7 +16,7 @@ If you use Exploratory Desktop, expl is already installed. If not, install it wi
 npm install -g @exploratory/cli
 ```
 
-This installs the latest version. To pin a version, see [Installation](install.md#npm). Open a new terminal and check it.
+This installs the latest version. To pin a version, see [Installation](/en/cli/server/install#npm). Open a new terminal and check it.
 
 ```sh
 expl --version
@@ -24,7 +24,7 @@ expl --version
 
 > If the first line reads expl \<version\>, it works.
 
-For other ways to install, and for what to do when two copies are installed, see [Installation](install.md).
+For other ways to install, and for what to do when two copies are installed, see [Installation](/en/cli/server/install).
 
 ### 2. Sign in
 
@@ -128,20 +128,20 @@ The result includes the data version and update time. Check which data the numbe
 ## If something does not work
 
 - The search result is empty: nothing matched. It is not a sign-in error. Change the search words, or use --scope all.
-- You cannot open a browser: in a script or CI, where there is no browser, sign in with an API key instead: expl server login --with-token (see [API keys](token.md)). For a machine that cannot open a browser, see [Sign in](login.md#nobrowser).
+- You cannot open a browser: in a script or CI, where there is no browser, sign in with an API key instead: expl server login --with-token (see [API keys](/en/cli/server/token)). For a machine that cannot open a browser, see [Sign in](/en/cli/server/login#nobrowser).
 - You see Run "expl server login".: you are not signed in, or the saved login was rejected. Run expl server login.
 - You see expl: command not found: open a new terminal and try again.
 - You do not know which id to use: use an id from the search result.
 - The list of headings (metadata.toc) is missing from a note: add --include-toc, or get the heading ids with --query.
 
-See [Troubleshooting](troubleshooting.md) for more.
+See [Troubleshooting](/en/cli/server/troubleshooting) for more.
 
 <a id="next"></a>
 
 ## Next
 
-- [Read notes](guides/read-notes.md) - How to read long notes and get chart numbers.
-- [Query data](guides/query-data.md) - How to write the JSON arguments.
-- [Automation](guides/automation.md) - Create an API key and run it in CI.
-- [Use](use.md) - Find the command for what you want to do.
-- [Troubleshooting](troubleshooting.md) - Find a fix by symptom.
+- [Read notes](/en/cli/server/guides/read-notes) - How to read long notes and get chart numbers.
+- [Query data](/en/cli/server/guides/query-data) - How to write the JSON arguments.
+- [Automation](/en/cli/server/guides/automation) - Create an API key and run it in CI.
+- [Use](/en/cli/server/use) - Find the command for what you want to do.
+- [Troubleshooting](/en/cli/server/troubleshooting) - Find a fix by symptom.

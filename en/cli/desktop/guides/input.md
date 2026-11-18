@@ -31,7 +31,7 @@ cat dashboard.json | expl dashboard create --input -
 With `--input -`, expl reads the JSON from standard input.
 
 - If you give both --input and a flag, the flag wins. The exception is a list: a repeated flag adds its items to the list in the --input JSON. To replace the whole list, change it in the JSON.
-- A generated command rejects an unknown flag or an extra argument (exit code 2) with a suggestion of similar names. The built-in commands (expl status, expl project use, expl lang, expl skill and expl completion) do not report them; see [Global flags](../global-flags.md).
+- A generated command rejects an unknown flag or an extra argument (exit code 2) with a suggestion of similar names. The built-in commands (expl status, expl project use, expl lang, expl skill and expl completion) do not report them; see [Global flags](/en/cli/desktop/global-flags).
 - Pass an input that has the same name as a global flag, and a string that itself starts with @, in the --input JSON.
 
 <a id="id"></a>

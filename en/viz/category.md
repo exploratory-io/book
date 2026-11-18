@@ -47,7 +47,7 @@ You can change the setting in the property dialog. The following example shows s
 
 ## Creating a Category at Color
 
-See [Color](color.md) for how to create categories at Color.
+See [Color](/en/viz/color) for how to create categories at Color.
 
 
 

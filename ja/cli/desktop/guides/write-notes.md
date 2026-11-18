@@ -8,9 +8,9 @@ title: "ノートを書く"
 
 ## 前提
 
-- Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](projects.md)）。expl status で確認できます。
+- Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](/ja/cli/desktop/guides/projects)）。expl status で確認できます。
 - 埋め込むチャートとアナリティクスの id が分かっています（expl chart list \<dataframe_id\>、expl analytics list \<dataframe_id\>）。
-- note add と note edit は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。ノートの削除は、確認が出ます。[確認と時間のかかる操作](confirmation.md)を参照してください。
+- note add と note edit は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。ノートの削除は、確認が出ます。[確認と時間のかかる操作](/ja/cli/desktop/guides/confirmation)を参照してください。
 
 <a id="steps"></a>
 
@@ -34,7 +34,7 @@ title: "ノートを書く"
 
 ### 2. ノートを作る
 
---title と --markdown が必須です。@ファイル名 と書くと、長い文章をファイルから読みます（[引数と JSON を渡す](input.md)）。
+--title と --markdown が必須です。@ファイル名 と書くと、長い文章をファイルから読みます（[引数と JSON を渡す](/ja/cli/desktop/guides/input)）。
 
 ```sh
 expl note add --title "Sales Orders のレポート" --markdown @report.md
@@ -65,7 +65,7 @@ get は、Markdown の本文、フォルダ、依存関係を返します。get-
 
 | 状況 | 対処 |
 | --- | --- |
-| PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](../exit-codes.md)を参照してください。 |
+| PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](/ja/cli/desktop/exit-codes)を参照してください。 |
 | NOTE_TITLE_EXISTS | note add では別のタイトルにします。既存のノートを直すときは、note edit を使います。 |
 | NOTE_NOT_FOUND | id が違います。expl note list から写します。 |
 | 図が空白になる | 埋め込みの記法の id が違うか、記法が 1 行に 1 つだけの形になっていません。 |
@@ -76,9 +76,9 @@ get は、Markdown の本文、フォルダ、依存関係を返します。get-
 
 ## 関連するページ
 
-- [チャートを作る](create-charts.md)
-- [アナリティクスを作る](create-analytics.md)
-- [公開する](publish.md)
-- [Desktop のコマンド](../commands.md)
+- [チャートを作る](/ja/cli/desktop/guides/create-charts)
+- [アナリティクスを作る](/ja/cli/desktop/guides/create-analytics)
+- [公開する](/ja/cli/desktop/guides/publish)
+- [Desktop のコマンド](/ja/cli/desktop/commands)
 
-同じことを MCP で行う例は、[使い方](../../../mcp/desktop/use.md#examples)の「ノートを書く」を参照してください。
+同じことを MCP で行う例は、[使い方](/ja/mcp/desktop/use#examples)の「ノートを書く」を参照してください。

@@ -8,9 +8,9 @@ Write a Markdown note that embeds charts and analytics, add to it later, and rea
 
 ## Before you start
 
-- Exploratory Desktop is running and the project is open ([Choose a project](projects.md)). Check with expl status.
+- Exploratory Desktop is running and the project is open ([Choose a project](/en/cli/desktop/guides/projects)). Check with expl status.
 - You have the ids of the charts and analytics to embed (expl chart list \<dataframe_id\> and expl analytics list \<dataframe_id\>).
-- note add and note edit work only when Allow create, edit and delete is on in System Settings > MCP / CLI. They do not ask for confirmation; deleting a note does. See [Confirmation and long-running operations](confirmation.md).
+- note add and note edit work only when Allow create, edit and delete is on in System Settings > MCP / CLI. They do not ask for confirmation; deleting a note does. See [Confirmation and long-running operations](/en/cli/desktop/guides/confirmation).
 
 <a id="steps"></a>
 
@@ -34,7 +34,7 @@ Replace \<chart_id\> and \<analytics_id\> with the ids you got when you created 
 
 ### 2. Create the note
 
---title and --markdown are required. @file reads the long text from a file ([Pass arguments and JSON](input.md)).
+--title and --markdown are required. @file reads the long text from a file ([Pass arguments and JSON](/en/cli/desktop/guides/input)).
 
 ```sh
 expl note add --title "Sales Orders report" --markdown @report.md
@@ -65,7 +65,7 @@ get returns the Markdown body, the folder and the dependencies. get-image return
 
 | What you see | What to do |
 | --- | --- |
-| PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](../exit-codes.md). |
+| PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](/en/cli/desktop/exit-codes). |
 | NOTE_TITLE_EXISTS | Use another title with note add, or edit the existing note with note edit. |
 | NOTE_NOT_FOUND | The id is wrong. Copy it from expl note list. |
 | A figure is blank | The embed tag has a wrong id, or is not on a line of its own. |
@@ -76,9 +76,9 @@ For the arguments of any command, run expl \<command\> --help or expl tools desc
 
 ## Related pages
 
-- [Create charts](create-charts.md)
-- [Create analytics](create-analytics.md)
-- [Publish](publish.md)
-- [Desktop commands](../commands.md)
+- [Create charts](/en/cli/desktop/guides/create-charts)
+- [Create analytics](/en/cli/desktop/guides/create-analytics)
+- [Publish](/en/cli/desktop/guides/publish)
+- [Desktop commands](/en/cli/desktop/commands)
 
-To do the same through MCP, see Write notes in [Use](../../../mcp/desktop/use.md#examples).
+To do the same through MCP, see Write notes in [Use](/en/mcp/desktop/use#examples).

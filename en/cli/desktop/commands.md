@@ -76,7 +76,7 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 | expl call \<tool_name\> | Call an operation by its tool name |
 | expl lang \[en\|ja\] | Show or switch the display language of Desktop (switching also changes the language of Desktop itself; run expl status first to check the connection; it exits with code 2 when it cannot decide the target project; for example expl lang --project \<id\>) |
 | expl skill | Print a description for AI agents |
-| expl completion \[bash\|zsh\|powershell\] | Print a shell completion script (see [Global flags](global-flags.md#completion)) |
+| expl completion \[bash\|zsh\|powershell\] | Print a shell completion script (see [Global flags](/en/cli/desktop/global-flags#completion)) |
 
 <a id="more"></a>
 
@@ -295,6 +295,6 @@ Commands are added or removed depending on the Desktop version. To see the exact
 | expl guide get | Returns the usage guide of a tool. | Always |
 | expl artifact rerun | Re-runs a chart, analytics or other item of the open project. | When Allow create, edit and delete is on |
 
-The built-in commands (expl status, project use, tools list, tools describe, call, lang, skill and completion) are in the tables at the top of this page, not below. For their flags, see [Global flags](global-flags.md).
+The built-in commands (expl status, project use, tools list, tools describe, call, lang, skill and completion) are in the tables at the top of this page, not below. For their flags, see [Global flags](/en/cli/desktop/global-flags).
 
-For the commands that read content on exploratory.io, see [Server commands](../server/commands.md).
+For the commands that read content on exploratory.io, see [Server commands](/en/cli/server/commands).

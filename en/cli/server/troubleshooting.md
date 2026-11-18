@@ -8,7 +8,7 @@ Find a fix by symptom.
 
 ## Check the state first
 
-Run expl server status. Exit code 0 from expl server tools list does not mean that the connection works (see [Inspect commands](commands.md#inspect-list)). To see what is sent and received, add --verbose; it prints to standard error. Tokens are never printed, but review the output before you paste it anywhere.
+Run expl server status. Exit code 0 from expl server tools list does not mean that the connection works (see [Inspect commands](/en/cli/server/commands#inspect-list)). To see what is sent and received, add --verbose; it prints to standard error. Tokens are never printed, but review the output before you paste it anywhere.
 
 <a id="contact"></a>
 
@@ -32,7 +32,7 @@ Ask your IT administrator to allow communication with exploratory.io. For an on-
 | npm install -g stops with EEXIST | Do not run it again with --force: that replaces the expl that comes with Desktop. |
 | You do not know which expl runs | Run which -a expl (where expl on Windows) to see every copy. |
 
-For how to check when two copies are installed, see [Installation](install.md).
+For how to check when two copies are installed, see [Installation](/en/cli/server/install).
 
 <a id="signin"></a>
 
@@ -46,11 +46,11 @@ For how to check when two copies are installed, see [Installation](install.md).
 | --token was removed. … | Set EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. |
 | Too many failed API key attempts. Try again later. | Many refused keys came from this address in a short time. Fix the key and try again later. |
 | The redirect URL has no authorization code. | With --no-browser, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
-| Exit code 4 (Desktop) | See the code at the end of the message in [Exit codes and errors](exit-codes.md#action): NOT_SIGNED_IN, UNAUTHORIZED, PAIRING_REQUIRED, CHANNEL_DISABLED or PERMISSION_DENIED. |
+| Exit code 4 (Desktop) | See the code at the end of the message in [Exit codes and errors](/en/cli/server/exit-codes#action): NOT_SIGNED_IN, UNAUTHORIZED, PAIRING_REQUIRED, CHANNEL_DISABLED or PERMISSION_DENIED. |
 
 To switch to a saved login while EXPL_SERVER_TOKEN is set, run unset EXPL_SERVER_TOKEN first, because it is used before a saved login.
 
-For how to create, pass and revoke an API key, see [API keys](token.md).
+For how to create, pass and revoke an API key, see [API keys](/en/cli/server/token).
 
 <a id="network"></a>
 
@@ -73,7 +73,7 @@ For how to create, pass and revoke an API key, see [API keys](token.md).
 | has_more is true and not everything came back | For search and dataframe preview, get the next page with --offset. For dataset query, narrow the query or aggregate. |
 | SERVER_BUSY | Another export is running, or you reached the hourly export limit. Try again in a few seconds; for the hourly limit, wait up to an hour. |
 
-The server that returns these errors is the same one that MCP Server uses. For the other errors it returns (NOT_FOUND, PERSONALIZED_CONTENT, CONTENT_UPDATING, UNSUPPORTED_OPERATION, RESULT_TOO_LARGE) and the limit on the number of requests per minute (120), see [Limits and errors](../../mcp/server/limits.md#errors) of MCP Server.
+The server that returns these errors is the same one that MCP Server uses. For the other errors it returns (NOT_FOUND, PERSONALIZED_CONTENT, CONTENT_UPDATING, UNSUPPORTED_OPERATION, RESULT_TOO_LARGE) and the limit on the number of requests per minute (120), see [Limits and errors](/en/mcp/server/limits#errors) of MCP Server.
 
 <a id="data"></a>
 
@@ -85,4 +85,4 @@ The server that returns these errors is the same one that MCP Server uses. For t
 | DATA_EGRESS_LIMIT | The publisher does not allow downloading this data as a file. Use fetch or dataframe get-schema for what the publisher shares. |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | In sort, name the output column with field. |
 
-For how to write the JSON arguments, see [Query data](guides/query-data.md#json).
+For how to write the JSON arguments, see [Query data](/en/cli/server/guides/query-data#json).

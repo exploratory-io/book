@@ -60,7 +60,7 @@ exploratory@exploratory in Exploratory's GitHub marketplace is for Desktop and d
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](/en/mcp/server/troubleshooting#zero).
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
@@ -115,7 +115,7 @@ url = "https://exploratory.io/mcp"
 bearer_token_env_var = "EXPLORATORY_API_KEY"
 ```
 
-If you write the key in the file as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../auth.md#apikey) for what a key can read.
+If you write the key in the file as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](/en/mcp/server/auth#apikey) for what a key can read.
 
 <a id="trouble"></a>
 
@@ -126,7 +126,7 @@ If you write the key in the file as it is, it stays in that file. Use one way on
 | You are asked to sign in | Run codex mcp login exploratory-server to sign in again. If you added the server by chat, give the name you registered (Exploratory in the example). |
 | The Server tools do not appear | exploratory@exploratory is for Desktop. Register Server with the steps above. |
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
+- [Troubleshooting](/en/mcp/server/troubleshooting) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 

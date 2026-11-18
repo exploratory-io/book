@@ -8,7 +8,7 @@ How the server authenticates a call: the browser sign-in, and the API key for se
 
 ## Connect with an API key
 
-Some setups cannot open a browser: a server, a scheduled job, or a client that only lets you set a fixed header. Connect those with an API key. Create one in Account Settings \> API Keys (see [API keys](../../cli/server/token.md)), then send it in the Authorization header of every call to the server URL.
+Some setups cannot open a browser: a server, a scheduled job, or a client that only lets you set a fixed header. Connect those with an API key. Create one in Account Settings \> API Keys (see [API keys](/en/cli/server/token)), then send it in the Authorization header of every call to the server URL.
 
 ```text
 Authorization: Bearer exp_pat_...
@@ -32,7 +32,7 @@ Put the key in an environment variable and let the client read it from there. Se
 }
 ```
 
-For other clients, see the steps for [Codex](clients/codex.md#apikey), [Cursor](clients/cursor.md#apikey) and [other clients](clients/other.md#apikey).
+For other clients, see the steps for [Codex](/en/mcp/server/clients/codex#apikey), [Cursor](/en/mcp/server/clients/cursor#apikey) and [other clients](/en/mcp/server/clients/other#apikey).
 
 - A key reads what you can view, as your browser sign-in does. It is read-only (content:read). Only Authors can create one.
 - When a key fails, the server answers 401 or 403 with the reason. It does not start the browser sign-in (OAuth) instead. Fix the key.
@@ -45,9 +45,9 @@ For other clients, see the steps for [Codex](clients/codex.md#apikey), [Cursor](
 | 403 | This IP address is not allowed for API keys. | Your administrator allows API keys only from certain IP addresses. Connect from an allowed address. |
 | 429 | Too many failed API key attempts. Try again later. | More than 30 refused keys came from one address within 15 minutes (counted per IPv4 address, or per IPv6 /64 range). Fix the key and try again later. |
 
-An administrator on an on-premises or Hosted server can turn API keys off or limit them to certain IP addresses; the two 403 messages above mean that. The publisher settings in [Data and permissions](data.md#publisher) apply to a key in the same way.
+An administrator on an on-premises or Hosted server can turn API keys off or limit them to certain IP addresses; the two 403 messages above mean that. The publisher settings in [Data and permissions](/en/mcp/server/data#publisher) apply to a key in the same way.
 
-- [API keys](../../cli/server/token.md) - Create, expire, revoke and keep a key safe.
+- [API keys](/en/cli/server/token) - Create, expire, revoke and keep a key safe.
 
 <a id="spec"></a>
 
@@ -62,4 +62,4 @@ An administrator on an on-premises or Hosted server can turn API keys off or lim
 
 If a person uses it in a browser, use the browser sign-in. If there is no browser, or a job runs by itself, use an API key.
 
-Every call needs Authorization: Bearer \<access token or API key\>. A browser session cookie does not authenticate MCP calls. The consent page, the metadata URLs and the details of failed calls are in [Data and permissions](data.md#auth).
+Every call needs Authorization: Bearer \<access token or API key\>. A browser session cookie does not authenticate MCP calls. The consent page, the metadata URLs and the details of failed calls are in [Data and permissions](/en/mcp/server/data#auth).

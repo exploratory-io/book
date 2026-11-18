@@ -5,7 +5,7 @@ sidebarTitle: "GLM"
 
 ## Introduction
 
-Generalized linear regression model is a generalized version of [linear regression](./linear-regression.md) that can be applicable to response variables that have error distribution models other than a normal distribution.
+Generalized linear regression model is a generalized version of [linear regression](/en/ml/linear-regression) that can be applicable to response variables that have error distribution models other than a normal distribution.
 
 ## How to Access?
 

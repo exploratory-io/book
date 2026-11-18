@@ -116,9 +116,9 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 expl server dataset query <dataset_id> --mode rows --columns '["region","sales"]' --filters '{"column":"region","operator":"eq","value":"Kanto"}' --limit 10 --json
 ```
 
-operator は比較の方法です。データごとに使える operator は、expl server dataframe get-schema \<id\> --detail full の結果にあります。複数の条件を組み合わせる方法は、[フィルタ条件](../commands.md#dataset-query-json-arguments)を参照してください。
+operator は比較の方法です。データごとに使える operator は、expl server dataframe get-schema \<id\> --detail full の結果にあります。複数の条件を組み合わせる方法は、[フィルタ条件](/ja/cli/server/commands#dataset-query-json-arguments)を参照してください。
 
-結果が大きすぎる場合は、dataframe export で CSV または Parquet のファイルにします。複数のデータを結合する方法は、[dataset query](../commands.md#dataset-query) のページを参照してください。
+結果が大きすぎる場合は、dataframe export で CSV または Parquet のファイルにします。複数のデータを結合する方法は、[dataset query](/ja/cli/server/commands#dataset-query) のページを参照してください。
 
 <a id="json"></a>
 

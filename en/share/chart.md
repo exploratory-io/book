@@ -37,4 +37,4 @@ You can republish or stop publishing by the buttons at the bottom of the dialog 
 
 # Schedule 
 
-Once you publish your chart, you can setup a schedule to refresh your chart periodically. See the [document](../schedule/manage.md) for more details about how to manage the schedule. 
+Once you publish your chart, you can setup a schedule to refresh your chart periodically. See the [document](/en/schedule/manage) for more details about how to manage the schedule. 

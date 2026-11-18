@@ -35,15 +35,15 @@ You can also access the User Color Palette dialog from the project menu dropdown
 
 
 
-See [User Color Palette](custom-palette.md) for how to use the User Color Palette dialog.
+See [User Color Palette](/en/viz/custom-palette) for how to use the User Color Palette dialog.
 
 
 
 ## Highlight 
 
-You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
+You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](/en/viz/highlight) for the detail. 
 
 
 ## Edit Display Name 
 
-You can edit the display name of the color values. See [Edit Display Name](edit-display-name.md) for the detail. 
+You can edit the display name of the color values. See [Edit Display Name](/en/viz/edit-display-name) for the detail. 

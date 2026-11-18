@@ -10,17 +10,17 @@ title: "使える道具"
 
 | 種類 | 道具 | 読み取りだけ／作成・変更・削除 | 用途 |
 | --- | --- | --- | --- |
-| 探す・読む | [search](tools.md#search) | 読み取りだけ | 公開されたコンテンツを探し、一覧します。 |
-| 探す・読む | [fetch](tools.md#fetch) | 読み取りだけ | ノート、ダッシュボード、スライド、データを Markdown で読みます。 |
-| チャートとアナリティクス | [chart_get_data](tools.md#chart_get_data) | 読み取りだけ | チャートの数値を取得します。 |
-| チャートとアナリティクス | [chart_get_image](tools.md#chart_get_image) | 読み取りだけ | チャートを画像として取得します。 |
-| チャートとアナリティクス | [chart_query](tools.md#chart_query) | 読み取りだけ | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
-| チャートとアナリティクス | [analytics_get_result](tools.md#analytics_get_result) | 読み取りだけ | 係数や p 値など、アナリティクスの結果を取得します。 |
-| データ | [dataframe_get_schema](tools.md#dataframe_get_schema) | 読み取りだけ | 列の名前、型、承認された意味を調べます。 |
-| データ | [dataframe_get_wrangling](tools.md#dataframe_get_wrangling) | 読み取りだけ | データがどう加工されて作られたかを、ステップごとに見ます。 |
-| データ | [dataframe_preview](tools.md#dataframe_preview) | 読み取りだけ | 行を見ます。 |
-| データ | [query_dataset](tools.md#query_dataset) | 読み取りだけ | サーバーで絞り込み、集計します。 |
-| データ | [dataframe_export](tools.md#dataframe_export) | 読み取りだけ（ダウンロードリンクを作ります） | 結果を CSV か Parquet で保存します。 |
+| 探す・読む | [search](/ja/mcp/server/tools#search) | 読み取りだけ | 公開されたコンテンツを探し、一覧します。 |
+| 探す・読む | [fetch](/ja/mcp/server/tools#fetch) | 読み取りだけ | ノート、ダッシュボード、スライド、データを Markdown で読みます。 |
+| チャートとアナリティクス | [chart_get_data](/ja/mcp/server/tools#chart_get_data) | 読み取りだけ | チャートの数値を取得します。 |
+| チャートとアナリティクス | [chart_get_image](/ja/mcp/server/tools#chart_get_image) | 読み取りだけ | チャートを画像として取得します。 |
+| チャートとアナリティクス | [chart_query](/ja/mcp/server/tools#chart_query) | 読み取りだけ | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
+| チャートとアナリティクス | [analytics_get_result](/ja/mcp/server/tools#analytics_get_result) | 読み取りだけ | 係数や p 値など、アナリティクスの結果を取得します。 |
+| データ | [dataframe_get_schema](/ja/mcp/server/tools#dataframe_get_schema) | 読み取りだけ | 列の名前、型、承認された意味を調べます。 |
+| データ | [dataframe_get_wrangling](/ja/mcp/server/tools#dataframe_get_wrangling) | 読み取りだけ | データがどう加工されて作られたかを、ステップごとに見ます。 |
+| データ | [dataframe_preview](/ja/mcp/server/tools#dataframe_preview) | 読み取りだけ | 行を見ます。 |
+| データ | [query_dataset](/ja/mcp/server/tools#query_dataset) | 読み取りだけ | サーバーで絞り込み、集計します。 |
+| データ | [dataframe_export](/ja/mcp/server/tools#dataframe_export) | 読み取りだけ（ダウンロードリンクを作ります） | 結果を CSV か Parquet で保存します。 |
 
 exploratory.io では、これらの道具が使えます。オンプレミスのサーバーでは、使える道具はサーバーの設定によって変わります。query_dataset、chart_query、dataframe_export は、管理者が有効にしたときだけ使えます。設定によっては、ほかの道具も増えます。たとえば desktop_mcp_setup_guide は、AI ツールを Exploratory Desktop につなぐ手順を返します。お使いのサーバーにある道具は、expl server tools list で確認できます。
 

@@ -5,7 +5,7 @@ title: "Claude Code につなぐ"
 接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Claude Code に Exploratory のサーバーを登録し、ブラウザでサインインします。
 かかる時間は 3 分ほどです。Exploratory のアカウントと、Claude Code を用意してください。
 
-Claude のアプリ（デスクトップ・Web）で、すでに Exploratory をコネクタとして追加しているときは、ここでもう一度追加する必要はありません。同じ claude.ai アカウントでサインインした Claude Code には、「claude.ai Exploratory」として自動で表示され、そのまま使えます。確かめるには、Claude Code で `/mcp` を開きます。詳しい追加の手順は、[Claude アプリ（デスクトップ・Web）](claude.md)のページを参照してください。
+Claude のアプリ（デスクトップ・Web）で、すでに Exploratory をコネクタとして追加しているときは、ここでもう一度追加する必要はありません。同じ claude.ai アカウントでサインインした Claude Code には、「claude.ai Exploratory」として自動で表示され、そのまま使えます。確かめるには、Claude Code で `/mcp` を開きます。詳しい追加の手順は、[Claude アプリ（デスクトップ・Web）](/ja/mcp/server/clients/claude)のページを参照してください。
 
 ![Claude Code の /mcp の一覧に表示された claude.ai Exploratory](images/ja/claude-code-claudeai-connector.png)
 
@@ -44,7 +44,7 @@ Claude のアプリ（デスクトップ・Web）で、すでに Exploratory を
    接続した Exploratory Server で、閲覧できるコンテンツを最大 3 件、URL 付きで一覧して。見つからなければ、その旨を教えて。
    ```
 
-コンテンツが URL 付きで表示されていれば、接続できています。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](../troubleshooting.md#zero)を参照してください。
+コンテンツが URL 付きで表示されていれば、接続できています。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](/ja/mcp/server/troubleshooting#zero)を参照してください。
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 
@@ -110,7 +110,7 @@ Exploratory への接続が複数あるとき（たとえば exploratory-server 
 
 上の OAuth でのサインインか、この方法か、どちらか一方だけを使います。
 
-- [API キーで接続する](../auth.md#apikey) - キーで読めるものと、返ってくるエラーです。
+- [API キーで接続する](/ja/mcp/server/auth#apikey) - キーで読めるものと、返ってくるエラーです。
 
 <a id="trouble"></a>
 
@@ -121,13 +121,13 @@ Exploratory への接続が複数あるとき（たとえば exploratory-server 
 | サインインを求められる | /mcp を開いて、もう一度サインインします。 |
 | 同じ道具が 2 組表示される | インストール方法は 1 つだけにします（公式一覧にある Exploratory Server のプラグイン、URL の直接追加、claude.ai のコネクタのいずれか）。あとから公式の一覧でインストールする場合は、先に直接追加した分を claude mcp remove exploratory-server で削除します。 |
 
-- [トラブルシューティング](../troubleshooting.md) - Server の MCP 全体の、症状ごとの対処です。
+- [トラブルシューティング](/ja/mcp/server/troubleshooting) - Server の MCP 全体の、症状ごとの対処です。
 
 <a id="remove"></a>
 
 ## 接続を解除する
 
-コマンドで直接登録した接続は、以下の手順で削除します。Claude アプリから引き継がれたコネクタは、[Claude アプリのページ](claude.md#remove)の「接続を解除する」を参照してください。
+コマンドで直接登録した接続は、以下の手順で削除します。Claude アプリから引き継がれたコネクタは、[Claude アプリのページ](/ja/mcp/server/clients/claude#remove)の「接続を解除する」を参照してください。
 
 ```sh
 claude mcp remove exploratory-server

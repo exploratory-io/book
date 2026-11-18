@@ -14,4 +14,4 @@ expl で、何が送られ、何が記録されるかを説明します。
 
 expl 自体は、利用状況の計測を送りません。
 
-MCP Desktop の記録については、[データと権限](../../mcp/desktop/data.md)も参照してください。
+MCP Desktop の記録については、[データと権限](/ja/mcp/desktop/data)も参照してください。

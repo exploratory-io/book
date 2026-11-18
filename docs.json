@@ -176,55 +176,60 @@
                 ],
                 "root": "en/cli/cli"
               },
-              "en/product-features",
-              "en/summary/summary",
-              "en/table/table",
-              "en/table/row_filter",
-              "en/table/column_filter",
-              "en/markdown/markdown-dashboard",
-              "en/markdown/markdown-note",
-              "en/steps",
-              "en/branch/branch",
-              "en/parameter/parameter",
-              "en/export/export",
               {
-                "group": "Share",
+                "group": "Product Features",
                 "pages": [
-                  "en/share/share_type",
-                  "en/share/chart",
-                  "en/share/data",
-                  "en/share/note",
-                  "en/share/notification",
-                  "en/share//version-history",
-                  "en/share/restore",
-                  "en/share/csvapi"
+                  "en/summary/summary",
+                  "en/table/table",
+                  "en/table/row_filter",
+                  "en/table/column_filter",
+                  "en/markdown/markdown-dashboard",
+                  "en/markdown/markdown-note",
+                  "en/steps",
+                  "en/branch/branch",
+                  "en/parameter/parameter",
+                  "en/export/export",
+                  {
+                    "group": "Share",
+                    "pages": [
+                      "en/share/share_type",
+                      "en/share/chart",
+                      "en/share/data",
+                      "en/share/note",
+                      "en/share/notification",
+                      "en/share/version-history",
+                      "en/share/restore",
+                      "en/share/csvapi"
+                    ],
+                    "root": "en/share/share"
+                  },
+                  {
+                    "group": "Schedule",
+                    "pages": [
+                      "en/schedule/manage",
+                      "en/schedule/notification",
+                      "en/schedule/history"
+                    ],
+                    "root": "en/schedule/schedule"
+                  },
+                  {
+                    "group": "Team",
+                    "pages": [
+                      "en/team/manage"
+                    ],
+                    "root": "en/team/team"
+                  },
+                  {
+                    "group": "Project",
+                    "pages": [
+                      "en/project/import",
+                      "en/project/export",
+                      "en/project/search"
+                    ],
+                    "root": "en/project"
+                  }
                 ],
-                "root": "en/share/share"
-              },
-              {
-                "group": "Schedule",
-                "pages": [
-                  "en/schedule/manage",
-                  "en/schedule/notification",
-                  "en/schedule/history"
-                ],
-                "root": "en/schedule/schedule"
-              },
-              {
-                "group": "Team",
-                "pages": [
-                  "en/team/manage"
-                ],
-                "root": "en/team/team"
-              },
-              {
-                "group": "Project",
-                "pages": [
-                  "en/project/import",
-                  "en/project/export",
-                  "en/project/search"
-                ],
-                "root": "en/project"
+                "root": "en/product-features"
               },
               {
                 "group": "AI",
@@ -257,6 +262,7 @@
                   {
                     "group": "Database Data",
                     "pages": [
+                      "en/external-sql-troubleshooting",
                       "en/import/connection.html",
                       "en/import/athena",
                       "en/import/aurora",
@@ -308,10 +314,15 @@
                   },
                   "en/import/web-scraping",
                   "en/import/free-input-text",
-                  "en/import/extensions",
-                  "en/import/quandl",
-                  "en/import/holiday",
-                  "en/import/tidyrss",
+                  {
+                    "group": "Data Source Extension",
+                    "pages": [
+                      "en/import/quandl",
+                      "en/import/holiday",
+                      "en/import/tidyrss"
+                    ],
+                    "root": "en/import/extensions"
+                  },
                   "en/import/user-defined-plugin"
                 ],
                 "root": "en/data_import"
@@ -373,62 +384,72 @@
               {
                 "group": "Visualization",
                 "pages": [
-                  "en/viz/pivot",
-                  "en/viz/summarize-table",
-                  "en/viz/table",
-                  "en/viz/bar",
-                  "en/viz/line",
-                  "en/viz/area",
-                  "en/viz/pie",
-                  "en/viz/radar",
-                  "en/viz/hist",
-                  "en/viz/densityplot",
-                  "en/viz/scatter",
-                  "en/viz/bubble",
-                  "en/viz/boxplot",
-                  "en/viz/violin",
-                  "en/viz/errbar",
-                  "en/viz/errbar-agg",
-                  "en/viz/easymap",
-                  "en/viz/geojson",
-                  "en/viz/map",
-                  "en/viz/maphmap",
-                  "en/viz/heatmap",
-                  "en/viz/contour",
-                  "en/viz/singlevalue",
-                  "en/viz/wordcloud",
-                  "en/viz/r-custom",
-                  "en/viz/trend-line",
-                  "en/viz/reference-line",
-                  "en/viz/small-multiple",
-                  "en/viz/window-calc",
-                  "en/viz/date-aggregate",
-                  "en/viz/range",
-                  "en/viz/marker",
-                  "en/viz/multi-y",
-                  "en/viz/layout",
-                  "en/viz/column-configuration",
-                  "en/viz/column-configuration-dialog",
-                  "en/viz/color",
-                  "en/viz/color-dialog",
-                  "en/viz/custom-palette",
-                  "en/viz/pin",
-                  "en/viz/save",
-                  "en/viz/save-as-edf",
-                  "en/viz/schedule",
-                  "en/viz/urllink",
-                  "en/viz/category",
-                  "en/viz/highlight",
-                  "en/viz/limit",
-                  "en/viz/others-group",
-                  "en/viz/edit-display-name",
-                  "en/viz/missing-value-handling",
-                  "en/viz/rename-column-names",
-                  "en/viz/dualy-setting",
-                  "en/viz/axis-format",
-                  "en/viz/show-detail",
-                  "en/viz/table-fit-to-screen",
-                  "en/viz/number-of-unuque-values-check"
+                  {
+                    "group": "Types",
+                    "pages": [
+                      "en/viz/pivot",
+                      "en/viz/summarize-table",
+                      "en/viz/table",
+                      "en/viz/bar",
+                      "en/viz/line",
+                      "en/viz/area",
+                      "en/viz/pie",
+                      "en/viz/radar",
+                      "en/viz/hist",
+                      "en/viz/densityplot",
+                      "en/viz/scatter",
+                      "en/viz/bubble",
+                      "en/viz/boxplot",
+                      "en/viz/violin",
+                      "en/viz/errbar",
+                      "en/viz/errbar-agg",
+                      "en/viz/easymap",
+                      "en/viz/geojson",
+                      "en/viz/map",
+                      "en/viz/maphmap",
+                      "en/viz/heatmap",
+                      "en/viz/contour",
+                      "en/viz/singlevalue",
+                      "en/viz/wordcloud",
+                      "en/viz/r-custom"
+                    ]
+                  },
+                  {
+                    "group": "Features",
+                    "pages": [
+                      "en/viz/trend-line",
+                      "en/viz/reference-line",
+                      "en/viz/small-multiple",
+                      "en/viz/window-calc",
+                      "en/viz/date-aggregate",
+                      "en/viz/range",
+                      "en/viz/marker",
+                      "en/viz/multi-y",
+                      "en/viz/layout",
+                      "en/viz/column-configuration",
+                      "en/viz/column-configuration-dialog",
+                      "en/viz/color",
+                      "en/viz/color-dialog",
+                      "en/viz/custom-palette",
+                      "en/viz/pin",
+                      "en/viz/save",
+                      "en/viz/save-as-edf",
+                      "en/viz/schedule",
+                      "en/viz/urllink",
+                      "en/viz/category",
+                      "en/viz/highlight",
+                      "en/viz/limit",
+                      "en/viz/others-group",
+                      "en/viz/edit-display-name",
+                      "en/viz/missing-value-handling",
+                      "en/viz/rename-column-names",
+                      "en/viz/dualy-setting",
+                      "en/viz/axis-format",
+                      "en/viz/show-detail",
+                      "en/viz/table-fit-to-screen",
+                      "en/viz/number-of-unuque-values-check"
+                    ]
+                  }
                 ],
                 "root": "en/visualization"
               },
@@ -537,18 +558,28 @@
                 "pages": [
                   "en/r_package",
                   "en/r_script",
-                  "en/user-defined-model-function",
+                  "en/user-defined-model-function"
+                ],
+                "root": "en/extend-with-r"
+              },
+              {
+                "group": "Setup",
+                "pages": [
                   "en/howto/stopmcafee",
                   "en/howto/set_exploratory_home",
                   "en/howto/holiday",
                   "en/howto/install_errors",
-                  "en/howto/upgrade_dot_net",
+                  "en/howto/upgrade_dot_net"
+                ]
+              },
+              {
+                "group": "Diagnostics",
+                "pages": [
                   "en/debug_log",
                   "en/startup_log",
                   "en/version_check",
                   "en/history_error_recovery"
-                ],
-                "root": "en/extend-with-r"
+                ]
               },
               "en/shortcut"
             ]
@@ -831,6 +862,18 @@
     {
       "source": "/howto/install_errors.html",
       "destination": "/en/howto/install_errors"
+    },
+    {
+      "source": "/howto/holiday.html",
+      "destination": "/en/howto/holiday"
+    },
+    {
+      "source": "/data_import/database-data/connection.html",
+      "destination": "/en/import/connection.html"
+    },
+    {
+      "source": "/data_import/database-data/connection",
+      "destination": "/en/import/connection.html"
     },
     {
       "source": "/howto/install_errors",

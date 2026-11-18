@@ -8,9 +8,9 @@ Create a chart from a data frame, check its numbers and image, and change it.
 
 ## Before you start
 
-- Exploratory Desktop is running and the project is open ([Choose a project](projects.md)). Check with expl status.
+- Exploratory Desktop is running and the project is open ([Choose a project](/en/cli/desktop/guides/projects)). Check with expl status.
 - You know the id of the data frame and its column names (expl dataframe list and expl dataframe get-schema \<dataframe_id\>).
-- chart add and chart edit work only when Allow create, edit and delete is on in System Settings > MCP / CLI. They do not ask for confirmation; deleting a chart does. See [Confirmation and long-running operations](confirmation.md).
+- chart add and chart edit work only when Allow create, edit and delete is on in System Settings > MCP / CLI. They do not ask for confirmation; deleting a chart does. See [Confirmation and long-running operations](/en/cli/desktop/guides/confirmation).
 
 <a id="steps"></a>
 
@@ -63,7 +63,7 @@ expl chart edit <chart_id> --marker line --title "Monthly Sales Trend"
 
 | What you see | What to do |
 | --- | --- |
-| PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](../exit-codes.md). |
+| PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](/en/cli/desktop/exit-codes). |
 | NO_DATA_FRAME | Add --data-frame-id \<dataframe_id\>. |
 | INVALID_ARGUMENT | A setting name or value is wrong. Look it up again with expl chart list-settings. |
 | The chart is empty or has the wrong columns | Check the column names against expl dataframe get-schema, character for character. |
@@ -74,9 +74,9 @@ For the arguments of any command, run expl \<command\> --help or expl tools desc
 
 ## Related pages
 
-- [Import and wrangle data](wrangle-data.md)
-- [Create analytics](create-analytics.md)
-- [Write notes](write-notes.md)
-- [Desktop commands](../commands.md)
+- [Import and wrangle data](/en/cli/desktop/guides/wrangle-data)
+- [Create analytics](/en/cli/desktop/guides/create-analytics)
+- [Write notes](/en/cli/desktop/guides/write-notes)
+- [Desktop commands](/en/cli/desktop/commands)
 
-To do the same through MCP, see Create charts in [Use](../../../mcp/desktop/use.md#examples).
+To do the same through MCP, see Create charts in [Use](/en/mcp/desktop/use#examples).

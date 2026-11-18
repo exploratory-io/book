@@ -76,7 +76,7 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | expl call \<tool_name\> | 道具の名前でそのまま呼ぶ |
 | expl lang \[en\|ja\] | Desktop の表示言語を確認する、切り替える（切り替えると、Desktop 自体の言語も変わります。先に expl status で接続を確認してください。対象のプロジェクトを決められないときは、終了コード 2 になります。例: expl lang --project \<id\>） |
 | expl skill | AI エージェント向けの説明を出力する |
-| expl completion \[bash\|zsh\|powershell\] | シェルの補完のスクリプトを出力する（[共通フラグ](global-flags.md#completion)を参照） |
+| expl completion \[bash\|zsh\|powershell\] | シェルの補完のスクリプトを出力する（[共通フラグ](/ja/cli/desktop/global-flags#completion)を参照） |
 
 <a id="more"></a>
 
@@ -295,6 +295,6 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | expl guide get | 道具の使い方のガイドを返します。 | いつでも |
 | expl artifact rerun | 開いているプロジェクトのチャートやアナリティクスなどを再実行します。 | 作成、変更、削除を許可したとき |
 
-組み込みのコマンド（expl status、project use、tools list、tools describe、call、lang、skill、completion）は、下ではなく、このページの上の表にあります。フラグは[共通フラグ](global-flags.md)を参照してください。
+組み込みのコマンド（expl status、project use、tools list、tools describe、call、lang、skill、completion）は、下ではなく、このページの上の表にあります。フラグは[共通フラグ](/ja/cli/desktop/global-flags)を参照してください。
 
-exploratory.io のコンテンツを読むコマンドは、[Server のコマンド](../server/commands.md)を参照してください。
+exploratory.io のコンテンツを読むコマンドは、[Server のコマンド](/ja/cli/server/commands)を参照してください。

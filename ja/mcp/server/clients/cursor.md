@@ -78,7 +78,7 @@ agent mcp login exploratory-server
 Exploratory にある「Sales Orders」のデータを探して
 ```
 
-Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](../troubleshooting.md#zero)を参照してください。
+Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](/ja/mcp/server/troubleshooting#zero)を参照してください。
 
 送信したあと、結果を確かめます。
 
@@ -110,7 +110,7 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 }
 ```
 
-キーを mcp.json にそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](../auth.md#apikey)を参照してください。
+キーを mcp.json にそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](/ja/mcp/server/auth#apikey)を参照してください。
 
 <a id="trouble"></a>
 
@@ -121,7 +121,7 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 | サインインを求められる | agent mcp login exploratory-server を実行して、もう一度サインインします。 |
 | Desktop のプラグインをインストールしたが、Server の道具が表示されない | Desktop のプラグインには、Server は含まれません。上の JSON で、Server を追加します。 |
 
-- [トラブルシューティング](../troubleshooting.md) - Server の MCP 全体の、症状ごとの対処です。
+- [トラブルシューティング](/ja/mcp/server/troubleshooting) - Server の MCP 全体の、症状ごとの対処です。
 
 <a id="remove"></a>
 

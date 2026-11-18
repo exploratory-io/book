@@ -8,9 +8,9 @@ Desktop から、ノート、ダッシュボード、データフレームをサ
 
 ## 前提
 
-- Exploratory Desktop が起動していて、プロジェクトが開いていて（[プロジェクトを選ぶ](projects.md)）、サインインしています（expl status で、サインイン中のユーザーが分かります）。
+- Exploratory Desktop が起動していて、プロジェクトが開いていて（[プロジェクトを選ぶ](/ja/cli/desktop/guides/projects)）、サインインしています（expl status で、サインイン中のユーザーが分かります）。
 - 公開と取り消しは、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。
-- 公開すると、URL を知っている人なら誰でも読めるようになります。公開の取り消しは、元に戻せません。そのため、どちらも実行の前に確認が出ます。ターミナルでは Continue? \[y/N\] と聞かれます。スクリプトや AI エージェントからは、対象を確認したうえで --yes を付けます。[確認と時間のかかる操作](confirmation.md)を参照してください。
+- 公開すると、URL を知っている人なら誰でも読めるようになります。公開の取り消しは、元に戻せません。そのため、どちらも実行の前に確認が出ます。ターミナルでは Continue? \[y/N\] と聞かれます。スクリプトや AI エージェントからは、対象を確認したうえで --yes を付けます。[確認と時間のかかる操作](/ja/cli/desktop/guides/confirmation)を参照してください。
 
 <a id="steps"></a>
 
@@ -67,7 +67,7 @@ expl published unpublish <id>
 
 | 状況 | 対処 |
 | --- | --- |
-| PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](../exit-codes.md)を参照してください。 |
+| PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](/ja/cli/desktop/exit-codes)を参照してください。 |
 | 終了コード 2 で何も実行されない | 確認が要る操作を、ターミナル以外で実行しています。対象を確認したうえで --yes を付けます。 |
 | Continue? で終了コード 1 | y 以外を答えています。もう一度実行して、y と答えます。 |
 | No rendered output | Desktop でダッシュボードを 1 回開いてから、もう一度実行します。 |
@@ -79,9 +79,9 @@ expl published unpublish <id>
 
 ## 関連するページ
 
-- [確認と時間のかかる操作](confirmation.md)
-- [ノートを書く](write-notes.md)
-- [ダッシュボードを複製する](duplicate-dashboard.md)
-- [Desktop のコマンド](../commands.md)
+- [確認と時間のかかる操作](/ja/cli/desktop/guides/confirmation)
+- [ノートを書く](/ja/cli/desktop/guides/write-notes)
+- [ダッシュボードを複製する](/ja/cli/desktop/guides/duplicate-dashboard)
+- [Desktop のコマンド](/ja/cli/desktop/commands)
 
-同じことを MCP で行う例は、[使い方](../../../mcp/desktop/use.md#examples)の「公開する」を参照してください。
+同じことを MCP で行う例は、[使い方](/ja/mcp/desktop/use#examples)の「公開する」を参照してください。

@@ -34,7 +34,7 @@ expl server logout
 
 ## API キーでサインインする
 
-API キーを使うと、ブラウザなしでサインインできます。アカウント設定 \> API キーで作成して（[API キー](token.md)を参照）、次のコマンドを実行します。
+API キーを使うと、ブラウザなしでサインインできます。アカウント設定 \> API キーで作成して（[API キー](/ja/cli/server/token)を参照）、次のコマンドを実行します。
 
 ```sh
 expl server login --with-token
@@ -81,7 +81,7 @@ User: you@example.com
 Auth: API key "ci-nightly" saved by login --with-token, expires 2026-12-13
 ```
 
-キーの作り方と安全な扱い方は、[API キー](token.md)を参照してください。
+キーの作り方と安全な扱い方は、[API キー](/ja/cli/server/token)を参照してください。
 
 <a id="nobrowser"></a>
 
@@ -151,7 +151,7 @@ expl server が呼び出す操作について、Exploratory Server は次のも�
 - サーバーのログ: 操作の呼び出しごとの記録（メールアドレス、クライアント、結果、行数、処理時間）と、トークンの作成・削除。
 - 失敗した呼び出しのエラー: 時刻、呼び出した操作、エラーの内容を、製品の改善のために収集します。
 
-同じ内容は、MCP Server の[データと権限](../../mcp/server/data.md)のページでも説明しています。
+同じ内容は、MCP Server の[データと権限](/ja/mcp/server/data)のページでも説明しています。
 
 <a id="trouble"></a>
 

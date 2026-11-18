@@ -52,9 +52,9 @@ exploratory.io の右上のアイコンから「アカウント設定」を開�
 
 ## キーを expl に渡す
 
-expl server login --with-token でキーを保存するか、環境変数 EXPL_SERVER_TOKEN に設定します。環境変数が先に使われます。選ばれる順と切り替え方は、[サインイン](login.md#apikey)にあります。--token は削除されました。指定すると、終了コード 2 で終わります。
+expl server login --with-token でキーを保存するか、環境変数 EXPL_SERVER_TOKEN に設定します。環境変数が先に使われます。選ばれる順と切り替え方は、[サインイン](/ja/cli/server/login#apikey)にあります。--token は削除されました。指定すると、終了コード 2 で終わります。
 
-GitHub Actions での使い方は、[自動処理](guides/automation.md)を参照してください。
+GitHub Actions での使い方は、[自動処理](/ja/cli/server/guides/automation)を参照してください。
 
 <a id="cli"></a>
 
@@ -108,7 +108,7 @@ Revoked ci.
 ## キーを安全に扱う
 
 - キーをコマンドラインやスクリプトに書かないでください。シェルの履歴に残り、プロセスの一覧からも見えます。expl server login --with-token（キーを表示せずに聞きます）か、環境変数を使います。
-- CI では、キーをシークレットとして渡し、ログに出さないようにします。[自動処理](guides/automation.md#token)を参照してください。
+- CI では、キーをシークレットとして渡し、ログに出さないようにします。[自動処理](/ja/cli/server/guides/automation#token)を参照してください。
 - キーには有効期限があります。期限の 7 日前と 1 日前に、メールが届きます。ジョブが止まらないよう、それまでに新しいキーを作ってください。
 - キーが作成・再生成・取り消しされたときも、メールが届きます。心当たりがないときは、キーを取り消して、パスワードを変更してください。
 
@@ -135,4 +135,4 @@ Revoked ci.
 
 ## 記録されるもの
 
-API キーは、ハッシュで保存され、作成日時、有効期限、最終使用日時が記録されます。そのほかの記録は、MCP Server の[データと権限](../../mcp/server/data.md)のページにまとめています。
+API キーは、ハッシュで保存され、作成日時、有効期限、最終使用日時が記録されます。そのほかの記録は、MCP Server の[データと権限](/ja/mcp/server/data)のページにまとめています。

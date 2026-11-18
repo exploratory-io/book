@@ -6,7 +6,6 @@ title: "共通フラグ"
 
 <a id="all"></a>
 
-## 共通フラグ
 
 | フラグ | 内容 | expl server では |
 | --- | --- | --- |
@@ -32,9 +31,9 @@ title: "共通フラグ"
 
 | 変数 | 使いみち | 優先順位 |
 | --- | --- | --- |
-| EXPL_SERVER_URL | expl server が呼び出すサーバー | --url、EXPL_SERVER_URL、最後にサインインしたサーバー、https://exploratory.io の順です。[接続先の URL](login.md#url)を参照してください。 |
-| EXPL_SERVER_TOKEN | API キー | 保存したログイン情報より先に使われます。[API キー](token.md)を参照してください。 |
-| EXPL_PROJECT | Desktop のコマンドが作業するプロジェクト | expl server では使いません。[プロジェクトを選ぶ](../desktop/guides/projects.md)を参照してください。 |
+| EXPL_SERVER_URL | expl server が呼び出すサーバー | --url、EXPL_SERVER_URL、最後にサインインしたサーバー、https://exploratory.io の順です。[接続先の URL](/ja/cli/server/login#url)を参照してください。 |
+| EXPL_SERVER_TOKEN | API キー | 保存したログイン情報より先に使われます。[API キー](/ja/cli/server/token)を参照してください。 |
+| EXPL_PROJECT | Desktop のコマンドが作業するプロジェクト | expl server では使いません。[プロジェクトを選ぶ](/ja/cli/desktop/guides/projects)を参照してください。 |
 
 <a id="completion"></a>
 
@@ -59,4 +58,4 @@ expl completion bash、expl completion zsh、expl completion powershell は、�
 | --output \<file\>, -o \<file\> | データの書き出しやチャート画像など、ファイルの結果の保存先です。--json と一緒に使うと、保存したファイルのパス（saved）とサイズ（bytes）を JSON で出力します。--output - は JSON ではなく、ファイルの中身そのものを標準出力に書きます。 |
 | --no-browser | サインインのときに、ブラウザを開きません。 |
 
---no-browser と --with-token の使い方は[サインイン](login.md)、API キーと EXPL_SERVER_TOKEN の使い方は[API キー](token.md)を参照してください。
+--no-browser と --with-token の使い方は[サインイン](/ja/cli/server/login)、API キーと EXPL_SERVER_TOKEN の使い方は[API キー](/ja/cli/server/token)を参照してください。

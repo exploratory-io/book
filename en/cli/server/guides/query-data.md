@@ -116,9 +116,9 @@ To get the rows that match a condition, use --mode rows. It needs --columns, and
 expl server dataset query <dataset_id> --mode rows --columns '["region","sales"]' --filters '{"column":"region","operator":"eq","value":"Kanto"}' --limit 10 --json
 ```
 
-operator is the comparison. The operators a data item supports are in the result of expl server dataframe get-schema \<id\> --detail full. For how to combine several conditions, see [Filter conditions](../commands.md#dataset-query-json-arguments).
+operator is the comparison. The operators a data item supports are in the result of expl server dataframe get-schema \<id\> --detail full. For how to combine several conditions, see [Filter conditions](/en/cli/server/commands#dataset-query-json-arguments).
 
-When the result is too large, save it as a CSV or Parquet file with dataframe export. To join several data items, see the [dataset query](../commands.md#dataset-query) page.
+When the result is too large, save it as a CSV or Parquet file with dataframe export. To join several data items, see the [dataset query](/en/cli/server/commands#dataset-query) page.
 
 <a id="json"></a>
 

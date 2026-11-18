@@ -8,7 +8,7 @@ You can view the raw data quickly with Table.
 
 
 ## Assignments
-* Columns - You can select which columns to show in the table. See [Column Configuration](column-configuration.md) for detail.  
+* Columns - You can select which columns to show in the table. See [Column Configuration](/en/viz/column-configuration) for detail.  
 * Number of Rows - You can select how many rows to show at the "# of Rows" control. You can also change either by showing the first rows or last rows in the data frame. 
 * Max # of Columns - You can select how many columns to show at the "Max # of Columns" control. You can choose either "300", "1,000" or "10,000". Note that if you have many columns and choose a large number here, it may slow down the table rendering. 
 * Grand Total - You can select to show or hide the grand totals. You can also choose the aggregation function for the total values. The following options are available. 
@@ -23,7 +23,7 @@ You can view the raw data quickly with Table.
 ## Formatting Columns
 
 You can change the style and formatting for each column by using the Column Format dialog. You can access the Column Format dialog by clicking the Edit icon in the Setup section in the Column Selection dialog. See 
-[Column Configuration Dialog](column-configuration-dialog.md) for mode details.
+[Column Configuration Dialog](/en/viz/column-configuration-dialog) for mode details.
 
 ![](images/table-column-format.png)
 
@@ -32,7 +32,7 @@ You can change the style and formatting for each column by using the Column Form
 ## Fit to Screen
 
 
-You can fit the table to the chart viewing area by the "Fit to Screen" option in the chart property dialog. See [Fit to Screen (Table)](table-fit-to-screen.md) for more details.
+You can fit the table to the chart viewing area by the "Fit to Screen" option in the chart property dialog. See [Fit to Screen (Table)](/en/viz/table-fit-to-screen) for more details.
 
 
 
@@ -45,4 +45,4 @@ You can search the table by typing in a keyword in the search input field. If yo
 
 ## Layout Configuration
 
-Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
+Take a look at [Layout Configuration](/en/viz/layout) on how to configure the layout and format. 

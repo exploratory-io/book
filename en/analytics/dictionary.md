@@ -10,7 +10,6 @@ There are 2 types of dictionaries.
 * Compound Word Dictionary
 
 
-## How to manage Dictionaries
 
 
 You can manage your dictionaries from the Dictionaries dialog. You can access the Dictionaries dialog from the following locations.

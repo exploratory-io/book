@@ -10,13 +10,13 @@ Use Exploratory from a terminal with the expl command. There are two sides, and 
 | What it does | Reads published content (expl server) | Reads, and also creates, changes and publishes (expl) |
 | Sign-in | You sign in with expl server login | No sign-in of its own. Start Desktop, sign in to it, and turn on the CLI in System Settings |
 
-- [Server](server/server.md) - Read content published on exploratory.io.
-- [Desktop](desktop/desktop.md) - Work with projects in Exploratory Desktop on your computer.
+- [Server](/en/cli/server/server) - Read content published on exploratory.io.
+- [Desktop](/en/cli/desktop/desktop) - Work with projects in Exploratory Desktop on your computer.
 
-For first-time use, go to Get started. For Server, sign in first ([Sign in](server/login.md)).
+For first-time use, go to Get started. For Server, sign in first ([Sign in](/en/cli/server/login)).
 
-- Desktop: [Installation](desktop/install.md), [Get started](desktop/get-started.md)
-- Server: [Installation](server/install.md), [Sign in](server/login.md), [Get started](server/get-started.md)
-- Global flags: [Server](server/global-flags.md), [Desktop](desktop/global-flags.md)
-- Exit codes and errors: [Server](server/exit-codes.md), [Desktop](desktop/exit-codes.md)
-- Updating: Desktop [Update](desktop/install.md#update), npm [Update](server/install.md#update)
+- Desktop: [Installation](/en/cli/desktop/install), [Get started](/en/cli/desktop/get-started)
+- Server: [Installation](/en/cli/server/install), [Sign in](/en/cli/server/login), [Get started](/en/cli/server/get-started)
+- Global flags: [Server](/en/cli/server/global-flags), [Desktop](/en/cli/desktop/global-flags)
+- Exit codes and errors: [Server](/en/cli/server/exit-codes), [Desktop](/en/cli/desktop/exit-codes)
+- Updating: Desktop [Update](/en/cli/desktop/install#update), npm [Update](/en/cli/server/install#update)

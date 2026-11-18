@@ -6,7 +6,7 @@ title: "コマンド一覧"
 
 書式の読み方: \<値\> は自分の値に置き換えます。\[ \] で囲んだ項目は省略できます。真偽値は --flag または --no-flag で指定します。値の配列は、--tables summary --tables table のように、フラグを繰り返して渡します。JSON の例は bash 向けの書き方です。Windows では、JSON ファイルを --input で渡すこともできます。
 
-サインインや接続に関するコマンドは、それぞれのページにあります。[サインイン](login.md)（login、logout、status）、[API キー](token.md)（token）、このページの[コマンドを調べる](#inspect-commands)（tools list、tools describe）です。expl server skill は、AI エージェント向けの説明を SKILL.md の形で出力します。
+サインインや接続に関するコマンドは、それぞれのページにあります。[サインイン](/ja/cli/server/login)（login、logout、status）、[API キー](/ja/cli/server/token)（token）、このページの[コマンドを調べる](#inspect-commands)（tools list、tools describe）です。expl server skill は、AI エージェント向けの説明を SKILL.md の形で出力します。
 
 <a id="syntax-index"></a>
 
@@ -1878,4 +1878,4 @@ expl server desktop mcp-setup-guide --json
 | --- | --- |
 | Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
-関連: [サインイン](login.md)
+関連: [サインイン](/ja/cli/server/login)

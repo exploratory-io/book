@@ -3,9 +3,8 @@ title: "Add your own custom R functions or variables with R Script"
 sidebarTitle: "Custom R Script"
 ---
 
-## Add your own custom R functions or variables with R Script
 
-You might want to use your own R functions as part of your data wrangling steps. This is an introduction for such case. If you want to write your own R functions to extract data, please refer to [Write R Script for Data](import/r-script-data.md).
+You might want to use your own R functions as part of your data wrangling steps. This is an introduction for such case. If you want to write your own R functions to extract data, please refer to [Write R Script for Data](/en/import/r-script-data).
 
 You can write your functions in an R script and register it to your project, then you can start calling the functions just like any other functions.
 
@@ -17,7 +16,7 @@ This is an example to use alpha function from [psych](https://cran.r-project.org
 
 In this example, psych is already installed as a default dependency package but the function you want to use might be from a package that we don't install as default. In that case, please install the package following this instruction.
 
-[Install R Package](r_package.md)
+[Install R Package](/en/r_package)
 
 ### Add R Script
 

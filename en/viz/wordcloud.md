@@ -7,13 +7,13 @@ title: "Word Cloud"
 ## Column Assignments
 
 * Word - Assign a column that contains words that you want to plot. 
-* Color By - Assign a column for the word colors. It can be either a categorical (text) column or numeric column. If you have NA values in a categorical column, NA will be treated as one of categories. If you have NA values in a numeric column, the corresponding words won't show up on a plot. See [Color](color-dialog.md) section for more details.
+* Color By - Assign a column for the word colors. It can be either a categorical (text) column or numeric column. If you have NA values in a categorical column, NA will be treated as one of categories. If you have NA values in a numeric column, the corresponding words won't show up on a plot. See [Color](/en/viz/color-dialog) section for more details.
 * Size - Assign a column for the word size. 
 
 
 ## Limit Values
 
-You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail.
+You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](/en/viz/limit) for the detail.
 
 ## Configuration
 
@@ -25,4 +25,4 @@ You can use Limit Values to filter the categories by the aggregated values. See 
 
 ## Save as an Image
 
-You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.
+You can save the chart as an image file. See [Save as PNG/SVG](/en/viz/save) for more details.

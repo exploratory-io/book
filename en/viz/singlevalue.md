@@ -21,7 +21,7 @@ You can rename the chart then the same name comes up as a caption.
 
 ## Custom Function
 
-You can use the Custom Function feature to define your own aggregation function. See [Custom Function](custom-function.md) for the detail.
+You can use the Custom Function feature to define your own aggregation function. See [Custom Function](/en/viz/custom-function) for the detail.
 
 
 ## Layout Configuration
@@ -29,4 +29,4 @@ You can use the Custom Function feature to define your own aggregation function.
 * Default Value - The default text value used when the data is NA. The default is '\<NA>'.
 
 
-Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
+Take a look at [Layout Configuration](/en/viz/layout) on how to configure the layout and format. 

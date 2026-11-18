@@ -2,7 +2,7 @@
 title: "Permissions and settings"
 ---
 
-What Desktop asks you first, and what you decide in Desktop. What is sent and recorded is on [Data and permissions](data.md).
+What Desktop asks you first, and what you decide in Desktop. What is sent and recorded is on [Data and permissions](/en/mcp/desktop/data).
 
 <a id="control"></a>
 
@@ -33,6 +33,6 @@ The Desktop plugin has four settings in Claude Code. Each value is the string `"
 | `ai_summary` | `"false"` | Creates and saves an AI Summary for the charts and analytics you create. |
 | `save_comments` | `"false"` | Saves an explanatory comment on the charts you create. |
 | `review_hook` | `"false"` | Asks the AI to review its work. |
-| `plan_gate` | `"true"` | When the AI uses the exploratory-analysis skill and does R work, checks that a scenario and a creation plan are saved before the create calls. See [Limits and errors](limits.md#gates). |
+| `plan_gate` | `"true"` | When the AI uses the exploratory-analysis skill and does R work, checks that a scenario and a creation plan are saved before the create calls. See [Limits and errors](/en/mcp/desktop/limits#gates). |
 
 To see or change the settings, run `claude plugin configure exploratory@exploratory`. These settings are separate from the System Settings \> MCP / CLI options above.

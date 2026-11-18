@@ -8,7 +8,7 @@ title: "トラブルシューティング"
 
 ## まず状態を確かめる
 
-expl server status を実行します。expl server tools list が終了コード 0 で終わっても、接続できているとは限りません（[コマンドを調べる](commands.md#inspect-list)を参照）。送受信の内容を見るときは、--verbose を付けます。標準エラーに出力されます。トークンは出力されませんが、貼り付ける前に、中身を確認してください。
+expl server status を実行します。expl server tools list が終了コード 0 で終わっても、接続できているとは限りません（[コマンドを調べる](/ja/cli/server/commands#inspect-list)を参照）。送受信の内容を見るときは、--verbose を付けます。標準エラーに出力されます。トークンは出力されませんが、貼り付ける前に、中身を確認してください。
 
 <a id="contact"></a>
 
@@ -32,7 +32,7 @@ IT の担当者に、exploratory.io への通信を許可してもらってく�
 | npm install -g が EEXIST で止まる | --force を付けて再実行しないでください。Exploratory Desktop に同梱されている expl が置き換わります。 |
 | どの expl が実行されているか分からない | which -a expl（Windows は where expl）で、インストールされているものをすべて確認します。 |
 
-Desktop と npm の両方にインストールしている場合の確認方法は、[インストール](install.md)を参照してください。
+Desktop と npm の両方にインストールしている場合の確認方法は、[インストール](/ja/cli/server/install)を参照してください。
 
 <a id="signin"></a>
 
@@ -46,11 +46,11 @@ Desktop と npm の両方にインストールしている場合の確認方法�
 | --token was removed. … | EXPL_SERVER_TOKEN を設定するか、expl server login --with-token を実行します。終了コード 2 です。 |
 | Too many failed API key attempts. Try again later. | このアドレスから、拒否されたキーが短い時間に何度も送られました。キーを直して、しばらくしてからやり直します。 |
 | The redirect URL has no authorization code. | --no-browser のとき、最初に表示された URL を貼り付けています。移動先の、http://127.0.0.1/callback?code= で始まる URL を貼り付けてください。 |
-| 終了コード 4（Desktop） | メッセージの末尾のコード（NOT_SIGNED_IN、UNAUTHORIZED、PAIRING_REQUIRED、CHANNEL_DISABLED、PERMISSION_DENIED）を、[終了コードとエラー](exit-codes.md#action)で確認します。 |
+| 終了コード 4（Desktop） | メッセージの末尾のコード（NOT_SIGNED_IN、UNAUTHORIZED、PAIRING_REQUIRED、CHANNEL_DISABLED、PERMISSION_DENIED）を、[終了コードとエラー](/ja/cli/server/exit-codes#action)で確認します。 |
 
 環境変数のキーから保存したログインに切り替えるときは、EXPL_SERVER_TOKEN が先に使われるので、先に unset EXPL_SERVER_TOKEN を実行してください。
 
-API キーの作り方、渡し方、取り消し方は、[API キー](token.md)を参照してください。
+API キーの作り方、渡し方、取り消し方は、[API キー](/ja/cli/server/token)を参照してください。
 
 <a id="network"></a>
 
@@ -73,7 +73,7 @@ API キーの作り方、渡し方、取り消し方は、[API キー](token.md)
 | 結果の has_more が true で、全部が返っていない | search と dataframe preview は、--offset で次のページを取得します。dataset query は、絞り込むか、集計します。 |
 | SERVER_BUSY | ほかの書き出しが実行中か、1 時間あたりの書き出しの上限に達しています。数秒おいてから再度実行します。上限に達した場合は、最大 1 時間待ちます。 |
 
-これらのエラーを返すサーバーは、MCP Server が使うサーバーと同じです。ほかに返すエラー（NOT_FOUND、PERSONALIZED_CONTENT、CONTENT_UPDATING、UNSUPPORTED_OPERATION、RESULT_TOO_LARGE）と、1 分あたりの要求回数の上限（120 回）は、MCP Server の[制限とエラー](../../mcp/server/limits.md#errors)を参照してください。
+これらのエラーを返すサーバーは、MCP Server が使うサーバーと同じです。ほかに返すエラー（NOT_FOUND、PERSONALIZED_CONTENT、CONTENT_UPDATING、UNSUPPORTED_OPERATION、RESULT_TOO_LARGE）と、1 分あたりの要求回数の上限（120 回）は、MCP Server の[制限とエラー](/ja/mcp/server/limits#errors)を参照してください。
 
 <a id="data"></a>
 
@@ -85,4 +85,4 @@ API キーの作り方、渡し方、取り消し方は、[API キー](token.md)
 | DATA_EGRESS_LIMIT | 公開した人が、このデータをファイルとしてダウンロードすることを許していません。fetch か dataframe get-schema で、公開した人が共有している内容を読みます。 |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | sort では、出力の列の名前を field で指定します。 |
 
-JSON で渡す引数の書き方は、[データを集計する](guides/query-data.md#json)を参照してください。
+JSON で渡す引数の書き方は、[データを集計する](/ja/cli/server/guides/query-data#json)を参照してください。

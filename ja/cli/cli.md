@@ -10,13 +10,13 @@ title: "Exploratory CLI"
 | できること | 公開されたコンテンツを読み取る（expl server） | 読み取りに加えて、作成、変更、公開（expl） |
 | サインイン | expl server login でサインインします | 専用のサインインはありません。Desktop を起動してサインインし、システム設定で CLI をオンにします |
 
-- [Server](server/server.md) - exploratory.io に公開されたコンテンツを読みます。
-- [Desktop](desktop/desktop.md) - このコンピューターの Exploratory Desktop のプロジェクトを扱います。
+- [Server](/ja/cli/server/server) - exploratory.io に公開されたコンテンツを読みます。
+- [Desktop](/ja/cli/desktop/desktop) - このコンピューターの Exploratory Desktop のプロジェクトを扱います。
 
-初めて使うときは、はじめるのページに進みます。Server では、先に[サインイン](server/login.md)します。
+初めて使うときは、はじめるのページに進みます。Server では、先に[サインイン](/ja/cli/server/login)します。
 
-- Desktop: [インストール](desktop/install.md)、[はじめる](desktop/get-started.md)
-- Server: [インストール](server/install.md)、[サインイン](server/login.md)、[はじめる](server/get-started.md)
-- 共通フラグ: [Server](server/global-flags.md)、[Desktop](desktop/global-flags.md)
-- 終了コードとエラー: [Server](server/exit-codes.md)、[Desktop](desktop/exit-codes.md)
-- 更新: Desktop は[更新する](desktop/install.md#update)、npm でインストールした expl は[更新する](server/install.md#update)
+- Desktop: [インストール](/ja/cli/desktop/install)、[はじめる](/ja/cli/desktop/get-started)
+- Server: [インストール](/ja/cli/server/install)、[サインイン](/ja/cli/server/login)、[はじめる](/ja/cli/server/get-started)
+- 共通フラグ: [Server](/ja/cli/server/global-flags)、[Desktop](/ja/cli/desktop/global-flags)
+- 終了コードとエラー: [Server](/ja/cli/server/exit-codes)、[Desktop](/ja/cli/desktop/exit-codes)
+- 更新: Desktop は[更新する](/ja/cli/desktop/install#update)、npm でインストールした expl は[更新する](/ja/cli/server/install#update)

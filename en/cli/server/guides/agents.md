@@ -16,7 +16,7 @@ What an AI agent should know before it runs expl server. An agent that can run s
 6. In CI, sign in with an API key through the environment variable EXPL_SERVER_TOKEN.
 7. When an error message names a tool, such as chart_query, run expl server tools describe \<tool_name\> to see the command for that tool.
 
-For listing and describing commands, see [Inspect commands](../commands.md#inspect-commands). For the exit codes, see [Exit codes and errors](../exit-codes.md). For using an API key in CI, see [Automation](automation.md).
+For listing and describing commands, see [Inspect commands](/en/cli/server/commands#inspect-commands). For the exit codes, see [Exit codes and errors](/en/cli/server/exit-codes). For using an API key in CI, see [Automation](/en/cli/server/guides/automation).
 
 <a id="choose"></a>
 
@@ -29,4 +29,4 @@ MCP is a shared standard for AI tools to connect to outside services. You can us
 | Scripts, CI, a shell-based agent | expl |
 | An agent that works through MCP | MCP Server (you register the server URL in your AI tool) |
 
-To read published content from an AI tool, see [MCP Server](../../../mcp/server/server.md). To work with projects in Exploratory Desktop, see [Use with Desktop](../../desktop/guides/agents.md).
+To read published content from an AI tool, see [MCP Server](/en/mcp/server/server). To work with projects in Exploratory Desktop, see [Use with Desktop](/en/cli/desktop/guides/agents).

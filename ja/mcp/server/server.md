@@ -21,7 +21,7 @@ AI ツールから、exploratory.io に公開されたノート、ダッシュ�
 
 - コンテンツの作成、編集、公開、削除
 - 公開されたときと違うパラメータの値での、チャートやアナリティクスの再計算
-- Exploratory Server に公開されていないものの読み取り。Exploratory Desktop の中だけにあるプロジェクトなどです。これらには、別の [Desktop の MCP](../desktop/desktop.md) を使います。
+- Exploratory Server に公開されていないものの読み取り。Exploratory Desktop の中だけにあるプロジェクトなどです。これらには、別の [Desktop の MCP](/ja/mcp/desktop/desktop) を使います。
 
 <a id="url"></a>
 
@@ -33,15 +33,15 @@ AI ツールから、exploratory.io に公開されたノート、ダッシュ�
 https://exploratory.io/mcp
 ```
 
-つなぐときは、Exploratory にサインインして、アクセスを許可します。ブラウザを開けないときは、API キーで接続します（[認証と API キー](auth.md)を参照）。
+つなぐときは、Exploratory にサインインして、アクセスを許可します。ブラウザを開けないときは、API キーで接続します（[認証と API キー](/ja/mcp/server/auth)を参照）。
 
 <a id="scope"></a>
 
 ## 読み進めるには
 
-- [はじめる](get-started.md) - AI ツールにつないで、最初の依頼まで進めます。AI ツールごとの追加手順は、[AI ツールから追加する](clients/apps.md)にあります。
-- [使い方](use.md) - AI に頼めることの例です。
-- [リファレンス](reference.md) - 使える道具、制限とエラー、データと権限を調べます。
-- [トラブルシューティング](troubleshooting.md) - 症状から対処を探します。
+- [はじめる](/ja/mcp/server/get-started) - AI ツールにつないで、最初の依頼まで進めます。AI ツールごとの追加手順は、[AI ツールから追加する](/ja/mcp/server/clients/apps)にあります。
+- [使い方](/ja/mcp/server/use) - AI に頼めることの例です。
+- [リファレンス](/ja/mcp/server/reference) - 使える道具、制限とエラー、データと権限を調べます。
+- [トラブルシューティング](/ja/mcp/server/troubleshooting) - 症状から対処を探します。
 
-あなたのコンピューターの Exploratory Desktop でプロジェクトを作り、編集するときは、[Desktop の MCP](../desktop/desktop.md) を使います。ターミナルやスクリプトから使うときは、[Exploratory CLI](../../cli/server/server.md) を参照してください。
+あなたのコンピューターの Exploratory Desktop でプロジェクトを作り、編集するときは、[Desktop の MCP](/ja/mcp/desktop/desktop) を使います。ターミナルやスクリプトから使うときは、[Exploratory CLI](/ja/cli/server/server) を参照してください。

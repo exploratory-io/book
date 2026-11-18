@@ -42,7 +42,7 @@ If you do not save, the MCP switch and the Allow create, edit and delete setting
 ### Check it in the AI tool
 
 1. When the install ends, restart that AI tool.
-2. The first time an AI tool connects, Desktop shows a window titled "An AI tool is asking for your approval". Choose Allow only for an app you started yourself. If you choose Don't allow, see [If something does not work](get-started.md#trouble).
+2. The first time an AI tool connects, Desktop shows a window titled "An AI tool is asking for your approval". Choose Allow only for an app you started yourself. If you choose Don't allow, see [If something does not work](/en/mcp/desktop/get-started#trouble).
 3. In Exploratory Desktop, open the project you want to use.
 4. In the AI tool, ask this.
 
@@ -159,4 +159,4 @@ The Desktop MCP stops when you quit Exploratory Desktop. Removing the plugin doe
 
 ## If it does not work
 
-[Troubleshooting](troubleshooting.md) lists the messages and what to do.
+[Troubleshooting](/en/mcp/desktop/troubleshooting) lists the messages and what to do.

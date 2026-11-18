@@ -6,7 +6,6 @@ Flags you can add to any command. You can place them before or after the command
 
 <a id="all"></a>
 
-## Global flags
 
 | Flag | What it does |
 | --- | --- |
@@ -40,9 +39,9 @@ A few commands are exceptions.
 
 | Variable | Used for | Order of precedence |
 | --- | --- | --- |
-| EXPL_PROJECT | The project that Desktop commands work on | --project, then EXPL_PROJECT, then the default set with expl project use. See [Choose a project](guides/projects.md). |
-| EXPL_SERVER_URL | The server that expl server calls | --url, then EXPL_SERVER_URL, then the server you signed in to most recently, then https://exploratory.io. See [The server URL](../server/login.md#url). |
-| EXPL_SERVER_TOKEN | An API key for expl server | Used before a saved login. See [API keys](../server/token.md). |
+| EXPL_PROJECT | The project that Desktop commands work on | --project, then EXPL_PROJECT, then the default set with expl project use. See [Choose a project](/en/cli/desktop/guides/projects). |
+| EXPL_SERVER_URL | The server that expl server calls | --url, then EXPL_SERVER_URL, then the server you signed in to most recently, then https://exploratory.io. See [The server URL](/en/cli/server/login#url). |
+| EXPL_SERVER_TOKEN | An API key for expl server | Used before a saved login. See [API keys](/en/cli/server/token). |
 
 <a id="completion"></a>
 

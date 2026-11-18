@@ -9,22 +9,22 @@ expl server reads the notes, dashboards and data published on exploratory.io fro
 
 ## What this is for
 
-> This page covers Exploratory Server only. For Exploratory Desktop, see [CLI Desktop](../desktop/desktop.md) and [MCP Desktop](../../mcp/desktop/desktop.md).
+> This page covers Exploratory Server only. For Exploratory Desktop, see [CLI Desktop](/en/cli/desktop/desktop) and [MCP Desktop](/en/mcp/desktop/desktop).
 >
-> To connect from an AI tool, see [MCP Server](../../mcp/server/server.md).
+> To connect from an AI tool, see [MCP Server](/en/mcp/server/server).
 
 <a id="start"></a>
 
 ## Where to go next
 
-- [Get started](get-started.md) - Install, sign in, and go as far as finding and reading data. There are also pages for [Installation](install.md), [Sign in](login.md) and [API keys](token.md).
-- [Use](use.md) - Find the commands and the guide page from what you want to do.
-- [Reference](reference.md) - Look up the commands, global flags, exit codes and errors, and data and permissions.
-- [Troubleshooting](troubleshooting.md) - Find what to do from a symptom.
+- [Get started](/en/cli/server/get-started) - Install, sign in, and go as far as finding and reading data. There are also pages for [Installation](/en/cli/server/install), [Sign in](/en/cli/server/login) and [API keys](/en/cli/server/token).
+- [Use](/en/cli/server/use) - Find the commands and the guide page from what you want to do.
+- [Reference](/en/cli/server/reference) - Look up the commands, global flags, exit codes and errors, and data and permissions.
+- [Troubleshooting](/en/cli/server/troubleshooting) - Find what to do from a symptom.
 
 <a id="ai"></a>
 
 ## Use with AI
 
-- [Use from AI agents](guides/agents.md) - Teach an AI that can run shell commands how to use expl.
-- [MCP Server](../../mcp/server/server.md) - Read published content from an AI tool.
+- [Use from AI agents](/en/cli/server/guides/agents) - Teach an AI that can run shell commands how to use expl.
+- [MCP Server](/en/mcp/server/server) - Read published content from an AI tool.

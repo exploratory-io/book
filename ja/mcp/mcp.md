@@ -10,5 +10,5 @@ MCP を通じて、AI アプリから Exploratory に接続します。接続先
 | できること | 読み取り。作成・編集・公開・削除はできません | データフレーム、加工のステップ、チャート、アナリティクス、ノート、ダッシュボードの作成と編集 |
 | 設定する場所 | AI アプリで、サーバーの URL を入力し、ブラウザーでサインインします | Exploratory Desktop の「システム設定」にある、プラグインのインストールカード |
 
-- [Server](server/server.md) - exploratory.io に公開したコンテンツを読み取ります。
-- [Desktop](desktop/desktop.md) - 手元のパソコンの Exploratory Desktop で、プロジェクトを作成・編集します。
+- [Server](/ja/mcp/server/server) - exploratory.io に公開したコンテンツを読み取ります。
+- [Desktop](/ja/mcp/desktop/desktop) - 手元のパソコンの Exploratory Desktop で、プロジェクトを作成・編集します。

@@ -16,7 +16,7 @@ Exploratory Desktop をお使いの場合、expl は同梱されています。�
 npm install -g @exploratory/cli
 ```
 
-最新のバージョンがインストールされます。バージョンを固定するときは、[インストール](install.md#npm)を参照してください。新しいターミナルを開いて、確認します。
+最新のバージョンがインストールされます。バージョンを固定するときは、[インストール](/ja/cli/server/install#npm)を参照してください。新しいターミナルを開いて、確認します。
 
 ```sh
 expl --version
@@ -24,7 +24,7 @@ expl --version
 
 > 1 行目が expl \<version\> と表示されれば、インストールは完了しています。
 
-そのほかのインストール方法や、2 つ入っているときの確認は、[インストール](install.md)を参照してください。
+そのほかのインストール方法や、2 つ入っているときの確認は、[インストール](/ja/cli/server/install)を参照してください。
 
 ### 2. サインインする
 
@@ -128,20 +128,20 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 ## うまくいかないとき
 
 - 検索結果が空です: 該当するものがなかったということで、サインインのエラーではありません。検索語を変えるか、--scope all を付けます。
-- ブラウザを開けません: ブラウザのないスクリプトや CI では、代わりに API キーでサインインします（expl server login --with-token。[API キー](token.md)を参照）。ブラウザを開けないマシンでは、[サインイン](login.md#nobrowser)を参照してください。
+- ブラウザを開けません: ブラウザのないスクリプトや CI では、代わりに API キーでサインインします（expl server login --with-token。[API キー](/ja/cli/server/token)を参照）。ブラウザを開けないマシンでは、[サインイン](/ja/cli/server/login#nobrowser)を参照してください。
 - Run "expl server login". と表示されます: サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。
 - expl: command not found と表示されます: 新しいターミナルを開いて、もう一度試します。
 - どの id を使えばよいか分かりません: 検索結果に表示された id を使います。
 - ノートで見出しの一覧（metadata.toc）が出ません: --include-toc を付けるか、--query で見出しの id を調べます。
 
-詳しくは[トラブルシューティング](troubleshooting.md)を参照してください。
+詳しくは[トラブルシューティング](/ja/cli/server/troubleshooting)を参照してください。
 
 <a id="next"></a>
 
 ## 次に読むもの
 
-- [ノートを読む](guides/read-notes.md) - 長いノートの読み方と、チャートの数値の取り方です。
-- [データを集計する](guides/query-data.md) - JSON で渡す引数の書き方です。
-- [自動処理](guides/automation.md) - API キーを作成し、CI で実行します。
-- [使い方](use.md) - やりたいことからコマンドを探します。
-- [トラブルシューティング](troubleshooting.md) - 症状から対処を探します。
+- [ノートを読む](/ja/cli/server/guides/read-notes) - 長いノートの読み方と、チャートの数値の取り方です。
+- [データを集計する](/ja/cli/server/guides/query-data) - JSON で渡す引数の書き方です。
+- [自動処理](/ja/cli/server/guides/automation) - API キーを作成し、CI で実行します。
+- [使い方](/ja/cli/server/use) - やりたいことからコマンドを探します。
+- [トラブルシューティング](/ja/cli/server/troubleshooting) - 症状から対処を探します。

@@ -36,6 +36,6 @@ You can check the "Fit to Screen" option to stretch the column width to fit the 
 
 
 
-You can lock the column width for specific columns by setting the Column Width. See [Column Configuration Dialog](column-configuration-dialog.md) for mode details.
+You can lock the column width for specific columns by setting the Column Width. See [Column Configuration Dialog](/en/viz/column-configuration-dialog) for mode details.
 
 

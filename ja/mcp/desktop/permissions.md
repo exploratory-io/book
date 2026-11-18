@@ -2,7 +2,7 @@
 title: "許可の範囲と設定"
 ---
 
-Desktop で決める設定と、確認が入る場面を説明します。送られる情報は、[データと権限](data.md)にあります。
+Desktop で決める設定と、確認が入る場面を説明します。送られる情報は、[データと権限](/ja/mcp/desktop/data)にあります。
 
 <a id="control"></a>
 
@@ -33,6 +33,6 @@ Desktop のプラグインには、Claude Code で使う設定が 4 つありま
 | `ai_summary` | `"false"` | 作成したチャートとアナリティクスの AI サマリを、作成して保存します。 |
 | `save_comments` | `"false"` | 作成したチャートに、説明のコメントを保存します。 |
 | `review_hook` | `"false"` | AI に、作業の見直しをさせます。 |
-| `plan_gate` | `"true"` | AI が exploratory-analysis スキルを使って R の作業をしたとき、作成の操作の前に、シナリオと作成計画が保存されているかを確かめます。[制限とエラー](limits.md#gates)を参照してください。 |
+| `plan_gate` | `"true"` | AI が exploratory-analysis スキルを使って R の作業をしたとき、作成の操作の前に、シナリオと作成計画が保存されているかを確かめます。[制限とエラー](/ja/mcp/desktop/limits#gates)を参照してください。 |
 
 設定の確認と変更は `claude plugin configure exploratory@exploratory` で行います。上のシステム設定 \> MCP / CLI の項目とは別の設定です。

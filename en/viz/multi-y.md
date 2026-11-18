@@ -30,4 +30,4 @@ Note that you cannot remove Y1-Axis.
 
 You cannot assign multiple columns to Y-Axis and a column for Color at the same time. As soon as you assign multiple columns to Y-Axis, the column assignment for Color will be removed if there's any, and Color control will be disabled. 
 
-But you can still change the color scheme from the Color dialog. See [Color](color.md) section for the detail about Color. 
+But you can still change the color scheme from the Color dialog. See [Color](/en/viz/color) section for the detail about Color. 

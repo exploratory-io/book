@@ -8,7 +8,7 @@ Search the data, notes and dashboards published on exploratory.io, get their ids
 
 ## Before you start
 
-You have signed in with expl server login (see [Sign in](../login.md)). A search returns only what you can view.
+You have signed in with expl server login (see [Sign in](/en/cli/server/login)). A search returns only what you can view.
 
 <a id="steps"></a>
 
@@ -54,7 +54,7 @@ expl server dataframe get-schema <id> --json
 
 Replace \<id\> with the id from the search result. fetch returns the text and the metadata of the item (for a dashboard or a note, including the charts in it). get-schema returns the column names and types of the data item, with what a row means when the publisher has approved it.
 
-To read a note, its charts and its analytics, see [Read notes](read-notes.md). To total up a data item, see [Query data](query-data.md).
+To read a note, its charts and its analytics, see [Read notes](/en/cli/server/guides/read-notes). To total up a data item, see [Query data](/en/cli/server/guides/query-data).
 
 <a id="trouble"></a>
 
@@ -63,7 +63,7 @@ To read a note, its charts and its analytics, see [Read notes](read-notes.md). T
 | What you see | What to do |
 | --- | --- |
 | The result is empty | Check the search words, then try --scope all. Try a shorter word, or --semantic. |
-| A sign-in error | Run expl server login. See [Sign in](../login.md). |
+| A sign-in error | Run expl server login. See [Sign in](/en/cli/server/login). |
 | The id is not found | Use the id of the search result as it is. A similar title is not the same item. |
 
 For the arguments of a command, run expl server \<command\> --help.
@@ -72,8 +72,8 @@ For the arguments of a command, run expl server \<command\> --help.
 
 ## Related pages
 
-- [Read notes](read-notes.md)
-- [Query data](query-data.md)
-- [Server commands](../commands.md#search)
+- [Read notes](/en/cli/server/guides/read-notes)
+- [Query data](/en/cli/server/guides/query-data)
+- [Server commands](/en/cli/server/commands#search)
 
-To do the same through MCP, see [Find data](../../../mcp/server/use.md#find).
+To do the same through MCP, see [Find data](/en/mcp/server/use#find).

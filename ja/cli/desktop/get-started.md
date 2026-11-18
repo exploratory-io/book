@@ -16,7 +16,7 @@ Exploratory Desktop を起動して、サインインします。expl は、Desk
 
 expl は Exploratory Desktop に同梱されています。CLI は初期状態ではオフで、オンにするまで、Desktop は expl のコマンドを受け付けません。
 
-Exploratory Desktop で、画面の左下にある自分の名前を選び、開いたメニューで「システム設定」を選びます。左のメニューで MCP / CLI を選び、「CLI」のカードのスイッチをオンにして、「保存」を選びます。expl でコンテンツの作成、変更、削除もしたいときは、「作成、変更、削除を許可する」にもチェックを入れます。画面の画像は[インストール](install.md#enable)のページにあります。
+Exploratory Desktop で、画面の左下にある自分の名前を選び、開いたメニューで「システム設定」を選びます。左のメニューで MCP / CLI を選び、「CLI」のカードのスイッチをオンにして、「保存」を選びます。expl でコンテンツの作成、変更、削除もしたいときは、「作成、変更、削除を許可する」にもチェックを入れます。画面の画像は[インストール](/ja/cli/desktop/install#enable)のページにあります。
 
 ### 3. バージョンと状態を確認する
 
@@ -99,13 +99,13 @@ d123 は、選んだ id に置き換えます。
 - expl tools list は終了コード 0 で終わるのに、ほかのコマンドが動きません: 終了コード 0 は、Desktop につながっている印ではありません。expl status を実行します。
 - ダッシュボードの一覧が空です: そのプロジェクトにダッシュボードがまだありません。
 
-詳しくは[トラブルシューティング](troubleshooting.md)を参照してください。
+詳しくは[トラブルシューティング](/ja/cli/desktop/troubleshooting)を参照してください。
 
 <a id="next"></a>
 
 ## 次に読むもの
 
-- [プロジェクトを選ぶ](guides/projects.md) - プロジェクトが決まる順です。
-- [使い方](use.md) - やりたいことからコマンドを探します。
-- [コマンド一覧](commands.md) - 目的からコマンドを探します。
-- [トラブルシューティング](troubleshooting.md) - 症状から対処を探します。
+- [プロジェクトを選ぶ](/ja/cli/desktop/guides/projects) - プロジェクトが決まる順です。
+- [使い方](/ja/cli/desktop/use) - やりたいことからコマンドを探します。
+- [コマンド一覧](/ja/cli/desktop/commands) - 目的からコマンドを探します。
+- [トラブルシューティング](/ja/cli/desktop/troubleshooting) - 症状から対処を探します。

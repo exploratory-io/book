@@ -53,7 +53,7 @@ Runs expl once without installing it. To run another command, replace --version 
 npm install -g @exploratory/cli@<version>
 ```
 
-Installs it globally. Replace \<version\> with the version you want. Without @\<version\>, the latest version is installed. To find a version number, see the [release notes](../../release-note.md), or run npm view @exploratory/cli version, which prints the latest.
+Installs it globally. Replace \<version\> with the version you want. Without @\<version\>, the latest version is installed. To find a version number, see the [release notes](/en/release-note), or run npm view @exploratory/cli version, which prints the latest.
 
 Always pin the version in scripts. The package is @exploratory/cli and the command it installs is expl. Do not install a package named just expl: that name belongs to someone else.
 
@@ -113,7 +113,7 @@ expl --version
 
 Replace \<version\> with the version you want. The copy that comes with Desktop is updated when you update Exploratory Desktop.
 
-For what changed in each version, see the [release notes](../../release-note.md).
+For what changed in each version, see the [release notes](/en/release-note).
 
 <a id="remove"></a>
 
@@ -125,6 +125,6 @@ Remove the npm copy with this command.
 npm uninstall -g @exploratory/cli
 ```
 
-For the copy that comes with Desktop, follow [Remove](../desktop/install.md#remove) on the Desktop installation page. Check each path first, so that you do not delete another command with the same name. Desktop adds it again at the next start while the app stays in /Applications.
+For the copy that comes with Desktop, follow [Remove](/en/cli/desktop/install#remove) on the Desktop installation page. Check each path first, so that you do not delete another command with the same name. Desktop adds it again at the next start while the app stays in /Applications.
 
-Next, [sign in](login.md), then get your first result in [Get started](get-started.md#steps). To work with Desktop on this computer, see [Use Desktop](../desktop/desktop.md).
+Next, [sign in](/en/cli/server/login), then get your first result in [Get started](/en/cli/server/get-started#steps). To work with Desktop on this computer, see [Use Desktop](/en/cli/desktop/desktop).

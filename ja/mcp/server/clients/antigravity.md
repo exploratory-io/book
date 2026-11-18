@@ -87,7 +87,7 @@ agy では、agy に戻って、次の操作をします。
 Exploratory にある「Sales Orders」のデータを探して。exploratory.io の公開データを対象に、先ほど追加した Exploratory という名前の MCP サーバーを使って。
 ```
 
-Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](../troubleshooting.md#zero)を参照してください。
+Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](/ja/mcp/server/troubleshooting#zero)を参照してください。
 
 「exploratory.io の公開データを対象に」と接続名を添えると、Desktop ではなく Server が使われます。接続名は、登録した名前に置き換えます（この画像では「Exploratory」）。画面の画像は、日本語の依頼文の例です。
 
@@ -132,7 +132,7 @@ exploratory-server と、使える道具の数（例: 「10 tools enabled」）�
 | サインインを求められる | 上のサインインの手順を、もう一度行います。 |
 | Desktop のプラグインをインストールしたが、Server の道具が表示されない | Desktop のプラグイン exploratory は、Server とは別です。上の設定で、Server を登録します。 |
 
-- [トラブルシューティング](../troubleshooting.md) - Server の MCP 全体の、症状ごとの対処です。
+- [トラブルシューティング](/ja/mcp/server/troubleshooting) - Server の MCP 全体の、症状ごとの対処です。
 
 <a id="remove"></a>
 

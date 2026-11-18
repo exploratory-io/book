@@ -53,7 +53,7 @@ npx -y @exploratory/cli --version
 npm install -g @exploratory/cli@<version>
 ```
 
-グローバルにインストールします。\<version\> は、使用するバージョン番号に置き換えます。@\<version\> を付けないと、最新のバージョンがインストールされます。バージョン番号は、[リリースノート](../../release-notes_ja.md)で調べるか、npm view @exploratory/cli version で調べます（最新のバージョンが表示されます）。
+グローバルにインストールします。\<version\> は、使用するバージョン番号に置き換えます。@\<version\> を付けないと、最新のバージョンがインストールされます。バージョン番号は、[リリースノート](/ja/release-notes_ja)で調べるか、npm view @exploratory/cli version で調べます（最新のバージョンが表示されます）。
 
 スクリプトでは、必ずバージョンを固定してください。パッケージ名は @exploratory/cli で、インストールされるコマンドは expl です。名前が expl だけのパッケージはインストールしないでください。その名前は、別の開発者のものです。
 
@@ -113,7 +113,7 @@ expl --version
 
 \<version\> は、使いたいバージョンに置き換えます。Exploratory Desktop に同梱されている expl は、Exploratory Desktop を更新すると更新されます。
 
-バージョンごとの変更点は、[リリースノート](../../release-notes_ja.md)で確認できます。
+バージョンごとの変更点は、[リリースノート](/ja/release-notes_ja)で確認できます。
 
 <a id="remove"></a>
 
@@ -125,6 +125,6 @@ npm でインストールした expl は、次のコマンドでアンインス�
 npm uninstall -g @exploratory/cli
 ```
 
-Exploratory Desktop に同梱されている expl は、Desktop のインストールのページの[アンインストール](../desktop/install.md#remove)に従います。同名のほかのコマンドを削除しないように、先に各パスを確認してください。アプリを /Applications に置いたままにすると、次回の起動時に再び追加されます。
+Exploratory Desktop に同梱されている expl は、Desktop のインストールのページの[アンインストール](/ja/cli/desktop/install#remove)に従います。同名のほかのコマンドを削除しないように、先に各パスを確認してください。アプリを /Applications に置いたままにすると、次回の起動時に再び追加されます。
 
-次は、[サインイン](login.md)してから、[はじめる](get-started.md#steps)で最初の結果を取得します。手元の Desktop を操作する場合は[Desktop を使う](../desktop/desktop.md)を参照してください。
+次は、[サインイン](/ja/cli/server/login)してから、[はじめる](/ja/cli/server/get-started#steps)で最初の結果を取得します。手元の Desktop を操作する場合は[Desktop を使う](/ja/cli/desktop/desktop)を参照してください。

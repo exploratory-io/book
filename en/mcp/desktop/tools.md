@@ -23,7 +23,7 @@ The table below shows the main tools as examples. There are many more; all of th
 
 > **Some tools change and delete**
 >
-> Some of these tools delete things, publish and unpublish, or run R code. See [Permissions and settings](permissions.md) for how Desktop asks you first.
+> Some of these tools delete things, publish and unpublish, or run R code. See [Permissions and settings](/en/mcp/desktop/permissions) for how Desktop asks you first.
 
 <a id="all-tools"></a>
 

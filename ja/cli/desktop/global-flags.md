@@ -6,7 +6,6 @@ title: "共通フラグ"
 
 <a id="all"></a>
 
-## 共通フラグ
 
 | フラグ | 内容 |
 | --- | --- |
@@ -40,9 +39,9 @@ title: "共通フラグ"
 
 | 変数 | 使いみち | 優先順位 |
 | --- | --- | --- |
-| EXPL_PROJECT | Desktop のコマンドが作業するプロジェクト | --project、EXPL_PROJECT、expl project use で決めた既定の順です。[プロジェクトを選ぶ](guides/projects.md)を参照してください。 |
-| EXPL_SERVER_URL | expl server が呼び出すサーバー | --url、EXPL_SERVER_URL、最後にサインインしたサーバー、https://exploratory.io の順です。[接続先の URL](../server/login.md#url)を参照してください。 |
-| EXPL_SERVER_TOKEN | expl server に使う API キー | 保存したログイン情報より先に使われます。[API キー](../server/token.md)を参照してください。 |
+| EXPL_PROJECT | Desktop のコマンドが作業するプロジェクト | --project、EXPL_PROJECT、expl project use で決めた既定の順です。[プロジェクトを選ぶ](/ja/cli/desktop/guides/projects)を参照してください。 |
+| EXPL_SERVER_URL | expl server が呼び出すサーバー | --url、EXPL_SERVER_URL、最後にサインインしたサーバー、https://exploratory.io の順です。[接続先の URL](/ja/cli/server/login#url)を参照してください。 |
+| EXPL_SERVER_TOKEN | expl server に使う API キー | 保存したログイン情報より先に使われます。[API キー](/ja/cli/server/token)を参照してください。 |
 
 <a id="completion"></a>
 

@@ -8,9 +8,9 @@ title: "アナリティクスを作る"
 
 ## 前提
 
-- Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](projects.md)）。expl status で確認できます。
+- Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](/ja/cli/desktop/guides/projects)）。expl status で確認できます。
 - データフレームの id と列名が分かっています（expl dataframe list、expl dataframe get-schema \<dataframe_id\>）。
-- analytics add と analytics edit は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。アナリティクスの削除は、確認が出ます。[確認と時間のかかる操作](confirmation.md)を参照してください。
+- analytics add と analytics edit は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。確認は出ません。アナリティクスの削除は、確認が出ます。[確認と時間のかかる操作](/ja/cli/desktop/guides/confirmation)を参照してください。
 
 <a id="steps"></a>
 
@@ -71,7 +71,7 @@ expl analytics edit <analytics_id> --settings @settings.json
 
 | 状況 | 対処 |
 | --- | --- |
-| PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](../exit-codes.md)を参照してください。 |
+| PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](/ja/cli/desktop/exit-codes)を参照してください。 |
 | NO_DATA_FRAME | --data-frame-id \<dataframe_id\> を付けます。 |
 | 未知の名前を指定すると拒否される | 枠や設定の名前を、expl analytics get-template で、もう一度調べます。 |
 | 枠が空 | 枠に列がないと、アナリティクスは作れません。 |
@@ -82,9 +82,9 @@ expl analytics edit <analytics_id> --settings @settings.json
 
 ## 関連するページ
 
-- [チャートを作る](create-charts.md)
-- [ノートを書く](write-notes.md)
-- [引数と JSON を渡す](input.md)
-- [Desktop のコマンド](../commands.md)
+- [チャートを作る](/ja/cli/desktop/guides/create-charts)
+- [ノートを書く](/ja/cli/desktop/guides/write-notes)
+- [引数と JSON を渡す](/ja/cli/desktop/guides/input)
+- [Desktop のコマンド](/ja/cli/desktop/commands)
 
-同じことを MCP で行う例は、[使い方](../../../mcp/desktop/use.md#examples)の「アナリティクスを作る」を参照してください。
+同じことを MCP で行う例は、[使い方](/ja/mcp/desktop/use#examples)の「アナリティクスを作る」を参照してください。
