@@ -94,7 +94,7 @@ SELECT * FROM Customers WHERE CustomerName LIKE '%@{search_string, quote=FALSE, 
 
 You can show the current parameter value on the Note / Dashboard using the `` `@{parameter_name}` `` notation like the following.
 
-![](images/en1.png)
+![](/en/parameter/images/en1.png)
 
 
 
@@ -108,7 +108,7 @@ There are 2 types of parameter pane styles on the server view.
 
 The parameter pane fits in the same view as the insight pane. 
 
-![](images/parameter-fit-mode3.png)
+![](/en/parameter/images/parameter-fit-mode3.png)
 
 
 ### Show the parameter pane on top of the pane
@@ -116,7 +116,7 @@ The parameter pane fits in the same view as the insight pane.
 The parameter pane shows up on the top of the insight pane. 
 
 
-![](images/parameter-fit-mode4.png)
+![](/en/parameter/images/parameter-fit-mode4.png)
 
 
 
@@ -124,12 +124,12 @@ The parameter pane shows up on the top of the insight pane.
 
 You can change the style from the Parameter Setting dialog on the server view. You can select the "Parameter Setting" from the menu to open the dialog.
 
-![](images/parameter-fit-mode1.png)
+![](/en/parameter/images/parameter-fit-mode1.png)
 
 You can change the "Show the parameter pane on top of the pane" checkbox and click the "Update" button to change the style.
 
 
-![](images/parameter-fit-mode2.png)
+![](/en/parameter/images/parameter-fit-mode2.png)
 
 
 

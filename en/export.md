@@ -8,18 +8,18 @@ You can export data in various formats either by clicking 'Export' button at the
 
 **At the top of Summary / Table view**
 
-![](images/export.png)
+![](/en/export/images/export.png)
 
 **At the data wrangling step**
 
-![](images/export2.png)
+![](/en/export/images/export2.png)
 
 In this case, the exported data is based on the step you clicked the export button for.
 
 
 ## Standard Options
 
-![](images/export_data.png)
+![](/en/export/images/export_data.png)
 
 Following options are always available.
 
@@ -68,7 +68,7 @@ If you want to create an environment on a different machine (Windows or Mac) whe
 
 ## Chart Options
 
-![](images/export_viz1.png)
+![](/en/export/images/export_viz1.png)
 
 In addition to the standard options, if you are in the chart view, you have chart specific options depending on the chart type.
 
@@ -85,7 +85,7 @@ You can export your chart and data to an EDF (Exploratory Data Format) file. It 
 
 ## Pivot Options
 
-![](images/export_pivot.png)
+![](/en/export/images/export_pivot.png)
 
 In addition to the standard options, if you are in a chart view and viewing a Pivot Table, you have following Pivot Table specific options.
 

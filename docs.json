@@ -59,7 +59,7 @@
                       },
                       "en/mcp/server/troubleshooting"
                     ],
-                    "root": "en/mcp/server/index"
+                    "root": "en/mcp/server"
                   },
                   {
                     "group": "Desktop",
@@ -84,10 +84,10 @@
                       },
                       "en/mcp/desktop/troubleshooting"
                     ],
-                    "root": "en/mcp/desktop/index"
+                    "root": "en/mcp/desktop"
                   }
                 ],
-                "root": "en/mcp/index"
+                "root": "en/mcp"
               },
               {
                 "group": "Exploratory CLI",
@@ -130,7 +130,7 @@
                       },
                       "en/cli/server/troubleshooting"
                     ],
-                    "root": "en/cli/server/index"
+                    "root": "en/cli/server"
                   },
                   {
                     "group": "Desktop",
@@ -171,24 +171,24 @@
                       },
                       "en/cli/desktop/troubleshooting"
                     ],
-                    "root": "en/cli/desktop/index"
+                    "root": "en/cli/desktop"
                   }
                 ],
-                "root": "en/cli/index"
+                "root": "en/cli"
               },
               {
                 "group": "Product Features",
                 "pages": [
                   "en/summary/summary",
-                  "en/table/index",
+                  "en/table",
                   "en/table/row_filter",
                   "en/table/column_filter",
                   "en/markdown/markdown-dashboard",
                   "en/markdown/markdown-note",
                   "en/steps",
-                  "en/branch/index",
-                  "en/parameter/index",
-                  "en/export/index",
+                  "en/branch",
+                  "en/parameter",
+                  "en/export",
                   {
                     "group": "Share",
                     "pages": [
@@ -201,7 +201,7 @@
                       "en/share/restore",
                       "en/share/csvapi"
                     ],
-                    "root": "en/share/index"
+                    "root": "en/share"
                   },
                   {
                     "group": "Schedule",
@@ -210,14 +210,14 @@
                       "en/schedule/notification",
                       "en/schedule/history"
                     ],
-                    "root": "en/schedule/index"
+                    "root": "en/schedule"
                   },
                   {
                     "group": "Team",
                     "pages": [
                       "en/team/manage"
                     ],
-                    "root": "en/team/index"
+                    "root": "en/team"
                   },
                   {
                     "group": "Project",
@@ -236,7 +236,7 @@
                 "pages": [
                   "en/ai/ai-promtpt-function-en"
                 ],
-                "root": "en/ai/index"
+                "root": "en/ai"
               },
               {
                 "group": "Data Import",
@@ -633,7 +633,7 @@
                       },
                       "ja/mcp/server/troubleshooting"
                     ],
-                    "root": "ja/mcp/server/index"
+                    "root": "ja/mcp/server"
                   },
                   {
                     "group": "Desktop",
@@ -658,10 +658,10 @@
                       },
                       "ja/mcp/desktop/troubleshooting"
                     ],
-                    "root": "ja/mcp/desktop/index"
+                    "root": "ja/mcp/desktop"
                   }
                 ],
-                "root": "ja/mcp/index"
+                "root": "ja/mcp"
               },
               {
                 "group": "Exploratory CLI",
@@ -704,7 +704,7 @@
                       },
                       "ja/cli/server/troubleshooting"
                     ],
-                    "root": "ja/cli/server/index"
+                    "root": "ja/cli/server"
                   },
                   {
                     "group": "Desktop",
@@ -745,17 +745,17 @@
                       },
                       "ja/cli/desktop/troubleshooting"
                     ],
-                    "root": "ja/cli/desktop/index"
+                    "root": "ja/cli/desktop"
                   }
                 ],
-                "root": "ja/cli/index"
+                "root": "ja/cli"
               },
               {
                 "group": "製品の機能",
                 "pages": [
                   "ja/markdown/markdown-dashboard",
                   "ja/markdown/markdown-note",
-                  "ja/parameter/index",
+                  "ja/parameter",
                   {
                     "group": "共有",
                     "pages": [
@@ -765,7 +765,7 @@
                       "ja/share/restore",
                       "ja/share/csvapi"
                     ],
-                    "root": "ja/share/index"
+                    "root": "ja/share"
                   },
                   {
                     "group": "スケジュールに関するよくある問題と解決法",
@@ -774,14 +774,14 @@
                       "ja/schedule/notification",
                       "ja/schedule/history"
                     ],
-                    "root": "ja/schedule/index"
+                    "root": "ja/schedule"
                   },
                   {
                     "group": "チーム",
                     "pages": [
                       "ja/team/manage"
                     ],
-                    "root": "ja/team/index"
+                    "root": "ja/team"
                   }
                 ],
                 "root": "ja/product-features"

@@ -14,21 +14,21 @@ The following blog posts talk about more detail and some use cases.
 
 You can click 'more (three lines)' menu in any data wrangling step at right hand side and select 'Create Branch' to create a branch.
 
-![](images/create_branch.png)
+![](/en/branch/images/create_branch.png)
 
 You can type a branch name in a pop-up.
 
-![](images/branch_name.png)
+![](/en/branch/images/branch_name.png)
 
 You can start adding your data wangling step by either clicking on the "Plus" icon on the left of the command input area or clicking on the 'Plus' icon in the last Step box.
 
-![](images/new_step.png)
+![](/en/branch/images/new_step.png)
 
 ## Delete Branch
 
 You can delete a branch by clicking on 'Delete' menu under the 'more (three lines)' icon on the Data Frames tree on the lefthand-side.
 
-![](images/delete_branch.png)
+![](/en/branch/images/delete_branch.png)
 
 ## Join with Branch / Filter with Branch
 
@@ -36,7 +36,7 @@ You can join the branch data to the main data frame or to other data frames. Let
 
 Here's a Top 10 flights for each carrier in a branch 'Top10'.
 
-![](images/top10_branch.png)
+![](/en/branch/images/top10_branch.png)
 
 ### Use semi_join command to filter
 
@@ -44,7 +44,7 @@ Here's a Top 10 flights for each carrier in a branch 'Top10'.
 semi_join(Top10, by=c("CARRIER" = "CARRIER", "FL_NUM" = "FL_NUM"))
 ```
 
-![](images/semi_join.png)
+![](/en/branch/images/semi_join.png)
 
 
 ### Use filter command to filter
@@ -53,4 +53,4 @@ semi_join(Top10, by=c("CARRIER" = "CARRIER", "FL_NUM" = "FL_NUM"))
 filter(FL_NUM  %in% Top10$FL_NUM)
 ```
 
-![](images/filter.png)
+![](/en/branch/images/filter.png)
