@@ -1,0 +1,9 @@
+/* Put the language switcher at the top right of the header, as on the GitBook site. */
+@media (min-width: 1024px) {
+  #navbar div:has(> #localization-select-trigger) {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

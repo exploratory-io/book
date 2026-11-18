@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "aspen",
   "name": "Exploratory",
   "colors": {
     "primary": "#00ab6d",
@@ -19,168 +19,163 @@
           {
             "group": "Exploratory",
             "pages": [
-              "en/index"
-            ]
-          },
-          {
-            "group": "Exploratory MCP",
-            "pages": [
+              "en/index",
               {
-                "group": "Server",
+                "group": "Exploratory MCP",
                 "pages": [
                   {
-                    "group": "Get started",
+                    "group": "Server",
                     "pages": [
                       {
-                        "group": "Add from an AI tool",
+                        "group": "Get started",
                         "pages": [
-                          "en/mcp/server/clients/claude",
-                          "en/mcp/server/clients/chatgpt",
-                          "en/mcp/server/clients/antigravity",
-                          "en/mcp/server/clients/grok-bot",
-                          "en/mcp/server/clients/claude-code",
-                          "en/mcp/server/clients/codex",
-                          "en/mcp/server/clients/cursor",
-                          "en/mcp/server/clients/other"
+                          {
+                            "group": "Add from an AI tool",
+                            "pages": [
+                              "en/mcp/server/clients/claude",
+                              "en/mcp/server/clients/chatgpt",
+                              "en/mcp/server/clients/antigravity",
+                              "en/mcp/server/clients/grok-bot",
+                              "en/mcp/server/clients/claude-code",
+                              "en/mcp/server/clients/codex",
+                              "en/mcp/server/clients/cursor",
+                              "en/mcp/server/clients/other"
+                            ],
+                            "root": "en/mcp/server/clients/apps"
+                          },
+                          "en/mcp/server/auth"
                         ],
-                        "root": "en/mcp/server/clients/apps"
+                        "root": "en/mcp/server/get-started"
                       },
-                      "en/mcp/server/auth"
+                      "en/mcp/server/use",
+                      {
+                        "group": "Reference",
+                        "pages": [
+                          "en/mcp/server/tools",
+                          "en/mcp/server/limits",
+                          "en/mcp/server/data"
+                        ],
+                        "root": "en/mcp/server/reference"
+                      },
+                      "en/mcp/server/troubleshooting"
                     ],
-                    "root": "en/mcp/server/get-started"
+                    "root": "en/mcp/server/server"
                   },
-                  "en/mcp/server/use",
                   {
-                    "group": "Reference",
+                    "group": "Desktop",
                     "pages": [
-                      "en/mcp/server/tools",
-                      "en/mcp/server/limits",
-                      "en/mcp/server/data"
+                      {
+                        "group": "Get started",
+                        "pages": [
+                          "en/mcp/desktop/install",
+                          "en/mcp/desktop/permissions"
+                        ],
+                        "root": "en/mcp/desktop/get-started"
+                      },
+                      "en/mcp/desktop/use",
+                      {
+                        "group": "Reference",
+                        "pages": [
+                          "en/mcp/desktop/tools",
+                          "en/mcp/desktop/limits",
+                          "en/mcp/desktop/data"
+                        ],
+                        "root": "en/mcp/desktop/reference"
+                      },
+                      "en/mcp/desktop/troubleshooting"
                     ],
-                    "root": "en/mcp/server/reference"
-                  },
-                  "en/mcp/server/troubleshooting"
+                    "root": "en/mcp/desktop/desktop"
+                  }
                 ],
-                "root": "en/mcp/server/server"
+                "root": "en/mcp/mcp"
               },
               {
-                "group": "Desktop",
+                "group": "Exploratory CLI",
                 "pages": [
                   {
-                    "group": "Get started",
+                    "group": "Server",
                     "pages": [
-                      "en/mcp/desktop/install",
-                      "en/mcp/desktop/permissions"
+                      {
+                        "group": "Get started",
+                        "pages": [
+                          "en/cli/server/install",
+                          "en/cli/server/login",
+                          "en/cli/server/token"
+                        ],
+                        "root": "en/cli/server/get-started"
+                      },
+                      {
+                        "group": "Use",
+                        "pages": [
+                          "en/cli/server/guides/find-data",
+                          "en/cli/server/guides/read-notes",
+                          "en/cli/server/guides/query-data",
+                          "en/cli/server/guides/dashboard-charts",
+                          "en/cli/server/guides/analytics",
+                          "en/cli/server/guides/export",
+                          "en/cli/server/guides/automation",
+                          "en/cli/server/guides/agents"
+                        ],
+                        "root": "en/cli/server/use"
+                      },
+                      {
+                        "group": "Reference",
+                        "pages": [
+                          "en/cli/server/commands",
+                          "en/cli/server/global-flags",
+                          "en/cli/server/exit-codes",
+                          "en/cli/server/data"
+                        ],
+                        "root": "en/cli/server/reference"
+                      },
+                      "en/cli/server/troubleshooting"
                     ],
-                    "root": "en/mcp/desktop/get-started"
+                    "root": "en/cli/server/server"
                   },
-                  "en/mcp/desktop/use",
                   {
-                    "group": "Reference",
+                    "group": "Desktop",
                     "pages": [
-                      "en/mcp/desktop/tools",
-                      "en/mcp/desktop/limits",
-                      "en/mcp/desktop/data"
+                      {
+                        "group": "Get started",
+                        "pages": [
+                          "en/cli/desktop/install",
+                          "en/cli/desktop/guides/projects"
+                        ],
+                        "root": "en/cli/desktop/get-started"
+                      },
+                      {
+                        "group": "Use",
+                        "pages": [
+                          "en/cli/desktop/guides/wrangle-data",
+                          "en/cli/desktop/guides/create-charts",
+                          "en/cli/desktop/guides/create-analytics",
+                          "en/cli/desktop/guides/write-notes",
+                          "en/cli/desktop/guides/duplicate-dashboard",
+                          "en/cli/desktop/guides/publish",
+                          "en/cli/desktop/guides/agents"
+                        ],
+                        "root": "en/cli/desktop/use"
+                      },
+                      {
+                        "group": "Reference",
+                        "pages": [
+                          "en/cli/desktop/commands",
+                          "en/cli/desktop/global-flags",
+                          "en/cli/desktop/guides/input",
+                          "en/cli/desktop/guides/output",
+                          "en/cli/desktop/guides/confirmation",
+                          "en/cli/desktop/exit-codes",
+                          "en/cli/desktop/data"
+                        ],
+                        "root": "en/cli/desktop/reference"
+                      },
+                      "en/cli/desktop/troubleshooting"
                     ],
-                    "root": "en/mcp/desktop/reference"
-                  },
-                  "en/mcp/desktop/troubleshooting"
+                    "root": "en/cli/desktop/desktop"
+                  }
                 ],
-                "root": "en/mcp/desktop/desktop"
-              }
-            ],
-            "root": "en/mcp/mcp"
-          },
-          {
-            "group": "Exploratory CLI",
-            "pages": [
-              {
-                "group": "Server",
-                "pages": [
-                  {
-                    "group": "Get started",
-                    "pages": [
-                      "en/cli/server/install",
-                      "en/cli/server/login",
-                      "en/cli/server/token"
-                    ],
-                    "root": "en/cli/server/get-started"
-                  },
-                  {
-                    "group": "Use",
-                    "pages": [
-                      "en/cli/server/guides/find-data",
-                      "en/cli/server/guides/read-notes",
-                      "en/cli/server/guides/query-data",
-                      "en/cli/server/guides/dashboard-charts",
-                      "en/cli/server/guides/analytics",
-                      "en/cli/server/guides/export",
-                      "en/cli/server/guides/automation",
-                      "en/cli/server/guides/agents"
-                    ],
-                    "root": "en/cli/server/use"
-                  },
-                  {
-                    "group": "Reference",
-                    "pages": [
-                      "en/cli/server/commands",
-                      "en/cli/server/global-flags",
-                      "en/cli/server/exit-codes",
-                      "en/cli/server/data"
-                    ],
-                    "root": "en/cli/server/reference"
-                  },
-                  "en/cli/server/troubleshooting"
-                ],
-                "root": "en/cli/server/server"
+                "root": "en/cli/cli"
               },
-              {
-                "group": "Desktop",
-                "pages": [
-                  {
-                    "group": "Get started",
-                    "pages": [
-                      "en/cli/desktop/install",
-                      "en/cli/desktop/guides/projects"
-                    ],
-                    "root": "en/cli/desktop/get-started"
-                  },
-                  {
-                    "group": "Use",
-                    "pages": [
-                      "en/cli/desktop/guides/wrangle-data",
-                      "en/cli/desktop/guides/create-charts",
-                      "en/cli/desktop/guides/create-analytics",
-                      "en/cli/desktop/guides/write-notes",
-                      "en/cli/desktop/guides/duplicate-dashboard",
-                      "en/cli/desktop/guides/publish",
-                      "en/cli/desktop/guides/agents"
-                    ],
-                    "root": "en/cli/desktop/use"
-                  },
-                  {
-                    "group": "Reference",
-                    "pages": [
-                      "en/cli/desktop/commands",
-                      "en/cli/desktop/global-flags",
-                      "en/cli/desktop/guides/input",
-                      "en/cli/desktop/guides/output",
-                      "en/cli/desktop/guides/confirmation",
-                      "en/cli/desktop/exit-codes",
-                      "en/cli/desktop/data"
-                    ],
-                    "root": "en/cli/desktop/reference"
-                  },
-                  "en/cli/desktop/troubleshooting"
-                ],
-                "root": "en/cli/desktop/desktop"
-              }
-            ],
-            "root": "en/cli/cli"
-          },
-          {
-            "group": "Exploratory",
-            "pages": [
               "en/product-features",
               "en/summary/summary",
               "en/table/table",
@@ -191,375 +186,370 @@
               "en/steps",
               "en/branch/branch",
               "en/parameter/parameter",
-              "en/export/export"
-            ]
-          },
-          {
-            "group": "Share",
-            "pages": [
-              "en/share/share_type",
-              "en/share/chart",
-              "en/share/data",
-              "en/share/note",
-              "en/share/notification",
-              "en/share//version-history",
-              "en/share/restore",
-              "en/share/csvapi"
-            ],
-            "root": "en/share/share"
-          },
-          {
-            "group": "Schedule",
-            "pages": [
-              "en/schedule/manage",
-              "en/schedule/notification",
-              "en/schedule/history"
-            ],
-            "root": "en/schedule/schedule"
-          },
-          {
-            "group": "Team",
-            "pages": [
-              "en/team/manage"
-            ],
-            "root": "en/team/team"
-          },
-          {
-            "group": "Project",
-            "pages": [
-              "en/project/import",
-              "en/project/export",
-              "en/project/search"
-            ],
-            "root": "en/project"
-          },
-          {
-            "group": "AI",
-            "pages": [
-              "en/ai/ai-promtpt-function-en"
-            ],
-            "root": "en/ai/ai"
-          },
-          {
-            "group": "Data Import",
-            "pages": [
+              "en/export/export",
               {
-                "group": "File Data",
+                "group": "Share",
                 "pages": [
-                  "en/import/csv",
-                  "en/import/s3",
-                  "en/import/google-drive",
-                  "en/import/google-cloud-storage",
-                  "en/import/excel",
-                  "en/import/json",
-                  "en/import/log",
-                  "en/import/azure",
-                  "en/import/stats",
-                  "en/import/rds",
-                  "en/import/parquet",
-                  "en/import/exploratory"
+                  "en/share/share_type",
+                  "en/share/chart",
+                  "en/share/data",
+                  "en/share/note",
+                  "en/share/notification",
+                  "en/share//version-history",
+                  "en/share/restore",
+                  "en/share/csvapi"
                 ],
-                "root": "en/file-data"
+                "root": "en/share/share"
               },
               {
-                "group": "Database Data",
+                "group": "Schedule",
                 "pages": [
-                  "en/import/connection.html",
-                  "en/import/athena",
-                  "en/import/aurora",
-                  "en/import/redshift",
-                  "en/import/google-bigquery",
-                  "en/import/hp-vertica",
-                  "en/import/mysql",
-                  "en/import/access",
-                  "en/import/mongodb",
-                  "en/import/odbc",
-                  "en/import/oracle",
-                  "en/import/oracle-oci",
-                  "en/import/postgresql",
-                  "en/import/presto",
-                  "en/import/snowflake",
-                  "en/import/sqlserver",
-                  "en/import/mssqlserver",
-                  "en/import/teradata",
-                  "en/import/treasuredata"
+                  "en/schedule/manage",
+                  "en/schedule/notification",
+                  "en/schedule/history"
                 ],
-                "root": "en/database-data"
+                "root": "en/schedule/schedule"
               },
               {
-                "group": "Cloud Apps Data",
+                "group": "Team",
                 "pages": [
-                  "en/import/connection-cloud-apps",
-                  "en/import/fred",
-                  "en/import/github",
-                  "en/import/google-analytics",
-                  "en/import/google-sheet",
-                  "en/import/salesforce",
-                  "en/import/twitter",
-                  "en/import/stripe",
-                  "en/import/weather",
-                  "en/import/stock-price",
-                  "en/import/reinfolib",
-                  "en/import/estat",
-                  "en/import/edinet",
-                  "en/import/api"
+                  "en/team/manage"
                 ],
-                "root": "en/cloud-apps-data"
+                "root": "en/team/team"
               },
               {
-                "group": "Write R Script as Data",
+                "group": "Project",
                 "pages": [
-                  "en/import/currency"
+                  "en/project/import",
+                  "en/project/export",
+                  "en/project/search"
                 ],
-                "root": "en/import/r-script-data"
+                "root": "en/project"
               },
-              "en/import/web-scraping",
-              "en/import/free-input-text",
-              "en/import/extensions",
-              "en/import/quandl",
-              "en/import/holiday",
-              "en/import/tidyrss",
-              "en/import/user-defined-plugin"
-            ],
-            "root": "en/data_import"
-          },
-          {
-            "group": "Data Wrangling",
-            "pages": [
-              "en/wrangling/command-mode",
-              "en/wrangling/select",
-              "en/wrangling/reorder",
-              "en/wrangling/mutate",
-              "en/wrangling/mutate_at",
-              "en/wrangling/summarize",
-              "en/wrangling/group",
-              "en/wrangling/filter",
-              "en/wrangling/rename",
-              "en/wrangling/arrange",
-              "en/wrangling/top_n",
-              "en/wrangling/join",
-              "en/wrangling/merge",
-              "en/wrangling/gather",
-              "en/wrangling/spread",
-              "en/wrangling/pivot",
-              "en/wrangling/expand",
-              "en/wrangling/complete",
-              "en/wrangling/separate",
-              "en/wrangling/unite",
-              "en/wrangling/bind_rows",
-              "en/wrangling/bind_columns",
-              "en/wrangling/distinct",
-              "en/wrangling/get_dupes",
-              "en/wrangling/slice",
-              "en/wrangling/drop_na",
-              "en/wrangling/sample",
-              "en/wrangling/impute_na",
-              "en/wrangling/fill",
-              "en/wrangling/buckets",
-              "en/wrangling/recode",
-              "en/wrangling/case_when",
-              "en/wrangling/categories",
-              "en/wrangling/type-convert",
-              "en/wrangling/row_as_header",
-              "en/wrangling/ungroup",
-              "en/wrangling/unnest",
-              "en/wrangling/unnest_wider",
-              "en/wrangling/unnest_longer",
-              "en/wrangling/separate-japanese-address",
-              "en/wrangling/hoist",
-              "en/wrangling/remove_empty_rows",
-              "en/wrangling/remove_empty_cols",
-              "en/wrangling/clean_names",
-              "en/wrangling/window-calculation",
-              "en/wrangling/add_row",
-              "en/wrangling/text_wrangling",
-              "en/wrangling/regular_expression"
-            ],
-            "root": "en/data-wrangling"
-          },
-          {
-            "group": "Visualization",
-            "pages": [
-              "en/viz/pivot",
-              "en/viz/summarize-table",
-              "en/viz/table",
-              "en/viz/bar",
-              "en/viz/line",
-              "en/viz/area",
-              "en/viz/pie",
-              "en/viz/radar",
-              "en/viz/hist",
-              "en/viz/densityplot",
-              "en/viz/scatter",
-              "en/viz/bubble",
-              "en/viz/boxplot",
-              "en/viz/violin",
-              "en/viz/errbar",
-              "en/viz/errbar-agg",
-              "en/viz/easymap",
-              "en/viz/geojson",
-              "en/viz/map",
-              "en/viz/maphmap",
-              "en/viz/heatmap",
-              "en/viz/contour",
-              "en/viz/singlevalue",
-              "en/viz/wordcloud",
-              "en/viz/r-custom",
-              "en/viz/trend-line",
-              "en/viz/reference-line",
-              "en/viz/small-multiple",
-              "en/viz/window-calc",
-              "en/viz/date-aggregate",
-              "en/viz/range",
-              "en/viz/marker",
-              "en/viz/multi-y",
-              "en/viz/layout",
-              "en/viz/column-configuration",
-              "en/viz/column-configuration-dialog",
-              "en/viz/color",
-              "en/viz/color-dialog",
-              "en/viz/custom-palette",
-              "en/viz/pin",
-              "en/viz/save",
-              "en/viz/save-as-edf",
-              "en/viz/schedule",
-              "en/viz/urllink",
-              "en/viz/category",
-              "en/viz/highlight",
-              "en/viz/limit",
-              "en/viz/others-group",
-              "en/viz/edit-display-name",
-              "en/viz/missing-value-handling",
-              "en/viz/rename-column-names",
-              "en/viz/dualy-setting",
-              "en/viz/axis-format",
-              "en/viz/show-detail",
-              "en/viz/table-fit-to-screen",
-              "en/viz/number-of-unuque-values-check"
-            ],
-            "root": "en/visualization"
-          },
-          {
-            "group": "Analytics",
-            "pages": [
-              "en/analytics/correlation_column",
-              "en/analytics/distance_column",
-              "en/analytics/kmeans",
-              "en/analytics/kmodes",
-              "en/analytics/pca",
-              "en/analytics/factanal",
-              "en/analytics/correspondence",
-              "en/analytics/regression",
-              "en/analytics/logistic",
-              "en/analytics/ordered_logistic_regression",
-              "en/analytics/glm",
-              "en/analytics/survival",
-              "en/analytics/var_importance_time",
-              "en/analytics/survival_forest",
-              "en/analytics/decision_tree",
-              "en/analytics/chaid",
-              "en/analytics/var_importance",
-              "en/analytics/xgboost",
-              "en/analytics/lightgbm",
-              "en/analytics/forecasting",
-              "en/analytics/arima",
-              "en/analytics/time_series_clustering",
-              "en/analytics/anomaly",
-              "en/analytics/textanal",
-              "en/analytics/topic_model",
-              "en/analytics/market_basket",
-              "en/analytics/t_test",
-              "en/analytics/t_test_aggregated",
-              "en/analytics/anova",
-              "en/analytics/wilcoxon",
-              "en/analytics/kruskal_wallis",
-              "en/analytics/chisq",
-              "en/analytics/ab_test",
-              "en/analytics/normality",
-              "en/analytics/cronbach-alpha",
-              "en/analytics/prediction",
-              "en/analytics/dictionary"
-            ],
-            "root": "en/analytics"
-          },
-          {
-            "group": "Statistics",
-            "pages": [
-              "en/stats/correlation",
-              "en/stats/dist",
-              "en/stats/sim",
-              "en/stats/svd",
-              "en/stats/mds",
-              "en/stats/t-test",
-              "en/stats/f-test",
-              "en/stats/chi-test",
-              "en/stats/exp_bayes_ab"
-            ],
-            "root": "en/statistics"
-          },
-          {
-            "group": "Machine Learning",
-            "pages": [
-              "en/ml/linear-regression",
-              "en/ml/logistic-regression",
-              "en/ml/glm",
-              "en/ml/multinom",
-              "en/ml/kmeans",
-              "en/ml/random-forest",
-              "en/ml/xgboost",
-              "en/ml/forecasting",
-              "en/ml/timeseries_clustering",
-              "en/ml/anomaly",
-              "en/ml/survival-curv",
-              "en/ml/cox-regression",
-              "en/ml/arules",
-              "en/ml/causal_impact",
-              "en/ml/evaluate_regression",
-              "en/ml/evaluate_binary",
-              "en/ml/do_roc",
-              "en/ml/evaluate_multi",
-              "en/ml/prediction",
-              "en/ml/prediction_binary",
-              "en/ml/prediction_coxph",
-              "en/ml/prediction_survfit",
-              "en/ml/model_stats",
-              "en/ml/model_coef",
-              "en/ml/model_anova",
-              "en/wrangling/smote"
-            ],
-            "root": "en/machine-learning"
-          },
-          {
-            "group": "Text Analysis",
-            "pages": [
-              "en/text/do_tokenize",
-              "en/text/do_ngram",
-              "en/text/do_tfidf",
-              "en/text/pair_count"
-            ],
-            "root": "en/text/main"
-          },
-          {
-            "group": "Extend with R",
-            "pages": [
-              "en/r_package",
-              "en/r_script",
-              "en/user-defined-model-function",
-              "en/howto/stopmcafee",
-              "en/howto/set_exploratory_home",
-              "en/howto/holiday",
-              "en/howto/install_errors",
-              "en/howto/upgrade_dot_net",
-              "en/debug_log",
-              "en/startup_log",
-              "en/version_check",
-              "en/history_error_recovery"
-            ],
-            "root": "en/extend-with-r"
-          },
-          {
-            "group": "Exploratory",
-            "pages": [
+              {
+                "group": "AI",
+                "pages": [
+                  "en/ai/ai-promtpt-function-en"
+                ],
+                "root": "en/ai/ai"
+              },
+              {
+                "group": "Data Import",
+                "pages": [
+                  {
+                    "group": "File Data",
+                    "pages": [
+                      "en/import/csv",
+                      "en/import/s3",
+                      "en/import/google-drive",
+                      "en/import/google-cloud-storage",
+                      "en/import/excel",
+                      "en/import/json",
+                      "en/import/log",
+                      "en/import/azure",
+                      "en/import/stats",
+                      "en/import/rds",
+                      "en/import/parquet",
+                      "en/import/exploratory"
+                    ],
+                    "root": "en/file-data"
+                  },
+                  {
+                    "group": "Database Data",
+                    "pages": [
+                      "en/import/connection.html",
+                      "en/import/athena",
+                      "en/import/aurora",
+                      "en/import/redshift",
+                      "en/import/google-bigquery",
+                      "en/import/hp-vertica",
+                      "en/import/mysql",
+                      "en/import/access",
+                      "en/import/mongodb",
+                      "en/import/odbc",
+                      "en/import/oracle",
+                      "en/import/oracle-oci",
+                      "en/import/postgresql",
+                      "en/import/presto",
+                      "en/import/snowflake",
+                      "en/import/sqlserver",
+                      "en/import/mssqlserver",
+                      "en/import/teradata",
+                      "en/import/treasuredata"
+                    ],
+                    "root": "en/database-data"
+                  },
+                  {
+                    "group": "Cloud Apps Data",
+                    "pages": [
+                      "en/import/connection-cloud-apps",
+                      "en/import/fred",
+                      "en/import/github",
+                      "en/import/google-analytics",
+                      "en/import/google-sheet",
+                      "en/import/salesforce",
+                      "en/import/twitter",
+                      "en/import/stripe",
+                      "en/import/weather",
+                      "en/import/stock-price",
+                      "en/import/reinfolib",
+                      "en/import/estat",
+                      "en/import/edinet",
+                      "en/import/api"
+                    ],
+                    "root": "en/cloud-apps-data"
+                  },
+                  {
+                    "group": "Write R Script as Data",
+                    "pages": [
+                      "en/import/currency"
+                    ],
+                    "root": "en/import/r-script-data"
+                  },
+                  "en/import/web-scraping",
+                  "en/import/free-input-text",
+                  "en/import/extensions",
+                  "en/import/quandl",
+                  "en/import/holiday",
+                  "en/import/tidyrss",
+                  "en/import/user-defined-plugin"
+                ],
+                "root": "en/data_import"
+              },
+              {
+                "group": "Data Wrangling",
+                "pages": [
+                  "en/wrangling/command-mode",
+                  "en/wrangling/select",
+                  "en/wrangling/reorder",
+                  "en/wrangling/mutate",
+                  "en/wrangling/mutate_at",
+                  "en/wrangling/summarize",
+                  "en/wrangling/group",
+                  "en/wrangling/filter",
+                  "en/wrangling/rename",
+                  "en/wrangling/arrange",
+                  "en/wrangling/top_n",
+                  "en/wrangling/join",
+                  "en/wrangling/merge",
+                  "en/wrangling/gather",
+                  "en/wrangling/spread",
+                  "en/wrangling/pivot",
+                  "en/wrangling/expand",
+                  "en/wrangling/complete",
+                  "en/wrangling/separate",
+                  "en/wrangling/unite",
+                  "en/wrangling/bind_rows",
+                  "en/wrangling/bind_columns",
+                  "en/wrangling/distinct",
+                  "en/wrangling/get_dupes",
+                  "en/wrangling/slice",
+                  "en/wrangling/drop_na",
+                  "en/wrangling/sample",
+                  "en/wrangling/impute_na",
+                  "en/wrangling/fill",
+                  "en/wrangling/buckets",
+                  "en/wrangling/recode",
+                  "en/wrangling/case_when",
+                  "en/wrangling/categories",
+                  "en/wrangling/type-convert",
+                  "en/wrangling/row_as_header",
+                  "en/wrangling/ungroup",
+                  "en/wrangling/unnest",
+                  "en/wrangling/unnest_wider",
+                  "en/wrangling/unnest_longer",
+                  "en/wrangling/separate-japanese-address",
+                  "en/wrangling/hoist",
+                  "en/wrangling/remove_empty_rows",
+                  "en/wrangling/remove_empty_cols",
+                  "en/wrangling/clean_names",
+                  "en/wrangling/window-calculation",
+                  "en/wrangling/add_row",
+                  "en/wrangling/text_wrangling",
+                  "en/wrangling/regular_expression"
+                ],
+                "root": "en/data-wrangling"
+              },
+              {
+                "group": "Visualization",
+                "pages": [
+                  "en/viz/pivot",
+                  "en/viz/summarize-table",
+                  "en/viz/table",
+                  "en/viz/bar",
+                  "en/viz/line",
+                  "en/viz/area",
+                  "en/viz/pie",
+                  "en/viz/radar",
+                  "en/viz/hist",
+                  "en/viz/densityplot",
+                  "en/viz/scatter",
+                  "en/viz/bubble",
+                  "en/viz/boxplot",
+                  "en/viz/violin",
+                  "en/viz/errbar",
+                  "en/viz/errbar-agg",
+                  "en/viz/easymap",
+                  "en/viz/geojson",
+                  "en/viz/map",
+                  "en/viz/maphmap",
+                  "en/viz/heatmap",
+                  "en/viz/contour",
+                  "en/viz/singlevalue",
+                  "en/viz/wordcloud",
+                  "en/viz/r-custom",
+                  "en/viz/trend-line",
+                  "en/viz/reference-line",
+                  "en/viz/small-multiple",
+                  "en/viz/window-calc",
+                  "en/viz/date-aggregate",
+                  "en/viz/range",
+                  "en/viz/marker",
+                  "en/viz/multi-y",
+                  "en/viz/layout",
+                  "en/viz/column-configuration",
+                  "en/viz/column-configuration-dialog",
+                  "en/viz/color",
+                  "en/viz/color-dialog",
+                  "en/viz/custom-palette",
+                  "en/viz/pin",
+                  "en/viz/save",
+                  "en/viz/save-as-edf",
+                  "en/viz/schedule",
+                  "en/viz/urllink",
+                  "en/viz/category",
+                  "en/viz/highlight",
+                  "en/viz/limit",
+                  "en/viz/others-group",
+                  "en/viz/edit-display-name",
+                  "en/viz/missing-value-handling",
+                  "en/viz/rename-column-names",
+                  "en/viz/dualy-setting",
+                  "en/viz/axis-format",
+                  "en/viz/show-detail",
+                  "en/viz/table-fit-to-screen",
+                  "en/viz/number-of-unuque-values-check"
+                ],
+                "root": "en/visualization"
+              },
+              {
+                "group": "Analytics",
+                "pages": [
+                  "en/analytics/correlation_column",
+                  "en/analytics/distance_column",
+                  "en/analytics/kmeans",
+                  "en/analytics/kmodes",
+                  "en/analytics/pca",
+                  "en/analytics/factanal",
+                  "en/analytics/correspondence",
+                  "en/analytics/regression",
+                  "en/analytics/logistic",
+                  "en/analytics/ordered_logistic_regression",
+                  "en/analytics/glm",
+                  "en/analytics/survival",
+                  "en/analytics/var_importance_time",
+                  "en/analytics/survival_forest",
+                  "en/analytics/decision_tree",
+                  "en/analytics/chaid",
+                  "en/analytics/var_importance",
+                  "en/analytics/xgboost",
+                  "en/analytics/lightgbm",
+                  "en/analytics/forecasting",
+                  "en/analytics/arima",
+                  "en/analytics/time_series_clustering",
+                  "en/analytics/anomaly",
+                  "en/analytics/textanal",
+                  "en/analytics/topic_model",
+                  "en/analytics/market_basket",
+                  "en/analytics/t_test",
+                  "en/analytics/t_test_aggregated",
+                  "en/analytics/anova",
+                  "en/analytics/wilcoxon",
+                  "en/analytics/kruskal_wallis",
+                  "en/analytics/chisq",
+                  "en/analytics/ab_test",
+                  "en/analytics/normality",
+                  "en/analytics/cronbach-alpha",
+                  "en/analytics/prediction",
+                  "en/analytics/dictionary"
+                ],
+                "root": "en/analytics"
+              },
+              {
+                "group": "Statistics",
+                "pages": [
+                  "en/stats/correlation",
+                  "en/stats/dist",
+                  "en/stats/sim",
+                  "en/stats/svd",
+                  "en/stats/mds",
+                  "en/stats/t-test",
+                  "en/stats/f-test",
+                  "en/stats/chi-test",
+                  "en/stats/exp_bayes_ab"
+                ],
+                "root": "en/statistics"
+              },
+              {
+                "group": "Machine Learning",
+                "pages": [
+                  "en/ml/linear-regression",
+                  "en/ml/logistic-regression",
+                  "en/ml/glm",
+                  "en/ml/multinom",
+                  "en/ml/kmeans",
+                  "en/ml/random-forest",
+                  "en/ml/xgboost",
+                  "en/ml/forecasting",
+                  "en/ml/timeseries_clustering",
+                  "en/ml/anomaly",
+                  "en/ml/survival-curv",
+                  "en/ml/cox-regression",
+                  "en/ml/arules",
+                  "en/ml/causal_impact",
+                  "en/ml/evaluate_regression",
+                  "en/ml/evaluate_binary",
+                  "en/ml/do_roc",
+                  "en/ml/evaluate_multi",
+                  "en/ml/prediction",
+                  "en/ml/prediction_binary",
+                  "en/ml/prediction_coxph",
+                  "en/ml/prediction_survfit",
+                  "en/ml/model_stats",
+                  "en/ml/model_coef",
+                  "en/ml/model_anova",
+                  "en/wrangling/smote"
+                ],
+                "root": "en/machine-learning"
+              },
+              {
+                "group": "Text Analysis",
+                "pages": [
+                  "en/text/do_tokenize",
+                  "en/text/do_ngram",
+                  "en/text/do_tfidf",
+                  "en/text/pair_count"
+                ],
+                "root": "en/text/main"
+              },
+              {
+                "group": "Extend with R",
+                "pages": [
+                  "en/r_package",
+                  "en/r_script",
+                  "en/user-defined-model-function",
+                  "en/howto/stopmcafee",
+                  "en/howto/set_exploratory_home",
+                  "en/howto/holiday",
+                  "en/howto/install_errors",
+                  "en/howto/upgrade_dot_net",
+                  "en/debug_log",
+                  "en/startup_log",
+                  "en/version_check",
+                  "en/history_error_recovery"
+                ],
+                "root": "en/extend-with-r"
+              },
               "en/shortcut"
             ]
           }
@@ -572,266 +562,266 @@
           {
             "group": "Exploratory",
             "pages": [
-              "ja/index"
-            ]
-          },
-          {
-            "group": "Exploratory MCP",
-            "pages": [
+              "ja/index",
               {
-                "group": "Server",
+                "group": "Exploratory MCP",
                 "pages": [
                   {
-                    "group": "はじめる",
+                    "group": "Server",
                     "pages": [
                       {
-                        "group": "AI ツールから追加する",
+                        "group": "はじめる",
                         "pages": [
-                          "ja/mcp/server/clients/claude",
-                          "ja/mcp/server/clients/chatgpt",
-                          "ja/mcp/server/clients/antigravity",
-                          "ja/mcp/server/clients/grok-bot",
-                          "ja/mcp/server/clients/claude-code",
-                          "ja/mcp/server/clients/codex",
-                          "ja/mcp/server/clients/cursor",
-                          "ja/mcp/server/clients/other"
+                          {
+                            "group": "AI ツールから追加する",
+                            "pages": [
+                              "ja/mcp/server/clients/claude",
+                              "ja/mcp/server/clients/chatgpt",
+                              "ja/mcp/server/clients/antigravity",
+                              "ja/mcp/server/clients/grok-bot",
+                              "ja/mcp/server/clients/claude-code",
+                              "ja/mcp/server/clients/codex",
+                              "ja/mcp/server/clients/cursor",
+                              "ja/mcp/server/clients/other"
+                            ],
+                            "root": "ja/mcp/server/clients/apps"
+                          },
+                          "ja/mcp/server/auth"
                         ],
-                        "root": "ja/mcp/server/clients/apps"
+                        "root": "ja/mcp/server/get-started"
                       },
-                      "ja/mcp/server/auth"
+                      "ja/mcp/server/use",
+                      {
+                        "group": "リファレンス",
+                        "pages": [
+                          "ja/mcp/server/tools",
+                          "ja/mcp/server/limits",
+                          "ja/mcp/server/data"
+                        ],
+                        "root": "ja/mcp/server/reference"
+                      },
+                      "ja/mcp/server/troubleshooting"
                     ],
-                    "root": "ja/mcp/server/get-started"
+                    "root": "ja/mcp/server/server"
                   },
-                  "ja/mcp/server/use",
                   {
-                    "group": "リファレンス",
+                    "group": "Desktop",
                     "pages": [
-                      "ja/mcp/server/tools",
-                      "ja/mcp/server/limits",
-                      "ja/mcp/server/data"
+                      {
+                        "group": "はじめる",
+                        "pages": [
+                          "ja/mcp/desktop/install",
+                          "ja/mcp/desktop/permissions"
+                        ],
+                        "root": "ja/mcp/desktop/get-started"
+                      },
+                      "ja/mcp/desktop/use",
+                      {
+                        "group": "リファレンス",
+                        "pages": [
+                          "ja/mcp/desktop/tools",
+                          "ja/mcp/desktop/limits",
+                          "ja/mcp/desktop/data"
+                        ],
+                        "root": "ja/mcp/desktop/reference"
+                      },
+                      "ja/mcp/desktop/troubleshooting"
                     ],
-                    "root": "ja/mcp/server/reference"
-                  },
-                  "ja/mcp/server/troubleshooting"
+                    "root": "ja/mcp/desktop/desktop"
+                  }
                 ],
-                "root": "ja/mcp/server/server"
+                "root": "ja/mcp/mcp"
               },
               {
-                "group": "Desktop",
+                "group": "Exploratory CLI",
                 "pages": [
                   {
-                    "group": "はじめる",
+                    "group": "Server",
                     "pages": [
-                      "ja/mcp/desktop/install",
-                      "ja/mcp/desktop/permissions"
+                      {
+                        "group": "はじめる",
+                        "pages": [
+                          "ja/cli/server/install",
+                          "ja/cli/server/login",
+                          "ja/cli/server/token"
+                        ],
+                        "root": "ja/cli/server/get-started"
+                      },
+                      {
+                        "group": "使い方",
+                        "pages": [
+                          "ja/cli/server/guides/find-data",
+                          "ja/cli/server/guides/read-notes",
+                          "ja/cli/server/guides/query-data",
+                          "ja/cli/server/guides/dashboard-charts",
+                          "ja/cli/server/guides/analytics",
+                          "ja/cli/server/guides/export",
+                          "ja/cli/server/guides/automation",
+                          "ja/cli/server/guides/agents"
+                        ],
+                        "root": "ja/cli/server/use"
+                      },
+                      {
+                        "group": "リファレンス",
+                        "pages": [
+                          "ja/cli/server/commands",
+                          "ja/cli/server/global-flags",
+                          "ja/cli/server/exit-codes",
+                          "ja/cli/server/data"
+                        ],
+                        "root": "ja/cli/server/reference"
+                      },
+                      "ja/cli/server/troubleshooting"
                     ],
-                    "root": "ja/mcp/desktop/get-started"
+                    "root": "ja/cli/server/server"
                   },
-                  "ja/mcp/desktop/use",
                   {
-                    "group": "リファレンス",
+                    "group": "Desktop",
                     "pages": [
-                      "ja/mcp/desktop/tools",
-                      "ja/mcp/desktop/limits",
-                      "ja/mcp/desktop/data"
+                      {
+                        "group": "はじめる",
+                        "pages": [
+                          "ja/cli/desktop/install",
+                          "ja/cli/desktop/guides/projects"
+                        ],
+                        "root": "ja/cli/desktop/get-started"
+                      },
+                      {
+                        "group": "使い方",
+                        "pages": [
+                          "ja/cli/desktop/guides/wrangle-data",
+                          "ja/cli/desktop/guides/create-charts",
+                          "ja/cli/desktop/guides/create-analytics",
+                          "ja/cli/desktop/guides/write-notes",
+                          "ja/cli/desktop/guides/duplicate-dashboard",
+                          "ja/cli/desktop/guides/publish",
+                          "ja/cli/desktop/guides/agents"
+                        ],
+                        "root": "ja/cli/desktop/use"
+                      },
+                      {
+                        "group": "リファレンス",
+                        "pages": [
+                          "ja/cli/desktop/commands",
+                          "ja/cli/desktop/global-flags",
+                          "ja/cli/desktop/guides/input",
+                          "ja/cli/desktop/guides/output",
+                          "ja/cli/desktop/guides/confirmation",
+                          "ja/cli/desktop/exit-codes",
+                          "ja/cli/desktop/data"
+                        ],
+                        "root": "ja/cli/desktop/reference"
+                      },
+                      "ja/cli/desktop/troubleshooting"
                     ],
-                    "root": "ja/mcp/desktop/reference"
-                  },
-                  "ja/mcp/desktop/troubleshooting"
+                    "root": "ja/cli/desktop/desktop"
+                  }
                 ],
-                "root": "ja/mcp/desktop/desktop"
+                "root": "ja/cli/cli"
+              },
+              {
+                "group": "製品の機能",
+                "pages": [
+                  "ja/markdown/markdown-dashboard",
+                  "ja/markdown/markdown-note",
+                  "ja/parameter/parameter",
+                  {
+                    "group": "共有",
+                    "pages": [
+                      "ja/share/share_type",
+                      "ja/share/notification",
+                      "ja/share/version-history",
+                      "ja/share/restore",
+                      "ja/share/csvapi"
+                    ],
+                    "root": "ja/share/share"
+                  },
+                  {
+                    "group": "スケジュールに関するよくある問題と解決法",
+                    "pages": [
+                      "ja/schedule/manage",
+                      "ja/schedule/notification",
+                      "ja/schedule/history"
+                    ],
+                    "root": "ja/schedule/schedule"
+                  },
+                  {
+                    "group": "チーム",
+                    "pages": [
+                      "ja/team/manage"
+                    ],
+                    "root": "ja/team/team"
+                  }
+                ],
+                "root": "ja/product-features"
+              },
+              {
+                "group": "データのインポート",
+                "pages": [
+                  {
+                    "group": "データベースのデータ",
+                    "pages": [
+                      "ja/import/redshift",
+                      "ja/import/mysql",
+                      "ja/import/postgresql"
+                    ],
+                    "root": "ja/database-data"
+                  },
+                  {
+                    "group": "クラウドアプリのデータ",
+                    "pages": [
+                      "ja/import/google-analytics"
+                    ],
+                    "root": "ja/cloud-apps-data"
+                  },
+                  "ja/import/r-script-data"
+                ],
+                "root": "ja/data_import"
+              },
+              {
+                "group": "データの加工",
+                "pages": [
+                  "ja/wrangling/window-calculation",
+                  "ja/wrangling/regular_expression"
+                ],
+                "root": "ja/data-wrangling"
+              },
+              {
+                "group": "ビジュアライゼーション",
+                "pages": [
+                  {
+                    "group": "チャートの種類",
+                    "pages": [
+                      "ja/viz/wordcloud"
+                    ],
+                    "root": "ja/viz/types"
+                  },
+                  {
+                    "group": "チャートの機能",
+                    "pages": [
+                      "ja/viz/number-of-unuque-values-check"
+                    ],
+                    "root": "ja/viz/features"
+                  }
+                ],
+                "root": "ja/visualization"
+              },
+              {
+                "group": "セットアップ",
+                "pages": [
+                  "ja/howto/set_exploratory_home"
+                ],
+                "root": "ja/setup"
+              },
+              {
+                "group": "診断",
+                "pages": [
+                  "ja/debug_log",
+                  "ja/startup_log"
+                ],
+                "root": "ja/diagnostics"
               }
-            ],
-            "root": "ja/mcp/mcp"
-          },
-          {
-            "group": "Exploratory CLI",
-            "pages": [
-              {
-                "group": "Server",
-                "pages": [
-                  {
-                    "group": "はじめる",
-                    "pages": [
-                      "ja/cli/server/install",
-                      "ja/cli/server/login",
-                      "ja/cli/server/token"
-                    ],
-                    "root": "ja/cli/server/get-started"
-                  },
-                  {
-                    "group": "使い方",
-                    "pages": [
-                      "ja/cli/server/guides/find-data",
-                      "ja/cli/server/guides/read-notes",
-                      "ja/cli/server/guides/query-data",
-                      "ja/cli/server/guides/dashboard-charts",
-                      "ja/cli/server/guides/analytics",
-                      "ja/cli/server/guides/export",
-                      "ja/cli/server/guides/automation",
-                      "ja/cli/server/guides/agents"
-                    ],
-                    "root": "ja/cli/server/use"
-                  },
-                  {
-                    "group": "リファレンス",
-                    "pages": [
-                      "ja/cli/server/commands",
-                      "ja/cli/server/global-flags",
-                      "ja/cli/server/exit-codes",
-                      "ja/cli/server/data"
-                    ],
-                    "root": "ja/cli/server/reference"
-                  },
-                  "ja/cli/server/troubleshooting"
-                ],
-                "root": "ja/cli/server/server"
-              },
-              {
-                "group": "Desktop",
-                "pages": [
-                  {
-                    "group": "はじめる",
-                    "pages": [
-                      "ja/cli/desktop/install",
-                      "ja/cli/desktop/guides/projects"
-                    ],
-                    "root": "ja/cli/desktop/get-started"
-                  },
-                  {
-                    "group": "使い方",
-                    "pages": [
-                      "ja/cli/desktop/guides/wrangle-data",
-                      "ja/cli/desktop/guides/create-charts",
-                      "ja/cli/desktop/guides/create-analytics",
-                      "ja/cli/desktop/guides/write-notes",
-                      "ja/cli/desktop/guides/duplicate-dashboard",
-                      "ja/cli/desktop/guides/publish",
-                      "ja/cli/desktop/guides/agents"
-                    ],
-                    "root": "ja/cli/desktop/use"
-                  },
-                  {
-                    "group": "リファレンス",
-                    "pages": [
-                      "ja/cli/desktop/commands",
-                      "ja/cli/desktop/global-flags",
-                      "ja/cli/desktop/guides/input",
-                      "ja/cli/desktop/guides/output",
-                      "ja/cli/desktop/guides/confirmation",
-                      "ja/cli/desktop/exit-codes",
-                      "ja/cli/desktop/data"
-                    ],
-                    "root": "ja/cli/desktop/reference"
-                  },
-                  "ja/cli/desktop/troubleshooting"
-                ],
-                "root": "ja/cli/desktop/desktop"
-              }
-            ],
-            "root": "ja/cli/cli"
-          },
-          {
-            "group": "製品の機能",
-            "pages": [
-              "ja/markdown/markdown-dashboard",
-              "ja/markdown/markdown-note",
-              "ja/parameter/parameter",
-              {
-                "group": "共有",
-                "pages": [
-                  "ja/share/share_type",
-                  "ja/share/notification",
-                  "ja/share/version-history",
-                  "ja/share/restore",
-                  "ja/share/csvapi"
-                ],
-                "root": "ja/share/share"
-              },
-              {
-                "group": "スケジュールに関するよくある問題と解決法",
-                "pages": [
-                  "ja/schedule/manage",
-                  "ja/schedule/notification",
-                  "ja/schedule/history"
-                ],
-                "root": "ja/schedule/schedule"
-              },
-              {
-                "group": "チーム",
-                "pages": [
-                  "ja/team/manage"
-                ],
-                "root": "ja/team/team"
-              }
-            ],
-            "root": "ja/product-features"
-          },
-          {
-            "group": "データのインポート",
-            "pages": [
-              {
-                "group": "データベースのデータ",
-                "pages": [
-                  "ja/import/redshift",
-                  "ja/import/mysql",
-                  "ja/import/postgresql"
-                ],
-                "root": "ja/database-data"
-              },
-              {
-                "group": "クラウドアプリのデータ",
-                "pages": [
-                  "ja/import/google-analytics"
-                ],
-                "root": "ja/cloud-apps-data"
-              },
-              "ja/import/r-script-data"
-            ],
-            "root": "ja/data_import"
-          },
-          {
-            "group": "データの加工",
-            "pages": [
-              "ja/wrangling/window-calculation",
-              "ja/wrangling/regular_expression"
-            ],
-            "root": "ja/data-wrangling"
-          },
-          {
-            "group": "ビジュアライゼーション",
-            "pages": [
-              {
-                "group": "チャートの種類",
-                "pages": [
-                  "ja/viz/wordcloud"
-                ],
-                "root": "ja/viz/types"
-              },
-              {
-                "group": "チャートの機能",
-                "pages": [
-                  "ja/viz/number-of-unuque-values-check"
-                ],
-                "root": "ja/viz/features"
-              }
-            ],
-            "root": "ja/visualization"
-          },
-          {
-            "group": "セットアップ",
-            "pages": [
-              "ja/howto/set_exploratory_home"
-            ],
-            "root": "ja/setup"
-          },
-          {
-            "group": "診断",
-            "pages": [
-              "ja/debug_log",
-              "ja/startup_log"
-            ],
-            "root": "ja/diagnostics"
+            ]
           }
         ]
       }
@@ -2311,5 +2301,6 @@
     "light": "/en/markdown/images/logo_top.png",
     "dark": "/en/markdown/images/logo_top.png",
     "href": "https://exploratory.io"
-  }
+  },
+  "favicon": "/images/favicon.png"
 }
