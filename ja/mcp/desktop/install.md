@@ -71,7 +71,7 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 | Claude Code | Exploratory Desktop のプラグイン（スキルを含む） | 「インストール済み - v」とプラグインのバージョン。「インストール」の代わりに「再インストール」と「削除」 |
 | Codex | 同上 | 同上 |
 | Antigravity | 同上 | 同上 |
-| Cursor | 同じです。~/.cursor/mcp.json には書かず、プラグインを Cursor のプラグインのフォルダ（~/.cursor/plugins/local/exploratory）へコピーします。~/.cursor/mcp.json に古い exploratory-desktop の項目が残っていると、カードが削除します。ほかの項目は残ります | 同じです |
+| Cursor | 同じです。\~/.cursor/mcp.json には書かず、プラグインを Cursor のプラグインのフォルダ（\~/.cursor/plugins/local/exploratory）へコピーします。\~/.cursor/mcp.json に古い exploratory-desktop の項目が残っていると、カードが削除します。ほかの項目は残ります | 同じです |
 
 どの AI ツールも、インストールのあとに起動し直します。
 
@@ -136,7 +136,7 @@ Git が必要です。プラグインは、Antigravity のアプリの Customiza
 
 **Cursor**
 
-カードから入れます。手作業で行う別の手順はありません。カードが、スキルを含むプラグインを ~/.cursor/plugins/local/exploratory へコピーします。
+カードから入れます。手作業で行う別の手順はありません。カードが、スキルを含むプラグインを \~/.cursor/plugins/local/exploratory へコピーします。
 
 <a id="update"></a>
 

@@ -24,7 +24,7 @@ This registers only the server, without the skill. Use either of the two ways be
 
 **To edit the config file**
 
-1. Add this to ~/.codex/config.toml.
+1. Add this to \~/.codex/config.toml.
 
    ```text
    [mcp_servers.exploratory-server]
@@ -107,7 +107,7 @@ If you already have another Exploratory connection (for example exploratory-serv
 
 If your environment cannot open a browser, use an API key instead of the sign-in. Create the key in Account Settings \> API Keys, and put it in an environment variable. Set EXPLORATORY_API_KEY through your environment's secret-management facility, such as your operating system's credential store or the secrets of your CI, not through your shell's startup file. Do not write the key itself on the command line or in a configuration file. The configuration below assumes that this environment variable is already set.
 
-Add the name of the variable, not the key, to ~/.codex/config.toml.
+Add the name of the variable, not the key, to \~/.codex/config.toml.
 
 ```text
 [mcp_servers.exploratory-server]
@@ -132,6 +132,6 @@ If you write the key in the file as it is, it stays in that file. Use one way on
 
 ## Disconnect
 
-Delete the \[mcp_servers.exploratory-server\] entry you added to ~/.codex/config.toml. If you added the server by chat, the entry carries the name you gave it (Exploratory in the example), so delete \[mcp_servers.Exploratory\] instead. Use the name you registered.
+Delete the \[mcp_servers.exploratory-server\] entry you added to \~/.codex/config.toml. If you added the server by chat, the entry carries the name you gave it (Exploratory in the example), so delete \[mcp_servers.Exploratory\] instead. Use the name you registered.
 
 Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in Account Settings on exploratory.io.

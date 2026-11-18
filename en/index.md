@@ -9,8 +9,8 @@ You can also use Exploratory from an AI app through MCP, or from a terminal or a
 
 | What you want to do | Where to read |
 | --- | --- |
-| Connect an AI app to Exploratory | [Exploratory MCP](/en/mcp/mcp) |
-| Use Exploratory from a terminal or an automated process | [Exploratory CLI](/en/cli/cli) |
+| Connect an AI app to Exploratory | [Exploratory MCP](/en/mcp) |
+| Use Exploratory from a terminal or an automated process | [Exploratory CLI](/en/cli) |
 | Look up a feature of Exploratory Desktop | [Product Features](/en/product-features) and the chapters after it |
 
 The Japanese pages are available from the language switcher at the top right of the site, or at URLs that start with `/ja`.

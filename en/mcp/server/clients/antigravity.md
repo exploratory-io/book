@@ -44,7 +44,7 @@ A remote server takes its URL in "serverUrl".
    }
    ```
 
-To use the agy command line, write the same content in ~/.gemini/config/mcp_config.json.
+To use the agy command line, write the same content in \~/.gemini/config/mcp_config.json.
 
 ### Start the sign-in
 

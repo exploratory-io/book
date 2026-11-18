@@ -8,7 +8,7 @@ title: "データを集計する"
 
 ## データを選ぶ
 
-データのコンテンツは、--type data で探します。結果には、列の名前と型、行数も出ます。
+データのコンテンツは、`--type` data で探します。結果には、列の名前と型、行数も出ます。
 
 ```sh
 expl server search "sales" --type data --json
@@ -26,7 +26,7 @@ expl server search "sales" --type data --json
 expl server dataframe get-schema <id> --detail light --json
 ```
 
-\<id\> は、データの id に置き換えます。--detail light は、列の名前と型、行数だけを返します。
+\<id\> は、データの id に置き換えます。`--detail` light は、列の名前と型、行数だけを返します。
 
 行の中身を見たいときは、先頭の数行を取得します。
 
@@ -105,18 +105,18 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 }
 ```
 
-- --mode aggregate は、--dimensions でグループに分け、--metrics を計算します。
-- --mode rows は、条件に合う行を取得します。--columns で返す列を指定します。
+- `--mode` aggregate は、`--dimensions` でグループに分け、`--metrics` を計算します。
+- `--mode` rows は、条件に合う行を取得します。`--columns` で返す列を指定します。
 - rows は最大 1,000 行、aggregate は最大 500 行です。続きを取得する指定はありません。結果の has_more が true なら、絞り込むか、集計します。
 - 結果には、データのバージョンと更新時刻が含まれます。数値を人に伝えるときは、いつのデータで計算したかも伝えます。
 
-条件に合う行を取得するときは、--mode rows を使います。--columns が必要で、--filters で行を絞り込みます。次の例は、region が Kanto の行について、2 つの列を返します。
+条件に合う行を取得するときは、`--mode` rows を使います。`--columns` が必要で、`--filters` で行を絞り込みます。次の例は、region が Kanto の行について、2 つの列を返します。
 
 ```sh
 expl server dataset query <dataset_id> --mode rows --columns '["region","sales"]' --filters '{"column":"region","operator":"eq","value":"Kanto"}' --limit 10 --json
 ```
 
-operator は比較の方法です。データごとに使える operator は、expl server dataframe get-schema \<id\> --detail full の結果にあります。複数の条件を組み合わせる方法は、[フィルタ条件](/ja/cli/server/commands#dataset-query-json-arguments)を参照してください。
+operator は比較の方法です。データごとに使える operator は、expl server dataframe get-schema \<id\> `--detail` full の結果にあります。複数の条件を組み合わせる方法は、[フィルタ条件](/ja/cli/server/commands#dataset-query-json-arguments)を参照してください。
 
 結果が大きすぎる場合は、dataframe export で CSV または Parquet のファイルにします。複数のデータを結合する方法は、[dataset query](/ja/cli/server/commands#dataset-query) のページを参照してください。
 
@@ -128,9 +128,9 @@ JSON は、データを書くための決まった形の文字列です。dimens
 
 | フラグ | 形 | 意味 |
 | --- | --- | --- |
-| --dimensions | \[\{"column":"region"\}\] | region 列の値ごとにグループに分けます。 |
-| --metrics | \[\{"function":"sum","column":"sales","alias":"sales"\}\] | sales 列の合計を求め、結果の名前を sales にします。 |
-| --sort | \[\{"field":"sales","direction":"desc"\}\] | 出力の列 sales を、大きい順に並べます。 |
+| `--dimensions` | \[\{"column":"region"\}\] | region 列の値ごとにグループに分けます。 |
+| `--metrics` | \[\{"function":"sum","column":"sales","alias":"sales"\}\] | sales 列の合計を求め、結果の名前を sales にします。 |
+| `--sort` | \[\{"field":"sales","direction":"desc"\}\] | 出力の列 sales を、大きい順に並べます。 |
 
 metrics の alias は必須です。英字、数字、_ だけで、数字で始めず、64 文字までです。sort では、出力の列の名前を field で指定します。
 
@@ -153,7 +153,7 @@ metrics の alias は必須です。英字、数字、_ だけで、数字で始
 | --- | --- |
 | DATASET_UNAVAILABLE | 公開した人が、最新のバージョンの Exploratory Desktop でデータを公開し直す必要があります。 |
 
-検索結果や --detail light の結果では、問い合わせできるかどうかは分かりません。--detail full で、結果の query.available が false になっていないかを確認します。
+検索結果や `--detail` light の結果では、問い合わせできるかどうかは分かりません。`--detail` full で、結果の query.available が false になっていないかを確認します。
 
 ```sh
 expl server dataframe get-schema <id> --detail full --json

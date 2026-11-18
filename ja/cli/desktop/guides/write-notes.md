@@ -34,13 +34,13 @@ title: "ノートを書く"
 
 ### 2. ノートを作る
 
---title と --markdown が必須です。@ファイル名 と書くと、長い文章をファイルから読みます（[引数と JSON を渡す](/ja/cli/desktop/guides/input)）。
+`--title` と `--markdown` が必須です。@ファイル名 と書くと、長い文章をファイルから読みます（[引数と JSON を渡す](/ja/cli/desktop/guides/input)）。
 
 ```sh
 expl note add --title "Sales Orders のレポート" --markdown @report.md
 ```
 
-結果に、ノートの id（note_id）が入ります。ノートは、Desktop で開きます。プロジェクトに同じタイトルのノートがあると、上書きせず、何も書かずに NOTE_TITLE_EXISTS で止まります。別のタイトルにしてください。--folder で既存のフォルダに入れられ、--settings には、ノートの設定（目次など）の JSON オブジェクトを渡せます。
+結果に、ノートの id（note_id）が入ります。ノートは、Desktop で開きます。プロジェクトに同じタイトルのノートがあると、上書きせず、何も書かずに NOTE_TITLE_EXISTS で止まります。別のタイトルにしてください。`--folder` で既存のフォルダに入れられ、`--settings` には、ノートの設定（目次など）の JSON オブジェクトを渡せます。
 
 ### 3. 追記する、書き換える
 
@@ -48,7 +48,7 @@ expl note add --title "Sales Orders のレポート" --markdown @report.md
 expl note edit <note_id> --markdown @more.md
 ```
 
-既定では、本文の末尾に追記します。--mode replace を付けると、本文全体を置き換えます。--title で、ノートの名前を変えられます。id は、expl note list で調べます。
+既定では、本文の末尾に追記します。`--mode` replace を付けると、本文全体を置き換えます。`--title` で、ノートの名前を変えられます。id は、expl note list で調べます。
 
 ### 4. 読み返す
 
@@ -70,7 +70,7 @@ get は、Markdown の本文、フォルダ、依存関係を返します。get-
 | NOTE_NOT_FOUND | id が違います。expl note list から写します。 |
 | 図が空白になる | 埋め込みの記法の id が違うか、記法が 1 行に 1 つだけの形になっていません。 |
 
-コマンドの引数は、expl \<コマンド\> --help または expl tools describe "\<コマンド\>" で確認します。
+コマンドの引数は、`expl <コマンド> --help` または `expl tools describe "<コマンド>"` で確認します。
 
 <a id="related"></a>
 

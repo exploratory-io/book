@@ -54,7 +54,7 @@ expl server login --with-token < key-file
 
 key-file は、キーだけを書いたファイルです。キーをコマンドラインに書かないでください。
 
-expl はまず、サーバーでキーを確かめます。サーバーが拒否した場合は、何も保存しません。キーは exp_pat_ で始まります。--with-token は --no-browser と一緒には使えません。接続先を選ぶときは、--url を付けます。
+expl はまず、サーバーでキーを確かめます。サーバーが拒否した場合は、何も保存しません。キーは exp_pat_ で始まります。`--with-token` は `--no-browser` と一緒には使えません。接続先を選ぶときは、`--url` を付けます。
 
 キーは、ブラウザでのサインインと同じ場所に保存されます（「保存先と使われ方」を参照）。保存した API キーは更新されず、ブラウザも開きません。もう一度サインインすると、置き換わります。
 
@@ -63,7 +63,7 @@ expl はまず、サーバーでキーを確かめます。サーバーが拒否
 | 順 | 指定 |
 | --- | --- |
 | 1 | EXPL_SERVER_TOKEN |
-| 2 | 保存したログイン情報（ブラウザでのログイン、または --with-token で保存した API キー） |
+| 2 | 保存したログイン情報（ブラウザでのログイン、または `--with-token` で保存した API キー） |
 
 環境変数のキーから保存したログイン情報に切り替えるときは、先に unset EXPL_SERVER_TOKEN を実行してください。設定されている間は、保存したログイン情報より先に使われます。
 
@@ -121,7 +121,7 @@ Exploratory にサインインして、アクセスを許可します。
 
 ## 保存先と使われ方
 
-ログイン情報は、~/.exploratory/expl/server/ に、ホストごとのファイルとして保存されます。権限は 0600（本人だけが読める）です。ブラウザでのログインも、--with-token で保存した API キーも、同じ場所です。Windows では %USERPROFILE%\\.exploratory\\expl\\server\\ です。
+ログイン情報は、\~/.exploratory/expl/server/ に、ホストごとのファイルとして保存されます。権限は 0600（本人だけが読める）です。ブラウザでのログインも、`--with-token` で保存した API キーも、同じ場所です。Windows では %USERPROFILE%\\.exploratory\\expl\\server\\ です。
 
 保存したログイン情報は、同じオリジン（スキーム、ホスト、ポート）でだけ使われます。標準のポートでは、同じホストへ後からサインインすると、保存内容が置き換わります。
 
@@ -131,11 +131,11 @@ Exploratory にサインインして、アクセスを許可します。
 
 ## 接続先の URL
 
-既定の接続先は https://exploratory.io です。ほかのサーバーを使うときは、--url か、環境変数 EXPL_SERVER_URL で指定します。優先順位は次のとおりです。
+既定の接続先は https://exploratory.io です。ほかのサーバーを使うときは、`--url` か、環境変数 EXPL_SERVER_URL で指定します。優先順位は次のとおりです。
 
 | 順 | 指定 |
 | --- | --- |
-| 1 | --url |
+| 1 | `--url` |
 | 2 | EXPL_SERVER_URL |
 | 3 | 保存済みのログイン情報が最新のホスト（トークンの更新でも新しくなります） |
 | 4 | https://exploratory.io |
@@ -160,11 +160,11 @@ expl server が呼び出す操作について、Exploratory Server は次のも�
 | 症状 | 対処 |
 | --- | --- |
 | Run "expl server login". | サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。 |
-| The redirect URL has no authorization code. | --no-browser のとき、最初に表示された URL を貼り付けています。移動先の、http://127.0.0.1/callback?code= で始まる URL を貼り付けてください。 |
+| The redirect URL has no authorization code. | `--no-browser` のとき、最初に表示された URL を貼り付けています。移動先の、http://127.0.0.1/callback?code= で始まる URL を貼り付けてください。 |
 | 貼り付けたあとに失敗する | コードは一度しか使えず、60 秒で切れます。最初からやり直します。 |
-| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | キーが間違っているか、期限切れか、取り消されたか、持ち主が API キーを使えなくなっています。終了コード 4 です。新しい API キーを作って、EXPL_SERVER_TOKEN に設定するか、expl server login --with-token を実行します。 |
+| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | キーが間違っているか、期限切れか、取り消されたか、持ち主が API キーを使えなくなっています。終了コード 4 です。新しい API キーを作って、EXPL_SERVER_TOKEN に設定するか、`expl server login --with-token` を実行します。 |
 | API keys are disabled by your administrator. | 管理者が API キーをオフにしています。終了コード 4 です。管理者に確認するか、expl server login でサインインします。 |
 | This IP address is not allowed for API keys. | 管理者が、API キーを使える IP アドレスを限定しています。終了コード 4 です。許可されたアドレスから実行するか、管理者に確認します。 |
 | Too many failed API key attempts. Try again later. | このアドレスから、拒否されたキーが短い時間に何度も送られました。キーを直して、しばらくしてからやり直します。 |
-| --token was removed. … | 環境変数 EXPL_SERVER_TOKEN を使うか、expl server login --with-token を実行します。終了コード 2 です。 |
+| `--token` was removed. … | 環境変数 EXPL_SERVER_TOKEN を使うか、`expl server login --with-token` を実行します。終了コード 2 です。 |
 | Paste an API key (it starts with exp_pat_) when … | 渡された値が API キーではありません。アカウント設定 \> API キーで、キー全体をコピーします。終了コード 2 です。 |

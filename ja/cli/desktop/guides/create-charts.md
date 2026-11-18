@@ -18,25 +18,25 @@ title: "チャートを作る"
 
 ### 1. チャートの種類の設定を調べる
 
---marker は、チャートの種類です。bar、line、area、pie、scatter、pivot、singlevalue、table などです。--section を付けないと、設定の目次が返ります。
+`--marker` は、チャートの種類です。bar、line、area、pie、scatter、pivot、singlevalue、table などです。`--section` を付けないと、設定の目次が返ります。
 
 ```sh
 expl chart list-settings --marker bar
 ```
 
---setting \<名前\> で、設定を 1 つ、名前の完全一致で引けます。--search \<名前の一部\> で、名前の一部から絞り込めます。設定の名前は推測せず、ここで返った名前だけを使います。
+`--setting` \<名前\> で、設定を 1 つ、名前の完全一致で引けます。`--search` \<名前の一部\> で、名前の一部から絞り込めます。設定の名前は推測せず、ここで返った名前だけを使います。
 
 ### 2. チャートを作る
 
---marker と --axes が必須です。--axes は、枠の名前をキーにして、列を置く JSON オブジェクトです。bar と line の枠は x、y、color、facet、ピボットテーブルの枠は rowh、colh、meas です。値は、列名か、集計を選ぶ \{"column": "...", "func": "sum"\} です。
+`--marker` と `--axes` が必須です。`--axes` は、枠の名前をキーにして、列を置く JSON オブジェクトです。bar と line の枠は x、y、color、facet、ピボットテーブルの枠は rowh、colh、meas です。値は、列名か、集計を選ぶ \{"column": "...", "func": "sum"\} です。
 
 ```sh
 expl chart add --data-frame-id <dataframe_id> --marker bar --axes '{"x":"order_date","y":{"column":"sales","func":"sum"}}' --title "月別の売上"
 ```
 
-\<dataframe_id\> は、expl dataframe list の id に置き換え、列名は get-schema の表記のまま使います。--settings には、手順 1 で調べた名前の JSON オブジェクトを渡します（オンとオフの設定は、true や false でなく、文字列の "on" か "off" です）。--filters には、フィルタ条件の配列を渡します。条件の形は、expl chart add --help で確認します。
+\<dataframe_id\> は、expl dataframe list の id に置き換え、列名は get-schema の表記のまま使います。`--settings` には、手順 1 で調べた名前の JSON オブジェクトを渡します（オンとオフの設定は、true や false でなく、文字列の "on" か "off" です）。`--filters` には、フィルタ条件の配列を渡します。条件の形は、`expl chart add --help` で確認します。
 
-結果に、作ったチャートの id（chartId）が入ります。--data-frame-id を付けないと、Desktop で選択中のデータフレームを使います。選択中のものがないときは、NO_DATA_FRAME で止まります。
+結果に、作ったチャートの id（chartId）が入ります。`--data-frame-id` を付けないと、Desktop で選択中のデータフレームを使います。選択中のものがないときは、NO_DATA_FRAME で止まります。
 
 ### 3. 数値と画像を確認する
 
@@ -55,7 +55,7 @@ get-result は、チャートを実行し、集計した値を返します。正
 expl chart edit <chart_id> --marker line --title "月別の売上の推移"
 ```
 
---axes、--settings、--filters は、chart add と同じ書き方です。Auto Run がオフのチャートは、--run を付けると実行します。
+`--axes`、`--settings`、`--filters` は、chart add と同じ書き方です。Auto Run がオフのチャートは、`--run` を付けると実行します。
 
 <a id="trouble"></a>
 
@@ -64,11 +64,11 @@ expl chart edit <chart_id> --marker line --title "月別の売上の推移"
 | 状況 | 対処 |
 | --- | --- |
 | PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](/ja/cli/desktop/exit-codes)を参照してください。 |
-| NO_DATA_FRAME | --data-frame-id \<dataframe_id\> を付けます。 |
+| NO_DATA_FRAME | `--data-frame-id` \<dataframe_id\> を付けます。 |
 | INVALID_ARGUMENT | 設定の名前か値が違います。expl chart list-settings で、もう一度調べます。 |
 | チャートが空、または列が違う | 列名を、expl dataframe get-schema の表記と 1 文字ずつ照らします。 |
 
-コマンドの引数は、expl \<コマンド\> --help または expl tools describe "\<コマンド\>" で確認します。
+コマンドの引数は、`expl <コマンド> --help` または `expl tools describe "<コマンド>"` で確認します。
 
 <a id="related"></a>
 

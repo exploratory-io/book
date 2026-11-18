@@ -10,8 +10,8 @@ title: "Exploratory CLI"
 | できること | 公開されたコンテンツを読み取る（expl server） | 読み取りに加えて、作成、変更、公開（expl） |
 | サインイン | expl server login でサインインします | 専用のサインインはありません。Desktop を起動してサインインし、システム設定で CLI をオンにします |
 
-- [Server](/ja/cli/server/server) - exploratory.io に公開されたコンテンツを読みます。
-- [Desktop](/ja/cli/desktop/desktop) - このコンピューターの Exploratory Desktop のプロジェクトを扱います。
+- [Server](/ja/cli/server) - exploratory.io に公開されたコンテンツを読みます。
+- [Desktop](/ja/cli/desktop) - このコンピューターの Exploratory Desktop のプロジェクトを扱います。
 
 初めて使うときは、はじめるのページに進みます。Server では、先に[サインイン](/ja/cli/server/login)します。
 

@@ -30,7 +30,7 @@ The MCP switch and the Allow create, edit and delete setting are in step 2 of [G
 
 ## Server or Desktop
 
-Desktop works on your local projects. To read content published on exploratory.io, use the [Server MCP](/en/mcp/server/server). When a request does not say which one, the plugin's skill checks first. For example, when you ask for a chart from data on exploratory.io, the AI may ask whether to build it in Exploratory Desktop. If you say "in Exploratory Desktop" from the start, it goes ahead without asking.
+Desktop works on your local projects. To read content published on exploratory.io, use the [Server MCP](/en/mcp/server). When a request does not say which one, the plugin's skill checks first. For example, when you ask for a chart from data on exploratory.io, the AI may ask whether to build it in Exploratory Desktop. If you say "in Exploratory Desktop" from the start, it goes ahead without asking.
 
 <a id="examples"></a>
 

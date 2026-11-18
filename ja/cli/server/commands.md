@@ -4,7 +4,7 @@ title: "コマンド一覧"
 
 目的からコマンドを選びます。名前を選ぶと、引数と例を確認できます。
 
-書式の読み方: \<値\> は自分の値に置き換えます。\[ \] で囲んだ項目は省略できます。真偽値は --flag または --no-flag で指定します。値の配列は、--tables summary --tables table のように、フラグを繰り返して渡します。JSON の例は bash 向けの書き方です。Windows では、JSON ファイルを --input で渡すこともできます。
+書式の読み方: \<値\> は自分の値に置き換えます。\[ \] で囲んだ項目は省略できます。真偽値は `--flag` または `--no-flag` で指定します。値の配列は、`--tables` summary `--tables` table のように、フラグを繰り返して渡します。JSON の例は bash 向けの書き方です。Windows では、JSON ファイルを `--input` で渡すこともできます。
 
 サインインや接続に関するコマンドは、それぞれのページにあります。[サインイン](/ja/cli/server/login)（login、logout、status）、[API キー](/ja/cli/server/token)（token）、このページの[コマンドを調べる](#inspect-commands)（tools list、tools describe）です。expl server skill は、AI エージェント向けの説明を SKILL.md の形で出力します。
 
@@ -129,10 +129,10 @@ expl server search [<query>] [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--query` | 文字列 |  | 検索語です。コマンドのすぐあとに書くか、--query で渡します。タイトル、説明、タグに一致します。空（または \*）にすると、条件に合うものを新しい順に一覧します。 |
+| `--query` | 文字列 |  | 検索語です。コマンドのすぐあとに書くか、`--query` で渡します。タイトル、説明、タグに一致します。空（または \*）にすると、条件に合うものを新しい順に一覧します。 |
 | `--type` | 文字列 |  | 探すコンテンツの種類です。既定は `all` です。値: `all`, `note`, `dashboard`, `slide`, `chart`, `analytics`, `data` |
 | `--scope` | 文字列 |  | all: 閲覧できるものすべて。mine: 自分のもの。shared: 自分に共有されたもの。team: 1 つのチームのもの。既定は `all` です。値: `all`, `mine`, `shared`, `team` |
-| `--team` | 文字列 | --scope team のときは必須 | チームの名前です。 |
+| `--team` | 文字列 | `--scope` team のときは必須 | チームの名前です。 |
 | `--semantic` | 真偽値 |  | キーワードの一致ではなく、意味が近いものを探します。 |
 | `--limit` | 整数 |  | 返す件数の上限です。50 までです。既定は 20 です。 |
 | `--offset` | 整数 |  | 読み飛ばす件数です。続きを取得するときに使います。 |
@@ -238,9 +238,9 @@ expl server search "" --scope mine --limit 50 --json
 
 ### 出力と上限
 
-結果には、コンテンツの id と URL が入ります。id は、fetch などほかのコマンドに渡します。データのコンテンツには、列の名前と型、行数も入ります。既定では人が読みやすい形で、--json を付けると JSON になります。
+結果には、コンテンツの id と URL が入ります。id は、fetch などほかのコマンドに渡します。データのコンテンツには、列の名前と型、行数も入ります。既定では人が読みやすい形で、`--json` を付けると JSON になります。
 
-結果の has_more が true のときは、next_offset の値を --offset に渡すと、次のページを取得できます。
+結果の has_more が true のときは、next_offset の値を `--offset` に渡すと、次のページを取得できます。
 
 <a id="search-trouble"></a>
 
@@ -248,7 +248,7 @@ expl server search "" --scope mine --limit 50 --json
 
 | 症状 | 対処 |
 | --- | --- |
-| Too big: expected number to be \<=50 at limit | --limit を 50 以下にします。 |
+| Too big: expected number to be \<=50 at limit | `--limit` を 50 以下にします。 |
 | Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server fetch](#fetch)、[expl server dataframe get-schema](#dataframe-get-schema)
@@ -275,7 +275,7 @@ expl server fetch <id> [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--id` | 文字列 | 必須 | コンテンツの id です。検索結果などに出ます。コマンドのすぐあとに書くか、--id で渡します。 |
+| `--id` | 文字列 | 必須 | コンテンツの id です。検索結果などに出ます。コマンドのすぐあとに書くか、`--id` で渡します。 |
 | `--language` | 文字列 |  | データの概要と列の説明を読む言語です。指定しないと、データの元の言語になります。その言語の文がないときは、もう一方の言語で返り、language_fallback が含まれます。値: `ja`, `en` |
 | `--section` | 文字列 |  | 見出しの id（s12 など）か、metadata.toc にある見出しの文字そのものです。ノート、ダッシュボード、スライドだけで使えます。 |
 | `--cursor` | 文字列 |  | 長いノートの続きを読むための印です。前の結果の metadata.range.next_cursor の値を渡します。 |
@@ -341,7 +341,7 @@ expl server fetch <id> --section s2 --json
 
 s2 は、metadata.toc にある見出しの id に置き換えます。
 
-同じノートの見出し s2（Sales by region）だけを返した結果です。このノートは短いため metadata.toc が返らず、見出し id の s2 は、下の --query の結果から取りました。
+同じノートの見出し s2（Sales by region）だけを返した結果です。このノートは短いため metadata.toc が返らず、見出し id の s2 は、下の `--query` の結果から取りました。
 
 **実行結果**
 
@@ -377,7 +377,7 @@ expl server fetch <id> --query "region" --json
 
 どれかの語を含む段落を返します。
 
-同じノートに --query "region" を付けて実行した結果です。条件に合う段落が、角かっこの中の見出しの id と見出しの経路とともに返ります。
+同じノートに `--query` "region" を付けて実行した結果です。条件に合う段落が、角かっこの中の見出しの id と見出しの経路とともに返ります。
 
 **実行結果**
 
@@ -410,7 +410,7 @@ expl server fetch <id> --query "region" --json
 
 ノート、ダッシュボード、スライドは、本文、埋め込まれた各チャートの先頭の行、各アナリティクスの説明を Markdown で返します。metadata.charts と metadata.blocks に、チャートやアナリティクスの名前が入ります。データは、列、行数、サンプルの行、更新状況が入ります。
 
-長いノートは、--query で話題を探すか、--section で見出しを 1 つ指定して読みます。続きがあるときは、metadata.range.next_cursor の値を --cursor に渡します。metadata.truncated は、続きがあるときだけ含まれます。
+長いノートは、`--query` で話題を探すか、`--section` で見出しを 1 つ指定して読みます。続きがあるときは、metadata.range.next_cursor の値を `--cursor` に渡します。metadata.truncated は、続きがあるときだけ含まれます。
 
 <a id="fetch-trouble"></a>
 
@@ -418,7 +418,7 @@ expl server fetch <id> --query "region" --json
 
 | 症状 | 対処 |
 | --- | --- |
-| 本文が長くて、必要な部分が見つからない | --query で話題を探すか、metadata.toc の見出しを --section で指定します。 |
+| 本文が長くて、必要な部分が見つからない | `--query` で話題を探すか、metadata.toc の見出しを `--section` で指定します。 |
 | チャートやアナリティクスの名前が分からない | 結果の metadata.charts と metadata.blocks を確認します。 |
 | Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
@@ -446,7 +446,7 @@ expl server dataframe get-schema <id> [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--id` | 文字列 | 必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、--id で渡します。 |
+| `--id` | 文字列 | 必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、`--id` で渡します。 |
 | `--detail` | 文字列 |  | full: 説明、統計量、セマンティクス（行の意味や集計のルール）、dataset query で使える条件まで返します。light: 列の名前と型、行数だけを、小さく速く返します。値: `full`, `light` |
 | `--language` | 文字列 |  | 説明と定義を読む言語です。指定しないと、データの元の言語になります。その言語の文がないときは、もう一方の言語で返り、language_fallback が含まれます。値: `ja`, `en` |
 | `--include-unapproved` | 真偽値 |  | 所有者がまだ承認していない定義（下書きと AI の提案）も返します。データの所有者だけが使えます。公式の定義ではなく、ヒントです。 |
@@ -604,7 +604,7 @@ expl server dataframe get-schema <id> --json
 
 | 症状 | 対処 |
 | --- | --- |
-| dataset query が DATASET_UNAVAILABLE で失敗する | --detail full で、結果の query.available を確認します。false のデータは、サーバーでは問い合わせできません。 |
+| dataset query が DATASET_UNAVAILABLE で失敗する | `--detail` full で、結果の query.available を確認します。false のデータは、サーバーでは問い合わせできません。 |
 | Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server dataframe preview](#dataframe-preview)、[expl server dataset query](#dataset-query)
@@ -631,7 +631,7 @@ expl server dataframe preview <id> [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--id` | 文字列 | 必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、--id で渡します。 |
+| `--id` | 文字列 | 必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、`--id` で渡します。 |
 | `--offset` | 整数 |  | 読み飛ばす行数です。0 から数えます。 |
 | `--limit` | 整数 |  | 返す行数です。100 までです。 |
 
@@ -801,7 +801,7 @@ expl server dataset query [<dataset_id>] [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--dataset-id` | 文字列 | queries か datasets を使うとき以外は必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、--dataset-id で渡します。 |
+| `--dataset-id` | 文字列 | queries か datasets を使うとき以外は必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、`--dataset-id` で渡します。 |
 | `--mode` | 文字列 | queries を使わないときは必須 | rows: 条件に合う行を取得します。aggregate: dimensions でグループに分けて、metrics を計算します。値: `rows`, `aggregate` |
 | `--columns` | JSON | rows モードでは必須（結合のときは省略可） | rows だけで使います。返す列の名前を、1〜50 個、重ならないように指定します。結合するときは alias と column で書きます。結合のときに省くと、全部の列が返ります。 |
 | `--filters` | JSON |  | 絞り込みの条件です。条件 1 つか、\{ "and": \[...\] \} か \{ "or": \[...\] \}（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。結合するときは、結合のあとに適用されます。 |
@@ -820,7 +820,7 @@ expl server dataset query [<dataset_id>] [flags]
 
 ### JSON の引数の書き方
 
-以下は JSON の入力書式です。\< \> の部分をデータの id、列名、値に置き換えます。実行結果ではありません。コマンドの単引用符を使う例は bash 形式です。PowerShell や cmd では、引用符の書き方が bash と異なり、単引用符を使う例はそのまま動かないことがあります。その場合は、JSON をファイルに保存して、--input で渡してください。
+以下は JSON の入力書式です。\< \> の部分をデータの id、列名、値に置き換えます。実行結果ではありません。コマンドの単引用符を使う例は bash 形式です。PowerShell や cmd では、引用符の書き方が bash と異なり、単引用符を使う例はそのまま動かないことがあります。その場合は、JSON をファイルに保存して、`--input` で渡してください。
 
 #### 条件を指定する: filters
 
@@ -903,7 +903,7 @@ Sales Orders のデータ（id: hI6jK7lM8n）で実行した結果です。長�
 }
 ```
 
-件数の多い順に 5 地域が返りました。上限（--limit 5）で切ったので、result.has_more が true になり、RESULT_TRUNCATED の警告が付いています。残りの地域も見るときは、--limit を増やすか、条件で絞り込みます。
+件数の多い順に 5 地域が返りました。上限（`--limit` 5）で切ったので、result.has_more が true になり、RESULT_TRUNCATED の警告が付いています。残りの地域も見るときは、`--limit` を増やすか、条件で絞り込みます。
 
 #### 全体の行数を数える
 
@@ -947,7 +947,7 @@ Sales Orders のデータ（id: hI6jK7lM8n）で実行した結果です。長�
 | 症状 | 対処 |
 | --- | --- |
 | Each dimension must be an object like \{ "column": "region" \}. (INVALID_QUERY) | dimensions は、\{ "column": "列の名前" \} の形のオブジェクトの配列にします。 |
-| columns is required in rows mode. (INVALID_QUERY) | rows モードでは、返す列を --columns で指定します。 |
+| columns is required in rows mode. (INVALID_QUERY) | rows モードでは、返す列を `--columns` で指定します。 |
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | metrics では、function と alias を指定します。count_rows 以外は column も指定します。 |
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias は必須です。英字、数字、_ だけで、数字で始めず、64 文字までにします。 |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | sort の項目では、出力の列の名前を field で指定します。column、by、alias、name、metric は使えません。 |
@@ -978,7 +978,7 @@ expl server dataframe export <dataset_id> [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--dataset-id` | 文字列 | 必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、--dataset-id で渡します。 |
+| `--dataset-id` | 文字列 | 必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、`--dataset-id` で渡します。 |
 | `--format` | 文字列 |  | ファイルの形式です。既定は csv です（UTF-8 の BOM つきで、Excel で正しく開けます）。値: `csv`, `parquet` |
 | `--mode` | 文字列 | 必須 | rows: 条件に合う行を書き出します。aggregate: dimensions でグループに分けて、metrics を計算した結果を書き出します。値: `rows`, `aggregate` |
 | `--columns` | 値の配列 |  | rows だけで使います。書き出す列の名前を、1〜50 個、重ならないように指定します。省くと、すべての列を書き出します。 |
@@ -1045,7 +1045,7 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 
 ### 出力と上限
 
-15 分で切れるダウンロードリンクが返ります。リンクを使えるのは、サインインしている本人だけです。ファイルの保存先は --output で指定できます。
+15 分で切れるダウンロードリンクが返ります。リンクを使えるのは、サインインしている本人だけです。ファイルの保存先は `--output` で指定できます。
 
 ページ送りはありません。結果が大きすぎて dataset query で読めないときに、このコマンドを使います。
 
@@ -1083,11 +1083,11 @@ expl server dataframe get-wrangling <id> [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--id` | 文字列 | 必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、--id で渡します。 |
-| `--steps` | 値の配列 |  | 詳しく返すステップの ref（概要に出る s3 など）です。1〜20 個で、重ならないように指定します。--column とは一緒に使えません。 |
-| `--column` | 文字列 |  | 最終的なデータのこの列を作ったステップ、変えたステップだけを、詳しく返します。列の名前は正確に書きます。--steps とは一緒に使えません。 |
-| `--include-scripts` | 真偽値 | --steps か --column のときだけ | ステップの R のコードも返します。行の共有が許されているデータだけです。 |
-| `--cursor` | 文字列 | --steps、--column とは一緒に使えません | 1 回の結果に収まらなかった概要の続きを取得するときに、前の結果の range.next_cursor を渡します。 |
+| `--id` | 文字列 | 必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、`--id` で渡します。 |
+| `--steps` | 値の配列 |  | 詳しく返すステップの ref（概要に出る s3 など）です。1〜20 個で、重ならないように指定します。`--column` とは一緒に使えません。 |
+| `--column` | 文字列 |  | 最終的なデータのこの列を作ったステップ、変えたステップだけを、詳しく返します。列の名前は正確に書きます。`--steps` とは一緒に使えません。 |
+| `--include-scripts` | 真偽値 | `--steps` か `--column` のときだけ | ステップの R のコードも返します。行の共有が許されているデータだけです。 |
+| `--cursor` | 文字列 | `--steps`、`--column` とは一緒に使えません | 1 回の結果に収まらなかった概要の続きを取得するときに、前の結果の range.next_cursor を渡します。 |
 | `--language` | 文字列 |  | 説明と定義を読む言語です。指定しないと、データの元の言語になります。値: `ja`, `en` |
 
 <a id="dataframe-get-wrangling-examples"></a>
@@ -1119,11 +1119,11 @@ order_date は、最終的なデータの列の名前に置き換えます。
 
 ### 出力と上限
 
---steps も --column も付けないと、結果は概要です。概要には、全体の説明、すべてのステップを順に 1 行ずつ（種類、ラベル、何をするか）、読み込んだデータと結合したデータ、列ごとにどのステップが作ったか、変えたかの索引が入ります。ステップを詳しく見るには（完全な説明、式、フィルターの条件や結合のキーなどの設定）、--steps（概要に出る ref）か --column を付けて、もう一度実行します。ref は、データの今のバージョンでだけ有効です。
+`--steps` も `--column` も付けないと、結果は概要です。概要には、全体の説明、すべてのステップを順に 1 行ずつ（種類、ラベル、何をするか）、読み込んだデータと結合したデータ、列ごとにどのステップが作ったか、変えたかの索引が入ります。ステップを詳しく見るには（完全な説明、式、フィルターの条件や結合のキーなどの設定）、`--steps`（概要に出る ref）か `--column` を付けて、もう一度実行します。ref は、データの今のバージョンでだけ有効です。
 
 全体の説明は AI が書いたもので、人は確認していません。引用するときは、そのことを伝えてください。所有者が承認した加工の説明は、dataframe get-schema のセマンティクスで読みます。
 
-1 回の結果に収まらない概要は、--cursor で続きを取得します。ステップを読めないときは、結果にその理由が入ります。データを公開したときに記録されていなかった、所有者が共有していない、公開した人がデータの行を共有していない、のいずれかです。
+1 回の結果に収まらない概要は、`--cursor` で続きを取得します。ステップを読めないときは、結果にその理由が入ります。データを公開したときに記録されていなかった、所有者が共有していない、公開した人がデータの行を共有していない、のいずれかです。
 
 <a id="dataframe-get-wrangling-trouble"></a>
 
@@ -1131,9 +1131,9 @@ order_date は、最終的なデータの列の名前に置き換えます。
 
 | 症状 | 対処 |
 | --- | --- |
-| Use either steps or column, not both. (INVALID_PARAMETER) | --steps と --column は、どちらか一方だけを渡します。 |
-| include_scripts works only together with steps or column. (INVALID_PARAMETER) | --include-scripts を使うときは、--steps か --column も付けます。 |
-| cursor belongs to an older version of this data. Call again without cursor. (INVALID_PARAMETER) | データが公開し直されています。--cursor を付けずに、もう一度実行します。 |
+| Use either steps or column, not both. (INVALID_PARAMETER) | `--steps` と `--column` は、どちらか一方だけを渡します。 |
+| include_scripts works only together with steps or column. (INVALID_PARAMETER) | `--include-scripts` を使うときは、`--steps` か `--column` も付けます。 |
+| cursor belongs to an older version of this data. Call again without cursor. (INVALID_PARAMETER) | データが公開し直されています。`--cursor` を付けずに、もう一度実行します。 |
 | Run "expl server login". | サインインしていないか、トークンが拒否されています。expl server login を実行します。 |
 
 関連: [expl server dataframe get-schema](#dataframe-get-schema)、[expl server dataset query](#dataset-query)
@@ -1160,7 +1160,7 @@ expl server chart get-data <id> [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--id` | 文字列 | 必須 | チャートを含むノート、ダッシュボード、スライドの id です。チャート単体で公開したものは、その id です。コマンドのすぐあとに書くか、--id で渡します。 |
+| `--id` | 文字列 | 必須 | チャートを含むノート、ダッシュボード、スライドの id です。チャート単体で公開したものは、その id です。コマンドのすぐあとに書くか、`--id` で渡します。 |
 | `--chart` | 文字列 | ノート、ダッシュボード、スライドの中のものを取るときは必須 | ノート、ダッシュボード、スライドの中のチャートの名前です。fetch の結果の metadata.charts\[\].name にあります。 |
 | `--offset` | 整数 |  | 読み飛ばす行数です。0 から数えます。 |
 | `--limit` | 整数 |  | 返す行数です。100 までです。 |
@@ -1321,7 +1321,7 @@ expl server chart get-image <id> [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--id` | 文字列 | 必須 | チャートを含むノート、ダッシュボード、スライドの id です。チャート単体で公開したものは、その id です。コマンドのすぐあとに書くか、--id で渡します。 |
+| `--id` | 文字列 | 必須 | チャートを含むノート、ダッシュボード、スライドの id です。チャート単体で公開したものは、その id です。コマンドのすぐあとに書くか、`--id` で渡します。 |
 | `--chart` | 文字列 | ノート、ダッシュボード、スライドの中のものを取るときは必須 | ノート、ダッシュボード、スライドの中のチャートの名前です。fetch の結果の metadata.charts\[\].name にあります。 |
 
 <a id="chart-get-image-examples"></a>
@@ -1413,7 +1413,7 @@ expl server chart get-image <id> --chart <chart> --json
 
 ### 出力と上限
 
-画像は、公開したときに保存されたもので、描き直されません。そのため、データより古いことがあります。結果の result.image.may_be_stale で確かめます。画像は、expl を動かしているコンピューターに保存され、結果の image_path がその場所を示します。保存先は --output で指定できます。正確な数値は、画像ではなく chart get-data で読みます。
+画像は、公開したときに保存されたもので、描き直されません。そのため、データより古いことがあります。結果の result.image.may_be_stale で確かめます。画像は、expl を動かしているコンピューターに保存され、結果の image_path がその場所を示します。保存先は `--output` で指定できます。正確な数値は、画像ではなく chart get-data で読みます。
 
 ページ送りはありません。
 
@@ -1450,7 +1450,7 @@ expl server analytics get-result <id> [flags]
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
-| `--id` | 文字列 | 必須 | アナリティクスを含むノート、ダッシュボード、スライドの id です。アナリティクス単体で公開したものは、その id です。コマンドのすぐあとに書くか、--id で渡します。 |
+| `--id` | 文字列 | 必須 | アナリティクスを含むノート、ダッシュボード、スライドの id です。アナリティクス単体で公開したものは、その id です。コマンドのすぐあとに書くか、`--id` で渡します。 |
 | `--analytics` | 文字列 | ノート、ダッシュボード、スライドの中のものを取るときは必須 | ノート、ダッシュボード、スライドの中のアナリティクスの名前です。fetch の結果の metadata.blocks\[\].name にあります。 |
 | `--tables` | 値の配列 |  | 返す表の id のリストです（available_tables\[\].id）。指定しないと、分析の答えになる表を返します。 |
 | `--limit` | 整数 |  | 表ごとの行数の上限です。100 までです。 |
@@ -1469,7 +1469,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 
 \<id\> はノートなどの id、\<analytics\> は fetch の結果にあるアナリティクスの名前に置き換えます。
 
-実行結果は、単独で公開されているアナリティクス Analytics 1 - Correlations（id が Analytics-1-Correlations-aB1cD2eF）で実行したものです。単独で公開されているため、--analytics は指定していません。長い出力は省略しています。この例では、説明文は空にしています。
+実行結果は、単独で公開されているアナリティクス Analytics 1 - Correlations（id が Analytics-1-Correlations-aB1cD2eF）で実行したものです。単独で公開されているため、`--analytics` は指定していません。長い出力は省略しています。この例では、説明文は空にしています。
 
 **実行結果**
 
@@ -1627,7 +1627,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 
 モデルの定義（目的変数、説明変数、N）、安定した列 id を持つ結果の表、学習用とテスト用に分けた主要な統計量、実行したときの設定、説明の文が入ります。説明の文には、数値から作ったものか、AI が作ったものかの印が付きます。数値は表示されたとおりの桁で、係数は標準化されていません。
 
-表ごとの行数を --limit で絞れます。ページ送りはありません。
+表ごとの行数を `--limit` で絞れます。ページ送りはありません。
 
 <a id="analytics-get-result-trouble"></a>
 

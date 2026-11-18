@@ -23,7 +23,7 @@ support@exploratory.io へ、次を送ってください。Exploratory Desktop �
 | 表示される内容 | 対処 |
 | --- | --- |
 | exploratory-mcp が見つからない | MCP をオンにした Exploratory Desktop v17 以降を起動します。コマンドはアプリの起動時に自動で入ります。そのあと、AI ツールを起動し直します。 |
-| AI ツールから exploratory-mcp が見つからない（macOS） | Exploratory をディスクイメージから開いています。/Applications か ~/Applications に移して起動し直すと、起動時にコマンドが入ります。 |
+| AI ツールから exploratory-mcp が見つからない（macOS） | Exploratory をディスクイメージから開いています。/Applications か \~/Applications に移して起動し直すと、起動時にコマンドが入ります。 |
 | カードに「インストールできませんでした。」と表示される | 「詳細」にマウスを載せて、出力を確かめます。理由の文に従って直し、「もう一度試す」を選びます。詳しくは [プラグインのインストール](/ja/mcp/desktop/install#failure) を参照してください。 |
 | 別の場所から登録された exploratory があります（…）。「…」で削除してから、もう一度「インストール」を押してください。 | メッセージに出ているコマンドで削除してから、もう一度「インストール」を選びます。 |
 | 組織の設定で、このマーケットプレイスが許可されていない可能性があります。管理者に確認してください。 | 管理者に確認します。 |

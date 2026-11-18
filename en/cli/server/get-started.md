@@ -48,7 +48,7 @@ Write the search words right after the command. A value written without a flag n
 expl server search "Sales Orders" --scope all --type data
 ```
 
---scope all searches content published by other people as well as your own. --type data limits the result to data. An empty result means that nothing matched; it is not a sign-in error. To search for notes, use --type note.
+`--scope` all searches content published by other people as well as your own. `--type` data limits the result to data. An empty result means that nothing matched; it is not a sign-in error. To search for notes, use `--type` note.
 
 **Result**
 
@@ -65,7 +65,7 @@ hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  dat
 expl server fetch <id> --json
 ```
 
-Replace \<id\> with an id from the search result. --json prints the server's result as JSON. In the result below, IDs, URLs, and names are replaced for illustration. Long output is trimmed, so the JSON below is an excerpt, not a complete JSON.
+Replace \<id\> with an id from the search result. `--json` prints the server's result as JSON. In the result below, IDs, URLs, and names are replaced for illustration. Long output is trimmed, so the JSON below is an excerpt, not a complete JSON.
 
 **Result**
 
@@ -79,7 +79,7 @@ Replace \<id\> with an id from the search result. --json prints the server's res
 }
 ```
 
-The result holds the text. For a note, dashboard or slide it can also hold the list of headings (metadata.toc), depending on its length and your options. When it is missing, add --include-toc to return it, or get the heading ids with --query.
+The result holds the text. For a note, dashboard or slide it can also hold the list of headings (metadata.toc), depending on its length and your options. When it is missing, add `--include-toc` to return it, or get the heading ids with `--query`.
 
 ### 5. Aggregate (optional)
 
@@ -127,12 +127,12 @@ The result includes the data version and update time. Check which data the numbe
 
 ## If something does not work
 
-- The search result is empty: nothing matched. It is not a sign-in error. Change the search words, or use --scope all.
-- You cannot open a browser: in a script or CI, where there is no browser, sign in with an API key instead: expl server login --with-token (see [API keys](/en/cli/server/token)). For a machine that cannot open a browser, see [Sign in](/en/cli/server/login#nobrowser).
+- The search result is empty: nothing matched. It is not a sign-in error. Change the search words, or use `--scope` all.
+- You cannot open a browser: in a script or CI, where there is no browser, sign in with an API key instead: `expl server login --with-token` (see [API keys](/en/cli/server/token)). For a machine that cannot open a browser, see [Sign in](/en/cli/server/login#nobrowser).
 - You see Run "expl server login".: you are not signed in, or the saved login was rejected. Run expl server login.
 - You see expl: command not found: open a new terminal and try again.
 - You do not know which id to use: use an id from the search result.
-- The list of headings (metadata.toc) is missing from a note: add --include-toc, or get the heading ids with --query.
+- The list of headings (metadata.toc) is missing from a note: add `--include-toc`, or get the heading ids with `--query`.
 
 See [Troubleshooting](/en/cli/server/troubleshooting) for more.
 

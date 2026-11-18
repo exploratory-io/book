@@ -43,7 +43,7 @@ title: "Antigravity につなぐ"
    }
    ```
 
-コマンドラインの agy で使うときは、~/.gemini/config/mcp_config.json に、同じ内容を書きます。
+コマンドラインの agy で使うときは、\~/.gemini/config/mcp_config.json に、同じ内容を書きます。
 
 ### サインインを始める
 

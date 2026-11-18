@@ -10,5 +10,5 @@ Connect an AI app to Exploratory through MCP. There are two sides, and the first
 | What it does | Reads. It cannot create, edit, publish or delete | Creates and edits: data frames, wrangling steps, charts, analytics, notes and dashboards |
 | Where you set it up | In your AI app, with the server URL and a sign-in in your browser | In Exploratory Desktop, System Settings, with the plugin installation card |
 
-- [Server](/en/mcp/server/server) - Read content published on exploratory.io.
-- [Desktop](/en/mcp/desktop/desktop) - Create and edit projects in Exploratory Desktop on your computer.
+- [Server](/en/mcp/server) - Read content published on exploratory.io.
+- [Desktop](/en/mcp/desktop) - Create and edit projects in Exploratory Desktop on your computer.

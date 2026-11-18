@@ -22,7 +22,7 @@ It takes about 5 minutes. You need an Exploratory account and Cursor.
 
 If your app's official directory lists Exploratory Server, follow its installation instructions. Otherwise, add only the server by hand, without the skill, as follows. `exploratory@exploratory` is for Desktop.
 
-1. Open ~/.cursor/mcp.json (or .cursor/mcp.json in a project).
+1. Open \~/.cursor/mcp.json (or .cursor/mcp.json in a project).
 2. Add the `exploratory-server` entry below. If `mcpServers` already exists in the file, add only the `exploratory-server` entry inside it and keep the other server settings. The example shows a complete new file.
 
    ```text

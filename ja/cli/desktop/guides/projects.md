@@ -10,13 +10,13 @@ title: "プロジェクトを選ぶ"
 
 | # | 指定 | 例 |
 | --- | --- | --- |
-| 1 | --project \<id または名前\> | expl dashboard list --project "Sales Analysis" |
+| 1 | `--project` \<id または名前\> | `expl dashboard list --project "Sales Analysis"` |
 | 2 | 環境変数 EXPL_PROJECT | EXPL_PROJECT="Sales Analysis" |
-| 3 | expl project use で決めた既定のプロジェクト | expl project use "Sales Analysis" |
+| 3 | expl project use で決めた既定のプロジェクト | `expl project use "Sales Analysis"` |
 
 上にあるものが優先されます。
 
-例外があります。プロジェクトの id を位置引数に取るコマンドでは、その id が優先されます。それ以外のコマンドでは、--project が --input の JSON の project_id より優先されます。--project がなければ、--input の JSON の project_id がそのまま使われます。プロジェクトが省略できるコマンドは、EXPL_PROJECT と、expl project use で決めた既定を使いません。expl lang は、この 3 つのどれも指定されていないとき、開いているプロジェクトも使います。
+例外があります。プロジェクトの id を位置引数に取るコマンドでは、その id が優先されます。それ以外のコマンドでは、`--project` が `--input` の JSON の project_id より優先されます。`--project` がなければ、`--input` の JSON の project_id がそのまま使われます。プロジェクトが省略できるコマンドは、EXPL_PROJECT と、expl project use で決めた既定を使いません。expl lang は、この 3 つのどれも指定されていないとき、開いているプロジェクトも使います。
 
 <a id="name"></a>
 

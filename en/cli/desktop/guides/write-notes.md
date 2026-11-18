@@ -34,13 +34,13 @@ Replace \<chart_id\> and \<analytics_id\> with the ids you got when you created 
 
 ### 2. Create the note
 
---title and --markdown are required. @file reads the long text from a file ([Pass arguments and JSON](/en/cli/desktop/guides/input)).
+`--title` and `--markdown` are required. @file reads the long text from a file ([Pass arguments and JSON](/en/cli/desktop/guides/input)).
 
 ```sh
 expl note add --title "Sales Orders report" --markdown @report.md
 ```
 
-The result carries the id of the note (note_id). The note opens in Desktop. A note with the same title already in the project is not overwritten: it stops with NOTE_TITLE_EXISTS and writes nothing, so use another title. --folder puts the note in an existing folder, and --settings takes a JSON object of the note settings (the table of contents and so on).
+The result carries the id of the note (note_id). The note opens in Desktop. A note with the same title already in the project is not overwritten: it stops with NOTE_TITLE_EXISTS and writes nothing, so use another title. `--folder` puts the note in an existing folder, and `--settings` takes a JSON object of the note settings (the table of contents and so on).
 
 ### 3. Add to it or rewrite it
 
@@ -48,7 +48,7 @@ The result carries the id of the note (note_id). The note opens in Desktop. A no
 expl note edit <note_id> --markdown @more.md
 ```
 
-By default the text is appended. --mode replace replaces the whole body. --title renames the note. To find an id, run expl note list.
+By default the text is appended. `--mode` replace replaces the whole body. `--title` renames the note. To find an id, run expl note list.
 
 ### 4. Read it back
 
@@ -70,7 +70,7 @@ get returns the Markdown body, the folder and the dependencies. get-image return
 | NOTE_NOT_FOUND | The id is wrong. Copy it from expl note list. |
 | A figure is blank | The embed tag has a wrong id, or is not on a line of its own. |
 
-For the arguments of any command, run expl \<command\> --help or expl tools describe "\<command\>".
+For the arguments of any command, run expl \<command\> `--help` or expl tools describe "\<command\>".
 
 <a id="related"></a>
 

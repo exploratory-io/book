@@ -21,7 +21,7 @@ AI ツールから、exploratory.io に公開されたノート、ダッシュ�
 
 - コンテンツの作成、編集、公開、削除
 - 公開されたときと違うパラメータの値での、チャートやアナリティクスの再計算
-- Exploratory Server に公開されていないものの読み取り。Exploratory Desktop の中だけにあるプロジェクトなどです。これらには、別の [Desktop の MCP](/ja/mcp/desktop/desktop) を使います。
+- Exploratory Server に公開されていないものの読み取り。Exploratory Desktop の中だけにあるプロジェクトなどです。これらには、別の [Desktop の MCP](/ja/mcp/desktop) を使います。
 
 <a id="url"></a>
 
@@ -44,4 +44,4 @@ https://exploratory.io/mcp
 - [リファレンス](/ja/mcp/server/reference) - 使える道具、制限とエラー、データと権限を調べます。
 - [トラブルシューティング](/ja/mcp/server/troubleshooting) - 症状から対処を探します。
 
-あなたのコンピューターの Exploratory Desktop でプロジェクトを作り、編集するときは、[Desktop の MCP](/ja/mcp/desktop/desktop) を使います。ターミナルやスクリプトから使うときは、[Exploratory CLI](/ja/cli/server/server) を参照してください。
+あなたのコンピューターの Exploratory Desktop でプロジェクトを作り、編集するときは、[Desktop の MCP](/ja/mcp/desktop) を使います。ターミナルやスクリプトから使うときは、[Exploratory CLI](/ja/cli/server) を参照してください。

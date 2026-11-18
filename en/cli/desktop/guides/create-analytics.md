@@ -34,7 +34,7 @@ Replace \<analysis_type\> with an id from step 1. The result shows the slots (wh
 
 ### 3. Create it
 
---analysis-type and --slots are required. --slots is a JSON object that puts column names in the slots, with the slot name as the key: a string for a slot of one column, an array for a slot of several columns. --settings takes a JSON object of the setting names from step 2 (a true or false setting is the string "TRUE" or "FALSE").
+`--analysis-type` and `--slots` are required. `--slots` is a JSON object that puts column names in the slots, with the slot name as the key: a string for a slot of one column, an array for a slot of several columns. `--settings` takes a JSON object of the setting names from step 2 (a true or false setting is the string "TRUE" or "FALSE").
 
 ```sh
 expl analytics add --data-frame-id <dataframe_id> --analysis-type <analysis_type> --slots @slots.json --title "Sales drivers"
@@ -55,7 +55,7 @@ expl analytics list <dataframe_id>
 expl analytics get <analytics_id>
 ```
 
-list returns the analytics of a data frame, with the output types each one has (availableOutputTypes). get returns the type, the settings and the outputs, with the data as CSV. To read another output, pass a value of availableOutputTypes with --output-type.
+list returns the analytics of a data frame, with the output types each one has (availableOutputTypes). get returns the type, the settings and the outputs, with the data as CSV. To read another output, pass a value of availableOutputTypes with `--output-type`.
 
 ### 5. Change it
 
@@ -63,7 +63,7 @@ list returns the analytics of a data frame, with the output types each one has (
 expl analytics edit <analytics_id> --settings @settings.json
 ```
 
-Pass only what changes: --slots, --settings, --title, --analysis-type and so on. It runs the analytics again; if that fails, the definition goes back to the one before.
+Pass only what changes: `--slots`, `--settings`, `--title`, `--analysis-type` and so on. It runs the analytics again; if that fails, the definition goes back to the one before.
 
 <a id="trouble"></a>
 
@@ -72,11 +72,11 @@ Pass only what changes: --slots, --settings, --title, --analysis-type and so on.
 | What you see | What to do |
 | --- | --- |
 | PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](/en/cli/desktop/exit-codes). |
-| NO_DATA_FRAME | Add --data-frame-id \<dataframe_id\>. |
+| NO_DATA_FRAME | Add `--data-frame-id` \<dataframe_id\>. |
 | An unknown name is rejected | Look up the slot or setting name again with expl analytics get-template. |
 | The slots are empty | Analytics cannot be created without columns in its slots. |
 
-For the arguments of any command, run expl \<command\> --help or expl tools describe "\<command\>".
+For the arguments of any command, run expl \<command\> `--help` or expl tools describe "\<command\>".
 
 <a id="related"></a>
 

@@ -11,7 +11,7 @@ expl operates the Exploratory Desktop running on this computer, from your termin
 
 > Every command on this page starts with expl and works on the Exploratory Desktop running on this computer. There is no sign-in step: it works when Desktop is running, you are signed in, and you have turned on the CLI in System Settings > MCP / CLI and saved.
 >
-> To read content on exploratory.io, see [Server commands](/en/cli/server/server). To do the same from an AI tool, see [MCP Desktop](/en/mcp/desktop/desktop). To read content published on exploratory.io from an AI tool, see [MCP Server](/en/mcp/server/server).
+> To read content on exploratory.io, see [Server commands](/en/cli/server). To do the same from an AI tool, see [MCP Desktop](/en/mcp/desktop). To read content published on exploratory.io from an AI tool, see [MCP Server](/en/mcp/server).
 
 <a id="difference"></a>
 

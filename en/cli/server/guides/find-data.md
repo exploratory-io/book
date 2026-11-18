@@ -16,23 +16,23 @@ You have signed in with expl server login (see [Sign in](/en/cli/server/login)).
 
 ### 1. Search
 
-Write the search words right after the command. --scope all searches content that other people published as well as your own, and --type data narrows the result to data.
+Write the search words right after the command. `--scope` all searches content that other people published as well as your own, and `--type` data narrows the result to data.
 
 ```sh
 expl server search "Sales Orders" --scope all --type data
 ```
 
---type takes all, note, dashboard, slide, chart, analytics or data. --scope takes all, mine, shared or team (with --scope team, add --team \<team name\>). --semantic searches by meaning instead of by keyword. --json prints the result as JSON.
+`--type` takes all, note, dashboard, slide, chart, analytics or data. `--scope` takes all, mine, shared or team (with `--scope` team, add `--team` \<team name\>). `--semantic` searches by meaning instead of by keyword. `--json` prints the result as JSON.
 
 The result is a table of id, title, URL, type and description. An empty result means nothing matched; it is not a sign-in error.
 
-To list your own content, leave the search words empty and add --scope mine.
+To list your own content, leave the search words empty and add `--scope` mine.
 
 ```sh
 expl server search "" --scope mine --limit 50 --json
 ```
 
---limit is the maximum number of results, up to 50. When has_more in the JSON is true, pass next_offset to --offset to get the next page.
+`--limit` is the maximum number of results, up to 50. When has_more in the JSON is true, pass next_offset to `--offset` to get the next page.
 
 ### 2. Take the id
 
@@ -62,11 +62,11 @@ To read a note, its charts and its analytics, see [Read notes](/en/cli/server/gu
 
 | What you see | What to do |
 | --- | --- |
-| The result is empty | Check the search words, then try --scope all. Try a shorter word, or --semantic. |
+| The result is empty | Check the search words, then try `--scope` all. Try a shorter word, or `--semantic`. |
 | A sign-in error | Run expl server login. See [Sign in](/en/cli/server/login). |
 | The id is not found | Use the id of the search result as it is. A similar title is not the same item. |
 
-For the arguments of a command, run expl server \<command\> --help.
+For the arguments of a command, run expl server \<command\> `--help`.
 
 <a id="related"></a>
 

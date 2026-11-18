@@ -11,7 +11,7 @@ expl は、このコンピューターで起動している Exploratory Desktop 
 
 > このページのコマンドは、すべて expl で始まり、このコンピューターで起動している Exploratory Desktop を対象にします。サインインの操作はありません。Desktop を起動してサインインし、システム設定 > MCP / CLI で CLI をオンにして保存していれば使えます。
 >
-> exploratory.io のコンテンツを読むときは、[Server のコマンド](/ja/cli/server/server)を参照してください。AI ツールから同じことをするには、[MCP Desktop](/ja/mcp/desktop/desktop) を参照してください。exploratory.io に公開したコンテンツを AI ツールから読むには、[MCP Server](/ja/mcp/server/server) を参照してください。
+> exploratory.io のコンテンツを読むときは、[Server のコマンド](/ja/cli/server)を参照してください。AI ツールから同じことをするには、[MCP Desktop](/ja/mcp/desktop) を参照してください。exploratory.io に公開したコンテンツを AI ツールから読むには、[MCP Server](/ja/mcp/server) を参照してください。
 
 <a id="difference"></a>
 

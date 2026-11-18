@@ -34,7 +34,7 @@ expl analytics get-template --analysis-type <analysis_type>
 
 ### 3. 作る
 
---analysis-type と --slots が必須です。--slots は、枠の名前をキーにして、列名を入れた JSON オブジェクトです。列が 1 つの枠は文字列、複数の列の枠は配列にします。--settings には、手順 2 の設定の名前の JSON オブジェクトを渡します（真偽値の設定は、文字列の "TRUE" か "FALSE" です）。
+`--analysis-type` と `--slots` が必須です。`--slots` は、枠の名前をキーにして、列名を入れた JSON オブジェクトです。列が 1 つの枠は文字列、複数の列の枠は配列にします。`--settings` には、手順 2 の設定の名前の JSON オブジェクトを渡します（真偽値の設定は、文字列の "TRUE" か "FALSE" です）。
 
 ```sh
 expl analytics add --data-frame-id <dataframe_id> --analysis-type <analysis_type> --slots @slots.json --title "売上に効く要因"
@@ -55,7 +55,7 @@ expl analytics list <dataframe_id>
 expl analytics get <analytics_id>
 ```
 
-list は、データフレームのアナリティクスを、それぞれが持つ出力の種類（availableOutputTypes）つきで返します。get は、種類、設定、出力を、データを CSV にして返します。ほかの出力を読むときは、availableOutputTypes の値を --output-type に渡します。
+list は、データフレームのアナリティクスを、それぞれが持つ出力の種類（availableOutputTypes）つきで返します。get は、種類、設定、出力を、データを CSV にして返します。ほかの出力を読むときは、availableOutputTypes の値を `--output-type` に渡します。
 
 ### 5. 変更する
 
@@ -63,7 +63,7 @@ list は、データフレームのアナリティクスを、それぞれが持
 expl analytics edit <analytics_id> --settings @settings.json
 ```
 
-変えるものだけを渡します（--slots、--settings、--title、--analysis-type など）。アナリティクスを実行し直します。実行し直しに失敗したときは、直す前の定義に戻ります。
+変えるものだけを渡します（`--slots`、`--settings`、`--title`、`--analysis-type` など）。アナリティクスを実行し直します。実行し直しに失敗したときは、直す前の定義に戻ります。
 
 <a id="trouble"></a>
 
@@ -72,11 +72,11 @@ expl analytics edit <analytics_id> --settings @settings.json
 | 状況 | 対処 |
 | --- | --- |
 | PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](/ja/cli/desktop/exit-codes)を参照してください。 |
-| NO_DATA_FRAME | --data-frame-id \<dataframe_id\> を付けます。 |
+| NO_DATA_FRAME | `--data-frame-id` \<dataframe_id\> を付けます。 |
 | 未知の名前を指定すると拒否される | 枠や設定の名前を、expl analytics get-template で、もう一度調べます。 |
 | 枠が空 | 枠に列がないと、アナリティクスは作れません。 |
 
-コマンドの引数は、expl \<コマンド\> --help または expl tools describe "\<コマンド\>" で確認します。
+コマンドの引数は、`expl <コマンド> --help` または `expl tools describe "<コマンド>"` で確認します。
 
 <a id="related"></a>
 

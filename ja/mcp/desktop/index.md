@@ -27,7 +27,7 @@ AI ツールから、あなたのコンピューターの Exploratory Desktop �
 
 - Exploratory Desktop v17 以降。サインインして、起動しておきます
 - PATH にある exploratory-mcp コマンド。プラグインが、このコマンドを起動します。Desktop の起動時に、自動で使える場所（PATH）に入ります。操作は要りません
-- macOS では、ディスクイメージから開いたままだとコマンドが自動で入りません。Desktop を /Applications か ~/Applications に移して起動します
+- macOS では、ディスクイメージから開いたままだとコマンドが自動で入りません。Desktop を /Applications か \~/Applications に移して起動します
 - Claude Code で使う場合は、PATH にある node。プラグインのレビューのフックが使います
 - AI ツール: Claude Code、Codex、Cursor、Antigravity
 
@@ -40,4 +40,4 @@ AI ツールから、あなたのコンピューターの Exploratory Desktop �
 - [リファレンス](/ja/mcp/desktop/reference) - 使える道具、制限とエラー、データと権限を調べます。
 - [トラブルシューティング](/ja/mcp/desktop/troubleshooting) - 表示されたメッセージから対処を探します。
 
-exploratory.io に公開された内容を読むときは、[Server の MCP](/ja/mcp/server/server) を使います。
+exploratory.io に公開された内容を読むときは、[Server の MCP](/ja/mcp/server) を使います。

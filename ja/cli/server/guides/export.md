@@ -46,9 +46,9 @@ expl server dataframe export <dataset_id> --mode rows --limit 5 --json
 }
 ```
 
-ダウンロードリンクは 15 分間有効で、サインインしている同じユーザーだけが使用できます。形式は --format で指定します。既定は csv で、UTF-8（BOM 付き）のため、Excel で正しく開けます。ファイルの保存先は --output で指定します。
+ダウンロードリンクは 15 分間有効で、サインインしている同じユーザーだけが使用できます。形式は `--format` で指定します。既定は csv で、UTF-8（BOM 付き）のため、Excel で正しく開けます。ファイルの保存先は `--output` で指定します。
 
-上の例は、サーバー上にファイルを作り、ダウンロードリンクを返します。手元のコンピューターには何も保存されません。手元に保存するときは、--output を付けます。
+上の例は、サーバー上にファイルを作り、ダウンロードリンクを返します。手元のコンピューターには何も保存されません。手元に保存するときは、`--output` を付けます。
 
 ```sh
 expl server dataframe export <dataset_id> --mode rows --limit 5 --output rows.csv --json

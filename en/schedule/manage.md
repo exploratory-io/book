@@ -5,7 +5,7 @@ sidebarTitle: "Manage Schedules"
 
 
 
-In order to schedule your insight, you need to publish your insight to the server first. See the [document](/en/share/share) for more details.
+In order to schedule your insight, you need to publish your insight to the server first. See the [document](/en/share) for more details.
 
 
 # Manage Schedules

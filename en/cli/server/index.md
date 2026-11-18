@@ -9,9 +9,9 @@ expl server reads the notes, dashboards and data published on exploratory.io fro
 
 ## What this is for
 
-> This page covers Exploratory Server only. For Exploratory Desktop, see [CLI Desktop](/en/cli/desktop/desktop) and [MCP Desktop](/en/mcp/desktop/desktop).
+> This page covers Exploratory Server only. For Exploratory Desktop, see [CLI Desktop](/en/cli/desktop) and [MCP Desktop](/en/mcp/desktop).
 >
-> To connect from an AI tool, see [MCP Server](/en/mcp/server/server).
+> To connect from an AI tool, see [MCP Server](/en/mcp/server).
 
 <a id="start"></a>
 
@@ -27,4 +27,4 @@ expl server reads the notes, dashboards and data published on exploratory.io fro
 ## Use with AI
 
 - [Use from AI agents](/en/cli/server/guides/agents) - Teach an AI that can run shell commands how to use expl.
-- [MCP Server](/en/mcp/server/server) - Read published content from an AI tool.
+- [MCP Server](/en/mcp/server) - Read published content from an AI tool.

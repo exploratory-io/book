@@ -30,7 +30,7 @@ MCP のスイッチと「作成、変更、削除を許可する」の設定は�
 
 ## Server と Desktop の使い分け
 
-Desktop は手元のプロジェクトを対象にします。exploratory.io に公開した内容は、[Server の MCP](/ja/mcp/server/server) で読みます。どちらか決まらない依頼では、プラグインのスキルが先に確かめます。たとえば、exploratory.io のデータから図を作る依頼では、「Exploratory Desktop で作りますか」と聞かれることがあります。最初から「Exploratory Desktop で」と伝えると、聞かれずに進みます。
+Desktop は手元のプロジェクトを対象にします。exploratory.io に公開した内容は、[Server の MCP](/ja/mcp/server) で読みます。どちらか決まらない依頼では、プラグインのスキルが先に確かめます。たとえば、exploratory.io のデータから図を作る依頼では、「Exploratory Desktop で作りますか」と聞かれることがあります。最初から「Exploratory Desktop で」と伝えると、聞かれずに進みます。
 
 <a id="examples"></a>
 

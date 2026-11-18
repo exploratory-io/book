@@ -81,7 +81,7 @@ expl server fetch <id> --json
 
 ### 2. 数値を取得する
 
-確認した name を --chart に指定して、chart get-data を実行します。
+確認した name を `--chart` に指定して、chart get-data を実行します。
 
 ```sh
 expl server chart get-data <id> --chart <chart> --limit 5 --json
@@ -168,7 +168,7 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 
 rows に数値が、chart.encoding に各軸の列と集計方法が表示されます。context には、公開時点、データの時点、パラメーターの値が含まれます。数値は、公開されたときの値です。
 
-has_more が true の場合は、続きがあります。取得済みの行数を --offset に指定すると、続きを取得できます。1 回の呼び出しで取得できる行数は、最大 100 行です。
+has_more が true の場合は、続きがあります。取得済みの行数を `--offset` に指定すると、続きを取得できます。1 回の呼び出しで取得できる行数は、最大 100 行です。
 
 > rows に先頭 5 行が表示されていれば、数値を取得できています。
 
@@ -353,7 +353,7 @@ expl server chart get-image <id> --chart <chart> --json
 }
 ```
 
-画像は、公開したときに保存されたもので、データより古い場合があります。result.image.may_be_stale で確認します。画像は expl を実行しているコンピューターに保存され、保存先は image_path に表示されます。--output で保存先を指定することもできます。正確な数値は、画像ではなく chart get-data で取得します。
+画像は、公開したときに保存されたもので、データより古い場合があります。result.image.may_be_stale で確認します。画像は expl を実行しているコンピューターに保存され、保存先は image_path に表示されます。`--output` で保存先を指定することもできます。正確な数値は、画像ではなく chart get-data で取得します。
 
 > result.image に画像の情報が表示されていれば、取得できています。
 

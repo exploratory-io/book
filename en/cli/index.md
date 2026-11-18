@@ -10,8 +10,8 @@ Use Exploratory from a terminal with the expl command. There are two sides, and 
 | What it does | Reads published content (expl server) | Reads, and also creates, changes and publishes (expl) |
 | Sign-in | You sign in with expl server login | No sign-in of its own. Start Desktop, sign in to it, and turn on the CLI in System Settings |
 
-- [Server](/en/cli/server/server) - Read content published on exploratory.io.
-- [Desktop](/en/cli/desktop/desktop) - Work with projects in Exploratory Desktop on your computer.
+- [Server](/en/cli/server) - Read content published on exploratory.io.
+- [Desktop](/en/cli/desktop) - Work with projects in Exploratory Desktop on your computer.
 
 For first-time use, go to Get started. For Server, sign in first ([Sign in](/en/cli/server/login)).
 

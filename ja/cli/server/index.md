@@ -9,9 +9,9 @@ expl server は、exploratory.io に公開されたノート、ダッシュボ�
 
 ## 対象
 
-> このページは Exploratory Server のみを対象にします。Exploratory Desktop については、[CLI Desktop](/ja/cli/desktop/desktop) と [MCP Desktop](/ja/mcp/desktop/desktop) を参照してください。
+> このページは Exploratory Server のみを対象にします。Exploratory Desktop については、[CLI Desktop](/ja/cli/desktop) と [MCP Desktop](/ja/mcp/desktop) を参照してください。
 >
-> AI ツールからつなぐときは、[MCP Server](/ja/mcp/server/server) を参照してください。
+> AI ツールからつなぐときは、[MCP Server](/ja/mcp/server) を参照してください。
 
 <a id="start"></a>
 
@@ -27,4 +27,4 @@ expl server は、exploratory.io に公開されたノート、ダッシュボ�
 ## AI から使うなら
 
 - [AI エージェントから使う](/ja/cli/server/guides/agents) - シェルを使える AI に、expl の使い方を教えます。
-- [MCP Server](/ja/mcp/server/server) - AI ツールから、公開されたコンテンツを読みます。
+- [MCP Server](/ja/mcp/server) - AI ツールから、公開されたコンテンツを読みます。

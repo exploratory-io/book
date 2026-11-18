@@ -12,6 +12,6 @@ title: "リファレンス"
 | 何が送られ、何が記録されるか。誰の権限で動くか | [データと権限](/ja/mcp/server/data) |
 | 症状からの対処 | [トラブルシューティング](/ja/mcp/server/troubleshooting) |
 
-つなぎ方は、[はじめる](/ja/mcp/server/get-started)を参照してください。サーバーの URL は[サーバー URL](/ja/mcp/server/server#url)、API キーでの接続は[認証と API キー](/ja/mcp/server/auth)にあります。
+つなぎ方は、[はじめる](/ja/mcp/server/get-started)を参照してください。サーバーの URL は[サーバー URL](/ja/mcp/server#url)、API キーでの接続は[認証と API キー](/ja/mcp/server/auth)にあります。
 
 ターミナルのコマンドを調べるときは、CLI Server の[リファレンス](/ja/cli/server/reference)を参照してください。

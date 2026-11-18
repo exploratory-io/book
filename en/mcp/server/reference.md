@@ -12,6 +12,6 @@ Look up what you need about the tools, the limits and the permissions.
 | What is sent and recorded, and whose permissions it uses | [Data and permissions](/en/mcp/server/data) |
 | A fix by symptom | [Troubleshooting](/en/mcp/server/troubleshooting) |
 
-To connect, see [Get started](/en/mcp/server/get-started). The server address is in [Server URL](/en/mcp/server/server#url), and connecting with an API key is on [Authentication and API keys](/en/mcp/server/auth).
+To connect, see [Get started](/en/mcp/server/get-started). The server address is in [Server URL](/en/mcp/server#url), and connecting with an API key is on [Authentication and API keys](/en/mcp/server/auth).
 
 To look up terminal commands, see the CLI Server [Reference](/en/cli/server/reference).

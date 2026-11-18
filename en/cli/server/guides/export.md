@@ -46,9 +46,9 @@ Replace \<dataset_id\> with the id of a data item. The result below was run on t
 }
 ```
 
-The download link expires in 15 minutes and works only for the same signed-in user. Choose the format with --format. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Use --output to choose where to save the file.
+The download link expires in 15 minutes and works only for the same signed-in user. Choose the format with `--format`. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Use `--output` to choose where to save the file.
 
-The example above creates the file on the server and returns a download link. Nothing is saved on your computer. To save it on your computer, add --output:
+The example above creates the file on the server and returns a download link. Nothing is saved on your computer. To save it on your computer, add `--output`:
 
 ```sh
 expl server dataframe export <dataset_id> --mode rows --limit 5 --output rows.csv --json

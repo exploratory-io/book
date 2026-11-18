@@ -71,7 +71,7 @@ The card works the same way, but what it installs differs a little.
 | Claude Code | The Exploratory Desktop plugin (with its skills) | "Installed - v" followed by the plugin version; Reinstall and Remove take the place of Install |
 | Codex | Same | Same |
 | Antigravity | Same | Same |
-| Cursor | Same. It copies the plugin to the Cursor plugin folder (~/.cursor/plugins/local/exploratory) instead of writing ~/.cursor/mcp.json. If ~/.cursor/mcp.json still has an old exploratory-desktop entry, the card deletes it; other entries stay | Same |
+| Cursor | Same. It copies the plugin to the Cursor plugin folder (\~/.cursor/plugins/local/exploratory) instead of writing \~/.cursor/mcp.json. If \~/.cursor/mcp.json still has an old exploratory-desktop entry, the card deletes it; other entries stay | Same |
 
 Restart the AI tool after installing, whichever one it is.
 
@@ -136,7 +136,7 @@ Needs Git. The plugin appears in the Antigravity app under Customizations \> Ins
 
 **Cursor**
 
-Install it with the card. There is no separate step to do by hand: the card copies the plugin, with its skills, to ~/.cursor/plugins/local/exploratory.
+Install it with the card. There is no separate step to do by hand: the card copies the plugin, with its skills, to \~/.cursor/plugins/local/exploratory.
 
 <a id="update"></a>
 

@@ -39,7 +39,7 @@ An API key lets expl sign in without a browser. Create one in Account Settings \
 expl server login --with-token
 ```
 
-In a terminal, expl asks "API key:" and does not show what you paste. When the key comes through a pipe, expl reads it from standard input.
+In a terminal, `expl asks "API key:"` and does not show what you paste. When the key comes through a pipe, expl reads it from standard input.
 
 **Result**
 
@@ -53,7 +53,7 @@ expl server login --with-token < key-file
 
 key-file is a file that holds only the key. Do not write the key on the command line.
 
-expl checks the key with the server first. If the server refuses it, nothing is saved. A key starts with exp_pat_. --with-token cannot be used together with --no-browser. To choose the server, add --url.
+expl checks the key with the server first. If the server refuses it, nothing is saved. A key starts with exp_pat_. `--with-token` cannot be used together with `--no-browser`. To choose the server, add `--url`.
 
 The key is saved in the same place as a browser login (see Where the login is saved). A saved API key is never refreshed and never opens a browser. Signing in again replaces it.
 
@@ -62,7 +62,7 @@ Instead of saving it, you can set the environment variable EXPL_SERVER_TOKEN. It
 | Order | Source |
 | --- | --- |
 | 1 | EXPL_SERVER_TOKEN |
-| 2 | The saved login (a browser login, or an API key saved by --with-token) |
+| 2 | The saved login (a browser login, or an API key saved by `--with-token`) |
 
 To switch from the environment-variable key to a saved login, run unset EXPL_SERVER_TOKEN first. While it is set, it is used before the saved login.
 
@@ -120,7 +120,7 @@ The code in that URL works only once and expires 60 seconds after the browser re
 
 ## Where the login is saved
 
-The login is saved under ~/.exploratory/expl/server/, one file per host, with permission 0600 (readable only by you). A browser login and an API key saved by --with-token go to the same place. On Windows it is under %USERPROFILE%\\.exploratory\\expl\\server\\.
+The login is saved under \~/.exploratory/expl/server/, one file per host, with permission 0600 (readable only by you). A browser login and an API key saved by `--with-token` go to the same place. On Windows it is under %USERPROFILE%\\.exploratory\\expl\\server\\.
 
 A saved login is used only for the same origin (scheme, host and port). On a standard port, a later login to the same host replaces the saved file.
 
@@ -130,11 +130,11 @@ If the browser login is revoked on the server (for example in Connected AI Apps)
 
 ## The server URL
 
-The default server is https://exploratory.io. To use another server, pass --url or set the environment variable EXPL_SERVER_URL. The order of precedence is as follows.
+The default server is https://exploratory.io. To use another server, pass `--url` or set the environment variable EXPL_SERVER_URL. The order of precedence is as follows.
 
 | Order | Source |
 | --- | --- |
-| 1 | --url |
+| 1 | `--url` |
 | 2 | EXPL_SERVER_URL |
 | 3 | The host whose saved login is the most recent (a token refresh updates it too) |
 | 4 | https://exploratory.io |
@@ -159,11 +159,11 @@ The [Data and permissions](/en/mcp/server/data) page of MCP Server describes the
 | What you see | What to do |
 | --- | --- |
 | Run "expl server login". | You are not signed in, or the saved login was rejected. Run expl server login. |
-| The redirect URL has no authorization code. | With --no-browser, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
+| The redirect URL has no authorization code. | With `--no-browser`, you pasted the first URL. Paste the redirect URL that starts with http://127.0.0.1/callback?code= instead. |
 | It fails after you paste | The code works only once and expires after 60 seconds. Start again from the beginning. |
-| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked, or its owner can no longer use API keys. Exit code 4. Create a new API key, then set EXPL_SERVER_TOKEN or run expl server login --with-token. |
+| The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED) | The key is wrong, expired or revoked, or its owner can no longer use API keys. Exit code 4. Create a new API key, then set EXPL_SERVER_TOKEN or run `expl server login --with-token`. |
 | API keys are disabled by your administrator. | An administrator turned API keys off. Exit code 4. Ask your administrator, or sign in with expl server login. |
 | This IP address is not allowed for API keys. | Your administrator limits API keys to certain IP addresses. Exit code 4. Run expl from an allowed address, or ask your administrator. |
 | Too many failed API key attempts. Try again later. | Many refused keys came from this address in a short time. Fix the key and try again later. |
-| --token was removed. … | Use the environment variable EXPL_SERVER_TOKEN, or run expl server login --with-token. Exit code 2. |
+| `--token` was removed. … | Use the environment variable EXPL_SERVER_TOKEN, or run `expl server login --with-token`. Exit code 2. |
 | Paste an API key (it starts with exp_pat_) when … | The value is not an API key. Copy the whole key from Account Settings \> API Keys. Exit code 2. |

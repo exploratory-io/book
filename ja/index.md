@@ -8,8 +8,8 @@ AI アプリから MCP で使うことも、ターミナルや自動処理から
 
 | やりたいこと | 読むところ |
 | --- | --- |
-| AI アプリを Exploratory につなぐ | [Exploratory MCP](/ja/mcp/mcp) |
-| ターミナルや自動処理から Exploratory を使う | [Exploratory CLI](/ja/cli/cli) |
+| AI アプリを Exploratory につなぐ | [Exploratory MCP](/ja/mcp) |
+| ターミナルや自動処理から Exploratory を使う | [Exploratory CLI](/ja/cli) |
 | Exploratory Desktop の機能を調べる | [製品の機能](/ja/product-features)とそれ以降の章 |
 
 日本語のページがないものは、画面右上の言語の切り替えから英語で読めます。

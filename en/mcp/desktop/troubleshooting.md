@@ -23,7 +23,7 @@ Send these to support@exploratory.io: the version of Exploratory Desktop, the na
 | What you see | What to do |
 | --- | --- |
 | exploratory-mcp is not found | Start Exploratory Desktop v17 or later with MCP on. The command is added automatically when the app starts. Then restart your AI tool. |
-| exploratory-mcp is not found from the AI tool (macOS) | Exploratory is open from the disk image. Move it to /Applications or ~/Applications and start it again. The command is added when the app starts. |
+| exploratory-mcp is not found from the AI tool (macOS) | Exploratory is open from the disk image. Move it to /Applications or \~/Applications and start it again. The command is added when the app starts. |
 | The card shows "Could not install." | Hold the pointer over Details to see the output. Follow the reason shown, then choose Try again. See [Install the plugin](/en/mcp/desktop/install#failure). |
 | A marketplace named "exploratory" is already registered from a different source … | Remove it with the command the message shows, then choose Install again. |
 | Your organization's settings may not allow this marketplace. | Ask your administrator. |

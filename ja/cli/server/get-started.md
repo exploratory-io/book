@@ -48,7 +48,7 @@ expl server status
 expl server search "Sales Orders" --scope all --type data
 ```
 
---scope all は、自分のコンテンツに加えて、ほかの人が公開したコンテンツも検索します。--type data は、結果をデータだけに絞り込みます。結果が空のときは、該当するものがなかったということで、サインインのエラーではありません。ノートを探すときは、--type note を使います。
+`--scope` all は、自分のコンテンツに加えて、ほかの人が公開したコンテンツも検索します。`--type` data は、結果をデータだけに絞り込みます。結果が空のときは、該当するものがなかったということで、サインインのエラーではありません。ノートを探すときは、`--type` note を使います。
 
 **実行結果**
 
@@ -65,7 +65,7 @@ hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  dat
 expl server fetch <id> --json
 ```
 
-\<id\> は、検索結果に表示された id に置き換えます。--json を付けると、サーバーの結果を JSON のまま出力します。実行結果の ID・URL・人名は、説明用に置き換えています。長い出力は省略しているので、次の JSON は抜粋で、完全な JSON ではありません。
+\<id\> は、検索結果に表示された id に置き換えます。`--json` を付けると、サーバーの結果を JSON のまま出力します。実行結果の ID・URL・人名は、説明用に置き換えています。長い出力は省略しているので、次の JSON は抜粋で、完全な JSON ではありません。
 
 **実行結果**
 
@@ -79,7 +79,7 @@ expl server fetch <id> --json
 }
 ```
 
-結果には、本文が含まれます。ノート、ダッシュボード、スライドでは、長さや指定によって、見出しの一覧（metadata.toc）も含まれます。ない場合は、--include-toc を付けて返すか、--query で見出しの id を調べます。
+結果には、本文が含まれます。ノート、ダッシュボード、スライドでは、長さや指定によって、見出しの一覧（metadata.toc）も含まれます。ない場合は、`--include-toc` を付けて返すか、`--query` で見出しの id を調べます。
 
 ### 5. 集計する（任意）
 
@@ -127,12 +127,12 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 
 ## うまくいかないとき
 
-- 検索結果が空です: 該当するものがなかったということで、サインインのエラーではありません。検索語を変えるか、--scope all を付けます。
-- ブラウザを開けません: ブラウザのないスクリプトや CI では、代わりに API キーでサインインします（expl server login --with-token。[API キー](/ja/cli/server/token)を参照）。ブラウザを開けないマシンでは、[サインイン](/ja/cli/server/login#nobrowser)を参照してください。
+- 検索結果が空です: 該当するものがなかったということで、サインインのエラーではありません。検索語を変えるか、`--scope` all を付けます。
+- ブラウザを開けません: ブラウザのないスクリプトや CI では、代わりに API キーでサインインします（`expl server login --with-token`。[API キー](/ja/cli/server/token)を参照）。ブラウザを開けないマシンでは、[サインイン](/ja/cli/server/login#nobrowser)を参照してください。
 - Run "expl server login". と表示されます: サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。
 - expl: command not found と表示されます: 新しいターミナルを開いて、もう一度試します。
 - どの id を使えばよいか分かりません: 検索結果に表示された id を使います。
-- ノートで見出しの一覧（metadata.toc）が出ません: --include-toc を付けるか、--query で見出しの id を調べます。
+- ノートで見出しの一覧（metadata.toc）が出ません: `--include-toc` を付けるか、`--query` で見出しの id を調べます。
 
 詳しくは[トラブルシューティング](/ja/cli/server/troubleshooting)を参照してください。
 

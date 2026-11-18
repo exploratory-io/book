@@ -23,7 +23,7 @@ title: "Codex につなぐ"
 
 **設定ファイルに書く場合**
 
-1. ~/.codex/config.toml に、次の内容を追加します。
+1. \~/.codex/config.toml に、次の内容を追加します。
 
    ```text
    [mcp_servers.exploratory-server]
@@ -104,7 +104,7 @@ Codex が Exploratory サーバー経由で検索し、データが見つかり�
 
 ブラウザを開けない環境では、サインインの代わりに API キーを使います。キーは、アカウント設定 \> API キーで作り、環境変数に入れます。EXPLORATORY_API_KEY は、秘密情報を管理する仕組みで設定します。シェルの設定ファイルではなく、OS の資格情報の保管庫や CI のシークレットなどを使います。キーそのものをコマンドラインや設定ファイルに書かないでください。以下は、この環境変数が設定済みであることを前提にします。
 
-~/.codex/config.toml には、キーではなく、環境変数の名前を書きます。
+\~/.codex/config.toml には、キーではなく、環境変数の名前を書きます。
 
 ```text
 [mcp_servers.exploratory-server]
@@ -129,6 +129,6 @@ bearer_token_env_var = "EXPLORATORY_API_KEY"
 
 ## 接続を解除する
 
-~/.codex/config.toml に追加した \[mcp_servers.exploratory-server\] の部分を削除します。チャットで追加した場合は、自分が付けた名前（例では Exploratory）で登録されているので、\[mcp_servers.Exploratory\] の部分を削除します。自分が登録した名前を使ってください。
+\~/.codex/config.toml に追加した \[mcp_servers.exploratory-server\] の部分を削除します。チャットで追加した場合は、自分が付けた名前（例では Exploratory）で登録されているので、\[mcp_servers.Exploratory\] の部分を削除します。自分が登録した名前を使ってください。
 
 登録を解除しても、アクセスの許可は残ります。許可も取り消すには、exploratory.io のアカウント設定の「接続中のAIアプリ」から、クライアントを解除します。

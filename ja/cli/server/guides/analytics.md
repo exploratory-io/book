@@ -42,7 +42,7 @@ expl server fetch <id> --json
 
 ### 2. 結果を取得する
 
-確認した name を --analytics に指定して、analytics get-result を実行します。
+確認した name を `--analytics` に指定して、analytics get-result を実行します。
 
 ```sh
 expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
@@ -138,7 +138,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 
 結果には、モデルの定義（目的変数、説明変数、N）、列の ID が固定された結果の表、学習データとテストデータに分けた主要な統計量、実行時の設定、説明の文（数値から作ったものか、AI が作ったものかの印つき）が含まれます。数値は表示されたとおりの値で、係数は標準化されていません。この例は時系列の予測であるため、model_definition の target と predictors は空です。
 
---limit は、表ごとの最大行数です（最大 100 行）。続きを取得する方法はありません。既定では、分析の答えとなる表が返ります。返す表を指定する場合は、available_tables の id を --tables に指定します。
+`--limit` は、表ごとの最大行数です（最大 100 行）。続きを取得する方法はありません。既定では、分析の答えとなる表が返ります。返す表を指定する場合は、available_tables の id を `--tables` に指定します。
 
 > result.tables に結果の表が表示されていれば、取得できています。
 

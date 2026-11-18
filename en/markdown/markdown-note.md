@@ -12,12 +12,12 @@ This [note](https://exploratory.io/note/kanaugust/An-Introduction-to-Note-with-S
 
 If you add charts, analytics or data frames that contain the parameters to the note, those parameters will show up automatically when you run the note. You can change the parameters to update charts and analytics in the note on the fly. 
 
-Please see [here](/en/parameter/parameter) for more details about Parameter.
+Please see [here](/en/parameter) for more details about Parameter.
 
 
 ## Showing a Parameter Value on Note
 
-You can show the current parameter value on Note using the R code chunk or R inline expression. Please see [here](/en/parameter/parameter#showing-the-parameter-value-on-note-/-dashboard) for more details.
+You can show the current parameter value on Note using the R code chunk or R inline expression. Please see [here](/en/parameter#showing-the-parameter-value-on-note-/-dashboard) for more details.
 
 
 ## View Mode

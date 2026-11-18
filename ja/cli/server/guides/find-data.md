@@ -16,23 +16,23 @@ expl server login でサインインしてあります（[サインイン](/ja/c
 
 ### 1. 探す
 
-検索語を、コマンドのすぐあとに書きます。--scope all は、自分のコンテンツに加えて、ほかの人が公開したコンテンツも検索します。--type data は、結果をデータだけに絞り込みます。
+検索語を、コマンドのすぐあとに書きます。`--scope` all は、自分のコンテンツに加えて、ほかの人が公開したコンテンツも検索します。`--type` data は、結果をデータだけに絞り込みます。
 
 ```sh
 expl server search "Sales Orders" --scope all --type data
 ```
 
---type には、all、note、dashboard、slide、chart、analytics、data を指定できます。--scope には、all、mine、shared、team を指定できます（--scope team のときは、--team \<チーム名\> も付けます）。--semantic を付けると、キーワードでなく意味で検索します。--json を付けると、JSON で出力します。
+`--type` には、all、note、dashboard、slide、chart、analytics、data を指定できます。`--scope` には、all、mine、shared、team を指定できます（`--scope` team のときは、`--team` \<チーム名\> も付けます）。`--semantic` を付けると、キーワードでなく意味で検索します。`--json` を付けると、JSON で出力します。
 
 結果は、id、タイトル、URL、種類、説明の表で出ます。結果が空のときは、該当するものがなかったということで、サインインのエラーではありません。
 
-自分のコンテンツを一覧したいときは、検索語を空にして、--scope mine を付けます。
+自分のコンテンツを一覧したいときは、検索語を空にして、`--scope` mine を付けます。
 
 ```sh
 expl server search "" --scope mine --limit 50 --json
 ```
 
---limit は、返す件数の上限で、50 までです。JSON の has_more が true のときは、next_offset の値を --offset に渡すと、次のページを取得できます。
+`--limit` は、返す件数の上限で、50 までです。JSON の has_more が true のときは、next_offset の値を `--offset` に渡すと、次のページを取得できます。
 
 ### 2. id を控える
 
@@ -62,11 +62,11 @@ expl server dataframe get-schema <id> --json
 
 | 状況 | 対処 |
 | --- | --- |
-| 結果が空 | 検索語を確認し、--scope all で試します。短い語にするか、--semantic を付けます。 |
+| 結果が空 | 検索語を確認し、`--scope` all で試します。短い語にするか、`--semantic` を付けます。 |
 | サインインのエラー | expl server login を実行します。[サインイン](/ja/cli/server/login)を参照してください。 |
 | id が見つからない | 検索結果の id をそのまま使います。似たタイトルは、同じ項目ではありません。 |
 
-コマンドの引数は、expl server \<コマンド\> --help で確認します。
+コマンドの引数は、`expl server <コマンド> --help` で確認します。
 
 <a id="related"></a>
 

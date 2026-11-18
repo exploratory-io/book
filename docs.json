@@ -59,7 +59,7 @@
                       },
                       "en/mcp/server/troubleshooting"
                     ],
-                    "root": "en/mcp/server/server"
+                    "root": "en/mcp/server/index"
                   },
                   {
                     "group": "Desktop",
@@ -84,10 +84,10 @@
                       },
                       "en/mcp/desktop/troubleshooting"
                     ],
-                    "root": "en/mcp/desktop/desktop"
+                    "root": "en/mcp/desktop/index"
                   }
                 ],
-                "root": "en/mcp/mcp"
+                "root": "en/mcp/index"
               },
               {
                 "group": "Exploratory CLI",
@@ -130,7 +130,7 @@
                       },
                       "en/cli/server/troubleshooting"
                     ],
-                    "root": "en/cli/server/server"
+                    "root": "en/cli/server/index"
                   },
                   {
                     "group": "Desktop",
@@ -171,24 +171,24 @@
                       },
                       "en/cli/desktop/troubleshooting"
                     ],
-                    "root": "en/cli/desktop/desktop"
+                    "root": "en/cli/desktop/index"
                   }
                 ],
-                "root": "en/cli/cli"
+                "root": "en/cli/index"
               },
               {
                 "group": "Product Features",
                 "pages": [
                   "en/summary/summary",
-                  "en/table/table",
+                  "en/table/index",
                   "en/table/row_filter",
                   "en/table/column_filter",
                   "en/markdown/markdown-dashboard",
                   "en/markdown/markdown-note",
                   "en/steps",
-                  "en/branch/branch",
-                  "en/parameter/parameter",
-                  "en/export/export",
+                  "en/branch/index",
+                  "en/parameter/index",
+                  "en/export/index",
                   {
                     "group": "Share",
                     "pages": [
@@ -201,7 +201,7 @@
                       "en/share/restore",
                       "en/share/csvapi"
                     ],
-                    "root": "en/share/share"
+                    "root": "en/share/index"
                   },
                   {
                     "group": "Schedule",
@@ -210,14 +210,14 @@
                       "en/schedule/notification",
                       "en/schedule/history"
                     ],
-                    "root": "en/schedule/schedule"
+                    "root": "en/schedule/index"
                   },
                   {
                     "group": "Team",
                     "pages": [
                       "en/team/manage"
                     ],
-                    "root": "en/team/team"
+                    "root": "en/team/index"
                   },
                   {
                     "group": "Project",
@@ -236,7 +236,7 @@
                 "pages": [
                   "en/ai/ai-promtpt-function-en"
                 ],
-                "root": "en/ai/ai"
+                "root": "en/ai/index"
               },
               {
                 "group": "Data Import",
@@ -581,10 +581,7 @@
                   "en/history_error_recovery"
                 ]
               },
-              "en/shortcut",
-              "en/zztesta",
-              "en/zztestb",
-              "en/zztestc"
+              "en/shortcut"
             ]
           }
         ],
@@ -636,7 +633,7 @@
                       },
                       "ja/mcp/server/troubleshooting"
                     ],
-                    "root": "ja/mcp/server/server"
+                    "root": "ja/mcp/server/index"
                   },
                   {
                     "group": "Desktop",
@@ -661,10 +658,10 @@
                       },
                       "ja/mcp/desktop/troubleshooting"
                     ],
-                    "root": "ja/mcp/desktop/desktop"
+                    "root": "ja/mcp/desktop/index"
                   }
                 ],
-                "root": "ja/mcp/mcp"
+                "root": "ja/mcp/index"
               },
               {
                 "group": "Exploratory CLI",
@@ -707,7 +704,7 @@
                       },
                       "ja/cli/server/troubleshooting"
                     ],
-                    "root": "ja/cli/server/server"
+                    "root": "ja/cli/server/index"
                   },
                   {
                     "group": "Desktop",
@@ -748,17 +745,17 @@
                       },
                       "ja/cli/desktop/troubleshooting"
                     ],
-                    "root": "ja/cli/desktop/desktop"
+                    "root": "ja/cli/desktop/index"
                   }
                 ],
-                "root": "ja/cli/cli"
+                "root": "ja/cli/index"
               },
               {
                 "group": "製品の機能",
                 "pages": [
                   "ja/markdown/markdown-dashboard",
                   "ja/markdown/markdown-note",
-                  "ja/parameter/parameter",
+                  "ja/parameter/index",
                   {
                     "group": "共有",
                     "pages": [
@@ -768,7 +765,7 @@
                       "ja/share/restore",
                       "ja/share/csvapi"
                     ],
-                    "root": "ja/share/share"
+                    "root": "ja/share/index"
                   },
                   {
                     "group": "スケジュールに関するよくある問題と解決法",
@@ -777,14 +774,14 @@
                       "ja/schedule/notification",
                       "ja/schedule/history"
                     ],
-                    "root": "ja/schedule/schedule"
+                    "root": "ja/schedule/index"
                   },
                   {
                     "group": "チーム",
                     "pages": [
                       "ja/team/manage"
                     ],
-                    "root": "ja/team/team"
+                    "root": "ja/team/index"
                   }
                 ],
                 "root": "ja/product-features"
@@ -1644,11 +1641,11 @@
     },
     {
       "source": "/",
-      "destination": "/en/index"
+      "destination": "/en"
     },
     {
       "source": "/ai",
-      "destination": "/en/ai/ai"
+      "destination": "/en/ai"
     },
     {
       "source": "/analytics/ab_test.html",
@@ -2256,11 +2253,11 @@
     },
     {
       "source": "/product-features/parameter_ja",
-      "destination": "/ja/parameter/parameter"
+      "destination": "/ja/parameter"
     },
     {
       "source": "/product-features/schedule_ja",
-      "destination": "/ja/schedule/schedule"
+      "destination": "/ja/schedule"
     },
     {
       "source": "/product-features/schedule_ja/notification_ja",
@@ -2268,7 +2265,7 @@
     },
     {
       "source": "/product-features/share_ja",
-      "destination": "/ja/share/share"
+      "destination": "/ja/share"
     },
     {
       "source": "/product-features/share_ja/bjonno",
@@ -2288,7 +2285,7 @@
     },
     {
       "source": "/product-features/team_ja",
-      "destination": "/ja/team/team"
+      "destination": "/ja/team"
     },
     {
       "source": "/setup/set_exploratory_home_ja",
@@ -2452,7 +2449,7 @@
     },
     {
       "source": "/diagnostics",
-      "destination": "/en/index"
+      "destination": "/en"
     },
     {
       "source": "/extend-with-r",
@@ -2480,7 +2477,7 @@
     },
     {
       "source": "/product-features/branch",
-      "destination": "/en/branch/branch"
+      "destination": "/en/branch"
     },
     {
       "source": "/product-features/column_filter",
@@ -2488,7 +2485,7 @@
     },
     {
       "source": "/product-features/export",
-      "destination": "/en/export/export"
+      "destination": "/en/export"
     },
     {
       "source": "/product-features/markdown-dashboard",
@@ -2496,7 +2493,7 @@
     },
     {
       "source": "/product-features/parameter",
-      "destination": "/en/parameter/parameter"
+      "destination": "/en/parameter"
     },
     {
       "source": "/product-features/project",
@@ -2508,11 +2505,11 @@
     },
     {
       "source": "/product-features/schedule",
-      "destination": "/en/schedule/schedule"
+      "destination": "/en/schedule"
     },
     {
       "source": "/product-features/share",
-      "destination": "/en/share/share"
+      "destination": "/en/share"
     },
     {
       "source": "/product-features/steps",
@@ -2520,15 +2517,15 @@
     },
     {
       "source": "/product-features/table",
-      "destination": "/en/table/table"
+      "destination": "/en/table"
     },
     {
       "source": "/product-features/team",
-      "destination": "/en/team/team"
+      "destination": "/en/team"
     },
     {
       "source": "/setup",
-      "destination": "/en/index"
+      "destination": "/en"
     },
     {
       "source": "/shortcut",
@@ -2553,6 +2550,786 @@
     {
       "source": "/visualization/types",
       "destination": "/en/visualization"
+    },
+    {
+      "source": "/en/ai/ai",
+      "destination": "/en/ai"
+    },
+    {
+      "source": "/en/branch/branch",
+      "destination": "/en/branch"
+    },
+    {
+      "source": "/en/cli/cli",
+      "destination": "/en/cli"
+    },
+    {
+      "source": "/en/cli/desktop/desktop",
+      "destination": "/en/cli/desktop"
+    },
+    {
+      "source": "/en/cli/server/server",
+      "destination": "/en/cli/server"
+    },
+    {
+      "source": "/en/export/export",
+      "destination": "/en/export"
+    },
+    {
+      "source": "/en/mcp/desktop/desktop",
+      "destination": "/en/mcp/desktop"
+    },
+    {
+      "source": "/en/mcp/mcp",
+      "destination": "/en/mcp"
+    },
+    {
+      "source": "/en/mcp/server/server",
+      "destination": "/en/mcp/server"
+    },
+    {
+      "source": "/en/parameter/parameter",
+      "destination": "/en/parameter"
+    },
+    {
+      "source": "/en/schedule/schedule",
+      "destination": "/en/schedule"
+    },
+    {
+      "source": "/en/share/share",
+      "destination": "/en/share"
+    },
+    {
+      "source": "/en/table/table",
+      "destination": "/en/table"
+    },
+    {
+      "source": "/en/team/team",
+      "destination": "/en/team"
+    },
+    {
+      "source": "/ja/cli/cli",
+      "destination": "/ja/cli"
+    },
+    {
+      "source": "/ja/cli/desktop/desktop",
+      "destination": "/ja/cli/desktop"
+    },
+    {
+      "source": "/ja/cli/server/server",
+      "destination": "/ja/cli/server"
+    },
+    {
+      "source": "/ja/mcp/desktop/desktop",
+      "destination": "/ja/mcp/desktop"
+    },
+    {
+      "source": "/ja/mcp/mcp",
+      "destination": "/ja/mcp"
+    },
+    {
+      "source": "/ja/mcp/server/server",
+      "destination": "/ja/mcp/server"
+    },
+    {
+      "source": "/ja/parameter/parameter",
+      "destination": "/ja/parameter"
+    },
+    {
+      "source": "/ja/schedule/schedule",
+      "destination": "/ja/schedule"
+    },
+    {
+      "source": "/ja/share/share",
+      "destination": "/ja/share"
+    },
+    {
+      "source": "/ja/team/team",
+      "destination": "/ja/team"
+    },
+    {
+      "source": "/mcp",
+      "destination": "/en/mcp"
+    },
+    {
+      "source": "/mcp/server",
+      "destination": "/en/mcp/server"
+    },
+    {
+      "source": "/mcp/server/get-started",
+      "destination": "/en/mcp/server/get-started"
+    },
+    {
+      "source": "/mcp/server/get-started/apps",
+      "destination": "/en/mcp/server/clients/apps"
+    },
+    {
+      "source": "/en/mcp/server/get-started/apps",
+      "destination": "/en/mcp/server/clients/apps"
+    },
+    {
+      "source": "/mcp/server/get-started/apps/claude",
+      "destination": "/en/mcp/server/clients/claude"
+    },
+    {
+      "source": "/en/mcp/server/get-started/apps/claude",
+      "destination": "/en/mcp/server/clients/claude"
+    },
+    {
+      "source": "/mcp/server/get-started/apps/chatgpt",
+      "destination": "/en/mcp/server/clients/chatgpt"
+    },
+    {
+      "source": "/en/mcp/server/get-started/apps/chatgpt",
+      "destination": "/en/mcp/server/clients/chatgpt"
+    },
+    {
+      "source": "/mcp/server/get-started/apps/antigravity",
+      "destination": "/en/mcp/server/clients/antigravity"
+    },
+    {
+      "source": "/en/mcp/server/get-started/apps/antigravity",
+      "destination": "/en/mcp/server/clients/antigravity"
+    },
+    {
+      "source": "/mcp/server/get-started/apps/grok-bot",
+      "destination": "/en/mcp/server/clients/grok-bot"
+    },
+    {
+      "source": "/en/mcp/server/get-started/apps/grok-bot",
+      "destination": "/en/mcp/server/clients/grok-bot"
+    },
+    {
+      "source": "/mcp/server/get-started/apps/claude-code",
+      "destination": "/en/mcp/server/clients/claude-code"
+    },
+    {
+      "source": "/en/mcp/server/get-started/apps/claude-code",
+      "destination": "/en/mcp/server/clients/claude-code"
+    },
+    {
+      "source": "/mcp/server/get-started/apps/codex",
+      "destination": "/en/mcp/server/clients/codex"
+    },
+    {
+      "source": "/en/mcp/server/get-started/apps/codex",
+      "destination": "/en/mcp/server/clients/codex"
+    },
+    {
+      "source": "/mcp/server/get-started/apps/cursor",
+      "destination": "/en/mcp/server/clients/cursor"
+    },
+    {
+      "source": "/en/mcp/server/get-started/apps/cursor",
+      "destination": "/en/mcp/server/clients/cursor"
+    },
+    {
+      "source": "/mcp/server/get-started/apps/other",
+      "destination": "/en/mcp/server/clients/other"
+    },
+    {
+      "source": "/en/mcp/server/get-started/apps/other",
+      "destination": "/en/mcp/server/clients/other"
+    },
+    {
+      "source": "/mcp/server/get-started/auth",
+      "destination": "/en/mcp/server/auth"
+    },
+    {
+      "source": "/en/mcp/server/get-started/auth",
+      "destination": "/en/mcp/server/auth"
+    },
+    {
+      "source": "/mcp/server/use",
+      "destination": "/en/mcp/server/use"
+    },
+    {
+      "source": "/mcp/server/reference",
+      "destination": "/en/mcp/server/reference"
+    },
+    {
+      "source": "/mcp/server/reference/tools",
+      "destination": "/en/mcp/server/tools"
+    },
+    {
+      "source": "/en/mcp/server/reference/tools",
+      "destination": "/en/mcp/server/tools"
+    },
+    {
+      "source": "/mcp/server/reference/limits",
+      "destination": "/en/mcp/server/limits"
+    },
+    {
+      "source": "/en/mcp/server/reference/limits",
+      "destination": "/en/mcp/server/limits"
+    },
+    {
+      "source": "/mcp/server/reference/data",
+      "destination": "/en/mcp/server/data"
+    },
+    {
+      "source": "/en/mcp/server/reference/data",
+      "destination": "/en/mcp/server/data"
+    },
+    {
+      "source": "/mcp/server/troubleshooting",
+      "destination": "/en/mcp/server/troubleshooting"
+    },
+    {
+      "source": "/mcp/desktop",
+      "destination": "/en/mcp/desktop"
+    },
+    {
+      "source": "/mcp/desktop/get-started",
+      "destination": "/en/mcp/desktop/get-started"
+    },
+    {
+      "source": "/mcp/desktop/get-started/install",
+      "destination": "/en/mcp/desktop/install"
+    },
+    {
+      "source": "/en/mcp/desktop/get-started/install",
+      "destination": "/en/mcp/desktop/install"
+    },
+    {
+      "source": "/mcp/desktop/get-started/permissions",
+      "destination": "/en/mcp/desktop/permissions"
+    },
+    {
+      "source": "/en/mcp/desktop/get-started/permissions",
+      "destination": "/en/mcp/desktop/permissions"
+    },
+    {
+      "source": "/mcp/desktop/use",
+      "destination": "/en/mcp/desktop/use"
+    },
+    {
+      "source": "/mcp/desktop/reference",
+      "destination": "/en/mcp/desktop/reference"
+    },
+    {
+      "source": "/mcp/desktop/reference/tools",
+      "destination": "/en/mcp/desktop/tools"
+    },
+    {
+      "source": "/en/mcp/desktop/reference/tools",
+      "destination": "/en/mcp/desktop/tools"
+    },
+    {
+      "source": "/mcp/desktop/reference/limits",
+      "destination": "/en/mcp/desktop/limits"
+    },
+    {
+      "source": "/en/mcp/desktop/reference/limits",
+      "destination": "/en/mcp/desktop/limits"
+    },
+    {
+      "source": "/mcp/desktop/reference/data",
+      "destination": "/en/mcp/desktop/data"
+    },
+    {
+      "source": "/en/mcp/desktop/reference/data",
+      "destination": "/en/mcp/desktop/data"
+    },
+    {
+      "source": "/mcp/desktop/troubleshooting",
+      "destination": "/en/mcp/desktop/troubleshooting"
+    },
+    {
+      "source": "/cli",
+      "destination": "/en/cli"
+    },
+    {
+      "source": "/cli/server",
+      "destination": "/en/cli/server"
+    },
+    {
+      "source": "/cli/server/get-started",
+      "destination": "/en/cli/server/get-started"
+    },
+    {
+      "source": "/cli/server/get-started/install",
+      "destination": "/en/cli/server/install"
+    },
+    {
+      "source": "/en/cli/server/get-started/install",
+      "destination": "/en/cli/server/install"
+    },
+    {
+      "source": "/cli/server/get-started/login",
+      "destination": "/en/cli/server/login"
+    },
+    {
+      "source": "/en/cli/server/get-started/login",
+      "destination": "/en/cli/server/login"
+    },
+    {
+      "source": "/cli/server/get-started/token",
+      "destination": "/en/cli/server/token"
+    },
+    {
+      "source": "/en/cli/server/get-started/token",
+      "destination": "/en/cli/server/token"
+    },
+    {
+      "source": "/cli/server/use",
+      "destination": "/en/cli/server/use"
+    },
+    {
+      "source": "/cli/server/use/find-data",
+      "destination": "/en/cli/server/guides/find-data"
+    },
+    {
+      "source": "/en/cli/server/use/find-data",
+      "destination": "/en/cli/server/guides/find-data"
+    },
+    {
+      "source": "/cli/server/use/read-notes",
+      "destination": "/en/cli/server/guides/read-notes"
+    },
+    {
+      "source": "/en/cli/server/use/read-notes",
+      "destination": "/en/cli/server/guides/read-notes"
+    },
+    {
+      "source": "/cli/server/use/query-data",
+      "destination": "/en/cli/server/guides/query-data"
+    },
+    {
+      "source": "/en/cli/server/use/query-data",
+      "destination": "/en/cli/server/guides/query-data"
+    },
+    {
+      "source": "/cli/server/use/dashboard-charts",
+      "destination": "/en/cli/server/guides/dashboard-charts"
+    },
+    {
+      "source": "/en/cli/server/use/dashboard-charts",
+      "destination": "/en/cli/server/guides/dashboard-charts"
+    },
+    {
+      "source": "/cli/server/use/analytics",
+      "destination": "/en/cli/server/guides/analytics"
+    },
+    {
+      "source": "/en/cli/server/use/analytics",
+      "destination": "/en/cli/server/guides/analytics"
+    },
+    {
+      "source": "/cli/server/use/export",
+      "destination": "/en/cli/server/guides/export"
+    },
+    {
+      "source": "/en/cli/server/use/export",
+      "destination": "/en/cli/server/guides/export"
+    },
+    {
+      "source": "/cli/server/use/automation",
+      "destination": "/en/cli/server/guides/automation"
+    },
+    {
+      "source": "/en/cli/server/use/automation",
+      "destination": "/en/cli/server/guides/automation"
+    },
+    {
+      "source": "/cli/server/use/agents",
+      "destination": "/en/cli/server/guides/agents"
+    },
+    {
+      "source": "/en/cli/server/use/agents",
+      "destination": "/en/cli/server/guides/agents"
+    },
+    {
+      "source": "/cli/server/reference",
+      "destination": "/en/cli/server/reference"
+    },
+    {
+      "source": "/cli/server/reference/commands",
+      "destination": "/en/cli/server/commands"
+    },
+    {
+      "source": "/en/cli/server/reference/commands",
+      "destination": "/en/cli/server/commands"
+    },
+    {
+      "source": "/cli/server/reference/global-flags",
+      "destination": "/en/cli/server/global-flags"
+    },
+    {
+      "source": "/en/cli/server/reference/global-flags",
+      "destination": "/en/cli/server/global-flags"
+    },
+    {
+      "source": "/cli/server/reference/exit-codes",
+      "destination": "/en/cli/server/exit-codes"
+    },
+    {
+      "source": "/en/cli/server/reference/exit-codes",
+      "destination": "/en/cli/server/exit-codes"
+    },
+    {
+      "source": "/cli/server/reference/data",
+      "destination": "/en/cli/server/data"
+    },
+    {
+      "source": "/en/cli/server/reference/data",
+      "destination": "/en/cli/server/data"
+    },
+    {
+      "source": "/cli/server/troubleshooting",
+      "destination": "/en/cli/server/troubleshooting"
+    },
+    {
+      "source": "/cli/desktop",
+      "destination": "/en/cli/desktop"
+    },
+    {
+      "source": "/cli/desktop/get-started",
+      "destination": "/en/cli/desktop/get-started"
+    },
+    {
+      "source": "/cli/desktop/get-started/install",
+      "destination": "/en/cli/desktop/install"
+    },
+    {
+      "source": "/en/cli/desktop/get-started/install",
+      "destination": "/en/cli/desktop/install"
+    },
+    {
+      "source": "/cli/desktop/get-started/projects",
+      "destination": "/en/cli/desktop/guides/projects"
+    },
+    {
+      "source": "/en/cli/desktop/get-started/projects",
+      "destination": "/en/cli/desktop/guides/projects"
+    },
+    {
+      "source": "/cli/desktop/use",
+      "destination": "/en/cli/desktop/use"
+    },
+    {
+      "source": "/cli/desktop/use/wrangle-data",
+      "destination": "/en/cli/desktop/guides/wrangle-data"
+    },
+    {
+      "source": "/en/cli/desktop/use/wrangle-data",
+      "destination": "/en/cli/desktop/guides/wrangle-data"
+    },
+    {
+      "source": "/cli/desktop/use/create-charts",
+      "destination": "/en/cli/desktop/guides/create-charts"
+    },
+    {
+      "source": "/en/cli/desktop/use/create-charts",
+      "destination": "/en/cli/desktop/guides/create-charts"
+    },
+    {
+      "source": "/cli/desktop/use/create-analytics",
+      "destination": "/en/cli/desktop/guides/create-analytics"
+    },
+    {
+      "source": "/en/cli/desktop/use/create-analytics",
+      "destination": "/en/cli/desktop/guides/create-analytics"
+    },
+    {
+      "source": "/cli/desktop/use/write-notes",
+      "destination": "/en/cli/desktop/guides/write-notes"
+    },
+    {
+      "source": "/en/cli/desktop/use/write-notes",
+      "destination": "/en/cli/desktop/guides/write-notes"
+    },
+    {
+      "source": "/cli/desktop/use/duplicate-dashboard",
+      "destination": "/en/cli/desktop/guides/duplicate-dashboard"
+    },
+    {
+      "source": "/en/cli/desktop/use/duplicate-dashboard",
+      "destination": "/en/cli/desktop/guides/duplicate-dashboard"
+    },
+    {
+      "source": "/cli/desktop/use/publish",
+      "destination": "/en/cli/desktop/guides/publish"
+    },
+    {
+      "source": "/en/cli/desktop/use/publish",
+      "destination": "/en/cli/desktop/guides/publish"
+    },
+    {
+      "source": "/cli/desktop/use/agents",
+      "destination": "/en/cli/desktop/guides/agents"
+    },
+    {
+      "source": "/en/cli/desktop/use/agents",
+      "destination": "/en/cli/desktop/guides/agents"
+    },
+    {
+      "source": "/cli/desktop/reference",
+      "destination": "/en/cli/desktop/reference"
+    },
+    {
+      "source": "/cli/desktop/reference/commands",
+      "destination": "/en/cli/desktop/commands"
+    },
+    {
+      "source": "/en/cli/desktop/reference/commands",
+      "destination": "/en/cli/desktop/commands"
+    },
+    {
+      "source": "/cli/desktop/reference/global-flags",
+      "destination": "/en/cli/desktop/global-flags"
+    },
+    {
+      "source": "/en/cli/desktop/reference/global-flags",
+      "destination": "/en/cli/desktop/global-flags"
+    },
+    {
+      "source": "/cli/desktop/reference/input",
+      "destination": "/en/cli/desktop/guides/input"
+    },
+    {
+      "source": "/en/cli/desktop/reference/input",
+      "destination": "/en/cli/desktop/guides/input"
+    },
+    {
+      "source": "/cli/desktop/reference/output",
+      "destination": "/en/cli/desktop/guides/output"
+    },
+    {
+      "source": "/en/cli/desktop/reference/output",
+      "destination": "/en/cli/desktop/guides/output"
+    },
+    {
+      "source": "/cli/desktop/reference/confirmation",
+      "destination": "/en/cli/desktop/guides/confirmation"
+    },
+    {
+      "source": "/en/cli/desktop/reference/confirmation",
+      "destination": "/en/cli/desktop/guides/confirmation"
+    },
+    {
+      "source": "/cli/desktop/reference/exit-codes",
+      "destination": "/en/cli/desktop/exit-codes"
+    },
+    {
+      "source": "/en/cli/desktop/reference/exit-codes",
+      "destination": "/en/cli/desktop/exit-codes"
+    },
+    {
+      "source": "/cli/desktop/reference/data",
+      "destination": "/en/cli/desktop/data"
+    },
+    {
+      "source": "/en/cli/desktop/reference/data",
+      "destination": "/en/cli/desktop/data"
+    },
+    {
+      "source": "/cli/desktop/troubleshooting",
+      "destination": "/en/cli/desktop/troubleshooting"
+    },
+    {
+      "source": "/ja/mcp/server/get-started/apps",
+      "destination": "/ja/mcp/server/clients/apps"
+    },
+    {
+      "source": "/ja/mcp/server/get-started/apps/claude",
+      "destination": "/ja/mcp/server/clients/claude"
+    },
+    {
+      "source": "/ja/mcp/server/get-started/apps/chatgpt",
+      "destination": "/ja/mcp/server/clients/chatgpt"
+    },
+    {
+      "source": "/ja/mcp/server/get-started/apps/antigravity",
+      "destination": "/ja/mcp/server/clients/antigravity"
+    },
+    {
+      "source": "/ja/mcp/server/get-started/apps/grok-bot",
+      "destination": "/ja/mcp/server/clients/grok-bot"
+    },
+    {
+      "source": "/ja/mcp/server/get-started/apps/claude-code",
+      "destination": "/ja/mcp/server/clients/claude-code"
+    },
+    {
+      "source": "/ja/mcp/server/get-started/apps/codex",
+      "destination": "/ja/mcp/server/clients/codex"
+    },
+    {
+      "source": "/ja/mcp/server/get-started/apps/cursor",
+      "destination": "/ja/mcp/server/clients/cursor"
+    },
+    {
+      "source": "/ja/mcp/server/get-started/apps/other",
+      "destination": "/ja/mcp/server/clients/other"
+    },
+    {
+      "source": "/ja/mcp/server/get-started/auth",
+      "destination": "/ja/mcp/server/auth"
+    },
+    {
+      "source": "/ja/mcp/server/reference/tools",
+      "destination": "/ja/mcp/server/tools"
+    },
+    {
+      "source": "/ja/mcp/server/reference/limits",
+      "destination": "/ja/mcp/server/limits"
+    },
+    {
+      "source": "/ja/mcp/server/reference/data",
+      "destination": "/ja/mcp/server/data"
+    },
+    {
+      "source": "/ja/mcp/desktop/get-started/install",
+      "destination": "/ja/mcp/desktop/install"
+    },
+    {
+      "source": "/ja/mcp/desktop/get-started/permissions",
+      "destination": "/ja/mcp/desktop/permissions"
+    },
+    {
+      "source": "/ja/mcp/desktop/reference/tools",
+      "destination": "/ja/mcp/desktop/tools"
+    },
+    {
+      "source": "/ja/mcp/desktop/reference/limits",
+      "destination": "/ja/mcp/desktop/limits"
+    },
+    {
+      "source": "/ja/mcp/desktop/reference/data",
+      "destination": "/ja/mcp/desktop/data"
+    },
+    {
+      "source": "/ja/cli/server/get-started/install",
+      "destination": "/ja/cli/server/install"
+    },
+    {
+      "source": "/ja/cli/server/get-started/login",
+      "destination": "/ja/cli/server/login"
+    },
+    {
+      "source": "/ja/cli/server/get-started/token",
+      "destination": "/ja/cli/server/token"
+    },
+    {
+      "source": "/ja/cli/server/use/find-data",
+      "destination": "/ja/cli/server/guides/find-data"
+    },
+    {
+      "source": "/ja/cli/server/use/read-notes",
+      "destination": "/ja/cli/server/guides/read-notes"
+    },
+    {
+      "source": "/ja/cli/server/use/query-data",
+      "destination": "/ja/cli/server/guides/query-data"
+    },
+    {
+      "source": "/ja/cli/server/use/dashboard-charts",
+      "destination": "/ja/cli/server/guides/dashboard-charts"
+    },
+    {
+      "source": "/ja/cli/server/use/analytics",
+      "destination": "/ja/cli/server/guides/analytics"
+    },
+    {
+      "source": "/ja/cli/server/use/export",
+      "destination": "/ja/cli/server/guides/export"
+    },
+    {
+      "source": "/ja/cli/server/use/automation",
+      "destination": "/ja/cli/server/guides/automation"
+    },
+    {
+      "source": "/ja/cli/server/use/agents",
+      "destination": "/ja/cli/server/guides/agents"
+    },
+    {
+      "source": "/ja/cli/server/reference/commands",
+      "destination": "/ja/cli/server/commands"
+    },
+    {
+      "source": "/ja/cli/server/reference/global-flags",
+      "destination": "/ja/cli/server/global-flags"
+    },
+    {
+      "source": "/ja/cli/server/reference/exit-codes",
+      "destination": "/ja/cli/server/exit-codes"
+    },
+    {
+      "source": "/ja/cli/server/reference/data",
+      "destination": "/ja/cli/server/data"
+    },
+    {
+      "source": "/ja/cli/desktop/get-started/install",
+      "destination": "/ja/cli/desktop/install"
+    },
+    {
+      "source": "/ja/cli/desktop/get-started/projects",
+      "destination": "/ja/cli/desktop/guides/projects"
+    },
+    {
+      "source": "/ja/cli/desktop/use/wrangle-data",
+      "destination": "/ja/cli/desktop/guides/wrangle-data"
+    },
+    {
+      "source": "/ja/cli/desktop/use/create-charts",
+      "destination": "/ja/cli/desktop/guides/create-charts"
+    },
+    {
+      "source": "/ja/cli/desktop/use/create-analytics",
+      "destination": "/ja/cli/desktop/guides/create-analytics"
+    },
+    {
+      "source": "/ja/cli/desktop/use/write-notes",
+      "destination": "/ja/cli/desktop/guides/write-notes"
+    },
+    {
+      "source": "/ja/cli/desktop/use/duplicate-dashboard",
+      "destination": "/ja/cli/desktop/guides/duplicate-dashboard"
+    },
+    {
+      "source": "/ja/cli/desktop/use/publish",
+      "destination": "/ja/cli/desktop/guides/publish"
+    },
+    {
+      "source": "/ja/cli/desktop/use/agents",
+      "destination": "/ja/cli/desktop/guides/agents"
+    },
+    {
+      "source": "/ja/cli/desktop/reference/commands",
+      "destination": "/ja/cli/desktop/commands"
+    },
+    {
+      "source": "/ja/cli/desktop/reference/global-flags",
+      "destination": "/ja/cli/desktop/global-flags"
+    },
+    {
+      "source": "/ja/cli/desktop/reference/input",
+      "destination": "/ja/cli/desktop/guides/input"
+    },
+    {
+      "source": "/ja/cli/desktop/reference/output",
+      "destination": "/ja/cli/desktop/guides/output"
+    },
+    {
+      "source": "/ja/cli/desktop/reference/confirmation",
+      "destination": "/ja/cli/desktop/guides/confirmation"
+    },
+    {
+      "source": "/ja/cli/desktop/reference/exit-codes",
+      "destination": "/ja/cli/desktop/exit-codes"
+    },
+    {
+      "source": "/ja/cli/desktop/reference/data",
+      "destination": "/ja/cli/desktop/data"
+    },
+    {
+      "source": "/mcp/:slug*",
+      "destination": "/en/mcp/:slug*"
+    },
+    {
+      "source": "/cli/:slug*",
+      "destination": "/en/cli/:slug*"
     }
   ],
   "logo": {

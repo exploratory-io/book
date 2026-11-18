@@ -23,7 +23,7 @@ There are two ways to get expl. Pick one; you do not need both.
 
 expl is bundled with Exploratory Desktop, including expl server. You need no extra installation and no Node.js.
 
-When you start Exploratory Desktop, it puts expl on your PATH (the list of folders where commands are found) if it is not there yet. On macOS this happens only when the app is in /Applications or ~/Applications. It may ask for administrator permission. If you decline, it uses ~/.local/bin; add that folder to your PATH if needed.
+When you start Exploratory Desktop, it puts expl on your PATH (the list of folders where commands are found) if it is not there yet. On macOS this happens only when the app is in /Applications or \~/Applications. It may ask for administrator permission. If you decline, it uses \~/.local/bin; add that folder to your PATH if needed.
 
 An existing command called expl that is not Exploratory's is never replaced.
 
@@ -47,7 +47,7 @@ npx runs a package without installing it. It needs Node.js 20 or later; to insta
 npx -y @exploratory/cli --version
 ```
 
-Runs expl once without installing it. To run another command, replace --version with it, for example server login. In scripts, pin the version: @exploratory/cli@\<version\>.
+Runs expl once without installing it. To run another command, replace `--version` with it, for example server login. In scripts, pin the version: @exploratory/cli@\<version\>.
 
 ```sh
 npm install -g @exploratory/cli@<version>
@@ -89,13 +89,13 @@ Shows every copy, in the order they run.
 where expl
 ```
 
-The first line of expl --version is expl \<version\>. It does not say how expl was installed, so use the paths above to tell the copies apart. If the first path is not the one you expect, put the folder you want first on your PATH, or remove the other copy.
+The first line of `expl --version` is expl \<version\>. It does not say how expl was installed, so use the paths above to tell the copies apart. If the first path is not the one you expect, put the folder you want first on your PATH, or remove the other copy.
 
 If you have Desktop, you do not need a global npm install. Using npx with a pinned version in CI is fine.
 
 > **When npm install -g stops with EEXIST**
 >
-> On a Mac where Node.js was installed with the installer from nodejs.org, npm puts commands in /usr/local/bin, the folder Desktop normally uses, so npm install -g stops with EEXIST. Do not run it again with --force: that replaces the expl that comes with Desktop. The other way round, if expl from npm is already in /usr/local/bin, Desktop leaves it in place and does not add its own.
+> On a Mac where Node.js was installed with the installer from nodejs.org, npm puts commands in /usr/local/bin, the folder Desktop normally uses, so npm install -g stops with EEXIST. Do not run it again with `--force`: that replaces the expl that comes with Desktop. The other way round, if expl from npm is already in /usr/local/bin, Desktop leaves it in place and does not add its own.
 
 <a id="update"></a>
 
@@ -127,4 +127,4 @@ npm uninstall -g @exploratory/cli
 
 For the copy that comes with Desktop, follow [Remove](/en/cli/desktop/install#remove) on the Desktop installation page. Check each path first, so that you do not delete another command with the same name. Desktop adds it again at the next start while the app stays in /Applications.
 
-Next, [sign in](/en/cli/server/login), then get your first result in [Get started](/en/cli/server/get-started#steps). To work with Desktop on this computer, see [Use Desktop](/en/cli/desktop/desktop).
+Next, [sign in](/en/cli/server/login), then get your first result in [Get started](/en/cli/server/get-started#steps). To work with Desktop on this computer, see [Use Desktop](/en/cli/desktop).

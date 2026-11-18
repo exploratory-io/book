@@ -21,7 +21,7 @@ It reads published content that you can view.
 
 - Create, edit, publish or delete content.
 - Recompute a chart or analytics for parameter values other than the published ones.
-- Read content that is not published to Exploratory Server, such as projects that exist only in Exploratory Desktop. Use the separate [Desktop MCP](/en/mcp/desktop/desktop) for those.
+- Read content that is not published to Exploratory Server, such as projects that exist only in Exploratory Desktop. Use the separate [Desktop MCP](/en/mcp/desktop) for those.
 
 <a id="url"></a>
 
@@ -44,4 +44,4 @@ When you connect, you sign in to Exploratory and approve the access. If your set
 - [Reference](/en/mcp/server/reference) - Look up the tools, limits and errors, and data and permissions.
 - [Troubleshooting](/en/mcp/server/troubleshooting) - Find what to do from a symptom.
 
-To create and edit projects in Exploratory Desktop on your computer, use the [Desktop MCP](/en/mcp/desktop/desktop) instead. To read published content from a terminal or a script, see [Exploratory CLI](/en/cli/server/server).
+To create and edit projects in Exploratory Desktop on your computer, use the [Desktop MCP](/en/mcp/desktop) instead. To read published content from a terminal or a script, see [Exploratory CLI](/en/cli/server).

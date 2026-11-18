@@ -10,7 +10,7 @@ Desktop から、ノート、ダッシュボード、データフレームをサ
 
 - Exploratory Desktop が起動していて、プロジェクトが開いていて（[プロジェクトを選ぶ](/ja/cli/desktop/guides/projects)）、サインインしています（expl status で、サインイン中のユーザーが分かります）。
 - 公開と取り消しは、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。
-- 公開すると、URL を知っている人なら誰でも読めるようになります。公開の取り消しは、元に戻せません。そのため、どちらも実行の前に確認が出ます。ターミナルでは Continue? \[y/N\] と聞かれます。スクリプトや AI エージェントからは、対象を確認したうえで --yes を付けます。[確認と時間のかかる操作](/ja/cli/desktop/guides/confirmation)を参照してください。
+- 公開すると、URL を知っている人なら誰でも読めるようになります。公開の取り消しは、元に戻せません。そのため、どちらも実行の前に確認が出ます。ターミナルでは Continue? \[y/N\] と聞かれます。スクリプトや AI エージェントからは、対象を確認したうえで `--yes` を付けます。[確認と時間のかかる操作](/ja/cli/desktop/guides/confirmation)を参照してください。
 
 <a id="steps"></a>
 
@@ -33,13 +33,13 @@ expl note publish <note_id>
 expl dashboard publish <dashboard_id>
 ```
 
---tags でタグを付けます（複数のときは、フラグを繰り返します）。--team \<チーム名\> は、初めて公開するときのチームを、--change-description は、公開し直すときの変更のコメントを指定します。公開し直すと、同じ URL が更新されます。
+`--tags` でタグを付けます（複数のときは、フラグを繰り返します）。`--team` \<チーム名\> は、初めて公開するときのチームを、`--change-description` は、公開し直すときの変更のコメントを指定します。公開し直すと、同じ URL が更新されます。
 
 ```sh
 expl note publish <note_id> --tags sales --tags weekly --team <チーム名> --yes
 ```
 
-データフレームを公開するときは、expl dataframe publish \<dataframe_id\> を使います。--step-name で公開するステップを選びます。付けないと、最後の有効なステップを公開します。
+データフレームを公開するときは、expl dataframe publish \<dataframe_id\> を使います。`--step-name` で公開するステップを選びます。付けないと、最後の有効なステップを公開します。
 
 公開した URL は、expl published list の publishedUrl で分かります。結果の outputOlderThanSource が true のときは、公開した内容が、いまの本文より古いものです。
 
@@ -51,7 +51,7 @@ expl note publish <note_id> --tags sales --tags weekly --team <チーム名> --y
 expl published list
 ```
 
-結果に、プロジェクトから公開されているノート、ダッシュボード、データが、id、種類、タイトル、URL、チームつきで並びます。--verify を付けると、それぞれがサーバーにあるかを確かめます。遅いので、必要なときだけ使います。
+結果に、プロジェクトから公開されているノート、ダッシュボード、データが、id、種類、タイトル、URL、チームつきで並びます。`--verify` を付けると、それぞれがサーバーにあるかを確かめます。遅いので、必要なときだけ使います。
 
 ### 4. 公開を取り消す
 
@@ -68,12 +68,12 @@ expl published unpublish <id>
 | 状況 | 対処 |
 | --- | --- |
 | PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](/ja/cli/desktop/exit-codes)を参照してください。 |
-| 終了コード 2 で何も実行されない | 確認が要る操作を、ターミナル以外で実行しています。対象を確認したうえで --yes を付けます。 |
+| 終了コード 2 で何も実行されない | 確認が要る操作を、ターミナル以外で実行しています。対象を確認したうえで `--yes` を付けます。 |
 | Continue? で終了コード 1 | y 以外を答えています。もう一度実行して、y と答えます。 |
 | No rendered output | Desktop でダッシュボードを 1 回開いてから、もう一度実行します。 |
 | チームが見つからない | expl team list の名前を使います。 |
 
-コマンドの引数は、expl \<コマンド\> --help または expl tools describe "\<コマンド\>" で確認します。
+コマンドの引数は、`expl <コマンド> --help` または `expl tools describe "<コマンド>"` で確認します。
 
 <a id="related"></a>
 
