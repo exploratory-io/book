@@ -2295,6 +2295,218 @@
     {
       "source": "/visualization/types/wordcloud_ja",
       "destination": "/ja/viz/wordcloud"
+    },
+    {
+      "source": "/data-wrangling/:slug*",
+      "destination": "/en/wrangling/:slug*"
+    },
+    {
+      "source": "/visualization/features/:slug*",
+      "destination": "/en/viz/:slug*"
+    },
+    {
+      "source": "/visualization/types/:slug*",
+      "destination": "/en/viz/:slug*"
+    },
+    {
+      "source": "/machine-learning/:slug*",
+      "destination": "/en/ml/:slug*"
+    },
+    {
+      "source": "/statistics/:slug*",
+      "destination": "/en/stats/:slug*"
+    },
+    {
+      "source": "/data_import/database-data/:slug*",
+      "destination": "/en/import/:slug*"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/:slug*",
+      "destination": "/en/import/:slug*"
+    },
+    {
+      "source": "/data_import/file-data/:slug*",
+      "destination": "/en/import/:slug*"
+    },
+    {
+      "source": "/data_import/extensions/:slug*",
+      "destination": "/en/import/:slug*"
+    },
+    {
+      "source": "/data_import/r-script-data/:slug*",
+      "destination": "/en/import/:slug*"
+    },
+    {
+      "source": "/setup/:slug*",
+      "destination": "/en/howto/:slug*"
+    },
+    {
+      "source": "/main/:slug*",
+      "destination": "/en/text/:slug*"
+    },
+    {
+      "source": "/diagnostics/:slug*",
+      "destination": "/en/:slug*"
+    },
+    {
+      "source": "/extend-with-r/:slug*",
+      "destination": "/en/:slug*"
+    },
+    {
+      "source": "/product-features/share/:slug*",
+      "destination": "/en/share/:slug*"
+    },
+    {
+      "source": "/product-features/project/:slug*",
+      "destination": "/en/project/:slug*"
+    },
+    {
+      "source": "/product-features/schedule/:slug*",
+      "destination": "/en/schedule/:slug*"
+    },
+    {
+      "source": "/ai/ai-prompt-function",
+      "destination": "/en/ai/ai-promtpt-function-en"
+    },
+    {
+      "source": "/analytics",
+      "destination": "/en/analytics"
+    },
+    {
+      "source": "/analytics/anomaly",
+      "destination": "/en/analytics/anomaly"
+    },
+    {
+      "source": "/data-wrangling",
+      "destination": "/en/data-wrangling"
+    },
+    {
+      "source": "/data_import",
+      "destination": "/en/data_import"
+    },
+    {
+      "source": "/data_import/cloud-apps-data",
+      "destination": "/en/cloud-apps-data"
+    },
+    {
+      "source": "/data_import/database-data",
+      "destination": "/en/database-data"
+    },
+    {
+      "source": "/data_import/extensions",
+      "destination": "/en/import/extensions"
+    },
+    {
+      "source": "/data_import/file-data",
+      "destination": "/en/file-data"
+    },
+    {
+      "source": "/data_import/web-scraping",
+      "destination": "/en/import/web-scraping"
+    },
+    {
+      "source": "/diagnostics",
+      "destination": "/en/index"
+    },
+    {
+      "source": "/extend-with-r",
+      "destination": "/en/extend-with-r"
+    },
+    {
+      "source": "/import/connection.html",
+      "destination": "/en/import/connection.html"
+    },
+    {
+      "source": "/machine-learning",
+      "destination": "/en/machine-learning"
+    },
+    {
+      "source": "/machine-learning/smote",
+      "destination": "/en/wrangling/smote"
+    },
+    {
+      "source": "/main",
+      "destination": "/en/text/main"
+    },
+    {
+      "source": "/product-features",
+      "destination": "/en/product-features"
+    },
+    {
+      "source": "/product-features/branch",
+      "destination": "/en/branch/branch"
+    },
+    {
+      "source": "/product-features/column_filter",
+      "destination": "/en/table/column_filter"
+    },
+    {
+      "source": "/product-features/export",
+      "destination": "/en/export/export"
+    },
+    {
+      "source": "/product-features/markdown-dashboard",
+      "destination": "/en/markdown/markdown-dashboard"
+    },
+    {
+      "source": "/product-features/parameter",
+      "destination": "/en/parameter/parameter"
+    },
+    {
+      "source": "/product-features/project",
+      "destination": "/en/project"
+    },
+    {
+      "source": "/product-features/row_filter",
+      "destination": "/en/table/row_filter"
+    },
+    {
+      "source": "/product-features/schedule",
+      "destination": "/en/schedule/schedule"
+    },
+    {
+      "source": "/product-features/share",
+      "destination": "/en/share/share"
+    },
+    {
+      "source": "/product-features/steps",
+      "destination": "/en/steps"
+    },
+    {
+      "source": "/product-features/table",
+      "destination": "/en/table/table"
+    },
+    {
+      "source": "/product-features/team",
+      "destination": "/en/team/team"
+    },
+    {
+      "source": "/setup",
+      "destination": "/en/index"
+    },
+    {
+      "source": "/shortcut",
+      "destination": "/en/shortcut"
+    },
+    {
+      "source": "/statistics",
+      "destination": "/en/statistics"
+    },
+    {
+      "source": "/visualization",
+      "destination": "/en/visualization"
+    },
+    {
+      "source": "/visualization/features",
+      "destination": "/en/visualization"
+    },
+    {
+      "source": "/visualization/features/highlight-1",
+      "destination": "/en/viz/highlight"
+    },
+    {
+      "source": "/visualization/types",
+      "destination": "/en/visualization"
     }
   ],
   "logo": {
