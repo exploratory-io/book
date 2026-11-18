@@ -380,7 +380,6 @@
           {
             "group": "Visualization",
             "pages": [
-              null,
               "en/viz/pivot",
               "en/viz/summarize-table",
               "en/viz/table",
@@ -406,7 +405,6 @@
               "en/viz/singlevalue",
               "en/viz/wordcloud",
               "en/viz/r-custom",
-              null,
               "en/viz/trend-line",
               "en/viz/reference-line",
               "en/viz/small-multiple",
