@@ -10105,5 +10105,10 @@
     "dark": "/en/markdown/images/logo_top.png"
   },
   "favicon": "/images/favicon.png",
-  "description": "Documentation for Exploratory Desktop, Exploratory Server, MCP and CLI."
+  "description": "Documentation for Exploratory Desktop, Exploratory Server, MCP and CLI.",
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.exploratory.io"
+    }
+  }
 }
