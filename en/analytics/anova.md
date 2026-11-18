@@ -1,4 +1,7 @@
-# ANOVA Analytics
+---
+title: "ANOVA Analytics"
+sidebarTitle: "ANOVA"
+---
 
 ## One-Way ANOVA
 

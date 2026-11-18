@@ -1,4 +1,6 @@
-# Column Configuration Dialog 
+---
+title: "Column Configuration Dialog"
+---
 
 You can change the format of the target column in the Column Configuration Dialog. 
 

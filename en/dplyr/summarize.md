@@ -1,4 +1,6 @@
-# Summarize - Aggregate
+---
+title: "Summarize - Aggregate"
+---
 
 Summarize multiple values to a single value. Make sure you have grouped the data set using group_by() already.
 

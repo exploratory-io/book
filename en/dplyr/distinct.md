@@ -1,5 +1,6 @@
-# distinct
-
+---
+title: "distinct"
+---
 
 Select distinct/unique rows.
 

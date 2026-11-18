@@ -1,4 +1,6 @@
-# Assign New Values by Setting Conditions - Case When
+---
+title: "Assign New Values by Setting Conditions - Case When"
+---
 
 You can assign new values to a column by setting conditions with easy-to-use dialog UI.
 

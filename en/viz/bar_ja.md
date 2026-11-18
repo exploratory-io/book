@@ -1,4 +1,6 @@
-# Bar Chart
+---
+title: "Bar Chart"
+---
 
 ![](images/bar.png)
 

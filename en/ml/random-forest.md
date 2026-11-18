@@ -1,4 +1,7 @@
-# Random Forest Model
+---
+title: "Random Forest Model"
+sidebarTitle: "Random Forest"
+---
 
 ## Introduction
 

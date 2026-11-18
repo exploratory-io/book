@@ -1,4 +1,7 @@
-# Error Bar (Summarized Data) Chart
+---
+title: "Error Bar (Summarized Data) Chart"
+sidebarTitle: "Error Bar (Summarized Data)"
+---
 
 With the Error Bar (Summarized Data) Chart, you can create an Error Bar using the data which is already summarized/aggregated. 
 
@@ -51,9 +54,9 @@ You can create an Error Bar chart with this data by following steps.
 * Marker - You can select a marker type from the following options. The default is `Bar`.
   * Bar - Suitable for comparing actual values and error bar ranges. 
   * Circle - Suitable for comparing error bar ranges. 
-* Color - Take a look at [Color](color.md) section for more details.
+* Color - Take a look at [Color](/en/viz/color) section for more details.
 * Sort By - Assign a column to use for Sorting the X-Axis values. The default is based on either the alphabetic order or the factor level order for Factor type columns.
-* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](small-multiple.md) section for more details.
+* Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](/en/viz/small-multiple) section for more details.
 * Orientation - You can choose a chart orientation. Either 'Vertical' or 'Horizontal'.
 
 
@@ -99,7 +102,7 @@ ratio: Ratio calculated by dividing
 
 ## Reference Line
 
-Take a look at [Reference Line](reference-line.md) section for more details.
+Take a look at [Reference Line](/en/viz/reference-line) section for more details.
 
 
 ## Style 
@@ -112,34 +115,34 @@ You can change the error bar styles from the "Style" setting at Y-Axis. You can 
 
 ## Highlight 
 
-You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](highlight.md) for the detail. 
+You can change the color of the specific markers such as bars, lines or circles that you pick to stand out from others. See [Highlight](/en/viz/highlight) for the detail. 
 
 ## Category 
 
-You can categorize numeric values inside the chart. See [Category(Binning)](category.md) for the detail.
+You can categorize numeric values inside the chart. See [Category(Binning)](/en/viz/category) for the detail.
 
 ## Limit Values
 
-You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail.
+You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](/en/viz/limit) for the detail.
 
 
 ## 'Others' Group
 
-If you have many categories, you can reduce the number of categories by changing some category names to 'Others' using the 'Others' Group feature. See ['Others' Group](others-group.md) for the detail. 
+If you have many categories, you can reduce the number of categories by changing some category names to 'Others' using the 'Others' Group feature. See ['Others' Group](/en/viz/others-group) for the detail. 
 
 ## Missing Value Handling
 
-You can use the Missing Value Handling feature to control missing values. See [Missing Value Handling](missing-value-handling.md) for the detail.
+You can use the Missing Value Handling feature to control missing values. See [Missing Value Handling](/en/viz/missing-value-handling) for the detail.
 
 
 ## Show Detail
 
-You can show the detailed data underlying the chart by clicking the chart figure. See [Show Detail](show-detail.md) for the detail.
+You can show the detailed data underlying the chart by clicking the chart figure. See [Show Detail](/en/viz/show-detail) for the detail.
 
 ## Layout Configuration
 
-Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
+Take a look at [Layout Configuration](/en/viz/layout) on how to configure the layout and format. 
 
 ## Save as an Image
 
-You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.
+You can save the chart as an image file. See [Save as PNG/SVG](/en/viz/save) for more details.

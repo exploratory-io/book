@@ -1,4 +1,7 @@
-# Import R File (RDATA, RDS) File Data
+---
+title: "Import R File (RDATA, RDS) File Data"
+sidebarTitle: "RData / RDS"
+---
 
 You can import both local and remote R File (RDATA, RDS) File Data quickly.
 

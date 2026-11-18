@@ -1,4 +1,6 @@
-# Introduction to Time Series Data Analysis
+---
+title: "Introduction to Time Series Data Analysis"
+---
 
 Analyzing time series data is easy and fun with R & dplyr. We have written a blog post that walks you through how you can work with time series data and gain great insights quickly.
 

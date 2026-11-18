@@ -1,6 +1,8 @@
-# 使い方
+---
+title: "使い方"
+---
 
-Desktop の MCP で、手元のプロジェクトについて AI に頼めることです。どれも、Exploratory Desktop にプロジェクトを開いて、AI ツールに話しかけます。インストールがまだのときは、先に[プラグインのインストール](install.md)を済ませます。
+Desktop の MCP で、手元のプロジェクトについて AI に頼めることです。どれも、Exploratory Desktop にプロジェクトを開いて、AI ツールに話しかけます。インストールがまだのときは、先に[プラグインのインストール](/ja/mcp/desktop/install)を済ませます。
 
 | やりたいこと | 節 | AI が使う主な道具 |
 | --- | --- | --- |
@@ -14,7 +16,7 @@ Desktop の MCP で、手元のプロジェクトについて AI に頼めるこ
 | 公開する | [公開する](#publish) | publish_note、publish_dashboard |
 | 値を選ぶフィルターを付ける | [そのほか](#other) | save_parameter |
 
-各道具の働きと「作成、変更、削除を許可する」が必要なものは[使える道具](tools.md)を参照してください。ターミナルから同じことをするときは、CLI Desktop の[使い方](../../cli/desktop/use.md)を参照してください。
+各道具の働きと「作成、変更、削除を許可する」が必要なものは[使える道具](/ja/mcp/desktop/tools)を参照してください。ターミナルから同じことをするときは、CLI Desktop の[使い方](/ja/cli/desktop/use)を参照してください。
 
 出力されるチャートや文章は、データと AI ツールによって変わります。例の依頼文は、そのまま使うことも、自分のデータに合わせて言い換えることもできます。
 
@@ -22,13 +24,13 @@ Desktop の MCP で、手元のプロジェクトについて AI に頼めるこ
 
 ## 始める前に
 
-MCP のスイッチと「作成、変更、削除を許可する」の設定は、[はじめる](get-started.md#steps)の手順 2 で行います。削除、公開、R コードの実行などの前の確認は、[許可の範囲と設定](permissions.md)を参照してください。以降の例の「確認を出します」は、確認なしで実行する設定がオフのときの動きです。
+MCP のスイッチと「作成、変更、削除を許可する」の設定は、[はじめる](/ja/mcp/desktop/get-started#steps)の手順 2 で行います。削除、公開、R コードの実行などの前の確認は、[許可の範囲と設定](/ja/mcp/desktop/permissions)を参照してください。以降の例の「確認を出します」は、確認なしで実行する設定がオフのときの動きです。
 
 <a id="server-or-desktop"></a>
 
 ## Server と Desktop の使い分け
 
-Desktop は手元のプロジェクトを対象にします。exploratory.io に公開した内容は、[Server の MCP](../server/server.md) で読みます。どちらか決まらない依頼では、プラグインのスキルが先に確かめます。たとえば、exploratory.io のデータから図を作る依頼では、「Exploratory Desktop で作りますか」と聞かれることがあります。最初から「Exploratory Desktop で」と伝えると、聞かれずに進みます。
+Desktop は手元のプロジェクトを対象にします。exploratory.io に公開した内容は、[Server の MCP](/ja/mcp/server) で読みます。どちらか決まらない依頼では、プラグインのスキルが先に確かめます。たとえば、exploratory.io のデータから図を作る依頼では、「Exploratory Desktop で作りますか」と聞かれることがあります。最初から「Exploratory Desktop で」と伝えると、聞かれずに進みます。
 
 <a id="examples"></a>
 
@@ -138,5 +140,5 @@ Desktop は手元のプロジェクトを対象にします。exploratory.io に
 
 ## あわせて読む
 
-- [使える道具](tools.md) - 目的ごとの、AI にできることです。
-- [許可の範囲と設定](permissions.md) - 確認が出る場面と、渡すデータの範囲です。
+- [使える道具](/ja/mcp/desktop/tools) - 目的ごとの、AI にできることです。
+- [許可の範囲と設定](/ja/mcp/desktop/permissions) - 確認が出る場面と、渡すデータの範囲です。

@@ -1,4 +1,6 @@
-# ダッシュボードを複製する
+---
+title: "ダッシュボードを複製する"
+---
 
 似たダッシュボードを、タイトルだけ変えて複製します。jq（JSON を加工するコマンド）で、取得した定義を作成の入力の形に詰め替えます。
 
@@ -6,7 +8,7 @@
 
 ## 前提
 
-- Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](projects.md)）。expl status で確認します。
+- Exploratory Desktop が起動していて、プロジェクトが開いています（[プロジェクトを選ぶ](/ja/cli/desktop/guides/projects)）。expl status で確認します。
 - 元のダッシュボードの id を調べてあります（expl dashboard list）。
 - dashboard create は、システム設定 > MCP / CLI の「作成、変更、削除を許可する」がオンのときだけ使えます。
 - jq をインストールしてあります。このページのコマンドは、bash のシェル向けに書いてあります。

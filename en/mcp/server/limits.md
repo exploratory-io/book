@@ -1,4 +1,6 @@
-# Limits and errors
+---
+title: "Limits and errors"
+---
 
 What it cannot do, how to read the numbers, the limits, and what to do about errors.
 
@@ -8,7 +10,7 @@ What it cannot do, how to read the numbers, the limits, and what to do about err
 
 - Create, edit, publish or delete content.
 - Recompute a chart or analytics for parameter values other than the published ones.
-- Read content that is not published to Exploratory Server, such as projects that exist only in Exploratory Desktop. Use the separate [Desktop MCP](../desktop/desktop.md) for those.
+- Read content that is not published to Exploratory Server, such as projects that exist only in Exploratory Desktop. Use the separate [Desktop MCP](/en/mcp/desktop) for those.
 
 <a id="numbers"></a>
 

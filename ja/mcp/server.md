@@ -1,0 +1,47 @@
+---
+title: "Exploratory MCP: Server"
+sidebarTitle: "Server"
+---
+
+AI ツールから、exploratory.io に公開されたノート、ダッシュボード、チャート、アナリティクス、データを読み取ります。AI ツールとは、Claude Code のように、AI に作業を依頼するアプリケーションです。MCP（Model Context Protocol）は、AI ツールが外部のサービスに接続して、その機能を使用するための共通の規格です。
+
+<a id="readonly"></a>
+
+## 読み取り専用です
+
+> **読み取り専用**
+>
+> この MCP サーバーは、コンテンツの作成・編集・公開・削除ができません。ただし dataframe_export は、15 分間有効なダウンロードリンクを作ります。
+
+公開済みの内容のうち、あなたが閲覧できるものを読みます。
+
+<a id="cannot"></a>
+
+## できないこと
+
+- コンテンツの作成、編集、公開、削除
+- 公開されたときと違うパラメータの値での、チャートやアナリティクスの再計算
+- Exploratory Server に公開されていないものの読み取り。Exploratory Desktop の中だけにあるプロジェクトなどです。これらには、別の [Desktop の MCP](/ja/mcp/desktop) を使います。
+
+<a id="url"></a>
+
+## サーバー URL
+
+どの AI ツールでも、つなぐ先は同じです。
+
+```text
+https://exploratory.io/mcp
+```
+
+つなぐときは、Exploratory にサインインして、アクセスを許可します。ブラウザを開けないときは、API キーで接続します（[認証と API キー](/ja/mcp/server/auth)を参照）。
+
+<a id="scope"></a>
+
+## 読み進めるには
+
+- [はじめる](/ja/mcp/server/get-started) - AI ツールにつないで、最初の依頼まで進めます。AI ツールごとの追加手順は、[AI ツールから追加する](/ja/mcp/server/clients/apps)にあります。
+- [使い方](/ja/mcp/server/use) - AI に頼めることの例です。
+- [リファレンス](/ja/mcp/server/reference) - 使える道具、制限とエラー、データと権限を調べます。
+- [トラブルシューティング](/ja/mcp/server/troubleshooting) - 症状から対処を探します。
+
+あなたのコンピューターの Exploratory Desktop でプロジェクトを作り、編集するときは、[Desktop の MCP](/ja/mcp/desktop) を使います。ターミナルやスクリプトから使うときは、[Exploratory CLI](/ja/cli/server) を参照してください。

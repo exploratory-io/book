@@ -1,3 +1,5 @@
-# AI Data Source
+---
+title: "AI Data Source"
+---
 
 Coming soon!

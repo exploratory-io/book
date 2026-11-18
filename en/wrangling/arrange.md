@@ -1,4 +1,6 @@
-# Arrange (Sort)
+---
+title: "Arrange (Sort)"
+---
 
 Sort rows by given column(s)
 

@@ -1,4 +1,6 @@
-# Area Chart
+---
+title: "Area Chart"
+---
 
 ![](images/bar.png)
 

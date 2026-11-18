@@ -1,4 +1,7 @@
-# Prediction with a Model from Analytics View
+---
+title: "Prediction with a Model from Analytics View"
+sidebarTitle: "Prediction"
+---
 
 You can make a prediction with a model created by Analytics View by creating a "Predict with Model" step.
 

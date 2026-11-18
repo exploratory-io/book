@@ -1,4 +1,6 @@
-# Get started
+---
+title: "Get started"
+---
 
 Install the Desktop MCP plugin, turn on MCP in Exploratory Desktop, and ask your AI tool to look at the data in your project. It takes about 5 minutes, and you can do the steps on this one page. You need Exploratory Desktop and the AI tool you want to install into (Claude Code, Codex, Antigravity or Cursor) on the same computer.
 
@@ -8,13 +10,13 @@ Install the Desktop MCP plugin, turn on MCP in Exploratory Desktop, and ask your
 
 ### 1. Install the plugin
 
-In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens. In the menu on the left, choose MCP / CLI, find the "Install the Exploratory Desktop plugin" card, and choose Install on the row of the AI tool you use. The pictures and the steps by hand are on [Install the plugin](install.md).
+In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens. In the menu on the left, choose MCP / CLI, find the "Install the Exploratory Desktop plugin" card, and choose Install on the row of the AI tool you use. The pictures and the steps by hand are on [Install the plugin](/en/mcp/desktop/install).
 
 ### 2. Turn on MCP
 
 On the same screen, turn on the MCP switch. It is off by default. Only when you want the AI to create or change charts, notes and other content, also check Allow create, edit and delete. Then choose Save at the bottom of the screen.
 
-If you do not save, the MCP switch and the Allow create, edit and delete setting do not take effect. For what else you can decide here, see [Permissions and settings](permissions.md).
+If you do not save, the MCP switch and the Allow create, edit and delete setting do not take effect. For what else you can decide here, see [Permissions and settings](/en/mcp/desktop/permissions).
 
 ### 3. Restart the AI tool and allow the connection
 
@@ -45,15 +47,15 @@ To try creating something, turn on Allow create, edit and delete and save, then 
 
 - A call says that MCP is turned off: go back to System Settings and check that you turned the MCP switch on and chose Save.
 - The tools return a not-running error: start Exploratory Desktop, then use the tools again in the same conversation.
-- You chose Don't allow on the approval window: for 5 minutes the same app is refused without the window appearing again. After 5 minutes, connect again and the window appears again. To approve an app you refused, or to take back an approval, see [Permissions and settings](permissions.md#control).
-- The install fails: the row of that AI tool shows "Could not install." See "When the install fails" on [Install the plugin](install.md#failure).
+- You chose Don't allow on the approval window: for 5 minutes the same app is refused without the window appearing again. After 5 minutes, connect again and the window appears again. To approve an app you refused, or to take back an approval, see [Permissions and settings](/en/mcp/desktop/permissions#control).
+- The install fails: the row of that AI tool shows "Could not install." See "When the install fails" on [Install the plugin](/en/mcp/desktop/install#failure).
 
-See [Troubleshooting](troubleshooting.md) for more.
+See [Troubleshooting](/en/mcp/desktop/troubleshooting) for more.
 
 <a id="next"></a>
 
 ## Next
 
-- [Use](use.md) - Requests to copy, with the tools the AI uses.
-- [Permissions and settings](permissions.md) - What you decide in Desktop.
-- [Data and permissions](data.md) - What is sent and recorded.
+- [Use](/en/mcp/desktop/use) - Requests to copy, with the tools the AI uses.
+- [Permissions and settings](/en/mcp/desktop/permissions) - What you decide in Desktop.
+- [Data and permissions](/en/mcp/desktop/data) - What is sent and recorded.

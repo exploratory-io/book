@@ -1,4 +1,7 @@
-# T Test Analytics View
+---
+title: "T Test Analytics View"
+sidebarTitle: "T Test"
+---
 
 Runs t-test, which checks differences of means of variables between 2 groups.
 

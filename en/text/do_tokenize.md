@@ -1,4 +1,6 @@
-# Tokenize Text
+---
+title: "Tokenize Text"
+---
 
 ## How to Access This Feature
 

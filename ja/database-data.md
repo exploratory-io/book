@@ -1,7 +1,9 @@
-# データベースのデータ
+---
+title: "データベースのデータ"
+---
 
 このセクションで日本語で読めるページです。
 
-- [Amazon Redshift データベースからデータをインポートする](import/redshift.md)
-- [MariaDB (MySQL) データベースからデータをインポートする](import/mysql.md)
-- [PostgreSQLデータベースからデータをインポートする](import/postgresql.md)
+- [Amazon Redshift データベースからデータをインポートする](/ja/import/redshift)
+- [MariaDB (MySQL) データベースからデータをインポートする](/ja/import/mysql)
+- [PostgreSQLデータベースからデータをインポートする](/ja/import/postgresql)

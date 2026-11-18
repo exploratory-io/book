@@ -1,4 +1,6 @@
-# Assign New Values to Existing Values - Recode
+---
+title: "Assign New Values to Existing Values - Recode"
+---
 
 You can map existing values to new values by using easy-to-use dialog UI.
 

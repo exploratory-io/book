@@ -1,4 +1,7 @@
-# Fit to Screen 
+---
+title: "Fit to Screen"
+sidebarTitle: "Fit to Screen (Table)"
+---
 
 You can fit the table to the chart viewing area by the "Fit to Screen" option in the chart property dialog. The following chart types support this option.
 
@@ -33,6 +36,6 @@ You can check the "Fit to Screen" option to stretch the column width to fit the 
 
 
 
-You can lock the column width for specific columns by setting the Column Width. See [Column Configuration Dialog](column-configuration-dialog.md) for mode details.
+You can lock the column width for specific columns by setting the Column Width. See [Column Configuration Dialog](/en/viz/column-configuration-dialog) for mode details.
 
 

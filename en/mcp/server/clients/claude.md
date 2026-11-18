@@ -1,4 +1,7 @@
-# Connect the Claude app
+---
+title: "Connect the Claude app"
+sidebarTitle: "Claude app"
+---
 
 Add the Exploratory server to Claude as a custom connector. A connector is a link that lets Claude use the data and features of an outside service. After you connect, you can read notes and data published on Exploratory from a Claude chat.
 It takes about 5 minutes. You need an Exploratory account and the Claude desktop app or the web (claude.ai).
@@ -75,11 +78,11 @@ When Exploratory appears with the Custom label and a check mark under Status, th
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
+If items appear with their URLs, it works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](/en/mcp/server/troubleshooting#zero).
 
 ### Use it in Claude Code too
 
-If you sign in to [Claude Code](claude-code.md) with the same claude.ai account, the connector you added here also appears there as "claude.ai Exploratory", and you can use it as is. You do not need to add it again in Claude Code.
+If you sign in to [Claude Code](/en/mcp/server/clients/claude-code) with the same claude.ai account, the connector you added here also appears there as "claude.ai Exploratory", and you can use it as is. You do not need to add it again in Claude Code.
 
 <a id="permissions"></a>
 
@@ -103,7 +106,7 @@ The tools of the Exploratory connector are grouped under Read-only tools. You ca
 | A message says that a connector for this URL already exists in your organization | Someone on your team (organization) already added it. Do not add it again; use the existing connector in the list. |
 | You are asked to sign in | Open Exploratory in the connectors list and sign in again. |
 
-For other symptoms, see [Troubleshooting](../troubleshooting.md).
+For other symptoms, see [Troubleshooting](/en/mcp/server/troubleshooting).
 
 <a id="remove"></a>
 

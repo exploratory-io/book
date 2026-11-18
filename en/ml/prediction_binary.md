@@ -1,4 +1,7 @@
-# Predict Data - Binary
+---
+title: "Predict Data - Binary"
+sidebarTitle: "Prediction - Binary Classification"
+---
 
 ## How to Access This Feature
 

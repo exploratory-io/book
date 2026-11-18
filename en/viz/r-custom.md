@@ -1,3 +1,5 @@
-# Custom (R)
+---
+title: "Custom (R)"
+---
 
 Coming soon!

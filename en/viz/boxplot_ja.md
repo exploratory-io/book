@@ -1,4 +1,6 @@
-# Boxplot Chart
+---
+title: "Boxplot Chart"
+---
 
 ![](images/boxplot.png)
 

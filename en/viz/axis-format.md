@@ -1,4 +1,6 @@
-# Axis Formatting
+---
+title: "Axis Formatting"
+---
 
 You can configure how to show the axis from the Axis Formatting dialog. You can access the dialog from the "Axis Formatting" menu.
 

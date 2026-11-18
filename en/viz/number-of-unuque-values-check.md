@@ -1,4 +1,7 @@
-## Number of Unique Values Check
+---
+title: "Number of Unique Values Check"
+---
+
 
 
 ![](images/nuniq-dialog.png)

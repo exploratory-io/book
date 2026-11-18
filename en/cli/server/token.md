@@ -1,4 +1,6 @@
-# API keys
+---
+title: "API keys"
+---
 
 Create an API key, pass it to expl, and keep it safe. Use it for CI, scripts and any place without a browser.
 
@@ -46,9 +48,9 @@ If you lose a key, choose Regenerate to get a new value. The old value stops wor
 
 ## Give the key to expl
 
-Save the key with expl server login --with-token, or set the environment variable EXPL_SERVER_TOKEN, which is used first. The order and how to switch are on [Sign in](login.md#apikey). --token was removed; passing it exits with code 2.
+Save the key with `expl server login --with-token`, or set the environment variable EXPL_SERVER_TOKEN, which is used first. The order and how to switch are on [Sign in](/en/cli/server/login#apikey). `--token` was removed; passing it exits with code 2.
 
-For how to use it in GitHub Actions, see [Automation](guides/automation.md).
+For how to use it in GitHub Actions, see [Automation](/en/cli/server/guides/automation).
 
 <a id="cli"></a>
 
@@ -60,7 +62,7 @@ These commands work only when you signed in with the browser (expl server login)
 expl server token create --name ci
 ```
 
---name is required. From the terminal, the name can use letters, digits, ".", "_" and "-", up to 64 characters. --expires \<days\> sets how many days the key lasts, from 1 to 365. A key made this way is an API key and also appears in Account Settings \> API Keys. The key is printed once; save it right away.
+`--name` is required. From the terminal, the name can use letters, digits, ".", "_" and "-", up to 64 characters. `--expires <days>` sets how many days the key lasts, from 1 to 365. A key made this way is an API key and also appears in Account Settings \> API Keys. The key is printed once; save it right away.
 
 **Result**
 
@@ -101,8 +103,8 @@ Revoked ci.
 
 ## Keep the key safe
 
-- Do not write the key on the command line or in a script. It stays in your shell history and can be seen in the process list. Use expl server login --with-token (it asks without showing the key), or an environment variable.
-- In CI, pass the key as a secret and keep it out of logs; see [Automation](guides/automation.md#token).
+- Do not write the key on the command line or in a script. It stays in your shell history and can be seen in the process list. Use `expl server login --with-token` (it asks without showing the key), or an environment variable.
+- In CI, pass the key as a secret and keep it out of logs; see [Automation](/en/cli/server/guides/automation#token).
 - A key expires. You get an email before it does, 7 days and 1 day ahead. Create a new key before then so your jobs keep running.
 - You also get an email when a key is created, regenerated or revoked. If you do not expect it, revoke the key and change your password.
 
@@ -110,7 +112,7 @@ Revoked ci.
 
 ## Revoke a key
 
-Revoke a key when it leaks or when you no longer need it. Choose Revoke in Account Settings \> API Keys, or run expl server token revoke \<name\> after a browser login. The command sends the revocation without asking for confirmation, and without --yes. The key stops working right away.
+Revoke a key when it leaks or when you no longer need it. Choose Revoke in Account Settings \> API Keys, or run expl server token revoke \<name\> after a browser login. The command sends the revocation without asking for confirmation, and without `--yes`. The key stops working right away.
 
 A call with a revoked, expired or wrong key exits with code 4 and prints: The API key is invalid or expired. Create a new one in Account Settings \> API Keys. (UNAUTHORIZED)
 
@@ -129,4 +131,4 @@ On on-premises and Hosted servers, administrators can do the following in the ad
 
 ## What is recorded
 
-API keys are stored as hashes, with the creation time, expiry and last use. The other records are described on the [Data and permissions](../../mcp/server/data.md) page of MCP Server.
+API keys are stored as hashes, with the creation time, expiry and last use. The other records are described on the [Data and permissions](/en/mcp/server/data) page of MCP Server.

@@ -1,4 +1,6 @@
-# ノートを読む
+---
+title: "ノートを読む"
+---
 
 公開されたノートを探し、本文を読み、チャートの数値を取得します。
 
@@ -6,21 +8,21 @@
 
 ## 探す
 
-検索語を、コマンドのすぐあとに書きます。結果は、人が読みやすい表で出ます。--json を付けると、JSON になります。
+検索語を、コマンドのすぐあとに書きます。結果は、人が読みやすい表で出ます。`--json` を付けると、JSON になります。
 
 ```sh
 expl server search "sales" --limit 3 --json
 ```
 
---limit は、返す件数の上限です。50 までです。
+`--limit` は、返す件数の上限です。50 までです。
 
-自分のコンテンツを一覧したいときは、検索語を空にして、--scope mine を付けます。
+自分のコンテンツを一覧したいときは、検索語を空にして、`--scope` mine を付けます。
 
 ```sh
 expl server search "" --scope mine --limit 50 --json
 ```
 
-結果の has_more が true のときは、まだ続きがあります。next_offset の値を --offset に渡すと、次のページを取得できます。
+結果の has_more が true のときは、まだ続きがあります。next_offset の値を `--offset` に渡すと、次のページを取得できます。
 
 <a id="id"></a>
 
@@ -89,27 +91,27 @@ expl server fetch <id> --json
 
 ## 長いノートを読む
 
-長いノートは、全部を読まずに、必要なところだけを読めます。見出しを 1 つ指定するときは、metadata.toc にある見出しの id を --section に渡します。
+長いノートは、全部を読まずに、必要なところだけを読めます。見出しを 1 つ指定するときは、metadata.toc にある見出しの id を `--section` に渡します。
 
 ```sh
 expl server fetch <id> --section s2 --json
 ```
 
-s2 は、metadata.toc にある見出しの id に置き換えます。metadata.toc が返らないときは、--include-toc を付けるか、先に --query で検索し、結果に表示された見出しの id を使います。
+s2 は、metadata.toc にある見出しの id に置き換えます。metadata.toc が返らないときは、`--include-toc` を付けるか、先に `--query` で検索し、結果に表示された見出しの id を使います。
 
-話題から探すときは、--query に言葉を渡します。スペースで区切った言葉のどれかを含む段落を、見出しの経路つきで返します。
+話題から探すときは、`--query` に言葉を渡します。スペースで区切った言葉のどれかを含む段落を、見出しの経路つきで返します。
 
 ```sh
 expl server fetch <id> --query "sales forecast" --json
 ```
 
-長くて途中で切れたときは、metadata.range.next_cursor の値を --cursor に渡して、続きを読みます。
+長くて途中で切れたときは、metadata.range.next_cursor の値を `--cursor` に渡して、続きを読みます。
 
 <a id="charts"></a>
 
 ## 中のチャートの数値を取得する
 
-ノートやダッシュボードに含まれるチャートの名前は、fetch の結果の metadata.charts にあります。その名前を --chart に渡すと、チャートの数値を取得できます。
+ノートやダッシュボードに含まれるチャートの名前は、fetch の結果の metadata.charts にあります。その名前を `--chart` に渡すと、チャートの数値を取得できます。
 
 ```sh
 expl server chart get-data <id> --chart <chart> --limit 5 --json
@@ -202,7 +204,7 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 expl server chart get-image <id> --chart <chart> --json
 ```
 
-アナリティクスの結果は、fetch の結果の metadata.blocks にある名前を --analytics に渡して取得します。
+アナリティクスの結果は、fetch の結果の metadata.blocks にある名前を `--analytics` に渡して取得します。
 
 ```sh
 expl server analytics get-result <id> --analytics <analytics> --limit 3 --json

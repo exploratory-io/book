@@ -1,4 +1,6 @@
-# Anomaly Detection
+---
+title: "Anomaly Detection"
+---
 
 With algorithm "Seasonal Hybrid ESD (S-H-ESD)", created by Twitter, it detects anomaly in the presence of seasonality and an underlying trend
 

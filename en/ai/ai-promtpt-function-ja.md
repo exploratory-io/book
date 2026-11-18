@@ -1,4 +1,6 @@
-# AI Prompt Function
+---
+title: "AI Prompt Function"
+---
 
 Coming soon!
 

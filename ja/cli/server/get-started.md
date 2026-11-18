@@ -1,4 +1,6 @@
-# はじめる
+---
+title: "はじめる"
+---
 
 expl をインストールし、サインインして、公開されたコンテンツを検索して読みます。次の手順を順に行うと、このページ 1 つで最初の結果まで進めます。
 
@@ -14,7 +16,7 @@ Exploratory Desktop をお使いの場合、expl は同梱されています。�
 npm install -g @exploratory/cli
 ```
 
-最新のバージョンがインストールされます。バージョンを固定するときは、[インストール](install.md#npm)を参照してください。新しいターミナルを開いて、確認します。
+最新のバージョンがインストールされます。バージョンを固定するときは、[インストール](/ja/cli/server/install#npm)を参照してください。新しいターミナルを開いて、確認します。
 
 ```sh
 expl --version
@@ -22,7 +24,7 @@ expl --version
 
 > 1 行目が expl \<version\> と表示されれば、インストールは完了しています。
 
-そのほかのインストール方法や、2 つ入っているときの確認は、[インストール](install.md)を参照してください。
+そのほかのインストール方法や、2 つ入っているときの確認は、[インストール](/ja/cli/server/install)を参照してください。
 
 ### 2. サインインする
 
@@ -46,7 +48,7 @@ expl server status
 expl server search "Sales Orders" --scope all --type data
 ```
 
---scope all は、自分のコンテンツに加えて、ほかの人が公開したコンテンツも検索します。--type data は、結果をデータだけに絞り込みます。結果が空のときは、該当するものがなかったということで、サインインのエラーではありません。ノートを探すときは、--type note を使います。
+`--scope` all は、自分のコンテンツに加えて、ほかの人が公開したコンテンツも検索します。`--type` data は、結果をデータだけに絞り込みます。結果が空のときは、該当するものがなかったということで、サインインのエラーではありません。ノートを探すときは、`--type` note を使います。
 
 **実行結果**
 
@@ -63,7 +65,7 @@ hI6jK7lM8n  Sales Orders  https://exploratory.io/data/aB3cD4eF5g/hI6jK7lM8n  dat
 expl server fetch <id> --json
 ```
 
-\<id\> は、検索結果に表示された id に置き換えます。--json を付けると、サーバーの結果を JSON のまま出力します。実行結果の ID・URL・人名は、説明用に置き換えています。長い出力は省略しているので、次の JSON は抜粋で、完全な JSON ではありません。
+\<id\> は、検索結果に表示された id に置き換えます。`--json` を付けると、サーバーの結果を JSON のまま出力します。実行結果の ID・URL・人名は、説明用に置き換えています。長い出力は省略しているので、次の JSON は抜粋で、完全な JSON ではありません。
 
 **実行結果**
 
@@ -77,7 +79,7 @@ expl server fetch <id> --json
 }
 ```
 
-結果には、本文が含まれます。ノート、ダッシュボード、スライドでは、長さや指定によって、見出しの一覧（metadata.toc）も含まれます。ない場合は、--include-toc を付けて返すか、--query で見出しの id を調べます。
+結果には、本文が含まれます。ノート、ダッシュボード、スライドでは、長さや指定によって、見出しの一覧（metadata.toc）も含まれます。ない場合は、`--include-toc` を付けて返すか、`--query` で見出しの id を調べます。
 
 ### 5. 集計する（任意）
 
@@ -125,21 +127,21 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 
 ## うまくいかないとき
 
-- 検索結果が空です: 該当するものがなかったということで、サインインのエラーではありません。検索語を変えるか、--scope all を付けます。
-- ブラウザを開けません: ブラウザのないスクリプトや CI では、代わりに API キーでサインインします（expl server login --with-token。[API キー](token.md)を参照）。ブラウザを開けないマシンでは、[サインイン](login.md#nobrowser)を参照してください。
-- Run "expl server login". と表示されます: サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。
+- 検索結果が空です: 該当するものがなかったということで、サインインのエラーではありません。検索語を変えるか、`--scope` all を付けます。
+- ブラウザを開けません: ブラウザのないスクリプトや CI では、代わりに API キーでサインインします（`expl server login --with-token`。[API キー](/ja/cli/server/token)を参照）。ブラウザを開けないマシンでは、[サインイン](/ja/cli/server/login#nobrowser)を参照してください。
+- `Run "expl server login".` と表示されます: サインインしていないか、保存したログイン情報が拒否されています。expl server login を実行します。
 - expl: command not found と表示されます: 新しいターミナルを開いて、もう一度試します。
 - どの id を使えばよいか分かりません: 検索結果に表示された id を使います。
-- ノートで見出しの一覧（metadata.toc）が出ません: --include-toc を付けるか、--query で見出しの id を調べます。
+- ノートで見出しの一覧（metadata.toc）が出ません: `--include-toc` を付けるか、`--query` で見出しの id を調べます。
 
-詳しくは[トラブルシューティング](troubleshooting.md)を参照してください。
+詳しくは[トラブルシューティング](/ja/cli/server/troubleshooting)を参照してください。
 
 <a id="next"></a>
 
 ## 次に読むもの
 
-- [ノートを読む](guides/read-notes.md) - 長いノートの読み方と、チャートの数値の取り方です。
-- [データを集計する](guides/query-data.md) - JSON で渡す引数の書き方です。
-- [自動処理](guides/automation.md) - API キーを作成し、CI で実行します。
-- [使い方](use.md) - やりたいことからコマンドを探します。
-- [トラブルシューティング](troubleshooting.md) - 症状から対処を探します。
+- [ノートを読む](/ja/cli/server/guides/read-notes) - 長いノートの読み方と、チャートの数値の取り方です。
+- [データを集計する](/ja/cli/server/guides/query-data) - JSON で渡す引数の書き方です。
+- [自動処理](/ja/cli/server/guides/automation) - API キーを作成し、CI で実行します。
+- [使い方](/ja/cli/server/use) - やりたいことからコマンドを探します。
+- [トラブルシューティング](/ja/cli/server/troubleshooting) - 症状から対処を探します。

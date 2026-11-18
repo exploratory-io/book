@@ -1,4 +1,6 @@
-# Trend Line
+---
+title: "Trend Line"
+---
 
 Trend Line feature is available for Line and Scatter(No Aggregation and With Aggregation) charts. You can draw Trend or Smooth Lines by selecting one of the Trend Line types in the Trend Line Setting dialog. 
 

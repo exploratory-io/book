@@ -1,4 +1,6 @@
-# Summary View
+---
+title: "Summary View"
+---
 
 At the Summary View, you can view the summary information of the selected data frame. 
 
@@ -6,11 +8,11 @@ At the Summary View, you can view the summary information of the selected data f
 
 ## Row Filter
 
-You can filter rows by the condition on Summary View. See [Row Filter](../table/row_filter.md) for more details.
+You can filter rows by the condition on Summary View. See [Row Filter](/en/table/row_filter) for more details.
 
 ## Column Filter
 
-You can filter columns by the condition on Summary View. See [Column Filter](../table/column_filter.md) for more details. 
+You can filter columns by the condition on Summary View. See [Column Filter](/en/table/column_filter) for more details. 
 
 
 

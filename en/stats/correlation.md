@@ -1,4 +1,6 @@
-# Correlation
+---
+title: "Correlation"
+---
 
 Here's a step-by-step tutorial guide on how to run correlation algorithm to calculate the correlation among either multiple columns or categories in Exploratory.
 

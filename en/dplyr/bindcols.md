@@ -1,4 +1,6 @@
-# Bind Columns
+---
+title: "Bind Columns"
+---
 
 Bind multiple data sets by column.
 

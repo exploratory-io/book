@@ -1,4 +1,6 @@
-# Top / Bottom N
+---
+title: "Top / Bottom N"
+---
 
 ## How to Access This Feature
 * Click "+" button and select "Keep Only ..." menu. Then select its "Top N" or "Bottom N" submenu.

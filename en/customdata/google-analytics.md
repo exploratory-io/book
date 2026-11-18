@@ -1,4 +1,6 @@
-# Google Analytics Data
+---
+title: "Google Analytics Data"
+---
 
 For the detail, take a look at this page.
 https://developers.google.com/analytics/solutions/r-google-analytics#query

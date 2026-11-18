@@ -1,8 +1,11 @@
-# AI プロンプト関数
+---
+title: "AI Prompt Function"
+sidebarTitle: "AI Prompt Function"
+---
 
 Coming soon!
 
-## データを分割して並列処理をする
+## Split the data and process it in parallel
 
 Coming soon!
 

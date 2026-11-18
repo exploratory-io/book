@@ -1,4 +1,6 @@
-# Expand
+---
+title: "Expand"
+---
 
 Expand a data frame to include all combinations of values. Unlike the Complete command, the resulting data frame does not include columns that are not selected. 
 

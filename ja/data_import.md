@@ -1,7 +1,9 @@
-# データのインポート
+---
+title: "データのインポート"
+---
 
 このセクションで日本語で読めるページです。
 
-- [データベースのデータ](database-data.md)
-- [クラウドアプリのデータ](cloud-apps-data.md)
-- [R スクリプトを書いてデータを取得する](import/r-script-data.md)
+- [データベースのデータ](/ja/database-data)
+- [クラウドアプリのデータ](/ja/cloud-apps-data)
+- [R スクリプトを書いてデータを取得する](/ja/import/r-script-data)

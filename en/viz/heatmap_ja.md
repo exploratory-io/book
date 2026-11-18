@@ -1,4 +1,6 @@
-# Heatmap
+---
+title: "Heatmap"
+---
 
 ![](images/heatmap1.png)
 

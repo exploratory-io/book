@@ -1,4 +1,6 @@
-# パラメーター
+---
+title: "パラメーター"
+---
 
 パラメーターを使うと、Exploratory Desktop上のビュー、さらには、exploratory.ioまたはCollaboration Server上に共有されたダッシュボード、ドキュメントを動的にすることができます。
 
@@ -65,7 +67,7 @@
 
 `` `@{パラメーター名}` ``の書式を使うことで、ノートやダッシュボード上に、パラメーターの値を表示することができます。
 
-![](images/jp1.png)
+![](/ja/parameter/images/jp1.png)
 
 
 ## サーバー上でのパラメーターの表示方法を変更する
@@ -77,7 +79,7 @@
 
 パラメーターとインサイトを、並べて表示する方法です。
 
-![](images/parameter-fit-mode3-ja.png)
+![](/ja/parameter/images/parameter-fit-mode3-ja.png)
 
 
 
@@ -86,19 +88,19 @@
 ページ上に、パラメーターを重ねて表示する方法です。
 
 
-![](images/parameter-fit-mode4-ja.png)
+![](/ja/parameter/images/parameter-fit-mode4-ja.png)
 
 
 
 
 表示方法の変更は、パラメーターの設定のダイアログから行うことができます。ダイアログを開くには、メニューから、「パラメーターの設定」を選択します。
 
-![](images/parameter-fit-mode1-ja.png)
+![](/ja/parameter/images/parameter-fit-mode1-ja.png)
 
 
 「ページの上に重ねて表示」のチェックボックスを変更して、「更新」ボタンを押すことで、表示方法の変更することができます。
 
-![](images/parameter-fit-mode2-ja.png)
+![](/ja/parameter/images/parameter-fit-mode2-ja.png)
 
 
 

@@ -1,4 +1,6 @@
-# Rank
+---
+title: "Rank"
+---
 
 - min_rank
 - dense_rank

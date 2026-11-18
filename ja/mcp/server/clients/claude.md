@@ -1,4 +1,6 @@
-# Claude アプリにつなぐ
+---
+title: "Claude アプリにつなぐ"
+---
 
 Claude に、Exploratory のサーバーを「カスタムコネクタ」として追加します。コネクタとは、Claude が外部のサービスのデータや機能を使うための接続です。接続すると、Claude のチャットから、Exploratory に公開されたノートやデータを読めるようになります。
 かかる時間は 5 分ほどです。Exploratory のアカウントと、Claude のデスクトップアプリまたは Web（claude.ai）を用意してください。
@@ -75,11 +77,11 @@ Claude のデスクトップアプリで、設定の「コネクタ」の画面�
    接続した Exploratory Server で、閲覧できるコンテンツを最大 3 件、URL 付きで一覧して。見つからなければ、その旨を教えて。
    ```
 
-コンテンツが URL 付きで表示されれば、使えています。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](../troubleshooting.md#zero)を参照してください。
+コンテンツが URL 付きで表示されれば、使えています。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](/ja/mcp/server/troubleshooting#zero)を参照してください。
 
 ### Claude Code でも使う
 
-同じ claude.ai アカウントで [Claude Code](claude-code.md) にサインインすると、ここで追加したコネクタは、Claude Code にも「claude.ai Exploratory」として表示され、そのまま使えます。Claude Code で追加し直す必要はありません。
+同じ claude.ai アカウントで [Claude Code](/ja/mcp/server/clients/claude-code) にサインインすると、ここで追加したコネクタは、Claude Code にも「claude.ai Exploratory」として表示され、そのまま使えます。Claude Code で追加し直す必要はありません。
 
 <a id="permissions"></a>
 
@@ -103,7 +105,7 @@ Exploratory のコネクタが使う道具は、「読み取り専用ツール�
 | 「このURLのコネクタはすでに組織内に存在します」と表示される | 組織（チーム）で、すでにコネクタが追加されています。新しく追加せず、コネクタの一覧にある既存のコネクタを使います。 |
 | サインインを求められる | コネクタの一覧で「Exploratory」を開き、もう一度サインインします。 |
 
-ほかの症状は、[トラブルシューティング](../troubleshooting.md) を参照してください。
+ほかの症状は、[トラブルシューティング](/ja/mcp/server/troubleshooting) を参照してください。
 
 <a id="remove"></a>
 

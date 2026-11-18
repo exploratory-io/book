@@ -1,4 +1,7 @@
-# Remove Empty Rows
+---
+title: "Remove Empty Rows"
+---
+
 Removes all rows from a data frame that are composed entirely of NA values.
 
 ## How to Access This Feature

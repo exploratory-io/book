@@ -1,4 +1,6 @@
-# Log file for debugging
+---
+title: "Log file for debugging"
+---
 
 When you see some issues on Exploratory, you can check log files which are available at following location. And you can send the log files to Exploratory Support team (support@exploratory.io) so that we can diagnose the issue.
 

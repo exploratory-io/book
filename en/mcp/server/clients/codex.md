@@ -1,4 +1,7 @@
-# Connect Codex
+---
+title: "Connect Codex"
+sidebarTitle: "Codex"
+---
 
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Codex and sign in through your browser.
 It takes about 3 minutes. You need an Exploratory account and Codex.
@@ -21,7 +24,7 @@ This registers only the server, without the skill. Use either of the two ways be
 
 **To edit the config file**
 
-1. Add this to ~/.codex/config.toml.
+1. Add this to \~/.codex/config.toml.
 
    ```text
    [mcp_servers.exploratory-server]
@@ -57,7 +60,7 @@ exploratory@exploratory in Exploratory's GitHub marketplace is for Desktop and d
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](/en/mcp/server/troubleshooting#zero).
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
@@ -104,7 +107,7 @@ If you already have another Exploratory connection (for example exploratory-serv
 
 If your environment cannot open a browser, use an API key instead of the sign-in. Create the key in Account Settings \> API Keys, and put it in an environment variable. Set EXPLORATORY_API_KEY through your environment's secret-management facility, such as your operating system's credential store or the secrets of your CI, not through your shell's startup file. Do not write the key itself on the command line or in a configuration file. The configuration below assumes that this environment variable is already set.
 
-Add the name of the variable, not the key, to ~/.codex/config.toml.
+Add the name of the variable, not the key, to \~/.codex/config.toml.
 
 ```text
 [mcp_servers.exploratory-server]
@@ -112,7 +115,7 @@ url = "https://exploratory.io/mcp"
 bearer_token_env_var = "EXPLORATORY_API_KEY"
 ```
 
-If you write the key in the file as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../auth.md#apikey) for what a key can read.
+If you write the key in the file as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](/en/mcp/server/auth#apikey) for what a key can read.
 
 <a id="trouble"></a>
 
@@ -123,12 +126,12 @@ If you write the key in the file as it is, it stays in that file. Use one way on
 | You are asked to sign in | Run codex mcp login exploratory-server to sign in again. If you added the server by chat, give the name you registered (Exploratory in the example). |
 | The Server tools do not appear | exploratory@exploratory is for Desktop. Register Server with the steps above. |
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
+- [Troubleshooting](/en/mcp/server/troubleshooting) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 
 ## Disconnect
 
-Delete the \[mcp_servers.exploratory-server\] entry you added to ~/.codex/config.toml. If you added the server by chat, the entry carries the name you gave it (Exploratory in the example), so delete \[mcp_servers.Exploratory\] instead. Use the name you registered.
+Delete the \[mcp_servers.exploratory-server\] entry you added to \~/.codex/config.toml. If you added the server by chat, the entry carries the name you gave it (Exploratory in the example), so delete \[mcp_servers.Exploratory\] instead. Use the name you registered.
 
 Removing the registration does not revoke the access you approved. To revoke it, also remove the client under Connected AI Apps in Account Settings on exploratory.io.

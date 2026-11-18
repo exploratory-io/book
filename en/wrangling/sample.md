@@ -1,4 +1,6 @@
-# Sample
+---
+title: "Sample"
+---
 
 Sample n rows from the data frame (Sample N Rows) or sample n fraction of rows from the data frame (Sample Fraction)
 

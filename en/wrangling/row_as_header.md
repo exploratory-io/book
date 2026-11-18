@@ -1,4 +1,8 @@
-# Row as Header
+---
+title: "Row as Header"
+sidebarTitle: "Row as header"
+---
+
 Use a row as column names.
 
 ## How to Access This Feature

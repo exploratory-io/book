@@ -1,4 +1,6 @@
-# Highlight
+---
+title: "Highlight"
+---
 
 By using the Highlight feature, you can change the color of specific markers such as bars, lines or circles to stand out from others. Highlight feature is available in the following charts. 
 

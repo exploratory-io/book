@@ -1,4 +1,6 @@
-# Semi Join
+---
+title: "Semi Join"
+---
 
 Return all rows from the current data set where there are matching values in the target data set, keeping just columns from the current.
 

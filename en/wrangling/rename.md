@@ -1,4 +1,7 @@
-# Rename
+---
+title: "Rename"
+---
+
 Rename existing column names
 
 ## How to Access This Feature

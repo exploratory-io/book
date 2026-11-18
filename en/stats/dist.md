@@ -1,4 +1,6 @@
-# Distance
+---
+title: "Distance"
+---
 
 ## Introduction
 
@@ -64,6 +66,6 @@ If there are duplicated values or missing values for a cell, they will be aggreg
 * Keep Diagonal Pairs (Optional) - The default is FALSE. Whether the output should contain the similarity of documents with itself.
 * Output Type (Optional) - Type of output.
   * "Distance values for each pair" - Returns a pair of categories and their distance in each row.
-  * "Position values in X/Y coordinates" - Returns coordinates for plot after dimension reduction by [MDS](../mds.html).
+  * "Position values in X/Y coordinates" - Returns coordinates for plot after dimension reduction by [MDS](/en/stats/mds).
 
 Take a look at the [reference document](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/dist.html) for the 'dist' function from base R for more details on the parameters.

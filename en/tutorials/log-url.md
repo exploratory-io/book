@@ -1,4 +1,6 @@
-# Analyze Access Log Data
+---
+title: "Analyze Access Log Data"
+---
 
 Here is a 3 parts series of "How you can analyze Access Log data with Exploratory Desktop".
 

@@ -1,4 +1,6 @@
-# Pivot
+---
+title: "Pivot"
+---
 
 Pivot columns into rows and columns. Values are count of pairs of rows and columns or aggregation of another column.
 
@@ -31,13 +33,12 @@ Pivot columns into rows and columns. Values are count of pairs of rows and colum
 <strong>Example</strong>
 </p>
 <p><em>Original data:</em>  </p>
-<table><thead><tr><th style=\"text-align: left\">clarity</th>
-<th style=\"text-align: left\">certification</th>
-<th style=\"text-align: left\">colour</th><th style=\"text-align: right\">price</th></tr>
-</thead><tbody><tr><td style=\"text-align: left\">VVS2</td><td style=\"text-align: left\">HRD</td>  <td style=\"text-align: left\">F</td><td style=\"text-align: right\">10796</td></tr><tr><td style=\"text-align: left\">VS1</td><td style=\"text-align: left\">GIA</td>  <td style=\"text-align: left\">F</td><td style=\"text-align: right\">1551</td></tr><tr><td style=\"text-align: left\">VS1</td>  <td style=\"text-align: left\">GIA</td>  <td style=\"text-align: left\">F</td>  <td style=\"text-align: right\">4291</td></tr>  <tr>  <td style=\"text-align: left\">VVS2</td>  <td style=\"text-align: left\">GIA</td>  <td style=\"text-align: left\">F</td>  <td style=\"text-align: right\">5881</td>  </tr>  <tr>  <td style=\"text-align: left\">VS2</td>  <td style=\"text-align: left\">GIA</td>  <td style=\"text-align: left\">H</td>  <td style=\"text-align: right\">4585</td>  </tr>  <tr>  <td style=\"text-align: left\">VVS2</td>  <td style=\"text-align: left\">GIA</td>  <td style=\"text-align: left\">H</td>  <td style=\"text-align: right\">5193</td>  </tr>  </tbody></table>    
+<table><thead><tr><th style={{textAlign: 'left'}}>clarity</th>
+<th style={{textAlign: 'left'}}>certification</th>
+<th style={{textAlign: 'left'}}>colour</th><th style={{textAlign: 'right'}}>price</th></tr>
+</thead><tbody><tr><td style={{textAlign: 'left'}}>VVS2</td><td style={{textAlign: 'left'}}>HRD</td>  <td style={{textAlign: 'left'}}>F</td><td style={{textAlign: 'right'}}>10796</td></tr><tr><td style={{textAlign: 'left'}}>VS1</td><td style={{textAlign: 'left'}}>GIA</td>  <td style={{textAlign: 'left'}}>F</td><td style={{textAlign: 'right'}}>1551</td></tr><tr><td style={{textAlign: 'left'}}>VS1</td>  <td style={{textAlign: 'left'}}>GIA</td>  <td style={{textAlign: 'left'}}>F</td>  <td style={{textAlign: 'right'}}>4291</td></tr>  <tr>  <td style={{textAlign: 'left'}}>VVS2</td>  <td style={{textAlign: 'left'}}>GIA</td>  <td style={{textAlign: 'left'}}>F</td>  <td style={{textAlign: 'right'}}>5881</td>  </tr>  <tr>  <td style={{textAlign: 'left'}}>VS2</td>  <td style={{textAlign: 'left'}}>GIA</td>  <td style={{textAlign: 'left'}}>H</td>  <td style={{textAlign: 'right'}}>4585</td>  </tr>  <tr>  <td style={{textAlign: 'left'}}>VVS2</td>  <td style={{textAlign: 'left'}}>GIA</td>  <td style={{textAlign: 'left'}}>H</td>  <td style={{textAlign: 'right'}}>5193</td>  </tr>  </tbody></table>    
 
 <p> if you set <strong>row</strong>: clarify, colour <strong>columns</strong>: certification <strong>value</strong>: price <strong>fill</strong>:0
+<br />  <em>it returns data frame with rows of combinations of clarity and colour and with columns of certification. Values are sum of price and missing values are filled by 0.</em></p>
 
-<br>  <em>it returns data frame with rows of combinations of clarity and colour and with columns of certification. Values are sum of price and missing values are filled by 0.</em></p>
-
-<table><thead>  <tr>  <th style=\"text-align: left\">clarity_colour</th>  <th style=\"text-align: right\">GIA</th>  <th style=\"text-align: right\">HRD</th>  </tr>  </thead><tbody>  <tr>  <td style=\"text-align: left\">VS1_F</td>  <td style=\"text-align: right\">5842</td>  <td style=\"text-align: right\">0</td>  </tr>  <tr>  <td style=\"text-align: left\">VS2_H</td>  <td style=\"text-align: right\">4585</td>  <td style=\"text-align: right\">0</td>  </tr>  <tr>  <td style=\"text-align: left\">VVS2_F</td>  <td style=\"text-align: right\">5881</td>  <td style=\"text-align: right\">10796</td>  </tr>  <tr>  <td style=\"text-align: left\">VVS2_H</td>  <td style=\"text-align: right\">5193</td>  <td style=\"text-align: right\">0</td>  </tr>  </tbody></table>  
+<table><thead>  <tr>  <th style={{textAlign: 'left'}}>clarity_colour</th>  <th style={{textAlign: 'right'}}>GIA</th>  <th style={{textAlign: 'right'}}>HRD</th>  </tr>  </thead><tbody>  <tr>  <td style={{textAlign: 'left'}}>VS1_F</td>  <td style={{textAlign: 'right'}}>5842</td>  <td style={{textAlign: 'right'}}>0</td>  </tr>  <tr>  <td style={{textAlign: 'left'}}>VS2_H</td>  <td style={{textAlign: 'right'}}>4585</td>  <td style={{textAlign: 'right'}}>0</td>  </tr>  <tr>  <td style={{textAlign: 'left'}}>VVS2_F</td>  <td style={{textAlign: 'right'}}>5881</td>  <td style={{textAlign: 'right'}}>10796</td>  </tr>  <tr>  <td style={{textAlign: 'left'}}>VVS2_H</td>  <td style={{textAlign: 'right'}}>5193</td>  <td style={{textAlign: 'right'}}>0</td>  </tr>  </tbody></table>  

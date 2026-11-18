@@ -1,4 +1,6 @@
-# Time Series Clustering
+---
+title: "Time Series Clustering"
+---
 
 Clusters multiple time series data into groups.
 

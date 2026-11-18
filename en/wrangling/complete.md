@@ -1,4 +1,6 @@
-# Complete
+---
+title: "Complete"
+---
 
 Complete commands turns implicit missing values into explicit missing values and is useful for completing missing combinations of data.
 

@@ -1,10 +1,12 @@
-# PostgreSQLデータベースからデータをインポートする
+---
+title: "PostgreSQLデータベースからデータをインポートする"
+---
 
 PostgreSQLデータベースからExploratoryに素早くデータをインポートすることができます。
 
 ## 1. 使用するデータコネクションを作成する
 
-[この手順](https://docs.exploratory.io/data_import/database-data/connection)に従って、データコネクションを作成します。
+[この手順](/en/import/connection.html)に従って、データコネクションを作成します。
 
 * SSL接続かどうかは自動的に判別されます。
 

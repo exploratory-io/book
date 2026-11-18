@@ -1,4 +1,6 @@
-# Evaluate Prediction - Binary
+---
+title: "Evaluate Prediction - Binary"
+---
 
 Returns a data frame with evaluation score of binary classification including the below.
 

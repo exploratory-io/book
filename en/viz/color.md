@@ -1,5 +1,7 @@
-# Color & Group Setting
-
+---
+title: "Color & Group Setting"
+sidebarTitle: "Color and Group Setting"
+---
 
 You can update the color and grouping settings in the Color & Group Setting dialog. 
 
@@ -28,7 +30,7 @@ The following options are available.
 ### Highlight Mode
 
 
-You can use the Highlight Mode to highlight specific categories that you pick. You can select the "Highlight" menu in the Color Palette dropdown menu to start using it. See [Highlight](highlight.md) for the detail. 
+You can use the Highlight Mode to highlight specific categories that you pick. You can select the "Highlight" menu in the Color Palette dropdown menu to start using it. See [Highlight](/en/viz/highlight) for the detail. 
 
 
 
@@ -36,7 +38,7 @@ You can use the Highlight Mode to highlight specific categories that you pick. Y
 
 ### Edit User Color Palette
 
-You can add/edit your color palette by selecting the "Edit Custom Color Palette" menu at the bottom of the Color Palette dropdown. See [User Color Palette](custom-palette.md) for how to use the User Color Palette dialog. 
+You can add/edit your color palette by selecting the "Edit Custom Color Palette" menu at the bottom of the Color Palette dropdown. See [User Color Palette](/en/viz/custom-palette) for how to use the User Color Palette dialog. 
 
 
 
@@ -58,7 +60,7 @@ The following Grouping Types are available. The list of options may vary dependi
 * None
 
 
-See [Category](category.md#category-types) for the available options for each type.
+See [Category](/en/viz/category#category-types) for the available options for each type.
 
 
 
@@ -84,7 +86,7 @@ The following settings are available.
   * Alphabetical 
   * Y-Axis Value 
  
-<!--
+{/*
 Use this once #26183 is in the product.
 
 * Sort By - You can choose the base values for the sort. It is available on Bar, Line, Area, Pie, Scatter (With Aggregation) and Error Bar, and if you assign a character type column to Color. The following options are available. 
@@ -92,7 +94,7 @@ Use this once #26183 is in the product.
   * Display Name
   * Y-Axis Value 
 
--->
+*/}
 
 
 

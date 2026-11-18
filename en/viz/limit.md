@@ -1,4 +1,6 @@
-# Limit Values
+---
+title: "Limit Values"
+---
 
 The Limit Values feature literally limits/filters output of the categorical values by the conditions.
 

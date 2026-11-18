@@ -1,4 +1,6 @@
-# Radar Chart
+---
+title: "Radar Chart"
+---
 
 ![](images/radar.png)
 

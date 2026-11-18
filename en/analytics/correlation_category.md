@@ -1,4 +1,6 @@
-# Correlation by Category
+---
+title: "Correlation by Category"
+---
 
 Calculates correlations among groups defined by a category column.
 

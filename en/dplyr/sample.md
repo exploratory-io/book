@@ -1,4 +1,6 @@
-# sample_n
+---
+title: "sample_n"
+---
 
 Sample n rows from the data set.
 

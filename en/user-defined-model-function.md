@@ -1,4 +1,7 @@
-# Use Custom Model Function
+---
+title: "Use Custom Model Function"
+sidebarTitle: "Custom Model Function"
+---
 
 Exploratory provides a framework with which users can define and use custom model functions. This is an introduction of how to do it.
 
@@ -102,7 +105,7 @@ You can see model summary view like this. "Summary of Fit" is the result from **
 
 ![](import/images/model_result.png)
 
-Here, test_rate and seed are arguments for build_model. __test_rate = 0.2__ means 20% of the data will be used for test and 80% of the data is used for training. __seed = 1__ means 1 is a random seed to split training data and test data by sampling. __formula = subscribed ~ age + housing + duration__ and __kernel = "linear"__ is a parameter for e1071::svm. You will see summary of the created model like this.
+Here, test_rate and seed are arguments for build_model. __test_rate = 0.2__ means 20% of the data will be used for test and 80% of the data is used for training. __seed = 1__ means 1 is a random seed to split training data and test data by sampling. __formula = subscribed \~ age + housing + duration__ and __kernel = "linear"__ is a parameter for e1071::svm. You will see summary of the created model like this.
 
 ### Use the Model for Prediction
 

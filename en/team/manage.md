@@ -1,4 +1,6 @@
-# Manage Teams
+---
+title: "Manage Teams"
+---
 
 You can manage teams at the [Account Setting](https://exploratory.io/account/settings) page.
 

@@ -1,4 +1,6 @@
-# Summarize Table 
+---
+title: "Summarize Table"
+---
 
 ![](images/stable1.png)
 
@@ -35,7 +37,7 @@ It opens up the Total Setting dialog. You can change the aggregation function fo
 ## Formatting Columns
 
 You can format each Row Header and Value column. You can access the Column Format dialog by selecting the "Formatting" menu in the column menu next to the column name dropdown. See 
-[Column Configuration Dialog](column-configuration-dialog.md) for mode details.
+[Column Configuration Dialog](/en/viz/column-configuration-dialog) for mode details.
 
 ![](images/stable2.png)
 
@@ -44,7 +46,7 @@ You can format each Row Header and Value column. You can access the Column Forma
 
 ## Color Assignment 
 
-You can quickly apply the color formatting from the "Color Assignment" column menu. You can configure the formatting details in the [Column Configuration Dialog](column-configuration-dialog.md).
+You can quickly apply the color formatting from the "Color Assignment" column menu. You can configure the formatting details in the [Column Configuration Dialog](/en/viz/column-configuration-dialog).
 
 
 ![](images/stable_viz_format_menu.png)
@@ -52,11 +54,11 @@ You can quickly apply the color formatting from the "Color Assignment" column me
 ## Fit to Screen
 
 
-You can fit the table to the chart viewing area by the "Fit to Screen" option in the chart property dialog. See [Fit to Screen (Table)](table-fit-to-screen.md) for more details.
+You can fit the table to the chart viewing area by the "Fit to Screen" option in the chart property dialog. See [Fit to Screen (Table)](/en/viz/table-fit-to-screen) for more details.
 
 ## Window Calculation 
 
-You can assign Window Calculations for each column at Value. See [Window Calculation](window-calc.md) for more details.
+You can assign Window Calculations for each column at Value. See [Window Calculation](/en/viz/window-calc) for more details.
 
 
 ## Visual Sort 
@@ -65,21 +67,21 @@ You can sort by the column by clicking the column header. Note that the sort hap
 
 ## Category 
 
-You can categorize numeric values at Row. See [Category(Binning)](category.md) for the detail.
+You can categorize numeric values at Row. See [Category(Binning)](/en/viz/category) for the detail.
 
 ## Limit Values
 
-You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](limit.md) for the detail. 
+You can use Limit Values to filter the categories by the aggregated values. See [Limit Values](/en/viz/limit) for the detail. 
 
 
 ## 'Others' Group
 
-If you have many categories, you can reduce the number of categories by changing some category names to 'Others' using the 'Others' Group feature. See ['Others' Group](others-group.md) for the detail. 
+If you have many categories, you can reduce the number of categories by changing some category names to 'Others' using the 'Others' Group feature. See ['Others' Group](/en/viz/others-group) for the detail. 
 
 
 ## Custom Function
 
-You can use the Custom Function feature to define your own aggregation function at Value. See [Custom Function](custom-function.md) for the detail.
+You can use the Custom Function feature to define your own aggregation function at Value. See [Custom Function](/en/viz/custom-function) for the detail.
 
 
 ## Calculation Target for Total Calculation
@@ -96,9 +98,9 @@ You can choose how to calculate the totals/subtotals at the Calculation Target i
 
 ## Show Detail
 
-You can show the detailed data underlying the chart by clicking the value text. See [Show Detail](show-detail.md) for the detail.
+You can show the detailed data underlying the chart by clicking the value text. See [Show Detail](/en/viz/show-detail) for the detail.
 
 
 ## Layout Configuration
 
-Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 
+Take a look at [Layout Configuration](/en/viz/layout) on how to configure the layout and format. 

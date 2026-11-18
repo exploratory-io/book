@@ -1,4 +1,6 @@
-# Working with Date / Time data
+---
+title: "Working with Date / Time data"
+---
 
 Here is a blog post that walks you through how to address the common date / time data wrangling challenges.
 

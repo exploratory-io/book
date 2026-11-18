@@ -1,4 +1,6 @@
-# レポート (ノート, ダッシュボード) の共有
+---
+title: "レポート (ノート, ダッシュボード) の共有"
+---
 
 You can simply click 'Publish' button in the report (Note, Slides or Dashboard). 
 

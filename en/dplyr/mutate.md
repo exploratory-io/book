@@ -1,6 +1,8 @@
-# Mutate - Create Expression
+---
+title: "Mutate - Create Expression"
+---
 
-Mutate creates new column(s) with given expressions and preserves existing <column(s)>. You can use transmute to create new columns while removing the original ones.
+Mutate creates new column(s) with given expressions and preserves existing \<column(s)>. You can use transmute to create new columns while removing the original ones.
 
 **Syntax**  
 

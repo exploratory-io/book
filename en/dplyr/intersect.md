@@ -1,4 +1,6 @@
-# Intersect
+---
+title: "Intersect"
+---
 
 Keep the rows that appear in all the given data sets.
 

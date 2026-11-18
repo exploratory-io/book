@@ -1,4 +1,6 @@
-# Create Bins (Categories)
+---
+title: "Create Bins (Categories)"
+---
 
 We can categorize numeric values into a set of 'bins' or ‘buckets’ like below.
 

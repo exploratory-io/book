@@ -1,4 +1,6 @@
-# F-test
+---
+title: "F-test"
+---
 
 ## Introduction
 

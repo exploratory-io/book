@@ -1,4 +1,7 @@
-# Multinomial Logistic Regression Model
+---
+title: "Multinomial Logistic Regression Model"
+sidebarTitle: "Multinomial Logistic Regression"
+---
 
 ## Introduction
 
@@ -63,7 +66,7 @@ Once you run it, you will see summary info like this.
 * Effective Number of DF - Effective number of degree of freedom.
 * Deviance - The residual deviance, compared to the full saturated model (that explains individual observations exactly). Also, minus twice log-likelihood.
 * AIC - The AIC for this fit.
-* Base Level of ~ - Base line value of factor variables. The values in Parameter Estimates are relative values compared to these base levels
+* Base Level of \~ - Base line value of factor variables. The values in Parameter Estimates are relative values compared to these base levels
 
 ### Parameter Estimates
 

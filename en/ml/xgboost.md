@@ -1,4 +1,7 @@
-# XGBoost - Extreme Gradient Boosting
+---
+title: "XGBoost - Extreme Gradient Boosting"
+sidebarTitle: "XGBoost"
+---
 
 ## Introduction
 

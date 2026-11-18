@@ -1,4 +1,6 @@
-# Notification
+---
+title: "Notification"
+---
 
 You can receive notifications by email when the insight is updated by the scheduling. If you want to set up the notification, select the "Subscribe" from the menu.
 

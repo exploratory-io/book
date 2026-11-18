@@ -1,4 +1,7 @@
-# Connect other clients
+---
+title: "Connect other clients"
+sidebarTitle: "Other clients"
+---
 
 After you connect, an AI can read notes and data published on Exploratory. Any MCP client that supports Streamable HTTP and OAuth can connect with the server URL.
 It takes about 5 minutes, depending on the client. You need an Exploratory account and a supported MCP client.
@@ -36,13 +39,13 @@ See the client's own documentation for where and how.
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](/en/mcp/server/troubleshooting#zero).
 
 <a id="apikey"></a>
 
 ## Connect with an API key
 
-If your client cannot open a browser, use an API key. Create the key in Account Settings \> API Keys, put it in an environment variable, and have the client send it from there as Authorization: Bearer \<your key\>. If you type the key on a command line or write it in a settings file as it is, it stays in your shell history or in that file. See [Connect with an API key](../auth.md#apikey) for what a key can read.
+If your client cannot open a browser, use an API key. Create the key in Account Settings \> API Keys, put it in an environment variable, and have the client send it from there as Authorization: Bearer \<your key\>. If you type the key on a command line or write it in a settings file as it is, it stays in your shell history or in that file. See [Connect with an API key](/en/mcp/server/auth#apikey) for what a key can read.
 
 <a id="trouble"></a>
 
@@ -50,9 +53,9 @@ If your client cannot open a browser, use an API key. Create the key in Account 
 
 A request without a valid token gets HTTP 401. Sign in again with your client's own steps.
 
-- [Data and permissions](../data.md#auth) - The authorization mechanism and the metadata URLs.
+- [Data and permissions](/en/mcp/server/data#auth) - The authorization mechanism and the metadata URLs.
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
+- [Troubleshooting](/en/mcp/server/troubleshooting) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 

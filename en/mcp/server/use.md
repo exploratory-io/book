@@ -1,4 +1,6 @@
-# Use
+---
+title: "Use"
+---
 
 Examples of what to ask your AI for what you want to do with published content, with the tools it uses and a few tips. The tools are what the AI uses; you do not call them yourself.
 
@@ -11,7 +13,7 @@ Examples of what to ask your AI for what you want to do with published content, 
 | Get the results of analytics | [Get the results of analytics](#analytics) | fetch, analytics_get_result |
 | Save results to a file | [Save results to a file](#export) | query_dataset, dataframe_export |
 
-To do the same from a terminal, see [Use](../../cli/server/use.md) of CLI Server.
+To do the same from a terminal, see [Use](/en/cli/server/use) of CLI Server.
 
 <a id="find"></a>
 
@@ -33,7 +35,7 @@ Read the note "Sales Orders Report" on Exploratory and tell me the key points.
 
 The AI calls fetch with the id it found through search and reads the body of the note or dashboard as Markdown. For a long note, it reads only the parts it needs with the section and query options of fetch. Along with the note name, tell it the topic you care about (for example "only the forecast section") to read faster.
 
-To do the same from a terminal, see [Read notes](../../cli/server/guides/read-notes.md).
+To do the same from a terminal, see [Read notes](/en/cli/server/guides/read-notes).
 
 <a id="data"></a>
 
@@ -45,7 +47,7 @@ What columns does the "Sales Orders" data on Exploratory have, and which 5 regio
 
 Describe the data and your question. The AI checks the columns and aggregation rules before calculating. Review the calculation conditions (aggregation, filters) and the data date alongside the result.
 
-To do the same from a terminal, see [Query data](../../cli/server/guides/query-data.md).
+To do the same from a terminal, see [Query data](/en/cli/server/guides/query-data).
 
 <a id="chart"></a>
 
@@ -57,7 +59,7 @@ Tell me the numbers of the chart "Monthly Sales Trend" in the dashboard "Sales O
 
 The AI looks up the chart name in the dashboard and gets the numbers. For charts in notes, dashboards and slides, it can also filter, sort or aggregate them with chart_query. The numbers are the values as published.
 
-To do the same from a terminal, see [Get chart numbers](../../cli/server/guides/dashboard-charts.md).
+To do the same from a terminal, see [Get chart numbers](/en/cli/server/guides/dashboard-charts).
 
 <a id="analytics"></a>
 
@@ -69,7 +71,7 @@ Tell me the results of the analytics "Monthly Sales Forecast" in the dashboard "
 
 The AI confirms the name of the analytics in the dashboard with fetch, then gets the result with analytics_get_result. Values such as coefficients and p-values come back as displayed. Tell it the name (title) of the analytics and the numbers you want (coefficients, p-values and so on).
 
-To do the same from a terminal, see [Get analytics results](../../cli/server/guides/analytics.md).
+To do the same from a terminal, see [Get analytics results](/en/cli/server/guides/analytics).
 
 <a id="export"></a>
 
@@ -81,4 +83,4 @@ Save the sales total by region of the "Sales Orders" data as a CSV.
 
 The AI filters or aggregates with the same conditions as query_dataset, saves the result as CSV or Parquet with dataframe_export, and returns a download link. Use it when the result is too large to get on screen. Tell it the format (CSV or Parquet) and the aggregation conditions. Data whose publisher does not allow downloading cannot be saved.
 
-To do the same from a terminal, see [Save results to a file](../../cli/server/guides/export.md).
+To do the same from a terminal, see [Save results to a file](/en/cli/server/guides/export).

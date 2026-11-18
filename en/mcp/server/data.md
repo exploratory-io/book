@@ -1,4 +1,6 @@
-# Data and permissions
+---
+title: "Data and permissions"
+---
 
 Whose permissions this server uses, what it reads, and what Exploratory records.
 
@@ -51,7 +53,7 @@ A call without a valid token returns HTTP 401. The response has a WWW-Authentica
 
 A key that fails gets 401 or 403 with WWW-Authenticate: Bearer error="…", error_description="…". Unlike the 401 above, this header has no resource_metadata, so a client that sends a fixed header does not start the sign-in. After more than 30 refused keys from one address within 15 minutes (counted per IPv4 address, or per IPv6 /64 range), the answer is 429.
 
-The first sign-in shows a consent page. That page says you can revoke access in "Settings > Connected apps". It links to Account Settings, where the section is named Connected AI Apps (see [Disconnect](#disconnect)). To sign in again after a 401, see [Troubleshooting](troubleshooting.md#signin).
+The first sign-in shows a consent page. That page says you can revoke access in "Settings > Connected apps". It links to Account Settings, where the section is named Connected AI Apps (see [Disconnect](#disconnect)). To sign in again after a 401, see [Troubleshooting](/en/mcp/server/troubleshooting#signin).
 
 <a id="disconnect"></a>
 
@@ -59,4 +61,4 @@ The first sign-in shows a consent page. That page says you can revoke access in 
 
 To disconnect a client from the Server MCP, open Account Settings on exploratory.io and remove it under Connected AI Apps. Removing the registration in the client alone does not revoke the access you approved. To stop an API key, revoke it under API Keys in the same Account Settings.
 
-- [Add from an AI tool](clients/apps.md) - How to remove the registration in each client.
+- [Add from an AI tool](/en/mcp/server/clients/apps) - How to remove the registration in each client.

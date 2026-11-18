@@ -1,4 +1,7 @@
-# Amazon Redshift Database Data Import
+---
+title: "Amazon Redshift Database Data Import"
+sidebarTitle: "Amazon Redshift"
+---
 
 You can quickly import data from your Amazon Redshift Database into Exploratory.
 
@@ -6,7 +9,7 @@ Here is a [blog post](https://blog.exploratory.io/exploratory-data-analysis-for-
 
 ## 1. Create a Connection to use
 
-Create a connection following [this instruction](https://docs.exploratory.io/data_import/database-data/connection).
+Create a connection following [this instruction](/en/import/connection.html).
 
 
 ## 2. Open Redshift Import dialog

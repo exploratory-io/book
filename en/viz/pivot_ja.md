@@ -1,4 +1,6 @@
-# Pivot Table
+---
+title: "Pivot Table"
+---
 
 ![](images/pivot.png)
 

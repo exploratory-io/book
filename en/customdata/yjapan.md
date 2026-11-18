@@ -1,4 +1,6 @@
-# Yahoo Japan Finance Data
+---
+title: "Yahoo Japan Finance Data"
+---
 
 ### Pre-requisite
 

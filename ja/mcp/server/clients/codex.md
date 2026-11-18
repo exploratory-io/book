@@ -1,4 +1,6 @@
-# Codex につなぐ
+---
+title: "Codex につなぐ"
+---
 
 接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Codex に Exploratory のサーバーを登録し、ブラウザでサインインします。
 かかる時間は 3 分ほどです。Exploratory のアカウントと、Codex を用意してください。
@@ -21,7 +23,7 @@
 
 **設定ファイルに書く場合**
 
-1. ~/.codex/config.toml に、次の内容を追加します。
+1. \~/.codex/config.toml に、次の内容を追加します。
 
    ```text
    [mcp_servers.exploratory-server]
@@ -57,7 +59,7 @@ Exploratory の GitHub マーケットプレイスの exploratory@exploratory �
    接続した Exploratory Server で、閲覧できるコンテンツを最大 3 件、URL 付きで一覧して。見つからなければ、その旨を教えて。
    ```
 
-コンテンツが URL 付きで表示されていれば、接続できています。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](../troubleshooting.md#zero)を参照してください。
+コンテンツが URL 付きで表示されていれば、接続できています。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](/ja/mcp/server/troubleshooting#zero)を参照してください。
 
 スキルは、AI に操作の進め方を教える説明です。MCP の接続設定とは別のものです。
 
@@ -102,7 +104,7 @@ Codex が Exploratory サーバー経由で検索し、データが見つかり�
 
 ブラウザを開けない環境では、サインインの代わりに API キーを使います。キーは、アカウント設定 \> API キーで作り、環境変数に入れます。EXPLORATORY_API_KEY は、秘密情報を管理する仕組みで設定します。シェルの設定ファイルではなく、OS の資格情報の保管庫や CI のシークレットなどを使います。キーそのものをコマンドラインや設定ファイルに書かないでください。以下は、この環境変数が設定済みであることを前提にします。
 
-~/.codex/config.toml には、キーではなく、環境変数の名前を書きます。
+\~/.codex/config.toml には、キーではなく、環境変数の名前を書きます。
 
 ```text
 [mcp_servers.exploratory-server]
@@ -110,7 +112,7 @@ url = "https://exploratory.io/mcp"
 bearer_token_env_var = "EXPLORATORY_API_KEY"
 ```
 
-キーをファイルにそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](../auth.md#apikey)を参照してください。
+キーをファイルにそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](/ja/mcp/server/auth#apikey)を参照してください。
 
 <a id="trouble"></a>
 
@@ -121,12 +123,12 @@ bearer_token_env_var = "EXPLORATORY_API_KEY"
 | サインインを求められる | codex mcp login exploratory-server を実行して、もう一度サインインします。チャットで追加した場合は、自分が登録した名前（例では Exploratory）を指定します。 |
 | Server の道具が出ない | exploratory@exploratory は Desktop 用です。上の手順で、Server を登録します。 |
 
-- [トラブルシューティング](../troubleshooting.md) - Server の MCP 全体の、症状ごとの対処です。
+- [トラブルシューティング](/ja/mcp/server/troubleshooting) - Server の MCP 全体の、症状ごとの対処です。
 
 <a id="remove"></a>
 
 ## 接続を解除する
 
-~/.codex/config.toml に追加した \[mcp_servers.exploratory-server\] の部分を削除します。チャットで追加した場合は、自分が付けた名前（例では Exploratory）で登録されているので、\[mcp_servers.Exploratory\] の部分を削除します。自分が登録した名前を使ってください。
+\~/.codex/config.toml に追加した \[mcp_servers.exploratory-server\] の部分を削除します。チャットで追加した場合は、自分が付けた名前（例では Exploratory）で登録されているので、\[mcp_servers.Exploratory\] の部分を削除します。自分が登録した名前を使ってください。
 
 登録を解除しても、アクセスの許可は残ります。許可も取り消すには、exploratory.io のアカウント設定の「接続中のAIアプリ」から、クライアントを解除します。

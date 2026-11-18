@@ -1,4 +1,7 @@
-# Calculate TF-IDF
+---
+title: "Calculate TF-IDF"
+sidebarTitle: "Calculate tf-idf"
+---
 
 ## How to Access This Feature
 
@@ -10,8 +13,8 @@ You can access it from 'Add' (Plus) button. "Text Mining..." -> "Calculate TF-ID
 
 ![](images/do_tfidf_param.png)
 
-* Select a column as document id - A column considered as document id. If you run [do_tokenize](./do_tokenize.md) beforehand, this can be document_id.
-* Select a column that has tokenized text - Set a column that has tokens. This is "token" column if it's tokenized by [do_tokenize](./do_tokenize.md) function.
+* Select a column as document id - A column considered as document id. If you run [do_tokenize](/en/text/do_tokenize) beforehand, this can be document_id.
+* Select a column that has tokenized text - Set a column that has tokens. This is "token" column if it's tokenized by [do_tokenize](/en/text/do_tokenize) function.
 * TF Weight (Optional) - The default is "raw".
   * "raw" is count of a term in a document.
   * "binary" is if it exists or not. If it exists, it is 1 and if not, it is 0.

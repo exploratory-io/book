@@ -1,4 +1,6 @@
-# リリースノート
+---
+title: "リリースノート"
+---
 
 # v16.7
 
@@ -345,7 +347,7 @@
 *   潜在クラス分析（LCA）：潜在クラス分析（LCA）において、数値型の変数を選択できるようになりました。自動的にファクター型（順序カテゴリカルデータ）に変換されます。
 *   決定木：決定木のツールチップから条件テキストを直接コピーできるようになりました。
 *   K-Medoids：K-Medoidsのクラスタープロファイルのレーダーチャートにおいて、「すべての変数を表示」のデフォルト設定をTRUEに更新し、クラスタリングに使われたすべての変数がデフォルトで表示されるようにしました。
-*   アナリティクスレポート本文内のP値（統計的有意性を測る指標）およびパーセンテージの書式を標準化し、0.001未満の値を「< 0.001」および「< 0.1%」と表示するようにしました。
+*   アナリティクスレポート本文内のP値（統計的有意性を測る指標）およびパーセンテージの書式を標準化し、0.001未満の値を「\< 0.001」および「\< 0.1%」と表示するようにしました。
 
 ### ノート
 
@@ -1922,7 +1924,7 @@ AIデータは、分析準備における退屈で技術的なステップの多
 
 ### 修正された問題
 
-* データソース: S3: データをインポートする際に「Error in z[["Owner"]][["ID"]] : subscript out of bounds」エラーが発生する問題を修正しました。
+* データソース: S3: データをインポートする際に「Error in z[`["Owner"]`][`["ID"]`] : subscript out of bounds」エラーが発生する問題を修正しました。
 * データソース: MongoDB: スケジュールされたデータが更新された後、列のデータ型がデスクトップと異なる問題を修正しました。
 
 
@@ -2526,7 +2528,7 @@ AIデータは、分析準備における退屈で技術的なステップの多
 * チャート: マーカーを「ライン＋サークル」に変更すると、左右の両端に不要なスペースが表示される。
 
 
-* アナリティクス: 線形回帰 / ロジスティック回帰: 「影響度」のタブで、P値が「0.0001」未満の場合は、「<0.0001」と表示する必要があります。
+* アナリティクス: 線形回帰 / ロジスティック回帰: 「影響度」のタブで、P値が「0.0001」未満の場合は、「\<0.0001」と表示する必要があります。
 * アナリティクス: 生存曲線: 「生存率表」のタブでは、比率の値ではなく、パーセント表記で値を表示する必要があります。
 * アナリティクス: 生存曲線: 色で分割に列を指定していなくても、「サマリ」タブに「行数」と「行数（TRUE）」の情報を表示するべきです。
 
@@ -2789,7 +2791,7 @@ AIデータは、分析準備における退屈で技術的なステップの多
 * データラングリング: 結合: 結合先データフレームがブランチのブランチである場合、右外部結合のステップを作成した後に再度ダイアログを開くと、結合先データフレームのキー列が無効になる。
 * データラングリング: 結合: 結合先データフレームで「グループ化」がされている場合、結合先データフレームの列の選択からグループ列を削除できない。
 * データラングリング: データフレームを複製する時、複製元にあるチャートのコピーに失敗する場合がある。
-* データラングリング: テキストデータの加工：新しい値が欠損の場合、プレビューのテーブルの新しいには <NA> として表示されるようになります。
+* データラングリング: テキストデータの加工：新しい値が欠損の場合、プレビューのテーブルの新しいには \<NA> として表示されるようになります。
 
 
 * チャート: バーチャートでX軸に多くの一意な値の数を持つ列を割り当てた場合、“idx must contain one integer for each level of f”のエラーによって描画に失敗する。
@@ -2947,7 +2949,7 @@ AIデータは、分析準備における退屈で技術的なステップの多
 
 
 * ノート: イメージのサイズを変更した際に、イメージが小さいとイメージが誤った位置に移動してしまう。
-* ノート: コードブロックで"<"または">"の記号が使用されていると、既存のノートが開けない。
+* ノート: コードブロックで"\<"または">"の記号が使用されていると、既存のノートが開けない。
 * ノート: リフレッシュボタンを複数回クリックすると、他のRプロセスの実行中によるエラーが発生する。
 * ノート: 既存のノートを開くと、保持する必要があった空行も削除される。
 * ノート: 複数のレベルの箇条書きを含むテキストをコピーして貼り付けると、最初のレベルのテキストのみが追加される。
@@ -3210,7 +3212,7 @@ AIデータは、分析準備における退屈で技術的なステップの多
 * ノート: ノートの本文の幅が、デスクトップとサーバーの間で異なる。
 
 
-* ダッシュボード: 列名に中括弧（ { } ）が含まれているとダッシュボードのフィルタが機能しない。
+* ダッシュボード: 列名に中括弧（ \{ \} ）が含まれているとダッシュボードのフィルタが機能しない。
 * ダッシュボード: ピン留めされたステップに該当の列がチャートで利用されていなくても、その列が存在する限り、ダッシュボードのフィルタが機能するようになりました。
 * ダッシュボード: ダッシュボードを実行モードで閉じた後に再度開くと、空白のスクリーンが表示されました。
 * ダッシュボード: パイチャートをクリックすると、カラーパレットが変わってしまう。
@@ -3339,7 +3341,7 @@ AIデータは、分析準備における退屈で技術的なステップの多
 * サマリー: 行フィルタを削除するときの確認ダイアログに不要なHTMLタグが表示される。
 
 
-* チャート: 数値をカテゴリ化した時のバケットのラベルは、よりわかりやすい表現で表示する必要があります。例えば、「2000<=」ではなく、「2000以上」といった表記に変わります。
+* チャート: 数値をカテゴリ化した時のバケットのラベルは、よりわかりやすい表現で表示する必要があります。例えば、「2000\<=」ではなく、「2000以上」といった表記に変わります。
 * チャート: 色: 数値をカテゴリ化した際に、「等幅」を使ってバケットを作成した際に、バケット数を5より多く設定し、カラーパレットに「レッド / ブルー」を選択すると、５色のパレットが繰り返される。
 * チャート: 色: 数値をカテゴリ化した際に、「等幅」を使ってバケットを作成し、「0を中央にする」のオプションが適用されていると、指定されたデータ範囲を使用してバケットが作成され、パレットの中心の色が次のデータが次のデータが含まれるバケットと揃う必要がある。
 * チャート: ピボットテーブルで詳細データを表示しようとすると、エラーダイアログが表示され、"Cannot read properties of undefined (reading 'name')"のエラーが表示される。
@@ -3717,7 +3719,7 @@ AIデータは、分析準備における退屈で技術的なステップの多
 * チャート: 色、グループ、並び順の設定: グループ分けのタイプで論理条件を使用した際に、論理条件式が長すぎるとダイアログがオーバーフローする。
 * チャート: 表示名の編集: 元の値が「.」になっているものを新しい表示名に変更した場合、他の操作でエラーが発生する。
 * チャート: 散布図: 繰り返しに列を割り当て、X軸を同期のチェックボックスをオフにすると、プロット領域のラベルが実際のデータと一致しない。
-* チャート: ピボット: 集計テーブル: 小数点以下の桁数の設定が、「<0.63」などのカテゴリ化したラベルの数値に適用されない。
+* チャート: ピボット: 集計テーブル: 小数点以下の桁数の設定が、「\<0.63」などのカテゴリ化したラベルの数値に適用されない。
 
 
 * ダッシュボード: ダッシュボードに1行しかない場合、チャートをドラッグ&ドロップで行の中を移動することができない。
@@ -4372,7 +4374,7 @@ AIデータは、分析準備における退屈で技術的なステップの多
 
 * データラングリング: データフレームを複製した後、ツールバーとデータフレームリストにソースとなるデータフレーム名が表示されていた。
 * データラングリング: データフレーム名が競合している場合、ドラッグ＆ドロップによる.df（データフレーム）ファイルのインポートが機能しない。
-* データラングリング: 計算を作成-複数の列に@{}パラメーター表記のサポートがされていない。
+* データラングリング: 計算を作成-複数の列に@\{\}パラメーター表記のサポートがされていない。
 * データラングリング: 値に文字列を選び集計関数に数値を返す集計関数を選択すると、「cannot convert」のエラーが発生する。
 
 
@@ -4952,7 +4954,7 @@ mutate(col1 = nrow(!!another_dataframe))
 * チャート: レーダー: 列名のフォントサイズを設定できるようになりました。
 
 
-* ノート/ダッシュボード: パラメーターの値を '@{param_name}' という形で表示できるようになりました。
+* ノート/ダッシュボード: パラメーターの値を '@\{param_name\}' という形で表示できるようになりました。
 
 
 * パブリッシュ: パブリッシュのダイアログに 「新しいチームを作成」ボタンを追加しました。
@@ -5102,7 +5104,7 @@ Released on 11/24/2021.
 
 
 * Dashboard: Couldn't Re-Import and Run a Dashboard at the same time.
-* Dashboard: A dashboard panel title showed a weird text like "{data-width=100}" if a chart name contains an underscore ('\_') letter.
+* Dashboard: A dashboard panel title showed a weird text like "\{data-width=100\}" if a chart name contains an underscore ('\_') letter.
 * Dashboard: A dashboard panel got unexpectedly wider or narrower if a chart name contains an underscore ('\_') letter.
 
 
@@ -6035,7 +6037,7 @@ Release announcement: https://blog.exploratory.io/exploratory-v6-5-released-6ccb
 * Parameter: When creating a logical parameter, clicking on the Default checkbox didn't select all the options.
 * Parameter: Error was raised at importing EDF file with a Date / POSIXct Parameter with a relative date default value.
 * Parameter: It didn't create a parameter when clicking "Create Parameter" in the Filter dialog.
-* Parameter: Parameter appeared in filter command as @{[object Object]} if the parameter is picked implicitly as a result of operator change.
+* Parameter: Parameter appeared in filter command as @\{[object Object]\} if the parameter is picked implicitly as a result of operator change.
 * Parameter: The same column name showed up twice for the list of values' column selector.
 * Parameter: When changing parameter type from Date to Text, default date value type remained and it caused the unexpected default value was set for the parameter at runtime.
 * Parameter: When creating a new parameter, an existing parameter display name was pre-populated for the display name of the new parameter.
@@ -6109,7 +6111,7 @@ Released on 2/25/2021.
 
 
 * Analytics: If you ran the Random Forest with 3.600 variable columns, it failed to run and showed an error 'invalid response (expecting SEXP)'.
-* Analytics: model_info function threw an error 'object <column name> not found' when the column name for the model was other than 'model'.
+* Analytics: model_info function threw an error 'object \<column name> not found' when the column name for the model was other than 'model'.
 
 
 * Note: If you had an HTML script tag for Speaker Deck slides in a published Note, the loading bar kept showing for a long time even if the content was already loaded.
@@ -6329,7 +6331,7 @@ Released on 1/26/2021.
 
 
 * Summary View: Loading Summary View was slow comparing to the previous version for Windows.
-* Summary View: P Values under 0.001 should be shown as "< 0.0001" instead of "0.0000" in the Correlation view.
+* Summary View: P Values under 0.001 should be shown as "\< 0.0001" instead of "0.0000" in the Correlation view.
 * Summary View: When clicking the Ratio button on Summary Highlight mode, the Ratio button didn't get highlighted.
 
 
@@ -6940,9 +6942,9 @@ Released on 8/4/2020
 
 **Parameter**
 
-* Parameter: Support for arguments to control quoting and escaping of @{} parameter placeholders in SQL or MongoDB query.
+* Parameter: Support for arguments to control quoting and escaping of @\{\} parameter placeholders in SQL or MongoDB query.
 * Parameter: Improved Slider widget to show selected value dynamically while sliding.
-* Parameter: On Filter Dialog, resulting R script now shows '@{}' notation instead of internal 'exploraory_env$' notation for parameters.
+* Parameter: On Filter Dialog, resulting R script now shows '@\{\}' notation instead of internal 'exploraory_env$' notation for parameters.
 * Parameter: Introduced new Date/Time Picker for better usability.
 
 ### Bug Fixes
@@ -9544,7 +9546,7 @@ Released on 5/1/2017
 
 ### Bug Fixes
 
-- Irrelevant error message "Error in if (conn) {: argument is not interpretable as logical" is showing up when there is an error in SQL query.
+- Irrelevant error message "Error in if (conn) \{: argument is not interpretable as logical" is showing up when there is an error in SQL query.
 - Factor values on Summary View overflows outside of the tile area.
 - Variable replacement in SQL by `@{<expression>}` is not working.
 - In Time Series Forecasting, meaningless weekly seasonality is returned even when aggregation level is larger than week.

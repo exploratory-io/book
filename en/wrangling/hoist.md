@@ -1,4 +1,6 @@
-# Hoist
+---
+title: "Hoist"
+---
 
 Hoist allows you to selectively pull component of a list-column out in to their own top-level column, using the same syntax as purrr::pluck().
 

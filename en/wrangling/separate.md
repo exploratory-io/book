@@ -1,4 +1,7 @@
-# Separate
+---
+title: "Separate"
+---
+
 Separates a column with delimited values into multiple columns or rows.
 
 ## Separate a Column into Multiple Columns
