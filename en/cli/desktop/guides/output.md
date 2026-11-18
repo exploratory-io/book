@@ -1,4 +1,6 @@
-# Output and language
+---
+title: "Output and language"
+---
 
 Standard output carries only the result. You can switch between a readable form and JSON, and the text expl writes follows the language of Desktop.
 

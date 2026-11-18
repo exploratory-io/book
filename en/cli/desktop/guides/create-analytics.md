@@ -1,4 +1,6 @@
-# Create analytics
+---
+title: "Create analytics"
+---
 
 Create analytics (regression, classification, clustering and so on) from a data frame, and read its result.
 
@@ -44,7 +46,7 @@ Write slots.json with the slot names that get-template returned and the column n
 {"columns": ["Sales", "Ad Spend", "Visitors"]}
 ```
 
-Settings go in settings.json in the same way, for example {"cor_method": "spearman"}. Other types have other slot and setting names, so copy them from get-template. The command creates the analytics and runs it. The result carries the id (analyticsId) and the state of each output.
+Settings go in settings.json in the same way, for example \{"cor_method": "spearman"\}. Other types have other slot and setting names, so copy them from get-template. The command creates the analytics and runs it. The result carries the id (analyticsId) and the state of each output.
 
 ### 4. Read the result
 

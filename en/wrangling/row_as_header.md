@@ -1,4 +1,7 @@
-# Row as Header
+---
+title: "Row as Header"
+---
+
 Use a row as column names.
 
 ## How to Access This Feature

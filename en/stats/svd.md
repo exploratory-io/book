@@ -1,4 +1,6 @@
-# SVD
+---
+title: "SVD"
+---
 
 ## Introduction
 

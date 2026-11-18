@@ -1,4 +1,6 @@
-# Instant Analytics UI
+---
+title: "Instant Analytics UI"
+---
 
 You can quickly access to the latest and greatest Machine Learning and Statistical algorithms and use them to find deeper insights from your data as part of your data exploration.
 

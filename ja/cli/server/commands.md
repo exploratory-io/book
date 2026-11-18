@@ -1,4 +1,6 @@
-# コマンド一覧
+---
+title: "コマンド一覧"
+---
 
 目的からコマンドを選びます。名前を選ぶと、引数と例を確認できます。
 
@@ -802,12 +804,12 @@ expl server dataset query [<dataset_id>] [flags]
 | `--dataset-id` | 文字列 | queries か datasets を使うとき以外は必須 | データの id です。検索結果などに出ます。コマンドのすぐあとに書くか、--dataset-id で渡します。 |
 | `--mode` | 文字列 | queries を使わないときは必須 | rows: 条件に合う行を取得します。aggregate: dimensions でグループに分けて、metrics を計算します。値: `rows`, `aggregate` |
 | `--columns` | JSON | rows モードでは必須（結合のときは省略可） | rows だけで使います。返す列の名前を、1〜50 個、重ならないように指定します。結合するときは alias と column で書きます。結合のときに省くと、全部の列が返ります。 |
-| `--filters` | JSON |  | 絞り込みの条件です。条件 1 つか、{ "and": \[...\] } か { "or": \[...\] }（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。結合するときは、結合のあとに適用されます。 |
-| `--dimensions` | JSON |  | aggregate だけで使います。グループに分ける列を、0〜5 個指定します。{ "column": "列の名前" } の形で書きます。保存されている値のまま分けるので、日付から月や年を取り出してグループ化する指定はありません。指定しないと、全体で 1 行になります。 |
+| `--filters` | JSON |  | 絞り込みの条件です。条件 1 つか、\{ "and": \[...\] \} か \{ "or": \[...\] \}（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。結合するときは、結合のあとに適用されます。 |
+| `--dimensions` | JSON |  | aggregate だけで使います。グループに分ける列を、0〜5 個指定します。\{ "column": "列の名前" \} の形で書きます。保存されている値のまま分けるので、日付から月や年を取り出してグループ化する指定はありません。指定しないと、全体で 1 行になります。 |
 | `--metrics` | JSON | aggregate のときは必須 | aggregate だけで使い、必須です。計算を 1〜10 個指定します。function（count_rows、count、count_distinct、sum、avg、min、max）と、結果の名前になる alias を書きます。count_rows 以外は、column も指定します。 |
 | `--sort` | JSON |  | 並べ替えです。3 つまで指定します。出力の列の名前を field、向きを direction で書きます。 |
 | `--limit` | 整数 |  | 返す行数の上限です。rows は既定 100、最大 1,000。aggregate は既定 100、最大 500 です。ページ送りはありません。残りがあるときは、絞り込みます。 |
-| `--datasets` | JSON |  | 結合するデータと、それぞれの alias です。dataset_id の代わりに使います。2〜5 件。{ "id": ..., "alias": ... } の配列で書きます。 |
+| `--datasets` | JSON |  | 結合するデータと、それぞれの alias です。dataset_id の代わりに使います。2〜5 件。\{ "id": ..., "alias": ... \} の配列で書きます。 |
 | `--root-alias` | 文字列 |  | 結合の出発点にするデータの alias です。省略すると、datasets の最初のデータです。 |
 | `--joins` | JSON | datasets を使うときは必須 | 結合の種類（inner、left、right、full）、左右の alias、キーにする列を書きます。2 つ目以降のデータごとに、1 つずつ必要です。 |
 | `--source-filters` | JSON |  | 結合の前に、データごとに行を絞ります。alias ごとに、そのデータの列名で条件を書きます。left join で、行を落としたくない側の条件に使います。 |
@@ -944,7 +946,7 @@ Sales Orders のデータ（id: hI6jK7lM8n）で実行した結果です。長�
 
 | 症状 | 対処 |
 | --- | --- |
-| Each dimension must be an object like { "column": "region" }. (INVALID_QUERY) | dimensions は、{ "column": "列の名前" } の形のオブジェクトの配列にします。 |
+| Each dimension must be an object like \{ "column": "region" \}. (INVALID_QUERY) | dimensions は、\{ "column": "列の名前" \} の形のオブジェクトの配列にします。 |
 | columns is required in rows mode. (INVALID_QUERY) | rows モードでは、返す列を --columns で指定します。 |
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | metrics では、function と alias を指定します。count_rows 以外は column も指定します。 |
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias は必須です。英字、数字、_ だけで、数字で始めず、64 文字までにします。 |
@@ -980,7 +982,7 @@ expl server dataframe export <dataset_id> [flags]
 | `--format` | 文字列 |  | ファイルの形式です。既定は csv です（UTF-8 の BOM つきで、Excel で正しく開けます）。値: `csv`, `parquet` |
 | `--mode` | 文字列 | 必須 | rows: 条件に合う行を書き出します。aggregate: dimensions でグループに分けて、metrics を計算した結果を書き出します。値: `rows`, `aggregate` |
 | `--columns` | 値の配列 |  | rows だけで使います。書き出す列の名前を、1〜50 個、重ならないように指定します。省くと、すべての列を書き出します。 |
-| `--filters` | JSON |  | 絞り込みの条件です。条件 1 つか、{ "and": \[...\] } か { "or": \[...\] }（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |
+| `--filters` | JSON |  | 絞り込みの条件です。条件 1 つか、\{ "and": \[...\] \} か \{ "or": \[...\] \}（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |
 | `--dimensions` | JSON |  | aggregate だけで使います。グループに分ける列を、0〜5 個指定します。 |
 | `--metrics` | JSON | aggregate のときは必須 | aggregate だけで使い、必須です。計算を 1〜10 個指定します。 |
 | `--sort` | JSON |  | 並べ替えです。3 つまで指定します。 |
@@ -1664,7 +1666,7 @@ expl server chart query [flags]
 | `--chart` | 文字列 | queries を使わないときは必須 | チャートの名前です。fetch の結果の metadata.charts\[\].name にあります（英数字、_、-）。 |
 | `--mode` | 文字列 | queries を使わないときは必須 | rows: 条件に合う行を取得します。aggregate: dimensions でグループに分けて、metrics を計算します。値: `rows`, `aggregate` |
 | `--columns` | 値の配列 |  | rows だけで使います。返す列の名前を、1〜50 個、重ならないように指定します。 |
-| `--filters` | JSON |  | 絞り込みの条件です。条件 1 つか、{ "and": \[...\] } か { "or": \[...\] }（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |
+| `--filters` | JSON |  | 絞り込みの条件です。条件 1 つか、\{ "and": \[...\] \} か \{ "or": \[...\] \}（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |
 | `--dimensions` | JSON |  | aggregate だけで使います。グループに分ける列を、0〜5 個指定します。保存されている値のまま分けるので、日付から月や年を取り出してグループ化する指定はありません。指定しないと、全体で 1 行になります。 |
 | `--metrics` | JSON | aggregate のときは必須 | aggregate だけで使い、必須です。計算を 1〜10 個指定します。 |
 | `--sort` | JSON |  | 並べ替えです。3 つまで指定します。 |

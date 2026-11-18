@@ -1,4 +1,6 @@
-# Quandl Data Import
+---
+title: "Quandl Data Import"
+---
 
 Allows to get data Financial Data from [Quandl](https://www.quandl.com), which delivers financial, economic and alternative data to over 250,000 people worldwide.
 

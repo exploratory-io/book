@@ -1,4 +1,6 @@
-# MariaDB (MySQL) データベースからデータをインポートする
+---
+title: "MariaDB (MySQL) データベースからデータをインポートする"
+---
 
 MariaDB (MySQL) データベースからExploratoryに素早くデータをインポートすることができます。
 

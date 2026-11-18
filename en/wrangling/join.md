@@ -1,4 +1,6 @@
-# Join Data
+---
+title: "Join Data"
+---
 
 Join rows from the data frame with rows from another data frame by matching values of key columns.
 

@@ -1,4 +1,6 @@
-# Startup log file for debugging
+---
+title: "Startup log file for debugging"
+---
 
 In the following cases, we might ask you to send Startup Log File to Exploratory support team (support@exploratory.io) so that we can diagnose the issue.
 

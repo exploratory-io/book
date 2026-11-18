@@ -1,4 +1,6 @@
-# Multinomial Logistic Regression Model
+---
+title: "Multinomial Logistic Regression Model"
+---
 
 ## Introduction
 

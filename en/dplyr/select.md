@@ -1,10 +1,12 @@
-# Select
+---
+title: "Select"
+---
 
 Select columns with select() function. 
 
 ## Basic
 
-Select <column(s)> by column names.
+Select \<column(s)> by column names.
 
 **Syntax**
 
@@ -20,7 +22,7 @@ select(FL_DATE, CARRIER, ORIGIN, ORIGIN_STATE_ABR, DEP_DELAY, DEP_TIME, ARR_DELA
 
 ## Drop
 
-Drop <column(s)> by column names using '-' (minus) sign.
+Drop \<column(s)> by column names using '-' (minus) sign.
 
 **Syntax**
 

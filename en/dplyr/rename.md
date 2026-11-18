@@ -1,4 +1,6 @@
-# Rename
+---
+title: "Rename"
+---
 
 Rename existing column names.
 

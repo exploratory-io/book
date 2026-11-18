@@ -1,4 +1,6 @@
-# Claude アプリにつなぐ
+---
+title: "Claude アプリにつなぐ"
+---
 
 Claude に、Exploratory のサーバーを「カスタムコネクタ」として追加します。コネクタとは、Claude が外部のサービスのデータや機能を使うための接続です。接続すると、Claude のチャットから、Exploratory に公開されたノートやデータを読めるようになります。
 かかる時間は 5 分ほどです。Exploratory のアカウントと、Claude のデスクトップアプリまたは Web（claude.ai）を用意してください。

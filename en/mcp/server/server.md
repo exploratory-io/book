@@ -1,4 +1,6 @@
-# Exploratory MCP: Server
+---
+title: "Exploratory MCP: Server"
+---
 
 Read notes, dashboards, charts, analytics and data published on exploratory.io from an AI tool. An AI tool is an app where you ask an AI to do work, such as Claude Code. MCP (Model Context Protocol) is a shared standard for AI tools to connect to outside services and use their features.
 

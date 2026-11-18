@@ -1,4 +1,6 @@
-# Fit to Screen 
+---
+title: "Fit to Screen"
+---
 
 You can fit the table to the chart viewing area by the "Fit to Screen" option in the chart property dialog. The following chart types support this option.
 

@@ -1,4 +1,6 @@
-# Exploratory MCP: Server
+---
+title: "Exploratory MCP: Server"
+---
 
 AI ツールから、exploratory.io に公開されたノート、ダッシュボード、チャート、アナリティクス、データを読み取ります。AI ツールとは、Claude Code のように、AI に作業を依頼するアプリケーションです。MCP（Model Context Protocol）は、AI ツールが外部のサービスに接続して、その機能を使用するための共通の規格です。
 

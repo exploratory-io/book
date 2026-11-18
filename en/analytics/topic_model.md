@@ -1,4 +1,6 @@
-# Text Clustering with Topic Model
+---
+title: "Text Clustering with Topic Model"
+---
 
 Clusters documents based on the topics they are talking about with topic model. The topic model algorithm is LDA (Latent Dirichlet allocation).
 

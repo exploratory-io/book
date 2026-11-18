@@ -1,4 +1,6 @@
-# Grok Bot につなぐ
+---
+title: "Grok Bot につなぐ"
+---
 
 接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Grok Bot に、カスタムコネクタとして Exploratory のサーバーを追加します。
 かかる時間は 3 分ほどです。Exploratory のアカウントと、Grok Bot を用意してください。

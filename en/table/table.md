@@ -1,4 +1,6 @@
-# Table View
+---
+title: "Table View"
+---
 
 At the Table View, you can view the details information of the selected data frame. 
 

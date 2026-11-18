@@ -1,4 +1,6 @@
-# MongoDB Data Import
+---
+title: "MongoDB Data Import"
+---
 
 You can quickly import data from your MongoDB into Exploratory.
 

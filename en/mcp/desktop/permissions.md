@@ -1,4 +1,6 @@
-# Permissions and settings
+---
+title: "Permissions and settings"
+---
 
 What Desktop asks you first, and what you decide in Desktop. What is sent and recorded is on [Data and permissions](data.md).
 

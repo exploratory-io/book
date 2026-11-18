@@ -1,4 +1,6 @@
-# Normality Test Analytics View
+---
+title: "Normality Test Analytics View"
+---
 
 Runs Normality Test, which checks if distribution of columns can be normal distribution.
 

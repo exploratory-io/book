@@ -1,4 +1,6 @@
-# Select and Configure Columns 
+---
+title: "Select and Configure Columns"
+---
 
 ![](images/cconf1.png)
 

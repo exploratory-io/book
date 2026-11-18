@@ -1,4 +1,6 @@
-# チャートを作る
+---
+title: "チャートを作る"
+---
 
 データフレームからチャートを作り、数値と画像を確認し、変更します。
 
@@ -26,7 +28,7 @@ expl chart list-settings --marker bar
 
 ### 2. チャートを作る
 
---marker と --axes が必須です。--axes は、枠の名前をキーにして、列を置く JSON オブジェクトです。bar と line の枠は x、y、color、facet、ピボットテーブルの枠は rowh、colh、meas です。値は、列名か、集計を選ぶ {"column": "...", "func": "sum"} です。
+--marker と --axes が必須です。--axes は、枠の名前をキーにして、列を置く JSON オブジェクトです。bar と line の枠は x、y、color、facet、ピボットテーブルの枠は rowh、colh、meas です。値は、列名か、集計を選ぶ \{"column": "...", "func": "sum"\} です。
 
 ```sh
 expl chart add --data-frame-id <dataframe_id> --marker bar --axes '{"x":"order_date","y":{"column":"sales","func":"sum"}}' --title "月別の売上"

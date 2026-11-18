@@ -1,4 +1,6 @@
-# N Tile - Bucket
+---
+title: "N Tile - Bucket"
+---
 
 Breaks the column values into n buckets. Missing values are left as is.
 

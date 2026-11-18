@@ -1,4 +1,6 @@
-# Dashboard 
+---
+title: "Dashboard"
+---
 
 ## An Introduction to Exploratory Dashboard
 

@@ -1,4 +1,6 @@
-# HP Vertica Database Data Import
+---
+title: "HP Vertica Database Data Import"
+---
 
 You can quickly import data from your HP Vertica Database into Exploratory.
 

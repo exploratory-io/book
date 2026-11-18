@@ -1,4 +1,6 @@
-# Get chart numbers
+---
+title: "Get chart numbers"
+---
 
 For a chart in a published dashboard or note, get its numbers, aggregate them on the server, and get its image.
 

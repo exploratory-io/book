@@ -1,4 +1,6 @@
-# Confirmation and long-running operations
+---
+title: "Confirmation and long-running operations"
+---
 
 An operation that is hard to undo asks first. By default, expl waits for a long operation to finish.
 

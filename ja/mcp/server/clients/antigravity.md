@@ -1,4 +1,6 @@
-# Antigravity につなぐ
+---
+title: "Antigravity につなぐ"
+---
 
 接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Antigravity に Exploratory のサーバーを登録し、ブラウザでサインインします。
 かかる時間は 10 分ほどです。Exploratory のアカウントと、Antigravity を用意してください。

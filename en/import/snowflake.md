@@ -1,4 +1,6 @@
-# Snowflake Data Import
+---
+title: "Snowflake Data Import"
+---
 
 You can quickly import data from your Snowflake into Exploratory.
 

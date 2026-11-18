@@ -1,4 +1,6 @@
-# Install the plugin
+---
+title: "Install the plugin"
+---
 
 After you install it, an AI tool can use Exploratory Desktop. In Exploratory Desktop, System Settings installs the Desktop MCP plugin into the AI tools on this computer.
 It takes about 5 minutes. You need Exploratory Desktop and the AI tool you want to install into (Claude Code, Codex, Antigravity or Cursor) on the same computer.

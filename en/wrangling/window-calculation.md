@@ -1,5 +1,6 @@
-# Window (Table) Calculation
-
+---
+title: "Window (Table) Calculation"
+---
 
 For Data Wrangling, the Window Calculation is available for Numeric, Date, and Time Columns.
 

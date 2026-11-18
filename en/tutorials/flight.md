@@ -1,4 +1,6 @@
-# Data Wrangling / Analysis Grammar - Basic
+---
+title: "Data Wrangling / Analysis Grammar - Basic"
+---
 
 ### What you are going to learn:
 

@@ -1,5 +1,6 @@
-# Show Detail
-
+---
+title: "Show Detail"
+---
 
 You can show the detailed data underlying the chart by clicking the chart figure or number. 
 

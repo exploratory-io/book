@@ -1,4 +1,6 @@
-# Reference
+---
+title: "Reference"
+---
 
 Look up what you need about the commands, the flags, the errors and the permissions.
 

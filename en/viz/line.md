@@ -1,4 +1,6 @@
-# Line Chart
+---
+title: "Line Chart"
+---
 
 ![](images/line.png)
 

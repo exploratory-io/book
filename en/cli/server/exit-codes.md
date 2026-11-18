@@ -1,4 +1,6 @@
-# Exit codes and errors
+---
+title: "Exit codes and errors"
+---
 
 expl returns an exit code when it ends. Scripts and CI can use the number to judge the result.
 

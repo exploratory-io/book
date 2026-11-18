@@ -1,4 +1,6 @@
-# Exploratory MCP
+---
+title: "Exploratory MCP"
+---
 
 Connect an AI app to Exploratory through MCP. There are two sides, and the first thing to decide is which one you need.
 

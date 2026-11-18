@@ -1,1 +1,4 @@
-# Bind Cols
+---
+title: "Bind Cols"
+---
+

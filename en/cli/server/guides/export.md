@@ -1,4 +1,6 @@
-# Save results to a file
+---
+title: "Save results to a file"
+---
 
 Save the result of a filter or aggregation on a data item as a CSV or Parquet file, and get a download link.
 

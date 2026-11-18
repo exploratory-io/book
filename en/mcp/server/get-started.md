@@ -1,4 +1,6 @@
-# Get started
+---
+title: "Get started"
+---
 
 Connect Exploratory Server to your AI tool, sign in, and ask the AI to read a published note. It takes three steps. Do steps 1 and 2 on the page for your AI tool, and when you have signed in, come back to this page for step 3.
 

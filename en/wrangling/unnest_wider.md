@@ -1,4 +1,6 @@
-# Separate List Items into Columns (Unnest Wider)
+---
+title: "Separate List Items into Columns (Unnest Wider)"
+---
 
 Unnest a list column or a list of data frames by making each element of the list to be presented in its own column.
 

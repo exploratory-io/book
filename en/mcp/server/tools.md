@@ -1,4 +1,6 @@
-# Tools
+---
+title: "Tools"
+---
 
 Tools are operations an AI can call. Choose an operation by purpose, then inspect its inputs below.
 
@@ -174,8 +176,8 @@ Filter, group and aggregate a data item on the server and return only the result
 | --- | --- | --- | --- |
 | `dataset_id` | string | Required unless queries or datasets is used | The id of the data item, from a search result or a fetch. |
 | `mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
-| `columns` | array | Required in rows mode (optional in a join) | Only in rows mode. 1 to 50 unique column names to return. In a join, write each column as { "alias", "column" }. In a join, leaving it out returns every column. |
-| `filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
+| `columns` | array | Required in rows mode (optional in a join) | Only in rows mode. 1 to 50 unique column names to return. In a join, write each column as \{ "alias", "column" \}. In a join, leaving it out returns every column. |
+| `filters` | JSON |  | The filter conditions: a single condition, or \{ "and": \[...\] \} or \{ "or": \[...\] \} with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
 | `dimensions` | array |  | Only in aggregate mode. 0 to 5 columns to group by. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
 | `metrics` | array | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. function is one of count_rows, count, count_distinct, sum, avg, min, max. |
 | `sort` | array |  | The sort order, up to 3 entries. sort.field is the name of an output column. |
@@ -209,7 +211,7 @@ Filter and aggregate the data of a chart in a note, dashboard or slide on the se
 | `chart` | string | Required unless queries is used | The name of the chart: metadata.charts\[\].name in the result of fetch (letters, digits, _ and -). |
 | `mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
 | `columns` | array |  | Only in rows mode. 1 to 50 unique column names to return. |
-| `filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
+| `filters` | JSON |  | The filter conditions: a single condition, or \{ "and": \[...\] \} or \{ "or": \[...\] \} with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
 | `dimensions` | array |  | Only in aggregate mode. 0 to 5 columns to group by. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
 | `metrics` | array | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. function is one of count_rows, count, count_distinct, sum, avg, min, max. |
 | `sort` | array |  | The sort order, up to 3 entries. |
@@ -233,7 +235,7 @@ Save the result of a query on a data item as a CSV or Parquet file and return a 
 | `format` | string |  | The file format. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Values: `csv`, `parquet` |
 | `mode` | string | Required | rows: export the rows that match the filters. aggregate: export the result of grouping by dimensions and calculating metrics. Values: `rows`, `aggregate` |
 | `columns` | array |  | Only in rows mode. 1 to 50 unique column names to export. Without it, every column is exported. |
-| `filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
+| `filters` | JSON |  | The filter conditions: a single condition, or \{ "and": \[...\] \} or \{ "or": \[...\] \} with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
 | `dimensions` | array |  | Only in aggregate mode. 0 to 5 columns to group by. |
 | `metrics` | array | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
 | `sort` | array |  | The sort order, up to 3 entries. |

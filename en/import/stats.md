@@ -1,4 +1,6 @@
-# Import Stats (SAS / SPSS / STAT) File Data
+---
+title: "Import Stats (SAS / SPSS / STAT) File Data"
+---
 
 You can import both local and remote Stats (SAS / SPSS / STAT) File Data quickly.
 

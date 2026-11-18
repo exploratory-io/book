@@ -1,4 +1,6 @@
-# Connect Codex
+---
+title: "Connect Codex"
+---
 
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Codex and sign in through your browser.
 It takes about 3 minutes. You need an Exploratory account and Codex.

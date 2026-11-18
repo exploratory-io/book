@@ -1,4 +1,6 @@
-# パラメーター
+---
+title: "パラメーター"
+---
 
 パラメーターを使うと、Exploratory Desktop上のビュー、さらには、exploratory.ioまたはCollaboration Server上に共有されたダッシュボード、ドキュメントを動的にすることができます。
 

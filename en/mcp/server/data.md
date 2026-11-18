@@ -1,4 +1,6 @@
-# Data and permissions
+---
+title: "Data and permissions"
+---
 
 Whose permissions this server uses, what it reads, and what Exploratory records.
 

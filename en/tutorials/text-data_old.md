@@ -1,4 +1,6 @@
-# Working with Text data
+---
+title: "Working with Text data"
+---
 
 ### What you are going to learn
 

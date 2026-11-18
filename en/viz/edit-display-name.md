@@ -1,4 +1,7 @@
-# Edit Display Names
+---
+title: "Edit Display Names"
+---
+
  
 You can edit the display name of the values on the chart. 
 

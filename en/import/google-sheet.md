@@ -1,4 +1,6 @@
-# Google Spreadsheet Data Import
+---
+title: "Google Spreadsheet Data Import"
+---
 
 ## 1. Select Google Spreadsheet Data Menu
 

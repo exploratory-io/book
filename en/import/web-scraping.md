@@ -1,4 +1,6 @@
-# Import Data by Web Scraping
+---
+title: "Import Data by Web Scraping"
+---
 
 You can import data in ``<TABLE>`` tag in web sites. For example, if you want to scrape Unicorn company data from [CB Insight's The Global Unicorn Club](https://www.cbinsights.com/research-unicorn-companies) , you can do it as follows.
 

@@ -1,4 +1,6 @@
-# Use
+---
+title: "Use"
+---
 
 Find the command and the guide for what you want to do with published content.
 

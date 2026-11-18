@@ -1,4 +1,6 @@
-# Generalized Linear Regression Model
+---
+title: "Generalized Linear Regression Model"
+---
 
 ## Introduction
 

@@ -1,4 +1,6 @@
-# Regular Expression
+---
+title: "Regular Expression"
+---
 
 You can use the regular expression inside the Text Data Wrangling UI. The regular expression is a way to express a pattern of text with a combination of symbols so that you can extract / remove / replace a part of text data in a flexible way.
 

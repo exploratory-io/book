@@ -1,4 +1,6 @@
-# Import Twitter Search API data
+---
+title: "Import Twitter Search API data"
+---
 
 NOTE: Currently, this data source is not supported in Exploratory Desktop.
 

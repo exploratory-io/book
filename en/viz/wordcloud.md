@@ -1,4 +1,6 @@
-# Word Cloud
+---
+title: "Word Cloud"
+---
 
 ![](images/wordcloud.png)
 

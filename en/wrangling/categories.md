@@ -1,4 +1,6 @@
-# Working with Categorical Data
+---
+title: "Working with Categorical Data"
+---
 
 ![](images/categories1.png)
 

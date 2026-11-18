@@ -1,4 +1,6 @@
-# Connect Cursor
+---
+title: "Connect Cursor"
+---
 
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in the Cursor agent and sign in through your browser. It works with the model you pick in Cursor, including Grok.
 It takes about 5 minutes. You need an Exploratory account and Cursor.

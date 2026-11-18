@@ -1,4 +1,6 @@
-# Random Forest
+---
+title: "Random Forest"
+---
 
 Build Random Forest Model
 

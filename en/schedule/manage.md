@@ -1,3 +1,7 @@
+---
+title: "Publish Insights"
+---
+
 
 # Publish Insights
 

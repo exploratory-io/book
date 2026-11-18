@@ -1,4 +1,6 @@
-# Create Buckets
+---
+title: "Create Buckets"
+---
 
 We can categorize or bucket the numeric values into a set of ‘buckets’ like below.
 

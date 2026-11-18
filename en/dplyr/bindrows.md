@@ -1,4 +1,6 @@
-# Bind Rows
+---
+title: "Bind Rows"
+---
 
 Bind multiple data sets by row.
 

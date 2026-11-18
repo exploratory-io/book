@@ -1,4 +1,6 @@
-# Map - Extension
+---
+title: "Map - Extension"
+---
 
 ## How to Use
 

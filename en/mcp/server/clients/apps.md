@@ -1,4 +1,6 @@
-# Add from an AI tool
+---
+title: "Add from an AI tool"
+---
 
 Add the Exploratory server to an AI app you already use. Every app connects to the same address, and you sign in to Exploratory in your browser the first time.
 

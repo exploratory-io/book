@@ -1,4 +1,6 @@
-# Exploratory MCP
+---
+title: "Exploratory MCP"
+---
 
 MCP を通じて、AI アプリから Exploratory に接続します。接続先は 2 つあります。最初に、どちらが必要かを決めます。
 

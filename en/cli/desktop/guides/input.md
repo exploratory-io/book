@@ -1,4 +1,6 @@
-# Pass arguments and JSON
+---
+title: "Pass arguments and JSON"
+---
 
 Pass input with flags that match its type, or give the whole input as JSON.
 

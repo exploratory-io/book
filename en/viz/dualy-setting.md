@@ -1,4 +1,7 @@
-# Axis Setting
+---
+title: "Axis Setting"
+---
+
  
 You can change axis configurations in "Axis Setting" dialog. You can acesss it from "Y1/Y2 Assignment" Y-Axis menu. 
 

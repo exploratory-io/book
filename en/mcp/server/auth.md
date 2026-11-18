@@ -1,4 +1,6 @@
-# Authentication and API keys
+---
+title: "Authentication and API keys"
+---
 
 How the server authenticates a call: the browser sign-in, and the API key for setups that have no browser.
 

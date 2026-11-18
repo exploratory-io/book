@@ -1,5 +1,6 @@
-# Version History
-
+---
+title: "Version History"
+---
 
 You can check the version history from the "Version History" menu.
 

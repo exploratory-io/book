@@ -1,4 +1,6 @@
-# Table
+---
+title: "Table"
+---
 
 ![](images/table1.png)
 

@@ -1,4 +1,6 @@
-# K-means Clustering Model
+---
+title: "K-means Clustering Model"
+---
 
 ## Introduction
 

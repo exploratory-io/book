@@ -1,4 +1,6 @@
-# Distance by Columns Analytics View
+---
+title: "Distance by Columns Analytics View"
+---
 
 Calculate distances between each pair of columns among specified set of columns.
 

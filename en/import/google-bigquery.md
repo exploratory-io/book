@@ -1,4 +1,6 @@
-# Google BigQuery Data Import
+---
+title: "Google BigQuery Data Import"
+---
 
 ## 1. Before you start
 

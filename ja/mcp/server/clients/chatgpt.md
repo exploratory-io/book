@@ -1,4 +1,6 @@
-# ChatGPT アプリにつなぐ
+---
+title: "ChatGPT アプリにつなぐ"
+---
 
 接続すると、ChatGPT から、Exploratory に公開されたノートやデータを読めるようになります。ChatGPT のデスクトップアプリに、Exploratory のサーバーを「MCP サーバー」として追加します。MCP サーバーとは、AI ツールが外部のサービスのデータや機能を使うための接続先です。
 かかる時間は 5 分ほどです。Exploratory のアカウントと、ChatGPT のデスクトップアプリを用意してください。

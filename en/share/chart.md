@@ -1,4 +1,6 @@
-# Sharing Chart/Analytics
+---
+title: "Sharing Chart/Analytics"
+---
 
 You can quickly share your chart or analytics you have created in Exploratory Desktop with others by simply clicking on 'Publish' button. Since not only you are sharing the chart itself but also you are sharing the underlying data and the data wrangling steps to produce the data, other people whom you share with will have much easier time to understand where the data originally came from and how it was prepared, and improve or fix the data wangling steps collaboratively. By importing the shared chart anybody can easily reproduce and validate the steps to reproduce the chart step by step.
 

@@ -1,4 +1,6 @@
-# ODBC Database Data Import
+---
+title: "ODBC Database Data Import"
+---
 
 You can quickly import data from your ODBC Database Connection into Exploratory.
 

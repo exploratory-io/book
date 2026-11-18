@@ -1,4 +1,6 @@
-# T-test
+---
+title: "T-test"
+---
 
 ## Introduction
 

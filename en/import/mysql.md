@@ -1,4 +1,6 @@
-# MariaDB (MySQL) Data Import
+---
+title: "MariaDB (MySQL) Data Import"
+---
 
 You can quickly import data from your MySQL Database into Exploratory.
 

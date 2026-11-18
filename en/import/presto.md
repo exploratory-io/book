@@ -1,4 +1,6 @@
-# Presto Data Import
+---
+title: "Presto Data Import"
+---
 
 You can quickly import data from your Presto into Exploratory.
 

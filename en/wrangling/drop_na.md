@@ -1,4 +1,7 @@
-# Drop NA
+---
+title: "Drop NA"
+---
+
 Drop rows that have NA value.
 
 ## How to Access This Feature

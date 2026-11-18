@@ -1,4 +1,6 @@
-# Exploratory MCP: Desktop
+---
+title: "Exploratory MCP: Desktop"
+---
 
 AI ツールから、あなたのコンピューターの Exploratory Desktop で、プロジェクトを作り、編集します。手元のプロジェクトが対象で、公開していない変更も扱えます。AI ツールとは、Claude Code のように、AI に作業を依頼するアプリケーションです。
 

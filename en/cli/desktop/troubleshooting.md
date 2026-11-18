@@ -1,4 +1,6 @@
-# Troubleshooting
+---
+title: "Troubleshooting"
+---
 
 Find a fix by symptom.
 

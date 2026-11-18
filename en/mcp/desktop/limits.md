@@ -1,4 +1,6 @@
-# Limits and errors
+---
+title: "Limits and errors"
+---
 
 What the Desktop MCP refuses or stops, and what to do about it. Settings that decide these limits are in [Permissions and settings](permissions.md).
 

@@ -1,4 +1,6 @@
-# Fill
+---
+title: "Fill"
+---
 
 Fills missing values in using the previous entry. This is convenient especially when values are not presented in some cells to avoid duplicated entries.
 

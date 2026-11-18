@@ -1,4 +1,6 @@
-# Data Join
+---
+title: "Data Join"
+---
 
 ### What you are going to learn
 

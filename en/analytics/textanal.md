@@ -1,4 +1,6 @@
-# Text Analysis
+---
+title: "Text Analysis"
+---
 
 Runs text analysis based on frequency and co-occurrence of words.
 

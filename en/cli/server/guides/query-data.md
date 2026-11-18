@@ -1,4 +1,6 @@
-# Query data
+---
+title: "Query data"
+---
 
 Check the columns of published data, then filter and aggregate it on the server.
 
@@ -126,9 +128,9 @@ JSON is a text format for writing structured data. Pass dimensions, metrics, sor
 
 | Flag | Shape | Meaning |
 | --- | --- | --- |
-| --dimensions | \[{"column":"region"}\] | Group by the values of the region column. |
-| --metrics | \[{"function":"sum","column":"sales","alias":"sales"}\] | Sum the sales column and name the result sales. |
-| --sort | \[{"field":"sales","direction":"desc"}\] | Sort by the output column sales, largest first. |
+| --dimensions | \[\{"column":"region"\}\] | Group by the values of the region column. |
+| --metrics | \[\{"function":"sum","column":"sales","alias":"sales"\}\] | Sum the sales column and name the result sales. |
+| --sort | \[\{"field":"sales","direction":"desc"\}\] | Sort by the output column sales, largest first. |
 
 The alias in metrics is required. Use only letters, digits and _, do not start with a digit, and use at most 64 characters. In sort, name the output column with field.
 
@@ -136,7 +138,7 @@ These are the messages you see for a wrong shape, and how to fix them.
 
 | What you see | What to do |
 | --- | --- |
-| Each dimension must be an object like { "column": "region" }. (INVALID_QUERY) | Write dimensions as an array of objects like { "column": "column name" }. |
+| Each dimension must be an object like \{ "column": "region" \}. (INVALID_QUERY) | Write dimensions as an array of objects like \{ "column": "column name" \}. |
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | In metrics, give a function and an alias. |
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | Add an alias. The allowed characters and length are described above. |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | Name the output column with field. column, by, alias, name and metric are not accepted. |

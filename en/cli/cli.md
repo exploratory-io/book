@@ -1,4 +1,6 @@
-# Exploratory CLI
+---
+title: "Exploratory CLI"
+---
 
 Use Exploratory from a terminal with the expl command. There are two sides, and the first thing to decide is which one you need.
 

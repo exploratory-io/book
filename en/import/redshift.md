@@ -1,4 +1,6 @@
-# Amazon Redshift Database Data Import
+---
+title: "Amazon Redshift Database Data Import"
+---
 
 You can quickly import data from your Amazon Redshift Database into Exploratory.
 

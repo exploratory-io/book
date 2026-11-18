@@ -1,4 +1,6 @@
-# Type Convert
+---
+title: "Type Convert"
+---
 
 Heuristically guess the data type for each column by reading the first 1000 rows, parse the data, and set appropriate data types for all the columns of the data frame
 

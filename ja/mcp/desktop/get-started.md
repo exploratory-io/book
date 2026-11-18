@@ -1,4 +1,6 @@
-# はじめる
+---
+title: "はじめる"
+---
 
 Desktop の MCP のプラグインを入れ、Exploratory Desktop で MCP をオンにして、AI ツールにプロジェクトのデータを見せます。所要時間は 5 分ほどで、手順はこのページ 1 つで進められます。同じコンピューターに、Exploratory Desktop と、プラグインを入れる AI ツール（Claude Code、Codex、Antigravity、Cursor のいずれか）を用意してください。
 

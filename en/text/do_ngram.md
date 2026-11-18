@@ -1,4 +1,6 @@
-# Create N-gram Tokens
+---
+title: "Create N-gram Tokens"
+---
 
 ## How to Access This Feature
 

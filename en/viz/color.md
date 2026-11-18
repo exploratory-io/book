@@ -1,5 +1,6 @@
-# Color & Group Setting
-
+---
+title: "Color & Group Setting"
+---
 
 You can update the color and grouping settings in the Color & Group Setting dialog. 
 
@@ -84,7 +85,7 @@ The following settings are available.
   * Alphabetical 
   * Y-Axis Value 
  
-<!--
+{/*
 Use this once #26183 is in the product.
 
 * Sort By - You can choose the base values for the sort. It is available on Bar, Line, Area, Pie, Scatter (With Aggregation) and Error Bar, and if you assign a character type column to Color. The following options are available. 
@@ -92,7 +93,7 @@ Use this once #26183 is in the product.
   * Display Name
   * Y-Axis Value 
 
--->
+*/}
 
 
 

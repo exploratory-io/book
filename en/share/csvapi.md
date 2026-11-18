@@ -1,4 +1,6 @@
-# CSV API
+---
+title: "CSV API"
+---
 
 If you publish your insight such as Chart, Data, Analytics with the download option enabled, you can download the data from the server by using the CSV API. You can check the CSV API URL by selecting "API - CSV data" from the download button on the server insight page.
 

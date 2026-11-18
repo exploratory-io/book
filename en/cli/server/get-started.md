@@ -1,4 +1,6 @@
-# Get started
+---
+title: "Get started"
+---
 
 Install expl, sign in, then search for published content and read it. Do the steps below in order and you get your first result on this one page.
 

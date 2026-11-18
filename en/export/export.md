@@ -1,4 +1,6 @@
-# Export Data
+---
+title: "Export Data"
+---
 
 You can export data in various formats either by clicking 'Export' button at the top of Summary / Table view or clicking on 'Export' button inside each of the data wrangling steps at the right hand side.
 
@@ -76,7 +78,7 @@ You can export your chart to a PNG file. It is available for any chart types exc
 You can export your chart to an SVG file. It is available for any chart types except Map, Pivot and Table.
 
 #### Export Chart as EDF
-You can export your chart and data to an EDF (Exploratory Data Format) file. It is available for any chart types. Take a look at [Export as EDF](/viz/save-as-edf.html) for more details.
+You can export your chart and data to an EDF (Exploratory Data Format) file. It is available for any chart types. Take a look at [Export as EDF](/en/viz/save-as-edf) for more details.
 
 
 

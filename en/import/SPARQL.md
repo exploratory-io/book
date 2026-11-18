@@ -1,4 +1,6 @@
-# SPARQL Data Import
+---
+title: "SPARQL Data Import"
+---
 
 Allows to get data with SPARQL which is a RDF query language and protocol produced by the W3C RDF Data Access Working Group (DAWG)
 

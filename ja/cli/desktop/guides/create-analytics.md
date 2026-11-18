@@ -1,4 +1,6 @@
-# アナリティクスを作る
+---
+title: "アナリティクスを作る"
+---
 
 データフレームから、アナリティクス（回帰、分類、クラスタリングなど）を作り、結果を読みます。
 
@@ -44,7 +46,7 @@ slots.json は、get-template が返した枠の名前と、get-schema の列名
 {"columns": ["Sales", "Ad Spend", "Visitors"]}
 ```
 
-設定も同じ形で settings.json に書きます。例: {"cor_method": "spearman"}。種類によって枠や設定の名前は違うので、get-template の結果から写します。コマンドは、アナリティクスを作って実行します。結果に、id（analyticsId）と、出力ごとの状態が入ります。
+設定も同じ形で settings.json に書きます。例: \{"cor_method": "spearman"\}。種類によって枠や設定の名前は違うので、get-template の結果から写します。コマンドは、アナリティクスを作って実行します。結果に、id（analyticsId）と、出力ごとの状態が入ります。
 
 ### 4. 結果を読む
 

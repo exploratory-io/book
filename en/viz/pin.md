@@ -1,4 +1,6 @@
-# Chart Pinning
+---
+title: "Chart Pinning"
+---
 
 You can click on 'Pin' button at the right-hand side top to pin the chart to the currently selected data transformation step at the right-hand side.
 

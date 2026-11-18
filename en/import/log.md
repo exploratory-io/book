@@ -1,4 +1,6 @@
-# Import Log File Data
+---
+title: "Import Log File Data"
+---
 
 You can import both local and remote Log File Data quickly.
 

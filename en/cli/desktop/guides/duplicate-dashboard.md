@@ -1,4 +1,6 @@
-# Duplicate dashboards
+---
+title: "Duplicate dashboards"
+---
 
 Duplicate a dashboard with a different title. jq (a command that processes JSON) reshapes the definition you get into the shape that create takes.
 

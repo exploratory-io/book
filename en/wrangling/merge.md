@@ -1,4 +1,7 @@
-# Merge multiple Data Frames
+---
+title: "Merge multiple Data Frames"
+---
+
 Merge multiple data frames by row.
 
 ## How to Access This Feature

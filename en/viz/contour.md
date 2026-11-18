@@ -1,4 +1,6 @@
-# Contour 
+---
+title: "Contour"
+---
 
 ![](images/contour.png)
 

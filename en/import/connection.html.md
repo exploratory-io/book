@@ -1,4 +1,6 @@
-# Database Connection
+---
+title: "Database Connection"
+---
 
 You can register database connection configuration.
 

@@ -1,0 +1,1249 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Exploratory",
+  "colors": {
+    "primary": "#00ab6d",
+    "light": "#00ab6d",
+    "dark": "#00ab6d"
+  },
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "groups": [
+          {
+            "group": "Exploratory",
+            "pages": [
+              "en/index"
+            ]
+          },
+          {
+            "group": "Exploratory MCP",
+            "pages": [
+              {
+                "group": "Server",
+                "pages": [
+                  {
+                    "group": "Get started",
+                    "pages": [
+                      {
+                        "group": "Add from an AI tool",
+                        "pages": [
+                          "en/mcp/server/clients/claude",
+                          "en/mcp/server/clients/chatgpt",
+                          "en/mcp/server/clients/antigravity",
+                          "en/mcp/server/clients/grok-bot",
+                          "en/mcp/server/clients/claude-code",
+                          "en/mcp/server/clients/codex",
+                          "en/mcp/server/clients/cursor",
+                          "en/mcp/server/clients/other"
+                        ],
+                        "root": "en/mcp/server/clients/apps"
+                      },
+                      "en/mcp/server/auth"
+                    ],
+                    "root": "en/mcp/server/get-started"
+                  },
+                  "en/mcp/server/use",
+                  {
+                    "group": "Reference",
+                    "pages": [
+                      "en/mcp/server/tools",
+                      "en/mcp/server/limits",
+                      "en/mcp/server/data"
+                    ],
+                    "root": "en/mcp/server/reference"
+                  },
+                  "en/mcp/server/troubleshooting"
+                ],
+                "root": "en/mcp/server/server"
+              },
+              {
+                "group": "Desktop",
+                "pages": [
+                  {
+                    "group": "Get started",
+                    "pages": [
+                      "en/mcp/desktop/install",
+                      "en/mcp/desktop/permissions"
+                    ],
+                    "root": "en/mcp/desktop/get-started"
+                  },
+                  "en/mcp/desktop/use",
+                  {
+                    "group": "Reference",
+                    "pages": [
+                      "en/mcp/desktop/tools",
+                      "en/mcp/desktop/limits",
+                      "en/mcp/desktop/data"
+                    ],
+                    "root": "en/mcp/desktop/reference"
+                  },
+                  "en/mcp/desktop/troubleshooting"
+                ],
+                "root": "en/mcp/desktop/desktop"
+              }
+            ],
+            "root": "en/mcp/mcp"
+          },
+          {
+            "group": "Exploratory CLI",
+            "pages": [
+              {
+                "group": "Server",
+                "pages": [
+                  {
+                    "group": "Get started",
+                    "pages": [
+                      "en/cli/server/install",
+                      "en/cli/server/login",
+                      "en/cli/server/token"
+                    ],
+                    "root": "en/cli/server/get-started"
+                  },
+                  {
+                    "group": "Use",
+                    "pages": [
+                      "en/cli/server/guides/find-data",
+                      "en/cli/server/guides/read-notes",
+                      "en/cli/server/guides/query-data",
+                      "en/cli/server/guides/dashboard-charts",
+                      "en/cli/server/guides/analytics",
+                      "en/cli/server/guides/export",
+                      "en/cli/server/guides/automation",
+                      "en/cli/server/guides/agents"
+                    ],
+                    "root": "en/cli/server/use"
+                  },
+                  {
+                    "group": "Reference",
+                    "pages": [
+                      "en/cli/server/commands",
+                      "en/cli/server/global-flags",
+                      "en/cli/server/exit-codes",
+                      "en/cli/server/data"
+                    ],
+                    "root": "en/cli/server/reference"
+                  },
+                  "en/cli/server/troubleshooting"
+                ],
+                "root": "en/cli/server/server"
+              },
+              {
+                "group": "Desktop",
+                "pages": [
+                  {
+                    "group": "Get started",
+                    "pages": [
+                      "en/cli/desktop/install",
+                      "en/cli/desktop/guides/projects"
+                    ],
+                    "root": "en/cli/desktop/get-started"
+                  },
+                  {
+                    "group": "Use",
+                    "pages": [
+                      "en/cli/desktop/guides/wrangle-data",
+                      "en/cli/desktop/guides/create-charts",
+                      "en/cli/desktop/guides/create-analytics",
+                      "en/cli/desktop/guides/write-notes",
+                      "en/cli/desktop/guides/duplicate-dashboard",
+                      "en/cli/desktop/guides/publish",
+                      "en/cli/desktop/guides/agents"
+                    ],
+                    "root": "en/cli/desktop/use"
+                  },
+                  {
+                    "group": "Reference",
+                    "pages": [
+                      "en/cli/desktop/commands",
+                      "en/cli/desktop/global-flags",
+                      "en/cli/desktop/guides/input",
+                      "en/cli/desktop/guides/output",
+                      "en/cli/desktop/guides/confirmation",
+                      "en/cli/desktop/exit-codes",
+                      "en/cli/desktop/data"
+                    ],
+                    "root": "en/cli/desktop/reference"
+                  },
+                  "en/cli/desktop/troubleshooting"
+                ],
+                "root": "en/cli/desktop/desktop"
+              }
+            ],
+            "root": "en/cli/cli"
+          },
+          {
+            "group": "Exploratory",
+            "pages": [
+              "en/product-features",
+              "en/summary/summary",
+              "en/table/table",
+              "en/table/row_filter",
+              "en/table/column_filter",
+              "en/markdown/markdown-dashboard",
+              "en/markdown/markdown-note",
+              "en/steps",
+              "en/branch/branch",
+              "en/parameter/parameter",
+              "en/export/export"
+            ]
+          },
+          {
+            "group": "Share",
+            "pages": [
+              "en/share/share_type",
+              "en/share/chart",
+              "en/share/data",
+              "en/share/note",
+              "en/share/notification",
+              "en/share//version-history",
+              "en/share/restore",
+              "en/share/csvapi"
+            ],
+            "root": "en/share/share"
+          },
+          {
+            "group": "Schedule",
+            "pages": [
+              "en/schedule/manage",
+              "en/schedule/notification",
+              "en/schedule/history"
+            ],
+            "root": "en/schedule/schedule"
+          },
+          {
+            "group": "Team",
+            "pages": [
+              "en/team/manage"
+            ],
+            "root": "en/team/team"
+          },
+          {
+            "group": "Project",
+            "pages": [
+              "en/project/import",
+              "en/project/export",
+              "en/project/search"
+            ],
+            "root": "en/project"
+          },
+          {
+            "group": "AI",
+            "pages": [
+              "en/ai/ai-promtpt-function-en"
+            ],
+            "root": "en/ai/ai"
+          },
+          {
+            "group": "Data Import",
+            "pages": [
+              {
+                "group": "File Data",
+                "pages": [
+                  "en/import/csv",
+                  "en/import/s3",
+                  "en/import/google-drive",
+                  "en/import/google-cloud-storage",
+                  "en/import/excel",
+                  "en/import/json",
+                  "en/import/log",
+                  "en/import/azure",
+                  "en/import/stats",
+                  "en/import/rds",
+                  "en/import/parquet",
+                  "en/import/exploratory"
+                ],
+                "root": "en/file-data"
+              },
+              {
+                "group": "Database Data",
+                "pages": [
+                  "en/import/connection.html",
+                  "en/import/athena",
+                  "en/import/aurora",
+                  "en/import/redshift",
+                  "en/import/google-bigquery",
+                  "en/import/hp-vertica",
+                  "en/import/mysql",
+                  "en/import/access",
+                  "en/import/mongodb",
+                  "en/import/odbc",
+                  "en/import/oracle",
+                  "en/import/oracle-oci",
+                  "en/import/postgresql",
+                  "en/import/presto",
+                  "en/import/snowflake",
+                  "en/import/sqlserver",
+                  "en/import/mssqlserver",
+                  "en/import/teradata",
+                  "en/import/treasuredata"
+                ],
+                "root": "en/database-data"
+              },
+              {
+                "group": "Cloud Apps Data",
+                "pages": [
+                  "en/import/connection-cloud-apps",
+                  "en/import/fred",
+                  "en/import/github",
+                  "en/import/google-analytics",
+                  "en/import/google-sheet",
+                  "en/import/salesforce",
+                  "en/import/twitter",
+                  "en/import/stripe",
+                  "en/import/weather",
+                  "en/import/stock-price",
+                  "en/import/reinfolib",
+                  "en/import/estat",
+                  "en/import/edinet",
+                  "en/import/api"
+                ],
+                "root": "en/cloud-apps-data"
+              },
+              {
+                "group": "Write R Script as Data",
+                "pages": [
+                  "en/import/currency"
+                ],
+                "root": "en/import/r-script-data"
+              },
+              "en/import/web-scraping",
+              "en/import/free-input-text",
+              "en/import/extensions",
+              "en/import/quandl",
+              "en/import/holiday",
+              "en/import/tidyrss",
+              "en/import/user-defined-plugin"
+            ],
+            "root": "en/data_import"
+          },
+          {
+            "group": "Data Wrangling",
+            "pages": [
+              "en/wrangling/command-mode",
+              "en/wrangling/select",
+              "en/wrangling/reorder",
+              "en/wrangling/mutate",
+              "en/wrangling/mutate_at",
+              "en/wrangling/summarize",
+              "en/wrangling/group",
+              "en/wrangling/filter",
+              "en/wrangling/rename",
+              "en/wrangling/arrange",
+              "en/wrangling/top_n",
+              "en/wrangling/join",
+              "en/wrangling/merge",
+              "en/wrangling/gather",
+              "en/wrangling/spread",
+              "en/wrangling/pivot",
+              "en/wrangling/expand",
+              "en/wrangling/complete",
+              "en/wrangling/separate",
+              "en/wrangling/unite",
+              "en/wrangling/bind_rows",
+              "en/wrangling/bind_columns",
+              "en/wrangling/distinct",
+              "en/wrangling/get_dupes",
+              "en/wrangling/slice",
+              "en/wrangling/drop_na",
+              "en/wrangling/sample",
+              "en/wrangling/impute_na",
+              "en/wrangling/fill",
+              "en/wrangling/buckets",
+              "en/wrangling/recode",
+              "en/wrangling/case_when",
+              "en/wrangling/categories",
+              "en/wrangling/type-convert",
+              "en/wrangling/row_as_header",
+              "en/wrangling/ungroup",
+              "en/wrangling/unnest",
+              "en/wrangling/unnest_wider",
+              "en/wrangling/unnest_longer",
+              "en/wrangling/separate-japanese-address",
+              "en/wrangling/hoist",
+              "en/wrangling/remove_empty_rows",
+              "en/wrangling/remove_empty_cols",
+              "en/wrangling/clean_names",
+              "en/wrangling/window-calculation",
+              "en/wrangling/add_row",
+              "en/wrangling/text_wrangling",
+              "en/wrangling/regular_expression"
+            ],
+            "root": "en/data-wrangling"
+          },
+          {
+            "group": "Visualization",
+            "pages": [
+              null,
+              "en/viz/pivot",
+              "en/viz/summarize-table",
+              "en/viz/table",
+              "en/viz/bar",
+              "en/viz/line",
+              "en/viz/area",
+              "en/viz/pie",
+              "en/viz/radar",
+              "en/viz/hist",
+              "en/viz/densityplot",
+              "en/viz/scatter",
+              "en/viz/bubble",
+              "en/viz/boxplot",
+              "en/viz/violin",
+              "en/viz/errbar",
+              "en/viz/errbar-agg",
+              "en/viz/easymap",
+              "en/viz/geojson",
+              "en/viz/map",
+              "en/viz/maphmap",
+              "en/viz/heatmap",
+              "en/viz/contour",
+              "en/viz/singlevalue",
+              "en/viz/wordcloud",
+              "en/viz/r-custom",
+              null,
+              "en/viz/trend-line",
+              "en/viz/reference-line",
+              "en/viz/small-multiple",
+              "en/viz/window-calc",
+              "en/viz/date-aggregate",
+              "en/viz/range",
+              "en/viz/marker",
+              "en/viz/multi-y",
+              "en/viz/layout",
+              "en/viz/column-configuration",
+              "en/viz/column-configuration-dialog",
+              "en/viz/color",
+              "en/viz/color-dialog",
+              "en/viz/custom-palette",
+              "en/viz/pin",
+              "en/viz/save",
+              "en/viz/save-as-edf",
+              "en/viz/schedule",
+              "en/viz/urllink",
+              "en/viz/category",
+              "en/viz/highlight",
+              "en/viz/limit",
+              "en/viz/others-group",
+              "en/viz/edit-display-name",
+              "en/viz/missing-value-handling",
+              "en/viz/rename-column-names",
+              "en/viz/dualy-setting",
+              "en/viz/axis-format",
+              "en/viz/show-detail",
+              "en/viz/table-fit-to-screen",
+              "en/viz/number-of-unuque-values-check"
+            ],
+            "root": "en/visualization"
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "en/analytics/correlation_column",
+              "en/analytics/distance_column",
+              "en/analytics/kmeans",
+              "en/analytics/kmodes",
+              "en/analytics/pca",
+              "en/analytics/factanal",
+              "en/analytics/correspondence",
+              "en/analytics/regression",
+              "en/analytics/logistic",
+              "en/analytics/ordered_logistic_regression",
+              "en/analytics/glm",
+              "en/analytics/survival",
+              "en/analytics/var_importance_time",
+              "en/analytics/survival_forest",
+              "en/analytics/decision_tree",
+              "en/analytics/chaid",
+              "en/analytics/var_importance",
+              "en/analytics/xgboost",
+              "en/analytics/lightgbm",
+              "en/analytics/forecasting",
+              "en/analytics/arima",
+              "en/analytics/time_series_clustering",
+              "en/analytics/anomaly",
+              "en/analytics/textanal",
+              "en/analytics/topic_model",
+              "en/analytics/market_basket",
+              "en/analytics/t_test",
+              "en/analytics/t_test_aggregated",
+              "en/analytics/anova",
+              "en/analytics/wilcoxon",
+              "en/analytics/kruskal_wallis",
+              "en/analytics/chisq",
+              "en/analytics/ab_test",
+              "en/analytics/normality",
+              "en/analytics/cronbach-alpha",
+              "en/analytics/prediction",
+              "en/analytics/dictionary"
+            ],
+            "root": "en/analytics"
+          },
+          {
+            "group": "Statistics",
+            "pages": [
+              "en/stats/correlation",
+              "en/stats/dist",
+              "en/stats/sim",
+              "en/stats/svd",
+              "en/stats/mds",
+              "en/stats/t-test",
+              "en/stats/f-test",
+              "en/stats/chi-test",
+              "en/stats/exp_bayes_ab"
+            ],
+            "root": "en/statistics"
+          },
+          {
+            "group": "Machine Learning",
+            "pages": [
+              "en/ml/linear-regression",
+              "en/ml/logistic-regression",
+              "en/ml/glm",
+              "en/ml/multinom",
+              "en/ml/kmeans",
+              "en/ml/random-forest",
+              "en/ml/xgboost",
+              "en/ml/forecasting",
+              "en/ml/timeseries_clustering",
+              "en/ml/anomaly",
+              "en/ml/survival-curv",
+              "en/ml/cox-regression",
+              "en/ml/arules",
+              "en/ml/causal_impact",
+              "en/ml/evaluate_regression",
+              "en/ml/evaluate_binary",
+              "en/ml/do_roc",
+              "en/ml/evaluate_multi",
+              "en/ml/prediction",
+              "en/ml/prediction_binary",
+              "en/ml/prediction_coxph",
+              "en/ml/prediction_survfit",
+              "en/ml/model_stats",
+              "en/ml/model_coef",
+              "en/ml/model_anova",
+              "en/wrangling/smote"
+            ],
+            "root": "en/machine-learning"
+          },
+          {
+            "group": "Text Analysis",
+            "pages": [
+              "en/text/do_tokenize",
+              "en/text/do_ngram",
+              "en/text/do_tfidf",
+              "en/text/pair_count"
+            ],
+            "root": "en/text/main"
+          },
+          {
+            "group": "Extend with R",
+            "pages": [
+              "en/r_package",
+              "en/r_script",
+              "en/user-defined-model-function",
+              "en/howto/stopmcafee",
+              "en/howto/set_exploratory_home",
+              "en/howto/holiday",
+              "en/howto/install_errors",
+              "en/howto/upgrade_dot_net",
+              "en/debug_log",
+              "en/startup_log",
+              "en/version_check",
+              "en/history_error_recovery"
+            ],
+            "root": "en/extend-with-r"
+          },
+          {
+            "group": "Exploratory",
+            "pages": [
+              "en/shortcut"
+            ]
+          }
+        ],
+        "default": true
+      },
+      {
+        "language": "ja",
+        "groups": [
+          {
+            "group": "Exploratory",
+            "pages": [
+              "ja/index"
+            ]
+          },
+          {
+            "group": "Exploratory MCP",
+            "pages": [
+              {
+                "group": "Server",
+                "pages": [
+                  {
+                    "group": "はじめる",
+                    "pages": [
+                      {
+                        "group": "AI ツールから追加する",
+                        "pages": [
+                          "ja/mcp/server/clients/claude",
+                          "ja/mcp/server/clients/chatgpt",
+                          "ja/mcp/server/clients/antigravity",
+                          "ja/mcp/server/clients/grok-bot",
+                          "ja/mcp/server/clients/claude-code",
+                          "ja/mcp/server/clients/codex",
+                          "ja/mcp/server/clients/cursor",
+                          "ja/mcp/server/clients/other"
+                        ],
+                        "root": "ja/mcp/server/clients/apps"
+                      },
+                      "ja/mcp/server/auth"
+                    ],
+                    "root": "ja/mcp/server/get-started"
+                  },
+                  "ja/mcp/server/use",
+                  {
+                    "group": "リファレンス",
+                    "pages": [
+                      "ja/mcp/server/tools",
+                      "ja/mcp/server/limits",
+                      "ja/mcp/server/data"
+                    ],
+                    "root": "ja/mcp/server/reference"
+                  },
+                  "ja/mcp/server/troubleshooting"
+                ],
+                "root": "ja/mcp/server/server"
+              },
+              {
+                "group": "Desktop",
+                "pages": [
+                  {
+                    "group": "はじめる",
+                    "pages": [
+                      "ja/mcp/desktop/install",
+                      "ja/mcp/desktop/permissions"
+                    ],
+                    "root": "ja/mcp/desktop/get-started"
+                  },
+                  "ja/mcp/desktop/use",
+                  {
+                    "group": "リファレンス",
+                    "pages": [
+                      "ja/mcp/desktop/tools",
+                      "ja/mcp/desktop/limits",
+                      "ja/mcp/desktop/data"
+                    ],
+                    "root": "ja/mcp/desktop/reference"
+                  },
+                  "ja/mcp/desktop/troubleshooting"
+                ],
+                "root": "ja/mcp/desktop/desktop"
+              }
+            ],
+            "root": "ja/mcp/mcp"
+          },
+          {
+            "group": "Exploratory CLI",
+            "pages": [
+              {
+                "group": "Server",
+                "pages": [
+                  {
+                    "group": "はじめる",
+                    "pages": [
+                      "ja/cli/server/install",
+                      "ja/cli/server/login",
+                      "ja/cli/server/token"
+                    ],
+                    "root": "ja/cli/server/get-started"
+                  },
+                  {
+                    "group": "使い方",
+                    "pages": [
+                      "ja/cli/server/guides/find-data",
+                      "ja/cli/server/guides/read-notes",
+                      "ja/cli/server/guides/query-data",
+                      "ja/cli/server/guides/dashboard-charts",
+                      "ja/cli/server/guides/analytics",
+                      "ja/cli/server/guides/export",
+                      "ja/cli/server/guides/automation",
+                      "ja/cli/server/guides/agents"
+                    ],
+                    "root": "ja/cli/server/use"
+                  },
+                  {
+                    "group": "リファレンス",
+                    "pages": [
+                      "ja/cli/server/commands",
+                      "ja/cli/server/global-flags",
+                      "ja/cli/server/exit-codes",
+                      "ja/cli/server/data"
+                    ],
+                    "root": "ja/cli/server/reference"
+                  },
+                  "ja/cli/server/troubleshooting"
+                ],
+                "root": "ja/cli/server/server"
+              },
+              {
+                "group": "Desktop",
+                "pages": [
+                  {
+                    "group": "はじめる",
+                    "pages": [
+                      "ja/cli/desktop/install",
+                      "ja/cli/desktop/guides/projects"
+                    ],
+                    "root": "ja/cli/desktop/get-started"
+                  },
+                  {
+                    "group": "使い方",
+                    "pages": [
+                      "ja/cli/desktop/guides/wrangle-data",
+                      "ja/cli/desktop/guides/create-charts",
+                      "ja/cli/desktop/guides/create-analytics",
+                      "ja/cli/desktop/guides/write-notes",
+                      "ja/cli/desktop/guides/duplicate-dashboard",
+                      "ja/cli/desktop/guides/publish",
+                      "ja/cli/desktop/guides/agents"
+                    ],
+                    "root": "ja/cli/desktop/use"
+                  },
+                  {
+                    "group": "リファレンス",
+                    "pages": [
+                      "ja/cli/desktop/commands",
+                      "ja/cli/desktop/global-flags",
+                      "ja/cli/desktop/guides/input",
+                      "ja/cli/desktop/guides/output",
+                      "ja/cli/desktop/guides/confirmation",
+                      "ja/cli/desktop/exit-codes",
+                      "ja/cli/desktop/data"
+                    ],
+                    "root": "ja/cli/desktop/reference"
+                  },
+                  "ja/cli/desktop/troubleshooting"
+                ],
+                "root": "ja/cli/desktop/desktop"
+              }
+            ],
+            "root": "ja/cli/cli"
+          },
+          {
+            "group": "製品の機能",
+            "pages": [
+              "ja/markdown/markdown-dashboard",
+              "ja/markdown/markdown-note",
+              "ja/parameter/parameter",
+              {
+                "group": "共有",
+                "pages": [
+                  "ja/share/share_type",
+                  "ja/share/notification",
+                  "ja/share/version-history",
+                  "ja/share/restore",
+                  "ja/share/csvapi"
+                ],
+                "root": "ja/share/share"
+              },
+              {
+                "group": "スケジュールに関するよくある問題と解決法",
+                "pages": [
+                  "ja/schedule/manage",
+                  "ja/schedule/notification",
+                  "ja/schedule/history"
+                ],
+                "root": "ja/schedule/schedule"
+              },
+              {
+                "group": "チーム",
+                "pages": [
+                  "ja/team/manage"
+                ],
+                "root": "ja/team/team"
+              }
+            ],
+            "root": "ja/product-features"
+          },
+          {
+            "group": "データのインポート",
+            "pages": [
+              {
+                "group": "データベースのデータ",
+                "pages": [
+                  "ja/import/redshift",
+                  "ja/import/mysql",
+                  "ja/import/postgresql"
+                ],
+                "root": "ja/database-data"
+              },
+              {
+                "group": "クラウドアプリのデータ",
+                "pages": [
+                  "ja/import/google-analytics"
+                ],
+                "root": "ja/cloud-apps-data"
+              },
+              "ja/import/r-script-data"
+            ],
+            "root": "ja/data_import"
+          },
+          {
+            "group": "データの加工",
+            "pages": [
+              "ja/wrangling/window-calculation",
+              "ja/wrangling/regular_expression"
+            ],
+            "root": "ja/data-wrangling"
+          },
+          {
+            "group": "ビジュアライゼーション",
+            "pages": [
+              {
+                "group": "チャートの種類",
+                "pages": [
+                  "ja/viz/wordcloud"
+                ],
+                "root": "ja/viz/types"
+              },
+              {
+                "group": "チャートの機能",
+                "pages": [
+                  "ja/viz/number-of-unuque-values-check"
+                ],
+                "root": "ja/viz/features"
+              }
+            ],
+            "root": "ja/visualization"
+          },
+          {
+            "group": "セットアップ",
+            "pages": [
+              "ja/howto/set_exploratory_home"
+            ],
+            "root": "ja/setup"
+          },
+          {
+            "group": "診断",
+            "pages": [
+              "ja/debug_log",
+              "ja/startup_log"
+            ],
+            "root": "ja/diagnostics"
+          }
+        ]
+      }
+    ]
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/en/index"
+    },
+    {
+      "source": "/en/howto/install_errors",
+      "destination": "/en/howto/install_errors"
+    },
+    {
+      "source": "/en/howto/stopmcafee",
+      "destination": "/en/howto/stopmcafee"
+    },
+    {
+      "source": "/en/howto/upgrade_dot_net",
+      "destination": "/en/howto/upgrade_dot_net"
+    },
+    {
+      "source": "/en/import/athena",
+      "destination": "/en/import/athena"
+    },
+    {
+      "source": "/en/import/aurora",
+      "destination": "/en/import/aurora"
+    },
+    {
+      "source": "/en/import/csv",
+      "destination": "/en/import/csv"
+    },
+    {
+      "source": "/en/import/fred",
+      "destination": "/en/import/fred"
+    },
+    {
+      "source": "/en/import/google-bigquery",
+      "destination": "/en/import/google-bigquery"
+    },
+    {
+      "source": "/en/import/hp-vertica",
+      "destination": "/en/import/hp-vertica"
+    },
+    {
+      "source": "/en/import/mongodb",
+      "destination": "/en/import/mongodb"
+    },
+    {
+      "source": "/en/import/odbc",
+      "destination": "/en/import/odbc"
+    },
+    {
+      "source": "/en/import/r-script-data",
+      "destination": "/en/import/r-script-data"
+    },
+    {
+      "source": "/en/import/redshift",
+      "destination": "/en/import/redshift"
+    },
+    {
+      "source": "/en/import/treasuredata",
+      "destination": "/en/import/treasuredata"
+    },
+    {
+      "source": "/en/import/web-scraping",
+      "destination": "/en/import/web-scraping"
+    },
+    {
+      "source": "/en/ml/anomaly",
+      "destination": "/en/ml/anomaly"
+    },
+    {
+      "source": "/en/ml/arules",
+      "destination": "/en/ml/arules"
+    },
+    {
+      "source": "/en/ml/cox-regression",
+      "destination": "/en/ml/cox-regression"
+    },
+    {
+      "source": "/en/ml/do_roc",
+      "destination": "/en/ml/do_roc"
+    },
+    {
+      "source": "/en/ml/evaluate_binary",
+      "destination": "/en/ml/evaluate_binary"
+    },
+    {
+      "source": "/en/ml/evaluate_multi",
+      "destination": "/en/ml/evaluate_multi"
+    },
+    {
+      "source": "/en/ml/evaluate_regression",
+      "destination": "/en/ml/evaluate_regression"
+    },
+    {
+      "source": "/en/ml/forecasting",
+      "destination": "/en/ml/forecasting"
+    },
+    {
+      "source": "/en/ml/glm",
+      "destination": "/en/ml/glm"
+    },
+    {
+      "source": "/en/ml/kmeans",
+      "destination": "/en/ml/kmeans"
+    },
+    {
+      "source": "/en/ml/linear-regression",
+      "destination": "/en/ml/linear-regression"
+    },
+    {
+      "source": "/en/ml/logistic-regression",
+      "destination": "/en/ml/logistic-regression"
+    },
+    {
+      "source": "/en/ml/model_anova",
+      "destination": "/en/ml/model_anova"
+    },
+    {
+      "source": "/en/ml/model_coef",
+      "destination": "/en/ml/model_coef"
+    },
+    {
+      "source": "/en/ml/model_stats",
+      "destination": "/en/ml/model_stats"
+    },
+    {
+      "source": "/en/ml/multinom",
+      "destination": "/en/ml/multinom"
+    },
+    {
+      "source": "/en/ml/prediction",
+      "destination": "/en/ml/prediction"
+    },
+    {
+      "source": "/en/ml/prediction_binary",
+      "destination": "/en/ml/prediction_binary"
+    },
+    {
+      "source": "/en/ml/prediction_coxph",
+      "destination": "/en/ml/prediction_coxph"
+    },
+    {
+      "source": "/en/ml/prediction_survfit",
+      "destination": "/en/ml/prediction_survfit"
+    },
+    {
+      "source": "/en/ml/survival-curv",
+      "destination": "/en/ml/survival-curv"
+    },
+    {
+      "source": "/en/ml/timeseries_clustering",
+      "destination": "/en/ml/timeseries_clustering"
+    },
+    {
+      "source": "/en/ml/xgboost",
+      "destination": "/en/ml/xgboost"
+    },
+    {
+      "source": "/en/stats/chi-test",
+      "destination": "/en/stats/chi-test"
+    },
+    {
+      "source": "/en/stats/correlation",
+      "destination": "/en/stats/correlation"
+    },
+    {
+      "source": "/en/stats/dist",
+      "destination": "/en/stats/dist"
+    },
+    {
+      "source": "/en/stats/exp_bayes_ab",
+      "destination": "/en/stats/exp_bayes_ab"
+    },
+    {
+      "source": "/en/stats/f-test",
+      "destination": "/en/stats/f-test"
+    },
+    {
+      "source": "/en/stats/mds",
+      "destination": "/en/stats/mds"
+    },
+    {
+      "source": "/en/stats/sim",
+      "destination": "/en/stats/sim"
+    },
+    {
+      "source": "/en/stats/svd",
+      "destination": "/en/stats/svd"
+    },
+    {
+      "source": "/en/stats/t-test",
+      "destination": "/en/stats/t-test"
+    },
+    {
+      "source": "/en/text/do_ngram",
+      "destination": "/en/text/do_ngram"
+    },
+    {
+      "source": "/en/text/do_tfidf",
+      "destination": "/en/text/do_tfidf"
+    },
+    {
+      "source": "/en/text/do_tokenize",
+      "destination": "/en/text/do_tokenize"
+    },
+    {
+      "source": "/en/text/pair_count",
+      "destination": "/en/text/pair_count"
+    },
+    {
+      "source": "/en/viz/column-configuration",
+      "destination": "/en/viz/column-configuration"
+    },
+    {
+      "source": "/en/wrangling/add_row",
+      "destination": "/en/wrangling/add_row"
+    },
+    {
+      "source": "/en/wrangling/arrange",
+      "destination": "/en/wrangling/arrange"
+    },
+    {
+      "source": "/en/wrangling/bind_columns",
+      "destination": "/en/wrangling/bind_columns"
+    },
+    {
+      "source": "/en/wrangling/bind_rows",
+      "destination": "/en/wrangling/bind_rows"
+    },
+    {
+      "source": "/en/wrangling/buckets",
+      "destination": "/en/wrangling/buckets"
+    },
+    {
+      "source": "/en/wrangling/clean_names",
+      "destination": "/en/wrangling/clean_names"
+    },
+    {
+      "source": "/en/wrangling/command-mode",
+      "destination": "/en/wrangling/command-mode"
+    },
+    {
+      "source": "/en/wrangling/complete",
+      "destination": "/en/wrangling/complete"
+    },
+    {
+      "source": "/en/wrangling/distinct",
+      "destination": "/en/wrangling/distinct"
+    },
+    {
+      "source": "/en/wrangling/drop_na",
+      "destination": "/en/wrangling/drop_na"
+    },
+    {
+      "source": "/en/wrangling/expand",
+      "destination": "/en/wrangling/expand"
+    },
+    {
+      "source": "/en/wrangling/fill",
+      "destination": "/en/wrangling/fill"
+    },
+    {
+      "source": "/en/wrangling/filter",
+      "destination": "/en/wrangling/filter"
+    },
+    {
+      "source": "/en/wrangling/gather",
+      "destination": "/en/wrangling/gather"
+    },
+    {
+      "source": "/en/wrangling/get_dupes",
+      "destination": "/en/wrangling/get_dupes"
+    },
+    {
+      "source": "/en/wrangling/group",
+      "destination": "/en/wrangling/group"
+    },
+    {
+      "source": "/en/wrangling/hoist",
+      "destination": "/en/wrangling/hoist"
+    },
+    {
+      "source": "/en/wrangling/join",
+      "destination": "/en/wrangling/join"
+    },
+    {
+      "source": "/en/wrangling/merge",
+      "destination": "/en/wrangling/merge"
+    },
+    {
+      "source": "/en/wrangling/mutate",
+      "destination": "/en/wrangling/mutate"
+    },
+    {
+      "source": "/en/wrangling/mutate_at",
+      "destination": "/en/wrangling/mutate_at"
+    },
+    {
+      "source": "/en/wrangling/pivot",
+      "destination": "/en/wrangling/pivot"
+    },
+    {
+      "source": "/en/wrangling/remove_empty_cols",
+      "destination": "/en/wrangling/remove_empty_cols"
+    },
+    {
+      "source": "/en/wrangling/remove_empty_rows",
+      "destination": "/en/wrangling/remove_empty_rows"
+    },
+    {
+      "source": "/en/wrangling/rename",
+      "destination": "/en/wrangling/rename"
+    },
+    {
+      "source": "/en/wrangling/reorder",
+      "destination": "/en/wrangling/reorder"
+    },
+    {
+      "source": "/en/wrangling/row_as_header",
+      "destination": "/en/wrangling/row_as_header"
+    },
+    {
+      "source": "/en/wrangling/sample",
+      "destination": "/en/wrangling/sample"
+    },
+    {
+      "source": "/en/wrangling/select",
+      "destination": "/en/wrangling/select"
+    },
+    {
+      "source": "/en/wrangling/separate",
+      "destination": "/en/wrangling/separate"
+    },
+    {
+      "source": "/en/wrangling/slice",
+      "destination": "/en/wrangling/slice"
+    },
+    {
+      "source": "/en/wrangling/smote",
+      "destination": "/en/wrangling/smote"
+    },
+    {
+      "source": "/en/wrangling/spread",
+      "destination": "/en/wrangling/spread"
+    },
+    {
+      "source": "/en/wrangling/summarize",
+      "destination": "/en/wrangling/summarize"
+    },
+    {
+      "source": "/en/wrangling/top_n",
+      "destination": "/en/wrangling/top_n"
+    },
+    {
+      "source": "/en/wrangling/type-convert",
+      "destination": "/en/wrangling/type-convert"
+    },
+    {
+      "source": "/en/wrangling/ungroup",
+      "destination": "/en/wrangling/ungroup"
+    },
+    {
+      "source": "/en/wrangling/unite",
+      "destination": "/en/wrangling/unite"
+    },
+    {
+      "source": "/en/wrangling/unnest",
+      "destination": "/en/wrangling/unnest"
+    },
+    {
+      "source": "/en/wrangling/unnest_longer",
+      "destination": "/en/wrangling/unnest_longer"
+    },
+    {
+      "source": "/en/wrangling/unnest_wider",
+      "destination": "/en/wrangling/unnest_wider"
+    },
+    {
+      "source": "/en/ai/ai-prompt-function-ri-ben-yu",
+      "destination": "/en/ai/ai-promtpt-function-en"
+    },
+    {
+      "source": "/en/product-features/share_ja/chart_ja",
+      "destination": "/en/share/chart"
+    },
+    {
+      "source": "/en/product-features/share_ja/data_ja",
+      "destination": "/en/share/data"
+    },
+    {
+      "source": "/en/product-features/share_ja/note_ja",
+      "destination": "/en/share/note"
+    },
+    {
+      "source": "/en/visualization/features/color-ja",
+      "destination": "/en/viz/color"
+    },
+    {
+      "source": "/en/visualization/types/r-custom_ja",
+      "destination": "/en/viz/r-custom"
+    }
+  ],
+  "logo": {
+    "light": "/en/markdown/images/logo_top.png",
+    "dark": "/en/markdown/images/logo_top.png",
+    "href": "https://exploratory.io"
+  }
+}

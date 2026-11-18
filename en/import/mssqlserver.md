@@ -1,4 +1,6 @@
-# SQL Server Data Import
+---
+title: "SQL Server Data Import"
+---
 
 You can quickly import data from your SQL Server into Exploratory.
 

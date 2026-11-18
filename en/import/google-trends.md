@@ -1,4 +1,6 @@
-# Import Google Trends data
+---
+title: "Import Google Trends data"
+---
 
 You can get Google Trends data through [gtrendsR](https://github.com/PMassicotte/gtrendsR) package internally.
 

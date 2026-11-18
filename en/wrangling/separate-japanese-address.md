@@ -1,4 +1,6 @@
-# Separate Address (Japan)
+---
+title: "Separate Address (Japan)"
+---
 
 Separate Japanese address into prefecture, city, and street columns
 

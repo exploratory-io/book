@@ -1,4 +1,6 @@
-# Category (Binning) 
+---
+title: "Category (Binning)"
+---
 
 You can categorize numeric values inside the chart. Category is supported in following chart types.
 

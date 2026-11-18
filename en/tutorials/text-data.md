@@ -1,4 +1,6 @@
-# Working with Text data
+---
+title: "Working with Text data"
+---
 
 Here is a blog post that walks you through how to address the common text data wrangling challenges. 
 

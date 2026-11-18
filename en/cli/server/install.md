@@ -1,4 +1,6 @@
-# Installation
+---
+title: "Installation"
+---
 
 There are two ways to get expl. Pick one; you do not need both.
 

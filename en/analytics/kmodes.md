@@ -1,3 +1,5 @@
-# K-Modes Clustering Analytics View
+---
+title: "K-Modes Clustering Analytics View"
+---
 
 To be updated.

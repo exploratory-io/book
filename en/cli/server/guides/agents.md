@@ -1,4 +1,6 @@
-# Use from AI agents
+---
+title: "Use from AI agents"
+---
 
 What an AI agent should know before it runs expl server. An agent that can run shell commands can use expl directly. No MCP setup is needed.
 

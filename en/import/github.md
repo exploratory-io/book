@@ -1,4 +1,6 @@
-# Github Issue Data Import
+---
+title: "Github Issue Data Import"
+---
 
 For Basic Authentication, you can simply type your Github username and password.
 

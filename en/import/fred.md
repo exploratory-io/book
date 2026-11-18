@@ -1,4 +1,6 @@
-# FRED (Federal Reserve of Economic Data) Data Import
+---
+title: "FRED (Federal Reserve of Economic Data) Data Import"
+---
 
 ## 1. Obtain API Key.
 

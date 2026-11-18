@@ -1,4 +1,6 @@
-# Chi Squared Test
+---
+title: "Chi Squared Test"
+---
 
 ## Introduction
 
@@ -30,8 +32,8 @@ The Chi-Square Test will output the following metrics:
 
 | Metric | Description |
 |--------|-------------|
-| **Chi-Square** | indicates how much difference exists between the actual counts (number of rows) in each combination of the categories and their expected counts if there were no relationship between the two categorical variables. <br> P Value is calculated based on where this Chi-Square value resides on a given Chi-Square distribution.
-| **P Value** | indicates a probability of observing the relationship between the two categorical variables if we accept a null hypothesis (assumption) that there is no relationship between the two. <br> If it is less than a threshold value you can reject the null hypothesis and conclude that there is a statistically significant difference between the two groups. Otherwise, it’s not significant. The threshold is set to 0.05 (5%) by default. |
+| **Chi-Square** | indicates how much difference exists between the actual counts (number of rows) in each combination of the categories and their expected counts if there were no relationship between the two categorical variables. <br /> P Value is calculated based on where this Chi-Square value resides on a given Chi-Square distribution.
+| **P Value** | indicates a probability of observing the relationship between the two categorical variables if we accept a null hypothesis (assumption) that there is no relationship between the two. <br /> If it is less than a threshold value you can reject the null hypothesis and conclude that there is a statistically significant difference between the two groups. Otherwise, it’s not significant. The threshold is set to 0.05 (5%) by default. |
 | **DF** | Degrees of freedom represent the number of independent values that can vary in the calculation of a statistic. The degrees of freedom is calculated as (number of rows − 1) × (number of columns − 1). |
 | **Rows** | Number of rows in the dataset |
 

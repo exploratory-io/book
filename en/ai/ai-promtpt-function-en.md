@@ -1,4 +1,6 @@
-# AI プロンプト関数
+---
+title: "AI プロンプト関数"
+---
 
 Coming soon!
 

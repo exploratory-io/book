@@ -1,4 +1,6 @@
-# Histogram Chart
+---
+title: "Histogram Chart"
+---
 
 ![](images/hist1.png)
 

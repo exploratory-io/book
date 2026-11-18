@@ -1,4 +1,6 @@
-# Logistic Regression Model
+---
+title: "Logistic Regression Model"
+---
 
 ## Introduction
 

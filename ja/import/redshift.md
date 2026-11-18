@@ -1,4 +1,6 @@
-# Amazon Redshift データベースからデータをインポートする
+---
+title: "Amazon Redshift データベースからデータをインポートする"
+---
 
 Amazon Redshift DatabaseからExploratoryに素早くデータをインポートすることができます。
 

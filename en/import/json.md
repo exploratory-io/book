@@ -1,4 +1,6 @@
-# Import JSON Data
+---
+title: "Import JSON Data"
+---
 
 You can import both local and remote JSON File Data quickly.
 

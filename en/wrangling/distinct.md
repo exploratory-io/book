@@ -1,4 +1,6 @@
-# Keep Only Unique Rows
+---
+title: "Keep Only Unique Rows"
+---
 
 ## How to Access This Feature
 * Click "+" button and select "Keep Only ..." menu. Then select its "Unique Rows" submenu.

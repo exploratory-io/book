@@ -1,4 +1,6 @@
-# Install R Package
+---
+title: "Install R Package"
+---
 
 ## Install from CRAN
 
@@ -17,7 +19,7 @@ You can install your preferred R packages from [CRAN](https://cran.r-project.org
 
 ## Install R Packages that are not on CRAN
 
-If you want to install R packages that are not on CRAN, then you can install them in the standard R console by setting ‘libPath’ so that the packages will be installed into the location Exploratory is referencing to, which is under <your home directory>/.exploratory/R .
+If you want to install R packages that are not on CRAN, then you can install them in the standard R console by setting ‘libPath’ so that the packages will be installed into the location Exploratory is referencing to, which is under \<your home directory>/.exploratory/R .
 
 Example:
 ```

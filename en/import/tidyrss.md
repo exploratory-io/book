@@ -1,4 +1,6 @@
-# RSS Data Import
+---
+title: "RSS Data Import"
+---
 
 Allows to get data from RSS feeds.
 

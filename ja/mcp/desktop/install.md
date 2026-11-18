@@ -1,4 +1,6 @@
-# プラグインのインストール
+---
+title: "プラグインのインストール"
+---
 
 インストールすると、AI ツールから Exploratory Desktop を使えるようになります。Exploratory Desktop のシステム設定から、Desktop MCP のプラグインを、このコンピューターの AI ツールにインストールします。
 所要時間は 5 分ほどです。同じコンピューターに、Exploratory Desktop と、プラグインを入れる AI ツール（Claude Code、Codex、Antigravity、Cursor のいずれか）を用意してください。

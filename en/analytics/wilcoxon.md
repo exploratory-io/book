@@ -1,4 +1,6 @@
-# Wilcoxon Test Analytics View
+---
+title: "Wilcoxon Test Analytics View"
+---
 
 Runs Wilcoxon test (Rank Sum Test or Signed Rank Test), which checks if 2 groups are from populations that have a same distribution.
 

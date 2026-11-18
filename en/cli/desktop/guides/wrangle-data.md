@@ -1,4 +1,6 @@
-# Import and wrangle data
+---
+title: "Import and wrangle data"
+---
 
 Import data into a project as a data frame, check its columns, and add wrangling steps.
 
@@ -56,7 +58,7 @@ Then add one step. --command is the operation, and --params is a JSON object tha
 expl dataframe apply-step <dataframe_id> --command <command> --params @params.json
 ```
 
-Replace \<command\> with a command name from get-command, and write params.json with the names it returned. Add one step per operation, not several at once. If R cannot run the step, it is rolled back; --save-with-error keeps it as an error step. To insert a step before or after an existing one, pass --insert-position '{"side":"after","stepName":"<step name>"}'; without it the step is added at the end.
+Replace \<command\> with a command name from get-command, and write params.json with the names it returned. Add one step per operation, not several at once. If R cannot run the step, it is rolled back; --save-with-error keeps it as an error step. To insert a step before or after an existing one, pass --insert-position '\{"side":"after","stepName":"\<step name>"\}'; without it the step is added at the end.
 
 expl dataframe preview-steps tries changes on temporary objects and shows the effect without saving. Its arguments are in expl dataframe preview-steps --help.
 

@@ -1,3 +1,7 @@
+---
+title: "Pie / Ring Chart"
+---
+
 ##  Pie / Ring Chart
 
 

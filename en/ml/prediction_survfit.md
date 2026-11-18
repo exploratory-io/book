@@ -1,4 +1,6 @@
-# Simulate Survival Curve
+---
+title: "Simulate Survival Curve"
+---
 
 Simulate Survival Curve for a cohort with Survival Model.
 

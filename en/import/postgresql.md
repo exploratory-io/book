@@ -1,4 +1,6 @@
-# PostgreSQL Database Data Import
+---
+title: "PostgreSQL Database Data Import"
+---
 
 You can quickly import data from your PostgreSQL Database into Exploratory.
 

@@ -1,4 +1,6 @@
-# Global flags
+---
+title: "Global flags"
+---
 
 Flags you can add to any command. You can place them before or after the command.
 

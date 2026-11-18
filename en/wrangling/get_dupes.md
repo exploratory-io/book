@@ -1,4 +1,6 @@
-# Keep Only Duplicated Rows
+---
+title: "Keep Only Duplicated Rows"
+---
 
 ## How to Access This Feature
 * Click "+" button and select "Keep Only ..." menu. Then select its "Duplicated Rows" submenu.

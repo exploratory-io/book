@@ -1,3 +1,7 @@
+---
+title: "Add your own custom R functions or variables with R Script"
+---
+
 ## Add your own custom R functions or variables with R Script
 
 You might want to use your own R functions as part of your data wrangling steps. This is an introduction for such case. If you want to write your own R functions to extract data, please refer to [Write R Script for Data](import/r-script-data.md).

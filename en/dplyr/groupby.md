@@ -1,4 +1,6 @@
-# Group By
+---
+title: "Group By"
+---
 
 Converts the data set into a grouped data set where the following operations will be performed based on the groups. Grouping should be done before you want to aggregate values.
 

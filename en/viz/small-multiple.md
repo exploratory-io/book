@@ -1,4 +1,6 @@
-# Repeat By
+---
+title: "Repeat By"
+---
 
 With Repeat By, you can show multiple charts by groups at a time on the same chart area. It is useful to capture/compare the trends and characteristics of groups at a glance. 
 

@@ -1,4 +1,6 @@
-# ANOVA Analytics
+---
+title: "ANOVA Analytics"
+---
 
 ## One-Way ANOVA
 

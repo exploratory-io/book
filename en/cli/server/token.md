@@ -1,4 +1,6 @@
-# API keys
+---
+title: "API keys"
+---
 
 Create an API key, pass it to expl, and keep it safe. Use it for CI, scripts and any place without a browser.
 

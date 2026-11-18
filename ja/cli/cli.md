@@ -1,4 +1,6 @@
-# Exploratory CLI
+---
+title: "Exploratory CLI"
+---
 
 ターミナルから expl コマンドで Exploratory を使います。接続先は 2 つあります。最初に、どちらが必要かを決めます。
 

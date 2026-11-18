@@ -1,4 +1,6 @@
-# Unite
+---
+title: "Unite"
+---
 
 ## How to Access This Feature
 * Click "+" button and select "Unite".

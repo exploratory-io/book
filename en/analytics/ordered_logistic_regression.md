@@ -1,3 +1,5 @@
-# Ordered Logistic Regression Analytics View
+---
+title: "Ordered Logistic Regression Analytics View"
+---
 
 To be updated.

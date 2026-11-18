@@ -1,4 +1,6 @@
-# All commands
+---
+title: "All commands"
+---
 
 The commands you will use most, grouped by purpose. For the full list, including the rest, see [Full list](#more) later on this page.
 

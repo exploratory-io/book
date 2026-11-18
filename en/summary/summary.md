@@ -1,4 +1,6 @@
-# Summary View
+---
+title: "Summary View"
+---
 
 At the Summary View, you can view the summary information of the selected data frame. 
 

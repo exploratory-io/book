@@ -1,4 +1,6 @@
-# Automation
+---
+title: "Automation"
+---
 
 Run expl server from scripts and CI without anyone signing in through a browser, with an API key.
 

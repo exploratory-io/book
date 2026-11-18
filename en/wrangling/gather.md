@@ -1,4 +1,6 @@
-# Gather (Unpivot)
+---
+title: "Gather (Unpivot)"
+---
 
 Takes multiple columns and collapses into key-value pairs, duplicating all other columns as needed.
 

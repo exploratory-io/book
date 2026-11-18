@@ -1,4 +1,6 @@
-# XGBoost - Extreme Gradient Boosting
+---
+title: "XGBoost - Extreme Gradient Boosting"
+---
 
 ## Introduction
 

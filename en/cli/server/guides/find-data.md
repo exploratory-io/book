@@ -1,4 +1,6 @@
-# Find data
+---
+title: "Find data"
+---
 
 Search the data, notes and dashboards published on exploratory.io, get their ids, and move on to fetch or the schema of a data item.
 

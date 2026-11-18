@@ -1,4 +1,6 @@
-# Add your Custom Data Sources with Data Source Extension Framework
+---
+title: "Add your Custom Data Sources with Data Source Extension Framework"
+---
 
 Exploratory provides a framework with which developers can create their own data sources that can be invoked from Exploratory's Data Import Dialog.
 

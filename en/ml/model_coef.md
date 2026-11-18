@@ -1,4 +1,6 @@
-# Extract Parameter Estimates
+---
+title: "Extract Parameter Estimates"
+---
 
 ## How to Access This Feature
 

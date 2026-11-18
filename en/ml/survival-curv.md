@@ -1,4 +1,7 @@
-# Calculate Survival Curve
+---
+title: "Calculate Survival Curve"
+---
+
 Calculates Survival Curve from survival time and survival status.
 
 ## Input Data

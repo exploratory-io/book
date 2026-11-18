@@ -1,4 +1,6 @@
-# Number Chart
+---
+title: "Number Chart"
+---
 
 You can show a single, aggregated number. It is good for tracking a specific number, and it is good for using it in Dashborads.  
 
@@ -23,7 +25,7 @@ You can use the Custom Function feature to define your own aggregation function.
 
 ## Layout Configuration
 
-* Default Value - The default text value used when the data is NA. The default is '<NA>'.
+* Default Value - The default text value used when the data is NA. The default is '\<NA>'.
 
 
 Take a look at [Layout Configuration](layout.md) on how to configure the layout and format. 

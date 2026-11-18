@@ -1,4 +1,6 @@
-# Teradata Data Import
+---
+title: "Teradata Data Import"
+---
 
 You can quickly import data from your  Teradata into Exploratory.
 

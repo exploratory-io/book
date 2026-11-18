@@ -1,4 +1,6 @@
-# Inner Join
+---
+title: "Inner Join"
+---
 
 Return all rows from the current data frame where there are matching values in the current, and all columns from the current and the target.
 

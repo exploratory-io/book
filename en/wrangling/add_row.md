@@ -1,4 +1,6 @@
-# Add Row
+---
+title: "Add Row"
+---
 
 You can add a row by passing Column Name-value pairs.
 

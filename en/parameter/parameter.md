@@ -1,4 +1,6 @@
-# Parameter
+---
+title: "Parameter"
+---
 
 With Parameter, you can make your data wrangling pipeline, Chart, Analytics, Note, Dashboard, etc. more dynamic or more interactive.
 

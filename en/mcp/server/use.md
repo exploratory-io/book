@@ -1,4 +1,6 @@
-# Use
+---
+title: "Use"
+---
 
 Examples of what to ask your AI for what you want to do with published content, with the tools it uses and a few tips. The tools are what the AI uses; you do not call them yourself.
 

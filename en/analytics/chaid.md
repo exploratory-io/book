@@ -1,3 +1,5 @@
-# CHAID Analytics View
+---
+title: "CHAID Analytics View"
+---
 
 To be updated.

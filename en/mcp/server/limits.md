@@ -1,4 +1,6 @@
-# Limits and errors
+---
+title: "Limits and errors"
+---
 
 What it cannot do, how to read the numbers, the limits, and what to do about errors.
 

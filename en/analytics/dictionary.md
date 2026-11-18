@@ -1,3 +1,7 @@
+---
+title: "How to manage Dictionaries"
+---
+
 
 There are 2 types of dictionaries. 
 

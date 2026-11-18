@@ -1,4 +1,6 @@
-# Read notes
+---
+title: "Read notes"
+---
 
 Find a published note, read its text and get the numbers of its charts.
 

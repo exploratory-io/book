@@ -1,4 +1,6 @@
-# Get analytics results
+---
+title: "Get analytics results"
+---
 
 Get the results of analytics (regression, correlation, chi-square test and so on) in a published dashboard or note as structured data.
 

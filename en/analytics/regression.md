@@ -1,4 +1,6 @@
-# Regression Analysis
+---
+title: "Regression Analysis"
+---
 
 Build Linear Regression Model
 

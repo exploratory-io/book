@@ -1,4 +1,6 @@
-# Correlation by Column
+---
+title: "Correlation by Column"
+---
 
 Calculates Correlations among columns.
 

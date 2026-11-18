@@ -1,4 +1,6 @@
-# Connect Grok Bot
+---
+title: "Connect Grok Bot"
+---
 
 After you connect, an AI can read notes and data published on Exploratory. You add the Exploratory server in Grok Bot as a custom connector.
 It takes about 3 minutes. You need an Exploratory account and Grok Bot.

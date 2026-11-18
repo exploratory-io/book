@@ -1,4 +1,7 @@
-# A/B Test - Bayesian 
+---
+title: "A/B Test - Bayesian"
+---
+
 Analyzes A/B test result data based on Bayesian algorithm.
 
 ## Input Data

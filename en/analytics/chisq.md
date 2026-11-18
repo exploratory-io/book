@@ -1,4 +1,6 @@
-# Chi-Square Test Analytics View
+---
+title: "Chi-Square Test Analytics View"
+---
 
 Runs Chi-Square Test, which checks differences of distributions of categorical variable among groups.
 

@@ -1,4 +1,6 @@
-# Use
+---
+title: "Use"
+---
 
 Find the command and the guide for what you want to do in your local projects. To create, change or delete content, check Allow create, edit and delete in System Settings \> MCP / CLI.
 

@@ -1,4 +1,6 @@
-# Evaluate Prediction - Regression
+---
+title: "Evaluate Prediction - Regression"
+---
 
 Returns a data frame with evaluation score of regression including the below.
 

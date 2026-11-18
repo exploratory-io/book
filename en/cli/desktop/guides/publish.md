@@ -1,4 +1,6 @@
-# Publish
+---
+title: "Publish"
+---
 
 Publish a note, a dashboard or a data frame from Desktop to the server, see what is published, and cancel the publication of a note or dashboard.
 

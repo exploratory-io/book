@@ -1,4 +1,6 @@
-# Import CSV / Delimited File or Excel File Data from Google Cloud Storage (To be Introduced)
+---
+title: "Import CSV / Delimited File or Excel File Data from Google Cloud Storage (To be Introduced)"
+---
 
 You can import CSV / Delimited File or Excel File from Google Cloud Storage.
 

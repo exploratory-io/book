@@ -1,4 +1,6 @@
-# Tools
+---
+title: "Tools"
+---
 
 The Desktop MCP lets an AI client work with the project open in Exploratory Desktop. Find what it can do by purpose.
 

@@ -1,4 +1,6 @@
-# All commands
+---
+title: "All commands"
+---
 
 Choose a command by purpose. Open its name to see arguments and examples.
 
@@ -802,12 +804,12 @@ expl server dataset query [<dataset_id>] [flags]
 | `--dataset-id` | string | Required unless queries or datasets is used | The id of the data item, from a search result or a fetch. Write it right after the command or pass it with --dataset-id. |
 | `--mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
 | `--columns` | JSON | Required in rows mode (optional in a join) | Only in rows mode. 1 to 50 unique column names to return. In a join, write each column with alias and column. In a join, leaving it out returns every column. |
-| `--filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. In a join, they apply after the join. |
-| `--dimensions` | JSON |  | Only in aggregate mode. 0 to 5 columns to group by, written as { "column": "column name" }. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
+| `--filters` | JSON |  | The filter conditions: a single condition, or \{ "and": \[...\] \} or \{ "or": \[...\] \} with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. In a join, they apply after the join. |
+| `--dimensions` | JSON |  | Only in aggregate mode. 0 to 5 columns to group by, written as \{ "column": "column name" \}. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
 | `--metrics` | JSON | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations, each with a function (count_rows, count, count_distinct, sum, avg, min, max) and an alias that names the result. Everything except count_rows also takes a column. |
 | `--sort` | JSON |  | The sort order, up to 3 entries. Each entry names an output field with field and a direction with direction. |
 | `--limit` | integer |  | The maximum number of result rows. rows: default 100, at most 1,000. aggregate: default 100, at most 500. There is no paging; narrow the query when rows remain. |
-| `--datasets` | JSON |  | The data items to join and their aliases, used instead of dataset_id. 2 to 5 items, written as an array of { "id": ..., "alias": ... }. |
+| `--datasets` | JSON |  | The data items to join and their aliases, used instead of dataset_id. 2 to 5 items, written as an array of \{ "id": ..., "alias": ... \}. |
 | `--root-alias` | string |  | The alias of the data item where joins start. By default, the first of datasets. |
 | `--joins` | JSON | Required with datasets | Join types (inner, left, right, full), the left and right aliases and the key columns. One join is needed for each data item after the first. |
 | `--source-filters` | JSON |  | Narrows the rows of each data item before the join. For each alias, write conditions with that data item's plain column names. Use it for a condition on the side of a left join that should not drop rows. |
@@ -944,7 +946,7 @@ There is no paging. When has_more in the result is true, narrow the filters or a
 
 | What you see | What to do |
 | --- | --- |
-| Each dimension must be an object like { "column": "region" }. (INVALID_QUERY) | Write dimensions as an array of objects like { "column": "column name" }. |
+| Each dimension must be an object like \{ "column": "region" \}. (INVALID_QUERY) | Write dimensions as an array of objects like \{ "column": "column name" \}. |
 | columns is required in rows mode. (INVALID_QUERY) | In rows mode, name the columns to return with --columns. |
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | In metrics, give a function and an alias. Everything except count_rows also takes a column. |
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias is required. Use only letters, digits and _, do not start with a digit, and use at most 64 characters. |
@@ -980,7 +982,7 @@ expl server dataframe export <dataset_id> [flags]
 | `--format` | string |  | The file format. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Values: `csv`, `parquet` |
 | `--mode` | string | Required | rows: export the rows that match the filters. aggregate: export the result of grouping by dimensions and calculating metrics. Values: `rows`, `aggregate` |
 | `--columns` | list of values |  | Only in rows mode. 1 to 50 unique column names to export. Without it, every column is exported. |
-| `--filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
+| `--filters` | JSON |  | The filter conditions: a single condition, or \{ "and": \[...\] \} or \{ "or": \[...\] \} with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
 | `--dimensions` | JSON |  | Only in aggregate mode. 0 to 5 columns to group by. |
 | `--metrics` | JSON | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
 | `--sort` | JSON |  | The sort order, up to 3 entries. |
@@ -1664,7 +1666,7 @@ expl server chart query [flags]
 | `--chart` | string | Required unless queries is used | The name of the chart: metadata.charts\[\].name in the result of fetch (letters, digits, _ and -). |
 | `--mode` | string | Required unless queries is used | rows: get the rows that match the filters. aggregate: group by dimensions and calculate metrics. Values: `rows`, `aggregate` |
 | `--columns` | list of values |  | Only in rows mode. 1 to 50 unique column names to return. |
-| `--filters` | JSON |  | The filter conditions: a single condition, or { "and": \[...\] } or { "or": \[...\] } with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
+| `--filters` | JSON |  | The filter conditions: a single condition, or \{ "and": \[...\] \} or \{ "or": \[...\] \} with 2 or more conditions each. Nest at most 3 levels, with at most 20 conditions in all. |
 | `--dimensions` | JSON |  | Only in aggregate mode. 0 to 5 columns to group by. Values are used as stored, so there is no option to extract a month or year from a date for grouping. Without it, you get one total row. |
 | `--metrics` | JSON | Required in aggregate mode | Only in aggregate mode, and required there. 1 to 10 calculations. |
 | `--sort` | JSON |  | The sort order, up to 3 entries. |

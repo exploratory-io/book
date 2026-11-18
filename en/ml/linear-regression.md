@@ -1,4 +1,6 @@
-# Linear Regression Model
+---
+title: "Linear Regression Model"
+---
 
 ## Introduction
 

@@ -1,4 +1,6 @@
-# Create charts
+---
+title: "Create charts"
+---
 
 Create a chart from a data frame, check its numbers and image, and change it.
 
@@ -26,7 +28,7 @@ expl chart list-settings --marker bar
 
 ### 2. Create the chart
 
---marker and --axes are required. --axes is a JSON object that puts a column in each slot, with the slot name as the key. The slots of bar and line charts are x, y, color and facet; those of a pivot table are rowh, colh and meas. The value is a column name, or {"column": "...", "func": "sum"} to choose the aggregation.
+--marker and --axes are required. --axes is a JSON object that puts a column in each slot, with the slot name as the key. The slots of bar and line charts are x, y, color and facet; those of a pivot table are rowh, colh and meas. The value is a column name, or \{"column": "...", "func": "sum"\} to choose the aggregation.
 
 ```sh
 expl chart add --data-frame-id <dataframe_id> --marker bar --axes '{"x":"order_date","y":{"column":"sales","func":"sum"}}' --title "Monthly Sales"

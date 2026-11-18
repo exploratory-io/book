@@ -1,4 +1,7 @@
-# Spread
+---
+title: "Spread"
+---
+
 Spread a key-value pair across multiple columns. Missing values will be replaced with NA.
 
 ## How to Access This Feature

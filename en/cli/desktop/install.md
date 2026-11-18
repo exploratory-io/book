@@ -1,4 +1,6 @@
-# Installation
+---
+title: "Installation"
+---
 
 expl comes with Exploratory Desktop. There is nothing else to install.
 

@@ -1,4 +1,6 @@
-# How to disable McAfee Real Time Virus Scan temporarily for allowing Exploratory to install R packages.
+---
+title: "How to disable McAfee Real Time Virus Scan temporarily for allowing Exploratory to install R packages."
+---
 
 McAfee Real Time Virus Scan prevents the required R packages from being installed correctly. Please disable the real time scanning temporarily during the installation of the R packages with Exploratory Desktop.
 

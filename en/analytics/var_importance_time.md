@@ -1,4 +1,6 @@
-# Cox Regression Analytics
+---
+title: "Cox Regression Analytics"
+---
 
 Builds Cox Regression Model, which predicts survival curves of subjects based on the specified predictor variables.
 

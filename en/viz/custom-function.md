@@ -1,4 +1,6 @@
-# Custom Function
+---
+title: "Custom Function"
+---
 
 The Custom Function feature allows you to define your own aggregation function as a column. Custom Function is available in the following charts. 
 

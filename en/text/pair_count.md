@@ -1,4 +1,6 @@
-# Count Text Pairs
+---
+title: "Count Text Pairs"
+---
 
 ## How to Access This Feature
 

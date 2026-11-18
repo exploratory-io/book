@@ -1,4 +1,6 @@
-# Connect Antigravity
+---
+title: "Connect Antigravity"
+---
 
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Antigravity and sign in through your browser.
 It takes about 10 minutes. You need an Exploratory account and Antigravity.

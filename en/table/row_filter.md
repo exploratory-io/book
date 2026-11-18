@@ -1,4 +1,6 @@
-# Row Filter
+---
+title: "Row Filter"
+---
 
 You can filter the rows (data) to show by the condition on Summary View and Table View. You can define the condition from the "Rows" button at the top. The condition can be shared among the Summary View and Table View.
 

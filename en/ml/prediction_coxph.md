@@ -1,4 +1,6 @@
-# Predict Data - Survival
+---
+title: "Predict Data - Survival"
+---
 
 Predict with Survival Model.
 

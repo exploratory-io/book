@@ -1,4 +1,6 @@
-# Exploratory CLI: Desktop
+---
+title: "Exploratory CLI: Desktop"
+---
 
 expl は、このコンピューターで起動している Exploratory Desktop を、ターミナルから操作するコマンドです。
 

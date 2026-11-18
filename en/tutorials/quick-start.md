@@ -1,4 +1,6 @@
-# Getting Started Guide
+---
+title: "Getting Started Guide"
+---
 
 Duration (Time to finish) : About 60 minutes
 

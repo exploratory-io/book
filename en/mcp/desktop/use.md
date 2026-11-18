@@ -1,4 +1,6 @@
-# Use
+---
+title: "Use"
+---
 
 What you can ask your AI to do in your local projects through the Desktop MCP. For each one, open a project in Exploratory Desktop and talk to your AI tool. If you have not installed the plugin yet, do [Install the plugin](install.md) first.
 

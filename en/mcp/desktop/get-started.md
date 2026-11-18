@@ -1,4 +1,6 @@
-# Get started
+---
+title: "Get started"
+---
 
 Install the Desktop MCP plugin, turn on MCP in Exploratory Desktop, and ask your AI tool to look at the data in your project. It takes about 5 minutes, and you can do the steps on this one page. You need Exploratory Desktop and the AI tool you want to install into (Claude Code, Codex, Antigravity or Cursor) on the same computer.
 

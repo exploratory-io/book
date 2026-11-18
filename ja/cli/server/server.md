@@ -1,4 +1,6 @@
-# Exploratory CLI: Server
+---
+title: "Exploratory CLI: Server"
+---
 
 expl server は、exploratory.io に公開されたノート、ダッシュボード、データを、ターミナルから読むコマンドです。
 

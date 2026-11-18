@@ -1,4 +1,7 @@
-# Survival Analysis
+---
+title: "Survival Analysis"
+---
+
 Calculates Survival Curve (Kaplan-Meier estimator) from start time, end time, and survival status.
 
 ## Input Data

@@ -1,4 +1,6 @@
-# Summary of Fit
+---
+title: "Summary of Fit"
+---
 
 ## How to Access This Feature
 

@@ -1,4 +1,6 @@
-# Marker Type
+---
+title: "Marker Type"
+---
 
 In Line and Scatter (No Aggregation) charts, you can change the marker type for each Y-Axis from the Marker Setting dialog. You can access the dialog by selecting `Marker` menu from Y-Axis property dropdown.
 

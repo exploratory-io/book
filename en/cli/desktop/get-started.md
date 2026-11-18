@@ -1,4 +1,6 @@
-# Get started
+---
+title: "Get started"
+---
 
 Turn on the CLI in Exploratory Desktop, connect expl, and look at the data in your project. Do the steps below in order and you get your first result on this one page.
 

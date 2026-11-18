@@ -1,4 +1,6 @@
-# データを取り込む・加工する
+---
+title: "データを取り込む・加工する"
+---
 
 データをデータフレームとしてプロジェクトに取り込み、列を確認し、加工のステップを追加します。
 
@@ -56,7 +58,7 @@ expl dataframe get-command --command filter
 expl dataframe apply-step <dataframe_id> --command <command> --params @params.json
 ```
 
-\<command\> は、get-command で調べたコマンド名に置き換え、params.json には、返ってきた名前で設定を書きます。ステップは、1 回に 1 つの操作ずつ追加します。R で実行できなかったステップは取り消されます。--save-with-error を付けると、エラーのステップとして残します。既存のステップの前後に入れるときは、--insert-position '{"side":"after","stepName":"<ステップ名>"}' を渡します。付けないと、最後に追加します。
+\<command\> は、get-command で調べたコマンド名に置き換え、params.json には、返ってきた名前で設定を書きます。ステップは、1 回に 1 つの操作ずつ追加します。R で実行できなかったステップは取り消されます。--save-with-error を付けると、エラーのステップとして残します。既存のステップの前後に入れるときは、--insert-position '\{"side":"after","stepName":"\<ステップ名>"\}' を渡します。付けないと、最後に追加します。
 
 expl dataframe preview-steps は、一時的なオブジェクトで変更を試し、保存せずに結果を表示します。引数は expl dataframe preview-steps --help で確認します。
 

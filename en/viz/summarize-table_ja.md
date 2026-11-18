@@ -1,4 +1,6 @@
-# Summarize Table 
+---
+title: "Summarize Table"
+---
 
 ![](images/stable1.png)
 

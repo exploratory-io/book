@@ -1,4 +1,6 @@
-# Survival Analysis - Cox Regression / Proportional Hazard
+---
+title: "Survival Analysis - Cox Regression / Proportional Hazard"
+---
 
 With Cox Proportional Hazard Model, you can predict how particular type of subjects would survive as time goes by, based on the survival data from the past.
 

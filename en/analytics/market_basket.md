@@ -1,4 +1,6 @@
-# Market Basket Analysis Analytics View
+---
+title: "Market Basket Analysis Analytics View"
+---
 
 Find rules of what tend to occur at the same time from transaction data.
 

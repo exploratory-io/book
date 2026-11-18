@@ -1,4 +1,6 @@
-# Keyboard shortcuts
+---
+title: "Keyboard shortcuts"
+---
 
 * Add a new step in Command Line : Cmd + N / Ctr + N
 

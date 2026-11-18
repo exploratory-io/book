@@ -1,4 +1,6 @@
-# Data and permissions
+---
+title: "Data and permissions"
+---
 
 What is sent and what is recorded when you use expl server.
 

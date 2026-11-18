@@ -1,4 +1,6 @@
-# Exploratory Documentation
+---
+title: "Exploratory Documentation"
+---
 
 Exploratory is a data analysis tool. Exploratory Desktop is a desktop application for extracting data, wrangling data, visualizing data, running statistical and machine learning algorithms, and communicating insights with others via Dashboard and Note. It uses R as its backend, so you can use many capabilities of R without programming. You can publish your work to Exploratory Server at exploratory.io.
 

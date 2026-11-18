@@ -1,4 +1,6 @@
-# Predict Data - Binary
+---
+title: "Predict Data - Binary"
+---
 
 ## How to Access This Feature
 

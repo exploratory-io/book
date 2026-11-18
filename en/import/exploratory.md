@@ -1,4 +1,6 @@
-# Import Exploratory (EDF) File Data
+---
+title: "Import Exploratory (EDF) File Data"
+---
 
 You can import local Exploratory (EDF) File Data.
 

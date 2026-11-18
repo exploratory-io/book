@@ -1,4 +1,6 @@
-# Neo4j Database Data Import
+---
+title: "Neo4j Database Data Import"
+---
 
 You can quickly import data from your Neo4j Database into Exploratory.
 

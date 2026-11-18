@@ -1,4 +1,6 @@
-# Choose a project
+---
+title: "Choose a project"
+---
 
 A command that needs a project works on one project. Which one is decided in a fixed order.
 

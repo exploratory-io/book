@@ -1,4 +1,6 @@
-# Color setting
+---
+title: "Color setting"
+---
 
 You can update the color setting from the Color setting dialog.
 ## How to Open

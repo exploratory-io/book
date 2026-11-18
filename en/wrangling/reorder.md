@@ -1,4 +1,7 @@
-# Reorder Columns
+---
+title: "Reorder Columns"
+---
+
 Reoder column(s) by drag and drop.
 
 ## How to Access This Feature

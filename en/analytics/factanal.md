@@ -1,4 +1,6 @@
-# Factor Analysis
+---
+title: "Factor Analysis"
+---
 
 Runs factor analysis, which tries to explain number of variables as observable results of potentially lower number of unobserved variables, called factors.
 

@@ -1,4 +1,6 @@
-# Predict Data
+---
+title: "Predict Data"
+---
 
 ## How to Access This Feature
 

@@ -1,4 +1,6 @@
-# Summarize (Aggregate)
+---
+title: "Summarize (Aggregate)"
+---
 
 ## How to Access This Feature
 

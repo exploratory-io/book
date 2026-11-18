@@ -1,4 +1,6 @@
-# Note
+---
+title: "Note"
+---
 
 ## An Introduction to Note with Simple Markdown Editor
 

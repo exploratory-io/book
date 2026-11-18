@@ -1,4 +1,6 @@
-# Setting Color for Chart
+---
+title: "Setting Color for Chart"
+---
 
 Coming soon!
 

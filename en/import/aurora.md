@@ -1,4 +1,6 @@
-# Aurora Data Import
+---
+title: "Aurora Data Import"
+---
 
 You can quickly import data from your Amazon Aurora Database into Exploratory.
 

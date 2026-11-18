@@ -1,3 +1,7 @@
+---
+title: "Map with GeoJSON"
+---
+
 ### Map with GeoJSON
 
 You can bring your own GeoJSON files to visualize your geographical data in a very flexible way with Exploratory. If you don't have GeoJSON, take a look at our [map gallery page](https://exploratory.io/map), you might find maps that are  useful for you. (if you have a particular map you are looking for or ESRI Shape files you want to convert to GeoJSON, let us know at support@exploratory.io)

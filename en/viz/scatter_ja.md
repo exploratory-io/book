@@ -1,3 +1,7 @@
+---
+title: "Scatter (No Aggregation) Chart"
+---
+
 ## Scatter (No Aggregation) Chart
 
 ![](images/scatter.png)

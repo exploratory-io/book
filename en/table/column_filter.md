@@ -1,4 +1,6 @@
-# Column Filter
+---
+title: "Column Filter"
+---
 
 You can filter the columns by the condition on Summary View and Table View. You can define the condition from the "Columns" button at the top. The condition can be shared among the Summary View and Table View.
 
