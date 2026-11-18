@@ -32,7 +32,7 @@ To import, pass a name and an R script that returns the whole data frame. @file 
 expl dataframe create-source --data-frame-name "Sales Orders" --r-script @import.R
 ```
 
-import.R is a script whose last value is the data.frame, for example readr::read_csv("./sales_orders.csv"). To import from a data source plugin instead of a script, pass `--source` with a JSON object that has type, connection_id and params. For a database, run expl dataframe get-source-params to see what the plugin takes. To import a catalog item, the source types are local_catalog (params.item_id) and server_catalog (params.url).
+import.R is a script whose last value is the data.frame, for example `readr::read_csv("./sales_orders.csv")`. To import from a data source plugin instead of a script, pass `--source` with a JSON object that has type, connection_id and params. For a database, run expl dataframe get-source-params to see what the plugin takes. To import a catalog item, the source types are local_catalog (params.item_id) and server_catalog (params.url).
 
 ### 2. Look at the data frame
 
@@ -58,7 +58,7 @@ Then add one step. `--command` is the operation, and `--params` is a JSON object
 expl dataframe apply-step <dataframe_id> --command <command> --params @params.json
 ```
 
-Replace \<command\> with a command name from get-command, and write params.json with the names it returned. Add one step per operation, not several at once. If R cannot run the step, it is rolled back; `--save-with-error` keeps it as an error step. To insert a step before or after an existing one, pass `--insert-position` '\{"side":"after","stepName":"\<step name>"\}'; without it the step is added at the end.
+Replace \<command\> with a command name from get-command, and write params.json with the names it returned. Add one step per operation, not several at once. If R cannot run the step, it is rolled back; `--save-with-error` keeps it as an error step. To insert a step before or after an existing one, pass `--insert-position` '`{"side":"after","stepName":"<step name>"}`'; without it the step is added at the end.
 
 expl dataframe preview-steps tries changes on temporary objects and shows the effect without saving. Its arguments are in `expl dataframe preview-steps --help`.
 
@@ -84,7 +84,7 @@ If you want the AI to write the R for a request, use `expl dataframe ai-wrangle 
 | A step does not apply | Check the names with expl dataframe get-command, and use the column names of get-schema. |
 | Exit code 2 without a prompt | The command needs confirmation and is not in a terminal. Add `--yes` after you have checked it. |
 
-For the arguments of any command, run expl \<command\> `--help` or expl tools describe "\<command\>".
+For the arguments of any command, run `expl <command> --help` or `expl tools describe "<command>"`.
 
 <a id="related"></a>
 

@@ -24,11 +24,11 @@ Create a chart from a data frame, check its numbers and image, and change it.
 expl chart list-settings --marker bar
 ```
 
-`--setting` \<name\> looks up one setting exactly, and `--search` \<part of a name\> narrows by part of a name. Do not guess setting names; only the names returned here work.
+`--setting <name>` looks up one setting exactly, and `--search <part of a name>` narrows by part of a name. Do not guess setting names; only the names returned here work.
 
 ### 2. Create the chart
 
-`--marker` and `--axes` are required. `--axes` is a JSON object that puts a column in each slot, with the slot name as the key. The slots of bar and line charts are x, y, color and facet; those of a pivot table are rowh, colh and meas. The value is a column name, or \{"column": "...", "func": "sum"\} to choose the aggregation.
+`--marker` and `--axes` are required. `--axes` is a JSON object that puts a column in each slot, with the slot name as the key. The slots of bar and line charts are x, y, color and facet; those of a pivot table are rowh, colh and meas. The value is a column name, or `{"column": "...", "func": "sum"}` to choose the aggregation.
 
 ```sh
 expl chart add --data-frame-id <dataframe_id> --marker bar --axes '{"x":"order_date","y":{"column":"sales","func":"sum"}}' --title "Monthly Sales"
@@ -64,11 +64,11 @@ expl chart edit <chart_id> --marker line --title "Monthly Sales Trend"
 | What you see | What to do |
 | --- | --- |
 | PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](/en/cli/desktop/exit-codes). |
-| NO_DATA_FRAME | Add `--data-frame-id` \<dataframe_id\>. |
+| NO_DATA_FRAME | Add `--data-frame-id <dataframe_id>`. |
 | INVALID_ARGUMENT | A setting name or value is wrong. Look it up again with expl chart list-settings. |
 | The chart is empty or has the wrong columns | Check the column names against expl dataframe get-schema, character for character. |
 
-For the arguments of any command, run expl \<command\> `--help` or expl tools describe "\<command\>".
+For the arguments of any command, run `expl <command> --help` or `expl tools describe "<command>"`.
 
 <a id="related"></a>
 

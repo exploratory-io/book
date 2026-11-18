@@ -46,7 +46,7 @@ Write slots.json with the slot names that get-template returned and the column n
 {"columns": ["Sales", "Ad Spend", "Visitors"]}
 ```
 
-Settings go in settings.json in the same way, for example \{"cor_method": "spearman"\}. Other types have other slot and setting names, so copy them from get-template. The command creates the analytics and runs it. The result carries the id (analyticsId) and the state of each output.
+Settings go in settings.json in the same way, for example `{"cor_method": "spearman"}`. Other types have other slot and setting names, so copy them from get-template. The command creates the analytics and runs it. The result carries the id (analyticsId) and the state of each output.
 
 ### 4. Read the result
 
@@ -72,11 +72,11 @@ Pass only what changes: `--slots`, `--settings`, `--title`, `--analysis-type` an
 | What you see | What to do |
 | --- | --- |
 | PERMISSION_DENIED | Turn on Allow create, edit and delete in the system settings. See [Exit codes and errors](/en/cli/desktop/exit-codes). |
-| NO_DATA_FRAME | Add `--data-frame-id` \<dataframe_id\>. |
+| NO_DATA_FRAME | Add `--data-frame-id <dataframe_id>`. |
 | An unknown name is rejected | Look up the slot or setting name again with expl analytics get-template. |
 | The slots are empty | Analytics cannot be created without columns in its slots. |
 
-For the arguments of any command, run expl \<command\> `--help` or expl tools describe "\<command\>".
+For the arguments of any command, run `expl <command> --help` or `expl tools describe "<command>"`.
 
 <a id="related"></a>
 

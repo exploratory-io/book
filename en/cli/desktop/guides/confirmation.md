@@ -22,7 +22,7 @@ An operation with HIGH risk (publishing, deleting and so on) asks first. The RIS
 
 ## Long operations
 
-By default expl waits until the operation finishes and writes progress to standard error. Give `--timeout` \<seconds\> to set an overall limit.
+By default expl waits until the operation finishes and writes progress to standard error. Give `--timeout <seconds>` to set an overall limit.
 
 Without `--timeout`, a call waits up to 120 seconds for the answer, and waiting for a long operation to finish has no overall limit.
 

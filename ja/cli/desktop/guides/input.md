@@ -10,7 +10,7 @@ title: "引数と JSON を渡す"
 
 | 入力の型 | 渡し方 | 例 |
 | --- | --- | --- |
-| 文字列、数、選択肢 | `--kebab-case` \<値\> または `--kebab-case=<値>` | `--title "Sales 2026"` |
+| 文字列、数、選択肢 | `--kebab-case <値>` または `--kebab-case=<値>` | `--title "Sales 2026"` |
 | 真偽値 | `--flag` または `--no-flag` | `--include-data` |
 | 値の配列 | フラグを繰り返す | `--tag` sales `--tag` weekly |
 | オブジェクト、オブジェクトの配列 | JSON 文字列、または @ファイル | `--pages @pages.json` |

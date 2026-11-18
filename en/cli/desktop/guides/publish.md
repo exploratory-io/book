@@ -33,7 +33,7 @@ expl note publish <note_id>
 expl dashboard publish <dashboard_id>
 ```
 
-`--tags` adds tags (repeat the flag for several), `--team` \<team name\> sets the team on the first publication, and `--change-description` writes the comment of a republication. Publishing again updates the same URL.
+`--tags` adds tags (repeat the flag for several), `--team <team name>` sets the team on the first publication, and `--change-description` writes the comment of a republication. Publishing again updates the same URL.
 
 ```sh
 expl note publish <note_id> --tags sales --tags weekly --team <team name> --yes
@@ -73,7 +73,7 @@ expl published unpublish <id>
 | No rendered output | Open the dashboard once in Desktop, then run the command again. |
 | The team is not found | Use a name from expl team list. |
 
-For the arguments of any command, run expl \<command\> `--help` or expl tools describe "\<command\>".
+For the arguments of any command, run `expl <command> --help` or `expl tools describe "<command>"`.
 
 <a id="related"></a>
 

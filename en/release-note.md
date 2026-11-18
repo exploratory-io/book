@@ -1918,7 +1918,7 @@ Released on 7/28/2025.
 
 ### Bug Fixes
 
-* Data Source: S3: Fixed an error "Error in z[["Owner"]][["ID"]] : subscript out of bounds" when importing data.
+* Data Source: S3: Fixed an error "Error in z[`["Owner"]`][`["ID"]`] : subscript out of bounds" when importing data.
 * Data Source: MongoDB: Column data types were different from Desktop after scheduled data refreshed on server.
 
 

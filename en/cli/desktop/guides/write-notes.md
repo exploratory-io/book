@@ -70,7 +70,7 @@ get returns the Markdown body, the folder and the dependencies. get-image return
 | NOTE_NOT_FOUND | The id is wrong. Copy it from expl note list. |
 | A figure is blank | The embed tag has a wrong id, or is not on a line of its own. |
 
-For the arguments of any command, run expl \<command\> `--help` or expl tools describe "\<command\>".
+For the arguments of any command, run `expl <command> --help` or `expl tools describe "<command>"`.
 
 <a id="related"></a>
 

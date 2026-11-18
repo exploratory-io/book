@@ -22,7 +22,7 @@ Write the search words right after the command. `--scope` all searches content t
 expl server search "Sales Orders" --scope all --type data
 ```
 
-`--type` takes all, note, dashboard, slide, chart, analytics or data. `--scope` takes all, mine, shared or team (with `--scope` team, add `--team` \<team name\>). `--semantic` searches by meaning instead of by keyword. `--json` prints the result as JSON.
+`--type` takes all, note, dashboard, slide, chart, analytics or data. `--scope` takes all, mine, shared or team (with `--scope` team, add `--team <team name>`). `--semantic` searches by meaning instead of by keyword. `--json` prints the result as JSON.
 
 The result is a table of id, title, URL, type and description. An empty result means nothing matched; it is not a sign-in error.
 
@@ -66,7 +66,7 @@ To read a note, its charts and its analytics, see [Read notes](/en/cli/server/gu
 | A sign-in error | Run expl server login. See [Sign in](/en/cli/server/login). |
 | The id is not found | Use the id of the search result as it is. A similar title is not the same item. |
 
-For the arguments of a command, run expl server \<command\> `--help`.
+For the arguments of a command, run `expl server <command> --help`.
 
 <a id="related"></a>
 

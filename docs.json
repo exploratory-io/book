@@ -3330,6 +3330,1694 @@
     {
       "source": "/cli/:slug*",
       "destination": "/en/cli/:slug*"
+    },
+    {
+      "source": "/en/product-features/summary",
+      "destination": "/en/summary/summary"
+    },
+    {
+      "source": "/en/product-features/table",
+      "destination": "/en/table"
+    },
+    {
+      "source": "/en/product-features/row_filter",
+      "destination": "/en/table/row_filter"
+    },
+    {
+      "source": "/en/product-features/column_filter",
+      "destination": "/en/table/column_filter"
+    },
+    {
+      "source": "/en/product-features/markdown-dashboard",
+      "destination": "/en/markdown/markdown-dashboard"
+    },
+    {
+      "source": "/en/product-features/markdown-note",
+      "destination": "/en/markdown/markdown-note"
+    },
+    {
+      "source": "/en/product-features/steps",
+      "destination": "/en/steps"
+    },
+    {
+      "source": "/en/product-features/branch",
+      "destination": "/en/branch"
+    },
+    {
+      "source": "/en/product-features/parameter",
+      "destination": "/en/parameter"
+    },
+    {
+      "source": "/en/product-features/export",
+      "destination": "/en/export"
+    },
+    {
+      "source": "/en/product-features/share",
+      "destination": "/en/share"
+    },
+    {
+      "source": "/en/product-features/share/share_type",
+      "destination": "/en/share/share_type"
+    },
+    {
+      "source": "/product-features/share/chart",
+      "destination": "/en/share/chart"
+    },
+    {
+      "source": "/en/product-features/share/chart",
+      "destination": "/en/share/chart"
+    },
+    {
+      "source": "/product-features/share/data",
+      "destination": "/en/share/data"
+    },
+    {
+      "source": "/en/product-features/share/data",
+      "destination": "/en/share/data"
+    },
+    {
+      "source": "/product-features/share/note",
+      "destination": "/en/share/note"
+    },
+    {
+      "source": "/en/product-features/share/note",
+      "destination": "/en/share/note"
+    },
+    {
+      "source": "/product-features/share/notification",
+      "destination": "/en/share/notification"
+    },
+    {
+      "source": "/en/product-features/share/notification",
+      "destination": "/en/share/notification"
+    },
+    {
+      "source": "/en/product-features/share/version-history",
+      "destination": "/en/share/version-history"
+    },
+    {
+      "source": "/en/product-features/share/restore",
+      "destination": "/en/share/restore"
+    },
+    {
+      "source": "/en/product-features/share/csvapi",
+      "destination": "/en/share/csvapi"
+    },
+    {
+      "source": "/en/product-features/schedule",
+      "destination": "/en/schedule"
+    },
+    {
+      "source": "/en/product-features/schedule/manage",
+      "destination": "/en/schedule/manage"
+    },
+    {
+      "source": "/product-features/schedule/notification",
+      "destination": "/en/schedule/notification"
+    },
+    {
+      "source": "/en/product-features/schedule/notification",
+      "destination": "/en/schedule/notification"
+    },
+    {
+      "source": "/en/product-features/schedule/history",
+      "destination": "/en/schedule/history"
+    },
+    {
+      "source": "/en/product-features/team",
+      "destination": "/en/team"
+    },
+    {
+      "source": "/en/product-features/team/manage",
+      "destination": "/en/team/manage"
+    },
+    {
+      "source": "/en/product-features/project",
+      "destination": "/en/project"
+    },
+    {
+      "source": "/product-features/project/import",
+      "destination": "/en/project/import"
+    },
+    {
+      "source": "/en/product-features/project/import",
+      "destination": "/en/project/import"
+    },
+    {
+      "source": "/product-features/project/export",
+      "destination": "/en/project/export"
+    },
+    {
+      "source": "/en/product-features/project/export",
+      "destination": "/en/project/export"
+    },
+    {
+      "source": "/product-features/project/search",
+      "destination": "/en/project/search"
+    },
+    {
+      "source": "/en/product-features/project/search",
+      "destination": "/en/project/search"
+    },
+    {
+      "source": "/ai/ai-promtpt-function-en",
+      "destination": "/en/ai/ai-promtpt-function-en"
+    },
+    {
+      "source": "/en/data_import/file-data",
+      "destination": "/en/file-data"
+    },
+    {
+      "source": "/en/data_import/file-data/csv",
+      "destination": "/en/import/csv"
+    },
+    {
+      "source": "/en/data_import/file-data/s3",
+      "destination": "/en/import/s3"
+    },
+    {
+      "source": "/en/data_import/file-data/google-drive",
+      "destination": "/en/import/google-drive"
+    },
+    {
+      "source": "/data_import/file-data/google-cloud-storage",
+      "destination": "/en/import/google-cloud-storage"
+    },
+    {
+      "source": "/en/data_import/file-data/google-cloud-storage",
+      "destination": "/en/import/google-cloud-storage"
+    },
+    {
+      "source": "/en/data_import/file-data/excel",
+      "destination": "/en/import/excel"
+    },
+    {
+      "source": "/data_import/file-data/json",
+      "destination": "/en/import/json"
+    },
+    {
+      "source": "/en/data_import/file-data/json",
+      "destination": "/en/import/json"
+    },
+    {
+      "source": "/data_import/file-data/log",
+      "destination": "/en/import/log"
+    },
+    {
+      "source": "/en/data_import/file-data/log",
+      "destination": "/en/import/log"
+    },
+    {
+      "source": "/en/data_import/file-data/azure",
+      "destination": "/en/import/azure"
+    },
+    {
+      "source": "/data_import/file-data/stats",
+      "destination": "/en/import/stats"
+    },
+    {
+      "source": "/en/data_import/file-data/stats",
+      "destination": "/en/import/stats"
+    },
+    {
+      "source": "/data_import/file-data/rds",
+      "destination": "/en/import/rds"
+    },
+    {
+      "source": "/en/data_import/file-data/rds",
+      "destination": "/en/import/rds"
+    },
+    {
+      "source": "/en/data_import/file-data/parquet",
+      "destination": "/en/import/parquet"
+    },
+    {
+      "source": "/data_import/file-data/exploratory",
+      "destination": "/en/import/exploratory"
+    },
+    {
+      "source": "/en/data_import/file-data/exploratory",
+      "destination": "/en/import/exploratory"
+    },
+    {
+      "source": "/en/data_import/database-data",
+      "destination": "/en/database-data"
+    },
+    {
+      "source": "/en/data_import/database-data/connection.html",
+      "destination": "/en/import/connection.html"
+    },
+    {
+      "source": "/data_import/database-data/athena",
+      "destination": "/en/import/athena"
+    },
+    {
+      "source": "/en/data_import/database-data/athena",
+      "destination": "/en/import/athena"
+    },
+    {
+      "source": "/data_import/database-data/aurora",
+      "destination": "/en/import/aurora"
+    },
+    {
+      "source": "/en/data_import/database-data/aurora",
+      "destination": "/en/import/aurora"
+    },
+    {
+      "source": "/data_import/database-data/redshift",
+      "destination": "/en/import/redshift"
+    },
+    {
+      "source": "/en/data_import/database-data/redshift",
+      "destination": "/en/import/redshift"
+    },
+    {
+      "source": "/en/data_import/database-data/google-bigquery",
+      "destination": "/en/import/google-bigquery"
+    },
+    {
+      "source": "/data_import/database-data/hp-vertica",
+      "destination": "/en/import/hp-vertica"
+    },
+    {
+      "source": "/en/data_import/database-data/hp-vertica",
+      "destination": "/en/import/hp-vertica"
+    },
+    {
+      "source": "/en/data_import/database-data/mysql",
+      "destination": "/en/import/mysql"
+    },
+    {
+      "source": "/data_import/database-data/access",
+      "destination": "/en/import/access"
+    },
+    {
+      "source": "/en/data_import/database-data/access",
+      "destination": "/en/import/access"
+    },
+    {
+      "source": "/data_import/database-data/mongodb",
+      "destination": "/en/import/mongodb"
+    },
+    {
+      "source": "/en/data_import/database-data/mongodb",
+      "destination": "/en/import/mongodb"
+    },
+    {
+      "source": "/data_import/database-data/odbc",
+      "destination": "/en/import/odbc"
+    },
+    {
+      "source": "/en/data_import/database-data/odbc",
+      "destination": "/en/import/odbc"
+    },
+    {
+      "source": "/en/data_import/database-data/oracle",
+      "destination": "/en/import/oracle"
+    },
+    {
+      "source": "/data_import/database-data/oracle-oci",
+      "destination": "/en/import/oracle-oci"
+    },
+    {
+      "source": "/en/data_import/database-data/oracle-oci",
+      "destination": "/en/import/oracle-oci"
+    },
+    {
+      "source": "/en/data_import/database-data/postgresql",
+      "destination": "/en/import/postgresql"
+    },
+    {
+      "source": "/data_import/database-data/presto",
+      "destination": "/en/import/presto"
+    },
+    {
+      "source": "/en/data_import/database-data/presto",
+      "destination": "/en/import/presto"
+    },
+    {
+      "source": "/en/data_import/database-data/snowflake",
+      "destination": "/en/import/snowflake"
+    },
+    {
+      "source": "/data_import/database-data/sqlserver",
+      "destination": "/en/import/sqlserver"
+    },
+    {
+      "source": "/en/data_import/database-data/sqlserver",
+      "destination": "/en/import/sqlserver"
+    },
+    {
+      "source": "/en/data_import/database-data/mssqlserver",
+      "destination": "/en/import/mssqlserver"
+    },
+    {
+      "source": "/data_import/database-data/teradata",
+      "destination": "/en/import/teradata"
+    },
+    {
+      "source": "/en/data_import/database-data/teradata",
+      "destination": "/en/import/teradata"
+    },
+    {
+      "source": "/data_import/database-data/treasuredata",
+      "destination": "/en/import/treasuredata"
+    },
+    {
+      "source": "/en/data_import/database-data/treasuredata",
+      "destination": "/en/import/treasuredata"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data",
+      "destination": "/en/cloud-apps-data"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/connection-cloud-apps",
+      "destination": "/en/import/connection-cloud-apps"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/connection-cloud-apps",
+      "destination": "/en/import/connection-cloud-apps"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/fred",
+      "destination": "/en/import/fred"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/github",
+      "destination": "/en/import/github"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/github",
+      "destination": "/en/import/github"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/google-analytics",
+      "destination": "/en/import/google-analytics"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/google-analytics",
+      "destination": "/en/import/google-analytics"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/google-sheet",
+      "destination": "/en/import/google-sheet"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/google-sheet",
+      "destination": "/en/import/google-sheet"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/salesforce",
+      "destination": "/en/import/salesforce"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/twitter",
+      "destination": "/en/import/twitter"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/twitter",
+      "destination": "/en/import/twitter"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/stripe",
+      "destination": "/en/import/stripe"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/stripe",
+      "destination": "/en/import/stripe"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/weather",
+      "destination": "/en/import/weather"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/weather",
+      "destination": "/en/import/weather"
+    },
+    {
+      "source": "/data_import/cloud-apps-data/stock-price",
+      "destination": "/en/import/stock-price"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/stock-price",
+      "destination": "/en/import/stock-price"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/reinfolib",
+      "destination": "/en/import/reinfolib"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/estat",
+      "destination": "/en/import/estat"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/edinet",
+      "destination": "/en/import/edinet"
+    },
+    {
+      "source": "/en/data_import/cloud-apps-data/api",
+      "destination": "/en/import/api"
+    },
+    {
+      "source": "/en/data_import/r-script-data",
+      "destination": "/en/import/r-script-data"
+    },
+    {
+      "source": "/data_import/r-script-data/currency",
+      "destination": "/en/import/currency"
+    },
+    {
+      "source": "/en/data_import/r-script-data/currency",
+      "destination": "/en/import/currency"
+    },
+    {
+      "source": "/en/data_import/web-scraping",
+      "destination": "/en/import/web-scraping"
+    },
+    {
+      "source": "/en/data_import/free-input-text",
+      "destination": "/en/import/free-input-text"
+    },
+    {
+      "source": "/en/data_import/extensions",
+      "destination": "/en/import/extensions"
+    },
+    {
+      "source": "/data_import/extensions/quandl",
+      "destination": "/en/import/quandl"
+    },
+    {
+      "source": "/en/data_import/extensions/quandl",
+      "destination": "/en/import/quandl"
+    },
+    {
+      "source": "/data_import/extensions/holiday",
+      "destination": "/en/import/holiday"
+    },
+    {
+      "source": "/en/data_import/extensions/holiday",
+      "destination": "/en/import/holiday"
+    },
+    {
+      "source": "/data_import/extensions/tidyrss",
+      "destination": "/en/import/tidyrss"
+    },
+    {
+      "source": "/en/data_import/extensions/tidyrss",
+      "destination": "/en/import/tidyrss"
+    },
+    {
+      "source": "/en/data_import/user-defined-plugin",
+      "destination": "/en/import/user-defined-plugin"
+    },
+    {
+      "source": "/data-wrangling/command-mode",
+      "destination": "/en/wrangling/command-mode"
+    },
+    {
+      "source": "/en/data-wrangling/command-mode",
+      "destination": "/en/wrangling/command-mode"
+    },
+    {
+      "source": "/data-wrangling/select",
+      "destination": "/en/wrangling/select"
+    },
+    {
+      "source": "/en/data-wrangling/select",
+      "destination": "/en/wrangling/select"
+    },
+    {
+      "source": "/data-wrangling/reorder",
+      "destination": "/en/wrangling/reorder"
+    },
+    {
+      "source": "/en/data-wrangling/reorder",
+      "destination": "/en/wrangling/reorder"
+    },
+    {
+      "source": "/en/data-wrangling/mutate",
+      "destination": "/en/wrangling/mutate"
+    },
+    {
+      "source": "/data-wrangling/mutate_at",
+      "destination": "/en/wrangling/mutate_at"
+    },
+    {
+      "source": "/en/data-wrangling/mutate_at",
+      "destination": "/en/wrangling/mutate_at"
+    },
+    {
+      "source": "/data-wrangling/summarize",
+      "destination": "/en/wrangling/summarize"
+    },
+    {
+      "source": "/en/data-wrangling/summarize",
+      "destination": "/en/wrangling/summarize"
+    },
+    {
+      "source": "/data-wrangling/group",
+      "destination": "/en/wrangling/group"
+    },
+    {
+      "source": "/en/data-wrangling/group",
+      "destination": "/en/wrangling/group"
+    },
+    {
+      "source": "/en/data-wrangling/filter",
+      "destination": "/en/wrangling/filter"
+    },
+    {
+      "source": "/data-wrangling/rename",
+      "destination": "/en/wrangling/rename"
+    },
+    {
+      "source": "/en/data-wrangling/rename",
+      "destination": "/en/wrangling/rename"
+    },
+    {
+      "source": "/en/data-wrangling/arrange",
+      "destination": "/en/wrangling/arrange"
+    },
+    {
+      "source": "/data-wrangling/top_n",
+      "destination": "/en/wrangling/top_n"
+    },
+    {
+      "source": "/en/data-wrangling/top_n",
+      "destination": "/en/wrangling/top_n"
+    },
+    {
+      "source": "/data-wrangling/join",
+      "destination": "/en/wrangling/join"
+    },
+    {
+      "source": "/en/data-wrangling/join",
+      "destination": "/en/wrangling/join"
+    },
+    {
+      "source": "/data-wrangling/merge",
+      "destination": "/en/wrangling/merge"
+    },
+    {
+      "source": "/en/data-wrangling/merge",
+      "destination": "/en/wrangling/merge"
+    },
+    {
+      "source": "/en/data-wrangling/gather",
+      "destination": "/en/wrangling/gather"
+    },
+    {
+      "source": "/data-wrangling/spread",
+      "destination": "/en/wrangling/spread"
+    },
+    {
+      "source": "/en/data-wrangling/spread",
+      "destination": "/en/wrangling/spread"
+    },
+    {
+      "source": "/en/data-wrangling/pivot",
+      "destination": "/en/wrangling/pivot"
+    },
+    {
+      "source": "/data-wrangling/expand",
+      "destination": "/en/wrangling/expand"
+    },
+    {
+      "source": "/en/data-wrangling/expand",
+      "destination": "/en/wrangling/expand"
+    },
+    {
+      "source": "/data-wrangling/complete",
+      "destination": "/en/wrangling/complete"
+    },
+    {
+      "source": "/en/data-wrangling/complete",
+      "destination": "/en/wrangling/complete"
+    },
+    {
+      "source": "/en/data-wrangling/separate",
+      "destination": "/en/wrangling/separate"
+    },
+    {
+      "source": "/en/data-wrangling/unite",
+      "destination": "/en/wrangling/unite"
+    },
+    {
+      "source": "/en/data-wrangling/bind_rows",
+      "destination": "/en/wrangling/bind_rows"
+    },
+    {
+      "source": "/data-wrangling/bind_columns",
+      "destination": "/en/wrangling/bind_columns"
+    },
+    {
+      "source": "/en/data-wrangling/bind_columns",
+      "destination": "/en/wrangling/bind_columns"
+    },
+    {
+      "source": "/data-wrangling/distinct",
+      "destination": "/en/wrangling/distinct"
+    },
+    {
+      "source": "/en/data-wrangling/distinct",
+      "destination": "/en/wrangling/distinct"
+    },
+    {
+      "source": "/data-wrangling/get_dupes",
+      "destination": "/en/wrangling/get_dupes"
+    },
+    {
+      "source": "/en/data-wrangling/get_dupes",
+      "destination": "/en/wrangling/get_dupes"
+    },
+    {
+      "source": "/data-wrangling/slice",
+      "destination": "/en/wrangling/slice"
+    },
+    {
+      "source": "/en/data-wrangling/slice",
+      "destination": "/en/wrangling/slice"
+    },
+    {
+      "source": "/data-wrangling/drop_na",
+      "destination": "/en/wrangling/drop_na"
+    },
+    {
+      "source": "/en/data-wrangling/drop_na",
+      "destination": "/en/wrangling/drop_na"
+    },
+    {
+      "source": "/data-wrangling/sample",
+      "destination": "/en/wrangling/sample"
+    },
+    {
+      "source": "/en/data-wrangling/sample",
+      "destination": "/en/wrangling/sample"
+    },
+    {
+      "source": "/data-wrangling/impute_na",
+      "destination": "/en/wrangling/impute_na"
+    },
+    {
+      "source": "/en/data-wrangling/impute_na",
+      "destination": "/en/wrangling/impute_na"
+    },
+    {
+      "source": "/en/data-wrangling/fill",
+      "destination": "/en/wrangling/fill"
+    },
+    {
+      "source": "/data-wrangling/buckets",
+      "destination": "/en/wrangling/buckets"
+    },
+    {
+      "source": "/en/data-wrangling/buckets",
+      "destination": "/en/wrangling/buckets"
+    },
+    {
+      "source": "/en/data-wrangling/recode",
+      "destination": "/en/wrangling/recode"
+    },
+    {
+      "source": "/en/data-wrangling/case_when",
+      "destination": "/en/wrangling/case_when"
+    },
+    {
+      "source": "/data-wrangling/categories",
+      "destination": "/en/wrangling/categories"
+    },
+    {
+      "source": "/en/data-wrangling/categories",
+      "destination": "/en/wrangling/categories"
+    },
+    {
+      "source": "/data-wrangling/type-convert",
+      "destination": "/en/wrangling/type-convert"
+    },
+    {
+      "source": "/en/data-wrangling/type-convert",
+      "destination": "/en/wrangling/type-convert"
+    },
+    {
+      "source": "/data-wrangling/row_as_header",
+      "destination": "/en/wrangling/row_as_header"
+    },
+    {
+      "source": "/en/data-wrangling/row_as_header",
+      "destination": "/en/wrangling/row_as_header"
+    },
+    {
+      "source": "/data-wrangling/ungroup",
+      "destination": "/en/wrangling/ungroup"
+    },
+    {
+      "source": "/en/data-wrangling/ungroup",
+      "destination": "/en/wrangling/ungroup"
+    },
+    {
+      "source": "/data-wrangling/unnest",
+      "destination": "/en/wrangling/unnest"
+    },
+    {
+      "source": "/en/data-wrangling/unnest",
+      "destination": "/en/wrangling/unnest"
+    },
+    {
+      "source": "/data-wrangling/unnest_wider",
+      "destination": "/en/wrangling/unnest_wider"
+    },
+    {
+      "source": "/en/data-wrangling/unnest_wider",
+      "destination": "/en/wrangling/unnest_wider"
+    },
+    {
+      "source": "/data-wrangling/unnest_longer",
+      "destination": "/en/wrangling/unnest_longer"
+    },
+    {
+      "source": "/en/data-wrangling/unnest_longer",
+      "destination": "/en/wrangling/unnest_longer"
+    },
+    {
+      "source": "/en/data-wrangling/separate-japanese-address",
+      "destination": "/en/wrangling/separate-japanese-address"
+    },
+    {
+      "source": "/data-wrangling/hoist",
+      "destination": "/en/wrangling/hoist"
+    },
+    {
+      "source": "/en/data-wrangling/hoist",
+      "destination": "/en/wrangling/hoist"
+    },
+    {
+      "source": "/data-wrangling/remove_empty_rows",
+      "destination": "/en/wrangling/remove_empty_rows"
+    },
+    {
+      "source": "/en/data-wrangling/remove_empty_rows",
+      "destination": "/en/wrangling/remove_empty_rows"
+    },
+    {
+      "source": "/data-wrangling/remove_empty_cols",
+      "destination": "/en/wrangling/remove_empty_cols"
+    },
+    {
+      "source": "/en/data-wrangling/remove_empty_cols",
+      "destination": "/en/wrangling/remove_empty_cols"
+    },
+    {
+      "source": "/data-wrangling/clean_names",
+      "destination": "/en/wrangling/clean_names"
+    },
+    {
+      "source": "/en/data-wrangling/clean_names",
+      "destination": "/en/wrangling/clean_names"
+    },
+    {
+      "source": "/en/data-wrangling/window-calculation",
+      "destination": "/en/wrangling/window-calculation"
+    },
+    {
+      "source": "/data-wrangling/add_row",
+      "destination": "/en/wrangling/add_row"
+    },
+    {
+      "source": "/en/data-wrangling/add_row",
+      "destination": "/en/wrangling/add_row"
+    },
+    {
+      "source": "/en/data-wrangling/text_wrangling",
+      "destination": "/en/wrangling/text_wrangling"
+    },
+    {
+      "source": "/en/data-wrangling/regular_expression",
+      "destination": "/en/wrangling/regular_expression"
+    },
+    {
+      "source": "/en/visualization/types/pivot",
+      "destination": "/en/viz/pivot"
+    },
+    {
+      "source": "/en/visualization/types/summarize-table",
+      "destination": "/en/viz/summarize-table"
+    },
+    {
+      "source": "/en/visualization/types/table",
+      "destination": "/en/viz/table"
+    },
+    {
+      "source": "/en/visualization/types/bar",
+      "destination": "/en/viz/bar"
+    },
+    {
+      "source": "/en/visualization/types/line",
+      "destination": "/en/viz/line"
+    },
+    {
+      "source": "/en/visualization/types/area",
+      "destination": "/en/viz/area"
+    },
+    {
+      "source": "/en/visualization/types/pie",
+      "destination": "/en/viz/pie"
+    },
+    {
+      "source": "/en/visualization/types/radar",
+      "destination": "/en/viz/radar"
+    },
+    {
+      "source": "/en/visualization/types/hist",
+      "destination": "/en/viz/hist"
+    },
+    {
+      "source": "/en/visualization/types/densityplot",
+      "destination": "/en/viz/densityplot"
+    },
+    {
+      "source": "/en/visualization/types/scatter",
+      "destination": "/en/viz/scatter"
+    },
+    {
+      "source": "/en/visualization/types/bubble",
+      "destination": "/en/viz/bubble"
+    },
+    {
+      "source": "/en/visualization/types/boxplot",
+      "destination": "/en/viz/boxplot"
+    },
+    {
+      "source": "/en/visualization/types/violin",
+      "destination": "/en/viz/violin"
+    },
+    {
+      "source": "/en/visualization/types/errbar",
+      "destination": "/en/viz/errbar"
+    },
+    {
+      "source": "/en/visualization/types/errbar-agg",
+      "destination": "/en/viz/errbar-agg"
+    },
+    {
+      "source": "/en/visualization/types/easymap",
+      "destination": "/en/viz/easymap"
+    },
+    {
+      "source": "/en/visualization/types/geojson",
+      "destination": "/en/viz/geojson"
+    },
+    {
+      "source": "/en/visualization/types/map",
+      "destination": "/en/viz/map"
+    },
+    {
+      "source": "/en/visualization/types/maphmap",
+      "destination": "/en/viz/maphmap"
+    },
+    {
+      "source": "/en/visualization/types/heatmap",
+      "destination": "/en/viz/heatmap"
+    },
+    {
+      "source": "/en/visualization/types/contour",
+      "destination": "/en/viz/contour"
+    },
+    {
+      "source": "/en/visualization/types/singlevalue",
+      "destination": "/en/viz/singlevalue"
+    },
+    {
+      "source": "/en/visualization/types/wordcloud",
+      "destination": "/en/viz/wordcloud"
+    },
+    {
+      "source": "/visualization/types/r-custom",
+      "destination": "/en/viz/r-custom"
+    },
+    {
+      "source": "/en/visualization/types/r-custom",
+      "destination": "/en/viz/r-custom"
+    },
+    {
+      "source": "/visualization/features/trend-line",
+      "destination": "/en/viz/trend-line"
+    },
+    {
+      "source": "/en/visualization/features/trend-line",
+      "destination": "/en/viz/trend-line"
+    },
+    {
+      "source": "/visualization/features/reference-line",
+      "destination": "/en/viz/reference-line"
+    },
+    {
+      "source": "/en/visualization/features/reference-line",
+      "destination": "/en/viz/reference-line"
+    },
+    {
+      "source": "/visualization/features/small-multiple",
+      "destination": "/en/viz/small-multiple"
+    },
+    {
+      "source": "/en/visualization/features/small-multiple",
+      "destination": "/en/viz/small-multiple"
+    },
+    {
+      "source": "/visualization/features/window-calc",
+      "destination": "/en/viz/window-calc"
+    },
+    {
+      "source": "/en/visualization/features/window-calc",
+      "destination": "/en/viz/window-calc"
+    },
+    {
+      "source": "/visualization/features/date-aggregate",
+      "destination": "/en/viz/date-aggregate"
+    },
+    {
+      "source": "/en/visualization/features/date-aggregate",
+      "destination": "/en/viz/date-aggregate"
+    },
+    {
+      "source": "/visualization/features/range",
+      "destination": "/en/viz/range"
+    },
+    {
+      "source": "/en/visualization/features/range",
+      "destination": "/en/viz/range"
+    },
+    {
+      "source": "/visualization/features/marker",
+      "destination": "/en/viz/marker"
+    },
+    {
+      "source": "/en/visualization/features/marker",
+      "destination": "/en/viz/marker"
+    },
+    {
+      "source": "/visualization/features/multi-y",
+      "destination": "/en/viz/multi-y"
+    },
+    {
+      "source": "/en/visualization/features/multi-y",
+      "destination": "/en/viz/multi-y"
+    },
+    {
+      "source": "/visualization/features/layout",
+      "destination": "/en/viz/layout"
+    },
+    {
+      "source": "/en/visualization/features/layout",
+      "destination": "/en/viz/layout"
+    },
+    {
+      "source": "/visualization/features/column-configuration",
+      "destination": "/en/viz/column-configuration"
+    },
+    {
+      "source": "/en/visualization/features/column-configuration",
+      "destination": "/en/viz/column-configuration"
+    },
+    {
+      "source": "/visualization/features/column-configuration-dialog",
+      "destination": "/en/viz/column-configuration-dialog"
+    },
+    {
+      "source": "/en/visualization/features/column-configuration-dialog",
+      "destination": "/en/viz/column-configuration-dialog"
+    },
+    {
+      "source": "/en/visualization/features/color",
+      "destination": "/en/viz/color"
+    },
+    {
+      "source": "/visualization/features/color-dialog",
+      "destination": "/en/viz/color-dialog"
+    },
+    {
+      "source": "/en/visualization/features/color-dialog",
+      "destination": "/en/viz/color-dialog"
+    },
+    {
+      "source": "/visualization/features/custom-palette",
+      "destination": "/en/viz/custom-palette"
+    },
+    {
+      "source": "/en/visualization/features/custom-palette",
+      "destination": "/en/viz/custom-palette"
+    },
+    {
+      "source": "/visualization/features/pin",
+      "destination": "/en/viz/pin"
+    },
+    {
+      "source": "/en/visualization/features/pin",
+      "destination": "/en/viz/pin"
+    },
+    {
+      "source": "/visualization/features/save",
+      "destination": "/en/viz/save"
+    },
+    {
+      "source": "/en/visualization/features/save",
+      "destination": "/en/viz/save"
+    },
+    {
+      "source": "/visualization/features/save-as-edf",
+      "destination": "/en/viz/save-as-edf"
+    },
+    {
+      "source": "/en/visualization/features/save-as-edf",
+      "destination": "/en/viz/save-as-edf"
+    },
+    {
+      "source": "/visualization/features/schedule",
+      "destination": "/en/viz/schedule"
+    },
+    {
+      "source": "/en/visualization/features/schedule",
+      "destination": "/en/viz/schedule"
+    },
+    {
+      "source": "/visualization/features/urllink",
+      "destination": "/en/viz/urllink"
+    },
+    {
+      "source": "/en/visualization/features/urllink",
+      "destination": "/en/viz/urllink"
+    },
+    {
+      "source": "/visualization/features/category",
+      "destination": "/en/viz/category"
+    },
+    {
+      "source": "/en/visualization/features/category",
+      "destination": "/en/viz/category"
+    },
+    {
+      "source": "/visualization/features/highlight",
+      "destination": "/en/viz/highlight"
+    },
+    {
+      "source": "/en/visualization/features/highlight",
+      "destination": "/en/viz/highlight"
+    },
+    {
+      "source": "/en/visualization/features/limit",
+      "destination": "/en/viz/limit"
+    },
+    {
+      "source": "/visualization/features/others-group",
+      "destination": "/en/viz/others-group"
+    },
+    {
+      "source": "/en/visualization/features/others-group",
+      "destination": "/en/viz/others-group"
+    },
+    {
+      "source": "/visualization/features/edit-display-name",
+      "destination": "/en/viz/edit-display-name"
+    },
+    {
+      "source": "/en/visualization/features/edit-display-name",
+      "destination": "/en/viz/edit-display-name"
+    },
+    {
+      "source": "/visualization/features/missing-value-handling",
+      "destination": "/en/viz/missing-value-handling"
+    },
+    {
+      "source": "/en/visualization/features/missing-value-handling",
+      "destination": "/en/viz/missing-value-handling"
+    },
+    {
+      "source": "/visualization/features/rename-column-names",
+      "destination": "/en/viz/rename-column-names"
+    },
+    {
+      "source": "/en/visualization/features/rename-column-names",
+      "destination": "/en/viz/rename-column-names"
+    },
+    {
+      "source": "/visualization/features/dualy-setting",
+      "destination": "/en/viz/dualy-setting"
+    },
+    {
+      "source": "/en/visualization/features/dualy-setting",
+      "destination": "/en/viz/dualy-setting"
+    },
+    {
+      "source": "/visualization/features/axis-format",
+      "destination": "/en/viz/axis-format"
+    },
+    {
+      "source": "/en/visualization/features/axis-format",
+      "destination": "/en/viz/axis-format"
+    },
+    {
+      "source": "/visualization/features/show-detail",
+      "destination": "/en/viz/show-detail"
+    },
+    {
+      "source": "/en/visualization/features/show-detail",
+      "destination": "/en/viz/show-detail"
+    },
+    {
+      "source": "/visualization/features/table-fit-to-screen",
+      "destination": "/en/viz/table-fit-to-screen"
+    },
+    {
+      "source": "/en/visualization/features/table-fit-to-screen",
+      "destination": "/en/viz/table-fit-to-screen"
+    },
+    {
+      "source": "/en/visualization/features/number-of-unuque-values-check",
+      "destination": "/en/viz/number-of-unuque-values-check"
+    },
+    {
+      "source": "/statistics/correlation",
+      "destination": "/en/stats/correlation"
+    },
+    {
+      "source": "/en/statistics/correlation",
+      "destination": "/en/stats/correlation"
+    },
+    {
+      "source": "/statistics/dist",
+      "destination": "/en/stats/dist"
+    },
+    {
+      "source": "/en/statistics/dist",
+      "destination": "/en/stats/dist"
+    },
+    {
+      "source": "/statistics/sim",
+      "destination": "/en/stats/sim"
+    },
+    {
+      "source": "/en/statistics/sim",
+      "destination": "/en/stats/sim"
+    },
+    {
+      "source": "/statistics/svd",
+      "destination": "/en/stats/svd"
+    },
+    {
+      "source": "/en/statistics/svd",
+      "destination": "/en/stats/svd"
+    },
+    {
+      "source": "/statistics/mds",
+      "destination": "/en/stats/mds"
+    },
+    {
+      "source": "/en/statistics/mds",
+      "destination": "/en/stats/mds"
+    },
+    {
+      "source": "/statistics/t-test",
+      "destination": "/en/stats/t-test"
+    },
+    {
+      "source": "/en/statistics/t-test",
+      "destination": "/en/stats/t-test"
+    },
+    {
+      "source": "/statistics/f-test",
+      "destination": "/en/stats/f-test"
+    },
+    {
+      "source": "/en/statistics/f-test",
+      "destination": "/en/stats/f-test"
+    },
+    {
+      "source": "/statistics/chi-test",
+      "destination": "/en/stats/chi-test"
+    },
+    {
+      "source": "/en/statistics/chi-test",
+      "destination": "/en/stats/chi-test"
+    },
+    {
+      "source": "/statistics/exp_bayes_ab",
+      "destination": "/en/stats/exp_bayes_ab"
+    },
+    {
+      "source": "/en/statistics/exp_bayes_ab",
+      "destination": "/en/stats/exp_bayes_ab"
+    },
+    {
+      "source": "/machine-learning/linear-regression",
+      "destination": "/en/ml/linear-regression"
+    },
+    {
+      "source": "/en/machine-learning/linear-regression",
+      "destination": "/en/ml/linear-regression"
+    },
+    {
+      "source": "/machine-learning/logistic-regression",
+      "destination": "/en/ml/logistic-regression"
+    },
+    {
+      "source": "/en/machine-learning/logistic-regression",
+      "destination": "/en/ml/logistic-regression"
+    },
+    {
+      "source": "/machine-learning/glm",
+      "destination": "/en/ml/glm"
+    },
+    {
+      "source": "/en/machine-learning/glm",
+      "destination": "/en/ml/glm"
+    },
+    {
+      "source": "/machine-learning/multinom",
+      "destination": "/en/ml/multinom"
+    },
+    {
+      "source": "/en/machine-learning/multinom",
+      "destination": "/en/ml/multinom"
+    },
+    {
+      "source": "/machine-learning/kmeans",
+      "destination": "/en/ml/kmeans"
+    },
+    {
+      "source": "/en/machine-learning/kmeans",
+      "destination": "/en/ml/kmeans"
+    },
+    {
+      "source": "/machine-learning/random-forest",
+      "destination": "/en/ml/random-forest"
+    },
+    {
+      "source": "/en/machine-learning/random-forest",
+      "destination": "/en/ml/random-forest"
+    },
+    {
+      "source": "/machine-learning/xgboost",
+      "destination": "/en/ml/xgboost"
+    },
+    {
+      "source": "/en/machine-learning/xgboost",
+      "destination": "/en/ml/xgboost"
+    },
+    {
+      "source": "/machine-learning/forecasting",
+      "destination": "/en/ml/forecasting"
+    },
+    {
+      "source": "/en/machine-learning/forecasting",
+      "destination": "/en/ml/forecasting"
+    },
+    {
+      "source": "/machine-learning/timeseries_clustering",
+      "destination": "/en/ml/timeseries_clustering"
+    },
+    {
+      "source": "/en/machine-learning/timeseries_clustering",
+      "destination": "/en/ml/timeseries_clustering"
+    },
+    {
+      "source": "/machine-learning/anomaly",
+      "destination": "/en/ml/anomaly"
+    },
+    {
+      "source": "/en/machine-learning/anomaly",
+      "destination": "/en/ml/anomaly"
+    },
+    {
+      "source": "/machine-learning/survival-curv",
+      "destination": "/en/ml/survival-curv"
+    },
+    {
+      "source": "/en/machine-learning/survival-curv",
+      "destination": "/en/ml/survival-curv"
+    },
+    {
+      "source": "/machine-learning/cox-regression",
+      "destination": "/en/ml/cox-regression"
+    },
+    {
+      "source": "/en/machine-learning/cox-regression",
+      "destination": "/en/ml/cox-regression"
+    },
+    {
+      "source": "/machine-learning/arules",
+      "destination": "/en/ml/arules"
+    },
+    {
+      "source": "/en/machine-learning/arules",
+      "destination": "/en/ml/arules"
+    },
+    {
+      "source": "/machine-learning/causal_impact",
+      "destination": "/en/ml/causal_impact"
+    },
+    {
+      "source": "/en/machine-learning/causal_impact",
+      "destination": "/en/ml/causal_impact"
+    },
+    {
+      "source": "/machine-learning/evaluate_regression",
+      "destination": "/en/ml/evaluate_regression"
+    },
+    {
+      "source": "/en/machine-learning/evaluate_regression",
+      "destination": "/en/ml/evaluate_regression"
+    },
+    {
+      "source": "/machine-learning/evaluate_binary",
+      "destination": "/en/ml/evaluate_binary"
+    },
+    {
+      "source": "/en/machine-learning/evaluate_binary",
+      "destination": "/en/ml/evaluate_binary"
+    },
+    {
+      "source": "/machine-learning/do_roc",
+      "destination": "/en/ml/do_roc"
+    },
+    {
+      "source": "/en/machine-learning/do_roc",
+      "destination": "/en/ml/do_roc"
+    },
+    {
+      "source": "/machine-learning/evaluate_multi",
+      "destination": "/en/ml/evaluate_multi"
+    },
+    {
+      "source": "/en/machine-learning/evaluate_multi",
+      "destination": "/en/ml/evaluate_multi"
+    },
+    {
+      "source": "/machine-learning/prediction",
+      "destination": "/en/ml/prediction"
+    },
+    {
+      "source": "/en/machine-learning/prediction",
+      "destination": "/en/ml/prediction"
+    },
+    {
+      "source": "/machine-learning/prediction_binary",
+      "destination": "/en/ml/prediction_binary"
+    },
+    {
+      "source": "/en/machine-learning/prediction_binary",
+      "destination": "/en/ml/prediction_binary"
+    },
+    {
+      "source": "/machine-learning/prediction_coxph",
+      "destination": "/en/ml/prediction_coxph"
+    },
+    {
+      "source": "/en/machine-learning/prediction_coxph",
+      "destination": "/en/ml/prediction_coxph"
+    },
+    {
+      "source": "/machine-learning/prediction_survfit",
+      "destination": "/en/ml/prediction_survfit"
+    },
+    {
+      "source": "/en/machine-learning/prediction_survfit",
+      "destination": "/en/ml/prediction_survfit"
+    },
+    {
+      "source": "/machine-learning/model_stats",
+      "destination": "/en/ml/model_stats"
+    },
+    {
+      "source": "/en/machine-learning/model_stats",
+      "destination": "/en/ml/model_stats"
+    },
+    {
+      "source": "/machine-learning/model_coef",
+      "destination": "/en/ml/model_coef"
+    },
+    {
+      "source": "/en/machine-learning/model_coef",
+      "destination": "/en/ml/model_coef"
+    },
+    {
+      "source": "/machine-learning/model_anova",
+      "destination": "/en/ml/model_anova"
+    },
+    {
+      "source": "/en/machine-learning/model_anova",
+      "destination": "/en/ml/model_anova"
+    },
+    {
+      "source": "/en/machine-learning/smote",
+      "destination": "/en/wrangling/smote"
+    },
+    {
+      "source": "/en/main",
+      "destination": "/en/text/main"
+    },
+    {
+      "source": "/main/do_tokenize",
+      "destination": "/en/text/do_tokenize"
+    },
+    {
+      "source": "/en/main/do_tokenize",
+      "destination": "/en/text/do_tokenize"
+    },
+    {
+      "source": "/en/main/do_ngram",
+      "destination": "/en/text/do_ngram"
+    },
+    {
+      "source": "/main/do_tfidf",
+      "destination": "/en/text/do_tfidf"
+    },
+    {
+      "source": "/en/main/do_tfidf",
+      "destination": "/en/text/do_tfidf"
+    },
+    {
+      "source": "/en/main/pair_count",
+      "destination": "/en/text/pair_count"
+    },
+    {
+      "source": "/extend-with-r/r_package",
+      "destination": "/en/r_package"
+    },
+    {
+      "source": "/en/extend-with-r/r_package",
+      "destination": "/en/r_package"
+    },
+    {
+      "source": "/extend-with-r/r_script",
+      "destination": "/en/r_script"
+    },
+    {
+      "source": "/en/extend-with-r/r_script",
+      "destination": "/en/r_script"
+    },
+    {
+      "source": "/extend-with-r/user-defined-model-function",
+      "destination": "/en/user-defined-model-function"
+    },
+    {
+      "source": "/en/extend-with-r/user-defined-model-function",
+      "destination": "/en/user-defined-model-function"
+    },
+    {
+      "source": "/setup/stopmcafee",
+      "destination": "/en/howto/stopmcafee"
+    },
+    {
+      "source": "/en/setup/stopmcafee",
+      "destination": "/en/howto/stopmcafee"
+    },
+    {
+      "source": "/setup/set_exploratory_home",
+      "destination": "/en/howto/set_exploratory_home"
+    },
+    {
+      "source": "/en/setup/set_exploratory_home",
+      "destination": "/en/howto/set_exploratory_home"
+    },
+    {
+      "source": "/setup/holiday",
+      "destination": "/en/howto/holiday"
+    },
+    {
+      "source": "/en/setup/holiday",
+      "destination": "/en/howto/holiday"
+    },
+    {
+      "source": "/setup/install_errors",
+      "destination": "/en/howto/install_errors"
+    },
+    {
+      "source": "/en/setup/install_errors",
+      "destination": "/en/howto/install_errors"
+    },
+    {
+      "source": "/setup/upgrade_dot_net",
+      "destination": "/en/howto/upgrade_dot_net"
+    },
+    {
+      "source": "/en/setup/upgrade_dot_net",
+      "destination": "/en/howto/upgrade_dot_net"
+    },
+    {
+      "source": "/diagnostics/debug_log",
+      "destination": "/en/debug_log"
+    },
+    {
+      "source": "/en/diagnostics/debug_log",
+      "destination": "/en/debug_log"
+    },
+    {
+      "source": "/diagnostics/startup_log",
+      "destination": "/en/startup_log"
+    },
+    {
+      "source": "/en/diagnostics/startup_log",
+      "destination": "/en/startup_log"
+    },
+    {
+      "source": "/diagnostics/version_check",
+      "destination": "/en/version_check"
+    },
+    {
+      "source": "/en/diagnostics/version_check",
+      "destination": "/en/version_check"
+    },
+    {
+      "source": "/diagnostics/history_error_recovery",
+      "destination": "/en/history_error_recovery"
+    },
+    {
+      "source": "/en/diagnostics/history_error_recovery",
+      "destination": "/en/history_error_recovery"
+    },
+    {
+      "source": "/ja/product-features/markdown-dashboard",
+      "destination": "/ja/markdown/markdown-dashboard"
+    },
+    {
+      "source": "/ja/product-features/markdown-note",
+      "destination": "/ja/markdown/markdown-note"
+    },
+    {
+      "source": "/ja/product-features/parameter",
+      "destination": "/ja/parameter"
+    },
+    {
+      "source": "/ja/product-features/share",
+      "destination": "/ja/share"
+    },
+    {
+      "source": "/ja/product-features/share/share_type",
+      "destination": "/ja/share/share_type"
+    },
+    {
+      "source": "/ja/product-features/share/notification",
+      "destination": "/ja/share/notification"
+    },
+    {
+      "source": "/ja/product-features/share/version-history",
+      "destination": "/ja/share/version-history"
+    },
+    {
+      "source": "/ja/product-features/share/restore",
+      "destination": "/ja/share/restore"
+    },
+    {
+      "source": "/ja/product-features/share/csvapi",
+      "destination": "/ja/share/csvapi"
+    },
+    {
+      "source": "/ja/product-features/schedule",
+      "destination": "/ja/schedule"
+    },
+    {
+      "source": "/ja/product-features/schedule/manage",
+      "destination": "/ja/schedule/manage"
+    },
+    {
+      "source": "/ja/product-features/schedule/notification",
+      "destination": "/ja/schedule/notification"
+    },
+    {
+      "source": "/ja/product-features/schedule/history",
+      "destination": "/ja/schedule/history"
+    },
+    {
+      "source": "/ja/product-features/team",
+      "destination": "/ja/team"
+    },
+    {
+      "source": "/ja/product-features/team/manage",
+      "destination": "/ja/team/manage"
+    },
+    {
+      "source": "/ja/data_import/database-data",
+      "destination": "/ja/database-data"
+    },
+    {
+      "source": "/ja/data_import/database-data/redshift",
+      "destination": "/ja/import/redshift"
+    },
+    {
+      "source": "/ja/data_import/database-data/mysql",
+      "destination": "/ja/import/mysql"
+    },
+    {
+      "source": "/ja/data_import/database-data/postgresql",
+      "destination": "/ja/import/postgresql"
+    },
+    {
+      "source": "/ja/data_import/cloud-apps-data",
+      "destination": "/ja/cloud-apps-data"
+    },
+    {
+      "source": "/ja/data_import/cloud-apps-data/google-analytics",
+      "destination": "/ja/import/google-analytics"
+    },
+    {
+      "source": "/ja/data_import/r-script-data",
+      "destination": "/ja/import/r-script-data"
+    },
+    {
+      "source": "/ja/data-wrangling/window-calculation",
+      "destination": "/ja/wrangling/window-calculation"
+    },
+    {
+      "source": "/ja/data-wrangling/regular_expression",
+      "destination": "/ja/wrangling/regular_expression"
+    },
+    {
+      "source": "/ja/visualization/types",
+      "destination": "/ja/viz/types"
+    },
+    {
+      "source": "/ja/visualization/types/wordcloud",
+      "destination": "/ja/viz/wordcloud"
+    },
+    {
+      "source": "/ja/visualization/features",
+      "destination": "/ja/viz/features"
+    },
+    {
+      "source": "/ja/visualization/features/number-of-unuque-values-check",
+      "destination": "/ja/viz/number-of-unuque-values-check"
+    },
+    {
+      "source": "/ja/setup/set_exploratory_home",
+      "destination": "/ja/howto/set_exploratory_home"
+    },
+    {
+      "source": "/ja/diagnostics/debug_log",
+      "destination": "/ja/debug_log"
+    },
+    {
+      "source": "/ja/diagnostics/startup_log",
+      "destination": "/ja/startup_log"
     }
   ],
   "logo": {

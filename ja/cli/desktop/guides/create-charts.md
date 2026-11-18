@@ -24,11 +24,11 @@ title: "チャートを作る"
 expl chart list-settings --marker bar
 ```
 
-`--setting` \<名前\> で、設定を 1 つ、名前の完全一致で引けます。`--search` \<名前の一部\> で、名前の一部から絞り込めます。設定の名前は推測せず、ここで返った名前だけを使います。
+`--setting <名前>` で、設定を 1 つ、名前の完全一致で引けます。`--search <名前の一部>` で、名前の一部から絞り込めます。設定の名前は推測せず、ここで返った名前だけを使います。
 
 ### 2. チャートを作る
 
-`--marker` と `--axes` が必須です。`--axes` は、枠の名前をキーにして、列を置く JSON オブジェクトです。bar と line の枠は x、y、color、facet、ピボットテーブルの枠は rowh、colh、meas です。値は、列名か、集計を選ぶ \{"column": "...", "func": "sum"\} です。
+`--marker` と `--axes` が必須です。`--axes` は、枠の名前をキーにして、列を置く JSON オブジェクトです。bar と line の枠は x、y、color、facet、ピボットテーブルの枠は rowh、colh、meas です。値は、列名か、集計を選ぶ `{"column": "...", "func": "sum"}` です。
 
 ```sh
 expl chart add --data-frame-id <dataframe_id> --marker bar --axes '{"x":"order_date","y":{"column":"sales","func":"sum"}}' --title "月別の売上"
@@ -64,7 +64,7 @@ expl chart edit <chart_id> --marker line --title "月別の売上の推移"
 | 状況 | 対処 |
 | --- | --- |
 | PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](/ja/cli/desktop/exit-codes)を参照してください。 |
-| NO_DATA_FRAME | `--data-frame-id` \<dataframe_id\> を付けます。 |
+| NO_DATA_FRAME | `--data-frame-id <dataframe_id>` を付けます。 |
 | INVALID_ARGUMENT | 設定の名前か値が違います。expl chart list-settings で、もう一度調べます。 |
 | チャートが空、または列が違う | 列名を、expl dataframe get-schema の表記と 1 文字ずつ照らします。 |
 

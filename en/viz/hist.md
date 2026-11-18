@@ -8,7 +8,7 @@ sidebarTitle: "Histogram"
 ## Column Assignments
 
 * X-Axis - Assign a column you want to show its distribution. You can assign only a number based column here.
-* Y-Axis - It is fixed to "Number of Rows". You can select how you want to show the bars at the function dropdown. See ["Ratio Mode"](#ratio-mode) for detail.
+* Y-Axis - It is fixed to "Number of Rows". You can select how you want to show the bars at the function dropdown. See `["Ratio Mode"]`(#ratio-mode) for detail.
 * Color - Take a look at [Color](/en/viz/color) section for more details.
 * Number of Bars - Specify the number of bars. The default is `Automatic`.
 * Repeat By - You can assign a column to repeat the chart for each of its values. Take a look at [Repeat By](/en/viz/small-multiple) section for more details.

@@ -10,8 +10,8 @@ title: "プロジェクトを選ぶ"
 
 | # | 指定 | 例 |
 | --- | --- | --- |
-| 1 | `--project` \<id または名前\> | `expl dashboard list --project "Sales Analysis"` |
-| 2 | 環境変数 EXPL_PROJECT | EXPL_PROJECT="Sales Analysis" |
+| 1 | `--project <id または名前>` | `expl dashboard list --project "Sales Analysis"` |
+| 2 | 環境変数 EXPL_PROJECT | `EXPL_PROJECT="Sales Analysis"` |
 | 3 | expl project use で決めた既定のプロジェクト | `expl project use "Sales Analysis"` |
 
 上にあるものが優先されます。

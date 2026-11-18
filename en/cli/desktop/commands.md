@@ -44,7 +44,7 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 | --- | --- |
 | expl chart list \<dataframe_id\> | List charts (a data frame id is required) |
 | expl chart get-result \<id\> | The numbers of a chart |
-| expl chart get-image \<id\> `--output` \<file\> | Save the image of a chart |
+| `expl chart get-image <id> --output <file>` | Save the image of a chart |
 
 <a id="cmd-note"></a>
 
@@ -63,7 +63,7 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 | --- | --- |
 | expl dashboard list | List dashboards |
 | expl dashboard get \<id\> | The definition of a dashboard |
-| `expl dashboard create --input` \<file\> | Create a dashboard |
+| `expl dashboard create --input <file>` | Create a dashboard |
 | expl dashboard publish \<id\> | Publish it (a confirmation appears before it runs) |
 
 <a id="cmd-other"></a>
@@ -72,9 +72,9 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 
 | Command | Purpose |
 | --- | --- |
-| expl execution get \<execution_id\> `--operation-id` \<operation_id\> | Check the state of an operation you did not wait for, with the two ids that `--no-wait` printed |
+| `expl execution get <execution_id> --operation-id <operation_id>` | Check the state of an operation you did not wait for, with the two ids that `--no-wait` printed |
 | expl call \<tool_name\> | Call an operation by its tool name |
-| expl lang \[en\|ja\] | Show or switch the display language of Desktop (switching also changes the language of Desktop itself; run expl status first to check the connection; it exits with code 2 when it cannot decide the target project; for example `expl lang --project` \<id\>) |
+| expl lang \[en\|ja\] | Show or switch the display language of Desktop (switching also changes the language of Desktop itself; run expl status first to check the connection; it exits with code 2 when it cannot decide the target project; for example `expl lang --project <id>`) |
 | expl skill | Print a description for AI agents |
 | expl completion \[bash\|zsh\|powershell\] | Print a shell completion script (see [Global flags](/en/cli/desktop/global-flags#completion)) |
 
@@ -82,7 +82,7 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 
 ## Full list
 
-Commands are added or removed depending on the Desktop version. To see the exact list on your machine, run expl tools list; for the arguments of a command, run expl \<command\> `--help`.
+Commands are added or removed depending on the Desktop version. To see the exact list on your machine, run expl tools list; for the arguments of a command, run `expl <command> --help`.
 
 ### Projects
 

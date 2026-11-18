@@ -46,7 +46,7 @@ slots.json は、get-template が返した枠の名前と、get-schema の列名
 {"columns": ["Sales", "Ad Spend", "Visitors"]}
 ```
 
-設定も同じ形で settings.json に書きます。例: \{"cor_method": "spearman"\}。種類によって枠や設定の名前は違うので、get-template の結果から写します。コマンドは、アナリティクスを作って実行します。結果に、id（analyticsId）と、出力ごとの状態が入ります。
+設定も同じ形で settings.json に書きます。例: `{"cor_method": "spearman"}`。種類によって枠や設定の名前は違うので、get-template の結果から写します。コマンドは、アナリティクスを作って実行します。結果に、id（analyticsId）と、出力ごとの状態が入ります。
 
 ### 4. 結果を読む
 
@@ -72,7 +72,7 @@ expl analytics edit <analytics_id> --settings @settings.json
 | 状況 | 対処 |
 | --- | --- |
 | PERMISSION_DENIED | システム設定の「作成、変更、削除を許可する」をオンにします。[終了コードとエラー](/ja/cli/desktop/exit-codes)を参照してください。 |
-| NO_DATA_FRAME | `--data-frame-id` \<dataframe_id\> を付けます。 |
+| NO_DATA_FRAME | `--data-frame-id <dataframe_id>` を付けます。 |
 | 未知の名前を指定すると拒否される | 枠や設定の名前を、expl analytics get-template で、もう一度調べます。 |
 | 枠が空 | 枠に列がないと、アナリティクスは作れません。 |
 

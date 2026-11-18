@@ -22,7 +22,7 @@ expl server login でサインインしてあります（[サインイン](/ja/c
 expl server search "Sales Orders" --scope all --type data
 ```
 
-`--type` には、all、note、dashboard、slide、chart、analytics、data を指定できます。`--scope` には、all、mine、shared、team を指定できます（`--scope` team のときは、`--team` \<チーム名\> も付けます）。`--semantic` を付けると、キーワードでなく意味で検索します。`--json` を付けると、JSON で出力します。
+`--type` には、all、note、dashboard、slide、chart、analytics、data を指定できます。`--scope` には、all、mine、shared、team を指定できます（`--scope` team のときは、`--team <チーム名>` も付けます）。`--semantic` を付けると、キーワードでなく意味で検索します。`--json` を付けると、JSON で出力します。
 
 結果は、id、タイトル、URL、種類、説明の表で出ます。結果が空のときは、該当するものがなかったということで、サインインのエラーではありません。
 

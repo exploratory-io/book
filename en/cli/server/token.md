@@ -62,7 +62,7 @@ These commands work only when you signed in with the browser (expl server login)
 expl server token create --name ci
 ```
 
-`--name` is required. From the terminal, the name can use letters, digits, ".", "_" and "-", up to 64 characters. `--expires` \<days\> sets how many days the key lasts, from 1 to 365. A key made this way is an API key and also appears in Account Settings \> API Keys. The key is printed once; save it right away.
+`--name` is required. From the terminal, the name can use letters, digits, ".", "_" and "-", up to 64 characters. `--expires <days>` sets how many days the key lasts, from 1 to 365. A key made this way is an API key and also appears in Account Settings \> API Keys. The key is printed once; save it right away.
 
 **Result**
 

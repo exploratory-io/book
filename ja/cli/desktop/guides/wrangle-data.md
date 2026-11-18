@@ -32,7 +32,7 @@ expl dataframe read-file-header --file-path ./sales_orders.csv
 expl dataframe create-source --data-frame-name "Sales Orders" --r-script @import.R
 ```
 
-import.R は、最後の値が data.frame になるスクリプトです。たとえば readr::read_csv("./sales_orders.csv") です。スクリプトでなくデータソースのプラグインから取り込むときは、`--source` に、type、connection_id、params を持つ JSON を渡します。データベースの場合は、expl dataframe get-source-params で、プラグインが受け取る項目を確認します。カタログの項目を取り込むときの type は、local_catalog（params.item_id）と server_catalog（params.url）です。
+import.R は、最後の値が data.frame になるスクリプトです。たとえば `readr::read_csv("./sales_orders.csv")` です。スクリプトでなくデータソースのプラグインから取り込むときは、`--source` に、type、connection_id、params を持つ JSON を渡します。データベースの場合は、expl dataframe get-source-params で、プラグインが受け取る項目を確認します。カタログの項目を取り込むときの type は、local_catalog（params.item_id）と server_catalog（params.url）です。
 
 ### 2. データフレームを見る
 
@@ -58,7 +58,7 @@ expl dataframe get-command --command filter
 expl dataframe apply-step <dataframe_id> --command <command> --params @params.json
 ```
 
-\<command\> は、get-command で調べたコマンド名に置き換え、params.json には、返ってきた名前で設定を書きます。ステップは、1 回に 1 つの操作ずつ追加します。R で実行できなかったステップは取り消されます。`--save-with-error` を付けると、エラーのステップとして残します。既存のステップの前後に入れるときは、`--insert-position` '\{"side":"after","stepName":"\<ステップ名>"\}' を渡します。付けないと、最後に追加します。
+\<command\> は、get-command で調べたコマンド名に置き換え、params.json には、返ってきた名前で設定を書きます。ステップは、1 回に 1 つの操作ずつ追加します。R で実行できなかったステップは取り消されます。`--save-with-error` を付けると、エラーのステップとして残します。既存のステップの前後に入れるときは、`--insert-position` '`{"side":"after","stepName":"<ステップ名>"}`' を渡します。付けないと、最後に追加します。
 
 expl dataframe preview-steps は、一時的なオブジェクトで変更を試し、保存せずに結果を表示します。引数は `expl dataframe preview-steps --help` で確認します。
 

@@ -44,7 +44,7 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | --- | --- |
 | expl chart list \<dataframe_id\> | チャートの一覧（データフレームの id が必要です） |
 | expl chart get-result \<id\> | チャートの数値 |
-| expl chart get-image \<id\> `--output` \<file\> | チャートの画像を保存する |
+| `expl chart get-image <id> --output <file>` | チャートの画像を保存する |
 
 <a id="cmd-note"></a>
 
@@ -63,7 +63,7 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | --- | --- |
 | expl dashboard list | ダッシュボードの一覧 |
 | expl dashboard get \<id\> | ダッシュボードの定義 |
-| `expl dashboard create --input` \<file\> | ダッシュボードを作る |
+| `expl dashboard create --input <file>` | ダッシュボードを作る |
 | expl dashboard publish \<id\> | 公開する（実行の前に確認が出る） |
 
 <a id="cmd-other"></a>
@@ -72,9 +72,9 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 
 | コマンド | できること |
 | --- | --- |
-| expl execution get \<execution_id\> `--operation-id` \<operation_id\> | 待たなかった操作の状態を確認する（`--no-wait` が表示した 2 つの id を指定します） |
+| `expl execution get <execution_id> --operation-id <operation_id>` | 待たなかった操作の状態を確認する（`--no-wait` が表示した 2 つの id を指定します） |
 | expl call \<tool_name\> | 道具の名前でそのまま呼ぶ |
-| expl lang \[en\|ja\] | Desktop の表示言語を確認する、切り替える（切り替えると、Desktop 自体の言語も変わります。先に expl status で接続を確認してください。対象のプロジェクトを決められないときは、終了コード 2 になります。例: `expl lang --project` \<id\>） |
+| expl lang \[en\|ja\] | Desktop の表示言語を確認する、切り替える（切り替えると、Desktop 自体の言語も変わります。先に expl status で接続を確認してください。対象のプロジェクトを決められないときは、終了コード 2 になります。例: `expl lang --project <id>`） |
 | expl skill | AI エージェント向けの説明を出力する |
 | expl completion \[bash\|zsh\|powershell\] | シェルの補完のスクリプトを出力する（[共通フラグ](/ja/cli/desktop/global-flags#completion)を参照） |
 

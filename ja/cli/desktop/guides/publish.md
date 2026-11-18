@@ -33,7 +33,7 @@ expl note publish <note_id>
 expl dashboard publish <dashboard_id>
 ```
 
-`--tags` でタグを付けます（複数のときは、フラグを繰り返します）。`--team` \<チーム名\> は、初めて公開するときのチームを、`--change-description` は、公開し直すときの変更のコメントを指定します。公開し直すと、同じ URL が更新されます。
+`--tags` でタグを付けます（複数のときは、フラグを繰り返します）。`--team <チーム名>` は、初めて公開するときのチームを、`--change-description` は、公開し直すときの変更のコメントを指定します。公開し直すと、同じ URL が更新されます。
 
 ```sh
 expl note publish <note_id> --tags sales --tags weekly --team <チーム名> --yes

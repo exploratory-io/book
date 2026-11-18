@@ -116,7 +116,7 @@ expl server dataset query <dataset_id> --mode aggregate --dimensions '[{"column"
 expl server dataset query <dataset_id> --mode rows --columns '["region","sales"]' --filters '{"column":"region","operator":"eq","value":"Kanto"}' --limit 10 --json
 ```
 
-operator は比較の方法です。データごとに使える operator は、expl server dataframe get-schema \<id\> `--detail` full の結果にあります。複数の条件を組み合わせる方法は、[フィルタ条件](/ja/cli/server/commands#dataset-query-json-arguments)を参照してください。
+operator は比較の方法です。データごとに使える operator は、`expl server dataframe get-schema <id> --detail` full の結果にあります。複数の条件を組み合わせる方法は、[フィルタ条件](/ja/cli/server/commands#dataset-query-json-arguments)を参照してください。
 
 結果が大きすぎる場合は、dataframe export で CSV または Parquet のファイルにします。複数のデータを結合する方法は、[dataset query](/ja/cli/server/commands#dataset-query) のページを参照してください。
 
@@ -128,9 +128,9 @@ JSON は、データを書くための決まった形の文字列です。dimens
 
 | フラグ | 形 | 意味 |
 | --- | --- | --- |
-| `--dimensions` | \[\{"column":"region"\}\] | region 列の値ごとにグループに分けます。 |
-| `--metrics` | \[\{"function":"sum","column":"sales","alias":"sales"\}\] | sales 列の合計を求め、結果の名前を sales にします。 |
-| `--sort` | \[\{"field":"sales","direction":"desc"\}\] | 出力の列 sales を、大きい順に並べます。 |
+| `--dimensions` | \[`{"column":"region"}`\] | region 列の値ごとにグループに分けます。 |
+| `--metrics` | \[`{"function":"sum","column":"sales","alias":"sales"}`\] | sales 列の合計を求め、結果の名前を sales にします。 |
+| `--sort` | \[`{"field":"sales","direction":"desc"}`\] | 出力の列 sales を、大きい順に並べます。 |
 
 metrics の alias は必須です。英字、数字、_ だけで、数字で始めず、64 文字までです。sort では、出力の列の名前を field で指定します。
 
@@ -138,7 +138,7 @@ metrics の alias は必須です。英字、数字、_ だけで、数字で始
 
 | 症状 | 対処 |
 | --- | --- |
-| Each dimension must be an object like \{ "column": "region" \}. (INVALID_QUERY) | dimensions は、\{ "column": "列の名前" \} の形のオブジェクトの配列にします。 |
+| Each dimension must be an object like `{ "column": "region" }`. (INVALID_QUERY) | dimensions は、`{ "column": "列の名前" }` の形のオブジェクトの配列にします。 |
 | Unknown property "aggregation" in a metric. (INVALID_AGGREGATION) | metrics では、function と alias を指定します。 |
 | alias is required: letters, digits and underscores, not starting with a digit, at most 64 characters. (INVALID_AGGREGATION) | alias を追加します。使用できる文字と長さは、上記のとおりです。 |
 | Unknown property "by" in a sort entry. (INVALID_SORT) | 出力の列の名前を、field で指定します。column、by、alias、name、metric は使えません。 |
