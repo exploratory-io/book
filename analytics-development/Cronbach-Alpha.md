@@ -10,7 +10,7 @@ const template = `
 
 この<%= num_variables %>個の変数の**<%= coefficient_name %>**は<%= alpha_value %>で、一般的には**<%= alpha_label %>**と解釈できます。そのため、これらの変数を平均または合計して1つの尺度スコアとして扱うことは、<% if (alpha_acceptable) { %>概ね妥当と考えられます<% } else { %>再検討する余地があります<% } %>。
 
-<%= (has_flagged ? '一方で、**「' + flagged_item + '」** は他の変数との関連が比較的弱く、' + (flagged_alpha_value ? 'この変数を除外するとアルファが' + flagged_alpha_value + 'まで上がるため、' : 'この変数を除外するとアルファが上がるため、') + '他の変数とはやや異なる側面を測っている可能性があります。' : '') %>
+<% if (has_flagged) { %>一方で、**「<%= flagged_item %>」** は他の変数との関連が比較的弱く、<% if (flagged_alpha_value) { %>この変数を除外するとアルファが<%= flagged_alpha_value %>まで上がるため、<% } else { %>この変数を除外するとアルファが上がるため、<% } %>他の変数とはやや異なる側面を測っている可能性があります。<% } %>
 
 # アルファのガイドライン
 
@@ -36,7 +36,9 @@ const template = `
 
 {{alpha_dropped_bar}}
 
-<%= (has_alpha_increasing_items ? alpha_increasing_items.map(item => '- 「' + item.name + '」を除外するとアルファは' + alpha_value + 'から' + item.alpha + 'に上がります。').join('\\n') + '\\n\\nこれは、これらの変数が他の変数と比べてやや異なる内容を測っている可能性を示しています。' : '') %>
+<% if (has_alpha_increasing_items) { alpha_increasing_items.forEach(function(item) { %>- 「<%= item.name %>」を除外するとアルファは<%= alpha_value %>から<%= item.alpha %>に上がります。
+<% }); %>
+これは、これらの変数が他の変数と比べてやや異なる内容を測っている可能性を示しています。<% } %>
 
 {{alpha_dropped_table}}
 
