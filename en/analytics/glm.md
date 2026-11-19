@@ -1,4 +1,7 @@
-# Generalized Linear Model (GLM) Analytics View
+---
+title: "Generalized Linear Model (GLM) Analytics View"
+sidebarTitle: "Generalized Linear Models"
+---
 
 Builds a Generalized Linear Model to predict Target Variable column value from Predictor Variable(s) column values.
 Following 6 types of distribution for the model to assume are supported.

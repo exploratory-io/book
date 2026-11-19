@@ -1,4 +1,7 @@
-# Predict Data - Survival
+---
+title: "Predict Data - Survival"
+sidebarTitle: "Prediction - Survival Model"
+---
 
 Predict with Survival Model.
 

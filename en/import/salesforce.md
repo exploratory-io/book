@@ -1,4 +1,7 @@
-# Salesforce Data Import
+---
+title: "Salesforce Data Import"
+sidebarTitle: "Salesforce"
+---
 
 You can quickly import data from your Salesforce into Exploratory.
 

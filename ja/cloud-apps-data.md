@@ -1,5 +1,7 @@
-# クラウドアプリのデータ
+---
+title: "クラウドアプリのデータ"
+---
 
 このセクションで日本語で読めるページです。
 
-- [Google Analytics Data](import/google-analytics.md)
+- [Google Analytics Data](/ja/import/google-analytics)

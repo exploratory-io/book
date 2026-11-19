@@ -1,4 +1,6 @@
-# Cumulative Functions
+---
+title: "Cumulative Functions"
+---
 
 - cumall
 - cumany

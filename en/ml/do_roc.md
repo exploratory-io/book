@@ -1,4 +1,6 @@
-# Calculate ROC
+---
+title: "Calculate ROC"
+---
 
 Returns coordinates of roc curve.
 

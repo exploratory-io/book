@@ -1,4 +1,7 @@
-# Rename Column Names
+---
+title: "Rename Column Names"
+---
+
  
 You can edit the display name of the column names. This column name change appears on legend, default axis title and Popup.
 

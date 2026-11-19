@@ -1,4 +1,7 @@
-# Market Basket Analysis - Association Rules
+---
+title: "Market Basket Analysis - Association Rules"
+sidebarTitle: "Market Basket"
+---
 
 ## Introduction
 

@@ -1,4 +1,6 @@
-# Run ANOVA Test
+---
+title: "Run ANOVA Test"
+---
 
 ## How to Access This Feature
 

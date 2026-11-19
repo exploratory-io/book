@@ -1,4 +1,6 @@
-# コマンド一覧
+---
+title: "コマンド一覧"
+---
 
 よく使うコマンドを、目的ごとに並べました。ほかのコマンドも含めた一覧は、ページ後半の[すべてのコマンド](#more)にあります。
 
@@ -8,9 +10,9 @@
 
 | コマンド | できること |
 | --- | --- |
-| expl status | Desktop のバージョンとサインイン中のユーザー（--json を付けると、権限や道具の情報も出ます） |
+| expl status | Desktop のバージョンとサインイン中のユーザー（`--json` を付けると、権限や道具の情報も出ます） |
 | expl tools list | 使えるコマンドの一覧（読み取り専用かどうかと、リスク） |
-| expl tools describe \<command\> | 引数、型、必須か、選べる値（2 語のコマンドは引用符で囲みます。例: expl tools describe "dashboard get"。get_data_frame のような道具名でも指定できます） |
+| expl tools describe \<command\> | 引数、型、必須か、選べる値（2 語のコマンドは引用符で囲みます。例: `expl tools describe "dashboard get"`。get_data_frame のような道具名でも指定できます） |
 
 expl tools list が終了コード 0 で終わっても、Desktop に接続できているとは限りません。Desktop が起動していないときは、前回保存した一覧を表示し、保存がないときは空の一覧になります。接続は、expl status で確認します。
 
@@ -42,7 +44,7 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | --- | --- |
 | expl chart list \<dataframe_id\> | チャートの一覧（データフレームの id が必要です） |
 | expl chart get-result \<id\> | チャートの数値 |
-| expl chart get-image \<id\> --output \<file\> | チャートの画像を保存する |
+| `expl chart get-image <id> --output <file>` | チャートの画像を保存する |
 
 <a id="cmd-note"></a>
 
@@ -61,7 +63,7 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | --- | --- |
 | expl dashboard list | ダッシュボードの一覧 |
 | expl dashboard get \<id\> | ダッシュボードの定義 |
-| expl dashboard create --input \<file\> | ダッシュボードを作る |
+| `expl dashboard create --input <file>` | ダッシュボードを作る |
 | expl dashboard publish \<id\> | 公開する（実行の前に確認が出る） |
 
 <a id="cmd-other"></a>
@@ -70,17 +72,17 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 
 | コマンド | できること |
 | --- | --- |
-| expl execution get \<execution_id\> --operation-id \<operation_id\> | 待たなかった操作の状態を確認する（--no-wait が表示した 2 つの id を指定します） |
+| `expl execution get <execution_id> --operation-id <operation_id>` | 待たなかった操作の状態を確認する（`--no-wait` が表示した 2 つの id を指定します） |
 | expl call \<tool_name\> | 道具の名前でそのまま呼ぶ |
-| expl lang \[en\|ja\] | Desktop の表示言語を確認する、切り替える（切り替えると、Desktop 自体の言語も変わります。先に expl status で接続を確認してください。対象のプロジェクトを決められないときは、終了コード 2 になります。例: expl lang --project \<id\>） |
+| expl lang \[en\|ja\] | Desktop の表示言語を確認する、切り替える（切り替えると、Desktop 自体の言語も変わります。先に expl status で接続を確認してください。対象のプロジェクトを決められないときは、終了コード 2 になります。例: `expl lang --project <id>`） |
 | expl skill | AI エージェント向けの説明を出力する |
-| expl completion \[bash\|zsh\|powershell\] | シェルの補完のスクリプトを出力する（[共通フラグ](global-flags.md#completion)を参照） |
+| expl completion \[bash\|zsh\|powershell\] | シェルの補完のスクリプトを出力する（[共通フラグ](/ja/cli/desktop/global-flags#completion)を参照） |
 
 <a id="more"></a>
 
 ## すべてのコマンド
 
-コマンドは Desktop のバージョンによって増減します。お手元の正確な一覧は expl tools list で確かめてください。引数は expl \<コマンド\> --help で確認できます。
+コマンドは Desktop のバージョンによって増減します。お手元の正確な一覧は expl tools list で確かめてください。引数は `expl <コマンド> --help` で確認できます。
 
 ### プロジェクト
 
@@ -293,6 +295,6 @@ expl tools list が終了コード 0 で終わっても、Desktop に接続で�
 | expl guide get | 道具の使い方のガイドを返します。 | いつでも |
 | expl artifact rerun | 開いているプロジェクトのチャートやアナリティクスなどを再実行します。 | 作成、変更、削除を許可したとき |
 
-組み込みのコマンド（expl status、project use、tools list、tools describe、call、lang、skill、completion）は、下ではなく、このページの上の表にあります。フラグは[共通フラグ](global-flags.md)を参照してください。
+組み込みのコマンド（expl status、project use、tools list、tools describe、call、lang、skill、completion）は、下ではなく、このページの上の表にあります。フラグは[共通フラグ](/ja/cli/desktop/global-flags)を参照してください。
 
-exploratory.io のコンテンツを読むコマンドは、[Server のコマンド](../server/commands.md)を参照してください。
+exploratory.io のコンテンツを読むコマンドは、[Server のコマンド](/ja/cli/server/commands)を参照してください。

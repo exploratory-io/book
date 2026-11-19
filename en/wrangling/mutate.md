@@ -1,4 +1,6 @@
-# Create New Calculation
+---
+title: "Create New Calculation"
+---
 
 Mutate creates new column(s) with given expressions and preserves existing column(s). To override existing column, you can select existing column on Mutate Dialog. 
 

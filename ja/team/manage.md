@@ -1,4 +1,6 @@
-# チームの管理
+---
+title: "チームの管理"
+---
 
 チームの管理は、[アカウントの設定](https://exploratory.io/account/settings)から行うことができます。
 

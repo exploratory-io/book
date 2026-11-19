@@ -1,4 +1,6 @@
-# Scheduling History
+---
+title: "Scheduling History"
+---
 
 You can check the scheduling history from the "Scheduling History" menu.
 

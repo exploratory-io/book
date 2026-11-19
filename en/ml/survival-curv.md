@@ -1,4 +1,8 @@
-# Calculate Survival Curve
+---
+title: "Calculate Survival Curve"
+sidebarTitle: "Survival Curve"
+---
+
 Calculates Survival Curve from survival time and survival status.
 
 ## Input Data

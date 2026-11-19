@@ -1,4 +1,7 @@
-# Bind Rows
+---
+title: "Bind Rows"
+---
+
 Bind multiple data frames by row.
 
 ## How to Access This Feature

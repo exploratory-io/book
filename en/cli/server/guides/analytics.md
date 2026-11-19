@@ -1,4 +1,6 @@
-# Get analytics results
+---
+title: "Get analytics results"
+---
 
 Get the results of analytics (regression, correlation, chi-square test and so on) in a published dashboard or note as structured data.
 
@@ -40,7 +42,7 @@ Replace \<id\> with an id from a search result. The result below was run on the 
 
 ### 2. Get the result
 
-Pass the name to --analytics and run analytics get-result.
+Pass the name to `--analytics` and run analytics get-result.
 
 ```sh
 expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
@@ -136,7 +138,7 @@ Replace \<id\> with the id of the dashboard and \<analytics\> with the name of t
 
 The result holds the model definition (target, predictors, N), result tables with stable column ids, headline statistics split into training and test, the settings it ran with, and explanation texts, each marked as built from the numbers or written by AI. Values are as displayed, and coefficients are unstandardized. This example is a time series forecast, so target and predictors in model_definition are empty.
 
---limit is the maximum number of rows per table (up to 100). There is no way to read on. By default it returns the tables that answer the analysis. To choose tables, pass ids from available_tables to --tables.
+`--limit` is the maximum number of rows per table (up to 100). There is no way to read on. By default it returns the tables that answer the analysis. To choose tables, pass ids from available_tables to `--tables`.
 
 > If result.tables holds result tables, you have the result.
 
@@ -147,6 +149,6 @@ The result holds the model definition (target, predictors, N), result tables wit
 | What you see | What to do |
 | --- | --- |
 | You do not know the name of the analytics | Look at metadata.blocks in the result of fetch. |
-| Run "expl server login". | You are not signed in, or the saved login or API key was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in, or the saved login or API key was rejected. Run expl server login. |
 
-Every flag is described in [analytics get-result](../commands.md#analytics-get-result).
+Every flag is described in [analytics get-result](/en/cli/server/commands#analytics-get-result).

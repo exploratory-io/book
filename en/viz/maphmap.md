@@ -1,5 +1,6 @@
-# Map - Heatmap
-
+---
+title: "Map - Heatmap"
+---
 
 When you have tons of location data points being displayed as dots on Map, it’s hard to understand the trend. This is when you want to consider using Heatmap on Map, which makes it easier to identify the trends or patterns of geographical data at glance.
 
@@ -14,4 +15,4 @@ When you have tons of location data points being displayed as dots on Map, it’
 
 ## Save as an Image
 
-You can save the chart as an image file. See [Save as PNG/SVG](save.md) for more details.
+You can save the chart as an image file. See [Save as PNG/SVG](/en/viz/save) for more details.

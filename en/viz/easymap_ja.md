@@ -1,4 +1,6 @@
-# Map - Standard
+---
+title: "Map - Standard"
+---
 
 ![](images/stdmap1.png)
 

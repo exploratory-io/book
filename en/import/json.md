@@ -1,4 +1,7 @@
-# Import JSON Data
+---
+title: "Import JSON Data"
+sidebarTitle: "JSON"
+---
 
 You can import both local and remote JSON File Data quickly.
 

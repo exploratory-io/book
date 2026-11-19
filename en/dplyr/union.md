@@ -1,4 +1,6 @@
-# Union
+---
+title: "Union"
+---
 
 Keep the rows that appear in one of the given data sets.
 

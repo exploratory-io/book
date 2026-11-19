@@ -1,4 +1,6 @@
-# Extract Number
+---
+title: "Extract Number"
+---
 
 Extract only the number from a given text. This is useful for strings that are supposed to be numbers with extra formatting (e.g. $1,200.34, -12%, X1, etc.).
 

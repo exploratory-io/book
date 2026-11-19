@@ -1,4 +1,7 @@
-# Bind Columns 
+---
+title: "Bind Columns"
+---
+
 Bind multiple data frames by column.
 
 ## How to Access This Feature

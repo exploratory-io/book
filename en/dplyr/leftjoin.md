@@ -1,4 +1,6 @@
-# Left Join
+---
+title: "Left Join"
+---
 
 Return all rows from the current data set, and all columns from the current and the target. Rows in the current with no match in the target will have NA values in the new columns. If there are multiple matches between the current and the target, all the matches are returned.
 

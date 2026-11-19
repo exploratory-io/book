@@ -1,4 +1,7 @@
-# Cohort Analysis
+---
+title: "Cohort Analysis"
+---
+
 Visualizes how a measure for each cohort (group) changes as time goes by. 
 
 ## Input Data

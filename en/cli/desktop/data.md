@@ -1,4 +1,6 @@
-# Data and permissions
+---
+title: "Data and permissions"
+---
 
 What is sent and what is recorded when you use expl.
 
@@ -12,4 +14,4 @@ While you are signed in and AI features are on, Desktop also sends one usage rec
 
 expl itself sends no usage analytics.
 
-For what MCP Desktop records, see also [Data and permissions](../../mcp/desktop/data.md).
+For what MCP Desktop records, see also [Data and permissions](/en/mcp/desktop/data).

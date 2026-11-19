@@ -1,4 +1,7 @@
-# Reproducible Steps
+---
+title: "Reproducible Steps"
+sidebarTitle: "Steps (Right-hand side)"
+---
 
 # Operations with Single Step
 

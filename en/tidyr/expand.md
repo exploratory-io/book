@@ -1,4 +1,6 @@
-# Expand
+---
+title: "Expand"
+---
 
 Expand a data frame by adding all the combination of given columns.
 

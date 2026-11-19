@@ -1,3 +1,7 @@
+---
+title: "How to use Dremio with R and Exploratory"
+---
+
 ### How to use Dremio with R and Exploratory
 
 ![](https://cdn-images-1.medium.com/max/1600/1*trMe2Bxk7kGf5-AZyJ8r1w.png)
@@ -148,7 +152,7 @@ Click Add button on Connection List Dialog.
 
 From Connection chooser, click Dremio icon.
 
-<br> 
+<br /> 
 
 ![](https://cdn-images-1.medium.com/max/1600/1*029kt-jjXQ8Xku6ztUfDaA.png)
 
@@ -173,7 +177,7 @@ After confirming it, click Add button to save it.
 
 ### Query Dremio Data
 
-### <br> 
+### <br /> 
 
 On left hand side tree, click plus (+) button next to Data Frames label and
 select `Database Data`.

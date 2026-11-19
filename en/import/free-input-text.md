@@ -1,4 +1,6 @@
-# Text Input Data
+---
+title: "Text Input Data"
+---
 
 The Text Input Data makes it possible for users to manually type text to create small data frames, which can be useful in creating Lookup tables.
 

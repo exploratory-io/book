@@ -1,4 +1,6 @@
-# Cosine Similarity
+---
+title: "Cosine Similarity"
+---
 
 ## Introduction
 

@@ -1,4 +1,7 @@
-# Connect Cursor
+---
+title: "Connect Cursor"
+sidebarTitle: "Cursor"
+---
 
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in the Cursor agent and sign in through your browser. It works with the model you pick in Cursor, including Grok.
 It takes about 5 minutes. You need an Exploratory account and Cursor.
@@ -19,7 +22,7 @@ It takes about 5 minutes. You need an Exploratory account and Cursor.
 
 If your app's official directory lists Exploratory Server, follow its installation instructions. Otherwise, add only the server by hand, without the skill, as follows. `exploratory@exploratory` is for Desktop.
 
-1. Open ~/.cursor/mcp.json (or .cursor/mcp.json in a project).
+1. Open \~/.cursor/mcp.json (or .cursor/mcp.json in a project).
 2. Add the `exploratory-server` entry below. If `mcpServers` already exists in the file, add only the `exploratory-server` entry inside it and keep the other server settings. The example shows a complete new file.
 
    ```text
@@ -76,7 +79,7 @@ Next, in a new chat, send this.
 Find the "Sales Orders" data on Exploratory. Please respond in English.
 ```
 
-Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
+Sales Orders is an example. Replace it with the name of data you can view. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](/en/mcp/server/troubleshooting#zero).
 
 After you send it, check the result.
 
@@ -108,7 +111,7 @@ If your environment cannot open a browser, use an API key instead of the sign-in
 }
 ```
 
-If you write the key in mcp.json as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](../auth.md#apikey) for what a key can read.
+If you write the key in mcp.json as it is, it stays in that file. Use one way only: the sign-in above or this one. See [Connect with an API key](/en/mcp/server/auth#apikey) for what a key can read.
 
 <a id="trouble"></a>
 
@@ -119,7 +122,7 @@ If you write the key in mcp.json as it is, it stays in that file. Use one way on
 | You are asked to sign in | Run agent mcp login exploratory-server to sign in again. |
 | You installed the Desktop plugin but the Server tools do not appear | The Desktop plugin does not add Server. Add Server with the JSON above. |
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
+- [Troubleshooting](/en/mcp/server/troubleshooting) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 

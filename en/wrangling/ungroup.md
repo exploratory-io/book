@@ -1,4 +1,7 @@
-# Ungroup
+---
+title: "Ungroup"
+---
+
 Converts the data frame into a grouped data frame where the following operations will be performed based on the groups. Grouping should be done before you want to aggregate values.
 
 ## How to Access This Feature

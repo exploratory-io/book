@@ -1,9 +1,12 @@
-# Connect Claude Code
+---
+title: "Connect Claude Code"
+sidebarTitle: "Claude Code"
+---
 
 After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Claude Code and sign in through your browser.
 It takes about 3 minutes. You need an Exploratory account and Claude Code.
 
-If you already added Exploratory as a connector in the [Claude app](claude.md), you do not need to add it again here. Claude Code signed in with the same claude.ai account shows it automatically as "claude.ai Exploratory", and you can use it as is. In Claude Code, open `/mcp` to check. For the steps to add it, see [Connect the Claude app](claude.md).
+If you already added Exploratory as a connector in the [Claude app](/en/mcp/server/clients/claude), you do not need to add it again here. Claude Code signed in with the same claude.ai account shows it automatically as "claude.ai Exploratory", and you can use it as is. In Claude Code, open `/mcp` to check. For the steps to add it, see [Connect the Claude app](/en/mcp/server/clients/claude).
 
 ![The /mcp list in Claude Code, with claude.ai Exploratory](images/en/claude-code-claudeai-connector.png)
 
@@ -42,7 +45,7 @@ This registers only the server, without the plugin or skill.
    Using the connected Exploratory Server, list up to three items I can view, with their URLs. If none are found, say so.
    ```
 
-If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](../troubleshooting.md#zero).
+If items appear with their URLs, the connection works. An empty result does not necessarily mean that authentication or the connection failed. To tell them apart, see [Your content does not appear](/en/mcp/server/troubleshooting#zero).
 
 A skill gives an AI instructions for using a service. It is separate from the MCP connection settings.
 
@@ -110,7 +113,7 @@ If you type the key on a command line or write it in a settings file as it is, i
 
 Use one way only: the OAuth sign-in above or this one.
 
-- [Connect with an API key](../auth.md#apikey) - What a key can read and the errors it can return.
+- [Connect with an API key](/en/mcp/server/auth#apikey) - What a key can read and the errors it can return.
 
 <a id="trouble"></a>
 
@@ -121,13 +124,13 @@ Use one way only: the OAuth sign-in above or this one.
 | You are asked to sign in | Open /mcp and sign in again. |
 | The same tools appear twice | Use one way only: the plugin from your app's official directory, the direct URL, or the connector on claude.ai. If you later install the plugin from the official directory, first remove the direct entry with claude mcp remove exploratory-server. |
 
-- [Troubleshooting](../troubleshooting.md) - Fixes by symptom for the Server MCP as a whole.
+- [Troubleshooting](/en/mcp/server/troubleshooting) - Fixes by symptom for the Server MCP as a whole.
 
 <a id="remove"></a>
 
 ## Disconnect
 
-Use the steps below for a connection registered directly by command. For a connector inherited from the Claude app, follow "Disconnect" on the [Claude app page](claude.md#remove).
+Use the steps below for a connection registered directly by command. For a connector inherited from the Claude app, follow "Disconnect" on the [Claude app page](/en/mcp/server/clients/claude#remove).
 
 ```sh
 claude mcp remove exploratory-server

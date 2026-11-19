@@ -1,7 +1,11 @@
+---
+title: "Publish Insights"
+sidebarTitle: "Manage Schedules"
+---
 
-# Publish Insights
 
-In order to schedule your insight, you need to publish your insight to the server first. See the [document](../share/share.md) for more details.
+
+In order to schedule your insight, you need to publish your insight to the server first. See the [document](/en/share) for more details.
 
 
 # Manage Schedules

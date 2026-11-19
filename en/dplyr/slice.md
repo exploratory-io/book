@@ -1,4 +1,6 @@
-# Slice
+---
+title: "Slice"
+---
 
 Select rows by positions.
 

@@ -1,4 +1,7 @@
-# RSS Data Import
+---
+title: "RSS Data Import"
+sidebarTitle: "RSS Data"
+---
 
 Allows to get data from RSS feeds.
 

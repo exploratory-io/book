@@ -1,4 +1,6 @@
-# All commands
+---
+title: "All commands"
+---
 
 The commands you will use most, grouped by purpose. For the full list, including the rest, see [Full list](#more) later on this page.
 
@@ -8,9 +10,9 @@ The commands you will use most, grouped by purpose. For the full list, including
 
 | Command | Purpose |
 | --- | --- |
-| expl status | The Desktop version and the signed-in user (with --json it also shows permissions and tools) |
+| expl status | The Desktop version and the signed-in user (with `--json` it also shows permissions and tools) |
 | expl tools list | All available commands (read-only or not, and risk) |
-| expl tools describe \<command\> | Arguments, types, required or not, allowed values (put a two-word command in quotes, for example expl tools describe "dashboard get"; a tool name such as get_data_frame also works) |
+| expl tools describe \<command\> | Arguments, types, required or not, allowed values (put a two-word command in quotes, for example `expl tools describe "dashboard get"`; a tool name such as get_data_frame also works) |
 
 Exit code 0 from expl tools list does not mean that Desktop is connected. When Desktop is not running, it shows the list it saved last time, or an empty list when none is saved. To check the connection, run expl status.
 
@@ -42,7 +44,7 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 | --- | --- |
 | expl chart list \<dataframe_id\> | List charts (a data frame id is required) |
 | expl chart get-result \<id\> | The numbers of a chart |
-| expl chart get-image \<id\> --output \<file\> | Save the image of a chart |
+| `expl chart get-image <id> --output <file>` | Save the image of a chart |
 
 <a id="cmd-note"></a>
 
@@ -61,7 +63,7 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 | --- | --- |
 | expl dashboard list | List dashboards |
 | expl dashboard get \<id\> | The definition of a dashboard |
-| expl dashboard create --input \<file\> | Create a dashboard |
+| `expl dashboard create --input <file>` | Create a dashboard |
 | expl dashboard publish \<id\> | Publish it (a confirmation appears before it runs) |
 
 <a id="cmd-other"></a>
@@ -70,17 +72,17 @@ Exit code 0 from expl tools list does not mean that Desktop is connected. When D
 
 | Command | Purpose |
 | --- | --- |
-| expl execution get \<execution_id\> --operation-id \<operation_id\> | Check the state of an operation you did not wait for, with the two ids that --no-wait printed |
+| `expl execution get <execution_id> --operation-id <operation_id>` | Check the state of an operation you did not wait for, with the two ids that `--no-wait` printed |
 | expl call \<tool_name\> | Call an operation by its tool name |
-| expl lang \[en\|ja\] | Show or switch the display language of Desktop (switching also changes the language of Desktop itself; run expl status first to check the connection; it exits with code 2 when it cannot decide the target project; for example expl lang --project \<id\>) |
+| expl lang \[en\|ja\] | Show or switch the display language of Desktop (switching also changes the language of Desktop itself; run expl status first to check the connection; it exits with code 2 when it cannot decide the target project; for example `expl lang --project <id>`) |
 | expl skill | Print a description for AI agents |
-| expl completion \[bash\|zsh\|powershell\] | Print a shell completion script (see [Global flags](global-flags.md#completion)) |
+| expl completion \[bash\|zsh\|powershell\] | Print a shell completion script (see [Global flags](/en/cli/desktop/global-flags#completion)) |
 
 <a id="more"></a>
 
 ## Full list
 
-Commands are added or removed depending on the Desktop version. To see the exact list on your machine, run expl tools list; for the arguments of a command, run expl \<command\> --help.
+Commands are added or removed depending on the Desktop version. To see the exact list on your machine, run expl tools list; for the arguments of a command, run `expl <command> --help`.
 
 ### Projects
 
@@ -293,6 +295,6 @@ Commands are added or removed depending on the Desktop version. To see the exact
 | expl guide get | Returns the usage guide of a tool. | Always |
 | expl artifact rerun | Re-runs a chart, analytics or other item of the open project. | When Allow create, edit and delete is on |
 
-The built-in commands (expl status, project use, tools list, tools describe, call, lang, skill and completion) are in the tables at the top of this page, not below. For their flags, see [Global flags](global-flags.md).
+The built-in commands (expl status, project use, tools list, tools describe, call, lang, skill and completion) are in the tables at the top of this page, not below. For their flags, see [Global flags](/en/cli/desktop/global-flags).
 
-For the commands that read content on exploratory.io, see [Server commands](../server/commands.md).
+For the commands that read content on exploratory.io, see [Server commands](/en/cli/server/commands).

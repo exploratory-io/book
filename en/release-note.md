@@ -1,4 +1,6 @@
-# Release Note
+---
+title: "Release Note"
+---
 
 # v16.7
 
@@ -347,7 +349,7 @@
 *   LCA: We added support for selecting numeric target columns in Latent Class Analysis (LCA). It will automatically convert to factor data type (Ordinal Categorical data).&#x20;
 *   Decision Tree: We added the ability to copy the full condition text directly from decision tree tooltips.&#x20;
 *   K-Medoids: We updated the default setting of "Show All Variables" to TRUE for the K-Medoids Cluster Profile radar chart so all clustering variables are displayed by default.
-*   We standardized the P-value and percentage formatting within the Analytics Report body to show values smaller than 0.001 as "< 0.001" and "< 0.1%".&#x20;
+*   We standardized the P-value and percentage formatting within the Analytics Report body to show values smaller than 0.001 as "\< 0.001" and "\< 0.1%".&#x20;
 
 
 
@@ -1916,7 +1918,7 @@ Released on 7/28/2025.
 
 ### Bug Fixes
 
-* Data Source: S3: Fixed an error "Error in z[["Owner"]][["ID"]] : subscript out of bounds" when importing data.
+* Data Source: S3: Fixed an error "Error in z[`["Owner"]`][`["ID"]`] : subscript out of bounds" when importing data.
 * Data Source: MongoDB: Column data types were different from Desktop after scheduled data refreshed on server.
 
 
@@ -2496,7 +2498,7 @@ Released on 8/29/2024.
 * Chart: When changing the marker to 'Line + Circle' it added unnecessary space at the right and the left sides.
 
 
-* Analytics: Linear Regression / Logistic Regression: In the Effects tab, it should show "< 0.0001" if the P-value is less than 0.0001.
+* Analytics: Linear Regression / Logistic Regression: In the Effects tab, it should show "\< 0.0001" if the P-value is less than 0.0001.
 * Analytics: Survival Curve: Percentage values should show up in the Survival Table chart instead of ratio values.
 * Analytics: Survival Curve: Summary tab should show the "Rows" and "Rows *(TRUE)" information even if you don't set a column to Color.
 
@@ -2782,7 +2784,7 @@ Released on 5/29/2024.
 * Data Wrangling: Join: After creating a right join step, the target data frame key columns in the Join Dialog became disabled if the target data frame was a branch of a branch.
 * Data Wrangling: Join: When the target data frame was "Grouped by", you could not get rid of the group columns from the target column selections.
 * Data Wrangling: When copying a data frame, it sometimes failed to copy the underlying chart.
-* Data Wrangling: Work with Text Data: If the new value is missing, it should show the new value as <NA> in the preview table.
+* Data Wrangling: Work with Text Data: If the new value is missing, it should show the new value as \<NA> in the preview table.
 
 
 * Chart: Bar chart failed to render due to the “idx must contain one integer for each level of f” error if you assigned a column that had many unique values to X-Axis.
@@ -2940,7 +2942,7 @@ Released on 3/5/2024.
 
 
 * Note: Changing the image size moved the image to an incorrect position for small images.
-* Note: Existing note didn't open if "<" and ">" signs were used in the code block.
+* Note: Existing note didn't open if "\<" and ">" signs were used in the code block.
 * Note: Clicking the Refresh button multiple times caused another R running error.
 * Note: When opening an existing note, an empty line at the bottom was removed where it should be kept.
 * Note: When copying text containing multiple levels of bullet points and pasting them into a note, only the text from the first level was captured.
@@ -3338,7 +3340,7 @@ Released on 10/05/2023.
 * Summary: Unnecessary HTML tags were shown on the Delete Row Filter confirmation dialog.
 
 
-* Chart: Bucket labels should show more meaningful text instead of operator signs. For example, "2000 or greater" instead of "2000 <=".
+* Chart: Bucket labels should show more meaningful text instead of operator signs. For example, "2000 or greater" instead of "2000 \<=".
 * Chart: Color: If you created "Equal Width" buckets, set the # of buckets to more than 5, and chose the "Red / Light Blue" color palette, it repeated the 5-color palette.
 * Chart: Color: If you create "Equal Width" buckets on a numeric column and turn on the "Set 0 as Center", it should create buckets using the given data range and the center color of the palette should align with the bucket that contains 0.
 * Chart: Error dialog showed up with the "Cannot read properties of undefined (reading 'name')" error if you tried to show the detailed data on a Pivot Table.
@@ -3710,7 +3712,7 @@ Released on 5/22/2023.
 * Chart: Color: If the logical condition expression was too long, it overflowed the dialog.
 * Chart: If you renamed "." with something else it showed an error.
 * Chart: Scatter: Labels on the plot area didn't match with the actual data if you assigned a column for Repeat By and unchecked the Sync X-Axis checkbox.
-* Chart: Pivot: Summarize Table: The number of decimal digits setting didn't apply for the numbers on the bucket labels like "< 0.63".
+* Chart: Pivot: Summarize Table: The number of decimal digits setting didn't apply for the numbers on the bucket labels like "\< 0.63".
 
 
 * Dashboard: If there was only one row in a dashboard, you could not move charts inside the row by drag-and-drop.
@@ -4384,7 +4386,7 @@ Released on 7/15/2022.
 * Data Wrangling: After duplicating a data frame, the toolbar and data frame list showed the source data frame name where it should show the new data frame name.
 * Data Wrangling: Importing a .df (data frame) file by drag and drop didn't work if there was a data frame name conflict.
 * Data Wrangling: Window Calculation / Pivot / Summarize: Improved the column selector widget usability on the dialogs.
-* Data Wrangling: The support of @{} parameter notation was missing in the custom calculation editor for mutate steps on multiple columns.
+* Data Wrangling: The support of @\{\} parameter notation was missing in the custom calculation editor for mutate steps on multiple columns.
 * Data Wrangling: Pivot: When a character column was selected for value along with an aggregation function that returns a numeric value, it raised the 'cannot convert' error.
 
 
@@ -5013,7 +5015,7 @@ Released on 3/3/2022.
 * Chart: Pivot Table failed to render due to the "character string is not in a standard unambiguous format" error if you had NA values in Row and applied the date formatting.
 
 
-* Analytics: Binary Classification: ROC tabs raised an error if the name of the target variable column ends with "...<number>".
+* Analytics: Binary Classification: ROC tabs raised an error if the name of the target variable column ends with "...\<number>".
 * Analytics: Topic Model: Indexes of topics were sorted alphabetically rather than numerically.
 
 
@@ -5096,7 +5098,7 @@ Released on 1/20/2022.
 * Chart: Radar: Now you can configure the font size for the column names.
 
 
-* Note/Dashboard: Support the '@{param_name}' notation to access parameter values in the R code snippet.
+* Note/Dashboard: Support the '@\{param_name\}' notation to access parameter values in the R code snippet.
 
 
 * General: Add the "Create Team" button in the Project Publish dialog.
@@ -5252,7 +5254,7 @@ Released on 11/24/2021.
 
 
 * Dashboard: Couldn't Re-Import and Run a Dashboard at the same time.
-* Dashboard: A dashboard panel title showed a weird text like "{data-width=100}" if a chart name contains an underscore ('\_') letter.
+* Dashboard: A dashboard panel title showed a weird text like "\{data-width=100\}" if a chart name contains an underscore ('\_') letter.
 * Dashboard: A dashboard panel got unexpectedly wider or narrower if a chart name contains an underscore ('\_') letter.
 
 
@@ -6185,7 +6187,7 @@ Release announcement: https://blog.exploratory.io/exploratory-v6-5-released-6ccb
 * Parameter: When creating a logical parameter, clicking on the Default checkbox didn't select all the options.
 * Parameter: Error was raised at importing EDF file with a Date / POSIXct Parameter with a relative date default value.
 * Parameter: It didn't create a parameter when clicking "Create Parameter" in the Filter dialog.
-* Parameter: Parameter appeared in filter command as @{[object Object]} if the parameter is picked implicitly as a result of operator change.
+* Parameter: Parameter appeared in filter command as @\{[object Object]\} if the parameter is picked implicitly as a result of operator change.
 * Parameter: The same column name showed up twice for the list of values' column selector.
 * Parameter: When changing parameter type from Date to Text, default date value type remained and it caused the unexpected default value was set for the parameter at runtime.
 * Parameter: When creating a new parameter, an existing parameter display name was pre-populated for the display name of the new parameter.
@@ -6259,7 +6261,7 @@ Released on 2/25/2021.
 
 
 * Analytics: If you ran the Random Forest with 3.600 variable columns, it failed to run and showed an error 'invalid response (expecting SEXP)'.
-* Analytics: model_info function threw an error 'object <column name> not found' when the column name for the model was other than 'model'.
+* Analytics: model_info function threw an error 'object \<column name> not found' when the column name for the model was other than 'model'.
 
 
 * Note: If you had an HTML script tag for Speaker Deck slides in a published Note, the loading bar kept showing for a long time even if the content was already loaded.
@@ -6479,7 +6481,7 @@ Released on 1/26/2021.
 
 
 * Summary View: Loading Summary View was slow comparing to the previous version for Windows.
-* Summary View: P Values under 0.001 should be shown as "< 0.0001" instead of "0.0000" in the Correlation view.
+* Summary View: P Values under 0.001 should be shown as "\< 0.0001" instead of "0.0000" in the Correlation view.
 * Summary View: When clicking the Ratio button on Summary Highlight mode, the Ratio button didn't get highlighted.
 
 
@@ -7090,9 +7092,9 @@ Released on 8/4/2020
 
 **Parameter**
 
-* Parameter: Support for arguments to control quoting and escaping of @{} parameter placeholders in SQL or MongoDB query.
+* Parameter: Support for arguments to control quoting and escaping of @\{\} parameter placeholders in SQL or MongoDB query.
 * Parameter: Improved Slider widget to show selected value dynamically while sliding.
-* Parameter: On Filter Dialog, resulting R script now shows '@{}' notation instead of internal 'exploraory_env$' notation for parameters.
+* Parameter: On Filter Dialog, resulting R script now shows '@\{\}' notation instead of internal 'exploraory_env$' notation for parameters.
 * Parameter: Introduced new Date/Time Picker for better usability.
 
 ### Bug Fixes
@@ -9694,7 +9696,7 @@ Released on 5/1/2017
 
 ### Bug Fixes
 
-- Irrelevant error message "Error in if (conn) {: argument is not interpretable as logical" is showing up when there is an error in SQL query.
+- Irrelevant error message "Error in if (conn) \{: argument is not interpretable as logical" is showing up when there is an error in SQL query.
 - Factor values on Summary View overflows outside of the tile area.
 - Variable replacement in SQL by `@{<expression>}` is not working.
 - In Time Series Forecasting, meaningless weekly seasonality is returned even when aggregation level is larger than week.

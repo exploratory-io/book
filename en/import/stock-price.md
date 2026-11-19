@@ -1,4 +1,6 @@
-# Stock Price Data
+---
+title: "Stock Price Data"
+---
 
 You can quickly import historical stock price data in Exploratory. Check out the note below for more details.
 

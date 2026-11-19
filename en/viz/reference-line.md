@@ -1,4 +1,6 @@
-# Reference Line
+---
+title: "Reference Line"
+---
 
  Reference Line feature is available in the following chart types. 
 

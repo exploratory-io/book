@@ -1,5 +1,8 @@
+---
+title: "一意な値のチェック"
+---
 
-# 一意な値のチェック
+
 
 ![](images/nuniq-dialog-ja.png)
 

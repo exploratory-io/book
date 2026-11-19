@@ -1,4 +1,7 @@
-# Import CSV / Delimited File or Excel File Data from Google Drive
+---
+title: "Import CSV / Delimited File or Excel File Data from Google Drive"
+sidebarTitle: "Google Drive"
+---
 
 You can import CSV / Delimited File or Excel File from Google Drive.
 

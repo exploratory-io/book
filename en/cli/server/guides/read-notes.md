@@ -1,4 +1,6 @@
-# Read notes
+---
+title: "Read notes"
+---
 
 Find a published note, read its text and get the numbers of its charts.
 
@@ -6,21 +8,21 @@ Find a published note, read its text and get the numbers of its charts.
 
 ## Search
 
-Write the search words right after the command. The result is a table for people; --json prints JSON.
+Write the search words right after the command. The result is a table for people; `--json` prints JSON.
 
 ```sh
 expl server search "sales" --limit 3 --json
 ```
 
---limit sets the maximum number of results, up to 50.
+`--limit` sets the maximum number of results, up to 50.
 
-To list your own content, leave the search words empty and add --scope mine.
+To list your own content, leave the search words empty and add `--scope` mine.
 
 ```sh
 expl server search "" --scope mine --limit 50 --json
 ```
 
-When has_more in the result is true, there are more results. Pass next_offset to --offset to get the next page.
+When has_more in the result is true, there are more results. Pass next_offset to `--offset` to get the next page.
 
 <a id="id"></a>
 
@@ -89,27 +91,27 @@ A note, dashboard or slide returns its text, the first rows of each embedded cha
 
 ## Read a long note
 
-You do not have to read a long note in full. To read one heading, pass a heading id from metadata.toc to --section.
+You do not have to read a long note in full. To read one heading, pass a heading id from metadata.toc to `--section`.
 
 ```sh
 expl server fetch <id> --section s2 --json
 ```
 
-Replace s2 with a heading id from metadata.toc. If metadata.toc is not returned, add --include-toc to the command, or search with --query first and use a heading id shown in the result.
+Replace s2 with a heading id from metadata.toc. If metadata.toc is not returned, add `--include-toc` to the command, or search with `--query` first and use a heading id shown in the result.
 
-To find a topic, pass words to --query. It returns the paragraphs that contain any of the space-separated words, each with its heading path.
+To find a topic, pass words to `--query`. It returns the paragraphs that contain any of the space-separated words, each with its heading path.
 
 ```sh
 expl server fetch <id> --query "sales forecast" --json
 ```
 
-When a long note is cut off, pass the value of metadata.range.next_cursor to --cursor to read on.
+When a long note is cut off, pass the value of metadata.range.next_cursor to `--cursor` to read on.
 
 <a id="charts"></a>
 
 ## Get the numbers of a chart
 
-The names of the charts in a note or dashboard are in metadata.charts in the result of fetch. Pass a name to --chart to get the numbers of that chart.
+The names of the charts in a note or dashboard are in metadata.charts in the result of fetch. Pass a name to `--chart` to get the numbers of that chart.
 
 ```sh
 expl server chart get-data <id> --chart <chart> --limit 5 --json
@@ -202,7 +204,7 @@ To see the shape of a chart, get its image. The image is the one saved at publis
 expl server chart get-image <id> --chart <chart> --json
 ```
 
-To get the result of an analytics, pass its name from metadata.blocks in the result of fetch to --analytics.
+To get the result of an analytics, pass its name from metadata.blocks in the result of fetch to `--analytics`.
 
 ```sh
 expl server analytics get-result <id> --analytics <analytics> --limit 3 --json

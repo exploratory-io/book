@@ -1,4 +1,6 @@
-# Time Series Forecasting (ARIMA)
+---
+title: "Time Series Forecasting (ARIMA)"
+---
 
 Builds ARIMA time series forecasting model and makes forecast.
 

@@ -1,4 +1,7 @@
-# Save Chart as PNG / SVG
+---
+title: "Save Chart as PNG / SVG"
+sidebarTitle: "Save as PNG/SVG"
+---
 
 You can export the chart in PNG or SVG format by the "Export Chart as Image File" option in the Export dropdown menu.
 

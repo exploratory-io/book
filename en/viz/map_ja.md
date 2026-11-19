@@ -1,4 +1,6 @@
-# Map - Long / Lat
+---
+title: "Map - Long / Lat"
+---
 
 ![](images/ll1.png)
 

@@ -1,4 +1,6 @@
-# Using Variables in SQL
+---
+title: "Using Variables in SQL"
+---
 
 First, define a variable in R script file.
 

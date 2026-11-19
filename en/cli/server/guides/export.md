@@ -1,4 +1,6 @@
-# Save results to a file
+---
+title: "Save results to a file"
+---
 
 Save the result of a filter or aggregation on a data item as a CSV or Parquet file, and get a download link.
 
@@ -44,9 +46,9 @@ Replace \<dataset_id\> with the id of a data item. The result below was run on t
 }
 ```
 
-The download link expires in 15 minutes and works only for the same signed-in user. Choose the format with --format. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Use --output to choose where to save the file.
+The download link expires in 15 minutes and works only for the same signed-in user. Choose the format with `--format`. The default is csv (UTF-8 with BOM, which opens correctly in Excel). Use `--output` to choose where to save the file.
 
-The example above creates the file on the server and returns a download link. Nothing is saved on your computer. To save it on your computer, add --output:
+The example above creates the file on the server and returns a download link. Nothing is saved on your computer. To save it on your computer, add `--output`:
 
 ```sh
 expl server dataframe export <dataset_id> --mode rows --limit 5 --output rows.csv --json
@@ -99,6 +101,6 @@ A message can name a tool, such as dataframe_get_schema. Run expl server tools d
 | --- | --- |
 | DATA_EGRESS_LIMIT | The publisher does not allow downloading this data as a file. Use fetch or dataframe get-schema for what the publisher shares, or open the URL in the browser. |
 | SERVER_BUSY | Another export of yours is running, or you reached the hourly export limit. One export can run at a time per user. Try again in a few seconds; for the hourly limit, wait up to an hour. |
-| Run "expl server login". | You are not signed in, or the saved login or API key was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in, or the saved login or API key was rejected. Run expl server login. |
 
-Every flag is described in [dataframe export](../commands.md#dataframe-export), and how to filter and aggregate in [dataset query](../commands.md#dataset-query).
+Every flag is described in [dataframe export](/en/cli/server/commands#dataframe-export), and how to filter and aggregate in [dataset query](/en/cli/server/commands#dataset-query).

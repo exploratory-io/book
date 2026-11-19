@@ -1,4 +1,6 @@
-# Google Analytics Data
+---
+title: "Google Analytics Data"
+---
 
 You need to have a few information before you start adding Google Analytics data in Exploratory.
 

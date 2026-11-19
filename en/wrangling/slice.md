@@ -1,4 +1,7 @@
-# Slice
+---
+title: "Slice"
+---
+
 Select rows by positions. This is not supported for relational databases, in which case you should use filter() with row_number() function.
 
 ## How to Access This Feature

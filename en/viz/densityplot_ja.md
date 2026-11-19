@@ -1,3 +1,7 @@
+---
+title: "Density Plot"
+---
+
 ##  Density Plot 
 
 You can show the distribution of the data by the curved lines. This chart is a variation of a Histogram, but this can show the smoother distributions by smoothing out the noise.  

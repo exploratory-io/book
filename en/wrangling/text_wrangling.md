@@ -1,4 +1,7 @@
-# Text Wrangling UI
+---
+title: "Text Wrangling UI"
+sidebarTitle: "Text Wrangling"
+---
 
 With the Text Wrangling UI, you can remove, replace, and extract strings from your text data. 
 

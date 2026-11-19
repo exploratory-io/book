@@ -1,4 +1,6 @@
-# Analyze Flight Data - part 2
+---
+title: "Analyze Flight Data - part 2"
+---
 
 **Before you start**
 

@@ -1,4 +1,7 @@
-# Predict Data
+---
+title: "Predict Data"
+sidebarTitle: "Prediction"
+---
 
 ## How to Access This Feature
 

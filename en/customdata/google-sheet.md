@@ -1,4 +1,6 @@
-# Google Spreadsheet Data
+---
+title: "Google Spreadsheet Data"
+---
 
 ## Get Google Spreadsheet Name and Tab Name
 

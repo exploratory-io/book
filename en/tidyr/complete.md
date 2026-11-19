@@ -1,4 +1,6 @@
-# Complete
+---
+title: "Complete"
+---
 
 Complete a data frame by adding missing combinations of data.
 

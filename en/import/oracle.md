@@ -1,3 +1,6 @@
-# Oracle Database Data Import
+---
+title: "Oracle Database Data Import"
+sidebarTitle: "Oracle"
+---
 
 To be updated.

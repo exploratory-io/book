@@ -1,4 +1,7 @@
-# Google BigQuery Data Import
+---
+title: "Google BigQuery Data Import"
+sidebarTitle: "Google BigQuery"
+---
 
 ## 1. Before you start
 
@@ -104,6 +107,8 @@ FROM SUBQ;
 
 For Migration from legacy SQL, Please refer [Migrating to Standard SQL](https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-legacy-sql)
 
+
+<a id="6.-page-size"></a>
 
 ## 6. Page Size
 

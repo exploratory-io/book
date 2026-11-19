@@ -1,4 +1,6 @@
-# プラグインのインストール
+---
+title: "プラグインのインストール"
+---
 
 インストールすると、AI ツールから Exploratory Desktop を使えるようになります。Exploratory Desktop のシステム設定から、Desktop MCP のプラグインを、このコンピューターの AI ツールにインストールします。
 所要時間は 5 分ほどです。同じコンピューターに、Exploratory Desktop と、プラグインを入れる AI ツール（Claude Code、Codex、Antigravity、Cursor のいずれか）を用意してください。
@@ -40,7 +42,7 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
 ### AI ツールで確かめる
 
 1. インストールが終わったら、その AI ツールを起動し直します。
-2. AI ツールが初めて接続すると、Desktop に「AI ツールが許可を求めています」という画面が出ます。自分で起動したアプリだけ「許可する」を選んでください。「許可しない」を選んだときは、[うまくいかないとき](get-started.md#trouble)を参照してください。
+2. AI ツールが初めて接続すると、Desktop に「AI ツールが許可を求めています」という画面が出ます。自分で起動したアプリだけ「許可する」を選んでください。「許可しない」を選んだときは、[うまくいかないとき](/ja/mcp/desktop/get-started#trouble)を参照してください。
 3. Exploratory Desktop で、使うプロジェクトを開きます。
 4. AI ツールで、次のように頼みます。
 
@@ -69,7 +71,7 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 | Claude Code | Exploratory Desktop のプラグイン（スキルを含む） | 「インストール済み - v」とプラグインのバージョン。「インストール」の代わりに「再インストール」と「削除」 |
 | Codex | 同上 | 同上 |
 | Antigravity | 同上 | 同上 |
-| Cursor | 同じです。~/.cursor/mcp.json には書かず、プラグインを Cursor のプラグインのフォルダ（~/.cursor/plugins/local/exploratory）へコピーします。~/.cursor/mcp.json に古い exploratory-desktop の項目が残っていると、カードが削除します。ほかの項目は残ります | 同じです |
+| Cursor | 同じです。\~/.cursor/mcp.json には書かず、プラグインを Cursor のプラグインのフォルダ（\~/.cursor/plugins/local/exploratory）へコピーします。\~/.cursor/mcp.json に古い exploratory-desktop の項目が残っていると、カードが削除します。ほかの項目は残ります | 同じです |
 
 どの AI ツールも、インストールのあとに起動し直します。
 
@@ -134,7 +136,7 @@ Git が必要です。プラグインは、Antigravity のアプリの Customiza
 
 **Cursor**
 
-カードから入れます。手作業で行う別の手順はありません。カードが、スキルを含むプラグインを ~/.cursor/plugins/local/exploratory へコピーします。
+カードから入れます。手作業で行う別の手順はありません。カードが、スキルを含むプラグインを \~/.cursor/plugins/local/exploratory へコピーします。
 
 <a id="update"></a>
 
@@ -157,4 +159,4 @@ Desktop の MCP は、Exploratory Desktop を終了すると止まります。�
 
 ## うまくいかないとき
 
-[トラブルシューティング](troubleshooting.md) を参照してください。
+[トラブルシューティング](/ja/mcp/desktop/troubleshooting) を参照してください。

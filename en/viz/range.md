@@ -1,4 +1,7 @@
-# Range
+---
+title: "Range"
+sidebarTitle: "Show Range"
+---
 
 The Range feature enables you to show additional range information on a chart. It is available in Line and Scatter (No Aggregation) charts. 
 

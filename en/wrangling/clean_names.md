@@ -1,4 +1,7 @@
-# Clean Column Names
+---
+title: "Clean Column Names"
+---
+
 Clean up all column names on the data frame.
 
 ## How to Access This Feature

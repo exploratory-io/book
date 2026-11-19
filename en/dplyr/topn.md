@@ -1,4 +1,6 @@
-# Top N
+---
+title: "Top N"
+---
 
 Select the top n entries based on a given measure in each group.
 

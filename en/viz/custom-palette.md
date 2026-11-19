@@ -1,4 +1,7 @@
-# User Color Palette
+---
+title: "User Color Palette"
+sidebarTitle: "User Color Palette Setting"
+---
 
 You can create your own palette from the User Color Palette dialog. Here is how to build your own color palettes.
 

@@ -1,4 +1,6 @@
-# 使える道具
+---
+title: "使える道具"
+---
 
 Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いているプロジェクトを操作できます。目的から、できることを確認します。
 
@@ -21,7 +23,7 @@ Desktop MCP を使うと、AI ツールが Exploratory Desktop で開いてい�
 
 > **変更や削除を行う道具があります**
 >
-> これらの道具には、削除、公開と公開の取り消し、R コードの実行を行うものがあります。Desktop が先に確認する仕組みは、[許可の範囲と設定](permissions.md)で説明しています。
+> これらの道具には、削除、公開と公開の取り消し、R コードの実行を行うものがあります。Desktop が先に確認する仕組みは、[許可の範囲と設定](/ja/mcp/desktop/permissions)で説明しています。
 
 <a id="all-tools"></a>
 

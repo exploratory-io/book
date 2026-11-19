@@ -1,4 +1,6 @@
-# Notification
+---
+title: "Notification"
+---
 
 You can set the notification for the team members if the insight is shared as a team. If you want to set up the notification, select the "Notification Setting" from the menu.
 

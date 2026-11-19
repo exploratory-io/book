@@ -1,4 +1,6 @@
-# アナリティクスの結果を取得する
+---
+title: "アナリティクスの結果を取得する"
+---
 
 公開されたダッシュボードやノートに含まれるアナリティクス（回帰、相関、カイ二乗検定など）の結果を、構造化されたデータとして取得します。
 
@@ -40,7 +42,7 @@ expl server fetch <id> --json
 
 ### 2. 結果を取得する
 
-確認した name を --analytics に指定して、analytics get-result を実行します。
+確認した name を `--analytics` に指定して、analytics get-result を実行します。
 
 ```sh
 expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
@@ -136,7 +138,7 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 
 結果には、モデルの定義（目的変数、説明変数、N）、列の ID が固定された結果の表、学習データとテストデータに分けた主要な統計量、実行時の設定、説明の文（数値から作ったものか、AI が作ったものかの印つき）が含まれます。数値は表示されたとおりの値で、係数は標準化されていません。この例は時系列の予測であるため、model_definition の target と predictors は空です。
 
---limit は、表ごとの最大行数です（最大 100 行）。続きを取得する方法はありません。既定では、分析の答えとなる表が返ります。返す表を指定する場合は、available_tables の id を --tables に指定します。
+`--limit` は、表ごとの最大行数です（最大 100 行）。続きを取得する方法はありません。既定では、分析の答えとなる表が返ります。返す表を指定する場合は、available_tables の id を `--tables` に指定します。
 
 > result.tables に結果の表が表示されていれば、取得できています。
 
@@ -147,6 +149,6 @@ expl server analytics get-result <id> --analytics <analytics> --limit 3 --json
 | 症状 | 対処 |
 | --- | --- |
 | アナリティクスの名前が分からない | fetch の結果の metadata.blocks を確認します。 |
-| Run "expl server login". | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
 
-すべてのフラグは、[analytics get-result](../commands.md#analytics-get-result)で説明しています。
+すべてのフラグは、[analytics get-result](/ja/cli/server/commands#analytics-get-result)で説明しています。

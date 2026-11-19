@@ -1,4 +1,6 @@
-# Evaluate Prediction - Multiclass
+---
+title: "Evaluate Prediction - Multiclass"
+---
 
 Returns a data frame with evaluation score of multi classification including the below.
 

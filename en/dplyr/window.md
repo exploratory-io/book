@@ -1,4 +1,6 @@
-# Window Functions
+---
+title: "Window Functions"
+---
 
 Exploratory supports the following window functions. 
 

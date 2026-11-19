@@ -1,4 +1,7 @@
-# Window (Table) Calculation 
+---
+title: "Window (Table) Calculation"
+sidebarTitle: "Window Calculation"
+---
 
 The Window Calculation is available on Pivot, Summarize Table, Bar, Line, and Area charts. 
 

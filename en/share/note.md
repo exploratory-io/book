@@ -1,4 +1,7 @@
-# How to Share Report (Note or Dashboard)
+---
+title: "How to Share Report (Note or Dashboard)"
+sidebarTitle: "Report (Note / Dashboard)"
+---
 
 You can simply click 'Publish' button in the report (Note or Dashboard). 
 
@@ -26,4 +29,4 @@ You can republish or stop publishing by the buttons at the bottom of the dialog 
 
 # Schedule 
 
-Once you publish your Note or Dashboard, you can setup a schedule to refresh your Note or Dashboard periodically. See the [document](../schedule/manage.md) for more details about how to manage the schedule. 
+Once you publish your Note or Dashboard, you can setup a schedule to refresh your Note or Dashboard periodically. See the [document](/en/schedule/manage) for more details about how to manage the schedule. 

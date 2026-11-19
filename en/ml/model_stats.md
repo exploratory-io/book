@@ -1,4 +1,7 @@
-# Summary of Fit
+---
+title: "Summary of Fit"
+sidebarTitle: "Extract Summary of Fit"
+---
 
 ## How to Access This Feature
 

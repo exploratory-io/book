@@ -1,4 +1,6 @@
-# LightGBM
+---
+title: "LightGBM"
+---
 
 LightGBM is one of the most popular machine learning algorithms for building predictive models for both classification and regression tasks. It belongs to the same gradient boosting family as XGBoost, while achieving faster training and better memory efficiency.
 

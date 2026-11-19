@@ -1,4 +1,6 @@
-# 使える道具
+---
+title: "使える道具"
+---
 
 道具は、AI が呼び出す操作です。目的から操作を選び、その下で入力を確認できます。
 
@@ -8,17 +10,17 @@
 
 | 種類 | 道具 | 読み取りだけ／作成・変更・削除 | 用途 |
 | --- | --- | --- | --- |
-| 探す・読む | [search](tools.md#search) | 読み取りだけ | 公開されたコンテンツを探し、一覧します。 |
-| 探す・読む | [fetch](tools.md#fetch) | 読み取りだけ | ノート、ダッシュボード、スライド、データを Markdown で読みます。 |
-| チャートとアナリティクス | [chart_get_data](tools.md#chart_get_data) | 読み取りだけ | チャートの数値を取得します。 |
-| チャートとアナリティクス | [chart_get_image](tools.md#chart_get_image) | 読み取りだけ | チャートを画像として取得します。 |
-| チャートとアナリティクス | [chart_query](tools.md#chart_query) | 読み取りだけ | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
-| チャートとアナリティクス | [analytics_get_result](tools.md#analytics_get_result) | 読み取りだけ | 係数や p 値など、アナリティクスの結果を取得します。 |
-| データ | [dataframe_get_schema](tools.md#dataframe_get_schema) | 読み取りだけ | 列の名前、型、承認された意味を調べます。 |
-| データ | [dataframe_get_wrangling](tools.md#dataframe_get_wrangling) | 読み取りだけ | データがどう加工されて作られたかを、ステップごとに見ます。 |
-| データ | [dataframe_preview](tools.md#dataframe_preview) | 読み取りだけ | 行を見ます。 |
-| データ | [query_dataset](tools.md#query_dataset) | 読み取りだけ | サーバーで絞り込み、集計します。 |
-| データ | [dataframe_export](tools.md#dataframe_export) | 読み取りだけ（ダウンロードリンクを作ります） | 結果を CSV か Parquet で保存します。 |
+| 探す・読む | [search](/ja/mcp/server/tools#search) | 読み取りだけ | 公開されたコンテンツを探し、一覧します。 |
+| 探す・読む | [fetch](/ja/mcp/server/tools#fetch) | 読み取りだけ | ノート、ダッシュボード、スライド、データを Markdown で読みます。 |
+| チャートとアナリティクス | [chart_get_data](/ja/mcp/server/tools#chart_get_data) | 読み取りだけ | チャートの数値を取得します。 |
+| チャートとアナリティクス | [chart_get_image](/ja/mcp/server/tools#chart_get_image) | 読み取りだけ | チャートを画像として取得します。 |
+| チャートとアナリティクス | [chart_query](/ja/mcp/server/tools#chart_query) | 読み取りだけ | ノート、ダッシュボード、スライド内のチャートのデータを、サーバーで絞り込み、集計します。 |
+| チャートとアナリティクス | [analytics_get_result](/ja/mcp/server/tools#analytics_get_result) | 読み取りだけ | 係数や p 値など、アナリティクスの結果を取得します。 |
+| データ | [dataframe_get_schema](/ja/mcp/server/tools#dataframe_get_schema) | 読み取りだけ | 列の名前、型、承認された意味を調べます。 |
+| データ | [dataframe_get_wrangling](/ja/mcp/server/tools#dataframe_get_wrangling) | 読み取りだけ | データがどう加工されて作られたかを、ステップごとに見ます。 |
+| データ | [dataframe_preview](/ja/mcp/server/tools#dataframe_preview) | 読み取りだけ | 行を見ます。 |
+| データ | [query_dataset](/ja/mcp/server/tools#query_dataset) | 読み取りだけ | サーバーで絞り込み、集計します。 |
+| データ | [dataframe_export](/ja/mcp/server/tools#dataframe_export) | 読み取りだけ（ダウンロードリンクを作ります） | 結果を CSV か Parquet で保存します。 |
 
 exploratory.io では、これらの道具が使えます。オンプレミスのサーバーでは、使える道具はサーバーの設定によって変わります。query_dataset、chart_query、dataframe_export は、管理者が有効にしたときだけ使えます。設定によっては、ほかの道具も増えます。たとえば desktop_mcp_setup_guide は、AI ツールを Exploratory Desktop につなぐ手順を返します。お使いのサーバーにある道具は、expl server tools list で確認できます。
 
@@ -174,8 +176,8 @@ id を指定して、ノート、ダッシュボード、スライド、デー�
 | --- | --- | --- | --- |
 | `dataset_id` | 文字列 | queries か datasets を使うとき以外は必須 | データの id です。検索結果や fetch の結果に出ます。 |
 | `mode` | 文字列 | queries を使うとき以外は必須 | rows: 条件に合う行を取得します。aggregate: dimensions でグループに分けて、metrics を計算します。値: `rows`, `aggregate` |
-| `columns` | 配列 | rows モードでは必須（結合のときは省略可） | rows だけで使います。返す列の名前を、1〜50 個、重ならないように指定します。結合するときは { "alias", "column" } で書きます。結合のときに省くと、すべての列が返ります。 |
-| `filters` | JSON |  | 絞り込みの条件です。条件 1 つか、{ "and": \[...\] } か { "or": \[...\] }（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |
+| `columns` | 配列 | rows モードでは必須（結合のときは省略可） | rows だけで使います。返す列の名前を、1〜50 個、重ならないように指定します。結合するときは `{ "alias", "column" }` で書きます。結合のときに省くと、すべての列が返ります。 |
+| `filters` | JSON |  | 絞り込みの条件です。条件 1 つか、`{ "and": [...] }` か `{ "or": [...] }`（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |
 | `dimensions` | 配列 |  | aggregate だけで使います。グループに分ける列を、0〜5 個指定します。保存されている値のまま分けるので、日付から月や年を取り出してグループ化する指定はありません。指定しないと、全体で 1 行になります。 |
 | `metrics` | 配列 | aggregate のときは必須 | aggregate だけで使い、必須です。計算を 1〜10 個指定します。function は count_rows、count、count_distinct、sum、avg、min、max のどれかです。 |
 | `sort` | 配列 |  | 並べ替えです。3 つまで指定します。sort.field は、出力の列の名前です。 |
@@ -209,7 +211,7 @@ id を指定して、ノート、ダッシュボード、スライド、デー�
 | `chart` | 文字列 | queries を使うとき以外は必須 | チャートの名前です。fetch の結果の metadata.charts\[\].name にあります（英数字、_、-）。 |
 | `mode` | 文字列 | queries を使うとき以外は必須 | rows: 条件に合う行を取得します。aggregate: dimensions でグループに分けて、metrics を計算します。値: `rows`, `aggregate` |
 | `columns` | 配列 |  | rows だけで使います。返す列の名前を、1〜50 個、重ならないように指定します。 |
-| `filters` | JSON |  | 絞り込みの条件です。条件 1 つか、{ "and": \[...\] } か { "or": \[...\] }（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |
+| `filters` | JSON |  | 絞り込みの条件です。条件 1 つか、`{ "and": [...] }` か `{ "or": [...] }`（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |
 | `dimensions` | 配列 |  | aggregate だけで使います。グループに分ける列を、0〜5 個指定します。保存されている値のまま分けるので、日付から月や年を取り出してグループ化する指定はありません。指定しないと、全体で 1 行になります。 |
 | `metrics` | 配列 | aggregate のときは必須 | aggregate だけで使い、必須です。計算を 1〜10 個指定します。function は count_rows、count、count_distinct、sum、avg、min、max のどれかです。 |
 | `sort` | 配列 |  | 並べ替えです。3 つまで指定します。 |
@@ -233,7 +235,7 @@ id を指定して、ノート、ダッシュボード、スライド、デー�
 | `format` | 文字列 |  | ファイルの形式です。既定は csv です（UTF-8 の BOM つきで、Excel で正しく開けます）。 値: `csv`, `parquet` |
 | `mode` | 文字列 | 必須 | rows: 条件に合う行を書き出します。aggregate: dimensions でグループに分けて、metrics を計算した結果を書き出します。 値: `rows`, `aggregate` |
 | `columns` | 配列 |  | rows だけで使います。書き出す列の名前を、1〜50 個、重ならないように指定します。省くと、すべての列を書き出します。 |
-| `filters` | JSON |  | 絞り込みの条件です。条件 1 つか、{ "and": \[...\] } か { "or": \[...\] }（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |
+| `filters` | JSON |  | 絞り込みの条件です。条件 1 つか、`{ "and": [...] }` か `{ "or": [...] }`（各 2 つ以上）で書きます。入れ子は 3 段まで、条件は全体で 20 個までです。 |
 | `dimensions` | 配列 |  | aggregate だけで使います。グループに分ける列を、0〜5 個指定します。 |
 | `metrics` | 配列 | aggregate のときは必須 | aggregate だけで使い、必須です。計算を 1〜10 個指定します。 |
 | `sort` | 配列 |  | 並べ替えです。3 つまで指定します。 |

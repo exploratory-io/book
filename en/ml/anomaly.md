@@ -1,4 +1,6 @@
-# Anomaly Detection
+---
+title: "Anomaly Detection"
+---
 
 ## Introduction
 

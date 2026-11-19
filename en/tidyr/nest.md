@@ -1,4 +1,6 @@
-# Nest
+---
+title: "Nest"
+---
 
 Nest a set of columns together as a list column.  
 

@@ -1,4 +1,6 @@
-# Step by Step Tutorials
+---
+title: "Step by Step Tutorials"
+---
 
 Exploratory Desktop provides a streamlined experience for Data Wrangling, Visualization & Machine Learning, powered by R.
 

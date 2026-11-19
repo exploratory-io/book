@@ -1,4 +1,6 @@
-# Unite
+---
+title: "Unite"
+---
 
 Unite multiple columns together into one column with given uniting characters. It will concatenate values by “\_" and remove the original column by default. Multiple columns specified in the list can be combined together at once.
 

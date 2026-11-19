@@ -1,4 +1,6 @@
-# Multi Dimensional Scaling
+---
+title: "Multi Dimensional Scaling"
+---
 
 ## Introduction
 

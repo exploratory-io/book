@@ -1,4 +1,6 @@
-# Cursor につなぐ
+---
+title: "Cursor につなぐ"
+---
 
 接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Cursor のエージェントに Exploratory のサーバーを登録し、ブラウザでサインインします。Grok を含め、Cursor で選んだモデルで使えます。
 かかる時間は 5 分ほどです。Exploratory のアカウントと、Cursor を用意してください。
@@ -19,7 +21,7 @@
 
 お使いのアプリの公式一覧に Exploratory Server が掲載されている場合は、その手順で追加します。掲載されていない場合は、次の手順で、サーバーのみを手動で追加します。スキルは含まれません。`exploratory@exploratory` は Desktop 用です。
 
-1. ~/.cursor/mcp.json（プロジェクト単位の場合は .cursor/mcp.json）を開きます。
+1. \~/.cursor/mcp.json（プロジェクト単位の場合は .cursor/mcp.json）を開きます。
 2. 次の `exploratory-server` の項目を追加します。ファイルにすでに `mcpServers` がある場合は、その中に `exploratory-server` の項目だけを追加し、ほかのサーバーの設定は残します。以下は、新しいファイルを作る場合の全体の例です。
 
    ```text
@@ -76,7 +78,7 @@ agent mcp login exploratory-server
 Exploratory にある「Sales Orders」のデータを探して
 ```
 
-Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](../troubleshooting.md#zero)を参照してください。
+Sales Orders は例です。閲覧できるデータの名前に置き換えてください。結果が 0 件でも、認証や接続に失敗したとは限りません。見分け方は、[自分のコンテンツが出ない](/ja/mcp/server/troubleshooting#zero)を参照してください。
 
 送信したあと、結果を確かめます。
 
@@ -108,7 +110,7 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 }
 ```
 
-キーを mcp.json にそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](../auth.md#apikey)を参照してください。
+キーを mcp.json にそのまま書くと、ファイルに残ります。上のサインインか、この方法か、どちらか一方だけを使います。キーで読めるものは、[API キーで接続する](/ja/mcp/server/auth#apikey)を参照してください。
 
 <a id="trouble"></a>
 
@@ -119,7 +121,7 @@ Sales Orders のデータが URL 付きで表示されていれば、接続で�
 | サインインを求められる | agent mcp login exploratory-server を実行して、もう一度サインインします。 |
 | Desktop のプラグインをインストールしたが、Server の道具が表示されない | Desktop のプラグインには、Server は含まれません。上の JSON で、Server を追加します。 |
 
-- [トラブルシューティング](../troubleshooting.md) - Server の MCP 全体の、症状ごとの対処です。
+- [トラブルシューティング](/ja/mcp/server/troubleshooting) - Server の MCP 全体の、症状ごとの対処です。
 
 <a id="remove"></a>
 

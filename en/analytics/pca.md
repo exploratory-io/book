@@ -1,4 +1,7 @@
-# Principal Component Analysis Analytics View
+---
+title: "Principal Component Analysis Analytics View"
+sidebarTitle: "Principal Component Analysis"
+---
 
 Runs Principal Component Analysis, which converts data so that observations (rows) are expressed in a set of variables called principal components.
 Principal components tries to keep as much information of the original data in as few variables as possible.

@@ -1,4 +1,6 @@
-# Install the plugin
+---
+title: "Install the plugin"
+---
 
 After you install it, an AI tool can use Exploratory Desktop. In Exploratory Desktop, System Settings installs the Desktop MCP plugin into the AI tools on this computer.
 It takes about 5 minutes. You need Exploratory Desktop and the AI tool you want to install into (Claude Code, Codex, Antigravity or Cursor) on the same computer.
@@ -40,7 +42,7 @@ If you do not save, the MCP switch and the Allow create, edit and delete setting
 ### Check it in the AI tool
 
 1. When the install ends, restart that AI tool.
-2. The first time an AI tool connects, Desktop shows a window titled "An AI tool is asking for your approval". Choose Allow only for an app you started yourself. If you choose Don't allow, see [If something does not work](get-started.md#trouble).
+2. The first time an AI tool connects, Desktop shows a window titled "An AI tool is asking for your approval". Choose Allow only for an app you started yourself. If you choose Don't allow, see [If something does not work](/en/mcp/desktop/get-started#trouble).
 3. In Exploratory Desktop, open the project you want to use.
 4. In the AI tool, ask this.
 
@@ -69,7 +71,7 @@ The card works the same way, but what it installs differs a little.
 | Claude Code | The Exploratory Desktop plugin (with its skills) | "Installed - v" followed by the plugin version; Reinstall and Remove take the place of Install |
 | Codex | Same | Same |
 | Antigravity | Same | Same |
-| Cursor | Same. It copies the plugin to the Cursor plugin folder (~/.cursor/plugins/local/exploratory) instead of writing ~/.cursor/mcp.json. If ~/.cursor/mcp.json still has an old exploratory-desktop entry, the card deletes it; other entries stay | Same |
+| Cursor | Same. It copies the plugin to the Cursor plugin folder (\~/.cursor/plugins/local/exploratory) instead of writing \~/.cursor/mcp.json. If \~/.cursor/mcp.json still has an old exploratory-desktop entry, the card deletes it; other entries stay | Same |
 
 Restart the AI tool after installing, whichever one it is.
 
@@ -134,7 +136,7 @@ Needs Git. The plugin appears in the Antigravity app under Customizations \> Ins
 
 **Cursor**
 
-Install it with the card. There is no separate step to do by hand: the card copies the plugin, with its skills, to ~/.cursor/plugins/local/exploratory.
+Install it with the card. There is no separate step to do by hand: the card copies the plugin, with its skills, to \~/.cursor/plugins/local/exploratory.
 
 <a id="update"></a>
 
@@ -157,4 +159,4 @@ The Desktop MCP stops when you quit Exploratory Desktop. Removing the plugin doe
 
 ## If it does not work
 
-[Troubleshooting](troubleshooting.md) lists the messages and what to do.
+[Troubleshooting](/en/mcp/desktop/troubleshooting) lists the messages and what to do.

@@ -1,4 +1,6 @@
-# チャートの数値を取得する
+---
+title: "チャートの数値を取得する"
+---
 
 公開されたダッシュボードやノートに含まれるチャートについて、数値の取得、サーバーでの集計、画像の取得を行います。
 
@@ -79,7 +81,7 @@ expl server fetch <id> --json
 
 ### 2. 数値を取得する
 
-確認した name を --chart に指定して、chart get-data を実行します。
+確認した name を `--chart` に指定して、chart get-data を実行します。
 
 ```sh
 expl server chart get-data <id> --chart <chart> --limit 5 --json
@@ -166,7 +168,7 @@ expl server chart get-data <id> --chart <chart> --limit 5 --json
 
 rows に数値が、chart.encoding に各軸の列と集計方法が表示されます。context には、公開時点、データの時点、パラメーターの値が含まれます。数値は、公開されたときの値です。
 
-has_more が true の場合は、続きがあります。取得済みの行数を --offset に指定すると、続きを取得できます。1 回の呼び出しで取得できる行数は、最大 100 行です。
+has_more が true の場合は、続きがあります。取得済みの行数を `--offset` に指定すると、続きを取得できます。1 回の呼び出しで取得できる行数は、最大 100 行です。
 
 > rows に先頭 5 行が表示されていれば、数値を取得できています。
 
@@ -351,7 +353,7 @@ expl server chart get-image <id> --chart <chart> --json
 }
 ```
 
-画像は、公開したときに保存されたもので、データより古い場合があります。result.image.may_be_stale で確認します。画像は expl を実行しているコンピューターに保存され、保存先は image_path に表示されます。--output で保存先を指定することもできます。正確な数値は、画像ではなく chart get-data で取得します。
+画像は、公開したときに保存されたもので、データより古い場合があります。result.image.may_be_stale で確認します。画像は expl を実行しているコンピューターに保存され、保存先は image_path に表示されます。`--output` で保存先を指定することもできます。正確な数値は、画像ではなく chart get-data で取得します。
 
 > result.image に画像の情報が表示されていれば、取得できています。
 
@@ -363,6 +365,6 @@ expl server chart get-image <id> --chart <chart> --json
 | --- | --- |
 | 合計、並べ替え、絞り込みが必要 | chart query を使用します。 |
 | DATA_EGRESS_LIMIT | 公開した人が、このデータの行を共有していません。チャート、アナリティクス、要約を使用します。 |
-| Run "expl server login". | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
+| `Run "expl server login".` | サインインしていないか、保存したログイン情報または API キーが拒否されています。expl server login を実行します。 |
 
-すべてのフラグは[chart get-data](../commands.md#chart-get-data)、集計の指定方法は[chart query](../commands.md#chart-query)、画像の取得は[chart get-image](../commands.md#chart-get-image)で説明しています。
+すべてのフラグは[chart get-data](/ja/cli/server/commands#chart-get-data)、集計の指定方法は[chart query](/ja/cli/server/commands#chart-query)、画像の取得は[chart get-image](/ja/cli/server/commands#chart-get-image)で説明しています。

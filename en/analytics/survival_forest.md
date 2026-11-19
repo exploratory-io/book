@@ -1,4 +1,6 @@
-# Random Survival Forest
+---
+title: "Random Survival Forest"
+---
 
 Builds Random Survival Forest Model, which predicts survival curves of subjects based on the specified predictor variables.
 

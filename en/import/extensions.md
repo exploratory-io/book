@@ -1,4 +1,6 @@
-# Data Source Extension
+---
+title: "Data Source Extension"
+---
 
 You can select ‘Import Extension Data’ from ‘+’ (Add Data Frame) button.
 

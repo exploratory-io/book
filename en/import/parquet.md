@@ -1,4 +1,7 @@
-# Import Parquet File Data
+---
+title: "Import Parquet File Data"
+sidebarTitle: "Parquet File"
+---
 
 You can import both local and remote Parquet File Data quickly.
 

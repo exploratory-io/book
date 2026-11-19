@@ -1,4 +1,6 @@
-# トラブルシューティング
+---
+title: "トラブルシューティング"
+---
 
 症状から、対処を探します。
 
@@ -6,7 +8,7 @@
 
 ## まず状態を確かめる
 
-接続できているかを、[はじめる](get-started.md#steps)の手順 3 で確かめます。つながらないときは、下で、症状を探します。
+接続できているかを、[はじめる](/ja/mcp/server/get-started#steps)の手順 3 で確かめます。つながらないときは、下で、症状を探します。
 
 <a id="contact"></a>
 
@@ -37,7 +39,7 @@ IT の担当者に、exploratory.io への通信を許可してもらいます�
 | Antigravity | クライアントのページの、サインインの手順をもう一度行う |
 | そのほかのアプリ | そのクライアントの資料にあるとおりにサインインし直すか、API キーで接続する |
 
-- [AI ツールから追加する](clients/apps.md) - クライアントごとの手順です。
+- [AI ツールから追加する](/ja/mcp/server/clients/apps) - クライアントごとの手順です。
 
 <a id="apikey"></a>
 
@@ -52,7 +54,7 @@ IT の担当者に、exploratory.io への通信を許可してもらいます�
 | 403 | This IP address is not allowed for API keys. | 管理者が、API キーを使える IP アドレスを限定しています。許可されたアドレスから接続します。 |
 | 429 | Too many failed API key attempts. Try again later. | 同じアドレスから（IPv4 は同じアドレス、IPv6 は同じ /64 の範囲で数えます）、15 分のうちに 30 回を超えて、拒否されたキーが送られました。キーを直して、しばらくしてからやり直します。 |
 
-- [API キーで接続する](auth.md#apikey) - ヘッダーの書き方と、キーで読めるものです。
+- [API キーで接続する](/ja/mcp/server/auth#apikey) - ヘッダーの書き方と、キーで読めるものです。
 
 <a id="duplicate"></a>
 
@@ -88,4 +90,4 @@ claude mcp remove exploratory-server
 | SERVER_BUSY | 数秒おいて再度呼び出します。2 回続いたら、時間をおきます。書き出しの上限の場合は、最大 1 時間待ちます。 |
 | RATE_LIMIT_EXCEEDED / QUERY_ENGINE_UNAVAILABLE | 問い合わせが混み合っています。数秒おいて再度呼び出します。 |
 
-- [制限とエラー](limits.md) - エラーの一覧です。
+- [制限とエラー](/ja/mcp/server/limits) - エラーの一覧です。

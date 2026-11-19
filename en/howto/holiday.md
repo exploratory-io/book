@@ -1,4 +1,7 @@
-# How to Set Holidays Data for Time Series Forecast
+---
+title: "How to Set Holidays Data for Time Series Forecast"
+sidebarTitle: "Holidays Data for Forecast"
+---
 
 In this page, I will introduce how to set holidays data for time series forecasting.
 

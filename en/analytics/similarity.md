@@ -1,4 +1,7 @@
-# Similarity
+---
+title: "Similarity"
+---
+
 Calculates similarity among the given category items.
 
 ## Input Data

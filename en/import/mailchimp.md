@@ -1,4 +1,6 @@
-# Import MailChimp API Data
+---
+title: "Import MailChimp API Data"
+---
 
 You can get your MailChimp related data quickly.
 

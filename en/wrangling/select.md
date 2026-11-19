@@ -1,4 +1,7 @@
-# Select / Remove Columns
+---
+title: "Select / Remove Columns"
+---
+
 Select / Remove column(s) by column names.
 
 ## How to Access This Feature

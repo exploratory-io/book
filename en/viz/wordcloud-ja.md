@@ -1,4 +1,6 @@
-# ワードクラウド
+---
+title: "ワードクラウド"
+---
 
 ![](images/wordcloud-jp.png)
 

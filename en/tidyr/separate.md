@@ -1,4 +1,6 @@
-# Separate
+---
+title: "Separate"
+---
 
 Given either regular expression or a vector of character positions, separate() turns a single character column into multiple columns. It will separate by non-alphanumeric values and remove the original column by default.
 

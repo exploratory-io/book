@@ -1,4 +1,6 @@
-# Right Join
+---
+title: "Right Join"
+---
 
 Return all rows from the target data set, and all columns from the current and the target  
 

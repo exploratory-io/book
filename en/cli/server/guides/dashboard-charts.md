@@ -1,4 +1,6 @@
-# Get chart numbers
+---
+title: "Get chart numbers"
+---
 
 For a chart in a published dashboard or note, get its numbers, aggregate them on the server, and get its image.
 
@@ -79,7 +81,7 @@ Replace \<id\> with an id from a search result. The result below was run on the 
 
 ### 2. Get the numbers
 
-Pass a name to --chart and run chart get-data.
+Pass a name to `--chart` and run chart get-data.
 
 ```sh
 expl server chart get-data <id> --chart <chart> --limit 5 --json
@@ -166,7 +168,7 @@ Replace \<id\> with the id of the dashboard and \<chart\> with the name of the c
 
 rows holds the numbers, and chart.encoding the column and aggregation of each axis. context holds the publication time, the data time and the parameter values. The numbers are the values as published.
 
-When has_more is true, there are more rows. Pass the number of rows you have already read to --offset to read on. One call returns at most 100 rows.
+When has_more is true, there are more rows. Pass the number of rows you have already read to `--offset` to read on. One call returns at most 100 rows.
 
 > If the first 5 rows are in rows, you have the numbers.
 
@@ -351,7 +353,7 @@ Example of the output shape; values are illustrative. The example is for the cha
 }
 ```
 
-The image is the one saved when the item was published, so it can be older than the data. Check result.image.may_be_stale. The image is saved on the computer that runs expl, and image_path shows where. You can also choose the location with --output. Read exact numbers with chart get-data, not from the image.
+The image is the one saved when the item was published, so it can be older than the data. Check result.image.may_be_stale. The image is saved on the computer that runs expl, and image_path shows where. You can also choose the location with `--output`. Read exact numbers with chart get-data, not from the image.
 
 > If result.image describes the image, you have it.
 
@@ -363,6 +365,6 @@ The image is the one saved when the item was published, so it can be older than 
 | --- | --- |
 | You need totals, sorting or filtering | Use chart query. |
 | DATA_EGRESS_LIMIT | The publisher does not share the rows of this data. Use its charts, analytics or summary instead. |
-| Run "expl server login". | You are not signed in, or the saved login or API key was rejected. Run expl server login. |
+| `Run "expl server login".` | You are not signed in, or the saved login or API key was rejected. Run expl server login. |
 
-Every flag is described in [chart get-data](../commands.md#chart-get-data), how to aggregate in [chart query](../commands.md#chart-query), and getting the image in [chart get-image](../commands.md#chart-get-image).
+Every flag is described in [chart get-data](/en/cli/server/commands#chart-get-data), how to aggregate in [chart query](/en/cli/server/commands#chart-query), and getting the image in [chart get-image](/en/cli/server/commands#chart-get-image).

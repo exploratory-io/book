@@ -1,4 +1,6 @@
-# Draw Lines Grouped By Labels
+---
+title: "Draw Lines Grouped By Labels"
+---
 
 Trend Line feature is available for Scatter charts. You can draw Trend or Smooth Lines by selecting one of Trend Line types in the Trend Line Setting dialog. 
 

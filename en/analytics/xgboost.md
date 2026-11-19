@@ -1,4 +1,6 @@
-# XGBoost
+---
+title: "XGBoost"
+---
 
 Build XGBoost Model
 

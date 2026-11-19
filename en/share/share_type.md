@@ -1,4 +1,6 @@
-# Share Type
+---
+title: "Share Type"
+---
 
 You can publish the following content to Exploratory Server and share with others.
 
