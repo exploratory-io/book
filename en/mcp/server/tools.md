@@ -265,7 +265,7 @@ Return the steps and links for connecting an AI client to Exploratory Desktop. I
 
 ## get_page_guide
 
-Return how to write an Exploratory Page: the steps, the exploratory SDK a Page uses to read data, the libraries it may load, the rules and an example Page. The AI calls it before page_publish and page_update. For an example of use, see [Create a Page](/en/mcp/server/page).
+Return how to write an Exploratory Page: the steps, the exploratory SDK a Page uses to read data, the libraries it may load, the rules and an example Page. The AI calls it before page_publish and page_update. For an example of use, see [Create a Page](/en/page).
 
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |

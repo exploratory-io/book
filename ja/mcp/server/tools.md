@@ -265,7 +265,7 @@ Exploratory Desktop に AI ツールをつなぐための、手順とリンク�
 
 ## get_page_guide
 
-Exploratory Page の書き方を返します。手順、Page からデータを読む exploratory SDK、読み込めるライブラリ、規則、Page の例が含まれます。AI は、page_publish と page_update の前にこの道具を呼び出します。使い方の例は、[Page を作る](/ja/mcp/server/page)をご覧ください。
+Exploratory Page の書き方を返します。手順、Page からデータを読む exploratory SDK、読み込めるライブラリ、規則、Page の例が含まれます。AI は、page_publish と page_update の前にこの道具を呼び出します。使い方の例は、[Page を作る](/ja/page)をご覧ください。
 
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
