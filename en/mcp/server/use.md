@@ -102,4 +102,4 @@ This is a dashboard made with the request above.
 
 ![Example order status dashboard](images/en/sample-dashboard-en.png)
 
-For the full steps and examples of notes and slides, see [Create a Page](/en/page).
+For the full steps and examples of notes and slides, see [Create a Page](/en/page/getting-started).
