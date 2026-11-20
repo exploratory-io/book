@@ -234,16 +234,16 @@
               {
                 "group": "AI",
                 "pages": [
-                  "en/ai/ai-promtpt-function-en",
-                  {
-                    "group": "Page",
-                    "pages": [
-                      "en/mcp/server/page",
-                      "en/mcp/server/page-examples"
-                    ]
-                  }
+                  "en/ai/ai-promtpt-function-en"
                 ],
                 "root": "en/ai"
+              },
+              {
+                "group": "Page",
+                "pages": [
+                  "en/mcp/server/page",
+                  "en/mcp/server/page-examples"
+                ]
               },
               {
                 "group": "Data Import",
@@ -794,15 +794,10 @@
                 "root": "ja/product-features"
               },
               {
-                "group": "AI",
+                "group": "Page",
                 "pages": [
-                  {
-                    "group": "Page",
-                    "pages": [
-                      "ja/mcp/server/page",
-                      "ja/mcp/server/page-examples"
-                    ]
-                  }
+                  "ja/mcp/server/page",
+                  "ja/mcp/server/page-examples"
                 ]
               },
               {
