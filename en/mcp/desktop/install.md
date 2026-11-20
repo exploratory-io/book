@@ -5,7 +5,7 @@ title: "Install the plugin"
 After you install it, an AI tool can use Exploratory Desktop. In Exploratory Desktop, System Settings installs the Desktop MCP plugin into the AI tools on this computer.
 It takes about 5 minutes. You need Exploratory Desktop and the AI tool you want to install into (Claude Code, Codex, Antigravity or Cursor) on the same computer.
 
-Claude Code, Codex, Antigravity and Cursor all install from the same card. If you can’t install from the card, see [Install by hand](#manual).
+Claude Code, Codex, Antigravity and Cursor all install from System Settings in Exploratory Desktop. If you can’t install from System Settings, see [Install by hand](#manual).
 
 <a id="steps"></a>
 
@@ -18,16 +18,16 @@ In Exploratory Desktop, choose your name at the bottom left of the screen, then 
 ![The menu that opens when you choose your name at the bottom left of Exploratory Desktop. 1 is your name and 2 is System Settings](images/en/open-system-settings.png)
 
 1. In the menu on the left, choose MCP / CLI.
-2. Find the "Install the Exploratory Desktop plugin" card.
+2. Find the "Install the Exploratory Desktop plugin" section.
 3. Choose Install on the row of the AI tool you use.
 
-![The "Install the Exploratory Desktop plugin" card in MCP / CLI in System Settings](images/en/desktop-plugin-card.png)
+![The "Install the Exploratory Desktop plugin" section in MCP / CLI in System Settings](images/en/desktop-plugin-card.png)
 
-The card says:
+The section says:
 
 > Installs the Desktop MCP plugin into the AI tools on this computer. After installing, restart that AI tool.
 
-The card lists Claude Code, Codex, Antigravity and Cursor. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
+The section lists Claude Code, Codex, Antigravity and Cursor. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
 
 Next, on the same screen, do this.
 
@@ -56,7 +56,7 @@ If you do not save, the MCP switch and the Allow create, edit and delete setting
    - In Claude Code, open `/mcp` and check that exploratory-desktop is connected.
    - In Codex, run `codex mcp list` and check that exploratory-desktop is listed.
    - In Antigravity, check that the plugin appears under Customizations > Installed in the app.
-   - If you installed the Cursor plugin from the card, check that the Cursor row shows "Installed - v" followed by the plugin version. If you installed it from the app, check that Cursor returns the data frames from your open Exploratory project.
+   - If you installed the Cursor plugin from System Settings, check that the Cursor row in System Settings shows "Installed - v" followed by the plugin version. If you installed it from the app, check that Cursor returns the data frames from your open Exploratory project.
 
 If a call says that MCP is turned off, go back to System Settings and check that you turned the MCP switch on and chose Save.
 
@@ -64,20 +64,20 @@ If a call says that MCP is turned off, go back to System Settings and check that
 
 ## Differences between AI tools
 
-The card works the same way, but what it installs differs a little.
+You install the same way from System Settings for every AI tool, but what gets installed differs a little.
 
-| AI tool | What the card installs | What the card shows |
+| AI tool | What System Settings installs | What System Settings shows |
 | --- | --- | --- |
 | Claude Code | The Exploratory Desktop plugin (with its skills) | "Installed - v" followed by the plugin version; Reinstall and Remove take the place of Install |
 | Codex | Same | Same |
 | Antigravity | Same | Same |
-| Cursor | Same. It copies the plugin to the Cursor plugin folder (\~/.cursor/plugins/local/exploratory) instead of writing \~/.cursor/mcp.json. If \~/.cursor/mcp.json still has an old exploratory-desktop entry, the card deletes it; other entries stay | Same |
+| Cursor | Same. Only the location differs: it copies the plugin to the Cursor plugin folder (\~/.cursor/plugins/local/exploratory) instead of writing \~/.cursor/mcp.json. If \~/.cursor/mcp.json still has an old exploratory-desktop entry, it deletes that entry; other entries stay | Same |
 
 Restart the AI tool after installing, whichever one it is.
 
-The buttons on the card change with its state.
+The buttons on each row change with its state.
 
-| State | What the card shows |
+| State | What the row shows |
 | --- | --- |
 | Not installed | Not installed, and a green Install button |
 | Installed | Installed, with Reinstall and Remove |
@@ -97,7 +97,7 @@ The image is an example of how the error details look when updating an installed
 1. Hold the mouse pointer over Details.
 2. Choose Copy at the top right.
 
-![The card when updating an installed plugin failed, with the pointer over Details (example)](images/en/desktop-plugin-card-error.png)
+![System Settings when updating an installed plugin failed, with the pointer over Details (example)](images/en/desktop-plugin-card-error.png)
 
 If the reason does not let you fix it, send the copied output to support. When it is fixed, choose Try again.
 
@@ -105,7 +105,7 @@ If the reason does not let you fix it, send the copied output to support. When i
 
 ## Install by hand
 
-If you can’t install the plugin from the System Settings card, for example because Exploratory Desktop can’t reach the network, follow the instructions below for your AI app. If you prefer to use a terminal, go to “Install with commands” in this section.
+If you can’t install the plugin from System Settings, for example because Exploratory Desktop can’t reach the network, follow the instructions below for your AI app. If you prefer to use a terminal, go to “Install with commands” in this section.
 
 ### Install from your AI app
 
@@ -284,7 +284,7 @@ mkdir -p ~/.cursor/plugins/local
 cp -R exploratory/plugins/exploratory-desktop ~/.cursor/plugins/local/exploratory
 ```
 
-Needs Git. This copies the plugin into the same folder the card uses (~/.cursor/plugins/local/exploratory). Quit and restart Cursor, and Exploratory appears under Customize \> Plugins \> Installed with a Local label. It duplicates the Exploratory Desktop plugin added from the Cursor app, so use one or the other.
+Needs Git. This copies the plugin into the same folder that System Settings uses (~/.cursor/plugins/local/exploratory). Quit and restart Cursor, and Exploratory appears under Customize \> Plugins \> Installed with a Local label. It duplicates the Exploratory Desktop plugin added from the Cursor app, so use one or the other.
 
 <a id="update"></a>
 
@@ -292,7 +292,7 @@ Needs Git. This copies the plugin into the same folder the card uses (~/.cursor/
 
 It depends on how you installed it.
 
-- Installed with the card (Claude Code, Codex, Antigravity, Cursor): choose Reinstall on the card to install the latest plugin again (this is also how you update). To remove it, choose Remove on the same card.
+- Installed from System Settings (Claude Code, Codex, Antigravity, Cursor): choose Reinstall on that AI tool's row in System Settings to install the latest plugin again (this is also how you update). To remove it, choose Remove on the same row.
 - Installed with commands (Claude Code, Codex, Antigravity, Cursor). Follow the steps in the table below to update or remove the plugin.
 
 | AI tool | Update | Remove |

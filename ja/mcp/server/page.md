@@ -1,13 +1,13 @@
 ---
-title: "Page 機能の使い方"
-description: "Claude に販売注文データを渡して、注文状況を確認できるダッシュボードを Exploratory Page として公開します。"
+title: "Page を作る"
+description: "Claude などの AI ツールに販売注文データを渡して、注文状況を確認できるダッシュボードを Exploratory Page として公開します。"
 ---
 
-Exploratory Page を使うと、Claude にデータと目的を伝えて、ブラウザで開けるダッシュボードや分析レポート、スライドを作れます。ここでは、Exploratory に公開された「販売注文データ」から、注文状況を確認できるダッシュボードを作ります。
+Exploratory Page を使うと、Claude などの AI ツールにデータと目的を伝えて、ブラウザで開けるダッシュボードや分析レポート、スライドを作れます。ここでは Claude のデスクトップアプリを例に、Exploratory に公開された「販売注文データ」から、注文状況を確認できるダッシュボードを作ります。
 
-## Claude を Exploratory につなぐ
+## AI ツールを Exploratory につなぐ
 
-Claude の Web 版とデスクトップアプリでは、Exploratory コネクタを使ってサーバー上のデータを参照できます。この例では、接続済みのデスクトップアプリから始めます。接続の手順は、[始め方ガイド（サーバー MCP）](/ja/mcp/server/clients/claude)をご覧ください。
+Exploratory Page は、Server MCP につないだ AI ツールから作れます。Claude のほか、ChatGPT や Cursor などでも使えます。つなぎ方は、[AI ツールから追加する](/ja/mcp/server/clients/apps)をご覧ください。この例では、Exploratory コネクタを接続済みの Claude のデスクトップアプリから始めます。
 
 ## 注文状況のダッシュボードを作る
 

@@ -21,8 +21,14 @@ Tools are operations an AI can call. Choose an operation by purpose, then inspec
 | Data | [dataframe_preview](/en/mcp/server/tools#dataframe_preview) | Read only | Show rows. |
 | Data | [query_dataset](/en/mcp/server/tools#query_dataset) | Read only | Filter and aggregate on the server. |
 | Data | [dataframe_export](/en/mcp/server/tools#dataframe_export) | Read only (creates a download link) | Save a result as CSV or Parquet. |
+| Page | [get_page_guide](/en/mcp/server/tools#get_page_guide) | Read only | Return how to write a Page (steps, allowed libraries, rules and an example). Call it before page_publish and page_update. |
+| Page | [page_list](/en/mcp/server/tools#page_list) | Read only | List your own Pages or the Pages shared with you. |
+| Page | [page_get](/en/mcp/server/tools#page_get) | Read only | Read one Page with its HTML. |
+| Page | [page_publish](/en/mcp/server/tools#page_publish) | Create | Publish HTML as a private Page and return its URL. |
+| Page | [page_update](/en/mcp/server/tools#page_update) | Change | Update one of your Pages. The URL stays the same and the previous HTML is kept as a version. |
+| Page | [page_delete](/en/mcp/server/tools#page_delete) | Delete | Delete one of your Pages with all its versions. It cannot be undone. |
 
-exploratory.io offers these tools. On an on-premises server, which tools appear depends on the server settings; query_dataset, chart_query and dataframe_export appear only when the administrator has turned them on. More tools can appear depending on the settings, for example desktop_mcp_setup_guide, which returns the steps to connect an AI client to Exploratory Desktop. Run expl server tools list to see what your server offers.
+exploratory.io offers these tools. On an on-premises server, which tools appear depends on the server settings; query_dataset, chart_query and dataframe_export appear only when the administrator has turned them on. The Page tools appear only when the administrator has turned on Pages as well as these three tools. More tools can appear depending on the settings, for example desktop_mcp_setup_guide, which returns the steps to connect an AI client to Exploratory Desktop. Run expl server tools list to see what your server offers.
 
 <a id="identifiers"></a>
 
@@ -254,3 +260,75 @@ Return the steps and links for connecting an AI client to Exploratory Desktop. I
 | Name | Type | Condition | Description |
 | --- | --- | --- | --- |
 | `client` | string |  | The MCP client you use (claude_code, codex, cursor or antigravity). Without it, the steps for all clients are returned. Values: `claude_code`, `codex`, `cursor`, `antigravity` |
+
+<a id="get_page_guide"></a>
+
+## get_page_guide
+
+Return how to write an Exploratory Page: the steps, the exploratory SDK a Page uses to read data, the libraries it may load, the rules and an example Page. The AI calls it before page_publish and page_update. For an example of use, see [Create a Page](/en/mcp/server/page).
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `client` | string |  | The AI client making the call. Defaults to other. Values: `claude`, `chatgpt`, `copilot`, `antigravity`, `claude_code`, `other` |
+
+<a id="page_list"></a>
+
+## page_list
+
+List Pages, newest first.
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `scope` | string |  | mine: your own Pages. shared: Pages shared with you as a collaborator or through your team (Pages that are merely public are not listed). Defaults to mine. Values: `mine`, `shared` |
+| `dataset_id` | string |  | List only the Pages that query this data item. |
+| `limit` | integer |  | How many to list, 1 to 100. Defaults to 20. |
+
+<a id="page_get"></a>
+
+## page_get
+
+Read one Page you can view, with its HTML. Used to change it with page_update or to explain what it shows.
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `page_id` | string | Required | The Page id. |
+| `version` | string |  | Read an older version. Page owners only; the versions field of the result lists them. |
+
+<a id="page_publish"></a>
+
+## page_publish
+
+Publish one self-contained HTML file as a private Exploratory Page and return its URL. The Page queries the data items listed in datasets live with the exploratory SDK each time it opens. Only the user can share the Page.
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `title` | string | Required | Title of the Page, up to 200 characters. |
+| `html` | string | Required | The whole HTML document. Scripts and styles load only from the URLs get_page_guide lists. |
+| `datasets` | array |  | Every data item id the Page queries (0 to 20). Omit it for a Page that reads no data. A query for another id is refused. |
+| `description` | string |  | What the Page shows, for search. Up to 2000 characters. |
+| `version_comment` | string |  | What this version is, in one short line in the user's language (for example, First version). Shown in the Page's version history. |
+
+<a id="page_update"></a>
+
+## page_update
+
+Update one of your own Pages. Pass only what changes (html, datasets, title, description). The URL stays the same, and the previous HTML is kept as a version the user can restore.
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `page_id` | string | Required | The Page id, returned by page_publish or page_list. |
+| `html` | string |  | The new whole HTML document. |
+| `datasets` | array |  | The new list of every data item id the Page queries (up to 20). [] removes them all, and the Page then reads no data. |
+| `title` | string |  | The new title. |
+| `description` | string |  | The new description. |
+| `version_comment` | string |  | What this version changes, in one short line in the user's language (for example, Added a category filter). Only with html. Shown in the version history and in the mail to the Page's subscribers. |
+
+<a id="page_delete"></a>
+
+## page_delete
+
+Delete one of your own Pages with all its versions. It cannot be undone, so the AI confirms with the user before calling it.
+
+| Name | Type | Condition | Description |
+| --- | --- | --- | --- |
+| `page_id` | string | Required | The Page id. |

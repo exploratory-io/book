@@ -5,7 +5,7 @@ title: "プラグインのインストール"
 インストールすると、AI ツールから Exploratory Desktop を使えるようになります。Exploratory Desktop のシステム設定から、Desktop MCP のプラグインを、このコンピューターの AI ツールにインストールします。
 所要時間は 5 分ほどです。同じコンピューターに、Exploratory Desktop と、プラグインを入れる AI ツール（Claude Code、Codex、Antigravity、Cursor のいずれか）を用意してください。
 
-Claude Code、Codex、Antigravity、Cursor は、同じカードから入れられます。カードから入れられない場合は、[手作業でインストールする](#manual)をご覧ください。
+Claude Code、Codex、Antigravity、Cursor は、どれも Exploratory Desktop のシステム設定から入れられます。システム設定から入れられない場合は、[手作業でインストールする](#manual)をご覧ください。
 
 <a id="steps"></a>
 
@@ -18,16 +18,16 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
 ![Exploratory Desktop の左下の自分の名前を選ぶと開くメニュー。①が自分の名前、②が「システム設定」](images/ja/open-system-settings.png)
 
 1. 左のメニューで、「MCP / CLI」を選びます。
-2. 「Exploratory Desktop プラグインのインストール」のカードを探します。
+2. 「Exploratory Desktop プラグインのインストール」の欄を探します。
 3. 使う AI ツールの行の「インストール」を選びます。
 
-![システム設定の「MCP / CLI」にある、「Exploratory Desktop プラグインのインストール」のカード](images/ja/desktop-plugin-card.png)
+![システム設定の「MCP / CLI」にある、「Exploratory Desktop プラグインのインストール」の欄](images/ja/desktop-plugin-card.png)
 
-カードの説明は次のとおりです。
+この欄の説明は次のとおりです。
 
 > Desktop MCP のプラグインを、このPC上の AI ツールにインストールします。インストールしたあとは、その AI ツールを起動し直してください。
 
-カードには、Claude Code、Codex、Antigravity、Cursor が並びます。このコンピューターにない AI ツールには、「このパソコンに見つかりません」と表示されます。コマンドは、アプリの起動時に自動で入ります。コマンドを登録する操作は要りません。
+この欄には、Claude Code、Codex、Antigravity、Cursor が並びます。このコンピューターにない AI ツールには、「このパソコンに見つかりません」と表示されます。コマンドは、アプリの起動時に自動で入ります。コマンドを登録する操作は要りません。
 
 続けて、同じ画面で、次の操作をします。
 
@@ -56,7 +56,7 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
    - Claude Code では、`/mcp` を開いて、exploratory-desktop が接続されていることを確認します。
    - Codex では、`codex mcp list` を実行して、exploratory-desktop が並んでいることを確認します。
    - Antigravity では、アプリの Customizations > Installed に、プラグインが表示されていることを確認します。
-   - カードから Cursor に入れた場合は、カードの Cursor の行に「インストール済み - v」とプラグインのバージョンが表示されていることを確認します。アプリから入れた場合は、Cursor に「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼み、一覧が返ってくることを確認します。
+   - システム設定から Cursor に入れた場合は、システム設定の Cursor の行に「インストール済み - v」とプラグインのバージョンが表示されていることを確認します。アプリから入れた場合は、Cursor に「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼み、一覧が返ってくることを確認します。
 
 MCP がオフだと表示されたときは、システム設定に戻り、「MCP」のスイッチをオンにして「保存」を選んだかを確かめます。
 
@@ -64,18 +64,18 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 
 ## AI ツールごとの違い
 
-カードの操作は同じですが、入るものが少し違います。
+システム設定での操作はどの AI ツールも同じですが、入るものが少し違います。
 
-| AI ツール | カードで入るもの | カードの表示 |
+| AI ツール | システム設定から入るもの | システム設定の表示 |
 | --- | --- | --- |
 | Claude Code | Exploratory Desktop のプラグイン（スキルを含む） | 「インストール済み - v」とプラグインのバージョン。「インストール」の代わりに「再インストール」と「削除」 |
 | Codex | 同上 | 同上 |
 | Antigravity | 同上 | 同上 |
-| Cursor | 同じです。\~/.cursor/mcp.json には書かず、プラグインを Cursor のプラグインのフォルダ（\~/.cursor/plugins/local/exploratory）へコピーします。\~/.cursor/mcp.json に古い exploratory-desktop の項目が残っていると、カードが削除します。ほかの項目は残ります | 同じです |
+| Cursor | 同上。入る場所だけが違い、\~/.cursor/mcp.json ではなく、Cursor のプラグインのフォルダ（\~/.cursor/plugins/local/exploratory）へコピーします。\~/.cursor/mcp.json に古い exploratory-desktop の項目が残っていると、その項目を削除します。ほかの項目は残ります | 同上 |
 
 どの AI ツールも、インストールのあとに起動し直します。
 
-カードのボタンは、状態によって変わります。
+各行のボタンは、状態によって変わります。
 
 | 状態 | 表示とボタン |
 | --- | --- |
@@ -97,7 +97,7 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 1. 「詳細」にマウスを載せます。
 2. 右上の「コピー」を選びます。
 
-![インストール済みのプラグインの更新に失敗したときのカード。「詳細」にマウスを載せた状態（表示例）](images/ja/desktop-plugin-card-error.png)
+![インストール済みのプラグインの更新に失敗したときのシステム設定の表示。「詳細」にマウスを載せた状態（表示例）](images/ja/desktop-plugin-card-error.png)
 
 理由の文を読んでも直せないときは、コピーした出力を添えて、サポートに問い合わせてください。直ったら、「もう一度試す」を選びます。
 
@@ -105,7 +105,7 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 
 ## 手作業でインストールする
 
-Exploratory Desktop がネットワークに接続できないなど、システム設定のカードからプラグインを入れられないときは、お使いの AI アプリの手順を選んでください。ターミナルを使う場合は、「コマンドでインストールする」に進んでください。
+Exploratory Desktop がネットワークに接続できないなど、システム設定からプラグインを入れられないときは、お使いの AI アプリの手順を選んでください。ターミナルを使う場合は、「コマンドでインストールする」に進んでください。
 
 ### アプリからインストールする
 
@@ -282,7 +282,7 @@ mkdir -p ~/.cursor/plugins/local
 cp -R exploratory/plugins/exploratory-desktop ~/.cursor/plugins/local/exploratory
 ```
 
-Git が必要です。カードと同じフォルダ（~/.cursor/plugins/local/exploratory）に入れます。Cursor を終了して起動し直すと、Customize \> Plugins の Installed に「Exploratory」が「Local」の表示付きで出ます。Cursor のアプリから入れた Exploratory Desktop とは重複するため、どちらか一方で入れてください。
+Git が必要です。システム設定から入れたときと同じフォルダ（~/.cursor/plugins/local/exploratory）に入れます。Cursor を終了して起動し直すと、Customize \> Plugins の Installed に「Exploratory」が「Local」の表示付きで出ます。Cursor のアプリから入れた Exploratory Desktop とは重複するため、どちらか一方で入れてください。
 
 <a id="update"></a>
 
@@ -290,7 +290,7 @@ Git が必要です。カードと同じフォルダ（~/.cursor/plugins/local/e
 
 入れ方によって、操作が違います。
 
-- カードで入れたもの（Claude Code、Codex、Antigravity、Cursor）: カードの「再インストール」で、最新のプラグインに入れ直します（更新も、この操作で行います）。外すときは、同じカードの「削除」を選びます。
+- システム設定から入れたもの（Claude Code、Codex、Antigravity、Cursor）: システム設定のその AI ツールの行で「再インストール」を選び、最新のプラグインに入れ直します（更新も、この操作で行います）。外すときは、同じ行の「削除」を選びます。
 - コマンドで入れたもの（Claude Code、Codex、Antigravity、Cursor）は、次の表の手順で更新・削除します。
 
 | AI ツール | 更新 | 削除 |

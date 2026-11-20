@@ -47,8 +47,13 @@
                         ],
                         "root": "en/mcp/server/get-started"
                       },
-                      "en/mcp/server/use",
-                      "en/mcp/server/page",
+                      {
+                        "group": "Use",
+                        "pages": [
+                          "en/mcp/server/page"
+                        ],
+                        "root": "en/mcp/server/use"
+                      },
                       {
                         "group": "Reference",
                         "pages": [
@@ -622,8 +627,13 @@
                         ],
                         "root": "ja/mcp/server/get-started"
                       },
-                      "ja/mcp/server/use",
-                      "ja/mcp/server/page",
+                      {
+                        "group": "使い方",
+                        "pages": [
+                          "ja/mcp/server/page"
+                        ],
+                        "root": "ja/mcp/server/use"
+                      },
                       {
                         "group": "リファレンス",
                         "pages": [

@@ -1,13 +1,13 @@
 ---
-title: "How to Create an Exploratory Page"
-description: "Use the Sales Orders data in Claude to create an order dashboard and publish it as an Exploratory Page."
+title: "Create a Page"
+description: "Use the Sales Orders data in Claude or another AI tool to create an order dashboard and publish it as an Exploratory Page."
 ---
 
-With Exploratory Page, you can tell Claude which data to use and what you want to see. Claude can create a dashboard, an analysis report, or slides that you can open in your browser. In this guide, you'll use the Sales Orders (Line Items) dataset to build a dashboard for monitoring orders.
+With Exploratory Page, you can tell Claude or another AI tool which data to use and what you want to see. The AI can create a dashboard, an analysis report, or slides that you can open in your browser. In this guide, you'll use the Claude desktop app and the Sales Orders (Line Items) dataset to build a dashboard for monitoring orders.
 
-## Connect Claude to Exploratory
+## Connect your AI tool to Exploratory
 
-Use the Exploratory connector in the Claude web or desktop app to work with data on Exploratory Server. This example starts in the desktop app with the connector already set up. For connection instructions, see [Getting Started with Server MCP](/en/mcp/server/clients/claude).
+You can create an Exploratory Page from any AI tool connected to Server MCP: Claude, ChatGPT, Cursor and others. For connection instructions, see [Add from an AI tool](/en/mcp/server/clients/apps). This example starts in the Claude desktop app with the Exploratory connector already set up.
 
 ## Create an order dashboard
 

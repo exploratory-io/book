@@ -12,6 +12,7 @@ title: "使い方"
 | チャートの数値を取得する | [チャートの数値を取得する](#chart) | fetch、chart_get_data、chart_query |
 | アナリティクスの結果を取得する | [アナリティクスの結果を取得する](#analytics) | fetch、analytics_get_result |
 | 結果をファイルに保存する | [結果をファイルに保存する](#export) | query_dataset、dataframe_export |
+| ダッシュボードやレポートを Page として公開する | [Page を作る](#page) | get_page_guide、page_publish、page_update |
 
 ターミナルから同じことをするときは、CLI Server の[使い方](/ja/cli/server/use)を参照してください。
 
@@ -85,3 +86,19 @@ AI は、fetch でダッシュボードの中のアナリティクスの名前�
 AI は、query_dataset と同じ指定で絞り込みや集計をして、dataframe_export で結果を CSV か Parquet にし、ダウンロードリンクを返します。結果が大きく、画面に取得しきれないときに使います。ファイルの形式（CSV か Parquet）と、集計の条件を伝えてください。公開した人がダウンロードを許可していないデータは、保存できません。
 
 ターミナルから同じことをするときは、[結果をファイルに保存する](/ja/cli/server/guides/export)を参照してください。
+
+<a id="page"></a>
+
+## Page を作る
+
+```text
+Exploratoryサーバーにある「販売注文データ」を対象にして、注文状況をモニタリングできるインタラクティブなダッシュボードを作ってPageとして公開してください。
+```
+
+AI は、get_page_guide で Page の書き方を確かめ、データの列を調べてから、page_publish で Page を公開し、URL を返します。Page は、ブラウザで開けるダッシュボードや分析レポート、スライドです。公開されたデータを、開くたびに読み込みます。公開した直後の Page は非公開で、共有できるのは作った本人だけです。使うデータの名前と、見たいことを伝えてください。デザインの参考にしたいページがあれば、その URL も添えます。
+
+次の画像は、上の依頼文で作ったダッシュボードの例です。
+
+![注文状況のダッシュボードの完成例](images/ja/sample-dashboard.png)
+
+手順の詳細と、ノートやスライドの例は、[Page を作る](/ja/mcp/server/page)をご覧ください。
