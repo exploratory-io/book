@@ -8,7 +8,7 @@ These are English versions of three Pages originally created in Japanese. The re
 
 ## Monitor orders with a dashboard
 
-This one was made with a different design reference from the [Getting Started](/en/page/getting-started) steps.
+This one was made with a different design reference from the [Get started](/en/page/get-started) steps.
 
 ```text
 Using the "Sales Orders (Line Items)" data on Exploratory Server, build an interactive dashboard for monitoring order status and publish it as a Page.

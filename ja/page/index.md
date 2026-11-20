@@ -21,5 +21,5 @@ Exploratory Page（Page）は、Claude などの AI ツールに作らせて、e
 
 ## 次に読むページ
 
-- [はじめる](/ja/page/getting-started): 販売注文データからダッシュボードを作り、Page として公開するまでの手順です。
+- [はじめる](/ja/page/get-started): 販売注文データからダッシュボードを作り、Page として公開するまでの手順です。
 - [作成例](/ja/page/examples): ダッシュボード、分析ノート、スライドの作成例と、それぞれの依頼文です。

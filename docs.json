@@ -241,7 +241,7 @@
               {
                 "group": "Page",
                 "pages": [
-                  "en/page/getting-started",
+                  "en/page/get-started",
                   "en/page/examples"
                 ],
                 "root": "en/page/index"
@@ -797,7 +797,7 @@
               {
                 "group": "Page",
                 "pages": [
-                  "ja/page/getting-started",
+                  "ja/page/get-started",
                   "ja/page/examples"
                 ],
                 "root": "ja/page/index"
@@ -10117,7 +10117,7 @@
     },
     {
       "source": "/ja/mcp/server/page",
-      "destination": "/ja/page/getting-started"
+      "destination": "/ja/page/get-started"
     },
     {
       "source": "/ja/mcp/server/page-examples",
@@ -10125,11 +10125,19 @@
     },
     {
       "source": "/en/mcp/server/page",
-      "destination": "/en/page/getting-started"
+      "destination": "/en/page/get-started"
     },
     {
       "source": "/en/mcp/server/page-examples",
       "destination": "/en/page/examples"
+    },
+    {
+      "source": "/ja/page/getting-started",
+      "destination": "/ja/page/get-started"
+    },
+    {
+      "source": "/en/page/getting-started",
+      "destination": "/en/page/get-started"
     }
   ],
   "logo": {
