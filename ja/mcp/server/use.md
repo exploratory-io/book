@@ -103,4 +103,4 @@ AI は、get_page_guide で Page の書き方を確かめ、データの列を�
 
 ![注文状況のダッシュボードの作成例](images/ja/sample-dashboard.png)
 
-手順の詳細と、ノートやスライドの例は、[Page を作る](/ja/page/getting-started)をご覧ください。
+手順の詳細と、ノートやスライドの例は、[Page を作る](/ja/page/get-started)をご覧ください。

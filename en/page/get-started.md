@@ -1,5 +1,5 @@
 ---
-sidebarTitle: "Getting Started"
+sidebarTitle: "Get started"
 title: "Create a Page"
 description: "Use the Sales Orders data in Claude or another AI tool to create an order dashboard and publish it as an Exploratory Page."
 ---

@@ -21,5 +21,5 @@ A new Page is private. Only the person who made it can share it.
 
 ## Where to go next
 
-- [Getting Started](/en/page/getting-started): the steps to build a dashboard from the Sales Orders data and publish it as a Page.
+- [Get started](/en/page/get-started): the steps to build a dashboard from the Sales Orders data and publish it as a Page.
 - [Examples](/en/page/examples): example dashboards, analysis reports and slides, with the request for each.
