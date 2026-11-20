@@ -47,13 +47,7 @@
                         ],
                         "root": "en/mcp/server/get-started"
                       },
-                      {
-                        "group": "Use",
-                        "pages": [
-                          "en/mcp/server/page"
-                        ],
-                        "root": "en/mcp/server/use"
-                      },
+                      "en/mcp/server/use",
                       {
                         "group": "Reference",
                         "pages": [
@@ -240,7 +234,14 @@
               {
                 "group": "AI",
                 "pages": [
-                  "en/ai/ai-promtpt-function-en"
+                  "en/ai/ai-promtpt-function-en",
+                  {
+                    "group": "Page",
+                    "pages": [
+                      "en/mcp/server/page",
+                      "en/mcp/server/page-examples"
+                    ]
+                  }
                 ],
                 "root": "en/ai"
               },
@@ -627,13 +628,7 @@
                         ],
                         "root": "ja/mcp/server/get-started"
                       },
-                      {
-                        "group": "使い方",
-                        "pages": [
-                          "ja/mcp/server/page"
-                        ],
-                        "root": "ja/mcp/server/use"
-                      },
+                      "ja/mcp/server/use",
                       {
                         "group": "リファレンス",
                         "pages": [
@@ -797,6 +792,18 @@
                   }
                 ],
                 "root": "ja/product-features"
+              },
+              {
+                "group": "AI",
+                "pages": [
+                  {
+                    "group": "Page",
+                    "pages": [
+                      "ja/mcp/server/page",
+                      "ja/mcp/server/page-examples"
+                    ]
+                  }
+                ]
               },
               {
                 "group": "データのインポート",
