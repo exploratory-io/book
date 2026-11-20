@@ -829,6 +829,8 @@
                     "pages": [
                       "ja/import/redshift",
                       "ja/import/mysql",
+                      "ja/import/oracle",
+                      "ja/import/oracle-oci",
                       "ja/import/postgresql"
                     ],
                     "root": "ja/database-data"
@@ -836,7 +838,10 @@
                   {
                     "group": "クラウドアプリのデータ",
                     "pages": [
-                      "ja/import/google-analytics"
+                      "ja/import/google-analytics",
+                      "ja/import/estat",
+                      "ja/import/reinfolib",
+                      "ja/import/api"
                     ],
                     "root": "ja/cloud-apps-data"
                   },
@@ -858,7 +863,8 @@
                   {
                     "group": "チャートの種類",
                     "pages": [
-                      "ja/viz/wordcloud"
+                      "ja/viz/wordcloud",
+                      "ja/viz/r-custom"
                     ],
                     "root": "ja/viz/types"
                   },
@@ -883,7 +889,8 @@
                 "group": "診断",
                 "pages": [
                   "ja/debug_log",
-                  "ja/startup_log"
+                  "ja/startup_log",
+                  "ja/history_error_recovery"
                 ],
                 "root": "ja/diagnostics"
               },
