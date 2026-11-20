@@ -56,7 +56,7 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
    - Claude Code では、`/mcp` を開いて、exploratory-desktop が接続されていることを確認します。
    - Codex では、`codex mcp list` を実行して、exploratory-desktop が並んでいることを確認します。
    - Antigravity では、アプリの Customizations > Installed に、プラグインが表示されていることを確認します。
-   - カードから Cursor に入れた場合は、カードの Cursor の行に「インストール済み - v」とプラグインのバージョンが表示されます。アプリから入れた場合は、Cursor から開いているプロジェクトのデータフレームの一覧が返ることを確認します。
+   - カードから Cursor に入れた場合は、カードの Cursor の行に「インストール済み - v」とプラグインのバージョンが表示されていることを確認します。アプリから入れた場合は、Cursor に「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼み、一覧が返ってくることを確認します。
 
 MCP がオフだと表示されたときは、システム設定に戻り、「MCP」のスイッチをオンにして「保存」を選んだかを確かめます。
 
@@ -105,11 +105,12 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 
 ## 手作業でインストールする
 
-Exploratory Desktop がネットワークに接続できないなど、システム設定のカードからプラグインを入れられないときは、以下からお使いの AI アプリの手順を選んでください。ターミナルを使う場合は、この節の「コマンドでインストールする」に進んでください。
+Exploratory Desktop がネットワークに接続できないなど、システム設定のカードからプラグインを入れられないときは、お使いの AI アプリの手順を選んでください。ターミナルを使う場合は、「コマンドでインストールする」に進んでください。
 
 ### アプリからインストールする
 
 - [Claude アプリ](#install-claude-app)
+- [ChatGPT アプリ（Codex）](#install-chatgpt)
 - [Cursor](#install-cursor)
 
 <a id="install-claude-app"></a>
@@ -130,51 +131,119 @@ Exploratory Desktop と同じコンピューターで Claude アプリを使い�
 
    ![マーケットプレイスを追加する画面の「リポジトリから追加」](images/ja/app-install-claude-02-add-marketplace.png)
 
-4. URL 欄（❶）に `exploratory-io/exploratory` を入力し、候補から同じリポジトリを選びます。写真のように URL 欄に表示されたら、右下の「同期」を選びます（❷）。
+4. URL 欄の「リポジトリを選択」を開きます（❶）。
+
+   ![Claude のマーケットプレイスを追加する画面の URL 欄「リポジトリを選択」](images/ja/app-install-claude-03-from-repo.png)
+
+5. `exploratory-io/exploratory` を入力します。入力しても候補は絞り込まれないので、一覧をスクロールして `exploratory-io` の `exploratory` を選びます。URL 欄（❶）に `exploratory-io/exploratory` が表示されていることを確認し、「同期」を選びます（❷）。
 
    ![Claude のリポジトリ URL 欄と「同期」ボタン](images/ja/app-install-claude-04-url-entered.png)
 
-5. 同期が終わったら、「Exploratory Desktop」の行の右端にある「追加」を選びます（❶）。
+6. 同期が終わると、自動で「探索」タブに切り替わります。「Exploratory Desktop」の行の「追加」を選びます（❶）。
 
    ![Exploratory Desktop の行の「追加」ボタン](images/ja/app-install-claude-10-after-sync.png)
 
-6. ローカル MCP サーバーの確認画面で exploratory-desktop が含まれていることを確認し、「続ける」を選びます（❶）。
+7. ローカル MCP サーバーの確認画面で exploratory-desktop が含まれていることを確認し、「続ける」を選びます（❶）。
 
    ![ローカル MCP サーバーの確認画面の「続ける」ボタン](images/ja/app-install-claude-11-add-plugin.png)
 
-インストールが終わると、プラグインの詳細画面が開きます。左上の「← プラグイン」で一覧に戻り、「自分のもの」に「Exploratory Desktop」が表示されていることを確認します。
+8. インストールが終わると、プラグインの詳細画面が開きます。左上の「← プラグイン」を選んで（❶）、「探索」に戻ります。
+
+   ![Exploratory Desktop の詳細画面の左上にある「← プラグイン」](images/ja/app-install-claude-12-installed.png)
+
+9. 「自分のもの」タブを選びます（❶）。
+
+   ![探索に戻った画面の「自分のもの」タブ](images/ja/app-install-claude-14-mine-tab.png)
+
+「追加したマーケットプレイスから」に「Exploratory Desktop」が表示されていることを確認します。
 
 ![Claude の「自分のもの」に表示された Exploratory Desktop](images/ja/app-install-claude-13-mine-list.png)
 
-続けて、Exploratory Desktop のシステム設定の「MCP / CLI」で「MCP」をオンにし、画面下の「保存」を選びます。接続を確かめるには、Exploratory Desktop でプロジェクトを開き、Claude アプリの Code タブ、またはこのコンピューター上で動かしている Cowork で、「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼みます。自分のプロジェクトの一覧が返ってくれば接続できています。ローカルの MCP は、通常のチャットでは使えません。詳しくは[接続を確かめる手順](#check)を参照してください。
+続けて、Exploratory Desktop のシステム設定の「MCP / CLI」で「MCP」をオンにし、画面下の「保存」を選びます。接続を確かめるには、Exploratory Desktop でプロジェクトを開きます。依頼は、Claude アプリの Code タブか、このコンピューターで起動した Cowork から送ります。「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼みます。開いているプロジェクトのデータフレーム名が返ってくれば、接続できています。ローカルの MCP は、通常のチャットでは使えません。詳しくは[接続を確かめる手順](#check)を参照してください。
+
+<a id="install-chatgpt"></a>
+
+#### ChatGPT アプリ（Codex）
+
+Exploratory Desktop と同じコンピューターで ChatGPT アプリ（Codex）を使います。マーケットプレイスを追加するには、ChatGPT アプリから GitHub のリポジトリにアクセスできる必要があります。
+
+1. 左の「カスタマイズ」で「プラグイン」を選び（❶）、右上の「追加」を開きます（❷）。
+
+   ![ChatGPT の「プラグイン」と右上の「追加」ボタン](images/ja/app-install-chatgpt-09-plugins-menu.png)
+
+2. メニューの「マーケットプレイスを追加」を選びます（❶）。
+
+   ![「追加」メニューの「マーケットプレイスを追加」](images/ja/app-install-chatgpt-10-add-menu.png)
+
+3. 「プラグインマーケットプレイスを追加」の「ソース」欄（❶）に `exploratory-io/exploratory` を入力します。「Git ref」と「スパースパス」は空のままにします。
+
+   ![「プラグインマーケットプレイスを追加」の「ソース」欄](images/ja/app-install-chatgpt-11-add-marketplace-dialog.png)
+
+4. 右下の「マーケットプレイスを追加」を選びます（❶）。
+
+   ![ソースの入力後に選べる「マーケットプレイスを追加」ボタン](images/ja/app-install-chatgpt-12-source-entered.png)
+
+5. 追加したプラグインは「公開」タブの一覧に出ないので、「プラグインを検索」欄（❶）に `exploratory` と入力します。
+
+   ![マーケットプレイス追加後の「プラグインを検索」欄](images/ja/app-install-chatgpt-13-after-add.png)
+
+6. 検索結果の「Exploratory Desktop」（提供元 Exploratory, Inc.）の右端にある「＋」を選びます（❶）。似た名前のプラグインが出た場合は、提供元が「Exploratory, Inc.」のものを選んでください。
+
+   ![検索結果に表示された Exploratory, Inc. 提供の Exploratory Desktop と右端の「＋」](images/ja/app-install-chatgpt-14-search-before.png)
+
+7. 左の「インストール済み」に「Exploratory Desktop」が表示されたことを確かめます（❶）。
+
+   ![ChatGPT の「インストール済み」に表示された Exploratory Desktop](images/ja/app-install-chatgpt-16-installed-detail.png)
+
+続けて、Exploratory Desktop のシステム設定の「MCP / CLI」で「MCP」をオンにし、画面下の「保存」を選びます。接続を確かめるには、Exploratory Desktop でプロジェクトを開きます。ChatGPT アプリの Codex で「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼みます。開いているプロジェクトのデータフレーム名が返ってくれば、接続できています。詳しくは[接続を確かめる手順](#check)を参照してください。
 
 <a id="install-cursor"></a>
 
 #### Cursor
 
-Exploratory Desktop と同じコンピューターで Cursor を使います。Cursor から GitHub のリポジトリにアクセスできる必要があります。
+Cursor は Exploratory Desktop と同じコンピューターで使います。Cursor から GitHub のリポジトリにアクセスできる必要があります。
 
-1. Cursor の Agents ウィンドウで「Customize」を開きます。「Plugins」を選び（❶）、「Installed」の右にある「+ Add」を開きます（❷）。
+1. Cursor の Agents ウィンドウで「Customize」を選びます（❶）。
 
-   ![Cursor の Plugins タブと + Add メニュー](images/ja/app-install-cursor-02-plugins.png)
+   ![Cursor の Agents ウィンドウの左上にある Customize](images/ja/app-install-cursor-m3-00-customize-entry.png)
 
-2. メニューの「From GitHub Repository」を選びます（❶）。
+2. 次の画面で「Plugins」（❶）、「+ Add」（❷）の順に選びます。
 
-   ![Cursor の + Add メニューにある From GitHub Repository](images/ja/app-install-cursor-03-add-menu.png)
+   ![Cursor の Plugins と、Installed の右にある + Add](images/ja/app-install-cursor-m2-06-plugins-list.png)
 
-3. 「Import Marketplace」の「Repository」に `https://github.com/exploratory-io/exploratory` を入力します（❶）。「Scope」は「User」のまま、「Import」を選びます（❷）。
+3. メニューの「From GitHub Repository」を選びます（❶）。
 
-   ![Import Marketplace の Repository 欄と Import ボタン](images/ja/app-install-cursor-05-url-entered.png)
+   ![Cursor の + Add メニューにある From GitHub Repository](images/ja/app-install-cursor-m2-07-add-menu.png)
 
-4. マーケットプレイスの「Exploratory」にある「exploratory」の「Add」を選びます（❶）。
+4. 「Import Marketplace」の「Repository」に `https://github.com/exploratory-io/exploratory` を入力します（❶）。「Scope」は「User」のまま、「Import」を選びます（❷）。
 
-   ![Exploratory マーケットプレイスにある exploratory の Add ボタン](images/ja/app-install-cursor-07-imported.png)
+   ![Import Marketplace の Repository 欄に URL を入力した状態と Import ボタン](images/ja/app-install-cursor-m2-09-url-entered.png)
 
-「Customize」の「Plugins」に戻り、「Installed」にマーケットプレイスから入れた「exploratory」が表示されていれば、インストールは完了です。
+   インポートが終わると、マーケットプレイスが開きます。
 
-![Cursor の Installed に表示された exploratory](images/ja/app-install-cursor-09-installed-after.png)
+   ![下へスクロールする前のマーケットプレイス](images/ja/app-install-cursor-m2-10-after-import.png)
 
-続けて、Exploratory Desktop のシステム設定の「MCP / CLI」で「MCP」をオンにし、画面下の「保存」を選びます。接続を確かめるには、Exploratory Desktop でプロジェクトを開き、Cursor で「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼みます。自分のプロジェクトの一覧が返ってくれば接続できています。詳しくは[接続を確かめる手順](#check)を参照してください。
+5. 下へスクロールし、「Exploratory Desktop」の行にある「Add」を選びます（❶）。
+
+   セクション名は環境によって変わることがあるので、プラグイン名と説明文で見分けます。提供元は「Exploratory, Inc.」です。説明文は `Create data, charts, analytics, and reports in Exploratory Desktop v17 or later.` です。「exploratory」（説明文が `Work with Exploratory Desktop, search and read published content …`）は選ばないでください。
+
+   ![exploratory と Exploratory Desktop が並ぶ画面。印は Exploratory Desktop の Add ボタン](images/ja/app-install-cursor-m2-11-io-exploratory-section.png)
+
+6. 追加が終わると、選んだ行のボタンが「✓ Added」に変わります。
+
+   ![追加後に Added に変わった Exploratory Desktop のボタン](images/ja/app-install-cursor-m2-12-after-add.png)
+
+7. 「Customize」の「Plugins」に戻り、「Installed」に「Exploratory Desktop」が表示されていることを確かめます（❶）。
+
+   ![Cursor のプラグイン一覧に追加された Exploratory Desktop](images/ja/app-install-cursor-m2-13-installed.png)
+
+「Settings > Agents」で「Third-Party Imports」がオンだと、追加前から「Exploratory Desktop」が一覧に出ていることがあります。
+
+説明文と提供元は、プラグインの詳細画面で確認できます。
+
+![プラグインの詳細に表示される Exploratory Desktop の説明文と提供元](images/ja/app-install-cursor-m2-14-detail.png)
+
+続けて、Exploratory Desktop のシステム設定の「MCP / CLI」で「MCP」をオンにし、画面下の「保存」を選びます。接続を確かめるには、Exploratory Desktop でプロジェクトを開きます。次に、Cursor で「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼みます。開いているプロジェクトのデータフレーム名が返ってくれば、接続できています。詳しくは[接続を確かめる手順](#check)を参照してください。
 
 ### コマンドでインストールする
 
@@ -187,7 +256,7 @@ claude plugin marketplace add exploratory-io/exploratory
 claude plugin install exploratory@exploratory
 ```
 
-Claude Code で /plugin を開き、マーケットプレイス exploratory-io/exploratory を追加して、exploratory を選んでも入れられます。ターミナルで入れた場合、Claude アプリのプラグイン一覧では「ローカルにインストール済み」と表示されます。
+Claude Code で /plugin を開いてインストールすることもできます。リポジトリ exploratory-io/exploratory をマーケットプレイスに追加し、exploratory を選びます。ターミナルで入れた場合、Claude アプリのプラグイン一覧では「ローカルにインストール済み」と表示されます。
 
 **Codex**
 

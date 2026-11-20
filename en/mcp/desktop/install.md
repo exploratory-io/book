@@ -110,6 +110,7 @@ If you can’t install the plugin from the System Settings card, for example bec
 ### Install from your AI app
 
 - [Claude app](#install-claude-app)
+- [ChatGPT app (Codex)](#install-chatgpt)
 - [Cursor](#install-cursor)
 
 <a id="install-claude-app"></a>
@@ -118,37 +119,85 @@ If you can’t install the plugin from the System Settings card, for example bec
 
 Use the Claude app on the same computer as Exploratory Desktop. The Claude app needs access to the GitHub repository to add the marketplace.
 
-The Claude screenshots below show the Japanese interface. Follow the numbered markers to find the same controls.
+1. In **Customize**, choose **Plugins** (❶), then open the **Add** menu (❷).
 
-1. In the Claude app’s customization view, choose the plugins tab (third from the left, ❶), then open the + menu at the top right (❷).
+   ![Plugins tab and Add button in Claude’s Customize view](images/en/app-install-claude-en-1-plugins-empty.png)
 
-   ![Claude’s plugins tab and the plus menu at the top right](images/en/app-install-claude-00-installed-before.png)
+2. Choose **Add marketplace** (❶).
 
-2. Choose the first item in the menu to add a marketplace (❶).
+   ![Add marketplace in Claude’s Add menu](images/en/app-install-claude-en-1-add-menu.png)
 
-   ![First item in Claude’s plus menu](images/en/app-install-claude-01-add-menu.png)
+3. In the **Add marketplace** dialog, choose **Add from a repository** (❶).
 
-3. In the dialog, choose the lower option to add a marketplace from a repository (❶).
+   ![Add from a repository in Claude’s Add marketplace dialog](images/en/app-install-claude-en-2-add-marketplace-dialog.png)
 
-   ![Lower option in Claude’s marketplace dialog](images/en/app-install-claude-02-add-marketplace.png)
+4. In the **URL** field, click **Select a repository** (❶) and enter `exploratory-io/exploratory`. Typing does not narrow the list, so scroll through it and select the `exploratory` repository owned by `exploratory-io`.
 
-4. In the URL field (❶), enter `exploratory-io/exploratory` and select the matching suggestion. Once the field looks like the screenshot, choose the rightmost button at the bottom to sync the marketplace (❷).
+   ![Select a repository in the URL field](images/en/app-install-claude-en-3-repository-dialog.png)
 
-   ![Repository field and sync button in Claude](images/en/app-install-claude-04-url-entered.png)
+5. Once the **URL** field shows `exploratory-io/exploratory`, choose **Sync** (❶).
 
-5. When syncing finishes, choose the rightmost button in the Exploratory Desktop row to add the plugin (❶).
+   ![Sync button after selecting exploratory-io/exploratory](images/en/app-install-claude-en-4-url-entered.png)
 
-   ![Add button on the Exploratory Desktop row in Claude](images/en/app-install-claude-10-after-sync.png)
+6. When syncing finishes, Claude automatically opens the **Discover** tab. Choose **Add** on the **Exploratory Desktop** row (❶).
 
-6. In the local MCP server dialog, check that it lists exploratory-desktop, then choose the rightmost button to continue (❶).
+   ![Add button on the Exploratory Desktop row in Discover](images/en/app-install-claude-en-5-after-sync.png)
 
-   ![Continue button in Claude’s local MCP server dialog](images/en/app-install-claude-11-add-plugin.png)
+7. In the **This plugin includes local MCP servers** dialog, check that it lists `exploratory-desktop`, then choose **Continue** (❶).
 
-When installation finishes, the plugin details screen opens. Use the back arrow next to Plugins at the top left to return to the list. In the list, select the tab for your plugins and look for Exploratory Desktop.
+   ![Continue button in the dialog listing the exploratory-desktop MCP server](images/en/app-install-claude-en-6-local-mcp-dialog.png)
 
-![Exploratory Desktop in the list of your plugins in Claude](images/en/app-install-claude-13-mine-list.png)
+8. When installation finishes, the plugin details screen opens. Choose **← Plugins** (❶) to return to **Discover**.
+
+   ![Plugins back button on the Exploratory Desktop details screen](images/en/app-install-claude-en-7-detail.png)
+
+9. Choose the **Yours** tab (❶).
+
+   ![Yours tab after returning to Discover](images/en/app-install-claude-en-8-back-to-discover.png)
+
+Check that **Exploratory Desktop** appears under **From marketplaces you added**.
+
+![Exploratory Desktop listed under From marketplaces you added](images/en/app-install-claude-en-9-yours-list.png)
 
 Next, in Exploratory Desktop, open System Settings > MCP / CLI, turn on the MCP switch, and choose Save at the bottom of the screen. To check the connection, open a project in Exploratory Desktop and in the Claude app’s Code tab, or in Cowork running on this computer, ask Claude, “List the data frames in my open Exploratory project.” If it returns the list from your project, the connection is working. The local MCP does not run in a regular chat. See [Check it in the AI tool](#check) for the full steps.
+
+<a id="install-chatgpt"></a>
+
+#### ChatGPT app (Codex)
+
+Use the ChatGPT app (Codex) on the same computer as Exploratory Desktop. The ChatGPT app needs access to the GitHub repository to add the marketplace.
+
+If the left sidebar still shows Japanese labels, follow the numbered markers to find the controls.
+
+1. Choose **Plugins** (**プラグイン**) in the left sidebar (❶), then open **Add** at the top right (❷).
+
+   ![Plugins in the left sidebar and the Add button at the top right](images/en/app-install-chatgpt-en-09-plugins-menu.png)
+
+2. Choose **Add a marketplace** (❶).
+
+   ![Add a marketplace in the Add menu](images/en/app-install-chatgpt-en-10-add-menu.png)
+
+3. In **Add plugin marketplace**, enter `exploratory-io/exploratory` in **Source** (❶). Leave **Git ref** and **Sparse paths** empty.
+
+   ![Source field in the Add plugin marketplace dialog](images/en/app-install-chatgpt-en-11-add-marketplace-dialog.png)
+
+4. Choose **Add marketplace** (❶).
+
+   ![Add marketplace button after entering the source](images/en/app-install-chatgpt-en-12-source-entered.png)
+
+5. When the dialog closes, enter `exploratory` in **Search plugins** (❶).
+
+   ![Search plugins field after adding the marketplace](images/en/app-install-chatgpt-en-13-after-add.png)
+
+6. Find **Exploratory Desktop** from **Exploratory, Inc.** (❶) and select the **+** on the right side of its search result.
+
+   ![Exploratory Desktop from Exploratory, Inc. with the plus button on the right](images/en/app-install-chatgpt-en-14-search.png)
+
+7. Under **Installed** (**インストール済み**) in the left sidebar, check that **Exploratory Desktop** is listed (❶).
+
+   ![Exploratory Desktop in the installed plugins list](images/en/app-install-chatgpt-en-16-installed-detail.png)
+
+Next, in Exploratory Desktop, open System Settings > MCP / CLI, turn on the MCP switch, and choose Save at the bottom of the screen. To check the connection, open a project in Exploratory Desktop and ask Codex in the ChatGPT app, “List the data frames in my open Exploratory project.” If it returns the list from your project, the connection is working. See [Check it in the AI tool](#check) for the full steps.
 
 <a id="install-cursor"></a>
 
@@ -156,25 +205,45 @@ Next, in Exploratory Desktop, open System Settings > MCP / CLI, turn on the MCP 
 
 Use Cursor on the same computer as Exploratory Desktop. Cursor needs access to the GitHub repository to import the marketplace.
 
-1. In the Cursor Agents window, open Customize. Choose Plugins (❶), then open + Add to the right of Installed (❷).
+1. In the Cursor Agents window, choose Customize (❶).
 
-   ![Plugins tab and the + Add menu in Cursor](images/en/app-install-cursor-02-plugins.png)
+   ![Customize at the top left of Cursor’s Agents window](images/en/app-install-cursor-m3-00-customize-entry.png)
 
-2. Choose From GitHub Repository (❶).
+2. On the next screen, choose Plugins (❶), then + Add (❷).
 
-   ![From GitHub Repository in Cursor’s + Add menu](images/en/app-install-cursor-03-add-menu.png)
+   ![Plugins in Cursor and + Add to the right of Installed](images/en/app-install-cursor-m2-06-plugins-list.png)
 
-3. In Import Marketplace, enter `https://github.com/exploratory-io/exploratory` in Repository (❶). Leave Scope set to User and choose Import (❷).
+3. Choose From GitHub Repository (❶).
 
-   ![Repository field and Import button in Import Marketplace](images/en/app-install-cursor-05-url-entered.png)
+   ![From GitHub Repository in Cursor’s + Add menu](images/en/app-install-cursor-m2-07-add-menu.png)
 
-4. In the marketplace, find exploratory under Exploratory and choose Add (❶).
+4. In Import Marketplace, enter `https://github.com/exploratory-io/exploratory` in Repository (❶). Leave Scope set to User and choose Import (❷).
 
-   ![Add button for exploratory in the Exploratory marketplace](images/en/app-install-cursor-07-imported.png)
+   ![Repository field with the URL entered and the Import button](images/en/app-install-cursor-m2-09-url-entered.png)
 
-Return to Customize > Plugins. When the marketplace plugin exploratory appears under Installed, installation is complete.
+   When the import finishes, Cursor opens the marketplace.
 
-![exploratory listed under Installed in Cursor](images/en/app-install-cursor-09-installed-after.png)
+   ![Marketplace before scrolling down](images/en/app-install-cursor-m2-10-after-import.png)
+
+5. Scroll down and choose **Add** on the **Exploratory Desktop** row (❶).
+
+   Section names can vary, so use the plugin name and description to identify it. The publisher is **Exploratory, Inc.** and the description reads “Create data, charts, analytics, and reports in Exploratory Desktop v17 or later.” Skip the similarly named **exploratory** plugin with the description “Work with Exploratory Desktop, search and read published content …”.
+
+   ![The exploratory and Exploratory Desktop rows in the marketplace, with the Add button marked for Exploratory Desktop](images/en/app-install-cursor-m2-11-io-exploratory-section.png)
+
+6. The button on the Exploratory Desktop row changes to ✓ Added.
+
+   ![Added button on the Exploratory Desktop row](images/en/app-install-cursor-m2-12-after-add.png)
+
+7. Return to **Customize** > **Plugins** and check that **Exploratory Desktop** appears under **Installed** (❶).
+
+   ![Exploratory Desktop added to the installed plugins list in Cursor](images/en/app-install-cursor-m2-13-installed.png)
+
+If **Third-Party Imports** under **Settings** > **Agents** is turned on, **Exploratory Desktop** may already appear under **Installed** before you choose Add.
+
+You can check the description and publisher in the plugin details.
+
+![Exploratory Desktop details showing the description and publisher, Exploratory, Inc.](images/en/app-install-cursor-m2-14-detail.png)
 
 Next, in Exploratory Desktop, open System Settings > MCP / CLI, turn on the MCP switch, and choose Save at the bottom of the screen. To check the connection, open a project in Exploratory Desktop and ask Cursor, “List the data frames in my open Exploratory project.” If it returns the list from your project, the connection is working. See [Check it in the AI tool](#check) for the full steps.
 
