@@ -1,5 +1,5 @@
 ---
-title: "Page 機能の使い方"
+title: "Page を作る"
 description: "Claude などの AI ツールに販売注文データを渡して、注文状況を確認できるダッシュボードを Exploratory Page として公開します。"
 ---
 
