@@ -234,7 +234,7 @@
               {
                 "group": "AI",
                 "pages": [
-                  "en/ai/ai-promtpt-function-en",
+                  "en/ai/ai-prompt-function",
                   "en/ai/ai-data-wrangling",
                   "en/ai/ai-data",
                   "en/ai/ai-summary",
@@ -284,6 +284,7 @@
                       "en/import/mysql",
                       "en/import/access",
                       "en/import/mongodb",
+                      "en/import/neo4j",
                       "en/import/odbc",
                       "en/import/oracle",
                       "en/import/oracle-oci",
@@ -293,7 +294,8 @@
                       "en/import/sqlserver",
                       "en/import/mssqlserver",
                       "en/import/teradata",
-                      "en/import/treasuredata"
+                      "en/import/treasuredata",
+                      "en/import/variables"
                     ],
                     "root": "en/database-data"
                   },
@@ -308,6 +310,7 @@
                       "en/import/salesforce",
                       "en/import/twitter",
                       "en/import/stripe",
+                      "en/import/mailchimp",
                       "en/import/weather",
                       "en/import/stock-price",
                       "en/import/reinfolib",
@@ -331,7 +334,8 @@
                     "pages": [
                       "en/import/quandl",
                       "en/import/holiday",
-                      "en/import/tidyrss"
+                      "en/import/tidyrss",
+                      "en/import/SPARQL"
                     ],
                     "root": "en/import/extensions"
                   },
@@ -433,6 +437,7 @@
                       "en/viz/reference-line",
                       "en/viz/small-multiple",
                       "en/viz/window-calc",
+                      "en/viz/custom-function",
                       "en/viz/date-aggregate",
                       "en/viz/range",
                       "en/viz/marker",
@@ -593,7 +598,8 @@
                   "en/history_error_recovery"
                 ]
               },
-              "en/shortcut"
+              "en/shortcut",
+              "en/release-note"
             ]
           }
         ],
@@ -880,7 +886,8 @@
                   "ja/startup_log"
                 ],
                 "root": "ja/diagnostics"
-              }
+              },
+              "ja/release-notes_ja"
             ]
           }
         ]
@@ -1646,7 +1653,7 @@
     },
     {
       "source": "/ai/ai-prompt-function-ri-ben-yu",
-      "destination": "/en/ai/ai-promtpt-function-en"
+      "destination": "/en/ai/ai-prompt-function"
     },
     {
       "source": "/product-features/share_ja/chart_ja",
@@ -1662,7 +1669,7 @@
     },
     {
       "source": "/visualization/features/color-ja",
-      "destination": "/ja/viz/color"
+      "destination": "/en/viz/color"
     },
     {
       "source": "/visualization/types/r-custom_ja",
@@ -2438,7 +2445,7 @@
     },
     {
       "source": "/ai/ai-prompt-function",
-      "destination": "/en/ai/ai-promtpt-function-en"
+      "destination": "/en/ai/ai-prompt-function"
     },
     {
       "source": "/analytics",
@@ -3510,7 +3517,7 @@
     },
     {
       "source": "/ai/ai-promtpt-function-en",
-      "destination": "/en/ai/ai-promtpt-function-en"
+      "destination": "/en/ai/ai-prompt-function"
     },
     {
       "source": "/en/data_import/file-data",
@@ -5058,47 +5065,47 @@
     },
     {
       "source": "/ai/ai-data-source",
-      "destination": "/en/ai/ai-data-source"
+      "destination": "/en/ai/ai-data"
     },
     {
       "source": "/ai/ai-data-source.html",
-      "destination": "/en/ai/ai-data-source"
+      "destination": "/en/ai/ai-data"
     },
     {
       "source": "/en/ai/ai-data-source.html",
-      "destination": "/en/ai/ai-data-source"
+      "destination": "/en/ai/ai-data"
     },
     {
       "source": "/ai/ai-data-source-auto-setup",
-      "destination": "/en/ai/ai-data-source-auto-setup"
+      "destination": "/en/ai/ai-data"
     },
     {
       "source": "/ai/ai-data-source-auto-setup.html",
-      "destination": "/en/ai/ai-data-source-auto-setup"
+      "destination": "/en/ai/ai-data"
     },
     {
       "source": "/en/ai/ai-data-source-auto-setup.html",
-      "destination": "/en/ai/ai-data-source-auto-setup"
+      "destination": "/en/ai/ai-data"
     },
     {
       "source": "/ai/ai-promtpt-function-en.html",
-      "destination": "/en/ai/ai-promtpt-function-en"
+      "destination": "/en/ai/ai-prompt-function"
     },
     {
       "source": "/en/ai/ai-promtpt-function-en.html",
-      "destination": "/en/ai/ai-promtpt-function-en"
+      "destination": "/en/ai/ai-prompt-function"
     },
     {
       "source": "/ai/ai-promtpt-function-ja",
-      "destination": "/en/ai/ai-promtpt-function-ja"
+      "destination": "/en/ai/ai-prompt-function"
     },
     {
       "source": "/ai/ai-promtpt-function-ja.html",
-      "destination": "/en/ai/ai-promtpt-function-ja"
+      "destination": "/en/ai/ai-prompt-function"
     },
     {
       "source": "/en/ai/ai-promtpt-function-ja.html",
-      "destination": "/en/ai/ai-promtpt-function-ja"
+      "destination": "/en/ai/ai-prompt-function"
     },
     {
       "source": "/analytics.html",
@@ -5290,15 +5297,15 @@
     },
     {
       "source": "/analytics/text_cluster",
-      "destination": "/en/analytics/text_cluster"
+      "destination": "/en/analytics/topic_model"
     },
     {
       "source": "/analytics/text_cluster.html",
-      "destination": "/en/analytics/text_cluster"
+      "destination": "/en/analytics/topic_model"
     },
     {
       "source": "/en/analytics/text_cluster.html",
-      "destination": "/en/analytics/text_cluster"
+      "destination": "/en/analytics/topic_model"
     },
     {
       "source": "/en/analytics/textanal.html",
@@ -5814,39 +5821,39 @@
     },
     {
       "source": "/customdata/google-analytics",
-      "destination": "/en/customdata/google-analytics"
+      "destination": "/en/import/google-analytics"
     },
     {
       "source": "/customdata/google-analytics.html",
-      "destination": "/en/customdata/google-analytics"
+      "destination": "/en/import/google-analytics"
     },
     {
       "source": "/en/customdata/google-analytics.html",
-      "destination": "/en/customdata/google-analytics"
+      "destination": "/en/import/google-analytics"
     },
     {
       "source": "/customdata/google-sheet",
-      "destination": "/en/customdata/google-sheet"
+      "destination": "/en/import/google-sheet"
     },
     {
       "source": "/customdata/google-sheet.html",
-      "destination": "/en/customdata/google-sheet"
+      "destination": "/en/import/google-sheet"
     },
     {
       "source": "/en/customdata/google-sheet.html",
-      "destination": "/en/customdata/google-sheet"
+      "destination": "/en/import/google-sheet"
     },
     {
       "source": "/customdata/scrape",
-      "destination": "/en/customdata/scrape"
+      "destination": "/en/import/web-scraping"
     },
     {
       "source": "/customdata/scrape.html",
-      "destination": "/en/customdata/scrape"
+      "destination": "/en/import/web-scraping"
     },
     {
       "source": "/en/customdata/scrape.html",
-      "destination": "/en/customdata/scrape"
+      "destination": "/en/import/web-scraping"
     },
     {
       "source": "/customdata/yjapan",
@@ -6502,15 +6509,15 @@
     },
     {
       "source": "/import/google-analytics_old",
-      "destination": "/en/import/google-analytics_old"
+      "destination": "/en/import/google-analytics"
     },
     {
       "source": "/import/google-analytics_old.html",
-      "destination": "/en/import/google-analytics_old"
+      "destination": "/en/import/google-analytics"
     },
     {
       "source": "/en/import/google-analytics_old.html",
-      "destination": "/en/import/google-analytics_old"
+      "destination": "/en/import/google-analytics"
     },
     {
       "source": "/en/import/google-bigquery.html",
@@ -7410,15 +7417,15 @@
     },
     {
       "source": "/ml/text-mining",
-      "destination": "/en/ml/text-mining"
+      "destination": "/en/text/main"
     },
     {
       "source": "/ml/text-mining.html",
-      "destination": "/en/ml/text-mining"
+      "destination": "/en/text/main"
     },
     {
       "source": "/en/ml/text-mining.html",
-      "destination": "/en/ml/text-mining"
+      "destination": "/en/text/main"
     },
     {
       "source": "/en/ml/timeseries_clustering.html",
@@ -8258,15 +8265,15 @@
     },
     {
       "source": "/viz/area_ja",
-      "destination": "/en/viz/area_ja"
+      "destination": "/en/viz/area"
     },
     {
       "source": "/viz/area_ja.html",
-      "destination": "/en/viz/area_ja"
+      "destination": "/en/viz/area"
     },
     {
       "source": "/en/viz/area_ja.html",
-      "destination": "/en/viz/area_ja"
+      "destination": "/en/viz/area"
     },
     {
       "source": "/viz/axis-format",
@@ -8294,15 +8301,15 @@
     },
     {
       "source": "/viz/bar_ja",
-      "destination": "/en/viz/bar_ja"
+      "destination": "/en/viz/bar"
     },
     {
       "source": "/viz/bar_ja.html",
-      "destination": "/en/viz/bar_ja"
+      "destination": "/en/viz/bar"
     },
     {
       "source": "/en/viz/bar_ja.html",
-      "destination": "/en/viz/bar_ja"
+      "destination": "/en/viz/bar"
     },
     {
       "source": "/viz/boxplot",
@@ -8318,15 +8325,15 @@
     },
     {
       "source": "/viz/boxplot_ja",
-      "destination": "/en/viz/boxplot_ja"
+      "destination": "/en/viz/boxplot"
     },
     {
       "source": "/viz/boxplot_ja.html",
-      "destination": "/en/viz/boxplot_ja"
+      "destination": "/en/viz/boxplot"
     },
     {
       "source": "/en/viz/boxplot_ja.html",
-      "destination": "/en/viz/boxplot_ja"
+      "destination": "/en/viz/boxplot"
     },
     {
       "source": "/viz/bubble",
@@ -8342,15 +8349,15 @@
     },
     {
       "source": "/viz/bubble_ja",
-      "destination": "/en/viz/bubble_ja"
+      "destination": "/en/viz/bubble"
     },
     {
       "source": "/viz/bubble_ja.html",
-      "destination": "/en/viz/bubble_ja"
+      "destination": "/en/viz/bubble"
     },
     {
       "source": "/en/viz/bubble_ja.html",
-      "destination": "/en/viz/bubble_ja"
+      "destination": "/en/viz/bubble"
     },
     {
       "source": "/viz/category",
@@ -8418,15 +8425,15 @@
     },
     {
       "source": "/viz/contour_ja",
-      "destination": "/en/viz/contour_ja"
+      "destination": "/en/viz/contour"
     },
     {
       "source": "/viz/contour_ja.html",
-      "destination": "/en/viz/contour_ja"
+      "destination": "/en/viz/contour"
     },
     {
       "source": "/en/viz/contour_ja.html",
-      "destination": "/en/viz/contour_ja"
+      "destination": "/en/viz/contour"
     },
     {
       "source": "/viz/custom-function",
@@ -8478,15 +8485,15 @@
     },
     {
       "source": "/viz/densityplot_ja",
-      "destination": "/en/viz/densityplot_ja"
+      "destination": "/en/viz/densityplot"
     },
     {
       "source": "/viz/densityplot_ja.html",
-      "destination": "/en/viz/densityplot_ja"
+      "destination": "/en/viz/densityplot"
     },
     {
       "source": "/en/viz/densityplot_ja.html",
-      "destination": "/en/viz/densityplot_ja"
+      "destination": "/en/viz/densityplot"
     },
     {
       "source": "/viz/dualy-setting",
@@ -8514,15 +8521,15 @@
     },
     {
       "source": "/viz/easymap_ja",
-      "destination": "/en/viz/easymap_ja"
+      "destination": "/en/viz/easymap"
     },
     {
       "source": "/viz/easymap_ja.html",
-      "destination": "/en/viz/easymap_ja"
+      "destination": "/en/viz/easymap"
     },
     {
       "source": "/en/viz/easymap_ja.html",
-      "destination": "/en/viz/easymap_ja"
+      "destination": "/en/viz/easymap"
     },
     {
       "source": "/viz/edit-display-name",
@@ -8562,27 +8569,27 @@
     },
     {
       "source": "/viz/errbar-agg_ja",
-      "destination": "/en/viz/errbar-agg_ja"
+      "destination": "/en/viz/errbar-agg"
     },
     {
       "source": "/viz/errbar-agg_ja.html",
-      "destination": "/en/viz/errbar-agg_ja"
+      "destination": "/en/viz/errbar-agg"
     },
     {
       "source": "/en/viz/errbar-agg_ja.html",
-      "destination": "/en/viz/errbar-agg_ja"
+      "destination": "/en/viz/errbar-agg"
     },
     {
       "source": "/viz/errbar_ja",
-      "destination": "/en/viz/errbar_ja"
+      "destination": "/en/viz/errbar"
     },
     {
       "source": "/viz/errbar_ja.html",
-      "destination": "/en/viz/errbar_ja"
+      "destination": "/en/viz/errbar"
     },
     {
       "source": "/en/viz/errbar_ja.html",
-      "destination": "/en/viz/errbar_ja"
+      "destination": "/en/viz/errbar"
     },
     {
       "source": "/viz/geojson",
@@ -8598,15 +8605,15 @@
     },
     {
       "source": "/viz/geojson_ja",
-      "destination": "/en/viz/geojson_ja"
+      "destination": "/en/viz/geojson"
     },
     {
       "source": "/viz/geojson_ja.html",
-      "destination": "/en/viz/geojson_ja"
+      "destination": "/en/viz/geojson"
     },
     {
       "source": "/en/viz/geojson_ja.html",
-      "destination": "/en/viz/geojson_ja"
+      "destination": "/en/viz/geojson"
     },
     {
       "source": "/viz/heatmap",
@@ -8622,15 +8629,15 @@
     },
     {
       "source": "/viz/heatmap_ja",
-      "destination": "/en/viz/heatmap_ja"
+      "destination": "/en/viz/heatmap"
     },
     {
       "source": "/viz/heatmap_ja.html",
-      "destination": "/en/viz/heatmap_ja"
+      "destination": "/en/viz/heatmap"
     },
     {
       "source": "/en/viz/heatmap_ja.html",
-      "destination": "/en/viz/heatmap_ja"
+      "destination": "/en/viz/heatmap"
     },
     {
       "source": "/viz/highlight",
@@ -8658,15 +8665,15 @@
     },
     {
       "source": "/viz/hist_ja",
-      "destination": "/en/viz/hist_ja"
+      "destination": "/en/viz/hist"
     },
     {
       "source": "/viz/hist_ja.html",
-      "destination": "/en/viz/hist_ja"
+      "destination": "/en/viz/hist"
     },
     {
       "source": "/en/viz/hist_ja.html",
-      "destination": "/en/viz/hist_ja"
+      "destination": "/en/viz/hist"
     },
     {
       "source": "/viz/layout",
@@ -8706,27 +8713,27 @@
     },
     {
       "source": "/viz/line_ja",
-      "destination": "/en/viz/line_ja"
+      "destination": "/en/viz/line"
     },
     {
       "source": "/viz/line_ja.html",
-      "destination": "/en/viz/line_ja"
+      "destination": "/en/viz/line"
     },
     {
       "source": "/en/viz/line_ja.html",
-      "destination": "/en/viz/line_ja"
+      "destination": "/en/viz/line"
     },
     {
       "source": "/viz/lines-grouped-by-labels",
-      "destination": "/en/viz/lines-grouped-by-labels"
+      "destination": "/en/viz/trend-line"
     },
     {
       "source": "/viz/lines-grouped-by-labels.html",
-      "destination": "/en/viz/lines-grouped-by-labels"
+      "destination": "/en/viz/trend-line"
     },
     {
       "source": "/en/viz/lines-grouped-by-labels.html",
-      "destination": "/en/viz/lines-grouped-by-labels"
+      "destination": "/en/viz/trend-line"
     },
     {
       "source": "/viz/map",
@@ -8742,15 +8749,15 @@
     },
     {
       "source": "/viz/map_ja",
-      "destination": "/en/viz/map_ja"
+      "destination": "/en/viz/map"
     },
     {
       "source": "/viz/map_ja.html",
-      "destination": "/en/viz/map_ja"
+      "destination": "/en/viz/map"
     },
     {
       "source": "/en/viz/map_ja.html",
-      "destination": "/en/viz/map_ja"
+      "destination": "/en/viz/map"
     },
     {
       "source": "/viz/maphmap",
@@ -8766,15 +8773,15 @@
     },
     {
       "source": "/viz/maphmap_ja",
-      "destination": "/en/viz/maphmap_ja"
+      "destination": "/en/viz/maphmap"
     },
     {
       "source": "/viz/maphmap_ja.html",
-      "destination": "/en/viz/maphmap_ja"
+      "destination": "/en/viz/maphmap"
     },
     {
       "source": "/en/viz/maphmap_ja.html",
-      "destination": "/en/viz/maphmap_ja"
+      "destination": "/en/viz/maphmap"
     },
     {
       "source": "/viz/marker",
@@ -8850,15 +8857,15 @@
     },
     {
       "source": "/viz/pie_ja",
-      "destination": "/en/viz/pie_ja"
+      "destination": "/en/viz/pie"
     },
     {
       "source": "/viz/pie_ja.html",
-      "destination": "/en/viz/pie_ja"
+      "destination": "/en/viz/pie"
     },
     {
       "source": "/en/viz/pie_ja.html",
-      "destination": "/en/viz/pie_ja"
+      "destination": "/en/viz/pie"
     },
     {
       "source": "/viz/pin",
@@ -8886,15 +8893,15 @@
     },
     {
       "source": "/viz/pivot_ja",
-      "destination": "/en/viz/pivot_ja"
+      "destination": "/en/viz/pivot"
     },
     {
       "source": "/viz/pivot_ja.html",
-      "destination": "/en/viz/pivot_ja"
+      "destination": "/en/viz/pivot"
     },
     {
       "source": "/en/viz/pivot_ja.html",
-      "destination": "/en/viz/pivot_ja"
+      "destination": "/en/viz/pivot"
     },
     {
       "source": "/viz/r-custom",
@@ -8922,15 +8929,15 @@
     },
     {
       "source": "/viz/radar_ja",
-      "destination": "/en/viz/radar_ja"
+      "destination": "/en/viz/radar"
     },
     {
       "source": "/viz/radar_ja.html",
-      "destination": "/en/viz/radar_ja"
+      "destination": "/en/viz/radar"
     },
     {
       "source": "/en/viz/radar_ja.html",
-      "destination": "/en/viz/radar_ja"
+      "destination": "/en/viz/radar"
     },
     {
       "source": "/viz/range",
@@ -9006,15 +9013,15 @@
     },
     {
       "source": "/viz/scatter_ja",
-      "destination": "/en/viz/scatter_ja"
+      "destination": "/en/viz/scatter"
     },
     {
       "source": "/viz/scatter_ja.html",
-      "destination": "/en/viz/scatter_ja"
+      "destination": "/en/viz/scatter"
     },
     {
       "source": "/en/viz/scatter_ja.html",
-      "destination": "/en/viz/scatter_ja"
+      "destination": "/en/viz/scatter"
     },
     {
       "source": "/viz/schedule",
@@ -9054,15 +9061,15 @@
     },
     {
       "source": "/viz/singlevalue_ja",
-      "destination": "/en/viz/singlevalue_ja"
+      "destination": "/en/viz/singlevalue"
     },
     {
       "source": "/viz/singlevalue_ja.html",
-      "destination": "/en/viz/singlevalue_ja"
+      "destination": "/en/viz/singlevalue"
     },
     {
       "source": "/en/viz/singlevalue_ja.html",
-      "destination": "/en/viz/singlevalue_ja"
+      "destination": "/en/viz/singlevalue"
     },
     {
       "source": "/viz/small-multiple",
@@ -9090,15 +9097,15 @@
     },
     {
       "source": "/viz/summarize-table_ja",
-      "destination": "/en/viz/summarize-table_ja"
+      "destination": "/en/viz/summarize-table"
     },
     {
       "source": "/viz/summarize-table_ja.html",
-      "destination": "/en/viz/summarize-table_ja"
+      "destination": "/en/viz/summarize-table"
     },
     {
       "source": "/en/viz/summarize-table_ja.html",
-      "destination": "/en/viz/summarize-table_ja"
+      "destination": "/en/viz/summarize-table"
     },
     {
       "source": "/viz/table",
@@ -9126,15 +9133,15 @@
     },
     {
       "source": "/viz/table_ja",
-      "destination": "/en/viz/table_ja"
+      "destination": "/en/viz/table"
     },
     {
       "source": "/viz/table_ja.html",
-      "destination": "/en/viz/table_ja"
+      "destination": "/en/viz/table"
     },
     {
       "source": "/en/viz/table_ja.html",
-      "destination": "/en/viz/table_ja"
+      "destination": "/en/viz/table"
     },
     {
       "source": "/viz/trend-line",
@@ -9174,15 +9181,15 @@
     },
     {
       "source": "/viz/violin_ja",
-      "destination": "/en/viz/violin_ja"
+      "destination": "/en/viz/violin"
     },
     {
       "source": "/viz/violin_ja.html",
-      "destination": "/en/viz/violin_ja"
+      "destination": "/en/viz/violin"
     },
     {
       "source": "/en/viz/violin_ja.html",
-      "destination": "/en/viz/violin_ja"
+      "destination": "/en/viz/violin"
     },
     {
       "source": "/viz/window-calc",
@@ -9210,15 +9217,15 @@
     },
     {
       "source": "/viz/wordcloud-ja",
-      "destination": "/en/viz/wordcloud-ja"
+      "destination": "/ja/viz/wordcloud"
     },
     {
       "source": "/viz/wordcloud-ja.html",
-      "destination": "/en/viz/wordcloud-ja"
+      "destination": "/ja/viz/wordcloud"
     },
     {
       "source": "/en/viz/wordcloud-ja.html",
-      "destination": "/en/viz/wordcloud-ja"
+      "destination": "/ja/viz/wordcloud"
     },
     {
       "source": "/en/wrangling/add_row.html",
@@ -9230,15 +9237,15 @@
     },
     {
       "source": "/wrangling/bind_cols",
-      "destination": "/en/wrangling/bind_cols"
+      "destination": "/en/wrangling/bind_columns"
     },
     {
       "source": "/wrangling/bind_cols.html",
-      "destination": "/en/wrangling/bind_cols"
+      "destination": "/en/wrangling/bind_columns"
     },
     {
       "source": "/en/wrangling/bind_cols.html",
-      "destination": "/en/wrangling/bind_cols"
+      "destination": "/en/wrangling/bind_columns"
     },
     {
       "source": "/en/wrangling/bind_columns.html",
@@ -9250,15 +9257,15 @@
     },
     {
       "source": "/wrangling/bins",
-      "destination": "/en/wrangling/bins"
+      "destination": "/en/wrangling/buckets"
     },
     {
       "source": "/wrangling/bins.html",
-      "destination": "/en/wrangling/bins"
+      "destination": "/en/wrangling/buckets"
     },
     {
       "source": "/en/wrangling/bins.html",
-      "destination": "/en/wrangling/bins"
+      "destination": "/en/wrangling/buckets"
     },
     {
       "source": "/en/wrangling/buckets.html",
@@ -9930,7 +9937,7 @@
     },
     {
       "source": "/ja/viz/color.html",
-      "destination": "/ja/viz/color"
+      "destination": "/en/viz/color"
     },
     {
       "source": "/ja/viz/features.html",
@@ -10006,7 +10013,7 @@
     },
     {
       "source": "/visualization/features/color-ja.html",
-      "destination": "/ja/viz/color"
+      "destination": "/en/viz/color"
     },
     {
       "source": "/visualization/types/r-custom_ja.html",
@@ -10159,6 +10166,158 @@
     {
       "source": "/en/page/index",
       "destination": "/en/page"
+    },
+    {
+      "source": "/en/ai/ai-data-source-auto-setup",
+      "destination": "/en/ai/ai-data"
+    },
+    {
+      "source": "/en/ai/ai-data-source",
+      "destination": "/en/ai/ai-data"
+    },
+    {
+      "source": "/en/ai/ai-promtpt-function-ja",
+      "destination": "/en/ai/ai-prompt-function"
+    },
+    {
+      "source": "/en/analytics/text_cluster",
+      "destination": "/en/analytics/topic_model"
+    },
+    {
+      "source": "/en/customdata/google-analytics",
+      "destination": "/en/import/google-analytics"
+    },
+    {
+      "source": "/en/customdata/google-sheet",
+      "destination": "/en/import/google-sheet"
+    },
+    {
+      "source": "/en/customdata/scrape",
+      "destination": "/en/import/web-scraping"
+    },
+    {
+      "source": "/en/import/google-analytics_old",
+      "destination": "/en/import/google-analytics"
+    },
+    {
+      "source": "/en/ml/text-mining",
+      "destination": "/en/text/main"
+    },
+    {
+      "source": "/en/viz/area_ja",
+      "destination": "/en/viz/area"
+    },
+    {
+      "source": "/en/viz/bar_ja",
+      "destination": "/en/viz/bar"
+    },
+    {
+      "source": "/en/viz/boxplot_ja",
+      "destination": "/en/viz/boxplot"
+    },
+    {
+      "source": "/en/viz/bubble_ja",
+      "destination": "/en/viz/bubble"
+    },
+    {
+      "source": "/en/viz/contour_ja",
+      "destination": "/en/viz/contour"
+    },
+    {
+      "source": "/en/viz/densityplot_ja",
+      "destination": "/en/viz/densityplot"
+    },
+    {
+      "source": "/en/viz/easymap_ja",
+      "destination": "/en/viz/easymap"
+    },
+    {
+      "source": "/en/viz/errbar-agg_ja",
+      "destination": "/en/viz/errbar-agg"
+    },
+    {
+      "source": "/en/viz/errbar_ja",
+      "destination": "/en/viz/errbar"
+    },
+    {
+      "source": "/en/viz/geojson_ja",
+      "destination": "/en/viz/geojson"
+    },
+    {
+      "source": "/en/viz/heatmap_ja",
+      "destination": "/en/viz/heatmap"
+    },
+    {
+      "source": "/en/viz/hist_ja",
+      "destination": "/en/viz/hist"
+    },
+    {
+      "source": "/en/viz/line_ja",
+      "destination": "/en/viz/line"
+    },
+    {
+      "source": "/en/viz/lines-grouped-by-labels",
+      "destination": "/en/viz/trend-line"
+    },
+    {
+      "source": "/en/viz/map_ja",
+      "destination": "/en/viz/map"
+    },
+    {
+      "source": "/en/viz/maphmap_ja",
+      "destination": "/en/viz/maphmap"
+    },
+    {
+      "source": "/en/viz/pie_ja",
+      "destination": "/en/viz/pie"
+    },
+    {
+      "source": "/en/viz/pivot_ja",
+      "destination": "/en/viz/pivot"
+    },
+    {
+      "source": "/en/viz/radar_ja",
+      "destination": "/en/viz/radar"
+    },
+    {
+      "source": "/en/viz/scatter_ja",
+      "destination": "/en/viz/scatter"
+    },
+    {
+      "source": "/en/viz/singlevalue_ja",
+      "destination": "/en/viz/singlevalue"
+    },
+    {
+      "source": "/en/viz/summarize-table_ja",
+      "destination": "/en/viz/summarize-table"
+    },
+    {
+      "source": "/en/viz/table_ja",
+      "destination": "/en/viz/table"
+    },
+    {
+      "source": "/en/viz/violin_ja",
+      "destination": "/en/viz/violin"
+    },
+    {
+      "source": "/en/viz/wordcloud-ja",
+      "destination": "/ja/viz/wordcloud"
+    },
+    {
+      "source": "/en/wrangling/bind_cols",
+      "destination": "/en/wrangling/bind_columns"
+    },
+    {
+      "source": "/en/wrangling/bins",
+      "destination": "/en/wrangling/buckets"
+    },
+    {
+      "source": "/ja/viz/color",
+      "destination": "/en/viz/color"
+    },
+    {
+      "source": "/en/ai/ai-promtpt-function-en",
+      "destination": "/en/ai/ai-prompt-function"
     }
   ],
   "logo": {
