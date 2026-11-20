@@ -852,9 +852,22 @@
               {
                 "group": "データの加工",
                 "pages": [
+                  "ja/wrangling/mutate",
+                  "ja/wrangling/mutate_at",
+                  "ja/wrangling/summarize",
+                  "ja/wrangling/group",
+                  "ja/wrangling/filter",
+                  "ja/wrangling/join",
+                  "ja/wrangling/merge",
+                  "ja/wrangling/gather",
+                  "ja/wrangling/spread",
                   "ja/wrangling/pivot",
+                  "ja/wrangling/separate",
+                  "ja/wrangling/unite",
+                  "ja/wrangling/case_when",
                   "ja/wrangling/categories",
                   "ja/wrangling/window-calculation",
+                  "ja/wrangling/text_wrangling",
                   "ja/wrangling/regular_expression"
                 ],
                 "root": "ja/data-wrangling"
