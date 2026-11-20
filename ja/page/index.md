@@ -69,4 +69,4 @@ Chrome の拡張機能「Claude in Chrome」を入れていると、Claude が�
 
 [この手順で作ったダッシュボードを開く](https://exploratory.io/page/GMq1Qom5tS/krz8Kyh3Uo)
 
-ダッシュボードのほかに、分析ノートやスライドも作れます。依頼文と作成例は、[作成例](/ja/mcp/server/page-examples)をご覧ください。
+ダッシュボードのほかに、分析ノートやスライドも作れます。依頼文と作成例は、[作成例](/ja/page/examples)をご覧ください。

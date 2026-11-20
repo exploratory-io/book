@@ -65,4 +65,4 @@ In our test, after we selected **Always allow for this website**, Claude didn’
 
 [Open the dashboard made in these steps](https://exploratory.io/page/GMq1Qom5tS/zFP0NLE7Nh)
 
-You can also create analysis reports and slides. For the requests and the results, see [Examples](/en/mcp/server/page-examples).
+You can also create analysis reports and slides. For the requests and the results, see [Examples](/en/page/examples).

@@ -241,8 +241,8 @@
               {
                 "group": "Page",
                 "pages": [
-                  "en/mcp/server/page",
-                  "en/mcp/server/page-examples"
+                  "en/page/index",
+                  "en/page/examples"
                 ]
               },
               {
@@ -796,8 +796,8 @@
               {
                 "group": "Page",
                 "pages": [
-                  "ja/mcp/server/page",
-                  "ja/mcp/server/page-examples"
+                  "ja/page/index",
+                  "ja/page/examples"
                 ]
               },
               {
@@ -10112,6 +10112,22 @@
     {
       "source": "/product-features/share-ri-ben-yu/restore_ja.html",
       "destination": "/ja/share/restore"
+    },
+    {
+      "source": "/ja/mcp/server/page",
+      "destination": "/ja/page"
+    },
+    {
+      "source": "/ja/mcp/server/page-examples",
+      "destination": "/ja/page/examples"
+    },
+    {
+      "source": "/en/mcp/server/page",
+      "destination": "/en/page"
+    },
+    {
+      "source": "/en/mcp/server/page-examples",
+      "destination": "/en/page/examples"
     }
   ],
   "logo": {
