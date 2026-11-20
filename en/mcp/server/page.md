@@ -68,9 +68,13 @@ These are English versions of three Pages originally created in Japanese. The re
 
 **Monitor orders with a dashboard**
 
-To try the dashboard yourself, use the [order dashboard request](#create-an-order-dashboard).
+This one was made with a different design reference from the steps above.
 
-This dashboard uses two templates as design references.
+```text
+Using the "Sales Orders (Line Items)" data on Exploratory Server, build an interactive dashboard for monitoring order status and publish it as a Page.
+For the design, use this as a reference:
+https://v0.app/templates/optimus-the-ai-platform-to-build-and-ship-LHv4frpA7Us
+```
 
 ![Example order status dashboard](images/en/sample-dashboard-en.png)
 
