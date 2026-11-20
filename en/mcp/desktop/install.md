@@ -247,6 +247,8 @@ You can check the description and publisher in the plugin details.
 
 Next, in Exploratory Desktop, open System Settings > MCP / CLI, turn on the MCP switch, and choose Save at the bottom of the screen. To check the connection, open a project in Exploratory Desktop and ask Cursor, “List the data frames in my open Exploratory project.” If it returns the list from your project, the connection is working. See [Check it in the AI tool](#check) for the full steps.
 
+<a id="commands"></a>
+
 ### Install with commands
 
 The plugin is not in the official plugin directories. Add the repository exploratory-io/exploratory as a marketplace, then install the plugin exploratory. Run the commands in a terminal yourself, or ask an AI tool to run them.
