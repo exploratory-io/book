@@ -12,6 +12,7 @@ title: "使い方"
 | チャートの数値を取得する | [チャートの数値を取得する](#chart) | fetch、chart_get_data、chart_query |
 | アナリティクスの結果を取得する | [アナリティクスの結果を取得する](#analytics) | fetch、analytics_get_result |
 | 結果をファイルに保存する | [結果をファイルに保存する](#export) | query_dataset、dataframe_export |
+| ダッシュボードやレポートを Page として公開する | [Page 機能の使い方](/ja/mcp/server/page)（別のページ） | get_page_guide、page_publish、page_update |
 
 ターミナルから同じことをするときは、CLI Server の[使い方](/ja/cli/server/use)を参照してください。
 

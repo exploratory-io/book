@@ -12,6 +12,7 @@ Examples of what to ask your AI for what you want to do with published content, 
 | Get the numbers of a chart | [Get the numbers of a chart](#chart) | fetch, chart_get_data, chart_query |
 | Get the results of analytics | [Get the results of analytics](#analytics) | fetch, analytics_get_result |
 | Save results to a file | [Save results to a file](#export) | query_dataset, dataframe_export |
+| Publish a dashboard or report as a Page | [How to Create an Exploratory Page](/en/mcp/server/page) (separate page) | get_page_guide, page_publish, page_update |
 
 To do the same from a terminal, see [Use](/en/cli/server/use) of CLI Server.
 
