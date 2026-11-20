@@ -2,3 +2,53 @@
 title: "Data Wrangling"
 ---
 
+Data wrangling is how you shape your data before you chart or analyze it. You build it step by step with the UI or by typing R functions in Command Line Mode, and each operation is kept as a step.
+
+- [Command Line Mode](/en/wrangling/command-mode) - Type R functions directly instead of using the UI.
+- [Select / Remove Columns](/en/wrangling/select) - Select or remove columns by column name.
+- [Reorder Columns](/en/wrangling/reorder) - Reorder columns by drag and drop.
+- [Create New Calculation](/en/wrangling/mutate) - Create new columns with given expressions and preserve existing columns.
+- [Create New Calculation for Multiple Columns](/en/wrangling/mutate_at) - Apply a new calculation to multiple columns.
+- [Summarize (Aggregate)](/en/wrangling/summarize) - Summarize (aggregate) the data.
+- [Group Rows](/en/wrangling/group) - Convert the data frame into a grouped data frame so that following operations are performed by group.
+- [Filter](/en/wrangling/filter) - Return rows that match conditions.
+- [Rename](/en/wrangling/rename) - Rename existing column names.
+- [Arrange (Sort)](/en/wrangling/arrange) - Sort rows by given columns.
+- [Top / Bottom N](/en/wrangling/top_n) - Keep only the top or bottom N rows.
+- [Join Data](/en/wrangling/join) - Join rows from the data frame with rows from another data frame by matching values of key columns.
+- [Merge multiple Data Frames](/en/wrangling/merge) - Merge multiple data frames by row.
+- [Gather (Unpivot)](/en/wrangling/gather) - Take multiple columns and collapse them into key-value pairs.
+- [Spread](/en/wrangling/spread) - Spread a key-value pair across multiple columns.
+- [Pivot](/en/wrangling/pivot) - Pivot columns into rows and columns.
+- [Expand](/en/wrangling/expand) - Expand a data frame to include all combinations of values.
+- [Complete](/en/wrangling/complete) - Turn implicit missing values into explicit missing values and complete missing combinations of data.
+- [Separate](/en/wrangling/separate) - Separate a column with delimited values into multiple columns or rows.
+- [Unite](/en/wrangling/unite) - Unite columns.
+- [Bind Rows](/en/wrangling/bind_rows) - Bind multiple data frames by row.
+- [Bind Columns](/en/wrangling/bind_columns) - Bind multiple data frames by column.
+- [Keep Only Unique Rows](/en/wrangling/distinct) - Keep only unique rows.
+- [Keep Only Duplicated Rows](/en/wrangling/get_dupes) - Keep only duplicated rows.
+- [Slice](/en/wrangling/slice) - Select rows by positions.
+- [Drop NA](/en/wrangling/drop_na) - Drop rows that have NA values.
+- [Sample](/en/wrangling/sample) - Sample N rows or a fraction of rows from the data frame.
+- [Impute NA](/en/wrangling/impute_na) - Impute NA by average or median values, manually entered values, or predicted values.
+- [Fill](/en/wrangling/fill) - Fill missing values using the previous entry.
+- [Create Buckets](/en/wrangling/buckets) - Categorize numeric values into a set of buckets.
+- [Assign New Values to Existing Values - Recode](/en/wrangling/recode) - Map existing values to new values with an easy-to-use dialog.
+- [Assign New Values by Setting Conditions - Case When](/en/wrangling/case_when) - Assign new values to a column by setting conditions with an easy-to-use dialog.
+- [Working with Categorical Data](/en/wrangling/categories) - Work with categorical data.
+- [Type Convert](/en/wrangling/type-convert) - Guess the data type of each column by reading the first 1000 rows, parse the data and set appropriate data types.
+- [Row as Header](/en/wrangling/row_as_header) - Use a row as column names.
+- [Ungroup](/en/wrangling/ungroup) - Remove the grouping.
+- [Unnest](/en/wrangling/unnest) - Unnest a list column or a list of data frames into its own rows.
+- [Separate List Items into Columns (Unnest Wider)](/en/wrangling/unnest_wider) - Unnest a list column or a list of data frames into its own columns.
+- [Separate List Items into Rows (Unnest Longer)](/en/wrangling/unnest_longer) - Unnest a list column or a list of data frames into its own rows.
+- [Separate Address (Japan)](/en/wrangling/separate-japanese-address) - Separate a Japanese address into prefecture, city and street columns.
+- [Hoist](/en/wrangling/hoist) - Selectively pull components of a list column out into their own top-level columns.
+- [Remove Empty Rows](/en/wrangling/remove_empty_rows) - Remove all rows that are composed entirely of NA values.
+- [Remove Empty Columns](/en/wrangling/remove_empty_cols) - Remove all columns that are composed entirely of NA values.
+- [Clean Column Names](/en/wrangling/clean_names) - Clean up all column names on the data frame.
+- [Window (Table) Calculation](/en/wrangling/window-calculation) - Window Calculation is available for Numeric, Date, and Time columns.
+- [Add Row](/en/wrangling/add_row) - Add a row by passing column name-value pairs.
+- [Text Wrangling UI](/en/wrangling/text_wrangling) - Remove, replace and extract strings from your text data.
+- [Regular Expression](/en/wrangling/regular_expression) - Use regular expressions inside the Text Data Wrangling UI.
