@@ -62,6 +62,8 @@ In our test, after we selected **Always allow for this website**, Claude didn’
 
 ![Category filter showing All categories](images/en/page-06b-page-scroll-en.png)
 
+[Open the dashboard made in these steps](https://exploratory.io/page/GMq1Qom5tS/zFP0NLE7Nh)
+
 ## Explore three example Pages
 
 These are English versions of three Pages originally created in Japanese. The requests below are English translations of the original requests.

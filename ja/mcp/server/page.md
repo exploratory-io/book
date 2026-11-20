@@ -64,6 +64,10 @@ Chrome の拡張機能「Claude in Chrome」を入れていると、Claude が�
 
 ![カテゴリ別売上の「PC周辺機器」の棒](images/ja/page-06b-page-scroll.png)
 
+この手順で作ったダッシュボードは、次のリンクから開けます。
+
+[この手順で作ったダッシュボードを開く](https://exploratory.io/page/GMq1Qom5tS/krz8Kyh3Uo)
+
 ## 指示と完成例を見比べる
 
 注文状況を追うダッシュボードのほかに、分析の結果を文章で読むノートや、会議で説明するスライドも作れます。
