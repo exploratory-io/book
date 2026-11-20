@@ -92,6 +92,8 @@ To do the same from a terminal, see [Save results to a file](/en/cli/server/guid
 
 ```text
 Using the "Sales Orders (Line Items)" data on Exploratory Server, build an interactive dashboard for monitoring order status and publish it as a Page.
+For the design, use this as a reference:
+https://v0.app/templates/optimus-the-ai-platform-to-build-and-ship-LHv4frpA7Us
 ```
 
 The AI checks how to write a Page with get_page_guide, looks at the columns of the data, publishes the Page with page_publish, and returns its URL. A Page is a dashboard, an analysis report or slides that you open in a browser, and it reads the published data each time it opens. A new Page is private, and only you can share it. Tell the AI the name of the data and what you want to see. If you have a page you want the design to follow, add its URL.
