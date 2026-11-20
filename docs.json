@@ -244,7 +244,7 @@
                   "en/page/get-started",
                   "en/page/examples"
                 ],
-                "root": "en/page/index"
+                "root": "en/page"
               },
               {
                 "group": "Data Import",
@@ -800,7 +800,7 @@
                   "ja/page/get-started",
                   "ja/page/examples"
                 ],
-                "root": "ja/page/index"
+                "root": "ja/page"
               },
               {
                 "group": "データのインポート",
@@ -10138,6 +10138,14 @@
     {
       "source": "/en/page/getting-started",
       "destination": "/en/page/get-started"
+    },
+    {
+      "source": "/ja/page/index",
+      "destination": "/ja/page"
+    },
+    {
+      "source": "/en/page/index",
+      "destination": "/en/page"
     }
   ],
   "logo": {
