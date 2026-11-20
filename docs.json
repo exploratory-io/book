@@ -852,6 +852,8 @@
               {
                 "group": "データの加工",
                 "pages": [
+                  "ja/wrangling/pivot",
+                  "ja/wrangling/categories",
                   "ja/wrangling/window-calculation",
                   "ja/wrangling/regular_expression"
                 ],
@@ -877,6 +879,13 @@
                   }
                 ],
                 "root": "ja/visualization"
+              },
+              {
+                "group": "アナリティクス",
+                "pages": [
+                  "ja/analytics/correlation_column",
+                  "ja/analytics/prediction"
+                ]
               },
               {
                 "group": "セットアップ",
