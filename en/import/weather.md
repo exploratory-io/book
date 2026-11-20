@@ -1,5 +1,5 @@
 ---
-title: "Whether Data Import"
+title: "Weather Data Import"
 sidebarTitle: "Weather Data"
 ---
 
