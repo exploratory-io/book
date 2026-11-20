@@ -276,6 +276,16 @@ agy plugin install ./exploratory/plugins/exploratory-desktop
 
 Needs Git. The plugin appears in the Antigravity app under Customizations \> Installed.
 
+**Cursor**
+
+```sh
+git clone --depth 1 https://github.com/exploratory-io/exploratory
+mkdir -p ~/.cursor/plugins/local
+cp -R exploratory/plugins/exploratory-desktop ~/.cursor/plugins/local/exploratory
+```
+
+Needs Git. This copies the plugin into the same folder the card uses (~/.cursor/plugins/local/exploratory). Quit and restart Cursor, and Exploratory appears under Customize \> Plugins \> Installed with a Local label. It duplicates the Exploratory Desktop plugin added from the Cursor app, so use one or the other.
+
 <a id="update"></a>
 
 ## Update and remove
@@ -283,13 +293,14 @@ Needs Git. The plugin appears in the Antigravity app under Customizations \> Ins
 It depends on how you installed it.
 
 - Installed with the card (Claude Code, Codex, Antigravity, Cursor): choose Reinstall on the card to install the latest plugin again (this is also how you update). To remove it, choose Remove on the same card.
-- Installed with commands (Claude Code, Codex, Antigravity). Follow the steps in the table below to update or remove the plugin.
+- Installed with commands (Claude Code, Codex, Antigravity, Cursor). Follow the steps in the table below to update or remove the plugin.
 
 | AI tool | Update | Remove |
 | --- | --- | --- |
 | Claude Code | claude plugin marketplace update exploratory, then claude plugin update exploratory@exploratory, and restart Claude Code | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory, then codex plugin remove exploratory@exploratory and codex plugin add exploratory@exploratory | codex plugin remove exploratory@exploratory |
 | Antigravity | Run git pull in the cloned folder, then agy plugin install again | Remove the plugin in Antigravity's plugin settings |
+| Cursor | Run git pull in the cloned folder exploratory, then run rm -rf ~/.cursor/plugins/local/exploratory && cp -R plugins/exploratory-desktop ~/.cursor/plugins/local/exploratory, and restart Cursor | Run rm -rf ~/.cursor/plugins/local/exploratory, and restart Cursor |
 
 The Desktop MCP stops when you quit Exploratory Desktop. Removing the plugin does not affect your Server MCP connection.
 

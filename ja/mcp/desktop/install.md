@@ -274,6 +274,16 @@ agy plugin install ./exploratory/plugins/exploratory-desktop
 
 Git が必要です。プラグインは、Antigravity のアプリの Customizations \> Installed に表示されます。
 
+**Cursor**
+
+```sh
+git clone --depth 1 https://github.com/exploratory-io/exploratory
+mkdir -p ~/.cursor/plugins/local
+cp -R exploratory/plugins/exploratory-desktop ~/.cursor/plugins/local/exploratory
+```
+
+Git が必要です。カードと同じフォルダ（~/.cursor/plugins/local/exploratory）に入れます。Cursor を終了して起動し直すと、Customize \> Plugins の Installed に「Exploratory」が「Local」の表示付きで出ます。Cursor のアプリから入れた Exploratory Desktop とは重複するため、どちらか一方で入れてください。
+
 <a id="update"></a>
 
 ## 更新と削除
@@ -281,13 +291,14 @@ Git が必要です。プラグインは、Antigravity のアプリの Customiza
 入れ方によって、操作が違います。
 
 - カードで入れたもの（Claude Code、Codex、Antigravity、Cursor）: カードの「再インストール」で、最新のプラグインに入れ直します（更新も、この操作で行います）。外すときは、同じカードの「削除」を選びます。
-- コマンドで入れたもの（Claude Code、Codex、Antigravity）は、次の表の手順で更新・削除します。
+- コマンドで入れたもの（Claude Code、Codex、Antigravity、Cursor）は、次の表の手順で更新・削除します。
 
 | AI ツール | 更新 | 削除 |
 | --- | --- | --- |
 | Claude Code | claude plugin marketplace update exploratory を実行し、続けて claude plugin update exploratory@exploratory を実行して、Claude Code を起動し直します | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory を実行し、続けて codex plugin remove exploratory@exploratory と codex plugin add exploratory@exploratory を実行します | codex plugin remove exploratory@exploratory |
 | Antigravity | クローンしたフォルダで git pull を実行し、もう一度 agy plugin install を実行します | Antigravity のプラグインの設定で、プラグインを削除します |
+| Cursor | クローンしたフォルダ exploratory で git pull を実行し、rm -rf ~/.cursor/plugins/local/exploratory && cp -R plugins/exploratory-desktop ~/.cursor/plugins/local/exploratory を実行して、Cursor を起動し直します | rm -rf ~/.cursor/plugins/local/exploratory を実行して、Cursor を起動し直します |
 
 Desktop の MCP は、Exploratory Desktop を終了すると止まります。プラグインを削除しても、Server の MCP の接続には影響しません。
 
