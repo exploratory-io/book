@@ -864,6 +864,7 @@
                   "ja/wrangling/pivot",
                   "ja/wrangling/separate",
                   "ja/wrangling/unite",
+                  "ja/wrangling/recode",
                   "ja/wrangling/case_when",
                   "ja/wrangling/categories",
                   "ja/wrangling/window-calculation",
@@ -915,6 +916,16 @@
                 "group": "アナリティクス",
                 "pages": [
                   "ja/analytics/correlation_column",
+                  "ja/analytics/textanal",
+                  "ja/analytics/topic_model",
+                  "ja/analytics/market_basket",
+                  "ja/analytics/t_test",
+                  "ja/analytics/anova",
+                  "ja/analytics/wilcoxon",
+                  "ja/analytics/kruskal_wallis",
+                  "ja/analytics/chisq",
+                  "ja/analytics/ab_test",
+                  "ja/analytics/normality",
                   "ja/analytics/prediction"
                 ]
               },
