@@ -865,6 +865,22 @@
                   {
                     "group": "チャートの種類",
                     "pages": [
+                      "ja/viz/bar",
+                      "ja/viz/line",
+                      "ja/viz/area",
+                      "ja/viz/hist",
+                      "ja/viz/densityplot",
+                      "ja/viz/scatter",
+                      "ja/viz/bubble",
+                      "ja/viz/violin",
+                      "ja/viz/errbar",
+                      "ja/viz/errbar-agg",
+                      "ja/viz/easymap",
+                      "ja/viz/geojson",
+                      "ja/viz/map",
+                      "ja/viz/maphmap",
+                      "ja/viz/heatmap",
+                      "ja/viz/contour",
                       "ja/viz/wordcloud",
                       "ja/viz/r-custom"
                     ],
@@ -873,6 +889,8 @@
                   {
                     "group": "チャートの機能",
                     "pages": [
+                      "ja/viz/small-multiple",
+                      "ja/viz/custom-palette",
                       "ja/viz/number-of-unuque-values-check"
                     ],
                     "root": "ja/viz/features"
