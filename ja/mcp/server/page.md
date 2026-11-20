@@ -68,7 +68,7 @@ Chrome の拡張機能「Claude in Chrome」を入れていると、Claude が�
 
 [この手順で作ったダッシュボードを開く](https://exploratory.io/page/GMq1Qom5tS/krz8Kyh3Uo)
 
-## 指示と完成例を見比べる
+## 作成例
 
 注文状況を追うダッシュボードのほかに、分析の結果を文章で読むノートや、会議で説明するスライドも作れます。
 
@@ -82,9 +82,9 @@ Exploratoryサーバーにある「 販売注文データ」を対象にして�
 https://v0.app/templates/optimus-the-ai-platform-to-build-and-ship-LHv4frpA7Us
 ```
 
-![注文状況のダッシュボードの完成例](images/ja/sample-dashboard.png)
+![注文状況のダッシュボードの作成例](images/ja/sample-dashboard.png)
 
-[ダッシュボードの完成例を開く](https://exploratory.io/page/GMq1Qom5tS/Zqr2rYj9uH)
+[ダッシュボードの作成例を開く](https://exploratory.io/page/GMq1Qom5tS/Zqr2rYj9uH)
 
 **ノートでブランド A の満足度に関係する要因を読む**
 
@@ -92,9 +92,9 @@ https://v0.app/templates/optimus-the-ai-platform-to-build-and-ship-LHv4frpA7Us
 以下のデータを対象にブランドAの満足度に対して関係する要因をドライバー分析をして、分析レポートをPageで作成してください https://exploratory.io/data/exploratory/SKz6cZH7
 ```
 
-![ブランド A の満足度を分析したノートの完成例](images/ja/sample-note-2.png)
+![ブランド A の満足度を分析したノートの作成例](images/ja/sample-note-2.png)
 
-[分析ノートの完成例を開く](https://exploratory.io/page/GMq1Qom5tS/fAr6BQN2Xh)
+[分析ノートの作成例を開く](https://exploratory.io/page/GMq1Qom5tS/fAr6BQN2Xh)
 
 **スライドで経営層に分析結果を伝える**
 
@@ -102,9 +102,9 @@ https://v0.app/templates/optimus-the-ai-platform-to-build-and-ship-LHv4frpA7Us
 ブランドサーベイのデータがサーバーにパブリッシュされているので、それを元にブランドAの満足度に関するドライバー分析を行って、エグゼクティブ向けのスライドを作ってpageに公開してください。デザインは以下を模倣してください。page作成時の決まりの色は使用しなくてよく、以下のデザインを最大限参考にして作ってください。https://v0.app/templates/ai-product-portfolio-LFFFrvSq9Bb
 ```
 
-![経営層向けスライドの完成例](images/ja/sample-slide-2.png)
+![経営層向けスライドの作成例](images/ja/sample-slide-2.png)
 
-[スライドの完成例を開く](https://exploratory.io/page/GMq1Qom5tS/zyH0jPM0AJ)
+[スライドの作成例を開く](https://exploratory.io/page/GMq1Qom5tS/zyH0jPM0AJ)
 
 <Tip>
 今回のダッシュボードとスライドでは、参考にしたいテンプレートの URL を添えるだけで、希望に沿った見栄えに仕上がりました。作りたい資料に近い例を探して、依頼文に加えてみてください。[v0 のテンプレート一覧](https://v0.app/templates)
