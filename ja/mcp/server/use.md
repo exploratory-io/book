@@ -101,6 +101,6 @@ AI は、get_page_guide で Page の書き方を確かめ、データの列を�
 
 次の画像は、上の依頼文で作ったダッシュボードです。
 
-![注文状況のダッシュボードの完成例](images/ja/sample-dashboard.png)
+![注文状況のダッシュボードの作成例](images/ja/sample-dashboard.png)
 
 手順の詳細と、ノートやスライドの例は、[Page を作る](/ja/mcp/server/page)をご覧ください。
