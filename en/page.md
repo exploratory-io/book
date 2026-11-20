@@ -11,8 +11,7 @@ An Exploratory Page (Page) is a web page that an AI tool such as Claude creates 
 - **See the latest data every time:** A Page reads its data each time it opens. When the data is updated, the numbers on the Page change too.
 - **Filter and switch views:** A Page can be interactive, for example filtering when you click a bar in a chart.
 - **Keep the same URL when you change it:** When you ask the AI tool for a change, the Page gets a new version at the same URL. Earlier versions are kept, and you can restore them.
-
-A new Page is private. Only the person who made it can share it.
+- **Choose who can see it:** Use Share at the top right of the Page to change its sharing. You can share it with your team or collaborators, or make it public so anyone can view it. A new Page is private, and only the person who made it can change its sharing.
 
 ## What you need
 
