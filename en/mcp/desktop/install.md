@@ -5,7 +5,7 @@ title: "Install the plugin"
 After you install it, an AI tool can use Exploratory Desktop. In Exploratory Desktop, System Settings installs the Desktop MCP plugin into the AI tools on this computer.
 It takes about 5 minutes. You need Exploratory Desktop and the AI tool you want to install into (Claude Code, Codex, Antigravity or Cursor) on the same computer.
 
-There is no separate procedure for each AI tool: Claude Code, Codex, Antigravity and Cursor all install from the same card.
+Claude Code, Codex, Antigravity and Cursor all install from the same card. If you can’t install from the card, see [Install by hand](#manual).
 
 <a id="steps"></a>
 
@@ -56,7 +56,7 @@ If you do not save, the MCP switch and the Allow create, edit and delete setting
    - In Claude Code, open `/mcp` and check that exploratory-desktop is connected.
    - In Codex, run `codex mcp list` and check that exploratory-desktop is listed.
    - In Antigravity, check that the plugin appears under Customizations > Installed in the app.
-   - In Cursor, check that the Cursor row of the card shows "Installed - v" followed by the plugin version.
+   - If you installed the Cursor plugin from the card, check that the Cursor row shows "Installed - v" followed by the plugin version. If you installed it from the app, check that Cursor returns the data frames from your open Exploratory project.
 
 If a call says that MCP is turned off, go back to System Settings and check that you turned the MCP switch on and chose Save.
 
@@ -105,7 +105,82 @@ If the reason does not let you fix it, send the copied output to support. When i
 
 ## Install by hand
 
-Use this when you do not use the card. The plugin is not in the official plugin directories. Add the repository exploratory-io/exploratory as a marketplace, then install the plugin exploratory. Run the commands in a terminal yourself, or ask an AI tool to run them.
+If you can’t install the plugin from the System Settings card, for example because Exploratory Desktop can’t reach the network, follow the instructions below for your AI app. If you prefer to use a terminal, go to “Install with commands” in this section.
+
+### Install from your AI app
+
+- [Claude app](#install-claude-app)
+- [Cursor](#install-cursor)
+
+<a id="install-claude-app"></a>
+
+#### Claude app
+
+Use the Claude app on the same computer as Exploratory Desktop. The Claude app needs access to the GitHub repository to add the marketplace.
+
+The Claude screenshots below show the Japanese interface. Follow the numbered markers to find the same controls.
+
+1. In the Claude app’s customization view, choose the plugins tab (third from the left, ❶), then open the + menu at the top right (❷).
+
+   ![Claude’s plugins tab and the plus menu at the top right](images/en/app-install-claude-00-installed-before.png)
+
+2. Choose the first item in the menu to add a marketplace (❶).
+
+   ![First item in Claude’s plus menu](images/en/app-install-claude-01-add-menu.png)
+
+3. In the dialog, choose the lower option to add a marketplace from a repository (❶).
+
+   ![Lower option in Claude’s marketplace dialog](images/en/app-install-claude-02-add-marketplace.png)
+
+4. In the URL field (❶), enter `exploratory-io/exploratory` and select the matching suggestion. Once the field looks like the screenshot, choose the rightmost button at the bottom to sync the marketplace (❷).
+
+   ![Repository field and sync button in Claude](images/en/app-install-claude-04-url-entered.png)
+
+5. When syncing finishes, choose the rightmost button in the Exploratory Desktop row to add the plugin (❶).
+
+   ![Add button on the Exploratory Desktop row in Claude](images/en/app-install-claude-10-after-sync.png)
+
+6. In the local MCP server dialog, check that it lists exploratory-desktop, then choose the rightmost button to continue (❶).
+
+   ![Continue button in Claude’s local MCP server dialog](images/en/app-install-claude-11-add-plugin.png)
+
+When installation finishes, the plugin details screen opens. Use the back arrow next to Plugins at the top left to return to the list. In the list, select the tab for your plugins and look for Exploratory Desktop.
+
+![Exploratory Desktop in the list of your plugins in Claude](images/en/app-install-claude-13-mine-list.png)
+
+Next, in Exploratory Desktop, open System Settings > MCP / CLI, turn on the MCP switch, and choose Save at the bottom of the screen. To check the connection, open a project in Exploratory Desktop and in the Claude app’s Code tab, or in Cowork running on this computer, ask Claude, “List the data frames in my open Exploratory project.” If it returns the list from your project, the connection is working. The local MCP does not run in a regular chat. See [Check it in the AI tool](#check) for the full steps.
+
+<a id="install-cursor"></a>
+
+#### Cursor
+
+Use Cursor on the same computer as Exploratory Desktop. Cursor needs access to the GitHub repository to import the marketplace.
+
+1. In the Cursor Agents window, open Customize. Choose Plugins (❶), then open + Add to the right of Installed (❷).
+
+   ![Plugins tab and the + Add menu in Cursor](images/en/app-install-cursor-02-plugins.png)
+
+2. Choose From GitHub Repository (❶).
+
+   ![From GitHub Repository in Cursor’s + Add menu](images/en/app-install-cursor-03-add-menu.png)
+
+3. In Import Marketplace, enter `https://github.com/exploratory-io/exploratory` in Repository (❶). Leave Scope set to User and choose Import (❷).
+
+   ![Repository field and Import button in Import Marketplace](images/en/app-install-cursor-05-url-entered.png)
+
+4. In the marketplace, find exploratory under Exploratory and choose Add (❶).
+
+   ![Add button for exploratory in the Exploratory marketplace](images/en/app-install-cursor-07-imported.png)
+
+Return to Customize > Plugins. When the marketplace plugin exploratory appears under Installed, installation is complete.
+
+![exploratory listed under Installed in Cursor](images/en/app-install-cursor-09-installed-after.png)
+
+Next, in Exploratory Desktop, open System Settings > MCP / CLI, turn on the MCP switch, and choose Save at the bottom of the screen. To check the connection, open a project in Exploratory Desktop and ask Cursor, “List the data frames in my open Exploratory project.” If it returns the list from your project, the connection is working. See [Check it in the AI tool](#check) for the full steps.
+
+### Install with commands
+
+The plugin is not in the official plugin directories. Add the repository exploratory-io/exploratory as a marketplace, then install the plugin exploratory. Run the commands in a terminal yourself, or ask an AI tool to run them.
 
 **Claude Code**
 
@@ -114,9 +189,7 @@ claude plugin marketplace add exploratory-io/exploratory
 claude plugin install exploratory@exploratory
 ```
 
-You can also open /plugin in Claude Code, add the marketplace exploratory-io/exploratory and select exploratory.
-
-In the Claude app, open Settings \> Plugins, choose Add marketplace \> From repository, enter exploratory-io/exploratory, then install exploratory. A plugin installed from the terminal also appears there as "Installed locally". The local MCP runs in Cowork (when it runs on this computer) and in the Code tab. It does not run in a regular chat.
+You can also open /plugin in Claude Code, add the marketplace exploratory-io/exploratory and select exploratory. A plugin installed from the terminal appears as "Installed locally" in the Claude app’s plugins list.
 
 **Codex**
 
@@ -134,10 +207,6 @@ agy plugin install ./exploratory/plugins/exploratory-desktop
 
 Needs Git. The plugin appears in the Antigravity app under Customizations \> Installed.
 
-**Cursor**
-
-Install it with the card. There is no separate step to do by hand: the card copies the plugin, with its skills, to \~/.cursor/plugins/local/exploratory.
-
 <a id="update"></a>
 
 ## Update and remove
@@ -145,7 +214,7 @@ Install it with the card. There is no separate step to do by hand: the card copi
 It depends on how you installed it.
 
 - Installed with the card (Claude Code, Codex, Antigravity, Cursor): choose Reinstall on the card to install the latest plugin again (this is also how you update). To remove it, choose Remove on the same card.
-- Installed by hand (Claude Code, Codex, Antigravity): use the commands in the table below to update and remove. Cursor has no by-hand method; use the card.
+- Installed with commands (Claude Code, Codex, Antigravity). Follow the steps in the table below to update or remove the plugin.
 
 | AI tool | Update | Remove |
 | --- | --- | --- |

@@ -5,7 +5,7 @@ title: "プラグインのインストール"
 インストールすると、AI ツールから Exploratory Desktop を使えるようになります。Exploratory Desktop のシステム設定から、Desktop MCP のプラグインを、このコンピューターの AI ツールにインストールします。
 所要時間は 5 分ほどです。同じコンピューターに、Exploratory Desktop と、プラグインを入れる AI ツール（Claude Code、Codex、Antigravity、Cursor のいずれか）を用意してください。
 
-AI ツールごとに別の手順はありません。Claude Code、Codex、Antigravity、Cursor は、同じカードから入れられます。
+Claude Code、Codex、Antigravity、Cursor は、同じカードから入れられます。カードから入れられない場合は、[手作業でインストールする](#manual)をご覧ください。
 
 <a id="steps"></a>
 
@@ -56,7 +56,7 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
    - Claude Code では、`/mcp` を開いて、exploratory-desktop が接続されていることを確認します。
    - Codex では、`codex mcp list` を実行して、exploratory-desktop が並んでいることを確認します。
    - Antigravity では、アプリの Customizations > Installed に、プラグインが表示されていることを確認します。
-   - Cursor では、カードの Cursor の行に「インストール済み - v」とプラグインのバージョンが表示されていることを確認します。
+   - カードから Cursor に入れた場合は、カードの Cursor の行に「インストール済み - v」とプラグインのバージョンが表示されます。アプリから入れた場合は、Cursor から開いているプロジェクトのデータフレームの一覧が返ることを確認します。
 
 MCP がオフだと表示されたときは、システム設定に戻り、「MCP」のスイッチをオンにして「保存」を選んだかを確かめます。
 
@@ -105,7 +105,80 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 
 ## 手作業でインストールする
 
-カードを使わないときの手順です。このプラグインは、公式のプラグイン一覧にはありません。リポジトリ exploratory-io/exploratory をマーケットプレイスとして追加してから、プラグイン exploratory を入れます。コマンドは、ご自身でターミナルに打つか、AI ツールに頼んで実行してもらってください。
+Exploratory Desktop がネットワークに接続できないなど、システム設定のカードからプラグインを入れられないときは、以下からお使いの AI アプリの手順を選んでください。ターミナルを使う場合は、この節の「コマンドでインストールする」に進んでください。
+
+### アプリからインストールする
+
+- [Claude アプリ](#install-claude-app)
+- [Cursor](#install-cursor)
+
+<a id="install-claude-app"></a>
+
+#### Claude アプリ
+
+Exploratory Desktop と同じコンピューターで Claude アプリを使います。マーケットプレイスを追加するには、Claude アプリから GitHub のリポジトリにアクセスできる必要があります。
+
+1. Claude アプリの「カスタマイズ」で「プラグイン」を選び（❶）、右上の「＋ 追加」を開きます（❷）。
+
+   ![Claude の「プラグイン」タブと右上の「追加」メニュー](images/ja/app-install-claude-00-installed-before.png)
+
+2. メニューの「マーケットプレイスを追加」を選びます（❶）。
+
+   ![「追加」メニューの「マーケットプレイスを追加」](images/ja/app-install-claude-01-add-menu.png)
+
+3. 「リポジトリから追加」を選びます（❶）。
+
+   ![マーケットプレイスを追加する画面の「リポジトリから追加」](images/ja/app-install-claude-02-add-marketplace.png)
+
+4. URL 欄（❶）に `exploratory-io/exploratory` を入力し、候補から同じリポジトリを選びます。写真のように URL 欄に表示されたら、右下の「同期」を選びます（❷）。
+
+   ![Claude のリポジトリ URL 欄と「同期」ボタン](images/ja/app-install-claude-04-url-entered.png)
+
+5. 同期が終わったら、「Exploratory Desktop」の行の右端にある「追加」を選びます（❶）。
+
+   ![Exploratory Desktop の行の「追加」ボタン](images/ja/app-install-claude-10-after-sync.png)
+
+6. ローカル MCP サーバーの確認画面で exploratory-desktop が含まれていることを確認し、「続ける」を選びます（❶）。
+
+   ![ローカル MCP サーバーの確認画面の「続ける」ボタン](images/ja/app-install-claude-11-add-plugin.png)
+
+インストールが終わると、プラグインの詳細画面が開きます。左上の「← プラグイン」で一覧に戻り、「自分のもの」に「Exploratory Desktop」が表示されていることを確認します。
+
+![Claude の「自分のもの」に表示された Exploratory Desktop](images/ja/app-install-claude-13-mine-list.png)
+
+続けて、Exploratory Desktop のシステム設定の「MCP / CLI」で「MCP」をオンにし、画面下の「保存」を選びます。接続を確かめるには、Exploratory Desktop でプロジェクトを開き、Claude アプリの Code タブ、またはこのコンピューター上で動かしている Cowork で、「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼みます。自分のプロジェクトの一覧が返ってくれば接続できています。ローカルの MCP は、通常のチャットでは使えません。詳しくは[接続を確かめる手順](#check)を参照してください。
+
+<a id="install-cursor"></a>
+
+#### Cursor
+
+Exploratory Desktop と同じコンピューターで Cursor を使います。Cursor から GitHub のリポジトリにアクセスできる必要があります。
+
+1. Cursor の Agents ウィンドウで「Customize」を開きます。「Plugins」を選び（❶）、「Installed」の右にある「+ Add」を開きます（❷）。
+
+   ![Cursor の Plugins タブと + Add メニュー](images/ja/app-install-cursor-02-plugins.png)
+
+2. メニューの「From GitHub Repository」を選びます（❶）。
+
+   ![Cursor の + Add メニューにある From GitHub Repository](images/ja/app-install-cursor-03-add-menu.png)
+
+3. 「Import Marketplace」の「Repository」に `https://github.com/exploratory-io/exploratory` を入力します（❶）。「Scope」は「User」のまま、「Import」を選びます（❷）。
+
+   ![Import Marketplace の Repository 欄と Import ボタン](images/ja/app-install-cursor-05-url-entered.png)
+
+4. マーケットプレイスの「Exploratory」にある「exploratory」の「Add」を選びます（❶）。
+
+   ![Exploratory マーケットプレイスにある exploratory の Add ボタン](images/ja/app-install-cursor-07-imported.png)
+
+「Customize」の「Plugins」に戻り、「Installed」にマーケットプレイスから入れた「exploratory」が表示されていれば、インストールは完了です。
+
+![Cursor の Installed に表示された exploratory](images/ja/app-install-cursor-09-installed-after.png)
+
+続けて、Exploratory Desktop のシステム設定の「MCP / CLI」で「MCP」をオンにし、画面下の「保存」を選びます。接続を確かめるには、Exploratory Desktop でプロジェクトを開き、Cursor で「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼みます。自分のプロジェクトの一覧が返ってくれば接続できています。詳しくは[接続を確かめる手順](#check)を参照してください。
+
+### コマンドでインストールする
+
+このプラグインは、公式のプラグイン一覧にはありません。リポジトリ exploratory-io/exploratory をマーケットプレイスとして追加してから、プラグイン exploratory を入れます。コマンドは、ご自身でターミナルに打つか、AI ツールに頼んで実行してもらってください。
 
 **Claude Code**
 
@@ -114,9 +187,7 @@ claude plugin marketplace add exploratory-io/exploratory
 claude plugin install exploratory@exploratory
 ```
 
-Claude Code で /plugin を開き、マーケットプレイス exploratory-io/exploratory を追加して、exploratory を選んでも入れられます。
-
-Claude アプリでは、設定 \> プラグインを開き、「Add marketplace」\>「From repository」を選んで、exploratory-io/exploratory を入力し、exploratory を入れます。ターミナルで入れたプラグインも、そこに「ローカルにインストール済み」と表示されます。ローカルの MCP は、Cowork（このコンピューター上で動かしているとき）と Code タブで使えます。通常のチャットでは使えません。
+Claude Code で /plugin を開き、マーケットプレイス exploratory-io/exploratory を追加して、exploratory を選んでも入れられます。ターミナルで入れた場合、Claude アプリのプラグイン一覧では「ローカルにインストール済み」と表示されます。
 
 **Codex**
 
@@ -134,10 +205,6 @@ agy plugin install ./exploratory/plugins/exploratory-desktop
 
 Git が必要です。プラグインは、Antigravity のアプリの Customizations \> Installed に表示されます。
 
-**Cursor**
-
-カードから入れます。手作業で行う別の手順はありません。カードが、スキルを含むプラグインを \~/.cursor/plugins/local/exploratory へコピーします。
-
 <a id="update"></a>
 
 ## 更新と削除
@@ -145,7 +212,7 @@ Git が必要です。プラグインは、Antigravity のアプリの Customiza
 入れ方によって、操作が違います。
 
 - カードで入れたもの（Claude Code、Codex、Antigravity、Cursor）: カードの「再インストール」で、最新のプラグインに入れ直します（更新も、この操作で行います）。外すときは、同じカードの「削除」を選びます。
-- 手作業で入れたもの（Claude Code、Codex、Antigravity）: 次の表のコマンドで、更新と削除をします。Cursor には手作業で入れる方法がないので、カードを使います。
+- コマンドで入れたもの（Claude Code、Codex、Antigravity）は、次の表の手順で更新・削除します。
 
 | AI ツール | 更新 | 削除 |
 | --- | --- | --- |
