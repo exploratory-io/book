@@ -239,6 +239,13 @@
                 "root": "en/ai"
               },
               {
+                "group": "Page",
+                "pages": [
+                  "en/page/index",
+                  "en/page/examples"
+                ]
+              },
+              {
                 "group": "Data Import",
                 "pages": [
                   {
@@ -785,6 +792,13 @@
                   }
                 ],
                 "root": "ja/product-features"
+              },
+              {
+                "group": "Page",
+                "pages": [
+                  "ja/page/index",
+                  "ja/page/examples"
+                ]
               },
               {
                 "group": "データのインポート",
@@ -10098,6 +10112,22 @@
     {
       "source": "/product-features/share-ri-ben-yu/restore_ja.html",
       "destination": "/ja/share/restore"
+    },
+    {
+      "source": "/ja/mcp/server/page",
+      "destination": "/ja/page"
+    },
+    {
+      "source": "/ja/mcp/server/page-examples",
+      "destination": "/ja/page/examples"
+    },
+    {
+      "source": "/en/mcp/server/page",
+      "destination": "/en/page"
+    },
+    {
+      "source": "/en/mcp/server/page-examples",
+      "destination": "/en/page/examples"
     }
   ],
   "logo": {

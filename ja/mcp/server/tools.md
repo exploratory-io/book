@@ -21,8 +21,14 @@ title: "使える道具"
 | データ | [dataframe_preview](/ja/mcp/server/tools#dataframe_preview) | 読み取りだけ | 行を見ます。 |
 | データ | [query_dataset](/ja/mcp/server/tools#query_dataset) | 読み取りだけ | サーバーで絞り込み、集計します。 |
 | データ | [dataframe_export](/ja/mcp/server/tools#dataframe_export) | 読み取りだけ（ダウンロードリンクを作ります） | 結果を CSV か Parquet で保存します。 |
+| Page | [get_page_guide](/ja/mcp/server/tools#get_page_guide) | 読み取りだけ | Page の書き方（手順、使えるライブラリ、規則、例）を返します。page_publish と page_update の前に呼び出します。 |
+| Page | [page_list](/ja/mcp/server/tools#page_list) | 読み取りだけ | 自分の Page や、共有された Page を一覧します。 |
+| Page | [page_get](/ja/mcp/server/tools#page_get) | 読み取りだけ | Page を 1 つ、HTML ごと読みます。 |
+| Page | [page_publish](/ja/mcp/server/tools#page_publish) | 作成 | HTML を、非公開の Page として公開し、URL を返します。 |
+| Page | [page_update](/ja/mcp/server/tools#page_update) | 変更 | 自分の Page を更新します。URL は変わらず、前の HTML はバージョンとして残ります。 |
+| Page | [page_delete](/ja/mcp/server/tools#page_delete) | 削除 | 自分の Page を、すべてのバージョンごと削除します。元に戻せません。 |
 
-exploratory.io では、これらの道具が使えます。オンプレミスのサーバーでは、使える道具はサーバーの設定によって変わります。query_dataset、chart_query、dataframe_export は、管理者が有効にしたときだけ使えます。設定によっては、ほかの道具も増えます。たとえば desktop_mcp_setup_guide は、AI ツールを Exploratory Desktop につなぐ手順を返します。お使いのサーバーにある道具は、expl server tools list で確認できます。
+exploratory.io では、これらの道具が使えます。オンプレミスのサーバーでは、使える道具はサーバーの設定によって変わります。query_dataset、chart_query、dataframe_export は、管理者が有効にしたときだけ使えます。Page の道具は、管理者が Page を有効にし、上の 3 つの道具も有効にしたときだけ使えます。設定によっては、ほかの道具も増えます。たとえば desktop_mcp_setup_guide は、AI ツールを Exploratory Desktop につなぐ手順を返します。お使いのサーバーにある道具は、expl server tools list で確認できます。
 
 <a id="identifiers"></a>
 
@@ -254,3 +260,75 @@ Exploratory Desktop に AI ツールをつなぐための、手順とリンク�
 | 名前 | 型 | 条件 | 説明 |
 | --- | --- | --- | --- |
 | `client` | 文字列 |  | 使っている MCP クライアントです（claude_code、codex、cursor、antigravity）。省くと、すべてのクライアントの手順が返ります。 値: `claude_code`, `codex`, `cursor`, `antigravity` |
+
+<a id="get_page_guide"></a>
+
+## get_page_guide
+
+Exploratory Page の書き方を返します。手順、Page からデータを読む exploratory SDK、読み込めるライブラリ、規則、Page の例が含まれます。AI は、page_publish と page_update の前にこの道具を呼び出します。使い方の例は、[Page を作る](/ja/page)をご覧ください。
+
+| 名前 | 型 | 条件 | 説明 |
+| --- | --- | --- | --- |
+| `client` | 文字列 |  | 呼び出している AI クライアントです。省くと other になります。 値: `claude`, `chatgpt`, `copilot`, `antigravity`, `claude_code`, `other` |
+
+<a id="page_list"></a>
+
+## page_list
+
+Page を、新しい順に一覧します。
+
+| 名前 | 型 | 条件 | 説明 |
+| --- | --- | --- | --- |
+| `scope` | 文字列 |  | mine: 自分の Page です。shared: 共同作業者として、またはチームを通じて共有された Page です（だれでも見られるだけの Page は含みません）。既定は mine です。 値: `mine`, `shared` |
+| `dataset_id` | 文字列 |  | このデータを問い合わせる Page だけを一覧します。 |
+| `limit` | 整数 |  | 一覧する数です。1〜100、既定は 20 です。 |
+
+<a id="page_get"></a>
+
+## page_get
+
+見る権限のある Page を 1 つ、HTML ごと読みます。page_update で直すときや、Page の中身を説明するときに使います。
+
+| 名前 | 型 | 条件 | 説明 |
+| --- | --- | --- | --- |
+| `page_id` | 文字列 | 必須 | Page の id です。 |
+| `version` | 文字列 |  | 古いバージョンを読みます。Page の持ち主だけが使えます。バージョンの一覧は、結果の versions に出ます。 |
+
+<a id="page_publish"></a>
+
+## page_publish
+
+1 つの HTML ファイルを、非公開の Exploratory Page として公開し、URL を返します。Page は、datasets に指定したデータを、exploratory SDK で、開くたびに問い合わせます。Page を共有できるのは、ユーザー本人だけです。
+
+| 名前 | 型 | 条件 | 説明 |
+| --- | --- | --- | --- |
+| `title` | 文字列 | 必須 | Page のタイトルです。200 文字まで。 |
+| `html` | 文字列 | 必須 | HTML の全体です。スクリプトとスタイルは、get_page_guide が示す URL からだけ読み込めます。 |
+| `datasets` | 配列 |  | Page が問い合わせるデータの id を、すべて指定します（0〜20 個）。データを読まない Page では省きます。ここにない id への問い合わせは断られます。 |
+| `description` | 文字列 |  | Page が何を表すかの説明です。検索に使われます。2000 文字まで。 |
+| `version_comment` | 文字列 |  | このバージョンが何かを、ユーザーの言語で 1 行で書きます（例: 最初のバージョン）。Page のバージョンの履歴に表示されます。 |
+
+<a id="page_update"></a>
+
+## page_update
+
+自分の Page を更新します。変える項目（html、datasets、title、description）だけを渡します。URL は変わりません。前の HTML はバージョンとして残り、ユーザーが元に戻せます。
+
+| 名前 | 型 | 条件 | 説明 |
+| --- | --- | --- | --- |
+| `page_id` | 文字列 | 必須 | Page の id です。page_publish か page_list の結果に出ます。 |
+| `html` | 文字列 |  | 新しい HTML の全体です。 |
+| `datasets` | 配列 |  | Page が問い合わせるデータの id の、新しい一覧です（20 個まで）。[] を渡すと、すべて外れ、Page はデータを読まなくなります。 |
+| `title` | 文字列 |  | 新しいタイトルです。 |
+| `description` | 文字列 |  | 新しい説明です。 |
+| `version_comment` | 文字列 |  | このバージョンで何を変えたかを、ユーザーの言語で 1 行で書きます（例: カテゴリの絞り込みを追加）。html を渡すときだけ使います。バージョンの履歴と、Page の購読者へのメールに表示されます。 |
+
+<a id="page_delete"></a>
+
+## page_delete
+
+自分の Page を、すべてのバージョンごと削除します。元に戻せないため、AI は呼び出す前にユーザーに確認します。
+
+| 名前 | 型 | 条件 | 説明 |
+| --- | --- | --- | --- |
+| `page_id` | 文字列 | 必須 | Page の id です。 |
