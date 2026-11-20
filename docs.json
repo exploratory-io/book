@@ -241,9 +241,10 @@
               {
                 "group": "Page",
                 "pages": [
-                  "en/page/index",
+                  "en/page/getting-started",
                   "en/page/examples"
-                ]
+                ],
+                "root": "en/page/index"
               },
               {
                 "group": "Data Import",
@@ -796,9 +797,10 @@
               {
                 "group": "Page",
                 "pages": [
-                  "ja/page/index",
+                  "ja/page/getting-started",
                   "ja/page/examples"
-                ]
+                ],
+                "root": "ja/page/index"
               },
               {
                 "group": "データのインポート",
@@ -10115,7 +10117,7 @@
     },
     {
       "source": "/ja/mcp/server/page",
-      "destination": "/ja/page"
+      "destination": "/ja/page/getting-started"
     },
     {
       "source": "/ja/mcp/server/page-examples",
@@ -10123,7 +10125,7 @@
     },
     {
       "source": "/en/mcp/server/page",
-      "destination": "/en/page"
+      "destination": "/en/page/getting-started"
     },
     {
       "source": "/en/mcp/server/page-examples",
