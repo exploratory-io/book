@@ -234,7 +234,11 @@
               {
                 "group": "AI",
                 "pages": [
-                  "en/ai/ai-promtpt-function-en"
+                  "en/ai/ai-promtpt-function-en",
+                  "en/ai/ai-data-wrangling",
+                  "en/ai/ai-data",
+                  "en/ai/ai-summary",
+                  "en/ai/ai-note-editor"
                 ],
                 "root": "en/ai"
               },
@@ -793,6 +797,15 @@
                   }
                 ],
                 "root": "ja/product-features"
+              },
+              {
+                "group": "AI",
+                "pages": [
+                  "ja/ai/ai-data-wrangling",
+                  "ja/ai/ai-data",
+                  "ja/ai/ai-summary",
+                  "ja/ai/ai-note-editor"
+                ]
               },
               {
                 "group": "Page",
