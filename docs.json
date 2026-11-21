@@ -807,6 +807,7 @@
               {
                 "group": "AI",
                 "pages": [
+                  "ja/ai/ai-prompt-function",
                   "ja/ai/ai-data-wrangling",
                   "ja/ai/ai-data",
                   "ja/ai/ai-summary",
