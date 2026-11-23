@@ -3,7 +3,7 @@ title: "Connect Codex"
 sidebarTitle: "Codex"
 ---
 
-After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Codex and sign in through your browser.
+After you connect, an AI can read notes and data published on Exploratory, and create Pages (HTML pages). You register the Exploratory server in Codex and sign in through your browser.
 It takes about 3 minutes. You need an Exploratory account and Codex.
 
 <a id="need"></a>

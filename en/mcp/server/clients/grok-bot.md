@@ -3,7 +3,7 @@ title: "Connect Grok Bot"
 sidebarTitle: "Grok Bot"
 ---
 
-After you connect, an AI can read notes and data published on Exploratory. You add the Exploratory server in Grok Bot as a custom connector.
+After you connect, an AI can read notes and data published on Exploratory, and create Pages (HTML pages). You add the Exploratory server in Grok Bot as a custom connector.
 It takes about 3 minutes. You need an Exploratory account and Grok Bot.
 
 <a id="need"></a>
@@ -41,7 +41,7 @@ When the browser opens, sign in to Exploratory and allow the access.
 Open the connector you added and check its details.
 
 1. Check that the account shows Connected.
-2. Check that Tools shows all the tools enabled (for example "12 of 12 enabled"). The number depends on the server settings; see [Tools](/en/mcp/server/tools#overview). Grok Bot lists these tools under its own "Write" permission group, but the tools of this server only read; dataframe_export only makes a download link.
+2. Check that Tools shows all the tools enabled. The number depends on the server settings; see [Tools](/en/mcp/server/tools#overview). Grok Bot lists these tools under its own "Write" permission group, but the only writes of this server are creating, updating and deleting Pages; dataframe_export only makes a download link.
 
 ![The connector's details](images/en/grok-bot-02-connected.png)
 

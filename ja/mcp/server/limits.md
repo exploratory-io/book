@@ -8,7 +8,7 @@ title: "制限とエラー"
 
 ## できないこと
 
-- コンテンツの作成、編集、公開、削除
+- 自分またはチームのページ以外のコンテンツの作成、編集、公開、削除
 - 公開時と違うパラメータの値での、チャートやアナリティクスの再計算
 - Exploratory Server に公開されていないものの読み取り。Exploratory Desktop の中だけにあるプロジェクトなどです。これらには、別の Desktop MCP を使います。
 
@@ -17,7 +17,7 @@ title: "制限とエラー"
 ## 数値と計算の条件
 
 - 数値は、公開されたときの値です。
-- チャート単体で公開したものは、描画に使ったデータの先頭 100 行だけを返すので、合算して合計として扱わないでください。
+- チャート単体で公開したものは、描画に使った行のサンプル（最大 1 万行）を返します。集計した値ではないので、合算して合計として扱わないでください。
 - ブラウザで閲覧者がパラメータを変えた結果は、MCP からは取得できません。
 - チャートとアナリティクスの結果には、集計方法、チャートのフィルタ、context.parameters、context.data_as_of が含まれます。
 - query_dataset は、dataset.version と dataset.updated_at を返します。
@@ -37,7 +37,7 @@ title: "制限とエラー"
 | 集計項目の alias | 半角の英字か _ で始め、半角の英数字と _ だけ。日本語は不可 |
 | 結合で使うデータの alias | 小文字で 16 文字まで |
 | dataframe_export | リンクの有効期間は 15 分。1 ユーザーが同時に実行できる書き出しは 1 つ。1 時間あたりの回数にも上限があります |
-| チャート単体で公開したもの | チャート全体の値ではなく、描画に使ったデータの先頭 100 行 |
+| チャート単体で公開したもの | チャート全体の値ではなく、描画に使った行のサンプル（最大 1 万行）。1 回に 100 行ずつ返します |
 
 <a id="errors"></a>
 
@@ -63,7 +63,7 @@ SERVER_BUSY のとき:
 - 2 回続いたら、繰り返さずに時間をおきます。
 - 書き出しの上限の場合は、最大 1 時間待ちます。
 
-query_dataset は、問い合わせの誤りを別の形で返します。error.code、error.message、error.field を持ち、独自のコードを使います。例:
+query_dataset と chart_query は、問い合わせの誤りを別の形で返します。error.code、error.message、error.field、error.retryable を持ち、独自のコードを使います。chart_query には CHART_NOT_FOUND、CHART_DATA_UNAVAILABLE（理由は error.reason の no_data、too_large、updating）、CHART_UNPIVOT_UNAVAILABLE もあります。例:
 
 - DATASET_NOT_FOUND
 - ACCESS_DENIED
@@ -78,6 +78,15 @@ query_dataset は、問い合わせの誤りを別の形で返します。error.
 - QUERY_TIMEOUT
 
 問い合わせが混み合っているときは、RATE_LIMIT_EXCEEDED か QUERY_ENGINE_UNAVAILABLE が返るので、数秒おいて再度呼び出します。result.has_more が true なら、絞り込むか、集計するか、dataframe_export を使います。
+
+ページの道具も、同じ error.code の形式で返します。主なコードは次のとおりです。
+
+- PAGES_NOT_ALLOWED: このサーバーでページが使えないか、プランでページを公開・変更できません
+- MAX_NUM_OF_PAGES_EXCEEDED: プランのページ数の上限です。ページを削除するか、プランを変えます
+- MAX_STORAGE_SIZE_EXCEEDED: プランの保存容量が足りません
+- PAGE_HTML_REJECTED: HTML が get_page_guide の規則に合いません。error.message が示す箇所を直します
+
+page_publish、page_update、page_delete を page:write のない接続で呼ぶと、error_code の INSUFFICIENT_SCOPE が返ります。ブラウザでのサインインなら、接続を外してつなぎ直します。API キーではページを書けません。
 
 dataframe_export は、ほかの道具と同じ error_code の形式です。問い合わせの誤りは INVALID_PARAMETER で返り、元のコードは details.code に含まれます。
 

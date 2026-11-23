@@ -34,7 +34,7 @@ exp_pat_... は、作成したキーに置き換えます。
 
 ほかのクライアントは、[Codex](/ja/mcp/server/clients/codex#apikey)、[Cursor](/ja/mcp/server/clients/cursor#apikey)、[そのほかのアプリ](/ja/mcp/server/clients/other#apikey)の手順を参照してください。
 
-- キーで読めるのは、ブラウザでのサインインと同じ、あなたが見られる内容です。読み取りのみ（content:read）です。作成できるのは Author だけです。
+- キーで読めるのは、ブラウザでのサインインと同じ、あなたが見られる内容です。読み取りのみ（content:read）です。API キーでもページを読むこと（get_page_guide・page_list・page_get）はできますが、ページの作成・更新・削除はできません。キーを作成できるのは Author だけです。
 - キーが失敗したときは、サーバーが理由つきの 401 または 403 を返します。代わりにブラウザでのサインイン（OAuth）に切り替わることはありません。キーを直してください。
 - ブラウザでのサインインが使えるときは、そちらを使います。キーは、同意の画面、SSO、MFA を通らないので、パスワードと同じように扱ってください。
 
@@ -58,7 +58,7 @@ exp_pat_... は、作成したキーに置き換えます。
 | サーバー URL | https://exploratory.io/mcp |
 | 通信方式 | Streamable HTTP（HTTP で MCP をやり取りする方式）、ステートレス |
 | 認証 | OAuth 2.1（PKCE）: 初回にブラウザでサインインします。または、Authorization: Bearer exp_pat_... で送る API キー |
-| スコープ | content:read（API キーも同じスコープです） |
+| スコープ | ブラウザでのサインインは content:read と page:write（page:write はページの作成・更新・削除に使います）。API キーは content:read だけです。ページの機能より前にサインインした接続には page:write がなく、ページを書く道具は INSUFFICIENT_SCOPE を返します。接続を外して、つなぎ直してください |
 
 人がブラウザで使うときは、ブラウザでのサインインを使います。ブラウザがないとき、または自動で実行するときは、API キーを使います。
 

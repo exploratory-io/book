@@ -3,7 +3,7 @@ title: "Connect other clients"
 sidebarTitle: "Other clients"
 ---
 
-After you connect, an AI can read notes and data published on Exploratory. Any MCP client that supports Streamable HTTP and OAuth can connect with the server URL.
+After you connect, an AI can read notes and data published on Exploratory, and create Pages (HTML pages). Any MCP client that supports Streamable HTTP and OAuth can connect with the server URL.
 It takes about 5 minutes, depending on the client. You need an Exploratory account and a supported MCP client.
 
 <a id="need"></a>

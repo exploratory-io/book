@@ -18,8 +18,8 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
 ![Exploratory Desktop の左下の自分の名前を選ぶと開くメニュー。①が自分の名前、②が「システム設定」](images/ja/open-system-settings.png)
 
 1. 左のメニューで、「MCP / CLI」を選びます。
-2. 「Exploratory Desktop プラグインのインストール」の欄を探します。
-3. 使う AI ツールの行の「インストール」を選びます。
+2. 「MCP」のスイッチをオンにします。初期状態ではオフです。オフの間は、下の「Exploratory デスクトップ プラグインのインストール」の欄が薄く表示され、ボタンを押せません。
+3. 「Exploratory デスクトップ プラグインのインストール」の欄で、使う AI ツールの行の「インストール」を選びます。
 
 ![システム設定の「MCP / CLI」にある、「Exploratory Desktop プラグインのインストール」の欄](images/ja/desktop-plugin-card.png)
 
@@ -27,13 +27,12 @@ Exploratory Desktop で、画面の左下にある自分の名前を選び、開
 
 > Desktop MCP のプラグインを、このPC上の AI ツールにインストールします。インストールしたあとは、その AI ツールを起動し直してください。
 
-この欄には、Claude Code、Codex、Antigravity、Cursor が並びます。このコンピューターにない AI ツールには、「このパソコンに見つかりません」と表示されます。コマンドは、アプリの起動時に自動で入ります。コマンドを登録する操作は要りません。
+この欄には、Claude Code、ChatGPT（Codex）、Antigravity、Cursor が並びます。このコンピューターにない AI ツールには、「このパソコンに見つかりません」と表示されます。コマンドは、アプリの起動時に自動で入ります。コマンドを登録する操作は要りません。
 
 続けて、同じ画面で、次の操作をします。
 
-4. 「MCP」のスイッチをオンにします。初期状態ではオフです。
-5. チャートやノートなどを AI に作成・変更させるときだけ、「作成、変更、削除を許可する」にチェックを入れます。チェックがないと、AI は読み取りだけができます。
-6. 画面の下にある「保存」を選びます。
+4. チャートやノートなどを AI に作成・変更させるときだけ、「作成、変更、削除を許可する」にチェックを入れます。チェックがないと、AI は読み取りだけができます。
+5. 画面の下にある「保存」を選びます。
 
 保存しないと、「MCP」のスイッチと「作成、変更、削除を許可する」の設定が反映されません。
 
@@ -68,8 +67,8 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 
 | AI ツール | システム設定から入るもの | システム設定の表示 |
 | --- | --- | --- |
-| Claude Code | Exploratory Desktop のプラグイン（スキルを含む） | 「インストール済み - v」とプラグインのバージョン。「インストール」の代わりに「再インストール」と「削除」 |
-| Codex | 同上 | 同上 |
+| Claude Code | Exploratory Desktop のプラグイン（スキルを含む） | 「インストール済み - v」とプラグインのバージョン。ボタンは下の表のとおり |
+| ChatGPT（Codex） | 同上 | 同上 |
 | Antigravity | 同上 | 同上 |
 | Cursor | 同上。入る場所だけが違い、\~/.cursor/mcp.json ではなく、Cursor のプラグインのフォルダ（\~/.cursor/plugins/local/exploratory）へコピーします。\~/.cursor/mcp.json に古い exploratory-desktop の項目が残っていると、その項目を削除します。ほかの項目は残ります | 同上 |
 
@@ -80,7 +79,10 @@ MCP がオフだと表示されたときは、システム設定に戻り、「M
 | 状態 | 表示とボタン |
 | --- | --- |
 | インストールしていない | 「未インストール」と、緑の「インストール」 |
-| インストール済み | 「インストール済み」と、「再インストール」「削除」 |
+| 最新のバージョンが入っている | 「インストール済み - v」とバージョン、「削除」 |
+| 古いバージョンが入っている | 「インストール済み - v」とバージョン、「v に更新できます」、「アップデート」「削除」 |
+| 最新のバージョンを確かめられない | 「インストール済み - v」とバージョン、「再インストール」「削除」 |
+| インストールに失敗した | 「インストールできませんでした。」、「もう一度試す」（インストール済みなら「削除」も） |
 
 「削除」を選ぶと、確認の画面が出ます。
 
@@ -292,14 +294,14 @@ Git が必要です。システム設定から入れたときと同じフォル�
 
 入れ方によって、操作が違います。
 
-- システム設定から入れたもの（Claude Code、Codex、Antigravity、Cursor）: システム設定のその AI ツールの行で「再インストール」を選び、最新のプラグインに入れ直します（更新も、この操作で行います）。外すときは、同じ行の「削除」を選びます。
+- システム設定から入れたもの（Claude Code、ChatGPT（Codex）、Antigravity、Cursor）: 新しいバージョンがあると、システム設定のその AI ツールの行に「アップデート」が出るので、それを選びます。外すときは、同じ行の「削除」を選びます。
 - コマンドで入れたもの（Claude Code、Codex、Antigravity、Cursor）は、次の表の手順で更新・削除します。
 
 | AI ツール | 更新 | 削除 |
 | --- | --- | --- |
 | Claude Code | claude plugin marketplace update exploratory を実行し、続けて claude plugin update exploratory@exploratory を実行して、Claude Code を起動し直します | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory を実行し、続けて codex plugin remove exploratory@exploratory と codex plugin add exploratory@exploratory を実行します | codex plugin remove exploratory@exploratory |
-| Antigravity | クローンしたフォルダで git pull を実行し、もう一度 agy plugin install を実行します | Antigravity のプラグインの設定で、プラグインを削除します |
+| Antigravity | クローンしたフォルダで git pull を実行し、続けて agy plugin install ./plugins/exploratory-desktop を実行します | Antigravity のプラグインの設定で、プラグインを削除します |
 | Cursor | クローンしたフォルダ exploratory で git pull を実行し、rm -rf ~/.cursor/plugins/local/exploratory && cp -R plugins/exploratory-desktop ~/.cursor/plugins/local/exploratory を実行して、Cursor を起動し直します | rm -rf ~/.cursor/plugins/local/exploratory を実行して、Cursor を起動し直します |
 
 Desktop の MCP は、Exploratory Desktop を終了すると止まります。プラグインを削除しても、Server の MCP の接続には影響しません。

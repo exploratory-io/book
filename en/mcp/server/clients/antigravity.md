@@ -3,7 +3,7 @@ title: "Connect Antigravity"
 sidebarTitle: "Antigravity"
 ---
 
-After you connect, an AI can read notes and data published on Exploratory. You register the Exploratory server in Antigravity and sign in through your browser.
+After you connect, an AI can read notes and data published on Exploratory, and create Pages (HTML pages). You register the Exploratory server in Antigravity and sign in through your browser.
 It takes about 10 minutes. You need an Exploratory account and Antigravity.
 
 <a id="need"></a>
@@ -120,7 +120,7 @@ Next, check the MCP tab.
 
 ![The MCP tab in the Exploratory details](images/en/antigravity-02-mcp-plugin.png)
 
-The tab shows exploratory-server and the number of tools it provides (for example "10 tools enabled").
+The tab shows exploratory-server and the number of tools it provides.
 
 <a id="trouble"></a>
 

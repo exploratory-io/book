@@ -10,7 +10,6 @@ What the Desktop MCP refuses or stops, and what to do about it. Settings that de
 
 | What you see | What to do |
 | --- | --- |
-| A request for more data than the level you chose is refused | Desktop shares only up to the level set in System Settings \> MCP / CLI (names, columns and data types only, aggregated results, sample rows up to 100, or all rows). Ask for a smaller result, or raise the level. See [What you control in Desktop](/en/mcp/desktop/permissions#control) |
 | Desktop shows an approval prompt before a delete, publish, R code run, AI processing or similar | This is the confirmation. Approve it in Desktop. To stop being asked, turn on the matching setting under System Settings \> MCP / CLI. See [What you control in Desktop](/en/mcp/desktop/permissions#control) |
 | Desktop asks you to approve a new app | An app asks the first time it connects. Approve it in Desktop. Removing an app under Approved apps makes it ask again. After you choose Don't allow, the same app is refused for 5 minutes without the window appearing again |
 | A call says that MCP is turned off | Turn on the MCP switch in System Settings \> MCP / CLI, then choose Save at the bottom |
@@ -19,12 +18,13 @@ What the Desktop MCP refuses or stops, and what to do about it. Settings that de
 
 <a id="gates"></a>
 
-## Gate stops
+## Plugin checks (Claude Code)
 
-A gate stops a create call until a condition is met. The AI can then fix it and continue.
+A hook of the Exploratory Desktop plugin can stop a tool call. The AI can follow the message, fix it and continue. For the plugin settings, see [Permissions and settings](/en/mcp/desktop/permissions#plugin-settings).
 
 | What you see | What to do |
 | --- | --- |
-| `計画の関所: R の作業の後は、先にシナリオ（<題名>_シナリオ.md）と計画（<題名>_Exploratory作成計画.md）を保存してください。` | The plan gate stopped a create call because the AI used the exploratory-analysis skill and did R work first. Ask the AI to save the scenario and the creation plan that the message names, then continue. To turn the check off, set `plan_gate` to `"false"`. See [Plugin settings](/en/mcp/desktop/permissions#plugin-settings). |
-| `計画の関所: この計画は記録されません。計画に、実在する HTML のファイル名が書かれていません。` | An HTML report was saved, but the plan does not name it. Write the file name of the saved HTML in the plan, and save the plan again. |
-| `ノートの関所: 次の分析の出力をノートの本文に {{analytics:ID\|出力}} で入れてから作り直してください。` | The note gate stopped creating or replacing a note. A predictive model or clustering made in this session has outputs that the note body does not embed. Ask the AI to add the outputs the message lists, then create the note again. The gate stops at most twice. |
+| `get_dashboard_image and get_note_image are only for when the user asks for an image. ...` | The image tools (get_note_image, get_dashboard_image) work only when your message asks for an image. The AI reads values with get_chart_data or get_dashboard instead. When you need an image, ask for an image or a screenshot in your message. With `review_hook` on, this check does not stop the call. |
+| `カスタム R の関所: exp_custom の式は 表 %>% 式 として実行されます。...` (custom R gate: wrong opening form) | Only with `review_hook` on. The custom R command starts in a wrong form. The AI rewrites it to start with a verb such as mutate(...) or filter(...). |
+| `カスタム R の関所: この式の ... で作れます。...` (custom R gate: a product command can do this) | Only with `review_hook` on. The custom R command does what a product command can do. The AI rebuilds it with the product command. It stops at most 2 times in a session. |
+| `全体画像（get_note_image / get_dashboard_image）で見ていないチャートが ... 枚あります` (whole-image check) | Only with `review_hook` on. Before the final report, the AI is asked to look at the whole image of the note or dashboard once and compare it with the original artifact. |

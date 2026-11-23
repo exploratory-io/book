@@ -3,7 +3,7 @@ title: "Connect the Claude app"
 sidebarTitle: "Claude app"
 ---
 
-Add the Exploratory server to Claude as a custom connector. A connector is a link that lets Claude use the data and features of an outside service. After you connect, you can read notes and data published on Exploratory from a Claude chat.
+Add the Exploratory server to Claude as a custom connector. A connector is a link that lets Claude use the data and features of an outside service. After you connect, you can read notes and data published on Exploratory, and create Pages (HTML pages) from a Claude chat.
 It takes about 5 minutes. You need an Exploratory account and the Claude desktop app or the web (claude.ai).
 
 The connector screens are the same in the Claude desktop app and on the web.
@@ -95,7 +95,7 @@ Open Exploratory in the list.
 
 ![The tool permissions in the Exploratory details](images/en/claude-06-tools.png)
 
-The tools of the Exploratory connector are grouped under Read-only tools. You can choose when each tool runs. This setting decides when Claude may use the tools in Manual mode. In Auto mode, an automated check blocks actions it flags as risky; for other actions, Claude may act without asking, even for tools set to Needs approval.
+The Exploratory connector has tools that only read, and tools that create, update or delete Pages. You can choose when each tool runs. This setting decides when Claude may use the tools in Manual mode. In Auto mode, an automated check blocks actions it flags as risky; for other actions, Claude may act without asking, even for tools set to Needs approval.
 
 <a id="trouble"></a>
 

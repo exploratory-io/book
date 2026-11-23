@@ -34,7 +34,7 @@ Put the key in an environment variable and let the client read it from there. Se
 
 For other clients, see the steps for [Codex](/en/mcp/server/clients/codex#apikey), [Cursor](/en/mcp/server/clients/cursor#apikey) and [other clients](/en/mcp/server/clients/other#apikey).
 
-- A key reads what you can view, as your browser sign-in does. It is read-only (content:read). Only Authors can create one.
+- A key reads what you can view, as your browser sign-in does. It is read-only (content:read): with a key you can read Pages (get_page_guide, page_list, page_get), but not create, update or delete them. Only Authors can create a key.
 - When a key fails, the server answers 401 or 403 with the reason. It does not start the browser sign-in (OAuth) instead. Fix the key.
 - Use the browser sign-in where you can. A key does not go through the consent page, SSO or MFA, so treat it like a password.
 
@@ -58,7 +58,7 @@ An administrator on an on-premises or Hosted server can turn API keys off or lim
 | Server URL | https://exploratory.io/mcp |
 | Transport | Streamable HTTP (a way to send MCP over HTTP), stateless |
 | Authorization | OAuth 2.1 with PKCE: sign in with your browser the first time. Or an API key sent as Authorization: Bearer exp_pat_... |
-| Scope | content:read (an API key has the same scope) |
+| Scope | Browser sign-in: content:read and page:write (page:write is for creating, updating and deleting Pages). API key: content:read only. A connection signed in before Pages were available has no page:write, and the Page write tools return INSUFFICIENT_SCOPE; disconnect and connect again |
 
 If a person uses it in a browser, use the browser sign-in. If there is no browser, or a job runs by itself, use an API key.
 

@@ -1283,7 +1283,7 @@ The result below was run on the chart kL8mN9oP (Sales by Region) in the dashboar
 
 ### Output and limits
 
-Besides the rows, the result explains the numbers: chart.encoding (column, aggregation and number format per shelf), chart.filters, chart.data_granularity (aggregated or row level), chart.unsupported (what cannot be returned) and context (publication, data time and parameter values). The numbers are the values as published; results for other parameter values in the browser are not available. A chart published on its own returns the first 100 rows of the data used to draw it, not aggregated values or the values of the whole chart, so do not add the rows up as a total.
+Besides the rows, the result explains the numbers: chart.encoding (column, aggregation and number format per shelf), chart.filters, chart.data_granularity (aggregated or row level), chart.unsupported (what cannot be returned) and context (publication, data time and parameter values). The numbers are the values as published; results for other parameter values in the browser are not available. A chart published on its own returns a sample of the rows it was drawn from (up to 10,000), not aggregated values or the values of the whole chart, so do not add the rows up as a total.
 
 Pass the number of rows you have already read to offset to read on. One call returns at most 100 rows.
 

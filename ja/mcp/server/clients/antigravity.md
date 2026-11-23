@@ -2,7 +2,7 @@
 title: "Antigravity につなぐ"
 ---
 
-接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Antigravity に Exploratory のサーバーを登録し、ブラウザでサインインします。
+接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。ページ（HTML ページ）も作れます。Antigravity に Exploratory のサーバーを登録し、ブラウザでサインインします。
 かかる時間は 10 分ほどです。Exploratory のアカウントと、Antigravity を用意してください。
 
 <a id="need"></a>
@@ -121,7 +121,7 @@ exploratory-server が「OAUTH」「CONNECTED」と表示されていれば、�
 
 ![「Exploratory」の詳細画面の「MCP」のタブ（英語の画面）](images/ja/antigravity-02-mcp-plugin.png)
 
-exploratory-server と、使える道具の数（例: 「10 tools enabled」）が表示されます。
+exploratory-server と、使える道具の数が表示されます。
 
 <a id="trouble"></a>
 

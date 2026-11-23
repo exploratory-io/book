@@ -2,7 +2,7 @@
 title: "Cursor につなぐ"
 ---
 
-接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Cursor のエージェントに Exploratory のサーバーを登録し、ブラウザでサインインします。Grok を含め、Cursor で選んだモデルで使えます。
+接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。ページ（HTML ページ）も作れます。Cursor のエージェントに Exploratory のサーバーを登録し、ブラウザでサインインします。Grok を含め、Cursor で選んだモデルで使えます。
 かかる時間は 5 分ほどです。Exploratory のアカウントと、Cursor を用意してください。
 
 <a id="need"></a>

@@ -10,7 +10,7 @@ Install the Desktop MCP plugin, turn on MCP in Exploratory Desktop, and ask your
 
 ### 1. Install the plugin
 
-In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens. In the menu on the left, choose MCP / CLI, find the "Install the Exploratory Desktop plugin" section, and choose Install on the row of the AI tool you use. The pictures are on [Install the plugin](/en/mcp/desktop/install).
+In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens. In the menu on the left, choose MCP / CLI and first turn on the MCP switch (while it is off, the buttons of the plugin section cannot be used). Then, in the "Install the Exploratory Desktop plugin" section, choose Install on the row of the AI tool you use. The pictures are on [Install the plugin](/en/mcp/desktop/install).
 
 <a id="manual"></a>
 
@@ -39,7 +39,7 @@ For Antigravity and Cursor, see [Install with commands](/en/mcp/desktop/install#
 
 ### 2. Turn on MCP
 
-On the same screen, turn on the MCP switch. It is off by default. Only when you want the AI to create or change charts, notes and other content, also check Allow create, edit and delete. Then choose Save at the bottom of the screen.
+On the same screen, check that the MCP switch is on (it is off by default; if you installed by hand, turn it on here). Only when you want the AI to create or change charts, notes and other content, also check Allow create, edit and delete. Then choose Save at the bottom of the screen.
 
 If you do not save, the MCP switch and the Allow create, edit and delete setting do not take effect. For what else you can decide here, see [Permissions and settings](/en/mcp/desktop/permissions).
 

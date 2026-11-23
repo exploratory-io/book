@@ -28,7 +28,7 @@ Send these to support@exploratory.io: the version of Exploratory Desktop, the na
 | A marketplace named "exploratory" is already registered from a different source … | Remove it with the command the message shows, then choose Install again. |
 | Your organization's settings may not allow this marketplace. | Ask your administrator. |
 | A Claude Code hook cannot find node | Install Node.js and add node to your PATH. |
-| A gate stops a create call, a limit is reached, or Desktop asks for approval | See [Limits and errors](/en/mcp/desktop/limits). |
+| A plugin check stops a call (for example get_note_image or get_dashboard_image is refused because you did not ask for an image), a limit is reached, or Desktop asks for approval | See [Limits and errors](/en/mcp/desktop/limits). To get an image, ask for an image or a screenshot in your message. |
 | A create or change call is refused with PERMISSION_DENIED | Turn on Allow create, edit and delete in System Settings \> MCP / CLI and choose Save. See [Limits and errors](/en/mcp/desktop/limits). |
 | You chose Don't allow on the approval window | After 5 minutes, connect again and the window appears again. See [Limits and errors](/en/mcp/desktop/limits). |
 | The Desktop MCP does not work as you expect | Check that you are signed in to Exploratory Desktop. |

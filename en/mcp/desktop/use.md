@@ -141,4 +141,4 @@ Creates a parameter, sets its list of values and applies it to a filter or a cha
 ## Read next
 
 - [Tools](/en/mcp/desktop/tools) - What the AI can do, by purpose.
-- [Permissions and settings](/en/mcp/desktop/permissions) - When Desktop asks you, and how much data the AI can see.
+- [Permissions and settings](/en/mcp/desktop/permissions) - When Desktop asks you, and the plugin settings.

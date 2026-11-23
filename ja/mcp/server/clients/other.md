@@ -2,7 +2,7 @@
 title: "そのほかのアプリにつなぐ"
 ---
 
-接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Streamable HTTP と OAuth に対応した MCP クライアントなら、サーバー URL を登録してつなげます。
+接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。ページ（HTML ページ）も作れます。Streamable HTTP と OAuth に対応した MCP クライアントなら、サーバー URL を登録してつなげます。
 かかる時間は 5 分ほどです（クライアントによります）。Exploratory のアカウントと、対応した MCP クライアントを用意してください。
 
 <a id="need"></a>

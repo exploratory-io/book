@@ -7,7 +7,7 @@ title: "リファレンス"
 | 調べたいこと | ページ |
 | --- | --- |
 | 各道具の入力と、AI が使えるもの | [使える道具](/ja/mcp/server/tools) |
-| 読み取りだけの道具はどれか（このサーバーの道具はすべて読み取りだけです。dataframe_export は、ダウンロードリンクも作ります） | [使える道具](/ja/mcp/server/tools#overview) |
+| 読み取りだけの道具はどれか（ページの道具の page_publish・page_update・page_delete 以外は読み取りだけです。dataframe_export は、ダウンロードリンクも作ります） | [使える道具](/ja/mcp/server/tools#overview) |
 | 回数の上限、行数の上限、エラーごとの対処 | [制限とエラー](/ja/mcp/server/limits) |
 | 何が送られ、何が記録されるか。誰の権限で動くか | [データと権限](/ja/mcp/server/data) |
 | 症状からの対処 | [トラブルシューティング](/ja/mcp/server/troubleshooting) |
