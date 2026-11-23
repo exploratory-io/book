@@ -47,15 +47,13 @@ npx は、パッケージをインストールせずに実行するコマンド�
 npx -y @exploratory/cli --version
 ```
 
-インストールせずに、expl を 1 回だけ実行します。ほかのコマンドを実行するときは、`--version` をそのコマンド（例: server login）に置き換えます。スクリプトでは、@exploratory/cli@\<バージョン\> のようにバージョンを固定します。
+インストールせずに、expl を 1 回だけ実行します。ほかのコマンドを実行するときは、`--version` をそのコマンド（例: server login）に置き換えます。
 
 ```sh
-npm install -g @exploratory/cli@<version>
+npm install -g @exploratory/cli
 ```
 
-グローバルにインストールします。\<version\> は、使用するバージョン番号に置き換えます。@\<version\> を付けないと、最新のバージョンがインストールされます。バージョン番号は、[リリースノート](/ja/release-notes_ja)で調べるか、npm view @exploratory/cli version で調べます（最新のバージョンが表示されます）。
-
-スクリプトでは、必ずバージョンを固定してください。パッケージ名は @exploratory/cli で、インストールされるコマンドは expl です。名前が expl だけのパッケージはインストールしないでください。その名前は、別の開発者のものです。
+最新のバージョンを、グローバルにインストールします。パッケージ名は @exploratory/cli で、インストールされるコマンドは expl です。名前が expl だけのパッケージはインストールしないでください。その名前は、別の開発者のものです。
 
 <a id="check"></a>
 
@@ -91,7 +89,7 @@ where expl
 
 `expl --version` の 1 行目には expl \<バージョン\> と表示され、インストール方法までは表示されません。どちらの expl かは、上で表示されたパスで判別してください。先頭のパスが想定と異なる場合は、使用する方のフォルダを PATH の先頭に置くか、もう一方をアンインストールしてください。
 
-Exploratory Desktop をお使いの場合は、npm でグローバルにインストールする必要はありません。CI でバージョンを固定して npx で使用することは、問題ありません。
+Exploratory Desktop をお使いの場合は、npm でグローバルにインストールする必要はありません。CI で npx を使用することは、問題ありません。
 
 > **npm install -g が EEXIST で停止する場合**
 >
@@ -101,10 +99,10 @@ Exploratory Desktop をお使いの場合は、npm でグローバルにイン�
 
 ## 更新する
 
-npm でインストールした expl を更新するには、次のコマンドを実行して、バージョンを確認します。
+npm でインストールした expl を最新のバージョンに更新するには、次のコマンドを実行して、バージョンを確認します。
 
 ```sh
-npm install -g @exploratory/cli@<version>
+npm install -g @exploratory/cli
 ```
 
 ```sh

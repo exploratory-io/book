@@ -47,15 +47,13 @@ npx runs a package without installing it. It needs Node.js 20 or later; to insta
 npx -y @exploratory/cli --version
 ```
 
-Runs expl once without installing it. To run another command, replace `--version` with it, for example server login. In scripts, pin the version: @exploratory/cli@\<version\>.
+Runs expl once without installing it. To run another command, replace `--version` with it, for example server login.
 
 ```sh
-npm install -g @exploratory/cli@<version>
+npm install -g @exploratory/cli
 ```
 
-Installs it globally. Replace \<version\> with the version you want. Without @\<version\>, the latest version is installed. To find a version number, see the [release notes](/en/release-note), or run npm view @exploratory/cli version, which prints the latest.
-
-Always pin the version in scripts. The package is @exploratory/cli and the command it installs is expl. Do not install a package named just expl: that name belongs to someone else.
+Installs the latest version globally. The package is @exploratory/cli and the command it installs is expl. Do not install a package named just expl: that name belongs to someone else.
 
 <a id="check"></a>
 
@@ -91,7 +89,7 @@ where expl
 
 The first line of `expl --version` is expl \<version\>. It does not say how expl was installed, so use the paths above to tell the copies apart. If the first path is not the one you expect, put the folder you want first on your PATH, or remove the other copy.
 
-If you have Desktop, you do not need a global npm install. Using npx with a pinned version in CI is fine.
+If you have Desktop, you do not need a global npm install. Using npx in CI is fine.
 
 > **When npm install -g stops with EEXIST**
 >
@@ -101,10 +99,10 @@ If you have Desktop, you do not need a global npm install. Using npx with a pinn
 
 ## Update
 
-To update the npm copy, run this command and then check the version.
+To update the npm copy to the latest version, run this command and then check the version.
 
 ```sh
-npm install -g @exploratory/cli@<version>
+npm install -g @exploratory/cli
 ```
 
 ```sh

@@ -24,13 +24,13 @@ Pass the key with the environment variable EXPL_SERVER_TOKEN. For the order agai
 
 ## Example: GitHub Actions
 
-An example for GitHub Actions. Replace \<id\> with the id of the content to read. Replace \<version\> with the version you use, and always pin it.
+An example for GitHub Actions. Replace \<id\> with the id of the content to read.
 
 ```text
 - uses: actions/setup-node@v4
   with:
     node-version: 22
-- run: npx -y @exploratory/cli@<version> server fetch <id> --json
+- run: npx -y @exploratory/cli server fetch <id> --json
   env:
     EXPL_SERVER_TOKEN: ${{ secrets.EXPL_SERVER_TOKEN }}
     EXPL_SERVER_URL: https://exploratory.io
