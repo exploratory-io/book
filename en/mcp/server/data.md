@@ -8,7 +8,7 @@ Whose permissions this server uses, what it reads, and what Exploratory records.
 
 ## Whose permissions it uses
 
-Server MCP calls run as the signed-in user. They never go beyond what that user can view on exploratory.io. They read published content only and are read-only.
+Server MCP calls run as the signed-in user. They never go beyond what that user can view on exploratory.io. They read published content only. The only content they write is a Page (an HTML page): they create Pages in your account, and update or delete Pages you or your team own.
 
 <a id="publisher"></a>
 

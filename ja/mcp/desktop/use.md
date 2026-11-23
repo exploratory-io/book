@@ -141,4 +141,4 @@ Desktop は手元のプロジェクトを対象にします。exploratory.io に
 ## あわせて読む
 
 - [使える道具](/ja/mcp/desktop/tools) - 目的ごとの、AI にできることです。
-- [許可の範囲と設定](/ja/mcp/desktop/permissions) - 確認が出る場面と、渡すデータの範囲です。
+- [許可の範囲と設定](/ja/mcp/desktop/permissions) - 確認が出る場面と、プラグインの設定です。

@@ -8,7 +8,7 @@ What it cannot do, how to read the numbers, the limits, and what to do about err
 
 ## What it does not do
 
-- Create, edit, publish or delete content.
+- Create, edit, publish or delete content other than Pages you or your team own.
 - Recompute a chart or analytics for parameter values other than the published ones.
 - Read content that is not published to Exploratory Server, such as projects that exist only in Exploratory Desktop. Use the separate [Desktop MCP](/en/mcp/desktop) for those.
 
@@ -17,7 +17,7 @@ What it cannot do, how to read the numbers, the limits, and what to do about err
 ## Numbers and their conditions
 
 - Numbers are the values as published.
-- A chart published on its own returns only the first 100 rows of the data used to draw it. Do not add the rows up as a total.
+- A chart published on its own returns a sample of the rows it was drawn from (up to 10,000), not aggregated values. Do not add the rows up as a total.
 - A viewer who changes parameters in the browser sees different results. MCP does not return those results.
 - Each chart and analytics result states the conditions of its computation: the aggregation, the chart filters, context.parameters and context.data_as_of.
 - query_dataset returns dataset.version and dataset.updated_at.
@@ -37,7 +37,7 @@ What it cannot do, how to read the numbers, the limits, and what to do about err
 | A metric alias | Starts with a letter or _; ASCII letters, digits and _ only. Japanese is not allowed |
 | A dataset alias in a join | Lowercase, up to 16 characters |
 | dataframe_export | The link is valid for 15 minutes. One export at a time per user. The number of exports per hour is limited |
-| A chart published on its own | The first 100 rows of the data used to draw it, not the values of the whole chart |
+| A chart published on its own | A sample of the rows it was drawn from (up to 10,000), not the values of the whole chart; 100 rows per call |
 
 <a id="errors"></a>
 
@@ -63,7 +63,7 @@ For SERVER_BUSY:
 - If it happens twice in a row, stop and try again later.
 - For the hourly export limit, wait up to an hour.
 
-query_dataset reports a bad query differently. It returns error.code, error.message and error.field, with their own codes. For example:
+query_dataset and chart_query report a bad query differently. They return error.code, error.message, error.field and error.retryable, with their own codes. chart_query adds CHART_NOT_FOUND, CHART_DATA_UNAVAILABLE (the reason is in error.reason: no_data, too_large or updating) and CHART_UNPIVOT_UNAVAILABLE. For example:
 
 - DATASET_NOT_FOUND
 - ACCESS_DENIED
@@ -78,6 +78,15 @@ query_dataset reports a bad query differently. It returns error.code, error.mess
 - QUERY_TIMEOUT
 
 When the query engine is busy, it returns RATE_LIMIT_EXCEEDED or QUERY_ENGINE_UNAVAILABLE. Try again in a few seconds. When result.has_more is true, narrow the filters, aggregate, or use dataframe_export.
+
+The Page tools return the same error.code shape. The main codes:
+
+- PAGES_NOT_ALLOWED: Pages are not enabled on this server, or your plan cannot publish or change Pages
+- MAX_NUM_OF_PAGES_EXCEEDED: you reached your plan's number of Pages. Delete a Page or change your plan
+- MAX_STORAGE_SIZE_EXCEEDED: your plan's storage is full
+- PAGE_HTML_REJECTED: the HTML breaks a rule of get_page_guide. Fix what error.message names
+
+Calling page_publish, page_update or page_delete on a connection without page:write returns error_code INSUFFICIENT_SCOPE. For a browser sign-in, disconnect and connect again. An API key cannot write Pages.
 
 dataframe_export uses error_code like the other tools. For a bad query, it returns INVALID_PARAMETER. The query's own code is in details.code.
 

@@ -15,7 +15,7 @@ https://exploratory.io/mcp
 - [Claude app](/en/mcp/server/clients/claude) - Add it as a custom connector in Claude
 - [ChatGPT app](/en/mcp/server/clients/chatgpt) - Add it as an MCP server in the ChatGPT desktop app (web steps are on the same page)
 - [Antigravity](/en/mcp/server/clients/antigravity) - Register the server in Antigravity
-- [Grok Bot](/en/mcp/server/clients/grok-bot) - Add the server in a Grok Bot chat
+- [Grok Bot](/en/mcp/server/clients/grok-bot) - Add the server in Grok Bot as a custom connector
 - [Claude Code](/en/mcp/server/clients/claude-code) - Register the server in Claude Code
 - [Codex](/en/mcp/server/clients/codex) - Register the server in Codex
 - [Cursor](/en/mcp/server/clients/cursor) - Register the server in Cursor

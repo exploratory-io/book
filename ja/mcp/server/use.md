@@ -92,7 +92,7 @@ AI は、query_dataset と同じ指定で絞り込みや集計をして、datafr
 ## Page を作る
 
 ```text
-Exploratoryサーバーにある「 販売注文データ」を対象にして、注文状況をモニタリングできるインタラクティブなダッシュボードを作ってPageとして公開してください。
+Exploratory サーバーにある「Sales Orders (Line Items)」のデータを対象にして、注文状況をモニタリングできるインタラクティブなダッシュボードを作ってPageとして公開してください。
 デザインについては、以下を参考にしてください。
 https://v0.app/templates/optimus-the-ai-platform-to-build-and-ship-LHv4frpA7Us
 ```

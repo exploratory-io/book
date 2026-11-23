@@ -2,7 +2,7 @@
 title: "Claude Code につなぐ"
 ---
 
-接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Claude Code に Exploratory のサーバーを登録し、ブラウザでサインインします。
+接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。ページ（HTML ページ）も作れます。Claude Code に Exploratory のサーバーを登録し、ブラウザでサインインします。
 かかる時間は 3 分ほどです。Exploratory のアカウントと、Claude Code を用意してください。
 
 Claude のアプリ（デスクトップ・Web）で、すでに Exploratory をコネクタとして追加しているときは、ここでもう一度追加する必要はありません。同じ claude.ai アカウントでサインインした Claude Code には、「claude.ai Exploratory」として自動で表示され、そのまま使えます。確かめるには、Claude Code で `/mcp` を開きます。詳しい追加の手順は、[Claude アプリ（デスクトップ・Web）](/ja/mcp/server/clients/claude)のページを参照してください。

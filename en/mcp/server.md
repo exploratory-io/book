@@ -7,19 +7,17 @@ Read notes, dashboards, charts, analytics and data published on exploratory.io f
 
 <a id="readonly"></a>
 
-## It is read-only
+## It mostly reads
 
-> **Read-only**
+> **Mostly read-only**
 >
-> This server cannot create, edit, publish or delete content. The one exception is dataframe_export, which creates a download link that is valid for 15 minutes.
-
-It reads published content that you can view.
+> This server reads published content that you can view. The only content it writes is a Page (an HTML page): it creates private Pages in your account, and updates or deletes Pages you or your team own. Whether you can create Pages, and how many, depends on your plan. It cannot create, edit, publish or delete notes, dashboards, charts, analytics or data. dataframe_export creates a download link (valid for 15 minutes by default).
 
 <a id="cannot"></a>
 
 ## What it does not do
 
-- Create, edit, publish or delete content.
+- Create, edit, publish or delete content other than Pages you or your team own.
 - Recompute a chart or analytics for parameter values other than the published ones.
 - Read content that is not published to Exploratory Server, such as projects that exist only in Exploratory Desktop. Use the separate [Desktop MCP](/en/mcp/desktop) for those.
 

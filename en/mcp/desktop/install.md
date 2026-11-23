@@ -18,8 +18,8 @@ In Exploratory Desktop, choose your name at the bottom left of the screen, then 
 ![The menu that opens when you choose your name at the bottom left of Exploratory Desktop. 1 is your name and 2 is System Settings](images/en/open-system-settings.png)
 
 1. In the menu on the left, choose MCP / CLI.
-2. Find the "Install the Exploratory Desktop plugin" section.
-3. Choose Install on the row of the AI tool you use.
+2. Turn on the MCP switch. It is off by default. While it is off, the "Install the Exploratory Desktop plugin" section below is dimmed and its buttons cannot be used.
+3. In the "Install the Exploratory Desktop plugin" section, choose Install on the row of the AI tool you use.
 
 ![The "Install the Exploratory Desktop plugin" section in MCP / CLI in System Settings](images/en/desktop-plugin-card.png)
 
@@ -27,13 +27,12 @@ The section says:
 
 > Installs the Desktop MCP plugin into the AI tools on this computer. After installing, restart that AI tool.
 
-The section lists Claude Code, Codex, Antigravity and Cursor. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
+The section lists Claude Code, ChatGPT (Codex), Antigravity and Cursor. An AI tool that is not on this computer shows Not found on this computer. The command is added automatically when the app starts, so there is no step to register it.
 
 Next, on the same screen, do this.
 
-4. Turn on the MCP switch. It is off by default.
-5. Only when you want the AI to create or change charts, notes and other content, check Allow create, edit and delete. Without it, the AI can only read.
-6. Choose Save at the bottom of the screen.
+4. Only when you want the AI to create or change charts, notes and other content, check Allow create, edit and delete. Without it, the AI can only read.
+5. Choose Save at the bottom of the screen.
 
 If you do not save, the MCP switch and the Allow create, edit and delete setting do not take effect.
 
@@ -68,8 +67,8 @@ You install the same way from System Settings for every AI tool, but what gets i
 
 | AI tool | What System Settings installs | What System Settings shows |
 | --- | --- | --- |
-| Claude Code | The Exploratory Desktop plugin (with its skills) | "Installed - v" followed by the plugin version; Reinstall and Remove take the place of Install |
-| Codex | Same | Same |
+| Claude Code | The Exploratory Desktop plugin (with its skills) | "Installed - v" followed by the plugin version; the buttons are in the table below |
+| ChatGPT (Codex) | Same | Same |
 | Antigravity | Same | Same |
 | Cursor | Same. Only the location differs: it copies the plugin to the Cursor plugin folder (\~/.cursor/plugins/local/exploratory) instead of writing \~/.cursor/mcp.json. If \~/.cursor/mcp.json still has an old exploratory-desktop entry, it deletes that entry; other entries stay | Same |
 
@@ -80,7 +79,10 @@ The buttons on each row change with its state.
 | State | What the row shows |
 | --- | --- |
 | Not installed | Not installed, and a green Install button |
-| Installed | Installed, with Reinstall and Remove |
+| The latest version is installed | "Installed - v" and the version, with Remove |
+| An older version is installed | "Installed - v" and the version, "v… available", with Update and Remove |
+| The latest version cannot be checked | "Installed - v" and the version, with Reinstall and Remove |
+| The install failed | "Could not install.", with Try again (and Remove if it was installed) |
 
 Choosing Remove opens a confirmation.
 
@@ -294,14 +296,14 @@ Needs Git. This copies the plugin into the same folder that System Settings uses
 
 It depends on how you installed it.
 
-- Installed from System Settings (Claude Code, Codex, Antigravity, Cursor): choose Reinstall on that AI tool's row in System Settings to install the latest plugin again (this is also how you update). To remove it, choose Remove on the same row.
+- Installed from System Settings (Claude Code, ChatGPT (Codex), Antigravity, Cursor): when a newer version exists, that AI tool's row in System Settings shows Update; choose it. To remove it, choose Remove on the same row.
 - Installed with commands (Claude Code, Codex, Antigravity, Cursor). Follow the steps in the table below to update or remove the plugin.
 
 | AI tool | Update | Remove |
 | --- | --- | --- |
 | Claude Code | claude plugin marketplace update exploratory, then claude plugin update exploratory@exploratory, and restart Claude Code | claude plugin uninstall exploratory@exploratory |
 | Codex | codex plugin marketplace upgrade exploratory, then codex plugin remove exploratory@exploratory and codex plugin add exploratory@exploratory | codex plugin remove exploratory@exploratory |
-| Antigravity | Run git pull in the cloned folder, then agy plugin install again | Remove the plugin in Antigravity's plugin settings |
+| Antigravity | Run git pull in the cloned folder, then agy plugin install ./plugins/exploratory-desktop | Remove the plugin in Antigravity's plugin settings |
 | Cursor | Run git pull in the cloned folder exploratory, then run rm -rf ~/.cursor/plugins/local/exploratory && cp -R plugins/exploratory-desktop ~/.cursor/plugins/local/exploratory, and restart Cursor | Run rm -rf ~/.cursor/plugins/local/exploratory, and restart Cursor |
 
 The Desktop MCP stops when you quit Exploratory Desktop. Removing the plugin does not affect your Server MCP connection.

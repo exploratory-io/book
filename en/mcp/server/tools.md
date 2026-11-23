@@ -25,8 +25,8 @@ Tools are operations an AI can call. Choose an operation by purpose, then inspec
 | Page | [page_list](/en/mcp/server/tools#page_list) | Read only | List your own Pages or the Pages shared with you. |
 | Page | [page_get](/en/mcp/server/tools#page_get) | Read only | Read one Page with its HTML. |
 | Page | [page_publish](/en/mcp/server/tools#page_publish) | Create | Publish HTML as a private Page and return its URL. |
-| Page | [page_update](/en/mcp/server/tools#page_update) | Change | Update one of your Pages. The URL stays the same and the previous HTML is kept as a version. |
-| Page | [page_delete](/en/mcp/server/tools#page_delete) | Delete | Delete one of your Pages with all its versions. It cannot be undone. |
+| Page | [page_update](/en/mcp/server/tools#page_update) | Change | Update a Page you or your team own. The URL stays the same. Changing the HTML makes a new version, and earlier versions are kept up to the account's history limit. |
+| Page | [page_delete](/en/mcp/server/tools#page_delete) | Delete | Delete a Page you or your team own, with all its versions. It cannot be undone. |
 
 exploratory.io offers these tools. On an on-premises server, which tools appear depends on the server settings; query_dataset, chart_query and dataframe_export appear only when the administrator has turned them on. The Page tools appear only when the administrator has turned on Pages as well as these three tools. More tools can appear depending on the settings, for example desktop_mcp_setup_guide, which returns the steps to connect an AI client to Exploratory Desktop. Run expl server tools list to see what your server offers.
 
@@ -140,7 +140,7 @@ Get the data of a chart together with what the numbers mean.
 | `limit` | integer |  | The number of rows to return, up to 100. |
 
 - The result includes chart.encoding, chart.filters, chart.data_granularity, chart.unsupported and context (publication, data time and parameter values).
-- A chart published on its own returns the first 100 rows of the data used to draw it, not the values of the whole chart or aggregated values.
+- A chart published on its own returns a sample of the rows it was drawn from (up to 10,000), not the values of the whole chart or aggregated values.
 - Check warnings.
 - To filter, sort or aggregate a chart in a note, dashboard or slide, use chart_query with the same id and chart.
 

@@ -25,8 +25,8 @@ title: "使える道具"
 | Page | [page_list](/ja/mcp/server/tools#page_list) | 読み取りだけ | 自分の Page や、共有された Page を一覧します。 |
 | Page | [page_get](/ja/mcp/server/tools#page_get) | 読み取りだけ | Page を 1 つ、HTML ごと読みます。 |
 | Page | [page_publish](/ja/mcp/server/tools#page_publish) | 作成 | HTML を、非公開の Page として公開し、URL を返します。 |
-| Page | [page_update](/ja/mcp/server/tools#page_update) | 変更 | 自分の Page を更新します。URL は変わらず、前の HTML はバージョンとして残ります。 |
-| Page | [page_delete](/ja/mcp/server/tools#page_delete) | 削除 | 自分の Page を、すべてのバージョンごと削除します。元に戻せません。 |
+| Page | [page_update](/ja/mcp/server/tools#page_update) | 変更 | 自分またはチームの Page を更新します。URL は変わりません。HTML を変えると新しいバージョンができ、古いバージョンはアカウントの履歴の上限まで残ります。 |
+| Page | [page_delete](/ja/mcp/server/tools#page_delete) | 削除 | 自分またはチームの Page を、すべてのバージョンごと削除します。元に戻せません。 |
 
 exploratory.io では、これらの道具が使えます。オンプレミスのサーバーでは、使える道具はサーバーの設定によって変わります。query_dataset、chart_query、dataframe_export は、管理者が有効にしたときだけ使えます。Page の道具は、管理者が Page を有効にし、上の 3 つの道具も有効にしたときだけ使えます。設定によっては、ほかの道具も増えます。たとえば desktop_mcp_setup_guide は、AI ツールを Exploratory Desktop につなぐ手順を返します。お使いのサーバーにある道具は、expl server tools list で確認できます。
 
@@ -140,7 +140,7 @@ id を指定して、ノート、ダッシュボード、スライド、デー�
 | `limit` | 整数 |  | 返す行数です。100 までです。 |
 
 - 結果には、chart.encoding、chart.filters、chart.data_granularity、chart.unsupported、context（公開時点、データの時点、パラメータの値）が含まれます。
-- チャート単体で公開したものは、チャート全体の値や集計値ではなく、描画に使ったデータの先頭 100 行を返します。
+- チャート単体で公開したものは、チャート全体の値や集計値ではなく、描画に使った行のサンプル（最大 1 万行）を返します。
 - warnings を確認します。
 - ノート、ダッシュボード、スライド内のチャートを絞り込み、並べ替え、集計するときは、同じ id と chart で chart_query を使います。
 

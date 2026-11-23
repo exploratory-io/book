@@ -2,7 +2,7 @@
 title: "Codex につなぐ"
 ---
 
-接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。Codex に Exploratory のサーバーを登録し、ブラウザでサインインします。
+接続すると、AI から Exploratory に公開されたノートやデータを読めるようになります。ページ（HTML ページ）も作れます。Codex に Exploratory のサーバーを登録し、ブラウザでサインインします。
 かかる時間は 3 分ほどです。Exploratory のアカウントと、Codex を用意してください。
 
 <a id="need"></a>

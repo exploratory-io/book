@@ -3,7 +3,7 @@ title: "Connect the ChatGPT app"
 sidebarTitle: "ChatGPT app"
 ---
 
-After you connect, ChatGPT can read notes and data published on Exploratory. You add the Exploratory server to the ChatGPT desktop app as an MCP server. An MCP server is the address an AI app connects to in order to use the data and features of an outside service.
+After you connect, ChatGPT can read notes and data published on Exploratory, and create Pages (HTML pages). You add the Exploratory server to the ChatGPT desktop app as an MCP server. An MCP server is the address an AI app connects to in order to use the data and features of an outside service.
 It takes about 5 minutes. You need an Exploratory account and the ChatGPT desktop app.
 
 On the web (chatgpt.com), the screens for adding a server differ. The web steps are further down this page.
