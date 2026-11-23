@@ -16,7 +16,7 @@ Exploratory Desktop をお使いの場合、expl は同梱されています。�
 npm install -g @exploratory/cli
 ```
 
-最新のバージョンがインストールされます。バージョンを固定するときは、[インストール](/ja/cli/server/install#npm)を参照してください。新しいターミナルを開いて、確認します。
+最新のバージョンがインストールされます。新しいターミナルを開いて、確認します。
 
 ```sh
 expl --version

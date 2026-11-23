@@ -24,13 +24,13 @@ CI は、変更のたびに自動で処理を流す仕組みです。人がブ�
 
 ## 実行例: GitHub Actions
 
-GitHub Actions の例です。\<id\> は、読みたいコンテンツの id に置き換えます。\<version\> は、使うバージョン番号に置き換え、必ず固定します。
+GitHub Actions の例です。\<id\> は、読みたいコンテンツの id に置き換えます。
 
 ```text
 - uses: actions/setup-node@v4
   with:
     node-version: 22
-- run: npx -y @exploratory/cli@<version> server fetch <id> --json
+- run: npx -y @exploratory/cli server fetch <id> --json
   env:
     EXPL_SERVER_TOKEN: ${{ secrets.EXPL_SERVER_TOKEN }}
     EXPL_SERVER_URL: https://exploratory.io

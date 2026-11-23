@@ -16,7 +16,7 @@ If you use Exploratory Desktop, expl is already installed. If not, install it wi
 npm install -g @exploratory/cli
 ```
 
-This installs the latest version. To pin a version, see [Installation](/en/cli/server/install#npm). Open a new terminal and check it.
+This installs the latest version. Open a new terminal and check it.
 
 ```sh
 expl --version
