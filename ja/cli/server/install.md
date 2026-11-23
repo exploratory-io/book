@@ -39,21 +39,26 @@ expl --version
 
 ## npm でインストールする場合
 
-Desktop を使用しない場合の方法です。Exploratory Server だけを使用する場合や、CI やサーバーで expl を実行する場合に使用します。Node.js 20 以降が必要です。npm は、Node.js に同梱されている、パッケージ管理コマンドです。
+Desktop を使用しない場合の方法です。Exploratory Server だけを使用する場合や、CI やサーバーで expl を実行する場合に使用します。Node.js 20 以降が必要です。Node.js のインストール方法は、[Node.js の公式サイト](https://nodejs.org/)を参照してください。npm は、Node.js に同梱されている、パッケージ管理コマンドです。
 
-npx は、パッケージをインストールせずに実行するコマンドです。Node.js 20 以降が必要です。Node.js のインストール方法は、[Node.js の公式サイト](https://nodejs.org/)を参照してください。
+### インストールして使う
 
-```sh
-npx -y @exploratory/cli --version
-```
-
-インストールせずに、expl を 1 回だけ実行します。ほかのコマンドを実行するときは、`--version` をそのコマンド（例: server login）に置き換えます。
+最新のバージョンを、グローバルにインストールします。
 
 ```sh
 npm install -g @exploratory/cli
 ```
 
-最新のバージョンを、グローバルにインストールします。パッケージ名は @exploratory/cli で、インストールされるコマンドは expl です。名前が expl だけのパッケージはインストールしないでください。その名前は、別の開発者のものです。
+パッケージ名は @exploratory/cli で、インストールされるコマンドは expl です。名前が expl だけのパッケージはインストールしないでください。その名前は、別の開発者のものです。
+
+### インストールせずに使う（npx）
+
+npx を使うと、インストールせずに expl を実行できます。実行したい expl のコマンドを、パッケージ名の後ろに続けて書きます。
+
+```sh
+npx -y @exploratory/cli --version
+npx -y @exploratory/cli server login
+```
 
 <a id="check"></a>
 

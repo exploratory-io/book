@@ -39,21 +39,26 @@ expl --version
 
 ## With npm
 
-Use this when you do not have Desktop: you only use Exploratory Server, or you run expl in CI or on a server. Node.js 20 or later is required. npm is the command that comes with Node.js for installing packages.
+Use this when you do not have Desktop: you only use Exploratory Server, or you run expl in CI or on a server. Node.js 20 or later is required; to install it, see [the Node.js website](https://nodejs.org/). npm is the command that comes with Node.js for installing packages.
 
-npx runs a package without installing it. It needs Node.js 20 or later; to install Node.js, see [the Node.js website](https://nodejs.org/).
+### Install it
 
-```sh
-npx -y @exploratory/cli --version
-```
-
-Runs expl once without installing it. To run another command, replace `--version` with it, for example server login.
+This installs the latest version globally.
 
 ```sh
 npm install -g @exploratory/cli
 ```
 
-Installs the latest version globally. The package is @exploratory/cli and the command it installs is expl. Do not install a package named just expl: that name belongs to someone else.
+The package is @exploratory/cli and the command it installs is expl. Do not install a package named just expl: that name belongs to someone else.
+
+### Run it without installing (npx)
+
+With npx you can run expl without installing it. Write the expl command you want after the package name.
+
+```sh
+npx -y @exploratory/cli --version
+npx -y @exploratory/cli server login
+```
 
 <a id="check"></a>
 
