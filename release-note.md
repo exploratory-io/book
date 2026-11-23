@@ -22,7 +22,7 @@ Exploratory now supports MCP (Model Context Protocol) for both Exploratory Serve
 
 *   **Desktop MCP** lets you do pretty much everything you can do in Exploratory Desktop directly from your AI tools\: import data, clean and transform it, build charts, run analytics, and create notes and dashboards.
 
-For details, see the introductory blog posts for [Server MCP](URL) and [Desktop MCP](URL).
+For details, see the introductory blog posts for [Server MCP](https://exploratory.io/note/kanaugust/Uex8LYd1FW) and [Desktop MCP](URL).
 
 ### CLI
 
