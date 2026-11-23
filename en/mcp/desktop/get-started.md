@@ -10,7 +10,32 @@ Install the Desktop MCP plugin, turn on MCP in Exploratory Desktop, and ask your
 
 ### 1. Install the plugin
 
-In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens. In the menu on the left, choose MCP / CLI, find the "Install the Exploratory Desktop plugin" card, and choose Install on the row of the AI tool you use. The pictures and the steps by hand are on [Install the plugin](/en/mcp/desktop/install).
+In Exploratory Desktop, choose your name at the bottom left of the screen, then choose System Settings in the menu that opens. In the menu on the left, choose MCP / CLI, find the "Install the Exploratory Desktop plugin" section, and choose Install on the row of the AI tool you use. The pictures are on [Install the plugin](/en/mcp/desktop/install).
+
+<a id="manual"></a>
+
+#### If you can't install from System Settings
+
+If the install from System Settings fails, for example because Exploratory Desktop can't reach the network, install the plugin by hand in one of these ways, then continue with step 2.
+
+- From your AI app: follow the steps for the [Claude app](/en/mcp/desktop/install#install-claude-app), the [ChatGPT app (Codex)](/en/mcp/desktop/install#install-chatgpt) or [Cursor](/en/mcp/desktop/install#install-cursor).
+- With commands: run these in a terminal, or ask an AI tool to run them.
+
+**Claude Code**
+
+```sh
+claude plugin marketplace add exploratory-io/exploratory
+claude plugin install exploratory@exploratory
+```
+
+**Codex**
+
+```sh
+codex plugin marketplace add exploratory-io/exploratory
+codex plugin add exploratory@exploratory
+```
+
+For Antigravity and Cursor, see [Install with commands](/en/mcp/desktop/install#commands).
 
 ### 2. Turn on MCP
 
@@ -27,7 +52,7 @@ Check that the connection works in your AI tool.
 - Claude Code: open /mcp and check that exploratory-desktop is connected.
 - Codex: run codex mcp list and check that exploratory-desktop is listed.
 - Antigravity: check that the plugin appears under Customizations > Installed in the app.
-- Cursor: check that the Cursor row of the card shows "Installed - v" followed by the plugin version.
+- Cursor: if you installed from System Settings, check that the Cursor row there shows "Installed - v" followed by the plugin version. If you installed by hand, ask Cursor to list the data frames in your open Exploratory project (step 4).
 
 ### 4. Ask the AI to look at your data
 
@@ -48,7 +73,7 @@ To try creating something, turn on Allow create, edit and delete and save, then 
 - A call says that MCP is turned off: go back to System Settings and check that you turned the MCP switch on and chose Save.
 - The tools return a not-running error: start Exploratory Desktop, then use the tools again in the same conversation.
 - You chose Don't allow on the approval window: for 5 minutes the same app is refused without the window appearing again. After 5 minutes, connect again and the window appears again. To approve an app you refused, or to take back an approval, see [Permissions and settings](/en/mcp/desktop/permissions#control).
-- The install fails: the row of that AI tool shows "Could not install." See "When the install fails" on [Install the plugin](/en/mcp/desktop/install#failure).
+- The install fails: the row of that AI tool shows "Could not install." See "When the install fails" on [Install the plugin](/en/mcp/desktop/install#failure), or [install the plugin by hand](#manual).
 
 See [Troubleshooting](/en/mcp/desktop/troubleshooting) for more.
 

@@ -245,6 +245,8 @@ Cursor は Exploratory Desktop と同じコンピューターで使います。C
 
 続けて、Exploratory Desktop のシステム設定の「MCP / CLI」で「MCP」をオンにし、画面下の「保存」を選びます。接続を確かめるには、Exploratory Desktop でプロジェクトを開きます。次に、Cursor で「開いている Exploratory のプロジェクトのデータフレームを一覧して」と頼みます。開いているプロジェクトのデータフレーム名が返ってくれば、接続できています。詳しくは[接続を確かめる手順](#check)を参照してください。
 
+<a id="commands"></a>
+
 ### コマンドでインストールする
 
 このプラグインは、公式のプラグイン一覧にはありません。リポジトリ exploratory-io/exploratory をマーケットプレイスとして追加してから、プラグイン exploratory を入れます。コマンドは、ご自身でターミナルに打つか、AI ツールに頼んで実行してもらってください。
