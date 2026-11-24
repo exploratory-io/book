@@ -11,7 +11,9 @@ description: "Steps to publish to the server and to Local, plus the local Data C
    - **Server**: "Share on Exploratory Server" and "Schedulable on the server"
    - **Local**: "Save on this PC" and "Schedulable on this PC"
 
-{/* IMAGE: dc-publish-menu — step 1, the "Publish" button at the top right of the Table tab (waiting for the screenshot) */}
+When you click the "Publish" button, the dialog in this image opens. In the image, ❶ is the title of the dialog.
+
+![](images/en/dc-publish-menu.png)
 
 In the image, ❶ is the "Server" card and ❷ is the "Local" card.
 
@@ -40,11 +42,9 @@ To update data you have already published, publish it again in the same way. Whe
 
 ## See the local Data Catalog list
 
-The "Data Catalog" tab of the window that lists your projects shows the local data catalog on this PC. In the image, ❶ is that tab. The number is how many data items it holds. In the image, the catalog holds 1 data item.
+The "Data Catalog" tab of the window that lists your projects shows the local data catalog on this PC. In the image, ❶ is that tab. The number is how many data items it holds. In the image, the catalog holds 6 data items.
 
-{/* IMAGE: dc-local-open — where to click "Data Catalog" on the left of the project list. When it arrives, replace dc-local-01 below or put it next to it (waiting for the screenshot) */}
-
-![](images/en/dc-local-01.png)
+![](images/en/dc-local-open.png)
 
 Data you publish to Local appears in the list. The next image is the list after "Orders", "Products" and "Customers" of the "Sales Analysis" project were published to Local. The search box is filtered by "Sales Analysis". In each row, check the number of rows, the refresh status, and the MCP checkbox. In the image, ❶ is the data name (click it to open the details screen) and ❷ is the "MCP" column.
 
@@ -76,9 +76,7 @@ The "⋯" menu at the top right has these actions.
 
 The next image shows the details screen of "Orders" on the "Table" tab, with the "⋯" menu open. In the image, ❶ is the "⋯" button and ❷ is the clock button for the schedule in the next section.
 
-{/* IMAGE: dc-local-detail-menu — the "⋯" menu of the details screen. When it arrives, replace dc-local-detail below or put it next to it (waiting for the screenshot) */}
-
-![](images/en/dc-local-detail.png)
+![](images/en/dc-local-detail-menu.png)
 
 ## Refresh on a schedule
 

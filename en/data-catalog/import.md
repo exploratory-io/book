@@ -12,7 +12,9 @@ In the "Import from Data Catalog" dialog, you can do more than bring published d
 2. In the Data Import menu, choose "Data Catalog"
 3. At the top of the "Import from Data Catalog" dialog, choose the "Server" or "Local" tab, depending on where the data is
 
-{/* IMAGE: dc-import-menu — step 2, where to choose "Data Catalog" in the Data Import menu (waiting for the screenshot) */}
+In the image, ❶ is "Data Catalog" in the Data Import menu.
+
+![](images/en/dc-import-menu.png)
 
 "Server" is the data catalog of Exploratory Server, and "Local" is the data catalog on this PC. The "Local" tab shows how many data items it holds. The tab you opened last is used the next time you open the dialog. In the image, the "Local" tab lists three data items: "Orders", "Products" and "Customers". In the image, ❶ is the "Server" and "Local" tabs, and ❷ is the name of the data to import (Orders).
 
@@ -42,7 +44,9 @@ When you choose data, the screen switches to one that shows the contents of the 
 2. In "Add a filter", choose a column from "Select a column..." and set the condition
 3. The filters you add are listed above the table. "Clear all" removes all the filters at once
 
-{/* IMAGE: dc-import-filter-add — step 2, choosing a column in "Add a filter" and setting the condition (waiting for the screenshot) */}
+In the image, ❶ is the "Select a column..." box where you choose the column for the condition.
+
+![](images/en/dc-import-filter-add.png)
 
 Only the rows that match are imported. The sentence at the bottom becomes "Import 9,135 rows that match the filter."
 
@@ -97,7 +101,9 @@ An aggregation puts each group into one row before importing.
 2. Put the columns to group by in "Group by". For a date or date-time column, you can choose a time unit (day, week, month, quarter, year)
 3. Put the columns to aggregate in "Values" and choose the function. The functions are Count, Sum (Total), Mean (Average), Median, Min, Max, Unique Count, and Standard Deviation
 
-{/* IMAGE: dc-import-aggregate-setup — steps 2 and 3, putting columns in "Group by" and "Values" (waiting for the screenshot) */}
+In the image, ❶ is the column put in "Group by" (region), and ❷ is the list of functions for "Values".
+
+![](images/en/dc-import-aggregate-setup.png)
 
 The aggregation covers the rows left after filtering. The sentence at the bottom becomes "Import 60 rows (one per group) of the summary. Totals and subtotals are not imported." When you aggregate joined data, it becomes "Import 60 rows (one per group), aggregated from Orders + Products."
 
