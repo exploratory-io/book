@@ -11,6 +11,8 @@ The server Data Catalog works in the browser on exploratory.io. You can find pub
 1. On exploratory.io, choose the account icon at the top right
 2. Choose "Data Catalog" in the menu
 
+In the image, ❶ is the account icon and ❷ is "Data Catalog".
+
 ![](images/en/dc-server-01.png)
 
 The list of the data you published appears on the "Data" tab. Some accounts also show an "Access Log" tab. The list has these columns.
@@ -53,7 +55,7 @@ In the image, ❶ is the "⋮" and ❷ is "Access Settings".
 ![](images/en/dc-server-10.png)
 
 3. For each of "MCP Access", "CLI Access", and "REST API Access", decide whether to check "Enable". "CLI Access" lets a terminal or an AI agent read the data with `expl server`. "REST API Access" does not appear in some environments
-4. When you change a setting, click "Apply". You cannot click "Apply" until you change a setting. In the image, ❶ is "Apply"
+4. When you change a setting, click "Apply". You cannot click "Apply" until you change a setting. In the image, ❶ is "Apply" and ❷ is the "Enable" check marks of "MCP Access" and "CLI Access"
 
 ![](images/en/dc-server-11.png)
 
