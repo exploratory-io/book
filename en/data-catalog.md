@@ -24,21 +24,20 @@ You register data in both from the publish dialog of a data frame.
 
 ## Get Started
 
-This is the flow from publishing to the server to asking your own AI. You need Exploratory Desktop 17, a sign-in to exploratory.io, and a project that has the data frame you want to publish.
+The flow is "Publish → Semantic information → Use". You need Exploratory Desktop 17, a sign-in to exploratory.io, and a project that has the data frame you want to publish.
 
-1. In [Publish to the Data Catalog](/en/data-catalog/publish), choose "Server" and publish
-2. In [Server Data Catalog and AI](/en/data-catalog/server), have AI create semantics and approve them
-3. On the same page, use "Ask from the server MCP" to ask from your own AI
+1. In [Publish to the Data Catalog](/en/data-catalog/publish), publish the data. Choose Local to use it only on this PC. If you choose Server, the data is visible only to the publisher at first. To use it with your team, set whom to show it to and with what permission after publishing ([Share data](/en/share/data))
+2. In [Semantic information](/en/data-catalog/semantics), have AI draft the meaning of the data and approve it
+3. Choose from the three ways to use it, depending on your goal
 
-Depending on your goal, you can also choose these pages.
-
-- To use the data only on this PC: [Local Data Catalog](/en/data-catalog/local)
-- To bring the data into another project: [Import from the Data Catalog](/en/data-catalog/import)
+- [Import from the Data Catalog (Desktop)](/en/data-catalog/import): Bring the data into another project while filtering, choosing columns, joining, and aggregating
+- [Use it on the server screen](/en/data-catalog/server-ui): On exploratory.io, find the data, check its contents, and manage access
+- [Use it with AI](/en/data-catalog/ai): Ask from the server MCP, or import with the Desktop MCP
 
 ## If Something Goes Wrong
 
 - **It does not appear in the catalog**: Check that the account you are signed in with is the same one you published with. On the server, it appears after publishing succeeds. Also check that the progress panel has finished
-- **There is no "Generate / improve with AI" button, or you get an error when you click it**: Only the data owner can edit semantics. It also does not work when the AI feature is off on the server, or when you have not agreed to the terms of use of the AI feature. Ask the owner or the server administrator
+- **There is no "Generate / improve with AI" button, or you get an error when you click it**: Only the data owner can edit semantic information. It also does not work when the AI feature is off on the server, or when you have not agreed to the terms of use of the AI feature. Ask the owner or the server administrator
 
 ## Getting Started Guide
 
