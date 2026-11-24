@@ -254,9 +254,15 @@
                 "group": "Data Catalog",
                 "pages": [
                   "en/data-catalog/publish",
-                  "en/data-catalog/local",
-                  "en/data-catalog/import",
-                  "en/data-catalog/server"
+                  "en/data-catalog/semantics",
+                  {
+                    "group": "Use",
+                    "pages": [
+                      "en/data-catalog/import",
+                      "en/data-catalog/server-ui",
+                      "en/data-catalog/ai"
+                    ]
+                  }
                 ],
                 "root": "en/data-catalog"
               },
@@ -836,9 +842,15 @@
                 "group": "データカタログ",
                 "pages": [
                   "ja/data-catalog/publish",
-                  "ja/data-catalog/local",
-                  "ja/data-catalog/import",
-                  "ja/data-catalog/server"
+                  "ja/data-catalog/semantics",
+                  {
+                    "group": "活用",
+                    "pages": [
+                      "ja/data-catalog/import",
+                      "ja/data-catalog/server-ui",
+                      "ja/data-catalog/ai"
+                    ]
+                  }
                 ],
                 "root": "ja/data-catalog"
               },
@@ -990,6 +1002,22 @@
     ]
   },
   "redirects": [
+    {
+      "source": "/ja/data-catalog/local",
+      "destination": "/ja/data-catalog/publish"
+    },
+    {
+      "source": "/ja/data-catalog/server",
+      "destination": "/ja/data-catalog/semantics"
+    },
+    {
+      "source": "/en/data-catalog/local",
+      "destination": "/en/data-catalog/publish"
+    },
+    {
+      "source": "/en/data-catalog/server",
+      "destination": "/en/data-catalog/semantics"
+    },
     {
       "source": "/howto/install_errors.html",
       "destination": "/en/howto/install_errors"
