@@ -23,5 +23,5 @@ Spread a key-value pair across multiple columns. Missing values will be replaced
   * Fill NA with - Value to fill missing values.
   * Guess column data type - Select TRUE to automatically guess the most possible data type for the key column.
   * Drop empty columns - The default is TRUE. Set FALSE to keep the levels that don’t appear in the data, filling in missing combinations with the text set with 'Fill NA with' field.
-  * Column Names Separator - The default is NULL. If NULL, the column names are values of the key column. Set separator text to make the column names "{key_column_name}{separator}{key_value}".
+  * Column Names Separator - The default is NULL. If NULL, the column names are values of the key column. Set separator text to make the column names `{key_column_name}{separator}{key_value}`.
 3. Click "Run".
