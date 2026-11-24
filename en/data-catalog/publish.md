@@ -38,11 +38,11 @@ To update data you have already published, publish it again in the same way. Whe
 
 ## See the local Data Catalog list
 
-The "Data Catalog" tab of the window that lists your projects shows the local data catalog on this PC. In the image, ❶ is that tab. The number is how many data items it holds. This image is from before anything was published, so it shows 0.
+The "Data Catalog" tab of the window that lists your projects shows the local data catalog on this PC. In the image, ❶ is that tab. The number is how many data items it holds. In the image, the catalog holds 1 data item.
 
 ![](images/en/dc-local-01.png)
 
-Data you publish to Local appears in the list. In each row, check the number of rows, the refresh status, and the MCP checkbox.
+Data you publish to Local appears in the list. The next image is the list after "Orders", "Products" and "Customers" of the "Sales Analysis" project were published to Local. The search box is filtered by "Sales Analysis". In each row, check the number of rows, the refresh status, and the MCP checkbox.
 
 ![](images/en/dc-local-list.png)
 
@@ -70,7 +70,7 @@ The "⋯" menu at the top right has these actions.
 - **Export as EDF**: Writes the data out as an EDF file
 - **Delete**: Removes it from the catalog. The files saved on this PC are deleted too
 
-The next image shows the details screen on the "Table" tab, with the "⋯" menu open.
+The next image shows the details screen of "Orders" on the "Table" tab, with the "⋯" menu open.
 
 ![](images/en/dc-local-detail.png)
 
@@ -85,11 +85,11 @@ Local data can be refreshed regularly at times you choose. Open the schedule dia
 - You can have a PC notification shown when a refresh fails or succeeds
 - After you choose the times and notifications, click "Save schedule"
 
-The next image shows the schedule dialog. On the "Settings" tab, choose the times and notifications, then click "Save schedule" at the bottom.
+The next image shows the dialog that sets a daily 9:00 refresh for "Orders". On the "Settings" tab, choose the times and notifications, then click "Save schedule" (❶) at the bottom.
 
 ![](images/en/dc-local-schedule.png)
 
-After you save, open the "Run results" tab to see the start time, result, number of rows, duration, and how each run was started (for example, Manual) for recent runs.
+After you save, open the "Run results" tab to see the start time, result, number of rows, duration, and how each run was started (for example, Manual) for recent runs. The next image shows an example with one run that read 50,000 rows again and succeeded.
 
 ![](images/en/dc-local-schedule-history.png)
 

@@ -65,7 +65,7 @@ To import from the screen while filtering and joining, see [Import from the Data
 
 From an AI (such as Claude) connected to the Desktop MCP, you can search the local Data Catalog, read the data, and filter, group, aggregate, or join it. The local Data Catalog works without putting data on the server.
 
-- Only data whose "MCP" checkbox is checked in the list is visible to AI agents. Unchecking it hides the data. The next image shows a list where the checkbox is checked
+- Only data whose "MCP" checkbox is checked in the list is visible to AI agents. Unchecking it hides the data. The next image shows a list where all 3 items are checked
 
 ![](images/en/dc-local-list.png)
 
