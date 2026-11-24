@@ -251,6 +251,16 @@
                 "root": "en/page"
               },
               {
+                "group": "Data Catalog",
+                "pages": [
+                  "en/data-catalog/publish",
+                  "en/data-catalog/local",
+                  "en/data-catalog/import",
+                  "en/data-catalog/server"
+                ],
+                "root": "en/data-catalog"
+              },
+              {
                 "group": "Data Import",
                 "pages": [
                   {
@@ -821,6 +831,16 @@
                   "ja/page/examples"
                 ],
                 "root": "ja/page"
+              },
+              {
+                "group": "データカタログ",
+                "pages": [
+                  "ja/data-catalog/publish",
+                  "ja/data-catalog/local",
+                  "ja/data-catalog/import",
+                  "ja/data-catalog/server"
+                ],
+                "root": "ja/data-catalog"
               },
               {
                 "group": "データのインポート",
