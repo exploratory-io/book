@@ -261,7 +261,8 @@
                       "en/data-catalog/import",
                       "en/data-catalog/server-ui",
                       "en/data-catalog/ai"
-                    ]
+                    ],
+                    "root": "en/data-catalog/use"
                   }
                 ],
                 "root": "en/data-catalog"
@@ -849,7 +850,8 @@
                       "ja/data-catalog/import",
                       "ja/data-catalog/server-ui",
                       "ja/data-catalog/ai"
-                    ]
+                    ],
+                    "root": "ja/data-catalog/use"
                   }
                 ],
                 "root": "ja/data-catalog"
