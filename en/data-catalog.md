@@ -90,6 +90,48 @@ For the tools you can use and when you are asked for confirmation, see these pag
 - [Data and permissions](/en/mcp/desktop/data)
 - [Permissions and settings](/en/mcp/desktop/permissions)
 
+## Let AI Answer Questions with the Server Data Catalog
+
+In the server data catalog, you can attach "semantics" to published data. Semantics are definitions that tell AI what the data means. An AI agent reads from them what column names alone do not say, such as what one row represents, which columns can be summed, and whether cancellations are included.
+
+### Generate with AI, then approve as a person
+
+On the "Metadata" tab of the data page, click "Generate / improve with AI". AI drafts the semantics from the overview and the column descriptions. The definitions fall into five groups.
+
+| Group | What you define |
+| --- | --- |
+| Meaning of the data | The grain (what one row is), the primary date column, what is in and out of scope, a summary of the wrangling, and the update status |
+| Column meanings and roles | What each column is for and how to aggregate it |
+| Business metrics | The main metrics calculated from this data and how each one is calculated |
+| Aggregation rules and cautions | The rules needed to aggregate and interpret the data correctly |
+| Questions and aggregation examples | Common questions and the right way to aggregate for each |
+
+What AI writes does not become an official definition as it is. The data owner reviews each item marked "AI suggestion available" and chooses "Approve" or "Reject". Only approved items are passed to AI agents as official definitions. If you edit an approved item and save, the approval is removed, so approve it again.
+
+The "AI Ready" column in the data list shows the preparation status: "Ready", "Needs Review", "Draft", or "Not Set".
+
+### Give AI only the results it needs
+
+An AI agent does not have to read pages of rows. It receives only the results aggregated on the server. The server calculates the filtering, grouping, aggregation, and joining of `query_dataset` with DuckDB, so only the result rows enter the AI conversation.
+
+### Use it from the server MCP
+
+From the server MCP, AI can find and aggregate data using the approved semantics.
+
+- `dataframe_get_schema` returns the approved semantics together with the column information. AI reads these definitions before it aggregates. A definition marked "Needs Review" may be out of date
+- `query_dataset` filters and aggregates the data on the server
+
+The data owner can stop MCP access for each data item. Open "Access settings" from the "⋮" menu in the data list and choose "MCP access".
+
+For how to use the tools and what is recorded, see these pages.
+
+- [Server MCP tools](/en/mcp/server/tools)
+- [Server MCP data and permissions](/en/mcp/server/data)
+
+## Getting Started Guide
+
+A note explains the steps with screenshots, from publishing to using the data from the server MCP and the Desktop MCP. See [Getting Started: Data Catalog](https://exploratory.io/note/exploratory/Getting-Started-Data-Catalog-ypQ4SEG4).
+
 ## Server and Local
 
 | | Server | Local |
