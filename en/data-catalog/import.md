@@ -17,7 +17,7 @@ In the next image, ❶ is the "+" of step 2, and ❷ is "Data Catalog" of step 3
 
 ![](images/en/dc-import-menu.png)
 
-"Server" is the data catalog of Exploratory Server, and "Local" is the data catalog on this PC. The "Local" tab shows how many data items it holds. The tab you opened last is used the next time you open the dialog. In the image, the "Local" tab lists three data items: "Orders", "Products" and "Customers". In the image, ❶ is the "Server" and "Local" tabs, and ❷ is the name of the data to import (Orders).
+"Server" is the data catalog of Exploratory Server, and "Local" is the data catalog on this PC. The "Local" tab shows how many data items it holds. The tab you opened last is used the next time you open the dialog. In the image, the "Local" tab lists three data items: "Orders", "Products" and "Customers". "Orders", which is already imported, is marked "Imported". In the image, ❶ is the "Server" and "Local" tabs, and ❷ is the name of the data to import (Orders).
 
 ![](images/en/dc-import-dialog.png)
 
@@ -134,7 +134,7 @@ In the image, ❶ is the "Import" button.
 
 2. In the "Create Data Frame" dialog, enter a name for the data frame and click "Create"
 
-In the image, ❶ is the name box and ❷ is the "Create" button.
+In the image, ❶ is the name box (the example uses "2025 EC Monthly Sales by Category") and ❷ is the "Create" button.
 
 ![](images/en/dc-import-name.png)
 
