@@ -14,7 +14,7 @@ description: "The server data catalog page, approving semantics, and access sett
 The list of the data you published appears on the "Data" tab. Some accounts also show an "Access Log" tab. The list has these columns.
 
 - Name, Owner, Sharing, Updated, Schedule, Refresh (the refresh status)
-- MCP Access, CLI Access, REST API Access
+- MCP Access, CLI Access (some environments also show a REST API Access column)
 - AI Ready
 
 ![](images/en/dc-server-02.png)
@@ -35,7 +35,7 @@ In the server data catalog, you can attach "semantics" to published data. Semant
 
 1. Open the "Metadata" tab of the data page
 2. Click "Generate / improve with AI"
-3. In the "Generate metadata with AI" dialog, check "Generation targets" and click "Generate". AI drafts the semantics from the overview, the column information, statistics, the wrangling steps, and so on
+3. In the "Generate metadata with AI" dialog, check "What to generate" and click "Generate". AI drafts the semantics from the overview, the column information, statistics, the wrangling steps, and so on
 
 ![](images/en/dc-server-05.png)
 
@@ -53,7 +53,7 @@ The definitions fall into five groups. Aggregation rules are generated only when
 
 What AI writes does not become an official definition as it is. The data owner reviews it in these steps. Only the data owner can edit semantics.
 
-1. Read the items marked "AI suggestion available" and fix anything that is wrong with "Edit"
+1. Read the items marked "AI suggested" and fix anything that is wrong with "Edit"
 2. For each item that is correct, click "Approve". To reject one, click "Reject"
 3. To approve many at once, check "Select all" in each section and click "Approve selected (N)". N is the number of items you selected. For "Grain of the data", however, click "Approve" on its own. If other items cannot be approved at once, check their contents and approve each one
 
@@ -63,20 +63,40 @@ What AI writes does not become an official definition as it is. The data owner r
 
 ![](images/en/dc-server-09.png)
 
+The standard for approving is whether the item is correct as the meaning of this data. With the sales order data, for example, check that the grain of the data is "1 row = 1 record" (an order line item), the main date column is order_date, and the sales column is a "Numeric measure" with "Sum" as its aggregation. Things that column names alone cannot settle, such as whether net sales should use the gross sales column or the net sales column, are settled in the definitions.
+
 Approved items are passed to AI agents as official definitions. Definitions you have not approved are not used. The values in the column can still be aggregated. If you edit an approved item and save, the approval is removed, so approve it again.
 
 The "AI Ready" column in the data list shows the preparation status: "Ready", "Needs Review", "Draft", or "Not Set".
 
-### Give AI only the results it needs
+### Ask from the server MCP
 
-When you ask for an aggregation with `query_dataset`, the server calculates the filtering, grouping, aggregation, and joining with DuckDB. An AI agent can receive the aggregated result without reading pages of rows. In tests during development, data of several million to tens of millions of rows came back within one second. The actual speed depends on the network between the AI agent and the server. When it asks for the original rows, or uses another read tool, the returned rows become part of the conversation. See [Server MCP data and permissions](/en/mcp/server/data) for details.
+1. In the list, check that the "MCP Access" column shows "Enabled". If it is off, turn it on in "Set access" at the end of this page
+2. Connect the server MCP to the AI tool you use. See the [instructions for each client](/en/mcp/server/clients/apps)
+3. Ask with the title you used when publishing. Replace "Sales Orders (Line Items)" in the example below with the title of your own data
 
-### Use it from the server MCP
+```text
+In Exploratory's "Sales Orders (Line Items)", show the sales total by region in descending order. Also include how you aggregated it.
+```
 
-From the server MCP, AI can find and aggregate data using the approved semantics.
+![](images/en/dc-server-12.png)
+
+4. In the answer, check the sales total for each region. Also check that the aggregation method and the point in time of the data are included. AI reads the definitions you approved, and then aggregates
+
+![](images/en/dc-server-13.png)
+
+The server MCP tools are used like this.
 
 - `dataframe_get_schema` returns the approved definitions when you get the full detail (`full`). A definition that became "Needs Review", for example after the data changed, comes with a warning. AI reads these definitions before it aggregates
 - `query_dataset` filters and aggregates the data on the server. On an on-premises server, it is available only when the administrator has enabled it
+
+### Give AI only the results it needs
+
+When you ask for an aggregation with `query_dataset`, the server calculates the filtering, grouping, aggregation, and joining with DuckDB (the engine that aggregates the data inside the server). An AI agent can receive the aggregated result without reading pages of rows. When it asks for the original rows, or uses another read tool, the returned rows become part of the conversation. See [Server MCP data and permissions](/en/mcp/server/data) for details.
+
+As for speed, in tests during development, data of several million to tens of millions of rows came back within one second. The actual speed depends on the network between the AI agent and the server.
+
+### Set access
 
 The data owner can set MCP and other access for each data item.
 
@@ -89,11 +109,7 @@ The data owner can set MCP and other access for each data item.
 
 ![](images/en/dc-server-11.png)
 
-For example, to stop MCP, uncheck "Enable" under "MCP Access" and click "Apply". Enabling access does not open the data to everyone. Sign-in, view permissions, and download permissions apply as before.
-
-![](images/en/dc-server-12.png)
-
-![](images/en/dc-server-13.png)
+For example, for data you do not want AI agents to use, uncheck "Enable" under "MCP Access" and click "Apply". Enabling access does not open the data to everyone. Sign-in, view permissions, and download permissions apply as before.
 
 For how to use the tools and what is recorded, see these pages.
 

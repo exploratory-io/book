@@ -6,14 +6,14 @@ description: "Search, scheduled refresh, and use from AI agents for data saved o
 
 ## Find Data in the List
 
-The "Data Catalog" tab of the window that lists your projects shows the local data catalog on this PC.
+The "Data Catalog" tab of the window that lists your projects shows the local data catalog on this PC. In the image, ❶ is that tab. The number is how many data items it holds. Data you publish to Local appears in the list.
 
 ![](images/en/dc-local-01.png)
 
 - In the search box, choose which of "Name", "Description", "Tags", and "Columns" to search. Matching tags and columns appear under the data name as "Match"
 - You can sort by updated date (newest or oldest first) or by name (ascending or descending)
 - The list shows the data name, the source project, the number of rows, the updated date, the schedule, the refresh status (Success, Failed, Running), and the MCP checkbox
-- Click a data name to open its details
+- Click a data name in the "Name" column to open its details. The checkbox in the "MCP" column sets whether AI agents can see the data
 
 The details screen has these tabs.
 
@@ -42,6 +42,7 @@ Local data can be refreshed regularly at times you choose. Open the schedule dia
 - A refresh imports the data again from the data sources used when it was published, runs the wrangling steps again, and replaces the data
 - If the background refresh is registered with the OS, it runs even when the app is closed. If it could not be registered, it refreshes while the app is open, and missed refreshes run once when you next open the app (on Windows, also when you sign in)
 - You can have a PC notification shown when a refresh fails or succeeds
+- After you choose the times and notifications, click "Save schedule"
 - The "Run results" tab shows the start time, result, number of rows, and duration of recent runs. To stop the schedule, set "Repeat By" to "None"
 
 ![](images/en/dc-local-02.png)
@@ -52,7 +53,9 @@ Data published to the server is refreshed by the server's schedule. See [Schedul
 
 ## Use It from AI Agents (MCP)
 
-AI agents such as Claude can search the local data catalog, read the data, and filter, group, aggregate, or join it. Only data whose "MCP" checkbox is checked in the list is visible to AI agents. Unchecking it hides the data. You can also add semantics to local data on the "Metadata" tab of the details screen.
+AI agents such as Claude can search the local data catalog, read the data, and filter, group, aggregate, or join it. Only data whose "MCP" checkbox is checked in the list is visible to AI agents. Unchecking it hides the data.
+
+You can also add semantics to local data on the "Metadata" tab of the details screen. The image shows the Metadata tab, where AI-suggested definitions are being reviewed.
 
 ![](images/en/dc-local-03.png)
 

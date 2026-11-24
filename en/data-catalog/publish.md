@@ -8,14 +8,19 @@ description: "How to choose where to publish and the steps to publish to the Dat
 2. Under "Publish to" in the publish dialog, check "Server", "Local", or both
    - **Server**: "Share on Exploratory Server" and "Schedulable on the server"
    - **Local**: "Save on this PC" and "Schedulable on this PC"
-3. Enter a title, a description, and tags. Click the "AI" button to the right of each heading (pointing at it shows "Generate with AI") and AI writes a draft. The button appears only when an AI service is available. Check the content and edit it if needed
-4. Click "Publish". For data you have already published, the button is "Republish"
+
+In the image, ❶ is the "Server" card and ❷ is the "Local" card.
 
 ![](images/en/dc-publish-01.png)
 
+3. Enter a title, a description, and tags. Click the "AI" button to the right of each heading (pointing at it shows "Generate with AI") and AI writes a draft. The button appears only when an AI service is available. Check the content and edit it if needed
+4. Click the "Publish ▾" button at the bottom of the dialog, and choose who publishes in the menu. To publish as yourself, choose "As Individual"; to publish for a team, choose "As Team". A "Ready to Publish?" confirmation appears. Click "OK"
+
+In the image, ❶ is the "AI" button and ❷ is the publish button. For data you have already published, the button is "Republish". If you publish only to Local, click "Publish".
+
 ![](images/en/dc-publish-02.png)
 
-When publishing to the server is done, a panel shows the progress. Choose "Open" to open the data page on the server.
+When publishing to the server is done, a panel shows the progress. Choose "Open" (❶) to open the data page on the server. Then, on the "Metadata" tab of the data page, you can have AI create semantics and approve them. See [Server Data Catalog and AI](/en/data-catalog/server) for the steps.
 
 ![](images/en/dc-publish-03.png)
 

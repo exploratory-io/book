@@ -13,6 +13,8 @@ The Data Catalog offers four values.
 - **Access**: Get only the data you need with queries
 - **Control**: Manage MCP access for each data item, and check usage in the access log
 
+MCP is the connection method that lets an AI such as Claude read data in Exploratory.
+
 There are two kinds of Data Catalog.
 
 - **Server**: Data published to Exploratory Server (exploratory.io). You can share it with your team members
@@ -20,12 +22,18 @@ There are two kinds of Data Catalog.
 
 You register data in both from the publish dialog of a data frame.
 
-For details, see these pages.
+## Get Started
 
-- [Publish to the Data Catalog](/en/data-catalog/publish)
-- [Local Data Catalog](/en/data-catalog/local)
-- [Import from the Data Catalog](/en/data-catalog/import)
-- [Server Data Catalog and AI](/en/data-catalog/server)
+This is the flow from publishing to the server to asking your own AI. You need Exploratory Desktop 17, a sign-in to exploratory.io, and a project that has the data frame you want to publish.
+
+1. In [Publish to the Data Catalog](/en/data-catalog/publish), choose "Server" and publish
+2. In [Server Data Catalog and AI](/en/data-catalog/server), have AI create semantics and approve them
+3. On the same page, use "Ask from the server MCP" to ask from your own AI
+
+Depending on your goal, you can also choose these pages.
+
+- To use the data only on this PC: [Local Data Catalog](/en/data-catalog/local)
+- To bring the data into another project: [Import from the Data Catalog](/en/data-catalog/import)
 
 ## If Something Goes Wrong
 
