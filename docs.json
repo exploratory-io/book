@@ -185,6 +185,7 @@
                   "en/table/column_filter",
                   "en/markdown/markdown-dashboard",
                   "en/markdown/markdown-note",
+                  "en/data-catalog",
                   "en/steps",
                   "en/branch",
                   "en/parameter",
@@ -773,6 +774,7 @@
                 "pages": [
                   "ja/markdown/markdown-dashboard",
                   "ja/markdown/markdown-note",
+                  "ja/data-catalog",
                   "ja/parameter",
                   {
                     "group": "共有",
