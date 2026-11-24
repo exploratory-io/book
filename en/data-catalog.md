@@ -26,7 +26,7 @@ You register data in both from the publish dialog of a data frame.
 
 The flow is "Publish → Semantic information → Use". You need Exploratory Desktop 17, a sign-in to exploratory.io, and a project that has the data frame you want to publish.
 
-1. In [Publish to the Data Catalog](/en/data-catalog/publish), publish the data. Choose Server to use it with your team, or Local to use it only on this PC
+1. In [Publish to the Data Catalog](/en/data-catalog/publish), publish the data. Choose Local to use it only on this PC. If you choose Server, the data is visible only to the publisher at first. To use it with your team, set whom to show it to and with what permission after publishing ([Share data](/en/share/data))
 2. In [Semantic information](/en/data-catalog/semantics), have AI draft the meaning of the data and approve it
 3. Choose from the three ways to use it, depending on your goal
 

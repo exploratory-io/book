@@ -22,11 +22,13 @@ In the image, ❶ is the "AI" button and ❷ is the publish button. For data you
 
 ![](images/en/dc-publish-02.png)
 
-When publishing to the server is done, a panel shows the progress. Choose "Open" (❶) to open the data page on the server. Then, on the "Metadata" tab of the data page, you can have AI create semantic information and approve it. See [Semantic information](/en/data-catalog/semantics) for the steps.
+In step 4, you choose who publishes (you or a team). Who can view the data is a separate setting. Right after you publish to the server, the data is "Private", so only the publisher can see it. To let team members use it, set whom to show it to and with what permission after publishing. See [Share data](/en/share/data) for the steps.
+
+When publishing to the server is done, a panel shows the progress. Choose "Open" (❶) to open the data page on the server. "Share" in the panel takes you to the sharing settings. Then, on the "Metadata" tab of the data page, you can have AI create semantic information and approve it. See [Semantic information](/en/data-catalog/semantics) for the steps.
 
 ![](images/en/dc-publish-03.png)
 
-When you publish only to Local, a message says the data was published to the data catalog. The data appears in the "Data Catalog" tab of the window that lists your projects.
+When you publish only to Local, a message says the data was published to the data catalog (❶ in the image). The data appears in the "Data Catalog" tab of the window that lists your projects.
 
 ![](images/en/dc-publish-04.png)
 
@@ -36,11 +38,15 @@ To update data you have already published, publish it again in the same way. Whe
 
 ## See the local Data Catalog list
 
-The "Data Catalog" tab of the window that lists your projects shows the local data catalog on this PC. In the image, ❶ is that tab. The number is how many data items it holds. Data you publish to Local appears in the list.
+The "Data Catalog" tab of the window that lists your projects shows the local data catalog on this PC. In the image, ❶ is that tab. The number is how many data items it holds. This image is from before anything was published, so it shows 0.
 
 ![](images/en/dc-local-01.png)
 
+Data you publish to Local appears in the list. In each row, check the number of rows, the refresh status, and the MCP checkbox.
+
 ![](images/en/dc-local-list.png)
+
+Here is how to read the list.
 
 - In the search box, choose which of "Name", "Description", "Tags", and "Columns" to search. Matching tags and columns appear under the data name as "Matches"
 - You can sort by updated date (newest or oldest first) or by name (ascending or descending)
@@ -57,14 +63,16 @@ The details screen has these tabs.
 | Wrangling Steps | The data wrangling steps that produce the data |
 | Access Log | A record of access from AI agents (MCP) |
 
-![](images/en/dc-local-detail.png)
-
 The "⋯" menu at the top right has these actions.
 
 - **Open Folder**: Opens the folder where the data is saved
 - **Republish**: Opens the publish dialog of the original data frame. It is not available when the original project or data frame cannot be found
 - **Export as EDF**: Writes the data out as an EDF file
 - **Delete**: Removes it from the catalog. The files saved on this PC are deleted too
+
+The next image shows the details screen on the "Table" tab, with the "⋯" menu open.
+
+![](images/en/dc-local-detail.png)
 
 ## Refresh on a schedule
 
@@ -76,11 +84,16 @@ Local data can be refreshed regularly at times you choose. Open the schedule dia
 - If the background refresh is registered with the OS, it runs even when the app is closed. If it could not be registered, it refreshes while the app is open, and missed refreshes run once when you next open the app (on Windows, also when you sign in)
 - You can have a PC notification shown when a refresh fails or succeeds
 - After you choose the times and notifications, click "Save schedule"
-- The "Run results" tab shows the start time, result, number of rows, duration, and how each run was started (for example, Manual) for recent runs. To stop the schedule, set "Repeat By" to "None"
+
+The next image shows the schedule dialog. On the "Settings" tab, choose the times and notifications, then click "Save schedule" at the bottom.
 
 ![](images/en/dc-local-schedule.png)
 
+After you save, open the "Run results" tab to see the start time, result, number of rows, duration, and how each run was started (for example, Manual) for recent runs.
+
 ![](images/en/dc-local-schedule-history.png)
+
+To stop the schedule, set "Repeat By" to "None" on the "Settings" tab.
 
 Some data cannot be refreshed, for example data whose data source was published as a snapshot, or data that uses a data source that does not support refreshing. A refresh also fails when the data source file cannot be found. Put the file back in the same place on this PC, or update the data source in the original project and publish again. Hover over the refresh status in the list to see the reason.
 

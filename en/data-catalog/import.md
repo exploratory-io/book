@@ -12,7 +12,7 @@ In the "Import from Data Catalog" dialog, you can do more than bring published d
 2. In the Data Import menu, choose "Data Catalog"
 3. At the top of the "Import from Data Catalog" dialog, choose the "Server" or "Local" tab, depending on where the data is
 
-"Server" is the data catalog of Exploratory Server, and "Local" is the data catalog on this PC. The "Local" tab shows how many data items it holds. The tab you opened last is used the next time you open the dialog.
+"Server" is the data catalog of Exploratory Server, and "Local" is the data catalog on this PC. The "Local" tab shows how many data items it holds. The tab you opened last is used the next time you open the dialog. In the image, the "Local" tab lists its data items. Data you have already imported is marked "Imported".
 
 ![](images/en/dc-import-dialog.png)
 
@@ -23,7 +23,7 @@ To replace the original data of an existing data frame with catalog data, switch
 - **Server**: Search by name, description, tags, and author in the search box. The default sort is "Most relevant". You can browse by "Owned by Me", "Owned by Team", and "Shared with Me"
 - **Local**: Search by name, description, tags, and columns in the search box. Matching tags and columns appear under the data name. You can sort by updated date or name. Data you have already imported is marked "Imported"
 
-Click a data name to switch to a dialog that shows the contents of that data. "Back to the list" returns to the list.
+Click a data name to switch to a dialog that shows the contents of that data. Click "‹" at the top left to return to the list.
 
 On the Local tab, the following data cannot be imported. The dialog shows the reason.
 
@@ -32,9 +32,7 @@ On the Local tab, the following data cannot be imported. The dialog shows the re
 
 ## Check the contents
 
-When you choose data, a dialog with only the "Table" opens and shows the contents of the data. At the bottom, a sentence says how many rows will be imported, for example "Import {N} rows of data." The sentence changes when you set filters, choose columns, join, or aggregate.
-
-You can also narrow the rows with "Search all columns" to check them.
+When you choose data, the screen switches to one that shows the contents of the data in the "Table". You can switch the view with "Table" and "Aggregate" at the top. At the bottom, a sentence says how many rows will be imported, for example "Import {N} rows of data." The sentence changes when you set filters, choose columns, join, or aggregate.
 
 ## Filter the rows
 
@@ -44,17 +42,21 @@ You can also narrow the rows with "Search all columns" to check them.
 
 Only the rows that match are imported. The sentence at the bottom becomes "Import {N} rows that match the filter."
 
+The next image shows an example with filters applied.
+
+![](images/en/dc-import-filter.png)
+
 The following filters cannot be used for import. In that case, remove the filter, or filter in a step after importing.
 
 - Among the filters on column "{column}", a filter on a duration column, or a text comparison by order
 - A filter that uses a parameter that does not exist in the project (create the parameter, or change the filter)
 
-![](images/en/dc-import-filter.png)
-
 ## Choose the columns
 
 1. Click "Columns" above the table. After you choose, it changes to "Columns {shown}/{total}"
-2. Check the columns to import, using "Search columns" if needed. "Select all" and "Clear all" are also available
+2. Check the columns to import. The search box narrows the column names. "Select all" and "Clear all" are also available
+
+The image shows a state where only some of the columns are chosen.
 
 Only the chosen columns are imported. The sentence at the bottom becomes "Import all {N} rows, with {chosen} of {total} columns." When a filter is also set, it becomes "Import {N} rows that match the filter, with {chosen} of {total} columns." At least one column must stay selected. A column used as a join key cannot be removed.
 
@@ -69,15 +71,19 @@ A join connects columns of other data in the Data Catalog to the data you import
 3. Under "Key columns", choose a column on each side. "Add a key" adds more keys. When the key types differ, a note says they are compared as text
 4. Under "Rows with no match", choose how to keep rows. "Keep all rows of {title}" (a left join) keeps rows with no partner, and the joined columns are empty. "Keep only rows found in both" (an inner join) keeps only rows whose key is found in both data
 5. In the "Data to join: “{title}”" section, you can choose the columns, filters, and aggregation of the data to join, before joining
-6. The screen shows the match rate and the number of rows after the join, for example "{N}% of {title} ({count} rows) found a match in {right} · {rows} rows after the join". Check it, and click "Join"
+6. The bottom of the screen shows the match rate and the number of rows after the join, for example "{N}% of {title} ({count} rows) found a match in {right} · {rows} rows after the join"
 
-After joining, the "Steps" above the table list "Original data" and "Join {title}". "Edit join" changes it, and "Delete" removes it.
+The next image shows the join dialog before you click "Join". ①, ② and ③ on the screen correspond to steps 3, 4 and 5.
+
+![](images/en/dc-import-join.png)
+
+Check the result, and click "Join".
+
+After joining, "Steps" appears on the left of the screen and lists the original data and the join step. The pencil icon on the join step changes the join settings.
 
 When few rows match, or when duplicate keys make the rows grow, the screen shows a warning. When the rows grow, aggregate the data to join by the key before joining, and the rows will not grow.
 
 When you import with a join, the sentence at the bottom becomes "Import {N} rows, joined from {title}." The data to join must also have its full data saved.
-
-![](images/en/dc-import-join.png)
 
 ## Aggregate and import
 
@@ -89,16 +95,18 @@ An aggregation puts each group into one row before importing.
 
 The aggregation covers the rows left after filtering. The sentence at the bottom becomes "Import {N} rows (one per group) of the summary. Totals and subtotals are not imported." When you aggregate joined data, it becomes "Import {N} rows (one per group), aggregated from {original} + {joined}."
 
-An aggregation that has columns (a pivot table) cannot be imported. In that case, remove the columns from "Columns".
+The next image shows an example that groups joined data and totals a value with Sum.
 
 ![](images/en/dc-import-aggregate.png)
+
+An aggregation that has columns (a pivot table) cannot be imported. In that case, remove the columns from "Columns".
 
 ## Import
 
 1. Check the settings and click "Import"
 2. Enter a name for the data frame and click "OK"
 
-The imported data is added to the project as a data frame. It appears in the Steps panel on the right as a "Data Catalog" step.
+The imported data is added to the project as a data frame. It appears in the Steps panel on the right as a "Data Catalog" step, as the image shows.
 
 ![](images/en/dc-import-result.png)
 

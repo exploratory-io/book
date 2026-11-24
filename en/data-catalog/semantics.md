@@ -69,6 +69,14 @@ Open the details screen of the local data, and click "Generate / improve with AI
 
 ![](images/en/dc-local-metadata.png)
 
-The next image shows the Metadata tab, where AI-suggested definitions are being reviewed.
+The next image shows the Metadata tab of a different data item, "Sales Orders (Line Items)", where AI-suggested definitions are being reviewed. It is a separate example from the one above.
 
 ![](images/en/dc-local-03.png)
+
+## Use it after approving
+
+Approved definitions take effect in these three ways. Go to the page that fits your goal.
+
+- [Import from the Data Catalog (Desktop)](/en/data-catalog/import): Bring the data into a Desktop project. Data you published only to Local does not appear on the server screen, so use it in Desktop
+- [Use it on the server screen](/en/data-catalog/server-ui): Find data and manage access on exploratory.io. This applies to data published to the server
+- [Use it with AI](/en/data-catalog/ai): Ask questions from an AI agent. For local data, see "Use the local Data Catalog from AI"

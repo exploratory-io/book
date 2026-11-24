@@ -13,12 +13,14 @@ MCP is the connection method that lets an AI such as Claude read data in Explora
 3. Ask with the title you used when publishing. Replace "Sales Orders (Line Items)" in the example below with the title of your own data
 
 ```text
-In Exploratory's "Sales Orders (Line Items)", show the sales total by region in descending order. Also include how you aggregated it.
+Using Exploratory, give me the total sales by region for "Sales Orders (Line Items)", largest first. Also tell me the aggregation method you used and the data as-of date.
 ```
+
+In the image, ❶ is the input box of the AI tool, with the request above entered.
 
 ![](images/en/dc-server-12.png)
 
-4. In the answer, check the sales total for each region. In the image, ❶ is the table of the answer and ❷ is the explanation of the aggregation method and the point in time of the data. AI reads the definitions you approved, and then aggregates
+4. In the answer, check the sales total for each region. In the image, ❶ is the table of the answer and ❷ is the explanation of the aggregation method. The image does not show the rest of the answer. AI reads the definitions you approved, and then aggregates
 
 ![](images/en/dc-server-13.png)
 
@@ -45,13 +47,15 @@ You can ask an AI (such as Claude Code) that is connected to the Desktop MCP to 
 Import "Sales Orders (Line Items)" from the Data Catalog on the Exploratory server into the "[project name]" project in Exploratory Desktop.
 ```
 
+In the image, ❶ is the input box, with the title of the data and the project name "Getting Started Guides" entered.
+
 ![](images/en/dc-import-01.png)
 
-4. The AI may ask which project to import into. If it does, answer like "Import it into the [project name] project". The AI explains the result of the import
+4. The AI may ask which project to import into. If it does, answer like "Import it into the [project name] project". If the project you named does not exist, the AI asks whether to create it first; the image shows that case, where the AI created the project after approval and then imported. To follow these steps with an existing project, name a project that already exists. In the image, ❶ is the AI's explanation of the result: the data frame name, the numbers of rows and columns, and the columns
 
 ![](images/en/dc-import-02.png)
 
-5. Go back to Exploratory Desktop, open the project you specified, and check that the data frame has been created. It is added to the Steps panel on the right as a "Data Catalog" step
+5. Go back to Exploratory Desktop, open the project you specified, and check that the data frame has been created. In the image, ❶ points to the new data frame in the list on the left. Check the "Data Catalog" step in the Steps panel on the right too; the image does not mark it
 
 ![](images/en/dc-import-03.png)
 
@@ -61,11 +65,12 @@ To import from the screen while filtering and joining, see [Import from the Data
 
 From an AI (such as Claude) connected to the Desktop MCP, you can search the local Data Catalog, read the data, and filter, group, aggregate, or join it. The local Data Catalog works without putting data on the server.
 
-- Only data whose "MCP" checkbox is checked in the list is visible to AI agents. Unchecking it hides the data
-- You can also add semantic information to local data. AI aggregates using the definitions you approved. See [Semantic information](/en/data-catalog/semantics)
-- You can check access to the data on the "Access Log" tab of the details screen
+- Only data whose "MCP" checkbox is checked in the list is visible to AI agents. Unchecking it hides the data. The next image shows a list where the checkbox is checked
 
 ![](images/en/dc-local-list.png)
+
+- You can also add semantic information to local data. AI aggregates using the definitions you approved. See [Semantic information](/en/data-catalog/semantics)
+- You can check access to the data on the "Access Log" tab of the details screen
 
 For the tools you can use and when you are asked for confirmation, see these pages.
 
