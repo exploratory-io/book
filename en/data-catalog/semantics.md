@@ -65,11 +65,11 @@ The "AI Ready" column in the data list shows the preparation status: "Ready", "N
 
 ## Create it in the local Data Catalog
 
-Open the details screen of the local data, and click "Generate / improve with AI" on the "Metadata" tab. AI creates or improves the overview, the column descriptions, and the semantic information. You review the proposals and adopt them in the same way as on the server.
+Open the details screen of the local data, and click "Generate / improve with AI" on the "Metadata" tab. AI creates or improves the overview, the column descriptions, and the semantic information. You review the proposals and adopt them in the same way as on the server. In the image, ❶ is the "Metadata" tab and ❷ is "Generate / improve with AI".
 
 ![](images/en/dc-local-metadata.png)
 
-The next image shows the Metadata tab of a different data item, "Sales Orders (Line Items)", where AI-suggested definitions are being reviewed. It is a separate example from the one above.
+The next image shows the Metadata tab of a different data item, "Sales Orders (Line Items)", where AI-suggested definitions are being reviewed. It is a separate example from the one above. In the image, ❶ is the "Approve" button of each proposal.
 
 ![](images/en/dc-local-03.png)
 

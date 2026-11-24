@@ -11,6 +11,8 @@ description: "Steps to publish to the server and to Local, plus the local Data C
    - **Server**: "Share on Exploratory Server" and "Schedulable on the server"
    - **Local**: "Save on this PC" and "Schedulable on this PC"
 
+{/* IMAGE: dc-publish-menu — step 1, the "Publish" button at the top right of the Table tab (waiting for the screenshot) */}
+
 In the image, ❶ is the "Server" card and ❷ is the "Local" card.
 
 ![](images/en/dc-publish-01.png)
@@ -40,9 +42,11 @@ To update data you have already published, publish it again in the same way. Whe
 
 The "Data Catalog" tab of the window that lists your projects shows the local data catalog on this PC. In the image, ❶ is that tab. The number is how many data items it holds. In the image, the catalog holds 1 data item.
 
+{/* IMAGE: dc-local-open — where to click "Data Catalog" on the left of the project list. When it arrives, replace dc-local-01 below or put it next to it (waiting for the screenshot) */}
+
 ![](images/en/dc-local-01.png)
 
-Data you publish to Local appears in the list. The next image is the list after "Orders", "Products" and "Customers" of the "Sales Analysis" project were published to Local. The search box is filtered by "Sales Analysis". In each row, check the number of rows, the refresh status, and the MCP checkbox.
+Data you publish to Local appears in the list. The next image is the list after "Orders", "Products" and "Customers" of the "Sales Analysis" project were published to Local. The search box is filtered by "Sales Analysis". In each row, check the number of rows, the refresh status, and the MCP checkbox. In the image, ❶ is the data name (click it to open the details screen) and ❷ is the "MCP" column.
 
 ![](images/en/dc-local-list.png)
 
@@ -70,13 +74,15 @@ The "⋯" menu at the top right has these actions.
 - **Export as EDF**: Writes the data out as an EDF file
 - **Delete**: Removes it from the catalog. The files saved on this PC are deleted too
 
-The next image shows the details screen of "Orders" on the "Table" tab, with the "⋯" menu open.
+The next image shows the details screen of "Orders" on the "Table" tab, with the "⋯" menu open. In the image, ❶ is the "⋯" button and ❷ is the clock button for the schedule in the next section.
+
+{/* IMAGE: dc-local-detail-menu — the "⋯" menu of the details screen. When it arrives, replace dc-local-detail below or put it next to it (waiting for the screenshot) */}
 
 ![](images/en/dc-local-detail.png)
 
 ## Refresh on a schedule
 
-Local data can be refreshed regularly at times you choose. Open the schedule dialog from the clock button on the details screen.
+Local data can be refreshed regularly at times you choose. Open the schedule dialog from the clock button on the details screen (❷ in the image of the previous section).
 
 - For "Repeat By", choose Monthly, Weekly, Daily, Hourly, or every N minutes
 - You can also set a time zone and an end date. "Next run" shows when the next refresh will happen
@@ -89,7 +95,7 @@ The next image shows the dialog that sets a daily 9:00 refresh for "Orders". On 
 
 ![](images/en/dc-local-schedule.png)
 
-After you save, open the "Run results" tab to see the start time, result, number of rows, duration, and how each run was started (for example, Manual) for recent runs. The next image shows an example with one run that read 50,000 rows again and succeeded.
+After you save, open the "Run results" tab (❶ in the image) to see the start time, result, number of rows, duration, and how each run was started (for example, Manual) for recent runs. The next image shows an example with one run that read 50,000 rows again and succeeded.
 
 ![](images/en/dc-local-schedule-history.png)
 
