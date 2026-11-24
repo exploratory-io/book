@@ -75,6 +75,11 @@ Only the chosen columns are imported. The sentence at the bottom becomes, for ex
 A join connects columns of other data in the Data Catalog to the data you import, by key.
 
 1. Click "Join data" above the table
+
+In the image, ❶ is the "Join data" button.
+
+![](images/en/dc-import-join-open.png)
+
 2. In the "Join data to “Orders”" dialog, choose the "Data to join". You can search with "Search the data catalog". "Data with a common column" is listed first
 3. Under "Key columns", choose a column on each side. "Add a key" adds more keys. When the key types differ, a note says they are compared as text
 4. Under "Rows with no match", choose how to keep rows. "Keep all rows of Orders" (a left join) keeps rows with no partner, and the joined columns are empty. "Keep only rows found in both" (an inner join) keeps only rows whose key is found in both data
@@ -116,9 +121,11 @@ An aggregation that has columns (a pivot table) cannot be imported. In that case
 ## Import
 
 1. Check the settings and click "Import"
-2. Enter a name for the data frame and click "OK"
+2. In the "Create Data Frame" dialog, enter a name for the data frame and click "Create"
 
-{/* IMAGE: dc-import-name — steps 1 and 2, after clicking "Import", the screen where you name the data frame (waiting for the screenshot) */}
+In the image, ❶ is the name box and ❷ is the "Create" button.
+
+![](images/en/dc-import-name.png)
 
 The imported data is added to the project as a data frame. It appears in the Steps panel on the right as a "Data Catalog" step, as the image shows. The image is an example where a data frame of 60 rows and 3 columns (category, order_date, sales) was created, and ❶ is the "Data Catalog" step added to the Steps panel.
 
@@ -126,6 +133,8 @@ The imported data is added to the project as a data frame. It appears in the Ste
 
 ## Update after importing
 
-On the imported data frame, open the Data Catalog step and click "Update" to read the latest data again with the same filters, columns, joins, and aggregation. The sentence at the bottom of the dialog says what will be read again, such as "This is the filter of the source of data frame “2025 EC Monthly Sales by Category”. Click Update to read the latest data with this filter."
+On the imported data frame, open the Data Catalog step and click "Update" to read the latest data again with the same filters, columns, joins, and aggregation. The dialog lists the steps of the import on the left (Orders, Join “Products”) and the aggregation settings on the right. In the image, ❶ is the "Update" button.
+
+![](images/en/dc-import-update.png)
 
 To ask an AI that is connected to the Desktop MCP to import the data, see [Use it with AI](/en/data-catalog/ai).
