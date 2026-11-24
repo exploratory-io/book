@@ -4,7 +4,7 @@ sidebarTitle: "Data Catalog"
 description: "Find the data you have published in one list, import it into other projects, refresh it on a schedule, and use it from AI agents."
 ---
 
-The Data Catalog is a place to keep published data together, find it, and reuse it. Once you publish a data frame, you can import it into other projects. If you set a refresh schedule, you can always work with up-to-date data. AI agents can also find and use it.
+The Data Catalog is a place to keep published data together, find it, and reuse it. Published data can be reused in other projects. If you set a refresh schedule, the data is refreshed at the times you set. AI agents can also find it.
 
 There are two kinds of Data Catalog.
 
@@ -22,11 +22,11 @@ You register data in both from the publish dialog of a data frame.
 3. Enter a title, a description, and tags. Click the "AI" button in the description field and AI reads the data and writes a description for you
 4. Click "Publish"
 
-When you publish to Local, a message says the data was published to the data catalog. The data appears in the "Data Catalog" tab of the window that lists your projects.
+When you publish only to Local, a message says the data was published to the data catalog. The data appears in the "Data Catalog" tab of the window that lists your projects.
 
-Publishing to the server works only when offline mode is off and you are signed in. If you check both and your sign-in has expired, the data is saved only locally. Sign in and publish again.
+In offline mode, you cannot choose "Server". Even with offline mode off, the data is not published to the server if your sign-in has expired. If you checked both, it is saved only locally. Sign in and publish again.
 
-To update data you have already published, publish it again in the same way. A "Change note" you write is kept in the version history.
+To update data you have already published, publish it again in the same way. When you publish to the server, a "Change note" you write is kept in the version history.
 
 ## Find Data in the List
 
@@ -43,7 +43,7 @@ The details screen has these tabs.
 | --- | --- |
 | Summary | An overview of the data |
 | Table | The data itself. You can filter and sort it |
-| Metadata | The description, tags, and a description for each column. "Generate or improve with AI" lets AI write or improve them together |
+| Metadata | The description, tags, and a description for each column. "Generate / improve with AI" has AI write or improve the overview, the column descriptions, and the semantics |
 | Wrangling Steps | The data wrangling steps that produce the data |
 | Source | Where the data came from |
 | Access Log | A record of access from AI agents (MCP) |
@@ -59,9 +59,11 @@ The "⋯" menu at the top right has these actions.
 
 1. In the Data Import menu, choose "Data Catalog"
 2. At the top of the "Import from Data Catalog" dialog, choose "Server" or "Local"
-3. Search and select the data you want to import. Data that is already imported is marked "Imported"
+3. Search and select the data you want to import
 4. If needed, set filters, choose columns, join other catalog data, or summarize
 5. Click "Import"
+
+On the "Local" tab, data you have already imported is marked "Imported". Data whose full data is not saved cannot be imported. Publish it again from the original project.
 
 The selected data is brought into the project as a data frame. Click "Update" after importing to read the latest data again with the same conditions. You can also switch the data source of an existing data frame to catalog data.
 
@@ -72,7 +74,7 @@ Local data can be refreshed regularly at times you choose. Open the schedule dia
 - For "Repeat By", choose Monthly, Weekly, Daily, Hourly, or every N minutes
 - You can also set a time zone and an end date. "Next run" shows when the next refresh will happen
 - A refresh imports the data again from the data sources used when it was published, runs the wrangling steps again, and replaces the data
-- It runs even when the app is closed, as long as the PC is on
+- If the background refresh is registered with the OS, it runs even when the app is closed. If it could not be registered, it refreshes while the app is open, and missed refreshes run once when you next open the app (on Windows, also when you sign in)
 - You can have a PC notification shown when a refresh fails or succeeds
 - The "Run results" tab shows the start time, result, number of rows, and duration of recent runs. To stop the schedule, set "Repeat By" to "None"
 
@@ -96,7 +98,7 @@ In the server data catalog, you can attach "semantics" to published data. Semant
 
 ### Generate with AI, then approve as a person
 
-On the "Metadata" tab of the data page, click "Generate / improve with AI". AI drafts the semantics from the overview and the column descriptions. The definitions fall into five groups.
+On the "Metadata" tab of the data page, click "Generate / improve with AI". AI drafts the semantics from the overview, the column information, statistics, the wrangling steps, and so on. The definitions fall into five groups. Aggregation rules are generated only when your server settings enable them.
 
 | Group | What you define |
 | --- | --- |
@@ -106,22 +108,22 @@ On the "Metadata" tab of the data page, click "Generate / improve with AI". AI d
 | Aggregation rules and cautions | The rules needed to aggregate and interpret the data correctly |
 | Questions and aggregation examples | Common questions and the right way to aggregate for each |
 
-What AI writes does not become an official definition as it is. The data owner reviews each item marked "AI suggestion available" and chooses "Approve" or "Reject". Only approved items are passed to AI agents as official definitions. If you edit an approved item and save, the approval is removed, so approve it again.
+What AI writes does not become an official definition as it is. The data owner reviews each item marked "AI suggestion available" and chooses "Approve" or "Reject". Approved items are passed to AI agents as official definitions. If you edit an approved item and save, the approval is removed, so approve it again.
 
 The "AI Ready" column in the data list shows the preparation status: "Ready", "Needs Review", "Draft", or "Not Set".
 
 ### Give AI only the results it needs
 
-An AI agent does not have to read pages of rows. It receives only the results aggregated on the server. The server calculates the filtering, grouping, aggregation, and joining of `query_dataset` with DuckDB, so only the result rows enter the AI conversation.
+When you ask for an aggregation with `query_dataset`, the server calculates the filtering, grouping, aggregation, and joining with DuckDB. An AI agent can receive the aggregated result without reading pages of rows. When it asks for the original rows, or uses another read tool, the returned rows become part of the conversation. See [Server MCP data and permissions](/en/mcp/server/data) for details.
 
 ### Use it from the server MCP
 
 From the server MCP, AI can find and aggregate data using the approved semantics.
 
-- `dataframe_get_schema` returns the approved semantics together with the column information. AI reads these definitions before it aggregates. A definition marked "Needs Review" may be out of date
-- `query_dataset` filters and aggregates the data on the server
+- `dataframe_get_schema` returns the approved definitions when you get the full detail (`full`). A definition that became "Needs Review", for example after the data changed, comes with a warning. AI reads these definitions before it aggregates
+- `query_dataset` filters and aggregates the data on the server. On an on-premises server, it is available only when the administrator has enabled it
 
-The data owner can stop MCP access for each data item. Open "Access settings" from the "⋮" menu in the data list and choose "MCP access".
+The data owner can stop MCP access for each data item. In the server "Data Catalog", open "Access settings" from the "⋮" menu of the row, uncheck "Enable" under "MCP Access", and click "Apply".
 
 For how to use the tools and what is recorded, see these pages.
 
@@ -138,7 +140,7 @@ A note explains the steps with screenshots, from publishing to using the data fr
 | --- | --- | --- |
 | Where it is stored | Exploratory Server | This PC |
 | Sharing | Shareable with team members | This PC only |
-| What search covers | Name, description, tags, author | Name, description, tags, columns |
-| Refresh schedule | Runs on the server | Runs on this PC (the PC must be on) |
+| What search covers (import dialog) | Name, description, tags, author | Name, description, tags, columns |
+| Refresh schedule | Runs on the server | Runs on this PC (even when the app is closed, if registered with the OS) |
 
-You can browse server catalog data by "Owned by Me", "Owned by Team", and "Shared With Me". For publishing steps and sharing settings, see [Sharing Data](/en/share/data).
+On the "Server" tab of the import dialog, you can browse server data by "Owned by Me", "Owned by Team", and "Shared with Me". For publishing steps and sharing settings, see [Sharing Data](/en/share/data).
