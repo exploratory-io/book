@@ -34,7 +34,7 @@ Choose a data name to open its data page. In the image, ❶ is the "Summary" and
 - **Summary**: Check an overview of the data
 - **Table**: Look at the rows. You can search with "Search all columns", narrow with "Filter", and choose the columns to show with "Columns". Switch "View" to "Aggregate" to see grouped and aggregated results. "Download CSV" saves it as a CSV, and "Copy link" copies a link that includes the table settings
 - **Metadata**: Check the description, tags, column descriptions, and semantic information. The owner edits and approves them here. See [Semantic information](/en/data-catalog/semantics)
-- **Wrangling Steps**: See in a diagram how the data was made from the original data. The "Share the wrangling steps" switch decides whether others can see it. "AI Explanation" gives a summary of the wrangling. The image shows the "Wrangling Steps" tab, with the sharing switch at the top left and the AI explanation on the right
+- **Wrangling Steps**: See in a diagram how the data was made from the original data. The "Share the wrangling steps" switch decides whether others can see it. "AI Explanation" gives a summary of the wrangling. The image shows the "Wrangling Steps" tab, with the sharing switch (❶) at the top left and the AI explanation (❷) on the right
 
 ![](images/en/dc-server-04.png)
 
