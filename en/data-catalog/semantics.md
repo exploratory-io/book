@@ -67,8 +67,8 @@ The "AI Ready" column in the data list shows the preparation status: "Ready", "N
 
 Open the details screen of the local data, and click "Generate / improve with AI" on the "Metadata" tab. AI creates or improves the overview, the column descriptions, and the semantic information. You review the proposals and adopt them in the same way as on the server.
 
-The image shows the Metadata tab, where AI-suggested definitions are being reviewed.
+![](images/en/dc-local-metadata.png)
+
+The next image shows the Metadata tab, where AI-suggested definitions are being reviewed.
 
 ![](images/en/dc-local-03.png)
-
-<!-- IMAGE: local-metadata -->

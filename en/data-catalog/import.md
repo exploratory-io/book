@@ -14,7 +14,7 @@ In the "Import from Data Catalog" dialog, you can do more than bring published d
 
 "Server" is the data catalog of Exploratory Server, and "Local" is the data catalog on this PC. The "Local" tab shows how many data items it holds. The tab you opened last is used the next time you open the dialog.
 
-<!-- IMAGE: import-dialog -->
+![](images/en/dc-import-dialog.png)
 
 To replace the original data of an existing data frame with catalog data, switch the data source of that data frame. The dialog is then titled "Replace Data Source with Data Catalog", and the import button is "Replace".
 
@@ -49,16 +49,16 @@ The following filters cannot be used for import. In that case, remove the filter
 - Among the filters on column "{column}", a filter on a duration column, or a text comparison by order
 - A filter that uses a parameter that does not exist in the project (create the parameter, or change the filter)
 
-<!-- IMAGE: import-filter -->
+![](images/en/dc-import-filter.png)
 
 ## Choose the columns
 
 1. Click "Columns" above the table. After you choose, it changes to "Columns {shown}/{total}"
-2. In "Columns to show", check the columns to import, using "Search columns" if needed. "Select all" and "Clear all" are also available
+2. Check the columns to import, using "Search columns" if needed. "Select all" and "Clear all" are also available
 
-Only the chosen columns are imported. The sentence at the bottom becomes "Import all {N} rows, with {chosen} of {total} columns." At least one column must stay selected. A column used as a join key cannot be removed.
+Only the chosen columns are imported. The sentence at the bottom becomes "Import all {N} rows, with {chosen} of {total} columns." When a filter is also set, it becomes "Import {N} rows that match the filter, with {chosen} of {total} columns." At least one column must stay selected. A column used as a join key cannot be removed.
 
-<!-- IMAGE: import-columns -->
+![](images/en/dc-import-columns.png)
 
 ## Join other catalog data
 
@@ -77,21 +77,21 @@ When few rows match, or when duplicate keys make the rows grow, the screen shows
 
 When you import with a join, the sentence at the bottom becomes "Import {N} rows, joined from {title}." The data to join must also have its full data saved.
 
-<!-- IMAGE: import-join -->
+![](images/en/dc-import-join.png)
 
 ## Aggregate and import
 
 An aggregation puts each group into one row before importing.
 
-1. Above the table, switch "View" to "Aggregate"
+1. Above the table, switch from "Table" to "Aggregate"
 2. Put the columns to group by in "Group by". For a date or date-time column, you can choose a time unit (day, week, month, quarter, year)
 3. Put the columns to aggregate in "Values" and choose the function. The functions are Count, Sum (Total), Mean (Average), Median, Min, Max, Unique Count, and Standard Deviation
 
-The aggregation covers the rows left after filtering. The sentence at the bottom becomes "Import {N} rows (one per group) of the summary. Totals and subtotals are not imported."
+The aggregation covers the rows left after filtering. The sentence at the bottom becomes "Import {N} rows (one per group) of the summary. Totals and subtotals are not imported." When you aggregate joined data, it becomes "Import {N} rows (one per group), aggregated from {original} + {joined}."
 
 An aggregation that has columns (a pivot table) cannot be imported. In that case, remove the columns from "Columns".
 
-<!-- IMAGE: import-aggregate -->
+![](images/en/dc-import-aggregate.png)
 
 ## Import
 
@@ -100,7 +100,7 @@ An aggregation that has columns (a pivot table) cannot be imported. In that case
 
 The imported data is added to the project as a data frame. It appears in the Steps panel on the right as a "Data Catalog" step.
 
-<!-- IMAGE: import-result -->
+![](images/en/dc-import-result.png)
 
 ## Update after importing
 

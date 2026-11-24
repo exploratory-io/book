@@ -65,7 +65,7 @@ From an AI (such as Claude) connected to the Desktop MCP, you can search the loc
 - You can also add semantic information to local data. AI aggregates using the definitions you approved. See [Semantic information](/en/data-catalog/semantics)
 - You can check access to the data on the "Access Log" tab of the details screen
 
-<!-- IMAGE: local-list -->
+![](images/en/dc-local-list.png)
 
 For the tools you can use and when you are asked for confirmation, see these pages.
 

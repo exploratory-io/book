@@ -40,11 +40,11 @@ The "Data Catalog" tab of the window that lists your projects shows the local da
 
 ![](images/en/dc-local-01.png)
 
-<!-- IMAGE: local-list -->
+![](images/en/dc-local-list.png)
 
 - In the search box, choose which of "Name", "Description", "Tags", and "Columns" to search. Matching tags and columns appear under the data name as "Matches"
 - You can sort by updated date (newest or oldest first) or by name (ascending or descending)
-- The list shows the data name, the source project, the number of rows, the updated date, the schedule, the refresh status (Success, Failed, Running), and the MCP checkbox
+- The list shows the data name, the source project, the number of rows, the updated date, the schedule, the refresh status (Succeeded, Failed, Running), and the MCP checkbox
 - Click a data name in the "Name" column to open its details. The checkbox in the "MCP" column sets whether AI agents can see the data
 
 The details screen has these tabs.
@@ -55,10 +55,9 @@ The details screen has these tabs.
 | Table | The data itself. You can filter and sort it |
 | Metadata | The description, tags, a description for each column, and semantic information. See [Semantic information](/en/data-catalog/semantics) |
 | Wrangling Steps | The data wrangling steps that produce the data |
-| Source | Where the data came from |
 | Access Log | A record of access from AI agents (MCP) |
 
-<!-- IMAGE: local-detail -->
+![](images/en/dc-local-detail.png)
 
 The "⋯" menu at the top right has these actions.
 
@@ -77,11 +76,11 @@ Local data can be refreshed regularly at times you choose. Open the schedule dia
 - If the background refresh is registered with the OS, it runs even when the app is closed. If it could not be registered, it refreshes while the app is open, and missed refreshes run once when you next open the app (on Windows, also when you sign in)
 - You can have a PC notification shown when a refresh fails or succeeds
 - After you choose the times and notifications, click "Save schedule"
-- The "Run results" tab shows the start time, result, number of rows, and duration of recent runs. To stop the schedule, set "Repeat By" to "None"
+- The "Run results" tab shows the start time, result, number of rows, duration, and how each run was started (for example, Manual) for recent runs. To stop the schedule, set "Repeat By" to "None"
 
-![](images/en/dc-local-02.png)
+![](images/en/dc-local-schedule.png)
 
-<!-- IMAGE: local-schedule-history -->
+![](images/en/dc-local-schedule-history.png)
 
 Some data cannot be refreshed, for example data whose data source was published as a snapshot, or data that uses a data source that does not support refreshing. A refresh also fails when the data source file cannot be found. Put the file back in the same place on this PC, or update the data source in the original project and publish again. Hover over the refresh status in the list to see the reason.
 
