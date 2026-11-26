@@ -12,7 +12,6 @@
 
 *   We added a limit\_projects option to the MCP list\_projects tool, which returns the 20 most recently updated projects by default along with the total number of projects and always includes the projects that are currently open. Users with many projects can now list them without exceeding the output limits of AI tools such as Claude Code and Codex.
 *   We updated the Exploratory Desktop plugin for Codex to version 0.1.10 with a Codex-only skill that instructs scripts to print only the structured result data. Codex users can now work with large results without Codex reading the same data twice, which reduces token usage and avoids output truncation.
-*   We hid the MCP / CLI settings in the System Settings dialog and turned off the MCP and CLI options in Exploratory Public Edition.
 
 ## Issue fix
 
