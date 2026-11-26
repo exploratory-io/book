@@ -1,5 +1,55 @@
 # Release Note
 
+# v17.1
+
+## Release Date
+
+11/26/2026
+
+## Product Enhancement
+
+### MCP
+
+*   We added a limit\_projects option to the MCP list\_projects tool, which returns the 20 most recently updated projects by default along with the total number of projects and always includes the projects that are currently open. Users with many projects can now list them without exceeding the output limits of AI tools such as Claude Code and Codex.
+*   We updated the Exploratory Desktop plugin for Codex to version 0.1.10 with a Codex-only skill that instructs scripts to print only the structured result data. Codex users can now work with large results without Codex reading the same data twice, which reduces token usage and avoids output truncation.
+
+## Issue fix
+
+### MCP
+
+*   Connecting to Exploratory Desktop MCP from AI tools such as Cursor and Antigravity delivered only a one-line summary to the AI, so it could not read details such as project names and project IDs, because the result data was returned only in the structured content while these tools pass only the text content to the AI.
+*   Publishing a large dashboard with the MCP publish\_dashboard tool returned an EXECUTION\_TIMEOUT error after 120 seconds even though the publish finished in the background, which caused the dashboard to be published twice when the tool was called again. Other long-running tools, such as publishing notes, creating and updating analytics, importing data, and exporting PDFs, had the same problem. These tools now return the result when they finish within 20 seconds, and otherwise return an operation ID so that the completion can be checked with get\_execution.
+*   Re-importing data via MCP with manage\_data\_frame (include\_referenced set to true) or with rerun\_artifact for a dashboard (reimport\_sources set to true) did not update the 'Last Import' time of some data frames even though their data was refreshed, because the MCP re-import did not record the import time.
+*   Re-importing data via MCP returned success without waiting for the rerun it had started, which could cause a conflict with another R process.
+*   The MCP create\_chart tool could create Parallel Categories Diagram and Scatter Matrix charts, which are hidden from the chart type menu, so asking for a Sankey chart could produce a Parallel Categories Diagram that showed no data and could not be changed in the chart view.
+
+### Data Wrangling
+
+*   Calling na\_if() with only one argument in a custom calculation displayed an unrelated message asking to use '.' to refer to the original column instead of the message stating that the required argument 'y' was missing, because the error message checks were evaluated in the wrong order.
+
+### Chart
+
+*   When a numeric column was assigned to Color and grouped into 11 or more ranges such as equal intervals, the legend colors did not match the colors in the Color / Group / Sort dialog and colors manually assigned to the 11th and later ranges were not applied to the chart, because the chart repeated the palette's default 5 colors when no palette had exactly as many colors as ranges and discarded manual colors beyond the palette length. Maps had the same problem.
+
+### Analytics
+
+*   Time Series Clustering displayed the raw R error 'Cannot have more clusters than series in dataset' instead of an easy-to-understand message when the number of clusters was equal to or greater than the number of series remaining after removing series with many missing values.
+*   When one of the predictor columns contained only infinite (Inf) values, Feature Importance and XGBoost, LightGBM, and CatBoost models displayed the raw R error 'All rows were removed due to Inf values in predictors. Please check your data.' instead of an easy-to-understand message.
+
+### Project
+
+*   On some Windows machines, Exploratory Desktop failed to start with the 'Retry failed\: [Connection.initInstance]' or 'Failed to start Rserve daemon. (Could not find process.)' error even though Rserve was running, because startup relied on netstat or PowerShell to find the Rserve process.
+*   Creating a new project on Windows failed with a message about Git version control initialization and antivirus software when the project folder was owned by a different user, such as a symbolic link to a network share, because the automatic retry did not recognize the 'not in a git directory' error returned by Git.
+
+### Publish
+
+*   The publish dialog displayed an empty tooltip when hovering over the URL field for content that had not been published yet.
+
+### Others
+
+*   Signing in to the Standard edition of Exploratory Desktop with a Public plan account displayed an 'Ask AI' button in the plan restriction dialog, which sent the message to support as an error report.
+
+
 # v17.0
 
 ## Release Date
