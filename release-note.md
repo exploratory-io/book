@@ -1,5 +1,55 @@
 # Release Note
 
+# v17.1
+
+## Release Date
+
+TBD
+
+## Product Enhancement
+
+### MCP
+
+*   We added a `limit_projects` option to the MCP `list_projects` tool. By default, it now returns the 20 most recently updated projects together with the total number of projects, and it always includes the projects that are currently open. Users with many projects no longer get results that exceed the output limits of AI tools such as Claude Code and Codex.
+*   We updated the Exploratory Desktop plugin for Codex to version 0.1.10 with a Codex-only skill that tells scripts to print only the structured result data. Codex no longer reads the same result data twice, which reduces token usage and avoids output truncation on large results.
+*   We hid the MCP / CLI settings in the System Settings dialog and turned off the MCP and CLI options in Exploratory Public Edition.
+
+## Issue fix
+
+### MCP
+
+*   When connecting to Exploratory Desktop MCP from AI tools that pass only the text content of tool results to the AI, such as Cursor and Antigravity, only a one-line summary reached the AI, so it could not read details such as project names and project IDs.
+*   Publishing a large dashboard with the MCP `publish_dashboard` tool returned an `EXECUTION_TIMEOUT` error after 120 seconds even though the publish finished in the background, and calling it again published the dashboard twice. Other long-running tools, such as publishing notes, creating and updating analytics, importing data, and exporting PDFs, had the same problem. These tools now return the result when they finish within 20 seconds, and otherwise return an operation ID so that the completion can be checked with `get_execution`.
+*   Re-importing data via MCP (`manage_data_frame` with `include_referenced: true`, or `rerun_artifact` for a dashboard with `reimport_sources: true`) did not update the "Last Import" time of some data frames even though their data was refreshed. Also, the re-import tool returned success without waiting for the rerun it had started, which could cause a conflict with another R process.
+*   The MCP `create_chart` tool could create Parallel Categories Diagram and Scatter Matrix charts, which are not available in the chart type menu. For example, asking for a Sankey chart could create a Parallel Categories Diagram that showed no data and could not be changed in the chart view.
+
+### Data Wrangling
+
+*   When `na_if()` was called with only one argument in a custom calculation, an unrelated message asking to use "." to refer to the original column was shown instead of the message saying that the required argument "y" was missing.
+
+### Chart
+
+*   When a numeric column was assigned to Color and grouped into 11 or more ranges (for example, with equal intervals), the legend colors did not match the colors in the Color / Group / Sort dialog, and colors manually assigned to the 11th and later ranges were not applied to the chart. Maps had the same problem.
+
+### Analytics
+
+*   Time Series Clustering showed the raw R error "Cannot have more clusters than series in dataset" when the number of clusters was equal to or greater than the number of series left after removing series with many missing values. It now shows an easy-to-understand error message.
+*   When one of the predictor columns contained only infinite (Inf) values, Feature Importance and the XGBoost, LightGBM, and CatBoost models showed the raw R error "All rows were removed due to Inf values in predictors. Please check your data." instead of an easy-to-understand message.
+
+### Project
+
+*   On some Windows machines, Exploratory Desktop failed to start with the 'Retry failed: [Connection.initInstance]' or 'Failed to start Rserve daemon. (Could not find process.)' error even though Rserve was running, because it relied on `netstat` or PowerShell to find the Rserve process.
+*   On Windows, creating a new project failed with a message about failing to initialize Git version control and about antivirus software when the project folder was owned by a different user (for example, a symbolic link to a network share).
+
+### Publish
+
+*   An empty tooltip was shown when hovering over the URL field in the publish dialog for content that had not been published yet.
+
+### Others
+
+*   When a Public plan user signed in to the Standard edition of Exploratory Desktop, the plan restriction dialog showed an "Ask AI" button that sent the message to support as an error report. The button is no longer shown in this dialog.
+
+
 # v17.0
 
 ## Release Date
