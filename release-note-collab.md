@@ -1,5 +1,141 @@
 # Release Note
 
+## 17.0
+
+Released on TBD
+
+### Download
+
+* [New Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/exploratory-server-17.0.1.tar.gz)  ([Instruction](https://exploratory.io/note/exploratory/Exploratory-Server-Installation-Guide-v17-and-later-OoI2QDi6))
+    * A package that contains the Docker images and the installation script (about 5.5 GB).
+* [Upgrade Install](https://exploratory-download.s3-us-west-2.amazonaws.com/collab-server/upgrade_17.0.1.sh) ([Instruction](https://exploratory.io/note/exploratory/How-to-Upgrade-Exploratory-Server-v17-and-later-Ddm7GqS2))
+    * The upgrade script. When you run it, it downloads the necessary Docker images automatically.
+
+
+### Product Enhancement
+
+#### Data Catalog
+
+*   We added the Data Catalog page, where you can see and manage all the data you published in one place, including the access settings, schedules, and whether the data can be accessed through MCP and the REST API.
+*   Now you can generate the overview and the data dictionary (column descriptions) of the published data with AI from the Metadata tab.
+*   We added the Semantic Information section to the Metadata tab. You can define the meaning and role of each column, business metrics, and question and aggregation examples in English and Japanese, and approve or reject the suggestions made by AI. This information is used by AI agents that access the data through MCP.
+*   The Wrangling Steps tab now shows the step diagram, and you can generate its AI summary from the page. You can also choose whether to share the wrangling steps with other users and AI agents.
+*   We added the Access Log tab, where the owner can see who accessed the data from the web UI, MCP, or the REST API, along with the user's email address and the query.
+*   The Table tab now uses a new table, with number formatting and the number of rows always shown at the top right.
+*   We added the REST API to query the published data on the server, so that you can filter and aggregate the data without downloading all of it.
+
+#### Page
+
+*   We added Page, a new type of content. AI agents can create a web page that queries the data in the Data Catalog and publish it to the server through MCP or CLI.
+*   Pages can be published as a team, with a thumbnail, and with a comment for each version. Pages can also use session parameters, be opened without the header, and be shared so that they can be viewed without login.
+*   We improved the performance of publishing and updating a Page.
+
+#### MCP / CLI
+
+*   We added the Remote MCP server, so that AI apps such as Claude, ChatGPT, Gemini, Cursor, and Microsoft 365 Copilot can search and read the content and data published on the server.
+*   Admins can enable or disable the Remote MCP server (and its data query and export) from Admin Settings, restrict which AI apps can connect, and view and revoke the AI apps connected by all the users.
+*   MCP access to each data item is now off by default. The owner of the data can turn it on for each data item.
+*   AI agents can now filter and aggregate the published data on the server, using SQL, date granularity (year, month, etc.), ratios, percent of total, and change from the previous period. The approved business metrics in the semantic information are also used.
+*   AI agents can now query the data of the charts in dashboards and notes, get chart images, get the data wrangling information, and read long notes in parts.
+*   We added the Server CLI, which can do what the Remote MCP server can do from the command line.
+*   Now you can create API keys (personal access tokens) for the CLI and MCP.
+*   The "Connected AI apps" page in Account Settings now shows the icon of each AI app and the date it was last used.
+
+#### AI
+
+*   Now you can ask AI questions that are answered by searching across the dashboards and notes published on the server.
+*   AI features now use Claude Sonnet 5.5.
+*   Generating the semantic information of the Data Catalog with AI now consumes AI credits, while AI Summary and generating the title, description, and tags at publishing don't.
+
+#### Dashboard
+
+*   The owner of a dashboard can now open the step diagram of a chart from the dashboard.
+*   We added an option to hide the PDF export button.
+*   "Show Detail" now applies the columns selected in Desktop in published dashboards and notes.
+*   A loading indicator is now shown instead of a blank area while the charts are being loaded.
+*   Tables in interactive mode and with parameters now show all the rows of the data instead of the first 10,000 rows.
+
+#### Parameter
+
+*   When parameters are applied to all the pages, they are now applied to each page when you open the page, instead of updating all the pages at once.
+*   We improved the performance of applying parameters and dashboard filters in interactive mode. Charts that are not affected by the parameter change are no longer updated.
+*   A descriptive message is now shown instead of "error code 127" when no data matches the session parameter.
+*   We improved the message shown when interactive mode reaches the maximum number of connections, and added an option to stay on the page instead of reloading it.
+
+#### Note
+
+*   Now you can choose whether to include the table of contents when downloading a note as PDF.
+
+#### Publish
+
+*   Now you can select the language of the content in the Publish dialog, instead of having it detected from the title.
+
+#### Schedule
+
+*   The Setup and Scheduling History dialogs are now the same as the ones in Desktop.
+*   Data exported from Pivot Table by a scheduled run is now sorted in the same way as the table.
+
+#### Admin
+
+*   Now you can export the list of the contents associated with teams.
+*   The Access Logs page now has a column for the email address.
+*   Accounts are now locked when a wrong password is entered many times, and we improved the protection against suspicious logins. You can see your login history in Account Settings.
+
+#### Installation
+
+*   New installation and upgrade are now done with a single script that takes care of all the steps.
+*   The server containers now run with stricter security settings.
+*   The R docker image now supports DuckDB, and OpenJDK was removed from it.
+
+#### Search
+
+*   We redesigned the mobile view of the insight search.
+
+### Issue fix
+
+#### Dashboard
+
+*   Clicking a value of a Multiple Answers column filtered the data by the whole cell instead of by each answer.
+*   The "Open Interactive Chart" icon was shown even when Interactive Mode was disabled.
+*   On a dashboard with session parameters, most charts showed "No data to display" under certain conditions.
+*   Executing session parameters never completed when many users accessed the dashboard at the same time.
+*   R connections were left open when a dashboard failed to start, which could make the server run out of memory.
+*   The Range Slider parameter overlapped the Run button.
+*   The parameter data cache did not take the viewer into account, so a viewer could see the data cached for another viewer.
+*   The column popover was shown in a table that has only one column.
+
+#### Note
+
+*   The page break before Heading 1 was always applied when exporting a note as PDF, and it could not be changed.
+
+#### Schedule
+
+*   Scheduled runs around 00:00 were not executed and no history was recorded.
+*   A scheduled run failed with a column selection error for a column that does not exist in the data source.
+*   A scheduled run could fail with "HTTP error. Server responded with status 404" at the end of the job.
+
+#### Data Source
+
+*   The refresh token of OAuth data sources (Google Analytics, Google Sheets, BigQuery, Google Drive, Salesforce, etc.) could be lost, which required frequent re-authentication.
+
+#### Admin
+
+*   The license limit error appeared when adding a Viewer even though the number of Viewers was below the limit.
+*   The access counts on the content usage page did not match the access log.
+*   The placeholder of the admin email address in the notification email settings showed an actual email address.
+*   Behind a load balancer, the admin IP whitelist blocked allowed IP addresses, and the recorded IP addresses included the IP addresses of the proxies.
+*   The Access Logs page took a very long time to load when Rows was set to "All".
+
+#### General
+
+*   The "Forgot password" link redirected logged-in users to another page without showing the password reset page.
+*   Searching insights by a tag name showed ones without the tag.
+
+#### Security
+
+*   We fixed several security issues, including the authorization checks for publishing and sharing, password-protected URL shares, the validation of dashboard click filters, the MFA email code, and sensitive values in logs and API responses.
+*   We updated Node.js, nginx, MongoDB, and other components in the docker images to address known vulnerabilities.
+
 ## 16.0
 
 Released on 8/29/2026
