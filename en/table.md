@@ -1,0 +1,44 @@
+---
+title: "Table View"
+---
+
+At the Table View, you can view the details information of the selected data frame. 
+
+
+You can view the data in each column in the selected data frame. 
+
+![](/en/table/images/table1.png)
+
+## Row Filter
+
+You can filter rows by the condition on Table View. See [Row Filter](/en/table/row_filter) for more details.
+
+## Column Filter
+
+You can filter columns by the condition on Table View. See [Column Filter](/en/table/column_filter) for more details. 
+
+
+## Column Metrics
+
+You can show the column metrics by hovering the column header area and click the green "i" icon. 
+
+
+![](/en/table/images/show_column_metrics.png)
+
+## Column Menu
+You can click the downward button to see the column menu. It shows a list of operations you can perform against this column. 
+
+![](/en/table/images/table2.png)
+
+
+## Select Columns
+
+You can select a column by clicking a panel. You can also choose multiple panels by Shift+Click or Control(Command)+Click. 
+
+After selecting columns, you can open the column menu and select an operation to perform the operation to multiple columns at a time.
+
+![](/en/table/images/table3.png)
+
+
+
+

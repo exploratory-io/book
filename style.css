@@ -1,0 +1,81 @@
+/* Put the language switcher at the top right of the header, as on the GitBook site. */
+@media (min-width: 1024px) {
+  #navbar div:has(> #localization-select-trigger) {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Logo: show the telescope mark beside the wordmark. */
+#navbar a:has(> .nav-logo)::before,
+#navbar a:has(.nav-logo)::before {
+  content: "";
+  display: inline-block;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background: url("/images/favicon.png") center / contain no-repeat;
+}
+#navbar a:has(.nav-logo) {
+  display: inline-flex;
+  align-items: center;
+}
+#navbar .nav-logo {
+  height: 20px;
+}
+
+/* Sidebar: one list, with a guide line for each nested level. */
+#sidebar-content .sidebar-title {
+  display: none;
+}
+#sidebar-content ul ul {
+  margin-left: 16px;
+  padding-left: 4px;
+  border-left: 1px solid #e5e9e7;
+}
+#sidebar-content ul ul a,
+#sidebar-content ul ul button {
+  padding-left: 12px !important;
+}
+
+/* Body links use the brand green. */
+.mdx-content a.link,
+.mdx-content a.link code {
+  color: #00ab6d;
+}
+.mdx-content a.link:hover {
+  text-decoration: underline;
+}
+
+/* Tables: header band, cell padding and an outer border. */
+.mdx-content table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #e5e9e7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.mdx-content table thead,
+.mdx-content table tr {
+  border: 0;
+}
+.mdx-content table th {
+  padding: 10px 12px !important;
+  background: #f5f7f6;
+  border-bottom: 1px solid #e5e9e7;
+}
+.mdx-content table td {
+  padding: 10px 12px !important;
+  border-bottom: 1px solid #eef1f0;
+}
+.mdx-content table th + th,
+.mdx-content table td + td {
+  border-left: 1px solid #eef1f0;
+}
+.mdx-content table tbody tr:last-child td {
+  border-bottom: 0;
+}

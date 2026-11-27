@@ -1,3 +1,0 @@
-# カスタム (R) 
-
-Coming soon!

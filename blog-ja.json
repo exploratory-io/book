@@ -4,8 +4,56 @@
       "title": "Blog記事",
       "desc": "Exploratoryからの最新のブログ記事です。",
       "moreButtonText": "もっと見る",
-      "moreButtonUrl": "https://exploratory.io/insight?type=note&sort=&language=all&q=blog&searchType=keyword",
+      "moreButtonUrl": "https://exploratory.io/insight?type=note&sort=&language=ja&q=tag%3Ablog&searchType=keyword",
       "insights": [
+        {
+         "title": "リッカート尺度（5段階・7段階評価）の分析方法：集計・可視化から統計分析まで",
+         "desc": "この記事では、リッカート尺度の基本的な考え方から、回答分布の集計、平均値、Top 2 Box、クロス集計、統計検定、相関分析、因子分析まで、実際のアンケートデータを例に解説します。",
+         "path": "how-to-analyze-likert-scale-data-ja",
+         "url": "https://exploratory.io/note/kanaugust/UEh9raa1nD"
+        },
+        {
+         "title": "K-Meansクラスタリングって何？図表を使って説明",
+         "desc": "この記事では、手法のしくみを1ステップずつ図で追い、うまくいく条件と、Exploratory での使い方を説明します。",
+         "path": "what-is-k-means-clustering-ja",
+         "url": "https://exploratory.io/note/kanaugust/EOc0Zaz1SK"
+        },
+        {
+         "title": "Exploratory v16.4 リリース！階層クラスタリング、チャートとダッシュボードの機能大幅強化",
+         "desc": "この記事では、Exploratory v16.4で追加された代表的な新機能と改善点をご紹介します。",
+         "path": "exploratory-v16-4-introduction-ja",
+         "url": "https://exploratory.io/note/kanaugust/rVO6VGj7rG"
+        },
+        {
+         "title": "階層クラスタリングって何？ デンドログラムの読み方とその仕組み",
+         "desc": "この記事では、階層クラスタリングのしくみ、デンドログラムの読み方、Exploratory での使い方を説明します。",
+         "path": "what-is-hierarchical-clustering-ja",
+         "url": "https://exploratory.io/note/kanaugust/jIe6Tfs7pJ"
+        },
+        {
+         "title": "K-Medoidsクラスタリングって何？図表を使って説明",
+         "desc": "この記事では、K-Medoidsクラスタリングのしくみ、アンケートデータに向いている理由、Exploratory での使い方を、図と動かせるグラフで説明します。",
+         "path": "what-is-k-medoids-clustering-ja",
+         "url": "https://exploratory.io/note/kanaugust/xGk8HFK9fp"
+        },
+        {
+         "title": "【2026年版】アンケートデータ分析ソフトの選び方 — Excel、BI、SPSS、R、Exploratoryの違い",
+         "desc": "この記事では、アンケートデータ分析ソフトを選ぶときに確認したいポイントを整理したうえで、Excel、BIツール、SPSS、R / Python、Exploratoryがそれぞれどのような用途に向いているのかを見ていきます。",
+         "path": "how-to-choose-survey-data-analysis-software-ja",
+         "url": "https://exploratory.io/note/kanaugust/Dqk5kHP7Qq"
+        },
+        {
+         "title": "大学IRって何？ 新しくIR担当になった人のための基本と仕事の進め方",
+         "desc": "新しくIR担当になった教職員の方、IRの立ち上げや立て直しを考えている大学執行部の方に向けて、大学IRとは何か、どんな業務があり、どう進めるとうまくいくのかを、できるだけ具体的にお話しします。",
+         "path": "what-is-university-institutional-research-ir",
+         "url": "https://exploratory.io/note/kanaugust/kDI8zJT7NO"
+        },
+        {
+         "title": "Exploratoryって何？",
+         "desc": "Exploratoryって何ができるの、誰が何をするためのソフトなの？といった質問に答えます。",
+         "path": "what-is-exploratory-ja",
+         "url": "https://exploratory.io/note/kanaugust/yyJ5hZc0Wy"
+        },
         {
          "title": "AI時代の信頼できるデータ分析を支える「3つのR」",
          "desc": "AIを使えば素早く簡単にデータを分析できますが、その結果がほんとうに正しいとは限りません。そこで、信頼できるデータ分析には可読性、再現性、そして信頼性が必要となります。",
